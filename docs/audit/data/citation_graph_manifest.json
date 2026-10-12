@@ -1,6 +1,6 @@
 {
- "edge_count": 15418,
- "node_count": 6869,
+ "edge_count": 15435,
+ "node_count": 6880,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2770,6 +2770,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "centre_regularity_to_geometric_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "55bddc03b38d",
+   "out_degree": 1
+  },
   "channel_surface_cn_grounding_peripheral_unitary_summand_bounded_theorem_note_2026-06-11": {
    "deps_hash": "4dc1f9a3b2cd",
    "out_degree": 6
@@ -3474,9 +3478,25 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "compact_detector_convergence_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "63f1406c1a97",
+   "out_degree": 1
+  },
+  "compact_detector_exhaustion_reduction_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "63f1406c1a97",
+   "out_degree": 1
+  },
   "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14": {
    "deps_hash": "aa5ce5e499a9",
    "out_degree": 2
+  },
+  "compact_patch_fock_isometry_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "63f1406c1a97",
+   "out_degree": 1
+  },
+  "compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16": {
    "deps_hash": "f1ce1c3e25b9",
@@ -4249,6 +4269,14 @@
   "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": {
    "deps_hash": "c9025ba861e7",
    "out_degree": 1
+  },
+  "detector_index_leakage_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "87e0f9c771ec",
+   "out_degree": 4
+  },
+  "detector_scattering_projection_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "19159fe18feb",
+   "out_degree": 3
   },
   "diagonal_as_wilson_line_composite_l1_negative_note_2026-06-04": {
    "deps_hash": "c8eee4235fc9",
@@ -11890,6 +11918,10 @@
    "deps_hash": "9679402e3cd2",
    "out_degree": 2
   },
+  "isolated_centre_filtering_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "19159fe18feb",
+   "out_degree": 3
+  },
   "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9398b27b4688",
    "out_degree": 3
@@ -13990,9 +14022,17 @@
    "deps_hash": "4a576dba9306",
    "out_degree": 6
   },
+  "microscopic_current_implementation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "microscopic_ground_energy_and_formation_budget_bounded_theorem_note_2026-09-25": {
    "deps_hash": "fe8fc72636bc",
    "out_degree": 6
+  },
+  "microscopic_joint_flow_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "7000a4119650",
+   "out_degree": 1
   },
   "microscopic_transmon_transfer_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
@@ -15089,6 +15129,10 @@
   "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {
    "deps_hash": "b64b8dc7658d",
    "out_degree": 4
+  },
+  "nonisolated_mass_scattering_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "92feca8524f3",
+   "out_degree": 2
   },
   "nonlabel_grown_basin_note": {
    "deps_hash": "e3b0c44298fc",

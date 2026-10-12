@@ -1,0 +1,15 @@
+loop: toe-compact-patch-scattering-20261011
+mode: milestone_snapshot
+delivery: milestone
+active_branch: physics-loop/toe-compact-patch-scattering-20261011
+base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+milestone: compact_packet_scattering_construction_and_commutant_covariance
+independent_check: complete_source_reconstruction_plus_EX_scope_repair_confirmation
+strongest_unresolved_obligation: Fock_isometry_then_full_GNS_exhaustion
+provisional_dependency: supplied_S1_through_S4_not_derived_physical_axioms
+pr_status: ready_for_regular_PR
+next_action: open_regular_PR_after_final_staged_checks
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+stop_condition: fixed_campaign_deadline_2026-10-12T16:00:52Z

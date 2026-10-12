@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/compact_detector_exhaustion_reduction_2026_10_12.py
+runner_sha256: 384ccea12cde77c76a4c67a74261939994fcc685e247c0b0e53ee0012c38c4e4
+input_fingerprint_sha256: c7ad5f7dd70547112eb73a55758343b153a624238ec27813547bf1ce2b0042ac
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+{"check": "ordered source defect identity", "exact": true, "n": [1, 2, 3, 4, 5, 6, 7, 8]}
+{"check": "finite XY-chain source equation", "exact_cases": 84, "nonzero_collision_sources": 40, "particle_words": [1, 2, 3], "scope": "Finite periodic control of a local spin algebra; not an N1 model or AC test", "sites": 4, "wrong_free_evolution_sign_rejected": 80}
+{"check": "residual-window negative control", "conclusion": "Dropping (J-sum I_i) intersect spec(H) subset {0} invalidates vacuum collapse", "input_energy": 3, "model": "H=sum_x n_x on an on-site qubit UHF chain", "n1_exact_closure": false, "removed_energy": 2, "surviving_energy": 1}
+{"K_limit": [[1, 0], [0, 0]], "check": "ordered resolvent limits", "conclusion": "A simultaneous eta/time limit need not equal the ordered kernel projection", "joint_eta_equal_inverse_time_residual": "1/2"}
+{"cases": 72, "check": "resolvent truncation scalar stress", "scope": "checks sharp near-zero scaling; operator estimate uses resolvent identity in note"}
+per_element: complete original finite algebra controls checked
+per_site: finite lattice fixtures only; no infinite-volume inference
+per_mode: Fourier and source signs checked at the stated finite scope
+per_block: ordered products and finite projections checked
+lattice_wide: checked and not executed — convergence and exhaustion require the written proofs
+TOTAL: PASS=5 FAIL=0
+SCOPE: Finite ordered-word, periodic spin-chain, residual-window and resolvent algebra only; PC, ND and physical completeness require separate analytic arguments.
+
+----- stderr -----
+

@@ -1,0 +1,13 @@
+loop: toe-detector-index-leakage-20261012
+mode: milestone_snapshot
+delivery: milestone
+active_branch: physics-loop/toe-compact-patch-scattering-20261011
+base_revision: 5cbc581504721a323f5fa2064694a67141a3ee98
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+independent_check: complete_separate_L1_L27_source_review
+pr: 9486
+pr_status: preparing_regular_extension
+provisional_dependencies: unmerged_PR9485_index_and_supplied_microscopic_common_q_setting
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+stop_condition: fixed_campaign_deadline_2026-10-12T16:00:52Z

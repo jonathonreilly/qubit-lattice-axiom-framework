@@ -1,0 +1,15 @@
+loop: toe-compact-detector-convergence-20261012
+mode: milestone_snapshot
+delivery: milestone
+active_branch: physics-loop/toe-compact-patch-scattering-20261011
+base_revision: c3f84746b1991e0a15c6da79d049b89d9469f727
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+milestone: direct_detector_convergence_and_conditional_exhaustion_reduction
+provisional_dependencies: supplied_direct_compact_creators_and_stated_vacuum_remainder
+independent_check: separate_complete_E1_E18_and_C1_C28_reconstructions
+pr: 9486
+pr_status: preparing_regular_PR_extension
+next_action: canonical_controls_and_scoped_delivery_checks_then_publish
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+stop_condition: fixed_campaign_deadline_2026-10-12T16:00:52Z

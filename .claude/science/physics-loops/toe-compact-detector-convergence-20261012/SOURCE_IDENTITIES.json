@@ -1,0 +1,1195 @@
+{
+  "base_revision": "c3f84746b1991e0a15c6da79d049b89d9469f727",
+  "scope": "Exact intended publication set except this self-referential manifest.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/APPROACH_REGISTRY.md",
+      "sha256": "1367b81525fccd2f3408583df296977bb83a5201dceff7fe1a707499c331ca87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/ARTIFACT_PLAN.md",
+      "sha256": "7608afc933f18665be066b5657e631c6305e45beb11cf13c21281f302dda5267"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "ddfa8e5d7cb514bf968be802a28dd5e112b4735a837afc5bcc0c5de802845dec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "5a5710fd8e1e3c2b63c504b9ceb28fc185f514bed7851a3020de396265ab08af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/DELIVERY_CHECKS.md",
+      "sha256": "e4089a5ab80a2293146ec22ebf98ba4cc1be02f3d6396f6129662d6610b7fbb9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/EVIDENCE_MAP.json",
+      "sha256": "3901852bf0a28a2be00cd6fe21ecb40724cb3ef21652578f098f6b1615337d41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/GOAL.md",
+      "sha256": "adf97071bd4e958961329dc8d3a520ba287da619fd42f6c99b2fcbd579aaaedd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/HANDOFF.md",
+      "sha256": "2cefb66ed375177b2aa05cb0e5556f76158832207299326ba5f891496ac97bb4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/LITERATURE_BRIDGES.md",
+      "sha256": "1dd78d265c639aa0c5c0b0c77ec26a8f0c3565414b54e14f45febc66c5b5e564"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/NO_GO_LEDGER.md",
+      "sha256": "491bc2df0a9ff17f78500e7d5d10a3f35825c502db44793c4720b7bb26b5a431"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/OPPORTUNITY_QUEUE.md",
+      "sha256": "5d4183b9a90b69bdcc4814986a7cb7c35e99eb1be696457ed85121c9f263ef6d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/PR_BACKLOG.md",
+      "sha256": "65130337e968b4cb9ede79b95780fdec02fdf0b57017b6e0464da7ccc7cbb23f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/PUBLICATION_EDITS.json",
+      "sha256": "769bbfdc01339ec7c01f94ebc883846a9e8f484c53aeb05def93745384a96df2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/REVIEW_HISTORY.md",
+      "sha256": "750e4a9773d1ae2efc0d06687adfcc0b5582c3b4ab6417aeeb62f12f30b01838"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "e50e3c9ef03c9e9cb9bcaad39aff4d232c6fca4b35aab09c9aec7678070a16ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/ROUTE_PORTFOLIO.md",
+      "sha256": "1dc72c0601921baf96d87b8379ae4391b5dbbba37e0a61750f79a00504242ca9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/STATE.yaml",
+      "sha256": "e67d138d1adf7afa07331126548fa27182c928e058f355a3c2cbde98e9bf6284"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/TRACE_GATE.md",
+      "sha256": "a6331f22341b678728b2b46b7821468141975c00cde8b33237ea6beddacaf83b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz",
+      "sha256": "33efc2317c99dcc3698a045ae8c075312819875c68d6d93ffb8d5219fc714bbe",
+      "decompressed_sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md.gz",
+      "sha256": "8485944dd5100dec9f021e23ddf51ad2a3488ffdbc7cb84b4e68bfef54912605",
+      "decompressed_sha256": "2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/EPC_canonical_output_comparison.json.gz",
+      "sha256": "74b82bd6bfdb419333f9d83c50e532683b85a74445ff5e1a527b037fdb473e08",
+      "decompressed_sha256": "bf5bc75bedbf17817a7960cfd68407763372751a27211115220558ba2220e312"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/EX_root_author_coverage.json.gz",
+      "sha256": "d610d3588dc082866c755e9669ec3c1ce73e01bde8eb7ce8bf646f2c1c50296f",
+      "decompressed_sha256": "54e8f9a3f9ff43ef6df0f220ce5df836ef985392b219a3f1e2d2679802d96ed8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/EX_root_review_coverage.json.gz",
+      "sha256": "69512b97e6764916a69aada4f0498931a1ddd74153988eae29358ed9717b92ec",
+      "decompressed_sha256": "304716120b2d33bf7c850ef75f6f466b6589d2d64375315b03a5da4a688b96f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/PC_root_author_coverage.json.gz",
+      "sha256": "5478c009f212978e092ba663024e42a5db4727f1b75643b7f57167592d22a89b",
+      "decompressed_sha256": "712884e8609948ec6e475f972df153e562bf52ac52db85659477bd3f15de17f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/PC_root_review_coverage.json.gz",
+      "sha256": "35a176ee5495e2f9a4e9e9be85e18ccba2792e3cc2ca88a5750ce9b1a2c0cb79",
+      "decompressed_sha256": "5c02e6dfff8e96ea933e58d078dd593dc3029bf2cbc5bc776a48fbdd9c300686"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md.gz",
+      "sha256": "4c140e23fed030b1dc730b900bb0197e0f12b721b8ba4d495661e2443dfc4c3b",
+      "decompressed_sha256": "c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/SCATTERING_EXHAUSTION_REVIEW.md.gz",
+      "sha256": "607a1ba515b60f28e1a9ecbb2771af24ce6e4888c282d7c22dab6c049ca5c01c",
+      "decompressed_sha256": "8c9f7bb60724982ce7580a8b5688d8b61572ea008d92305f057d3f9b7a4e735d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/AGENTS.planning.read.txt.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/AUTHOR_SELF_CHECK.md.gz",
+      "sha256": "1f45c2576aaccd32107189449c61a74b78de29da2f9821006ce825503cf1c374",
+      "decompressed_sha256": "12938911735bf9d3a5834b6700a92eddf2754252694118b5bd005308f09aab25"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/CHECKPOINT.md.gz",
+      "sha256": "72e89c8c12dd59cdbc90de84f51048a85fee519b10ee65334de7af06a9d946ba",
+      "decompressed_sha256": "f3f7aa6f98ae648af3c58e5692bb3cf2efb35aab94a1952a0043dc93fea31165"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/SOURCE_LEDGER.json.gz",
+      "sha256": "196e8893f84087b77d1b5087f0a60bbf19434370783dd5f6960feed14cd110d3",
+      "decompressed_sha256": "8e8a85eebb04735f5bbf9ca88f8a9e1daaded9b3ae59f2cae335976263d03330"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/check_detector_algebra.py.gz",
+      "sha256": "319bc14a67e5939622e4788b1102c6ccca70ccf889a934c2c25e997c2e050182",
+      "decompressed_sha256": "e056da90bf5526e2af387df869a2b86f6dda2300408ea0054ee3bd481954bffb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/detector_algebra.execution.json.gz",
+      "sha256": "13c1ccd564fe84f782e581b112935f7e341cbfec95b49b0fccd4581fd44f0b82",
+      "decompressed_sha256": "921c3f6761a3b9577744074cf031d77a8c4213c97c7d8d6aab9403bde1323de2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/detector_algebra.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/detector_algebra.stdout.gz",
+      "sha256": "e4d2da383e92794a1c42ba52777b23eaa2e8992d71e21bb24e2f9316c42f26b0",
+      "decompressed_sha256": "bef30fa89f407b05a2318c93d9f82980e4a98de32e73b95c750f7f121be1dff9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/freeze.execution.json.gz",
+      "sha256": "da1d3ecf661347b8f874b67240d8670ac56d792f6a10979225219bd452ebfa5c",
+      "decompressed_sha256": "98219783639552d18d47163354f91781614869eba037483d42df36b61f792cd4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/freeze.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/freeze.stdout.gz",
+      "sha256": "05ea62dee26d33c83924c9e2cf89b0e3c8ac17d1b4fbd0697f905c64a1d5c95a",
+      "decompressed_sha256": "260f048ef061019e6836bf903881646e64fcfdc6f09c7c4f7083e6990b479f39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/freeze_evidence.py.gz",
+      "sha256": "0d5cda93e65e3a6f0a0266156f0e2d0ed0acf622aa2bff6940ae6ee20732f9ee",
+      "decompressed_sha256": "e70de7317380bfb947fbb8dc889070cd7fc4903514d73ecbf9ec86d6d1063437"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/freeze_receipt.json.gz",
+      "sha256": "54a4dfd6f509a64cd387e643bb41ef9337c277b60675efc5e5f04af98c68b7db",
+      "decompressed_sha256": "de9a4acddf3c08b406c5dd74cae01d206e1e0a9ab2d804489ddc9ae42d0eca06"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/render_source_page.py.gz",
+      "sha256": "d3e84477265e852a0ac886331ca5fab05270f58fb48d9a1c77233c8d57ff3cd6",
+      "decompressed_sha256": "d28b676b5cb902c74f7258f0c24ac9488ea5fbbf004c2d0b58365452dfacd6ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/repo_search.execution.json.gz",
+      "sha256": "08c69a174621df07e3becd739e06eb0f799fa84a8a0b344fcc6cd61c2bdf7039",
+      "decompressed_sha256": "92ad60e36d8f8ad8c5ace18db5aff00f493b994559d34d9ff9a830ce23331eda"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/repo_search.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/repo_search.stdout.gz",
+      "sha256": "b82fd5f68927f1c8cc27fb03fb441eb68b14f047ac8e1e679a3c35d62407f502",
+      "decompressed_sha256": "2495a2b85c8c8732d43ba402920734d933e9a51d8b887532d05886a2a3de91d9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/repo_search_launch_failure.txt.gz",
+      "sha256": "0a7fb7219a3ff4a298048bfc224f63ed890866d7f89eee93bfd77a33300bfc21",
+      "decompressed_sha256": "25a69f012d610032c792acdf0b44594da0eb5d0b72bb48f09ada750631828276"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/run_with_timeout.py.gz",
+      "sha256": "51fd5db6a8141ae0cb8435060cfd249548c32662b28b81f683d2487c2c241cec",
+      "decompressed_sha256": "228ed064125495f04af215a5f5b4976cfe784745f0ec0e2c97af58afb66f5f5e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/source_render.execution.json.gz",
+      "sha256": "e602bbed40a066b428eab999c663c6d2ce783b1bba7bbc2d82e7e13f3ab646c6",
+      "decompressed_sha256": "ed781c331526ee2e48f8aadb4058ca85818167e16e766a768bb7ddc3964b2018"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/source_render.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_convergence/source_render.stdout.gz",
+      "sha256": "876e98f33d251beca9869f8c86642fc9b37a479ce6cc0b24322428e6c801d08f",
+      "decompressed_sha256": "b370a5d618291ea3ce68076de77ea37629b182ef78ec08888e846e4c74a8c3f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/CHECKPOINT.md.gz",
+      "sha256": "b5372d640c93f1de17d4aa4f0fa406d6dabdd045ccc1dfbfdb81daa9fb94c68b",
+      "decompressed_sha256": "d72901d2b81c85f4bf10638800bc0f3ea8786aaf47d7ec71a4716155806ebec5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/CONTROL_ASSESSMENT.md.gz",
+      "sha256": "190f35621dffcfedf9a24b45cc31c6be239b9f98ed2614faebc75277af3c5815",
+      "decompressed_sha256": "33b0e6277ccff6d390aecaccbb990947c2157ef0080082918be835dca73f4861"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md.gz",
+      "sha256": "f4141e92345652a02d837a1d3b571ad90cdbd83a2240da8d71a968165799e0a3",
+      "decompressed_sha256": "bb5751097c21a8a98296f1866cffd134017612194ef706a4bb5100cc7501744c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/author_receipt_verification.json.gz",
+      "sha256": "af01206b621f52ec3b7ee74681766d4ae39fd1427a9853d27267428f4b2dd66d",
+      "decompressed_sha256": "38d934434f9a86a0a200dd193c8094d34d61e624f7110c4227a4074b39703871"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/author_reproduction.execution.json.gz",
+      "sha256": "f61a6b5c395abb221891b5b0b85daf10a10a4dc58dbc6304cc7d6f94f14f04f5",
+      "decompressed_sha256": "7c81efffbbfe2d16d25c2370468d15bf13d0218b920c53b65348651ce139f5ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/author_reproduction.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/author_reproduction.stdout.gz",
+      "sha256": "e4d2da383e92794a1c42ba52777b23eaa2e8992d71e21bb24e2f9316c42f26b0",
+      "decompressed_sha256": "bef30fa89f407b05a2318c93d9f82980e4a98de32e73b95c750f7f121be1dff9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/independent_control.execution.json.gz",
+      "sha256": "15580d980f8984c221c05f4f1be597200e954252af865ef27f647889dd90cbda",
+      "decompressed_sha256": "fb49e6335f4aa002f564378575f61b33df8cd6ef827001bb4176bc24fe4922dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/independent_control.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/independent_control.stdout.gz",
+      "sha256": "83142da8fcc4651c403e7a8c65aef5eeb378caafae3ca1a13d703255ed7d5430",
+      "decompressed_sha256": "1092ae3d3e410f61f6bc0ac0c9ecda94eb2376f373d60fa281b5d9456a39aa12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/3a4b2c66__AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__physics-claim-reviewer__SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__physics-loop__references__proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__review-loop__SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__review-loop__references__SCIENCE_LENSES.md.gz",
+      "sha256": "9f5ffe7425e379ad14b217180a494cf3154c68c19dfa92f687966f015c6c0db2",
+      "decompressed_sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources/c3f84746__AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/instruction_sources.json.gz",
+      "sha256": "1ef6fc0fda84be446c995aaa62a2df5a0bc27849de2ce62eff3a870566b5da0c",
+      "decompressed_sha256": "b0be6a04ed82f75672da6995b2e211399c7d97da0515248d23a8e7067ebd7c42"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/kernel_control.py.gz",
+      "sha256": "57a87e0e4abeed9f5622b86e118eb8296a5fe01519e470e57d693a2ee90c52db",
+      "decompressed_sha256": "82f26d2b41c1d29c8f5da24670f0ebde7ac26d197fe5cd3545abcb6b49467473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutate_author_controls.py.gz",
+      "sha256": "8f92a278068dbba585228f4a7687338a2908a9008a847f08664ffd21e1a09330",
+      "decompressed_sha256": "98b7638cd587e3b2b9e4302265afeb07ed1501294bc5a9abee9d64fb5d5c14a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutation_results.json.gz",
+      "sha256": "e8df3be5a7cd73cf81a2285443b759706f73d7d3ae09cafd9ffd25c7a20145cf",
+      "decompressed_sha256": "c5f95a7bb2572fcf9e5927019dfcba3c6dae3fa5aca4ecc42c4d299ef1dab41a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/cutoff_order.py.gz",
+      "sha256": "18bfa815dc7554da3db98bce2b5e8ea57c9026e118e440deba5bd5047d754252",
+      "decompressed_sha256": "b408f3e190cc0ff9b9a50fe33a9449da0bf7e26560b3cb7c661ba26faf90f80a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/cutoff_order.stderr.gz",
+      "sha256": "99852cce7d830e0780edcce35ded41f6437f7b1bf6ad82940dd47e6bc35ad431",
+      "decompressed_sha256": "cf89dc3d158d2f437b4f06f71c9e6a478acff84aa4176bddd28b4a6efe32a638"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/cutoff_order.stdout.gz",
+      "sha256": "bc1068abc9cc9147aafaea69c23200358e88e4fb1f1707919b5369bb76872e5f",
+      "decompressed_sha256": "eae1aea5bb826312313d5f2815be79ca7074a004a6f42fb28d93083b09d10d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/filter_deletion.py.gz",
+      "sha256": "5ccb1c946ef0aa88878eab17b9e8dbc275e17f2bb67714c5616c0db72f5a8d7d",
+      "decompressed_sha256": "894b75ac3e3a2feb136359b30610e31f226998bfe9b619c0e45d382723304890"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/filter_deletion.stderr.gz",
+      "sha256": "3abe9c585ea6bae6c6c72899272fa7ebd52fa2c5c4cffa42eeba046b33259f34",
+      "decompressed_sha256": "41208bef93b337fd1139a1cccaf48710e8c57f607bb7ef31117e3ec0e50f354f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/filter_deletion.stdout.gz",
+      "sha256": "3ca3f382d9d9cba13086d90f9aedf06151f89e1d35aaa1791b23a74acc667dc2",
+      "decompressed_sha256": "6f634ac4d8af4f07ba8491483aea0786cbde553672f3054609ed9786ab41dfeb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/free_phase.py.gz",
+      "sha256": "52e839051450d3a96ee00d0850b5c21b2db0d00f829f92b8b21d991685547821",
+      "decompressed_sha256": "2c53e6e9f3f64d830d3a2594537bba5c899fe5d4f163cf627a193303e0863428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/free_phase.stderr.gz",
+      "sha256": "1437b68415d52a6ffec47702aed7fc6d55b97966ef0d947a6206880f759302a7",
+      "decompressed_sha256": "45947fca884364da60529a58d0240cbdbc3bd45381f620e1753166f8be4b4ca7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/free_phase.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/reversed_integral_sign.py.gz",
+      "sha256": "6a5c0087d9d0cf1154316b3eb16d78a818e8c1b6dff203560b45fa3f5af88945",
+      "decompressed_sha256": "5155f9bb627ae381bca22d3d8291e924635bd3b8fde7496fed9210f21907032d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/reversed_integral_sign.stderr.gz",
+      "sha256": "b29e802ec86a1c6abc675e59117fb9c6be78bda23095a2ec66b60d4b4d5b6356",
+      "decompressed_sha256": "d3ca41bd5f4af3747fcf2765d78ffb0ba8669b4b46e70b756680039c6928a9e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/reversed_integral_sign.stdout.gz",
+      "sha256": "96487287c26c4864ec50208b94486b501b337426414b4ba2165204ad15f4a259",
+      "decompressed_sha256": "cf1c452d65659227ea5908662df3811df8f25218d2c60cb5c3a9ea31086776b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/stationary_sign.py.gz",
+      "sha256": "2e5bcb27ed52d80b5e7dddfc3c16a19c2a0833d56817b1a577a6982731153d6b",
+      "decompressed_sha256": "858e0142649aba314d8ca5bee93f73c415da3120e38904eff615604341df389d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/stationary_sign.stderr.gz",
+      "sha256": "552173224378c3b1458f60bb337d89bb42a58775e5e5961f4d180b2114c44958",
+      "decompressed_sha256": "664b5a454ed1c24e8d089f982c4da3425e428a16b0660f56e4e7565c33c9e248"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/stationary_sign.stdout.gz",
+      "sha256": "81f09f4b4be0674e58906afec0c915c5c18fadeabf91375f01892c02563bfb97",
+      "decompressed_sha256": "d427ff371d08939e4b39624fb2f1d31d3335d76364b0f053b9eab53eb01876ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/third_derivative_difference.py.gz",
+      "sha256": "6da3859f34e55b1b94106318fbbe5b7e8a5907b966859ea8fd8eafb2d54ee37b",
+      "decompressed_sha256": "7d611fa44521fd9a02163a09b9bb9dd90be72cb92df68255a45d076a6e0c1f0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/third_derivative_difference.stderr.gz",
+      "sha256": "967f1fb3988db83c3f15ab6581dcd46d7cbd60f27285c90aed6282ebacbe9812",
+      "decompressed_sha256": "c033943caeb51180a95231a4c320c53c622a4c2dd91321582abeed68004e1798"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/mutations/third_derivative_difference.stdout.gz",
+      "sha256": "6eeb89003c27f838c7cb34eb30a50f98feeca012a324bc31d3ad555b5e113f8b",
+      "decompressed_sha256": "0f58f8a9f538d667a77130e33d77ad41657eb88d14583d3681a2573c219b3260"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/precontrol_freeze.json.gz",
+      "sha256": "2ad5c51f6f1aae288d692129e33bd58837a23bf6ad9d140a729c290b0cfc3d95",
+      "decompressed_sha256": "4d75d0893cc6fdddb207dd31ddd137359874183b2f8b8b8878382c21adaa8702"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/primary_page12.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/primary_page12.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/primary_page4.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/primary_page4.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/primary_render.execution.json.gz",
+      "sha256": "0fb1158ada29c81bfad802ebaadb93b149f67f40a0e1a0f4d3d4dd299864fc4b",
+      "decompressed_sha256": "9e2d20955ef6a3060177644f52e7bb0bab7c1c00ed918dd51ca4937f6e449d82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/receipt.json.gz",
+      "sha256": "3f1f6ba92b7414278f1655a2d6abb9bdd67c6ec66f759f0770cfcb8d04b40132",
+      "decompressed_sha256": "e9fb01e5d88618f1905a7426d07991e0a96e88cdd32a8d996b4caa92bd39db5d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/repository_final_state.json.gz",
+      "sha256": "8a8dcbf43a0be79f16d68cf0667de9ff90f1b294ad3fb4fe07be605498d09c20",
+      "decompressed_sha256": "cdaeb8e17958d861cd33fe98f130becc24aa41f2afdb831f0e69d7a0dca36def"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/compact_detector_review/source_refresh.json.gz",
+      "sha256": "368d2cb3c5ac854a476bf6c97a6ddc2db00b80cde6b271de41028dc50b0bdcb6",
+      "decompressed_sha256": "3b9835aa3114372ab137231dc75de960f0930a03d305a8c346f839a197647770"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_E_canonical_execution.json.gz",
+      "sha256": "01cd90176d1fd0b2240edacc7b9140ac974eee61c88326556388254a8c39d739",
+      "decompressed_sha256": "bf5db520a345e69aa9d29a7d06198d0d6b0882a57794787d79efbda97a945856"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_PC_canonical_execution.json.gz",
+      "sha256": "e56a1e27b9f9765bd0cc56990c65e86f21b82b6885f978fe871e595153441ef6",
+      "decompressed_sha256": "78cf5e044e1b7785e3c30bcea2f5d0732503cb8d0b4cc8c4853ebad78c033f18"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_citation_build.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_citation_build.stdout.gz",
+      "sha256": "7503a604d3208d6b2c2262874cfb9d8a72acbcd4ed5d552e9fad1d7c474adf4a",
+      "decompressed_sha256": "451267946511f87fe81c8e30dbb1107cd09c873dece2268fee44268160d6870c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_citation_execution.json.gz",
+      "sha256": "46836f6430f5b08ac21b3bbac09c6e0712e524c247f66ee304f375e4fe6691ca",
+      "decompressed_sha256": "3fcb8a5f6f507b368e734385905154f1ac401a02005f6db12e115bbe7228262f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_citation_manifest.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_citation_manifest.stdout.gz",
+      "sha256": "2174cc7730e6c7103b3e4090a17513a9a67eaec303014891bbc3e483449deace",
+      "decompressed_sha256": "e0f5781b9bd0cd902c558e8e266335dfe5870620a5a7ca0618a59b5c50e4ef30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_delivery_mechanical.json.gz",
+      "sha256": "2a81eb02817f0f758ed0eae620f313ed3c1c30a14dbd5be09d446f83b7c9ae08",
+      "decompressed_sha256": "5c2010157f17134239f0fd1759dc33851a7029ba8c269dcb3cbabbf417d41fb6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_final_reconstruction.log.gz",
+      "sha256": "0aabd1815fd004b788cb90f28c58c3c56b3294a3417d864c3e994e66b66d33c4",
+      "decompressed_sha256": "f2d1140a6b42f96156f0cd5ec00baec27a25afe372b0de1107063ff59c073c07"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_final_vocab_fix.log.gz",
+      "sha256": "3a12fc7a5dd4fb2b8f3a12f7fcddf40974e93166e7613741c19ea629e3a7ad0f",
+      "decompressed_sha256": "c9b9c1ff595064412cd0315ab5dd2b89b90fb0f9c71a5e3bc9293490dea82970"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_final_vocab_report-only.log.gz",
+      "sha256": "20879baf937a3f0c209c2e92c8f025df8b416e06b6bbfcfb60abe86dd36af033",
+      "decompressed_sha256": "9563a1080881654e974e90c203812c151f681e20c3d78be2cb89c9d4c59e9f50"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_focused_audit_compat.execution.json.gz",
+      "sha256": "a9542796a8b094acc3b0d9d554f18f7fbff93a2c413587562ccdf53173302513",
+      "decompressed_sha256": "e71c3ddfe056f912803b66d6e82ec4ddf54123f11ec8c79264e2ac21b78503ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_focused_audit_compat.json.gz",
+      "sha256": "3c6a08914fb629a0dabe8bd4ad27302b5c995d35c4ccc78699f7c67100d40373",
+      "decompressed_sha256": "22765b5f3560020aa1f397c9a2e57595df1a6dfcd9f70028987336f5b97aecdc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_focused_audit_compat.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_initial_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_initial_vocab_fix.log.gz",
+      "sha256": "f181bd9f0aa16646d7eebc2814be548b68d2c00517245f468214c5c3b06eaf4e",
+      "decompressed_sha256": "b9eedfcc83625d111f139357f6013e3a7d9cc989b49989766b9dcb53170e9629"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_dispersion_sign.py.gz",
+      "sha256": "7dcb6f64002b18af7c348f06d8338dcf743fc4b3ce614182d3fd03ab9e1faa21",
+      "decompressed_sha256": "e00b344d4c4c97d87e7eee2cf66a174af683e1cf12a3b21c15a83d9ea1dead55"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_dispersion_sign.stderr.gz",
+      "sha256": "3d930403943282249b705988d1531ef5f6f3c8ce909fb0acedc9954ea61f94c7",
+      "decompressed_sha256": "fa5ea5172e83748645d683d8b0ba427cd22f6920a0a76c703f423576ed62f8f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_dispersion_sign.stdout.gz",
+      "sha256": "13a71b47b02054161d69b15443bc3c038d11acc905613de6ada31e1ff7fc09a2",
+      "decompressed_sha256": "71270a3f1891b7c6e43252f495f435369f2d568c73d80f0b20d5c105b9b96d29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_missing_collision_source.py.gz",
+      "sha256": "241265d28822bf8f22feef40fac16834fa85aad6734a761b1ceb8adfd9aa80d8",
+      "decompressed_sha256": "7358bdaa1880083d070cddf8dc3c2174de82eb55ce43d79282f848f32356e2bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_missing_collision_source.stderr.gz",
+      "sha256": "41a831608655370042b98cc5e2fc9e2d08829650ca679fd5f105588ef1f098b2",
+      "decompressed_sha256": "642e5f29d15cae43eea4604e798fa832eac1427d23e1a6c7adde8188b4620cfb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_missing_collision_source.stdout.gz",
+      "sha256": "13a71b47b02054161d69b15443bc3c038d11acc905613de6ada31e1ff7fc09a2",
+      "decompressed_sha256": "71270a3f1891b7c6e43252f495f435369f2d568c73d80f0b20d5c105b9b96d29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_resolvent_regularizer.py.gz",
+      "sha256": "6f5d21fd41f9a0ac5622effa8ad6d4a2454c2eb7620d4257007abd6f39f4d2d6",
+      "decompressed_sha256": "7692bee4296a142857430c22ac108dca5cfa0ae9b2c80b99530d9d144ea4c70d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_resolvent_regularizer.stderr.gz",
+      "sha256": "22bee533bb71b678318c1fb61037e71bcae85d2965dd4085b5f9fe0d97fdd681",
+      "decompressed_sha256": "3d7d6c37a3203b331d7907a3e12f063ea311dcf2d631efc77d591c119e4c5507"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_resolvent_regularizer.stdout.gz",
+      "sha256": "8e8aa67d6567c553f87e2642e7553856de7acf6121719b82ca5403efcfc5dbb6",
+      "decompressed_sha256": "b794a71432e41b299f1d078c72743879351cda22b820f9c3482ebcb9f61b2be8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_time_derivative_sign.py.gz",
+      "sha256": "cc84b09d8f08f74726a6f709f0dd945224982d7fa756d25ed399baca7f7a7bdb",
+      "decompressed_sha256": "d7de0ba94e2a179135c3f968de486a9d7a8c4d9166bf3197ae1fba4ca8cc219f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_time_derivative_sign.stderr.gz",
+      "sha256": "4ab663d89cdff47904c67906f2141c0f9c032aeb31b52c87e8b0f7738507851a",
+      "decompressed_sha256": "208f72d465ca6811d6f60fa28d221284442b98ad7ff39fde016b25e6e7d14552"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_time_derivative_sign.stdout.gz",
+      "sha256": "13a71b47b02054161d69b15443bc3c038d11acc905613de6ada31e1ff7fc09a2",
+      "decompressed_sha256": "71270a3f1891b7c6e43252f495f435369f2d568c73d80f0b20d5c105b9b96d29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_word_commutator_sign.py.gz",
+      "sha256": "d68e15a6e58186e1e3c5b9d5b39011b5bd5eb02c859c1d963a229c98d0ef8958",
+      "decompressed_sha256": "bf91b141267551e10a64f8e3b81170485814d9d9658e84f5609c246315ecb479"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_word_commutator_sign.stderr.gz",
+      "sha256": "8c7f58a107ee9dbc25977d2f55c70682769f76e65d9a35b2c5a41e37fd972ee1",
+      "decompressed_sha256": "67cbcf38cb15745fdfa6adbe52ffc0470c97917cea418d9ee3142ce3a782ec20"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/E_word_commutator_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_cutoff_order.py.gz",
+      "sha256": "2fd6a4dc20514e7a3c7c4d3cb2a82d7cc716b430b89ec6e3c2d3eec803a764f3",
+      "decompressed_sha256": "8e778144b7fcc44b5f3495fef7a9a117e4426505a266336aede0be7bb1330175"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_cutoff_order.stderr.gz",
+      "sha256": "1f8962e0d7dbe6d891f792835fe0266810b935954e0edadf71cfb34fd7b1538a",
+      "decompressed_sha256": "40d6a0ad41d6bd43c1ea6f90ce054fde18aa547725da40d01f1d3fa4c9e9b2e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_cutoff_order.stdout.gz",
+      "sha256": "bc1068abc9cc9147aafaea69c23200358e88e4fb1f1707919b5369bb76872e5f",
+      "decompressed_sha256": "eae1aea5bb826312313d5f2815be79ca7074a004a6f42fb28d93083b09d10d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_filter_deletion.py.gz",
+      "sha256": "214c91754942c9a6c0dc01e9698df7715516f77e46994925acaece6263e32fda",
+      "decompressed_sha256": "d7e78e7b4a2cde30399c20066f60edf2feaec5ae8b9a487c4f15deae51db044a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_filter_deletion.stderr.gz",
+      "sha256": "5b5acabd4bc31a849f7ac86e84538bf5e89f3bc5abedef6e338118d85e8f2dbd",
+      "decompressed_sha256": "39f39f4fdb72402b75da91e22cd52e558e6302d4ca27fc8a71df3099c00ce05d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_filter_deletion.stdout.gz",
+      "sha256": "3ca3f382d9d9cba13086d90f9aedf06151f89e1d35aaa1791b23a74acc667dc2",
+      "decompressed_sha256": "6f634ac4d8af4f07ba8491483aea0786cbde553672f3054609ed9786ab41dfeb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_free_phase.py.gz",
+      "sha256": "c583df78252b2565f9cd83b2c0f31652ec4cb89b45436862fc748c5577c4387f",
+      "decompressed_sha256": "2a014236dad5ae540a87487f224e2cfb0dc8c6c212f75610778f669e4ab66b70"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_free_phase.stderr.gz",
+      "sha256": "5e2bd55c4ab209310944c96f14af57f9eee32e06ea84d147c0b8d89aa1a65001",
+      "decompressed_sha256": "eeaaffa24aedf4540d51ca956a94ceeb9fc4e289c36e61f72fed5abfd8e8c3e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_free_phase.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_reversed_integral_sign.py.gz",
+      "sha256": "2a1679d20965a5f5b84fadef0b897a606c1e4955ad05fd1338ce5c46dbe34b8c",
+      "decompressed_sha256": "15ee71f73a675c00dbd481c6d68c7203198bab7807cc0b790e9ec448aa494045"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_reversed_integral_sign.stderr.gz",
+      "sha256": "e5a69f705c8007036e96659c6fc4523e68fd1b7ebbd69d65547d20bb4b354cdf",
+      "decompressed_sha256": "78183adee96e5e46ec30a16bd67e4f86733afb6949eb4e7947cb45a06b847727"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_reversed_integral_sign.stdout.gz",
+      "sha256": "96487287c26c4864ec50208b94486b501b337426414b4ba2165204ad15f4a259",
+      "decompressed_sha256": "cf1c452d65659227ea5908662df3811df8f25218d2c60cb5c3a9ea31086776b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_stationary_sign.py.gz",
+      "sha256": "43a0031a77dd7682c82456ff35b6f1a738607483eb1fdd97f3ae21a6c2e2fb0c",
+      "decompressed_sha256": "69c311265eff738caead93e913f7de694bd1f0a33388cbc7214452f394682e15"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_stationary_sign.stderr.gz",
+      "sha256": "8e876d232bf20c9e3965454dfc16bc7e42656a7c4439ef5afca1596252353162",
+      "decompressed_sha256": "ad5b4264dacc18591e0fee04eb0308d14cd5ba52ccfed9237b3d3210b4f07333"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_stationary_sign.stdout.gz",
+      "sha256": "81f09f4b4be0674e58906afec0c915c5c18fadeabf91375f01892c02563bfb97",
+      "decompressed_sha256": "d427ff371d08939e4b39624fb2f1d31d3335d76364b0f053b9eab53eb01876ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_third_derivative_difference.py.gz",
+      "sha256": "e47fec833e8fb5659c347e4e9e6d515c6fa7e2643d860643e54b2e9a02247990",
+      "decompressed_sha256": "ed778b373d87ef4c98a8f4329715dd5c5316372f2702b4b7bef731128577e126"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_third_derivative_difference.stderr.gz",
+      "sha256": "a0d8427937b9e59987b7cc62048915bf35485e293946057f38dc213bc2f80c24",
+      "decompressed_sha256": "cc0d22100cee3cd7998a5edaff71881b2345669b6fa4b3e3557bc4e3d03b7d03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/PC_third_derivative_difference.stdout.gz",
+      "sha256": "6eeb89003c27f838c7cb34eb30a50f98feeca012a324bc31d3ad555b5e113f8b",
+      "decompressed_sha256": "0f58f8a9f538d667a77130e33d77ad41657eb88d14583d3681a2573c219b3260"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/epc_primary_mutations/manifest.json.gz",
+      "sha256": "101f05679ab0add664501013facdeeb72a7045af652fdba5832474b25463c371",
+      "decompressed_sha256": "ef8aa5555f4f8a57d9692aa0cefdd36d4c040572e57a8c408e7dac643eb12464"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/finish_epc_delivery.py.gz",
+      "sha256": "6d4d841f56db0e697b0de05a98438f5b31ee8503d04c97889aaaf33e7263910e",
+      "decompressed_sha256": "fe17075cee48d018b9b78e8b84500345c937c2fc022df03e146c672e99fa00b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/prepare_epc_notes.py.gz",
+      "sha256": "5f9a10643d5334b960e6b1514728b0b11df2f6fd186ba15f6bf6840acee0c5ff",
+      "decompressed_sha256": "6946549c9ca65613399d592612a9cf17feec2a180cf99001fb439c6076738279"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/prepare_epc_packet.py.gz",
+      "sha256": "d79736b649fa46aa1a309ce5dc5c8ca57956d589f967afadc8f539735c0f0ad7",
+      "decompressed_sha256": "3a33afdc3bdafcc17670889add66a9f06e3b2990bae142fe771ce185688d3f7d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/root_L_PC_identity_failure_1/failure.json.gz",
+      "sha256": "b07f02d67298817e18fcc6e3e63841e3c67b102d17fd5b87cfc272a20f33d63a",
+      "decompressed_sha256": "409153d96005fe624f6fa7a2a574664bbf125b0c07c896e8681a0c732f18e718"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/root_L_PC_identity_failure_1/root_verify_L_PC_reviews.py.gz",
+      "sha256": "b5ebc07b1ea4faba16bad5417886c1d08eed9ee421b700a895623c53cff15969",
+      "decompressed_sha256": "185a39da9eb209b3369e8b89895a07e3cd1d2cec2fd4ead5a1a62fe296519fa6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/root_verify_L_PC_reviews.py.gz",
+      "sha256": "49eede83bb808ec860ad118d2fc93235de7698cdc49db716c4921a382da25ce4",
+      "decompressed_sha256": "a6c29c42fef26a3a38d770f512e860e1688b4d28875ab2e7eca287da33139cf5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/run_epc_primary_mutants.py.gz",
+      "sha256": "d20e3f125db9c221345db9e3ab22ff32847c48d68b1d68745929cc52230fea97",
+      "decompressed_sha256": "14fa90e1a4c6bdc2edc4564df5770953fc11c967fcea7dd4808515cc68f231fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/ACQUISITION_LIMITS.md.gz",
+      "sha256": "5954dd6452bd0be8fd1fcf4ec205d2528763250016da0d0bb253c602c1c4e938",
+      "decompressed_sha256": "891c651834daeba082a1c2f2563f89f00b878f09cd076c24553869641e3219c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "1789ecd826d58cef77d5d60b7d496fe8a2ef342312a4f1edeeebd3b1f1a92c76",
+      "decompressed_sha256": "0da72f0fdb83b9e348c52d1c50b658ce5f6375bf4d573cef1aaeab24b35db4c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/CHECKPOINT.md.gz",
+      "sha256": "bdf5541df80e09e22b73082e95c059eb6be7084e648b1499f943a8b8ee3c9e4a",
+      "decompressed_sha256": "aaf49b12cc47afab7e65c194c1d98d667776b09fbc35c9c2dd43814887653664"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "ac1b28244de7f4ceef4fbf2b3a4e893bd21241ef477c3d132fd319c1743f485a",
+      "decompressed_sha256": "f66587a500a0bbd3ad551a25ea1f138ae90fdf4f1650524d41aa3f1c63e9a77d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/FROZEN_INPUT_RECHECK.json.gz",
+      "sha256": "4974c0e17b6fbb0e3ec0c0661b12eb5ff581a7df3ea73591bf6e6da8afb49897",
+      "decompressed_sha256": "5e45cb268eed7164100e34db3735155313b81f28492d0824739082a22768de64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/LITERATURE_BRIDGES.md.gz",
+      "sha256": "c8a9fe667401e95bc8ff9fc4eca84bf3767b3084583172f1383409232a3b17f6",
+      "decompressed_sha256": "5e44adba87c7fe076206f95761f7214e891ed24ddbe391ac9cf9ab0608ddadd6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/READING_COVERAGE.json.gz",
+      "sha256": "79b6f1128d4eb26279049944cf94826b1e9c31d8429d415eea5fd5c54188d0bf",
+      "decompressed_sha256": "667ffd6b402bad474f4824bfd292158474ecd73062297d953756e8a4cb5dcf11"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/RUNTIME.json.gz",
+      "sha256": "45ae54ebdc73dd48d47f42260b345fb1e0e232fb4faf1d9ad2e721f7d608306f",
+      "decompressed_sha256": "4d27294b2e962d4133b97d81d1fb3d3c6c6e1ac56d0818ae23ace8c59b61e28a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/SEARCH_LEDGER.md.gz",
+      "sha256": "827741c33dee876ea76bcf5f2699a5f5c84801033a7ca53d014974591034eedd",
+      "decompressed_sha256": "fa205145f0f39eae201d8322d914f5f144c56c3e4624f75628a7d3f1d9e1a531"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/SOURCE_IDENTITIES.json.gz",
+      "sha256": "e5203d0896102ebe590dfcaa6eb77590eec994731b6c1df333dc7b89b7dbdb9a",
+      "decompressed_sha256": "eebe1d23823473bb2d9e517e9ab6e682fc4a9364aed9be97c7f0b729a03044bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/THEOREM_TRACE.md.gz",
+      "sha256": "01f364e0e865bff352dba5c2a42c6c65132525e5525cda9f04557cbf6c347b30",
+      "decompressed_sha256": "b8f9fef59642fbc832c015c4c3419b349d64a456ec42aa249635fc26ff1b6dab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/check_reduction_algebra.py.gz",
+      "sha256": "1039db4b3c4e5e14c4078b19f3e8acdbe5f625d62d2c94953a9af00dde3e25d0",
+      "decompressed_sha256": "674259f169591f92feba1bb2dceb94e8e90ec070336c856cad018ebd802e75b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/initial_source_identity.json.gz",
+      "sha256": "ca2e54ddb340ca9c5100bbb6eea652a2edf6d41d63154ef2343c7e8e05274416",
+      "decompressed_sha256": "de8b6281a567e7a46b398d10f6d859ef35f56a6a33388d898e8d4cd7f1fe7add"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/instruction_reuse.json.gz",
+      "sha256": "53c6e461ad1b60501d8b05c5be9d76921f140456d282264bfae06958082e8fcc",
+      "decompressed_sha256": "24c5c6b4223fd716a67a3524de0573a670890bb5adef9467c18ba213e82c31cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/receipt.json.gz",
+      "sha256": "bfbdd54052db5efd0ac8234dc826d598e2f1886347363b896000acfdd5d4b272",
+      "decompressed_sha256": "8fac2fc46322fc8a58e2a86eda22128a7e9c7a831f329c53f0775d2ea60aca3a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/reduction_algebra.execution.json.gz",
+      "sha256": "b151d46f1ec98cdfb6ec9c9af40b27c9ab71ed0437001240059cdc7f979f66fc",
+      "decompressed_sha256": "ca7e6fbe505b8a1e7e04943f4ea9922c4a75d053a39b4cf59cf7e3bc115f3f46"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/reduction_algebra.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/reduction_algebra.stdout.jsonl.gz",
+      "sha256": "30a2b6fdc392ca7f4f4c27f33c478ecf50ab760fe883d162f45ebb6b314bfec8",
+      "decompressed_sha256": "4da3d6ea880c5bbc3f6b635cebde4ba52edb66c9f9cf9a1165835a73a50eed98"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/render_pdfium_output.json.gz",
+      "sha256": "68e0b435e3a36f5fa661d4c5c657e0f12f1b26286a154abcf0101054964fdee8",
+      "decompressed_sha256": "2348e70e6c36917f59f8a647712e8578daf76f2a0168ca2b8a668cf5b5c9964b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/render_selected.swift.gz",
+      "sha256": "0727718f9c54bc9d38a678a39438830333843a7206682787854448a1975ce511",
+      "decompressed_sha256": "279cbf9adfca1678b48ca6cf4df5c9778fc5ab6ed603d70a0821158eeec2080a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/render_selected_output.json.gz",
+      "sha256": "1ee580c0b5372e1d5c8df73c74adc810e307acb3521cd17b81ac85e62834b9fb",
+      "decompressed_sha256": "e7b3144ff0e28979ba973d488d1000b25d8b47ac56c9f78c44fcda52ed868c87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/C4_B1_report.md.gz",
+      "sha256": "80b39136d3f96dd60f2fa2fdf1b57bceca36ab4194dc0cbef8230874eed63fcc",
+      "decompressed_sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/C4_M1_report.md.gz",
+      "sha256": "86c1474800adddfd16fea66a3440bf54422d0b4d450a9f1ea3cabe6cbdda1a30",
+      "decompressed_sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz",
+      "sha256": "665f64c0dfdefc032bd348c5b9eef91a178129a977536584b68cb8d5966d5dcf",
+      "decompressed_sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz",
+      "sha256": "ddd593920aa50ba5f6633a4297665227406712d41860f288d74ab481f8aa0ff7",
+      "decompressed_sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/EX_REPAIR_REVIEW_ADDENDUM.md.gz",
+      "sha256": "663bd61091a158a8a9fd50927674e7da9c38c671715cf7d47f467503e73457a7",
+      "decompressed_sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_download.json.gz",
+      "sha256": "0c607ef8eeaf443182f89ad5a7621ae73589e238947c5f7b4d4422b1d1588a13",
+      "decompressed_sha256": "c60e4ada6acdd6da3cdde598ba3ce84655ff063b24d3503df719282c6d33f4b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_next/sources/download_receipt.json.gz",
+      "sha256": "7955633cec319c6ee851f45c9a01615b2a3f2513bc83f3a7ab3ad77b416662ea",
+      "decompressed_sha256": "a6460fbbe2f365fcf2a7e266820f26a488fef75a5b4bede0dca9b1dbf137813d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/CHECKPOINT.md.gz",
+      "sha256": "a1b8e9f781faabd1ab96fb615fbd2829fc38d5bcce528c695fb762f550df0a34",
+      "decompressed_sha256": "ebba53b4d7c0c5e25a4a46fe64aac541abc09b8e6d93c14633557fb758f43ff0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/CONTROL_ASSESSMENT.md.gz",
+      "sha256": "dadf4657336c0e1932351b3154e261b0c8e2cccf5a5b99513c1f4acbfcf962fc",
+      "decompressed_sha256": "48ad93b91bc0506d66d6a81dc7b0f7a7e8ddcccd3ba6aea046c53108ac531a0d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md.gz",
+      "sha256": "a8625084ee090f0b4b53bb8f638c73d10db5a3e24f594b92ad93bdd0d763e49f",
+      "decompressed_sha256": "a4a084179531369c12c2b5cb894d776ed11fa325a4cbb20aaf3b67a4906b35f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_artifact_validation.json.gz",
+      "sha256": "44d9ce9e12557f3091abae3421f0d944fce99427359506447401684b7d8c66a4",
+      "decompressed_sha256": "faa2b1f94d2f5ca25e619488824f02a57025a864f574e938564c185f907f91bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "1789ecd826d58cef77d5d60b7d496fe8a2ef342312a4f1edeeebd3b1f1a92c76",
+      "decompressed_sha256": "0da72f0fdb83b9e348c52d1c50b658ce5f6375bf4d573cef1aaeab24b35db4c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "ac1b28244de7f4ceef4fbf2b3a4e893bd21241ef477c3d132fd319c1743f485a",
+      "decompressed_sha256": "f66587a500a0bbd3ad551a25ea1f138ae90fdf4f1650524d41aa3f1c63e9a77d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/LITERATURE_BRIDGES.md.gz",
+      "sha256": "c8a9fe667401e95bc8ff9fc4eca84bf3767b3084583172f1383409232a3b17f6",
+      "decompressed_sha256": "5e44adba87c7fe076206f95761f7214e891ed24ddbe391ac9cf9ab0608ddadd6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/READING_COVERAGE.json.gz",
+      "sha256": "79b6f1128d4eb26279049944cf94826b1e9c31d8429d415eea5fd5c54188d0bf",
+      "decompressed_sha256": "667ffd6b402bad474f4824bfd292158474ecd73062297d953756e8a4cb5dcf11"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/THEOREM_TRACE.md.gz",
+      "sha256": "01f364e0e865bff352dba5c2a42c6c65132525e5525cda9f04557cbf6c347b30",
+      "decompressed_sha256": "b8f9fef59642fbc832c015c4c3419b349d64a456ec42aa249635fc26ff1b6dab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/check_reduction_algebra.py.gz",
+      "sha256": "1039db4b3c4e5e14c4078b19f3e8acdbe5f625d62d2c94953a9af00dde3e25d0",
+      "decompressed_sha256": "674259f169591f92feba1bb2dceb94e8e90ec070336c856cad018ebd802e75b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/receipt.json.gz",
+      "sha256": "bfbdd54052db5efd0ac8234dc826d598e2f1886347363b896000acfdd5d4b272",
+      "decompressed_sha256": "8fac2fc46322fc8a58e2a86eda22128a7e9c7a831f329c53f0775d2ea60aca3a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/reduction_algebra.execution.json.gz",
+      "sha256": "b151d46f1ec98cdfb6ec9c9af40b27c9ab71ed0437001240059cdc7f979f66fc",
+      "decompressed_sha256": "ca7e6fbe505b8a1e7e04943f4ea9922c4a75d053a39b4cf59cf7e3bc115f3f46"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/reduction_algebra.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_evidence/reduction_algebra.stdout.jsonl.gz",
+      "sha256": "30a2b6fdc392ca7f4f4c27f33c478ecf50ab760fe883d162f45ebb6b314bfec8",
+      "decompressed_sha256": "4da3d6ea880c5bbc3f6b635cebde4ba52edb66c9f9cf9a1165835a73a50eed98"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_reproduction.execution.json.gz",
+      "sha256": "8bd5021ef6c8503830ef1901b0070535060e429a175cfc63b0dee0baae7076ad",
+      "decompressed_sha256": "d93c2dda43587edb63b2803c0c53f40be7fc83e96eaa30bdd4fa1a0991b47f53"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_reproduction.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/author_reproduction.stdout.jsonl.gz",
+      "sha256": "30a2b6fdc392ca7f4f4c27f33c478ecf50ab760fe883d162f45ebb6b314bfec8",
+      "decompressed_sha256": "4da3d6ea880c5bbc3f6b635cebde4ba52edb66c9f9cf9a1165835a73a50eed98"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/finalization_result.json.gz",
+      "sha256": "1ee158e980fc064ccc7b678c7de0f9ebbc9e92f69c7f8cb6752a3b1ff7162155",
+      "decompressed_sha256": "903587d3da1d84b615d5c486a4865916ce43fc62e4e345379d3dfbd67d2e8887"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/finalize_review.py.gz",
+      "sha256": "ef065ba3483d08b82fea6f047179f922b3a00860d5c77b7f5ba28388c2570d07",
+      "decompressed_sha256": "9c3a0fa4b8c446734f0b83d1fec672ae64e678f3fe8073881ef0fb93285edda4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/independent_checks.execution.json.gz",
+      "sha256": "e2b0962975964894c010c5c4e624754d43e675b55fee9a56a9e11ade9e5df9e2",
+      "decompressed_sha256": "618b2b1c011b1f71f69108850b5657f1c462422840b36c653a99023530315a05"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/independent_checks.py.gz",
+      "sha256": "4dea6a8bdde4d3aa7981e86e98d54b3bdced7140fa39fd954873ca24232f92f6",
+      "decompressed_sha256": "4b3ccbba08875a314e8d40e9b0544328e9fd2b1629770571357d3b114f2d37fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/independent_checks.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/independent_checks.stdout.gz",
+      "sha256": "d69ced3155e75b0d64cea2cd2c33bec77a706ea6d00929bfec97c458fb9242bf",
+      "decompressed_sha256": "8017bdb97695f77e4645c8dd39442a84bbc3d948ec407efa2296aff4d450b495"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/instruction_receipt.json.gz",
+      "sha256": "0bb312658eb0a7558e540ebe0de93ed1c024380cbc6efcdd5a8675dccea76d64",
+      "decompressed_sha256": "6213677d116864a9e64f0a6fdea7916f095f7cf6949c5ea2756dfa9ef8c65fd6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/review-loop/SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/operational_failures.json.gz",
+      "sha256": "8cb3fc9c90908817d349041d2a5ca2065a6aed0ddc9a6681c8c162a01bee6a3d",
+      "decompressed_sha256": "d3a29941df09d8458c3524f62a4f0cf3142ed43f613e86c49313e2b303a05caa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/precontrols_freeze.json.gz",
+      "sha256": "ffd4af51f43ac4625b517632b567fd43908edd38adad87c0e11c6cd882cd7c60",
+      "decompressed_sha256": "f30fb81f12a766b7a2ae59a8ba6817a28ae8eaf8e6ae0996eb39ba864a70792f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/primary_verification/pdf_identity.json.gz",
+      "sha256": "5d8f877894229ccbe78163fdae57f45384ada4dbd35c75b04088dc572ca9b04c",
+      "decompressed_sha256": "8021c98fdbe9f6a0fc3700cd7817b95c1ba70164689b2c53fd232eb30a5c7dba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/published_compact_diff.patch.gz",
+      "sha256": "078ecbbb2163d82981b8f126bc127de52820f2f364acbf7dc37b1af20c17deea",
+      "decompressed_sha256": "668edc58d10f41130273cbcf3b60369fabd9e44bcb3901d2b1afe67fa4553c75"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/reading_coverage_postcontrols.json.gz",
+      "sha256": "3ca5c8ef2de1e9452a575f90cd68d9ec7a4aeea1bde2abca5e5c4fe2123970b2",
+      "decompressed_sha256": "e021fb77ed17758ef2257591b0dce1672a721e24655497ecfe2562644ca6bed7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/reading_coverage_precontrols.json.gz",
+      "sha256": "93c81ef0a1897c0573ff6c39cee71104451c80ae464cd8b36dfdbeb80049c2d2",
+      "decompressed_sha256": "faee510f508867681017bc52032b238bbf3e70977006daf870dc4e982f73fee7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/receipt.json.gz",
+      "sha256": "fab46cd5f73659f8d8e6ea862a6c192e5d24330759e73b0225e6acfd2e438d50",
+      "decompressed_sha256": "7567a560ce881d0a429c70d7479d3b92a0d89dfd0e641d9397163c5c12fdaa52"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/report_location_search.json.gz",
+      "sha256": "f3e3eec50240952b19ec7636dce7db1dec6840291782aa29184bce41166c4203",
+      "decompressed_sha256": "387a6ae867e307277628ca17a28fc90fc57b89ede14f86bc0c46c0abb70912f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/source_match.json.gz",
+      "sha256": "313c2d581533439709849921948ac453dfffba0bf6b8420065bbfa99922d1e0b",
+      "decompressed_sha256": "12a97d96e40c2c62fc5500794ddbec4c4fd7357ddc56600a8954059368afb215"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/source_refresh.json.gz",
+      "sha256": "b28a856fc56eb38f9d5e25c468f739519522f8494dbfa91a0d35ddd03aa3861b",
+      "decompressed_sha256": "0cfb959dd7267ee1a07c442fde3f938159bd7c1f00af5ac605bc8e0157da7033"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/C4_B1_report.md.gz",
+      "sha256": "80b39136d3f96dd60f2fa2fdf1b57bceca36ab4194dc0cbef8230874eed63fcc",
+      "decompressed_sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/C4_M1_report.md.gz",
+      "sha256": "86c1474800adddfd16fea66a3440bf54422d0b4d450a9f1ea3cabe6cbdda1a30",
+      "decompressed_sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md.gz",
+      "sha256": "4c140e23fed030b1dc730b900bb0197e0f12b721b8ba4d495661e2443dfc4c3b",
+      "decompressed_sha256": "c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/evidence/scattering_exhaustion_review/sources/published_compact_scattering.md.gz",
+      "sha256": "f2e34b82e7c2ec9c944f66e3f3be480a6ad4567307cf08cc18373b7610e07af8",
+      "decompressed_sha256": "3adc57d0236fced52704aa76e4fa7d38abbe08204623162c8fd07404a2a44a05"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-detector-convergence-20261012/reconstruct.py",
+      "sha256": "5bf1eb07059004a4485651555410c51fd9b1ef52f03cb42f7e1f777965207dae"
+    },
+    {
+      "path": "docs/COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "617ad9fcd7d8884e8a9f04e01dab252e20cf3f3c70dd9f65a73446926d40478d"
+    },
+    {
+      "path": "docs/COMPACT_DETECTOR_EXHAUSTION_REDUCTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "81c0775856ba318b7d6792c39fa3cc3580c7a92a1cd17d0cb03b27d4dc0428d8"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "035915587ef5aeee5adf271cfb79d423e3b227dfe053e317ff91b97e4740714a"
+    },
+    {
+      "path": "logs/runner-cache/compact_detector_convergence_2026_10_12.txt",
+      "sha256": "437665ecb1185a5682940258be2f1f3386114751fa687b6b86369e4fb6bac6d6"
+    },
+    {
+      "path": "logs/runner-cache/compact_detector_exhaustion_reduction_2026_10_12.txt",
+      "sha256": "bbef3c5a6d9659d8dd0fb5249e29147f7044baa3deaeaaf42b62401ffb670324"
+    },
+    {
+      "path": "scripts/compact_detector_convergence_2026_10_12.py",
+      "sha256": "2bea6e21ebf7366a1184de75513dec30bbe493a6d6c289471ba7db7b76b1c13d"
+    },
+    {
+      "path": "scripts/compact_detector_exhaustion_reduction_2026_10_12.py",
+      "sha256": "384ccea12cde77c76a4c67a74261939994fcc685e247c0b0e53ee0012c38c4e4"
+    }
+  ]
+}

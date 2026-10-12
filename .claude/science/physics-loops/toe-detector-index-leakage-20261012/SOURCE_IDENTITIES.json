@@ -1,0 +1,1238 @@
+{
+  "base_revision": "5cbc581504721a323f5fa2064694a67141a3ee98",
+  "scope": "Exact intended publication set except this self-referential manifest.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/APPROACH_REGISTRY.md",
+      "sha256": "ea914d4405d0568a69e2cff3cea156c56f5917cc6aee4a29b8d69b6f78f899a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/ARTIFACT_PLAN.md",
+      "sha256": "e78480c8722cede61710f1a361afe681575c00679ca309c8c9da2eb30b90571d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "bd1fcc8dacdbf2fa308f42cc38f94f53040e5419b29dd1883d1b78f766fa9ca7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "72a4a20dcbc7e0da362cda04019add7ac27b7ddefeffdd928ca7dd9f1d365c12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/DELIVERY_CHECKS.md",
+      "sha256": "a1b123940a5903e8d68af5959caf25488499af8818fda63cf8a3af6299852250"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/EVIDENCE_MAP.json",
+      "sha256": "3b4209223435968b0cb66a68628148082b0c874d59f449c90ba9235257164adc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/GOAL.md",
+      "sha256": "52f85380a57d0e3b6b23bd38ec3d3b246cdacda1651aa16e034c7d062be9aa3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/HANDOFF.md",
+      "sha256": "0b8bdd7ba90f5292a6235fb3aef6826a3d0f8d53b42eb910621bf3d706f76b8e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/LITERATURE_BRIDGES.md",
+      "sha256": "623d712885a53e0cfd6878f96f33919c62a788a2a809b2cb6e60f5990e8de344"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/NO_GO_LEDGER.md",
+      "sha256": "514e83adfde779744d546194147165de29c3a133510e946756d81a5711b15a11"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/OPPORTUNITY_QUEUE.md",
+      "sha256": "9127a10dd1aca8ff7bb9b0c3d3d3f3405b2a6cd5e4a58d8e0877f05f620e1d02"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/PR_BACKLOG.md",
+      "sha256": "a82909a1d96fe8cec328c3781ec0f1a4d36fc28aa2f26760af099f30be1ef25a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/PUBLICATION_EDITS.json",
+      "sha256": "c86ee2385e3a84e7bf1bff78930515868bc28f2ee7d8b4cdd92cb64c89571e0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/REVIEW_HISTORY.md",
+      "sha256": "82c1da84c442f02170709eb468484067a498a1330cde6c02e8f9bea1ee4c1418"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "dfea6b1716713eb1ba47f149ff52fab179482d215ea12914914c59b7dece45e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/ROUTE_PORTFOLIO.md",
+      "sha256": "4f0cd527e60f821679ad3786aa06221b7f15450410ae572f9bc888a6089335ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/STATE.yaml",
+      "sha256": "503270553fc99c35f957bc5ec071b6f7dc3446277c4d7f22c6612b661c4ba50e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/TRACE_GATE.md",
+      "sha256": "2d18755e2caa3600d4e15000b27bd241a61207ef267a2644396aaa42b2aeb524"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/DETECTOR_INDEX_LEAKAGE_PROBE.md.gz",
+      "sha256": "9c19346610130f3a12a05e902b78da0a28d55bc679f01e62e526454996ae6b52",
+      "decompressed_sha256": "4d1e9b888c6e84881e8d356c42e8da521794c68191ebcebab1c145ced5189747"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/DETECTOR_INDEX_LEAKAGE_REVIEW.md.gz",
+      "sha256": "ac5761276a7022426d9d91249113e93b7baa544c7927ebc0c432ab2acfcc68f3",
+      "decompressed_sha256": "fbd6bbbfe6d725b531da2d3c53e650fbcbb07c8195d7af151043d5eab14df39f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/Leakage_root_author_coverage.json.gz",
+      "sha256": "7eb577b10bed688115e22a06f682059aa4d9ee1cbd274d46c26288e9fc266e11",
+      "decompressed_sha256": "b2d37bcb952ac834a03b88f16c78a47a96a5a15d19e4e2c7669f41382ff46fef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/Leakage_root_review_coverage.json.gz",
+      "sha256": "3a8b405d81006b09def7a121ad78a9589f12e9ff80a7bbf30f9ce82e15224c30",
+      "decompressed_sha256": "7f5459eb6c8932d5d7838b7bca317498ed7c9b2aef311f422cf8871117d1a775"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/CHECKPOINT.md.gz",
+      "sha256": "db798efe170fc6d311aa49f1777be2e44e6783848252de769d2d7fe9033b34c1",
+      "decompressed_sha256": "09de3502ad23f79720fdda962021db835fbed82272cff10c0ce99c8705eb440d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/SOURCE_LEDGER.md.gz",
+      "sha256": "ab309ddb90bcc6e15f6610f32ab71644ed49070ddc22c932061018c2a9308101",
+      "decompressed_sha256": "dd599c363bde2b569e8aed642f11381a77a8f816fac78c2809be1fef2fd02596"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/check_leakage_controls.py.gz",
+      "sha256": "d221ee102601291045e35d3257d409c36bc79465c1848238adae5b1f81ff45f7",
+      "decompressed_sha256": "f2ddc3a783ca7f112a19e83b61e412697bd7ceb34df6414789b9c2ef8976cebd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/finalize_freeze.py.gz",
+      "sha256": "91b44693fc7e220be40d9e1e7d4b10a84fa7e74cb9beaba47109b2de0a2e17a9",
+      "decompressed_sha256": "d4feb31ac28eb2372ab0bc5153e4e6f346aa4f06ec1d4b041a755277f4b9bdd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/freeze_receipt.json.gz",
+      "sha256": "f725c418dedecb59f6ce10a8708e015a0af345add31c7feb69078f128b4afcfd",
+      "decompressed_sha256": "47bf0db5e653961b622953a77d26f345515e8f87fe583c6ce66c8951c0f6a498"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/MINIMAL_AXIOMS_2026-06-29.md.gz",
+      "sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631",
+      "decompressed_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/no-go-discipline/SKILL.md.gz",
+      "sha256": "f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934",
+      "decompressed_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/physics-loop/SKILL.md.gz",
+      "sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d",
+      "decompressed_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md.gz",
+      "sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5",
+      "decompressed_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md.gz",
+      "sha256": "50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0",
+      "decompressed_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md.gz",
+      "sha256": "4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4",
+      "decompressed_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/ai_methodology/skills/workhorse/SKILL.md.gz",
+      "sha256": "e15b35db04ab3450d10ad261d2134083a37114ab123a7cb48ca8222591b0ba7c",
+      "decompressed_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/instructions/docs/audit/data/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/bad_defect_coefficient.stderr.txt.gz",
+      "sha256": "2e050f93743aa4e2f1009fb176101e766c293123ae8e92db6fa434f3e526e72d",
+      "decompressed_sha256": "973642329a98391018e4dc376bf370d683c0bf41643448654a0552ee0c3d8feb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/bad_defect_coefficient.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/baseline.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/baseline.stdout.txt.gz",
+      "sha256": "f59f0e4267236e595d8c69c921179797285e8b0f9b1fa90c551df1ecc4fbb3f7",
+      "decompressed_sha256": "794a40653dd5419861b95e6188f39e7e6b0a6bf1be03d3b42e1a1623f161e89b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/execution_records.json.gz",
+      "sha256": "ea782e27d8975d4bb58798e7ec95a2559284b63e7d9b23eb854f1fc7c166e021",
+      "decompressed_sha256": "b1a43561f61fb6cc9a3f0380c09c396c18e2bcaa3464b9bff8b51f0f5e81812e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/final_identity_check.json.gz",
+      "sha256": "2688d5d550ab1cfabdcf69936d11386e669eca18975a7d00190094583c6dd99b",
+      "decompressed_sha256": "fe4423b2cf1bf5d8ccabb39786ddfea4879c66c4616f428c97bb6fbe15007e3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/halve_energy_bound.stderr.txt.gz",
+      "sha256": "0b73a46d3a11a7975496fe8bc6f93d9fc53e720f1387e97f8c4f55d744684ea6",
+      "decompressed_sha256": "eeb497b05198714ec2f3fd0e3333edf2e61883297d95b83dc7e0fc5947e5ee83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/halve_energy_bound.stdout.txt.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/omit_first_identity_term.stderr.txt.gz",
+      "sha256": "4dda63b07489b6a926c5a439a954fbff7ec43b9debcabcea3b94ce7df0c5cb33",
+      "decompressed_sha256": "2f6e96635ae2b730c2002c0feca07da5394fa0c152fa6a76feaa3cd0f625a2dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/omit_first_identity_term.stdout.txt.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/omit_high_energy_tail.stderr.txt.gz",
+      "sha256": "e8695756e09b340d932f70b8db58493e0d9543c42b274ebf784c8617dab6a94e",
+      "decompressed_sha256": "b652d4d380e5a45845f398a1925ba49d7470bc18efb94ec977a9f1271e38f005"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/omit_high_energy_tail.stdout.txt.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/omit_second_identity_term.stderr.txt.gz",
+      "sha256": "2f6e118e0765580356db06649f4e601d09fd70df12860b45dbab4832d726e074",
+      "decompressed_sha256": "630b61fdc7801fac8ba97ea14d2bedd1d46bc36b86541e8f3ad16aadab345817"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/omit_second_identity_term.stdout.txt.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/reverse_zero_resolvent_sign.stderr.txt.gz",
+      "sha256": "222eabb7b28ef2e4f143f68eb3df156be7c08261a8a9e5603bde15ef998398bd",
+      "decompressed_sha256": "c2948e59da90170c4a9c3c5375980f9550f8fd4c2c3242b19ee9c90f64afaaa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/reverse_zero_resolvent_sign.stdout.txt.gz",
+      "sha256": "3da0d0d8b26442c8e6680324f17aba882b94cfc3922643be587b46b84940b09a",
+      "decompressed_sha256": "15099f20989345cba562bd2270292f76f7a3af07d0c023e0d27c45672252a627"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_cyclic_detector.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_cyclic_detector.stdout.txt.gz",
+      "sha256": "eec42b5bfd85cc1e5d2ad56f1144c5a229dc980d583e4596ea51770097750411",
+      "decompressed_sha256": "360a0de55b0bbf4d1ce46a11051d3932a7eb025e99906305315acc7cddbab970"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_defect_projection.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_defect_projection.stdout.txt.gz",
+      "sha256": "4ad0d1119c409734d5d0dfc3205892add51f2bcb8dadd65585468e61b813ba93",
+      "decompressed_sha256": "99606841d50c87eb8fe4fd8542f23b387672d709743364d3a475fbada01f5d38"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_index_leakage.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_index_leakage.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_negative_echo.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_negative_echo.stdout.txt.gz",
+      "sha256": "4d3f2679e49c1968a61dccecf8d166c78e8274023909f47d9c0d8ee6e1a1e9ab",
+      "decompressed_sha256": "545d398e3f309b445778c2a39bbe7ebbad46a605ce40805fd4441831c487ada0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_prior_echo.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/search_prior_echo.stdout.txt.gz",
+      "sha256": "461f94b9f4f343ad5eacc563d0f8aba60f0bde08020696ac2df29c7aa7024386",
+      "decompressed_sha256": "a00226e477fe3bbe8483f8de696f363dc9d3df1bbd24d679b1ee27cf0e519a9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/logs/searches.json.gz",
+      "sha256": "b114c98932e502a3867fc76bdeda6759e8109dc89914a1e9fbf24d860f37cdf0",
+      "decompressed_sha256": "2aaed123570fc0c052de0a6aac1c8c3ab983ddfb9de5cca61fbfec024a5be220"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/mutants/bad_defect_coefficient.py.gz",
+      "sha256": "215ecf9e9b4b63486d26afdd0cd82c5613255ea49cb1d6a44ad09b7dbd677384",
+      "decompressed_sha256": "b0b90922536e410a0f9b49544718225e5cdfa860c71ed14fbf404fa489aaf0fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/mutants/halve_energy_bound.py.gz",
+      "sha256": "d1eacc530074d1ede66fb35b93c2dd97be6c45eb94d7e66b1de949edc08b12af",
+      "decompressed_sha256": "61697a7e8dff90e51d0f259942b2b86a21fb447ccee4eb0b2395fcef211db7be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/mutants/omit_first_identity_term.py.gz",
+      "sha256": "27025bdba2866d958cfe058d21a3a99192a9b95132885e383dce0cfb5b3e7025",
+      "decompressed_sha256": "a28ba46f0bd2775658a9dffc9a24692c2f94295b343fe5356d87ca04ff7f411b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/mutants/omit_high_energy_tail.py.gz",
+      "sha256": "8f8e17f4f6e60e9481c23fac781ccb41e72ac1aa63becc318b8a958eec4eca60",
+      "decompressed_sha256": "8bce98d6c0401e45b5cf03e08e8dda84e136bf323143fd11f449a8833f676f17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/mutants/omit_second_identity_term.py.gz",
+      "sha256": "371feebc88f6d8d3093e206812ec6613545aaa3abd073fd5ce00203f41058e86",
+      "decompressed_sha256": "5c84cc004ea9d1fc9e83ae7ed90640de843cda86d091935b7a3b61b3b82d35a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/mutants/reverse_zero_resolvent_sign.py.gz",
+      "sha256": "66d02b1cb0bd24d28bd192e6237b8df153d46a256f031360759d5ecb3e8f389f",
+      "decompressed_sha256": "9220f90f875ce6a876b2d39d69a0ceb43e86d18271060251548aff9bdb1b688c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/run_controls.py.gz",
+      "sha256": "879e138d3c202e9019965c647d30ad5bb997a5d1e81b48f3b72e47eb83020a59",
+      "decompressed_sha256": "81dd89b84c603061b66ddff84859d7a2e1632d5257cecc953d7285f14e61b90b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/source_manifest.additional.json.gz",
+      "sha256": "95d20c9c5c1936b6ddb3eb5cfbc775841e7572d41fbfdf30fba8fedd628dc50d",
+      "decompressed_sha256": "1faa73da13246f4154d46efd2f0b80d0a00bd2196b70c41e7adb74870be4c2ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/source_manifest.initial.json.gz",
+      "sha256": "142057b665e4d2c6d7dfb01d0315fe8390fcc0a10d77a699763135650145e318",
+      "decompressed_sha256": "3177289766001bc76062f3608cbf45bc9cce6aa49a5dfa423c72a4da279db207"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_PROBE.md.gz",
+      "sha256": "e79f04ac46bc31053dc72e0351146413a8d455137091d1e29d223665ed842be8",
+      "decompressed_sha256": "bccf07d0ca041c9c0585beccb912ac35e1da12deadae3c50efb78d439cb9b441"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_REVIEW.md.gz",
+      "sha256": "77447a622195d0f15d55787f5d3bb7f7870de47ac6c21499b8548f2304e3a539",
+      "decompressed_sha256": "9118707fdcc85cdfd0a1160598872fb8544a9de757b3a1efe8e93292719c533c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/C4_B1_report.md.gz",
+      "sha256": "80b39136d3f96dd60f2fa2fdf1b57bceca36ab4194dc0cbef8230874eed63fcc",
+      "decompressed_sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/C4_M1_report.md.gz",
+      "sha256": "86c1474800adddfd16fea66a3440bf54422d0b4d450a9f1ea3cabe6cbdda1a30",
+      "decompressed_sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz",
+      "sha256": "33efc2317c99dcc3698a045ae8c075312819875c68d6d93ffb8d5219fc714bbe",
+      "decompressed_sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md.gz",
+      "sha256": "8485944dd5100dec9f021e23ddf51ad2a3488ffdbc7cb84b4e68bfef54912605",
+      "decompressed_sha256": "2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz",
+      "sha256": "665f64c0dfdefc032bd348c5b9eef91a178129a977536584b68cb8d5966d5dcf",
+      "decompressed_sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_PATCH_FOCK_ISOMETRY_REVIEW.md.gz",
+      "sha256": "efe72f08cc9e9027eae5d137bf485fe14eb44899c47c8d8ca3f24caa3b37f8f3",
+      "decompressed_sha256": "bc88af1dda77065d8806da9d689546547f40847a340177086793dab5f3a277cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz",
+      "sha256": "ddd593920aa50ba5f6633a4297665227406712d41860f288d74ab481f8aa0ff7",
+      "decompressed_sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/DETECTOR_SCATTERING_PROJECTION_PROBE.md.gz",
+      "sha256": "6c05ef2bed51f3e4302cceeffebc66f744bbfbd9d2b4a9912618ccfe84c2a0e2",
+      "decompressed_sha256": "91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage/sources/projection_freeze_receipt.json.gz",
+      "sha256": "fac97b98182cf7793dd67385a13ec75c7428d2dfbdece02e2b6f298ebcbada2f",
+      "decompressed_sha256": "41e516aec74bd86d28702f5c079522f9ba8c91422eb660021190a241de176b72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/CHECKPOINT.md.gz",
+      "sha256": "0c79db15859a64ec8e2f6a42b7901d2e7a75f2fc8c131ca6930bfbce5b9068a7",
+      "decompressed_sha256": "8c2557c13a51182c6e2a58c294b49a332f2a1b406f0d7552ca64e40784530eb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md.gz",
+      "sha256": "7bc68c778f9d35cc9e048289bb7dace5204f15f3c4d166c0c2f8861061f98a1d",
+      "decompressed_sha256": "c07b6a3e03999d33b6e55d651edb9c69fa805472e21a610f5702e0a675afc50a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/POSTCONTROL_ASSESSMENT.md.gz",
+      "sha256": "10bbe9c1b7e6ef8d5cfcadecf0a99182162ed38f3d8c3346bb83a7a2815268ac",
+      "decompressed_sha256": "6ba103b056830cd5ad425f0c5a301456b0b550e51d7a0c4dd881de86f9ffe740"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/CHECKPOINT.md.gz",
+      "sha256": "db798efe170fc6d311aa49f1777be2e44e6783848252de769d2d7fe9033b34c1",
+      "decompressed_sha256": "09de3502ad23f79720fdda962021db835fbed82272cff10c0ce99c8705eb440d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/SOURCE_LEDGER.md.gz",
+      "sha256": "ab309ddb90bcc6e15f6610f32ab71644ed49070ddc22c932061018c2a9308101",
+      "decompressed_sha256": "dd599c363bde2b569e8aed642f11381a77a8f816fac78c2809be1fef2fd02596"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/check_leakage_controls.py.gz",
+      "sha256": "d221ee102601291045e35d3257d409c36bc79465c1848238adae5b1f81ff45f7",
+      "decompressed_sha256": "f2ddc3a783ca7f112a19e83b61e412697bd7ceb34df6414789b9c2ef8976cebd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/finalize_freeze.py.gz",
+      "sha256": "91b44693fc7e220be40d9e1e7d4b10a84fa7e74cb9beaba47109b2de0a2e17a9",
+      "decompressed_sha256": "d4feb31ac28eb2372ab0bc5153e4e6f346aa4f06ec1d4b041a755277f4b9bdd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/freeze_receipt.json.gz",
+      "sha256": "f725c418dedecb59f6ce10a8708e015a0af345add31c7feb69078f128b4afcfd",
+      "decompressed_sha256": "47bf0db5e653961b622953a77d26f345515e8f87fe583c6ce66c8951c0f6a498"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/bad_defect_coefficient.stderr.txt.gz",
+      "sha256": "2e050f93743aa4e2f1009fb176101e766c293123ae8e92db6fa434f3e526e72d",
+      "decompressed_sha256": "973642329a98391018e4dc376bf370d683c0bf41643448654a0552ee0c3d8feb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/bad_defect_coefficient.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/baseline.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/baseline.stdout.txt.gz",
+      "sha256": "f59f0e4267236e595d8c69c921179797285e8b0f9b1fa90c551df1ecc4fbb3f7",
+      "decompressed_sha256": "794a40653dd5419861b95e6188f39e7e6b0a6bf1be03d3b42e1a1623f161e89b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/execution_records.json.gz",
+      "sha256": "ea782e27d8975d4bb58798e7ec95a2559284b63e7d9b23eb854f1fc7c166e021",
+      "decompressed_sha256": "b1a43561f61fb6cc9a3f0380c09c396c18e2bcaa3464b9bff8b51f0f5e81812e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/final_identity_check.json.gz",
+      "sha256": "2688d5d550ab1cfabdcf69936d11386e669eca18975a7d00190094583c6dd99b",
+      "decompressed_sha256": "fe4423b2cf1bf5d8ccabb39786ddfea4879c66c4616f428c97bb6fbe15007e3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/halve_energy_bound.stderr.txt.gz",
+      "sha256": "0b73a46d3a11a7975496fe8bc6f93d9fc53e720f1387e97f8c4f55d744684ea6",
+      "decompressed_sha256": "eeb497b05198714ec2f3fd0e3333edf2e61883297d95b83dc7e0fc5947e5ee83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/halve_energy_bound.stdout.txt.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/omit_first_identity_term.stderr.txt.gz",
+      "sha256": "4dda63b07489b6a926c5a439a954fbff7ec43b9debcabcea3b94ce7df0c5cb33",
+      "decompressed_sha256": "2f6e96635ae2b730c2002c0feca07da5394fa0c152fa6a76feaa3cd0f625a2dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/omit_first_identity_term.stdout.txt.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/omit_high_energy_tail.stderr.txt.gz",
+      "sha256": "e8695756e09b340d932f70b8db58493e0d9543c42b274ebf784c8617dab6a94e",
+      "decompressed_sha256": "b652d4d380e5a45845f398a1925ba49d7470bc18efb94ec977a9f1271e38f005"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/omit_high_energy_tail.stdout.txt.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/omit_second_identity_term.stderr.txt.gz",
+      "sha256": "2f6e118e0765580356db06649f4e601d09fd70df12860b45dbab4832d726e074",
+      "decompressed_sha256": "630b61fdc7801fac8ba97ea14d2bedd1d46bc36b86541e8f3ad16aadab345817"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/omit_second_identity_term.stdout.txt.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/reverse_zero_resolvent_sign.stderr.txt.gz",
+      "sha256": "222eabb7b28ef2e4f143f68eb3df156be7c08261a8a9e5603bde15ef998398bd",
+      "decompressed_sha256": "c2948e59da90170c4a9c3c5375980f9550f8fd4c2c3242b19ee9c90f64afaaa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/reverse_zero_resolvent_sign.stdout.txt.gz",
+      "sha256": "3da0d0d8b26442c8e6680324f17aba882b94cfc3922643be587b46b84940b09a",
+      "decompressed_sha256": "15099f20989345cba562bd2270292f76f7a3af07d0c023e0d27c45672252a627"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_cyclic_detector.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_cyclic_detector.stdout.txt.gz",
+      "sha256": "eec42b5bfd85cc1e5d2ad56f1144c5a229dc980d583e4596ea51770097750411",
+      "decompressed_sha256": "360a0de55b0bbf4d1ce46a11051d3932a7eb025e99906305315acc7cddbab970"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_defect_projection.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_defect_projection.stdout.txt.gz",
+      "sha256": "4ad0d1119c409734d5d0dfc3205892add51f2bcb8dadd65585468e61b813ba93",
+      "decompressed_sha256": "99606841d50c87eb8fe4fd8542f23b387672d709743364d3a475fbada01f5d38"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_index_leakage.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_index_leakage.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_negative_echo.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_negative_echo.stdout.txt.gz",
+      "sha256": "4d3f2679e49c1968a61dccecf8d166c78e8274023909f47d9c0d8ee6e1a1e9ab",
+      "decompressed_sha256": "545d398e3f309b445778c2a39bbe7ebbad46a605ce40805fd4441831c487ada0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_prior_echo.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/search_prior_echo.stdout.txt.gz",
+      "sha256": "461f94b9f4f343ad5eacc563d0f8aba60f0bde08020696ac2df29c7aa7024386",
+      "decompressed_sha256": "a00226e477fe3bbe8483f8de696f363dc9d3df1bbd24d679b1ee27cf0e519a9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/logs/searches.json.gz",
+      "sha256": "b114c98932e502a3867fc76bdeda6759e8109dc89914a1e9fbf24d860f37cdf0",
+      "decompressed_sha256": "2aaed123570fc0c052de0a6aac1c8c3ab983ddfb9de5cca61fbfec024a5be220"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/mutants/bad_defect_coefficient.py.gz",
+      "sha256": "215ecf9e9b4b63486d26afdd0cd82c5613255ea49cb1d6a44ad09b7dbd677384",
+      "decompressed_sha256": "b0b90922536e410a0f9b49544718225e5cdfa860c71ed14fbf404fa489aaf0fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/mutants/halve_energy_bound.py.gz",
+      "sha256": "d1eacc530074d1ede66fb35b93c2dd97be6c45eb94d7e66b1de949edc08b12af",
+      "decompressed_sha256": "61697a7e8dff90e51d0f259942b2b86a21fb447ccee4eb0b2395fcef211db7be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/mutants/omit_first_identity_term.py.gz",
+      "sha256": "27025bdba2866d958cfe058d21a3a99192a9b95132885e383dce0cfb5b3e7025",
+      "decompressed_sha256": "a28ba46f0bd2775658a9dffc9a24692c2f94295b343fe5356d87ca04ff7f411b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/mutants/omit_high_energy_tail.py.gz",
+      "sha256": "8f8e17f4f6e60e9481c23fac781ccb41e72ac1aa63becc318b8a958eec4eca60",
+      "decompressed_sha256": "8bce98d6c0401e45b5cf03e08e8dda84e136bf323143fd11f449a8833f676f17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/mutants/omit_second_identity_term.py.gz",
+      "sha256": "371feebc88f6d8d3093e206812ec6613545aaa3abd073fd5ce00203f41058e86",
+      "decompressed_sha256": "5c84cc004ea9d1fc9e83ae7ed90640de843cda86d091935b7a3b61b3b82d35a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/mutants/reverse_zero_resolvent_sign.py.gz",
+      "sha256": "66d02b1cb0bd24d28bd192e6237b8df153d46a256f031360759d5ecb3e8f389f",
+      "decompressed_sha256": "9220f90f875ce6a876b2d39d69a0ceb43e86d18271060251548aff9bdb1b688c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/run_controls.py.gz",
+      "sha256": "879e138d3c202e9019965c647d30ad5bb997a5d1e81b48f3b72e47eb83020a59",
+      "decompressed_sha256": "81dd89b84c603061b66ddff84859d7a2e1632d5257cecc953d7285f14e61b90b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/source_manifest.additional.json.gz",
+      "sha256": "95d20c9c5c1936b6ddb3eb5cfbc775841e7572d41fbfdf30fba8fedd628dc50d",
+      "decompressed_sha256": "1faa73da13246f4154d46efd2f0b80d0a00bd2196b70c41e7adb74870be4c2ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/author_evidence/source_manifest.initial.json.gz",
+      "sha256": "142057b665e4d2c6d7dfb01d0315fe8390fcc0a10d77a699763135650145e318",
+      "decompressed_sha256": "3177289766001bc76062f3608cbf45bc9cce6aa49a5dfa423c72a4da279db207"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/PLANNING_AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/MINIMAL_AXIOMS_2026-06-29.md.gz",
+      "sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631",
+      "decompressed_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/no-go-discipline/SKILL.md.gz",
+      "sha256": "f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934",
+      "decompressed_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/review-loop/SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md.gz",
+      "sha256": "2b810691ebd17a412f702422ec88f33c9a9cdbb6fea77743f1dc7cebc398a065",
+      "decompressed_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md.gz",
+      "sha256": "9f5ffe7425e379ad14b217180a494cf3154c68c19dfa92f687966f015c6c0db2",
+      "decompressed_sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/instructions/docs/audit/data/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_PROBE.md.gz",
+      "sha256": "e79f04ac46bc31053dc72e0351146413a8d455137091d1e29d223665ed842be8",
+      "decompressed_sha256": "bccf07d0ca041c9c0585beccb912ac35e1da12deadae3c50efb78d439cb9b441"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_REVIEW.md.gz",
+      "sha256": "77447a622195d0f15d55787f5d3bb7f7870de47ac6c21499b8548f2304e3a539",
+      "decompressed_sha256": "9118707fdcc85cdfd0a1160598872fb8544a9de757b3a1efe8e93292719c533c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/C4_B1_report.md.gz",
+      "sha256": "80b39136d3f96dd60f2fa2fdf1b57bceca36ab4194dc0cbef8230874eed63fcc",
+      "decompressed_sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/C4_M1_report.md.gz",
+      "sha256": "86c1474800adddfd16fea66a3440bf54422d0b4d450a9f1ea3cabe6cbdda1a30",
+      "decompressed_sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz",
+      "sha256": "33efc2317c99dcc3698a045ae8c075312819875c68d6d93ffb8d5219fc714bbe",
+      "decompressed_sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md.gz",
+      "sha256": "8485944dd5100dec9f021e23ddf51ad2a3488ffdbc7cb84b4e68bfef54912605",
+      "decompressed_sha256": "2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz",
+      "sha256": "665f64c0dfdefc032bd348c5b9eef91a178129a977536584b68cb8d5966d5dcf",
+      "decompressed_sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_PATCH_FOCK_ISOMETRY_REVIEW.md.gz",
+      "sha256": "efe72f08cc9e9027eae5d137bf485fe14eb44899c47c8d8ca3f24caa3b37f8f3",
+      "decompressed_sha256": "bc88af1dda77065d8806da9d689546547f40847a340177086793dab5f3a277cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz",
+      "sha256": "ddd593920aa50ba5f6633a4297665227406712d41860f288d74ab481f8aa0ff7",
+      "decompressed_sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/DETECTOR_INDEX_LEAKAGE_PROBE.md.gz",
+      "sha256": "9c19346610130f3a12a05e902b78da0a28d55bc679f01e62e526454996ae6b52",
+      "decompressed_sha256": "4d1e9b888c6e84881e8d356c42e8da521794c68191ebcebab1c145ced5189747"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/DETECTOR_SCATTERING_PROJECTION_PROBE.md.gz",
+      "sha256": "6c05ef2bed51f3e4302cceeffebc66f744bbfbd9d2b4a9912618ccfe84c2a0e2",
+      "decompressed_sha256": "91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/DETECTOR_SCATTERING_PROJECTION_REVIEW.md.gz",
+      "sha256": "11ff6c86f5021dc7508e2d384b88e6dd5aa15cc50b835fa96f1ade310dd503f5",
+      "decompressed_sha256": "d9ab71d88615c78cb49eda7cc85ff263d65c12be6cc6e019314cd96eb42a20a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/PROJECTION_REVIEW_RECEIPT.json.gz",
+      "sha256": "f8224e6bb7c1f2ef249c26c6f8cb150261069a5d95d12d57a3471999781a26f0",
+      "decompressed_sha256": "1fed9654096e0c67535640f60c1f1c318ac313c1436d84a21c4544b744f6ce3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/frozen/sources/freeze_receipt.json.gz",
+      "sha256": "f725c418dedecb59f6ce10a8708e015a0af345add31c7feb69078f128b4afcfd",
+      "decompressed_sha256": "47bf0db5e653961b622953a77d26f345515e8f87fe583c6ce66c8951c0f6a498"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/independent_operator_controls.py.gz",
+      "sha256": "65f273016be43a318414222071aef4efdddf7b50bfeaf2fe9cf2432ae6613c09",
+      "decompressed_sha256": "a1e16ca579a93b895ecfcdd0c7300737489daa3913401cce427aef769af58067"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/author_receipt_check.json.gz",
+      "sha256": "5850a31f119d524271360e5953b83d22686e4f66a610868dc7d29107c48fc022",
+      "decompressed_sha256": "e47d2a05a98608a226f7cca920bbb25c3de25e3fff79f33b674d43e6a1f037ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/author_reproduction.json.gz",
+      "sha256": "f3c3d425634145e7c094a7fcc4710fb2bf6617cf76df230a3eb42829589e587b",
+      "decompressed_sha256": "704eeed7dee469c991ff3d05a85c8916c5bce8a67529c3f08855c1cfa1b57390"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/author_reproduction.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/author_reproduction.stdout.txt.gz",
+      "sha256": "f59f0e4267236e595d8c69c921179797285e8b0f9b1fa90c551df1ecc4fbb3f7",
+      "decompressed_sha256": "794a40653dd5419861b95e6188f39e7e6b0a6bf1be03d3b42e1a1623f161e89b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/final_source_refresh.json.gz",
+      "sha256": "9468a93159d40a87277888a2b894dedf825ad2da19a1799a71d00307f4aefec4",
+      "decompressed_sha256": "87c13e3eb9947d833ba5572374ccc40bfd57ca2c6cc88748b1dd6c249b7d53cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/independent_control.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/independent_control.stdout.txt.gz",
+      "sha256": "437c9282c31869b3fb48a952fd93062b42983b8accef0154e4ea398c89dff6f0",
+      "decompressed_sha256": "93398bd38bdabcee54673d5df2a9c812c451fbee059cdb22430a588f23a1c617"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/independent_execution.json.gz",
+      "sha256": "62a256187eac45784a77088a7c391e166106c5b475bd9fb759327958a26f08d2",
+      "decompressed_sha256": "c7a86924a767d6b562d3f3794c54b396612a3d2017dcbeef39cda25c01bb051c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/mutation_reproduction.json.gz",
+      "sha256": "11e8fae4f776702390f2110ee0e32a50eb3a2431107d4f6a42870136c6c94a39",
+      "decompressed_sha256": "33fa5dc551ee66f1f55f59e54763001e0e30918bf7a0052a7ed8f06385336643"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_bad_defect_coefficient.stderr.txt.gz",
+      "sha256": "2e050f93743aa4e2f1009fb176101e766c293123ae8e92db6fa434f3e526e72d",
+      "decompressed_sha256": "973642329a98391018e4dc376bf370d683c0bf41643448654a0552ee0c3d8feb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_bad_defect_coefficient.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_halve_energy_bound.stderr.txt.gz",
+      "sha256": "0b73a46d3a11a7975496fe8bc6f93d9fc53e720f1387e97f8c4f55d744684ea6",
+      "decompressed_sha256": "eeb497b05198714ec2f3fd0e3333edf2e61883297d95b83dc7e0fc5947e5ee83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_halve_energy_bound.stdout.txt.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_omit_first_identity_term.stderr.txt.gz",
+      "sha256": "4dda63b07489b6a926c5a439a954fbff7ec43b9debcabcea3b94ce7df0c5cb33",
+      "decompressed_sha256": "2f6e96635ae2b730c2002c0feca07da5394fa0c152fa6a76feaa3cd0f625a2dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_omit_first_identity_term.stdout.txt.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_omit_high_energy_tail.stderr.txt.gz",
+      "sha256": "e8695756e09b340d932f70b8db58493e0d9543c42b274ebf784c8617dab6a94e",
+      "decompressed_sha256": "b652d4d380e5a45845f398a1925ba49d7470bc18efb94ec977a9f1271e38f005"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_omit_high_energy_tail.stdout.txt.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_omit_second_identity_term.stderr.txt.gz",
+      "sha256": "2f6e118e0765580356db06649f4e601d09fd70df12860b45dbab4832d726e074",
+      "decompressed_sha256": "630b61fdc7801fac8ba97ea14d2bedd1d46bc36b86541e8f3ad16aadab345817"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_omit_second_identity_term.stdout.txt.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_reverse_zero_resolvent_sign.stderr.txt.gz",
+      "sha256": "222eabb7b28ef2e4f143f68eb3df156be7c08261a8a9e5603bde15ef998398bd",
+      "decompressed_sha256": "c2948e59da90170c4a9c3c5375980f9550f8fd4c2c3242b19ee9c90f64afaaa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/reproduced_reverse_zero_resolvent_sign.stdout.txt.gz",
+      "sha256": "3da0d0d8b26442c8e6680324f17aba882b94cfc3922643be587b46b84940b09a",
+      "decompressed_sha256": "15099f20989345cba562bd2270292f76f7a3af07d0c023e0d27c45672252a627"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/search_defect_selected_complement.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/search_defect_selected_complement.stdout.txt.gz",
+      "sha256": "985f4fda4a0b6dd7a63269254efeea2689e01cf2a04130c96859c3b48f9428d9",
+      "decompressed_sha256": "3cc1a4afeb275a8fab902ff5dc099b449434e68415f8830896f2d719f0ae680b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/search_execution_records.json.gz",
+      "sha256": "d0b8456d3a28ba3f477defb3340bccb380357554d820c2c3a8b0aee2afec3d6b",
+      "decompressed_sha256": "bcf61f402af8a150857d848fb8cc0ec676c41334e5166256b88c46ac5848860e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/search_negative_echo.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/logs/search_negative_echo.stdout.txt.gz",
+      "sha256": "2870abef5303d741392c755f522b290de41c759960624d7dc33e64ada5a51290",
+      "decompressed_sha256": "e5a0c8fb88359867d1d5fbd07c7f6a693c9ab8eefe745c2452597ca79dec2858"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/precontrol_freeze.json.gz",
+      "sha256": "1bb6f6a20e535e3fc929c8c80629d5fa34fb951e22e5683906d9ba943120e2b3",
+      "decompressed_sha256": "944536d3166e9378d2e97e4ac437c1b7e0ee0b87c4116be71f2729e30724ec66"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/reading_coverage.json.gz",
+      "sha256": "76706d28eb44b8d0540acb42810a67240e13ae89dd0f0cfad144f84920d9a9b7",
+      "decompressed_sha256": "6ece040b9b302163035cc89a432d2de65563ed1b560ef0d09efe2d1f1e977300"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/receipt.json.gz",
+      "sha256": "148ef98de2c11022610c2825bb290bbd965aebd197a57b0ada614a114860356b",
+      "decompressed_sha256": "0e96c15785d6e5f74d160a5753bdd33b47f91ac5f425de809e5749ecffaa9254"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/source_manifest.additional.json.gz",
+      "sha256": "0df26331158551c88d3792cb217c25590f32f13b50a878080ff7d2d468e853c6",
+      "decompressed_sha256": "82d9e205df8f44cb4639ce79e99233ce252e0e60cce92704a2813ce9f70afd2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/detector_index_leakage_review/source_manifest.initial.json.gz",
+      "sha256": "02ae784695a434c7e8d55c0854f34c0c4316c9085d1bdd6805c107bdbf402a87",
+      "decompressed_sha256": "43882f02b51f0b697effe75a8f17291a54ad6b9a875a8d7737d454b77c05c5eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/finish_leakage_delivery.py.gz",
+      "sha256": "0b127e3575ec6e8b18637dd0d6aedf6860bfe31cad622fe29ad27271092bf51d",
+      "decompressed_sha256": "d92af9a1b1c97c86618b2dade56ba04f445ce6053533bedd9d7eee43b705eb13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_canonical_execution.json.gz",
+      "sha256": "c914fc64efebe8beb41d8d20f388600b3ce9fe5686db65a6e8023d27bd8eea2a",
+      "decompressed_sha256": "31ee280c3a21ea286d9b652bddae6c7f47c6e9b0547d719bd2c18999bad2b5a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_citation_build.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_citation_build.stdout.gz",
+      "sha256": "bbe5b2ef4f8e03c2ad21103f0b0d6e1d4a455c1cc76dacc40965e27ed642c738",
+      "decompressed_sha256": "56183dd6d30bb8a315031c37b0aef9a51eb79dbb0d1283275b694f2f1a331661"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_citation_execution.json.gz",
+      "sha256": "d8074975ad5788fb1e7aabfb30cbfb6c16b8d37acfb12d30c4028dcaba7037a2",
+      "decompressed_sha256": "63e508b71f8c2aa8df1738b62946381657c242bde563fca5ffb217c4efbe018d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_citation_manifest.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_citation_manifest.stdout.gz",
+      "sha256": "eca57fe13f63c46be306818fa568bf857016dca1d9039326f379a9356e49c7ed",
+      "decompressed_sha256": "69c66c7d06c637cd54a0b75b2f4be3ff6f2bc45923ecfac1e87b075ec18380f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_delivery_mechanical.json.gz",
+      "sha256": "b17d8150826329fe544747571aa17a69fddc8c3c67dccb9e080f803ddabd280e",
+      "decompressed_sha256": "f4f475dceec830a634234afa7214455a926460c77faaa9d153a522a77b0e3ebf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_final_reconstruction.log.gz",
+      "sha256": "de09d9154f0f7d68a8ea29af85614d3c734db608895e8b8926ab50b336bf03b6",
+      "decompressed_sha256": "6813e5db9c2a62f12dbaa7ae19f51c36df3aa647d06c1e20c2f591f096cfbed6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_final_vocab_fix.log.gz",
+      "sha256": "3adcf5913419417c875bef8d23dd7f73b981f0d4716579c6dd8662dae26b4154",
+      "decompressed_sha256": "cf34563e7f77b8a08d6bebfe705dff2905afc67221be752003010b9144a3e7da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_final_vocab_report-only.log.gz",
+      "sha256": "e7167fc216a08b048e0823f0caa5affabb743bb42d92d092480d921925eb4e72",
+      "decompressed_sha256": "a0869d983441fbdd98e8ca9bc60e1f7e1101ffc13e283967d85e0fd517c90421"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_focused_audit_compat.execution.json.gz",
+      "sha256": "f9f88ae60eca8b16ae372386e1f98728ba4ca962efdb3f1fae1932bcff7915c1",
+      "decompressed_sha256": "4d32d30b591bcd5e667b00b39fd0ec20be446baefb127847c61226401a01eefd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_focused_audit_compat.json.gz",
+      "sha256": "ccae2a7d2ee6eecdb3806e85b208f70803780036fc19e89ddddb57394eff4c57",
+      "decompressed_sha256": "b7c21a73e5b99553bf847864feecfb9d123e67f4e61caf44714ae2b46f32ec38"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_focused_audit_compat.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_initial_reconstruction.log.gz",
+      "sha256": "de09d9154f0f7d68a8ea29af85614d3c734db608895e8b8926ab50b336bf03b6",
+      "decompressed_sha256": "6813e5db9c2a62f12dbaa7ae19f51c36df3aa647d06c1e20c2f591f096cfbed6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_initial_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_initial_vocab_fix.log.gz",
+      "sha256": "48a1c1a48cff0bc2190e12b6a4564742bd95a2ba146239a5ed2100f8d4389bf6",
+      "decompressed_sha256": "a383ef7a92b24665f8a8b3b038b323292076bbcf8937e89691cb050aa4643212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/bad_defect_coefficient.execution.json.gz",
+      "sha256": "20c0d8c19058aff792c6cf87f46dbfdf6b892f56d96d496de33e7cf423a0321f",
+      "decompressed_sha256": "7d5c0d50d74848d7b55030b702675d7f6c8001927deea0014938d9890a6d8348"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/bad_defect_coefficient.py.gz",
+      "sha256": "b5f65160f6983472a577b72c731a70939d1b4ec56433fb7bb8c48053d48c3eb8",
+      "decompressed_sha256": "dfdab3330c666f18271996da278a13d6fdcb3431e2bac9d35bf58c14ad1be561"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/bad_defect_coefficient.stderr.gz",
+      "sha256": "496abbf910395b1064aa0f0f38b3a3dfa712a6f1525f051958c631ef63389e77",
+      "decompressed_sha256": "d2d7e0ce0b9e2c38f278060453f1292371e8062bf40081b97d26a865a4b7a13a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/bad_defect_coefficient.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/halve_energy_bound.execution.json.gz",
+      "sha256": "90736cfc0e0de8987e8f3477ab6a0f45c366d6dbb75fea6480faa51d6a12a284",
+      "decompressed_sha256": "17941c9f1eab5adfa5c1ed09095a8b99935836a76dc7b4794003f063fd15e0e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/halve_energy_bound.py.gz",
+      "sha256": "ee11b8db4fe15ab496010bb5dcfac59f28fc05e1d2d020b00f5e6f292d1b47c9",
+      "decompressed_sha256": "d35c5df31396ca88edc6429f832f2fead87fcd29f12a62e4004c0b6a49152b6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/halve_energy_bound.stderr.gz",
+      "sha256": "5f8cade6cd385a98fc023f48e5758ea9948473302a395cad88283e5a9276307f",
+      "decompressed_sha256": "21a7332151f4fddf8ab3ee5bf96871fa773aa39c6691f77935d2087d25c66553"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/halve_energy_bound.stdout.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/manifest.json.gz",
+      "sha256": "74119a97f06177038f068c50651f9f2467ef7ae7dcab2469485159c2b34f1be4",
+      "decompressed_sha256": "99e7d1f18bed09ced77a7a1d1c87c155a2dca55c769278184758cdd9f95eeb24"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_first_identity_term.execution.json.gz",
+      "sha256": "79eee65c183f3d1ecd2920abd0ca203558839017daeca2aa56815f15dded61ed",
+      "decompressed_sha256": "329a09f03ee9cb9204ce3f241ae79f8ad84edb28c5ee288fe294730d9d1938a5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_first_identity_term.py.gz",
+      "sha256": "f7d8d5d90f8c2ef3a64f63895ed1c2a59cbb9e7bc4f858f2c29a63a8bd839087",
+      "decompressed_sha256": "4fe03bc72a69155a669018b03dddcb5ed411ff4c681151b1e3c296e8b7c0c790"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_first_identity_term.stderr.gz",
+      "sha256": "597a866d385d173163d2d15a5b1f52819c0088c46c7917243015a4bac146e02a",
+      "decompressed_sha256": "da160430652feba3ba4d09af0c9871362b4a99ffd23b5b803abe3094c84b4696"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_first_identity_term.stdout.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_high_energy_tail.execution.json.gz",
+      "sha256": "927b0ab10b41f9657ac04cc2b8d4407edec97c805bcadd830c20d65b813344b2",
+      "decompressed_sha256": "206f1590d8bee76a764dd04069b689d95d7e3cb6593f168b871df976cea6bc6e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_high_energy_tail.py.gz",
+      "sha256": "e380beded43d4304d2e08787f2977c9eb617c393f4e02fce6b016f4755bd84ae",
+      "decompressed_sha256": "cb3962c726464fec672c7eb82e967f530df4f4fc89a831045bdabae8de4bb982"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_high_energy_tail.stderr.gz",
+      "sha256": "ee72c8fb2665631c7f2d6f70a199cdaece48206e84f47f319f3a87e2fee844fd",
+      "decompressed_sha256": "064079b3f57d426a9207c12d6b70e1f0c76a5a85ce040d68ce17aee02e0cb2be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_high_energy_tail.stdout.gz",
+      "sha256": "78e3738f9820d3b451b53a051fd3dbfe01820be09b2856363ab0e73879644bce",
+      "decompressed_sha256": "48b64e51a9b2b18dd54e2ec71d68981ffdc9e3258a124222e68e173fb08a0473"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_second_identity_term.execution.json.gz",
+      "sha256": "3568d8d90af94340d1bf7a601fe946b881eb2525fdf1e48720ffef6d4acbc21d",
+      "decompressed_sha256": "85e40245aa1b8ffa531e61f751096d8e0e1c68a9aefd2dc1554da4f9fd8919ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_second_identity_term.py.gz",
+      "sha256": "2dae26488cad0ff0ec6c63e3ae5efa4f02f21bcae7a9303c8ce4b022a6f2533f",
+      "decompressed_sha256": "d4a5c7c322264b496c9244620c0531c5fe6f26066c45c4a26d278e7f73fa090a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_second_identity_term.stderr.gz",
+      "sha256": "d6828fbb618655a4b0b4121e035fb33fd52452f6650685f4347be949263471e1",
+      "decompressed_sha256": "b1874b360d0a6209469a3bf47ce6498125374f5851fd12eea883d0307f9d4ec7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/omit_second_identity_term.stdout.gz",
+      "sha256": "dce0a86ef02196e7598c595b4c0b5825f1a9ea188a3ef0f429fad46ee2ba5bf4",
+      "decompressed_sha256": "9bcf8f9b2054a80affb8021fb77660c8a27380604cf739e9fbe93177520df07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/reverse_zero_resolvent_sign.execution.json.gz",
+      "sha256": "28c2d3930baafcf6f382c0f33c0f5e54c7763a26033bd2c95900e61c8979a67a",
+      "decompressed_sha256": "db8745669f985f104fa938ab5190c9331687a45008a530bd3438d3df64b7074e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/reverse_zero_resolvent_sign.py.gz",
+      "sha256": "46b18138f611accc3c42c122672d391a0c2ceb9d13a9fc014003187a36909302",
+      "decompressed_sha256": "56a36b474eb5dcf46c8a89c4df1df60c359de525d62bdce482dae4e9b523106d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/reverse_zero_resolvent_sign.stderr.gz",
+      "sha256": "5aa36507f5c999f39ca398a9159cb265bfdc9882be450c6bde9192232be6c8ca",
+      "decompressed_sha256": "ddbeabec02954733cbe3f10c9f31442a771eccb6badf394d2a38d36727e88ce2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/leakage_primary_mutations/reverse_zero_resolvent_sign.stdout.gz",
+      "sha256": "3da0d0d8b26442c8e6680324f17aba882b94cfc3922643be587b46b84940b09a",
+      "decompressed_sha256": "15099f20989345cba562bd2270292f76f7a3af07d0c023e0d27c45672252a627"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/prepare_leakage_publication.py.gz",
+      "sha256": "cddb756c019e9067272901410d95eb2b2d265fb0f6a5402e9c1487b64a8aa9c8",
+      "decompressed_sha256": "3b2279b981c115ca8cc58699635cce49f811af8a05e32ff548066bffeabed4f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/root_verify_projection_and_leakage.py.gz",
+      "sha256": "2f09165ab79820a59102bb2eb1417a5db3fb4b564821a12892ccc86dea6e53b7",
+      "decompressed_sha256": "88ca520173fa5a132ec3b2c372748b00c2d351ec91572392bea2092b7156503e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/run_leakage_verification.py.gz",
+      "sha256": "35258b025c9f171941c7c7761def1ac106ba52ec128fc076da249b6c205aeeac",
+      "decompressed_sha256": "7f080e04ddc6eec028e15970f18054dd3b865b2ad33eb54593a5250f5acfd82e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/evidence/update_campaign_checkpoint_0235.py.gz",
+      "sha256": "1ad1131212df4bbca1b32a0c48aa57aae9a84ed0011244f9d4ba62ddcc4b8492",
+      "decompressed_sha256": "5d3d7fd97e2af612b5603fa1e07b606a5df8d59b6ed67df6efb6b644a5eccfe8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-index-leakage-20261012/reconstruct.py",
+      "sha256": "1ad411e578e130e8741b54b7d98e4d07b3757edeaf05417126370c47670dd1e3"
+    },
+    {
+      "path": "docs/DETECTOR_INDEX_LEAKAGE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "bd818597dab684761e3e9bb63dc38e929e9474ad915f00af11b071311e3e60aa"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "2c8f4cb00bedc5e7d484284251fe8766f378c58bdceb315a75232378051094e0"
+    },
+    {
+      "path": "logs/runner-cache/detector_index_leakage_2026_10_12.txt",
+      "sha256": "d057cd4f22801f5420d05810b2450d4b733810d6bcd04cf15b17e53cdc2ff80f"
+    },
+    {
+      "path": "scripts/detector_index_leakage_2026_10_12.py",
+      "sha256": "9cb24ba823897133a6fc9163e279b8d27603ccb2a51170c10668ce084dadf765"
+    }
+  ]
+}

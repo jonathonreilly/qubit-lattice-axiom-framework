@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/microscopic_joint_flow_2026_10_12.py
+runner_sha256: 423803f60f56bffc7f5e02d0bc7ce80cb3df05a528a5efd657d799e67245f2c1
+input_fingerprint_sha256: 517d9ebaedcd5283d0effd2d5cac29bbf96c89e6e8000f6e412ccd5aaf5ee49a
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+{"current": [{"imag": "0", "real": "-1", "word": "Z-1 Y0"}, {"imag": "0", "real": "-1", "word": "Z0 Y1"}], "name": "negative_fixture_current_exact", "passed": true}
+{"name": "current_density_improvement_is_null", "passed": true}
+{"name": "negative_fixture_q_density_exact", "passed": true, "q": [{"imag": "0", "real": "-4", "word": "X1"}, {"imag": "0", "real": "-4", "word": "Y0 Y1"}, {"imag": "0", "real": "-4", "word": "Z0 X1 Z2"}, {"imag": "0", "real": "4", "word": "Z0 Z1"}]}
+{"commutator_action": [{"imag": "0", "real": "8", "word": "X0 Y1"}, {"imag": "0", "real": "8", "word": "Y-1 X0"}, {"imag": "0", "real": "-8", "word": "Y0"}, {"imag": "0", "real": "-8", "word": "Z-1 Y0 Z1"}], "exact_l1": "32", "name": "generic_current_conservation_mutant_rejected", "passed": true}
+{"name": "finite_jacobi_density_X", "passed": true}
+{"name": "finite_jacobi_density_Y", "passed": true}
+{"name": "finite_jacobi_density_Z", "passed": true}
+{"name": "positive_xx_current_has_nonzero_null_density", "orbit_sums": [], "passed": true, "q": [{"imag": "0", "real": "2", "word": "X-1 X0"}, {"imag": "0", "real": "-2", "word": "X-2 Z-1 Z0 X1"}, {"imag": "0", "real": "2", "word": "X0 Z1 Z2 X3"}, {"imag": "0", "real": "-2", "word": "X1 X2"}, {"imag": "0", "real": "2", "word": "Y-1 Y0"}, {"imag": "0", "real": "-2", "word": "Y-2 Z-1 Z0 Y1"}, {"imag": "0", "real": "2", "word": "Y0 Z1 Z2 Y3"}, {"imag": "0", "real": "-2", "word": "Y1 Y2"}]}
+{"name": "positive_q_divergence_reconstruction", "passed": true, "primitive": [{"imag": "0", "real": "2", "word": "X-1 X0"}, {"imag": "0", "real": "-2", "word": "X-1 Z0 Z1 X2"}, {"imag": "0", "real": "-2", "word": "X-2 Z-1 Z0 X1"}, {"imag": "0", "real": "2", "word": "X0 X1"}, {"imag": "0", "real": "2", "word": "Y-1 Y0"}, {"imag": "0", "real": "-2", "word": "Y-1 Z0 Z1 Y2"}, {"imag": "0", "real": "-2", "word": "Y-2 Z-1 Z0 Y1"}, {"imag": "0", "real": "2", "word": "Y0 Y1"}]}
+{"name": "positive_complete_site_basis_X", "passed": true}
+{"name": "positive_complete_site_basis_Y", "passed": true}
+{"name": "positive_complete_site_basis_Z", "passed": true}
+{"density": [{"imag": "0", "real": "1", "word": "Z0"}, {"imag": "0", "real": "-1", "word": "Z1"}], "name": "nonzero_density_does_not_imply_nonconservation", "passed": true}
+{"action": [{"imag": "0", "real": "-2", "word": "Y0"}], "name": "drop_divergence_term_detected", "passed": true}
+{"name": "one_observable_test_is_insufficient", "passed": true}
+{"bound": 18, "count": 8, "max_union": 4, "name": "mixed_history_[0]_rb", "omitted_growth_bound": 6, "omitted_growth_detected": true, "passed": true, "states": 7}
+{"bound": 18, "count": 12, "max_union": 4, "name": "mixed_history_[0]_br", "omitted_growth_bound": 6, "omitted_growth_detected": true, "passed": true, "states": 7}
+{"bound": 2245320, "count": 5664, "max_union": 10, "name": "mixed_history_[0]_rrrbbb", "omitted_growth_bound": 216, "omitted_growth_detected": true, "passed": true, "states": 52}
+{"bound": 2245320, "count": 28272, "max_union": 10, "name": "mixed_history_[0]_bbbrrr", "omitted_growth_bound": 216, "omitted_growth_detected": true, "passed": true, "states": 52}
+{"bound": 2245320, "count": 9920, "max_union": 10, "name": "mixed_history_[0]_rbrbrb", "omitted_growth_bound": 216, "omitted_growth_detected": true, "passed": true, "states": 52}
+{"bound": 48, "count": 28, "max_union": 5, "name": "mixed_history_[0, 8]_rb", "omitted_growth_bound": 24, "omitted_growth_detected": true, "passed": true, "states": 26}
+{"bound": 48, "count": 36, "max_union": 5, "name": "mixed_history_[0, 8]_br", "omitted_growth_bound": 24, "omitted_growth_detected": true, "passed": true, "states": 26}
+{"bound": 9953280, "count": 110308, "max_union": 11, "name": "mixed_history_[0, 8]_rrrbbb", "omitted_growth_bound": 13824, "omitted_growth_detected": true, "passed": true, "states": 627}
+{"bound": 9953280, "count": 373352, "max_union": 11, "name": "mixed_history_[0, 8]_bbbrrr", "omitted_growth_bound": 13824, "omitted_growth_detected": true, "passed": true, "states": 627}
+{"bound": 9953280, "count": 170500, "max_union": 11, "name": "mixed_history_[0, 8]_rbrbrb", "omitted_growth_bound": 13824, "omitted_growth_detected": true, "passed": true, "states": 627}
+{"detected_cases": 10, "name": "mixed_history_growth_mutant_detected", "passed": true}
+{"coefficient": "9/20", "name": "mixed_majorant_binomial_1", "passed": true, "scope": "Arithmetic grouping only; not independent evidence for the history bound"}
+{"coefficient": "27/160", "name": "mixed_majorant_binomial_2", "passed": true, "scope": "Arithmetic grouping only; not independent evidence for the history bound"}
+{"coefficient": "168399/25600000", "name": "mixed_majorant_binomial_5", "passed": true, "scope": "Arithmetic grouping only; not independent evidence for the history bound"}
+{"coefficient": "909138087/13107200000000", "name": "mixed_majorant_binomial_9", "passed": true, "scope": "Arithmetic grouping only; not independent evidence for the history bound"}
+{"commutator_norm": 0.0, "name": "dense_periodic_xx_commutes", "passed": true, "sites": 6}
+{"defect": 2.2621999475724197e-16, "name": "dense_unitary_product_xx", "passed": true, "reverse_order_is_nondiscriminating": true, "u": 0.037, "v": 0.029}
+{"local_action_norm": 0.0, "name": "tracial_vacuum_only_test_xx", "nondiscriminating_vacuum_test": true, "passed": true, "vacuum_residual": 0.0}
+{"action_norm": 25.888543819998326, "name": "dense_negative_current_action_matches_exact_polynomial", "passed": true, "residual": 0.0, "sites": 6}
+{"defect": 0.045134712124742606, "name": "dense_unitary_product_zx", "passed": true, "reverse_order_is_nondiscriminating": false, "u": 0.037, "v": 0.029}
+{"local_action_norm": 25.888543819998326, "name": "tracial_vacuum_only_test_zx", "nondiscriminating_vacuum_test": true, "passed": true, "vacuum_residual": 0.0}
+{"adjoint_commutator": 0.0, "common_fixed_vector_dimension": 0, "name": "discrete_projective_implementers", "passed": true, "unitary_commutator": 2.0}
+{"total": 37, "failed": 0, "source_sha256": "423803f60f56bffc7f5e02d0bc7ce80cb3df05a528a5efd657d799e67245f2c1"}
+per_element: exact finite Pauli currents, Jacobi densities and local divergence identities are checked against stated fixtures.
+per_site: a complete qubit one-site basis is exercised with finite support bookkeeping; no physical self-adjoint model is constructed.
+per_mode: checked and not executed — no particle spectral mode, mass shell or asymptotic particle sector is tested by these controls.
+per_block: finite mixed-color histories and six-site matrices are checked; finite predicates do not establish unbounded domains.
+lattice_wide: checked and not executed — the thermodynamic and strong-commutation statements require the analytic conditional proof.
+TOTAL: PASS=37 FAIL=0
+SCOPE: Finite predicates only; no unbounded-domain, thermodynamic or physical-realization certificate.
+
+----- stderr -----
+

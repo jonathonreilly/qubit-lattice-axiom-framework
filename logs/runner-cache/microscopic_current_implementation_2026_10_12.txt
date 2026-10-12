@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/microscopic_current_implementation_2026_10_12.py
+runner_sha256: 99a8d2c5bad7095960955c104b5718c2d2244fdbfb5141cf9183fc3500b0893c
+input_fingerprint_sha256: 230dd46a95fdbd78c6fa53158e04e6c6232470272de04d379b11ddda8f965918
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+{"current_coefficient_l1": "25", "missing_half_detected": true, "name": "exact_pair_sign_0", "passed": true, "wrong_sign_detected": true}
+{"current_covariant": true, "name": "first_moment_translation_0", "opposite_sign_detected": true, "passed": true}
+{"current_coefficient_l1": "31", "missing_half_detected": true, "name": "exact_pair_sign_1", "passed": true, "wrong_sign_detected": true}
+{"current_covariant": true, "name": "first_moment_translation_1", "opposite_sign_detected": true, "passed": true}
+{"current_coefficient_l1": "47/2", "missing_half_detected": true, "name": "exact_pair_sign_2", "passed": true, "wrong_sign_detected": true}
+{"current_covariant": true, "name": "first_moment_translation_2", "opposite_sign_detected": true, "passed": true}
+{"current_coefficient_l1": "103/2", "missing_half_detected": true, "name": "exact_pair_sign_3", "passed": true, "wrong_sign_detected": true}
+{"current_covariant": true, "name": "first_moment_translation_3", "opposite_sign_detected": true, "passed": true}
+{"current_coefficient_l1": "33/2", "missing_half_detected": true, "name": "exact_pair_sign_4", "passed": true, "wrong_sign_detected": true}
+{"current_covariant": true, "name": "first_moment_translation_4", "opposite_sign_detected": true, "passed": true}
+{"adequate_center_radius": 3, "inadequate_center_radius": 1, "insufficient_padding_defect_l1": "93/4", "name": "padded_pair_reduction", "passed": true}
+{"name": "density_support_hermiticity", "passed": true, "support": [-3, -2, -1, 0, 1, 2, 3], "terms": 14}
+{"exact_terms": 1, "missing_layer_defect_l1": "2", "name": "nested_volume_padding_1", "padding_radius": 1, "passed": true}
+{"exact_terms": 3, "missing_layer_defect_l1": "4", "name": "nested_volume_padding_2", "padding_radius": 2, "passed": true}
+{"exact_terms": 4, "missing_layer_defect_l1": "8", "name": "nested_volume_padding_3", "padding_radius": 3, "passed": true}
+{"exact_terms": 8, "missing_layer_defect_l1": "16", "name": "nested_volume_padding_4", "padding_radius": 4, "passed": true}
+{"exact_terms": 11, "missing_layer_defect_l1": "32", "name": "nested_volume_padding_5", "padding_radius": 5, "passed": true}
+{"exact_history_count": 2, "largest_union": 2, "name": "connected_history_a1_n1", "passed": true, "union_bound": 2, "upper_history_count": 2}
+{"exact_history_count": 6, "largest_union": 3, "name": "connected_history_a1_n2", "passed": true, "union_bound": 3, "upper_history_count": 8}
+{"exact_history_count": 22, "largest_union": 4, "name": "connected_history_a1_n3", "passed": true, "union_bound": 4, "upper_history_count": 48}
+{"exact_history_count": 94, "largest_union": 5, "name": "connected_history_a1_n4", "passed": true, "union_bound": 5, "upper_history_count": 384}
+{"exact_history_count": 454, "largest_union": 6, "name": "connected_history_a1_n5", "passed": true, "union_bound": 6, "upper_history_count": 3840}
+{"exact_history_count": 2430, "largest_union": 7, "name": "connected_history_a1_n6", "passed": true, "union_bound": 7, "upper_history_count": 46080}
+{"exact_history_count": 14214, "largest_union": 8, "name": "connected_history_a1_n7", "passed": true, "union_bound": 8, "upper_history_count": 645120}
+{"exact_history_count": 4, "largest_union": 3, "name": "connected_history_a2_n1", "passed": true, "union_bound": 3, "upper_history_count": 4}
+{"exact_history_count": 20, "largest_union": 4, "name": "connected_history_a2_n2", "passed": true, "union_bound": 4, "upper_history_count": 24}
+{"exact_history_count": 116, "largest_union": 5, "name": "connected_history_a2_n3", "passed": true, "union_bound": 5, "upper_history_count": 192}
+{"exact_history_count": 748, "largest_union": 6, "name": "connected_history_a2_n4", "passed": true, "union_bound": 6, "upper_history_count": 1920}
+{"exact_history_count": 5236, "largest_union": 7, "name": "connected_history_a2_n5", "passed": true, "union_bound": 7, "upper_history_count": 23040}
+{"exact_history_count": 39228, "largest_union": 8, "name": "connected_history_a2_n6", "passed": true, "union_bound": 8, "upper_history_count": 322560}
+{"exact_history_count": 311716, "largest_union": 9, "name": "connected_history_a2_n7", "passed": true, "union_bound": 9, "upper_history_count": 5160960}
+{"exact_history_count": 4, "largest_union": 4, "name": "connected_history_a3_n1", "passed": true, "union_bound": 4, "upper_history_count": 6}
+{"exact_history_count": 18, "largest_union": 5, "name": "connected_history_a3_n2", "passed": true, "union_bound": 5, "upper_history_count": 48}
+{"exact_history_count": 90, "largest_union": 6, "name": "connected_history_a3_n3", "passed": true, "union_bound": 6, "upper_history_count": 480}
+{"exact_history_count": 494, "largest_union": 7, "name": "connected_history_a3_n4", "passed": true, "union_bound": 7, "upper_history_count": 5760}
+{"exact_history_count": 2946, "largest_union": 8, "name": "connected_history_a3_n5", "passed": true, "union_bound": 8, "upper_history_count": 80640}
+{"exact_history_count": 18926, "largest_union": 9, "name": "connected_history_a3_n6", "passed": true, "union_bound": 9, "upper_history_count": 1290240}
+{"exact_history_count": 130066, "largest_union": 10, "name": "connected_history_a3_n7", "passed": true, "union_bound": 10, "upper_history_count": 23224320}
+{"exact_history_count": 6, "explanation": "The enumerated histories violate the mutant bound that omits support growth.", "false_history_upper": 4, "name": "growth_factor_mutation", "passed": true}
+{"J": 1, "exact_history_count": 2187, "initial_sites": 3, "name": "singleton_history_edge", "order": 7, "passed": true, "s": 1}
+{"J": 0, "exact_history_count": 0, "initial_sites": 3, "name": "zero_history_edge", "order": 7, "passed": true, "s": 1}
+{"current_norm": 6.699709917311121, "missing_half_distance": 6.699709917311119, "name": "dense_pair_vs_direct_commutator", "passed": true, "residual": 0.0, "wrong_sign_distance": 13.399419834622242}
+{"correct_residual": 0.0, "double_beta_distance": 0.9810357655826617, "name": "negative_clock_single_beta", "passed": true, "reversed_clock_distance": 0.9618716264566102}
+{"error": 0.156195524512258, "name": "finite_matrix_Taylor_remainder_1", "passed": true, "remainder_bound": 0.15677538452433573}
+{"error": 0.02335198604555321, "name": "finite_matrix_Taylor_remainder_2", "passed": true, "remainder_bound": 0.023414467921933926}
+{"error": 0.0024129246593713803, "name": "finite_matrix_Taylor_remainder_3", "passed": true, "remainder_bound": 0.0024176062972098645}
+{"error": 0.00019345084966003332, "name": "finite_matrix_Taylor_remainder_4", "passed": true, "remainder_bound": 0.00019373531459537113}
+{"error": 1.2816178789963429e-05, "name": "finite_matrix_Taylor_remainder_5", "passed": true, "remainder_bound": 1.2831090712288104e-05}
+{"error": 7.300077528435066e-07, "name": "finite_matrix_Taylor_remainder_6", "passed": true, "remainder_bound": 7.307011671272647e-07}
+{"J_analytic_upper": "1029/8", "assigned_site_count": 7, "current_diameter_bound": 6, "h_norm_numeric": 1.5307764064044154, "h_triangle_upper": "7/4", "name": "current_density_norm_bound", "p_analytic_upper": "147/8", "p_norm_numeric": 4.973833419341536, "passed": true}
+{"total_checks": 50, "failed_checks": 0, "runner_sha256": "99a8d2c5bad7095960955c104b5718c2d2244fdbfb5141cf9183fc3500b0893c"}
+TOTAL: PASS=50 FAIL=0
+SCOPE: Finite controls only; no domain, thermodynamic or physical-realization certificate.
+
+----- stderr -----
+

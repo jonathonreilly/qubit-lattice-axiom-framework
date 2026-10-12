@@ -1,0 +1,3073 @@
+{
+  "scope": "Lossless own/repository evidence and exact external primary identities.",
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_DETECTOR_CONVERGENCE_PROBE.md",
+      "bytes": 30768,
+      "sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64",
+      "preserved": "evidence/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md",
+      "bytes": 10761,
+      "sha256": "2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0",
+      "preserved": "evidence/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EPC_canonical_output_comparison.json",
+      "preserved": "evidence/EPC_canonical_output_comparison.json.gz",
+      "bytes": 1560,
+      "sha256": "bf5bc75bedbf17817a7960cfd68407763372751a27211115220558ba2220e312"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EX_root_author_coverage.json",
+      "bytes": 1172,
+      "sha256": "54e8f9a3f9ff43ef6df0f220ce5df836ef985392b219a3f1e2d2679802d96ed8",
+      "preserved": "evidence/EX_root_author_coverage.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EX_root_review_coverage.json",
+      "bytes": 732,
+      "sha256": "304716120b2d33bf7c850ef75f6f466b6589d2d64375315b03a5da4a688b96f9",
+      "preserved": "evidence/EX_root_review_coverage.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/PC_root_author_coverage.json",
+      "bytes": 608,
+      "sha256": "712884e8609948ec6e475f972df153e562bf52ac52db85659477bd3f15de17f5",
+      "preserved": "evidence/PC_root_author_coverage.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/PC_root_review_coverage.json",
+      "bytes": 1231,
+      "sha256": "5c02e6dfff8e96ea933e58d078dd593dc3029bf2cbc5bc776a48fbdd9c300686",
+      "preserved": "evidence/PC_root_review_coverage.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md",
+      "bytes": 29135,
+      "sha256": "c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2",
+      "preserved": "evidence/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/SCATTERING_EXHAUSTION_REVIEW.md",
+      "bytes": 10283,
+      "sha256": "8c9f7bb60724982ce7580a8b5688d8b61572ea008d92305f057d3f9b7a4e735d",
+      "preserved": "evidence/SCATTERING_EXHAUSTION_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/AGENTS.planning.read.txt",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "preserved": "evidence/compact_detector_convergence/AGENTS.planning.read.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/AUTHOR_SELF_CHECK.md",
+      "bytes": 5070,
+      "sha256": "12938911735bf9d3a5834b6700a92eddf2754252694118b5bd005308f09aab25",
+      "preserved": "evidence/compact_detector_convergence/AUTHOR_SELF_CHECK.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/CHECKPOINT.md",
+      "bytes": 3840,
+      "sha256": "f3f7aa6f98ae648af3c58e5692bb3cf2efb35aab94a1952a0043dc93fea31165",
+      "preserved": "evidence/compact_detector_convergence/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/SOURCE_LEDGER.json",
+      "bytes": 16510,
+      "sha256": "8e8a85eebb04735f5bbf9ca88f8a9e1daaded9b3ae59f2cae335976263d03330",
+      "preserved": "evidence/compact_detector_convergence/SOURCE_LEDGER.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/check_detector_algebra.py",
+      "bytes": 5758,
+      "sha256": "e056da90bf5526e2af387df869a2b86f6dda2300408ea0054ee3bd481954bffb",
+      "preserved": "evidence/compact_detector_convergence/check_detector_algebra.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/detector_algebra.execution.json",
+      "bytes": 499,
+      "sha256": "921c3f6761a3b9577744074cf031d77a8c4213c97c7d8d6aab9403bde1323de2",
+      "preserved": "evidence/compact_detector_convergence/detector_algebra.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/detector_algebra.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_convergence/detector_algebra.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/detector_algebra.stdout",
+      "bytes": 1481,
+      "sha256": "bef30fa89f407b05a2318c93d9f82980e4a98de32e73b95c750f7f121be1dff9",
+      "preserved": "evidence/compact_detector_convergence/detector_algebra.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/freeze.execution.json",
+      "bytes": 489,
+      "sha256": "98219783639552d18d47163354f91781614869eba037483d42df36b61f792cd4",
+      "preserved": "evidence/compact_detector_convergence/freeze.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/freeze.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_convergence/freeze.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/freeze.stdout",
+      "bytes": 267,
+      "sha256": "260f048ef061019e6836bf903881646e64fcfdc6f09c7c4f7083e6990b479f39",
+      "preserved": "evidence/compact_detector_convergence/freeze.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/freeze_evidence.py",
+      "bytes": 11648,
+      "sha256": "e70de7317380bfb947fbb8dc889070cd7fc4903514d73ecbf9ec86d6d1063437",
+      "preserved": "evidence/compact_detector_convergence/freeze_evidence.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/freeze_receipt.json",
+      "bytes": 23406,
+      "sha256": "de9a4acddf3c08b406c5dd74cae01d206e1e0a9ab2d804489ddc9ae42d0eca06",
+      "preserved": "evidence/compact_detector_convergence/freeze_receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/render_source_page.py",
+      "bytes": 667,
+      "sha256": "d28b676b5cb902c74f7258f0c24ac9488ea5fbbf004c2d0b58365452dfacd6ea",
+      "preserved": "evidence/compact_detector_convergence/render_source_page.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/repo_search.execution.json",
+      "bytes": 770,
+      "sha256": "92ad60e36d8f8ad8c5ace18db5aff00f493b994559d34d9ff9a830ce23331eda",
+      "preserved": "evidence/compact_detector_convergence/repo_search.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/repo_search.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_convergence/repo_search.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/repo_search.stdout",
+      "bytes": 1047,
+      "sha256": "2495a2b85c8c8732d43ba402920734d933e9a51d8b887532d05886a2a3de91d9",
+      "preserved": "evidence/compact_detector_convergence/repo_search.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/repo_search_launch_failure.txt",
+      "bytes": 2167,
+      "sha256": "25a69f012d610032c792acdf0b44594da0eb5d0b72bb48f09ada750631828276",
+      "preserved": "evidence/compact_detector_convergence/repo_search_launch_failure.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/run_with_timeout.py",
+      "bytes": 1475,
+      "sha256": "228ed064125495f04af215a5f5b4976cfe784745f0ec0e2c97af58afb66f5f5e",
+      "preserved": "evidence/compact_detector_convergence/run_with_timeout.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/source_render.execution.json",
+      "bytes": 540,
+      "sha256": "ed781c331526ee2e48f8aadb4058ca85818167e16e766a768bb7ddc3964b2018",
+      "preserved": "evidence/compact_detector_convergence/source_render.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/source_render.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_convergence/source_render.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/source_render.stdout",
+      "bytes": 275,
+      "sha256": "b370a5d618291ea3ce68076de77ea37629b182ef78ec08888e846e4c74a8c3f5",
+      "preserved": "evidence/compact_detector_convergence/source_render.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/CHECKPOINT.md",
+      "bytes": 2369,
+      "sha256": "d72901d2b81c85f4bf10638800bc0f3ea8786aaf47d7ec71a4716155806ebec5",
+      "preserved": "evidence/compact_detector_review/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/CONTROL_ASSESSMENT.md",
+      "bytes": 7520,
+      "sha256": "33b0e6277ccff6d390aecaccbb990947c2157ef0080082918be835dca73f4861",
+      "preserved": "evidence/compact_detector_review/CONTROL_ASSESSMENT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md",
+      "bytes": 16883,
+      "sha256": "bb5751097c21a8a98296f1866cffd134017612194ef706a4bb5100cc7501744c",
+      "preserved": "evidence/compact_detector_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/author_receipt_verification.json",
+      "bytes": 27983,
+      "sha256": "38d934434f9a86a0a200dd193c8094d34d61e624f7110c4227a4074b39703871",
+      "preserved": "evidence/compact_detector_review/author_receipt_verification.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/author_reproduction.execution.json",
+      "bytes": 544,
+      "sha256": "7c81efffbbfe2d16d25c2370468d15bf13d0218b920c53b65348651ce139f5ec",
+      "preserved": "evidence/compact_detector_review/author_reproduction.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/author_reproduction.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/author_reproduction.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/author_reproduction.stdout",
+      "bytes": 1481,
+      "sha256": "bef30fa89f407b05a2318c93d9f82980e4a98de32e73b95c750f7f121be1dff9",
+      "preserved": "evidence/compact_detector_review/author_reproduction.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/independent_control.execution.json",
+      "bytes": 395,
+      "sha256": "fb49e6335f4aa002f564378575f61b33df8cd6ef827001bb4176bc24fe4922dc",
+      "preserved": "evidence/compact_detector_review/independent_control.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/independent_control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/independent_control.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/independent_control.stdout",
+      "bytes": 3447,
+      "sha256": "1092ae3d3e410f61f6bc0ac0c9ecda94eb2376f373d60fa281b5d9456a39aa12",
+      "preserved": "evidence/compact_detector_review/independent_control.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources.json",
+      "bytes": 2841,
+      "sha256": "b0be6a04ed82f75672da6995b2e211399c7d97da0515248d23a8e7067ebd7c42",
+      "preserved": "evidence/compact_detector_review/instruction_sources.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/3a4b2c66__AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "preserved": "evidence/compact_detector_review/instruction_sources/3a4b2c66__AGENTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "preserved": "evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__SCIENCE_WORKFLOW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "preserved": "evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__SKILL_FRESHNESS_CHECK.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__physics-claim-reviewer__SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "preserved": "evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__physics-claim-reviewer__SKILL.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__physics-loop__references__proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "preserved": "evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__physics-loop__references__proof-search-governance.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__review-loop__SKILL.md",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "preserved": "evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__review-loop__SKILL.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__review-loop__references__SCIENCE_LENSES.md",
+      "bytes": 12918,
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "preserved": "evidence/compact_detector_review/instruction_sources/a13caa48__docs__ai_methodology__skills__review-loop__references__SCIENCE_LENSES.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/instruction_sources/c3f84746__AGENTS.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "preserved": "evidence/compact_detector_review/instruction_sources/c3f84746__AGENTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/kernel_control.py",
+      "bytes": 4614,
+      "sha256": "82f26d2b41c1d29c8f5da24670f0ebde7ac26d197fe5cd3545abcb6b49467473",
+      "preserved": "evidence/compact_detector_review/kernel_control.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutate_author_controls.py",
+      "bytes": 2736,
+      "sha256": "98b7638cd587e3b2b9e4302265afeb07ed1501294bc5a9abee9d64fb5d5c14a8",
+      "preserved": "evidence/compact_detector_review/mutate_author_controls.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutation_results.json",
+      "bytes": 2967,
+      "sha256": "c5f95a7bb2572fcf9e5927019dfcba3c6dae3fa5aca4ecc42c4d299ef1dab41a",
+      "preserved": "evidence/compact_detector_review/mutation_results.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/cutoff_order.py",
+      "bytes": 5758,
+      "sha256": "b408f3e190cc0ff9b9a50fe33a9449da0bf7e26560b3cb7c661ba26faf90f80a",
+      "preserved": "evidence/compact_detector_review/mutations/cutoff_order.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/cutoff_order.stderr",
+      "bytes": 360,
+      "sha256": "cf89dc3d158d2f437b4f06f71c9e6a478acff84aa4176bddd28b4a6efe32a638",
+      "preserved": "evidence/compact_detector_review/mutations/cutoff_order.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/cutoff_order.stdout",
+      "bytes": 191,
+      "sha256": "eae1aea5bb826312313d5f2815be79ca7074a004a6f42fb28d93083b09d10d13",
+      "preserved": "evidence/compact_detector_review/mutations/cutoff_order.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/filter_deletion.py",
+      "bytes": 5750,
+      "sha256": "894b75ac3e3a2feb136359b30610e31f226998bfe9b619c0e45d382723304890",
+      "preserved": "evidence/compact_detector_review/mutations/filter_deletion.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/filter_deletion.stderr",
+      "bytes": 387,
+      "sha256": "41208bef93b337fd1139a1cccaf48710e8c57f607bb7ef31117e3ec0e50f354f",
+      "preserved": "evidence/compact_detector_review/mutations/filter_deletion.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/filter_deletion.stdout",
+      "bytes": 575,
+      "sha256": "6f634ac4d8af4f07ba8491483aea0786cbde553672f3054609ed9786ab41dfeb",
+      "preserved": "evidence/compact_detector_review/mutations/filter_deletion.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/free_phase.py",
+      "bytes": 5759,
+      "sha256": "2c53e6e9f3f64d830d3a2594537bba5c899fe5d4f163cf627a193303e0863428",
+      "preserved": "evidence/compact_detector_review/mutations/free_phase.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/free_phase.stderr",
+      "bytes": 314,
+      "sha256": "45947fca884364da60529a58d0240cbdbc3bd45381f620e1753166f8be4b4ca7",
+      "preserved": "evidence/compact_detector_review/mutations/free_phase.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/free_phase.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/mutations/free_phase.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/reversed_integral_sign.py",
+      "bytes": 5747,
+      "sha256": "5155f9bb627ae381bca22d3d8291e924635bd3b8fde7496fed9210f21907032d",
+      "preserved": "evidence/compact_detector_review/mutations/reversed_integral_sign.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/reversed_integral_sign.stderr",
+      "bytes": 370,
+      "sha256": "d3ca41bd5f4af3747fcf2765d78ffb0ba8669b4b46e70b756680039c6928a9e7",
+      "preserved": "evidence/compact_detector_review/mutations/reversed_integral_sign.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/reversed_integral_sign.stdout",
+      "bytes": 379,
+      "sha256": "cf1c452d65659227ea5908662df3811df8f25218d2c60cb5c3a9ea31086776b6",
+      "preserved": "evidence/compact_detector_review/mutations/reversed_integral_sign.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/stationary_sign.py",
+      "bytes": 5758,
+      "sha256": "858e0142649aba314d8ca5bee93f73c415da3120e38904eff615604341df389d",
+      "preserved": "evidence/compact_detector_review/mutations/stationary_sign.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/stationary_sign.stderr",
+      "bytes": 266,
+      "sha256": "664b5a454ed1c24e8d089f982c4da3425e428a16b0660f56e4e7565c33c9e248",
+      "preserved": "evidence/compact_detector_review/mutations/stationary_sign.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/stationary_sign.stdout",
+      "bytes": 725,
+      "sha256": "d427ff371d08939e4b39624fb2f1d31d3335d76364b0f053b9eab53eb01876ef",
+      "preserved": "evidence/compact_detector_review/mutations/stationary_sign.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/third_derivative_difference.py",
+      "bytes": 5758,
+      "sha256": "7d611fa44521fd9a02163a09b9bb9dd90be72cb92df68255a45d076a6e0c1f0e",
+      "preserved": "evidence/compact_detector_review/mutations/third_derivative_difference.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/third_derivative_difference.stderr",
+      "bytes": 350,
+      "sha256": "c033943caeb51180a95231a4c320c53c622a4c2dd91321582abeed68004e1798",
+      "preserved": "evidence/compact_detector_review/mutations/third_derivative_difference.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/mutations/third_derivative_difference.stdout",
+      "bytes": 965,
+      "sha256": "0f58f8a9f538d667a77130e33d77ad41657eb88d14583d3681a2573c219b3260",
+      "preserved": "evidence/compact_detector_review/mutations/third_derivative_difference.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/precontrol_freeze.json",
+      "bytes": 7604,
+      "sha256": "4d75d0893cc6fdddb207dd31ddd137359874183b2f8b8b8878382c21adaa8702",
+      "preserved": "evidence/compact_detector_review/precontrol_freeze.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/primary_page12.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/primary_page12.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/primary_page12.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/primary_page12.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/primary_page4.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/primary_page4.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/primary_page4.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_detector_review/primary_page4.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/primary_render.execution.json",
+      "bytes": 1656,
+      "sha256": "9e2d20955ef6a3060177644f52e7bb0bab7c1c00ed918dd51ca4937f6e449d82",
+      "preserved": "evidence/compact_detector_review/primary_render.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/receipt.json",
+      "bytes": 23565,
+      "sha256": "e9fb01e5d88618f1905a7426d07991e0a96e88cdd32a8d996b4caa92bd39db5d",
+      "preserved": "evidence/compact_detector_review/receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/repository_final_state.json",
+      "bytes": 213,
+      "sha256": "cdaeb8e17958d861cd33fe98f130becc24aa41f2afdb831f0e69d7a0dca36def",
+      "preserved": "evidence/compact_detector_review/repository_final_state.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/source_refresh.json",
+      "bytes": 11909,
+      "sha256": "3b9835aa3114372ab137231dc75de960f0930a03d305a8c346f839a197647770",
+      "preserved": "evidence/compact_detector_review/source_refresh.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_E_canonical_execution.json",
+      "preserved": "evidence/epc_E_canonical_execution.json.gz",
+      "bytes": 2022,
+      "sha256": "bf5db520a345e69aa9d29a7d06198d0d6b0882a57794787d79efbda97a945856"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_PC_canonical_execution.json",
+      "preserved": "evidence/epc_PC_canonical_execution.json.gz",
+      "bytes": 2521,
+      "sha256": "78cf5e044e1b7785e3c30bcea2f5d0732503cb8d0b4cc8c4853ebad78c033f18"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_citation_build.stderr",
+      "preserved": "evidence/epc_citation_build.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_citation_build.stdout",
+      "preserved": "evidence/epc_citation_build.stdout.gz",
+      "bytes": 281,
+      "sha256": "451267946511f87fe81c8e30dbb1107cd09c873dece2268fee44268160d6870c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_citation_execution.json",
+      "preserved": "evidence/epc_citation_execution.json.gz",
+      "bytes": 494,
+      "sha256": "3fcb8a5f6f507b368e734385905154f1ac401a02005f6db12e115bbe7228262f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_citation_manifest.stderr",
+      "preserved": "evidence/epc_citation_manifest.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_citation_manifest.stdout",
+      "preserved": "evidence/epc_citation_manifest.stdout.gz",
+      "bytes": 77,
+      "sha256": "e0f5781b9bd0cd902c558e8e266335dfe5870620a5a7ca0618a59b5c50e4ef30"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_delivery_mechanical.json",
+      "preserved": "evidence/epc_delivery_mechanical.json.gz",
+      "bytes": 1588,
+      "sha256": "5c2010157f17134239f0fd1759dc33851a7029ba8c269dcb3cbabbf417d41fb6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_final_reconstruction.log",
+      "preserved": "evidence/epc_final_reconstruction.log.gz",
+      "bytes": 110,
+      "sha256": "f2d1140a6b42f96156f0cd5ec00baec27a25afe372b0de1107063ff59c073c07"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_final_vocab_fix.json",
+      "preserved": "evidence/epc_final_vocab_fix.json.gz",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_final_vocab_fix.log",
+      "preserved": "evidence/epc_final_vocab_fix.log.gz",
+      "bytes": 215,
+      "sha256": "c9b9c1ff595064412cd0315ab5dd2b89b90fb0f9c71a5e3bc9293490dea82970"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_final_vocab_report-only.json",
+      "preserved": "evidence/epc_final_vocab_report-only.json.gz",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_final_vocab_report-only.log",
+      "preserved": "evidence/epc_final_vocab_report-only.log.gz",
+      "bytes": 223,
+      "sha256": "9563a1080881654e974e90c203812c151f681e20c3d78be2cb89c9d4c59e9f50"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_focused_audit_compat.execution.json",
+      "preserved": "evidence/epc_focused_audit_compat.execution.json.gz",
+      "bytes": 319,
+      "sha256": "e71c3ddfe056f912803b66d6e82ec4ddf54123f11ec8c79264e2ac21b78503ee"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_focused_audit_compat.json",
+      "preserved": "evidence/epc_focused_audit_compat.json.gz",
+      "bytes": 240,
+      "sha256": "22765b5f3560020aa1f397c9a2e57595df1a6dfcd9f70028987336f5b97aecdc"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_focused_audit_compat.stderr",
+      "preserved": "evidence/epc_focused_audit_compat.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_initial_vocab_fix.json",
+      "preserved": "evidence/epc_initial_vocab_fix.json.gz",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_initial_vocab_fix.log",
+      "preserved": "evidence/epc_initial_vocab_fix.log.gz",
+      "bytes": 217,
+      "sha256": "b9eedfcc83625d111f139357f6013e3a7d9cc989b49989766b9dcb53170e9629"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_dispersion_sign.py",
+      "preserved": "evidence/epc_primary_mutations/E_dispersion_sign.py.gz",
+      "bytes": 5810,
+      "sha256": "e00b344d4c4c97d87e7eee2cf66a174af683e1cf12a3b21c15a83d9ea1dead55"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_dispersion_sign.stderr",
+      "preserved": "evidence/epc_primary_mutations/E_dispersion_sign.stderr.gz",
+      "bytes": 317,
+      "sha256": "fa5ea5172e83748645d683d8b0ba427cd22f6920a0a76c703f423576ed62f8f6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_dispersion_sign.stdout",
+      "preserved": "evidence/epc_primary_mutations/E_dispersion_sign.stdout.gz",
+      "bytes": 90,
+      "sha256": "71270a3f1891b7c6e43252f495f435369f2d568c73d80f0b20d5c105b9b96d29"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_missing_collision_source.py",
+      "preserved": "evidence/epc_primary_mutations/E_missing_collision_source.py.gz",
+      "bytes": 5822,
+      "sha256": "7358bdaa1880083d070cddf8dc3c2174de82eb55ce43d79282f848f32356e2bc"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_missing_collision_source.stderr",
+      "preserved": "evidence/epc_primary_mutations/E_missing_collision_source.stderr.gz",
+      "bytes": 284,
+      "sha256": "642e5f29d15cae43eea4604e798fa832eac1427d23e1a6c7adde8188b4620cfb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_missing_collision_source.stdout",
+      "preserved": "evidence/epc_primary_mutations/E_missing_collision_source.stdout.gz",
+      "bytes": 90,
+      "sha256": "71270a3f1891b7c6e43252f495f435369f2d568c73d80f0b20d5c105b9b96d29"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_resolvent_regularizer.py",
+      "preserved": "evidence/epc_primary_mutations/E_resolvent_regularizer.py.gz",
+      "bytes": 5793,
+      "sha256": "7692bee4296a142857430c22ac108dca5cfa0ae9b2c80b99530d9d144ea4c70d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_resolvent_regularizer.stderr",
+      "preserved": "evidence/epc_primary_mutations/E_resolvent_regularizer.stderr.gz",
+      "bytes": 316,
+      "sha256": "3d7d6c37a3203b331d7907a3e12f063ea311dcf2d631efc77d591c119e4c5507"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_resolvent_regularizer.stdout",
+      "preserved": "evidence/epc_primary_mutations/E_resolvent_regularizer.stdout.gz",
+      "bytes": 643,
+      "sha256": "b794a71432e41b299f1d078c72743879351cda22b820f9c3482ebcb9f61b2be8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_time_derivative_sign.py",
+      "preserved": "evidence/epc_primary_mutations/E_time_derivative_sign.py.gz",
+      "bytes": 5809,
+      "sha256": "d7de0ba94e2a179135c3f968de486a9d7a8c4d9166bf3197ae1fba4ca8cc219f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_time_derivative_sign.stderr",
+      "preserved": "evidence/epc_primary_mutations/E_time_derivative_sign.stderr.gz",
+      "bytes": 280,
+      "sha256": "208f72d465ca6811d6f60fa28d221284442b98ad7ff39fde016b25e6e7d14552"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_time_derivative_sign.stdout",
+      "preserved": "evidence/epc_primary_mutations/E_time_derivative_sign.stdout.gz",
+      "bytes": 90,
+      "sha256": "71270a3f1891b7c6e43252f495f435369f2d568c73d80f0b20d5c105b9b96d29"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_word_commutator_sign.py",
+      "preserved": "evidence/epc_primary_mutations/E_word_commutator_sign.py.gz",
+      "bytes": 5809,
+      "sha256": "bf91b141267551e10a64f8e3b81170485814d9d9658e84f5609c246315ecb479"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_word_commutator_sign.stderr",
+      "preserved": "evidence/epc_primary_mutations/E_word_commutator_sign.stderr.gz",
+      "bytes": 292,
+      "sha256": "67cbcf38cb15745fdfa6adbe52ffc0470c97917cea418d9ee3142ce3a782ec20"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/E_word_commutator_sign.stdout",
+      "preserved": "evidence/epc_primary_mutations/E_word_commutator_sign.stdout.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_cutoff_order.py",
+      "preserved": "evidence/epc_primary_mutations/PC_cutoff_order.py.gz",
+      "bytes": 6660,
+      "sha256": "8e778144b7fcc44b5f3495fef7a9a117e4426505a266336aede0be7bb1330175"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_cutoff_order.stderr",
+      "preserved": "evidence/epc_primary_mutations/PC_cutoff_order.stderr.gz",
+      "bytes": 351,
+      "sha256": "40d6a0ad41d6bd43c1ea6f90ce054fde18aa547725da40d01f1d3fa4c9e9b2e1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_cutoff_order.stdout",
+      "preserved": "evidence/epc_primary_mutations/PC_cutoff_order.stdout.gz",
+      "bytes": 191,
+      "sha256": "eae1aea5bb826312313d5f2815be79ca7074a004a6f42fb28d93083b09d10d13"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_filter_deletion.py",
+      "preserved": "evidence/epc_primary_mutations/PC_filter_deletion.py.gz",
+      "bytes": 6652,
+      "sha256": "d7e78e7b4a2cde30399c20066f60edf2feaec5ae8b9a487c4f15deae51db044a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_filter_deletion.stderr",
+      "preserved": "evidence/epc_primary_mutations/PC_filter_deletion.stderr.gz",
+      "bytes": 379,
+      "sha256": "39f39f4fdb72402b75da91e22cd52e558e6302d4ca27fc8a71df3099c00ce05d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_filter_deletion.stdout",
+      "preserved": "evidence/epc_primary_mutations/PC_filter_deletion.stdout.gz",
+      "bytes": 575,
+      "sha256": "6f634ac4d8af4f07ba8491483aea0786cbde553672f3054609ed9786ab41dfeb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_free_phase.py",
+      "preserved": "evidence/epc_primary_mutations/PC_free_phase.py.gz",
+      "bytes": 6661,
+      "sha256": "2a014236dad5ae540a87487f224e2cfb0dc8c6c212f75610778f669e4ab66b70"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_free_phase.stderr",
+      "preserved": "evidence/epc_primary_mutations/PC_free_phase.stderr.gz",
+      "bytes": 305,
+      "sha256": "eeaaffa24aedf4540d51ca956a94ceeb9fc4e289c36e61f72fed5abfd8e8c3e0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_free_phase.stdout",
+      "preserved": "evidence/epc_primary_mutations/PC_free_phase.stdout.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_reversed_integral_sign.py",
+      "preserved": "evidence/epc_primary_mutations/PC_reversed_integral_sign.py.gz",
+      "bytes": 6649,
+      "sha256": "15ee71f73a675c00dbd481c6d68c7203198bab7807cc0b790e9ec448aa494045"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_reversed_integral_sign.stderr",
+      "preserved": "evidence/epc_primary_mutations/PC_reversed_integral_sign.stderr.gz",
+      "bytes": 361,
+      "sha256": "78183adee96e5e46ec30a16bd67e4f86733afb6949eb4e7947cb45a06b847727"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_reversed_integral_sign.stdout",
+      "preserved": "evidence/epc_primary_mutations/PC_reversed_integral_sign.stdout.gz",
+      "bytes": 379,
+      "sha256": "cf1c452d65659227ea5908662df3811df8f25218d2c60cb5c3a9ea31086776b6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_stationary_sign.py",
+      "preserved": "evidence/epc_primary_mutations/PC_stationary_sign.py.gz",
+      "bytes": 6660,
+      "sha256": "69c311265eff738caead93e913f7de694bd1f0a33388cbc7214452f394682e15"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_stationary_sign.stderr",
+      "preserved": "evidence/epc_primary_mutations/PC_stationary_sign.stderr.gz",
+      "bytes": 257,
+      "sha256": "ad5b4264dacc18591e0fee04eb0308d14cd5ba52ccfed9237b3d3210b4f07333"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_stationary_sign.stdout",
+      "preserved": "evidence/epc_primary_mutations/PC_stationary_sign.stdout.gz",
+      "bytes": 725,
+      "sha256": "d427ff371d08939e4b39624fb2f1d31d3335d76364b0f053b9eab53eb01876ef"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_third_derivative_difference.py",
+      "preserved": "evidence/epc_primary_mutations/PC_third_derivative_difference.py.gz",
+      "bytes": 6660,
+      "sha256": "ed778b373d87ef4c98a8f4329715dd5c5316372f2702b4b7bef731128577e126"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_third_derivative_difference.stderr",
+      "preserved": "evidence/epc_primary_mutations/PC_third_derivative_difference.stderr.gz",
+      "bytes": 341,
+      "sha256": "cc0d22100cee3cd7998a5edaff71881b2345669b6fa4b3e3557bc4e3d03b7d03"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/PC_third_derivative_difference.stdout",
+      "preserved": "evidence/epc_primary_mutations/PC_third_derivative_difference.stdout.gz",
+      "bytes": 965,
+      "sha256": "0f58f8a9f538d667a77130e33d77ad41657eb88d14583d3681a2573c219b3260"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/epc_primary_mutations/manifest.json",
+      "preserved": "evidence/epc_primary_mutations/manifest.json.gz",
+      "bytes": 12321,
+      "sha256": "ef8aa5555f4f8a57d9692aa0cefdd36d4c040572e57a8c408e7dac643eb12464"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finish_epc_delivery.py",
+      "preserved": "evidence/finish_epc_delivery.py.gz",
+      "bytes": 12309,
+      "sha256": "fe17075cee48d018b9b78e8b84500345c937c2fc022df03e146c672e99fa00b7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_epc_notes.py",
+      "preserved": "evidence/prepare_epc_notes.py.gz",
+      "bytes": 13974,
+      "sha256": "6946549c9ca65613399d592612a9cf17feec2a180cf99001fb439c6076738279"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_epc_packet.py",
+      "preserved": "evidence/prepare_epc_packet.py.gz",
+      "bytes": 15078,
+      "sha256": "3a33afdc3bdafcc17670889add66a9f06e3b2990bae142fe771ce185688d3f7d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_L_PC_identity_failure_1/failure.json",
+      "bytes": 262,
+      "sha256": "409153d96005fe624f6fa7a2a574664bbf125b0c07c896e8681a0c732f18e718",
+      "preserved": "evidence/root_L_PC_identity_failure_1/failure.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_L_PC_identity_failure_1/root_verify_L_PC_reviews.py",
+      "bytes": 5535,
+      "sha256": "185a39da9eb209b3369e8b89895a07e3cd1d2cec2fd4ead5a1a62fe296519fa6",
+      "preserved": "evidence/root_L_PC_identity_failure_1/root_verify_L_PC_reviews.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_verify_L_PC_reviews.py",
+      "bytes": 5630,
+      "sha256": "a6c29c42fef26a3a38d770f512e860e1688b4d28875ab2e7eca287da33139cf5",
+      "preserved": "evidence/root_verify_L_PC_reviews.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/run_epc_primary_mutants.py",
+      "preserved": "evidence/run_epc_primary_mutants.py.gz",
+      "bytes": 3084,
+      "sha256": "14fa90e1a4c6bdc2edc4564df5770953fc11c967fcea7dd4808515cc68f231fe"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/ACQUISITION_LIMITS.md",
+      "bytes": 2053,
+      "sha256": "891c651834daeba082a1c2f2563f89f00b878f09cd076c24553869641e3219c9",
+      "preserved": "evidence/scattering_exhaustion_next/ACQUISITION_LIMITS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 3439,
+      "sha256": "0da72f0fdb83b9e348c52d1c50b658ce5f6375bf4d573cef1aaeab24b35db4c5",
+      "preserved": "evidence/scattering_exhaustion_next/ASSUMPTIONS_AND_IMPORTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/CHECKPOINT.md",
+      "bytes": 3174,
+      "sha256": "aaf49b12cc47afab7e65c194c1d98d667776b09fbc35c9c2dd43814887653664",
+      "preserved": "evidence/scattering_exhaustion_next/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1932,
+      "sha256": "f66587a500a0bbd3ad551a25ea1f138ae90fdf4f1650524d41aa3f1c63e9a77d",
+      "preserved": "evidence/scattering_exhaustion_next/CLAIM_STATUS_CERTIFICATE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/FROZEN_INPUT_RECHECK.json",
+      "bytes": 3641,
+      "sha256": "5e45cb268eed7164100e34db3735155313b81f28492d0824739082a22768de64",
+      "preserved": "evidence/scattering_exhaustion_next/FROZEN_INPUT_RECHECK.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/LITERATURE_BRIDGES.md",
+      "bytes": 2416,
+      "sha256": "5e44adba87c7fe076206f95761f7214e891ed24ddbe391ac9cf9ab0608ddadd6",
+      "preserved": "evidence/scattering_exhaustion_next/LITERATURE_BRIDGES.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/READING_COVERAGE.json",
+      "bytes": 5049,
+      "sha256": "667ffd6b402bad474f4824bfd292158474ecd73062297d953756e8a4cb5dcf11",
+      "preserved": "evidence/scattering_exhaustion_next/READING_COVERAGE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/RUNTIME.json",
+      "bytes": 481,
+      "sha256": "4d27294b2e962d4133b97d81d1fb3d3c6c6e1ac56d0818ae23ace8c59b61e28a",
+      "preserved": "evidence/scattering_exhaustion_next/RUNTIME.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/SEARCH_LEDGER.md",
+      "bytes": 1433,
+      "sha256": "fa205145f0f39eae201d8322d914f5f144c56c3e4624f75628a7d3f1d9e1a531",
+      "preserved": "evidence/scattering_exhaustion_next/SEARCH_LEDGER.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/SOURCE_IDENTITIES.json",
+      "bytes": 4392,
+      "sha256": "eebe1d23823473bb2d9e517e9ab6e682fc4a9364aed9be97c7f0b729a03044bd",
+      "preserved": "evidence/scattering_exhaustion_next/SOURCE_IDENTITIES.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/THEOREM_TRACE.md",
+      "bytes": 2408,
+      "sha256": "b8f9fef59642fbc832c015c4c3419b349d64a456ec42aa249635fc26ff1b6dab",
+      "preserved": "evidence/scattering_exhaustion_next/THEOREM_TRACE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/check_reduction_algebra.py",
+      "bytes": 4887,
+      "sha256": "674259f169591f92feba1bb2dceb94e8e90ec070336c856cad018ebd802e75b7",
+      "preserved": "evidence/scattering_exhaustion_next/check_reduction_algebra.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/initial_source_identity.json",
+      "bytes": 3361,
+      "sha256": "de8b6281a567e7a46b398d10f6d859ef35f56a6a33388d898e8d4cd7f1fe7add",
+      "preserved": "evidence/scattering_exhaustion_next/initial_source_identity.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/instruction_reuse.json",
+      "bytes": 2330,
+      "sha256": "24c5c6b4223fd716a67a3524de0573a670890bb5adef9467c18ba213e82c31cc",
+      "preserved": "evidence/scattering_exhaustion_next/instruction_reuse.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/receipt.json",
+      "bytes": 42628,
+      "sha256": "8fac2fc46322fc8a58e2a86eda22128a7e9c7a831f329c53f0775d2ea60aca3a",
+      "preserved": "evidence/scattering_exhaustion_next/receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/reduction_algebra.execution.json",
+      "bytes": 633,
+      "sha256": "ca7e6fbe505b8a1e7e04943f4ea9922c4a75d053a39b4cf59cf7e3bc115f3f46",
+      "preserved": "evidence/scattering_exhaustion_next/reduction_algebra.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/reduction_algebra.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/scattering_exhaustion_next/reduction_algebra.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/reduction_algebra.stdout.jsonl",
+      "bytes": 1005,
+      "sha256": "4da3d6ea880c5bbc3f6b635cebde4ba52edb66c9f9cf9a1165835a73a50eed98",
+      "preserved": "evidence/scattering_exhaustion_next/reduction_algebra.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/render_pdfium_output.json",
+      "bytes": 2917,
+      "sha256": "2348e70e6c36917f59f8a647712e8578daf76f2a0168ca2b8a668cf5b5c9964b",
+      "preserved": "evidence/scattering_exhaustion_next/render_pdfium_output.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/render_selected.swift",
+      "bytes": 592,
+      "sha256": "279cbf9adfca1678b48ca6cf4df5c9778fc5ab6ed603d70a0821158eeec2080a",
+      "preserved": "evidence/scattering_exhaustion_next/render_selected.swift.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/render_selected_output.json",
+      "bytes": 1619,
+      "sha256": "e7b3144ff0e28979ba973d488d1000b25d8b47ac56c9f78c44fcda52ed868c87",
+      "preserved": "evidence/scattering_exhaustion_next/render_selected_output.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/C4_B1_report.md",
+      "bytes": 19958,
+      "sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e",
+      "preserved": "evidence/scattering_exhaustion_next/sources/C4_B1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/C4_M1_report.md",
+      "bytes": 20652,
+      "sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b",
+      "preserved": "evidence/scattering_exhaustion_next/sources/C4_M1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/C4_N1_report.md",
+      "bytes": 28166,
+      "sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13",
+      "preserved": "evidence/scattering_exhaustion_next/sources/C4_N1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md",
+      "bytes": 27830,
+      "sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404",
+      "preserved": "evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md",
+      "bytes": 28858,
+      "sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a",
+      "preserved": "evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md",
+      "bytes": 9507,
+      "sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be",
+      "preserved": "evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md",
+      "bytes": 1356,
+      "sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516",
+      "preserved": "evidence/scattering_exhaustion_next/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/EX_REPAIR_REVIEW_ADDENDUM.md",
+      "bytes": 2312,
+      "sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029",
+      "preserved": "evidence/scattering_exhaustion_next/sources/EX_REPAIR_REVIEW_ADDENDUM.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md",
+      "bytes": 15579,
+      "sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536",
+      "preserved": "evidence/scattering_exhaustion_next/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_download.json",
+      "bytes": 304,
+      "sha256": "c60e4ada6acdd6da3cdde598ba3ce84655ff063b24d3503df719282c6d33f4b9",
+      "preserved": "evidence/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_download.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/download_receipt.json",
+      "bytes": 1108,
+      "sha256": "a6460fbbe2f365fcf2a7e266820f26a488fef75a5b4bede0dca9b1dbf137813d",
+      "preserved": "evidence/scattering_exhaustion_next/sources/download_receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/CHECKPOINT.md",
+      "bytes": 1735,
+      "sha256": "ebba53b4d7c0c5e25a4a46fe64aac541abc09b8e6d93c14633557fb758f43ff0",
+      "preserved": "evidence/scattering_exhaustion_review/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/CONTROL_ASSESSMENT.md",
+      "bytes": 5862,
+      "sha256": "48ad93b91bc0506d66d6a81dc7b0f7a7e8ddcccd3ba6aea046c53108ac531a0d",
+      "preserved": "evidence/scattering_exhaustion_review/CONTROL_ASSESSMENT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md",
+      "bytes": 19036,
+      "sha256": "a4a084179531369c12c2b5cb894d776ed11fa325a4cbb20aaf3b67a4906b35f6",
+      "preserved": "evidence/scattering_exhaustion_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_artifact_validation.json",
+      "bytes": 43225,
+      "sha256": "faa2b1f94d2f5ca25e619488824f02a57025a864f574e938564c185f907f91bc",
+      "preserved": "evidence/scattering_exhaustion_review/author_artifact_validation.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 3439,
+      "sha256": "0da72f0fdb83b9e348c52d1c50b658ce5f6375bf4d573cef1aaeab24b35db4c5",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/ASSUMPTIONS_AND_IMPORTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1932,
+      "sha256": "f66587a500a0bbd3ad551a25ea1f138ae90fdf4f1650524d41aa3f1c63e9a77d",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/CLAIM_STATUS_CERTIFICATE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/LITERATURE_BRIDGES.md",
+      "bytes": 2416,
+      "sha256": "5e44adba87c7fe076206f95761f7214e891ed24ddbe391ac9cf9ab0608ddadd6",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/LITERATURE_BRIDGES.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/READING_COVERAGE.json",
+      "bytes": 5049,
+      "sha256": "667ffd6b402bad474f4824bfd292158474ecd73062297d953756e8a4cb5dcf11",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/READING_COVERAGE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/THEOREM_TRACE.md",
+      "bytes": 2408,
+      "sha256": "b8f9fef59642fbc832c015c4c3419b349d64a456ec42aa249635fc26ff1b6dab",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/THEOREM_TRACE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/check_reduction_algebra.py",
+      "bytes": 4887,
+      "sha256": "674259f169591f92feba1bb2dceb94e8e90ec070336c856cad018ebd802e75b7",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/check_reduction_algebra.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/receipt.json",
+      "bytes": 42628,
+      "sha256": "8fac2fc46322fc8a58e2a86eda22128a7e9c7a831f329c53f0775d2ea60aca3a",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/reduction_algebra.execution.json",
+      "bytes": 633,
+      "sha256": "ca7e6fbe505b8a1e7e04943f4ea9922c4a75d053a39b4cf59cf7e3bc115f3f46",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/reduction_algebra.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/reduction_algebra.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/reduction_algebra.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_evidence/reduction_algebra.stdout.jsonl",
+      "bytes": 1005,
+      "sha256": "4da3d6ea880c5bbc3f6b635cebde4ba52edb66c9f9cf9a1165835a73a50eed98",
+      "preserved": "evidence/scattering_exhaustion_review/author_evidence/reduction_algebra.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_reproduction.execution.json",
+      "bytes": 865,
+      "sha256": "d93c2dda43587edb63b2803c0c53f40be7fc83e96eaa30bdd4fa1a0991b47f53",
+      "preserved": "evidence/scattering_exhaustion_review/author_reproduction.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_reproduction.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/scattering_exhaustion_review/author_reproduction.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/author_reproduction.stdout.jsonl",
+      "bytes": 1005,
+      "sha256": "4da3d6ea880c5bbc3f6b635cebde4ba52edb66c9f9cf9a1165835a73a50eed98",
+      "preserved": "evidence/scattering_exhaustion_review/author_reproduction.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/finalization_result.json",
+      "bytes": 908,
+      "sha256": "903587d3da1d84b615d5c486a4865916ce43fc62e4e345379d3dfbd67d2e8887",
+      "preserved": "evidence/scattering_exhaustion_review/finalization_result.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/finalize_review.py",
+      "bytes": 10841,
+      "sha256": "9c3a0fa4b8c446734f0b83d1fec672ae64e678f3fe8073881ef0fb93285edda4",
+      "preserved": "evidence/scattering_exhaustion_review/finalize_review.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/independent_checks.execution.json",
+      "bytes": 644,
+      "sha256": "618b2b1c011b1f71f69108850b5657f1c462422840b36c653a99023530315a05",
+      "preserved": "evidence/scattering_exhaustion_review/independent_checks.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/independent_checks.py",
+      "bytes": 7731,
+      "sha256": "4b3ccbba08875a314e8d40e9b0544328e9fd2b1629770571357d3b114f2d37fa",
+      "preserved": "evidence/scattering_exhaustion_review/independent_checks.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/independent_checks.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/scattering_exhaustion_review/independent_checks.stderr.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/independent_checks.stdout",
+      "bytes": 4894,
+      "sha256": "8017bdb97695f77e4645c8dd39442a84bbc3d948ec407efa2296aff4d450b495",
+      "preserved": "evidence/scattering_exhaustion_review/independent_checks.stdout.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/instruction_receipt.json",
+      "bytes": 1354,
+      "sha256": "6213677d116864a9e64f0a6fdea7916f095f7cf6949c5ea2756dfa9ef8c65fd6",
+      "preserved": "evidence/scattering_exhaustion_review/instruction_receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "preserved": "evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "preserved": "evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "preserved": "evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "preserved": "evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "preserved": "evidence/scattering_exhaustion_review/instructions/docs/ai_methodology/skills/review-loop/SKILL.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/operational_failures.json",
+      "bytes": 1179,
+      "sha256": "d3a29941df09d8458c3524f62a4f0cf3142ed43f613e86c49313e2b303a05caa",
+      "preserved": "evidence/scattering_exhaustion_review/operational_failures.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/precontrols_freeze.json",
+      "bytes": 920,
+      "sha256": "f30fb81f12a766b7a2ae59a8ba6817a28ae8eaf8e6ae0996eb39ba864a70792f",
+      "preserved": "evidence/scattering_exhaustion_review/precontrols_freeze.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_verification/pdf_identity.json",
+      "bytes": 1321,
+      "sha256": "8021c98fdbe9f6a0fc3700cd7817b95c1ba70164689b2c53fd232eb30a5c7dba",
+      "preserved": "evidence/scattering_exhaustion_review/primary_verification/pdf_identity.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/published_compact_diff.patch",
+      "bytes": 12862,
+      "sha256": "668edc58d10f41130273cbcf3b60369fabd9e44bcb3901d2b1afe67fa4553c75",
+      "preserved": "evidence/scattering_exhaustion_review/published_compact_diff.patch.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/reading_coverage_postcontrols.json",
+      "bytes": 5925,
+      "sha256": "e021fb77ed17758ef2257591b0dce1672a721e24655497ecfe2562644ca6bed7",
+      "preserved": "evidence/scattering_exhaustion_review/reading_coverage_postcontrols.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/reading_coverage_precontrols.json",
+      "bytes": 24148,
+      "sha256": "faee510f508867681017bc52032b238bbf3e70977006daf870dc4e982f73fee7",
+      "preserved": "evidence/scattering_exhaustion_review/reading_coverage_precontrols.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/receipt.json",
+      "bytes": 21478,
+      "sha256": "7567a560ce881d0a429c70d7479d3b92a0d89dfd0e641d9397163c5c12fdaa52",
+      "preserved": "evidence/scattering_exhaustion_review/receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/report_location_search.json",
+      "bytes": 526,
+      "sha256": "387a6ae867e307277628ca17a28fc90fc57b89ede14f86bc0c46c0abb70912f3",
+      "preserved": "evidence/scattering_exhaustion_review/report_location_search.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/source_match.json",
+      "bytes": 2233,
+      "sha256": "12a97d96e40c2c62fc5500794ddbec4c4fd7357ddc56600a8954059368afb215",
+      "preserved": "evidence/scattering_exhaustion_review/source_match.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/source_refresh.json",
+      "bytes": 129901,
+      "sha256": "0cfb959dd7267ee1a07c442fde3f938159bd7c1f00af5ac605bc8e0157da7033",
+      "preserved": "evidence/scattering_exhaustion_review/source_refresh.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/C4_B1_report.md",
+      "bytes": 19958,
+      "sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e",
+      "preserved": "evidence/scattering_exhaustion_review/sources/C4_B1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/C4_M1_report.md",
+      "bytes": 20652,
+      "sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b",
+      "preserved": "evidence/scattering_exhaustion_review/sources/C4_M1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/C4_N1_report.md",
+      "bytes": 28166,
+      "sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13",
+      "preserved": "evidence/scattering_exhaustion_review/sources/C4_N1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md",
+      "bytes": 28858,
+      "sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a",
+      "preserved": "evidence/scattering_exhaustion_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md",
+      "bytes": 1356,
+      "sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516",
+      "preserved": "evidence/scattering_exhaustion_review/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md",
+      "bytes": 29135,
+      "sha256": "c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2",
+      "preserved": "evidence/scattering_exhaustion_review/sources/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/sources/published_compact_scattering.md",
+      "bytes": 30989,
+      "sha256": "3adc57d0236fced52704aa76e4fa7d38abbe08204623162c8fd07404a2a44a05",
+      "preserved": "evidence/scattering_exhaustion_review/sources/published_compact_scattering.md.gz"
+    }
+  ],
+  "external_reference_sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/Dybalski_v1_page12.png",
+      "bytes": 309458,
+      "sha256": "dcdd7b67c1f732b6714217bc3d309092b688e0b2409de7f46e4cbe9db447746e",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/Dybalski_primary_page12.png",
+      "bytes": 239615,
+      "sha256": "ad213c89dac3e01c3523d1a714d575329b44ac9390fa4bced4ee31445523a472",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_review/Dybalski_primary_page4.png",
+      "bytes": 307256,
+      "sha256": "cd6a04fa80a890c473eacc6b8360ba3237205203805262b9d7d4173a6f03f4bc",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_1412.2970v2.pdf",
+      "bytes": 1084655,
+      "sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_fulltext.txt",
+      "bytes": 132824,
+      "sha256": "b9d17b5846bb6ad6d511caf7437819f365b91b54e9030303baeb29f428a7b019",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/01.txt",
+      "bytes": 3107,
+      "sha256": "e9407cf31aba2b867ec1d00d31b02281ac84a6c1bcc3ee8b5a510392323dc537",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/02.txt",
+      "bytes": 3182,
+      "sha256": "7fbe92cf245eabe4c4b1f64be3ec83da420ed6a09a799733a0a947e26cd79d6a",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/03.txt",
+      "bytes": 3278,
+      "sha256": "c0109d3c9aaa7859557fec0395ec2c7a48eff47cea2be6c5c136fa345af77f00",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/04.txt",
+      "bytes": 4086,
+      "sha256": "a36cf6fe82d9f3452b616cafb68e97d49f90a88fb84e6dc4151e045bb2390c00",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/05.txt",
+      "bytes": 4320,
+      "sha256": "eb572c8a8b995bfbdb6ca5c3ea130a0cfcfe6799b9085a94e31b8533d7f1c4b2",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/06.txt",
+      "bytes": 1938,
+      "sha256": "49a33dd5d80f15d46cf0e91584eb7b36bd3455abfc283b9a3ddc0c414981de9d",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/07.txt",
+      "bytes": 2881,
+      "sha256": "1600eaad96bc14593195b3cf71b296174603512f6591dca645a9b9662845df8b",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/08.txt",
+      "bytes": 2461,
+      "sha256": "b643684933ad885752a2a4b6a6a4025b983c69be069b78cd5a23cc0a6e9308d6",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/09.txt",
+      "bytes": 2490,
+      "sha256": "c4d98da820a19091ef3c0370e698c9632dd0adc5d3fe623cf4312369a8a25475",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/10.txt",
+      "bytes": 2675,
+      "sha256": "781d0cb5e526af48d05b223f00c1f58f1d351a7fab4fb9921f3a189da2ca73ec",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/11.txt",
+      "bytes": 2912,
+      "sha256": "362b602895541744ae09a56d804218ddec8f38b38edd228238d5d16bcf27e67f",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/12.txt",
+      "bytes": 2693,
+      "sha256": "f129835283fcc6c8f384271ee9e07c413c84c154d43e34b9c9a2d7d2f7ec1ee3",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/13.txt",
+      "bytes": 2648,
+      "sha256": "06fc5f84848efb95b8b59848df44f7f74d3a307419933c5d16710ee25c224432",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/14.txt",
+      "bytes": 2895,
+      "sha256": "bb31f321c5db8a53a0f9546c0abc417a08934bcbe68cf61a0134ba6aee1054ed",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/15.txt",
+      "bytes": 2538,
+      "sha256": "5250f38f573b06ac8acb679dde6a146f4e17c13e541b6348916680e645337366",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/16.txt",
+      "bytes": 2439,
+      "sha256": "87a76c4e28313032f8d66374c4e433147f2ee4628fd9c0a22b6d4947b4509f59",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/17.txt",
+      "bytes": 2814,
+      "sha256": "b0374bc255b8143a525138acf4133d215eacff22d2469698a52c28fafe0d2ca7",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/18.txt",
+      "bytes": 2344,
+      "sha256": "6e135e81be454c2bbe1b7a860e4528df54b1ce2e202b03a3c12a136508a53cc7",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/19.txt",
+      "bytes": 2940,
+      "sha256": "91cedac014c2f5eba8339a198697c3977070872e7a5b41341c17a09fc0923297",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/20.txt",
+      "bytes": 3179,
+      "sha256": "abb0e01074c2461e9b8887524b5e7517d6b61c41b6223706b53c7c10ca692108",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/21.txt",
+      "bytes": 2642,
+      "sha256": "13758462ffc6849562f99d4abba16c60d381d0e5277c3aba5db0b60664c7c0d0",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/22.txt",
+      "bytes": 2304,
+      "sha256": "10c1102d8c6ca2e43529738e6f6bb021683a0d1fe210ec97ff278f79866e2023",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/23.txt",
+      "bytes": 2567,
+      "sha256": "a6e8c60574fae55e7c6fd16ae05eb7a8d6022573d4d17019b347b214e7b22b57",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/24.txt",
+      "bytes": 3035,
+      "sha256": "b975f71d54d5b33be1586e2c8d61daca9ef6aeec69fc83675767a17540aaf6ef",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/25.txt",
+      "bytes": 2655,
+      "sha256": "2d42870dce9d5bf2d570b4118169ec35dab200e2f091cdebccb511557b5f277c",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/26.txt",
+      "bytes": 2710,
+      "sha256": "4d1b7a985b606ff94122b367f9889d6877449c0d54babfa6a64b148f130d1be6",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/27.txt",
+      "bytes": 2486,
+      "sha256": "41d24b649df055d952a2fb6bfc591b13e52b2bfd33a1ae43ddb56ff3939956d4",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/28.txt",
+      "bytes": 2952,
+      "sha256": "ccc5c812a2fd75685823f7f15b9211cce62fe158b9bcc3c99d1e6651d0e231f9",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/29.txt",
+      "bytes": 2479,
+      "sha256": "60e027ab5fc09dcd7ebb49a1407d01c30657b21de1aa07b937fed87f86c626f7",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/30.txt",
+      "bytes": 2820,
+      "sha256": "ad1899214f3c31b590d0b12d366d4fc5cb71d7eb4e5b0047d830e8ceab17c22a",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/31.txt",
+      "bytes": 3449,
+      "sha256": "164e272b15c807e4ab500b01d96e28f0aaef6a193ad04c5b3205685ae40c68d2",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/32.txt",
+      "bytes": 3515,
+      "sha256": "bae9ecf1ac48870f43dcadcc1c0458424d2e44981639c6731821be127e2c6f0d",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/33.txt",
+      "bytes": 3985,
+      "sha256": "9df9c36e1fe717edda1a49bbb00a8045faacc5402cce7167b7d492612e76e46b",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/34.txt",
+      "bytes": 4234,
+      "sha256": "a194bf379067844f01b3dcbab12361121933dc1175e52bd2dcd3ccd80f58a600",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/35.txt",
+      "bytes": 3308,
+      "sha256": "8e5401f97d7b0efccccddbb235bdb32c6c1184f31eb13b7de2fd774222279c42",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/36.txt",
+      "bytes": 2119,
+      "sha256": "75d21825644a82138780be96c72f29b91bd512826fb0a400aaaa69fb29ac3e51",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/37.txt",
+      "bytes": 2486,
+      "sha256": "bafd51b1375e5dcecf4bfd8517ca027d21ffab4606706419fce264dd33aed0da",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/38.txt",
+      "bytes": 2595,
+      "sha256": "2f99410060c236009b7eeebae51a5039eb890b606a9216f0087ae86ee22e65ac",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/39.txt",
+      "bytes": 2239,
+      "sha256": "97e6992d2de3647aa4dbbdee1abfa80b95fdf6bd748985f506f9b7c99eeb56af",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/40.txt",
+      "bytes": 2058,
+      "sha256": "889919f763be5d48c22189e6fea1faae721af08bf62603c61fc93aec55665bbb",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/41.txt",
+      "bytes": 2662,
+      "sha256": "3a29384621f815a292cff8d76115c5b3cf6fb1d03167fd4ba2760f87805ba594",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/42.txt",
+      "bytes": 2298,
+      "sha256": "49f86b358635d541219eb770533400f95fd41ab69ea2db9df7ab63ce14db36e7",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/43.txt",
+      "bytes": 2246,
+      "sha256": "b3e664253049eb8aeb0ee7381b9cdf01f51e05ca0b2716e44ea42ad59d6bbca5",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/44.txt",
+      "bytes": 3303,
+      "sha256": "e569bac588b39c192da7c25d10d9327f50759fb6adfe4bed759db38be7866d68",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/45.txt",
+      "bytes": 3584,
+      "sha256": "20bb0924018c6987a0c845163cf8a00d6417724526aae7084065a3e6626a7814",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/BDN_pages/46.txt",
+      "bytes": 3317,
+      "sha256": "475fb429088583a15ad5163ed767ef552d4839c7b85926477d7590b946ed52fa",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1.pdf",
+      "bytes": 259331,
+      "sha256": "9d574c50f960920daa39a13fb2a07de09b57d717d715f4507731a43f03e6f1c4",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_fulltext.txt",
+      "bytes": 52317,
+      "sha256": "95cb131d5c7b7bb447e459698d9e878ed451506e46c933e79d3ebdf96e813459",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_images/04.png",
+      "bytes": 325808,
+      "sha256": "41b8673bd65745b504302ffaa195c67b15589892145ecef08d6f59d0b60bd928",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/01.txt",
+      "bytes": 4090,
+      "sha256": "d3d04d242a4ecef6e14fbe573d25eb76ea88cafc038d1e91b6df8171fdb3f54b",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/02.txt",
+      "bytes": 4571,
+      "sha256": "ac00d84718e276095c6d1cc7cb1f140d607f35aa5b8beda807780148970ec9ce",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/03.txt",
+      "bytes": 4432,
+      "sha256": "5ef21d992a897d7e557efef181f4c6de7b72a332a215069cb16444b40f3171c3",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/04.txt",
+      "bytes": 3835,
+      "sha256": "5a716a1a7b88d2caf4217401a66e6e54dedd944b24e6c22315ce825d30921f0e",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/05.txt",
+      "bytes": 3946,
+      "sha256": "50e75d4bb2ee909d9180938baa12788c304a9f5d13736f68207a7a9fc90d898a",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/06.txt",
+      "bytes": 3783,
+      "sha256": "f3de01a00b2e5447cc92f3ed26604015f84be55ea23ca45ac5eb4a0c21e5e2f2",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/07.txt",
+      "bytes": 4432,
+      "sha256": "20e78f8e274257bb8260b3c9bcb234717f22ca7b799c84bebdbaa304767ea1ee",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/08.txt",
+      "bytes": 3886,
+      "sha256": "c84b5392aa3b09752a28fa5b083429ab04799e555005c4f5431883e7de56bd96",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/09.txt",
+      "bytes": 4014,
+      "sha256": "03e67aff395ed7293d265a1ca8458ba8b8aa6fb772039e19b63e06db58c1d930",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/10.txt",
+      "bytes": 3756,
+      "sha256": "d424967f977183611be1973c8e9b49b1974a5163936f9af0812671e8fcf6bce2",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/11.txt",
+      "bytes": 3290,
+      "sha256": "39412dc814f00ec81fc0734c08390f102899433c73977590bbc925426050173c",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/12.txt",
+      "bytes": 4443,
+      "sha256": "9599082204c506b8f0b43b59cd9a20707fa16a934b5f66141f026fd40b382513",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_1608.08750v1_pages/13.txt",
+      "bytes": 3815,
+      "sha256": "c85ab0d819c28c56106390637afde387739f9bd3f3cbca773bb7eb1bd8b7d8c1",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1.pdf",
+      "bytes": 477850,
+      "sha256": "64ab1ee60602583c8491fb012f064102e9cda45dcd319288184d1f42349f2793",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_fulltext.txt",
+      "bytes": 105965,
+      "sha256": "1484bbeac20d85cfce46bed872157433aeb7bec7fe95081f2cdfc6e2b68af3a6",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/01.txt",
+      "bytes": 4099,
+      "sha256": "6c1b012be147abff58c5a5ec57dbd9d350a933fd456915e51ebebcabee723b0c",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/02.txt",
+      "bytes": 4814,
+      "sha256": "976fd266c19a0de85434d2aff15c73f7763bf4d5622c3fb8086d1a1b60404339",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/03.txt",
+      "bytes": 4550,
+      "sha256": "2d5b0751ce7a428557aa20d1704e5a49c07c261c139d0ec95f48f5bb53a8f761",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/04.txt",
+      "bytes": 4510,
+      "sha256": "a462a4e383da465963b35b690c35f372bf1411172489105520bfc434997a1927",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/05.txt",
+      "bytes": 4258,
+      "sha256": "e9a226f7c73738a51060aeecb609c018f0950f58dba03bdb291c8f323c44ff6b",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/06.txt",
+      "bytes": 3743,
+      "sha256": "8c7e966da24cd63b9f9c60f18cfa88bf5fbec243d041a862af4dbc0a766099be",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/07.txt",
+      "bytes": 3310,
+      "sha256": "4a8b03fca00be6f9bc18bcff2a2d7ea4bea8a7ced677347af9e916881ca058a8",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/08.txt",
+      "bytes": 3586,
+      "sha256": "61ecc4404e07bd135f863aac426d593714e48cf373c1f9aae842baf0ea447842",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/09.txt",
+      "bytes": 3673,
+      "sha256": "1a8bc568d981f5c31096d6464558a4379aa75a1cc1b67c6088300f178c024f34",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/10.txt",
+      "bytes": 3500,
+      "sha256": "726ea53f397b257935774ce3d209bf1b70090c6eef4c5e8c0ffefc87cda07c4d",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/11.txt",
+      "bytes": 2893,
+      "sha256": "15da423c9ba71ab7dcd08826154acbba3763338a2669d5dcb2fa626a4fd94d04",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/12.txt",
+      "bytes": 3093,
+      "sha256": "55a983effe443c266014bf8f00b31379a553bb86f5febceb07c9b3d25c1e246e",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/13.txt",
+      "bytes": 3991,
+      "sha256": "b28d16ddb2151f8b006ed0c27b48057751019b16cd6ed8d6db5fe248952ea388",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/14.txt",
+      "bytes": 3592,
+      "sha256": "fa7a8415c9196cd90b050c79f01ff2e9cfd2b80d30093f732dc50d479e0880a9",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/15.txt",
+      "bytes": 3499,
+      "sha256": "9efa5567e525b6cc974bae6d1637baf9a597b969b9a658d0501f2a1237935883",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/16.txt",
+      "bytes": 3270,
+      "sha256": "e22c8ff3e4ebaefe240d281963c08efd322f70a15aa3da9d2370795c35190989",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/17.txt",
+      "bytes": 3585,
+      "sha256": "ddee2e6fdd396caaadc678a342fe127800f33e90f6d620c1492c603bd6d69785",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/18.txt",
+      "bytes": 3452,
+      "sha256": "f6df03f96dce8c3969dba874d4e1fc2f1c053998d08c42b63f7843fa36d25449",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/19.txt",
+      "bytes": 3874,
+      "sha256": "1f158997d986295a4975aa4f577ce6502fce4b9e01f11e31a28a1157e98d8557",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/20.txt",
+      "bytes": 3121,
+      "sha256": "a737f35ebc291c57dc9074d50f04c903bda67733910684f4054c5aa466ba39af",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/21.txt",
+      "bytes": 3845,
+      "sha256": "abe40b43025ad195fd031b2bb1c31bdc92f3c321c47334a3f6d09ba18870ae19",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/22.txt",
+      "bytes": 3453,
+      "sha256": "6afee5fafbaf653212e8284f56ae720135cc5d664eb3ed69e994cb84f5080197",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/23.txt",
+      "bytes": 2772,
+      "sha256": "ed740dc5ba623357bb9172a841ab1183ef4ce45f354a02dc0404c6b461c15a48",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/24.txt",
+      "bytes": 4123,
+      "sha256": "e0f547d79b6c89392461c9a52314c65c028e78e6d1f9dd73b61443629015a19b",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/25.txt",
+      "bytes": 4138,
+      "sha256": "580eb11c40bf63d64fbf62829711b212b7d86e97701fbd1c6c47c821d734b338",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/26.txt",
+      "bytes": 3275,
+      "sha256": "54638a5e1ba702740e13b1ecb640409a59be5fd2e64fbbd22710fa268c894e6a",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/27.txt",
+      "bytes": 4037,
+      "sha256": "9c7580ab8c065f725a177b2d3a38f809cfb2812ebcd361b3d9377798157af972",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/28.txt",
+      "bytes": 5259,
+      "sha256": "ca14275f77609ad1ca5cdaffd617b344ae8f2d096cfba50c14a1df67976cb2c9",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Dybalski_Gerard_1308.5187v1_pages/29.txt",
+      "bytes": 594,
+      "sha256": "bc5b0f635d08593747faa6a9c816fbb58cdce0699e47883385a4a738e99e97e6",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997.pdf",
+      "bytes": 1040673,
+      "sha256": "30c3ec6248814f73f822ca4621e50596bc304349ef14aed1a46193274f9e6c07",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_fulltext.txt",
+      "bytes": 35142,
+      "sha256": "cf6440a5b67416d81c7df129954b79a983db2a25d864197d8e1ed7633a32547a",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/02.png",
+      "bytes": 179187,
+      "sha256": "18f7706b22401cf001a1c5dbfb5b79916dd81199f4d9be1e561cae698ab70b04",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/03.png",
+      "bytes": 260389,
+      "sha256": "13275c3b53238e84bb9c17f00c754d03e2ec9bc5b364c1e4b4e50f01e6cb2c40",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/04.png",
+      "bytes": 224134,
+      "sha256": "9109e21ff5bf8a56eecd1ce5df891580f9874a2556cb64374e0395e82e5c485f",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/05.png",
+      "bytes": 177871,
+      "sha256": "3554ad610039eb75d9820da131646682c658eec7c4b031a111ebca58684ae3c0",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/06.png",
+      "bytes": 160722,
+      "sha256": "0b86c87f15848f89bb2763e6c501ec62d175bfb34e9cb2009a59b5ce7d5f4280",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/08.png",
+      "bytes": 185477,
+      "sha256": "3ce1badde491be8194454c14256638a7b075c76a81fd350d75ba8d056524d188",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/09.png",
+      "bytes": 163332,
+      "sha256": "2138d989eb1630a63e90256d9945522290021c2b26b852c36125ebda009f9481",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/10.png",
+      "bytes": 213619,
+      "sha256": "15280a557beddaa8ef9e376491edcbbcc6356b4ea97daa5ae43d0e0abd2f172e",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/11.png",
+      "bytes": 214445,
+      "sha256": "950c904039b9d93c94edbdb384e83ac7e0e1ff5cc4dd8080d6faae454c5d3b9c",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_images/12.png",
+      "bytes": 196450,
+      "sha256": "1012c355bc7c638f760fe46e2e4c1fde1e6adcf294556ef6a7eeaa4b5ed79ddb",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/01.txt",
+      "bytes": 1105,
+      "sha256": "8627bbde4676579a7c7006d2d00cb558a66f035399deab4e0380ca93e0fd9071",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/02.txt",
+      "bytes": 1866,
+      "sha256": "12eff63fa27ee8a9c3b8237b548cd4479526b9bf4946ebeddd7e7beb1b8311b6",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/03.txt",
+      "bytes": 2596,
+      "sha256": "83579aa618af1cbf83bef93ca99f4100dd73984daba410ee87b56273cc4b7920",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/04.txt",
+      "bytes": 1867,
+      "sha256": "2480ea105f276498398ee6aa15de3350a2045c39422b615af72ac1abe10814b8",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/05.txt",
+      "bytes": 1916,
+      "sha256": "7516112405296800794b79f0792615764331a80f150bc941e49899bfbb749386",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/06.txt",
+      "bytes": 1040,
+      "sha256": "8709ea7661ca77090262cafe405f9ffa364156d100840279505be96042081861",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/07.txt",
+      "bytes": 1569,
+      "sha256": "fd03147325b888660c4d03063ae27efc37aff234d7e8f5558a720aa12d6f35f1",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/08.txt",
+      "bytes": 2354,
+      "sha256": "135b3054d804f0d7390dcd7236eb99d7b9af7a1d1b2c9c5b9d42513e465eef69",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/09.txt",
+      "bytes": 2214,
+      "sha256": "fc12f8739621122507b8108200d8267d1e63ae7f2e6e26ebee6c8b6cadf371c3",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/10.txt",
+      "bytes": 2694,
+      "sha256": "0839124b55a8bfc1107dda0f1e37a6ef382ae0ccd10e19c698edd5e2362a69e6",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/11.txt",
+      "bytes": 3700,
+      "sha256": "badd80f601cb2245213091c58bcd0d573ce71cc0145126d3ab8631cfcbd9246c",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/12.txt",
+      "bytes": 1574,
+      "sha256": "23c51764fe57b5b0bfd6a8c89976ea1fe3ff8539aa3e93fd3fffd99f1b0194e9",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/13.txt",
+      "bytes": 2553,
+      "sha256": "3b9276d0face7bb4839b13919a0e32428ebd9f8b5bf41b0aca0bf2bc657a215b",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/14.txt",
+      "bytes": 1182,
+      "sha256": "83528e3aa549bb5dbd3153241f6e7dced63931a4123c3bb1e1a0cecf9a130aa0",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/15.txt",
+      "bytes": 1479,
+      "sha256": "48262874967d0ff3137e387d9d2665e2730a4bc96359e1ae96b4930d8df4c00b",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/16.txt",
+      "bytes": 1130,
+      "sha256": "49b53677dc0b48ca5f412c7c858f8a56d2ed438fa2a45d6ee6b815a4e7ac6423",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/17.txt",
+      "bytes": 1551,
+      "sha256": "845bf25b87caaa0796349cbf7b91f86bea8ab2287611e79c2cce2fb20a4646cf",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Graf_Schenker_1997_pages/18.txt",
+      "bytes": 2718,
+      "sha256": "9591f11d57f820d50e4de791c0d9a2a636b72b69ceb4b8a975f6430b13fba667",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236.pdf",
+      "bytes": 637316,
+      "sha256": "edc66b973a7239cbaac8c7d096d494003c3aa1b8825ad2e767cb0aca902ba1d1",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_fulltext.txt",
+      "bytes": 345456,
+      "sha256": "e9cbb16303f4ecf0336f1ec6db3bc36b86caaf35faa2434a7a6f08a8562df344",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/01.txt",
+      "bytes": 6105,
+      "sha256": "c4c7fff13fe6cda92c74ac8e960315c26d8984814cacedb40746570ff035ab65",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/02.txt",
+      "bytes": 10156,
+      "sha256": "cd31019721b6dfba4fcede737cbb8c92268bd578a8f4f92e532059050f3b93ab",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/03.txt",
+      "bytes": 7462,
+      "sha256": "fc1241f4fbf9ecadbf841b21d662291608b3e6dcc7cf2362bc5b46632610984a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/04.txt",
+      "bytes": 10271,
+      "sha256": "7d285e80e6a990ba78dd04b0edb8bfe6aaca6fa2a4c3ad333502f7cbcc405fe6",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/05.txt",
+      "bytes": 9585,
+      "sha256": "16b7ce48e1cf418d41d0722285be17378fcdd6540125bca0ef5e0cd056ddfd05",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/06.txt",
+      "bytes": 10032,
+      "sha256": "781ec58996148d8eb72828a8e95ce3f53d9ab255cd0967bb178ad1da3ed37e7a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/07.txt",
+      "bytes": 9011,
+      "sha256": "6130787e1c1285e7383ac7f18185ffb3c5c6a864055f7f28e9439be09b4991c2",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/08.txt",
+      "bytes": 8797,
+      "sha256": "722ff0571fe5459513aa70650ffed651246b402441ec7c9d59ffd83068708059",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/09.txt",
+      "bytes": 9803,
+      "sha256": "6bc231703079d8efb0cbd7d799bfae9c1630db95d7f44bf38fa08b2f66523b94",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/10.txt",
+      "bytes": 8606,
+      "sha256": "9221c52e1fcd44195b75f0b87c70e8748aa32df4ebe420461367899975bff1fc",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/11.txt",
+      "bytes": 8893,
+      "sha256": "c5ba15dd96145fbb367ca879621d4d212402a2e606d585a92da66295e793a304",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/12.txt",
+      "bytes": 10251,
+      "sha256": "584f9daf8dbfcad0ce3a0cba067a88b780c08a77e172b98df57b6482c776497b",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/13.txt",
+      "bytes": 9918,
+      "sha256": "fbd6ee3c7fb893b865339a17e1b9e7dd70076044ccbd76d2e11967635473d78c",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/14.txt",
+      "bytes": 9073,
+      "sha256": "7fb5f62204aeec3ea8cdac223647426e69780d1d9bc420b0fe6cf79be3765509",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/15.txt",
+      "bytes": 9410,
+      "sha256": "f9c3fd054d853e121711b010f785d87162a564d8114ef172a33f51aafa3ad066",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/16.txt",
+      "bytes": 10391,
+      "sha256": "82f440a45b0166b7256c3723949921634b4db2520f1621c4abd0603291175203",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/17.txt",
+      "bytes": 11218,
+      "sha256": "e8bf63b002011886115d4421fed44fd193b9d94bccb6e80c653c488124a1d90b",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/18.txt",
+      "bytes": 11107,
+      "sha256": "ff187036c0f89ead4c0e4a42277beebafb2d572bd83c37eaace2b59243cbea66",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/19.txt",
+      "bytes": 9381,
+      "sha256": "422647ed18e6382bed0d243b891ee7891a1d7f610f06f1378a196c5509e428e6",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/20.txt",
+      "bytes": 11818,
+      "sha256": "f775d48aedc13957bcf52919601de212b53ef72e348360cdeac551b07e6836ca",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/21.txt",
+      "bytes": 9721,
+      "sha256": "04b632874598654f831baae65b0f6e776f1b3ad941a2e618ea80b49e7f965bcd",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/22.txt",
+      "bytes": 9859,
+      "sha256": "43a018647c50823531c26ca28b59104df59ccc815ccd93ce7195e556cab595e5",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/23.txt",
+      "bytes": 9715,
+      "sha256": "ed4ade8472c9b0bde612cf2eca1be571023699123ff7a1df71e9fe717b09ae3b",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/24.txt",
+      "bytes": 9459,
+      "sha256": "74fa274e6d822a0144d4e83214cd0c6834fcd8b899a92764c80b65daa4c4b7cc",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/25.txt",
+      "bytes": 8800,
+      "sha256": "6eeaea621ac8b209a4c22570b66239b9191815befd5025c426478cfdf57a27f2",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/26.txt",
+      "bytes": 9332,
+      "sha256": "848066335728f834548fa1403a34987feeb056b7f887c5ea5dcf494dc93a6409",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/27.txt",
+      "bytes": 12627,
+      "sha256": "179399b795c39d32ec2d81596c5e67ea081bd3a98099d60bcd0d56bd5195d163",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/28.txt",
+      "bytes": 9828,
+      "sha256": "3974d11d57bb051bb7a2b07a2145535bd4e4b2bfbe4274a125ab9ae1a27855a6",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/29.txt",
+      "bytes": 11424,
+      "sha256": "77438bebb72ce3ff94c1aabc9a1fc68688551be12324e9291b7d8cfbd79150b4",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/30.txt",
+      "bytes": 7296,
+      "sha256": "0cf2307e9be3cfa637e38d9a477d9a379976776011297f14351d45f52e314d6d",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/31.txt",
+      "bytes": 8813,
+      "sha256": "b204665696d4f1d80380ba1ff4f9960ddcfb0ccb0a4f43a97459be644c31983c",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/32.txt",
+      "bytes": 9294,
+      "sha256": "f38940ab2d930523df8ef192e4e8608efd39ed65c04d012724b654ef5dbd4818",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/33.txt",
+      "bytes": 9014,
+      "sha256": "052e15747dc5a0a032dd5713d157965be5e94bf82bcffff2603ba6969cf4ed47",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/34.txt",
+      "bytes": 10746,
+      "sha256": "c6492a05627f3f0fb9c3ddf13e987927bdb5e9d07b01de9ad105396073c11ff2",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/35.txt",
+      "bytes": 10570,
+      "sha256": "48f90b3964c3ad02f5522bbe3bdaabd5da810e129d572860cf3f940270c729e6",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_CMP_405_236_pages/36.txt",
+      "bytes": 7600,
+      "sha256": "af8d3113e521b12d35fc80945e82e17eadc38a9f8cff958229dcb83fde85e4e6",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/01.txt",
+      "bytes": 2546,
+      "sha256": "24c4918ffea1944fded7479fe7964e0734b0a88077b3482d92dc9fef73df46f5",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/02.txt",
+      "bytes": 4093,
+      "sha256": "3dbef3e1896c33ce91999bb48fd19f0df301cc8e992555544ceb6263a8d62286",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/03.txt",
+      "bytes": 2463,
+      "sha256": "65272c8600523f2a2544042271200a592ce390291397f198bc607bf9fbc8106a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/04.txt",
+      "bytes": 3898,
+      "sha256": "448053707b95945ce0d6fb30b077fe9b115b41902454b8ca3a4528bffb483b61",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/05.txt",
+      "bytes": 3076,
+      "sha256": "3ba589bb7e9e4ed955a8a04dd9c234db49aa6e1005725cb79ece7366c76b8799",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/06.txt",
+      "bytes": 3251,
+      "sha256": "cad3737f4682f11fef89cba731d3ccb705c87a3e56d55db08318ccadccb5d79b",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/07.txt",
+      "bytes": 3086,
+      "sha256": "31b7c6c73a89c8369c0132d91c6274cd0a7e98f6282a6652da36658d63db43d7",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/08.txt",
+      "bytes": 2534,
+      "sha256": "cbd54f2dc1dd40f5f14e3a76ee2f8ede019438d1f5d8e004d23cf0c78a856bbd",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/09.txt",
+      "bytes": 2500,
+      "sha256": "b0d9fdabdcb2255df01a0e9cc280b2de00754d8ec69dee1d26ff862597a7d75f",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/10.txt",
+      "bytes": 2802,
+      "sha256": "aa4858694377a76aeb265232f0b829cdfd3e279998c1b0926c677f376e58d9b9",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/11.txt",
+      "bytes": 2363,
+      "sha256": "ddf19bcf4c26fc954026bf3ae07f06782d901cc1023e292d7a8fca424b6048e9",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/12.txt",
+      "bytes": 3577,
+      "sha256": "21c8d78551aa90b6dc14d5ebc01e8179984fffd7adebe1a72207e994cb2cf38c",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/13.txt",
+      "bytes": 2760,
+      "sha256": "cdb709a58472617fd20ce9de53c8fb59a2a0d4e1a70769af298ac09ba837f99e",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/14.txt",
+      "bytes": 2469,
+      "sha256": "19afdc31832270e39c9da33baf249e301bc733ecd2543b75aaab0852343ae940",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/15.txt",
+      "bytes": 2852,
+      "sha256": "c133b4a43af175cb2cdcb5784ac19b51022f604cd92d3a5c849184a7f42a3db8",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/16.txt",
+      "bytes": 2195,
+      "sha256": "ef316359ccec6597861f41e850f77944d7964356c55067c583854ee9e9bfe54a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/17.txt",
+      "bytes": 2346,
+      "sha256": "5b37f2547a6e7a255a227aa61b16b2f5ebf6e4f58017eb4efe7540c13dc136bb",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/18.txt",
+      "bytes": 2432,
+      "sha256": "336aeeb9a0cb483f44310a3b46150701a8a8993877007bb4aa6334eaf8c2b272",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/19.txt",
+      "bytes": 2909,
+      "sha256": "5ed382fca202486286b6d4fc85ce1ef5c5143c64882442ba9dde41c3ef0dc911",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/20.txt",
+      "bytes": 2009,
+      "sha256": "5b53f539275357080e87a90b293679b084a4b5b7fcd5798b0164b0915457367c",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/21.txt",
+      "bytes": 2453,
+      "sha256": "4cfdd0994e309f7aa90a36ef6cb432bfe379e33962514fdfbb2a6df220fe2c37",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/22.txt",
+      "bytes": 2655,
+      "sha256": "e9ed3f9ec2853ced078f58a194814b9022c7c0ae76229b08a9810cd853eca02a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/23.txt",
+      "bytes": 3674,
+      "sha256": "6637796b09dfc00a2dfbd268159585702c0c380890eb1c0fbbdae06721e8b0ba",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/24.txt",
+      "bytes": 3816,
+      "sha256": "aa0dc43e8fc0830f063f66994c25451ade920a3c1a2c7a03a3aaa49540938662",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/25.txt",
+      "bytes": 3386,
+      "sha256": "0390eb3000b3e81bd99e5b36524fdfe4d0c4b713fda8db8acaf83928f3f76001",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/26.txt",
+      "bytes": 2586,
+      "sha256": "bb181f8b83067c83fd388e16fcb8653c96f8c4b36b3720d16e8b6e86ef841bdd",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/27.txt",
+      "bytes": 2245,
+      "sha256": "5f80afc2ae4a64636881b481695fca7ccbbe5c9bd5ee25bafbab4752bcee7cb6",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/28.txt",
+      "bytes": 2079,
+      "sha256": "6ae6095b6cc357c0ba611d8a5a1ad92b94988e2283b9c37e28d74651cdbba7c7",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/29.txt",
+      "bytes": 2551,
+      "sha256": "5cc6467502dcabe63f11d5542fd0a8e492188d0ec106bbb8643bb96743e32aa7",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/30.txt",
+      "bytes": 1555,
+      "sha256": "899352e76f9b313581a837de9813d4cef325dbcde9789eccf40cd6fb247d68a7",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/31.txt",
+      "bytes": 1969,
+      "sha256": "bcc4532e90b15817db7a1a4803b7b2296e6bdb97bbe0f9a7ccdecf62a2d31749",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/32.txt",
+      "bytes": 2366,
+      "sha256": "9f8d145f249c2885a707dfc423a5ce2e502d10e23f5aa45a437a927051bdc2ac",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/33.txt",
+      "bytes": 2177,
+      "sha256": "ad58054960f5374dacfbb5a9d746eabb50b66ef6353d57afc1f8bb0aee2a4728",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/34.txt",
+      "bytes": 2614,
+      "sha256": "b1b0d6cf8424c0a60742fef0d3ca1575bc8127e73f68a432dbd0bb6843f5bfda",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/35.txt",
+      "bytes": 4256,
+      "sha256": "457d09d864d01d43291ad73cb51a8cc57bfacd2964fff663f5922aedffe091b8",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/sources/Kruse_2024_readable_pages/36.txt",
+      "bytes": 2765,
+      "sha256": "9df4ad033c3fcabadc878654c997e9c5e1e4a1449fa4c153c68dd5167240aa91",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/BDN_pages/13.txt",
+      "bytes": 2648,
+      "sha256": "06fc5f84848efb95b8b59848df44f7f74d3a307419933c5d16710ee25c224432",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/BDN_pages/14.txt",
+      "bytes": 2895,
+      "sha256": "bb31f321c5db8a53a0f9546c0abc417a08934bcbe68cf61a0134ba6aee1054ed",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/BDN_pages/15.txt",
+      "bytes": 2538,
+      "sha256": "5250f38f573b06ac8acb679dde6a146f4e17c13e541b6348916680e645337366",
+      "primary_url": "https://arxiv.org/abs/1412.2970v2",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/01.txt",
+      "bytes": 4090,
+      "sha256": "d3d04d242a4ecef6e14fbe573d25eb76ea88cafc038d1e91b6df8171fdb3f54b",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/02.txt",
+      "bytes": 4571,
+      "sha256": "ac00d84718e276095c6d1cc7cb1f140d607f35aa5b8beda807780148970ec9ce",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/03.txt",
+      "bytes": 4432,
+      "sha256": "5ef21d992a897d7e557efef181f4c6de7b72a332a215069cb16444b40f3171c3",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/04.txt",
+      "bytes": 3835,
+      "sha256": "5a716a1a7b88d2caf4217401a66e6e54dedd944b24e6c22315ce825d30921f0e",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/05.txt",
+      "bytes": 3946,
+      "sha256": "50e75d4bb2ee909d9180938baa12788c304a9f5d13736f68207a7a9fc90d898a",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/06.txt",
+      "bytes": 3783,
+      "sha256": "f3de01a00b2e5447cc92f3ed26604015f84be55ea23ca45ac5eb4a0c21e5e2f2",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/07.txt",
+      "bytes": 4432,
+      "sha256": "20e78f8e274257bb8260b3c9bcb234717f22ca7b799c84bebdbaa304767ea1ee",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/08.txt",
+      "bytes": 3886,
+      "sha256": "c84b5392aa3b09752a28fa5b083429ab04799e555005c4f5431883e7de56bd96",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/09.txt",
+      "bytes": 4014,
+      "sha256": "03e67aff395ed7293d265a1ca8458ba8b8aa6fb772039e19b63e06db58c1d930",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/10.txt",
+      "bytes": 3756,
+      "sha256": "d424967f977183611be1973c8e9b49b1974a5163936f9af0812671e8fcf6bce2",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/11.txt",
+      "bytes": 3290,
+      "sha256": "39412dc814f00ec81fc0734c08390f102899433c73977590bbc925426050173c",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/12.txt",
+      "bytes": 4443,
+      "sha256": "9599082204c506b8f0b43b59cd9a20707fa16a934b5f66141f026fd40b382513",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_1608.08750v1_pages/13.txt",
+      "bytes": 3815,
+      "sha256": "c85ab0d819c28c56106390637afde387739f9bd3f3cbca773bb7eb1bd8b7d8c1",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/06.txt",
+      "bytes": 3743,
+      "sha256": "8c7e966da24cd63b9f9c60f18cfa88bf5fbec243d041a862af4dbc0a766099be",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/07.txt",
+      "bytes": 3310,
+      "sha256": "4a8b03fca00be6f9bc18bcff2a2d7ea4bea8a7ced677347af9e916881ca058a8",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/08.txt",
+      "bytes": 3586,
+      "sha256": "61ecc4404e07bd135f863aac426d593714e48cf373c1f9aae842baf0ea447842",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/09.txt",
+      "bytes": 3673,
+      "sha256": "1a8bc568d981f5c31096d6464558a4379aa75a1cc1b67c6088300f178c024f34",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/14.txt",
+      "bytes": 3592,
+      "sha256": "fa7a8415c9196cd90b050c79f01ff2e9cfd2b80d30093f732dc50d479e0880a9",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/15.txt",
+      "bytes": 3499,
+      "sha256": "9efa5567e525b6cc974bae6d1637baf9a597b969b9a658d0501f2a1237935883",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/16.txt",
+      "bytes": 3270,
+      "sha256": "e22c8ff3e4ebaefe240d281963c08efd322f70a15aa3da9d2370795c35190989",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/17.txt",
+      "bytes": 3585,
+      "sha256": "ddee2e6fdd396caaadc678a342fe127800f33e90f6d620c1492c603bd6d69785",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/18.txt",
+      "bytes": 3452,
+      "sha256": "f6df03f96dce8c3969dba874d4e1fc2f1c053998d08c42b63f7843fa36d25449",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/20.txt",
+      "bytes": 3121,
+      "sha256": "a737f35ebc291c57dc9074d50f04c903bda67733910684f4054c5aa466ba39af",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/21.txt",
+      "bytes": 3845,
+      "sha256": "abe40b43025ad195fd031b2bb1c31bdc92f3c321c47334a3f6d09ba18870ae19",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/22.txt",
+      "bytes": 3453,
+      "sha256": "6afee5fafbaf653212e8284f56ae720135cc5d664eb3ed69e994cb84f5080197",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Dybalski_Gerard_1308.5187v1_pages/23.txt",
+      "bytes": 2772,
+      "sha256": "ed740dc5ba623357bb9172a841ab1183ef4ce45f354a02dc0404c6b461c15a48",
+      "primary_url": "https://arxiv.org/abs/1308.5187v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Graf_Schenker_1997_pages/01.txt",
+      "bytes": 1105,
+      "sha256": "8627bbde4676579a7c7006d2d00cb558a66f035399deab4e0380ca93e0fd9071",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Graf_Schenker_1997_pages/02.txt",
+      "bytes": 1866,
+      "sha256": "12eff63fa27ee8a9c3b8237b548cd4479526b9bf4946ebeddd7e7beb1b8311b6",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Graf_Schenker_1997_pages/03.txt",
+      "bytes": 2596,
+      "sha256": "83579aa618af1cbf83bef93ca99f4100dd73984daba410ee87b56273cc4b7920",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Graf_Schenker_1997_pages/04.txt",
+      "bytes": 1867,
+      "sha256": "2480ea105f276498398ee6aa15de3350a2045c39422b615af72ac1abe10814b8",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Graf_Schenker_1997_pages/05.txt",
+      "bytes": 1916,
+      "sha256": "7516112405296800794b79f0792615764331a80f150bc941e49899bfbb749386",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Graf_Schenker_1997_pages/06.txt",
+      "bytes": 1040,
+      "sha256": "8709ea7661ca77090262cafe405f9ffa364156d100840279505be96042081861",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/01.txt",
+      "bytes": 2546,
+      "sha256": "24c4918ffea1944fded7479fe7964e0734b0a88077b3482d92dc9fef73df46f5",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/02.txt",
+      "bytes": 4093,
+      "sha256": "3dbef3e1896c33ce91999bb48fd19f0df301cc8e992555544ceb6263a8d62286",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/03.txt",
+      "bytes": 2463,
+      "sha256": "65272c8600523f2a2544042271200a592ce390291397f198bc607bf9fbc8106a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/04.txt",
+      "bytes": 3898,
+      "sha256": "448053707b95945ce0d6fb30b077fe9b115b41902454b8ca3a4528bffb483b61",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/06.txt",
+      "bytes": 3251,
+      "sha256": "cad3737f4682f11fef89cba731d3ccb705c87a3e56d55db08318ccadccb5d79b",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/12.txt",
+      "bytes": 3577,
+      "sha256": "21c8d78551aa90b6dc14d5ebc01e8179984fffd7adebe1a72207e994cb2cf38c",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/13.txt",
+      "bytes": 2760,
+      "sha256": "cdb709a58472617fd20ce9de53c8fb59a2a0d4e1a70769af298ac09ba837f99e",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/22.txt",
+      "bytes": 2655,
+      "sha256": "e9ed3f9ec2853ced078f58a194814b9022c7c0ae76229b08a9810cd853eca02a",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/23.txt",
+      "bytes": 3674,
+      "sha256": "6637796b09dfc00a2dfbd268159585702c0c380890eb1c0fbbdae06721e8b0ba",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_read/Kruse_2024_readable_pages/24.txt",
+      "bytes": 3816,
+      "sha256": "aa0dc43e8fc0830f063f66994c25451ade920a3c1a2c7a03a3aaa49540938662",
+      "primary_url": "https://doi.org/10.1007/s00220-024-05091-7",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_verification/dybalski_page_04_reextracted.txt",
+      "bytes": 3041,
+      "sha256": "a6fe42597ac3ebd87e140e7fe671064809bbea4975a66ccda052203d0d69e8f5",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_verification/dybalski_page_12_reextracted.txt",
+      "bytes": 3015,
+      "sha256": "c394a59de9e6010185e16f933d66edafb5fccbc934d6b83fb0b118fe9976fa19",
+      "primary_url": "https://arxiv.org/abs/1608.08750v1",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_verification/graf_page_04_image_0.png",
+      "bytes": 146079,
+      "sha256": "35321fdda55e03b3e74fd67f1f4b57b311d11583d8077e14a263f9c22e5bb1d6",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_verification/graf_page_05_image_0.png",
+      "bytes": 120000,
+      "sha256": "2f0df9828e42b0e6dfd5934ce2205c5e8cc300f96564ea67c72ec10b52147aaf",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_review/primary_verification/graf_page_06_image_0.png",
+      "bytes": 109880,
+      "sha256": "cad5d6325f9ef8ecdce854746cc5552509d0867dceb087ebf687bbc3a7cbf4d9",
+      "primary_url": "https://www.numdam.org/item/AIHPA_1997__67_1_91_0.pdf",
+      "recovery": "Exact third-party source remains external; not redistributed."
+    }
+  ]
+}

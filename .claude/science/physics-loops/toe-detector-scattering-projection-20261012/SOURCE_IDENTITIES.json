@@ -1,0 +1,993 @@
+{
+  "base_revision": "296155eda2ca6a5ab6ae6307190362b9a84ea690",
+  "scope": "Exact intended publication set except this self-referential manifest.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/APPROACH_REGISTRY.md",
+      "sha256": "4d486ca8b76978badf8ddff9d1c9cb4a3c8c094e2e7ec2399f1303cc1b7baf2e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/ARTIFACT_PLAN.md",
+      "sha256": "0881098c32e7efee72676d9c8e44f941d18141d8b6c15b0d0b4fe0fd6c5b4c2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "e0e22a7bed7e4f14648019f3e2591bfdcdc3c1fbe3563a1f300d881ecc813313"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "d3405e131801578163ab431b1e048d1b6fc892561415138b8a5a7f94ccce66ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/DELIVERY_CHECKS.md",
+      "sha256": "2916a89303ae1b5f35b1625fff88c57d199c64c7b2ba8667764df67466ccdaba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/EVIDENCE_MAP.json",
+      "sha256": "5b3b1ed8afd64a7424c8b46413637ffbe95acff2a0e5b68d89e7aecc31692fb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/GOAL.md",
+      "sha256": "e01a25442ee5eb60925f9a612b7465cd98ca455b2a6e38e9a3eab7737ba5f21d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/HANDOFF.md",
+      "sha256": "519ab608618dcf5e30b46123afcddee2a781227d7d34019a2e995fc7a4104660"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/LITERATURE_BRIDGES.md",
+      "sha256": "c6d2c50399259daeecaa9747fb7a7fd4c18c27e0c14ffbdd5beef46919eb453d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/NO_GO_LEDGER.md",
+      "sha256": "124b453930dfd890f52b925e34a44f978d959e623c2e286407a00e6ff10b0dd4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/OPPORTUNITY_QUEUE.md",
+      "sha256": "71121b9dc3a54a10fac9d461a11afa1966378d48f48b9c74db3c583e2ce86df2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/PR_BACKLOG.md",
+      "sha256": "a6a4161236680480eea7cefed0e9d4a9e91c1f27bea55b2fcaa7f8058833ef48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/PUBLICATION_EDITS.json",
+      "sha256": "325689ab7d61ff7fc739dbf18198c67980e7c06461465d0b40760b0ec2b10b0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/REVIEW_HISTORY.md",
+      "sha256": "d765287e28a060a480210fc8d60158b223f7f07943cbe55a026af3ea56a102f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "38fd098359a1f72bc3362d6051b513074a51c254dab982a7956fbfc8ceb73dd5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/ROUTE_PORTFOLIO.md",
+      "sha256": "11e67369850901e9e6d53fbc6c66ec740a610356baa9b32cd4eaef5ab96bc50d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/STATE.yaml",
+      "sha256": "8420d18e22b98e0fd8a502e53c5bb9b11e46caf4a6992ab57ab8782cfedc10a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/TRACE_GATE.md",
+      "sha256": "a63f9aa1e5f6437440eea3617af4c3e05b1649e5c4151ab6292c2e2dbacc79ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/DETECTOR_SCATTERING_PROJECTION_PROBE.md.gz",
+      "sha256": "6c05ef2bed51f3e4302cceeffebc66f744bbfbd9d2b4a9912618ccfe84c2a0e2",
+      "decompressed_sha256": "91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/DETECTOR_SCATTERING_PROJECTION_REVIEW.md.gz",
+      "sha256": "11ff6c86f5021dc7508e2d384b88e6dd5aa15cc50b835fa96f1ade310dd503f5",
+      "decompressed_sha256": "d9ab71d88615c78cb49eda7cc85ff263d65c12be6cc6e019314cd96eb42a20a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/Projection_root_author_coverage.json.gz",
+      "sha256": "073751bcc4ac55fb272e89729f69dfadb75380bc96a81aac321ff73560b5cea0",
+      "decompressed_sha256": "350f7df0326b2db3a1dea26e07d192153bc3a65bd98953063ba868ac14af128f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/Projection_root_review_coverage.json.gz",
+      "sha256": "52321868716af38d23647f3b5908b270686b6e59048b454251257c90479805d1",
+      "decompressed_sha256": "38563796343c2819cdd7cd4ea1f120fc3c9bc1060ee56ca4766d3f080b0128eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/ROOT_DETECTOR_SUPPORT_PROJECTION_LEAD.md.gz",
+      "sha256": "8dd9d8f0ca894202632d4ebb167e0335ba5192b0a00609357de683bd05b805ac",
+      "decompressed_sha256": "8ae35c637fd77aee6a68e7a120c36d7d5c4aba4c9fef6df8b594316369c5138f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/AUTHOR_EVIDENCE_ASSESSMENT.md.gz",
+      "sha256": "804ea2145c3feba94819c7c03396fd71437b2581d9e8c63cf90f7f2386a8ee50",
+      "decompressed_sha256": "8c1033397a6493f51793dad3437f5bf0ccaa8b57d665ea00efcf328a5f1656e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/CHECKPOINT.md.gz",
+      "sha256": "8a8d0bebe93a581432d2f710c3f7a8d84f719bbe746a44dad5940043105b116f",
+      "decompressed_sha256": "0b16351b61f6821e1b6c4cc5d2eded9d67d063a1ae36d800d869f8235fec337b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/INDEPENDENT_RECONSTRUCTION_PRECONTROLS.md.gz",
+      "sha256": "0fd7fee5ba48e3f645f52ec12125bcda475490f56fac0b2ecc68f8404e43e2c7",
+      "decompressed_sha256": "7d5461a55498e9958e267aea18d2af21157108c9670dc303b5ae6db80dbd3146"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/OPERATIONAL_RECORD.md.gz",
+      "sha256": "d450a74b5e4f4b159d2eaeeff2b860db543c2aafdcae7d431b31a8338f910d10",
+      "decompressed_sha256": "83f5267cf4b178b68052dd798596783a496427f3978ee907493bda49974466a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/PRIMARY_COMPARISON.md.gz",
+      "sha256": "6f79710d6f889825771909ba1ed95d09be83a41120b54e280d8fa62c26ece4f5",
+      "decompressed_sha256": "9c11ec8e31dfa37043ca01085fb9fe1f66aed34e414e9cc3836345e063938655"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/assess_author_controls.py.gz",
+      "sha256": "4e29aa6b62b49e8f686dbe7dd773a22d8be6154649bf6af00f1c39c09c65c19e",
+      "decompressed_sha256": "244a9dcb7b79f0c008a13151fd2c61d2bde6f9080d51962ff780a7fcdf789d0d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/author_identity_verification.json.gz",
+      "sha256": "49ade75e27a7f2dd5b386c784583da65997ffd2fbe055f063e23960d4f39341d",
+      "decompressed_sha256": "5f992c422e5a38897513290ba33a00006fc3e53ce084247639c9d7b69697f8b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/exact_rational_control.py.gz",
+      "sha256": "bc9a2543c163064b1275c79b2d285877254d1ff7197e3738ffe4c7c882105e1f",
+      "decompressed_sha256": "ebeecf503f485631f18011eae0e8bef0b0509b54465fb867e1a1cb0d649ec25a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/final_source_refresh.json.gz",
+      "sha256": "2f8bd3c730a0979222e12b32c0032e95a4e4f487d49be6b2928b965dd9a98071",
+      "decompressed_sha256": "3d3b10aab16cb4d5fcc8bdc9f98f1deee8705cc6aeadb911a88ee78f3a57ce05"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/finalize_review.py.gz",
+      "sha256": "c14a565fc8df8da4419a5d182971531865cfd391c44bedd874aa63daf6e965b4",
+      "decompressed_sha256": "8eb903255982a1188040903b63167808a80fe4d7b0dc65dd82f2e79becfa05bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/3a4b2c66__AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/a13caa48__AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/a13caa48__docs__ai_methodology__SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/a13caa48__docs__ai_methodology__skills__SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/a13caa48__docs__ai_methodology__skills__physics-claim-reviewer__SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/a13caa48__docs__ai_methodology__skills__physics-loop__references__proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/instructions/a13caa48__docs__ai_methodology__skills__review-loop__SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/author_discrimination.execution.json.gz",
+      "sha256": "4627ead4a53dd92cf907eb082e19c51cf9c5200850d3d99334ab7e92b930f79c",
+      "decompressed_sha256": "762c266ca34e6f1d9bd397438dc33fa6355e862b6a23eb03c8134daea9f83822"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/author_discrimination.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/author_discrimination.stdout.gz",
+      "sha256": "5171782db1063cc3bd799b8943ac1967d0b583f72788db210744581fe599c8f4",
+      "decompressed_sha256": "6cff1e3f48afb93aa8e0321c2d33c35b7c4ebbb0c4afb135a50e3854dd8aca60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/author_reproduction.execution.json.gz",
+      "sha256": "a4ba4a2fb508a97ac0124e96ccf4edbbbd961e4443e4c85ffd5b2b5323a09cbe",
+      "decompressed_sha256": "d810ab4ff2b978ff450a775357e37130d97b3b888f7ce3f9e422c9104a350b12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/author_reproduction.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/author_reproduction.stdout.gz",
+      "sha256": "3b1811d38797202089f925fe5cd3858fd91f447baad5ee9dc001576572fa72d9",
+      "decompressed_sha256": "deb01acdf66463089b61f6b262619fd97748382e91693f391cdc91995a41f874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/independent_control.execution.json.gz",
+      "sha256": "630f341bd95bc8769d863a048757eff1d70603f8c6866173d6daa6f460230cce",
+      "decompressed_sha256": "18577fa974c27f3f30746dfe9f97691f9005c503a80d06c223d7993905a0deeb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/independent_control.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/logs/independent_control.stdout.gz",
+      "sha256": "c476712d4209e8fe728a8e204cd5180ffdfde39edbdee75eebeb26772bf1a5ef",
+      "decompressed_sha256": "b428a284177e6483718317cd731b68558c689b7337999a0bf8061b2c23d815c0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_control_assessment.json.gz",
+      "sha256": "5915021b5bf8e81cc17c05a9394795063b126a2b00f3d7a7cb44ed75351de34b",
+      "decompressed_sha256": "836f5e852151c739465b297868c9bcf6b9cd4dbd35cafdf872cd055f594c19f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/factorable_energy_mask.execution.json.gz",
+      "sha256": "cc92bf21161850830792e10b51dd722c5db87c22a58df3c9b3582b5f1fd08d6d",
+      "decompressed_sha256": "71966806098675f62dfd84c17edce1d3bceb2d4519b57d97a3304124f6fbc7f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/factorable_energy_mask.py.gz",
+      "sha256": "2336bf9caf6777bfd737912758831d765bc302925cbea7e018c2b2ba18978103",
+      "decompressed_sha256": "db31c35ce10c8e4a6c7a1019f26ed5c5ae4b07171b1c606b0c055b9f7628fa6a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/factorable_energy_mask.stderr.gz",
+      "sha256": "956a2df6a15cbb4278a0a1942d167be1f5ee61b87e59b2087595ec262362080c",
+      "decompressed_sha256": "60291082f8945de9523d09fc2382adb6b378b2ac8497eaac13ea8e7748927dcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/factorable_energy_mask.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/omit_partition_piece.execution.json.gz",
+      "sha256": "5e902dd020e5c260dd07161099bdf08623e68011846240aa5515746977f9a1f4",
+      "decompressed_sha256": "d4f0215860ce70c6856a827ef4b275ae477ba3c7f4b91d7c1617d71dfaacf845"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/omit_partition_piece.py.gz",
+      "sha256": "e644bbbeb2a4e5e6b22cfcbbbf3ef00705d3e94d8e910f278ddf1249fd9130e9",
+      "decompressed_sha256": "a907cd7bbc0ce28a396393b8ac778296e255b348b3a3a5dafaf7a026d0c9fe36"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/omit_partition_piece.stderr.gz",
+      "sha256": "f695af828d2ddcb1ebddbae7df2f53ecf5e5b276275b1797e07fc80ad2c958e4",
+      "decompressed_sha256": "b976ae0bb6507314a98b03561e10de912e34c4fca925f58c0390ceaddaa51b20"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/omit_partition_piece.stdout.gz",
+      "sha256": "10bcdb5d9c6901e2b91005de8f0f6e22b80c403d4a1e9a5fbf6db65d13479af3",
+      "decompressed_sha256": "c9e6e748a98866b666c7cade3ff2c49f2517989e2541594c265c863803d2fdb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/signed_detector_weight.execution.json.gz",
+      "sha256": "c4a8878e68f0a26ae7427435a2cae0ad17ade02f31601c18a0edf08663972f3a",
+      "decompressed_sha256": "663ace3cdb6409095106d789d7dd6b68d60919e537e01ba093ec96091cd9d63b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/signed_detector_weight.py.gz",
+      "sha256": "0f9d6915ef2bf69887d6fe25bf2cf0b05a82961c8214e9f17e0b531684edb0f4",
+      "decompressed_sha256": "194d23daef8d2f286556aacda53891a3699e4423f2c9f5887e279bdd50d10cc5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/signed_detector_weight.stderr.gz",
+      "sha256": "f5f0e1a89b242f29d40d86ddbbd617fcbc3c30cb4db6232aa0d42868843b0c14",
+      "decompressed_sha256": "0b43d4adfab4c116667916459d5dbde699cc248dd129cad013629378433f6ccb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/signed_detector_weight.stdout.gz",
+      "sha256": "b76fef0a55d934a5006f6cd7cc11852ae2e168e12b1251787a304bea89c8bd40",
+      "decompressed_sha256": "fc1bf6ba03504acd5117f55c4c20f9b0a92fcb05ee3cf7136d49259069e4e86c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_linear_error.execution.json.gz",
+      "sha256": "8281e6bd42455eb97d2c8fcb7dc92cc0123b7b1c09b1170069c151705f350bfc",
+      "decompressed_sha256": "8dcee4d76189064d8b13484c011d1db8f30664b024aa1fc256513696f8fab28a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_linear_error.py.gz",
+      "sha256": "8ef52f04f3fef251bf84aa93ea7d3f5b16e733feb9437e4c610405c3a8918eee",
+      "decompressed_sha256": "66cbeaadae58dbf78476ed923177e58f01c986ee852664c2059ade1acbc29f03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_linear_error.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_linear_error.stdout.gz",
+      "sha256": "3b1811d38797202089f925fe5cd3858fd91f447baad5ee9dc001576572fa72d9",
+      "decompressed_sha256": "deb01acdf66463089b61f6b262619fd97748382e91693f391cdc91995a41f874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_omits_error.execution.json.gz",
+      "sha256": "72fa9db192751332dc415ee79e5f52a4765b4a7b955cf772a339e513cc689d4b",
+      "decompressed_sha256": "017cb1934e6808f61161d3fad282e0db45b2ca69daf37e473b9975690efa45c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_omits_error.py.gz",
+      "sha256": "869fb368869ae00ddf55b8483081b0ba5abfb04f8d69e7b4a9334f75671a2371",
+      "decompressed_sha256": "0e45b50219a388c3cac9b93df7bc163518765ffa8b4e8901f7353bb711760066"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_omits_error.stderr.gz",
+      "sha256": "13c67023b9b2f33149c18157bbf165b83cc4ef4c3454ca961e92cd2e90b7d7da",
+      "decompressed_sha256": "95ac83feaf2db4a3064bfadf120562f5e783cf45b804c7e98b5738b843cac934"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/witness_omits_error.stdout.gz",
+      "sha256": "a051b733b9ae19e2bfc935b631ca8d17b0530e5fd6ea208f0507a8996ff6ed33",
+      "decompressed_sha256": "6ebab567c13d8a69ed8ba2fd97209b963de0c8e25b6534a647693321608feb37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_resolvent_order.execution.json.gz",
+      "sha256": "b55014c33acf469d74afbe301003a5f55c055c84fd5cb237e2632f912e9d17b4",
+      "decompressed_sha256": "9879cc17badf752381bd28e5932c617797d32c7ce2ca56a646581a814aaa5c23"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_resolvent_order.py.gz",
+      "sha256": "1647a2cdb5109a3c7351a753f892ad2fe661edfec744f0f595bb0583bf6468be",
+      "decompressed_sha256": "beb46b0420bafd31c1f74c01415b568950951d671cb6cb2de4cd477af99b9015"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_resolvent_order.stderr.gz",
+      "sha256": "3dc110f4a5cbec16b44badfda54380559749932fa49cb455865027d758637b18",
+      "decompressed_sha256": "6e4117ccae34612591b3fa978d1b93fb29144f2fc0a92003485b7c48cdeb68e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_resolvent_order.stdout.gz",
+      "sha256": "b071eb0df07532b475dfee2b3eb8b99da5e98245ddcdc42599c9505f5694e32d",
+      "decompressed_sha256": "86bd757eb78bc3244dafe9d6672cea580920646401b837e1d64054c5d69e0e3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_temporal_transfer.execution.json.gz",
+      "sha256": "8682a14bb08ae68d74dbea8be4045c70d1aa3e6cfa9b5f89a1793a9ec89c9caa",
+      "decompressed_sha256": "d75ad008c7a7c7035d95d2d1e63ce9bbb7fff6fd8c02dd4056816904938c4fab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_temporal_transfer.py.gz",
+      "sha256": "fff4c773704b9e453782086c4160d6aaa079650cb029cd685e729c95b636d706",
+      "decompressed_sha256": "47820500206b01ae4ea64e6f6449b6b57bda48e63ca62ea3c6ebac70dfe08054"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_temporal_transfer.stderr.gz",
+      "sha256": "122d32b318d0d3548a8ea775eb4d6064b91d67d59829f4bcf23aed49e8b353ea",
+      "decompressed_sha256": "7bdb09f6031b8bdbde531826be3582603df3cbf29c1c434df8d84a59061c4892"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/post_author_mutations/wrong_temporal_transfer.stdout.gz",
+      "sha256": "10bcdb5d9c6901e2b91005de8f0f6e22b80c403d4a1e9a5fbf6db65d13479af3",
+      "decompressed_sha256": "c9e6e748a98866b666c7cade3ff2c49f2517989e2541594c265c863803d2fdb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/precontrol_freeze.json.gz",
+      "sha256": "47a8404b5f565b089c0c58da714a4c9ec7408b0313bf2b9c433571710f2015f0",
+      "decompressed_sha256": "76c3d7adfc4cfa8d5c77f427aa35f8aaf1615b08e537103b9f6677eb985f895a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/primary_extraction.json.gz",
+      "sha256": "636c22880216bc81c2d25ca6ae39a2da1c56ba0d1d1572059a4bba7cb8d4c577",
+      "decompressed_sha256": "d9f62183c31fda5948fb07c55cebb89dd0e8cca5d7da579b1e2d475b5bfc4f2e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/receipt.json.gz",
+      "sha256": "f8224e6bb7c1f2ef249c26c6f8cb150261069a5d95d12d57a3471999781a26f0",
+      "decompressed_sha256": "1fed9654096e0c67535640f60c1f1c318ac313c1436d84a21c4544b744f6ce3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/source_initial.json.gz",
+      "sha256": "e605186a588b5f3cb177fc04023130289adf9e37a59ac8717584761b1d1176f0",
+      "decompressed_sha256": "fcbeddbd22f69d270216c1c226651fd44760334791a71bcbcdde73588bc0e8d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz",
+      "sha256": "33efc2317c99dcc3698a045ae8c075312819875c68d6d93ffb8d5219fc714bbe",
+      "decompressed_sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md.gz",
+      "sha256": "8485944dd5100dec9f021e23ddf51ad2a3488ffdbc7cb84b4e68bfef54912605",
+      "decompressed_sha256": "2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz",
+      "sha256": "665f64c0dfdefc032bd348c5b9eef91a178129a977536584b68cb8d5966d5dcf",
+      "decompressed_sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/COMPACT_PATCH_FOCK_ISOMETRY_REVIEW.md.gz",
+      "sha256": "efe72f08cc9e9027eae5d137bf485fe14eb44899c47c8d8ca3f24caa3b37f8f3",
+      "decompressed_sha256": "bc88af1dda77065d8806da9d689546547f40847a340177086793dab5f3a277cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/DETECTOR_SCATTERING_PROJECTION_PROBE.md.gz",
+      "sha256": "6c05ef2bed51f3e4302cceeffebc66f744bbfbd9d2b4a9912618ccfe84c2a0e2",
+      "decompressed_sha256": "91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/AUTHOR_SELF_CHECK.md.gz",
+      "sha256": "3a3650e5112bed11b723617a9b3b2306c43d7a01d6006e4633163622c619658f",
+      "decompressed_sha256": "be08ab0be81622226ed7ee0b1197ab2068b819a10c53e58606186b2ffaa20b30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/CHECKPOINT.md.gz",
+      "sha256": "ff143e99412dc7fdaf28a82bf0a47b0e6e5ccbc89ff053fa78224209eec92a7a",
+      "decompressed_sha256": "27a3d87f8d2557ba714d9e3f0a4deef21a2243a481627bc06b0049a7bc735de7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/OPERATIONAL_RECORD.md.gz",
+      "sha256": "b72be2bdbb058490f0efcfbf79cb4e26fe5ec1fac14878a49cf658a18bde2dd2",
+      "decompressed_sha256": "6e34496087b626f580b48d9bf6a94c33eaefa70740d07b46167913abd7fb4d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/SOURCE_LEDGER.json.gz",
+      "sha256": "3cad4967bd84d4a71fe8d40292ed38ead0416a01369115d721722f542c84efd7",
+      "decompressed_sha256": "bc2ed7a85a80dca6fe0efb4392bf5e41c77c51f45d4cec40fa63b11e6de6b133"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/build_source_ledger.py.gz",
+      "sha256": "a1a8b7c6a1d0d602364f0bf41d22d7339c87a320baf54a2d2eb4af32d6fec4f7",
+      "decompressed_sha256": "329a910a525c2ea1eec697624506181c378addf3ebb114fb44f3fe6b3c00da82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/build_source_ledger_initial.py.gz",
+      "sha256": "dfe238e884fec0fd1c39a77f170834a25be57bbc0cea9900792ca7781d4442ec",
+      "decompressed_sha256": "c8edda2da9a8780cdfd18b64eb5c0ac6bd0abe8508f1f9650aa59174d19b7eba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/check_projection_algebra.py.gz",
+      "sha256": "9266d6a13e4bda627ab168a464ce8eff2effa9d4e6b486f74a96ea8cfbc206d8",
+      "decompressed_sha256": "6152016d6bf85e8691f69eb15bf082239d1ecb50c742257265079be4887a972f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/dg_section_search.execution.json.gz",
+      "sha256": "09b36d32210c268a08215675af1720896b905fb3146a46881f58c8dc76ef4617",
+      "decompressed_sha256": "e33677da9d5211cb1235d0b3a164dbcc8f0bd4f7d68a7792aabaca1d355ef4df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/dg_section_search.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/dg_section_search.stdout.gz",
+      "sha256": "696dded69c0171142ce5a7dbb8043693d1f6909012197b855836efdc47229b66",
+      "decompressed_sha256": "5f7a696b6e1304bb1bdca3303a0d3dde1a1fa3a9bb8f77ee62c36017eafef1d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/freeze.execution.json.gz",
+      "sha256": "5a0c449bcd02e42fdcffbf7c38fbec1c433dff86636799a909445ac25de5c991",
+      "decompressed_sha256": "74b5ae6233e279bc5709a5a3202e1d2c8f388a2013cbeac5edd679fa653dd4a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/freeze.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/freeze.stdout.gz",
+      "sha256": "c153d1e6eedccdb4d2002c2f3a941ad7bb7f04bc63e846f682caf5bf2ce12fcb",
+      "decompressed_sha256": "3c410511e7fa0fec1ab138b2f0ca6499dd6cf97d21a73908821d3337dcf20c21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/freeze_evidence.py.gz",
+      "sha256": "7109f19ee80f3fe7e68ec36b6e1d835c887e6c7a2dc641d4ea7d222066612995",
+      "decompressed_sha256": "27564f1fbdffa486cd875c8ba5595133fa16aa718d83ef99a9685e438360512d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/freeze_receipt.json.gz",
+      "sha256": "fac97b98182cf7793dd67385a13ec75c7428d2dfbdece02e2b6f298ebcbada2f",
+      "decompressed_sha256": "41e516aec74bd86d28702f5c079522f9ba8c91422eb660021190a241de176b72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/predecessor_binding_check.json.gz",
+      "sha256": "2775fca8f255e7a4a7b21b300a69c48e750f1f5fc3d2f0696c0c84504b40e192",
+      "decompressed_sha256": "b26b5dc05f82addb47baab8dc2406e2d5f733cdea2bb81426e215f7de4ce3479"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/projection_algebra.execution.json.gz",
+      "sha256": "3242ea6700ed3b5aae2a36e762459a9e3bff40b3842e41bc179ff24cb38b39b3",
+      "decompressed_sha256": "c0042406da7a28bf7f569c49c029f6d1ab15ecaf6639d0ea5e7ab927fc4eaa43"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/projection_algebra.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/projection_algebra.stdout.gz",
+      "sha256": "3b1811d38797202089f925fe5cd3858fd91f447baad5ee9dc001576572fa72d9",
+      "decompressed_sha256": "deb01acdf66463089b61f6b262619fd97748382e91693f391cdc91995a41f874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/run_with_timeout.py.gz",
+      "sha256": "219ee8ee23ee285304c42744adc33f344db7e013da743aebbf244a077f021056",
+      "decompressed_sha256": "db6fcd00e4b1c01bb0c31cccc7fc47a7bd9cb67d8aa030138122dd493d046c82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/source_ledger.execution.json.gz",
+      "sha256": "c66158432f39370b4634129e48db4bdfe65a6e248735a83166fb479545c24a46",
+      "decompressed_sha256": "b98ec3be1579b295a1c5a5b69b5b3a39d259c1be9295ab25ce62388c275f04a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/source_ledger.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/source_ledger.stdout.gz",
+      "sha256": "50146873a1cd400c7391c55da3f9f19b7e5cc4dd2239172b148c86f84fe522d5",
+      "decompressed_sha256": "30728cef06f8559df23df15beef67e8fc03317d8eee4484de30196f47d0ddef4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/source_ledger_after_pc_review.execution.json.gz",
+      "sha256": "39a26812971305a63bea7608524a05a24257b2d4cd4cd29631ca96faa9e7367c",
+      "decompressed_sha256": "727097922743c2f44b5ca17ad4b8761bdd7afa2ba11a3a00a3628d02ab1081af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/source_ledger_after_pc_review.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_projection_review/sources/author_packet/source_ledger_after_pc_review.stdout.gz",
+      "sha256": "ba7e3c3f1f373c011fa46ec650f90e184bcfdd10e94f189b2002e1dc74440d9f",
+      "decompressed_sha256": "25474292903a2a9665a3191f149ed71ce6266663d189b16fe5a65e7939aecfae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/AUTHOR_SELF_CHECK.md.gz",
+      "sha256": "3a3650e5112bed11b723617a9b3b2306c43d7a01d6006e4633163622c619658f",
+      "decompressed_sha256": "be08ab0be81622226ed7ee0b1197ab2068b819a10c53e58606186b2ffaa20b30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/CHECKPOINT.md.gz",
+      "sha256": "ff143e99412dc7fdaf28a82bf0a47b0e6e5ccbc89ff053fa78224209eec92a7a",
+      "decompressed_sha256": "27a3d87f8d2557ba714d9e3f0a4deef21a2243a481627bc06b0049a7bc735de7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/OPERATIONAL_RECORD.md.gz",
+      "sha256": "b72be2bdbb058490f0efcfbf79cb4e26fe5ec1fac14878a49cf658a18bde2dd2",
+      "decompressed_sha256": "6e34496087b626f580b48d9bf6a94c33eaefa70740d07b46167913abd7fb4d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/SOURCE_LEDGER.json.gz",
+      "sha256": "3cad4967bd84d4a71fe8d40292ed38ead0416a01369115d721722f542c84efd7",
+      "decompressed_sha256": "bc2ed7a85a80dca6fe0efb4392bf5e41c77c51f45d4cec40fa63b11e6de6b133"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/build_source_ledger.py.gz",
+      "sha256": "a1a8b7c6a1d0d602364f0bf41d22d7339c87a320baf54a2d2eb4af32d6fec4f7",
+      "decompressed_sha256": "329a910a525c2ea1eec697624506181c378addf3ebb114fb44f3fe6b3c00da82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/build_source_ledger_initial.py.gz",
+      "sha256": "dfe238e884fec0fd1c39a77f170834a25be57bbc0cea9900792ca7781d4442ec",
+      "decompressed_sha256": "c8edda2da9a8780cdfd18b64eb5c0ac6bd0abe8508f1f9650aa59174d19b7eba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/check_projection_algebra.py.gz",
+      "sha256": "9266d6a13e4bda627ab168a464ce8eff2effa9d4e6b486f74a96ea8cfbc206d8",
+      "decompressed_sha256": "6152016d6bf85e8691f69eb15bf082239d1ecb50c742257265079be4887a972f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/dg_section_search.execution.json.gz",
+      "sha256": "09b36d32210c268a08215675af1720896b905fb3146a46881f58c8dc76ef4617",
+      "decompressed_sha256": "e33677da9d5211cb1235d0b3a164dbcc8f0bd4f7d68a7792aabaca1d355ef4df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/dg_section_search.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/dg_section_search.stdout.gz",
+      "sha256": "696dded69c0171142ce5a7dbb8043693d1f6909012197b855836efdc47229b66",
+      "decompressed_sha256": "5f7a696b6e1304bb1bdca3303a0d3dde1a1fa3a9bb8f77ee62c36017eafef1d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/freeze.execution.json.gz",
+      "sha256": "5a0c449bcd02e42fdcffbf7c38fbec1c433dff86636799a909445ac25de5c991",
+      "decompressed_sha256": "74b5ae6233e279bc5709a5a3202e1d2c8f388a2013cbeac5edd679fa653dd4a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/freeze.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/freeze.stdout.gz",
+      "sha256": "c153d1e6eedccdb4d2002c2f3a941ad7bb7f04bc63e846f682caf5bf2ce12fcb",
+      "decompressed_sha256": "3c410511e7fa0fec1ab138b2f0ca6499dd6cf97d21a73908821d3337dcf20c21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/freeze_evidence.py.gz",
+      "sha256": "7109f19ee80f3fe7e68ec36b6e1d835c887e6c7a2dc641d4ea7d222066612995",
+      "decompressed_sha256": "27564f1fbdffa486cd875c8ba5595133fa16aa718d83ef99a9685e438360512d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/freeze_receipt.json.gz",
+      "sha256": "fac97b98182cf7793dd67385a13ec75c7428d2dfbdece02e2b6f298ebcbada2f",
+      "decompressed_sha256": "41e516aec74bd86d28702f5c079522f9ba8c91422eb660021190a241de176b72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/predecessor_binding_check.json.gz",
+      "sha256": "2775fca8f255e7a4a7b21b300a69c48e750f1f5fc3d2f0696c0c84504b40e192",
+      "decompressed_sha256": "b26b5dc05f82addb47baab8dc2406e2d5f733cdea2bb81426e215f7de4ce3479"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/projection_algebra.execution.json.gz",
+      "sha256": "3242ea6700ed3b5aae2a36e762459a9e3bff40b3842e41bc179ff24cb38b39b3",
+      "decompressed_sha256": "c0042406da7a28bf7f569c49c029f6d1ab15ecaf6639d0ea5e7ab927fc4eaa43"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/projection_algebra.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/projection_algebra.stdout.gz",
+      "sha256": "3b1811d38797202089f925fe5cd3858fd91f447baad5ee9dc001576572fa72d9",
+      "decompressed_sha256": "deb01acdf66463089b61f6b262619fd97748382e91693f391cdc91995a41f874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/run_with_timeout.py.gz",
+      "sha256": "219ee8ee23ee285304c42744adc33f344db7e013da743aebbf244a077f021056",
+      "decompressed_sha256": "db6fcd00e4b1c01bb0c31cccc7fc47a7bd9cb67d8aa030138122dd493d046c82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/source_ledger.execution.json.gz",
+      "sha256": "c66158432f39370b4634129e48db4bdfe65a6e248735a83166fb479545c24a46",
+      "decompressed_sha256": "b98ec3be1579b295a1c5a5b69b5b3a39d259c1be9295ab25ce62388c275f04a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/source_ledger.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/source_ledger.stdout.gz",
+      "sha256": "50146873a1cd400c7391c55da3f9f19b7e5cc4dd2239172b148c86f84fe522d5",
+      "decompressed_sha256": "30728cef06f8559df23df15beef67e8fc03317d8eee4484de30196f47d0ddef4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/source_ledger_after_pc_review.execution.json.gz",
+      "sha256": "39a26812971305a63bea7608524a05a24257b2d4cd4cd29631ca96faa9e7367c",
+      "decompressed_sha256": "727097922743c2f44b5ca17ad4b8761bdd7afa2ba11a3a00a3628d02ab1081af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/source_ledger_after_pc_review.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/detector_scattering_projection/source_ledger_after_pc_review.stdout.gz",
+      "sha256": "ba7e3c3f1f373c011fa46ec650f90e184bcfdd10e94f189b2002e1dc74440d9f",
+      "decompressed_sha256": "25474292903a2a9665a3191f149ed71ce6266663d189b16fe5a65e7939aecfae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/finish_projection_delivery.py.gz",
+      "sha256": "b5dae06f9ea694fd087bc5a230c3e292f2675d26958bba8884f50ed4b88a823f",
+      "decompressed_sha256": "12d099431159d90f6c3558ec8661fa744a1cbe67ac4574cc88a01d66381b8b0d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/prepare_projection_publication.py.gz",
+      "sha256": "ba0eba81fbc3e4d2c39b918d3a8915802ef5ddea226f211a8a17f2a4cee5777b",
+      "decompressed_sha256": "744941f56b541e3b2570b028e16d264cbe3ad2668961ae256d6020c59f65728b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_canonical_execution.json.gz",
+      "sha256": "31d1f207e9c1988e624f83a1b7e37c2c12d9c2a62594bfc9349be5ecefc85c2c",
+      "decompressed_sha256": "25dc162785fb047a0bb7fbb97b1f1dd2847875b741b8741fd10ac4b5550d94ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_citation_build.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_citation_build.stdout.gz",
+      "sha256": "34e4c2272c3f37388d90f83218cbd81872a0fc610222904e4eda365f17f62197",
+      "decompressed_sha256": "f4dee85143e49a057ff36eaa0581ebeacec9d87899b0ca552c2270f05b8e88ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_citation_execution.json.gz",
+      "sha256": "f60d501c9e2b8f6836bd54161986de33568ad2372fe763f22063db6daeec1b44",
+      "decompressed_sha256": "4673512ca720380833240e44640f63d9e8dbec27558f899f5b475b37b9a78cc2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_citation_manifest.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_citation_manifest.stdout.gz",
+      "sha256": "05eca8744d8bfeceb77d0b43274db44cb33e9560db2daf6184ced80c893060d1",
+      "decompressed_sha256": "e0072d2f00852b9174977399de4ce99eaa927f41c0feeb38bddaf43e7cb4bc1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_delivery_mechanical.json.gz",
+      "sha256": "b279383f495f57ccffbbe97cb04f308a187c4017702fba38f4a39fe9b18d2a59",
+      "decompressed_sha256": "eb1d41f16f02dec96a909037c7527372c1995e8f87f8df08c7e65eb72c3181ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_final_reconstruction.log.gz",
+      "sha256": "a1eec89b513de836b6f5ae2e7a2b3725db5bcf54634175faad90e113b199a538",
+      "decompressed_sha256": "c4f3a8f85e99604f9959ca231c1e804a42cded38fefa51b1b525f1289970d0d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_final_vocab_fix.log.gz",
+      "sha256": "8bfa1e203ce30df20f77887c27c0e7f289f74b750149dfe23d5c2ef8db50a54d",
+      "decompressed_sha256": "dab15c989bebe353364a56e73c5a2161a70b9d4e8038585d2bffb7dba2665850"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_final_vocab_report-only.log.gz",
+      "sha256": "e4a239fdcad77a9885a9743554218d1f636483f191a6bad00b24a4cd0ceba294",
+      "decompressed_sha256": "0576ab68aff936097d8cf0b320264a2cdcd3d24833813c7321a4f69224c9f68a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_focused_audit_compat.execution.json.gz",
+      "sha256": "1647d176dc24edfebe55cf734874109c8316c0aa89988848386a9f977b3ea83a",
+      "decompressed_sha256": "87c4da2d4c3f0a0514474fa85c6705561caf74ef89ca57882e4922bb70196abf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_focused_audit_compat.json.gz",
+      "sha256": "e07cc6c6cd3f0443768ddc04829361e5799f47c328af6d6fa97917ebfe0db21a",
+      "decompressed_sha256": "8183c84afe4d6cf0a66d27dc13e4ff4b718dc4ed358e83c402db9bac74cab90b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_focused_audit_compat.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_initial_reconstruction.log.gz",
+      "sha256": "a1eec89b513de836b6f5ae2e7a2b3725db5bcf54634175faad90e113b199a538",
+      "decompressed_sha256": "c4f3a8f85e99604f9959ca231c1e804a42cded38fefa51b1b525f1289970d0d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_initial_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_initial_vocab_fix.log.gz",
+      "sha256": "010b627c4ae22ad5c0605304d945712ffe4e0ac8e9358738eb58165332750bed",
+      "decompressed_sha256": "00f9407eb1e7c6b8e38380c2ca59c3ac4fb4f3305e5bb5cd02074413661ff41b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/factorable_energy_mask.execution.json.gz",
+      "sha256": "d4f230a59fc845020b689f7493db3953392ac57ba791ceed0140f2de1b4b9c0b",
+      "decompressed_sha256": "6f9a18415e65426a1faafe3838852182a29784a07f1ffc08038bcf628a9fd829"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/factorable_energy_mask.py.gz",
+      "sha256": "1cb3ad601a45795e25d8ad7afcbd93aa0f37a5cb489444f9d22420d48de9fea3",
+      "decompressed_sha256": "cea679266ad7dc94433b0e854414ff0c491ceebbb8085d750b88c7d922122d9c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/factorable_energy_mask.stderr.gz",
+      "sha256": "88057be6067f3ca17c704796b0f022f057b3e61c822ff3cbf56d67c8c8470cfc",
+      "decompressed_sha256": "aaf8d2cb0179532c593d2350bbf3ed0702f7b9fe185c9e9c8d88ebb8bb28d82d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/factorable_energy_mask.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/manifest.json.gz",
+      "sha256": "cf49aaf0249d17ee757be6f16375b0aa0e380febf3a4250f332fd3250fca6d1d",
+      "decompressed_sha256": "3d4a08a5acbcace909d9c3ffa24240a35dc685f59c6a1d2b77d1993d862ca90d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/omit_partition_piece.execution.json.gz",
+      "sha256": "5545848a61164ae89a30b09c80892750841abab7f45b2b18d5cf5defbf917800",
+      "decompressed_sha256": "5ac7062b18d08e008095939b01014ca3c1e78cb3f469ab54cbf241b169de8f97"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/omit_partition_piece.py.gz",
+      "sha256": "717bf98fb862b16328e2a4395eec1d09c27fdd44cfe99f6b2b44519cebb45dd8",
+      "decompressed_sha256": "09fa7bc45929c54cfdcbb139e86aa0dfea3cc4d99e7045f833188803c2e49521"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/omit_partition_piece.stderr.gz",
+      "sha256": "045a19ab95c7de3714f9acbdbe3a5b552a16fb68e15c010c5b41063df892564f",
+      "decompressed_sha256": "240cfef225e20921077ceea6ba8509282c28b25345404cb2bacf2976fce25c49"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/omit_partition_piece.stdout.gz",
+      "sha256": "10bcdb5d9c6901e2b91005de8f0f6e22b80c403d4a1e9a5fbf6db65d13479af3",
+      "decompressed_sha256": "c9e6e748a98866b666c7cade3ff2c49f2517989e2541594c265c863803d2fdb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/scalar_linear_error.execution.json.gz",
+      "sha256": "f4356f9b93473ad5d0c84b5c3c0206258f270615aed4d7b8b1cde4b34a2c939c",
+      "decompressed_sha256": "e6d7597398a45868bcd250f6acf43bedecd5388a4282b3e130f35c07fabf0568"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/scalar_linear_error.py.gz",
+      "sha256": "a1b57e032a7309bbdda6e41dce3ba5e5a9d8b30443e30f317ca038235675a179",
+      "decompressed_sha256": "1107810f761f28d4c40b537a4cf011d0af7d6c31c8c94c2ccb2c5ed0e14cbe19"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/scalar_linear_error.stderr.gz",
+      "sha256": "7a26b5df04e7962c785899d09a041cf57b7706eb4fdbc0a60f02498d0c01ca84",
+      "decompressed_sha256": "67e763e0778ef57cefa0b6ecad3588155cfcab5874b9dadb51b0b4d58e7cd5dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/scalar_linear_error.stdout.gz",
+      "sha256": "3b1811d38797202089f925fe5cd3858fd91f447baad5ee9dc001576572fa72d9",
+      "decompressed_sha256": "deb01acdf66463089b61f6b262619fd97748382e91693f391cdc91995a41f874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/signed_detector_weight.execution.json.gz",
+      "sha256": "b57f5334143da7cab1660cb974977f381400f94b6e7ca8dcb008374071be7534",
+      "decompressed_sha256": "e66436c7a9e4c62664c732296338eae71099f9fb1a4d4df1279319e7bde3de91"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/signed_detector_weight.py.gz",
+      "sha256": "145f894456d3a90cc58eba5d0eec85f4794a7ef9c3513ca7a8a8e3cfbb876dfa",
+      "decompressed_sha256": "829c91db17c4fcb6fca44bf7235726f18e16f5ad416c81d623d0d77cb9de7c19"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/signed_detector_weight.stderr.gz",
+      "sha256": "cf3fd5209a6e09bd8c197b3ea7eea27b53b3ba208e4e41c484d6a1b959f6e192",
+      "decompressed_sha256": "3b33619a71ccca5ebe9ff57df4f573f16d71cc5efd95d260d3c15dd2ffd6c375"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/signed_detector_weight.stdout.gz",
+      "sha256": "b76fef0a55d934a5006f6cd7cc11852ae2e168e12b1251787a304bea89c8bd40",
+      "decompressed_sha256": "fc1bf6ba03504acd5117f55c4c20f9b0a92fcb05ee3cf7136d49259069e4e86c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_linear_error.execution.json.gz",
+      "sha256": "9a857df28db27fbe77c818d3a3975d7c01edc1fc85a049d84e73e7baf6266140",
+      "decompressed_sha256": "fbd8bfb69c5253639b878350b5841dc8c0982ccfbadac60207dfdcd85cf5eeee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_linear_error.py.gz",
+      "sha256": "acb5c172db8eb13547e2b02115f7f098eca78b8e7f611e3289189bb7f0b681b1",
+      "decompressed_sha256": "f52fb627d9115b2b8f9858a16d43e778298eda7e8952b2201fb464d56efe09fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_linear_error.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_linear_error.stdout.gz",
+      "sha256": "fad4963c75c19b82166edb86c203d39474c81b716f3f4b57e0beabf91bb0e9b1",
+      "decompressed_sha256": "f7daf0297965ba28d52c8d9c73536650686c2871d8b152e8f4b0351f3b599827"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_omits_error.execution.json.gz",
+      "sha256": "bb0af19c317fe86179e77896ed08a672b4887b2b345384863d97b6dc83087f59",
+      "decompressed_sha256": "adb238dfa33ac6e45ce76e340bd7b6a1011165ea9f888c77a29b5bbe9ae2afb0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_omits_error.py.gz",
+      "sha256": "a24c555990dc14ef1f7606d70848e58482495c8499a77fe66dd261a2a4d46448",
+      "decompressed_sha256": "652bc0aed42f35eeb46be8dc25e2e59102b24592897774cbcbcef0b5c9345842"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_omits_error.stderr.gz",
+      "sha256": "7c7daa163b1b009fa99ae471ca4ae3b70e39dbbf08fa187ace5ac38c54f34b40",
+      "decompressed_sha256": "26cb1c95d9b9878bf5df39ef936877fe077cf34aabccb46a4b41a3f522c21ff8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/witness_omits_error.stdout.gz",
+      "sha256": "a051b733b9ae19e2bfc935b631ca8d17b0530e5fd6ea208f0507a8996ff6ed33",
+      "decompressed_sha256": "6ebab567c13d8a69ed8ba2fd97209b963de0c8e25b6534a647693321608feb37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_resolvent_order.execution.json.gz",
+      "sha256": "405cb81cdda00d932474007e9edb85892e5c2856a28626d730d52a34f254c574",
+      "decompressed_sha256": "0310792dd647800fbcfaddf374e5d340a6bab9d0ef02acd923731b097a63d753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_resolvent_order.py.gz",
+      "sha256": "2de4daa1c7b692ef1c4af26d3c635fc1787213a8dce4aaf2cc80c1415d0e83be",
+      "decompressed_sha256": "1663a6e34e013f46e35b618e74ab6aec91154935bd17a57aea5b8644271da660"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_resolvent_order.stderr.gz",
+      "sha256": "e5f67fb56d6ab38cfc5d2272d2b81cdb3e225b69b9f9f90123875db70a973e0c",
+      "decompressed_sha256": "06764202cc53b015acc4575c6b2321c6bf6ee6bbeaf9fb77c51dadf9933cd5ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_resolvent_order.stdout.gz",
+      "sha256": "b071eb0df07532b475dfee2b3eb8b99da5e98245ddcdc42599c9505f5694e32d",
+      "decompressed_sha256": "86bd757eb78bc3244dafe9d6672cea580920646401b837e1d64054c5d69e0e3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_temporal_transfer.execution.json.gz",
+      "sha256": "034759c54b62067c70c36304b415230b8cbd483f511f605163bf4e4b9ba5db26",
+      "decompressed_sha256": "ebb2fc3c1235ae16c2ace8880f2e4366a0ceeab5f3b8b707fc3e5df55f7e018f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_temporal_transfer.py.gz",
+      "sha256": "ebb8939792896a6c719f972d0c3841a827710aefae795d7660fb3147bb5fb63e",
+      "decompressed_sha256": "ed0331d90f24dbf5faa6de73895b63a04ffcb0ccf17b1141c4ed12038cb57cb9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_temporal_transfer.stderr.gz",
+      "sha256": "c2ad44ba0d82a7310b89387bdf79ddd62377c82acef51b7b1f2ac9207bab7780",
+      "decompressed_sha256": "0c8a8c5603777750dc6f3a18d62b70e8dde5548a144b6131d8d6e19e5a04df36"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/projection_primary_mutations/wrong_temporal_transfer.stdout.gz",
+      "sha256": "10bcdb5d9c6901e2b91005de8f0f6e22b80c403d4a1e9a5fbf6db65d13479af3",
+      "decompressed_sha256": "c9e6e748a98866b666c7cade3ff2c49f2517989e2541594c265c863803d2fdb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/root_verify_projection_and_leakage.py.gz",
+      "sha256": "2f09165ab79820a59102bb2eb1417a5db3fb4b564821a12892ccc86dea6e53b7",
+      "decompressed_sha256": "88ca520173fa5a132ec3b2c372748b00c2d351ec91572392bea2092b7156503e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/run_projection_citation_compat.py.gz",
+      "sha256": "991670d2fcdcc463c768ea1f033df26d03d387f61b71b935e36f9fbfb520a58b",
+      "decompressed_sha256": "490751ac45ad720aa90ad16b4ec2160bd5278b193c98461c6247ba3c652665eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/evidence/run_projection_primary_mutants.py.gz",
+      "sha256": "6a9da31bd071fcb928c25b9f105eff9831449ec10414790c5a5a9954221366c8",
+      "decompressed_sha256": "bb153f542223d9af516ea5ecd235854da06ffc2c6c0f3f7621343122e0ab122f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-detector-scattering-projection-20261012/reconstruct.py",
+      "sha256": "330f6d2c8527d50c6e228f03bd8cbe039daafa7f8e2522e36e72dd22fa91b1d4"
+    },
+    {
+      "path": "docs/DETECTOR_SCATTERING_PROJECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "000f612a7008454755251b153cc7ac8755dc7a81030024be4057a25141fca497"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "f7c7ef45a4a990ead7e2e8cac49523dd96748f4c15f14ed5b92b4c01a56f297c"
+    },
+    {
+      "path": "logs/runner-cache/detector_scattering_projection_2026_10_12.txt",
+      "sha256": "0b9b8b63f0e6d9dba7412b7540a190cf5ec3e1ff2072d70a966b2f21036219cc"
+    },
+    {
+      "path": "scripts/detector_scattering_projection_2026_10_12.py",
+      "sha256": "b647f6540f147803bb9f2243e58f49d1977a7bc71e9ece93aa7addb2fa9fed3e"
+    }
+  ]
+}

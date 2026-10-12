@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/centre_regularity_to_geometric_2026_10_12.py
+runner_sha256: 85d8741b18a12c1d0fc9293f8a644d48dcaf21e936318aa705ddb842e2f75982
+input_fingerprint_sha256: 17af0b2f807d0086a2e78ffac152eaec56784e6cb43ea2e90c7c47d647d5414c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{"defect": "missing_cross_factor_2", "name": "mutation", "rejected": true, "witness": {"actual": "29/25", "beta": "1", "candidate": "19/25", "m": "1", "p": "2/3", "q": "3/5"}}
+{"defect": "missing_beta", "name": "mutation", "rejected": true, "witness": {"actual": "15/256", "beta": "7/4", "candidate": "15/448", "m": "3/2", "p": "-2/7", "q": "5/8"}}
+{"cases": 3, "identity_verified": true, "name": "exact_endpoint_polynomial"}
+{"cases": 8, "name": "exact_exponent_balance", "twice_a": [1, 2, 3, 7]}
+{"cases": 4, "name": "exact_direction_selector", "orthogonal_and_maps_e1_to_u": true, "scope": "finite algebra; Borel dependence proved by explicit formula in note"}
+{"cases": 3, "max_endpoint_error": "2.71521E-70", "name": "direct_energy_bisection", "precision_digits": 75, "tolerance": "1e-60"}
+{"H1_scaled_squared": "1.32812500", "a": "1", "multiplicity_norm_squared": "1", "name": "central_rate_and_multiplicity", "near_thresholds": [{"C2r2": "0.015625", "norm_squared": "0.00390625", "radius": "0.125"}, {"C2r2": "0.0625", "norm_squared": "0.01953125", "radius": "0.25"}, {"C2r2": "0.25", "norm_squared": "0.08203125", "radius": "0.5"}, {"C2r2": "1", "norm_squared": "0.33203125", "radius": "1"}], "residual_norm_squared": "0.33203125", "target_atom_weight": "1/4 (excluded from residual)"}
+{"actual_band_squared": "0.0288997616840891767222211379284608443200036062372591390551077201880370115405", "actual_far_squared": "0.0163989461227338912636689603974961273931446252578520238686095072216306502379", "affine_bound_squared": "0.293325369428650158672366219506962537867136669125819826612834830798655705937", "epsilon": "0.01", "far_bound_squared": "0.489285433413176346080132720084818146660885843722258635760623792248539152997", "hessian_bound_squared": "0.857688583277215006658115003442798868852611655466076902686269941706262750548", "name": "finite_band", "near_full_mass_squared": "0.08203125", "radius": "0.606962231002917232240414126454959114719638916847540709253127261863842270435"}
+{"actual_band_squared": "0.00300296367635235731144535753283681136652708108833871408839851627975377480618", "actual_far_squared": "0.00244320507488002596235791592241408370658722878400256298821954136945476491964", "affine_bound_squared": "0.0631950351363501686181555204659756080493689152584180385367766329652645273268", "epsilon": "0.001", "far_bound_squared": "0.105413351107263246370230452607926720416622603805849613932581476371205783576", "hessian_bound_squared": "0.184783403705673220107815734571542133436197270200842264422995764462466608858", "name": "finite_band", "near_full_mass_squared": "0.01953125", "radius": "0.281726911384784065923909030782437823372531239409322614807886242908777441926"}
+{"actual_band_squared": "0.000301461828974767918802354957155898494462245895615606110817143641343756716397", "actual_far_squared": "0.000282705338698650436335043130984021835964749082894680551152619632947611986354", "affine_bound_squared": "0.0136149575935536576175159786456422029375326342696891711303738579062753601009", "epsilon": "0.0001", "far_bound_squared": "0.0227106180417998818898459772134731420841851069368999482144598820519945551941", "hessian_bound_squared": "0.0398103775085668517833770659389117431828656580423304974582884991264375143991", "name": "finite_band", "near_full_mass_squared": "0.00390625", "radius": "0.130766048601183059122923169434020312516178454932358981107536895974246982913"}
+{"actual_band_squared": "0.0000301578751720322978285748133314963997095632043259672164476726786195866384972", "actual_far_squared": "0.0000301578751720322978285748133314963997095632043259672164476726786195866384972", "affine_bound_squared": "0.00293325369428650158672366219506962537867136669125819826612834830798655705937", "epsilon": "0.00001", "far_bound_squared": "0.00489285433413176346080132720084818146660885843722258635760623792248539152995", "hessian_bound_squared": "0.00857688583277215006658115003442798868852611655466076902686269941706262750546", "name": "finite_band", "near_full_mass_squared": "0", "radius": "0.0606962231002917232240414126454959114719638916847540709253127261863842270436"}
+{"continuous_tent_singleton_mass": "0 analytically", "finite_grid_atom_would_violate_joint_dp_measure": true, "name": "zero_detuning", "pointwise_crossing": true}
+{"actual_directional_derivative": "0.000856016257714704632431592792473081198989938707957367311891775671030187229", "correct_lower_bound": "0.000742096279037037138820942881170674352381905376265419331308593294447912537998", "defect": "upper_hessian_beta_over_M_as_uniform_lower_bound", "mutant_lower_bound": "1", "name": "mutation", "rejected": true}
+{"L2_norm_squared": "1", "actual_sup_squared": "1", "defect": "halve_sharp_whole_line_Sobolev_constant", "derivative_L2_norm_squared": "1", "mutant_bound": "1/2", "name": "mutation", "rejected": true}
+{"actual_fprime_over_f": "-0.249999999999999999999999999999999999999996093750000000188710869808309076536", "defect": "omit_invariant_measure_derivative", "exact_limit": "-1/4", "finite_difference_step": "1e-20", "limit_tolerance": "1e-35", "mutant_fprime_over_f": "0", "name": "mutation", "rejected": true}
+{"defect": "replace_joint_dp_dnu_by_smooth_p_marginal", "name": "mutation", "rejected": true, "scope": "spectral measure, not microscopic model", "witness": "theta=-2p on 1/4<p<1/3; D=0 identically, target theta0=0 absent from this component"}
+{"defect": "omit_exact_mass_filter", "name": "mutation", "offmass_Casimir_interval": "[5/2,3]", "rejected": true, "target_Casimir": "4", "witness": "m(p)^2=3-2p, theta=1, 0<p<1/4; off-mass energies equal target M=2,theta0=0 graph"}
+{"computed_squared_energy_difference": 39.47841760435743, "defect": "identify_different_integer_lifts_at_target_atom", "exact_squared_energy_difference": "4*pi^2 > 36 (analytic)", "mutant_difference": "0", "name": "mutation", "rejected": true}
+{"N": 8, "exact_infinite_tail": "1/8", "missing_H1_epsilon_log": -63.30685281944005, "missing_central_rate_epsilon_log": -8, "name": "analytic_tail_control", "scope": "finite telescoping identity; infinite-tail proof in note"}
+{"N": 32, "exact_infinite_tail": "1/32", "missing_H1_epsilon_log": -1023.3068528194401, "missing_central_rate_epsilon_log": -32, "name": "analytic_tail_control", "scope": "finite telescoping identity; infinite-tail proof in note"}
+{"N": 128, "exact_infinite_tail": "1/128", "missing_H1_epsilon_log": -16383.30685281944, "missing_central_rate_epsilon_log": -128, "name": "analytic_tail_control", "scope": "finite telescoping identity; infinite-tail proof in note"}
+per_element: exact squared-energy and scale identities checked; no empirical inputs.
+per_site: checked and not executed — no local lattice-site realization is supplied by this spectral control.
+per_mode: finite central atoms and explicit continuous momentum tents checked with all multiplicity norm factors.
+per_block: analytic conditional shell bound is compared to original-energy endpoints, not certified by finite sampling.
+lattice_wide: checked and not executed — no infinite lattice model, locality realization, or exhaustion theorem is tested.
+{"baseline_failures": 0, "name": "completed", "scope": "author analytic/finite control only; no independent source-review or audit verdict"}
+TOTAL: PASS=1 FAIL=0
+SCOPE: One completed assertion-guarded finite author driver; the tent upper-bound gates remain nondiscriminating for two documented mutants, and no general proof is numerical.
+
+----- stderr -----
+

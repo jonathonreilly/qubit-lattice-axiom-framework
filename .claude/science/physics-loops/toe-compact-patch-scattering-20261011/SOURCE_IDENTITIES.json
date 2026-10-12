@@ -1,0 +1,838 @@
+{
+  "base_revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "scope": "Every intended publication file except this manifest itself.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/APPROACH_REGISTRY.md",
+      "sha256": "7cfa4a877509210d546128d967446f0fff318bedd7a1de7810750762a4470138"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/ARTIFACT_PLAN.md",
+      "sha256": "c708de385de366105e3fa5164f3c157d1eac266c94a02fc7bc67c60e74b94b31"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "0e4d98e671359fc9f1918f9fa2e14cf14da032c8e5bc514c5308f0ece00503e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "fa6c23b32fcd555d79a386b5ceb271b6c07ad42a232376695c676c7f35a269e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/DELIVERY_CHECKS.md",
+      "sha256": "28d0cfdc076b0187b7931bcddc294e85ec81b030b9e57cf08bd093787a8df9dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/EVIDENCE_MAP.json",
+      "sha256": "135833959fe3c53ea9e554f8a598e985391199e1c5bb22aa13adf885c44c9d56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/GOAL.md",
+      "sha256": "6f75410d308b49aa891efb288bc856594a795248356fffca2f696107d5958f58"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/HANDOFF.md",
+      "sha256": "99568e18f89240733b69c1bfd7d8e25a8f4b8686fa6e7f48e4e184b8446623df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/LITERATURE_BRIDGES.md",
+      "sha256": "e36247a5aff783521f9d4a1f82d2a54cc2aae6d1427977eb100978302578952d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/NO_GO_LEDGER.md",
+      "sha256": "0d8e0350837375a43d8881aedb34ba348939bb45503b5fea5fe9a5144a19cb76"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/OPPORTUNITY_QUEUE.md",
+      "sha256": "fa2d3d89ce1c8e72a1353ad059459a2f03a2b2f153f951896e08aeb2bf174868"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/PR_BACKLOG.md",
+      "sha256": "3ce2a9eaff52c334bf7cb51b75e416bb45f02683c98d64bdc95a939d362e1fae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/PUBLICATION_EDITS.json",
+      "sha256": "494724774d734bf1d03dbb06d47f9eab47156d6a0cfabe29d0693a2f686dd043"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/REVIEW_HISTORY.md",
+      "sha256": "edc19b88429d06f1942b204d68c75a316d84875d7bbd8c121a992f7f8082790f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "fa2065c36c19f7081940cb8eb0577240943416ade44641c4a829b3b336f20925"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/ROUTE_PORTFOLIO.md",
+      "sha256": "b8f8fb73317d3f3b03abdf365e038106803ba7b470932401b7ddab46581b0bb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/STATE.yaml",
+      "sha256": "2e95552f6eb3532ea9d8071fd2f19520de9ceb2633d694c998035940df30b546"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/TRACE_GATE.md",
+      "sha256": "a9dccba2832ab8d04ffb2a71e3efdf959a431ba59be79240a466c12dff60b8f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz",
+      "sha256": "ddd593920aa50ba5f6633a4297665227406712d41860f288d74ab481f8aa0ff7",
+      "decompressed_sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/SC_review_root_final_identity_check.json.gz",
+      "sha256": "ddb2c00a42e652f27255c45af1156c8fd2eceeafde691686ef06e46421b235e7",
+      "decompressed_sha256": "fa82043f7c7a1078a8af1e78121ec2ad0fbb33865ed091959b97ee531092b907"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "15741a0b06ac6d77265ff306b58b4d2f6e423b1257e838fc268e5abfb78802a6",
+      "decompressed_sha256": "89f8b1675f1434d6fa5522556e29b517e5e065b1d6d555653f239d8c76f5ee1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/CHECKPOINT.md.gz",
+      "sha256": "189e7b32d8050fe4095143b2c86f2edd9ddc0275e925b89b59d33641b715328a",
+      "decompressed_sha256": "508a9922293a414a54fb034f4fecf533d4e4deaec212ad78aad0efe2f533823d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "eb99d87dec43f96eabcc4b4c220b7c27cb5294c5f8d9a8b4f41e0ea92ca4cb4f",
+      "decompressed_sha256": "f8b01db6ce404b8c121c9aa62608bb6a97e79d6b0bfd1fa09acac7fa4ac3282e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/FROZEN_INPUT_RECHECK.json.gz",
+      "sha256": "17c0637db7e674789a716b97e0885d5c14e4949ab2f6b236cffa5f577b9b03f9",
+      "decompressed_sha256": "1ca8ab366ef0eca6c7ecb962bbd834c028325f7a85bf942031d294b940ed0657"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/LITERATURE_BRIDGES.md.gz",
+      "sha256": "ad0c129eb897578e2ca97f45b62dba005b7edd9adac73458d151727d3a1abfd4",
+      "decompressed_sha256": "32c92290bd1ebb861f91c59012238382de87c9ec2ea4b23db0a471ea308e0e6b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/READING_COVERAGE.json.gz",
+      "sha256": "8d31c4e719525dfcbb04da746d1506c452b3dad2bf46470a8f783b5ab3ff70e4",
+      "decompressed_sha256": "99849db00117b08ac3a2f88965bf3a35bad8d77cdb351b7f06714f2155e97157"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/SOURCE_IDENTITIES.json.gz",
+      "sha256": "e7dc62b1b0a4b1d9aed2d04f883a509f1e1eb689dcdfb2fbf614403ee624092e",
+      "decompressed_sha256": "13b2b94e5ccdbd34cbc10db7cacc269d7265b638f1fa710b64989944b21f8ced"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/TRACE_GATE.md.gz",
+      "sha256": "f7cf8c32d77ad4184a2d989fc1cb3853e7ab91e9eb5f25110c58f64c46b32cb6",
+      "decompressed_sha256": "d04466d887b27e7e4271fafe1cceb0b1850e175a4c989061f64216bf311d4c64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/check_clock_and_product.py.gz",
+      "sha256": "13d2a3897b5ec8436a25757a5d2e0147c3e82c1f69c77d07d5fc94e46ea98909",
+      "decompressed_sha256": "57855b43dbaf43e7bdcb6ef60bcf6e1c56b05b23ff0368c61bbab37a834135f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/clock_and_product.execution.json.gz",
+      "sha256": "77dd0bd8a07f587d5b8d67c80e6cd319df83319210d65a9d5e10020cb7bcf649",
+      "decompressed_sha256": "243333472cab32febc56757a75a3bc38e1fa9902f341ca4470a8c883ee0082c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/clock_and_product.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/clock_and_product.stdout.jsonl.gz",
+      "sha256": "0ed7f8c3053d1b77523f5bf3689c2969e7625ce4d9b7b2d7df146e9a0762998f",
+      "decompressed_sha256": "c48ffb468ad5bcbb30f331fbb6d7270045e63c36e376d8a71f7f3980aad40949"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/diffs/COVARIANCE_SCOPE_CHANGE.json.gz",
+      "sha256": "27a6e9e927adc601f01f48492131541c13f7934ff3c9e18d5b264fe269157695",
+      "decompressed_sha256": "0e76325880d2c27ca8b89e466008e392420f7e1d148b00fe291d4341049f2fcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/diffs/covariance_admissible_class.patch.gz",
+      "sha256": "dd3b9d29899d56703246271e0d8f1dfb750a326437042f19dd4436ee4377ca20",
+      "decompressed_sha256": "27f9669e9bf1443252677b143be24ed36e86d3acef78d0a31ba7af32e1908c41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/diffs/probe_before_covariance_scope.md.gz",
+      "sha256": "6e710c81766d8e06d0ed08e21baa7b1faf2ba558a43c271b06545fd95903fd7e",
+      "decompressed_sha256": "ac2216618322e01275905b6ff520b724a7920879f329ddf69ed031281f9586a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/CLAIM_STATUS.md.gz",
+      "sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5",
+      "decompressed_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/DELIVERY.md.gz",
+      "sha256": "50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0",
+      "decompressed_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/DISCOVERY.md.gz",
+      "sha256": "4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4",
+      "decompressed_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/SKILL.md.gz",
+      "sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d",
+      "decompressed_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/instructions/literature-bridge-protocol.md.gz",
+      "sha256": "aa434496d1d2a90db74de286fe5fc0b5c596a41e4420c54752822fa7d839159c",
+      "decompressed_sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_search_1.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_search_1.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_search_2.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_search_2.stdout.txt.gz",
+      "sha256": "8fc7886a1ba338ad482ddf84ca07991495f7ae404c2b92763aca6f62abf18a0e",
+      "decompressed_sha256": "6a639f25d38c4aff3da5f0c42ea6da95de66b628439166942becd701338ef874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_search_3.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_search_3.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/prior_art_searches.json.gz",
+      "sha256": "8536e995eae482d902a8a49048057525dbf90070141ce9448f11b67b1e9ff780",
+      "decompressed_sha256": "0033ab4f733a1ab3fb98e2b57d91d7dcccf14cfcc71e3954e557f4919b9f510d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/receipt.json.gz",
+      "sha256": "38c31478c5f65fb368685e810ed88a5d32821e15b667113321172a2fc58c71d6",
+      "decompressed_sha256": "23a9f9aa165a1b88183b07ab7f5234c5b3294bbfdbd526a3fd475f5752bf3059"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/sources/BDN_download.json.gz",
+      "sha256": "6c33d61462f0c7fca3bd3b979b8a16c0f4ff53ce886ef1d72e54cc4fbfcbbb0a",
+      "decompressed_sha256": "3e539454cb08e34ad92eab6a67194ae747b1c210e3f39829e3eeceb5c0969202"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/sources/C4_B1_report.md.gz",
+      "sha256": "80b39136d3f96dd60f2fa2fdf1b57bceca36ab4194dc0cbef8230874eed63fcc",
+      "decompressed_sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/sources/C4_M1_report.md.gz",
+      "sha256": "86c1474800adddfd16fea66a3440bf54422d0b4d450a9f1ea3cabe6cbdda1a30",
+      "decompressed_sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_patch_scattering_root_check.json.gz",
+      "sha256": "35894f72c18eb27e4aeb121bb866a1e329c089195e818cbfc55954596d4bf030",
+      "decompressed_sha256": "f88e5defbb4e8a54e21d48ba960ffa0be3ceba9e1776cc0b6f14fbd156a8bde0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/CHECKPOINT.md.gz",
+      "sha256": "6ef659c536ef006de008db2935907f274858a7c6d0a84a43c098eb899fa69030",
+      "decompressed_sha256": "fa0549b17ded21ae1cd7d552f2ac15ad0d3879b06d334ba3c43326fae878476f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/EX_BOUNDARY_CHECK.md.gz",
+      "sha256": "f327fa2d6a0f43e314441490052c4a0b5fbb95831cbfda0ed0c8634c1002559d",
+      "decompressed_sha256": "2545ddd166e6d11e5ce5911c44272aa383b71049a51bd1acb0a608cde2e3ec5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/EX_REPAIR_REVIEW_ADDENDUM.md.gz",
+      "sha256": "663bd61091a158a8a9fd50927674e7da9c38c671715cf7d47f467503e73457a7",
+      "decompressed_sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/RECONSTRUCTION.md.gz",
+      "sha256": "e9aa83c2b1f4951b700472f52c533a1fe7981ac79828a22da6a3746fc28d7261",
+      "decompressed_sha256": "6bf05b705a3bfda8f2469aa86fff6bd13d3e0827495ce8ea2408f61c91ee4fcc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_artifact_binding.json.gz",
+      "sha256": "ee1f2c77ff1afbc053caff8d98510116453e00f48f3ba7ef77272d685429600a",
+      "decompressed_sha256": "b532d167c8c87756abbf152de531c1a1000d8b8e773e5a0312549988378de243"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "15741a0b06ac6d77265ff306b58b4d2f6e423b1257e838fc268e5abfb78802a6",
+      "decompressed_sha256": "89f8b1675f1434d6fa5522556e29b517e5e065b1d6d555653f239d8c76f5ee1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/CHECKPOINT.md.gz",
+      "sha256": "189e7b32d8050fe4095143b2c86f2edd9ddc0275e925b89b59d33641b715328a",
+      "decompressed_sha256": "508a9922293a414a54fb034f4fecf533d4e4deaec212ad78aad0efe2f533823d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "eb99d87dec43f96eabcc4b4c220b7c27cb5294c5f8d9a8b4f41e0ea92ca4cb4f",
+      "decompressed_sha256": "f8b01db6ce404b8c121c9aa62608bb6a97e79d6b0bfd1fa09acac7fa4ac3282e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/FROZEN_INPUT_RECHECK.json.gz",
+      "sha256": "17c0637db7e674789a716b97e0885d5c14e4949ab2f6b236cffa5f577b9b03f9",
+      "decompressed_sha256": "1ca8ab366ef0eca6c7ecb962bbd834c028325f7a85bf942031d294b940ed0657"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/LITERATURE_BRIDGES.md.gz",
+      "sha256": "ad0c129eb897578e2ca97f45b62dba005b7edd9adac73458d151727d3a1abfd4",
+      "decompressed_sha256": "32c92290bd1ebb861f91c59012238382de87c9ec2ea4b23db0a471ea308e0e6b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/READING_COVERAGE.json.gz",
+      "sha256": "8d31c4e719525dfcbb04da746d1506c452b3dad2bf46470a8f783b5ab3ff70e4",
+      "decompressed_sha256": "99849db00117b08ac3a2f88965bf3a35bad8d77cdb351b7f06714f2155e97157"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/SOURCE_IDENTITIES.json.gz",
+      "sha256": "e7dc62b1b0a4b1d9aed2d04f883a509f1e1eb689dcdfb2fbf614403ee624092e",
+      "decompressed_sha256": "13b2b94e5ccdbd34cbc10db7cacc269d7265b638f1fa710b64989944b21f8ced"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/TRACE_GATE.md.gz",
+      "sha256": "f7cf8c32d77ad4184a2d989fc1cb3853e7ab91e9eb5f25110c58f64c46b32cb6",
+      "decompressed_sha256": "d04466d887b27e7e4271fafe1cceb0b1850e175a4c989061f64216bf311d4c64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/check_clock_and_product.py.gz",
+      "sha256": "13d2a3897b5ec8436a25757a5d2e0147c3e82c1f69c77d07d5fc94e46ea98909",
+      "decompressed_sha256": "57855b43dbaf43e7bdcb6ef60bcf6e1c56b05b23ff0368c61bbab37a834135f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/clock_and_product.execution.json.gz",
+      "sha256": "77dd0bd8a07f587d5b8d67c80e6cd319df83319210d65a9d5e10020cb7bcf649",
+      "decompressed_sha256": "243333472cab32febc56757a75a3bc38e1fa9902f341ca4470a8c883ee0082c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/clock_and_product.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/clock_and_product.stdout.jsonl.gz",
+      "sha256": "0ed7f8c3053d1b77523f5bf3689c2969e7625ce4d9b7b2d7df146e9a0762998f",
+      "decompressed_sha256": "c48ffb468ad5bcbb30f331fbb6d7270045e63c36e376d8a71f7f3980aad40949"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/diffs/COVARIANCE_SCOPE_CHANGE.json.gz",
+      "sha256": "27a6e9e927adc601f01f48492131541c13f7934ff3c9e18d5b264fe269157695",
+      "decompressed_sha256": "0e76325880d2c27ca8b89e466008e392420f7e1d148b00fe291d4341049f2fcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/diffs/covariance_admissible_class.patch.gz",
+      "sha256": "dd3b9d29899d56703246271e0d8f1dfb750a326437042f19dd4436ee4377ca20",
+      "decompressed_sha256": "27f9669e9bf1443252677b143be24ed36e86d3acef78d0a31ba7af32e1908c41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/diffs/probe_before_covariance_scope.md.gz",
+      "sha256": "6e710c81766d8e06d0ed08e21baa7b1faf2ba558a43c271b06545fd95903fd7e",
+      "decompressed_sha256": "ac2216618322e01275905b6ff520b724a7920879f329ddf69ed031281f9586a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/CLAIM_STATUS.md.gz",
+      "sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5",
+      "decompressed_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/DELIVERY.md.gz",
+      "sha256": "50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0",
+      "decompressed_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/DISCOVERY.md.gz",
+      "sha256": "4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4",
+      "decompressed_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/SKILL.md.gz",
+      "sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d",
+      "decompressed_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/instructions/literature-bridge-protocol.md.gz",
+      "sha256": "aa434496d1d2a90db74de286fe5fc0b5c596a41e4420c54752822fa7d839159c",
+      "decompressed_sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_search_1.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_search_1.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_search_2.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_search_2.stdout.txt.gz",
+      "sha256": "8fc7886a1ba338ad482ddf84ca07991495f7ae404c2b92763aca6f62abf18a0e",
+      "decompressed_sha256": "6a639f25d38c4aff3da5f0c42ea6da95de66b628439166942becd701338ef874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_search_3.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_search_3.stdout.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/prior_art_searches.json.gz",
+      "sha256": "8536e995eae482d902a8a49048057525dbf90070141ce9448f11b67b1e9ff780",
+      "decompressed_sha256": "0033ab4f733a1ab3fb98e2b57d91d7dcccf14cfcc71e3954e557f4919b9f510d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_evidence/receipt.json.gz",
+      "sha256": "38c31478c5f65fb368685e810ed88a5d32821e15b667113321172a2fc58c71d6",
+      "decompressed_sha256": "23a9f9aa165a1b88183b07ab7f5234c5b3294bbfdbd526a3fd475f5752bf3059"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_rerun.execution.json.gz",
+      "sha256": "bb08ced1a168e552081082fd1d882ff73075b45ff8f6e26a616619968b7cfc9b",
+      "decompressed_sha256": "cf27ca236751213ac2cf326ee6a50b0acdfbd1c79320b00401dc0386d25724c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_rerun.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/author_rerun.stdout.jsonl.gz",
+      "sha256": "0ed7f8c3053d1b77523f5bf3689c2969e7625ce4d9b7b2d7df146e9a0762998f",
+      "decompressed_sha256": "c48ffb468ad5bcbb30f331fbb6d7270045e63c36e376d8a71f7f3980aad40949"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/bdn_text_binding.json.gz",
+      "sha256": "45d82e43e7a6495dab82d09468340272c0254e7e7d42a9272ee3c667f541d6c8",
+      "decompressed_sha256": "ae8ee9bd10798a5d1a32586a2f94c0d9104d9ed36c88b6692abcebee88d5856d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/ex_repair_review_receipt.json.gz",
+      "sha256": "8d5d1af1fedbb5741a36f6f36702df3e0251f55be8854fc3c9c021a58cc84af0",
+      "decompressed_sha256": "60f4ed56f8818136e38fc7b282a978091bb52d0edfc520740310993b3db3b7c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/final_source_recheck.json.gz",
+      "sha256": "854918d3302ba43a794a4ccd0501bc377a25beacaaec93e162823ab679427233",
+      "decompressed_sha256": "abd8072e31b8dfbc7b068030ba58dd95d5e31a394139c9909888143f8813d65b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/frozen/C4_B1_report.md.gz",
+      "sha256": "80b39136d3f96dd60f2fa2fdf1b57bceca36ab4194dc0cbef8230874eed63fcc",
+      "decompressed_sha256": "95044a142cf94ad397c5f7b2bdf806905d2f40bb166fb8d5920fb5daf54a7a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/frozen/C4_M1_report.md.gz",
+      "sha256": "86c1474800adddfd16fea66a3440bf54422d0b4d450a9f1ea3cabe6cbdda1a30",
+      "decompressed_sha256": "fb2d6b5f54fcff8680219dce5f903d6620e5f987d4f093462502dc3e600b1b2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/frozen/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/frozen/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/frozen/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/frozen/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/initial_sources.json.gz",
+      "sha256": "62cd0daf973aff524d6fc3c4d8bab883b053a837b137dc0e71e239dcd9501680",
+      "decompressed_sha256": "1e6136d65c0d87d651a9efe2a2e98a426329848033c94c3e75b87a9c2993f003"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/CLAUDE.md.gz",
+      "sha256": "ab5fdadbc65d26d4f417152ca8cdeff92916faef3b70414dcfa927fda22faa7f",
+      "decompressed_sha256": "254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/docs__ai_methodology__SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/docs__ai_methodology__skills__SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/docs__ai_methodology__skills__physics-claim-reviewer__SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/docs__ai_methodology__skills__physics-loop__references__proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/docs__ai_methodology__skills__review-loop__SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/instructions/planning_AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/receipt.json.gz",
+      "sha256": "8a0f49ceb58b3467f6c73ee80d30fe0dca3dad76757d4888405437cc002b371c",
+      "decompressed_sha256": "4664463d5fd978e9d3026660b563f25c5628e46f43a10340169306d474d809aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/compact_scattering_review/reconstruction_freeze.json.gz",
+      "sha256": "d94cbeea78868d20fd2b471ab2c6ee98c36ebdd7eb04ab0ccc4bf281cb101b2a",
+      "decompressed_sha256": "b30b1f30950ec66a3e9e738aa403b8b45003e11af2e4b3caa1e975990a703870"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/finish_scattering_delivery.py.gz",
+      "sha256": "3dfbc950071e8cf64c57509e1417370e0cac3873c2bcb001747b7a1d9116debb",
+      "decompressed_sha256": "15dd8b3ced024675478e9baaee836c267c1f6cdafe9ea2d475d123fb5313333e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/prepare_scattering_publication.py.gz",
+      "sha256": "619edce2865dd36b0f8e05a3d5fc01228b9ba78f53db8084251363c8dce824fa",
+      "decompressed_sha256": "20ce7e47e81291e6edd0c71f8b706543a715e4b1b08aed8146d12f93ba47a9b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/run_scattering_primary_mutants.py.gz",
+      "sha256": "cd14c1f68509d6eee4748a0970f50a7e612bde444ed8729cc351eebc91911227",
+      "decompressed_sha256": "86f7992b5c5863e3b295b54424ec49ceee2f2a59524485ae9bf8e8ab8e18aba3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_canonical_execution.json.gz",
+      "sha256": "3e905b39cac30fcf589ad1440df8947b0e139b27892f8e0f3774ddbf3a94f7f0",
+      "decompressed_sha256": "323a42dbc36531d62e596234e4f33d6a6f28cc712b879ba1f0af43f401986883"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_citation_execution.json.gz",
+      "sha256": "488f437c909de824228fbcd339aa041dd7ae5cc52b5b2dd070ce34158d69dc0a",
+      "decompressed_sha256": "c1cdaeaaa0fc1e1eacb7ca790ccbd92c974a6a66f7ca174f6ccd7f819d5b9bdf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_delivery_mechanical.json.gz",
+      "sha256": "164b2a81dce5e56f8771771a22298717304018dd98fd60c672a8477d4e019ad1",
+      "decompressed_sha256": "5619ea13e1a38679068dc28b3100371ad388c77f8e707b3947678ca1611bcb09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_final_reconstruction.log.gz",
+      "sha256": "b9bc5aa6a986e174ad1a1e0496a5fa7642f7724bb78d53c81aa63c1ddc50eaaa",
+      "decompressed_sha256": "6b704399ad160efea168dd07bbb1a23a565e05578f2ec2cbf9899fd6e5e42dbc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_final_vocab_fix.log.gz",
+      "sha256": "d1fbe0cb4283811db2f01ad42401467a5d661c4b038ab5b48d512ef02746f9c0",
+      "decompressed_sha256": "5a41214fa58d77fcfc3b5da0fc30cab93fc25356eb9bc9eee49668309f877d0d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_final_vocab_report-only.log.gz",
+      "sha256": "6381bf0ba0743c85bc4e1bcc58561a7c995374e10925d39880f811281bd68110",
+      "decompressed_sha256": "90cc42c9e5af2798fe69d1c27194739dc3c90d67536d60c38c02b923b165c495"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_focused_audit_compat.json.gz",
+      "sha256": "70570d12fb621a8c74f6433c30a109587f4d1a5db1f0b0e9c16ae3ecd08fb5b1",
+      "decompressed_sha256": "ccd684fe9a58bcea56531950354238eccf442512f9f80d57c60b8b5ae71894e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_focused_audit_compat.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_initial_reconstruction.log.gz",
+      "sha256": "b9bc5aa6a986e174ad1a1e0496a5fa7642f7724bb78d53c81aa63c1ddc50eaaa",
+      "decompressed_sha256": "6b704399ad160efea168dd07bbb1a23a565e05578f2ec2cbf9899fd6e5e42dbc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_initial_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_initial_vocab_fix.log.gz",
+      "sha256": "6a2f564fe4dfae3f369571ea64281b5000355423647935759b0626edadd461b9",
+      "decompressed_sha256": "6ba0b01f59832d4ffb63fea5e498b3029d5b6755f4ef8e31f7d16db82c39abef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/character_weight.execution.json.gz",
+      "sha256": "698d4ccb60baf7d13641ec886d744daf8376556fa3ae1559040c26b39850984a",
+      "decompressed_sha256": "97cb602b7938514c033fee9f11c22a0725a6426c059e2b0e71d95abc1f1a22cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/character_weight.py.gz",
+      "sha256": "72bb9f887dfef3623f99da8a572e8b387ccb5cce71cd25233ae221560ae76967",
+      "decompressed_sha256": "51275e317a360a15d10df5134477ae998ea45e0abe1efde87d1d4883c9e589b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/character_weight.stderr.gz",
+      "sha256": "f1eb576df1659ef1f058365dfbf2e3e3df0248fbac3f5551f1e77a9978bdec25",
+      "decompressed_sha256": "93ad32e195979b40d6cd11edb0a058f29f0e2a0016dd7186f5239a17f9cf660b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/character_weight.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_commutator_sign.execution.json.gz",
+      "sha256": "dc195a60970d0d63538c50f8c4bdb5084dd5abfe0223e981a9b8dc558e272a2f",
+      "decompressed_sha256": "ca9915f3df21a039079162668d77444537a16fc3deaee5ffcef1eb86f0e112f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_commutator_sign.py.gz",
+      "sha256": "d330d3f53a1528820fdc36dc80c249351b313493b94d735df3b8ffe33bd50872",
+      "decompressed_sha256": "a8846dcfab4b6efafe70f51a9cbf3a8e5503f863aeb084c2d068cd18e3754589"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_commutator_sign.stderr.gz",
+      "sha256": "7a9f7304bf396ff6e1c24577da55fc445176edec392522ca0c7ab5c543c75bcc",
+      "decompressed_sha256": "88eb8b49e30c79ce2f524e42e8d559cdd953036460bf9cb4063982ae476ce125"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_commutator_sign.stdout.gz",
+      "sha256": "b05076bc2e936088a0bff3e7cbb417066c74f840557b7ed80d744823688df068",
+      "decompressed_sha256": "3f484f239cb55a99d32c988b324ab4ec2fffc5a98a4191705b1aa54669bb2e01"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_missing_pair.execution.json.gz",
+      "sha256": "1ef08a7b08d70d049be34fb61010a6b61590d9965d6e8417d35f389cc735da1e",
+      "decompressed_sha256": "28291f63aafa33c76694d8895d0b4fe142c34fdb14f480eb2a5957f888b0b153"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_missing_pair.py.gz",
+      "sha256": "aa8002d23382ca54cd1f772d1feb2c13c2c26186d6ce60b34d395d472ee29aa4",
+      "decompressed_sha256": "6e900b8ab58ecedb0b33b4fcf1da0826887d0e047dcd9af79c5d7bb42e33e0ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_missing_pair.stderr.gz",
+      "sha256": "2faeca80312ff10a184eb88fc7becbb04dbcd69acaa52c7821fe63ada3061d3c",
+      "decompressed_sha256": "a35ba84200afeb808440da1298008bc743f7450f0227481ded6469019e7b6914"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_missing_pair.stdout.gz",
+      "sha256": "b05076bc2e936088a0bff3e7cbb417066c74f840557b7ed80d744823688df068",
+      "decompressed_sha256": "3f484f239cb55a99d32c988b324ab4ec2fffc5a98a4191705b1aa54669bb2e01"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_power_loss.execution.json.gz",
+      "sha256": "be2fc076a34cfd449b82b82b4d61c02f429d94fba931c0d6015d2ec581d3ebcb",
+      "decompressed_sha256": "399493b3d05111969048ec45ffd7c6acf712c3d438515e20b9884be4330a8491"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_power_loss.py.gz",
+      "sha256": "2e250f89d9e8ba84c18ec01e5ca39da3d502ae96b86dc8de93a134b9efecf75c",
+      "decompressed_sha256": "995290208684fc979b21f09c20f938074569e2ad4e12e00bbe23f6e7d66b4342"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_power_loss.stderr.gz",
+      "sha256": "c4c5d3a08e1a931a2873797c2cd56d0010e7de74f7c150788ccb98ba87c3eff1",
+      "decompressed_sha256": "edf05c92722d47e76997e1f937e60ad118dbda2e0b8a6ab8fa8dca802b873757"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/cook_power_loss.stdout.gz",
+      "sha256": "8a74c169682b800014f3518feff186863db26f244a6888a1fa372f5b6ec93675",
+      "decompressed_sha256": "507bd71c5ab298a8a4644b7c47d24bf1d86d25afcabed56e85f76e9af80952c7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/double_beta_clock.execution.json.gz",
+      "sha256": "c71f8eaf91a98e31bd66309b0f607a93ebd3e301f73d2154383a07204c5c2a30",
+      "decompressed_sha256": "aeb5a5abb96dcae3f10a8576252d85fe91e270e03026bc74021e3b939c8e9588"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/double_beta_clock.py.gz",
+      "sha256": "bd361c0df345e4f6ed07aeb7157074ed0eab9eda356b5779f42ddf69fad418ef",
+      "decompressed_sha256": "dc2996829e1ba2e250da20938fabd088bb07b95c58ab087d5eab4984ae601ff4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/double_beta_clock.stderr.gz",
+      "sha256": "2a2f6cad42692532ed44b73cea60806a8e1f5ad409b754b2b4e8b9c720db0138",
+      "decompressed_sha256": "857361f9870362a7cdf415fe043afebed75dde0cdae91042eb5bc09a7499e921"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/double_beta_clock.stdout.gz",
+      "sha256": "90b16cbaca11d0c3589e6f137b34ff037ebafe4ff1d92091c7b0b310a706d27c",
+      "decompressed_sha256": "82f59ec315866671b20fc75f30d927079def9c7bf1c17e4d7268526d875c225c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/geometric_centre_sign.execution.json.gz",
+      "sha256": "78f65a6cfcd112e350ca2b9eb230f483f879e7404e1795261d7b06b2ef724d64",
+      "decompressed_sha256": "37742b121d1974741ff9a77a7136837d5b59b14349f90c232b0f4d6ba3d5d699"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/geometric_centre_sign.py.gz",
+      "sha256": "7838efffd7206604f96dd69e1d6e21ffac00a87dc5784967476c81b068dbd853",
+      "decompressed_sha256": "ce8a3d4d2cc58322f6d3a6334187c09b45359cf8c04bb4843bf3e7f1573219fd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/geometric_centre_sign.stderr.gz",
+      "sha256": "d2f4c791deeec176da12c9426cdec6d2de62c7323a87a216652a6f8cbddcb679",
+      "decompressed_sha256": "c1380c8819461b674e56ba1d28a25473aa0a2423da19b9bbf8b2dc2776be6cb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/geometric_centre_sign.stdout.gz",
+      "sha256": "451aa204493aa05bf4f43634e1c8964cfc7c21e9f5255ce8edae928d14069ffb",
+      "decompressed_sha256": "c7a99477e21b91744593bcba3bdd9772d86da21c9050de7677f565f80df1b87e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/global_projection_spectrum.execution.json.gz",
+      "sha256": "6e83c453d05e1c9ecf94617667ac3776dae162f5b33cf44000f9e5ca53262f30",
+      "decompressed_sha256": "d2b3b92b456ca558aa04f02147542f09d3367eb3f364c3b3e87911565be5d591"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/global_projection_spectrum.py.gz",
+      "sha256": "59f5894f26e8c34f85fd033b10f11e8d13f3e462eafa0d48caec553e39810191",
+      "decompressed_sha256": "c0016bce9b349899d09e71cc7f512dae3cad98a4da918f7afce08906b2401f74"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/global_projection_spectrum.stderr.gz",
+      "sha256": "15f100525169755a7b6d62d7b3a82d1f8b97f39cec3f55a7f555d3e53bd4ffa9",
+      "decompressed_sha256": "c7ace9e7d17d0e67064a3080c0100398af997c3e3a4af5f027c97a3e0ab61b18"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/global_projection_spectrum.stdout.gz",
+      "sha256": "cad20fe80f3003176f1965953416b1a4917684671d827e23043fc737ba600147",
+      "decompressed_sha256": "0e8330e28937e48ddb833d9a00571a1d8f3f8349b44efbbd821db308abdbb917"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/manifest.json.gz",
+      "sha256": "8fd6b203f4bc76f51b98b30f32022f16d4346179c153df30ee127b0aec4072e5",
+      "decompressed_sha256": "27b016fd3c4054127b1453e2f1ba59c09c860aa2c1caca78756bd7152a9b4fd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/packet_clock_sign.execution.json.gz",
+      "sha256": "3e0bdbf2a6a5228cf48c0cfe50e197b685e60145dd0c8dcdc40eba2b1fbef74b",
+      "decompressed_sha256": "99a767c5a930aafa52fa48f3d6d5253f1b8b28565db52420ccc9a1b372893fb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/packet_clock_sign.py.gz",
+      "sha256": "a5588855a8c22d74979e0fa40988a94feb0b05917ab636a6ee0893146cdc803b",
+      "decompressed_sha256": "dc9fce13f13e7d191d992e856c767408b2c0332ab0ed49df8cec7acc5a3f9037"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/packet_clock_sign.stderr.gz",
+      "sha256": "e87fea3346cfcc2c61fc8672991118687312126f061b49b76d2088b12d56f34e",
+      "decompressed_sha256": "6dcb7d98ccca482c919c1db57e794feedd99d3f7915ff49b3d3e33fbce356e87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_primary_mutations/packet_clock_sign.stdout.gz",
+      "sha256": "451aa204493aa05bf4f43634e1c8964cfc7c21e9f5255ce8edae928d14069ffb",
+      "decompressed_sha256": "c7a99477e21b91744593bcba3bdd9772d86da21c9050de7677f565f80df1b87e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/evidence/scattering_source_0cc560e_recheck.json.gz",
+      "sha256": "023f23eb939936b56ef93e5bb51b8e0b0a38b2b4b2145ecb1325c8047919b515",
+      "decompressed_sha256": "5c53ece225b684022acd48d30c6cd00aba39dd0e4d3406623070b5e91e893f49"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-patch-scattering-20261011/reconstruct.py",
+      "sha256": "1861fc8d7bb450ef1b0f8c71850c9045aec195501fd24d880c0a840013464c67"
+    },
+    {
+      "path": "docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "3adc57d0236fced52704aa76e4fa7d38abbe08204623162c8fd07404a2a44a05"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "797af48ae479156f7b68fd1e085f63ac0e07c5033e577b9f9803cfb05cd3ce86"
+    },
+    {
+      "path": "logs/runner-cache/compact_patch_scattering_covariance_2026_10_11.txt",
+      "sha256": "cd8e0123339327573ab561861dd2cddaef522418e88e1e374a698a9c30ae48c4"
+    },
+    {
+      "path": "scripts/compact_patch_scattering_covariance_2026_10_11.py",
+      "sha256": "90d31b659841bf393c2ac56bba106bc35d085290fd8ad5d8ecb24e3563cffabe"
+    }
+  ]
+}

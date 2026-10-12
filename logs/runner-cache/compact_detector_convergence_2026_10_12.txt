@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/compact_detector_convergence_2026_10_12.py
+runner_sha256: 2bea6e21ebf7366a1184de75513dec30bbe493a6d6c289471ba7db7b76b1c13d
+input_fingerprint_sha256: 28d233643c353884d311a19aa1881bff6c270b97e825dc39bad1f433e88b557e
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"check": "free_Heisenberg_Fourier_sign", "dimension": 11, "max_error": 2.837048893407221e-15, "reversed_phase_error": 1.8174692016283616, "scope": "finite algebra only", "tolerance": 1e-11}
+{"check": "two_time_operator_order", "commuting_g_through_h_error": 0.02881911625932604, "exact_identity_error": 7.216449660063518e-16, "scope": "finite algebra only", "tolerance": 1e-11}
+{"check": "reversed_Duhamel_sign", "identity_error": 3.66205343881779e-15, "phase_cancellation_error": 4.47545209131181e-16, "scope": "finite algebra only", "wrong_sign_error": 14.64918217160079}
+{"check": "source_filter_after_spatial_cutoff", "invalid_filter_deletion_error": 0.1094196021614151, "qR_error": 0.0, "scope": "finite algebra only"}
+{"check": "convex_stationary_geometry", "includes_s_equal_t": true, "limit": "Finite cases discriminate signs; the all-point convex proof is in C20.", "rational_cases": 72, "scope": "finite algebra only", "wrong_sign_hits_collision": true}
+{"check": "third_derivative_sum_not_difference", "cubic_actual": "2/125", "cubic_corrected": "2/125", "limit": "This source typo is not used in the convergence proof.", "periodic_sin_remainder": -0.0026613384098775894, "printed_cubic": "0", "scope": "finite algebra only"}
+{"analytic_convergence_certified": false, "check": "summary", "checks": 6, "independent_review": false, "outcome": "all six finite controls met their declared criteria", "physical_realization_certified": false, "scope": "finite algebra only"}
+per_element: complete original finite algebra controls checked
+per_site: finite lattice fixtures only; no infinite-volume inference
+per_mode: Fourier and source signs checked at the stated finite scope
+per_block: ordered products and finite projections checked
+lattice_wide: checked and not executed — convergence and exhaustion require the written proofs
+TOTAL: PASS=6 FAIL=0
+SCOPE: Finite Fourier, ordering, convex-geometry and source-typo controls only; infinite-lattice kernel decay and detector convergence rest on C1-C28.
+
+----- stderr -----
+

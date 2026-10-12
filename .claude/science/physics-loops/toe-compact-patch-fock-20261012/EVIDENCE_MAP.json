@@ -1,0 +1,2324 @@
+{
+  "scope": "Lossless authored/repository evidence and external primary reference identities.",
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md",
+      "bytes": 27830,
+      "sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404",
+      "preserved": "evidence/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_PATCH_FOCK_ISOMETRY_REVIEW.md",
+      "bytes": 8748,
+      "sha256": "bc88af1dda77065d8806da9d689546547f40847a340177086793dab5f3a277cf",
+      "preserved": "evidence/COMPACT_PATCH_FOCK_ISOMETRY_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/Fock_author_root_identity_check.json",
+      "bytes": 154,
+      "sha256": "581792e7c800e4e401721c67fa0f64c4b8f3333d573afdf39d4461940991a634",
+      "preserved": "evidence/Fock_author_root_identity_check.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/Fock_review_root_identity_check.json",
+      "bytes": 615,
+      "sha256": "2894af390140721751674b7b29271e4a82eb39c37d7b2a2f51b21f67c95b9df3",
+      "preserved": "evidence/Fock_review_root_identity_check.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/CHECKPOINT.md",
+      "bytes": 1694,
+      "sha256": "edcf3e32a69027306656bb3f45795ec74dc0c5aa2f0a8595a4da47008161d631",
+      "preserved": "evidence/compact_fock_review/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/EVIDENCE_REVIEW.md",
+      "bytes": 7989,
+      "sha256": "2e0019730e6623f01d10bcb8d8d74637fd281b869870380cd88f051c426625ca",
+      "preserved": "evidence/compact_fock_review/EVIDENCE_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/READING_COVERAGE.json",
+      "bytes": 2168,
+      "sha256": "128bc18d271b3e190f6f76e06445ced68c9fcdaecb4a97070739557327f83599",
+      "preserved": "evidence/compact_fock_review/READING_COVERAGE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/RECONSTRUCTION.md",
+      "bytes": 17600,
+      "sha256": "85f4d93458c6f00ede645e6d2ac272084dc0cd053b66801b25db8574586df484",
+      "preserved": "evidence/compact_fock_review/RECONSTRUCTION.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/SOURCE_IDENTITIES.json",
+      "bytes": 6030,
+      "sha256": "da1960dd270cb0d495406adfa98676ffbca2365d22a4e6d2ebd4b6388eaf4d45",
+      "preserved": "evidence/compact_fock_review/SOURCE_IDENTITIES.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_artifact_binding.json",
+      "bytes": 17867,
+      "sha256": "7ce0a4d07affcdae542f5e5509d1ffaeaac15e06c25fc60b64ea3d84692cdbc3",
+      "preserved": "evidence/compact_fock_review/author_artifact_binding.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2720,
+      "sha256": "dbf35269470876daa1f971c8bd00a562dd0eb41bcd3bd15a9d409e17446a9eee",
+      "preserved": "evidence/compact_fock_review/author_evidence/ASSUMPTIONS_AND_IMPORTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/CHECKPOINT.md",
+      "bytes": 5082,
+      "sha256": "4313979c042eeb335415c927a219288c8b4d6e63a984b9f71c33d8e2ee44df56",
+      "preserved": "evidence/compact_fock_review/author_evidence/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1186,
+      "sha256": "e8011f56b6d1ca33316626faec97cc0da27684abed1556f7910ea9b37cc5f2a2",
+      "preserved": "evidence/compact_fock_review/author_evidence/CLAIM_STATUS_CERTIFICATE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/FROZEN_INPUT_RECHECK.json",
+      "bytes": 23952,
+      "sha256": "751b7e38cb49d03e9b42eef537efbf42833336675b7f565f8a2f0d3087041da4",
+      "preserved": "evidence/compact_fock_review/author_evidence/FROZEN_INPUT_RECHECK.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/INPUT_IDENTITIES.json",
+      "bytes": 1368,
+      "sha256": "29c5ef1394ebc8af0675f30cc598a54f3bead14af9aae8cdafabb03b5254edf5",
+      "preserved": "evidence/compact_fock_review/author_evidence/INPUT_IDENTITIES.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/INSTRUCTION_REUSE.json",
+      "bytes": 2434,
+      "sha256": "d8bb1688eca946dc0f4ccb2d730d66bef32fe6d9f58b819189045a6af51594de",
+      "preserved": "evidence/compact_fock_review/author_evidence/INSTRUCTION_REUSE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/LITERATURE_BRIDGES.md",
+      "bytes": 2338,
+      "sha256": "47e9fdd3d4c57df2832d0d68c1bdaff8b92f8625c74babbae63d7a35edbad5a7",
+      "preserved": "evidence/compact_fock_review/author_evidence/LITERATURE_BRIDGES.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/READING_COVERAGE.json",
+      "bytes": 3222,
+      "sha256": "17e7afa671e02df2f5815f35093e873a45c95a5723ab4f1a7b824460c8af1ea6",
+      "preserved": "evidence/compact_fock_review/author_evidence/READING_COVERAGE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/RUNTIME.json",
+      "bytes": 313,
+      "sha256": "21e1f3ca50786e20870bd3a5d867bb060207039ba0bebc0bd085e5fb5cb6f865",
+      "preserved": "evidence/compact_fock_review/author_evidence/RUNTIME.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/SOURCE_IDENTITIES.json",
+      "bytes": 5729,
+      "sha256": "d2e7852ccef2b4fea01c6126d8590e20a82854756c308631fe72a4903bbc87cf",
+      "preserved": "evidence/compact_fock_review/author_evidence/SOURCE_IDENTITIES.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/TRACE_GATE.md",
+      "bytes": 811,
+      "sha256": "9e9c965870a3b673d794660d0425800a1df037a9bf4dc06d0c025627558c59cb",
+      "preserved": "evidence/compact_fock_review/author_evidence/TRACE_GATE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/check_fock_algebra.py",
+      "bytes": 7643,
+      "sha256": "c46a7d3ebef131324caf477a12ea25e9e57a47a0b86c408e7234ebc644822fdc",
+      "preserved": "evidence/compact_fock_review/author_evidence/check_fock_algebra.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/fock_algebra.execution.json",
+      "bytes": 870,
+      "sha256": "650c4d8b91a4f1055917af6c835ba49d14a32746c4c9ff2e36eaad5ed00c1360",
+      "preserved": "evidence/compact_fock_review/author_evidence/fock_algebra.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/fock_algebra.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_fock_review/author_evidence/fock_algebra.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/fock_algebra.stdout.jsonl",
+      "bytes": 9646,
+      "sha256": "bbb5629c845673a76a37ae7c21e7d927b062e928906a1e787466170bcd928fc2",
+      "preserved": "evidence/compact_fock_review/author_evidence/fock_algebra.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/receipt.json",
+      "bytes": 18091,
+      "sha256": "48b2a3fb2aeef107685ade2404e4029741fd9076e22f2d1fd6a3803588026c6d",
+      "preserved": "evidence/compact_fock_review/author_evidence/receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/C4_N1_report.md",
+      "bytes": 28166,
+      "sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13",
+      "preserved": "evidence/compact_fock_review/author_evidence/sources/C4_N1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md",
+      "bytes": 28858,
+      "sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a",
+      "preserved": "evidence/compact_fock_review/author_evidence/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md",
+      "bytes": 9507,
+      "sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be",
+      "preserved": "evidence/compact_fock_review/author_evidence/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md",
+      "bytes": 1356,
+      "sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516",
+      "preserved": "evidence/compact_fock_review/author_evidence/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/EX_REPAIR_REVIEW_ADDENDUM.md",
+      "bytes": 2312,
+      "sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029",
+      "preserved": "evidence/compact_fock_review/author_evidence/sources/EX_REPAIR_REVIEW_ADDENDUM.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_download.json",
+      "bytes": 296,
+      "sha256": "df8ce98ba9da26a275bc18d696db1d8308d2b0f81a64aba0109502796cbebd72",
+      "preserved": "evidence/compact_fock_review/author_evidence/sources/NS_download.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/final_source_recheck.json",
+      "bytes": 28094,
+      "sha256": "6edda9e2e0255c2febc0acdf0516cd6d2ae62bb893bcba420cc26b23e0ad6347",
+      "preserved": "evidence/compact_fock_review/final_source_recheck.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/independent_controls.py",
+      "bytes": 6521,
+      "sha256": "23ecbf20deeb4dd83de577bc6f0913b47b93bc8c0e2abd5bf2f47eb3a8c2e873",
+      "preserved": "evidence/compact_fock_review/independent_controls.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/author_rerun.execution.json",
+      "bytes": 915,
+      "sha256": "9850f219a86d57a3eca06b4c5ae9489e55eca7aba2b449ab0af9e24e376deebf",
+      "preserved": "evidence/compact_fock_review/logs/author_rerun.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/author_rerun.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_fock_review/logs/author_rerun.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/author_rerun.stdout.jsonl",
+      "bytes": 9646,
+      "sha256": "bbb5629c845673a76a37ae7c21e7d927b062e928906a1e787466170bcd928fc2",
+      "preserved": "evidence/compact_fock_review/logs/author_rerun.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/independent_controls.execution.json",
+      "bytes": 720,
+      "sha256": "ef2f4f33817b1c9ea8b95a07e88b2bee92954ec76f7491a677d722a3e3eabad1",
+      "preserved": "evidence/compact_fock_review/logs/independent_controls.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/independent_controls.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_fock_review/logs/independent_controls.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/independent_controls.stdout.jsonl",
+      "bytes": 1286,
+      "sha256": "d7dcbe396dc127520bbe471fe03381a76fca9e00b0b62e84f3ddc3fa733936b9",
+      "preserved": "evidence/compact_fock_review/logs/independent_controls.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/primary_extraction_comparison.diff",
+      "bytes": 5523,
+      "sha256": "2026c4f5faf7f45cd7c3699b799a9f79e6803e2f3936bce1f350aec478f7b3b3",
+      "preserved": "evidence/compact_fock_review/logs/primary_extraction_comparison.diff.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/logs/remote_refs.txt",
+      "bytes": 122,
+      "sha256": "03b7ef344080fd702e355ac0bdca8f1bf49c1d54297018e62e55cf029d5b9b41",
+      "preserved": "evidence/compact_fock_review/logs/remote_refs.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/pre_author_evidence_freeze.json",
+      "bytes": 570,
+      "sha256": "8e8db821eb32a319b508bf25d3c309e6e279af094792fa504817a861bf243c69",
+      "preserved": "evidence/compact_fock_review/pre_author_evidence_freeze.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/primary_extraction_comparison.json",
+      "bytes": 9837,
+      "sha256": "f7ebc6aa5fc9c4cea586e3ce36ff2e79ca0ed8de5321aed496d5e70dbcc00b20",
+      "preserved": "evidence/compact_fock_review/primary_extraction_comparison.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/review_receipt.json",
+      "bytes": 38238,
+      "sha256": "d5549ee3c35f54a90aaa40aaa5e3aa608d6f1d32ede8844adf58808ad657b3f0",
+      "preserved": "evidence/compact_fock_review/review_receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/AGENTS_POINTER.md",
+      "bytes": 1265,
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "preserved": "evidence/compact_fock_review/sources/AGENTS_POINTER.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/C4_N1_report.md",
+      "bytes": 28166,
+      "sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13",
+      "preserved": "evidence/compact_fock_review/sources/C4_N1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md",
+      "bytes": 27830,
+      "sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404",
+      "preserved": "evidence/compact_fock_review/sources/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md",
+      "bytes": 28858,
+      "sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a",
+      "preserved": "evidence/compact_fock_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md",
+      "bytes": 9507,
+      "sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be",
+      "preserved": "evidence/compact_fock_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md",
+      "bytes": 1356,
+      "sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516",
+      "preserved": "evidence/compact_fock_review/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/EX_REPAIR_REVIEW_ADDENDUM.md",
+      "bytes": 2312,
+      "sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029",
+      "preserved": "evidence/compact_fock_review/sources/EX_REPAIR_REVIEW_ADDENDUM.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/PHYSICS_CLAIM_REVIEWER.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "preserved": "evidence/compact_fock_review/sources/PHYSICS_CLAIM_REVIEWER.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/PLANNING_AGENTS.md",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "preserved": "evidence/compact_fock_review/sources/PLANNING_AGENTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/PROOF_SEARCH_GOVERNANCE.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "preserved": "evidence/compact_fock_review/sources/PROOF_SEARCH_GOVERNANCE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/REVIEW_LOOP.md",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "preserved": "evidence/compact_fock_review/sources/REVIEW_LOOP.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/SCIENCE_WORKFLOW.md",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "preserved": "evidence/compact_fock_review/sources/SCIENCE_WORKFLOW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "preserved": "evidence/compact_fock_review/sources/SKILL_FRESHNESS_CHECK.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2720,
+      "sha256": "dbf35269470876daa1f971c8bd00a562dd0eb41bcd3bd15a9d409e17446a9eee",
+      "preserved": "evidence/compact_patch_fock_isometry/ASSUMPTIONS_AND_IMPORTS.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/CHECKPOINT.md",
+      "bytes": 5082,
+      "sha256": "4313979c042eeb335415c927a219288c8b4d6e63a984b9f71c33d8e2ee44df56",
+      "preserved": "evidence/compact_patch_fock_isometry/CHECKPOINT.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1186,
+      "sha256": "e8011f56b6d1ca33316626faec97cc0da27684abed1556f7910ea9b37cc5f2a2",
+      "preserved": "evidence/compact_patch_fock_isometry/CLAIM_STATUS_CERTIFICATE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/FROZEN_INPUT_RECHECK.json",
+      "bytes": 23952,
+      "sha256": "751b7e38cb49d03e9b42eef537efbf42833336675b7f565f8a2f0d3087041da4",
+      "preserved": "evidence/compact_patch_fock_isometry/FROZEN_INPUT_RECHECK.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/INPUT_IDENTITIES.json",
+      "bytes": 1368,
+      "sha256": "29c5ef1394ebc8af0675f30cc598a54f3bead14af9aae8cdafabb03b5254edf5",
+      "preserved": "evidence/compact_patch_fock_isometry/INPUT_IDENTITIES.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/INSTRUCTION_REUSE.json",
+      "bytes": 2434,
+      "sha256": "d8bb1688eca946dc0f4ccb2d730d66bef32fe6d9f58b819189045a6af51594de",
+      "preserved": "evidence/compact_patch_fock_isometry/INSTRUCTION_REUSE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/LITERATURE_BRIDGES.md",
+      "bytes": 2338,
+      "sha256": "47e9fdd3d4c57df2832d0d68c1bdaff8b92f8625c74babbae63d7a35edbad5a7",
+      "preserved": "evidence/compact_patch_fock_isometry/LITERATURE_BRIDGES.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/READING_COVERAGE.json",
+      "bytes": 3222,
+      "sha256": "17e7afa671e02df2f5815f35093e873a45c95a5723ab4f1a7b824460c8af1ea6",
+      "preserved": "evidence/compact_patch_fock_isometry/READING_COVERAGE.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/RUNTIME.json",
+      "bytes": 313,
+      "sha256": "21e1f3ca50786e20870bd3a5d867bb060207039ba0bebc0bd085e5fb5cb6f865",
+      "preserved": "evidence/compact_patch_fock_isometry/RUNTIME.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/SOURCE_IDENTITIES.json",
+      "bytes": 5729,
+      "sha256": "d2e7852ccef2b4fea01c6126d8590e20a82854756c308631fe72a4903bbc87cf",
+      "preserved": "evidence/compact_patch_fock_isometry/SOURCE_IDENTITIES.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/TRACE_GATE.md",
+      "bytes": 811,
+      "sha256": "9e9c965870a3b673d794660d0425800a1df037a9bf4dc06d0c025627558c59cb",
+      "preserved": "evidence/compact_patch_fock_isometry/TRACE_GATE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/check_fock_algebra.py",
+      "bytes": 7643,
+      "sha256": "c46a7d3ebef131324caf477a12ea25e9e57a47a0b86c408e7234ebc644822fdc",
+      "preserved": "evidence/compact_patch_fock_isometry/check_fock_algebra.py.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/fock_algebra.execution.json",
+      "bytes": 870,
+      "sha256": "650c4d8b91a4f1055917af6c835ba49d14a32746c4c9ff2e36eaad5ed00c1360",
+      "preserved": "evidence/compact_patch_fock_isometry/fock_algebra.execution.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/fock_algebra.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preserved": "evidence/compact_patch_fock_isometry/fock_algebra.stderr.txt.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/fock_algebra.stdout.jsonl",
+      "bytes": 9646,
+      "sha256": "bbb5629c845673a76a37ae7c21e7d927b062e928906a1e787466170bcd928fc2",
+      "preserved": "evidence/compact_patch_fock_isometry/fock_algebra.stdout.jsonl.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/receipt.json",
+      "bytes": 18091,
+      "sha256": "48b2a3fb2aeef107685ade2404e4029741fd9076e22f2d1fd6a3803588026c6d",
+      "preserved": "evidence/compact_patch_fock_isometry/receipt.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/C4_N1_report.md",
+      "bytes": 28166,
+      "sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13",
+      "preserved": "evidence/compact_patch_fock_isometry/sources/C4_N1_report.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md",
+      "bytes": 28858,
+      "sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a",
+      "preserved": "evidence/compact_patch_fock_isometry/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md",
+      "bytes": 9507,
+      "sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be",
+      "preserved": "evidence/compact_patch_fock_isometry/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md",
+      "bytes": 1356,
+      "sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516",
+      "preserved": "evidence/compact_patch_fock_isometry/sources/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/EX_REPAIR_REVIEW_ADDENDUM.md",
+      "bytes": 2312,
+      "sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029",
+      "preserved": "evidence/compact_patch_fock_isometry/sources/EX_REPAIR_REVIEW_ADDENDUM.md.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_download.json",
+      "bytes": 296,
+      "sha256": "df8ce98ba9da26a275bc18d696db1d8308d2b0f81a64aba0109502796cbebd72",
+      "preserved": "evidence/compact_patch_fock_isometry/sources/NS_download.json.gz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finish_fock_delivery.py",
+      "preserved": "evidence/finish_fock_delivery.py.gz",
+      "sha256": "36950a5e1f75df3ae2eea07fe81fd8ac8400f39d0955a063aa752a4e705770dc",
+      "bytes": 14845
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finish_fock_delivery.py",
+      "preserved": "evidence/finish_fock_delivery.py.previous_ae69277bc73a.gz",
+      "sha256": "ae69277bc73ab76d4a36f5e3ab3e9a59dd5c31550c195cb0521b984198376d99",
+      "bytes": 14118,
+      "historical_source_version": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_canonical_execution.json",
+      "preserved": "evidence/fock_canonical_execution.json.gz",
+      "sha256": "59e79f34a4e227da8f318c3a1b52b9febbce372d75262ae2c4449226c6eb99f1",
+      "bytes": 11718
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_canonical_execution.json",
+      "preserved": "evidence/fock_canonical_execution.json.previous_2a1e9d1f4cb9.gz",
+      "sha256": "2a1e9d1f4cb93370bad56b782a6c1bf4791fe612bd85e048fd6ededb6f09d5d0",
+      "bytes": 11718,
+      "historical_source_version": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_citation_build.stderr",
+      "preserved": "evidence/fock_citation_build.stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_citation_build.stdout",
+      "preserved": "evidence/fock_citation_build.stdout.gz",
+      "sha256": "0a61f8ba48f6ce0776e0c4bcecf5dcf1e1b1a3891fe26b1e178064e9ffd5449f",
+      "bytes": 281
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_citation_execution.json",
+      "preserved": "evidence/fock_citation_execution.json.gz",
+      "sha256": "134124796cce2df8e226bd62412dbb921b3895f833f5b6e8db3ebbbae92ce256",
+      "bytes": 473
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_citation_manifest.stderr",
+      "preserved": "evidence/fock_citation_manifest.stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_citation_manifest.stdout",
+      "preserved": "evidence/fock_citation_manifest.stdout.gz",
+      "sha256": "b84878ae1340010429bb9781218725288d9eb4f49fcbf599ed259c8220a1361d",
+      "bytes": 77
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_delivery_mechanical.json",
+      "preserved": "evidence/fock_delivery_mechanical.json.gz",
+      "sha256": "0fd4557630192236bd291cb2cb2ed60bf148e31cdb7d540c7415ff6475b093ee",
+      "bytes": 946
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_delivery_mechanical.json",
+      "preserved": "evidence/fock_delivery_mechanical.json.previous_0ef9e73b3210.gz",
+      "sha256": "0ef9e73b3210476dbf0b10c5cb8796f5d026483875d6d73d55fa0b999c9c9e05",
+      "bytes": 946,
+      "historical_source_version": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_final_reconstruction.log",
+      "preserved": "evidence/fock_final_reconstruction.log.gz",
+      "sha256": "7b384b171611aab1ef4d679df482de5714556659362a2cec435a6b7b029dcc9a",
+      "bytes": 90
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_final_vocab_fix.json",
+      "preserved": "evidence/fock_final_vocab_fix.json.gz",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_final_vocab_fix.log",
+      "preserved": "evidence/fock_final_vocab_fix.log.gz",
+      "sha256": "f0ec8306572c510bdba9341955726cec723a4707cecfb908025d4718119ffe66",
+      "bytes": 216
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_final_vocab_report-only.json",
+      "preserved": "evidence/fock_final_vocab_report-only.json.gz",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_final_vocab_report-only.log",
+      "preserved": "evidence/fock_final_vocab_report-only.log.gz",
+      "sha256": "a7b56fde4d9aca138727dfd9c7957c5ec68da706879a5fc2851657dca9f6122f",
+      "bytes": 224
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_focused_audit_compat.json",
+      "preserved": "evidence/fock_focused_audit_compat.json.gz",
+      "sha256": "efd177a60db9df443eb1e34c4c3929abf31fd3de0c9028fb65484745d4df53e4",
+      "bytes": 240
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_focused_audit_compat.stderr",
+      "preserved": "evidence/fock_focused_audit_compat.stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_initial_reconstruction.log",
+      "preserved": "evidence/fock_initial_reconstruction.log.gz",
+      "sha256": "7b384b171611aab1ef4d679df482de5714556659362a2cec435a6b7b029dcc9a",
+      "bytes": 90
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_initial_vocab_fix.json",
+      "preserved": "evidence/fock_initial_vocab_fix.json.gz",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_initial_vocab_fix.log",
+      "preserved": "evidence/fock_initial_vocab_fix.log.gz",
+      "sha256": "b16a650961cea3a1f951bdbb18ec362e048bff5c2d31b5311f11ebda90bd1acc",
+      "bytes": 218
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/collapsed_mixed_kernel.execution.json",
+      "preserved": "evidence/fock_primary_mutations/collapsed_mixed_kernel.execution.json.gz",
+      "sha256": "c5627eff6f6667b18208cd3efe4d303a3971487734b292de954967fc4e4bb544",
+      "bytes": 837
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/collapsed_mixed_kernel.py",
+      "preserved": "evidence/fock_primary_mutations/collapsed_mixed_kernel.py.gz",
+      "sha256": "c2a94f3d9147d0d0e1ba14a202598466c4ca8dc028ec46e71cb21d955cfb49ab",
+      "bytes": 8631
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/collapsed_mixed_kernel.stderr",
+      "preserved": "evidence/fock_primary_mutations/collapsed_mixed_kernel.stderr.gz",
+      "sha256": "7a6929154f1dc024dff8d73243a97240a37bb40d74bf50b47d49b81ac4c9cd25",
+      "bytes": 308
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/collapsed_mixed_kernel.stdout",
+      "preserved": "evidence/fock_primary_mutations/collapsed_mixed_kernel.stdout.gz",
+      "sha256": "1f4a0cdf5e257355029562544aa5b25814a434106071f5c78c7d8cfea09994db",
+      "bytes": 2296
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/contraction_missing_sup_factor.execution.json",
+      "preserved": "evidence/fock_primary_mutations/contraction_missing_sup_factor.execution.json.gz",
+      "sha256": "b6db4899ebcf50c8581e4f3b2aa134518fcf6a5152bcde1589a9381938d5848d",
+      "bytes": 899
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/contraction_missing_sup_factor.py",
+      "preserved": "evidence/fock_primary_mutations/contraction_missing_sup_factor.py.gz",
+      "sha256": "60e3272100ec7a3b16cdd9122d404b83ebe85677926c6ff3f403ae6bbe36cd63",
+      "bytes": 8635
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/contraction_missing_sup_factor.stderr",
+      "preserved": "evidence/fock_primary_mutations/contraction_missing_sup_factor.stderr.gz",
+      "sha256": "a7a88e526467d64b1bff482cc5d5a3f34fd3c6ae7876ec0e1176a8b6e3991d72",
+      "bytes": 266
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/contraction_missing_sup_factor.stdout",
+      "preserved": "evidence/fock_primary_mutations/contraction_missing_sup_factor.stdout.gz",
+      "sha256": "c4af6d06d47841786f078bf7f9ac33e6ddbdc512b8581092d6b63a0159c44cdb",
+      "bytes": 2717
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/creator_energy_padding.execution.json",
+      "preserved": "evidence/fock_primary_mutations/creator_energy_padding.execution.json.gz",
+      "sha256": "dd0a37a417d460af340e116c838d180816db87d7d442c4c3b1e76f03514e7b0f",
+      "bytes": 941
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/creator_energy_padding.py",
+      "preserved": "evidence/fock_primary_mutations/creator_energy_padding.py.gz",
+      "sha256": "a93e88d63731044cbffd8ffa2039f5f05497c6646b12d5eea1aa6d081ddfedfc",
+      "bytes": 8631
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/creator_energy_padding.stderr",
+      "preserved": "evidence/fock_primary_mutations/creator_energy_padding.stderr.gz",
+      "sha256": "56f330a0ca4298b88cb6fd11e732b764f304bb9bceaa7d05b96fd0cf3b3f2c39",
+      "bytes": 318
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/creator_energy_padding.stdout",
+      "preserved": "evidence/fock_primary_mutations/creator_energy_padding.stdout.gz",
+      "sha256": "fb705480023b5973913c5dbd35f3ee0e1fbcbe5e1d408b7dc2219a793b188713",
+      "bytes": 1114
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/dropped_double_brackets.execution.json",
+      "preserved": "evidence/fock_primary_mutations/dropped_double_brackets.execution.json.gz",
+      "sha256": "baff8799807d6bb9ba81d37eb91b4f81912083cd33940af9d8a52e3c353f4a85",
+      "bytes": 929
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/dropped_double_brackets.py",
+      "preserved": "evidence/fock_primary_mutations/dropped_double_brackets.py.gz",
+      "sha256": "ba0a674d957dc27acd5fbb07f51fc34bd696ce29d9b4fbbdfde50404370d6b8f",
+      "bytes": 8644
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/dropped_double_brackets.stderr",
+      "preserved": "evidence/fock_primary_mutations/dropped_double_brackets.stderr.gz",
+      "sha256": "fa57ddad7297851310ec550094d9ef3dc55ddde195475d7dabcae73a4b290900",
+      "bytes": 380
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/dropped_double_brackets.stdout",
+      "preserved": "evidence/fock_primary_mutations/dropped_double_brackets.stdout.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/energy_commutator_sign.execution.json",
+      "preserved": "evidence/fock_primary_mutations/energy_commutator_sign.execution.json.gz",
+      "sha256": "40089b746cf282c7e3cd0c7b754a9784671b758bc87c0644b89f5223b21b58a6",
+      "bytes": 858
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/energy_commutator_sign.py",
+      "preserved": "evidence/fock_primary_mutations/energy_commutator_sign.py.gz",
+      "sha256": "cbadf43f7e586b934a5713e7bf3a2673715c7691b1e7ffa653af16db8b15b4c0",
+      "bytes": 8645
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/energy_commutator_sign.stderr",
+      "preserved": "evidence/fock_primary_mutations/energy_commutator_sign.stderr.gz",
+      "sha256": "8900c1bffa88e63a6353db723fcddf4036fd17878040c52f8970e2ba5b4263b4",
+      "bytes": 289
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/energy_commutator_sign.stdout",
+      "preserved": "evidence/fock_primary_mutations/energy_commutator_sign.stdout.gz",
+      "sha256": "acff0b6759bc51982e2e5c0f410fbfca11d80d629814051552e6e915376a85a3",
+      "bytes": 447
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_determinant_power.execution.json",
+      "preserved": "evidence/fock_primary_mutations/hessian_determinant_power.execution.json.gz",
+      "sha256": "e82d25ac414edbc86b5cf531486bc188d90a98aada24abad3efd811bf0c24ca2",
+      "bytes": 879
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_determinant_power.py",
+      "preserved": "evidence/fock_primary_mutations/hessian_determinant_power.py.gz",
+      "sha256": "559041e6339ebe0dc5a61fdef7143aa57ef8c4922be785269a4ec8b3324ea816",
+      "bytes": 8637
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_determinant_power.stderr",
+      "preserved": "evidence/fock_primary_mutations/hessian_determinant_power.stderr.gz",
+      "sha256": "d16ba22158288e322fc23db87ed3762e25b0d5f7bd37c2010cdafd60aac383dc",
+      "bytes": 316
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_determinant_power.stdout",
+      "preserved": "evidence/fock_primary_mutations/hessian_determinant_power.stdout.gz",
+      "sha256": "22b7c9971134af905eaa8aecfd66089e60d6a888f4d901211c8a10c52e2f0aee",
+      "bytes": 596
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_radial_sign.execution.json",
+      "preserved": "evidence/fock_primary_mutations/hessian_radial_sign.execution.json.gz",
+      "sha256": "dff6537406a3594592ddd95504aab34917e12df16ed8d2de3be7060bea9c0c14",
+      "bytes": 959
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_radial_sign.py",
+      "preserved": "evidence/fock_primary_mutations/hessian_radial_sign.py.gz",
+      "sha256": "cf526b1a3f06de9d07b2d460d18acc6ac04a22a11b74810d3c5aca843f8e523b",
+      "bytes": 8635
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_radial_sign.stderr",
+      "preserved": "evidence/fock_primary_mutations/hessian_radial_sign.stderr.gz",
+      "sha256": "1a3b381a9031394d6962fc141d8bea0a4186a68c1dcf5fa2a01322d23fd7100c",
+      "bytes": 314
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/hessian_radial_sign.stdout",
+      "preserved": "evidence/fock_primary_mutations/hessian_radial_sign.stdout.gz",
+      "sha256": "22b7c9971134af905eaa8aecfd66089e60d6a888f4d901211c8a10c52e2f0aee",
+      "bytes": 596
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/manifest.json",
+      "preserved": "evidence/fock_primary_mutations/manifest.json.gz",
+      "sha256": "860d91165af7f050395985bfbf87c0f3c9d6b1d714d1884cb3d7cbb219d28199",
+      "bytes": 8104
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/velocity_inverse_beta.execution.json",
+      "preserved": "evidence/fock_primary_mutations/velocity_inverse_beta.execution.json.gz",
+      "sha256": "70f2e86afcaa7132918041d381e0c343244774f064e87eb1f931bd10ba5392bb",
+      "bytes": 896
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/velocity_inverse_beta.py",
+      "preserved": "evidence/fock_primary_mutations/velocity_inverse_beta.py.gz",
+      "sha256": "8b488f9d29eee2563578e5b19fde64adb7963ca1ee71b6ea9f6b0750a1f6ede3",
+      "bytes": 8622
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/velocity_inverse_beta.stderr",
+      "preserved": "evidence/fock_primary_mutations/velocity_inverse_beta.stderr.gz",
+      "sha256": "f6b0bd115ff66831dbc63a486d6792aaacd25c9e8535da97be9257a2cd5c8cd7",
+      "bytes": 341
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/fock_primary_mutations/velocity_inverse_beta.stdout",
+      "preserved": "evidence/fock_primary_mutations/velocity_inverse_beta.stdout.gz",
+      "sha256": "86d35fd95358e3dc7454b38c8f174a1ba18e626db9ec574f230bd38f26c1cff8",
+      "bytes": 824
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_fock_publication.py",
+      "preserved": "evidence/prepare_fock_publication.py.gz",
+      "sha256": "7adee06131fdc1b4b12201fbe27b8fb25a6e1e238c7ad61457e637ed1ed00fdd",
+      "bytes": 21782
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_fock_publication.py",
+      "preserved": "evidence/prepare_fock_publication.py.previous_5e05eeff752e.gz",
+      "sha256": "5e05eeff752e6825801b566f2bfb9a1e9d23bc4e9142bb323341c4854f6647f7",
+      "bytes": 21570,
+      "historical_source_version": true
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/run_fock_primary_mutants.py",
+      "preserved": "evidence/run_fock_primary_mutants.py.gz",
+      "sha256": "f67d1e0b633e732aca7ea0bd4fe88cfb97ab6b8ff349b26c952cccf9cfdc363a",
+      "bytes": 3716
+    }
+  ],
+  "external_reference_sources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_1412.2970v2.pdf",
+      "bytes": 1084655,
+      "sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_fulltext.txt",
+      "bytes": 132824,
+      "sha256": "b9d17b5846bb6ad6d511caf7437819f365b91b54e9030303baeb29f428a7b019",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/01.txt",
+      "bytes": 3107,
+      "sha256": "e9407cf31aba2b867ec1d00d31b02281ac84a6c1bcc3ee8b5a510392323dc537",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/02.txt",
+      "bytes": 3182,
+      "sha256": "7fbe92cf245eabe4c4b1f64be3ec83da420ed6a09a799733a0a947e26cd79d6a",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/03.txt",
+      "bytes": 3278,
+      "sha256": "c0109d3c9aaa7859557fec0395ec2c7a48eff47cea2be6c5c136fa345af77f00",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/04.txt",
+      "bytes": 4086,
+      "sha256": "a36cf6fe82d9f3452b616cafb68e97d49f90a88fb84e6dc4151e045bb2390c00",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/05.txt",
+      "bytes": 4320,
+      "sha256": "eb572c8a8b995bfbdb6ca5c3ea130a0cfcfe6799b9085a94e31b8533d7f1c4b2",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/06.txt",
+      "bytes": 1938,
+      "sha256": "49a33dd5d80f15d46cf0e91584eb7b36bd3455abfc283b9a3ddc0c414981de9d",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/07.txt",
+      "bytes": 2881,
+      "sha256": "1600eaad96bc14593195b3cf71b296174603512f6591dca645a9b9662845df8b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/08.txt",
+      "bytes": 2461,
+      "sha256": "b643684933ad885752a2a4b6a6a4025b983c69be069b78cd5a23cc0a6e9308d6",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/09.txt",
+      "bytes": 2490,
+      "sha256": "c4d98da820a19091ef3c0370e698c9632dd0adc5d3fe623cf4312369a8a25475",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/10.txt",
+      "bytes": 2675,
+      "sha256": "781d0cb5e526af48d05b223f00c1f58f1d351a7fab4fb9921f3a189da2ca73ec",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/11.txt",
+      "bytes": 2912,
+      "sha256": "362b602895541744ae09a56d804218ddec8f38b38edd228238d5d16bcf27e67f",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/12.txt",
+      "bytes": 2693,
+      "sha256": "f129835283fcc6c8f384271ee9e07c413c84c154d43e34b9c9a2d7d2f7ec1ee3",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/13.txt",
+      "bytes": 2648,
+      "sha256": "06fc5f84848efb95b8b59848df44f7f74d3a307419933c5d16710ee25c224432",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/14.txt",
+      "bytes": 2895,
+      "sha256": "bb31f321c5db8a53a0f9546c0abc417a08934bcbe68cf61a0134ba6aee1054ed",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/15.txt",
+      "bytes": 2538,
+      "sha256": "5250f38f573b06ac8acb679dde6a146f4e17c13e541b6348916680e645337366",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/16.txt",
+      "bytes": 2439,
+      "sha256": "87a76c4e28313032f8d66374c4e433147f2ee4628fd9c0a22b6d4947b4509f59",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/17.txt",
+      "bytes": 2814,
+      "sha256": "b0374bc255b8143a525138acf4133d215eacff22d2469698a52c28fafe0d2ca7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/18.txt",
+      "bytes": 2344,
+      "sha256": "6e135e81be454c2bbe1b7a860e4528df54b1ce2e202b03a3c12a136508a53cc7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/19.txt",
+      "bytes": 2940,
+      "sha256": "91cedac014c2f5eba8339a198697c3977070872e7a5b41341c17a09fc0923297",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/20.txt",
+      "bytes": 3179,
+      "sha256": "abb0e01074c2461e9b8887524b5e7517d6b61c41b6223706b53c7c10ca692108",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/21.txt",
+      "bytes": 2642,
+      "sha256": "13758462ffc6849562f99d4abba16c60d381d0e5277c3aba5db0b60664c7c0d0",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/22.txt",
+      "bytes": 2304,
+      "sha256": "10c1102d8c6ca2e43529738e6f6bb021683a0d1fe210ec97ff278f79866e2023",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/23.txt",
+      "bytes": 2567,
+      "sha256": "a6e8c60574fae55e7c6fd16ae05eb7a8d6022573d4d17019b347b214e7b22b57",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/24.txt",
+      "bytes": 3035,
+      "sha256": "b975f71d54d5b33be1586e2c8d61daca9ef6aeec69fc83675767a17540aaf6ef",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/25.txt",
+      "bytes": 2655,
+      "sha256": "2d42870dce9d5bf2d570b4118169ec35dab200e2f091cdebccb511557b5f277c",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/26.txt",
+      "bytes": 2710,
+      "sha256": "4d1b7a985b606ff94122b367f9889d6877449c0d54babfa6a64b148f130d1be6",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/27.txt",
+      "bytes": 2486,
+      "sha256": "41d24b649df055d952a2fb6bfc591b13e52b2bfd33a1ae43ddb56ff3939956d4",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/28.txt",
+      "bytes": 2952,
+      "sha256": "ccc5c812a2fd75685823f7f15b9211cce62fe158b9bcc3c99d1e6651d0e231f9",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/29.txt",
+      "bytes": 2479,
+      "sha256": "60e027ab5fc09dcd7ebb49a1407d01c30657b21de1aa07b937fed87f86c626f7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/30.txt",
+      "bytes": 2820,
+      "sha256": "ad1899214f3c31b590d0b12d366d4fc5cb71d7eb4e5b0047d830e8ceab17c22a",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/31.txt",
+      "bytes": 3449,
+      "sha256": "164e272b15c807e4ab500b01d96e28f0aaef6a193ad04c5b3205685ae40c68d2",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/32.txt",
+      "bytes": 3515,
+      "sha256": "bae9ecf1ac48870f43dcadcc1c0458424d2e44981639c6731821be127e2c6f0d",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/33.txt",
+      "bytes": 3985,
+      "sha256": "9df9c36e1fe717edda1a49bbb00a8045faacc5402cce7167b7d492612e76e46b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/34.txt",
+      "bytes": 4234,
+      "sha256": "a194bf379067844f01b3dcbab12361121933dc1175e52bd2dcd3ccd80f58a600",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/35.txt",
+      "bytes": 3308,
+      "sha256": "8e5401f97d7b0efccccddbb235bdb32c6c1184f31eb13b7de2fd774222279c42",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/36.txt",
+      "bytes": 2119,
+      "sha256": "75d21825644a82138780be96c72f29b91bd512826fb0a400aaaa69fb29ac3e51",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/37.txt",
+      "bytes": 2486,
+      "sha256": "bafd51b1375e5dcecf4bfd8517ca027d21ffab4606706419fce264dd33aed0da",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/38.txt",
+      "bytes": 2595,
+      "sha256": "2f99410060c236009b7eeebae51a5039eb890b606a9216f0087ae86ee22e65ac",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/39.txt",
+      "bytes": 2239,
+      "sha256": "97e6992d2de3647aa4dbbdee1abfa80b95fdf6bd748985f506f9b7c99eeb56af",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/40.txt",
+      "bytes": 2058,
+      "sha256": "889919f763be5d48c22189e6fea1faae721af08bf62603c61fc93aec55665bbb",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/41.txt",
+      "bytes": 2662,
+      "sha256": "3a29384621f815a292cff8d76115c5b3cf6fb1d03167fd4ba2760f87805ba594",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/42.txt",
+      "bytes": 2298,
+      "sha256": "49f86b358635d541219eb770533400f95fd41ab69ea2db9df7ab63ce14db36e7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/43.txt",
+      "bytes": 2246,
+      "sha256": "b3e664253049eb8aeb0ee7381b9cdf01f51e05ca0b2716e44ea42ad59d6bbca5",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/44.txt",
+      "bytes": 3303,
+      "sha256": "e569bac588b39c192da7c25d10d9327f50759fb6adfe4bed759db38be7866d68",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/45.txt",
+      "bytes": 3584,
+      "sha256": "20bb0924018c6987a0c845163cf8a00d6417724526aae7084065a3e6626a7814",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/BDN_pages/46.txt",
+      "bytes": 3317,
+      "sha256": "475fb429088583a15ad5163ed767ef552d4839c7b85926477d7590b946ed52fa",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_0712.3318v1.pdf",
+      "bytes": 273478,
+      "sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_fulltext.txt",
+      "bytes": 57688,
+      "sha256": "e8a9cef142de5a2c4feeb0ba0a8e0d7c9d8a633e81b5e4da344fec379c129fe6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/01.txt",
+      "bytes": 2058,
+      "sha256": "bb77a2c376788f1e0a602167782ac330faf05207e13ac80eb56eba1c03a85231",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/02.txt",
+      "bytes": 4033,
+      "sha256": "a689b5bb141d408ae67f07acf4f5981486d0fd66ad7a4065389f4342347c5f93",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/03.txt",
+      "bytes": 3351,
+      "sha256": "37ece1ca3a8f134de21c5e1eb110ebcf3a5ba4c627c1a1b9d0d39ac4ab2aa24f",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/04.txt",
+      "bytes": 2297,
+      "sha256": "8e666b67b1beb20c26dbd401eb51a25c334e6ab0c123d2d16a6bf56a44ad690c",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/05.txt",
+      "bytes": 2611,
+      "sha256": "97dba1df63717a04e566966d5e165cb060ffbbc78ce21f2ae66cfbc64aad302f",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/06.txt",
+      "bytes": 1722,
+      "sha256": "1ffc32310537f503f0e098c4d3cd0e80d621ebe09386c9723ecc5a774bd64bf2",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/07.txt",
+      "bytes": 3055,
+      "sha256": "b801ee2ed8591937e5d964da3f97cd418f236ddd010813c5f2f39500bce55ace",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/08.txt",
+      "bytes": 2799,
+      "sha256": "31eda68e64f18f6252cb16dd91ca20033a9469daa5317968e1e664249b3d800e",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/09.txt",
+      "bytes": 3177,
+      "sha256": "167b123af1da2160d4925ca33a67f81a4ac3d2cb1a94ed0e6e862d5c355c68a9",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/10.txt",
+      "bytes": 2512,
+      "sha256": "aefe41094404b363cbbe1d85ba883e356ca7b28fc8f7d614cd8a85cc2024b67e",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/11.txt",
+      "bytes": 2636,
+      "sha256": "afc48b8c72ae930d27b742401f09b4881d1e27d3f56265320285a58405d76766",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/12.txt",
+      "bytes": 2029,
+      "sha256": "9847e27cac0b567e997f4dab1904a2a10ab5e11de23207ce1d86f19dc1813ee6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/13.txt",
+      "bytes": 2993,
+      "sha256": "76e966e35f088cc16f46ce9ab4d477c382f41dfb45c753632b29e4ff0a94f5a9",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/14.txt",
+      "bytes": 3621,
+      "sha256": "9f847eeec713137249d2a65941f704ce3a79ccb8a03503713e1430af4d06b3e4",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/15.txt",
+      "bytes": 2360,
+      "sha256": "45cddc89ed239031dfa5adb7509f546b6f0d4e81933a387629ab6708277397e6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/16.txt",
+      "bytes": 3385,
+      "sha256": "1e7e1f6fd8ff7c7b77bd46268f3ae16de096a15724e48772e8f413e7390a09af",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/17.txt",
+      "bytes": 3028,
+      "sha256": "3512db15ef6e02bea758c08db1ebcb1a02ca01ad9852ad0ce61c5ad5dc262862",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/18.txt",
+      "bytes": 2853,
+      "sha256": "8769ed67280085daa3835e2c970bfdd8bed1c5e4a05cf166e5c4939c47d5ae51",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/19.txt",
+      "bytes": 3335,
+      "sha256": "57c8d583413d217e5c1296b7f39b1e118c156c19ee667dc955787329b9c97d62",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/20.txt",
+      "bytes": 2430,
+      "sha256": "bead82be28b6d938c13935ef58e9f0530fc2342f29cc9add9c1881c1c088cb80",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/author_evidence/sources/NS_pages/21.txt",
+      "bytes": 1363,
+      "sha256": "c88d5cc7d8bb2871314d5a07fe567d134e902a1091534b668bfe1e497e60d9e0",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2.pdf",
+      "bytes": 1084655,
+      "sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_extracted.txt",
+      "bytes": 159141,
+      "sha256": "ca58383f3765af0333269b10ee09aaf1319c0e470f3dbaa76468a8ecae35665a",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/01.txt",
+      "bytes": 3437,
+      "sha256": "0ba348c30a024e0665ed93b37912ec7e66136010202c120febb5f3cdfb087932",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/02.txt",
+      "bytes": 3312,
+      "sha256": "84c7813f61932855d194369ebafec87dd7e870ed54691222f29715ce0a990365",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/03.txt",
+      "bytes": 3954,
+      "sha256": "600d8d7170ba71e3b6fb52d98b7e71b4e01b1cee97a12cb5307b0f2475864911",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/04.txt",
+      "bytes": 4310,
+      "sha256": "2f2106c9a98d6dbb6bbf03ece615274ad5ac5e22c65f77670f653300be5910f7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/05.txt",
+      "bytes": 4334,
+      "sha256": "44475db8f50d7071fe5e3fe7ad45a8eb78670f6d26fe47b27fa9b23faadb5fd9",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/06.txt",
+      "bytes": 2925,
+      "sha256": "d6acd67e16c72d7257d91f9f2e1e333e4e7a5332925276ccc7bf3a13b7498901",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/07.txt",
+      "bytes": 3790,
+      "sha256": "c3ad5f4765c429a63285879e6271a007126f277c7bc3dfc32488ecdec3d08591",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/08.txt",
+      "bytes": 2748,
+      "sha256": "e7b602123cc1ac6601735a7818970c8da5ac6d5d38063e6fb1549ed2ddfb58f1",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/09.txt",
+      "bytes": 3068,
+      "sha256": "725317ff0df936dac8c55499473ef32f72bf9586181c1b5a4f0b12a6eb90ab88",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/10.txt",
+      "bytes": 3650,
+      "sha256": "ab4e109585581d1387f32418aa2e7ce478d108034b23159afa817e00137875cf",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/11.txt",
+      "bytes": 3307,
+      "sha256": "b651fdc345eee8424ea27e98b1865bbde88430ac2eba6829a29e34451fc6f6ef",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/12.txt",
+      "bytes": 3036,
+      "sha256": "4ac06adca78aaa89a7566e9e68f0f7673ddc4f6176825ec629a5aaf74da58276",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/13.txt",
+      "bytes": 2861,
+      "sha256": "f0b0c985e6e76724b5d7e38bafc1ae33f881c42304bac33b74733b0f97f87b65",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/14.txt",
+      "bytes": 3479,
+      "sha256": "de885937792487fffa9567ce994c3ee8d45aba748a92040edcc3880bcf018e77",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/15.txt",
+      "bytes": 2896,
+      "sha256": "784f416cc7acb38878f65aa0c7e4ec10f66a41aa2bc04a36649b69d1724ee081",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/16.txt",
+      "bytes": 3221,
+      "sha256": "7a687c313513addfc62271a54c4cfb59d4b12a86eacbf4ad73c906e853ead710",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/17.txt",
+      "bytes": 3378,
+      "sha256": "0c2f55172642d3d3f76e977ad1e43e8da9de7560f422ed99c0d91aad5042f0f3",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/18.txt",
+      "bytes": 3031,
+      "sha256": "a563cd153f265e6c5b7c4c45e11f68fbd80e552d00232ac52dae903c93cfa4f7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/19.txt",
+      "bytes": 3386,
+      "sha256": "f9d40aef20d468124c90f209baff470dab14f6844ef9cf3bd7099fca029747f3",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/20.txt",
+      "bytes": 3589,
+      "sha256": "860e3eaf9fe800713eb83a9171985066335ebc050547ae75e9dc0b42685dec0c",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/21.txt",
+      "bytes": 3423,
+      "sha256": "d0ef6f29df1f0b5e8551a8b8382d1b57393b016ba6a2bdebd8725ff6544867c0",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/22.txt",
+      "bytes": 2845,
+      "sha256": "6f08cd40a20cccf29481238914267b806e2e83bfb23d3f2f0f48e50dceb1bb51",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/23.txt",
+      "bytes": 3425,
+      "sha256": "81ac6ddef69850dbedaeffc72f237309b5054fdd3122d57327467ab61c5fa2e4",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/24.txt",
+      "bytes": 3332,
+      "sha256": "ffaab4c59df3c586ca06909f39650d6a82d4fe26a461d69cae6a8c07e9bd24bd",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/25.txt",
+      "bytes": 3385,
+      "sha256": "50c2c2af672aa7565ec12541fca43c28ac5b4bf277c5911a10204847c606f573",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/26.txt",
+      "bytes": 3197,
+      "sha256": "d052a66347bc09406794ebe67c81266e7be3e2b72a2d2145eac67c39d00a38f9",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/27.txt",
+      "bytes": 3465,
+      "sha256": "80f6e2e219e5e0ea54eb63e010bb22a64dbec65741e33c03d48e981a15a603e6",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/28.txt",
+      "bytes": 3558,
+      "sha256": "0b9b4e49e667128367cd3410449c71a1db8d68fed42a0fadaf5d7ab0ef5a98db",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/29.txt",
+      "bytes": 3237,
+      "sha256": "7f213d2da77e5e9f22804f279006fca381373618278c3893db78bfd4dba96bd3",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/30.txt",
+      "bytes": 3524,
+      "sha256": "d896f3ec14f6debd818053768835343a89fe7fcd880e8adbbfc1c8b161fefd70",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/31.txt",
+      "bytes": 3929,
+      "sha256": "694739f42bda71b5fa3a41d4774d87220d5ee996f80046cda4b98fff4dbe7188",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/32.txt",
+      "bytes": 4777,
+      "sha256": "fe48a10366700ce8a983f5806cd62100645d370acb16e4dff868d963a0b6da9b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/33.txt",
+      "bytes": 4033,
+      "sha256": "68339a3785d3beaea9b21db0a61dcb6f6a9ce51e36d83c8ef2f061fcdb708fed",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/34.txt",
+      "bytes": 4254,
+      "sha256": "f2e5f153fa143e8a6fbf4c0ccfb75277b09a80fe9d73a04f96b68f23bc26c2a2",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/35.txt",
+      "bytes": 3883,
+      "sha256": "f328046555c5cdd3357e75c982892cd5b5a04788924a9cd2baeae5503c42dd66",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/36.txt",
+      "bytes": 3145,
+      "sha256": "a22370dad2657a27135d169d5e8c370ea086530adf8aef578c45b79ffffb3893",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/37.txt",
+      "bytes": 2990,
+      "sha256": "1e55d11796b569d6eb796e18835728813084fa1df8ef1fcdfb18fc889cbe043b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/38.txt",
+      "bytes": 3810,
+      "sha256": "283ae1154ead4233a55ab202e4a13d58d15451e4582dca38d860ea41b1838e08",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/39.txt",
+      "bytes": 3004,
+      "sha256": "29124383c7c3759bd00d0f8a61a34a836b3d141b47544d559467b74aef19735c",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/40.txt",
+      "bytes": 2716,
+      "sha256": "d01a65c11f0c2a6bccb3cd925d052debbe565ffdf1f0fec042521e0b2cd5af88",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/41.txt",
+      "bytes": 3334,
+      "sha256": "a0fa0de2b6a20f305d1d8c07a396bc7e32aa13136decc2eb72c9ed153ad86ac9",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/42.txt",
+      "bytes": 3117,
+      "sha256": "777110c805d6b0c71a7c8f89860f43b66b0395fab5c415866380cfd068883ba1",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/43.txt",
+      "bytes": 3633,
+      "sha256": "e1bbdb6e2af3f0a7d67295a5f404a5dec674f58ac9da7ca38515a929502c6fb4",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/44.txt",
+      "bytes": 3542,
+      "sha256": "5ceced3cb39118a88260b8635e93d2a3a4edb3e2c706eec3916f35ec21231667",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/45.txt",
+      "bytes": 3881,
+      "sha256": "870779c4bf491d59d5d4acf016edc2abf49e467cc8ca20a337ca58e14c7aa526",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/BDN_1412.2970v2_pages/46.txt",
+      "bytes": 3539,
+      "sha256": "c3bf01d6409e0e4621624b6ba0ef711276b10d282f2680b1711eda40659fce3b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1.pdf",
+      "bytes": 273478,
+      "sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_extracted.txt",
+      "bytes": 75121,
+      "sha256": "d27068b74f79415c7cf30bdf8d2241754cf1eab1054b2e1ca88e9ff301d4139a",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/01.txt",
+      "bytes": 2752,
+      "sha256": "b469de35a4f243dd8d0c539f38f1c89d86d3622358d5932ac603d3f2c2e4c69b",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/02.txt",
+      "bytes": 4095,
+      "sha256": "b2202ab810dedca0329c03f69b13d4757d1a858acb84b0593f472243300d94c3",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/03.txt",
+      "bytes": 3912,
+      "sha256": "6cfa9a8e6fb5eca8a2a45833ce0f60248978e1d3c8d29a88057d67c61cc87cf6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/04.txt",
+      "bytes": 3384,
+      "sha256": "ff95e5b97c7a0e0854c10aff65f8635a8d502fbfdb27667c4387b468fa5b68b9",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/05.txt",
+      "bytes": 4028,
+      "sha256": "f919311f68e24577b0e979c9b1a723fa03ecb6b1d2ce23272fc657829293f466",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/06.txt",
+      "bytes": 3952,
+      "sha256": "4433e8f0a01763e09ac0a62dedaca4c081b060d24cac118cb6f3c5f497877490",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/07.txt",
+      "bytes": 3920,
+      "sha256": "bbbc7ff720de0782dde22e044f1cd3594fb622dc8233644678cb9169ee7c9407",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/08.txt",
+      "bytes": 3827,
+      "sha256": "90c04241f234314cf0a21a8709e30ccff0af01444cd7b54d03b1464d61cd6636",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/09.txt",
+      "bytes": 3680,
+      "sha256": "a8179b7d136407a8cb0ffb2021e7c744e300b2b9eaed337e8252a7f45c7ba26f",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/10.txt",
+      "bytes": 3954,
+      "sha256": "a6fb392968c3e135f0c9c101499e19b70c3f4ec792625d80421a9285561ed8ed",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/11.txt",
+      "bytes": 4059,
+      "sha256": "a6612ac39e33dfcce06b8c2b66d6de64961d806174f0580b2294f862cacfc350",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/12.txt",
+      "bytes": 3010,
+      "sha256": "59b337c272233b05a7b516e3123e7b25d805a4b214b9e989da7c91eb401fe6a5",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/13.txt",
+      "bytes": 3740,
+      "sha256": "3d151b5052599a83f17debfa79e81234ec1b720e635dd553d49fba248affdfc7",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/14.txt",
+      "bytes": 4073,
+      "sha256": "f6e78f6227ee2cd338aa2314d8bae9248ded6e6e37c1c78d59b1dc33738d9272",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/15.txt",
+      "bytes": 3553,
+      "sha256": "d30b73246f915bc4f6197accbb8c75fcbd45c71eba7e74c79708df09b4d7c672",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/16.txt",
+      "bytes": 3917,
+      "sha256": "515f6bba358b08c7a370cf0af16517d2079d26ce8ba05b32c5a3ad9346c64cc9",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/17.txt",
+      "bytes": 3397,
+      "sha256": "40cae71ef497ffd594109737663fa402bd783df22f445df6a07f6037b21cc22a",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/18.txt",
+      "bytes": 3608,
+      "sha256": "15510c52dbf8ee530acaf2bb4457f7ff7ec1ff1cf5ec0290d103e284ab48898e",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/19.txt",
+      "bytes": 3929,
+      "sha256": "e1e76cce2249c4e9dfdd9935cc2f007f3f934193b59d043d130b342cc2895944",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/20.txt",
+      "bytes": 2615,
+      "sha256": "cddbc991d721947a1056e7798a354fdfdf1c72765d2bd0d1f069ecdc0c2b3e7f",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_fock_review/sources/NS_0712.3318v1_pages/21.txt",
+      "bytes": 1515,
+      "sha256": "004c9477813092e7afa248bcba8891713fc4236396382ea3a7d55a2c46f60423",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_1412.2970v2.pdf",
+      "bytes": 1084655,
+      "sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_fulltext.txt",
+      "bytes": 132824,
+      "sha256": "b9d17b5846bb6ad6d511caf7437819f365b91b54e9030303baeb29f428a7b019",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/01.txt",
+      "bytes": 3107,
+      "sha256": "e9407cf31aba2b867ec1d00d31b02281ac84a6c1bcc3ee8b5a510392323dc537",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/02.txt",
+      "bytes": 3182,
+      "sha256": "7fbe92cf245eabe4c4b1f64be3ec83da420ed6a09a799733a0a947e26cd79d6a",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/03.txt",
+      "bytes": 3278,
+      "sha256": "c0109d3c9aaa7859557fec0395ec2c7a48eff47cea2be6c5c136fa345af77f00",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/04.txt",
+      "bytes": 4086,
+      "sha256": "a36cf6fe82d9f3452b616cafb68e97d49f90a88fb84e6dc4151e045bb2390c00",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/05.txt",
+      "bytes": 4320,
+      "sha256": "eb572c8a8b995bfbdb6ca5c3ea130a0cfcfe6799b9085a94e31b8533d7f1c4b2",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/06.txt",
+      "bytes": 1938,
+      "sha256": "49a33dd5d80f15d46cf0e91584eb7b36bd3455abfc283b9a3ddc0c414981de9d",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/07.txt",
+      "bytes": 2881,
+      "sha256": "1600eaad96bc14593195b3cf71b296174603512f6591dca645a9b9662845df8b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/08.txt",
+      "bytes": 2461,
+      "sha256": "b643684933ad885752a2a4b6a6a4025b983c69be069b78cd5a23cc0a6e9308d6",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/09.txt",
+      "bytes": 2490,
+      "sha256": "c4d98da820a19091ef3c0370e698c9632dd0adc5d3fe623cf4312369a8a25475",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/10.txt",
+      "bytes": 2675,
+      "sha256": "781d0cb5e526af48d05b223f00c1f58f1d351a7fab4fb9921f3a189da2ca73ec",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/11.txt",
+      "bytes": 2912,
+      "sha256": "362b602895541744ae09a56d804218ddec8f38b38edd228238d5d16bcf27e67f",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/12.txt",
+      "bytes": 2693,
+      "sha256": "f129835283fcc6c8f384271ee9e07c413c84c154d43e34b9c9a2d7d2f7ec1ee3",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/13.txt",
+      "bytes": 2648,
+      "sha256": "06fc5f84848efb95b8b59848df44f7f74d3a307419933c5d16710ee25c224432",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/14.txt",
+      "bytes": 2895,
+      "sha256": "bb31f321c5db8a53a0f9546c0abc417a08934bcbe68cf61a0134ba6aee1054ed",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/15.txt",
+      "bytes": 2538,
+      "sha256": "5250f38f573b06ac8acb679dde6a146f4e17c13e541b6348916680e645337366",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/16.txt",
+      "bytes": 2439,
+      "sha256": "87a76c4e28313032f8d66374c4e433147f2ee4628fd9c0a22b6d4947b4509f59",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/17.txt",
+      "bytes": 2814,
+      "sha256": "b0374bc255b8143a525138acf4133d215eacff22d2469698a52c28fafe0d2ca7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/18.txt",
+      "bytes": 2344,
+      "sha256": "6e135e81be454c2bbe1b7a860e4528df54b1ce2e202b03a3c12a136508a53cc7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/19.txt",
+      "bytes": 2940,
+      "sha256": "91cedac014c2f5eba8339a198697c3977070872e7a5b41341c17a09fc0923297",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/20.txt",
+      "bytes": 3179,
+      "sha256": "abb0e01074c2461e9b8887524b5e7517d6b61c41b6223706b53c7c10ca692108",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/21.txt",
+      "bytes": 2642,
+      "sha256": "13758462ffc6849562f99d4abba16c60d381d0e5277c3aba5db0b60664c7c0d0",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/22.txt",
+      "bytes": 2304,
+      "sha256": "10c1102d8c6ca2e43529738e6f6bb021683a0d1fe210ec97ff278f79866e2023",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/23.txt",
+      "bytes": 2567,
+      "sha256": "a6e8c60574fae55e7c6fd16ae05eb7a8d6022573d4d17019b347b214e7b22b57",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/24.txt",
+      "bytes": 3035,
+      "sha256": "b975f71d54d5b33be1586e2c8d61daca9ef6aeec69fc83675767a17540aaf6ef",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/25.txt",
+      "bytes": 2655,
+      "sha256": "2d42870dce9d5bf2d570b4118169ec35dab200e2f091cdebccb511557b5f277c",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/26.txt",
+      "bytes": 2710,
+      "sha256": "4d1b7a985b606ff94122b367f9889d6877449c0d54babfa6a64b148f130d1be6",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/27.txt",
+      "bytes": 2486,
+      "sha256": "41d24b649df055d952a2fb6bfc591b13e52b2bfd33a1ae43ddb56ff3939956d4",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/28.txt",
+      "bytes": 2952,
+      "sha256": "ccc5c812a2fd75685823f7f15b9211cce62fe158b9bcc3c99d1e6651d0e231f9",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/29.txt",
+      "bytes": 2479,
+      "sha256": "60e027ab5fc09dcd7ebb49a1407d01c30657b21de1aa07b937fed87f86c626f7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/30.txt",
+      "bytes": 2820,
+      "sha256": "ad1899214f3c31b590d0b12d366d4fc5cb71d7eb4e5b0047d830e8ceab17c22a",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/31.txt",
+      "bytes": 3449,
+      "sha256": "164e272b15c807e4ab500b01d96e28f0aaef6a193ad04c5b3205685ae40c68d2",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/32.txt",
+      "bytes": 3515,
+      "sha256": "bae9ecf1ac48870f43dcadcc1c0458424d2e44981639c6731821be127e2c6f0d",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/33.txt",
+      "bytes": 3985,
+      "sha256": "9df9c36e1fe717edda1a49bbb00a8045faacc5402cce7167b7d492612e76e46b",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/34.txt",
+      "bytes": 4234,
+      "sha256": "a194bf379067844f01b3dcbab12361121933dc1175e52bd2dcd3ccd80f58a600",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/35.txt",
+      "bytes": 3308,
+      "sha256": "8e5401f97d7b0efccccddbb235bdb32c6c1184f31eb13b7de2fd774222279c42",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/36.txt",
+      "bytes": 2119,
+      "sha256": "75d21825644a82138780be96c72f29b91bd512826fb0a400aaaa69fb29ac3e51",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/37.txt",
+      "bytes": 2486,
+      "sha256": "bafd51b1375e5dcecf4bfd8517ca027d21ffab4606706419fce264dd33aed0da",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/38.txt",
+      "bytes": 2595,
+      "sha256": "2f99410060c236009b7eeebae51a5039eb890b606a9216f0087ae86ee22e65ac",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/39.txt",
+      "bytes": 2239,
+      "sha256": "97e6992d2de3647aa4dbbdee1abfa80b95fdf6bd748985f506f9b7c99eeb56af",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/40.txt",
+      "bytes": 2058,
+      "sha256": "889919f763be5d48c22189e6fea1faae721af08bf62603c61fc93aec55665bbb",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/41.txt",
+      "bytes": 2662,
+      "sha256": "3a29384621f815a292cff8d76115c5b3cf6fb1d03167fd4ba2760f87805ba594",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/42.txt",
+      "bytes": 2298,
+      "sha256": "49f86b358635d541219eb770533400f95fd41ab69ea2db9df7ab63ce14db36e7",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/43.txt",
+      "bytes": 2246,
+      "sha256": "b3e664253049eb8aeb0ee7381b9cdf01f51e05ca0b2716e44ea42ad59d6bbca5",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/44.txt",
+      "bytes": 3303,
+      "sha256": "e569bac588b39c192da7c25d10d9327f50759fb6adfe4bed759db38be7866d68",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/45.txt",
+      "bytes": 3584,
+      "sha256": "20bb0924018c6987a0c845163cf8a00d6417724526aae7084065a3e6626a7814",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/BDN_pages/46.txt",
+      "bytes": 3317,
+      "sha256": "475fb429088583a15ad5163ed767ef552d4839c7b85926477d7590b946ed52fa",
+      "primary_url": "https://arxiv.org/pdf/1412.2970v2",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_0712.3318v1.pdf",
+      "bytes": 273478,
+      "sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_fulltext.txt",
+      "bytes": 57688,
+      "sha256": "e8a9cef142de5a2c4feeb0ba0a8e0d7c9d8a633e81b5e4da344fec379c129fe6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/01.txt",
+      "bytes": 2058,
+      "sha256": "bb77a2c376788f1e0a602167782ac330faf05207e13ac80eb56eba1c03a85231",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/02.txt",
+      "bytes": 4033,
+      "sha256": "a689b5bb141d408ae67f07acf4f5981486d0fd66ad7a4065389f4342347c5f93",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/03.txt",
+      "bytes": 3351,
+      "sha256": "37ece1ca3a8f134de21c5e1eb110ebcf3a5ba4c627c1a1b9d0d39ac4ab2aa24f",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/04.txt",
+      "bytes": 2297,
+      "sha256": "8e666b67b1beb20c26dbd401eb51a25c334e6ab0c123d2d16a6bf56a44ad690c",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/05.txt",
+      "bytes": 2611,
+      "sha256": "97dba1df63717a04e566966d5e165cb060ffbbc78ce21f2ae66cfbc64aad302f",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/06.txt",
+      "bytes": 1722,
+      "sha256": "1ffc32310537f503f0e098c4d3cd0e80d621ebe09386c9723ecc5a774bd64bf2",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/07.txt",
+      "bytes": 3055,
+      "sha256": "b801ee2ed8591937e5d964da3f97cd418f236ddd010813c5f2f39500bce55ace",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/08.txt",
+      "bytes": 2799,
+      "sha256": "31eda68e64f18f6252cb16dd91ca20033a9469daa5317968e1e664249b3d800e",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/09.txt",
+      "bytes": 3177,
+      "sha256": "167b123af1da2160d4925ca33a67f81a4ac3d2cb1a94ed0e6e862d5c355c68a9",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/10.txt",
+      "bytes": 2512,
+      "sha256": "aefe41094404b363cbbe1d85ba883e356ca7b28fc8f7d614cd8a85cc2024b67e",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/11.txt",
+      "bytes": 2636,
+      "sha256": "afc48b8c72ae930d27b742401f09b4881d1e27d3f56265320285a58405d76766",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/12.txt",
+      "bytes": 2029,
+      "sha256": "9847e27cac0b567e997f4dab1904a2a10ab5e11de23207ce1d86f19dc1813ee6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/13.txt",
+      "bytes": 2993,
+      "sha256": "76e966e35f088cc16f46ce9ab4d477c382f41dfb45c753632b29e4ff0a94f5a9",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/14.txt",
+      "bytes": 3621,
+      "sha256": "9f847eeec713137249d2a65941f704ce3a79ccb8a03503713e1430af4d06b3e4",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/15.txt",
+      "bytes": 2360,
+      "sha256": "45cddc89ed239031dfa5adb7509f546b6f0d4e81933a387629ab6708277397e6",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/16.txt",
+      "bytes": 3385,
+      "sha256": "1e7e1f6fd8ff7c7b77bd46268f3ae16de096a15724e48772e8f413e7390a09af",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/17.txt",
+      "bytes": 3028,
+      "sha256": "3512db15ef6e02bea758c08db1ebcb1a02ca01ad9852ad0ce61c5ad5dc262862",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/18.txt",
+      "bytes": 2853,
+      "sha256": "8769ed67280085daa3835e2c970bfdd8bed1c5e4a05cf166e5c4939c47d5ae51",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/19.txt",
+      "bytes": 3335,
+      "sha256": "57c8d583413d217e5c1296b7f39b1e118c156c19ee667dc955787329b9c97d62",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/20.txt",
+      "bytes": 2430,
+      "sha256": "bead82be28b6d938c13935ef58e9f0530fc2342f29cc9add9c1881c1c088cb80",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/sources/NS_pages/21.txt",
+      "bytes": 1363,
+      "sha256": "c88d5cc7d8bb2871314d5a07fe567d134e902a1091534b668bfe1e497e60d9e0",
+      "primary_url": "https://arxiv.org/pdf/0712.3318v1",
+      "recovery": "Exact primary reference remains external; not redistributed in this PR."
+    }
+  ]
+}

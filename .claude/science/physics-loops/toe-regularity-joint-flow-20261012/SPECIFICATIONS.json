@@ -1,0 +1,174 @@
+{
+  "base_revision": "dc7f415f73df3754653f4985382ca0fb96f07cda",
+  "packet": ".claude/science/physics-loops/toe-regularity-joint-flow-20261012",
+  "specs": [
+    {
+      "key": "Nonisolated_mass",
+      "prefix": "NONISOLATED_MASS_SCATTERING",
+      "slug": "nonisolated_mass_scattering",
+      "source": "NONISOLATED_MASS_SCATTERING_PROBE.md",
+      "source_sha": "afd35b7b1ec2e564e7ea418b1233148009509359212db8312599cb535bb6b80d",
+      "folder": "nonisolated_mass_scattering",
+      "review": "nonisolated_mass_review",
+      "helper": "check_nonisolated_controls.py",
+      "report": "NONISOLATED_MASS_SCATTERING_REVIEW.md",
+      "report_sha": "09da880b4ebdf629cffcc72c490176e6706b0ae4b01790eb3a267b6d8b284143",
+      "author_receipt": "FINAL_RECEIPT.json",
+      "review_receipt": "FINAL_RECEIPT.json",
+      "dependency_keys": [
+        "SC",
+        "Fock"
+      ],
+      "scope": "Under actual finite-range physical dynamics, a unique gapped vacuum, supplied stable graph sectors, positive full-operator transfer and geometric detuning regularity, fixed finite velocity-separated time-averaged products have incoming/outgoing limits independent of admissible creators and every fixed sublinear power width. No Fock, density, detector, exhaustion or microscopic-realization conclusion is supplied.",
+      "conditional": "Finite-product scattering from an explicit geometric detuning bound on each residual packet",
+      "claim_reason": "Actual dynamics, stable graph sectors, positive transfer and regular seed vectors remain supplied; the analytic implication is conditional.",
+      "consumer": "A future independently checked nonexact-vacuum Fock and detector extension on actual regular creator classes.",
+      "next_action": "Construct regular creators and establish their target density in an actual model; separately check Fock and detector extensions.",
+      "baseline_stdout": "nonisolated_mass_scattering/author_controls.stdout",
+      "comparison": "All original scientific JSON rows must match exactly. Only the historical independence wording in the final summary and appended scope/totals may differ.",
+      "mutation_source": "nonisolated_mass_review/controls/run_author_mutations.py",
+      "mutation_results": "nonisolated_mass_review/AUTHOR_MUTATION_RESULTS.json",
+      "mutation_limits": "Preserve fourteen mutations: eleven rejected defects, two nondiscriminating defect gates and one benign weakened padding inequality. Do not silently repair these gates.",
+      "supplemental_control": "nonisolated_mass_review/controls/check_general_beta_conversion.py",
+      "note": "NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "nonisolated_mass_scattering_2026_10_12.py",
+      "claim": "nonisolated_mass_scattering_bounded_theorem_note_2026-10-12",
+      "dependencies": [
+        {
+          "note": "COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+          "sha256": "3adc57d0236fced52704aa76e4fa7d38abbe08204623162c8fd07404a2a44a05",
+          "role": "Compact-patch signs, locality, packet and cutoff framework; the needed arguments are reconstructed, without importing isolated-shell scattering conclusions."
+        },
+        {
+          "note": "COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "sha256": "494c283c163e88f959841462bbfbcfcc7c470072a0525d0dd6e2b44dd6f9b12b",
+          "role": "F7-F9 mixed-lowering finite-energy proof mechanism, reproduced at the actual mass-note hypotheses; no Fock Gram, density or isometry conclusion is imported."
+        }
+      ],
+      "prerequisites": [
+        "COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+        "COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11",
+        "compact_patch_fock_isometry_bounded_theorem_note_2026-10-12"
+      ],
+      "timeout_sec": 60,
+      "helper_sha": "e9855d835ab0778b5e2a0dba6bb22b7b77b3e838c2ae8dd0f29b7fc2550e5ea1",
+      "author_receipt_sha": "2a225e88a77732d8ca02db35f8d4c50371b9e57fdfe3d186b5c9210911df64f6",
+      "review_receipt_sha": "9f2a7ef9c691f0edfbcc257340444b4923dcb48e771fa5e41a9d4f19f5573da4",
+      "audit_inputs": [
+        "docs/NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+        "docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "canonical_execution_status": "not_run_by_preparation"
+    },
+    {
+      "key": "Centre_regularity",
+      "prefix": "CENTRE_REGULARITY_TO_GEOMETRIC",
+      "slug": "centre_regularity_to_geometric",
+      "source": "CENTRE_REGULARITY_TO_GEOMETRIC_PROBE.md",
+      "source_sha": "9ec8c3148442f981d6b3d4d38027ffde0d2a64adbd6e4664d6a24b5d3d06608a",
+      "folder": "centre_regularity_to_geometric",
+      "review": "centre_regularity_review",
+      "helper": "analytic_control.py",
+      "report": "CENTRE_REGULARITY_TO_GEOMETRIC_REVIEW.md",
+      "report_sha": "bdeb88293de00f16e45a6747f46edda8c3391db5fdf3f1503c7a584b68ac3703",
+      "author_receipt": "FREEZE_RECEIPT.json",
+      "review_receipt": "FINAL_REVIEW_RECEIPT.json",
+      "dependency_keys": [
+        "Centre"
+      ],
+      "scope": "On an exactly selected positive isolated mass and one fixed joint lift chart, a supplied product spectral carrier, residual momentum H1 regularity and a central spectral power bound imply the geometric norm exponent a/(2a+1) and the exact chartwise graph projection. A supplied scalar massive boost representation gives a separate domain-to-H1 implication. Actual regular almost-local seed existence, density and microscopic realization remain open.",
+      "conditional": "Geometric spectral regularity from explicit joint-carrier, Sobolev and central-rate hypotheses",
+      "claim_reason": "The fixed-mass representation, Sobolev trivialization and actual creator regularity remain supplied, and abstract vector density is not operator density.",
+      "consumer": "A separately checked time-averaged scattering argument after matching the actual creator, transfer, graph and regularity hypotheses.",
+      "next_action": "Identify a checked joint carrier and boost gauge for actual almost-local seed vectors, then prove their central rate and target density.",
+      "baseline_stdout": "centre_regularity_to_geometric/logs/analytic_control_frozen_candidate.stdout",
+      "comparison": "Canonical stdout must begin with every original stdout byte; only completion totals and an explicit finite-scope limitation may follow.",
+      "mutation_source": "centre_regularity_review/mutation_study.py",
+      "mutation_results": "centre_regularity_review/MUTATION_RESULTS.json",
+      "mutation_limits": "Preserve the zero tent integral and omitted quadratic-term survivors of author upper-bound gates; independent exact Simpson rejects both. Do not modify calculations to hide the limitation.",
+      "supplemental_control": "centre_regularity_review/tent_integral_control.py",
+      "note": "CENTRE_REGULARITY_TO_GEOMETRIC_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "centre_regularity_to_geometric_2026_10_12.py",
+      "claim": "centre_regularity_to_geometric_bounded_theorem_note_2026-10-12",
+      "dependencies": [
+        {
+          "note": "ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "sha256": "1671b4cfa7a24e42875b3aa142444cdc034b1087a26325514d1dc0de8615051f",
+          "role": "Supplied commuting-flow/mass premises, fixed almost-local filtering, exact isolated-mass selection and selected lift; no central isolation or downstream scattering/detector conclusion is imported."
+        }
+      ],
+      "prerequisites": [
+        "ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "isolated_centre_filtering_bounded_theorem_note_2026-10-12"
+      ],
+      "timeout_sec": 60,
+      "helper_sha": "b0623963415f4b0ad04b035832c5be793404eb885933c9150cd58133dcc4fbfb",
+      "author_receipt_sha": "08c7d067c972b8351d491f799f7c397d060b38c8bacec4b47dfb6f76727e4ca6",
+      "review_receipt_sha": "0032ce4b7688228cc8200acd2997ac0978474f5ee8c6347636349a215798e6bc",
+      "audit_inputs": [
+        "docs/CENTRE_REGULARITY_TO_GEOMETRIC_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "canonical_execution_status": "not_run_by_preparation"
+    },
+    {
+      "key": "Joint_flow",
+      "prefix": "MICROSCOPIC_JOINT_FLOW",
+      "slug": "microscopic_joint_flow",
+      "source": "MICROSCOPIC_JOINT_FLOW_PROBE.md",
+      "source_sha": "35bcb1013b0716a4faa33fdbd75ff067427c1dec8e377f63ebb17ac301786ebd",
+      "folder": "microscopic_joint_flow",
+      "review": "microscopic_joint_flow_review",
+      "helper": "controls/joint_controls.py",
+      "report": "MICROSCOPIC_JOINT_FLOW_REVIEW.md",
+      "report_sha": "9699043c35343901ef75ab6a29dd560ba4aa30f8a3b908643e959958e86447c9",
+      "author_receipt": "receipt.json",
+      "review_receipt": "receipt.json",
+      "dependency_keys": [
+        "Current"
+      ],
+      "scope": "A finite family of supplied self-adjoint generators with bounded finite-range spin actions on the actual local cyclic domain and exact pairwise commutation there has strongly commuting spectral measures and commuting microscopic norm flows. Translation-covariant finite densities admit a complete one-site criterion and scalar-plus-local-divergence classification. No generic current conservation, integrated Poincare model or physical realization is derived.",
+      "conditional": "Strong joint commutation from exact local-vector commutation and finite-range actions",
+      "claim_reason": "The finite-range actions and self-adjoint generators remain supplied; exact commutation on their actual local cyclic domain is sufficient.",
+      "consumer": "The strong joint-commutation premise of compact-patch microscopic H/current scattering constructions, once the intended model supplies the exact local identities.",
+      "next_action": "Verify the full one-site conservation and cross-current identities for the intended model with actual self-adjoint generators and local actions.",
+      "baseline_stdout": "microscopic_joint_flow/logs/controls.run1.stdout.jsonl",
+      "comparison": "All thirty-seven scientific JSON rows remain byte-identical; final source_sha256 is recomputed from canonical bytes. Only the adjacent result JSON write is suppressed, and scoped totals are added.",
+      "mutation_source": "microscopic_joint_flow/run_mutations.py",
+      "mutation_results": "microscopic_joint_flow/mutations/summary.json",
+      "mutation_limits": "Retain all five failed whole-source mutants and every passing nondiscriminating row. Source hashes change through the explicit canonical packaging transformations.",
+      "supplemental_control": "microscopic_joint_flow_review/independent_controls.py",
+      "note": "MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "microscopic_joint_flow_2026_10_12.py",
+      "claim": "microscopic_joint_flow_bounded_theorem_note_2026-10-12",
+      "dependencies": [
+        {
+          "note": "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "sha256": "e97ba0f26e1a21f3a4cd231c1abc9c97b8fbdc0b127bcfb6354aef37e4a54ccf",
+          "role": "I14-I29 individual norm-flow construction and full canonical GNS implementation; I1-I13 additionally supplies the current-density application."
+        }
+      ],
+      "prerequisites": [
+        "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12"
+      ],
+      "timeout_sec": 60,
+      "helper_sha": "25ebb1eb9068fc7586eb2fa207cbcb28e245f2eb32bcfe4b7600f8dca34575b9",
+      "author_receipt_sha": "afdfaff1e0a1c4a6843cbfd0d49c449d37bed0d62052b967c92ac9c38582984c",
+      "review_receipt_sha": "a31a20468660e38ff42bf215dd84832a1f722551c29ea770156dfc71781d4b06",
+      "audit_inputs": [
+        "docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "canonical_execution_status": "not_run_by_preparation"
+    }
+  ]
+}

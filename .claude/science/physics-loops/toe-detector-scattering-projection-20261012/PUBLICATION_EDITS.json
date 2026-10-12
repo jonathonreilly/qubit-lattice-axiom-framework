@@ -1,0 +1,56 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/DETECTOR_SCATTERING_PROJECTION_PROBE.md",
+      "source_sha256": "91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4",
+      "preserved_source": "evidence/DETECTOR_SCATTERING_PROJECTION_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# A countable detector resolution of the constructed scattering projection",
+          "after": "---\nclaim_id: detector_scattering_projection_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For the stated selected outgoing scattering sector and narrow bounded Borel energy windows, a countable family of admissible positive detectors has support exactly the selected scattering projection. Ordered detector-time, family and resolvent limits recover it; a conditional finite-time response gives a one-sided lower witness. No full-GNS exhaustion, physical realization, effective enumeration or numerical witness constants are proved.\"\nupstream_dependencies:\n  - compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11\n  - compact_patch_fock_isometry_bounded_theorem_note_2026-10-12\n  - compact_detector_convergence_bounded_theorem_note_2026-10-12\nrunner: scripts/detector_scattering_projection_2026_10_12.py\nactual_current_surface_status: conditional-support\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# A countable detector resolution of the constructed scattering projection",
+          "reason": "Register the exact conditional scope and actual proof dependencies."
+        },
+        {
+          "before": "**Claim type:** conditional bounded theorem. **Author status:** proof proposed; independent reconstruction required. The compact detector convergence dependency PC received a separate source-bound independent review during this derivation; its original source is unchanged. The new projection theorem has not been independently checked. Root proposed the route and is a contributor, not an independent reviewer. No physical realization, retained audit status, no-common-kernel condition ND, or full-GNS exhaustion EX is asserted.",
+          "after": "**Claim type:** bounded theorem. **Status:** conditional-support. A separate complete P1\u2013P33 reconstruction found no required mathematical correction. The compact detector convergence dependency PC also has a separate source-bound review. Root proposed the route and is a contributor, not an independent reviewer. No physical realization, retained audit status, no-common-kernel condition ND, or full-GNS exhaustion EX is asserted.",
+          "reason": "Record the completed focused proof review; no theorem or premise changes."
+        },
+        {
+          "before": "Write S for `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011`. The read-only repository source is `c3f84746b1991e0a15c6da79d049b89d9469f727`; planning instructions are `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`. All predecessor files remain unchanged.",
+          "after": "S denotes the original external research collection. The [complete projection milestone packet](../.claude/science/physics-loops/toe-detector-scattering-projection-20261012/) preserves the frozen argument, author evidence, separate review and exact reconstruction maps. Its EVIDENCE_MAP.json records external primary-source recovery without redistributing complete papers. The actual in-branch premises are the [compact-creator construction](COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md), [selected Fock isometry](COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md) and [detector convergence](COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md). Original source identities below remain unchanged. The author acquired sourcec3f84746b1991e0a15c6da79d049b89d9469f727; the reviewed E/PC publication advanced the branch to296155eda2ca6a5ab6ae6307190362b9a84ea690. Planning remains3a4b2c66a1ead7a1c48b4359627e968f681e3c39.",
+          "reason": "Provide portable recovery and all three actual proof dependencies."
+        },
+        {
+          "before": "The new theorem still needs its own independent review.",
+          "after": "The new theorem has now received its own complete independent reconstruction; the exact report and limits are appended below.",
+          "reason": "Refresh the completed review obligation only."
+        },
+        {
+          "before": "Only this note and `detector_scattering_projection/` were written for this task.",
+          "after": "Frozen author operational record: only this note and `detector_scattering_projection/` were written for the author task.",
+          "reason": "Label the preserved author-only operation record as historical, distinct from subsequent publication."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and remaining scope\n\nThe complete separate report has SHA256\n`d9ab71d88615c78cb49eda7cc85ff263d65c12be6cc6e019314cd96eb42a20a2`,\nwith receipt`1fed9654096e0c67535640f60c1f1c318ac313c1436d84a21c4544b744f6ce3b`.\nThe full reconstruction and distinct exact-rational control were frozen before\nnew author evidence, at01:55:53UTC, record\n`76c3d7adfc4cfa8d5c77f427aa35f8aaf1615b08e537103b9f6677eb985f895a`.\nNo required proof correction was found. Root read the complete source,\nreconstruction and control evidence and is a coauthor, not a second independent\nreviewer. Neither same-family context separation nor source hashes establish\nindependence of shared physical premises.\n\nThe [finite projection control](../scripts/detector_scattering_projection_2026_10_12.py) preserves the entire\noriginal helper. Its rank-one witness sweep does not distinguish every invalid\nuniversal error formula: a linear-error substitution passes that toy family.\nThis limitation and its complete passing output are preserved. The separately\nchecked scalar case Q=(1/16)E gives zero true selected component and a false\nlower witness3/4 under the linear-error formula. The primary includes that\nexplicit exact scalar discriminator. P32 supplies the actual universal\nsquare-root proof; neither toy family establishes analytic propagation.\n\nPUBLICATION_EDITS.json and reconstruct.py recover the complete note and primary\nfrom frozen bytes and explicit metadata/evidence additions. DELIVERY_CHECKS.md\nrecords canonical execution, actual whole-primary defects and the outstanding\nindependent audit gates. No Lean certificate, physical realization, effective\nenumeration, numerical witness constants, ND, EX or retained status is claimed.\nThe live campaign checkpoint remains toe-dynamics-bridge-20261009 in the\ntransport worktree; this packet is a frozen milestone snapshot.\n",
+      "publication_path": "docs/DETECTOR_SCATTERING_PROJECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "000f612a7008454755251b153cc7ac8755dc7a81030024be4057a25141fca497"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/detector_scattering_projection/check_projection_algebra.py",
+      "source_sha256": "6152016d6bf85e8691f69eb15bf082239d1ecb50c742257265079be4887a972f",
+      "preserved_source": "evidence/detector_scattering_projection/check_projection_algebra.py.gz",
+      "edits": [
+        {
+          "before": "from fractions import Fraction as F\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/DETECTOR_SCATTERING_PROJECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n    \"docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\nfrom fractions import Fraction as F\n",
+          "reason": "Declare exact input paths and timeout; preserve all original finite calculations."
+        }
+      ],
+      "appended_text": "\n# The reviewed scalar positive-operator case discriminates a universal error\n# formula that the original rank-one sweep does not distinguish.\n_scalar_lambda = F(1, 16)\n_scalar_response = F(1, 4)\n_scalar_error = F(1, 4)\nassert _scalar_response * _scalar_response == _scalar_lambda\n_correct_witness = max(F(0), _scalar_response - _scalar_error) / _scalar_response\n_wrong_linear_witness = max(F(0), _scalar_response - _scalar_lambda) / _scalar_response\nassert _correct_witness == 0, \"scalar positive operator needs the square-root error\"\nassert _wrong_linear_witness == F(3, 4)\nprint(json.dumps({\"control\": \"reviewed_scalar_witness\", \"Q\": \"(1/16)E\",\n                  \"actual_selected_norm\": \"0\", \"correct_witness\": str(_correct_witness),\n                  \"wrong_linear_witness\": str(_wrong_linear_witness)}, sort_keys=True))\nprint(\"per_element: finite exact filtering, support and noncommuting resolvent identities checked\")\nprint(\"per_site: finite matrix fixtures only; no microscopic physical model constructed\")\nprint(\"per_mode: finite tensor masks checked; continuum coverage uses the written proof\")\nprint(\"per_block: narrow-window arithmetic and positive finite sums checked\")\nprint(\"lattice_wide: checked and not executed \u2014 analytic scattering projection and ordered limits are proved in P1-P33\")\nprint(\"TOTAL: PASS=7 FAIL=0\")\nprint(\"SCOPE: Six original finite control groups plus the exact scalar discriminator; no ND, EX or physical realization.\")\n",
+      "publication_path": "scripts/detector_scattering_projection_2026_10_12.py",
+      "publication_sha256": "b647f6540f147803bb9f2243e58f49d1977a7bc71e9ece93aa7addb2fa9fed3e"
+    }
+  ]
+}

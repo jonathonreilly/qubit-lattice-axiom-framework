@@ -1,0 +1,11 @@
+loop: toe-centre-current-20261012
+mode: milestone_snapshot
+delivery: milestone
+active_branch: physics-loop/toe-compact-patch-scattering-20261011
+base_revision: f6f4348151734908dea3b32048ee1f36f694035b
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+independent_check: two_separate_complete_source_reviews
+pr: 9486
+pr_status: preparing_regular_extension
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree

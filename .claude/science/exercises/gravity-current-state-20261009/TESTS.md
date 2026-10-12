@@ -2998,7 +2998,7 @@ Readings:
 - **FAIL:** propagation decoheres the frame within observed scales, so per-realization physics, and the R4-1 obstruction, return.
 - **INCONCLUSIVE:** otherwise.
 
-### C5 Round 6 (pre-registered 14:30Z from the S5 synthesis, agents/C5_S5_synthesis.md; readings fixed as drafted below)
+### C5 Round 6 (pre-registered 14:19Z from the S5 synthesis, agents/C5_S5_synthesis.md; readings fixed as drafted below)
 
 Launch order: R6-1, R6-2, R6-3 and R6-5 now; R6-4 when a slot frees; R6-6 only on its stated condition. Draft text verbatim from S5 §5:
 

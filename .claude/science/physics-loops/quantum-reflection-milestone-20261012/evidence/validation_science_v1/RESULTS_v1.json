@@ -1,0 +1,63 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "commit": "0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6",
+  "tree": "8069c8dfe91c5ce189373c22c5bbcf90e3e498de",
+  "worktree": "/private/tmp/quantum-reflection-validation-20261012",
+  "scope": "frozen scientific milestone commit, with later review evidence/metadata outside this validation tree",
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh",
+      "--stage-citation-manifest"
+    ],
+    [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "origin/main",
+      "--include-worktree",
+      "--json"
+    ]
+  ],
+  "results": [
+    {
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh",
+        "--stage-citation-manifest"
+      ],
+      "exit": 0,
+      "log": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/milestone_validation/gate-1_v1.log",
+      "sha256": "6fca92878f0e3d091743361fda6018d60e92faafb8e86f68b44777b0877412df"
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit": 0,
+      "log": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/milestone_validation/gate-2_v1.log",
+      "sha256": "2a2399cdfc694a7c7d1592a7697c2be79d9c2863cbba9101e1a2f962e75bcc39"
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "origin/main",
+        "--include-worktree",
+        "--json"
+      ],
+      "exit": 0,
+      "log": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/milestone_validation/gate-3_v1.log",
+      "sha256": "f8ea5c33bc2e2ab78c2aa331b031da73f905180c7ef383e7198b24ddae4441bc"
+    }
+  ],
+  "driver_pid": 3629
+}

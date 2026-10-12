@@ -1,0 +1,317 @@
+{
+  "schema": "independent_affected_source_review_v1",
+  "created_at": "2026-10-12T21:17:23.501634+00:00",
+  "reviewer_session": "/root/direct_quantum_visibility_review",
+  "source_review_verdict": "PASS_scoped_source_readiness",
+  "source_verdict_scope": "Explicit mathematical and conditional sampling assumptions; not audit, retained status, empirical exclusion, combined validation or landing.",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW.md",
+    "sha256": "fcf18ec44654fe4483ea852fc73f7b1f817e5efda4f9454f4d2b3e8d1077d80c"
+  },
+  "constituent": {
+    "id": "quantum-reflection-milestone-20261012",
+    "head": "0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6",
+    "delta_base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "tree": "8069c8dfe91c5ce189373c22c5bbcf90e3e498de",
+    "branch": "codex/quantum-visibility-reflection-20261012",
+    "paths": [
+      "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+      "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt",
+      "docs/audit/data/citation_graph_manifest.json"
+    ]
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "original_sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+      "disposition": "preserved_unchanged_scoped_source_ready",
+      "recovery": "Preserved in original constituent 0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6. Complete theorem and premise review; scoped source readiness passes.",
+      "final_path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef"
+    },
+    {
+      "original_path": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+      "original_sha256": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc",
+      "disposition": "preserved_unchanged_scoped_source_ready",
+      "recovery": "Preserved in original constituent 0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6. Complete runner and inline helper transfer review; scoped checks pass.",
+      "final_path": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+      "final_sha256": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc"
+    },
+    {
+      "original_path": "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt",
+      "original_sha256": "6d824ece1241b706f1d62941e7593cad8fead772b08c2c78240525a3ddfecd6a",
+      "disposition": "preserved_unchanged_scoped_source_ready",
+      "recovery": "Preserved in original constituent 0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6. Fresh source-bound execution evidence verified against raw v2; no scientific verdict inferred from cache alone.",
+      "final_path": "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt",
+      "final_sha256": "6d824ece1241b706f1d62941e7593cad8fead772b08c2c78240525a3ddfecd6a"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "675c43ed9194a86a2b2e8f1417e0d6877b1a9d020a15b4a83fcfd0c9e729d8d6",
+      "disposition": "preserved_unchanged_scoped_source_ready",
+      "recovery": "Preserved in original constituent 0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6. Exactly one zero-dependency node added; existing entries unchanged; final combined graph validation remains separate.",
+      "final_path": "docs/audit/data/citation_graph_manifest.json",
+      "final_sha256": "675c43ed9194a86a2b2e8f1417e0d6877b1a9d020a15b4a83fcfd0c9e729d8d6"
+    }
+  ],
+  "source_identities": [
+    {
+      "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef"
+    },
+    {
+      "path": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+      "sha256": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc"
+    },
+    {
+      "path": "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt",
+      "sha256": "6d824ece1241b706f1d62941e7593cad8fead772b08c2c78240525a3ddfecd6a"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "675c43ed9194a86a2b2e8f1417e0d6877b1a9d020a15b4a83fcfd0c9e729d8d6"
+    }
+  ],
+  "metadata_read": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "4be4a0e93e11adac1ed5d3bf451104baa53fc58e0031460d6cc05b065ea773a5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/GOAL.md",
+      "sha256": "3e6e174bfad95963918def19b92c46347bb77010f4a974ca3ce2ebb983056bf2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/HANDOFF.md",
+      "sha256": "e63d1b7e2cb41b23f582a9a04999a962fa87d5e8802f38e6c1cf5de8b4ddf04b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/REVIEW_HISTORY.md",
+      "sha256": "229b9054ea058386fdab3ccb830d1f54530fbb85bcef3369a6cd8b51cdb0cb32"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/TRACE_GATE.md",
+      "sha256": "f48a7d546f01b9eb3cc3c147a0821d5e101e4ecb8baa532b149a58f7eb922fda"
+    }
+  ],
+  "note": {
+    "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "claim_id": "sphere_quantum_visibility_reflection_bounded_theorem_note_2026-10-12",
+    "declared_claim_id": null,
+    "claim_type": "bounded_theorem",
+    "current_surface_status": "conditional-support",
+    "primary_runner": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+    "helpers": [],
+    "citations": [],
+    "repository_dependencies": [],
+    "dependency_rationale": "Self-contained proof under supplied quantum, candidate and trial assumptions; no repository theorem is a premise. External Tsirelson citation is background."
+  },
+  "input_closure": {
+    "runtime": [
+      {
+        "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+        "role": "Literal integrity input only; no external scientific data read."
+      }
+    ],
+    "helpers": [],
+    "parents": [],
+    "supporting_proofs": [],
+    "context": [
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "cab78dd0ad2113e32d3ee26b337ac95e16366424eef106999872001c83079644"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      }
+    ],
+    "review_tooling": [
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/docs/audit/scripts/no_go_discipline_gate.py",
+        "sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/scripts/vocab_lint.py",
+        "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+      }
+    ],
+    "runner_imports": [
+      "import os",
+      "import argparse",
+      "import json",
+      "import math",
+      "from decimal import Decimal, localcontext",
+      "from fractions import Fraction as F",
+      "import mpmath as mp",
+      "import numpy as np",
+      "from scipy.special import roots_legendre"
+    ],
+    "scientific_file_IO": [],
+    "declared_timeout_seconds": 120
+  },
+  "review_references": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/check_portable_transfer.py",
+      "sha256": "a505b6072083ef1a06216006e4f91baa4b038ba62c127e97a7c3e87df08c45f0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/CHECKS_v1.json",
+      "sha256": "afb0dda98bcbef946a7287c4ea1fc2011418602137ce591ec6049f613c31e63c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/PORTABLE_JSON_RUN_v1.json",
+      "sha256": "bf7682a9776707cce2e1dad4cba578e539b9c5d4e8db6a89145c650b2d4e49fd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/VOCAB_v1.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/CACHE_before_scope_wording_v1.txt",
+      "sha256": "29db3aee21fdde48149f1384d1666744371a89784a858e5bb2601272c4ecad62"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/MUTATIONS_v1.json",
+      "sha256": "437983dfb5d611199d8ea657c5401fbf614fce1b5efcb1f14f7b7bd2f6c28065"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/RUN_RAW_v1.json",
+      "sha256": "91eb542486b7150b032324024692a302579bc9ef8db1cba17c29bfd29facb390"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/RUN_RAW_v2.json",
+      "sha256": "36a2ab5ff6b300bdf8fd38bb26cdc213f2fcf38b5d2bc15ad746b533e3ef1227"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_v1.json",
+      "sha256": "7d1a77d1e1db7d51b18011a0ad46636196568e9992e3bf7ef6c819539d796c0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_v2.json",
+      "sha256": "24889d899e7fb73c0a45e72212644b5000f47d2b418551b48bcc06467260f8d1"
+    }
+  ],
+  "prior_review_reuse": {
+    "scope": "Only unchanged visibility/reflection proofs and arithmetic, with corrected per-trial conditional alternative premise; original resource, full-sphere classification and finite 300-setting candidate are excluded.",
+    "references": [
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_visibility_review/REVIEW.md",
+        "sha256": "563abd6d825f7dbd142250965d7f2b43ca60679e6a384e6aa8b8900cc96a5299"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_visibility_review/independent_visibility_check.py",
+        "sha256": "798db22f7427cced672fbb0cc51ae7d9b28b3bedc281e9ddc8a2081a0d92d235"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_visibility/independent_visibility_review/CHECKS_v1.json",
+        "sha256": "dac0359d27d5d2be120329e417e919b76624d75c349eb36a444490a48e94e5e1"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_reflection_review/REVIEW.md",
+        "sha256": "2ca9d849b318b8e729531900f7728684b6b343139dbae6631c37ddb0ceacc0b8"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_reflection_review/independent_reflection_check.py",
+        "sha256": "f392cb3d7dca4ba982cabca4fc9afafc3c9385fac7dbbb726c6e6b1e29c94e8a"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_reflection_review/CORRECTION_CONFIRMATION.md",
+        "sha256": "50d81cd99118bdfb92c811025ea93056580fb0b4d08afc047823817a695038b8"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_reflection/independent_reflection_review/CHECKS_v1.json",
+        "sha256": "c6406ef447693ef2d986292220a4708c99a62a36fa869bc60d74e082a3121ff5"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_reflection/independent_reflection_review/REVIEW_RECEIPT_v2.json",
+        "sha256": "ae307212f2efb77995c9d6acb3d127fa796670936c1fae2a096ae5b3ecd51383"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_VISIBILITY_CRITERION.md",
+        "sha256": "b7cfa158462874462fea1b91f13b70792899ff473541ea220bde8d2d304d49d3"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_WITNESS_V2.md",
+        "sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/sphere_certificate.py",
+        "sha256": "03c20ec6781b25aea43bafe8fdc75497a7e9e17c40d6a74efc950c7f10911570"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_reflection/RESULTS_v1.json",
+        "sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+      }
+    ],
+    "provenance_comparator_requires_original_local_evidence": true,
+    "primary_runner_requires_original_local_evidence": false
+  },
+  "checks": {
+    "portable_JSON_pass": 9,
+    "portable_JSON_fail": 0,
+    "author_mutation_failures_verified": 9,
+    "mutation_rerun": false,
+    "mutation_source_difference": "One removed terminal blank line only, verified by SHA-256.",
+    "cache_status": "fresh",
+    "cache_fingerprint": "2fdfe9fb317e3036e24e4c3aa7b10887c2c587fb4be7369a20c9fec101008ac4",
+    "independent_interval_still_nested": true,
+    "exact_reflection_controls": [
+      "1",
+      "-1",
+      "9/8",
+      "15/16"
+    ],
+    "vocabulary_violations": 0,
+    "manifest_one_added_zero_dependency_node": true,
+    "manifest_old_entries_unchanged": true,
+    "manifest_edge_count": 15805,
+    "combined_pipeline_executed": false
+  },
+  "closed_findings": [
+    {
+      "id": "P1_tail_wording_scope",
+      "disposition": "Resolved by final note positive-tail obligation; runner and certificate unchanged.",
+      "current_note_sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef"
+    },
+    {
+      "id": "original_reflection_R1",
+      "disposition": "Corrected conditional alternative mean on every trial is explicit in the portable note."
+    }
+  ],
+  "open_material_source_findings": [],
+  "no_go_discipline": {
+    "N1_N8_required": false,
+    "rationale": "Algebraic realization criterion and prospective bounded statistic; no failed-search inference or framework route-exhaustion claim.",
+    "actual_detector_results": {
+      "source_is_no_go_artifact": false,
+      "negative_boundary_assertion": false,
+      "requires_in_forensic_mode_0": false,
+      "requires_in_forensic_mode_1": false
+    }
+  },
+  "pending": [
+    "Parent-owned final combined validation and unit preflight on isolated copy.",
+    "Reviewable evidence packaging; no scientific landing authorized by this task."
+  ],
+  "source_bytes_changed_by_reviewer": false,
+  "audit_invoked": false,
+  "retained_status_granted": false,
+  "landing_authorized": false,
+  "full_unit_receipt": false,
+  "unit_receipt_note": "This immutable reviewer report supplies the original four dispositions and source judgment. Coordinator must construct and mechanically validate the full staged unit receipt; no staged tree or integration verdict is invented here."
+}

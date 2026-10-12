@@ -4704,14 +4704,14 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
 
 ### C5 Round 13 worker readings (recorded as they arrive)
 
-- **R13-5 (Ward-complete pair stress; graviton–matter split):** worker readings below. Referee running.
-  - **Without pairing: SPLIT-PRESENT (scoped).**
-    - Lemma P1: a first-order Ward completion always exists, so W1 constrains nothing in the pair channel.
-    - Lemma W0: no Ward identity fixes the axial TT pole.
-    - Lemma B2: W2 (moment form) fails on edge states for every member, so the matter pole is unprotected.
-    - G-edge floor: Ξ ≤ Ξ_box⊥ < 0, about ≥ 5e-3 at ℓ_P for T_2g.
-    - Birefringence is removable by an edge knob.
-  - **With pairing: OPEN.** The TT shift is zero, but 4κm²J₂ remains.
+- **R13-5 (graviton–matter split) — CONFIRMED WITH CORRECTIONS. OPEN both without and with pairing.** The fixed test needs a second-order Ward-complete stress and gauge-invariant physical poles.
+  - **What W1 does.** For a fixed massive free scalar and a smooth spatial pair kernel, W1 uniquely supplies smooth time components, and the conjugate annihilation channel restores Hermiticity.
+  - **What blocks W2.** Under the standard undeformed Dirac–Schwinger/HDA meaning of W2, the pair terms vanish from H, P and K. The periodic-band boost anomaly is left as a bounded obstruction to second-order closure.
+  - **The W1-only class 𝒲_V:**
+    - the G edge has a strictly negative TT floor, hence a large, prescription-scoped light-scalar dD-M split;
+    - light L doublers destroy that floor;
+    - birefringence is removable by a one-mass edge tuning.
+  - **With pairing.** Matched pairing cancels the stipulated TT response and leaves 2κm²J₂.
 - **R13-1 (momentum in the superalgebra):** worker reading INCONCLUSIVE, leaning FAIL.
   - Theorem B (Jacobi): a conserved Q forces a conserved P, which a Ward-forced photon makes impossible on the whole zone. So no exact spinor algebra exists there.
   - Corollary BPS: an exact box algebra would forbid an electron slower than light.

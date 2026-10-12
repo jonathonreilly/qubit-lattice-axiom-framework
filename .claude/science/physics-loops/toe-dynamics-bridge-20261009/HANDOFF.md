@@ -23,8 +23,8 @@ Primary /Users/jonreilly/Projects/Physics is untouched. App worktree creation wa
 unavailable from this nonGit cwd; owned standard worktrees are in use.
 
 This directory in T/worktree, branch physics-loop/toe-nonlinear-transport-20261011
-(PR9478), is the sole live checkpoint. Previous complete checkpoint 23293db52542271e90ce2e29300a4ec78e8fea4b
-is archived losslessly at history/20261012T052848Z_*.gz. Earlier033625 archive also remains. It contains the full older
+(PR9478), is the sole live checkpoint. Previous complete checkpoint e5b42c0752d66ccebdaf6ff21fc75f1256812149
+is archived losslessly at history/20261012T062942Z_*.gz. The052848 archive remains. Earlier033625 archive also remains. It contains the full older
 SC/Fock, E/PC, projection, leakage, S/L, centre and current proof summaries and
 all original review identities. Earlier full checkpoint archives remain present.
 Publication packets are frozen milestones, not competing live checkpoints.
@@ -126,163 +126,150 @@ alloldnodesunchanged. Focused compatibility selects no applied row/failure.
 All older science/packets unchanged. Do not rerun completed preparation/publication
 scripts blindly; centre_current_final_staged_verification.json is the closure record.
 
-## Current recovery update, 2026-10-12 05:25 UTC
+## Current recovery update, 2026-10-12 06:30 UTC
 
-Remote fetch and open-PR read completed05:25:41UTC. See S/repo_sync_0525.json.
-Maina13caa4885f547c8d206265b031ba7649e539fd9 and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39
-and all main instruction identities above are unchanged. SW remains clean atdc7f415.
-PR9476 remainsa2153dbddb720dc595b0037e42277a54d39f643e. PR9477 advanced to
-64a46f828c0dbbc47b34784d29825b57e1de0557 before04:00;21changed paths saved in
-sync_0400_pr9477_paths.txt. Root must read changed science for ownership; it has
-not imported or recertified that new chiral work. No further PR changes05:25.
-PR9475 staysfe9008f80d68fb851b20399241f34c6203ed8281; inspect before a broad
-nearest-neighbour interaction classification. Existing gravity/chiral lanes stay separate.
+Remote fetch/open-PR read actually ran06:25:44UTC; S/repo_sync_0630.json records
+maina13caa48, planning3a4b2c66 and unchanged instruction identities. PR9477 now
+2f93e8e2b11f728ca2acbd4882d9f659140ed4bf. Root read both new complete148/150-line
+positive-cap-multiple chiral notes for ownership only; sources in
+S/ownership_9477_0630/. Earlier three notes at64a46f were also read completely,
+see ownership_9477_0620_root_read.json. No Hamiltonian/current/boost/scattering
+overlap. Their runners are not reviewed/imported. PR9475fe9008f and9476a2153db
+unchanged. All16openPRs, our10regular/unmerged. Initial sync assertion wrongly
+required no changed PRs, caught our own checkpoint and new chiral head, and
+stopped before preparation; ownership was then inspected separately. No science
+failure or source change resulted from that bookkeeping guard.
 
-Lock04:25 refresh expired05:25:30 during delayed root continuation. Refresh05:25
-returned not-owned with null lock; no conflicting holder was displaced. Root
-reacquired05:26:19.407929UTC for2hours, expires07:26:19.407929UTC, sameowner
-codex-toe-native-20261011 and holder01a11691-f332-7852-b641-6ee714aab15a.
-Refresh by07:10 from W using automation_lock.py refresh --owner ... --ttl-hours2.
-The earlier04:00 Git fetch session1945 was collected successfully; no tool process
-remains running. Deferred root continuation gaps do not extend campaign deadline.
+Lock expires07:26:19.407929UTC; refresh by07:10, ownercodex-toe-native-20261011.
+Root alone owns Git/publication worktrees. Deadline remains16:00:52UTC.
 
-## New completed source reviews and root coverage
+## Six accepted conditional source results; exact evidence in S
 
-Nonisolated mass N1-N31 finite-product scattering and all-fixed-width comparison
-are supported; beta1 spectral counterexample N32-N35 supported. N36 requires
-the exact reviewed correction C_beta=H²-beta|K|², instead of inherited beta1C.
-Frozen original remains unchanged. Apply only the source-bound before/after in
-nonisolated_mass_review/N36_PUBLICATION_REPAIR.json when publishing, with mapping.
-Prospective repair-only note SHA4fde0f00866d19decdbc3d9fc648bba510d14f78cacd31e5134c9e88f2854d7c.
-Root fully read359authorlines,220helperlines,70reviewlines,337reconstructionlines,
-complete controls/outputs/traces and primary Dybalski673TeXlines. See
-Nonisolated_mass_root_author_coverage.json, _review_coverage.json and _primary_coverage.json.
-217review outputs,189source bindings,8closing exclusions checked;14actual-source
-mutants11rejected/3survived. Two genuine control limitations: copied energy RHS
-and zero geometric detuning; weakened padding inequality is valid. Independent
-continuum control first quadrature gate failed; only quadrature tolerance refined,
-same cases/gates passed. Infinite analytic tail proof remains the evidence.
-Root corrected its own coverage line count341->337; no science source changed.
+Mass, centre regularity and joint flow: all full source/review/helper/control
+reads and bindings are complete. Root completed joint review275-line
+reconstruction,433-line independent helper,174-line analysis and123 predicates;
+Joint_flow_root_author_coverage.json and _review_coverage.json have pending[].
+Mass requires only N36 weighted Casimir C_beta=H²-beta|K|²; exact repair map and
+repair-only hash4fde0f... remain unchanged. Centre and joint need no math repair.
+Their original failed controls and nondiscriminating gates remain preserved.
+The052848 archive contains the full mathematical scope and exact original hashes.
 
-Centre regularity G1-G32 supported without required source correction. Root fully
-read325authorlines,157helperlines,allauthoroutput,finalreport,227review reconstruction,
-227distinctcontrol,47exactSimpson,73mutationdriver andallindependentoutputs/traces.
-See Centre_regularity_root_author_coverage.json and _review_coverage.json.
-178reviewoutputs,106inputrecords,157authorbindings,2selfexclusions checked.
-The original overbroad density draft remains preserved; final density claim is
-restricted to actual permissible carrier/creator spaces. Two bad tent integrals
-survived author upper-bound gates, but a distinct exact rational Simpson check
-matched genuine integral and rejected both. Six other actual mutants rejected.
-Root binding checks first misread prose snapshot metadata as path, then assumed
-all stdout lines were JSON; both failures and exact fixes recorded in coverage.
-Source-specific retry passed; protected sources unchanged. No audit promotion.
+Weighted boost: MICROSCOPIC_BOOST_FLOW_PROBE.md758lines SHA7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7;
+review119lines SHAed2c7e594714b9ba0dc1e8f0fed916e55c7a2e7c84bc0078acc6a00cd4292678.
+Root now read complete proof/review,57-line reconstruction,268-line author and
+221-line distinct helper, all49/71 baseline rows, all changed author variants,
+and all independent mutation gate labels, recomputing every gate from preserved
+values. Root verified204unique bindings,11review executions/five byte-exact
+replays; no fresh root science run claimed. Full TWW959-line main source read
+previously; NSY Section3 lines272-623 now fully read with literal constants and
+spin hypotheses. Boost_root_review_coverage.json and _evidence_verification.json
+record coverage. Original C1 weaker check and log collision remain preserved;
+exact old-to-final diff read. No required mathematical correction.
 
-Joint flow J1-J24 independent review complete with no required source correction.
-Root full279-line author proof,273-linehelper,37baseline records,all5changed-mutant
-records and source checks complete: Joint_flow_root_author_coverage.json.
-73files,4inputs,119upstream receipt entries verified. All5actualmutantsfail.
-Root read full120-line final review; complete review reconstruction/control/receipt
-reading and binding verification remains next. Independent review uses exact
-Gaussian-integer open-cutoff matrices, qutritbasis/divergence and2Dhistories.
-123predicates1.160284s/60; no model conclusion. Replaysbyteexact.
-Reviewer found installed FIXES_AND_REPORTING.md differs from repo; read/adopted
-full currentrepo8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.
-Difference adds runner-output/sidecar/cache reproducibility guidance; no unmet
-review obligation, no edits. Failure and complete diff preserved. Root must
-reuse current repo reference in publication, not assume installed equality.
+Accepted conditional mechanism: TWW all-time weighted norm flow; rapid AL graph
+loss q>nu+d+1 and local graph closure; interpolation yields actual Frechet C1.
+Supplied local boost state identity integrates to canonical GNS self-adjointB;
+a separately supplied generator with same cyclic action is identified by actual
+C1 curves, without analytic/core assumption. With supplied energy state identity,
+canonicalH/P and finite pair-current yield i[H,B]=P on local cyclic domain only.
+No strong joint commutation or Lorentz relation is supplied by this note.
+The independent infinite trace-GNS example is rapid AL/C1 but not analytic;
+it does not claim local vectors nonanalytic. State/coboundary counterexample
+and norm-not-graph control remain. No physical model or new Lean certificate.
 
-These three candidates are ready for coherent publication after root completes
-joint-review evidence reading and applies the reviewed N36 correction. No new
-science has yet been copied into SW or committed since centre/currentdc7f415.
+Gap-derived invariance: GAPPED_BOOST_INVARIANCE_PROBE.md774lines SHA94d1f879927135d378dcafb6e9b603465155906a71fed5ca301b4354566cea14;
+review141lines SHA7834a02d0543fa148e2589e90d727d9ac1ef7eb354cceb7552e7f87dce853126.
+Root read all proof/review,65-line reconstruction,31-line analysis,185/294-line
+helpers and all307 baseline/changed output records in a lossless representation
+(180zero rows grouped by their full labels,127other rows explicit). 280bindings,
+six byte-exact author replays and five exact independent source mutations verified.
+Gapped_root_review_coverage.json, _evidence_verification.json, _control_rows_compact.json
+and _control_correction.diff record complete closure. No source correction needed.
 
-## Additional frozen candidate science, full root reading pending
+Accepted conditional mechanism: exact current conservation plus actual positive
+GNS Hamiltonian with simple gapped vacuum implies local current/boost state
+identities. Self-contained finite-range LR with no outside volume and cone split
+give polynomial rapid-AL orbit bounds before Schwartz filtering; graph losses
+justify both derivation commutators. Symmetric gap filter gives BOTH scalar
+vacuum columns, not a scalar operator. Stationary current functional vanishes
+on filtered vectors, then stationary boost functional likewise. Does not assume
+B/P beforehand. Implementation requires matching the separate weighted-flow
+note. Coboundary/simple-gap failure without conservation, degenerate-kernel
+gapped failure, one-column insufficiency and nonscalar filter all preserved.
 
-Weighted boost flow: MICROSCOPIC_BOOST_FLOW_PROBE.md758lines, root proposedroute.
-Author uses TWW2511.02941v2 to construct all-time linearlyweighted norm flow,
-rapidAL graphloss q>nu+d+1, localomegaδb=0 to canonicalselfadjointB, C1graph
-identification of anysuppliedB, plusomegaδh=0 andJacobi toconstructH/P and
-i[H,B]=P onactualD. Invariance is supplied, notderivedbythisnote. Freshreview
-completed PASSed2c7e...; no correction reported. Root has not read full758lines,
-119reviewlines/helper/evidence yet. Author49predicates/fourmutants are execution
-facts, notrootacceptance. Preserved logcollision andinitialweakC1control repaired.
-Reviewer's distinct infinite onsite trace-GNS control gives rapidAL graph/C1
-convergence butzeroanalyticradius. Complete TWWandNSYimports checked byreviewer.
+Nonisolated Fock: NONISOLATED_FOCK_PROBE.md400lines SHA90471bd9b63f6a39356152a725e633a1d465272188ff1574bd198f71e97b85f5;
+review128lines SHAbe5ad6f72a82e08f3cd1d841aea1bf3478ea3c92dfd309de0d2ba070818ed919.
+Root complete proof/review,245-line reconstruction,319/179-line helpers, full
+backend optimization diff,122-line control analysis and mutation driver read.
+All7author,2partialindependent,6finalindependent records and all9failure traces
+read. All13source edits verified; allsurvivor changed-field paths/endpoints read,
+not every repeated numeric value. 247bindings and110closing inputs unchanged.
+Nonisolated_fock_root_review_coverage.json and _evidence_verification.json record
+acceptance with no correction. NS0712.3318v1 pages3,4,9-12 freshly read; prior
+unchanged SC/Fock/Dybalski full-proof source readings reused. No fresh fullBDNread.
 
-Root personally read all959originalTWWmain.texlines, sourcehash
-bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d;
-see TWW_root_primary_coverage.json. Commonmacros/PDFnotfullrootreadclaimed.
-Localconstant/radiusliteralissues were sentauthor; restrictmonotoneexponential
-profiles andfinite-rangegeneratorstabilization. TWWprimaryfiles in
-S/growing_generator_literature remainexternal. BroadpriorGitgrep exit137 and
-narrowdocsnoexacthit preserved; no noveltyclaim. The lead has datedreadingaddendum.
+Accepted mechanism: four independently averaged times, connected clustering
+kernel O(R^(3d)), supportdistance and norm cap, polynomialSchwartztails give
+squared contraction T^(-d+3d*kappa), maxnu<kappa<1/3. Allspectators and mixed
+finite-energy words handled in Gram/cross-particle recursion; fixed-width
+comparison restores all0<nu<1. Spectral absolute continuity, compatible chart
+gradients and equal-velocity null sets give a Fock isometry on closed span of
+ACTUAL regular target vectors only. It may be zero; no fullsector density,
+onto, detector, ND/EX or model. Four bookkeeping mutants survived author gates;
+analytic independent reconstruction carries powers. Initial60stimeout preserved;
+exact rational-pair optimization preserved allcases/gates and ran.977484s/60.
+No fresh root science execution, no audit/retained promotion is asserted.
 
-Nonisolated Fock: NONISOLATED_FOCK_PROBE.md400lines; rootfullreadingpending.
-Author claims fourunequaltime kernel O(R^(3d)), squaredcontraction
-O(T^(-d+3d*kappa)) formaxnu<kappa<1/3, fulltime/localizationtails, Gram/crossn,
-andFockisometryonclosedactualregulartargetspan only. Charts/speciescheckedby
-spectralACandaffinemassivegraphdifference; nofullsectorseed density/detectors/ND/EX.
-Freshreviewbe5ad6... completeboundedPASS,no correction reported; rootfullreading
-of128reviewlines,proof/helper/evidencepending. Independentexactmatrixrun initially
-hit60stimeout, rational-pair implementation preserved cases andcompleted.
-13actualmutants9rejected/4bookkeepingmutantssurvived; analyticindependentreconstruction
-verifiesvolume/exponent/tailpowers. All evidence and unchangedcases preserved.
+## Prepared three-note publication, not yet published
 
-Gap-derived invariance: GAPPED_BOOST_INVARIANCE_PROBE.md774lines frozen, author
-proofG1-G41 claims uniquegappedGNSvacuum plus exactcurrentconservation implies
-omegaδp=omegaδb=0, withoutassumingactualP/B or globalgroundstateuniqueness.
-Mechanism: explicit polynomial-in-time rapidAL graphbounds, exactdoublederivation
-extensions, stationarycurrentfunctional, symmetricSchwartzgapfilterwithBOTH
-scalarvacuumcolumns, absoluteweightedcommutatorsum, thenstationaryboostfunctional.
-Root's ROOT_GAPPED_BOOST_INVARIANCE_LEAD.md is unverifiedcoauthorproposal.
-Standaloneargumentdoesnotdependonnewweightedflow; implementationcorollary must
-trackthatdependencyseparately. Rootfullreadingpending. Freshagent
-/root/gapped_boost_invariance_review owns GAPPED_BOOST_INVARIANCE_REVIEW.md and
-gapped_boost_invariance_review/. Author105finitechecks/fivevariants reported;
-initialtautologicalrow correctedwitholdrunpreserved. Coboundarysimplegappedstate
-failsconservationandboostinvariance; qutritdegeneratekernelcounter retainsgap
-andconservationbutfailsboostinvariance. One-sidedcolumns/nonscalarfilter limits
-also included. No physicalrealization orfullLorentzclosure follows.
+SW remains based atdc7f415 but now has837new untracked prepared files from
+S/prepare_regularity_joint_publication.py SHA0a21e0eb0aab9119f4f50998a49d7ab361599b45d5bca67f5a14e53932c6883b.
+Root read all903lines and bothcapture/static scripts before executing06:26.
+Packet toe-regularity-joint-flow-20261012 contains809own evidence files and a
+70-file external paper inventory; raw third-party content stays external.
+Three complete notes/primaries use exact reconstructable edits. Only N36 is a
+mathematical edit. All status/link/declaration/sidecar changes are mapped.
+S/regularity_joint_preparation_run.stdout records six exact output identities.
+Canonical runs/caches/mutations/graph/compatibility/finalconformance are PENDING.
+Do not rerun the preparation script against its dirty/nonempty targets.
 
-## Next decisions
+Agent regularity_joint_packaging now owns only S/run_regularity_joint_verification.py
+and regularity_joint_verification_preparation/, preparing an UNEXECUTED canonical
+verification script. Root must read before execution. Preserve FULL raw
+runner_cache.execute_and_write_cache return immediately before later cache checks,
+as current FIXES_AND_REPORTING.md8fdc997... requires. Final metadata, manifest,
+source-map and link/graph checks remain root's publication work. No commit/push
+of this new science has occurred. Global combined pipeline/strict audit lint
+remain independent landing gates, not silently omitted completed checks.
 
-1. Complete root joint-review evidence read, apply exact N36 correction in a
-   publication mapping, and publish nonisolated mass/centre/joint-flow milestone.
-2. Read full weightedboost andnonisolatedFock proofs/reviews/evidence; package
-   accepted results regularly, preservingallfailuresandnondiscriminatingtests.
-3. Resolve fresh gap-derivedinvariance review andfullrootproofread. This may remove
-   a suppliedstateidentity underactualfinitecurrentconservation; no modelclaimed.
-4. Attack finite weightedboost/current Lie-closure criteria orconcretecompatible
-   interactionconstruction aftercheckingPR9475ownership. Currentconservation,
-   exactLorentzclosure,positivegap/spectrum,regularcreator/centredensity and
-   intendedmodelrealization remain distinct obligations, not assumed consequences.
-5. Main science/upstream instructions unchanged05:25; readnew9477scienceforownership.
+## Active new research and next decisions
 
-No editableprompt/skill/platform instruction changed. All10regularPRsremainopen,
-unmergedandattached. Globalcombinedauditandstrictauditlintnotrun; sourcePASS
-isnotappliedaudit/retainedstatus. NonewLeancertificateclaimedfortheselatestnotes.
-At16:00:52UTCstartnonewresearch,finishcheckpoint/reportanddisableheartbeat.
+Weighted-current closure source frozen: WEIGHTED_CURRENT_CLOSURE_PROBE.md
+SHA561cc0109580b74c42b19af27ab35801deea61a9c304dc2f43da772e042448f7,
+author receipt a2640a66cf1e4d3d8a1f2f7d4957c9648a6c888f2f4f9da6a9ab48aea753c92e.
+Fresh agent weighted_current_closure_review owns WEIGHTED_CURRENT_CLOSURE_REVIEW.md
+and weighted_current_closure_review/; root full source reading pending. Author
+claims negative orbit moment yields finite t ofradius7R under conservation,
+one-siteB14R criterion equivalent to beta-energy closure, with representative
+and divergence-primitive invariance. FixedXXdiagnostic yields -8(f+length4term),
+so energy closure fails everybeta for that model despite conservation. Author
+73sparse+33distinctopenmatrix predicates/fivemutations; initialexpectationsign
+failure preserved. Author controls are not independent review; no broadno-go.
 
-## Frozen current source identities
+Agent integrated_boost_covariance owns INTEGRATED_BOOST_COVARIANCE_PROBE.md and
+integrated_boost_covariance/. Provisional full argument drafted, controls/freeze
+pending: rapidAL conjugated derivation ODE plus classical-solution uniqueness
+should integrate 1+1 local Lie relations into actual full flow covariance,
+then Stone full-domain generator equality. Candidate signs negative, positivity
+forwardcone but not massshell; supplied scalar boost gauge is not automatically
+microscopicB. No downstream reuse until fresh review/fullrootread. No model,
+rotations,multiboost or fullPoincare conclusion assumed.
 
-- S/NONISOLATED_MASS_SCATTERING_PROBE.md: afd35b7b1ec2e564e7ea418b1233148009509359212db8312599cb535bb6b80d
-- S/NONISOLATED_MASS_SCATTERING_REVIEW.md: 09da880b4ebdf629cffcc72c490176e6706b0ae4b01790eb3a267b6d8b284143
-- S/nonisolated_mass_scattering/FINAL_RECEIPT.json: 2a225e88a77732d8ca02db35f8d4c50371b9e57fdfe3d186b5c9210911df64f6
-- S/nonisolated_mass_review/FINAL_RECEIPT.json: 9f2a7ef9c691f0edfbcc257340444b4923dcb48e771fa5e41a9d4f19f5573da4
-- S/CENTRE_REGULARITY_TO_GEOMETRIC_PROBE.md: 9ec8c3148442f981d6b3d4d38027ffde0d2a64adbd6e4664d6a24b5d3d06608a
-- S/CENTRE_REGULARITY_TO_GEOMETRIC_REVIEW.md: bdeb88293de00f16e45a6747f46edda8c3391db5fdf3f1503c7a584b68ac3703
-- S/centre_regularity_to_geometric/FREEZE_RECEIPT.json: 08c7d067c972b8351d491f799f7c397d060b38c8bacec4b47dfb6f76727e4ca6
-- S/centre_regularity_review/FINAL_REVIEW_RECEIPT.json: 0032ce4b7688228cc8200acd2997ac0978474f5ee8c6347636349a215798e6bc
-- S/MICROSCOPIC_JOINT_FLOW_PROBE.md: 35bcb1013b0716a4faa33fdbd75ff067427c1dec8e377f63ebb17ac301786ebd
-- S/MICROSCOPIC_JOINT_FLOW_REVIEW.md: 9699043c35343901ef75ab6a29dd560ba4aa30f8a3b908643e959958e86447c9
-- S/microscopic_joint_flow/receipt.json: afdfaff1e0a1c4a6843cbfd0d49c449d37bed0d62052b967c92ac9c38582984c
-- S/microscopic_joint_flow_review/receipt.json: a31a20468660e38ff42bf215dd84832a1f722551c29ea770156dfc71781d4b06
-- S/MICROSCOPIC_BOOST_FLOW_PROBE.md: 7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7
-- S/MICROSCOPIC_BOOST_FLOW_REVIEW.md: ed2c7e594714b9ba0dc1e8f0fed916e55c7a2e7c84bc0078acc6a00cd4292678
-- S/microscopic_boost_flow/receipt.json: 556db66a03600f637ba47663e4faca9202d48baab65cbf81828e08015faa15c9
-- S/microscopic_boost_flow_review/receipt.json: aeacaf3d522cd6994ea29f6b26344007b2dbfb2a7de83a2c1dc93ca9d12812d4
-- S/NONISOLATED_FOCK_PROBE.md: 90471bd9b63f6a39356152a725e633a1d465272188ff1574bd198f71e97b85f5
-- S/NONISOLATED_FOCK_REVIEW.md: be5ad6f72a82e08f3cd1d841aea1bf3478ea3c92dfd309de0d2ba070818ed919
-- S/nonisolated_fock/receipt.json: 579ba4570a5459f6775811b5c6f236c2457a5427b576b4699547556b5b4d13ec
-- S/nonisolated_fock_review/receipt.json: 4db257dacc70363b8db4fee15613e868dc03ada4a7702becd85ce931c7034068
-- S/GAPPED_BOOST_INVARIANCE_PROBE.md: 94d1f879927135d378dcafb6e9b603465155906a71fed5ca301b4354566cea14
-- S/gapped_boost_invariance/receipt.json: 6a384d384501cb5dfc7ef6ed4ae9b78628ea7710b525050efec4e7227b06596e
+Next: finish current three-note canonical publication to existing regularPR9486;
+check weighted closure and integrated covariance; package accepted boost/gap/Fock
+with actual dependencies; pursue matched concrete interaction and regularcreator
+construction, or quantitative approximate symmetry if exact closure is restrictive.
+No new broadNNclassification overlaps chiral/cornerlawownedlanes. Main/current
+instructions and source ownership now synchronized. Continue useful science
+through16:00:52UTC, then checkpoint/report actual limits and disableheartbeat.
+Editable prompts, skills and physical axioms changed: none.

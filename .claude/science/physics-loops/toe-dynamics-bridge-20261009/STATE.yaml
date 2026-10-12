@@ -13,17 +13,18 @@ base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: package reviewed nonisolated mass, centre regularity and joint flow; inspect reviewed Fock and boost
-  flow; independently review gap-derived boost invariance
+active_route: publish reviewed mass/regularity/joint-flow packet; weighted-current closure in fresh review; derive
+  integrated boost covariance
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: ten regular PRs open; six new source candidates with five focused reviews complete and one active
+milestone: ten regular PRs open; six new source results fully read and accepted conditionally by root; next three-note
+  packet prepared but not yet canonically verified
 strongest_unresolved_obligation: actual_microscopic_realization_and_justified_enlarged_channel_selection
 provisional_dependencies: selected_mass_and_centre_components_microscopic_H_current_implementations; no_full_GNS_exhaustion
-independent_checks: Prior published checks unchanged; nonisolated mass N1-N35 and corrected N36, centre regularity
-  and joint flow source reviews complete. Fock and weighted boost reviews complete but root complete reading pending.
-  Gap-derived boost invariance fresh review active.
+independent_checks: Mass with exact N36 repair, centre regularity, joint flow, weighted boost flow, gap-derived
+  invariance and nonisolated Fock have complete source-bound reviews and root complete argument/evidence reads.
+  Weighted closure fresh review active; integrated covariance author controls pending.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
@@ -34,8 +35,8 @@ transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framewor
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
 lock_refresh_before_utc: '2026-10-12T07:10:00Z'
-next_action: finish root joint-review evidence reading; publish regular milestone; read new boost/Fock/gapped proofs
-  completely; pursue finite conservation and Lie-closure criteria
+next_action: execute canonical verification for three prepared notes; review weighted closure; independently check
+  integrated boost proof when frozen; construct a matched microscopic example
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -50,7 +51,7 @@ rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework
 rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e
 boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9484
 boost_published_science_revision: 773321aa8fdfccc05248682dfc96bf94215034a2
-latest_chiral_revision: 64a46f828c0dbbc47b34784d29825b57e1de0557
+latest_chiral_revision: 2f93e8e2b11f728ca2acbd4882d9f659140ed4bf
 latest_main_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9485
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd

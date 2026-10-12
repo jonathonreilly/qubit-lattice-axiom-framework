@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/detector_index_leakage_2026_10_12.py
+runner_sha256: 832f10ddec6487655240f48afd3a851af87393e1baedbebd31556a656930deb2
+input_fingerprint_sha256: c12e09e4b66ca596bcf8fee279fa77818cb1ad24cd27ddc586385e4407984687
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"control": "abstract projection inequality", "exact_cases": 2187, "scope": "real diagonal unitary controls only", "sharp_complement_squared": 1, "sharp_defect_squared": 4}
+{"control": "cyclic witness and ordered identity", "examples": 2, "operator_defect": 2, "revealed_defect": 2, "scope": "faithful M3 representation; no local lattice realization claimed", "vacuum_defect": 0}
+{"control": "energy cutoff and local interaction normalization", "exact_cases": 567, "extra_ground_space_counterexample": true, "onsite_J": "3/2", "onsite_energy_norm_squared": "9", "scope": "finite spectral arithmetic; Stone/domain argument is written in note"}
+{"control": "positive detector kernels", "nonorthogonal_generators": true, "nonselfadjoint_range_shortcut_rejected": true, "scope": "finite rank-one sums; no detector convergence proof by numerics", "selected_missing_axis_for_incomplete_family": true}
+{"control": "ordered zero-atom resolvents", "exact_noncommuting_identity": true, "joint_limit_second_coordinate": 0, "joint_sequence_second_coordinate": ["1/5", "1/101", "1/10001"], "scope": "explicit diagonal counterexample and finite noncommuting identity", "time_first_then_eta_limit_second_coordinate": 1}
+{"R": 180, "control": "tube resource arithmetic", "defect_threshold": 0.00032258521039532276, "dimension": 3, "j": 137, "normalized_index_rhs": 0.44724448960000923, "scope": "floating arithmetic on explicit inequalities; no matrix of supersite dimension built", "width": 1000000}
+per_element: exact finite vector inequalities and cyclic-witness identities executed; infinite-dimensional proof remains in the note.
+per_site: exact one-site interaction normalization executed; this does not model the full supplied Poincare/current setting.
+per_mode: checked and not executed — no continuous-momentum particle or all-mode detector completeness assertion is tested here.
+per_block: full-block tube resource arithmetic executed without constructing its exponentially large algebra; its theorem is analytic.
+lattice_wide: checked and not executed — infinite-qubit index and detector limits use matched written sources, not finite controls.
+{"control": "completion", "evidence_role": "author controls, not independent review", "outcome": "all finite controls satisfied"}
+TOTAL: PASS=6 FAIL=0
+SCOPE: Six original finite control groups; no physical realization, effective preparer or all-channel completeness.
+
+----- stderr -----
+

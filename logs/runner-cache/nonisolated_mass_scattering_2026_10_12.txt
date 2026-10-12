@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/nonisolated_mass_scattering_2026_10_12.py
+runner_sha256: 46ed68d890bac4ef57f37b2c7835c54e070d2a422f97dba875538211f71a7b50
+input_fingerprint_sha256: 9a62b7c7dedfb189cfc4bcb0d1be21f4d45c21e5b54b5ea9c787d5c832710553
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"cases": 18, "check": "moving_kernel_derivative", "max_central_difference_error": 1.747298417065224e-10, "min_omitted_width_error": 0.0022196314011357007, "scope": "Schwartz Gaussian checks the derivative identity; it is not the compact-Fourier averaging kernel used in the next control."}
+{"cases": 12, "check": "compact_fourier_vacuum_derivative", "kernel": "exp(1-1/(1-y^2)) for |y|<1, zero outside; normalized at zero", "max_central_difference_error": 6.72291812100953e-12, "min_omitted_width_error": 0.0219551152003821}
+{"check": "both_packet_derivative_terms", "exact_frequency_cases": 3, "omission_of_either_term_rejected": true, "scope": "Finite spectral identity; no unbounded-generator domain inference"}
+{"check": "noncommutative_cook_identity", "missing_pair_rejected": true, "missing_vacuum_residual_rejected": true, "particle_counts": [1, 2, 3, 4, 5, 6, 7, 8, 9], "scope": "Free-word expansion, without commutativity or derivative-vacuum annihilation"}
+{"check": "energy_kernel_expansion", "full_noncommutative_identity": true, "scope": "Ordering check for N16 only; common-kernel inequalities are analytic", "translate_counts": [1, 2, 3, 4, 5]}
+{"check": "creator_energy_padding", "finite_site_counts": [1, 2, 3, 4, 5, 6, 7], "scope": "Exact orthogonality of finite one-site excitations, not a scattering model", "unpadded_bound_rejected_on_vacuum": true}
+{"actual_average": 4.0, "check": "zero_detuning_kernel", "declared_target": 1.0, "excluded_zero_regular_norm": 0, "missing_kernel_relation_rejected": true, "scope": "Abstract finite spectral counterexample"}
+{"analytic_scope": "N33 uses the rational margins plus monotonicity; N34-N35 use infinite-series inequalities, not finite sampling", "check": "mass_to_geometric_regularization_counterexample", "exact_exp4_lower": "16831/315", "exact_positive_margin": "91/1000", "finite_formula_checks": 69}
+{"check": "all_spectator_and_time_tail_powers", "exact_rational_cases": 81, "scope": "Arbitrary Schwartz/almost-local orders selected after dimension and fixed particle count; no numerical tail or LR claim"}
+{"check": "summary", "exclusions": "No infinite-lattice model, Fock/isometry, detector or exhaustion result", "independence": "author controls only; completed separate source review is recorded in the note", "records_before_summary": 9, "status": "completed"}
+per_element: finite derivative, free-word and rational-margin identities are checked; the analytic convergence proof is in the note.
+per_site: finite hard-core creator padding is checked; no microscopic infinite-lattice realization is constructed.
+per_mode: finite zero-detuning and Casimir spectral examples are checked; infinite tail conclusions use the displayed analytic proof.
+per_block: fixed finite-product ordering and all-spectator exponent bookkeeping are checked; no Fock or detector extension is computed.
+lattice_wide: checked and not executed — these finite controls do not realize an infinite lattice model or establish channel exhaustion.
+TOTAL: PASS=1 FAIL=0
+SCOPE: One completed assertion-guarded finite author driver; known mutation survivors are disclosed in the note, and no analytic or physical-model proof is numerical.
+
+----- stderr -----
+

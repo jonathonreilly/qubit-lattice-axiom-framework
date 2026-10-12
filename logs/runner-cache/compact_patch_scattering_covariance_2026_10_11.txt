@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/compact_patch_scattering_covariance_2026_10_11.py
+runner_sha256: 90d31b659841bf393c2ac56bba106bc35d085290fd8ad5d8ecb24e3563cffabe
+input_fingerprint_sha256: d6c121e9844667571f2ff9b6ce8387a19ec2f68cf8a1ba7dd94f8e27cff421b3
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+{"check": "finite_centre_projection", "conclusion": "character projection on q-root sectors", "exact_cases": 284, "orders": [2, 3, 4, 5, 6, 7, 8, 9]}
+{"actual": 1, "check": "negative_wrong_centre_weight", "q": 3, "rejected": true, "selected": 1}
+{"check": "negative_global_projection_without_q_spectrum", "exact_residual": "-x/4 - 1/2", "rejected": true}
+{"check": "free_noncommutative_cook_identity", "n_values": [1, 2, 3, 4, 5, 6, 7, 8, 9], "relation": "D_i Omega = 0 only"}
+{"check": "negative_product_mutations", "dropped_pair_rejected": true, "reversed_commutator_rejected": true}
+{"check": "packet_fourier_and_clock", "exact_cases": 1604, "omitted_operator_derivative_rejected": true, "omitted_packet_derivative_rejected": true, "sign_convention": "Q=k-theta; exp(+iHt); exp(-it Sigma)"}
+{"cases": 12, "check": "current_clock", "correct": "generator P, time q/beta; generator P/beta, time q", "double_beta_division_rejected": true}
+{"cases": 72, "check": "finite_product_power_count", "resulting_power": -2}
+{"check": "scope", "full_gns_completeness": false, "independent_review": false, "scattering_proved_by_runner": false, "status": "author exact algebra controls only"}
+per_element: exact finite character, Fourier, clock and product-word identities checked
+per_site: checked and not executed — the supplied local interactions enter the analytic LR hypotheses
+per_mode: exact finite Fourier convention fixtures; no continuum spectral sampling claim
+per_block: finite noncommutative products n=1,...,9 checked modulo D_i Omega=0
+lattice_wide: checked and not executed — analytic Cook convergence and covariance are proved in the note
+TOTAL: PASS=9 FAIL=0
+SCOPE: nine finite control records; no analytic scattering proof, Fock isometry or audit verdict from this runner
+
+----- stderr -----
+

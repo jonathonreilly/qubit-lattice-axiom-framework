@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/detector_scattering_projection_2026_10_12.py
+runner_sha256: b647f6540f147803bb9f2243e58f49d1977a7bc71e9ece93aa7addb2fa9fed3e
+input_fingerprint_sha256: de3d35fbf48671f66ca4d02c3dc57d8a4c9a15cd38670ddc0b794243b34bbe15
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{"check": "total_energy_projection_does_not_factor", "mask": [[0, 1], [1, 0]], "passed": true, "scope": "Exact finite tensor algebra; no scattering model.", "tested_factorizations": 16}
+{"check": "closed_window_interval_margin", "exact_cases": 216, "includes_singletons": true, "passed": true, "rejects_half_diameter_bound": true, "rejects_vacuum_support_as_operator_transfer": true}
+{"check": "operator_refiltering_and_exact_partition", "full_operator_changed": true, "passed": true, "scope": "Finite spectral-multiplier algebra; no smooth-filter locality test.", "transition_energies_after": [1], "transition_energies_before": [1, 2, 3], "vacuum_vector_preserved": true}
+{"check": "positive_sum_common_kernel", "geometric_tail_checks": 9, "passed": true, "rank_complete_family": 2, "rank_incomplete_family": 1, "rejects_signed_cancellation": true, "restricted_determinant": "1/32"}
+{"check": "noncommuting_resolvent_identity", "eta": "1/5", "exact_identity": true, "invalid_filter_reordering_rejected": true, "passed": true}
+{"check": "finite_time_square_root_witness", "finite_cases": 588, "maximum_excess_over_exact_scattering_norm": 0.0, "missing_square_root_bound_rejected": true, "passed": true, "scope": "Finite positive-operator algebra; constants are chosen for this toy matrix only."}
+{"analytic_convergence_certified": false, "check": "summary", "controls": 6, "independent_review": false, "passed": true, "physical_realization_certified": false}
+{"Q": "(1/16)E", "actual_selected_norm": "0", "control": "reviewed_scalar_witness", "correct_witness": "0", "wrong_linear_witness": "3/4"}
+per_element: finite exact filtering, support and noncommuting resolvent identities checked
+per_site: finite matrix fixtures only; no microscopic physical model constructed
+per_mode: finite tensor masks checked; continuum coverage uses the written proof
+per_block: narrow-window arithmetic and positive finite sums checked
+lattice_wide: checked and not executed — analytic scattering projection and ordered limits are proved in P1-P33
+TOTAL: PASS=7 FAIL=0
+SCOPE: Six original finite control groups plus the exact scalar discriminator; no ND, EX or physical realization.
+
+----- stderr -----
+

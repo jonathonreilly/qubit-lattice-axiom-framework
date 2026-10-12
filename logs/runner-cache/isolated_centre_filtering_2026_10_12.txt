@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/isolated_centre_filtering_2026_10_12.py
+runner_sha256: c7b04191f027892428abcf87a1a804652a7a621442b9a65e6dad905fad07a5cc
+input_fingerprint_sha256: d47ba26ecbdbe2e443cf3741c5d381c34b0fe3790889ff50a4a85ef01f4307d4
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{"check": "central_fourier_sign", "limit": "finite trigonometric polynomial", "maximum_error": 6.999232831707689e-16, "nodes": 17, "status": "pass", "wrong_sign_gap": 0.3635931792539569}
+{"adjoint_error": 2.2887833992611187e-16, "check": "transition_difference_and_adjoint", "limit": "finite diagonal-unitary representation, not a lattice model", "matrix_size": 5, "outgoing_only_gap": 2.0472000420224092, "real_phi_star_preservation_gap": 1.08471730224548, "status": "pass", "transition_error": 4.002966042486721e-16, "vacuum_error": 1.1102230246251565e-16}
+{"check": "composition_product_multiplier", "maximum_error": 2.7336071744532853e-16, "status": "pass"}
+{"check": "patch_and_mass_selection_masks", "exact": true, "global_isolation_inference_rejected": true, "limit": "spectral-mask algebra only; no existence or smooth-filter construction test", "omitted_mass_filter_rejected": true, "status": "pass"}
+{"all_integer_directions_reduce_mod_two": true, "check": "finite_multivariate_interpolation", "direction_parity_cases": 4, "exact_character_pairs": 16, "maximum_single_direction_values": 2, "status": "pass"}
+{"check": "non_torsion_specific_interpolation", "limit": "no finite test of irrationality or infinite spectra", "maximum_error": 0, "numeric_character_pairs": 16, "status": "pass"}
+{"check": "uniform_locality_radius_arithmetic", "exact_cases": 60, "geometric_shift_omission_rejected": true, "limit": "checks dimension/velocity arithmetic, not the LR inequality or tails", "status": "pass"}
+{"check": "chart_sign_and_unresolved_clock", "exact_phase_comparisons": 9, "limit": "finite spectral algebra; no infinite-lattice scattering model", "maximum_chart_error": 1.9389211565826713e-15, "opposite_chart_sign_gap": 1.988086404396152, "status": "pass", "unresolved_derivative_norm": 0.29289321881345254, "unresolved_t1_error": 0.29080384935289316}
+{"analytic_convergence_certified": false, "check": "summary", "controls": 8, "independent": false, "physical_realization_certified": false, "status": "pass"}
+TOTAL: PASS=8 FAIL=0
+SCOPE: Eight finite algebra groups; no analytic convergence or microscopic realization certificate.
+
+----- stderr -----
+

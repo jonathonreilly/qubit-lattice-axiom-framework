@@ -3281,3 +3281,63 @@ Readings, per route:
 - **VIABLE:** gives 4D gravity with Λ > 0, matter on one cone and universal coupling, with prices named.
 - **EXCLUDED:** violates a stated bound or is internally inconsistent (refereed).
 - **OPEN:** otherwise.
+
+### C5 Rounds 5–6 referee results (recorded 15:10Z)
+
+**R5-2 (infinite-orbit kernels) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **The exact reduction holds.** For shell-constant weights f_m = O(m^−A), A > 5, Haar-rms relative error O((a/ℓ)²) is equivalent to all of the following:
+  - three cancellations per tempered mode;
+  - double zeros for each threshold (r = 0) mode;
+  - both real-branch cancellations for each exceptional mode;
+  - the four mean-□ conditions.
+- **Families that fail:**
+  - nonzero finite-orbit kernels fail at leading order;
+  - the 1+1 unweighted retarded family fails in every non-constant mode (Hecke step and the Jacquet–Shalika transfer confirmed);
+  - sampled 3+1 families drift locally. This is checked only on local frame balls.
+- **Full-lattice sums** give a delta comb whose central term is P(−□)δ(k), not the multiplier −k².
+- **Open:** orbit-dependent and engineered infinite sequences.
+
+**R5-4 (link-cell laws) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **Lemma N** (finite covariant link neighbourhoods) is confirmed.
+- **Lemma F, corrected:** multiplicity-one shells factor into a.e. ℓ² kernel fibres. Multiplicity r > 1 needs a generally non-splitting U(r) cocycle.
+- **Theorem Δ:** every uniformly banded covariant linear law has a kernel set that is Haar-null or Haar-conull.
+  - The conull case admits almost every mass.
+  - The null case allows shell components only at a Lebesgue-null set of masses.
+- **The 1+1 two-term scalar class has a genuine no-shell theorem.** The coined-walk evidence is finite truncation only.
+- **Open:** no generated L₇ shell, and no exclusion at every mass.
+
+**R5-5 (frame superposition) — NOT CONFIRMED as FAIL, so INCONCLUSIVE.**
+- **Narrow exclusion.** Take a stipulated direct-integral model with a decomposable matter/record observable algebra. There every statistic is the |ψ|² mixture of branch statistics. That excludes an exact ensemble-mean unitary law, but under imposed superselection; it does not prove decoherence.
+- **Lemma P0:** P^μ = 0 on the bare orientation sector.
+- **Lemma AE holds** for the corrected finite-orbit class (Haar-a.e. limsup, off-shell).
+- **The three four-shell mean symbols have unstable zeros.**
+- **Which-frame numbers rejected.** A frame-dependent overall phase carries no which-frame information. Propagation-induced decoherence on observed scales is unproved.
+
+**R6-1 (exact additive momentum) — NOT CONFIRMED as REFUTED, so SUGGESTED, with derived parts.**
+- **Witness W is sound, but in the graded CAR category, not the fixed ⊗M₂ spin class.** One fermion mode per site admits an explicit super-polynomially quasi-local (non-exponential) d = 2 interaction with:
+  - exact sawtooth momentum;
+  - exact many-body conservation;
+  - genuinely non-forward, umklapp-free 2→2 scattering. The referee found an explicit on-shell non-forward process.
+- **Why it is outside the class.** 2D Jordan–Wigner gives long strings, and local bosonization needs gauge qubits and constraints.
+- **Prop. N** (rank-one separable class: non-quasi-analytic form factor forced) is confirmed after narrowing.
+- **DERIVED:** cylinder wrapping plus the GNVW index excludes H-TI uniformly range-bounded strict-QCA paths, and strict-range roots of the shift, in every dimension.
+- **Not supplied:**
+  - a ⊗M₂ witness;
+  - a boost-compatible or SLAC energy current;
+  - a stress tensor or Ward identity;
+  - one-cone protection;
+  - a graviton.
+
+**R6-2 (Weinberg–Witten sorting) — NOT CONFIRMED. A, B, B′ and C are all OPEN.**
+- **A is not SUPPLIED-FORCED.** W1–W3 are not established, and WW forbids elementary and composite spin-2 under its premises alike; it does not force "supplied".
+- **Confirmed:**
+  - the order lemma: per-copy WW phase argument empty on Γ_L;
+  - proper action on momentum pairs;
+  - the form counts 3 + 9 against 2 + 4;
+  - Z₂ dimensions 43 = 31 + 15 − 3.
+- **Lemma A is false as stated.** Global averaging need not preserve uniform locality. It survives for support-preserving direct-product gauge actions.
+- **Zariski density** constrains polynomial coefficients but supplies no exact translations or conserved stress. Umklapp obstructs W3.
+- **No PRODUCIBLE mechanism exists in the packet, as an absence of demonstration, not a no-go.** Still open:
+  - the weak N-type stress bridge;
+  - non-regular strong-coupling emergence;
+  - non-local/holographic mechanisms.

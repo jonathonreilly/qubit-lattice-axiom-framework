@@ -1,6 +1,6 @@
 {
- "edge_count": 15454,
- "node_count": 6889,
+ "edge_count": 15455,
+ "node_count": 6892,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1969,6 +1969,10 @@
   "antigravity_sign_selector_boundary_note": {
    "deps_hash": "0891dc6c0e92",
    "out_degree": 11
+  },
+  "approximate_partial_factor_index_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "architecture_note_directional_measure": {
    "deps_hash": "d48c8e4fa4ad",
@@ -11921,6 +11925,14 @@
   "internal_external_su2_merger_record_invariance_companion_note_2026-06-04": {
    "deps_hash": "75cc1b6116cd",
    "out_degree": 2
+  },
+  "interspecies_collision_current_rigidity_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "interspecies_rigidity_stability_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "0c671e841ac3",
+   "out_degree": 1
   },
   "inverse_problem_graph_requirements_note": {
    "deps_hash": "2cb75aeac319",

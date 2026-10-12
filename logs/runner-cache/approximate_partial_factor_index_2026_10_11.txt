@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/approximate_partial_factor_index_2026_10_11.py
+runner_sha256: 02911089b93ec2feef68453997af046db2a0141f0d8fe71e7731a806189c8298
+input_fingerprint_sha256: 22401fc9c10753f34a05a4ce44d8fb933997025fd624d596a13bdabb212ad0ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+{"arithmetic": "exact matrices", "basis_count": 4, "dimension": 2, "family": "weyl_bell"}
+{"arithmetic": "exact matrices", "basis_count": 16, "dimension": 4, "family": "weyl_bell"}
+{"arithmetic": "exact matrices and conjugation witness", "eta_squared": "6400/160801", "family": "quadratic_fidelity", "loss": "1600/160801", "p": "159201/160801"}
+{"ambient_dimension": 4, "arithmetic": "exact matrix averaging and polar unitary", "family": "one_block_intertwiner", "interior_dimension": 2, "scope": "Finite factor correction only; no global gluing inferred"}
+{"arithmetic": "exact two-vector witness in a tensor product", "family": "full_block_vs_single_site_norm", "full_block_defect": 2, "scope": "A product phase circuit tests error accumulation, not a nonzero-index example", "single_site_defect_squared": "2 - sqrt(2)", "site_count": 4}
+{"arithmetic": "exact two-vector witness in a tensor product", "family": "full_block_vs_single_site_norm", "full_block_defect": 2, "scope": "A product phase circuit tests error accumulation, not a nonzero-index example", "single_site_defect_squared": "2 - 2*sqrt(sqrt(2)/4 + 1/2)", "site_count": 8}
+{"arithmetic": "exact two-vector witness in a tensor product", "family": "full_block_vs_single_site_norm", "full_block_defect": 2, "scope": "A product phase circuit tests error accumulation, not a nonzero-index example", "single_site_defect_squared": "2 - 2*cos(pi/16)", "site_count": 16}
+{"arithmetic": "exact two-vector witness in a tensor product", "family": "full_block_vs_single_site_norm", "full_block_defect": 2, "scope": "A product phase circuit tests error accumulation, not a nonzero-index example", "single_site_defect_squared": "2 - 2*cos(pi/32)", "site_count": 32}
+{"amplified_transpose_norm": 2, "arithmetic": "exact matrices", "dimension": 2, "family": "amplification_outside_homomorphisms", "swap_norm": 1}
+{"amplified_transpose_norm": 3, "arithmetic": "exact matrices", "dimension": 3, "family": "amplification_outside_homomorphisms", "swap_norm": 1}
+{"A0": 126301682008665625, "CQ": 54941231673769546875, "EQ": "1/258665844753747200000", "arithmetic": "exact integer and rational", "family": "rww_constants_and_blocking", "maximum_cover": 18, "tail_threshold": "1/189876896664547554000000"}
+{"arithmetic": "exact edge/entropy counts in units log(2)", "backward": 0, "family": "qca_bell_edge_index", "forward": 2, "index_units": "1", "radius": 1, "shifts": [0, 1]}
+{"arithmetic": "exact edge/entropy counts in units log(2)", "backward": 2, "family": "qca_bell_edge_index", "forward": 0, "index_units": "-1", "radius": 1, "shifts": [0, -1]}
+{"arithmetic": "exact edge/entropy counts in units log(2)", "backward": 0, "family": "qca_bell_edge_index", "forward": 4, "index_units": "2", "radius": 2, "shifts": [0, 2]}
+{"arithmetic": "exact edge/entropy counts in units log(2)", "backward": 4, "family": "qca_bell_edge_index", "forward": 0, "index_units": "-2", "radius": 2, "shifts": [0, -2]}
+{"arithmetic": "exact edge/entropy counts in units log(2)", "backward": 2, "family": "qca_bell_edge_index", "forward": 2, "index_units": "0", "radius": 1, "shifts": [1, -1]}
+{"arithmetic": "exact edge/entropy counts in units log(2)", "backward": 0, "family": "qca_bell_edge_index", "forward": 0, "index_units": "0", "radius": 1, "shifts": [0, 0]}
+{"arithmetic": "exact matrix eigenvalues", "family": "interior_shift_hypothesis_discriminator", "scope": "A translated interior Pauli violates the small full-factor norm hypothesis", "uniform_operator_defect": 2}
+{"arithmetic": "floating eigenvalues of explicit density matrices", "dimension": 4, "distance": 0.375, "entropy_difference": 1.073542846408523, "family": "entropy_dimension_cost", "proved_upper_bound": 1.3255452355873412}
+{"arithmetic": "floating eigenvalues of explicit density matrices", "dimension": 16, "distance": 0.46875, "entropy_difference": 1.9605913137698616, "family": "entropy_dimension_cost", "proved_upper_bound": 2.2194208189951583}
+{"arithmetic": "exact rational coordinate and geometric sums", "exponential_kernel": "2^(-ell1 distance)", "family": "microscopic_lr_geometric_sums", "spatial_dimension": 2, "transverse_bound": 9, "transverse_sum": "11/2", "volume": 3, "width": 3}
+{"arithmetic": "exact rational coordinate and geometric sums", "exponential_kernel": "2^(-ell1 distance)", "family": "microscopic_lr_geometric_sums", "spatial_dimension": 3, "transverse_bound": 81, "transverse_sum": "121/4", "volume": 9, "width": 3}
+{"arithmetic": "floating density matrices; tolerance <=3e-10", "backward_mutual": 0.0, "bell_probability": 1.0, "computed_index": 0.6931471805599453, "delta_bound": 0.0, "family": "actual_choi_projection", "forward_mutual": 1.3862943611198906, "partial_factor_bound": 0.6931471805599453, "physical_qubits": 8, "reference_qubits": 8, "shift": 1, "sin_theta": 0.0, "trace_distance": 0.0}
+{"arithmetic": "floating density matrices; tolerance <=3e-10", "backward_mutual": 0.0, "bell_probability": 0.9801986324649912, "computed_index": 0.6931471805599453, "delta_bound": 0.28213736905198905, "family": "actual_choi_projection", "forward_mutual": 1.3862943611198906, "partial_factor_bound": 4.284609047507552, "physical_qubits": 8, "reference_qubits": 8, "shift": 1, "sin_theta": 0.09975062344139651, "trace_distance": 0.140717332034858}
+{"arithmetic": "floating density matrices; tolerance <=3e-10", "backward_mutual": 1.3862943611198906, "bell_probability": 0.9801986324649912, "computed_index": -0.6931471805599453, "delta_bound": 0.28213736905198905, "family": "actual_choi_projection", "forward_mutual": 0.0, "partial_factor_bound": 4.284609047507552, "physical_qubits": 8, "reference_qubits": 8, "shift": -1, "sin_theta": 0.09975062344139651, "trace_distance": 0.1407173320348579}
+{"L": 10000, "R": 53, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 106, "family": "tube_resource_example", "j": 100, "normalized_index_bound": 2.12000000000008, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 2, "volume_qubits": 10000}
+{"L": 100000, "R": 65, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 130, "family": "tube_resource_example", "j": 112, "normalized_index_bound": 0.2912, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 2, "volume_qubits": 100000}
+{"L": 1000000, "R": 76, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 152, "family": "tube_resource_example", "j": 123, "normalized_index_bound": 0.037392, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 2, "volume_qubits": 1000000}
+{"L": 10000000, "R": 88, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 176, "family": "tube_resource_example", "j": 135, "normalized_index_bound": 0.004752, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 2, "volume_qubits": 10000000}
+{"L": 10000, "R": 63, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 2504124, "family": "tube_resource_example", "j": 109, "normalized_index_bound": 5.493600000000087, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 3, "volume_qubits": 100000000}
+{"L": 100000, "R": 76, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 30376896, "family": "tube_resource_example", "j": 123, "normalized_index_bound": 0.74784, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 3, "volume_qubits": 10000000000}
+{"L": 1000000, "R": 90, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 359967600, "family": "tube_resource_example", "j": 137, "normalized_index_bound": 0.09864, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 3, "volume_qubits": 1000000000000}
+{"L": 10000000, "R": 104, "arithmetic": "floating logarithms with exact geometry counts", "boundary_qubits": 4159956736, "family": "tube_resource_example", "j": 151, "normalized_index_bound": 0.0125632, "premise": "illustrative A=E=mu=nu=1; no physical identification", "spatial_dimension": 3, "volume_qubits": 100000000000000}
+{"completed_finite_control_records": 33, "scope": "Finite algebra/count checks and declared floating examples only; no infinite-chain proof certification"}
+per_element: exact Weyl, Bell, entropy-count and rational geometric identities checked in the declared fixtures
+per_site: finite qubit-factor matrices and single-site/full-block error discriminators checked
+per_mode: checked and not executed — the theorem uses full algebra map norms, not Fourier-mode sampling
+per_block: explicit full interior/reference density matrices checked; no claim of exhausting every block dimension
+lattice_wide: checked and not executed — infinite-chain index and thermodynamic results use matched primary theorems and analytic proofs
+TOTAL: PASS=33 FAIL=0
+SCOPE: finite author-control records only; no audit verdict or infinite-chain proof by enumeration
+
+----- stderr -----
+

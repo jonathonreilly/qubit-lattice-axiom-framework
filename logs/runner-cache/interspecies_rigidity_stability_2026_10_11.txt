@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/interspecies_rigidity_stability_2026_10_11.py
+runner_sha256: b828ce7f6fb136d2d55cc1a19a4f9c41e735a11a4fa56355f623fabdd8115059
+input_fingerprint_sha256: 7bf48653802a67ad25a672bf9e72bd4d6207b4c4589301f9e7397f5c543e01ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+EXACT cycle signs, multiplier recovery, and normalized projection identity
+EXACT polynomial nonnegativity certificates for all rho,tau >= 1
+EXACT skew_and_duplicates: rank=26/30, equal_edges=3, dual_bound=36, theorem_C=2187930
+EXACT off_line: rank=26/30, equal_edges=3, dual_bound=93, theorem_C=2187930
+EXACT equal_triangle_anchors: rank=26/30, equal_edges=4, dual_bound=84, theorem_C=2187930
+EXACT nonorthogonal: rank=26/30, equal_edges=3, dual_bound=26897/105, theorem_C=320848031154846/343
+EXACT connected thin-image defect identity and homothety lower bound 1/6
+EXACT velocity dilation: wedge matrix scales, residual matrix is invariant
+EXACT cone family: unit velocities, triangle heights, inverse norm, rho=4/t, tau=4
+EXACT cubic averaging, high-frequency transverse derivative, and potential factor two
+SCOPE: exact finite/symbolic controls; universal proof and supplied physical hypotheses are separate.
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

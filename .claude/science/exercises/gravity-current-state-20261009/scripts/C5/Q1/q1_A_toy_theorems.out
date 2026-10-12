@@ -1,0 +1,24 @@
+=== (A1) Theorem A: configuration-diagonal coupling -> mixture, for any phases ===
+ phases set 0: ||rho_L - mixture|| = 5.55e-17 ; after substrate-only unitary ||rho_L' - rho_L|| = 1.11e-16 ; purity Tr rho^2 = 0.3550
+ phases set 1: ||rho_L - mixture|| = 5.55e-17 ; after substrate-only unitary ||rho_L' - rho_L|| = 2.22e-16 ; purity Tr rho^2 = 0.3550
+ phases set 2: ||rho_L - mixture|| = 5.55e-17 ; after substrate-only unitary ||rho_L' - rho_L|| = 5.55e-17 ; purity Tr rho^2 = 0.3550
+
+=== (A2) final-state projection onto |Sigma>: mean-propagated state; success prob = 1 - variance ===
+ ||post - E U chi0|| = 1.05e-16 ; success prob ||post||^2 = 0.288187 ; 1 - E||U chi - mean||^2 = 0.288187
+
+=== (A3) coherent-state recombination with circular Gaussian noise ===
+ Psi=1.0 V=   0.1: MC norm 0.93123  closed-form norm 0.93103  ||MC-pred||/||pred|| = 0.002 ; <a>_rec = 0.9507+0.0004i vs 2Psi/(2+V) = 0.9524 ; mean-field Psi = 1.0
+ Psi=1.0 V=   1.0: MC norm 0.59712  closed-form norm 0.59656  ||MC-pred||/||pred|| = 0.007 ; <a>_rec = 0.6609-0.0010i vs 2Psi/(2+V) = 0.6667 ; mean-field Psi = 1.0
+ Psi=2.0 V=   4.0: MC norm 0.21041  closed-form norm 0.21373  ||MC-pred||/||pred|| = 0.027 ; <a>_rec = 0.6650+0.0085i vs 2Psi/(2+V) = 0.6667 ; mean-field Psi = 2.0
+ Psi=1.5 V=  20.0: MC norm 0.08312  closed-form norm 0.08284  ||MC-pred||/||pred|| = 0.059 ; <a>_rec = 0.1260+0.0012i vs 2Psi/(2+V) = 0.1364 ; mean-field Psi = 1.5
+ Psi=3.0 V= 100.0: MC norm 0.01886  closed-form norm 0.01798  ||MC-pred||/||pred|| = 0.244 ; <a>_rec = 0.1386+0.0413i vs 2Psi/(2+V) = 0.0588 ; mean-field Psi = 3.0
+
+=== (A4) non-Gaussian noise: recombined amplitude is controlled by anti-concentration at 1 photon ===
+ circular Gaussian, V=50                       var=49.3 |E alpha|=0.941 : recombination prob ~ 0.0016 ; <a>_rec = -0.091-0.186i (Gaussian formula 2Psi/(2+V) = 0.0367)
+ lognormal multiplicative, E|W|^2=51           var=23.7 |E alpha|=1.021 : recombination prob ~ 0.7403 ; <a>_rec = 0.266+0.000i (Gaussian formula 2Psi/(2+V) = 0.0793)
+ lognormal amp x uniform phase                 var=63.5 |E alpha|=0.125 : recombination prob ~ 0.6870 ; <a>_rec = 0.006+0.001i (Gaussian formula 2Psi/(2+V) = 0.0038)
+ 90% quiet (alpha=Psi) + 10% Gaussian V=500    var=50.1 |E alpha|=1.026 : recombination prob ~ 0.8158 ; <a>_rec = 1.000-0.000i (Gaussian formula 2Psi/(2+V) = 0.0394)
+
+=== (A5) linear combination of unitaries ===
+ (1/sqrt2) 1 + (i/sqrt2) sigma_z unitary? ||W^dag W - 1|| = 2.2e-16 ; but the mean (1+sigma_z)/2 = diag(1,0) is not.
+ convex 0.5 U0 + 0.5 U1: min singular value 0.6242 (<1, so never unitary unless U0 = U1 up to nothing)

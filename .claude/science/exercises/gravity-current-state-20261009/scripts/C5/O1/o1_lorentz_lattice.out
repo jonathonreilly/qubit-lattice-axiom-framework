@@ -1,0 +1,16 @@
+s_r =
+ [[ 2 -1 -1 -1]
+ [ 1  0 -1 -1]
+ [ 1 -1  0 -1]
+ [ 1 -1 -1  0]] 
+  preserves eta, integer: True
+invariant vectors: dim = 0
+invariant symmetric 2-tensors: dim = 1 ; basis (as 4x4): [[[-1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]]
+word length <= 2: |orbit(e0)| =     9  max t =    2;  |orbit(e1)| =    21
+word length <= 4: |orbit(e0)| =    53  max t =    7;  |orbit(e1)| =    87
+word length <= 6: |orbit(e0)| =   277  max t =   26;  |orbit(e1)| =   393
+word length <= 8: |orbit(e0)| =  1401  max t =   97;  |orbit(e1)| =  1899
+e.g. points on t^2-x^2-y^2-z^2=1 reached: [(np.int64(7), np.int64(4), np.int64(-4), np.int64(4)), (np.int64(7), np.int64(4), np.int64(4), np.int64(-4)), (np.int64(7), np.int64(-4), np.int64(-4), np.int64(-4))]
+Lemma F: S eigenvalues (PSD, rank>=1): [0.080525 0.1875   0.1875   3.638225]
+  ||S - lam*eta|| = 3.614343 (nonzero => invariant speed tensor besides eta)
+  invariance check max|gSg^T - S| = 8.881784197001252e-16

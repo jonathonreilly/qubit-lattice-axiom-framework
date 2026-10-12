@@ -1,0 +1,37 @@
+lP=1.6163e-35 m, rho=lP^-4=1.465e+139 m^-4, events/m^3/s=4.393e+147
+Planck events per nucleon volume per s = 1.091e+103
+int (1-sinu/u)/u^2 = 0.784565  vs pi/4=0.785398
+
+== Theorem C: Poisson count=volume records at rho=lP^-4 tracking matter volume element ==
+fine:  -lnV = 2 pi (mc^2/hbar)^2 (d/c) T ;  coarse (cells l_c=c tau_c >> d, tau_c>=T): -lnV=(2pi/3)(d/lamC)^2 (cT)^2/(l_c c tau_c)
+electron (illustrative biprism)                  lamC=3.86e-13 m  (d/lamC)^2=6.71e+14  fine -lnV=7.58e+19  single-cell -lnV=1.40e+15  l_c needed=2.13e+07 m  [illustrative d,T]
+neutron perfect-crystal interferometer           lamC=2.10e-16 m  (d/lamC)^2=2.27e+27  fine -lnV=1.07e+34  single-cell -lnV=4.75e+27  l_c needed=1.63e+18 m  [d~cm, T~25us (NIST typical)]
+Cs-133 lattice interferometer, 70 s (Panda 2024) lamC=1.59e-18 m  (d/lamC)^2=3.94e+23  fine -lnV=5.20e+40  single-cell -lnV=8.26e+23  l_c needed=6.03e+22 m  [d taken 1 um (lower bound guess)]
+Rb-87 54 cm, 2.08 s (Kovachy 2015)               lamC=2.43e-18 m  (d/lamC)^2=4.92e+34  fine -lnV=3.57e+44  single-cell -lnV=1.03e+35  l_c needed=6.33e+26 m  [superposition reading disputed]
+25 kDa molecule (Fein 2019)                      lamC=8.47e-21 m  (d/lamC)^2=9.85e+26  fine -lnV=4.88e+40  single-cell -lnV=2.06e+27  l_c needed=3.01e+20 m  [d ~ grating period]
+Na cluster >170 kDa (Pedalino 2026)              lamC=1.25e-21 m  (d/lamC)^2=1.14e+28  fine -lnV=nan  single-cell -lnV=2.39e+28  l_c needed=nan m  [d ~ UV grating period; T not verified]
+(Hubble radius ~1.3e26 m; 1 kpc = 3.1e19 m)
+
+== Heating: Earth heat flow 7.87e-12 W/kg -> 1.32e-38 W per nucleon (all heat; anomalous allowance smaller) ==
+a=1.62e-35 m: dE/lock=9.54e+27 J (5.96e+40 MeV); max lock rate per nucleon=1.38e-66 /s; max fraction of Planck events=1.26e-169
+a=1.00e-19 m: dE/lock=2.49e-04 J (1.56e+09 MeV); max lock rate per nucleon=5.28e-35 /s; max fraction of Planck events=4.84e-138
+a=1.00e-15 m: dE/lock=2.49e-12 J (1.56e+01 MeV); max lock rate per nucleon=5.28e-27 /s; max fraction of Planck events=4.84e-130
+a=1.00e-10 m: dE/lock=2.49e-22 J (1.56e-09 MeV); max lock rate per nucleon=5.28e-17 /s; max fraction of Planck events=4.84e-120
+a=1.00e-07 m: dE/lock=2.49e-28 J (1.56e-15 MeV); max lock rate per nucleon=5.28e-11 /s; max fraction of Planck events=4.84e-114
+a=1.00e-06 m: dE/lock=2.49e-30 J (1.56e-17 MeV); max lock rate per nucleon=5.28e-09 /s; max fraction of Planck events=4.84e-112
+CSL-convention Earth-heat bound at rC=1e-7: lambda <= 2.64e-11 /s
+
+== EM field-strength records at vacuum-limited resolution (far zone only, kappa=1) ==
+charge e, d=1e-05 m, T=6e-10 s: -lnV ~ 3.28e+01
+charge e, d=1e-06 m, T=6e-10 s: -lnV ~ 3.28e+02
+charge e, d=1e-04 m, T=1e-09 s: -lnV ~ 5.47e+00
+grav far-zone DP-like electron (illustrative biprism)         : G m^2 T/(4 hbar d) = 7.88e-42
+grav far-zone DP-like neutron perfect-crystal interferometer  : G m^2 T/(4 hbar d) = 1.11e-33
+grav far-zone DP-like Cs-133 lattice interferometer, 70 s (Panda 2024): G m^2 T/(4 hbar d) = 5.40e-19
+grav far-zone DP-like Rb-87 54 cm, 2.08 s (Kovachy 2015)      : G m^2 T/(4 hbar d) = 1.27e-26
+grav far-zone DP-like 25 kDa molecule (Fein 2019)             : G m^2 T/(4 hbar d) = 7.18e-18
+DP self-energy rate per nucleon with R0=lP: 1.10e+05 /s ; with R0=0.54 A: 3.28e-20 /s
+
+== Coherence-only bounds on energy-free locks ==
+ion hyperfine qubit >1 h: lock rate on that qubit <= ~2.8e-04 /s ; per Planck event touching the ion volume (~(1e-10 m)^3): 6.3e-122
+Cs 70 s spatial: per atom <= ~1.4e-02 /s; per nucleon (incoherent) <= 1.1e-04 /s

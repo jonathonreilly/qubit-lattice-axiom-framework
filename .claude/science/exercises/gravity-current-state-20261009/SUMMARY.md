@@ -530,3 +530,20 @@ Details: `TESTS.md`, "Lane RZ results".
 - changing the leading generators themselves;
 - multi-band matter;
 - quasi-local "perfect" actions.
+
+## 21. Campaign C5, round 1: what the observations force on the rules (2026-10-12)
+
+**In plain words** (referee-checked unless noted):
+- **One light speed for all matter.** This forces the law to single out no spacetime direction that particles can feel. A hypercubic Euclidean grid does this for ordinary matter. The axioms' 3D grid with separate time does not, so it needs each speed difference tuned. The F2 example needs about 3 parts in 10¹⁷.
+- **A universal graviton** needs momentum to be exactly conserved for incoming and outgoing particles. Exact continuous translations are impossible with finitely many states tied to each site. That is proved in bounded forms.
+- **Gravity treats everything alike.** On a grid, a body falls with acceleration β∇Φ, where β is the curvature of its band. So all species must share one β, which is the "one light cone" condition seen from gravity's side.
+- **The vacuum barely gravitates.** Cancelling its energy without tuning requires exactly matched boson and fermion spectra, which observation excludes. A qubit site can't carry both a boson and a fermion. A lattice supercharge (Fendley–Schoutens–de Boer) is a real but costly escape.
+- **Interference and records.** Any record that learns "which way" degrades interference. So records must be rare, coarse, or copies of what the environment already knows. "Records copy, never measure" is a sufficient policy, not a proved necessity.
+- **The event substrate.** Making it a quantum superposition doesn't remove the lensing noise in the plain version (proved). Exotic versions are still open.
+
+**Three mutually exclusive rule sets remain:**
+- **A:** a continuum with discreteness only in records.
+- **B:** a Euclidean 4D grid that is hypercubic throughout.
+- **C:** keep the 3D grid and tune.
+
+None of them yet produces the graviton or explains Λ. Round 2 tests what decides between them.

@@ -2369,3 +2369,275 @@ Still INCONCLUSIVE: altered leading generators, non-block-diagonal BV completion
   - Expected: DERIVED: records cannot lock the spacetime microstructure, or lensed and interfering amplitudes decohere. So Record must be restricted to coarse, gauge-invariant or conserved data. This is a sharpened P4.
 
 - **O5: synthesis.** From O1–O4, plus the refereed walls, state the minimal set of rule changes to the four axioms consistent with every observation used. Name each as a price. Design the decisive tests for round 2.
+
+### C5 Round 1 results (recorded 12:00Z)
+
+All round-1 probes were refereed by codex gpt-5.6-sol at xhigh. Files: `agents/C5_{O1,O2,O3,O4,Q1}_*`; synthesis in `agents/C5_O5_synthesis.md` (same family, unrefereed).
+
+**O1 (Lorentz invariance) — NOT CONFIRMED as a necessity theorem.**
+- **Established.** Under the geometric-EFT hypotheses, having no invariant traceless rank-2 tensor (V₂^tl = 0) is *sufficient* to forbid dimension-4 speed operators, and it implies there is no invariant vector (V₁ = 0).
+- **Invariant counts.** The axioms' proper-cubic group has (V, S2) = (1, 2). B4⁺ and W(B4) have (0, 1). So a truly hypercubic whole matter law protects dimension-4 matter kinetic terms without continuous Lorentz symmetry.
+- **F2's e–γ split** of 8.55e-3 needs a counterterm of about 3.1e-17; ξ = 1 removes it. This is regulator-specific.
+- **Not established:**
+  - a universal necessity theorem;
+  - one tuning per pair of species;
+  - a counterexample to the full claim covering matter and gravity together.
+
+**O2 (universality) — CONFIRMED WITH CORRECTIONS.** Assuming exact soft spin-2 gauge redundancy and the pole Ward identity:
+- The soft residue is an additive collision invariant.
+- Its time component is energy, provided a further Noether bridge holds.
+- Regular spatial invariants are excluded only in the cited bounded classes.
+- The grid's tree-level defect is C(pa)², about 2e-41 at nucleon momenta, so tree-level precision cannot force exactness.
+- Under a supplied weak energy coupling, a band-bottom wavepacket falls as −β_B∇Φ. MICROSCOPE constrains only differences in effective β between compositions.
+- Exact geometric translations are rigorously incompatible with:
+  - (i) finite one-particle fibres uniformly tied to sites (Lemma S);
+  - (ii) strictly local continuous interpolation of the qubit-chain shift (Lemma G, 1D);
+  - (iii) finite-dimensional local algebras in positive-energy relativistic nets (Reeh–Schlieder).
+- Open: unbounded or non-geometric positions; quasi-local or asymptotic actions; infinite-transverse many-body systems.
+- The proposed rule (a continuum with records) is SUGGESTED, not derived.
+
+**O3 (vacuum and shear) — CONFIRMED WITH CORRECTIONS.**
+- **Free species.** For finitely many free lattice species, exact cancellation on an open mass interval forces the signed aggregate density-of-states measures to be equal (Theorem 1a). The precision arithmetic is correct.
+- **Nilpotent Q** with H = {Q, Q†} and nonzero superdimension gives exactly zero ground energy, plus paired levels under any deformation that preserves Q.
+- **Qubit sites.** A two-state site cannot hold independent exact CCR and CAR modes, and the dualities do not duplicate the spectrum. So the on-site/free subclass is a bounded FAIL.
+- **FS M1 lattice SUSY** is a genuine interacting escape. It needs an added Hamiltonian, a grading and a coupling rule that goes through Q. It establishes neither the physical E_g coupling nor visible partners.
+- **Qubit-pairing test overall:** INCONCLUSIVE.
+
+**O4 (records) — NOT CONFIRMED in its broad claims.**
+- **Established:**
+  - A permanent, perfectly distinguishable record channel that gains branch information obeys V ≤ BC(p_A, p_B), with the exact Poisson affinity formula.
+  - Under the narrow H3 model (fixed-cell Poisson at ℓ_P⁻⁴√−g in weak branchwise Newtonian metrics), −ln BC = 2πm²c³dT/ħ², with G cancelling. This is catastrophically large for matter waves.
+  - The 0.1 µm localization bound is about 5.3e-11 s⁻¹ per nucleon.
+  - Bell data exclude independently factorized local joint outcome laws.
+- **Not proved:** that every matter-responsive microgeometry must be unrecorded; that Y1–Y4 exhaust what records may lock; that "records copy, never measure" is necessary. P4′ remains a sufficient policy.
+- **Correction:** the 70 s experiment used Cs-133 at d = 1.9 µm.
+
+**Q1 (coherent event substrate) — CONFIRMED WITH CORRECTIONS.**
+- **Proved FAIL** for orthogonal sprinkling labels with configuration-diagonal coupling and fixed Poisson Born weights. Tracing out the substrate, or applying any later trace-preserving operation acting only on the substrate, gives the Poisson random-unitary channel. The intensity is then |Ψ|² + V, which inherits RZ's controlled exclusion: ln(N_B/S) ≥ 43986.
+- **Two exact results:**
+  - Projecting back onto the initial substrate succeeds with probability 1 − variance.
+  - A single circular-Gaussian mode gives amplitude 2Ψ/(2+V).
+- **Campaign-wide:** INCONCLUSIVE, leaning FAIL. Open: structured multimode amplitudes, tuned joint-unitary erasure, other spectral mechanisms, and decoherence induced by matter.
+
+### C5 Round 2 (pre-registered 12:02Z from the O5 synthesis; launched now)
+
+The O5 synthesis left three candidate sets of axiom changes. They are mutually exclusive; each change is named as a price, none is adopted.
+- **A** — continuum base with discreteness only in records.
+- **B** — Euclidean Z⁴ with a hypercubic whole law and the arrow in the state.
+- **C** — keep Z³ and tune.
+
+None of the three produces the graviton, and none explains Λ.
+
+Round 2 tests what decides between them. The full pre-registration text follows verbatim from `O5_round2_prereg.md`.
+
+### C5 Round 2 (pre-registration draft by O5; readings fixed before any run)
+
+**Where we start.** Round 1 (O1–O4 and Q1) and its codex verdicts:
+- O1: NOT CONFIRMED.
+- O2: CONFIRMED WITH CORRECTIONS (CWC).
+- O3: CWC.
+- O4: NOT CONFIRMED.
+- Q1: CWC. FAIL is proved for fixed Poisson Born weights with the substrate traced out; the full class is INCONCLUSIVE, leaning FAIL.
+
+O5's synthesis leaves three mutually incompatible minimal sets:
+- **A:** a continuum base, with discreteness only in sparse records.
+- **B:** a Euclidean Z⁴ at ξ = 1, with the whole law B4⁺-covariant and the arrow in the state.
+- **C:** keep Z³ and tune.
+
+Two other routes are near-closed: random events (E), and a quantum vacuum substrate with discrete events (A′). Round 2 targets the open problems that decide which set survives.
+
+**Rules for every probe.**
+- Agents: Opus 5.5 at xhigh.
+- Every FAIL, REFUTED or no-go goes to the codex gpt-5.6-sol (xhigh) referee before it is recorded.
+- Every axiom change is named as a price, never adopted.
+- Before deriving, each probe greps the repository and the packet for prior art and counts any match once.
+- Each probe states its hypotheses before giving a title, and lists the outside realizations its scope excludes.
+
+**Readings for derivation probes** (as in round 1):
+- **DERIVED:** proved from the stated observations plus explicitly stated hypotheses, with the bound given.
+- **SUGGESTED:** argued, not proved.
+- **REFUTED:** the claimed necessity is false; a counterexample exists.
+
+Test probes carry their own PASS / FAIL / INCONCLUSIVE readings, given below.
+
+---
+
+**R2-1: class II gravity. Can a Z⁴ grid have an exact gauge identity without secretly being a continuum?** (decides B)
+
+- **Plain question.** On a 4D grid with equal steps, matter light speeds are protected by the grid's symmetry. The graviton still needs an exact gauge identity, or 11 hand-set numbers (K1, refereed). Every identity tried has failed:
+  - K2 fails at second order;
+  - RFW is a bounded FAIL;
+  - T2's perfect-action kernels leave a p = 4 stiffness floor under proper-distance coupling.
+
+  Can a quasi-local law do better? Lattice chiral symmetry survives in the modified Ginsparg–Wilson form; can a modified identity of that kind exist for gravity, from a perfect (RG-blocked) or Ginsparg–Wilson-type action? Or does exactness need the whole blocked continuum, so that B is set A in lattice clothing?
+- **Setting.** Euclidean Z⁴, ξ = 1. A W(B4)-covariant law with finitely many fields per site, and couplings that decay at least exponentially (quasi-local). The matter is a free scalar and then a φ⁴ or Yukawa-interacting scalar, coupled to a linearized graviton h_μν. Prior art to count once:
+  - T2 (`TESTS.md:86-126`, families C and C′ and the κ ≡ 0 relabelling);
+  - K1 and K2 (`C4_K1_referee.md`, `C4_K2_referee.md`);
+  - RFW (`SUMMARY.md` §20);
+  - Lemma R (`T2-REF:21`).
+- **Probes.**
+  - **(a) Construction.** Block continuum linearized gravity plus the scalar with a W(B4)-covariant Gaussian blocking kernel, and write the resulting lattice Ward identity in Ginsparg–Wilson form (δS equal to terms in the blocking kernel).
+  - **(b) Counting.** Decide which of K1's 11 gauge-restoration directions (3 mass forms + 8 kinetic forms) the identity fixes.
+  - **(c) Closure.** Repeat K2's Killing-closure test at O(κ²) with the modified (remnant) symmetry.
+  - **(d) Locality.** Give the decay length of the couplings, and say whether the symbol is analytic in a strip.
+  - **(e) Field content.** Does the identity hold with the lattice fields alone, or does it need auxiliary fields, a tower of blocked modes per cell (P10), or the blocked continuum supplied as data?
+  - **(f) Interactions.** Does the identity survive a φ⁴ or Yukawa vertex with additive lattice momentum? Lemma R (refereed, narrowed) excludes ordinary local laws of that kind for the relabelling escape.
+- **FIXED readings.**
+  - **PASS:** an explicit quasi-local, W(B4)-covariant law with finitely many fields per site whose (possibly Ginsparg–Wilson-modified) linearized-diffeomorphism identity holds through O(κ²) for gravity plus interacting matter, and fixes all 11 K1 directions with no tuning.
+  - **COLLAPSES-TO-A:** such an identity exists only with an infinite per-cell tower, or with the blocked continuum supplied as data. Record this as "set B reduces to set A in lattice coordinates".
+  - **FAIL:** a proof that every quasi-local W(B4) law with finitely many fields per site fails the identity at O(κ²). This extends K2 beyond regular nearest-neighbour laws.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** INCONCLUSIVE, leaning COLLAPSES-TO-A.
+  - A Ginsparg–Wilson-type relation can protect the linear identity at O(κ).
+  - The O(κ²) closure needs the full nonlinear algebra. A blocked action carries that only through the continuum it was blocked from.
+
+---
+
+**R2-2: Lorentz-invariant discreteness, quantum and classical** (decides whether routes E and A′ are closed in general)
+
+- **Plain question.** Random events that steer light make shot-by-shot noise (RZ, refereed). A plain quantum superposition of them does not help (Q1, refereed for fixed Poisson weights; the full class is INCONCLUSIVE, leaning FAIL). Is that true of **every** Lorentz-invariant discreteness of spacetime events? Two lemmas would settle it:
+  - **N-Q:** a positive-energy quantum vacuum cannot contain countable events at all.
+  - **P-L:** a classical Lorentz-invariant point process always has weight at spacelike momentum transfer, so it always scatters on-shell light.
+- **Hypotheses for N-Q, as drafted in O5 §2.6:**
+  - **(N1)** Unitary translations, with spectrum in V̄₊ and a unique invariant vector Ω.
+  - **(N2)** Locality, with Ω separating for every bounded-region algebra.
+  - **(N3)** Each bounded 4D region O has a count N(O) affiliated with A(O), with spectrum in {0, 1, 2, …}.
+  - **(N4)** Additivity over finite disjoint unions, at every separation, timelike included.
+  - **(N5)** Fine-scale simplicity: any finite family of regions has a common refinement into regions on which N is a projection.
+  - **(N6)** Covariance, with ⟨N(O)⟩ = ρ·vol(O) and ρ > 0.
+- **Hypotheses for P-L.** A stationary, simple point process in R^{1,3} whose law is invariant under the Lorentz group, with finite local second moments. Its structure factor S(q) is the Fourier transform of ρδ⁴ + ρ²(g − 1), a positive Lorentz-invariant measure.
+- **Probes.**
+  - **(a) Check N-Q's sketch.** The steps to check:
+    - the Halmos two-projection step (commutation of disjoint fine counts);
+    - the extension to all regions through N5;
+    - the symmetric two-point function with support in V̄₊ ∩ (−V̄₊) = {0};
+    - Ω separating, which makes the count a constant ρ·vol(O)·1.
+
+    Then find the weakest form of N4 and N5 that still works.
+  - **(b) Prior art.** Compare with Malament (1996), Halvorson–Clifton (2002) and Hegerfeldt. Say what, if anything, is new: the 4D event version, with additivity across timelike separation.
+  - **(c) Escapes.** List and classify them: non-additive counts; counts additive only across spacelike separation (slice counts, which need a foliation); non-local counts; a non-unique vacuum; approximate simplicity.
+  - **(d) P-L.** Attempt a proof, modelled on the refereed corrected Lemma P (`E23_referee.md:90-112`): the δ⁴ self-term contributes ρ at every spacelike q, and positivity plus Lorentz invariance must then fail to cancel it. Alternatively, construct a counterexample with S(q) = 0 for all spacelike q.
+  - **(e) Survivors.** For any surviving construction, compute the incoherent on-shell scattering rate at RL coupling strength and compare it with RZ's bar.
+  - **(f) Reuse.** Reuse O5's check that a forward-cone-only spectral measure gives volume-law count variance (`o5_checks.out`), so that variance is not used as the criterion.
+- **FIXED readings** (derivation):
+  - **DERIVED:** both lemmas proved under the stated hypotheses. Then every Lorentz-invariant discrete event structure that steers propagation either makes noise (classical) or cannot exist as local counts (quantum vacuum).
+  - **SUGGESTED:** argued only, for either lemma. Record which one.
+  - **REFUTED:** an explicit counterexample: a covariant integer-count net in a positive-energy vacuum, or a Lorentz-invariant point process with zero spacelike structure factor.
+- **Expectation.**
+  - N-Q: DERIVED. It sits close to the Malament and Halvorson–Clifton theorems.
+  - P-L: SUGGESTED. Classical Lorentz-invariant processes are poorly characterized.
+  - Lean: route E and A′'s discrete events are both closed, with discreteness left to sets A (records), B (grid), C (grid) or D (deformed coordinates).
+
+---
+
+**R2-3: rare record flashes on a continuum, against the gravity walls** (decides whether set A is consistent)
+
+- **Plain question.** In set A, the only discreteness is rare record "flashes" on a continuum, as in relativistic GRW (Tumulka's rGRWf). Each flash kicks matter, so energy-momentum is not exactly conserved. Do such flashes, at rates allowed by interference and heat bounds, clash with a massless graviton, Λ, or the gravity walls? And can they be dense enough to give definite outcomes?
+- **Setting.** A continuum QFT (a free massive scalar or Dirac field) plus a covariant-in-law flash law, coupled to a supplied linearized graviton. The rates and resolutions must sit inside the refereed O4 budget:
+  - ≤ 5.3e-11 s⁻¹ per nucleon at 0.1 µm (Earth heat);
+  - Lemma 1's V ≤ BC for 25 kDa molecules;
+  - Cs-133 at 1.9 µm for 70 s;
+  - ions coherent for more than 1 h;
+  - X-ray and CSL-type limits as published.
+
+  Prior art to count once:
+  - PRICE_NOTE P4 and B referee line 103 (4e-151 per event);
+  - X2 (white stress noise in FR3 gases, a bounded FAIL);
+  - O2's flash row and the Josset–Perez–Sudarsky unimodular argument.
+- **Probes.**
+  - **(a) Source.** Compute the flash-induced stochastic source J^ν = ∂_μT^{μν} and its spectrum.
+  - **(b) Bianchi.** Check compatibility with the Bianchi identity: GR tolerates only a gradient source, so the setting is unimodular. Compute the implied Λ(t) drift over the Hubble time.
+  - **(c) TT noise.** Compute the TT stress-noise spectrum S_TT(q → 0). Compare it with P0's μ = 2.39e8 eV⁴ (graviton-mass channel) and with GW strain-noise and pulsar-timing levels.
+  - **(d) Heating.** Check heating against neutron stars and the intergalactic medium.
+  - **(e) Bell.** Check that the joint flash law is non-factorizing and no-signalling, as F8 requires.
+  - **(f) Density.** Find the maximal flash density compatible with (a)–(e), as a fraction of Planck-density events.
+  - **(g) Definite outcomes.** Find the minimal density that gives definite outcomes. Example: a 1 µm pointer of 1e10 nucleons localized within 1 ms.
+- **FIXED readings.**
+  - **PASS:** an explicit covariant flash law satisfying (b)–(e) with stated numbers, at a density that gives definite outcomes (g).
+  - **FAIL:** a proof that every covariant flash law dense enough for (g) violates one of (b)–(e).
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** PASS at GRW-type rates, with every gravitational effect many orders below the bounds. The mandatory reading attached to that PASS: the flashes are then gravitationally inert, so set A's discreteness plays no role in gravity, and the graviton and Λ stay unexplained.
+
+---
+
+**R2-4: set B's weight. Is Admissibility's probability clause satisfiable on Z⁴?** (decides set B's extra Admissibility price)
+
+- **Plain question.** In set B, Admissibility's "probability distribution … determined by the nearest-neighbor conditions" becomes the conditional of a Euclidean Gibbs weight on Z⁴. Physical probabilities exist only after the Osterwalder–Schrader reconstruction. Is that weight a positive, normalizable, reflection-positive probability when the content includes the following?
+  - (i) Chiral fermions, as in the Standard Model's weak sector.
+  - (ii) A graviton or metric sector.
+
+  If not, what is the smallest change to Admissibility, and does that change bring back a preferred tensor (Lemma C) or a law-level arrow (Lemma E)?
+- **Setting.** Z⁴ at ξ = 1, a W(B4)-covariant law, nearest-neighbour and then quasi-local. Prior art to count once:
+  - K7a's 4 tastes;
+  - K2's open coupled reflection positivity;
+  - the registered `kinetic_isotropy_primitive`;
+  - Nielsen–Ninomiya, Ginsparg–Wilson/overlap, Lüscher's chiral-gauge construction;
+  - the Gibbons–Hawking–Perry conformal factor;
+  - dynamical triangulations and CDT. CDT's causal restriction uses a foliation, which puts it in class I.
+- **Probes.**
+  - **(a) Chiral fermions.** State Nielsen–Ninomiya's hypotheses and check whether nearest-neighbour couplings plus W(B4) force doublers or tastes. Then give the locality class of the overlap/Ginsparg–Wilson operator (exponential, not nearest-neighbour), and say when the phase of the chiral determinant can be made positive.
+  - **(b) Gravity.** Check whether the lattice Euclidean Einstein–Hilbert (Regge) weight is bounded below, and how the known lattice-gravity phases avoid the conformal mode.
+  - **(c) Reflection positivity.** Check reflection positivity for (a) and (b) together.
+  - **(d) Wording.** State the resulting price against the exact Admissibility text (`MINIMAL_AXIOMS_2026-06-29.md:57-73`).
+- **FIXED readings** (derivation):
+  - **DERIVED:** a proof, under stated hypotheses, that no positive, normalizable, reflection-positive, W(B4)-covariant nearest-neighbour Gibbs weight on Z⁴ carries (i), and/or (ii). Then name the price: "probability distribution" becomes "weight", and/or "nearest-neighbour" becomes "quasi-local".
+  - **SUGGESTED:** argued from the known results without a proof in the stated class.
+  - **REFUTED:** an explicit positive, reflection-positive, W(B4) weight carrying (i) and (ii).
+- **Expectation.**
+  - (i): DERIVED for nearest-neighbour couplings (Nielsen–Ninomiya plus tastes); the chiral phase is SUGGESTED.
+  - (ii): SUGGESTED (the conformal factor).
+  - Net: set B pays an extra Admissibility price.
+
+---
+
+**R2-5: the arrow of time in the state** (decides whether set B is compatible with Record)
+
+- **Plain question.** A finite-symmetry law that keeps an arrow of time has a preferred frame (Lemma E, refereed with a convex cone). So in set B the arrow cannot be in the law. Can "Records form … records are permanent" (`MINIMAL_AXIOMS_2026-06-29.md:77-80`) then hold as a property of the state or a boundary condition?
+- **The conditions.** Under a time-reflection-symmetric, whole-law B4⁺ rule, can the following hold together?
+  - (i) The record count does not decrease toward one time direction, with probability ≥ 1 − δ over cosmological spans.
+  - (ii) Records, once formed, never un-form.
+  - (iii) The state induces matter-sector Lorentz violation of size at most (state energy density)/M_Pl⁴, with no natural-size u^μ operator in the law.
+
+  And does "permanent", read in a block (4D) sense, impose a law-level arrow?
+- **Probes.**
+  - **(a) Text.** List every time-oriented word in the four axioms and the Qualification: "form", "permanent", "locks", "when present", "a state is a configuration of records". Give a time-symmetric block reading of each, or show that none exists.
+  - **(b) Toy.** Build a 1+1 Euclidean, time-reflection-symmetric Gibbs model with an absorbing "locked" value, a low-record boundary at t = 0 and no future boundary. Measure monotonicity of the record count, permanence, and whether conditioning on the boundary reproduces a forward arrow without any oriented coupling.
+  - **(c) Induced Lorentz violation.** Estimate the Lorentz-violating coefficients induced by a state that carries an arrow, i.e. a thermal or cosmological state. Compare them with the F1 bounds.
+  - **(d) Prior art.** Compare with the Past-Hypothesis literature, and with repo notes on the arrow and on record formation (count once).
+- **FIXED readings** (derivation):
+  - **DERIVED:** under stated hypotheses, the arrow can sit in the state, with (i)–(iii) bounded.
+  - **SUGGESTED:** argued only.
+  - **REFUTED:** a proof that Record's formation or permanence clause forces a law-level time orientation, for example because "form" needs an oriented transfer step. Lemma E would then put set B back in class I. Record that as "B is incompatible with Record as written".
+- **Expectation.** SUGGESTED for the block reading, with a real risk of REFUTED if "records form" is irreducibly dynamical.
+
+---
+
+**R2-6: Snyder coordinates, discrete space with exact Lorentz symmetry** (decides whether a fourth set D exists)
+
+- **Plain question.** In Snyder's 1947 algebra, the spatial coordinates have discrete spectra (step a) while exact Lorentz symmetry is kept. The price is deformed translations: a curved (de Sitter) momentum space, and a non-additive, non-associative composition of momenta. It is the only known way to have discrete space and exact Lorentz symmetry together. Does it survive the round-1 observations?
+- **Prior art.** There are no repo hits. Count O2's SUGGESTED Snyder row once, and RB's torus-only scope.
+- **Probes.**
+  - **(a) Spectrum.** Confirm the spectrum of x_i and its covariance, and state what "discrete" means for a moving observer.
+  - **(b) Dispersion.** Find the one-particle dispersion and the dimension-5 and dimension-6 terms at a = ℓ_P. Compare them with LHAASO: E_QG,1 > 10 E_Pl and E_QG,2 > 6e-8 E_Pl.
+  - **(c) Composition.** Take the composition law (the Battisti–Meljanac coproduct) and find its N-body scaling for macroscopic bodies, i.e. the soccer-ball problem. Find the equivalence-principle violation for the MICROSCOPE test masses (1e-15) and for Earth and Moon (LLR, 1e-13).
+  - **(d) Soft theorem.** Run Lemma W with non-additive composition: does a consistent massless spin-2 soft theorem exist?
+  - **(e) Boost wall.** Does RB or C3's obstruction apply on a de Sitter momentum space?
+  - **(f) Finite fibre.** Can Snyder's structure sit on an M₂(C)-per-site fibre at all, given Lemmas S and G and Reeh–Schlieder?
+- **FIXED readings.**
+  - **PASS:** an explicit Snyder-type rule with a = ℓ_P that meets (b) and (c) numerically, has a consistent soft spin-2 coupling (d), and resolves the soccer-ball problem by a local rule.
+  - **FAIL:** a proof that the deformed composition violates MICROSCOPE or LLR at a = ℓ_P for macroscopic bodies, or that no consistent soft spin-2 coupling exists.
+  - **INCONCLUSIVE:** otherwise, including a resolution that needs a deformation scale depending on N (a non-local rule).
+- **Expectation.** FAIL for composition per constituent. INCONCLUSIVE if the deformation scale is allowed to scale with body size.
+
+---
+
+**Priority order** (most decisive first): R2-1, R2-2, R2-3, R2-4, R2-5, R2-6.
+
+**Dependencies.**
+- R2-2 uses Q1's Lemma E and Lemma F only as motivation. Its N-Q proof stands on its own hypotheses.
+- R2-4 and R2-5 matter only if R2-1 does not return COLLAPSES-TO-A or FAIL. They can run in parallel with it.
+
+**Deferred:**
+- edgeless sources for route E (R2-2 covers E in general);
+- the RG stability of set C's tuning count;
+- the FS supercharge rule as a gravity coupling.

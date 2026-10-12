@@ -1,0 +1,8 @@
+||psi||^2_{L2(mu)} = int |g|^2/p_mu dA = 3.981 (finite => normalizable substrate amplitude)
+int psi dmu = int g dA = 1.27
+ lambda=0.3 (GR photons nbar=0.09, V_ph=0.4): structured psi -> fidelity with |lambda Psi1> = 1.000000, |c(lambda)| = 1.13 ;  uniform psi -> coherent amp 0.254 (target 0.30), weight 0.843
+ lambda=0.7 (GR photons nbar=0.49, V_ph=2.0): structured psi -> fidelity with |lambda Psi1> = 1.000000, |c(lambda)| = 0.723 ;  uniform psi -> coherent amp 0.354 (target 0.70), weight 0.475
+ lambda=1.0 (GR photons nbar=1.00, V_ph=4.0): structured psi -> fidelity with |lambda Psi1> = 1.000000, |c(lambda)| = 0.4613 ;  uniform psi -> coherent amp 0.333 (target 1.00), weight 0.298
+ lambda=1.5 (GR photons nbar=2.25, V_ph=9.0): structured psi -> fidelity with |lambda Psi1> = 1.000000, |c(lambda)| = 0.2087 ;  uniform psi -> coherent amp 0.273 (target 1.50), weight 0.154
+ lambda=2.0 (GR photons nbar=4.00, V_ph=16.0): structured psi -> fidelity with |lambda Psi1> = 1.000000, |c(lambda)| = 0.09884 ;  uniform psi -> coherent amp 0.222 (target 2.00), weight 0.0912
+ lambda=3.0 (GR photons nbar=9.00, V_ph=36.0): structured psi -> fidelity with |lambda Psi1> = 1.000000, |c(lambda)| = 0.02788 ;  uniform psi -> coherent amp 0.158 (target 3.00), weight 0.0421

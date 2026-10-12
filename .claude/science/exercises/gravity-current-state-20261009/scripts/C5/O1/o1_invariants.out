@@ -1,0 +1,7 @@
+Invariant-subspace dimensions (S2 includes the metric itself when preserved).
+(a) Z3 x R, proper cubic O (axiom group), time fixed       |G|=   24  V=1  S2=2  S3=2  S4=4  MASS=6  KIN=30
+(b) Z3 x R with O_h x time reversal                        |G|=   96  V=0  S2=2  S3=0  S4=4  MASS=6  KIN=26
+(c) Z4 xi=1, proper hypercubic (det +1), order 192         |G|=  192  V=0  S2=1  S3=0  S4=2  MASS=3  KIN=9
+(d) Z4 xi=1, full W(B4), order 384                         |G|=  384  V=0  S2=1  S3=0  S4=2  MASS=3  KIN=9
+(e) W(B4) elements that preserve the time arrow            |G|=   48  V=1  S2=2  S3=2  S4=4  MASS=6  KIN=26
+(f) continuum O(4) (Monte-Carlo Haar, 4000 samples): MASS~1.97  KIN~3.77

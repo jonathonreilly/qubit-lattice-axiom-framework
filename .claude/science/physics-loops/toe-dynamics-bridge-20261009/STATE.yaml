@@ -13,12 +13,12 @@ base_revision: ba3ea535fa5ce80a3ad81b384a2063185da42756
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish response/pulse and time-filter milestone; check local-ground stability and general finite-energy
-  pulse work
+active_route: Publish checked response/pulse and time-filter milestone; independently extend native algebra spatial
+  bounds and BV pulse work
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Regular PR9499/9500/9502 open and attached; response/pulse source synthesis active
+milestone: RegularPR9499/9500/9502 open attached; response-transfer source package active, child PR not yet created.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -34,10 +34,10 @@ walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
-lock_refresh_before_utc: '2026-10-12T21:19:56.222479+00:00'
-next_action: Read entire frozen local-ground core and response/pulse assembly, then separate comparison/review.
-  Continue general finite-energy pulse task. Queue near-ground and all-BV candidate checks without silent milestone
-  scope expansion.
+lock_refresh_before_utc: '2026-10-12T22:54:55.738303+00:00'
+next_action: Inspect completed two-note response-transfer package, validate exact payload/program before root execution
+  and regular PR. Read sealed BV/native proofs when ready, then compare to root. Independently check prepared-pulse
+  robustness next. Refresh lock before22:54:55UTC; next recovery around22:05UTC.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -62,8 +62,8 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T21:00:48.486343+00:00'
-latest_source_refresh: '2026-10-12T20:35:53.861231+00:00'
+checkpoint_utc: '2026-10-12T21:31:47.501831+00:00'
+latest_source_refresh: '2026-10-12T21:17:52.091560+00:00'
 latest_other_pr: 'PR9501 at3153d7b2ddceeb26b78f2e1334ffa83218a01333: scalar mediator/source inversion, full313-line
   note read; distinct scope'
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
@@ -91,8 +91,8 @@ campaign_prs_closed_by_other_activity:
 - 9491
 state_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9495
 state_adapted_published_science_revision: 0d99401253ebf5790b5ac24a2dcb94a74871f874
-lock_refreshed_utc: '2026-10-12T19:39:56.227851+00:00'
-lock_expires_utc: '2026-10-12T21:39:56.222479+00:00'
+lock_refreshed_utc: '2026-10-12T21:14:55.738303+00:00'
+lock_expires_utc: '2026-10-12T23:14:55.738303+00:00'
 energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9496
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
@@ -128,9 +128,10 @@ root_phase_rate_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_2
 science_synthesis_worker: energy_transfer_synthesis
 root_bounded_interaction_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_LOCAL_INTERACTION_ROOT_PROBE.md
 root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_GROUND_SELECTION_ROOT_PROBE.md
-scoped_lean_status: Finite Clifford and compressed-resolvent ring identities compiled and complete statement-scope
-  reviews fully read. No analytic theorem formalization; recovery of interrupted review complete.
-previous_checkpoint_commit: ec325e4e7aea722f9321743d28ed750cde4818d6
+scoped_lean_status: Prior published finite identities complete; new CliffordRotation4e1868e2 compiled eight finite-ring
+  identities in50.36s, axiom reports propext only, no sorry/custom target axioms. Root source/output read complete;
+  separate statement-scope review pending. No analytic spatial proof formalized.
+previous_checkpoint_commit: 0b20433fc944076986651062f931734274810824
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -143,8 +144,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/response_spatial_recovery_20261012T210048Z.tar.gz
-recovery_map_aliases: 1169
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/low_energy_pulse_recovery_20261012T213147Z.tar.gz
+recovery_map_aliases: 1317
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -177,14 +178,18 @@ root_time_filtered_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_lea
 root_native_spatial_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_ROOT_PROBE.md
 interacting_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9502
 interacting_published_science_revision: ba3ea535fa5ce80a3ad81b384a2063185da42756
-local_ground_status: 589-line independent core5bf44abe frozen20:54:03; complete root read and source-exposed comparison
-  pending.
-finite_energy_pulse_status: Root230-line candidateee20231c frozen20:44:32; dyadic_even_refinement independently
-  derives arbitrary finite-form-energy pulse work and remote bounded readouts.
+local_ground_status: 589-line independent5bf44abe and411-line comparisondf8d5785 fully root-read, no required repair;
+  current native comparison resolved without changing frozen historical labels.
+finite_energy_pulse_status: 546-line independent2ee87525 and343-line comparisondac8b44d fully root-read, no required
+  repair; preserve support-hull and energy-target convergence qualifications.
 checkpoint_live_uncommitted: false
-response_pulse_assembly_status: 1247-line assembly694e3962 frozen; root complete read and distinct exact-source
-  review pending.
-near_ground_clustering_status: Root156-line candidate9200dbdc sealed20:51:16; energy-floor upper bound and actual
-  free continuum four-particle sharpness witness; independent check pending.
-bv_pulse_status: Root166-line candidate293f02c8 sealed20:55:08; forward and reverse form lower semicontinuity may
-  extend work identity to arbitrary compact BV pulses; independent check pending.
+response_pulse_assembly_status: 1247-line source694e3962 and491-line exact reviewc50b1ac2 fully root-read. No required
+  repair; source-only two-note publication package active.
+near_ground_clustering_status: 731-line independent3ccc98a7 plus426-line crosscheckb316b084 fully root-read. Square-root
+  general error is sharp for varying actual continuum state families; ground-block-diagonal linear alternative,
+  fixed-state free clustering, and native preparation corollary checked.
+bv_pulse_status: Independent all-BV work proof active; source barrier to root293f02c8 remains. No result yet.
+prepared_pulse_status: Root215-line candidatecbcb38df sealed21:07:32; HS form decomposition yields actual pulse
+  robustness and joint weak-source preparation criterion. Separate check pending.
+native_local_algebra_status: Independent entire even interval algebra task active without exposure to root268-line29af1360
+  or precision025d4cd4. Root candidate unverified.

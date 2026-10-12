@@ -4369,3 +4369,22 @@ Readings:
     - the matter shift is O(κm²) (Lemma M);
     - so for light matter c_m − c_T → −κΞ, unsuppressed;
     - the sign on the gapped edge is not definite.
+
+### C5 Round 12, item 3 (pre-registered 19:10Z; launched now)
+
+**R12-3. Twisted lattice supersymmetry outside class 𝒮: does a doubler-free gauge multiplet exist, and does Groot Nibbelink–Pospelov protection (no dimension-4 LV in SUSY theories) remove the electron–photon split?**
+- R10-5 (refereed, FAIL bounded to 𝒮): in the canonical SUSY-QM/Nicolai class without gauge–scalar mixing, the photino carries Chern ±2, which forces photon doublers. Its named escapes are twisted N=2 equivariant constructions with the scalar a, KKU-type orbifolds with A–scalar mixing, light-cone supercharges, and non-C¹ symbols.
+- The comparator (Groot Nibbelink–Pospelov, hep-ph/0404271, recalled) says SUSY forbids dimension-4 Lorentz-violating operators. With SUSY, LV starts at dimension 5, so it is Planck-suppressed.
+- The electron–photon split is the one coefficient nothing has removed so far:
+  - R8-5 (refereed) and R9-8: unsuppressed;
+  - R10-1 and R10-5: pairing leaves it.
+- Construct the cheapest Hamiltonian lattice gauge multiplet (twisted N=2 or orbifold, with A–scalar mixing) on Z³ × ℝ with box symbols, coupled to the Clifford-flat matter multiplet. Then:
+  - (a) Is the photon doubler-free? What is the Chern bookkeeping once the scalar mixes?
+  - (b) Is one supercharge exact with the Ward identity?
+  - (c) Compute the one-loop c_e − c_γ. Does it vanish, or is it suppressed to dimension 5?
+  - (d) Name the per-site content and prices.
+
+Readings:
+- **PASS:** an explicit lattice gauge-plus-matter law with an exact supercharge and Ward identity, a doubler-free photon, and a one-loop c_e − c_γ vanishing (or dimension-5-suppressed) for every edge shape, checked.
+- **FAIL:** a refereed no-go extending R10-5's Chern obstruction to the twisted or orbifold class.
+- **INCONCLUSIVE:** otherwise.

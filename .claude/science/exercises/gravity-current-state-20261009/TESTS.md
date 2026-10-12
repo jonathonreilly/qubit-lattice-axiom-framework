@@ -4815,3 +4815,33 @@ Readings:
   - **A subluminal Wilson-box Dirac exists,** but with light doublers.
 
   Referee running.
+
+### C5 Round 14, items 2–3 (pre-registered 21:15Z; launched now)
+
+**R14-2. Set A, start time (E1) against GW friction (E2), with the drag fixed: the comparison for the owner's question 1.**
+- R13-6 (refereed): Lemma D excludes R11-5's literal causal gain by double-pulsar self-drag. A zero-first-moment gain repairs it (still OPEN).
+- The same drag mechanism, applied to R12-7's E2-h friction law (`C5_R12-7_report.md:145`), suggests γ ≲ 0.03 H₀ (R13-6 worker, suggested only).
+- Compute:
+  - (a) the E2-h self-drag on each star's orbital velocity and the double-pulsar bound on γ. Can E2's drag be removed the same way, and at what cost?
+  - (b) for both E1 (repaired) and E2 (repaired if needed), the full set of stated observational tests and the near-cone energy budget on equal terms;
+  - (c) the price lists side by side, against the axiom text.
+
+Readings, per route:
+- **VIABLE:** an explicit repaired model passing every stated test (including double-pulsar drag) on a stated parameter region, with prices named.
+- **EXCLUDED:** a refereed bound violation for every parameter.
+- **OPEN:** otherwise.
+
+**R14-3. Subluminal edges: does any subluminal box law cancel the free shear mass μ_E or the graviton-cone shift Ξ?**
+- R14-1's worker (unrefereed) finds:
+  - in subluminal families A ≤ 0 everywhere, so Ξ < 0 for every edge vertex (graviton slower);
+  - every subluminal edge tried gives μ_E > 0;
+  - R9-2's shear-cancelling t* used a superluminal edge (v_max 1.6).
+- Prove or refute, in a stated class of subluminal one-band (even or odd, gapped) laws:
+  - (a) μ_E > 0 for every subluminal edge with a supplied zero-point vacuum;
+  - (b) Ξ < 0 for every vertex.
+- If both hold, the box route's graviton and shear sectors need tuning, or a superluminal edge. That is a choice between causality at the lattice scale and tuning.
+
+Readings:
+- **DERIVED:** (a) and (b) proved in the stated subluminal class (refereed).
+- **REFUTED:** an explicit subluminal law with μ_E = 0 or Ξ ≥ 0, checked.
+- **SUGGESTED:** otherwise.

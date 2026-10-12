@@ -1,0 +1,48 @@
+--- runner_v1
++++ runner_v2
+@@ -168,6 +168,8 @@
+     w = np.array([float(x) for x in exact])
+     rows = []
+     min_lower = Fraction(1)
++    min_binary_lower = Fraction(1)
++    binary = [Fraction.from_float(float(x)) for x in w]
+     max_group_error = 0.0
+     for j in range(20):
+         n = 1 + sum(exact[j+1:], Fraction(0))
+@@ -175,6 +177,9 @@
+         d_upper = n-exact[j]/dhi
+         assert d_lower > 0
+         min_lower = min(min_lower, d_lower)
++        binary_d_lower = 1 + sum(binary[j+1:], Fraction(0)) - binary[j]/dlo
++        assert binary_d_lower > 0
++        min_binary_lower = min(min_binary_lower, binary_d_lower)
+         nv, dv = float(n), float(n)-float(exact[j])/STEP
+         assert dv > 0 and dv <= nv+1e-14
+         analytic = group_max(nv, dv)
+@@ -205,6 +210,8 @@
+             "min_D_certified_positive": True,
+             "min_D_lower_exact": str(min_lower),
+             "min_D_lower_float": float(min_lower),
++            "min_D_binary64_lower_exact": str(min_binary_lower),
++            "min_D_binary64_lower_float": float(min_binary_lower),
+             "worst_group_row": worst, "rows": rows,
+             "max_group_optimization_difference": max_group_error,
+             "external_E": E_FIXED, "external_N": ext_n,
+@@ -216,7 +223,7 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser()
+-    parser.add_argument("--output-dir", type=Path, default=HERE/"evidence_v1")
++    parser.add_argument("--output-dir", type=Path, default=HERE/"evidence_v2")
+     args = parser.parse_args()
+     args.output_dir.mkdir(parents=True, exist_ok=True)
+     frozen = HERE/"FROZEN_TRANSFER_INPUT.json"
+@@ -237,7 +244,7 @@
+                          for name, weights in data["candidates"].items()]
+     for cand in out["candidates"]:
+         row = cand["worst_group_row"]
+-        print(f"PASS {cand['name']}: certified D>{cand['min_D_lower_float']:.12g}; "
++        print(f"PASS {cand['name']}: certified D>0; approximate inf D={cand['min_D_lower_float']:.12g}; "
+               f"max group/c_s={row['group_max_over_cs']:.12g} at upper ramp {row['ramp']}")
+         print(f"PASS {cand['name']}: nonlinear finite Dirichlet bounds; "
+               f"fitted external plateau N=D={cand['external_N']:.12g}")

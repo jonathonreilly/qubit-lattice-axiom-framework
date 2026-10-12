@@ -31,3 +31,24 @@ The common scalar construction uses standard canonical field mathematics as a
 construction, not an imported proof that nature is a scalar bath. Existing repo
 lattice lemmas, Wilson bridges and fitted physical constants are not hidden
 premises of these equations. SI scales used in gravity are empirical ruler inputs.
+
+## Direct constrained-dynamics attempt, October 12
+
+The parent explicitly added a preferred time and a positive phi_t^2/c_s^2
+term to the fitted two-potential static action, leaving psi auxiliary. The
+frozen response weights are unchanged. This is a proposed law, not a premise
+inferred from the calibration data. See
+gravity/solar_kernel_inversion/direct_constrained_dynamics/DIRECT_DYNAMICS.md.
+
+| Assumption | Checked consequence | Counterfactual / remaining task |
+|---|---|---|
+| Exact frozen N, nonnegative weights, uniform D=N+A N'>0 | Convex auxiliary elimination and positive field-only energy on a bounded zero-boundary domain | If D loses positivity this argument fails; a different field architecture needs its own stability proof |
+| Absolute time; only phi has a time derivative | One constrained physical configuration mode; static operator unchanged | General constant two-field time Hessians were also classified; new metric/vector or derivative structures remain open |
+| Physical scalar force -grad phi; no supplied gauge cancellation | Anisotropic homogeneous backgrounds have an off-support acceleration kernel proportional to (N-D)^2/|z|^5 | A larger observable/gauge construction could alter the physical conclusion; it has not been built |
+| Free speed c_s>0 | Phase/group speeds reported only relative to c_s | No fit to electromagnetic or tensor-wave speed; bounded group speed does not cure the support tail |
+| Separate zero-boundary energy and whole-space homogeneous perturbation domains | Each proof applies on its declared surface | No global nonlinear existence, total matter energy, lensing or cosmology result |
+
+The finite-propagation target is a stated theoretical requirement, not a new
+empirical exclusion. Both fitted external backgrounds are isotropic plateaus;
+the tail result concerns admissible active-ramp backgrounds. The five-family
+broad no-go packet is not satisfied; this is a preserved partial attempt.

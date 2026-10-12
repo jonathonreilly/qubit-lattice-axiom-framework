@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-12T21:55:53.463980+00:00",
+  "sources": [
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/direct_dynamics_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/independent_review/snapshot_direct_dynamics_check.py",
+      "sha256": "69e3ce25c55898fa32ea513ffee13d8a4a5ecd153de9659c8ff8d88597efba8c"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/evidence_v1/RESULTS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/independent_review/snapshot_author_RESULTS_v1.json",
+      "sha256": "963fbb73208ae2b43faaa462aca52d8477c0a964879dc54a52a4a3e731276a62"
+    }
+  ]
+}

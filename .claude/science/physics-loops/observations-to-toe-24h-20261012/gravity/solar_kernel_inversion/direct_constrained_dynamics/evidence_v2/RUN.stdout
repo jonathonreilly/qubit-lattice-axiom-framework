@@ -1,0 +1,12 @@
+PASS symbolic Euler, radial Hessian, rank-one determinant, Green tail, group velocity
+PASS original_D_joint: certified D>0; approximate inf D=0.567624395955; max group/c_s=1.32730115902 at upper ramp 19
+PASS original_D_joint: nonlinear finite Dirichlet bounds; fitted external plateau N=D=1.34091018902
+PASS interior_D_joint: certified D>0; approximate inf D=0.233679039443; max group/c_s=2.61463669821 at upper ramp 9
+PASS interior_D_joint: nonlinear finite Dirichlet bounds; fitted external plateau N=D=1.38206662931
+per_element: checked the off-source continuum Green kernel on the distinguished axis.
+per_site: checked and not executed — no discrete physical site model is proposed here.
+per_mode: checked positive homogeneous mode and group formulas for the stated action.
+per_block: checked finite Dirichlet diagnostics; the continuum energy proof is in the note.
+lattice_wide: checked and not executed — no lattice-wide physical propagation claim is made.
+NO_GO_PACKET: FAIL five-family quota; one kinetic family; preserve narrow partial attempt.
+NO_OBSERVATIONAL_EXCLUSION: c_s is free; scalar is not identified with tensor radiation.

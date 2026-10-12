@@ -1,0 +1,5 @@
+{
+  "derivation": "minus longitudinal derivative of equation (10), z>0",
+  "force_acceleration_tail": "-30*c_s**2*(D - N)**2/(pi*N**3*z**6)",
+  "identification": "force=-grad phi; no extra gauge cancellation supplied"
+}

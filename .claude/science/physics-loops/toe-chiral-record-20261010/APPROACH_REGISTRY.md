@@ -952,3 +952,17 @@ r^10.
 Family not used: unequal positive scales of the two swapped-dot
 generators plus the two cap multiples. The case t = u is settled. The
 300-dimensional affine space is not this family.
+
+Cycle 81 target contract: whether every quadruple of positive integers
+(t, u, r, s) gives partner rank 10, at every chirality coefficient,
+for t times the plus swapped-dot generator plus u times the minus
+swapped-dot generator plus r times the plus cap and s times the minus
+cap.
+
+Family used: unequal positive swapped-dot scales plus every pair of
+positive cap multiples. The swapped-dot coordinate is t-u and the
+scaled coordinate is 2r+2s. Four maximal minors cover every chirality
+coefficient.
+
+Family not used: a general integer point of the ten-kernel coefficient
+span. The 300-dimensional affine space is not this family.

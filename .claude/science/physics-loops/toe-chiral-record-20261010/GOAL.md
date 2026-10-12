@@ -554,3 +554,13 @@ span and outside the even space. Clearing the positive scale gives
 (2r+t)^20 or r^10. None depends on s. Unequal scales of the two
 swapped-dot generators are not in this count. The ten-kernel
 coefficient span is not classified.
+Cycle 81 shows that t times the plus swapped-dot generator plus u times
+the minus swapped-dot generator plus r times the plus cap and s times
+the minus cap has partner rank 10 at every chirality coefficient on
+every ordered height pair, for every quadruple of positive integers
+(t, u, r, s). The swapped-dot coordinate is t-u. The swapped coordinate
+is -(t+u) and the orthogonal coordinate is t+u. The matched and scaled
+coordinates are 2r+2s. The sum lies in neither ratio span and outside
+every even space. Four maximal minors cover every chirality coefficient.
+The kernel cross sum is -2t-4r. The ten-kernel coefficient span is not
+classified.

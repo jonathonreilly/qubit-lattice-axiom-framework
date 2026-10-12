@@ -442,3 +442,11 @@ integers (t, r, s). Every chirality coefficient has partner rank 10.
 The swapped-dot coordinate is `0` and the scaled coordinate is
 `2r+2s`. It does not take unequal scales of the two generators, and
 it does not classify the 300-dimensional affine space.
+
+Cycle 81 takes t times the plus swapped-dot generator plus u times the
+minus swapped-dot generator plus r times the plus cap and s times the
+minus cap, for every quadruple of positive integers (t, u, r, s).
+Every chirality coefficient has partner rank 10. The swapped-dot
+coordinate is `t-u` and the scaled coordinate is `2r+2s`. It does not
+take a general integer point of the ten-kernel coefficient span, and
+it does not classify the 300-dimensional affine space.

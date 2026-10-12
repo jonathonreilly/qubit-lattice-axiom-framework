@@ -1157,14 +1157,26 @@ pivot gcd is not this certificate. Unequal scales of the two
 swapped-dot generators are not in this count. The ten-kernel
 coefficient span is not classified. Runner `PASS=9 FAIL=0`.
 
+Cycle 81. On every ordered height pair, `t` times the plus swapped-dot
+generator plus `u` times the minus swapped-dot generator plus `r` times
+the plus cap and `s` times the minus cap has partner rank 10 at every
+chirality coefficient, for every quadruple of positive integers
+`(t, u, r, s)`. The swapped-dot coordinate is `t-u`, the swapped
+coordinate is `-(t+u)`, and the orthogonal coordinate is `t+u`. The
+transverse-sign and sign-product coordinates are `s-r`, and the matched
+and scaled coordinates are `2r+2s`. The sum lies in neither ratio span
+and outside every even space. Four maximal minors, of content `8192`,
+cover chirality through the values `0`, `2r+t`, and `4r+2t`. The pivot
+gcd is not this certificate. At heights 1 and 2 the kernel cross sum is
+`-2t-4r`, independent of `u` and `s`. The ten-kernel coefficient span
+is not classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every quadruple of positive integers (t, u, r, s) gives
-partner rank 10, at every chirality coefficient, for t times the plus
-swapped-dot generator plus u times the minus swapped-dot generator plus
-r times the plus cap and s times the minus cap. The case t = u is
-settled. Do not claim the ten-kernel coefficient span is settled. Do
-not claim the 300-dimensional affine space is classified.
+Decide the partner rank, at every chirality coefficient, of a general
+integer point of the ten-kernel coefficient span. Do not claim the
+300-dimensional affine space is classified. Do not return to the
+unequal swapped-dot quadruple.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

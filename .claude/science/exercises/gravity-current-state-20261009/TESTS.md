@@ -2983,3 +2983,17 @@ Readings:
 **R5-2 (infinite-orbit kernels):** worker INCONCLUSIVE; referee running (launched 14:16Z).
 
 **R5-3 (the mean of Λ):** worker reading OPEN on all four routes, with bounded EXCLUDED sub-results; referee running (launched 14:12Z).
+
+### C5 Round 5, item 5 (pre-registered 14:19Z; launched now)
+
+**R5-5. The ensemble-only LRL law: a superposition over lattice frames (price (iv) in R5-2's worker report).**
+- R4-1 (refereed) and R5-2 (worker) find that a single LRL realization has no long-wavelength □ from finite-orbit kernels, and none from the natural infinite ones. The ensemble mean does have □.
+- Suppose the substrate frame g ∈ SO⁺(1,3)/Γ_L is itself a quantum degree of freedom in superposition, so that only the frame-averaged law is physical.
+- Does matter propagation **decohere** the frame, selecting a realization, so that per-realization physics returns? Or does the frame stay coherent, so the mean law is what is observed?
+- Compute the frame-which-path information that a propagating particle writes, as a function of ℓ and the time of flight. Use the refereed per-realization deviations (R4-1) as the coupling.
+- Relate this to Q1, the traced-out substrate (FAIL for the plain Poisson version), and to O4's visibility bound V ≤ BC.
+
+Readings:
+- **PASS:** the frame stays coherent for all observed propagation (decoherence rate below stated bounds), so the ensemble □ is the observed law, with prices named.
+- **FAIL:** propagation decoheres the frame within observed scales, so per-realization physics, and the R4-1 obstruction, return.
+- **INCONCLUSIVE:** otherwise.

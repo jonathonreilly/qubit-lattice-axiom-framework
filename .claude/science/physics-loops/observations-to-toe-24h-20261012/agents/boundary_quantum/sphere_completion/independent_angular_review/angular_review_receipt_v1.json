@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-12T21:19:26.993710+00:00",
+  "disposition": "PASS_WITH_V2_PREMISE_CLARIFICATIONS",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/ANGULAR_REVIEW.md",
+    "sha256": "2faa610bb6fe38277a7e7d4005b0a828c31ab56e81687397680b261cff0841a9"
+  },
+  "check_script": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/check_angular_independent.py",
+    "sha256": "e06d04c950b397c68bfe33813c2db848f09448f3047bda90d3979cc04299e134"
+  },
+  "independent_checks": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/independent_angular_review/angular_independent_checks_v1.json",
+    "sha256": "3b4caea6928d126b918174b9bf69c9a14966c0d4308a3ca690d80dfe6db03c37"
+  },
+  "sources": [
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_ANGULAR_ROBUSTNESS.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_ANGULAR_ROBUSTNESS.md",
+      "sha256": "89bb0524439fa58b453fe473d312d58bfcb2ec6600fb31af4bbdd811ae31ae30"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/direct_angular_robustness_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/direct_angular_robustness_check.reviewed.py",
+      "sha256": "04c83b5e6362c3d79aeac4ec340421524dc6cd37240a6d683586ea2d642d548d"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_WITNESS_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_REFLECTION_WITNESS_V2.md",
+      "sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_RESULT.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_REFLECTION_RESULT.json",
+      "sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/independent_angular_review/snapshot_FREEZE.json",
+      "sha256": "e2b44b90578e11899629b58183b793b5d70276c92a579b364bd7d4ec6fb877d4"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/independent_angular_review/snapshot_RESULTS_v1.json",
+      "sha256": "5f3913d3508ff38b5a8bda32ec3689df272bddc01a6838bee230145fa778dba9"
+    },
+    {
+      "at": "2026-10-12T21:16:34.960202+00:00",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_ANGULAR_ROBUSTNESS_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_ANGULAR_ROBUSTNESS_V2.md",
+      "sha256": "5c953c127b522b23de3c8b3a237996a7ceb89a0d4fc24eb21aeb2e00a0d83e6a",
+      "scope": "V2 clarification, original frozen source and rational outputs retained."
+    }
+  ],
+  "final_source_identity_check": "all originals and snapshots unchanged",
+  "open_material_corrections": [],
+  "limits": "Pinned reflection interval; conditional maps, fixed fresh sampling and inclusion; no apparatus data, no full-sphere classification review, no formal audit."
+}

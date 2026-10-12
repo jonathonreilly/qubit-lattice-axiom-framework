@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-12T21:09:30.152678+00:00",
+  "sources": {
+    "DIRECT_ANGULAR_ROBUSTNESS.md": "89bb0524439fa58b453fe473d312d58bfcb2ec6600fb31af4bbdd811ae31ae30",
+    "direct_angular_robustness_check.py": "04c83b5e6362c3d79aeac4ec340421524dc6cd37240a6d683586ea2d642d548d",
+    "DIRECT_REFLECTION_WITNESS_V2.md": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd",
+    "DIRECT_REFLECTION_RESULT.json": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+  },
+  "equal_angle_radians": [
+    "0",
+    "1/2000",
+    "1/1000",
+    "1/500",
+    "1/250"
+  ],
+  "candidate_absolute_correlation_error": [
+    "0",
+    "1/1000"
+  ],
+  "visibility": "19/20",
+  "data_fit": null
+}

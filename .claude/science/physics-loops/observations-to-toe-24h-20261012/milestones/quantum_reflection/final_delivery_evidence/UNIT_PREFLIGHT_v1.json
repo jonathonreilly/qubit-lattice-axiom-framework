@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "quantum-reflection-milestone-20261012",
+  "tree": "db5bdc4b10aeb285c0576df770948e4e8c9ad460",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "sphere_quantum_visibility_reflection_bounded_theorem_note_2026-10-12",
+      "primary_runner": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": []
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8866,
+      "misses": 5202
+    },
+    "packet_imports": {
+      "hits": 8856,
+      "misses": 5200
+    },
+    "declared_inputs": {
+      "hits": 8954,
+      "misses": 5363
+    }
+  },
+  "record_sha256": "ec0057efb93ade708bd180d85a937a15aa60b5cd95f243b3fe2a955fb7572597",
+  "checker_sha256": "be6b7b3406423888719c87c966c7373a35b34ae5a2d548fcf1249ad4f981a54a"
+}

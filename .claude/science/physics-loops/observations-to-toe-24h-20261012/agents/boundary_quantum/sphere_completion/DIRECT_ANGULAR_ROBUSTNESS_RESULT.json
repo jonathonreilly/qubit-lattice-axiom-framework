@@ -1,0 +1,178 @@
+{
+  "at": "2026-10-12T21:09:30.191794+00:00",
+  "sources": {
+    "DIRECT_ANGULAR_ROBUSTNESS.md": "89bb0524439fa58b453fe473d312d58bfcb2ec6600fb31af4bbdd811ae31ae30",
+    "direct_angular_robustness_check.py": "04c83b5e6362c3d79aeac4ec340421524dc6cd37240a6d683586ea2d642d548d",
+    "DIRECT_REFLECTION_WITNESS_V2.md": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd",
+    "DIRECT_REFLECTION_RESULT.json": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+  },
+  "freeze_sha256": "e2b44b90578e11899629b58183b793b5d70276c92a579b364bd7d4ec6fb877d4",
+  "L_certified_upper": {
+    "numerator": "138279256679493643237349786633",
+    "denominator": "125000000000000000000000000000",
+    "decimal": "1.106234053435949145898798293064"
+  },
+  "ideal_gap_lower": {
+    "numerator": "251049965760545320063077983584656210537041",
+    "denominator": "4900000000000000000000000000000000000000000",
+    "decimal": "0.051234686889907208176138363996868614395"
+  },
+  "strict_pure_angle_tolerance_rad": {
+    "numerator": "251049965760545320063077983584656210537041",
+    "denominator": "57159666658062210343163857201763412000000000",
+    "decimal": "0.0043920823972323748310747578916397964011"
+  },
+  "rows": [
+    {
+      "angle_per_side_rad": "0",
+      "extra_candidate_error": "0",
+      "B_allowance_upper": {
+        "numerator": "0",
+        "denominator": "1",
+        "decimal": "0"
+      },
+      "effective_gap_lower": {
+        "numerator": "251049965760545320063077983584656210537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.051234686889907208176138363996868614395"
+      },
+      "N_for_each_error_at_most_1_percent": 469373
+    },
+    {
+      "angle_per_side_rad": "0",
+      "extra_candidate_error": "1/1000",
+      "B_allowance_upper": {
+        "numerator": "111",
+        "denominator": "20000",
+        "decimal": "0.00555"
+      },
+      "effective_gap_lower": {
+        "numerator": "223854965760545320063077983584656210537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.045684686889907208176138363996868614395"
+      },
+      "N_for_each_error_at_most_1_percent": 590344
+    },
+    {
+      "angle_per_side_rad": "1/2000",
+      "extra_candidate_error": "0",
+      "B_allowance_upper": {
+        "numerator": "291630952337052093587570700008997",
+        "denominator": "50000000000000000000000000000000000",
+        "decimal": "0.00583261904674104187175141400017994"
+      },
+      "effective_gap_lower": {
+        "numerator": "222470132431514214891496054983774504537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.045402067843166166304386949996688674395"
+      },
+      "N_for_each_error_at_most_1_percent": 597716
+    },
+    {
+      "angle_per_side_rad": "1/2000",
+      "extra_candidate_error": "1/1000",
+      "B_allowance_upper": {
+        "numerator": "569130952337052093587570700008997",
+        "denominator": "50000000000000000000000000000000000",
+        "decimal": "0.01138261904674104187175141400017994"
+      },
+      "effective_gap_lower": {
+        "numerator": "195275132431514214891496054983774504537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.039852067843166166304386949996688674395"
+      },
+      "N_for_each_error_at_most_1_percent": 775791
+    },
+    {
+      "angle_per_side_rad": "1/1000",
+      "extra_candidate_error": "0",
+      "B_allowance_upper": {
+        "numerator": "291630952337052093587570700008997",
+        "denominator": "25000000000000000000000000000000000",
+        "decimal": "0.01166523809348208374350282800035988"
+      },
+      "effective_gap_lower": {
+        "numerator": "193890299102483109719914126382892798537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.039569448796425124432635535996508734395"
+      },
+      "N_for_each_error_at_most_1_percent": 786912
+    },
+    {
+      "angle_per_side_rad": "1/1000",
+      "extra_candidate_error": "1/1000",
+      "B_allowance_upper": {
+        "numerator": "430380952337052093587570700008997",
+        "denominator": "25000000000000000000000000000000000",
+        "decimal": "0.01721523809348208374350282800035988"
+      },
+      "effective_gap_lower": {
+        "numerator": "166695299102483109719914126382892798537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.034019448796425124432635535996508734395"
+      },
+      "N_for_each_error_at_most_1_percent": 1064613
+    },
+    {
+      "angle_per_side_rad": "1/500",
+      "extra_candidate_error": "0",
+      "B_allowance_upper": {
+        "numerator": "291630952337052093587570700008997",
+        "denominator": "12500000000000000000000000000000000",
+        "decimal": "0.02333047618696416748700565600071976"
+      },
+      "effective_gap_lower": {
+        "numerator": "136730632444420899376750269181129386537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.027904210702943040689132707996148854395"
+      },
+      "N_for_each_error_at_most_1_percent": 1582365
+    },
+    {
+      "angle_per_side_rad": "1/500",
+      "extra_candidate_error": "1/1000",
+      "B_allowance_upper": {
+        "numerator": "361005952337052093587570700008997",
+        "denominator": "12500000000000000000000000000000000",
+        "decimal": "0.02888047618696416748700565600071976"
+      },
+      "effective_gap_lower": {
+        "numerator": "109535632444420899376750269181129386537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.022354210702943040689132707996148854395"
+      },
+      "N_for_each_error_at_most_1_percent": 2465627
+    },
+    {
+      "angle_per_side_rad": "1/250",
+      "extra_candidate_error": "0",
+      "B_allowance_upper": {
+        "numerator": "291630952337052093587570700008997",
+        "denominator": "6250000000000000000000000000000000",
+        "decimal": "0.04666095237392833497401131200143952"
+      },
+      "effective_gap_lower": {
+        "numerator": "22411299128296478690422554777602562537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0045737345159788732021270519954290943953"
+      },
+      "N_for_each_error_at_most_1_percent": 58898476
+    },
+    {
+      "angle_per_side_rad": "1/250",
+      "extra_candidate_error": "1/1000",
+      "B_allowance_upper": {
+        "numerator": "326318452337052093587570700008997",
+        "denominator": "6250000000000000000000000000000000",
+        "decimal": "0.05221095237392833497401131200143952"
+      },
+      "effective_gap_lower": {
+        "numerator": "-4783700871703521309577445222397437462959",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "-0.00097626548402112679787294800457090560469"
+      },
+      "N_for_each_error_at_most_1_percent": null
+    }
+  ],
+  "scope": "Stipulated error examples, conditional on common local quantum maps and per-trial alternative mean. No measured calibration, apparatus performance, or empirical exclusion."
+}

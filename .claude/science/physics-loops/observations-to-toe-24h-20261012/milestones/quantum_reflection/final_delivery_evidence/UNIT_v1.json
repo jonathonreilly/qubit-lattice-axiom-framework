@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "unit_id": "quantum-reflection-milestone-20261012",
+  "constituents": [
+    {
+      "id": "quantum-reflection-milestone-20261012",
+      "head": "0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6",
+      "delta_base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "dispositions": {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW_RECEIPT_v1.json",
+        "sha256": "3492f3b9b1a01c48f029231a82985dcb8a642ad5970fdbe508075fc44c713b57",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "commit": "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb",
+    "tree": "db5bdc4b10aeb285c0576df770948e4e8c9ad460",
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "93ca7b51b1c1bc3bacfb1baa407645f684001ef4efa4300a53d6c1d31b48beff"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/GOAL.md",
+        "sha256": "3e6e174bfad95963918def19b92c46347bb77010f4a974ca3ce2ebb983056bf2"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/HANDOFF.md",
+        "sha256": "ecd90f88ede12f9cfdf3c869d5b0ce8756cd62a00b9745efbc9e0cdf4f226fbf"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/REVIEW_HISTORY.md",
+        "sha256": "dbee101b8f5816006d5d0f417d8781fa5edce80f41d8370e4071ffd6dffebce9"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/TRACE_GATE.md",
+        "sha256": "f48a7d546f01b9eb3cc3c147a0821d5e101e4ecb8baa532b149a58f7eb922fda"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/ARCHIVAL_CACHE_v1.json",
+        "sha256": "03cfacc60b5d4f576e7d0c4403df67eda4d3d12ace6d23065ed75171b871f1ec"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/MUTATIONS_v1.json",
+        "sha256": "437983dfb5d611199d8ea657c5401fbf614fce1b5efcb1f14f7b7bd2f6c28065"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/RUN_RAW_v1.json",
+        "sha256": "91eb542486b7150b032324024692a302579bc9ef8db1cba17c29bfd29facb390"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/RUN_RAW_v2.json",
+        "sha256": "36a2ab5ff6b300bdf8fd38bb26cdc213f2fcf38b5d2bc15ad746b533e3ef1227"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "4be4a0e93e11adac1ed5d3bf451104baa53fc58e0031460d6cc05b065ea773a5"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_HANDOFF.md",
+        "sha256": "e63d1b7e2cb41b23f582a9a04999a962fa87d5e8802f38e6c1cf5de8b4ddf04b"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_REVIEW_HISTORY.md",
+        "sha256": "229b9054ea058386fdab3ccb830d1f54530fbb85bcef3369a6cd8b51cdb0cb32"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_v1.json",
+        "sha256": "7d1a77d1e1db7d51b18011a0ad46636196568e9992e3bf7ef6c819539d796c0e"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_v2.json",
+        "sha256": "24889d899e7fb73c0a45e72212644b5000f47d2b418551b48bcc06467260f8d1"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/validation_science_v1/RESULTS_v1.json",
+        "sha256": "7dbe0095ffcf5449eb73ae21dc5d1acadb5177752228e981f374d7164a4fb03e"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/validation_science_v1/gate-1_v1.log",
+        "sha256": "6fca92878f0e3d091743361fda6018d60e92faafb8e86f68b44777b0877412df"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/validation_science_v1/gate-2_v1.log",
+        "sha256": "2a2399cdfc694a7c7d1592a7697c2be79d9c2863cbba9101e1a2f962e75bcc39"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/validation_science_v1/gate-3_v1.log",
+        "sha256": "f8ea5c33bc2e2ab78c2aa331b031da73f905180c7ef383e7198b24ddae4441bc"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/CHECKS_v1.json",
+        "sha256": "afb0dda98bcbef946a7287c4ea1fc2011418602137ce591ec6049f613c31e63c"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/PORTABLE_JSON_RUN_v1.json",
+        "sha256": "bf7682a9776707cce2e1dad4cba578e539b9c5d4e8db6a89145c650b2d4e49fd"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW.md",
+        "sha256": "fcf18ec44654fe4483ea852fc73f7b1f817e5efda4f9454f4d2b3e8d1077d80c"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW_RECEIPT_v1.json",
+        "sha256": "3492f3b9b1a01c48f029231a82985dcb8a642ad5970fdbe508075fc44c713b57"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/VOCAB_v1.json",
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+      },
+      {
+        "path": ".claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/check_portable_transfer.py",
+        "sha256": "a505b6072083ef1a06216006e4f91baa4b038ba62c127e97a7c3e87df08c45f0"
+      },
+      {
+        "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "675c43ed9194a86a2b2e8f1417e0d6877b1a9d020a15b4a83fcfd0c9e729d8d6"
+      },
+      {
+        "path": "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt",
+        "sha256": "6d824ece1241b706f1d62941e7593cad8fead772b08c2c78240525a3ddfecd6a"
+      },
+      {
+        "path": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+        "sha256": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+        "role": "Literal integrity input only; no external scientific data read."
+      }
+    ],
+    "helpers": [],
+    "parents": [],
+    "context": [
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "cab78dd0ad2113e32d3ee26b337ac95e16366424eef106999872001c83079644"
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      {
+        "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/data/runner_timeout_declarations.json",
+        "sha256": "53883a6f18b3ba05e8c8fdf0007566191d8812ee29b43b254faee96289571456"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/direct_quantum_visibility_review",
+    "report": {
+      "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW.md",
+      "sha256": "fcf18ec44654fe4483ea852fc73f7b1f817e5efda4f9454f4d2b3e8d1077d80c"
+    },
+    "references": [
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/check_portable_transfer.py",
+        "sha256": "a505b6072083ef1a06216006e4f91baa4b038ba62c127e97a7c3e87df08c45f0"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/CHECKS_v1.json",
+        "sha256": "afb0dda98bcbef946a7287c4ea1fc2011418602137ce591ec6049f613c31e63c"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/PORTABLE_JSON_RUN_v1.json",
+        "sha256": "bf7682a9776707cce2e1dad4cba578e539b9c5d4e8db6a89145c650b2d4e49fd"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/VOCAB_v1.json",
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/CACHE_before_scope_wording_v1.txt",
+        "sha256": "29db3aee21fdde48149f1384d1666744371a89784a858e5bb2601272c4ecad62"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/MUTATIONS_v1.json",
+        "sha256": "437983dfb5d611199d8ea657c5401fbf614fce1b5efcb1f14f7b7bd2f6c28065"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/RUN_RAW_v1.json",
+        "sha256": "91eb542486b7150b032324024692a302579bc9ef8db1cba17c29bfd29facb390"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/RUN_RAW_v2.json",
+        "sha256": "36a2ab5ff6b300bdf8fd38bb26cdc213f2fcf38b5d2bc15ad746b533e3ef1227"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_v1.json",
+        "sha256": "7d1a77d1e1db7d51b18011a0ad46636196568e9992e3bf7ef6c819539d796c0e"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/evidence/SOURCE_FREEZE_v2.json",
+        "sha256": "24889d899e7fb73c0a45e72212644b5000f47d2b418551b48bcc06467260f8d1"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_visibility_review/REVIEW.md",
+        "sha256": "563abd6d825f7dbd142250965d7f2b43ca60679e6a384e6aa8b8900cc96a5299"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_visibility_review/independent_visibility_check.py",
+        "sha256": "798db22f7427cced672fbb0cc51ae7d9b28b3bedc281e9ddc8a2081a0d92d235"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_visibility/independent_visibility_review/CHECKS_v1.json",
+        "sha256": "dac0359d27d5d2be120329e417e919b76624d75c349eb36a444490a48e94e5e1"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_reflection_review/REVIEW.md",
+        "sha256": "2ca9d849b318b8e729531900f7728684b6b343139dbae6631c37ddb0ceacc0b8"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_reflection_review/independent_reflection_check.py",
+        "sha256": "f392cb3d7dca4ba982cabca4fc9afafc3c9385fac7dbbb726c6e6b1e29c94e8a"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_reflection_review/CORRECTION_CONFIRMATION.md",
+        "sha256": "50d81cd99118bdfb92c811025ea93056580fb0b4d08afc047823817a695038b8"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_reflection/independent_reflection_review/CHECKS_v1.json",
+        "sha256": "c6406ef447693ef2d986292220a4708c99a62a36fa869bc60d74e082a3121ff5"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_reflection/independent_reflection_review/REVIEW_RECEIPT_v2.json",
+        "sha256": "ae307212f2efb77995c9d6acb3d127fa796670936c1fae2a096ae5b3ecd51383"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_VISIBILITY_CRITERION.md",
+        "sha256": "b7cfa158462874462fea1b91f13b70792899ff473541ea220bde8d2d304d49d3"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_WITNESS_V2.md",
+        "sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/sphere_certificate.py",
+        "sha256": "03c20ec6781b25aea43bafe8fdc75497a7e9e17c40d6a74efc950c7f10911570"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/direct_reflection/RESULTS_v1.json",
+        "sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW_RECEIPT_v1.json",
+        "sha256": "3492f3b9b1a01c48f029231a82985dcb8a642ad5970fdbe508075fc44c713b57"
+      }
+    ]
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "sphere_quantum_visibility_reflection_bounded_theorem_note_2026-10-12",
+      "declared_claim_id": null,
+      "claim_type": "bounded_theorem",
+      "current_surface_status": "conditional-support",
+      "primary_runner": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+      "helpers": [],
+      "citations": [],
+      "repository_dependencies": [],
+      "dependency_rationale": "Self-contained proof under supplied quantum, candidate and trial assumptions; no repository theorem is a premise. External Tsirelson citation is background."
+    }
+  ],
+  "scope": "Final four scientific source identities unchanged; later metadata/evidence package explicitly bound. Same-session final identity confirmation is separately requested; no audit or landing."
+}

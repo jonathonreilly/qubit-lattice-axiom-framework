@@ -1,0 +1,96 @@
+{
+  "author": "direct parent check",
+  "source_cells_verified": 36,
+  "models": {
+    "boundary": {
+      "maximum_prediction_difference": 2.7284841053187847e-12,
+      "calibration_score": 207.5630400208043,
+      "fixed_test_score": 1447.8442504388247,
+      "supplied_covariance_test_score": 357.1819268870821
+    },
+    "quantum": {
+      "maximum_prediction_difference": 0.0,
+      "calibration_score": 230.7106419861181,
+      "fixed_test_score": 420.64126888962124,
+      "supplied_covariance_test_score": 303.7376129901243
+    },
+    "triangular": {
+      "maximum_prediction_difference": 3.637978807091713e-12,
+      "calibration_score": 5480.58718589225,
+      "fixed_test_score": 14117.420390117895,
+      "supplied_covariance_test_score": 3502.282484834982
+    }
+  },
+  "stationary_repeat_floor": {
+    "numerator": "1183659512598502857791934650678998423257105162350279979642140566188804038570225649806052106937569561219000000000",
+    "denominator": "5843665711127922253852281306749396893444991857827612133269948468257547586852089362266011945078668919414015753",
+    "float": 202.55428203986662
+  },
+  "pairs": [
+    {
+      "basis": "H",
+      "angles": [
+        0,
+        180
+      ],
+      "floor": 0.0564547363604183
+    },
+    {
+      "basis": "H",
+      "angles": [
+        20,
+        200
+      ],
+      "floor": 3.2838369079739
+    },
+    {
+      "basis": "H",
+      "angles": [
+        40,
+        220
+      ],
+      "floor": 62.738859526796304
+    },
+    {
+      "basis": "H",
+      "angles": [
+        60,
+        240
+      ],
+      "floor": 26.945463527457132
+    },
+    {
+      "basis": "D",
+      "angles": [
+        0,
+        180
+      ],
+      "floor": 13.22941779950351
+    },
+    {
+      "basis": "D",
+      "angles": [
+        20,
+        200
+      ],
+      "floor": 1.861392362276317
+    },
+    {
+      "basis": "D",
+      "angles": [
+        40,
+        220
+      ],
+      "floor": 79.84023618566229
+    },
+    {
+      "basis": "D",
+      "angles": [
+        60,
+        240
+      ],
+      "floor": 14.598620993836738
+    }
+  ],
+  "scope": "Post-exposure reproduction of inherited fixed prediction scores and observed-cell values. No fit, independent new test, validated confidence, causal attribution or fundamental-law exclusion. Supplied local prediction covariance arithmetic checked, not its statistical coverage or fitted Jacobian."
+}

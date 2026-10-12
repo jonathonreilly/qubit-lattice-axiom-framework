@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-12T21:12:22.714620+00:00",
+  "equal_efficiencies": [
+    "1",
+    "199/200",
+    "99/100",
+    "197/200",
+    "49/50",
+    "39/40",
+    "97/100"
+  ],
+  "assignments": [
+    "independent_fair_bits",
+    "constant_plus_one_fair_candidate"
+  ],
+  "sources": {
+    "DIRECT_DETECTION_READOUT.md": "906b648dd5756a7d63998f1f965cf99e907f93e4d912e6dca5f794b0ee429af3",
+    "DIRECT_REFLECTION_RESULT.json": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/RESULTS_v1.json": "5f3913d3508ff38b5a8bda32ec3689df272bddc01a6838bee230145fa778dba9"
+  }
+}

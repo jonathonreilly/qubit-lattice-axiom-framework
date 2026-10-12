@@ -17,3 +17,17 @@ phase noise as clock/channel rivals. Different Gaussian states share the same
 retarded response but need not share fluctuations. No one family has been
 selected as a TOE. The amplitude/matter and cosmological bridges remain research
 targets, not implicit Standard Model or cosmological derivations.
+
+
+Direct-author update, October 12, 2026:
+
+| Family | Concrete object and mechanism | Terminal obligation | Current evidence |
+| --- | --- | --- | --- |
+| Shared field inversion | Nonnegative log-ramp N(A), D=N+ANprime constrained; one QUMOND disk/solar operator | Transfer fixed parameters to additional sources, then supply viable metric/dynamical completion | Actual three-source interior compatibility; six-source transfer remains in numerical validation; original tiny violations preserved |
+| Harmonic correlation reconstruction | Trace norm of a sphere kernel; signed Clifford sectors; degree-three reflection | Common physical preparation/measurement maps and observational comparison | Portable theorem/interval reviewed; hypothetical angular and detection constraints independently checked; no empirical exclusion |
+| Observation-map diagnosis | Frozen multi-angle count means plus equivalent-setting weighted lower bound | Independently establish coordinate, selection, drift and covariance model | Parent reproduced public data and scores; stationary listed-error model remains inadequate |
+| Constrained dynamics candidate | Possible preferred-time auxiliary variables instead of two independent Lorentz scalars | Derive full constraints and physical modes; establish energy, propagation, lensing and matter coupling | Undeveloped candidate assumption; no inherited field-fit claim and no quantum completion |
+
+The last family is a proposed next question, not a result. Current quantum and
+gravity mathematical surfaces are jointly informative constraints but have no
+established shared physical degrees of freedom or unified action.

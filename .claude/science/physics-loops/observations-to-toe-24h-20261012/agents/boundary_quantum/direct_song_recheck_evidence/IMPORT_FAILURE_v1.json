@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-10-12T21:29:05.924942+00:00",
+  "source_sha256": "615df2e8f174d8c9619b89a2619c5a6c692264b9feb23374b0d2ce35ecb88d94",
+  "command": "/usr/local/bin/python3 direct_song_readout_check.py",
+  "failure": "ModuleNotFoundError: No module named 'openpyxl'",
+  "stage": "import before data/calculation/execution receipt",
+  "next_route": "Use provided workspace dependency runtime if available; preserve fixed inputs and no refit."
+}

@@ -1,0 +1,33 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "commit": "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb",
+  "tree": "db5bdc4b10aeb285c0576df770948e4e8c9ad460",
+  "worktree": "/private/tmp/quantum-reflection-final-validation-20261012",
+  "scope": "Final source plus complete committed evidence/metadata package; exact frozen tree before generated validation churn. Review-only, no audit or landing.",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh",
+      "--stage-citation-manifest"
+    ],
+    [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "origin/main",
+      "--include-worktree",
+      "--json"
+    ]
+  ],
+  "results": [],
+  "driver_pid": 5629,
+  "started_at": "2026-10-12T21:26:23.717384+00:00",
+  "unit_record_sha256": "ec0057efb93ade708bd180d85a937a15aa60b5cd95f243b3fe2a955fb7572597"
+}

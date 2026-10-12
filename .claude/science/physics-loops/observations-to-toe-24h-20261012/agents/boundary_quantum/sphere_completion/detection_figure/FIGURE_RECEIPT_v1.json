@@ -1,0 +1,15 @@
+{
+  "input_sha256": "b2962638e5699da67393682f96cfd53b60fb2ff102a80782a1658d97621c76b4",
+  "plot_source_sha256": "def16da360dacc704008300b9b1c903e65bd08d1c68583c48cc06aaac96f1e0b",
+  "outputs": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/figure_v2/DIRECT_DETECTION_TRADEOFF.png",
+      "sha256": "967a9771cc3617541513e9111ac7c424dec9cf04f9df6dc159f646a11e0adfb5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/figure_v2/DIRECT_DETECTION_TRADEOFF.pdf",
+      "sha256": "ce35d691d6c6e829adf29e896387e6821f60011683287e6373e15a7aa2b5cd04"
+    }
+  ],
+  "meaning": "Representation of frozen rows only; adjacent markers are joined as a visual guide."
+}

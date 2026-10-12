@@ -1,0 +1,37 @@
+{
+  "schema": "same_session_final_identity_confirmation_receipt_v1",
+  "at": "2026-10-12T21:26:45.675356+00:00",
+  "reviewer_session": "/root/direct_quantum_visibility_review",
+  "confirmation": "PASS_identity_and_metadata_scope",
+  "final_commit": "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb",
+  "final_tree": "db5bdc4b10aeb285c0576df770948e4e8c9ad460",
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "original_scientific_commit": "0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6",
+  "report": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/milestone_validation/final_identity_review/CONFIRMATION_v1.md",
+    "sha256": "26a31b8ca203ab1432e920c8981f3e35fd0c00cfa74b5acffd58127df6f16a14"
+  },
+  "source_refs": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/milestone_validation/final_identity_review/SOURCE_REFS_v1.json",
+    "sha256": "1a3726e030541d188b0fab015008b6f74f31ab78f0fb4b687c80c90282c711ab"
+  },
+  "checker": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/milestone_validation/final_identity_review/confirm_final_identity_v1.py",
+    "sha256": "b51240f5f90091979c542efb4c0729ad858d873e98454ee60b56340a09d5d4c1"
+  },
+  "prior_source_report": {
+    "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW.md",
+    "sha256": "fcf18ec44654fe4483ea852fc73f7b1f817e5efda4f9454f4d2b3e8d1077d80c"
+  },
+  "prior_source_receipt": {
+    "path": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go/.claude/science/physics-loops/quantum-reflection-milestone-20261012/independent_review/REVIEW_RECEIPT_v1.json",
+    "sha256": "3492f3b9b1a01c48f029231a82985dcb8a642ad5970fdbe508075fc44c713b57"
+  },
+  "source_judgment_carried_forward": true,
+  "material_semantic_issues": [],
+  "scientific_rerun": false,
+  "pipeline_rerun": false,
+  "final_evidence_package_validation": "pending_parent_execution",
+  "formal_audit": false,
+  "landing_authorized": false
+}

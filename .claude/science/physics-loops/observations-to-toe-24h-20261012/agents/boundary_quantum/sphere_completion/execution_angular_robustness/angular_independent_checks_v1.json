@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-12T21:18:05.226217+00:00",
+  "status": "PASS_WITH_V2_PREMISE_CLARIFICATIONS",
+  "reviewer_script_sha256": "e06d04c950b397c68bfe33813c2db848f09448f3047bda90d3979cc04299e134",
+  "source_records": [
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_ANGULAR_ROBUSTNESS.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_ANGULAR_ROBUSTNESS.md",
+      "sha256": "89bb0524439fa58b453fe473d312d58bfcb2ec6600fb31af4bbdd811ae31ae30"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/direct_angular_robustness_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/direct_angular_robustness_check.reviewed.py",
+      "sha256": "04c83b5e6362c3d79aeac4ec340421524dc6cd37240a6d683586ea2d642d548d"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_WITNESS_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_REFLECTION_WITNESS_V2.md",
+      "sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_RESULT.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_REFLECTION_RESULT.json",
+      "sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/independent_angular_review/snapshot_FREEZE.json",
+      "sha256": "e2b44b90578e11899629b58183b793b5d70276c92a579b364bd7d4ec6fb877d4"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/independent_angular_review/snapshot_RESULTS_v1.json",
+      "sha256": "5f3913d3508ff38b5a8bda32ec3689df272bddc01a6838bee230145fa778dba9"
+    },
+    {
+      "at": "2026-10-12T21:16:34.960202+00:00",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_ANGULAR_ROBUSTNESS_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_angular_review/DIRECT_ANGULAR_ROBUSTNESS_V2.md",
+      "sha256": "5c953c127b522b23de3c8b3a237996a7ceb89a0d4fc24eb21aeb2e00a0d83e6a",
+      "scope": "V2 clarification, original frozen source and rational outputs retained."
+    }
+  ],
+  "method": "Independent exact rational integration/propagation, alternate arctangent pi identity, symbolic derivatives, 90-digit curve controls, degree-exact spherical projector, explicit classical fixtures; no author helper imports.",
+  "total_variation": {
+    "numerator": "111",
+    "denominator": "20",
+    "decimal": "5.55"
+  },
+  "product_total_variation": {
+    "numerator": "91",
+    "denominator": "20",
+    "decimal": "4.55"
+  },
+  "diagonal_only_B": {
+    "numerator": "-1",
+    "denominator": "1",
+    "decimal": "-1.0"
+  },
+  "operator_norm_attainment": {
+    "numerator": "111",
+    "denominator": "20",
+    "decimal": "5.55"
+  },
+  "true_L_numerical": "1.106234053435949145898798293063420149708784750240688676266340217799634",
+  "max_grid_derivative_ratio": "1.0",
+  "certified_L_upper": {
+    "numerator": "138279256679493643237349786633",
+    "denominator": "125000000000000000000000000000",
+    "decimal": "1.106234053435949145898798293064"
+  },
+  "independent_pi_interval_width": {
+    "numerator": "10553169995806562878750266240339641660584514047911153206770408581393219370294115",
+    "denominator": "2246642096181824977268307945123563028781081078573863727311138524000102550613788090623001346360388485254340866396763730765317513775170420599404643603185664",
+    "decimal": "4.69730804641367093389888147130680254965950421e-75"
+  },
+  "pure_angle_strict_bound": {
+    "numerator": "251049965760545320063077983584656210537041",
+    "denominator": "57159666658062210343163857201763412000000000",
+    "decimal": "0.00439208239723237483107475789163979640114648991"
+  },
+  "rows": [
+    {
+      "delta": "0",
+      "epsilon": "0",
+      "gap": {
+        "numerator": "251049965760545320063077983584656210537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0512346868899072081761383639968686143953144898"
+      },
+      "N": 469373
+    },
+    {
+      "delta": "0",
+      "epsilon": "1/1000",
+      "gap": {
+        "numerator": "223854965760545320063077983584656210537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0456846868899072081761383639968686143953144898"
+      },
+      "N": 590344
+    },
+    {
+      "delta": "1/2000",
+      "epsilon": "0",
+      "gap": {
+        "numerator": "222470132431514214891496054983774504537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0454020678431661663043869499966886743953144898"
+      },
+      "N": 597716
+    },
+    {
+      "delta": "1/2000",
+      "epsilon": "1/1000",
+      "gap": {
+        "numerator": "195275132431514214891496054983774504537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0398520678431661663043869499966886743953144898"
+      },
+      "N": 775791
+    },
+    {
+      "delta": "1/1000",
+      "epsilon": "0",
+      "gap": {
+        "numerator": "193890299102483109719914126382892798537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0395694487964251244326355359965087343953144898"
+      },
+      "N": 786912
+    },
+    {
+      "delta": "1/1000",
+      "epsilon": "1/1000",
+      "gap": {
+        "numerator": "166695299102483109719914126382892798537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0340194487964251244326355359965087343953144898"
+      },
+      "N": 1064613
+    },
+    {
+      "delta": "1/500",
+      "epsilon": "0",
+      "gap": {
+        "numerator": "136730632444420899376750269181129386537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0279042107029430406891327079961488543953144898"
+      },
+      "N": 1582365
+    },
+    {
+      "delta": "1/500",
+      "epsilon": "1/1000",
+      "gap": {
+        "numerator": "109535632444420899376750269181129386537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0223542107029430406891327079961488543953144898"
+      },
+      "N": 2465627
+    },
+    {
+      "delta": "1/250",
+      "epsilon": "0",
+      "gap": {
+        "numerator": "22411299128296478690422554777602562537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0045737345159788732021270519954290943953144898"
+      },
+      "N": 58898476
+    },
+    {
+      "delta": "1/250",
+      "epsilon": "1/1000",
+      "gap": {
+        "numerator": "-4783700871703521309577445222397437462959",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "-0.000976265484021126797872948004570905604685510204"
+      },
+      "N": null
+    }
+  ],
+  "sphere_control": {
+    "nodes": 136,
+    "projector_rank": 7,
+    "idempotence_max_error": 1.1102230246251565e-16,
+    "reflection_square_max_error": 5.551115123125783e-16,
+    "common_local_values": {
+      "identity": 1.0,
+      "warp": -0.002666773138756589,
+      "source_independent_mixture": 0.47060002069045836
+    }
+  },
+  "correlated_jitter_fixture": {
+    "independent_signs": 4,
+    "actual_C": "1",
+    "naive_C": "0",
+    "enlarged_state_B": "-1"
+  },
+  "fresh_setting_retention_fixture": {
+    "original_mean": "-1",
+    "retained_mean": "111/20",
+    "retention_probability": "91/222"
+  },
+  "finite_sample_scope": "Fixed N; fresh conditional branch/setting law; common local quantum maps and every-trial candidate conditional lower mean. Each one-sided error <=exp(-5)<.01.",
+  "limits": "Pinned a3/reflection interval is a premise, not recertified full sphere classification. No measured calibration, detection model, actual experiment, or empirical exclusion.",
+  "elapsed_seconds": 0.2977894169744104,
+  "max_rss_bytes": 76283904
+}

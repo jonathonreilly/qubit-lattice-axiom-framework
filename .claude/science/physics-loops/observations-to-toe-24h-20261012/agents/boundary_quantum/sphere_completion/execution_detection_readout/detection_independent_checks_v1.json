@@ -1,0 +1,490 @@
+{
+  "at": "2026-10-12T21:23:36.489112+00:00",
+  "status": "PASS_WITH_V3_CONDITIONAL_FAIRNESS",
+  "reviewer_script_sha256": "e3eecec758191173ad3a0725307aea78f09fb70d02a83f1fbebf518ef177132d",
+  "source_records": [
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_DETECTION_READOUT.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_DETECTION_READOUT.md",
+      "sha256": "906b648dd5756a7d63998f1f965cf99e907f93e4d912e6dca5f794b0ee429af3"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_DETECTION_READOUT_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_DETECTION_READOUT_V2.md",
+      "sha256": "545443eea4933c013ad9a2a6f1f465acef4e0dc9d149833754e88117d490f36f"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/direct_detection_readout_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/direct_detection_readout_check.reviewed.py",
+      "sha256": "b1219211b54cc67e212805ab7ed48c8eefe049dad398b16fde06d083b029700b"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_RESULT.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_REFLECTION_RESULT.json",
+      "sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_WITNESS_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_REFLECTION_WITNESS_V2.md",
+      "sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_FREEZE.json",
+      "sha256": "648dc9d938fc95ba71b9112f6683f15e970c3b8ec398feb7da02d6d90858994c"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/EXECUTION_SOURCE_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_EXECUTION_SOURCE_v1.json",
+      "sha256": "5b9c81eab55dfd91046c6fca7b431cbedd710e69f3abed02b4b88b5546f5b5ac"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_RESULTS_v1.json",
+      "sha256": "b2962638e5699da67393682f96cfd53b60fb2ff102a80782a1658d97621c76b4"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_ANGULAR_RESULTS_v1.json",
+      "sha256": "5f3913d3508ff38b5a8bda32ec3689df272bddc01a6838bee230145fa778dba9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_DETECTION_READOUT_V3.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_DETECTION_READOUT_V3.md",
+      "sha256": "e3589c09bc5ad06940c793bf3239a425b72bc0b89aa457575e67247399e539dc"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DETECTION_CONDITIONAL_PREMISE_CHANGE.diff",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DETECTION_CONDITIONAL_PREMISE_CHANGE.diff",
+      "sha256": "04bd2108d18da3aec6a67235492a554026a691fd84b08de80f81475d459b0b68"
+    }
+  ],
+  "method": "Exact outcome/loss/fill-in enumeration, polynomial-root bisection, independent rational gap/count propagation, common-qubit POVM controls; no author helpers imported.",
+  "rows": [
+    {
+      "budget": "ideal",
+      "eta": "1",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "251049965760545320063077983584656210537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0512346868899072081761383639968686143953144898"
+      },
+      "N": 469373
+    },
+    {
+      "budget": "ideal",
+      "eta": "1",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "251049965760545320063077983584656210537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0512346868899072081761383639968686143953144898"
+      },
+      "N": 469373
+    },
+    {
+      "budget": "ideal",
+      "eta": "199/200",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "7986729694083355219817951227935970593477360641",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.0407486208881803837745813838159998499667212278"
+      },
+      "N": 742028
+    },
+    {
+      "budget": "ideal",
+      "eta": "199/200",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "7981829694083355219817951227935970593477360641",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.0407236208881803837745813838159998499667212278"
+      },
+      "N": 742940
+    },
+    {
+      "budget": "ideal",
+      "eta": "99/100",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "1485440714419104681938227317113215519473538841",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "0.0303151166207980547334332105533309289688477314"
+      },
+      "N": 1340688
+    },
+    {
+      "budget": "ideal",
+      "eta": "99/100",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "1480540714419104681938227317113215519473538841",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "0.0302151166207980547334332105533309289688477314"
+      },
+      "N": 1349577
+    },
+    {
+      "budget": "ideal",
+      "eta": "197/200",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "3907098121201003326327993464936922874732024169",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.0199341740877602210526938442088618514016940009"
+      },
+      "N": 3100627
+    },
+    {
+      "budget": "ideal",
+      "eta": "197/200",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "3862998121201003326327993464936922874732024169",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.0197091740877602210526938442088618514016940009"
+      },
+      "N": 3171825
+    },
+    {
+      "budget": "ideal",
+      "eta": "49/50",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "2401448322266720683090821195648154316315009",
+        "denominator": "250000000000000000000000000000000000000000000",
+        "decimal": "0.009605793289066882732363284782592617265260036"
+      },
+      "N": 13353020
+    },
+    {
+      "budget": "ideal",
+      "eta": "49/50",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "2301448322266720683090821195648154316315009",
+        "denominator": "250000000000000000000000000000000000000000000",
+        "decimal": "0.009205793289066882732363284782592617265260036"
+      },
+      "N": 14538632
+    },
+    {
+      "budget": "ideal",
+      "eta": "39/40",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "-5253002078210568184058386967737903773160639",
+        "denominator": "7840000000000000000000000000000000000000000000",
+        "decimal": "-0.000670025775281960227558467725476773440454163138"
+      },
+      "N": null
+    },
+    {
+      "budget": "ideal",
+      "eta": "39/40",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "-10153002078210568184058386967737903773160639",
+        "denominator": "7840000000000000000000000000000000000000000000",
+        "decimal": "-0.00129502577528196022755846772547677344045416314"
+      },
+      "N": null
+    },
+    {
+      "budget": "ideal",
+      "eta": "97/100",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "-533770872159029083526499252451969715056981231",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "-0.0108932831052863078270714133153463207154485966"
+      },
+      "N": null
+    },
+    {
+      "budget": "ideal",
+      "eta": "97/100",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "-577870872159029083526499252451969715056981231",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "-0.0117932831052863078270714133153463207154485966"
+      },
+      "N": null
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "1",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "166695299102483109719914126382892798537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0340194487964251244326355359965087343953144898"
+      },
+      "N": 1064613
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "1",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "166695299102483109719914126382892798537041",
+        "denominator": "4900000000000000000000000000000000000000000",
+        "decimal": "0.0340194487964251244326355359965087343953144898"
+      },
+      "N": 1064613
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "199/200",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "4646200539757433628018319318888937714865360641",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.0237051047946807838164199965249435597697212278"
+      },
+      "N": 2192615
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "199/200",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "4641300539757433628018319318888937714865360641",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.0236801047946807838164199965249435597697212278"
+      },
+      "N": 2197247
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "99/100",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "658680626503436958364878352678732318461538841",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "0.0134424617653762644564260888301782105808477314"
+      },
+      "N": 6818493
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "99/100",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "653780626503436958364878352678732318461538841",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "0.0133424617653762644564260888301782105808477314"
+      },
+      "N": 6921083
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "197/200",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "633377862868267005120147330793686618424024169",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.00323151970851156635265381291221268682869400086"
+      },
+      "N": 117986506
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "197/200",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "589277862868267005120147330793686618424024169",
+        "denominator": "196000000000000000000000000000000000000000000000",
+        "decimal": "0.00300651970851156635265381291221268682869400086"
+      },
+      "N": 136306903
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "49/50",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "-1731930343978327623724207807238252871684991",
+        "denominator": "250000000000000000000000000000000000000000000",
+        "decimal": "-0.006927721375913310494896831228953011486739964"
+      },
+      "N": null
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "49/50",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "-1831930343978327623724207807238252871684991",
+        "denominator": "250000000000000000000000000000000000000000000",
+        "decimal": "-0.007327721375913310494896831228953011486739964"
+      },
+      "N": null
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "39/40",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "-133556450065123190116010613771620053425160639",
+        "denominator": "7840000000000000000000000000000000000000000000",
+        "decimal": "-0.0170352614878983660862258435933188843654541631"
+      },
+      "N": null
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "39/40",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "-138456450065123190116010613771620053425160639",
+        "denominator": "7840000000000000000000000000000000000000000000",
+        "decimal": "-0.0176602614878983660862258435933188843654541631"
+      },
+      "N": null
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "97/100",
+      "assignment": "independent_fair_bits",
+      "gap": {
+        "numerator": "-1327463930744736420645327984863361658564981231",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "-0.0270911006274436004213332241808849318074485966"
+      },
+      "N": null
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "eta": "97/100",
+      "assignment": "constant_plus_one_fair_candidate",
+      "gap": {
+        "numerator": "-1371563930744736420645327984863361658564981231",
+        "denominator": "49000000000000000000000000000000000000000000000",
+        "decimal": "-0.0279911006274436004213332241808849318074485966"
+      },
+      "N": null
+    }
+  ],
+  "threshold_controls": [
+    {
+      "budget": "ideal",
+      "independent_brackets": {
+        "random_assignment_eta_threshold": [
+          {
+            "numerator": "169925894470420312658725332630758881784393",
+            "denominator": "174224571863520493293247799005065324265472",
+            "decimal": "0.975326801798844042768581706256343825837679685"
+          },
+          {
+            "numerator": "1359407155763362501269802661046071054275145",
+            "denominator": "1393796574908163946345982392040522594123776",
+            "decimal": "0.975326801798844042768581706256343825837680403"
+          }
+        ],
+        "constant_plus_eta_threshold": [
+          {
+            "numerator": "1359811210402102717161355159126345769565955",
+            "denominator": "1393796574908163946345982392040522594123776",
+            "decimal": "0.975616696784966274201853846429340067573968655"
+          },
+          {
+            "numerator": "339952802600525679290338789781586442391489",
+            "denominator": "348449143727040986586495598010130648530944",
+            "decimal": "0.975616696784966274201853846429340067573969373"
+          }
+        ]
+      }
+    },
+    {
+      "budget": "angle_and_candidate_error",
+      "independent_brackets": {
+        "random_assignment_eta_threshold": [
+          {
+            "numerator": "1370676728168010837095971673515747048037457",
+            "denominator": "1393796574908163946345982392040522594123776",
+            "decimal": "0.983412323465010339832214383336810979726491674"
+          },
+          {
+            "numerator": "685338364084005418547985836757873524018729",
+            "denominator": "696898287454081973172991196020261297061888",
+            "decimal": "0.983412323465010339832214383336810979726492391"
+          }
+        ],
+        "constant_plus_eta_threshold": [
+          {
+            "numerator": "1370862272601541385439443803802093518979303",
+            "denominator": "1393796574908163946345982392040522594123776",
+            "decimal": "0.983545445067452772083202331342060053826882263"
+          },
+          {
+            "numerator": "171357784075192673179930475475261689872413",
+            "denominator": "174224571863520493293247799005065324265472",
+            "decimal": "0.983545445067452772083202331342060053826882981"
+          }
+        ]
+      }
+    }
+  ],
+  "enumerated_readouts": [
+    {
+      "fixture": "biased",
+      "mA": "2/5",
+      "mB": "1/5",
+      "C": "2/5",
+      "random_C": "24/125",
+      "constant_C": "48/125",
+      "constant_fair_formula": "34/125"
+    },
+    {
+      "fixture": "fair",
+      "mA": "0",
+      "mB": "0",
+      "C": "1/2",
+      "random_C": "6/25",
+      "constant_C": "8/25",
+      "constant_fair_formula": "8/25"
+    }
+  ],
+  "conditional_fairness_fixture": [
+    {
+      "conditional_mA_and_mB": "1/100",
+      "same_C_in_both_histories": true,
+      "B_offset_missing_if_only_unconditionally_fair": "-99/500000"
+    },
+    {
+      "conditional_mA_and_mB": "-1/100",
+      "same_C_in_both_histories": true,
+      "B_offset_missing_if_only_unconditionally_fair": "99/500000"
+    }
+  ],
+  "correlated_loss_fixture": {
+    "actual_C": "1/2",
+    "etaA_etaB_prediction": "1/4"
+  },
+  "unconditional_efficiency_fixture": {
+    "average_eta": "99/100",
+    "apparent_gap": {
+      "numerator": "1485440714419104681938227317113215519473538841",
+      "denominator": "49000000000000000000000000000000000000000000000",
+      "decimal": "0.0303151166207980547334332105533309289688477314"
+    },
+    "low_history_gap": {
+      "numerator": "-533770872159029083526499252451969715056981231",
+      "denominator": "49000000000000000000000000000000000000000000000",
+      "decimal": "-0.0108932831052863078270714133153463207154485966"
+    }
+  },
+  "setting_and_outcome_dependent_quantum_POVMs": {
+    "random": -0.008500000000000014,
+    "constant": -0.154
+  },
+  "provenance_limit": "Declared efficiencies/input sources frozen; checker is pinned by execution receipt, not listed in the earlier freeze. Current source and all rational results independently agree.",
+  "scope": "Conditional prospective independent-loss model, fixed horizon, all heralded trials included before fresh choices. No empirical efficiency estimate or loophole-free apparatus validation.",
+  "elapsed_seconds": 0.011174208018928766,
+  "max_rss_bytes": 33914880
+}

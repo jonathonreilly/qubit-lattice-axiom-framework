@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-12T21:25:20.843460+00:00",
+  "disposition": "PASS_WITH_V3_CONDITIONAL_FAIRNESS",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DETECTION_REVIEW.md",
+    "sha256": "7532256b798780274f6b167a12ccb04f1b3b6941ed3bacd7ba916f66d0f9c545"
+  },
+  "check_script": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/check_detection_independent.py",
+    "sha256": "e3eecec758191173ad3a0725307aea78f09fb70d02a83f1fbebf518ef177132d"
+  },
+  "independent_checks": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/detection_independent_checks_v1.json",
+    "sha256": "889e69f156b2b45484ceabaffed884eb2708ff46cacc8433e0482562b49297b7"
+  },
+  "sources": [
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_DETECTION_READOUT.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_DETECTION_READOUT.md",
+      "sha256": "906b648dd5756a7d63998f1f965cf99e907f93e4d912e6dca5f794b0ee429af3"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_DETECTION_READOUT_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_DETECTION_READOUT_V2.md",
+      "sha256": "545443eea4933c013ad9a2a6f1f465acef4e0dc9d149833754e88117d490f36f"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/direct_detection_readout_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/direct_detection_readout_check.reviewed.py",
+      "sha256": "b1219211b54cc67e212805ab7ed48c8eefe049dad398b16fde06d083b029700b"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_RESULT.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_REFLECTION_RESULT.json",
+      "sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_REFLECTION_WITNESS_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_REFLECTION_WITNESS_V2.md",
+      "sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_FREEZE.json",
+      "sha256": "648dc9d938fc95ba71b9112f6683f15e970c3b8ec398feb7da02d6d90858994c"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/EXECUTION_SOURCE_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_EXECUTION_SOURCE_v1.json",
+      "sha256": "5b9c81eab55dfd91046c6fca7b431cbedd710e69f3abed02b4b88b5546f5b5ac"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_RESULTS_v1.json",
+      "sha256": "b2962638e5699da67393682f96cfd53b60fb2ff102a80782a1658d97621c76b4"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/angular_robustness/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/quantum/detection_readout/independent_detection_review/snapshot_ANGULAR_RESULTS_v1.json",
+      "sha256": "5f3913d3508ff38b5a8bda32ec3689df272bddc01a6838bee230145fa778dba9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DIRECT_DETECTION_READOUT_V3.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DIRECT_DETECTION_READOUT_V3.md",
+      "sha256": "e3589c09bc5ad06940c793bf3239a425b72bc0b89aa457575e67247399e539dc"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/DETECTION_CONDITIONAL_PREMISE_CHANGE.diff",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/sphere_completion/independent_detection_review/DETECTION_CONDITIONAL_PREMISE_CHANGE.diff",
+      "sha256": "04bd2108d18da3aec6a67235492a554026a691fd84b08de80f81475d459b0b68"
+    }
+  ],
+  "rows_matched": 28,
+  "nonpositive_gaps_preserved": 10,
+  "final_source_identity_check": "all originals and snapshots unchanged",
+  "open_material_corrections": [],
+  "resolved_qualification": "V3 requires conditional fair marginals for deterministic assignment, supplies general marginal terms, and retains V2 herald-before-fresh-choices timing. Random assignment requires no fairness.",
+  "limits": "Prospective conditional independent-loss candidate model, common local quantum POVM null, fixed horizon, no measured efficiencies or full apparatus validation; not a formal audit."
+}

@@ -1079,13 +1079,32 @@ swapped-dot generator is not in this count. Unequal cap multiples are
 not in this count. The ten-kernel coefficient span is not classified.
 Runner `PASS=7 FAIL=0`.
 
+Cycle 77. On every ordered height pair, both swapped-dot generators plus
+`r` times the plus cap and `s` times the minus cap have partner rank 10
+at every chirality coefficient, for every pair of positive integers
+`(r, s)`. The swapped-dot coordinate is `0`, the swapped coordinate is
+`-2`, the orthogonal coordinate is `2`, the transverse-sign and
+sign-product coordinates are `s-r`, and the matched and scaled
+coordinates are `2r+2s`. The sum lies in neither ratio span and outside
+the even space. One 17-row compression has an elimination polynomial
+with no positive integer root. On `(1, 2)`, `(2, 1)`, and `(3, 1)` it
+is `(2r+1)^20`. On `(1, 3)`, `(2, 3)`, and `(3, 2)` it is `r^10`.
+Neither polynomial depends on `s`. On the diagonal `r = s = m` the
+source-same polynomial is `(2m+1)^20` and the other three are `m^10`.
+That agrees with rank 10. It is not the cycle-76 polynomial
+`(2m+1)^10`. At heights 1 and 2 the kernel cross sum is `-2-4r`. The
+pivot gcd is not this certificate. This elimination polynomial is not
+claimed to be the monic generator of least degree. One swapped-dot
+generator is not in this count. The ten-kernel coefficient span is not
+classified. Runner `PASS=7 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every pair of positive integers (r, s) gives partner rank
-10, at every chirality coefficient, for both swapped-dot generators plus
-r times one ratio-span cap and s times the other. The diagonal r = s is
-settled. Do not claim the ten-kernel coefficient span is settled. Do not
-claim the 300-dimensional affine space is classified.
+10, at every chirality coefficient, for one swapped-dot generator plus
+r times one ratio-span cap and s times the other. The equal-multiple
+diagonal is settled. Do not claim the ten-kernel coefficient span is
+settled. Do not claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

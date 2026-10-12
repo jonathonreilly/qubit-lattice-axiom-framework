@@ -513,3 +513,13 @@ outside the even space. The elimination polynomial has no positive
 integer root. One swapped-dot generator is not in this count. Unequal
 cap multiples are not in this count. The ten-kernel coefficient span
 is not classified.
+Cycle 77 shows that both swapped-dot generators plus r times the plus
+cap and s times the minus cap have partner rank 10 at every chirality
+coefficient on every ordered height pair, for every pair of positive
+integers (r, s). The swapped-dot coordinate is 0, the transverse-sign
+and sign-product coordinates are s-r, and the matched and scaled
+coordinates are 2r+2s. The sum lies in neither ratio span and outside
+the even space. The elimination polynomial is (2r+1)^20 on (1, 2),
+(2, 1), and (3, 1), and r^10 on (1, 3), (2, 3), and (3, 2). Neither
+depends on s. One swapped-dot generator is not in this count. The
+ten-kernel coefficient span is not classified.

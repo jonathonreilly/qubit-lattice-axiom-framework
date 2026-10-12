@@ -1,6 +1,6 @@
 {
- "edge_count": 15647,
- "node_count": 6945,
+ "edge_count": 15650,
+ "node_count": 6946,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2963,6 +2963,10 @@
    "out_degree": 3
   },
   "chiral_pair_both_swapped_dots_twice_one_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10": {
    "deps_hash": "8817e2ad5d19",
    "out_degree": 3
   },

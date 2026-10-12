@@ -758,3 +758,10 @@
 - The certificate is an elimination polynomial in m with no positive integer root. The span obstructions are nonzero constants. The pivot gcd is not this certificate. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 77
+
+- The ansatz is both swapped-dot generators plus r times the plus cap and s times the minus cap, for every pair of positive integers (r, s), on every ordered height pair. The swapped-dot coordinate is 0 and the matched and scaled coordinates are 2r+2s. Every chirality coefficient has partner rank 10.
+- The certificate is an elimination polynomial (2r+1)^20 on (1, 2), (2, 1), and (3, 1), and r^10 on (1, 3), (2, 3), and (3, 2). Neither depends on s. The span obstructions are the unit ideal. The pivot gcd is not this certificate. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

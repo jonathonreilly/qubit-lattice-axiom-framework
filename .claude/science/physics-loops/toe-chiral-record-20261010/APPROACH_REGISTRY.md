@@ -895,3 +895,17 @@ root.
 Family not used: both swapped-dot generators plus unequal positive
 multiples of the two caps. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 77 target contract: whether every pair of positive integers
+(r, s) gives partner rank 10, at every chirality coefficient, for both
+swapped-dot generators plus r times the plus cap and s times the minus
+cap.
+
+Family used: both swapped-dot generators plus every pair of positive
+cap multiples. The swapped-dot coordinate is 0 and the scaled
+coordinate is 2r+2s. The elimination polynomial is (2r+1)^20 on
+(1, 2), (2, 1), and (3, 1), and r^10 on the other three pairs.
+
+Family not used: one swapped-dot generator plus unequal positive
+multiples of the two caps. The equal-multiple diagonal is settled.
+The 300-dimensional affine space is not this family.

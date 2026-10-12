@@ -1,0 +1,1365 @@
+{
+  "base_revision": "3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe",
+  "packet": ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012",
+  "direct_dependency_scope_confirmed_by_root": true,
+  "specs": [
+    {
+      "key": "Boost",
+      "prefix": "MICROSCOPIC_BOOST_FLOW",
+      "slug": "microscopic_boost_flow",
+      "source": "MICROSCOPIC_BOOST_FLOW_PROBE.md",
+      "source_sha": "7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7",
+      "report": "MICROSCOPIC_BOOST_FLOW_REVIEW.md",
+      "report_sha": "ed2c7e594714b9ba0dc1e8f0fed916e55c7a2e7c84bc0078acc6a00cd4292678",
+      "folder": "microscopic_boost_flow",
+      "review": "microscopic_boost_flow_review",
+      "helper": "finite_controls.py",
+      "helper_sha": "5a404e8ff79a64f004603d9ae6841675c294fd5d566818c05646974048cec76b",
+      "author_receipt": "receipt.json",
+      "review_receipt": "receipt.json",
+      "author_receipt_sha": "556db66a03600f637ba47663e4faca9202d48baab65cbf81828e08015faa15c9",
+      "review_receipt_sha": "aeacaf3d522cd6994ea29f6b26344007b2dbfb2a7de83a2c1dc93ca9d12812d4",
+      "dependency_keys": [
+        "Current"
+      ],
+      "dependencies": [
+        {
+          "note": "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "Finite current pair algebra and the canonical uniform finite-range dynamics at the source-matched hypotheses; no extra actual-operator assumptions are imported.",
+          "sha256": "e97ba0f26e1a21f3a4cd231c1abc9c97b8fbdc0b127bcfb6354aef37e4a54ccf"
+        }
+      ],
+      "scope": "Under supplied finite-range spin densities, the checked spatially growing-flow theorem and explicit rapid almost-local graph estimates give the weighted flow; same-state local infinitesimal identities give canonical self-adjoint GNS H/B/P and local current closure. No positive-energy physical state or integrated Lorentz representation is constructed.",
+      "conditional": "Actual weighted flow and canonical generators under supplied same-state local identities",
+      "claim_reason": "The finite-range density and local state identities remain supplied; no physical selection, spectrum, remaining Lie identities or integrated representation follows.",
+      "note": "MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "microscopic_boost_flow_2026_10_12.py",
+      "claim": "microscopic_boost_flow_bounded_theorem_note_2026-10-12",
+      "baseline_stdout": "microscopic_boost_flow/logs/final.none.stdout",
+      "baseline_stdout_sha256": "0ea58ee320079a04a6d23ce28d326ed77f20523108ddda75c99001b6916ced7c",
+      "baseline_result": "microscopic_boost_flow/finite_controls.final.none.json",
+      "independent_helper": "microscopic_boost_flow_review/independent_controls.py",
+      "independent_helper_sha256": "8e9bf5d4f77cdc45bdcfbc22b797535e37db73a2cfaca2d887e11cd1b85f3960",
+      "independent_stdout": "microscopic_boost_flow_review/logs/independent.canonical.stdout",
+      "root_coverage": "Boost_root_review_coverage.json",
+      "root_evidence_verification": "Boost_root_evidence_verification.json",
+      "timeout_sec": 60,
+      "canonical_execution_status": "not_run_by_preparation",
+      "pairing": "Same selected model family in separate author/reviewer contexts; selected model and reasoning effort preserved. Candidate formulas and reported outcomes were visible before distinct controls; not blinded or cross-family checking. Root is a coauthor, not the independent reviewer.",
+      "prerequisites": [
+        "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12"
+      ],
+      "audit_inputs": [
+        "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json"
+      ],
+      "baseline_stdout_lines": 50,
+      "original_recorded_predicates": 49,
+      "total_semantics": "Recorded finite predicates only; no proof grade.",
+      "baseline_totals": {
+        "passed": 49,
+        "failed": 0,
+        "semantics": "Original finite predicates"
+      },
+      "baseline_scientific_stdout_policy": "Every original stdout byte is retained as an exact prefix; only the exact mapped N5/scope/completion suffix may follow. No original scientific row, threshold or failure gate changes.",
+      "mutation_kind": "original_cli_variant",
+      "mutation_authority": "microscopic_boost_flow/finite_controls.py",
+      "mutations": [
+        {
+          "name": "drop_position",
+          "argv": [
+            "--mutation",
+            "drop_position"
+          ],
+          "original_result": "microscopic_boost_flow/finite_controls.final.drop_position.json",
+          "original_receipt": "microscopic_boost_flow/logs/final.drop_position.receipt.json",
+          "original_stdout": "microscopic_boost_flow/logs/final.drop_position.stdout",
+          "original_stderr": "microscopic_boost_flow/logs/final.drop_position.stderr",
+          "expected_passed": 36,
+          "expected_failed": 13,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.3933278750628233,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "f10f9e54b0b71168df8d83cc144f69f1d7b7abeb38583d5c8607d1bef3624f20",
+          "original_receipt_sha256": "f1c2ca54c053621e26f915ad248e9ccedea5d5f574eeb6b5c9124b93b4661cb3",
+          "original_stdout_sha256": "5157b0d10bf9f2b633bface223f02d8f1786cf8ab8b2773cefec9d9cf4dcf812",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "reverse_clock",
+          "argv": [
+            "--mutation",
+            "reverse_clock"
+          ],
+          "original_result": "microscopic_boost_flow/finite_controls.final.reverse_clock.json",
+          "original_receipt": "microscopic_boost_flow/logs/final.reverse_clock.receipt.json",
+          "original_stdout": "microscopic_boost_flow/logs/final.reverse_clock.stdout",
+          "original_stderr": "microscopic_boost_flow/logs/final.reverse_clock.stderr",
+          "expected_passed": 37,
+          "expected_failed": 12,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.3837525839917362,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "a2188b26a4fe309e24da8efb3d2150282a59d389fbbd3417fd229d3259af07f6",
+          "original_receipt_sha256": "7896061748cbd7070300008432ec52a00aa59de347b06b7cee35a9bc63526567",
+          "original_stdout_sha256": "c4678d9cfef1365977a2b904609f2b06aeb8e1a6d825f8f3ab1992be2648790f",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "drop_gns_right",
+          "argv": [
+            "--mutation",
+            "drop_gns_right"
+          ],
+          "original_result": "microscopic_boost_flow/finite_controls.final.drop_gns_right.json",
+          "original_receipt": "microscopic_boost_flow/logs/final.drop_gns_right.receipt.json",
+          "original_stdout": "microscopic_boost_flow/logs/final.drop_gns_right.stdout",
+          "original_stderr": "microscopic_boost_flow/logs/final.drop_gns_right.stderr",
+          "expected_passed": 43,
+          "expected_failed": 6,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.35856287460774183,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "ba870871ee11fb48e82a8288e8c906a665c16d094bd33234b3a4956e678f2b62",
+          "original_receipt_sha256": "6917d0e753bb70f9f09b62c7ce5ea2b283678b3a984ec95eea2c5716b9c6ed01",
+          "original_stdout_sha256": "1c9e2c6b5f78757611076a4cbe26df89e1939c7b113e0028db0390451e71e162",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "reverse_current",
+          "argv": [
+            "--mutation",
+            "reverse_current"
+          ],
+          "original_result": "microscopic_boost_flow/finite_controls.final.reverse_current.json",
+          "original_receipt": "microscopic_boost_flow/logs/final.reverse_current.receipt.json",
+          "original_stdout": "microscopic_boost_flow/logs/final.reverse_current.stdout",
+          "original_stderr": "microscopic_boost_flow/logs/final.reverse_current.stderr",
+          "expected_passed": 47,
+          "expected_failed": 2,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.38338445918634534,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "c6587e45f31f0eb78fadbeddc3fd54899e0930e623337dabe45828034ee2b41c",
+          "original_receipt_sha256": "44d8745b5ac63ef4a46336266f953039ddec4a799893693eb124d4123fe0947d",
+          "original_stdout_sha256": "ea5a30a5898437a69951b52d68b6e3bdc6f93be01eea518a6f162b9d49c89be3",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "mutation_count": 4,
+      "expected_mutation_survivors": [],
+      "mutation_policy": "Preserve the entire original helper and all original edits/CLI choices, gates, survivors, full stdout/stderr and observed timeout/timing. Do not convert survivor output drift into a passing sensitivity claim. Traceback line relocation is administrative and must be explicitly mapped.",
+      "independent_result": "microscopic_boost_flow_review/independent.canonical.json",
+      "independent_recorded_rows": 71,
+      "independent_recorded_failed": 0,
+      "independent_row_semantics": "Existing distinct finite control rows; not a proof or model-independence grade",
+      "source_sha256": "7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7",
+      "report_sha256": "ed2c7e594714b9ba0dc1e8f0fed916e55c7a2e7c84bc0078acc6a00cd4292678",
+      "root_coverage_sha256": "3fa746a1954446d3f7432487efdbcf59cadd3e5c3a3ebd2a2e03c88fc9598537",
+      "root_evidence_verification_sha256": "b1e1255f2f9fc3f5357d5f6a91bbcb48f662a9a261ce4dedecc33258da864001",
+      "independent_stdout_sha256": "a3eb2c6f2a03812814b551ae6cabd2d0f394050028f976efccfc8d1d6657214c",
+      "independent_result_sha256": "90c7d733e2b51791ba3eb9243e818e3083ea52e07051aee9cdd2fd955e17d0a0"
+    },
+    {
+      "key": "Gapped",
+      "prefix": "GAPPED_BOOST_INVARIANCE",
+      "slug": "gapped_boost_invariance",
+      "source": "GAPPED_BOOST_INVARIANCE_PROBE.md",
+      "source_sha": "94d1f879927135d378dcafb6e9b603465155906a71fed5ca301b4354566cea14",
+      "report": "GAPPED_BOOST_INVARIANCE_REVIEW.md",
+      "report_sha": "7834a02d0543fa148e2589e90d727d9ac1ef7eb354cceb7552e7f87dce853126",
+      "folder": "gapped_boost_invariance",
+      "review": "gapped_boost_invariance_review",
+      "helper": "finite_controls.py",
+      "helper_sha": "28b9aa21ba4a828a23d7a85d3e4fbb9820f9d3b9f7cf0f29abb44f06d9701e2f",
+      "author_receipt": "receipt.json",
+      "review_receipt": "receipt.json",
+      "author_receipt_sha": "6a384d384501cb5dfc7ef6ed4ae9b78628ea7710b525050efec4e7227b06596e",
+      "review_receipt_sha": "6175025b87d7df07ec76c37059af7554d4349eb8bffc753566dd5556d6af6b18",
+      "dependency_keys": [
+        "Current"
+      ],
+      "dependencies": [
+        {
+          "note": "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "Finite current pair algebra and the canonical uniform finite-range dynamics at the source-matched hypotheses; no extra actual-operator assumptions are imported.",
+          "sha256": "e97ba0f26e1a21f3a4cd231c1abc9c97b8fbdc0b127bcfb6354aef37e4a54ccf"
+        }
+      ],
+      "scope": "A specified finite-range energy density with exact local current conservation and an invariant state whose canonical GNS energy has a simple positive-gap vacuum has zero current and first-moment expectation on local and rapid almost-local observables. No actual intended model, weighted-flow construction or Lorentz closure is supplied.",
+      "conditional": "Local current and boost state identities from a simple gapped GNS vacuum and exact conservation",
+      "claim_reason": "The density, exact conservation and invariant simple gapped GNS state remain supplied; a separately matched boost theorem is downstream.",
+      "note": "GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "gapped_boost_invariance_2026_10_12.py",
+      "claim": "gapped_boost_invariance_bounded_theorem_note_2026-10-12",
+      "baseline_stdout": "gapped_boost_invariance/logs/final_baseline.stdout",
+      "baseline_stdout_sha256": "a51f23e491393e4bdbbe5de3f0df4efdddb9c695361b0964d0b9cc4597a8feb0",
+      "baseline_result": "gapped_boost_invariance/finite_controls_results.json",
+      "independent_helper": "gapped_boost_invariance_review/independent_controls.py",
+      "independent_helper_sha256": "426a64af6e5deb21bcf3ddbbf4d48aa5dc1ffa420e68dc517b7cd4ddd51743ce",
+      "independent_stdout": "gapped_boost_invariance_review/logs/independent_baseline.stdout",
+      "root_coverage": "Gapped_root_review_coverage.json",
+      "root_evidence_verification": "Gapped_root_evidence_verification.json",
+      "timeout_sec": 60,
+      "canonical_execution_status": "not_run_by_preparation",
+      "pairing": "Same selected model family in separate author/reviewer contexts; selected model and reasoning effort preserved. Candidate formulas and reported outcomes were visible before distinct controls; not blinded or cross-family checking. Root is a coauthor, not the independent reviewer.",
+      "prerequisites": [
+        "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12"
+      ],
+      "audit_inputs": [
+        "docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json"
+      ],
+      "baseline_stdout_lines": 106,
+      "original_recorded_predicates": 105,
+      "total_semantics": "Recorded finite predicates only; no proof grade.",
+      "baseline_totals": {
+        "passed": 105,
+        "failed": 0,
+        "semantics": "Original finite predicates"
+      },
+      "baseline_scientific_stdout_policy": "Every original stdout byte is retained as an exact prefix; only the exact mapped N5/scope/completion suffix may follow. No original scientific row, threshold or failure gate changes.",
+      "mutation_kind": "original_cli_variant",
+      "mutation_authority": "gapped_boost_invariance/finite_controls.py",
+      "mutations": [
+        {
+          "name": "current_sign",
+          "argv": [
+            "--mutation",
+            "current_sign"
+          ],
+          "original_result": "gapped_boost_invariance/mutations/final_current_sign.json",
+          "original_receipt": "gapped_boost_invariance/logs/final_mutant_current_sign.receipt.json",
+          "original_stdout": "gapped_boost_invariance/logs/final_mutant_current_sign.stdout",
+          "original_stderr": "gapped_boost_invariance/logs/final_mutant_current_sign.stderr",
+          "expected_passed": 100,
+          "expected_failed": 5,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.3341261250898242,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "637fee2413b5757bf9f1b21d76eedf62744224fd255cc9c5dcc85f5d0d3d65c4",
+          "original_receipt_sha256": "19a01dd51350d39254b76b5de19e9420d44b2a1a726c5a482338b1168026d38d",
+          "original_stdout_sha256": "7ebb4c882433f6f97e380b3e923778b4683dc21d67376ba2d5fb2d1101ae518a",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "current_half",
+          "argv": [
+            "--mutation",
+            "current_half"
+          ],
+          "original_result": "gapped_boost_invariance/mutations/final_current_half.json",
+          "original_receipt": "gapped_boost_invariance/logs/final_mutant_current_half.receipt.json",
+          "original_stdout": "gapped_boost_invariance/logs/final_mutant_current_half.stdout",
+          "original_stderr": "gapped_boost_invariance/logs/final_mutant_current_half.stderr",
+          "expected_passed": 100,
+          "expected_failed": 5,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.2589019159786403,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "69d9f0691a2c80f6d72d1d664be15fbc98684e8fe5c54b764eca5bbaf5d7cb7d",
+          "original_receipt_sha256": "75d287405ceb09fc54161253865bcce544f7fa5b7681742245a12a0be9fe43a8",
+          "original_stdout_sha256": "6cb914110b9a0ee2357462444f6585ffb2ab03806c047d0a32efbe1dee5e1b29",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "global_scalar",
+          "argv": [
+            "--mutation",
+            "global_scalar"
+          ],
+          "original_result": "gapped_boost_invariance/mutations/final_global_scalar.json",
+          "original_receipt": "gapped_boost_invariance/logs/final_mutant_global_scalar.receipt.json",
+          "original_stdout": "gapped_boost_invariance/logs/final_mutant_global_scalar.stdout",
+          "original_stderr": "gapped_boost_invariance/logs/final_mutant_global_scalar.stderr",
+          "expected_passed": 104,
+          "expected_failed": 1,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.2538559171371162,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "d656afea8d4a841dadd67c249f715f4a0063fb9ea16cdaa14fe827fc30a6d962",
+          "original_receipt_sha256": "77fc7c443b68d0f815ca3640c019c552de47a9538f0dca678cf4458f0594e354",
+          "original_stdout_sha256": "43bcae0551e5e45c5c88bc8fd021ac5e2f60d87534464009f0b2483d61fc2c7d",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "degenerate_rank_one",
+          "argv": [
+            "--mutation",
+            "degenerate_rank_one"
+          ],
+          "original_result": "gapped_boost_invariance/mutations/final_degenerate_rank_one.json",
+          "original_receipt": "gapped_boost_invariance/logs/final_mutant_degenerate_rank_one.receipt.json",
+          "original_stdout": "gapped_boost_invariance/logs/final_mutant_degenerate_rank_one.stdout",
+          "original_stderr": "gapped_boost_invariance/logs/final_mutant_degenerate_rank_one.stderr",
+          "expected_passed": 104,
+          "expected_failed": 1,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.2515355423092842,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "2fef1c6c0b25181027e2d95d5d07f2a4205f801a268d5d2e693702cc5b7c59ed",
+          "original_receipt_sha256": "03005b86b77cdf4063749938a38f09b4e52b4e2a4a085bda8a0df0e632e1466d",
+          "original_stdout_sha256": "e22c04e3bfcb4431a123b6e892f03717c51d9ad0bb1237c64453ccac1c9e1605",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "one_sided",
+          "argv": [
+            "--mutation",
+            "one_sided"
+          ],
+          "original_result": "gapped_boost_invariance/mutations/final_one_sided.json",
+          "original_receipt": "gapped_boost_invariance/logs/final_mutant_one_sided.receipt.json",
+          "original_stdout": "gapped_boost_invariance/logs/final_mutant_one_sided.stdout",
+          "original_stderr": "gapped_boost_invariance/logs/final_mutant_one_sided.stderr",
+          "expected_passed": 104,
+          "expected_failed": 1,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.2544502499513328,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "7d3f1be75f35d64089297f4854aa12ab3ccd5a79995b7e2645f8bfaec929279a",
+          "original_receipt_sha256": "fedbf8d33d662f47b2ec191ee8c974929f2ba8fc63fdf02e32a8b9cf0ab0b8c5",
+          "original_stdout_sha256": "7d5d6da1f174e664a036606a5ec45aeb33711911bcab546286dc771084fcb7a7",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "mutation_count": 5,
+      "expected_mutation_survivors": [],
+      "mutation_policy": "Preserve the entire original helper and all original edits/CLI choices, gates, survivors, full stdout/stderr and observed timeout/timing. Do not convert survivor output drift into a passing sensitivity claim. Traceback line relocation is administrative and must be explicitly mapped.",
+      "independent_result": "gapped_boost_invariance_review/independent_controls.result.json",
+      "independent_recorded_rows": 134,
+      "independent_recorded_failed": 0,
+      "independent_row_semantics": "Existing distinct finite control rows; not a proof or model-independence grade",
+      "source_sha256": "94d1f879927135d378dcafb6e9b603465155906a71fed5ca301b4354566cea14",
+      "report_sha256": "7834a02d0543fa148e2589e90d727d9ac1ef7eb354cceb7552e7f87dce853126",
+      "root_coverage_sha256": "dc143c9f5e4d774cdc1209f8f840ba2dceb1d77c1ed60cc5ffdf88f3a3d24e0f",
+      "root_evidence_verification_sha256": "23867f1b4b4f0c9ae6ef947b2c4dce18ea47cda9bb9cf632b42d682446ba8396",
+      "independent_stdout_sha256": "1c3e039baf7376a7b939f4a03d7fe2196c5b0d3adfeaf00a222637b3cdb4fd1c",
+      "independent_result_sha256": "06eb329fd0cb16f8703329970abbeab440578b51dee161550385332cf311403b"
+    },
+    {
+      "key": "Nonisolated_fock",
+      "prefix": "NONISOLATED_FOCK",
+      "slug": "nonisolated_fock",
+      "source": "NONISOLATED_FOCK_PROBE.md",
+      "source_sha": "90471bd9b63f6a39356152a725e633a1d465272188ff1574bd198f71e97b85f5",
+      "report": "NONISOLATED_FOCK_REVIEW.md",
+      "report_sha": "be5ad6f72a82e08f3cd1d841aea1bf3478ea3c92dfd309de0d2ba070818ed919",
+      "folder": "nonisolated_fock",
+      "review": "nonisolated_fock_review",
+      "helper": "check_fock_extension.py",
+      "helper_sha": "367840a5726f4e7cecd16b35069fd06ca0643f660b7d254926293b2622053361",
+      "author_receipt": "receipt.json",
+      "review_receipt": "receipt.json",
+      "author_receipt_sha": "579ba4570a5459f6775811b5c6f236c2457a5427b576b4699547556b5b4d13ec",
+      "review_receipt_sha": "4db257dacc70363b8db4fee15613e868dc03ada4a7702becd85ce931c7034068",
+      "dependency_keys": [
+        "Mass",
+        "Fock"
+      ],
+      "dependencies": [
+        {
+          "note": "NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "N1-N31 existence, all fixed sublinear-width comparison, unequal-time locality and mixed-word energy bounds. Geometric regularity is imposed directly; N36 is not used.",
+          "sha256": "49be3f07b4796afafd138f5b20e2c9ea015696df749b11ec8f17eecbc8ad7cb5"
+        },
+        {
+          "note": "COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "Checked contraction/Gram and finite-energy proof mechanism, reconstructed for the actual averaged nonexact-vacuum hypotheses; its old shell-density conclusion is not imported.",
+          "sha256": "494c283c163e88f959841462bbfbcfcc7c470072a0525d0dd6e2b44dd6f9b12b"
+        }
+      ],
+      "scope": "Under the reviewed nonisolated scattering hypotheses, the full permanent Gram formula and incoming/outgoing Fock isometries hold over the closed span of actual regular targets. That span may be zero; no whole-sector density, onto, detector, massless-vacuum, S-matrix or physical realization conclusion is supplied.",
+      "conditional": "Fock isometries on the defined closed regular target space",
+      "claim_reason": "The dynamics, unique gap, reducing massive graphs and actual regular seed vectors remain supplied. Four bookkeeping mutations survive the finite author gates.",
+      "note": "NONISOLATED_FOCK_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "nonisolated_fock_2026_10_12.py",
+      "claim": "nonisolated_fock_bounded_theorem_note_2026-10-12",
+      "baseline_stdout": "nonisolated_fock/logs/controls_run1.stdout.jsonl",
+      "baseline_stdout_sha256": "4c9edb2188a230142449881315495088a540f74099db2bf61d4b5c60d3ce028e",
+      "baseline_result": null,
+      "independent_helper": "nonisolated_fock_review/independent_matrix_control_optimized.py",
+      "independent_helper_sha256": "dfb522d2017713aa210aabac4dee8c6e3b43b932c5ba3c633e6e2901babf20d2",
+      "independent_stdout": "nonisolated_fock_review/independent_run2.stdout.txt",
+      "root_coverage": "Nonisolated_fock_root_review_coverage.json",
+      "root_evidence_verification": "Nonisolated_fock_root_evidence_verification.json",
+      "timeout_sec": 60,
+      "canonical_execution_status": "not_run_by_preparation",
+      "pairing": "Same selected model family in separate author/reviewer contexts; selected model and reasoning effort preserved. Candidate formulas and reported outcomes were visible before distinct controls; not blinded or cross-family checking. Root is a coauthor, not the independent reviewer.",
+      "prerequisites": [
+        "NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "nonisolated_mass_scattering_bounded_theorem_note_2026-10-12",
+        "compact_patch_fock_isometry_bounded_theorem_note_2026-10-12"
+      ],
+      "audit_inputs": [
+        "docs/NONISOLATED_FOCK_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json"
+      ],
+      "baseline_stdout_lines": 7,
+      "original_recorded_json_rows": 7,
+      "total_semantics": "One completed assertion-guarded finite driver; seven JSON records are not a predicate count.",
+      "baseline_totals": {
+        "passed": 1,
+        "failed": 0,
+        "semantics": "One completed assertion-guarded driver, not a predicate count",
+        "original_json_records": 7
+      },
+      "baseline_scientific_stdout_policy": "Every original stdout byte is retained as an exact prefix; only the exact mapped N5/scope/completion suffix may follow. No original scientific row, threshold or failure gate changes.",
+      "mutation_kind": "entire_source_copy_literal_edits",
+      "mutation_authority": "nonisolated_fock_review/run_author_mutations.py",
+      "mutations": [
+        {
+          "name": "bracket_sign",
+          "before": "return add(mul(a, b), scale(mul(b, a), -1))",
+          "after": "return add(mul(a, b), scale(mul(b, a), +1))",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/bracket_sign.py",
+          "original_source_sha256": "5d39d972feabd880e3639b1af943cf108e193ed1335f8680078c800611bd8d27",
+          "original_receipt": "nonisolated_fock_review/mutations/bracket_sign.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/bracket_sign.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/bracket_sign.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.12530983379110694,
+          "original_receipt_sha256": "304f20fd3515fe348fb5d92ba9ba78999418e59d29efcbe5cb8830b632ad47c1",
+          "original_stdout_sha256": "6810325b190e23ea8fe273e9315d08ad46b90a5215ba60f307c1cf678720a85c",
+          "original_stderr_sha256": "ed23ba4cee2e6ebd35cabbdde53d17628521372a0117463fe634d35ceef155e9"
+        },
+        {
+          "name": "omit_double_terms",
+          "before": "rhs = add(terminal, *singles, *doubles)",
+          "after": "rhs = add(terminal, *singles)",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/omit_double_terms.py",
+          "original_source_sha256": "6ae655a1672c7264bcc79b280dcfdfc125f72e00a4232ae0c47fe038ae6d88d5",
+          "original_receipt": "nonisolated_fock_review/mutations/omit_double_terms.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/omit_double_terms.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/omit_double_terms.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.04523612465709448,
+          "original_receipt_sha256": "702888781f6e79acbe1ba71cc2c0ba657f9a8708765beb9408169151715a98f7",
+          "original_stdout_sha256": "6810325b190e23ea8fe273e9315d08ad46b90a5215ba60f307c1cf678720a85c",
+          "original_stderr_sha256": "74688ac3278a1de6113683b149bfd2f4a03efb74b65e090bd8a258c6b8ebfc69"
+        },
+        {
+          "name": "omit_right_spectator",
+          "before": "*xs[ell + 1:]))",
+          "after": "*xs[ell + 2:]))",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/omit_right_spectator.py",
+          "original_source_sha256": "58e1d5414cefb6d3d5a39679e0269ecf42871c865d863d4f5b64fb1594d58746",
+          "original_receipt": "nonisolated_fock_review/mutations/omit_right_spectator.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/omit_right_spectator.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/omit_right_spectator.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.04261462530121207,
+          "original_receipt_sha256": "992845d898e5d84f1a5d3cb0105e4b0d37138fc9335c5ba9d5dd0855d3add577",
+          "original_stdout_sha256": "6810325b190e23ea8fe273e9315d08ad46b90a5215ba60f307c1cf678720a85c",
+          "original_stderr_sha256": "b6b8ba5c633025e7d091c22d568bbacf8e38f41f09750bf730b3fed021f918a5"
+        },
+        {
+          "name": "wrong_support_distance",
+          "before": "assert distance >= max(0, abs(b) - 6 * radius)",
+          "after": "assert distance >= max(0, abs(b) - 2 * radius)",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/wrong_support_distance.py",
+          "original_source_sha256": "975d329df21e175fe797416b0577e86d0659ce05f2300f08cd4299a070b6c157",
+          "original_receipt": "nonisolated_fock_review/mutations/wrong_support_distance.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/wrong_support_distance.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/wrong_support_distance.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.044435624964535236,
+          "original_receipt_sha256": "e127d6c557305e0df4bdb2223b55e37df02bb8b2961f42fdc379342e2d50a245",
+          "original_stdout_sha256": "1f7b949b5a6c2f7cdbe44293ae6cf93da8bb78a6c922d2f0e4ba871fdc5dc8ff",
+          "original_stderr_sha256": "6513667c637c68e180627518361772e521029d3e5fb43b3ed270dd6aef8b2f7d"
+        },
+        {
+          "name": "drop_volume_growth",
+          "before": "amplitude = (radius + 1) ** d",
+          "after": "amplitude = 2",
+          "replacements": 2,
+          "original_source": "nonisolated_fock_review/mutations/drop_volume_growth.py",
+          "original_source_sha256": "2ae4efe1c962f8d1100a5564d8dbe138399933b6674a54081da9697a4350fd5f",
+          "original_receipt": "nonisolated_fock_review/mutations/drop_volume_growth.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/drop_volume_growth.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/drop_volume_growth.stderr.txt",
+          "expected_exit": 0,
+          "survived": true,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11614508414641023,
+          "original_receipt_sha256": "d7981ebb32ce309068c2d88dd39413b7531e30b45206a3478c48eedfadd1f3e9",
+          "original_stdout_sha256": "215eb4c03e62b45b1d094f4b487e3514def0c4f3cdb2403b0c8900f1f28b4241",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "drop_one_relative_count",
+          "before": "pair_counts = (4 * radius + 1) ** (2 * d)",
+          "after": "pair_counts = (4 * radius + 1) ** d",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/drop_one_relative_count.py",
+          "original_source_sha256": "7f62e5c73c31ce532a7e695f2e09ddb5b62ec6ed6f9ad97b07d9a9e0ae7eaf15",
+          "original_receipt": "nonisolated_fock_review/mutations/drop_one_relative_count.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/drop_one_relative_count.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/drop_one_relative_count.stderr.txt",
+          "expected_exit": 0,
+          "survived": true,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11415204126387835,
+          "original_receipt_sha256": "6dcf82808841eabc066d9fab4e0bb6fe74f6c45bd2473dc43962c32109e02145",
+          "original_stdout_sha256": "b86b89aa4f6be91431c148379cb557b08bfed607507e4cd7dc2ef321d5ad9766",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "omit_connected_projection",
+          "before": "left @ perpendicular @ right @ omega",
+          "after": "left @ right @ omega",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/omit_connected_projection.py",
+          "original_source_sha256": "5bec4f46cd461ab293638b9afff73abee42d127d8398556eb22ab64d3e6f03ad",
+          "original_receipt": "nonisolated_fock_review/mutations/omit_connected_projection.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/omit_connected_projection.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/omit_connected_projection.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11509037530049682,
+          "original_receipt_sha256": "b5b884c574b961eccad6f05b02fa8b077cafd285272142c89e0840f97ddd399a",
+          "original_stdout_sha256": "07484f1e8288c62b9d042ebc47a4dcd3b3cdab75d351cf5b040aadee2f3a6710",
+          "original_stderr_sha256": "4c1bbd0f184498a101a6e91c26ed963eb6a47731950d212e29e9c646a9b022af"
+        },
+        {
+          "name": "wrong_conjugate_weight",
+          "before": "weights[1][j].conjugate() * weights[0][k].conjugate()",
+          "after": "weights[1][j] * weights[0][k].conjugate()",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/wrong_conjugate_weight.py",
+          "original_source_sha256": "22cb50677d0f86e8a956a22ae123c5d426c0e46ccdbf5e3e295bc581bcea5e49",
+          "original_receipt": "nonisolated_fock_review/mutations/wrong_conjugate_weight.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/wrong_conjugate_weight.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/wrong_conjugate_weight.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11523304088041186,
+          "original_receipt_sha256": "3040fa000072558c49ecf4394c88b4c85134187cd40e0bca15c36b18dd6d6470",
+          "original_stdout_sha256": "07484f1e8288c62b9d042ebc47a4dcd3b3cdab75d351cf5b040aadee2f3a6710",
+          "original_stderr_sha256": "120bd95440d57709194a2a31ad3ba87e68d576b4c0d0477bbb81507fef01e1b7"
+        },
+        {
+          "name": "tie_one_clock",
+          "before": "right = comm(dagger(arrays[0][k]), arrays[1][ell])",
+          "after": "right = comm(dagger(arrays[0][i]), arrays[1][ell])",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/tie_one_clock.py",
+          "original_source_sha256": "9efd2fc9df51c6e911beda71dd20f915241602dcbb70ea17babeb63f52f41ce8",
+          "original_receipt": "nonisolated_fock_review/mutations/tie_one_clock.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/tie_one_clock.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/tie_one_clock.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11527712503448129,
+          "original_receipt_sha256": "92173a7cf6af6923aef9d72e49c383916d37aff4981c932e64969cd78466f806",
+          "original_stdout_sha256": "07484f1e8288c62b9d042ebc47a4dcd3b3cdab75d351cf5b040aadee2f3a6710",
+          "original_stderr_sha256": "b2149575a9f2f1d1fa50702f15a5df9c298a4b19b72875cecd5a5f1cda798d79"
+        },
+        {
+          "name": "wrong_jacobi_sign",
+          "before": "jacobi = comm(dagger(a), comm(b, y)) - comm(b, comm(dagger(a), y))",
+          "after": "jacobi = comm(dagger(a), comm(b, y)) + comm(b, comm(dagger(a), y))",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/wrong_jacobi_sign.py",
+          "original_source_sha256": "41d5ac2111a70139ee07d1c2d15f0fe571863392eedf688e657513d2356eba5a",
+          "original_receipt": "nonisolated_fock_review/mutations/wrong_jacobi_sign.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/wrong_jacobi_sign.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/wrong_jacobi_sign.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11372979218140244,
+          "original_receipt_sha256": "1a75d8899a144cdaa43b745540ba264c1400ea5dbce32683c90f9c7266b1291b",
+          "original_stdout_sha256": "07484f1e8288c62b9d042ebc47a4dcd3b3cdab75d351cf5b040aadee2f3a6710",
+          "original_stderr_sha256": "5f7c6353626c9605d9e480d0300cd4c7ebc353f102c81379323d75b27a689a92"
+        },
+        {
+          "name": "creator_no_padding",
+          "before": "np.sqrt(gamma(cutoff + upper))",
+          "after": "np.sqrt(gamma(cutoff))",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/creator_no_padding.py",
+          "original_source_sha256": "c7cfc4f29d1a6b02070d47cb2f8cc161779bea9c2d8fd4aa18fe5ba776063478",
+          "original_receipt": "nonisolated_fock_review/mutations/creator_no_padding.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/creator_no_padding.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/creator_no_padding.stderr.txt",
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11411241674795747,
+          "original_receipt_sha256": "9d63be7c1fd81f0dcd6913efc788f032084d42c1805d2d1ba1fb25a545ca7e0d",
+          "original_stdout_sha256": "66f4dc217b8c1b86590b1d211032df91d51aa709c13192581b4df43021dccffa",
+          "original_stderr_sha256": "0dc1e345fd9bff0c1d1053e612e1c6c4ddd67e4b129a11341c6ef6062a58c409"
+        },
+        {
+          "name": "incorrect_contraction_exponent",
+          "before": "target_decay = d * (1 - 3 * kappa)",
+          "after": "target_decay = d * (1 - 2 * kappa)",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/incorrect_contraction_exponent.py",
+          "original_source_sha256": "f1971af6e24d791a231f69fac565f0c33bdf29f75b2a2365c39a82c315b54573",
+          "original_receipt": "nonisolated_fock_review/mutations/incorrect_contraction_exponent.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/incorrect_contraction_exponent.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/incorrect_contraction_exponent.stderr.txt",
+          "expected_exit": 0,
+          "survived": true,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.12321170791983604,
+          "original_receipt_sha256": "00cc066c99e0b95f193d65a85ad520b77b861b9123e8ec6c0230a27884a4f257",
+          "original_stdout_sha256": "7ded303351cf9876af2d5587c91aa853fd21b50b79ee23bf05f3363183e94baf",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "incorrect_tail_margin",
+          "before": "delta = kappa - small",
+          "after": "delta = kappa + small",
+          "replacements": 1,
+          "original_source": "nonisolated_fock_review/mutations/incorrect_tail_margin.py",
+          "original_source_sha256": "c92f7e8e6fd804edd7e3cd4163c917240fdb4418c401526eb8ebfb0b8c216594",
+          "original_receipt": "nonisolated_fock_review/mutations/incorrect_tail_margin.execution.json",
+          "original_stdout": "nonisolated_fock_review/mutations/incorrect_tail_margin.stdout.txt",
+          "original_stderr": "nonisolated_fock_review/mutations/incorrect_tail_margin.stderr.txt",
+          "expected_exit": 0,
+          "survived": true,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11495575029402971,
+          "original_receipt_sha256": "754bcb944529e2ccfd9af2867e536e7ced1eee4b6acc13067d168e7482c789fe",
+          "original_stdout_sha256": "30e65f0cddaa9fcd4f7ba71d95833e4b665a6f288f5ddd5b22b3544ef7b2a27b",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "mutation_count": 13,
+      "expected_mutation_survivors": [
+        "drop_volume_growth",
+        "drop_one_relative_count",
+        "incorrect_contraction_exponent",
+        "incorrect_tail_margin"
+      ],
+      "mutation_policy": "Preserve the entire original helper and all original edits/CLI choices, gates, survivors, full stdout/stderr and observed timeout/timing. Do not convert survivor output drift into a passing sensitivity claim. Traceback line relocation is administrative and must be explicitly mapped.",
+      "independent_result": null,
+      "independent_recorded_rows": 6,
+      "independent_row_semantics": "Existing optimized-driver JSON records, not a predicate count; the initial timeout and partial records remain preserved",
+      "source_sha256": "90471bd9b63f6a39356152a725e633a1d465272188ff1574bd198f71e97b85f5",
+      "report_sha256": "be5ad6f72a82e08f3cd1d841aea1bf3478ea3c92dfd309de0d2ba070818ed919",
+      "root_coverage_sha256": "e51177f6930ba1f203411f3e811958f096ca2760e98933903ee7f709b14a5d52",
+      "root_evidence_verification_sha256": "f376286b5593a6573cb35dc4fa0510cf035d66d981b0472233e60adb086ef0b8",
+      "independent_stdout_sha256": "065897b3f43c13ebeabe034c8307899b1830fc2e89e85df87f460c7aa821e280"
+    },
+    {
+      "key": "Weighted_current",
+      "prefix": "WEIGHTED_CURRENT_CLOSURE",
+      "slug": "weighted_current_closure",
+      "source": "WEIGHTED_CURRENT_CLOSURE_PROBE.md",
+      "source_sha": "561cc0109580b74c42b19af27ab35801deea61a9c304dc2f43da772e042448f7",
+      "report": "WEIGHTED_CURRENT_CLOSURE_REVIEW.md",
+      "report_sha": "5796e74e9ad160de9d240d50a67b00a83dab51af25596f0c3d1f1bfcc1b3cc95",
+      "folder": "weighted_current_closure",
+      "review": "weighted_current_closure_review",
+      "helper": "controls/weighted_controls.py",
+      "helper_sha": "70631778de94fac7cdc4fbe5929955eec45fc9f580ff07fc92c43858a626ac80",
+      "author_receipt": "receipt.json",
+      "review_receipt": "receipt.json",
+      "author_receipt_sha": "a2640a66cf1e4d3d8a1f2f7d4957c9648a6c888f2f4f9da6a9ab48aea753c92e",
+      "review_receipt_sha": "8afb751ac3fac724d43fa5078ce37a6818e864053966ebc63be409ba3cc6fbb4",
+      "dependency_keys": [
+        "Current",
+        "Joint"
+      ],
+      "dependencies": [
+        {
+          "note": "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "Finite current pair algebra and the canonical uniform finite-range dynamics at the source-matched hypotheses; no extra actual-operator assumptions are imported.",
+          "sha256": "e97ba0f26e1a21f3a4cd231c1abc9c97b8fbdc0b127bcfb6354aef37e4a54ccf"
+        },
+        {
+          "note": "MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "J15-J20 finite complete-site tests and finite-density orbit theorem; strong joint-flow conclusions are not assumed in the weighted local-algebra proof.",
+          "sha256": "9b500fd20ebbe99c8fbb05a1e2eef3ed93c1e77ef388b4120d130a3e8e6fd82c"
+        }
+      ],
+      "scope": "For a specified finite-range full-matrix spin density under exact energy-current conservation, first translation moments reduce the weighted current/boost bracket to an unweighted density. A complete finite site test is equivalent to beta-energy closure; supplied actual local-vector operators give the separate common-domain corollary. The fixed XX density fails for every real beta; no broader no-go or physical model is established.",
+      "conditional": "Finite local weighted-current closure criterion under exact conservation",
+      "claim_reason": "The specified density, conservation and optional self-adjoint local-vector actions remain supplied. Fixed-XX failure does not quantify over density improvements or other interactions.",
+      "note": "WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "weighted_current_closure_2026_10_12.py",
+      "claim": "weighted_current_closure_bounded_theorem_note_2026-10-12",
+      "baseline_stdout": "weighted_current_closure/logs/final_sparse/stdout.jsonl",
+      "baseline_stdout_sha256": "ff2aad1c0b23070d7974003de56f111e024a1e52e91af00d8a777825efdb093a",
+      "baseline_result": "weighted_current_closure/logs/final_sparse/weighted_results.json",
+      "independent_helper": "weighted_current_closure_review/independent_controls.py",
+      "independent_helper_sha256": "8c17e5756dd50e890106583b4c2e3223f5da71093fe55b2d70304c4736eef471",
+      "independent_stdout": "weighted_current_closure_review/independent_run1/stdout.jsonl",
+      "root_coverage": "Weighted_current_root_review_coverage.json",
+      "root_evidence_verification": "Weighted_current_root_review_evidence_verification.json",
+      "timeout_sec": 60,
+      "canonical_execution_status": "not_run_by_preparation",
+      "pairing": "Same selected model family in separate author/reviewer contexts; selected model and reasoning effort preserved. Candidate formulas and reported outcomes were visible before distinct controls; not blinded or cross-family checking. Root is a coauthor, not the independent reviewer.",
+      "prerequisites": [
+        "MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12",
+        "microscopic_joint_flow_bounded_theorem_note_2026-10-12"
+      ],
+      "audit_inputs": [
+        "docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json"
+      ],
+      "baseline_stdout_lines": 74,
+      "original_recorded_predicates": 73,
+      "total_semantics": "Recorded finite predicates only; no proof grade.",
+      "baseline_totals": {
+        "passed": 73,
+        "failed": 0,
+        "semantics": "Original finite predicates"
+      },
+      "baseline_scientific_stdout_policy": "Every original stdout byte is retained as an exact prefix; only the exact mapped N5/scope/completion suffix may follow. No original scientific row, threshold or failure gate changes.",
+      "mutation_kind": "entire_source_copy_literal_edits",
+      "mutation_authority": "weighted_current_closure/controls/run_controls.py",
+      "supplemental_author_helper": "weighted_current_closure/controls/matrix_controls.py",
+      "supplemental_author_result": "weighted_current_closure/logs/final_matrix/matrix_results.json",
+      "supplemental_author_helper_sha256": "9520041951441e4ffb92365085113822b9944137495ee4b35d8044388cc6302f",
+      "supplemental_author_totals": {
+        "failed": 0,
+        "passed": 33
+      },
+      "supplemental_author_policy": "Complete distinct occupation-matrix helper and original outputs remain frozen evidence; no second canonical primary, no fresh execution claim.",
+      "mutations": [
+        {
+          "name": "moment_sign",
+          "before": "MOMENT_SIGN = -1",
+          "after": "MOMENT_SIGN = 1",
+          "replacements": 1,
+          "original_source": "weighted_current_closure/mutations/moment_sign/weighted_controls.py",
+          "original_source_sha256": "8d3a43c5218c71b14b0d2a96f01aa4004b5a64c22bf530b0b8515da5b6701c29",
+          "original_result": "weighted_current_closure/mutations/moment_sign/weighted_results.json",
+          "original_receipt": "weighted_current_closure/mutations/moment_sign/execution.json",
+          "original_stdout": "weighted_current_closure/mutations/moment_sign/stdout.jsonl",
+          "original_stderr": "weighted_current_closure/mutations/moment_sign/stderr.txt",
+          "expected_passed": 47,
+          "expected_failed": 26,
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.10691524995490909,
+          "original_result_sha256": "4fa505949ac6b479d3d34b11abbb52f9dee9664e845d3e427e859bc9bb7c7516",
+          "original_receipt_sha256": "a71ebebca7a9343fb72c6ad060c823067d25c25f013ec0df48266293f06dbe85",
+          "original_stdout_sha256": "1f0e36882d343e630c33c2f065b839db1735943dee83fe58a114f463069b2697",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "current_half",
+          "before": "CURRENT_FACTOR = F(1, 2)",
+          "after": "CURRENT_FACTOR = F(1, 1)",
+          "replacements": 1,
+          "original_source": "weighted_current_closure/mutations/current_half/weighted_controls.py",
+          "original_source_sha256": "7b1b23f66b6ff9812af4ed36fe5a2eb6f8bf41f1848c9218cccc9a3552ccb160",
+          "original_result": "weighted_current_closure/mutations/current_half/weighted_results.json",
+          "original_receipt": "weighted_current_closure/mutations/current_half/execution.json",
+          "original_stdout": "weighted_current_closure/mutations/current_half/stdout.jsonl",
+          "original_stderr": "weighted_current_closure/mutations/current_half/stderr.txt",
+          "expected_passed": 71,
+          "expected_failed": 2,
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.11001500021666288,
+          "original_result_sha256": "1f7b1de50b051b0edf5507e75fe69316a3af075e4036ec36f363fb1ee847d40a",
+          "original_receipt_sha256": "86de0fd7d14498173a34a74def26aa31df892695597fa901173fc16465d1b11c",
+          "original_stdout_sha256": "e1040b4c7022d3361e303a8b4691e9fe4f8a06d45a2c12ed7d7472a10bff017f",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "insufficient_padding",
+          "before": "PAD_RADIUS = 8",
+          "after": "PAD_RADIUS = 1",
+          "replacements": 1,
+          "original_source": "weighted_current_closure/mutations/insufficient_padding/weighted_controls.py",
+          "original_source_sha256": "5e4d5002d838269eaa70cdbca343fbb32d56512c31e333d8f9143847fe8b65a1",
+          "original_result": "weighted_current_closure/mutations/insufficient_padding/weighted_results.json",
+          "original_receipt": "weighted_current_closure/mutations/insufficient_padding/execution.json",
+          "original_stdout": "weighted_current_closure/mutations/insufficient_padding/stdout.jsonl",
+          "original_stderr": "weighted_current_closure/mutations/insufficient_padding/stderr.txt",
+          "expected_passed": 72,
+          "expected_failed": 1,
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.08888254221528769,
+          "original_result_sha256": "497e0f12d54bcb092f7b05dc9149494516290fd65b50ef9d20390b49657c9e88",
+          "original_receipt_sha256": "9497111a04e71425caff4e27eba1c9f4304c8e00cdf28c6147cb92455eda93c3",
+          "original_stdout_sha256": "bfaec07a393c0cf14edf40e4ce12f3c60a1ec5088b1a6f6ca05243e571b2e332",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "incomplete_basis",
+          "before": "TEST_AXES = ('X', 'Y', 'Z')",
+          "after": "TEST_AXES = ('Z',)",
+          "replacements": 1,
+          "original_source": "weighted_current_closure/mutations/incomplete_basis/weighted_controls.py",
+          "original_source_sha256": "80cd9df884a55ca866792e549c80c5bb5c969f1ca93e17df0854353c03754f6c",
+          "original_result": "weighted_current_closure/mutations/incomplete_basis/weighted_results.json",
+          "original_receipt": "weighted_current_closure/mutations/incomplete_basis/execution.json",
+          "original_stdout": "weighted_current_closure/mutations/incomplete_basis/stdout.jsonl",
+          "original_stderr": "weighted_current_closure/mutations/incomplete_basis/stderr.txt",
+          "expected_passed": 72,
+          "expected_failed": 1,
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.10378133319318295,
+          "original_result_sha256": "e834fa17b91df5733b5880dcf03c318433b631fe7593c92d27e1029d2370f558",
+          "original_receipt_sha256": "4ff33cc913fbaf10b2ad7cf748bb6d15e5f60b389c561dfa3de528533b94e050",
+          "original_stdout_sha256": "0568620e59dc5e9a069912bc15beceb783c504ff4ac33921820dfae6ff2aefb6",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "ignore_conservation",
+          "before": "IGNORE_ORBIT_SUM = False",
+          "after": "IGNORE_ORBIT_SUM = True",
+          "replacements": 1,
+          "original_source": "weighted_current_closure/mutations/ignore_conservation/weighted_controls.py",
+          "original_source_sha256": "af2c6343ce63784adac1bb3abe302eaf75d15bbc4d57a4b21e689400f0a932fc",
+          "original_result": "weighted_current_closure/mutations/ignore_conservation/weighted_results.json",
+          "original_receipt": "weighted_current_closure/mutations/ignore_conservation/execution.json",
+          "original_stdout": "weighted_current_closure/mutations/ignore_conservation/stdout.jsonl",
+          "original_stderr": "weighted_current_closure/mutations/ignore_conservation/stderr.txt",
+          "expected_passed": 72,
+          "expected_failed": 1,
+          "expected_exit": 1,
+          "survived": false,
+          "original_timed_out": false,
+          "original_timeout_seconds": 60,
+          "original_elapsed_seconds": 0.1100042499601841,
+          "original_result_sha256": "f987437fa9bb06ac2ee2651ae954e9fc522c1db1ec5ed406bc42f2fef4936905",
+          "original_receipt_sha256": "427b0d6355488e5f860edba7e02336e5fa820e52d06d1d6e461d104c4efbf9fa",
+          "original_stdout_sha256": "bea0dd10d43fe8d9af15996070236158f9e20f20fb4c9c6e9b4c74e208e8b47e",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "mutation_count": 5,
+      "expected_mutation_survivors": [],
+      "mutation_policy": "Preserve the entire original helper and all original edits/CLI choices, gates, survivors, full stdout/stderr and observed timeout/timing. Do not convert survivor output drift into a passing sensitivity claim. Traceback line relocation is administrative and must be explicitly mapped.",
+      "independent_result": "weighted_current_closure_review/independent_run1/results.json",
+      "independent_recorded_rows": 205,
+      "independent_recorded_failed": 0,
+      "independent_row_semantics": "Existing distinct finite control rows; not a proof or model-independence grade",
+      "source_sha256": "561cc0109580b74c42b19af27ab35801deea61a9c304dc2f43da772e042448f7",
+      "report_sha256": "5796e74e9ad160de9d240d50a67b00a83dab51af25596f0c3d1f1bfcc1b3cc95",
+      "root_coverage_sha256": "05f49fea9ecd76b514f6a7c86e2980f60e85481ee32d2568aeff7d1d31578f58",
+      "root_evidence_verification_sha256": "67c0dd6de48e2a6ef0f7c5184d98538f1e28cc67336ce61c45a4fafc098fc624",
+      "independent_stdout_sha256": "2d5bb75128aef1d2f5cf9ebce88fdda5dbb36f9ea79dc4362416e42265f06d96",
+      "independent_result_sha256": "cd3259bf4a19189f50f1989917e6bd78ee6b600d613a12ba5800b3275516d0e6"
+    },
+    {
+      "key": "Integrated_boost",
+      "prefix": "INTEGRATED_BOOST_COVARIANCE",
+      "slug": "integrated_boost_covariance",
+      "source": "INTEGRATED_BOOST_COVARIANCE_PROBE.md",
+      "source_sha": "71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed",
+      "report": "INTEGRATED_BOOST_COVARIANCE_REVIEW.md",
+      "report_sha": "273ea8db025c5c469864867d55ea0afe7adb05987c2eaef15b8c06825d0738f1",
+      "folder": "integrated_boost_covariance",
+      "review": "integrated_boost_covariance_review",
+      "helper": "controls.py",
+      "helper_sha": "0399863b0637f8984371eb8f2725f6ce1e1e1f7ce8bc1b42dcf829c8ce41bb3c",
+      "author_receipt": "receipt.json",
+      "review_receipt": "receipt.json",
+      "author_receipt_sha": "043ca7931ff183f7446831c50583a3d9189e950842c68c244b4c3d5d30f1ba8b",
+      "review_receipt_sha": "8a0988c3db50a91d937b8af78e3792df951392fd50866d65664f4889a7ab0ca6",
+      "dependency_keys": [
+        "Boost",
+        "Joint"
+      ],
+      "dependencies": [
+        {
+          "note": "MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "B1-B37 actual all-time flows, rapid almost-local seminorm bounds, finite derivation losses, C1 flow orbits and canonical same-state GNS implementation; remaining local Lie identities are supplied here.",
+          "publication_target": true,
+          "original_source": "MICROSCOPIC_BOOST_FLOW_PROBE.md",
+          "original_source_sha256": "7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7",
+          "sha256": "95f6c72698ea71396aa5f4c18ec9c6f210aebdaa5e73a9c91c2003a3f0651d75"
+        },
+        {
+          "note": "MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "J9-J10 bounded Fourier/Gaussian spectral approximation supports the step from commuting canonical unitaries to commuting spectral measures. The separate mixed-history J1-J3 route is optional and is not applied to the weighted boost.",
+          "sha256": "9b500fd20ebbe99c8fbb05a1e2eef3ed93c1e77ef388b4120d130a3e8e6fd82c"
+        }
+      ],
+      "scope": "For one boost direction, supplied finite-range energy density, beta>0, same-state local invariance and the two remaining exact local Lie identities integrate to full norm-flow and canonical GNS covariance, maximal spectral-sum domains and joint spectral preimage covariance. Optional positive energy gives the forward cone. No nontrivial microscopic realization, fixed mass, geometric momentum, rotations or higher-dimensional Poincare conclusion is supplied.",
+      "conditional": "Conditional one-direction integration from actual rapid almost-local flows and exact local Lie identities",
+      "claim_reason": "The density, same-state local identities, two remaining exact Lie identities and optional positive energy remain supplied; no nontrivial joint physical example is constructed.",
+      "note": "INTEGRATED_BOOST_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "integrated_boost_covariance_2026_10_12.py",
+      "claim": "integrated_boost_covariance_bounded_theorem_note_2026-10-12",
+      "baseline_stdout": "integrated_boost_covariance/logs/final_baseline/stdout.txt",
+      "baseline_stdout_sha256": "e2ed51032c97bcdfb5bc92aad66318930e188b6fe059a97400d952c679a58b27",
+      "baseline_result": "integrated_boost_covariance/final_baseline.json",
+      "baseline_receipt": "integrated_boost_covariance/logs/final_baseline/receipt.json",
+      "independent_helper": "integrated_boost_covariance_review/independent_controls.py",
+      "independent_helper_sha256": "6fb146a3208c367e272454711733e7f3558d5f6d46ccf238f930026a479e26ee",
+      "independent_stdout": "integrated_boost_covariance_review/logs/independent_canonical/stdout.txt",
+      "root_coverage": "Integrated_boost_root_review_coverage.json",
+      "root_evidence_verification": "Integrated_boost_root_review_evidence_verification.json",
+      "timeout_sec": 60,
+      "canonical_execution_status": "not_run_by_preparation",
+      "pairing": "Same selected model family in separate author/reviewer contexts; selected model and reasoning effort preserved. Candidate formulas and reported outcomes were visible before distinct controls; not blinded or cross-family checking. Root is a coauthor, not the independent reviewer.",
+      "prerequisites": [
+        "MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "deps": [
+        "microscopic_boost_flow_bounded_theorem_note_2026-10-12",
+        "microscopic_joint_flow_bounded_theorem_note_2026-10-12"
+      ],
+      "audit_inputs": [
+        "docs/INTEGRATED_BOOST_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json"
+      ],
+      "baseline_stdout_lines": 72,
+      "original_recorded_predicates": 71,
+      "total_semantics": "Recorded finite predicates only; no proof grade.",
+      "trace_class": "direct_blocker_closure",
+      "reachability_to_target": "closes",
+      "target_blocker_text": "Conditional one-direction integration of actual rapid almost-local flows under the remaining exact local Lie identities; physical input realization is outside this target.",
+      "dependency_scope_root_clarification": "Root reread section 4 and confirmed the explicit J9-J10 spectral-step invocation is direct, while the independent J1-J3 mixed-history route is optional.",
+      "baseline_totals": {
+        "passed": 71,
+        "failed": 0,
+        "semantics": "Original finite predicates"
+      },
+      "baseline_scientific_stdout_policy": "Every original stdout byte is retained as an exact prefix; only the exact mapped N5/scope/completion suffix may follow. No original scientific row, threshold or failure gate changes.",
+      "mutation_kind": "original_cli_variant",
+      "mutation_authority": "integrated_boost_covariance/controls.py",
+      "review_materialization_authority": "integrated_boost_covariance_review/author_replays/source_materialization.json",
+      "review_materializations": [
+        {
+          "name": "baseline",
+          "mode": "none",
+          "sha256": "0399863b0637f8984371eb8f2725f6ce1e1e1f7ce8bc1b42dcf829c8ce41bb3c",
+          "source": "integrated_boost_covariance_review/author_replays/baseline.py",
+          "materialization": "none: byte-identical",
+          "edits": [],
+          "original_result": "integrated_boost_covariance_review/author_replays/baseline.json",
+          "original_stdout": "integrated_boost_covariance_review/author_replays/logs/baseline/stdout.txt",
+          "original_stderr": "integrated_boost_covariance_review/author_replays/logs/baseline/stderr.txt",
+          "original_receipt": "integrated_boost_covariance_review/author_replays/logs/baseline/receipt.json"
+        },
+        {
+          "name": "reverse_boost",
+          "mode": "reverse_boost",
+          "sha256": "25e044d13bcb0397379082ae912d99b8a5e4b26a0652f6d99c4acbc386f2eec2",
+          "source": "integrated_boost_covariance_review/author_replays/reverse_boost.py",
+          "materialization": "all six mutation-conditioned expressions specialized to their actual active branches; assertions/comparators unchanged",
+          "edits": [
+            {
+              "before": "    phase = Q(2, 7) if args.mutation == 'energy_phase' else Q(0)\n",
+              "after": "    phase = Q(0)\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        return r*a if args.mutation == 'reverse_boost' else r/a\n",
+              "after": "        return r*a\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        beta_effective = Q(1) if args.mutation == 'drop_beta' else k*k\n",
+              "after": "        beta_effective = k*k\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            sign = -1 if args.mutation == 'reverse_boost' else 1\n",
+              "after": "            sign = -1\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            divisor = beta*beta if args.mutation == 'double_spatial_beta' else beta\n",
+              "after": "            divisor = beta\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        map_a=1/a if args.mutation=='forward_spectral_set' else a\n",
+              "after": "        map_a=a\n",
+              "occurrences": 1
+            }
+          ],
+          "original_result": "integrated_boost_covariance_review/author_replays/reverse_boost.json",
+          "original_stdout": "integrated_boost_covariance_review/author_replays/logs/reverse_boost/stdout.txt",
+          "original_stderr": "integrated_boost_covariance_review/author_replays/logs/reverse_boost/stderr.txt",
+          "original_receipt": "integrated_boost_covariance_review/author_replays/logs/reverse_boost/receipt.json"
+        },
+        {
+          "name": "drop_beta",
+          "mode": "drop_beta",
+          "sha256": "54e00cee32bec147d71a73a67c9d556cf792f0117e61bf90d3a4c36cbfdf2fa1",
+          "source": "integrated_boost_covariance_review/author_replays/drop_beta.py",
+          "materialization": "all six mutation-conditioned expressions specialized to their actual active branches; assertions/comparators unchanged",
+          "edits": [
+            {
+              "before": "    phase = Q(2, 7) if args.mutation == 'energy_phase' else Q(0)\n",
+              "after": "    phase = Q(0)\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        return r*a if args.mutation == 'reverse_boost' else r/a\n",
+              "after": "        return r/a\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        beta_effective = Q(1) if args.mutation == 'drop_beta' else k*k\n",
+              "after": "        beta_effective = Q(1)\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            sign = -1 if args.mutation == 'reverse_boost' else 1\n",
+              "after": "            sign = 1\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            divisor = beta*beta if args.mutation == 'double_spatial_beta' else beta\n",
+              "after": "            divisor = beta\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        map_a=1/a if args.mutation=='forward_spectral_set' else a\n",
+              "after": "        map_a=a\n",
+              "occurrences": 1
+            }
+          ],
+          "original_result": "integrated_boost_covariance_review/author_replays/drop_beta.json",
+          "original_stdout": "integrated_boost_covariance_review/author_replays/logs/drop_beta/stdout.txt",
+          "original_stderr": "integrated_boost_covariance_review/author_replays/logs/drop_beta/stderr.txt",
+          "original_receipt": "integrated_boost_covariance_review/author_replays/logs/drop_beta/receipt.json"
+        },
+        {
+          "name": "double_spatial_beta",
+          "mode": "double_spatial_beta",
+          "sha256": "23ebfb347afc184f8ce0d72c5733c53750d2c22a39a1aac8acbc26ceb09030ea",
+          "source": "integrated_boost_covariance_review/author_replays/double_spatial_beta.py",
+          "materialization": "all six mutation-conditioned expressions specialized to their actual active branches; assertions/comparators unchanged",
+          "edits": [
+            {
+              "before": "    phase = Q(2, 7) if args.mutation == 'energy_phase' else Q(0)\n",
+              "after": "    phase = Q(0)\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        return r*a if args.mutation == 'reverse_boost' else r/a\n",
+              "after": "        return r/a\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        beta_effective = Q(1) if args.mutation == 'drop_beta' else k*k\n",
+              "after": "        beta_effective = k*k\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            sign = -1 if args.mutation == 'reverse_boost' else 1\n",
+              "after": "            sign = 1\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            divisor = beta*beta if args.mutation == 'double_spatial_beta' else beta\n",
+              "after": "            divisor = beta*beta\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        map_a=1/a if args.mutation=='forward_spectral_set' else a\n",
+              "after": "        map_a=a\n",
+              "occurrences": 1
+            }
+          ],
+          "original_result": "integrated_boost_covariance_review/author_replays/double_spatial_beta.json",
+          "original_stdout": "integrated_boost_covariance_review/author_replays/logs/double_spatial_beta/stdout.txt",
+          "original_stderr": "integrated_boost_covariance_review/author_replays/logs/double_spatial_beta/stderr.txt",
+          "original_receipt": "integrated_boost_covariance_review/author_replays/logs/double_spatial_beta/receipt.json"
+        },
+        {
+          "name": "forward_spectral_set",
+          "mode": "forward_spectral_set",
+          "sha256": "5332b7e862d6de256fcfb7d015a06a9820066163ed276aaccaaebda49724101c",
+          "source": "integrated_boost_covariance_review/author_replays/forward_spectral_set.py",
+          "materialization": "all six mutation-conditioned expressions specialized to their actual active branches; assertions/comparators unchanged",
+          "edits": [
+            {
+              "before": "    phase = Q(2, 7) if args.mutation == 'energy_phase' else Q(0)\n",
+              "after": "    phase = Q(0)\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        return r*a if args.mutation == 'reverse_boost' else r/a\n",
+              "after": "        return r/a\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        beta_effective = Q(1) if args.mutation == 'drop_beta' else k*k\n",
+              "after": "        beta_effective = k*k\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            sign = -1 if args.mutation == 'reverse_boost' else 1\n",
+              "after": "            sign = 1\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            divisor = beta*beta if args.mutation == 'double_spatial_beta' else beta\n",
+              "after": "            divisor = beta\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        map_a=1/a if args.mutation=='forward_spectral_set' else a\n",
+              "after": "        map_a=1/a\n",
+              "occurrences": 1
+            }
+          ],
+          "original_result": "integrated_boost_covariance_review/author_replays/forward_spectral_set.json",
+          "original_stdout": "integrated_boost_covariance_review/author_replays/logs/forward_spectral_set/stdout.txt",
+          "original_stderr": "integrated_boost_covariance_review/author_replays/logs/forward_spectral_set/stderr.txt",
+          "original_receipt": "integrated_boost_covariance_review/author_replays/logs/forward_spectral_set/receipt.json"
+        },
+        {
+          "name": "energy_phase",
+          "mode": "energy_phase",
+          "sha256": "255e1fd34b971dac527758b11379cce1b8760d12b35ca5b2f54edd85e46ebed1",
+          "source": "integrated_boost_covariance_review/author_replays/energy_phase.py",
+          "materialization": "all six mutation-conditioned expressions specialized to their actual active branches; assertions/comparators unchanged",
+          "edits": [
+            {
+              "before": "    phase = Q(2, 7) if args.mutation == 'energy_phase' else Q(0)\n",
+              "after": "    phase = Q(2, 7)\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        return r*a if args.mutation == 'reverse_boost' else r/a\n",
+              "after": "        return r/a\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        beta_effective = Q(1) if args.mutation == 'drop_beta' else k*k\n",
+              "after": "        beta_effective = k*k\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            sign = -1 if args.mutation == 'reverse_boost' else 1\n",
+              "after": "            sign = 1\n",
+              "occurrences": 1
+            },
+            {
+              "before": "            divisor = beta*beta if args.mutation == 'double_spatial_beta' else beta\n",
+              "after": "            divisor = beta\n",
+              "occurrences": 1
+            },
+            {
+              "before": "        map_a=1/a if args.mutation=='forward_spectral_set' else a\n",
+              "after": "        map_a=a\n",
+              "occurrences": 1
+            }
+          ],
+          "original_result": "integrated_boost_covariance_review/author_replays/energy_phase.json",
+          "original_stdout": "integrated_boost_covariance_review/author_replays/logs/energy_phase/stdout.txt",
+          "original_stderr": "integrated_boost_covariance_review/author_replays/logs/energy_phase/stderr.txt",
+          "original_receipt": "integrated_boost_covariance_review/author_replays/logs/energy_phase/receipt.json"
+        }
+      ],
+      "review_materialization_policy": "Original author mutants are active CLI branches; reviewer preserves baseline bytes and materializes all six operative branch choices into complete helpers. Keep both representations and all full streams; neither changes the original gates.",
+      "mutations": [
+        {
+          "name": "reverse_boost",
+          "argv": [
+            "--mutation",
+            "reverse_boost"
+          ],
+          "original_result": "integrated_boost_covariance/final_reverse_boost.json",
+          "original_receipt": "integrated_boost_covariance/logs/final_reverse_boost/receipt.json",
+          "original_stdout": "integrated_boost_covariance/logs/final_reverse_boost/stdout.txt",
+          "original_stderr": "integrated_boost_covariance/logs/final_reverse_boost/stderr.txt",
+          "expected_passed": 32,
+          "expected_failed": 39,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.06603591609746218,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "a68a06e46e6b745549ff1562d7a1fb9e0ab8613eb4d37f104e500bb98cbca96a",
+          "original_receipt_sha256": "876f3f0ae2da35dfe4377c878e63cce5c0db085916859b8a92b4d95359963560",
+          "original_stdout_sha256": "5760510ce58bf85ca67f137583c704ccde43a10f71b5ffc22bfaa6f85dd0545c",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "drop_beta",
+          "argv": [
+            "--mutation",
+            "drop_beta"
+          ],
+          "original_result": "integrated_boost_covariance/final_drop_beta.json",
+          "original_receipt": "integrated_boost_covariance/logs/final_drop_beta/receipt.json",
+          "original_stdout": "integrated_boost_covariance/logs/final_drop_beta/stdout.txt",
+          "original_stderr": "integrated_boost_covariance/logs/final_drop_beta/stderr.txt",
+          "expected_passed": 58,
+          "expected_failed": 13,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.06018591718748212,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "e510fd69d4b97275c63729b5859b1884df937c2c1d0187832dcfbd16ed171a5b",
+          "original_receipt_sha256": "c7fd0279b62dda886a4a7a716fbebd0b1e9e5cf9ea4997e29b0b994a805762c8",
+          "original_stdout_sha256": "825815dfffb424592b39cbef11d91404facaeac2f49741fbe352f03a84ea9bf8",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "double_spatial_beta",
+          "argv": [
+            "--mutation",
+            "double_spatial_beta"
+          ],
+          "original_result": "integrated_boost_covariance/final_double_spatial_beta.json",
+          "original_receipt": "integrated_boost_covariance/logs/final_double_spatial_beta/receipt.json",
+          "original_stdout": "integrated_boost_covariance/logs/final_double_spatial_beta/stdout.txt",
+          "original_stderr": "integrated_boost_covariance/logs/final_double_spatial_beta/stderr.txt",
+          "expected_passed": 68,
+          "expected_failed": 3,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.053950291126966476,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "dff72bf46f0259c810f3d89ab59843d6e4f689bb628a021a57b189b4d439ce6e",
+          "original_receipt_sha256": "73f50243b82c149f130a7bc2bee62e673567a568aaf734df2e069ab578ed1e4c",
+          "original_stdout_sha256": "bb8b6447d40b6cd9724cada5e020f1d6321dbb99862907c9b3c42618213d82d1",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "forward_spectral_set",
+          "argv": [
+            "--mutation",
+            "forward_spectral_set"
+          ],
+          "original_result": "integrated_boost_covariance/final_forward_spectral_set.json",
+          "original_receipt": "integrated_boost_covariance/logs/final_forward_spectral_set/receipt.json",
+          "original_stdout": "integrated_boost_covariance/logs/final_forward_spectral_set/stdout.txt",
+          "original_stderr": "integrated_boost_covariance/logs/final_forward_spectral_set/stderr.txt",
+          "expected_passed": 68,
+          "expected_failed": 3,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.06491720816120505,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "a1f565dbd68b16c90be6b662ec5bd19e6f91c2dbd19a94ff71ec6f2beab3c27b",
+          "original_receipt_sha256": "7e9f892a843665272e69db99afb2c7ae21b4afa49566257aee08853e4149b8dd",
+          "original_stdout_sha256": "ea6aa66351743c3438ba3333f73453e589c54781b83e1952e32810df5b995287",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "energy_phase",
+          "argv": [
+            "--mutation",
+            "energy_phase"
+          ],
+          "original_result": "integrated_boost_covariance/final_energy_phase.json",
+          "original_receipt": "integrated_boost_covariance/logs/final_energy_phase/receipt.json",
+          "original_stdout": "integrated_boost_covariance/logs/final_energy_phase/stdout.txt",
+          "original_stderr": "integrated_boost_covariance/logs/final_energy_phase/stderr.txt",
+          "expected_passed": 21,
+          "expected_failed": 50,
+          "expected_exit": 1,
+          "original_timeout_seconds": 30.0,
+          "original_elapsed_seconds": 0.06214233301579952,
+          "original_timed_out": false,
+          "survived": false,
+          "original_result_sha256": "5d291d5dc82207729a4f14472616f383db496887ca83782cc17a668a0e9593c6",
+          "original_receipt_sha256": "56560c2b248b996bd8606a8ef13f8dc3e31a997a5c2f91344b21855d66331549",
+          "original_stdout_sha256": "9f93af2bb521fa9d439692d06812436f727d99c123aa22caee7e4f1f317998f4",
+          "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "mutation_count": 5,
+      "expected_mutation_survivors": [],
+      "mutation_policy": "Preserve the entire original helper and all original edits/CLI choices, gates, survivors, full stdout/stderr and observed timeout/timing. Do not convert survivor output drift into a passing sensitivity claim. Traceback line relocation is administrative and must be explicitly mapped.",
+      "independent_result": "integrated_boost_covariance_review/canonical.json",
+      "independent_recorded_rows": 38,
+      "independent_recorded_failed": 0,
+      "independent_row_semantics": "Existing distinct finite control rows; not a proof or model-independence grade",
+      "source_sha256": "71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed",
+      "report_sha256": "273ea8db025c5c469864867d55ea0afe7adb05987c2eaef15b8c06825d0738f1",
+      "root_coverage_sha256": "d9c0a81cf2066c1bc6fff5cba9a7e3b06a7e98c32d3c663bc67ec0db216fd753",
+      "root_evidence_verification_sha256": "a62f562ab370eaca46b690a15ccedf932e2f714d4f6f37d56fe45c4a44773e24",
+      "independent_stdout_sha256": "c6e1032778f8279c33038bdb2f06fa756c9203567add479d104c949266e7b626",
+      "independent_result_sha256": "edce60cdcca5ebefc791ec4f72f39e7e60ecac3f442fbbc0879a7b49f4716be5"
+    }
+  ],
+  "observed_dependency_revision_reported_by_root": "3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe",
+  "base_policy": "Explicit --base is required at execution, HEAD must equal it, and every frozen dependency/instruction byte must still match. No Git lookup was performed by preparation.",
+  "publication_destination": "New regular milestone PR stacked on PR9486; root owns branch/worktree/PR creation and publication.",
+  "worktree_policy": "Required explicit --worktree; clean HEAD must equal required --base. No default target checkout.",
+  "target_worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree"
+}

@@ -1,0 +1,490 @@
+{
+  "packet": ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012",
+  "base_policy": "Explicit --base is required at execution, HEAD must equal it, and every frozen dependency/instruction byte must still match. No Git lookup was performed by preparation.",
+  "mathematical_changes": [],
+  "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.",
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/MICROSCOPIC_BOOST_FLOW_PROBE.md",
+      "source_sha256": "7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7",
+      "preserved_source": "evidence/MICROSCOPIC_BOOST_FLOW_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"Actual weighted boost and current implementation from finite-range spin densities and supplied local state identities\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "after": "---\nclaim_id: \"microscopic_boost_flow_bounded_theorem_note_2026-10-12\"\nclaim_type: \"bounded_theorem\"\nclaim_scope: \"Under supplied finite-range spin densities, the checked spatially growing-flow theorem and explicit rapid almost-local graph estimates give the weighted flow; same-state local infinitesimal identities give canonical self-adjoint GNS H/B/P and local current closure. No positive-energy physical state or integrated Lorentz representation is constructed.\"\nupstream_dependencies:\n  - microscopic_current_implementation_bounded_theorem_note_2026-10-12\nrunner: \"scripts/microscopic_boost_flow_2026_10_12.py\"\nactual_current_surface_status: \"conditional-support\"\ntarget_claim_type: \"bounded_theorem\"\ntrace_class: \"upstream_support\"\ntarget_claim_id: null\ntarget_blocker_text: \"Supply a checked same-state finite-range realization and the remaining exact Lie relations; independently verify any integration argument.\"\nsource_of_blocker_text: \"handoff\"\nreachability_to_target: \"partially_closes\"\nartifact_role: \"theorem\"\nnext_trace_action: \"Supply a checked same-state finite-range realization and the remaining exact Lie relations; independently verify any integration argument.\"\nconditional_surface_status: \"Actual weighted flow and canonical generators under supplied same-state local identities\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The finite-range density and local state identities remain supplied; no physical selection, spectrum, remaining Lie identities or integrated representation follows.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "category": "claim_metadata",
+          "reason": "Complete bounded claim/status/dependency/trace metadata; no proof edit",
+          "occurrences": 1
+        },
+        {
+          "before": "**Author proof, 2026-10-12; independent review pending.**",
+          "after": "**Conditional bounded theorem, 2026-10-12; separate complete source review requires no mathematical correction.**",
+          "category": "review_status",
+          "reason": "Record completed source review without audit promotion",
+          "occurrences": 1
+        },
+        {
+          "before": "Let S be this note's directory. Exact source snapshots, acquisition evidence,\nproof freeze, controls and the current checkpoint are in\n`S/microscopic_boost_flow/`. There is no audit status attached to this note.",
+          "after": "S denotes the original research collection. The [frozen milestone handoff](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/HANDOFF.md) and [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserve the original source bundles and complete own evidence. The direct in-branch proof dependencies are [Current](MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md): Finite current pair algebra and the canonical uniform finite-range dynamics at the source-matched hypotheses; no extra actual-operator assumptions are imported. Other named sources are historical context or transitive dependencies unless their use is stated explicitly. No audit status is attached to this note.",
+          "category": "portable_provenance",
+          "reason": "Replace local recovery description with portable evidence and direct Current proof dependency",
+          "occurrences": 1
+        },
+        {
+          "before": "The remaining independent review must examine",
+          "after": "At the author freeze, the remaining independent review had to examine",
+          "category": "historical_status",
+          "reason": "Distinguish the original pending handoff from the completed review appendix",
+          "occurrences": 1
+        },
+        {
+          "before": "No independent review, formal proof-assistant verification, repository",
+          "after": "Frozen author operational record: no independent review, formal proof-assistant verification, repository",
+          "category": "historical_status",
+          "reason": "Label author-only execution and publication history",
+          "occurrences": 1
+        },
+        {
+          "before": "No editable prompt file, framework axiom, prior frozen source, repository",
+          "after": "Frozen author operational record: no editable prompt file, framework axiom, prior frozen source, repository",
+          "category": "historical_status",
+          "reason": "Preserve original worker write-scope statement as history",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and review record\n\nThe complete frozen author source is `MICROSCOPIC_BOOST_FLOW_PROBE.md`, SHA-256\n`7ec1d7eecb4eba020548eba8b56dff66712f52b4eba634ba276dd67440d28de7`. Its separate review is `MICROSCOPIC_BOOST_FLOW_REVIEW.md`, SHA-256\n`ed2c7e594714b9ba0dc1e8f0fed916e55c7a2e7c84bc0078acc6a00cd4292678`, with receipt SHA-256 `aeacaf3d522cd6994ea29f6b26344007b2dbfb2a7de83a2c1dc93ca9d12812d4`.\nThe [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserves the complete own\nauthor/reviewer sources, earlier versions, failures, stdout/stderr, execution\nreceipts, root source-coverage records and their byte identities. The\n[exact transformation map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/PUBLICATION_EDITS.json) and\n[reconstruction program](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/reconstruct.py) recover every byte of\nthis complete note and its entire primary. No mathematical correction is made.\nHistorical review-pending and worker-scope statements above describe the author\nfreeze; this separate appendix records the completed source review.\n\n**Author/checker pairing:** Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.\n\nThe complete B1-B38 source review requires no mathematical correction.\nIt checks the finite-spin and Lieb-Robinson hypotheses of the supplied TWW\ngrowing-derivation theorem, the dyadic graph losses, state integration, the C1\nSchrodinger-curve identification of a supplied operator and the common-domain\ncurrent construction. The external theorem is a checked application; no new\ngeneral growing-flow theorem is claimed. The frozen TWW and NSY versions and\nsource hashes are in the external inventory, with raw paper bytes left external.\n\nThe final author helper has 49 recorded finite predicates. Its four original\nCLI mutations fail 13, 12, 6 and 2 predicates. Norm preservation accepts the\nwrong clock, while the full algebra adjoint accepts the left-only GNS action;\ndistinct cyclic/local-vector gates detect that omission. The dyadic upper-bound\nfixture remains loose. The separate reviewer helper has 71 recorded predicates,\nwith distinct algebraic and spectral mutation checks. Its zero analytic-radius\nexample concerns a rapid almost-local vector, not a claim that local vectors\nlack analytic radius. These finite checks do not establish infinite operator\ndomains, invariance of a physical state or the general external theorem.\n\nThe initial author's C1 gate substituted a formal commutator; the corrected\nactual-orbit finite difference, both source versions and all surviving logs\nremain preserved. The first logger's suffix collisions, unavailable overwritten\nreceipts, failed tar extraction of a single gzip TeX response and failed prose\npatch contexts are recorded without inventing missing executions. Five author\nreplays were bound to their original scientific streams by the source reviewer.\nRoot subsequently verified their provenance and completed the source read; root\ndid not thereby become an independent reviewer. No positive-energy physical\nstate, remaining Lie identities or integrated Lorentz representation is supplied.\n\nThe [canonical finite primary](../scripts/microscopic_boost_flow_2026_10_12.py) retains every\noriginal calculation and failure gate. Publication adds only mapped input and\ntimeout declarations, an assertion guard and finite-scope output. Original\nadjacent-result writes are suppressed where present; the complete original\nJSON outputs remain in the evidence map. Required output destinations in the\nBoost and Integrated CLIs become optional for ordinary canonical execution.\nWhere present, self-hash calculations remain and refer to the source actually run.\n\nPreparation ran no primary, mutant, independent control, runner-cache API,\nvocabulary fixer, graph builder or audit compatibility check. Actual canonical\nexecution and complete original mutation replay are root's subsequent work,\nrecorded in [delivery checks](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/DELIVERY_CHECKS.md). Historical\nsource-bound results are not fresh canonical results. No retained promotion,\napplied audit verdict, Lean certificate, helper-registry change or completed\npublication is asserted here. Combined candidate validation and strict audit\nlint remain separate landing gates.\n\nThis is a frozen milestone record. Root owns the sole live campaign checkpoint\nand its current science-checkout pointer. Editable prompt files changed: none.\n",
+      "appended_text_role": "Separate publication evidence appendix",
+      "publication_path": "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "95f6c72698ea71396aa5f4c18ec9c6f210aebdaa5e73a9c91c2003a3f0651d75",
+      "publication_bytes": 44175,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/finite_controls.py",
+      "source_sha256": "5a404e8ff79a64f004603d9ae6841675c294fd5d566818c05646974048cec76b",
+      "preserved_source": "evidence/microscopic_boost_flow/finite_controls.py.gz",
+      "edits": [
+        {
+          "before": "import argparse\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nimport argparse\n",
+          "category": "runner_declarations",
+          "reason": "Declare bound note/dependency/evidence-map inputs, timeout and assertion guard after the docstring and every future import",
+          "occurrences": 1
+        },
+        {
+          "before": "parser.add_argument(\"--output\", required=True)",
+          "after": "parser.add_argument(\"--output\", default=None)",
+          "category": "canonical_cli",
+          "reason": "Make the unused output destination optional so the canonical primary executes with no arguments",
+          "occurrences": 1
+        },
+        {
+          "before": "    Path(args.output).write_text(json.dumps(result, indent=2) + \"\\n\")",
+          "after": "    # Publication suppresses the adjacent-result write only; all calculations and original JSON evidence are preserved.",
+          "category": "suppress_output_side_effect",
+          "reason": "Suppress the result-file write while retaining the complete result calculation and source self-hash",
+          "occurrences": 1
+        },
+        {
+          "before": "    return 1 if result[\"failed\"] else 0",
+          "after": "    print('per_element: finite weighted commutator, current and orbit-derivative fixtures are checked; the analytic proof carries their generalization.')\n    print('per_site: finite support and current signs are checked; no intended microscopic density/state is supplied by the controls.')\n    print('per_mode: checked and not executed — no physical particle mode or positive-energy spectral realization is constructed.')\n    print('per_block: finite GNS column, adjoint and C1-orbit fixtures are checked; their nondiscriminating rows remain visible.')\n    print('lattice_wide: checked and not executed — infinite weighted-flow existence and domains use the conditional analytic argument and matched external theorem.')\n    print(\"TOTAL: PASS=\" + str(result[\"passed\"]) + \" FAIL=\" + str(result[\"failed\"]))\n    print('SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.')\n    return 1 if result[\"failed\"] else 0",
+          "category": "scoped_output",
+          "reason": "Append finite-scope lines and existing-result totals after every original stdout byte; keep the exact failure return",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "",
+      "appended_text_role": "No suffix outside the original driver",
+      "publication_path": "scripts/microscopic_boost_flow_2026_10_12.py",
+      "publication_sha256": "e06387f3c243810e478e4fb94e55ccf3ec0c2537e69dc985ea2d4bca468d1c72",
+      "publication_bytes": 14151,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/GAPPED_BOOST_INVARIANCE_PROBE.md",
+      "source_sha256": "94d1f879927135d378dcafb6e9b603465155906a71fed5ca301b4354566cea14",
+      "preserved_source": "evidence/GAPPED_BOOST_INVARIANCE_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"Local current and first-moment state invariance from a simple gapped GNS vacuum and exact local current conservation\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The supplied finite-range dynamics, state, GNS spectrum and exact conservation identity are hypotheses; the state identities are derived.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "after": "---\nclaim_id: \"gapped_boost_invariance_bounded_theorem_note_2026-10-12\"\nclaim_type: \"bounded_theorem\"\nclaim_scope: \"A specified finite-range energy density with exact local current conservation and an invariant state whose canonical GNS energy has a simple positive-gap vacuum has zero current and first-moment expectation on local and rapid almost-local observables. No actual intended model, weighted-flow construction or Lorentz closure is supplied.\"\nupstream_dependencies:\n  - microscopic_current_implementation_bounded_theorem_note_2026-10-12\nrunner: \"scripts/gapped_boost_invariance_2026_10_12.py\"\nactual_current_surface_status: \"conditional-support\"\ntarget_claim_type: \"bounded_theorem\"\ntrace_class: \"upstream_support\"\ntarget_claim_id: null\ntarget_blocker_text: \"Supply the intended density, exact conservation and simple gapped GNS vacuum, then match the separate weighted-flow theorem before use.\"\nsource_of_blocker_text: \"handoff\"\nreachability_to_target: \"partially_closes\"\nartifact_role: \"theorem\"\nnext_trace_action: \"Supply the intended density, exact conservation and simple gapped GNS vacuum, then match the separate weighted-flow theorem before use.\"\nconditional_surface_status: \"Local current and boost state identities from a simple gapped GNS vacuum and exact conservation\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The density, exact conservation and invariant simple gapped GNS state remain supplied; a separately matched boost theorem is downstream.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "category": "claim_metadata",
+          "reason": "Complete bounded claim/status/dependency/trace metadata; no proof edit",
+          "occurrences": 1
+        },
+        {
+          "before": "**Author theorem, 2026-10-12; independent review pending.**",
+          "after": "**Conditional bounded theorem, 2026-10-12; separate complete source review requires no mathematical correction.**",
+          "category": "review_status",
+          "reason": "Record completed source review without audit promotion",
+          "occurrences": 1
+        },
+        {
+          "before": "Write S for this note's directory. Source snapshots, controls, logs and the\ncurrent recovery checkpoint are in `S/gapped_boost_invariance/`.",
+          "after": "S denotes the original research collection. The [frozen milestone handoff](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/HANDOFF.md) and [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserve the original source bundles and complete own evidence. The direct in-branch proof dependencies are [Current](MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md): Finite current pair algebra and the canonical uniform finite-range dynamics at the source-matched hypotheses; no extra actual-operator assumptions are imported. Other named sources are historical context or transitive dependencies unless their use is stated explicitly. Joint J17 is an optional test of the supplied conservation premise; the weighted-flow theorem is downstream, not a premise of G1-G6 implies G7.",
+          "category": "portable_provenance",
+          "reason": "Portable recovery links and direct Current proof use only; exclude optional/downstream graph edges",
+          "occurrences": 1
+        },
+        {
+          "before": "The next scientific handoff is a fresh independent review of this exact",
+          "after": "At the author freeze, the next scientific handoff was a fresh independent review of this exact",
+          "category": "historical_status",
+          "reason": "Preserve the pending-review obligation as historical author context",
+          "occurrences": 1
+        },
+        {
+          "before": "Only this note and `gapped_boost_invariance/` were written.",
+          "after": "Frozen author operational record: only this note and `gapped_boost_invariance/` were written.",
+          "category": "historical_status",
+          "reason": "Label original author write scope",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and review record\n\nThe complete frozen author source is `GAPPED_BOOST_INVARIANCE_PROBE.md`, SHA-256\n`94d1f879927135d378dcafb6e9b603465155906a71fed5ca301b4354566cea14`. Its separate review is `GAPPED_BOOST_INVARIANCE_REVIEW.md`, SHA-256\n`7834a02d0543fa148e2589e90d727d9ac1ef7eb354cceb7552e7f87dce853126`, with receipt SHA-256 `6175025b87d7df07ec76c37059af7554d4349eb8bffc753566dd5556d6af6b18`.\nThe [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserves the complete own\nauthor/reviewer sources, earlier versions, failures, stdout/stderr, execution\nreceipts, root source-coverage records and their byte identities. The\n[exact transformation map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/PUBLICATION_EDITS.json) and\n[reconstruction program](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/reconstruct.py) recover every byte of\nthis complete note and its entire primary. No mathematical correction is made.\nHistorical review-pending and worker-scope statements above describe the author\nfreeze; this separate appendix records the completed source review.\n\n**Author/checker pairing:** Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.\n\nThe complete G1-G49 source review requires no mathematical correction.\nThe proof derives both local state identities from the supplied simple gapped\nGNS vacuum and exact current conservation. It checks finite ODE/Lieb-Robinson\nrecursion without an outside-support volume, polynomial time bounds before\nSchwartz filtering, both graph extensions and both scalar vacuum columns.\nIt never infers that the filtered observable is a globally scalar operator.\nThe Current note is the direct proof dependency. The Joint finite-site\ncriterion is an optional way to test the supplied conservation premise, and\nthe weighted-flow result is downstream; neither is used in G1-G6 implies G7.\n\nThe final author helper has 105 finite predicates. The five original CLI\nvariants fail 5, 5, 1, 1 and 1 predicates; some variants alter comparison claims\ninstead of the computed routine. The separate reviewer used exact rational-pair\ncontrols with 134 predicates and five actual source substitutions, failing\n24, 24, 4, 2 and 1. The complete fixtures and nondiscriminating rows remain\navailable. Counts indicate recorded sensitivity only, not the analytic proof.\n\nThe initial author filter comparison used its own computed matrix on both\nsides. Its correction independently derives the diagonal comparison matrix;\nthe initial helper, all outputs, correction diff and final runs are preserved.\nThe saved analytic draft snapshot followed the first baseline execution;\nneither a pre-execution hash freeze nor blinded author checking is claimed.\nSix author result/stdout replays were bound exactly in the source review.\nThe degenerate vacuum, one-column shortcut, nonconserved current, density-gauge\nand global-scalar counterexamples keep their original scopes. GNS vacuum\nuniqueness is not uniqueness among all ground states. Actual density, state,\ngap and conservation remain hypotheses; no intended physical model, Lorentz\nclosure, weighted-flow realization, scattering or Fock conclusion is supplied.\n\nThe [canonical finite primary](../scripts/gapped_boost_invariance_2026_10_12.py) retains every\noriginal calculation and failure gate. Publication adds only mapped input and\ntimeout declarations, an assertion guard and finite-scope output. Original\nadjacent-result writes are suppressed where present; the complete original\nJSON outputs remain in the evidence map. Required output destinations in the\nBoost and Integrated CLIs become optional for ordinary canonical execution.\nWhere present, self-hash calculations remain and refer to the source actually run.\n\nPreparation ran no primary, mutant, independent control, runner-cache API,\nvocabulary fixer, graph builder or audit compatibility check. Actual canonical\nexecution and complete original mutation replay are root's subsequent work,\nrecorded in [delivery checks](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/DELIVERY_CHECKS.md). Historical\nsource-bound results are not fresh canonical results. No retained promotion,\napplied audit verdict, Lean certificate, helper-registry change or completed\npublication is asserted here. Combined candidate validation and strict audit\nlint remain separate landing gates.\n\nThis is a frozen milestone record. Root owns the sole live campaign checkpoint\nand its current science-checkout pointer. Editable prompt files changed: none.\n",
+      "appended_text_role": "Separate publication evidence appendix",
+      "publication_path": "docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "e020489cad89906f815f2d2fa54cf59e85aa22b307ec5b3b9202febdc203eb0b",
+      "publication_bytes": 44021,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_boost_invariance/finite_controls.py",
+      "source_sha256": "28b9aa21ba4a828a23d7a85d3e4fbb9820f9d3b9f7cf0f29abb44f06d9701e2f",
+      "preserved_source": "evidence/gapped_boost_invariance/finite_controls.py.gz",
+      "edits": [
+        {
+          "before": "import argparse\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nimport argparse\n",
+          "category": "runner_declarations",
+          "reason": "Declare bound note/dependency/evidence-map inputs, timeout and assertion guard after the docstring and every future import",
+          "occurrences": 1
+        },
+        {
+          "before": "    args.output.parent.mkdir(parents=True,exist_ok=True)\n    args.output.write_text(json.dumps(result,indent=2)+'\\n')",
+          "after": "    # Publication suppresses output-directory creation and result writing only; the complete result remains computed.",
+          "category": "suppress_output_side_effect",
+          "reason": "Suppress only output mkdir/write side effects; original predicates, result/self-hash and printed total remain",
+          "occurrences": 1
+        },
+        {
+          "before": "    return 1 if result['failed'] else 0",
+          "after": "    print('per_element: exact current, filter and vacuum-column finite fixtures are checked; the infinite argument is in the note.')\n    print('per_site: finite matrix-unit and support recursion fixtures are checked; intended-model conservation remains supplied.')\n    print('per_mode: finite gap/filter fixtures are checked; they do not construct an actual infinite GNS spectrum.')\n    print('per_block: simple and degenerate vacuum fixtures retain both passing and failing scalar-column controls.')\n    print('lattice_wide: checked and not executed — rapid almost-local graph bounds and state identities rely on the conditional analytic proof.')\n    print('SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.')\n    return 1 if result['failed'] else 0",
+          "category": "scoped_output",
+          "reason": "Append finite-scope lines after the complete original stdout; keep the exact failure return",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "",
+      "appended_text_role": "No suffix outside the original driver",
+      "publication_path": "scripts/gapped_boost_invariance_2026_10_12.py",
+      "publication_sha256": "0c20fc35206d2dcd9e906ecc000e7f24abbaef3c930750c59aa5e564138fd625",
+      "publication_bytes": 9630,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/NONISOLATED_FOCK_PROBE.md",
+      "source_sha256": "90471bd9b63f6a39356152a725e633a1d465272188ff1574bd198f71e97b85f5",
+      "preserved_source": "evidence/NONISOLATED_FOCK_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Fock isometry for time-averaged regular massive graph targets\n",
+          "after": "---\nclaim_id: \"nonisolated_fock_bounded_theorem_note_2026-10-12\"\nclaim_type: \"bounded_theorem\"\nclaim_scope: \"Under the reviewed nonisolated scattering hypotheses, the full permanent Gram formula and incoming/outgoing Fock isometries hold over the closed span of actual regular targets. That span may be zero; no whole-sector density, onto, detector, massless-vacuum, S-matrix or physical realization conclusion is supplied.\"\nupstream_dependencies:\n  - nonisolated_mass_scattering_bounded_theorem_note_2026-10-12\n  - compact_patch_fock_isometry_bounded_theorem_note_2026-10-12\nrunner: \"scripts/nonisolated_fock_2026_10_12.py\"\nactual_current_surface_status: \"conditional-support\"\ntarget_claim_type: \"bounded_theorem\"\ntrace_class: \"upstream_support\"\ntarget_claim_id: null\ntarget_blocker_text: \"Construct nonzero regular seed targets in an actual model and separately address density, detectors and onto/exhaustion.\"\nsource_of_blocker_text: \"handoff\"\nreachability_to_target: \"partially_closes\"\nartifact_role: \"theorem\"\nnext_trace_action: \"Construct nonzero regular seed targets in an actual model and separately address density, detectors and onto/exhaustion.\"\nconditional_surface_status: \"Fock isometries on the defined closed regular target space\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The dynamics, unique gap, reducing massive graphs and actual regular seed vectors remain supplied. Four bookkeeping mutations survive the finite author gates.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# Fock isometry for time-averaged regular massive graph targets\n",
+          "category": "claim_metadata",
+          "reason": "Add bounded claim/status/dependency/trace metadata; no proof edit",
+          "occurrences": 1
+        },
+        {
+          "before": "**Author status:** conditional-support; this extension has not yet received independent review.",
+          "after": "**Actual current-surface status:** conditional-support; complete separate source review requires no mathematical correction.",
+          "category": "review_status",
+          "reason": "Record completed review while retaining the bounded theorem tier",
+          "occurrences": 1
+        },
+        {
+          "before": "Let S be `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011`.",
+          "after": "S denotes the original research collection. The [frozen milestone handoff](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/HANDOFF.md) and [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserve the original source bundles and complete own evidence. The direct in-branch proof dependencies are [Mass](NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md): N1-N31 existence, all fixed sublinear-width comparison, unequal-time locality and mixed-word energy bounds. Geometric regularity is imposed directly; N36 is not used.; [Fock](COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md): Checked contraction/Gram and finite-energy proof mechanism, reconstructed for the actual averaged nonexact-vacuum hypotheses; its old shell-density conclusion is not imported. Other named sources are historical context or transitive dependencies unless their use is stated explicitly.",
+          "category": "portable_provenance",
+          "reason": "Remove machine-local path and name exact direct N/Fock proof dependencies; original SC remains context",
+          "occurrences": 1
+        },
+        {
+          "before": "`CHECKPOINT.md` is the single current recovery checkpoint.",
+          "after": "At the author freeze, `CHECKPOINT.md` was its recovery checkpoint; current campaign recovery and its science-checkout pointer remain root-owned.",
+          "category": "historical_status",
+          "reason": "Separate frozen author recovery state from the current campaign checkpoint",
+          "occurrences": 1
+        },
+        {
+          "before": "The exact next scientific action is a fresh independent review of (NF14)–(NF38) and their stated N dependencies before extensive downstream reuse.",
+          "after": "At the author freeze, the exact next scientific action was a fresh independent review of (NF14)–(NF38) and their stated N dependencies before extensive downstream reuse; the completed review is recorded below.",
+          "category": "historical_status",
+          "reason": "Preserve the original independent-review handoff and record its completion",
+          "occurrences": 1
+        },
+        {
+          "before": "Only this probe and `nonisolated_fock/` are author outputs.",
+          "after": "Frozen author operational record: only this probe and `nonisolated_fock/` are author outputs.",
+          "category": "historical_status",
+          "reason": "Label original author-only output scope",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and review record\n\nThe complete frozen author source is `NONISOLATED_FOCK_PROBE.md`, SHA-256\n`90471bd9b63f6a39356152a725e633a1d465272188ff1574bd198f71e97b85f5`. Its separate review is `NONISOLATED_FOCK_REVIEW.md`, SHA-256\n`be5ad6f72a82e08f3cd1d841aea1bf3478ea3c92dfd309de0d2ba070818ed919`, with receipt SHA-256 `4db257dacc70363b8db4fee15613e868dc03ada4a7702becd85ce931c7034068`.\nThe [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserves the complete own\nauthor/reviewer sources, earlier versions, failures, stdout/stderr, execution\nreceipts, root source-coverage records and their byte identities. The\n[exact transformation map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/PUBLICATION_EDITS.json) and\n[reconstruction program](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/reconstruct.py) recover every byte of\nthis complete note and its entire primary. No mathematical correction is made.\nHistorical review-pending and worker-scope statements above describe the author\nfreeze; this separate appendix records the completed source review.\n\n**Author/checker pairing:** Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.\n\nThe complete NF1-NF38 source review requires no mathematical correction.\nIt checks the four independent averaging clocks, the capped clustering kernel\nwith three relative lattice sums, the squared contraction bound, every\nfinite-energy spectator, the full Gram recursion and the defined regular\none-particle space. The small-width sufficient bound is not asserted necessary.\nWidth comparison then transfers the result to every fixed sublinear power.\nCompatible overlapping charts do not add species. The regular target space\nmay be zero; its separated-tensor density does not assert density in an entire\nphysical mass sector or density of the interacting scattering range.\n\nThe original author driver emits seven complete JSON records. Publication's\nTOTAL counts one completed assertion-guarded driver, not seven predicates.\nThirteen full-source mutations preserve the original gates: nine are rejected,\nwhile removal of the volume-growth factor, one relative count, the contraction\nexponent and the tail margin survive. All changed numeric output and passing\nrows remain. No calculation or gate is silently repaired to hide this limit.\nThe proof carries the general exponents; the finite arithmetic does not prove\nthem. The original independent matrix control timed out after two partial\nrecords at 60 seconds. A rational-pair optimization retained its matrices,\ncases and gates and completed six records. Both implementations, timeout,\npartial output and completed run are preserved with their actual receipts.\n\nThe Nonisolated mass note supplies N1-N31 existence/comparison and energy\nbounds. The prior compact-patch Fock mechanism is a second direct dependency,\nreconstructed at the actual averaged, nonexact-vacuum hypotheses. Original SC\nis context and transitive through N. N36's weighted-Casimir repair is preserved\nas predecessor provenance; this proof imposes geometric regularity directly\nand does not use N36. The exact Dybalski, BDN and NS paper versions and read\npage scopes are recorded externally. No regular-seed existence, whole-sector\ndensity, onto/exhaustion, detector, ND/EX, S-matrix, boost or microscopic model\nis inferred. The positive-gap clustering premise is not a massless-vacuum result.\n\nThe [canonical finite primary](../scripts/nonisolated_fock_2026_10_12.py) retains every\noriginal calculation and failure gate. Publication adds only mapped input and\ntimeout declarations, an assertion guard and finite-scope output. Original\nadjacent-result writes are suppressed where present; the complete original\nJSON outputs remain in the evidence map. Required output destinations in the\nBoost and Integrated CLIs become optional for ordinary canonical execution.\nWhere present, self-hash calculations remain and refer to the source actually run.\n\nPreparation ran no primary, mutant, independent control, runner-cache API,\nvocabulary fixer, graph builder or audit compatibility check. Actual canonical\nexecution and complete original mutation replay are root's subsequent work,\nrecorded in [delivery checks](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/DELIVERY_CHECKS.md). Historical\nsource-bound results are not fresh canonical results. No retained promotion,\napplied audit verdict, Lean certificate, helper-registry change or completed\npublication is asserted here. Combined candidate validation and strict audit\nlint remain separate landing gates.\n\nThis is a frozen milestone record. Root owns the sole live campaign checkpoint\nand its current science-checkout pointer. Editable prompt files changed: none.\n",
+      "appended_text_role": "Separate publication evidence appendix",
+      "publication_path": "docs/NONISOLATED_FOCK_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "0c283ba3443ceb71a032810b43f1a788c483a88db685df5fd6cc38918d20c4f0",
+      "publication_bytes": 46415,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/check_fock_extension.py",
+      "source_sha256": "367840a5726f4e7cecd16b35069fd06ca0643f660b7d254926293b2622053361",
+      "preserved_source": "evidence/nonisolated_fock/check_fock_extension.py.gz",
+      "edits": [
+        {
+          "before": "from collections import defaultdict\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/NONISOLATED_FOCK_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/NONISOLATED_MASS_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nfrom collections import defaultdict\n",
+          "category": "runner_declarations",
+          "reason": "Declare bound note/dependency/evidence-map inputs, timeout and assertion guard after the docstring and every future import",
+          "occurrences": 1
+        },
+        {
+          "before": "    report(\"completion\", status=\"complete\", independent_review=False,\n           scope=\"Author finite algebra, support-counting and exponent controls only.\")",
+          "after": "    report(\"completion\", status=\"complete\", independent_review=False,\n           scope=\"Author finite algebra, support-counting and exponent controls only.\")\n    print('per_element: exact free-word and finite covariance identities are checked; the analytic contraction proof remains separate.')\n    print('per_site: finite support geometry and exact rational lattice sums are checked; general exponent gates have documented survivors.')\n    print('per_mode: finite four-clock and energy-window fixtures are checked; no nonisolated infinite-lattice particle model is constructed.')\n    print('per_block: finite spectator and width bookkeeping is checked; one completed driver is not a predicate count or proof grade.')\n    print('lattice_wide: checked and not executed — Fock isometry and density in the defined regular space use the conditional analytic proof.')\n    print(\"TOTAL: PASS=1 FAIL=0\")\n    print('SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model. TOTAL counts one completed assertion-guarded driver.')",
+          "category": "scoped_output",
+          "reason": "Append scope and a one-driver completion total inside the original main guard, after all seven original JSON records",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "",
+      "appended_text_role": "No suffix outside the original driver",
+      "publication_path": "scripts/nonisolated_fock_2026_10_12.py",
+      "publication_sha256": "5e5220bea0b63549863b852d880fd1d642652bcb24d54b15009af310ba460dfb",
+      "publication_bytes": 17295,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/WEIGHTED_CURRENT_CLOSURE_PROBE.md",
+      "source_sha256": "561cc0109580b74c42b19af27ab35801deea61a9c304dc2f43da772e042448f7",
+      "preserved_source": "evidence/WEIGHTED_CURRENT_CLOSURE_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"Finite boost/current closure criterion under exact energy-current conservation\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"A specified local energy density and its exact current conservation remain supplied; the finite reduction and equivalence are proved.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "after": "---\nclaim_id: \"weighted_current_closure_bounded_theorem_note_2026-10-12\"\nclaim_type: \"bounded_theorem\"\nclaim_scope: \"For a specified finite-range full-matrix spin density under exact energy-current conservation, first translation moments reduce the weighted current/boost bracket to an unweighted density. A complete finite site test is equivalent to beta-energy closure; supplied actual local-vector operators give the separate common-domain corollary. The fixed XX density fails for every real beta; no broader no-go or physical model is established.\"\nupstream_dependencies:\n  - microscopic_current_implementation_bounded_theorem_note_2026-10-12\n  - microscopic_joint_flow_bounded_theorem_note_2026-10-12\nrunner: \"scripts/weighted_current_closure_2026_10_12.py\"\nactual_current_surface_status: \"conditional-support\"\ntarget_claim_type: \"bounded_theorem\"\ntrace_class: \"upstream_support\"\ntarget_claim_id: null\ntarget_blocker_text: \"Test the full criterion on a specified intended density; separately construct actual self-adjoint operators and justify any global integration.\"\nsource_of_blocker_text: \"handoff\"\nreachability_to_target: \"partially_closes\"\nartifact_role: \"theorem\"\nnext_trace_action: \"Test the full criterion on a specified intended density; separately construct actual self-adjoint operators and justify any global integration.\"\nconditional_surface_status: \"Finite local weighted-current closure criterion under exact conservation\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The specified density, conservation and optional self-adjoint local-vector actions remain supplied. Fixed-XX failure does not quantify over density improvements or other interactions.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "category": "claim_metadata",
+          "reason": "Complete bounded claim/status/dependency/trace metadata; no proof edit",
+          "occurrences": 1
+        },
+        {
+          "before": "**Author derivation, 2026-10-12; independent review pending.**",
+          "after": "**Conditional bounded theorem, 2026-10-12; separate complete source review requires no mathematical correction.**",
+          "category": "review_status",
+          "reason": "Record completed source review without changing the local-algebra result",
+          "occurrences": 1
+        },
+        {
+          "before": "Write S for this note's directory. The complete predecessor arguments were\nread, including their finite padded Jacobi proofs and tensor-word orbit\ntheorem. Frozen copies are under `weighted_current_closure/sources/`.",
+          "after": "S denotes the original research collection. The [frozen milestone handoff](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/HANDOFF.md) and [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserve the original source bundles and complete own evidence. The direct in-branch proof dependencies are [Current](MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md): Finite current pair algebra and the canonical uniform finite-range dynamics at the source-matched hypotheses; no extra actual-operator assumptions are imported.; [Joint](MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md): J15-J20 finite complete-site tests and finite-density orbit theorem; strong joint-flow conclusions are not assumed in the weighted local-algebra proof. Other named sources are historical context or transitive dependencies unless their use is stated explicitly. The complete original predecessor arguments were read, including their finite padded Jacobi proofs and tensor-word orbit theorem; source copies remain under the evidence-map entries for `weighted_current_closure/sources/`.",
+          "category": "portable_provenance",
+          "reason": "Portable original snapshots and exact Current/Joint proof dependencies",
+          "occurrences": 1
+        },
+        {
+          "before": "[Current implementation](MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md)",
+          "after": "Original `MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md`",
+          "category": "portable_provenance",
+          "reason": "Keep original line count/hash attached to the original source; canonical proof link is separately declared",
+          "occurrences": 1
+        },
+        {
+          "before": "[Joint-flow probe](MICROSCOPIC_JOINT_FLOW_PROBE.md)",
+          "after": "Original `MICROSCOPIC_JOINT_FLOW_PROBE.md`",
+          "category": "portable_provenance",
+          "reason": "Keep original line count/hash attached to the original source; canonical proof link is separately declared",
+          "occurrences": 1
+        },
+        {
+          "before": "[Current review](MICROSCOPIC_CURRENT_IMPLEMENTATION_REVIEW.md)",
+          "after": "[Current review, frozen original](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/evidence/weighted_current_closure/sources/MICROSCOPIC_CURRENT_IMPLEMENTATION_REVIEW.md.gz)",
+          "category": "portable_provenance",
+          "reason": "Point historical review provenance to its exact compressed original; no new claim graph dependency",
+          "occurrences": 1
+        },
+        {
+          "before": "[Joint-flow review](MICROSCOPIC_JOINT_FLOW_REVIEW.md)",
+          "after": "[Joint-flow review, frozen original](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/evidence/weighted_current_closure/sources/MICROSCOPIC_JOINT_FLOW_REVIEW.md.gz)",
+          "category": "portable_provenance",
+          "reason": "Point historical review provenance to its exact compressed original; no new claim graph dependency",
+          "occurrences": 1
+        },
+        {
+          "before": "The frozen receipt and current checkpoint bind the deliverable and evidence.",
+          "after": "Frozen author operational record: the receipt and author checkpoint bind the original deliverable and evidence.",
+          "category": "historical_status",
+          "reason": "Label original worker handoff and write scope as history",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and review record\n\nThe complete frozen author source is `WEIGHTED_CURRENT_CLOSURE_PROBE.md`, SHA-256\n`561cc0109580b74c42b19af27ab35801deea61a9c304dc2f43da772e042448f7`. Its separate review is `WEIGHTED_CURRENT_CLOSURE_REVIEW.md`, SHA-256\n`5796e74e9ad160de9d240d50a67b00a83dab51af25596f0c3d1f1bfcc1b3cc95`, with receipt SHA-256 `8afb751ac3fac724d43fa5078ce37a6818e864053966ebc63be409ba3cc6fbb4`.\nThe [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserves the complete own\nauthor/reviewer sources, earlier versions, failures, stdout/stderr, execution\nreceipts, root source-coverage records and their byte identities. The\n[exact transformation map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/PUBLICATION_EDITS.json) and\n[reconstruction program](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/reconstruct.py) recover every byte of\nthis complete note and its entire primary. No mathematical correction is made.\nHistorical review-pending and worker-scope statements above describe the author\nfreeze; this separate appendix records the completed source review.\n\n**Author/checker pairing:** Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.\n\nThe complete W1-W28 source review requires no mathematical correction.\nIt checks the negative first translation moment, the retained conservation\nresidue, the complete finite-site equivalence and the optional common-local-\ndomain operator corollary under its separately supplied actual actions. The\nCurrent I1-I13 algebra and Joint J15-J20 orbit theorem are the direct proof\nuses. Newer boost-flow or gap-filter theorems are not premises. A zero local\nderivation is not a zero density, and primitive/representative ambiguity is\nhandled at the original stated scope.\n\nThe complete sparse author helper is the canonical primary: 73 finite\npredicates and five copied-source mutations, with 26, 2, 1, 1 and 1 failures.\nPassing mutant rows remain visible: current rescaling can conserve, shared\nwrong moments can cancel, and zero-action probes may not detect a sign.\nThe separate author occupation-matrix helper and all 33 final predicates remain\nbound evidence, including all eight added sign/beta diagnostics and the 25-row\nearlier version. The H=2Z, B=Y, P=4X, beta=-4 fixture does not conserve energy\ncurrent and is not a physical lattice model. The guarded integer maximum\n33,792 is below 2^60; seven open sites give finite padding, not an infinite\nsystem, and the global boundary commutator remains nonzero.\n\nThe original sparse run failed its handwritten expected-current sign, with\n72 passing predicates and one failed predicate. Its computed current/r/t\nwere unchanged by the expected-sign correction. All original source, output\nand receipts remain. The first receipt mislabeled an after-execution clock\nas started_utc; its separate correction note does not invent a missing start.\nThe separate reviewer reconstructed the proof and used an eleven-site exact\nCAR route plus complete qutrit matrix units. Its 205 finite predicates,\ndifferent beta witness and eight byte-exact author replays are preserved.\nRoot's lossless read grouped 187 zero-residual rows by full labels and read\n18 other records; that compression is a read aid, not new scientific evidence.\n\nThe fixed XX density fails weighted beta-energy closure for every real beta\nat that density. This does not quantify over density improvements, other\ninteractions or all models. No integrated Lorentz group, physical self-adjoint\nrealization, current conservation in the intended model, particle theorem or\nnew physical axiom follows. All hypotheses retain their supplied status.\n\nThe [canonical finite primary](../scripts/weighted_current_closure_2026_10_12.py) retains every\noriginal calculation and failure gate. Publication adds only mapped input and\ntimeout declarations, an assertion guard and finite-scope output. Original\nadjacent-result writes are suppressed where present; the complete original\nJSON outputs remain in the evidence map. Required output destinations in the\nBoost and Integrated CLIs become optional for ordinary canonical execution.\nWhere present, self-hash calculations remain and refer to the source actually run.\n\nPreparation ran no primary, mutant, independent control, runner-cache API,\nvocabulary fixer, graph builder or audit compatibility check. Actual canonical\nexecution and complete original mutation replay are root's subsequent work,\nrecorded in [delivery checks](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/DELIVERY_CHECKS.md). Historical\nsource-bound results are not fresh canonical results. No retained promotion,\napplied audit verdict, Lean certificate, helper-registry change or completed\npublication is asserted here. Combined candidate validation and strict audit\nlint remain separate landing gates.\n\nThis is a frozen milestone record. Root owns the sole live campaign checkpoint\nand its current science-checkout pointer. Editable prompt files changed: none.\n",
+      "appended_text_role": "Separate publication evidence appendix",
+      "publication_path": "docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "4a733de51af509dbf57205e4bb1418f8aed32f4ea7819931e46e902f3428e91e",
+      "publication_bytes": 35097,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_current_closure/controls/weighted_controls.py",
+      "source_sha256": "70631778de94fac7cdc4fbe5929955eec45fc9f580ff07fc92c43858a626ac80",
+      "preserved_source": "evidence/weighted_current_closure/controls/weighted_controls.py.gz",
+      "edits": [
+        {
+          "before": "from fractions import Fraction as F\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nfrom fractions import Fraction as F\n",
+          "category": "runner_declarations",
+          "reason": "Declare bound note/dependency/evidence-map inputs, timeout and assertion guard after the docstring and every future import",
+          "occurrences": 1
+        },
+        {
+          "before": "    Path(__file__).with_name('weighted_results.json').write_text(json.dumps(output,indent=2,sort_keys=True)+'\\n')",
+          "after": "    # Publication suppresses the adjacent-result write only; the complete result and source self-hash remain computed.",
+          "category": "suppress_output_side_effect",
+          "reason": "Suppress only adjacent JSON output; preserve all sparse calculations, predicates, metadata calculations and stdout",
+          "occurrences": 1
+        },
+        {
+          "before": "    return int(bool(output['summary']['failed']))",
+          "after": "    print('per_element: exact sparse coefficient moments, residuals and weighted Jacobi fixtures are checked against the original gates.')\n    print('per_site: complete finite Pauli site tests and padding controls are checked; no intended-model conservation is asserted.')\n    print('per_mode: checked and not executed — no physical particle spectrum, beta determination or continuum mode is inferred.')\n    print('per_block: finite XX and nonconserving fixtures retain all original defect and insensitive rows.')\n    print('lattice_wide: checked and not executed — local algebraic closure and the optional supplied-operator corollary require the analytic hypotheses.')\n    print('SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.')\n    return int(bool(output['summary']['failed']))",
+          "category": "scoped_output",
+          "reason": "Append finite-scope output after the original total; keep the exact failure return",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "",
+      "appended_text_role": "No suffix outside the original driver",
+      "publication_path": "scripts/weighted_current_closure_2026_10_12.py",
+      "publication_sha256": "8b34fb4bf1a0b373403ecf06eca7d1f01b032f40f6b8573ca2c0d3b6de8c60fd",
+      "publication_bytes": 12756,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTEGRATED_BOOST_COVARIANCE_PROBE.md",
+      "source_sha256": "71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed",
+      "preserved_source": "evidence/INTEGRATED_BOOST_COVARIANCE_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: \"One boost direction: exact local Lie identities integrate for the reviewed actual finite-range and weighted flows\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The finite-range density, same-state identities and remaining exact local Lie identities are supplied; no additional analytic-vector, core or strong-commutation premise is used.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "after": "---\nclaim_id: \"integrated_boost_covariance_bounded_theorem_note_2026-10-12\"\nclaim_type: \"bounded_theorem\"\nclaim_scope: \"For one boost direction, supplied finite-range energy density, beta>0, same-state local invariance and the two remaining exact local Lie identities integrate to full norm-flow and canonical GNS covariance, maximal spectral-sum domains and joint spectral preimage covariance. Optional positive energy gives the forward cone. No nontrivial microscopic realization, fixed mass, geometric momentum, rotations or higher-dimensional Poincare conclusion is supplied.\"\nupstream_dependencies:\n  - microscopic_boost_flow_bounded_theorem_note_2026-10-12\n  - microscopic_joint_flow_bounded_theorem_note_2026-10-12\nrunner: \"scripts/integrated_boost_covariance_2026_10_12.py\"\nactual_current_surface_status: \"conditional-support\"\ntarget_claim_type: \"bounded_theorem\"\ntrace_class: \"direct_blocker_closure\"\ntarget_claim_id: null\ntarget_blocker_text: \"Conditional one-direction integration of actual rapid almost-local flows under the remaining exact local Lie identities; physical input realization is outside this target.\"\nsource_of_blocker_text: \"handoff\"\nreachability_to_target: \"closes\"\nartifact_role: \"theorem\"\nnext_trace_action: \"Supply a nontrivial intended density/state satisfying the two remaining exact local Lie identities, then separately check any positivity or broader covariance claim.\"\nconditional_surface_status: \"Conditional one-direction integration from actual rapid almost-local flows and exact local Lie identities\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"The density, same-state local identities, two remaining exact Lie identities and optional positive energy remain supplied; no nontrivial joint physical example is constructed.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n",
+          "category": "claim_metadata",
+          "reason": "Complete bounded claim/status/dependency/trace metadata; no proof edit",
+          "occurrences": 1
+        },
+        {
+          "before": "**Author conditional theorem, 2026-10-12. Independent review pending.**",
+          "after": "**Conditional bounded theorem, 2026-10-12; complete separate source review requires no mathematical correction.**",
+          "category": "review_status",
+          "reason": "Record completed conditional integration review without changing the supplied premise boundary",
+          "occurrences": 1
+        },
+        {
+          "before": "Write S for this note's directory. Source snapshots, checks and recovery\nevidence are in `S/integrated_boost_covariance/`.",
+          "after": "S denotes the original research collection. The [frozen milestone handoff](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/HANDOFF.md) and [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserve the original source bundles and complete own evidence. The direct in-branch proof dependencies are [Boost](MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md): B1-B37 actual all-time flows, rapid almost-local seminorm bounds, finite derivation losses, C1 flow orbits and canonical same-state GNS implementation; remaining local Lie identities are supplied here.; [Joint](MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md): J9-J10 bounded Fourier/Gaussian spectral approximation supports the step from commuting canonical unitaries to commuting spectral measures. The separate mixed-history J1-J3 route is optional and is not applied to the weighted boost. Other named sources are historical context or transitive dependencies unless their use is stated explicitly.",
+          "category": "portable_provenance",
+          "reason": "Portable full evidence and exact Boost/J9-J10 proof dependencies; distinguish optional mixed-history comparison",
+          "occurrences": 1
+        },
+        {
+          "before": "The current recovery state is `CHECKPOINT.md`; final input/output bindings\nare in `receipt.json`.",
+          "after": "At the author freeze, its recovery state was `CHECKPOINT.md` and its final input/output bindings were in `receipt.json`; current campaign recovery remains root-owned.",
+          "category": "historical_status",
+          "reason": "Preserve original author recovery state as historical metadata",
+          "occurrences": 1
+        },
+        {
+          "before": "A fresh independent source review must examine the complete final note,\nmatched upstream hypotheses, and controls before substantial downstream\nreuse.",
+          "after": "At the author freeze, a fresh independent source review was required for the complete final note, matched upstream hypotheses and controls before substantial downstream reuse; that review is now complete and recorded below.",
+          "category": "historical_status",
+          "reason": "Record completion of the original source-review handoff, preserving the original proof",
+          "occurrences": 1
+        },
+        {
+          "before": "No Lean formalization, repository\npipeline, commit, PR, merge, push or audit action has been performed by this\nworker.",
+          "after": "Frozen author operational record: no Lean formalization, repository pipeline, commit, PR, merge, push or audit action was performed by this worker.",
+          "category": "historical_status",
+          "reason": "Label the original worker execution/publication scope",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and review record\n\nThe complete frozen author source is `INTEGRATED_BOOST_COVARIANCE_PROBE.md`, SHA-256\n`71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed`. Its separate review is `INTEGRATED_BOOST_COVARIANCE_REVIEW.md`, SHA-256\n`273ea8db025c5c469864867d55ea0afe7adb05987c2eaef15b8c06825d0738f1`, with receipt SHA-256 `8a0988c3db50a91d937b8af78e3792df951392fd50866d65664f4889a7ab0ca6`.\nThe [evidence map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json) preserves the complete own\nauthor/reviewer sources, earlier versions, failures, stdout/stderr, execution\nreceipts, root source-coverage records and their byte identities. The\n[exact transformation map](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/PUBLICATION_EDITS.json) and\n[reconstruction program](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/reconstruct.py) recover every byte of\nthis complete note and its entire primary. No mathematical correction is made.\nHistorical review-pending and worker-scope statements above describe the author\nfreeze; this separate appendix records the completed source review.\n\n**Author/checker pairing:** Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.\n\nThe complete C1-C28 source review requires no mathematical correction.\nActual rapid almost-local flows, finite seminorm losses and the moving-vector\nproduct rule integrate the two remaining supplied local Lie identities. The\ncomparison group exists before classical-solution uniqueness is applied.\nCanonical cyclic equality then gives complete Stone generators on maximal\njoint-spectral sum domains, the inverse spectral-set image and the optional\npositive-energy cone. No common core, analytic-vector or preexisting strong-\ncommutation premise is inserted. This closes the specified conditional\none-direction integration obligation, not physical realization of its inputs.\n\nBoost B1-B37 is a direct dependency. Joint J9-J10 also directly supplies the\nbounded Fourier/Gaussian spectral approximation used after commuting canonical\nunitaries are established. The separate Joint J1-J3 mixed-history route is an\noptional comparison and is not applied to the spatially weighted boost.\nGap-filter and weighted-closure results are not premises here. The uniqueness\nargument is supplied in the note; its Engel-Nagel page is corroborating context\nand remains externally inventoried without a new paper-reading claim.\n\nThe whole author helper has 71 recorded predicates. Its five original active\nCLI branches fail 39, 13, 3, 3 and 50 predicates. The reviewer separately kept\nthe baseline byte-identical and materialized all six operative branch choices\nfor each mutant into complete helpers, preserving every comparator and gate.\nAll six review replays reproduce their original final stdout and result JSON\nbytes. Both the original CLI representation and every reviewer source/diff,\nstream, receipt and result are preserved. Reverse boosts still pass group-law\nand mass-invariant checks; zero-rapidity energy is even; generator mixing does\nnot test the spatial divisor; selected projections may miss an energy phase.\nDifferential coefficient checks do not prove self-adjointness or full domains.\n\nThe author's initial domain helper assigned the expected partial norm directly.\nIts corrected explicit sum, original helper and all six initial/final runs are\nretained; the proof did not change. The separate reviewer froze its reconstruction\nand planar Schwartz/Gaussian control before author helper/output exposure, while\nthe target's formulas and reported results were already visible. Its 38 exact\npredicates and five whole-source mutants (2, 4, 1, 9 and 12 failed predicates)\ntest moving inputs, set images, intersection-domain restriction, beta and boost\ndirection. The cancellation-strip and distinct self-adjoint-extension witnesses\nretain their exact scopes. Integrity controls reject altered or missing source;\nthat is provenance evidence, not a mathematical certificate. Root's earlier\ntext-spacing matcher failure and AST-only verifier repair remain preserved.\n\nThe theorem constructs conditional connected 1+1 translation/boost covariance\nin the declared clocks. The intended density, invariant state, beta>0 and two\nremaining local identities are supplied, with positive H optional. It supplies\nno nontrivial common microscopic example, fixed mass, isolated shell, geometric\nmomentum identification, rotations, additional boosts, higher-dimensional\nPoincare theorem, particles or scattering/exhaustion conclusion.\n\nThe [canonical finite primary](../scripts/integrated_boost_covariance_2026_10_12.py) retains every\noriginal calculation and failure gate. Publication adds only mapped input and\ntimeout declarations, an assertion guard and finite-scope output. Original\nadjacent-result writes are suppressed where present; the complete original\nJSON outputs remain in the evidence map. Required output destinations in the\nBoost and Integrated CLIs become optional for ordinary canonical execution.\nWhere present, self-hash calculations remain and refer to the source actually run.\n\nPreparation ran no primary, mutant, independent control, runner-cache API,\nvocabulary fixer, graph builder or audit compatibility check. Actual canonical\nexecution and complete original mutation replay are root's subsequent work,\nrecorded in [delivery checks](../.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/DELIVERY_CHECKS.md). Historical\nsource-bound results are not fresh canonical results. No retained promotion,\napplied audit verdict, Lean certificate, helper-registry change or completed\npublication is asserted here. Combined candidate validation and strict audit\nlint remain separate landing gates.\n\nThis is a frozen milestone record. Root owns the sole live campaign checkpoint\nand its current science-checkout pointer. Editable prompt files changed: none.\n",
+      "appended_text_role": "Separate publication evidence appendix",
+      "publication_path": "docs/INTEGRATED_BOOST_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "c791d1d7871442253f066348311e81c0b9b8c539cbb7c1c405630d960df639ee",
+      "publication_bytes": 36761,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/integrated_boost_covariance/controls.py",
+      "source_sha256": "0399863b0637f8984371eb8f2725f6ce1e1e1f7ce8bc1b42dcf829c8ce41bb3c",
+      "preserved_source": "evidence/integrated_boost_covariance/controls.py.gz",
+      "edits": [
+        {
+          "before": "import argparse\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/INTEGRATED_BOOST_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nimport argparse\n",
+          "category": "runner_declarations",
+          "reason": "Declare bound note/dependency/evidence-map inputs, timeout and assertion guard after the docstring and every future import",
+          "occurrences": 1
+        },
+        {
+          "before": "ap.add_argument('--output', required=True)",
+          "after": "ap.add_argument('--output', default=None)",
+          "category": "canonical_cli",
+          "reason": "Make the unused output destination optional for canonical no-argument execution",
+          "occurrences": 1
+        },
+        {
+          "before": "    Path(args.output).write_text(json.dumps(result,indent=2)+'\\n')",
+          "after": "    # Publication suppresses the named-result write only; the complete result and all active mutation branches remain computed.",
+          "category": "suppress_output_side_effect",
+          "reason": "Suppress only JSON output; preserve every original predicate, result, threshold and active CLI branch",
+          "occurrences": 1
+        },
+        {
+          "before": "    return int(failed!=0)",
+          "after": "    print('per_element: rational spectral mixing and actual multiplier/shift compositions are checked with the original sign and beta gates.')\n    print('per_site: checked and not executed — these abstract representation diagnostics do not construct a finite-range spin density or state.')\n    print('per_mode: finite abstract spectral fixtures and a written domain witness are checked; no physical particle or fixed mass is inferred.')\n    print('per_block: actual unitary, clock and projection fixtures retain every original insensitive row and active CLI variant.')\n    print('lattice_wide: checked and not executed — full integration and maximal domains use the conditional rapid almost-local analytic proof.')\n    print('SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.')\n    return int(failed!=0)",
+          "category": "scoped_output",
+          "reason": "Append finite-scope output after the original total and preserve the exact failure return",
+          "occurrences": 1
+        }
+      ],
+      "appended_text": "",
+      "appended_text_role": "No suffix outside the original driver",
+      "publication_path": "scripts/integrated_boost_covariance_2026_10_12.py",
+      "publication_sha256": "8dbdc64249c46a3ffb286ff443c7c1c738845dbc09f6d1eda9c5a0112c710b26",
+      "publication_bytes": 8543,
+      "mathematical_changes": [],
+      "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review."
+    }
+  ],
+  "execution_status": "Prepared by literal source mapping and compile-only syntax checks; no helper or preparation script executed",
+  "base_revision": "3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe",
+  "target_worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree"
+}

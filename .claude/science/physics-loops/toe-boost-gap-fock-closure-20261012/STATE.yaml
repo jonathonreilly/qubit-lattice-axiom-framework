@@ -1,0 +1,25 @@
+loop: toe-boost-gap-fock-closure-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: "3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe"
+science_worktree: "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree"
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+conditional_surface_status: "Five separate implications under their explicit supplied hypotheses"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Analytic implications do not construct their physical inputs or a joint microscopic realization"
+trace_class: upstream_support
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+source_review: five_source_bound_reviews_no_required_mathematical_correction
+author_checker_pairing: same_selected_model_family_separate_contexts_not_blinded
+root_role: coauthor_supervisor_not_independent_reviewer
+canonical_execution: not_run_by_preparation
+pr_status: preparation_only_no_publication_action
+next_exact_action: "Root reads all ten transformed files and runs the exact canonical and whole-source verification before final delivery"
+strongest_open_obligation: "Actual finite-range density, exact conservation/closure, simple gapped invariant state and nonzero regular seed targets in the intended microscopic realization"
+live_checkpoint: root_owned_campaign_checkpoint_with_current_science_checkout_pointer
+deadline_utc: "2026-10-12 16:00:52 UTC"
+stop_condition: "The campaign deadline is fixed and is not extended by packaging"

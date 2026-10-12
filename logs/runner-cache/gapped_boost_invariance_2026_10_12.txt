@@ -1,0 +1,124 @@
+===== runner cache v1 =====
+runner: scripts/gapped_boost_invariance_2026_10_12.py
+runner_sha256: 0c20fc35206d2dcd9e906ecc000e7f24abbaef3c930750c59aa5e564138fd625
+input_fingerprint_sha256: 855a4c91397b6721b1f72fe9c27bf5eacffd5bbd3abb3d521752ee8603081794
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+{"name": "qubit_simple_oriented_pair_current", "ok": true, "residual": "0"}
+{"name": "qubit_simple_energy_00", "ok": true, "residual": "0"}
+{"name": "qubit_simple_boost_00", "ok": true, "residual": "0"}
+{"name": "qubit_simple_current_00", "ok": true, "residual": "0"}
+{"name": "qubit_simple_conservation_00", "ok": true, "residual": "0"}
+{"name": "qubit_simple_energy_01", "ok": true, "residual": "0"}
+{"name": "qubit_simple_boost_01", "ok": true, "residual": "0"}
+{"name": "qubit_simple_current_01", "ok": true, "residual": "0"}
+{"name": "qubit_simple_conservation_01", "ok": true, "residual": "0"}
+{"name": "qubit_simple_energy_10", "ok": true, "residual": "0"}
+{"name": "qubit_simple_boost_10", "ok": true, "residual": "0"}
+{"name": "qubit_simple_current_10", "ok": true, "residual": "0"}
+{"name": "qubit_simple_conservation_10", "ok": true, "residual": "0"}
+{"name": "qubit_simple_energy_11", "ok": true, "residual": "0"}
+{"name": "qubit_simple_boost_11", "ok": true, "residual": "0"}
+{"name": "qubit_simple_current_11", "ok": true, "residual": "0"}
+{"name": "qubit_simple_conservation_11", "ok": true, "residual": "0"}
+{"name": "qubit_simple_boost_expectation", "ok": true, "residual": "0"}
+{"name": "qubit_simple_positive_onsite_spectrum", "ok": true, "positive_gap": "1", "zero_multiplicity": "1"}
+{"name": "qubit_current_density", "ok": true, "residual": "0"}
+{"name": "qubit_conservation_density", "ok": true, "residual": "0"}
+{"name": "qubit_conservation_failure_expectation", "ok": true, "residual": "0"}
+{"name": "qubit_kernel_simple_in_finite_onsite_control", "ok": true}
+{"name": "qutrit_degenerate_oriented_pair_current", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_00", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_00", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_00", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_00", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_01", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_01", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_01", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_01", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_02", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_02", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_02", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_02", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_10", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_10", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_10", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_10", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_11", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_11", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_11", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_11", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_12", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_12", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_12", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_12", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_20", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_20", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_20", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_20", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_21", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_21", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_21", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_21", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_energy_22", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_22", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_current_22", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_conservation_22", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_boost_expectation", "ok": true, "residual": "0"}
+{"name": "qutrit_degenerate_positive_onsite_spectrum", "ok": true, "positive_gap": "1", "zero_multiplicity": "8"}
+{"name": "qutrit_current_is_zero", "ok": true, "residual": "0"}
+{"name": "qutrit_conservation_is_zero", "ok": true, "residual": "0"}
+{"name": "qutrit_kernel_degenerate_in_finite_onsite_control", "ok": true, "zero_multiplicity": "8"}
+{"name": "filtered_operator_matches_actual_spectral_formula", "ok": true, "residual": "0"}
+{"name": "simple_filter_column", "ok": true, "residual": "0"}
+{"name": "simple_filter_adjoint_column", "ok": true, "residual": "0"}
+{"name": "simple_filter_is_not_global_scalar", "ok": true, "scalar_defect": "10"}
+{"name": "filtered_commutator_expectation_00", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_01", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_02", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_10", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_11", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_12", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_20", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_21", "ok": true, "residual": "0"}
+{"name": "filtered_commutator_expectation_22", "ok": true, "residual": "0"}
+{"name": "degenerate_actual_zero_projection_column", "ok": true, "residual": "0"}
+{"column_l1": "1", "name": "degenerate_filter_column_not_scalar", "ok": true, "vacuum_expectation": "0"}
+{"name": "degenerate_filtered_boost_expectation", "ok": true, "residual": "0"}
+{"name": "one_sided_scalar_column", "ok": true, "residual": "0"}
+{"name": "one_sided_adjoint_column_nonzero", "ok": true}
+{"name": "one_sided_commutator_does_not_vanish", "ok": true, "residual": "0"}
+{"actual": "2", "bound": "2", "name": "lr_chain_weight_bound_1", "ok": true}
+{"actual_max_distance": "1", "bound": "1", "name": "lr_chain_distance_1", "ok": true}
+{"name": "lr_chain_distance_sharp_control_1", "ok": true, "rejected_missing_step_bound": "0"}
+{"actual": "6", "bound": "8", "name": "lr_chain_weight_bound_2", "ok": true}
+{"actual_max_distance": "2", "bound": "2", "name": "lr_chain_distance_2", "ok": true}
+{"name": "lr_chain_distance_sharp_control_2", "ok": true, "rejected_missing_step_bound": "1"}
+{"actual": "18", "bound": "32", "name": "lr_chain_weight_bound_3", "ok": true}
+{"actual_max_distance": "3", "bound": "3", "name": "lr_chain_distance_3", "ok": true}
+{"name": "lr_chain_distance_sharp_control_3", "ok": true, "rejected_missing_step_bound": "2"}
+{"actual": "54", "bound": "128", "name": "lr_chain_weight_bound_4", "ok": true}
+{"actual_max_distance": "4", "bound": "4", "name": "lr_chain_distance_4", "ok": true}
+{"name": "lr_chain_distance_sharp_control_4", "ok": true, "rejected_missing_step_bound": "3"}
+{"actual": "162", "bound": "512", "name": "lr_chain_weight_bound_5", "ok": true}
+{"actual_max_distance": "5", "bound": "5", "name": "lr_chain_distance_5", "ok": true}
+{"name": "lr_chain_distance_sharp_control_5", "ok": true, "rejected_missing_step_bound": "4"}
+{"actual": "486", "bound": "2048", "name": "lr_chain_weight_bound_6", "ok": true}
+{"actual_max_distance": "6", "bound": "6", "name": "lr_chain_distance_6", "ok": true}
+{"name": "lr_chain_distance_sharp_control_6", "ok": true, "rejected_missing_step_bound": "5"}
+{"actual": "1458", "bound": "8192", "name": "lr_chain_weight_bound_7", "ok": true}
+{"actual_max_distance": "7", "bound": "7", "name": "lr_chain_distance_7", "ok": true}
+{"name": "lr_chain_distance_sharp_control_7", "ok": true, "rejected_missing_step_bound": "6"}
+TOTAL: PASS=105 FAIL=0
+per_element: exact current, filter and vacuum-column finite fixtures are checked; the infinite argument is in the note.
+per_site: finite matrix-unit and support recursion fixtures are checked; intended-model conservation remains supplied.
+per_mode: finite gap/filter fixtures are checked; they do not construct an actual infinite GNS spectrum.
+per_block: simple and degenerate vacuum fixtures retain both passing and failing scalar-column controls.
+lattice_wide: checked and not executed — rapid almost-local graph bounds and state identities rely on the conditional analytic proof.
+SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.
+
+----- stderr -----
+

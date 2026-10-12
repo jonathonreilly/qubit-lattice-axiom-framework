@@ -1,0 +1,427 @@
+{
+  "archive_format": "gzip mtime=0; content-deduplicated by uncompressed SHA256",
+  "objects": [
+    {
+      "bytes": 21320,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_CORRELATION_SYNTHESIS_REVIEW.md",
+          "role": "Complete exact-source synthesis review with recovered completion receipt; no material finding or required repair; not wrapper review."
+        }
+      ],
+      "path": "objects/009043c543e809e4a19483bdc3d2932e61ff92170f1f76428cf8e851e3c48e57.gz",
+      "sha256": "009043c543e809e4a19483bdc3d2932e61ff92170f1f76428cf8e851e3c48e57",
+      "stored_sha256": "1b0fdab540308950c60d9a906f71089be7baf048346bf87ed98a62c24716210e"
+    },
+    {
+      "bytes": 7367,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_correlation/DERIVATION_CHECKPOINT.md",
+          "role": "partial author recovery, not independent completion; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/DERIVATION_CHECKPOINT.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/0797320a95c5f0757e85b8f9b8c41a6bfbab4a758d4215ae037a1888d14f7284.gz",
+      "sha256": "0797320a95c5f0757e85b8f9b8c41a6bfbab4a758d4215ae037a1888d14f7284",
+      "stored_sha256": "128d55cbbad49affc0066c68dc93912a4585162dd54e60207783ce2199648db7"
+    },
+    {
+      "bytes": 47990,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/CONCRETE_GAPPED_CHAIN_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/CONCRETE_GAPPED_CHAIN_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/sources/CONCRETE_GAPPED_CHAIN_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        }
+      ],
+      "path": "objects/0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd.gz",
+      "sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "stored_sha256": "bf0aee512f04e3a908f7c9daf07348b20667d35c2493d98cc87c61598fe7a2c6"
+    },
+    {
+      "bytes": 18180,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_NORMAL_LIMIT_CROSSCHECK.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/LOW_ENERGY_NORMAL_LIMIT_CROSSCHECK.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/0b6f580c6feacdfc0723dbe8922a7721af8d02efcac06220e3649f83e48ffa41.gz",
+      "sha256": "0b6f580c6feacdfc0723dbe8922a7721af8d02efcac06220e3649f83e48ffa41",
+      "stored_sha256": "37efe89bf069d1160cf946df2fc34b8591bf5a640ea97674bc70efccef9ef3d0"
+    },
+    {
+      "bytes": 28290,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/CURRENT_PRESERVING_REFINEMENT_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/CURRENT_PRESERVING_REFINEMENT_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/sources/CURRENT_PRESERVING_REFINEMENT_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        }
+      ],
+      "path": "objects/1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d.gz",
+      "sha256": "1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d",
+      "stored_sha256": "99b3680d57e086a3b3798871dd1b002ab3855d8b61b5a24c521459211e85b907"
+    },
+    {
+      "bytes": 21892,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_NORMAL_LIMIT_INDEPENDENT.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/LOW_ENERGY_NORMAL_LIMIT_INDEPENDENT.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/2274b6e0a045a27d54f2888ce6f7482e466af956a76dbd33a48a630ca258ccf0.gz",
+      "sha256": "2274b6e0a045a27d54f2888ce6f7482e466af956a76dbd33a48a630ca258ccf0",
+      "stored_sha256": "e3b12a6147af5fd6792b31ed531f471bcaeee18695d57fab6cdfcf11b03c18e9"
+    },
+    {
+      "bytes": 3652,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_PHASE_RATE_ROOT_PROBE.md",
+          "role": "Phase proof, complete source preserved; source-exposed review follows."
+        }
+      ],
+      "path": "objects/255d378681114973fb0c2bed0ddcfbcab668a256ff091f801f3d800989250042.gz",
+      "sha256": "255d378681114973fb0c2bed0ddcfbcab668a256ff091f801f3d800989250042",
+      "stored_sha256": "1e5da764c1bb8f58e3d2f3f5ca65352ac75283970ab362990e43fb4d379b547d"
+    },
+    {
+      "bytes": 1323,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/INITIAL_INPUT_MANIFEST.json",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/3992a20d24b6ec932ff110d498fee482fb4f9b172dfd15b0c348e6a4f2245cd3.gz",
+      "sha256": "3992a20d24b6ec932ff110d498fee482fb4f9b172dfd15b0c348e6a4f2245cd3",
+      "stored_sha256": "a8d1f9962453ce6f81d1848b5d15ea913b9d8d61e349b11dd274c93fb1540c3f"
+    },
+    {
+      "bytes": 3539,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/EXPOSURE_AND_CHANGES.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/39e801fe02e14a70ef8e729a834eb0508fefa526b1de26ea88ce79b70c92cf5b.gz",
+      "sha256": "39e801fe02e14a70ef8e729a834eb0508fefa526b1de26ea88ce79b70c92cf5b",
+      "stored_sha256": "fb39928b7f4813e0da42327ad11f062b820a5a324bd853e45c13598886eb1178"
+    },
+    {
+      "bytes": 7033,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_NORMAL_LIMIT_ROOT_PROBE.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/LOW_ENERGY_NORMAL_LIMIT_ROOT_PROBE.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/3c30599a04ee55ed51b3f1d6514b67e3015ab8a2e74d6ce464912944cd65fd73.gz",
+      "sha256": "3c30599a04ee55ed51b3f1d6514b67e3015ab8a2e74d6ce464912944cd65fd73",
+      "stored_sha256": "52764208000a45d7ddb972251ac6bdc889720db6bdb9526426ca27dc10ae7242"
+    },
+    {
+      "bytes": 25182,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_INDEPENDENT.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/ENERGY_TRANSFER_INDEPENDENT.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/43e18b4aea04768989d2e8a7cf31276653ca471a2af6259f4e47a044a532f80b.gz",
+      "sha256": "43e18b4aea04768989d2e8a7cf31276653ca471a2af6259f4e47a044a532f80b",
+      "stored_sha256": "a91a30cdecefe6492e52329331ca5913548f5a6c7b197513837e471f3475d4a8"
+    },
+    {
+      "bytes": 978,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/FINAL_SEAL.json",
+          "role": "Original synthesis seal; chronology, not final assembly acceptance."
+        }
+      ],
+      "path": "objects/43f9e668cbe6b0487f78658b509dcd3bab4fe2ef8c1a2dbf21e9675a3ac08dcd.gz",
+      "sha256": "43f9e668cbe6b0487f78658b509dcd3bab4fe2ef8c1a2dbf21e9675a3ac08dcd",
+      "stored_sha256": "d6164248fe6f8ea9bd51d10a64632704f31386ac09b8a6c796a893374237638c"
+    },
+    {
+      "bytes": 583,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/SOURCE_STRUCTURE_CHECK.json",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/4e884446d31b9849bd81e55fa88b6a2bd6291ee86789c89f10a305b363dc221d.gz",
+      "sha256": "4e884446d31b9849bd81e55fa88b6a2bd6291ee86789c89f10a305b363dc221d",
+      "stored_sha256": "d96d14d84220420fb94635ebf8ecbc3052c155fb8fa6764f12b92fbd160d7ee1"
+    },
+    {
+      "bytes": 296,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/BOOKKEEPING_RESULT.json",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/62792c4e3575d89b0c43b2307ff34c9294baf1e7f83f335f637f7330ca73c72d.gz",
+      "sha256": "62792c4e3575d89b0c43b2307ff34c9294baf1e7f83f335f637f7330ca73c72d",
+      "stored_sha256": "1e258afd014ad5d2350dad8736e3bd3c1e2b1b5d7fea96be0eafbabed0ec86a0"
+    },
+    {
+      "bytes": 12836,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINITE_ENERGY_SECTOR_SELECTION_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/FINAL_SOURCE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        }
+      ],
+      "path": "objects/648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c.gz",
+      "sha256": "648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c",
+      "stored_sha256": "e33601476b3fe20449cd4e33827e6544ff4e39e5aa016e30c460dc83d6582894"
+    },
+    {
+      "bytes": 32508,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/LOCAL_EVEN_CONTINUUM_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/LOCAL_EVEN_CONTINUUM_PROBE.md",
+          "role": "Historical source lineage only; no live sibling-PR dependency."
+        }
+      ],
+      "path": "objects/7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b.gz",
+      "sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "stored_sha256": "d867d8c8bec4ba8a4cc43a2185ff8e5cc9d19207a7c800191231ec109a4a6f16"
+    },
+    {
+      "bytes": 5186,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_ADDENDUM_A.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/ENERGY_TRANSFER_ROOT_ADDENDUM_A.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/8d9d3852b98d3fc069e49a23717e9d01a9534384a1057c3e7e09225a075fc0a5.gz",
+      "sha256": "8d9d3852b98d3fc069e49a23717e9d01a9534384a1057c3e7e09225a075fc0a5",
+      "stored_sha256": "d5d83284b0e5ddee02b26fe4d172e597bed99eb84728cd87bb4bdd202f368908"
+    },
+    {
+      "bytes": 1999,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/AUTHOR_REVIEW.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/9b7a7a2dda5ce2f578635d51fa070515df052c0cf26b36d82f2bde39a0215d17.gz",
+      "sha256": "9b7a7a2dda5ce2f578635d51fa070515df052c0cf26b36d82f2bde39a0215d17",
+      "stored_sha256": "cb48621edeeb787a94673a692b506aff6e5c279c0f0bcae477d308302d22d16c"
+    },
+    {
+      "bytes": 29545,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_CORRELATION_PROBE.md",
+          "role": "unsealed recovered draft, not in proof basis; coverage: not read as an argument; bounded rg matches and parent-reported recovery only"
+        }
+      ],
+      "path": "objects/9e97053e6d5b9f22e061d7ca88ab6df9a55c054bc5785f02123f87714c3d0166.gz",
+      "sha256": "9e97053e6d5b9f22e061d7ca88ab6df9a55c054bc5785f02123f87714c3d0166",
+      "stored_sha256": "7b535f14be05ee2882483467f88810bf0c78b36f0c873c50d94b3b24920206a4"
+    },
+    {
+      "bytes": 8590,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_PHASE_RATE_REVIEW.md",
+          "role": "Completed source-exposed ordinary phase review; not an independent derivation or audit."
+        }
+      ],
+      "path": "objects/a78dea4566d2046c3cf1da57e2cff5e111d46e14bbed00edd01453e50935e610.gz",
+      "sha256": "a78dea4566d2046c3cf1da57e2cff5e111d46e14bbed00edd01453e50935e610",
+      "stored_sha256": "c9fabdd6b9d688de5ba44a8b7928d33131eb86a742d0953743aa61b6435a5ce2"
+    },
+    {
+      "bytes": 1907,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/RECOVERY.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/ba2bb16f901d6a30f283bb6ce52b63aac1a96f66fd8ba15d4ec9c7b2485d2941.gz",
+      "sha256": "ba2bb16f901d6a30f283bb6ce52b63aac1a96f66fd8ba15d4ec9c7b2485d2941",
+      "stored_sha256": "ab5bc3785e5884bbd05dcd570ddfb08e9544d238a6719117c36a0ac20611b247"
+    },
+    {
+      "bytes": 711,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/BOOKKEEPING_FAILURE.txt",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/c829beaec0b901af93ee38f95fccd5a690c4092b08d5cb75ff04d57c60c0fbb2.gz",
+      "sha256": "c829beaec0b901af93ee38f95fccd5a690c4092b08d5cb75ff04d57c60c0fbb2",
+      "stored_sha256": "476e526494294e7175b18303a3a96181e6e2f592841265b40a3c3e9413cd8a51"
+    },
+    {
+      "bytes": 47849,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_CORRELATION_SYNTHESIS.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/frozen/ENERGY_TRANSFER_CORRELATION_SYNTHESIS.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/d63214a0d6365e1ae339f63caad67526bdd942130f76b064b13c2b7b2365b49c.gz",
+      "sha256": "d63214a0d6365e1ae339f63caad67526bdd942130f76b064b13c2b7b2365b49c",
+      "stored_sha256": "de946959fb8fe5f53f17f0e6dc2a06dfe257f92f8b02dd0ebeeeca067770a7fb"
+    },
+    {
+      "bytes": 5409,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/FINAL_MANIFEST.json",
+          "role": "Complete frozen synthesis membership manifest."
+        }
+      ],
+      "path": "objects/d723600190361590cf18f934fd5719439b02fd4854adcbc5bc5f9319c87f5390.gz",
+      "sha256": "d723600190361590cf18f934fd5719439b02fd4854adcbc5bc5f9319c87f5390",
+      "stored_sha256": "f21cd1e326528170d1321d8c3720d0e6b090cf02fd855e3bf3bcf248e98cb04e"
+    },
+    {
+      "bytes": 9027,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_RECONSTRUCTION.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/ENERGY_TRANSFER_ROOT_RECONSTRUCTION.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/dc3a429afc045d6bf39564f1ada2c1dddfab056ce3c2ba5ad34f1f13a095d75a.gz",
+      "sha256": "dc3a429afc045d6bf39564f1ada2c1dddfab056ce3c2ba5ad34f1f13a095d75a",
+      "stored_sha256": "ef7779355fad018a1f66ca58ace9528d0fc4944cc5b791adc3a4fea7ef906a59"
+    },
+    {
+      "bytes": 16170,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_CROSSCHECK.md",
+          "role": "sealed input; coverage: complete"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/ENERGY_TRANSFER_CROSSCHECK.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/e058ef395ffe717d2813a56e384091673eca0406ad2f5f2f7ecd57b2c5048c95.gz",
+      "sha256": "e058ef395ffe717d2813a56e384091673eca0406ad2f5f2f7ecd57b2c5048c95",
+      "stored_sha256": "0510d5c8643795ddd060f6bf57c84cd84e9a331e7169591c15957d671040afbf"
+    },
+    {
+      "bytes": 29965,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/finite_energy_worktree/docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "Historical attribution only; mathematical arguments required here are included in the synthesis."
+        }
+      ],
+      "path": "objects/e0932643275551a7b67d74cf3d42f5b0cb12bdb690ed24c5967232228b965133.gz",
+      "sha256": "e0932643275551a7b67d74cf3d42f5b0cb12bdb690ed24c5967232228b965133",
+      "stored_sha256": "78b6932d76a19124763eb750d4998305a566d1794c91672855f55e98afc351b1"
+    },
+    {
+      "bytes": 1247,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SYNTHESIS_FINAL_REVIEW_ROOT_ACCEPTANCE.json",
+          "role": "Root full-source/review coverage, two stream failures and recovered completed-artifact acceptance; wrappers pending."
+        }
+      ],
+      "path": "objects/f322d9262724208ce26eea6f181e81eefef73cbbf162fdf3eb1af278ec71895b.gz",
+      "sha256": "f322d9262724208ce26eea6f181e81eefef73cbbf162fdf3eb1af278ec71895b",
+      "stored_sha256": "ab0351af65c19e92c54131b06e4c695f6845b2a73b947d0236f0ec96bea17e36"
+    },
+    {
+      "bytes": 17353,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/inputs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d.gz",
+      "sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d",
+      "stored_sha256": "a0ce997f4179285f2f9d2a5aeb63e0e2305b81124271b86d06f3ddf379c21492"
+    },
+    {
+      "bytes": 16674,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_transfer_synthesis/INPUT_MANIFEST.json",
+          "role": "Frozen synthesis source/evidence; original role and read limits are preserved in its input manifest."
+        }
+      ],
+      "path": "objects/f7d741217e0103e0db389f5cde6c41214819474fd747f40179bbaee411aa8972.gz",
+      "sha256": "f7d741217e0103e0db389f5cde6c41214819474fd747f40179bbaee411aa8972",
+      "stored_sha256": "71f78eeee8944ad780858c13b73965a1fbe9ca48d30189590b5735fd776f1eba"
+    }
+  ],
+  "read_limits": "Original source read coverage and chronology remain as archived; recovered draft is not a completed independent check.",
+  "source_aliases_are_provenance_not_runtime_paths": true
+}

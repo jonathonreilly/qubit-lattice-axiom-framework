@@ -1,6 +1,6 @@
 {
- "edge_count": 15805,
- "node_count": 7023,
+ "edge_count": 15810,
+ "node_count": 7025,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6053,6 +6053,10 @@
   "energy_product_and_test_body_law_above_the_half_filled_sea_conditional_bounded_theorem_note_2026-09-03": {
    "deps_hash": "5f88f42e7358",
    "out_degree": 2
+  },
+  "energy_transfer_correlation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "a6a07e3c4279",
+   "out_degree": 3
   },
   "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {
    "deps_hash": "423f1f549b6b",
@@ -14197,6 +14201,10 @@
   "lorentz_violation_derived_note": {
    "deps_hash": "7c11d8d637c4",
    "out_degree": 1
+  },
+  "low_energy_phase_rate_optimality_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "b79065af3c13",
+   "out_degree": 2
   },
   "lower_height_transverse_crosses_outside_the_modulus_three_kernel_bounded_theorem_note_2026-10-10": {
    "deps_hash": "d211c1597417",

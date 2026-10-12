@@ -4322,3 +4322,9 @@ Referee running (18:43Z).
   - Von Laue is exact, the effective γ equals the field's γ, the geodetic coefficient is 3/2, and frame dragging matches Schiff.
   - The quadrupole is not fixed (price P-Q).
 - **R11-5 (preferred-frame CQ):** VIABLE, conditional on a law with a start time. Lemma C: no stationary version exists. The window is about 5e-7 to 5e-6 m.
+- **R11-6 (assembled three-body box law):** INCONCLUSIVE (worker; no FAIL claimed, so no referee is required).
+  - B, H_S and K_S were assembled as matrices in a stated free-chart prescription.
+  - The algebra and the trimer-mass flatness are exact by conjugation.
+  - The registered subtracted-tail measurement is resolution-limited: the spline aliases beyond r ≈ L/6.
+  - Matrix-free large-r ingredients favour super-polynomial decay (ΔAICc +4 to +31, β ≈ 0.3–0.45) but are not the registered observable.
+  - A dense-grid s_min collapse is traced to an antipodal aliasing artefact.

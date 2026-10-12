@@ -1,0 +1,12 @@
+R11-6 tails: ch=b op=Bdag P=0.40 mu_b=0.51527993 k3c=0.040 sig=0.080 spectator range [-0.418, 0.906] ppo=12.0 hfac=0.030
+r =   20.0  Nq =   60  Nkf =   3050  Nko =   333 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 1.3980e-01   [odd-G_b weight 6.864e-01]  [1 s]
+r =   28.3  Nq =   60  Nkf =   3471  Nko =   363 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 9.5291e-02   [odd-G_b weight 6.998e-01]  [2 s]
+r =   40.0  Nq =   60  Nkf =   4066  Nko =   425 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 3.9783e-02   [odd-G_b weight 7.010e-01]  [3 s]
+r =   56.6  Nq =   60  Nkf =   4908  Nko =   513 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 1.4807e-02   [odd-G_b weight 7.010e-01]  [5 s]
+r =   80.0  Nq =   60  Nkf =   6099  Nko =   637 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 4.3041e-03   [odd-G_b weight 7.010e-01]  [7 s]
+r =  113.1  Nq =   73  Nkf =   7783  Nko =   813 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 2.0564e-03   [odd-G_b weight 7.010e-01]  [9 s]
+r =  160.0  Nq =   95  Nkf =  10164  Nko =  1061 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 6.1794e-04   [odd-G_b weight 7.010e-01]  [11 s]
+r =  226.3  Nq =  127  Nkf =  13531  Nko =  1412 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 1.3352e-04   [odd-G_b weight 7.010e-01]  [17 s]
+r =  320.0  Nq =  171  Nkf =  18294  Nko =  1909 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 1.6631e-05   [odd-G_b weight 7.010e-01]  [28 s]
+r =  452.6  Nq =  235  Nkf =  25029  Nko =  2611 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 1.5686e-06   [odd-G_b weight 7.010e-01]  [59 s]
+r =  640.0  Nq =  324  Nkf =  34554  Nko =  3604 : ||(B^dag-1 on B_a_b) f_r||/||psi|| = 2.8190e-07   [odd-G_b weight 7.010e-01]  [139 s]

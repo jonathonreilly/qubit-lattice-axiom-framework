@@ -1,0 +1,13 @@
+L=320 K=8 P=0.400 N=3136 mu_b=0.51527740 | per-step s_min(A_k): min 0.0000 max 0.9488 | ||B^T B-1||=5.4e-14 | ||B-1||_2=2.000 ||B-B_a||_2=2.000 [88s]
+   trimer: lowest H_S = 0.8361696323 ; invariant mass = 0.7342885360 ; max|spec H_S - sqrt(spec M_BT^2+P^2)| = 4.80e-14
+   dimer r=  3.000  T_B=1.1531e-01  T_H=7.0451e-02 | U_B=||(B-1)psi||=1.7043e-01  U_H=||(H_S-H_BT)psi||=1.8125e-02 | ||(B_a^T B_a-1)psi||=9.3e-04
+   dimer r=  4.243  T_B=1.1736e-01  T_H=7.0748e-02 | U_B=||(B-1)psi||=1.7243e-01  U_H=||(H_S-H_BT)psi||=1.8561e-02 | ||(B_a^T B_a-1)psi||=9.3e-04
+   dimer r=  6.000  T_B=1.2264e-01  T_H=7.1462e-02 | U_B=||(B-1)psi||=1.7659e-01  U_H=||(H_S-H_BT)psi||=1.9512e-02 | ||(B_a^T B_a-1)psi||=9.4e-04
+   dimer r=  8.485  T_B=1.3584e-01  T_H=7.3018e-02 | U_B=||(B-1)psi||=1.8579e-01  U_H=||(H_S-H_BT)psi||=2.1610e-02 | ||(B_a^T B_a-1)psi||=9.6e-04
+   dimer r= 12.000  T_B=1.6280e-01  T_H=7.5139e-02 | U_B=||(B-1)psi||=2.0843e-01  U_H=||(H_S-H_BT)psi||=2.5919e-02 | ||(B_a^T B_a-1)psi||=9.9e-04
+   dimer r= 16.971  T_B=1.9503e-01  T_H=7.2973e-02 | U_B=||(B-1)psi||=2.6707e-01  U_H=||(H_S-H_BT)psi||=3.2523e-02 | ||(B_a^T B_a-1)psi||=1.1e-03
+   dimer r= 24.000  T_B=1.8195e-01  T_H=5.4492e-02 | U_B=||(B-1)psi||=3.9243e-01  U_H=||(H_S-H_BT)psi||=3.5437e-02 | ||(B_a^T B_a-1)psi||=1.2e-03
+   dimer r= 33.941  T_B=8.6703e-02  T_H=2.2680e-02 | U_B=||(B-1)psi||=5.7247e-01  U_H=||(H_S-H_BT)psi||=2.6333e-02 | ||(B_a^T B_a-1)psi||=1.6e-03
+   dimer r= 48.000  T_B=3.6964e-02  T_H=8.4559e-03 | U_B=||(B-1)psi||=7.9581e-01  U_H=||(H_S-H_BT)psi||=2.3107e-02 | ||(B_a^T B_a-1)psi||=3.4e-03
+   dimer r= 67.882  T_B=1.2455e-02  T_H=1.3100e-02 | U_B=||(B-1)psi||=1.0878e+00  U_H=||(H_S-H_BT)psi||=2.7655e-02 | ||(B_a^T B_a-1)psi||=1.3e-02
+   dimer r= 96.000  T_B=3.4549e-02  T_H=6.5754e-02 | U_B=||(B-1)psi||=1.4479e+00  U_H=||(H_S-H_BT)psi||=3.5546e-02 | ||(B_a^T B_a-1)psi||=6.6e-02

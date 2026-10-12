@@ -1,0 +1,3 @@
+R11-6 tails: ch=b op=B P=0.40 mu_b=0.51527993 k3c=0.040 sig=0.080 spectator range [-0.418, 0.906] ppo=12.0 hfac=0.030
+r =   20.0  Nq =   60  Nkf =   3050  Nko =   333 : ||(B-1_b) f_r||/||psi|| = 1.4449e-01   [odd-G_b weight 6.854e-01]  [1 s]
+r =   80.0  Nq =   60  Nkf =   6099  Nko =   637 : ||(B-1_b) f_r||/||psi|| = 4.1546e-03   [odd-G_b weight 7.031e-01]  [2 s]

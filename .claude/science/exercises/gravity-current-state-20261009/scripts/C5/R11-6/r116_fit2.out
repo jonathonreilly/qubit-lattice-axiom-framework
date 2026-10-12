@@ -1,0 +1,26 @@
+r116_s4_L240_K16.out P=+0.2 dimer T_B (registered, r=3..96, n=11): dAICc(W-S)=-1.23 -> undecided | values 6.15e-02 6.27e-02 6.57e-02 7.29e-02 8.74e-02 1.05e-01 9.92e-02 4.88e-02 2.38e-02 5.30e-02 2.92e-01 | max ||(B_a^T B_a-1)psi|| = 4.9e-01
+r116_s4_L240_K16.out P=+0.2 dimer T_H (registered, r=3..96, n=11): dAICc(W-S)=+1.03 -> undecided | values 7.43e-02 7.44e-02 7.49e-02 7.62e-02 7.87e-02 7.80e-02 6.06e-02 2.56e-02 2.05e-02 8.92e-02 4.26e-01 | max ||(B_a^T B_a-1)psi|| = 4.9e-01
+r116_s4_L240_K16.out P=+0.2 gauss T_B (registered, r=3..96, n=11): dAICc(W-S)=-1.21 -> undecided | values 5.40e-02 5.58e-02 5.97e-02 6.82e-02 8.36e-02 1.00e-01 9.28e-02 4.28e-02 2.03e-02 5.17e-02 2.86e-01 | max ||(B_a^T B_a-1)psi|| = 4.8e-01
+r116_s4_L240_K16.out P=+0.2 gauss T_H (registered, r=3..96, n=11): dAICc(W-S)=+0.59 -> undecided | values 7.28e-02 7.39e-02 7.60e-02 7.95e-02 8.36e-02 8.17e-02 6.07e-02 2.48e-02 1.99e-02 8.72e-02 4.17e-01 | max ||(B_a^T B_a-1)psi|| = 4.8e-01
+r116_s4_L240_K16.out P=-0.2 dimer T_B (registered, r=3..96, n=11): dAICc(W-S)=-0.99 -> undecided | values 6.26e-02 6.40e-02 6.73e-02 7.46e-02 8.89e-02 1.06e-01 1.01e-01 5.12e-02 2.48e-02 5.56e-02 3.11e-01 | max ||(B_a^T B_a-1)psi|| = 5.1e-01
+r116_s4_L240_K16.out P=-0.2 dimer T_H (registered, r=3..96, n=11): dAICc(W-S)=+1.90 -> undecided | values 7.19e-02 7.16e-02 7.15e-02 7.21e-02 7.44e-02 7.58e-02 6.26e-02 2.75e-02 2.14e-02 9.30e-02 4.54e-01 | max ||(B_a^T B_a-1)psi|| = 5.1e-01
+r116_s4_L240_K16.out P=-0.2 gauss T_B (registered, r=3..96, n=11): dAICc(W-S)=-0.88 -> undecided | values 5.37e-02 5.54e-02 5.92e-02 6.74e-02 8.24e-02 9.96e-02 9.40e-02 4.44e-02 2.08e-02 5.43e-02 3.04e-01 | max ||(B_a^T B_a-1)psi|| = 5.0e-01
+r116_s4_L240_K16.out P=-0.2 gauss T_H (registered, r=3..96, n=11): dAICc(W-S)=+1.56 -> undecided | values 7.10e-02 7.15e-02 7.26e-02 7.49e-02 7.82e-02 7.82e-02 6.24e-02 2.76e-02 2.11e-02 9.10e-02 4.44e-01 | max ||(B_a^T B_a-1)psi|| = 5.0e-01
+r116_s4_L240_K16.out P=+0.4 dimer T_B (registered, r=3..96, n=11): dAICc(W-S)=-3.59 -> power | values 1.15e-01 1.17e-01 1.23e-01 1.36e-01 1.63e-01 1.95e-01 1.82e-01 8.68e-02 3.90e-02 5.83e-02 3.31e-01 | max ||(B_a^T B_a-1)psi|| = 5.3e-01
+r116_s4_L240_K16.out P=+0.4 dimer T_H (registered, r=3..96, n=11): dAICc(W-S)=+2.60 -> super-poly | values 7.04e-02 7.07e-02 7.14e-02 7.30e-02 7.51e-02 7.29e-02 5.44e-02 2.30e-02 2.31e-02 1.06e-01 5.12e-01 | max ||(B_a^T B_a-1)psi|| = 5.3e-01
+r116_s4_L240_K16.out P=+0.4 gauss T_B (registered, r=3..96, n=11): dAICc(W-S)=-3.45 -> power | values 1.02e-01 1.06e-01 1.13e-01 1.29e-01 1.58e-01 1.88e-01 1.70e-01 7.75e-02 3.37e-02 5.71e-02 3.25e-01 | max ||(B_a^T B_a-1)psi|| = 5.2e-01
+r116_s4_L240_K16.out P=+0.4 gauss T_H (registered, r=3..96, n=11): dAICc(W-S)=+2.23 -> super-poly | values 6.88e-02 7.02e-02 7.26e-02 7.64e-02 8.03e-02 7.74e-02 5.54e-02 2.38e-02 2.28e-02 1.04e-01 5.02e-01 | max ||(B_a^T B_a-1)psi|| = 5.2e-01
+r116_s4_L240_K16.out P=-0.4 dimer T_B (registered, r=3..96, n=11): dAICc(W-S)=-3.90 -> power | values 1.19e-01 1.22e-01 1.28e-01 1.41e-01 1.68e-01 1.98e-01 1.87e-01 9.48e-02 4.20e-02 4.52e-02 2.49e-01 | max ||(B_a^T B_a-1)psi|| = 4.0e-01
+r116_s4_L240_K16.out P=-0.4 dimer T_H (registered, r=3..96, n=11): dAICc(W-S)=+1.43 -> undecided | values 6.59e-02 6.56e-02 6.52e-02 6.55e-02 6.76e-02 6.90e-02 5.75e-02 2.64e-02 1.87e-02 7.80e-02 3.83e-01 | max ||(B_a^T B_a-1)psi|| = 4.0e-01
+r116_s4_L240_K16.out P=-0.4 gauss T_B (registered, r=3..96, n=11): dAICc(W-S)=-3.91 -> power | values 1.01e-01 1.04e-01 1.11e-01 1.26e-01 1.54e-01 1.85e-01 1.74e-01 8.35e-02 3.67e-02 4.45e-02 2.44e-01 | max ||(B_a^T B_a-1)psi|| = 4.0e-01
+r116_s4_L240_K16.out P=-0.4 gauss T_H (registered, r=3..96, n=11): dAICc(W-S)=+1.37 -> undecided | values 6.56e-02 6.59e-02 6.67e-02 6.84e-02 7.12e-02 7.15e-02 5.84e-02 2.90e-02 1.96e-02 7.68e-02 3.77e-01 | max ||(B_a^T B_a-1)psi|| = 4.0e-01
+r116_s4_L320_K8.out P=+0.4 dimer T_B (registered, r=3..96, n=11): dAICc(W-S)=+0.86 -> undecided | values 1.15e-01 1.17e-01 1.23e-01 1.36e-01 1.63e-01 1.95e-01 1.82e-01 8.67e-02 3.70e-02 1.25e-02 3.45e-02 | max ||(B_a^T B_a-1)psi|| = 6.6e-02
+r116_s4_L320_K8.out P=+0.4 dimer T_H (registered, r=3..96, n=11): dAICc(W-S)=-3.95 -> power | values 7.05e-02 7.07e-02 7.15e-02 7.30e-02 7.51e-02 7.30e-02 5.45e-02 2.27e-02 8.46e-03 1.31e-02 6.58e-02 | max ||(B_a^T B_a-1)psi|| = 6.6e-02
+floor/discretization flags T_B (L=240 vs 320, >30%): r=67.9 r=96.0 ; rel changes 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.05 3.68 8.59
+   secondary fit on unflagged points (n=9): dAICc=+4.04 -> super-poly
+floor/discretization flags T_H (L=240 vs 320, >30%): r=48.0 r=67.9 r=96.0 ; rel changes 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.01 1.73 7.06 6.78
+   secondary fit on unflagged points (n=8): dAICc=+7.90 -> super-poly
+r116_tails_b_B_P0.40.out operator range r>=80 (n=7): dAICc(W-S)=+7.10 -> super-poly | power p=4.91 | beta=0.45
+r116_tails_b_Bdag_P0.40.out operator range r>=80 (n=7): dAICc(W-S)=+3.71 -> super-poly | power p=4.83 | beta=0.45
+r116_tails_b_D_P0.40.out operator range r>=80 (n=7): dAICc(W-S)=+18.96 -> super-poly | power p=4.82 | beta=0.45
+r116_tails_b_B_P0.40_s0.5.out operator range r>=80 (n=7): dAICc(W-S)=+25.24 -> super-poly | power p=4.65 | beta=0.65

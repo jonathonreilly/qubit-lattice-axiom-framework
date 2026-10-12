@@ -1,0 +1,74 @@
+   interior (|p_i|<0.30) unitarity defect ||Bc^T Bc-1|| (a,b,c) = 5.36e-15 4.63e-15 4.63e-15
+L=240 P=0.0000 N=1764 mu_b=0.51526436 | ||Bc^T Bc-1||_2 (a,b,c)=5.46e-15 4.88e-15 4.88e-15 | ||B^T B-1||=8.8e-15 | s_min(A)=1.0000 s_max(A)=1.0000 | ||B||_(B-1)=0.000 | ||Bc-1||_2=0.000 0.000 0.000 [5s]
+   lowest H_S: 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180
+   invariant mass sqrt(E^2-P^2): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180   P12 parity: -1.000 -1.000 +1.000 -1.000 +1.000 -1.000
+   spec M_BT (P-independent by FC): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180
+   max|spec H_S - sqrt(spec M_BT^2+P^2)| = 1.55e-14
+   interior (|p_i|<0.30) unitarity defect ||Bc^T Bc-1|| (a,b,c) = 8.41e-01 4.96e-01 4.96e-01
+L=240 P=0.2000 N=1764 mu_b=0.51526436 | ||Bc^T Bc-1||_2 (a,b,c)=8.49e-01 4.97e-01 4.97e-01 | ||B^T B-1||=1.4e-14 | s_min(A)=0.3891 s_max(A)=1.0097 | ||B||_(B-1)=0.788 | ||Bc-1||_2=0.736 0.611 0.611 [12s]
+   lowest H_S: 0.761097357 0.793661510 0.793679720 0.797342282 0.797409788 0.840006854
+   invariant mass sqrt(E^2-P^2): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180   P12 parity: -1.000 -1.000 +1.000 -1.000 +1.000 -1.000
+   spec M_BT (P-independent by FC): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180
+   max|spec H_S - sqrt(spec M_BT^2+P^2)| = 1.75e-14
+   dimer r=  3.0  T_B=||(B-B_a)psi||=6.151e-02  T_H=||(H_S-H_a)psi||=7.428e-02 | U_B=||(B-1)psi||=9.139e-02 U_H=||(H_S-H_BT)psi||=1.049e-02 | ||(B_b-1)psi||=4.91e-02 ||(B_c-1)psi||=4.91e-02 ||E^T B_a psi||=6.08e-02
+   dimer r=  4.2  T_B=||(B-B_a)psi||=6.273e-02  T_H=||(H_S-H_a)psi||=7.440e-02 | U_B=||(B-1)psi||=9.275e-02 U_H=||(H_S-H_BT)psi||=1.075e-02 | ||(B_b-1)psi||=4.92e-02 ||(B_c-1)psi||=4.92e-02 ||E^T B_a psi||=6.20e-02
+   dimer r=  6.0  T_B=||(B-B_a)psi||=6.574e-02  T_H=||(H_S-H_a)psi||=7.487e-02 | U_B=||(B-1)psi||=9.550e-02 U_H=||(H_S-H_BT)psi||=1.133e-02 | ||(B_b-1)psi||=5.02e-02 ||(B_c-1)psi||=5.02e-02 ||E^T B_a psi||=6.49e-02
+   dimer r=  8.5  T_B=||(B-B_a)psi||=7.298e-02  T_H=||(H_S-H_a)psi||=7.624e-02 | U_B=||(B-1)psi||=1.012e-01 U_H=||(H_S-H_BT)psi||=1.258e-02 | ||(B_b-1)psi||=5.36e-02 ||(B_c-1)psi||=5.36e-02 ||E^T B_a psi||=7.21e-02
+   dimer r= 12.0  T_B=||(B-B_a)psi||=8.754e-02  T_H=||(H_S-H_a)psi||=7.871e-02 | U_B=||(B-1)psi||=1.144e-01 U_H=||(H_S-H_BT)psi||=1.512e-02 | ||(B_b-1)psi||=6.25e-02 ||(B_c-1)psi||=6.25e-02 ||E^T B_a psi||=8.66e-02
+   dimer r= 17.0  T_B=||(B-B_a)psi||=1.052e-01  T_H=||(H_S-H_a)psi||=7.795e-02 | U_B=||(B-1)psi||=1.469e-01 U_H=||(H_S-H_BT)psi||=1.898e-02 | ||(B_b-1)psi||=7.47e-02 ||(B_c-1)psi||=7.47e-02 ||E^T B_a psi||=1.04e-01
+   dimer r= 24.0  T_B=||(B-B_a)psi||=9.931e-02  T_H=||(H_S-H_a)psi||=6.063e-02 | U_B=||(B-1)psi||=2.158e-01 U_H=||(H_S-H_BT)psi||=2.069e-02 | ||(B_b-1)psi||=7.09e-02 ||(B_c-1)psi||=7.09e-02 ||E^T B_a psi||=9.85e-02
+   dimer r= 33.9  T_B=||(B-B_a)psi||=4.875e-02  T_H=||(H_S-H_a)psi||=2.557e-02 | U_B=||(B-1)psi||=3.166e-01 U_H=||(H_S-H_BT)psi||=1.540e-02 | ||(B_b-1)psi||=3.40e-02 ||(B_c-1)psi||=3.40e-02 ||E^T B_a psi||=5.00e-02
+   dimer r= 48.0  T_B=||(B-B_a)psi||=2.375e-02  T_H=||(H_S-H_a)psi||=2.045e-02 | U_B=||(B-1)psi||=4.431e-01 U_H=||(H_S-H_BT)psi||=1.339e-02 | ||(B_b-1)psi||=1.47e-02 ||(B_c-1)psi||=1.47e-02 ||E^T B_a psi||=2.22e-02
+   dimer r= 67.9  T_B=||(B-B_a)psi||=5.296e-02  T_H=||(H_S-H_a)psi||=8.916e-02 | U_B=||(B-1)psi||=6.040e-01 U_H=||(H_S-H_BT)psi||=1.567e-02 | ||(B_b-1)psi||=3.73e-03 ||(B_c-1)psi||=3.73e-03 ||E^T B_a psi||=5.81e-03
+   dimer r= 96.0  T_B=||(B-B_a)psi||=2.926e-01  T_H=||(H_S-H_a)psi||=4.261e-01 | U_B=||(B-1)psi||=6.908e-01 U_H=||(H_S-H_BT)psi||=2.011e-02 | ||(B_b-1)psi||=1.78e-03 ||(B_c-1)psi||=1.78e-03 ||E^T B_a psi||=1.98e-03
+   gauss r=  3.0  T_B=||(B-B_a)psi||=5.405e-02  T_H=||(H_S-H_a)psi||=7.276e-02 | U_B=||(B-1)psi||=8.613e-02 U_H=||(H_S-H_BT)psi||=1.065e-02 | ||(B_b-1)psi||=4.48e-02 ||(B_c-1)psi||=4.48e-02 ||E^T B_a psi||=5.34e-02
+   gauss r=  4.2  T_B=||(B-B_a)psi||=5.582e-02  T_H=||(H_S-H_a)psi||=7.387e-02 | U_B=||(B-1)psi||=8.761e-02 U_H=||(H_S-H_BT)psi||=1.087e-02 | ||(B_b-1)psi||=4.54e-02 ||(B_c-1)psi||=4.54e-02 ||E^T B_a psi||=5.52e-02
+   gauss r=  6.0  T_B=||(B-B_a)psi||=5.976e-02  T_H=||(H_S-H_a)psi||=7.597e-02 | U_B=||(B-1)psi||=9.053e-02 U_H=||(H_S-H_BT)psi||=1.137e-02 | ||(B_b-1)psi||=4.69e-02 ||(B_c-1)psi||=4.69e-02 ||E^T B_a psi||=5.91e-02
+   gauss r=  8.5  T_B=||(B-B_a)psi||=6.825e-02  T_H=||(H_S-H_a)psi||=7.952e-02 | U_B=||(B-1)psi||=9.648e-02 U_H=||(H_S-H_BT)psi||=1.246e-02 | ||(B_b-1)psi||=5.12e-02 ||(B_c-1)psi||=5.12e-02 ||E^T B_a psi||=6.77e-02
+   gauss r= 12.0  T_B=||(B-B_a)psi||=8.363e-02  T_H=||(H_S-H_a)psi||=8.358e-02 | U_B=||(B-1)psi||=1.099e-01 U_H=||(H_S-H_BT)psi||=1.476e-02 | ||(B_b-1)psi||=6.06e-02 ||(B_c-1)psi||=6.06e-02 ||E^T B_a psi||=8.31e-02
+   gauss r= 17.0  T_B=||(B-B_a)psi||=1.005e-01  T_H=||(H_S-H_a)psi||=8.172e-02 | U_B=||(B-1)psi||=1.428e-01 U_H=||(H_S-H_BT)psi||=1.838e-02 | ||(B_b-1)psi||=7.21e-02 ||(B_c-1)psi||=7.21e-02 ||E^T B_a psi||=9.99e-02
+   gauss r= 24.0  T_B=||(B-B_a)psi||=9.285e-02  T_H=||(H_S-H_a)psi||=6.064e-02 | U_B=||(B-1)psi||=2.126e-01 U_H=||(H_S-H_BT)psi||=2.002e-02 | ||(B_b-1)psi||=6.67e-02 ||(B_c-1)psi||=6.67e-02 ||E^T B_a psi||=9.24e-02
+   gauss r= 33.9  T_B=||(B-B_a)psi||=4.274e-02  T_H=||(H_S-H_a)psi||=2.482e-02 | U_B=||(B-1)psi||=3.113e-01 U_H=||(H_S-H_BT)psi||=1.486e-02 | ||(B_b-1)psi||=2.92e-02 ||(B_c-1)psi||=2.92e-02 ||E^T B_a psi||=4.49e-02
+   gauss r= 48.0  T_B=||(B-B_a)psi||=2.023e-02  T_H=||(H_S-H_a)psi||=1.994e-02 | U_B=||(B-1)psi||=4.337e-01 U_H=||(H_S-H_BT)psi||=1.305e-02 | ||(B_b-1)psi||=1.17e-02 ||(B_c-1)psi||=1.17e-02 ||E^T B_a psi||=1.86e-02
+   gauss r= 67.9  T_B=||(B-B_a)psi||=5.171e-02  T_H=||(H_S-H_a)psi||=8.717e-02 | U_B=||(B-1)psi||=5.909e-01 U_H=||(H_S-H_BT)psi||=1.537e-02 | ||(B_b-1)psi||=2.84e-03 ||(B_c-1)psi||=2.84e-03 ||E^T B_a psi||=4.82e-03
+   gauss r= 96.0  T_B=||(B-B_a)psi||=2.862e-01  T_H=||(H_S-H_a)psi||=4.167e-01 | U_B=||(B-1)psi||=6.756e-01 U_H=||(H_S-H_BT)psi||=1.970e-02 | ||(B_b-1)psi||=1.72e-03 ||(B_c-1)psi||=1.72e-03 ||E^T B_a psi||=1.89e-03
+   interior (|p_i|<0.30) unitarity defect ||Bc^T Bc-1|| (a,b,c) = 8.41e-01 4.96e-01 4.96e-01
+L=240 P=-0.2000 N=1764 mu_b=0.51526436 | ||Bc^T Bc-1||_2 (a,b,c)=8.49e-01 4.97e-01 4.97e-01 | ||B^T B-1||=1.5e-14 | s_min(A)=0.3891 s_max(A)=1.0097 | ||B||_(B-1)=0.788 | ||Bc-1||_2=0.736 0.611 0.611 [22s]
+   lowest H_S: 0.761097357 0.793661510 0.793679720 0.797342282 0.797409788 0.840006854
+   invariant mass sqrt(E^2-P^2): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180   P12 parity: -1.000 -1.000 +1.000 -1.000 +1.000 -1.000
+   spec M_BT (P-independent by FC): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180
+   max|spec H_S - sqrt(spec M_BT^2+P^2)| = 2.11e-14
+   interior (|p_i|<0.30) unitarity defect ||Bc^T Bc-1|| (a,b,c) = 8.83e-01 9.06e-01 9.06e-01
+L=240 P=0.4000 N=1764 mu_b=0.51526436 | ||Bc^T Bc-1||_2 (a,b,c)=1.00e+00 9.08e-01 9.08e-01 | ||B^T B-1||=1.4e-14 | s_min(A)=0.0000 s_max(A)=1.0351 | ||B||_(B-1)=1.968 | ||Bc-1||_2=1.630 1.183 1.183 [31s]
+   lowest H_S: 0.836223168 0.865966854 0.865983544 0.869341541 0.869403456 0.908631672
+   invariant mass sqrt(E^2-P^2): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180   P12 parity: -1.000 -1.000 +1.000 -1.000 +1.000 -1.000
+   spec M_BT (P-independent by FC): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180
+   max|spec H_S - sqrt(spec M_BT^2+P^2)| = 3.13e-14
+   dimer r=  3.0  T_B=||(B-B_a)psi||=1.154e-01  T_H=||(H_S-H_a)psi||=7.045e-02 | U_B=||(B-1)psi||=1.705e-01 U_H=||(H_S-H_BT)psi||=1.821e-02 | ||(B_b-1)psi||=9.21e-02 ||(B_c-1)psi||=9.21e-02 ||E^T B_a psi||=1.14e-01
+   dimer r=  4.2  T_B=||(B-B_a)psi||=1.174e-01  T_H=||(H_S-H_a)psi||=7.074e-02 | U_B=||(B-1)psi||=1.725e-01 U_H=||(H_S-H_BT)psi||=1.866e-02 | ||(B_b-1)psi||=9.23e-02 ||(B_c-1)psi||=9.23e-02 ||E^T B_a psi||=1.16e-01
+   dimer r=  6.0  T_B=||(B-B_a)psi||=1.228e-01  T_H=||(H_S-H_a)psi||=7.145e-02 | U_B=||(B-1)psi||=1.768e-01 U_H=||(H_S-H_BT)psi||=1.966e-02 | ||(B_b-1)psi||=9.39e-02 ||(B_c-1)psi||=9.39e-02 ||E^T B_a psi||=1.21e-01
+   dimer r=  8.5  T_B=||(B-B_a)psi||=1.362e-01  T_H=||(H_S-H_a)psi||=7.299e-02 | U_B=||(B-1)psi||=1.862e-01 U_H=||(H_S-H_BT)psi||=2.184e-02 | ||(B_b-1)psi||=1.00e-01 ||(B_c-1)psi||=1.00e-01 ||E^T B_a psi||=1.34e-01
+   dimer r= 12.0  T_B=||(B-B_a)psi||=1.635e-01  T_H=||(H_S-H_a)psi||=7.507e-02 | U_B=||(B-1)psi||=2.095e-01 U_H=||(H_S-H_BT)psi||=2.629e-02 | ||(B_b-1)psi||=1.17e-01 ||(B_c-1)psi||=1.17e-01 ||E^T B_a psi||=1.60e-01
+   dimer r= 17.0  T_B=||(B-B_a)psi||=1.960e-01  T_H=||(H_S-H_a)psi||=7.283e-02 | U_B=||(B-1)psi||=2.690e-01 U_H=||(H_S-H_BT)psi||=3.306e-02 | ||(B_b-1)psi||=1.40e-01 ||(B_c-1)psi||=1.40e-01 ||E^T B_a psi||=1.92e-01
+   dimer r= 24.0  T_B=||(B-B_a)psi||=1.829e-01  T_H=||(H_S-H_a)psi||=5.426e-02 | U_B=||(B-1)psi||=3.945e-01 U_H=||(H_S-H_BT)psi||=3.598e-02 | ||(B_b-1)psi||=1.33e-01 ||(B_c-1)psi||=1.33e-01 ||E^T B_a psi||=1.79e-01
+   dimer r= 33.9  T_B=||(B-B_a)psi||=8.708e-02  T_H=||(H_S-H_a)psi||=2.299e-02 | U_B=||(B-1)psi||=5.740e-01 U_H=||(H_S-H_BT)psi||=2.652e-02 | ||(B_b-1)psi||=6.13e-02 ||(B_c-1)psi||=6.13e-02 ||E^T B_a psi||=9.26e-02
+   dimer r= 48.0  T_B=||(B-B_a)psi||=3.831e-02  T_H=||(H_S-H_a)psi||=2.304e-02 | U_B=||(B-1)psi||=7.983e-01 U_H=||(H_S-H_BT)psi||=2.317e-02 | ||(B_b-1)psi||=2.61e-02 ||(B_c-1)psi||=2.61e-02 ||E^T B_a psi||=4.12e-02
+   dimer r= 67.9  T_B=||(B-B_a)psi||=5.761e-02  T_H=||(H_S-H_a)psi||=1.057e-01 | U_B=||(B-1)psi||=1.100e+00 U_H=||(H_S-H_BT)psi||=2.788e-02 | ||(B_b-1)psi||=6.52e-03 ||(B_c-1)psi||=6.52e-03 ||E^T B_a psi||=1.15e-02
+   dimer r= 96.0  T_B=||(B-B_a)psi||=3.290e-01  T_H=||(H_S-H_a)psi||=5.191e-01 | U_B=||(B-1)psi||=1.537e+00 U_H=||(H_S-H_BT)psi||=4.212e-02 | ||(B_b-1)psi||=3.04e-03 ||(B_c-1)psi||=3.04e-03 ||E^T B_a psi||=3.70e-03
+   gauss r=  3.0  T_B=||(B-B_a)psi||=1.022e-01  T_H=||(H_S-H_a)psi||=6.887e-02 | U_B=||(B-1)psi||=1.606e-01 U_H=||(H_S-H_BT)psi||=1.854e-02 | ||(B_b-1)psi||=8.43e-02 ||(B_c-1)psi||=8.43e-02 ||E^T B_a psi||=1.01e-01
+   gauss r=  4.2  T_B=||(B-B_a)psi||=1.057e-01  T_H=||(H_S-H_a)psi||=7.021e-02 | U_B=||(B-1)psi||=1.630e-01 U_H=||(H_S-H_BT)psi||=1.894e-02 | ||(B_b-1)psi||=8.53e-02 ||(B_c-1)psi||=8.53e-02 ||E^T B_a psi||=1.04e-01
+   gauss r=  6.0  T_B=||(B-B_a)psi||=1.133e-01  T_H=||(H_S-H_a)psi||=7.264e-02 | U_B=||(B-1)psi||=1.678e-01 U_H=||(H_S-H_BT)psi||=1.980e-02 | ||(B_b-1)psi||=8.84e-02 ||(B_c-1)psi||=8.84e-02 ||E^T B_a psi||=1.12e-01
+   gauss r=  8.5  T_B=||(B-B_a)psi||=1.295e-01  T_H=||(H_S-H_a)psi||=7.649e-02 | U_B=||(B-1)psi||=1.779e-01 U_H=||(H_S-H_BT)psi||=2.172e-02 | ||(B_b-1)psi||=9.67e-02 ||(B_c-1)psi||=9.67e-02 ||E^T B_a psi||=1.28e-01
+   gauss r= 12.0  T_B=||(B-B_a)psi||=1.585e-01  T_H=||(H_S-H_a)psi||=8.039e-02 | U_B=||(B-1)psi||=2.014e-01 U_H=||(H_S-H_BT)psi||=2.574e-02 | ||(B_b-1)psi||=1.15e-01 ||(B_c-1)psi||=1.15e-01 ||E^T B_a psi||=1.57e-01
+   gauss r= 17.0  T_B=||(B-B_a)psi||=1.889e-01  T_H=||(H_S-H_a)psi||=7.737e-02 | U_B=||(B-1)psi||=2.613e-01 U_H=||(H_S-H_BT)psi||=3.205e-02 | ||(B_b-1)psi||=1.36e-01 ||(B_c-1)psi||=1.36e-01 ||E^T B_a psi||=1.87e-01
+   gauss r= 24.0  T_B=||(B-B_a)psi||=1.709e-01  T_H=||(H_S-H_a)psi||=5.527e-02 | U_B=||(B-1)psi||=3.881e-01 U_H=||(H_S-H_BT)psi||=3.484e-02 | ||(B_b-1)psi||=1.25e-01 ||(B_c-1)psi||=1.25e-01 ||E^T B_a psi||=1.69e-01
+   gauss r= 33.9  T_B=||(B-B_a)psi||=7.729e-02  T_H=||(H_S-H_a)psi||=2.374e-02 | U_B=||(B-1)psi||=5.644e-01 U_H=||(H_S-H_BT)psi||=2.557e-02 | ||(B_b-1)psi||=5.14e-02 ||(B_c-1)psi||=5.14e-02 ||E^T B_a psi||=8.72e-02
+   gauss r= 48.0  T_B=||(B-B_a)psi||=3.276e-02  T_H=||(H_S-H_a)psi||=2.276e-02 | U_B=||(B-1)psi||=7.810e-01 U_H=||(H_S-H_BT)psi||=2.259e-02 | ||(B_b-1)psi||=2.04e-02 ||(B_c-1)psi||=2.04e-02 ||E^T B_a psi||=3.73e-02
+   gauss r= 67.9  T_B=||(B-B_a)psi||=5.637e-02  T_H=||(H_S-H_a)psi||=1.036e-01 | U_B=||(B-1)psi||=1.075e+00 U_H=||(H_S-H_BT)psi||=2.741e-02 | ||(B_b-1)psi||=4.67e-03 ||(B_c-1)psi||=4.67e-03 ||E^T B_a psi||=1.06e-02
+   gauss r= 96.0  T_B=||(B-B_a)psi||=3.226e-01  T_H=||(H_S-H_a)psi||=5.090e-01 | U_B=||(B-1)psi||=1.501e+00 U_H=||(H_S-H_BT)psi||=4.160e-02 | ||(B_b-1)psi||=2.92e-03 ||(B_c-1)psi||=2.92e-03 ||E^T B_a psi||=3.63e-03
+   interior (|p_i|<0.30) unitarity defect ||Bc^T Bc-1|| (a,b,c) = 8.83e-01 9.06e-01 9.06e-01
+L=240 P=-0.4000 N=1764 mu_b=0.51526436 | ||Bc^T Bc-1||_2 (a,b,c)=1.00e+00 9.08e-01 9.08e-01 | ||B^T B-1||=1.4e-14 | s_min(A)=0.0000 s_max(A)=1.0351 | ||B||_(B-1)=1.968 | ||Bc-1||_2=1.630 1.183 1.183 [39s]
+   lowest H_S: 0.836223168 0.865966854 0.865983544 0.869341541 0.869403456 0.908631672
+   invariant mass sqrt(E^2-P^2): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180   P12 parity: -1.000 -1.000 +1.000 -1.000 +1.000 -1.000
+   spec M_BT (P-independent by FC): 0.734349499 0.768048561 0.768067379 0.771851485 0.771921220 0.815850180
+   max|spec H_S - sqrt(spec M_BT^2+P^2)| = 1.91e-14

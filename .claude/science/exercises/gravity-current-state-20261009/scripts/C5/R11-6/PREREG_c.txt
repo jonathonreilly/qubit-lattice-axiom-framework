@@ -1,0 +1,17 @@
+R11-6 pre-registration of the (c) analysis, written 2026-10-12 ~18:52Z BEFORE any (c) run.
+
+Subtractions (new rule):
+  T_B(r) = ||(B - B_a) psi_r|| / ||psi_r||      subtracted channel limit: B_a (packing limit in channel a=(12)(3))
+  T_H(r) = ||(H_S - H_a(x)1 - 1(x)h_3) psi_r|| / ||psi_r||   subtracted: the channel-a generator limit
+           (pair-12 BT law + free spectator), represented in the free chart as B_a^dag sqrt(M_(a)^2+P^2) B_a.
+  Contrast only (not tails): U_B = ||(B - 1)psi_r||, U_H = ||(H_S - H_BT)psi_r|| (un-subtracted; expected not to decay).
+State family: psi_r = chi_b(q12) (x) G(p3) exp(-i p3 r)  [pair 12 = bound dimer, spectator Gaussian, centre p3c=-0.10,
+  width sigma=0.08], P = 0.4; P = 0 control.  Secondary family: Gaussian pair packet in q12 (centre 0.08, width 0.06; odd part).
+r grid: r = 3 * 2^(k/2), k = 0..10  (3 ... 96, 1.5 decades), largest ring L = 320 (positions periodic mod ~L).
+Model comparison (over the full r range, all 11 points):
+  (S) ln T = a - c r^beta, beta profiled on {0.10, 0.15, ..., 2.00} (k = 3 parameters)
+  (W) ln T = a - p ln r (k = 2)
+  AICc = n ln(SSE/n) + 2k + 2k(k+1)/(n-k-1).  dAICc = AICc(W) - AICc(S):  > +2 super-poly preferred; < -2 power preferred;
+  otherwise undecided.  Floor diagnostic (reported, not used to drop points in the registered fit): relative change of T
+  between L = 240 and L = 320; points with change > 30% flagged floor/discretization-limited; secondary fit on unflagged points.
+Known limitation (R9-3 referee): a finite window cannot certify an asymptotic class; this is a finite-window comparison only.

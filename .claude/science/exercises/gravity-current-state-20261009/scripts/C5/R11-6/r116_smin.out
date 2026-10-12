@@ -1,0 +1,16 @@
+L=128 P=0.10 N=484 s_min(A)=9.4377e-01 (near-null vector weight in |p_i|<0.30: 0.930)  s_min(A restricted to interior)=9.4550e-01  ||B_a-1||=0.174
+L=128 P=0.20 N=484 s_min(A)=8.0050e-01 (near-null vector weight in |p_i|<0.30: 0.937)  s_min(A restricted to interior)=8.0652e-01  ||B_a-1||=0.356
+L=128 P=0.30 N=484 s_min(A)=6.0391e-01 (near-null vector weight in |p_i|<0.30: 0.932)  s_min(A restricted to interior)=6.1864e-01  ||B_a-1||=0.552
+L=128 P=0.40 N=484 s_min(A)=3.9106e-01 (near-null vector weight in |p_i|<0.30: 0.933)  s_min(A restricted to interior)=4.1853e-01  ||B_a-1||=0.772
+L=128 P=0.50 N=484 s_min(A)=2.0131e-01 (near-null vector weight in |p_i|<0.30: 0.948)  s_min(A restricted to interior)=2.4032e-01  ||B_a-1||=1.014
+L=128 P=0.60 N=484 s_min(A)=7.4272e-02 (near-null vector weight in |p_i|<0.30: 0.956)  s_min(A restricted to interior)=1.1244e-01  ||B_a-1||=1.249
+L=128 P=0.70 N=484 s_min(A)=2.0313e-02 (near-null vector weight in |p_i|<0.30: 0.917)  s_min(A restricted to interior)=4.5365e-02  ||B_a-1||=1.453
+L=128 P=0.80 N=484 s_min(A)=5.4487e-03 (near-null vector weight in |p_i|<0.30: 0.840)  s_min(A restricted to interior)=2.1603e-02  ||B_a-1||=1.617
+L=160 P=0.10 N=784 s_min(A)=9.1374e-01 (near-null vector weight in |p_i|<0.30: 0.966)  s_min(A restricted to interior)=9.1514e-01  ||B_a-1||=0.221
+L=160 P=0.20 N=784 s_min(A)=6.9869e-01 (near-null vector weight in |p_i|<0.30: 0.965)  s_min(A restricted to interior)=7.0443e-01  ||B_a-1||=0.457
+L=160 P=0.30 N=784 s_min(A)=4.2059e-01 (near-null vector weight in |p_i|<0.30: 0.961)  s_min(A restricted to interior)=4.3574e-01  ||B_a-1||=0.722
+L=160 P=0.40 N=784 s_min(A)=1.5940e-01 (near-null vector weight in |p_i|<0.30: 0.971)  s_min(A restricted to interior)=1.8530e-01  ||B_a-1||=1.029
+L=160 P=0.50 N=784 s_min(A)=2.3142e-02 (near-null vector weight in |p_i|<0.30: 0.946)  s_min(A restricted to interior)=4.0338e-02  ||B_a-1||=1.333
+L=160 P=0.60 N=784 s_min(A)=1.6519e-03 (near-null vector weight in |p_i|<0.30: 0.810)  s_min(A restricted to interior)=7.3776e-03  ||B_a-1||=1.582
+L=160 P=0.70 N=784 s_min(A)=2.2125e-04 (near-null vector weight in |p_i|<0.30: 0.633)  s_min(A restricted to interior)=5.7767e-03  ||B_a-1||=1.753
+L=160 P=0.80 N=784 s_min(A)=1.8489e-04 (near-null vector weight in |p_i|<0.30: 0.478)  s_min(A restricted to interior)=7.7667e-03  ||B_a-1||=1.848

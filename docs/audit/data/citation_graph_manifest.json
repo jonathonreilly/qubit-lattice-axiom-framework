@@ -1,6 +1,6 @@
 {
- "edge_count": 15805,
- "node_count": 7023,
+ "edge_count": 15808,
+ "node_count": 7024,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6473,6 +6473,10 @@
   "finite_edge_qubit_parity_dictionary_occupation_zeros_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_energy_sector_selection_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "a6a07e3c4279",
+   "out_degree": 3
   },
   "finite_energy_supply_for_marked_collision_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "8916706121e0",

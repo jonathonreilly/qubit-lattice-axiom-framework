@@ -1,0 +1,33 @@
+{
+  "base": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "parents": [
+    {
+      "available_on_exact_base": true,
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "published_status": "open_gate; conditional-support; N1/N5 pending",
+      "role": "Chosen state-preserving two-branch embedding and actual branch energies.",
+      "source_sha256": "1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d"
+    },
+    {
+      "available_on_exact_base": true,
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "published_status": "bounded_theorem; conditional-support",
+      "role": "Positive full-spin GNS Fock Hamiltonian with zero vacuum energy.",
+      "source_sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd"
+    },
+    {
+      "available_on_exact_base": true,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "published_status": "bounded_theorem; conditional-support",
+      "role": "Chosen polarization, Fourier and even-CAR conventions.",
+      "source_sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b"
+    }
+  ],
+  "scope": "Exact main sources; changed type/status and evidence links are preserved in archived diffs. Parent mathematics unchanged, parent audit/retention not promoted."
+}

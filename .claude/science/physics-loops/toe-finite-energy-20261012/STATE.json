@@ -1,0 +1,24 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "branch": "physics-loop/toe-finite-energy-20261012",
+  "campaign_deadline_utc": "2026-10-13T16:42:30Z",
+  "claim_status": "conditional-support",
+  "disposition": "conditional_bounded_theorem_with_partial_narrowing_limits",
+  "formal_audit": false,
+  "identity_tool_executed_during_preparation": false,
+  "mathematical_predicates_executed": 0,
+  "next": [
+    "Root read frozen program, tool and packet",
+    "Root source acceptance and bounded integration",
+    "Root inspect actual outputs and publish a regular PR"
+  ],
+  "no_go_packet_pass": false,
+  "ordinary_proof_review": "source_exposed_focused_same_model_and_effort",
+  "parent_current_status": "open_gate",
+  "phase": "source_prepared_root_execution_pending",
+  "root_is_coauthor": true,
+  "scientific_mutations_executed": 0,
+  "source_sha256": "648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c"
+}

@@ -1,0 +1,30 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "audit_verdict_applied": false,
+  "base": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "cache_statuses": {
+    "scripts/concrete_gapped_chain_2026_10_12.py": "fresh",
+    "scripts/current_preserving_refinement_identity_2026_10_12.py": "fresh",
+    "scripts/finite_energy_sector_selection_identity_2026_10_12.py": "fresh",
+    "scripts/local_even_continuum_2026_10_12.py": "fresh"
+  },
+  "canonical_stderr_merged_into_complete_stdout": true,
+  "git_mutation": false,
+  "graph_delta": {
+    "edges": 3,
+    "nodes": 1
+  },
+  "later_landing_obligations": [
+    "combined current-main validation",
+    "strict audit lint",
+    "formal retained audit"
+  ],
+  "mathematical_proof_verified_by_program": false,
+  "no_go_packet_pass": false,
+  "parent_cache_statuses_are_diagnostics_only": true,
+  "retained_promotion": false,
+  "scientific_mutations_executed": 0,
+  "scientific_predicates_executed": 0,
+  "status": "actual_source_integration_and_identity_checks_completed"
+}

@@ -1,0 +1,2 @@
+Clifford check (7 generators, 8x8): max |{G_i,G_j} - 2 delta| = 0.0e+00
+pair weight: explicit 8x8 trace vs R10-5 closed form, 200 random points: max rel diff = 9.5e-16

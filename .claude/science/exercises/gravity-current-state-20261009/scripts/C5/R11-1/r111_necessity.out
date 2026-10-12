@@ -1,0 +1,31 @@
+== 1. Total masses (t = 0 values): every species has sign fixed by statistics (zone mean <A> = -1) ==
+   boson (complex scalar): photon total = (1/32) <u_y^2>*<A> ; TT total (M vertex, w=u; or pairing vertex w=S^2) = (2/32)*4 <w>^2 <A>
+   boson G            <A> = -1.0000000000   photon total = -2.30341e-01   TT total = -2.37228e+00   (both < 0)
+   boson L            <A> = -0.9999999747   photon total = -5.42775e-01   TT total = -7.02782e-01   (both < 0)
+   boson NN           <A> = -1.0000000000   photon total = -6.25000e-02   TT total = -1.00000e+00   (both < 0)
+   boson v[Wilson]    <A> = -1.0000000012   photon total = -6.25000e-02   TT total = -6.25000e-02   (both < 0)
+   boson v[box0.5]    <A> = -0.9999999996   photon total = -2.83514e-02   TT total = -8.16697e-02   (both < 0)
+   boson v[box0.8]    <A> = -0.9999999996   photon total = -2.48223e-02   TT total = -1.14423e-01   (both < 0)
+   fermion Wilson     (8 comp) unit-speed err 2.2e-16 <A_v> = -1.0000000012   photon total = +2.50000e-01   TT total = +2.50000e-01   (both > 0)
+   fermion box0.5     (8 comp) unit-speed err 4.4e-16 <A_v> = -0.9999999996   photon total = +1.13406e-01   TT total = +3.26679e-01   (both > 0)
+   fermion box0.8     (8 comp) unit-speed err 4.4e-16 <A_v> = -0.9999999996   photon total = +9.92893e-02   TT total = +4.57693e-01   (both > 0)
+
+== 2. Laplace form vs direct 3D mean (check of the factorized representation), photon, scalar G, m = 0.3 ==
+   G: Laplace -1.29584302e-02   direct N=96 -1.29582777e-02   rel diff 1.2e-05
+   L: Laplace +1.67232292e+00   direct N=96 +1.67231729e+00   rel diff 3.4e-06
+
+== 3. Paired content (complex scalars on v, TT vertex S^2) vs unpaired content tuned to the t=0 total, photon and TT ==
+   PAIRED  (4 cplx scalars on v[box0.8] + 1 fermion): max |C_photon| over m in [0.05,1.5] = 0.0e+00 ; max |C_TT| = 0.0e+00
+   PAIRED  (4 cplx scalars on v[Wilson] + 1 fermion): max |C_photon| over m in [0.05,1.5] = 0.0e+00 ; max |C_TT| = 0.0e+00
+   UNPAIRED bosons G          x_ph = 0.4311 x_tt = 0.1929 per fermion box0.8: C_photon(m) in [+1.15e-03, +4.76e-03] (0 sign changes), C_TT(m) in [+3.85e-03, +1.20e-02] (0 sign changes)
+      C_photon at m = 0.05, 0.3, 1.0: +4.758e-03 +4.412e-03 +2.279e-03
+   UNPAIRED bosons v[box0.5]  x_ph = 3.5021 x_tt = 5.6042 per fermion box0.8: C_photon(m) in [+3.13e-04, +1.28e-03] (0 sign changes), C_TT(m) in [+5.39e-04, +1.55e-03] (0 sign changes)
+      C_photon at m = 0.05, 0.3, 1.0: +1.279e-03 +1.213e-03 +6.559e-04
+   UNPAIRED bosons L          x_ph = 0.4606 x_tt = 0.3557 per fermion Wilson: C_photon(m) in [+3.65e-03, +3.63e-02] (0 sign changes), C_TT(m) in [+1.96e-03, +7.24e-03] (0 sign changes)
+      C_photon at m = 0.05, 0.3, 1.0: +3.635e-02 +2.761e-02 +8.570e-03
+
+== 4. Edge onset (A masked to exactly 0 on the box, removing finite-difference noise): -(1/t) ln|F_A(t)| -> u(face) = b^2 ==
+   G          b^2 = 4.000 | t= 2.0: 6.334 (sign -1) ; t= 5.0: 5.741 (sign -1) ; t=10.0: 5.292 (sign -1) ; t=20.0: 4.936 (sign -1)
+   L          b^2 = 4.000 | t= 2.0: 0.234 (sign +1) ; t= 5.0: 0.237 (sign +1) ; t=10.0: 0.191 (sign +1) ; t=20.0: 0.142 (sign +1)
+   v[box0.5]  b^2 = 0.250 | t= 2.0: 1.509 (sign -1) ; t= 5.0: 1.159 (sign -1) ; t=10.0: 0.943 (sign -1) ; t=20.0: 0.766 (sign -1)
+   v[box0.8]  b^2 = 0.640 | t= 2.0: 1.555 (sign -1) ; t= 5.0: 1.522 (sign -1) ; t=10.0: 1.431 (sign -1) ; t=20.0: 1.262 (sign -1)

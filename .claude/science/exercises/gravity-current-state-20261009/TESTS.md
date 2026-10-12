@@ -4360,3 +4360,11 @@ Readings:
 - **VIABLE:** an explicit local rule giving Friedmann expansion and ⟨Λ⟩ = 0 untuned, passing the stated checks, with prices named.
 - **EXCLUDED:** a refereed inconsistency, or a violated stated bound.
 - **OPEN:** otherwise.
+- **R11-1 (pairing necessity; dressed matter speed):** worker readings below. Referee running (19:10Z).
+  - **(a) DERIVED** in 𝒞_A:
+    - Theorem N*: interval vanishing forces boson–fermion cancellation of A-weighted measures, so neither statistics alone suffices;
+    - Theorem S: in a subclass, minimal pairing is forced.
+  - **(b) SPLIT-PRESENT** in prescription dD-M only:
+    - the matter shift is O(κm²) (Lemma M);
+    - so for light matter c_m − c_T → −κΞ, unsuppressed;
+    - the sign on the gapped edge is not definite.

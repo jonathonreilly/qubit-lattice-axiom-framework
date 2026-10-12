@@ -1,0 +1,10 @@
+(1, 0)  denominator: 2*a*b*(a**2 + 2*a*b + b**2 + p0**2)
+(1, 1)  denominator: 2*a*(a**2 + 2*a*b + b**2 + p0**2)
+(1, 2)  denominator: 2*a*(a**2 + 2*a*b + b**2 + p0**2)
+(2, 0)  denominator: 4*a**3*b*(a**2 + 2*a*b + b**2 + p0**2)**2
+(2, 1)  denominator: 4*a**3*(a**2 + 2*a*b + b**2 + p0**2)**2
+(2, 2)  denominator: 4*a**3*(a**2 + 2*a*b + b**2 + p0**2)**2
+(2, 3)  denominator: 4*a**3*(a**2 + 2*a*b + b**2 + p0**2)**2
+(2, 4)  denominator: 4*a**3*(a**2 + 2*a*b + b**2 + p0**2)**2
+max rel. deviation, closed form vs quadrature (real p0), and max |imag|: 3.07e-11
+I_0 continued to p0 = iE: 2.462121212121  old-fashioned PT: 2.462121212121

@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-12T20:57:13.890008+00:00",
+  "name": "DDO064",
+  "freeze_sha256": "1dae3e3888f82c2ced9e07253dcf520bcf744e43e5a31c9e9849618703c90b1f",
+  "identities": {
+    "source": "d29a6e9d6d6e00399eefaf28f4ef925ed1db650c01a63fa34bfd062914a771ab",
+    "protocol": "0bb46c333a089440082fe38ace469f2a35bea4c0e0c469c3abb022741e804265",
+    "operator": "fe1d5256bb1d867602b4c5c6f68a7c683db1f3ea485d9d85c572b3f8ffccfadb",
+    "validator": "aa1a07fd5553c119160772ee6ca69fbc698f31010f4f0df3f692d23817d50dc1",
+    "fits": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1",
+    "margin": "ffa93f9ad0f8a412020eb756bbc996c07caa1b55a4269cbfee865aa7af591ebc",
+    "source_data": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "target_data": "1e8f96f1198817fe962ecf43ceed6fb23be795f3c12ae246387a65cdc2dddfa6",
+    "original_selection": "88e7d3a1c82e6252fddef6f002d7365966424075cb227562a7f14de6321ac6ca",
+    "margin_protocol": "75d11669ced2b3ab386cf43fc186414b54b37bd32021127147a8fa3e3908c622",
+    "source_receipt_NGC3949": "e5a3901ad7bac97a781bc6b297100e1021452bc4b580ae9ca4050a6424c7b678",
+    "source_receipt_NGC3972": "6eb35c7ba0247578ddd774621ab6dbe0ff91c7af438008b0245bb0c9f0da1c79",
+    "source_receipt_UGC06667": "a2211630118989eadf75f87b3e44944b173ea293f26d29f15bb2efa626ddd463",
+    "source_receipt_UGC08837": "52df8821bde48e6d916d78ac664c12d46f161e180d98bc01a624a0cf00d4cd5b",
+    "source_receipt_DDO064": "106042d2dd35afe0a6a19487a46d4d9e89b27b20da98f0e61011065428547cb5",
+    "source_receipt_DDO168": "5d2b907ebaad4caf2a8cd26f510cacea62a38429c28fb1446552fdb71c54ab9f"
+  },
+  "R_kpc": [
+    0.49,
+    0.69,
+    0.89,
+    1.09,
+    1.29,
+    1.48,
+    1.68,
+    1.88,
+    2.08,
+    2.27,
+    2.37,
+    2.98
+  ],
+  "forces": {
+    "original_D_joint": [
+      207.1318369001614,
+      319.3596666786804,
+      286.50045411119476,
+      309.084786254781,
+      378.858307114614,
+      484.33095446459316,
+      535.3361330913893,
+      554.385706131593,
+      543.8055153387869,
+      509.54255905063235,
+      502.4948544399881,
+      470.31100196226095
+    ],
+    "interior_D_joint": [
+      273.2048271931852,
+      428.3298818292838,
+      382.7183720307698,
+      414.81185484917836,
+      508.53930700098664,
+      650.5853971015346,
+      719.1030738015888,
+      744.614258463954,
+      730.4573016600219,
+      685.3048222515769,
+      671.3394529332702,
+      567.9851090292087
+    ]
+  },
+  "controls": {
+    "newtonian": 2.590376891309365e-05,
+    "prior_response": 2.220446049250313e-16
+  },
+  "geometry_sha256": "d10586d4a3f6031d1bbc6d240256b6a02fe9f9db6509039e8784825d73e736fc",
+  "target_arrays_read": false,
+  "provisional": true
+}

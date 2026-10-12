@@ -1,0 +1,94 @@
+{
+  "gates": {
+    "refinement": 0.0024392553723255883,
+    "boundary": 2.2631440954601345e-07
+  },
+  "combined": {
+    "original_D_joint": {
+      "base": {
+        "equal_galaxy_rms_log10_velocity": 0.16414042462904452,
+        "largest_rectangle_t": 0.6511634521929891,
+        "sources_with_rectangle_failure": [
+          "NGC3949",
+          "NGC3972",
+          "UGC06667",
+          "DDO064",
+          "DDO168"
+        ],
+        "total_bins": 50,
+        "bins_outside_rectangle": 32
+      },
+      "refined": {
+        "equal_galaxy_rms_log10_velocity": 0.16417279223866804,
+        "largest_rectangle_t": 0.6513721963795734,
+        "sources_with_rectangle_failure": [
+          "NGC3949",
+          "NGC3972",
+          "UGC06667",
+          "DDO064",
+          "DDO168"
+        ],
+        "total_bins": 50,
+        "bins_outside_rectangle": 32
+      },
+      "boundary": {
+        "equal_galaxy_rms_log10_velocity": 0.1641404422886314,
+        "largest_rectangle_t": 0.6511634723383566,
+        "sources_with_rectangle_failure": [
+          "NGC3949",
+          "NGC3972",
+          "UGC06667",
+          "DDO064",
+          "DDO168"
+        ],
+        "total_bins": 50,
+        "bins_outside_rectangle": 32
+      }
+    },
+    "interior_D_joint": {
+      "base": {
+        "equal_galaxy_rms_log10_velocity": 0.14163543392124453,
+        "largest_rectangle_t": 0.6114791521724802,
+        "sources_with_rectangle_failure": [
+          "NGC3949",
+          "NGC3972",
+          "UGC06667",
+          "UGC08837",
+          "DDO064",
+          "DDO168"
+        ],
+        "total_bins": 50,
+        "bins_outside_rectangle": 30
+      },
+      "refined": {
+        "equal_galaxy_rms_log10_velocity": 0.1416344692630286,
+        "largest_rectangle_t": 0.6114844560112627,
+        "sources_with_rectangle_failure": [
+          "NGC3949",
+          "NGC3972",
+          "UGC06667",
+          "UGC08837",
+          "DDO064",
+          "DDO168"
+        ],
+        "total_bins": 50,
+        "bins_outside_rectangle": 30
+      },
+      "boundary": {
+        "equal_galaxy_rms_log10_velocity": 0.14163544843560744,
+        "largest_rectangle_t": 0.6114791743554244,
+        "sources_with_rectangle_failure": [
+          "NGC3949",
+          "NGC3972",
+          "UGC06667",
+          "UGC08837",
+          "DDO064",
+          "DDO168"
+        ],
+        "total_bins": 50,
+        "bins_outside_rectangle": 30
+      }
+    }
+  }
+}
+PASS: 36 source/candidate/method score rows independently recomputed; no refit.

@@ -1,0 +1,21 @@
+{
+  "kind": "fixed_numerical_calculation",
+  "author_mode": "direct_chat_author",
+  "driver_pid": 92212,
+  "child_pid": null,
+  "deadline_at": "2026-10-13T16:53:00.057432+00:00",
+  "script": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_extension_transfer.py",
+  "started_at": "2026-10-12T20:42:21.168317+00:00",
+  "phase": "complete",
+  "stage": "score",
+  "command": [
+    "/usr/local/bin/python3",
+    "-u",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_extension_transfer.py",
+    "--stage",
+    "score"
+  ],
+  "exit_code": 0,
+  "checked_at": "2026-10-12T22:04:38.395343+00:00",
+  "completed_at": "2026-10-12T22:04:38.396575+00:00"
+}

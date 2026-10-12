@@ -1,0 +1,66 @@
+
+2026-10-12T20:42:21.168650+00:00 base
+base: NGC3949
+base: NGC3972
+base: UGC06667
+base: UGC08837
+base: DDO064
+base: DDO168
+
+2026-10-12T20:59:04.739336+00:00 validate
+validate: NGC3949
+{"name": "NGC3949", "candidate": "original_D_joint", "passed": true, "changes": {"refinement": 0.0009438698393108291, "boundary": 1.6920644119178263e-07}}
+{"name": "NGC3949", "candidate": "interior_D_joint", "passed": true, "changes": {"refinement": 0.0010101055551420268, "boundary": 1.792010078105477e-07}}
+validate: NGC3972
+{"name": "NGC3972", "candidate": "original_D_joint", "passed": true, "changes": {"refinement": 0.00017776827185667088, "boundary": 1.3530390530203107e-07}}
+{"name": "NGC3972", "candidate": "interior_D_joint", "passed": true, "changes": {"refinement": 0.0005635079499718421, "boundary": 1.1814050926428621e-07}}
+validate: UGC06667
+{"name": "UGC06667", "candidate": "original_D_joint", "passed": true, "changes": {"refinement": 0.0011396044848130948, "boundary": 2.2631440954601345e-07}}
+{"name": "UGC06667", "candidate": "interior_D_joint", "passed": true, "changes": {"refinement": 2.4233370866322268e-05, "boundary": 2.2607185623524373e-07}}
+validate: UGC08837
+{"name": "UGC08837", "candidate": "original_D_joint", "passed": true, "changes": {"refinement": 0.0013972384188778442, "boundary": 1.3895115269502156e-07}}
+{"name": "UGC08837", "candidate": "interior_D_joint", "passed": true, "changes": {"refinement": 2.855266800305678e-05, "boundary": 1.276989930465433e-07}}
+validate: DDO064
+{"name": "DDO064", "candidate": "original_D_joint", "passed": true, "changes": {"refinement": 0.0024392553723255883, "boundary": 1.4771838718896646e-07}}
+{"name": "DDO064", "candidate": "interior_D_joint", "passed": true, "changes": {"refinement": 2.113793913371964e-05, "boundary": 1.3469531079390862e-07}}
+validate: DDO168
+{"name": "DDO168", "candidate": "original_D_joint", "passed": true, "changes": {"refinement": 0.0005927687467320863, "boundary": 1.7684481279367503e-07}}
+{"name": "DDO168", "candidate": "interior_D_joint", "passed": true, "changes": {"refinement": 0.0015222479627123864, "boundary": 1.7187025569409542e-07}}
+
+2026-10-12T22:04:36.386248+00:00 score
+{
+  "original_D_joint": {
+    "numerical_pass": true,
+    "methods": {
+      "base": {
+        "equal_galaxy_rms_log10_velocity": 0.16414042462904452,
+        "largest_rectangle_t": 0.6511634521929891
+      },
+      "refined": {
+        "equal_galaxy_rms_log10_velocity": 0.16417279223866804,
+        "largest_rectangle_t": 0.6513721963795736
+      },
+      "boundary": {
+        "equal_galaxy_rms_log10_velocity": 0.1641404422886314,
+        "largest_rectangle_t": 0.6511634723383567
+      }
+    }
+  },
+  "interior_D_joint": {
+    "numerical_pass": true,
+    "methods": {
+      "base": {
+        "equal_galaxy_rms_log10_velocity": 0.14163543392124456,
+        "largest_rectangle_t": 0.6114791521724803
+      },
+      "refined": {
+        "equal_galaxy_rms_log10_velocity": 0.14163446926302864,
+        "largest_rectangle_t": 0.6114844560112628
+      },
+      "boundary": {
+        "equal_galaxy_rms_log10_velocity": 0.14163544843560746,
+        "largest_rectangle_t": 0.6114791743554245
+      }
+    }
+  }
+}

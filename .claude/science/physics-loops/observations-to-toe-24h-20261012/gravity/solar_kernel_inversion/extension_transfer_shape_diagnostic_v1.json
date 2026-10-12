@@ -1,0 +1,180 @@
+{
+  "at": "2026-10-12T22:07:05.537676+00:00",
+  "timing": "Exploratory diagnosis after observing frozen transfer failures; no refit or selected new candidate.",
+  "input_sha256": "4efbd49ef44b8000a393712671c4a4241d3a308672e39e713d76545eb2777aa0",
+  "normalization_scope": "One common multiplier on already predicted circular velocities only; not a self-consistent change to G, stellar ratio, distances or N(A).",
+  "responses": {
+    "original_D_joint": {
+      "global_speed_scale_interval_empty": true,
+      "max_lower": {
+        "name": "UGC06667",
+        "index": 0,
+        "R_kpc": 2.61,
+        "lower": 2.4116981468658962,
+        "upper": 3.176382925140448
+      },
+      "min_upper": {
+        "name": "NGC3949",
+        "index": 1,
+        "R_kpc": 3.5,
+        "lower": 0.7959357210700296,
+        "upper": 0.9373340440108373
+      },
+      "N_max": 2.3376708702485898,
+      "radial_boost_diagnostics": [
+        {
+          "name": "NGC3949",
+          "geometry_sha256": "14b3beae35bd71b68f113f705871110abffc23bcd787f922c998c53814194b47",
+          "worst_rectangle_bin": 1,
+          "R_kpc": 3.5,
+          "newtonian_velocity_kms": 151.47559225247286,
+          "candidate_velocity_kms": 175.3910476744609,
+          "observed_velocity_kms": 152.0,
+          "candidate_radial_force_ratio_to_newtonian": 1.3406935689797745,
+          "observed_radial_acceleration_ratio_to_newtonian": 1.0069359754693594
+        },
+        {
+          "name": "NGC3972",
+          "geometry_sha256": "51238fb39a190c7e7eb3b218dfb673d96dfd6763192f986d243058fe28dcfdd9",
+          "worst_rectangle_bin": 8,
+          "R_kpc": 8.72,
+          "newtonian_velocity_kms": 75.43711347549238,
+          "candidate_velocity_kms": 101.95264500408184,
+          "observed_velocity_kms": 134.0,
+          "candidate_radial_force_ratio_to_newtonian": 1.8265302548145137,
+          "observed_radial_acceleration_ratio_to_newtonian": 3.1552913895752117
+        },
+        {
+          "name": "UGC06667",
+          "geometry_sha256": "ca5eeaf57e48420bf9925f83a1ae16ece392b76fef19fdce22dccac940bf2cf6",
+          "worst_rectangle_bin": 1,
+          "R_kpc": 3.5,
+          "newtonian_velocity_kms": 20.38985365530663,
+          "candidate_velocity_kms": 29.64256298988098,
+          "observed_velocity_kms": 69.3,
+          "candidate_radial_force_ratio_to_newtonian": 2.1135050281833805,
+          "observed_radial_acceleration_ratio_to_newtonian": 11.551496524855674
+        },
+        {
+          "name": "UGC08837",
+          "geometry_sha256": "eef33302d07c177212556be6c24c4a363c1629646c8a0c076a46fc71649c7ea5",
+          "worst_rectangle_bin": 0,
+          "R_kpc": 1.05,
+          "newtonian_velocity_kms": 11.513173576450022,
+          "candidate_velocity_kms": 16.247496343550395,
+          "observed_velocity_kms": 14.6,
+          "candidate_radial_force_ratio_to_newtonian": 1.9915113746062028,
+          "observed_radial_acceleration_ratio_to_newtonian": 1.6081094609182158
+        },
+        {
+          "name": "DDO064",
+          "geometry_sha256": "157a65271206b27177082a757c856162953040f7de251d3a6ddcbd33b3e43392",
+          "worst_rectangle_bin": 5,
+          "R_kpc": 1.48,
+          "newtonian_velocity_kms": 19.340013898311188,
+          "candidate_velocity_kms": 26.773319325635097,
+          "observed_velocity_kms": 40.5,
+          "candidate_radial_force_ratio_to_newtonian": 1.9164207831280644,
+          "observed_radial_acceleration_ratio_to_newtonian": 4.385271462223491
+        },
+        {
+          "name": "DDO168",
+          "geometry_sha256": "ea2f9be2882c59118a91bd40b643119990af9ab2e1a0ce81f2e8186fa353951a",
+          "worst_rectangle_bin": 4,
+          "R_kpc": 2.47,
+          "newtonian_velocity_kms": 25.974553453523196,
+          "candidate_velocity_kms": 35.71101279668324,
+          "observed_velocity_kms": 52.1,
+          "candidate_radial_force_ratio_to_newtonian": 1.890201722662758,
+          "observed_radial_acceleration_ratio_to_newtonian": 4.023270811990138
+        }
+      ]
+    },
+    "interior_D_joint": {
+      "global_speed_scale_interval_empty": true,
+      "max_lower": {
+        "name": "UGC06667",
+        "index": 0,
+        "R_kpc": 2.61,
+        "lower": 2.225097916621487,
+        "upper": 2.9306167682331776
+      },
+      "min_upper": {
+        "name": "DDO168",
+        "index": 1,
+        "R_kpc": 1.24,
+        "lower": 0.7421981694477843,
+        "upper": 0.9121672158862082
+      },
+      "N_max": 2.574264236262164,
+      "radial_boost_diagnostics": [
+        {
+          "name": "NGC3949",
+          "geometry_sha256": "14b3beae35bd71b68f113f705871110abffc23bcd787f922c998c53814194b47",
+          "worst_rectangle_bin": 1,
+          "R_kpc": 3.5,
+          "newtonian_velocity_kms": 151.47559225247286,
+          "candidate_velocity_kms": 178.0840779716831,
+          "observed_velocity_kms": 152.0,
+          "candidate_radial_force_ratio_to_newtonian": 1.382180831404324,
+          "observed_radial_acceleration_ratio_to_newtonian": 1.0069359754693594
+        },
+        {
+          "name": "NGC3972",
+          "geometry_sha256": "51238fb39a190c7e7eb3b218dfb673d96dfd6763192f986d243058fe28dcfdd9",
+          "worst_rectangle_bin": 6,
+          "R_kpc": 6.98,
+          "newtonian_velocity_kms": 81.87511120791704,
+          "candidate_velocity_kms": 107.49148237995794,
+          "observed_velocity_kms": 130.0,
+          "candidate_radial_force_ratio_to_newtonian": 1.7236310083767306,
+          "observed_radial_acceleration_ratio_to_newtonian": 2.521058357456853
+        },
+        {
+          "name": "UGC06667",
+          "geometry_sha256": "ca5eeaf57e48420bf9925f83a1ae16ece392b76fef19fdce22dccac940bf2cf6",
+          "worst_rectangle_bin": 1,
+          "R_kpc": 3.5,
+          "newtonian_velocity_kms": 20.38985365530663,
+          "candidate_velocity_kms": 32.71455356336795,
+          "observed_velocity_kms": 69.3,
+          "candidate_radial_force_ratio_to_newtonian": 2.5742681224322688,
+          "observed_radial_acceleration_ratio_to_newtonian": 11.551496524855674
+        },
+        {
+          "name": "UGC08837",
+          "geometry_sha256": "eef33302d07c177212556be6c24c4a363c1629646c8a0c076a46fc71649c7ea5",
+          "worst_rectangle_bin": 2,
+          "R_kpc": 2.09,
+          "newtonian_velocity_kms": 21.835530092086604,
+          "candidate_velocity_kms": 35.034091345853426,
+          "observed_velocity_kms": 28.1,
+          "candidate_radial_force_ratio_to_newtonian": 2.574270837509956,
+          "observed_radial_acceleration_ratio_to_newtonian": 1.6560946747082506
+        },
+        {
+          "name": "DDO064",
+          "geometry_sha256": "157a65271206b27177082a757c856162953040f7de251d3a6ddcbd33b3e43392",
+          "worst_rectangle_bin": 4,
+          "R_kpc": 1.29,
+          "newtonian_velocity_kms": 15.96358984310619,
+          "candidate_velocity_kms": 25.612808210817416,
+          "observed_velocity_kms": 35.3,
+          "candidate_radial_force_ratio_to_newtonian": 2.5742651267613783,
+          "observed_radial_acceleration_ratio_to_newtonian": 4.889768395071904
+        },
+        {
+          "name": "DDO168",
+          "geometry_sha256": "ea2f9be2882c59118a91bd40b643119990af9ab2e1a0ce81f2e8186fa353951a",
+          "worst_rectangle_bin": 4,
+          "R_kpc": 2.47,
+          "newtonian_velocity_kms": 25.974553453523196,
+          "candidate_velocity_kms": 41.64724394080328,
+          "observed_velocity_kms": 52.1,
+          "candidate_radial_force_ratio_to_newtonian": 2.5708477239185186,
+          "observed_radial_acceleration_ratio_to_newtonian": 4.023270811990138
+        }
+      ]
+    }
+  }
+}

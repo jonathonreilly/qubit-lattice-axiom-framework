@@ -5161,7 +5161,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
   Referee running.
 
-#### C5 Round 15 referee verdicts (recorded 22:45Z; codex gpt-5.6-sol, xhigh)
+#### C5 Round 15 referee verdicts (recorded 22:40Z; codex gpt-5.6-sol, xhigh)
 
 - **R15-1 referee: CONFIRMED WITH CORRECTIONS. Reading FAIL** (`agents/C5_R15-1_referee_verdict.md`).
   - **Lemma S is confirmed.** A smooth, compact, conserved source gives the same instantaneous exterior response.

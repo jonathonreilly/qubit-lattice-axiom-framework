@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-12T20:41:01.809432+00:00",
+  "disposition": "PASS_scoped_final_V2_conditional_reflection_witness_certificate_and_sampling_bound",
+  "R1_discharged": true,
+  "current_complete_note": "DIRECT_REFLECTION_WITNESS_V2.md",
+  "current_complete_note_sha256": "8346f7aac3260325f443b6a1b031790caacef56a85ae072fdb4286b12bf4dafd",
+  "correction_confirmation_sha256": "50d81cd99118bdfb92c811025ea93056580fb0b4d08afc047823817a695038b8",
+  "diff_sha256": "c59df9b42ad1dc478ab5c3bb0822bf38060418a91d1d7cecc3608f4714206663",
+  "prior_receipt_sha256": "9363e8043a730f7e1d51e30728acfc16c5b547ef44a45c6cd1071d5cae5d4782",
+  "unchanged_original_sources": {
+    "DIRECT_REFLECTION_WITNESS.md": "9cc364844c1782d7119d635896cd4a8efe8aaae9b398e0ea622847eb4d34fa65",
+    "direct_reflection_check.py": "225caf4c2bf1d1c2a9e89614ca922cfc07e47aaf21c88f7ece9fed87c1850d4d",
+    "sphere_certificate.py": "03c20ec6781b25aea43bafe8fdc75497a7e9e17c40d6a74efc950c7f10911570"
+  },
+  "unchanged_freeze_sha256": "f3bb957def74411ad2a70848807b8c06db19378f385cd3ae24ada977dcd71223",
+  "unchanged_author_results_sha256": "a911495b6d1f60b48334d03346c45393911031bead3288c2e0c1aad2e7b25ea9",
+  "arithmetic_rerun": false,
+  "full_current_note_read": true,
+  "formal_audit": false,
+  "original_sphere_classification_reviewed": false,
+  "apparatus_claim": false
+}

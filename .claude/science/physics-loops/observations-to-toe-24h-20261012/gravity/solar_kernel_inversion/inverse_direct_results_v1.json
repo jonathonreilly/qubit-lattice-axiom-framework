@@ -1,0 +1,1725 @@
+{
+  "at": "2026-10-12T20:41:29.530117+00:00",
+  "source_sha256": "7eb0db61c3ecaed47d4d904a04924fed1800422358debfb5d81d0c6546da023c",
+  "fits_sha256": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1",
+  "validation_sha256": "89da1eb9a0f8d86851a456ce5279c6a28d1ec9cf7a2d65ecf9825cac755798fa",
+  "cases": [
+    {
+      "label": "M_galaxies_only",
+      "candidate_available": true,
+      "numerical_field_pass": true,
+      "lp_primary_t": 0.0,
+      "lp_secondary_t": 1e-08,
+      "required_t_by_force_method": {
+        "base_direct_force": 6.818041907090472e-06,
+        "refined_direct_force": 0.0001409994278326874,
+        "extended_boundary_force": 6.890370629357228e-06,
+        "matrix_force": 1.000000002430404e-08
+      },
+      "largest_direct_required_t": 0.0001409994278326874,
+      "equal_galaxy_rms_log10_velocity": {
+        "base_direct_force": 0.08067138467639046,
+        "refined_direct_force": 0.08066044214108814,
+        "extended_boundary_force": 0.08067137337405521,
+        "matrix_force": 0.08066646782920901
+      },
+      "per_galaxy": [
+        {
+          "name": "NGC2976",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 2.6933167972869243e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.018696312564342614,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.6933167972869243e-09,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.52,
+              "rms_log10_velocity": 0.018696224329154708,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 1.7705727252914432e-07,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.018696322971235562,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.7705727252914432e-07,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 9.999999862741625e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.018696241335548463,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999862741625e-09,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "UGC07577",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337430041086192,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13372520814719097,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374297952254444,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13373431472173433,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "KK98-251",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 6.818041907090472e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587302141326784,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.590309267508757e-06,
+                0.0,
+                0.0,
+                6.818041907090472e-06
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0001409994278326874,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.03586559188152147,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0001409994278326874,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 6.890370629357228e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873031401822957,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.62478736317364e-06,
+                0.0,
+                0.0,
+                6.890370629357228e-06
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 1.000000002430404e-08,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587228347838321,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999868121543e-09,
+                0.0,
+                0.0,
+                1.000000002430404e-08
+              ]
+            }
+          }
+        }
+      ],
+      "fitted_external_physical_SI": null,
+      "fitted_Q2_s_minus2": null
+    },
+    {
+      "label": "M_galaxies_external",
+      "candidate_available": true,
+      "numerical_field_pass": true,
+      "lp_primary_t": 0.0,
+      "lp_secondary_t": 1e-08,
+      "required_t_by_force_method": {
+        "base_direct_force": 6.818041907090472e-06,
+        "refined_direct_force": 0.0001409994278326874,
+        "extended_boundary_force": 6.890370629357228e-06,
+        "matrix_force": 1.000000002430404e-08
+      },
+      "largest_direct_required_t": 0.0001409994278326874,
+      "equal_galaxy_rms_log10_velocity": {
+        "base_direct_force": 0.08208613026909094,
+        "refined_direct_force": 0.08207081780678258,
+        "extended_boundary_force": 0.0820861160861693,
+        "matrix_force": 0.0820813182214191
+      },
+      "per_galaxy": [
+        {
+          "name": "NGC2976",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 5.625267590966231e-08,
+              "largest_violation_radius_kpc": 1.08,
+              "rms_log10_velocity": 0.03225420180918446,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                5.625267590966231e-08,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 3.587120936258088e-07,
+              "largest_violation_radius_kpc": 1.08,
+              "rms_log10_velocity": 0.03221933319298959,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.587120936258088e-07,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.52,
+              "rms_log10_velocity": 0.0322541843612929,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 9.99999981369507e-09,
+              "largest_violation_radius_kpc": 1.08,
+              "rms_log10_velocity": 0.03225431361620073,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.99999981369507e-09,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "UGC07577",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337430041086192,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.133725208147191,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374297952254444,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13373431472173433,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "KK98-251",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 6.818041907090472e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873021413267855,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.590309267508757e-06,
+                0.0,
+                0.0,
+                6.818041907090472e-06
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0001409994278326874,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.03586559188152149,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0001409994278326874,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 6.890370629357228e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587303140182297,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.62478736317364e-06,
+                0.0,
+                0.0,
+                6.890370629357228e-06
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 1.000000002430404e-08,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587228347838322,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999978303938e-09,
+                0.0,
+                0.0,
+                1.000000002430404e-08
+              ]
+            }
+          }
+        }
+      ],
+      "fitted_external_physical_SI": 2e-10,
+      "fitted_Q2_s_minus2": 3.3875324987205247e-26
+    },
+    {
+      "label": "M_galaxies_external_solar",
+      "candidate_available": true,
+      "numerical_field_pass": true,
+      "lp_primary_t": 0.0,
+      "lp_secondary_t": 1e-08,
+      "required_t_by_force_method": {
+        "base_direct_force": 6.8180419095243135e-06,
+        "refined_direct_force": 0.0001409994278326874,
+        "extended_boundary_force": 6.8903706317910695e-06,
+        "matrix_force": 1.0000002458145579e-08
+      },
+      "largest_direct_required_t": 0.0001409994278326874,
+      "equal_galaxy_rms_log10_velocity": {
+        "base_direct_force": 0.08125722076836016,
+        "refined_direct_force": 0.08125163148008994,
+        "extended_boundary_force": 0.0812572115524367,
+        "matrix_force": 0.08125232668356701
+      },
+      "per_galaxy": [
+        {
+          "name": "NGC2976",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 2.6933166759082937e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025182195449945412,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.6933166759082937e-09,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 3.035772119727098e-05,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025233130592689047,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.035772119727098e-05,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 1.7705727252914432e-07,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025182222584762656,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.7705727252914432e-07,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 9.999999862741625e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025182019744928723,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999862741625e-09,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "UGC07577",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337430041086189,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13372520814719072,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374297952254416,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337343147217341,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "KK98-251",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 6.8180419095243135e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873021413267696,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.5903092672883924e-06,
+                0.0,
+                0.0,
+                6.8180419095243135e-06
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0001409994278326874,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.03586559188152132,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0001409994278326874,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 6.8903706317910695e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873031401822825,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.624787362732911e-06,
+                0.0,
+                0.0,
+                6.8903706317910695e-06
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 1.0000002458145579e-08,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587228347838312,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999868121543e-09,
+                0.0,
+                0.0,
+                1.0000002458145579e-08
+              ]
+            }
+          }
+        }
+      ],
+      "fitted_external_physical_SI": 2e-10,
+      "fitted_Q2_s_minus2": 5.200000000000001e-27
+    },
+    {
+      "label": "D_galaxies_only",
+      "candidate_available": true,
+      "numerical_field_pass": true,
+      "lp_primary_t": 0.0,
+      "lp_secondary_t": 1e-08,
+      "required_t_by_force_method": {
+        "base_direct_force": 6.818041907242587e-06,
+        "refined_direct_force": 0.0001409994278326874,
+        "extended_boundary_force": 6.890370629509343e-06,
+        "matrix_force": 1.0000000088486334e-08
+      },
+      "largest_direct_required_t": 0.0001409994278326874,
+      "equal_galaxy_rms_log10_velocity": {
+        "base_direct_force": 0.08072390083244355,
+        "refined_direct_force": 0.08071027502641247,
+        "extended_boundary_force": 0.08072388937327686,
+        "matrix_force": 0.08071898773949879
+      },
+      "per_galaxy": [
+        {
+          "name": "NGC2976",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 2.693317040044185e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.019364392154251637,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.693317040044185e-09,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.52,
+              "rms_log10_velocity": 0.019330636551754286,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 1.7705727265052295e-07,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.019364400148809587,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.7705727265052295e-07,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 9.999999862741625e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.019364330327245948,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999862741625e-09,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "UGC07577",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374300410861914,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13372520814719094,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337429795225444,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337343147217343,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "KK98-251",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 6.818041907242587e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873021413267855,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.5903092676189394e-06,
+                0.0,
+                0.0,
+                6.818041907242587e-06
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0001409994278326874,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.035865591881521476,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0001409994278326874,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 6.890370629509343e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587303140182297,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.62478736317364e-06,
+                0.0,
+                0.0,
+                6.890370629509343e-06
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 1.0000000088486334e-08,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.03587228347838323,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0000000088486334e-08,
+                0.0,
+                0.0,
+                1.000000002430404e-08
+              ]
+            }
+          }
+        }
+      ],
+      "fitted_external_physical_SI": null,
+      "fitted_Q2_s_minus2": null
+    },
+    {
+      "label": "D_galaxies_external",
+      "candidate_available": true,
+      "numerical_field_pass": true,
+      "lp_primary_t": 0.0,
+      "lp_secondary_t": 1e-08,
+      "required_t_by_force_method": {
+        "base_direct_force": 6.818041907698932e-06,
+        "refined_direct_force": 0.00014099942783246704,
+        "extended_boundary_force": 6.890370629965688e-06,
+        "matrix_force": 1.000000048064933e-08
+      },
+      "largest_direct_required_t": 0.00014099942783246704,
+      "equal_galaxy_rms_log10_velocity": {
+        "base_direct_force": 0.08068317089538782,
+        "refined_direct_force": 0.0806705364883518,
+        "extended_boundary_force": 0.08068315951322456,
+        "matrix_force": 0.08067825530233291
+      },
+      "per_galaxy": [
+        {
+          "name": "NGC2976",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 2.6933167972869243e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.018848272703040823,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.6933167972869243e-09,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.52,
+              "rms_log10_velocity": 0.018826428151248353,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 1.7705727252914432e-07,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.01884828197967714,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.7705727252914432e-07,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 9.999999862741625e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.01884820892922886,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999862741625e-09,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "UGC07577",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337430041086191,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.1337252081471909,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374297952254438,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13373431472173433,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "KK98-251",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 6.818041907698932e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587302141326773,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.5903092671782096e-06,
+                0.0,
+                0.0,
+                6.818041907698932e-06
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.00014099942783246704,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.035865591881521344,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00014099942783246704,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 6.890370629965688e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873031401822845,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.624787362732911e-06,
+                0.0,
+                0.0,
+                6.890370629965688e-06
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 1.000000048064933e-08,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035872283478383116,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999647756752e-09,
+                0.0,
+                0.0,
+                1.000000048064933e-08
+              ]
+            }
+          }
+        }
+      ],
+      "fitted_external_physical_SI": 2.0000000000000003e-10,
+      "fitted_Q2_s_minus2": 3.163007293548101e-26
+    },
+    {
+      "label": "D_galaxies_external_solar",
+      "candidate_available": true,
+      "numerical_field_pass": true,
+      "lp_primary_t": 0.0,
+      "lp_secondary_t": 1e-08,
+      "required_t_by_force_method": {
+        "base_direct_force": 6.818041909676429e-06,
+        "refined_direct_force": 0.00014099942783312813,
+        "extended_boundary_force": 6.890370631943185e-06,
+        "matrix_force": 1.0000002458145579e-08
+      },
+      "largest_direct_required_t": 0.00014099942783312813,
+      "equal_galaxy_rms_log10_velocity": {
+        "base_direct_force": 0.08125722076836012,
+        "refined_direct_force": 0.08125163148008993,
+        "extended_boundary_force": 0.08125721155243666,
+        "matrix_force": 0.08125232668356698
+      },
+      "per_galaxy": [
+        {
+          "name": "NGC2976",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 2.6933166759082937e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025182195449945412,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.6933166759082937e-09,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 3.035772119727098e-05,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025233130592689047,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.035772119727098e-05,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 1.7705727265052295e-07,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.02518222258476266,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.7705727265052295e-07,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 9.999999862741625e-09,
+              "largest_violation_radius_kpc": 2.1,
+              "rms_log10_velocity": 0.025182019744928723,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.999999862741625e-09,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "UGC07577",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374300410861878,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13372520814719066,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13374297952254402,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 0.0,
+              "largest_violation_radius_kpc": 0.57,
+              "rms_log10_velocity": 0.13373431472173403,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        {
+          "name": "KK98-251",
+          "numerical_field_pass": true,
+          "scores": {
+            "base_direct_force": {
+              "required_rectangle_t": 6.818041909676429e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.0358730214132678,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.5903092676189394e-06,
+                0.0,
+                0.0,
+                6.818041909676429e-06
+              ]
+            },
+            "refined_direct_force": {
+              "required_rectangle_t": 0.00014099942783312813,
+              "largest_violation_radius_kpc": 2.06,
+              "rms_log10_velocity": 0.03586559188152142,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.00014099942783312813,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "extended_boundary_force": {
+              "required_rectangle_t": 6.890370631943185e-06,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.035873031401822915,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.62478736317364e-06,
+                0.0,
+                0.0,
+                6.890370631943185e-06
+              ]
+            },
+            "matrix_force": {
+              "required_rectangle_t": 1.0000002458145579e-08,
+              "largest_violation_radius_kpc": 3.13,
+              "rms_log10_velocity": 0.03587228347838321,
+              "required_t_by_row": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.000000019866873e-08,
+                0.0,
+                0.0,
+                1.0000002458145579e-08
+              ]
+            }
+          }
+        }
+      ],
+      "fitted_external_physical_SI": 2e-10,
+      "fitted_Q2_s_minus2": 5.2e-27
+    }
+  ],
+  "limits": "Actual direct fields are rechecked against the same descriptive rectangles. Positive direct t must not be rounded into exact rectangle compatibility. Finite numerical convergence is not interval-certified existence. These three galaxies, solar and external constraints are fitting inputs; no independent prediction or significance is claimed."
+}

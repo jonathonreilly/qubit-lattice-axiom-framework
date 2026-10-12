@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-12T20:46:46.482283+00:00",
+  "source_sha256": "9718702e6921ddc7cd27cd853fe6083e5831d568b0533bb6a98545d31c6b117d",
+  "note_sha256": "6cd3131b2fe517d160ccfa8e7b3d128c58c001da1d1cf00182ec17c96b85a9e3",
+  "fits_sha256": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1",
+  "margin_sha256": "ffa93f9ad0f8a412020eb756bbc996c07caa1b55a4269cbfee865aa7af591ebc",
+  "rows": [
+    {
+      "candidate": "original_D_joint",
+      "E_SI": 1.4915242022774435e-10,
+      "constant_interval_SI": [
+        1e-10,
+        1.7782794100389228e-09
+      ],
+      "N_E": 1.3409101890174848,
+      "K_E": 0.0,
+      "asymptotic_acceleration_ratio": 1.3409101890174848,
+      "asymptotic_circular_speed_scale_ratio": 1.157976765318495,
+      "solar_mass_support_bound_AU": 10983.934931297521,
+      "delta_SI": 4.915242022774435e-11,
+      "flux_checks": [
+        {
+          "radius_over_support_bound": 1.001,
+          "flux_over_4piGM": 1.3409101890174848
+        },
+        {
+          "radius_over_support_bound": 2.0,
+          "flux_over_4piGM": 1.3409101890174848
+        },
+        {
+          "radius_over_support_bound": 10.0,
+          "flux_over_4piGM": 1.3409101890174848
+        }
+      ]
+    },
+    {
+      "candidate": "interior_D_joint",
+      "E_SI": 1.4915242022774435e-10,
+      "constant_interval_SI": [
+        1e-10,
+        5.623413251903491e-09
+      ],
+      "N_E": 1.3820666293142616,
+      "K_E": 0.0,
+      "asymptotic_acceleration_ratio": 1.3820666293142616,
+      "asymptotic_circular_speed_scale_ratio": 1.175613299224818,
+      "solar_mass_support_bound_AU": 10983.934931297521,
+      "delta_SI": 4.915242022774435e-11,
+      "flux_checks": [
+        {
+          "radius_over_support_bound": 1.001,
+          "flux_over_4piGM": 1.3820666293142616
+        },
+        {
+          "radius_over_support_bound": 2.0,
+          "flux_over_4piGM": 1.3820666293142618
+        },
+        {
+          "radius_over_support_bound": 10.0,
+          "flux_over_4piGM": 1.3820666293142625
+        }
+      ]
+    }
+  ],
+  "scope": "Asymptotic point-source/test-particle prediction under constant external boundary. No finite-radius force accuracy, two-body orbit likelihood or observational success claimed."
+}

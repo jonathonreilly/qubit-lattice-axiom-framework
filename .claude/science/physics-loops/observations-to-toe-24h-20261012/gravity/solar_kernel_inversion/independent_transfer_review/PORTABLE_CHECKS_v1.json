@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-12T20:41:47.815071+00:00",
+  "passed": true,
+  "source_sha256": "1c34908b7d06ba182fee5c15de229211e2f6165d6da02d0543bf53ae7451a47d",
+  "snapshot_manifest_sha256": "1773a244f9b0091a7b5cfd748e81f4afdf6ca8e049f68276935abc97dbf8a6e5",
+  "actual_galaxy_fields": 0,
+  "actual_target_arrays_read": false,
+  "actual_refits": 0,
+  "elapsed_seconds": 0.4487034999765456,
+  "peak_rss_bytes_macos": 84410368,
+  "checks": {
+    "base_resume": {
+      "preserved_receipts": 2,
+      "new_sources_after_resume": 4,
+      "target_array_reads": 0
+    },
+    "complete_resume": {
+      "field_calls": 0,
+      "receipts_preserved": 12
+    },
+    "field_failure_flags": {
+      "NGC3949": {
+        "original_D_joint": true,
+        "interior_D_joint": false
+      },
+      "NGC3972": {
+        "original_D_joint": false,
+        "interior_D_joint": true
+      },
+      "UGC06667": {
+        "original_D_joint": true,
+        "interior_D_joint": false
+      },
+      "UGC08837": {
+        "original_D_joint": false,
+        "interior_D_joint": true
+      },
+      "DDO064": {
+        "original_D_joint": true,
+        "interior_D_joint": true
+      },
+      "DDO168": {
+        "original_D_joint": true,
+        "interior_D_joint": true
+      }
+    },
+    "readout": {
+      "combined": {
+        "original_D_joint": {
+          "numerical_pass": false,
+          "methods": {
+            "base": {
+              "equal_galaxy_rms_log10_velocity": 0.03348623362125882,
+              "largest_rectangle_t": 9.99866855977416e-13
+            },
+            "refined": {
+              "equal_galaxy_rms_log10_velocity": null,
+              "largest_rectangle_t": null
+            },
+            "boundary": {
+              "equal_galaxy_rms_log10_velocity": 0.03369845354889019,
+              "largest_rectangle_t": 0.00121000000100072
+            }
+          }
+        },
+        "interior_D_joint": {
+          "numerical_pass": false,
+          "methods": {
+            "base": {
+              "equal_galaxy_rms_log10_velocity": null,
+              "largest_rectangle_t": 1.8100000000000003
+            },
+            "refined": {
+              "equal_galaxy_rms_log10_velocity": 0.02167165510718127,
+              "largest_rectangle_t": 0.0
+            },
+            "boundary": {
+              "equal_galaxy_rms_log10_velocity": 0.021785712559332954,
+              "largest_rectangle_t": 0.0
+            }
+          }
+        }
+      },
+      "target_loads": 2,
+      "synthetic_target_array_keys": 12,
+      "tiny_violation_retained": 9.99866855977416e-13,
+      "unequal_rows_per_source": [
+        2,
+        3,
+        1,
+        4,
+        2,
+        3
+      ],
+      "all_36_weight_calls_bitwise_unchanged": true
+    },
+    "mismatched_resume_receipt_rejected": true,
+    "changed_candidate_identity_rejected": true,
+    "runtime_weight_mutation_rejected_before_save": true
+  }
+}

@@ -855,3 +855,17 @@ pair.
 Family not used: one swapped-dot generator plus three times the cap of
 each ratio span. That remains open. The 300-dimensional affine space is
 not this family.
+
+Cycle 74 target contract: whether every chirality coefficient on the sum
+of one swapped-dot generator and three times the cap of each ratio span
+has partner rank 10.
+
+Family used: one swapped-dot generator plus three times each cap. The
+swapped-dot coordinate is 1 or -1 and the scaled coordinate is 12. The
+two sums are linearly independent. The 17-row pencil has a nonzero
+constant maximal-minor gcd. The pivot gcd has degree 7 on (1, 2),
+(2, 1), and (3, 1), and degree 4 on (1, 3), (2, 3), and (3, 2).
+
+Family not used: every positive integer multiple of the two caps with
+one swapped-dot generator. That remains open. The 300-dimensional
+affine space is not this family.

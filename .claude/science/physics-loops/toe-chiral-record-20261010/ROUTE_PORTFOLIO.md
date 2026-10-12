@@ -395,3 +395,9 @@ swapped-dot coordinate is `0`, the transverse-sign coordinate is `0`,
 and the scaled coordinate is `12`. It does not take one swapped-dot
 generator plus three times each cap, and it does not classify the
 300-dimensional affine space.
+
+Cycle 74 takes one swapped-dot generator plus three times the cap of
+each ratio span. Every chirality coefficient has partner rank 10. The
+swapped-dot coordinate is `1` or `-1` and the scaled coordinate is
+`12`. It does not take every positive integer multiple, and it does not
+classify the 300-dimensional affine space.

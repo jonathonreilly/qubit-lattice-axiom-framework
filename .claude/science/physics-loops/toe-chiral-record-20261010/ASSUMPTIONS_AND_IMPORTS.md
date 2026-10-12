@@ -737,3 +737,10 @@
 - The maximal-minor gcd is a nonzero constant in the chirality coefficient. The pivot gcd has degree 4 on every ordered height pair. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 74
+
+- The ansatz is one swapped-dot generator plus three times the cap of each ratio span, on every ordered height pair. The swapped-dot coordinate is 1 or -1 and the scaled coordinate is 12. The two sums are linearly independent. Every chirality coefficient has partner rank 10. Every positive integer multiple other than three is not in this count.
+- The maximal-minor gcd is a nonzero constant in the chirality coefficient. The pivot gcd has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 4 on (1, 3), (2, 3), and (3, 2). A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

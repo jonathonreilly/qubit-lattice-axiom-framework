@@ -485,3 +485,13 @@ The sum lies in neither ratio span and outside the even space. The
 maximal-minor gcd is a nonzero constant. The pivot gcd has degree 4 on
 every pair. One swapped-dot generator plus three times each cap is not
 in this count. The ten-kernel coefficient span is not classified.
+Cycle 74 shows that one swapped-dot generator plus three times the cap
+of each ratio span has partner rank 10 at every chirality coefficient
+on every ordered height pair. The plus-dot sum has swapped-dot
+coordinate 1. The minus-dot sum has swapped-dot coordinate -1. The
+scaled coordinate is 12. The two sums are linearly independent. Each
+lies in neither ratio span and outside the even space. The
+maximal-minor gcd is a nonzero constant. The pivot gcd has degree 7 on
+(1, 2), (2, 1), and (3, 1), and degree 4 on (1, 3), (2, 3), and (3, 2).
+Every positive integer multiple other than three is not in this count.
+The ten-kernel coefficient span is not classified.

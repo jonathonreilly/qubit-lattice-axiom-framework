@@ -1,39 +1,130 @@
-# Direct author handoff — 2026-10-12T20:50:17.412905+00:00
+# Direct author handoff — October 12, 2026, 21:37 UTC
 
-The human asked this chat to personally drive the campaign. Parent authors the derivations, code, empirical comparisons and research decisions. Independent agents only perform focused checks. Original deadline is 2026-10-13T16:53:00.057432+00:00 (October 13, 12:53 PM EDT); packaging begins 15 minutes earlier. Never extend it. The existing 30-minute heartbeat resumes direct science here. Detached supervisor/AI author are retired and must never restart. DIRECT_AUTHOR.json owns continuation. The earlier toe-observation-inversion-24h-20261012 campaign remains cancelled with its USER_STOP_REQUESTED marker.
+The human explicitly asked this chat to personally drive the campaign. Parent
+chooses and performs derivations, code and observational comparisons. Independent
+agents are focused checks. The detached AI author/supervisor is retired and must
+never restart; DIRECT_AUTHOR.json owns continuation. No replacement author,
+other-chat messages, model changes, science merges/main pushes or formal audit.
 
-## Active computation and exact next action
+Original deadline: 2026-10-13T16:53:00.057432Z (October13,12:53PM EDT). Packaging
+begins16:38Z. Never extend the clock. The existing heartbeat continues direct
+science here. The earlier toe-observation-inversion campaign remains cancelled
+with USER_STOP_REQUESTED. The active campaign has no stop marker. The original
+Documents checkout remains untouched.
 
-One parent-authored fixed numerical job is active: tool session 48352, driver PID 92212 and current base-stage child PID 92215. This is a Python field calculation, not an AI author. Runtime gravity/response_inverse/extension_transfer/COMPUTE_STATUS.json records its current child and phase, COMPUTE.log its output. Its driver runs base, validate, score sequentially and stops at the original packaging time or a stop marker. Do not launch a duplicate. Numerical ownership is confined to those stages; primary theory remains in this chat. Timed caffeinate PID 76848 ends at the original deadline. Cooperative physics-loop lock was refreshed at 20:47:23 UTC through 22:47:23 UTC; renew when needed.
+## Exact next work and process ownership
 
-Read actual transfer results when complete. Both original D joint and separately frozen interior D weights must remain unchanged across all six preselected out-of-fit sources. Never use extension residuals to select a candidate or silently refit. A local failure gets an honest checkpoint and next useful route, not campaign termination. The transfer source/protocol and synthetic failure/resume/readout controls passed independent review; parent read the full report.
+Read runtime gravity/response_inverse/extension_transfer/COMPUTE_STATUS.json
+and COMPUTE.log. The sole active fixed numerical driver is tool session48352,
+PID92212, child98789. It runs base, validate, score on both unchanged response
+candidates. At21:34Z both passed convergence/boundary gates on NGC3949, NGC3972
+and UGC06667. UGC08837 is active, followed by DDO064 and DDO168. No target score
+has been read by this parent before all gates. Do not duplicate, modify the
+running source, select a winning response or refit. The original packaging
+stop is enforced. Recent UGC06667 output and active CPU confirm real progress.
 
-While these fields run, prepare a portable, coherent quantum visibility/reflection milestone. Read review-loop skill, canonical repo workflow and fresh main instructions before packaging; do not launch a formal audit. Use the corrected V2 reflection statement and both scoped reviews. Keep the full original sphere classification out of the milestone. A regular reviewable PR must be attached to this chat; no science merge/main push. Far-field independent review is now complete; parent read the full report and confirmed V2 calibration wording.
+When all gates finish, personally interpret the frozen observational readout
+and preserve every failure. This is exposed development transfer, not blind
+validation. While it runs, choose a focused dynamical-completion or documented
+measurement-map block from the updated OPPORTUNITY_QUEUE.md. Similar inverse
+mathematics is not a shared physical theory.
 
-## Personally checked gravity results
+Quantum validation jobs are complete. Disposable copies are
+/private/tmp/quantum-reflection-validation-20261012 and
+/private/tmp/quantum-reflection-final-validation-20261012; generated audit
+outputs stayed there. Do not resume discovery from them. Timed caffeinate
+PID76848 ends at the deadline. The same physics-loop lock expires22:47:23Z;
+renew its existing owner/holder when needed. No other author owns science files.
 
-Original six-case LP fits: every primary t=0, secondary t=1e-8. All six actual fields passed numerical gates on NGC2976, UGC07577, KK98-251. Actual rectangle readout then found nonzero tiny violations: maximum refined required t=.000140999427833 at KK98-251; preserve it. Original D joint refined equal-galaxy RMS log10 V=.08125163148, fitted Q2=5.2e-27 and physical ge=2e-10.
+## New personally authored and checked work
 
-Separate frozen margin follow-up: at fixed E=1.4915242022774435e-10, weights w9=.8551088963588468,w11=.3370887105890553,w19=.3820666293142616. It passed actual base/refined/boundary galaxy rectangles plus external/solar bounds. Minimum actual normalized inward margin=.03595089118; maximum refinement=.00136096267; Q2=5.008790685237409e-27, ge=2.0613858267822293e-10. Refined aggregate RMS=.09566724266. This optimized robustness, not RMS. Broad UGC07577 rectangles and uncorrected pressure support remain material. These are fitted inputs, not predictions or a confidence statement. See DIRECT_INVERSE_RESULTS.md and runtime DIRECT_INVERSE_FIGURE.png/.pdf (visually inspected).
+Quantum milestone: for real continuous isotropic f, common normal/separable
+tensor-quantum realization of -Vf exists iff V sum|a_l|<=1. The proof uses
+trace-norm necessity and signed Clifford sectors for sufficiency. It gives no
+finite-energy, entropy or dimension promise. A degree-three reflection statistic
+has exact comparison bound1 and certified alternative B(.95)>=1.0512346868899072.
+The ideal k* calibration is distinct from the released-data fit k. Nine portable
+runner families pass; nine deliberate mutations are detected. The same reviewer
+confirmed the full argument, correction and exact final metadata. The original
+all-order sphere classification is outside the validated claim.
 
-The prior supplied fixed response already passed finite numerical checks on nine galaxies: aggregate full RMS=.1279351 versus algebraic=.1397852/Newtonian=.2442107; six-extension full=.1043085 versus algebraic=.0983767. Three improve and three worsen. These are exposed development comparisons, not universal rankings. Current six-source inverse transfer is a distinct unchanged-weight test.
+The managed quantum-reflection worktree uses branch
+codex/quantum-visibility-reflection-20261012, head
+8148be1c698f7c9b3bee8a6a659ec352adbbbdbb. Unit preflight plus final whole-package
+pipeline, strict lint and changed-evidence gates pass on tree
+db5bdc4b10aeb285c0576df770948e4e8c9ad460, frozen base
+516cb69d8487ff04f8a48e065d3dcbe71d7dd237. Only its intended one-node citation
+manifest is proposed under audit-data. No audit or retained verdict is implied.
+Evidence is in milestones/quantum_reflection/final_delivery_evidence/ here.
 
-Static action and exact ramp primitive are checked. Minimal promotion to two independent Lorentz scalars has nonsingular kinetic determinant -1 and fails positive energy. A distinct one-scalar alternative has radial characteristic ratio N/(N+A N'), but its disk/solar operator differs and cannot inherit the fits. Full dynamics, metric/lensing coupling, quantum completion and matter architecture remain open.
+Current measurement statements in agents/boundary_quantum/sphere_completion/:
+- DIRECT_ANGULAR_ROBUSTNESS_V2.md: exact Lipschitz constant2/pi+k*, total
+  variation111/20 including the singular actual diagonal; ten frozen gap/count
+  rows independently checked. V2 qualifies source-independent conditional
+  calibration and heralding before fresh branch/settings. Original computation
+  and source remain preserved.
+- DIRECT_DETECTION_READOUT_V3.md: fair independent bits for missed detections
+  retain all heralded trials. Under explicit independent-loss premises, the
+  candidate correlation scales by eta_A eta_B while the quantum bound stays1.
+  Both assignment formulas and all28 rows were independently checked. Constant
+  +1 assignment needs conditional fairness; V3 gives general marginal terms.
+  Ideal sufficient equal-efficiency threshold is.9753268. With.001rad per arm
+  and.001 candidate correlation error it is.9834123; eta=.985 gives conservative
+  N117986506, while eta=.98 has no positive certified gap. These are hypothetical
+  fixed-horizon design bounds, not measured apparatus performance.
 
-New parent unfitted consequence, now independently checked: both D responses have a constant interval aroundE. Their asymptotic point-source effective monopole factors are 1.340910189 and 1.382066629, with speed scale 1.157976765 and 1.175613299. Extra source support is inside 10983.93493 AU for the supplied solar GM under a strictly uniform external boundary. Exterior multipoles can remain, so this is not an exact finite-radius central force or a binary-catalogue result. See current DIRECT_FAR_FIELD_PREDICTION_V2.md and original source-bound FAR_FIELD_PREDICTION_v1.json.
+Parent read both full independent reports and their counterexamples. The current
+figure is detection_figure/DIRECT_DETECTION_TRADEOFF.png/.pdf and was visually
+inspected. Whitespace-sensitive premise diffs are losslessly encoded in
+PREMISE_DIFF_ARCHIVE_v1.json; unchanged raw files stay local. No prior results
+were retroactively relabelled with corrected-source hashes.
 
-## Personally checked quantum results
+Parent also personally rechecked the inherited public polarization data with a
+named-sheet openpyxl reader and a separate arcsin/tanh formula, no original
+helper import or refit. All36 records (108 coordinate/count/error cells) match;
+maximum mean difference<3.7e-12 counts. Fixed scores: cosine420.641269,
+alternative1447.844250, triangle14117.420390. The exact stationary calibration
+floor is202.554282. These remain exposed descriptive comparisons under an
+uncertain coordinate/readout map and inadequate stationary listed-error model.
+See agents/boundary_quantum/DIRECT_SONG_RECHECK.md. System Python lacked openpyxl;
+the identical source succeeded with supplied workspace Python. Failure and
+source/execution evidence are preserved, with no install or input change.
 
-DIRECT_VISIBILITY_CRITERION.md proves a common normal/separable quantum realization of a continuous isotropic -Vf on S2 exists iff V sum|a_l|<=1; signed Clifford-sector sufficiency and trace-norm necessity independently checked. The finite 300-setting rational norm bound is exact; its candidate B(.95)=1.050499556 is numerical, independently reproduced. No empirical exclusion.
+## Preserved gravity and other limits
 
-DIRECT_REFLECTION_WITNESS_V2.md is the current complete reflection statement. B=-integral C(a,a)+14 double_integral P3 C has exact quantum bound 1. At the preselected exact k*=sqrt2[atanh(1/sqrt2)-atanh1/2], certified B(.95)>=1.0512346868899072. Parent and independent rational implementations agree. The ideal trial estimator J=111/20 yields conservative N=469373 for each 1% error under explicit conditional means, fresh settings and common local maps. R1 was corrected explicitly in V2 and independently confirmed. Original V1 note/checker/freeze/result remain unchanged for reproduction. Not an apparatus claim, tail classification, or a measurement.
+Actual inverse fits remain on NGC2976, UGC07577 and KK98-251. Original D joint
+passes numerical gates but retains maximum tiny rectangle violation
+ t=.000140999427833; refined RMSlogV=.08125163148. Separately frozen interior D
+at E=1.4915242022774435e-10, w9=.8551088963588468,w11=.3370887105890553,
+w19=.3820666293142616 passes the supplied actual galaxy/solar/external rectangles,
+min inward margin.03595089118, Q2=5.008790685237409e-27,
+ge=2.0613858267822293e-10, RMS=.09566724266. This is fitted compatibility.
+UGC pressure support remains uncorrected. Both responses are fixed for transfer.
 
-DIRECT_RESOURCE_OBSTRUCTION.md shows a positive harmonic angular cusp forces divergent harmonic first moment and infinite entropy in the specified direct-sum Clifford construction. It is not a universal entropy lower bound for every realization. Independent proof checks passed. Parent read full inherited sphere theorem, but its full classification/certificate remains independently unvalidated; do not use it as retained truth.
+The earlier supplied-response nine-source field comparison is a distinct exposed
+comparison and does not validate the inverse candidates. Static action is
+checked; the minimal two-independent-Lorentz-scalar promotion has kinetic
+determinant-1. A distinct one-scalar cone N/D cannot inherit this field operator's
+fits. The checked far-field plateau gives speed scale1.157976765/1.175613299
+under a uniform external boundary; multipoles and finite-radius accuracy remain
+open. See prior handoff in commit456fce1880 for complete earlier numerical context.
 
-## Other campaign routes and delivery
+Other bounded routes persist: positive scalar force/noise/source inverse,
+massive tensor geometry not a Cassini fit, failed raw GW controls, conditional
+neutrino endpoint failures, molecular vacuum bounds lacking an apparatus map.
+Matter, gauge, cosmology, viable dynamics and common physical parameters remain
+open. No TOE or blind empirical success is claimed.
 
-PR9501 is OPEN, non-draft, attached, exact head 3153d7b2ddceeb26b78f2e1334ffa83218a01333, branch codex/observations-positive-response-20261012. Its positive scalar force/noise, finite approximation and source-inverse bounded mathematics are independently checked. No merge. RuntimePRS/MONITOR now correctly record attachment. Campaign checkpoint 5226e85ba9 was pushed; current final checkpoint hash is recorded in runtime STATUS after push.
+## Delivery and continuation
 
-Other inherited results remain bounded: massive tensor geometry witness is not a Cassini fit; raw GW extraction failed controls; neutrino endpoint V1/V2 fail their declared conditional atmospheric/gap comparisons; moving molecule vacuum bound is not an apparatus visibility prediction. Calibration/shared-data/observation-map limitations must carry forward. Gauge, matter, cosmology and unification remain open. Earlier detailed checkpoints remain available in Git 6caad9d839, 8e1ead28c9, 5226e85ba9 and their artifacts; this current handoff supersedes stale process instructions.
+PR9503 is OPEN, non-draft, mergeable, exact head8148be1c698f7c9b3bee8a6a659ec352adbbbdbb,
+and attached. PR9501 is verified OPEN and attached at unchanged
+head3153d7b2ddceeb26b78f2e1334ffa83218a01333. Both remain reviewable without science
+landing. Runtime PRS.json records current identities. Campaign science checkpoint
+456fce1880f3835fbaffb9c8565b3d663e13a094 is pushed; runtime STATUS receives the final
+handoff checkpoint hash. Sources, calculations and independent reports are saved.
 
-At the last 15 minutes start no discovery. Preserve evidence and final report, stop owned research at the deadline, summarize strongest checked mathematics, empirical tests, rejected candidates, assumptions/gaps and PRs honestly, then pause the existing heartbeat via AUTOMATION.json. Never infer a TOE from fitted compatibility or mathematical realizability.
+At packaging time begin no new discovery. Preserve FINAL_REPORT.md with strongest
+checked mathematics, empirical comparisons, failures, new assumptions and gaps.
+At the deadline stop owned research, report honestly and pause the existing
+heartbeat through AUTOMATION.json. Until then this chat continues primary work.

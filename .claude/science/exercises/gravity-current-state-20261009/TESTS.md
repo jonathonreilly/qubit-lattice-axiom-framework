@@ -4328,3 +4328,35 @@ Referee running (18:43Z).
   - The registered subtracted-tail measurement is resolution-limited: the spline aliases beyond r ≈ L/6.
   - Matrix-free large-r ingredients favour super-polynomial decay (ΔAICc +4 to +31, β ≈ 0.3–0.45) but are not the registered observable.
   - A dense-grid s_min collapse is traced to an antipodal aliasing artefact.
+
+### C5 Round 12, items 1–2 (pre-registered 19:07Z; launched now)
+
+**R12-1. Graviton production beyond the linear constraint: a lattice hypersurface-deformation (non-abelian) constraint algebra with finite-site matter.**
+- R11-2's worker (unrefereed; referee running) argues two things:
+  - exact linear constraints sourced by energy freeze mobile matter (X2);
+  - the escape is a non-abelian constraint algebra at O(κ²), i.e. nonlinear gravity.
+- The continuum hypersurface-deformation (Dirac) algebra has structure functions. Lattice versions are known to be anomalous: LQG's anomaly problem, Bahr–Dittrich perfect discretizations.
+- Test:
+  - (a) Can a lattice constraint system with finite-site (or box) matter close a deformed algebra {C, C} ~ C to O(κ²), with mobile matter in the physical sector?
+  - (b) What fails: anomaly terms, the lattice spacing, structure functions?
+  - (c) Do R7-1's box tricks (non-analytic symbols, exact on a box) help the algebra close on box states?
+- Prior art: the boost wall (SUMMARY.md §17), lane RN L3, R7-4 (N-type bridge), RFW (field-dependent Ward completion).
+
+Readings:
+- **PASS:** an explicit lattice constraint system closing a deformed algebra to O(κ²) with mobile matter in the physical sector, on a stated domain, checked.
+- **FAIL:** a refereed no-go for closure at O(κ²) with mobile finite-site matter, in a stated class.
+- **INCONCLUSIVE:** otherwise.
+
+**R12-2. Site creation and Λ: can a local rule that creates sites track the expansion and fix the vacuum value without tuning?**
+- R11-3's worker (unrefereed) finds that fixed-site options V2 and V3 can expand only by creating sites. The vacuum question then moves into the value C assigned to new sites: a fixed constant brings back Lemma PT, and a vacuum-tracking value is O3's P13.
+- The owner's thought "count rises" (a hypothesis, not a rule) suggests that records forming on new sites drive the expansion.
+- Construct a local site-creation rule on Z³ (refinement or insertion) and test:
+  - (a) Can it track Friedmann's law using only local, non-vacuum data?
+  - (b) What C do new sites get, and is ⟨Λ⟩ = 0 untuned across a phase transition?
+  - (c) Do redshift, the rapidity budget, and the Lattice axiom's "no site is privileged" survive?
+  - (d) Observational checks: w(z), and isotropy, where insertion is anisotropic on a cubic grid.
+
+Readings:
+- **VIABLE:** an explicit local rule giving Friedmann expansion and ⟨Λ⟩ = 0 untuned, passing the stated checks, with prices named.
+- **EXCLUDED:** a refereed inconsistency, or a violated stated bound.
+- **OPEN:** otherwise.

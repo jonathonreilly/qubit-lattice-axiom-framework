@@ -1,6 +1,6 @@
 {
- "edge_count": 15815,
- "node_count": 7027,
+ "edge_count": 15823,
+ "node_count": 7029,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6277,6 +6277,10 @@
   "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7734e49ea328",
    "out_degree": 10
+  },
+  "excitation_pulse_response_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "7e5ef4c4152e",
+   "out_degree": 4
   },
   "excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11": {
    "deps_hash": "27195ce2744b",
@@ -21089,6 +21093,10 @@
   "tier_a_residual_owner_adoption_retirement_2026-07-04": {
    "deps_hash": "fc99f259bdfe",
    "out_degree": 2
+  },
+  "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "9a794a854a70",
+   "out_degree": 4
   },
   "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03": {
    "deps_hash": "1f65fcda86e7",

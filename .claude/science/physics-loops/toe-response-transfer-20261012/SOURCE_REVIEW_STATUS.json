@@ -1,0 +1,20 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "audit_verdict": null,
+  "base": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+  "branch": "physics-loop/toe-response-transfer-20261012",
+  "disposition": "conditional_bounded_theorems_with_precise_domain_and_limit_controls",
+  "new_mathematics_added": false,
+  "no_go_packet_pass": false,
+  "publication_wrapper_program_review": "pending",
+  "response_review_sha256": "c50b1ac2b3c49fdf951c5729da1a17dbbda4c991cdb35342bd8d1a6a0882f16b",
+  "response_root_scope_acceptance_sha256": "5ce736eaca68385d6c78e05d08d6869b064f1917fe05c5ff221b95095e932c2f",
+  "response_source_sha256": "694e3962b6513089f7422e4c7f7f0a886488b2f2af81f2d8e04be9fea31247ce",
+  "retained_promotion": false,
+  "root_execution_acceptance": false,
+  "same_family_source_exposed_review_limits": true,
+  "science_source_reviews_complete": true,
+  "time_average_review_sha256": "46533eb1f57e866f4b3d7db23c1e41d69eac566ce16cf0eaaa489f58fccfc905",
+  "time_average_source_sha256": "04eef4960b18d6b0e4a7f81852ddceea7fc081c855360bf613aaf9124e141984"
+}

@@ -1,0 +1,16 @@
+{
+  "exclusions": [
+    {
+      "canonical_line": 457,
+      "classification": "One exact LaTeX display factor in reviewed equation (28); not a Markdown link. No source byte edited.",
+      "context": "\\[\n T_c-T_0=(I+S_cB_c)^{-1}\n [S_c-S_0+S_c(B_0-B_c)S_0](I+B_0S_0)^{-1}.           \\tag{28}\n\\]\n",
+      "exact_line": " [S_c-S_0+S_c(B_0-B_c)S_0](I+B_0S_0)^{-1}.           \\tag{28}\n",
+      "note": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "original_line": 399,
+      "raw_match": "](I+B_0S_0)",
+      "source_sha256": "694e3962b6513089f7422e4c7f7f0a886488b2f2af81f2d8e04be9fea31247ce",
+      "target": "I+B_0S_0"
+    }
+  ],
+  "scope": "Narrow source-context inventory only; all other Markdown targets are checked; complete graph delta guard remains mandatory."
+}

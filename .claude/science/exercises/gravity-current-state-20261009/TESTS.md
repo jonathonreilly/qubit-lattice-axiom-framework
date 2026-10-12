@@ -4480,12 +4480,13 @@ Readings:
     - Near zero smearing momentum in d ≥ 2, the SS defect admits a local Hadamard decomposition.
     - Within the fixed completion ansatz, an off-box O(q) Killing defect needs a 1/|q| singularity, i.e. a 1/r^{d−1} tail.
   - **Not established:** an explicit global quasi-local lattice HDA, an undeformed common structure function, W4 closure, or a mobile physical sector.
-- **R12-3 (twisted lattice SUSY):** worker reading INCONCLUSIVE.
-  - Bounded no-gos PD₁, PD₂ (twisted N=2 photino Chern +2), Theorem U (doubler-free photon plus spin-½ photino incompatible in Nicolai form) and Theorem L (lattice SUSY never fixes c_γ/c_e).
-  - The BF multiplet is doubler-free, but has integer-spin photinos and a non-local or uncompleted Hamiltonian.
-  - Twisted N=4 is open.
-
-  Referee running.
+- **R12-3 (twisted lattice SUSY) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE, not bounded FAIL.**
+  - **BF is a genuine doubler-free multiplet.** On Z³ × ℝ the BF construction is a gauge-quotient multiplet with C² = ΔP_phys, c₁ = 0, nilpotent Q and the stated Ward identity.
+  - **But it is incomplete.** Its charged quotient Hamiltonian is Coulomb-nonlocal. No local equivariant completion, and no complete one-loop electron–photon split, was constructed.
+  - **PD₁ fails at its written scope.** An A₂ ⊕ T₂ odd-signature block carries c₁ = +2.
+  - **The odd-signature c₁ = ±2 obstruction** applies only with conserved fermion number, not merely with a ghost U(1)_R.
+  - **Theorem U** excludes untwistable spin-½ photinos only in the narrow SO(3)-linear Nicolai class.
+  - **Exact scalar Q alone does not enforce c_γ = c_e.** Groot Nibbelink–Pospelov rely on the full standard supercharge–translation setting.
 
 ### C5 Round 12, item 6 (pre-registered 19:37Z; launched now; conditional on R12-3, whose referee is running)
 
@@ -4505,24 +4506,23 @@ Readings:
 - **PASS:** an explicit local Hamiltonian law with an exact supercharge, Ward identity, doubler-free spin-½ photino, and a one-loop c_e − c_γ that vanishes or is protected, checked.
 - **FAIL:** a refereed no-go in the N=4 Kähler–Dirac class (locality, spin, or the split).
 - **INCONCLUSIVE:** otherwise.
-- **R12-2 (site creation and Λ):** worker reading OPEN.
-  - The F-law reads only the time variation of energy density (new price P-T). It gives untuned Λ_eff = 0 and exact Friedmann expansion in the homogeneous sector.
-  - Open issues:
-    - redshift requires ordered (non-Poisson) creation;
-    - bound regions need site freezing;
-    - a true Λ is invisible, so dark energy must be dynamical.
-  - Bounded sub-results: the curvature-kick class is EXCLUDED, and random-time insertion matches the Chandra-excluded foam.
-
-  Referee running.
-- **R12-4 (unified CQ no-go):** worker reading DERIVED.
-  - Lemma K: a non-demolition record gives σ̄·P̄ ≥ ħ²|F|²/4 for any stationary state.
-  - Theorem U: matter decoherence and the classical metric record cannot both be locally finite near the cone, in class 𝒰 (contains T_E and T_u).
-  - Outside the class:
-    - a start time;
-    - new route E2, frame friction on gravitational waves (γ ≈ H₀, within the LIGO damping bound).
-  - Minimal price: a preferred frame plus one cone regulator.
-
-  Referee running.
+- **R12-2 (site creation and Λ) — CONFIRMED WITH CORRECTIONS. OPEN.**
+  - **Setting:** V3, fixed proper site density, flat FRW cosmic slicing, timelike site worldlines, statistical homogeneity.
+  - **Creation is forced.** Number balance gives mean creation c̄ = 3H, and the V3 equations leave homogeneous expansion to the creation law.
+  - **The conditional homogeneous construction.** For exact, separately conserved finite constant-w mixtures away from interactions, a derivative (Prony) rule can reconstruct all w ≠ −1 density while annihilating every constant contribution. That gives untuned late Λ_eff = 0, and makes a true Λ non-gravitating.
+  - **What limits it:**
+    - transitions contaminate the higher moments;
+    - the F runner hard-codes its memory evolution;
+    - the local 3D encoder, bound structures, inhomogeneous completion, source bridge and dark-energy sector are all absent.
+  - **No candidate is VIABLE and no general inconsistency is proved.**
+- **R12-4 (unified CQ no-go) — CONFIRMED WITH CORRECTIONS. DERIVED.**
+  - **The class.** Every translation-stationary, spatially homogeneous, linearized record-metric CQ theory at second order whose:
+    - record obeys the stated non-demolition Kubo or additive product bound;
+    - metric response keeps an undamped massless 1/s pole;
+    - gain is bounded away from zero on a one-sided regular cone patch.
+  - **The no-go.** State-independent spectral positivity gives σ̄M ≥ κg²f₀²/s². So matter noise and classical metric-record covariance cannot both be locally finite, in any nonsingular frame.
+  - **The class contains** T_E, T_u and R8-3's retained subclass.
+  - **Narrowed claims.** Specified regulators keep a regulator-dependent log-squared trade. E2 (GW friction) is an uncompleted spectral construction. No universal "preferred frame plus one regulator" minimal price is proved.
 
 ### C5 Round 12, item 7 (pre-registered 19:48Z; launched now; conditional on R12-4, whose referee is running)
 

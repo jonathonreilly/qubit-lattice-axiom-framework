@@ -1,0 +1,98 @@
+{
+  "status": "actual_scoped_verification_completed",
+  "base": "a8ab3f49038327e3080d2f93afb7e34601459928",
+  "canonical": [
+    {
+      "key": "DyadicEven",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/dyadic_refinement_worktree/logs/runner-cache/dyadic_even_refinement_2026_10_12.txt",
+        "bytes": 43335,
+        "sha256": "ef88463ebb63d0b630f3d5bbc895e88961db0bc1fd81145d31281352b5161e33"
+      },
+      "counts": {
+        "passed": 206,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "exact_baseline_v2",
+          "exit_code": 0,
+          "counts": {
+            "passed": 168,
+            "failed": 0
+          },
+          "elapsed_seconds": 3.4000351671129465,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "state_baseline_v2",
+          "exit_code": 0,
+          "counts": {
+            "passed": 38,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.5968594579026103,
+          "timeout_seconds": 60
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "key": "DyadicEven",
+      "cases": [
+        {
+          "name": "mutant_missing_normalization",
+          "exit_code": 1,
+          "counts": {
+            "passed": 27,
+            "failed": 20
+          },
+          "elapsed_seconds": 0.4019206250086427,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_tensor_shortcut",
+          "exit_code": 1,
+          "counts": {
+            "passed": 5,
+            "failed": 1
+          },
+          "elapsed_seconds": 0.3001342499628663,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_missing_state_formfactor",
+          "exit_code": 1,
+          "counts": {
+            "passed": 24,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.6080260002054274,
+          "timeout_seconds": 60
+        }
+      ],
+      "whole_helper_survivors": [],
+      "interpretation": "Original whole-helper sensitivity only; no independent review or new gate"
+    }
+  ],
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 5
+  },
+  "pairing": "Same selected model family and reasoning effort; separate formula-exposed reviewer context, not blinded or diverse-family. Root coauthored the state-adapted conjugacy addendum. Mechanical packaging and reproduction add no independent science review.",
+  "scientific_edits": [],
+  "originals_preserved": true,
+  "lean_recompiled": false,
+  "comparison_mapping": "Resolved temporary CLI paths only; complete helper stdout/stderr and runtime/library versions exact, with actual interpreter checked",
+  "not_run": [
+    "independent scientific controls",
+    "old milestone science",
+    "Lean compilation or installation",
+    "global combined audit",
+    "strict audit lint"
+  ],
+  "audit_verdict_applied": false,
+  "retained_promotion": false,
+  "git_or_pr_mutation": false
+}

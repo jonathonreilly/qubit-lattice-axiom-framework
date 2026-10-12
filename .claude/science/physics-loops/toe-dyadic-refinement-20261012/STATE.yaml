@@ -1,0 +1,11 @@
+loop: toe-dyadic-refinement-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_binding: external_sealed_PARENT_BINDING.json
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+root_role: publication_owner_and_conjugacy_coauthor
+canonical_execution_at_preparation: pending_root_execution
+actual_execution_record: VERIFICATION_RESULT.json_when_present
+independent_landing_gates: pending
+scientific_followup: separate_state_adapted_investigation_not_an_input

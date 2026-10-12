@@ -1,0 +1,56 @@
+[
+  {
+    "name": "mutant_missing_normalization",
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/missing_normalization.py",
+      "bytes": 3033,
+      "sha256": "73bbaa3192c87764cb98df1fb0469a228df0cd52dab30544b44dcdbe3782bbc0"
+    },
+    "original_candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py",
+      "bytes": 3037,
+      "sha256": "b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489"
+    },
+    "literal_diff": "--- candidate.py\n+++ missing_normalization.py\n@@ -3,7 +3,7 @@\n from functools import lru_cache\n import sympy as s\n \n-NORM_SQUARED = s.Rational(1, 2)\n+NORM_SQUARED = s.Integer(1)\n ANCILLARY_PARITY = True\n STATE_CHILD_FACTOR = True\n \n",
+    "original_suite_arguments": [
+      "--suite",
+      "normalization"
+    ],
+    "scope": "Original unchanged whole helper and original selected suite; no new mutation design."
+  },
+  {
+    "name": "mutant_tensor_shortcut",
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/tensor_shortcut.py",
+      "bytes": 3038,
+      "sha256": "cda1e92e413598567149eb6dc0606bb65ceb4ab6c9f23603975bfb782154e3e7"
+    },
+    "original_candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py",
+      "bytes": 3037,
+      "sha256": "b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489"
+    },
+    "literal_diff": "--- candidate.py\n+++ tensor_shortcut.py\n@@ -4,7 +4,7 @@\n import sympy as s\n \n NORM_SQUARED = s.Rational(1, 2)\n-ANCILLARY_PARITY = True\n+ANCILLARY_PARITY = False\n STATE_CHILD_FACTOR = True\n \n I = s.I\n",
+    "original_suite_arguments": [
+      "--suite",
+      "tensor"
+    ],
+    "scope": "Original unchanged whole helper and original selected suite; no new mutation design."
+  },
+  {
+    "name": "mutant_missing_state_formfactor",
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/missing_state_formfactor.py",
+      "bytes": 3038,
+      "sha256": "a0e21f59008f5da9c8b035d0cbc82d4780119f81f96c03e9dc0f56cc87cfa827"
+    },
+    "original_candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py",
+      "bytes": 3037,
+      "sha256": "b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489"
+    },
+    "literal_diff": "--- candidate.py\n+++ missing_state_formfactor.py\n@@ -5,7 +5,7 @@\n \n NORM_SQUARED = s.Rational(1, 2)\n ANCILLARY_PARITY = True\n-STATE_CHILD_FACTOR = True\n+STATE_CHILD_FACTOR = False\n \n I = s.I\n _mul = {\n",
+    "original_suite_arguments": [],
+    "scope": "Original unchanged whole helper and original selected suite; no new mutation design."
+  }
+]

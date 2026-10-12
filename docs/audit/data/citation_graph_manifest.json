@@ -1,6 +1,6 @@
 {
- "edge_count": 15465,
- "node_count": 6894,
+ "edge_count": 15470,
+ "node_count": 6895,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5497,6 +5497,10 @@
   "dt1_time_dimension_proof_walk_note_2026-05-17": {
    "deps_hash": "7cfaf5ef38ff",
    "out_degree": 7
+  },
+  "dyadic_even_refinement_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "c6cb357c79e6",
+   "out_degree": 5
   },
   "dynamics_axiom_minimal_nontriviality_branch_proposal_2026-06-29": {
    "deps_hash": "e3b0c44298fc",

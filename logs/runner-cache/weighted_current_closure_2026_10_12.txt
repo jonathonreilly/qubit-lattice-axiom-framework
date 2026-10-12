@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/weighted_current_closure_2026_10_12.py
+runner_sha256: 60685cae75448ee4d52145e06aff5efa4dd2f400aba8b8930cdeacae232784da
+input_fingerprint_sha256: a1741d4f190f6a26b9d189d393f6b89878586ac17b162696749e22ee15fed39b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+{"density": [{"coefficient": ["1", "0"], "word": "Z@0"}, {"coefficient": ["-1", "0"], "word": "Z@1"}], "name": "nonzero_divergence_is_not_zero_density", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_moment_is_Z0", "passed": true}
+{"name": "divergence_full_basis_zero", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_weighted_reduction_0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_weighted_reduction_0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_weighted_reduction_0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_weighted_reduction_3_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_weighted_reduction_3_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "divergence_weighted_reduction_3_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "scalar_part_does_not_change_moment", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "scalar_part_does_not_change_weighted_action", "passed": true}
+{"name": "selected_Z_test_is_nondiscriminating", "passed": true}
+{"X_action": [{"coefficient": ["-2", "0"], "word": "Y@0"}], "name": "full_basis_rejects_Z_density", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_primitive_reconstructs", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "curl_and_scalar_primitive_change_reconstructs", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_moment_axis0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "representative_independence_axis0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "primitive_independence_axis0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_moment_axis0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "representative_independence_axis0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "primitive_independence_axis0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_moment_axis0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "representative_independence_axis0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "primitive_independence_axis0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_moment_axis1_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "representative_independence_axis1_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "primitive_independence_axis1_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_moment_axis1_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "representative_independence_axis1_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "primitive_independence_axis1_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "two_dimensional_moment_axis1_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "representative_independence_axis1_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "primitive_independence_axis1_Z", "passed": true}
+{"name": "XX_r_nonzero", "passed": true, "terms": 8}
+{"name": "XX_energy_current_conserved_orbits", "nonzero_sums": [], "passed": true}
+{"name": "XX_energy_current_conserved_full_basis", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_t_equals_minus8_h_minus8_long_mod_translation", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_current_formula_independent_Pauli_multiplication", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_nonzero_divergence_primitive_reconstructs", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_weighted_Jacobi_0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_moment_reduction_0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_primitive_reduction_0_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_weighted_Jacobi_0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_moment_reduction_0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_primitive_reduction_0_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_weighted_Jacobi_0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_moment_reduction_0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_primitive_reduction_0_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_weighted_Jacobi_2_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_moment_reduction_2_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_primitive_reduction_2_X", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_weighted_Jacobi_2_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_moment_reduction_2_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_primitive_reduction_2_Y", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_weighted_Jacobi_2_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_moment_reduction_2_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_primitive_reduction_2_Z", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "XX_finite_padded_Jacobi", "passed": true}
+{"name": "XX_requested_beta_1_criterion_rejects", "orbit_residual": [{"coefficient": ["-9", "0"], "word": "X@0 X@1"}, {"coefficient": ["-8", "0"], "word": "X@0 Z@1 Z@2 X@3"}, {"coefficient": ["-9", "0"], "word": "Y@0 Y@1"}, {"coefficient": ["-8", "0"], "word": "Y@0 Z@1 Z@2 Y@3"}], "passed": true}
+{"name": "XX_requested_beta_-8_criterion_rejects", "orbit_residual": [{"coefficient": ["-8", "0"], "word": "X@0 Z@1 Z@2 X@3"}, {"coefficient": ["-8", "0"], "word": "Y@0 Z@1 Z@2 Y@3"}], "passed": true}
+{"name": "nonconserved_fixture_fails_full_basis", "nonzero_sums": [{"coefficient": ["4", "0"], "word": "Z@-1 X@0 Z@1"}, {"coefficient": ["-4", "0"], "word": "Z@-1 Z@0"}, {"coefficient": ["4", "0"], "word": "Y@0 Y@1"}, {"coefficient": ["4", "0"], "word": "X@1"}], "passed": true}
+{"name": "reduction_requires_conservation", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "nonconserved_weighted_Jacobi", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "nonconserved_residual_is_retained", "passed": true}
+{"defect": [{"coefficient": ["8", "0"], "word": "Y@-1 X@0"}, {"coefficient": ["-8", "0"], "word": "Y@0"}], "name": "discarding_nonconserved_residual_is_detected", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "nonconserved_covariance_residual_sign", "passed": true}
+{"defect_l1": "64", "name": "nonconserved_covariance_residual_nonzero", "passed": true}
+{"name": "scalar_current_and_reduction_zero", "passed": true}
+{"name": "onsite_current_and_reduction_zero", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "energy_rescaling_current_quadratic", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "energy_rescaling_reduction_cubic", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "conserved_origin_shift_-4", "passed": true}
+{"defect_l1": "0", "defect_terms": 0, "name": "conserved_origin_shift_5", "passed": true}
+TOTAL: PASS=73 FAIL=0
+per_element: exact sparse coefficient moments, residuals and weighted Jacobi fixtures are checked against the original gates.
+per_site: complete finite Pauli site tests and padding controls are checked; no intended-model conservation is asserted.
+per_mode: checked and not executed — no physical particle spectrum, beta determination or continuum mode is inferred.
+per_block: finite XX and nonconserving fixtures retain all original defect and insensitive rows.
+lattice_wide: checked and not executed — local algebraic closure and the optional supplied-operator corollary require the analytic hypotheses.
+SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.
+
+----- stderr -----
+

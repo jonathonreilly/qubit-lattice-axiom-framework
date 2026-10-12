@@ -1,6 +1,6 @@
 {
- "edge_count": 15503,
- "node_count": 6920,
+ "edge_count": 15515,
+ "node_count": 6926,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6978,6 +6978,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "gapped_boost_invariance_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "7000a4119650",
+   "out_degree": 1
+  },
   "gate_b_complex_action_falsifier_note": {
    "deps_hash": "bf83186f0efa",
    "out_degree": 1
@@ -11938,6 +11942,10 @@
    "deps_hash": "4af4136b6493",
    "out_degree": 1
   },
+  "integrated_boost_covariance_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "91c48be12fd1",
+   "out_degree": 2
+  },
   "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": {
    "deps_hash": "165b6a5a21bb",
    "out_degree": 2
@@ -13938,6 +13946,10 @@
    "deps_hash": "95ca07898375",
    "out_degree": 6
   },
+  "massive_boost_carrier_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "3f8a2f32eabd",
+   "out_degree": 4
+  },
   "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14": {
    "deps_hash": "11786fb5489b",
    "out_degree": 2
@@ -14109,6 +14121,10 @@
   "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
    "deps_hash": "4a576dba9306",
    "out_degree": 6
+  },
+  "microscopic_boost_flow_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "7000a4119650",
+   "out_degree": 1
   },
   "microscopic_current_implementation_bounded_theorem_note_2026-10-12": {
    "deps_hash": "e3b0c44298fc",
@@ -15217,6 +15233,10 @@
   "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {
    "deps_hash": "b64b8dc7658d",
    "out_degree": 4
+  },
+  "nonisolated_fock_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "ec3b4535e53c",
+   "out_degree": 2
   },
   "nonisolated_mass_scattering_bounded_theorem_note_2026-10-12": {
    "deps_hash": "92feca8524f3",
@@ -21545,6 +21565,10 @@
   "weak_field_wave_packets_from_mobile_record_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1ab84217dcde",
    "out_degree": 3
+  },
+  "weighted_current_closure_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "30d5680eaa40",
+   "out_degree": 2
   },
   "weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",

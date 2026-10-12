@@ -1118,11 +1118,32 @@ monic generator of least degree. A positive integer scale of the
 swapped-dot generator is not in this count. The ten-kernel coefficient
 span is not classified. Runner `PASS=8 FAIL=0`.
 
+Cycle 79. On every ordered height pair, `t` times one swapped-dot
+generator plus `r` times the plus cap and `s` times the minus cap has
+partner rank 10 at every chirality coefficient, for every triple of
+positive integers `(t, r, s)`, for each of the two generators. The
+plus-dot swapped-dot coordinate is `t` and the minus-dot swapped-dot
+coordinate is `-t`. Each sum has swapped coordinate `-t`, orthogonal
+coordinate `t`, transverse-sign and sign-product coordinates `s-r`, and
+matched and scaled coordinates `2r+2s`. The two sums are linearly
+independent for every positive integer `t`. Each lies in neither ratio
+span and outside the even space. The partner row at `(t, r, s, c)` is
+`t` times the row at `(1, r/t, s/t, c/t)`. The unit-scale elimination
+polynomial is `(2r+1)^20` or `r^10` for the plus-dot sum and `r^20` or
+`r^10` for the minus-dot sum. Clearing the positive scale gives
+`(2r+t)^20` on the plus-dot source-same pairs, `r^20` on the minus-dot
+source-same pairs, and `r^10` on `(1, 3)`, `(2, 3)`, and `(3, 2)`.
+None depends on `s`, and none has a positive integer root. At heights
+1 and 2 the kernel cross sums are `-2t-4r` and `-4r`. The pivot gcd is
+not this certificate. Both swapped-dot generators are not in this
+count. The ten-kernel coefficient span is not classified. Runner
+`PASS=10 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every triple of positive integers (t, r, s) gives partner
-rank 10, at every chirality coefficient, for t times one swapped-dot
-generator plus r times one ratio-span cap and s times the other. The
+rank 10, at every chirality coefficient, for t times both swapped-dot
+generators plus r times one ratio-span cap and s times the other. The
 case t = 1 is settled. Do not claim the ten-kernel coefficient span is
 settled. Do not claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the

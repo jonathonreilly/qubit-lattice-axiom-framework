@@ -4936,3 +4936,75 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --report-only` reported 0 violations on the
     note. The loop-pack directory is skipped by that lint. The full
     audit pipeline was not run.
+
+## 2026-10-12 author check, cycle 79
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-39 even-span note, and the cycle-32 ratio-span note, both
+   notes on this branch. The unit-scale elimination polynomial is
+   recomputed in this runner, and the positive scale is cleared from
+   it. The order-blind converse is not applied. The even space is
+   named in cycle 39. The two spans are named in cycle 32. The
+   dimension count of the soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 600`. The envelope wrote
+   `logs/runner-cache/chiral_pair_one_swapped_dot_scale_two_cap_multiples_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 600`, `status: ok`, sha256
+   `2f379c7952fcab22be5392d443ee1e031f92a83ce461e04424d081c3c6906ce5`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=10 FAIL=0`.
+   Elapsed 181.13 seconds.
+3. Scope. `t` times one swapped-dot generator plus `r` times the plus
+   cap and `s` times the minus cap, on every ordered height pair, for
+   every triple of positive integers `(t, r, s)`, for each of the two
+   generators. The swapped-dot coordinate is `t` or `-t`. Each sum has
+   swapped coordinate `-t`, orthogonal coordinate `t`, transverse-sign
+   and sign-product coordinates `s-r`, and matched and scaled
+   coordinates `2r+2s`. The two sums are linearly independent for every
+   positive integer `t`. Each lies in neither ratio span and outside
+   the even space. Clearing the positive scale gives `(2r+t)^20` on
+   the plus-dot source-same pairs, `r^20` on the minus-dot source-same
+   pairs, and `r^10` on `(1, 3)`, `(2, 3)`, and `(3, 2)`. None depends
+   on `s`, and none has a positive integer root, so every chirality
+   coefficient has partner rank 10. The kernel cross sums are
+   `-2t-4r` and `-4r`. The pivot gcd is not this certificate. This
+   resultant is not claimed to be the monic generator of least degree.
+   Both swapped-dot generators are outside this count. The ten-kernel
+   coefficient span is not classified. The full soldered bond space is
+   not classified. Status line `proposed_retained`. Surface status
+   `bounded-support`.
+4. N-gate does not apply. The artifact says every positive integer
+   triple has partner rank 10 at every chirality coefficient. It does
+   not claim that a scale of both swapped-dot generators does.
+5. Obligations are in the note. The missing lemma is whether every
+   triple of positive integers `(t, r, s)` gives partner rank 10, at
+   every chirality coefficient, for `t` times both swapped-dot
+   generators plus `r` times the plus cap and `s` times the minus cap.
+6. Mutations, each on a scratch copy, printed `PASS=9 FAIL=1` and exited
+   1. Requiring the cleared eliminants to be `(2r+t)^19`, `r^19`, and
+   `r^9` failed the certificate check. Requiring the plus-dot kernel
+   cross slope to be `-5` failed that witness. An independent generator
+   closure, recomputed in this session, gave 24 rotations, all of
+   determinant 1, and an alphabet orbit of 24, with `(2, 1, 3)` and
+   `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-39 even-span note and the cycle-32 ratio-span note on
+   this branch. Manifest node_count 6948 and edge_count 15656. The new
+   node has out_degree 3 and deps_hash `8817e2ad5d19`. Dependencies are
+   `minimal_axioms`, the cycle-39 even-span note, and the cycle-32
+   ratio-span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the even space and the two spans, and states that the
+   order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=10 FAIL=0`. Clearing the
+    positive scale gives `(2r+t)^20`, `r^20`, or `r^10`. The kernel
+    cross sums are `-2t-4r` and `-4r`.
+12. `scripts/vocab_lint.py --report-only` reported 0 violations on the
+    note. The loop-pack directory is skipped by that lint. The full
+    audit pipeline was not run.

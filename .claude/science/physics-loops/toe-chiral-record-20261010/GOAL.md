@@ -534,3 +534,13 @@ and outside the even space. The plus-dot elimination polynomial is
 Neither depends on s. A positive integer scale of the swapped-dot
 generator is not in this count. The ten-kernel coefficient span is
 not classified.
+Cycle 79 shows that t times one swapped-dot generator plus r times the
+plus cap and s times the minus cap has partner rank 10 at every
+chirality coefficient on every ordered height pair, for every triple of
+positive integers (t, r, s), for each of the two generators. The
+swapped-dot coordinate is t or -t. The matched and scaled coordinates
+are 2r+2s. The two sums are linearly independent for every positive
+integer t. Each lies in neither ratio span and outside the even space.
+Clearing the positive scale gives (2r+t)^20 or r^20 or r^10. None
+depends on s. Both swapped-dot generators are not in this count. The
+ten-kernel coefficient span is not classified.

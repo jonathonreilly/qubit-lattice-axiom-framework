@@ -772,3 +772,10 @@
 - The plus-dot certificate is (2r+1)^20 on (1, 2), (2, 1), and (3, 1), and r^10 on the other three pairs. The minus-dot certificate is r^20 on the source-same pairs and r^10 on the other three. None depends on s. The span obstructions are the unit ideal. The pivot gcd is not this certificate. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 79
+
+- The ansatz is t times one swapped-dot generator plus r times the plus cap and s times the minus cap, for every triple of positive integers (t, r, s), on every ordered height pair. The swapped-dot coordinate is t or -t and the matched and scaled coordinates are 2r+2s. The two sums are linearly independent for every positive integer t. Every chirality coefficient has partner rank 10.
+- The certificate clears the unit-scale eliminant. It is (2r+t)^20 on the plus-dot source-same pairs, r^20 on the minus-dot source-same pairs, and r^10 on the other three pairs. None depends on s. The span obstructions have no strictly positive rational zero. The pivot gcd is not this certificate. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

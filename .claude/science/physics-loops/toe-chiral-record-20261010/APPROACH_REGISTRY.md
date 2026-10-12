@@ -924,3 +924,17 @@ is r^20 or r^10.
 Family not used: a positive integer scale of one swapped-dot generator
 plus the two cap multiples. The case t = 1 is settled. The
 300-dimensional affine space is not this family.
+
+Cycle 79 target contract: whether every triple of positive integers
+(t, r, s) gives partner rank 10, at every chirality coefficient, for
+t times one swapped-dot generator plus r times the plus cap and s
+times the minus cap.
+
+Family used: t times one swapped-dot generator plus every pair of
+positive cap multiples, for each of the two generators. The
+swapped-dot coordinate is t or -t and the scaled coordinate is 2r+2s.
+Clearing the positive scale gives (2r+t)^20 or r^20 or r^10.
+
+Family not used: t times both swapped-dot generators plus the two cap
+multiples. The case t = 1 of that sum is settled. The
+300-dimensional affine space is not this family.

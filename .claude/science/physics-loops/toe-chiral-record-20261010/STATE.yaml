@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 78
-runner_result: PASS=8 FAIL=0
+cycle: 79
+runner_result: PASS=10 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether every triple of positive integers (t, r, s) gives partner rank 10, at every chirality coefficient, for t times one swapped-dot generator plus r times one ratio-span cap and s times the other. The case t = 1 is settled. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether every triple of positive integers (t, r, s) gives partner rank 10, at every chirality coefficient, for t times both swapped-dot generators plus r times one ratio-span cap and s times the other. The case t = 1 is settled. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

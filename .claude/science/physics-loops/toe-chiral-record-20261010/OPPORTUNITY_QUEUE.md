@@ -1,8 +1,8 @@
 # Opportunity queue
 
 1. Decide whether every triple of positive integers (t, r, s) gives
-   partner rank 10, at every chirality coefficient, for t times one
-   swapped-dot generator plus r times one ratio-span cap and s times
+   partner rank 10, at every chirality coefficient, for t times both
+   swapped-dot generators plus r times one ratio-span cap and s times
    the other. The case t = 1 is settled. Do not claim the ten-kernel
    coefficient span is settled. Do not claim the 300-dimensional affine
    space is classified. Do not return to the modulus-3 triple.

@@ -1780,3 +1780,28 @@ polynomial is r^20 or r^10. Neither depends on s. The pivot gcd is not
 this certificate. A positive integer scale of the swapped-dot generator
 is outside this count. The ten-kernel coefficient span is not
 classified. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 79
+
+claim_id: chiral_pair_one_swapped_dot_scale_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; t times one swapped-dot generator plus every pair of positive cap multiples
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, t times one swapped-dot generator plus r
+times the plus cap and s times the minus cap has swapped-dot coordinate
+t or -t and scaled coordinate 2r+2s. The two sums are linearly
+independent for every positive integer t. Every chirality coefficient
+has partner rank 10. Clearing the positive scale gives (2r+t)^20 or
+r^20 or r^10. None depends on s. The pivot gcd is not this certificate.
+Both swapped-dot generators are outside this count. The ten-kernel
+coefficient span is not classified. The 300-dimensional affine space is
+not classified.

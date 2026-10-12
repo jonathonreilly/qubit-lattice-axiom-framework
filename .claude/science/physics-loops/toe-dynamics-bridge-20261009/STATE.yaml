@@ -35,10 +35,10 @@ walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
-lock_refresh_before_utc: '2026-10-12T22:54:55.738303+00:00'
-next_action: Read sealed graph/prepared-pulse/propagation-limit cores, compare after source freeze. Prepare coherent
-  spatial milestone when worker free, bounded exact-source scope evaluation inR/SPATIAL_CONTROL_MILESTONE_CLUSTER_EVALUATION.md.
-  Lockrefreshbefore22:54:55UTC; next recovery23:00 or newmilestone.
+lock_refresh_before_utc: '2026-10-13T00:23:51.029430+00:00'
+next_action: Read graph/native exact comparisons and spatial literal assembly when frozen. Independently derive
+  phase-space-tightness bridge when slot free. Source-only spatial package requires exact review before execution.
+  Lockrefreshbefore00:23:51UTC; next recovery23:15 or milestone.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -63,7 +63,7 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T22:30:49.908643+00:00'
+checkpoint_utc: '2026-10-12T22:48:18.334123+00:00'
 latest_source_refresh: '2026-10-12T22:25:32.108767+00:00'
 latest_other_pr: 9503 at8148be1c698f7c9b3bee8a6a659ec352adbbbdbb; full297-line sphere quantum visibility note read,
   distinct scope/no adoption
@@ -92,8 +92,8 @@ campaign_prs_closed_by_other_activity:
 - 9491
 state_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9495
 state_adapted_published_science_revision: 0d99401253ebf5790b5ac24a2dcb94a74871f874
-lock_refreshed_utc: '2026-10-12T21:14:55.738303+00:00'
-lock_expires_utc: '2026-10-12T23:14:55.738303+00:00'
+lock_refreshed_utc: '2026-10-12T22:43:51.029430+00:00'
+lock_expires_utc: '2026-10-13T00:43:51.029430+00:00'
 energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9496
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
@@ -131,7 +131,7 @@ root_bounded_interaction_proof: /Users/jonreilly/Documents/Codex/research_runs/t
 root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_GROUND_SELECTION_ROOT_PROBE.md
 scoped_lean_status: New68-line CliffordRotation4e1868e2 compiled8 Ring identities with propext only,50.36s; exact
   limited-scope review complete in0a5e693a. No analytic spatial formalization.
-previous_checkpoint_commit: 34465ce863793ed9a4ba61844473751dcf907a93
+previous_checkpoint_commit: bbdf41d5323b7f207c1cdee6e8563fa6ef78822e
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -144,8 +144,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/response_pr_native_recovery_20261012T223049Z.tar.gz
-recovery_map_aliases: 1776
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_prepared_comparison_recovery_20261012T224818Z.tar.gz
+recovery_map_aliases: 1899
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -170,10 +170,11 @@ time_filtered_status: 696-line core and410-line comparison46533eb1 fully read; n
   and sufficient window conditions kept explicit.
 native_spatial_status: 604-line core7ec62ba1 and336-line comparison034ac859 fully read; uniform native clustering
   accepted at stated scope, arbitrary norm-bounded even interval V.
-publication_package: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/response_transfer_publication_preparation
-publication_package_sha256: e4c84cbdf11b119f4d3ed3e39569c9c012158b1604543a3a96a1e289af4977d5
-publication_execution: PR9504 complete, prepare250.86s/verify4.13s, exact108paths, two-node/eight-edge graph; scoped
-  whitespaceGitexit2 retained, zero mathematical predicates. No active root execution.
+publication_package: R/spatial_control_source_preparation being assembled source-only; current immutable published
+  response package preserved.
+publication_package_sha256: null
+publication_execution: No spatial installation/execution; source-only three-note preparation active. PR9504 complete,
+  details in history and RESPONSE_REGULAR_PR.json.
 root_pulse_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SMOOTH_PULSE_ENERGY_ROOT_PROBE.md
 root_time_filtered_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/TIME_SMEARED_TRANSFER_ROOT_PROBE.md
 root_native_spatial_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_ROOT_PROBE.md
@@ -192,14 +193,19 @@ near_ground_clustering_status: 731-line independent3ccc98a7 plus426-line crossch
 bv_pulse_status: 545-line independent0af3a48b plus401-line comparison741b3d4a fully root-read; no required repair;
   exact all-BV form work, onto operator-domain preservation, bounded commutator and actual ground second moment
   accepted conditionally.
-prepared_pulse_status: prepared_pulse_independent active22:16 with source barrier; actual4parent full reads complete,
-  no result frozen. Rootcbcb38df still candidate.
+prepared_pulse_status: 648-line independent0096ba16 plus434-line cross3fe0db39 completely root-read, no required
+  repair. Exact all-BV near-ground work/excess robustness and actual coherent boundary accepted conditionally; ramp-specific
+  necessity open.
 native_local_algebra_status: 672-line d8caaf10 and428-line exactcross0a5e693a fully root-read, no repair. Entire
   finite even interval unitball, no probe-length constants; source-exposed same-family scope.
-graph_energy_status: Root candidates62ac37ec/4c8c850e frozen; graph_energy_independent active under source barrier
-  using checked BV/preparation/time-average parents.
-native_contracted_cone_status: 'New202-line root78fb2f18 sealed22:20:59 after exposed native independentd8caaf10:
-  two-time optimization proposes contracted-distance native velocity-v limiting cone, improved geometric covariance,
-  pulse signaling and local trace consequences. Unchecked; no current milestone scope expansion.'
+graph_energy_status: 887-line5c147e2f fully root-read; graph_energy_independent now source-exposed comparison with
+  root62ac37ec/4c8c850e. No outcome presumed.
+native_contracted_cone_status: 576-lineac453f00 completely root-read, no repair found; native_algebra_comparison
+  now source-exposed comparison with root78fb2f18. No comparison result presumed.
 response_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9504
 response_published_science_revision: f055a7bee614bd614cf3d387ec60804eb9f7597b
+spatial_tightness_status: 'New root192-linebd84550a: spatial one-particle tightness + energy cap + fullCAR convergence
+  proposes global trace compactness; second moments then actual mean-energy limit. Root69-line9d89dc02 spatial escape
+  and43-line7ef2c36e fixed-support energy-tail control separate the two missing resources. Unreviewed, excluded
+  from spatial milestone.'
+previous_publication_package_sha256: e4c84cbdf11b119f4d3ed3e39569c9c012158b1604543a3a96a1e289af4977d5

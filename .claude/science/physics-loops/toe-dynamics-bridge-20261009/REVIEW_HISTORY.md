@@ -15,3 +15,7 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-12T22:14:27.062716+00:00: Complete BV401-line comparison741b3d4a and native672-line independentd8caaf10 root-read; no required repair. Source-exposed native comparison and source-barrier graph independent dispatched. New PR9503 full297-line note read for overlap only, distinct scope/no adoption. Archive source identities and pending dispositions; no new science publication or analytic formal audit.
 
 2026-10-12T22:30:49.908643+00:00: RegularPR9504 created/attached after complete source and exact108path staged checks; no audit. Complete428line nativecomparison0a5e693a root-read,no repair, finiteLeanstatementreviewcomplete. New contractedcone rootcandidate archivedunverified; three source-barrier independentconsequence tasksactive. Next clean spatialchildf055a7bee.
+
+2026-10-12T22:45:10.869385+00:00: Complete root reads of frozen graph887-line5c147e2f and prepared-pulse648-line0096ba16, no required repair found; exact comparisons not completed. New unchecked phase-space tightness bridge and two resource controls frozen. Literal spatial source assembly active. Lock refreshed to00:43:51UTC. No science execution, publication or audit in this checkpoint.
+
+2026-10-12T22:48:18.334123+00:00: Complete prepared-pulse434-line comparison3fe0db39 root-read, no repair required. Native576-line coreac453f00 completely root-read and frozen before root exposure; exact comparison now active. Both completed packets archived. No audit or new publication.

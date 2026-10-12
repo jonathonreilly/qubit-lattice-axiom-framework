@@ -3991,3 +3991,35 @@ Readings:
 - The Wilson-line path is itself a large lattice-fixed magnetic coupling.
 
 Referee running (17:53Z).
+
+### C5 Round 10, items 3–4 (pre-registered 18:01Z; launched now)
+
+**R10-3. Set A: an emission-cancelled classical–quantum hybrid (the R9-4 (iii) open route).**
+- R9-4 (refereed) leaves open correlated, emission-cancelled Gaussian histories: classical at spacelike transfers, quantum-cancelled at timelike ones.
+- Build the simplest explicit model: linearized, a stationary meter dilation with correlated measurement and feedback, cancelling backaction on the timelike cone.
+- Compute:
+  - the Newtonian limit (inside R6-4's window);
+  - γ and c_T;
+  - the null-cone pumping (R8-3's second horn);
+  - the vacuum-excitation rate;
+  - the absorption rate of timelike-transfer matter states into the meter;
+  - the BMV prediction (entanglement or none).
+
+Readings:
+- **VIABLE:** an explicit model passing all stated tests with named prices, with its BMV prediction stated.
+- **EXCLUDED:** a refereed inconsistency or bound violation for the model class.
+- **OPEN:** otherwise.
+
+**R10-4. Λ's mean in set A via a conserved record charge with free volume (q-theory, refining R5-3 route 4).**
+- R5-3 (refereed) shows that zero vacuum stress needs a conserved count, a free volume, and gravity coupled to ε − μn (Gibbs–Duhem, Klinkhamer–Volovik q-theory). Set A has a continuum base, so volume is free.
+- Can set A's records supply a conserved q-type charge? For example: a 3-form or 4-form record density, records as permanent marks whose density is a conserved current, or the record count per comoving volume.
+- Then test:
+  - does equilibrium give ⟨Λ⟩ = 0 without tuning, and survive phase transitions (Lemma PT's escape class "dynamical compensators")?
+  - what sets today's small Λ (relaxation, or a residual from non-equilibrium formation)?
+  - observational checks: w(z), DESI DR2, BBN and CMB constraints on a q-field.
+- The owner's "count rises until frozen" is tested as a hypothesis only.
+
+Readings:
+- **VIABLE:** a model with records as the q-charge giving ⟨Λ⟩ = 0 across phase transitions without tuning, consistent with the stated bounds, with prices named.
+- **EXCLUDED:** a refereed inconsistency, e.g. records cannot be a conserved q-charge under the Record axiom, or a bound is violated.
+- **OPEN:** otherwise.

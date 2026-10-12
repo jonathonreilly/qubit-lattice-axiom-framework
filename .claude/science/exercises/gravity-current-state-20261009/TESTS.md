@@ -2964,3 +2964,22 @@ Readings:
 - State what is now forced, what is dead, and what is open for sets A, B, B′ (LRL) and C.
 - Rank the next decisive tests, with the big open problems first-class.
 - Draft round-6 pre-registrations with fixed readings.
+
+### C5 Round 5 results, part 1 (recorded 14:18Z)
+
+**R5-1 (composites on LRL) — CONFIRMED WITH CORRECTIONS. FAIL, bounded to the corrected stated classes.**
+- **Supports with infinite stabilizers carry nothing.** On L₇, take any finite-dimensional covariant operator family whose support has an infinite pointwise stabilizer: qubit operators on a point, a spacelike line or a spacelike plane (Lemma K). Such a family:
+  - has no massive or massless shell component;
+  - has Haar-a.c. correlations confined to the stabilizer-fixed spacelike sublattice; the singular part is uncontrolled;
+  - gives zero to any decomposable covariant positive-energy four-charge.
+- **Theorem Q.** Continuous full-Γ event rules, past-cone rules included, are condition-independent, and full DLR versions are products.
+  - An arbitrary retarded kernel need not give a product joint law.
+  - Q does not directly refute Admissibility as written: the axiom concerns Z³ with nearest neighbours, not L₇. An explicit bridge would be needed.
+- **Proposition L.** Strict locality excludes fixed-mass content only under (SC_m), a strong extra hypothesis that Bragg relifts evade.
+- **Lemma H.** A measurable frame-picking state cannot be restored by invariant averaging.
+- **Example D (reproduced).** A continuum field smeared on timelike links is consistent but imports set A.
+- **Open:** finite-stabilizer link cells with non-commuting timelike structure, under a genuinely LRL-generated law. R5-4 is running on this.
+
+**R5-2 (infinite-orbit kernels):** worker INCONCLUSIVE; referee running (launched 14:16Z).
+
+**R5-3 (the mean of Λ):** worker reading OPEN on all four routes, with bounded EXCLUDED sub-results; referee running (launched 14:12Z).

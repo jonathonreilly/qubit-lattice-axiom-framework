@@ -1,0 +1,37 @@
+(A) covariance |F_{Lam d}(Lam q) - F_d(q)| (60 digits), m=0.50 s=1.00
+    d(n) = [1, 0, 0, 0]  Q7(d) = -7  max relative deviation over 4 Lam x 6 q: 9.11e-54
+    d(n) = [1, 1, 1, 0]  Q7(d) = -5  max relative deviation over 4 Lam x 6 q: 1.67e-53
+(B) rho_d(a) = W_d(a)/W_d(0) for d = e0 (lattice coords n of a), m=0.50 s=1.00
+    timelike a = (n0,0,0,0): t = sqrt7 n0;  |rho| * t^{3/2} should approach a constant (massive dispersive decay)
+      n0=  1 t=   2.65  rho=-5.286359e-01-6.012702e-01i  |rho|=8.0061e-01  |rho| t^1.5=3.4455  phase/(m t)=-1.733
+      n0=  2 t=   5.29  rho=-1.789741e-01+4.215426e-01i  |rho|=4.5796e-01  |rho| t^1.5=5.5744  phase/(m t)=+0.745
+      n0=  4 t=  10.58  rho=+6.688042e-02-1.396855e-01i  |rho|=1.5487e-01  |rho| t^1.5=5.3319  phase/(m t)=-0.212
+      n0=  8 t=  21.17  rho=+5.040585e-02-1.360682e-02i  |rho|=5.2210e-02  |rho| t^1.5=5.0841  phase/(m t)=-0.025
+      n0= 16 t=  42.33  rho=-1.698914e-03+1.816888e-02i  |rho|=1.8248e-02  |rho| t^1.5=5.0260  phase/(m t)=+0.079
+      n0= 32 t=  84.66  rho=+5.005275e-03-4.041781e-03i  |rho|=6.4334e-03  |rho| t^1.5=5.0118  phase/(m t)=-0.016
+    spacelike a = (0,n,0,0): |rho| e^{m r} r^{?}
+      n=  1  rho=+9.052084e-01+0.0e+00i  |rho| e^(m r)=1.4924e+00  |rho| e^(m r) r^1.5=1.4924e+00
+      n=  2  rho=+6.741021e-01+0.0e+00i  |rho| e^(m r)=1.8324e+00  |rho| e^(m r) r^1.5=5.1828e+00
+      n=  4  rho=+2.218551e-01+0.0e+00i  |rho| e^(m r)=1.6393e+00  |rho| e^(m r) r^1.5=1.3114e+01
+      n=  8  rho=+9.355455e-03+0.0e+00i  |rho| e^(m r)=5.1079e-01  |rho| e^(m r) r^1.5=1.1558e+01
+      n= 16  rho=+4.910282e-05+0.0e+00i  |rho| e^(m r)=1.4637e-01  |rho| e^(m r) r^1.5=9.3679e+00
+      n= 24  rho=+4.671887e-07+0.0e+00i  |rho| e^(m r)=7.6037e-02  |rho| e^(m r) r^1.5=8.9401e+00
+    the link fixes only finitely many Gamma elements: rho_d(g1 a) != rho_d(a) in general:
+      a=[0, 1, 0, 0]  rho(a)=0.905208+0.000000j   g1 a=[3, 8, 0, 0]  rho(g1 a)=-8.838e-02+2.037e-02j
+      a=[1, 0, 0, 0]  rho(a)=-0.528636-0.601270j   g1 a=[8, 21, 0, 0]  rho(g1 a)=9.588e-03+8.833e-03j
+      a=[0, 0, 1, 0]  rho(a)=0.905208+0.000000j   g1 a=[0, 0, 1, 0]  rho(g1 a)=9.052e-01+0.000e+00j
+(C) independent lab-frame check W_{g1 d}(g1 a) / W_d(a)  (d = e0; g1 = rapidity arccosh 8 = 2.7687)
+      a=[0, 0, 0, 0]  W_d(a)=+1.3490470864e+00-0.0000000000e+00i  W_g1d(g1a)=+1.3490470864e+00+0.0000000000e+00i  |diff|/|W(0)|=1.48e-14
+      a=[1, 0, 0, 0]  W_d(a)=-7.1315477306e-01-8.1114177775e-01i  W_g1d(g1a)=-7.1315477306e-01-8.1114177775e-01i  |diff|/|W(0)|=1.25e-14
+      a=[0, 1, 0, 0]  W_d(a)=+1.2211687740e+00+0.0000000000e+00i  W_g1d(g1a)=+1.2211687740e+00-8.2728800416e-15i  |diff|/|W(0)|=1.35e-14
+      a=[0, 0, 1, 0]  W_d(a)=+1.2211687740e+00+0.0000000000e+00i  W_g1d(g1a)=+1.2211687740e+00+0.0000000000e+00i  |diff|/|W(0)|=1.28e-14
+      a=[1, 1, 1, 0]  W_d(a)=-5.3844615379e-01-7.5515244485e-01i  W_g1d(g1a)=-5.3844615379e-01-7.5515244485e-01i  |diff|/|W(0)|=1.30e-14
+(D) s_l = sign(Phi_l/sigma) = sum_k a_k He_k ; one-particle weight a_1^2 * 1! and partial sums of sum a_k^2 k!
+      k= 1  a_k^2 k! = 6.366198e-01   partial sum = 0.636620
+      k= 3  a_k^2 k! = 1.061033e-01   partial sum = 0.742723
+      k= 5  a_k^2 k! = 4.774648e-02   partial sum = 0.790470
+      k=11  a_k^2 k! = 1.424256e-02   partial sum = 0.852474
+      k=21  a_k^2 k! = 5.341454e-03   partial sum = 0.891322
+      k=41  a_k^2 k! = 1.946670e-03   partial sum = 0.921472
+      k=59  a_k^2 k! = 1.125595e-03   partial sum = 0.934335
+      2/pi = 0.6366197723675814   (one-particle fraction of ||s_l Omega||^2 = 1);  tail ~ k^{-3/2} so sum -> 1 slowly

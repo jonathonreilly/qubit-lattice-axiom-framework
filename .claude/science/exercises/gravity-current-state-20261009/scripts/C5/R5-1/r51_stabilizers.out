@@ -1,0 +1,10 @@
+(c) cubic rotations in Gamma fixing e0 (exact count): 24
+(a) B02 (boost on (n0,n2)) fixes e1, e3: True True ; B03 fixes e1, e2: True True
+    B03^5 entries grow (infinite order): 514088  Q7(e1)= 1  Q7(e2)= 1
+(b) BFS ball of Gamma; columns = word length r, #ball, then #elements fixing S pointwise
+    r  #ball              on-site {0}   spacelike link {0,e1}  spacelike link {0,(1,3  spacelike plane {0,e1,  spacelike 3-space {0,e    timelike link {0,e0}  timelike link {0,(1,1,  Lorentzian plane {0,e0       generic 4-simplex
+    1      30                      30                       8                       4                       3                       1                      24                       2                       4                       1
+    2     198                     198                      32                       4                       5                       1                      24                       2                       4                       1
+    3    1038                    1038                     104                       4                       7                       1                      24                       2                       4                       1
+    4    5238                    5238                     320                       4                       9                       1                      24                       2                       4                       1
+    5   26238                   26238                     968                       4                      11                       1                      24                       2                       4                       1

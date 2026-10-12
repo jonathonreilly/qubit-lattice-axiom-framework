@@ -1,0 +1,75 @@
+
+== 4-shell {1,2,3,4}: c = -1.7556;  on z = kappa^2 > 0: max Bbar = -9.8348e-07 at kappa = 0.001;  Bbar/(-kappa^2) at kappa=0.01,0.1,1: 1.0055, 0.9887, 0.6039
+   sign changes on the imaginary-timelike axis at kappa ~ []
+
+   mu^2 = 0.0e+00, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +14.000   (min|h| on contour 9.99e-06)
+
+   mu^2 = 0.0e+00, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +14.000   (min|h| on contour 9.99e-06)
+
+   mu^2 = 1.0e-04, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +14.000   (min|h| on contour 2.14e-08)
+
+   mu^2 = 1.0e-04, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +14.000   (min|h| on contour 1.11e-07)
+
+   mu^2 = 1.0e-02, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +14.000   (min|h| on contour 9.08e-05)
+
+   mu^2 = 1.0e-02, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +14.000   (min|h| on contour 1.01e-04)
+
+== 4-shell {1,2,4,7}: c = -1.3855;  on z = kappa^2 > 0: max Bbar = -9.9745e-07 at kappa = 0.001;  Bbar/(-kappa^2) at kappa=0.01,0.1,1: 1.0054, 0.9845, 0.5501
+   sign changes on the imaginary-timelike axis at kappa ~ []
+
+   mu^2 = 0.0e+00, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +4.000   (min|h| on contour 1.00e-05)
+
+   mu^2 = 0.0e+00, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +4.000   (min|h| on contour 1.00e-05)
+
+   mu^2 = 1.0e-04, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +4.000   (min|h| on contour 3.02e-08)
+
+   mu^2 = 1.0e-04, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +4.000   (min|h| on contour 1.16e-07)
+
+   mu^2 = 1.0e-02, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +4.000   (min|h| on contour 1.20e-04)
+
+   mu^2 = 1.0e-02, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +4.000   (min|h| on contour 1.30e-04)
+
+== 4-shell {2,3,5,6}: c = -1.0713;  on z = kappa^2 > 0: max Bbar = -9.8348e-07 at kappa = 0.001;  Bbar/(-kappa^2) at kappa=0.01,0.1,1: 1.0053, 0.9808, 0.5043
+   sign changes on the imaginary-timelike axis at kappa ~ []
+
+   mu^2 = 0.0e+00, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +16.000   (min|h| on contour 9.99e-06)
+
+   mu^2 = 0.0e+00, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +16.000   (min|h| on contour 9.99e-06)
+
+   mu^2 = 1.0e-04, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +16.000   (min|h| on contour 3.76e-08)
+
+   mu^2 = 1.0e-04, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +16.000   (min|h| on contour 1.20e-07)
+
+   mu^2 = 1.0e-02, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +16.000   (min|h| on contour 1.45e-04)
+
+   mu^2 = 1.0e-02, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +16.000   (min|h| on contour 1.55e-04)
+
+== smooth-f L=2 (all m<=96): c = -0.4282;  on z = kappa^2 > 0: max Bbar = -3.1370e-07 at kappa = 0.001;  Bbar/(-kappa^2) at kappa=0.01,0.1,1: 1.0044, 0.9450, 0.2894
+   sign changes on the imaginary-timelike axis at kappa ~ []
+
+   mu^2 = 0.0e+00, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 9.93e-06)
+
+   mu^2 = 0.0e+00, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +0.000   (min|h| on contour 9.93e-06)
+
+   mu^2 = 1.0e-04, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 5.15e-08)
+
+   mu^2 = 1.0e-04, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +0.000   (min|h| on contour 1.51e-07)
+
+   mu^2 = 1.0e-02, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 4.45e-04)
+
+   mu^2 = 1.0e-02, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +0.000   (min|h| on contour 4.56e-04)
+
+== smooth-f L=3 (all m<=96): c = -0.2245;  on z = kappa^2 > 0: max Bbar = -2.3963e-06 at kappa = 0.001;  Bbar/(-kappa^2) at kappa=0.01,0.1,1: 1.0035, 0.9078, 0.1826
+   sign changes on the imaginary-timelike axis at kappa ~ []
+
+   mu^2 = 0.0e+00, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 9.86e-06)
+
+   mu^2 = 0.0e+00, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 9.86e-06)
+
+   mu^2 = 1.0e-04, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 1.02e-07)
+
+   mu^2 = 1.0e-04, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = -0.000   (min|h| on contour 2.00e-07)
+
+   mu^2 = 1.0e-02, delta = 1e-06: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +0.000   (min|h| on contour 8.02e-04)
+
+   mu^2 = 1.0e-02, delta = 1e-03: zeros of Bbar - mu^2 in keyhole (1e-5<|z|<1e4) = +0.000   (min|h| on contour 8.13e-04)

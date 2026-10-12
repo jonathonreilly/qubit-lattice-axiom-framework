@@ -1,0 +1,7 @@
+L=4: Pauli densities on 4 consecutive qubits: 255
+  weakly invariant (sum commutes with all G): dim 43
+  strongly invariant (density commutes with all G): dim 31
+  densities whose translation sum is identically zero: dim 15
+  dim(strong + zero-sum) = 43  (equals weak dim => weak adds nothing)
+  max |sum_x h_x - sum_x avg(h_x)| over all weak solutions = 0.00e+00
+  averaged density commutes with every G (last solution): residual 0.00e+00

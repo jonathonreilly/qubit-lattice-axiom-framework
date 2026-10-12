@@ -1,0 +1,22 @@
+(1) WW little-group phase constraint with C_n stabilizer: 'X' = matrix element forced to 0
+   n | h= 1/2 h=   1 h= 3/2 h=   2 h= 5/2 h=   3
+   1 |    .     .     .     .     .     .
+   2 |    .     .     .     .     .     .
+   3 |    .     .     .     .     .     .
+   4 |    .     .     .     .     .     .
+   5 |    .     .     .     .     .     .
+   6 |    .     .     X     .     .     .
+   7 |    .     .     X     X     .     .
+   8 |    .     .     X     X     X     .
+   9 |    .     .     X     X     X     X
+  10 |    .     .     X     X     X     X
+  11 |    .     .     X     X     X     X
+  12 |    .     .     X     X     X     X
+   continuous SO(2): forced to 0 iff 2|h| > 2, i.e. |h| > 1  (WW for T^{mu nu})
+   crystallographic orders {1,2,3,4,6}: h=2 is NEVER constrained (row entries '.').
+
+(2a) integer null vectors of Q with 1<=n0<=24: 0 found (expected 0: 7 n0^2 is never a sum of 3 squares)
+(2b) C4 (n2-n3 rotation): in SO+(Q,Z)=True, order=4, fixes pair=[True, True], pair null=[np.True_, np.True_]
+(2b) C3 (n1->n2->n3): in SO+(Q,Z)=True, order=3, fixes pair=[True, True], pair null=[np.True_, np.True_]
+(2c) orders of SO(definite binary integral form) elements found (a,c<=5,|b|<=5): [1, 2, 3, 4, 6]
+     => a Gamma_L element fixing two distinct null vectors has order in {1,2,3,4,6}; none constrains h=2.

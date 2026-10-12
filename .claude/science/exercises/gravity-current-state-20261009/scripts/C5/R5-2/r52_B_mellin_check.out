@@ -1,0 +1,18 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R5-2/scripts/r52_B_mellin_check.py:12: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  v, e = quad(f, 0, dmax, limit=2000, epsabs=0, epsrel=1e-12)
+(i) closed form vs numerical Mellin transform
+  r=1.0 s=1.1: closed=+3.9165418365e+00 (imag 0.0e+00)  numeric=+3.9165418363e+00  rel.diff=6.1e-11
+  r=1.0 s=1.7: closed=+1.6001737533e+00 (imag 0.0e+00)  numeric=+1.6001737533e+00  rel.diff=2.1e-15
+  r=1.0 s=2.5: closed=+1.0833350066e+00 (imag 0.0e+00)  numeric=+1.0833350066e+00  rel.diff=1.6e-15
+  r=2.5 s=1.1: closed=+7.4510327862e-01 (imag 0.0e+00)  numeric=+7.4510327861e-01  rel.diff=1.6e-11
+  r=2.5 s=1.7: closed=+6.3387864695e-01 (imag 0.0e+00)  numeric=+6.3387864695e-01  rel.diff=8.8e-16
+  r=2.5 s=2.5: closed=+6.4781461841e-01 (imag 0.0e+00)  numeric=+6.4781461841e-01  rel.diff=1.2e-15
+(ii) residue sums vs H_r(beta)
+  r=1.0 beta=1e-02: H=+4.72251719e+01; rel.err with k<=0..3: 3.3e-03, 1.6e-05, 1.6e-08, 2.1e-10
+  r=1.0 beta=1e-03: H=+1.43513722e+01; rel.err with k<=0..3: 5.0e-03, 2.5e-06, 1.3e-09, 2.5e-10
+  r=1.0 beta=1e-04: H=-4.33571410e+02; rel.err with k<=0..3: 7.8e-05, 3.7e-09, 2.5e-10, 2.5e-10
+  r=2.5 beta=1e-02: H=-3.49832291e+00; rel.err with k<=0..3: 3.7e-03, 1.9e-05, 8.2e-08, 4.5e-10
+  r=2.5 beta=1e-03: H=+1.49767568e+01; rel.err with k<=0..3: 1.6e-04, 8.0e-08, 3.0e-10, 2.5e-10
+  r=2.5 beta=1e-04: H=-5.63559693e+01; rel.err with k<=0..3: 2.8e-06, 3.9e-10, 2.5e-10, 2.5e-10

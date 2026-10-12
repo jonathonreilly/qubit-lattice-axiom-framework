@@ -1,0 +1,23 @@
+=== A. low-energy content of the explicit law (m=0.30, r=1.0)
+  b=0.00  max|E_lattice - sqrt(M(p)^2+(sin p -+ b)^2)| = 1.7e-16 ; positive-branch minimum 0.3000 at p=0.000
+  b=0.10  max|E_lattice - sqrt(M(p)^2+(sin p -+ b)^2)| = 5.6e-17 ; positive-branch minimum 0.3050 at p=0.100
+  b=0.20  max|E_lattice - sqrt(M(p)^2+(sin p -+ b)^2)| = 1.1e-16 ; positive-branch minimum 0.3153 at p=0.150
+  doubler gaps (min |E| at corners with 0,1,2,3 pi components, b=0.2): ['0.36', '2.31', '4.30', '6.30']
+=== B. one-loop (Hartree) mixing chi5 = d<psi^+ g5 psi>/db (per site, filled sea)
+  N=24  chi5 = -0.50677  (lattice units a^-2 per unit b)
+  N=40  chi5 = -0.50674  (lattice units a^-2 per unit b)
+=== C. calibration: AHE of the spatial-b Weyl semimetal (m=0, r=1, b.Sigma_z = 0.2), imaginary frequency
+  N=32  sigma_xy(i eta=0.02,0.01) = [0.27374 0.75936] ; |Delta_k|/(4 pi^2) = 0.01015
+  N=48  sigma_xy(i eta=0.02,0.01) = [0.00959 0.00957] ; |Delta_k|/(4 pi^2) = 0.01015
+=== D. CS coefficient k = i(Pi^xy - Pi^yx)/(4q), q || z, gapped b0 law (m=0.30, r=1.0)
+  b=0.00 N=32 gap=0.300  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [ 2.325842e-19  5.553646e-19  5.647235e-19  4.954347e-19 -4.216253e-19] ;  anomaly b/(4pi^2)=0.00000
+  b=0.00 N=48 gap=0.300  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-1.651083e-19 -1.671442e-19  3.002827e-19 -3.038871e-20  2.139718e-19] ;  anomaly b/(4pi^2)=0.00000
+  b=0.00 N=64 gap=0.300  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [ 1.007054e-19  3.715760e-20  5.535099e-19  3.371734e-19 -2.867424e-19] ;  anomaly b/(4pi^2)=0.00000
+  b=0.10 N=32 gap=0.316  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-2.254184e-05 -1.661021e-05  1.602649e-06  3.342311e-05  8.132840e-05] ;  anomaly b/(4pi^2)=0.00253
+  b=0.10 N=48 gap=0.310  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-5.757899e-06  4.443574e-07  1.950362e-05  5.285955e-05  1.032153e-04] ;  anomaly b/(4pi^2)=0.00253
+  b=0.10 N=64 gap=0.305  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-1.961074e-06  4.304194e-06  2.356087e-05  5.727624e-05  1.082090e-04] ;  anomaly b/(4pi^2)=0.00253
+      fit k(omega) = -1.94e-06 + 0.00248 omega^2 + 0.0069 omega^4  (lattice units, e=1)
+  b=0.20 N=32 gap=0.319  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-2.080174e-05 -1.023795e-05  2.214090e-05  7.850789e-05  1.628892e-04] ;  anomaly b/(4pi^2)=0.00507
+  b=0.20 N=48 gap=0.316  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-4.025564e-06  6.776049e-06  3.989656e-05  9.760147e-05  1.841009e-04] ;  anomaly b/(4pi^2)=0.00507
+  b=0.20 N=64 gap=0.316  k(q->0, omega) for omega=[0.0, 0.05, 0.1, 0.15, 0.2] : [-1.296210e-06  9.539649e-06  4.276611e-05  1.006589e-04  1.874478e-04] ;  anomaly b/(4pi^2)=0.00507
+      fit k(omega) = -1.27e-06 + 0.00429 omega^2 + 0.0106 omega^4  (lattice units, e=1)

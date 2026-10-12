@@ -1,0 +1,7 @@
+R^2 = 6; base link d0 = e0: |ball| = 81, #d' = 1, |N_R| = 81 (box half-widths [0, 2, 2, 2])
+g = B1           d = g e0 = (8, 21, 0, 0)  Q = -7  box [10, 27, 2, 2]: |ball| = 81, #d' = 1, |N_R| = 81, g N(e0) == N(g e0): True
+g = B2^-1        d = g e0 = (8, 0, -21, 0)  Q = -7  box [10, 2, 27, 2]: |ball| = 81, #d' = 1, |N_R| = 81, g N(e0) == N(g e0): True
+g = B1 R B2^-1   d = g e0 = (1, 0, 0, 0)  Q = -7  box [0, 2, 2, 2]: |ball| = 81, #d' = 1, |N_R| = 81, g N(e0) == N(g e0): True
+g = B3 B1        d = g e0 = (64, 21, 0, 168)  Q = -7  box [83, 27, 2, 219]: |ball| = 81, #d' = 1, |N_R| = 81, g N(e0) == N(g e0): True
+g = R B2 R       d = g e0 = (8, 21, 0, 0)  Q = -7  box [10, 27, 2, 2]: |ball| = 81, #d' = 1, |N_R| = 81, g N(e0) == N(g e0): True
+d1 = (2,4,2,1), Q = -7: |ball| = 69, #d' = 4, |N_R| = 276

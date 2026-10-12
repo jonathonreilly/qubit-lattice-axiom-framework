@@ -1,0 +1,6 @@
+Hermitian err 0.0e+00 | gauge (M d, d^+ M) err 1.2e-16 | proper-rotation covariance err 2.2e-16 | M(-q)+M(q) = 0.0e+00 (odd: P-odd)
+small-q: M(q) / (i eps_ijk q_j) - 1 = 1.07291621154193e-06
+lowest eigenvalue of V(q) = K^+K/2 - k M  along q = |q| n, n = (1,2,2)/3  (negative => H unbounded below)
+  k=1e-03 : |q|/k = 0.25,1,1.9,2.1,4 -> min eig [-2.187e-07 -5.000e-07 -9.500e-08 -3.133e-23 -2.275e-22] ; continuum q(q-2k)/2 = [-2.187e-07 -5.000e-07 -9.500e-08  1.050e-07  4.000e-06]
+  k=1e-02 : |q|/k = 0.25,1,1.9,2.1,4 -> min eig [-2.187e-05 -5.000e-05 -9.492e-06  9.915e-21 -2.306e-20] ; continuum q(q-2k)/2 = [-2.188e-05 -5.000e-05 -9.500e-06  1.050e-05  4.000e-04]
+  k=1e-01 : |q|/k = 0.25,1,1.9,2.1,4 -> min eig [-2.187e-03 -4.988e-03 -8.749e-04 -9.121e-18 -5.289e-18] ; continuum q(q-2k)/2 = [-0.002 -0.005 -0.001  0.001  0.04 ]

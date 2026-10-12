@@ -3253,3 +3253,16 @@ Readings:
 - **PASS:** an explicit finite-per-site law (fermionic allowed, as for R6-1) with an exact Poincaré algebra on a stated box sector and a stated rapidity range, plus the leakage bound, checked.
 - **FAIL:** a no-go showing the box sector cannot carry exact boosts even with a rapidity cutoff (refereed).
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 6 worker results awaiting referees (recorded 14:50Z; worker readings only, nothing here is recorded as a verdict)
+
+- **R5-2:** INCONCLUSIVE. Referee relaunched after a codex capacity error.
+- **R5-4:** INCONCLUSIVE. Referee running.
+- **R5-5:** FAIL (bounded). Referee running.
+- **R6-1:** REFUTED. Witness W: spinless fermions on Z² with a C^∞ box-supported p-wave pair form factor, giving exactly additive ℝ² momentum with nonzero 2→2 scattering and sub-exponential tails. Theorems A1/A2 extend Lemma G to d ≥ 2 for strict-range translation-invariant QCAs. Referee running.
+- **R6-2:** A SUPPLIED-FORCED; B, B′ and C OPEN. Referee running.
+- **R6-5:** worker readings (no FAIL, so no referee required; one may be added if codex capacity allows):
+  - b₀: TUNING-PRICED, 43–49 decades with ≥ 3 joint conditions.
+  - (k_AF)₀: PROTECTED by vacuum stability plus Bloch/Watanabe, not by symmetry.
+  - The dimension-5 CPT-odd photon term is not protected: about 10 decades, suggested.
+  - Law-level CPT: SYMMETRY-PRICED, conditional. It needs inversion in Lattice and Admissibility, a reversible law (the arrow in the state), and a chiral lattice construction that has not been built.

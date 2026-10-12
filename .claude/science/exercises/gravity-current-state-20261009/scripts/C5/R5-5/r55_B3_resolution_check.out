@@ -1,0 +1,4 @@
+4-shell {1,2,3,4}: zeros in keyhole 1e-5<|z|<1e4 at n=60000: +14.000 (min|h| 9.99e-06)
+4-shell {1,2,4,7}: zeros in keyhole 1e-5<|z|<1e4 at n=60000: +4.000 (min|h| 1.00e-05)
+smooth-f L=2 (all m<=96): zeros in keyhole 1e-5<|z|<1e4 at n=60000: -0.000 (min|h| 9.93e-06)
+smooth-f L=3 (all m<=96): zeros in keyhole 1e-5<|z|<1e4 at n=60000: -0.000 (min|h| 9.86e-06)

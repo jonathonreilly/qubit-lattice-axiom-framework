@@ -1,0 +1,28 @@
+
+== 4-shell {1,2,3,4}: 4 zeros found in w=sqrt(z), 0<Re w<12, |Im w|<12 (keyhole count from (B) applies to |z|<1e4)
+   w0 = +1.59431 +5.39590i   z0 = -26.5739 +17.2054i   growth rate Re w0 = 1.5943/a  (e-fold time 0.63 a)
+   w0 = +1.59431 -5.39590i   z0 = -26.5739 -17.2054i   growth rate Re w0 = 1.5943/a  (e-fold time 0.63 a)
+   w0 = +1.38584 -9.73799i   z0 = -92.9078 -26.9905i   growth rate Re w0 = 1.3858/a  (e-fold time 0.72 a)
+   w0 = +1.38584 +9.73799i   z0 = -92.9078 +26.9905i   growth rate Re w0 = 1.3858/a  (e-fold time 0.72 a)
+
+== 4-shell {1,2,4,7}: 4 zeros found in w=sqrt(z), 0<Re w<12, |Im w|<12 (keyhole count from (B) applies to |z|<1e4)
+   w0 = +1.16950 -4.97112i   z0 = -23.3443 -11.6274i   growth rate Re w0 = 1.1695/a  (e-fold time 0.86 a)
+   w0 = +1.16950 +4.97112i   z0 = -23.3443 +11.6274i   growth rate Re w0 = 1.1695/a  (e-fold time 0.86 a)
+   w0 = +0.07377 -9.43397i   z0 = -88.9943 -1.3920i   growth rate Re w0 = 0.0738/a  (e-fold time 13.55 a)
+   w0 = +0.07377 +9.43397i   z0 = -88.9943 +1.3920i   growth rate Re w0 = 0.0738/a  (e-fold time 13.55 a)
+
+== 4-shell {2,3,5,6}: 6 zeros found in w=sqrt(z), 0<Re w<12, |Im w|<12 (keyhole count from (B) applies to |z|<1e4)
+   w0 = +1.31994 -7.66470i   z0 = -57.0054 -20.2339i   growth rate Re w0 = 1.3199/a  (e-fold time 0.76 a)
+   w0 = +1.31994 +7.66470i   z0 = -57.0054 +20.2339i   growth rate Re w0 = 1.3199/a  (e-fold time 0.76 a)
+   w0 = +1.31169 -4.19260i   z0 = -15.8573 -10.9988i   growth rate Re w0 = 1.3117/a  (e-fold time 0.76 a)
+   w0 = +1.31169 +4.19260i   z0 = -15.8573 +10.9988i   growth rate Re w0 = 1.3117/a  (e-fold time 0.76 a)
+   w0 = +0.65126 +10.98351i   z0 = -120.2132 +14.3063i   growth rate Re w0 = 0.6513/a  (e-fold time 1.54 a)
+   w0 = +0.65126 -10.98351i   z0 = -120.2132 -14.3063i   growth rate Re w0 = 0.6513/a  (e-fold time 1.54 a)
+
+== smooth-f L=2 (all m<=96): zeros of Bbar in keyhole 1e-5<|z|<1e+04: -0.000 (min|h| 9.93e-06)
+
+== smooth-f L=2 (all m<=96): zeros of Bbar in keyhole 1e-5<|z|<1e+06: +0.000 (min|h| 9.93e-06)
+
+== smooth-f L=3 (all m<=96): zeros of Bbar in keyhole 1e-5<|z|<1e+04: +0.000 (min|h| 9.86e-06)
+
+== smooth-f L=3 (all m<=96): zeros of Bbar in keyhole 1e-5<|z|<1e+06: +0.000 (min|h| 9.86e-06)

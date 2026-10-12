@@ -1,0 +1,27 @@
+(a) k=3: max rel. error of q.d_n = -sqrt(k) m cosh(th - n eta0) over test points: 4.82e-80
+(a) k=7: max rel. error of q.d_n = -sqrt(k) m cosh(th - n eta0) over test points: 5.28e-80
+(b) k=3, two-term law c0=1.0, c1=0.9, c2=0.5, a=(0, 1), b=(1, 1); Jensen chi = 0.10536
+    m=0.4, th=0.1: chi_+ (forward) = 0.1028, chi_- (backward) = -0.02282, chi_+ + chi_- = 0.0799
+    m=0.4, th=0.9: chi_+ (forward) = 0.05831, chi_- (backward) = -0.03425, chi_+ + chi_- = 0.0241
+    m=1.3, th=0.37: chi_+ (forward) = 0.1551, chi_- (backward) = -0.08838, chi_+ + chi_- = 0.0667
+    m=2.5, th=1.2: chi_+ (forward) = 0.1072, chi_- (backward) = -0.09466, chi_+ + chi_- = 0.0126
+(b) k=7, two-term law c0=1.0, c1=0.9, c2=0.5, a=(0, 1), b=(1, 1); Jensen chi = 0.10536
+    m=0.4, th=0.1: chi_+ (forward) = 0.1983, chi_- (backward) = -0.2353, chi_+ + chi_- = -0.037
+    m=0.4, th=0.9: chi_+ (forward) = 0.1768, chi_- (backward) = -0.05023, chi_+ + chi_- = 0.127
+    m=1.3, th=0.37: chi_+ (forward) = 0.1367, chi_- (backward) = -0.0481, chi_+ + chi_- = 0.0885
+    m=2.5, th=1.2: chi_+ (forward) = 0.1334, chi_- (backward) = -0.1168, chi_+ + chi_- = 0.0166
+(c) k=3, eta0=1.31696, coin angle zeta=0.6, truncation N=24, theta grid 240 on [0, eta0)
+    m=0.2: Lyapunov (per step) min/mean = 0.033/0.216; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 38; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.096, 0.025, 0.008, 0.000; min |mismatch| = 1.21e-02, max = 3.14
+    m=0.5: Lyapunov (per step) min/mean = 0.043/0.211; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 30; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.075, 0.017, 0.008, 0.004; min |mismatch| = 5.46e-03, max = 3.13
+    m=1.0: Lyapunov (per step) min/mean = 0.049/0.227; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 39; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.058, 0.029, 0.008, 0.008; min |mismatch| = 7.15e-04, max = 3.12
+    Gamma check (evaluated at the shifted site): mismatch(th=0.3, site 0) = 3.13178585317, mismatch(th=0.3+eta0, site 1) = 3.13178585317, diff = 5.01e-73
+(c) k=3, eta0=1.31696, coin angle zeta=1.2, truncation N=24, theta grid 240 on [0, eta0)
+    m=0.5: Lyapunov (per step) min/mean = 0.571/1.011; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 13; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.233, 0.096, 0.037, 0.017; min |mismatch| = 1.06e-04, max = 3.12
+    Gamma check (evaluated at the shifted site): mismatch(th=0.3, site 0) = 0.0545995209937, mismatch(th=0.3+eta0, site 1) = 0.0545995209937, diff = 8.63e-81
+(c) k=7, eta0=2.76866, coin angle zeta=0.6, truncation N=24, theta grid 240 on [0, eta0)
+    m=0.2: Lyapunov (per step) min/mean = 0.034/0.215; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 38; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.108, 0.029, 0.000, 0.000; min |mismatch| = 4.16e-02, max = 3.12
+    m=0.5: Lyapunov (per step) min/mean = 0.022/0.216; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 54; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.100, 0.025, 0.013, 0.000; min |mismatch| = 1.22e-02, max = 3.14
+    Gamma check (evaluated at the shifted site): mismatch(th=0.3, site 0) = 3.05947635131, mismatch(th=0.3+eta0, site 1) = 3.05947635131, diff = 4.81e-56
+(c) k=3, eta0=1.31696, coin angle zeta=0.6, truncation N=34, theta grid 600 on [0, eta0)
+    m=0.5: Lyapunov (per step) min/mean = 0.045/0.208; max ||z|-1| = 0.0e+00; zero crossings of mismatch in [0,eta0): 70; fraction |mismatch|<eps for eps=0.3,0.1,0.03,0.01: 0.070, 0.022, 0.010, 0.002; min |mismatch| = 5.43e-03, max = 3.13
+    Gamma check (evaluated at the shifted site): mismatch(th=0.3, site 0) = 0.252080151303, mismatch(th=0.3+eta0, site 1) = 0.252080151303, diff = 1.31e-65

@@ -1,0 +1,25 @@
+1. proper-cubic covariance (24 rotations, spinor lift):
+   Wilson-Dirac b=0.4 : max |S h(k) S^+ - h(Rk)| = 4.44e-15
+   naive Weyl t3=0.3  : max |S h(k) S^+ - h(Rk)| = 1.22e-15
+2. discrete maps found as intertwiners of the b=0 law; parity of the added term:
+   Wilson-Dirac, term gamma5 (b0): {'P': '-1 (odd) [solution-space dim 1]', 'T': '+1 (even) [solution-space dim 1]', 'C': '+1 (even) [solution-space dim 1]'}
+   CPT parity of b-term = product of P,T,C parities
+   naive Weyl, scalar term (t3 cos.cos.cos multiplies 1): {'P': None, 'T': '+1 (even) [solution-space dim 1]', 'C': None}
+   note: for the naive Weyl law the scalar function multiplying 1 matters, see 3.
+3. naive Weyl h2 = sigma.sin k + t3 c1c2c3, t3=0.3: Weyl nodes at the 8 BZ corners
+   corner (0, 0, 0) chirality +1  node energy +0.300
+   corner (0, 0, 1) chirality -1  node energy -0.300
+   corner (0, 1, 0) chirality -1  node energy -0.300
+   corner (0, 1, 1) chirality +1  node energy +0.300
+   corner (1, 0, 0) chirality -1  node energy -0.300
+   corner (1, 0, 1) chirality +1  node energy +0.300
+   corner (1, 1, 0) chirality +1  node energy +0.300
+   corner (1, 1, 1) chirality -1  node energy -0.300
+   taste-singlet offset (1/8) sum_A chi_A E_A = 0.3000  (= t3: all R nodes at +t3, all L at -t3)
+   control t1*sum cos            : (1/8) sum chi E = -0.0000
+   control t2*sum_{i<j} cos cos  : (1/8) sum chi E = 0.0000
+4. one-particle CPT as a unitary U h(-k+Q) U^+ = -h(k), found on the term-free law; image of the added term
+   Wilson-Dirac, b*gamma5                   Q=[0. 0. 0.] : CPT parity of term -1 (CPT-odd, forbidden) [dim 1]
+   naive Weyl, t3 c1c2c3                    Q=[0. 0. 0.] : CPT parity of term -1 (CPT-odd, forbidden) [dim 1]
+   naive Weyl, t3 c1c2c3                    Q=[3.14159265 3.14159265 3.14159265] : no CPT intertwiner
+   naive Weyl, t1 sum cos                   Q=[0. 0. 0.] : CPT parity of term -1 (CPT-odd, forbidden) [dim 1]

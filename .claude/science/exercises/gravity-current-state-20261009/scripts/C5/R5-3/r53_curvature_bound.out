@@ -1,0 +1,8 @@
+past (Big Bang -> today): int a adot^2 dt = 0.4832, int a dt = 0.5272  (units a0/H0, adot0 = 1)
+past-only a-weighted <adot^2> = 0.9166 adot0^2
+|Omega_k0| <= 0.0034: total int a dt must be >= 142.1 (past supplies 0.527); a future phase at a = a_l with adot ~ 0 must last >= 142 (a0/a_l) Hubble times
+|Omega_k0| <= 0.002: total int a dt must be >= 241.6 (past supplies 0.527); a future phase at a = a_l with adot ~ 0 must last >= 241 (a0/a_l) Hubble times
+|Omega_k0| <= 0.001: total int a dt must be >= 483.2 (past supplies 0.527); a future phase at a = a_l with adot ~ 0 must last >= 483 (a0/a_l) Hubble times
+LCDM continued 1 H0^-1: <adot^2>_a = 2.010 adot0^2 (bound on Omega_k0 grows)
+LCDM continued 3 H0^-1: <adot^2>_a = 39.452 adot0^2 (bound on Omega_k0 grows)
+LCDM continued 10 H0^-1: <adot^2>_a = 4020952.699 adot0^2 (bound on Omega_k0 grows)

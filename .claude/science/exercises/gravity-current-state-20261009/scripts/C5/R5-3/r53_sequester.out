@@ -1,0 +1,28 @@
+  K[s] = fun(t + c * h, y + dy)
+== identity check: F(C) - C = (1/4)<tau_total> = -(1/4)<R>; flat FRW: int a^3 R dt = 6[a^3 H] - 6 int a adot^2 dt < 0
+  s=1.0, C=2.0: F-C = 4.86651 ; -(1/4)<R> from identity = 4.87458 (trapezoid on solver nodes)
+  s=2.0, C=10.0: F-C = 9.73259 ; -(1/4)<R> from identity = 9.74874 (trapezoid on solver nodes)
+
+== flat (k=0): fixed points of C = (1/4)<phidot^2 - rho_m> + s<phi>  (equivalently <R> = 0)
+  s=0.5: roots=[] ; min over grid of F-C = 2.4331 (positive => none)
+  s=1.0: roots=[] ; min over grid of F-C = 4.8663 (positive => none)
+  s=2.0: roots=[] ; min over grid of F-C = 9.7326 (positive => none)
+  s=4.0: roots=[] ; min over grid of F-C = 19.4652 (positive => none)
+
+== closed (k>0): self-consistent histories; Omega_k0 = -k/(a0 H0)^2 at the epoch Omega_m = 0.315
+  s | k | C* | H0 t0 | q0 | w(0) | w(0.5) | w(1) | CPL w0, wa | Omega_k0 | t_total H0 | a_max/a0
+  s=1.0, k=0.05: no fixed point (F-C range 4.86..6.44)
+  s=1.0, k=0.2: no fixed point (F-C range 4.65..5.55)
+  s=1.0, k=0.5: no fixed point (F-C range 2.39..4.87)
+  s=1.0, k=1.0, C*=4.3200: Omega_m never 0.315 while expanding
+  s=1.0, k=2.0: no fixed point (F-C range -98..-52.2)
+  s=2.0, k=0.05: no fixed point (F-C range 9.73..11.1)
+  s=2.0, k=0.2: no fixed point (F-C range 9.5..10.2)
+  s=2.0, k=0.5: no fixed point (F-C range 6.99..9.73)
+  s=2.0, k=1.0, C*=3.8179: Omega_m never 0.315 while expanding
+  s=2.0, k=2.0, C*=32.1821: Omega_m never 0.315 while expanding
+  s=4.0, k=0.05: no fixed point (F-C range 19.5..20.8)
+  s=4.0, k=0.2: no fixed point (F-C range 19.2..19.8)
+  s=4.0, k=0.5: no fixed point (F-C range 16.4..19.5)
+  s=4.0, k=1.0: no fixed point (F-C range 2.98..19.5)
+  s=4.0, k=2.0, C*=32.7153: Omega_m never 0.315 while expanding

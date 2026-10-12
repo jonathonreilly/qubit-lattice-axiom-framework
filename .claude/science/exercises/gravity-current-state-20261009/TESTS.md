@@ -2982,7 +2982,15 @@ Readings:
 
 **R5-2 (infinite-orbit kernels):** worker INCONCLUSIVE; referee running (launched 14:16Z).
 
-**R5-3 (the mean of Λ):** worker reading OPEN on all four routes, with bounded EXCLUDED sub-results; referee running (launched 14:12Z).
+**R5-3 (the mean of Λ) — CONFIRMED WITH CORRECTIONS. All four routes OPEN; no untuned, observationally viable derivation of ⟨Λ⟩ = 0 exists in the campaign.** Referee recorded 14:33Z.
+- **Lemma PT holds within G1–G3:** a Levi-Civita metric theory with conserved true matter stress. There, a prescribed c-number vacuum subtraction cannot protect the geometry across phase transitions. The electroweak shift alone needs cancellation to about 1 part in 4.7e54.
+  - G1–G3 is not complete. It leaves out global constraints, four-form fluxes, dynamical compensators, symmetries, modified gravity and exchanging sectors.
+- **Route 3 (sequestering).** The original global Kaloper–Padilla ⟨R⟩ = 0 rule is EXCLUDED, bounded to its class: global, homogeneous, finite endpoints, no extreme loitering. Lemma S gives |Ω_k0| ≥ 0.917 for a ΛCDM-like past; 241.6 a0/H0 of loitering would be needed. This does not extend to local or Gauss–Bonnet sequestering.
+- **Route 2 (Baum–Hawking/Coleman).** The weight e^{3π/GΛ} is non-normalizable, so it is a formal weight, not a probability. Polchinski's phase reverses its sign.
+  - R2-4 excludes a positive full W1–W3 measure, but not a marginal prior on a global constant.
+  - The fixed-count "saddle" Λ* = √(24π²/V) is not a controlled saddle.
+- **Route 4 (records forming until frozen).** The Gibbs–Duhem objection is confirmed. Forming records leave an additive constant unfixed, and formation may stop before the minimum. Coupling gravity to ε − μn needs an extra q-type source rule.
+- **Curvature data.** DESI DR2 gives 10³Ω_K = 2.3 ± 1.1. The 0.002 figure is a benchmark, not the DESI interval.
 
 ### C5 Round 5, item 5 (pre-registered 14:19Z; launched now)
 

@@ -4074,3 +4074,209 @@ Readings:
 - **PASS:** an explicit law with a stated lattice supersymmetry whose one-loop c_e − c_γ and graviton TT speed shift vanish for every edge shape (mass-split residuals stated), checked, with per-site content and prices named.
 - **FAIL:** a refereed no-go: no lattice supercharge compatible with box symbols and Ward-forced gauge coupling exists in a stated class, or the pairing provably cannot cancel the electron self-energy.
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 11 (pre-registered 18:35Z from the S11 synthesis, agents/C5_S11_synthesis.md; readings fixed as drafted below)
+
+Launch: R11-2 through R11-6 now; R11-1 after the R10-1 referee. Draft text verbatim from S11 §6:
+
+
+**Rules (as rounds 2–10).**
+- Probes: Opus 5.5 at xhigh.
+- Every FAIL, EXCLUDED or no-go goes to codex gpt-5.6-sol (xhigh) before it is recorded.
+- Prices are named, never adopted.
+- Each probe greps the repository and packet for prior art first and counts each match once.
+- Hypotheses are stated before titles; excluded outside realizations are listed.
+- Numbers from memory are labelled RECALLED unless verified.
+- **New rule (from R9-3's defect).** Every tail or decay clause names its subtraction (which channel limit is subtracted) before any run.
+
+**Overlap check.**
+- R10-3 is emission-cancelled CQ (variant iii). R11-5 is variant (iv) only.
+- R10-4 is set A (free volume, records as q-charge). R11-3 is sets C and C-box (fixed grid). It does not test records as a q-charge.
+- R10-5 builds the edge-SUSY law and computes c_e − c_γ, the graviton TT speed with partners, and the one-loop vacuum energy. R11-1 asks the converse (is pairing *necessary*?) and computes the matter self-energy from graviton loops, which R10-5 does not.
+- R11-2, R11-4 and R11-6 overlap nothing running.
+
+**Priority.** R11-1 (after R10-1's referee), R11-2, R11-3, R11-4, R11-5; R11-6 when a slot frees.
+
+---
+
+**R11-1. Is an edge supertrace necessary? And the dressed matter speed under graviton loops.**
+*(Launch after R10-1's referee. If Theorems T′, P or Lemma N(m) are not confirmed, use only refereed Theorem T and prove T′ inside the probe.)*
+
+- **Plain question.** The box route's one-loop light-speed shifts all live on the edge. R10-1's worker found one way to cancel one of them: bosons and fermions contributing with opposite signs. Is that the *only* untuned way, or can some edge shape or vertex choice do it without pairing? Separately, R9-9 computed the graviton's speed shift but not the matter's shift from graviton loops. Without it, "graviton and matter on different cones" is not yet a computed fact.
+- **Setting (class 𝒞_A).**
+  - Z³ × ℝ, continuous time, Gaussian matter species s with C² periodic bands, box-exact on an open box (H-box, `C5_R10-1_report.md:67-96`).
+  - Gauge and graviton vertices are Ward-forced onto the whole zone (Lemma C `TESTS:3808`; Lemma Q `TESTS:3841`).
+  - Species are complex scalars or Clifford-flat fermions, the subclass in which each one-loop coefficient is a signed A-moment.
+  - "Untuned" means: band shapes and vertices are fixed per statistics and do not depend on the observable or the mass.
+  - Excluded: the Dirac class (D) with non-zero a- and mixing-moments (stated as outside); interactions beyond one loop; set C's own discretization.
+- **Prior art (count once).**
+  - R8-2 Theorem E (`TESTS:3556`);
+  - R9-9 Theorem T and Lemma N with its richness caveat (`vR9-9:12-14`);
+  - R10-1 Theorems T′, D, P and Lemma N(m) (pending, `C5_R10-1_report.md:137-260`);
+  - O3 Theorem 1a, equal signed DOS (`TESTS:2400`);
+  - R10-5 (running; do not duplicate its construction);
+  - Nielsen–Ninomiya (RECALLED).
+- **Probes.**
+  - (a) **Necessity.** Suppose C_O(m) = 0 for every m² in an interval and every O in {photon speed, graviton TT speed}, with no per-O tuning. Prove or refute: the species' band pushforward measures must pair across statistics, observable by observable. A counterexample must be explicit and checked.
+  - (b) **Dressed matter speed.** Compute the one-loop matter (scalar) self-energy from R9-9's tree-level box graviton, on the L and G edges, at m = 1 and 0.3. Give c_matter − c_T at one loop, including R9-9's Ξ, in units of κ_lat²/(16π²a²). State the size at a = ℓ_P (a reading on `AX:189-190`).
+  - (c) Restate the one-loop count with and without pairing. Note any change from R10-1's referee.
+- **FIXED readings.**
+  - (a) uses the derivation readings (`TESTS:2314-2318`):
+    - **DERIVED:** pairing is necessary in 𝒞_A, proved (refereed);
+    - **REFUTED:** an explicit unpaired untuned choice nulls both coefficients for all m² in an interval, checked;
+    - **SUGGESTED:** otherwise.
+  - (b) is reported as:
+    - **SPLIT-PRESENT:** c_matter − c_T ≠ 0 computed for both edges, with the number;
+    - **SPLIT-ABSENT:** it vanishes identically, with the reason;
+    - **OPEN:** otherwise.
+    - A SPLIT-PRESENT claimed as class-wide goes to the referee.
+- **Expectation.**
+  - (a) DERIVED in 𝒞_A. The mass-independence plus Laplace uniqueness argument of Lemma N(m) should force equality of signed measures, as O3's Theorem 1a does for vacuum energy. SUGGESTED beyond 𝒞_A.
+  - (b) SPLIT-PRESENT, sign-definite on the gapped edge (A_zz ≤ 0 there, `vR9-9:12`), unsuppressed at a = ℓ_P.
+
+---
+
+**R11-2. Producing the graviton: a qubit realization of the weak N-type box graviton, and Weinberg–Witten on box domains.**
+
+- **Plain question.** In every set the graviton is put in by hand. Lane R found one gauge structure on Z³, the weak N-type (Gu–Wen "weak" type), with two light-like graviton modes and a 1/r pull. R9-9 gave it a box law that is exact at tree level and couples exactly to box matter. The decisive test named in `SUMMARY:290` was never run: can one qubit per site, with local terms only, *produce* that field as its low-energy sector, the way R9-5 produced box matter? And does Weinberg–Witten, which forbids composite gravitons, apply when boosts are exact only inside a budget?
+- **Setting.**
+  - ⊗_{Z³} M₂(C), local or super-polynomially quasi-local terms.
+  - The constraints are enforced energetically (stabilizer- or ice-type) or as invariant sectors (R9-5 style). At linear order the N-type constraints commute, as linearized diffeomorphisms are abelian (RECALLED; verify in the probe).
+  - The target is R9-9's tree-level box graviton: an exact linear constraint algebra, 2 TT modes with ω = |q| in the box (or ω ∝ |q| at low q), no doubler (`TESTS:3940-3944`).
+  - Matter: R9-5's flux-free fermion sector, or constraint violations (defects).
+  - Excluded: nonlinear gravity; pair-creating matter; Λ.
+- **Prior art (count once).**
+  - lane R, `TESTS:685-776`, notably R1 and R2 at `:740-760`: "V gives k², VS gives k³ in the regular analytic compact class"; "a noncompact IR field can emerge from qubits"; strong-class mode counts 5/4/3/2;
+  - the 09-14 note (`docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md`);
+  - PR #9363 probes 10–21;
+  - R6-2 (`TESTS:3331-3343`);
+  - R9-9 (`TESTS:3939-3950`); R9-5 (`TESTS:3917-3923`);
+  - `OUTSIDE_VIEW.md:46,49` (Gu–Wen, Xu, Pretko);
+  - Gu–Wen 2009 helicity-±2 model, Xu 2006, Pretko 2017 (RECALLED).
+  - Read every section naming "N-type" or "weak VS" before building.
+- **Probes.**
+  - (a) **WW on box domains.** Does the Weinberg–Witten proof go through when finite boosts act exactly only on a budget-limited domain? This covers (i) a composite spin-2 state made of box matter and (ii) a gauge graviton without a gauge-invariant stress. State which step uses unbounded boosts.
+  - (b) **Construction.** Build the cheapest ⊗M₂ Hamiltonian whose constraint-satisfying low-energy sector carries the N-type gauge structure. Compute its emergent dispersion (perturbative ring exchange or exact sector map), its mode count, and any extra helicity-1 or 0 modes.
+  - (c) **Box symbol.** Can the box trick (R9-9's d(q)) be applied to the emergent field's effective symbol? Or is the emergent dispersion fixed by the constraint structure (k² or k³, as lane R found)?
+  - (d) **Source.** Do matter excitations source the emergent field through their energy-momentum (universal, Ward-exact) or through an emergent charge (lane R's failure mode)?
+  - (e) Name the prices.
+- **FIXED readings.**
+  - **PRODUCED:** an explicit ⊗M₂ quasi-local model whose stated low-energy sector contains exactly two TT modes, light-like in a box (or at low q), with the N-type constraint algebra, no extra gapless modes, and matter coupling through a Ward-exact universal stress, checked.
+  - **EXCLUDED:** a refereed no-go that, in a stated class of ⊗M₂ constraint models on Z³, the emergent tensor field is never light-like or never couples to energy-momentum.
+  - **OPEN:** otherwise. Report (a) separately as DERIVED / REFUTED / SUGGESTED.
+- **Expectation.**
+  - (a) SUGGESTED: WW binds composite TT states built from box matter inside the budget; it does not bind a gauge graviton, as in GR.
+  - (b)–(d) OPEN. Most likely an emergent field with k² or k³ dispersion, or one sourced by an emergent vector or fracton charge rather than by energy. A light-like N-type sector from qubits would be the campaign's first produced graviton.
+
+---
+
+**R11-3. Λ's mean on a fixed grid: the volume mode, the vacuum's tadpoles, and its equation of state (sets C and C-box).**
+
+- **Plain question.** On a continuum (set A), space can expand freely. On the axioms' Z³ the sites are fixed. So what is the universe's expansion on a grid? Either the proper spacing grows, making the volume a field, or new sites appear, a price on Lattice. Does the vacuum energy push on that volume mode? If space's volume per site were fixed, the vacuum's energy might stop gravitating, as in unimodular gravity. Separately, a grid vacuum need not have pressure equal to minus its energy (w = −1). If it doesn't, it is not a cosmological constant at all, and cancelling it costs two numbers, not one.
+- **Setting.**
+  - R9-9's N-type box graviton (lapse N, shift N_i, h_ij) on Z³ × ℝ, coupled to R8-2's stress with R9-2's supplied scalar zero-point completion, on the L and G edges. Add a Dirac sea if feasible, gapped edge only (P38).
+  - Three options for the volume mode:
+    - (V1) the trace h_ii is dynamical (spacing grows);
+    - (V2) √h is fixed per site (a "spatially unimodular" grid), lapse dynamical;
+    - (V3) the lapse is also fixed (a projectable, preferred-time grid).
+  - Excluded: records as a q-charge (R10-4); edge-SUSY (R10-5; use its vacuum result only as a control if it has reported).
+- **Prior art (count once).**
+  - R5-3 route 1 (unimodular with Λ an integration constant; `TESTS:2888-2889`, result `:2985-2993`);
+  - lane RN's "TDiff, unimodular, Hořava are not escapes" (for the graviton's mass, `TESTS:809,870`; a different question, counted once);
+  - R9-2 free shear (`TESTS:3897-3900`);
+  - O3 (`TESTS:2399-2404`);
+  - R4-5 everpresent-Λ unimodular conjugacy (`TESTS:2939`);
+  - `docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` and every repo doc on the cosmological constant;
+  - comparator: momentum-cutoff vacuum w = 1/3 (Akhmedov; Koksma–Prokopec; RECALLED).
+- **Probes.**
+  - (a) **Tadpoles.** Compute ⟨T⁰⁰⟩_vac and ⟨T^ij⟩_vac (isotropic p_vac; anisotropic part = R9-2's shear), split into box and edge contributions, for L and G. Give w = p_vac/ρ_vac for each part, and test whether any edge profile gives w = −1 without tuning. State any zone-integral identity relating ρ_vac + p_vac to A-moments.
+  - (b) **Decoupling.** For each of V1–V3, does a step change in ρ_vac (a phase transition: change one species' m) source curvature or expansion? Derive it in the linear N-type theory.
+  - (c) **Expansion.** For each option, state how a FRW-like expansion is realized: growing spacing, site creation, or none. Give the consequence for the rapidity budget in physical units and for the scale reference (`AX:189-190`).
+  - (d) Name the prices per option.
+- **FIXED readings (per option V1, V2, V3).**
+  - **DECOUPLED:** vacuum-energy shifts, including a phase-transition step, provably do not source curvature or expansion; the residual Λ is named as an integration constant, and prices are named.
+  - **SOURCED:** the vacuum sources the volume or lapse mode with computed coefficients (ρ_vac, p_vac, w stated). The mean remains a tuning. If w ≠ −1 is claimed to cost two tunings, that goes to the referee.
+  - **EXCLUDED:** the option is inconsistent with observed expansion or with the N-type constraint algebra (refereed).
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - V1: SOURCED, with the edge part's w ≠ −1, so two tunings (ρ and p) instead of one.
+  - V2: SOURCED through the lapse, since ρ_vac√h still enters the Hamiltonian constraint.
+  - V3: DECOUPLED at linear order, but EXCLUDED or OPEN on expansion: a fixed grid with fixed lapse cannot expand without site creation, a Lattice price, which links to the owner's "count rises" thought, tested only as a hypothesis.
+
+---
+
+**R11-4. Box bodies in a curved field: the space–space coupling (γ), von Laue, geodetic precession and the spin–curvature force (d = 3).**
+
+- **Plain question.** Every gravity test of box bodies so far used a uniform field coupled to the energy's first moment. Light bending, Shapiro delay and the precession of a spinning gyroscope test the rest of the coupling: how a body's internal pressure and momentum flow respond to curved space. A bound body at rest has zero total internal stress (von Laue's condition) only if its momentum is exactly conserved. In the box law momentum is conserved only box-to-box. Does the condition still hold, and does a spinning bound body precess at GR's rate?
+- **Setting.**
+  - R9-6's d = 3 two-body triplet law (`TESTS:4016-4024`).
+  - A d = 3 symmetric stress built as in R9-10 (Weyl midpoint plus KB/Belinfante division).
+  - Linear coupling ½h_μν T^μν to prescribed static fields: (i) uniform lapse (control); (ii) isotropic linearized Schwarzschild, h₀₀ = −2Φ, h_ij = −2γΦδ_ij with γ = 1; (iii) a pure tidal field; (iv) gravitomagnetic h₀ᵢ.
+  - Fallback if the d = 3 stress is not constructible in time: d = 2 for von Laue and tidal only, with that stated.
+  - Excluded: pair creation; N ≥ 3; nonlinear gravity.
+- **Prior art (count once).**
+  - R9-2 (`TESTS:3889-3900`); R9-10 (`TESTS:4037-4044`, the unmet GR-spin clause `vR9-10:21-22`); R9-6;
+  - R8-2's stress (`TESTS:3554`); R7-4's conditional exclusion (`TESTS:3496-3497`; `vR9-2:17`);
+  - comparators: Gravity Probe B geodetic precession (3/2, about 0.3%), Cassini γ, Mathisson–Papapetrou–Dixon force, von Laue's theorem (RECALLED unless verified).
+- **Probes.**
+  - (a) Construct the d = 3 stress: symmetric, Hermitian, quasi-local, ∫T⁰⁰ = H, first moments K and J, box-to-box momentum conservation, sources stated.
+  - (b) **Von Laue.** Is ∫T^ij = 0 for bound states at rest, exactly on the box domain? Compute any shell-source contribution as a function of binding.
+  - (c) The passive coupling to (ii): the acceleration and the effective γ of bound bodies of two binding fractions, at rest and moving within the budget.
+  - (d) The geodetic precession of the triplet's spin in (ii), against 3/2; the MPD force in (iii); the frame-dragging response to (iv).
+- **FIXED readings.**
+  - **PASS:** (a) met; von Laue exact on the box domain; the effective γ is binding-independent and equal to 1 at linear order; geodetic 3/2 and the MPD force reproduced, checked.
+  - **FAIL:** a computed binding-dependent γ or a precession ≠ 3/2 at linear order that no choice in a stated class removes (refereed).
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** PASS on the box domain. Von Laue follows from box-to-box momentum conservation for stationary bound states, and 3/2 follows from ½h_μνT^μν with a symmetric von-Laue stress (S11 expectation). The risks: the second moments (x² weights) needed for tidal and MPD terms may reach the shell sources, and the d = 3 global quasi-local flux may again be existence-only. INCONCLUSIVE overall is likely.
+
+---
+
+**R11-5. Set A: a regulated preferred-frame CQ kernel and its window (R9-4 variant iv).**
+
+- **Plain question.** The simplest relativistic forms of "the records are the classical metric" are excluded. One open form keeps a preferred frame, with noise tied to it. That needs a UV power n ≥ 3 and a regulator at the light cone. Build one, then ask whether any smearing length survives every bound, including effects of Earth's motion through the frame.
+- **Setting.**
+  - Linearized Gaussian CQ gravity with mean GR coupling and noise kernel D(ω, k) defined in a preferred frame u^μ (taken as the CMB frame).
+  - Integer n ≥ 3 UV falloff. An explicit regulator or restricted domain at the cone, making D′₀ a locally finite positive measure.
+  - Spatial smearing ℓ_s.
+  - Excluded: correlated emission-cancelled histories (R10-3); trace-only kernels already excluded (`TESTS:3911-3912`).
+- **Prior art (count once).**
+  - R6-4 (`TESTS:3409-3418`); R8-3 (`TESTS:3559-3573`); R9-4 (`TESTS:3909-3915`; `vR9-4:11`);
+  - R4-4 Lemma N (a BMV-type positive result excludes every variant, `TESTS:2935`);
+  - PPN preferred-frame bounds α₁, α₂ (RECALLED; verify).
+- **Probes.**
+  - (a) Construct the regulated kernel. Prove complete positivity and the mean-field limit.
+  - (b) Compute γ, c_T, the vacuum-excitation rate in the frame, and the heating and diffusion rates for matter moving at v ≈ 370 km/s through the frame, including their annual modulation.
+  - (c) Compare against:
+    - R6-4's decoherence and diffusion bounds (Cs-133 for 70 s; LISA Pathfinder; corrected torsion σ_a² = (48π/5)G²D₂/(RT));
+    - Cassini;
+    - GW170817;
+    - PPN α₁, α₂, if the noise feeds the mean metric at any order.
+  - (d) Give the allowed ℓ_s interval, or none.
+- **FIXED readings.**
+  - **VIABLE:** an explicit regulated kernel passing every stated test, with an allowed ℓ_s interval and named prices.
+  - **EXCLUDED:** every regulated kernel in a stated class violates a stated bound for every ℓ_s (refereed).
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN, leaning VIABLE on a narrow interval inside 2e-7 to 5e-6 m. The new risk is the velocity-dependent heating and its annual modulation, which no earlier probe computed.
+
+---
+
+**R11-6 (when a slot frees). Assembled Sokolov three-body box law with subtracted channel tails (R9-3 re-registered, d = 1).**
+
+- **Plain question.** For three bodies, summing pair forces breaks relativity, and the textbook cure (Sokolov packing) was never assembled on the lattice. R9-3's registration also asked for the impossible. Assemble the operators and measure the right tails.
+- **Setting.**
+  - d = 1; three spinless fermions; R8-1's pair law with R7-6's plateau; the normalization ½ (`TESTS:3797`).
+  - A stated interpolation or discretization prescription for P ≠ 0 rings (`vR9-3:110`).
+- **Prior art (count once).** R7-6 (`TESTS:3506-3510`); R9-3 (`TESTS:3902-3907`; `vR9-3:3,26,43,110`); Keister–Polyzou, Coester–Polyzou (as cited there).
+- **Probes.**
+  - (a) Assemble B, H_S = B H_BT B†, K_S on the three-body box sector, on at least three ring sizes.
+  - (b) Check [K, P] = iH, [K, H] = iP, [H, P] = 0.
+  - (c) **Subtracted tails (fixed now).** For the spectator channel a = (12)(3), measure ‖(B − B_a)ψ_r‖ and ‖(H_S − H_a ⊗ 1 − 1 ⊗ h₃)ψ_r‖ against separation r over at least 1.5 decades. Use a pre-registered information-criterion comparison of exp(−c r^β) against a power law, over the full range.
+  - (d) The trimer invariant mass at P = 0, ±P₁, ±P₂.
+- **FIXED readings.**
+  - **PASS:** (b) residuals → 0 with L; (d) flat to the discretization floor; (c) super-polynomial by the pre-registered comparison; checked.
+  - **FAIL:** a refereed proof that the *subtracted* channel deviations decay no faster than a power, in a stated class.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** INCONCLUSIVE. The algebra closes by construction; the subtracted tails should track the form-factor proxies (`vR9-3:43`), but a uniform operator bound is unlikely within one run.
+
+---
+

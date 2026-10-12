@@ -1,9 +1,27 @@
-# Ranked opportunities
+# Ranked opportunities after the first calculation blocks
 
-1. Select the first substantial calculation between joint force/lensing/radiation spectral inversion and neutrino energy/baseline reconstruction after a short input/identifiability check. Gravity offers immediate cross-domain structure; neutrino data offer an accessible numerical control but incomplete nuisance inputs. Freeze the exact model/observation contract and start calculation promptly.
-2. Reconstruct shared clock/free-fall/propagation conditions from observations; develop an explicit alternative to a fixed cubic/Wilson microscopic premise when it adds a real discriminator. Check prior reverse-gravity and Wilson results before reuse.
-3. Test operational quantum candidate assumptions against correlations and interference, with an explicit forward map rather than a reconstruction slogan.
-4. Connect a surviving mechanism across a second sector and calculate an observable with shared parameters and no refit.
-5. Build the strongest connected candidate synthesis and a falsification/prioritization table.
+1. Finish the finite canonical scalar construction and independent error check.
+   Connect material response to the same current and spectrum, preserving the
+   exactly massless comparison as a separate candidate. A finite static fit must
+   not silently determine a low-frequency fluctuation spectrum.
+2. Independently reconstruct the primary Sun composition estimator and its
+   injected-signal response. Integrate the frozen joint composition/clock
+   parameter region only after checking sources, nuisance assumptions and the
+   distinction between a nominal null and robustness to source uncertainty.
+3. Develop force-to-noise inference regions using positivity and finite response
+   data. Seek dual bounds or explicit rival measures, rather than choosing one
+   favorable continuum from an underdetermined inverse problem.
+4. Freeze and apply the GW timing comparison to the already selected massive
+   tensor geometry witness under an explicit single-mode/waveform bridge. Keep
+   mixtures with an arriving massless component and screening outside that test.
+5. Turn the clock kernel discriminator into a real measurement map, with a
+   calibrated coupling and finite source/control response. Quantify absolute
+   signal sizes; a mathematical discriminator need not be experimentally useful.
+6. Reopen the matter/gauge and cosmological bridges with actual observational
+   leverage after this connected block. Preserve the completed neutrino input
+   audit and moving-path equations; incomplete Daya Bay nuisance data are not
+   a reason to manufacture a likelihood or stop the campaign.
 
-Ranking is provisional and based on evidence value and tractable first tests, not an invented probability of proving a TOE. Maintain useful rivals; rerank on actual evidence. Formal audit throughput and repository axioms do not dictate this campaign's discovery direction.
+Ranking reflects present evidence and attainable discriminators. A checked
+construction is progress, not global completion. No unrelated process repair,
+audit draining or forced theorem count is part of this queue.

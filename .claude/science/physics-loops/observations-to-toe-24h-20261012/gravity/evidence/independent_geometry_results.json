@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-10-12T17:01:21.739580+00:00",
+  "contract_sha256": "4478751aae5cd9683466649fc9031d94f75c0ac1259c9661b104a83d692a252d",
+  "method": "35-digit mpmath; z=b*sinh(t) potential quadrature and numerical derivative including endpoints; derivative of Yukawa potential for force",
+  "source_read_boundary": "Author implementation and results not read before this output was generated",
+  "mpmath_version": "1.3.0",
+  "x_mu_times_reference_radius": "0.96155532897856139511790678796900486",
+  "mu_inverse_m": "6.4276003694386901131067154150945068e-12",
+  "compton_length_m": "155579056338.7698701181820465197711",
+  "calibration_residual": "0.0",
+  "massless_gradient_checks": [
+    {
+      "b_solar_radii": "1.6",
+      "relative_difference": "0.0"
+    },
+    {
+      "b_solar_radii": "2.0",
+      "relative_difference": "0.0"
+    },
+    {
+      "b_solar_radii": "4.0",
+      "relative_difference": "1.5046327690525280101999827676444745e-36"
+    },
+    {
+      "b_solar_radii": "8.0",
+      "relative_difference": "-7.5231638452626400509999138382223723e-37"
+    },
+    {
+      "b_solar_radii": "16.0",
+      "relative_difference": "0.0"
+    }
+  ],
+  "shape": [
+    {
+      "b_solar_radii": "1.6",
+      "normalized_light_gradient": "0.99986444641441867364890287706600789",
+      "gamma_like": "1.0"
+    },
+    {
+      "b_solar_radii": "2.0",
+      "normalized_light_gradient": "0.99979711904761845447116585945574813",
+      "gamma_like": "0.99986532701099302079394727310848009"
+    },
+    {
+      "b_solar_radii": "4.0",
+      "normalized_light_gradient": "0.99929928518110063160731400764091919",
+      "gamma_like": "0.99886952429332846400638330656441938"
+    },
+    {
+      "b_solar_radii": "8.0",
+      "normalized_light_gradient": "0.99763968259100072871728972204425159",
+      "gamma_like": "0.99554986912196728662638338738714052"
+    },
+    {
+      "b_solar_radii": "16.0",
+      "normalized_light_gradient": "0.99231984295722296771581611758335694",
+      "gamma_like": "0.98490874741220939964791910888411363"
+    }
+  ],
+  "force_shape": [
+    {
+      "radius_AU": "0.387",
+      "relative_to_newton_after_reference_calibration": "1.261187964363338039397771721056258"
+    },
+    {
+      "radius_AU": "0.723",
+      "relative_to_newton_after_reference_calibration": "1.1279665705264984102365506673632911"
+    },
+    {
+      "radius_AU": "1.524",
+      "relative_to_newton_after_reference_calibration": "0.75939407492574479338187211613818243"
+    }
+  ],
+  "group_delays": [
+    {
+      "frequency_Hz": 30,
+      "delay_seconds": "139833.13305501254669384483232153738",
+      "speed_fraction": "0.9999999999477475211507907312754281"
+    },
+    {
+      "frequency_Hz": 100,
+      "delay_seconds": "12584.981974053509973861528883566713",
+      "speed_fraction": "0.99999999999529727690368297248209313"
+    },
+    {
+      "frequency_Hz": 300,
+      "delay_seconds": "1398.3313304416220437037158312155185",
+      "speed_fraction": "0.99999999999947747521152142240440643"
+    },
+    {
+      "frequency_Hz": 1000,
+      "delay_seconds": "125.849819739656222010484910233107",
+      "speed_fraction": "0.99999999999995297276903693919706331"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "status": "conditional-support",
+  "purpose": "Construct finite canonical local scalar realizations and quantify the joint static/noise approximation; no experimental fitting.",
+  "parent_measure": "nu(dmu)=ell^s mu^(s-1) exp(-ell mu)dmu/Gamma(s)",
+  "units": "ell=1; all distances and inverse frequencies scaled by ell",
+  "hypotheses": ["3+1-dimensional canonical real scalar fields", "positive unit-total-mass spectral weights", "a single common linear matter current", "vacuum Gaussian state", "Gaussian spatial profile with Fourier amplitude exp(-a^2 k^2/2)"],
+  "s_grid": [0.5, 1, 2],
+  "gauss_orders": [4, 8, 16],
+  "radius_grid": [0.1, 0.5, 1, 2, 10],
+  "frequency_grid": [0.1, 0.3, 0.5, 1, 2, 4],
+  "spatial_width": 0.25,
+  "bin_counts": [32, 128, 512],
+  "bin_mass_cap": 12,
+  "frequency_window_max": 4,
+  "radius_window_max": 2,
+  "test_rule": "Check positive normalized weights, Gaussian quadrature static error enclosures, and uniform absolute potential/force/noise error bounds for positive midpoint bins plus one tail atom. Low-frequency relative noise is separately reported, never inferred from static agreement.",
+  "exposure": "All parameter choices are synthetic model-development choices before execution. No observational data or fitted couplings are used.",
+  "physical_gaps": ["selection of spectral measure and matter couplings", "finite field count and gravitational EFT cutoff", "nonlinear continuum completion", "real apparatus coupling and state", "observational likelihood"]
+}

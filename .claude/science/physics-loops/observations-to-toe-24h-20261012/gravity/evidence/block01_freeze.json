@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-10-12T16:58:44.615601+00:00",
+  "inputs": {
+    "BLOCK01_CONTRACT.json": "4478751aae5cd9683466649fc9031d94f75c0ac1259c9661b104a83d692a252d",
+    "spectral_probe.py": "5fbd1405a54925ea82daff679397bb534f797d9f7140b0214b8bd831f9a58ef6"
+  },
+  "first_comparison_not_yet_run": true
+}

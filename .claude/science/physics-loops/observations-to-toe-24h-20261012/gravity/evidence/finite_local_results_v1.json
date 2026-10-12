@@ -1,0 +1,2883 @@
+{
+  "status": "conditional-support",
+  "observations_fitted": false,
+  "passed": 207,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 0.5,
+      "order": 4
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 4,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 0.5,
+      "order": 4
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 0.5,
+      "order": 8
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 8,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 0.5,
+      "order": 8
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 0.5,
+      "order": 16
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 0.5,
+      "order": 16,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 0.5,
+      "order": 16
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 0.5,
+      "count": 32
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 32,
+      "omega": 4
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 0.5,
+      "count": 128
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 128,
+      "omega": 4
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 0.5,
+      "count": 512
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 0.5,
+      "count": 512,
+      "omega": 4
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 1,
+      "order": 4
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 4,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 1,
+      "order": 4
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 1,
+      "order": 8
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 8,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 1,
+      "order": 8
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 1,
+      "order": 16
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 1,
+      "order": 16,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 1,
+      "order": 16
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 1,
+      "count": 32
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 32,
+      "omega": 4
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 1,
+      "count": 128
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 128,
+      "omega": 4
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 1,
+      "count": 512
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 1,
+      "count": 512,
+      "omega": 4
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 2,
+      "order": 4
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 4,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 2,
+      "order": 4
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 2,
+      "order": 8
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 8,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 2,
+      "order": 8
+    },
+    {
+      "name": "gauss_positive_normalized",
+      "passed": true,
+      "s": 2,
+      "order": 16
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 0.1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 0.5
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 1
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 1
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 2
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 2
+    },
+    {
+      "name": "gauss_potential_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 10
+    },
+    {
+      "name": "gauss_force_enclosure",
+      "passed": true,
+      "s": 2,
+      "order": 16,
+      "radius": 10
+    },
+    {
+      "name": "explicit_spectral_gap",
+      "passed": true,
+      "s": 2,
+      "order": 16
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 2,
+      "count": 32
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 32,
+      "omega": 4
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 2,
+      "count": 128
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 128,
+      "omega": 4
+    },
+    {
+      "name": "bins_positive_normalized",
+      "passed": true,
+      "s": 2,
+      "count": 512
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "radius": 0.1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "radius": 0.5
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "radius": 1
+    },
+    {
+      "name": "bins_uniform_static_bounds",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "radius": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "omega": 0.1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "omega": 0.3
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "omega": 0.5
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "omega": 1
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "omega": 2
+    },
+    {
+      "name": "bins_uniform_noise_bound",
+      "passed": true,
+      "s": 2,
+      "count": 512,
+      "omega": 4
+    }
+  ],
+  "results": [
+    {
+      "method": "gauss",
+      "s": 0.5,
+      "order": 4,
+      "smallest_mass": 0.14530352150331707,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.9534625892455922,
+          "potential_approx": 0.953462589219302,
+          "potential_error": 2.629019224542617e-11,
+          "potential_bound": 3.9062500000000046e-11,
+          "force_error": -1.7386592165991033e-10,
+          "force_bound": 2.7343750000000033e-10
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.816496580927726,
+          "potential_approx": 0.8164941003377566,
+          "potential_error": 2.4805899694335665e-06,
+          "potential_bound": 1.5258789062499978e-05,
+          "force_error": -1.3306277833691205e-05,
+          "force_bound": 0.00010681152343749985
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.7071067811865476,
+          "potential_approx": 0.7069647044965447,
+          "potential_error": 0.00014207669000287915,
+          "potential_bound": 0.0039062499999999974,
+          "force_error": -0.0006040911103718516,
+          "force_bound": 0.027343749999999983
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.5773502691896257,
+          "potential_approx": 0.5739974112643609,
+          "potential_error": 0.0033528579252648516,
+          "potential_bound": 1.0000000000000004,
+          "force_error": -0.00951515935091407,
+          "force_bound": 7.0000000000000036
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.30151134457776363,
+          "potential_approx": 0.17446520122646636,
+          "potential_error": 0.12704614335129727,
+          "potential_bound": 390624.9999999997,
+          "force_error": 0.01058839368435538,
+          "force_bound": 2734374.999999998
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.0007684598190936606,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.003773464364370422,
+          "approx": 0.004938463137509017,
+          "relative_error": 0.30873453692545133
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.007657637476327388,
+          "approx": 0.008912325690728815,
+          "relative_error": 0.16384795157516083
+        },
+        {
+          "omega": 1,
+          "exact": 0.018522082850960127,
+          "approx": 0.017586900012482348,
+          "relative_error": -0.050490155238092076
+        },
+        {
+          "omega": 2,
+          "exact": 0.03631393168472408,
+          "approx": 0.03708150755759069,
+          "relative_error": 0.021137228530655153
+        },
+        {
+          "omega": 4,
+          "exact": 0.03764787116804217,
+          "approx": 0.03739625462417088,
+          "relative_error": -0.006683420232400259
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 0.5,
+      "order": 8,
+      "smallest_mass": 0.07479188259681828,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.9534625892455922,
+          "potential_approx": 0.9534625892455921,
+          "potential_error": 1.1102230246251565e-16,
+          "potential_bound": 1.5258789062500034e-21,
+          "force_error": 1.1102230246251565e-16,
+          "force_bound": 2.288818359375005e-20
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.816496580927726,
+          "potential_approx": 0.816496580921341,
+          "potential_error": 6.385003636921738e-12,
+          "potential_bound": 2.3283064365386898e-10,
+          "force_error": -7.512079847060704e-11,
+          "force_bound": 3.492459654808035e-09
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.7071067811865476,
+          "potential_approx": 0.707106759410575,
+          "potential_error": 2.177597258068431e-08,
+          "potential_bound": 1.5258789062499924e-05,
+          "force_error": -2.0870712047482698e-07,
+          "force_bound": 0.00022888183593749886
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.5773502691896257,
+          "potential_approx": 0.5773371146783671,
+          "potential_error": 1.3154511258606227e-05,
+          "potential_bound": 0.9999999999999969,
+          "force_error": -8.991947817360568e-05,
+          "force_bound": 14.999999999999954
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.30151134457776363,
+          "potential_approx": 0.27165733809398374,
+          "potential_error": 0.029854006483779894,
+          "potential_bound": 152587890624.9998,
+          "force_error": -0.03845720155525706,
+          "force_bound": 2288818359374.9966
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.0007684598190936606,
+          "approx": 0.0009634074034696799,
+          "relative_error": 0.25368611283533987
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.003773464364370422,
+          "approx": 0.004195606782154164,
+          "relative_error": 0.11187131426751216
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.007657637476327388,
+          "approx": 0.00706839502115942,
+          "relative_error": -0.07694833517381003
+        },
+        {
+          "omega": 1,
+          "exact": 0.018522082850960127,
+          "approx": 0.019310224536018796,
+          "relative_error": 0.042551460945323104
+        },
+        {
+          "omega": 2,
+          "exact": 0.03631393168472408,
+          "approx": 0.03612778738153236,
+          "relative_error": -0.005125974923558553
+        },
+        {
+          "omega": 4,
+          "exact": 0.03764787116804217,
+          "approx": 0.037636443839629205,
+          "relative_error": -0.00030353186138888676
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 0.5,
+      "order": 16,
+      "smallest_mass": 0.03796291457531345,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.9534625892455922,
+          "potential_approx": 0.9534625892455922,
+          "potential_error": 0.0,
+          "potential_bound": 2.3283064365387398e-42,
+          "force_error": -3.3306690738754696e-16,
+          "force_bound": 7.217749953270093e-41
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.816496580927726,
+          "potential_approx": 0.816496580927726,
+          "potential_error": 0.0,
+          "potential_bound": 5.421010862427608e-20,
+          "force_error": 0.0,
+          "force_bound": 1.6805133673525585e-18
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.7071067811865476,
+          "potential_approx": 0.707106781186547,
+          "potential_error": 5.551115123125783e-16,
+          "potential_bound": 2.3283064365387227e-10,
+          "force_error": -1.021405182655144e-14,
+          "force_bound": 7.21774995327004e-09
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.5773502691896257,
+          "potential_approx": 0.5773502689884508,
+          "potential_error": 2.01174965575035e-10,
+          "potential_bound": 1.0000000000000075,
+          "force_error": -2.984327118760177e-09,
+          "force_bound": 31.000000000000234
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.30151134457776363,
+          "potential_approx": 0.2998953368026117,
+          "potential_error": 0.0016160077751519175,
+          "potential_bound": 2.3283064365387556e+22,
+          "force_error": -0.006391581992531592,
+          "force_bound": 7.217749953270142e+23
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.0007684598190936606,
+          "approx": 0.00099169266510052,
+          "relative_error": 0.29049384295739156
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.003773464364370422,
+          "approx": 0.0031740565416689868,
+          "relative_error": -0.15884814717243068
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.007657637476327388,
+          "approx": 0.00813178437419014,
+          "relative_error": 0.061918169843965164
+        },
+        {
+          "omega": 1,
+          "exact": 0.018522082850960127,
+          "approx": 0.018415518261580617,
+          "relative_error": -0.005753380450621754
+        },
+        {
+          "omega": 2,
+          "exact": 0.03631393168472408,
+          "approx": 0.03638374133284383,
+          "relative_error": 0.0019223930012822778
+        },
+        {
+          "omega": 4,
+          "exact": 0.03764787116804217,
+          "approx": 0.03768268011019429,
+          "relative_error": 0.000924592575148458
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 0.5,
+      "count": 32,
+      "smallest_mass": 0.1875,
+      "tail_probability": 9.633570086430946e-07,
+      "potential_uniform_bound": 0.37500096335700867,
+      "force_uniform_bound": 0.1379557537962995,
+      "noise_uniform_bound": 0.031023150007319637,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": 0.0052198262174053545,
+          "force_error": 7.87334136169715e-05
+        },
+        {
+          "radius": 0.5,
+          "potential_error": 0.024686919067832935,
+          "force_error": 0.0016007249542080437
+        },
+        {
+          "radius": 1,
+          "potential_error": 0.04645107620514932,
+          "force_error": 0.0053797691211269205
+        },
+        {
+          "radius": 2,
+          "potential_error": 0.08337625686666267,
+          "force_error": 0.01707699179677935
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.0007684598190936606,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.003773464364370422,
+          "approx": 0.0036269918632488964,
+          "relative_error": -0.038816452728304404
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.007657637476327388,
+          "approx": 0.007107247302229462,
+          "relative_error": -0.07187467098036278
+        },
+        {
+          "omega": 1,
+          "exact": 0.018522082850960127,
+          "approx": 0.018460598604382667,
+          "relative_error": -0.003319510395898765
+        },
+        {
+          "omega": 2,
+          "exact": 0.03631393168472408,
+          "approx": 0.0362010665262002,
+          "relative_error": -0.003108040173225209
+        },
+        {
+          "omega": 4,
+          "exact": 0.03764787116804217,
+          "approx": 0.03766918435223342,
+          "relative_error": 0.0005661192394150429
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 0.5,
+      "count": 128,
+      "smallest_mass": 0.046875,
+      "tail_probability": 9.633570086430946e-07,
+      "potential_uniform_bound": 0.09375096335700864,
+      "force_uniform_bound": 0.03448966096683136,
+      "noise_uniform_bound": 0.015511575003659819,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": 0.0006664704036969393,
+          "force_error": 4.112676917134017e-06
+        },
+        {
+          "radius": 0.5,
+          "potential_error": 0.0032595647815980566,
+          "force_error": 8.153179502867758e-05
+        },
+        {
+          "radius": 1,
+          "potential_error": 0.006371508684313465,
+          "force_error": 0.00026997113848370446
+        },
+        {
+          "radius": 2,
+          "potential_error": 0.012265978491764473,
+          "force_error": 0.0008577059840509937
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.0007684598190936606,
+          "approx": 0.0007491857427731364,
+          "relative_error": -0.025081436714877985
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.003773464364370422,
+          "approx": 0.0037460579421973988,
+          "relative_error": -0.007262933878957117
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.007657637476327388,
+          "approx": 0.007610118424348875,
+          "relative_error": -0.0062054454948294365
+        },
+        {
+          "omega": 1,
+          "exact": 0.018522082850960127,
+          "approx": 0.018527990154933466,
+          "relative_error": 0.00031893302825998206
+        },
+        {
+          "omega": 2,
+          "exact": 0.03631393168472408,
+          "approx": 0.03630346770942842,
+          "relative_error": -0.00028815319108122797
+        },
+        {
+          "omega": 4,
+          "exact": 0.03764787116804217,
+          "approx": 0.037649395592418304,
+          "relative_error": 4.0491648766271515e-05
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 0.5,
+      "count": 512,
+      "smallest_mass": 0.01171875,
+      "tail_probability": 9.633570086430946e-07,
+      "potential_uniform_bound": 0.023438463357008645,
+      "force_uniform_bound": 0.008623137759464322,
+      "noise_uniform_bound": 0.007755787501829909,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": 8.384602521982476e-05,
+          "force_error": 2.3294472861756788e-07
+        },
+        {
+          "radius": 0.5,
+          "potential_error": 0.00041515982677586827,
+          "force_error": 4.497867666763966e-06
+        },
+        {
+          "radius": 1,
+          "potential_error": 0.0008222739761581943,
+          "force_error": 1.4543682389955848e-05
+        },
+        {
+          "radius": 2,
+          "potential_error": 0.0016192668501184837,
+          "force_error": 4.478491933423978e-05
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.0007684598190936606,
+          "approx": 0.0007628320026311427,
+          "relative_error": -0.0073235012718759
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.003773464364370422,
+          "approx": 0.00377741023372428,
+          "relative_error": 0.0010456887816711453
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.007657637476327388,
+          "approx": 0.007652665581696934,
+          "relative_error": -0.0006492726569812445
+        },
+        {
+          "omega": 1,
+          "exact": 0.018522082850960127,
+          "approx": 0.01852345391966743,
+          "relative_error": 7.402346260602513e-05
+        },
+        {
+          "omega": 2,
+          "exact": 0.03631393168472408,
+          "approx": 0.03631281794241432,
+          "relative_error": -3.0669835462289324e-05
+        },
+        {
+          "omega": 4,
+          "exact": 0.03764787116804217,
+          "approx": 0.0376480075980995,
+          "relative_error": 3.62384520279702e-06
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 1,
+      "order": 4,
+      "smallest_mass": 0.3225476896193923,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.9090909090909091,
+          "potential_approx": 0.909090908999348,
+          "potential_error": 9.156109204155882e-11,
+          "potential_bound": 1.4285714285714267e-10,
+          "force_error": -6.011470210509628e-10,
+          "force_bound": 9.999999999999986e-10
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.6666666666666666,
+          "potential_approx": 0.6666594228356841,
+          "potential_error": 7.2438309824951475e-06,
+          "potential_bound": 5.580357142857142e-05,
+          "force_error": -3.7383387962552916e-05,
+          "force_bound": 0.0003906249999999999
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.5,
+          "potential_approx": 0.49965576490236235,
+          "potential_error": 0.00034423509763764626,
+          "potential_bound": 0.01428571428571428,
+          "force_error": -0.0013453865219195116,
+          "force_bound": 0.09999999999999996
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.3333333333333333,
+          "potential_approx": 0.32731164440319965,
+          "potential_error": 0.006021688930133662,
+          "potential_bound": 3.6571428571428553,
+          "force_error": -0.013924265811515624,
+          "force_bound": 25.599999999999987
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.09090909090909091,
+          "potential_approx": 0.023967439490302778,
+          "potential_error": 0.06694165141878813,
+          "potential_bound": 1428571.4285714293,
+          "force_error": 0.07227972392003604,
+          "force_bound": 10000000.000000006
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.00019065325836608023,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.0015745462970229533,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.004008331767223388,
+          "approx": 0.00578399609008272,
+          "relative_error": 0.44299335134360734
+        },
+        {
+          "omega": 1,
+          "exact": 0.012801778549298677,
+          "approx": 0.013673953512373252,
+          "relative_error": 0.06812920249447335
+        },
+        {
+          "omega": 2,
+          "exact": 0.03137481143008495,
+          "approx": 0.03196336928253271,
+          "relative_error": 0.01875892875911918
+        },
+        {
+          "omega": 4,
+          "exact": 0.03777286498871096,
+          "approx": 0.03705670430278243,
+          "relative_error": -0.018959660225470482
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 1,
+      "order": 8,
+      "smallest_mass": 0.170279632305101,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.9090909090909091,
+          "potential_approx": 0.9090909090909092,
+          "potential_error": -1.1102230246251565e-16,
+          "potential_bound": 7.770007770007787e-21,
+          "force_error": 1.1102230246251565e-16,
+          "force_bound": 1.165501165501168e-19
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.6666666666666666,
+          "potential_approx": 0.6666666666406851,
+          "potential_error": 2.5981550244580376e-11,
+          "potential_bound": 1.1856090957653425e-09,
+          "force_error": -3.004383408722333e-10,
+          "force_bound": 1.7784136436480137e-08
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.5,
+          "potential_approx": 0.4999999263324536,
+          "potential_error": 7.366754639637207e-08,
+          "potential_bound": 7.770007770007759e-05,
+          "force_error": -6.810946694413289e-07,
+          "force_bound": 0.0011655011655011638
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.3333333333333333,
+          "potential_approx": 0.33330016116138295,
+          "potential_error": 3.317217195036859e-05,
+          "potential_bound": 5.092152292152274,
+          "force_error": -0.0002097293608744888,
+          "force_bound": 76.38228438228411
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.09090909090909091,
+          "potential_approx": 0.06730614312683918,
+          "potential_error": 0.023602947782251735,
+          "potential_bound": 777000777000.7759,
+          "force_error": -0.008726352836757045,
+          "force_bound": 11655011655011.639
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.00019065325836608023,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.0015745462970229533,
+          "approx": 0.0023009904922363495,
+          "relative_error": 0.461367313610853
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.004008331767223388,
+          "approx": 0.004336013322965921,
+          "relative_error": 0.08175010821759442
+        },
+        {
+          "omega": 1,
+          "exact": 0.012801778549298677,
+          "approx": 0.01316267223162748,
+          "relative_error": 0.028190901829697173
+        },
+        {
+          "omega": 2,
+          "exact": 0.03137481143008495,
+          "approx": 0.030051574013284288,
+          "relative_error": -0.04217515122758073
+        },
+        {
+          "omega": 4,
+          "exact": 0.03777286498871096,
+          "approx": 0.037210803036703065,
+          "relative_error": -0.014880045561168665
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 1,
+      "order": 16,
+      "smallest_mass": 0.08764941047892787,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.9090909090909091,
+          "potential_approx": 0.9090909090909091,
+          "potential_error": 0.0,
+          "potential_bound": 1.6636709775210166e-41,
+          "force_error": 0.0,
+          "force_bound": 5.1573800303151516e-40
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.6666666666666666,
+          "potential_approx": 0.6666666666666667,
+          "potential_error": -1.1102230246251565e-16,
+          "potential_bound": 3.873535845244824e-19,
+          "force_error": -1.1102230246251565e-16,
+          "force_bound": 1.2007961120258955e-17
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.5,
+          "potential_approx": 0.4999999999999978,
+          "potential_error": 2.220446049250313e-15,
+          "potential_bound": 1.6636709775210163e-09,
+          "force_error": -4.796163466380676e-14,
+          "force_bound": 5.157380030315151e-08
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.3333333333333333,
+          "potential_approx": 0.3333333326181729,
+          "potential_error": 7.151604308752724e-10,
+          "potential_bound": 7.145412439757086,
+          "force_error": -1.0246638093569516e-08,
+          "force_bound": 221.50778563246968
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.09090909090909091,
+          "potential_approx": 0.08905067324644195,
+          "potential_error": 0.0018584176626489646,
+          "potential_bound": 1.6636709775210163e+23,
+          "force_error": -0.0057289245000935185,
+          "force_bound": 5.157380030315151e+24
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.00019065325836608023,
+          "approx": 0.00025135165804692075,
+          "relative_error": 0.3183706389339086
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.0015745462970229533,
+          "approx": 0.0014905245558604068,
+          "relative_error": -0.053362509137653974
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.004008331767223388,
+          "approx": 0.0041174616326269805,
+          "relative_error": 0.027225756684105082
+        },
+        {
+          "omega": 1,
+          "exact": 0.012801778549298677,
+          "approx": 0.011966782143028687,
+          "relative_error": -0.06522503127627799
+        },
+        {
+          "omega": 2,
+          "exact": 0.03137481143008495,
+          "approx": 0.03035102135242809,
+          "relative_error": -0.0326309555656854
+        },
+        {
+          "omega": 4,
+          "exact": 0.03777286498871096,
+          "approx": 0.0380065063278574,
+          "relative_error": 0.006185428063671483
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 1,
+      "count": 32,
+      "smallest_mass": 0.1875,
+      "tail_probability": 6.144212353328207e-06,
+      "potential_uniform_bound": 0.37500614421235334,
+      "force_uniform_bound": 0.1379609346516442,
+      "noise_uniform_bound": 0.031023150007319637,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": 0.00111504307236443,
+          "force_error": 4.9272781395770515e-05
+        },
+        {
+          "radius": 0.5,
+          "potential_error": 0.004846619070716041,
+          "force_error": 0.0006758297346673992
+        },
+        {
+          "radius": 1,
+          "potential_error": 0.008662131269762119,
+          "force_error": 0.0015839997920060744
+        },
+        {
+          "radius": 2,
+          "potential_error": 0.015093144893940924,
+          "force_error": 0.0032371904439884025
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.00019065325836608023,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.0015745462970229533,
+          "approx": 0.0018486638957796008,
+          "relative_error": 0.1740930700322567
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.004008331767223388,
+          "approx": 0.0036225367967159788,
+          "relative_error": -0.0962482630959096
+        },
+        {
+          "omega": 1,
+          "exact": 0.012801778549298677,
+          "approx": 0.012930340057959917,
+          "relative_error": 0.010042472471005377
+        },
+        {
+          "omega": 2,
+          "exact": 0.03137481143008495,
+          "approx": 0.0311805205033821,
+          "relative_error": -0.006192576715108039
+        },
+        {
+          "omega": 4,
+          "exact": 0.03777286498871096,
+          "approx": 0.0377958811532531,
+          "relative_error": 0.0006093306544002754
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 1,
+      "count": 128,
+      "smallest_mass": 0.046875,
+      "tail_probability": 6.144212353328207e-06,
+      "potential_uniform_bound": 0.09375614421235333,
+      "force_uniform_bound": 0.03449484182217605,
+      "noise_uniform_bound": 0.015511575003659819,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": 6.990673809370573e-05,
+          "force_error": 3.0325211552995057e-06
+        },
+        {
+          "radius": 0.5,
+          "potential_error": 0.00030503426991790317,
+          "force_error": 4.0793502967373385e-05
+        },
+        {
+          "radius": 1,
+          "potential_error": 0.000548813946008031,
+          "force_error": 9.203134724788953e-05
+        },
+        {
+          "radius": 2,
+          "potential_error": 0.0009744211244362977,
+          "force_error": 0.00016539550723149166
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.00019065325836608023,
+          "approx": 0.0002001357329929868,
+          "relative_error": 0.049736756183305975
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.0015745462970229533,
+          "approx": 0.0015637063364134472,
+          "relative_error": -0.006884497858209436
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.004008331767223388,
+          "approx": 0.00396321966568521,
+          "relative_error": -0.0112545827436404
+        },
+        {
+          "omega": 1,
+          "exact": 0.012801778549298677,
+          "approx": 0.01282365308034041,
+          "relative_error": 0.0017087103137658451
+        },
+        {
+          "omega": 2,
+          "exact": 0.03137481143008495,
+          "approx": 0.03135315554735481,
+          "relative_error": -0.0006902314864393344
+        },
+        {
+          "omega": 4,
+          "exact": 0.03777286498871096,
+          "approx": 0.03777564487034811,
+          "relative_error": 7.359467273621817e-05
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 1,
+      "count": 512,
+      "smallest_mass": 0.01171875,
+      "tail_probability": 6.144212353328207e-06,
+      "potential_uniform_bound": 0.02344364421235333,
+      "force_uniform_bound": 0.008628318614809009,
+      "noise_uniform_bound": 0.007755787501829909,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": 4.377371046748735e-06,
+          "force_error": 1.919717826925904e-07
+        },
+        {
+          "radius": 0.5,
+          "potential_error": 1.9073845313966054e-05,
+          "force_error": 2.548690681836163e-06
+        },
+        {
+          "radius": 1,
+          "potential_error": 3.433031597815939e-05,
+          "force_error": 5.7239788863183705e-06
+        },
+        {
+          "radius": 2,
+          "potential_error": 6.102677542102475e-05,
+          "force_error": 1.0182860942897776e-05
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 0.00019065325836608023,
+          "approx": 0.00018849465706734627,
+          "relative_error": -0.011322131692022572
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.0015745462970229533,
+          "approx": 0.0015792773892319683,
+          "relative_error": 0.003004733628957233
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.004008331767223388,
+          "approx": 0.0040028698442285725,
+          "relative_error": -0.0013626424437911894
+        },
+        {
+          "omega": 1,
+          "exact": 0.012801778549298677,
+          "approx": 0.01280481712825432,
+          "relative_error": 0.0002373560004917377
+        },
+        {
+          "omega": 2,
+          "exact": 0.03137481143008495,
+          "approx": 0.03137227684441284,
+          "relative_error": -8.078409260736242e-05
+        },
+        {
+          "omega": 4,
+          "exact": 0.03777286498871096,
+          "approx": 0.03777320455713083,
+          "relative_error": 8.989744886365707e-06
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 2,
+      "order": 4,
+      "smallest_mass": 0.7432919279814314,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.8264462809917354,
+          "potential_approx": 0.8264462805765604,
+          "potential_error": 4.151750054859349e-10,
+          "potential_bound": 7.142857142857154e-10,
+          "force_error": -2.686155520237321e-09,
+          "force_bound": 5.000000000000008e-09
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.4444444444444444,
+          "potential_approx": 0.44442135091882684,
+          "potential_error": 2.3093525617579047e-05,
+          "potential_bound": 0.00027901785714285686,
+          "force_error": -0.00010978441605524747,
+          "force_bound": 0.001953124999999998
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.25,
+          "potential_approx": 0.24924446039522585,
+          "potential_error": 0.0007555396047741469,
+          "potential_bound": 0.07142857142857141,
+          "force_error": -0.0024339917543634293,
+          "force_bound": 0.4999999999999999
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.1111111111111111,
+          "potential_approx": 0.10384653707084582,
+          "potential_error": 0.007264574040265287,
+          "potential_bound": 18.285714285714263,
+          "force_error": -0.009169077285219374,
+          "force_bound": 127.99999999999984
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.008264462809917356,
+          "potential_approx": 0.00026430534998554293,
+          "potential_error": 0.008000157459931812,
+          "potential_bound": 7142857.142857141,
+          "force_error": 0.02106189308704813,
+          "force_bound": 49999999.999999985
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 7.959538471630757e-06,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.00019084067044003688,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.0007837157951433115,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 1,
+          "exact": 0.00461954022769278,
+          "approx": 0.007363422556999064,
+          "relative_error": 0.5939730349911274
+        },
+        {
+          "omega": 2,
+          "exact": 0.019430181015988267,
+          "approx": 0.016943296124370365,
+          "relative_error": -0.12799082466455414
+        },
+        {
+          "omega": 4,
+          "exact": 0.035878345543655314,
+          "approx": 0.03755765533030248,
+          "relative_error": 0.046805664007105674
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 2,
+      "order": 8,
+      "smallest_mass": 0.40938357320318514,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.8264462809917354,
+          "potential_approx": 0.8264462809917357,
+          "potential_error": -2.220446049250313e-16,
+          "potential_bound": 6.993006993006975e-20,
+          "force_error": 0.0,
+          "force_bound": 1.0489510489510463e-18
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.4444444444444444,
+          "potential_approx": 0.4444444442951212,
+          "potential_error": 1.4932322045524415e-10,
+          "potential_bound": 1.0670481861888107e-08,
+          "force_error": -1.6663991297960479e-09,
+          "force_bound": 1.600572279283216e-07
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.25,
+          "potential_approx": 0.2499997073783825,
+          "potential_error": 2.9262161749255e-07,
+          "potential_bound": 0.0006993006993006975,
+          "force_error": -2.507158218811867e-06,
+          "force_bound": 0.010489510489510462
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.1111111111111111,
+          "potential_approx": 0.11103790789922582,
+          "potential_error": 7.3203211885281e-05,
+          "potential_bound": 45.82937062937058,
+          "force_error": -0.00038764767444166015,
+          "force_bound": 687.4405594405587
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.008264462809917356,
+          "potential_approx": 0.0031292249060108175,
+          "potential_error": 0.005135237903906538,
+          "potential_bound": 6993006993006.999,
+          "force_error": 0.00734686220004958,
+          "force_bound": 104895104895104.98
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 7.959538471630757e-06,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.00019084067044003688,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.0007837157951433115,
+          "approx": 0.0013573401275365654,
+          "relative_error": 0.7319290180802851
+        },
+        {
+          "omega": 1,
+          "exact": 0.00461954022769278,
+          "approx": 0.004116437057793887,
+          "relative_error": -0.10890762827065284
+        },
+        {
+          "omega": 2,
+          "exact": 0.019430181015988267,
+          "approx": 0.021409182249805564,
+          "relative_error": 0.10185191955694395
+        },
+        {
+          "omega": 4,
+          "exact": 0.035878345543655314,
+          "approx": 0.03690915838295879,
+          "relative_error": 0.028730779629992185
+        }
+      ]
+    },
+    {
+      "method": "gauss",
+      "s": 2,
+      "order": 16,
+      "smallest_mass": 0.2161403052394522,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_exact": 0.8264462809917354,
+          "potential_approx": 0.8264462809917357,
+          "potential_error": -2.220446049250313e-16,
+          "potential_bound": 2.8282406617857362e-40,
+          "force_error": 0.0,
+          "force_bound": 8.767546051535782e-39
+        },
+        {
+          "radius": 0.5,
+          "potential_exact": 0.4444444444444444,
+          "potential_approx": 0.44444444444444486,
+          "potential_error": -4.440892098500626e-16,
+          "potential_bound": 6.585010936916172e-18,
+          "force_error": -5.551115123125783e-16,
+          "force_bound": 2.0413533904440131e-16
+        },
+        {
+          "radius": 1,
+          "potential_exact": 0.25,
+          "potential_approx": 0.24999999999998224,
+          "potential_error": 1.7763568394002505e-14,
+          "potential_bound": 2.8282406617857157e-08,
+          "force_error": -3.4983127505938683e-13,
+          "force_bound": 8.767546051535718e-07
+        },
+        {
+          "radius": 2,
+          "potential_exact": 0.1111111111111111,
+          "potential_approx": 0.11111110810216304,
+          "potential_error": 3.008948062932504e-09,
+          "potential_bound": 121.4720114758708,
+          "force_error": -4.0061075068376084e-08,
+          "force_bound": 3765.632355751995
+        },
+        {
+          "radius": 10,
+          "potential_exact": 0.008264462809917356,
+          "potential_approx": 0.007449155773892005,
+          "potential_error": 0.0008153070360253506,
+          "potential_bound": 2.8282406617857355e+24,
+          "force_error": -0.0010857841155280552,
+          "force_bound": 8.76754605153578e+25
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 7.959538471630757e-06,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.00019084067044003688,
+          "approx": 0.000332563128154452,
+          "relative_error": 0.7426218813192917
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.0007837157951433115,
+          "approx": 0.000713545300528328,
+          "relative_error": -0.08953563913070295
+        },
+        {
+          "omega": 1,
+          "exact": 0.00461954022769278,
+          "approx": 0.005380476450475595,
+          "relative_error": 0.16472120282040775
+        },
+        {
+          "omega": 2,
+          "exact": 0.019430181015988267,
+          "approx": 0.020566439600860482,
+          "relative_error": 0.058479052971108995
+        },
+        {
+          "omega": 4,
+          "exact": 0.035878345543655314,
+          "approx": 0.0340548944723994,
+          "relative_error": -0.050823164881926154
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 2,
+      "count": 32,
+      "smallest_mass": 0.1875,
+      "tail_probability": 7.987476059326673e-05,
+      "potential_uniform_bound": 0.3750798747605933,
+      "force_uniform_bound": 0.13803466519988414,
+      "noise_uniform_bound": 0.031023150007319637,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": -4.206859569333421e-05,
+          "force_error": 3.882722876236144e-05
+        },
+        {
+          "radius": 0.5,
+          "potential_error": -0.0006039873480841451,
+          "force_error": 0.00019794191410038575
+        },
+        {
+          "radius": 1,
+          "potential_error": -0.0013337157871287086,
+          "force_error": -7.170828361979797e-05
+        },
+        {
+          "radius": 2,
+          "potential_error": -0.0022073115812278332,
+          "force_error": -0.0011199107278772602
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 7.959538471630757e-06,
+          "approx": 0.0,
+          "relative_error": -1.0
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.00019084067044003688,
+          "approx": 0.0003250110560901335,
+          "relative_error": 0.7030492260414357
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.0007837157951433115,
+          "approx": 0.0006368732102757502,
+          "relative_error": -0.18736713714020453
+        },
+        {
+          "omega": 1,
+          "exact": 0.00461954022769278,
+          "approx": 0.004859756639545636,
+          "relative_error": 0.05200006927374065
+        },
+        {
+          "omega": 2,
+          "exact": 0.019430181015988267,
+          "approx": 0.01910812819191221,
+          "relative_error": -0.016574875129112467
+        },
+        {
+          "omega": 4,
+          "exact": 0.035878345543655314,
+          "approx": 0.035946510780402535,
+          "relative_error": 0.0018998991094581084
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 2,
+      "count": 128,
+      "smallest_mass": 0.046875,
+      "tail_probability": 7.987476059326673e-05,
+      "potential_uniform_bound": 0.09382987476059326,
+      "force_uniform_bound": 0.03456857237041599,
+      "noise_uniform_bound": 0.015511575003659819,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": -2.8872287178849376e-06,
+          "force_error": 2.513808999293765e-06
+        },
+        {
+          "radius": 0.5,
+          "potential_error": -4.0490651296132274e-05,
+          "force_error": 1.355964149640787e-05
+        },
+        {
+          "radius": 1,
+          "potential_error": -9.102718533049448e-05,
+          "force_error": -2.995181654918966e-07
+        },
+        {
+          "radius": 2,
+          "potential_error": -0.00016112152173183847,
+          "force_error": -5.540933586622998e-05
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 7.959538471630757e-06,
+          "approx": 9.234800162975356e-06,
+          "relative_error": 0.16021804478863497
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.00019084067044003688,
+          "approx": 0.00018904503209959882,
+          "relative_error": -0.009409096794188124
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.0007837157951433115,
+          "approx": 0.0007641621494645383,
+          "relative_error": -0.024949919090500906
+        },
+        {
+          "omega": 1,
+          "exact": 0.00461954022769278,
+          "approx": 0.004647371846539573,
+          "relative_error": 0.006024759494451587
+        },
+        {
+          "omega": 2,
+          "exact": 0.019430181015988267,
+          "approx": 0.019391156977084385,
+          "relative_error": -0.002008423846992006
+        },
+        {
+          "omega": 4,
+          "exact": 0.035878345543655314,
+          "approx": 0.03588794250301871,
+          "relative_error": 0.0002674861178232897
+        }
+      ]
+    },
+    {
+      "method": "bins",
+      "s": 2,
+      "count": 512,
+      "smallest_mass": 0.01171875,
+      "tail_probability": 7.987476059326673e-05,
+      "potential_uniform_bound": 0.023517374760593266,
+      "force_uniform_bound": 0.008702049163048946,
+      "noise_uniform_bound": 0.007755787501829909,
+      "static": [
+        {
+          "radius": 0.1,
+          "potential_error": -7.296446224991371e-08,
+          "force_error": 1.9731780831477863e-07
+        },
+        {
+          "radius": 0.5,
+          "potential_error": -2.529353047675542e-06,
+          "force_error": 9.216590838301286e-07
+        },
+        {
+          "radius": 1,
+          "potential_error": -5.7199211789815685e-06,
+          "force_error": -3.4188574193905197e-10
+        },
+        {
+          "radius": 2,
+          "potential_error": -1.0166101431521857e-05,
+          "force_error": -3.3954024414306616e-06
+        }
+      ],
+      "noise": [
+        {
+          "omega": 0.1,
+          "exact": 7.959538471630757e-06,
+          "approx": 7.782128399300125e-06,
+          "relative_error": -0.02228898986580111
+        },
+        {
+          "omega": 0.3,
+          "exact": 0.00019084067044003688,
+          "approx": 0.0001924162583610117,
+          "relative_error": 0.008256038491909782
+        },
+        {
+          "omega": 0.5,
+          "exact": 0.0007837157951433115,
+          "approx": 0.0007811861053279967,
+          "relative_error": -0.003227815275628372
+        },
+        {
+          "omega": 1,
+          "exact": 0.00461954022769278,
+          "approx": 0.004622922855859458,
+          "relative_error": 0.0007322434701185693
+        },
+        {
+          "omega": 2,
+          "exact": 0.019430181015988267,
+          "approx": 0.019425386332024584,
+          "relative_error": -0.00024676476043830457
+        },
+        {
+          "omega": 4,
+          "exact": 0.035878345543655314,
+          "approx": 0.03587960613664856,
+          "relative_error": 3.513520409445504e-05
+        }
+      ]
+    }
+  ],
+  "source_sha256": "a4ae7d5a3cdfea4a2152b573f073d2c27538d46073ac6f6a70059d46ba2685c8",
+  "contract_sha256": "5cd0fb2e46dd8e6407978c5dadf47c92d959c63be91b0c2cc0aff2bfe00b9c4c"
+}

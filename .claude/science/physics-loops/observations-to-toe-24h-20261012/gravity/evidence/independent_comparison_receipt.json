@@ -1,0 +1,122 @@
+{
+  "scope": "Focused arithmetic/normalization comparison; not landing review or empirical fit",
+  "author_result_sha256": "08d13e66a32b4fd549909692704ca6e46e91d01ffcfe4d265d24cb8fbc346122",
+  "author_runner_sha256_declared": "5fbd1405a54925ea82daff679397bb534f797d9f7140b0214b8bd831f9a58ef6",
+  "independent_result_sha256": "12f5150a84acc155d0e7f0899e256882deb9a9fd3d4313c7e442104b83e1f868",
+  "independent_runner_sha256": "eaf0187420e5e0397d62e84f71fd551348a9569eafc94ef90ebdad88342bfc2d",
+  "contract_sha256": "4478751aae5cd9683466649fc9031d94f75c0ac1259c9661b104a83d692a252d",
+  "comparisons": [
+    {
+      "quantity": "mu_AU",
+      "author": 0.9615553289785617,
+      "independent": 0.9615553289785614,
+      "relative_difference": 2.3092233825057604e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "mu_inverse_m",
+      "author": 6.427600369438692e-12,
+      "independent": 6.42760036943869e-12,
+      "relative_difference": 2.5135152172407356e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "lambda_m",
+      "author": 155579056338.76984,
+      "independent": 155579056338.76987,
+      "relative_difference": 1.961547964306241e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "gamma_like_at_1.6",
+      "author": 1.0000000000000004,
+      "independent": 1.0,
+      "relative_difference": 4.440892098500626e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "gamma_like_at_2.0",
+      "author": 0.9998653270109932,
+      "independent": 0.9998653270109931,
+      "relative_difference": 1.1103725618169678e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "gamma_like_at_4.0",
+      "author": 0.9988695242933281,
+      "independent": 0.9988695242933284,
+      "relative_difference": 3.334438575680665e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "gamma_like_at_8.0",
+      "author": 0.9955498691219677,
+      "independent": 0.9955498691219673,
+      "relative_difference": 4.460742988613222e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "gamma_like_at_16.0",
+      "author": 0.9849087474122096,
+      "independent": 0.9849087474122094,
+      "relative_difference": 2.2544688074752165e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "force_at_0.387",
+      "author": 1.261187964363338,
+      "independent": 1.2611879643633381,
+      "relative_difference": 1.7605988258627406e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "force_at_0.723",
+      "author": 1.1279665705264983,
+      "independent": 1.1279665705264985,
+      "relative_difference": 1.9685388798480795e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "force_at_1.524",
+      "author": 0.7593940749257447,
+      "independent": 0.7593940749257448,
+      "relative_difference": 1.4619853660745463e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "delay_at_30",
+      "author": 139833.13305501267,
+      "independent": 139833.13305501256,
+      "relative_difference": 8.325303115473726e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "delay_at_100",
+      "author": 12584.981974053517,
+      "independent": 12584.98197405351,
+      "relative_difference": 5.781460497269116e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "delay_at_300",
+      "author": 1398.3313304416233,
+      "independent": 1398.331330441622,
+      "relative_difference": 9.756214589202808e-16,
+      "agrees": true
+    },
+    {
+      "quantity": "delay_at_1000",
+      "author": 125.84981973965634,
+      "independent": 125.84981973965623,
+      "relative_difference": 9.033532027046078e-16,
+      "agrees": true
+    }
+  ],
+  "deliberately_wrong_results_rejected": {
+    "factor_two_mass_scale": true,
+    "replace_finite_range_shape_with_constant_gamma": true,
+    "erase_angular_frequency_conversion": true
+  },
+  "total_agree": 15,
+  "total_disagree": 0
+}

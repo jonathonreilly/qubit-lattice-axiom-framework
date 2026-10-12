@@ -2,9 +2,9 @@
   "campaign_id": "observations-to-toe-24h-20261012",
   "mode": "campaign",
   "runtime_hours": 24,
-  "status": "prepared",
-  "started_at": null,
-  "deadline_at": null,
+  "status": "running",
+  "started_at": "2026-10-12T16:53:00.057432+00:00",
+  "deadline_at": "2026-10-13T16:53:00.057432+00:00",
   "initial_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
   "skill_source": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
   "branch": "codex/observations-to-toe-24h-20261012",
@@ -12,9 +12,9 @@
   "checkpoint_minutes": 30,
   "deep_block_minutes": 90,
   "cycles_completed": 0,
-  "active_route": "observation inventory and inverse-model selection",
-  "actual_current_surface_status": "open",
-  "target_claim_type": "open_gate",
+  "active_route": "finite-source spectral gravity response and shared causal quantum mediator",
+  "actual_current_surface_status": "conditional-support",
+  "target_claim_type": "bounded_theorem",
   "trace_class": "frontier_discovery",
   "reachability_to_target": "unknown_frontier",
   "conditional_surface_status": "Explicit candidate assumptions and physical bridges",
@@ -23,7 +23,28 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Pin a primary data/model contract and begin a decisive inverse-reconstruction calculation.",
+  "next_exact_action": "Construct and check finite canonical approximations with simultaneous static and vacuum-noise error bounds; independently review the public Sun estimator normalization before empirical reuse.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
-  "global_stop_condition": null
+  "global_stop_condition": null,
+  "last_checkpoint_at": "2026-10-12T17:21:54.623670+00:00",
+  "current_block": "shared-scalar-finite-local-completion-v1",
+  "current_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
+  "independent_checks_pending": [
+    "Read full scalar independent proof/code/results",
+    "Independently reconstruct Sun composition second-stage estimator"
+  ],
+  "delegated_routes": [
+    "gravity_measurements",
+    "composition_candidate",
+    "neutrino_candidate"
+  ],
+  "source_freshness": "current main fetched; AGENTS and physics-loop/current references read at pinned source; user alternative-premise override preserved",
+  "open_obligations": [
+    "Cassini full measurement likelihood",
+    "massive tensor nonlinear completion",
+    "finite versus continuum shared scalar response and noise",
+    "published Sun estimator source normalization",
+    "matter, gauge and cosmological architecture"
+  ]
 }

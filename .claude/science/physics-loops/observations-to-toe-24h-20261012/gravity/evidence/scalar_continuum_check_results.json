@@ -1,0 +1,163 @@
+{
+  "created_utc": "2026-10-12T17:19:07.322609+00:00",
+  "scipy_version": "1.17.0",
+  "parameters": {
+    "s_for_decoherence": 1,
+    "ell": 1.3,
+    "a": 0.7,
+    "d": 1.2,
+    "g": 0.8
+  },
+  "static": [
+    {
+      "s": 0.4,
+      "r": 0.3,
+      "laplace_quadrature": 0.9202998428387023,
+      "closed": 0.9202998428367271,
+      "relative_error": 2.1462831512053526e-12
+    },
+    {
+      "s": 0.4,
+      "r": 2.0,
+      "laplace_quadrature": 0.6889247145818,
+      "closed": 0.6889247145799499,
+      "relative_error": 2.6856294965682537e-12
+    },
+    {
+      "s": 1.0,
+      "r": 0.3,
+      "laplace_quadrature": 0.8125000000000001,
+      "closed": 0.8125,
+      "relative_error": 2.220446049250313e-16
+    },
+    {
+      "s": 1.0,
+      "r": 2.0,
+      "laplace_quadrature": 0.3939393939393939,
+      "closed": 0.393939393939394,
+      "relative_error": 1.1102230246251565e-16
+    },
+    {
+      "s": 2.7,
+      "r": 0.3,
+      "laplace_quadrature": 0.5708514362367395,
+      "closed": 0.5708514362367397,
+      "relative_error": 4.440892098500626e-16
+    },
+    {
+      "s": 2.7,
+      "r": 2.0,
+      "laplace_quadrature": 0.08084616312352336,
+      "closed": 0.08084616312352341,
+      "relative_error": 6.661338147750939e-16
+    }
+  ],
+  "retarded_tail": [
+    {
+      "s": 0.4,
+      "tau": 0.2,
+      "mass_quadrature": 0.012873422575708742,
+      "hypergeometric": 0.012873422575709791,
+      "relative_error": 8.149037000748649e-14
+    },
+    {
+      "s": 0.4,
+      "tau": 2.0,
+      "mass_quadrature": 0.003707668474181086,
+      "hypergeometric": 0.003707668474181084,
+      "relative_error": 4.440892098500626e-16
+    },
+    {
+      "s": 1.0,
+      "tau": 0.2,
+      "mass_quadrature": 0.045463653552954904,
+      "hypergeometric": 0.04546365355295491,
+      "relative_error": 1.1102230246251565e-16
+    },
+    {
+      "s": 1.0,
+      "tau": 2.0,
+      "mass_quadrature": 0.0076219323308224125,
+      "hypergeometric": 0.0076219323308224125,
+      "relative_error": 0.0
+    },
+    {
+      "s": 2.7,
+      "tau": 0.2,
+      "mass_quadrature": 0.21746917841402674,
+      "hypergeometric": 0.21746917841402666,
+      "relative_error": 4.440892098500626e-16
+    },
+    {
+      "s": 2.7,
+      "tau": 2.0,
+      "mass_quadrature": 0.003182192368538581,
+      "hypergeometric": 0.003182192368538409,
+      "relative_error": 5.417888360170764e-14
+    }
+  ],
+  "low_frequency": [
+    {
+      "s": 0.4,
+      "omega": 0.001,
+      "local_ratio": 0.9996965352994884,
+      "difference_ratio": 0.9997653019108927
+    },
+    {
+      "s": 1.0,
+      "omega": 0.001,
+      "local_ratio": 0.9994481067140351,
+      "difference_ratio": 0.999558269369422
+    },
+    {
+      "s": 2.7,
+      "omega": 0.001,
+      "local_ratio": 0.9991465790505231,
+      "difference_ratio": 0.999273695358854
+    }
+  ],
+  "decoherence": [
+    {
+      "T": 2.0,
+      "oscillator_route": 0.005988046688421602,
+      "frequency_route": 0.005988046688420314,
+      "relative_difference": 2.1516122217235534e-13
+    },
+    {
+      "T": 5.0,
+      "oscillator_route": 0.00429446926776487,
+      "frequency_route": 0.004294469267763148,
+      "relative_difference": 4.0101255649460654e-13
+    }
+  ],
+  "long_time": [
+    {
+      "T": 10.0,
+      "plateau_minus_exponent": -1.6891270418103335e-06,
+      "leading_asymptotic": -1.5780814880767572e-06,
+      "ratio": 1.0703674395603677
+    },
+    {
+      "T": 20.0,
+      "plateau_minus_exponent": -1.0024774681213145e-07,
+      "leading_asymptotic": -9.863009300479733e-08,
+      "ratio": 1.0164012195269394
+    },
+    {
+      "T": 40.0,
+      "plateau_minus_exponent": -6.189245257808415e-09,
+      "leading_asymptotic": -6.164380812799833e-09,
+      "ratio": 1.0040335673222773
+    }
+  ],
+  "wightman_s1_at_r_equal_ell": {
+    "mass_integral": 0.009992227183662897,
+    "analytic": 0.009992227183662503
+  },
+  "plateau": {
+    "frequency_route": 0.004257864126393025,
+    "schwinger_route": 0.004257864126393124,
+    "all_T_polynomial_bound": 0.015880544701492944
+  },
+  "scope": "Self-checks of the independent conditional construction, not empirical validation or independent review of parent code."
+}

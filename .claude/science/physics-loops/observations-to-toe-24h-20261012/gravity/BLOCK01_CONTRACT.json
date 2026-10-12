@@ -1,0 +1,38 @@
+{
+  "id": "spectral-gravity-response-v1",
+  "source_revision": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "role": "Exploratory geometry and identifiability calculation, followed by a conditional propagation comparison; not a Cassini likelihood refit",
+  "hypotheses": [
+    "Linear response about Minkowski spacetime, conserved sources, weak fields and universal metric readout",
+    "One nonnegative massless spin-2 residue Z and nonnegative massive spin-2/spin-0 measures on inverse Compton lengths mu >= 0",
+    "No nonlinear screening or environmental change of the spectral measures in this first family",
+    "Static spherical source with nonnegative density, linear Born ray propagation outside it",
+    "Frequency-domain radiative branch k(mu,omega)=sqrt((omega/c)^2-mu^2), with retarded boundary condition",
+    "A propagation timing comparison concerns the identified observed carrier, not every unobserved mode"
+  ],
+  "normalization": "Phi=-Gstar*M/r [Z+(4/3)int F(mu)exp(-mu*r)dW2+2int F(mu)exp(-mu*r)dW0]; Psi=-Gstar*M/r [Z+(2/3)int F exp(-mu*r)dW2-2int F exp(-mu*r)dW0]",
+  "benchmark_geometry": {
+    "solar_radius_m": 695700000.0,
+    "reference_orbit_radius_m": 149597870700.0,
+    "earth_ray_endpoint_z_m": 149597870700.0,
+    "spacecraft_ray_endpoint_z_m": 1261110050001.0,
+    "impact_parameter_solar_radii": [1.6, 2.0, 4.0, 8.0, 16.0],
+    "geometry_status": "Declared idealization motivated by Cassini conjunction; fixed endpoint z and one circular reference orbit, not reconstructed Cassini ephemeris",
+    "source_profiles": ["point", "uniform sphere", "arbitrary nonnegative spherical density support <= R"]
+  },
+  "candidate_families": {
+    "G0": "Z>0, W2=W0=0; massless metric control",
+    "G1": "Z=0, W0=0, one positive massive spin-2 pole; choose mu only by benchmark light/force ratio matching, not GW timing",
+    "G2": "Z>=0 plus positive finite-support spectral measures; derive allowed envelopes and unresolved modes rather than choose independently fitted sector values"
+  },
+  "selection_exposure": "Cassini near-unity gamma and GW170817/GRB timing results were known before this contract. Any comparison is model-development compatibility, never a blind prediction.",
+  "calibration_rule": "For G1 solve 2*light_gradient_kernel(mu,b0)/((4/3)*force_kernel(mu,r0))-1=1 at b0=1.6 R. This is an idealized GR-shaped response equality, not a fit of the observed Cassini gamma parameter.",
+  "test_quantities": [
+    "Light-path response shape across the other declared b values, without refitting mu",
+    "Relative acceleration response at 0.387, 0.723, 1.524 reference-orbit radii, as future observable targets and not scored observations",
+    "Group delay at 30, 100, 300 and 1000 Hz over declared 26 Mpc, compared conditionally to the primary timing/intrinsic-delay interval once extraction is pinned"
+  ],
+  "free_parameters_and_nuisance": "Overall Gstar*M calibrated by one force radius; mu fixed by the benchmark ratio for G1. Source density profile cancels from G1 light/force ratio for the same spherical source. Real ephemerides, ray endpoints, Doppler nuisance design/covariance, gamma emission lag, source waveform and massive-mode detector coupling remain separate.",
+  "verification": "Compare analytic exterior sphere factor against direct source quadrature; compare finite ray gradient against quadrature and Bessel infinite-ray limit; inspect small/large-mu limits; independent derivation before load-bearing reuse.",
+  "claim_limit": "No general-gravity exclusion, observed GW massive-mode fraction bound, measured Cassini fit, nonlinear completion or TOE claim is authorized by this calculation. No adopted premise or audit status changes."
+}

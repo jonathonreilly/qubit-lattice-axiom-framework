@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-12T17:30:55.817485+00:00",
+  "scope": "Unmodified raw numerical evidence. Original independent runner uses historical runtime paths and guard; portable delivery adaptation is still required. No formal audit cache claimed.",
+  "artifacts": [
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/block01_freeze.json",
+      "packet_path": "gravity/evidence/block01_freeze.json",
+      "sha256": "5389cea381397545b76e77fd44d9ce2a5024194cefb82a686430b92ff20b8c54"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/block01_results.json",
+      "packet_path": "gravity/evidence/block01_results.json",
+      "sha256": "08d13e66a32b4fd549909692704ca6e46e91d01ffcfe4d265d24cb8fbc346122"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/scalar_continuum_freeze.json",
+      "packet_path": "gravity/evidence/scalar_continuum_freeze.json",
+      "sha256": "05f56f04a7d107227d1f1929ebc7c31526979221c30d522ba896fefc7595b429"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/scalar_continuum_results_v1.json",
+      "packet_path": "gravity/evidence/scalar_continuum_results_v1.json",
+      "sha256": "55fb9a0b5ae45e4d024265039ac85b82a1ab5e857f528e45e1595a5767bcfc4a"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/finite_local_freeze_v1.json",
+      "packet_path": "gravity/evidence/finite_local_freeze_v1.json",
+      "sha256": "67971961a2af8de90fa4401201e67dcf1c459c76816e43ac1797a1fd6462c08f"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/finite_local_results_v1.json",
+      "packet_path": "gravity/evidence/finite_local_results_v1.json",
+      "sha256": "6a29049400f0bd1fc1b8a44427c5a6997cc0555eb3b22aa400b29aa7f0c33c98"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity_measurements/independent_comparison_receipt.json",
+      "packet_path": "gravity/evidence/independent_comparison_receipt.json",
+      "sha256": "026a5cf5a966070912bab086eed055f0e985bdcf09cc0bcab81f417e89d11e1e"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity_measurements/independent_geometry_results.json",
+      "packet_path": "gravity/evidence/independent_geometry_results.json",
+      "sha256": "12f5150a84acc155d0e7f0899e256882deb9a9fd3d4313c7e442104b83e1f868"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity_measurements/scalar_continuum_check.py",
+      "packet_path": "gravity/evidence/scalar_continuum_check.py",
+      "sha256": "c3d3321be57e0a7320a853506b7bfc9de4bcaff6d822587b9e5f732f266da347"
+    },
+    {
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity_measurements/scalar_continuum_check_results.json",
+      "packet_path": "gravity/evidence/scalar_continuum_check_results.json",
+      "sha256": "81fc9df8b14c7dc03d34bd9028ad0fc8c2bad93922d69e9961e50103c1c18997"
+    }
+  ]
+}

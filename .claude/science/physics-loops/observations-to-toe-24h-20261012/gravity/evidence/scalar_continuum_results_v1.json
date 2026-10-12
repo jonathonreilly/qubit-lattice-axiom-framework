@@ -1,0 +1,608 @@
+{
+  "status": "conditional shared-response construction; no experimental fit",
+  "spectra": [
+    {
+      "s": 0.5,
+      "spatial_difference": false,
+      "values": [
+        {
+          "omega": 0.01,
+          "direct": 2.4912866931335308e-05,
+          "leading": 2.4981372090777308e-05,
+          "ratio": 0.9972577503272011
+        },
+        {
+          "omega": 0.001,
+          "direct": 7.897637570252861e-07,
+          "leading": 7.899803488301892e-07,
+          "ratio": 0.9997258263383085
+        },
+        {
+          "omega": 0.0001,
+          "direct": 2.498068718019583e-08,
+          "leading": 2.498137209077731e-08,
+          "ratio": 0.9999725831479956
+        }
+      ]
+    },
+    {
+      "s": 0.5,
+      "spatial_difference": true,
+      "values": [
+        {
+          "omega": 0.01,
+          "direct": 4.558251549299778e-10,
+          "leading": 4.568022325170708e-10,
+          "ratio": 0.9978610490108397
+        },
+        {
+          "omega": 0.001,
+          "direct": 1.444227364968889e-13,
+          "leading": 1.4445354950037747e-13,
+          "ratio": 0.9997866926524469
+        },
+        {
+          "omega": 0.0001,
+          "direct": 4.5679248885296896e-17,
+          "leading": 4.568022325170708e-17,
+          "ratio": 0.9999786698413269
+        }
+      ]
+    },
+    {
+      "s": 1.0,
+      "spatial_difference": false,
+      "values": [
+        {
+          "omega": 0.01,
+          "direct": 1.9810047852869956e-06,
+          "leading": 1.9894367886486917e-06,
+          "ratio": 0.9957616128294161
+        },
+        {
+          "omega": 0.001,
+          "direct": 1.988592559833596e-08,
+          "leading": 1.9894367886486912e-08,
+          "ratio": 0.9995756443130477
+        },
+        {
+          "omega": 0.0001,
+          "direct": 1.9893523554729054e-10,
+          "leading": 1.9894367886486914e-10,
+          "ratio": 0.999957559256837
+        }
+      ]
+    },
+    {
+      "s": 1.0,
+      "spatial_difference": true,
+      "values": [
+        {
+          "omega": 0.01,
+          "direct": 3.1722854759938856e-11,
+          "leading": 3.183098861837907e-11,
+          "ratio": 0.996602874647199
+        },
+        {
+          "omega": 0.001,
+          "direct": 3.1820180428789707e-15,
+          "leading": 3.183098861837908e-15,
+          "ratio": 0.9996604507098742
+        },
+        {
+          "omega": 0.0001,
+          "direct": 3.182990742099658e-19,
+          "leading": 3.1830988618379085e-19,
+          "ratio": 0.9999660331824605
+        }
+      ]
+    },
+    {
+      "s": 2.0,
+      "spatial_difference": false,
+      "values": [
+        {
+          "omega": 0.01,
+          "direct": 8.393819134229818e-09,
+          "leading": 8.443431970194815e-09,
+          "ratio": 0.9941240912297121
+        },
+        {
+          "omega": 0.001,
+          "direct": 8.438459610773636e-12,
+          "leading": 8.443431970194814e-12,
+          "ratio": 0.9994110973548753
+        },
+        {
+          "omega": 0.0001,
+          "direct": 8.442934623324878e-15,
+          "leading": 8.443431970194816e-15,
+          "ratio": 0.9999410965977231
+        }
+      ]
+    },
+    {
+      "s": 2.0,
+      "spatial_difference": true,
+      "values": [
+        {
+          "omega": 0.01,
+          "direct": 1.0754601560635152e-13,
+          "leading": 1.0807592921849367e-13,
+          "ratio": 0.9950968396388169
+        },
+        {
+          "omega": 0.001,
+          "direct": 1.0802288311125136e-18,
+          "leading": 1.0807592921849366e-18,
+          "ratio": 0.9995091774123445
+        },
+        {
+          "omega": 0.0001,
+          "direct": 1.0807062321797152e-23,
+          "leading": 1.0807592921849368e-23,
+          "ratio": 0.9999509048817758
+        }
+      ]
+    }
+  ],
+  "spatial_decoherence": [
+    {
+      "mu_a": 0.0,
+      "T_over_a": 0.1,
+      "Gamma_per_g2": 9.038713270717262e-05,
+      "saturation_per_g2": 0.026171171604514595,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.0,
+      "T_over_a": 1.0,
+      "Gamma_per_g2": 0.008065796548019331,
+      "saturation_per_g2": 0.026171171604514595,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.0,
+      "T_over_a": 10.0,
+      "Gamma_per_g2": 0.02700939837790825,
+      "saturation_per_g2": 0.026171171604514595,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.0,
+      "T_over_a": 100.0,
+      "Gamma_per_g2": 0.0261787773140607,
+      "saturation_per_g2": 0.026171171604514595,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.3,
+      "T_over_a": 0.1,
+      "Gamma_per_g2": 8.563884598854545e-05,
+      "saturation_per_g2": 0.018033246237226356,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.3,
+      "T_over_a": 1.0,
+      "Gamma_per_g2": 0.007562827862704656,
+      "saturation_per_g2": 0.018033246237226356,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.3,
+      "T_over_a": 10.0,
+      "Gamma_per_g2": 0.01687462308332988,
+      "saturation_per_g2": 0.018033246237226356,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 0.3,
+      "T_over_a": 100.0,
+      "Gamma_per_g2": 0.018037009936861463,
+      "saturation_per_g2": 0.018033246237226356,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 3.0,
+      "T_over_a": 0.1,
+      "Gamma_per_g2": 3.045284744070409e-05,
+      "saturation_per_g2": 0.000579614548279422,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 3.0,
+      "T_over_a": 1.0,
+      "Gamma_per_g2": 0.0011486810523925973,
+      "saturation_per_g2": 0.000579614548279422,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 3.0,
+      "T_over_a": 10.0,
+      "Gamma_per_g2": 0.0003767098604832222,
+      "saturation_per_g2": 0.000579614548279422,
+      "uniform_bound_per_g2": 0.06899632680371573
+    },
+    {
+      "mu_a": 3.0,
+      "T_over_a": 100.0,
+      "Gamma_per_g2": 0.0005804490985129916,
+      "saturation_per_g2": 0.000579614548279422,
+      "uniform_bound_per_g2": 0.06899632680371573
+    }
+  ],
+  "checks": [
+    {
+      "name": "mass quadrature s=0.5 r=0.1 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.9534625892455924,
+        "closed": 0.9534625892455924
+      }
+    },
+    {
+      "name": "mass quadrature s=0.5 r=0.1 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.9968017978476649,
+        "closed": 0.9968017978476647
+      }
+    },
+    {
+      "name": "mass quadrature s=0.5 r=1.0 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.7071067811865476,
+        "closed": 0.7071067811865476
+      }
+    },
+    {
+      "name": "mass quadrature s=0.5 r=1.0 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.8838834764831845,
+        "closed": 0.8838834764831844
+      }
+    },
+    {
+      "name": "mass quadrature s=0.5 r=10.0 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.30151134457776363,
+        "closed": 0.30151134457776363
+      }
+    },
+    {
+      "name": "mass quadrature s=0.5 r=10.0 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.4385619557494744,
+        "closed": 0.4385619557494744
+      }
+    },
+    {
+      "name": "infrared leading coefficient s=0.5 difference=False",
+      "pass": true,
+      "evidence": [
+        {
+          "omega": 0.01,
+          "direct": 2.4912866931335308e-05,
+          "leading": 2.4981372090777308e-05,
+          "ratio": 0.9972577503272011
+        },
+        {
+          "omega": 0.001,
+          "direct": 7.897637570252861e-07,
+          "leading": 7.899803488301892e-07,
+          "ratio": 0.9997258263383085
+        },
+        {
+          "omega": 0.0001,
+          "direct": 2.498068718019583e-08,
+          "leading": 2.498137209077731e-08,
+          "ratio": 0.9999725831479956
+        }
+      ]
+    },
+    {
+      "name": "infrared leading coefficient s=0.5 difference=True",
+      "pass": true,
+      "evidence": [
+        {
+          "omega": 0.01,
+          "direct": 4.558251549299778e-10,
+          "leading": 4.568022325170708e-10,
+          "ratio": 0.9978610490108397
+        },
+        {
+          "omega": 0.001,
+          "direct": 1.444227364968889e-13,
+          "leading": 1.4445354950037747e-13,
+          "ratio": 0.9997866926524469
+        },
+        {
+          "omega": 0.0001,
+          "direct": 4.5679248885296896e-17,
+          "leading": 4.568022325170708e-17,
+          "ratio": 0.9999786698413269
+        }
+      ]
+    },
+    {
+      "name": "mass quadrature s=1.0 r=0.1 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.909090909090909,
+        "closed": 0.9090909090909091
+      }
+    },
+    {
+      "name": "mass quadrature s=1.0 r=0.1 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.9917355371900826,
+        "closed": 0.9917355371900826
+      }
+    },
+    {
+      "name": "mass quadrature s=1.0 r=1.0 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.5,
+        "closed": 0.5
+      }
+    },
+    {
+      "name": "mass quadrature s=1.0 r=1.0 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.7500000000000001,
+        "closed": 0.75
+      }
+    },
+    {
+      "name": "mass quadrature s=1.0 r=10.0 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.09090909090909093,
+        "closed": 0.09090909090909091
+      }
+    },
+    {
+      "name": "mass quadrature s=1.0 r=10.0 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.17355371900826447,
+        "closed": 0.17355371900826447
+      }
+    },
+    {
+      "name": "infrared leading coefficient s=1.0 difference=False",
+      "pass": true,
+      "evidence": [
+        {
+          "omega": 0.01,
+          "direct": 1.9810047852869956e-06,
+          "leading": 1.9894367886486917e-06,
+          "ratio": 0.9957616128294161
+        },
+        {
+          "omega": 0.001,
+          "direct": 1.988592559833596e-08,
+          "leading": 1.9894367886486912e-08,
+          "ratio": 0.9995756443130477
+        },
+        {
+          "omega": 0.0001,
+          "direct": 1.9893523554729054e-10,
+          "leading": 1.9894367886486914e-10,
+          "ratio": 0.999957559256837
+        }
+      ]
+    },
+    {
+      "name": "infrared leading coefficient s=1.0 difference=True",
+      "pass": true,
+      "evidence": [
+        {
+          "omega": 0.01,
+          "direct": 3.1722854759938856e-11,
+          "leading": 3.183098861837907e-11,
+          "ratio": 0.996602874647199
+        },
+        {
+          "omega": 0.001,
+          "direct": 3.1820180428789707e-15,
+          "leading": 3.183098861837908e-15,
+          "ratio": 0.9996604507098742
+        },
+        {
+          "omega": 0.0001,
+          "direct": 3.182990742099658e-19,
+          "leading": 3.1830988618379085e-19,
+          "ratio": 0.9999660331824605
+        }
+      ]
+    },
+    {
+      "name": "mass quadrature s=2.0 r=0.1 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.8264462809917347,
+        "closed": 0.8264462809917354
+      }
+    },
+    {
+      "name": "mass quadrature s=2.0 r=0.1 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.9767092411720562,
+        "closed": 0.976709241172051
+      }
+    },
+    {
+      "name": "mass quadrature s=2.0 r=1.0 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.2500000000000002,
+        "closed": 0.25
+      }
+    },
+    {
+      "name": "mass quadrature s=2.0 r=1.0 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.49999999999999994,
+        "closed": 0.5
+      }
+    },
+    {
+      "name": "mass quadrature s=2.0 r=10.0 force=False",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.008264462809917354,
+        "closed": 0.008264462809917356
+      }
+    },
+    {
+      "name": "mass quadrature s=2.0 r=10.0 force=True",
+      "pass": true,
+      "evidence": {
+        "quadrature": 0.023290758827948902,
+        "closed": 0.023290758827948913
+      }
+    },
+    {
+      "name": "infrared leading coefficient s=2.0 difference=False",
+      "pass": true,
+      "evidence": [
+        {
+          "omega": 0.01,
+          "direct": 8.393819134229818e-09,
+          "leading": 8.443431970194815e-09,
+          "ratio": 0.9941240912297121
+        },
+        {
+          "omega": 0.001,
+          "direct": 8.438459610773636e-12,
+          "leading": 8.443431970194814e-12,
+          "ratio": 0.9994110973548753
+        },
+        {
+          "omega": 0.0001,
+          "direct": 8.442934623324878e-15,
+          "leading": 8.443431970194816e-15,
+          "ratio": 0.9999410965977231
+        }
+      ]
+    },
+    {
+      "name": "infrared leading coefficient s=2.0 difference=True",
+      "pass": true,
+      "evidence": [
+        {
+          "omega": 0.01,
+          "direct": 1.0754601560635152e-13,
+          "leading": 1.0807592921849367e-13,
+          "ratio": 0.9950968396388169
+        },
+        {
+          "omega": 0.001,
+          "direct": 1.0802288311125136e-18,
+          "leading": 1.0807592921849366e-18,
+          "ratio": 0.9995091774123445
+        },
+        {
+          "omega": 0.0001,
+          "direct": 1.0807062321797152e-23,
+          "leading": 1.0807592921849368e-23,
+          "ratio": 0.9999509048817758
+        }
+      ]
+    },
+    {
+      "name": "positive all-time bound mu=0.0 T=0.1",
+      "pass": true,
+      "evidence": 9.038713270717262e-05
+    },
+    {
+      "name": "positive all-time bound mu=0.0 T=1.0",
+      "pass": true,
+      "evidence": 0.008065796548019331
+    },
+    {
+      "name": "positive all-time bound mu=0.0 T=10.0",
+      "pass": true,
+      "evidence": 0.02700939837790825
+    },
+    {
+      "name": "positive all-time bound mu=0.0 T=100.0",
+      "pass": true,
+      "evidence": 0.0261787773140607
+    },
+    {
+      "name": "long hold limit mu=0.0",
+      "pass": true,
+      "evidence": 0.026171171604514595
+    },
+    {
+      "name": "positive all-time bound mu=0.3 T=0.1",
+      "pass": true,
+      "evidence": 8.563884598854545e-05
+    },
+    {
+      "name": "positive all-time bound mu=0.3 T=1.0",
+      "pass": true,
+      "evidence": 0.007562827862704656
+    },
+    {
+      "name": "positive all-time bound mu=0.3 T=10.0",
+      "pass": true,
+      "evidence": 0.01687462308332988
+    },
+    {
+      "name": "positive all-time bound mu=0.3 T=100.0",
+      "pass": true,
+      "evidence": 0.018037009936861463
+    },
+    {
+      "name": "long hold limit mu=0.3",
+      "pass": true,
+      "evidence": 0.018033246237226356
+    },
+    {
+      "name": "positive all-time bound mu=3.0 T=0.1",
+      "pass": true,
+      "evidence": 3.045284744070409e-05
+    },
+    {
+      "name": "positive all-time bound mu=3.0 T=1.0",
+      "pass": true,
+      "evidence": 0.0011486810523925973
+    },
+    {
+      "name": "positive all-time bound mu=3.0 T=10.0",
+      "pass": true,
+      "evidence": 0.0003767098604832222
+    },
+    {
+      "name": "positive all-time bound mu=3.0 T=100.0",
+      "pass": true,
+      "evidence": 0.0005804490985129916
+    },
+    {
+      "name": "long hold limit mu=3.0",
+      "pass": true,
+      "evidence": 0.000579614548279422
+    },
+    {
+      "name": "zero separation",
+      "pass": true,
+      "evidence": 0.0
+    }
+  ],
+  "total_pass": 40,
+  "total_fail": 0,
+  "source_sha256": "bc9447bf15a7c53ccf79f443c17a8a6fc1142d41a62966a2b3505a38400f861c"
+}

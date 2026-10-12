@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "status": "conditional geometry benchmark; no likelihood or audit status",
+  "mu_AU": 0.9615553289785617,
+  "mu_per_m": 6.427600369438692e-12,
+  "lambda_m": 155579056338.76984,
+  "cutoff_f_Hz": 0.00030668299908230887,
+  "light_shape": [
+    {
+      "b_Rsun": 1.6,
+      "benchmark_gamma_eff": 1.0000000000000004
+    },
+    {
+      "b_Rsun": 2.0,
+      "benchmark_gamma_eff": 0.9998653270109932
+    },
+    {
+      "b_Rsun": 4.0,
+      "benchmark_gamma_eff": 0.9988695242933281
+    },
+    {
+      "b_Rsun": 8.0,
+      "benchmark_gamma_eff": 0.9955498691219677
+    },
+    {
+      "b_Rsun": 16.0,
+      "benchmark_gamma_eff": 0.9849087474122096
+    }
+  ],
+  "force_shape": [
+    {
+      "r_AU": 0.387,
+      "relative_G_to_reference": 1.261187964363338
+    },
+    {
+      "r_AU": 0.723,
+      "relative_G_to_reference": 1.1279665705264983
+    },
+    {
+      "r_AU": 1.0,
+      "relative_G_to_reference": 1.0
+    },
+    {
+      "r_AU": 1.524,
+      "relative_G_to_reference": 0.7593940749257447
+    }
+  ],
+  "propagation": [
+    {
+      "f_Hz": 30.0,
+      "group_delay_s_at_26Mpc": 139833.13305501267
+    },
+    {
+      "f_Hz": 100.0,
+      "group_delay_s_at_26Mpc": 12584.981974053517
+    },
+    {
+      "f_Hz": 300.0,
+      "group_delay_s_at_26Mpc": 1398.3313304416233
+    },
+    {
+      "f_Hz": 1000.0,
+      "group_delay_s_at_26Mpc": 125.84981973965634
+    }
+  ],
+  "checks": [
+    {
+      "name": "sphere source quadrature x=0.0",
+      "pass": true,
+      "details": {
+        "quadrature": 1.0,
+        "closed": 1.0
+      }
+    },
+    {
+      "name": "sphere source quadrature x=1e-07",
+      "pass": true,
+      "details": {
+        "quadrature": 0.9999998999763873,
+        "closed": 0.9999999000000062
+      }
+    },
+    {
+      "name": "sphere source quadrature x=0.01",
+      "pass": true,
+      "details": {
+        "quadrature": 0.9900597342828638,
+        "closed": 0.9900597341960803
+      }
+    },
+    {
+      "name": "sphere source quadrature x=1.0",
+      "pass": true,
+      "details": {
+        "quadrature": 0.4060058497098381,
+        "closed": 0.4060058497098381
+      }
+    },
+    {
+      "name": "sphere source quadrature x=10.0",
+      "pass": true,
+      "details": {
+        "quadrature": 0.013500000034009037,
+        "closed": 0.013500000034009035
+      }
+    },
+    {
+      "name": "sphere source quadrature x=100.0",
+      "pass": true,
+      "details": {
+        "quadrature": 0.00014850000000000003,
+        "closed": 0.0001485
+      }
+    },
+    {
+      "name": "ray Bessel limit x=0.0",
+      "pass": true,
+      "details": {
+        "quadrature": 0.9999999999999949,
+        "bessel": 1.0,
+        "quad_error": 1.7574347420102782e-12
+      }
+    },
+    {
+      "name": "ray Bessel limit x=1e-05",
+      "pass": true,
+      "details": {
+        "quadrature": 0.9999999993935573,
+        "bessel": 0.999999999393557,
+        "quad_error": 1.7620014239542207e-12
+      }
+    },
+    {
+      "name": "ray Bessel limit x=0.1",
+      "pass": true,
+      "details": {
+        "quadrature": 0.9853844780870608,
+        "bessel": 0.9853844780870606,
+        "quad_error": 1.7583644748370736e-12
+      }
+    },
+    {
+      "name": "ray Bessel limit x=1.0",
+      "pass": true,
+      "details": {
+        "quadrature": 0.6019072301972346,
+        "bessel": 0.6019072301972346,
+        "quad_error": 2.1950318009192618e-14
+      }
+    },
+    {
+      "name": "ray Bessel limit x=20.0",
+      "pass": true,
+      "details": {
+        "quadrature": 1.1766115939114069e-08,
+        "bessel": 1.1766115939114077e-08,
+        "quad_error": 7.750375173694657e-18
+      }
+    },
+    {
+      "name": "G1 root residual",
+      "pass": true,
+      "details": 2.220446049250313e-16
+    },
+    {
+      "name": "positive sphere factor at root",
+      "pass": true,
+      "details": 0.3822985888170928
+    }
+  ],
+  "total_pass": 13,
+  "total_fail": 0,
+  "runner_sha256": "5fbd1405a54925ea82daff679397bb534f797d9f7140b0214b8bd831f9a58ef6"
+}

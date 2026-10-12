@@ -1,0 +1,25 @@
+{
+  "id": "common-scalar-continuum-v1",
+  "source_revision": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "scientific_target": "Construct one admissible mediator law giving both a static force kernel and a quantum coherence kernel; identify cross-domain predictions and unsupplied premises",
+  "premises": [
+    "Canonical independent real Klein-Gordon fields with inverse lengths mu>=0 in Minkowski vacuum",
+    "One normalized positive mass measure nu(dmu)=ell^s mu^(s-1) exp(-ell mu) dmu/Gamma(s), s>0, ell>0",
+    "The same scalar combination couples linearly to all declared matter operators with a fixed coupling-basis vector",
+    "A massless metric response is a separately supplied common geometric sector, not derived from the scalar fields",
+    "Two-position coherence benchmark: equal scalar charges, fixed separation d, Gaussian spatial source amplitude exp(-a^2 k^2/2), a>0, common top-hat duration T; external preparation and recombination supplied",
+    "No environmental occupations or classical stochastic force are added to the specified vacuum"
+  ],
+  "parameters": {"s": "positive, benchmark 0.5,1,2", "ell": "positive length; uncalibrated", "matter_couplings": "fixed vector; universal subfamily distinguished from composition-sensitive alternatives", "a_d_T": "apparatus inputs, not inferred from force data"},
+  "calibration_inputs": "None for mathematical construction. Any later Cassini/MICROSCOPE/clock calibration will be a separately frozen version of the observation map.",
+  "tests": [
+    "Direct spectral quadrature against the closed static potential and force",
+    "Low-frequency local and spatial-difference noise exponents and leading constants from direct phase-space integration",
+    "Coherent-state overlap against oscillator evolution, independently implemented",
+    "Finite time decoherence against an analytic all-T positive-measure bound",
+    "Massless and zero-separation limits, finite-size source and switching dependence"
+  ],
+  "observation_boundary": "The fixed two-position hold is not the full LUMI Talbot-Lau trajectory. A molecular mass scale illustration is not a fit or experimental visibility prediction. Proper detector/trajectory maps are required for comparison.",
+  "novelty_boundary": "Generalized free fields, Yukawa exchange, influence functionals and vacuum fluctuation-dissipation are standard controls. The research target is their explicit shared-parameter observation map and discriminator, not priority for those identities.",
+  "standing": "Conditional candidate mechanism; no adopted premise, audit verdict or TOE completion"
+}

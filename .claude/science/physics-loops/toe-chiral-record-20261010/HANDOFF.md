@@ -1014,12 +1014,26 @@ and `-e_y` against the chirality cap has kernel cross sums `-14` and
 `-6`. Three times the cap of each ratio span is not in this count. The
 ten-kernel coefficient span is not classified. Runner `PASS=7 FAIL=0`.
 
+Cycle 73. On every ordered height pair, both swapped-dot generators
+plus three times the cap of each ratio span have swapped-dot coordinate
+`0`, transverse-sign coordinate `0`, sign-product coordinate `0`,
+swapped coordinate `-2`, orthogonal coordinate `2`, matched coordinate
+`12`, and scaled coordinate `12`. The sum lies in neither ratio span
+and outside the even space. The base image has rank 10. The coefficient
+pairs compress to 17 rows, and the gcd of the 10-by-10 minors is a
+nonzero constant, so every chirality coefficient has partner rank 10.
+The pivot gcd has degree `4` on every ordered height pair. At heights 1
+and 2 the bond on `-e_x` and `-e_y` against the chirality cap has
+kernel cross sum `-14`. One swapped-dot generator plus three times the
+cap of each ratio span is not in this count. The ten-kernel coefficient
+span is not classified. Runner `PASS=6 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sum of both
-swapped-dot generators and three times the cap of each ratio span has
-partner rank 10. Both swapped-dot generators plus three times one cap
-and the other cap have partner rank 10 at every chirality coefficient.
+Decide whether every chirality coefficient on the sum of one
+swapped-dot generator and three times the cap of each ratio span has
+partner rank 10. Both swapped-dot generators plus three times the cap
+of each ratio span have partner rank 10 at every chirality coefficient.
 Do not claim the ten-kernel coefficient span is settled. Do not claim
 the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the

@@ -4540,3 +4540,12 @@ Readings:
 - **VIABLE:** an explicit stationary E2 model passing every stated test on a stated (γ, ℓ_s) region, with prices named.
 - **EXCLUDED:** a refereed inconsistency, or a violated stated bound for every γ.
 - **OPEN:** otherwise.
+- **R12-5 (strong-coupling graviton):** worker reading OPEN.
+  - Lemma DW-q: frozen (sharp) constraint sectors kill non-invariant characters, which puts Gu–Wen's linear-mode argument in tension.
+  - The soft energetic Gaussian is unstable.
+  - One exact constraint caps TT at k².
+  - X1-E (prethermal extension of X1) is suggested.
+  - Exact diagonalization is infeasible (L ≥ 4 needs 140 logical qubits).
+  - The only window left is compact, non-Gaussian, stabilized-scalar phases.
+
+  Referee running.

@@ -1,0 +1,11 @@
+== A. energetic N-type (H_N + U|G|^2 + W S^2): spectrum classes at generic k, and min eig of K (kinetic) and B (potential)==
+U=W=1: over 200 random k x 6 eigenvalues of KB: {'neg': 102, 'cplx': 200, 'zero': 397, 'pos': 501};  min eig K over k: -0.369;  min eig B: -0.015
+U=W=10: over 200 random k x 6 eigenvalues of KB: {'neg': 173, 'cplx': 208, 'zero': 295, 'pos': 550};  min eig K over k: -0.049;  min eig B: -0.000
+U=W=100: over 200 random k x 6 eigenvalues of KB: {'neg': 340, 'cplx': 288, 'zero': 69, 'pos': 593};  min eig K over k: -0.015;  min eig B: -0.000
+U=W=10000: over 200 random k x 6 eigenvalues of KB: {'neg': 411, 'cplx': 338, 'zero': 0, 'pos': 591};  min eig K over k: -0.000;  min eig B: -0.000
+   reading: K indefinite (det K<0 in scalar block, 09-14:262-270) => Gaussian H unbounded below at every finite U; TT block decoupled below
+N-type, U=W=1: TT exponents 1.000,1.000; TT leakage |(1-P)KP|+|(1-P)BP| at k=0.005: 5.7e-16; full-spectrum classes at k=0.005: {'neg': 0, 'cplx': 0, 'zero': 4, 'pos': 2}
+N-type, U=W=100: TT exponents 1.000,1.000; TT leakage |(1-P)KP|+|(1-P)BP| at k=0.005: 5.8e-16; full-spectrum classes at k=0.005: {'neg': 0, 'cplx': 0, 'zero': 4, 'pos': 2}
+L-type, U=W=1: TT exponents 3.000,3.000; TT leakage |(1-P)KP|+|(1-P)BP| at k=0.005: 1.4e-20; full-spectrum classes at k=0.005: {'neg': 0, 'cplx': 0, 'zero': 6, 'pos': 0}
+L-type, U=W=100: TT exponents 3.000,3.000; TT leakage |(1-P)KP|+|(1-P)BP| at k=0.005: 1.3e-18; full-spectrum classes at k=0.005: {'neg': 0, 'cplx': 0, 'zero': 6, 'pos': 0}
+   reading: N-type energetic: TT linear but the non-TT sector has negative/complex omega^2 (unstable); L-type energetic: TT k^3, gauge directions omega^2=0 (free, not oscillators)

@@ -1,0 +1,20 @@
+random-state check over N in (2,3,5,8), 3 (r,s) pairs, 300 states each: max(|<X^r>| - bound) = 0.000e+00 (<= 0 means bound holds)
+== ground states of H = -J Re X^r - U Re W (one clock pair, c=r.s=1): weak stiffness proxy <X^r> vs violation sigma ==
+N=  5 U/J=   0.0: <X^r>=1.0000  sigma=1.00e+00  bound=1.0000
+N=  5 U/J=   0.3: <X^r>=0.9464  sigma=6.18e-01  bound=1.0000
+N=  5 U/J=   1.0: <X^r>=0.7416  sigma=2.58e-01  bound=1.0000
+N=  5 U/J=   3.0: <X^r>=0.4138  sigma=6.37e-02  bound=0.6075
+N=  5 U/J=  10.0: <X^r>=0.1424  sigma=7.06e-03  bound=0.2021
+N=  5 U/J= 100.0: <X^r>=0.0145  sigma=7.23e-05  bound=0.0205
+N= 16 U/J=   0.0: <X^r>=1.0000  sigma=1.00e+00  bound=1.0000
+N= 16 U/J=   0.3: <X^r>=0.9514  sigma=1.75e-01  bound=1.0000
+N= 16 U/J=   1.0: <X^r>=0.9066  sigma=9.34e-02  bound=1.0000
+N= 16 U/J=   3.0: <X^r>=0.8340  sigma=5.15e-02  bound=1.0000
+N= 16 U/J=  10.0: <X^r>=0.6746  sigma=2.32e-02  bound=1.0000
+N= 16 U/J= 100.0: <X^r>=0.1294  sigma=6.42e-04  bound=0.1837
+N= 64 U/J=   0.0: <X^r>=1.0000  sigma=1.00e+00  bound=1.0000
+N= 64 U/J=   0.3: <X^r>=0.9869  sigma=4.45e-02  bound=1.0000
+N= 64 U/J=   1.0: <X^r>=0.9758  sigma=2.42e-02  bound=1.0000
+N= 64 U/J=   3.0: <X^r>=0.9578  sigma=1.39e-02  bound=1.0000
+N= 64 U/J=  10.0: <X^r>=0.9226  sigma=7.45e-03  bound=1.0000
+N= 64 U/J= 100.0: <X^r>=0.7496  sigma=2.07e-03  bound=1.0000

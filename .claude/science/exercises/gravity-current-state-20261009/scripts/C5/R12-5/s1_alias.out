@@ -1,0 +1,41 @@
+== 1. integer identity G S^T = 0 and code counts (CSS: k = n - rank G - rank S) ==
+L=3: n=162 slots, max|G S^T|=0, ranks over Q: G 78, S 26 -> physical pairs over Q = 58 = 2V + 4
+      N=2: rank G 78, rank S 26, logical qudits k = 58 = 2V + 4
+      N=3: rank G 75, rank S 23, logical qudits k = 64 = 2V + 10
+      N=5: rank G 78, rank S 26, logical qudits k = 58 = 2V + 4
+      N=7: rank G 78, rank S 26, logical qudits k = 58 = 2V + 4
+      max |row coeff| G=1 (l1 6), S=4 (l1 36)
+L=4: n=384 slots, max|G S^T|=0, ranks over Q: G 189, S 63 -> physical pairs over Q = 132 = 2V + 4
+      N=2: rank G 185, rank S 59, logical qudits k = 140 = 2V + 12
+      N=3: rank G 189, rank S 63, logical qudits k = 132 = 2V + 4
+      N=5: rank G 189, rank S 63, logical qudits k = 132 = 2V + 4
+      N=7: rank G 189, rank S 63, logical qudits k = 132 = 2V + 4
+      max |row coeff| G=1 (l1 6), S=4 (l1 36)
+L=5: n=750 slots, max|G S^T|=0, ranks over Q: G 372, S 124 -> physical pairs over Q = 254 = 2V + 4
+      N=2: rank G 372, rank S 124, logical qudits k = 254 = 2V + 4
+      N=3: rank G 372, rank S 124, logical qudits k = 254 = 2V + 4
+      N=5: rank G 369, rank S 121, logical qudits k = 260 = 2V + 10
+      N=7: rank G 372, rank S 124, logical qudits k = 254 = 2V + 4
+      max |row coeff| G=1 (l1 6), S=4 (l1 36)
+
+== 2. single-site invariant characters: integer (lifted) vs mod N (aliased) ==
+integer nullspace dims: E-side (S r=0): 0  h-side (G m=0): 0
+N= 2: # nonzero single-site E-characters with S r=0 mod N: 1;  h-characters with G m=0 mod N: 0
+      E example r={'xx': 1, 'yy': 1, 'zz': 1}  integer syndrome S r (nonzero entries) = [-12, 2]
+N= 3: # nonzero single-site E-characters with S r=0 mod N: 0;  h-characters with G m=0 mod N: 0
+N= 4: # nonzero single-site E-characters with S r=0 mod N: 1;  h-characters with G m=0 mod N: 0
+      E example r={'xx': 2, 'yy': 2, 'zz': 2}  integer syndrome S r (nonzero entries) = [-24, 4]
+N= 5: # nonzero single-site E-characters with S r=0 mod N: 0;  h-characters with G m=0 mod N: 0
+N= 6: # nonzero single-site E-characters with S r=0 mod N: 1;  h-characters with G m=0 mod N: 0
+      E example r={'xx': 3, 'yy': 3, 'zz': 3}  integer syndrome S r (nonzero entries) = [-36, 6]
+N= 8: # nonzero single-site E-characters with S r=0 mod N: 1;  h-characters with G m=0 mod N: 0
+      E example r={'xx': 4, 'yy': 4, 'zz': 4}  integer syndrome S r (nonzero entries) = [-48, 8]
+N=12: # nonzero single-site E-characters with S r=0 mod N: 1;  h-characters with G m=0 mod N: 0
+      E example r={'xx': 6, 'yy': 6, 'zz': 6}  integer syndrome S r (nonzero entries) = [-72, 12]
+
+== 3. invariant characters on a 2x2x2 block (48 slots): dim over Q vs GF(p) ==
+E-side S r=0: dim over Q = 14, GF(2) = 16, GF(3) = 14, GF(5) = 14, GF(7) = 14, GF(37) = 14
+h-side G m=0: dim over Q = 0, GF(2) = 1, GF(3) = 0, GF(5) = 0, GF(7) = 0, GF(37) = 0
+
+== 4. zeroth moments of aliased E-characters (09-14:227-237 says every lifted invariant E-character has zero zeroth moment) ==
+GF(2) invariant E-characters on block: basis size 16; span of their zeroth moments (mod 2) has rank 1; moment vectors include: [(0, 0, 0, 0, 0, 0), (1, 1, 1, 0, 0, 0)]

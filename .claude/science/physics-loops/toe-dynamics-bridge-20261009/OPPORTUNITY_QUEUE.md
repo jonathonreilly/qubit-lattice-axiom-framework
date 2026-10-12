@@ -1,17 +1,16 @@
 # Current ranked decisions
 
-1. Finish independent review of the actual local even-spin continuum limit; root
-   must bind and read final author evidence, preserving scope and all counterchecks.
-2. Derive continuum local Lorentz covariance with exact sign, frame, domains and
-   local even-algebra support; author active. Compare prior generic Dirac note.
-3. Prove actual microscopic weighted boost converges to that local action, using
-   the bandframe and cell/Shannon comparison. Root lead queued, not yet assigned.
-4. Recover massive one-note verification without repeating the completed canonical;
-   execute eight remaining mutants and extend regular PR9488 after all gates.
-5. Package the fully reviewed Concrete/Scattering/Continuum family in a regular
-   dependent PR based on9488. Source-scoped OPEN gate complete; preparation pending.
-6. Then rank stable perturbations/higher-dimensional realization against actual
-   remaining obligations, preserving known finite-spacing closure failure.
+1. Finish actual microscopic boost-to-local-Lorentz proof and decisive controls;
+   complete the fresh continuum-localboost review, then independent bridge review.
+2. Publish already accepted Concrete/Scattering/Continuum family as a regular
+   dependent PR based9488. Add reviewed local-even/localcovariance milestones.
+3. Finish narrow massive publication recovery, preserving canonical and failures;
+   execute8pendingmutants and gates, extend9488. Administrative blocker only.
+4. With the local bridge checked, test compact finite Poincare compositions and
+   chosen-state correlations; physical time/source-coordinate sign stays explicit.
+5. Rank actual interacting perturbations and3D microscopic realization against
+   precise premise obligations and active ownership. No supplied model is physical
+   selection; preserve exact finite-spacing closure failure and all counterexamples.
 
-No duplicate9475–9477work, merge/main push/audit verdict/axiom change. All11PRs
-regular/open. Deadline2026-10-12T16:00:52Z; no newresearch after, disableheartbeat.
+Continuous discovery; selectedmodel/effort; no duplicated9475–9477work or retained
+promotion. Fixeddeadline2026-10-12T16:00:52Z. No newresearch after; disableheartbeat.

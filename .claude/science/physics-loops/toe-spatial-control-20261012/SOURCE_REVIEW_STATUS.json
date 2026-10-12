@@ -1,0 +1,16 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "f055a7bee614bd614cf3d387ec60804eb9f7597b",
+  "branch": "physics-loop/toe-spatial-control-20261012",
+  "disposition": "conditional_spatial_bounded_theorems_with_preserved_source_and_counterexample_scope",
+  "mathematical_predicates_executed": 0,
+  "no_go_packet_pass": false,
+  "publication_assembly_status": "separate_root_review_pending",
+  "source_assembly_root_identity_sha256": "a8c6146e75f1acb88666dd045aed75f0f70d34f405fefe457ea8f58994bcb615",
+  "source_assembly_root_review_sha256": "5ba55c1d3afdde70ab04cded92e325d4461e78fb87c7d7d770c17447e2d1ba8e",
+  "source_assembly_status": "accepted_for_bounded_publication_preparation_only",
+  "source_freshness_record_sha256": "80408b062fef6767239736c1b255dfbc3c4cf37f0ab6e5cc978cd9a34766f8ba",
+  "source_review_independence": "Same-family source-exposed review with prior complete unchanged source coverage; no model-diverse or retained audit claim.",
+  "spatial_source_freeze_sha256": "64e32c7f8382aeb375135c78f558baec64ff205316dcab62d2e310ea695c7269"
+}

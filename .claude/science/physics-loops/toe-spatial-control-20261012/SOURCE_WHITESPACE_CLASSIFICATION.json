@@ -1,0 +1,4 @@
+{
+  "preserved_source_whitespace": [],
+  "scope": "No trailing-whitespace line occurs in the four literal bodies or publication wrappers. The empty allowlist rejects every whitespace diagnostic and preserves its actual exit code."
+}

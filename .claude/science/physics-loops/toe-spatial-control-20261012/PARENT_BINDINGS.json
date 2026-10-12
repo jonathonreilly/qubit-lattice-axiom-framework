@@ -1,0 +1,65 @@
+{
+  "parents": [
+    {
+      "bytes": 51903,
+      "metadata": [
+        "claim_id: \"concrete_gapped_chain_bounded_theorem_note_2026-10-12\"",
+        "claim_type: bounded_theorem",
+        "actual_current_surface_status: conditional-support"
+      ],
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05"
+    },
+    {
+      "bytes": 31832,
+      "metadata": [
+        "claim_id: current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "claim_type: open_gate",
+        "actual_current_surface_status: conditional-support"
+      ],
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff"
+    },
+    {
+      "bytes": 36376,
+      "metadata": [
+        "actual_current_surface_status: conditional-support",
+        "claim_id: local_even_continuum_bounded_theorem_note_2026-10-12",
+        "claim_type: bounded_theorem"
+      ],
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa"
+    },
+    {
+      "bytes": 61231,
+      "metadata": [
+        "claim_id: bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+        "claim_type: bounded_theorem",
+        "actual_current_surface_status: conditional-support"
+      ],
+      "path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2"
+    },
+    {
+      "bytes": 69122,
+      "metadata": [
+        "claim_id: adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+        "claim_type: bounded_theorem",
+        "actual_current_surface_status: conditional-support"
+      ],
+      "path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca"
+    },
+    {
+      "bytes": 63908,
+      "metadata": [
+        "claim_id: excitation_pulse_response_bounded_theorem_note_2026-10-12",
+        "claim_type: bounded_theorem",
+        "actual_current_surface_status: conditional-support"
+      ],
+      "path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef"
+    }
+  ],
+  "scope": "Six exact conditional canonical parents; Current remains open_gate. Pinning establishes identity only."
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 15823,
- "node_count": 7029,
+ "edge_count": 15839,
+ "node_count": 7032,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4109,6 +4109,10 @@
   "continuum_local_boost_bounded_theorem_note_2026-10-12": {
    "deps_hash": "2de4b8c80c7d",
    "out_degree": 2
+  },
+  "continuum_local_ground_spatial_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "74d9e4a6645f",
+   "out_degree": 4
   },
   "conventions_unification_companion_note_2026-05-08": {
    "deps_hash": "9b75d87686a6",
@@ -15030,6 +15034,10 @@
    "deps_hash": "24394f690c47",
    "out_degree": 6
   },
+  "native_local_algebra_spatial_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "6f94b626259f",
+   "out_degree": 5
+  },
   "native_local_natural_ring_dynamics_note_2026-09-08": {
    "deps_hash": "4578d7bc3a88",
    "out_degree": 4
@@ -15185,6 +15193,10 @@
   "nature_ranked_directions_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "near_ground_spatial_correlation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "16bc5cc502c0",
+   "out_degree": 7
   },
   "neighbour_dependence_record_content_cycle985_bounded_theorem_note_2026-08-11": {
    "deps_hash": "c8eee4235fc9",

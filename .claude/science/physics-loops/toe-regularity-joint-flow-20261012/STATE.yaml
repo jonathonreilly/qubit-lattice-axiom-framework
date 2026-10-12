@@ -1,0 +1,23 @@
+loop: toe-regularity-joint-flow-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: dc7f415f73df3754653f4985382ca0fb96f07cda
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+conditional_surface_status: "Three separate implications under their named supplied hypotheses"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Proof implications do not construct their physical model or regular seed hypotheses"
+trace_class: upstream_support
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+independent_check: three_source_bound_reviews_one_reviewed_N36_repair
+canonical_execution: not_run_by_preparation
+pr: null
+pr_status: preparation_only
+next_exact_action: "Root reviews the six transformed files, runs canonical verification and records actual delivery results"
+strongest_open_obligation: "Actual self-adjoint microscopic realization, exact conservation and regular almost-local creator existence/density"
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+deadline_utc: "2026-10-12 16:00:52 UTC"
+stop_condition: "The fixed campaign deadline is not extended by packaging"

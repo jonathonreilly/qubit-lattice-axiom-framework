@@ -1,6 +1,6 @@
 {
- "edge_count": 15431,
- "node_count": 6877,
+ "edge_count": 15435,
+ "node_count": 6880,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2769,6 +2769,10 @@
   "central_band_mass_window_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "centre_regularity_to_geometric_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "55bddc03b38d",
+   "out_degree": 1
   },
   "channel_surface_cn_grounding_peripheral_unitary_summand_bounded_theorem_note_2026-06-11": {
    "deps_hash": "4dc1f9a3b2cd",
@@ -14026,6 +14030,10 @@
    "deps_hash": "fe8fc72636bc",
    "out_degree": 6
   },
+  "microscopic_joint_flow_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "7000a4119650",
+   "out_degree": 1
+  },
   "microscopic_transmon_transfer_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -15121,6 +15129,10 @@
   "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {
    "deps_hash": "b64b8dc7658d",
    "out_degree": 4
+  },
+  "nonisolated_mass_scattering_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "92feca8524f3",
+   "out_degree": 2
   },
   "nonlabel_grown_basin_note": {
    "deps_hash": "e3b0c44298fc",

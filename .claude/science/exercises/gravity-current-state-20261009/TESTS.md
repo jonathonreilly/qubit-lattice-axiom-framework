@@ -5283,3 +5283,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **NOT-PRODUCED-EVIDENCE:** the same method passes the control and gives a steeper power.
   - **INCONCLUSIVE:** the control fails, the method is uncontrolled, or the sizes are too small to fit a power.
 - **Expectation.** INCONCLUSIVE, because of system size. A sign-free dual basis would itself be a durable result.
+- **R16-4 (E1 start memory): worker reading STATE-DEPENDENT** for 𝒢(1, 1/ℓ); OPEN for small classes. A referee is required.
+  - **What remembers the start.** Free TT wave data at t₀ are kept exactly forever (Lemma T: no attractor). One quantum per mode up to 1/ℓ gives Δρ = ħc/(4π²ℓ⁴), which is 2.4e3 to 5.9e19 ρ_Λ.
+  - **What forgets it:**
+    - record-current perturbations decay as t^{−1/2};
+    - meter modes stay within a Λ(n_b)×vacuum bound (Lemma M);
+    - B is gone in ~40τ.
+  - **What does not depend on it:** drag; first-order PPN.
+  - **The log memory** belongs to the start time, not the start state.
+  - **New price, P-r16a:** the law supplies the initial TT datum h = ḣ = 0, which makes the AX:94 owner question physical.
+  - **E1 against E2:** E2 keeps 96–99% of the initial TT energy too, so the start question does not separate the two routes.
+
+  Referee running. Its key question: whether this is E1-specific or just GR's free data.

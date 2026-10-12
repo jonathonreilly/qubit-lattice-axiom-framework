@@ -1,0 +1,108 @@
+
+[1] Lambda(n) = sup lambda_max(V_vac^-1/2 M0 V_vac^-1/2), M0 = V + m m^T - V_vac, single mode, excess energy <= n quanta
+    subtraction: the vacuum second moments V_vac = I/2
+    n = 1e-06: sampled sup = 1.995938e-03; pure squeeze sinh^2 r = n gives 2.002001e-03; formula 2n+2sqrt(n(n+1)) = 2.002001e-03; thermal 2n = 2.0e-06; displaced 4n = 4.0e-06
+    n = 1e-02: sampled sup = 2.200531e-01; pure squeeze sinh^2 r = n gives 2.209975e-01; formula 2n+2sqrt(n(n+1)) = 2.209975e-01; thermal 2n = 2.0e-02; displaced 4n = 4.0e-02
+    n = 1e+00: sampled sup = 4.824806e+00; pure squeeze sinh^2 r = n gives 4.828427e+00; formula 2n+2sqrt(n(n+1)) = 4.828427e+00; thermal 2n = 2.0e+00; displaced 4n = 4.0e+00
+    n = 1e+02: sampled sup = 4.009641e+02; pure squeeze sinh^2 r = n gives 4.009975e+02; formula 2n+2sqrt(n(n+1)) = 4.009975e+02; thermal 2n = 2.0e+02; displaced 4n = 4.0e+02
+    correlated multimode (collective squeeze over N modes, per-mode excess n = 1): lambda_max = e^{2r}-1, sinh^2 r = N n
+      N = 1: lambda_max = 4.828e+00  (=> per-mode bounds need product states; else Lambda grows ~4N n)
+      N = 10: lambda_max = 4.098e+01  (=> per-mode bounds need product states; else Lambda grows ~4N n)
+      N = 1000: lambda_max = 4.001e+03  (=> per-mode bounds need product states; else Lambda grows ~4N n)
+
+[2] TT free data in E1 (Omega = 1, tau = 0.2): <E(t)>_state - <E(t)>_vac vs the initial excess (subtraction: vacuum-start mean energy)
+    gain moments: int f = 1.000000000000, int t f = -2.78e-17 (zero first moment, P-r13b)
+    check K(10.0) grid = -2.872000e-01 vs quadrature -2.872000e-01;  K'(10.0) grid = -8.173761e-02 vs -8.173761e-02
+    check K(300.0) grid = -4.349229e-02 vs quadrature -4.349229e-02;  K'(300.0) grid = 3.302845e-02 vs 3.302846e-02
+    K(0) = 0.0e+00, K'(0) = 0.0e+00 (gain makes hdot regular; vR13-6:27-31 white-noise term absent)
+    t =   20.0: <E>_vac = 1.8407 +- 0.0219 (exact (1/4) int_0^t (K^2+K'^2) = 1.8679; grows ~ log t); thermal-vac = 0.9833 +- 0.0241 (initial excess 1.0000); displaced-vac = 0.5165 +- 0.0168 (initial 0.5000); <cross> = -0.0099 +- 0.0214
+    t =  100.0: <E>_vac = 2.2194 +- 0.0257 (exact (1/4) int_0^t (K^2+K'^2) = 2.2297; grows ~ log t); thermal-vac = 1.0088 +- 0.0256 (initial excess 1.0000); displaced-vac = 0.5003 +- 0.0155 (initial 0.5000); <cross> = 0.0156 +- 0.0231
+    t =  399.0: <E>_vac = 2.5683 +- 0.0298 (exact (1/4) int_0^t (K^2+K'^2) = 2.5389; grows ~ log t); thermal-vac = 0.9891 +- 0.0277 (initial excess 1.0000); displaced-vac = 0.4722 +- 0.0157 (initial 0.5000); <cross> = -0.0040 +- 0.0252
+    => the excess is the initial free-wave energy, unchanged at every t (no attractor in the TT free-data sector)
+
+[3] J0 tail: a unit record-current pulse at t0 reaches h as K(t)/sqrt(2) (subtraction: none; positive envelopes)
+    t =       10: t*(K^2 + K'^2) = 0.89165 (-> 2/pi = 0.63662); amplitude*sqrt(t) = 0.94427
+    t =      100: t*(K^2 + K'^2) = 0.89374 (-> 2/pi = 0.63662); amplitude*sqrt(t) = 0.94538
+    t =     1000: t*(K^2 + K'^2) = 0.89278 (-> 2/pi = 0.63662); amplitude*sqrt(t) = 0.94487
+    t =    10000: t*(K^2 + K'^2) = 0.89245 (-> 2/pi = 0.63662); amplitude*sqrt(t) = 0.94469
+    limit (2/pi)|F_t(Omega)|^2 = 0.89246 (|F_t(Omega tau = 0.2)|^2 = 1.4019): the J0 tail carries the cone gain
+    => pulse energy in h decays as |F|^2 (1/pi)/(Omega t): the record-current sector has a t^-1/2 (amplitude) attractor
+    contrast: a perturbation of h(t0), hdot(t0) (or of the classical post-filter state) is a free wave: energy constant ([2])
+      k = 1/(1 um): Omega t_H = 1.30e+32; relative pulse energy left at t_H ~ (2/pi)/(Omega t_H) = 4.9e-33
+      k = 1/(4e-10 m): Omega t_H = 3.26e+35; relative pulse energy left at t_H ~ (2/pi)/(Omega t_H) = 2.0e-36
+      k = 1/AU: Omega t_H = 8.72e+14; relative pulse energy left at t_H ~ (2/pi)/(Omega t_H) = 7.3e-16
+      k = 1/(1 kpc): Omega t_H = 4.23e+06; relative pulse energy left at t_H ~ (2/pi)/(Omega t_H) = 1.5e-07
+
+[4] Domination lemma on random passive linear networks (subtraction: the steady-state = vacuum second moments)
+    200 random 4-mode passive networks, product Gaussian states with per-mode excess <= 0.5 quanta, 3 times each:
+    covariance part: max [c_t^T (V0 - V_ss) c_t] / [Lambda(0.5) c_t^T V_ss c_t] = 0.8349 (<= 1 required); Lambda(0.5) = 2.7321
+    mean part: max (c_t . m0)^2 / [4 n_b c_t^T V_ss c_t] = 1.5175  (can exceed 1: coherent displacements add across modes;
+      bound is (c.m)^2 <= (sum_j 4|alpha_j|^2) c^T V_ss c = 4 x (total displaced quanta) x vacuum; enters only first moments and mode-diagonal energies)
+    and c_t^T V_ss c_t = |Phi(t)^T c|^2/2 decays as e^(-2 Gamma_min t): Gamma_min over the sample in [0.000, 0.121]
+
+[5] near-cone budget: initial TT energy (2 polarizations, n_b quanta per mode for |k| <= k_c) vs rho_Lambda (subtraction: none)
+    rho_Lambda = 5.271e-10 J/m^3 ; rho_init = n_b hbar c k_c^4/(4 pi^2) (exact for the class edge; conserved at linear order, [2])
+    (a) k_c = 1/l (modes the strict gain sees):
+      l = 4e-10 m: rho_init(n_b=1)/rho_L = 5.93e+19;  threshold n_b* = 1.69e-20 quanta/mode
+      l = 2e-09 m: rho_init(n_b=1)/rho_L = 9.50e+16;  threshold n_b* = 1.05e-17 quanta/mode
+      l = 1e-08 m: rho_init(n_b=1)/rho_L = 1.52e+14;  threshold n_b* = 6.58e-15 quanta/mode
+      l = 1e-06 m: rho_init(n_b=1)/rho_L = 1.52e+06;  threshold n_b* = 6.58e-07 quanta/mode
+      l = 5e-06 m: rho_init(n_b=1)/rho_L = 2.43e+03;  threshold n_b* = 4.11e-04 quanta/mode
+    (b) k_c = 1/(c tau_c), c tau_c in R14-2's window [lower(l), 1.49e-3 m] (vR14-2:7):
+      c tau_c = 1.20e-04 m: rho_init(n_b=1)/rho_L = 7.33e-03;  threshold n_b* = 1.36e+02
+      c tau_c = 5.20e-04 m: rho_init(n_b=1)/rho_L = 2.08e-05;  threshold n_b* = 4.81e+04
+      c tau_c = 1.49e-03 m: rho_init(n_b=1)/rho_L = 3.08e-07;  threshold n_b* = 3.24e+06
+    (c) one quantum per mode in every TT mode with k <= k_c* = 2.848e+04 m^-1 (wavelength 2pi/k_c* = 0.221 mm) already equals rho_Lambda
+    (d) thermal (Planck occupation) TT state: rho = (pi^2/15)(kT)^4/(hbar c)^3 = rho_Lambda at T* = 28.89 K
+        (check: photon-like rho at 2.7255 K = 4.175e-14 J/m^3)
+    (f) classical (Rayleigh-Jeans) thermal TT state, k_B T per mode per polarization up to k_c = 1/l: rho = k_B T k_c^3/(3 pi^2)
+      l = 4e-10 m: rho = rho_Lambda at T_RJ* = 7.23e-14 K;  at T = 2.7255 K rho/rho_L = 3.8e+13
+      l = 1e-08 m: rho = rho_Lambda at T_RJ* = 1.13e-09 K;  at T = 2.7255 K rho/rho_L = 2.4e+09
+      l = 1e-06 m: rho = rho_Lambda at T_RJ* = 1.13e-03 K;  at T = 2.7255 K rho/rho_L = 2.4e+03
+      l = 5e-06 m: rho = rho_Lambda at T_RJ* = 1.41e-01 K;  at T = 2.7255 K rho/rho_L = 1.9e+01
+    (e) record's own TT occupation per mode at t_H (R15-2 TT normalization; leading-log weight 1/4 refereed, finite constant NOT: ref_R15-2 item 5):
+      k = 1e+03 m^-1: n_rec = eps |F|^2 (ln(Omega t_H) + O(1))/(2 pi) = 10.67 eps |F|^2 (+- ~0.5 from the unrefereed constant; L = 67.0)
+      k = 1e+06 m^-1: n_rec = eps |F|^2 (ln(Omega t_H) + O(1))/(2 pi) = 11.77 eps |F|^2 (+- ~0.5 from the unrefereed constant; L = 73.9)
+      k = 1e+08 m^-1: n_rec = eps |F|^2 (ln(Omega t_H) + O(1))/(2 pi) = 12.50 eps |F|^2 (+- ~0.5 from the unrefereed constant; L = 78.6)
+        strict-variant eps (R15-2 out:50-53, endpoints uncertain at O(1/L) per ref_R15-2: 4.7e-16, 6.3e-11, 3.6e-8, 2.1e-5 at l = 1e-8, 2e-7, 1e-6, 5e-6 m) => n_rec(k ~ 1/l) ~ 12 eps e^-1:
+          l = 1e-08: n_rec(1/l) = 2.2e-15 quanta/mode, vs threshold n_b*(k_c = 1/l) = 6.6e-15
+          l = 2e-07: n_rec(1/l) = 2.8e-10 quanta/mode, vs threshold n_b*(k_c = 1/l) = 1.1e-09
+          l = 1e-06: n_rec(1/l) = 1.6e-07 quanta/mode, vs threshold n_b*(k_c = 1/l) = 6.6e-07
+          l = 5e-06: n_rec(1/l) = 8.9e-05 quanta/mode, vs threshold n_b*(k_c = 1/l) = 4.1e-04
+
+[6] lab observables (subtraction: none)
+    n_b = 1 TT background at f = 1e-04 Hz: Omega_GW = 8.09e-65; sqrt(S_h) = 7.71e-45/sqrt(Hz); LPF-like tidal sqrt(S_a) = 5.73e-52 m s^-2/sqrt(Hz) vs 1.74e-15
+    n_b = 1 TT background at f = 1e-03 Hz: Omega_GW = 8.09e-61; sqrt(S_h) = 2.44e-44/sqrt(Hz); LPF-like tidal sqrt(S_a) = 1.81e-49 m s^-2/sqrt(Hz) vs 1.74e-15
+    n_b = 1 TT background at f = 1e+02 Hz: Omega_GW = 8.09e-41; sqrt(S_h) = 7.71e-42/sqrt(Hz); LPF-like tidal sqrt(S_a) = 5.73e-37 m s^-2/sqrt(Hz) vs 1.74e-15
+    Cs-133 dephasing from n_b = 1 TT background, k_c = 1/l = 2.5e+09: (m v^2/hbar)^2 <h^2> (l/c) = 4.9e-58 s^-1 at v = 1 cm/s; x70 s = 3.4e-56 (vs O(1) loss)
+    Cs-133 dephasing from n_b = 1 TT background, k_c = 1/l = 1.0e+06: (m v^2/hbar)^2 <h^2> (l/c) = 1.9e-61 s^-1 at v = 1 cm/s; x70 s = 1.4e-59 (vs O(1) loss)
+    Cs-133 dephasing from n_b = 1 TT background, k_c = 1/l = 2.0e+05: (m v^2/hbar)^2 <h^2> (l/c) = 3.9e-62 s^-1 at v = 1 cm/s; x70 s = 2.7e-60 (vs O(1) loss)
+    meter sector: excess decoherence functional <= Lambda(n_b) x vacuum prediction (domination, [4]); vacuum prediction
+    <= 1e-9 of the comparator (R6-4's smallest margin, inherited via vR11-5:12 / R13-6:344) => below comparator iff Lambda < 1e9:
+      Lambda(n_b) = 1e9 at n_b = 2.500e+08 quanta per meter mode
+
+[7] PPN-type: initial TT data at second order (subtraction: none)
+    n_b = 1, k_c = 1/l = 2.5e+09: <h_ij h_ij>_init = 16 n_b lP^2 k_c^2/pi = 8.32e-51 (R15-2's record value <= 1.4e-49); fluid term 1.6e-33 rho_init/rho_crit = 6.6e-14 vs alpha2 < 1.6e-9
+    n_b = 1, k_c = 1/l = 1.0e+06: <h_ij h_ij>_init = 16 n_b lP^2 k_c^2/pi = 1.33e-57 (R15-2's record value <= 1.4e-49); fluid term 1.6e-33 rho_init/rho_crit = 1.7e-27 vs alpha2 < 1.6e-9
+    n_b = 1, k_c = 1/l = 2.0e+05: <h_ij h_ij>_init = 16 n_b lP^2 k_c^2/pi = 5.32e-59 (R15-2's record value <= 1.4e-49); fluid term 1.6e-33 rho_init/rho_crit = 2.7e-30 vs alpha2 < 1.6e-9
+
+[8] R15-2's initial-memory term B for matter present at t0 (outside the class; subtraction: Psi_1(inf) = 0, printed)
+    (units tau = 1) Psi_1(inf) = int_0^inf psi = int t f = 4.98e-14
+    s = 10 tau: psi(s) = -1.99e-02; Psi_1(s) - Psi_1(inf) = 2.77e-02
+    s = 20 tau: psi(s) = -7.79e-06; Psi_1(s) - Psi_1(inf) = 9.11e-06
+    s = 40 tau: psi(s) = -1.32e-13; Psi_1(s) - Psi_1(inf) = 1.43e-13
+    => B decays like s^3 e^{-s/tau}; at tau <= 5 ps it is gone within ~ 1e-10 s of t0
+
+[9] double-pulsar drag (subtraction: none)
+    linear order: the self-force is the odd part of the body's own mean response (Lemma D, vR13-6:3-7); initial data
+    add a body-independent homogeneous solution, so Gamma is state-independent (proved in report §3.5)
+    bath-friction upper estimate (geometric cross-section pi (GM/c^2)^2, momentum transfer x4): rho = 1e+00 rho_L -> Gamma <= 3.2e-41 s^-1 vs 6.1e-21
+    bath-friction upper estimate (geometric cross-section pi (GM/c^2)^2, momentum transfer x4): rho = 1e+03 rho_L -> Gamma <= 3.2e-38 s^-1 vs 6.1e-21
+
+[10] E2 aside (outside the setting): fraction of initial TT energy left at t_H, energy damping e^{-gamma t}
+    gamma = 0.016 H0: e^(-gamma t_H) = 0.985  (H0 t_H ~ 0.96 with the RECALLED t_H)
+    gamma = 0.024 H0: e^(-gamma t_H) = 0.977  (H0 t_H ~ 0.96 with the RECALLED t_H)
+    gamma = 0.032 H0: e^(-gamma t_H) = 0.970  (H0 t_H ~ 0.96 with the RECALLED t_H)
+    gamma = 0.047 H0: e^(-gamma t_H) = 0.956  (H0 t_H ~ 0.96 with the RECALLED t_H)
+
+end

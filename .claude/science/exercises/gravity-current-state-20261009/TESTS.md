@@ -3951,3 +3951,33 @@ Referee running (17:34Z).
 - The spin–orbit, gravitomagnetic and hidden-momentum couplings equal the uniform-field special-relativistic values to 1e-12.
 
 Referee running (17:49Z).
+
+### C5 Round 10, items 1–2 (pre-registered 17:52Z; launched now)
+
+**R10-1. Is the edge anomaly unremovable? A one-loop "anomaly-inflow" no-go for box-confined lattice field theories.**
+- Three results point to one mechanism: the zone-averaged boost anomaly. Over any periodic band, Hess(ε²/2) − 1 averages to −I.
+  - R8-2 Theorem E (refereed): edge quanta fall wrongly.
+  - R8-5 (refereed FAIL, bounded): the box-QED cone split is unsuppressed.
+  - R9-9 (worker FAIL): c_T² − 1 is an average of A_zz.
+- Question: in a stated class, is every one-loop Lorentz-violating coefficient a zone integral of A = Hess(ε²/2) − I weighted by a coupling-dependent positive or signed measure? If so, can the weights be chosen to cancel it for every observable at once, with no tuning per species and per observable?
+- Probes:
+  - (a) Generalize R9-9's Theorem T and Lemma N to Dirac (sea) matter and to the photon (R8-5's split).
+  - (b) Find the minimal set of independent "anomaly moments" that every one-loop LV coefficient depends on.
+  - (c) Count the tunings needed to null them all, against set C's count.
+- The class must allow non-analytic bands, box-supported or invariant-mass vertices, and Ward-forced couplings.
+
+Readings:
+- **DERIVED (no-go):** in the stated class, a proof that the one-loop LV coefficients are moments of A that no untuned choice nulls simultaneously (refereed). Recorded as: the box route needs tunings or a non-periodic momentum space.
+- **REFUTED:** an explicit untuned choice nulling every one-loop LV coefficient, checked.
+- **SUGGESTED:** otherwise.
+
+**R10-2. Set B with box symbols: does a Euclidean Z⁴ law with box-exact O(4) symbols reduce set B's graviton tunings (11)?**
+- Set B's hypercubic Z⁴ protects dimension-4 matter operators but needs 11 graviton tunings (K1; R6-2 form counts 3 + 9 against 2 + 4).
+- Apply the box trick in Euclidean 4-momentum: symbols that are exactly O(4)-covariant on a 4D box and periodic outside, for matter and for the graviton. Count the remaining graviton tunings at tree level and one loop.
+- Does reflection positivity (OS) survive non-analytic box symbols?
+- Do the R2-1 (Theorem T, tower) and R2-4 (γ ≤ ½) results bind?
+
+Readings:
+- **PASS:** a reflection-positive Euclidean Z⁴ law with box-exact symbols whose graviton needs ≤ 2 tunings (mass plus Λ) at one loop, checked.
+- **FAIL:** a refereed no-go: OS positivity fails for box symbols in a stated class, or the tuning count does not fall.
+- **INCONCLUSIVE:** otherwise.

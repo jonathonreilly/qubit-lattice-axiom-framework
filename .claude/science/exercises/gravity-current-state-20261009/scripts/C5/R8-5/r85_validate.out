@@ -1,0 +1,10 @@
+== VALIDATION: general Clifford code with box OFF (naive fermion, r=0, naive photon) vs F2 verbatim
+ L=48 m=0.2 lam=0.2
+   photon  P_E(w)=0.3050695545 F2 aE=0.3050695545 | P_M=0.2414651750 F2 aB=0.2487402986 | P_E(rho)-P_E(w)=+3.82e-07 | Ward P_M*d^2(q=0)=+2.33e-06
+   fermion A_id=0.0328260184 F2 a0=0.0328260184 | B=-0.0687460084 F2 a1=-0.0687460086 (F2 uses h=1e-4 single diff)
+   dc_gamma*16pi^2 here -5.02200  F2 -4.44758   dc_e*16pi^2 here -16.03961  F2 -16.03961
+ L=64 m=0.1 lam=0.1
+   photon  P_E(w)=0.4010021830 F2 aE=0.4010021830 | P_M=0.3342846970 F2 aB=0.3848365360 | P_E(rho)-P_E(w)=+4.44e-05 | Ward P_M*d^2(q=0)=+1.62e-05
+   fermion A_id=0.0417293858 F2 a0=0.0417293858 | B=-0.0600418200 F2 a1=-0.0600418204 (F2 uses h=1e-4 single diff)
+   dc_gamma*16pi^2 here -5.26780  F2 -1.27639   dc_e*16pi^2 here -16.07106  F2 -16.07106
+elapsed 0.1s

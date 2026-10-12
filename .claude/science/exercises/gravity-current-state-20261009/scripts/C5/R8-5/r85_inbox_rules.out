@@ -1,0 +1,6 @@
+in-box samples: 110189
+max | alpha-vertex / e^(-iq/2) - 1 |      = 5.31e-12   (V_j = -e alpha_j e^(-iq_j/2))
+max | beta (Wilson) vertex part |          = 0.00e+00
+max | seagull (alpha part) |                = 1.83e-12
+max | d(q) - |q| | on photon plateau        = 0.00e+00
+max | E(k) - sqrt(m^2+k^2) | (1D leg)       = 5.55e-17

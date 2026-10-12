@@ -1,0 +1,6 @@
+S7 (b1=1,b2=3) smallest |Delta|    Delta=  -11.03 e^2/16pi^2 -> c_e - c_gamma = -6.405e-03;  ratio to 2.66e-19 bound = 2.4e+16;  gamma->ee open above 9.0 MeV
+S3 (b1=2,b2=3) m->0                Delta=  -21.80 e^2/16pi^2 -> c_e - c_gamma = -1.266e-02;  ratio to 2.66e-19 bound = 4.8e+16;  gamma->ee open above 6.4 MeV
+near-SLAC S8 (2.5,3.1)             Delta=  -71.20 e^2/16pi^2 -> c_e - c_gamma = -4.135e-02;  ratio to 2.66e-19 bound = 1.6e+17;  gamma->ee open above 3.6 MeV
+S3, r=32 heavy edge                Delta= -712.60 e^2/16pi^2 -> c_e - c_gamma = -4.138e-01;  ratio to 2.66e-19 bound = 1.6e+18;  gamma->ee open above 1.1 MeV
+no box, Wilson r=1                 Delta=  -22.10 e^2/16pi^2 -> c_e - c_gamma = -1.283e-02;  ratio to 2.66e-19 bound = 4.8e+16;  gamma->ee open above 6.4 MeV
+e^2/16pi^2 = alpha/4pi = 5.8070e-04

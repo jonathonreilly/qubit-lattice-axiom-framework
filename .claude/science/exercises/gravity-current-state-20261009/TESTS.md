@@ -3400,7 +3400,7 @@ Readings:
 - **Why it is not overturned.** It is a genuine local-domain counterexample lying outside the global, integrated and analytic boost no-gos (C3, I1–I3, B1, M1, C1, R2-1, RFW). It avoids their hypotheses rather than overturning their conclusions. I3 bites only if integrated boost covariance is claimed.
 - **Not established:**
   - **No invariant Poincaré sector.** The domain is infinitesimally invariant but not closed under finite boosts.
-  - **P2 (two-body Bakamjian–Thomas) is defective as written.** The boost sign is wrong, the quartic prefactor must be ¼, and the boost is never constructed in the runner. After repair, standard BT applies on the 1D plateau. A rotationally invariant channel is still needed for d ≥ 2.
+  - **P2 (two-body Bakamjian–Thomas) is defective as written.** The boost sign is wrong, the quartic prefactor must be ¼ *(withdrawn 2026-10-12 by the R8-1 referee: ½ is correct for the ordered kernel)*, and the boost is never constructed in the runner. After repair, standard BT applies on the 1D plateau. A rotationally invariant channel is still needed for d ≥ 2.
   - **Interacting leakage** is unproved.
   - **Ward identities.** W1 holds only for free matter where χ = 1; W2 is not established for interacting matter; W3 holds only as P1's free affine algebra; W4 (local lapse) is open.
   - **Universal coupling fails.** Energetic edge modes that do not gravitate violate it.
@@ -3789,3 +3789,23 @@ Launch: R9-1, R9-2, R9-4 and R9-5 now; R9-3 when a slot frees; R9-6 only on its 
 
 ---
 
+
+### C5 Round 8 referee results (recorded 16:42Z)
+
+**R8-1 (repair of R7-1's interacting two-body box sector) — CONFIRMED WITH CORRECTIONS. PASS WITH SCOPE.**
+- **The ½ vs ¼ prefactor: the worker is right.** The R7-1 referee's "¼" correction was wrong: that referee compared the Fock element with a single ordered kernel entry. The ½ lift equals the restriction of W to ∧²ℋ. The exact spectra agree to 7.1e-15 with ½ and miss by 5.1 with ¼.
+  - **Dated correction (2026-10-12)** to the R7-1 entry above: "the quartic prefactor must be ¼" is withdrawn. The ½ prefactor of R7-1's runner is correct for its ordered kernel. This also covers R7-6's use of "the corrected ¼ prefactor (δ ≈ 0.019)". The drift R7-6 found at ½ (δ ≈ 0.074) is the correct-normalization value, and the referee's δ ≈ 0.019 comes from a mis-normalized kernel.
+- **The boost-sign repair is confirmed.**
+- **d = 1: confirmed on the lattice ring.** Reruns at L = 1024 reproduce, and the L = 2048 residuals are 1.1e-11 to 3.1e-8.
+- **d = 2: confirmed in the chart.**
+  - The p-wave doublet and the spin term with α = +1 (forced by [K_x,K_y] = −iJ) are right.
+  - The chart round trip holds to 9e-11, and the lattice free generators match to 1e-14.
+  - The direct lattice-native run is not a precision check: its residuals are 7e-3 to 0.35. So "every d = 2 commutator verified numerically on the lattice" is not met literally. The FIXED PASS reading (an exact algebra in d = 2 with rotations, and a proved, checked leakage bound) is met.
+- **Self-adjointness is correct, with a missing lemma supplied** (bounded-invertible congruence).
+- **The interacting leakage theorem is valid** after sharpening step 2 to f(M) − f(M₀) = Q_G[f(M) − f(M₀)]Q_G and spelling out the density step.
+
+**R8-5 (gauge fields in the box):** worker reading FAIL (bounded). There are two parts:
+- Lemma C and Theorem B: in the bilinear ℓ¹ charge-density class, a soft photon couples with full charge to edge modes, so box-confined vertices violate the Ward identity.
+- A computed one-loop electron–photon cone split of −11 to −71 (in e²/16π² units), with no box protection.
+
+Referee running (launched 16:39Z).

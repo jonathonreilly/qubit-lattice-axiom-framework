@@ -1,0 +1,14 @@
+naive (F2 law)   N=96 m=lam=0.2:  A^xi*U=+0.7601 (imag +0.0e+00)  B^xi*U=+0.7769  (B^xi-A^xi)*U per (1-xi) = +0.01674
+naive (F2 law)   N=128 m=lam=0.1:  A^xi*U=+0.6946 (imag +0.0e+00)  B^xi*U=+0.6992  (B^xi-A^xi)*U per (1-xi) = +0.00458
+naive (F2 law)   N=192 m=lam=0.05:  A^xi*U=+0.6737 (imag +0.0e+00)  B^xi*U=+0.6757  (B^xi-A^xi)*U per (1-xi) = +0.00199
+naive (F2 law)   N=288 m=lam=0.025:  A^xi*U=+0.6599 (imag +0.0e+00)  B^xi*U=+0.6652  (B^xi-A^xi)*U per (1-xi) = +0.00531
+BQ S3 box        N=96 m=lam=0.2:  A^xi*U=+0.7442 (imag +0.0e+00)  B^xi*U=+0.7485  (B^xi-A^xi)*U per (1-xi) = +0.00431
+BQ S3 box        N=128 m=lam=0.1:  A^xi*U=+0.7075 (imag +0.0e+00)  B^xi*U=+0.7087  (B^xi-A^xi)*U per (1-xi) = +0.00116
+BQ S3 box        N=192 m=lam=0.05:  A^xi*U=+0.6866 (imag +0.0e+00)  B^xi*U=+0.6877  (B^xi-A^xi)*U per (1-xi) = +0.00106
+BQ S3 box        N=288 m=lam=0.025:  A^xi*U=+0.6682 (imag +0.0e+00)  B^xi*U=+0.6733  (B^xi-A^xi)*U per (1-xi) = +0.00506
+BQ S1 box        N=96 m=lam=0.2:  A^xi*U=+0.9025 (imag +0.0e+00)  B^xi*U=+0.9113  (B^xi-A^xi)*U per (1-xi) = +0.00872
+BQ S1 box        N=128 m=lam=0.1:  A^xi*U=+0.7914 (imag +0.0e+00)  B^xi*U=+0.7937  (B^xi-A^xi)*U per (1-xi) = +0.00229
+BQ S1 box        N=192 m=lam=0.05:  A^xi*U=+0.7296 (imag +0.0e+00)  B^xi*U=+0.7310  (B^xi-A^xi)*U per (1-xi) = +0.00134
+BQ S1 box        N=288 m=lam=0.025:  A^xi*U=+0.6900 (imag +0.0e+00)  B^xi*U=+0.6951  (B^xi-A^xi)*U per (1-xi) = +0.00513
+BQ S3 box (resolution check) N=400 m=lam=0.025: (B^xi-A^xi)*U per (1-xi) = +0.00063
+BQ S3 box (resolution check) N=400 m=lam=0.05: (B^xi-A^xi)*U per (1-xi) = +0.00028

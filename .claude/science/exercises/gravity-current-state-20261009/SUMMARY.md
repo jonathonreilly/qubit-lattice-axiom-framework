@@ -604,3 +604,32 @@ None of them yet produces the graviton or explains Λ. Round 2 tests what decide
 - "Records form until frozen" leaves the vacuum energy as a free constant.
 
 **Producing the graviton.** No set has a mechanism yet (R6-2: all OPEN). Holographic substrates help only for negative Λ, or remain unbuilt in 4D (R7-2).
+
+## 24. Campaign C5, rounds 8–9: how far the "box" route goes (2026-10-12)
+
+**In plain words** (referee-checked unless noted). The box route keeps the 3D grid but gives each particle exactly relativistic energy for momenta inside a box (R7-1).
+
+**What holds.**
+- **Two interacting particles.** The repaired law keeps exact relativity in 1D, and in 2D with rotations (R8-1).
+- **A correction to an earlier referee.** It had said a prefactor must be ¼; that was a convention mistake, and the original ½ is right.
+- **Bound bodies fall like everything else.** With a stress tensor that puts the binding energy at the pair's centre, a bound body of any binding falls at exactly the relativistic rate inside the box. This is shown in 1D (R9-2). In 2D with spin the worker reports the same (R9-10, referee pending).
+- **It can live on plain qubits.** One qubit per site carries the free box law exactly, in the sector with no vortices (R9-5). Vortices sit still in the lattice frame, and the extra term needed to keep them out is not proved enough for every configuration.
+
+**What breaks.**
+- **The grid's leftover anomaly lives at the edge, outside the box.** Over any periodic band the "boost anomaly" averages to minus one.
+  - Inside the box it is zero, so outside it is not.
+  - Edge quanta fall the wrong way (R8-2, Theorem E).
+- **Light.** Gauge invariance forces the photon to couple to the edge with full charge (R8-5). At one loop the photon and the electron then end up on different light cones, by as much as on a plain lattice.
+  - Rotating the charge frame or choosing Wilson-line paths does not help in the 17 laws tried, and every rotated law was worse (R9-8, worker; referee pending).
+- **The graviton.** Given its own box, it propagates at exactly light speed at tree level. Once matter loops can create pairs, its speed shift is an average of the same edge anomaly (R9-9, Theorem T, confirmed). Whether the coupling can be fixed to remove it is open.
+- **The literal box law is excluded.** Each charged particle would have 7 extra copies of the same mass, which adds about 590 MeV to the Z width (R9-1).
+- **Loops in general.** Point vertices bring the light-speed difference back (R7-5). Vertices built from invariant masses fix one loop. At two loops they close only in a version that is not confined to the box (R8-4, R9-7).
+
+**Set A (records as a classical metric).**
+- The Newtonian version survives for smearing lengths between about 1e-10 and 5e-6 m (R6-4).
+- Relativistic versions fail in their simplest forms (R8-3, R9-4); correlated-noise and preferred-frame versions stay open.
+
+**The picture now.**
+- The box gives exact relativity to matter, including bound bodies.
+- But the grid's anomaly does not go away. It moves to the edge, and gauge fields and gravity, through their loops, carry it back.
+- Fixing that seems to need either per-observable tunings or an edge that isn't periodic (an infinite tower, i.e. set A). R10-1 tests this directly.

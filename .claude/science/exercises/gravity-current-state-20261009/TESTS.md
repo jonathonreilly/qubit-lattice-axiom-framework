@@ -4300,13 +4300,14 @@ Launch: R11-2 through R11-6 now; R11-1 after the R10-1 referee. Draft text verba
 - **Not excluded:** membrane-sourced, dissipative, global, count-dependent, q-coupled-matter and multi-flux completions.
 - **No untuned, observationally viable completion was produced.**
 
-**R10-5 (edge supertrace):** worker reading FAIL (bounded), clause 1, in class 𝒮.
-- Theorem Q: an exact free lattice supercharge exists for the paired content, and the vacuum energy is zero.
-- Theorem PT: the graviton TT speed and mass are cancelled under minimal pairing coupling.
-- Lemma PD: in 𝒮 a photino must carry Chern number ±2, so doublers are forced and a box photon cannot join the supersymmetry.
-- The electron split is not cancelled; partner loops make it larger (Δ ≈ −15 to −21).
-
-Referee running (18:43Z).
+**R10-5 (edge supertrace) — CONFIRMED WITH CORRECTIONS. FAIL (bounded), clause 1, to class 𝒮.**
+- **The class 𝒮:** the canonical C¹, translation-invariant SUSY-QM/Nicolai class without quadratic gauge–scalar mixing.
+- **What holds.** The Clifford-flat matter multiplet has an exact free supercharge and zero matched vacuum energy.
+  - The superpotential sign needs correcting.
+  - 2⟨1/E⟩Δm² is only the leading small-splitting term.
+- **The no-go.** The three-component gauge Hessian must carry helicity Chern number ±2. That forces an extra transverse zero, so a doubler-free box photon is excluded.
+- **The graviton.** The stipulated TT pairing cancels the one-loop TT response for matched unit-speed curves. Coupling "through Q" remains Lorentz-violating.
+- **The electron.** The tested partner loops enlarge the electron–photon split, but this does not prove a general electron no-go.
 
 ### C5 Round 11 worker readings awaiting referees (recorded 18:59Z)
 
@@ -4360,7 +4361,7 @@ Readings:
 - **VIABLE:** an explicit local rule giving Friedmann expansion and ⟨Λ⟩ = 0 untuned, passing the stated checks, with prices named.
 - **EXCLUDED:** a refereed inconsistency, or a violated stated bound.
 - **OPEN:** otherwise.
-- **R11-1 (pairing necessity; dressed matter speed):** worker readings below. Referee running (19:10Z).
+- **R11-1 (pairing necessity; dressed matter speed):** worker readings below. Referee running (19:08Z).
   - **(a) DERIVED** in 𝒞_A:
     - Theorem N*: interval vanishing forces boson–fermion cancellation of A-weighted measures, so neither statistics alone suffices;
     - Theorem S: in a subclass, minimal pairing is forced.

@@ -381,3 +381,10 @@ coefficient has partner rank 10. The swapped-dot coordinate is `1` or
 `-1` and the scaled coordinate is `8`. It does not take both
 swapped-dot generators plus three times one cap and the other cap, and
 it does not classify the 300-dimensional affine space.
+
+Cycle 72 takes both swapped-dot generators plus three times the cap of
+one ratio span plus the cap of the other ratio span. Every chirality
+coefficient has partner rank 10. The swapped-dot coordinate is `0` and
+the scaled coordinate is `8`. It does not take both swapped-dot
+generators plus three times each cap, and it does not classify the
+300-dimensional affine space.

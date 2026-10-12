@@ -996,15 +996,32 @@ generators plus three times one cap and the other cap are not in this
 count. The ten-kernel coefficient span is not classified. Runner
 `PASS=9 FAIL=0`.
 
+Cycle 72. On every ordered height pair, both swapped-dot generators
+plus three times the cap of one ratio span plus the cap of the other
+ratio span have swapped-dot coordinate `0`, swapped coordinate `-2`,
+orthogonal coordinate `2`, matched coordinate `8`, and scaled coordinate
+`8`. The thrice-plus sum has transverse-sign coordinate `-2` and
+sign-product coordinate `-2`. The thrice-minus sum has transverse-sign
+coordinate `2` and sign-product coordinate `2`. Each lies in neither
+ratio span and outside the even space. The two sums are linearly
+independent. The base image has rank 10. The coefficient pairs compress
+to 17 rows, and the gcd of the 10-by-10 minors is a nonzero constant,
+so every chirality coefficient has partner rank 10. The thrice-plus
+pivot gcd has degree `7` on every pair. The thrice-minus pivot gcd has
+degree `7` on `(1, 2)`, `(2, 1)`, and `(3, 1)`, and degree `5` on
+`(1, 3)`, `(2, 3)`, and `(3, 2)`. At heights 1 and 2 the bond on `-e_x`
+and `-e_y` against the chirality cap has kernel cross sums `-14` and
+`-6`. Three times the cap of each ratio span is not in this count. The
+ten-kernel coefficient span is not classified. Runner `PASS=7 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every chirality coefficient on the sum of both
-swapped-dot generators and three times the cap of one ratio span plus
-the cap of the other ratio span has partner rank 10. One swapped-dot
-generator plus three times one cap and the other cap has partner rank
-10 at every chirality coefficient. Do not claim the ten-kernel
-coefficient span is settled. Do not claim the 300-dimensional affine
-space is classified.
+swapped-dot generators and three times the cap of each ratio span has
+partner rank 10. Both swapped-dot generators plus three times one cap
+and the other cap have partner rank 10 at every chirality coefficient.
+Do not claim the ten-kernel coefficient span is settled. Do not claim
+the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

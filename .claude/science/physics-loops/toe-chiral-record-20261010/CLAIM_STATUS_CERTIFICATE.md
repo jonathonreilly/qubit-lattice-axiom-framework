@@ -1609,3 +1609,29 @@ other three pairs. The minus-dot thrice-minus pivot gcd has degree 5 on
 every pair. Both swapped-dot generators plus three times one cap and the
 other cap are outside this count. The ten-kernel coefficient span is not
 classified. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 72
+
+claim_id: chiral_pair_both_swapped_dots_thrice_one_cap_other_cap_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; both swapped-dot generators plus three times one cap and the other cap
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, both swapped-dot generators plus three
+times the cap of one ratio span plus the cap of the other ratio span
+have swapped-dot coordinate 0 and scaled coordinate 8. Every chirality
+coefficient has partner rank 10. The two sums are linearly independent.
+The maximal-minor gcd is a nonzero constant. The thrice-plus pivot gcd
+has degree 7 on every ordered height pair. The thrice-minus pivot gcd
+has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 5 on the other
+three pairs. Three times the cap of each ratio span is outside this
+count. The ten-kernel coefficient span is not classified. The
+300-dimensional affine space is not classified.

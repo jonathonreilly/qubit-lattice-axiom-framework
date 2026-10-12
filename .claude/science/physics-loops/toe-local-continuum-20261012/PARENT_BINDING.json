@@ -1,0 +1,20 @@
+{
+  "parent_sha": "62d316633190ad2198fdfa91fc52192551990034",
+  "parent_branch": "physics-loop/toe-supplied-chain-20261012",
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9490",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree",
+  "branch": "physics-loop/toe-local-continuum-20261012",
+  "authority": "Root provided exact published SHA, regular PR and clean target creation. Preparation itself invokes no Git.",
+  "root_creation_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_local_worktree_creation/receipts.json",
+  "root_creation_receipt_sha256": "a9a21efa297544ee0c274f73a648effd72f6a0a8e959e0f74b948942be4eb9d0",
+  "citation_graph.json": {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree/docs/audit/data/citation_graph.json",
+    "sha256": "be714a1fd80465d47d2fd3a5c251fdde83c93e574e95ed2b2a43936342e33ff6",
+    "bytes": 10111535
+  },
+  "citation_graph_manifest.json": {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree/docs/audit/data/citation_graph_manifest.json",
+    "sha256": "6a89294c18ddaac7f3354e6cdd76898f26d67e94d31ea131ab95ffa1c0157ed8",
+    "bytes": 985722
+  }
+}

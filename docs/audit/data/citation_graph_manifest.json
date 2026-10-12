@@ -1,6 +1,6 @@
 {
- "edge_count": 15452,
- "node_count": 6889,
+ "edge_count": 15465,
+ "node_count": 6894,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3797,6 +3797,10 @@
   "continuum_limit_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "continuum_local_boost_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "2de4b8c80c7d",
+   "out_degree": 2
   },
   "conventions_unification_companion_note_2026-05-08": {
    "deps_hash": "9b75d87686a6",
@@ -13702,6 +13706,14 @@
    "deps_hash": "666e0b9cf11e",
    "out_degree": 4
   },
+  "local_even_continuum_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "71b211f9b79a",
+   "out_degree": 1
+  },
+  "local_even_net_sections_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "af5c81f655f0",
+   "out_degree": 4
+  },
   "local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "8ec463c38283",
    "out_degree": 1
@@ -14062,6 +14074,10 @@
    "deps_hash": "7000a4119650",
    "out_degree": 1
   },
+  "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "32e1818b61dc",
+   "out_degree": 2
+  },
   "microscopic_transmon_transfer_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -14145,6 +14161,10 @@
   "mixed_entangled_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e45ff6568ef9",
    "out_degree": 1
+  },
+  "mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "72524b63a239",
+   "out_degree": 4
   },
   "mixed_low_field_inputs_retain_cube_birth_energy_and_coherence_bounds_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c2f4758c16c9",

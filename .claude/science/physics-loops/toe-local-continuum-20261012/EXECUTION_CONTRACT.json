@@ -1,0 +1,63 @@
+{
+  "status": "unexecuted_source_bound_preparation",
+  "base": "62d316633190ad2198fdfa91fc52192551990034",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree",
+  "branch": "physics-loop/toe-local-continuum-20261012",
+  "canonical_calls": 5,
+  "canonical_timeout_seconds": 60,
+  "baseline_whole_helper_commands": 16,
+  "historical_nonbaseline_commands": 42,
+  "nonbaseline_outer_timeout_seconds": 75,
+  "timeout_scope": "Each original mathematical child remains bounded by its original 60-second timeout. Canonical wrapper also declares 60 seconds; nonbaseline orchestration has 75 seconds but cannot extend a child. Independent reviewer controls and historical timeouts are archived, never rerun by this program.",
+  "historical_baseline_counts": {
+    "LocalEven": {
+      "passed": 284,
+      "failed": 0
+    },
+    "ContinuumBoost": {
+      "passed": 53,
+      "failed": 0
+    },
+    "MicroscopicBoost": {
+      "passed": 277,
+      "failed": 0
+    },
+    "Mixed": {
+      "passed": 420,
+      "failed": 0
+    },
+    "Sections": {
+      "passed": 133,
+      "failed": 0
+    }
+  },
+  "historical_nonbaseline_successes": {
+    "LocalEven": [],
+    "ContinuumBoost": [
+      "numerical_constant_phase",
+      "numerical_rational_correct"
+    ],
+    "MicroscopicBoost": [
+      "flow_higher_comparison",
+      "mut_wrong_origin_weighted"
+    ],
+    "Mixed": [
+      "refinement_coarse_fine"
+    ],
+    "Sections": []
+  },
+  "success_classification": "Continuum constant/rational gauge runs are positive controls; microscopic higher comparison and mixed refinement are comparisons; mut_wrong_origin_weighted is the actual complete author mutant survivor. Independent norm-only/sign and polarized-state survivors remain archived.",
+  "original_helper_preservation": "All mathematical helper/candidate/fixture/reporting source bytes unchanged. Original administrative guard prefixes are replaced by declared pinned-resource verification; original guards and receipts are archived.",
+  "comparison": "Full scientific stdout, stderr, result JSON and generated binary sidecars compare exactly. Only the literal unique candidate JSON token is relocated via the unchanged reporting Path.resolve(). For continuum-boost streams only, the single exact old pin-validation prefix is separated and retained; the complete mathematical stdout remains exact. No tolerance, version, platform, interpreter-field, value, whitespace or diagnostic normalization.",
+  "typed_api_order": "Full INNER execute_runner object preserved first in opaque protocol5 pickle and tagged JSON before outer cache identity logic. Full OUTER tuple preserved first after return, then inspected. No pickle is loaded.",
+  "input_order": "All direct declared scientific inputs finalized before canonical execution. Later preparation/validation archival maps and source identity manifest are not declared inputs. Any drift halts without an automatic retry.",
+  "refinement_input_scope": "The two micro comparison helpers and mixed refinement helper read explicitly pinned original finite vectors/results. They test historical refinement payloads, not cross-run linkage to newly generated vectors. Fresh individual flow sidecars are preserved and compared in full to those exact originals.",
+  "graph_delta": {
+    "nodes": 5,
+    "edges": 13
+  },
+  "audit_boundary": "Source preparation is not a new science review or audit. Exact-base focused compatibility may inspect only existing selected ledger claims; actual covered rows are recorded. Global combined current-main validation, strict lint and independent audit remain landing work.",
+  "ownership": "Root alone executes the frozen program in the clean exact target. Program does no Git/index/remote/PR mutations. Root handles exact-path staging and a regular dependent PR after reviewing actual results.",
+  "failure_rule": "Stop, retain all partial outputs, receipt and source identities. No automatic scientific retry, fallback thresholds or cleanup of historical evidence.",
+  "pairing": "Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review."
+}

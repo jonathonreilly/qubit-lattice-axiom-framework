@@ -1,0 +1,14 @@
+current_goal: Prepare accepted five-note local continuum theorem family
+delivery: milestone
+base_revision: 62d316633190ad2198fdfa91fc52192551990034
+target_branch: physics-loop/toe-local-continuum-20261012
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+canonical_execution_at_preparation: pending_root_execution
+next_exact_action: Root reads complete source/program then executes frozen preparation
+  once in the clean exact target
+strongest_scope_limit: Constructed even comparison algebra, not classification of
+  all microscopic scaling families
+sole_live_checkpoint: root_owned_campaign_checkpoint
+stop_condition: Any exact-source, complete-output or gate discrepancy stops and preserves
+  the attempt

@@ -13,26 +13,26 @@ base_revision: 773321aa8fdfccc05248682dfc96bf94215034a2
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: quantitative_boost_and_exhaustion_independent_reviews; KQ_milestone_preparation; Hstar_threshold_probe
+active_route: Hstar_threshold_independent_review; actual_corrector_small_time_lower_author; compact_detector_PC_author
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: nine_regular_PRs_published; reviewed_Fock_extension_added_to_PR9486
-strongest_unresolved_obligation: independent_Q_source_check; constructive_full_GNS_exhaustion; exact_Hstar_threshold_law
+milestone: ten_regular_PRs_published; reviewed_KQ_growing_time_milestone_PR9487
+strongest_unresolved_obligation: constructive_full_GNS_exhaustion_ND; direct_PC_proof_and_threshold_composition_reviews
 provisional_dependencies: supplied_excluded_walk_on_frozen_main; transport_stack_remains_separate
-independent_checks: B/E/BR/T/X, P1-P29, compact scattering, Fock and K source checks complete at frozen
-  scope; Q pending
+independent_checks: B/E/BR/T/X, P1-P29, compact scattering, Fock, K, Q and EX reduction complete at frozen scope;
+  Hstar threshold pending
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: new_KQ_stacked_milestone_preparation; regular_PRs_9478_through_9486_open
-active_pr_url: null
+active_pr_status: regular_PR9487_open_isDraft_false_MERGEABLE_attached
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: '2026-10-12T01:00:00Z'
-next_action: finish_root_Q_evidence_read_and_separate_Q_review; compose_reviewed_KQ_milestone; continue_EX_and_Hstar_probes
+lock_refresh_before_utc: '2026-10-12T01:30:00Z'
+next_action: read_Hstar_controls_and_finish_its_review; check_actual_error_lower_and_PC_complete_proofs; compose_next_reviewed_milestones
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -54,3 +54,5 @@ index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 scattering_published_science_revision: c3f84746b1991e0a15c6da79d049b89d9469f727
 active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9484
+quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
+quantitative_boost_published_science_revision: 36d6069676f561d81ad693f286dd52f570fb37df

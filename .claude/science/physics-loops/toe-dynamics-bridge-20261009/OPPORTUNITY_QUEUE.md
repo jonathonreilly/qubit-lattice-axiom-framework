@@ -1,27 +1,24 @@
-# Current ranked scientific queue
+# Current ranked opportunity queue
 
-1. **Quantitative actual dynamics and outgoing correction.** Q1–Q34 is frozen
-   and in fresh independent review. The all-T estimates and full quadratic
-   expectation decomposition are the decisive checks. K is fully reviewed.
-   Prepare their coherent milestone on the new quantitative boost worktree,
-   stacked on9484, with the exact9481 memory import explicit. Do not publish
-   Q as independently checked before its actual review/evidence completes.
-2. **Constructive full-GNS exhaustion.** The Fock extension is now reviewed
-   and published in9486; an isometric embedding still needs exhaustion.
-   The EX reduction is frozen and in fresh independent review, with explicit
-   PC/ND obligations. Root must read it before further downstream reuse.
-   Do not infer onto from faithfulness or substitute a spectator diagnostic
-   for a microscopic local-qubit counterexample.
-3. **Actual H* threshold spectral law.** A bounded probe tests the rank-one
-   longitudinal square and eight-cone density for the actual residual Qh0.
-   It may establish a sharp free-primitive scale and identify the next rate
-   barrier. It does not depend on Q or automatically prove a full actual-walk
-   lower bound. Root's proposed constants and signs require checking.
+1. Finish independent H_* threshold verification and test the actual
+   small-fixed-time L2 error lower bound. Q's quantitative theorem is reviewed
+   and published in regular PR9487; its rate may now have a sharpness test.
+   The threshold law is still provisional and is not itself an actual-error
+   lower bound. Preserve every noncommuting and time-varying source term.
+2. Finish and separately check compact-detector PC using fixed-time compactness
+   and a uniform two-time nonstationary kernel estimate. E1–E18 reduction has
+   complete focused review; PC itself is new work. ND/energy capture remain
+   separate. Do not infer all-channel or full-GNS completeness from an isometry.
+3. After PC, rank a constructive no-undetected-state/energy-capture route
+   against the actual microscopic hypotheses. A gap alone does not supply
+   channels, detection coverage or a positive local-energy comparison.
+4. Keep the approximate-index physical bridge subordinate to constructive
+   full-GNS exhaustion. Under that explicit premise the earlier centre-to-shift
+   step already follows; avoid inventing a redundant index gap.
 
-Nine regular PRs remain open;9486 now contains its Fock extension. Original
-SC evidence remains unchanged. Index9485 is complete at its stated scope;
-the full-algebra shift still needs the physical scattering bridge. Prior
-memory9481/9482 results must not be repackaged as novel. Current candidate-law
-RV4 gravity and chiral partner-kernel work are active elsewhere; avoid overlap.
-Preserve all norm/mean, correction/total-state, fixed/growing-time and
-conditional-physics distinctions. No audit or retained status is inferred.
+Published ten regular milestones9478–9487 remain open and unmerged. Fock is
+included in9486; K/Q in9487. Main/instructions and active9476/9477 sources were
+refreshed01:00:58 UTC and remain unchanged. Avoid the active chiral affine
+kernel lane. Preserve failed full inverse, operator-norm averaging, finite-bath
+recurrence, retained earlier norm obstructions and all proof-scope boundaries.
+One live checkpoint is here; each publication packet is only a frozen snapshot.

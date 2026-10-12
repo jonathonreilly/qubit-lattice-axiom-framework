@@ -10,24 +10,26 @@ math is authorized. Keep the user-selected model and reasoning effort.
 ## Active paths, identities and recovery
 
 Active publication pointer: sibling quantitative_boost_worktree, branch
-physics-loop/toe-boost-quantitative-outgoing-20261012, newly created clean at
-773321aa8fdfccc05248682dfc96bf94215034a2 from PR9484. It will hold a coherent
-K/Q milestone stacked on the boost branch; no new PR exists yet. The prior
-boost_worktree remains clean at that same revision. scattering_worktree is
-clean atc3f84746b1991e0a15c6da79d049b89d9469f727, regular PR9486 open,
-isDraft=false, MERGEABLE and attached, now including the reviewed Fock proof.
-Root alone writes Git science. New research remains external in sibling
-resume_20261011 (S). Frozen sources must not be edited under active review.
+physics-loop/toe-boost-quantitative-outgoing-20261012, clean at
+36d6069676f561d81ad693f286dd52f570fb37df. Regular PR9487 is OPEN,
+isDraft=false, MERGEABLE, attached, stacked on boost PR9484 at
+773321aa8fdfccc05248682dfc96bf94215034a2. It contains both reviewed K/Q
+full notes, controls, caches and source-bound evidence. Parent boost_worktree
+remains unchanged and clean. scattering_worktree is clean at
+c3f84746b1991e0a15c6da79d049b89d9469f727, PR9486 including reviewed Fock.
+Root alone writes Git science. New threshold, actual-error and detector
+research remains external in sibling resume_20261011 (S). Frozen sources
+must not be edited under review.
 
 One live campaign checkpoint remains here in sibling worktree, branch
 physics-loop/toe-nonlinear-transport-20261011 (#9478). Previous complete state
-and handoff are losslessly archived at history/20261012T003216Z_*.gz. Previous
-checkpoint revision 3a29dd47cd2cc6605791e01163eceaa18b6a5c7b. Older full proofs and failed routes remain
+and handoff are losslessly archived at history/20261012T010306Z_*.gz. Previous
+checkpoint revision f7af6efac3f681a1797dcb1031d78518c87c1afd. Older full proofs and failed routes remain
 in those histories and their original source-bound evidence packets. No
 primary checkout edits. The app's managed-worktree tool is unavailable from
 the non-Git chat cwd; owned standard Git worktrees were used.
 
-Latest fetched main a13caa4885f547c8d206265b031ba7649e539fd9 (00:20 UTC on2026-10-12).
+Latest fetched main a13caa4885f547c8d206265b031ba7649e539fd9 (01:00:58 UTC on2026-10-12).
 Instruction revision 3a4b2c66a1ead7a1c48b4359627e968f681e3c39. Previously
 read instructions remain byte-verified:
 AGENTS f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f;
@@ -39,7 +41,7 @@ no platform-instruction change is claimed. Skills authorize bounded delegation.
 
 ## Published regular milestones
 
-All nine verified OPEN, isDraft=false, attached; none merged.
+All ten verified OPEN, isDraft=false, attached; none merged.
 
 | PR | Scope | Scientific revision / dependency |
 |---|---|---|
@@ -52,6 +54,7 @@ All nine verified OPEN, isDraft=false, attached; none merged.
 |9484|Boost brackets, sharp norm threshold and all-component actual expectations|773321aa8fdfccc05248682dfc96bf94215034a2; parent9479; boost_worktree clean|
 |9485|Approximate partial-factor index and tube scaling|b8402c17d337f371c0c73696ef170727de9ab5bd; main a13caa48; index_worktree clean|
 |9486|Compact-patch scattering, covariance and Fock isometries|c3f84746b1991e0a15c6da79d049b89d9469f727; main a13caa48; scattering_worktree clean|
+|9487|Effective outgoing forcing, quantitative actual correction and growing-time means|36d6069676f561d81ad693f286dd52f570fb37df; parent9484; explicit cross-PR9481 memory import; quantitative_boost_worktree clean|
 
 Each complete packet states its premises, shared-source limits and failures.
 Global combined audit pipeline and strict audit lint were not run; independent
@@ -230,7 +233,7 @@ failure was hidden. prepare_fock_publication.py is one-shot; do not rerun.
 finish_fock_delivery.py preserves changed mechanical evidence by prior hash.
 PR body/title were updated and verified exactly, regular/open/MERGEABLE.
 
-## K actual-forcing theorem: fully reviewed, not yet published
+## K actual-forcing theorem: reviewed and published in PR9487
 
 Source BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md,441lines,
 1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9;
@@ -258,74 +261,174 @@ d8480b5a6e04102ff076b3dd6f817a2d43f20252;9482 edge work is background,
 not a new result or necessary new premise. Preserve complete source arguments
 and the explicit cross-PR provisional dependency in the K/Q milestone.
 
-## Q quantitative corrector: frozen, fresh independent review active
+## Q quantitative corrector: reviewed and published in PR9487
 
 Source BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md,729lines,
 4b1d5a8395d1d5c79d798ef17950f7c1ce4c1e0781e2f9ec610223bc1eb69820;
-receiptc447314e4a130e2fc2e047da6ddbe2abdf20209c5aa4718c2bab9b75783b5356.
-Root read the entire Q1–Q34 proof, AUTHOR_CHECK and corrector_controls.py.
-Root must finish polynomial/mean helpers, all baselines and failure logs,
-then verify83bindings before publication. No Q reviewer verdict is assumed.
-Fresh agent boost_quantitative_review has read Q/X and is reconstructing
-necessary K/B/E premises before author evidence; outputs belong to
-BOOST_HSTAR_QUANTITATIVE_CORRECTOR_REVIEW.md and boost_quantitative_review/.
+author receiptc447314e4a130e2fc2e047da6ddbe2abdf20209c5aa4718c2bab9b75783b5356.
+Complete separate review6ccba5be389898bd97ce12e53bf767dd002a3e6f282afb3cb4e010f49d86ca2d;
+receiptc38f2a237e045a12870e380a7f9fc152c4a0e405238e8643050b4ec457e6dce2.
+The416-line reconstructiondc370ac3cef04b514962d58862735c9080e1b91b0d078345da181a2d15e32ad9
+was frozen00:34:22 UTC before author evidence. Independent control freeze
+8f388f7d3dccd6059f4002ba52187098a2da9ee5b779dc75714d16f7c0399daa
+is00:38:56 UTC. No required correction in Q1–Q34 was found. Root read full
+source/review/reconstruction, all3author helpers/baselines, all11failure logs,
+the194-line separate Pauli control, full outputs and two failed diagnostic
+attempts/source diffs.83author+164review bindings and11original/copy sources
+match. Root is a coauthor, not the independent checker.
 
-The candidate corrector for actual r=beta n, integral beta/(2epsilon)=0,
-uses alpha_delta=beta/(2epsilon)1_(epsilon>=delta)-its_mean. It is physical;
-||x_delta||<=pi C/(4sqrt(delta)), and the residual is O(Csqrt(delta)).
-Folded cone bounds include all eight zeros. Both endpoints, time derivative
-and noncommuting V_lambda x remain in the exact identity. K8 fiberwise bounds
-and the transverse block improve weighted growth from exponential to
-polynomial. Explicit source, phase, both normalizers, generator and full
-derivative errors yield candidate L2<=C sqrt(lambda)(1+T)^2 and
-H1<=C_*sqrt(lambda)(1+T)^3. K-based simultaneous correction/transverse norm
-limits use eta<1/4; all nine actual normalized means use
-C_mean[sqrt(lambda)(1+T)^3+lambda(1+T)^5], hence eta<1/6.
-These are author theorems under review, not completed independent results.
-No endpoint/optimality, total-state occupation or physical covariance claim.
-The earlier exponential proof50ceee39e4a7364bb2b616ce09b741101492a9639e91ad0a2776c66c8b7a4ce9
-and actual initial residual's failed full-inverse route remain unchanged.
-Root proposed both mechanisms and is a coauthor, not its separate reviewer.
+The actual residual is beta n, integral beta/(2epsilon)=0. The mean-zero
+singlet cutoff has norm<=pi C/(4sqrt(delta)) and residual<=c_e Csqrt(delta).
+All eight cones and both global normalizers are retained. The source's
+pointwise resolvent and complete transverse integral yield polynomial
+weighted bounds. The noncommuting identity keeps both endpoints, x_s and
+V_lambda x. Full differentiated errors keep (partialG)D. With delta=lambda,
+L2D<=M(3K_R+1)sqrt(lambda)(1+T)^2 and
+H1D<=M(30K_R+7)sqrt(lambda)(1+T)^3, for allT>=0,0<lambda<=1/16.
+The literal constants are in Q2. K gives simultaneous correction and
+transverse-norm limits oneta<1/4; all9actual normalized residual means obey
+C_mean[sqrt(lambda)(1+T)^3+lambda(1+T)^5], henceeta<1/6. Neither endpoint,
+optimality, total-state occupation nor physical covariance is asserted.
+The full-inverse failure and earlier exponential proof50ceee39e4a7364bb2b616ce09b741101492a9639e91ad0a2776c66c8b7a4ce9
+remain unchanged.
 
-## Other active derivations and repository sync
+Reviewer finite controls have a different physical Pauli/augmented-ODE
+construction: identityerror2.998e-15,stateerror8.951e-12,derivativeerror4.016e-12.
+Two absolute defect gates were initially too coarse; both failed sources/logs
+survive. Only diagnostic separation thresholds changed, no identity/fixture.
+Three later author replays reproduce complete outputs exactly. These finite
+calculations do not establish cone bounds or analytic continuum limits.
 
-partial_factor_review completed SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md,
-262lines,c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2;
-scattering_exhaustion_next/receipt.json8fac2fc46322fc8a58e2a86eda22128a7e9c7a831f329c53f0775d2ea60aca3a.
-Root has not yet read it. It proposes a vacuum-remainder/detector reduction
-with explicit PC convergence and ND no-undetected-subspace obligations;
-neither is claimed established for N1. Fresh scattering_exhaustion_review
-is now independently checking the complete reduction and primary imports
-before author controls. No EX or local-qubit counterexample follows from
-an abstract spectator space. No review outcome is assumed.
+## K/Q publication evidence
 
-boost_kernel_dynamics now tests ROOT_HSTAR_SPECTRAL_LEAD.md in
-HSTAR_THRESHOLD_SPECTRAL_PROBE.md / hstar_threshold_spectral/. It depends
-on previously checked physical H*, not Q. Candidate squared longitudinal
-operator is Y-|h><h|, h=2epsilon,Y=h²; its rank-one resolvent and eight-cone
-density may give a nonzero H* threshold density and sharp sqrt(lambda)
-free-primitive law. Constants/signs are proposals to check. That law alone
-would not prove a sharp actual error, full noncommuting dynamics or optimal
-time window. Root proposed it and cannot be its independent reviewer.
+PR9487 head36d6069676f561d81ad693f286dd52f570fb37df is regular/open/attached,
+MERGEABLE; exact title/body/head/base were verified. Packet
+toe-boost-quantitative-outgoing-20261012 is a milestone snapshot, not another
+live campaign checkpoint. K and Q are separate complete notes; K imports
+the entire prior D/memory proof explicitly from PR9481 rather than hiding
+the different Git dependency. Original boost note/counterexamples untouched.
 
-Fresh fetch00:16 and source/ref check00:20 UTC: maina13caa48 and instruction
-branch ai/execution3a4b2c66 unchanged. All applicable local instruction bytes
-match. An initial nonexistent refs/heads/planning query returned empty;
-the unchanged AGENTS pointer supplied the correct ref, which was verified.
-No instruction was changed. Candidate-law9476 stays0cc560e3935fa1ad7623592bf9974680c922d52d;
-N1/B1/M1 identities remain checked. Chiral9477 is now
-3e6cb6420767ec067b847b7bf7956ee232eca277. Its complete handoff/queue delta
-for cycles64–65 was read only for overlap: further partner-kernel affine
-combinations. No full proof/correctness adoption; avoid that active lane.
-Fresh inventory is S/open_prs_0018.json and repo_sync_0018.json.
+K note8964a56defa086dc4d79aa1f48e1a58721e44bad6b15fb4c99e8b601c18778e1;
+Q note89a7e44d33f5ab6946c499b961e10c4bb04580203a5a41f9cca93d6842645240.
+K primary0e6452574e46b8cd292ca8a471c09c8e5563ce9625c3981de2ce9ac7d81e3e36;
+Q primary7544468cd317b65d777d1692788f7fbd07b26e56bb0e98ade92953a0d307bd74.
+Full K control is unchanged beneath metadata; all3full Q helpers are placed
+in separate named functions. Exact reconstruction covers both complete notes
+and both whole primaries. Final canonicalK24.673859835s,Q1.940222979s,120s
+timeouts,exit0,stderr0. K's38scientific controls reproduce, differing only
+in printed walltime; all51Q records reproduce exactly.16actual whole-primary
+defects fail at intended assertions; full tracebacks and stdout prefixes read.
+All475staged identities, source maps, vocabulary and whitespace passed.
+446evidence rows before adding mechanical report;447final own evidence files.
 
-Root, Q reviewer, H* author and EX reviewer occupy all four slots. New owned
-quantitative_boost_worktree is based on frozen9484 and already contains the
-same local CLAUDE bytes; no instruction copy/edit was needed. Primary checkout
-remains untouched. Plan one coherent reviewed K/Q milestone stacked on9484,
-with the cross-PR memory import explicit and its complete proof recoverable.
+Graph6873nodes15424edges adds2nodes/3edges and preserves alloldnodes. An
+initial K-to-Q downstream Markdown link was incorrectly counted as a reverse
+dependency. A plain-code reference removed that spurious edge without changing
+proof; first note/maps/graph/cache evidence remain in kq_pre_graph_repair.
+Both caches were refreshed for K's input identity. The first strict output
+prefix comparison rejected only K's expected printed runtime change; complete
+scientific lines were checked unchanged, no extra run needed for that issue.
+Focused audit compatibility selected no applied rows/failures. Global combined
+pipeline and strict audit lint remain unrun landing gates. Preparation scripts
+are one-shot; finish_kq_delivery.py preserves changed mechanical evidence by
+old hash. Do not rerun blindly. S/kq_pr_verified.json and fullGitlogs recover
+publication. No editable prompt, axiom, audit, main or other-chat mutation.
 
-Lock refreshed2026-10-12 00:15:22.025609 UTC, expires01:15:22.025609 UTC.
-Refresh by01:00 UTC from this transport worktree with the same owner.
-Do not extend the fixed2026-10-12 16:00:52 UTC deadline. Continue useful
-science; no merge, main push, audit verdict, axiom edit or other-chat message.
+## EX reduction: complete focused review, not yet published
+
+SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md,262lines,
+c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2;
+author receipt8fac2fc46322fc8a58e2a86eda22128a7e9c7a831f329c53f0775d2ea60aca3a.
+Review8c9f7bb60724982ce7580a8b5688d8b61572ea008d92305f057d3f9b7a4e735d;
+receipt7567a560ce881d0a429c70d7479d3b92a0d89dfd0e641d9397163c5c12fdaa52.
+The337-line pre-control reconstructiona4a084179531369c12c2b5cb894d776ed11fa325a4cbb20aaf3b67a4906b35f6
+was frozen00:45:02 UTC. No material defect in E1–E18. Root read complete
+target/review/reconstruction, both helpers, all outputs, controls assessment
+and operational failures;230author+95review bindings match. The source's
+scope does not establish PC or ND. No Fock proof is a dependency here.
+
+Full-operator geometric transfer filtering, temporal lowering and common
+kernels give energy bounds. The exact remainder condition
+(J-sum I_i) intersect specH subset{0}, plus unique gapped vacuum, gives a
+scalar vacuum remainder; it does not create covering arrangements. Reordering
+detectors yields positive compressed Q(t)=PJ J_t h_t J_t*PJ. The scalar
+amplitude obeys F_t'=-iSigma_tilde F_t+R_t with all dispersion commutators,
+uniformell2source bound and rapid decay on compact off-collision regions.
+Norm-Cauchy PC would give strong positive detector limits in scattering range.
+Positive weighted detector sums K_J have kernel equal to the common detector
+kernel; ND implies exhaustion. ND is equivalent to the resolvent test with
+orderedt thenm theneta limits, not an arbitraryjointlimit. Energy capture EC
+is only a proposed stronger sufficient condition. ND does not follow from a
+gap or local energy density; EX does not force ND for an arbitrary family.
+
+Independent181-line control checks1197finite mixed-dispersion source equations,
+maxerror5.067e-15, full-operator filtering and convolution signs. All4output
+records and exact author5record reproduction read. These are algebra controls,
+not microscopic N1 models. Root read all13Dybalski1608.08750v1 extracted pages;
+PDF9d574c50f960920daa39a13fb2a07de09b57d717d715f4507731a43f03e6f1c4.
+The paper's global geometric-shell theorem is not literally imported. Its
+printed impossible page4 empty-set clause is disclosed. Other primary proof
+reading limits are explicit; root does not certify fullDG/Kruse/Graf proofs.
+
+## Active detector, threshold and actual-error work
+
+compact_detector_convergence is authoring
+COMPACT_DETECTOR_CONVERGENCE_PROBE.md / compact_detector_convergence/.
+Candidate PC route: S_t strong gives w_t=S_t*psi weak convergence. For fixedt,
+K_t=exp(itSigma)g h_t exp(-itSigma) is finite rank on the lattice. Reverse
+the exact scalar Duhamel integral and use convex separated velocity supports
+to control h_t exp(i(s-t)Sigma)g0(1-chi_s) for s>=t. Both Schur sums,
+sign, s≈t regime, full-source Fourier support and all domain limits must be
+proved. This is a candidate, not a completed theorem or review. ND remains
+separate. Root supplied critical checks and cannot independently review it.
+
+HSTAR_THRESHOLD_SPECTRAL_PROBE.md is frozen,445lines,
+6856c6ff02c50b2357fbda4f2c0dbc2833362965df7ef2efddb3e925b463f6da;
+receipt384a4a5f62310a3f77a138467690f14bbd51042ced9ede6aa3a51a861eddfc92.
+Root read its complete S1–S20 proof, but not yet its helpers/logs/receipt.
+Fresh hstar_threshold_review is independently checking the full argument
+before author evidence; no verdict is assumed. It reads Teschl's required
+original proofs from the author-hosted PDF; source identity/reading scope
+must be checked. Author report:36controls,6literal defects,47bindings, still
+requiring root evidence read. No Q conclusion is a premise of this theorem.
+
+CandidateS: physical longitudinal AA*=M_h²-|h><h|,h=2epsilon;
+G(z)=1-1/[zF_Y(z)], zeroatom1/I0. Eightcones give
+rhoY(s)=sqrt(s)/(4pi²)[1+s/8+O(s²)]. ExplicitPV subtraction gives
+ReF_+(s)=-I0+O(s), and local uniform inversion excludes hidden singular mass.
+After zeroatom removal and square-to-signed pushforward,
+rhoQh0(E)=1/(4pi²I0²)+O(E²). Free primitive norm² is
+|t|lambda/(2pi I0²)+O(lambda²), with a uniform remainder. This alone does
+not establish a lower bound for the full noncommuting actual error.
+
+boost_kernel_dynamics now tests ROOT_ACTUAL_CORRECTOR_LOWER_LEAD.md in
+ACTUAL_CORRECTOR_SMALL_TIME_LOWER_PROBE.md / actual_corrector_small_time_lower/.
+The lead adapts Q7's cutoffdelta=min(1,lambda/s) to give a general weighted
+free primitive bound K_R R sqrt(lambda s). A bounded perturbation acts on
+that small primitive through an exact noncommuting Duhamel identity. Fubini
+retains the changing residual r' and the exact e_lambda term. Proposed error
+from the initial free primitive is sqrt(lambda)[A t^1.5+B t^2.5]+O(lambda),
+so provisionalS20 could imply actualL2Theta(sqrtlambda) for everyfixedt in
+a nonempty smallpositiveinterval. No leading coefficient, growing-time
+optimality, mean lower bound or accepted proof yet. S remains an explicit
+provisional dependency until its independent review finishes.
+
+Root plus PCauthor, Hstarreviewer and actual-errorauthor occupy all4slots.
+Former EX and Q reviewers completed. No additional agent/other-chat message
+or model override is authorized beyond the bounded skill delegation scope.
+
+## Freshness, lock and continuation
+
+Fresh fetch and exact source check2026-10-12 01:00:58 UTC: origin/main
+a13caa4885f547c8d206265b031ba7649e539fd9 and ai/execution3a4b2c66a1ead7a1c48b4359627e968f681e3c39
+unchanged. AGENTS/CLAUDE/SCIENCE_WORKFLOW identities match the earlier complete
+reads.16openPR inventory S/open_prs_0103.json. Candidate9476 remains0cc560e3935fa1ad7623592bf9974680c922d52d;
+chiral9477 remains3e6cb6420767ec067b847b7bf7956ee232eca277. No new source
+science adopted. All relevant scientific parents unchanged. S/repo_sync_0103.json
+and kq_pr_verified.json preserve exact status. Primary checkout untouched.
+
+Lock refreshed2026-10-12 00:48:35.321457 UTC, expires01:48:35.321457 UTC.
+Refresh by01:30 UTC with the same owner from this transport worktree.
+Fixed deadline remains2026-10-12 16:00:52 UTC. Continue useful science, do
+not stop after one result or PR. At deadline preserve/checkpoint, report and
+disable the heartbeat. No merge, main push, audit verdict or axiom edit.

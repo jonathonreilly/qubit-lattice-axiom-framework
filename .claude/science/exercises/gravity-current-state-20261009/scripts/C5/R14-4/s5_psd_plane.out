@@ -1,0 +1,8 @@
+TT1=TT2=1 : V(z) diag = [1, 0, 1, 0, 0]
+   first-order N-block conditions (must vanish): [sqrt(3)*(4*c2 - 2*c3 + 1)/24]
+   solutions: [{c2: c3/2 - 1/4}]
+   second-order Schur complement on N(eps) = Matrix([[3*ex**2/4 + 3*ey**2/4, 0, 0], [0, ex**2*(64 - (2*c3 - 1)**2)/64, ex*ey*(-4*c3**2 + 20*c3 - 9)/64], [0, ex*ey*(-4*c3**2 + 20*c3 - 9)/64, ey**2*(64 - (2*c3 - 1)**2)/64]])
+TT1=t1,TT2=t2 : V(z) diag = [t1, 0, t2, 0, 0]
+   first-order N-block conditions (must vanish): [-sqrt(3)*(-4*c2 + 2*c3 + 3*t1 - 4*t2)/24]
+   solutions: [{c2: c3/2 + 3*t1/4 - t2}]
+   second-order Schur complement on N(eps) = Matrix([[3*t1*(ex**2 + ey**2)/4, 0, 0], [0, ex**2*(t2**2 - (2*c3 + 3*t1 - 4*t2)**2/64)/t2, ex*ey*(-2*c3 - 3*t1 + 12*t2)*(2*c3 + 3*t1 - 4*t2)/(64*t2)], [0, ex*ey*(-2*c3 - 3*t1 + 12*t2)*(2*c3 + 3*t1 - 4*t2)/(64*t2), ey**2*(t2**2 - (2*c3 + 3*t1 - 4*t2)**2/64)/t2]])

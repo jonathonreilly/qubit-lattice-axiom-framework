@@ -1,0 +1,16 @@
+group order 24 : dimension of invariant biquadratic forms on traceless h = 6
+group order 48 : dimension of invariant biquadratic forms on traceless h = 6
+rank(O-basis + candidates) = 6 ; rank(candidates) = 6
+  I1 = k^2 h:h                     O-invariant: True
+  I2 = |h k|^2                     O-invariant: True
+  I3 = sum_i k_i^2 h_ii^2          O-invariant: True
+  I4 = sum_i k_i^2 (h^2)_ii        O-invariant: True
+  I5 = sum_ij k_i k_j h_ij h_ii    O-invariant: True
+  I6 = k^2 sum_i h_ii^2            O-invariant: True
+C4v sector values at k = z-hat (coefficient of the sector coordinate squared; off-diagonals listed if nonzero):
+  I1 = k^2 h:h                     TT1=1 TT2=1 S=1 VECy=1 VECx=1 off=[]
+  I2 = |h k|^2                     TT1=0 TT2=0 S=2/3 VECy=1/2 VECx=1/2 off=[]
+  I3 = sum_i k_i^2 h_ii^2          TT1=0 TT2=0 S=2/3 VECy=0 VECx=0 off=[]
+  I4 = sum_i k_i^2 (h^2)_ii        TT1=0 TT2=0 S=2/3 VECy=1/2 VECx=1/2 off=[]
+  I5 = sum_ij k_i k_j h_ij h_ii    TT1=0 TT2=0 S=2/3 VECy=0 VECx=0 off=[]
+  I6 = k^2 sum_i h_ii^2            TT1=1 TT2=0 S=1 VECy=0 VECx=0 off=[]

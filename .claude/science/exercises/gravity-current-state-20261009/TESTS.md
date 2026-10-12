@@ -4895,3 +4895,8 @@ Readings:
   - At the allowed γ, E2 needs a 45–70 t_H history.
 
   Referee running.
+- **R14-4 (mixed h–E graviton):** worker reading OPEN; EXCLUDED if confirmed.
+  - Theorem G-mix: in real PSD C² cubic-covariant six-pair Gaussians with any h–E mixing, two linear axial TT branches force a third linear branch somewhere (a gapless partner). Lemma V is an exact Gröbner computation.
+  - The axis-perfect NN model fails off-axis.
+
+  Referee running.

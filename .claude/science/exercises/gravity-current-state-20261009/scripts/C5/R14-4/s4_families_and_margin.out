@@ -1,0 +1,8 @@
+(1) rank<=2 families from s2 (normalised so the nonzero axis TT stiffness is +1):
+  A (c3=-3/2)  axis diag(T1,S,X,Y,Z)=[1. 0. 0. 0. 0.]  min eig over 3005 dirs=0.000e+00  max rank=2  max lambda3=0.0e+00
+  B (c5=2)     axis diag(T1,S,X,Y,Z)=[0. 0. 1. 0. 0.]  min eig over 3005 dirs=-4.459e-16  max rank=2  max lambda3=4.5e-16
+  C (c5=-4)    axis diag(T1,S,X,Y,Z)=[ 0. -0.  1.  0.  0.]  min eig over 3005 dirs=-1.232e-15  max rank=1  max lambda3=6.8e-16
+(2) margin on the plane TT1=TT2=1, VEC=S=0:  c=(1,c2,c3,-2-c2,1/2-c3,0)
+  grid 81x81 on [-6,6]^2, 506 directions: PSD members found = 0
+  min over ALL members of max_dir lambda_3 = 0.2500 at (c2,c3)=(np.float64(-1.2000000000000002), np.float64(0.75))
+  F = sum_i k_i^2 Phi_i (c2,c3)=(0,1/2): min eig=-1.11e-16  max lambda_3=0.5000  max rank=5

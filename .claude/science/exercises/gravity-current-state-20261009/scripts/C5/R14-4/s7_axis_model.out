@@ -1,0 +1,10 @@
+min eig of H over random k: 0.6959674728312678
+  axis (0,0,1)     |k|=1e-02  omega/|k| = [0. 0. 0. 1. 1.]   (trace mode omega = 1.732)
+  axis (0,0,1)     |k|=1e-03  omega/|k| = [0.e+00 0.e+00 1.e-05 1.e+00 1.e+00]   (trace mode omega = 1.732)
+  face (1,1,0)     |k|=1e-02  omega/|k| = [0.      0.5     0.70711 0.70711 0.86602]   (trace mode omega = 1.732)
+  face (1,1,0)     |k|=1e-03  omega/|k| = [0.      0.5     0.70711 0.70711 0.86603]   (trace mode omega = 1.732)
+  body (1,1,1)     |k|=1e-02  omega/|k| = [0.57735 0.57735 0.57735 0.70711 0.70711]   (trace mode omega = 1.732)
+  body (1,1,1)     |k|=1e-03  omega/|k| = [0.57735 0.57735 0.57735 0.70711 0.70711]   (trace mode omega = 1.732)
+  generic (1,2,3)  |k|=1e-02  omega/|k| = [0.26726 0.5     0.53452 0.80178 0.86602]   (trace mode omega = 1.732)
+  generic (1,2,3)  |k|=1e-03  omega/|k| = [0.26726 0.5     0.53452 0.80178 0.86603]   (trace mode omega = 1.732)
+axis k=1.3: omegas [0.       0.       0.       1.210373 1.210373 1.732051]  expected TT omega = sqrt(2(1-cos k)) = 1.210373

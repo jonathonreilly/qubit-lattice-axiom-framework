@@ -5004,3 +5004,32 @@ Readings:
   - **Prices**, renamed to avoid a clash with R15-2: P-r15-1a (instantaneous g-influence), P-r15-1b (the reader keeps g ≲ 1–6H²), P-r15-1c (CMC foliation existence), P-vac′.
 
   Referee running. The R14-5 referee verdict is archived.
+
+### C5 Round 15, items 5–6 (pre-registered 22:12Z, before launch; S17 still drafting round 16)
+
+**R15-5. Producing the graviton at strong coupling: does a Gu–Wen-type qubit model escape the Gaussian exclusions?**
+- X1, X-G and G-mix are EXCLUDED, and R15-3 (worker) says ≥4 or ≥5 gapless branches. All of these cover Gaussian or quadratic classes.
+- The open route is a non-Gaussian, strong-coupling phase: Gu–Wen's helicity-±2 qubit model and Xu's rank-2 spin liquids, where projection or energetics may gap the helicity-0/±1 modes.
+- **Setting:**
+  - Prior art first: the repo's lane R (`TESTS:692-767`), R9-9 and R13-2, and Gu–Wen / Xu / Pretko / Rasmussen–You–Xu, which may be downloaded as untrusted text.
+  - Then:
+    - (a) state precisely which assumption of Lemma P / Theorem G / Theorem C the model violates, if any;
+    - (b) count the gapless branches it claims and their helicities, and check by a small computation where feasible (a perturbative effective Hamiltonian, or a classical/large-S spectrum);
+    - (c) does matter couple to the h-modes through a conserved T with a 1/r pull (the Weinberg–Witten status)?
+
+Readings:
+- **PASS:** a stated qubit model, local terms only, whose low-energy sector has exactly the two helicity-±2 gapless modes plus a universal 1/r coupling, checked at the level the literature or the probe supports, and naming the Gaussian assumption it breaks.
+- **FAIL:** a refereed no-go extending Theorem C to the stated non-Gaussian class.
+- **INCONCLUSIVE:** otherwise, with the decisive missing computation named.
+
+**R15-6. Can the lattice-time reader keep the CMC sector healthy? A sign theorem for g.**
+- R15-1 (worker) finds ghosts or tachyons for g ≳ 1–6H², health for g ≤ 0, and signalling ∝ g.
+- **Question:**
+  - (a) Is there a reader rule within R14-5's class (causal, regular, annihilates constants) whose g is ≤ 0, or ≤ cH² with c below the tachyon threshold, for all physically allowed histories: phase transitions, lumpy late times, DESI-like w?
+  - (b) Is there a rule that keeps |g| small enough that the R15-1 Lemma S influence is below current bounds? State the bound used, for example pulsar timing or lunar laser ranging on instantaneous Yukawa couplings.
+  - (c) Or is g's sign forced by the null energy condition (NEC) and Lemma C?
+
+Readings:
+- **PASS:** an explicit reader rule with a proved sign or size bound on g in a stated class of histories, and the influence below a stated bound.
+- **FAIL:** a refereed proof that every allowed reader gives g above threshold, or above a bound, on some allowed history.
+- **INCONCLUSIVE:** otherwise.

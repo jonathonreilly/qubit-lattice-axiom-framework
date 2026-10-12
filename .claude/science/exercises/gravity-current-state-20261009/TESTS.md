@@ -3849,3 +3849,28 @@ Expectation: INCONCLUSIVE, leaning FAIL. A product of plateaus is not a covarian
 **R9-4 (covariant CQ escapes):** worker readings: (i) EXCLUDED, (ii) EXCLUDED, (iii) OPEN, (iv) OPEN, with an n ≥ 3 correction to R8-3. Referee running.
 
 **R9-5 (box law on ⊗M₂):** worker reading PASS with scope. A Kitaev brick-wall long-range string law, exact in the flux-free sector at every particle number, with certified tails. Visons are static, and a plaquette term is needed. Referee running.
+
+### C5 Round 9, items 8–9 (pre-registered 17:09Z; launched now)
+
+**R9-8. Non-minimal gauge-invariant couplings in box QED (the escape left by R8-5).**
+- R8-5 (refereed, FAIL bounded) excludes protection through minimal Peierls coupling: the cone split is unsuppressed. It leaves open transverse non-minimal and invariant-mass gauge-invariant kernels, for example Wilson-line-dressed (Terning-type) non-local vertices with invariant-mass form factors on the charged pair.
+- Construct the cheapest gauge-invariant box QED in which the full photon vertex, including its longitudinal part forced by the Ward identity, has an invariant-mass structure, as far as Lemma C allows.
+- Compute the one-loop electron and photon speed shifts.
+- Identify whether the Ward-forced longitudinal part alone regenerates the split.
+
+Readings:
+- **PASS:** an explicit gauge-invariant law with an exact Ward identity whose one-loop cones agree to below 1e-15 relative without tuning, checked.
+- **FAIL:** a refereed proof that every gauge-invariant vertex in a stated non-minimal class carries an O(e²/16π²) cone split, or a computed unsuppressed split for the cheapest construction plus a stated-class argument.
+- **INCONCLUSIVE:** otherwise.
+
+**R9-9. A box-confined graviton: does the TT mass stay zero under box-matter loops?**
+- Give the linearized graviton the box treatment: dispersion ω = |k| in a box, with non-analytic periodic extension and a lattice gauge structure (R8-2's generalized forward-difference divergence, or the 09-14 N-type constraints).
+- Couple it to R8-2's universal free box-plus-edge stress.
+- Compute the one-loop TT self-energy from box matter (free, number-conserving; then a pair-creating INV variant if feasible):
+  - does it keep the TT mass zero (gauge protection) and the TT speed equal to the matter speed;
+  - do the E_g and T_2g shear masses (V3: μ_E = 1.97e-3) reappear through the edge?
+
+Readings:
+- **PASS:** an explicit box graviton coupled to universal box matter whose one-loop TT mass is zero and whose TT speed matches matter to below 1e-15, without tuning, checked.
+- **FAIL:** a computed nonzero one-loop TT mass or speed split that no choice in a stated class removes (refereed).
+- **INCONCLUSIVE:** otherwise.

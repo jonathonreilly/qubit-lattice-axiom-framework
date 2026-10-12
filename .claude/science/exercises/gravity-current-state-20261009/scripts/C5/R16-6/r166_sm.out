@@ -1,0 +1,13 @@
+(2) e+e- annihilation, nu decoupled at T_dec = 2 MeV (instantaneous; RECALLED approximation)
+    history conservation check max|rho'+3h|/3h (excluding the T_dec kink) = 7.32e-05
+    final T_nu/T_gamma = 0.7154  ((4/11)^(1/3) = 0.7138)
+    PEoS(literal)  eps=R/rho_nc-1: final +1.9984e-15, range [-1.143e-02, +2.665e-15];  g/H^2 range [-5.216e-02, +1.428e-05]
+    MR             eps=R/rho_nc-1: final -1.8889e-04, range [-1.380e-02, +1.357e-02];  g/H^2 range [-6.134e-02, +6.577e-02]
+    PEoS(literal)  Delta N_eff equivalent of the final error = +0.000  (comparator: Planck ~0.2-0.3, RECALLED)
+    MR             Delta N_eff equivalent of the final error = -0.001  (comparator: Planck ~0.2-0.3, RECALLED)
+    IE: started in equilibrium above T_dec, R' = -3h: exact for any decoupling history (identity); g = 0.
+(1) QCD crossover, HotQCD-2014 p/T^4 parametrization (RECALLED coefficients), T = 1000 -> 60 MeV
+    QCD trace anomaly (rho-3p)_QCD / rho_tot: max 0.3130 at T = 181 MeV
+    adiabatic history: max|rho'+3h|/3h = 3.40e-03  (P-EoS reads R = rho_EoS(T(h)) = rho exactly, so V' = rho'+3h - 0 -> g/H^2 = this/R scale)
+    literal P-EoS g/H^2 from the numerical history: max |g/H^2| = 1.34e-02 (finite-difference level)
+    an h-only reader WITHOUT the EoS must absorb the trace-anomaly change; R15-4's linear reader residual at QCD was 8.89e-5 (vR15-4:21; count once)

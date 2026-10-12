@@ -1,0 +1,26 @@
+bag model: a_f=1, a_t=0.3, B=1, T_c^4=4.2857; start T0^4 = 30 T_c^4 (equilibrium, false phase)
+every reader uses h only, so a constant true vacuum V_t of any size never enters R (shift invariance, Lemma B);
+NOTE: for IE the end value of Lam_late/rho_nc is ODE round-off: an absolute offset D is a constant, so D/rho_nc grows like e^{4u}.
+      The bracket gives D relative to the initial density (the integration-constant error). Analytically D = 0 (r166_identity.out:2).
+g/H^2 is computed from V' = -3h - R' and is V_t-independent.
+columns: reader | min g/H^2 | max g/H^2 | Lam_late/rho_nc at u_n-4W | Lam_late/rho_nc at end | int(g/H^2)R du (= Delta V; -B means the false vacuum was absorbed) | e-folds accelerating
+T_n/T_c=0.90 W=0.050  (B/rho_r at nucleation = 0.356)
+  IE    +0.000e+00 +0.000e+00  -4.075e-14  -1.386e-03  +0.00000  0.00   [(R-rho_nc)/rho_nc(u0) at end = -1.55e-15]
+  PEoS  -2.307e+00 +1.333e+00  +4.621e-05  +0.000e+00  -0.00000  0.06   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+  MR    -3.079e+00 +1.164e-10  -1.377e-01  +0.000e+00  -1.00000  0.07   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+T_n/T_c=0.50 W=0.020  (B/rho_r at nucleation = 3.73)
+  IE    +0.000e+00 +0.000e+00  +4.823e-13  +1.670e-02  +0.00000  0.32   [(R-rho_nc)/rho_nc(u0) at end = +6.18e-15]
+  PEoS  -3.746e+01 +1.333e+00  -7.303e-01  +0.000e+00  -0.00000  0.09   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+  MR    -3.746e+01 +1.164e-10  -7.303e-01  +0.000e+00  -1.00000  0.09   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+T_n/T_c=0.30 W=0.020  (B/rho_r at nucleation = 28.8)
+  IE    +0.000e+00 +0.000e+00  +6.271e-13  -2.397e-03  +0.00000  0.84   [(R-rho_nc)/rho_nc(u0) at end = -7.25e-16]
+  PEoS  -7.061e+01 +1.333e+00  -9.541e-01  +0.000e+00  -0.00000  0.11   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+  MR    -7.061e+01 +1.164e-10  -9.541e-01  +0.000e+00  -1.00000  0.11   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+T_n/T_c=0.10 W=0.010  (B/rho_r at nucleation = 2.33e+03)
+  IE    +0.000e+00 +0.000e+00  -8.802e-13  -3.455e-02  +0.00000  1.94   [(R-rho_nc)/rho_nc(u0) at end = -1.01e-14]
+  PEoS  -1.954e+02 +1.333e+00  -9.992e-01  +0.000e+00  -0.00000  0.08   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+  MR    -1.954e+02 +5.821e-11  -9.992e-01  +0.000e+00  -1.00000  0.08   [(R-rho_nc)/rho_nc(u0) at end = +0.00e+00]
+T_n/T_c=0.10 W=0.200  (B/rho_r at nucleation = 2.33e+03)
+  IE    +0.000e+00 +0.000e+00  -1.147e-13  +2.468e-04  +0.00000  1.99   [(R-rho_nc)/rho_nc(u0) at end = +9.51e-17]
+  PEoS  -1.291e+01 +1.333e+00  -9.894e-01  -1.295e-16  -0.00000  0.90   [(R-rho_nc)/rho_nc(u0) at end = -4.99e-29]
+  MR    -1.291e+01 +5.821e-11  -9.894e-01  -1.295e-16  -1.00000  0.90   [(R-rho_nc)/rho_nc(u0) at end = -4.99e-29]

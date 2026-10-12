@@ -1,0 +1,10 @@
+LIN transfer: G(0)=0 G(3)=1.000000 G(4)=1.000000 G(0.01)=0.0028
+G0   phi0=16 t_end=400.0 | N_total=68.15 N_accel=65.20 | rho_r/rho_nc end=1.000 | Lam_late end=+0.00e+00 | (R-rho_nc)/rho0 end=+0.0e+00 | g/H^2 in [-1.38e-06, +2.44e-06] | min R/rho_nc=1
+IE   phi0=16 t_end=400.0 | N_total=68.15 N_accel=65.20 | rho_r/rho_nc end=1.000 | Lam_late end=-1.79e-08 | (R-rho_nc)/rho0 end=-7.4e-16 | g/H^2 in [+0.00e+00, +0.00e+00] | min R/rho_nc=1
+LIN  phi0=16 t_end=400.0 | N_total=11.33 N_accel=8.84 | rho_r/rho_nc end=1.000 | Lam_late end=+1.77e-01 | (R-rho_nc)/rho0 end=+5.6e-09 | g/H^2 in [-3.40e+01, +1.11e+01] | min R/rho_nc=0.00442
+LIN  phi0=12 t_end=400.0 | N_total=9.19 N_accel=6.70 | rho_r/rho_nc end=1.000 | Lam_late end=+1.76e-01 | (R-rho_nc)/rho0 end=+9.9e-09 | g/H^2 in [-2.77e+01, +1.11e+01] | min R/rho_nc=0.00783
+IE   phi0=12 t_end=400.0 | N_total=39.98 N_accel=37.02 | rho_r/rho_nc end=1.000 | Lam_late end=-9.02e-09 | (R-rho_nc)/rho0 end=-6.4e-16 | g/H^2 in [+0.00e+00, +0.00e+00] | min R/rho_nc=1
+Identifiability on the quadratic attractor (G0 background): h after 2 time units vs phi0
+  phi0=12: h = pi^2 = 0.662633  (2m^2/3 = 0.666667), rho above V_min = 54.112
+  phi0=16: h = pi^2 = 0.664541  (2m^2/3 = 0.666667), rho above V_min = 103.571
+  phi0=20: h = pi^2 = 0.665360  (2m^2/3 = 0.666667), rho above V_min = 169.033

@@ -1,0 +1,5 @@
+1. g - (kappa/3) V'(u) = 0
+2. IE reader (R' = -3h): g = 0
+3. equilibrium fluid: rho' + 3h = 0
+   d(Ts)/dT - (s + c_V) = 0 (monotone h(T) iff s + c_V > 0)
+4. g == 0  <=>  R' = -3h:  solve g=0 for R' -> [-3*h(u)]

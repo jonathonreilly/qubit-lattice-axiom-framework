@@ -5474,3 +5474,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **REFUTED-ZERO:** an explicit law in the class with F_s(0⁺) = 0, checked.
   - **OPEN:** otherwise.
 - **Expectation.** COUNTED for scalars (simpler), OPEN for Dirac.
+- **R16-6 (non-signalling Λ): worker reading PASS, scoped.**
+  - **The class:** readers whose zero is the late vacuum, supplied by the law. Members: IE (read the EoS once, then integrate) and G0.
+  - **What IE gives:** g ≡ 0 and Λ̃_late = 0 through supercooling, inflation (65.2 e-folds), reheating, e⁺e⁻ annihilation, QCD and DESI. There is no signalling and no CMC clock.
+  - **Theorem Z:** g ≡ 0 and Λ̃_late = 0 together hold if and only if R ≡ ρ_tot − ρ_v,late.
+  - **Theorem NA:** landscape branching between late vacua is excluded.
+  - **The worker's own caveat, which the referee must decide:** with g ≡ 0 the model is exactly GR with a fixed cosmological term of −V_late. That is Lemma PT's c-number subtraction, with the number supplied by the law's T = 0 normalization. Is that a tuning?
+  - **Prices:**
+    - P-r166a: the creation law's zero is the T = 0 vacuum. This is in tension with AX:94.
+    - P-r166b: late-vacuum stability.
+    - P-r166c: no late branching.
+    - P-r166d: a first exact reading.
+  - **Consequence:** DESI's phantom crossing would then have to be real dark energy.
+
+  Referee running.

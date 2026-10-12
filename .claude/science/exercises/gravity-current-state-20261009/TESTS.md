@@ -5611,3 +5611,16 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **PERSISTS:** a demonstration (refereed if class-wide) that the fermion and photon loops cannot cancel μ_E at the graviton-cone zero in the stated class.
   - **OPEN:** otherwise.
 - **Expectation.** Fermion μ_E has the opposite sign, so the conflict is LIFTED with one more tuning (the species ratio is not a knob, so an edge parameter is needed).
+- **R16-11 (dressing transfer): worker reading TRANSFERS** (a no-go, so it needs the referee).
+  - **Theorem B′.** Assume a quasi-local unitary dressing of the ground state into the exact vector-law sector, with dressed H second moments finite (tails Σr¹³Φ < ∞). Then m₁(Ẽ_TT) ≤ 2S²K₂k⁴ for any penalty U and any law-violating V. A floor version covers approximate dressings.
+  - **Corollary B-inv.** The local gauge-invariant curvature readout has its susceptibility bounded below by a constant. This excludes Einstein–Hilbert for any local invariant readout with a nonzero vertex, and narrows R16-7's gap 1.
+  - **Spin ice is consistent:** for U(1) only 6 of 9 linear fields are pure gauge, against 18 of 18 for the tensor, so Maxwell is allowed.
+  - **The smallest exactly invariant qubit hop flips 20 slots.**
+  - **What remains:**
+    - non-dressable phases (criticality, first-order transitions, U ~ J);
+    - mod-N clocks and rotors;
+    - non-local or zero-vertex readouts;
+    - the scalar channel.
+  - **Prices:** P-r16-11a, b and c.
+
+  Referee running.

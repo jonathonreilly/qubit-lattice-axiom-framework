@@ -1,0 +1,11 @@
+sector dim 7 ; E0 = -2.480603 ; gap = 0.9538
+direction x
+  k=1e-03  m1=2.421e-06  |vertex|=2.421e-03  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+  k=1e-02  m1=2.421e-04  |vertex|=2.421e-02  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+  k=1e-01  m1=2.419e-02  |vertex|=2.420e-01  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+  k=3e-01  m1=2.163e-01  |vertex|=7.236e-01  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+direction gen
+  k=1e-03  m1=2.421e-06  |vertex|=2.421e-03  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+  k=1e-02  m1=2.421e-04  |vertex|=2.421e-02  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+  k=1e-01  m1=2.420e-02  |vertex|=2.420e-01  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True
+  k=3e-01  m1=2.167e-01  |vertex|=7.243e-01  chi_AA=2.42105  >=  |vertex|^2/m1=2.42105 : True

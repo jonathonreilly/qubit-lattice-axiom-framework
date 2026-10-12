@@ -1,0 +1,11 @@
+cluster: 12 links, dim 4096, dim H_0 = 7
+(P) m1(H') = 0.030706358576+0.000000000000i ; m1(H'') = 0.030706358576+0.000000000000i ; |diff| = 0.00e+00
+    max |[G(v),H']| = 7.002 (law-violating) ; max |[G(v),H'']| = 0.0e+00
+(F) eta=1e-03 |m1(H')-m1(H'')| = 1.357e-04 <= bound 1.542e-01 : True
+(F) eta=1e-02 |m1(H')-m1(H'')| = 1.370e-03 <= bound 1.549e+00 : True
+(F) eta=1e-01 |m1(H')-m1(H'')| = 1.485e-02 <= bound 1.609e+01 : True
+(F) eta=3e-01 |m1(H')-m1(H'')| = 4.921e-02 <= bound 5.055e+01 : True
+(M) twirled h commutes with all G(v): max = 0.0e+00 ; nonzero allowed entries: 6944
+    dir x    twirled slope = 1.996 ; untwirled slope = -0.008 ; max ratio to U(1) support bound = 0.214
+    dir diag twirled slope = 1.996 ; untwirled slope = -0.005 ; max ratio to U(1) support bound = 0.107
+    dir gen  twirled slope = 1.996 ; untwirled slope = -0.006 ; max ratio to U(1) support bound = 0.124

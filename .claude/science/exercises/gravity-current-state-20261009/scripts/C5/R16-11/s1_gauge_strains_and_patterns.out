@@ -1,0 +1,23 @@
+== (A) gauge-generated strains: tensor (N0914 stencil) vs U(1) ==
+tensor: 24 strain fields (6 const + 18 linear); max residual of G^T alpha = l on interior: 4.79e-14
+        rank of image restricted to span of the 24 fields: 24 / 24
+U(1): constants residual: ['5.9e-14', '1.7e-14', '1.6e-14']
+      linear diagonal (E_i*pos_i) residual: ['9.8e-15', '1.1e-14', '1.6e-14']
+      symmetric off-diagonal residual: ['4.4e-14', '2.4e-14', '3.0e-14']
+      ROTATIONS (w x pos) residual:     ['2.33', '2.33', '2.33']   <- not pure gauge: photon vertex O(k)
+counting: tensor linear strains 18 = sym-grad of quadratic alpha (3x6=18, Killing kernel 0 at degree 2); U(1) linear vector fields 9 > grad of quadratic scalar (6)
+
+== (B) qubit-compatible invariant hops: planar Airy rectangles ==
+Airy 1x1 plane(0, 1): slots=10 entries=[-2, -1, 1]  |Gm|=0  max|0th mom|=0 max|1st mom|=0.0e+00  TT slopes=[  nan 3.999 3.999 4.    4.   ]  max ratio to support-moment bound=0.500
+Airy 2x2 plane(0, 1): slots=20 entries=[-1, 1]  |Gm|=0  max|0th mom|=0 max|1st mom|=0.0e+00  TT slopes=[  nan 3.996 3.997 3.999 3.998]  max ratio to support-moment bound=0.400
+Airy 2x3 plane(1, 2): slots=24 entries=[-1, 1]  |Gm|=0  max|0th mom|=0 max|1st mom|=0.0e+00  TT slopes=[3.99  3.998 3.996 3.991 3.993]  max ratio to support-moment bound=0.545
+Airy 3x5 plane(0, 2): slots=36 entries=[-1, 1]  |Gm|=0  max|0th mom|=0 max|1st mom|=0.0e+00  TT slopes=[3.974 3.995 3.989 3.978 3.981]  max ratio to support-moment bound=0.349
+Airy 6x6 plane(0, 1): slots=52 entries=[-1, 1]  |Gm|=0  max|0th mom|=0 max|1st mom|=0.0e+00  TT slopes=[  nan 3.964 3.976 3.994 3.987]  max ratio to support-moment bound=0.198
+
+== (C) no invariant pattern with <=2 nonzero +-1 slots (box 3^3 around origin) ==
+patterns tested: 26406 ; exactly invariant: 0  -> P0 (one/two-slot hop) P0 = 0 at first order
+
+== (D) law-violating single flip: TT symbol slope ==
+  axis   slope=0.000 value@1e-3=2.000  |Gm| entries=4
+  face   slope=0.000 value@1e-3=0.500  |Gm| entries=4
+  body   slope=0.000 value@1e-3=0.889  |Gm| entries=4

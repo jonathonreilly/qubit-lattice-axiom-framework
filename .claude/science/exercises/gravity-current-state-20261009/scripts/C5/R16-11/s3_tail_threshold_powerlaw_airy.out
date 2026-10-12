@@ -1,0 +1,14 @@
+== formula check |c.mhat| explicit vs analytic ==
+max |explicit - formula| = 2.66e-15
+
+== (T1,T2) f-sum slope vs tail exponent p (unit <cos>), Lmax=20000 ==
+p=2.5  m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [1.942 1.502 1.504 1.503] ; m1/k^min(4,p-1) at 3e-3: [18.824 10.255 11.665 10.251] ; scalar-trace slope(body)=1.502 positive=True
+p=3.0  m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [2.121 2.    2.001 2.   ] ; m1/k^min(4,p-1) at 3e-3: [7.12  5.54  5.936 5.519] ; scalar-trace slope(body)=2.000 positive=True
+p=4.0  m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [2.997 2.995 2.994 2.995] ; m1/k^min(4,p-1) at 3e-3: [2.572 2.415 2.695 2.511] ; scalar-trace slope(body)=2.995 positive=True
+p=5.0  m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [3.808 3.811 3.805 3.808] ; m1/k^min(4,p-1) at 3e-3: [4.821 4.345 5.448 4.822] ; scalar-trace slope(body)=3.811 positive=True
+p=6.0  m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [3.991 3.992 3.991 3.992] ; m1/k^min(4,p-1) at 3e-3: [0.483 0.429 0.551 0.483] ; scalar-trace slope(body)=3.992 positive=True
+p=8.0  m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [4. 4. 4. 4.] ; m1/k^min(4,p-1) at 3e-3: [0.062 0.055 0.071 0.062] ; scalar-trace slope(body)=4.000 positive=True
+p=12.0 m1_TT slopes (face,body,gen125,gen213; k=3e-3..3e-2) = [4. 4. 4. 4.] ; m1/k^min(4,p-1) at 3e-3: [0.003 0.003 0.003 0.003] ; scalar-trace slope(body)=4.000 positive=True
+
+summability: per-site norm sum L^-p finite for p>1; pattern 2nd-moment sum (B2; mu2(m_L)~L^3, one class per L) finite iff p>7; support form K2 (L^2 squares contain a site, mu2(support)~L^4) ~ sum L^(10-p) finite iff p>11. Observed k^4 already for p>5: the sufficient conditions are not sharp; p<=5 lowers the power.
+Gaussian comparator (T3): omega_TT^2 = J m1 -> z = slope/2 ; p=3 gives z=1 (harmonic, unit <cos>), with a positive k^2 scalar-trace stiffness

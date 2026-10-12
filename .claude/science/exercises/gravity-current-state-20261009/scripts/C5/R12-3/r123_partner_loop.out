@@ -1,0 +1,13 @@
+Ward identity  sum_j conj(D_j) V_j = -eJ[h(-p)-h(-k_s)]  max error over 400 cases: 4.7e-16
+A-B mixing trace tr[(1 x J)(Clifford x J)] max = 0.0e+00  (selectron loop A-B mixing vanishes)
+A-block of BF photino projectors P_+ and P_- equals P_T/2: max error 7.8e-16
+Q-fixed photino-selectron loop, transverse photino only: dc_e x 16pi^2/e^2  (photon loop, R10-1 refereed: -17.96 Wilson, -10.66 box)
+   Wilson-circle electron / cochain photino   m=0.10 N=48 :   -8.8752   [1s]
+   Wilson-circle electron / cochain photino   m=0.10 N=64 :   -9.0080   [2s]
+   Wilson-circle electron / cochain photino   m=0.05 N=64 :   -9.8758   [4s]
+   Wilson-circle electron / cochain photino   m=0.05 N=80 :  -10.1253   [7s]
+   box b1=0.8 electron / box photino (1,2)    m=0.10 N=48 :   -9.5617   [8s]
+   box b1=0.8 electron / box photino (1,2)    m=0.10 N=64 :   -9.6945   [10s]
+   box b1=0.8 electron / box photino (1,2)    m=0.05 N=64 :  -10.5628   [12s]
+   box b1=0.8 electron / box photino (1,2)    m=0.05 N=80 :  -10.8122   [15s]
+elapsed 15.3s

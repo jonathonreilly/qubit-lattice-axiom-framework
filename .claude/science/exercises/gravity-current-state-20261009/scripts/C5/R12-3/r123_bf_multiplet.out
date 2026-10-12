@@ -1,0 +1,33 @@
+(1) algebra checks
+   cochain              max|d d|=4.9e-16  max|C g|=4.9e-16  max|C^2 - Delta P_phys|=3.6e-15  potential=Maxwell+Delta blocks: 3.6e-15
+   box (c1,c2)=(1,2)    max|d d|=4.9e-16  max|C g|=4.9e-16  max|C^2 - Delta P_phys|=2.7e-15  potential=Maxwell+Delta blocks: 2.7e-15
+(2) doubler scan: smallest nonzero |eig C_BF| over N^3 grid, q != 0 (photon/photino zeros only at q = 0?)
+   cochain    N=16  min|eig|=0.3902 at q=[-0.393  0.     0.   ] ; sqrt(Delta) there = 0.3902 ; nearest-to-0 grid |q| = 0.3927
+   cochain    N=24  min|eig|=0.2611 at q=[-0.262  0.     0.   ] ; sqrt(Delta) there = 0.2611 ; nearest-to-0 grid |q| = 0.2618
+   control class-S lattice curl i eps.sin q: transverse |eig| at (pi,0,0),(pi,pi,0),(pi,pi,pi) = [0. 0. 0.]
+   box (1,2)  N=16  min|eig|=0.3927 at q=[-0.393  0.     0.   ] ; sqrt(Delta) there = 0.3927 ; nearest-to-0 grid |q| = 0.3927
+   box (1,2)  N=24  min|eig|=0.2618 at q=[-0.262  0.     0.   ] ; sqrt(Delta) there = 0.2618 ; nearest-to-0 grid |q| = 0.2618
+   box: q=[ 0.3 -0.5  0.7] (inside photon plateau) eigs=[-0.91104336 -0.91104336 -0.91104336  0.          0.91104336  0.91104336
+  0.91104336]  |q|=0.911043357914
+   box: q=[ 0.9   0.2  -0.95] (inside photon plateau) eigs=[-1.32382023 -1.32382023 -1.32382023  0.          1.32382023  1.32382023
+  1.32382023]  |q|=1.323820229487
+(4) Chern numbers of the positive-eigenvalue bundle on a sphere |q| = r around 0 (Fukui-Hatsugai)
+   class S lattice curl i eps.sin q (R10-5 control)           rank(P+)=1  c1 = +2.0000
+   continuum curl i eps.q                                     rank(P+)=1  c1 = +2.0000
+   continuum odd signature (sigma,A) [twisted N=2 photino]    rank(P+)=2  c1 = +2.0000
+   BF continuum (A,B,tau)                                     rank(P+)=3  c1 = -0.0000
+   BF cochain lattice (A,B,tau)                               rank(P+)=3  c1 = +0.0000
+   BF box lattice (A,B,tau)                                   rank(P+)=3  c1 = +0.0000
+   Kaehler-Dirac Omega^0..3 cochain (8x8)                     rank(P+)=4  c1 = +0.0000
+(5) twisted helicity content (J_z on forms) of the positive band, continuum symbols at q = (0,0,1)
+   BF (A,B,tau)                     positive-band twisted helicities: [-1.  0.  1.]  (count 3)
+   odd signature (sigma,A)          positive-band twisted helicities: [0. 1.]  (count 2)
+   Kaehler-Dirac (sigma,A,B,tau)    positive-band twisted helicities: [-1.  0.  0.  1.]  (count 4)
+   class S curl (A)                 positive-band twisted helicities: [1.]  (count 1)
+(6) linear A-field mixing c_{j alpha k} q_k allowed by proper-cubic covariance + transversality (q.c = 0)
+   field in irrep A1  (dim 1): dimension of allowed linear transverse A-mixing = 0
+   field in irrep A2  (dim 1): dimension of allowed linear transverse A-mixing = 0
+   field in irrep E   (dim 2): dimension of allowed linear transverse A-mixing = 0
+   field in irrep T1  (dim 3): dimension of allowed linear transverse A-mixing = 1
+   field in irrep T2  (dim 3): dimension of allowed linear transverse A-mixing = 0
+elapsed 1.9s

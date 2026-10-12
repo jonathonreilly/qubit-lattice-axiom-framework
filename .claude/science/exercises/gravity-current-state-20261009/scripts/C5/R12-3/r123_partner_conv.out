@@ -1,0 +1,6 @@
+   Wilson-circle e / cochain photino    m=0.100 N= 96 :   -9.0755   [5s]
+   Wilson-circle e / cochain photino    m=0.050 N= 96 :  -10.2693   [10s]
+   Wilson-circle e / cochain photino    m=0.025 N= 96 :  -10.8766   [15s]
+   box b1=0.8 e / box photino (1,2)     m=0.100 N= 96 :   -9.7620   [20s]
+   box b1=0.8 e / box photino (1,2)     m=0.050 N= 96 :  -10.9562   [26s]
+   box b1=0.8 e / box photino (1,2)     m=0.025 N= 96 :  -11.5634   [31s]

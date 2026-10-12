@@ -4474,3 +4474,15 @@ Readings:
 - **PRODUCED:** a qubit model with a numerically demonstrated linear gapless TT mode (two polarizations, no partners), checked.
 - **EXCLUDED:** a refereed no-go extending X1 to the stated strong-coupling or emergent class.
 - **OPEN:** otherwise.
+- **R12-1 (deformation algebra):** worker reading INCONCLUSIVE.
+  - Theorem K: at degree 2, the matter part of the Dirac brackets closes iff the matter's global Poincaré jets are exact. That holds on box states, via Hadamard quasi-local corrections.
+  - Closure forces a tree-level common cone c_g = c_m.
+  - The gravity bilinear sector was not built.
+
+  Referee running.
+- **R12-3 (twisted lattice SUSY):** worker reading INCONCLUSIVE.
+  - Bounded no-gos PD₁, PD₂ (twisted N=2 photino Chern +2), Theorem U (doubler-free photon plus spin-½ photino incompatible in Nicolai form) and Theorem L (lattice SUSY never fixes c_γ/c_e).
+  - The BF multiplet is doubler-free, but has integer-spin photinos and a non-local or uncompleted Hamiltonian.
+  - Twisted N=4 is open.
+
+  Referee running.

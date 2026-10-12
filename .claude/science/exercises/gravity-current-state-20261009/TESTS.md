@@ -4540,22 +4540,23 @@ Readings:
 - **VIABLE:** an explicit stationary E2 model passing every stated test on a stated (γ, ℓ_s) region, with prices named.
 - **EXCLUDED:** a refereed inconsistency, or a violated stated bound for every γ.
 - **OPEN:** otherwise.
-- **R12-5 (strong-coupling graviton):** worker reading OPEN.
-  - Lemma DW-q: frozen (sharp) constraint sectors kill non-invariant characters, which puts Gu–Wen's linear-mode argument in tension.
-  - The soft energetic Gaussian is unstable.
-  - One exact constraint caps TT at k².
-  - X1-E (prethermal extension of X1) is suggested.
-  - Exact diagonalization is infeasible (L ≥ 4 needs 140 logical qubits).
-  - The only window left is compact, non-Gaussian, stabilized-scalar phases.
-
-  Referee running.
-- **R12-7 (GW friction CQ route):** worker reading OPEN.
-  - The friction law passes every stated observational test for γ ≤ H₀ and ℓ_s in R6-4's window.
-  - Causality: friction must act on the full harmonic-gauge metric; TT-only friction is acausal.
-  - The sink: a noiseless classical sink is required, and it must gravitate.
-  - Why not VIABLE: the energy budget forces near-cone suppression ε ≤ 5e-17 to 3e-6, which brings back R11-5's assumed coefficients.
-
-  Referee running.
+- **R12-5 (strong-coupling graviton) — CONFIRMED WITH CORRECTIONS. OPEN.**
+  - **What holds:**
+    - DW-q exactly removes non-invariant Weyl characters at first order in a sharp constraint sector;
+    - the specified finite-penalty Gaussian is unstable;
+    - the two supplied one-exact reductions keep k² TT modes.
+  - **This is a genuine weakness in Gu–Wen's uncontrolled freeze/spin-wave argument.** It does not control higher-order returning words, all one-exact Hamiltonians, or non-Gaussian strong-coupling phases.
+  - **ADHH** gives at most conditional prethermal support.
+  - **Neither fixed reading is met:** no model satisfies PRODUCED, and no valid argument establishes EXCLUDED.
+- **R12-7 (GW friction CQ route) — CONFIRMED WITH CORRECTIONS. OPEN.**
+  - **What holds:**
+    - For each fixed preferred-frame scalar mode, the positive finite bank has bounded H-T excess and realizes the regulated near-cone slopes.
+    - The retarded telegraph propagator is causal, boost-stable and exactly Newtonian at zero frequency.
+    - A classical outgoing Lamb string realizes noiseless Ohmic friction for a toy mode.
+    - Spatial-TT-only friction is generically acausal at O(γ).
+  - **No current comparator excludes γ ≲ H₀:** speed, binary pulsars, static/lab and coarse sirens all pass. Lu et al.'s 2.98 H₀ is only a fixed-distance benchmark, and PPN is unclosed.
+  - **The budget problem returns, conditionally.** Given R11-5's spectral normalization, gravitating near-cone content and a dust-like gravitating sink, the dark-energy budget again needs extreme suppression.
+  - **Missing:** a full spin-2 CQ dilation, a conserved gravitating bath, and a nonlinear preferred-frame completion.
 
 ### C5 Round 13 (pre-registered 20:13Z from the S14 synthesis, agents/C5_S14_synthesis.md; readings fixed as drafted below)
 

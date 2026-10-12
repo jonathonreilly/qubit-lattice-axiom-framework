@@ -3392,3 +3392,48 @@ Readings:
 - **PASS:** an explicit three-body box law with an exact algebra and cluster separability, checked.
 - **FAIL:** a no-go for box-supported quasi-local three-body closure with cluster separability, in a stated class (refereed).
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 6–7 referee results (recorded 15:31Z)
+
+**R7-1 (box-confined Poincaré) — CONFIRMED WITH CORRECTIONS. PASS WITH SCOPE.** This is the campaign's first PASS.
+- **What holds.** A graded-CAR, continuous-time lattice law with smooth non-analytic, super-polynomially quasi-local hopping carries the exact, undeformed Poincaré Lie algebra on compactly supported finite-particle wavefunctions inside an open momentum box. Its finite free boosts agree with continuum boosts up to the stated rapidity boundary, with the leakage bound 2‖1_E ψ‖.
+- **Why it is not overturned.** It is a genuine local-domain counterexample lying outside the global, integrated and analytic boost no-gos (C3, I1–I3, B1, M1, C1, R2-1, RFW). It avoids their hypotheses rather than overturning their conclusions. I3 bites only if integrated boost covariance is claimed.
+- **Not established:**
+  - **No invariant Poincaré sector.** The domain is infinitesimally invariant but not closed under finite boosts.
+  - **P2 (two-body Bakamjian–Thomas) is defective as written.** The boost sign is wrong, the quartic prefactor must be ¼, and the boost is never constructed in the runner. After repair, standard BT applies on the 1D plateau. A rotationally invariant channel is still needed for d ≥ 2.
+  - **Interacting leakage** is unproved.
+  - **Ward identities.** W1 holds only for free matter where χ = 1; W2 is not established for interacting matter; W3 holds only as P1's free affine algebra; W4 (local lapse) is open.
+  - **Universal coupling fails.** Energetic edge modes that do not gravitate violate it.
+- **What meets the fixed clause.** The PASS clause is met through P1 (free, every particle number) alone, with the graded fermionic composition the clause expressly allows.
+
+**R6-4 (records as the classical metric) — CONFIRMED WITH CORRECTIONS.**
+- **(i) Smeared Newtonian CQ: VIABLE**, on a conservative demonstrated subwindow of 4e-10 m ≲ ℓ_s ≲ 5e-6 m.
+  - The class is homogeneous Markovian Gaussian continuous CQ Newtonian gravity with additive dephasing.
+  - The DP floor has an 8π normalization mismatch, so the true lower end is about 1e-10 m.
+  - The LISA Pathfinder floor is a γ = 1 prediction.
+  - The 10 µm ISL endpoint is unsupported.
+- **(ii) OPEN overall.** Layton et al.'s unregulated point-particle Newtonian limit is EXCLUDED: Corollary U gives cubic UV heating. The covariant or UV-completed family is open.
+- **(iii) A reading with prices** on Lattice, Qubit, Admissibility and Record, plus a source/readout/permanence bridge.
+- **H-cosmo is conditional** and does not exclude (i).
+- **Dated correction to R3-4/R2-3 (2026-10-12).** The R3-4 referee's "32-decade empty window" excluding ultra-local Newtonian CQ gravity **falls**. OSSW's published torsion-balance reduction (F8–F10) is invalid. It replaces the spatially falling total-body field with a nuclear interior-field estimate. Direct integration gives σ_a² = (48π/5)G²D₂/(RT) and D₂ ≲ 3.7e5, a 9.45e44 discrepancy. What survives is only the narrower cutoff-free point-particle no-go (Corollary U).
+
+**R6-3 (Lemma V, LRL count variance) — CONFIRMED WITH CORRECTIONS.**
+- **Count: SUB-VOLUME.**
+  - Diamond counts: Var N(D_T) = O(T² log T).
+  - Past cones: O(T³). The proof is repairable, and the T³ mean and variance are dominated by rare near-rest frames.
+  - The coefficients 0.1665 and 0.4847 are numerical, not exact. The advertised constant K is wrong (about 2.0e4), but the bound holds.
+- **Literal Lemma V (d): REFUTED.** Lorentz-random affine Z⁴ has null reciprocal vectors and a positive T⁶ contribution of about 0.042.
+- **Null-inclusive V′: DERIVED, with repairs.** Finite local second moments plus a reciprocal gap that excludes the null cone force sub-volume laws.
+- **Strict lensing silence: OPEN.**
+- **Cosmology.** Under H1/H2/H4, sub-volume variance makes Λ fluctuations too large: about 1.4e30 for the cone and 1.4e59 for the diamond. So everpresent-Λ size is excluded on LRL sites under those heuristic premises. This holds for homothetic flat regions; the epoch comparison assumes power-law FRW.
+
+**R7-2 (set E: holographic substrates) — CONFIRMED WITH CORRECTIONS.**
+- **Pure AdS: EXCLUDED** only when identified with our cosmological bulk and dark energy is a constant Λ < 0.
+- **AHS higher-spin dS/CFT: EXCLUDED**, narrowly.
+- **All other routes: OPEN.**
+- **D ≤ 3 gives no local graviton.** This holds for the explicit HaPPY/AdS₃, DSSYK and TT̄ realizations, but not for the random-tensor-network class, which admits higher-dimensional bulks.
+- **The {5,3,4} lattice is Planck-curved:** a/R = 1.0613, a 10^62.3 curvature mismatch.
+- **Qubit AME states exist only for n = 2, 3, 5, 6** (confirmed).
+- **dS/CFT keeps three spatial dimensions,** but not the literal Z³. Adding Z³ breaks conformal symmetry.
+- **N-bound.** 4.78e122 qubits. The overcount is of order 1e61; the fm-scale minimum spacing is 3.4–4.6 fm, depending on the slicing.
+- **Rule C** gives log₂N = |V| − |C| on open sets, 3L² − 3L + 1 for a box. The torus rank differs, but the nullity is the same.

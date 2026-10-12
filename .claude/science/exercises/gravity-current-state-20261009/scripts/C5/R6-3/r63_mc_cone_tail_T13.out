@@ -1,0 +1,1 @@
+T=13 frames=6000 x 24 shifts: mean Var_u/T^3 = 0.3395 +- 0.0612 ; median = 0.1090 ; q90 = 0.2293 ; q99 = 1.8972 ; max = 242.727 ; top-1% share of mean = 0.58  (139 s)

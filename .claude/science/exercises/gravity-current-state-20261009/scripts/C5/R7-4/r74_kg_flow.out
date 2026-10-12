@@ -1,0 +1,11 @@
+config 0: |E_in-E_out|_0=0.0e+00; x-flow leaves shell at s=0.002, max|dE|=1.797; x-periods tau(k_y) of legs = 3.689729, 3.233634, 4.034327, 3.758680
+config 1: |E_in-E_out|_0=2.2e-16; x-flow leaves shell at s=0.002, max|dE|=0.320; x-periods tau(k_y) of legs = 3.767098, 3.314447, 3.153621, 3.909904
+config 2: |E_in-E_out|_0=2.2e-16; x-flow leaves shell at s=0.002, max|dE|=0.767; x-periods tau(k_y) of legs = 3.514358, 3.282032, 3.798061, 3.023540
+config 3: |E_in-E_out|_0=1.6e-15; x-flow leaves shell at s=0.002, max|dE|=1.428; x-periods tau(k_y) of legs = 4.018865, 3.740639, 3.792964, 3.154762
+config 4: |E_in-E_out|_0=0.0e+00; x-flow leaves shell at s=0.002, max|dE|=0.247; x-periods tau(k_y) of legs = 3.508332, 4.020759, 4.036964, 3.364345
+config 5: |E_in-E_out|_0=4.4e-16; x-flow leaves shell at s=0.002, max|dE|=0.490; x-periods tau(k_y) of legs = 3.855305, 3.182925, 3.109487, 3.918082
+config 6: |E_in-E_out|_0=1.6e-15; x-flow leaves shell at s=0.002, max|dE|=0.405; x-periods tau(k_y) of legs = 3.316213, 3.873140, 3.926853, 3.388092
+config 7: |E_in-E_out|_0=2.2e-16; x-flow leaves shell at s=0.002, max|dE|=0.240; x-periods tau(k_y) of legs = 3.562754, 3.984738, 4.004724, 3.608076
+config 8: |E_in-E_out|_0=1.3e-15; x-flow leaves shell at s=0.006, max|dE|=1.321; x-periods tau(k_y) of legs = 3.550382, 4.033362, 3.917091, 3.177393
+config 9: |E_in-E_out|_0=1.1e-15; x-flow leaves shell at s=0.002, max|dE|=1.249; x-periods tau(k_y) of legs = 4.020787, 3.470957, 4.036329, 3.319961
+KG band, non-forward on-shell configs leaving the shell under the x-boost flow: 10/10

@@ -1,0 +1,5 @@
+R=6: sites=925, cubes=624, rank=624 (independent: True), log2 N_adm=301, k/(4 pi R^2)=0.6654, k/(4 pi (R+0.5)^2)=0.5669, t=0.0s
+R=8: sites=2109, cubes=1568, rank=1568 (independent: True), log2 N_adm=541, k/(4 pi R^2)=0.6727, k/(4 pi (R+0.5)^2)=0.5959, t=0.0s
+R=10: sites=4169, cubes=3280, rank=3280 (independent: True), log2 N_adm=889, k/(4 pi R^2)=0.7074, k/(4 pi (R+0.5)^2)=0.6417, t=0.0s
+R=12: sites=7153, cubes=5904, rank=5904 (independent: True), log2 N_adm=1249, k/(4 pi R^2)=0.6902, k/(4 pi (R+0.5)^2)=0.6361, t=0.0s
+R=14: sites=11513, cubes=9760, rank=9760 (independent: True), log2 N_adm=1753, k/(4 pi R^2)=0.7117, k/(4 pi (R+0.5)^2)=0.6635, t=0.0s

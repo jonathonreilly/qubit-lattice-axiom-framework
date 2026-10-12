@@ -1,0 +1,63 @@
+[1] CP trade-off: block [[2D2, -1/2],[-1/2, D0]] PSD  <=>  P_J D0 >= 1/4  (P_J = 2 D2)
+    random check of equivalence: True
+    measurement-feedback check: monitoring A with Lindblad kappa gives record noise 1/(4 kappa); feedback noise P_J = 1/(4 D0): saturates
+[2] reduced matter kernel K(k) = D0 + (4πG)^2 |g|^2 P_J /(hbar^2 k^4) >= (4πG/hbar)|g|^2/k^2  (DP kernel, R0 = ℓ)
+    min K/floor over 5000 random (k,|g|,D0) at saturation: 1.000000 (>= 1, equality at D0 = 2πG|g|^2/(hbar k^2))
+[3] g~ = 1 (exact local Newton), point particle: momentum-diffusion rate >= 4πG hbar m^2 ∫ d^3k/(2π)^3  -> cutoff^3 divergence
+    electron, k-cutoff 1e+10 1/m: d<p^2>/dt >= 1.239e-75 kg^2 m^2 s^-3 ; heating 6.803e-46 W
+    electron, k-cutoff 1e+15 1/m: d<p^2>/dt >= 1.239e-60 kg^2 m^2 s^-3 ; heating 6.803e-31 W
+    electron, k-cutoff 1e+20 1/m: d<p^2>/dt >= 1.239e-45 kg^2 m^2 s^-3 ; heating 6.803e-16 W
+    electron, k-cutoff 1e+30 1/m: d<p^2>/dt >= 1.239e-15 kg^2 m^2 s^-3 ; heating 6.803e+14 W
+    -> no cutoff-free homogeneous kernel gives finite heating of a point mass (proved given the AM-GM floor)
+[4] inputs: M_Cs=2.2069e-25 kg, Delta=1.90e-06 m, Gamma_max=1.429e-02 /s; 25kDa M=4.151e-23, Gamma_max=1.429e+02; LPF S_a(per mass)=1.514e-30; Earth h=7.870e-12 W/kg
+[5] kernel-independent lower bounds on the smearing length ℓ (any homogeneous continuous kernel)
+    (a) radiation: matter kernel >= DP(R0=ℓ) pointwise  =>  ℓ >= R0_DP_min = 4.0e-10 m (Figurato 2024 abstract; Donadi 2021: 5.40e-11)
+    (b) Earth heat: per-kg heating >= G hbar/(4 sqrt(pi) ℓ^3)  =>  ℓ >= 5.02e-12 m
+    (c) LPF force-noise floor S_a >= (8π/3)G hbar ∫|g|^2 S_T /M^2  =>  ℓ >= 5.27e-14 m
+        floor at ℓ=1e-15: 3.97e-27 ; at 4e-10: 6.06e-40 ; at 1e-5: 6.05e-40  (LPF per mass 1.51e-30)
+    (d) stated bounds only, Cs(1.9um,70s) x LPF, Cauchy-Schwarz over all kernels: excluded iff ℓ < 1.00e-19 m
+        ratio (needed/available) at ℓ=1e-15: 1.40e-07 ; 1e-13: 2.86e-13
+        same with OSSW-2022 torsion bar (sigma_a=1e-7): ratio at 1e-15: 1.06e-23
+    (e) upper end: ISL tested to 52 um (Lee et al. 2020, comparator); Gaussian smearing changes the two-body potential by erfc(r/2ℓ):
+        ℓ=5.0e-06: erfc(52um/2ℓ) = 1.92e-13
+        ℓ=1.0e-05: erfc(52um/2ℓ) = 2.36e-04
+        ℓ=1.5e-05: erfc(52um/2ℓ) = 1.42e-02
+        ℓ=2.0e-05: erfc(52um/2ℓ) = 6.60e-02
+[6] kernel D0 = γ (2πG/hbar)|g|^2/k^2 (γ=1: least decoherence); matter kernel = (γ+1/γ)/2 · DP(R0=ℓ)
+    closed form vs numeric Γ_Cs(ℓ=4e-10): 4.3462e-17 vs 4.3462e-17 /s
+    ℓ=4e-10: Γ_Cs=4.35e-17 (max 1.4e-02, margin 14.5 dec) | Γ_25kDa<=1.53e-12 (max 1.4e+02, 14.0 dec) | S_a=6.06e-40 (LPF 1.5e-30, 9.4 dec) | heat=1.55e-17 W/kg (5.7 dec)
+    ℓ=1e-09: Γ_Cs=1.74e-17 (max 1.4e-02, margin 14.9 dec) | Γ_25kDa<=6.11e-13 (max 1.4e+02, 14.4 dec) | S_a=6.06e-40 (LPF 1.5e-30, 9.4 dec) | heat=9.93e-19 W/kg (6.9 dec)
+    ℓ=1e-08: Γ_Cs=1.72e-18 (max 1.4e-02, margin 15.9 dec) | Γ_25kDa<=5.74e-14 (max 1.4e+02, 15.4 dec) | S_a=6.06e-40 (LPF 1.5e-30, 9.4 dec) | heat=9.93e-22 W/kg (9.9 dec)
+    ℓ=1e-07: Γ_Cs=1.58e-19 (max 1.4e-02, margin 17.0 dec) | Γ_25kDa<=2.30e-15 (max 1.4e+02, 16.8 dec) | S_a=6.06e-40 (LPF 1.5e-30, 9.4 dec) | heat=9.93e-25 W/kg (12.9 dec)
+    ℓ=1e-06: Γ_Cs=4.07e-21 (max 1.4e-02, margin 18.5 dec) | Γ_25kDa<=3.61e-18 (max 1.4e+02, 19.6 dec) | S_a=6.06e-40 (LPF 1.5e-30, 9.4 dec) | heat=9.93e-28 W/kg (15.9 dec)
+    ℓ=1e-05: Γ_Cs=5.22e-24 (max 1.4e-02, margin 21.4 dec) | Γ_25kDa<=3.63e-21 (max 1.4e+02, 22.6 dec) | S_a=6.05e-40 (LPF 1.5e-30, 9.4 dec) | heat=9.93e-31 W/kg (18.9 dec)
+    γ-window: (γ+1/γ)/2 <= B(ℓ) = min[(ℓ/R0min)^3 (radiation, conservative), Γmax/Γ, S_LPF/S_a, h_E/h]
+        ℓ=4e-10: B=1.00e+00 -> γ in [1.00e+00, 1.00e+00]
+        ℓ=1e-09: B=1.56e+01 -> γ in [3.20e-02, 3.12e+01]
+        ℓ=1e-08: B=1.56e+04 -> γ in [3.20e-05, 3.12e+04]
+        ℓ=1e-06: B=2.50e+09 -> γ in [0.00e+00, 5.00e+09]
+        ℓ=1e-05: B=2.50e+09 -> γ in [0.00e+00, 5.00e+09]
+[7] ultra-local kernels (D0 const on the coupled density, P_J = |g|^2/(4 D0) white)
+    unregulated, nucleon-form-factor model (electrons ignored): Γ·S_a >= 3.84e-26 vs allowed 2.16e-32 -> excluded by 6.2 decades (Cs x LPF)
+    with point electrons the Γ integral diverges ([3]); OSSW-2022/2023 published: 32-decade empty window (comparator, R3-4 referee checked)
+    r=1e-12: d0 >= 2.59e+11 (LPF), d0 <= 4.20e-02 (Earth heat) -> EMPTY ; CSL-equivalent λ >= 1.60e-08 /s; DP floor needs r >= 4e-10
+    r=1e-11: d0 >= 2.59e+11 (LPF), d0 <= 4.20e+03 (Earth heat) -> EMPTY ; CSL-equivalent λ >= 1.60e-11 /s; DP floor needs r >= 4e-10
+    r=1e-10: d0 >= 2.59e+11 (LPF), d0 <= 4.20e+08 (Earth heat) -> EMPTY ; CSL-equivalent λ >= 1.60e-14 /s; DP floor needs r >= 4e-10
+    r=4e-10: d0 >= 2.59e+11 (LPF), d0 <= 4.30e+11 (Earth heat) -> window ; CSL-equivalent λ >= 2.51e-16 /s; DP floor needs r >= 4e-10
+    r=1e-09: d0 >= 2.59e+11 (LPF), d0 <= 4.20e+13 (Earth heat) -> window ; CSL-equivalent λ >= 1.60e-17 /s; DP floor needs r >= 4e-10
+    r=1e-08: d0 >= 2.59e+11 (LPF), d0 <= 4.20e+18 (Earth heat) -> window ; CSL-equivalent λ >= 1.60e-20 /s; DP floor needs r >= 4e-10
+    r=1e-07: d0 >= 2.59e+11 (LPF), d0 <= 4.20e+23 (Earth heat) -> window ; CSL-equivalent λ >= 1.60e-23 /s; DP floor needs r >= 4e-10
+[8] (c) energy-momentum / Λ-like drift
+    first moment: E[J]=0, so the mean Poisson source has no drift (no Λ-like mean term)
+    matter-side exchange per Hubble time at γ=1, ℓ=4e-10: 1.75e-26 J/m^3 (all matter) vs ρ_Λc^2=5.3e-10 -> 16.5 decades short
+    matter-side exchange per Hubble time at γ=1, ℓ=1e-09: 1.12e-27 J/m^3 (all matter) vs ρ_Λc^2=5.3e-10 -> 17.7 decades short
+    matter-side exchange per Hubble time at γ=1, ℓ=1e-06: 1.12e-36 J/m^3 (all matter) vs ρ_Λc^2=5.3e-10 -> 26.7 decades short
+    [H-cosmo] ℓ=4e-10: |ε| per Hubble time >= 1.51e+40 J/m^3 (49.5 decades above ρ_Λc^2)
+    [H-cosmo] ℓ=1e-08: |ε| per Hubble time >= 9.91e+28 J/m^3 (38.3 decades above ρ_Λc^2)
+    [H-cosmo] ℓ=1e-05: |ε| per Hubble time >= 9.91e+04 J/m^3 (14.3 decades above ρ_Λc^2)
+    [H-cosmo] any g with g~1 up to k_N=1/(52um) (ISL): |ε| >= 2.90e-03 J/m^3 (6.7 decades above)
+    check ∫k|g| at ℓ=1e-8: numeric 1.0132e+31 vs 1/(π^2 ℓ^4) 1.0132e+31
+[9] Gaussian metric record: -ln BC = (t/8)∫|g Δm|^2/P_J  <=  (t/2)∫ D0 |Δm|^2 = Γ t  (so V = e^{-Γt} <= BC)
+    max(-ln BC)/(Γt) over random kernels obeying CP: 0.708309 (<= 1; = 1 at saturation)
+[10] OSSW 2022 F8-F10 treat a nucleus's interior field (G rho r_N)^2 as uniform over V_b; F6 with a delta kernel gives sigma_a^2=(48pi/5)G^2 D2/(R T) (uniform sphere)
+     per-D2 sigma_a^2: OSSW 2.54e+25 vs direct 2.69e-20 (ratio 9.4e+44); corrected torsion bound D2 <= 3.72e+05 kg^2 s m^-3 (OSSW: 1e-41)

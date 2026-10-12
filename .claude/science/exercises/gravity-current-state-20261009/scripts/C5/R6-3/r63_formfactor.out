@@ -1,0 +1,15 @@
+== closed forms vs direct quadrature (relative error) ==
+  D: max rel err over 12 random (w,k) = 1.67e-07
+  P: max rel err over 12 random (w,k) = 5.80e-07
+  D at rest limit k->0,w=0: 0.130795 vs vol pi/24 = 0.130900
+  P at k->0,w->0: 1.194690 vs vol pi/3 = 1.047198
+== phase-averaged tail forms vs exact, averaged over a fast-phase window ==
+  D (w,k)=(3000.5,3000.0): <exact>=1.504362e-14  avg-form=1.504847e-14  ratio=1.00032
+  D (w,k)=(5000.0,4990.0): <exact>=4.555748e-16  avg-form=4.553567e-16  ratio=0.99952
+  D (w,k)=(2000.0,2010.0): <exact>=1.729306e-14  avg-form=1.730989e-14  ratio=1.00097
+  D (w,k)=(4000.0,3000.0): <exact>=1.780368e-19  avg-form=1.779436e-19  ratio=0.99948
+  P (w,k)=(3000.5,3000.0): <exact>=1.191524e-13  avg-form=1.191523e-13  ratio=1.00000
+  P (w,k)=(5000.0,4990.0): <exact>=7.255430e-16  avg-form=7.255438e-16  ratio=1.00000
+  P (w,k)=(2000.0,2010.0): <exact>=2.738667e-14  avg-form=2.738683e-14  ratio=1.00001
+  P (w,k)=(4000.0,3000.0): <exact>=4.926532e-19  avg-form=4.925744e-19  ratio=0.99984
+elapsed 0.0 s

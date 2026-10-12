@@ -1,0 +1,19 @@
+species c=1.0 m=0.3: rel. residual (E) J_E=c^2 P: 1.09e-10 ; (E) with J_E=P: 1.09e-10 ; (M) symmetric T: 2.71e-11
+species c=1.3 m=1.1: rel. residual (E) J_E=c^2 P: 2.48e-10 ; (E) with J_E=P: 4.08e-01 ; (M) symmetric T: 1.55e-11
+species c=0.7 m=0.0: rel. residual (E) J_E=c^2 P: 1.16e-10 ; (E) with J_E=P: 1.04e+00 ; (M) symmetric T: 5.30e-11
+
+Linear observables (units: n = lapse perturbation of the source's field):
+ c_g^2=Jg=1.0: species (c=1.0, m=0.3, a=1.0): rest redshift dω/ω = 1.000000 n ; free-fall accel = 1.0000 (-grad n) ; ray dω/ω = 2.000000 n ; gamma_s = 1.000000 (c_s^2/c_g^2 = 1.000000)
+ c_g^2=Jg=1.0: species (c=1.3, m=1.1, a=1.0): rest redshift dω/ω = 1.000000 n ; free-fall accel = 1.6900 (-grad n) ; ray dω/ω = 2.690000 n ; gamma_s = 1.690000 (c_s^2/c_g^2 = 1.690000)
+ c_g^2=Jg=1.0: species (c=1.0, m=1.1, a=1.0): rest redshift dω/ω = 1.000000 n ; free-fall accel = 1.0000 (-grad n) ; ray dω/ω = 2.000000 n ; gamma_s = 1.000000 (c_s^2/c_g^2 = 1.000000)
+ c_g^2=Jg=1.0: species (c=1.0, m=1.1, a=0.8): rest redshift dω/ω = 0.800000 n ; free-fall accel = 0.8000 (-grad n) ; ray dω/ω = 1.600000 n ; gamma_s = 1.000000 (c_s^2/c_g^2 = 1.000000)
+ c_g^2=Jg=1.21: species (c=1.0, m=0.3, a=1.0): rest redshift dω/ω = 1.000000 n ; free-fall accel = 1.0000 (-grad n) ; ray dω/ω = 1.826446 n ; gamma_s = 0.826446 (c_s^2/c_g^2 = 0.826446)
+ c_g^2=Jg=1.21: species (c=1.3, m=1.1, a=1.0): rest redshift dω/ω = 1.000000 n ; free-fall accel = 1.6900 (-grad n) ; ray dω/ω = 2.396694 n ; gamma_s = 1.396694 (c_s^2/c_g^2 = 1.396694)
+ c_g^2=Jg=1.21: species (c=1.0, m=1.1, a=1.0): rest redshift dω/ω = 1.000000 n ; free-fall accel = 1.0000 (-grad n) ; ray dω/ω = 1.826446 n ; gamma_s = 0.826446 (c_s^2/c_g^2 = 0.826446)
+ c_g^2=Jg=1.21: species (c=1.0, m=1.1, a=0.8): rest redshift dω/ω = 0.800000 n ; free-fall accel = 0.8000 (-grad n) ; ray dω/ω = 1.461157 n ; gamma_s = 0.826446 (c_s^2/c_g^2 = 0.826446)
+
+EP (free-fall) needs a_A c_A^2 = a_B c_B^2 ; LPI (redshift) needs a_A = a_B ; gamma = 1 needs c_s = c_g.
+Example Eotvos parameter for c_A=1, c_B=1.3, a_A=a_B: eta = 0.690
+ ray response at |k|=0.05 dir [1, 0, 0]: gamma_eff-1 = -6.249e-04
+ ray response at |k|=0.05 dir [1, 1, 0]: gamma_eff-1 = -3.125e-04
+ ray response at |k|=0.05 dir [1, 1, 1]: gamma_eff-1 = -2.083e-04

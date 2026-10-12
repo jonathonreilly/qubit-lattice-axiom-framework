@@ -1,0 +1,32 @@
+(A) max |s(k)-k| on |k|<=B : 4.440892098500626e-16
+(A) max |eps - sqrt(m^2+k^2)| on box : 8.881784197001252e-16
+(A) anomaly (s s')' - 1: max|.| on box = 1.77e-07 ; zone mean = -1.000000 (theory -1) ; min/max outside = -33.024 / 19.768
+(A) s'(k) (the "cos k factor") on box: max|s'-1| = 0.00e+00; at zone edge s'(pi) = -1.0000
+(B) |s kernel|(r) for r = 1, 8, 32, 64, 128, 256, 512: ['8.68e-01', '1.05e-02', '1.38e-04', '9.04e-08', '8.42e-09', '2.96e-12', '6.10e-17']
+(B) eps kernel, B = 2.0, transition to 3.1
+(B) |eps kernel|(r,0) for r = 1, 8, 32, 64, 128, 256, 512: ['1.40e-01', '2.09e-02', '1.96e-05', '2.84e-07', '1.92e-09', '1.22e-12', '0.00e+00']
+(B) |eps kernel|(r,r) for r = 1, 8, 32, 64, 128, 256: ['8.80e-03', '3.14e-04', '6.94e-08', '1.30e-11', '5.93e-18', '4.88e-19']
+(B) stretched-exp fit to |s kernel| (rough; envelope oscillates): beta = 0.43, a = 2.680
+(C) inside box, k0=(0.4,-0.3), sig_k=0.12            box    [Kx,Px]-iH=4.8e-14  [Kx,Py]=2.5e-14  [Kx,H]-iPx=4.1e-14  [Ky,H]-iPy=6.3e-14  [Kx,Ky]+iJ=1.7e-12  [Kx,Ky]-iJ=5.9e+00  [J,Kx]-iKy=6.1e-12  [J,Kx]+iKy=7.0e+00  [J,Px]-iPy=7.0e-14  [J,Px]+iPy=6.2e-01  [J,H]=8.5e-14  [Px,H]=3.5e-16  scale ||Kx v||=3.5e+00
+(C) inside box, k0=(0.4,-0.3), sig_k=0.12            cosKG  [Kx,Px]-iH=5.6e-02  [Kx,Py]=2.4e-14  [Kx,H]-iPx=4.5e-14  [Ky,H]-iPy=7.3e-14  [Kx,Ky]+iJ=1.3e-12  [Kx,Ky]-iJ=5.7e+00  [J,Kx]-iKy=3.3e-01  [J,Kx]+iKy=6.7e+00  [J,Px]-iPy=2.7e-02  [J,Px]+iPy=5.9e-01  [J,H]=3.4e-14  [Px,H]=3.0e-16  scale ||Kx v||=3.5e+00
+(C)    packet weight within 32 sites of the seam: 2.9e-16 ; momentum weight outside the box: 2.5e-16
+(C) inside box, fast k0=(1.4,0.3), sig_k=0.08        box    [Kx,Px]-iH=1.6e-13  [Kx,Py]=4.3e-14  [Kx,H]-iPx=1.1e-13  [Ky,H]-iPy=9.9e-14  [Kx,Ky]+iJ=1.9e-12  [Kx,Ky]-iJ=2.5e+01  [J,Kx]-iKy=1.3e-11  [J,Kx]+iKy=2.6e+01  [J,Px]-iPy=1.4e-13  [J,Px]+iPy=6.1e-01  [J,H]=1.6e-13  [Px,H]=1.3e-15  scale ||Kx v||=1.3e+01
+(C) inside box, fast k0=(1.4,0.3), sig_k=0.08        cosKG  [Kx,Px]-iH=1.1e+00  [Kx,Py]=3.2e-14  [Kx,H]-iPx=9.4e-14  [Ky,H]-iPy=1.0e-13  [Kx,Ky]+iJ=1.5e-12  [Kx,Ky]-iJ=1.8e+01  [J,Kx]-iKy=1.0e+01  [J,Kx]+iKy=1.4e+01  [J,Px]-iPy=2.5e-01  [J,Px]+iPy=3.5e-01  [J,H]=7.1e-14  [Px,H]=9.1e-16  scale ||Kx v||=1.2e+01
+(C)    packet weight within 32 sites of the seam: 9.0e-16 ; momentum weight outside the box: 1.8e-13
+(C) straddles box edge, k0=(2.0,0), sig_k=0.1        box    [Kx,Px]-iH=1.2e-01  [Kx,Py]=4.8e-14  [Kx,H]-iPx=1.2e-01  [Ky,H]-iPy=1.5e-13  [Kx,Ky]+iJ=1.5e-07  [Kx,Ky]-iJ=2.8e+01  [J,Kx]-iKy=4.4e+01  [J,Kx]+iKy=4.7e+01  [J,Px]-iPy=4.0e-03  [J,Px]+iPy=1.4e-01  [J,H]=7.3e-10  [Px,H]=2.1e-15  scale ||Kx v||=1.4e+01
+(C) straddles box edge, k0=(2.0,0), sig_k=0.1        cosKG  [Kx,Px]-iH=2.4e+00  [Kx,Py]=2.3e-14  [Kx,H]-iPx=1.1e-13  [Ky,H]-iPy=1.2e-13  [Kx,Ky]+iJ=1.5e-12  [Kx,Ky]-iJ=1.3e+01  [J,Kx]-iKy=1.7e+01  [J,Kx]+iKy=7.1e+00  [J,Px]-iPy=1.0e-01  [J,Px]+iPy=4.2e-02  [J,H]=8.1e-14  [Px,H]=9.2e-16  scale ||Kx v||=1.2e+01
+(C)    packet weight within 32 sites of the seam: 6.6e-16 ; momentum weight outside the box: 7.3e-01
+(C) outside box (zone edge), k0=(2.9,2.9), sig_k=0.08 box    [Kx,Px]-iH=1.9e+00  [Kx,Py]=2.6e-14  [Kx,H]-iPx=1.2e+00  [Ky,H]-iPy=1.2e+00  [Kx,Ky]+iJ=6.7e-09  [Kx,Ky]-iJ=1.9e+01  [J,Kx]-iKy=5.6e+01  [J,Kx]+iKy=6.5e+01  [J,Px]-iPy=1.8e+00  [J,Px]+iPy=2.4e+00  [J,H]=1.3e-09  [Px,H]=3.1e-16  scale ||Kx v||=4.9e+00
+(C) outside box (zone edge), k0=(2.9,2.9), sig_k=0.08 cosKG  [Kx,Px]-iH=5.6e+00  [Kx,Py]=4.6e-14  [Kx,H]-iPx=2.8e-13  [Ky,H]-iPy=2.6e-13  [Kx,Ky]+iJ=3.5e-12  [Kx,Ky]-iJ=6.0e+00  [J,Kx]-iKy=4.9e+01  [J,Kx]+iKy=8.3e-01  [J,Px]-iPy=4.8e-01  [J,Px]+iPy=8.2e-03  [J,H]=9.2e-14  [Px,H]=7.1e-16  scale ||Kx v||=2.5e+01
+(C)    packet weight within 32 sites of the seam: 3.3e-16 ; momentum weight outside the box: 1.0e+00
+(D) Gaussian packet at rest, sigma_k = 0.25, m = 0.30, box B = 2.00
+(D) eta = 0.5 : ||U_lat psi - U_cont psi|| = 1.28e-05   bound 2||1_E psi|| = 1.94e-03
+(D) eta = 1.0 : ||U_lat psi - U_cont psi|| = 5.84e-03   bound 2||1_E psi|| = 1.09e-01
+(D) eta = 1.5 : ||U_lat psi - U_cont psi|| = 9.38e-02   bound 2||1_E psi|| = 5.48e-01
+(D) eta = 2.0 : ||U_lat psi - U_cont psi|| = 3.45e-01   bound 2||1_E psi|| = 1.09e+00
+(D) compact-support statement: a packet with momenta in |k_x| <= k_max, |k_y| <= k_max has zero leakage for
+    |eta| <= asinh(B/m_perp) - asinh(k_max/m_perp), m_perp = sqrt(m^2 + k_max^2)  (exact; no numerics needed)
+(D) rapidity reach at rest for electron : asinh(B E_P / m) = 52.9
+(D) rapidity reach at rest for proton   : asinh(B E_P / m) = 45.4
+(D) rapidity reach at rest for top      : asinh(B E_P / m) = 40.2
+(D) a 3e20 eV proton in the lattice frame has rapidity 27.2; remaining budget 18.2

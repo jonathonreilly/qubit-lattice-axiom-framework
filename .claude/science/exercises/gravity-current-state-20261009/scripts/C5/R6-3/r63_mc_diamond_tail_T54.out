@@ -1,0 +1,1 @@
+diamond T=54 frames=1500 x 24: mean Var_u/T^2 = 0.7371 +- 0.0181 ; median = 0.6685 ; q99 = 1.8749 ; max = 19.922 ; top-1% share = 0.06 (115 s)

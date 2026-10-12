@@ -1,0 +1,29 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R6-3/scripts/r63_misc.py:13: RuntimeWarning: divide by zero encountered in divide
+  def g(b): return np.minimum(1/8, 1/np.abs(b))
+(1) bound check on 2e5 random (w,k) in [0.01, 3e3]^2:
+    max |D^|^2 / B1 = 0.9822 ; max over w<=k/2 of |D^|^2/(64pi/k^3)^2 = 0.0129
+    m= 6.4e+01 tl  J_bound*m^2/(1+ln m) =   681.75   J_exact*m^2/(1+ln m) =   211.05
+    m= 6.4e+01 sl  J_bound*m^2/(1+ln m) =  5701.18   J_exact*m^2/(1+ln m) =   450.25
+    m= 1.0e+03 tl  J_bound*m^2/(1+ln m) =  1887.96   J_exact*m^2/(1+ln m) =   350.38
+    m= 1.0e+03 sl  J_bound*m^2/(1+ln m) = 16712.65   J_exact*m^2/(1+ln m) =   352.61
+    m= 1.0e+05 tl  J_bound*m^2/(1+ln m) =  2649.75   J_exact*m^2/(1+ln m) =   407.55
+    m= 1.0e+05 sl  J_bound*m^2/(1+ln m) = 12057.21   J_exact*m^2/(1+ln m) =   413.07
+    m= 1.0e+07 tl  J_bound*m^2/(1+ln m) =  3004.57   J_exact*m^2/(1+ln m) =   431.42
+    m= 1.0e+07 sl  J_bound*m^2/(1+ln m) =  9881.48   J_exact*m^2/(1+ln m) =   432.54
+(2) null vectors of isotropic Z^4: N0(X) = #{n in Z^4\0: n1^2+n2^2+n3^2 = n0^2, |n0| <= X}
+    X=  100  N0=     54432  N0/mu0(|q0|<=X) = 0.86631
+    X=  200  N0=    215088  N0/mu0(|q0|<=X) = 0.85581
+    X=  400  N0=    863568  N0/mu0(|q0|<=X) = 0.85901
+    X=  800  N0=   3445008  N0/mu0(|q0|<=X) = 0.85670
+    X= 1500  N0=  12127392  N0/mu0(|q0|<=X) = 0.85784
+    density b = 0.02173 per unit mu0 (in q units); J_D(0) = 1.9379 ; rho = 1 :  Var N(D_T) >= b J_D(0) T^6 = 0.0421 T^6
+(3) fits Var/(rho V) = F + (a + b ln T)/T^2 to exact Haar values
+asymptotic forms used beyond |M| = 1e8:
+  diamond  J = (16 pi^3 ln|M| + B)/M^2 , B_tl = -611.1, B_sl = -611.8
+  pastcone J_tl = (2pi)^3 (4pi/3) |M|^-1.5 + (992.3 ln|M| + -848.1)/M^2 ; J_sl = (992.0 ln|M| + -836.2)/M^2
+    T in [np.int64(13), np.int64(27), np.int64(54), np.int64(108)]: F + (a+b lnT)/T^2 -> F = -3.29e-05 ; F + A/T^2 -> F = 1.97e-03
+    T in [np.int64(13), np.int64(27), np.int64(54), np.int64(108), np.int64(216), np.int64(432), np.int64(1000), np.int64(3000), np.int64(10000)]: F + (a+b lnT)/T^2 -> F = -6.65e-06 ; F + A/T^2 -> F = 6.76e-04
+(4) Lambda under R4-5 premises (kappa_u = 1, rho = lbar_P^-4, V = V_lc = 6.3894e242 l_P^4)
+    past cone (flat base): T = 1.264e+60 a, Var/(rho V) = 9.686e-61  ->  dLambda/Lambda_obs = 1.41e+30
+    diamond of equal 4-volume: T = 2.126e+60 a, Var/(rho V) = 1.038e-118  ->  dLambda/Lambda_obs = 1.36e+59
+    epoch scaling: dLambda ~ rho/sqrt(Var) ~ T^-1.5 (cone), ~ 1/(T sqrt(ln T)) (diamond), vs H^2 ~ T^-2

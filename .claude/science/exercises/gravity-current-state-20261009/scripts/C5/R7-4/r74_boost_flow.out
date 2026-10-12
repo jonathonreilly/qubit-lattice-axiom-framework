@@ -1,0 +1,45 @@
+NON-FORWARD configurations
+  CONT: initial |E_in-E_out| max 4.4e-16; configs leaving the shell: 0/12; s_box range 0.38 - 1.38; s_off range nan - nan; max|dE| over run: 3.725e-09
+     sample: s_box=0.8420000000000006, s_off=None, max|dE|=2.605e-09
+     sample: s_box=0.3880000000000003, s_off=None, max|dE|=3.492e-10
+     sample: s_box=0.8700000000000007, s_off=None, max|dE|=1.601e-10
+  SLAC: initial |E_in-E_out| max 4.4e-16; configs leaving the shell: 12/12; s_box range 0.282 - 1.82; s_off range 0.922 - 2.47; max|dE| over run: 3.332e+00
+     sample: s_box=0.5860000000000004, s_off=1.2320000000000009, max|dE|=3.282e+00
+     sample: s_box=0.6180000000000004, s_off=1.2460000000000009, max|dE|=3.260e+00
+     sample: s_box=0.33600000000000024, s_off=0.9820000000000008, max|dE|=2.126e+00
+  SMTH: initial |E_in-E_out| max 2.0e-10; configs leaving the shell: 12/12; s_box range 0.34 - 1.69; s_off range 0.554 - 1.91; max|dE| over run: 2.050e+00
+     sample: s_box=0.4200000000000003, s_off=0.6360000000000005, max|dE|=8.451e-01
+     sample: s_box=0.4940000000000004, s_off=0.7160000000000005, max|dE|=2.050e+00
+     sample: s_box=1.6900000000000013, s_off=1.9080000000000015, max|dE|=3.679e-01
+FORWARD control (out = permuted in)
+  CONT: initial |E_in-E_out| max 2.2e-16; configs leaving the shell: 0/4; s_box range 0.992 - 1.18; s_off range nan - nan; max|dE| over run: 1.455e-11
+     sample: s_box=0.9920000000000008, s_off=None, max|dE|=1.455e-11
+     sample: s_box=1.1820000000000008, s_off=None, max|dE|=1.455e-11
+     sample: s_box=1.0600000000000007, s_off=None, max|dE|=1.455e-11
+  SLAC: initial |E_in-E_out| max 2.2e-16; configs leaving the shell: 0/4; s_box range 0.362 - 1.08; s_off range nan - nan; max|dE| over run: 4.441e-16
+     sample: s_box=0.36200000000000027, s_off=None, max|dE|=4.441e-16
+     sample: s_box=0.3900000000000003, s_off=None, max|dE|=4.441e-16
+     sample: s_box=1.0840000000000007, s_off=None, max|dE|=4.441e-16
+  SMTH: initial |E_in-E_out| max 2.2e-16; configs leaving the shell: 0/4; s_box range 0.372 - 1.34; s_off range nan - nan; max|dE| over run: 4.441e-16
+     sample: s_box=0.3720000000000003, s_off=None, max|dE|=4.441e-16
+     sample: s_box=1.0040000000000007, s_off=None, max|dE|=4.441e-16
+     sample: s_box=1.336000000000001, s_off=None, max|dE|=4.441e-16
+
+Special non-forward CM-reflection (a1,a2),(-a1,-a2) -> (a1,-a2),(-a1,a2), a=(0.7,0.4): flows along n
+  CONT n=(1.000,0.000): s_box=0.5440000000000004, s_off=None, max|dE|=1.455e-11
+  CONT n=(0.000,1.000): s_box=0.7340000000000005, s_off=None, max|dE|=2.910e-11
+  CONT n=(0.707,0.707): s_box=0.7080000000000005, s_off=None, max|dE|=8.571e-09
+  CONT n=(0.955,0.296): s_box=0.5580000000000004, s_off=None, max|dE|=5.894e-09
+  SLAC n=(1.000,0.000): s_box=0.5440000000000004, s_off=None, max|dE|=4.441e-16
+  SLAC n=(0.000,1.000): s_box=0.7340000000000005, s_off=None, max|dE|=4.441e-16
+  SLAC n=(0.707,0.707): s_box=0.7080000000000005, s_off=1.426000000000001, max|dE|=3.147e+00
+  SLAC n=(0.955,0.296): s_box=0.5580000000000004, s_off=1.1940000000000008, max|dE|=3.011e+00
+  SMTH n=(1.000,0.000): s_box=0.5440000000000004, s_off=None, max|dE|=3.952e-14
+  SMTH n=(0.000,1.000): s_box=0.7340000000000005, s_off=None, max|dE|=5.063e-14
+  SMTH n=(0.707,0.707): s_box=0.7080000000000005, s_off=0.9660000000000007, max|dE|=2.445e+00
+  SMTH n=(0.955,0.296): s_box=0.5580000000000004, s_off=0.7800000000000006, max|dE|=2.126e+00
+
+Random non-forward configs, random boost direction n:
+  CONT: leave shell 0/8
+  SLAC: leave shell 8/8
+  SMTH: leave shell 8/8

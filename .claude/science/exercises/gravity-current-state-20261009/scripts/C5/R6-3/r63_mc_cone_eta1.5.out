@@ -1,0 +1,5 @@
+eta_max=1.5 T= 13 n=1500 <N>/rhoV=1.000078 Var/T^3=1.9728 +- 1.3477 Var/rhoV=3.834e-01 (1 s)
+eta_max=1.5 T= 27 n=1500 <N>/rhoV=0.999996 Var/T^3=0.1652 +- 0.0386 Var/rhoV=1.546e-02 (6 s)
+eta_max=1.5 T= 54 n=1000 <N>/rhoV=1.000000 Var/T^3=0.1169 +- 0.0276 Var/rhoV=5.472e-03 (25 s)
+eta_max=1.5 T=108 n=600 <N>/rhoV=0.999999 Var/T^3=0.2372 +- 0.2040 Var/rhoV=5.549e-03 (120 s)
+eta_max=1.5 T=216 n=200 <N>/rhoV=1.000000 Var/T^3=0.0234 +- 0.0110 Var/rhoV=2.738e-04 (759 s)

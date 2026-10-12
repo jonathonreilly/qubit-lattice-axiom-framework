@@ -1,0 +1,51 @@
+=== 1. Regular hyperbolic honeycombs {p,q,r}: edge length in curvature units ===
+{4,3,4}: Gram eigen-signature 0+++ (Euclidean, degenerate) -> Z^3, edge free
+{5,3,4}: signature -+++; vertex figure {3,4} -> 6 neighbours/site; edge length a = 1.061275 * (curvature radius)
+{4,3,5}: signature -+++; vertex figure {3,5} -> 12 neighbours/site; edge length a = 1.616922 * (curvature radius)
+{3,5,3}: signature -+++; vertex figure {5,3} -> 20 neighbours/site; edge length a = 1.736596 * (curvature radius)
+{5,3,5}: signature -+++; vertex figure {3,5} -> 12 neighbours/site; edge length a = 1.992769 * (curvature radius)
+
+Z^3 = {4,3,4} has vertex figure {3,4} (octahedron, 6 neighbours, site stabilizer O_h).
+{5,3,4} has the SAME vertex figure {3,4}: 6 neighbours, octahedral site stabilizer;
+its cells are dodecahedra, 4 around each edge.  It has no translation subgroup Z^3.
+
+Lambda_obs = 3 H0^2 Omega_L / c^2 = 1.0891e-52 m^-2 ; Lambda*lP^2 = 2.8451e-122
+
+{5,3,4} at edge = l_P: curvature radius = 1.523e-35 m; as an AdS4 bulk Lambda = -1.293e+70 m^-2 = -1.188e+122 x Lambda_obs (wrong sign, |ratio| 10^122.1)
+  spatial-curvature bound |Omega_K| < 0.002: curvature radius > 3.071e+27 m; {5,3,4} at l_P misses it by 10^62.3 in radius
+  spatial-curvature bound |Omega_K| < 0.005: curvature radius > 1.942e+27 m; {5,3,4} at l_P misses it by 10^62.1 in radius
+  DESI DR2 (TESTS:2993): 10^3 Omega_K = 2.3 +- 1.1 -> same order.
+
+=== 2. de Sitter entropy, N-bound, qubit counts ===
+R_dS = sqrt(3/Lambda) = 1.6597e+26 m ; R/l_P = 1.0269e+61
+S_dS = 3 pi/(Lambda l_P^2) = 3.3126e+122 nats ; qubits N_q = S/ln2 = 4.7791e+122
+check: 3*pi/(Lam lP^2) = 3.3126e+122
+area per qubit on the horizon: A/N_q = 4 ln2 l_P^2 = 2.7726 l_P^2 -> spacing 1.6651 l_P
+Planck-spaced Z^3 sites in the static patch: V/l_P^3 = 4.5355e+183 ; ratio to N_q = 10^60.98
+N-bound on a volume-filling qubit lattice: a >= (V/N_q)^(1/3) = 3.422e-15 m (= 3.42 fm)
+  compare collider contact/locality bound ~1e-19 m (TESTS X1: ~4e-20 m): excluded by >= 4 decades
+Bousso/AXIOM_FIRST_BEKENSTEIN note C3 writes S_dS = pi/(G Lambda); correct 4D value is 3 pi/(G Lambda): pi/(Lam lP^2) = 1.1042e+122 vs 3.3126e+122
+
+=== 3. CKN (Cohen-Kaplan-Nelson) cutoffs with L = c/H0 ===
+entropy form  L^3 Lam_UV^3 < (L M_P)^2 : Lam_UV < 5.983e-02 GeV (length 3.30e-15 m)
+BH form       L^3 Lam_UV^4 < L M_P^2   : Lam_UV < 4.188e-12 GeV = 4.19 meV
+  CKN rho ~ Lam_UV^4 = 3.077e-46 GeV^4 ; observed rho_Lambda = 2.515e-47 GeV^4 ; ratio 12.24
+
+=== 4. Count restatements of Lambda's size ===
+R4-5 past-cone 4-volume V4 = 6.389e+242 l_P^4 ; 1/sqrt(V4) = 3.956e-122 ; Lambda l_P^2 = 2.845e-122
+S_dS = 3.313e+122 ; sqrt(V4) = 2.528e+121 ; ratio S/sqrt(V4) = 13.11
+(l_dS/l_P)^2 = 1.054e+122  [dS/CFT: |c_T| ~ l^2/G ~ N]
+
+=== 5. dS4/CFT3 weights Delta = 3/2 +- sqrt(9/4 - m^2 l^2) ===
+complex (principal-series) weights for m > 3/(2 l_dS): m_th c^2 = 1.783e-33 eV
+  nu (0.05 eV): m l_dS = 4.205e+31 -> Im Delta = 4.205e+31
+  electron    : m l_dS = 4.298e+38 -> Im Delta = 4.298e+38
+  proton      : m l_dS = 7.892e+41 -> Im Delta = 7.892e+41
+  Higgs       : m l_dS = 1.053e+44 -> Im Delta = 1.053e+44
+
+=== 6. Propagating graviton polarizations D(D-3)/2 ===
+  D = 2: 0 (formula -1)
+  D = 3: 0 (formula 0)
+  D = 4: 2 (formula 2)
+  D = 5: 5 (formula 5)
+Explicit HaPPY ({5,4} tiling: AdS3), DSSYK (dS2/dS3), TT-bar+Lambda2 (dS3) all sit at D <= 3: no gravitational waves.

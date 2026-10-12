@@ -1,0 +1,40 @@
+asymptotic forms used beyond |M| = 1e8:
+  diamond  J = (16 pi^3 ln|M| + B)/M^2 , B_tl = -611.1, B_sl = -611.8
+  pastcone J_tl = (2pi)^3 (4pi/3) |M|^-1.5 + (992.3 ln|M| + -848.1)/M^2 ; J_sl = (992.0 ln|M| + -836.2)/M^2
+
+== diamonds: exact Haar average (Siegel shell sum) vs R4-5 Monte Carlo (ball-averaged frames) ==
+   T     Var        Var/(rho V)     Var/T^2   [R4-5 MC Var/T^2: eta_max 1.5, 3.0 (+-4..9%)]
+     6  1.3034e+01  2.0328e-01    0.3621
+     9  3.5503e+01  1.0937e-01    0.4383
+    13  8.5393e+01  6.0431e-02    0.5053   MC: 0.518, 0.592
+    19  2.0633e+02  3.2000e-02    0.5715
+    27  4.6153e+02  1.7553e-02    0.6331   MC: 0.646, 0.631
+    38  9.9681e+02  9.6625e-03    0.6903
+    54  2.1839e+03  5.1911e-03    0.7489   MC: 0.719, 0.778
+    76  4.6592e+03  2.8227e-03    0.8066
+   108  1.0089e+04  1.4989e-03    0.8650   MC: 0.880, 0.825
+
+== asymptotics (diamonds): Var / (T^2 ln T) and Var/T^2 ==
+   predicted leading law Var ~ 2*16pi^3 rho^2 [sum_t C*_t/(c t)^2] T^2 ln T = 0.16651 T^2 ln T
+   T= 1.0e+02  Var/T^2=    0.8521  Var/(T^2 lnT)= 0.18503  Var/(rho V)=1.722e-03
+   T= 1.0e+03  Var/T^2=    1.2354  Var/(T^2 lnT)= 0.17885  Var/(rho V)=2.497e-05
+   T= 1.0e+04  Var/T^2=    1.6189  Var/(T^2 lnT)= 0.17577  Var/(rho V)=3.272e-07
+   T= 1.0e+05  Var/T^2=    2.0024  Var/(T^2 lnT)= 0.17392  Var/(rho V)=4.047e-09
+   T= 1.0e+06  Var/T^2=    2.3858  Var/(T^2 lnT)= 0.17269  Var/(rho V)=4.822e-11
+   T= 1.0e+08  Var/T^2=    3.1527  Var/(T^2 lnT)= 0.17115  Var/(rho V)=6.372e-15
+   T= 1.0e+12  Var/T^2=    4.6865  Var/(T^2 lnT)= 0.16961  Var/(rho V)=9.472e-23
+   T= 1.0e+30  Var/T^2=   11.5885  Var/(T^2 lnT)= 0.16776  Var/(rho V)=2.342e-58
+   T= 5.0e+60  Var/T^2=   23.3600  Var/(T^2 lnT)= 0.16714  Var/(rho V)=1.889e-119
+
+== truncated past cones (flat spacelike base) ==
+   predicted leading law Var ~ (2pi)^3|B_1| rho^2 sum_{t<0} C*_t/(c|t|)^1.5 T^3 = 0.48137 T^3
+   T= 1.3e+01  Var=1.2438e+03  Var/T^3= 0.56614  Var/(rho V)=1.100e-01
+   T= 2.7e+01  Var=1.0502e+04  Var/T^3= 0.53357  Var/(rho V)=4.993e-02
+   T= 5.4e+01  Var=8.0870e+04  Var/T^3= 0.51358  Var/(rho V)=2.403e-02
+   T= 1.1e+02  Var=6.3152e+05  Var/T^3= 0.50132  Var/(rho V)=1.173e-02
+   T= 1.0e+03  Var=4.8726e+08  Var/T^3= 0.48726  Var/(rho V)=1.231e-03
+   T= 1.0e+04  Var=4.8506e+11  Var/T^3= 0.48506  Var/(rho V)=1.226e-04
+   T= 1.0e+06  Var=4.8473e+17  Var/T^3= 0.48473  Var/(rho V)=1.225e-06
+   T= 1.0e+08  Var=4.8473e+23  Var/T^3= 0.48473  Var/(rho V)=1.225e-08
+   T= 1.0e+12  Var=4.8473e+35  Var/T^3= 0.48473  Var/(rho V)=1.225e-12
+   T= 5.0e+60  Var=6.0591e+181  Var/T^3= 0.48473  Var/(rho V)=2.449e-61

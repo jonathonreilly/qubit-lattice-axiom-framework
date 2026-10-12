@@ -1,0 +1,10 @@
+paths b=(2.0,3.0) c=(2.0,3.0) E=(None,None) N=96 m=0.2 | P_E*U=20.5819 | staircase P_M*U=48.2199 dc_g*U=+13.8190 | straight P_M*U=48.2199 dc_g*U=+13.8190 | path shift of dc_g*U = -0.0000
+paths b=(2.0,3.0) c=(2.0,3.0) E=(None,None) N=128 m=0.2 | P_E*U=20.5819 | staircase P_M*U=48.1932 dc_g*U=+13.8057 | straight P_M*U=48.1932 dc_g*U=+13.8057 | path shift of dc_g*U = -0.0000
+paths b=(2.0,3.0) c=(2.0,3.0) E=(1.0,1.8) N=96 m=0.2 | P_E*U=12.0418 | staircase P_M*U=137.5333 dc_g*U=+62.7458 | straight P_M*U=19.2939 dc_g*U=+3.6260 | path shift of dc_g*U = -59.1197
+paths b=(2.0,3.0) c=(2.0,3.0) E=(1.0,1.8) N=128 m=0.2 | P_E*U=12.0418 | staircase P_M*U=137.5344 dc_g*U=+62.7463 | straight P_M*U=19.2940 dc_g*U=+3.6261 | path shift of dc_g*U = -59.1202
+paths b=(2.0,3.0) c=(2.0,3.0) E=(0.5,1.9) N=96 m=0.2 | P_E*U=7.4721 | staircase P_M*U=28.7941 dc_g*U=+10.6610 | straight P_M*U=10.8459 dc_g*U=+1.6869 | path shift of dc_g*U = -8.9741
+paths b=(2.0,3.0) c=(2.0,3.0) E=(0.5,1.9) N=128 m=0.2 | P_E*U=7.4721 | staircase P_M*U=28.7942 dc_g*U=+10.6610 | straight P_M*U=10.8459 dc_g*U=+1.6869 | path shift of dc_g*U = -8.9741
+paths b=(2.0,3.0) c=(2.0,3.0) E=(0.6,1.4) N=96 m=0.2 | P_E*U=8.2728 | staircase P_M*U=54.0904 dc_g*U=+22.9088 | straight P_M*U=12.7022 dc_g*U=+2.2147 | path shift of dc_g*U = -20.6941
+paths b=(2.0,3.0) c=(2.0,3.0) E=(0.6,1.4) N=128 m=0.2 | P_E*U=8.2728 | staircase P_M*U=54.0919 dc_g*U=+22.9096 | straight P_M*U=12.7026 dc_g*U=+2.2149 | path shift of dc_g*U = -20.6947
+paths b=(2.0,3.0) c=(2.0,3.0) E=(0.3,1.9) N=96 m=0.2 | P_E*U=6.3612 | staircase P_M*U=19.8836 dc_g*U=+6.7612 | straight P_M*U=8.9018 dc_g*U=+1.2703 | path shift of dc_g*U = -5.4909
+paths b=(2.0,3.0) c=(2.0,3.0) E=(0.3,1.9) N=128 m=0.2 | P_E*U=6.3612 | staircase P_M*U=19.8835 dc_g*U=+6.7612 | straight P_M*U=8.9018 dc_g*U=+1.2703 | path shift of dc_g*U = -5.4909

@@ -3936,15 +3936,18 @@ Readings:
 - P2 closes exactly for bosons, but keeps no leg in the box.
 - The residual falls steeply with m/Λ in 1+1D.
 
-**R9-9 (box graviton):** worker reading FAIL (bounded).
-- With pair-creating matter, the TT speed shift c_T² − 1 = (2/M²)Ξ is an average of Theorem E's edge anomaly A_zz:
-  - Ξ < 0 for a gapped edge (proved);
-  - Ξ > 0 for the literal edge (checked).
-- The TT mass split is nonzero for every edge mix.
-- No single edge knob zeroes both the mass and the speed.
-- In the empty-vacuum class PASS is vacuous (no loops).
-
-Referee running (17:34Z).
+**R9-9 (box graviton) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** The class-wide FAIL is not established; it holds only for a narrow prescribed coupling.
+- **The tree level is exact.** The N-type graviton with the smooth non-analytic symbol d(q) gives:
+  - an exact linear constraint algebra;
+  - two TT modes with ω = |q| in the box;
+  - no graviton doubler;
+  - an exact midpoint-phase Ward coupling to R8-2's number-conserving stress.
+- **Theorem T (confirmed).** For pair-creating scalar TT vertices independent of k_z and q, the one-loop paramagnetic coefficient obeys Ξ = ⟨|V|²[Hess_zz(ε²/2) − 1]/ε⁵⟩/32. It is negative for the gapped edge and positive (numerically) for the literal edge. This is a robust graviton-sector speed anomaly carried by Theorem E's edge anomaly.
+- **The narrow FAIL.** The fixed minimal-metric coupling and seagull give a nonzero E_g − T_2g mass split throughout the tested L → G edge family.
+- **Why it is not class-wide:**
+  - the pair-creating stress is not completed to Ward-exact universal coupling;
+  - the seagull is not fixed by a second-order Ward identity, and general ultralocal polarization-dependent seagulls can cancel the mass split;
+  - the dressed matter speed was not computed.
 
 **R9-10 (d = 2 Belinfante box stress):** worker reading PASS WITH SCOPE.
 - A symmetric stress is built via Lemma KB plus a Belinfante curl. Spinning bound bodies fall universally: η ≤ 1.5e-14 at the floor, with η = 0 proved.
@@ -3981,3 +3984,10 @@ Readings:
 - **PASS:** a reflection-positive Euclidean Z⁴ law with box-exact symbols whose graviton needs ≤ 2 tunings (mass plus Λ) at one loop, checked.
 - **FAIL:** a refereed no-go: OS positivity fails for box symbols in a stated class, or the tuning count does not fall.
 - **INCONCLUSIVE:** otherwise.
+
+**R9-8 (non-minimal box QED):** worker reading INCONCLUSIVE, leaning FAIL.
+- Across 17 gauge-invariant ℓ¹ laws, the frame rotations and Wilson-line paths all give a one-loop cone split ≥ 12.9 e²/16π², and every rotated law is worse than plain BQ.
+- Proved: the Ward-fixed q = 0 vertex is the full velocity operator; an INV forward vertex is impossible in the Lemma-C frame family.
+- The Wilson-line path is itself a large lattice-fixed magnetic coupling.
+
+Referee running (17:53Z).

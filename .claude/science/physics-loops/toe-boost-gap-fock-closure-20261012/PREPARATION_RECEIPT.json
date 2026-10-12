@@ -1,0 +1,113 @@
+{
+  "status": "Prepared new files only; no canonical science, cache, graph, vocabulary, audit or publication execution",
+  "base_revision": "3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe",
+  "target_worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree",
+  "pairing": "Same selected model family in separate author/reviewer contexts; the selected model and reasoning effort were preserved. Candidate formulas and reported outcomes were visible before distinct controls, so this was neither blinded nor cross-family checking. Root proposed mechanisms and is a coauthor, not the independent reviewer. The mechanical preparer performed no new scientific review.",
+  "preparation_script_sha256": "3c40c1da8ec9a109641ed3f08e5518340d47a9c03d5674909249b631987bfc2c",
+  "preparation_freeze_sha256": "9e484758a5f0b2713bb7fe436961e4a13825f65206de1626a3d488a81a628d6b",
+  "read_only_git_preconditions": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--show-toplevel"
+      ],
+      "stdout": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "HEAD"
+      ],
+      "stdout": "3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "own_evidence_files": 1231,
+  "external_files_inventoried_not_bundled": 72,
+  "outputs": [
+    {
+      "kind": "note",
+      "publication_path": "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "95f6c72698ea71396aa5f4c18ec9c6f210aebdaa5e73a9c91c2003a3f0651d75",
+      "publication_bytes": 44175
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/microscopic_boost_flow_2026_10_12.py",
+      "publication_sha256": "e06387f3c243810e478e4fb94e55ccf3ec0c2537e69dc985ea2d4bca468d1c72",
+      "publication_bytes": 14151
+    },
+    {
+      "kind": "note",
+      "publication_path": "docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "e020489cad89906f815f2d2fa54cf59e85aa22b307ec5b3b9202febdc203eb0b",
+      "publication_bytes": 44021
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/gapped_boost_invariance_2026_10_12.py",
+      "publication_sha256": "0c20fc35206d2dcd9e906ecc000e7f24abbaef3c930750c59aa5e564138fd625",
+      "publication_bytes": 9630
+    },
+    {
+      "kind": "note",
+      "publication_path": "docs/NONISOLATED_FOCK_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "0c283ba3443ceb71a032810b43f1a788c483a88db685df5fd6cc38918d20c4f0",
+      "publication_bytes": 46415
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/nonisolated_fock_2026_10_12.py",
+      "publication_sha256": "5e5220bea0b63549863b852d880fd1d642652bcb24d54b15009af310ba460dfb",
+      "publication_bytes": 17295
+    },
+    {
+      "kind": "note",
+      "publication_path": "docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "4a733de51af509dbf57205e4bb1418f8aed32f4ea7819931e46e902f3428e91e",
+      "publication_bytes": 35097
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/weighted_current_closure_2026_10_12.py",
+      "publication_sha256": "8b34fb4bf1a0b373403ecf06eca7d1f01b032f40f6b8573ca2c0d3b6de8c60fd",
+      "publication_bytes": 12756
+    },
+    {
+      "kind": "note",
+      "publication_path": "docs/INTEGRATED_BOOST_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "c791d1d7871442253f066348311e81c0b9b8c539cbb7c1c405630d960df639ee",
+      "publication_bytes": 36761
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/integrated_boost_covariance_2026_10_12.py",
+      "publication_sha256": "8dbdc64249c46a3ffb286ff443c7c1c738845dbc09f6d1eda9c5a0112c710b26",
+      "publication_bytes": 8543
+    }
+  ],
+  "syntax_and_exact_anchor_checks_only": true,
+  "mathematical_changes": [],
+  "science_controls_run": false,
+  "git_state_mutated": false,
+  "pr_created_or_updated": false,
+  "editable_prompt_files_changed": [],
+  "root_owns_remaining_work": "Actual canonical/mutation execution, cache raw capture, graph, metadata/link/source manifests, final review and new regular stacked milestone PR"
+}

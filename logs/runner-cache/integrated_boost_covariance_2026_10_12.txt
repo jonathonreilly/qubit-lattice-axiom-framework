@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/integrated_boost_covariance_2026_10_12.py
+runner_sha256: 8dbdc64249c46a3ffb286ff443c7c1c738845dbc09f6d1eda9c5a0112c710b26
+input_fingerprint_sha256: 87f2a4d92aa9e36420c6e93701c7a123e503c187e7a1a412e3aac78b5f26c72c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS f0.r0.energy_shift {"actual": "13/5", "mixed": "13/5"}
+PASS f0.r0.current_shift {"actual": "-24/5", "mixed": "-24/5"}
+PASS f0.r0.mass_invariant {"before": "1", "after": "1"}
+PASS f0.r0.local_lie {"iHB": "-3000/823543", "P_f": "-3000/823543", "iPB": "58000/5764801", "betaH_f": "58000/5764801"}
+PASS f0.r1.energy_shift {"actual": "5/4", "mixed": "5/4"}
+PASS f0.r1.current_shift {"actual": "-3/2", "mixed": "-3/2"}
+PASS f0.r1.mass_invariant {"before": "1", "after": "1"}
+PASS f0.r1.local_lie {"iHB": "0", "P_f": "0", "iPB": "1/64", "betaH_f": "1/64"}
+PASS f0.r2.energy_shift {"actual": "85/84", "mixed": "85/84"}
+PASS f0.r2.current_shift {"actual": "13/42", "mixed": "13/42"}
+PASS f0.r2.mass_invariant {"before": "1", "after": "1"}
+PASS f0.r2.local_lie {"iHB": "9261/2500000", "P_f": "9261/2500000", "iPB": "268569/25000000", "betaH_f": "268569/25000000"}
+PASS f0.unitary_H {"max_abs_error": 2.42434975903054e-19, "tolerance": 1e-11}
+PASS f0.unitary_P {"max_abs_error": 5.838607383087711e-19, "tolerance": 1e-11}
+PASS f0.negative_spatial_clock {"max_abs_error": 2.168404344971009e-19, "tolerance": 1e-11}
+PASS f0.actual_C1_derivative {"energy_residual": 8.343326030058051e-13, "current_residual": 2.7533531010703882e-14, "tolerance": 1e-08, "step": 0.0001}
+PASS f0.boost_group_law {"a": "2", "a2": "5/4"}
+PASS f1.r0.energy_shift {"actual": "65/48", "mixed": "65/48"}
+PASS f1.r0.current_shift {"actual": "-25/32", "mixed": "-25/32"}
+PASS f1.r0.mass_invariant {"before": "25/16", "after": "25/16"}
+PASS f1.r0.local_lie {"iHB": "-5625/1647086", "P_f": "-5625/1647086", "iPB": "163125/23059204", "betaH_f": "163125/23059204"}
+PASS f1.r1.energy_shift {"actual": "17/12", "mixed": "17/12"}
+PASS f1.r1.current_shift {"actual": "1", "mixed": "1"}
+PASS f1.r1.mass_invariant {"before": "25/16", "after": "25/16"}
+PASS f1.r1.local_lie {"iHB": "0", "P_f": "0", "iPB": "45/4096", "betaH_f": "45/4096"}
+PASS f1.r2.energy_shift {"actual": "653/252", "mixed": "653/252"}
+PASS f1.r2.current_shift {"actual": "143/42", "mixed": "143/42"}
+PASS f1.r2.mass_invariant {"before": "25/16", "after": "25/16"}
+PASS f1.r2.local_lie {"iHB": "27783/8000000", "P_f": "27783/8000000", "iPB": "2417121/320000000", "betaH_f": "2417121/320000000"}
+PASS f1.unitary_H {"max_abs_error": 3.0665868333667484e-19, "tolerance": 1e-11}
+PASS f1.unitary_P {"max_abs_error": 3.2526065174565133e-19, "tolerance": 1e-11}
+PASS f1.negative_spatial_clock {"max_abs_error": 1.0842021724855044e-19, "tolerance": 1e-11}
+PASS f1.actual_C1_derivative {"energy_residual": 2.2879476091475226e-12, "current_residual": 5.327738250571201e-12, "tolerance": 1e-08, "step": 0.0001}
+PASS f1.boost_group_law {"a": "3/5", "a2": "5/4"}
+PASS f2.r0.energy_shift {"actual": "641/300", "mixed": "641/300"}
+PASS f2.r0.current_shift {"actual": "-203/200", "mixed": "-203/200"}
+PASS f2.r0.mass_invariant {"before": "4/9", "after": "4/9"}
+PASS f2.r0.local_lie {"iHB": "-500/823543", "P_f": "-500/823543", "iPB": "7250/17294403", "betaH_f": "7250/17294403"}
+PASS f2.r1.energy_shift {"actual": "29/30", "mixed": "29/30"}
+PASS f2.r1.current_shift {"actual": "-7/20", "mixed": "-7/20"}
+PASS f2.r1.mass_invariant {"before": "4/9", "after": "4/9"}
+PASS f2.r1.local_lie {"iHB": "0", "P_f": "0", "iPB": "1/1536", "betaH_f": "1/1536"}
+PASS f2.r2.energy_shift {"actual": "421/630", "mixed": "421/630"}
+PASS f2.r2.current_shift {"actual": "-29/1260", "mixed": "-29/1260"}
+PASS f2.r2.mass_invariant {"before": "4/9", "after": "4/9"}
+PASS f2.r2.local_lie {"iHB": "3087/5000000", "P_f": "3087/5000000", "iPB": "89523/200000000", "betaH_f": "89523/200000000"}
+PASS f2.unitary_H {"max_abs_error": 4.84869951806108e-19, "tolerance": 1e-11}
+PASS f2.unitary_P {"max_abs_error": 2.168404344971009e-19, "tolerance": 1e-11}
+PASS f2.negative_spatial_clock {"max_abs_error": 2.168404344971009e-19, "tolerance": 1e-11}
+PASS f2.actual_C1_derivative {"energy_residual": 9.972855874451625e-13, "current_residual": 9.381384558082573e-15, "tolerance": 1e-08, "step": 0.0001}
+PASS f2.boost_group_law {"a": "5/2", "a2": "5/4"}
+PASS spectral_preimage.r3/4 {"actual": false, "candidate": false}
+PASS spectral_preimage.r1 {"actual": false, "candidate": false}
+PASS spectral_preimage.r3/2 {"actual": false, "candidate": false}
+PASS spectral_preimage.r3 {"actual": true, "candidate": true}
+PASS positive_cone.(Fraction(1, 1), Fraction(0, 1), Fraction(1, 10)) {"energy": "101/20", "lower": "1/10", "upper": "10"}
+PASS positive_cone.(Fraction(1, 1), Fraction(0, 1), Fraction(10, 1)) {"energy": "101/20", "lower": "1/10", "upper": "10"}
+PASS positive_cone.(Fraction(1, 1), Fraction(2, 1), Fraction(1, 10)) {"energy": "10", "lower": "1/10", "upper": "10"}
+PASS positive_cone.(Fraction(1, 1), Fraction(2, 1), Fraction(10, 1)) {"energy": "1/10", "lower": "1/10", "upper": "10"}
+PASS positive_cone.(Fraction(1, 1), Fraction(-2, 1), Fraction(1, 10)) {"energy": "1/10", "lower": "1/10", "upper": "10"}
+PASS positive_cone.(Fraction(1, 1), Fraction(-2, 1), Fraction(10, 1)) {"energy": "10", "lower": "1/10", "upper": "10"}
+PASS positive_cone.(Fraction(3, 1), Fraction(4, 1), Fraction(1, 10)) {"energy": "501/20", "lower": "3/10", "upper": "30"}
+PASS positive_cone.(Fraction(3, 1), Fraction(4, 1), Fraction(10, 1)) {"energy": "21/4", "lower": "3/10", "upper": "30"}
+PASS relaxed_cone_fails.3 {"admitted_by_wrong_beta_squared": true, "boosted_energy": "-19/8"}
+PASS relaxed_cone_fails.-3 {"admitted_by_wrong_beta_squared": true, "boosted_energy": "-19/8"}
+PASS domain_cutoff.N1 {"vector_norm_squared": "1", "H_norm_squared": "1", "G_norm_squared": "0"}
+PASS domain_cutoff.N4 {"vector_norm_squared": "205/144", "H_norm_squared": "4", "G_norm_squared": "0"}
+PASS domain_cutoff.N16 {"vector_norm_squared": "822968714749/519437318400", "H_norm_squared": "16", "G_norm_squared": "0"}
+PASS domain_cutoff.N64 {"vector_norm_squared": "41409901935572392721815151397221689468404267553321859/25413727004476294175336659010085214676345183380992000", "H_norm_squared": "64", "G_norm_squared": "0"}
+PASS multiple_mass_scope {"mass_squared": ["1", "4"]}
+PASS canonical_vacuum_fixed {"energy_shift": "0", "vacuum_residual": 0.0}
+TOTAL: PASS=71 FAIL=0
+per_element: rational spectral mixing and actual multiplier/shift compositions are checked with the original sign and beta gates.
+per_site: checked and not executed — these abstract representation diagnostics do not construct a finite-range spin density or state.
+per_mode: finite abstract spectral fixtures and a written domain witness are checked; no physical particle or fixed mass is inferred.
+per_block: actual unitary, clock and projection fixtures retain every original insensitive row and active CLI variant.
+lattice_wide: checked and not executed — full integration and maximal domains use the conditional rapid almost-local analytic proof.
+SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.
+
+----- stderr -----
+

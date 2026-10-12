@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/microscopic_boost_flow_2026_10_12.py
+runner_sha256: e06387f3c243810e478e4fb94e55ccf3ec0c2537e69dc985ea2d4bca468d1c72
+input_fingerprint_sha256: 0b93ede9469e416c840562a550331d14bbe90d78d43d4fc818f93a1899c880c5
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+{"name": "telescoping_energy_is_zero_on_local_probe", "passed": true, "residual": 0.0, "support_coordinates": [-1, 0, 1]}
+{"name": "telescoping_weighted_derivative_sign", "passed": true, "residual": 0.0}
+{"expected_from_Pauli_commutator": 2, "name": "stationary_product_state_fails_boost_identity", "observed_expectation": 1.9999999999999991, "passed": true}
+{"independent_joint_sign_norm": 4, "name": "local_weighted_support_growth_L1", "observed_norm": 4.0, "passed": true}
+{"independent_joint_sign_norm": 12, "name": "local_weighted_support_growth_L2", "observed_norm": 12.0, "passed": true}
+{"name": "omitting_position_is_not_a_valid_bound_L2", "observed_norm": 12.0, "passed": true, "unweighted_mutant_bound": 10}
+{"name": "omitting_support_count_is_not_a_valid_bound_L2", "observed_norm": 12.0, "one_site_mutant_bound": 4, "passed": true}
+{"independent_joint_sign_norm": 24, "name": "local_weighted_support_growth_L3", "observed_norm": 24.0, "passed": true}
+{"name": "omitting_position_is_not_a_valid_bound_L3", "observed_norm": 24.0, "passed": true, "unweighted_mutant_bound": 14}
+{"name": "omitting_support_count_is_not_a_valid_bound_L3", "observed_norm": 24.0, "one_site_mutant_bound": 6, "passed": true}
+{"derivative_norm": 2.0, "name": "norm_approximation_is_not_graph_approximation_x2", "observable_norm": 0.5, "passed": true}
+{"derivative_norm": 2.0, "name": "norm_approximation_is_not_graph_approximation_x4", "observable_norm": 0.25, "passed": true}
+{"derivative_norm": 2.0, "name": "norm_approximation_is_not_graph_approximation_x16", "observable_norm": 0.0625, "passed": true}
+{"derivative_norm": 2.0, "name": "norm_approximation_is_not_graph_approximation_x64", "observable_norm": 0.015625, "passed": true}
+{"exact_B16_bound": "367746101259045701656284762755985724581/166153499473114484112975882535043072", "exact_tail_seminorm": "25755440766541803712948890521925/81129638414606681695789005144064", "name": "dyadic_graph_tail_N0", "passed": true, "ratio": 0.00014343358776418885}
+{"exact_B16_bound": "367746101259045701656284762755985724581/332306998946228968225951765070086144", "exact_tail_seminorm": "1046314781140760775838548677453/81129638414606681695789005144064", "name": "dyadic_graph_tail_N1", "passed": true, "ratio": 1.1653979005840344e-05}
+{"exact_B16_bound": "367746101259045701656284762755985724581/664613997892457936451903530140172288", "exact_tail_seminorm": "51561185128330759386274634345/81129638414606681695789005144064", "name": "dyadic_graph_tail_N2", "passed": true, "ratio": 1.1485892770179186e-06}
+{"exact_B16_bound": "367746101259045701656284762755985724581/2658455991569831745807614120560689152", "exact_tail_seminorm": "167330684873643911165680225/81129638414606681695789005144064", "name": "dyadic_graph_tail_N4", "passed": true, "ratio": 1.4909993234917246e-08}
+{"exact_B16_bound": "367746101259045701656284762755985724581/42535295865117307932921825928971026432", "exact_tail_seminorm": "2408050415614158082625/81129638414606681695789005144064", "name": "dyadic_graph_tail_N8", "passed": true, "ratio": 3.4331076032596303e-12}
+{"exact_B16_bound": "367746101259045701656284762755985724581/680564733841876926926749214863536422912", "exact_tail_seminorm": "36609619489730625/81129638414606681695789005144064", "name": "dyadic_graph_tail_N12", "passed": true, "ratio": 8.350972202753059e-16}
+{"exact_B11_bound": "40860677917671744628476084750665080509/85070591730234615865843651857942052864", "exact_tail_seminorm": "3349235894891126608891482356611891845/42535295865117307932921825928971026432", "name": "expectation_approximation_N0", "passed": true}
+{"exact_B11_bound": "40860677917671744628476084750665080509/1329227995784915872903807060280344576000", "exact_tail_seminorm": "1676253316534865612360238972425385/42535295865117307932921825928971026432", "name": "expectation_approximation_N2", "passed": true}
+{"exact_B11_bound": "1513358441395249801054669805580188167/14153619699117784214679737577865109045248", "exact_tail_seminorm": "41193185874173362533257472193/42535295865117307932921825928971026432", "name": "expectation_approximation_N5", "passed": true}
+{"matrix_exponential_vs_trigonometric_residual": 1.1102230246251565e-16, "name": "onsite_positive_clock_x1_t0.13", "passed": true}
+{"name": "onsite_tail_term_norm_preserved_x1_t0.13", "passed": true, "term_norm": 1.0000000000000002, "trace_abs": 0.0}
+{"matrix_exponential_vs_trigonometric_residual": 0.0, "name": "onsite_positive_clock_x1_t-0.27", "passed": true}
+{"name": "onsite_tail_term_norm_preserved_x1_t-0.27", "passed": true, "term_norm": 1.0, "trace_abs": 0.0}
+{"matrix_exponential_vs_trigonometric_residual": 1.1102230246251565e-16, "name": "onsite_positive_clock_x3_t0.13", "passed": true}
+{"name": "onsite_tail_term_norm_preserved_x3_t0.13", "passed": true, "term_norm": 1.0000000000000002, "trace_abs": 0.0}
+{"matrix_exponential_vs_trigonometric_residual": 9.020562075079397e-17, "name": "onsite_positive_clock_x3_t-0.27", "passed": true}
+{"name": "onsite_tail_term_norm_preserved_x3_t-0.27", "passed": true, "term_norm": 1.0, "trace_abs": 0.0}
+{"matrix_exponential_vs_trigonometric_residual": 1.2412670766236366e-16, "name": "onsite_positive_clock_x11_t0.13", "passed": true}
+{"name": "onsite_tail_term_norm_preserved_x11_t0.13", "passed": true, "term_norm": 1.0000000000000002, "trace_abs": 0.0}
+{"matrix_exponential_vs_trigonometric_residual": 1.1102230246251565e-16, "name": "onsite_positive_clock_x11_t-0.27", "passed": true}
+{"name": "onsite_tail_term_norm_preserved_x11_t-0.27", "passed": true, "term_norm": 1.0000000000000002, "trace_abs": 0.0}
+{"current_norm": 1.14564392373896, "name": "finite_current_pair_sign", "passed": true, "residual": 0.0}
+{"name": "canonical_GNS_boost_fixes_trace_vector", "passed": true, "vector_residual": 0.0}
+{"max_residual": 0.0, "name": "canonical_GNS_generators_are_Hermitian", "passed": true}
+{"full_Hilbert_matrix_residual": 0.0, "name": "canonical_GNS_current_commutator", "passed": true}
+{"basis_size": 64, "max_vector_residual": 0.0, "name": "GNS_local_action_on_complete_matrix_basis", "passed": true}
+{"basis_size": 64, "max_state_derivative": 0.0, "name": "trace_infinitesimal_invariance_on_complete_basis", "passed": true}
+{"basis_size": 64, "max_residual": 8.390606126807162e-17, "name": "GNS_group_columns_t0.19", "passed": true}
+{"basis_size": 64, "max_operator_residual": 3.158340834848209e-16, "name": "GNS_full_algebra_implementation_t0.19", "passed": true}
+{"basis_size": 64, "differentiation": "fourth-order centered finite difference", "max_derivative_residual": 3.312949825781266e-13, "name": "GNS_C1_Schrodinger_curve_t0.19", "passed": true, "step": 0.0001}
+{"basis_size": 64, "max_state_residual": 5.204170427930421e-18, "name": "trace_finite_time_invariance_t0.19", "passed": true}
+{"basis_size": 64, "max_residual": 1.32960823517868e-16, "name": "GNS_group_columns_t-0.41", "passed": true}
+{"basis_size": 64, "max_operator_residual": 3.778260258693908e-16, "name": "GNS_full_algebra_implementation_t-0.41", "passed": true}
+{"basis_size": 64, "differentiation": "fourth-order centered finite difference", "max_derivative_residual": 5.246041212128225e-13, "name": "GNS_C1_Schrodinger_curve_t-0.41", "passed": true, "step": 0.0001}
+{"basis_size": 64, "max_state_residual": 4.9065389333867974e-18, "name": "trace_finite_time_invariance_t-0.41", "passed": true}
+{"total_passed": 49, "total_failed": 0, "mutation": "none"}
+per_element: finite weighted commutator, current and orbit-derivative fixtures are checked; the analytic proof carries their generalization.
+per_site: finite support and current signs are checked; no intended microscopic density/state is supplied by the controls.
+per_mode: checked and not executed — no physical particle mode or positive-energy spectral realization is constructed.
+per_block: finite GNS column, adjoint and C1-orbit fixtures are checked; their nondiscriminating rows remain visible.
+lattice_wide: checked and not executed — infinite weighted-flow existence and domains use the conditional analytic argument and matched external theorem.
+TOTAL: PASS=49 FAIL=0
+SCOPE: Original finite controls only; documented mutation survivors and insensitive rows remain. Counts do not prove the analytic theorem or a physical model.
+
+----- stderr -----
+

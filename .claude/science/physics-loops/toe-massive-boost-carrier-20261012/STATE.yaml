@@ -1,0 +1,29 @@
+loop: toe-massive-boost-carrier-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: "358fdf795a5504d4d7fd13344bbbd5df5504ebea"
+science_worktree: "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree"
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+conditional_surface_status: "Supplied same-state symmetry, positivity and nonzero positive mass imply the carrier and adapted boost domain; actual central rates and creator density remain open"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Microscopic realization and rate-qualified creator density are not constructed"
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+source_review: completed_at_frozen_source_no_required_mathematical_correction
+author_checker_pairing: same_selected_model_family_separate_contexts_not_blinded
+root_role: coauthor_not_independent_reviewer
+canonical_execution: completed_once_84_pass_reused_from_preserved_failed_attempt
+original_mutant_execution: completed_eight_rejections_changed_passing_rows_preserved
+pr_context: "Extend existing regular PR9488 stacked on PR9486; actual publication identity stays in external root receipt"
+pr_action_by_preparation: none
+next_exact_action: "Root executes the reviewed delivery wrapper for exact final gates, staging, commit, branch push and PR edit; no science rerun"
+strongest_open_obligation: "Actual common microscopic density/state/Lie/mass realization, central power rate and dense target projections for the declared actual creator family"
+live_checkpoint: root_owned_campaign_checkpoint_only
+deadline_utc: "2026-10-12 16:00:52 UTC"
+earlier_five_cache_refreshes: "Five actual canonical executions after demonstrated map-only input mismatch; no mutants rerun"
+old_manifest_repair: "Only five cache records; both EVIDENCE_MAP files fixed"
+final_freshness_rule: "Check all six caches after every input is finalized and again after staging; no later input writes"

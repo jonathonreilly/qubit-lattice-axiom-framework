@@ -1,0 +1,876 @@
+{
+  "policy": "Raw third-party papers, TeX, source responses, extracts and media are inventoried and stay external; nothing is deleted.",
+  "sources": [
+    {
+      "source_id": "TWW",
+      "version": "2511.02941v2",
+      "abstract_url": "https://arxiv.org/abs/2511.02941v2",
+      "pdf_url": "https://arxiv.org/pdf/2511.02941v2",
+      "source_url": "https://arxiv.org/src/2511.02941v2",
+      "bound_primary_local_file": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/sources/TWW_main.tex",
+        "bytes": 51113,
+        "sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d"
+      },
+      "scope": "Frozen source provenance only; preparation makes no new paper-read or network-retrieval claim"
+    },
+    {
+      "source_id": "NSY",
+      "version": "1705.08553v3",
+      "abstract_url": "https://arxiv.org/abs/1705.08553v3",
+      "pdf_url": "https://arxiv.org/pdf/1705.08553v3",
+      "source_url": "https://arxiv.org/src/1705.08553v3",
+      "bound_primary_local_file": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/sources/NSY_1705.08553v3.tex",
+        "bytes": 84136,
+        "sha256": "291568f356212c003993ac38e719292c202f7afc2c58b591ac96c0ce32dbe722"
+      },
+      "scope": "Frozen source provenance only; preparation makes no new paper-read or network-retrieval claim"
+    },
+    {
+      "source_id": "Dybalski",
+      "version": "hep-th/0412226v4",
+      "abstract_url": "https://arxiv.org/abs/hep-th/0412226v4",
+      "pdf_url": "https://arxiv.org/pdf/hep-th/0412226v4",
+      "source_url": "https://arxiv.org/src/hep-th/0412226v4",
+      "bound_primary_local_file": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/09_Dybalski_hep-th_0412226v4.tex",
+        "bytes": 35725,
+        "sha256": "c425cfecc20136576180271a1e8e9c12df48ded2ae941655ad4e842363ee64a6"
+      },
+      "scope": "Frozen source provenance only; preparation makes no new paper-read or network-retrieval claim"
+    },
+    {
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "abstract_url": "https://arxiv.org/abs/1412.2970v2",
+      "pdf_url": "https://arxiv.org/pdf/1412.2970v2",
+      "source_url": "https://arxiv.org/src/1412.2970v2",
+      "bound_primary_local_file": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/10_BDN_1412.2970v2.pdf",
+        "bytes": 1084655,
+        "sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126"
+      },
+      "scope": "Frozen source provenance only; preparation makes no new paper-read or network-retrieval claim"
+    },
+    {
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "abstract_url": "https://arxiv.org/abs/0712.3318v1",
+      "pdf_url": "https://arxiv.org/pdf/0712.3318v1",
+      "source_url": "https://arxiv.org/src/0712.3318v1",
+      "bound_primary_local_file": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/11_NS_0712.3318v1.pdf",
+        "bytes": 273478,
+        "sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c"
+      },
+      "scope": "Frozen source provenance only; preparation makes no new paper-read or network-retrieval claim"
+    },
+    {
+      "source_id": "Engel_Nagel",
+      "version": "Hash-bound publisher-hosted PDF acquired 2026-10-12T06:31:14.360695+00:00; edition not independently inferred by preparation",
+      "pdf_url": "https://www.math.uni-tuebingen.de/de/forschung/agfa/members/engel-nagel_one-parameter-semigroups.pdf",
+      "source_url": "https://www.math.uni-tuebingen.de/de/forschung/agfa/members/engel-nagel_one-parameter-semigroups.pdf",
+      "bound_primary_local_file": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/integrated_boost_covariance/sources/Engel_Nagel_One_Parameter_Semigroups.pdf",
+        "bytes": 5013926,
+        "sha256": "a48ba290280c718cbf6a65a6b09b4c3c59f622102619fe5b227d446c921a56ff"
+      },
+      "scope": "Only book page 145, PDF page 161, Definition II.6.1 and Proposition II.6.2 checked. Corroborating reference; needed group uniqueness is proved in full in the new note. Preparation did not read or download the paper."
+    }
+  ],
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/integrated_boost_covariance/sources/Engel_Nagel_One_Parameter_Semigroups.pdf",
+      "bytes": 5013926,
+      "sha256": "a48ba290280c718cbf6a65a6b09b4c3c59f622102619fe5b227d446c921a56ff",
+      "classification": "external_primary_content",
+      "source_id": "Engel_Nagel",
+      "version": "Hash-bound publisher-hosted PDF acquired 2026-10-12T06:31:14.360695+00:00; edition not independently inferred by preparation",
+      "source_url": "https://www.math.uni-tuebingen.de/de/forschung/agfa/members/engel-nagel_one-parameter-semigroups.pdf",
+      "upstream_primary_sha256": "a48ba290280c718cbf6a65a6b09b4c3c59f622102619fe5b227d446c921a56ff",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/integrated_boost_covariance/sources/Engel_Nagel_page_145.txt",
+      "bytes": 1930,
+      "sha256": "d95fbf187edd4d6ca263ab8e1e4d5e78862aeaab595257a919b5738978856b09",
+      "classification": "external_primary_content",
+      "source_id": "Engel_Nagel",
+      "version": "Hash-bound publisher-hosted PDF acquired 2026-10-12T06:31:14.360695+00:00; edition not independently inferred by preparation",
+      "source_url": "https://www.math.uni-tuebingen.de/de/forschung/agfa/members/engel-nagel_one-parameter-semigroups.pdf",
+      "upstream_primary_sha256": "a48ba290280c718cbf6a65a6b09b4c3c59f622102619fe5b227d446c921a56ff",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/sources/NSY_1705.08553v3.source",
+      "bytes": 27232,
+      "sha256": "fcbb7b5c610ebf046107d8de1a88ea35093a95dfd9b48318b96da31a5fda1af6",
+      "classification": "external_primary_content",
+      "source_id": "NSY",
+      "version": "1705.08553v3",
+      "source_url": "https://arxiv.org/src/1705.08553v3",
+      "upstream_primary_sha256": "291568f356212c003993ac38e719292c202f7afc2c58b591ac96c0ce32dbe722",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/sources/NSY_1705.08553v3.tex",
+      "bytes": 84136,
+      "sha256": "291568f356212c003993ac38e719292c202f7afc2c58b591ac96c0ce32dbe722",
+      "classification": "external_primary_content",
+      "source_id": "NSY",
+      "version": "1705.08553v3",
+      "source_url": "https://arxiv.org/src/1705.08553v3",
+      "upstream_primary_sha256": "291568f356212c003993ac38e719292c202f7afc2c58b591ac96c0ce32dbe722",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/sources/TWW_common.tex",
+      "bytes": 10722,
+      "sha256": "743220af9c98e077199f2dfbdc72814434862bab0cd61ac80f8ae40d94f51fec",
+      "classification": "external_primary_content",
+      "source_id": "TWW",
+      "version": "2511.02941v2",
+      "source_url": "https://arxiv.org/src/2511.02941v2",
+      "upstream_primary_sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow/sources/TWW_main.tex",
+      "bytes": 51113,
+      "sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "classification": "external_primary_content",
+      "source_id": "TWW",
+      "version": "2511.02941v2",
+      "source_url": "https://arxiv.org/src/2511.02941v2",
+      "upstream_primary_sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow_review/sources/NSY.tex",
+      "bytes": 84136,
+      "sha256": "291568f356212c003993ac38e719292c202f7afc2c58b591ac96c0ce32dbe722",
+      "classification": "external_primary_content",
+      "source_id": "NSY",
+      "version": "1705.08553v3",
+      "source_url": "https://arxiv.org/src/1705.08553v3",
+      "upstream_primary_sha256": "291568f356212c003993ac38e719292c202f7afc2c58b591ac96c0ce32dbe722",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow_review/sources/TWW_common.tex",
+      "bytes": 10722,
+      "sha256": "743220af9c98e077199f2dfbdc72814434862bab0cd61ac80f8ae40d94f51fec",
+      "classification": "external_primary_content",
+      "source_id": "TWW",
+      "version": "2511.02941v2",
+      "source_url": "https://arxiv.org/src/2511.02941v2",
+      "upstream_primary_sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_boost_flow_review/sources/TWW_main.tex",
+      "bytes": 51113,
+      "sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "classification": "external_primary_content",
+      "source_id": "TWW",
+      "version": "2511.02941v2",
+      "source_url": "https://arxiv.org/src/2511.02941v2",
+      "upstream_primary_sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/09_Dybalski_hep-th_0412226v4.tex",
+      "bytes": 35725,
+      "sha256": "c425cfecc20136576180271a1e8e9c12df48ded2ae941655ad4e842363ee64a6",
+      "classification": "external_primary_content",
+      "source_id": "Dybalski",
+      "version": "hep-th/0412226v4",
+      "source_url": "https://arxiv.org/src/hep-th/0412226v4",
+      "upstream_primary_sha256": "c425cfecc20136576180271a1e8e9c12df48ded2ae941655ad4e842363ee64a6",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/10_BDN_1412.2970v2.pdf",
+      "bytes": 1084655,
+      "sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/11_NS_0712.3318v1.pdf",
+      "bytes": 273478,
+      "sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/07.txt",
+      "bytes": 2881,
+      "sha256": "1600eaad96bc14593195b3cf71b296174603512f6591dca645a9b9662845df8b",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/08.txt",
+      "bytes": 2461,
+      "sha256": "b643684933ad885752a2a4b6a6a4025b983c69be069b78cd5a23cc0a6e9308d6",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/09.txt",
+      "bytes": 2490,
+      "sha256": "c4d98da820a19091ef3c0370e698c9632dd0adc5d3fe623cf4312369a8a25475",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/10.txt",
+      "bytes": 2675,
+      "sha256": "781d0cb5e526af48d05b223f00c1f58f1d351a7fab4fb9921f3a189da2ca73ec",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/11.txt",
+      "bytes": 2912,
+      "sha256": "362b602895541744ae09a56d804218ddec8f38b38edd228238d5d16bcf27e67f",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/12.txt",
+      "bytes": 2693,
+      "sha256": "f129835283fcc6c8f384271ee9e07c413c84c154d43e34b9c9a2d7d2f7ec1ee3",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/13.txt",
+      "bytes": 2648,
+      "sha256": "06fc5f84848efb95b8b59848df44f7f74d3a307419933c5d16710ee25c224432",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/14.txt",
+      "bytes": 2895,
+      "sha256": "bb31f321c5db8a53a0f9546c0abc417a08934bcbe68cf61a0134ba6aee1054ed",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/15.txt",
+      "bytes": 2538,
+      "sha256": "5250f38f573b06ac8acb679dde6a146f4e17c13e541b6348916680e645337366",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/16.txt",
+      "bytes": 2439,
+      "sha256": "87a76c4e28313032f8d66374c4e433147f2ee4628fd9c0a22b6d4947b4509f59",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/17.txt",
+      "bytes": 2814,
+      "sha256": "b0374bc255b8143a525138acf4133d215eacff22d2469698a52c28fafe0d2ca7",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/18.txt",
+      "bytes": 2344,
+      "sha256": "6e135e81be454c2bbe1b7a860e4528df54b1ce2e202b03a3c12a136508a53cc7",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/19.txt",
+      "bytes": 2940,
+      "sha256": "91cedac014c2f5eba8339a198697c3977070872e7a5b41341c17a09fc0923297",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/20.txt",
+      "bytes": 3179,
+      "sha256": "abb0e01074c2461e9b8887524b5e7517d6b61c41b6223706b53c7c10ca692108",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/21.txt",
+      "bytes": 2642,
+      "sha256": "13758462ffc6849562f99d4abba16c60d381d0e5277c3aba5db0b60664c7c0d0",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/22.txt",
+      "bytes": 2304,
+      "sha256": "10c1102d8c6ca2e43529738e6f6bb021683a0d1fe210ec97ff278f79866e2023",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/23.txt",
+      "bytes": 2567,
+      "sha256": "a6e8c60574fae55e7c6fd16ae05eb7a8d6022573d4d17019b347b214e7b22b57",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/24.txt",
+      "bytes": 3035,
+      "sha256": "b975f71d54d5b33be1586e2c8d61daca9ef6aeec69fc83675767a17540aaf6ef",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/39.txt",
+      "bytes": 2239,
+      "sha256": "97e6992d2de3647aa4dbbdee1abfa80b95fdf6bd748985f506f9b7c99eeb56af",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/40.txt",
+      "bytes": 2058,
+      "sha256": "889919f763be5d48c22189e6fea1faae721af08bf62603c61fc93aec55665bbb",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/41.txt",
+      "bytes": 2662,
+      "sha256": "3a29384621f815a292cff8d76115c5b3cf6fb1d03167fd4ba2760f87805ba594",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/42.txt",
+      "bytes": 2298,
+      "sha256": "49f86b358635d541219eb770533400f95fd41ab69ea2db9df7ab63ce14db36e7",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/BDN_pages/43.txt",
+      "bytes": 2246,
+      "sha256": "b3e664253049eb8aeb0ee7381b9cdf01f51e05ca0b2716e44ea42ad59d6bbca5",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/NS_pages/03.txt",
+      "bytes": 3352,
+      "sha256": "22cbfda5fc497c4d4099865368c55f24a0449c3bb591ffcca7eab4686714c907",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/NS_pages/04.txt",
+      "bytes": 2298,
+      "sha256": "816822605aa469662fa7c6d1d35aa6d4ca39565ef1ea87d6b81a8f96670f2cc7",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/NS_pages/09.txt",
+      "bytes": 3178,
+      "sha256": "91c0b727aae2a5a38086249776e156e6d8540c22022da93f2338bdf3657d0ded",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/NS_pages/10.txt",
+      "bytes": 2513,
+      "sha256": "dd2c8490dbc574016a789ae48e2a91a33c4b085bb1403b37969e7690a5c2a52e",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/NS_pages/11.txt",
+      "bytes": 2637,
+      "sha256": "4a363499a6f03a03f77930e70e28de146889b76e41023617b8ff82af72a3513a",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock/sources/NS_pages/12.txt",
+      "bytes": 2030,
+      "sha256": "7a7d7d87a938be6a7dc58f3b567fbd8fd7a2f0bd3def6ff386636911955bcba7",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_page41.png",
+      "bytes": 209735,
+      "sha256": "627451f1ed632b2f28606ebe59df3cb07f4f905ff01fc6d02f70fc1b1a7855a4",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/07.txt",
+      "bytes": 2880,
+      "sha256": "0074e9d04fd2ccd4dc5a6ec00c6e74225829f14f0d2e22e1a90ccbca6c1809f0",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/08.txt",
+      "bytes": 2460,
+      "sha256": "2107e6d5d8084d7e761360583d29c8e531dc14f8c57deb825e7401e237dfa493",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/09.txt",
+      "bytes": 2489,
+      "sha256": "56b23b03cf7df721e3b4cc8879d5cbad2590cb7a8d2a91ac220f80e67ea0b0fe",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/10.txt",
+      "bytes": 2674,
+      "sha256": "90d6423690bc0aff94b34e53ab2823cacd245894f59baaa30f28fa4b1710ad55",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/11.txt",
+      "bytes": 2911,
+      "sha256": "65cfc207e9c68f960f14cb59fb27c3ba055a4ea669c9bd8d6c5ec33d49da6574",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/12.txt",
+      "bytes": 2692,
+      "sha256": "d1566b73f936f18add02ddf1098b46bb92adc1061d751a5bdcf181fab375c0b5",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/13.txt",
+      "bytes": 2647,
+      "sha256": "d22b348304c86c710bb98e5cdcdf0cf68b85dd088ef9f22a65edb04978f19786",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/14.txt",
+      "bytes": 2894,
+      "sha256": "2b5c24057febc6f98d6dc09fc52403d75bd507b631c6bb73c1a41220ed878c58",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/15.txt",
+      "bytes": 2537,
+      "sha256": "cd3a399f0f81bfb5bfe18706e8330d7e59672dadaf74979adab32ff92497efdb",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/16.txt",
+      "bytes": 2438,
+      "sha256": "b5d7235f49d4d70b717fb8fe53a7ffc254bf9209a752a0c94eb13098184b6d86",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/17.txt",
+      "bytes": 2813,
+      "sha256": "9726bda7e751b9feb48567e5daaeb3c8829449a53c9b9fc66efdd5a7a9ae2712",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/18.txt",
+      "bytes": 2343,
+      "sha256": "fb4cd9077019f201664042ef71c97d9b5e712f8146e77d9a98a38f584f1db8a8",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/19.txt",
+      "bytes": 2939,
+      "sha256": "d73d8b85568a93a0cb6427e3d4e67440fd60da75ab1f59f2556eef075b766d47",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/20.txt",
+      "bytes": 3178,
+      "sha256": "609388af5dac2e41c024fe355d6f261bf6e6acd3b48855690ba988f0197b63f3",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/21.txt",
+      "bytes": 2641,
+      "sha256": "9fa2a8a335cde68b38ce1c287a2c36457a9c4a3e9b0adf76d5b0938cfefa18ed",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/22.txt",
+      "bytes": 2303,
+      "sha256": "3515a1142a9fe466107c4b32940681ad078bafdf117942728e25c6d9ba1a64c4",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/23.txt",
+      "bytes": 2566,
+      "sha256": "866c4f800a29e6d8fa61c0fa26b8adacc69f8861f0426bbf589ccac42bbbadbb",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/24.txt",
+      "bytes": 3034,
+      "sha256": "e935b84ad41febef04a3d45878c5584d1b9c58644561ada118fb2f295d858e50",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/39.txt",
+      "bytes": 2238,
+      "sha256": "7bd9939c81ae6d6a63555a7bf9506af15778ebfe0df6fed8359c8788fe531e70",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/40.txt",
+      "bytes": 2057,
+      "sha256": "ecf4a5516e45c031f06c380e8bdbdd3f81682cb15a005dbeb3af646958ea8236",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/41.txt",
+      "bytes": 2661,
+      "sha256": "00e9d90a7e11627f062b8da71feb2867dbd064cb40f56b149a4a4c600437716f",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/42.txt",
+      "bytes": 2297,
+      "sha256": "20c06fbd5d1d3861239c9ea341caa1b9ef9f88a8cf9c01f422fd6ab92000d17a",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/BDN_pages/43.txt",
+      "bytes": 2245,
+      "sha256": "8ca1d91e8c1b7c56c97406ba9c882a0f6f2bab9d6e5ec631311b9319b26e9889",
+      "classification": "external_primary_content",
+      "source_id": "BDN",
+      "version": "1412.2970v2",
+      "source_url": "https://arxiv.org/pdf/1412.2970v2",
+      "upstream_primary_sha256": "3edeb48a167b9ae6a26d6d885ccde03b068423d432176a256eb0a4ee42a14126",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_page10.png",
+      "bytes": 215899,
+      "sha256": "9ac430bebe09d223d6419c84b441de26e5711b5a8d3aaf6ca89fc41ebb6dc47c",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_pages/03.txt",
+      "bytes": 3351,
+      "sha256": "37ece1ca3a8f134de21c5e1eb110ebcf3a5ba4c627c1a1b9d0d39ac4ab2aa24f",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_pages/04.txt",
+      "bytes": 2297,
+      "sha256": "8e666b67b1beb20c26dbd401eb51a25c334e6ab0c123d2d16a6bf56a44ad690c",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_pages/09.txt",
+      "bytes": 3177,
+      "sha256": "167b123af1da2160d4925ca33a67f81a4ac3d2cb1a94ed0e6e862d5c355c68a9",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_pages/10.txt",
+      "bytes": 2512,
+      "sha256": "aefe41094404b363cbbe1d85ba883e356ca7b28fc8f7d614cd8a85cc2024b67e",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_pages/11.txt",
+      "bytes": 2636,
+      "sha256": "afc48b8c72ae930d27b742401f09b4881d1e27d3f56265320285a58405d76766",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonisolated_fock_review/NS_pages/12.txt",
+      "bytes": 2029,
+      "sha256": "9847e27cac0b567e997f4dab1904a2a10ab5e11de23207ce1d86f19dc1813ee6",
+      "classification": "external_primary_content",
+      "source_id": "NS",
+      "version": "0712.3318v1",
+      "source_url": "https://arxiv.org/pdf/0712.3318v1",
+      "upstream_primary_sha256": "74829f87cc51d399613043a3abdc48ba3146c81292a09e4df1035b50eb464b5c",
+      "disposition": "Inventoried only; raw paper, extraction and rendered bytes stay external and are not deleted"
+    }
+  ]
+}

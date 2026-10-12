@@ -1,0 +1,65 @@
+{
+  "status": "Prepared new files only; no canonical science, cache, graph, vocabulary, audit or publication execution",
+  "base_revision": "358fdf795a5504d4d7fd13344bbbd5df5504ebea",
+  "target_worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree",
+  "pairing": "Same selected model family in separate author/reviewer contexts, with the inherited selected model and reasoning effort preserved. The full candidate and its reported control descriptions were visible before the reviewer reconstruction and distinct controls were frozen; raw author helpers/results were inspected afterwards. This was not blinded or diverse-family checking. Root proposed the route and is a coauthor, not the independent reviewer. Mechanical preparation adds no new scientific review.",
+  "preparation_script_sha256": "0fecf1c5bf705e1a27932a95a020d091d06116380141cd9a373046169b616b8e",
+  "preparation_freeze_sha256": "b9e30197ebcc99e02508a9fb0531d960b5da2cecde08016058e658aa6cadc15e",
+  "read_only_git_preconditions": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--show-toplevel"
+      ],
+      "stdout": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "HEAD"
+      ],
+      "stdout": "358fdf795a5504d4d7fd13344bbbd5df5504ebea\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "own_evidence_files": 607,
+  "external_files_inventoried_not_bundled": 4,
+  "outputs": [
+    {
+      "kind": "note",
+      "publication_path": "docs/MASSIVE_BOOST_CARRIER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "ba17b6881ec6e84d83a6c6d76ad57cc8200a07c8ded094ec11df79a3291fd18b",
+      "publication_bytes": 58208
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/massive_boost_carrier_2026_10_12.py",
+      "publication_sha256": "cca0ccd5a0137bc76909612c44090cce7b300c567f938e13e8554dcb1845a35c",
+      "publication_bytes": 13142
+    }
+  ],
+  "syntax_and_exact_anchor_checks_only": true,
+  "mathematical_changes": [],
+  "science_controls_run": false,
+  "git_index_or_ref_mutated": false,
+  "pr_created_or_updated": false,
+  "editable_prompt_files_changed": [],
+  "root_owns_remaining_work": "Actual canonical/eight-mutant execution, INNER/OUTER raw capture, graph, metadata/link/source manifests, final review and extension of existing regular PR9488"
+}

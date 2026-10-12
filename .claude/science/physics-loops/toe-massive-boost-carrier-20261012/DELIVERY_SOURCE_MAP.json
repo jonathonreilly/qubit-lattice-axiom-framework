@@ -1,0 +1,266 @@
+{
+  "mathematical_changes": [],
+  "metadata_edits": [
+    {
+      "target": "STATE.yaml",
+      "kind": "replace",
+      "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/STATE.yaml",
+      "before_sha256": "86e60073abd9ac09432daf284a5663a733f9cf6949cf4ffc486e7f90503e7cd2",
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/STATE.yaml",
+      "after_bytes": 2124,
+      "after_sha256": "6bda0f18e11481eb87d1bb6490335e227f2914e59da24f1a66655f303b1a9f31",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "PR_BACKLOG.md",
+      "kind": "replace",
+      "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/PR_BACKLOG.md",
+      "before_sha256": "1ab8ca394a1d12bea9c9337c2199680bafa9169aae4995050b1a7ec25e3584d0",
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/PR_BACKLOG.md",
+      "after_bytes": 1762,
+      "after_sha256": "bf2449743b0f12c2a656f5662c14b077df03f235f51e974b9c400045299da690",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "RECOVERY_DISCLOSURE.md",
+      "kind": "new",
+      "before_origin": null,
+      "before_sha256": null,
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/RECOVERY_DISCLOSURE.md",
+      "after_bytes": 4347,
+      "after_sha256": "cb685fc38a26ddbd1fcf3a0c5460cb7ee330f07d8f4ff951fc14c452b4a89a63",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "REVIEW_HISTORY.md",
+      "kind": "replace",
+      "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/REVIEW_HISTORY.md",
+      "before_sha256": "881b794da651764974cff4c57a23c33ec5563236e8613b9f764a0a74974fe7da",
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/REVIEW_HISTORY.md",
+      "after_bytes": 4577,
+      "after_sha256": "24119f3727ba495aa20ad4cb0e73fbd45895ccd03d2ecbf4ddc230a3d565748b",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "DELIVERY_CHECKS.md",
+      "kind": "replace",
+      "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/DELIVERY_CHECKS.md",
+      "before_sha256": "38db310d955447eafe8d96f88cb8ea4bfa0bdbe2105aac06cac106f38a9b1d62",
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/DELIVERY_CHECKS.md",
+      "after_bytes": 5931,
+      "after_sha256": "edcdeb9b2cc325387d21e02ae413bc9d043cc665b37c45fc3d98560ee249ec44",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "ROOT_COMPOSITION_REVIEW.md",
+      "kind": "new",
+      "before_origin": null,
+      "before_sha256": null,
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/ROOT_COMPOSITION_REVIEW.md",
+      "after_bytes": 2580,
+      "after_sha256": "b6001f64746e9c6c980035b8f4512b0291c30b7525733e0fe794f00edd01d387",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "ARTIFACT_PLAN.md",
+      "kind": "replace",
+      "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/ARTIFACT_PLAN.md",
+      "before_sha256": "edaa1628e6e31b563d1c48509007b1d83a37e35c226beeac339f8435f7beebf8",
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/ARTIFACT_PLAN.md",
+      "after_bytes": 1572,
+      "after_sha256": "51d352a449ecde1b06107bf91e17f591f1a73fdd431b7d7fca8b019a87da5190",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "HANDOFF.md",
+      "kind": "replace",
+      "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/HANDOFF.md",
+      "before_sha256": "34336b803504f64b7d7d5059f0c8618a21bc952dfcc314bb04d4bd5d40e89770",
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/HANDOFF.md",
+      "after_bytes": 2751,
+      "after_sha256": "6188d9c383b6a20ad7169f061a38dc3cc563d9146fd2737ed1e63e46c513ff14",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    },
+    {
+      "target": "CLUSTER_EVALUATION.md",
+      "kind": "new",
+      "before_origin": null,
+      "before_sha256": null,
+      "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/previews/CLUSTER_EVALUATION.md",
+      "after_bytes": 2574,
+      "after_sha256": "39e267f47d864b77b6f6be8722f97cd1107a39c34b281f25ba0fcf88d675c274",
+      "category": "administrative_delivery_metadata",
+      "mathematical_changes": []
+    }
+  ],
+  "unchanged_source_files": [
+    {
+      "path": ".claude/science/physics-loops/toe-massive-boost-carrier-20261012/EVIDENCE_MAP.json",
+      "bytes": 371463,
+      "sha256": "02ced6712c65fc3bdca59ab47bc03d946f798ec31d46a042f0bead196bbf4f78"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-massive-boost-carrier-20261012/PUBLICATION_EDITS.json",
+      "bytes": 20648,
+      "sha256": "8d294e3b9708f6bdd84b7c4518b1f2553fb6560c4e7b62f51a4460862778e52f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-massive-boost-carrier-20261012/SPECIFICATIONS.json",
+      "bytes": 213975,
+      "sha256": "dc4904b858db2735ac412ff7736101c1a071ca4c737ee7fa2b17586f8a8ea3a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-massive-boost-carrier-20261012/reconstruct.py",
+      "bytes": 3752,
+      "sha256": "b65a1d9cf478ddb35f5156939837354a58d52c9f5cb88b3c274819eca8b9eee4"
+    },
+    {
+      "path": "docs/MASSIVE_BOOST_CARRIER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 58208,
+      "sha256": "ba17b6881ec6e84d83a6c6d76ad57cc8200a07c8ded094ec11df79a3291fd18b"
+    },
+    {
+      "path": "scripts/massive_boost_carrier_2026_10_12.py",
+      "bytes": 13142,
+      "sha256": "cca0ccd5a0137bc76909612c44090cce7b300c567f938e13e8554dcb1845a35c"
+    }
+  ],
+  "outside_packet_payload_paths": [
+    "docs/MASSIVE_BOOST_CARRIER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "scripts/massive_boost_carrier_2026_10_12.py",
+    "logs/runner-cache/massive_boost_carrier_2026_10_12.txt",
+    "docs/audit/data/citation_graph_manifest.json",
+    ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/SOURCE_IDENTITIES.json",
+    "logs/runner-cache/microscopic_boost_flow_2026_10_12.txt",
+    "logs/runner-cache/gapped_boost_invariance_2026_10_12.txt",
+    "logs/runner-cache/nonisolated_fock_2026_10_12.txt",
+    "logs/runner-cache/weighted_current_closure_2026_10_12.txt",
+    "logs/runner-cache/integrated_boost_covariance_2026_10_12.txt"
+  ],
+  "old_packet_manifest_patch": {
+    "target": ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/SOURCE_IDENTITIES.json",
+    "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/SOURCE_IDENTITIES.json",
+    "before_sha256": "8019b92b0c9f00fc86effc79dd1f4d1b9ef44f8157b3b17b7e512901cd1462a7",
+    "before_bytes": 1351383,
+    "after_template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/old_manifest.after.json",
+    "after_sha256": "02c06d6277a01cd604a6b60cb1873eed1f57f3e8b48efeafb3ad9bb51d8b5577",
+    "after_bytes": 1351383,
+    "changes": [
+      {
+        "path": "logs/runner-cache/microscopic_boost_flow_2026_10_12.txt",
+        "before": {
+          "path": "logs/runner-cache/microscopic_boost_flow_2026_10_12.txt",
+          "bytes": 8593,
+          "sha256": "034fdf49677dbedf3ffe15827a16d0e7c75ba37af105160e98b08c87aad0b0e6"
+        },
+        "after": {
+          "path": "logs/runner-cache/microscopic_boost_flow_2026_10_12.txt",
+          "bytes": 8593,
+          "sha256": "c0d20ecfe56e8b41039f6f2ee6c4aa7a87c92c2c9badb2d3a2a5e09cd65ded8f"
+        },
+        "before_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Boost/cache.before.txt",
+        "after_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Boost/cache.after.txt"
+      },
+      {
+        "path": "logs/runner-cache/gapped_boost_invariance_2026_10_12.txt",
+        "before": {
+          "path": "logs/runner-cache/gapped_boost_invariance_2026_10_12.txt",
+          "bytes": 9020,
+          "sha256": "74bd4de99c4000551e0d545c3fed7ee0de3141f631818ec97a38e6ebf8116796"
+        },
+        "after": {
+          "path": "logs/runner-cache/gapped_boost_invariance_2026_10_12.txt",
+          "bytes": 9020,
+          "sha256": "b034d77d45d1e571fe4677b5994fc9a835152f6161c3eef2ed142607783df543"
+        },
+        "before_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Gapped/cache.before.txt",
+        "after_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Gapped/cache.after.txt"
+      },
+      {
+        "path": "logs/runner-cache/nonisolated_fock_2026_10_12.txt",
+        "before": {
+          "path": "logs/runner-cache/nonisolated_fock_2026_10_12.txt",
+          "bytes": 14606,
+          "sha256": "dadcc084106c97e9d4b535c05673597bc6e8c5f5938bc025a5555767c4bc900e"
+        },
+        "after": {
+          "path": "logs/runner-cache/nonisolated_fock_2026_10_12.txt",
+          "bytes": 14606,
+          "sha256": "d0dc5c63fa7a8efc7bb1d018eec96caeb83ec40c33f39cc8b24667912052e64e"
+        },
+        "before_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Nonisolated_fock/cache.before.txt",
+        "after_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Nonisolated_fock/cache.after.txt"
+      },
+      {
+        "path": "logs/runner-cache/weighted_current_closure_2026_10_12.txt",
+        "before": {
+          "path": "logs/runner-cache/weighted_current_closure_2026_10_12.txt",
+          "bytes": 8563,
+          "sha256": "52efcdc8cfcc005a1c218a85400f5c375eb92becde2922db6cd7496166564a3b"
+        },
+        "after": {
+          "path": "logs/runner-cache/weighted_current_closure_2026_10_12.txt",
+          "bytes": 8563,
+          "sha256": "f1767b375c064c88235a7c885f4b1f44d80f049eb0b7cdd300d58a2632849887"
+        },
+        "before_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Weighted_current/cache.before.txt",
+        "after_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Weighted_current/cache.after.txt"
+      },
+      {
+        "path": "logs/runner-cache/integrated_boost_covariance_2026_10_12.txt",
+        "before": {
+          "path": "logs/runner-cache/integrated_boost_covariance_2026_10_12.txt",
+          "bytes": 7280,
+          "sha256": "9e1d93e45c14749cdd90783c7b116bb93c08a818896cd2100b4abcc277f36feb"
+        },
+        "after": {
+          "path": "logs/runner-cache/integrated_boost_covariance_2026_10_12.txt",
+          "bytes": 7280,
+          "sha256": "707f116215610c5bd06d38f2130463df912efa189fb374de3be10a549eecc319"
+        },
+        "before_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Integrated_boost/cache.before.txt",
+        "after_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/published_boost_cache_input_repair/Integrated_boost/cache.after.txt"
+      }
+    ],
+    "entries_unchanged": 4091,
+    "scope": "Exactly five bytes/SHA cache records, no other row or metadata change. Old full manifest and all before/after cache bytes retained.",
+    "mathematical_changes": []
+  },
+  "fixed_evidence_maps": [
+    {
+      "path": ".claude/science/physics-loops/toe-boost-gap-fock-closure-20261012/EVIDENCE_MAP.json",
+      "bytes": 2436943,
+      "sha256": "31ffad0a59f2c679751c1b95a5f7e8bde210effa8d9f8bdfd657b2b39a1a7787"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-massive-boost-carrier-20261012/EVIDENCE_MAP.json",
+      "bytes": 371463,
+      "sha256": "02ced6712c65fc3bdca59ab47bc03d946f798ec31d46a042f0bead196bbf4f78"
+    }
+  ],
+  "generated_manifest_replacement": {
+    "target": "SOURCE_IDENTITIES.json",
+    "before_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree/.claude/science/physics-loops/toe-massive-boost-carrier-20261012/SOURCE_IDENTITIES.json",
+    "before_sha256": "c233a566efe461077f78e61a516991a2a6900c001f33fd7ce5c28cee83f13de3",
+    "after_rule": "Full bytes/SHA-256 for exactly every intended extension payload path except this manifest; no self-hash.",
+    "category": "administrative_manifest_refresh",
+    "mathematical_changes": []
+  },
+  "frozen_helper_origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/delivery_reconstruct.py",
+  "generated_records": {
+    "DELIVERY_EVIDENCE_MAP.json": "One object per exact SHA-256; every original alias and compressed hash retained.",
+    "DELIVERY_RESULT.json": "Actual completed pre-stage receipts only; later Git status stays external.",
+    "SOURCE_IDENTITIES.json": "All exact payload bytes except this manifest; self excluded.",
+    "DELIVERY_SOURCE_MAP.json": "This administrative procedure map; its bytes are bound by SOURCE_IDENTITIES.",
+    "delivery_reconstruct.py": "Exact frozen reviewed read-only source from delivery support."
+  },
+  "pairing": "Same selected model family and reasoning effort, separate author/reviewer contexts; not blinded or diverse-family. Root is coauthor. Mechanical delivery adds no independent science review."
+}

@@ -5410,3 +5410,38 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - small-N clocks.
 
   Referee running.
+
+#### C5 Round 16 referee verdicts, items 1–5 (recorded 23:22Z; codex gpt-5.6-sol, xhigh)
+
+- **R16-1 referee: CONFIRMED WITH CORRECTIONS. Reading DERIVED.**
+  - **Correction:** the uniform heavy expansion closes with a ≥ λ/2 denominator bound for large m near p = 0.
+  - **Statement.** At one loop, in Feynman gauge with Peierls coupling and fixed λ > 0: every box-exact Wilson law with nonnegative, nonzero W, an H2′ photon, and (H3) or (H3′) has δc_e = Lm + O(1) with L > 0, while the photon is O(m⁻²). So there is no interval zero.
+  - **Covers:** D1 (0 < r ≤ 1/√3) at b = 1.4, 1.2 and 1.0, and the selectron-only P-a variant.
+  - **Does not cover:** P-b, λ = 0, photon transitions on the Wilson edge, or the uniqueness of the zero near m ≈ 24.
+  - **Effect:** this closes S17's gap that the DERIVED subclass was only the literal edge already excluded by the Z width.
+- **R16-2 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Confirmed:** the q²F_s factorization; that the photon shift is independent of λ and of the internal photon symbol; the scalar runner; Lemma T′.
+  - **Conditional:** the count of 7 per species or 3 per charge class depends on F_s(0⁺) ≠ 0 class-wide, uniform mass control, and the additive-counterterm conventions.
+  - **Not proved:** class-wide F_s(0⁺) ≠ 0, the λ → 0 bound, the literal-corner accounting, convention-independent minimality.
+  - **Correction:** κ_γ is replaceable, not required.
+- **R16-3 referee: CONFIRMED WITH CORRECTIONS. Reading REFUTED** (universal T₂g negativity), within R9-9's prescription.
+  - **Z1 confirmed independently:** Ξ_M = +3.9047e-4, Ξ_U = +2.8101e-4 at m = 0.3.
+  - **Simultaneous zero:** a convex two-parameter mix gives a common E_g/T₂g zero for a chosen vertex.
+  - **B″ proved:** strict negativity for every admissible weight when |σ′| ≤ 1/√5 on stretches incident to a positive valley.
+  - **Not supplied from the axioms:** the Ward completion, the dressed matter pole, or the vacuum.
+  - **Dated correction:** S17's "T₂g never zeroed" (`C5_S17_synthesis.md:95,179`) and P63(i)'s "T₂g not reached" are superseded within the prescription.
+- **R16-4 referee: CONFIRMED WITH CORRECTIONS. Reading STATE-DEPENDENT** for 𝒢(1, 1/ℓ).
+  - Free TT data keep their initial energy, which exceeds the listed ρ_Λ budget by 2.4e3 to 5.9e19.
+  - **This is generic free-wave memory (as in GR), not a special mechanism of the E1 start.** The J₀ perturbation decays as t^{−1/2}.
+  - **Consequence:** E1 must either record nonzero initial TT data or impose zero TT data (P-r16a). That makes the AX:94 privilege question consequential, but leaves it unresolved.
+- **R16-5 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Confirmed:** for massive free single-band matter on T³, standard W2_pf has no physically nontrivial pair-stress completion: θ = 0, then g = 0. Pair terms cannot repair this because the identity separates by particle-number grade.
+  - **Not established:**
+    - the finite-band no-go;
+    - the redshift (observational) exclusion.
+  - **Live counter-routes:** C₂-exchanged bands, general 3D component mixing, singular or non-local generators.
+  - **Consequences:**
+    - no W2_pf-invariant pole split is available;
+    - the TT one-loop matter part is gauge-parameter-free;
+    - the matter pole is unprotected;
+    - R13-5's numbers stay W1- and prescription-scoped.

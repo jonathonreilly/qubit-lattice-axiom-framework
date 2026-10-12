@@ -1,24 +1,19 @@
 # Current ranked opportunity queue
 
-1. Finish independent H_* threshold verification and test the actual
-   small-fixed-time L2 error lower bound. Q's quantitative theorem is reviewed
-   and published in regular PR9487; its rate may now have a sharpness test.
-   The threshold law is still provisional and is not itself an actual-error
-   lower bound. Preserve every noncommuting and time-varying source term.
-2. Finish and separately check compact-detector PC using fixed-time compactness
-   and a uniform two-time nonstationary kernel estimate. E1–E18 reduction has
-   complete focused review; PC itself is new work. ND/energy capture remain
-   separate. Do not infer all-channel or full-GNS completeness from an isometry.
-3. After PC, rank a constructive no-undetected-state/energy-capture route
-   against the actual microscopic hypotheses. A gap alone does not supply
-   channels, detection coverage or a positive local-energy comparison.
-4. Keep the approximate-index physical bridge subordinate to constructive
-   full-GNS exhaustion. Under that explicit premise the earlier centre-to-shift
-   step already follows; avoid inventing a redundant index gap.
+1. Publish reviewed threshold and actual square-root sharpness in regular
+   PR9487; preserve full equations, source identities and all failed routes.
+2. Package the reviewed EX reduction and PC convergence in regular PR9486.
+   Detector convergence now has a direct proof; no-undetected-state ND remains.
+3. Finish and independently check construction of the selected scattering
+   projection from a rich countable family of positive detectors. Keep the
+   narrow-energy filtering and ordered resolvent limits explicit.
+4. Attack ND or an energy-capture estimate under actual microscopic premises.
+   A gap and isometry alone do not imply coverage or full-GNS exhaustion.
+5. Exact actual coefficients or larger-time boost sharpness are secondary
+   to the microscopic completeness bridge. Growing-window optimality is open.
 
-Published ten regular milestones9478–9487 remain open and unmerged. Fock is
-included in9486; K/Q in9487. Main/instructions and active9476/9477 sources were
-refreshed01:00:58 UTC and remain unchanged. Avoid the active chiral affine
-kernel lane. Preserve failed full inverse, operator-norm averaging, finite-bath
-recurrence, retained earlier norm obstructions and all proof-scope boundaries.
-One live checkpoint is here; each publication packet is only a frozen snapshot.
+Ten regular PRs9478-9487 remain open and unmerged. Main and instruction bytes
+unchanged01:32UTC; concurrent9477 at114c9718 has separate partner-rank work.
+Preserve failed full inverse, coarse propagator comparison, finite-bath
+recurrence, strong-adjoint shortcut and all previous adverse witnesses.
+One live checkpoint remains here; publication packets are frozen milestones.

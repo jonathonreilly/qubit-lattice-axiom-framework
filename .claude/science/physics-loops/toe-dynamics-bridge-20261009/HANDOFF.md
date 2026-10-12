@@ -10,26 +10,26 @@ math is authorized. Keep the user-selected model and reasoning effort.
 ## Active paths, identities and recovery
 
 Active publication pointer: sibling quantitative_boost_worktree, branch
-physics-loop/toe-boost-quantitative-outgoing-20261012, clean at
+physics-loop/toe-boost-quantitative-outgoing-20261012, currently dirty at
 36d6069676f561d81ad693f286dd52f570fb37df. Regular PR9487 is OPEN,
 isDraft=false, MERGEABLE, attached, stacked on boost PR9484 at
 773321aa8fdfccc05248682dfc96bf94215034a2. It contains both reviewed K/Q
 full notes, controls, caches and source-bound evidence. Parent boost_worktree
 remains unchanged and clean. scattering_worktree is clean at
 c3f84746b1991e0a15c6da79d049b89d9469f727, PR9486 including reviewed Fock.
-Root alone writes Git science. New threshold, actual-error and detector
-research remains external in sibling resume_20261011 (S). Frozen sources
+Root alone writes Git science. New research remains external in sibling resume_20261011 (S); QW now also
+contains the two untracked S/L primaries and their composition map. Frozen sources
 must not be edited under review.
 
 One live campaign checkpoint remains here in sibling worktree, branch
 physics-loop/toe-nonlinear-transport-20261011 (#9478). Previous complete state
-and handoff are losslessly archived at history/20261012T010306Z_*.gz. Previous
-checkpoint revision f7af6efac3f681a1797dcb1031d78518c87c1afd. Older full proofs and failed routes remain
+and handoff are losslessly archived at history/20261012T013609Z_*.gz. Previous
+checkpoint revision 6eae162d34e60436e51f117a0f6d88c85fa8bc71. Older full proofs and failed routes remain
 in those histories and their original source-bound evidence packets. No
 primary checkout edits. The app's managed-worktree tool is unavailable from
 the non-Git chat cwd; owned standard Git worktrees were used.
 
-Latest fetched main a13caa4885f547c8d206265b031ba7649e539fd9 (01:00:58 UTC on2026-10-12).
+Latest fetched main a13caa4885f547c8d206265b031ba7649e539fd9 (01:32:28 UTC on2026-10-12).
 Instruction revision 3a4b2c66a1ead7a1c48b4359627e968f681e3c39. Previously
 read instructions remain byte-verified:
 AGENTS f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f;
@@ -54,7 +54,7 @@ All ten verified OPEN, isDraft=false, attached; none merged.
 |9484|Boost brackets, sharp norm threshold and all-component actual expectations|773321aa8fdfccc05248682dfc96bf94215034a2; parent9479; boost_worktree clean|
 |9485|Approximate partial-factor index and tube scaling|b8402c17d337f371c0c73696ef170727de9ab5bd; main a13caa48; index_worktree clean|
 |9486|Compact-patch scattering, covariance and Fock isometries|c3f84746b1991e0a15c6da79d049b89d9469f727; main a13caa48; scattering_worktree clean|
-|9487|Effective outgoing forcing, quantitative actual correction and growing-time means|36d6069676f561d81ad693f286dd52f570fb37df; parent9484; explicit cross-PR9481 memory import; quantitative_boost_worktree clean|
+|9487|Effective outgoing forcing, quantitative actual correction and growing-time means|36d6069676f561d81ad693f286dd52f570fb37df; parent9484; explicit cross-PR9481 memory import; quantitative_boost_worktree has unpublished S/L additions|
 
 Each complete packet states its premises, shared-source limits and failures.
 Global combined audit pipeline and strict audit lint were not run; independent
@@ -370,65 +370,132 @@ The paper's global geometric-shell theorem is not literally imported. Its
 printed impossible page4 empty-set clause is disclosed. Other primary proof
 reading limits are explicit; root does not certify fullDG/Kruse/Graf proofs.
 
-## Active detector, threshold and actual-error work
+## S threshold and L actual sharpness: complete source reviews, publication preparing
 
-compact_detector_convergence is authoring
-COMPACT_DETECTOR_CONVERGENCE_PROBE.md / compact_detector_convergence/.
-Candidate PC route: S_t strong gives w_t=S_t*psi weak convergence. For fixedt,
-K_t=exp(itSigma)g h_t exp(-itSigma) is finite rank on the lattice. Reverse
-the exact scalar Duhamel integral and use convex separated velocity supports
-to control h_t exp(i(s-t)Sigma)g0(1-chi_s) for s>=t. Both Schur sums,
-sign, s≈t regime, full-source Fourier support and all domain limits must be
-proved. This is a candidate, not a completed theorem or review. ND remains
-separate. Root supplied critical checks and cannot independently review it.
-
-HSTAR_THRESHOLD_SPECTRAL_PROBE.md is frozen,445lines,
+S source HSTAR_THRESHOLD_SPECTRAL_PROBE.md,445lines,
 6856c6ff02c50b2357fbda4f2c0dbc2833362965df7ef2efddb3e925b463f6da;
-receipt384a4a5f62310a3f77a138467690f14bbd51042ced9ede6aa3a51a861eddfc92.
-Root read its complete S1–S20 proof, but not yet its helpers/logs/receipt.
-Fresh hstar_threshold_review is independently checking the full argument
-before author evidence; no verdict is assumed. It reads Teschl's required
-original proofs from the author-hosted PDF; source identity/reading scope
-must be checked. Author report:36controls,6literal defects,47bindings, still
-requiring root evidence read. No Q conclusion is a premise of this theorem.
+review913a9c81f6361981041034059cb2fc12f1485e257c18e9576cd016ffd74eda05;
+receipt0e1cea8a04c122f4ae00af226ae3f2dd9d159701ae70d82671aa3eb42b57003c.
+Separate376-line reconstruction0f66243e7a8322c1649990da27f56e509b1f18904ca2826d257e88ef05568377
+was frozen01:06:41 UTC before author controls. No required correction S1-S20.
+Root read full proof/helper/36controls/all6failures and full separate review,
+reconstruction,199-line control and all8records.47author,121review,13freeze
+bindings match; source pairs and exact mutations checked. Root records
+S_root_author_coverage.json and S_root_review_coverage.json preserve scope.
 
-CandidateS: physical longitudinal AA*=M_h²-|h><h|,h=2epsilon;
-G(z)=1-1/[zF_Y(z)], zeroatom1/I0. Eightcones give
-rhoY(s)=sqrt(s)/(4pi²)[1+s/8+O(s²)]. ExplicitPV subtraction gives
-ReF_+(s)=-I0+O(s), and local uniform inversion excludes hidden singular mass.
-After zeroatom removal and square-to-signed pushforward,
-rhoQh0(E)=1/(4pi²I0²)+O(E²). Free primitive norm² is
-|t|lambda/(2pi I0²)+O(lambda²), with a uniform remainder. This alone does
-not establish a lower bound for the full noncommuting actual error.
+The physical square AA*=M_h2-|h><h| gives G=1-1/(zF), zeroatom1/I0.
+Eight-cone coarea and uniform boundary subtraction identify the entire local
+measure, excluding hidden singular mass. After atom removal and the signed
+square-root Jacobian, rho_Qh0(E)=1/(4pi² I0²)+O(E²). The free primitive norm²
+equals |t|lambda/(2pi I0²)+O(lambda²), uniformly in t with explicit remainder.
+No actual lower bound follows from S alone. Teschl Theorems3.1,3.7,3.21 and
+necessary proofs read at the pinned official2009 edition, SHA8dc8de0b58aa0a3fedfe594a345f9b5875322e5526ea581cb640a98d55b82818.
+Root original-page coverage is S_root_teschl_read_identity.json. No book
+redistributed. Reviewer auxiliary cube count initially doubled I0; independent
+Laplace integral exposed it. Failed source/logs and exact correction survive.
 
-boost_kernel_dynamics now tests ROOT_ACTUAL_CORRECTOR_LOWER_LEAD.md in
-ACTUAL_CORRECTOR_SMALL_TIME_LOWER_PROBE.md / actual_corrector_small_time_lower/.
-The lead adapts Q7's cutoffdelta=min(1,lambda/s) to give a general weighted
-free primitive bound K_R R sqrt(lambda s). A bounded perturbation acts on
-that small primitive through an exact noncommuting Duhamel identity. Fubini
-retains the changing residual r' and the exact e_lambda term. Proposed error
-from the initial free primitive is sqrt(lambda)[A t^1.5+B t^2.5]+O(lambda),
-so provisionalS20 could imply actualL2Theta(sqrtlambda) for everyfixedt in
-a nonempty smallpositiveinterval. No leading coefficient, growing-time
-optimality, mean lower bound or accepted proof yet. S remains an explicit
-provisional dependency until its independent review finishes.
+L source ACTUAL_CORRECTOR_SMALL_TIME_LOWER_PROBE.md,406lines,
+972b66765f82346a9fb3a4171350b8136a4fb80671f99b4d35355d0388d09ef3;
+reviewc4b93e4fdec0e68dc0357509ed6bb0ba6b2dc0b3376e6f407cde4d972b26968d;
+receipt61845782fd71dd0bda01abaa6eab7fb83ea96044b62949a79931a4afc90b294e.
+The287-line independent reconstruction49a4255bf7744f088586ea1fa4a19cf43579ec9bf02efeda54c9e7da2d70b0a4
+and exact rational degree7 control were frozen01:23:44 UTC. No required
+correction L1-L20. Root complete proof/author and separate evidence reads
+recorded in L_root_author_coverage.json and L_root_review_coverage.json:
+58author136review8freeze bindings,12author8review source pairs. Baseline and
+all7actual defects reproduced with byte-identical stdout/path-normalized
+tracebacks; independent rational controls discriminate8wrong identities.
+Reviewer receipt-path error and root identity-only PC-entry schema error are
+preserved; neither changed science or a tolerance.
 
-Root plus PCauthor, Hstarreviewer and actual-errorauthor occupy all4slots.
-Former EX and Q reviewers completed. No additional agent/other-chat message
-or model override is authorized beyond the bounded skill delegation scope.
+L proves ||J_H(s)f||<=K_R R sqrt(lambda s) for all s using the time-adapted
+physical mean-subtracted cutoff and the Hilbert small-s bound. Noncommuting
+primitive comparison keeps U_G V J_H. Hilbert Fubini keeps r' and full
+e_lambda, giving ||D+iJ_H r0||<=sqrt(lambda)(A_L t^1.5+B_L t^2.5)
++M lambda t(1+t), A_L=6K_R M,B_L=8K_R M/5,M=406c0m.
+c_init=c0||a0||/(sqrt(2pi)I0)>0; t0=min(1,c_init/[2(A_L+B_L)])
+has explicit lower bound t_bar=5/[15428pi sqrt(3pi)K_R]~7.07734e-6.
+For each fixed0<t<=t0 the actual error has positive finite sqrt(lambda)
+liminf/limsup. For lambda<=the exact L20 threshold, the finite bounds are
+c_init sqrt(lambda t)/4 <=||D||<=7c_init sqrt(lambda t)/4.
+No exact actual coefficient, H1 asymptotic, mean lower bound or growing-time
+optimality. S-pending wording is updated only in the publication copy.
+
+QW at36d6069676f561d81ad693f286dd52f570fb37df now has two untracked complete
+primaries and toe-boost-threshold-sharpness-20261012/PRIMARY_COMPOSITION.json.
+S primary1e888faba4055dbf318d740114276d70d6cecf33baf7b46d7a1978cbafc98e9b;
+L primary6cc5f31b85dfa3d100a8754abf6e111d2b8aea80f2d72207e9c27438a140c26d.
+All13actual whole-primary defects fail at intended checks, full outputs read,
+S/sl_primary_mutations/. Canonical execution has not yet occurred. External
+prepare_sl_notes.py, prepare_sl_packet.py and finish_sl_delivery.py exist but
+have not run. They gate on the completed root L coverage. Next: full note/maps,
+canonical caches, graph expected+2nodes/+4edges, focused compatibility,
+vocabulary fix/report, exact staged identities, then extend regular PR9487.
+Existing K/Q notes and primaries remain unchanged. No new PR needed.
+
+## PC detector convergence: complete source review, not yet published
+
+COMPACT_DETECTOR_CONVERGENCE_PROBE.md,339lines,
+bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64;
+authorreceiptde9a4acddf3c08b406c5dd74cae01d206e1e0a9ab2d804489ddc9ae42d0eca06.
+Review2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0;
+receipte9fb01e5d88618f1905a7426d07991e0a96e88cdd32a8d996b4caa92bd39db5d.
+Independent reconstruction and distinct Fourier kernel control frozen01:21:51
+UTC, record4d75d0893cc6fdddb207dd31ddd137359874183b2f8b8b8878382c21adaa8702.
+No required correction C1-C28. Publication may clarify density as linear span
+of smooth products. Root full reads and bindings in PC_root_author_coverage.json
+and PC_root_review_coverage.json:63author90review38freeze entries,6literal
+mutations, all controls and tracebacks. Finite Schur sums have no tail proof.
+
+The entire scalar source has exact full-operator Fourier support qR=R.
+S_t converges strongly, so w_t=S_t*psi converges weakly. Fixed-t K_t is finite
+rank. Reversed Duhamel plus convexly separated velocities gives the two-time
+bound for all s>=t>=1, including s=t, with both Schur sums and source filter
+order intact. Take T->infinity at fixedt before t->infinity. The result is
+u_t->h(v)S*psi and rapid uniform decay on finite-energy Hsc-perpendicular
+unit balls. With the exact energy-only vacuum remainder and unique vacuum,
+positive Q_J(t) converges strongly to PJ S h(v)S* PJ; its range lies in Hsc.
+No ND, EX, family-uniform estimate or physical realization. The source typo
+in Dybalski B17 needs a third-derivative sum, not difference; root viewed
+originalp12, and this formula is unused in the new proof.
+
+Package the already reviewed EX reduction and PC together in existing PR9486.
+SW remains clean atc3f84746b1991e0a15c6da79d049b89d9469f727; no EX/PC
+publication edits started. Preserve primary PDFs/images externally with
+exact identities; publish own notes, reconstruction and finite evidence.
+
+## Active next derivation: detector reconstruction of the scattering projection
+
+Agent compact_detector_convergence is authoring
+DETECTOR_SCATTERING_PROJECTION_PROBE.md / detector_scattering_projection/.
+Root lead ROOT_DETECTOR_SUPPORT_PROJECTION_LEAD.md is a proposal only.
+Use finite partitions, creator filters equal1on packet pieces, narrow total
+energy window and full PJ to construct a rich countable admissible family.
+Desired conclusion: closureRan K_J=PJ Hsc, kerK_J|PJ=PJ Hsc-perp, with
+K_J=sum2^-alpha Q_alpha/(1+B_alpha), then
+PJ Psc=stronglim_eta->0 K_J(K_J+eta)^-1 PJ. Finite detectors approximate in
+ordered t, family-truncation m, then eta limits, with tail2^-m/eta.
+Proposed finite response lower witness uses the positive finite Q_alpha(t)
+and rapid decay on the undetected complement; it needs controlled constants
+and cannot certify complement membership from zero finite response.
+This is not yet a checked theorem. PC is now reviewed, so its status may be
+refreshed without changing frozen sources. A separate checker is needed.
+Root supplied the lead and is not independent. One agent stream disconnect
+before output was recorded and recovered without source loss.
 
 ## Freshness, lock and continuation
 
-Fresh fetch and exact source check2026-10-12 01:00:58 UTC: origin/main
-a13caa4885f547c8d206265b031ba7649e539fd9 and ai/execution3a4b2c66a1ead7a1c48b4359627e968f681e3c39
-unchanged. AGENTS/CLAUDE/SCIENCE_WORKFLOW identities match the earlier complete
-reads.16openPR inventory S/open_prs_0103.json. Candidate9476 remains0cc560e3935fa1ad7623592bf9974680c922d52d;
-chiral9477 remains3e6cb6420767ec067b847b7bf7956ee232eca277. No new source
-science adopted. All relevant scientific parents unchanged. S/repo_sync_0103.json
-and kq_pr_verified.json preserve exact status. Primary checkout untouched.
+Fetch and inventory2026-10-12 01:32:28 UTC: maina13caa4885f547c8d206265b031ba7649e539fd9
+and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged. All3instruction
+hashes match prior complete reads. S/repo_sync_0135.json and open_prs_0135.json
+record exact PRs. Candidate9476 unchanged0cc560e3935fa1ad7623592bf9974680c922d52d.
+Chiral9477 advanced114c9718d19645bd67ec203faadc6f89a2d7a507: complete changed
+HANDOFF/QUEUE/STATE read for overlap only, cycles66-68 partner-rank work.
+No changed chiral proof adopted or certified; avoid this active lane.
+All relevant scientific parents unchanged. Primary checkout untouched.
 
-Lock refreshed2026-10-12 00:48:35.321457 UTC, expires01:48:35.321457 UTC.
-Refresh by01:30 UTC with the same owner from this transport worktree.
-Fixed deadline remains2026-10-12 16:00:52 UTC. Continue useful science, do
-not stop after one result or PR. At deadline preserve/checkpoint, report and
-disable the heartbeat. No merge, main push, audit verdict or axiom edit.
+Lock refreshed2026-10-12 01:21:43.962700 UTC, expires02:21:43.962700 UTC.
+Refresh by02:05 UTC with same ownercodex-toe-native-20261011 from transport W.
+The fixed deadline remains2026-10-12 16:00:52 UTC. Continue useful science;
+at deadline checkpoint/report/disable heartbeat. No science merge, main push,
+audit verdict, axiom or prompt edit, other-chat message or deadline extension.

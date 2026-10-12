@@ -12,7 +12,7 @@
   "checkpoint_minutes": 30,
   "deep_block_minutes": 90,
   "cycles_completed": 0,
-  "active_route": "shared scalar source/profile/noise reconstruction with distinct quantum-boundary alternative",
+  "active_route": "Observations constrain a common gravity response through full disk fields and the solar quadrupole. Distinct quantum-composition and matter routes remain open.",
   "actual_current_surface_status": "conditional-support",
   "target_claim_type": "bounded_theorem",
   "trace_class": "frontier_discovery",
@@ -23,11 +23,11 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Personally reconstruct the positive solar kernel and derive response bounds from acceleration constraints; implement the actual QUMOND disk field to test the algebraic-to-field gap.",
+  "next_exact_action": "Finish foreground numerical extension session27539 to the six frozen sources, preserving any gate failure. Parent authors shared response reconstruction with explicit external-field conversion; freeze the inverse family before fitting.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-12T19:05:00.475532+00:00",
-  "current_block": "direct-observation-response-inversion",
+  "last_checkpoint_at": "2026-10-12T19:34:58.051901+00:00",
+  "current_block": "direct-field-expansion-and-response-inversion",
   "current_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
@@ -53,7 +53,8 @@
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
     "finite local realization and joint approximation",
-    "conditional two-radius source reconstruction"
+    "conditional two-radius source reconstruction",
+    "direct full-field forward comparison at three frozen galaxy sources"
   ],
   "milestone_worktree": "/private/tmp/observations-positive-response-20261012",
   "milestone_branch": "codex/observations-positive-response-20261012",

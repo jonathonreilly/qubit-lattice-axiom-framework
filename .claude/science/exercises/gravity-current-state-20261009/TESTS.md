@@ -4523,3 +4523,20 @@ Readings:
   - Minimal price: a preferred frame plus one cone regulator.
 
   Referee running.
+
+### C5 Round 12, item 7 (pre-registered 19:48Z; launched now; conditional on R12-4, whose referee is running)
+
+**R12-7. Set A, route E2: classical metric records with frame friction on gravitational waves, G = g/(s + iγω).**
+- R12-4's worker (unrefereed) finds that, outside the unified no-go class 𝒰, a stationary CQ model with damped classical TT waves has both matter decoherence and the metric record locally finite. At γ ≈ H₀ the GW amplitude loss is 0.45% at 40 Mpc, inside LIGO's 6.75e-4 Mpc⁻¹ bound.
+- Construct E2 explicitly:
+  - (a) a stationary non-demolition meter dilation with frame friction, and where the damped wave energy goes (an energy sink);
+  - (b) causality and positivity;
+  - (c) GW170817's speed (c_T), the binary-pulsar orbital decay (Hulse–Taylor: radiated power at the source), and LIGO amplitude–distance consistency against standard sirens;
+  - (d) whether friction changes the Newtonian static limit or R6-4's lab window;
+  - (e) the PPN preferred-frame α₁ and α₂;
+  - (f) the price list against the axiom texts.
+
+Readings:
+- **VIABLE:** an explicit stationary E2 model passing every stated test on a stated (γ, ℓ_s) region, with prices named.
+- **EXCLUDED:** a refereed inconsistency, or a violated stated bound for every γ.
+- **OPEN:** otherwise.

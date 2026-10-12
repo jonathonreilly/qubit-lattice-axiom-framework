@@ -1,18 +1,18 @@
-# Current ranked opportunity queue
+# Ranked queue, 2026-10-12 05:25 UTC
 
-1. Resolve focused reviews of nonisolated-mass scattering, centre regularity and
-   strong microscopic joint flow; publish accepted coherent regular milestones.
-2. Test the narrow-time-window route from nonisolated scattering to selected Fock
-   isometries, with actual clustering volume powers and all finite-energy terms.
-3. Use the finite local current-conservation criterion to seek actual compatible
-   interactions, once its proof is independently checked.
-4. Construct actual regular almost-local seed classes with justified spectral
-   representations and target density; conditional abstract density is insufficient.
-5. Find a microscopic realization and justified enlarged channel selection.
-   Do not seek generic ND for the obstructed common-q sector. Boost sharpness is secondary.
+1. Publish reviewed mass/centre/joint-flow milestone after final root joint-review
+   evidence read and exact reviewed general-beta repair.
+2. Finish full root review of frozen weighted-boost and nonisolated Fock results;
+   independent source reviews are complete, application hypotheses stay explicit.
+3. Complete independent and root review of gap-derived boost-state invariance.
+4. Develop finite weighted-current Lie-closure criteria and concrete compatible
+   interactions; inspect PR9475 ownership before broad NN classification.
+5. Construct actual regular creators, centre-rate/density, justified enlarged
+   scattering channels and microscopic realization. No generic ND for obstructed
+   common-q range; no conditional theorem implies an intended physical model.
 
-Ten regular PRs9478–9487 remain open/unmerged. Centre/currentdc7f415 in9486
-and S/L433f641 in9487 are published. Main/instructions unchanged03:30UTC.
-9476 owns field-dependent gravity Ward work;9477 owns chiral rank pencils.
-Preserve all counterexamples/failures. No draft, audit verdict, merge, main push,
-axiom edit, other-chat message or deadline extension. One live checkpoint.
+Ten regular PRs9478-9487 remainopen/unmerged. Main/planning/instructions unchanged
+05:25. PR9477 advanced to64a46f; newscienceownershipreadpending, notimported.
+RootownsGit/publication; exactauthor/reviewevidenceinS andone livecheckpointhere.
+No draft,mainpush,merge,auditapplication,axiomchange,other-chatmessage ordeadline
+extension. Stopnewresearch2026-10-12 16:00:52UTCanddisableheartbeat.

@@ -4726,3 +4726,9 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
   - Lemma VO: T_orb = t_coll, so the P-T filter needs memory ≳ t_coll.
 
   Referee running.
+- **R13-6 (start-time CQ dilation):** worker reading EXCLUDED for the literal class (a no-go); OPEN once the gain is repaired.
+  - **Lemma D:** R11-5's causal frame-tied gain delays the mean field. That drags moving bodies, violating double-pulsar timing by 1e11–1e15 for every ℓ_s. The same mechanism suggests γ ≲ 0.03 H₀ for R12-7's friction route.
+  - **The repair:** a zero-first-moment gain (n ≥ 4). It passes all stated tests, including noise-fed PPN.
+  - **Correction to R11-5:** its profile has no positive Lorentzian synthesis measure.
+
+  Referee running.

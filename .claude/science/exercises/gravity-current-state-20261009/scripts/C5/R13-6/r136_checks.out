@@ -1,0 +1,138 @@
+[1] causal spectral factor of the saturated split (per frame mode, W = c|k| = 1)
+    Laplace identity int_0^inf J0(Wt) e^(iwt - eta t) dt = (W^2 + (eta - i w)^2)^(-1/2): max rel. error over 12 points (eta = 0.2, 0.05) = 1.7e-15
+    eta -> 0+: w= 0.50: |H|^2 = 1.333333e+00 vs 1/|W^2-w^2| = 1.333333e+00
+    eta -> 0+: w= 0.99: |H|^2 = 5.025126e+01 vs 1/|W^2-w^2| = 5.025126e+01
+    eta -> 0+: w= 1.01: |H|^2 = 4.975124e+01 vs 1/|W^2-w^2| = 4.975124e+01
+    eta -> 0+: w= 3.00: |H|^2 = 1.250000e-01 vs 1/|W^2-w^2| = 1.250000e-01
+    UHP scan (Im w in [1e-6,1e2], Re w in [-5,5]): min |H| = 9.987e-03, max |H| = 7.071e+02 (finite, nonzero: H and 1/H analytic in the UHP)
+    => H is causal (theta(t) J0(Wt)); 1/H = (W^2 - (w+i0)^2)^(1/2) is analytic in the UHP with |1/H| <= |w| + W: causal by Paley-Wiener-Schwartz (a distribution of order 1)
+    (J0*J0)(t= 1.0) = +0.84147098 vs sin(t) = +0.84147098  [G_R = H^2 in the time domain]
+    (J0*J0)(t= 5.0) = -0.95892427 vs sin(t) = -0.95892427  [G_R = H^2 in the time domain]
+    (J0*J0)(t=20.0) = +0.91294525 vs sin(t) = +0.91294525  [G_R = H^2 in the time domain]
+    arcsine synthesis: int cos(w't) dmu(w') = +0.9384698072 vs J0(t) = +0.9384698072 (dmu = dw'/(pi sqrt(W^2-w'^2)) >= 0 on |w'|<W)
+    arcsine synthesis: int cos(w't) dmu(w') = -0.2600519549 vs J0(t) = -0.2600519549 (dmu = dw'/(pi sqrt(W^2-w'^2)) >= 0 on |w'|<W)
+    arcsine synthesis: int cos(w't) dmu(w') = -0.1698542522 vs J0(t) = -0.1698542522 (dmu = dw'/(pi sqrt(W^2-w'^2)) >= 0 on |w'|<W)
+    subtraction: none
+
+[2] near-cone suppression e(s) = eps + (1-eps) s^2/(s^2+d^2) = (s^2 + eps d^2)/(s^2 + d^2), d = sqrt(eps)
+    eps=1e-02: max |e_+(w)|^2/e(s) - 1 on real w = 1.0e-14; zeros at +-Re-i*5.00e-03, poles at +-Re-i*4.99e-02 (all in the LHP: e_+ and 1/e_+ outer)
+      plateau: e(s=eps) = 1.98e-02 (~2 eps), e(s=sqrt(eps)) = 0.505
+    eps=1e-06: max |e_+(w)|^2/e(s) - 1 on real w = 1.7e-13; zeros at +-Re-i*5.00e-07, poles at +-Re-i*5.00e-04 (all in the LHP: e_+ and 1/e_+ outer)
+      plateau: e(s=eps) = 2.00e-06 (~2 eps), e(s=sqrt(eps)) = 0.500
+    R11-5 profile, eps=1e-02: Stieltjes density negative on t in [1.02e-04, 9.90e-03] (min -1.34e+05): NO positive cone-centred Lorentzian measure
+    R11-5 profile, eps=1e-04: Stieltjes density negative on t in [1.02e-08, 9.99e-05] (min -1.35e+09): NO positive cone-centred Lorentzian measure
+    NNLS cone-centred Lorentzian fit (200 widths 1e-7..1e2), eps=1e-02: max relative error = 0.48 (no positive measure reproduces it)
+    arctan member (eps=1e-04, b=0.01): D = (1/2|u|)[1+(1/eps-1)(2/pi)atan(b/|u|)] = (1/2) int rho(t) dt/(u^2+t), rho >= 0; quadrature vs closed form max rel. error = 6.4e-04
+      u=1e-05: P_J/(|u|/2) = 1.001e-04
+      u=1e-03: P_J/(|u|/2) = 1.068e-04
+      u=1e+00: P_J/(|u|/2) = 1.547e-02
+    subtraction: none
+
+[3] single port vs parallel bank (baseband u, single-mode QND elements chi = 1/(G/2 - i u), a_i = lam sqrt(G) chi)
+    cascade of 3 elements: max ||gain|/|H_x| - 1| over u in [-5,5] = 6.7e-16 (single port: exactly saturated, S_imp S_FF = |gain|^2/4)
+    parallel bank, Gamma in [1e-03, 1] (8/decade, 25 elements): causal saturating combination needs the all-pass B with group delay 1.60e+04 (units 1/band) ~ 16.0/Gamma_min
+    parallel bank, Gamma in [1e-06, 1] (8/decade, 49 elements): causal saturating combination needs the all-pass B with group delay 1.60e+07 (units 1/band) ~ 16.0/Gamma_min
+    parallel bank, Gamma in [1e-09, 1] (8/decade, 73 elements): causal saturating combination needs the all-pass B with group delay 1.60e+10 (units 1/band) ~ 16.0/Gamma_min
+    => a parallel bank is either unsaturated (R12-7: X up to 2.47) or carries a Hubble-scale record delay when Gamma_min ~ 1/t_H; the single-port factor has neither
+
+[4] finite start: metric-record noise per mode with the saturated split, h_noise(t) = int_{t0}^t J0(W(t-t')) xi(t') dt', S_xi = 1/2
+    T=1e+02/W: Var h = 1.155374 (asymptotic (ln 8WT + gamma_E)/(2 pi) = 1.155756); Var hdot/W^2 = 0.837832; energy/mode ~ W^2(Var h + Var hdot/W^2)/2 = 0.99660
+    T=1e+03/W: Var h = 1.522253 (asymptotic (ln 8WT + gamma_E)/(2 pi) = 1.522224); Var hdot/W^2 = 1.203884; energy/mode ~ W^2(Var h + Var hdot/W^2)/2 = 1.36307
+    T=1e+04/W: Var h = 1.888685 (asymptotic (ln 8WT + gamma_E)/(2 pi) = 1.888691); Var hdot/W^2 = 1.570388; energy/mode ~ W^2(Var h + Var hdot/W^2)/2 = 1.72954
+    T=1e+05/W: Var h = 2.255158 (asymptotic (ln 8WT + gamma_E)/(2 pi) = 2.255159); Var hdot/W^2 = 1.936850; energy/mode ~ W^2(Var h + Var hdot/W^2)/2 = 2.09600
+    => finite at every finite age, growing as (1/pi) ln(W T) per mode (both quadratures); stationary limit infinite (Theorem U). subtraction: none
+    record energy E(T) = 2 int_0^U du P(u) sin^2(uT/2)/u^2, near-cone baseband, P(u) = e(u) sqrt(u^2+u0^2)  (u0 = s0 regulator of R11-5)
+    eps=1e+00, u0=0e+00: E(T=1e4..1e14) = 9.793, 14.4, 19, 23.61, 28.21, 32.82; dE/dlnT = 1.00e+00, 1.00e+00, 1.00e+00, 1.00e+00, 1.00e+00
+    eps=1e-04, u0=0e+00: E(T=1e4..1e14) = 4.607, 4.606, 4.607, 4.607, 4.608, 4.608; dE/dlnT = -1.40e-04, 1.00e-04, 1.00e-04, 1.00e-04, 1.00e-04
+    eps=1e-04, u0=1e-10: E(T=1e4..1e14) = 4.607, 4.606, 4.607, 4.607, 4.623, 6.178; dE/dlnT = -1.40e-04, 1.00e-04, 1.12e-04, 3.38e-03, 3.38e-01
+    => s0 = 0 (finite start, no coherence-time regulator): secular slope -> eps forever (eps ln T); s0 > 0: linear once T >> 1/s0 (referee's point)
+
+[5] matter side at finite age (W = 1)
+    null transfer (W_m = W): P(T=50) = 398.102;  P/T^2 = 0.1592  | off-cone W_m = 0.3 W: P/T = 0.5700 (stationary rate S_x(0.3) = 0.5495)
+    null transfer (W_m = W): P(T=200) = 6366.300;  P/T^2 = 0.1592  | off-cone W_m = 0.3 W: P/T = 0.5553 (stationary rate S_x(0.3) = 0.5495)
+    null transfer (W_m = W): P(T=800) = 101857.766;  P/T^2 = 0.1592  | off-cone W_m = 0.3 W: P/T = 0.5513 (stationary rate S_x(0.3) = 0.5495)
+    => near-null decoherence finite at every age (grows ~T^2 instead of being infinite); off-cone transfers converge to the stationary rate
+    finite-start correction to the off-cone stationary kernel at age T: relative ~ |J0 tail| ~ (2/(pi W T))^(1/2) per amplitude; for the rate, the
+      lab k = 1/(1 um): W = 3.00e+14 s^-1, 1/(W t_H) = 7.7e-33  (subtraction: the stationary kernel)
+      k = 1/AU: W = 2.00e-03 s^-1, 1/(W t_H) = 1.1e-15  (subtraction: the stationary kernel)
+      k = 1/(1 kpc): W = 9.71e-12 s^-1, 1/(W t_H) = 2.4e-07  (subtraction: the stationary kernel)
+
+[6] near-cone record budget at t_H (R11-5 normalization: O(1) tensor weights, Isaacson premise; suggested)
+    (A) strict K_eps (tau = l/c): eps needed for rho_GW < rho_L with L_eff = ln(eps c t_H/l) (referee R11-5 correction):
+      l=1e-08: eps < 1.2e-16 (L_eff = 41.9)
+      l=2e-07: eps < 1.6e-11 (L_eff = 50.7)
+      l=1e-06: eps < 9.3e-09 (L_eff = 55.5)
+      l=5e-06: eps < 5.4e-06 (L_eff = 60.2)
+    (B) tau_c extension: delay-compensated gain F_t(w) = (1 - i n w tau_c)(1 - i w tau_c)^(-n), n = 4; |F_t|^2 = (1+n^2 x^2)/(1+x^2)^n
+      l=4e-10 m, c tau_c=1e-04 m: log variant rho_GW(t_H) = 7.5e+00 rho_L; quasi-static TT = 1.4e+04 rho_L
+      l=4e-10 m, c tau_c=1e-02 m: log variant rho_GW(t_H) = 7.0e-08 rho_L; quasi-static TT = 1.4e-02 rho_L
+      l=4e-10 m, c tau_c=1e+00 m: log variant rho_GW(t_H) = 6.5e-16 rho_L; quasi-static TT = 1.4e-08 rho_L; chain-only linear variant = 6.3e+09 rho_L
+      l=4e-10 m, c tau_c=6e+01 m: log variant rho_GW(t_H) = 6.6e-23 rho_L; quasi-static TT = 8.6e-14 rho_L; chain-only linear variant = 1.3e+01 rho_L
+      l=4e-10 m, c tau_c=3e+02 m: log variant rho_GW(t_H) = 7.2e-26 rho_L; quasi-static TT = 5.3e-16 rho_L; chain-only linear variant = 2.8e-03 rho_L
+      l=1e-06 m, c tau_c=1e-04 m: log variant rho_GW(t_H) = 7.4e+00 rho_L; quasi-static TT = 5.6e+00 rho_L
+      l=1e-06 m, c tau_c=1e-02 m: log variant rho_GW(t_H) = 7.0e-08 rho_L; quasi-static TT = 5.7e-06 rho_L
+      l=1e-06 m, c tau_c=1e+00 m: log variant rho_GW(t_H) = 6.5e-16 rho_L; quasi-static TT = 5.7e-12 rho_L; chain-only linear variant = 6.3e+09 rho_L
+      l=1e-06 m, c tau_c=6e+01 m: log variant rho_GW(t_H) = 6.6e-23 rho_L; quasi-static TT = 3.4e-17 rho_L; chain-only linear variant = 1.3e+01 rho_L
+      l=1e-06 m, c tau_c=3e+02 m: log variant rho_GW(t_H) = 7.2e-26 rho_L; quasi-static TT = 2.1e-19 rho_L; chain-only linear variant = 2.6e-03 rho_L
+      l=5e-06 m, c tau_c=1e-04 m: log variant rho_GW(t_H) = 7.2e+00 rho_L; quasi-static TT = 9.8e-01 rho_L
+      l=5e-06 m, c tau_c=1e-02 m: log variant rho_GW(t_H) = 7.0e-08 rho_L; quasi-static TT = 1.1e-06 rho_L
+      l=5e-06 m, c tau_c=1e+00 m: log variant rho_GW(t_H) = 6.5e-16 rho_L; quasi-static TT = 1.1e-12 rho_L; chain-only linear variant = 6.3e+09 rho_L
+      l=5e-06 m, c tau_c=6e+01 m: log variant rho_GW(t_H) = 6.6e-23 rho_L; quasi-static TT = 6.9e-18 rho_L; chain-only linear variant = 1.3e+01 rho_L
+      l=5e-06 m, c tau_c=3e+02 m: log variant rho_GW(t_H) = 7.2e-26 rho_L; quasi-static TT = 4.2e-20 rho_L; chain-only linear variant = 2.6e-03 rho_L
+      thresholds at l=4e-10 m: log variant (near-cone + quasi-static) < rho_L needs c tau_c > 2.43e-03 m (tau_c > 8.1e-12 s); chain-only linear needs c tau_c > 90.8 m (tau_c > 3.0e-07 s)
+      thresholds at l=5e-06 m: log variant (near-cone + quasi-static) < rho_L needs c tau_c > 1.74e-04 m (tau_c > 5.8e-13 s); chain-only linear needs c tau_c > 91.3 m (tau_c > 3.0e-07 s)
+    subtraction: none (positive energy densities)
+
+[7] binary-pulsar aberration from the causal record delay (mean field h = G_R F <T>; F(w) = 1 + i w delta + ... in the CMB frame)
+    star 2 is attracted to star 1's position a time delta earlier -> tangential force along v -> dE/dt = +(4 mu/M) Omega^2 delta |E| (circular, CM at rest)
+    double pulsar J0737-3039A/B: Omega = 7.112e-04 s^-1; GR-consistency 1.3e-04 of Pdot_GR -> delta < 2.4e-14 s; uncompensated F_u (n=3, tau=l/c): l < 2.4e-06 m
+      delay-compensated (1 - i n w tau)(1 - i w tau)^-n, n=3: effective delay C3 tau^3 Omega^2 (C3=8) -> tau_c < 1.8e-03 s
+      delay-compensated (1 - i n w tau)(1 - i w tau)^-n, n=4: effective delay C3 tau^3 Omega^2 (C3=20) -> tau_c < 1.3e-03 s
+    Hulse-Taylor B1913+16: Omega = 2.251e-04 s^-1; GR-consistency 1.6e-03 of Pdot_GR -> delta < 1.8e-12 s; uncompensated F_u (n=3, tau=l/c): l < 1.8e-04 m
+      delay-compensated (1 - i n w tau)(1 - i w tau)^-n, n=3: effective delay C3 tau^3 Omega^2 (C3=8) -> tau_c < 1.6e-02 s
+      delay-compensated (1 - i n w tau)(1 - i w tau)^-n, n=4: effective delay C3 tau^3 Omega^2 (C3=20) -> tau_c < 1.2e-02 s
+    Sun-planet orbits: Omega^2 delta over 1e2 yr with delta = 5e-14 s: Mercury relative energy change = 1.1e-16 (negligible)
+    frame-velocity offset of the field centre (R11-5 [6]) is the same delay times W; zero for the compensated gain at first order
+
+[8] GW waveform and GW170817 with the compensated gain (n = 4)
+    tau_c = 1.0e-12 s (c tau_c = 3.0e-04 m): 30 Hz: |F|-1 = +0.0e+00, arg F = +0.0e+00 rad; 300 Hz: |F|-1 = +0.0e+00, arg F = +0.0e+00 rad; 1000 Hz: |F|-1 = +2.2e-16, arg F = +3.3e-24 rad
+    tau_c = 3.3e-11 s (c tau_c = 9.9e-03 m): 30 Hz: |F|-1 = +2.2e-16, arg F = +3.3e-24 rad; 300 Hz: |F|-1 = +2.3e-14, arg F = +4.8e-21 rad; 1000 Hz: |F|-1 = +2.6e-13, arg F = +1.8e-19 rad
+    tau_c = 1.0e-09 s (c tau_c = 3.0e-01 m): 30 Hz: |F|-1 = +2.1e-13, arg F = +1.3e-19 rad; 300 Hz: |F|-1 = +2.1e-11, arg F = +1.3e-16 rad; 1000 Hz: |F|-1 = +2.4e-10, arg F = +5.0e-15 rad
+    tau_c = 1.8e-07 s (c tau_c = 5.4e+01 m): 30 Hz: |F|-1 = +6.9e-09, arg F = +7.8e-13 rad; 300 Hz: |F|-1 = +6.9e-07, arg F = +7.8e-10 rad; 1000 Hz: |F|-1 = +7.7e-06, arg F = +2.9e-08 rad
+    tau_c = 1.0e-06 s (c tau_c = 3.0e+02 m): 30 Hz: |F|-1 = +2.1e-07, arg F = +1.3e-10 rad; 300 Hz: |F|-1 = +2.1e-05, arg F = +1.3e-07 rad; 1000 Hz: |F|-1 = +2.4e-04, arg F = +5.0e-06 rad
+    GW170817: no first-order lag for the compensated gain; uncompensated lag n tau = 3 l/c <= 5e-14 s (R11-5). Front speed c (G_R untouched).
+
+[9] noise-fed second order (suggested; power counting)
+    l=4e-10 m, c tau_c=1e-02 m: <h^2>_quasi-static ~ 2.3e-59  ((l_P/l)^2 = 1.6e-51); frame part ~ beta^2 <h^2> = 3.6e-65 vs alpha2-hat < 1.6e-9
+    l=4e-10 m, c tau_c=6e+01 m: <h^2>_quasi-static ~ 4.3e-63  ((l_P/l)^2 = 1.6e-51); frame part ~ beta^2 <h^2> = 6.5e-69 vs alpha2-hat < 1.6e-9
+    l=1e-06 m, c tau_c=1e-02 m: <h^2>_quasi-static ~ 9.4e-63  ((l_P/l)^2 = 2.6e-58); frame part ~ beta^2 <h^2> = 1.4e-68 vs alpha2-hat < 1.6e-9
+    l=1e-06 m, c tau_c=6e+01 m: <h^2>_quasi-static ~ 1.7e-66  ((l_P/l)^2 = 2.6e-58); frame part ~ beta^2 <h^2> = 2.6e-72 vs alpha2-hat < 1.6e-9
+    l=5e-06 m, c tau_c=1e-02 m: <h^2>_quasi-static ~ 1.9e-63  ((l_P/l)^2 = 1.0e-59); frame part ~ beta^2 <h^2> = 2.9e-69 vs alpha2-hat < 1.6e-9
+    l=5e-06 m, c tau_c=6e+01 m: <h^2>_quasi-static ~ 3.4e-67  ((l_P/l)^2 = 1.0e-59); frame part ~ beta^2 <h^2> = 5.2e-73 vs alpha2-hat < 1.6e-9
+    Isaacson fluid at rest in the frame, rho <= rho_L: tidal/frame terms ~ (rho/rho_crit)(H0 r/c)^2 beta at 1 AU <= 1.1e-33
+    subtraction: none
+
+[10] self-drag of a moving body by its own delayed field (new test; Newtonian mean field, uniform motion v along z)
+     F_i = -4 pi G int d^3k/(2pi)^3 k_i Im F(k.v) |rho~(k)|^2/k^2 ; first order Im F = delta k.v  =>  F = -(4 pi G/3) delta (int rho^2) v
+     tau=1e-03 (v tau/a = 1e-03): uncompensated n=3: Gamma = 2.2448e-05 vs first-order (4piG/3) delta int rho^2/M: 2.2448e-05; compensated n=4: Gamma = 1.347e-10 (ratio 6.0e-06; leading term ~ (v tau/a)^2)
+     tau=1e-02 (v tau/a = 1e-02): uncompensated n=3: Gamma = 2.2442e-04 vs first-order (4piG/3) delta int rho^2/M: 2.2448e-04; compensated n=4: Gamma = 1.346e-07 (ratio 6.0e-04; leading term ~ (v tau/a)^2)
+     neutron star 1.3 Msun, R=12 km (uniform-density lower bound): (4 pi G/3) rho = 9.98e+07 s^-2
+     Sun (mean density): (4 pi G/3) rho = 3.94e-07 s^-2
+     Earth: (4 pi G/3) rho = 1.54e-06 s^-2
+     double pulsar: Pdot_b/P_b = -3 Gamma; tolerance 1.3e-4 |Pdot_GR|/P_b -> Gamma < 6.1e-21 s^-1 -> delta < 6.2e-29 s -> uncompensated F_u (n=3, tau=l/c): l < 6.1e-21 m
+     R11-5 window lower end l = 4e-10 m: delta = 4.0e-18 s -> NS drag rate 4.0e-10 s^-1 (e-fold 79 yr)
+     Earth at l = 5e-6 m: drag rate 7.7e-20 s^-1; velocity loss over t_H = 0.03 (relative)
+     subtraction: none (the drag is the odd-in-omega part of F; the even part is conservative and is not subtracted, it gives no force on a symmetric body)
+
+[11] compensated gains and the neutron-star drag (Taylor regime, smooth n=1 polytrope)
+     Im F(w) = delta w + c3 (w tau)^3 + c5 (w tau)^5 + ... ; drag Gamma = (4 pi G/M) [delta/3 int rho^2 + c3 tau^3 v^2/5 int |grad rho|^2 + c5 tau^5 v^4/7 int |lap rho|^2 + ...]
+     uncompensated n=3: Im F coefficients x^1..x^5 = +3.000, -10.000, +21.000
+     first moment zero, n=4: Im F coefficients x^1..x^5 = +0.000, +20.000, -84.000
+     first+third moments zero, n=5: P(z) = 1 + 5.0000 z + 8.0000 z^2; Im F coefficients x^1, x^3, x^5 = +0.0e+00, +0.0e+00, +56.000
+     |F|^2 of that gain: max over w = 2.83; high-w slope d ln|F|^2/d ln w = -6.00 (backaction K ~ |F|^2/w^2 falls faster than w^-6)
+     polytrope n=1, M=1.3 Msun, R=12 km: rho_c = 1.17e+18 kg/m^3; int rho^2/M = 5.87e+17; int|grad rho|^2/M = 4.03e+10 m^-2 kg/m^3; int|lap rho|^2/M = 2.76e+03
+     uncompensated: delta < 3.7e-29 s (polytrope; uniform-sphere value 6.2e-29 s)
+     first moment zero (n=4, c3=+20): tau < 7.9e-12 s (c tau < 2.4e-03 m) at v = 300 km/s
+     first+third moments zero (n=5, c5=+56): interior-only estimate tau < 3.3e-08 s (c tau < 1.0e+01 m); NOT a bound: the n=1 surface kink makes int|lap rho|^2 diverge, so the drag is set by surface structure at scale v tau = 1.0e-02 m (suggested only)
+     strict family tau = l/c with first moment zero, l = 5e-6 m: Gamma = 5.6e-29 s^-1 (limit 6.1e-21)
+     subtraction: none

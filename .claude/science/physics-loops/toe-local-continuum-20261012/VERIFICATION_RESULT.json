@@ -1,0 +1,718 @@
+{
+  "status": "actual_scoped_verification_completed",
+  "base": "62d316633190ad2198fdfa91fc52192551990034",
+  "canonical": [
+    {
+      "key": "LocalEven",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree/logs/runner-cache/local_even_continuum_2026_10_12.txt",
+        "bytes": 200348,
+        "sha256": "02a604f9765e407b40d4b4205fe64abc3d1ca39a55d340596f40241c036b2ad8"
+      },
+      "counts": {
+        "passed": 284,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "cell_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 100,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.6463096248917282,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "correlation_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 34,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.8717372920364141,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "spectral_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 126,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.5382825001142919,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "spin_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 24,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.2911378745920956,
+          "timeout_seconds": 60
+        }
+      ]
+    },
+    {
+      "key": "ContinuumBoost",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree/logs/runner-cache/continuum_local_boost_2026_10_12.txt",
+        "bytes": 36022,
+        "sha256": "524fe9c405b6ac0d13580936439d85a18c96cfe458459858538d355a62cc8fdb"
+      },
+      "counts": {
+        "passed": 53,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "numerical_refined",
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.33162587508559227,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "symbolic_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 21,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.9512079581618309,
+          "timeout_seconds": 60
+        }
+      ]
+    },
+    {
+      "key": "MicroscopicBoost",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree/logs/runner-cache/microscopic_local_boost_limit_2026_10_12.txt",
+        "bytes": 200358,
+        "sha256": "8e6b2765ab39b06aca20c49ff9ae27682a7b4ef4e7e57bd0a0c93ea4ec817720"
+      },
+      "counts": {
+        "passed": 277,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "flow_coarse",
+          "exit_code": 0,
+          "counts": {
+            "passed": 47,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.6733937077224255,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "flow_fine",
+          "exit_code": 0,
+          "counts": {
+            "passed": 47,
+            "failed": 0
+          },
+          "elapsed_seconds": 2.7379702078178525,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "flow_high",
+          "exit_code": 0,
+          "counts": {
+            "passed": 47,
+            "failed": 0
+          },
+          "elapsed_seconds": 5.531722584273666,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "spin_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 16,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.39255412481725216,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "weighted_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 120,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.8566778339445591,
+          "timeout_seconds": 60
+        }
+      ]
+    },
+    {
+      "key": "Mixed",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree/logs/runner-cache/mixed_local_poincare_correlations_2026_10_12.txt",
+        "bytes": 200361,
+        "sha256": "0b1c843c866ff126c8b90e1ad1cc51de2ded95534eb796bcdd9ba5996febc929"
+      },
+      "counts": {
+        "passed": 420,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "baseline_continuum",
+          "exit_code": 0,
+          "counts": {
+            "passed": 46,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.3489479166455567,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "baseline_mixed_coarse",
+          "exit_code": 0,
+          "counts": {
+            "passed": 134,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.5996987503021955,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "baseline_mixed_fine",
+          "exit_code": 0,
+          "counts": {
+            "passed": 134,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.8962828330695629,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "baseline_spin",
+          "exit_code": 0,
+          "counts": {
+            "passed": 106,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.418314625043422,
+          "timeout_seconds": 60
+        }
+      ]
+    },
+    {
+      "key": "Sections",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree/logs/runner-cache/local_even_net_sections_2026_10_12.txt",
+        "bytes": 200351,
+        "sha256": "9000793befcff8f36dee2c4c8f2812f96fa4d6a9fb525d24d64235e78a0faad4"
+      },
+      "counts": {
+        "passed": 133,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 133,
+            "failed": 0
+          },
+          "elapsed_seconds": 2.3752536247484386,
+          "timeout_seconds": 60
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "key": "LocalEven",
+      "cases": [
+        {
+          "name": "mutant_clock",
+          "exit_code": 1,
+          "counts": {
+            "passed": 17,
+            "failed": 7
+          },
+          "elapsed_seconds": 0.33313104091212153,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_difference",
+          "exit_code": 1,
+          "counts": {
+            "passed": 80,
+            "failed": 20
+          },
+          "elapsed_seconds": 0.26557970931753516,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_jw_tails",
+          "exit_code": 1,
+          "counts": {
+            "passed": 12,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.247403624933213,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_mass",
+          "exit_code": 1,
+          "counts": {
+            "passed": 82,
+            "failed": 18
+          },
+          "elapsed_seconds": 0.2727351668290794,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_normalization",
+          "exit_code": 1,
+          "counts": {
+            "passed": 40,
+            "failed": 60
+          },
+          "elapsed_seconds": 0.29544629203155637,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_odd_local",
+          "exit_code": 1,
+          "counts": {
+            "passed": 24,
+            "failed": 2
+          },
+          "elapsed_seconds": 0.31667987490072846,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_projector",
+          "exit_code": 1,
+          "counts": {
+            "passed": 15,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.29537662537768483,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mutant_wick",
+          "exit_code": 1,
+          "counts": {
+            "passed": 18,
+            "failed": 6
+          },
+          "elapsed_seconds": 0.3606015001423657,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [],
+      "interpretation": "Original complete helper reproductions: positive gauge controls, refinement comparisons and wrong-origin weighted survivor remain distinct; no independent science or new gate"
+    },
+    {
+      "key": "ContinuumBoost",
+      "cases": [
+        {
+          "name": "numerical_baseline",
+          "exit_code": 1,
+          "counts": {
+            "passed": 25,
+            "failed": 7
+          },
+          "elapsed_seconds": 0.2594109997153282,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "numerical_constant_phase",
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.3025177498348057,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "numerical_missing_berry",
+          "exit_code": 1,
+          "counts": {
+            "passed": 20,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.39391862507909536,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "numerical_rational_correct",
+          "exit_code": 0,
+          "counts": {
+            "passed": 32,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.30855166679248214,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "numerical_reverse_scalar",
+          "exit_code": 1,
+          "counts": {
+            "passed": 24,
+            "failed": 8
+          },
+          "elapsed_seconds": 0.3081081253476441,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "numerical_wrong_source_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 28,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.3165456671267748,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "numerical_wrong_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 24,
+            "failed": 8
+          },
+          "elapsed_seconds": 0.3719687918201089,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "symbolic_opposite_polarization",
+          "exit_code": 1,
+          "counts": {
+            "passed": 20,
+            "failed": 1
+          },
+          "elapsed_seconds": 1.3306036656722426,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "symbolic_wrong_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 16,
+            "failed": 5
+          },
+          "elapsed_seconds": 1.1086684581823647,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [
+        "numerical_constant_phase",
+        "numerical_rational_correct"
+      ],
+      "interpretation": "Original complete helper reproductions: positive gauge controls, refinement comparisons and wrong-origin weighted survivor remain distinct; no independent science or new gate"
+    },
+    {
+      "key": "MicroscopicBoost",
+      "cases": [
+        {
+          "name": "flow_higher_comparison",
+          "exit_code": 0,
+          "counts": {
+            "passed": 20,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.07232200028374791,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "flow_refinement_comparison",
+          "exit_code": 1,
+          "counts": {
+            "passed": 17,
+            "failed": 3
+          },
+          "elapsed_seconds": 0.06683508399873972,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_missing_endpoints_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 10,
+            "failed": 6
+          },
+          "elapsed_seconds": 0.20765033271163702,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_missing_half_density_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 6,
+            "failed": 10
+          },
+          "elapsed_seconds": 0.22285254206508398,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_missing_weighted_first_weighted",
+          "exit_code": 1,
+          "counts": {
+            "passed": 115,
+            "failed": 5
+          },
+          "elapsed_seconds": 0.7910761251114309,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_missing_weighted_second_weighted",
+          "exit_code": 1,
+          "counts": {
+            "passed": 111,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.8064632080495358,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_cell_normalization_weighted",
+          "exit_code": 1,
+          "counts": {
+            "passed": 45,
+            "failed": 75
+          },
+          "elapsed_seconds": 0.8453261246904731,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_group_sign_flow",
+          "exit_code": 1,
+          "counts": {
+            "passed": 42,
+            "failed": 5
+          },
+          "elapsed_seconds": 1.1793047920800745,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_group_sign_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 11,
+            "failed": 5
+          },
+          "elapsed_seconds": 0.2922075418755412,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_mass_sign_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 7,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.3862944161519408,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_mass_sign_weighted",
+          "exit_code": 1,
+          "counts": {
+            "passed": 113,
+            "failed": 7
+          },
+          "elapsed_seconds": 1.0663198339752853,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_origin_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 7,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.3313335422426462,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_origin_weighted",
+          "exit_code": 0,
+          "counts": {
+            "passed": 120,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.014823874924332,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_space_sign_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failed": 8
+          },
+          "elapsed_seconds": 0.28781316662207246,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "mut_wrong_space_sign_weighted",
+          "exit_code": 1,
+          "counts": {
+            "passed": 105,
+            "failed": 15
+          },
+          "elapsed_seconds": 0.873689791187644,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [
+        "flow_higher_comparison",
+        "mut_wrong_origin_weighted"
+      ],
+      "interpretation": "Original complete helper reproductions: positive gauge controls, refinement comparisons and wrong-origin weighted survivor remain distinct; no independent science or new gate"
+    },
+    {
+      "key": "Mixed",
+      "cases": [
+        {
+          "name": "real_only_covariance_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 62,
+            "failed": 44
+          },
+          "elapsed_seconds": 0.28066108375787735,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "refinement_coarse_fine",
+          "exit_code": 0,
+          "counts": {
+            "passed": 24,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.26027908362448215,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "wrong_pfaffian_sign_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 102,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.3103438336402178,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "wrong_q15_displacement_continuum",
+          "exit_code": 1,
+          "counts": {
+            "passed": 42,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.2949373750016093,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "wrong_time_sign_continuum",
+          "exit_code": 1,
+          "counts": {
+            "passed": 32,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.3105280422605574,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "wrong_time_sign_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 94,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.2757858340628445,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "wrong_translation_direction_continuum",
+          "exit_code": 1,
+          "counts": {
+            "passed": 32,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.3035247498191893,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "wrong_translation_direction_spin",
+          "exit_code": 1,
+          "counts": {
+            "passed": 96,
+            "failed": 10
+          },
+          "elapsed_seconds": 0.28502008272334933,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [
+        "refinement_coarse_fine"
+      ],
+      "interpretation": "Original complete helper reproductions: positive gauge controls, refinement comparisons and wrong-origin weighted survivor remain distinct; no independent science or new gate"
+    },
+    {
+      "key": "Sections",
+      "cases": [
+        {
+          "name": "drop_contractions",
+          "exit_code": 1,
+          "counts": {
+            "passed": 113,
+            "failed": 20
+          },
+          "elapsed_seconds": 1.188260667026043,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "drop_crossing_sign",
+          "exit_code": 1,
+          "counts": {
+            "passed": 115,
+            "failed": 18
+          },
+          "elapsed_seconds": 2.0954150832258165,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [],
+      "interpretation": "Original complete helper reproductions: positive gauge controls, refinement comparisons and wrong-origin weighted survivor remain distinct; no independent science or new gate"
+    }
+  ],
+  "graph_delta": {
+    "nodes": 5,
+    "edges": 13
+  },
+  "pairing": "Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.",
+  "scientific_edits": [],
+  "originals_preserved": true,
+  "comparison_mapping": "Only literal candidate Path.resolve relocation and separate original continuum-boost guard prefix; all scientific bytes, versions, values, stderr and binary sidecars exact",
+  "not_run": [
+    "independent scientific controls",
+    "old milestone science",
+    "global combined audit",
+    "strict audit lint"
+  ],
+  "audit_verdict_applied": false,
+  "retained_promotion": false,
+  "git_or_pr_mutation": false
+}

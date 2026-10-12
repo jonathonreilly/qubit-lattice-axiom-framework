@@ -1,0 +1,580 @@
+{
+  "mathematical_changes": [],
+  "pairing": "Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.",
+  "outputs": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/LOCAL_EVEN_CONTINUUM_PROBE.md",
+      "source_sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "source_bytes": 32508,
+      "publication_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "aeecb6816bc8d24c00a85604d4a9f94cf5ac197c9912676639d7b2743b08a8de",
+      "publication_bytes": 36134,
+      "edits": [
+        {
+          "category": "canonical_metadata",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"Chosen massive scaling and chosen ground states of the supplied one-dimensional Ising chain; explicit even observables and common CAR comparisons\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: local_even_continuum_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\nrunner: scripts/local_even_continuum_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\ntarget_blocker_text: 'even local-observable norm\n\n  and state limits'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the explicit even-CAR comparison in the microscopic boost, mixed-word and section constructions at the same supplied-model premises.\n---",
+          "occurrences": 1,
+          "reason": "Complete required claim/trace metadata from accepted source and milestone; proof unchanged."
+        },
+        {
+          "category": "historical_status",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: local_even_continuum_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\nrunner: scripts/local_even_continuum_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\ntarget_blocker_text: 'even local-observable norm\n\n  and state limits'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the explicit even-CAR comparison in the microscopic boost, mixed-word and section constructions at the same supplied-model premises.\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: local_even_continuum_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\nrunner: scripts/local_even_continuum_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\ntarget_blocker_text: 'even local-observable norm\n\n  and state limits'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the explicit even-CAR comparison in the microscopic boost, mixed-word and section constructions at the same supplied-model premises.\n---\n\n**Publication status:** The five exact source notes have completed separate-context source review and root integration for conditional composition. Original pending-review statements below describe the historical freeze and are superseded by this record. Mathematical arguments, failures and their original source identities are preserved. This is not an audit verdict or retained status.\n",
+          "occurrences": 1,
+          "reason": "Resolve historical status wording without editing the proof."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence, imports and review record\n\n**Author/checker pairing:** Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.\n\nThe comparison uses chosen spacing-dependent embeddings and the parent chosen ground state. Original position-kernel cutoff failures and fixed-threshold refinements remain. No intrinsic full-spin scaling net, odd local spin field, state-selection principle, interacting or higher-dimensional theorem is asserted.\n\nThe exact original note, source review, root coverage, all author/reviewer helper sources, complete results, rejected controls, survivors, timeouts and recording repairs are preserved through the [evidence map](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json). Original source paths and SHA values identify frozen probes. The [literal publication map](../.claude/science/physics-loops/toe-local-continuum-20261012/PUBLICATION_EDITS.json) reconstructs the entire canonical note and runner without mathematical edits. Historical evidence is not relabeled as a new independent check.\n\nDirect mathematical imports, each at the supplied scope stated in the original argument:\n\n- [concrete gapped chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n\nThe chosen free one-dimensional dynamics, positive m and v, scaling, quasifree state, CAR machinery and cell comparison are stated hypotheses or constructions; the framework does not select these data. There is no empirical prediction, interacting or three-dimensional result. Broader spin-scaling classification remains a separate question.\n\nAll mathematical helper sources and imported finite refinement specimens are explicit primary inputs. No helper registry or dependency-policy edit is proposed. Canonical execution, vocabulary, graph comparison and focused compatibility are pending root execution; global combined pipeline and strict audit lint are independent landing gates.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/local_even_continuum_2026_10_12.py",
+      "publication_sha256": "49205363e1cc21541564e20a820c1c3f03a332a92c64593db12d9770594e400a",
+      "publication_bytes": 6875,
+      "template_sha256": "a16c1a737aa586bc9441d8b1e849232b1eb9e079a23d4fa2a99f65b6c33fc864",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/16bf95965aa787e08cf27e2310d79d6f42906deeb1b939f614a6412b7bdce526.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/18aca21255385ffb9303b676436ef33f39d3bdd92aa4c94fa37e12a27292bf2b.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/22420585adc5ab638e2a74dd89bb7940de391181ad747a8bae560631d96c17dd.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/24e6aec6b47ff0262594ee8aa2a1736311dd93ac0493c31a9ae2996c4c1676da.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/282ae272efc0a44d9cca6ba1af7d80ac832f929b427e54106d6a699af0ebef34.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/61c4e253c9df24c15ba1df098fdbd72a7c130055cd9d6038ca7a65a30cb84a9d.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/7b27daa596bbe29009feb101b04e409c06e86ad1127cc95f43f543eba27a2903.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/9ca0038239cc51c69ab74e2bde491e4410f7ed11d087cda414b40a1cd08d5af0.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/9cdf66ad93e91e1a460a8a763b3db1e252be38244c59b188b36382fa2e7cdf77.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/b8f0196d56d78f77fd9f563eb85312650f11788f0a052b6a8008f5f294f024f1.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/fc8ce286a6f8c1cc420f9bbc33c6a512640c328360fe69013b423ab2b4823e9d.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-local-continuum-20261012",
+        "__KEY__": "LocalEven"
+      },
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/CONTINUUM_LOCAL_BOOST_REVISED_PROBE.md",
+      "source_sha256": "59d34a51720446a554c41ec070c0b52b6dde67692c72b4c42a4937f7f4ca9d16",
+      "source_bytes": 34220,
+      "publication_path": "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "faddf254be55429383b83b61ff5e4cc5407d8169ee6fbf3acadec266798c5ba5",
+      "publication_bytes": 38223,
+      "edits": [
+        {
+          "category": "canonical_metadata",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: \"Author candidate for a supplied massive 1+1 dimensional free Majorana/even-CAR continuum; independent review pending\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Explicit Cauchy-data/domain/local-algebra bridge for the already supplied scalar continuum representation; no microscopic localization convergence is assumed\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: Explicit Cauchy-data/domain/local-algebra bridge for the already supplied scalar continuum representation; no microscopic localization convergence is assumed\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: continuum_local_boost_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- gapped_continuum_limit_bounded_theorem_note_2026-10-12\nrunner: scripts/continuum_local_boost_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: 'identifies the continuum boost with its local Lorentz\n\n  action'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the accepted smooth parallel-frame Cauchy/domain theorem in the actual microscopic boost and mixed even-observable constructions.\n---",
+          "occurrences": 1,
+          "reason": "Complete required claim/trace metadata from accepted source and milestone; proof unchanged."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](CONCRETE_GAPPED_CHAIN_PROBE.md)",
+          "after": "](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](GAPPED_CONTINUUM_LIMIT_PROBE.md)",
+          "after": "](GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](GAPPED_CONTINUUM_LIMIT_REVIEW.md)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](continuum_local_boost/CONTROL_PROTOCOL.md)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](continuum_local_boost/analytic_freeze.json)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](continuum_local_boost/frozen/CONTINUUM_LOCAL_BOOST_PROBE.md)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](continuum_local_boost/receipt.json)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](continuum_local_boost/result_index.json)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](continuum_local_boost/runs/)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "historical_status",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: Explicit Cauchy-data/domain/local-algebra bridge for the already supplied scalar continuum representation; no microscopic localization convergence is assumed\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: continuum_local_boost_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- gapped_continuum_limit_bounded_theorem_note_2026-10-12\nrunner: scripts/continuum_local_boost_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: 'identifies the continuum boost with its local Lorentz\n\n  action'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the accepted smooth parallel-frame Cauchy/domain theorem in the actual microscopic boost and mixed even-observable constructions.\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: Explicit Cauchy-data/domain/local-algebra bridge for the already supplied scalar continuum representation; no microscopic localization convergence is assumed\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: continuum_local_boost_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- gapped_continuum_limit_bounded_theorem_note_2026-10-12\nrunner: scripts/continuum_local_boost_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: 'identifies the continuum boost with its local Lorentz\n\n  action'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the accepted smooth parallel-frame Cauchy/domain theorem in the actual microscopic boost and mixed even-observable constructions.\n---\n\n**Publication status:** The five exact source notes have completed separate-context source review and root integration for conditional composition. Original pending-review statements below describe the historical freeze and are superseded by this record. Mathematical arguments, failures and their original source identities are preserved. This is not an audit verdict or retained status.\n",
+          "occurrences": 1,
+          "reason": "Resolve historical status wording without editing the proof."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence, imports and review record\n\n**Author/checker pairing:** Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.\n\nThe original unrestricted measurable-gauge differential statement is preserved as an error. The revised statement requires smooth phases for the differential identity; a merely measurable phase gives unitary conjugation with its transported domain. The jump-domain witness, low-quadrature failure, constant/rational-gauge controls and consistent rapidity-reversal survivor remain. This theorem alone does not prove microscopic localization convergence.\n\nThe exact original note, source review, root coverage, all author/reviewer helper sources, complete results, rejected controls, survivors, timeouts and recording repairs are preserved through the [evidence map](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json). Original source paths and SHA values identify frozen probes. The [literal publication map](../.claude/science/physics-loops/toe-local-continuum-20261012/PUBLICATION_EDITS.json) reconstructs the entire canonical note and runner without mathematical edits. Historical evidence is not relabeled as a new independent check.\n\nDirect mathematical imports, each at the supplied scope stated in the original argument:\n\n- [concrete gapped chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [gapped continuum limit](GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n\nThe chosen free one-dimensional dynamics, positive m and v, scaling, quasifree state, CAR machinery and cell comparison are stated hypotheses or constructions; the framework does not select these data. There is no empirical prediction, interacting or three-dimensional result. Broader spin-scaling classification remains a separate question.\n\nAll mathematical helper sources and imported finite refinement specimens are explicit primary inputs. No helper registry or dependency-policy edit is proposed. Canonical execution, vocabulary, graph comparison and focused compatibility are pending root execution; global combined pipeline and strict audit lint are independent landing gates.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/continuum_local_boost_2026_10_12.py",
+      "publication_sha256": "e7675021f4b46029fcae67c00ca653d9854721e64da7e4bf1230f44d29c98cd0",
+      "publication_bytes": 5329,
+      "template_sha256": "a16c1a737aa586bc9441d8b1e849232b1eb9e079a23d4fa2a99f65b6c33fc864",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/ContinuumBoost/412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/ContinuumBoost/679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-local-continuum-20261012",
+        "__KEY__": "ContinuumBoost"
+      },
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/MICROSCOPIC_LOCAL_BOOST_LIMIT_PROBE.md",
+      "source_sha256": "70118e0b1f7fd4fa9d041ce837f967abdd0e2f682a854d38885466fd6e4b125d",
+      "source_bytes": 33004,
+      "publication_path": "docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "95075d995ec7ee6b98b850f1f923f5ee42fbadc3c6d9c45c0ee921167507c163",
+      "publication_bytes": 37327,
+      "edits": [
+        {
+          "category": "canonical_metadata",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: \"Author candidate for an actual even-spin polynomial boost limit in a supplied one-dimensional massive free model; independent review pending\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\nrunner: scripts/microscopic_local_boost_limit_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: compares that action to the actual scaled spin boost\nsource_of_blocker_text: handoff\nnext_trace_action: Compose the actual boost and cell estimate with time and rounded translations only for fixed finite words and their stated compact parameter sets.\n---",
+          "occurrences": 1,
+          "reason": "Complete required claim/trace metadata from accepted source and milestone; proof unchanged."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](microscopic_local_boost_limit/DOMAIN_ADDENDUM.md)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "portable_reference",
+          "before": "](microscopic_local_boost_limit/REFINEMENT_ADDENDUM.md)",
+          "after": "](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Canonical direct premise or complete original evidence inventory."
+        },
+        {
+          "category": "historical_status",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\nrunner: scripts/microscopic_local_boost_limit_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: compares that action to the actual scaled spin boost\nsource_of_blocker_text: handoff\nnext_trace_action: Compose the actual boost and cell estimate with time and rounded translations only for fixed finite words and their stated compact parameter sets.\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\nrunner: scripts/microscopic_local_boost_limit_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: compares that action to the actual scaled spin boost\nsource_of_blocker_text: handoff\nnext_trace_action: Compose the actual boost and cell estimate with time and rounded translations only for fixed finite words and their stated compact parameter sets.\n---\n\n**Publication status:** The five exact source notes have completed separate-context source review and root integration for conditional composition. Original pending-review statements below describe the historical freeze and are superseded by this record. Mathematical arguments, failures and their original source identities are preserved. This is not an audit verdict or retained status.\n",
+          "occurrences": 1,
+          "reason": "Resolve historical status wording without editing the proof."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence, imports and review record\n\n**Author/checker pairing:** Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.\n\nThe original three failed refinement predicates remain at the unchanged 3e-7 gate, followed by the declared higher resolution. The wrong-origin weighted-consistency and reverse-origin spectrum survivors remain. The local-even elementary embedding is rederived here; the scalar continuum group note is explicitly context. No operator-unit-ball or uniform microscopic-locality claim follows.\n\nThe exact original note, source review, root coverage, all author/reviewer helper sources, complete results, rejected controls, survivors, timeouts and recording repairs are preserved through the [evidence map](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json). Original source paths and SHA values identify frozen probes. The [literal publication map](../.claude/science/physics-loops/toe-local-continuum-20261012/PUBLICATION_EDITS.json) reconstructs the entire canonical note and runner without mathematical edits. Historical evidence is not relabeled as a new independent check.\n\nDirect mathematical imports, each at the supplied scope stated in the original argument:\n\n- [concrete gapped chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [continuum local boost](CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n\nThe chosen free one-dimensional dynamics, positive m and v, scaling, quasifree state, CAR machinery and cell comparison are stated hypotheses or constructions; the framework does not select these data. There is no empirical prediction, interacting or three-dimensional result. Broader spin-scaling classification remains a separate question.\n\nAll mathematical helper sources and imported finite refinement specimens are explicit primary inputs. No helper registry or dependency-policy edit is proposed. Canonical execution, vocabulary, graph comparison and focused compatibility are pending root execution; global combined pipeline and strict audit lint are independent landing gates.\n\nThe historical continuum premise is the frozen original boost argument. The canonical dependency is its accepted revised source: the only mathematical narrowing is the separately reviewed smooth-gauge condition in L19, and no L19 rough-gauge differential identity is used here. Elementary local-even embeddings are rederived; the scalar group note is context, so neither creates an additional direct edge.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/microscopic_local_boost_limit_2026_10_12.py",
+      "publication_sha256": "e1f48da3bf0ccd58144933d7f13c73ab49fd1da2b6e944e8b71087b1f460a04e",
+      "publication_bytes": 8135,
+      "template_sha256": "a16c1a737aa586bc9441d8b1e849232b1eb9e079a23d4fa2a99f65b6c33fc864",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/01b61c31938ecc34b14f1ba9f098c039fb6f8def616337e5c003b1496130f879.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/06e9a8f66b5609699e7568ab402ff71553a8016184be13485f4b62427d06c707.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/0ca19c11d0a0aee5cf39d1d1bea87ba777a0cd4791f51bf74eb995ac433c55ba.npz', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/12d88b064b19a438019526431ceafcab7d7294bebd6d7bb5d86bc1f75d0630d9.npz', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/2a2e1d6307fc1fc926aac703132b21bb0bcabdc7bbe8925fd0526ed69a99d8db.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/2e2ada1807cdc8b9deef0a017a3f3a521ca7d8f27aa821bcfb36b0be41a3a590.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/64c29dade3a44b0abe5c9f3aadde456cd9ec135a98b2ef95bb6bbe4de5637e71.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/6820afe8e2a28234f2b305b3733ad5a3730d77dea0310e9636592d8dd8e46994.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/73202e0581956fb5b9715b514a1938d5586d66a891d6f62292d2db9e5745d7db.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/83204c74cd695a5a5e65b5458fcf2433b6b0e9100c81cb5ef46b54028febfc95.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/9ed0e40e929d7edf3fef9b70d096df85f672b0de9e0f7547936d8f63b9f75202.npz', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/b62eb32bced662f9e616ea94d01e360ccb55f72021565e958c3c272abca8cbc0.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/cd4b819f7eac9cdafe15ec705b0cc056bc8748f4b3d6232ab033330d8a56eff1.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/edcecdaa6e7997062bf190466ed971e87792945402b640101fe13791e9ad7bea.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/ef9f3f66e2e054a3e868f4f2c113aed7cea1b0998527d87cda4cc1d4b03974ef.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/fce65306a18258459046fd5d3353087a898533c832d18c13c3a522975d3f1b85.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-local-continuum-20261012",
+        "__KEY__": "MicroscopicBoost"
+      },
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/MIXED_LOCAL_POINCARE_CORRELATIONS_PROBE.md",
+      "source_sha256": "8c3a308b57a2e53d117a7c76046b4995c3a2ffc150e31cb142a90bd926796418",
+      "source_bytes": 27854,
+      "publication_path": "docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "401bc410bd2c74b1cf398050f909118cd79a51c2441b5b97bd47269b6c74b5a7",
+      "publication_bytes": 32046,
+      "edits": [
+        {
+          "category": "canonical_metadata",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: \"Author composition theorem for specified mixed even-spin observables and chosen-state moments in a supplied massive free one-dimensional family\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- local_even_continuum_bounded_theorem_note_2026-10-12\n- microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\nrunner: scripts/mixed_local_poincare_correlations_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: 'handles\n\n  fixed mixed words and their ordered correlations'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the fixed-word norm and state estimates to extend the explicitly constructed comparison sections by density; do not assume arbitrary scaling-family control.\n---",
+          "occurrences": 1,
+          "reason": "Complete required claim/trace metadata from accepted source and milestone; proof unchanged."
+        },
+        {
+          "category": "historical_status",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- local_even_continuum_bounded_theorem_note_2026-10-12\n- microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\nrunner: scripts/mixed_local_poincare_correlations_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: 'handles\n\n  fixed mixed words and their ordered correlations'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the fixed-word norm and state estimates to extend the explicitly constructed comparison sections by density; do not assume arbitrary scaling-family control.\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: closes\nconditional_surface_status: Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.\nupstream_dependencies:\n- concrete_gapped_chain_bounded_theorem_note_2026-10-12\n- local_even_continuum_bounded_theorem_note_2026-10-12\n- microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\nrunner: scripts/mixed_local_poincare_correlations_2026_10_12.py\nartifact_role: theorem\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: 'handles\n\n  fixed mixed words and their ordered correlations'\nsource_of_blocker_text: handoff\nnext_trace_action: Use the fixed-word norm and state estimates to extend the explicitly constructed comparison sections by density; do not assume arbitrary scaling-family control.\n---\n\n**Publication status:** The five exact source notes have completed separate-context source review and root integration for conditional composition. Original pending-review statements below describe the historical freeze and are superseded by this record. Mathematical arguments, failures and their original source identities are preserved. This is not an audit verdict or retained status.\n",
+          "occurrences": 1,
+          "reason": "Resolve historical status wording without editing the proof."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence, imports and review record\n\n**Author/checker pairing:** Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.\n\nNorm-only and zero-parameter wrong-sign survivors remain, together with all nonzero finite-spacing relation defects and mixed-state correlation changes. The independent false half-density expectation, low-cutoff failures, refinements and administrative recording correction remain. Floor translations are not a real group at positive spacing. No growing-word or operator-unit-ball uniformity is asserted.\n\nThe exact original note, source review, root coverage, all author/reviewer helper sources, complete results, rejected controls, survivors, timeouts and recording repairs are preserved through the [evidence map](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json). Original source paths and SHA values identify frozen probes. The [literal publication map](../.claude/science/physics-loops/toe-local-continuum-20261012/PUBLICATION_EDITS.json) reconstructs the entire canonical note and runner without mathematical edits. Historical evidence is not relabeled as a new independent check.\n\nDirect mathematical imports, each at the supplied scope stated in the original argument:\n\n- [concrete gapped chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [local even continuum](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [microscopic local boost limit](MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [continuum local boost](CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n\nThe chosen free one-dimensional dynamics, positive m and v, scaling, quasifree state, CAR machinery and cell comparison are stated hypotheses or constructions; the framework does not select these data. There is no empirical prediction, interacting or three-dimensional result. Broader spin-scaling classification remains a separate question.\n\nAll mathematical helper sources and imported finite refinement specimens are explicit primary inputs. No helper registry or dependency-policy edit is proposed. Canonical execution, vocabulary, graph comparison and focused compatibility are pending root execution; global combined pipeline and strict audit lint are independent landing gates.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/mixed_local_poincare_correlations_2026_10_12.py",
+      "publication_sha256": "b8cc2507f0677da3455267f5be514c4668fd2c891e53aac049677fb1d59d16e2",
+      "publication_bytes": 7182,
+      "template_sha256": "a16c1a737aa586bc9441d8b1e849232b1eb9e079a23d4fa2a99f65b6c33fc864",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/1324ccfec5f9e454160a703b020f42441528b8df481a5aa22b6954d825172bae.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/203b21f53cce6f4d97893da4c7ce4bf4696d585fa53bdbae8e081e4050b65296.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/31cb86a69736e2e2051ddf3a57e7fb7229a615de1a26698bf901970b58d5543c.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/583cda0650d70336bd625b3be960f748b575b0a97382bd8ee3d291663a03e8b9.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/744517cab4b4856050ee029cf518164241ae28a3f1b9d4e40f00b4bebce943a6.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/7beaba51bd64df0c38eb0a473fda9dbb479fa27bdaab5353252179248af924f2.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/9f64fedfcd4262b32bab71652fc88ca22e53bc24d742370c6178541088694462.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/fe643cb4d7abb87b23594eb07348f92887e3bbe3a565cf0f76f9e16f07e1b0f1.py', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/fede9f2342961fdcd9cae27e5554b8f1f21ebb80a9d8e6263e1bdeb2ee2cf7d8.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-local-continuum-20261012",
+        "__KEY__": "Mixed"
+      },
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/LOCAL_EVEN_NET_SECTIONS_PROBE.md",
+      "source_sha256": "61d361d205fe2ecbc9e6ef0cab34fbdce5e14c9ffe8916ceaf44592c61e9a3de",
+      "source_bytes": 16158,
+      "publication_path": "docs/LOCAL_EVEN_NET_SECTIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "82a4f3ba12d805f83829f194c82fb937099592b0c7b5f35e62d9cf6615b3749a",
+      "publication_bytes": 20801,
+      "edits": [
+        {
+          "category": "canonical_metadata",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: local_even_net_sections_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.\nupstream_dependencies:\n- local_even_continuum_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\n- microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n- mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\nrunner: scripts/local_even_net_sections_2026_10_12.py\nartifact_role: theorem\nconditional_surface_status: A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: 'extends the comparison to every fixed element and\n\n  identifies a specified section-algebra quotient with the continuum even\n\n  observable algebra'\nsource_of_blocker_text: handoff\nnext_trace_action: Submit this conditional comparison-section theorem family for independent review and combined landing validation; arbitrary microscopic scaling families remain outside its target.\n---",
+          "occurrences": 1,
+          "reason": "Complete required claim/trace metadata from accepted source and milestone; proof unchanged."
+        },
+        {
+          "category": "historical_status",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: local_even_net_sections_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.\nupstream_dependencies:\n- local_even_continuum_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\n- microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n- mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\nrunner: scripts/local_even_net_sections_2026_10_12.py\nartifact_role: theorem\nconditional_surface_status: A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: 'extends the comparison to every fixed element and\n\n  identifies a specified section-algebra quotient with the continuum even\n\n  observable algebra'\nsource_of_blocker_text: handoff\nnext_trace_action: Submit this conditional comparison-section theorem family for independent review and combined landing validation; arbitrary microscopic scaling families remain outside its target.\n---",
+          "after": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nclaim_id: local_even_net_sections_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.\nupstream_dependencies:\n- local_even_continuum_bounded_theorem_note_2026-10-12\n- continuum_local_boost_bounded_theorem_note_2026-10-12\n- microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n- mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\nrunner: scripts/local_even_net_sections_2026_10_12.py\nartifact_role: theorem\nconditional_surface_status: A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: Conditional supplied-model theorem with complete analytic argument and finite controls; source review does not confer retained status.\ntarget_claim_id: null\ntarget_blocker_text: 'extends the comparison to every fixed element and\n\n  identifies a specified section-algebra quotient with the continuum even\n\n  observable algebra'\nsource_of_blocker_text: handoff\nnext_trace_action: Submit this conditional comparison-section theorem family for independent review and combined landing validation; arbitrary microscopic scaling families remain outside its target.\n---\n\n**Publication status:** The five exact source notes have completed separate-context source review and root integration for conditional composition. Original pending-review statements below describe the historical freeze and are superseded by this record. Mathematical arguments, failures and their original source identities are preserved. This is not an audit verdict or retained status.\n",
+          "occurrences": 1,
+          "reason": "Resolve historical status wording without editing the proof."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence, imports and review record\n\n**Author/checker pairing:** Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.\n\nThe quotient is deliberately constructed, not an exhaustion of microscopic scaling families. The discarded-mode unit-ball witness, complement covariance, true inverse argument and floor one-cell defect remain. The independent combined 60-second timeout and 640 partial rows remain before unchanged split jobs; naive-fieldwise and zero-complement failures and polarized-complement different-state survivors remain.\n\nThe exact original note, source review, root coverage, all author/reviewer helper sources, complete results, rejected controls, survivors, timeouts and recording repairs are preserved through the [evidence map](../.claude/science/physics-loops/toe-local-continuum-20261012/EVIDENCE_MAP.json). Original source paths and SHA values identify frozen probes. The [literal publication map](../.claude/science/physics-loops/toe-local-continuum-20261012/PUBLICATION_EDITS.json) reconstructs the entire canonical note and runner without mathematical edits. Historical evidence is not relabeled as a new independent check.\n\nDirect mathematical imports, each at the supplied scope stated in the original argument:\n\n- [local even continuum](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [continuum local boost](CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [microscopic local boost limit](MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n- [mixed local poincare correlations](MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n\nThe chosen free one-dimensional dynamics, positive m and v, scaling, quasifree state, CAR machinery and cell comparison are stated hypotheses or constructions; the framework does not select these data. There is no empirical prediction, interacting or three-dimensional result. Broader spin-scaling classification remains a separate question.\n\nAll mathematical helper sources and imported finite refinement specimens are explicit primary inputs. No helper registry or dependency-policy edit is proposed. Canonical execution, vocabulary, graph comparison and focused compatibility are pending root execution; global combined pipeline and strict audit lint are independent landing gates.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/local_even_net_sections_2026_10_12.py",
+      "publication_sha256": "1cdbb5c40999331a05c57b40754f37f83ea01a9ddd3a1d4c9fd652f81f95c1be",
+      "publication_bytes": 5314,
+      "template_sha256": "a16c1a737aa586bc9441d8b1e849232b1eb9e079a23d4fa2a99f65b6c33fc864",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/LOCAL_EVEN_NET_SECTIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-local-continuum-20261012/runtime/Sections/cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-local-continuum-20261012",
+        "__KEY__": "Sections"
+      },
+      "mathematical_changes": []
+    }
+  ],
+  "runtime_resources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/continuum_checks.py",
+      "sha256": "762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2",
+      "bytes": 6556,
+      "packet_path": "runtime/LocalEven/762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/fixtures.py",
+      "sha256": "7b27daa596bbe29009feb101b04e409c06e86ad1127cc95f43f543eba27a2903",
+      "bytes": 2960,
+      "packet_path": "runtime/LocalEven/7b27daa596bbe29009feb101b04e409c06e86ad1127cc95f43f543eba27a2903.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/candidate.py",
+      "sha256": "fc8ce286a6f8c1cc420f9bbc33c6a512640c328360fe69013b423ab2b4823e9d",
+      "bytes": 2277,
+      "packet_path": "runtime/LocalEven/fc8ce286a6f8c1cc420f9bbc33c6a512640c328360fe69013b423ab2b4823e9d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/correlation_checks.py",
+      "sha256": "18aca21255385ffb9303b676436ef33f39d3bdd92aa4c94fa37e12a27292bf2b",
+      "bytes": 3499,
+      "packet_path": "runtime/LocalEven/18aca21255385ffb9303b676436ef33f39d3bdd92aa4c94fa37e12a27292bf2b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348,
+      "packet_path": "runtime/LocalEven/2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/clock/candidate.py",
+      "sha256": "61c4e253c9df24c15ba1df098fdbd72a7c130055cd9d6038ca7a65a30cb84a9d",
+      "bytes": 2277,
+      "packet_path": "runtime/LocalEven/61c4e253c9df24c15ba1df098fdbd72a7c130055cd9d6038ca7a65a30cb84a9d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/difference/candidate.py",
+      "sha256": "9ca0038239cc51c69ab74e2bde491e4410f7ed11d087cda414b40a1cd08d5af0",
+      "bytes": 2277,
+      "packet_path": "runtime/LocalEven/9ca0038239cc51c69ab74e2bde491e4410f7ed11d087cda414b40a1cd08d5af0.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/jw_tails/candidate.py",
+      "sha256": "b8f0196d56d78f77fd9f563eb85312650f11788f0a052b6a8008f5f294f024f1",
+      "bytes": 2278,
+      "packet_path": "runtime/LocalEven/b8f0196d56d78f77fd9f563eb85312650f11788f0a052b6a8008f5f294f024f1.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/mass/candidate.py",
+      "sha256": "22420585adc5ab638e2a74dd89bb7940de391181ad747a8bae560631d96c17dd",
+      "bytes": 2277,
+      "packet_path": "runtime/LocalEven/22420585adc5ab638e2a74dd89bb7940de391181ad747a8bae560631d96c17dd.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/normalization/candidate.py",
+      "sha256": "9cdf66ad93e91e1a460a8a763b3db1e252be38244c59b188b36382fa2e7cdf77",
+      "bytes": 2277,
+      "packet_path": "runtime/LocalEven/9cdf66ad93e91e1a460a8a763b3db1e252be38244c59b188b36382fa2e7cdf77.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/odd_local/candidate.py",
+      "sha256": "282ae272efc0a44d9cca6ba1af7d80ac832f929b427e54106d6a699af0ebef34",
+      "bytes": 2278,
+      "packet_path": "runtime/LocalEven/282ae272efc0a44d9cca6ba1af7d80ac832f929b427e54106d6a699af0ebef34.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/projector/candidate.py",
+      "sha256": "16bf95965aa787e08cf27e2310d79d6f42906deeb1b939f614a6412b7bdce526",
+      "bytes": 2277,
+      "packet_path": "runtime/LocalEven/16bf95965aa787e08cf27e2310d79d6f42906deeb1b939f614a6412b7bdce526.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/wick/candidate.py",
+      "sha256": "24e6aec6b47ff0262594ee8aa2a1736311dd93ac0493c31a9ae2996c4c1676da",
+      "bytes": 2278,
+      "packet_path": "runtime/LocalEven/24e6aec6b47ff0262594ee8aa2a1736311dd93ac0493c31a9ae2996c4c1676da.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898,
+      "packet_path": "runtime/ContinuumBoost/412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/symbolic_checks.py",
+      "sha256": "679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e",
+      "bytes": 5457,
+      "packet_path": "runtime/ContinuumBoost/679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_checks.py",
+      "sha256": "ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d",
+      "bytes": 5709,
+      "packet_path": "runtime/MicroscopicBoost/ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/candidate.py",
+      "sha256": "73202e0581956fb5b9715b514a1938d5586d66a891d6f62292d2db9e5745d7db",
+      "bytes": 1746,
+      "packet_path": "runtime/MicroscopicBoost/73202e0581956fb5b9715b514a1938d5586d66a891d6f62292d2db9e5745d7db.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/reporting.py",
+      "sha256": "b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa",
+      "bytes": 1735,
+      "packet_path": "runtime/MicroscopicBoost/b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/fixtures.py",
+      "sha256": "2e2ada1807cdc8b9deef0a017a3f3a521ca7d8f27aa821bcfb36b0be41a3a590",
+      "bytes": 2983,
+      "packet_path": "runtime/MicroscopicBoost/2e2ada1807cdc8b9deef0a017a3f3a521ca7d8f27aa821bcfb36b0be41a3a590.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_high.py",
+      "sha256": "ef9f3f66e2e054a3e868f4f2c113aed7cea1b0998527d87cda4cc1d4b03974ef",
+      "bytes": 5709,
+      "packet_path": "runtime/MicroscopicBoost/ef9f3f66e2e054a3e868f4f2c113aed7cea1b0998527d87cda4cc1d4b03974ef.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/compare_flows.py",
+      "sha256": "01b61c31938ecc34b14f1ba9f098c039fb6f8def616337e5c003b1496130f879",
+      "bytes": 1314,
+      "packet_path": "runtime/MicroscopicBoost/01b61c31938ecc34b14f1ba9f098c039fb6f8def616337e5c003b1496130f879.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/result.vectors.npz",
+      "sha256": "9ed0e40e929d7edf3fef9b70d096df85f672b0de9e0f7547936d8f63b9f75202",
+      "bytes": 232208,
+      "packet_path": "runtime/MicroscopicBoost/9ed0e40e929d7edf3fef9b70d096df85f672b0de9e0f7547936d8f63b9f75202.npz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/result.vectors.npz",
+      "sha256": "12d88b064b19a438019526431ceafcab7d7294bebd6d7bb5d86bc1f75d0630d9",
+      "bytes": 232208,
+      "packet_path": "runtime/MicroscopicBoost/12d88b064b19a438019526431ceafcab7d7294bebd6d7bb5d86bc1f75d0630d9.npz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/result.vectors.npz",
+      "sha256": "0ca19c11d0a0aee5cf39d1d1bea87ba777a0cd4791f51bf74eb995ac433c55ba",
+      "bytes": 142928,
+      "packet_path": "runtime/MicroscopicBoost/0ca19c11d0a0aee5cf39d1d1bea87ba777a0cd4791f51bf74eb995ac433c55ba.npz"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870,
+      "packet_path": "runtime/MicroscopicBoost/c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_endpoints/candidate.py",
+      "sha256": "cd4b819f7eac9cdafe15ec705b0cc056bc8748f4b3d6232ab033330d8a56eff1",
+      "bytes": 1747,
+      "packet_path": "runtime/MicroscopicBoost/cd4b819f7eac9cdafe15ec705b0cc056bc8748f4b3d6232ab033330d8a56eff1.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_half_density/candidate.py",
+      "sha256": "6820afe8e2a28234f2b305b3733ad5a3730d77dea0310e9636592d8dd8e46994",
+      "bytes": 1746,
+      "packet_path": "runtime/MicroscopicBoost/6820afe8e2a28234f2b305b3733ad5a3730d77dea0310e9636592d8dd8e46994.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800,
+      "packet_path": "runtime/MicroscopicBoost/4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_weighted_first/candidate.py",
+      "sha256": "b62eb32bced662f9e616ea94d01e360ccb55f72021565e958c3c272abca8cbc0",
+      "bytes": 1746,
+      "packet_path": "runtime/MicroscopicBoost/b62eb32bced662f9e616ea94d01e360ccb55f72021565e958c3c272abca8cbc0.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_weighted_second/candidate.py",
+      "sha256": "83204c74cd695a5a5e65b5458fcf2433b6b0e9100c81cb5ef46b54028febfc95",
+      "bytes": 1746,
+      "packet_path": "runtime/MicroscopicBoost/83204c74cd695a5a5e65b5458fcf2433b6b0e9100c81cb5ef46b54028febfc95.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_cell_normalization/candidate.py",
+      "sha256": "06e9a8f66b5609699e7568ab402ff71553a8016184be13485f4b62427d06c707",
+      "bytes": 1746,
+      "packet_path": "runtime/MicroscopicBoost/06e9a8f66b5609699e7568ab402ff71553a8016184be13485f4b62427d06c707.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_group_sign/candidate.py",
+      "sha256": "2a2e1d6307fc1fc926aac703132b21bb0bcabdc7bbe8925fd0526ed69a99d8db",
+      "bytes": 1745,
+      "packet_path": "runtime/MicroscopicBoost/2a2e1d6307fc1fc926aac703132b21bb0bcabdc7bbe8925fd0526ed69a99d8db.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_mass_sign/candidate.py",
+      "sha256": "64c29dade3a44b0abe5c9f3aadde456cd9ec135a98b2ef95bb6bbe4de5637e71",
+      "bytes": 1747,
+      "packet_path": "runtime/MicroscopicBoost/64c29dade3a44b0abe5c9f3aadde456cd9ec135a98b2ef95bb6bbe4de5637e71.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_origin/candidate.py",
+      "sha256": "edcecdaa6e7997062bf190466ed971e87792945402b640101fe13791e9ad7bea",
+      "bytes": 1745,
+      "packet_path": "runtime/MicroscopicBoost/edcecdaa6e7997062bf190466ed971e87792945402b640101fe13791e9ad7bea.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_space_sign/candidate.py",
+      "sha256": "fce65306a18258459046fd5d3353087a898533c832d18c13c3a522975d3f1b85",
+      "bytes": 1747,
+      "packet_path": "runtime/MicroscopicBoost/fce65306a18258459046fd5d3353087a898533c832d18c13c3a522975d3f1b85.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/continuum_checks.py",
+      "sha256": "96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a",
+      "bytes": 2276,
+      "packet_path": "runtime/Mixed/96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/candidate.py",
+      "sha256": "583cda0650d70336bd625b3be960f748b575b0a97382bd8ee3d291663a03e8b9",
+      "bytes": 4041,
+      "packet_path": "runtime/Mixed/583cda0650d70336bd625b3be960f748b575b0a97382bd8ee3d291663a03e8b9.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/reporting.py",
+      "sha256": "b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa",
+      "bytes": 1735,
+      "packet_path": "runtime/Mixed/b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/fixtures.py",
+      "sha256": "1324ccfec5f9e454160a703b020f42441528b8df481a5aa22b6954d825172bae",
+      "bytes": 3248,
+      "packet_path": "runtime/Mixed/1324ccfec5f9e454160a703b020f42441528b8df481a5aa22b6954d825172bae.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/mixed_checks.py",
+      "sha256": "9f64fedfcd4262b32bab71652fc88ca22e53bc24d742370c6178541088694462",
+      "bytes": 6128,
+      "packet_path": "runtime/Mixed/9f64fedfcd4262b32bab71652fc88ca22e53bc24d742370c6178541088694462.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/spin_checks.py",
+      "sha256": "2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4",
+      "bytes": 5127,
+      "packet_path": "runtime/Mixed/2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/real_only_covariance.py",
+      "sha256": "7beaba51bd64df0c38eb0a473fda9dbb479fa27bdaab5353252179248af924f2",
+      "bytes": 4040,
+      "packet_path": "runtime/Mixed/7beaba51bd64df0c38eb0a473fda9dbb479fa27bdaab5353252179248af924f2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/refinement_checks.py",
+      "sha256": "744517cab4b4856050ee029cf518164241ae28a3f1b9d4e40f00b4bebce943a6",
+      "bytes": 1335,
+      "packet_path": "runtime/Mixed/744517cab4b4856050ee029cf518164241ae28a3f1b9d4e40f00b4bebce943a6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_mixed_coarse.json",
+      "sha256": "91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11",
+      "bytes": 69980,
+      "packet_path": "runtime/Mixed/91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11.json"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_mixed_fine.json",
+      "sha256": "5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31",
+      "bytes": 70150,
+      "packet_path": "runtime/Mixed/5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31.json"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_pfaffian_sign.py",
+      "sha256": "31cb86a69736e2e2051ddf3a57e7fb7229a615de1a26698bf901970b58d5543c",
+      "bytes": 4042,
+      "packet_path": "runtime/Mixed/31cb86a69736e2e2051ddf3a57e7fb7229a615de1a26698bf901970b58d5543c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_q15_displacement.py",
+      "sha256": "fe643cb4d7abb87b23594eb07348f92887e3bbe3a565cf0f76f9e16f07e1b0f1",
+      "bytes": 4040,
+      "packet_path": "runtime/Mixed/fe643cb4d7abb87b23594eb07348f92887e3bbe3a565cf0f76f9e16f07e1b0f1.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_time_sign.py",
+      "sha256": "fede9f2342961fdcd9cae27e5554b8f1f21ebb80a9d8e6263e1bdeb2ee2cf7d8",
+      "bytes": 4042,
+      "packet_path": "runtime/Mixed/fede9f2342961fdcd9cae27e5554b8f1f21ebb80a9d8e6263e1bdeb2ee2cf7d8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_translation_direction.py",
+      "sha256": "203b21f53cce6f4d97893da4c7ce4bf4696d585fa53bdbae8e081e4050b65296",
+      "bytes": 4042,
+      "packet_path": "runtime/Mixed/203b21f53cce6f4d97893da4c7ce4bf4696d585fa53bdbae8e081e4050b65296.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "sha256": "cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451",
+      "bytes": 6048,
+      "packet_path": "runtime/Sections/cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451.py"
+    }
+  ]
+}

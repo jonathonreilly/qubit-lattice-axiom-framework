@@ -1,0 +1,286 @@
+{
+  "packet": ".claude/science/physics-loops/toe-local-continuum-20261012",
+  "specs": [
+    {
+      "key": "LocalEven",
+      "stem": "LOCAL_EVEN_CONTINUUM",
+      "folder": "local_even_continuum",
+      "review_folder": "local_even_continuum_review",
+      "coverage": "Local_even_root_review_coverage.json",
+      "source_sha": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "For the supplied one-dimensional massive free chain, chosen state and specified cell embeddings, fixed finite even polynomials have local norm, time-evolution and vacuum-correlation limits in an explicitly defined continuum even-CAR net.",
+      "limits": "The comparison uses chosen spacing-dependent embeddings and the parent chosen ground state. Original position-kernel cutoff failures and fixed-threshold refinements remain. No intrinsic full-spin scaling net, odd local spin field, state-selection principle, interacting or higher-dimensional theorem is asserted.",
+      "blocker": "even local-observable norm\nand state limits",
+      "next": "Use the explicit even-CAR comparison in the microscopic boost, mixed-word and section constructions at the same supplied-model premises.",
+      "source": "LOCAL_EVEN_CONTINUUM_PROBE.md",
+      "review": "LOCAL_EVEN_CONTINUUM_REVIEW.md",
+      "note": "LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "local_even_continuum_2026_10_12.py",
+      "claim": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/16bf95965aa787e08cf27e2310d79d6f42906deeb1b939f614a6412b7bdce526.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/18aca21255385ffb9303b676436ef33f39d3bdd92aa4c94fa37e12a27292bf2b.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/22420585adc5ab638e2a74dd89bb7940de391181ad747a8bae560631d96c17dd.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/24e6aec6b47ff0262594ee8aa2a1736311dd93ac0493c31a9ae2996c4c1676da.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/282ae272efc0a44d9cca6ba1af7d80ac832f929b427e54106d6a699af0ebef34.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/61c4e253c9df24c15ba1df098fdbd72a7c130055cd9d6038ca7a65a30cb84a9d.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/7b27daa596bbe29009feb101b04e409c06e86ad1127cc95f43f543eba27a2903.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/9ca0038239cc51c69ab74e2bde491e4410f7ed11d087cda414b40a1cd08d5af0.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/9cdf66ad93e91e1a460a8a763b3db1e252be38244c59b188b36382fa2e7cdf77.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/b8f0196d56d78f77fd9f563eb85312650f11788f0a052b6a8008f5f294f024f1.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/LocalEven/fc8ce286a6f8c1cc420f9bbc33c6a512640c328360fe69013b423ab2b4823e9d.py"
+      ],
+      "baseline_counts": {
+        "passed": 284,
+        "failed": 0
+      },
+      "variants": [
+        "mutant_clock",
+        "mutant_difference",
+        "mutant_jw_tails",
+        "mutant_mass",
+        "mutant_normalization",
+        "mutant_odd_local",
+        "mutant_projector",
+        "mutant_wick"
+      ],
+      "historical_nonbaseline_successes": []
+    },
+    {
+      "key": "ContinuumBoost",
+      "stem": "CONTINUUM_LOCAL_BOOST",
+      "source": "CONTINUUM_LOCAL_BOOST_REVISED_PROBE.md",
+      "folder": "continuum_local_boost",
+      "review_folder": "continuum_local_boost_review",
+      "coverage": "Continuum_local_boost_root_review_coverage.json",
+      "source_sha": "59d34a51720446a554c41ec070c0b52b6dde67692c72b4c42a4937f7f4ca9d16",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "gapped_continuum_limit_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "For the supplied massive free continuum representation, the real Cauchy boost agrees with the specified scalar boost including full domains and acts covariantly on a defined spacetime even-CAR vacuum net.",
+      "limits": "The original unrestricted measurable-gauge differential statement is preserved as an error. The revised statement requires smooth phases for the differential identity; a merely measurable phase gives unitary conjugation with its transported domain. The jump-domain witness, low-quadrature failure, constant/rational-gauge controls and consistent rapidity-reversal survivor remain. This theorem alone does not prove microscopic localization convergence.",
+      "blocker": "identifies the continuum boost with its local Lorentz\naction",
+      "next": "Use the accepted smooth parallel-frame Cauchy/domain theorem in the actual microscopic boost and mixed even-observable constructions.",
+      "review": "CONTINUUM_LOCAL_BOOST_REVIEW.md",
+      "note": "CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "continuum_local_boost_2026_10_12.py",
+      "claim": "continuum_local_boost_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/ContinuumBoost/412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/ContinuumBoost/679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e.py"
+      ],
+      "baseline_counts": {
+        "passed": 53,
+        "failed": 0
+      },
+      "variants": [
+        "numerical_baseline",
+        "numerical_constant_phase",
+        "numerical_missing_berry",
+        "numerical_rational_correct",
+        "numerical_reverse_scalar",
+        "numerical_wrong_source_spin",
+        "numerical_wrong_spin",
+        "symbolic_opposite_polarization",
+        "symbolic_wrong_spin"
+      ],
+      "historical_nonbaseline_successes": [
+        "numerical_constant_phase",
+        "numerical_rational_correct"
+      ]
+    },
+    {
+      "key": "MicroscopicBoost",
+      "stem": "MICROSCOPIC_LOCAL_BOOST_LIMIT",
+      "folder": "microscopic_local_boost_limit",
+      "review_folder": "microscopic_local_boost_limit_review",
+      "coverage": "Microscopic_local_boost_root_review_coverage.json",
+      "source_sha": "70118e0b1f7fd4fa9d041ce837f967abdd0e2f682a854d38885466fd6e4b125d",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "continuum_local_boost_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "In the chosen free-chain full-spin GNS, the actual scaled boost acts on even coefficient words by the proved lattice generator and converges in norm on each fixed even polynomial, uniformly on compact boost intervals, to the specified local Lorentz action.",
+      "limits": "The original three failed refinement predicates remain at the unchanged 3e-7 gate, followed by the declared higher resolution. The wrong-origin weighted-consistency and reverse-origin spectrum survivors remain. The local-even elementary embedding is rederived here; the scalar continuum group note is explicitly context. No operator-unit-ball or uniform microscopic-locality claim follows.",
+      "blocker": "compares that action to the actual scaled spin boost",
+      "next": "Compose the actual boost and cell estimate with time and rounded translations only for fixed finite words and their stated compact parameter sets.",
+      "source": "MICROSCOPIC_LOCAL_BOOST_LIMIT_PROBE.md",
+      "review": "MICROSCOPIC_LOCAL_BOOST_LIMIT_REVIEW.md",
+      "note": "MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "microscopic_local_boost_limit_2026_10_12.py",
+      "claim": "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/01b61c31938ecc34b14f1ba9f098c039fb6f8def616337e5c003b1496130f879.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/06e9a8f66b5609699e7568ab402ff71553a8016184be13485f4b62427d06c707.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/0ca19c11d0a0aee5cf39d1d1bea87ba777a0cd4791f51bf74eb995ac433c55ba.npz",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/12d88b064b19a438019526431ceafcab7d7294bebd6d7bb5d86bc1f75d0630d9.npz",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/2a2e1d6307fc1fc926aac703132b21bb0bcabdc7bbe8925fd0526ed69a99d8db.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/2e2ada1807cdc8b9deef0a017a3f3a521ca7d8f27aa821bcfb36b0be41a3a590.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/64c29dade3a44b0abe5c9f3aadde456cd9ec135a98b2ef95bb6bbe4de5637e71.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/6820afe8e2a28234f2b305b3733ad5a3730d77dea0310e9636592d8dd8e46994.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/73202e0581956fb5b9715b514a1938d5586d66a891d6f62292d2db9e5745d7db.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/83204c74cd695a5a5e65b5458fcf2433b6b0e9100c81cb5ef46b54028febfc95.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/9ed0e40e929d7edf3fef9b70d096df85f672b0de9e0f7547936d8f63b9f75202.npz",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/b62eb32bced662f9e616ea94d01e360ccb55f72021565e958c3c272abca8cbc0.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/cd4b819f7eac9cdafe15ec705b0cc056bc8748f4b3d6232ab033330d8a56eff1.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/edcecdaa6e7997062bf190466ed971e87792945402b640101fe13791e9ad7bea.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/ef9f3f66e2e054a3e868f4f2c113aed7cea1b0998527d87cda4cc1d4b03974ef.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/MicroscopicBoost/fce65306a18258459046fd5d3353087a898533c832d18c13c3a522975d3f1b85.py"
+      ],
+      "baseline_counts": {
+        "passed": 277,
+        "failed": 0
+      },
+      "variants": [
+        "flow_higher_comparison",
+        "flow_refinement_comparison",
+        "mut_missing_endpoints_spin",
+        "mut_missing_half_density_spin",
+        "mut_missing_weighted_first_weighted",
+        "mut_missing_weighted_second_weighted",
+        "mut_wrong_cell_normalization_weighted",
+        "mut_wrong_group_sign_flow",
+        "mut_wrong_group_sign_spin",
+        "mut_wrong_mass_sign_spin",
+        "mut_wrong_mass_sign_weighted",
+        "mut_wrong_origin_spin",
+        "mut_wrong_origin_weighted",
+        "mut_wrong_space_sign_spin",
+        "mut_wrong_space_sign_weighted"
+      ],
+      "historical_nonbaseline_successes": [
+        "flow_higher_comparison",
+        "mut_wrong_origin_weighted"
+      ]
+    },
+    {
+      "key": "Mixed",
+      "stem": "MIXED_LOCAL_POINCARE_CORRELATIONS",
+      "folder": "mixed_local_poincare_correlations",
+      "review_folder": "mixed_local_poincare_review",
+      "coverage": "Mixed_local_poincare_root_review_coverage.json",
+      "source_sha": "8c3a308b57a2e53d117a7c76046b4995c3a2ffc150e31cb142a90bd926796418",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12",
+        "continuum_local_boost_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "Fixed finite words of actual time, rounded spatial translation and scaled boost actions have compact-parameter norm limits on constructed even spin polynomials, and the chosen-state ordered joint moments converge with the stated fixed-data estimates.",
+      "limits": "Norm-only and zero-parameter wrong-sign survivors remain, together with all nonzero finite-spacing relation defects and mixed-state correlation changes. The independent false half-density expectation, low-cutoff failures, refinements and administrative recording correction remain. Floor translations are not a real group at positive spacing. No growing-word or operator-unit-ball uniformity is asserted.",
+      "blocker": "handles\nfixed mixed words and their ordered correlations",
+      "next": "Use the fixed-word norm and state estimates to extend the explicitly constructed comparison sections by density; do not assume arbitrary scaling-family control.",
+      "source": "MIXED_LOCAL_POINCARE_CORRELATIONS_PROBE.md",
+      "review": "MIXED_LOCAL_POINCARE_CORRELATIONS_REVIEW.md",
+      "note": "MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "mixed_local_poincare_correlations_2026_10_12.py",
+      "claim": "mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/1324ccfec5f9e454160a703b020f42441528b8df481a5aa22b6954d825172bae.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/203b21f53cce6f4d97893da4c7ce4bf4696d585fa53bdbae8e081e4050b65296.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/31cb86a69736e2e2051ddf3a57e7fb7229a615de1a26698bf901970b58d5543c.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/583cda0650d70336bd625b3be960f748b575b0a97382bd8ee3d291663a03e8b9.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/744517cab4b4856050ee029cf518164241ae28a3f1b9d4e40f00b4bebce943a6.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/7beaba51bd64df0c38eb0a473fda9dbb479fa27bdaab5353252179248af924f2.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/9f64fedfcd4262b32bab71652fc88ca22e53bc24d742370c6178541088694462.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/b01735fe298a27dd5e554ac10f342d6d3bb763092f1ce1eb7798329bc3f118aa.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/fe643cb4d7abb87b23594eb07348f92887e3bbe3a565cf0f76f9e16f07e1b0f1.py",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Mixed/fede9f2342961fdcd9cae27e5554b8f1f21ebb80a9d8e6263e1bdeb2ee2cf7d8.py"
+      ],
+      "baseline_counts": {
+        "passed": 420,
+        "failed": 0
+      },
+      "variants": [
+        "real_only_covariance_spin",
+        "refinement_coarse_fine",
+        "wrong_pfaffian_sign_spin",
+        "wrong_q15_displacement_continuum",
+        "wrong_time_sign_continuum",
+        "wrong_time_sign_spin",
+        "wrong_translation_direction_continuum",
+        "wrong_translation_direction_spin"
+      ],
+      "historical_nonbaseline_successes": [
+        "refinement_coarse_fine"
+      ]
+    },
+    {
+      "key": "Sections",
+      "stem": "LOCAL_EVEN_NET_SECTIONS",
+      "folder": "local_even_net_sections",
+      "review_folder": "local_even_net_sections_review",
+      "coverage": "Local_even_sections_root_review_coverage.json",
+      "source_sha": "61d361d205fe2ecbc9e6ef0cab34fbdce5e14c9ffe8916ceaf44592c61e9a3de",
+      "deps": [
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "continuum_local_boost_bounded_theorem_note_2026-10-12",
+        "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12",
+        "mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "A basis-independent UCP cell expectation gives actual local even-spin comparison maps for every fixed even-CAR element and identifies a specified section algebra modulo norm-vanishing sections with the continuum even algebra, intertwining the actual mixed actions and specified state limit.",
+      "limits": "The quotient is deliberately constructed, not an exhaustion of microscopic scaling families. The discarded-mode unit-ball witness, complement covariance, true inverse argument and floor one-cell defect remain. The independent combined 60-second timeout and 640 partial rows remain before unchanged split jobs; naive-fieldwise and zero-complement failures and polarized-complement different-state survivors remain.",
+      "blocker": "extends the comparison to every fixed element and\nidentifies a specified section-algebra quotient with the continuum even\nobservable algebra",
+      "next": "Submit this conditional comparison-section theorem family for independent review and combined landing validation; arbitrary microscopic scaling families remain outside its target.",
+      "source": "LOCAL_EVEN_NET_SECTIONS_PROBE.md",
+      "review": "LOCAL_EVEN_NET_SECTIONS_REVIEW.md",
+      "note": "LOCAL_EVEN_NET_SECTIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "local_even_net_sections_2026_10_12.py",
+      "claim": "local_even_net_sections_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/LOCAL_EVEN_NET_SECTIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-local-continuum-20261012/runtime/Sections/cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451.py"
+      ],
+      "baseline_counts": {
+        "passed": 133,
+        "failed": 0
+      },
+      "variants": [
+        "drop_contractions",
+        "drop_crossing_sign"
+      ],
+      "historical_nonbaseline_successes": []
+    }
+  ],
+  "pairing": "Same selected model family and reasoning effort; separate reviewer contexts with formula exposure, not blinded or diverse-family. Root supplied routes and is a coauthor; the section note is root-authored. Mechanical preparation and reproduction add no independent scientific review.",
+  "expected_graph_delta": {
+    "nodes": 5,
+    "edges": 13
+  }
+}

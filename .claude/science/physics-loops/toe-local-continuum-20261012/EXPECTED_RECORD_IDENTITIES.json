@@ -1,0 +1,3411 @@
+{
+  "LocalEven/cell_baseline": {
+    "key": "LocalEven",
+    "name": "cell_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/cell_baseline/receipt.json",
+      "sha256": "9249927bdf99873bb2f62b6fb6886137d1c0f40dd2032f3a6616c37e95ccfd10",
+      "bytes": 2926
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/continuum_checks.py",
+      "sha256": "762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2",
+      "bytes": 6556
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/cell_baseline/stdout.txt",
+      "sha256": "897a0f9ba6e1b824e42e417375d4d4eb39ad973b12456c8af021bccfcb3e8404",
+      "bytes": 22956
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/cell_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/cell_baseline.json",
+      "sha256": "897a0f9ba6e1b824e42e417375d4d4eb39ad973b12456c8af021bccfcb3e8404",
+      "bytes": 22956
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 100,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4200114170089364,
+    "original_argv": [
+      "python3",
+      "continuum_checks.py",
+      "candidate.py",
+      "cell_baseline.json",
+      "--mode",
+      "cells"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "cell_baseline.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/cell_baseline.json",
+        "sha256": "897a0f9ba6e1b824e42e417375d4d4eb39ad973b12456c8af021bccfcb3e8404",
+        "bytes": 22956
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/correlation_baseline": {
+    "key": "LocalEven",
+    "name": "correlation_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/correlation_baseline/receipt.json",
+      "sha256": "ff1151692207ecb844b1975d9e7d24dc43d8f0fbe893e38c6c9a063ef98a12db",
+      "bytes": 2919
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/correlation_checks.py",
+      "sha256": "18aca21255385ffb9303b676436ef33f39d3bdd92aa4c94fa37e12a27292bf2b",
+      "bytes": 3499
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/correlation_baseline/stdout.txt",
+      "sha256": "41f410fdd2ad1a31cd075c4f220246ef032c8dfc3048fb9dce947379deef86c2",
+      "bytes": 14241
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/correlation_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/correlation_baseline.json",
+      "sha256": "41f410fdd2ad1a31cd075c4f220246ef032c8dfc3048fb9dce947379deef86c2",
+      "bytes": 14241
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 34,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.6493329172953963,
+    "original_argv": [
+      "python3",
+      "correlation_checks.py",
+      "candidate.py",
+      "correlation_baseline.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "correlation_baseline.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/correlation_baseline.json",
+        "sha256": "41f410fdd2ad1a31cd075c4f220246ef032c8dfc3048fb9dce947379deef86c2",
+        "bytes": 14241
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_clock": {
+    "key": "LocalEven",
+    "name": "mutant_clock",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_clock/receipt.json",
+      "sha256": "4c1bfa2d02cd8718ab3f00721a5a571af5b653ec40bb73a29f1580786d29c41c",
+      "bytes": 2932
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_clock/stdout.txt",
+      "sha256": "cfa2c6baafadcfa905995e585075bf2ae8777d2de0992a35bf21781a9dd98415",
+      "bytes": 7178
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_clock/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/clock/result.json",
+      "sha256": "cfa2c6baafadcfa905995e585075bf2ae8777d2de0992a35bf21781a9dd98415",
+      "bytes": 7178
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 17,
+      "failed": 7
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4756996249780059,
+    "original_argv": [
+      "python3",
+      "spin_checks.py",
+      "mutants/clock/candidate.py",
+      "mutants/clock/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/clock/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/clock/result.json",
+        "sha256": "cfa2c6baafadcfa905995e585075bf2ae8777d2de0992a35bf21781a9dd98415",
+        "bytes": 7178
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_difference": {
+    "key": "LocalEven",
+    "name": "mutant_difference",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_difference/receipt.json",
+      "sha256": "f2d9fd5e54e15544baa6ab1c3753330d0a069dd0b9c2f3118154b6c30cab992b",
+      "bytes": 2999
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/continuum_checks.py",
+      "sha256": "762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2",
+      "bytes": 6556
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_difference/stdout.txt",
+      "sha256": "47e51b63c5e216e6d284082e95974666cdf261783d4570fa9cc1b40a2125ec00",
+      "bytes": 22930
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_difference/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/difference/result.json",
+      "sha256": "47e51b63c5e216e6d284082e95974666cdf261783d4570fa9cc1b40a2125ec00",
+      "bytes": 22930
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 80,
+      "failed": 20
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4822359997779131,
+    "original_argv": [
+      "python3",
+      "continuum_checks.py",
+      "mutants/difference/candidate.py",
+      "mutants/difference/result.json",
+      "--mode",
+      "cells"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/difference/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/difference/result.json",
+        "sha256": "47e51b63c5e216e6d284082e95974666cdf261783d4570fa9cc1b40a2125ec00",
+        "bytes": 22930
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_jw_tails": {
+    "key": "LocalEven",
+    "name": "mutant_jw_tails",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_jw_tails/receipt.json",
+      "sha256": "aa336e75c796716c55668d47e5f5011f7727a982b1f2a1d1b6454bb12969b558",
+      "bytes": 2947
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_jw_tails/stdout.txt",
+      "sha256": "228f837de660d07e3b28353beb7b7bf7d297494519e773db9aee7f4d5bc3d53c",
+      "bytes": 7205
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_jw_tails/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/jw_tails/result.json",
+      "sha256": "228f837de660d07e3b28353beb7b7bf7d297494519e773db9aee7f4d5bc3d53c",
+      "bytes": 7205
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 12,
+      "failed": 12
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4779880833812058,
+    "original_argv": [
+      "python3",
+      "spin_checks.py",
+      "mutants/jw_tails/candidate.py",
+      "mutants/jw_tails/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/jw_tails/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/jw_tails/result.json",
+        "sha256": "228f837de660d07e3b28353beb7b7bf7d297494519e773db9aee7f4d5bc3d53c",
+        "bytes": 7205
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_mass": {
+    "key": "LocalEven",
+    "name": "mutant_mass",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_mass/receipt.json",
+      "sha256": "a81388636a4f3f679cba49a8d2e3f7658c6d30feaa8b13e20ca5314aba9551e4",
+      "bytes": 2970
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/continuum_checks.py",
+      "sha256": "762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2",
+      "bytes": 6556
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_mass/stdout.txt",
+      "sha256": "269058b0ce26d5358096a5c5e3781236f1e0bf5e2c5b617dd501f9a227fae075",
+      "bytes": 22951
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_mass/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/mass/result.json",
+      "sha256": "269058b0ce26d5358096a5c5e3781236f1e0bf5e2c5b617dd501f9a227fae075",
+      "bytes": 22951
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 82,
+      "failed": 18
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.45981045812368393,
+    "original_argv": [
+      "python3",
+      "continuum_checks.py",
+      "mutants/mass/candidate.py",
+      "mutants/mass/result.json",
+      "--mode",
+      "cells"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/mass/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/mass/result.json",
+        "sha256": "269058b0ce26d5358096a5c5e3781236f1e0bf5e2c5b617dd501f9a227fae075",
+        "bytes": 22951
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_normalization": {
+    "key": "LocalEven",
+    "name": "mutant_normalization",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_normalization/receipt.json",
+      "sha256": "c0b5b1e44277d9cab0a45fe751f0f893f5bda07e02b10cea53c1de0fe46250fd",
+      "bytes": 3013
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/continuum_checks.py",
+      "sha256": "762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2",
+      "bytes": 6556
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_normalization/stdout.txt",
+      "sha256": "02ca9aa4d22d6d9b020c4e57d3a05286c70cffa28a46762d3618aee040c72158",
+      "bytes": 23060
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_normalization/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/normalization/result.json",
+      "sha256": "02ca9aa4d22d6d9b020c4e57d3a05286c70cffa28a46762d3618aee040c72158",
+      "bytes": 23060
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 40,
+      "failed": 60
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.461000416893512,
+    "original_argv": [
+      "python3",
+      "continuum_checks.py",
+      "mutants/normalization/candidate.py",
+      "mutants/normalization/result.json",
+      "--mode",
+      "cells"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/normalization/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/normalization/result.json",
+        "sha256": "02ca9aa4d22d6d9b020c4e57d3a05286c70cffa28a46762d3618aee040c72158",
+        "bytes": 23060
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_odd_local": {
+    "key": "LocalEven",
+    "name": "mutant_odd_local",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_odd_local/receipt.json",
+      "sha256": "e7c535f7804daa1140dc5faaa372595027b599f7cf4cd62bff91a447a34b16b6",
+      "bytes": 2953
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_odd_local/stdout.txt",
+      "sha256": "6fd8b1840238d025920ab90df5848cee9bf65c1df624aec47de28f961811aa12",
+      "bytes": 7480
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_odd_local/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/odd_local/result.json",
+      "sha256": "6fd8b1840238d025920ab90df5848cee9bf65c1df624aec47de28f961811aa12",
+      "bytes": 7480
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 24,
+      "failed": 2
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.42163933301344514,
+    "original_argv": [
+      "python3",
+      "spin_checks.py",
+      "mutants/odd_local/candidate.py",
+      "mutants/odd_local/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/odd_local/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/odd_local/result.json",
+        "sha256": "6fd8b1840238d025920ab90df5848cee9bf65c1df624aec47de28f961811aa12",
+        "bytes": 7480
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_projector": {
+    "key": "LocalEven",
+    "name": "mutant_projector",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_projector/receipt.json",
+      "sha256": "6254f8feb1dbc7cb14c4590a00a3ba9ca9c57aa2c779345a9f1a51e154350680",
+      "bytes": 2952
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_projector/stdout.txt",
+      "sha256": "a00b48dc1f6e071751d56062c7f5fd10c85bd8c40f223f728163c2a4906adc76",
+      "bytes": 7174
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_projector/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/projector/result.json",
+      "sha256": "a00b48dc1f6e071751d56062c7f5fd10c85bd8c40f223f728163c2a4906adc76",
+      "bytes": 7174
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 15,
+      "failed": 9
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4720412907190621,
+    "original_argv": [
+      "python3",
+      "spin_checks.py",
+      "mutants/projector/candidate.py",
+      "mutants/projector/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/projector/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/projector/result.json",
+        "sha256": "a00b48dc1f6e071751d56062c7f5fd10c85bd8c40f223f728163c2a4906adc76",
+        "bytes": 7174
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/mutant_wick": {
+    "key": "LocalEven",
+    "name": "mutant_wick",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_wick/receipt.json",
+      "sha256": "988dd19756e594c582c81d64894d52e0b5922f87bc7606bdb770bd65a88a7052",
+      "bytes": 2927
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_wick/stdout.txt",
+      "sha256": "ad47b8419e23da8e7f28036eed13b95b12bf2adf17d8a26f4cc438b497fac8d8",
+      "bytes": 7182
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/mutant_wick/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/wick/result.json",
+      "sha256": "ad47b8419e23da8e7f28036eed13b95b12bf2adf17d8a26f4cc438b497fac8d8",
+      "bytes": 7182
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 18,
+      "failed": 6
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4716553329490125,
+    "original_argv": [
+      "python3",
+      "spin_checks.py",
+      "mutants/wick/candidate.py",
+      "mutants/wick/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "mutants/wick/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/mutants/wick/result.json",
+        "sha256": "ad47b8419e23da8e7f28036eed13b95b12bf2adf17d8a26f4cc438b497fac8d8",
+        "bytes": 7182
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/spectral_baseline": {
+    "key": "LocalEven",
+    "name": "spectral_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/spectral_baseline/receipt.json",
+      "sha256": "f0a692c78143c354775fd48ae228a586c7adccbc34f5bc26c8b36d9cda845590",
+      "bytes": 2937
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/continuum_checks.py",
+      "sha256": "762906075a1967e5165fed53b037872060ff26f0441236d57a2752d0dc0e6da2",
+      "bytes": 6556
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/spectral_baseline/stdout.txt",
+      "sha256": "520f0e0a61f2d2c25fa89f6062a4481549cf7a7158c83135fad631c444f81cda",
+      "bytes": 38556
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/spectral_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spectral_baseline.json",
+      "sha256": "520f0e0a61f2d2c25fa89f6062a4481549cf7a7158c83135fad631c444f81cda",
+      "bytes": 38556
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 126,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.5521343750879169,
+    "original_argv": [
+      "python3",
+      "continuum_checks.py",
+      "candidate.py",
+      "spectral_baseline.json",
+      "--mode",
+      "spectral"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "spectral_baseline.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spectral_baseline.json",
+        "sha256": "520f0e0a61f2d2c25fa89f6062a4481549cf7a7158c83135fad631c444f81cda",
+        "bytes": 38556
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "LocalEven/spin_baseline": {
+    "key": "LocalEven",
+    "name": "spin_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/spin_baseline/receipt.json",
+      "sha256": "0bc1c4b8fba3486fdedb5768b03f6c3784647f83a6f85b49dc00e8dd62fe170b",
+      "bytes": 2884
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_checks.py",
+      "sha256": "2772f72a00ab8304879ccea6244f4bb5bb36d531e95dd7576514b63560346242",
+      "bytes": 4348
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/spin_baseline/stdout.txt",
+      "sha256": "6cd6aa61bc7ea585f42a983189793abd4c875d0cc2d3a7332f5d54d8444c82e9",
+      "bytes": 7196
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/runs/spin_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_baseline.json",
+      "sha256": "6cd6aa61bc7ea585f42a983189793abd4c875d0cc2d3a7332f5d54d8444c82e9",
+      "bytes": 7196
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 24,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4200105001218617,
+    "original_argv": [
+      "python3",
+      "spin_checks.py",
+      "candidate.py",
+      "spin_baseline.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "spin_baseline.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_continuum/spin_baseline.json",
+        "sha256": "6cd6aa61bc7ea585f42a983189793abd4c875d0cc2d3a7332f5d54d8444c82e9",
+        "bytes": 7196
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_baseline": {
+    "key": "ContinuumBoost",
+    "name": "numerical_baseline",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_baseline/receipt.json",
+      "sha256": "489f7914adfd0e48049e5ca27d99578b6ae097f592da2cd6f530d1bde04fb7ff",
+      "bytes": 2693
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_baseline/stdout.txt",
+      "sha256": "ff3835cdc59814e994f2e58700e934731728f88db2f66106da4139089d327a54",
+      "bytes": 7380
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_baseline/stdout.txt",
+      "sha256": "ff3835cdc59814e994f2e58700e934731728f88db2f66106da4139089d327a54",
+      "bytes": 7380
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 25,
+      "failed": 7
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.258755125105381,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_constant_phase": {
+    "key": "ContinuumBoost",
+    "name": "numerical_constant_phase",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_constant_phase/receipt.json",
+      "sha256": "fd3c03555ca922fadd96c65cbc40d26127647fa9243d54eae254695511e3f7d1",
+      "bytes": 2793
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_constant_phase/stdout.txt",
+      "sha256": "2324142731d828f95781d27fb70bc2d9853e8ea7952d750532a24f1e75d52111",
+      "bytes": 7457
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_constant_phase/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_constant_phase/stdout.txt",
+      "sha256": "2324142731d828f95781d27fb70bc2d9853e8ea7952d750532a24f1e75d52111",
+      "bytes": 7457
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 32,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6273161671124399,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--variant",
+      "constant_phase",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--variant\", \"constant_phase\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_missing_berry": {
+    "key": "ContinuumBoost",
+    "name": "numerical_missing_berry",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_missing_berry/receipt.json",
+      "sha256": "6691220af732ef7a3d60c9f0f2a1f92ebee46fa28c418e818a27853599ab26d2",
+      "bytes": 2787
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_missing_berry/stdout.txt",
+      "sha256": "950ad0b0ee696a6436e689ed3a454bb2f5f79fc3871bf839837f7c41075b0f8d",
+      "bytes": 7447
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_missing_berry/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_missing_berry/stdout.txt",
+      "sha256": "950ad0b0ee696a6436e689ed3a454bb2f5f79fc3871bf839837f7c41075b0f8d",
+      "bytes": 7447
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 20,
+      "failed": 12
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6121543748304248,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--variant",
+      "missing_berry",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--variant\", \"missing_berry\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_rational_correct": {
+    "key": "ContinuumBoost",
+    "name": "numerical_rational_correct",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_rational_correct/receipt.json",
+      "sha256": "bf3a9f7301314b3ec2721397451ace51269440fcc15811f13a6fbe551b4c1ac2",
+      "bytes": 2805
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_rational_correct/stdout.txt",
+      "sha256": "54adef092c93d0c3d4363cbd13e9fb91b6556953fa65c2f787576f656a9d83e9",
+      "bytes": 7457
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_rational_correct/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_rational_correct/stdout.txt",
+      "sha256": "54adef092c93d0c3d4363cbd13e9fb91b6556953fa65c2f787576f656a9d83e9",
+      "bytes": 7457
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 32,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6443341253325343,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--variant",
+      "rational_correct",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--variant\", \"rational_correct\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_refined": {
+    "key": "ContinuumBoost",
+    "name": "numerical_refined",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_refined/receipt.json",
+      "sha256": "4327ad0d350b668f9064dcdf825c0238a3b13ed850b6f60b370a5adb4a126cdf",
+      "bytes": 2719
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_refined/stdout.txt",
+      "sha256": "043d34a898e28219dd1c41cac0bf68bd8c1d4ccc092b4028b3bd6f7ed5ce9bde",
+      "bytes": 7419
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_refined/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_refined/stdout.txt",
+      "sha256": "043d34a898e28219dd1c41cac0bf68bd8c1d4ccc092b4028b3bd6f7ed5ce9bde",
+      "bytes": 7419
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 32,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.3228131663054228,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_reverse_scalar": {
+    "key": "ContinuumBoost",
+    "name": "numerical_reverse_scalar",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_reverse_scalar/receipt.json",
+      "sha256": "176d3a2ce1f27c85fd170120c88a931f8f0d71a9885cd99ee38f719974c1661f",
+      "bytes": 2793
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_reverse_scalar/stdout.txt",
+      "sha256": "c8243c84f3fd23f65a1c18c2bf07be86f143e989d2c037cb8c0257b504a3b0e2",
+      "bytes": 7435
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_reverse_scalar/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_reverse_scalar/stdout.txt",
+      "sha256": "c8243c84f3fd23f65a1c18c2bf07be86f143e989d2c037cb8c0257b504a3b0e2",
+      "bytes": 7435
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 24,
+      "failed": 8
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6055293753743172,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--variant",
+      "reverse_scalar",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--variant\", \"reverse_scalar\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_wrong_source_spin": {
+    "key": "ContinuumBoost",
+    "name": "numerical_wrong_source_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_source_spin/receipt.json",
+      "sha256": "22f52d7c28232f2fb1814cd43ef5d4c19b28cede741e69aba8c51e6b2ecc5a99",
+      "bytes": 2811
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_source_spin/stdout.txt",
+      "sha256": "708404538255d0af0a4b80495e7703fd234ae19813eab620b66b0ebae0db94af",
+      "bytes": 7451
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_source_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_source_spin/stdout.txt",
+      "sha256": "708404538255d0af0a4b80495e7703fd234ae19813eab620b66b0ebae0db94af",
+      "bytes": 7451
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 28,
+      "failed": 4
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6524739158339798,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--variant",
+      "wrong_source_spin",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--variant\", \"wrong_source_spin\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/numerical_wrong_spin": {
+    "key": "ContinuumBoost",
+    "name": "numerical_wrong_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_spin/receipt.json",
+      "sha256": "5a76c828f0a94919b2ea5531b3337be08070acf5c9bbe7548aca8c2c410d4d00",
+      "bytes": 2769
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/numerical_checks.py",
+      "sha256": "412b4646fcde41db079b079b0463e74fc7d17715989ba37bd3506b78efe908d1",
+      "bytes": 7898
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_spin/stdout.txt",
+      "sha256": "82d97e0f54c5098cb5c33394aaea58f9a746d6c2203d9dfeb3260ed2ed63c867",
+      "bytes": 7427
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/numerical_wrong_spin/stdout.txt",
+      "sha256": "82d97e0f54c5098cb5c33394aaea58f9a746d6c2203d9dfeb3260ed2ed63c867",
+      "bytes": 7427
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 24,
+      "failed": 8
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6132127912715077,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "env",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "VECLIB_MAXIMUM_THREADS=1",
+      "python3",
+      "-B",
+      "numerical_checks.py",
+      "--variant",
+      "wrong_spin",
+      "--nodes",
+      "360,720"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"env\", \"OPENBLAS_NUM_THREADS=1\", \"OMP_NUM_THREADS=1\", \"VECLIB_MAXIMUM_THREADS=1\", \"python3\", \"-B\", \"numerical_checks.py\", \"--variant\", \"wrong_spin\", \"--nodes\", \"360,720\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/symbolic_baseline": {
+    "key": "ContinuumBoost",
+    "name": "symbolic_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_baseline/receipt.json",
+      "sha256": "2a75b59831b5135876cfe131d242c2b17a3adf9f8e139620d1bafc2678f0c2e5",
+      "bytes": 2588
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/symbolic_checks.py",
+      "sha256": "679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e",
+      "bytes": 5457
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_baseline/stdout.txt",
+      "sha256": "164174bbe36e3a9bb16c5344018450b063daa8ade0b80ad95b0a697e770ccd20",
+      "bytes": 8113
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_baseline/stdout.txt",
+      "sha256": "164174bbe36e3a9bb16c5344018450b063daa8ade0b80ad95b0a697e770ccd20",
+      "bytes": 8113
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 21,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6720129591412842,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "python3",
+      "-B",
+      "symbolic_checks.py"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"python3\", \"-B\", \"symbolic_checks.py\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/symbolic_opposite_polarization": {
+    "key": "ContinuumBoost",
+    "name": "symbolic_opposite_polarization",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_opposite_polarization/receipt.json",
+      "sha256": "f30b5d0807799ce3a047e9f742e79be23440ee47fb78cbee90384099b24982c8",
+      "bytes": 2699
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/symbolic_checks.py",
+      "sha256": "679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e",
+      "bytes": 5457
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_opposite_polarization/stdout.txt",
+      "sha256": "b1c04eaac0a461f0a72bc7ebab022d4ef3d8e1eb008b359bab094d4b0799207c",
+      "bytes": 8818
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_opposite_polarization/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_opposite_polarization/stdout.txt",
+      "sha256": "b1c04eaac0a461f0a72bc7ebab022d4ef3d8e1eb008b359bab094d4b0799207c",
+      "bytes": 8818
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 20,
+      "failed": 1
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.9528300841338933,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "python3",
+      "-B",
+      "symbolic_checks.py",
+      "--variant",
+      "opposite_polarization"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"python3\", \"-B\", \"symbolic_checks.py\", \"--variant\", \"opposite_polarization\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "ContinuumBoost/symbolic_wrong_spin": {
+    "key": "ContinuumBoost",
+    "name": "symbolic_wrong_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_wrong_spin/receipt.json",
+      "sha256": "7a76f58db6fef61a2a27d7378e255cb1c51e916382c325574ca825de00257c10",
+      "bytes": 2633
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/symbolic_checks.py",
+      "sha256": "679a632d364a6be03bc053f2af82892ea833ccc401dd2267b1752beb50970e1e",
+      "bytes": 5457
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_wrong_spin/stdout.txt",
+      "sha256": "25384c8ddc110758b6b5c19192f0b1b0703352bf71bb74ea2c0c86d0df74188f",
+      "bytes": 9496
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_wrong_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/continuum_local_boost/runs/symbolic_wrong_spin/stdout.txt",
+      "sha256": "25384c8ddc110758b6b5c19192f0b1b0703352bf71bb74ea2c0c86d0df74188f",
+      "bytes": 9496
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 16,
+      "failed": 5
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.0570730827748775,
+    "original_argv": [
+      "python3",
+      "execute_pinned.py",
+      "control_manifest.json",
+      "b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d",
+      "--",
+      "python3",
+      "-B",
+      "symbolic_checks.py",
+      "--variant",
+      "wrong_spin"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": "{\"pin_validation\": \"matched_before_execution\", \"manifest_sha256\": \"b49d7e361b755ad071d76d8e57d608c83118293be1c13cacd80e10531432364d\", \"verified_inputs\": 9, \"command\": [\"python3\", \"-B\", \"symbolic_checks.py\", \"--variant\", \"wrong_spin\"]}\n",
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/flow_coarse": {
+    "key": "MicroscopicBoost",
+    "name": "flow_coarse",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/receipt.json",
+      "sha256": "e197475b12b6fddbe6e04206bd72bbb78e4be4bf932606a2afc1c8f236815a85",
+      "bytes": 6012
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_checks.py",
+      "sha256": "ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d",
+      "bytes": 5709
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/stdout.txt",
+      "sha256": "7e30ce8261cfd0f7aa1805e38752576d98b90dc79d1eaded2967a9aeeac09f5e",
+      "bytes": 12562
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/result.json",
+      "sha256": "7e30ce8261cfd0f7aa1805e38752576d98b90dc79d1eaded2967a9aeeac09f5e",
+      "bytes": 12562
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 47,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.3081509582698345,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "flow_checks.py",
+      "--output",
+      "runs/flow_coarse/result.json",
+      "--resolution",
+      "coarse"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/flow_coarse/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/result.json",
+        "sha256": "7e30ce8261cfd0f7aa1805e38752576d98b90dc79d1eaded2967a9aeeac09f5e",
+        "bytes": 12562
+      },
+      "runs/flow_coarse/result.vectors.npz": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_coarse/result.vectors.npz",
+        "sha256": "0ca19c11d0a0aee5cf39d1d1bea87ba777a0cd4791f51bf74eb995ac433c55ba",
+        "bytes": 142928
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/flow_fine": {
+    "key": "MicroscopicBoost",
+    "name": "flow_fine",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/receipt.json",
+      "sha256": "77305597f4c691945ff5fbed84e8a01cd9ab564c36f85304fc7fcfa3830c490d",
+      "bytes": 6004
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_checks.py",
+      "sha256": "ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d",
+      "bytes": 5709
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/stdout.txt",
+      "sha256": "6402099e803d931eb928d8ed2351e7da42b4618828dc8c849f4c3325f68b1ba5",
+      "bytes": 12607
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/result.json",
+      "sha256": "6402099e803d931eb928d8ed2351e7da42b4618828dc8c849f4c3325f68b1ba5",
+      "bytes": 12607
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 47,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 2.81064199982211,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "flow_checks.py",
+      "--output",
+      "runs/flow_fine/result.json",
+      "--resolution",
+      "fine"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/flow_fine/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/result.json",
+        "sha256": "6402099e803d931eb928d8ed2351e7da42b4618828dc8c849f4c3325f68b1ba5",
+        "bytes": 12607
+      },
+      "runs/flow_fine/result.vectors.npz": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_fine/result.vectors.npz",
+        "sha256": "9ed0e40e929d7edf3fef9b70d096df85f672b0de9e0f7547936d8f63b9f75202",
+        "bytes": 232208
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/flow_high": {
+    "key": "MicroscopicBoost",
+    "name": "flow_high",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/receipt.json",
+      "sha256": "8d5d246098bdaa2ed118e7649582001f0376d925789cd41190b7de111e62f68d",
+      "bytes": 3980
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_high.py",
+      "sha256": "ef9f3f66e2e054a3e868f4f2c113aed7cea1b0998527d87cda4cc1d4b03974ef",
+      "bytes": 5709
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/stdout.txt",
+      "sha256": "2c13a663c032d51e1b63e0270eec69dae8b2ff0ba292acdec78f41f9fe46950e",
+      "bytes": 12611
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/result.json",
+      "sha256": "2c13a663c032d51e1b63e0270eec69dae8b2ff0ba292acdec78f41f9fe46950e",
+      "bytes": 12611
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 47,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 4.807058332953602,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.refinement.json",
+      "--expected",
+      "fad544e49c61ad92292389bde39e7c39101ef4e58e11e7a489d21dd49d36bb22",
+      "flow_high.py",
+      "--resolution",
+      "fine",
+      "--output",
+      "runs/flow_high/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/flow_high/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/result.json",
+        "sha256": "2c13a663c032d51e1b63e0270eec69dae8b2ff0ba292acdec78f41f9fe46950e",
+        "bytes": 12611
+      },
+      "runs/flow_high/result.vectors.npz": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_high/result.vectors.npz",
+        "sha256": "12d88b064b19a438019526431ceafcab7d7294bebd6d7bb5d86bc1f75d0630d9",
+        "bytes": 232208
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/flow_higher_comparison": {
+    "key": "MicroscopicBoost",
+    "name": "flow_higher_comparison",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_higher_comparison/receipt.json",
+      "sha256": "8f858bc3f354abcfa387c1f9743b09b47411a2ae0947f6f3657dd92e432cf0c7",
+      "bytes": 3340
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/compare_flows.py",
+      "sha256": "01b61c31938ecc34b14f1ba9f098c039fb6f8def616337e5c003b1496130f879",
+      "bytes": 1314
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_higher_comparison/stdout.txt",
+      "sha256": "7b4fb138b7623da0731e909b09e788589bc660708a0c783eabbe364e3f67e608",
+      "bytes": 2646
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_higher_comparison/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_higher_comparison/result.json",
+      "sha256": "7b4fb138b7623da0731e909b09e788589bc660708a0c783eabbe364e3f67e608",
+      "bytes": 2646
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 20,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.14123191684484482,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.refinement.json",
+      "--expected",
+      "fad544e49c61ad92292389bde39e7c39101ef4e58e11e7a489d21dd49d36bb22",
+      "compare_flows.py",
+      "runs/flow_fine/result.vectors.npz",
+      "runs/flow_high/result.vectors.npz",
+      "--output",
+      "runs/flow_higher_comparison/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/flow_higher_comparison/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_higher_comparison/result.json",
+        "sha256": "7b4fb138b7623da0731e909b09e788589bc660708a0c783eabbe364e3f67e608",
+        "bytes": 2646
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/flow_refinement_comparison": {
+    "key": "MicroscopicBoost",
+    "name": "flow_refinement_comparison",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_refinement_comparison/receipt.json",
+      "sha256": "0aa08b2796cbd3a448bfbbd7c081cb4b0b51885d60844b0b3b8d0873b761bb39",
+      "bytes": 6979
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/compare_flows.py",
+      "sha256": "01b61c31938ecc34b14f1ba9f098c039fb6f8def616337e5c003b1496130f879",
+      "bytes": 1314
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_refinement_comparison/stdout.txt",
+      "sha256": "c5f3693873aac0df4e406eb1326be47c7069c7c67262fd8605d76e5085acece1",
+      "bytes": 2832
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_refinement_comparison/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_refinement_comparison/result.json",
+      "sha256": "c5f3693873aac0df4e406eb1326be47c7069c7c67262fd8605d76e5085acece1",
+      "bytes": 2832
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 17,
+      "failed": 3
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.14693337492644787,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "compare_flows.py",
+      "runs/flow_coarse/result.vectors.npz",
+      "runs/flow_fine/result.vectors.npz",
+      "--output",
+      "runs/flow_refinement_comparison/result.json"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/flow_refinement_comparison/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/flow_refinement_comparison/result.json",
+        "sha256": "c5f3693873aac0df4e406eb1326be47c7069c7c67262fd8605d76e5085acece1",
+        "bytes": 2832
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_missing_endpoints_spin": {
+    "key": "MicroscopicBoost",
+    "name": "mut_missing_endpoints_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_endpoints_spin/receipt.json",
+      "sha256": "3a91e47df035144d892dc6b7979f3f26e1be6fd7d4dd21335ddcbaee673461ad",
+      "bytes": 6523
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_endpoints_spin/stdout.txt",
+      "sha256": "0bf52e47972dfbc031f4bd2498ccc2955cabf3261fa087eea96a958c36775222",
+      "bytes": 3829
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_endpoints_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_endpoints_spin/result.json",
+      "sha256": "0bf52e47972dfbc031f4bd2498ccc2955cabf3261fa087eea96a958c36775222",
+      "bytes": 3829
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 10,
+      "failed": 6
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6958074169233441,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--candidate",
+      "mutants/missing_endpoints/candidate.py",
+      "--output",
+      "runs/mut_missing_endpoints_spin/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_endpoints/candidate.py",
+    "candidate_relative": "mutants/missing_endpoints/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_missing_endpoints_spin/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_endpoints_spin/result.json",
+        "sha256": "0bf52e47972dfbc031f4bd2498ccc2955cabf3261fa087eea96a958c36775222",
+        "bytes": 3829
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_missing_half_density_spin": {
+    "key": "MicroscopicBoost",
+    "name": "mut_missing_half_density_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_half_density_spin/receipt.json",
+      "sha256": "679eed0af832d433f81d04583991bd02d8c02854b96550acaf2431af87af154c",
+      "bytes": 6538
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_half_density_spin/stdout.txt",
+      "sha256": "4c0880af7ca2e489a366a98782c98db1382331090c6f93f31da90e9d9ff37374",
+      "bytes": 3846
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_half_density_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_half_density_spin/result.json",
+      "sha256": "4c0880af7ca2e489a366a98782c98db1382331090c6f93f31da90e9d9ff37374",
+      "bytes": 3846
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 6,
+      "failed": 10
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7083356669172645,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--candidate",
+      "mutants/missing_half_density/candidate.py",
+      "--output",
+      "runs/mut_missing_half_density_spin/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_half_density/candidate.py",
+    "candidate_relative": "mutants/missing_half_density/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_missing_half_density_spin/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_half_density_spin/result.json",
+        "sha256": "4c0880af7ca2e489a366a98782c98db1382331090c6f93f31da90e9d9ff37374",
+        "bytes": 3846
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_missing_weighted_first_weighted": {
+    "key": "MicroscopicBoost",
+    "name": "mut_missing_weighted_first_weighted",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_first_weighted/receipt.json",
+      "sha256": "7440c0aaf8797780fec57dece10cb8510ec42a65ef06dd7f4954c40c1e093463",
+      "bytes": 6560
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_first_weighted/stdout.txt",
+      "sha256": "7d95840e92fcd73432859fabeac03e4b8f549266f674c5dc6527dd3e0d3d89b6",
+      "bytes": 31815
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_first_weighted/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_first_weighted/result.json",
+      "sha256": "7d95840e92fcd73432859fabeac03e4b8f549266f674c5dc6527dd3e0d3d89b6",
+      "bytes": 31815
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 115,
+      "failed": 5
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.6191046671010554,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--candidate",
+      "mutants/missing_weighted_first/candidate.py",
+      "--output",
+      "runs/mut_missing_weighted_first_weighted/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_weighted_first/candidate.py",
+    "candidate_relative": "mutants/missing_weighted_first/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_missing_weighted_first_weighted/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_first_weighted/result.json",
+        "sha256": "7d95840e92fcd73432859fabeac03e4b8f549266f674c5dc6527dd3e0d3d89b6",
+        "bytes": 31815
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_missing_weighted_second_weighted": {
+    "key": "MicroscopicBoost",
+    "name": "mut_missing_weighted_second_weighted",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_second_weighted/receipt.json",
+      "sha256": "544a48c9d828226e8a3324ece000b8475220f6d3720bcfe84b876bc24e386e57",
+      "bytes": 6564
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_second_weighted/stdout.txt",
+      "sha256": "99ea4362bb9c72c2c63a8b5662b857400016e81e3b3d57006f15e201f9991373",
+      "bytes": 31825
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_second_weighted/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_second_weighted/result.json",
+      "sha256": "99ea4362bb9c72c2c63a8b5662b857400016e81e3b3d57006f15e201f9991373",
+      "bytes": 31825
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 111,
+      "failed": 9
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.674174124840647,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--candidate",
+      "mutants/missing_weighted_second/candidate.py",
+      "--output",
+      "runs/mut_missing_weighted_second_weighted/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/missing_weighted_second/candidate.py",
+    "candidate_relative": "mutants/missing_weighted_second/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_missing_weighted_second_weighted/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_missing_weighted_second_weighted/result.json",
+        "sha256": "99ea4362bb9c72c2c63a8b5662b857400016e81e3b3d57006f15e201f9991373",
+        "bytes": 31825
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_cell_normalization_weighted": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_cell_normalization_weighted",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_cell_normalization_weighted/receipt.json",
+      "sha256": "9f1f247d16d4d73b7fe749bf7d73965f315bd4a6a619c929ff26aadea04effe8",
+      "bytes": 6568
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_cell_normalization_weighted/stdout.txt",
+      "sha256": "20e40308192ceea1e692b7ebf696555b0e5eb0357b7ac1c9ff9565a422f6b2b9",
+      "bytes": 31923
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_cell_normalization_weighted/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_cell_normalization_weighted/result.json",
+      "sha256": "20e40308192ceea1e692b7ebf696555b0e5eb0357b7ac1c9ff9565a422f6b2b9",
+      "bytes": 31923
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 45,
+      "failed": 75
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.78607179177925,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--candidate",
+      "mutants/wrong_cell_normalization/candidate.py",
+      "--output",
+      "runs/mut_wrong_cell_normalization_weighted/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_cell_normalization/candidate.py",
+    "candidate_relative": "mutants/wrong_cell_normalization/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_cell_normalization_weighted/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_cell_normalization_weighted/result.json",
+        "sha256": "20e40308192ceea1e692b7ebf696555b0e5eb0357b7ac1c9ff9565a422f6b2b9",
+        "bytes": 31923
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_group_sign_flow": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_group_sign_flow",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_flow/receipt.json",
+      "sha256": "4e54bafb3937f63f0dacee2f4a46c264889643dbfa49bd7439ab80fabbc5c369",
+      "bytes": 6518
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_checks.py",
+      "sha256": "ce7974b40c3c5bacdee6200525205c8f6b1cafe42e83562eded7d3f20963667d",
+      "bytes": 5709
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_flow/stdout.txt",
+      "sha256": "d063369585e76d5b2d75f606a51e9844669889546cadfea62cdbf54b70153adc",
+      "bytes": 12582
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_flow/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_flow/result.json",
+      "sha256": "d063369585e76d5b2d75f606a51e9844669889546cadfea62cdbf54b70153adc",
+      "bytes": 12582
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 42,
+      "failed": 5
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.8819328332319856,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "flow_checks.py",
+      "--candidate",
+      "mutants/wrong_group_sign/candidate.py",
+      "--output",
+      "runs/mut_wrong_group_sign_flow/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_group_sign/candidate.py",
+    "candidate_relative": "mutants/wrong_group_sign/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_group_sign_flow/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_flow/result.json",
+        "sha256": "d063369585e76d5b2d75f606a51e9844669889546cadfea62cdbf54b70153adc",
+        "bytes": 12582
+      },
+      "runs/mut_wrong_group_sign_flow/result.vectors.npz": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_flow/result.vectors.npz",
+        "sha256": "2d022f4a5ec27eadf88805dd0947b75434674bc8b23fc6eb6394609c936e821d",
+        "bytes": 142928
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_group_sign_spin": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_group_sign_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_spin/receipt.json",
+      "sha256": "775f0d570c79a3dcb1af5a0d89ad6e8c88cc028d8921e3df8bf546773ef9a2d4",
+      "bytes": 6518
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_spin/stdout.txt",
+      "sha256": "4c363876fa6a695a479b330c2b0da225792f693107b5d3e9a6ecdb5848015801",
+      "bytes": 3829
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_spin/result.json",
+      "sha256": "4c363876fa6a695a479b330c2b0da225792f693107b5d3e9a6ecdb5848015801",
+      "bytes": 3829
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 11,
+      "failed": 5
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7525194166228175,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--candidate",
+      "mutants/wrong_group_sign/candidate.py",
+      "--output",
+      "runs/mut_wrong_group_sign_spin/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_group_sign/candidate.py",
+    "candidate_relative": "mutants/wrong_group_sign/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_group_sign_spin/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_group_sign_spin/result.json",
+        "sha256": "4c363876fa6a695a479b330c2b0da225792f693107b5d3e9a6ecdb5848015801",
+        "bytes": 3829
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_mass_sign_spin": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_mass_sign_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_spin/receipt.json",
+      "sha256": "16e1a4cd6f1f75b0e51574a751b1224d4495b3b1b6d6062a52c214facc30f5bd",
+      "bytes": 6513
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_spin/stdout.txt",
+      "sha256": "effacae42d5061aa19dfdfc4021db988ee71d8b9d9f2825099a8b95820488a8a",
+      "bytes": 3819
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_spin/result.json",
+      "sha256": "effacae42d5061aa19dfdfc4021db988ee71d8b9d9f2825099a8b95820488a8a",
+      "bytes": 3819
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 7,
+      "failed": 9
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.6447155000641942,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--candidate",
+      "mutants/wrong_mass_sign/candidate.py",
+      "--output",
+      "runs/mut_wrong_mass_sign_spin/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_mass_sign/candidate.py",
+    "candidate_relative": "mutants/wrong_mass_sign/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_mass_sign_spin/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_spin/result.json",
+        "sha256": "effacae42d5061aa19dfdfc4021db988ee71d8b9d9f2825099a8b95820488a8a",
+        "bytes": 3819
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_mass_sign_weighted": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_mass_sign_weighted",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_weighted/receipt.json",
+      "sha256": "98504c7a1f900c203bc77348c60347f612d82aefd7b277a6e0dcf6ae7612fd09",
+      "bytes": 6525
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_weighted/stdout.txt",
+      "sha256": "e9defacefb31b02d162561165d135491b84409cdfb1a8a45dc925fdfeca125af",
+      "bytes": 31799
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_weighted/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_weighted/result.json",
+      "sha256": "e9defacefb31b02d162561165d135491b84409cdfb1a8a45dc925fdfeca125af",
+      "bytes": 31799
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 113,
+      "failed": 7
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.7782766250893474,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--candidate",
+      "mutants/wrong_mass_sign/candidate.py",
+      "--output",
+      "runs/mut_wrong_mass_sign_weighted/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_mass_sign/candidate.py",
+    "candidate_relative": "mutants/wrong_mass_sign/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_mass_sign_weighted/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_mass_sign_weighted/result.json",
+        "sha256": "e9defacefb31b02d162561165d135491b84409cdfb1a8a45dc925fdfeca125af",
+        "bytes": 31799
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_origin_spin": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_origin_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_spin/receipt.json",
+      "sha256": "84bb627e955cc80f5bb83b701062b3763ff436dc72e588f5623e353683ea04bb",
+      "bytes": 6498
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_spin/stdout.txt",
+      "sha256": "61645c6471a2332b5851fda23431c7ca6c032fc39fcba94daf496a9d0136fc03",
+      "bytes": 3798
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_spin/result.json",
+      "sha256": "61645c6471a2332b5851fda23431c7ca6c032fc39fcba94daf496a9d0136fc03",
+      "bytes": 3798
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 7,
+      "failed": 9
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.8713415409438312,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--candidate",
+      "mutants/wrong_origin/candidate.py",
+      "--output",
+      "runs/mut_wrong_origin_spin/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_origin/candidate.py",
+    "candidate_relative": "mutants/wrong_origin/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_origin_spin/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_spin/result.json",
+        "sha256": "61645c6471a2332b5851fda23431c7ca6c032fc39fcba94daf496a9d0136fc03",
+        "bytes": 3798
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_origin_weighted": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_origin_weighted",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_weighted/receipt.json",
+      "sha256": "5397cb152fcc36418bb0dc0dba6fec42b7b0bf096db7731aa23d6c55e10ba93e",
+      "bytes": 6510
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_weighted/stdout.txt",
+      "sha256": "039ec66dfd688bca1481a1df50c9ba9a4c33367bba89b99d130530b0e60cfa11",
+      "bytes": 31798
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_weighted/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_weighted/result.json",
+      "sha256": "039ec66dfd688bca1481a1df50c9ba9a4c33367bba89b99d130530b0e60cfa11",
+      "bytes": 31798
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 120,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.7602961249649525,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--candidate",
+      "mutants/wrong_origin/candidate.py",
+      "--output",
+      "runs/mut_wrong_origin_weighted/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_origin/candidate.py",
+    "candidate_relative": "mutants/wrong_origin/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_origin_weighted/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_origin_weighted/result.json",
+        "sha256": "039ec66dfd688bca1481a1df50c9ba9a4c33367bba89b99d130530b0e60cfa11",
+        "bytes": 31798
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_space_sign_spin": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_space_sign_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_spin/receipt.json",
+      "sha256": "210afdd52ceb66c0bac45f6ae35908db25cde133df36874f4994d5f3463e6a32",
+      "bytes": 6518
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_spin/stdout.txt",
+      "sha256": "c71771785735f92d3b39ea72336e1c7d64c8da377ae0e415579aef1eff8c911f",
+      "bytes": 3824
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_spin/result.json",
+      "sha256": "c71771785735f92d3b39ea72336e1c7d64c8da377ae0e415579aef1eff8c911f",
+      "bytes": 3824
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 8,
+      "failed": 8
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7077592499554157,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--candidate",
+      "mutants/wrong_space_sign/candidate.py",
+      "--output",
+      "runs/mut_wrong_space_sign_spin/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_space_sign/candidate.py",
+    "candidate_relative": "mutants/wrong_space_sign/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_space_sign_spin/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_spin/result.json",
+        "sha256": "c71771785735f92d3b39ea72336e1c7d64c8da377ae0e415579aef1eff8c911f",
+        "bytes": 3824
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/mut_wrong_space_sign_weighted": {
+    "key": "MicroscopicBoost",
+    "name": "mut_wrong_space_sign_weighted",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_weighted/receipt.json",
+      "sha256": "4e5e680979f8e2fab7222ce8d7b9850c278cfbdb8b0f07cb592c812a48e94045",
+      "bytes": 6530
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_weighted/stdout.txt",
+      "sha256": "fce8296870d3a08ed6bebd9e8edd5a7811be49120ea0edcd1480aa3e6dc3c3d2",
+      "bytes": 31803
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_weighted/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_weighted/result.json",
+      "sha256": "fce8296870d3a08ed6bebd9e8edd5a7811be49120ea0edcd1480aa3e6dc3c3d2",
+      "bytes": 31803
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 105,
+      "failed": 15
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.7429015836678445,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--candidate",
+      "mutants/wrong_space_sign/candidate.py",
+      "--output",
+      "runs/mut_wrong_space_sign_weighted/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/mutants/wrong_space_sign/candidate.py",
+    "candidate_relative": "mutants/wrong_space_sign/candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/mut_wrong_space_sign_weighted/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/mut_wrong_space_sign_weighted/result.json",
+        "sha256": "fce8296870d3a08ed6bebd9e8edd5a7811be49120ea0edcd1480aa3e6dc3c3d2",
+        "bytes": 31803
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/spin_baseline": {
+    "key": "MicroscopicBoost",
+    "name": "spin_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/spin_baseline/receipt.json",
+      "sha256": "287cd59f889a77d0b996aaeecf014d3bfb292eb3ce63fc4edc889387c3df963a",
+      "bytes": 5982
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/spin_checks.py",
+      "sha256": "c99aed46f388a7e8c128cff93baccbf01651db1c8da22b3a4ec547f20c3cb1c5",
+      "bytes": 3870
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/spin_baseline/stdout.txt",
+      "sha256": "da83b499486ff77a3f1f7ab6ef793390b44b9bb3962dd39b19e654fafa824d78",
+      "bytes": 3821
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/spin_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/spin_baseline/result.json",
+      "sha256": "da83b499486ff77a3f1f7ab6ef793390b44b9bb3962dd39b19e654fafa824d78",
+      "bytes": 3821
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 16,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.4097553752362728,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "spin_checks.py",
+      "--output",
+      "runs/spin_baseline/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/spin_baseline/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/spin_baseline/result.json",
+        "sha256": "da83b499486ff77a3f1f7ab6ef793390b44b9bb3962dd39b19e654fafa824d78",
+        "bytes": 3821
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "MicroscopicBoost/weighted_baseline": {
+    "key": "MicroscopicBoost",
+    "name": "weighted_baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/weighted_baseline/receipt.json",
+      "sha256": "a7b76d12f0f2c0d8075dab6c9db45add68299db8267e67f1fdf1af0def279f53",
+      "bytes": 5994
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/weighted_checks.py",
+      "sha256": "4fe10789c0a227a0621601d95c1d8064384ddfb871990c1cdb66774d350ef600",
+      "bytes": 2800
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/weighted_baseline/stdout.txt",
+      "sha256": "1fe3222a580d44baff1624599f53dbfd98442f4599af8d04dcc81626ed36e469",
+      "bytes": 31775
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/weighted_baseline/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/weighted_baseline/result.json",
+      "sha256": "1fe3222a580d44baff1624599f53dbfd98442f4599af8d04dcc81626ed36e469",
+      "bytes": 31775
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 120,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.0278205829672515,
+    "original_argv": [
+      "python3",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "b9f5b8c350124ebb28ea4c92233318189b51d4db8a6791433929fe239475a646",
+      "weighted_checks.py",
+      "--output",
+      "runs/weighted_baseline/result.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "runs/weighted_baseline/result.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/runs/weighted_baseline/result.json",
+        "sha256": "1fe3222a580d44baff1624599f53dbfd98442f4599af8d04dcc81626ed36e469",
+        "bytes": 31775
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/baseline_continuum": {
+    "key": "Mixed",
+    "name": "baseline_continuum",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_continuum/receipt.json",
+      "sha256": "193e76bc57a2e69cfe7b5635e4d97b2b3371ca1a19220351c9b5e65e33817d25",
+      "bytes": 2883
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/continuum_checks.py",
+      "sha256": "96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a",
+      "bytes": 2276
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_continuum/stdout.txt",
+      "sha256": "1284ff3ea35e8d97d4b2cd3bf7cd5d3cbb20011b7b998dbc2d4a94492e42a2f3",
+      "bytes": 10672
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_continuum/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_continuum.json",
+      "sha256": "1284ff3ea35e8d97d4b2cd3bf7cd5d3cbb20011b7b998dbc2d4a94492e42a2f3",
+      "bytes": 10672
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 46,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.664727249648422,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "continuum_checks.py",
+      "--candidate",
+      "candidate.py",
+      "--output",
+      "results/baseline_continuum.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/baseline_continuum.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_continuum.json",
+        "sha256": "1284ff3ea35e8d97d4b2cd3bf7cd5d3cbb20011b7b998dbc2d4a94492e42a2f3",
+        "bytes": 10672
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/baseline_mixed_coarse": {
+    "key": "Mixed",
+    "name": "baseline_mixed_coarse",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_mixed_coarse/receipt.json",
+      "sha256": "b3d95661a931dfbf0e34d5f581abe321e03209f602404ac21df63094249862c9",
+      "bytes": 2912
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/mixed_checks.py",
+      "sha256": "9f64fedfcd4262b32bab71652fc88ca22e53bc24d742370c6178541088694462",
+      "bytes": 6128
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_mixed_coarse/stdout.txt",
+      "sha256": "91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11",
+      "bytes": 69980
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_mixed_coarse/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_mixed_coarse.json",
+      "sha256": "91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11",
+      "bytes": 69980
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 134,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.9824322499334812,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "mixed_checks.py",
+      "--candidate",
+      "candidate.py",
+      "--output",
+      "results/baseline_mixed_coarse.json",
+      "--resolution",
+      "coarse"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/baseline_mixed_coarse.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_mixed_coarse.json",
+        "sha256": "91999282d93243c438d2a3f9a786c1f1e98d663b3296259422749405f8803c11",
+        "bytes": 69980
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/baseline_mixed_fine": {
+    "key": "Mixed",
+    "name": "baseline_mixed_fine",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_mixed_fine/receipt.json",
+      "sha256": "bc7695b5e24734f317971b429db2b53de44031994b2de6afd5c10e2ad97ef7c7",
+      "bytes": 2905
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/mixed_checks.py",
+      "sha256": "9f64fedfcd4262b32bab71652fc88ca22e53bc24d742370c6178541088694462",
+      "bytes": 6128
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_mixed_fine/stdout.txt",
+      "sha256": "5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31",
+      "bytes": 70150
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_mixed_fine/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_mixed_fine.json",
+      "sha256": "5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31",
+      "bytes": 70150
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 134,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.193987624719739,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "mixed_checks.py",
+      "--candidate",
+      "candidate.py",
+      "--output",
+      "results/baseline_mixed_fine.json",
+      "--resolution",
+      "fine"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/baseline_mixed_fine.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_mixed_fine.json",
+        "sha256": "5b7aad9adeb6b5aaf86080932b598957753eb2732c78b18ae6b0e6e0b80a5e31",
+        "bytes": 70150
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/baseline_spin": {
+    "key": "Mixed",
+    "name": "baseline_spin",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_spin/receipt.json",
+      "sha256": "b9d03f1828bdafbe4fccc101c88772fe83f6365893a3647e9917166a12b60681",
+      "bytes": 2859
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/spin_checks.py",
+      "sha256": "2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4",
+      "bytes": 5127
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_spin/stdout.txt",
+      "sha256": "554e3cde335cb365d5ea1de7e3ff0237f27c49ebaba65c89db8d578639154f92",
+      "bytes": 22183
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/baseline_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_spin.json",
+      "sha256": "554e3cde335cb365d5ea1de7e3ff0237f27c49ebaba65c89db8d578639154f92",
+      "bytes": 22183
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 106,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7192813749425113,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "spin_checks.py",
+      "--candidate",
+      "candidate.py",
+      "--output",
+      "results/baseline_spin.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/baseline_spin.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/baseline_spin.json",
+        "sha256": "554e3cde335cb365d5ea1de7e3ff0237f27c49ebaba65c89db8d578639154f92",
+        "bytes": 22183
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/real_only_covariance_spin": {
+    "key": "Mixed",
+    "name": "real_only_covariance_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/real_only_covariance_spin/receipt.json",
+      "sha256": "4a3848a4fa9475dbbe15629275be0f7e53b91de4a74ad7521f38e6fd47cdeda8",
+      "bytes": 2903
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/spin_checks.py",
+      "sha256": "2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4",
+      "bytes": 5127
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/real_only_covariance_spin/stdout.txt",
+      "sha256": "7a73aa117a73922406db7a59917b34c7297d5a48d22f14313cb2eb7e56f2019c",
+      "bytes": 22004
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/real_only_covariance_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/real_only_covariance_spin.json",
+      "sha256": "7a73aa117a73922406db7a59917b34c7297d5a48d22f14313cb2eb7e56f2019c",
+      "bytes": 22004
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 62,
+      "failed": 44
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7306927083991468,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "spin_checks.py",
+      "--candidate",
+      "variants/real_only_covariance.py",
+      "--output",
+      "results/real_only_covariance_spin.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/real_only_covariance.py",
+    "candidate_relative": "variants/real_only_covariance.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/real_only_covariance_spin.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/real_only_covariance_spin.json",
+        "sha256": "7a73aa117a73922406db7a59917b34c7297d5a48d22f14313cb2eb7e56f2019c",
+        "bytes": 22004
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/refinement_coarse_fine": {
+    "key": "Mixed",
+    "name": "refinement_coarse_fine",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/refinement_coarse_fine/receipt.json",
+      "sha256": "0473b2a70c362744b09cd0e05156f782bad5d8cf30aeb827709352165382502f",
+      "bytes": 3007
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/refinement_checks.py",
+      "sha256": "744517cab4b4856050ee029cf518164241ae28a3f1b9d4e40f00b4bebce943a6",
+      "bytes": 1335
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/refinement_coarse_fine/stdout.txt",
+      "sha256": "bf572dd410de0729c7bc9fedf85a931fb4acefba43525b0d389cf4a9f4d446c1",
+      "bytes": 5127
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/refinement_coarse_fine/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/refinement_coarse_fine.json",
+      "sha256": "bf572dd410de0729c7bc9fedf85a931fb4acefba43525b0d389cf4a9f4d446c1",
+      "bytes": 5127
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 24,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.727557959035039,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "refinement_checks.py",
+      "--candidate",
+      "candidate.py",
+      "--output",
+      "results/refinement_coarse_fine.json",
+      "--first",
+      "results/baseline_mixed_coarse.json",
+      "--second",
+      "results/baseline_mixed_fine.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/candidate.py",
+    "candidate_relative": "candidate.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/refinement_coarse_fine.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/refinement_coarse_fine.json",
+        "sha256": "bf572dd410de0729c7bc9fedf85a931fb4acefba43525b0d389cf4a9f4d446c1",
+        "bytes": 5127
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/wrong_pfaffian_sign_spin": {
+    "key": "Mixed",
+    "name": "wrong_pfaffian_sign_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_pfaffian_sign_spin/receipt.json",
+      "sha256": "1aff4907f381fade87e0d96b25f77d8a6cebf73aa8f79ee9905bbaaf537c71ec",
+      "bytes": 2900
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/spin_checks.py",
+      "sha256": "2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4",
+      "bytes": 5127
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_pfaffian_sign_spin/stdout.txt",
+      "sha256": "e498adb47f34cfd7cd4f21e763f7d305be17663c5d500d52b07f8250ecd7ab96",
+      "bytes": 22189
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_pfaffian_sign_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_pfaffian_sign_spin.json",
+      "sha256": "e498adb47f34cfd7cd4f21e763f7d305be17663c5d500d52b07f8250ecd7ab96",
+      "bytes": 22189
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 102,
+      "failed": 4
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7122633745893836,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "spin_checks.py",
+      "--candidate",
+      "variants/wrong_pfaffian_sign.py",
+      "--output",
+      "results/wrong_pfaffian_sign_spin.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_pfaffian_sign.py",
+    "candidate_relative": "variants/wrong_pfaffian_sign.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/wrong_pfaffian_sign_spin.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_pfaffian_sign_spin.json",
+        "sha256": "e498adb47f34cfd7cd4f21e763f7d305be17663c5d500d52b07f8250ecd7ab96",
+        "bytes": 22189
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/wrong_q15_displacement_continuum": {
+    "key": "Mixed",
+    "name": "wrong_q15_displacement_continuum",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_q15_displacement_continuum/receipt.json",
+      "sha256": "6467017c0ac4e60987d8bc8bbfebd278b385beebd9dfa8cab0ded8afb38b1b28",
+      "bytes": 2934
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/continuum_checks.py",
+      "sha256": "96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a",
+      "bytes": 2276
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_q15_displacement_continuum/stdout.txt",
+      "sha256": "c0c092eb46056f94b6cd3c33dd7a5fe312c2f72db64535434543b9f8b7678c0d",
+      "bytes": 10650
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_q15_displacement_continuum/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_q15_displacement_continuum.json",
+      "sha256": "c0c092eb46056f94b6cd3c33dd7a5fe312c2f72db64535434543b9f8b7678c0d",
+      "bytes": 10650
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 42,
+      "failed": 4
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7240517502650619,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "continuum_checks.py",
+      "--candidate",
+      "variants/wrong_q15_displacement.py",
+      "--output",
+      "results/wrong_q15_displacement_continuum.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_q15_displacement.py",
+    "candidate_relative": "variants/wrong_q15_displacement.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/wrong_q15_displacement_continuum.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_q15_displacement_continuum.json",
+        "sha256": "c0c092eb46056f94b6cd3c33dd7a5fe312c2f72db64535434543b9f8b7678c0d",
+        "bytes": 10650
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/wrong_time_sign_continuum": {
+    "key": "Mixed",
+    "name": "wrong_time_sign_continuum",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_time_sign_continuum/receipt.json",
+      "sha256": "af9b7ec9aca3f9759d416dec050f6892ecc59b1ecf2ba8054ddc6affc3fbe8f9",
+      "bytes": 2913
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/continuum_checks.py",
+      "sha256": "96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a",
+      "bytes": 2276
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_time_sign_continuum/stdout.txt",
+      "sha256": "03d9c2da7fd4d03d68501c6813fcf3f7eb00ddb2ad3c37e6bb4f22566a65887c",
+      "bytes": 10642
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_time_sign_continuum/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_time_sign_continuum.json",
+      "sha256": "03d9c2da7fd4d03d68501c6813fcf3f7eb00ddb2ad3c37e6bb4f22566a65887c",
+      "bytes": 10642
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 32,
+      "failed": 14
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7249830421060324,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "continuum_checks.py",
+      "--candidate",
+      "variants/wrong_time_sign.py",
+      "--output",
+      "results/wrong_time_sign_continuum.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_time_sign.py",
+    "candidate_relative": "variants/wrong_time_sign.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/wrong_time_sign_continuum.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_time_sign_continuum.json",
+        "sha256": "03d9c2da7fd4d03d68501c6813fcf3f7eb00ddb2ad3c37e6bb4f22566a65887c",
+        "bytes": 10642
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/wrong_time_sign_spin": {
+    "key": "Mixed",
+    "name": "wrong_time_sign_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_time_sign_spin/receipt.json",
+      "sha256": "a12aa5d9031229e96f8678be29cc7708ab988738fdfa9365ca47787c01eaef6d",
+      "bytes": 2888
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/spin_checks.py",
+      "sha256": "2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4",
+      "bytes": 5127
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_time_sign_spin/stdout.txt",
+      "sha256": "cd8acab8c0635d4554045d0e57f3f124cee0531084d2a8f9bcae04c18ff0dad0",
+      "bytes": 22213
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_time_sign_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_time_sign_spin.json",
+      "sha256": "cd8acab8c0635d4554045d0e57f3f124cee0531084d2a8f9bcae04c18ff0dad0",
+      "bytes": 22213
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 94,
+      "failed": 12
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7138145416975021,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "spin_checks.py",
+      "--candidate",
+      "variants/wrong_time_sign.py",
+      "--output",
+      "results/wrong_time_sign_spin.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_time_sign.py",
+    "candidate_relative": "variants/wrong_time_sign.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/wrong_time_sign_spin.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_time_sign_spin.json",
+        "sha256": "cd8acab8c0635d4554045d0e57f3f124cee0531084d2a8f9bcae04c18ff0dad0",
+        "bytes": 22213
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/wrong_translation_direction_continuum": {
+    "key": "Mixed",
+    "name": "wrong_translation_direction_continuum",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_translation_direction_continuum/receipt.json",
+      "sha256": "d22365513a9f7a9a4d485196693dae2d25986a2da8f0781e6685d39e87a3610c",
+      "bytes": 2948
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/continuum_checks.py",
+      "sha256": "96b221fdfb48734d15f1355ebf8efe73f1689f99ea721ebf9a5fba227c312e8a",
+      "bytes": 2276
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_translation_direction_continuum/stdout.txt",
+      "sha256": "b23b9ea7c306d7b832aa22ad870b6e02c2b18c9cda2d01578ee71f2567cd840a",
+      "bytes": 10674
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_translation_direction_continuum/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_translation_direction_continuum.json",
+      "sha256": "b23b9ea7c306d7b832aa22ad870b6e02c2b18c9cda2d01578ee71f2567cd840a",
+      "bytes": 10674
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 32,
+      "failed": 14
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.770203625317663,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "continuum_checks.py",
+      "--candidate",
+      "variants/wrong_translation_direction.py",
+      "--output",
+      "results/wrong_translation_direction_continuum.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_translation_direction.py",
+    "candidate_relative": "variants/wrong_translation_direction.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/wrong_translation_direction_continuum.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_translation_direction_continuum.json",
+        "sha256": "b23b9ea7c306d7b832aa22ad870b6e02c2b18c9cda2d01578ee71f2567cd840a",
+        "bytes": 10674
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Mixed/wrong_translation_direction_spin": {
+    "key": "Mixed",
+    "name": "wrong_translation_direction_spin",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_translation_direction_spin/receipt.json",
+      "sha256": "dca4092ccfe07ca2f1f69adc043eca65c0d8fff36208df5702b3f53f1fdac4fc",
+      "bytes": 2924
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/spin_checks.py",
+      "sha256": "2be059ee28e19bff2f0eaecae56d063d4044a74b1fb12b018d3507ffe5ee20c4",
+      "bytes": 5127
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_translation_direction_spin/stdout.txt",
+      "sha256": "668bbd890e9adf3b27b51e2cb4cd92fca49aa93f417ab8437b2261e78235154a",
+      "bytes": 22178
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/runs/wrong_translation_direction_spin/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_translation_direction_spin.json",
+      "sha256": "668bbd890e9adf3b27b51e2cb4cd92fca49aa93f417ab8437b2261e78235154a",
+      "bytes": 22178
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 96,
+      "failed": 10
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 0.7150635002180934,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "guarded.py",
+      "--pins",
+      "execution_pins.json",
+      "--expected",
+      "ef3179b070ac93286a78b5c3f6c2eaab452fc02b0a9aa5d0dc77914c79d08665",
+      "spin_checks.py",
+      "--candidate",
+      "variants/wrong_translation_direction.py",
+      "--output",
+      "results/wrong_translation_direction_spin.json"
+    ],
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_translation_direction.py",
+    "candidate_relative": "variants/wrong_translation_direction.py",
+    "original_guard_prefix": null,
+    "output_files": {
+      "results/wrong_translation_direction_spin.json": {
+        "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/results/wrong_translation_direction_spin.json",
+        "sha256": "668bbd890e9adf3b27b51e2cb4cd92fca49aa93f417ab8437b2261e78235154a",
+        "bytes": 22178
+      }
+    },
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Sections/baseline": {
+    "key": "Sections",
+    "name": "baseline",
+    "baseline": true,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/baseline/execution.json",
+      "sha256": "24ff74f16b7ce287a55c74b8936aea4a452a6a8ec6c465278fe7c5c16cd9f4f6",
+      "bytes": 1032
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "sha256": "cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451",
+      "bytes": 6048
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/baseline/stdout.json",
+      "sha256": "7b4576bb25a63de76200fcfbf8941342a1fe0276b15a9a5375c50e1bff2113e8",
+      "bytes": 336386
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/baseline/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/baseline/stdout.json",
+      "sha256": "7b4576bb25a63de76200fcfbf8941342a1fe0276b15a9a5375c50e1bff2113e8",
+      "bytes": 336386
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 133,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 3.397286667022854,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "baseline"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Sections/drop_contractions": {
+    "key": "Sections",
+    "name": "drop_contractions",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_contractions/execution.json",
+      "sha256": "5faa1e272aeeb670c8efd6a62850d8b9bc8f97f43ea718a76a810fb93fb50f83",
+      "bytes": 1060
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "sha256": "cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451",
+      "bytes": 6048
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_contractions/stdout.json",
+      "sha256": "70f2423cc9bba705e89611afefd80d9407b4ad6adf59f5db900a722bb20e2c39",
+      "bytes": 340552
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_contractions/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_contractions/stdout.json",
+      "sha256": "70f2423cc9bba705e89611afefd80d9407b4ad6adf59f5db900a722bb20e2c39",
+      "bytes": 340552
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 113,
+      "failed": 20
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 1.4779620417393744,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "drop_contractions"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  },
+  "Sections/drop_crossing_sign": {
+    "key": "Sections",
+    "name": "drop_crossing_sign",
+    "baseline": false,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_crossing_sign/execution.json",
+      "sha256": "436eca891bb8109c76e8a6b76807e7dc59f8f57c6c7bcbc6d074283d85f4759a",
+      "bytes": 1060
+    },
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "sha256": "cdf4d3f2b61d6ce58226b2a7544f2d08a07d757bce4b58d8635bc0f64f4d6451",
+      "bytes": 6048
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_crossing_sign/stdout.json",
+      "sha256": "d94dba0e329424a0d4094004f9e8ab8810e50984feb8c4c3f19c9021c22eda02",
+      "bytes": 340604
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_crossing_sign/stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/runs/drop_crossing_sign/stdout.json",
+      "sha256": "d94dba0e329424a0d4094004f9e8ab8810e50984feb8c4c3f19c9021c22eda02",
+      "bytes": 340604
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 115,
+      "failed": 18
+    },
+    "original_timeout_seconds": 60,
+    "original_elapsed_seconds": 2.6968077076599,
+    "original_argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/local_even_net_sections/controls.py",
+      "drop_crossing_sign"
+    ],
+    "original_candidate_path": null,
+    "candidate_relative": null,
+    "original_guard_prefix": null,
+    "output_files": {},
+    "path_mapping": "Only literal candidate JSON string relocates to str((actual_resolved_cwd/candidate_relative).resolve()); all other bytes remain exact."
+  }
+}

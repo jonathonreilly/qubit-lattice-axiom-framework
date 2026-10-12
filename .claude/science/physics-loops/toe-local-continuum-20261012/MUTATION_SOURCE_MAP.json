@@ -1,0 +1,234 @@
+[
+  {
+    "key": "LocalEven",
+    "name": "clock",
+    "old": "TIME_SIGN = +1",
+    "new": "TIME_SIGN = -1",
+    "control": "spin_checks.py",
+    "source": "mutants/clock/candidate.py",
+    "sha256": "61c4e253c9df24c15ba1df098fdbd72a7c130055cd9d6038ca7a65a30cb84a9d"
+  },
+  {
+    "key": "LocalEven",
+    "name": "projector",
+    "old": "PROJECTOR_SIGN = +1",
+    "new": "PROJECTOR_SIGN = -1",
+    "control": "spin_checks.py",
+    "source": "mutants/projector/candidate.py",
+    "sha256": "16bf95965aa787e08cf27e2310d79d6f42906deeb1b939f614a6412b7bdce526"
+  },
+  {
+    "key": "LocalEven",
+    "name": "normalization",
+    "old": "CELL_POWER = -0.5",
+    "new": "CELL_POWER = -1.0",
+    "control": "continuum_checks.py --mode cells",
+    "source": "mutants/normalization/candidate.py",
+    "sha256": "9cdf66ad93e91e1a460a8a763b3db1e252be38244c59b188b36382fa2e7cdf77"
+  },
+  {
+    "key": "LocalEven",
+    "name": "mass",
+    "old": "MASS_SIGN = -1",
+    "new": "MASS_SIGN = +1",
+    "control": "continuum_checks.py --mode cells",
+    "source": "mutants/mass/candidate.py",
+    "sha256": "22420585adc5ab638e2a74dd89bb7940de391181ad747a8bae560631d96c17dd"
+  },
+  {
+    "key": "LocalEven",
+    "name": "difference",
+    "old": "SPACE_SIGN = -1",
+    "new": "SPACE_SIGN = +1",
+    "control": "continuum_checks.py --mode cells",
+    "source": "mutants/difference/candidate.py",
+    "sha256": "9ca0038239cc51c69ab74e2bde491e4410f7ed11d087cda414b40a1cd08d5af0"
+  },
+  {
+    "key": "LocalEven",
+    "name": "jw_tails",
+    "old": "JW_TAILS = True",
+    "new": "JW_TAILS = False",
+    "control": "spin_checks.py",
+    "source": "mutants/jw_tails/candidate.py",
+    "sha256": "b8f0196d56d78f77fd9f563eb85312650f11788f0a052b6a8008f5f294f024f1"
+  },
+  {
+    "key": "LocalEven",
+    "name": "wick",
+    "old": "WICK_ALTERNATING = True",
+    "new": "WICK_ALTERNATING = False",
+    "control": "spin_checks.py",
+    "source": "mutants/wick/candidate.py",
+    "sha256": "24e6aec6b47ff0262594ee8aa2a1736311dd93ac0493c31a9ae2996c4c1676da"
+  },
+  {
+    "key": "LocalEven",
+    "name": "odd_local",
+    "old": "EVEN_ONLY = True",
+    "new": "EVEN_ONLY = False",
+    "control": "spin_checks.py",
+    "source": "mutants/odd_local/candidate.py",
+    "sha256": "282ae272efc0a44d9cca6ba1af7d80ac832f929b427e54106d6a699af0ebef34"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "wrong_origin",
+    "old": "ORIGIN_SHIFT = -0.5",
+    "new": "ORIGIN_SHIFT = 0.5",
+    "targets": [
+      "spin",
+      "weighted"
+    ],
+    "file": "mutants/wrong_origin/candidate.py",
+    "sha256": "edcecdaa6e7997062bf190466ed971e87792945402b640101fe13791e9ad7bea"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "wrong_group_sign",
+    "old": "BOOST_SIGN = -1.0",
+    "new": "BOOST_SIGN = 1.0",
+    "targets": [
+      "spin",
+      "flow"
+    ],
+    "file": "mutants/wrong_group_sign/candidate.py",
+    "sha256": "2a2e1d6307fc1fc926aac703132b21bb0bcabdc7bbe8925fd0526ed69a99d8db"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "wrong_cell_normalization",
+    "old": "CELL_POWER = -0.5",
+    "new": "CELL_POWER = -1.0",
+    "targets": [
+      "weighted"
+    ],
+    "file": "mutants/wrong_cell_normalization/candidate.py",
+    "sha256": "06e9a8f66b5609699e7568ab402ff71553a8016184be13485f4b62427d06c707"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "wrong_mass_sign",
+    "old": "MASS_SIGN = 1.0",
+    "new": "MASS_SIGN = -1.0",
+    "targets": [
+      "spin",
+      "weighted"
+    ],
+    "file": "mutants/wrong_mass_sign/candidate.py",
+    "sha256": "64c29dade3a44b0abe5c9f3aadde456cd9ec135a98b2ef95bb6bbe4de5637e71"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "wrong_space_sign",
+    "old": "SPACE_SIGN = 1.0",
+    "new": "SPACE_SIGN = -1.0",
+    "targets": [
+      "spin",
+      "weighted"
+    ],
+    "file": "mutants/wrong_space_sign/candidate.py",
+    "sha256": "fce65306a18258459046fd5d3353087a898533c832d18c13c3a522975d3f1b85"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "missing_half_density",
+    "old": "HALF_DENSITY = 0.5",
+    "new": "HALF_DENSITY = 0.0",
+    "targets": [
+      "spin"
+    ],
+    "file": "mutants/missing_half_density/candidate.py",
+    "sha256": "6820afe8e2a28234f2b305b3733ad5a3730d77dea0310e9636592d8dd8e46994"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "missing_weighted_second",
+    "old": "WEIGHTED_SECOND = 1.0",
+    "new": "WEIGHTED_SECOND = 0.0",
+    "targets": [
+      "weighted"
+    ],
+    "file": "mutants/missing_weighted_second/candidate.py",
+    "sha256": "83204c74cd695a5a5e65b5458fcf2433b6b0e9100c81cb5ef46b54028febfc95"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "missing_weighted_first",
+    "old": "WEIGHTED_FIRST = 1.0",
+    "new": "WEIGHTED_FIRST = 0.0",
+    "targets": [
+      "weighted"
+    ],
+    "file": "mutants/missing_weighted_first/candidate.py",
+    "sha256": "b62eb32bced662f9e616ea94d01e360ccb55f72021565e958c3c272abca8cbc0"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "name": "missing_endpoints",
+    "old": "ENDPOINT_CORRECTIONS = True",
+    "new": "ENDPOINT_CORRECTIONS = False",
+    "targets": [
+      "spin"
+    ],
+    "file": "mutants/missing_endpoints/candidate.py",
+    "sha256": "cd4b819f7eac9cdafe15ec705b0cc056bc8748f4b3d6232ab033330d8a56eff1"
+  },
+  {
+    "key": "Mixed",
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/real_only_covariance.py",
+      "sha256": "7beaba51bd64df0c38eb0a473fda9dbb479fa27bdaab5353252179248af924f2",
+      "bytes": 4040
+    },
+    "complete_diff": "--- candidate.py\n+++ real_only_covariance.py\n@@ -6,7 +6,7 @@\n TIME_SIGN = 1.0\n TRANSLATION_DIRECTION = 1\n Q15_DISPLACEMENT_SIGN = -1.0\n-COVARIANCE_REAL_ONLY = False\n+COVARIANCE_REAL_ONLY = True\n PFAFFIAN_ALTERNATING = True\n \n def couplings(a,m,v):\n"
+  },
+  {
+    "key": "Mixed",
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_pfaffian_sign.py",
+      "sha256": "31cb86a69736e2e2051ddf3a57e7fb7229a615de1a26698bf901970b58d5543c",
+      "bytes": 4042
+    },
+    "complete_diff": "--- candidate.py\n+++ wrong_pfaffian_sign.py\n@@ -7,7 +7,7 @@\n TRANSLATION_DIRECTION = 1\n Q15_DISPLACEMENT_SIGN = -1.0\n COVARIANCE_REAL_ONLY = False\n-PFAFFIAN_ALTERNATING = True\n+PFAFFIAN_ALTERNATING = False\n \n def couplings(a,m,v):\n     d=np.sqrt(m*m/4+v*v/a**2)\n"
+  },
+  {
+    "key": "Mixed",
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_q15_displacement.py",
+      "sha256": "fe643cb4d7abb87b23594eb07348f92887e3bbe3a565cf0f76f9e16f07e1b0f1",
+      "bytes": 4040
+    },
+    "complete_diff": "--- candidate.py\n+++ wrong_q15_displacement.py\n@@ -5,7 +5,7 @@\n \n TIME_SIGN = 1.0\n TRANSLATION_DIRECTION = 1\n-Q15_DISPLACEMENT_SIGN = -1.0\n+Q15_DISPLACEMENT_SIGN = 1.0\n COVARIANCE_REAL_ONLY = False\n PFAFFIAN_ALTERNATING = True\n \n"
+  },
+  {
+    "key": "Mixed",
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_time_sign.py",
+      "sha256": "fede9f2342961fdcd9cae27e5554b8f1f21ebb80a9d8e6263e1bdeb2ee2cf7d8",
+      "bytes": 4042
+    },
+    "complete_diff": "--- candidate.py\n+++ wrong_time_sign.py\n@@ -3,7 +3,7 @@\n from scipy.sparse import coo_matrix, diags\n from scipy.sparse.linalg import expm_multiply\n \n-TIME_SIGN = 1.0\n+TIME_SIGN = -1.0\n TRANSLATION_DIRECTION = 1\n Q15_DISPLACEMENT_SIGN = -1.0\n COVARIANCE_REAL_ONLY = False\n"
+  },
+  {
+    "key": "Mixed",
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/mixed_local_poincare_correlations/variants/wrong_translation_direction.py",
+      "sha256": "203b21f53cce6f4d97893da4c7ce4bf4696d585fa53bdbae8e081e4050b65296",
+      "bytes": 4042
+    },
+    "complete_diff": "--- candidate.py\n+++ wrong_translation_direction.py\n@@ -4,7 +4,7 @@\n from scipy.sparse.linalg import expm_multiply\n \n TIME_SIGN = 1.0\n-TRANSLATION_DIRECTION = 1\n+TRANSLATION_DIRECTION = -1\n Q15_DISPLACEMENT_SIGN = -1.0\n COVARIANCE_REAL_ONLY = False\n PFAFFIAN_ALTERNATING = True\n"
+  },
+  {
+    "key": "MicroscopicBoost",
+    "kind": "original_declared_refinement_only",
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_local_boost_limit/flow_high.py",
+      "sha256": "ef9f3f66e2e054a3e868f4f2c113aed7cea1b0998527d87cda4cc1d4b03974ef",
+      "bytes": 5709
+    },
+    "old": "'fine':(64.,1792,512,10.)",
+    "new": "'fine':(96.,2816,640,10.)",
+    "same_gates": true
+  }
+]

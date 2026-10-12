@@ -1,0 +1,245 @@
+===== runner cache v1 =====
+runner: scripts/photon_electron_threshold_and_rate_2026_10_12.py
+runner_sha256: 93428a4c424bb0a299f91ef740190a6b6d3fc207a98547ce7ca1261bc5b301e0
+input_fingerprint_sha256: 71aacaa0d0a04b445a299e19e38dfd8d878eb19cf09bc2caa0196278d68040a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.31
+status: ok
+----- stdout -----
+{
+  "threshold_cases": 12,
+  "angular_cases": 56,
+  "spin": {
+    "cases": 50,
+    "max_trace_error": 4.440892098500626e-16
+  },
+  "rate": {
+    "rows": [
+      {
+        "kind": "fixed_chi",
+        "r": 0.08,
+        "chi": 1.05,
+        "ratio": 1.0072298551496608,
+        "shell_error": 1.3877787807814457e-17
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.04,
+        "chi": 1.05,
+        "ratio": 1.001807237666383,
+        "shell_error": 6.938893903907228e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.02,
+        "chi": 1.05,
+        "ratio": 1.000451795915246,
+        "shell_error": 3.469446951953614e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.08,
+        "chi": 1.5,
+        "ratio": 1.0024769638918472,
+        "shell_error": 1.3877787807814457e-17
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.04,
+        "chi": 1.5,
+        "ratio": 1.000618442924885,
+        "shell_error": 6.938893903907228e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.02,
+        "chi": 1.5,
+        "ratio": 1.0001545609250353,
+        "shell_error": 3.469446951953614e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.08,
+        "chi": 3.0,
+        "ratio": 1.0021444171538487,
+        "shell_error": 1.3877787807814457e-17
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.04,
+        "chi": 3.0,
+        "ratio": 1.0005354115574563,
+        "shell_error": 6.938893903907228e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.02,
+        "chi": 3.0,
+        "ratio": 1.0001338096603385,
+        "shell_error": 3.469446951953614e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.08,
+        "chi": 10.0,
+        "ratio": 1.0021076742143549,
+        "shell_error": 2.7755575615628914e-17
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.04,
+        "chi": 10.0,
+        "ratio": 1.0005262276177784,
+        "shell_error": 6.938893903907228e-18
+      },
+      {
+        "kind": "fixed_chi",
+        "r": 0.02,
+        "chi": 10.0,
+        "ratio": 1.0001315137896352,
+        "shell_error": 3.469446951953614e-18
+      },
+      {
+        "kind": "fixed_k_threshold",
+        "r": 0.2,
+        "delta_over_R": 0.03,
+        "ratio": 0.9937443421791675,
+        "shell_error": 5.551115123125783e-17
+      },
+      {
+        "kind": "fixed_k_threshold",
+        "r": 0.2,
+        "delta_over_R": 0.003,
+        "ratio": 0.9993760920063995,
+        "shell_error": 2.7755575615628914e-17
+      },
+      {
+        "kind": "fixed_k_threshold",
+        "r": 0.2,
+        "delta_over_R": 0.0003,
+        "ratio": 0.9999376255883444,
+        "shell_error": 2.7755575615628914e-17
+      },
+      {
+        "kind": "fixed_k_threshold",
+        "r": 0.4,
+        "delta_over_R": 0.03,
+        "ratio": 0.9937859046966124,
+        "shell_error": 1.1102230246251565e-16
+      },
+      {
+        "kind": "fixed_k_threshold",
+        "r": 0.4,
+        "delta_over_R": 0.003,
+        "ratio": 0.9993802289694913,
+        "shell_error": 5.551115123125783e-17
+      },
+      {
+        "kind": "fixed_k_threshold",
+        "r": 0.4,
+        "delta_over_R": 0.0003,
+        "ratio": 0.999938039117059,
+        "shell_error": 5.551115123125783e-17
+      }
+    ],
+    "refinement_relative_change": 4.241051954068098e-14
+  },
+  "observations": {
+    "calibration_hbar_c_GeV_m": 1.9732698045930247e-16,
+    "envelopes": [
+      {
+        "source_datum": "J2032_cutoff",
+        "systematic_shift_index": -1,
+        "E_GeV": 1080000.0,
+        "Lambda_axis_GeV": 285323482177657.75,
+        "Lambda_necessary_any_orientation_GeV": 164731589241392.1,
+        "ell_axis_m": 6.91590397513921e-31,
+        "ell_necessary_m": 1.1978697065208675e-30,
+        "interpretation": "conditional kinematic sensitivity; no new confidence bound"
+      },
+      {
+        "source_datum": "J2032_cutoff",
+        "systematic_shift_index": 0,
+        "E_GeV": 1140000.0,
+        "Lambda_axis_GeV": 317906719339921.1,
+        "Lambda_necessary_any_orientation_GeV": 183543529988094.28,
+        "ell_axis_m": 6.207071711759291e-31,
+        "ell_necessary_m": 1.0750963570990613e-30,
+        "interpretation": "conditional kinematic sensitivity; no new confidence bound"
+      },
+      {
+        "source_datum": "J2032_cutoff",
+        "systematic_shift_index": 1,
+        "E_GeV": 1200000.0,
+        "Lambda_axis_GeV": 352251212565009.56,
+        "Lambda_necessary_any_orientation_GeV": 203372332396780.38,
+        "ell_axis_m": 5.60188221986276e-31,
+        "ell_necessary_m": 9.702744622819029e-31,
+        "interpretation": "conditional kinematic sensitivity; no new confidence bound"
+      },
+      {
+        "source_datum": "Crab_cutoff",
+        "systematic_shift_index": -1,
+        "E_GeV": 707000.0,
+        "Lambda_axis_GeV": 122272511353755.17,
+        "Lambda_necessary_any_orientation_GeV": 70594067344582.12,
+        "ell_axis_m": 1.6138294558161315e-30,
+        "ell_necessary_m": 2.795234612224772e-30,
+        "interpretation": "conditional kinematic sensitivity; no new confidence bound"
+      },
+      {
+        "source_datum": "Crab_cutoff",
+        "systematic_shift_index": 0,
+        "E_GeV": 750000.0,
+        "Lambda_axis_GeV": 137598129908206.86,
+        "Lambda_necessary_any_orientation_GeV": 79442317342492.33,
+        "ell_axis_m": 1.4340818482848666e-30,
+        "ell_necessary_m": 2.4839026234416713e-30,
+        "interpretation": "conditional kinematic sensitivity; no new confidence bound"
+      },
+      {
+        "source_datum": "Crab_cutoff",
+        "systematic_shift_index": 1,
+        "E_GeV": 793000.0,
+        "Lambda_axis_GeV": 153828349146037.28,
+        "Lambda_necessary_any_orientation_GeV": 88812838788460.38,
+        "ell_axis_m": 1.2827738291072061e-30,
+        "ell_necessary_m": 2.2218294466333574e-30,
+        "interpretation": "conditional kinematic sensitivity; no new confidence bound"
+      }
+    ],
+    "timing_Lambda_axis_GeV": 199185842870.4209,
+    "timing_Lambda_necessary_GeV": 115000000000.0,
+    "illustrative_tree_lengths": [
+      {
+        "chi": 1.05,
+        "central_decay_length_m_leading": 0.18399747243486458
+      },
+      {
+        "chi": 1.5,
+        "central_decay_length_m_leading": 0.05193550499555319
+      },
+      {
+        "chi": 3,
+        "central_decay_length_m_leading": 0.02007086473890499
+      },
+      {
+        "chi": 10,
+        "central_decay_length_m_leading": 0.005597325672629
+      }
+    ],
+    "length_scope": "fixed-chi leading coefficient only; no renormalized/detector bridge",
+    "fit_count": 0,
+    "blind_validation_count": 0
+  }
+}
+per_element: checked exact 4x4 Dirac traces against the separate scalar formula.
+per_site: checked and not executed — no real-space source or detector dynamics are simulated here.
+per_mode: checked finite momentum thresholds, Ward differences and polarization matrix elements.
+per_block: checked declared fixed-chi and fixed-momentum coarea quadratures with resolution controls.
+lattice_wide: checked and not executed — finite numerical controls do not prove the analytic torus quantifiers.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

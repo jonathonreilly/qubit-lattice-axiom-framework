@@ -29,8 +29,9 @@ Examples:
    and controlled vocabulary. Every subagent does the same and states which
    surfaces it read.
 4. Step 0: search the repo's own record (landed notes, open PRs, decision
-   records, panels, earlier exercises, probe queues) for the wall and earlier
-   attempts before generating anything.
+   records, panels, earlier exercises, probe queues, held blocks on campaign
+   branches, candidate packs) for the wall and earlier attempts before
+   generating anything, by physical object as well as by title.
 5. Step 1: state the wall twice, plainly for a non-physicist and precisely.
    Sort its ingredients into what the axioms say, what was supplied and what
    was proved. Check the plain version with a blind restatement.
@@ -49,8 +50,15 @@ Examples:
     verdict; target-equivalent endings are `blocked-equivalent`.
 11. Step 7: rank by what a route would change, divided by its cost.
 12. Step 8: run the cheapest decisive test or tests within the budget,
-    pre-registered, and record the results. A deferred test names what it is
-    waiting on.
+    pre-registered, and record the results. Never change a pre-registered
+    reading after seeing the result; add a dated follow-up test instead. Say
+    exactly which class a search covered, compute decisive quantities
+    directly rather than by long extrapolation. Report and preserve raw
+    failures immediately. Before interpreting them as scientific negative
+    conclusions or no-go results, obtain a fresh adversarial check under the
+    allowed review configuration. Label same-family checks honestly; if the
+    user prohibits subagents, use a separate primary-session pass and state
+    its lack of independence. A deferred test names what it is waiting on.
 13. Step 9: report plain language first. Label every claim proved, checked,
     suggested or reading. Give at most three routes, what not to do, and the
     exact price if one was found. With `--artifact`, write the packet under

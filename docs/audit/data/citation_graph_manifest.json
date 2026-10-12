@@ -1,6 +1,6 @@
 {
- "edge_count": 15418,
- "node_count": 6869,
+ "edge_count": 15419,
+ "node_count": 6871,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15685,6 +15685,14 @@
   "photon_dispersion_observational_constraints_and_live_formation_response_bounded_theorem_note_2026-09-24": {
    "deps_hash": "81c174a25595",
    "out_degree": 6
+  },
+  "photon_electron_lattice_threshold_and_rate_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "ce795ce0a9e4",
+   "out_degree": 1
+  },
+  "photon_vacuum_subtraction_and_cosine_reference_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "physical_adjacency_admissible_assembly_trade_cycle723_note_2026-08-03": {
    "deps_hash": "eaad6dc5dd30",

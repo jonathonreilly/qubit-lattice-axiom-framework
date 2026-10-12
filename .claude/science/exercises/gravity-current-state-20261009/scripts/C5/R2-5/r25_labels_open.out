@@ -1,0 +1,10 @@
+L=3 w=1.05 T=200: states=27  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.0476,0.9128,0.9925,1.0000  t50=15 pred(T->inf) ln2/ln w=14.206699082890461
+L=3 w=1.2 T=100: states=27  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.1667,0.9895,0.9999,1.0000  t50=4 pred(T->inf) ln2/ln w=3.8017840169239308
+L=3 w=3.0 T=60: states=27  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.6667,1.0000,1.0000,1.0000  t50=1 pred(T->inf) ln2/ln w=0.6309297535714574
+L=3 w=0.9 T=100: states=27  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.0000,0.0003,0.0046,0.9000  t50=95 pred(T->inf) ln2/ln w=None
+L=3 w=0.9 T=200: states=27  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.0000,0.0000,0.0000,0.9000  t50=195 pred(T->inf) ln2/ln w=None
+L=4 w=1.05 T=200: states=81  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.0476,0.9128,0.9925,1.0000  t50=15 pred(T->inf) ln2/ln w=14.206699082890461
+L=4 w=1.2 T=100: states=81  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.1667,0.9895,0.9999,1.0000  t50=4 pred(T->inf) ln2/ln w=3.8017840169239308
+L=4 w=3.0 T=60: states=81  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.6667,1.0000,1.0000,1.0000  t50=1 pred(T->inf) ln2/ln w=0.6309297535714574
+L=4 w=0.9 T=100: states=81  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.0000,0.0003,0.0046,0.9000  t50=95 pred(T->inf) ln2/ln w=None
+L=4 w=0.9 T=200: states=81  P(no record ever un-forms)=1.000000000000  density(t=1,T/4,T/2,T)=0.0000,0.0000,0.0000,0.9000  t50=195 pred(T->inf) ln2/ln w=None

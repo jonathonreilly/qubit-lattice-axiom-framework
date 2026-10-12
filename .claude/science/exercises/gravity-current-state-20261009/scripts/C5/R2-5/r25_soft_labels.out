@@ -1,0 +1,9 @@
+r=1e-02 u=1e-06 eta=0.1: eig(M) = [9.09090901e-06 9.99999991e-01 1.10000001e+04]  (min >= 0: True)
+   T=800: m(1)=5.119e-01 m(T/4)=1.000 m(T/2)=1.000; formation per blank site-step at T/4 = 5.119e-01 (2r=2.0e-02); un-formation per record-step at T/4 = 9.313e-09 (2u=2.0e-06); at T/2: 9.313e-09
+r=1e-03 u=1e-08 eta=0.1: eig(M) = [9.09090909e-07 1.00000000e+00 1.10000000e+05]  (min >= 0: True)
+   T=8000: m(1)=5.119e-01 m(T/4)=1.000 m(T/2)=1.000; formation per blank site-step at T/4 = 5.119e-01 (2r=2.0e-03); un-formation per record-step at T/4 = 9.313e-12 (2u=2.0e-08); at T/2: 9.313e-12
+r=1e-03 u=1e-10 eta=1.0: eig(M) = [5.e-08 1.e+00 2.e+07]  (min >= 0: True)
+   T=8000: m(1)=5.858e-01 m(T/4)=1.000 m(T/2)=1.000; formation per blank site-step at T/4 = 5.858e-01 (2r=2.0e-03); un-formation per record-step at T/4 = 6.036e-14 (2u=2.0e-10); at T/2: 6.036e-14
+u=1e-06: required turning weight x = (1+eta) r/u = 1.1e+03
+u=1e-12: required turning weight x = (1+eta) r/u = 1.1e+09
+strict u=0 with finite x=1e30: eig(M) = [-1.e-30  1.e+00  1.e+30] -> not PSD (M[D,D] = w(U,D) = 0 forces row M[D,:] = w(U,:) = 0)

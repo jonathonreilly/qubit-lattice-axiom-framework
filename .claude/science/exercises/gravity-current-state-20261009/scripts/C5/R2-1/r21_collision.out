@@ -1,0 +1,33 @@
+R2-1 collision-invariant check: NN Euclidean KG band, d=3 spatial, m=0.50
+samples: 3000 real 2->2 shell points (sampler fraction umklapp = 0.65; sampler, not invariant measure)
+(C3) w as charge: max |sum_in w - sum_out w| = 2.22e-15
+(C2) tau = sawtooth k_1: max|res| non-umklapp rows = 1.78e-15 ; umklapp rows: |res|/2pi values = [0. 1.]
+(C1) local non-umklapp sample (800 rows), tau = k_1: max|res| = 8.88e-16
+odd finite-range charges tau = sum_n c_n sin(n.k), |n|_inf <= R, unit slope d tau_1/dk_1(0) = 1:
+  R  #basis  min RMS residual (unit slope)   smallest sing. value of A/sqrt(rows)   [local-only sample, unit slope]
+  1     13   4.1940e-01                     1.2362e+00                              2.0191e-02
+  2     62   9.2944e-02                     9.6322e-01                              1.2638e-03
+  3    171   3.1073e-02                     7.3668e-01                              3.9519e-05
+Reading: on the full shell (umklapp included) no odd finite-range unit-slope charge is an
+invariant and the miss does not go to zero with R; locally (no umklapp) the miss shrinks with R
+because sin-polynomials approximate k_1 near 0. The obstruction is periodicity + umklapp
+(equivalently analyticity + periodicity), not the specific dispersion.
+
+Normalization matters: unit slope at the single point k=0 admits oscillatory charges
+(e.g. sin(N k_1)/N) whose residual falls with R; that is not a momentum. Two physical
+normalizations follow.
+(N1) Fourier truncations of the lattice momentum (sawtooth k_1), tau_R = sum_{n<=R} 2(-1)^{n+1} sin(n k_1)/n:
+   R    RMS res (all rows)   RMS res (non-umklapp rows)   RMS res (umklapp rows)
+    1   2.6151              1.4314                       3.0743
+    2   2.9310              1.3772                       3.4990
+    4   3.1309              1.1148                       3.8042
+    8   3.2469              0.8192                       3.9910
+   16   3.3013              0.5938                       4.0807
+   32   3.3373              0.4071                       4.1381
+   64   3.3637              0.2787                       4.1768
+(N2) best odd finite-range charge that equals k_1 on the soft ball |k|<0.5 (least squares,
+     weight 1e3), collision residual on the full shell:
+   R  #basis  local fit RMS   collision RMS (all)   (umklapp rows)
+   1     13   1.817e-03       0.7598                0.8537
+   2     62   2.027e-04       0.4028                0.3920
+   3    171   1.177e-04       0.2286                0.2054

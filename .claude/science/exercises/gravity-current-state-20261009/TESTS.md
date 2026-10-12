@@ -2702,3 +2702,43 @@ Readings, per escape:
 - **OPEN:** otherwise.
 
 Expectation: CQ gravity is constrained but viable in a window. Metric jumps are viable but need a foliation. Beables are viable with a foliation (a preferred frame in the guidance law only).
+
+### C5 Round 2 results (recorded 12:52Z)
+
+All verdicts are from codex gpt-5.6-sol at xhigh. Files: `agents/C5_R2-*`. The R2-1 referee died on a stream error and was relaunched; it is pending.
+
+**R2-2 (Lorentz-invariant discreteness) — CONFIRMED WITH CORRECTIONS. N-Q′ and P-L′ are DERIVED; LRL is a genuine in-band gap.**
+- **N-Q′.** Take positive energy, an invariant vector, and covariant nonnegative integer counts with finite vacuum second moments, vacuum-level commutativity and temporal-halving additivity. Then every count annihilates the vacuum.
+- **P-L′.** Every stationary integer-valued random measure with ρ > 0 and finite second moments has Bartlett weight in every cone about every hyperplane, so it has spacelike weight. Neither result places that weight in a prescribed band.
+- **The cocompact arithmetic L₇ ensemble (LRL)** has three properties:
+  - it is Poincaré-invariant in law;
+  - it has a uniform hard core;
+  - it has no Bragg support for 0 < |q²| < (2π)²/7, or on the nonzero null cone.
+
+  This is a genuine in-band spectral gap and ideal one-to-one Bloch silence.
+- **Not established:** an all-orders observational pass of the RZ bar, or a viable event route. Still open are steering, finite-source and curved propagation, inelastic sectors, convergent effective dynamics, and the per-realization O1 bounds.
+
+**R2-3 (record flashes vs gravity) — NOT CONFIRMED as FAIL, so INCONCLUSIVE.**
+- **Proved for one collapse surface.** A spatially decaying stress jump confined to one non-compact collapse surface gives a non-integrable non-conservation current. So neither semiclassical Einstein gravity nor its unimodular form admits it as a global distributional solution without a compensator or a metric-reset rule.
+- **Heating formulas are exact.** At the Earth-heat limit, an isolated pointer is limited to about 20 s⁻¹. Environmental amplification can exceed 10³ s⁻¹.
+- **GW signals:** negligible.
+- **Bounded FAILs** hold for bare, independently flashing position laws.
+- **Not excluded:** non-local gravitationally dressed operations, relativistic collective or coloured laws, and other compensators.
+
+**R2-4 (set B weight) — CONFIRMED WITH CORRECTIONS. DERIVED, through gravity.**
+- **Assumptions W1–W3:** a positive source-tilted measure, real local source functionals, and an isotropic unscreened 1/p² response.
+- **Result.** The trace projector forces a ≤ 1/3, i.e. γ ≤ 1/2. GR needs a = 1/2, so GR cannot arise from a positive local Gibbs realization.
+- **Escapes:** non-real or non-local bridges.
+- **No class-wide chiral no-go:**
+  - Nielsen–Ninomiya covers only the free exact-chiral class.
+  - Positivity forbids CKM CP only if the reconstructed antiunitary symmetry is unbroken and acts within the ordinary SM sector.
+  - The Hammersley–Clifford pair-only reading needs a strictly positive Markov field. It does not follow from the literal wording.
+
+**R2-5 (arrow in the state) — CONFIRMED WITH CORRECTIONS. SUGGESTED.**
+- **Proved, for classical non-negative nearest-neighbour slice transfer laws** with a bond-reflection-positive twisted kernel and a θ-equivariant record map. Strict support-level permanence then forbids every formation step that has a reachable predecessor and a forward-continuable target. Only boundary-only formation survives.
+- **Not a universal incompatibility between B and Record.** Outside the theorem: non-RP tagged laws, probabilistic permanence, non-commuting quantum slices, non-nearest-neighbour laws, and OS-reconstructed real-time records.
+
+**R2-6 (Snyder) — CONFIRMED WITH CORRECTIONS. FAIL (bounded).**
+- **Assumptions:** the canonical Snyder transvection product; a standard unitary Lorentz-invariant S-matrix with a massless helicity-2 particle; generic support; leg-local soft poles; the exact Ward-residue identity.
+- **Result.** The Snyder total does not factor through an additive charge, so the coupling vanishes. Set D does not exist in this class.
+- **Open:** braided or non-leg-local soft structures, extended momentum spaces with an abelian quotient, and non-particle gravity.

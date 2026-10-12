@@ -1,0 +1,19 @@
+== 1. so(4) realisation x_i/a = A_i - B_i, L_i = A_i + B_i ==
+(jA,jB)=(0,0) dim= 1  [x1,x2]-iL3=0.0e+00 [L1,x2]-ix3=0.0e+00 spec(x1/a)=[0.]  frac parts=[0.]  dim ker(L)=1  |x_i on ker L|=[0. 0. 0.]
+(jA,jB)=(0.5,0.5) dim= 4  [x1,x2]-iL3=0.0e+00 [L1,x2]-ix3=0.0e+00 spec(x1/a)=[-1.  0.  0.  1.]  frac parts=[0. 1.]  dim ker(L)=1  |x_i on ker L|=[1. 1. 1.]
+(jA,jB)=(1,1) dim= 9  [x1,x2]-iL3=7.6e-16 [L1,x2]-ix3=7.9e-16 spec(x1/a)=[-2. -1. -1. -0. -0.  0.  1.  1.  2.]  frac parts=[0. 1.]  dim ker(L)=1  |x_i on ker L|=[1.632993 1.632993 1.632993]
+(jA,jB)=(2,2) dim=25  [x1,x2]-iL3=2.4e-15 [L1,x2]-ix3=2.0e-15 spec(x1/a)=[-4. -3. -3. -2. -2. -2. -1. -1. -1. -1. -0. -0.  0.  0.  0.  1.  1.  1.
+  1.  2.  2.  2.  3.  3.  4.]  frac parts=[0. 1.]  dim ker(L)=1  |x_i on ker L|=[2.828427 2.828427 2.828427]
+(jA,jB)=(0.5,0) dim= 2  [x1,x2]-iL3=0.0e+00 [L1,x2]-ix3=0.0e+00 spec(x1/a)=[-0.5  0.5]  frac parts=[0.5]  dim ker(L)=0  |x_i on ker L|=-
+(jA,jB)=(1,0.5) dim= 6  [x1,x2]-iL3=4.3e-16 [L1,x2]-ix3=4.3e-16 spec(x1/a)=[-1.5 -0.5 -0.5  0.5  0.5  1.5]  frac parts=[0.5]  dim ker(L)=0  |x_i on ker L|=-
+(jA,jB)=(1.5,1) dim=12  [x1,x2]-iL3=8.6e-16 [L1,x2]-ix3=8.6e-16 spec(x1/a)=[-2.5 -1.5 -1.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  1.5  1.5  2.5]  frac parts=[0.5]  dim ker(L)=0  |x_i on ker L|=-
+(jA,jB)=(2,1) dim=15  [x1,x2]-iL3=1.3e-15 [L1,x2]-ix3=1.3e-15 spec(x1/a)=[-3. -2. -2. -1. -1. -1. -0.  0.  0.  1.  1.  1.  2.  2.  3.]  frac parts=[0. 1.]  dim ker(L)=0  |x_i on ker L|=-
+
+== 2. 5D defining rep of so(4,1), metric G = diag(-1,1,1,1,1) ==
+eta= 0.0: spacelike n: eig=[0.-1.j 0.+0.j 0.+0.j 0.+0.j 0.+1.j] |exp(2pi X)-1|=7.6e-16 | timelike n: eig=[-1.+0.j  0.+0.j  0.+0.j  0.+0.j  1.+0.j] |exp(2pi X)-1|=5.345e+02
+eta= 0.7: spacelike n: eig=[0.-1.j 0.+0.j 0.+0.j 0.+0.j 0.+1.j] |exp(2pi X)-1|=2.9e-15 | timelike n: eig=[-1.+0.j -0.+0.j  0.+0.j  0.+0.j  1.+0.j] |exp(2pi X)-1|=8.419e+02
+eta= 2.5: spacelike n: eig=[0.+0.j 0.+0.j 0.+0.j 0.-1.j 0.+1.j] |exp(2pi X)-1|=7.6e-11 | timelike n: eig=[-1.+0.j -0.+0.j  0.+0.j  0.+0.j  1.+0.j] |exp(2pi X)-1|=2.006e+04
+eta= 6.0: spacelike n: eig=[-0.+0.j  0.+0.j  0.+0.j  0.-1.j  0.+1.j] |exp(2pi X)-1|=4.3e+02 | timelike n: eig=[-1.+0.j  0.+0.j  0.+0.j  0.+0.j  1.+0.j] |exp(2pi X)-1|=2.171e+07
+Lambda J_14 Lambda^-1 == (Lambda e_1)^mu J_mu4 : residual 6.3e-16; n = [1.698382 1.970914 0.       0.      ], n.n = 1.000000
+[mpmath dps=60] eta=2.5: |exp(2 pi X_spacelike) - 1| = 2.1158e-58 (float64 residual above is round-off)
+[mpmath dps=60] eta=6.0: |exp(2 pi X_spacelike) - 1| = 3.9475e-54 (float64 residual above is round-off)

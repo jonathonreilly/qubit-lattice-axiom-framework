@@ -1,0 +1,14 @@
+S1: A/B for (+)_s, m_k=1, m_q=0.6, at several a and k.q
+  a=0.05: A/B = [0.9998667 0.9998667 0.9998667 0.9998667]  spread 1.55e-15
+  a=0.3: A/B = [0.99524538 0.99524538 0.99524538 0.99524538]  spread 1.55e-15
+  a=0.8: A/B = [0.96804031 0.96804031 0.96804031 0.96804031]  spread 1.22e-15
+S2: associativity of (+)_s and of (+) (three on-shell momenta, masses 1, 0.6, 0.8)
+  a= 0.200: |(k+q)+r - k+(q+r)| sym = 7.2912e-03 (/a^2 = 0.18228); ordering law = 1.6128e-02 (/a^2 = 0.40320)
+  a= 0.100: |(k+q)+r - k+(q+r)| sym = 1.8435e-03 (/a^2 = 0.18435); ordering law = 4.2200e-03 (/a^2 = 0.42200)
+  a= 0.050: |(k+q)+r - k+(q+r)| sym = 4.6221e-04 (/a^2 = 0.18488); ordering law = 1.0673e-03 (/a^2 = 0.42691)
+  a= 0.025: |(k+q)+r - k+(q+r)| sym = 1.1564e-04 (/a^2 = 0.18502); ordering law = 2.6760e-04 (/a^2 = 0.42815)
+S3: is (+)_s a 2-body homomorphism to + in coordinates Q(k)=kt(m)k ?  (needed for n>=3 channels)
+    compute X(k)=sinh(am)/(am) k and N(k)=k/cosh-type candidates; report |Q(k(+)_s q) - Q(k) - Q(q)|
+  a=0.2: normal k: 2.503e-03 (/a^2 0.0626); ambient sinh(am)/(am): 3.256e-02 (/a^2 0.8140); projective tanh(am)/(am): 6.715e-02 (/a^2 1.6788)
+  a=0.1: normal k: 6.424e-04 (/a^2 0.0642); ambient sinh(am)/(am): 8.100e-03 (/a^2 0.8100); projective tanh(am)/(am): 1.764e-02 (/a^2 1.7641)
+  a=0.05: normal k: 1.616e-04 (/a^2 0.0647); ambient sinh(am)/(am): 2.022e-03 (/a^2 0.8090); projective tanh(am)/(am): 4.467e-03 (/a^2 1.7867)

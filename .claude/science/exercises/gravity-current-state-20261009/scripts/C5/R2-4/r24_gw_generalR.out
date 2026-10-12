@@ -1,0 +1,5 @@
+d=1: unknowns=6 equations=7  Groebner basis = 7 polys
+   d=1 control: solutions exist (basis != [1]); e.g. Wilson r=1 with r(p)=1/2
+d=2: unknowns=9 equations=19  Groebner basis = [1]
+d=3: unknowns=12 equations=67  Groebner basis = [1]
+d=4: unknowns=15 equations=259  Groebner basis = [1]

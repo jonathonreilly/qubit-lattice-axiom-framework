@@ -1,0 +1,9 @@
+eigenvalues of K / s^2: [-1.  -0.  -0.   0.   0.   0.5  0.5  0.5  0.5  0.5]
+eigenvalues on gauge quotient / s^2: [-1.   0.5  0.5  0.5  0.5  0.5]
+overlap of negative quotient mode with transverse-trace (conformal) mode P_T: 1.0
+max |K G| over momenta = 1.33e-14  (exact gauge invariance)
+momenta with quotient signature (5+,1-): 400 / 400
+gauge fixings tested (random F with F|_G invertible, plus de Donder): 2400; K+F^T F indefinite in 2400
+|s|=9.3e-02: quotient eigenvalues / s^2 = [-1.   0.5  0.5  0.5  0.5  0.5]
+|s|=9.3e-03: quotient eigenvalues / s^2 = [-1.   0.5  0.5  0.5  0.5  0.5]
+|s|=9.3e-04: quotient eigenvalues / s^2 = [-1.   0.5  0.5  0.5  0.5  0.5]

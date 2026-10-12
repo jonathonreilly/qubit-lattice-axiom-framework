@@ -1,0 +1,5 @@
+r=0.001 u=1e-09 eta=0.1: lam_UD = 2.048809; eig(M) = [9.09090909e-08 1.00000000e+00 1.10000000e+06]
+  kappa=+1e-02: m(t=1,10,100,1000,T/2)=9.901e-03,9.471e-02,6.303e-01,1.000e+00,1.000e+00; formation/blank-step at t=100: 9.90e-03; un-formation/record-step at t=100: 9.77e-11
+  kappa=+1e-03: m(t=1,10,100,1000,T/2)=9.810e-04,9.766e-03,9.341e-02,6.206e-01,8.490e-01; formation/blank-step at t=100: 9.79e-04; un-formation/record-step at t=100: 9.97e-10
+  kappa=+0e+00: m(t=1,10,100,1000,T/2)=1.667e-04,1.667e-03,1.667e-02,1.667e-01,3.333e-01; formation/blank-step at t=100: 1.69e-04; un-formation/record-step at t=100: 5.76e-09
+  kappa=-1e-03: m(t=1,10,100,1000,T/2)=6.133e-06,6.161e-05,6.447e-04,1.054e-02,3.919e-02; formation/blank-step at t=100: 6.78e-06; un-formation/record-step at t=100: 1.44e-07

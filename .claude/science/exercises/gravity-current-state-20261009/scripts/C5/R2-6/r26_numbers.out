@@ -1,0 +1,37 @@
+== (b) dispersion: Snyder free one-particle mass shell is exactly Lorentz invariant ==
+  dimension-5 coefficient = 0, dimension-6 coefficient = 0 (any a): LHAASO E_QG,1 > 10 E_Pl and
+  E_QG,2 > 6e-8 E_Pl both pass with infinite margin at tree level (velocity = p/E, r26_composition C7).
+
+== (c) mapping A: a body of mass M kicked as ONE Snyder particle with scale a ==
+  25 kDa molecule              aM =   1.9074e-15   left factor aM/sinh(aM) =          1.0   right factor aM coth(aM) = 1.0
+  16 microgram crystal         aM =      0.73515   left factor aM/sinh(aM) =       0.9153   right factor aM coth(aM) = 1.174
+  MICROSCOPE Ti (~0.3009 kg)   aM =    1.3825e+7   left factor aM/sinh(aM) = 3.707e-6004285   right factor aM coth(aM) = 1.3825e+7
+  MICROSCOPE Pt (~0.4015 kg)   aM =    1.8448e+7   left factor aM/sinh(aM) = 5.4599e-8011702   right factor aM coth(aM) = 1.8448e+7
+  Moon                         aM =   3.3734e+30   left factor aM/sinh(aM) = 8.537e-1465055198712421221272721163842   right factor aM coth(aM) = 3.3734e+30
+  Earth                        aM =   2.7439e+32   left factor aM/sinh(aM) = 2.2142e-119167933079686455099982168219022   right factor aM coth(aM) = 2.7439e+32
+  MICROSCOPE eta (right) = 0.28645  vs bound ~1e-15
+  MICROSCOPE left: both factors < 1e-6004285: the masses would not fall at all
+  LLR eta (right) = 1.9514  vs bound ~1e-13; left: neither body falls
+  mapping A (left): eta(Ti,Pt-ratio bodies) < 1e-15 needs M_Pt < 1.17e-7 M_P = 2.55e-15 kg
+  mapping A (right): eta(Ti,Pt-ratio bodies) < 1e-15 needs M_Pt < 8.27e-8 M_P = 1.8e-15 kg
+
+== (c) mapping B: each constituent (granularity mu) kicked separately, total never (+)-composed ==
+  electron        (a mu)^2/6 = 2.92e-46
+  nucleon         (a mu)^2/6 = 9.859e-40
+  Ti-48 nucleus   (a mu)^2/6 = 2.226e-36
+  Pt-195 nucleus  (a mu)^2/6 = 3.693e-35
+  nucleus-granularity Ti vs Pt: eta_B ~ 3.47e-35; nucleon granularity: eta_B <~ 9.86e-40
+  effective composite scale needed: M_P,eff >= M / sqrt(6e-15) = 1.29e+7 x M
+
+== (c) per-constituent (+)-total of a body with Fermi motion (C5 fit, perturbative regime aM<~1) ==
+  N = 1e12: aM = 7.69e-8, spurious velocity ~ 1.89e-22 c
+  N = 1e16: aM = 0.000769, spurious velocity ~ 1.89e-16 c
+  N = 1e18: aM = 0.0769, spurious velocity ~ 1.89e-13 c
+  spurious velocity reaches 1e-15 c at N ~ 3.04e+16 nucleons (5.08e-11 kg)
+  aM = 1 (non-perturbative) at N = 1.3e+19 nucleons (2.18e-8 kg)
+
+== (d) tree-level size of the Lemma W defect: O((a E)^2) relative, E = collision energy scale incl. mass
+   (C6: |k1+k2-k3-k4| = 0.729 a^2 in units m = 1 with spatial momenta ~0.5 m) ==
+  nucleon ~0.94 GeV : (a E)^2 = 5.92e-39
+  1 TeV             : (a E)^2 = 6.71e-33
+  1e11 GeV          : (a E)^2 = 6.71e-17

@@ -21,3 +21,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-12T22:48:18.334123+00:00: Complete prepared-pulse434-line comparison3fe0db39 root-read, no repair required. Native576-line coreac453f00 completely root-read and frozen before root exposure; exact comparison now active. Both completed packets archived. No audit or new publication.
 
 2026-10-12T23:11:20.845187+00:00: Graph578-line2b4c75a3 and native436-line310d50f5 comparisons completely root-read; explicit correction record11d55133. Spatial116-member source assembly accepted for publication preparation only. New protocol/phase-space checks active and two further root consequences unreviewed. No new publication/audit.
+
+2026-10-12T23:41:38.833268+00:00: Published regular PR9506 at4ff0ff1d,147paths,+3nodes16edges,actualwhitespaceexit0,zero mathematical predicates. Driven624+439 completed with even-sector clarification; phase-space679 and low-block725 independently derived and fully root-read. New corrected low-block finiteRing leaf and smoothhigh195-line root archived, latter unreviewed. Active child energy-protocol branch; no audit/merge.

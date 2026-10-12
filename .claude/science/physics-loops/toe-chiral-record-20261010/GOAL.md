@@ -495,3 +495,12 @@ maximal-minor gcd is a nonzero constant. The pivot gcd has degree 7 on
 (1, 2), (2, 1), and (3, 1), and degree 4 on (1, 3), (2, 3), and (3, 2).
 Every positive integer multiple other than three is not in this count.
 The ten-kernel coefficient span is not classified.
+Cycle 75 shows that one swapped-dot generator plus every positive
+integer multiple of each ratio-span cap has partner rank 10 at every
+chirality coefficient on every ordered height pair. The plus-dot sum
+has swapped-dot coordinate 1. The minus-dot sum has swapped-dot
+coordinate -1. The matched and scaled coordinates are 4m. The two sums
+are linearly independent. Each lies in neither ratio span and outside
+the even space. The elimination polynomial has no positive integer
+root. Both swapped-dot generators are not in this count. The
+ten-kernel coefficient span is not classified.

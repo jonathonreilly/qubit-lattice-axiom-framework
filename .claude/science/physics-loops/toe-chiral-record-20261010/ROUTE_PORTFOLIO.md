@@ -401,3 +401,9 @@ each ratio span. Every chirality coefficient has partner rank 10. The
 swapped-dot coordinate is `1` or `-1` and the scaled coordinate is
 `12`. It does not take every positive integer multiple, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 75 takes one swapped-dot generator plus every positive integer
+multiple of each ratio-span cap. Every chirality coefficient has
+partner rank 10. The swapped-dot coordinate is `1` or `-1` and the
+scaled coordinate is `4m`. It does not take both swapped-dot
+generators, and it does not classify the 300-dimensional affine space.

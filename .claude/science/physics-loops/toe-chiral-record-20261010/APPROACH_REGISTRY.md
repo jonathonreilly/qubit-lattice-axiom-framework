@@ -869,3 +869,16 @@ constant maximal-minor gcd. The pivot gcd has degree 7 on (1, 2),
 Family not used: every positive integer multiple of the two caps with
 one swapped-dot generator. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 75 target contract: whether every positive integer m gives
+partner rank 10, at every chirality coefficient, for one swapped-dot
+generator plus m times the cap of each ratio span.
+
+Family used: one swapped-dot generator plus every positive integer
+multiple of each cap. The swapped-dot coordinate is 1 or -1 and the
+scaled coordinate is 4m. The two sums are linearly independent. The
+elimination polynomial has no positive integer root.
+
+Family not used: both swapped-dot generators plus every positive
+integer multiple of each cap. That remains open. The 300-dimensional
+affine space is not this family.

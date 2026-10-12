@@ -1045,13 +1045,31 @@ and `(3, 2)`, for both sums. At heights 1 and 2 the bond on `-e_x` and
 count. The ten-kernel coefficient span is not classified. Runner
 `PASS=8 FAIL=0`.
 
+Cycle 75. On every ordered height pair, one swapped-dot generator plus
+`m` times the cap of each ratio span has partner rank 10 at every
+chirality coefficient, for every positive integer `m`. The plus-dot
+sum has swapped-dot coordinate `1`. The minus-dot sum has swapped-dot
+coordinate `-1`. Both have transverse-sign coordinate `0`,
+sign-product coordinate `0`, swapped coordinate `-1`, orthogonal
+coordinate `1`, matched coordinate `4m`, and scaled coordinate `4m`.
+The two sums are linearly independent. Each lies in neither ratio span
+and outside the even space. One 17-row compression has an elimination
+polynomial with no positive integer root. On `(1, 2)`, `(2, 1)`, and
+`(3, 1)` it is a rational multiple of `m^4(2m+1)^12(4m+1)^4` for the
+plus-dot sum and of `m^12(2m+1)^3(4m+1)^4` for the minus-dot sum. On
+`(1, 3)`, `(2, 3)`, and `(3, 2)` it is a rational multiple of `m^10`
+for both sums. At heights 1 and 2 the kernel cross sums are `-2-4m`
+and `-4m`. The pivot gcd is not this certificate. Both swapped-dot
+generators are not in this count. The ten-kernel coefficient span is
+not classified. Runner `PASS=8 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every positive integer m gives partner rank 10, at every
-chirality coefficient, for one swapped-dot generator plus m times the
-cap of each ratio span. The case m = 3 has partner rank 10. Do not
-claim the ten-kernel coefficient span is settled. Do not claim the
-300-dimensional affine space is classified.
+chirality coefficient, for both swapped-dot generators plus m times the
+cap of each ratio span. The cases m = 2 and m = 3 have partner rank 10.
+Do not claim the ten-kernel coefficient span is settled. Do not claim
+the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

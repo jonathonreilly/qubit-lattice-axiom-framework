@@ -1,0 +1,30 @@
+=== (A) box graviton, tree level ===
+  max |D(pi-) - D(-pi+)| = 2.00e-09  (periodic) ; max |D(q)* + D(-q)| = 1.12e-15
+  min |d(q)| over 0.05 <= |q| <= pi = 0.0500 (no zero off q = 0: no graviton doublers) ; d(pi) = 2.0000
+  max |d(q) - q| on |q| <= c1 = 4.44e-16
+  derivative order 1 of D at the zone face: left -1.0000+0.0001i  right -1.0000-0.0001i
+  derivative order 2 of D at the zone face: left -0.0002-1.0000i  right 0.0002-1.0000i
+  herm     max residual over 5000 random q: 0.00e+00
+  gauge    max residual over 5000 random q: 1.78e-15
+  bianchi  max residual over 5000 random q: 2.70e-15
+  GS       max residual over 5000 random q: 6.22e-15
+  ttdisp   max residual over 5000 random q: 2.00e-15
+  trspec   max residual over 5000 random q: 8.88e-16
+  graviton box |q_a| <= 1.0: max | w_TT - |q| | (J g = 1) = 1.78e-15
+  (herm: R symmetric; gauge: R(d xi + xi d) = 0; bianchi: d_i R_ij = 0; GS: {G, S} = 0;
+   ttdisp: TT w^2/(J g |d|^2) - 1; trspec: transverse spatial form eigenvalues = |d|^2 (-1, 1, 1))
+
+=== (B) R8-2 Construction A with D(q) = d(q) e^{iq/2} (d = 2) ===
+[L profile]
+  random (k, q) on torus         Ward |res| max = 1.99e-15 ; Hermiticity 4.37e-13 ; symmetry 8.95e-16 ; phi in [0.00, 1.00]
+  box pairs, small q (phi=1)     Ward |res| max = 1.72e-15 ; Hermiticity 7.82e-16 ; symmetry 1.14e-16 ; phi in [1.00, 1.00]
+  box -> edge across the face    Ward |res| max = 9.49e-16 ; Hermiticity 2.65e-11 ; symmetry 2.48e-16 ; phi in [0.00, 0.00]
+  edge -> edge                   Ward |res| max = 2.31e-15 ; Hermiticity 3.87e-13 ; symmetry 1.79e-15 ; phi in [0.00, 0.00]
+  forward values: max |F(k,k) - eps (1,v)(1,v)^T| = 3.38e-08
+[G profile]
+  random (k, q) on torus         Ward |res| max = 1.81e-15 ; Hermiticity 2.88e-13 ; symmetry 3.14e-16 ; phi in [0.00, 1.00]
+  box pairs, small q (phi=1)     Ward |res| max = 1.67e-15 ; Hermiticity 6.87e-16 ; symmetry 1.24e-16 ; phi in [1.00, 1.00]
+  box -> edge across the face    Ward |res| max = 4.74e-16 ; Hermiticity 6.29e-13 ; symmetry 2.29e-16 ; phi in [0.00, 0.00]
+  edge -> edge                   Ward |res| max = 2.67e-15 ; Hermiticity 4.75e-13 ; symmetry 4.44e-16 ; phi in [0.00, 0.00]
+  forward values: max |F(k,k) - eps (1,v)(1,v)^T| = 2.29e-09
+done 2s

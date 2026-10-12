@@ -1,0 +1,141 @@
+R9-10 d = 2 chart run: NP = 64, window +-1.0, q-grid 40 x 16, m = 0.50, kappa = 0.80
+  M_b target 0.95: lam = -3.644328, lowest M eigenvalues (l=0,+1,-1) = 1.0000050312 0.9499882908 0.9499882908 ; max off-block |M_ll'| = 6.1e-15
+  M_b target 0.85: lam = -4.933909, lowest M eigenvalues (l=0,+1,-1) = 1.0000050312 0.8499777351 0.8499777351 ; max off-block |M_ll'| = 6.1e-15
+  M_b target 0.70: lam = -6.703734, lowest M eigenvalues (l=0,+1,-1) = 1.0000050312 0.6999622357 0.6999622357 ; max off-block |M_ll'| = 6.1e-15
+(A) P0 = (0.0, 0.0), bound S = +1 (mu_b = 0.8499777351) + continuum mix: |T00(0)-H|/|H| = 5.6e-16 ; |FD 1st moment - K_x|/|K_x| = 4.1e-12, K_y: 4.1e-12
+    spin-term share |K_x - K_x(no spin)|/|K_x| = 5.709e-03 (so the check resolves the spin term); |T^{b0}(0) - P_b|/|P_b| = 2.1e-15, 2.0e-15
+    J_T (Belinfante) vs J: |J_T psi - J psi|/|J psi| = 7.0e-12 ; <J_T> = 0.531797591498, <J> = 0.531797591499 ; dust (no curl): <J_T> = 0.003138
+(B)   Q = (+0.13,-0.07): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 4.6e-14 ; nu=x,y abs = 2.3e-16, 2.2e-16 (scale 1.50e-02) ; sym 3.2e-16 ; herm (T00,T0x,Txy) = 3.3e-16 1.7e-17 3.1e-18 (scale 6.87e-01)
+(B)   Q = (-0.21,+0.17): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 1.7e-14 ; nu=x,y abs = 2.4e-16, 2.3e-16 (scale 4.07e-02) ; sym 3.0e-16 ; herm (T00,T0x,Txy) = 1.9e-15 2.1e-16 1.9e-17 (scale 6.91e-01)
+(A) P0 = (0.0, 0.0), bound S = -1 (mu_b = 0.8499777351) + continuum mix: |T00(0)-H|/|H| = 5.5e-16 ; |FD 1st moment - K_x|/|K_x| = 4.1e-12, K_y: 4.1e-12
+    spin-term share |K_x - K_x(no spin)|/|K_x| = 5.709e-03 (so the check resolves the spin term); |T^{b0}(0) - P_b|/|P_b| = 2.1e-15, 2.0e-15
+    J_T (Belinfante) vs J: |J_T psi - J psi|/|J psi| = 7.0e-12 ; <J_T> = -0.123755269006, <J> = -0.123755269006 ; dust (no curl): <J_T> = -0.001221
+(B)   Q = (+0.13,-0.07): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 4.6e-14 ; nu=x,y abs = 2.3e-16, 2.3e-16 (scale 1.50e-02) ; sym 3.2e-16 ; herm (T00,T0x,Txy) = 2.2e-16 1.8e-17 3.0e-18 (scale 6.87e-01)
+(B)   Q = (-0.21,+0.17): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 1.7e-14 ; nu=x,y abs = 2.4e-16, 2.3e-16 (scale 4.07e-02) ; sym 2.9e-16 ; herm (T00,T0x,Txy) = 1.8e-15 2.2e-16 1.9e-17 (scale 6.91e-01)
+(A) P0 = (0.22, -0.09), bound S = +1 (mu_b = 0.8499777351) + continuum mix: |T00(0)-H|/|H| = 6.0e-16 ; |FD 1st moment - K_x|/|K_x| = 4.1e-12, K_y: 4.1e-12
+    spin-term share |K_x - K_x(no spin)|/|K_x| = 8.882e-03 (so the check resolves the spin term); |T^{b0}(0) - P_b|/|P_b| = 7.9e-16, 1.4e-15
+    J_T (Belinfante) vs J: |J_T psi - J psi|/|J psi| = 5.1e-12 ; <J_T> = 0.531797591498, <J> = 0.531797591499 ; dust (no curl): <J_T> = 0.020059
+(B)   Q = (+0.13,-0.07): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 3.0e-11 ; nu=x,y abs = 9.7e-13, 1.5e-13 (scale 4.68e-02) ; sym 3.3e-16 ; herm (T00,T0x,Txy) = 5.2e-16 4.0e-16 8.5e-17 (scale 7.16e-01)
+(B)   Q = (-0.21,+0.17): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 4.3e-14 ; nu=x,y abs = 6.2e-16, 2.6e-16 (scale 3.11e-02) ; sym 2.7e-16 ; herm (T00,T0x,Txy) = 2.7e-15 2.3e-16 1.1e-17 (scale 6.89e-01)
+(A) P0 = (0.22, -0.09), bound S = -1 (mu_b = 0.8499777351) + continuum mix: |T00(0)-H|/|H| = 5.8e-16 ; |FD 1st moment - K_x|/|K_x| = 4.1e-12, K_y: 4.1e-12
+    spin-term share |K_x - K_x(no spin)|/|K_x| = 8.882e-03 (so the check resolves the spin term); |T^{b0}(0) - P_b|/|P_b| = 7.9e-16, 1.4e-15
+    J_T (Belinfante) vs J: |J_T psi - J psi|/|J psi| = 5.1e-12 ; <J_T> = -0.123755269006, <J> = -0.123755269006 ; dust (no curl): <J_T> = -0.007653
+(B)   Q = (+0.13,-0.07): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 3.0e-11 ; nu=x,y abs = 9.7e-13, 1.5e-13 (scale 4.68e-02) ; sym 3.3e-16 ; herm (T00,T0x,Txy) = 3.3e-16 4.0e-16 8.5e-17 (scale 7.16e-01)
+(B)   Q = (-0.21,+0.17): nu=0 |[H,T00]-Q.T^{.0}|/|[H,T00]| = 4.3e-14 ; nu=x,y abs = 6.2e-16, 2.6e-16 (scale 3.11e-02) ; sym 2.7e-16 ; herm (T00,T0x,Txy) = 2.6e-15 2.4e-16 1.2e-17 (scale 6.89e-01)
+(A,B) time 97.3s
+(C) M_b 0.95 f_B 0.05 rest   S=+1: V = (0.0000,0.0000) | D1=K: Xdd/g = (-0.999999999999999, 0.000000000000001), minus prediction = (8.9e-16, 6.7e-16), w_P-1 = 1.8e-15, O(1) drift 6.6e-18
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-1.000000000, -0.000000000), minus prediction = (-1.11e-15, -3.53e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.272244438, 0.000000000), minus prediction = (-2.72e-01, 8.24e-18), w_P = 1.269741982
+      O(g) velocity of X_E: D1 = K: (-2.333774199e-32, 1.046990298e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.475044339e-34, 1.046990298e+00) ; comparator spin-omitted: (7.847404e-19, 5.234951e-01) ; <J> = 1.000000000, <S> = +1
+(C) M_b 0.95 f_B 0.05 rest   S=-1: V = (0.0000,0.0000) | D1=K: Xdd/g = (-0.999999999999999, -0.000000000000001), minus prediction = (8.9e-16, -6.6e-16), w_P-1 = 1.8e-15, O(1) drift 6.6e-18
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-1.000000000, -0.000000000), minus prediction = (-1.11e-15, -1.01e-15), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.272244438, 0.000000000), minus prediction = (-2.72e-01, 3.40e-16), w_P = 1.269741982
+      O(g) velocity of X_E: D1 = K: (-2.338509661e-32, -1.046990298e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.480066452e-34, -1.046990298e+00) ; comparator spin-omitted: (3.807043e-18, -5.234951e-01) ; <J> = -1.000000000, <S> = -1
+(C) M_b 0.95 f_B 0.05 moving S=+1: V = (0.2800,0.1100) | D1=K: Xdd/g = (-0.843200000000000, 0.061600000000003), minus prediction = (2.2e-16, 2.8e-15), w_P-1 = 1.6e-15, O(1) drift 3.1e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-0.843200000, 0.061600000), minus prediction = (3.33e-15, 2.46e-15), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.088577825, 0.063590428), minus prediction = (-2.45e-01, 1.99e-03), w_P = 1.248325332
+      O(g) velocity of X_E: D1 = K: (1.574731340e-02, 9.586448957e-01) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (1.574731340e-02, 9.586448957e-01) ; comparator spin-omitted: (2.377007e-02, 4.506455e-01) ; <J> = 1.000000000, <S> = +1
+(C) M_b 0.95 f_B 0.05 moving S=-1: V = (0.2800,0.1100) | D1=K: Xdd/g = (-0.843200000000000, 0.061600000000002), minus prediction = (2.2e-16, 2.4e-15), w_P-1 = 1.6e-15, O(1) drift 1.3e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-0.843200000, 0.061600000), minus prediction = (-1.33e-15, 2.01e-15), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.088577825, 0.063590428), minus prediction = (-2.45e-01, 1.99e-03), w_P = 1.248325332
+      O(g) velocity of X_E: D1 = K: (-1.574731340e-02, -9.586448957e-01) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (-1.574731340e-02, -9.586448957e-01) ; comparator spin-omitted: (-2.377007e-02, -4.506455e-01) ; <J> = -1.000000000, <S> = -1
+(C) M_b 0.85 f_B 0.15 rest   S=+1: V = (0.0000,0.0000) | D1=K: Xdd/g = (-0.999999999999998, -0.000000000000002), minus prediction = (2.0e-15, -1.6e-15), w_P-1 = -2.6e-15, O(1) drift 1.1e-16
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-1.000000000, -0.000000000), minus prediction = (2.55e-15, -6.51e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.475412638, 0.000000000), minus prediction = (-4.75e-01, 1.60e-16), w_P = 1.470263101
+      O(g) velocity of X_E: D1 = K: (2.397944176e-31, 1.168628046e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.166712099e-34, 1.168628046e+00) ; comparator spin-omitted: (-7.308430e-18, 5.843140e-01) ; <J> = 1.000000000, <S> = +1
+(C) M_b 0.85 f_B 0.15 rest   S=-1: V = (0.0000,0.0000) | D1=K: Xdd/g = (-0.999999999999998, 0.000000000000002), minus prediction = (2.0e-15, 1.5e-15), w_P-1 = -2.6e-15, O(1) drift 1.1e-16
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-1.000000000, 0.000000000), minus prediction = (2.55e-15, 8.59e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.475412638, 0.000000000), minus prediction = (-4.75e-01, 1.34e-15), w_P = 1.470263101
+      O(g) velocity of X_E: D1 = K: (2.390485244e-31, -1.168628046e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.159972427e-34, -1.168628046e+00) ; comparator spin-omitted: (-1.089615e-17, -5.843140e-01) ; <J> = -1.000000000, <S> = -1
+(C) M_b 0.85 f_B 0.15 moving S=+1: V = (0.2800,0.1100) | D1=K: Xdd/g = (-0.843199999999987, 0.061600000000000), minus prediction = (1.3e-14, -5.6e-17), w_P-1 = -1.0e-15, O(1) drift 5.1e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-0.843200000, 0.061600000), minus prediction = (1.38e-14, 9.09e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.270467158, 0.066259464), minus prediction = (-4.27e-01, 4.66e-03), w_P = 1.434738135
+      O(g) velocity of X_E: D1 = K: (1.757854096e-02, 1.070078352e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (1.757854096e-02, 1.070078352e+00) ; comparator spin-omitted: (2.652421e-02, 5.030383e-01) ; <J> = 1.000000000, <S> = +1
+(C) M_b 0.85 f_B 0.15 moving S=-1: V = (0.2800,0.1100) | D1=K: Xdd/g = (-0.843199999999987, 0.061600000000000), minus prediction = (1.3e-14, -4.2e-16), w_P-1 = -1.0e-15, O(1) drift 5.4e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-0.843200000, 0.061600000), minus prediction = (1.55e-14, 5.07e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.270467158, 0.066259464), minus prediction = (-4.27e-01, 4.66e-03), w_P = 1.434738135
+      O(g) velocity of X_E: D1 = K: (-1.757854096e-02, -1.070078352e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (-1.757854096e-02, -1.070078352e+00) ; comparator spin-omitted: (-2.652421e-02, -5.030383e-01) ; <J> = -1.000000000, <S> = -1
+(C) M_b 0.70 f_B 0.30 rest   S=+1: V = (0.0000,0.0000) | D1=K: Xdd/g = (-0.999999999999995, -0.000000000000001), minus prediction = (5.3e-15, -7.6e-16), w_P-1 = -4.7e-15, O(1) drift 5.7e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-1.000000000, 0.000000000), minus prediction = (6.44e-15, 2.36e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.830602650, -0.000000000), minus prediction = (-8.31e-01, -1.24e-15), w_P = 1.818491256
+      O(g) velocity of X_E: D1 = K: (1.274520809e-32, 1.414638044e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.330734046e-34, 1.414638044e+00) ; comparator spin-omitted: (-2.304140e-18, 7.073190e-01) ; <J> = 1.000000000, <S> = +1
+(C) M_b 0.70 f_B 0.30 rest   S=-1: V = (0.0000,0.0000) | D1=K: Xdd/g = (-0.999999999999995, 0.000000000000001), minus prediction = (5.3e-15, 7.6e-16), w_P-1 = -4.7e-15, O(1) drift 5.7e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-1.000000000, 0.000000000), minus prediction = (6.44e-15, 9.78e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.830602650, -0.000000000), minus prediction = (-8.31e-01, -3.03e-16), w_P = 1.818491256
+      O(g) velocity of X_E: D1 = K: (1.272439954e-32, -1.414638044e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.326928757e-34, -1.414638044e+00) ; comparator spin-omitted: (-2.986221e-18, -7.073190e-01) ; <J> = -1.000000000, <S> = -1
+(C) M_b 0.70 f_B 0.30 moving S=+1: V = (0.2800,0.1100) | D1=K: Xdd/g = (-0.843199999999999, 0.061600000000000), minus prediction = (1.0e-15, -2.1e-16), w_P-1 = 8.9e-16, O(1) drift 6.2e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-0.843200000, 0.061600000), minus prediction = (1.22e-15, 1.53e-16), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.586483733, 0.072690180), minus prediction = (-7.43e-01, 1.11e-02), w_P = 1.761100858
+      O(g) velocity of X_E: D1 = K: (2.128413635e-02, 1.295509390e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (2.128413635e-02, 1.295509390e+00) ; comparator spin-omitted: (3.208739e-02, 6.090383e-01) ; <J> = 1.000000000, <S> = +1
+(C) M_b 0.70 f_B 0.30 moving S=-1: V = (0.2800,0.1100) | D1=K: Xdd/g = (-0.843199999999999, 0.061600000000001), minus prediction = (1.0e-15, 9.4e-16), w_P-1 = 8.9e-16, O(1) drift 6.2e-17
+      comparator D1 = (1/2){H,X} (spin term omitted)   Xdd/g = (-0.843200000, 0.061600000), minus prediction = (-1.11e-16, 3.47e-17), w_P = 1.000000000
+      comparator D1 = K0 (binding not gravitating)     Xdd/g = (-1.586483733, 0.072690180), minus prediction = (-7.43e-01, 1.11e-02), w_P = 1.761100858
+      O(g) velocity of X_E: D1 = K: (-2.128413635e-02, -1.295509390e+00) ; elevator value (eps_xb <J> + <K_b><P_x>/<H>)/<H> = (-2.128413635e-02, -1.295509390e+00) ; comparator spin-omitted: (-3.208739e-02, -6.090383e-01) ; <J> = -1.000000000, <S> = -1
+(C) time 156.6s
+(C) eta (D1 = K): |a_1 - a_2| / |a| between binding fractions, a = Xdd_E (vector), same S and common velocity:
+    K (Belinfante dipole)            rest   S=+1 f_B 0.05 vs 0.15: eta = 2.48e-15 (|V_A - V_B| = 1.4e-19)
+    K (Belinfante dipole)            rest   S=+1 f_B 0.05 vs 0.30: eta = 4.67e-15 (|V_A - V_B| = 4.2e-19)
+    K (Belinfante dipole)            rest   S=+1 f_B 0.15 vs 0.30: eta = 3.42e-15 (|V_A - V_B| = 2.8e-19)
+    K (Belinfante dipole)            rest   S=-1 f_B 0.05 vs 0.15: eta = 2.47e-15 (|V_A - V_B| = 1.4e-19)
+    K (Belinfante dipole)            rest   S=-1 f_B 0.05 vs 0.30: eta = 4.66e-15 (|V_A - V_B| = 4.2e-19)
+    K (Belinfante dipole)            rest   S=-1 f_B 0.15 vs 0.30: eta = 3.42e-15 (|V_A - V_B| = 2.8e-19)
+    K (Belinfante dipole)            moving S=+1 f_B 0.05 vs 0.15: eta = 1.52e-14 (|V_A - V_B| = 2.3e-16)
+    K (Belinfante dipole)            moving S=+1 f_B 0.05 vs 0.30: eta = 3.69e-15 (|V_A - V_B| = 8.3e-17)
+    K (Belinfante dipole)            moving S=+1 f_B 0.15 vs 0.30: eta = 1.39e-14 (|V_A - V_B| = 1.8e-16)
+    K (Belinfante dipole)            moving S=-1 f_B 0.05 vs 0.15: eta = 1.52e-14 (|V_A - V_B| = 2.3e-16)
+    K (Belinfante dipole)            moving S=-1 f_B 0.05 vs 0.30: eta = 1.98e-15 (|V_A - V_B| = 8.3e-17)
+    K (Belinfante dipole)            moving S=-1 f_B 0.15 vs 0.30: eta = 1.40e-14 (|V_A - V_B| = 1.8e-16)
+    K (Belinfante dipole)            rest   f_B 0.05: spin eta S=+1 vs S=-1 = 1.32e-15
+    K (Belinfante dipole)            rest   f_B 0.15: spin eta S=+1 vs S=-1 = 3.10e-15
+    K (Belinfante dipole)            rest   f_B 0.30: spin eta S=+1 vs S=-1 = 1.52e-15
+    K (Belinfante dipole)            moving f_B 0.05: spin eta S=+1 vs S=-1 = 4.68e-16
+    K (Belinfante dipole)            moving f_B 0.15: spin eta S=+1 vs S=-1 = 4.27e-16
+    K (Belinfante dipole)            moving f_B 0.30: spin eta S=+1 vs S=-1 = 1.35e-15
+    (1/2){H,X} (spin term omitted)   rest   S=+1 f_B 0.05 vs 0.15: eta = 3.68e-15 (|V_A - V_B| = 1.4e-19)
+    (1/2){H,X} (spin term omitted)   rest   S=+1 f_B 0.05 vs 0.30: eta = 7.57e-15 (|V_A - V_B| = 4.2e-19)
+    (1/2){H,X} (spin term omitted)   rest   S=+1 f_B 0.15 vs 0.30: eta = 3.99e-15 (|V_A - V_B| = 2.8e-19)
+    (1/2){H,X} (spin term omitted)   rest   S=-1 f_B 0.05 vs 0.15: eta = 4.11e-15 (|V_A - V_B| = 1.4e-19)
+    (1/2){H,X} (spin term omitted)   rest   S=-1 f_B 0.05 vs 0.30: eta = 7.81e-15 (|V_A - V_B| = 4.2e-19)
+    (1/2){H,X} (spin term omitted)   rest   S=-1 f_B 0.15 vs 0.30: eta = 3.89e-15 (|V_A - V_B| = 2.8e-19)
+    (1/2){H,X} (spin term omitted)   moving S=+1 f_B 0.05 vs 0.15: eta = 1.26e-14 (|V_A - V_B| = 2.3e-16)
+    (1/2){H,X} (spin term omitted)   moving S=+1 f_B 0.05 vs 0.30: eta = 3.74e-15 (|V_A - V_B| = 8.3e-17)
+    (1/2){H,X} (spin term omitted)   moving S=+1 f_B 0.15 vs 0.30: eta = 1.50e-14 (|V_A - V_B| = 1.8e-16)
+    (1/2){H,X} (spin term omitted)   moving S=-1 f_B 0.05 vs 0.15: eta = 2.02e-14 (|V_A - V_B| = 2.3e-16)
+    (1/2){H,X} (spin term omitted)   moving S=-1 f_B 0.05 vs 0.30: eta = 2.80e-15 (|V_A - V_B| = 8.3e-17)
+    (1/2){H,X} (spin term omitted)   moving S=-1 f_B 0.15 vs 0.30: eta = 1.87e-14 (|V_A - V_B| = 1.8e-16)
+    (1/2){H,X} (spin term omitted)   rest   f_B 0.05: spin eta S=+1 vs S=-1 = 6.56e-16
+    (1/2){H,X} (spin term omitted)   rest   f_B 0.15: spin eta S=+1 vs S=-1 = 1.51e-15
+    (1/2){H,X} (spin term omitted)   rest   f_B 0.30: spin eta S=+1 vs S=-1 = 7.42e-16
+    (1/2){H,X} (spin term omitted)   moving f_B 0.05: spin eta S=+1 vs S=-1 = 5.54e-15
+    (1/2){H,X} (spin term omitted)   moving f_B 0.15: spin eta S=+1 vs S=-1 = 2.15e-15
+    (1/2){H,X} (spin term omitted)   moving f_B 0.30: spin eta S=+1 vs S=-1 = 1.58e-15
+    K0 (binding not gravitating)     rest   S=+1 f_B 0.05 vs 0.15: eta = 1.60e-01 (|V_A - V_B| = 1.4e-19)
+    K0 (binding not gravitating)     rest   S=+1 f_B 0.05 vs 0.30: eta = 4.39e-01 (|V_A - V_B| = 4.2e-19)
+    K0 (binding not gravitating)     rest   S=+1 f_B 0.15 vs 0.30: eta = 2.41e-01 (|V_A - V_B| = 2.8e-19)
+    K0 (binding not gravitating)     rest   S=-1 f_B 0.05 vs 0.15: eta = 1.60e-01 (|V_A - V_B| = 1.4e-19)
+    K0 (binding not gravitating)     rest   S=-1 f_B 0.05 vs 0.30: eta = 4.39e-01 (|V_A - V_B| = 4.2e-19)
+    K0 (binding not gravitating)     rest   S=-1 f_B 0.15 vs 0.30: eta = 2.41e-01 (|V_A - V_B| = 2.8e-19)
+    K0 (binding not gravitating)     moving S=+1 f_B 0.05 vs 0.15: eta = 1.67e-01 (|V_A - V_B| = 2.3e-16)
+    K0 (binding not gravitating)     moving S=+1 f_B 0.05 vs 0.30: eta = 4.57e-01 (|V_A - V_B| = 8.3e-17)
+    K0 (binding not gravitating)     moving S=+1 f_B 0.15 vs 0.30: eta = 2.48e-01 (|V_A - V_B| = 1.8e-16)
+    K0 (binding not gravitating)     moving S=-1 f_B 0.05 vs 0.15: eta = 1.67e-01 (|V_A - V_B| = 2.3e-16)
+    K0 (binding not gravitating)     moving S=-1 f_B 0.05 vs 0.30: eta = 4.57e-01 (|V_A - V_B| = 8.3e-17)
+    K0 (binding not gravitating)     moving S=-1 f_B 0.15 vs 0.30: eta = 2.48e-01 (|V_A - V_B| = 1.8e-16)
+    K0 (binding not gravitating)     rest   f_B 0.05: spin eta S=+1 vs S=-1 = 2.61e-16
+    K0 (binding not gravitating)     rest   f_B 0.15: spin eta S=+1 vs S=-1 = 9.21e-16
+    K0 (binding not gravitating)     rest   f_B 0.30: spin eta S=+1 vs S=-1 = 7.06e-16
+    K0 (binding not gravitating)     moving f_B 0.05: spin eta S=+1 vs S=-1 = 3.83e-15
+    K0 (binding not gravitating)     moving f_B 0.15: spin eta S=+1 vs S=-1 = 3.49e-15
+    K0 (binding not gravitating)     moving f_B 0.30: spin eta S=+1 vs S=-1 = 2.71e-15
+(D) lapse spin-orbit: E_SO = <g.D1>(S=+1) - <g.D1>(S=-1), g = e_x, D1 = FD first moment of T00, bodies at X = 0 moving with P0 = M_b u; elevator/BT value = <eps_xy P_y S f>(+) - (-) ; low-velocity form 2 * (1/2) eps_xy V_y:
+    M_b 0.95: E_SO(stress) = 1.164687042051e-01 ; BT/elevator = 1.164687042052e-01 ; ratio = 0.999999999999 ; low-velocity 2*(1/2)V_y = 1.136583e-01 ; comparator (spin term omitted) E_SO = 0.0e+00
+    M_b 0.85: E_SO(stress) = 1.163343259370e-01 ; BT/elevator = 1.163343259371e-01 ; ratio = 0.999999999999 ; low-velocity 2*(1/2)V_y = 1.135289e-01 ; comparator (spin term omitted) E_SO = 0.0e+00
+    M_b 0.70: E_SO(stress) = 1.160173987042e-01 ; BT/elevator = 1.160173987042e-01 ; ratio = 0.999999999999 ; low-velocity 2*(1/2)V_y = 1.132228e-01 ; comparator (spin term omitted) E_SO = 0.0e+00
+(D) gravitomagnetic ratio (uniform rotation couples as -Omega J_T): <J_T> per unit <S> at rest, Belinfante vs dust:
+    M_b 0.95 S=+1: <S> = 1.000000000000, <J> = 1.000000000000, <J_T>_Belinfante = 0.999999999999 (ratio 0.999999999999), <J_T>_dust = 0.005343 (ratio 0.0053)
+    M_b 0.95 S=-1: <S> = -1.000000000000, <J> = -1.000000000000, <J_T>_Belinfante = -0.999999999999 (ratio 0.999999999999), <J_T>_dust = -0.005343 (ratio 0.0053)
+    M_b 0.85 S=+1: <S> = 1.000000000000, <J> = 1.000000000000, <J_T>_Belinfante = 0.999999999999 (ratio 0.999999999999), <J_T>_dust = 0.006649 (ratio 0.0066)
+    M_b 0.85 S=-1: <S> = -1.000000000000, <J> = -1.000000000000, <J_T>_Belinfante = -0.999999999999 (ratio 0.999999999999), <J_T>_dust = -0.006649 (ratio 0.0066)
+    M_b 0.70 S=+1: <S> = 1.000000000000, <J> = 1.000000000000, <J_T>_Belinfante = 0.999999999999 (ratio 0.999999999999), <J_T>_dust = 0.009715 (ratio 0.0097)
+    M_b 0.70 S=-1: <S> = -1.000000000000, <J> = -1.000000000000, <J_T>_Belinfante = -0.999999999999 (ratio 0.999999999999), <J_T>_dust = -0.009715 (ratio 0.0097)
+total time 229.0s

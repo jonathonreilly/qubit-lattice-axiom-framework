@@ -1,0 +1,77 @@
+=== C5 R9-9 (C): TT self-energy from pair-creating box matter (free KG field) ===
+Xi = alpha + beta (lattice units, per scalar species);  c_T^2 - 1 = (2/M^2) Xi = 16 pi Xi (l_P/a)^2 (reduced-Planck GR normalisation)
+[NN, m=1.0, N=64]  (0s)
+   M,T2g  alpha=+9.033023e-04 beta=-2.806312e-03 | Xi direct=-1.903010e-03  formula <|V|^2 A_zz/eps^5>/32=-1.903007e-03  (diff -2.2e-09) | box(|k_z|<=B) part=-9.3e-04
+   M,Eg   alpha=+5.320514e-04 beta=-1.362239e-03 | Xi direct=-8.301873e-04  formula <|V|^2 A_zz/eps^5>/32=-8.301857e-04  (diff -1.7e-09) | box(|k_z|<=B) part=-4.3e-04
+   U,T2g  alpha=+1.716821e-04 beta=-4.005994e-04 | Xi direct=-2.289173e-04  formula <|V|^2 A_zz/eps^5>/32=-2.289166e-04  (diff -6.9e-10) | box(|k_z|<=B) part=-1.2e-04
+   U,Eg   alpha=+6.555058e-05 beta=-1.343833e-04 | Xi direct=-6.883272e-05  formula <|V|^2 A_zz/eps^5>/32=-6.883237e-05  (diff -3.5e-10) | box(|k_z|<=B) part=-3.9e-05
+   metric seagull: mu_T2=+6.493170e-01 mu_E=+7.017939e-01  mu_E-mu_T2=+5.247690e-02 (all-box part +7.079e-03)
+[NN, m=1.0, N=128]  (0s)
+   M,T2g  alpha=+9.033044e-04 beta=-2.806312e-03 | Xi direct=-1.903007e-03  formula <|V|^2 A_zz/eps^5>/32=-1.903007e-03  (diff -1.4e-10) | box(|k_z|<=B) part=-9.1e-04
+   M,Eg   alpha=+5.320530e-04 beta=-1.362239e-03 | Xi direct=-8.301858e-04  formula <|V|^2 A_zz/eps^5>/32=-8.301857e-04  (diff -1.0e-10) | box(|k_z|<=B) part=-4.2e-04
+   U,T2g  alpha=+1.716828e-04 beta=-4.005994e-04 | Xi direct=-2.289167e-04  formula <|V|^2 A_zz/eps^5>/32=-2.289166e-04  (diff -4.3e-11) | box(|k_z|<=B) part=-1.2e-04
+   U,Eg   alpha=+6.555091e-05 beta=-1.343833e-04 | Xi direct=-6.883239e-05  formula <|V|^2 A_zz/eps^5>/32=-6.883237e-05  (diff -2.2e-11) | box(|k_z|<=B) part=-3.8e-05
+   metric seagull: mu_T2=+6.493170e-01 mu_E=+7.017939e-01  mu_E-mu_T2=+5.247690e-02 (all-box part +6.689e-03)
+[NN, m=0.3, N=128]  (1s)
+   M,T2g  alpha=+1.702539e-03 beta=-4.274798e-03 | Xi direct=-2.572259e-03  formula <|V|^2 A_zz/eps^5>/32=-2.572258e-03  (diff -1.2e-09) | box(|k_z|<=B) part=-1.3e-03
+   M,Eg   alpha=+1.173632e-03 beta=-2.390558e-03 | Xi direct=-1.216926e-03  formula <|V|^2 A_zz/eps^5>/32=-1.216925e-03  (diff -1.1e-09) | box(|k_z|<=B) part=-6.7e-04
+   U,T2g  alpha=+4.755668e-04 beta=-8.309407e-04 | Xi direct=-3.553739e-04  formula <|V|^2 A_zz/eps^5>/32=-3.553731e-04  (diff -8.7e-10) | box(|k_z|<=B) part=-2.1e-04
+   U,Eg   alpha=+2.438320e-04 beta=-3.624326e-04 | Xi direct=-1.186006e-04  formula <|V|^2 A_zz/eps^5>/32=-1.185999e-04  (diff -7.4e-10) | box(|k_z|<=B) part=-7.5e-05
+   metric seagull: mu_T2=+6.869944e-01 mu_E=+7.484855e-01  mu_E-mu_T2=+6.149110e-02 (all-box part +8.662e-03)
+[G, m=1.0, N=64]  (1s)
+   M,T2g  alpha=+1.424004e-03 beta=-2.384243e-03 | Xi direct=-9.602390e-04  formula <|V|^2 A_zz/eps^5>/32=-9.602077e-04  (diff -3.1e-08) | box(|k_z|<=B) part=+5.7e-15
+   M,Eg   alpha=+1.070909e-03 beta=-1.600092e-03 | Xi direct=-5.291831e-04  formula <|V|^2 A_zz/eps^5>/32=-5.291645e-04  (diff -1.9e-08) | box(|k_z|<=B) part=+3.7e-15
+   U,T2g  alpha=+9.642266e-04 beta=-1.448264e-03 | Xi direct=-4.840371e-04  formula <|V|^2 A_zz/eps^5>/32=-4.840201e-04  (diff -1.7e-08) | box(|k_z|<=B) part=+3.3e-15
+   U,Eg   alpha=+6.691087e-04 beta=-9.212422e-04 | Xi direct=-2.521335e-04  formula <|V|^2 A_zz/eps^5>/32=-2.521240e-04  (diff -9.5e-09) | box(|k_z|<=B) part=+2.0e-15
+   metric seagull: mu_T2=+8.205564e-01 mu_E=+8.692921e-01  mu_E-mu_T2=+4.873578e-02 (all-box part +6.627e-03)
+[G, m=1.0, N=128]  (1s)
+   M,T2g  alpha=+1.424011e-03 beta=-2.384243e-03 | Xi direct=-9.602325e-04  formula <|V|^2 A_zz/eps^5>/32=-9.602305e-04  (diff -2.0e-09) | box(|k_z|<=B) part=+5.7e-15
+   M,Eg   alpha=+1.070914e-03 beta=-1.600092e-03 | Xi direct=-5.291787e-04  formula <|V|^2 A_zz/eps^5>/32=-5.291775e-04  (diff -1.2e-09) | box(|k_z|<=B) part=+3.7e-15
+   U,T2g  alpha=+9.642304e-04 beta=-1.448264e-03 | Xi direct=-4.840332e-04  formula <|V|^2 A_zz/eps^5>/32=-4.840321e-04  (diff -1.1e-09) | box(|k_z|<=B) part=+3.3e-15
+   U,Eg   alpha=+6.691102e-04 beta=-9.212405e-04 | Xi direct=-2.521303e-04  formula <|V|^2 A_zz/eps^5>/32=-2.521297e-04  (diff -5.8e-10) | box(|k_z|<=B) part=+2.0e-15
+   metric seagull: mu_T2=+8.205564e-01 mu_E=+8.692921e-01  mu_E-mu_T2=+4.873578e-02 (all-box part +6.273e-03)
+[G, m=0.3, N=64]  (1s)
+   M,T2g  alpha=+2.252376e-03 beta=-3.364451e-03 | Xi direct=-1.112075e-03  formula <|V|^2 A_zz/eps^5>/32=-1.112024e-03  (diff -5.1e-08) | box(|k_z|<=B) part=+7.5e-15
+   M,Eg   alpha=+1.826028e-03 beta=-2.453900e-03 | Xi direct=-6.278715e-04  formula <|V|^2 A_zz/eps^5>/32=-6.278353e-04  (diff -3.6e-08) | box(|k_z|<=B) part=+5.2e-15
+   U,T2g  alpha=+1.673289e-03 beta=-2.245612e-03 | Xi direct=-5.723230e-04  formula <|V|^2 A_zz/eps^5>/32=-5.722890e-04  (diff -3.4e-08) | box(|k_z|<=B) part=+4.8e-15
+   U,Eg   alpha=+1.283031e-03 beta=-1.587221e-03 | Xi direct=-3.041897e-04  formula <|V|^2 A_zz/eps^5>/32=-3.041645e-04  (diff -2.5e-08) | box(|k_z|<=B) part=+3.2e-15
+   metric seagull: mu_T2=+8.543472e-01 mu_E=+9.076982e-01  mu_E-mu_T2=+5.335096e-02 (all-box part +8.067e-03)
+[G, m=0.3, N=128]  (1s)
+   M,T2g  alpha=+2.252396e-03 beta=-3.364451e-03 | Xi direct=-1.112054e-03  formula <|V|^2 A_zz/eps^5>/32=-1.112051e-03  (diff -3.2e-09) | box(|k_z|<=B) part=+7.4e-15
+   M,Eg   alpha=+1.826046e-03 beta=-2.453900e-03 | Xi direct=-6.278535e-04  formula <|V|^2 A_zz/eps^5>/32=-6.278512e-04  (diff -2.2e-09) | box(|k_z|<=B) part=+5.1e-15
+   U,T2g  alpha=+1.673306e-03 beta=-2.245612e-03 | Xi direct=-5.723056e-04  formula <|V|^2 A_zz/eps^5>/32=-5.723035e-04  (diff -2.1e-09) | box(|k_z|<=B) part=+4.6e-15
+   U,Eg   alpha=+1.283045e-03 beta=-1.587219e-03 | Xi direct=-3.041732e-04  formula <|V|^2 A_zz/eps^5>/32=-3.041717e-04  (diff -1.6e-09) | box(|k_z|<=B) part=+3.0e-15
+   metric seagull: mu_T2=+8.543472e-01 mu_E=+9.076982e-01  mu_E-mu_T2=+5.335096e-02 (all-box part +7.671e-03)
+[L, m=1.0, N=64]  (1s)
+   M,T2g  alpha=+4.750968e-03 beta=-2.347037e-03 | Xi direct=+2.403931e-03  formula <|V|^2 A_zz/eps^5>/32=+2.406151e-03  (diff -2.2e-06) | box(|k_z|<=B) part=+4.1e-12
+   M,Eg   alpha=+4.190052e-03 beta=-1.875330e-03 | Xi direct=+2.314721e-03  formula <|V|^2 A_zz/eps^5>/32=+2.319025e-03  (diff -4.3e-06) | box(|k_z|<=B) part=+3.6e-12
+   U,T2g  alpha=+4.978255e-02 beta=-2.295612e-02 | Xi direct=+2.682643e-02  formula <|V|^2 A_zz/eps^5>/32=+2.686901e-02  (diff -4.3e-05) | box(|k_z|<=B) part=+4.3e-11
+   U,Eg   alpha=+1.550875e-01 beta=-6.470655e-02 | Xi direct=+9.038093e-02  formula <|V|^2 A_zz/eps^5>/32=+9.061471e-02  (diff -2.3e-04) | box(|k_z|<=B) part=+1.3e-10
+   metric seagull: mu_T2=+5.833888e-01 mu_E=+6.065029e-01  mu_E-mu_T2=+2.311405e-02 (all-box part +6.627e-03)
+[L, m=1.0, N=128]  (2s)
+   M,T2g  alpha=+4.755594e-03 beta=-2.347050e-03 | Xi direct=+2.408543e-03  formula <|V|^2 A_zz/eps^5>/32=+2.408730e-03  (diff -1.9e-07) | box(|k_z|<=B) part=+9.4e-13
+   M,Eg   alpha=+4.194323e-03 beta=-1.875313e-03 | Xi direct=+2.319010e-03  formula <|V|^2 A_zz/eps^5>/32=+2.319223e-03  (diff -2.1e-07) | box(|k_z|<=B) part=+7.4e-13
+   U,T2g  alpha=+4.983262e-02 beta=-2.295579e-02 | Xi direct=+2.687683e-02  formula <|V|^2 A_zz/eps^5>/32=+2.687918e-02  (diff -2.3e-06) | box(|k_z|<=B) part=+9.1e-12
+   U,Eg   alpha=+1.552519e-01 beta=-6.470094e-02 | Xi direct=+9.055100e-02  formula <|V|^2 A_zz/eps^5>/32=+9.056094e-02  (diff -9.9e-06) | box(|k_z|<=B) part=+2.5e-11
+   metric seagull: mu_T2=+5.833880e-01 mu_E=+6.065025e-01  mu_E-mu_T2=+2.311444e-02 (all-box part +6.273e-03)
+[L, m=0.3, N=64]  (2s)
+   M,T2g  alpha=+9.371216e-03 beta=-4.109215e-03 | Xi direct=+5.262001e-03  formula <|V|^2 A_zz/eps^5>/32=+5.279812e-03  (diff -1.8e-05) | box(|k_z|<=B) part=+7.1e-12
+   M,Eg   alpha=+9.245062e-03 beta=-3.741322e-03 | Xi direct=+5.503740e-03  formula <|V|^2 A_zz/eps^5>/32=+5.526895e-03  (diff -2.3e-05) | box(|k_z|<=B) part=+6.7e-12
+   U,T2g  alpha=+1.031020e-01 beta=-4.256140e-02 | Xi direct=+6.054062e-02  formula <|V|^2 A_zz/eps^5>/32=+6.075655e-02  (diff -2.2e-04) | box(|k_z|<=B) part=+7.9e-11
+   U,Eg   alpha=+3.992539e-01 beta=-1.522065e-01 | Xi direct=+2.470474e-01  formula <|V|^2 A_zz/eps^5>/32=+2.482756e-01  (diff -1.2e-03) | box(|k_z|<=B) part=+2.7e-10
+   metric seagull: mu_T2=+6.272462e-01 mu_E=+6.528343e-01  mu_E-mu_T2=+2.558817e-02 (all-box part +8.067e-03)
+[L, m=0.3, N=128]  (2s)
+   M,T2g  alpha=+9.384574e-03 beta=-4.109242e-03 | Xi direct=+5.275332e-03  formula <|V|^2 A_zz/eps^5>/32=+5.276152e-03  (diff -8.2e-07) | box(|k_z|<=B) part=+1.4e-12
+   M,Eg   alpha=+9.259388e-03 beta=-3.741254e-03 | Xi direct=+5.518134e-03  formula <|V|^2 A_zz/eps^5>/32=+5.519105e-03  (diff -9.7e-07) | box(|k_z|<=B) part=+1.2e-12
+   U,T2g  alpha=+1.032620e-01 beta=-4.256533e-02 | Xi direct=+6.069671e-02  formula <|V|^2 A_zz/eps^5>/32=+6.070597e-02  (diff -9.3e-06) | box(|k_z|<=B) part=+1.5e-11
+   U,Eg   alpha=+3.998670e-01 beta=-1.522073e-01 | Xi direct=+2.476597e-01  formula <|V|^2 A_zz/eps^5>/32=+2.477100e-01  (diff -5.0e-05) | box(|k_z|<=B) part=+4.3e-11
+   metric seagull: mu_T2=+6.272453e-01 mu_E=+6.528341e-01  mu_E-mu_T2=+2.558880e-02 (all-box part +7.671e-03)
+
+=== sign of I(B) = int A_zz (B+u)^{-5/2} dk_z over B in [m^2, m^2+2 max u] (weights of every TT vertex with |V|^2>=0) ===
+  NN m=1.0: A_zz range on zone [-2.000, +0.000]; I(B) range [-3.4541e-01, -1.3048e-02]; sign-definite: True
+  NN m=0.3: A_zz range on zone [-2.000, +0.000]; I(B) range [-3.8765e+00, -1.5997e-02]; sign-definite: True
+  G  m=1.0: A_zz range on zone [-5.329, +0.000]; I(B) range [-3.8381e-02, -2.6387e-03]; sign-definite: True
+  G  m=0.3: A_zz range on zone [-5.329, +0.000]; I(B) range [-5.2847e-02, -2.9271e-03]; sign-definite: True
+  L  m=1.0: A_zz range on zone [-33.024, +19.768]; I(B) range [+4.9233e-03, +3.7253e+00]; sign-definite: True
+  L  m=0.3: A_zz range on zone [-33.024, +19.768]; I(B) range [+7.3345e-03, +1.8837e+02]; sign-definite: True
+done 3s

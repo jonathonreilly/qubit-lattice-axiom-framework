@@ -3922,8 +3922,32 @@ Readings:
 - **Evidential status.** The tail constants are numerical estimates. The non-forward T-matrix is strong but uncontrolled evidence for Lemma S's hypothesis.
 - **Reading.** A genuine sector-qualified qubit realization, not a PASS under the fixed clause.
 
-**R9-7 (two-loop complete crossings):** worker reading INCONCLUSIVE. Referee running (17:28Z).
+**R9-7 (two-loop complete crossings) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **The crossings and signs are right.** For the selected O(g_o²g_i²) topology, the complete set has 24 orderings, and the finite-Fock formula and fermion signs are correct.
+- **Completing the crossings removes the local ordering artefact.** In the 1+1D continuum-dispersion extension, the 10-ordering residual tends to −0.54%, whereas the full local bosonic sum is covariant.
+- **The registered completion P1 still leaves residuals:**
+  - bosons: +4.76e-4;
+  - fermions: −1.35% to −3.62% (tested sign choices).
+- **P2 closes exactly for bosons,** but is not box-confining and fails for the tested fermions.
+- **The mass-insertion mechanism** is strong finite-family evidence, not a class no-go.
+- **The actual completed fixed-box Hamiltonian is untested,** because P1, P4 and P2swap leak outside the box.
 - The 24 orderings remove most of toy N's failure.
 - The registered completion P1 still fails: +4.8e-4 for bosons, −1.3e-2 to −3.6e-2 for fermions.
 - P2 closes exactly for bosons, but keeps no leg in the box.
 - The residual falls steeply with m/Λ in 1+1D.
+
+**R9-9 (box graviton):** worker reading FAIL (bounded).
+- With pair-creating matter, the TT speed shift c_T² − 1 = (2/M²)Ξ is an average of Theorem E's edge anomaly A_zz:
+  - Ξ < 0 for a gapped edge (proved);
+  - Ξ > 0 for the literal edge (checked).
+- The TT mass split is nonzero for every edge mix.
+- No single edge knob zeroes both the mass and the speed.
+- In the empty-vacuum class PASS is vacuous (no loops).
+
+Referee running (17:34Z).
+
+**R9-10 (d = 2 Belinfante box stress):** worker reading PASS WITH SCOPE.
+- A symmetric stress is built via Lemma KB plus a Belinfante curl. Spinning bound bodies fall universally: η ≤ 1.5e-14 at the floor, with η = 0 proved.
+- The spin–orbit, gravitomagnetic and hidden-momentum couplings equal the uniform-field special-relativistic values to 1e-12.
+
+Referee running (17:49Z).

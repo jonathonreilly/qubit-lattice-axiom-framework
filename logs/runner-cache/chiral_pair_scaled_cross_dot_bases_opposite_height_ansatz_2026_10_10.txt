@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_scaled_cross_dot_bases_opposite_height_ansatz_2026_10_10.py
+runner_sha256: 073b218d91026ecbb36a2eaf28511d0338e1ed3e738e663c0eb883cd26640009
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 10.13
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each scaled cross-dot kernel is frame-invariant and soldered
+PASS each scaled cross-dot kernel is bond-symmetric
+PASS every left slice sums to 0
+PASS at coefficient 1/4 each scaled cross-dot kernel takes values 1/2, 3/4, 1, 5/4, and 3/2
+PASS every far-end sum equals 48
+PASS three height quadruples separate each scaled cross-dot kernel from the twenty-seven kernels
+PASS each opposite-height pair has the scaled cross-dot kernel at rank 10
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

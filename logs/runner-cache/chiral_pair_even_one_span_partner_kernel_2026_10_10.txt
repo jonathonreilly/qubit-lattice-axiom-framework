@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_even_one_span_partner_kernel_2026_10_10.py
+runner_sha256: c98edd2f397242e22641b66f9b3ee2e5523a26f443ccab17d2df65164dfb23c0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 21.33
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each ratio span meets the even space and the chirality cap in a 7-dimensional sum, and the two excluded kernels sit on the swapped-orthogonal and cap generators
+PASS the seven-generator map has rank 46 and kernel equal to the odd space, the even space, and the partner span, so two nonzero summands have partner rank 10
+PASS the sign product plus the swapped-orthogonal generator against that generator has centre pairs (-1, 0) and (-1, 2) and cross sum -2
+PASS the sign product plus the cap generator against that generator has centre pairs (-3, 0) and (1, -4) and cross sum -4
+DOT witness [(-1, 0), (-1, 2)] -2
+SCALED witness [(-3, 0), (1, -4)] -4
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

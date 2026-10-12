@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_one_swapped_dot_one_cap_partner_kernel_2026_10_10.py
+runner_sha256: 856b9c2cd44abf54dd7ca36807135e731ddf275d17c8a0b65cbc8031773939bb
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 22.32
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS on every ordered height pair, one swapped-dot generator plus the cap of the same ratio span lies in that span, has partner rank 7 at chirality coefficient 0, and has partner rank 10 at every nonzero chirality coefficient
+PASS on every ordered height pair, one swapped-dot generator plus the cap of the other ratio span has partner rank 10 at every chirality coefficient
+PASS the same-span plus sum at chirality 1 has rights (1, -3, -2) and (-1, 2, -3), centre pairs (-5, 0) and (-1, 2), and kernel cross sum -2
+PASS the same-span minus sum at chirality 1 has rights (1, -3, -2) and (-1, 2, 3), centre pairs (1, 2) and (-1, 0), and kernel cross sum 2
+PASS the opposite plus-dot sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-2, 1) and (0, -1), and kernel cross sum -2 against the chirality cap
+PASS the opposite minus-dot sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-4, 1) and (0, -1), and kernel cross sum -4 against the chirality cap
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

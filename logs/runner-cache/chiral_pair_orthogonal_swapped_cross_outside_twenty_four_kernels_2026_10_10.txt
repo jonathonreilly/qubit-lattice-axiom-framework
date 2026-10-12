@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_orthogonal_swapped_cross_outside_twenty_four_kernels_2026_10_10.py
+runner_sha256: 2caac686431c4ec6d64bbd2bcdba73f0d8b101473f3f7603aa7aa2e66199e652
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 10.40
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each orthogonal swapped cross is frame-invariant and soldered
+PASS each orthogonal swapped cross is bond-symmetric
+PASS every left slice sums to 0
+PASS at coefficient 1/2 each orthogonal swapped cross takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS three height quadruples separate each orthogonal swapped cross from the twenty-four kernels
+PASS each opposite-height pair has the orthogonal swapped cross at rank 9
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

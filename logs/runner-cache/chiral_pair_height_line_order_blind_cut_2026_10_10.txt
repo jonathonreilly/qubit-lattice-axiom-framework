@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_height_line_order_blind_cut_2026_10_10.py
+runner_sha256: e1bf806ef5ff0f83f5d5de5579aa37e467476825877d3c3ec8cdcdff78ddbef0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 4.05
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the height-linear factor is bond-symmetric
+PASS the height-linear factor is soldered under proper rotations
+PASS every far-end sum equals 48
+PASS one coordinate has mean 0 and second moment 14/3
+PASS every opposite-direction moment equals 1 plus (14/3) c^2 times the two heights
+PASS at coefficient 1/10 the opposite moment on (1, 2, 3) is 71/50
+PASS that factor is strictly positive and not constant
+PASS every perpendicular moment on e_x and e_z equals 1
+PASS at coefficient 0 the opposite moment equals 1
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_transverse_sign_outside_cap_2026_10_10.py
+runner_sha256: be8519058459b30aa18a06467281e04658b8be2560fbcc5776256f000c3561ee
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.77
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the transverse-sign product is soldered under proper rotations
+PASS the transverse-sign factor is bond-symmetric
+PASS the six transverse signs have mean 0 and disjoint supports
+PASS all 729 partner patterns have product mean 1
+PASS the factor at coefficient 1/2 takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS two bonds from opposite orbits forbid every scale of the chiral cap
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

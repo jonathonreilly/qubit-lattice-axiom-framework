@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_mixed_parity_partner_kernel_2026_10_10.py
+runner_sha256: ce91f7fe6efe1d0f62efda9ae4b2b736cdbf77cfe253fcc1a876b56ab3817f4a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 8.09
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the orthogonal cross lies in the parity span with both parts nonzero, and on heights 1 and 2 it is half the swapped cross plus an even generator
+PASS the joint map has rank 46 and kernel equal to even copies on the odd blocks and odd copies on the even blocks, so every mixed vector has partner rank 10
+PASS the orthogonal cross against the sign product has centre pairs (0, -1) and (-1, -1) and cross sum 1
+PASS the orthogonal cross against the chirality cap has centre pairs (0, -1) and (-1, 1) and cross sum -1
+PASS the orthogonal cross against the matched cross has centre pairs (0, 0) and (-1, 1) and cross sum -1
+ORTH-PROD witness [(0, -1), (-1, -1)] 1
+ORTH-CHI witness [(0, -1), (-1, 1)] -1
+ORTH-MATCHED witness [(0, 0), (-1, 1)] -1
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

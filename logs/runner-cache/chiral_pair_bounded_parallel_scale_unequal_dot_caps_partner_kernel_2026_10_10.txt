@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_bounded_parallel_scale_unequal_dot_caps_partner_kernel_2026_10_10.py
+runner_sha256: 5e1b2a77392b5e02f25265a112a76ee4b6c212caa62ea45800f44cb7fbe8fab9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 12.49
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS q times parallel plus t times the plus swapped-dot generator plus u times the minus swapped-dot generator plus r times the plus cap and s times the minus cap have parallel coordinate q, swapped-dot coordinate t-u, swapped coordinate -(t+u), orthogonal coordinate t+u, transverse-sign and sign-product coordinates s-r, and matched and scaled coordinates 2r+2s
+PASS the sum lies in the plus ratio span only when the minus-dot scale, the minus cap, and the parallel scale are zero, in the minus ratio span only when the plus-dot scale, the plus cap, and the parallel scale are zero, and in an even space only at the origin
+PASS the sum has rights (1, -3, -2) and (-3, 2, -1), centre pair (-2t-4r, 0), partner pair (1, -1), and kernel cross sum -2t-4r, independent of u, s, and q
+PASS on every ordered height pair, the generic minor equals 1024 c (c-4r-2t)^2 (c-2r-t) M^3 up to the height sign, and the other three minors equal 8192 times (2r+t-c)(4r+2t-c)^3 L^3, either (4r+2t-c)^2 L^4 or c(4r+2t-c)L^4, and c^3(2r+t-c)L^3, up to sign, where M = (2(4r+t)-q)c+(4r+2t)q and L = c(2r-2s+t-u)+2(2r+t)(2s+u)
+PASS for every positive integer quintuple with q at most 2(4r+t), M stays positive at every nonnegative chirality, and L is 2(2r+t)(2s+u) at chirality 0, (2r+t)(2r+2s+t+u) at chirality 2r+t, and 2(2r+t)^2 at chirality 4r+2t, so one of the four minors is nonzero at every nonnegative chirality coefficient
+PASS each partner row at (t, u, r, s, q, c) equals t times the row at (1, u/t, r/t, s/t, q/t, c/t), and one maximal minor scales by t^10
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

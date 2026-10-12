@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/modulus_three_triple_complement_2026_10_10.py
+runner_sha256: b7b8531e204ae5da6e7f4acfc0ab2339713b7bb010af7c4706966520bec5d45e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS the signatures partition 84 bond orbits
+PASS the modulus-3 triple has joint slice kernel 10
+PASS the complement of the three signature kernels is one line
+PASS the complement is -1, +1, +1 on one orbit of each signature
+PASS every record has two live directions
+PASS the opposite x-directions at (-3, -2, -1) have moment 2
+PASS the uniform average of that moment is 1/12
+PASS the equal-height block is nonzero, so the line is outside the opposite signatures
+PASS a direct-sum stand-in is not this complement
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_one_parity_one_excluded_cross_moments_2026_10_10.py
+runner_sha256: 26898f51f543671d77867b892a86088b08b5d30072d1149a6d7118f59593bb20
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 51.05
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS every other parity-excluded plane has full partner rank for a nonzero ratio
+PASS the oblique-matched ratios with a partner kernel are exactly plus and minus one
+PASS at ratios plus and minus one the named three vectors span the partner kernel
+PASS oblique plus matched at heights 1 and 2 has every cross sum equal to 0 against itself
+PASS chirality plus matched against the chirality cap has witness cross sum 2
+PASS the same oblique-matched vector has witness cross sum -4 at heights 1 and 3
+PASS oblique plus twice matched has witness cross sum -1 against oblique
+CHI witness [(1, 1), (-1, -1)] 2
+SELF witness [(0, 0), (-2, 2)] -4
+RATIO witness [(0, 0), (-1, 1)] -1
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

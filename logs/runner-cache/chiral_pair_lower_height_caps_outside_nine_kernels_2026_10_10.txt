@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_lower_height_caps_outside_nine_kernels_2026_10_10.py
+runner_sha256: c39f7b5acdfbafde1e32ca63cd6964d0cabb1f0fbabbaf965382afd46b6a423e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 11.11
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS all six cap products are soldered under proper rotations
+PASS all six cap products are bond-symmetric
+PASS each cap sign has mean 0 and at most one live direction
+PASS every left slice sums to 0
+PASS at coefficient 1/2 each cap takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS ten bonds have determinant -16 and every kernel from another height vanishes
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

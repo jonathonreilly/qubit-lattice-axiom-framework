@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/modulus_three_complement_mixture_2026_10_10.py
+runner_sha256: 0b0c9dde376872646f86a92cb6db413b8bc35e9326d4c1b33f1ff681d4ad16f7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS the ansatz is the 10-dimensional joint slice kernel on 12 orbits
+PASS the line plus the three signature kernels span that kernel
+PASS the pair moments contain the square of the complement coefficient
+PASS nine explicit forms are pair-moment consequences once the coefficient is zero
+PASS both determinants factor as the plane times a sum of two squares
+PASS on e0 + e1 = 0 the kernel line is one-dimensional away from the origin
+PASS with the opposite blocks zero, the equal-height quadrics vanish only at the origin
+PASS on e0 + e1 = 0 the kernel line forces the equal-height coordinates to zero
+PASS on e0 = e1 = -e2 the same quadrics force that coordinate to zero
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

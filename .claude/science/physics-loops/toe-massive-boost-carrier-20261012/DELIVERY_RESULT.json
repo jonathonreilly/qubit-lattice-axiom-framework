@@ -1,0 +1,69 @@
+{
+  "status": "prestage_mechanical_checks_completed",
+  "base": "358fdf795a5504d4d7fd13344bbbd5df5504ebea",
+  "science_executions_this_delivery": 0,
+  "actual_earlier_cache_refreshes_reused_as_evidence": 5,
+  "old_manifest_records_repaired": 5,
+  "both_evidence_maps_unchanged": true,
+  "earlier_final_freshness_claim": "Incorrect at published 358fdf; preserved real input mismatch and actual canonical repair",
+  "saved_science_revalidated": true,
+  "canonical_total": {
+    "passed": 84,
+    "failed": 0
+  },
+  "original_whole_mutants": 8,
+  "whole_mutant_rejections": 8,
+  "changed_passing_rows": {
+    "translation_plus": [],
+    "kernel_half": [
+      "kernel_quadrature_refinement_0_-0.7",
+      "kernel_quadrature_refinement_0_0.0",
+      "kernel_quadrature_refinement_0_1.1",
+      "kernel_quadrature_refinement_1_-0.7",
+      "kernel_quadrature_refinement_1_0.0",
+      "kernel_quadrature_refinement_1_1.1"
+    ],
+    "kernel_reverse_shift": [
+      "kernel_quadrature_refinement_0_-0.7",
+      "kernel_quadrature_refinement_0_0.0",
+      "kernel_quadrature_refinement_0_1.1",
+      "kernel_quadrature_refinement_1_-0.7",
+      "kernel_quadrature_refinement_1_0.0",
+      "kernel_quadrature_refinement_1_1.1"
+    ],
+    "omit_weight": [],
+    "reverse_B": [],
+    "wrong_V": [],
+    "intersection_domain": [],
+    "wrong_Radon_Nikodym": []
+  },
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 4
+  },
+  "graph_build_repeated": false,
+  "vocabulary_modes": [
+    "fix",
+    "report-only"
+  ],
+  "reconstruction_before_and_after_vocabulary": true,
+  "ordinary_local_links": 19,
+  "cache_status": "fresh",
+  "focused_compatibility": {
+    "base": "358fdf795a5504d4d7fd13344bbbd5df5504ebea",
+    "changed_path_count": 1582,
+    "checked": [],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "source_reviews": "Previously completed frozen coverage; no new independent review",
+  "later_gates": "Final archive/source reconstruction, staged bytes/whitespace, commit/push/PR inspection have external receipts; no self-reference.",
+  "external_delivery_run": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_carrier_delivery_recovery_v2/runs/20261012T120234_a784f9250a0c",
+  "global_combined_audit": "not_run_separate_landing_gate",
+  "strict_audit_lint": "not_run_separate_landing_gate",
+  "audit_verdict": "not_applied",
+  "editable_prompt_files_changed": [],
+  "pairing": "Same selected model family and reasoning effort, separate author/reviewer contexts; not blinded or diverse-family. Root is coauthor. Mechanical delivery adds no independent science review."
+}

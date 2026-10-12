@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/weighted_current_closure_2026_10_12.py
 runner_sha256: 8b34fb4bf1a0b373403ecf06eca7d1f01b032f40f6b8573ca2c0d3b6de8c60fd
-input_fingerprint_sha256: 12dd387cb40742ff06dd65355905bfefb49759ec1efe072a009d54b336b3b2f7
+input_fingerprint_sha256: a79052beaa5010590c16abf612bcde438df30b4106e1394a27c058d8b13a9579
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 {"density": [{"coefficient": ["1", "0"], "word": "Z@0"}, {"coefficient": ["-1", "0"], "word": "Z@1"}], "name": "nonzero_divergence_is_not_zero_density", "passed": true}

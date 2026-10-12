@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/nonisolated_fock_2026_10_12.py
 runner_sha256: 5e5220bea0b63549863b852d880fd1d642652bcb24d54b15009af310ba460dfb
-input_fingerprint_sha256: 81478e731187cf54620424f9c515d01dc9622a48077d2f27de4556e29b6cfcdd
+input_fingerprint_sha256: 8f6b94caa62c36c78dc1e9f54d5d5b600314d98f5cf1a587b9ccadcc4079f295
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 {"check": "environment", "numpy_version": "2.4.4"}

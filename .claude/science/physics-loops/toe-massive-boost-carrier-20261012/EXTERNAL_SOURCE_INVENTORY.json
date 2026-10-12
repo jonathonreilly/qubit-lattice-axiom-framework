@@ -1,0 +1,97 @@
+{
+  "policy": "Raw third-party papers, TeX, source responses, extracts and media are inventoried and stay external; nothing is deleted.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/prasad_0912_0574v1.pdf",
+      "sha256": "bd3d7ae7b6a6da2207df27c83cf174750ad768079a99efe3d27cf8b84eb10bfe",
+      "bytes": 157145,
+      "url": "https://arxiv.org/pdf/0912.0574v1",
+      "role": "Primary theorem comparison; raw paper outside publication. Self-contained proof also supplied.",
+      "read_scope": "Theorem 4.1 including strong-continuity footnote and real-case section 4.3, via web extraction. Full PDF read is not claimed.",
+      "acquisition_matches": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/von_neumann_1931.pdf",
+      "sha256": "e240b283bc36d445be4d19683e2f3091b1bee8262522cac0ea1abbd0d9be4f30",
+      "bytes": 355853,
+      "url": "https://www.lpthe.jussieu.fr/~dito/benin2017/files/giuseppe.pdf",
+      "role": "Incorrect original filename: actual Dito 2017 lecture deck. Excluded as a mathematical proof source; preserved failed acquisition.",
+      "read_scope": "Inspected title/content to identify mismatch, not treated as full primary-paper proof.",
+      "acquisition_matches": true
+    }
+  ],
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/prasad_0912_0574v1.pdf",
+      "bytes": 157145,
+      "sha256": "bd3d7ae7b6a6da2207df27c83cf174750ad768079a99efe3d27cf8b84eb10bfe",
+      "classification": "external_primary_content",
+      "source_url": "https://arxiv.org/pdf/0912.0574v1",
+      "source_version": "arXiv:0912.0574v1",
+      "source_record": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/prasad_0912_0574v1.pdf",
+        "sha256": "bd3d7ae7b6a6da2207df27c83cf174750ad768079a99efe3d27cf8b84eb10bfe",
+        "bytes": 157145,
+        "url": "https://arxiv.org/pdf/0912.0574v1",
+        "role": "Primary theorem comparison; raw paper outside publication. Self-contained proof also supplied.",
+        "read_scope": "Theorem 4.1 including strong-continuity footnote and real-case section 4.3, via web extraction. Full PDF read is not claimed.",
+        "acquisition_matches": true
+      },
+      "disposition": "Inventory only; raw paper content remains external, unchanged, and is not bundled."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/von_neumann_1931.pdf",
+      "bytes": 355853,
+      "sha256": "e240b283bc36d445be4d19683e2f3091b1bee8262522cac0ea1abbd0d9be4f30",
+      "classification": "external_primary_content",
+      "source_url": "https://www.lpthe.jussieu.fr/~dito/benin2017/files/giuseppe.pdf",
+      "source_version": "2017 lecture deck; not von Neumann 1931",
+      "source_record": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/von_neumann_1931.pdf",
+        "sha256": "e240b283bc36d445be4d19683e2f3091b1bee8262522cac0ea1abbd0d9be4f30",
+        "bytes": 355853,
+        "url": "https://www.lpthe.jussieu.fr/~dito/benin2017/files/giuseppe.pdf",
+        "role": "Incorrect original filename: actual Dito 2017 lecture deck. Excluded as a mathematical proof source; preserved failed acquisition.",
+        "read_scope": "Inspected title/content to identify mismatch, not treated as full primary-paper proof.",
+        "acquisition_matches": true
+      },
+      "disposition": "Inventory only; raw paper content remains external, unchanged, and is not bundled."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier_review/author_snapshot/external_raw/prasad_0912_0574v1.pdf",
+      "bytes": 157145,
+      "sha256": "bd3d7ae7b6a6da2207df27c83cf174750ad768079a99efe3d27cf8b84eb10bfe",
+      "classification": "external_primary_content",
+      "source_url": "https://arxiv.org/pdf/0912.0574v1",
+      "source_version": "arXiv:0912.0574v1",
+      "source_record": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/prasad_0912_0574v1.pdf",
+        "sha256": "bd3d7ae7b6a6da2207df27c83cf174750ad768079a99efe3d27cf8b84eb10bfe",
+        "bytes": 157145,
+        "url": "https://arxiv.org/pdf/0912.0574v1",
+        "role": "Primary theorem comparison; raw paper outside publication. Self-contained proof also supplied.",
+        "read_scope": "Theorem 4.1 including strong-continuity footnote and real-case section 4.3, via web extraction. Full PDF read is not claimed.",
+        "acquisition_matches": true
+      },
+      "disposition": "Inventory only; raw paper content remains external, unchanged, and is not bundled."
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier_review/author_snapshot/external_raw/von_neumann_1931.pdf",
+      "bytes": 355853,
+      "sha256": "e240b283bc36d445be4d19683e2f3091b1bee8262522cac0ea1abbd0d9be4f30",
+      "classification": "external_primary_content",
+      "source_url": "https://www.lpthe.jussieu.fr/~dito/benin2017/files/giuseppe.pdf",
+      "source_version": "2017 lecture deck; not von Neumann 1931",
+      "source_record": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/massive_boost_carrier/external_raw/von_neumann_1931.pdf",
+        "sha256": "e240b283bc36d445be4d19683e2f3091b1bee8262522cac0ea1abbd0d9be4f30",
+        "bytes": 355853,
+        "url": "https://www.lpthe.jussieu.fr/~dito/benin2017/files/giuseppe.pdf",
+        "role": "Incorrect original filename: actual Dito 2017 lecture deck. Excluded as a mathematical proof source; preserved failed acquisition.",
+        "read_scope": "Inspected title/content to identify mismatch, not treated as full primary-paper proof.",
+        "acquisition_matches": true
+      },
+      "disposition": "Inventory only; raw paper content remains external, unchanged, and is not bundled."
+    }
+  ]
+}

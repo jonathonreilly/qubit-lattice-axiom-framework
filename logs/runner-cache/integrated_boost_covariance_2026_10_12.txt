@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/integrated_boost_covariance_2026_10_12.py
 runner_sha256: 8dbdc64249c46a3ffb286ff443c7c1c738845dbc09f6d1eda9c5a0112c710b26
-input_fingerprint_sha256: 63129f0bc230bcadd6b5663571bd9c37a0ba1083b434caad8df5c2a7512ad728
+input_fingerprint_sha256: 87f2a4d92aa9e36420c6e93701c7a123e503c187e7a1a412e3aac78b5f26c72c
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 PASS f0.r0.energy_shift {"actual": "13/5", "mixed": "13/5"}

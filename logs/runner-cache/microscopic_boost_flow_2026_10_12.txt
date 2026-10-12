@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/microscopic_boost_flow_2026_10_12.py
 runner_sha256: e06387f3c243810e478e4fb94e55ccf3ec0c2537e69dc985ea2d4bca468d1c72
-input_fingerprint_sha256: 8169822c5eca13b95306fa217bbc46f4b18b9f1f10a9b05f4291ea5a0d15997b
+input_fingerprint_sha256: 0b93ede9469e416c840562a550331d14bbe90d78d43d4fc818f93a1899c880c5
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 {"name": "telescoping_energy_is_zero_on_local_probe", "passed": true, "residual": 0.0, "support_coordinates": [-1, 0, 1]}

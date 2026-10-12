@@ -1,6 +1,6 @@
 {
- "edge_count": 15443,
- "node_count": 6885,
+ "edge_count": 15447,
+ "node_count": 6886,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13857,6 +13857,10 @@
   "mass_spectrum_derived_note": {
    "deps_hash": "95ca07898375",
    "out_degree": 6
+  },
+  "massive_boost_carrier_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "3f8a2f32eabd",
+   "out_degree": 4
   },
   "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14": {
    "deps_hash": "11786fb5489b",

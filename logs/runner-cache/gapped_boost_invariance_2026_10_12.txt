@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gapped_boost_invariance_2026_10_12.py
 runner_sha256: 0c20fc35206d2dcd9e906ecc000e7f24abbaef3c930750c59aa5e564138fd625
-input_fingerprint_sha256: 855a4c91397b6721b1f72fe9c27bf5eacffd5bbd3abb3d521752ee8603081794
+input_fingerprint_sha256: d84d8c04240299069c390713bff6f19f5ce31ee9ea9e5208b09e688886f34a68
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 {"name": "qubit_simple_oriented_pair_current", "ok": true, "residual": "0"}

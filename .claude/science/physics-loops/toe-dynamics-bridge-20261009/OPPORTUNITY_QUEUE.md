@@ -1,16 +1,7 @@
 # Ranked opportunity queue
 
-1. Finish accepted energy-adapted milestone: exact state and actual-time
-   compatibility improves on state-only refinement. Root gate open; publish
-   after complete source assembly and actual reproduction checks.
-2. Complete independent sharp-current proof review: quantify the best possible
-   actual-current approximation across every exact-energy linear isometry.
-   Real attainer and growing spectral-window criterion are candidate benefits.
-3. Prepare honest pure-proof milestone if review succeeds; no invented numerical
-   evidence or five-route no-go completeness. Preserve unresolved obligations.
-4. Subsequent frontier requires a materially broader microscopic realization,
-   interacting channels or derived selector/dynamics; interacting d>=2/QCA
-   work is owned by PR9476. Avoid duplicate work or rebranding small variants.
+1. Publish independently checked SHARP quantitative theorem with exact scope and source integrity; do not upgrade no-go packet or retained status.
+2. Finish full source comparison for current-preserving construction: actual state/current coherence, doubled coefficient multiplicity, local staggered sections, and even-observable time obstruction. Preserve extra high-energy branch and distinguish all-scale from dyadic time limits.
+3. Physical sector selection and control of interacting/higher-dimensional dynamics remain open. PR9476 owns interacting d>=2 box-boost/Ward and additive-QCA routes; do not duplicate.
 
-Do not reopen fixed-map failures without a changed map or obligation. No new
-research after fixed2026-10-12T16:00:52Z. Preserve source/evidence then close out.
+At fixed16:00:52UTC stop research; preserve incomplete evidence and disable heartbeat.

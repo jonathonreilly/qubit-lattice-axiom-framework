@@ -1,9 +1,4 @@
 # Current source trace gate
 
-STATE regular publication complete; exact source/evidence/verification bound by
-S/state_adapted_delivery/FINAL.json. ENERGY source gate OPEN with full333-file
-review and root evidence; final source-only assembly remains a separate gate.
-SHARP current source frozen; fresh review and publication gate still pending.
-Focused compatibility previously selected zero ledger claims; it is not science
-audit coverage. Pure-proof current result has no numerical runner or no-go packet
-PASS. Six prior checkpoint files archived exactly; P remains sole live checkpoint.
+ENERGY published at f85656c1766536299c8bafdb91db6dd1dfbd5e2d with actual canonical/replay and metadata checks. SHARP source/math review accepted; frozen publication staged with root acceptance, integration/cache/graph/PR pending. Identity checking establishes only bytes, no mathematics.
+NEW current-preserving independent derivation sealed but final author comparison and source gate pending. P remains sole recovery checkpoint; exact previous six files archived.

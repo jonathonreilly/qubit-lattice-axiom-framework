@@ -1,10 +1,4 @@
-# Current claim status certificate
+# Current claim status
 
-All campaign theorems remain bounded conditional research results under their
-exact supplied-model hypotheses; regular PR publication does not grant retained
-status. STATE state preservation/local quotient is reviewed and published.
-ENERGY state/time preservation and fixed-map counterexamples have independent
-source review and root acceptance; publication assembly pending. SHARP optimal
-actual-current approximation and growing-band criterion await fresh proof review.
-No physical axiom, empirical prediction, full TOE closure, main merge, retained
-audit verdict or editable prompt change is made by this checkpoint.
+All results remain conditional on the supplied one-dimensional free massive model, chosen state/scaling and precise embeddings. ENERGY exact state/time refinement is published for review. SHARP sharp normalized-current defect is an independently proof-checked partial-narrowing proposal; no formal no-go packet or retained verdict. Current-preserving construction and doubled/local high branch remain under final review.
+No physical axiom, empirical prediction, full TOE closure, main merge, audit verdict or editable prompt change.

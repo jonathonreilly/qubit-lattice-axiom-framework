@@ -1,6 +1,6 @@
 {
- "edge_count": 15419,
- "node_count": 6871,
+ "edge_count": 15421,
+ "node_count": 6873,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3473,6 +3473,14 @@
   "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "compact_detector_convergence_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "63f1406c1a97",
+   "out_degree": 1
+  },
+  "compact_detector_exhaustion_reduction_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "63f1406c1a97",
+   "out_degree": 1
   },
   "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14": {
    "deps_hash": "aa5ce5e499a9",

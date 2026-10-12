@@ -1,0 +1,157 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "label": "E",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md",
+      "source_sha256": "c4af4f5e9823e2cd1cfb79a0f17498fb2ffe117cb24c90bc572b888e31ae08c2",
+      "preserved_source": "evidence/SCATTERING_EXHAUSTION_NEXT_OBLIGATION.md.gz",
+      "edits": [
+        {
+          "before": "# Full-GNS scattering exhaustion: the next conditional obligation",
+          "after": "---\nclaim_id: compact_detector_exhaustion_reduction_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"Under the supplied direct compact-creator conditions and a unique gapped vacuum, full operator filtering gives the scalar detector source reduction; propagation convergence and a no-common-kernel condition imply full-GNS exhaustion. This theorem does not prove the no-common-kernel condition or physical realization.\"\nupstream_dependencies:\n  - compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11\nrunner: scripts/compact_detector_exhaustion_reduction_2026_10_12.py\nactual_current_surface_status: conditional-support\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# Full-GNS scattering exhaustion: the next conditional obligation",
+          "reason": "Register the exact conditional theorem, finite control and actual upstream creator premise."
+        },
+        {
+          "before": "Status: bounded author derivation and primary-source route assessment, 2026-10-12. No asymptotic-completeness premise is added. The new results are the detector/source reduction in \u00a74 and the conditional exhaustion criterion in \u00a75. The two estimates named there remain unproved. This is neither an audit verdict nor a local-UHF no-go theorem.",
+          "after": "Status: conditional-support, bounded theorem and primary-source route assessment, 2026-10-12. A separate complete E1\u2013E18 reconstruction found no required correction. The results are the detector/source reduction in \u00a74 and the conditional exhaustion criterion in \u00a75. This proof treats PC and ND as explicit additional conditions. The sibling theorem `COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md` now supplies PC for its stated admissible arrangements; ND remains open. No asymptotic-completeness premise or audit verdict is added, and no local-UHF no-go theorem is asserted.",
+          "reason": "Record the completed E review and current PC status without changing the conditional implication or creating a reverse proof dependency."
+        },
+        {
+          "before": "All files below are unchanged external sources under `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011` (abbreviated S). Copies, primary PDFs and page texts are in `scattering_exhaustion_next/sources/`.",
+          "after": "S denotes the original external research collection. The [complete detector milestone packet](../.claude/science/physics-loops/toe-compact-detector-convergence-20261012/) preserves the complete frozen note, repository sources, author and separate review evidence. EVIDENCE_MAP.json records recovery paths and external primary URLs/hashes; full third-party papers and page extractions remain external. The in-branch [compact-creator theorem](COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md) contains the complete upstream proof and its reviewed unique-vacuum/gap clarification.",
+          "reason": "Make source recovery and the actual creator dependency portable."
+        },
+        {
+          "before": "PROVISIONAL author extension; its fresh independent review was pending at this task's start",
+          "after": "Separate Fock review completed; the historical author freeze predates it. Its isometry conclusion is not an input here",
+          "reason": "Refresh Fock review metadata while retaining the absence of that proof dependency."
+        },
+        {
+          "before": "not its provisional isometry conclusion",
+          "after": "not its isometry conclusion",
+          "reason": "Refresh source-state wording only; no equation or proof condition changes."
+        },
+        {
+          "before": "adding the unproved (PC)",
+          "after": "adding the explicit (PC) condition",
+          "reason": "Refresh source-state wording only; no equation or proof condition changes."
+        },
+        {
+          "before": "The provisional Fock theorem identifies",
+          "after": "The separately checked Fock theorem identifies",
+          "reason": "Refresh source-state wording only; no equation or proof condition changes."
+        },
+        {
+          "before": "independently of the provisional Fock extension",
+          "after": "without using the Fock extension",
+          "reason": "Refresh source-state wording only; no equation or proof condition changes."
+        },
+        {
+          "before": "the provisional Fock note's quantitative kernel induction",
+          "after": "the Fock note's quantitative kernel induction",
+          "reason": "Refresh source-state wording only; no equation or proof condition changes."
+        },
+        {
+          "before": "independent of the still-provisional Fock-isometry identification",
+          "after": "independent of the Fock-isometry identification",
+          "reason": "Refresh source-state wording only; no equation or proof condition changes."
+        },
+        {
+          "before": "Such products are dense in the tensor product of the",
+          "after": "The linear span of such products is dense in the tensor product of the",
+          "reason": "Make the conventional linear-span density statement explicit."
+        },
+        {
+          "before": "The result is therefore a source-bound conditional route with one completed preliminary lemma and an exact terminal estimate. Full-GNS exhaustion remains a separate unproved obligation here.",
+          "after": "The result is therefore a source-bound conditional route with one completed preliminary lemma and an exact terminal estimate. Full-GNS exhaustion remains a separate unproved obligation here.\n\nThe separate review report has SHA256 `8c9f7bb60724982ce7580a8b5688d8b61572ea008d92305f057d3f9b7a4e735d`; its complete 337-line reconstruction was frozen before new author controls. Full evidence roles, original reading limits, operational failures and exact source bindings are preserved in the milestone packet. The [finite reduction control](../scripts/compact_detector_exhaustion_reduction_2026_10_12.py) retains the complete original helper. Its five records and distinct independent finite controls are not continuum proofs. Root is a contributor, not the separate reviewer. PUBLICATION_EDITS.json and reconstruct.py recover the whole source and control. DELIVERY_CHECKS.md states the scoped publication verification; no Lean certificate or retained status is claimed.",
+          "reason": "Record the finished complete source check and portable finite evidence."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/COMPACT_DETECTOR_EXHAUSTION_REDUCTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "81c0775856ba318b7d6792c39fa3cc3580c7a92a1cd17d0cb03b27d4dc0428d8"
+    },
+    {
+      "kind": "note",
+      "label": "PC",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_DETECTOR_CONVERGENCE_PROBE.md",
+      "source_sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64",
+      "preserved_source": "evidence/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Compact detector convergence from a reversed scalar Cook integral",
+          "after": "---\nclaim_id: compact_detector_convergence_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For each fixed admissible arrangement of supplied direct compact creators with separated convex velocity regions, the scalar detector amplitude converges in norm on every finite-energy vector. With the exact vacuum remainder and unique vacuum, positive detector operators converge strongly with range in the constructed scattering space. No common-kernel triviality, exhaustion or physical realization follows.\"\nupstream_dependencies:\n  - compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11\nrunner: scripts/compact_detector_convergence_2026_10_12.py\nactual_current_surface_status: conditional-support\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# Compact detector convergence from a reversed scalar Cook integral",
+          "reason": "Register the exact conditional theorem, finite control and actual upstream creator premise."
+        },
+        {
+          "before": "**Author status:** conditional support; independent review pending. **Trace:** proposed closure",
+          "after": "**Status:** conditional-support; complete separate C1\u2013C28 reconstruction found no required correction. **Trace:** closure",
+          "reason": "Record the completed focused source review."
+        },
+        {
+          "before": "Write S for `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011`. All predecessor files remain unchanged.",
+          "after": "S denotes the original research collection, preserved through the [complete detector milestone packet](../.claude/science/physics-loops/toe-compact-detector-convergence-20261012/). EVIDENCE_MAP.json binds the complete original proof, source ledgers, author evidence and separate review. The in-branch [compact-creator theorem](COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md) supplies the direct creator construction. This note rederives the preliminary reductions it needs; the sibling exhaustion-reduction note states the downstream conditional criterion. Full third-party papers and page extractions remain external at their recorded identities.",
+          "reason": "Make source paths portable and state the exact proof dependency."
+        },
+        {
+          "before": "Smooth product functions on the torus are dense.",
+          "after": "The linear span of smooth product functions on the torus is dense.",
+          "reason": "Use the precise linear-span density wording identified in the separate review."
+        },
+        {
+          "before": "extends convergence from that dense product domain",
+          "after": "extends convergence from that dense linear span",
+          "reason": "Keep the same precise density wording in the extension step."
+        },
+        {
+          "before": "This author result needs a focused independent reconstruction before substantial downstream reuse.",
+          "after": "The complete proof has now received that separate reconstruction. The report `2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0` and its pre-author-evidence reconstruction/control freeze `4d75d0893cc6fdddb207dd31ddd137359874183b2f8b8b8878382c21adaa8702` are preserved in the milestone packet. The reviewer checked the full analytic argument, used a distinct two-time Fourier-kernel control, then reproduced the author output and rejected six actual copied-code defects. Finite Schur sums have no uncomputed-tail certificate; the written all-scale estimate establishes convergence. Root supplied the mechanism and is a contributor, not an independent reviewer.",
+          "reason": "Replace the completed review obligation with exact evidence and its scope."
+        },
+        {
+          "before": "Only this note and `compact_detector_convergence/` were written. The single current recovery surface is `compact_detector_convergence/CHECKPOINT.md`; exact input/output hashes are in its freeze receipt. Editable prompt files changed: none. No repository, Git, PR, audit, axiom, model or other-chat mutation or subdelegation was performed. The inherited model/reasoning setting and fixed deadline, 2026-10-12 16:00:52 UTC, were preserved.",
+          "after": "The [finite detector control](../scripts/compact_detector_convergence_2026_10_12.py) retains the entire original helper. The milestone packet preserves its complete source, frozen recovery record, separate proof reconstruction, all controls and failures. PUBLICATION_EDITS.json and reconstruct.py recover every note and primary byte; DELIVERY_CHECKS.md states the publication checks and remaining audit gates. No Lean certificate, physical realization, retained status, applied audit verdict, editable-prompt change or physical-axiom change is claimed. The live campaign checkpoint remains in `toe-dynamics-bridge-20261009`, with fixed deadline 2026-10-12 16:00:52 UTC.",
+          "reason": "Provide publication recovery and honest verification boundaries; preserve original operational history as frozen evidence."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "617ad9fcd7d8884e8a9f04e01dab252e20cf3f3c70dd9f65a73446926d40478d"
+    },
+    {
+      "kind": "primary",
+      "label": "E",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/scattering_exhaustion_next/check_reduction_algebra.py",
+      "source_sha256": "674259f169591f92feba1bb2dceb94e8e90ec070336c856cad018ebd802e75b7",
+      "preserved_source": "evidence/scattering_exhaustion_next/check_reduction_algebra.py.gz",
+      "edits": [
+        {
+          "before": "from collections import Counter\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/COMPACT_DETECTOR_EXHAUSTION_REDUCTION_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\nfrom collections import Counter\n",
+          "reason": "Declare exact inputs/timeout and reject optimized assertions; all original calculations unchanged."
+        }
+      ],
+      "appended_text": "\nprint(\"per_element: complete original finite algebra controls checked\")\nprint(\"per_site: finite lattice fixtures only; no infinite-volume inference\")\nprint(\"per_mode: Fourier and source signs checked at the stated finite scope\")\nprint(\"per_block: ordered products and finite projections checked\")\nprint(\"lattice_wide: checked and not executed \u2014 convergence and exhaustion require the written proofs\")\nprint(\"TOTAL: PASS=5 FAIL=0\")\nprint(\"SCOPE: Finite ordered-word, periodic spin-chain, residual-window and resolvent algebra only; PC, ND and physical completeness require separate analytic arguments.\")\n",
+      "publication_path": "scripts/compact_detector_exhaustion_reduction_2026_10_12.py",
+      "publication_sha256": "384ccea12cde77c76a4c67a74261939994fcc685e247c0b0e53ee0012c38c4e4"
+    },
+    {
+      "kind": "primary",
+      "label": "PC",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_detector_convergence/check_detector_algebra.py",
+      "source_sha256": "e056da90bf5526e2af387df869a2b86f6dda2300408ea0054ee3bd481954bffb",
+      "preserved_source": "evidence/compact_detector_convergence/check_detector_algebra.py.gz",
+      "edits": [
+        {
+          "before": "from fractions import Fraction as F\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\nfrom fractions import Fraction as F\n",
+          "reason": "Declare exact inputs/timeout and reject optimized assertions; all original calculations unchanged."
+        }
+      ],
+      "appended_text": "\nprint(\"per_element: complete original finite algebra controls checked\")\nprint(\"per_site: finite lattice fixtures only; no infinite-volume inference\")\nprint(\"per_mode: Fourier and source signs checked at the stated finite scope\")\nprint(\"per_block: ordered products and finite projections checked\")\nprint(\"lattice_wide: checked and not executed \u2014 convergence and exhaustion require the written proofs\")\nprint(\"TOTAL: PASS=6 FAIL=0\")\nprint(\"SCOPE: Finite Fourier, ordering, convex-geometry and source-typo controls only; infinite-lattice kernel decay and detector convergence rest on C1-C28.\")\n",
+      "publication_path": "scripts/compact_detector_convergence_2026_10_12.py",
+      "publication_sha256": "2bea6e21ebf7366a1184de75513dec30bbe493a6d6c289471ba7db7b76b1c13d"
+    }
+  ]
+}

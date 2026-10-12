@@ -1204,3 +1204,21 @@ the cap of the other ratio span has partner rank 10 at every chirality
 coefficient. The swapped-dot coordinate is 1 or -1 and the scaled
 coordinate is 6. Both swapped-dot generators plus three times one cap
 stay open. The ten-kernel coefficient span stays open.
+
+## Cycle 70
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every chirality coefficient on the sum of one swapped-dot generator and three times the cap of one ratio span plus the cap of the other ratio span has partner rank 10. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On every ordered height pair, both swapped-dot generators plus three
+times the cap of one ratio span have partner rank 10 at every chirality
+coefficient. The swapped-dot coordinate is 0 and the scaled coordinate
+is 6. One swapped-dot generator plus three times one cap and the other
+cap stays open. The ten-kernel coefficient span stays open.

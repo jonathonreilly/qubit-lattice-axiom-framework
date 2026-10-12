@@ -443,3 +443,15 @@ on every pair. Both swapped-dot generators plus three times the cap of
 one ratio span are not in this count. The same-span and other-span
 triples do not share a partner-rank mechanism. The ten-kernel
 coefficient span is not classified.
+Cycle 70 shows that both swapped-dot generators plus three times the
+cap of one ratio span have partner rank 10 at every chirality
+coefficient on every ordered height pair. The swapped-dot coordinate is
+0 and the scaled coordinate is 6. The thrice-plus sum has
+transverse-sign coordinate -3. The thrice-minus sum has transverse-sign
+coordinate 3. Each sum lies in neither ratio span and outside the even
+space. The two sums are linearly independent. The maximal-minor gcd is
+a nonzero constant. The thrice-plus pivot gcd has degree 7 on every
+pair. The thrice-minus pivot gcd has degree 3 on (1, 2), (2, 1), and
+(3, 1), and degree 7 on the other three pairs. One swapped-dot
+generator plus three times one cap and the other cap is not in this
+count. The ten-kernel coefficient span is not classified.

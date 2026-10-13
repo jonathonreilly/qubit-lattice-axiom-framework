@@ -9408,3 +9408,67 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - the static-field question;
     - a pulsar row for the m_f residual.
   - **Proposed tests** (not registered): F6 (the Higgs mass² strain Hessian under SF), NF-1 (staggered control), G1 (Earth closure budget), the cone/trace test, and G-Λ (gluonic).
+
+**F6. The Higgs mass² strain Hessian under the root's SF law.** (Pre-registered 2026-10-13, at Jon's request: "run the Higgs mass test and the staggered control in parallel". Spec from panel F, pheno T4.)
+- **Plain question.**
+  - F5 and panel F find that P-R19-34a covers only the fermion additive mass.
+  - The Higgs mass² is quadratically sensitive to the grid. Its counterterm is fixed at zero strain (`rR19-31:62`), and its strain response is unprotected (`rR19-31:113`).
+  - Under the root's SF law, what is ∂²_t Σ_H(P = 0; t)·a²? What does it imply for Higgs-vev shifts under real strains?
+- **Setting.**
+  - F1's law: B1, Psym, U = 1, at the R18-9 root. Photon Gph(2.9435). Scalar counterterm fixed at t = 0.
+  - Loops:
+    1. the U(1) gauge loop, as a control against `rR19-31:124` (−0.532 e²/a² under H-cov);
+    2. the SU(2)×U(1) group factor;
+    3. the top-Yukawa loop on the D1 edge;
+    4. the Higgs self-coupling loop.
+  - The scalar band follows R9-9/R19-31's scalar edge (identify it, file:line).
+  - Memory: ≤ 1 GB; k-grids in slabs.
+- **Prior art (count once):**
+  - F1, F5 and panel F (pheno T4, condensed-matter T6);
+  - R19-31 and its verdict;
+  - R19-21 and its verdict (the Higgs-shifted vacuum channel);
+  - comparator: the hierarchy problem / quadratic sensitivity (RECALLED).
+- **Probes.**
+  - (a) The four Hessians, converged, with Ward and gauge-parameter checks.
+  - (b) Convert: δv/v = ∂²_tΣ_H/(2m_H²) per t².
+  - (c) Read against observation:
+    - clocks, using the NANOGrav 15-yr background (A = 2.4e-15, γ = 13/3, f_min = 1/(16 yr); branch 1/(30 yr)) against 3.6e-17/yr;
+    - F2's Earth row, through the Higgs-induced vacuum stiffness;
+    - the fermion channel through the same rows, as a control (panel expectation: ~2e8).
+  - (d) Is it covered by:
+    - any registered clause, (S_loc) or (Σ)?
+    - P-R19-34a′ (every mass parameter re-set on every uniformly strained law)?
+- **FIXED readings.**
+  - **SCALAR-COVERED:** a registered clause makes Σ_H strain-covariant (cite it).
+  - **SCALAR-HAZARD:** uncovered, and the predicted rate exceeds an observational bound.
+  - **SCALAR-SAFE:** the Hessian is below tolerance in every branch.
+  - **OPEN:** otherwise.
+- **Expectation.** SCALAR-HAZARD by ≥ 1e20. If so, the single primitive of panel F §3 is needed.
+
+**NF-1. The staggered-fermion strain control.** (Pre-registered 2026-10-13. Spec from panel F, skeptic and condensed-matter lenses.)
+- **Plain question.** Does a staggered (one-mode-per-site) fermion keep an exact remnant chiral symmetry U(1)_ε under the SF strain and the gauge links, so that the additive-mass strain Hessian vanishes identically with no rule? And what does it cost, in tastes and in the root's rows?
+- **Setting.**
+  - A Kogut–Susskind fermion built from the root's own odd box symbol s(k) at b_f = 0.909103708, r = 0 (s(k + π) = −s(k), per the skeptic's check).
+  - Photon Gph(2.9435), Psym links, the SF flow of E² = Σ s(k_j)², one-loop U(1), Feynman gauge.
+  - Branches:
+    - F3's dressing G₁, which does not commute with ε, as a control;
+    - an explicitly ε-breaking term, as a control.
+  - Memory: ≤ 1 GB.
+- **Prior art (count once):**
+  - panel F (condensed-matter T4: the proof that U(1)_ε survives SF; the skeptic's NF-1);
+  - R19-34 (`:113`);
+  - F1 and F3;
+  - R9-1 (the Z-width taste exclusion);
+  - R18-9 and R19-12 (rows);
+  - comparator: staggered fermions and the taste problem (RECALLED).
+- **Probes.**
+  - (a) Prove or disprove that U(1)_ε survives SF strain plus Psym links.
+  - (b) The additive-mass Hessian. Expected exactly 0; the controls must be nonzero.
+  - (c) The multiplicative channel, sized on F2's Earth row and IGM rows.
+  - (d) The taste count against the 22.5-Dirac content and R9-1. The four cone/shear rows for the staggered edge: can the root be re-solved with one fewer knob? Estimate if a full solve does not fit.
+- **FIXED readings.**
+  - **NF-ZERO:** the symmetry is exact, the Hessian ≡ 0, the residual is below F2's Earth row, and no taste wall applies.
+  - **NF-TASTE-WALL:** NF-ZERO on strain, but the taste content conflicts with the SM count or R9-1.
+  - **NF-BROKEN:** the symmetry breaks, and the Hessian is ≥ 1e-3 e².
+  - **OPEN:** otherwise.
+- **Expectation.** NF-ZERO on strain, then NF-TASTE-WALL overall.

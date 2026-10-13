@@ -1,0 +1,4 @@
+(1) minimal integer-invariant pattern: weight 20 (Optimization terminated successfully. (HiGHS Status 7: Optimal))
+(2) signed rotations: 6 distinct copies mod translation and overall sign; all G delta = 0: True
+(3) L=4: gamma=0 start configuration: sum n = 216, G n = 0: True, in trivial coset: True (122s)
+(4) L=4 uniform gamma=0 MC: 2000 sweeps x 384 moves, acceptance 0.00e+00, distinct measured states 1 of 2000, gamma=0 preserved: True (122s)

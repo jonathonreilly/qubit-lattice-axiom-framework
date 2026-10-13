@@ -1,0 +1,8 @@
+patterns: 4 (cube copies: 1, mu8 copies: 3)
+L=2: slots 48, edges 24, rank_F2 G = 17, dim ker = 31, dim span(moves) = 10, codim = 21, all moves invariant: True
+L=3: slots 162, edges 81, rank_F2 G = 78, dim ker = 84, dim span(moves) = 78, codim = 6, all moves invariant: True
+L=4: slots 384, edges 192, rank_F2 G = 185, dim ker = 199, dim span(moves) = 178, codim = 21, all moves invariant: True
+   cube flip from n=0: charged edges = 6, sum gamma^2 = 6, integer Gn values [-2, 2]
+   mu8 flip from n=0: charged edges = 4, sum gamma^2 = 4, integer Gn values [-2, 2]
+L=5: slots 750, edges 375, rank_F2 G = 372, dim ker = 378, dim span(moves) = 372, codim = 6, all moves invariant: True
+L=6: slots 1296, edges 648, rank_F2 G = 641, dim ker = 655, dim span(moves) = 634, codim = 21, all moves invariant: True

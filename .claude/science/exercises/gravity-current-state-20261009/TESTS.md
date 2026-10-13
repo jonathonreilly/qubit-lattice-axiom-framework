@@ -6661,3 +6661,20 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R17-13a (one shape tuning per Wilson-Dirac edge) and P-R17-13b.
 
   Referee running.
+- **R18-1 (Z₂ pinch point): worker reading SCREENED for (a)–(c); (d) Theorem Z₀ offered as GAP-CLOSED.** A referee is required. The method is pre-stated in `agents/C5_R18-1_method.md`.
+  - **The ensemble.** The RK ensemble exp(−βU Σγ²) is shift-action covariant (it needs P112). Detailed balance holds, and the L = 2 enumeration agrees. The registered chain is frozen at βU = ∞ (proved).
+  - **The measurement.** Pinch ratio ρ = S_xz(k∥z)/S_xz(k∥y); the Gaussian control passes.
+  - **The result.** ξ(βU) is finite and independent of L:
+
+    | βU | ξ (lattice units) |
+    |---|---|
+    | 0.5 | ≈ 0.3 |
+    | 2 | ≈ 1.2 |
+    | 4 | ≈ 4 (L = 6–10) |
+
+    This is Debye screening by γ-charges; S_γ/q² stays finite.
+  - **Theorem Z₀.** Assume Lieb–Robinson bounds, a unique symmetric ground state, an E⊕T₂ readout and a strict vector gap. Then the pinch-point jump equals the static T₂ weight below the gap, in every f-sum class. So gapless TT branches visible to the readout, plus strict V/S gaps, force a pinch point.
+  - **Consequence.** Finite fugacity screens. The static window needs exact emergence, at a critical point or phase boundary, or an ensemble outside the RK family. This sharpens P96.
+  - **New price:** P-r18-1a.
+
+  Referee running.

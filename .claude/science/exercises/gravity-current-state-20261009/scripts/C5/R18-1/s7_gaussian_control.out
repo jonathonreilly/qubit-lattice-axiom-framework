@@ -1,0 +1,21 @@
+L= 6 lam=  0.3: r(qmin)=1.0256  xi^2(q1)=-0.025 xi^2(q2)=0.142  xi(q1)/L=nan
+L= 6 lam=  3.0: r(qmin)=0.3333  xi^2(q1)=2.0 xi^2(q2)=2.167  xi(q1)/L=0.236
+L= 6 lam= 30.0: r(qmin)=0.0430  xi^2(q1)=22.25 xi^2(q2)=22.417  xi(q1)/L=0.786
+L= 6 lam=  inf: r(qmin)=0.0000  xi^2(q1)=inf xi^2(q2)=inf  xi(q1)/L=inf
+L= 8 lam=  0.3: r(qmin)=1.1340  xi^2(q1)=-0.202 xi^2(q2)=0.1  xi(q1)/L=nan
+L= 8 lam=  3.0: r(qmin)=0.4836  xi^2(q1)=1.823 xi^2(q2)=2.125  xi(q1)/L=0.169
+L= 8 lam= 30.0: r(qmin)=0.0718  xi^2(q1)=22.073 xi^2(q2)=22.375  xi(q1)/L=0.587
+L= 8 lam=  inf: r(qmin)=0.0000  xi^2(q1)=inf xi^2(q2)=inf  xi(q1)/L=inf
+L=12 lam=  0.3: r(qmin)=1.2341  xi^2(q1)=-0.708 xi^2(q2)=-0.025  xi(q1)/L=nan
+L=12 lam=  3.0: r(qmin)=0.7392  xi^2(q1)=1.317 xi^2(q2)=2.0  xi(q1)/L=0.096
+L=12 lam= 30.0: r(qmin)=0.1475  xi^2(q1)=21.567 xi^2(q2)=22.25  xi(q1)/L=0.387
+L=12 lam=  inf: r(qmin)=0.0000  xi^2(q1)=inf xi^2(q2)=inf  xi(q1)/L=inf
+L=16 lam=  0.3: r(qmin)=1.2751  xi^2(q1)=-1.417 xi^2(q2)=-0.202  xi(q1)/L=nan
+L=16 lam=  3.0: r(qmin)=0.9153  xi^2(q1)=0.608 xi^2(q2)=1.823  xi(q1)/L=0.049
+L=16 lam= 30.0: r(qmin)=0.2395  xi^2(q1)=20.858 xi^2(q2)=22.073  xi(q1)/L=0.285
+L=16 lam=  inf: r(qmin)=0.0000  xi^2(q1)=inf xi^2(q2)=inf  xi(q1)/L=inf
+L=32 lam=  0.3: r(qmin)=1.3181  xi^2(q1)=-6.28 xi^2(q2)=-1.417  xi(q1)/L=nan
+L=32 lam=  3.0: r(qmin)=1.1955  xi^2(q1)=-4.255 xi^2(q2)=0.608  xi(q1)/L=nan
+L=32 lam= 30.0: r(qmin)=0.6193  xi^2(q1)=15.995 xi^2(q2)=20.858  xi(q1)/L=0.125
+L=32 lam=  inf: r(qmin)=0.0000  xi^2(q1)=inf xi^2(q2)=inf  xi(q1)/L=inf
+symbol check along z: |G(k)| rows vs 2|sin(k/2)| = [[0.0, 0.0, 0.0, 0.0, 0.0, 0.2989], [0.0, 0.0, 0.0, 0.0, 0.2989, 0.0], [0.0, 0.0, 0.2989, 0.0, 0.0, 0.0]] 0.2989

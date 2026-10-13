@@ -1,0 +1,12 @@
+(i) cube: 64 sign lifts, integer-invariant: 0  -> every cube flip from a gamma=0 state changes gamma
+(i) mu8: 256 sign lifts, integer-invariant: 0  -> every mu8 flip from a gamma=0 state changes gamma
+L=3: trivial-coset gamma=0 configurations found (excluding 0 and all-ones by the sum bound): 4 distinct in 4 MILPs (45s)
+   sum n = 78 ; densities by type [0.444 0.444 0.667 0.444 0.222 0.667] ; each type of line/plane (winding) form: [False, False, False, False, False, False] ; G n = 0: True
+   sum n = 84 ; densities by type [0.222 0.444 0.667 0.444 0.667 0.667] ; each type of line/plane (winding) form: [False, False, False, False, False, False] ; G n = 0: True
+   sum n = 72 ; densities by type [0.444 0.444 0.444 0.222 0.444 0.667] ; each type of line/plane (winding) form: [False, False, False, False, False, False] ; G n = 0: True
+   sum n = 66 ; densities by type [0.222 0.444 0.444 0.444 0.222 0.667] ; each type of line/plane (winding) form: [False, False, False, False, False, False] ; G n = 0: True
+  L=4 trial 3: Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
+L=4: trivial-coset gamma=0 configurations found (excluding 0 and all-ones by the sum bound): 3 distinct in 4 MILPs (100s)
+   sum n = 104 ; densities by type [0.25  0.125 0.25  0.25  0.25  0.5  ] ; each type of line/plane (winding) form: [True, True, True, False, True, False] ; G n = 0: True
+   sum n = 8 ; densities by type [0.    0.125 0.    0.    0.    0.   ] ; each type of line/plane (winding) form: [True, True, True, True, True, True] ; G n = 0: True
+   sum n = 376 ; densities by type [1.    0.875 1.    1.    1.    1.   ] ; each type of line/plane (winding) form: [True, True, True, True, True, True] ; G n = 0: True

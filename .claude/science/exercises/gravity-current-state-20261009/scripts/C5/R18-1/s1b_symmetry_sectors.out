@@ -1,0 +1,10 @@
+rotations about a site: 24
+weight invariant on 5 random coset states: natural action 6/24, shift action 24/24
+image of n=0 lies in span(moves) (trivial coset preserved): natural 24/24, shift 24/24
+F_all in span(moves): True ; W(F_all n) == W(n): True
+  all-ones on slot type (0, 0) in span(moves): True
+  all-ones on slot type (1, 1) in span(moves): True
+  all-ones on slot type (2, 2) in span(moves): True
+  all-ones on slot type (0, 1) in span(moves): True
+  all-ones on slot type (1, 2) in span(moves): True
+  all-ones on slot type (0, 2) in span(moves): True

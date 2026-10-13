@@ -1,0 +1,4 @@
+L=2: span dim 10
+bU=0.0: exact <E> = 6.0000, MC <E> = 5.9916 +- 0.0136 ; max |hist diff| = 0.0049 ; states visited weight-support 7
+bU=1.0: exact <E> = 0.2744, MC <E> = 0.2600 +- 0.0068 ; max |hist diff| = 0.0036 ; states visited weight-support 7
+bU=2.0: exact <E> = 0.0045, MC <E> = 0.0040 +- 0.0009 ; max |hist diff| = 0.0001 ; states visited weight-support 7

@@ -7347,3 +7347,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **EXACT-IMPOSSIBLE:** a refereed proof that no exactly conserved lattice stress exists in the stated class. This would be W15 again.
   - **OPEN:** otherwise.
 - **Expectation.** EXACT-IMPOSSIBLE for the translation part (T_pf / W15 already forbids an exact Ward identity for periodic bands). So "exact W1" is not available on any grid set. The O(q) convention is then the best attainable, and it is itself a price.
+- **R19-2 (set A noise in FRW): worker reading OPEN.**
+  - **The overshoot candidate is refuted** for the registered four-channel set. NOISE-IS-Λ is not met. A NEITHER candidate is offered for τ_c only.
+  - **Theorem I₀ (main correction).** R18-11 and its referee omitted the quasi-static TT stress. With all four channels at the complete least-decoherence split and a = 2:
+    - the averaged noise source vanishes on every spacelike mode;
+    - reading (U) gives zero active density.
+    - So the large noise does not gravitate; only a small remainder from near the cone does, and its sign depends on how that band is recorded (P-r192c).
+  - **Lemma F0.** The FRW lift of the conserving projection is law data:
+    - Lift A gives w → −1;
+    - Lift B gives w = −1.23 and a de Sitter growing mode.
+  - **Matches with ρ_Λ:**
+    - complete split with the floor up to the cone: cτ = 23 µm for any ℓ, which lies outside R15-2's window;
+    - otherwise a match needs a fit or a tuning.
+  - **Corrections to R18-11:**
+    - its flat (P) value and Mercury cut belong only to the TT-omitted set;
+    - the 3.65 µm match assumed u_V ≈ 0;
+    - its ρ_GW factor.
+  - **Prices:** P-r192a (FRW lift), P-r192b (complete split), P-r192c (near-cone recording).
+
+  Referee running.

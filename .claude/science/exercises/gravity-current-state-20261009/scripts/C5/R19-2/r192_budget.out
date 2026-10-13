@@ -1,0 +1,52 @@
+[D0] rho_Lambda = 5.940380e-27 kg/m^3 (5.338947e-10 J/m^3); u0/rho_L at the corner (5e-6, 1.49e-3) = 1.170953060 [vR18-11 referee: 1.170953060]
+     direct int w = 1.164371e-05 vs u0 formula 1.164371e-05 (F tail |y|>60 omitted: ~1e-8)
+
+[D1] complete split (all channels at the floor up to the cone): spacelike modes cancel exactly (r192_split [B2]);
+     timelike modes give (tau_00, tau_kk) = (4, -4) u per mode -> lift A: rho_n = (4/3) U_IR > 0, w = -1.
+     closed form l << c tau: U_IR = 11 hbar c/(96 pi^3 (c tau)^4); check exact/closed at l = 1e-9, c tau = 1e-4: 0.99999772
+     match (4/3) U_IR = rho_L (l -> 0): c tau = 2.324144e-05 m
+     l = 4e-10 m: (4/3)U_IR/rho_L at ceiling 1.49e-3 = 5.907e-08 ; strict (c tau = l) = 2.880e+18 ; match at c tau = 2.324143e-05 m (c tau/l = 5.81e+04)
+     l = 1e-08 m: (4/3)U_IR/rho_L at ceiling 1.49e-3 = 5.920e-08 ; strict (c tau = l) = 7.372e+12 ; match at c tau = 2.324141e-05 m (c tau/l = 2.32e+03)
+     l = 1e-06 m: (4/3)U_IR/rho_L at ceiling 1.49e-3 = 5.920e-08 ; strict (c tau = l) = 7.372e+04 ; match at c tau = 2.314020e-05 m (c tau/l = 23.1)
+     l = 5e-06 m: (4/3)U_IR/rho_L at ceiling 1.49e-3 = 5.919e-08 ; strict (c tau = l) = 1.180e+02 ; match at c tau = 2.198586e-05 m (c tau/l = 4.4)
+     R15-2's tau_c window lower end (TT budget under its bounded near-cone reading, rR15-2:220): min over l = 1.21e-04 m > 2.32e-05 m
+
+[D2] near-cone TT radiation if the S block is NOT at its floor near the cone (R15-2's bounded interpolation, a reading):
+     the cancellation fails in the cone band; the TT on-shell content (rho_GW, R15-2 4.3, exact weight, ln(c k t_H) + c1)
+     contributes p = rho_GW/3, i.e. lift A rho_n -> -rho_GW/3 (bounded S-block band terms not included: reading).
+     l = 5e-06, c tau = 1.490e-03: rho_GW/rho_L = 3.623e-05 ; -rho_GW/3 vs +(4/3)U_IR: -1.208e-05 vs 5.919e-08 rho_L
+     l = 5e-06, c tau = 1.210e-04: rho_GW/rho_L = 8.422e-01 ; -rho_GW/3 vs +(4/3)U_IR: -2.807e-01 vs 1.339e-03 rho_L
+     l = 1e-08, c tau = 5.200e-04: rho_GW/rho_L = 2.481e-03 ; -rho_GW/3 vs +(4/3)U_IR: -8.270e-04 vs 3.991e-06 rho_L
+     l = 1e-09, c tau = 1.130e-03: rho_GW/rho_L = 1.100e-04 ; -rho_GW/3 vs +(4/3)U_IR: -3.667e-05 vs 1.789e-07 rho_L
+     l = 1e-09, c tau = 2.324e-05: rho_GW/rho_L = 6.497e+02 ; -rho_GW/3 vs +(4/3)U_IR: -2.166e+02 vs 1.000e+00 rho_L
+     l = 5e-06, c tau = 2.324e-05: rho_GW/rho_L = 4.764e+02 ; -rho_GW/3 vs +(4/3)U_IR: -1.588e+02 vs 8.142e-01 rho_L
+
+[D3] R15-2's printed S-block choice p2 = Delta (rho, T_perp, V, TT at floors), quasi-static bulk:
+     tau_kk/u0 = -6 x^2 - 13 x^4 + ... (r192_split [B2]) -> lift A rho_n = 2<x^2> u0 + O(x^4); <x^2> = 2 (l/c tau)^2 <y^2>, <y^2> = 17/21 (exact)
+     <y^2> numeric = 0.80952381 (17/21 = 0.80952381)
+     l = 4e-10: bulk rho_n/rho_L at ceiling = 5.337e-01 ; bulk match at c tau = 1.209e-03 m ; R15-2 lower end 1.53e-03 m
+     l = 1e-09: bulk rho_n/rho_L at ceiling = 2.135e-01 ; bulk match at c tau = 8.905e-04 m ; R15-2 lower end 1.13e-03 m
+     l = 1e-08: bulk rho_n/rho_L at ceiling = 2.135e-02 ; bulk match at c tau = 4.133e-04 m ; R15-2 lower end 5.20e-04 m
+     l = 1e-06: bulk rho_n/rho_L at ceiling = 2.135e-04 ; bulk match at c tau = 8.905e-05 m ; R15-2 lower end 1.40e-04 m
+     l = 5e-06: bulk rho_n/rho_L at ceiling = 4.270e-05 ; bulk match at c tau = 5.208e-05 m ; R15-2 lower end 1.21e-04 m
+     at the ceiling the bulk match is at l = 2.135e-10 m (window starts at 4e-10 m)
+
+[D4] R18-11's channel set (TT omitted), floors, x -> 0: lift A rho_n = u0/(1 - r) >= u0 (r192_split [B2])
+     corner (5e-6, 1.49e-3): rho_n/rho_L >= 1.170953 ; |rho_act| = 2 rho_n >= 2.341906 rho_L  [reproduces R18-11's suggested formula with u_V = 2 u0]
+     with TT at its floor and r free: rho_n = (2r - 1)/(1 - r) u0; rho_n = rho_L needs r - 1/2 = y/(2(2 + y)), y = rho_L/u0:
+       l = 5e-06, c tau = 1.49e-03: required r = 0.649615214241 (relative precision of r - 1/2 ~ 8.5e-01)
+       l = 1e-06, c tau = 1.49e-03: required r = 0.501702195661 (relative precision of r - 1/2 ~ 6.8e-03)
+       l = 1e-08, c tau = 1.49e-03: required r = 0.500000001708 (relative precision of r - 1/2 ~ 6.8e-09)
+       l = 4e-10, c tau = 1.49e-03: required r = 0.5 (relative precision of r - 1/2 ~ 4.4e-13)
+       l = 5e-06, c tau = 5.00e-06: required r = 0.500715422189 (relative precision of r - 1/2 ~ 2.9e-03)
+
+[D5] gamma-trade (P-r15c, price only): channel noise scaled by gamma_S, gamma_V, gamma_TT at x -> 0, complete split:
+     lift A rho_n = (4 gamma_S + 2 gamma_V - 6 gamma_TT) u0 / 3  (zero at gamma_S = gamma_V = gamma_TT); a match needs the
+     channel imbalance tuned to rho_L/u0 (1e-19 .. 0.85 across the window), e.g. at the corner gamma_TT = 1 - rho_L/(2 u0) = 0.5730
+
+[D6] Mercury (|rho_act| < 9.286e-15 kg/m^3, vR16-14:11): FRW lift A |rho_act| = 2 rho_n; at any rho_n = rho_L match: 1.19e-26 kg/m^3 (margin 7.8e+11)
+     complete split, flat (P): rho_act = tau_kk = -4 U_IR; at the ceiling |rho_act| <= 1.05e-33 kg/m^3 for every l in the window
+     strict variant (c tau = l), complete split: |rho_act| = 4 U_IR(l, l)/c^2; Mercury crossing:
+       |rho_act| > Mercury bound for l < 1.9394e-08 m (strict)
+
+[D7] precision: lift A complete split fixes c tau alone: d(c tau)/(c tau) = (1/4) d rho_L/rho_L; l is not fixed.

@@ -1,0 +1,23 @@
+[C1] lift B on FRW, V^mu = (V(t),0,0,0):
+     K^00 = -2*Derivative(V(t), t)  ;  K^i_j = K^{ij} g_{jj} = 2*V(t)*Derivative(A(t), t)/A(t)  ; off-diagonal zero: True
+     => rho_K = -2 V',  p_K = 2 H V  (p_K = 0 only if H = 0: on Minkowski it reduces to R18-7's k = 0 content)
+     nabla_mu K^{mu 0} = -2*Derivative(V(t), (t, 2)) - 6*Derivative(A(t), t)*Derivative(V(t), t)/A(t) + 6*V(t)*Derivative(A(t), t)**2/A(t)**2   [should equal rho_K' + 3H(rho_K + p_K) = -2V'' - 6 H V' + 6 H^2 V]
+     check: True
+
+[C2] lift A (p_K = 0): late-time rho_n in units of -p_s (exact solution 1 - (a_on/a)^3; ramp correction O(ramp))
+     switch-on a = 1e-09: numeric rho_n(today)/(-p_s) = 1.000000000 ; exact 1.000000000 ; w_n today = -1.000000000
+     switch-on a = 0.001: numeric rho_n(today)/(-p_s) = 0.999999999 ; exact 0.999999999 ; w_n today = -1.000000001
+     switch-on a = 0.000908: numeric rho_n(today)/(-p_s) = 0.999999999 ; exact 0.999999999 ; w_n today = -1.000000001
+     switch-on a = 0.1: numeric rho_n(today)/(-p_s) = 0.998921541 ; exact 0.999000000 ; w_n today = -1.001001001
+     switch-on a = 0.5: numeric rho_n(today)/(-p_s) = 0.865192684 ; exact 0.875000000 ; w_n today = -1.142857143
+     remainder: rho_n + p_s = p_s (a_on/a)^3 (negative dust for p_s < 0); relative to matter it is constant = |p_s|/rho_m(a_on)
+
+[C3] lift B (covariant): -2V'' - 6HV' + 6H^2 V = -D_s, D_s = rho_s' + 3H(rho_s + p_s); rho_n = rho_s - 2V'; p_n = p_s + 2HV
+     switch-on a = 0.001: rho_n(today) = -2.3444 rho_s -3.3141 p_s ; p_n(today) = +2.7790 rho_s +3.7466 p_s
+       complete-split IR content (rho_s, p_s) = (4, -4/3) U_IR: rho_n = -4.9589 U_IR, w_n = -1.2343   [lift A gives rho_n = +1.3333 U_IR, w = -1]
+     switch-on a = 0.1: rho_n(today) = -1.3364 rho_s -2.1640 p_s ; p_n(today) = +1.6983 rho_s +2.5136 p_s
+       complete-split IR content (rho_s, p_s) = (4, -4/3) U_IR: rho_n = -2.4602 U_IR, w_n = -1.3990   [lift A gives rho_n = +1.3333 U_IR, w = -1]
+     pure de Sitter: homogeneous solutions V ~ exp(lambda H t), lambda = [-3.7913  0.7913] -> a growing mode exp(0.7913 H t) is excited by a zero start
+     constant-eps tracker (radiation, eps = 2.0): rho_n = rho_s + (rho_s + p_s) * -2.000
+     constant-eps tracker (matter, eps = 1.5): rho_n = rho_s + (rho_s + p_s) * -3.000
+     constant-eps tracker (de Sitter, eps = 0.0): rho_n = rho_s + (rho_s + p_s) * 0.000

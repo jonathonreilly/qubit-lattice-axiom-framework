@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/local_vector_matter_readout_2026_10_12.py
 runner_sha256: 50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e
-input_fingerprint_sha256: 95cc9b372e9731964a397d7cb90cd6697eb3d01ddcea33967047637efd02ac5b
+input_fingerprint_sha256: 43aca66f3af1cda67fe1ecae00cab9bf2c6cdc78077a1783e719c9e0ed035b03
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.23
+elapsed_sec: 1.29
 status: ok
 ----- stdout -----
 PASS conservative frequencies, leading radiation,16 prescribed-source harmonic controls and exact calibration bracket

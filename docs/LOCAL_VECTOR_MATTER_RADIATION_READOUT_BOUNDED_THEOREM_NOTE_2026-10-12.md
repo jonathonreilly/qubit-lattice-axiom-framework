@@ -42,7 +42,8 @@ primitive as a hidden premise.
 
 The following two constituent derivations are preserved in full, including
 the resolved network-rank clarification. Source ledgers and exact input/run
-history are under the [recovery packet](../.claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md).
+history are under the recovery packet at
+`.claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md`.
 The names DIRECT_MATTER_RADIATION and DIRECT_READOUT there identify their
 original source paths. The original source ledgers supply primary links;
 no pulsar or interferometer likelihood is transferred into this theorem.

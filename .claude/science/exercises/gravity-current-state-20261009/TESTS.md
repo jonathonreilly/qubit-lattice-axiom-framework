@@ -8318,3 +8318,36 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r19-22a (a larger site algebra), b (an unbuilt protection) and c (a metastable sector).
 
   Referee running.
+
+### C5 Round 19, item 25 (pre-registered 06:39Z, before launch)
+
+**R19-25. The finite-site graviton with weakly imposed (Gupta–Bleuler / BRST-type) constraints: does it escape Lemma J and Proposition C?**
+- **Plain question.**
+  - R19-22 (worker; referee running) finds that exact gauge constraints are impossible on finite slots, by the trace argument; that Lemma J kills the joint constraint space; and that penalties leave the graviton sector at least (3/4)JS above the ground.
+  - Its open windows include weakly imposed constraints. In those, physical states satisfy ⟨G⟩ = 0, or only the positive-frequency half annihilates them, rather than G|ψ⟩ = 0.
+  - On spin-S or clock slots, does a weak (Gupta–Bleuler-like) or BRST-cohomology definition of the physical space give:
+    - exactly two helicity-±2 light-like branches;
+    - a positive physical norm;
+    - the conformal 1/r pull;
+    - with errors decaying in S?
+  - What does it cost: ghosts, an indefinite metric, a non-local projector?
+- **Setting.**
+  - R15-5's N-type on spin-S (Holstein–Primakoff) or Z_N slots.
+  - The physical space defined by:
+    - (a) Gupta–Bleuler, G⁽⁺⁾|ψ⟩ = 0 with an indefinite metric;
+    - (b) BRST cohomology, with fermionic ghost slots added per cell;
+    - (c) a local projector, if one exists.
+  - Linear response, k ≪ 1/a.
+- **Prior art (count once):** R19-22 (worker) and its referee when back; R15-5 and its verdict; R16-7 and R16-11; quantum link models and BRST on the lattice (RECALLED).
+- **Removed hypothesis:** strong (exact) constraints.
+- **Probes.**
+  - (a) Check the construction is consistent at finite S: is the weak condition preserved in time, and does the BRST operator square to zero?
+  - (b) Physical spectrum and norm.
+  - (c) The 1/r pull.
+  - (d) The S needed, and the ghost-slot price.
+  - (e) Prices against AX:47.
+- **FIXED readings.**
+  - **WEAK-ESCAPE:** a finite-S construction with positive-norm physical space, exactly two light-like helicity-±2 branches and a 1/r pull to stated accuracy. Checked.
+  - **WEAK-OBSTRUCTED:** a refereed demonstration that every weak or BRST definition in a stated class fails at finite S, e.g. Q² ≠ 0, or the weak condition is not preserved, or the norm turns negative.
+  - **OPEN:** otherwise.
+- **Expectation.** WEAK-OBSTRUCTED. The finite-S constraints do not close (Lemma J), so the BRST charge does not square to zero and the Gupta–Bleuler condition is not preserved, both at O(1/S). An O(1/S) approximate version may hold, with a 1/S leak into unphysical states.

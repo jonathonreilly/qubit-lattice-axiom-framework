@@ -8652,3 +8652,24 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Decisive missing item:** a covariant 10-slot truncated Krein model with local dynamics.
 
   Referee running.
+
+**R19-32. A covariant 10-slot truncated Krein graviton with local dynamics.** This is R19-25's decisive missing item. (Pre-registered 2026-10-13 07:11Z.)
+- **Plain question.** Give each cell 10 metric slots (lapse, shift and spatial), with four of them negative-norm, and truncate each slot to d levels. Then:
+  - Does a local lattice Hamiltonian have a Gupta–Bleuler physical space with a leak that falls in a controlled way with d?
+  - Does it carry two positive-norm TT branches and a 1/r static pull?
+  - Or is the Gupta–Bleuler space empty for every d (Lemma J's analogue)?
+- **Setting.**
+  - R19-25's s5 covariant one-particle model, now made many-body: truncated oscillators with the Krein metric on 1–3-site rings (small d) and on a cubic cell at one-particle level.
+  - Fierz–Pauli/de Donder linearized dynamics on the lattice.
+  - The conditions: lowering parts of the de Donder constraint.
+- **Prior art (count once):** R19-25 (worker; referee running), R19-22, R15-5, R15-3 and Lemma J; Gupta–Bleuler for linear gravity (comparator).
+- **Probes.**
+  - (a) Do the lowering parts commute on the truncated space? Use Lemma K.
+  - (b) The physical-space dimension and the leak against d.
+  - (c) The Krein signature on the physical quotient.
+  - (d) The TT branch count and the static T⁰⁰ response.
+- **FIXED readings.**
+  - **KREIN-WORKS:** a nonzero physical space at every d tested, with the leak decreasing at least geometrically in d, positive quotient norm, two TT branches and an attractive static pull, as checked.
+  - **KREIN-EMPTY:** the physical space is {0} for every d (proved, or checked over ≥ 4 consecutive d with a mechanism).
+  - **OPEN:** otherwise.
+- **Expectation.** KREIN-EMPTY with Bogoliubov-mixed dynamics, per R19-25's s4; leak-controlled only in the free-quotient limit.

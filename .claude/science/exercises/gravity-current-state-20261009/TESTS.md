@@ -7624,3 +7624,28 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r198a, P-r198b ("the sink is Π"; retires P-r12b) and P-r198c.
 
   Referee running.
+
+### C5 Round 19, item 11 (pre-registered 04:49Z, before launch)
+
+**R19-11. One law for every SM mass: does the SM cone root have a massless limit valid for all species at once?**
+- **Plain question.**
+  - R18-9 and R18-13 (refereed in the O(q) convention) zero every cone row at m = 0.01, and separately at m = 0.001. The verdicts note that "one law at both masses" is not shown.
+  - At a = ℓ_P every SM mass is m·a ≲ 1.4e-17. So the physically relevant law is the m → 0⁺ limit root, with corrections from each species' own mass.
+  - Do the rows have a finite massless limit? Are they analytic in m², or do they carry m log m terms (cf. R16-10's Theorem L)?
+  - Does the m → 0⁺ root exist, and how large are the residual rows for the heaviest SM species (top, m·a ≈ 1.4e-17)?
+- **Setting.**
+  - R18-9/R18-13's content and vertices (U, UD, VW with signed and own-direction stencils) and edges.
+  - All six rows (E_g, T₂g, μ_E, μ_T2, face1, face2).
+  - Masses: a common m → 0⁺, then per-species SM masses as perturbations.
+- **Prior art (count once):** R18-9, R18-13 and R16-10 (Theorem L) with their verdicts; R16-2 (per-species residuals ≤ 1e-21); R14-3 (μ_E analytic in m²); R16-3 (Ξ analytic in m²).
+- **Removed hypothesis:** fixed finite m.
+- **Probes.**
+  - (a) The m → 0⁺ limits of each row and their leading corrections (power or log), per species.
+  - (b) The root at m = 0⁺ (knob values), or a proof that some row diverges.
+  - (c) Residual rows with SM masses at a = ℓ_P, against GW170817 (|c_g − c|/c ≲ 1e-15, RECALLED).
+  - (d) Prices.
+- **FIXED readings.**
+  - **ONE-LAW:** a massless-limit root exists. The residuals at the SM masses are below the GW170817 comparator and below the R16-2 photon comparator. Checked.
+  - **MASS-OBSTRUCTED:** some row diverges or is non-analytic as m → 0, so that no single law serves all SM masses (refereed).
+  - **OPEN:** otherwise.
+- **Expectation.** ONE-LAW. The rows are analytic in m² for gapped valleys, so the corrections are ~(m·a)² ≲ 1e-34. The main risk is IR logs in the Dirac or photon μ rows.

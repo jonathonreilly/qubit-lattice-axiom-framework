@@ -1,0 +1,16 @@
+laws x masses evaluated: 720
+m=0.10: 71 with Eg,T2g >= 0; max face1 among them: -2.300e-04 (TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00))
+   max face1 overall -2.300e-04 (TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00)); max min(Eg,T2g,face1) -2.300e-04 (TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00))
+   TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00) Eg +6.35e-04 T2g +8.71e-04 face1 -2.300e-04 K6row -9.239e-04
+   TZ(b=1.0,V=0.60,A=0.30,lv=0.00,lp=0.00) Eg +6.25e-04 T2g +9.43e-04 face1 -2.320e-04 K6row -9.360e-04
+   TZ(b=1.0,V=0.60,A=0.30,lv=0.00,lp=0.06) Eg +6.32e-04 T2g +9.65e-04 face1 -2.338e-04 K6row -9.494e-04
+   TZ(b=1.0,V=0.60,A=0.15,lv=0.03,lp=0.00) Eg +6.33e-04 T2g +8.26e-04 face1 -2.874e-04 K6row -9.689e-04
+   TZ(b=1.0,V=0.60,A=0.15,lv=0.00,lp=0.00) Eg +7.96e-04 T2g +1.58e-03 face1 -2.901e-04 K6row -1.282e-03
+m=0.01: 80 with Eg,T2g >= 0; max face1 among them: -2.078e-04 (TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00))
+   max face1 overall -2.078e-04 (TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00)); max min(Eg,T2g,face1) -2.078e-04 (TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00))
+   TZ(b=1.0,V=0.60,A=0.30,lv=0.03,lp=0.00) Eg +6.66e-04 T2g +9.32e-04 face1 -2.078e-04 K6row -9.406e-04
+   TZ(b=1.0,V=0.60,A=0.30,lv=0.00,lp=0.00) Eg +6.55e-04 T2g +1.00e-03 face1 -2.105e-04 K6row -9.532e-04
+   TZ(b=1.0,V=0.60,A=0.30,lv=0.00,lp=0.06) Eg +6.63e-04 T2g +1.03e-03 face1 -2.122e-04 K6row -9.667e-04
+   TZ(b=1.0,V=0.60,A=0.15,lv=0.03,lp=0.00) Eg +6.71e-04 T2g +8.98e-04 face1 -2.614e-04 K6row -9.891e-04
+   TZ(b=1.0,V=0.60,A=0.15,lv=0.00,lp=0.00) Eg +8.38e-04 T2g +1.67e-03 face1 -2.620e-04 K6row -1.309e-03
+runtime 9s

@@ -1,0 +1,7 @@
+rank of full on-shell TT map over random directions/pols (P,T-even, O_h): 4
+rank of the 5 named functionals [Eg, T2g, face1, face2, body]: 4
+face off-diagonal (mixing) max |.|: 2.914335439641036e-16  body e1 - e2 max |.|: 1.6653345369377348e-15
+singular values: [7.87405689e+00 4.11787788e+00 2.14353441e+00 1.61017312e+00
+ 6.15128911e-16]
+null relation coefficients on [Eg, T2g, face1, face2, body]: [ 0.33333333 -0.         -0.88888889 -0.44444444  1.        ]
+candidate [ 1  2 -2  2 -3] residual 9.363283350515927

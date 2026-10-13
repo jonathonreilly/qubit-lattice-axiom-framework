@@ -1,0 +1,28 @@
+b=0.30 hi=0.30 m=0.1: no point with Eg,T2g >= 0 found (best min -3.516e-04) (7s)
+b=0.30 hi=0.40 m=0.1: no point with Eg,T2g >= 0 found (best min -1.871e-04) (15s)
+b=0.30 hi=0.55 m=0.1: no point with Eg,T2g >= 0 found (best min -1.189e-04) (23s)
+b=0.30 hi=0.80 m=0.1: MAX face1 -3.1989e-04 at Eg +1.4e-04 T2g -5.6e-16 (mu_E +7.036e-04) | mass by slope 0.0:0.037 0.2:1.188 0.4:0.396 0.6:0.000 0.8:0.099 0.9:0.000 1.0:1.122 (32s)
+b=0.30 hi=1.05 m=0.1: no point with Eg,T2g >= 0 found (best min -1.797e-04) (38s)
+b=0.30 hi=1.30 m=0.1: no point with Eg,T2g >= 0 found (best min -2.569e-04) (43s)
+OVERALL b=0.30 m=0.1: max face1 at a graviton-axis-feasible point = -3.1989e-04 (hi=0.80); runtime 43s
+b=0.40 hi=0.40 m=0.1: no point with Eg,T2g >= 0 found (best min -4.388e-04) (7s)
+b=0.40 hi=0.50 m=0.1: no point with Eg,T2g >= 0 found (best min -2.788e-04) (14s)
+b=0.40 hi=0.65 m=0.1: no point with Eg,T2g >= 0 found (best min -1.963e-04) (19s)
+b=0.40 hi=0.90 m=0.1: no point with Eg,T2g >= 0 found (best min -2.125e-04) (25s)
+b=0.40 hi=1.15 m=0.1: no point with Eg,T2g >= 0 found (best min -2.642e-04) (30s)
+b=0.40 hi=1.40 m=0.1: no point with Eg,T2g >= 0 found (best min -3.834e-04) (35s)
+OVERALL b=0.40 m=0.1: max face1 at a graviton-axis-feasible point = none; runtime 35s
+b=0.60 hi=0.60 m=0.1: no point with Eg,T2g >= 0 found (best min -5.692e-04) (7s)
+b=0.60 hi=0.70 m=0.1: no point with Eg,T2g >= 0 found (best min -3.873e-04) (13s)
+b=0.60 hi=0.85 m=0.1: no point with Eg,T2g >= 0 found (best min -3.808e-04) (19s)
+b=0.60 hi=1.10 m=0.1: no point with Eg,T2g >= 0 found (best min -4.124e-04) (26s)
+b=0.60 hi=1.35 m=0.1: no point with Eg,T2g >= 0 found (best min -4.977e-04) (31s)
+b=0.60 hi=1.60 m=0.1: no point with Eg,T2g >= 0 found (best min -6.151e-04) (37s)
+OVERALL b=0.60 m=0.1: max face1 at a graviton-axis-feasible point = none; runtime 37s
+b=1.00 hi=1.00 m=0.1: no point with Eg,T2g >= 0 found (best min -7.921e-04) (5s)
+b=1.00 hi=1.10 m=0.1: no point with Eg,T2g >= 0 found (best min -7.861e-04) (10s)
+b=1.00 hi=1.25 m=0.1: no point with Eg,T2g >= 0 found (best min -8.095e-04) (15s)
+b=1.00 hi=1.50 m=0.1: no point with Eg,T2g >= 0 found (best min -9.038e-04) (20s)
+b=1.00 hi=1.75 m=0.1: no point with Eg,T2g >= 0 found (best min -1.060e-03) (25s)
+b=1.00 hi=2.00 m=0.1: no point with Eg,T2g >= 0 found (best min -1.288e-03) (29s)
+OVERALL b=1.00 m=0.1: max face1 at a graviton-axis-feasible point = none; runtime 29s

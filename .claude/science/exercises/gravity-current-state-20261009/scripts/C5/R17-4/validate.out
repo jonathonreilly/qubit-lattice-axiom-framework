@@ -1,0 +1,27 @@
+NN             m=1.0 M: axis Eg -8.301856729e-04 (zz -8.301856729e-04)  T2g -1.903007307e-03 (zz -1.903007307e-03) | face1 -1.417180e-03 face2 -2.234152e-03 body -1.975944e-03 | O_h relation resid -4.3e-19
+NN             m=1.0 U: axis Eg -6.883236561e-05 (zz -6.883236561e-05)  T2g -2.289166113e-04 (zz -2.289166113e-04) | face1 -1.245453e-04 face2 -2.289166e-04 body -1.895035e-04 | O_h relation resid 0.0e+00
+G(1.00)        m=0.3 M: axis Eg -9.371920791e-04 (zz -9.371920791e-04)  T2g -2.027320274e-03 (zz -2.027320274e-03) | face1 -1.932945e-03 face2 -2.803091e-03 body -2.651594e-03 | O_h relation resid -4.3e-19
+G(1.00)        m=0.3 U: axis Eg -2.043832869e-04 (zz -2.043832869e-04)  T2g -3.899163121e-04 (zz -3.899163121e-04) | face1 -2.706477e-04 face2 -3.899163e-04 body -3.457441e-04 | O_h relation resid 1.1e-19
+Z1(wt=0.060)   m=0.3 M: axis Eg +4.117764865e-04 (zz +4.117764865e-04)  T2g +3.904715285e-04 (zz +3.904715285e-04) | face1 -5.368950e-03 face2 -8.272402e-03 body -8.586282e-03 | O_h relation resid 1.7e-18
+Z1(wt=0.060)   m=0.3 U: axis Eg +4.053590990e-04 (zz +4.053590990e-04)  T2g +2.810148693e-04 (zz +2.810148693e-04) | face1 -3.557020e-04 face2 +2.810159e-04 body -3.264033e-04 | O_h relation resid 8.7e-19
+direct NN m=1.0 M Eg   : grid N=64 -8.301856729e-04 N=96 -8.301856729e-04 | closed form -8.301856729e-04 | rel diff 5.8e-13
+direct NN m=1.0 M T2g  : grid N=64 -1.903007307e-03 N=96 -1.903007307e-03 | closed form -1.903007307e-03 | rel diff 7.1e-12
+direct NN m=1.0 M face1: grid N=64 -1.768606196e-03 N=96 -1.768641025e-03 | closed form -1.417180186e-03 | rel diff 2.5e-01
+direct NN m=1.0 M face2: grid N=64 -2.877020819e-03 N=96 -2.877071072e-03 | closed form -2.234152246e-03 | rel diff 2.9e-01
+direct NN m=1.0 M body : grid N=64 -2.574041758e-03 N=96 -2.574095052e-03 | closed form -1.975943717e-03 | rel diff 3.0e-01
+direct NN m=1.0 U Eg   : grid N=64 -6.883236561e-05 N=96 -6.883236561e-05 | closed form -6.883236561e-05 | rel diff 2.1e-11
+direct NN m=1.0 U T2g  : grid N=64 -2.289166113e-04 N=96 -2.289166113e-04 | closed form -2.289166113e-04 | rel diff 3.1e-12
+direct NN m=1.0 U face1: grid N=64 -1.245452931e-04 N=96 -1.245452931e-04 | closed form -1.245452931e-04 | rel diff 3.2e-12
+direct NN m=1.0 U face2: grid N=64 -2.289166113e-04 N=96 -2.289166113e-04 | closed form -2.289166113e-04 | rel diff 1.5e-11
+direct NN m=1.0 U body : grid N=64 -1.895035215e-04 N=96 -1.895035215e-04 | closed form -1.895035215e-04 | rel diff 1.0e-11
+direct NN m=0.5 M Eg   : grid N=64 -1.129055096e-03 N=96 -1.129055096e-03 | closed form -1.129055096e-03 | rel diff 2.7e-11
+direct NN m=0.5 M T2g  : grid N=64 -2.427740864e-03 N=96 -2.427740864e-03 | closed form -2.427740864e-03 | rel diff 4.4e-12
+direct NN m=0.5 M face1: grid N=64 -2.375859238e-03 N=96 -2.375910259e-03 | closed form -1.917991057e-03 | rel diff 2.4e-01
+direct NN m=0.5 M face2: grid N=64 -3.716456819e-03 N=96 -3.716524617e-03 | closed form -2.926258486e-03 | rel diff 2.7e-01
+direct NN m=0.5 M body : grid N=64 -3.387281765e-03 N=96 -3.387357250e-03 | closed form -2.629088568e-03 | rel diff 2.9e-01
+direct NN m=0.5 U Eg   : grid N=64 -1.053446436e-04 N=96 -1.053446436e-04 | closed form -1.053446436e-04 | rel diff 1.1e-10
+direct NN m=0.5 U T2g  : grid N=64 -3.246914071e-04 N=96 -3.246914071e-04 | closed form -3.246914071e-04 | rel diff 3.1e-11
+direct NN m=0.5 U face1: grid N=64 -1.870877227e-04 N=96 -1.870877227e-04 | closed form -1.870877227e-04 | rel diff 6.7e-11
+direct NN m=0.5 U face2: grid N=64 -3.246914071e-04 N=96 -3.246914071e-04 | closed form -3.246914071e-04 | rel diff 5.2e-11
+direct NN m=0.5 U body : grid N=64 -2.754926088e-04 N=96 -2.754926088e-04 | closed form -2.754926088e-04 | rel diff 2.8e-11
+runtime 13.6s

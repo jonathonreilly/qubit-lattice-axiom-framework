@@ -1,0 +1,11 @@
+NN m=1.0 E2 rows: Eg -6.883237e-05 T2g -2.289166e-04 face1 +4.428000e-04 face2 +7.996421e-04 body +7.719407e-04
+NN m=0.5 E2 rows: Eg -1.053446e-04 T2g -3.246914e-04 face1 +5.716801e-04 face2 +9.970528e-04 body +9.864096e-04
+A             m=0.1  E1: Eg -2.109e-04 T2g -4.014e-04 face1 -2.791e-04 face2 -4.014e-04 body -3.562e-04
+                     E2: Eg -2.109e-04 T2g -4.014e-04 face1 +2.615e-03 face2 +2.593e-03 body +3.547e-03
+C2            m=0.1  E1: Eg +9.772e-06 T2g +3.722e-04 face1 -9.330e-04 face2 +3.722e-04 body -6.671e-04
+                     E2: Eg +9.772e-06 T2g +3.722e-04 face1 +1.356e+00 face2 +3.629e+00 body +2.818e+00
+C             m=0.1  E1: Eg -1.903e-04 T2g +6.802e-05 face1 -1.081e-03 face2 +6.808e-05 body -8.670e-04
+                     E2: Eg -1.903e-04 T2g +6.802e-05 face1 +1.663e+00 face2 +5.014e+00 body +3.707e+00
+U zero m=0.1  m=0.1  E1: Eg -1.098e-09 T2g -3.673e-09 face1 -8.940e-04 face2 +4.733e-08 body -7.946e-04
+                     E2: Eg -1.098e-09 T2g -3.673e-09 face1 +1.292e+00 face2 +3.546e+00 body +2.724e+00
+runtime 11.5s

@@ -1,0 +1,8 @@
+NN m=1 control: rho 1.3000 p_U 0.0991 w_U 0.076 w_M 0.282 (R11-3: 1.3000, 0.0991, 0.076, 0.282)
+M zero m=0.1 (A,C2,C) (0.955978,0.024523) m=0.10: rho 0.47025  p_U 0.13388  p_M 0.15488  rho+p_U 0.60413  rho+p_M 0.62513  (w_U 0.285, w_M 0.329)
+M zero m=0.1 (A,C2,C) (0.955978,0.024523) m=0.01: rho 0.46747  p_U 0.13466  p_M 0.15580  rho+p_U 0.60213  rho+p_M 0.62327  (w_U 0.288, w_M 0.333)
+   raw tails |eps_r| (m=0.3, nothing subtracted): r=128 3.67e-05 r=256 3.85e-07 r=512 4.87e-08 r=1024 1.39e-10 | v_max(0.1) 0.998293 v_max(0.01) 0.999983
+U zero m=0.1 (A,C2,C) (this run) m=0.10: rho 0.47617  p_U 0.13458  p_M 0.15689  rho+p_U 0.61074  rho+p_M 0.63305  (w_U 0.283, w_M 0.329)
+U zero m=0.1 (A,C2,C) (this run) m=0.01: rho 0.47343  p_U 0.13534  p_M 0.15779  rho+p_U 0.60877  rho+p_M 0.63122  (w_U 0.286, w_M 0.333)
+   raw tails |eps_r| (m=0.3, nothing subtracted): r=128 3.76e-05 r=256 4.03e-07 r=512 7.96e-08 r=1024 1.70e-10 | v_max(0.1) 0.998293 v_max(0.01) 0.999983
+runtime 1.8s

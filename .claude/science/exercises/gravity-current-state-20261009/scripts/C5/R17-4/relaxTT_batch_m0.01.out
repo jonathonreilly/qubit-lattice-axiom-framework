@@ -1,0 +1,28 @@
+b=0.30 hi=0.30 m=0.01: MAX face1 -6.2909e-04 at Eg +2.0e-03 T2g +2.1e-03 (mu_E +3.609e-03) | mass by slope 0.0:0.602 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.239 (11s)
+b=0.30 hi=0.40 m=0.01: MAX face1 -2.8918e-04 at Eg +2.0e-03 T2g +2.3e-03 (mu_E +5.566e-03) | mass by slope 0.0:0.408 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.434 (21s)
+b=0.30 hi=0.55 m=0.01: MAX face1 -4.2874e-04 at Eg +1.5e-03 T2g +1.7e-03 (mu_E +4.929e-03) | mass by slope 0.0:0.353 0.2:0.000 0.4:0.192 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.297 (34s)
+b=0.30 hi=0.80 m=0.01: MAX face1 -1.3280e-04 at Eg +5.4e-05 T2g -5.8e-14 (mu_E +3.414e-04) | mass by slope 0.0:0.514 0.2:1.149 0.4:0.383 0.6:0.128 0.8:0.000 0.9:0.000 1.0:0.667 (44s)
+b=0.30 hi=1.05 m=0.01: no point with Eg,T2g >= 0 found (best min -1.210e-04) (50s)
+b=0.30 hi=1.30 m=0.01: no point with Eg,T2g >= 0 found (best min -1.759e-04) (56s)
+OVERALL b=0.30 m=0.01: max face1 at a graviton-axis-feasible point = -1.3280e-04 (hi=0.80); runtime 56s
+b=0.40 hi=0.40 m=0.01: MAX face1 -2.9404e-04 at Eg +2.0e-03 T2g +2.3e-03 (mu_E +5.604e-03) | mass by slope 0.0:0.402 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.340 (11s)
+b=0.40 hi=0.50 m=0.01: MAX face1 -3.4570e-04 at Eg +1.9e-03 T2g +2.3e-03 (mu_E +5.633e-03) | mass by slope 0.0:0.384 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.357 (24s)
+b=0.40 hi=0.65 m=0.01: MAX face1 -1.4733e-04 at Eg +1.6e-03 T2g +2.1e-03 (mu_E +8.946e-03) | mass by slope 0.0:0.089 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.653 (39s)
+b=0.40 hi=0.90 m=0.01: MAX face1 -1.9324e-04 at Eg +7.5e-05 T2g -3.2e-17 (mu_E +7.783e-04) | mass by slope 0.0:0.563 0.2:0.766 0.4:0.383 0.6:0.128 0.8:0.000 0.9:0.000 1.0:0.901 (49s)
+b=0.40 hi=1.15 m=0.01: no point with Eg,T2g >= 0 found (best min -1.857e-04) (58s)
+b=0.40 hi=1.40 m=0.01: no point with Eg,T2g >= 0 found (best min -2.565e-04) (64s)
+OVERALL b=0.40 m=0.01: max face1 at a graviton-axis-feasible point = -1.4733e-04 (hi=0.65); runtime 64s
+b=0.60 hi=0.60 m=0.01: MAX face1 -1.3811e-04 at Eg +1.6e-03 T2g +2.1e-03 (mu_E +8.951e-03) | mass by slope 0.0:0.089 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.453 (11s)
+b=0.60 hi=0.70 m=0.01: MAX face1 -1.2062e-04 at Eg +1.4e-03 T2g +1.9e-03 (mu_E +1.045e-02) | mass by slope 0.0:0.026 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.516 (22s)
+b=0.60 hi=0.85 m=0.01: MAX face1 -1.2533e-04 at Eg +1.2e-03 T2g +1.6e-03 (mu_E +1.186e-02) | mass by slope 0.0:0.000 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.542 (34s)
+b=0.60 hi=1.10 m=0.01: MAX face1 -2.7382e-04 at Eg +2.1e-04 T2g -1.3e-15 (mu_E +2.892e-03) | mass by slope 0.0:0.000 0.2:0.672 0.4:0.431 0.6:0.128 0.8:0.000 0.9:0.000 1.0:1.312 (42s)
+b=0.60 hi=1.35 m=0.01: no point with Eg,T2g >= 0 found (best min -3.142e-04) (48s)
+b=0.60 hi=1.60 m=0.01: no point with Eg,T2g >= 0 found (best min -4.005e-04) (53s)
+OVERALL b=0.60 m=0.01: max face1 at a graviton-axis-feasible point = -1.2062e-04 (hi=0.70); runtime 53s
+b=1.00 hi=1.00 m=0.01: MAX face1 -1.5255e-04 at Eg +8.0e-04 T2g +6.2e-04 (mu_E +1.322e-02) | mass by slope 0.0:0.000 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.142 (8s)
+b=1.00 hi=1.10 m=0.01: MAX face1 -1.7847e-04 at Eg +7.4e-04 T2g +5.1e-04 (mu_E +1.306e-02) | mass by slope 0.0:0.000 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.142 (16s)
+b=1.00 hi=1.25 m=0.01: MAX face1 -2.6107e-04 at Eg +5.6e-04 T2g +2.5e-04 (mu_E +1.248e-02) | mass by slope 0.0:0.000 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.142 (30s)
+b=1.00 hi=1.50 m=0.01: no point with Eg,T2g >= 0 found (best min -4.766e-05) (36s)
+b=1.00 hi=1.75 m=0.01: no point with Eg,T2g >= 0 found (best min -6.833e-04) (41s)
+b=1.00 hi=2.00 m=0.01: no point with Eg,T2g >= 0 found (best min -9.056e-04) (44s)
+OVERALL b=1.00 m=0.01: max face1 at a graviton-axis-feasible point = -1.5255e-04 (hi=1.00); runtime 44s

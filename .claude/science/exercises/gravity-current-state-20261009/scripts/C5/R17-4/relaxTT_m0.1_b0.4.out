@@ -1,0 +1,5 @@
+b=0.40 hi=0.40 m=0.1: MAX face1 -6.2403e-04 at Eg +1.5e-03 T2g +1.3e-03 (mu_E +5.245e-03) | mass by slope 0.0:0.077 0.2:0.383 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.281 (5s)
+b=0.40 hi=0.65 m=0.1: MAX face1 -2.0231e-04 at Eg +1.3e-03 T2g +1.6e-03 (mu_E +1.031e-02) | mass by slope 0.0:0.099 0.2:0.000 0.4:0.000 0.6:0.000 0.8:0.000 0.9:0.000 1.0:2.643 (11s)
+b=0.40 hi=0.90 m=0.1: MAX face1 -2.9421e-04 at Eg +1.0e-04 T2g +8.3e-17 (mu_E +1.523e-03) | mass by slope 0.0:0.406 0.2:0.766 0.4:0.192 0.6:0.128 0.8:0.000 0.9:0.000 1.0:1.250 (15s)
+b=0.40 hi=1.40 m=0.1: no point with Eg,T2g >= 0 found (best min -2.636e-04) (18s)
+OVERALL b=0.40 m=0.1: max face1 at a graviton-axis-feasible point = -2.0231e-04 (hi=0.65); runtime 18s

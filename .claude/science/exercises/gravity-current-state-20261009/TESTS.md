@@ -5937,3 +5937,18 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r17-1a to P-r17-1d.
 
   Referee running.
+- **R17-4 (the bill's rows): worker reading COUNTED-ROWS in part (U + E1). Second off-axis row OPEN; (f) OPEN.**
+  - **(a) Off-axis formula:** Ξ(n, e) = (1/32)⟨W_e A_nn/ε⁵⟩ − (1/192)⟨(n·∇)²W_e/ε³⟩. Grid-checked; the rank-4 TT space confirms R13-8.
+  - **U identities (proved):**
+    - Ξ_face2 ≡ Ξ_T2g;
+    - Ξ_face1 = (3Ξ_Eg + Ξ_T2g)/4 − (1/128)⟨K₆/ε⁷⟩.
+    - So the off-axis rows cost one new condition, a sixth cumulant, not two.
+  - **(b) Search:** Ξ_face1 ≈ −9e-4 on R16-3's U zeros, and it stayed negative wherever both axis rows are ≥ 0 (not certified).
+  - **Lemma M (proved).** Any C₂ᵧ-covariant T₂g amplitude must vanish at k_x = π. R9-9's M vertex does not, so M has no summable kernel on doubler-free laws.
+    - **Consequence:** the M numbers of R16-3 and R16-9 are integrals of a non-local vertex. U is unaffected.
+  - **E1 vs E2:** the off-axis rows depend on how the vertex is extended (P-TTV₂).
+  - **(c) LV tadpole:** ρ + p > 0 for every law in 𝒮, so it needs a trace counterterm (P-Tad).
+  - **(e) Totals (conditional):** 8 + CC per class or 12 + CC per species under U + E1; 9/13 + CC under E2.
+  - **Prices:** P-K6, P-TTV₂, P-LocM, P-Tad.
+
+  Referee running.

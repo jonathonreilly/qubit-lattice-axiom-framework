@@ -6952,3 +6952,26 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - R17-2's P-W7bdy reduces to P-W7anom.
 
   Referee running.
+
+#### C5 referee verdicts R18-1, R18-5, R18-6 (recorded 03:17Z; codex gpt-5.6-sol, xhigh)
+
+- **R18-1 referee: CONFIRMED WITH CORRECTIONS. (a)–(c) demoted to OPEN; (d) GAP-CLOSED for the strengthened, uniformly Lieb–Robinson-local class.**
+  - **What was observed:** no finite-size-sharp pinch point through βU = 4. Data for βU ≤ 3.5 are consistent with screened finite widths.
+  - **Why OPEN:** the βU = 4 runs mix too slowly and are not seed-stable enough to certify a fitted ξ. βU = ∞ is exactly sharp but frozen.
+  - **Theorem Z₀ is confirmed** for uniformly LR-local, cubic-covariant families with a unique symmetric ground state, a local E⊕T₂ readout and a strict vector gap. In that class, a statically visible gapless T₂ branch forces a directional contrast in every f-sum class.
+    - The contrast is bracketed by nested cutoff weights rather than equal to one "weight below the gap".
+    - It does not close the broader quasi-local H1 class.
+- **R18-5 referee: CONFIRMED WITH CORRECTIONS. V0-FAILS confirmed; SM-LIFTED-CONSERVED holds if signed VW stencils are admitted, which the referee reads the unqualified setting as indicating; otherwise OPEN.**
+  - **V0 fails the forward Ward value.** At an independent check point it gives +0.2654 where −0.2654 is required. VW passes the forward test to 1.7e-16.
+  - **UD** is the unique forward-correct Dirac vertex within the stipulated strain-flow family 𝔇, and it couples the Wilson mass. Neither the family restriction, the pair block, the O(q²) placement nor exact W1 completion is derived.
+  - **The SM-count three-row axial zero** at m = 0.01 is well resolved. It costs 3 tunings.
+  - **Unpaid:** μ_T2 ≈ 0.0911, off-axis closure, and exact conservation.
+- **R18-6 referee: NOT CONFIRMED (the JOINT-CONSISTENT). Literal reading JOINT-CONFLICT** (expanding arena, W ≠ 0).
+  - **Literal N conflicts with (d-i).** Literal N is sourced by the total matter-plus-vacuum stress plus gravitational self-stress. Bianchi then requires Q = 0, which forces W = 0 on any connected expanding slice.
+  - **N_red is a new completion, not a wording fix.** Redefining N to include the E/creation receiver, or to use only the net gravitating stress, gives a consistent bridge. In that modified net-source bridge:
+    - each connected slice component that expands somewhere reduces to exact classical GR (TOV without W);
+    - β = γ = 1;
+    - Λ̃ = 0 under P93;
+    - there is no Lemma-S channel;
+    - it takes three clauses and zero fitted numbers.
+  - **Still open:** the quantum J2 step, full quantum-gravity completion, and set A noise completion.

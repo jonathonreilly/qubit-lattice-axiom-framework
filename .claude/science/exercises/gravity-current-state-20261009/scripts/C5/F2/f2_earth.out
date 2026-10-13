@@ -1,0 +1,109 @@
+=== (A) geometry ===
+  GW170817 at H1: altitude -62.1 deg -> chord 11261 km, closest approach to centre r = 2981 km
+  GW170817 at L1: altitude -46.8 deg -> chord 9293 km, closest approach to centre r = 4359 km
+  GW170817 at V1: altitude +17.3 deg (above horizon)
+  GW170814 (RA 03h11m, Dec -44.95) at H1: altitude -10.1 deg (max altitude at H1 = -1.4 deg)
+  GW170814 (RA 03h11m, Dec -40.00) at H1: altitude -5.9 deg (max altitude at H1 = +3.5 deg)
+  GW170814 (RA 03h11m, Dec -49.00) at H1: altitude -13.6 deg (max altitude at H1 = -5.5 deg)
+
+=== (B) through-Earth transmission on the GW170817 chords: bound on mu_rho ===
+  GW170817 dispersion budget int|m^2|ds <= 1.116e-18 eV^2 m
+  H1: L = 11261 km, column = 7.371e+10 kg/m^2, rho_max on chord = 10626 kg/m3
+   branch M: largest mu (grid) with S_SNR >= 0.7: 1.78e-29; dispersion-budget mu <= 1.51e-29  =>  mu_rho_max = 1.51e-29 eV^2 m^3/kg
+      mu=1.0e-31  S_SNR=1.000  |t(30Hz)|=9.998e-01 |t(100Hz)|=1.000e+00  int|m2|ds=7.37e-21  |m_g(5500)|=2.35e-14 eV
+      mu=3.2e-31  S_SNR=1.000  |t(30Hz)|=9.984e-01 |t(100Hz)|=1.000e+00  int|m2|ds=2.33e-20  |m_g(5500)|=4.17e-14 eV
+      mu=1.0e-30  S_SNR=0.999  |t(30Hz)|=9.825e-01 |t(100Hz)|=1.000e+00  int|m2|ds=7.37e-20  |m_g(5500)|=7.42e-14 eV
+      mu=3.2e-30  S_SNR=0.971  |t(30Hz)|=2.749e-02 |t(100Hz)|=9.998e-01  int|m2|ds=2.33e-19  |m_g(5500)|=1.32e-13 eV
+      mu=1.0e-29  S_SNR=0.840  |t(30Hz)|=8.222e-06 |t(100Hz)|=9.603e-01  int|m2|ds=7.37e-19  |m_g(5500)|=2.35e-13 eV
+      mu=3.2e-29  S_SNR=0.616  |t(30Hz)|=3.400e-11 |t(100Hz)|=4.753e-04  int|m2|ds=2.33e-18  |m_g(5500)|=4.17e-13 eV
+      mu=1.0e-28  S_SNR=0.299  |t(30Hz)|=3.257e-20 |t(100Hz)|=5.137e-17  int|m2|ds=7.37e-18  |m_g(5500)|=7.42e-13 eV
+      mu=3.2e-28  S_SNR=0.077  |t(30Hz)|=7.458e-36 |t(100Hz)|=6.821e-34  int|m2|ds=2.33e-17  |m_g(5500)|=1.32e-12 eV
+      mu=1.0e-27  S_SNR=0.018  |t(30Hz)|=2.361e-63 |t(100Hz)|=4.999e-62  int|m2|ds=7.37e-17  |m_g(5500)|=2.35e-12 eV
+      mu=3.2e-27  S_SNR=0.000  |t(30Hz)|=5.419e-112 |t(100Hz)|=5.119e-111  int|m2|ds=2.33e-16  |m_g(5500)|=4.17e-12 eV
+      mu=1.0e-26  S_SNR=0.000  |t(30Hz)|=2.952e-198 |t(100Hz)|=1.772e-197  int|m2|ds=7.37e-16  |m_g(5500)|=7.42e-12 eV
+      mu=3.2e-26  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=2.33e-15  |m_g(5500)|=1.32e-11 eV
+      mu=1.0e-25  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=7.37e-15  |m_g(5500)|=2.35e-11 eV
+      mu=3.2e-25  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=2.33e-14  |m_g(5500)|=4.17e-11 eV
+      mu=1.0e-24  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=7.37e-14  |m_g(5500)|=7.42e-11 eV
+   branch T: largest mu (grid) with S_SNR >= 0.7: 1.00e-27; dispersion-budget mu <= 1.51e-29  =>  mu_rho_max = 1.51e-29 eV^2 m^3/kg
+      mu=1.0e-31  S_SNR=1.000  |t(30Hz)|=9.998e-01 |t(100Hz)|=1.000e+00  int|m2|ds=7.37e-21  |m_g(5500)|=2.35e-14 eV
+      mu=3.2e-31  S_SNR=1.000  |t(30Hz)|=9.982e-01 |t(100Hz)|=1.000e+00  int|m2|ds=2.33e-20  |m_g(5500)|=4.17e-14 eV
+      mu=1.0e-30  S_SNR=1.000  |t(30Hz)|=9.914e-01 |t(100Hz)|=1.000e+00  int|m2|ds=7.37e-20  |m_g(5500)|=7.42e-14 eV
+      mu=3.2e-30  S_SNR=0.998  |t(30Hz)|=9.275e-01 |t(100Hz)|=9.996e-01  int|m2|ds=2.33e-19  |m_g(5500)|=1.32e-13 eV
+      mu=1.0e-29  S_SNR=0.992  |t(30Hz)|=9.960e-01 |t(100Hz)|=9.996e-01  int|m2|ds=7.37e-19  |m_g(5500)|=2.35e-13 eV
+      mu=3.2e-29  S_SNR=0.973  |t(30Hz)|=8.098e-01 |t(100Hz)|=9.996e-01  int|m2|ds=2.33e-18  |m_g(5500)|=4.17e-13 eV
+      mu=1.0e-28  S_SNR=0.930  |t(30Hz)|=4.495e-01 |t(100Hz)|=8.052e-01  int|m2|ds=7.37e-18  |m_g(5500)|=7.42e-13 eV
+      mu=3.2e-28  S_SNR=0.836  |t(30Hz)|=4.182e-01 |t(100Hz)|=6.636e-01  int|m2|ds=2.33e-17  |m_g(5500)|=1.32e-12 eV
+      mu=1.0e-27  S_SNR=0.737  |t(30Hz)|=1.838e-01 |t(100Hz)|=6.036e-01  int|m2|ds=7.37e-17  |m_g(5500)|=2.35e-12 eV
+      mu=3.2e-27  S_SNR=0.518  |t(30Hz)|=4.685e-01 |t(100Hz)|=2.348e-01  int|m2|ds=2.33e-16  |m_g(5500)|=4.17e-12 eV
+      mu=1.0e-26  S_SNR=0.553  |t(30Hz)|=5.986e-01 |t(100Hz)|=3.327e-01  int|m2|ds=7.37e-16  |m_g(5500)|=7.42e-12 eV
+      mu=3.2e-26  S_SNR=0.275  |t(30Hz)|=1.056e-01 |t(100Hz)|=1.744e-01  int|m2|ds=2.33e-15  |m_g(5500)|=1.32e-11 eV
+      mu=1.0e-25  S_SNR=0.244  |t(30Hz)|=2.210e-02 |t(100Hz)|=7.351e-02  int|m2|ds=7.37e-15  |m_g(5500)|=2.35e-11 eV
+      mu=3.2e-25  S_SNR=0.460  |t(30Hz)|=2.398e-01 |t(100Hz)|=3.559e-01  int|m2|ds=2.33e-14  |m_g(5500)|=4.17e-11 eV
+      mu=1.0e-24  S_SNR=0.034  |t(30Hz)|=5.197e-03 |t(100Hz)|=1.680e-02  int|m2|ds=7.37e-14  |m_g(5500)|=7.42e-11 eV
+  L1: L = 9293 km, column = 4.280e+10 kg/m^2, rho_max on chord = 5127 kg/m3
+   branch M: largest mu (grid) with S_SNR >= 0.7: 3.16e-29; dispersion-budget mu <= 2.61e-29  =>  mu_rho_max = 2.61e-29 eV^2 m^3/kg
+      mu=1.0e-31  S_SNR=1.000  |t(30Hz)|=1.000e+00 |t(100Hz)|=1.000e+00  int|m2|ds=4.28e-21  |m_g(5500)|=2.35e-14 eV
+      mu=3.2e-31  S_SNR=1.000  |t(30Hz)|=9.994e-01 |t(100Hz)|=1.000e+00  int|m2|ds=1.35e-20  |m_g(5500)|=4.17e-14 eV
+      mu=1.0e-30  S_SNR=1.000  |t(30Hz)|=9.897e-01 |t(100Hz)|=1.000e+00  int|m2|ds=4.28e-20  |m_g(5500)|=7.42e-14 eV
+      mu=3.2e-30  S_SNR=0.996  |t(30Hz)|=3.390e-01 |t(100Hz)|=1.000e+00  int|m2|ds=1.35e-19  |m_g(5500)|=1.32e-13 eV
+      mu=1.0e-29  S_SNR=0.939  |t(30Hz)|=5.329e-04 |t(100Hz)|=9.976e-01  int|m2|ds=4.28e-19  |m_g(5500)|=2.35e-13 eV
+      mu=3.2e-29  S_SNR=0.777  |t(30Hz)|=6.058e-08 |t(100Hz)|=9.591e-01  int|m2|ds=1.35e-18  |m_g(5500)|=4.17e-13 eV
+      mu=1.0e-28  S_SNR=0.527  |t(30Hz)|=2.055e-14 |t(100Hz)|=2.414e-11  int|m2|ds=4.28e-18  |m_g(5500)|=7.42e-13 eV
+      mu=3.2e-28  S_SNR=0.192  |t(30Hz)|=1.570e-25 |t(100Hz)|=1.171e-23  int|m2|ds=1.35e-17  |m_g(5500)|=1.32e-12 eV
+      mu=1.0e-27  S_SNR=0.051  |t(30Hz)|=5.412e-45 |t(100Hz)|=1.017e-43  int|m2|ds=4.28e-17  |m_g(5500)|=2.35e-12 eV
+      mu=3.2e-27  S_SNR=0.004  |t(30Hz)|=2.409e-79 |t(100Hz)|=2.125e-78  int|m2|ds=1.35e-16  |m_g(5500)|=4.17e-12 eV
+      mu=1.0e-26  S_SNR=0.000  |t(30Hz)|=3.322e-140 |t(100Hz)|=1.919e-139  int|m2|ds=4.28e-16  |m_g(5500)|=7.42e-12 eV
+      mu=3.2e-26  S_SNR=0.000  |t(30Hz)|=3.155e-248 |t(100Hz)|=1.436e-247  int|m2|ds=1.35e-15  |m_g(5500)|=1.32e-11 eV
+      mu=1.0e-25  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=4.28e-15  |m_g(5500)|=2.35e-11 eV
+      mu=3.2e-25  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=1.35e-14  |m_g(5500)|=4.17e-11 eV
+      mu=1.0e-24  S_SNR=0.000  |t(30Hz)|=0.000e+00 |t(100Hz)|=0.000e+00  int|m2|ds=4.28e-14  |m_g(5500)|=7.42e-11 eV
+   branch T: largest mu (grid) with S_SNR >= 0.7: 5.62e-28; dispersion-budget mu <= 2.61e-29  =>  mu_rho_max = 2.61e-29 eV^2 m^3/kg
+      mu=1.0e-31  S_SNR=1.000  |t(30Hz)|=1.000e+00 |t(100Hz)|=1.000e+00  int|m2|ds=4.28e-21  |m_g(5500)|=2.35e-14 eV
+      mu=3.2e-31  S_SNR=1.000  |t(30Hz)|=9.999e-01 |t(100Hz)|=1.000e+00  int|m2|ds=1.35e-20  |m_g(5500)|=4.17e-14 eV
+      mu=1.0e-30  S_SNR=1.000  |t(30Hz)|=9.999e-01 |t(100Hz)|=1.000e+00  int|m2|ds=4.28e-20  |m_g(5500)|=7.42e-14 eV
+      mu=3.2e-30  S_SNR=0.999  |t(30Hz)|=9.634e-01 |t(100Hz)|=9.997e-01  int|m2|ds=1.35e-19  |m_g(5500)|=1.32e-13 eV
+      mu=1.0e-29  S_SNR=0.996  |t(30Hz)|=8.857e-01 |t(100Hz)|=1.000e+00  int|m2|ds=4.28e-19  |m_g(5500)|=2.35e-13 eV
+      mu=3.2e-29  S_SNR=0.979  |t(30Hz)|=9.987e-01 |t(100Hz)|=9.743e-01  int|m2|ds=1.35e-18  |m_g(5500)|=4.17e-13 eV
+      mu=1.0e-28  S_SNR=0.920  |t(30Hz)|=4.600e-01 |t(100Hz)|=9.842e-01  int|m2|ds=4.28e-18  |m_g(5500)|=7.42e-13 eV
+      mu=3.2e-28  S_SNR=0.808  |t(30Hz)|=4.736e-01 |t(100Hz)|=9.409e-01  int|m2|ds=1.35e-17  |m_g(5500)|=1.32e-12 eV
+      mu=1.0e-27  S_SNR=0.659  |t(30Hz)|=2.885e-01 |t(100Hz)|=4.681e-01  int|m2|ds=4.28e-17  |m_g(5500)|=2.35e-12 eV
+      mu=3.2e-27  S_SNR=0.526  |t(30Hz)|=3.592e-01 |t(100Hz)|=2.757e-01  int|m2|ds=1.35e-16  |m_g(5500)|=4.17e-12 eV
+      mu=1.0e-26  S_SNR=0.430  |t(30Hz)|=4.842e-02 |t(100Hz)|=1.732e-01  int|m2|ds=4.28e-16  |m_g(5500)|=7.42e-12 eV
+      mu=3.2e-26  S_SNR=0.333  |t(30Hz)|=3.106e-02 |t(100Hz)|=1.049e-01  int|m2|ds=1.35e-15  |m_g(5500)|=1.32e-11 eV
+      mu=1.0e-25  S_SNR=0.500  |t(30Hz)|=3.654e-01 |t(100Hz)|=3.969e-01  int|m2|ds=4.28e-15  |m_g(5500)|=2.35e-11 eV
+      mu=3.2e-25  S_SNR=0.242  |t(30Hz)|=1.475e-02 |t(100Hz)|=5.506e-02  int|m2|ds=1.35e-14  |m_g(5500)|=4.17e-11 eV
+      mu=1.0e-24  S_SNR=0.471  |t(30Hz)|=6.334e-02 |t(100Hz)|=3.548e-01  int|m2|ds=4.28e-14  |m_g(5500)|=7.42e-11 eV
+  BOUND (i)-chord: mu_rho <= 1.51e-29 (M), 1.51e-29 (T) eV^2 m^3/kg; |m_g| at 5500 kg/m3 <= 2.89e-13 (M), 2.89e-13 (T) eV
+  placeholder mu_rho = 1.012e-21 -> ratio placeholder/bound = 6.7e+07 (M), 6.7e+07 (T)
+
+=== (C) placeholder on the GW170817 chords ===
+  H1 f=   30 Hz  branch M: WKB attenuation exponent int kappa ds = 1.439e+05  (|t| ~ e^-1.44e+05)
+  H1 f=  100 Hz  branch M: WKB attenuation exponent int kappa ds = 1.439e+05  (|t| ~ e^-1.44e+05)
+  H1 f=  300 Hz  branch M: WKB attenuation exponent int kappa ds = 1.439e+05  (|t| ~ e^-1.44e+05)
+  L1 f=   30 Hz  branch M: WKB attenuation exponent int kappa ds = 1.014e+05  (|t| ~ e^-1.01e+05)
+  L1 f=  100 Hz  branch M: WKB attenuation exponent int kappa ds = 1.014e+05  (|t| ~ e^-1.01e+05)
+  L1 f=  300 Hz  branch M: WKB attenuation exponent int kappa ds = 1.014e+05  (|t| ~ e^-1.01e+05)
+  branch T, L1 chord: 204912 layers
+  branch T, L1 chord: |t| over 30-300 Hz: median 1.909e-03, max 3.465e-03, rms 2.116e-03; SNR-weighted 1.667e-03
+     single-interface estimate 4 k0 M/(k0+M)^2 per interface at 100 Hz, rock 2600: 1.02e-03
+     WKB extra phase int (k - k0) ds at 100 Hz = 1.014e+05 rad
+
+=== (D) detector on the ground (vertical model) ===
+  branch M mu=1.01e-21 (|m_g| rock 1.6e-09 eV, air 3.5e-11 eV): |h(1 m)|/|h_inc| =  30Hz: 3.02e-05 (60deg 1.51e-05); 100Hz: 1.01e-04 (60deg 5.04e-05); 300Hz: 3.05e-04 (60deg 1.51e-04)
+  branch M mu=1.00e-28 (|m_g| rock 5.1e-13 eV, air 1.1e-14 eV): |h(1 m)|/|h_inc| =  30Hz: 4.62e-01 (60deg 2.31e-01); 100Hz: 1.54e+00 (60deg 7.70e-01); 300Hz: 1.05e+00 (60deg 1.34e+00)
+  branch M mu=1.00e-30 (|m_g| rock 5.1e-14 eV, air 1.1e-15 eV): |h(1 m)|/|h_inc| =  30Hz: 1.05e+00 (60deg 1.34e+00); 100Hz: 1.00e+00 (60deg 1.02e+00); 300Hz: 1.00e+00 (60deg 1.00e+00)
+  branch M mu=1.00e-31 (|m_g| rock 1.6e-14 eV, air 3.5e-16 eV): |h(1 m)|/|h_inc| =  30Hz: 1.00e+00 (60deg 1.02e+00); 100Hz: 1.00e+00 (60deg 1.00e+00); 300Hz: 1.00e+00 (60deg 1.00e+00)
+  branch M mu=1.00e-32 (|m_g| rock 5.1e-15 eV, air 1.1e-16 eV): |h(1 m)|/|h_inc| =  30Hz: 1.00e+00 (60deg 1.00e+00); 100Hz: 1.00e+00 (60deg 1.00e+00); 300Hz: 1.00e+00 (60deg 1.00e+00)
+  branch T mu=1.01e-21 (|m_g| rock 1.6e-09 eV, air 3.5e-11 eV): |h(1 m)|/|h_inc| =  30Hz: 5.88e-04 (60deg 2.94e-04); 100Hz: 1.95e-03 (60deg 9.79e-04); 300Hz: 5.67e-03 (60deg 2.91e-03)
+  branch T mu=1.00e-28 (|m_g| rock 5.1e-13 eV, air 1.1e-14 eV): |h(1 m)|/|h_inc| =  30Hz: 3.67e-01 (60deg 2.05e-01); 100Hz: 7.57e-01 (60deg 5.28e-01); 300Hz: 9.57e-01 (60deg 8.61e-01)
+  branch T mu=1.00e-30 (|m_g| rock 5.1e-14 eV, air 1.1e-15 eV): |h(1 m)|/|h_inc| =  30Hz: 9.57e-01 (60deg 8.61e-01); 100Hz: 9.96e-01 (60deg 9.84e-01); 300Hz: 1.00e+00 (60deg 9.98e-01)
+  branch T mu=1.00e-31 (|m_g| rock 1.6e-14 eV, air 3.5e-16 eV): |h(1 m)|/|h_inc| =  30Hz: 9.95e-01 (60deg 9.82e-01); 100Hz: 1.00e+00 (60deg 9.98e-01); 300Hz: 1.00e+00 (60deg 1.00e+00)
+  branch T mu=1.00e-32 (|m_g| rock 5.1e-15 eV, air 1.1e-16 eV): |h(1 m)|/|h_inc| =  30Hz: 1.00e+00 (60deg 9.98e-01); 100Hz: 1.00e+00 (60deg 1.00e+00); 300Hz: 1.00e+00 (60deg 1.00e+00)
+  (vacuum reference with no ground would be 1; a perfectly transparent ground gives 1; a rigid node gives ~0)
+
+=== (E) tachyonic instability of the PREM Earth ===
+  l=0: critical mu_rho = 3.805e-31 eV^2 m^3/kg  (|m_g| at 5500 = 4.575e-14 eV; uniform-sphere pi/2 rule: 4.865e-14 eV)
+  l=2: critical mu_rho = 3.606e-30 eV^2 m^3/kg  (|m_g| at 5500 = 1.408e-13 eV; uniform-sphere pi/2 rule: 4.865e-14 eV)
+  placeholder: centre |m_g| = 3.639e-09 eV -> fastest growth rate ~ 5.528e+06 /s (e-fold time 1.81e-07 s); bound states ~ (M R)^2 ~ 1.4e+10
+exit 0

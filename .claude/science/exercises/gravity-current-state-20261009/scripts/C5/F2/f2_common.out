@@ -1,0 +1,11 @@
+placeholder mu_rho = |m_g^2|/rho = 1.0115e-21 eV^2 m^3/kg
+  Earth mean 5500          |m_g| = 2.359e-09 eV   1/|m_g| = 8.366e+01 m   growth/decay time = 2.791e-07 s
+  rock 2600                |m_g| = 1.622e-09 eV   1/|m_g| = 1.217e+02 m   growth/decay time = 4.059e-07 s
+  air 1.225                |m_g| = 3.520e-11 eV   1/|m_g| = 5.606e+03 m   growth/decay time = 1.870e-05 s
+  core 13000               |m_g| = 3.626e-09 eV   1/|m_g| = 5.442e+01 m   growth/decay time = 1.815e-07 s
+  NS 5e17                  |m_g| = 2.249e-02 eV   1/|m_g| = 8.774e-06 m   growth/decay time = 2.927e-14 s
+  IGM n_b=0.25/m3          |m_g| = 6.480e-25 eV   1/|m_g| = 3.045e+17 m   growth/decay time = 1.016e+09 s
+  ISM 1/cc                 |m_g| = 1.296e-21 eV   1/|m_g| = 1.523e+14 m   growth/decay time = 5.079e+05 s
+  Local Bubble 0.005/cc    |m_g| = 9.164e-23 eV   1/|m_g| = 2.153e+15 m   growth/decay time = 7.182e+06 s
+  check R19-34 Earth nucleons only (n=3.3e30): 2.3431e-09 eV (r1934_sizes.out: 2.34e-09)
+PREM: M = 5.9732e+24 kg (5.972e24), I/MR^2 = 0.3308 (0.3307), rho_c = 13088 kg/m3

@@ -9205,3 +9205,14 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - **ENV-BOUNDS:** a table of environment-specific bounds, each with its observational basis and the derivation's assumptions, including at least the Earth-crossing case and the hot early universe.
   - **OPEN:** otherwise.
 - **Expectation.** Earth-crossing: a wave with ω < |m_g| inside the Earth is evanescent over 1.3e7 m. At |m_g| ~ 1e-9 eV the decay length is ~0.2 m, so sources below the horizon would be invisible, which contradicts detection of sources from all directions. Bounded by geometry. In the early universe, a tachyonic μ ≫ H² gives exponential tensor growth, bounded by the CMB.
+
+- **F2 (environment bounds): worker reading ENV-BOUNDS** (unrefereed; referee running). The bounds are on μ_ρ = |m_g²|/ρ, in eV² m³/kg.
+  - **Earth crossing:** GW170817 reached H1 from 62° below the horizon and L1 from 47° below. Exact 1D PREM transmission plus the dispersion budget gives ≤ 1.5e-29 in both signs (|m_g| ≲ 2.9e-13 eV in rock). The ground near-node at the detector gives ≲ 1e-29.
+  - **Galaxy/IGM:** ≤ 2.7e-19.
+  - **PTA, massive sign:** ≲ 8e-24 (suggested).
+  - **Binary pulsar:** a screened stellar quadrupole gives ≤ 2e-43 (suggested).
+  - **Hot era:**
+    - tachyonic: ≲ 4e3–8e3 H² per e-fold, via N_eff;
+    - massive: no observational bound, so "|m_g| < H" is a theory line there.
+  - **Static potentials:** bounded only with trace content.
+  - **The R19-34 H-cov placeholder (1.0e-21)** fails the Earth rows by 6.7e7 and the hot era (tachyonic) by ~1e15 in |A|. It passes Galaxy/IGM.

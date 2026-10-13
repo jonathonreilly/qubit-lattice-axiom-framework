@@ -1,0 +1,43 @@
+=== (a) placeholder A(T) = m_g^2/H^2 ===
+  reproduction of r1934_sizes.out (t,b,c only, g* = 106.75 above 90 GeV else 86.25):
+    T =  150.0 GeV: m_g^2/H^2 = -2.046e+13
+    T =  100.0 GeV: m_g^2/H^2 = -3.153e+13
+    T =   50.0 GeV: m_g^2/H^2 = -4.652e+13
+    T =   10.0 GeV: m_g^2/H^2 = -2.611e+14
+    T =    1.0 GeV: m_g^2/H^2 = -4.803e+15
+  extended (this run; g* steps; hadrons partial below 0.155 GeV):
+    T = 150.0000 GeV: A = -2.274e+13   |m_g|/H = 4.769e+06
+    T = 100.8219 GeV: A = -3.486e+13   |m_g|/H = 5.904e+06
+    T =   9.7702 GeV: A = -2.865e+14   |m_g|/H = 1.693e+07
+    T =   0.9950 GeV: A = -7.938e+15   |m_g|/H = 8.910e+07
+    T =   0.2031 GeV: A = -1.883e+16   |m_g|/H = 1.372e+08
+    T =   0.1013 GeV: A = -2.401e+16   |m_g|/H = 1.549e+08
+    T =   0.0098 GeV: A = -1.887e+16   |m_g|/H = 1.374e+08
+    T =   0.0010 GeV: A = -1.537e+18   |m_g|/H = 1.240e+09
+
+=== (b) branch T growth exponent N = int sqrt|A| dlnT ===
+    from 150 GeV to 100.8219 GeV: N = 2.128e+06 e-folds of tensor amplitude
+    from 150 GeV to   9.7702 GeV: N = 2.204e+07 e-folds of tensor amplitude
+    from 150 GeV to   0.9950 GeV: N = 1.318e+08 e-folds of tensor amplitude
+    from 150 GeV to   0.1013 GeV: N = 4.712e+08 e-folds of tensor amplitude
+    from 150 GeV to   0.0098 GeV: N = 8.750e+08 e-folds of tensor amplitude
+    from 150 GeV to   0.0010 GeV: N = 2.038e+09 e-folds of tensor amplitude
+    (superhorizon check at A = 3e13: p = 2.7386e+06 vs sqrt(A)/2 = 2.7386e+06 per ln t)
+
+=== (c) ceiling from Delta N_eff (vacuum seed) ===
+    T = 150.000 GeV, one e-fold            : N_max = 66.2 -> |A| <= 4.38e+03  (|m_g|/H <= 66.2)
+    T = 150.000 GeV, whole 150 GeV->1 MeV  : N_max = 71.0 -> |A| <= 3.55e+01  (|m_g|/H <= 6.0)
+    T =   1.000 GeV, one e-fold            : N_max = 76.2 -> |A| <= 5.80e+03  (|m_g|/H <= 76.2)
+    T =   1.000 GeV, whole 150 GeV->1 MeV  : N_max = 81.0 -> |A| <= 4.62e+01  (|m_g|/H <= 6.8)
+    T =   0.001 GeV, one e-fold            : N_max = 90.5 -> |A| <= 8.19e+03  (|m_g|/H <= 90.5)
+    T =   0.001 GeV, whole 150 GeV->1 MeV  : N_max = 95.4 -> |A| <= 6.40e+01  (|m_g|/H <= 8.0)
+    placeholder N over the era = 2.04e+09  vs N_max ~ 50-100 -> excess factor in sqrt|A| ~ 2.5e+07, in |A| ~ 6.5e+14
+
+=== (d) today, branch T: cosmic-mean baryons ===
+    rho_b = 4.207e-28 kg/m3 (n_b = 0.253 /m3); placeholder |m_g| = 6.523e-25 eV; H0 = 1.438e-33 eV; |m_g|/H0 = 4.537e+08
+    e-fold time 1/|m_g| = 1.01e+09 s = 32.0 yr; matter era |m_g|/H ~ const ~ 8.1e+08
+    ceiling |m_g(rho_b)| <= N_max H0 (N_max ~ 100): 1.44e-31 eV  -> mu_rho <= 4.91e-35 eV^2 m^3/kg ; placeholder/bound = 2.1e+13
+
+=== (e) branch M: superhorizon tensor damping ===
+    placeholder |m_g| > H from 150 GeV to today: ln(a0/a) ~ 34.1 -> amplitude factor ~ e^-51
+    -> primordial tensors erased; r ~ 0, consistent with r_0.05 < 0.036 (BICEP/Keck 2021). No current bound on branch M.

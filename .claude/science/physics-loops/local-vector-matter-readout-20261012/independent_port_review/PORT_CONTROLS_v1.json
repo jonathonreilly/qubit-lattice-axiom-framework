@@ -1,0 +1,410 @@
+{
+  "schema": "independent_canonical_port_controls_v1",
+  "created_utc": "2026-10-12T23:55:23.280709+00:00",
+  "script_sha256": "04236ac9d5d9e66197dc89f2022234d6033a08425589c8ca5952a617af73b11b",
+  "frozen_source_manifest_sha256": "8158829adf3195eaceb75cf921f2179ec3b84c0d8a10216d0a954a2dee901e2d",
+  "full_author_runner_imported_or_executed": false,
+  "author_numerical_producer_executed": false,
+  "isolated_author_code_executed": [
+    "main AST",
+    "digest AST"
+  ],
+  "checks": [
+    {
+      "name": "radiation_scientific_result_exactly_preserved",
+      "passed": true,
+      "detail": "Every scientific JSON value agrees exactly; only source identities and elapsed time are excluded."
+    },
+    {
+      "name": "readout_scientific_result_exactly_preserved",
+      "passed": true,
+      "detail": "Every scientific JSON value agrees exactly; only source identities and elapsed time are excluded."
+    },
+    {
+      "name": "canonical_cache_identity",
+      "passed": true,
+      "detail": {
+        "runner_sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+        "input_fingerprint_sha256": "95cc9b372e9731964a397d7cb90cd6697eb3d01ddcea33967047637efd02ac5b"
+      }
+    },
+    {
+      "name": "cache_stdout_stable_across_whitespace_only_version",
+      "passed": true,
+      "detail": "Distinct raw executions retained; no earlier result is relabelled with the later source hash."
+    },
+    {
+      "name": "repeatable_default_output",
+      "passed": true,
+      "detail": "Only new entrypoint/digest AST executed; scientific producer fixtures are fixed copies of preserved results."
+    },
+    {
+      "name": "json_and_sidecar_same_result",
+      "passed": true,
+      "detail": {
+        "sidecar_sha256": "a40175f85273ef6efd73638b2b85c4cb857ce5f2746d9cfc16acf8245c26a921",
+        "families": [
+          "conservative_symbolic_frequencies_and_angular_integrals",
+          "angular_tensor_quadrature",
+          "finite_source_harmonics_and_odd_symmetry",
+          "slow_source_convergence",
+          "exact_comparator_root_bracket",
+          "radiation_false_alternatives",
+          "symbolic_plane_tide",
+          "endpoint_acceleration_integral",
+          "angular_pattern_and_finite_arm",
+          "two_speed_network",
+          "negative_controls"
+        ]
+      }
+    },
+    {
+      "name": "exclusive_sidecar_collision_preserves_existing_bytes",
+      "passed": true,
+      "detail": "Producer calls precede exclusive open; collisions fail without overwriting evidence or printing PASS."
+    },
+    {
+      "name": "radiation_producer_failure_stops_publication",
+      "passed": true,
+      "detail": {
+        "producer_calls": [
+          "radiation"
+        ]
+      }
+    },
+    {
+      "name": "readout_producer_failure_stops_publication",
+      "passed": true,
+      "detail": {
+        "producer_calls": [
+          "radiation",
+          "readout"
+        ]
+      }
+    },
+    {
+      "name": "reject_missing_radiation_row",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_wrong_angular_power",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_nonzero_odd_density",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_wrong_convergence",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_failed_radiation_alternative",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_missing_bracket_endpoint",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_reported_readout_failure",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "reject_duplicate_readout_family",
+      "passed": true,
+      "detail": {
+        "exception": {
+          "type": "AssertionError",
+          "message": ""
+        }
+      }
+    },
+    {
+      "name": "aggregation_scope_documented",
+      "passed": true,
+      "detail": "The readout family map uses literal True after its producer returns. Artificially false payload fields with fail_count=0 are not independently revalidated. In the unchanged real producer, corresponding assertions execute before return; their failures propagate, as tested above. This is a summary layer, not a second math verifier."
+    },
+    {
+      "name": "cross_block_calibration_is_stable_and_anisotropic",
+      "passed": true,
+      "detail": {
+        "q_lower": "172774810212258869425834063750897589292044457/89202980794122492566142873090593446023921664",
+        "q_upper": "1382198481698070955406672510007180714336355657/713623846352979940529142984724747568191373312",
+        "r_squared_interval": [
+          "713623846352979940529142984724747568191373312/1382198481698070955406672510007180714336355657",
+          "89202980794122492566142873090593446023921664/172774810212258869425834063750897589292044457"
+        ],
+        "polar_equatorial_ratio_interval": [
+          "345549620424517738851668127501795178584088914/261977791006381361991976936841491035315966121",
+          "2764396963396141910813345020014361428672711314/2095822328051050895935815494731928282527728969"
+        ],
+        "vertical_squared_frequency_ratio_interval": [
+          "758673057360868866180756444167061990237764279/2095822328051050895935815494731928282527728969",
+          "94834132170108608272594555520882748779720535/261977791006381361991976936841491035315966121"
+        ],
+        "independent_elimination": "With r=cT/cL, static ratio=2/(1+r^2), vertical ratio=(3r^2-1)/(1+r^2).",
+        "domain": "Unique q>=1 root already proved monotone; positive square-root branch preserved when squaring. These are conditional calibration consequences, not observation fits."
+      }
+    },
+    {
+      "name": "sphere_moment_power_normalization",
+      "passed": true,
+      "detail": {
+        "transverse": "32/35",
+        "longitudinal": "16/105",
+        "route": "At one orbital phase n.Ithird.n=-8 nx ny in units reduced_mass*a^2*Omega^3; sphere moments and G/(16*pi*alpha) give these coefficients. No author quadrature executed."
+      }
+    }
+  ],
+  "checks_passed": 20,
+  "checks_failed": 0,
+  "isolated_attempts": [
+    {
+      "label": "default_first",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "PASS conservative frequencies, leading radiation,16 prescribed-source harmonic controls and exact calibration bracket\nPASS plane tide,36 endpoint integrations, finite-arm and two-speed network controls\nFalse alternatives are formula comparisons, not mutated-source executions.\nper_element: vector/tidal components and endpoint arms explicitly checked.\nper_site: four synthetic network sites; no physical discrete-site model supplied.\nper_mode: transverse/longitudinal radiative branches and mechanical projection checked.\nper_block: six matter/radiation and five readout families checked.\nlattice_wide: checked and not executed; continuum homogeneous candidate only.\nTOTAL: PASS=11 FAIL=0; conditional-support, no empirical acceptance.\n",
+      "stderr": "",
+      "exception": null
+    },
+    {
+      "label": "default_second",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "PASS conservative frequencies, leading radiation,16 prescribed-source harmonic controls and exact calibration bracket\nPASS plane tide,36 endpoint integrations, finite-arm and two-speed network controls\nFalse alternatives are formula comparisons, not mutated-source executions.\nper_element: vector/tidal components and endpoint arms explicitly checked.\nper_site: four synthetic network sites; no physical discrete-site model supplied.\nper_mode: transverse/longitudinal radiative branches and mechanical projection checked.\nper_block: six matter/radiation and five readout families checked.\nlattice_wide: checked and not executed; continuum homogeneous candidate only.\nTOTAL: PASS=11 FAIL=0; conditional-support, no empirical acceptance.\n",
+      "stderr": "",
+      "exception": null
+    },
+    {
+      "label": "json_plus_exclusive_sidecar",
+      "argv": [
+        "--json",
+        "--output-json",
+        "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go/.claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/io_fixtures/same_run.json"
+      ],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "{\n  \"input_identities\": {\n    \"scripts/local_vector_matter_readout_2026_10_12.py\": \"50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e\",\n    \"docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md\": \"5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d\",\n    \"docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md\": \"12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e\"\n  },\n  \"environment\": {\n    \"python\": \"3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]\",\n    \"numpy\": \"2.4.1\",\n    \"scipy\": \"1.17.0\",\n    \"sympy\": \"1.14.0\"\n  },\n  \"radiation\": {\n    \"symbolic\": {\n      \"equatorial_frequency\": \"G*(D + N)*(m1 + m2)/(2*a**3)\",\n      \"vertical_frequency\": \"G*(3*D - N)*(m1 + m2)/(2*a**3)\",\n      \"angular_integrals\": [\n        \"64*pi/35\",\n        \"32*pi/105\"\n      ],\n      \"ratio\": \"(6*q**(7/2) + 1)/(21*q + 21)\",\n      \"ratio_derivative\": \"(15*q**(7/2) + 21*q**(5/2) - 1)/(21*(q + 1)**2)\",\n      \"isotropic_ratio\": \"1/6\"\n    },\n    \"controls\": [\n      {\n        \"q\": 1.0,\n        \"a_Omega_over_cT\": 0.08,\n        \"angular_tensor_power\": [\n          2.3405714285714184e-06,\n          3.9009523809523664e-07\n        ],\n        \"leading_power\": [\n          2.3405714285714285e-06,\n          3.900952380952381e-07\n        ],\n        \"exact_source_harmonic_power\": [\n          2.3383875118234486e-06,\n          3.898213675551299e-07\n        ],\n        \"relative_to_leading_minus_one\": -0.0009000685869462455,\n        \"harmonics_14_to_16_fraction\": 1.6865254346521166e-24,\n        \"max_odd_density_coefficient\": 9.272255196210977e-17,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.0,\n        \"a_Omega_over_cT\": 0.04,\n        \"angular_tensor_power\": [\n          1.4628571428571365e-07,\n          2.438095238095229e-08\n        ],\n        \"leading_power\": [\n          1.4628571428571428e-07,\n          2.4380952380952383e-08\n        ],\n        \"exact_source_harmonic_power\": [\n          1.4625117724906894e-07,\n          2.437663180031742e-08\n        ],\n        \"relative_to_leading_minus_one\": -0.0002276813512517295,\n        \"harmonics_14_to_16_fraction\": 3.1475882312818165e-23,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.0,\n        \"a_Omega_over_cT\": 0.02,\n        \"angular_tensor_power\": [\n          9.142857142857103e-09,\n          1.5238095238095181e-09\n        ],\n        \"leading_power\": [\n          9.142857142857143e-09,\n          1.523809523809524e-09\n        ],\n        \"exact_source_harmonic_power\": [\n          9.142315883600568e-09,\n          1.523741852913373e-09\n        ],\n        \"relative_to_leading_minus_one\": -5.708720181785143e-05,\n        \"harmonics_14_to_16_fraction\": 5.363793937569738e-22,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.0,\n        \"a_Omega_over_cT\": 0.01,\n        \"angular_tensor_power\": [\n          5.714285714285689e-10,\n          9.523809523809488e-11\n        ],\n        \"leading_power\": [\n          5.714285714285714e-10,\n          9.523809523809525e-11\n        ],\n        \"exact_source_harmonic_power\": [\n          5.714201079317383e-10,\n          9.523703724895801e-11\n        ],\n        \"relative_to_leading_minus_one\": -1.42822289554978e-05,\n        \"harmonics_14_to_16_fraction\": 8.423616547237577e-21,\n        \"max_odd_density_coefficient\": 9.936498493193006e-17,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.5,\n        \"a_Omega_over_cT\": 0.08,\n        \"angular_tensor_power\": [\n          4.299904279902793e-06,\n          1.7337566137566074e-07\n        ],\n        \"leading_power\": [\n          4.299904279902811e-06,\n          1.7337566137566149e-07\n        ],\n        \"exact_source_harmonic_power\": [\n          4.2958921686478584e-06,\n          1.7329416629982413e-07\n        ],\n        \"relative_to_leading_minus_one\": -0.000915124111284582,\n        \"harmonics_14_to_16_fraction\": 1.5941245557506161e-24,\n        \"max_odd_density_coefficient\": 1.2412670766236366e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.5,\n        \"a_Omega_over_cT\": 0.04,\n        \"angular_tensor_power\": [\n          2.687440174939246e-07,\n          1.0835978835978797e-08\n        ],\n        \"leading_power\": [\n          2.687440174939257e-07,\n          1.0835978835978843e-08\n        ],\n        \"exact_source_harmonic_power\": [\n          2.68680568906169e-07,\n          1.083469730034231e-08\n        ],\n        \"relative_to_leading_minus_one\": -0.00023152630461020784,\n        \"harmonics_14_to_16_fraction\": 3.017051133053786e-23,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.5,\n        \"a_Omega_over_cT\": 0.02,\n        \"angular_tensor_power\": [\n          1.6796501093370286e-08,\n          6.772486772486748e-10\n        ],\n        \"leading_power\": [\n          1.6796501093370355e-08,\n          6.772486772486777e-10\n        ],\n        \"exact_source_harmonic_power\": [\n          1.6795506736622482e-08,\n          6.772286212844378e-10\n        ],\n        \"relative_to_leading_minus_one\": -5.805352173560152e-05,\n        \"harmonics_14_to_16_fraction\": 5.087487488878271e-22,\n        \"max_odd_density_coefficient\": 1.2412670766236366e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 1.5,\n        \"a_Omega_over_cT\": 0.01,\n        \"angular_tensor_power\": [\n          1.0497813183356429e-09,\n          4.2328042328042174e-11\n        ],\n        \"leading_power\": [\n          1.0497813183356472e-09,\n          4.2328042328042355e-11\n        ],\n        \"exact_source_harmonic_power\": [\n          1.0497657698991367e-09,\n          4.23277288292913e-11\n        ],\n        \"relative_to_leading_minus_one\": -1.4524127191717362e-05,\n        \"harmonics_14_to_16_fraction\": 8.026333571447539e-21,\n        \"max_odd_density_coefficient\": 1.1102230246251565e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 2.0,\n        \"a_Omega_over_cT\": 0.08,\n        \"angular_tensor_power\": [\n          6.620135715977341e-06,\n          9.752380952380911e-08\n        ],\n        \"leading_power\": [\n          6.620135715977368e-06,\n          9.752380952380949e-08\n        ],\n        \"exact_source_harmonic_power\": [\n          6.613958666609196e-06,\n          9.748935525982836e-08\n        ],\n        \"relative_to_leading_minus_one\": -0.0009246529402946457,\n        \"harmonics_14_to_16_fraction\": 1.509313580681393e-24,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 2.0,\n        \"a_Omega_over_cT\": 0.04,\n        \"angular_tensor_power\": [\n          4.137584822485838e-07,\n          6.095238095238069e-09\n        ],\n        \"leading_power\": [\n          4.137584822485855e-07,\n          6.095238095238093e-09\n        ],\n        \"exact_source_harmonic_power\": [\n          4.136607967573295e-07,\n          6.094697159692073e-09\n        ],\n        \"relative_to_leading_minus_one\": -0.00023395392738578824,\n        \"harmonics_14_to_16_fraction\": 2.831828841041844e-23,\n        \"max_odd_density_coefficient\": 1.2412670766236366e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 2.0,\n        \"a_Omega_over_cT\": 0.02,\n        \"angular_tensor_power\": [\n          2.5859905140536488e-08,\n          3.8095238095237933e-10\n        ],\n        \"leading_power\": [\n          2.5859905140536594e-08,\n          3.8095238095238083e-10\n        ],\n        \"exact_source_harmonic_power\": [\n          2.5858374228173787e-08,\n          3.8094391871908246e-10\n        ],\n        \"relative_to_leading_minus_one\": -5.866327328829524e-05,\n        \"harmonics_14_to_16_fraction\": 4.841383062377893e-22,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 2.0,\n        \"a_Omega_over_cT\": 0.01,\n        \"angular_tensor_power\": [\n          1.6162440712835305e-09,\n          2.3809523809523708e-11\n        ],\n        \"leading_power\": [\n          1.6162440712835371e-09,\n          2.3809523809523802e-11\n        ],\n        \"exact_source_harmonic_power\": [\n          1.6162201328995247e-09,\n          2.3809391547927427e-11\n        ],\n        \"relative_to_leading_minus_one\": -1.4676743297137307e-05,\n        \"harmonics_14_to_16_fraction\": 7.536815809686777e-21,\n        \"max_odd_density_coefficient\": 9.936498493193006e-17,\n        \"equatorial_orbit_vertically_stable\": true\n      },\n      {\n        \"q\": 5.0,\n        \"a_Omega_over_cT\": 0.08,\n        \"angular_tensor_power\": [\n          2.616838410239743e-05,\n          1.560380952380946e-08\n        ],\n        \"leading_power\": [\n          2.616838410239755e-05,\n          1.560380952380953e-08\n        ],\n        \"exact_source_harmonic_power\": [\n          2.6143967170869126e-05,\n          1.5601595972833274e-08\n        ],\n        \"relative_to_leading_minus_one\": -0.0009325983941614879,\n        \"harmonics_14_to_16_fraction\": 1.328043450298966e-24,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": false\n      },\n      {\n        \"q\": 5.0,\n        \"a_Omega_over_cT\": 0.04,\n        \"angular_tensor_power\": [\n          1.6355240063998395e-06,\n          9.752380952380912e-10\n        ],\n        \"leading_power\": [\n          1.6355240063998469e-06,\n          9.752380952380956e-10\n        ],\n        \"exact_source_harmonic_power\": [\n          1.6351378705914678e-06,\n          9.752034422145233e-10\n        ],\n        \"relative_to_leading_minus_one\": -0.00023597350423576469,\n        \"harmonics_14_to_16_fraction\": 2.568265254645009e-23,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": false\n      },\n      {\n        \"q\": 5.0,\n        \"a_Omega_over_cT\": 0.02,\n        \"angular_tensor_power\": [\n          1.0222025039998997e-07,\n          6.09523809523807e-11\n        ],\n        \"leading_power\": [\n          1.0222025039999043e-07,\n          6.095238095238097e-11\n        ],\n        \"exact_source_harmonic_power\": [\n          1.0221419893753465e-07,\n          6.09518392406145e-11\n        ],\n        \"relative_to_leading_minus_one\": -5.917024832513551e-05,\n        \"harmonics_14_to_16_fraction\": 4.349917985841094e-22,\n        \"max_odd_density_coefficient\": 1.0152208857194486e-16,\n        \"equatorial_orbit_vertically_stable\": false\n      },\n      {\n        \"q\": 5.0,\n        \"a_Omega_over_cT\": 0.01,\n        \"angular_tensor_power\": [\n          6.388765649999373e-09,\n          3.809523809523794e-12\n        ],\n        \"leading_power\": [\n          6.388765649999402e-09,\n          3.809523809523811e-12\n        ],\n        \"exact_source_harmonic_power\": [\n          6.3886710252281694e-09,\n          3.809515344475555e-12\n        ],\n        \"relative_to_leading_minus_one\": -1.4803617275904735e-05,\n        \"harmonics_14_to_16_fraction\": 6.850843649240031e-21,\n        \"max_odd_density_coefficient\": 1.0007415106216804e-16,\n        \"equatorial_orbit_vertically_stable\": false\n      }\n    ],\n    \"calibration_example\": {\n      \"sqrt_q_bracket\": [\n        \"695857853623/500000000000\",\n        \"1391715707247/1000000000000\"\n      ],\n      \"q_bracket\": [\n        \"484218152448808494226129/250000000000000000000000\",\n        \"1936872609798017408319009/1000000000000000000000000\"\n      ],\n      \"q_approx\": 1.9368726097956006,\n      \"transverse_to_longitudinal_speed\": 0.7185375538936453,\n      \"polar_to_equatorial_static_potential\": 1.3190034891778315,\n      \"vertical_squared_frequency_to_orbital\": 0.361993021644337,\n      \"scope\": \"Exact polynomial sign bracket; equality to a supplied GR comparator with c_L=c_EM, not a measurement fit.\"\n    },\n    \"mutations\": [\n      {\n        \"name\": \"omit_source_Taylor_half\",\n        \"detected\": true\n      },\n      {\n        \"name\": \"drop_longitudinal_power\",\n        \"detected\": true\n      },\n      {\n        \"name\": \"replace_cT_power7_by5\",\n        \"detected\": true\n      }\n    ],\n    \"elapsed_sec\": 0.21471633296459913,\n    \"scope\": \"Leading weak-source circular radiation and conservative mechanics only; no empirical test or relativistic matter model.\"\n  },\n  \"readout\": {\n    \"schema\": \"vector_mechanical_readout_controls_v1\",\n    \"pass_count\": 5,\n    \"fail_count\": 0,\n    \"families\": [\n      {\n        \"family\": \"symbolic_plane_tide\",\n        \"rank_at_most_one\": true,\n        \"transverse_projection_exactly_zero\": true\n      },\n      {\n        \"family\": \"endpoint_acceleration_integral\",\n        \"cases\": [\n          {\n            \"case\": 0,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.05,\n            \"mu\": 0.36492630924322556,\n            \"relative_error\": 5.301821510890874e-15\n          },\n          {\n            \"case\": 0,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.05,\n            \"mu\": 0.36492630924322556,\n            \"relative_error\": 4.705327439136877e-15\n          },\n          {\n            \"case\": 0,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.05,\n            \"mu\": 0.36492630924322556,\n            \"relative_error\": 5.779373258061417e-15\n          },\n          {\n            \"case\": 1,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.05,\n            \"mu\": 0.61840350412774,\n            \"relative_error\": 3.2984117328669173e-15\n          },\n          {\n            \"case\": 1,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.05,\n            \"mu\": 0.61840350412774,\n            \"relative_error\": 5.962215344683895e-15\n          },\n          {\n            \"case\": 1,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.05,\n            \"mu\": 0.61840350412774,\n            \"relative_error\": 5.1036320581068286e-15\n          },\n          {\n            \"case\": 2,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.05,\n            \"mu\": 0.7537284922362251,\n            \"relative_error\": 5.90118260619616e-16\n          },\n          {\n            \"case\": 2,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.05,\n            \"mu\": 0.7537284922362251,\n            \"relative_error\": 8.849557939494478e-16\n          },\n          {\n            \"case\": 2,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.05,\n            \"mu\": 0.7537284922362251,\n            \"relative_error\": 6.891332932451839e-16\n          },\n          {\n            \"case\": 3,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.6,\n            \"mu\": 0.31526912884974045,\n            \"relative_error\": 1.5441481732719832e-15\n          },\n          {\n            \"case\": 3,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.6,\n            \"mu\": 0.31526912884974045,\n            \"relative_error\": 3.5526603094649196e-16\n          },\n          {\n            \"case\": 3,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.6,\n            \"mu\": 0.31526912884974045,\n            \"relative_error\": 1.765200721139213e-16\n          },\n          {\n            \"case\": 4,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.6,\n            \"mu\": 0.5688226055482324,\n            \"relative_error\": 1.5862298865989652e-15\n          },\n          {\n            \"case\": 4,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.6,\n            \"mu\": 0.5688226055482324,\n            \"relative_error\": 6.514230618606325e-16\n          },\n          {\n            \"case\": 4,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.6,\n            \"mu\": 0.5688226055482324,\n            \"relative_error\": 6.764684233392842e-16\n          },\n          {\n            \"case\": 5,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.6,\n            \"mu\": -0.5163079144358012,\n            \"relative_error\": 2.3262096295228907e-15\n          },\n          {\n            \"case\": 5,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.6,\n            \"mu\": -0.5163079144358012,\n            \"relative_error\": 1.2400532617572893e-15\n          },\n          {\n            \"case\": 5,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.6,\n            \"mu\": -0.5163079144358012,\n            \"relative_error\": 1.2721997477652705e-15\n          },\n          {\n            \"case\": 6,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 2.5,\n            \"mu\": -0.37620710722097406,\n            \"relative_error\": 1.0789266430466254e-15\n          },\n          {\n            \"case\": 6,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 2.5,\n            \"mu\": -0.37620710722097406,\n            \"relative_error\": 4.038410846171509e-16\n          },\n          {\n            \"case\": 6,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 2.5,\n            \"mu\": -0.37620710722097406,\n            \"relative_error\": 4.233808029351569e-16\n          },\n          {\n            \"case\": 7,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 2.5,\n            \"mu\": 0.23278909679999504,\n            \"relative_error\": 1.1481741111261478e-15\n          },\n          {\n            \"case\": 7,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 2.5,\n            \"mu\": 0.23278909679999504,\n            \"relative_error\": 2.0221867959034512e-16\n          },\n          {\n            \"case\": 7,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 2.5,\n            \"mu\": 0.23278909679999504,\n            \"relative_error\": 2.351961714887337e-16\n          },\n          {\n            \"case\": 8,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 2.5,\n            \"mu\": 0.7553342261122755,\n            \"relative_error\": 8.929088043810958e-16\n          },\n          {\n            \"case\": 8,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 2.5,\n            \"mu\": 0.7553342261122755,\n            \"relative_error\": 4.646106350281439e-16\n          },\n          {\n            \"case\": 8,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 2.5,\n            \"mu\": 0.7553342261122755,\n            \"relative_error\": 4.329694827512241e-16\n          },\n          {\n            \"case\": 9,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.05,\n            \"mu\": 0.042544875585807496,\n            \"relative_error\": 1.1939533040521858e-13\n          },\n          {\n            \"case\": 9,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.05,\n            \"mu\": 0.042544875585807496,\n            \"relative_error\": 1.0379687944409415e-13\n          },\n          {\n            \"case\": 9,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 0.4,\n            \"speed\": 0.7,\n            \"length\": 0.05,\n            \"mu\": 0.042544875585807496,\n            \"relative_error\": 8.31438212689573e-14\n          },\n          {\n            \"case\": 10,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.05,\n            \"mu\": -0.9830227112816756,\n            \"relative_error\": 4.597146673060752e-15\n          },\n          {\n            \"case\": 10,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.05,\n            \"mu\": -0.9830227112816756,\n            \"relative_error\": 4.0027922207782556e-15\n          },\n          {\n            \"case\": 10,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 1.0,\n            \"speed\": 1.0,\n            \"length\": 0.05,\n            \"mu\": -0.9830227112816756,\n            \"relative_error\": 4.07117002522278e-15\n          },\n          {\n            \"case\": 11,\n            \"dimensionless_time\": 0.3,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.05,\n            \"mu\": 0.8534846536616014,\n            \"relative_error\": 3.820304079224474e-15\n          },\n          {\n            \"case\": 11,\n            \"dimensionless_time\": 1.9,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.05,\n            \"mu\": 0.8534846536616014,\n            \"relative_error\": 4.87703785523613e-15\n          },\n          {\n            \"case\": 11,\n            \"dimensionless_time\": 4.5,\n            \"omega\": 2.2,\n            \"speed\": 1.8,\n            \"length\": 0.05,\n            \"mu\": 0.8534846536616014,\n            \"relative_error\": 4.407564169414746e-15\n          }\n        ],\n        \"max_relative_error\": 1.1939533040521858e-13,\n        \"max_quad_diagnostic\": 1.123769318843087e-14\n      },\n      {\n        \"family\": \"angular_pattern_and_finite_arm\",\n        \"longitudinal_F\": -0.2142857142857143,\n        \"breathing_pattern\": 0.2142857142857144,\n        \"small_phase_values\": [\n          0.08,\n          0.04,\n          0.02,\n          0.01\n        ],\n        \"errors\": [\n          0.005344946414084413,\n          0.0026725776155947616,\n          0.0013363018591050313,\n          0.0006681525609734277\n        ],\n        \"halving_ratios\": [\n          1.9999218667761447,\n          1.999980466527736,\n          1.9999951166215402\n        ],\n        \"finite_exact_pattern_re_im\": [\n          -0.15688647438003187,\n          -0.12910322483020525\n        ],\n        \"finite_constant_pattern_relative_error\": 0.6593442718210004,\n        \"boundary\": \"mechanical endpoints only; no finite-frequency breathing/optical model compared\"\n      },\n      {\n        \"family\": \"two_speed_network\",\n        \"orientation_factors\": [\n          0.5,\n          -0.3333333333333333,\n          0.4,\n          -0.42857142857142855\n        ],\n        \"projected_baselines\": [\n          0.0,\n          0.8,\n          1.7,\n          3.1\n        ],\n        \"omega\": 1.1,\n        \"speeds\": [\n          0.7,\n          1.0\n        ],\n        \"two_speed_singular_values\": [\n          1.8609186392448593,\n          0.4208868525251535\n        ],\n        \"equal_speed_singular_values\": [\n          1.187252778896614,\n          7.72682523912663e-17\n        ],\n        \"single_alignment_constant_fit_error\": 2.0895103284415337,\n        \"meaning\": \"arbitrary synthetic orientation factors realizable by equal orthogonal arms\"\n      },\n      {\n        \"family\": \"negative_controls\",\n        \"wrong_sign_detected\": true,\n        \"transverse_force_detected\": 1.414213562373095,\n        \"single_speed_rank_reuse_detected\": true,\n        \"type\": \"explicit false-alternative comparisons, not mutated-source executions\"\n      }\n    ],\n    \"elapsed_seconds\": 0.3631450831890106,\n    \"empirical_data_used\": false,\n    \"limits\": [\n      \"linear prescribed plane waves\",\n      \"simultaneous mechanical length only\",\n      \"no optical or strain likelihood\",\n      \"finite-arm synthetic controls only\"\n    ]\n  },\n  \"check_families\": {\n    \"conservative_symbolic_frequencies_and_angular_integrals\": true,\n    \"angular_tensor_quadrature\": true,\n    \"finite_source_harmonics_and_odd_symmetry\": true,\n    \"slow_source_convergence\": true,\n    \"exact_comparator_root_bracket\": true,\n    \"radiation_false_alternatives\": true,\n    \"symbolic_plane_tide\": true,\n    \"endpoint_acceleration_integral\": true,\n    \"angular_pattern_and_finite_arm\": true,\n    \"two_speed_network\": true,\n    \"negative_controls\": true\n  },\n  \"checks_passed\": 11,\n  \"checks_failed\": 0,\n  \"scope\": \"Conditional weak matter/radiation and linear mechanical readout. No empirical fit, optical response or TOE.\"\n}\n",
+      "stderr": "",
+      "exception": null
+    },
+    {
+      "label": "sidecar_collision",
+      "argv": [
+        "--output-json",
+        "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go/.claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/io_fixtures/same_run.json"
+      ],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "FileExistsError",
+        "message": "[Errno 17] File exists: '/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go/.claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/io_fixtures/same_run.json'"
+      }
+    },
+    {
+      "label": "radiation_producer_assertion",
+      "argv": [],
+      "producer_calls": [
+        "radiation"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": "reviewer injected scientific producer failure"
+      }
+    },
+    {
+      "label": "readout_producer_assertion",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": "reviewer injected scientific producer failure"
+      }
+    },
+    {
+      "label": "reject_missing_radiation_row",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_wrong_angular_power",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_nonzero_odd_density",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_wrong_convergence",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_failed_radiation_alternative",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_missing_bracket_endpoint",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_reported_readout_failure",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "reject_duplicate_readout_family",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exception": {
+        "type": "AssertionError",
+        "message": ""
+      }
+    },
+    {
+      "label": "aggregation_scope_false_payload_without_producer_failure",
+      "argv": [],
+      "producer_calls": [
+        "radiation",
+        "readout"
+      ],
+      "stdout": "PASS conservative frequencies, leading radiation,16 prescribed-source harmonic controls and exact calibration bracket\nPASS plane tide,36 endpoint integrations, finite-arm and two-speed network controls\nFalse alternatives are formula comparisons, not mutated-source executions.\nper_element: vector/tidal components and endpoint arms explicitly checked.\nper_site: four synthetic network sites; no physical discrete-site model supplied.\nper_mode: transverse/longitudinal radiative branches and mechanical projection checked.\nper_block: six matter/radiation and five readout families checked.\nlattice_wide: checked and not executed; continuum homogeneous candidate only.\nTOTAL: PASS=11 FAIL=0; conditional-support, no empirical acceptance.\n",
+      "stderr": "",
+      "exception": null
+    }
+  ]
+}

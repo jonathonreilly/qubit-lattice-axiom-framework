@@ -1,0 +1,95 @@
+{
+  "scope": "Read-only context. No selected installed-skill/Git snapshot substitution; specified checkout guidance used.",
+  "paths": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    },
+    {
+      "path": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "role": "Task governance or existing cache/topology API context; not a changed scientific input.",
+      "coverage": "Relevant complete guidance or targeted API sections as documented in report."
+    }
+  ]
+}

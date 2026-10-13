@@ -18,6 +18,15 @@ mathematical checks and has a focused same-session port review. Its report,
 source/final identities and mechanical validation are separate receipts.
 This handoff grants no review or audit verdict.
 
+The completed CANONICAL_PORT_REVIEW.md reports no material correction and
+20 focused port checks passing. All86 initial frozen hashes and complete
+constituent recovery were checked. Parent read the full report and verified
+its26 evidence hashes. Final committed identity and package validation are
+recorded externally under campaign runtime matter_milestone, so the receipt
+need not identify a commit containing itself. The final commit may add only
+this reviewed evidence and disposition metadata after the initial freeze;
+any scientific change requires affected-source confirmation.
+
 The conserved total energy need not be bounded below. Quadrupole radiation
 is a leading weak slow-source result. The q=5 trajectory is prescribed and
 vertically unstable; a matched GR power value is calibration. The observed

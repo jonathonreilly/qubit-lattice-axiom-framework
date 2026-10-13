@@ -1,0 +1,5 @@
+{
+  "exit": 2,
+  "stdout": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/network_wording_correction.diff:5: trailing whitespace.\n+ \n.claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/network_wording_correction.diff:21: trailing whitespace.\n+ \nscripts/local_vector_matter_readout_2026_10_12.py:254: trailing whitespace.\n+    result = {'schema': 'vector_mechanical_readout_controls_v1', \n",
+  "stderr": ""
+}

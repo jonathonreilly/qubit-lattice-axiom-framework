@@ -1,0 +1,19 @@
+{
+  "ordinary_read_failure": {
+    "operation": "Initial source/cache-helper search included unmatched zsh globs scripts/evidence* and scripts/runner*.",
+    "message": "zsh: no matches found: scripts/evidence*",
+    "resolution": "Used rg --files to locate scripts/runner_cache.py and read it directly. No scientific execution or source edit occurred."
+  },
+  "scientific_control_failures": 0,
+  "isolated_expected_rejections": "Preserved in PORT_CONTROLS_v1.json with each exception and stdout/stderr.",
+  "aggregation_scope_diagnostic": "Deliberately false returned payload is accepted by the summary layer; the report explains the unchanged real producer assertions and does not claim a second independent data validator.",
+  "parent_hygiene_failure_record": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/INITIAL_WHITESPACE_CHECK.json",
+  "not_executed": [
+    "full author runner",
+    "author numerical producers",
+    "new empirical fit",
+    "Git commands",
+    "formal audit",
+    "combined pipeline"
+  ]
+}

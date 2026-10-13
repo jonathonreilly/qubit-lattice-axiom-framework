@@ -1,9 +1,8 @@
 # Ranked opportunity queue
 
-1. Publish accepted fixed-initial-state theorem with exact9517parent and honest counterexample packet.
-2. Publish accepted chirped-frequency law and distinct quantitative strengthening.
-3. Compare sealed multi-time product/projection proof with independent derivation; resolve ordering and protocol conditions.
-4. Only then select a distinct unresolved preparation, scaling or physical-channel obligation.
-5. Intended3D creators and physical channel selection remain unresolved.
+1. Publish accepted initial-state fixed-state and chirped-frequency results with exact wrappers and parent maps.
+2. Source-assemble and publish accepted finite multi-time energy words and fixed regular-bin protocols.
+3. Independently check compact-preparation uniformity and conditional actual-control transfer.
+4. Refresh unresolved physical creator/channel and continuum-realization obligations after these milestones.
 
-Fixed deadline2026-10-13T16:42:30Z; no merge/main push/audit verdict/axiom change.
+No unrestricted energycap, pathspace, dense-monitoring or retained-status claim. Deadline164230UTC.

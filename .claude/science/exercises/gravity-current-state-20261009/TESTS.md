@@ -6745,3 +6745,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Archive fix (02:47Z):** the committed R17-8 runner imported from the non-archived `recheck/R16-5`. It now points at `scripts/C5/R16-5`, and its rerun is byte-identical. Reported by R18-4. An audit of every archived runner's sys.path inserts found no other missing directory.
 
   Referee running.
+
+### C5 Round 18, item 8 (pre-registered 02:49Z, before launch)
+
+**R18-8. W7 at infinity: does the off-box tail survive in the global Poincaré charges, and is that observable?**
+- **Plain question.**
+  - R17-2 (refereed OPEN) shows that, in the bulk at leading order, W7's forced translation term is the inverse of a linearized-GR Coulomb dressing.
+  - Its matter coupling can be moved into non-local constraint multipliers, so no instantaneous bulk interaction is demonstrated.
+  - What is lattice-specific is relocated to the global boundary algebra and the q·v = 0 shell, and nobody has computed it.
+  - Do the asymptotic (ADM) Poincaré charges of a system containing edge quanta satisfy the Poincaré algebra? If not, the defect is a boundary-charge anomaly. Is it observable, e.g. as a frame-dependent total momentum or a mass–energy mismatch for bound systems with edge content?
+- **Setting.**
+  - R16-8/R16-12/R17-2's completion with S(1.4)/G(1.4) matter (v_max stated).
+  - Linearized gravity with asymptotically flat falloff.
+  - ADM charges (E, P, J, K) as surface integrals; standard algebra assumed for the gravitational part.
+  - Degree 3 in the Killing sector.
+  - Excluded: nonlinear gravity, pairing, P90.
+- **Prior art (count once):**
+  - R17-2 and its verdict (escapes 2, 3 and 5; Lemmas D and H);
+  - R16-12 and its verdict (B3, presentation-dependent);
+  - R16-8 and its verdict (the shell at infinity, Lemma F);
+  - Regge–Teitelboim boundary terms and Beig–Ó Murchadha asymptotic Poincaré charges (RECALLED).
+- **Removed hypothesis:** bulk-only (compact smearings).
+- **Probes.**
+  - (a) The surface terms of R17-2's dressing W, and their contribution to {K, H}, {K, P} and {K, K} at degree 3.
+  - (b) Does the asymptotic algebra close? If not, give the anomaly in terms of Q_D (the defect charge of edge quanta).
+  - (c) An observable form of the anomaly, and its size for a body with edge content at a stated population (thermal at T, or a primordial relic).
+  - (d) Prices.
+- **FIXED readings.**
+  - **CLOSES:** an explicit degree-3 asymptotic algebra that closes with the surface terms. Checked.
+  - **ANOMALY:** a refereed demonstration that the asymptotic algebra fails by a term ∝ Q_D, with an observable form.
+  - **OPEN:** otherwise.
+- **Expectation.** ANOMALY ∝ Q_D in {K, P}. That would be an edge-quantum Lorentz violation at infinity, unobservable for any thermal population below ~1e19 GeV. That makes W7 a priced, practically invisible defect.

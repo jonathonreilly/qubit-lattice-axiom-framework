@@ -1,10 +1,9 @@
-# Current ranked opportunity queue
+# Ranked opportunity queue
 
-1. Finish exact review and root execution of two-note energy-protocol milestone; regular PR stacked on9506. Keep source approval distinct from executable package approval.
-2. Independently finish kinetic-corrected actual low dynamics and weighted trace interpolation; compare only after separate freezes, with domains and exact effective target explicit.
-3. Independently derive/check explicit finite-order low-field and potential corrections, then the positive-coefficient kinetic remainder and polynomial-time effective-generator construction. Current remains open_gate; no fixed-G0 or generalTOE conclusion.
-4. Integrate checked energy-law Wr/W2, smooth-high and low-block consequences into a coherent next milestone, preserving actual state-class controls and extra graph/probability/tail resources.
-5. Check native energy-weighted form transfer and fixed local-pulse spatial escape; link to meaningful correlation/readout classes only with actual operator hypotheses.
-6. Refresh relevant repository science and opportunity queue; broader microscopic channel/3D selection remains an open premise, not solved by this supplied-chain analysis.
+1. Finish normalized-current composition check and preserve exact even high-sector boundary; package checked scalar-energy, weighted-coherence and actual-current limits in a coherent regular milestone on child of9508.
+2. Finish independent first kinetic correction, energy-domain bootstrap and actual low-dynamics comparison. Check root formulas only after independent freeze.
+3. Finish independent finite-order cell/frame and potential expansion; then independently assess all-order positive kinetic coefficients and the arbitrary fixed polynomial-time effective family. Preserve the c-dependent target and regularity costs.
+4. Check the fixed local-pulse spatial-escape example and its connection to trace compactness; keep actual state-family controls distinct from fixed-protocol obstructions.
+5. Refresh source science and opportunity ranking. Actual microscopic creators, interacting channel selection and 3D realization remain open; do not confuse supplied-chain progress with their closure.
 
-Five regular renewal PRs are not a stop condition. Same-family checks, symbolic coefficients and limited Lean leaves do not confer retained status. Original mathematics authorized; continuous discovery, selective independent checks, milestone PRs. Fixeddeadline2026-10-13T16:42:30Z, never extend.
+Six renewal regular PRs are milestones, not a stop condition. Original math allowed, selective separate checks required. No analytic Lean/retained audit is inferred from scalar compilation or identity caches. Fixed deadline2026-10-13T16:42:30Z.

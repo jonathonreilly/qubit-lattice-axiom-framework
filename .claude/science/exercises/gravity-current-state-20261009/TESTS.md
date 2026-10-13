@@ -8722,3 +8722,24 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **P-R19-31c:** D1∞ holds on every strained law.
 
   Referee running.
+
+**R19-34. The Wilson ψ̄ψ strain channel: does it vanish on the root's actual edges, or does (S_loc) need ψ̄ψ as a background?** (Pre-registered 2026-10-13 07:39Z.)
+- **Plain question.**
+  - R19-31 (worker) finds that a Wilson-type edge has a one-loop additive mass +0.374e² whose strain Hessian is −0.0622e². With thermal ⟨ψ̄ψ⟩ this gives m_g²/H² ~ −5e13 at 100 GeV, unless the edges are twisted (suggested to vanish) or ψ̄ψ is an (S_loc) background.
+  - Which fermion edges does the registered root actually use? R16-1's D1 and R19-5 U/UD carry the doubler-removal choice.
+  - On those edges, is the additive-mass strain Hessian zero (by symmetry or by computation)?
+- **Setting.**
+  - The registered root's fermion kinetic operator(s) per R16-1, R19-5 and S26 (identify them exactly; cite file:line).
+  - The one-loop U(1) self-energy at zero momentum on uniformly strained lattices (h_ij traceless and isotropic).
+  - Comparators: Wilson r = 1 and r = 0, and a twisted-mass edge.
+- **Prior art (count once):** R19-31, R19-21, R16-1, R19-5 and R19-24 (the D1∞ precedent); Wilson additive mass renormalization (comparator, RECALLED).
+- **Probes.**
+  - (a) Identify the root's edges.
+  - (b) The additive mass and its strain gradient and Hessian, per edge type.
+  - (c) A symmetry argument (chiral or shift) for any zero.
+  - (d) If nonzero: the thermal m_g²/H² through SM history, and today's in-matter value, against R19-21's bounds.
+- **FIXED readings.**
+  - **PSI-ZERO:** the root's edges have zero additive-mass strain Hessian at one loop (proved or checked to ≤ 1e-10), with the mechanism.
+  - **PSI-HAZARD:** nonzero on the root's edges, giving a size above the bound unless ψ̄ψ is an (S_loc) background. Name that price.
+  - **OPEN:** otherwise.
+- **Expectation.** PSI-HAZARD if the root uses Wilson-type doubler removal; PSI-ZERO if it uses a chirally symmetric kinetic term (staggered or twisted).

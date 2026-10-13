@@ -1,0 +1,14 @@
+per species Hess(nn) (SF): scalar -1.6769167e-02  Dirac +2.1643250e-02  vector -4.5375621e-02
+per species vertex bubble (R19-29 G(0)/4): scalar -5.0307450e-02  Dirac -7.3632375e-02  vector -3.8439225e-01
+per species implied seagull (Hess - vertex bubble): scalar +3.3538283e-02  Dirac +9.5275625e-02  vector +3.3901663e-01
+band-level SF bubble (=3 Hess): scalar -5.0307501e-02  vector -1.3612686e-01 ; Dirac interband -7.3632350e-02
+  totals scalars  Hess -0.067077  bubble -0.201230  seagull +0.134153
+  totals Dirac    Hess +0.486973  bubble -1.656728  seagull +2.143702
+  totals vectors  Hess -0.544507  bubble -4.612707  seagull +4.068200
+TOTAL bubble -6.470665 (4x = -25.88266; R19-29: -25.88266)  seagull +6.346054  LAM_NN(bare SF) -0.124611  ratio |lam|/|bubble| = 0.0193
+one-point totals: e0 -29.998421  tau -0.611306  (p = 2 tau = -1.222612, W = e0 + p = -31.221032)
+  A: one-point counterterms exactly linear in h_SF (bare SF value)   lam_nn = -0.12461   |lam|/|bubble| = 0.019
+  B: (S) as -e0 sqrt(g), exponential map; P-Tad linear in h_SF       lam_nn = +7.37499   |lam|/|bubble| = 1.140
+  C: one-point counterterms linear in h_lin (g_ij = delta + h)       lam_nn = -0.73592   |lam|/|bubble| = 0.114
+  D: (S) as -e0 sqrt(g) in h_lin; P-Tad linear in h_lin              lam_nn = -8.23552   |lam|/|bubble| = 1.273
+crossover (Theorem Q denominator 4 lam + (c4+8X) s^2, c4+8X = -1.5230): A s*^2 = none  B s*^2 = 19.370  C s*^2 = none  D s*^2 = none

@@ -712,3 +712,102 @@ At strong coupling (R15-5, worker), real-valued fields give exactly the two mode
   - A regular reader does handle phase transitions and lumps.
   - No positive linear reader tracks DESI's phantom-like dark energy.
   - Only a nonlinear running-minimum reader keeps the clock's variable safe in sign, and only in a simplified class of histories.
+
+## 27. Campaign C5, rounds 16–19 and the campaign verdict (2026-10-12/13)
+
+**In plain words.** Referee-checked unless marked "worker" or "pending".
+- The workers, the supervisor and the syntheses (S26, S29) are Claude Opus 5.5, one model family.
+- The referees are codex gpt-5.6-sol, from another vendor.
+- The closing record is in `TESTS.md` ("C5 closing record"); the prices are in `PRICE_NOTE.md` (v7 delta).
+- Nothing was adopted.
+
+**What these rounds did.** Rounds 16–19 registered 66 probes. By 07:50Z on 2026-10-13, 61 had a referee verdict. R19-7 had none, by design. R19-26 and R19-27 have worker readings; their referees are running. R19-25 and R19-28 were still running. **[UPDATE AT CLOSE]**
+
+**The verdict, in one paragraph.**
+- C5 tried to read the rules of a qubit-lattice world off the observations.
+- Every gravitational observation we checked can be met on the grid, but only by adding rules that state the answer.
+- With a few number-free rules, gravity's source is exactly Einstein's. Those rules impose relativity on the lattice vacuum; they do not derive it. With them, the grid predicts nothing new for today's vacuum.
+- The graviton itself is still supplied, not made.
+- Whether the grid costs any tuned numbers now depends on how you count. The same move that makes gravity "number-free" would make the matter light cones number-free too.
+
+**What C5 established in these rounds.**
+- **One light cone, at one loop.** With Standard-Model content and vertices that pass the conservation test, every graviton-speed row and both shear rows can be zeroed at once, using 7 tuned settings (R18-9, R18-13). This holds in the campaign's first-order conservation convention.
+  - Exact conservation exists for the massive particles (R19-5).
+  - The photon's exact version was not closed by the referee: it fails smoothness where the transferred momentum wraps around the zone (R19-9, R19-16). A worker finds the jump came from where one stress component was placed. A local re-placement removes it, with every row unchanged (R19-26, worker; unrefereed).
+- **The whole bill on one law.** 11 tuned equalities, plus a choice of photon window, plus the cosmological constant, per charge class (R19-12). Handing the vacuum pressure to site creation makes it 10.
+- **These rows are real.** Four of the five rows that break gravity's gauge symmetry are true shifts of the graviton's mass or polarization-dependent speed. No gauge choice removes them (R19-23, in its stated model). The fifth (face1) must be recomputed from a larger block, so its earlier payment is conditional.
+- **One law for every mass fails as registered.** With real particle masses at a Planck-size cell:
+  - three speed rows miss the photon comparator;
+  - the shear rows are ~1e-19 per cell, which, read as a graviton mass, is ~1e79 too large (R19-11).
+  - Holding the shear at zero needs a ~1e-98 tuning, which two-loop effects undo in a scalar model (R19-15). Both depend on reading the shear as a graviton mass.
+- **Making the graviton.**
+  - At the special Rokhsar–Kivelson point the tensor mode is gapped or diffusive, never light-like, in the classes proved (R19-1). A worker found none off that point at the sizes reachable (R19-7).
+  - Squeezing the supplied graviton onto a finite site destroys its gauge constraints at every finite size, for the literal truncation (R19-22). Finite sites forbid its exact commutation relation, but not every exact constraint. No finite-site graviton was built.
+- **Set A (continuum plus records).**
+  - At the one gauge-independent insertion, the record noise cancels on every spacelike mode (R19-2). It is not shown to become dark energy.
+  - The earlier "noise overshoots" claim was not upheld (R18-11).
+  - The leaky-wave version, E2, can be stipulated (R19-8). Near its allowed ceiling it predicts that gravitational-wave distances exceed light distances by 0.4–1.3% at redshift 1. E1 predicts none (R19-18). That is a forecast test, not a detection.
+- **Relics.** Stable Planck-mass corner states are bounded by the dark-matter density (R18-12).
+- **Growing space.**
+  - Adding sites one at a time leaves energy behind under the stated accounting (R19-10, conditional).
+  - Entangling each new site at birth needs a coherent operation over more than 256 cells, for a free scalar (R19-13).
+  - A lattice whose spacing grows instead (V1) has no length scale of its own: ℓ/ℓ_P drifts by 4.86e36 since 10 MeV reheating (R19-14). It needs a new rule for how the lattice frame moves (R19-17).
+  - A worker finds that V1 carries the vacuum's pressure correctly if the Higgs corrections are written per site (R19-27; referee running).
+
+**The honest bottom line** (R19-20, refereed IRREDUCIBLE; R19-24, refereed NOT CONFIRMED with an important correction).
+- **The vacuum rules are one rule.** "The lowest state weighs nothing" (S), "its response to uniform stretching does not gravitate" (S\*), and "its response through two derivatives does not gravitate" (S\*\*) are truncations of one rule, (Σ): the lowest state gravitates only as a relativistic vacuum with zero cosmological constant. This holds given the stated symmetry, smoothness and a choice of which energy is "the" energy.
+- **What (Σ) does.** The lattice vacuum's gravitational response, up to two derivatives, has 34 numbers. A relativistic vacuum has 2. (Σ) sets:
+  - 30 by gravity's gauge identities;
+  - 2 by Lorentz conditions;
+  - 1 by Λ = 0;
+  - and leaves 1 as a convention for G.
+
+  So it imposes the answer.
+- **What it leaves out.** It does not give the weight-1 source rule or gravity's self-coupling; those are separate. Whether three rules are the minimum is not proved.
+- **Gravity is Einstein's by stipulation.** That holds for the lowest state, up to two derivatives, at linear order, with a supplied graviton.
+- **No robust new gravity prediction follows.** Today's graviton speed shifts by about 1e-84 at 100 Hz. The early-universe effects are hazards that depend on model, history or bridge. The top-quark bound (M_t ≤ 170.9 GeV, or new particles) comes from Λ = 0, not from the grid.
+- **(Σ) is a counterterm in disguise** (R19-24's Lemma E, confirmed at the level of the equations). Subtracting a fixed linear term from a source is the same as adding a local term to the field's own equation. So (Σ) is a local quadratic graviton counterterm, mass-like pieces included.
+- **The charge block is not shown to need counterterms.** The worker claimed it does. The referee did not confirm that:
+  - the same move written for photons and electrons, "each field's lowest-state dressing is only its relativistic form, at every order", is number-free by the campaign's own convention;
+  - counted as conditions, it is 4 tuned numbers per charge class, reset at every loop order (R19-24);
+  - the campaign must pick one count and apply it to both sectors.
+- **Only one thing pays the matter speeds with no counting argument:** a symmetry that rotates time into space, i.e. time as a fourth grid direction (set B; refereed T1, F2, O1). R19-28 [pending] asks whether set B's other walls survive once (Σ) handles the source.
+
+**The walls that remain.**
+- **The graviton.** No construction at any price except supplying it (P-N1). That conflicts with one M₂(C) per site.
+- **Matter light cones.** 4 tuned numbers per charge class, to about 1e-16 and reset each order. Or a counting rule. Or time on the grid.
+- **History.** In any epoch not in today's lowest state, the subtraction misses lattice shear and pressure:
+  - before the electroweak crossover the shear is tachyonic;
+  - even today, intergalactic matter's tiny Higgs shift gives a graviton mass of ~1.4e-9 eV, ~7e13 above the bound, with a natural lattice slope;
+  - all of this holds only if the shear is read as a graviton mass (R19-21).
+
+  A state-tracking version, (S_loc), is shown only to first order in one model (R19-21, OPEN). The pressure half may be an artefact of how the Higgs corrections are written (R19-27, worker). The shear half is untouched.
+- **Growing space.** Each mode tried has an unpaid cost.
+- **Exactness.** The photon's exact conservation at the zone face: a worker repair (R19-26) is unrefereed. The face1 row's full block.
+- **W15 and W7.** GW170817 as a gauge-invariant test for non-smooth or many-band matter. The far-field anomaly of zone-edge particles, whose population only history bounds.
+- **Quantum gravity inside "the lowest state".** Shown at free one loop with the weight-1 rule (R19-3); open beyond.
+
+**Questions only Jon can answer.**
+1. **Stipulated gravity.** Will you add (Σ), the weight-1 source with gravity's own stress, and a carrier for what (Σ) removes, knowing they make gravity Einstein's by construction and predict nothing new for today's vacuum?
+2. **Counting.** Do law-level rules that define coefficients by the law's own outputs count as zero numbers, as (S) and (Σ) were counted? If yes, the matter cones cost a clause, not numbers. If no, (Σ) counts as 33 conditions.
+3. **Growth.** How does space grow: site creation (energy left behind), growing spacing (no native scale, plus a frame law), or not on the grid at all (set A)?
+4. **History.** Is a subtraction that refers to the actual state (S_loc) acceptable under "a law privileges no states"? The alternative is accepting a conditional early-universe conflict.
+5. **The graviton.** Is a supplied, non-qubit graviton (P-N1) acceptable?
+6. **Set B.** Should time on the grid be reopened as the only symmetry that fixes matter speeds? (R19-28 [pending].)
+7. **Carried.** The top-quark bet or new particles (P93). Signed stencils. W7: accept the anomaly or forbid edge quanta (P141 or P142). E1 or E2, now separable by sirens near E2's ceiling.
+
+**Pending at close.** **[UPDATE AT CLOSE]**
+- Workers: R19-25 (weak/BRST graviton), R19-28 (set B with (Σ)).
+- Referees: R19-26 (photon wrap cut; worker PHOTON-EXACT) and R19-27 (V1 receiver; worker V1-RECEIVER).
+- The R19-21, R19-23 and R19-24 verdicts are back but are not yet recorded in `TESTS.md`.
+
+**Close addendum (10:45Z).** Final referee readings:
+- R19-32: OPEN (KREIN-EMPTY only in scope).
+- R19-33: **B-RP-FAILS** for the conserved bridge; D2 is a non-conserved alternative.
+- R19-34: OPEN (the H-cov hazard is robust, but the root's own strain law was not built).
+
+Not refereed:
+- R19-35's worker reading is LNN-ZERO-FORCED: (S\*) and (Σ) force λ_nn = 0, and the bare value is small and completion-dependent.
+- R19-36 was not completed (stopped at end).
+
+See the TESTS final records.

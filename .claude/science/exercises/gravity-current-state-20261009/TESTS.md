@@ -8900,3 +8900,245 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - not built: a strained law consistent with the UD vertex.
 
   Referee running.
+
+- **Final records at close, 2026-10-13 ~10:45Z.** Codex gpt-5.6-sol at xhigh. These supersede the [worker] labels for R19-32 to R19-35 in the closing record below.
+  - **R19-32: CONFIRMED WITH CORRECTIONS. OPEN overall.**
+    - KREIN-EMPTY meets the four-d rule only in the formula/AP-hopping scope: L = 3, d = 2–5. Emptiness for arbitrary d is not proved.
+    - The spectral reading is always nonempty, but indefinite or spurious.
+    - Attraction holds only for d = 3–5 on-site. Not established: attraction at d = 2, and a finite-d 1/r.
+  - **R19-33: NOT CONFIRMED. Recorded reading: B-RP-FAILS** (the worker said B-RP-OK narrow).
+    - Spatial-TT + matter RP is sound.
+    - W_inst is exact, giving an attractive 1/r with γ = 1.
+    - But K2's Ward-exact (conserved) GR bridge has a strict negative site-RP witness at O(κ²).
+    - D2 is only a foliated, non-local, non-conserved alternative. Unestablished for D2: link RP, positive transfer, normalizability and the loop cone.
+  - **R19-34: NOT CONFIRMED. Recorded reading: OPEN** (the worker said PSI-HAZARD).
+    - The root's edges are Wilson-type D1, confirmed.
+    - The Hessian −0.04047e² is robust for the added H-cov strain law (W/ℓ).
+    - It is not a result for the root's registered UD/SF strain prescription, which was not constructed.
+    - The κ* zero shows that a nonzero response is not intrinsic to the D1 edge.
+  - **R19-35 (worker; referee not run, "not completed (stopped at end)"): worker reading LNN-ZERO-FORCED, naming (S\*) and (Σ).**
+    - Bare λ_nn = −0.1246 = 0.019 × bubble: the Dirac and photon parts nearly cancel. So the size clause of LNN-NONZERO fails.
+    - Lemma R1: a band SF Hessian is −(2w/24)⟨u⁴/E³⟩, with a statistics sign.
+    - λ_nn depends on the unregistered O(h²) one-point completion: A −0.125, B +7.375, C −0.736, D −8.236 (P-R19-35a).
+    - (S\*) forces λ_nn = 0, so face1 shifts.
+    - (Σ) forces λ_nn = 0 and also removes κ, c₄ and X, so face1 is zero by construction (suggested).
+  - **R19-36: not completed (stopped at end).** The worker was stopped with no report.
+
+### C5 closing record (drafted by S29 at about 07:00–07:50Z; for the supervisor to commit at 10:20Z)
+
+**Author and provenance.** Drafted by S29, Claude Opus 5.5. That is the same model family as every C5 worker, the supervisor and the syntheses S5–S26. This record is not refereed and adds no verdicts.
+- Every verdict quoted here comes from codex gpt-5.6-sol at xhigh, from another vendor.
+- The `codex_run.log` headers for R19-21, R19-23 and R19-24 show `model: gpt-5.6-sol` and `reasoning effort: xhigh` (`SP/ref_R19-21/codex_run.log:5,9`; `SP/ref_R19-23/codex_run.log:5,9`; `SP/ref_R19-24/codex_run.log:5,9`).
+
+**Paths.**
+- `P/` = `.claude/science/exercises/gravity-current-state-20261009/`. `TESTS` = `P/TESTS.md`.
+- `vX` = `P/agents/C5_X_referee_verdict.md`. `rX` = `P/agents/C5_X_report.md`.
+- `SP/` = the session scratchpad `C5/` folder. `AX` = `docs/MINIMAL_AXIOMS_2026-06-29.md`. `S26` = `P/agents/C5_S26_synthesis.md`.
+
+**Three verdicts are not yet recorded in `TESTS` or copied to `agents/`.** S29 read them from `SP/` at 06:53Z, 06:54Z and 06:59Z:
+- **vR19-21** = `SP/ref_R19-21/REFEREE_VERDICT.md`;
+- **vR19-23** = `SP/ref_R19-23/REFEREE_VERDICT.md`;
+- **vR19-24** = `SP/ref_R19-24/REFEREE_VERDICT.md`.
+
+Their line numbers below are as of those reads. **Supervisor: record all three, and copy them to `agents/C5_R19-21_referee_verdict.md`, `agents/C5_R19-23_referee_verdict.md` and `agents/C5_R19-24_referee_verdict.md`, before committing this section.**
+
+**Labels.**
+- **[ref]**: referee-confirmed, within the referee's scope.
+- **[ref, bounded: …]**: a refereed FAIL, EXCLUDED, OBSTRUCTED, CONFLICT or no-go, with its class.
+- **[worker]**: a claim the referee did not confirm or has not ruled on.
+- **[pending]**: no reading yet.
+
+**Count at close (as of 10:15Z).**
+- Rounds 16–19 registered 74 items: 14, 13 and 12 in rounds 16–18 (R18-3 dropped), and 35 in round 19 (R19-1 … R19-36, with R19-4 withdrawn).
+- **68 have a codex verdict.** R19-21 … R19-31 are recorded at `TESTS:8547-8578`, `:8747-8775` and `:8828-8853`.
+- R19-7 has no referee, by design (`TESTS:7662`).
+- **Referees running:**
+  - R19-32: worker OPEN; KREIN-EMPTY only in scope (`TESTS:8855-8868`).
+  - R19-33: worker B-RP-OK, narrow (`TESTS:8800-8826`).
+  - R19-34: worker PSI-HAZARD (`TESTS:8882-8902`).
+- **Workers running:** R19-35 (λ_nn) and R19-36 (conserved stress + GR bridge RP). No new probes start after 09:57Z.
+- **[UPDATE AT CLOSE]** For each of these five, record the verdict or reading, or "not completed (stopped at end)".
+
+---
+
+#### 1. Final wall map
+
+"DERIVED" means a refereed no-go or confirmed lemma in a stated class. "OPEN" means no refereed no-go covers the class and there is no PASS. "Cheapest named price" means the least expensive price on record that passes the wall. Nothing is adopted. Rows not listed (W5, W6, W12, W13, W14, W16) are unchanged from S26 §2 (`S26:255-300`). Prices are S-numbers; P148–P189 are new in the PRICE_NOTE v7 delta.
+
+| # | Wall | Final refereed statement (scope) | DERIVED / OPEN at close | Cheapest named price | Axiom lines touched |
+|---|---|---|---|---|---|
+| **Gravity sector, overall** | **What gravitates** | **(Σ) packages (S), (S\*) and (S\*\*) into one number-free renormalization rule. It holds under O_h × T, analyticity and a source/Hamiltonian identification. It "imposes—rather than derives" the Lorentz- and diffeomorphism-invariant vacuum form. It does not entail the weight-1 source, gravitational self-coupling, or a growth/frame completion. "No robust new gravity prediction follows"** (vR19-20:74). The 34 → 2 count: 30 Ward + 2 Lorentz + Λ = 0, plus a Z convention (vR19-20:20-37) | **IRREDUCIBLE** (D1, D2); three-clause minimality unproved (vR19-20:17-18) | P179 ((Σ), all-orders form of (S\*\*₀)) + P157 (weight-1) + P135 (self-stress) + a carrier (P70(d-i) with P52, or P175) | `AX:187` (source/action); `AX:94` ("the lowest state"); `AX:116-123` (no Hamiltonian supplied); `AX:189-190` (G) |
+| W1 | **Electron–photon split (the charge block)** | **On the gravity root's own edges:** F_½ = −5.2444, F_0 = −1.1674, G_½ = 0.11484, Σ = 0.9187. Neutral species stay exactly on the tree cone in the declared basis and truncation. The charge block costs 4 per class, 10 per species, or 2 q²-correlated (vR19-12:3,5,17,21). **No symmetry in the axioms' group G** ties temporal to spatial kinetic terms (Lemma S, R19-24, inside G) (vR19-24:17). **COUNTERTERMS-NEEDED not established:** on the campaign's literal convention, the all-orders clause D1∞ is a number-free DYNAMIC-CLAUSE "by construction"; if law-level outputs are counted as numbers, the reading is OPEN (vR19-24:41,43) | Count DERIVED in the registered counterterm basis (4 per class). **No class-wide no-go:** the reading depends on the counting rule (owner Q2) | P73 (4 per class, re-set each order; = P188 restated), or P188 (D1∞) as a stipulation; P170 for the photon row. Set B's Z⁴ pays it by symmetry [ref T1, F2, O1; R19-24's toy control `vR19-24:13`] | P188: `AX:57`; `AX:114-130`; `AX:94`. Set B: `AX:37` |
+| W2 | **Graviton production** | Six exclusions plus G, Z, Z₀ (S26). **RK point (R19-1):** the RK Hamiltonian is frustration-free and similar to the reversible Markov generator. The f-sum is k⁰ at every finite βU (L ≥ 3), so the SMA gives a flat gap. Under uniform clustering there is no linear finite-mode branch (vR19-1:3,7,13,15,17). **Finite slots (R19-22):** the literal Holstein–Primakoff truncation destroys the first-class pair at every finite S (Lemma J). Finite dimension forbids the noncompact CCR, but not every exact finite constraint (modular Weyl stabilizers are a counterexample) (vR19-22:5,7,17) | DERIVED (exclusions; RK-point NEITHER). **Production OPEN.** [worker, R19-7] Off RK: no linear T₂ at ≤ 8-site ED. R19-25 [pending] | **P-N1**, a supplied CCR graviton, is the only working source. Finite-site options: P183 + P184, or P185. None is built | P-N1: `AX:47`. P183: `AX:47`, or `AX:37` + `AX:57` |
+| W3 | **Graviton–matter cone** | **SM content zeroes all axial and off-axis rows at one loop, in the O(q) convention:** R18-9 used 5 continuous knobs (vR18-9:17,21); R18-13 uses 7 (vR18-13:11). **Exact W1 exists for U and for every admissible smooth massive Wilson–Dirac pair kernel** (class 𝒢), with the rows unchanged (vR19-5:3-9,17). **The rows are physical:** μ_E, μ_T2, Ξ_Eg − Ξ_T2g and Ξ_face2 − Ξ_T2g are invariant leading pole shifts. face1 enters only through the A₁ Schur complement, so R18-13/R19-12's face1 payment is conditional (vR19-23:3,24,38,76) | Payable at one loop [ref, O(q) convention; exact W1 for massive species]. **OPEN:** the photon's exact completion (R19-9, R19-16 NOT CONFIRMED). [worker, R19-26] PHOTON-EXACT: the cut jump came from placing VW's site-placed off-diagonal kernel at R9-9's plaquette centre (an exact half-shift). A local 4-point re-placement F removes it, with W1 ≤ 2.0e-15 torus-wide and every row unchanged (`SP/R19-26/R19-26_report.md:33-61`); the face1 A₁ recomputation; one law across SM masses (R19-11 OPEN) | Tunings: P129, P133, P134, P147, P151, P152, P159, P160, P186; law data P191 [worker]. Or **P179 (Σ)**, a stipulation: by R19-24's Lemma E, a local quadratic graviton counterterm (vR19-24:27) | `AX:187`; `AX:114-130` |
+| W4 | **Shear** | **Lemma H:** the shear rows are the complete uniform-strain Hessian of the lowest-state energy, seagull included. No registered isotropic clause removes A = μ_E − μ_T2, and exact W1 does not force μ = 0. Conditional on the graviton bridge, the registered route needs a radiatively unstable ~1e-98 tuning (shown in the strain-blind NN λφ⁴ model). **(S\*) earns STRUCTURAL-ZERO "by construction"; as a mechanism it is tautological** (vR19-15:3,5,14,16,18) | DERIVED as a tuning in the registered bridge (conditional). Removed by stipulation | P177 (S\*) or P179 (Σ); or P0 + P167 | `AX:187`; `AX:94` |
+| W7 | **Off-box tail** | ANOMALY at degree 2 (R18-8). **Relics BOUNDED, narrowly:** Y ≤ 3.76e-28 (D1 doubler) and Y ≤ 1.79e-29 (2/a corner photon). The universal corner dichotomy, the Γ/H ceiling, the T_RH brackets and "translation invariance invalidates standard expansion" are not confirmed (vR18-12:3,5,13,15,17-21) | DERIVED (boundary anomaly). Relic population BOUNDED via Ωh². OPEN: interacting stability, F(Q_D) | P141, or P142 (made concrete as P149) | P141: `AX:57-61`, `AX:82-83`, `AX:187`. P142/P149: none (history) |
+| W8 | **Set A, covariant** | **Theorem G:** a = 2 is selected in the contravariant family. The overshoot is not established (vR18-11:3,19,21). **Theorem I₀:** with the newly stipulated complete split, the four-channel source cancels on every spacelike mode. w → −1 is not shown under the registered comoving stationarity (vR19-2:3,5,7,19). **Weight 1:** a coherent number-free common source that replaces R18-7's a = 4 (vR19-6:3,17,21). **E2 + N_c can be stipulated** in its scope, but with no physical sink action (vR19-8:5,15,17). **E2 under L0:** d_L^GW/d_L^EM = exp(γt_lb/2), a 0.44–1.30% excess at z = 1. That is the literal TIE-BROKEN reading by forecast; arbitrarily small γ stays degenerate (vR19-18:5,9) | E1 CONSTRUCTED in scope (R18-7). E2 stipulable in scope. **OPEN:** the noise budget; noise as Λ; the sink action | E1: P138–P140, or P157 + P154 + P155 + P156. E2: add P162 + P163 + P164 | `AX:82-83`; `AX:185-187` |
+| W9, W10 | **Λ** | As S26, plus these. **Creation (R19-10):** a conditional creation-energy obstruction. INJECTS is not established, because the axioms select no embedding, Hamiltonian, comparator or insertion map (vR19-10:3,34,36). **Entangled birth (R19-13):** every deterministic CPTP slab operation needs R > 256a, for the NN free scalar under plane insertion (vR19-13:15,17). **The top-mass condition belongs to the stipulated Λ = 0 rule;** it is not evidence for the grid (vR19-20:74) | DERIVED that Λ needs an added principle (unchanged). (S)-package OPEN | P92 + P93 + P70(d-i) + P135 + P52, with P165 or P171 | `AX:187`; `AX:94`; `AX:37-41` |
+| W11 | **Set C count** | **One law, route A:** 11 equalities + photon window + CC per class (17 per species; 9 q²-correlated). Under (d-i): 10 + window + CC (vR19-12:9-19). **Under (S\*\*₀):** the bill falls to the charge block, 4 per class + CC, but "zero-number gravity block" still costs a 31–32-condition source definition (vR19-19:13). **One law across SM masses fails as registered:** three speed rows exceed R16-2's comparator. The shear residuals O(1e-19) are catastrophic only under the canonical-mass bridge (vR19-11:19,23,29) | Count refereed on one law. **OPEN:** one law for every SM mass | Route A (P73 + P129 + P147 + P151 + six shapes), or P179 + P73 | None (tunings); `AX:187` (vertex data) |
+| W15 | **Translation Ward wall** | Unchanged. R19-5 adds that W15 concerns W2 (the HDA/translation identity), not exact W1 (vR19-5:3) | DERIVED (free finite-band local analytic). OPEN beyond | P90, P64, P124 | As S26 |
+| W17, W18 | **β; the source bridge** | **J2-GAUGE-BRIDGE (R19-3):** harmonic gauge gives c_A = 2, c_B = 4, c_C = 1. At free one loop, conditional on H-V3, P136(ii), P-r193a (now P157) and the class-𝒟 receiver, (S) removes the graviton zero point and (d-i) compensates its isotropic enthalpy (vR19-3:5-12). **N's self-stress is independent of (S\*) (R19-20 D2)** (vR19-20:16) | DERIVED for the literal completions. J2 conditional at free one loop; OPEN beyond | P135 + P136 + P157 | `AX:82-83`; `AX:187` |
+| W19 | **Conserved covariant vertices** | VU, VM, V0 and M excluded at O(q) (S26). **Exact W1 is CONSTRUCTED for U and the massive Wilson–Dirac kernels in class 𝒢.** Lemma S (R18-13) applies only to the channel-tied class (vR19-5:5,9,11) | DERIVED at O(q). Massive species exact [ref]. **Photon OPEN** (vR19-9:3,19; vR19-16:7,13). [worker, R19-26] Closed by a local re-placement (unrefereed) | P159, P160, P191 [worker] | `AX:187` |
+| **W20 (new)** | **Growing space** | **Site creation:** a conditional obstruction (vR19-10:3,34). Entangled birth needs R > 256a in scope (vR19-13:15). **V1 (growing spacing):** no lattice-native scale. The ℓ/ℓ_P drift at 10 MeV reheating is 4.86e36. (S_ad) is not a checked global homogeneous completion (vR19-14:1-8). **V1 + (S_ad)** is conditionally LOCAL-OK for planar NN-scalar cold dust, as a newly priced W/A frame completion (vR19-17:1-9) | **OPEN in every mode tried.** Creation leaves energy (conditional). V1 leaves the scale and frame free. **[worker, R19-27; referee running]** V1-RECEIVER in class 𝒱_ct: per-site, lattice-unit Higgs-sector counterterms on a line of constant physics cancel the state-dependent enthalpy to O(φ⁵ℓ) (Theorem R), with no lattice force and no signalling. Fixed physical-unit counterterms would make the vev drift by ~2e51 per e-fold (`TESTS:8492-8499`) | C-box-E: P52 + P165, or P171. V1: P172 + P174 + P175 (+ P176) + P190 [worker] | P52/P171: `AX:37-41`, `AX:57-58`. P174: `AX:189-190`. P172: `AX:116-123`, `AX:186-187` |
+| **W21 (new)** | **History: states other than today's lowest** | The pre-crossover tachyon is "a serious conditional falsifier, not an established conflict" (vR19-19:11). **Every fixed lowest-state subtraction keeps severe conditional conflict content:** the Higgs-even term flips sign at 563.26 GeV; a natural Wilson slope gives \|m_g\| ≈ 1.42e-9 eV today from intergalactic matter (7.4e13 above the GWTC-4.0 bound); the D1 symmetric-phase enthalpy is 2.68e106 ρ_Λ, which (d-i) absorbs only in C-box-E. **(S_loc) is shown only at O(λ) in one NN scalar model** (vR19-21:3,22-23,25-26,32-38,42). [worker, R19-27; referee running] The enthalpy figure is the value under fixed physical-unit counterterms. With per-site counterterms the state-dependent enthalpy vanishes on V1, and suggestedly in C-box-E too. The shear channels are untouched (`TESTS:8492-8499`; `rR19-27:222-230`) | **OPEN**, with conditional conflict for every fixed subtraction (canonical-mass reading). The enthalpy half may be a scheme artefact [worker]; the shear half stands | P182 (S_loc) + P70(d-i); or P168 (mass-blind, ~14–17 conditions, a tuning) | P182: `AX:94` (state-dependent), `AX:187` |
+
+**Shape of the final map** (S29 reading; same family; unrefereed).
+- Every wall that touches gravity's **source** is now passed only by a stipulated clause, and the clauses together make the sector GR by construction (vR19-20:74).
+- Every wall that touches **dynamics** stays OPEN or costs numbers:
+  - production (W2);
+  - the charge block (W1);
+  - the photon's exact completion (W3, W19);
+  - growth (W20);
+  - history (W21).
+- The one exception is a counting choice. The same "stipulated renormalization" move that makes gravity number-free also makes the charge block number-free (vR19-24:37-43). The campaign has not fixed which count it uses (owner Q2).
+
+---
+
+#### 2. Theorems and results, rounds 18–19 (cite as "item + name")
+
+Rounds 16–18 up to R18-10 are as listed in S26 §8.4 (`S26:921-941`). The rows below add the late round-18 verdicts and all of round 19. Names collide across items, so always cite them with the item (see the note after the table).
+
+| Item | Name / result | Scope | Verdict file:line |
+|---|---|---|---|
+| R18-9 | Four-row SM axial zero at m = 0.01 (and a retuned m = 0.001), with 5 continuous knobs; μ_T2 is Dirac-only under SF | O(q) conservation convention; one loop | `vR18-9:3,13,17,21,23` |
+| R18-11 | **Theorem G** (a = 2 selected); **Lemma P** (zero-start homogeneous energy pinned) | Contravariant power-density family; Minkowski | `vR18-11:3,5,21` |
+| R18-12 | Crystal momentum is conserved mod 2π; E_tot ≥ (2/π)\|K\|_T; corner photons at 2, 2√2, 2√3 /a; **Lemma X** (crystal momentum conserved under translation-invariant H(t)); relic bounds Y ≤ 3.76e-28 / 1.79e-29 | Free S/G/D1 bands | `vR18-12:5,15,17-19,21` |
+| R18-13 | Rank four and the body relation; **Lemma O**; **Corollary N** (signed weights needed); **Lemma S** (local leading-q² superpotential class only) | O(q) convention | `vR18-13:3,7,9,11` |
+| R19-1 | **Lemma 1** (frustration-free; similar to the Markov generator); **Lemma 2** (flat 8t/12t bands, L ≥ 3); **Lemma 3** (k⁰ f-sum); **Proposition 4**; **Theorem 5** (conditional on clustering); **Theorem 6** (with a boundedness hypothesis) | R18-1 ensemble; RK point | `vR19-1:3,5,7,9,13,15,17,19` |
+| R19-2 | **Theorem I₀** (the four-channel spacelike source cancels); **Lemma F0** (lift dependence) | Off cone; newly stipulated complete split | `vR19-2:5,7,19` |
+| R19-3 | c_A = 2, c_B = 4, c_C = 1 (harmonic); background field 1 + 4 − 4 = 1; **Lemma D** | Contravariant Einstein-density family; registered linear gauges; free one loop | `vR19-3:5-10,12` |
+| R19-5 | W1 ≠ W2; exact W1 for U; exact completion for every admissible smooth massive Wilson–Dirac pair kernel (**Lemma Div**); P-R18-13c scoped to the channel-tied class | Linearized W1; supplied vacuum; SF | `vR19-5:3,5,7,9,11,17` |
+| R19-6 | **Lemma L** ((w − 1) identity); **Proposition U**; c_FdD = w, c_TT = 1 | Contravariant density families; perturbative | `vR19-6:5,7,13,21` |
+| R19-8 | **Lemma S2** (a sink needs memory); CP of the stipulated E2 + N_c law; \|R\| scaling | Weak-field, Gaussian, real-Ohmic, off cone | `vR19-8:5,7,9,11,17` |
+| R19-9 | **Proposition K** (corner cost C_e r⁴); no single-soft-leg Gauss-law obstruction; root re-solve | m = 0.01; finite-resolution evaluator | `vR19-9:3,9,11,17,21` |
+| R19-10 | Completed-law e₀ (L⁻⁴ or exponential corrections); product-insertion costs; **Lemma S-ins** (the inequality) | Completed-law accounting, bounded Γ | `vR19-10:7,9,15,40` |
+| R19-11 | **Lemma A** (Wilson–Dirac rows analytic in m, nonzero linear terms); **Lemma B** (scoped); the m → 0⁺ root (numerical); SM residual arithmetic | One loop; O(q) convention | `vR19-11:3,10,12-17,19,31` |
+| R19-12 | Charge values on the root edges; **Lemma A** (neutral species on the tree cone); route-A bill | Declared basis and truncation | `vR19-12:3,5,9-17,21` |
+| R19-13 | Slab lower bound for every deterministic CPTP slab operation (local ancillas included); R > 256a | NN free scalar, plane insertion | `vR19-13:3,15,17` |
+| R19-14 | Lag coefficient and inflation arithmetic; drift 4.86e36 | V1, homogeneous | `vR19-14:1-8` |
+| R19-15 | **Lemma H** (shear = uniform-strain Hessian); T₂g Liouville invariance; μ_T2^(2) = 4.03e-9 λ² | SF; NN λφ⁴ for two loops | `vR19-15:3,7,18` |
+| R19-16 | R0 and R2 repairs; machine-precision W1 at the tested points | Class 𝒢; m = 0.01 | `vR19-16:3,5,9,15` |
+| R19-17 | Conditional LOCAL-OK (a W/A completion) | Planar NN scalar, constant-mass cold dust | `vR19-17:1-9` |
+| R19-18 | Under L0, E2 predicts d_L^GW/d_L^EM = exp(γt_lb/2) | L0 lift | `vR19-18:5,9` |
+| R19-19 | **Lemma G** (32-dim classification; Ward images exact); **Lemma R**; **Lemma E** (R19-19's: (S\*\*₀) is a 31–32-condition source definition and cannot fail a cone observation); O(p⁴) remainder about 1e-84 | Massive NN/U for the remainder | `vR19-19:5,7,9,13,15` |
+| R19-20 | (Σ) as a package (conditional implications); **D1, D2** independence witnesses; 34 = 30 + 2 + 1 + 1 | O_h × T; analyticity; source/Hamiltonian identification | `vR19-20:5-11,15-16,20-37,74` |
+| R19-21 | NN O(λ) Hartree subtraction (exact at O(λ)); the Born–Oppenheimer formula (conditional); sign flip at 563.26 GeV; \|m_g\| = 1.42e-9 eV today; D1 ΔW = 2.68e106 ρ_Λ, with dp/dm\|₀ = 0 | NN Hartree model; canonical-mass reading | `SP/ref_R19-21/REFEREE_VERDICT.md:7-13,15,22-23,25-26,32-38,42` |
+| R19-22 | Trace argument (no finite CCR); **Lemma J** (linear HP); **Proposition C** (corrected bound); finite-spectrum **Theorem B** (fixed S) | Literal HP; non-modular finite spectra | `vR19-22:5,7,9-13,15,19` |
+| R19-23 | **Lemma I** (B₁, B₂, A₂ isolated; leading pole shifts); first-order A₁ Schur formula for face1; solid kernel: two positive-residue branches, no vDVZ jump | Linear, one loop, supplied broken quadratic EFT; solid ansatz | `SP/ref_R19-23/REFEREE_VERDICT.md:5-24,26-38,40-56,74-76` |
+| R19-24 | **Lemma S** (no time–space symmetry in G); **Lemma IFT** (one-loop D1 graph, codimension 4/10/2); **Lemma E** (R19-24's: a state-independent linear source subtraction is an added local inverse-propagator operator; for (Σ), a general local quadratic graviton counterterm through O(p²), with sign corrected); two-loop λφ⁴ toy (−1.45046e-5 λ² and −3.64058e-6 λ² at m = 0.2) | Inside G; the toy is not QED | `SP/ref_R19-24/REFEREE_VERDICT.md:5-15,17,19-35,43` |
+| R19-26 [worker] | **Lemma P** (R19-26's: an off-site-placed local stress symbol flips sign at q = ±π); the local re-placement F; super-polynomial Fourier tails | R19-16's inherited scope, m = 0.01 | pending (`TESTS:8532-8545`; `SP/R19-26/R19-26_report.md:33-61`) |
+| R19-27 [worker; referee running] | **Lemma E** (R19-27's: W = n∂_nF for an isotropic H-cov term); **Lemma X0** (the frame cannot take the energy leg); **Lemma D** (ρ̇ + 3HW = F_φφ̇ on V1); **Theorem R** (per-site counterterms give ΔW_state = O(φ⁵ℓ)) | Class 𝒱_ct | pending (`TESTS:8492-8501`; `rR19-27:11-62`) |
+
+**Name collisions new in round 19** (always cite with the item).
+- **"Lemma E":** R19-19 (the clause's condition count), R19-24 (a source subtraction is a counterterm) and R19-27 (W = n∂_nF).
+- **"Lemma D":** R19-3, R19-27, plus R13-6, R16-8, R17-2 and R18-5. **"Lemma X0"** (R19-27) sits beside "Lemma X". **"Theorem R":** R19-27.
+- **"Lemma P":** R19-26 (placement sign rule), R18-11 (homogeneous energy pinned), E23's Lemma P, and R13-5's "P1".
+- **"Lemma S":** R18-13, R19-24, plus R15-1 and R17-13.
+- **"Lemma G":** R19-7 (an F₂ relation per 3³ block) vs R19-19 (the Ward classification). "Lemma G0": R19-14.
+- **"Lemma A":** R19-11 vs R19-12. **"Lemma B":** R19-7 vs R19-11. **"Proposition C":** R19-7 vs R19-22.
+- **"Lemma L":** R19-6, plus C3's Lemma L and R15-5's Lemma L.
+- **"Corollary N":** R18-8 vs R18-13. **"Lemma N":** R19-17, plus R15-3 and R17-8.
+- **"Lemma X":** R18-12, plus R17-7 and R17-12. **"Lemma I":** R19-23 vs R17-12.
+- **"D1":** the Dirac edge D1; R19-20's witness D1; R19-24's clause D1; C4 lane D1.
+- **"W1":** the wall W1; W1-Ward (R13-5); W1-weight (R19-6); C4 lane W1.
+- **"V1":** the growing-spacing arena; C4 lane V1; Lemma V1 (R16-13).
+
+---
+
+#### 3. Dated corrections, rounds 18–19 (dated 2026-10-13)
+
+Corrections to R18-1, -2, -4, -5, -6, -7, -8 and -10 are in S26 §5 (`S26:590-620`) and are not repeated here.
+
+| Correction | What it was | What it is now | Source |
+|---|---|---|---|
+| R18-9 knob count and root | "4 tunings + a photon window"; residuals 7e-11 at the stored point | **Five continuous knobs:** four equalities plus a finite-window selection b_γ. The stored point's converged residuals are up to 1.7e-6; a tiny retuning closes it below 2e-15. The "a-blind combination" is only asymptotically blind | `vR18-9:3,5-13,17` |
+| R18-9 "conserved" | FOUR-ROW-ZERO on conserved vertices | Met only in the necessary-O(q) convention, not with exact W1-completed conservation | `vR18-9:21` |
+| R18-11 overshoot | NOISE-OVERSHOOT candidate at a = 2 (`rR18-11:27-43`; `S26:90-93`) | Not met. (P) overshoots only after imposing modewise q ≤ 0, u_V ≥ 0 and zero homogeneous pressure, none established. (U) is not a closed zero-start solution. Reading OPEN | `vR18-11:5,19` |
+| R18-11's P-r15c "now necessary" (`S26:181,344`) | γ-trade necessary at a = 2 | Not established, because the overshoot is not established. R19-2 treats the γ-trade as a fit (`TESTS:7532`) | `vR18-11:19`; `vR19-2:13` |
+| R18-12 headline theorems | Universal corner dichotomy (Theorem C); Γ/H ≤ 6e-3 as a ceiling; T_RH brackets; strict Lemma L; "translation invariance invalidates standard expansion"; "P-W7edge0 cannot follow from dynamics" | Not confirmed as universal. Γ/H is the selected normalization (0.678 with all relativistic SM degrees). FRW can conserve comoving crystal momentum while physical momentum redshifts. BOUNDED survives narrowly through the Ωh² observable | `vR18-12:3,5,11,13,15,17-19` |
+| R18-13 values and scope | Face totals 2.645 and 1.357; exact W1 "removes the placement route" (P-R18-13c) | The literal N = 224 totals are 2.6424168 and 1.3567623. Lemma S holds only for local leading-q² superpotentials of a fixed operator; in class 𝒢 the route survives | `vR18-13:5,9`; `vR19-5:11` |
+| **R18-13 / R19-12 face1 payment** | The raw TT face1 row zeroed by (w_d, w_o) | face1 is not itself a pole. It enters through the A₁ Schur complement, which differs by 9–65%. The face1 zero, its Jacobian and the joint (w_d, w_o) must be recomputed from the full A₁ response. The count stays one condition | `SP/ref_R19-23/REFEREE_VERDICT.md:26-38` |
+| **S26's named gap "No exact W1 completion exists for any vertex"** (`S26:427`) | No exact W1 completion of U, UD or VW | Exact W1 exists for U and for every admissible smooth massive Wilson–Dirac pair kernel, UD included, in class 𝒢. Earlier verdicts missed R8-2 + R13-5 P1. W15 concerns W2, not W1. The photon remains OPEN | `vR19-5:3,5,17` |
+| R19-1 | RK-Z2 expected; "gaps" | NEITHER. The RR scales are upper bounds or spectral means, not demonstrated gaps. Lemma 2 holds for non-wrapping boxes (L ≥ 3). Theorem 6 needs a boundedness hypothesis | `vR19-1:5,11,15,17` |
+| R19-2 | w → −1; a 23 µm match; R18-11's 3.65 µm | The worker changed comoving to proper stationarity. The registered spectrum is asymptotically dust-like (w → 0) under lift A. The 23.24 µm match belongs to a new out-of-window completion; free r and the γ-trade are fits. Adding vector floors moves 3.65 µm to 5.270 µm | `vR19-2:3,7,13,15` |
+| R19-3 | Literal N "double counts" | Literal N gives (2 + ξ)e_g, exactly double only as ξ → 0. Lemma D holds only in the stated family and gauges | `vR19-3:7,10` |
+| R19-6 | UNIFIED | OPEN. W1-weight replaces R18-7's a = 4 law, so it is not consistent with it under literal-first | `vR19-6:3,15,17` |
+| R19-8 | E2-CONSTRUCTED; "the FDT objection does not bind" | OPEN. A stipulable formal law with no physical sink action; S2 proves neither existence nor non-existence. The FDT point holds only for the stated classical class | `vR19-8:3,5,13,15` |
+| R19-9 / R19-16 | PHOTON-EXACT (twice) | Not met. R19-9 had a seam above 1e-12 and a NaN at exact zero. R19-16 repaired both, but R1 jumps at the wrapped-transfer cut q_j = ±π (an O(1) kernel jump of 1.31, 0.279 in the physical projection) | `vR19-9:19`; `vR19-16:7,13` |
+| R19-10 | INJECTS; "P93 cannot hold exactly on a locally growing lattice" | OPEN. The axioms select no Hilbert-space embedding, instantaneous Hamiltonian, energy comparator, insertion map, norms or additivity. The dislocation term is negative, a model-dependent energy, not an injected excitation | `vR19-10:3,28-36` |
+| R19-11 | ONE-LAW expected; spectrum-tuned law by the IFT | OPEN. Three speed rows exceed R16-2's comparator. The IFT root needs a C¹ massive-vector completion. The off-axis rows may carry m² log m. The "14–17 conditions" are a suggestion | `vR19-11:3-8,25,27,29` |
+| R19-12 | Under (d-i), "10 + CC" | Route A is 10 + window + CC under (d-i); only route B is 10 + CC, conditionally | `vR19-12:17` |
+| R19-13 | R ≳ 1.7e23 a | An estimate, not a bound. The proved radius is R > 256a. No universal photon, interacting-law or arbitrary-growth no-go follows | `vR19-13:15`; `TESTS:8115-8116` |
+| R19-14 | Lemma G0 (no redshift on fixed sites); drift ≥ 1e50; (S_ad) as a global homogeneous completion | Lemma G0 does not follow for interacting or general time-dependent laws. The drift is 4.86e36 at 10 MeV reheating. The s = 1 comparator has no instantaneous ground state for ω ≤ H | `vR19-14:5-7` |
+| R19-15 | "No quadratic counterterm absorbs μ_T2^(2)" | Too broad: an allowed h_xy²φ² or pure-source h_xy² counterterm can cancel it, by reintroducing the shear tuning. (S\*) is tautological as a mechanism | `vR19-15:12,14` |
+| R19-17 | LOCAL-OK; strict lattice light cone; induced G; "no standing memory" | Conditional LOCAL-OK only in the planar NN-scalar cold-dust class, as a new W/A completion. Only rapid outside-cone suppression is shown. The induced-G and memory wording is too strong | `vR19-17:3-9` |
+| R19-18 | OPEN (the tie holds) | Literal TIE-BROKEN under L0 (3.0–3.7σ ET-like for 0.039 ≤ γ/H₀ ≤ 0.047). L1-H and L1-S are not derived: the script substitutes a = 1 | `vR19-18:5,6,9` |
+| R19-19 | "Five rows"; every-species O(p⁴) envelope; the tachyon as a conflict | Five independent row combinations. The SM envelope is unverified, and massless responses may carry p⁴ log p. The tachyon is a conditional falsifier | `vR19-19:5,7,11` |
+| **R19-20 owner statement** | "Three independent rules"; "only site creation absorbs"; 6e10 GeV tachyon; 1e106 ρ_Λ; "S_ad fails to track"; top mass as a grid prediction; "gravity is Einstein's" | "A proposed three-component package". "(d-i) absorbs within class 𝒟; other carriers are not excluded". The tachyon is qualified by the fixed-state root, unrefereed R19-19 and the canonical mass. 1e106 ρ_Λ is a naive-Wilson illustration. Do not claim S_ad fails. The top mass is conditional and OPEN. "Einstein's" only for the classical C-box completion and the lowest-state linear two-derivative response | `vR19-20:8,10,17-18,62-70` |
+| R19-21 | HISTORY-SAFE; e²T⁴ gauge scaling; "only a T⁶ residue"; LVK bound 1.3e-23 eV | OPEN. Gauge/Yukawa thermal masses of order g²T² are not excluded. (S_loc) is checked only at O(λ) in one model. The GWTC-4.0 bound is 1.92e-23 eV, so the ratio is 7.4e13 (immaterial) | `SP/ref_R19-21/REFEREE_VERDICT.md:3,20,26,29-30` |
+| R19-22 | The trace argument forbids exact finite constraints; Proposition C's gap; Theorem B uniform in S | Only the noncompact CCR is forbidden (modular Weyl stabilizers are a counterexample). Proposition C's trial state is defective: the corrected bound is E₀/V ≤ −¾JS + O(J + U + g + V), an energy comparison, not a gap. Theorem B's coefficient is not automatically S-uniform | `vR19-22:5,9-15` |
+| R19-23 | Axis decomposition "A1 + E"; "speed-row Ward violation ⇒ propagating π⁰" (a candidate wall) | 2A1 + E (a typo). The class-wide implication is false: an explicit degree-2 term adds no propagating scalar. π⁰ for the actual law is OPEN; no new wall. The solid phase is m₀ = m₁ = m₄ = 0 | `SP/ref_R19-23/REFEREE_VERDICT.md:14,49,64,70` |
+| **R19-24** | COUNTERTERMS-NEEDED; the toy rows −0.38 and −0.093 at m = 0.2; "(Σ) is a kinetic counterterm"; residual kernel (1/16πG + Z)E_EH | **Not established.** On the literal convention D1∞ is a DYNAMIC-CLAUSE by construction; with a special law-level counting rule the reading is OPEN. The toy values at m = 0.2 are −0.3617 and −0.0908; the rounded values belong to m = 0.1. (Σ)'s linear part is a general local quadratic graviton counterterm, mass-like pieces included. The residual inverse kernel is K − ZE_EH (a convention-level sign). The worker script imports a missing `arch/.../sublum.py` | `SP/ref_R19-24/REFEREE_VERDICT.md:3,13,15,27,33,35-43` |
+| R19-16 evaluator fact | The archived tabulated photon law, used by R18-9, R18-13 and R19-9 | It differs from the stated analytic law by up to 1.9e-9 in c. R0 restores the analytic law | `TESTS:8217`; `vR19-16:9` |
+| Archive fixes (round 19) | `scripts/C5/R19-3/r193_lattice.py` imported from the non-archived `../recheck/R9-9`. `scripts/C5/R19-21/r1921_enthalpy.py` imported from the non-archived `../arch/R18-5` | The first now points to `../R9-9` (04:43Z). The second now uses `../R18-5` (07:02Z). Both reruns are identical. **Campaign total:** R17-5, R17-7, R17-8, R19-3 and R19-21, each repointed with an identical rerun | `TESTS:7577,8500`; earlier fixes `TESTS:6264,6625,6745` |
+| R19-21's enthalpy number [worker, R19-27; referee running] | ΔW = 2.68e106 ρ_Λ as a history mismatch that only (d-i) absorbs | Suggested: this is the value with fixed physical-unit (Lorentz-invariant-scheme) Higgs counterterms. That scheme is inadmissible on V1 (the vev drifts ~2e51 per e-fold). Per-site counterterms remove it on V1, and suggestedly in C-box-E. **Not a refereed correction yet** | `TESTS:8492-8499`; `rR19-27:28,227-230` |
+| Owner-facing framing (S29 note) | The C5 brief at S29's start: "the charge block stays counterterms" | Correct only in the registered counterterm count (vR19-12). It is not a refereed no-go. vR19-24 rules that the same stipulation move pays it with no number on the campaign's literal convention | `SP/ref_R19-24/REFEREE_VERDICT.md:37-43` |
+
+Still in force: S26 §5, S23 §5, S20 §5 and S17 §1.8.
+
+---
+
+#### 4. Pending or not completed at close
+
+| Item | State at 07:50Z | Registered readings | Worker reading |
+|---|---|---|---|
+| R19-25 (weak/BRST graviton on finite slots) | Worker running; no report [pending] | WEAK-ESCAPE / WEAK-OBSTRUCTED / OPEN (`TESTS:8349-8352`) | none |
+| R19-26 (the photon kernel at the wrap cut q_j = ±π) | Worker reading recorded at `TESTS:8532-8545`; **referee running** | PHOTON-EXACT / CUT-INTRINSIC / OPEN (`TESTS:8414-8417`) | [worker] **PHOTON-EXACT.** Lemma P: a local stress component placed off-site must flip sign at the q = ±π cut, so R1's opposite limits are required. The defect was VW's pair block, used as a plaquette-placed kernel although it is site-placed. A local re-placement F(q) = (9cos(q/2) − cos(3q/2))/8 removes it. W1 ≤ 2.0e-15. The projected M⁰² jump falls from 0.279 to 3.3e-11. Fourier tails are super-polynomial (against 1/n before). The rows are unchanged; the N = 224 face totals are ≤ 3.2e-12 after a 2.6e-8 step. Price P-R19-26a (P191). **Flag:** U and UD's exact completions (R19-5) should get the same placement test (suggested) (`SP/R19-26/R19-26_report.md:33-61,206-245`) |
+| R19-27 (V1's enthalpy receiver) | Worker reading recorded; **referee running** | V1-RECEIVER / V1-EXCLUDED / OPEN (`TESTS:8456-8459`) | [worker] **V1-RECEIVER in class 𝒱_ct.** Per-site Higgs-sector counterterms on a line of constant physics cancel the mismatch to O(φ⁵ℓ) (Theorem R). The frame cannot take the energy leg (Lemma X0). No lattice force, no signalling. Price P-R19-27a (P190). The worker flags "absorbs" vs "does not arise" for the referee (`TESTS:8492-8501`; `rR19-27:222`) |
+| R19-28 (set B with (Σ)) | Pre-registered 07:04Z; worker running [pending] | B-PACKAGE / B-STILL-WALLED / OPEN (`TESTS:8527-8530`) | none. Expectation: B-STILL-WALLED (`TESTS:8531`) |
+| R19-7 (off-RK Z₂ tensor dynamics) | **No referee, by design** (not a no-go; optional, `TESTS:7662`) | LINEAR-T2-EVIDENCE / NO-LINEAR / OPEN | [worker] OPEN: no linear T₂ at ≤ 8-site ED; Lemma B (k⁰ f-sum off RK); Proposition C (linear T₂ in the k⁰ class needs S_TT ≳ 1/\|k\|); Lemma G (moves obey an F₂ relation, so pair-insertion QMC is non-ergodic) (`TESTS:7652-7662`) |
+| vR19-21, vR19-23, vR19-24 | Back (06:51Z, 06:53Z, 06:57Z); **not yet recorded in `TESTS`** | — | — |
+| Round-20 stubs (S26 §7) | Not launched: the W7 √(E² − P²) readout test; quantum MC of the t ≠ v model; W15 multi-shift mixing | — | — |
+| Named, not done | Set B with (Σ) (R19-24 §0 item 5, suggested); the face1 A₁ recomputation (vR19-23); the QED two-loop A_s, B_s, C_s (vR19-24:15); (S_loc) beyond O(λ) with gauge/Yukawa thermal terms (vR19-21:42) | — | — |
+
+**[UPDATE AT CLOSE]** For R19-26 and R19-27, record the referee verdict, or "referee not back at close". For R19-25 and R19-28, record either the worker reading (marked [worker]) and whether a referee is running, or "not completed at close".
+
+---
+
+#### 5. Provenance: findings never refereed
+
+- **Carried:** S26 §8.5 (`S26:943-970`), except that R18-9 and R18-11 have since been refereed (vR18-9, vR18-11).
+- **Whole items with no referee:**
+  - R19-7 (by design);
+  - R19-27 (worker reading; referee running);
+  - R19-26 (worker reading PHOTON-EXACT, `TESTS:8532-8545`; referee running). Its Lemma P and its suggestion that R19-5's U/UD completions need the same placement test are unrefereed;
+  - R19-25, R19-28 [pending].
+- **Worker claims inside refereed items that the referee did not confirm or rule on:**
+  - **R18-12:** universal Theorem C; the 1e-42 s lifetimes; the T_RH brackets; "P-W7edge0 cannot follow from dynamics" (`vR18-12:5-13`).
+  - **R18-13:** a unique VW off-axis extension (`TESTS:7513`).
+  - **R19-1:** continuum-mixed branches; finite-βU clustering; a uniform gap (`TESTS:7523-7526`).
+  - **R19-2:** the proper-stationary w → −1 completion; the 23.24 µm match; the near-cone term (`vR19-2:3,13`).
+  - **R19-3:** Lemma D in arbitrary axial or nonlinear gauges (`vR19-3:10`).
+  - **R19-5:** the photon soft-corner outline (`vR19-5:13`).
+  - **R19-8:** the FRW lift and the stationary cone prescription (`vR19-8:15`).
+  - **R19-10:** the universal P93 conclusion; the dislocation reading (`vR19-10:28-36`).
+  - **R19-11:** the 14–17-condition mass-blind count; off-axis m² log m (`vR19-11:8,27`).
+  - **R19-12:** route B's continuity and the off-axis closure at the 0⁺ root (`TESTS:8104`).
+  - **R19-13:** the 1.7e23 a radius (`vR19-13:15`).
+  - **R19-14:** Lemma G0 beyond free laws (`vR19-14:5`).
+  - **R19-15:** a universal matter-side two-loop no-go; nonlinear Bianchi (`TESTS:8132`).
+  - **R19-17:** the full order-2/T₂g sector; 3D hyperbolicity (`vR19-17:6-7`).
+  - **R19-18:** the L1-H and L1-S backgrounds (`vR19-18:6`).
+  - **R19-19:** the SM O(p⁴) envelope; massless logs; the 6e10 GeV tachyon as a conflict (`vR19-19:7,11`).
+  - **R19-20:** D3; three-clause minimality; (Σ) ⇒ (S_ad) (`vR19-20:10,17-18`).
+  - **R19-21:** (S_loc) beyond O(λ); Higgs-only dominance; "only a T⁶ residue" (`SP/ref_R19-21/REFEREE_VERDICT.md:20,29`).
+  - **R19-22:** the conditional "30–2000 qubits per cell" (`TESTS:8316`).
+  - **R19-23:** π⁰ as a new wall; the solid ansatz as the realistic shear block (`SP/ref_R19-23/REFEREE_VERDICT.md:56,70`).
+  - **R19-24:** COUNTERTERMS-NEEDED in 𝒦′; exhaustiveness of Lemma S; the QED two-loop residual; the IR-log cancellation (`SP/ref_R19-24/REFEREE_VERDICT.md:15,17,41`).
+- **Syntheses.** S5–S29 are same-family and unrefereed. That covers, at least:
+  - the DERIVED/OPEN and cheapest-price columns above;
+  - W20 and W21 as walls, and the "gravity sector, overall" row;
+  - the P148–P189 numbering and its count-once merges;
+  - every S29 reading;
+  - the owner questions.
+- **Model provenance.** Workers, supervisor and syntheses are Claude Opus 5.5 (one family). Referees are codex gpt-5.6-sol at xhigh, per each `codex_run.log` header.

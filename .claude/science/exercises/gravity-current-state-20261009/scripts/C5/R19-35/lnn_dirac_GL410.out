@@ -1,0 +1,5 @@
+Dirac GL(4, 10) nodes 240 hnn +2.164325e-02  hnn_rank1 +2.164335e-02  bub_phys -7.363235e-02  seag_phys +9.527560e-02  bub_band +6.493006e-02  hI +2.076099e-01  muE -1.709412e-02  muT2 +4.436965e-10  muE_arch -1.709412e-02  muT2_arch +4.436965e-10  e0 -3.205194e+00  tau -3.042161e-01
+  contributions to lam_nn: scalars -0.06503  Dirac +0.48697  vectors -1.72189
+  LAM_NN (bare, SF)            = -1.299942   [check (1/9)Hess(I) + muE/12 + muT2/4 = +0.456169]
+  one-point: e0_tot -29.99430  tau_tot -0.58207  (W_tot = e0 + p = e0 + 2 tau = -31.15844)
+  variants: A (all ct linear in h_SF) -1.29994 | B ((S) = -e0 sqrt g, exp param) +6.19863 | C (ct linear in h_lin) -1.88202 | D ((S) sqrt g lin + P-Tad lin) -9.38059

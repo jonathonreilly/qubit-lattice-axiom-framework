@@ -1,0 +1,15 @@
+root (bs,bf,r,a,fr,bg,fw,m) = [ 2.5261037  0.9091037  0.5556042 -0.176095   1.         2.9435
+  1.         0.01     ]
+scalar N=96            seag +3.347637e-02  bub -5.030663e-02  hnn -1.683026e-02  hnn_ibp -1.673818e-02  hI -1.586430e-01  muE +1.066577e-02  muT2 +0.000000e+00  e0 +1.489499e+00  tau +1.856009e-01  muE_arch +1.062724e-02
+photon N=96            seag +1.445628e-01  bub -1.364192e-01  hnn +8.143604e-03  hnn_ibp -7.228142e-02  hI -6.543844e-01  muE +5.135467e-03  muT2 +0.000000e+00  e0 +3.013694e+00  tau +4.581333e-01  muE_arch +2.850892e-02
+Dirac GL(3, 8) nodes 144 hnn +2.164363e-02  hnn_rank1 +2.164338e-02  bub_phys -7.363241e-02  seag_phys +9.527604e-02  bub_band +6.493015e-02  hI +2.076116e-01  muE -1.709186e-02  muT2 +1.122192e-08  muE_arch -1.709186e-02  muT2_arch +1.122192e-08  e0 -3.205194e+00  tau -3.042164e-01
+
+TOTALS (4 S + 22.5 D + 12 V):
+  shear rows (validation, should be ~0 at root): muE_tot -2.8028e-01 (arch +4.9082e-05)  muT2_tot +2.5249e-07
+  contributions to lam_nn: scalars -0.06732  Dirac +0.48698  vectors +0.09772
+  LAM_NN (bare, SF)            = +0.517384   [check (1/9)Hess(I) + muE/12 + muT2/4 = -0.447348]
+  4*lam_nn = +2.06954  vs R19-29 bubble 4nn:Pi^b(0):nn = -25.883 -> ratio |lam_nn|/|bubble/4| = 0.0800
+  one-point: e0_tot -29.99453  tau_tot -0.60487  (W_tot = e0 + p = e0 + 2 tau = -31.20426)
+  variants: A (all ct linear in h_SF) +0.51738 | B ((S) = -e0 sqrt g, exp param) +8.01602 | C (ct linear in h_lin) -0.08748 | D ((S) sqrt g lin + P-Tad lin) -7.58611
+  fluid control (Pi_SF = e0/4, tau = -e0/2): A -7.499 B +0.000 C +7.499 D +0.000
+runtime 1.5 s

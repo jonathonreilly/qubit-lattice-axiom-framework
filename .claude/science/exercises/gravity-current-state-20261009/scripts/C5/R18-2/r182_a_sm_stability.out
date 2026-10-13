@@ -1,0 +1,42 @@
+Matching at M_t (Buttazzo NNLO fit, RECALLED), inputs M_t=172.57 M_h=125.20 as=0.1180:
+   gY, g2, g3, yt, lam = [0.35843 0.64764 1.16516 0.93286 0.12617]
+
+a1. Central profile (2-loop running, 1-loop lambda_eff), M_P = 1/a = 1.2209e+19 GeV:
+   mu=1.00e+03  lam=+0.09665  lam_eff(h=mu)=+0.12699  yt=0.8517 g3=1.0560 g2=0.6386 gY=0.3620
+   mu=1.00e+06  lam=+0.03449  lam_eff(h=mu)=+0.05251  yt=0.6640 g3=0.8109 g2=0.6060 gY=0.3773
+   mu=1.00e+08  lam=+0.01435  lam_eff(h=mu)=+0.02483  yt=0.5897 g3=0.7190 g2=0.5868 gY=0.3886
+   mu=1.00e+09  lam=+0.00750  lam_eff(h=mu)=+0.01504  yt=0.5600 g3=0.6835 g2=0.5778 gY=0.3947
+   mu=1.00e+10  lam=+0.00219  lam_eff(h=mu)=+0.00732  yt=0.5339 g3=0.6528 g2=0.5692 gY=0.4010
+   mu=1.00e+11  lam=-0.00192  lam_eff(h=mu)=+0.00130  yt=0.5105 g3=0.6259 g2=0.5610 gY=0.4076
+   mu=1.00e+12  lam=-0.00505  lam_eff(h=mu)=-0.00330  yt=0.4894 g3=0.6021 g2=0.5531 gY=0.4146
+   mu=1.00e+14  lam=-0.00907  lam_eff(h=mu)=-0.00922  yt=0.4526 g3=0.5617 g2=0.5383 gY=0.4297
+   mu=1.00e+16  lam=-0.01092  lam_eff(h=mu)=-0.01193  yt=0.4212 g3=0.5285 g2=0.5246 gY=0.4466
+   mu=1.00e+17  lam=-0.01125  lam_eff(h=mu)=-0.01243  yt=0.4071 g3=0.5140 g2=0.5181 gY=0.4558
+   mu=1.00e+18  lam=-0.01127  lam_eff(h=mu)=-0.01250  yt=0.3939 g3=0.5006 g2=0.5119 gY=0.4656
+   mu=2.44e+18  lam=-0.01120  lam_eff(h=mu)=-0.01243  yt=0.3890 g3=0.4957 g2=0.5095 gY=0.4695
+   mu=1.22e+19  lam=-0.01099  lam_eff(h=mu)=-0.01217  yt=0.3804 g3=0.4872 g2=0.5053 gY=0.4770
+   lam_min = -0.01129 at mu = 3.55e+17 ; lam(M_P) = -0.01099 ; lam_eff,min = -0.01252 at h = 4.60e+17
+   instability scale: lam(mu)=0 at mu_I = 3.16e+10 GeV ; lam_eff(h)=0 at h_I = 1.80e+11 GeV
+
+   (1-loop running, same matching: lam(M_P) = -0.02941, mu_I = 2.27e+08) -- shows the 2-loop terms act
+
+a2. Comparator (RECALLED): Buttazzo et al. 2013 NNLO fit lam(M_Pl) = -0.0143 - 0.0066 dMt + 0.0018 das + 0.0029 dMh
+   (Mt,Mh,as)=(173.34,125.15,0.1184): mine lam(M_P)=-0.01507  comparator=-0.01430  diff=-0.00077
+   (Mt,Mh,as)=(172.57,125.20,0.1180): mine lam(M_P)=-0.01099  comparator=-0.01010  diff=-0.00089
+   comparator instability scale (RECALLED): ~1e10-1e11 GeV; lam_min ~ -0.015 near 1e17 GeV (R17-7 used these)
+
+a3. Absolute-stability bound on M_t (min over h in [1 TeV, M_P] of lambda_eff = 0):
+   M_t,crit(lambda_eff) = 170.878 GeV ; M_t,crit(lambda(mu)) = 170.827 GeV ; with h_max = reduced M_P: 170.878 GeV
+   dMtc/dMh = 0.494 ; dMtc/das = 391.0 GeV per unit (i.e. 0.352 GeV per 0.0009)
+   comparator (RECALLED Buttazzo: M_h > 129.6 + 2.0(M_t-173.35) - 0.5 das +- 0.3_th) -> M_t,crit = 171.01 GeV at our M_h, as
+   comparator (RECALLED Buttazzo text: M_t < 171.36 +- 0.46 GeV at M_h = 125.66 GeV, as = 0.1184); mine there: 171.261
+
+b. Tension (one-sided Gaussian), n_sigma = (M_t - M_t,crit)/sigma_tot; s_th = 0.30 (declared):
+   PRIMARY PDG2024 direct 172.57+-0.29, amb 0.5     sigma_tot=0.742  n_sigma=2.28  -> beyond 2 sigma
+   PDG2024 direct, amb 0.0                          sigma_tot=0.549  n_sigma=3.09  -> beyond 2 sigma
+   PDG2024 direct, amb 0.3                          sigma_tot=0.625  n_sigma=2.71  -> beyond 2 sigma
+   PDG2024 direct, amb 1.0                          sigma_tot=1.141  n_sigma=1.48  -> within 2 sigma
+   ATLAS+CMS Run1 172.52+-0.33, amb 0.5             sigma_tot=0.759  n_sigma=2.16  -> beyond 2 sigma
+   x-section pole mass 172.4+-0.7 (no extra amb)    sigma_tot=0.841  n_sigma=1.81  -> within 2 sigma
+   ambiguity at which the PRIMARY row reaches exactly 2 sigma: amb = 0.64 GeV
+   s_th at which the PRIMARY row (amb 0.5) reaches 2 sigma: s_th = 0.51 GeV

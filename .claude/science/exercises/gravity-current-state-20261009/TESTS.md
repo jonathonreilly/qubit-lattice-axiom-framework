@@ -6611,3 +6611,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
   Referee running.
 - **R18-3 dropped (02:20Z).** Its premise was a certificate for the VU conflict, and VU is now excluded by W1 (R17-12, worker; referee running). Its part (a), V0 locality, is folded into R18-5 below.
+- **R18-2 (EW vacuum stability under (S)): worker reading NEEDS-STABILIZER on the primary inputs. The σ condition is fragile.** Inputs RECALLED; method pre-stated in `agents/C5_R18-2_prereg.md`.
+  - **SM-only running (two-loop):**
+    - λ_eff crosses zero at 1.8e11 GeV;
+    - M_t,crit = 170.88 GeV;
+    - the tension is 2.28σ on the primary row; it ranges over 1.5–3.1σ across rows and drops below 2σ at an ambiguity of 0.64 GeV.
+  - **The lattice cannot stabilize** (by a factor of at least 4e15; bounded EFT no-go, referee needed). Λ̃ ≥ 2.6e108 ρ_Λ, whatever the lattice.
+  - **Stabilizers:**
+    - **Higgs-portal singlet:** O(1) coupling windows, but m_S ≤ 1.5e-8/a, so one scalar-mass tuning per species unless the mass is protected.
+    - **Vector-like 5-plets (n5 ≥ 2):** chirally protected, so no precision tuning. They face collider and relic costs (RECALLED).
+  - **(S) prediction:** with SM content alone, (S) requires M_t(pole) ≤ 170.9 GeV.
+  - **Prices:** P93 sharpened; P-r182a (singlet); P-r182b (5-plets).
+  - **Archive fix (02:25Z):** the committed R17-7 runner `r177_enthalpy_orders.py` imported from a path that is not archived. It now imports from `scripts/C5/R11-3`, and its rerun matches the stored output. Reported by R18-2.
+
+  Referee running.

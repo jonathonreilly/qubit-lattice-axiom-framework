@@ -7,7 +7,7 @@ Checked: c2 at the R11-3 edge root t* = 0.00117 (should be ~0), and c4 there (is
 finite-difference check of E(m^2) at t*.  Subtraction: none (absolute E; differences in m^2 only).
 """
 import sys, os
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'recheck', 'R11-3'))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'R11-3'))  # archived path: scripts/C5/R11-3
 import numpy as np
 from r113_profiles import profile
 from scipy.optimize import brentq

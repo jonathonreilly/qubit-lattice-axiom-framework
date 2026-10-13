@@ -1,0 +1,72 @@
+d1. Real-singlet threshold scan (M_t = 172.57, M_h = 125.20, as = 0.1180; 2-loop SM + 1-loop singlet):
+   m_S = 1e+03 GeV, lS = 0.02 :  7/81 grid points stable; lHS in [+0.04, +0.10]  and [-0.10, -0.06]  (threshold delta = lHS^2/(4 lS) in [0.020, 0.125])
+   m_S = 1e+03 GeV, lS = 0.05 : 12/81 grid points stable; lHS in [+0.04, +0.16]  and [-0.16, -0.08]  (threshold delta = lHS^2/(4 lS) in [0.008, 0.128])
+   m_S = 1e+03 GeV, lS = 0.10 : 16/81 grid points stable; lHS in [+0.06, +0.22]  and [-0.22, -0.10]  (threshold delta = lHS^2/(4 lS) in [0.009, 0.121])
+   m_S = 1e+03 GeV, lS = 0.20 : 17/81 grid points stable; lHS in [+0.08, +0.22]  and [-0.28, -0.12]  (threshold delta = lHS^2/(4 lS) in [0.008, 0.060])
+   m_S = 1e+03 GeV, lS = 0.30 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+03 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+05 GeV, lS = 0.02 :  9/81 grid points stable; lHS in [+0.04, +0.12]  and [-0.12, -0.06]  (threshold delta = lHS^2/(4 lS) in [0.020, 0.180])
+   m_S = 1e+05 GeV, lS = 0.05 : 12/81 grid points stable; lHS in [+0.06, +0.18]  and [-0.18, -0.10]  (threshold delta = lHS^2/(4 lS) in [0.018, 0.162])
+   m_S = 1e+05 GeV, lS = 0.10 : 18/81 grid points stable; lHS in [+0.08, +0.26]  and [-0.26, -0.12]  (threshold delta = lHS^2/(4 lS) in [0.016, 0.169])
+   m_S = 1e+05 GeV, lS = 0.20 : 24/81 grid points stable; lHS in [+0.10, +0.32]  and [-0.36, -0.14]  (threshold delta = lHS^2/(4 lS) in [0.013, 0.128])
+   m_S = 1e+05 GeV, lS = 0.30 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+05 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+07 GeV, lS = 0.02 :  8/81 grid points stable; lHS in [+0.04, +0.12]  and [-0.12, -0.08]  (threshold delta = lHS^2/(4 lS) in [0.020, 0.180])
+   m_S = 1e+07 GeV, lS = 0.05 : 14/81 grid points stable; lHS in [+0.06, +0.20]  and [-0.20, -0.10]  (threshold delta = lHS^2/(4 lS) in [0.018, 0.200])
+   m_S = 1e+07 GeV, lS = 0.10 : 21/81 grid points stable; lHS in [+0.08, +0.30]  and [-0.30, -0.14]  (threshold delta = lHS^2/(4 lS) in [0.016, 0.225])
+   m_S = 1e+07 GeV, lS = 0.20 : 29/81 grid points stable; lHS in [+0.10, +0.38]  and [-0.42, -0.16]  (threshold delta = lHS^2/(4 lS) in [0.013, 0.180])
+   m_S = 1e+07 GeV, lS = 0.30 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+07 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+09 GeV, lS = 0.02 : 10/81 grid points stable; lHS in [+0.04, +0.14]  and [-0.14, -0.08]  (threshold delta = lHS^2/(4 lS) in [0.020, 0.245])
+   m_S = 1e+09 GeV, lS = 0.05 : 17/81 grid points stable; lHS in [+0.06, +0.24]  and [-0.24, -0.12]  (threshold delta = lHS^2/(4 lS) in [0.018, 0.288])
+   m_S = 1e+09 GeV, lS = 0.10 : 24/81 grid points stable; lHS in [+0.08, +0.34]  and [-0.34, -0.16]  (threshold delta = lHS^2/(4 lS) in [0.016, 0.289])
+   m_S = 1e+09 GeV, lS = 0.20 : 33/81 grid points stable; lHS in [+0.10, +0.44]  and [-0.46, -0.18]  (threshold delta = lHS^2/(4 lS) in [0.013, 0.242])
+   m_S = 1e+09 GeV, lS = 0.30 : 34/81 grid points stable; lHS in [+0.12, +0.44]  and [-0.52, -0.20]  (threshold delta = lHS^2/(4 lS) in [0.012, 0.161])
+   m_S = 1e+09 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+10 GeV, lS = 0.02 : 11/81 grid points stable; lHS in [+0.04, +0.16]  and [-0.16, -0.10]  (threshold delta = lHS^2/(4 lS) in [0.020, 0.320])
+   m_S = 1e+10 GeV, lS = 0.05 : 16/81 grid points stable; lHS in [+0.06, +0.24]  and [-0.24, -0.14]  (threshold delta = lHS^2/(4 lS) in [0.018, 0.288])
+   m_S = 1e+10 GeV, lS = 0.10 : 25/81 grid points stable; lHS in [+0.08, +0.36]  and [-0.36, -0.18]  (threshold delta = lHS^2/(4 lS) in [0.016, 0.324])
+   m_S = 1e+10 GeV, lS = 0.20 : 36/81 grid points stable; lHS in [+0.10, +0.48]  and [-0.50, -0.20]  (threshold delta = lHS^2/(4 lS) in [0.013, 0.288])
+   m_S = 1e+10 GeV, lS = 0.30 : 41/81 grid points stable; lHS in [+0.12, +0.52]  and [-0.60, -0.22]  (threshold delta = lHS^2/(4 lS) in [0.012, 0.225])
+   m_S = 1e+10 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+11 GeV, lS = 0.02 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+11 GeV, lS = 0.05 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+11 GeV, lS = 0.10 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+11 GeV, lS = 0.20 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+11 GeV, lS = 0.30 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 1e+11 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 3e+11 GeV, lS = 0.02 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 3e+11 GeV, lS = 0.05 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 3e+11 GeV, lS = 0.10 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 3e+11 GeV, lS = 0.20 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 3e+11 GeV, lS = 0.30 :  0/81 grid points stable; no stable lHS on the grid
+   m_S = 3e+11 GeV, lS = 0.40 :  0/81 grid points stable; no stable lHS on the grid
+
+   explicit benchmark (checked): m_S = 1e7 GeV, lS = 0.2, lHS = +0.25
+      {'ok': np.True_, 'ok_below': np.True_, 'ok_above': np.True_, 'lH_min': np.float64(0.1188), 'lS_MP': np.float64(0.70794), 'lHS_MP': np.float64(0.55903), 'lH_MP': np.float64(0.11197), 'maxc': np.float64(0.70794)}
+     same benchmark at M_t = 171.50: stable = True
+     same benchmark at M_t = 172.57: stable = True
+     same benchmark at M_t = 173.50: stable = True
+     same benchmark at M_t = 174.50: stable = True
+
+   window widths at the benchmark (one parameter varied, others fixed):
+     lHS (lS=0.2, m_S=1e7): stable for lHS in [0.095, 0.395] (width 0.300; natural range O(1))
+     lS (lHS=0.25, m_S=1e7): stable for lS in [0.070, 0.275]
+     m_S (lS=0.2, lHS=0.25): stable for m_S in [1.78e+03, 1.78e+11] GeV, i.e. log10 width 8.0 decades; in lattice units m_S a in [1.5e-16, 1.5e-08]
+
+d2. Scale-free alternative: n5 vector-like Dirac 5-plets at M_F (no Yukawa), one-loop gauge shift only:
+   M_F = 1e+03, n5 =  2 : min lambda_eff = +0.00738 at h = 4.6e+14 ; g(M_P) = (0.546, 0.552, 0.528) yt(M_P) = 0.328 ; STABLE
+   M_F = 1e+03, n5 =  4 : min lambda_eff = +0.02055 at h = 5.0e+12 ; g(M_P) = (0.658, 0.613, 0.581) yt(M_P) = 0.272 ; STABLE
+   M_F = 1e+03, n5 =  6 : min lambda_eff = +0.02992 at h = 2.1e+11 ; g(M_P) = (0.891, 0.702, 0.653) yt(M_P) = 0.212 ; STABLE
+   M_F = 1e+03, n5 =  8 : min lambda_eff = +0.03692 at h = 2.2e+10 ; g(M_P) = (2.212, 0.846, 0.760) yt(M_P) = 0.142 ; STABLE
+   M_F = 1e+03, n5 = 10 : min lambda_eff = +0.04233 at h = 3.7e+09 ; g(M_P) = (8.931, 1.034, 0.955) yt(M_P) = 0.103 ; non-perturbative
+   M_F = 1e+06, n5 =  2 : min lambda_eff = -0.00532 at h = 2.6e+15 ; g(M_P) = (0.531, 0.542, 0.520) yt(M_P) = 0.355 ; metastable
+   M_F = 1e+06, n5 =  4 : min lambda_eff = -0.00002 at h = 7.9e+13 ; g(M_P) = (0.609, 0.588, 0.559) yt(M_P) = 0.325 ; metastable
+   M_F = 1e+06, n5 =  6 : min lambda_eff = +0.00406 at h = 6.5e+12 ; g(M_P) = (0.735, 0.647, 0.610) yt(M_P) = 0.292 ; STABLE
+   M_F = 1e+06, n5 =  8 : min lambda_eff = +0.00730 at h = 1.0e+12 ; g(M_P) = (1.001, 0.730, 0.676) yt(M_P) = 0.253 ; STABLE
+   M_F = 1e+06, n5 = 10 : min lambda_eff = +0.00993 at h = 2.4e+11 ; g(M_P) = (2.661, 0.857, 0.771) yt(M_P) = 0.200 ; STABLE
+   M_F = 1e+09, n5 =  2 : min lambda_eff = -0.00972 at h = 1.5e+16 ; g(M_P) = (0.517, 0.533, 0.512) yt(M_P) = 0.368 ; metastable
+   M_F = 1e+09, n5 =  4 : min lambda_eff = -0.00758 at h = 1.4e+15 ; g(M_P) = (0.569, 0.565, 0.540) yt(M_P) = 0.354 ; metastable
+   M_F = 1e+09, n5 =  6 : min lambda_eff = -0.00589 at h = 2.5e+14 ; g(M_P) = (0.641, 0.604, 0.574) yt(M_P) = 0.338 ; metastable
+   M_F = 1e+09, n5 =  8 : min lambda_eff = -0.00453 at h = 6.7e+13 ; g(M_P) = (0.749, 0.653, 0.615) yt(M_P) = 0.320 ; metastable
+   M_F = 1e+09, n5 = 10 : min lambda_eff = -0.00340 at h = 2.4e+13 ; g(M_P) = (0.942, 0.716, 0.666) yt(M_P) = 0.298 ; metastable

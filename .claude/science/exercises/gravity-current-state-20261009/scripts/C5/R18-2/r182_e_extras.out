@@ -1,0 +1,26 @@
+e1. Variational bound: the 1PI effective potential is the minimum energy density at fixed <h>, so e0 <= V_eff(h)
+    for every h where V_eff is valid. Restricting to h a <= 1e-3 (lattice corrections O((h a)^2) <= 1e-6 relative):
+    h <= 1e-03/a = 1.22e+16 GeV: min V_eff = -6.522e+61 GeV^4 at h = 1.21e+16 -> Lambda_tilde >= 2.61e+108 rho_Lambda
+    h <= 1e-05/a = 1.22e+14 GeV: min V_eff = -5.072e+53 GeV^4 at h = 1.21e+14 -> Lambda_tilde >= 2.03e+100 rho_Lambda
+    h <= 1e-07/a = 1.22e+12 GeV: min V_eff = -1.949e+45 GeV^4 at h = 1.21e+12 -> Lambda_tilde >= 7.80e+91 rho_Lambda
+    (M_t = 171.5: same bound with h a <= 1e-3 gives Lambda_tilde >= 8.10e+107 rho_Lambda)
+    (M_t = 172.0: same bound with h a <= 1e-3 gives Lambda_tilde >= 1.64e+108 rho_Lambda)
+
+e2. Singlet benchmark m_S = 1e7 GeV, lS = 0.2, lHS = +0.25: RG-improved two-field quartic potential
+    w = 1.581e+07 GeV; min over grid (h, s up to M_P) of V/(h^2+s^2+w^2)^2 = +7.253e-05  (>= 0 means (v, w) is the global minimum, V(v,w) = 0)
+    tree-level positive-definiteness at m_S: 4 lH lS - lHS^2 = 0.0185 (> 0)
+    note: tree-level Higgs-singlet mixing ~ lHS v/(2 lS w) = 9.7e-06 (negligible for M_h matching)
+
+e3. Vector-like Dirac 5-plets (no Yukawa): largest M_F with min lambda_eff > 0 up to M_P and g_i(M_P) < 3
+    M_t = 172.57, n5 = 1: not stable even at M_F = 1 TeV (min lambda_eff = -0.0014)
+    M_t = 172.57, n5 = 2 (db_i = 1.33): stable for M_F <= 1.93e+04 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 172.57, n5 = 3 (db_i = 2.00): stable for M_F <= 1.94e+05 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 172.57, n5 = 4 (db_i = 2.67): stable for M_F <= 9.90e+05 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 172.57, n5 = 6 (db_i = 4.00): stable for M_F <= 8.79e+06 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 172.57, n5 = 8 (db_i = 5.33): stable for M_F <= 3.60e+07 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 173.15, n5 = 1: not stable even at M_F = 1 TeV (min lambda_eff = -0.0055)
+    M_t = 173.15, n5 = 2 (db_i = 1.33): stable for M_F <= 3.36e+03 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 173.15, n5 = 3 (db_i = 2.00): stable for M_F <= 2.84e+04 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 173.15, n5 = 4 (db_i = 2.67): stable for M_F <= 1.33e+05 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 173.15, n5 = 6 (db_i = 4.00): stable for M_F <= 1.10e+06 GeV ; perturbative to M_P at M_F = 1 TeV: True
+    M_t = 173.15, n5 = 8 (db_i = 5.33): stable for M_F <= 4.44e+06 GeV ; perturbative to M_P at M_F = 1 TeV: True

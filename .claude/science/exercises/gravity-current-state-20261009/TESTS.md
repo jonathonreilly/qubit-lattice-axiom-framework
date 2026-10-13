@@ -8058,7 +8058,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r1918a (lift L0), P-r1918b (L1-H).
   - Not a no-go; a referee is optional.
 
-### C5 Round 19, item 20 (pre-registered 06:07Z, before launch)
+### C5 Round 19, item 20 (pre-registered 06:05Z, before launch)
 
 **R19-20. Audit: do the source clauses — (S) or (S\*), (d-i) or (S_ad), N_red, W1, (S\*\*) — reduce to one statement, "the vacuum gravitates only through its Lorentz-invariant renormalized form"? If so, is the grid then predicting anything about gravity, or only stipulating GR?**
 - **Plain question.** C5's source-side results move each grid defect of the vacuum into a number-free clause about what gravitates:
@@ -8094,7 +8094,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OPEN:** otherwise.
 - **Expectation.** ONE-CLAUSE. The clause is "renormalize the vacuum's gravitational response to its Lorentz-invariant form through O(q²)". The grid's gravitational predictions then reduce to the residual list in (b): charge-block tunings, W7 edge anomalies, relics, O(q⁴) dispersion and set A noise. That is an honest finding the owner needs.
 
-#### C5 referee verdicts R19-12, R19-13 and the R19-17 worker reading (recorded 06:09Z)
+#### C5 referee verdicts R19-12, R19-13 and the R19-17 worker reading (recorded 06:06Z)
 
 - **R19-12 referee: CONFIRMED WITH CORRECTIONS. Reading: ONE-LAW-BILL for route A.**
   - **Charge values on the root's edges:** F_½ = −5.2444, F_0 = −1.1674, G_½ = 0.11484, Σ = 0.9187.

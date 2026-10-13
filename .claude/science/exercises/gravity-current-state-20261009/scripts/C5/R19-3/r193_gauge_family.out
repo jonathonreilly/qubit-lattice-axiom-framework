@@ -1,0 +1,23 @@
+symbolic O(s^2) expansion done: 22.2s
+phase averages done: 22.7s
+sanity B : Q(pure gauge) == 0 on shell: True;  2Q(pure gauge, TT) == 0 on shell: True
+sanity A : Q(pure gauge) == 0 on shell: True;  2Q(pure gauge, TT) == 0 on shell: True
+sanity A': Q(pure gauge) == 0 on shell: True;  2Q(pure gauge, TT) == 0 on shell: True
+xi=1, beta=1/2:  K^{-1} (k0^2-kz^2) P_FdD^{-1} = Matrix([[2, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 2, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 2, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 2]]) (scalar => Cov = c K^{-1} with c = 1/ratio)
+
+per-mode one-point stress t_mn (units w/V), k || z, w = 1; TT value is 1 x k_m k_n:
+  harmonic family xi = 1    : (B) t = 4 x kk [pure kk: True];  (A) t = 2 x kk [pure kk: True];  (A') t = 1 x kk [pure kk: True]   [24s]
+  harmonic family xi = 2    : (B) t = 4 x kk [pure kk: True];  (A) t = 2 x kk [pure kk: True];  (A') t = 1 x kk [pure kk: True]   [24s]
+  harmonic family xi = 1/2  : (B) t = 4 x kk [pure kk: True];  (A) t = 2 x kk [pure kk: True];  (A') t = 1 x kk [pure kk: True]   [24s]
+  harmonic family xi = 1/10 : (B) t = 4 x kk [pure kk: True];  (A) t = 2 x kk [pure kk: True];  (A') t = 1 x kk [pure kk: True]   [24s]
+  closed form, harmonic family: (B) t_00(xi) = 4;  xi -> 0 (exact harmonic): 4
+  closed form, harmonic family: (A) t_00(xi) = 2;  xi -> 0 (exact harmonic): 2
+  closed form, harmonic family: (A') t_00(xi) = 1;  xi -> 0 (exact harmonic): 1
+[25s]
+
+BRST/background-field total at xi = 1 (harmonic, Feynman):
+  t_A' (EH part) = 1 x kk;  t_GF = 4 x kk  [pure kk: True]
+  EH + GF = 5 x kk   (10 real bosonic components with the box operator would give 10 x 1/2 = 5)
+  ghosts (4 complex Grassmann components, box operator; FP counting): -8 x 1/2 = -4 x kk
+  BFM total = 1 x kk   (TT value: 1)
+total time 34.3s

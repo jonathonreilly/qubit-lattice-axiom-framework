@@ -1,0 +1,14 @@
+v_max (whole zone, TT graviton) = max|d'(q)| = 1.000000 at q = -1.0487   (box value 1; NN 2sin(q/2) would give 1)
+  min d'(q) on the zone = 0.000002  (a negative value means a backward-moving edge)
+cubic covariance d(Rq) = R d(q), all 48 signed permutations, 2000 random q: max error 6.7e-16
+N =  96: e_g = <w> = 2.44707007   p_g = <|d|^2/(3w)> = 0.81569002   p/e = 0.333333333333   W_g = 3.26276009   anisotropy 1.4e-16
+N = 160: e_g = <w> = 2.44707006   p_g = <|d|^2/(3w)> = 0.81569002   p/e = 0.333333333333   W_g = 3.26276008   anisotropy 1.4e-16
+N = 256: e_g = <w> = 2.44707006   p_g = <|d|^2/(3w)> = 0.81569002   p/e = 0.333333333333   W_g = 3.26276008   anisotropy 1.4e-16
+  box part of e_g: 0.031766 (0.013 of e_g); edge part 2.415304
+  alternative pressure (spacing-strain response) p = <q.grad w>/3 = 0.391362  (W only; e unchanged)
+
+at a = l_P: e_g = 2.14e+123 rho_Lambda;  W_g = 2.85e+123 rho_Lambda
+  remainder (B) harmonic, Feynman (c = 4): Lambda-type energy (c - 1) e_g = 7.341210 /a^4 = 6.42e+123 rho_Lambda
+  remainder (A) harmonic, Feynman (c = 2): Lambda-type energy (c - 1) e_g = 2.447070 /a^4 = 2.14e+123 rho_Lambda
+  a remainder below rho_Lambda would need a >= 6.80e+30 l_P (for c - 1 = 1), i.e. a ~ 1.1e-04 m
+[appended check] max d'(q) - 1 on [0.9, 2.6] (central differences, h = 1e-6) = 2.508e-10 at q = 1.0443;  min d' on [0, pi) = 0.0008

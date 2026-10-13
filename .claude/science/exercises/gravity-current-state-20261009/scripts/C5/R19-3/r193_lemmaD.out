@@ -1,0 +1,6 @@
+symbolic O(s^2) expansion done: 16.7s
+phase averages done: 17.1s
+B  (G2_ab, weight 0)            : Q(gauge,gauge) nonzero off shell: False;  components with 2Q(gauge, X) != 0 (arbitrary X, off-shell k): 10/10
+A  ((-g)G^ab, weight 2 = LL)    : Q(gauge,gauge) nonzero off shell: False;  components with 2Q(gauge, X) != 0 (arbitrary X, off-shell k): 10/10
+A' (sqrt(-g)G^ab, weight 1)     : Q(gauge,gauge) nonzero off shell: False;  components with 2Q(gauge, X) != 0 (arbitrary X, off-shell k): 0/10
+time 18.0s

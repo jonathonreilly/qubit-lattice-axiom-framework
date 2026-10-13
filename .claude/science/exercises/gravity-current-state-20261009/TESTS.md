@@ -7366,3 +7366,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r192a (FRW lift), P-r192b (complete split), P-r192c (near-cone recording).
 
   Referee running.
+- **R19-3 ((S) as quantum J2): worker reading J2-GAUGE-BRIDGE.** J2-ABSORBED is not met literally.
+  - **The vacuum stress per mode** is c·k̃k̃/ω. The value of c depends on how gravity's stress is defined and in which gauge:
+    - TT and Coulomb gauges: c = 1 for every definition.
+    - Harmonic gauge: LL gives c = 2, G^(2) gives c = 4, and the Hamiltonian count with ghosts gives c = 1.
+    - Other gauge conditions: c is 7/4, 3 or ½ for LL, and 17/4, 3 or 11/2 for G^(2).
+  - **The remainder.** In harmonic gauge the LL and G^(2) readings leave a gauge-dependent Λ̃ ~ 2–6e123 ρ_Λ, which (S) and (d-i) do not remove.
+  - **Literal N** (R16-14/R18-7's source) double-counts the graviton zero point.
+  - **Lemma D (proved, checked symbolically).** Only weight-1 stress densities are free of pure-gauge vacuum contributions. The weight-1 object (A′) = −⟨[√−g G^{μν}]^(2)⟩/8πG gives c = 1 in every gauge, consistent with the background-field total (EH 1 + gauge-fixing 4 + ghosts −4).
+  - **Probe (d):** with the weight-1 source, (S) and (d-i) remove the graviton vacuum with no number.
+  - **Prices:**
+    - P-r193a: the quantum source is the weight-1 density. One clause; possibly the same as R18-11's a = 2 price.
+    - P-r193b: the lattice cubic vertex.
+
+  Referee running.

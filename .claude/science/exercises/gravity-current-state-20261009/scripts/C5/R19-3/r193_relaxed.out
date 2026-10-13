@@ -1,0 +1,6 @@
+symbolic O(s^2) expansion done: 15.4s
+phase averages done: 15.8s
+expansion done 16.1s
+harmonic family: t_H                        t_00(xi) = xi;  t_03, t_33, t_11 = [-xi, xi, 0];  xi -> 0: 0
+harmonic family: (-g)t_LL  [treatment (A)]  t_00(xi) = 2;  t_03, t_33, t_11 = [-2, 2, 0];  xi -> 0: 2
+time 16.6s

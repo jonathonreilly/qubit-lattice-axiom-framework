@@ -6104,3 +6104,25 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R16-13a, b and c.
 
   Referee running.
+
+### C5 Round 17, item 9 (pre-registered 00:55Z, before launch)
+
+**R17-9. SM content on one graviton cone: do the gauge-boson loops offset the Dirac birefringence?**
+- **Plain question.** R16-13 (worker; referee running) zeroes E_g, T₂g and μ_E with toy content (4 scalars on two edges + 1 Dirac field). With SM counts (one Higgs edge, 22.5 Dirac fields) it stalls: Dirac birefringence (Ξ_T2g − Ξ_Eg ≥ +2.6e-3 per field) dominates. Photon and gluon loops are missing because no vector TT vertex exists. With 12 gauge bosons (vectors, each with two polarizations), can the vector loops offset the Dirac birefringence? Is SM content then placeable on one cone, and with how many tunings?
+- **Setting.**
+  - Build a vector TT vertex for a compact or non-compact U(1)/SU(N) lattice gauge field. Use the Peierls/Maxwell stress on the R14-1 subluminal photon edge, plus R13-5's prescription; state the stipulations.
+  - Content: SM counts in the free-field limit — 12 vectors, 22.5 Dirac fields (D1 family), 4 real scalars on one edge family.
+  - One loop, zero-point vacuum supplied, light masses (m ≤ 0.01). Every whole-zone v_max is stated.
+- **Prior art (count once):** R16-13 (Theorem DT, Lemma V1), R16-3 and R16-9, R17-4 (Lemma M; use the U-type or a local vertex), R13-5, R10-5 (photino control), R8-5's photon edges, R16-10's photon stiffening (superluminal at 7.35; excluded here).
+- **Removed hypothesis:** scalar and Dirac loops only.
+- **Probes.**
+  - (a) The vector TT vertex and its IBP identity, with sign checks against the continuum (zero).
+  - (b) Signs and sizes per vector field of Ξ_Eg, Ξ_T2g, μ_E and μ_T2 on subluminal photon edges.
+  - (c) The SM-count solve: the minimal number of edge tunings for E_g = T₂g = μ_E (= μ_T2 if possible) = 0, with one scalar edge. Or a demonstration of conflict in the stated families.
+  - (d) The bill update.
+  - (e) Prices.
+- **FIXED readings.**
+  - **SM-LIFTED:** an explicit SM-count content, all edges subluminal and one Higgs edge, with E_g = T₂g = μ_E = 0 at a common light mass. Checked, with the count.
+  - **SM-CONFLICT:** a demonstration (refereed if class-wide) that no tuning of the stated families achieves it.
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN. The vector sign is likely boson-like (the same sign as the scalar), so the vectors add to the scalar side. That could offset the Dirac birefringence at SM ratios, but the margins are unknown.

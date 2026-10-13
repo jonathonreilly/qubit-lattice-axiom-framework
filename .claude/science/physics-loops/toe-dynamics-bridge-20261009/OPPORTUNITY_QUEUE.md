@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Publish checked amplitude-modulated law against actual9516, with wrapper intensity correction.
-2. Fully compare frozen root515/independent850 chirped-carrier derivations.
-3. Assemble checked fixed-initial-state theorem with exact conditional transfer and preserved counterexamples.
-4. Select next distinct load-bearing obligation from actual gaps after these comparisons, avoiding repetitive variants.
+1. Publish accepted fixed-initial-state theorem with exact9517parent and honest counterexample packet.
+2. Publish accepted chirped-frequency law and distinct quantitative strengthening.
+3. Compare sealed multi-time product/projection proof with independent derivation; resolve ordering and protocol conditions.
+4. Only then select a distinct unresolved preparation, scaling or physical-channel obligation.
 5. Intended3D creators and physical channel selection remain unresolved.
 
 Fixed deadline2026-10-13T16:42:30Z; no merge/main push/audit verdict/axiom change.

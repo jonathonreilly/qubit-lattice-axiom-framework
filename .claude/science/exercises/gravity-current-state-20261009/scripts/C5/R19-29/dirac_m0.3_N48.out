@@ -1,0 +1,20 @@
+Dirac D1(0.906378, 0.554179), UD midpoint, m = 0.3, N = 48, Nc = 4
+(1) Ward-contact test, bubble only, s = 0.050
+   omega=0.000 e1.Pi.g0 = -0.00e+00  e1.Pi.gn = -3.9440666286e-03  g0.Pi.g0 = -7.3730384735e-07  g0.Pi.gn = -0.000000e+00  gn.Pi.gn = -3.0335942318e-03
+   omega=0.030 e1.Pi.g0 = +6.38e-22  e1.Pi.gn = -3.9440666286e-03  g0.Pi.g0 = -7.3730384735e-07  g0.Pi.gn = +4.423823e-07  gn.Pi.gn = -3.0335942318e-03
+   omega=0.050 e1.Pi.g0 = +2.42e-21  e1.Pi.gn = -3.9440666286e-03  g0.Pi.g0 = -7.3730384735e-07  g0.Pi.gn = +7.373038e-07  gn.Pi.gn = -3.0335942318e-03
+   omega=0.200 e1.Pi.g0 = -1.74e-21  e1.Pi.gn = -3.9440666286e-03  g0.Pi.g0 = -7.3730384735e-07  g0.Pi.gn = +2.949215e-06  gn.Pi.gn = -3.0335942318e-03
+(3) face1 row [Pi_11(s,s) - Pi_11(0,0)]/s^2 /4 (dface normalization e:e = 1/2):
+   s=0.02 +6.07125857e-04
+   s=0.01 +6.07788343e-04
+   Richardson +6.08009172e-04
+(4) Schur/s^2 on shell (bubble + ultralocal seagull, total degree-0 = lam_b (tr h)^2), e:e = 2 units:
+  lam_b=0:
+      s=0.08 Pi_1g0=-1.7e-21 Pi_1gn=-2.015e-06 Schur/s^2=+2.6438e-04
+      s=0.04 Pi_1g0=-4.2e-22 Pi_1gn=-2.520e-07 Schur/s^2=+2.6454e-04
+      s=0.02 Pi_1g0=+2.5e-22 Pi_1gn=-3.151e-08 Schur/s^2=+2.6458e-04
+  lam_b=0.01:
+      s=0.08 Pi_1g0=-1.7e-21 Pi_1gn=-2.015e-06 Schur/s^2=+2.4559e-06
+      s=0.04 Pi_1g0=-4.2e-22 Pi_1gn=-2.520e-07 Schur/s^2=+6.1890e-07
+      s=0.02 Pi_1g0=+2.5e-22 Pi_1gn=-3.151e-08 Schur/s^2=+1.5504e-07
+runtime 1.5 s

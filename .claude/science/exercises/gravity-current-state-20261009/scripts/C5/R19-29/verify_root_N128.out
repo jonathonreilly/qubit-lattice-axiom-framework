@@ -1,0 +1,2 @@
+w_d=+0.75313 direct: kappa_tot +3.043176e+00 c4_tot +1.466816e+00 X_tot +1.754162e-01  raw face1 (Lemma O, linear) +3.226636e+00  Schur term -3.226638e+00  phys face1 -1.408110e-06
+w_d=-0.47329 direct: kappa_tot +2.879790e-01 c4_tot -1.332487e+00 X_tot +1.754162e-01  raw face1 (Lemma O, linear) +1.170605e+00  Schur term -1.170639e+00  phys face1 -3.437096e-05

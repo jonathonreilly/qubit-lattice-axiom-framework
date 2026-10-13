@@ -1,0 +1,4 @@
+s=0.04  Pi(e1,g0) = -5.4014e-22-3.0728e-06i  -> y = Im/s^3 = -4.801250e-02
+s=0.02  Pi(e1,g0) = +2.1355e-22-3.8417e-07i  -> y = Im/s^3 = -4.802109e-02
+raw face1 shift literal - rows (dface units, per field): +1.295837e-02, +1.295845e-02 -> +1.295848e-02
+g0-channel Schur term in R18-13 totals (lam_nn != 0): (5.625 y)^2/(8 X_tot) = +5.1994e-02 ; raw-row shift x 22.5 = +2.9157e-01

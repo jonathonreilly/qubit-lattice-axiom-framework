@@ -1,0 +1,11 @@
+scalar : D(0)=+1.594552e-02 G(0)=-2.011912e-01 X(0)=+9.588379e-04 | kappa: s=0.04 +1.445261e-04, s=0.02 +1.447836e-04 -> +1.448694e-04 | c4: -5.333590e-03, -5.330869e-03 -> -5.329962e-03
+dirac  : D(0)=-1.045903e-01 G(0)=-1.178117e+00 X(0)=+1.729457e-02 | kappa: s=0.04 -4.636670e-03, s=0.02 -4.637694e-03 -> -4.638035e-03 | c4: -7.232231e-02, -7.231466e-02 -> -7.231211e-02
+photon : N=48 D(0)=+1.683832e-02 G(0)=-1.532526e+00 X(0)=+6.180725e-03 | kappa: s=0.1851 -1.040747e-01, s=0.3702 -1.353226e-01 -> -9.365875e-02 | c4: -2.758139e-01, -3.832650e-01 -> -2.399968e-01
+
+TOTALS (R18-13 convention: 4 scalars + 22.5 Dirac x 1/4 + 12 vectors): kappa -1.149414e+00  c4 -3.308037e+00  X +1.752860e-01  D(0) -3.224786e-01  G(0) -2.582199e+01
+   share of kappa: scalar  +5.7948e-04
+   share of kappa: dirac   -2.6089e-02
+   share of kappa: photon  -1.1239e+00
+lam_nn = 0 branch: face1 pole coefficient shift  -kappa^2/(c4 + 8X) = +6.932462e-01 (R18-13 totals units)
+compare: face1 total before the own-direction solve +2.6424; d face1/d w_d (totals) = 1.676 (R18-13 Sec 3.4)
+runtime 2.6 s

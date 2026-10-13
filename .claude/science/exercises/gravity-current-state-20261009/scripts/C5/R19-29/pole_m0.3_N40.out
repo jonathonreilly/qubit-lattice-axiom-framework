@@ -1,0 +1,11 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R19-29/scripts/r1929_pole.py:33: RuntimeWarning: divide by zero encountered in scalar divide
+  x2 = x1 - f1*(x1 - x0)/(f1 - f0)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+K_EH . g0 residual 2.1e-22
+K_EH . gn residual 1.3e-21
+TT normalization e1.(sK).e1 at (w, q) = (0.7q, q): -2.040000e-04 vs w^2 - q^2 = -2.040000e-04
+lam_b=0 eps=1e-06 q=0.020: pole (w^2-q^2)/(eps q^2) = -4.033735e-04 | row Pi_11(q,q)/q^2 = -3.928316e-04 | (Pi_11 - Schur)/q^2 = -4.033733e-04 | Pi_11(0,0) = +0.0e+00
+lam_b=0 eps=1e-07 q=0.020: pole (w^2-q^2)/(eps q^2) = +nan | row Pi_11(q,q)/q^2 = -3.928316e-04 | (Pi_11 - Schur)/q^2 = -4.033733e-04 | Pi_11(0,0) = +0.0e+00
+lam_b=0.01 eps=1e-06 q=0.020: pole (w^2-q^2)/(eps q^2) = -3.928322e-04 | row Pi_11(q,q)/q^2 = -3.928316e-04 | (Pi_11 - Schur)/q^2 = -3.928319e-04 | Pi_11(0,0) = +0.0e+00
+lam_b=0.01 eps=1e-07 q=0.020: pole (w^2-q^2)/(eps q^2) = -3.928349e-04 | row Pi_11(q,q)/q^2 = -3.928316e-04 | (Pi_11 - Schur)/q^2 = -3.928319e-04 | Pi_11(0,0) = +0.0e+00

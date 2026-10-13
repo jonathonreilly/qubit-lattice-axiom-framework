@@ -1,0 +1,23 @@
+kappa = 0 at w_d = -0.60148 ; c4 + 8X = 0 (gauge-block singular, leading-order Schur invalid) at w_d = -0.50433
+   w_d=-3.0000  kappa=-5.3884  c4+8X=-5.6964  Schur term=+5.0970e+00  phys face1=+2.0317e+00
+   w_d=-2.6436  kappa=-4.5878  c4+8X=-4.8830  Schur term=+4.3104e+00  phys face1=+1.8426e+00
+   w_d=-2.2872  kappa=-3.7871  c4+8X=-4.0695  Schur term=+3.5243e+00  phys face1=+1.6540e+00
+   w_d=-1.9309  kappa=-2.9865  c4+8X=-3.2561  Schur term=+2.7393e+00  phys face1=+1.4663e+00
+   w_d=-1.5745  kappa=-2.1859  c4+8X=-2.4426  Schur term=+1.9561e+00  phys face1=+1.2806e+00
+   w_d=-1.2181  kappa=-1.3852  c4+8X=-1.6292  Schur term=+1.1778e+00  phys face1=+1.0998e+00
+   w_d=-0.8617  kappa=-0.5846  c4+8X=-0.8157  Schur term=+4.1899e-01  phys face1=+9.3843e-01
+   w_d=-0.5053  kappa=+0.2160  c4+8X=-0.0023  Schur term=+2.0442e+01  phys face1=+2.1559e+01
+   w_d=-0.5033  kappa=+0.2205  c4+8X=+0.0023  Schur term=-2.1301e+01  phys face1=-2.0181e+01
+   w_d=-0.3667  kappa=+0.5275  c4+8X=+0.3142  Schur term=-8.8562e-01  phys face1=+4.6374e-01
+   w_d=-0.2300  kappa=+0.8346  c4+8X=+0.6262  Schur term=-1.1123e+00  phys face1=+4.6619e-01
+   w_d=-0.0933  kappa=+1.1416  c4+8X=+0.9381  Schur term=-1.3892e+00  phys face1=+4.1841e-01
+   w_d=+0.0433  kappa=+1.4486  c4+8X=+1.2500  Schur term=-1.6787e+00  phys face1=+3.5801e-01
+   w_d=+0.1800  kappa=+1.7556  c4+8X=+1.5620  Schur term=-1.9733e+00  phys face1=+2.9254e-01
+   w_d=+0.3167  kappa=+2.0627  c4+8X=+1.8739  Schur term=-2.2704e+00  phys face1=+2.2455e-01
+   w_d=+0.4533  kappa=+2.3697  c4+8X=+2.1859  Schur term=-2.5689e+00  phys face1=+1.5510e-01
+   w_d=+0.5900  kappa=+2.6767  c4+8X=+2.4978  Schur term=-2.8684e+00  phys face1=+8.4747e-02
+   w_d=+0.7267  kappa=+2.9837  c4+8X=+2.8097  Schur term=-3.1685e+00  phys face1=+1.3791e-02
+   w_d=+0.8633  kappa=+3.2908  c4+8X=+3.1217  Schur term=-3.4690e+00  phys face1=-5.7589e-02
+   w_d=+1.0000  kappa=+3.5978  c4+8X=+3.4336  Schur term=-3.7698e+00  phys face1=-1.2928e-01
+root w_d = -0.47329 (distance to the singular point +0.0310): d face1_phys/d w_d = +21.1265; det J (x w_o column 6.94286) = +146.6786
+root w_d = +0.75313 (distance to the singular point +1.2575): d face1_phys/d w_d = -0.5215; det J (x w_o column 6.94286) = -3.6206

@@ -8781,3 +8781,13 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Side finding:** R19-5's Dirac code puts the pair block without its placement phase. This shifts face1 by +1.11e-2 per field at m = 0.3 (≈ +0.29 on the face1 total), and the O_h relation fails by ~1e-2. The other rows are unchanged.
 
   Referee running.
+
+- **R19-29 (face1 Schur completion): worker reading FACE1-HOLDS (rows' Dirac convention), conditional on λ_nn ≠ 0.** λ_nn is the vacuum's degree-0 bulk entry. It is generic and uncomputed.
+  - **Lemma C:** with P1 time components, Π(e₁, g₀) ≡ 0 (checked to 6e-19).
+  - **Theorem Q:** the Schur correction is κ²s²/(4λ_nn + (c₄ + 8X)s²), which is O(s⁴) if λ_nn ≠ 0. The exact 5×5 pole confirms it.
+  - **Root numbers:** κ = −1.28 (photons supply 98%), c₄ = −2.93, 8X = 1.40.
+  - **If λ_nn = 0:** FACE1-SHIFTS, w_d = +0.753. Here w_o is unchanged and the determinant is −3.62.
+  - **R19-5's literal Dirac phase convention:** FACE1-SHIFTS, w_d = −1.377. The model reproduces R19-30's +1.107e-2 per field.
+  - **Price:** P-R19-29a, λ_nn ≠ 0 (an inequality).
+
+  Referee running.

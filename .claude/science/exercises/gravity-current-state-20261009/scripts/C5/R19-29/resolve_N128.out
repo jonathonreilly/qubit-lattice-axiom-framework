@@ -1,0 +1,6 @@
+w_d=-1.171554: kappa_tot -1.280699e+00 c4_tot -2.926278e+00 X_tot +1.754162e-01  Schur term -kappa^2/(c4+8X) +1.076983e+00  phys face1 = +1.076983e+00
+w_d=-1.571554: kappa_tot -2.179316e+00 c4_tot -3.839282e+00 X_tot +1.754162e-01  Schur term -kappa^2/(c4+8X) +1.949717e+00  phys face1 = +1.279137e+00
+w_d=-1.971554: kappa_tot -3.077933e+00 c4_tot -4.752287e+00 X_tot +1.754162e-01  Schur term -kappa^2/(c4+8X) +2.828842e+00  phys face1 = +1.487682e+00
+kappa(w_d) quad fit [-1.67837513e-06  2.24653706e+00  1.35124289e+00]  c4(w_d) quad fit [-3.35674389e-06  2.28250037e+00 -2.52201334e-01]
+roots of the Schur-completed face1 total in w_d (w_o fixed at -0.195418): []
+runtime 69.7 s

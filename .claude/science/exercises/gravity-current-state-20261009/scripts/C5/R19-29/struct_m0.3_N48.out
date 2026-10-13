@@ -1,0 +1,40 @@
+root scalar edge G_w(b_s=2.5261037, fr=1), m = 0.3, N = 48 (midpoint)
+
+(1) Ward-contact test at s = 0.050 (bubble only, no seagull)
+   omega=0.000  e1.Pi.g0 = -0.000e+00   e1.Pi.gn = +7.8776137018e-04   g0.Pi.g0 = -4.4216622607e-08  g0.Pi.gn = -0.000000e+00  gn.Pi.gn = -4.9321601808e-04
+   omega=0.020  e1.Pi.g0 = -3.564e-22   e1.Pi.gn = +7.8776137018e-04   g0.Pi.g0 = -4.4216622607e-08  g0.Pi.gn = +1.768665e-08  gn.Pi.gn = -4.9321601808e-04
+   omega=0.050  e1.Pi.g0 = -5.841e-23   e1.Pi.gn = +7.8776137018e-04   g0.Pi.g0 = -4.4216622607e-08  g0.Pi.gn = +4.421662e-08  gn.Pi.gn = -4.9321601808e-04
+   omega=0.110  e1.Pi.g0 = +1.966e-22   e1.Pi.gn = +7.8776137018e-04   g0.Pi.g0 = -4.4216622607e-08  g0.Pi.gn = +9.727657e-08  gn.Pi.gn = -4.9321601808e-04
+   omega=0.300  e1.Pi.g0 = -5.581e-23   e1.Pi.gn = +7.8776137018e-04   g0.Pi.g0 = -4.4216622607e-08  g0.Pi.gn = +2.652997e-07  gn.Pi.gn = -4.9321601808e-04
+(2) X = 8.8433245214e-04 ; -8 s^4 X = -4.4216622607e-08 ; 8 w s^3 X (w = s) = +4.4216622607e-08 ; gn.Pi.gn closed form -8 s^2 <nrm^2 (ntn)^2/E> = -4.9321601808e-04
+    e1.Pi.gn closed form -4 s <nrm^2 (e1 tau)(n tau n)/E> = +7.8776137018e-04
+
+(3) face1 TT row: [Pi_11(s, s) - Pi_11(0, 0)]/s^2, Richardson in s
+   s=0.040  row(s) = -4.8538390669e-04
+   s=0.020  row(s) = -4.8574748737e-04
+   s=0.010  row(s) = -4.8583912185e-04
+   Richardson: -4.8586868093e-04  -4.8586966668e-04  -> -4.8586973239e-04
+   R17-4 archived evaluator (U, E1): face1 = -4.5038821144e-04  (Eg -3.561593e-04, T2g -6.184130e-04, face2 -6.184130e-04)
+
+(4) on-shell Schur correction Pi_1G Pi_GG^-1 Pi_G1 / s^2 (bubble + ultralocal seagull with total degree-0 block lam_b (tr h)^2)
+  lam_b = 0:
+      s=0.08: Pi_1g0=+1.7e-22 Pi_1gn=+6.379e-08 Schur/s^2=+7.4486e-06
+      s=0.04: Pi_1g0=-3.0e-23 Pi_1gn=+7.988e-09 Schur/s^2=+7.5147e-06
+      s=0.02: Pi_1g0=-5.8e-23 Pi_1gn=+9.990e-10 Schur/s^2=+7.5316e-06
+      s=0.01: Pi_1g0=-6.7e-24 Pi_1gn=+1.249e-10 Schur/s^2=+7.5359e-06
+  lam_b = 0.001:
+      s=0.08: Pi_1g0=+1.7e-22 Pi_1gn=+6.379e-08 Schur/s^2=+2.4752e-08
+      s=0.04: Pi_1g0=-3.0e-23 Pi_1gn=+7.988e-09 Schur/s^2=+6.2264e-09
+      s=0.02: Pi_1g0=-5.8e-23 Pi_1gn=+9.990e-10 Schur/s^2=+1.5590e-09
+      s=0.01: Pi_1g0=-6.7e-24 Pi_1gn=+1.249e-10 Schur/s^2=+3.8989e-10
+  lam_b = 0.01:
+      s=0.08: Pi_1g0=+1.7e-22 Pi_1gn=+6.379e-08 Schur/s^2=+2.4826e-09
+      s=0.04: Pi_1g0=-3.0e-23 Pi_1gn=+7.988e-09 Schur/s^2=+6.2310e-10
+      s=0.02: Pi_1g0=-5.8e-23 Pi_1gn=+9.990e-10 Schur/s^2=+1.5593e-10
+      s=0.01: Pi_1g0=-6.7e-24 Pi_1gn=+1.249e-10 Schur/s^2=+3.8991e-11
+  lam_b = 0.1:
+      s=0.08: Pi_1g0=+1.7e-22 Pi_1gn=+6.379e-08 Schur/s^2=+2.4834e-10
+      s=0.04: Pi_1g0=-3.0e-23 Pi_1gn=+7.988e-09 Schur/s^2=+6.2315e-11
+      s=0.02: Pi_1g0=-5.8e-23 Pi_1gn=+9.990e-10 Schur/s^2=+1.5593e-11
+      s=0.01: Pi_1g0=-6.7e-24 Pi_1gn=+1.249e-10 Schur/s^2=+3.8991e-12
+runtime 2.1 s

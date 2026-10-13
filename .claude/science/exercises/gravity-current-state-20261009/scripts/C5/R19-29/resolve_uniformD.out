@@ -1,0 +1,6 @@
+R18-13 convention: Schur term at R18-13 solution +1.0770; gauge-block singular point w_d = -0.5043
+   root w_d = -0.47329 (distance to singular point +0.0310), d face1/d w_d = +21.1266, face-block det +146.6789
+   root w_d = +0.75313 (distance to singular point +1.2575), d face1/d w_d = -0.5215, face-block det -3.6206
+uniform Dirac weight: Schur term at R18-13 solution +4.5289; gauge-block singular point w_d = -0.9929
+   root w_d = -0.79991 (distance to singular point +0.1930), d face1/d w_d = +10.2473, face-block det +71.1454
+   root w_d = +2.89936 (distance to singular point +3.8923), d face1/d w_d = -0.5082, face-block det -3.5282

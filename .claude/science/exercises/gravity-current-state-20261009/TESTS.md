@@ -6140,3 +6140,52 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Records (Lemma X).** Dense site-projection records cost ~1e123 ρ_Λ per field. That is P4's heating, not the principle's. Under (S) the records-are-mass thought follows as a consequence.
 
   Referee running.
+
+#### C5 referee verdicts R16-13, R17-1, R17-2, R17-4, R17-5 (recorded 01:11Z; codex gpt-5.6-sol, xhigh)
+
+- **R16-13 referee: NOT CONFIRMED (the LIFTED). Reading OPEN.**
+  - **Confirmed, conditionally:** under an ultralocal-seagull assumption and the stipulated V0 (Dirac TT) and SF (strain) responses, these reproduce:
+    - Theorem DT (to 2.7e-9);
+    - the opposite-sign D1 example;
+    - Lemma V1;
+    - the Wilson T₂g shear mechanism;
+    - a subluminal codimension-3 axial zero at separately tuned light masses.
+  - **Not lifted in the registered local-stress setting:**
+    - the only root uses the non-local scalar M amplitude (R17-4 Lemma M);
+    - μ_T2 remains nonzero;
+    - neither one-Higgs-edge nor SM-count content is reached.
+- **R17-1 referee: CONFIRMED WITH CORRECTIONS. Reading WINDOW; EXTENDS refuted at the f-sum level.**
+  - **Why:** modular Gauss invariance gives Gδ = Nγ and M₀ = −N·D(γ), so the integer-law O(k⁴) bound is not universal.
+  - **The explicit models:**
+    - an N = 2 cube+μ₈ qubit stabilizer model has an exact positive k-independent TT-label f-sum;
+    - a moving-cube model has m₁ ≥ c·k² for generic coupled directions;
+    - integer lifts recover O(k⁴).
+  - **Not established:** a physical metric susceptibility, or a graviton.
+    - The k⁰ model is the even sector of a scalar 3D TFIM.
+    - The k² construction gives only a scalar-density/rank-one TT signal.
+    - Still open: the one-site encoding, the readout, the two-helicity spectrum, the S/V gaps, and the reciprocal coupling.
+- **R17-2 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Lemma D is confirmed** (ratios −1 to 1.1e-14). W is the inverse of one particular linearized-GR Coulomb/comoving dressing, not a unique one.
+  - **At leading bulk order** for free subluminal S/G matter, W7's forced translation term is canonically equivalent to that dressing. Its matter coupling can be moved into non-local constraint multipliers, so no instantaneous physical bulk interaction is demonstrated.
+  - **Still open:** degree 3 does not close. Missing are the global boundary algebra, the zero-frequency shell, the remaining boost brackets, exact lower-order closure, and a completed Dirac observable.
+- **R17-4 referee: CONFIRMED WITH CORRECTIONS. Reading COUNTED-ROWS for U+E1; the K₆ row and the shear certificate OPEN.**
+  - **Confirmed:**
+    - the off-axis formula, checked independently to 6.7e-16; the D²W form needs W ∈ C² or a weak derivative;
+    - U reduces the two off-axis rows to one sixth-cumulant condition. Searches strongly but non-certifiably suggest it conflicts with the axis zeros;
+    - the LV tadpole is strictly positive and separately payable;
+    - E2 shows that off-axis values depend on the vertex extension.
+  - **Lemma M is confirmed** under the stated single-amplitude covariance hypotheses: M has no absolutely summable doubler-free realization. U preserves R16-3's refutation.
+  - **Dated consequence:** the M-vertex numbers in R16-3, R16-9 and R16-13 belong to a non-local vertex. R16-3's REFUTED stands via U.
+- **R17-5 referee: CONFIRMED WITH CORRECTIONS. Reading EXCLUDED-MB.**
+  - **The class:** finite-N free quadratic matter on the BZ torus with:
+    - continuous quasi-local kernels and W1 regularity;
+    - symmetric stress;
+    - a projectable lapse;
+    - multiplier-generated constant shifts.
+  - **What fails in that class:**
+    - standard W2_pf is impossible for nonzero momentum density;
+    - nonzero-label sectors are restricted to 1D axis motion;
+    - no continuous finite-dimensional generator exponentiates to a lattice translation;
+    - conditional on H-RB, the strain response is velocity × label, not p·v.
+  - **Coverage:** the six-band and C₂-exchanged families are included.
+  - **Still open:** altered or component-mixing generators (R17-8 running).

@@ -5994,3 +5994,23 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-W7mult, P-W7bdy, P-W7ro.
 
   Referee running.
+
+#### C5 referee verdicts R16-14, R17-3 (recorded 00:47Z; codex gpt-5.6-sol, xhigh)
+
+- **R16-14 referee: CONFIRMED WITH CORRECTIONS. Reading: E1 and E2 OPEN and observationally tied; only the literal linear completions (L0, L1/2) EXCLUDED.**
+  - **E1** has the GR long-range α₁ = α₂ = 0 and γ = 1 at linear order. Its correction starts at 6(ωτ)² and gives 1/r³ terms.
+  - **E2** has the same near-zone projection plus tiny non-PPN friction terms. Calling it "exactly PPN" globally is too strong.
+  - **Confirmed:** the factor 45(cτ/R)² = 6.94e-13, and that E2's dipole exerts no leading torque on an inversion-symmetric body.
+  - **β is not fixed by either bare route.**
+    - A metric linear in matter T gives β = 0 with geodesic matter, or β_eff = ½ with the literal coupling. Mercury excludes both.
+    - Completion N (Landau–Lifshitz total-stress source) formally restores β = 1. But it is a new, uncompleted nonlinear source/action bridge, especially for E2, and it does not establish premise (iii).
+- **R17-3 referee: NOT CONFIRMED (the TUNING). Reading OPEN.**
+  - **Theorem T is not proved as stated:** H-an makes V analytic, but not Γ.
+  - **The sound bounded obstruction:**
+    - g ≡ 0 forces GR with one constant, C = ρ_v,late, and a fixed independent value is radiatively unstable;
+    - without an informative pre-branch label, no causal common rule cancels histories that end in unequal vacua;
+    - fixed nonnegative record weights cannot source radiation;
+    - the causal average signals;
+    - vacuum-shift symmetry does not select the zero.
+  - **The number-free rule C = E₀[H]** tracks radiative corrections by definition. It is an added source/action principle, not forced by the four axioms, and not "an independent exact number". So the result is OPEN, not TUNING.
+  - **Consequence for owner Q1:** "the lowest state of the law weighs nothing" is a genuine, consistent, number-free principle that would have to be added. It is not a disguised tuning (this narrows vR16-6). It is still unforced by the axiom texts.

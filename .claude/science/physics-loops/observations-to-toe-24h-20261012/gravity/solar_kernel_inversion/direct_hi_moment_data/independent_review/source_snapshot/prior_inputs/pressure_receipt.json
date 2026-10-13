@@ -1,0 +1,122 @@
+{
+  "at": "2026-10-12T22:23:16.573689+00:00",
+  "source_sha256": "7dc6f7b00e5426a4033eda1f1cd212b3b4ae61802211dce89a96265ca70cc089",
+  "source_data_sha256": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+  "target_data_sha256": "1e8f96f1198817fe962ecf43ceed6fb23be795f3c12ae246387a65cdc2dddfa6",
+  "definition": "p_i=v_c^2-v_phi^2; both squared-speed rectangle endpoints shift by p_i. The original normalization A_i is held fixed.",
+  "identity": "t >= original_exact_lower_bound + sum_i coefficient_i * p_i",
+  "limits": "Necessary finite-matrix sensitivity, not a new fit, pressure measurement, physical field exclusion, or proof of sufficiency. sigma=8 is an illustrative source-model assumption, not a local dispersion measurement.",
+  "results": [
+    {
+      "family": "M",
+      "certificate_sha256": "da9eb1eb36ecc23334b99d6c52cf8881988e5a1180f1e55784addc32b151ebb3",
+      "terms": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "velocity_km_s": 10.7,
+          "coefficient_rational": [
+            "-6865763342587227399899013390438300879788441600",
+            "10457957653625940253377300351865419432655089054573"
+          ],
+          "coefficient_approximate": -0.0006565109144620372
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 4,
+          "R_kpc": 1.32,
+          "velocity_km_s": 14.1,
+          "coefficient_rational": [
+            "-783169300549125278229622950574194408474804224",
+            "18160071282359799657121196585236962031974210670545"
+          ],
+          "coefficient_approximate": -4.312589352608294e-05
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 1,
+          "R_kpc": 3.5,
+          "velocity_km_s": 69.3,
+          "coefficient_rational": [
+            "2323000672101035495574036545536",
+            "12175758662180137981505196897316347"
+          ],
+          "coefficient_approximate": 0.00019078898790238417
+        }
+      ],
+      "lower_bound_rational": [
+        "480880201747021739330967128892953",
+        "865382809755804624270681106808832"
+      ],
+      "scenario": "Only UGC07577 pressure shifts allowed; all other source bounds and matrix fixed.",
+      "necessary_max_pressure_km2_s2_rational": [
+        "28430539009342134454360564926079101998286667068027256593291707653601401974442533045103847189235",
+        "35795555789320994391517474036117032221870233584923921127921090053508298438429699445356494848"
+      ],
+      "necessary_max_pressure_km2_s2_approximate": 794.2477322233368,
+      "illustrative_slope_if_sigma_8_km_s": 12.410120815989638,
+      "necessary_not_sufficient": true
+    },
+    {
+      "family": "D",
+      "certificate_sha256": "d0f62840feaa9f5f0fd3110dd5c519beb0b38f728770d3e80a3b54e6e1ad62a4",
+      "terms": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "velocity_km_s": 10.7,
+          "coefficient_rational": [
+            "-9077366916261677905592975360",
+            "18141664652516244246482322639073"
+          ],
+          "coefficient_approximate": -0.0005003601979271868
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 0,
+          "R_kpc": 2.61,
+          "velocity_km_s": 57.0,
+          "coefficient_rational": [
+            "9336046688159527698257936384",
+            "32176537501105601558921426387735"
+          ],
+          "coefficient_approximate": 0.00029015075620982325
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC08837",
+          "scored_bin": 2,
+          "R_kpc": 2.09,
+          "velocity_km_s": 28.1,
+          "coefficient_rational": [
+            "-69096928579661147930624",
+            "3909959337680517034318262632611"
+          ],
+          "coefficient_approximate": -1.7672032523144123e-08
+        }
+      ],
+      "lower_bound_rational": [
+        "370219683626774732597930654250111009",
+        "664613997892457936451903530140172288"
+      ],
+      "scenario": "Only UGC07577 pressure shifts allowed; all other source bounds and matrix fixed.",
+      "necessary_max_pressure_km2_s2_rational": [
+        "6716401348117606108745458880641979907804896915834063259664090854657",
+        "6032945116553406197266412062490685504812833067133036152938823680"
+      ],
+      "necessary_max_pressure_km2_s2_approximate": 1113.2873278904708,
+      "illustrative_slope_if_sigma_8_km_s": 17.395114498288606,
+      "necessary_not_sufficient": true,
+      "R_kpc": 0.94,
+      "central_speed_illustration_km_s": 35.039653649693385,
+      "central_speed_increase_illustration_km_s": 24.339653649693386
+    }
+  ]
+}

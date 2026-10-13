@@ -1,0 +1,422 @@
+{
+  "schema": "vector_mechanical_readout_controls_v1",
+  "source_sha256": {
+    "PROTOCOL.md": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2",
+    "DIRECT_READOUT.md": "392e8d068c9f07c1e3584a8f5f93cc014afcf09a02f67f43eeafa646b19b7f8c",
+    "SOURCE_LEDGER.md": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30",
+    "direct_readout_check.py": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714"
+  },
+  "pass_count": 5,
+  "fail_count": 0,
+  "families": [
+    {
+      "family": "symbolic_plane_tide",
+      "rank_at_most_one": true,
+      "transverse_projection_exactly_zero": true
+    },
+    {
+      "family": "endpoint_acceleration_integral",
+      "cases": [
+        {
+          "case": 0,
+          "dimensionless_time": 0.3,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.05,
+          "mu": 0.36492630924322556,
+          "relative_error": 5.301821510890874e-15
+        },
+        {
+          "case": 0,
+          "dimensionless_time": 1.9,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.05,
+          "mu": 0.36492630924322556,
+          "relative_error": 4.705327439136877e-15
+        },
+        {
+          "case": 0,
+          "dimensionless_time": 4.5,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.05,
+          "mu": 0.36492630924322556,
+          "relative_error": 5.779373258061417e-15
+        },
+        {
+          "case": 1,
+          "dimensionless_time": 0.3,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.05,
+          "mu": 0.61840350412774,
+          "relative_error": 3.2984117328669173e-15
+        },
+        {
+          "case": 1,
+          "dimensionless_time": 1.9,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.05,
+          "mu": 0.61840350412774,
+          "relative_error": 5.962215344683895e-15
+        },
+        {
+          "case": 1,
+          "dimensionless_time": 4.5,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.05,
+          "mu": 0.61840350412774,
+          "relative_error": 5.1036320581068286e-15
+        },
+        {
+          "case": 2,
+          "dimensionless_time": 0.3,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.05,
+          "mu": 0.7537284922362251,
+          "relative_error": 5.90118260619616e-16
+        },
+        {
+          "case": 2,
+          "dimensionless_time": 1.9,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.05,
+          "mu": 0.7537284922362251,
+          "relative_error": 8.849557939494478e-16
+        },
+        {
+          "case": 2,
+          "dimensionless_time": 4.5,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.05,
+          "mu": 0.7537284922362251,
+          "relative_error": 6.891332932451839e-16
+        },
+        {
+          "case": 3,
+          "dimensionless_time": 0.3,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.6,
+          "mu": 0.31526912884974045,
+          "relative_error": 1.5441481732719832e-15
+        },
+        {
+          "case": 3,
+          "dimensionless_time": 1.9,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.6,
+          "mu": 0.31526912884974045,
+          "relative_error": 3.5526603094649196e-16
+        },
+        {
+          "case": 3,
+          "dimensionless_time": 4.5,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.6,
+          "mu": 0.31526912884974045,
+          "relative_error": 1.765200721139213e-16
+        },
+        {
+          "case": 4,
+          "dimensionless_time": 0.3,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.6,
+          "mu": 0.5688226055482324,
+          "relative_error": 1.5862298865989652e-15
+        },
+        {
+          "case": 4,
+          "dimensionless_time": 1.9,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.6,
+          "mu": 0.5688226055482324,
+          "relative_error": 6.514230618606325e-16
+        },
+        {
+          "case": 4,
+          "dimensionless_time": 4.5,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.6,
+          "mu": 0.5688226055482324,
+          "relative_error": 6.764684233392842e-16
+        },
+        {
+          "case": 5,
+          "dimensionless_time": 0.3,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.6,
+          "mu": -0.5163079144358012,
+          "relative_error": 2.3262096295228907e-15
+        },
+        {
+          "case": 5,
+          "dimensionless_time": 1.9,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.6,
+          "mu": -0.5163079144358012,
+          "relative_error": 1.2400532617572893e-15
+        },
+        {
+          "case": 5,
+          "dimensionless_time": 4.5,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.6,
+          "mu": -0.5163079144358012,
+          "relative_error": 1.2721997477652705e-15
+        },
+        {
+          "case": 6,
+          "dimensionless_time": 0.3,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 2.5,
+          "mu": -0.37620710722097406,
+          "relative_error": 1.0789266430466254e-15
+        },
+        {
+          "case": 6,
+          "dimensionless_time": 1.9,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 2.5,
+          "mu": -0.37620710722097406,
+          "relative_error": 4.038410846171509e-16
+        },
+        {
+          "case": 6,
+          "dimensionless_time": 4.5,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 2.5,
+          "mu": -0.37620710722097406,
+          "relative_error": 4.233808029351569e-16
+        },
+        {
+          "case": 7,
+          "dimensionless_time": 0.3,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 2.5,
+          "mu": 0.23278909679999504,
+          "relative_error": 1.1481741111261478e-15
+        },
+        {
+          "case": 7,
+          "dimensionless_time": 1.9,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 2.5,
+          "mu": 0.23278909679999504,
+          "relative_error": 2.0221867959034512e-16
+        },
+        {
+          "case": 7,
+          "dimensionless_time": 4.5,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 2.5,
+          "mu": 0.23278909679999504,
+          "relative_error": 2.351961714887337e-16
+        },
+        {
+          "case": 8,
+          "dimensionless_time": 0.3,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 2.5,
+          "mu": 0.7553342261122755,
+          "relative_error": 8.929088043810958e-16
+        },
+        {
+          "case": 8,
+          "dimensionless_time": 1.9,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 2.5,
+          "mu": 0.7553342261122755,
+          "relative_error": 4.646106350281439e-16
+        },
+        {
+          "case": 8,
+          "dimensionless_time": 4.5,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 2.5,
+          "mu": 0.7553342261122755,
+          "relative_error": 4.329694827512241e-16
+        },
+        {
+          "case": 9,
+          "dimensionless_time": 0.3,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.05,
+          "mu": 0.042544875585807496,
+          "relative_error": 1.1939533040521858e-13
+        },
+        {
+          "case": 9,
+          "dimensionless_time": 1.9,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.05,
+          "mu": 0.042544875585807496,
+          "relative_error": 1.0379687944409415e-13
+        },
+        {
+          "case": 9,
+          "dimensionless_time": 4.5,
+          "omega": 0.4,
+          "speed": 0.7,
+          "length": 0.05,
+          "mu": 0.042544875585807496,
+          "relative_error": 8.31438212689573e-14
+        },
+        {
+          "case": 10,
+          "dimensionless_time": 0.3,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.05,
+          "mu": -0.9830227112816756,
+          "relative_error": 4.597146673060752e-15
+        },
+        {
+          "case": 10,
+          "dimensionless_time": 1.9,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.05,
+          "mu": -0.9830227112816756,
+          "relative_error": 4.0027922207782556e-15
+        },
+        {
+          "case": 10,
+          "dimensionless_time": 4.5,
+          "omega": 1.0,
+          "speed": 1.0,
+          "length": 0.05,
+          "mu": -0.9830227112816756,
+          "relative_error": 4.07117002522278e-15
+        },
+        {
+          "case": 11,
+          "dimensionless_time": 0.3,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.05,
+          "mu": 0.8534846536616014,
+          "relative_error": 3.820304079224474e-15
+        },
+        {
+          "case": 11,
+          "dimensionless_time": 1.9,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.05,
+          "mu": 0.8534846536616014,
+          "relative_error": 4.87703785523613e-15
+        },
+        {
+          "case": 11,
+          "dimensionless_time": 4.5,
+          "omega": 2.2,
+          "speed": 1.8,
+          "length": 0.05,
+          "mu": 0.8534846536616014,
+          "relative_error": 4.407564169414746e-15
+        }
+      ],
+      "max_relative_error": 1.1939533040521858e-13,
+      "max_quad_diagnostic": 1.123769318843087e-14
+    },
+    {
+      "family": "angular_pattern_and_finite_arm",
+      "longitudinal_F": -0.2142857142857143,
+      "breathing_pattern": 0.2142857142857144,
+      "small_phase_values": [
+        0.08,
+        0.04,
+        0.02,
+        0.01
+      ],
+      "errors": [
+        0.005344946414084413,
+        0.0026725776155947616,
+        0.0013363018591050313,
+        0.0006681525609734277
+      ],
+      "halving_ratios": [
+        1.9999218667761447,
+        1.999980466527736,
+        1.9999951166215402
+      ],
+      "finite_exact_pattern_re_im": [
+        -0.15688647438003187,
+        -0.12910322483020525
+      ],
+      "finite_constant_pattern_relative_error": 0.6593442718210004,
+      "boundary": "mechanical endpoints only; no finite-frequency breathing/optical model compared"
+    },
+    {
+      "family": "two_speed_network",
+      "orientation_factors": [
+        0.5,
+        -0.3333333333333333,
+        0.4,
+        -0.42857142857142855
+      ],
+      "projected_baselines": [
+        0.0,
+        0.8,
+        1.7,
+        3.1
+      ],
+      "omega": 1.1,
+      "speeds": [
+        0.7,
+        1.0
+      ],
+      "two_speed_singular_values": [
+        1.8609186392448593,
+        0.4208868525251535
+      ],
+      "equal_speed_singular_values": [
+        1.187252778896614,
+        7.72682523912663e-17
+      ],
+      "single_alignment_constant_fit_error": 2.0895103284415337,
+      "meaning": "arbitrary synthetic orientation factors realizable by equal orthogonal arms"
+    },
+    {
+      "family": "negative_controls",
+      "wrong_sign_detected": true,
+      "transverse_force_detected": 1.414213562373095,
+      "single_speed_rank_reuse_detected": true,
+      "type": "explicit false-alternative comparisons, not mutated-source executions"
+    }
+  ],
+  "elapsed_seconds": 0.41990941669791937,
+  "empirical_data_used": false,
+  "limits": [
+    "linear prescribed plane waves",
+    "simultaneous mechanical length only",
+    "no optical or strain likelihood",
+    "finite-arm synthetic controls only"
+  ]
+}

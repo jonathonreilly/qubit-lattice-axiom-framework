@@ -1,0 +1,290 @@
+{
+  "status": "PASS",
+  "roundtrip_pixels": 3.490185918053612e-11,
+  "unit_ray_norm_error": 5.551115123125783e-16,
+  "minimum_annulus_boundary_margin_kpc": 2.731234045871833e-08,
+  "compared_numeric_leaves": 12011,
+  "differences": {
+    "inclination_deg": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/inclination_deg"
+    },
+    "PA_deg": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/PA_deg"
+    },
+    "center_radec_deg": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/center_radec_deg/0"
+    },
+    "sky_fwhm_arcsec": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/beam/sky_fwhm_arcsec/0"
+    },
+    "disk_covariance_kpc2": {
+      "max_abs": 6.938893903907228e-18,
+      "max_rel": 1.3857357687713221e-14,
+      "path_at_max_abs": "geometries/7/beam/disk_covariance_kpc2/1/1"
+    },
+    "disk_principal_fwhm_kpc": {
+      "max_abs": 1.1102230246251565e-16,
+      "max_rel": 4.719047472625884e-16,
+      "path_at_max_abs": "geometries/7/beam/disk_principal_fwhm_kpc/1"
+    },
+    "radius_kpc": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/radius_kpc"
+    },
+    "full_width_kpc": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/full_width_kpc"
+    },
+    "pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/pixels"
+    },
+    "valid_N_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/valid_N_pixels"
+    },
+    "paired_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/paired_pixels"
+    },
+    "valid_N_coverage": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/valid_N_coverage"
+    },
+    "paired_coverage": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/paired_coverage"
+    },
+    "negative_N_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/negative_N_pixels"
+    },
+    "missing_N_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/missing_N_pixels"
+    },
+    "missing_m2_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/missing_m2_pixels"
+    },
+    "negative_m2_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/negative_m2_pixels"
+    },
+    "zero_m2_paired_pixels": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/zero_m2_paired_pixels"
+    },
+    "area_mean_N_cm2": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/area_mean_N_cm2"
+    },
+    "paired_mean_N_cm2": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "geometries/0/annuli/0/paired_mean_N_cm2"
+    },
+    "paired_mean_N_m2square": {
+      "max_abs": 16777216.0,
+      "max_rel": 4.162470773327816e-16,
+      "path_at_max_abs": "geometries/29/annuli/1/paired_mean_N_m2square"
+    },
+    "column_weighted_m2_rms_kms": {
+      "max_abs": 1.7763568394002505e-15,
+      "max_rel": 2.702200306514297e-16,
+      "path_at_max_abs": "geometries/10/annuli/2/column_weighted_m2_rms_kms"
+    },
+    "endpoint_spacing_kpc": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "chords/0/endpoint_spacing_kpc"
+    },
+    "minus_log_density_chord": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "chords/0/minus_log_density_chord"
+    },
+    "minus_log_product_chord": {
+      "max_abs": 1.4432899320127035e-15,
+      "max_rel": 4.772827092814496e-15,
+      "path_at_max_abs": "chords/99/minus_log_product_chord"
+    },
+    "p_proxy_kms2": {
+      "max_abs": 7.105427357601002e-14,
+      "max_rel": 5.050475608144673e-15,
+      "path_at_max_abs": "chords/3/p_proxy_kms2"
+    },
+    "density_ratio": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "chords/0/density_ratio"
+    },
+    "product_ratio": {
+      "max_abs": 3.3306690738754696e-16,
+      "max_rel": 4.370831714538686e-16,
+      "path_at_max_abs": "chords/88/product_ratio"
+    },
+    "beam_max_disk_fwhm_kpc": {
+      "max_abs": 1.1102230246251565e-16,
+      "max_rel": 4.719047472625884e-16,
+      "path_at_max_abs": "chords/21/beam_max_disk_fwhm_kpc"
+    },
+    "finite": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "metadata/0/finite"
+    },
+    "negative": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "metadata/0/negative"
+    },
+    "zero": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "metadata/0/zero"
+    },
+    "finite_quantiles": {
+      "max_abs": 2.842170943040401e-14,
+      "max_rel": 1.723141576385417e-16,
+      "path_at_max_abs": "metadata/2/finite_quantiles/1"
+    },
+    "column_per_Jy_beam_kms": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "column_conversion_controls/0/column_per_Jy_beam_kms"
+    },
+    "max_relative_nonconstancy": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "column_conversion_controls/0/max_relative_nonconstancy"
+    },
+    "approximate_atomic_beam_conversion": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "column_conversion_controls/0/approximate_atomic_beam_conversion"
+    },
+    "density_exponent": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "synthetic_controls/0/density_exponent"
+    },
+    "variance_exponent": {
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "path_at_max_abs": "synthetic_controls/0/variance_exponent"
+    }
+  },
+  "mismatches": [],
+  "summary": [
+    {
+      "mode": "nat",
+      "spacing": 0.18,
+      "n": 24,
+      "p_range": [
+        19.982979995365834,
+        82.01001846085272
+      ],
+      "minimum_paired_coverage": 1.0
+    },
+    {
+      "mode": "nat",
+      "spacing": 0.36,
+      "n": 24,
+      "p_range": [
+        24.953719735878227,
+        71.17630411908326
+      ],
+      "minimum_paired_coverage": 1.0
+    },
+    {
+      "mode": "nat",
+      "spacing": 0.54,
+      "n": 24,
+      "p_range": [
+        26.41967690922665,
+        62.9281438809713
+      ],
+      "minimum_paired_coverage": 1.0
+    },
+    {
+      "mode": "rob",
+      "spacing": 0.18,
+      "n": 24,
+      "p_range": [
+        12.661945365161571,
+        104.19179285630798
+      ],
+      "minimum_paired_coverage": 0.9981884057971014
+    },
+    {
+      "mode": "rob",
+      "spacing": 0.36,
+      "n": 24,
+      "p_range": [
+        20.080206402799657,
+        78.38898447172767
+      ],
+      "minimum_paired_coverage": 0.9981884057971014
+    },
+    {
+      "mode": "rob",
+      "spacing": 0.54,
+      "n": 24,
+      "p_range": [
+        23.310395504110655,
+        65.04973371134997
+      ],
+      "minimum_paired_coverage": 1.0
+    }
+  ],
+  "beam_max_fwhm_ranges_kpc": {
+    "nat": [
+      0.2672530419559525,
+      0.3393890998108324
+    ],
+    "rob": [
+      0.13829297276413888,
+      0.18319155426419254
+    ]
+  },
+  "central_weighted_rms_ranges_kms": {
+    "nat": [
+      6.777529141758744,
+      7.049336545723628
+    ],
+    "rob": [
+      6.698353341616381,
+      7.141687395077043
+    ]
+  },
+  "area_convention": {
+    "equal_SIN_grid_cell_means": true,
+    "max_solid_angle_jacobian_relative_to_origin": 1.4516927770991117e-07,
+    "disk_area_jacobian_range_relative_to_common_constant": [
+      1.000000018777006,
+      1.0000004953193147
+    ]
+  }
+}

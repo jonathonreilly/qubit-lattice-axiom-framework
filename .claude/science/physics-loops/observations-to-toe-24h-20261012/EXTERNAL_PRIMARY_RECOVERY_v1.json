@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-13T00:07:49.420347+00:00",
+  "full_primary_sources_preserved_not_republished": [
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/independent_review/primary_sources/LIGO-P170814-v15.pdf",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_vector_readout/independent_review/primary_sources/LIGO-P170814-v15.pdf",
+      "sha256": "6f629844c3ef3bce9357ff858995f6fb3f99b3522c669cda9951031275725a1d",
+      "bytes": 1425897,
+      "public_source_url_location": "Corresponding block SOURCE_LEDGER / independent review source ledger; original unchanged locally."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_pressure_readout/independent_review/source_page_10.png",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_hi_pressure_readout/independent_review/source_page_10.png",
+      "sha256": "8d8d3d1ecdb6e2d3d7c9116673276fb965a53f262078ff1799a9b110e05599ff",
+      "bytes": 347847,
+      "public_source_url_location": "Corresponding block SOURCE_LEDGER / independent review source ledger; original unchanged locally."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/data_products.html",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/data_products.html",
+      "sha256": "4283469b309459b6611b4744929c99e9c81e6808501f450257d62dee5e995849",
+      "bytes": 72643,
+      "public_source_url_location": "Corresponding block SOURCE_LEDGER / independent review source ledger; original unchanged locally."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/ott2012.html",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/ott2012.html",
+      "sha256": "120999ad36fe6ff9d0d37c9e2d9692cc0d4c68a65d52c30ebfd9e72e0ead4cc2",
+      "bytes": 677687,
+      "public_source_url_location": "Corresponding block SOURCE_LEDGER / independent review source ledger; original unchanged locally."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/stil2002.html",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/stil2002.html",
+      "sha256": "26996915ac592160b78703527eb910ef68e74ba73cb93bc9e6dee356bacc6ae8",
+      "bytes": 475129,
+      "public_source_url_location": "Corresponding block SOURCE_LEDGER / independent review source ledger; original unchanged locally."
+    }
+  ]
+}

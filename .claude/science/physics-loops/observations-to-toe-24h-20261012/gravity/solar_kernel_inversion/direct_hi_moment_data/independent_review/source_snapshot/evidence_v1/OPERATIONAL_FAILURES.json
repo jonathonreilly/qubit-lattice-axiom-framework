@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-10-12T23:31Z",
+    "operation": "HTML parser setup",
+    "failure": "/usr/local/bin/python3 has no bs4; no downloads or analysis ran",
+    "recovery": "Use standard-library HTMLParser, no install required"
+  }
+]

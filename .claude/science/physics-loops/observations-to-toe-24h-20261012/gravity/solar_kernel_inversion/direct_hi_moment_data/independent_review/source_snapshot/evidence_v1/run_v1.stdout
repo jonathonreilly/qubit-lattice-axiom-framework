@@ -1,0 +1,7 @@
+nat 0.18 p_proxy range 19.982979995365802 82.01001846085266 min paired coverage 1.0
+nat 0.36 p_proxy range 24.953719735878227 71.17630411908326 min paired coverage 1.0
+nat 0.54 p_proxy range 26.419676909226627 62.9281438809713 min paired coverage 1.0
+rob 0.18 p_proxy range 12.661945365161507 104.19179285630798 min paired coverage 0.9981884057971014
+rob 0.36 p_proxy range 20.08020640279969 78.38898447172762 min paired coverage 0.9981884057971014
+rob 0.54 p_proxy range 23.310395504110655 65.04973371134997 min paired coverage 1.0
+PASS six metadata/numerical families;144 chords,48 geometry cases; no physical acceptance test.

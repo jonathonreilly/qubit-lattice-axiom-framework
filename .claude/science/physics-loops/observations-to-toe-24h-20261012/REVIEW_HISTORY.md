@@ -40,3 +40,11 @@ are in the named packets and HANDOFF.md.
 The LP helper omitted the second-stage saved status. A separately identified
 replay records both statuses and reproduces all original weights and t bitwise;
 original logs were not rewritten. The current review has no audit authority.
+
+### Direct readout and HI figure, 2026-10-12T23:34:04.093586+00:00
+
+Parent read full independent reports and verified all listed hashes. Readout:12 checks/53 cases pass after narrow matrix-rank wording correction; original inputs/failure history preserved. HI figure:5 families pass, no material correction; point/interval and illustrative-dispersion boundary preserved. Source readiness only, no audit or landing.
+
+## 2026-10-13T00:07:49.420347+00:00 direct empirical and optical update
+
+Full HI moment review read and84 identities verified;144 chords336 annuli agree. Conformal completion personally derived and288 controls pass after a preserved SymPy bool-interface error. Independent conformal proof review active. Canonical matter port full report read,26 evidence hashes verified;20 new port checks pass. Final package remains pending.

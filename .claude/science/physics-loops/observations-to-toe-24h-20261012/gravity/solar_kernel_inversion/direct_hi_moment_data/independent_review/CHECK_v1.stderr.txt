@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/independent_check.py", line 155, in <module>
+    assert meta['header_string']==h.tostring()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

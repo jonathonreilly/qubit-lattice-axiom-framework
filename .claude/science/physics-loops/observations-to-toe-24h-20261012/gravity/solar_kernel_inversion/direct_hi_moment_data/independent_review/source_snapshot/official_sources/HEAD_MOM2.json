@@ -1,0 +1,6 @@
+{
+  "url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+  "code": 0,
+  "stdout": "HTTP/1.1 200 OK\nDate: Mon, 12 Oct 2026 23:29:11 GMT\nServer: Apache/2.4.56 (IUS)\nLast-Modified: Mon, 16 Jun 2014 21:52:51 GMT\nETag: \"2169c-4fbfb0c71f2c0\"\nAccept-Ranges: bytes\nContent-Length: 136860\nConnection: close\nContent-Type: application/x-gzip\n\n",
+  "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0  133k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n"
+}

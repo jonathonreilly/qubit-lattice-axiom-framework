@@ -1,0 +1,21 @@
+{
+  "schema": "reviewer_control_correction_v1",
+  "created_utc": "2026-10-12T23:21:55.846755+00:00",
+  "original_script": {
+    "path": "check_readout_independent.py",
+    "sha256": "ab008e45df5e193395d1248e0f88e0f74b92dbc3d5e5b8ed8d3a9d309cdcbf8e"
+  },
+  "original_calculations": {
+    "path": "INDEPENDENT_CALCULATIONS_v1.json",
+    "sha256": "ec51f4ec4bbbe5bf5f2e1319dacb57bc03ec61233840098d7a077396e64e9e4a"
+  },
+  "failure": "The reviewer initially compared relative small-phase angular errors against the author receipt, whose errors field is explicitly absolute in the source. The finite pattern and all endpoint/network checks already agreed.",
+  "source_confirmation": "direct_readout_check.py: errors = [abs(endpoint_pattern(v)-F) for v in small_values]",
+  "correction": "Remove only the reviewer division by abs(F) for this table comparison. The finite_constant_pattern_relative_error is separately relative and remains so.",
+  "corrected_script": {
+    "path": "check_readout_independent_v2.py",
+    "sha256": "eb51cc14303875c3b5b9ea018dea518d80def4893dc51f558ab98bcedbb9fdef"
+  },
+  "author_scientific_discrepancy": false,
+  "preservation": "Original script, calculations, stdout and stderr remain untouched. v2 will write separate receipts."
+}

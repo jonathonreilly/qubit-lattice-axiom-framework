@@ -1,0 +1,49 @@
+{
+  "text": "\nDDO 125\nna\nna ro\nna ro\nna ro\nna ro\nna ro\n",
+  "links": [
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-spec.eps.gz",
+      "label": "na"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-cube.fits.gz",
+      "label": "na"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-cube.fits.gz",
+      "label": "ro"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom0CD.fits.gz",
+      "label": "na"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom0CD.fits.gz",
+      "label": "ro"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom0.fits.gz",
+      "label": "na"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom0.fits.gz",
+      "label": "ro"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom1.fits.gz",
+      "label": "na"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom1.fits.gz",
+      "label": "ro"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+      "label": "na"
+    },
+    {
+      "url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom2.fits.gz",
+      "label": "ro"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "disposition": "PASS_SCOPED_NUMERICAL_CHECKS",
+  "comparisons": [
+    {
+      "width_kpc": 0.09,
+      "exact_decimal_minus_author_p": "0.0001045934279229531428024502133560974016860125",
+      "binary32_minus_author_p": "-0.0000000000000704892818951740746759230919047875"
+    },
+    {
+      "width_kpc": 0.18,
+      "exact_decimal_minus_author_p": "-0.00030430944325729525065736354453031634618865625",
+      "binary32_minus_author_p": "-0.00000000000005013809422943046726100239106715625"
+    },
+    {
+      "width_kpc": 0.36,
+      "exact_decimal_minus_author_p": "0.000013271395029378600575041381226705283131265625",
+      "binary32_minus_author_p": "-0.000000000000120939950633413818681455232914034375"
+    }
+  ],
+  "render_crosscheck": {
+    "red_pixels": 820,
+    "max_pdf_point_distance": 0.5697567433195538,
+    "measurement_error_model": false
+  },
+  "arithmetic": {
+    "radius_kpc": "0.943629343629343629343629343629343629343629344",
+    "pressure_requirement": "1113.28732789047073475029244168180833984778737",
+    "slope_requirement": "17.3951144982886052304733194012782553101216776",
+    "local_scale_kpc": "0.0542468026710707379188820959265446783899131399"
+  }
+}

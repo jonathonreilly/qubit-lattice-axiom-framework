@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-13T00:01:13.372078+00:00",
+  "review_receipt_sha256": "bf74fb7f03cc71c099d183c11ef7983778119683bbe680c43adf12f69725941a",
+  "checked_paths": 84,
+  "all_match": true,
+  "review_full_text_read": true,
+  "parent_disposition": "pass within measured-product scope; no intrinsic pressure or exclusion claim"
+}

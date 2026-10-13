@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-12T23:39:14.928611+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/data_products.html",
+      "sha256": "4283469b309459b6611b4744929c99e9c81e6808501f450257d62dee5e995849"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/ott2012.html",
+      "sha256": "120999ad36fe6ff9d0d37c9e2d9692cc0d4c68a65d52c30ebfd9e72e0ead4cc2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/stil2002.html",
+      "sha256": "26996915ac592160b78703527eb910ef68e74ba73cb93bc9e6dee356bacc6ae8"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "status": "PASS within explicit conditional first-order scope",
+  "created_at": "2026-10-13T00:04:30.541360+00:00",
+  "identities": {
+    "check_conformal_completion.py": "9cff4f2123b20e3af29fcaa54b08340d136cc4449ea88fa3d7c09fcb3f5d1eaa",
+    "DIRECT_CONFORMAL_DERIVATION.md": "e6eb776e041ca8cff7110762a37167ecfeaed489d1fe0f15bdfc30bba65ac6dc",
+    "PROTOCOL.md": "d96a7e4e035ba3a5bf8992a07f1f5487f8d07ea34938de48af7342d88bdde739"
+  },
+  "symbolic": {
+    "particle_legendre_and_source": "PASS",
+    "nine_linear_curvature_entries": "PASS",
+    "null_connection_parallel_tangent": "PASS",
+    "four_dimensional_Maxwell": "PASS",
+    "R_0i0j": [
+      "-Derivative(psi(ct, x, y, z), (ct, 2)) + Derivative(psi(ct, x, y, z), (x, 2))",
+      "Derivative(psi(ct, x, y, z), x, y)",
+      "Derivative(psi(ct, x, y, z), x, z)",
+      "Derivative(psi(ct, x, y, z), x, y)",
+      "-Derivative(psi(ct, x, y, z), (ct, 2)) + Derivative(psi(ct, x, y, z), (y, 2))",
+      "Derivative(psi(ct, x, y, z), y, z)",
+      "Derivative(psi(ct, x, y, z), x, z)",
+      "Derivative(psi(ct, x, y, z), y, z)",
+      "-Derivative(psi(ct, x, y, z), (ct, 2)) + Derivative(psi(ct, x, y, z), (z, 2))"
+    ],
+    "Gamma_kk": [
+      "2*g0 + 2*g1",
+      "2*g0 + 2*g1",
+      "0",
+      "0"
+    ]
+  },
+  "limits": {
+    "luminal_parallel_rows": [
+      {
+        "x": 0.08,
+        "mu": -1,
+        "luminal_parallel_abs": 1.5700924586837752e-16
+      },
+      {
+        "x": 0.08,
+        "mu": 1,
+        "luminal_parallel_abs": 1.5700924586837752e-16
+      },
+      {
+        "x": 0.5,
+        "mu": -1,
+        "luminal_parallel_abs": 5.551115123125783e-17
+      },
+      {
+        "x": 0.5,
+        "mu": 1,
+        "luminal_parallel_abs": 5.551115123125783e-17
+      },
+      {
+        "x": 1.7,
+        "mu": -1,
+        "luminal_parallel_abs": 1.1102230246251565e-16
+      },
+      {
+        "x": 1.7,
+        "mu": 1,
+        "luminal_parallel_abs": 1.1102230246251565e-16
+      },
+      {
+        "x": 3.141592653589793,
+        "mu": -1,
+        "luminal_parallel_abs": 4.7738836572212255e-33
+      },
+      {
+        "x": 3.141592653589793,
+        "mu": 1,
+        "luminal_parallel_abs": 4.7738836572212255e-33
+      },
+      {
+        "x": 4.2,
+        "mu": -1,
+        "luminal_parallel_abs": 3.925231146709438e-17
+      },
+      {
+        "x": 4.2,
+        "mu": 1,
+        "luminal_parallel_abs": 3.925231146709438e-17
+      }
+    ],
+    "small_arm_max_absolute_error": 4.401941520365576e-06,
+    "finite_arm_node": {
+      "optical_abs": 3.8981718325193755e-17,
+      "mechanical_abs": 0.6366197723675814
+    }
+  },
+  "timing_control_count": 288,
+  "max_absolute_residual_over_amplitude_squared": 2.5013963277026665,
+  "halving_ratios": [
+    3.9993269074960334,
+    3.999662019393425
+  ],
+  "tidal_controls": [
+    {
+      "cs_over_c": 0.55,
+      "TT_norm": 1.8926779167518858e-16,
+      "longitudinal_coefficient": -2.305785123966941
+    },
+    {
+      "cs_over_c": 0.7185375538936453,
+      "TT_norm": 1.4752290795525882e-16,
+      "longitudinal_coefficient": -0.9368726097956004
+    },
+    {
+      "cs_over_c": 1,
+      "TT_norm": 1.4220500840710912e-16,
+      "longitudinal_coefficient": 9.063045098980869e-17
+    },
+    {
+      "cs_over_c": 1.3,
+      "TT_norm": 1.2256530327225745e-16,
+      "longitudinal_coefficient": 0.4082840236686391
+    }
+  ],
+  "limitations": [
+    "first-order endpoint trajectories, not nonlinear geodesic integration",
+    "synthetic controls only; no fitted or held-out observations",
+    "finite-energy conditional Hamiltonian; point self-energy unresolved",
+    "old mass-conserved source radiation not inherited",
+    "no cavity, detector or waveform likelihood"
+  ]
+}

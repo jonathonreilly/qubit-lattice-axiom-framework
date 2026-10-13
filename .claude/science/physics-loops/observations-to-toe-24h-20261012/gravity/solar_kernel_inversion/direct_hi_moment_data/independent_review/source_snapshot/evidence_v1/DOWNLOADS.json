@@ -1,0 +1,82 @@
+[
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom0CD.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom0CD.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n 11  139k   11 15933    0     0  42438      0  0:00:03 --:--:--  0:00:03 42375\n100  139k  100  139k    0     0   225k      0 --:--:-- --:--:-- --:--:--  225k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom0CD.fits.gz",
+    "at": "2026-10-12T23:31:36.879525+00:00",
+    "bytes": 142371,
+    "sha256": "da32c210b124177e5b605633c44da85fc6a8bb19ecd27768998f012fe1af6516"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom0CD.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom0CD.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n 53  131k   53 71933    0     0   100k      0  0:00:01 --:--:--  0:00:01  100k\n100  131k  100  131k    0     0   127k      0  0:00:01  0:00:01 --:--:--  127k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom0CD.fits.gz",
+    "at": "2026-10-12T23:31:37.926088+00:00",
+    "bytes": 134330,
+    "sha256": "cfe47a7ac9317dec3a67f1d4bcff827ccffeb0eb316c3044b3e3fa82673874af"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom0.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom0.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n 39  138k   39 55933    0     0  89141      0  0:00:01 --:--:--  0:00:01 89065\n100  138k  100  138k    0     0   132k      0  0:00:01  0:00:01 --:--:--  132k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom0.fits.gz",
+    "at": "2026-10-12T23:31:38.989474+00:00",
+    "bytes": 141976,
+    "sha256": "c9bee726ef94de0fd215a9037098de4b995194c91ea79a512a19b00bbc76f60a"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom0.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom0.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100  139k  100  139k    0     0   225k      0 --:--:-- --:--:-- --:--:--  225k\n100  139k  100  139k    0     0   225k      0 --:--:-- --:--:-- --:--:--  225k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom0.fits.gz",
+    "at": "2026-10-12T23:31:39.622747+00:00",
+    "bytes": 142737,
+    "sha256": "3b4107a7dc5de86d2408a83eb222416c3181f89a59a6a7ad8e2d0abc2fda3a79"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom1.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom1.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100  126k  100  126k    0     0   228k      0 --:--:-- --:--:-- --:--:--  228k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom1.fits.gz",
+    "at": "2026-10-12T23:31:40.196784+00:00",
+    "bytes": 129873,
+    "sha256": "fb9a5d9396b18f01e562f4671778a465f7f511a80cabd34a589e4c23585d4abc"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom1.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom1.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n  6  119k    6  7933    0     0   5689      0  0:00:21  0:00:01  0:00:20  5686\n100  119k  100  119k    0     0  74696      0  0:00:01  0:00:01 --:--:-- 74688\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom1.fits.gz",
+    "at": "2026-10-12T23:31:41.879521+00:00",
+    "bytes": 122414,
+    "sha256": "d652d65413a6b6b88fff70f210d9b798bf379462fd5b9a65658094b213abf2b1"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n 52  133k   52 71933    0     0  99861      0  0:00:01 --:--:--  0:00:01 99768\n100  133k  100  133k    0     0   127k      0  0:00:01  0:00:01 --:--:--  128k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+    "at": "2026-10-12T23:31:42.948057+00:00",
+    "bytes": 136860,
+    "sha256": "a8f19649a34aeb97cdc4cb082b8a9c13505ca022684c880c5932afa89ebbc272"
+  },
+  {
+    "original_url": "http://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom2.fits.gz",
+    "retrieval_url": "https://www.vla.nrao.edu/vla-angst/VLA-ANGST_HI_DDO125-rob-Mom2.fits.gz",
+    "exit": 0,
+    "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n 44  124k   44 55933    0     0  65596      0  0:00:01 --:--:--  0:00:01 65572\n100  124k  100  124k    0     0   104k      0  0:00:01  0:00:01 --:--:--  104k\n",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom2.fits.gz",
+    "at": "2026-10-12T23:31:44.150781+00:00",
+    "bytes": 127049,
+    "sha256": "ceec82beed5b160c4e8f76f94e0ea130321a7500f3f282fb4d78af196889bfe2"
+  }
+]

@@ -1,24 +1,17 @@
 # Ranked science opportunities
 
-Direct author update, October12. Original deadline unchanged; all previous
-rankings remain in Git. Scores below express relative scientific opportunity,
-not a numerical probability of establishing a TOE.
+Direct author, October13 UTC. Original deadline unchanged. Rankings are
+scientific judgments, not probabilities of establishing a TOE.
 
-| Rank | Concrete question | Positive-result prospect / open imports | Checkability and delivery | Scope / independence |
-|---|---|---|---|---|
-| 1 | Can actual UGC07577 HI density/dispersion support the correction demanded by the finite certificate? | Moderate empirical discriminator; height/dispersion/reduction imports remain | Primary published profile located; exact pressure sensitivity already checked | Observations outside gravitational source inversion; no response refit |
-| 2 | Complete the physical readout bridge exposed by the vector construction | The scalar force gives no transverse trace-free plane-wave tide; photon/metric coupling remains open | Parent mechanical proof/five families done; focused check active | Actual matter response must drive identification of radiation components |
-| 3 | Extend the vector realization to varying background with a local action | Hard stretch; e/coefficient formation and derivative terms open | Static/causal PR9505 complete; new reciprocal matter/radiation block checked | No homogeneous-to-nonlinear inference or reuse of old galaxy fits |
-| 4 | Connect sphere reflection criterion to documented source and measurement maps | Moderate conditional result; calibration/loss/source assumptions remain | Existing38 design rows and public36-record reproduction available | Independent of failed gravity response; no hypothetical apparatus values as observations |
-| 5 | Reconstruct a matter/gauge or cosmological sector from an observed relation | Hard; shared identifications remain | Freeze first falsifier and smallest reproducible comparator | Integration beyond unrelated inverse models |
+| Rank | Question | Imports / checks | Scope |
+|---|---|---|---|
+| 1 | Can a nonconformal matter/optical metric recover bending while preserving consistent dynamics? | Conformal completion derived; focused check active. Freeze new metric and derive all linked consequences. | Constructive route beyond a specific zero-bending failure; no fitted success by definition. |
+| 2 | What changes to radiation follow from the exact relativistic source? | Derive source multipoles at consistent weak-field order, with field and matter energy. | No transfer of mass-conserved eccentric waveform or pulsar masses. |
+| 3 | Can actual HI product maps bound the pressure needed by the finite response family? |144 measured-product chords checked; intrinsic3D beam/mask/source model missing. | No refit or point-to-interval inference; fresh physically testable model required. |
+| 4 | Extend homogeneous vector action to varying background | Direction/coefficient formation, derivative terms and characteristics open. | Old static causal theorem cannot certify nonlinear fits. |
+| 5 | Reconstruct quantum composition or a matter/gauge/cosmological sector from observations | Source/readout/shared parameter bridges remain. Freeze a decisive small comparator. | Avoid unrelated inverse-model accumulation. |
 
-
-The frozen six-source transfer and exposed nine-source finite family are closed
-calculations with preserved failures. Repeating their fits without a changed,
-explicitly tested source/readout hypothesis has low scientific value. The
-finite-matrix certificate is not a continuum no-go. Pressure sensitivity is
-necessary only. Positive field energy is not an empirical gravity validation.
-
-Parent performs primary derivations and code. Focused independent checks
-protect the claim boundary. Regular reviewable milestones continue without
-formal audit, main pushes or science landing. The queue is not exhausted.
+Parent does primary theory/code. Independent agents check focused results.
+No-go/support outcomes cause preservation and a constructive next route.
+Canonical matter milestone final confirmation/package gates are delivery
+work in parallel with primary research, not a replacement for it.

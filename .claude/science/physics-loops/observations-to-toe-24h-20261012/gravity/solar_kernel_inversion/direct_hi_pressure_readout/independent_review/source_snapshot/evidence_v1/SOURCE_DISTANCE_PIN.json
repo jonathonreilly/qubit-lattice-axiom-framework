@@ -1,0 +1,20 @@
+{
+  "path": "gravity/solar_kernel_inversion/nine_source_reconstruction/independent_review/snapshots/source_receipt_UGC07577.json",
+  "sha256": "c4d8134d3485d49ad3070dff55b422428d20a604e28d41619df59bfcf142095c",
+  "metadata": {
+    "name": "UGC07577",
+    "T": 10,
+    "D": 2.59,
+    "e_D": 0.13,
+    "f_D": 2,
+    "i": 63.0,
+    "e_i": 3.0,
+    "L": 45000000.0,
+    "e_L": 2000000.0,
+    "Rd": 0.9,
+    "MHI": 44000000.0,
+    "RHI": 2.07,
+    "Q": 2,
+    "original_references": "Sw09,Sw02"
+  }
+}

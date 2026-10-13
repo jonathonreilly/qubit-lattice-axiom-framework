@@ -1,0 +1,5 @@
+{
+  "route": "curl default TLS verification",
+  "exit": 0,
+  "stderr": ""
+}

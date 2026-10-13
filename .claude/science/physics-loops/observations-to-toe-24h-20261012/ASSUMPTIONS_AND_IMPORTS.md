@@ -106,3 +106,11 @@ longitudinal regardless of the vector field's components. Distinct speeds
 must retain their different network phases. Published GW170814 pure-mode
 comparisons use a GR phase model and cannot be assigned unchanged to this
 candidate. No observational holdout or candidate likelihood is created here.
+
+### Direct HI readout update
+
+The figure sigma8 was illustrative. New VLA-ANGST moment products and their exact units/masks/beams are distinct exposed data. Moment2 includes line-of-sight/beam/flow effects; converting it to intrinsic radial pressure requires an explicit physical readout. Catalog/pointing centers and finite PA/i grid are supplied sensitivity choices, not fitted posterior values.
+
+## Conformal matter/optics candidate
+
+New supplied metric g~=exp(2phi/c^2)eta and minimally coupled particles/Maxwell; preferred vector action unchanged. Conditional finite-energy Hamiltonian is nonnegative; point self-energy/existence unresolved. Exact particle source is mA/gamma, so old mass-conserved radiation does not transfer to all orders. First-order optical timing is defined for free ideal endpoints; no cavity/noise/actual waveform map. Exact conformal null-path cancellation leaves light bending unexplained. Solar VLBA context is exposed, with no imported likelihood.

@@ -1,0 +1,5 @@
+{
+  "route": "stdlib urllib.request",
+  "result": "SSLCertVerificationError: unable to get local issuer certificate; no file downloaded",
+  "next": "system curl with normal TLS verification"
+}

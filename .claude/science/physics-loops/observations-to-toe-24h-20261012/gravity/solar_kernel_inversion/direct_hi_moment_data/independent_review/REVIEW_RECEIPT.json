@@ -1,0 +1,471 @@
+{
+  "schema": "focused_independent_hi_moment_review_v1",
+  "at": "2026-10-12T23:53:28.534844+00:00",
+  "disposition": "PASS_SCOPED_SOURCE_GEOMETRY_ARITHMETIC",
+  "materially_required_corrections": [],
+  "source_readiness": "Supported as descriptive exposed development diagnostics under explicit source/readout choices; physical observation map remains open. No intrinsic pressure estimate, galaxy exclusion, holdout success, retained-grade promotion or landing verdict.",
+  "author_remains_parent": true,
+  "source_unchanged_since_snapshot": true,
+  "sources": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/CLAIM_STATUS_CERTIFICATE.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 681,
+      "sha256": "c8239cdb5b6dbe5e1b1843c5858a27f63daf34a3e7c8454beff9ff0c605c31c5",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/DIRECT_MOMENT_RESULT.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/DIRECT_MOMENT_RESULT.md",
+      "bytes": 5408,
+      "sha256": "e53f4557f2c4e5d2969a1df02c831f56e3e4b9ef66287642aedd26f24661ee6f",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/METADATA_RESOLUTION.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/METADATA_RESOLUTION.md",
+      "bytes": 1663,
+      "sha256": "f300e7dc923d6a5cfdb69324fa6c6a6775f30f19bb333d36261809e20fc8229a",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/PROTOCOL.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/PROTOCOL.md",
+      "bytes": 4677,
+      "sha256": "23b6712015ee9d9a9260383840621cc8222376e44ff0c7b4870cc1d7f91804bf",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/SOURCE_LEDGER.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/SOURCE_LEDGER.md",
+      "bytes": 1779,
+      "sha256": "74322ec9fb428bc859101d83697a538281b956e66ae3b1eb4ee84aa5fe4cb11e",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/TRACE_GATE.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/TRACE_GATE.md",
+      "bytes": 583,
+      "sha256": "8c44d7ba8b26284f6b5af12336b454615304c425624931f38ecac9539c69f160",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/DDO125_LINKS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/DDO125_LINKS.json",
+      "bytes": 1403,
+      "sha256": "293cab2090c24446776e7e1b229ed15ba57036b537029eb200bd534598eba962",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/DOWNLOADS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/DOWNLOADS.json",
+      "bytes": 7423,
+      "sha256": "6f35d37f060ab774231bd5538afe56af079f0d1ac7ddd26464839ae5847dd503",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/FITS_METADATA.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/FITS_METADATA.json",
+      "bytes": 1142836,
+      "sha256": "a8603b83a7d40375b5908189f7f0d5a21c6cc4ca5d7e6e6e987eceb38c84e4f9",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/OPERATIONAL_FAILURES.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/OPERATIONAL_FAILURES.json",
+      "bytes": 234,
+      "sha256": "53961fff8c6b97986ab5220da9d9a61805c0e813debae1e63decd0abc03093fd",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/PROTOCOL_FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/PROTOCOL_FREEZE.json",
+      "bytes": 278,
+      "sha256": "43a54398ef7578780baaa41c365ba787d459938d281c6fd9f5525793c7049bd5",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/RESULTS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/RESULTS.json",
+      "bytes": 498801,
+      "sha256": "8cdd35a488b24c020854b7431858ff1e93f38fb310574431edf9327ae81591be",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/SOURCE_PINS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/SOURCE_PINS.json",
+      "bytes": 712,
+      "sha256": "789675b061f157375d6aa219ded001946f897f6ee3510ac1ff9453ba40e85ff4",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/run_v1.stderr",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/run_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/evidence_v1/run_v1.stdout",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/run_v1.stdout",
+      "bytes": 629,
+      "sha256": "f1bcce20c0fd60bee00476e5e3182e554dd7a481ddf94ec5adaa63de54391007",
+      "role": "current author source/evidence/metadata"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom0.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-nat-Mom0.fits.gz",
+      "bytes": 141976,
+      "sha256": "c9bee726ef94de0fd215a9037098de4b995194c91ea79a512a19b00bbc76f60a",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom0CD.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-nat-Mom0CD.fits.gz",
+      "bytes": 142371,
+      "sha256": "da32c210b124177e5b605633c44da85fc6a8bb19ecd27768998f012fe1af6516",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom1.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-nat-Mom1.fits.gz",
+      "bytes": 129873,
+      "sha256": "fb9a5d9396b18f01e562f4671778a465f7f511a80cabd34a589e4c23585d4abc",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-nat-Mom2.fits.gz",
+      "bytes": 136860,
+      "sha256": "a8f19649a34aeb97cdc4cb082b8a9c13505ca022684c880c5932afa89ebbc272",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom0.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-rob-Mom0.fits.gz",
+      "bytes": 142737,
+      "sha256": "3b4107a7dc5de86d2408a83eb222416c3181f89a59a6a7ad8e2d0abc2fda3a79",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom0CD.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-rob-Mom0CD.fits.gz",
+      "bytes": 134330,
+      "sha256": "cfe47a7ac9317dec3a67f1d4bcff827ccffeb0eb316c3044b3e3fa82673874af",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom1.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-rob-Mom1.fits.gz",
+      "bytes": 122414,
+      "sha256": "d652d65413a6b6b88fff70f210d9b798bf379462fd5b9a65658094b213abf2b1",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/fits/VLA-ANGST_HI_DDO125-rob-Mom2.fits.gz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/fits/VLA-ANGST_HI_DDO125-rob-Mom2.fits.gz",
+      "bytes": 127049,
+      "sha256": "ceec82beed5b160c4e8f76f94e0ea130321a7500f3f282fb4d78af196889bfe2",
+      "role": "original compressed published FITS input"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/DDO125_LINKS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/DDO125_LINKS.json",
+      "bytes": 1403,
+      "sha256": "293cab2090c24446776e7e1b229ed15ba57036b537029eb200bd534598eba962",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/HEAD_MOM2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/HEAD_MOM2.json",
+      "bytes": 795,
+      "sha256": "e932d8e2e90e2d7e02d37fedbb258d9115a653636451b8ef0cb1cae513b9914a",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/OPERATIONAL_FAILURES.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/OPERATIONAL_FAILURES.json",
+      "bytes": 234,
+      "sha256": "53961fff8c6b97986ab5220da9d9a61805c0e813debae1e63decd0abc03093fd",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/data_products.html",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/data_products.html",
+      "bytes": 72643,
+      "sha256": "4283469b309459b6611b4744929c99e9c81e6808501f450257d62dee5e995849",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/data_products_download.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/data_products_download.json",
+      "bytes": 511,
+      "sha256": "1ed928b9a198e77556c86cbdf228437a0caa24ac3ba6394a413c17b70925ba44",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/ott2012.html",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/ott2012.html",
+      "bytes": 677687,
+      "sha256": "120999ad36fe6ff9d0d37c9e2d9692cc0d4c68a65d52c30ebfd9e72e0ead4cc2",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/ott2012_download.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/ott2012_download.json",
+      "bytes": 401,
+      "sha256": "a3c9ea72deaa9f65544ee2fa277cca5b6121a0611723fbe760604a523af4e106",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/run_v1.stderr",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/run_v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/run_v1.stdout",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/run_v1.stdout",
+      "bytes": 629,
+      "sha256": "f1bcce20c0fd60bee00476e5e3182e554dd7a481ddf94ec5adaa63de54391007",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/stil2002.html",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/stil2002.html",
+      "bytes": 475129,
+      "sha256": "26996915ac592160b78703527eb910ef68e74ba73cb93bc9e6dee356bacc6ae8",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/pressure/vla_angst/stil2002_download.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/official_sources/stil2002_download.json",
+      "bytes": 408,
+      "sha256": "0e9acc713fea43ca231179b8742062f0efa2b989decaec7581b4c02f94a0c972",
+      "role": "downloaded primary-source HTML or preserved retrieval/operational receipt"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/independent_review/snapshots/pressure_receipt.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/prior_inputs/pressure_receipt.json",
+      "bytes": 4919,
+      "sha256": "03106e69c99aaeb9152bd0eebe7a4a0fde6c63d8a12c0e9af4b0566fa07eb06e",
+      "role": "previously checked campaign premise, no solve rerun"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/independent_review/snapshots/source_receipt_UGC07577.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/prior_inputs/source_receipt_UGC07577.json",
+      "bytes": 23416188,
+      "sha256": "c4d8134d3485d49ad3070dff55b422428d20a604e28d41619df59bfcf142095c",
+      "role": "previously checked campaign premise, no solve rerun"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/read_moment_profiles.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/read_moment_profiles.py",
+      "bytes": 11107,
+      "sha256": "f7e3b340bdfa188a93f25aec4591e9d5780242a09bf033f82c8fed5b23fcc9c8",
+      "role": "current author source/evidence/metadata"
+    }
+  ],
+  "review_artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_RESULTS_v2.json",
+      "bytes": 511864,
+      "sha256": "147303eaee53f2b822b13c2a8da4375fae42d6b2ecc4fa22409fa6b687b97d4e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v1.stderr.txt",
+      "bytes": 419,
+      "sha256": "f30083c7e87539e318a771cc9619b21ff229123a7b1dc462ac1c2e4d0c18555b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v1.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v2.stdout.txt",
+      "bytes": 7725,
+      "sha256": "7a673080646f7b17af93c6bc36401f7600ab376123b333e6f0c377ce7507649b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/HEADER_COMPARISON_FAILURE_v1.txt",
+      "bytes": 190351,
+      "sha256": "3346786c431dc0a055cf468058865a92f3e8f96363f7ad113a50cc1436feca09"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/HEADER_STRING_DIAGNOSIS.json",
+      "bytes": 118618,
+      "sha256": "f57b7bf0df839f0bac873105bd1ed5211120110f82401ddf38b6e90d21f08f7b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/REVIEW.md",
+      "bytes": 16421,
+      "sha256": "230b94795f25d8261a9e5cb8bcf64acfcd825ba2e534d5b2dc2aa93a9b881a2b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/independent_check.py",
+      "bytes": 19948,
+      "sha256": "7793f59e8fed006ed4b5d6b65d8b6267913fd716de7c6c8a2f8f303043d85d01"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/independent_check_v1_failed.py",
+      "bytes": 19940,
+      "sha256": "3e4eef0c91529bd8511d5feb9005503dd60572e0d3d45375423affeb31caf98e"
+    }
+  ],
+  "independent_method": {
+    "fits_io": "astropy.io.fits only",
+    "world_coordinates": "direct SIN unit-vector construction and local tangent dot products; no astropy.wcs call",
+    "annulus_aggregation": "independent exact-cell selection and compensated math.fsum accumulation",
+    "beam": "closed scalar covariance/eigenvalue quadratic; no eigensolver import",
+    "control": "log-symmetric hyperbolic formula for constant and power-law cases; unit and circular/face-on Gaussian controls",
+    "author_runner_imported": false,
+    "author_runner_executed": false
+  },
+  "checks": {
+    "source_links_hashes_and_complete_header_identity": "PASS",
+    "header_units_and_spectral_width_definition": "PASS; existing m/s correction is correct",
+    "SIN_geometry_and_all_mask_counts": "PASS",
+    "all_144_chords_336_annuli_48_geometries": "PASS",
+    "Gaussian_beam_and_covariance": "PASS",
+    "column_Mom0_conversion_and_analytic_controls": "PASS",
+    "physical_scope_and_development_labels": "PASS within stated limitations"
+  },
+  "quantitative_comparison": {
+    "numeric_leaves": 12011,
+    "mismatches": 0,
+    "counts_and_mask_coverage_discrepancies": 0,
+    "max_p_proxy_absolute_error_kms2": 7.105427357601002e-14,
+    "max_Q_relative_error": 4.162470773327816e-16,
+    "max_disk_beam_covariance_error_kpc2": 6.938893903907228e-18,
+    "max_disk_FWHM_error_kpc": 1.1102230246251565e-16,
+    "direct_SIN_inverse_roundtrip_pixels": 3.490185918053612e-11,
+    "minimum_annulus_boundary_margin_kpc": 2.731234045871833e-08
+  },
+  "ranges": [
+    {
+      "mode": "nat",
+      "spacing": 0.18,
+      "n": 24,
+      "p_range": [
+        19.982979995365834,
+        82.01001846085272
+      ],
+      "minimum_paired_coverage": 1.0
+    },
+    {
+      "mode": "nat",
+      "spacing": 0.36,
+      "n": 24,
+      "p_range": [
+        24.953719735878227,
+        71.17630411908326
+      ],
+      "minimum_paired_coverage": 1.0
+    },
+    {
+      "mode": "nat",
+      "spacing": 0.54,
+      "n": 24,
+      "p_range": [
+        26.41967690922665,
+        62.9281438809713
+      ],
+      "minimum_paired_coverage": 1.0
+    },
+    {
+      "mode": "rob",
+      "spacing": 0.18,
+      "n": 24,
+      "p_range": [
+        12.661945365161571,
+        104.19179285630798
+      ],
+      "minimum_paired_coverage": 0.9981884057971014
+    },
+    {
+      "mode": "rob",
+      "spacing": 0.36,
+      "n": 24,
+      "p_range": [
+        20.080206402799657,
+        78.38898447172767
+      ],
+      "minimum_paired_coverage": 0.9981884057971014
+    },
+    {
+      "mode": "rob",
+      "spacing": 0.54,
+      "n": 24,
+      "p_range": [
+        23.310395504110655,
+        65.04973371134997
+      ],
+      "minimum_paired_coverage": 1.0
+    }
+  ],
+  "missing_physical_imports": [
+    "Intrinsic three-dimensional tracer and radial-dispersion reconstruction",
+    "Vertical shape and height gradient",
+    "Optical-depth/tracer-to-gas conversion beyond the supplied published column calibration",
+    "Velocity anisotropy, mean flows and geometry",
+    "Spectral/spatial response, mask and noise forward map",
+    "Relationship between original rotation extraction and these VLA moment products"
+  ],
+  "clarifications": {
+    "area_convention": "Equal SIN-grid cells, not an exact solid-angle integral; very small Jacobian variation quantified without changing the statistic.",
+    "geometry_status": "Finite supplied sensitivity grid; angles/centers not fitted posterior draws or established dynamical geometry. Future measured geometry needs explicit angle-frame/epoch conventions.",
+    "unit_history": "Original web-unit protocol preserved; header-unit resolution note already existed before profiles and is pinned. No retrospective protocol repair."
+  },
+  "failure_history": [
+    {
+      "run": "independent v1",
+      "exit_code": 1,
+      "kind": "Reviewer header serialization comparison used the wrong separator before profile computation",
+      "failed_source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/independent_check_v1_failed.py",
+      "failed_source_sha256": "3e4eef0c91529bd8511d5feb9005503dd60572e0d3d45375423affeb31caf98e",
+      "raw_stdout": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v1.stdout.txt",
+      "raw_stderr": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v1.stderr.txt",
+      "preserved": true,
+      "scientific_source_failure": false
+    },
+    {
+      "run": "reviewer diagnostic",
+      "kind": "Wrong-separator parsing produced spurious FITS-card warnings; reproduction and diagnosis preserved separately",
+      "record": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/HEADER_STRING_DIAGNOSIS.json",
+      "scientific_source_failure": false
+    },
+    {
+      "run": "independent v2",
+      "exit_code": 0,
+      "status": "PASS",
+      "raw_stdout": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v2.stdout.txt",
+      "raw_stderr": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/CHECK_v2.stderr.txt",
+      "scientific_disagreements": 0
+    },
+    {
+      "run": "author operational history",
+      "kind": "Previously reported missing-bs4 parser route; preserved, not independently replayed",
+      "record": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_hi_moment_data/independent_review/source_snapshot/evidence_v1/OPERATIONAL_FAILURES.json",
+      "scientific_source_failure": false
+    }
+  ],
+  "boundaries": {
+    "writes_only_new_independent_review": true,
+    "no_author_edits": true,
+    "no_Git_or_PR": true,
+    "no_external_mutations": true,
+    "no_workers_or_model_changes": true,
+    "no_empirical_fit": true,
+    "no_formal_audit": true,
+    "no_deadline_change": true,
+    "no_landing": true
+  },
+  "reported_history_limit": "Saved download/freeze histories were read and pinned; no claim to reconstruct all prior actions or independently replay network requests."
+}

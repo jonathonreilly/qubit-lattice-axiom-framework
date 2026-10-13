@@ -8124,3 +8124,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **The order-2 terms are the induced G,** so (S_ad) must subtract them and G is fully supplied.
   - **Prices:** P-r1917a, b and c.
   - A referee is optional.
+- **R19-15 referee: CONFIRMED WITH CORRECTIONS. Reading: STRUCTURAL-ZERO on the literal wording, by stipulation** (recorded 06:10Z).
+  - **Lemma H is confirmed.** The shear rows are the complete uniform-strain Hessian of the lowest-state energy, seagull included. Separable T₂g flow is Liouville-invariant.
+  - **The registered clauses do not touch the cubic anisotropy.** The isotropic source/receiver clauses leave it unchanged, and so does exact W1.
+  - **The registered route needs tuning.** Conditional on the dynamical graviton bridge, it requires a radiatively unstable ~1e-98 tuning, with explicit two-loop detuning in the NN λφ⁴ model.
+  - **(S\*) meets the wording but is not a mechanism.** It is a stipulated renormalization/source definition, not a derived Ward mechanism.
+  - **Not established:** a nonlinear Bianchi completion, and a universal matter-side two-loop no-go.
+- **R19-19 ((S\*\*) at O(q²)): worker reading CONE-PRINCIPLE on the letter.** The tautology question goes to the referee.
+  - **The clause (S\*\*₀):** the lowest state contributes nothing to the gravitating source through second order in metric derivatives, at linear order in h. It is local and number-free, and it zeroes all six graviton-cone rows for every species, mass and loop order by construction.
+  - **Lemma G (exact linear algebra).** Under the full linearized-diffeo Ward identity, only an isotropic speed shift is allowed. So 5 of the 6 rows are the vacuum response's own Ward violations, and only the isotropic graviton speed is a gauge-invariant LV coefficient.
+  - **Lemma E.** The clause is 31–32 linear conditions. At O(p²) it cannot fail any cone observation; that is the "assumes the answer" half.
+  - **O(q⁴) remainder:** |δc/c| ~ 1e-84 at 100 Hz.
+  - **Bill under (S\*\*):** 4 per class + CC, i.e. charge counterterms only. The gravity block costs 0 numbers.
+  - **Main risk (state-tied subtraction).** Before the electroweak crossover the subtracted lowest state differs from the actual state. The shear mismatch is then tachyonic (|m_g| ~ 6e10 GeV, or ~170 GeV with twisted mass), which would be catastrophic if μ is a canonical graviton mass.
+  - **Prices:** P-R19-19a ((S\*\*₀)), b (Z) and c (nonlinear extension, non-lowest states).
+
+  Referee running.

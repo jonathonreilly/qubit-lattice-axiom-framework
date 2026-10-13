@@ -1,0 +1,15 @@
+Lemma G (r1919_gauge.out): spatially Ward-exact local kernels have face2 = T2g, face1 = (3 Eg + T2g)/4, mu = 0;
+4D Ward-exact ones have all four Xi equal and mu = 0.
+ m=1.0  face2 - T2g = +6.0e-13   face1 - (3Eg+T2g)/4 = -1.5692e-05   Eg - T2g = +1.6008e-04  (isotropic part (2Eg+3T2g)/5 = -1.6488e-04)
+ m=0.5  face2 - T2g = +2.0e-12   face1 - (3Eg+T2g)/4 = -2.6906e-05   Eg - T2g = +2.1935e-04  (isotropic part (2Eg+3T2g)/5 = -2.3695e-04)
+ m=0.3  face2 - T2g = +3.6e-12   face1 - (3Eg+T2g)/4 = -3.0833e-05   Eg - T2g = +2.3677e-04  (isotropic part (2Eg+3T2g)/5 = -2.6066e-04)
+
+per NN scalar, m = 0.3: alpha = 1.734e-03
+  GW170817 (f = 100 Hz, q a = 3.39e-41): |dc/c| = 9.9e-85   [comparator, RECALLED: -3e-15 <= dc/c <= 7e-16]
+  quadratic scale E_QG,2 = M_P/sqrt(alpha) = 2.9e+20 GeV   [Fermi-LAT-type photon comparator, RECALLED: E_QG,2 >~ 1e11 GeV]
+  |dc/c| at E = 1 TeV: 5.8e-36
+
+SM-like count ~100 fields, x30 margin for vertex/edge/log(1/ma) (suggested envelope): alpha = 5.202e+00
+  GW170817 (f = 100 Hz, q a = 3.39e-41): |dc/c| = 3.0e-81   [comparator, RECALLED: -3e-15 <= dc/c <= 7e-16]
+  quadratic scale E_QG,2 = M_P/sqrt(alpha) = 5.3e+18 GeV   [Fermi-LAT-type photon comparator, RECALLED: E_QG,2 >~ 1e11 GeV]
+  |dc/c| at E = 1 TeV: 1.7e-32

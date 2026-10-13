@@ -1,0 +1,26 @@
+dim invariant degree-2 kernels B: 26  (60 samples; next sv ratio 8.9e-16)
+dim invariant degree-0 kernels A: 6
+
+[NONE] dim B allowed = 26, dim A allowed = 6, rank of map to rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) = 6
+  image basis (columns, rows ordered Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2):
+[[ 1.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  1.  0.]
+ [ 0.  0.  0.  0.  0.  1.]
+ [ 0.  0.  1.  0.  0.  0.]
+ [-0. -0. -0.  1. -0. -0.]]
+
+[SPATIAL (xi_0 = 0)] dim B allowed = 8, dim A allowed = 1, rank of map to rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) = 2
+  image basis (columns, rows ordered Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2):
+[[ 1.    0.    0.75 -0.    0.    0.  ]
+ [ 0.    1.    0.25  1.    0.   -0.  ]]
+
+[FULL (4D linearized diffeo)] dim B allowed = 2, dim A allowed = 0, rank of map to rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) = 1
+  image basis (columns, rows ordered Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2):
+[[ 1.  1.  1.  1. -0. -0.]]
+
+EH kernel: |Ward FULL| = 0.0  in invariant span: residual 2.1491873922208175e-14
+EH rows (Xi..., should be 0): [0. 0. 0. 0.]
+eps.eps.t (t = eta): |Ward FULL| = 0.0e+00, rows Xi = [0. 0. 0. 0.]  omega^2 coeff on Eg/T2g (z): [-2. -2.]
+eps.eps.t (t = diag(1,0,0,0)): |Ward FULL| = 0.0e+00, rows Xi = [-2. -2. -2. -2.]  omega^2 coeff on Eg/T2g (z): [0. 0.]
+eps.eps.t (t = diag(0,1,1,1)): |Ward FULL| = 0.0e+00, rows Xi = [-2. -2. -2. -2.]  omega^2 coeff on Eg/T2g (z): [-2. -2.]

@@ -1,0 +1,40 @@
+s_EH = -0.49999999999999994
+control Eg      e.(sK_EH).e at (w,q)=(0.3,0.7): -0.400000000000  vs w^2-q^2 = -0.400000000000
+control Eg      e.(sK_EH).e at (w,q)=(0.9,0.2): 0.770000000000  vs w^2-q^2 = 0.770000000000
+control T2g     e.(sK_EH).e at (w,q)=(0.3,0.7): -0.400000000000  vs w^2-q^2 = -0.400000000000
+control T2g     e.(sK_EH).e at (w,q)=(0.9,0.2): 0.770000000000  vs w^2-q^2 = 0.770000000000
+control face1   e.(sK_EH).e at (w,q)=(0.3,0.7): -0.400000000000  vs w^2-q^2 = -0.400000000000
+control face1   e.(sK_EH).e at (w,q)=(0.9,0.2): 0.770000000000  vs w^2-q^2 = 0.770000000000
+control face2   e.(sK_EH).e at (w,q)=(0.3,0.7): -0.400000000000  vs w^2-q^2 = -0.400000000000
+control face2   e.(sK_EH).e at (w,q)=(0.9,0.2): 0.770000000000  vs w^2-q^2 = 0.770000000000
+EH gauge residual |K_EH . (p xi + xi p)| (max over 10 random p, all xi): 1.78e-15
+
+Isolation test: generic kernel (all 6+26 invariant directions, random), 20 draws x random (omega, |q|).
+  Eg     (q along [0. 0. 1.]): max |Q u - (uQu) u| = 3.05e-16 ; max |u . gauge dirs| = 0.00e+00
+  T2g    (q along [0. 0. 1.]): max |Q u - (uQu) u| = 2.22e-16 ; max |u . gauge dirs| = 0.00e+00
+  face1  (q along [0.707 0.707 0.   ]): max |Q u - (uQu) u| = 2.77e-01 ; max |u . gauge dirs| = 1.19e-16
+  face2  (q along [0.707 0.707 0.   ]): max |Q u - (uQu) u| = 5.55e-16 ; max |u . gauge dirs| = 0.00e+00
+
+Face-diagonal q, generic kernel: nonzero couplings (|entry| > 1e-12) in the (n, a, b) frame:
+  h00  couples to: ['h0n', 'hnn', 'haa', 'hbb']
+  h0n  couples to: ['h00', 'hnn', 'haa', 'hbb']
+  h0a  couples to: ['hna']
+  h0b  couples to: ['hnb']
+  hnn  couples to: ['h00', 'h0n', 'haa', 'hbb']
+  haa  couples to: ['h00', 'h0n', 'hnn', 'hbb']
+  hbb  couples to: ['h00', 'h0n', 'hnn', 'haa']
+  hna  couples to: ['h0a']
+  hnb  couples to: ['h0b']
+  hab  couples to: []
+
+Axis q (z), generic kernel: nonzero couplings:
+  h00     couples to: ['h0z', 'hzz', 'hxx+yy']
+  h0z     couples to: ['h00', 'hzz', 'hxx+yy']
+  h0x     couples to: ['hzx']
+  h0y     couples to: ['hzy']
+  hzz     couples to: ['h00', 'h0z', 'hxx+yy']
+  hxx+yy  couples to: ['h00', 'h0z', 'hzz']
+  hxx-yy  couples to: []
+  hzx     couples to: ['h0x']
+  hzy     couples to: ['h0y']
+  hxy     couples to: []

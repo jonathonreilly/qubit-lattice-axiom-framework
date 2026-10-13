@@ -1,0 +1,15 @@
+# VERDICT: CONFIRMED WITH CORRECTIONS
+
+Full per-item findings and file:line evidence are in [REFEREE_VERDICT.md](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-19/REFEREE_VERDICT.md:1>).
+
+1. Lemma G is confirmed exactly; R9-9 uses the full linear gauge group. “Five rows” should mean five independent row combinations. [Finding 1](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-19/REFEREE_VERDICT.md:5>)
+
+2. Lemma R and the massive NN/U \(O(p^4)\) remainder are confirmed, including by independent automatic differentiation. The every-species claim and SM envelope remain unverified; massless responses may be \(p^4\log p\). [Finding 2](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-19/REFEREE_VERDICT.md:7>)
+
+3. Lemma E is confirmed. The fixed reading is **TAUTOLOGY-OR-CONFLICT**, on the tautology branch; moreover, the residual higher-order Bianchi defect prevents exact coupling to the N-type comparator without another completion. [Finding 3](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-19/REFEREE_VERDICT.md:9>)
+
+4. The pre-crossover tachyon is a serious conditional falsifier, not an established conflict: the finite-temperature response, FRW equation, and canonical graviton-mass bridge are missing. [Finding 4](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-19/REFEREE_VERDICT.md:11>)
+
+5. The scoped bill is confirmed: **4 per class, 10 per species, or 2 \(q^2\)-correlated**, with the lowest-state CC paid by (S). “Zero-number gravity block” still costs a 31–32-condition source definition. [Finding 5](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-19/REFEREE_VERDICT.md:13>)
+
+Strongest correct statement: Under the stated kernel hypotheses, the 32-dimensional classification and its full/spatial Ward images are exact, and the full-tensor \(S^{**}_0\) prescription locally and number-freely removes all six lowest-state cone rows whenever the exact Taylor jet exists. The massive NN/U remainder and \(10^{-84}\) estimate reproduce, but universal remainder bounds, massless logarithms, nonlinear causality, and exact Bianchi completion do not close. Its numerical bill falls to the stated charge block, but its gravity zero is imposed rather than predicted; therefore the correct fixed reading is **TAUTOLOGY-OR-CONFLICT**, while the pre-electroweak instability remains conditional.

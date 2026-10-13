@@ -1,0 +1,372 @@
+[G == 0 identically] dim = 9 of 26; rank of image in (Xi_Eg, Xi_T2g, face1, face2) = 2
+   image basis:
+ [[-0.6795 -0.3108 -0.5874 -0.3108]
+ [ 0.4305 -0.6274  0.166  -0.6274]]
+[G omega-independent (auxiliary Goldstones)] dim = 17 of 26; rank of image in (Xi_Eg, Xi_T2g, face1, face2) = 4
+   image basis:
+ [[-0.6352 -0.423  -0.524  -0.3782]
+ [ 0.5019 -0.6347  0.2776 -0.5178]
+ [-0.2422 -0.6191  0.2994  0.6844]
+ [-0.5347  0.1871  0.7475 -0.347 ]]
+[FULL Ward] dim 2, image rank 1
+[SPATIAL Ward] dim 8, image rank 2
+explicit degree-0 tensor h00^2    in invariant span: residual 8.1e-16; rows [0. 0. 0. 0. 0. 0.]
+explicit degree-0 tensor h00 trh  in invariant span: residual 7.4e-16; rows [0. 0. 0. 0. 0. 0.]
+explicit degree-0 tensor (trh)^2  in invariant span: residual 3.4e-15; rows [0. 0. 0. 0. 0. 0.]
+explicit degree-0 tensor Eg       in invariant span: residual 5.5e-16; rows [0. 0. 0. 0. 1. 0.]
+explicit degree-0 tensor T2g      in invariant span: residual 6.5e-16; rows [0. 0. 0. 0. 0. 1.]
+explicit degree-0 tensor h0i^2    in invariant span: residual 7.2e-16; rows [0. 0. 0. 0. 0. 0.]
+
+=== Goldstone-aux (17-dim) sample 0 + solid ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-2.34295 -0.17185 -2.8522  -1.277    1.       0.6    ]
+  eps=1e-04 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 8
+       w^2/q^2=1.5999e+00 real norm+
+       w^2/q^2=1.8889e+00 real norm+
+       w^2/q^2=(9.124e-01+8.662e+01i) COMPLEX norm-
+       w^2/q^2=(9.124e-01-8.662e+01i) COMPLEX norm-
+       w^2/q^2=(-1.261e+09-6.792e+05i) COMPLEX norm+
+       w^2/q^2=(-1.261e+09+6.792e+05i) COMPLEX norm+
+       w^2/q^2=4.7689e+09 real norm-
+       w^2/q^2=1.9883e+11 real norm+
+  eps=1e-04 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 10
+       w^2/q^2=6.0998e+01 real norm+
+       w^2/q^2=(2.621e+01+8.160e+01i) COMPLEX norm-
+       w^2/q^2=(2.621e+01-8.160e+01i) COMPLEX norm-
+       w^2/q^2=9.1295e+01 real norm+
+       w^2/q^2=(-1.131e+10+1.228e+07i) COMPLEX norm+
+       w^2/q^2=(-1.131e+10-1.228e+07i) COMPLEX norm+
+       w^2/q^2=4.9720e+10 real norm+
+       w^2/q^2=(-7.212e+10+7.798e+10i) COMPLEX norm+
+       w^2/q^2=(-7.212e+10-7.798e+10i) COMPLEX norm+
+       w^2/q^2=2.404e+11 real norm+
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=1.006e+00 real norm+
+       w^2/q^2=1.0089e+00 real norm+
+       w^2/q^2=(6.525e-01+8.663e+02i) COMPLEX norm+
+       w^2/q^2=(6.525e-01-8.663e+02i) COMPLEX norm+
+       w^2/q^2=(-3.127e+09+8.532e+08i) COMPLEX norm+
+       w^2/q^2=(-3.127e+09-8.532e+08i) COMPLEX norm+
+       w^2/q^2=(8.129e+08+4.059e+09i) COMPLEX norm+
+       w^2/q^2=(8.129e+08-4.059e+09i) COMPLEX norm+
+       w^2/q^2=3.0458e+11 real norm-
+  eps=1e-06 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 8
+       w^2/q^2=1.6e+00 real norm+
+       w^2/q^2=1.8893e+00 real norm+
+       w^2/q^2=(9.123e-01+8.663e+02i) COMPLEX norm-
+       w^2/q^2=(9.123e-01-8.663e+02i) COMPLEX norm-
+       w^2/q^2=5.259e+10 real norm+
+       w^2/q^2=5.9317e+10 real norm+
+       w^2/q^2=(3.467e+10+9.091e+10i) COMPLEX norm-
+       w^2/q^2=(3.467e+10-9.091e+10i) COMPLEX norm-
+
+=== Goldstone-aux (17-dim) sample 0 + solid, q along z ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-2.34295 -0.17185 -2.8522  -1.277    1.       0.6    ]
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 8
+       w^2/q^2=1.006e+00 real norm+
+       w^2/q^2=1.01e+00 real norm+
+       w^2/q^2=(6.531e-01-3.139e+02i) COMPLEX norm-
+       w^2/q^2=(6.531e-01+3.139e+02i) COMPLEX norm-
+       w^2/q^2=1.5747e+10 real norm+
+       w^2/q^2=5.7731e+11 real norm+
+       w^2/q^2=(-5.776e+11+4.537e+07i) COMPLEX norm-
+       w^2/q^2=(-5.776e+11-4.537e+07i) COMPLEX norm-
+
+=== Goldstone-aux (17-dim) sample 1 + solid ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-1.55693  0.02375 -0.61137 -0.44365  1.       0.6    ]
+  eps=1e-04 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=1.5999e+00 real norm+
+       w^2/q^2=1.8882e+00 real norm+
+       w^2/q^2=1.111e+02 real norm+
+       w^2/q^2=(-1.153e+02+7.035e-09i) COMPLEX norm+
+       w^2/q^2=(-1.153e+02-7.035e-09i) COMPLEX norm+
+       w^2/q^2=(-2.040e+09-6.012e+05i) COMPLEX norm+
+       w^2/q^2=(-2.040e+09+6.012e+05i) COMPLEX norm+
+       w^2/q^2=(-1.691e+08+6.657e+09i) COMPLEX norm+
+       w^2/q^2=(-1.691e+08-6.657e+09i) COMPLEX norm+
+       w^2/q^2=3.9446e+10 real norm+
+       w^2/q^2=5.2746e+11 real norm+
+  eps=1e-04 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=6.0997e+01 real norm+
+       w^2/q^2=8.7661e+01 real norm+
+       w^2/q^2=(-9.241e+01+9.791e-07i) COMPLEX norm+
+       w^2/q^2=(-9.241e+01-9.791e-07i) COMPLEX norm+
+       w^2/q^2=1.4241e+02 real norm+
+       w^2/q^2=(-1.700e+10+5.499e+05i) COMPLEX norm+
+       w^2/q^2=(-1.700e+10-5.499e+05i) COMPLEX norm+
+       w^2/q^2=5.6911e+10 real norm+
+       w^2/q^2=8.9756e+10 real norm+
+       w^2/q^2=1.4256e+11 real norm+
+       w^2/q^2=9.5438e+11 real norm+
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 10
+       w^2/q^2=1.006e+00 real norm+
+       w^2/q^2=1.0089e+00 real norm+
+       w^2/q^2=1.1293e+03 real norm+
+       w^2/q^2=(-1.134e+03+2.662e-05i) COMPLEX norm+
+       w^2/q^2=(-1.134e+03-2.662e-05i) COMPLEX norm+
+       w^2/q^2=4.1828e+09 real norm+
+       w^2/q^2=(-6.960e+09+1.115e+10i) COMPLEX norm+
+       w^2/q^2=(-6.960e+09-1.115e+10i) COMPLEX norm+
+       w^2/q^2=(-9.450e+10+1.297e+11i) COMPLEX norm+
+       w^2/q^2=(-9.450e+10-1.297e+11i) COMPLEX norm+
+  eps=1e-06 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 8
+       w^2/q^2=1.6e+00 real norm+
+       w^2/q^2=1.8893e+00 real norm+
+       w^2/q^2=1.1296e+03 real norm+
+       w^2/q^2=1.7665e+10 real norm+
+       w^2/q^2=2.7732e+10 real norm+
+       w^2/q^2=(-1.365e+11+2.107e+11i) COMPLEX norm+
+       w^2/q^2=(-1.365e+11-2.107e+11i) COMPLEX norm+
+       w^2/q^2=5.7425e+12 real norm+
+
+=== Goldstone-aux (17-dim) sample 1 + solid, q along z ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-1.55693  0.02375 -0.61137 -0.44365  1.       0.6    ]
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 12
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.01e+00 real norm+
+       w^2/q^2=4.9861e+03 real norm+
+       w^2/q^2=(-4.991e+03+1.283e-01i) COMPLEX norm+
+       w^2/q^2=(-4.991e+03-1.283e-01i) COMPLEX norm+
+       w^2/q^2=(-5.455e+09+9.810e+09i) COMPLEX norm+
+       w^2/q^2=(-5.455e+09-9.810e+09i) COMPLEX norm+
+       w^2/q^2=(-1.605e+09+1.391e+10i) COMPLEX norm+
+       w^2/q^2=(-1.605e+09-1.391e+10i) COMPLEX norm+
+       w^2/q^2=(-7.593e+08-1.121e+11i) COMPLEX norm+
+       w^2/q^2=(-7.593e+08+1.121e+11i) COMPLEX norm+
+       w^2/q^2=3.4952e+13 real norm+
+
+=== Goldstone-aux (17-dim) sample 2 + solid ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-0.76053  0.41926  0.81521  1.26723  1.       0.6    ]
+  eps=1e-04 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=1.6002e+00 real norm+
+       w^2/q^2=1.8894e+00 real norm+
+       w^2/q^2=4.2074e+01 real norm+
+       w^2/q^2=(-6.773e+08+6.418e+04i) COMPLEX norm+
+       w^2/q^2=(-6.773e+08-6.418e+04i) COMPLEX norm+
+       w^2/q^2=(-1.756e+10-5.693e+07i) COMPLEX norm+
+       w^2/q^2=(-1.756e+10+5.693e+07i) COMPLEX norm+
+       w^2/q^2=(-3.444e+10-1.055e+06i) COMPLEX norm+
+       w^2/q^2=(-3.444e+10+1.055e+06i) COMPLEX norm+
+  eps=1e-04 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=6.1008e+01 real norm+
+       w^2/q^2=6.9916e+01 real norm+
+       w^2/q^2=9.6519e+01 real norm+
+       w^2/q^2=(-1.704e+10+1.024e+10i) COMPLEX norm+
+       w^2/q^2=(-1.704e+10-1.024e+10i) COMPLEX norm+
+       w^2/q^2=(-9.597e+09-3.847e+10i) COMPLEX norm-
+       w^2/q^2=(-9.597e+09+3.847e+10i) COMPLEX norm-
+       w^2/q^2=(-4.798e+10+6.468e+10i) COMPLEX norm+
+       w^2/q^2=(-4.798e+10-6.468e+10i) COMPLEX norm+
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 10
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.0089e+00 real norm+
+       w^2/q^2=4.1287e+02 real norm+
+       w^2/q^2=(-1.777e+09-2.919e+09i) COMPLEX norm+
+       w^2/q^2=(-1.777e+09+2.919e+09i) COMPLEX norm+
+       w^2/q^2=(-1.406e+10+5.572e+08i) COMPLEX norm+
+       w^2/q^2=(-1.406e+10-5.572e+08i) COMPLEX norm+
+       w^2/q^2=(-1.404e+10+8.460e+09i) COMPLEX norm+
+       w^2/q^2=(-1.404e+10-8.460e+09i) COMPLEX norm+
+       w^2/q^2=2.9235e+11 real norm-
+  eps=1e-06 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=1.6000e+00 real norm+
+       w^2/q^2=1.8893e+00 real norm+
+       w^2/q^2=4.1313e+02 real norm+
+       w^2/q^2=(-3.743e+08-1.859e+10i) COMPLEX norm+
+       w^2/q^2=(-3.743e+08+1.859e+10i) COMPLEX norm+
+       w^2/q^2=(2.536e+09+4.053e+10i) COMPLEX norm-
+       w^2/q^2=(2.536e+09-4.053e+10i) COMPLEX norm-
+       w^2/q^2=(-1.185e+10+7.030e+10i) COMPLEX norm+
+       w^2/q^2=(-1.185e+10-7.030e+10i) COMPLEX norm+
+
+=== Goldstone-aux (17-dim) sample 2 + solid, q along z ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-0.76053  0.41926  0.81521  1.26723  1.       0.6    ]
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.01e+00 real norm+
+       w^2/q^2=(5.737e-01+3.501e+02i) COMPLEX norm-
+       w^2/q^2=(5.737e-01-3.501e+02i) COMPLEX norm-
+       w^2/q^2=(-5.343e+07+5.232e+09i) COMPLEX norm-
+       w^2/q^2=(-5.343e+07-5.232e+09i) COMPLEX norm-
+       w^2/q^2=(-1.012e+10-3.875e+07i) COMPLEX norm+
+       w^2/q^2=(-1.012e+10+3.875e+07i) COMPLEX norm+
+       w^2/q^2=(-1.514e+10+7.478e+07i) COMPLEX norm-
+       w^2/q^2=(-1.514e+10-7.478e+07i) COMPLEX norm-
+       w^2/q^2=7.6825e+10 real norm+
+
+=== Goldstone-G==0 (9-dim) sample 0 + solid ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-0.29468  0.0878  -0.19906  0.0878   1.       0.6    ]
+  eps=1e-04 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=1.6001e+00 real norm+
+       w^2/q^2=1.8927e+00 real norm+
+       w^2/q^2=(-3.136e+00-8.189e-07i) COMPLEX norm+
+       w^2/q^2=(-3.136e+00+8.189e-07i) COMPLEX norm+
+       w^2/q^2=(-9.967e+08+3.035e+01i) COMPLEX norm+
+       w^2/q^2=(-9.967e+08-3.035e+01i) COMPLEX norm+
+       w^2/q^2=1.2098e+10 real norm+
+       w^2/q^2=(-1.274e+10+7.858e+07i) COMPLEX norm+
+       w^2/q^2=(-1.274e+10-7.858e+07i) COMPLEX norm+
+  eps=1e-04 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=2.4857e-09 real norm-
+       w^2/q^2=4.5083e+01 real norm+
+       w^2/q^2=6.1005e+01 real norm+
+       w^2/q^2=9.3694e+01 real norm+
+       w^2/q^2=(-1.291e+11-2.776e+10i) COMPLEX norm+
+       w^2/q^2=(-1.291e+11+2.776e+10i) COMPLEX norm+
+       w^2/q^2=(-1.341e+11+4.302e+08i) COMPLEX norm+
+       w^2/q^2=(-1.341e+11-4.302e+08i) COMPLEX norm+
+       w^2/q^2=1.5155e+11 real norm+
+       w^2/q^2=(-1.443e+10+1.796e+11i) COMPLEX norm-
+       w^2/q^2=(-1.443e+10-1.796e+11i) COMPLEX norm-
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 7
+       w^2/q^2=(-1.917e-03+1.408e-05i) COMPLEX norm+
+       w^2/q^2=(-1.917e-03-1.408e-05i) COMPLEX norm+
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.0089e+00 real norm+
+       w^2/q^2=(7.479e+09+6.441e+10i) COMPLEX norm-
+       w^2/q^2=(7.479e+09-6.441e+10i) COMPLEX norm-
+       w^2/q^2=1.9084e+16 real norm-
+  eps=1e-06 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=(-8.484e-04+2.221e-04i) COMPLEX norm-
+       w^2/q^2=(-8.484e-04-2.221e-04i) COMPLEX norm-
+       w^2/q^2=1.6000e+00 real norm+
+       w^2/q^2=1.8927e+00 real norm+
+       w^2/q^2=(-1.534e+10+1.177e+11i) COMPLEX norm-
+       w^2/q^2=(-1.534e+10-1.177e+11i) COMPLEX norm-
+       w^2/q^2=(-1.361e+11+1.438e+10i) COMPLEX norm+
+       w^2/q^2=(-1.361e+11-1.438e+10i) COMPLEX norm+
+       w^2/q^2=1.4848e+11 real norm+
+
+=== Goldstone-G==0 (9-dim) sample 0 + solid, q along z ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-0.29468  0.0878  -0.19906  0.0878   1.       0.6    ]
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 12
+       w^2/q^2=1.8838e-03 real norm+
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.01e+00 real norm+
+       w^2/q^2=(-3.717e+00-6.138e-01i) COMPLEX norm+
+       w^2/q^2=(-3.717e+00+6.138e-01i) COMPLEX norm+
+       w^2/q^2=(-2.296e+10+6.409e+06i) COMPLEX norm-
+       w^2/q^2=(-2.296e+10-6.409e+06i) COMPLEX norm-
+       w^2/q^2=(-3.207e+09+2.615e+10i) COMPLEX norm+
+       w^2/q^2=(-3.207e+09-2.615e+10i) COMPLEX norm+
+       w^2/q^2=(-1.292e+07+2.754e+10i) COMPLEX norm+
+       w^2/q^2=(-1.292e+07-2.754e+10i) COMPLEX norm+
+       w^2/q^2=2.9788e+10 real norm-
+
+=== Goldstone-G==0 (9-dim) sample 1 + solid ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-1.22265  0.26741 -0.85013  0.26741  1.       0.6    ]
+  eps=1e-04 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=8.1312e-07 real norm+
+       w^2/q^2=1.6000e+00 real norm+
+       w^2/q^2=1.893e+00 real norm+
+       w^2/q^2=(-2.807e+08+2.698e+04i) COMPLEX norm+
+       w^2/q^2=(-2.807e+08-2.698e+04i) COMPLEX norm+
+       w^2/q^2=(-2.495e+09+5.419e+06i) COMPLEX norm+
+       w^2/q^2=(-2.495e+09-5.419e+06i) COMPLEX norm+
+       w^2/q^2=(-1.272e+10-1.682e+07i) COMPLEX norm-
+       w^2/q^2=(-1.272e+10+1.682e+07i) COMPLEX norm-
+       w^2/q^2=4.0239e+10 real norm+
+       w^2/q^2=9.7193e+10 real norm+
+  eps=1e-04 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=4.5664e+01 real norm+
+       w^2/q^2=6.0998e+01 real norm+
+       w^2/q^2=9.3731e+01 real norm+
+       w^2/q^2=(-2.263e+10+5.183e+06i) COMPLEX norm+
+       w^2/q^2=(-2.263e+10-5.183e+06i) COMPLEX norm+
+       w^2/q^2=(-8.360e+09-6.708e+10i) COMPLEX norm+
+       w^2/q^2=(-8.360e+09+6.708e+10i) COMPLEX norm+
+       w^2/q^2=1.0974e+11 real norm+
+       w^2/q^2=1.2562e+11 real norm+
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 8
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.0089e+00 real norm+
+       w^2/q^2=(-3.040e+00+6.547e-03i) COMPLEX norm-
+       w^2/q^2=(-3.040e+00-6.547e-03i) COMPLEX norm-
+       w^2/q^2=3.0566e+09 real norm-
+       w^2/q^2=6.5850e+09 real norm-
+       w^2/q^2=(-2.596e+11+2.371e+10i) COMPLEX norm+
+       w^2/q^2=(-2.596e+11-2.371e+10i) COMPLEX norm+
+  eps=1e-06 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=1.3225e-02 real norm+
+       w^2/q^2=1.6000e+00 real norm+
+       w^2/q^2=1.8935e+00 real norm+
+       w^2/q^2=(-2.463e+00-4.924e-03i) COMPLEX norm-
+       w^2/q^2=(-2.463e+00+4.924e-03i) COMPLEX norm-
+       w^2/q^2=(-4.607e+10+8.440e+09i) COMPLEX norm+
+       w^2/q^2=(-4.607e+10-8.440e+09i) COMPLEX norm+
+       w^2/q^2=(-3.334e+07-5.325e+10i) COMPLEX norm+
+       w^2/q^2=(-3.334e+07+5.325e+10i) COMPLEX norm+
+       w^2/q^2=(5.932e+10+2.123e+10i) COMPLEX norm+
+       w^2/q^2=(5.932e+10-2.123e+10i) COMPLEX norm+
+
+=== Goldstone-G==0 (9-dim) sample 1 + solid, q along z ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-1.22265  0.26741 -0.85013  0.26741  1.       0.6    ]
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=(-1.820e-02+1.848e-03i) COMPLEX norm-
+       w^2/q^2=(-1.820e-02-1.848e-03i) COMPLEX norm-
+       w^2/q^2=1.0060e+00 real norm+
+       w^2/q^2=1.01e+00 real norm+
+       w^2/q^2=(-3.559e+09+7.358e+09i) COMPLEX norm-
+       w^2/q^2=(-3.559e+09-7.358e+09i) COMPLEX norm-
+       w^2/q^2=1.3212e+11 real norm-
+       w^2/q^2=(1.382e+11+8.458e+11i) COMPLEX norm+
+       w^2/q^2=(1.382e+11-8.458e+11i) COMPLEX norm+
+
+=== Goldstone-G==0 (9-dim) sample 2 + solid ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-0.14296 -0.27631 -0.17629 -0.27631  1.       0.6    ]
+  eps=1e-04 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 11
+       w^2/q^2=(-6.270e-08+3.018e-10i) COMPLEX norm+
+       w^2/q^2=(-6.270e-08-3.018e-10i) COMPLEX norm+
+       w^2/q^2=1.2878e+00 real norm+
+       w^2/q^2=1.6e+00 real norm+
+       w^2/q^2=1.9173e+00 real norm+
+       w^2/q^2=(-3.725e+09-2.886e+09i) COMPLEX norm+
+       w^2/q^2=(-3.725e+09+2.886e+09i) COMPLEX norm+
+       w^2/q^2=(-8.322e+08+4.680e+09i) COMPLEX norm+
+       w^2/q^2=(-8.322e+08-4.680e+09i) COMPLEX norm+
+       w^2/q^2=(-2.584e+09+8.887e+09i) COMPLEX norm-
+       w^2/q^2=(-2.584e+09-8.887e+09i) COMPLEX norm-
+  eps=1e-04 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 7, #finite nonzero roots (w>0 or Im>0) = 10
+       w^2/q^2=3.2213e-09 real norm-
+       w^2/q^2=4.9153e+01 real norm+
+       w^2/q^2=6.1002e+01 real norm+
+       w^2/q^2=9.4069e+01 real norm+
+       w^2/q^2=(-6.329e+09+1.087e+10i) COMPLEX norm+
+       w^2/q^2=(-6.329e+09-1.087e+10i) COMPLEX norm+
+       w^2/q^2=(-7.581e+08+4.640e+10i) COMPLEX norm+
+       w^2/q^2=(-7.581e+08-4.640e+10i) COMPLEX norm+
+       w^2/q^2=(-2.513e+09+8.972e+10i) COMPLEX norm-
+       w^2/q^2=(-2.513e+09-8.972e+10i) COMPLEX norm-
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=4.9451e-04 real norm-
+       w^2/q^2=7.9505e-01 real norm+
+       w^2/q^2=1.006e+00 real norm+
+       w^2/q^2=1.0089e+00 real norm+
+       w^2/q^2=(-1.617e+09+2.788e+09i) COMPLEX norm+
+       w^2/q^2=(-1.617e+09-2.788e+09i) COMPLEX norm+
+       w^2/q^2=2.8315e+10 real norm-
+       w^2/q^2=(-1.509e+10+2.494e+10i) COMPLEX norm+
+       w^2/q^2=(-1.509e+10-2.494e+10i) COMPLEX norm+
+  eps=1e-06 q=1e-03: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 9
+       w^2/q^2=1.2908e+00 real norm+
+       w^2/q^2=1.6e+00 real norm+
+       w^2/q^2=1.9174e+00 real norm+
+       w^2/q^2=(-1.477e+09+4.407e+10i) COMPLEX norm-
+       w^2/q^2=(-1.477e+09-4.407e+10i) COMPLEX norm-
+       w^2/q^2=(8.688e+07+5.337e+10i) COMPLEX norm-
+       w^2/q^2=(8.688e+07-5.337e+10i) COMPLEX norm-
+       w^2/q^2=(1.852e+09+9.132e+10i) COMPLEX norm-
+       w^2/q^2=(1.852e+09-9.132e+10i) COMPLEX norm-
+
+=== Goldstone-G==0 (9-dim) sample 2 + solid, q along z ===
+  rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) of Pi: [-0.14296 -0.27631 -0.17629 -0.27631  1.       0.6    ]
+  eps=1e-06 q=1e-02: residual gauge xi0=False xi_i=False; rank Q2 = 6, #finite nonzero roots (w>0 or Im>0) = 10
+       w^2/q^2=(-7.221e-02+3.995e-02i) COMPLEX norm+
+       w^2/q^2=(-7.221e-02-3.995e-02i) COMPLEX norm+
+       w^2/q^2=7.366e-01 real norm+
+       w^2/q^2=1.006e+00 real norm+
+       w^2/q^2=1.01e+00 real norm+
+       w^2/q^2=(-1.549e+07+1.169e+10i) COMPLEX norm-
+       w^2/q^2=(-1.549e+07-1.169e+10i) COMPLEX norm-
+       w^2/q^2=(-2.312e+09+3.770e+10i) COMPLEX norm+
+       w^2/q^2=(-2.312e+09-3.770e+10i) COMPLEX norm+
+       w^2/q^2=4.0054e+10 real norm-

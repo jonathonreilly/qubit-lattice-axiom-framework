@@ -1,0 +1,200 @@
+explicit degree-0 tensor h00^2    in invariant span: residual 8.1e-16; rows [0. 0. 0. 0. 0. 0.]
+explicit degree-0 tensor h00 trh  in invariant span: residual 7.4e-16; rows [0. 0. 0. 0. 0. 0.]
+explicit degree-0 tensor (trh)^2  in invariant span: residual 3.4e-15; rows [0. 0. 0. 0. 0. 0.]
+explicit degree-0 tensor Eg       in invariant span: residual 5.5e-16; rows [0. 0. 0. 0. 1. 0.]
+explicit degree-0 tensor T2g      in invariant span: residual 6.5e-16; rows [0. 0. 0. 0. 0. 1.]
+explicit degree-0 tensor h0i^2    in invariant span: residual 7.2e-16; rows [0. 0. 0. 0. 0. 0.]
+
+=== static amplitudes, q along z; GR comparator uses the pseudo-inverse (T orthogonal to gauge nulls) ===
+  q=1e-01 GR: U_mm*q^2 = -1.000000  U_ml*q^2 = -2.000000  (ratio U_ml/U_mm = 2.000000; GR expects 2)
+  q=1e-02 GR: U_mm*q^2 = -1.000000  U_ml*q^2 = -2.000000  (ratio U_ml/U_mm = 2.000000; GR expects 2)
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.979677, U_ml/GR = 0.989839
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = -1.032258, U_ml/GR = -0.016129
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = -202.225806, U_ml/GR = -100.612903
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999797, U_ml/GR = 0.999898
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.979677, U_ml/GR = 0.989839
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = -1.032258, U_ml/GR = -0.016129
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 0.999998, U_ml/GR = 0.999999
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999797, U_ml/GR = 0.999898
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.979677, U_ml/GR = 0.989839
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.057273, U_ml/GR = 1.028636
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = 6.727273, U_ml/GR = 3.863636
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = 573.727273, U_ml/GR = 287.363636
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.000573, U_ml/GR = 1.000286
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.057273, U_ml/GR = 1.028636
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = 6.727273, U_ml/GR = 3.863636
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 1.000006, U_ml/GR = 1.000003
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.000573, U_ml/GR = 1.000286
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.057273, U_ml/GR = 1.028636
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.988000, U_ml/GR = 0.994000
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = -0.200000, U_ml/GR = 0.400000
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = -119.000000, U_ml/GR = -59.000000
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999880, U_ml/GR = 0.999940
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.988000, U_ml/GR = 0.994000
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = -0.200000, U_ml/GR = 0.400000
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 0.999999, U_ml/GR = 0.999999
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999880, U_ml/GR = 0.999940
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.988000, U_ml/GR = 0.994000
+
+=== static amplitudes, q along 110; GR comparator uses the pseudo-inverse (T orthogonal to gauge nulls) ===
+  q=1e-01 GR: U_mm*q^2 = -1.000000  U_ml*q^2 = -2.000000  (ratio U_ml/U_mm = 2.000000; GR expects 2)
+  q=1e-02 GR: U_mm*q^2 = -1.000000  U_ml*q^2 = -2.000000  (ratio U_ml/U_mm = 2.000000; GR expects 2)
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.984255, U_ml/GR = 0.993175
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = -0.548204, U_ml/GR = 0.281835
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = -150.870532, U_ml/GR = -74.817749
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999843, U_ml/GR = 0.999932
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.984255, U_ml/GR = 0.993175
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = -0.548204, U_ml/GR = 0.281835
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 0.999998, U_ml/GR = 0.999999
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999843, U_ml/GR = 0.999932
+  solid(lb=0.7,muE=1.0,muT=0.6) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.984255, U_ml/GR = 0.993175
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.0,muE=1.0,muT=1.0) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.000000, U_ml/GR = 1.000000
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.994643, U_ml/GR = 0.992133
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = 6.727273, U_ml/GR = 1.173554
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = -204.084377, U_ml/GR = -100.897857
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999945, U_ml/GR = 0.999921
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.994643, U_ml/GR = 0.992133
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = 6.727273, U_ml/GR = 1.173554
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 0.999999, U_ml/GR = 0.999999
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 0.999945, U_ml/GR = 0.999921
+  solid(lb=0.7,muE=-1.0,muT=0.6) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 0.994643, U_ml/GR = 0.992133
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-04 q=1e-01 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.152877, U_ml/GR = 1.095741
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-04 q=1e-02 (m^2/q^2 ~ 1e+00): U_mm/GR = 75.571429, U_ml/GR = 45.129870
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-04 q=1e-03 (m^2/q^2 ~ 1e+02): U_mm/GR = -831.563380, U_ml/GR = -417.980794
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-06 q=1e-01 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.001512, U_ml/GR = 1.000948
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-06 q=1e-02 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.152877, U_ml/GR = 1.095741
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-06 q=1e-03 (m^2/q^2 ~ 1e+00): U_mm/GR = 75.571429, U_ml/GR = 45.129870
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-08 q=1e-01 (m^2/q^2 ~ 1e-06): U_mm/GR = 1.000015, U_ml/GR = 1.000009
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-08 q=1e-02 (m^2/q^2 ~ 1e-04): U_mm/GR = 1.001512, U_ml/GR = 1.000948
+  solid(lb=-0.4,muE=0.3,muT=2.0) eps=1e-08 q=1e-03 (m^2/q^2 ~ 1e-02): U_mm/GR = 1.152877, U_ml/GR = 1.095741
+
+=== coupling of each branch to conserved sources: max over the 6-dim conserved T space of |T.v|^2/|v.dQ.v| ===
+  sample 1 eps=1e-05 q=1e-02:
+     w^2/q^2 = (0.4176+0j)                  coupling = 1.005e-03   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (1.06+0j)                    coupling = 9.713e+01   overlap with TT(face1,face2) = 1.000
+     w^2/q^2 = (1.0889+0j)                  coupling = 9.583e+01   overlap with TT(face1,face2) = 0.719
+     w^2/q^2 = (21.5699-743.1879j)          coupling = 1.249e+06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (21.5699+743.1879j)          coupling = 1.249e+06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (2847.2299+0j)               coupling = 2.204e-06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-513151.6812+0.0132j)       coupling = 7.163e+04   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-513151.6812-0.0132j)       coupling = 7.163e+04   overlap with TT(face1,face2) = 0.000
+  sample 1 eps=1e-07 q=1e-02:
+     w^2/q^2 = (0.4176+0j)                  coupling = 1.255e-05   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (1.0006+0j)                  coupling = 9.997e+01   overlap with TT(face1,face2) = 1.000
+     w^2/q^2 = (1.0009+0j)                  coupling = 9.996e+01   overlap with TT(face1,face2) = 0.689
+     w^2/q^2 = (21.6387+743.1875j)          coupling = 1.249e+08   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (21.6387-743.1875j)          coupling = 1.249e+08   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (2847.2265+0j)               coupling = 2.204e-08   overlap with TT(face1,face2) = 0.000
+  sample 1 eps=1e-05 q=1e-03:
+     w^2/q^2 = (0.4176+0j)                  coupling = 2.289e-01   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (7+0j)                       coupling = 3.780e+02   overlap with TT(face1,face2) = 1.000
+     w^2/q^2 = (9.8928+0j)                  coupling = 3.247e+02   overlap with TT(face1,face2) = 0.753
+     w^2/q^2 = (14.6929+7434.9869j)         coupling = 4.133e+06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (14.6929-7434.9869j)         coupling = 4.133e+06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (284733.1554+0j)             coupling = 2.205e-06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-51317080.5242+322.7882j)   coupling = 7.160e+06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-51317080.5242-322.7882j)   coupling = 7.160e+06   overlap with TT(face1,face2) = 0.000
+  sample 2 eps=1e-05 q=1e-02:
+     w^2/q^2 = (-0.6518-0j)                 coupling = 2.066e+11   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (1.06+0j)                    coupling = 9.713e+01   overlap with TT(face1,face2) = 1.000
+     w^2/q^2 = (1.0889+0j)                  coupling = 9.583e+01   overlap with TT(face1,face2) = 0.749
+     w^2/q^2 = (881.0048+0j)                coupling = 1.838e-04   overlap with TT(face1,face2) = 0.000
+  sample 2 eps=1e-07 q=1e-02:
+     w^2/q^2 = (-0.6518-0j)                 coupling = 1.920e+13   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (1.0006+0j)                  coupling = 9.997e+01   overlap with TT(face1,face2) = 1.000
+     w^2/q^2 = (1.0009+0j)                  coupling = 9.996e+01   overlap with TT(face1,face2) = 0.757
+     w^2/q^2 = (-838.2255-0j)               coupling = 1.884e+10   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-838.2255+0j)               coupling = 1.884e+10   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (881.0721+0j)                coupling = 1.838e-06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-15093.6717-0j)             coupling = 1.229e+04   overlap with TT(face1,face2) = 0.000
+  sample 2 eps=1e-05 q=1e-03:
+     w^2/q^2 = (-0.6517-0j)                 coupling = 6.145e+13   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (7+0j)                       coupling = 3.780e+02   overlap with TT(face1,face2) = 1.000
+     w^2/q^2 = (9.8928+0j)                  coupling = 3.247e+02   overlap with TT(face1,face2) = 0.523
+     w^2/q^2 = (-8579.8073-0j)              coupling = 6.302e+09   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (8608.7623+0j)               coupling = 6.077e-03   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-954681.3497+0.0002j)       coupling = 9.771e+05   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-954681.3497-0.0002j)       coupling = 9.771e+05   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-1509455.6902+0.0025j)      coupling = 1.229e+06   overlap with TT(face1,face2) = 0.000
+     w^2/q^2 = (-1509455.6902-0.0025j)      coupling = 1.229e+06   overlap with TT(face1,face2) = 0.000
+
+=== class R + solid: eigenvector gauge content, |T.v| (max over unit conserved T), norm, and static amplitude vs GR ===
+  sample 1 eps=1e-05 q=1e-02:
+     w^2/q^2 =     0.4176  |P_gauge v| = 1.000000  max|T.v| = 1.096e-05  norm v.dQ.v = +1.194e-07  residue ~ |T.v|^2/|norm| = 1.005e-03
+     w^2/q^2 =     1.0600  |P_gauge v| = 0.000000  max|T.v| = 1.000e+00  norm v.dQ.v = +1.030e-02  residue ~ |T.v|^2/|norm| = 9.713e+01
+     w^2/q^2 =     1.0889  |P_gauge v| = 0.695430  max|T.v| = 7.186e-01  norm v.dQ.v = +5.388e-03  residue ~ |T.v|^2/|norm| = 9.583e+01
+     w^2/q^2 =  2847.2299  |P_gauge v| = 1.000000  max|T.v| = 9.328e-08  norm v.dQ.v = +3.948e-09  residue ~ |T.v|^2/|norm| = 2.204e-06
+     static q=1e-01: U_mm/GR = 0.998426  U_ml/GR = 0.999319
+     static q=1e-02: U_mm/GR = 0.842964  U_ml/GR = 0.931187
+     static q=1e-03: U_mm/GR = -14.237034  U_ml/GR = -6.511743
+  sample 1 eps=1e-07 q=1e-02:
+     w^2/q^2 =     0.4176  |P_gauge v| = 1.000000  max|T.v| = 1.224e-07  norm v.dQ.v = +1.194e-09  residue ~ |T.v|^2/|norm| = 1.255e-05
+     w^2/q^2 =     1.0006  |P_gauge v| = 0.000000  max|T.v| = 1.000e+00  norm v.dQ.v = +1.000e-02  residue ~ |T.v|^2/|norm| = 9.997e+01
+     w^2/q^2 =     1.0009  |P_gauge v| = 0.724742  max|T.v| = 6.890e-01  norm v.dQ.v = +4.750e-03  residue ~ |T.v|^2/|norm| = 9.996e+01
+     w^2/q^2 =  2847.2265  |P_gauge v| = 1.000000  max|T.v| = 9.328e-10  norm v.dQ.v = +3.948e-11  residue ~ |T.v|^2/|norm| = 2.204e-08
+     static q=1e-01: U_mm/GR = 0.999984  U_ml/GR = 0.999993
+     static q=1e-02: U_mm/GR = 0.998425  U_ml/GR = 0.999318
+     static q=1e-03: U_mm/GR = 0.842965  U_ml/GR = 0.931188
+  sample 1 eps=1e-09 q=1e-02:
+     w^2/q^2 =     0.4176  |P_gauge v| = 1.000000  max|T.v| = 1.226e-09  norm v.dQ.v = +1.194e-11  residue ~ |T.v|^2/|norm| = 1.258e-07
+     w^2/q^2 =     1.0000  |P_gauge v| = 0.000001  max|T.v| = 1.000e+00  norm v.dQ.v = +1.000e-02  residue ~ |T.v|^2/|norm| = 1.000e+02
+     w^2/q^2 =     1.0000  |P_gauge v| = 0.725080  max|T.v| = 6.887e-01  norm v.dQ.v = +4.743e-03  residue ~ |T.v|^2/|norm| = 1.000e+02
+     w^2/q^2 =  2847.2293  |P_gauge v| = 1.000000  max|T.v| = 9.328e-12  norm v.dQ.v = +3.948e-13  residue ~ |T.v|^2/|norm| = 2.204e-10
+     static q=1e-01: U_mm/GR = 1.000000  U_ml/GR = 1.000000
+     static q=1e-02: U_mm/GR = 0.999984  U_ml/GR = 0.999993
+     static q=1e-03: U_mm/GR = 0.998425  U_ml/GR = 0.999318
+  sample 2 eps=1e-05 q=1e-02:
+     w^2/q^2 =     1.0600  |P_gauge v| = 0.000000  max|T.v| = 1.000e+00  norm v.dQ.v = +1.030e-02  residue ~ |T.v|^2/|norm| = 9.713e+01
+     w^2/q^2 =     1.0889  |P_gauge v| = 0.662526  max|T.v| = 7.490e-01  norm v.dQ.v = +5.854e-03  residue ~ |T.v|^2/|norm| = 9.583e+01
+     w^2/q^2 =   881.0048  |P_gauge v| = 1.000000  max|T.v| = 9.268e-07  norm v.dQ.v = +4.673e-09  residue ~ |T.v|^2/|norm| = 1.838e-04
+     static q=1e-01: U_mm/GR = 0.998431  U_ml/GR = 0.999322
+     static q=1e-02: U_mm/GR = 0.842972  U_ml/GR = 0.931192
+     static q=1e-03: U_mm/GR = -14.238742  U_ml/GR = -6.512529
+  sample 2 eps=1e-07 q=1e-02:
+     w^2/q^2 =     1.0006  |P_gauge v| = 0.000000  max|T.v| = 1.000e+00  norm v.dQ.v = +1.000e-02  residue ~ |T.v|^2/|norm| = 9.997e+01
+     w^2/q^2 =     1.0009  |P_gauge v| = 0.653482  max|T.v| = 7.569e-01  norm v.dQ.v = +5.732e-03  residue ~ |T.v|^2/|norm| = 9.996e+01
+     w^2/q^2 =   881.0721  |P_gauge v| = 1.000000  max|T.v| = 9.269e-09  norm v.dQ.v = +4.673e-11  residue ~ |T.v|^2/|norm| = 1.838e-06
+     static q=1e-01: U_mm/GR = 0.999984  U_ml/GR = 0.999993
+     static q=1e-02: U_mm/GR = 0.998425  U_ml/GR = 0.999318
+     static q=1e-03: U_mm/GR = 0.842965  U_ml/GR = 0.931188
+  sample 2 eps=1e-09 q=1e-02:
+     w^2/q^2 =     1.0000  |P_gauge v| = 0.000000  max|T.v| = 1.000e+00  norm v.dQ.v = +1.000e-02  residue ~ |T.v|^2/|norm| = 1.000e+02
+     w^2/q^2 =     1.0000  |P_gauge v| = 0.653386  max|T.v| = 7.570e-01  norm v.dQ.v = +5.731e-03  residue ~ |T.v|^2/|norm| = 1.000e+02
+     w^2/q^2 =   881.0728  |P_gauge v| = 1.000000  max|T.v| = 9.269e-11  norm v.dQ.v = +4.673e-13  residue ~ |T.v|^2/|norm| = 1.838e-08
+     static q=1e-01: U_mm/GR = 1.000000  U_ml/GR = 1.000000
+     static q=1e-02: U_mm/GR = 0.999984  U_ml/GR = 0.999993
+     static q=1e-03: U_mm/GR = 0.998425  U_ml/GR = 0.999318
+
+=== class R + solid, q along 110: gauge-direction content of the real extra branches (eps = 1e-7, q = 1e-2) ===
+  sample 1: w^2/q^2 = (0.4176+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1. 0. 0. 0.]  non-gauge residual = 1.2e-07  TT overlap = 0.000
+  sample 1: w^2/q^2 = (1.0006+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [0. 0. 0. 1.]  non-gauge residual = 1.0e+00  TT overlap = 1.000
+  sample 1: w^2/q^2 = (1.0009+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.086 0.    0.   ]  non-gauge residual = 6.9e-01  TT overlap = 0.689
+  sample 1: w^2/q^2 = (21.6387+743.1875j)        |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.   0.26 0.   0.  ]  non-gauge residual = 1.7e-08  TT overlap = 0.000
+  sample 1: w^2/q^2 = (21.6387-743.1875j)        |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.   0.26 0.   0.  ]  non-gauge residual = 1.7e-08  TT overlap = 0.000
+  sample 2: w^2/q^2 = (1.0006+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.    0.    0.108]  non-gauge residual = 1.0e+00  TT overlap = 1.000
+  sample 2: w^2/q^2 = (1.0009+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.104 0.    0.   ]  non-gauge residual = 7.6e-01  TT overlap = 0.757
+  sample 2: w^2/q^2 = (-838.2255-0j)             |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.187 0.    0.   ]  non-gauge residual = 1.0e-08  TT overlap = 0.000
+  sample 2: w^2/q^2 = (-838.2255+0j)             |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.187 0.    0.   ]  non-gauge residual = 1.0e-08  TT overlap = 0.000
+  sample 2: w^2/q^2 = (881.0721+0j)              |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.   0.18 0.   0.  ]  non-gauge residual = 9.3e-09  TT overlap = 0.000
+  sample 3: w^2/q^2 = (0.01+0j)                  |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1. 0. 0. 0.]  non-gauge residual = 3.2e-08  TT overlap = 0.000
+  sample 3: w^2/q^2 = (1.0006+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [0. 0. 0. 1.]  non-gauge residual = 1.0e+00  TT overlap = 1.000
+  sample 3: w^2/q^2 = (1.0009+0j)                |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.422 0.    0.   ]  non-gauge residual = 9.8e-01  TT overlap = 0.979
+  sample 3: w^2/q^2 = (5.5184+253.8425j)         |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.214 0.    0.   ]  non-gauge residual = 7.1e-08  TT overlap = 0.000
+  sample 3: w^2/q^2 = (5.5184-253.8425j)         |xi_0|,|xi_n|,|xi_a|,|xi_b| (rel) = [1.    0.214 0.    0.   ]  non-gauge residual = 7.1e-08  TT overlap = 0.000

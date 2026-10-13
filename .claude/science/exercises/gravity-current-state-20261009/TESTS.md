@@ -8351,3 +8351,49 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **WEAK-OBSTRUCTED:** a refereed demonstration that every weak or BRST definition in a stated class fails at finite S, e.g. Q² ≠ 0, or the weak condition is not preserved, or the norm turns negative.
   - **OPEN:** otherwise.
 - **Expectation.** WEAK-OBSTRUCTED. The finite-S constraints do not close (Lemma J), so the BRST charge does not square to zero and the Gupta–Bleuler condition is not preserved, both at O(1/S). An O(1/S) approximate version may hold, with a 1/S leak into unphysical states.
+
+#### C5 referee verdicts R19-14, R19-16, R19-17, R19-18, R19-19 and the R19-23 worker reading (recorded 06:43Z)
+
+- **R19-14 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - Lemma G0 does not follow from translation covariance for interacting or general time-dependent laws.
+  - The s = 1 comparator has no instantaneous ground state for massless modes with ω ≤ H, so (S_ad) is not a checked global homogeneous completion.
+  - The ℓ/ℓ_P drift at 10 MeV reheating is 4.86e36, not ≥ 1e50.
+  - The lag coefficient and the conditional inflation arithmetic reproduce.
+- **R19-16 referee: NOT CONFIRMED (the PHOTON-EXACT). Reading OPEN.**
+  - **Repaired:**
+    - the original 1e-7 seam and the exact-zero NaN;
+    - R0 restores the analytic law;
+    - R2 installs finite soft-leg limits;
+    - W1 holds to machine precision at every tested point;
+    - the six-row root re-solves at the numerical floor.
+  - **Still broken:** R1 is not analytic on the whole torus. At the wrapped-transfer cut q_j = ±π it has opposite divided-difference limits, which gives an O(1) physically projected kernel jump. So the object is not yet a smooth, quasi-local class-𝒢 exact completion.
+- **R19-17 referee: CONFIRMED WITH CORRECTIONS. Conditional LOCAL-OK** for the planar NN-scalar, constant-mass cold-dust class.
+  - It is a newly priced W/A completion.
+  - The full order-2/T₂g sector and other fields are uncomputed, and complete 3D hyperbolicity is not established.
+  - The strict lattice light-cone claim is false; only rapid suppression outside the cone is shown.
+  - The induced-G and "no standing memory" wording is too strong.
+- **R19-18 referee: NOT CONFIRMED (the OPEN). Literal reading TIE-BROKEN.**
+  - Under L0, E2 predicts d_L^GW/d_L^EM = exp(γt_lb/2), a 0.44–1.30% excess at z = 1.
+  - The worker's optimistic ET-like case reaches 3.0–3.7σ for 0.039 ≤ γ/H₀ ≤ 0.047, which satisfies the literal TIE-BROKEN branch.
+  - Arbitrarily small γ remains observationally degenerate.
+  - The L1 arithmetic is a separately stipulated completion.
+- **R19-19 referee: CONFIRMED WITH CORRECTIONS. Reading TAUTOLOGY-OR-CONFLICT.**
+  - **Confirmed:**
+    - the 32-dimensional classification and its full and spatial Ward images are exact;
+    - (S\*\*₀) locally and number-freely removes all six lowest-state cone rows wherever the Taylor jet exists;
+    - the bill falls to the charge block.
+  - **Why the reading is TAUTOLOGY-OR-CONFLICT:** the gravity zero is imposed rather than predicted.
+  - **Not closed:**
+    - universal remainder bounds;
+    - massless logs;
+    - nonlinear causality;
+    - exact Bianchi completion.
+  - **The pre-electroweak instability** remains conditional.
+- **R19-23 (are the Ward-violating rows physical?): worker reading PHYSICAL.**
+  - **The gauge group** of R9-9's graviton is the full linearized-diffeo group.
+  - **Lemma I:** E_g (B₁), T₂g (B₂) and face2 (A₂) are isolated irreps with no gauge directions. So μ_E, μ_T2, Ξ_Eg − Ξ_T2g and face2 − Ξ_T2g are exact invariant poles for any covariant response.
+  - **face1:** its pole is a Schur complement over the A₁ gauge directions. It differs from the row by 9–65%. The face1 payments in R18-13 and R19-12 are therefore conditional on the uncomputed A₁ block (P-R19-23a).
+  - **Shear rows are canonical TT pole masses.** They give 2 propagating branches with no vDVZ jump: the Lorentz-violating m₀ = 0 massive-gravity phase. This supplies the zero-temperature part of vR19-11's missing bridge.
+  - **Speed-row Ward violations** add a time-diffeo Goldstone π⁰ whose stability depends on the sample. This is a candidate new wall (P-R19-23b).
+
+  Referee running.

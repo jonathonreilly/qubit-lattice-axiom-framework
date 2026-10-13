@@ -1,90 +1,86 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T05:45:57.332674+00:00. Sole current checkpoint. Fixed deadline 2026-10-13T16:42:30Z.
-Latest human request: continue. No editable prompt changes, science merge,
-main push, audit verdict, physical-axiom change or other-chat messages.
+Updated 2026-10-13T06:22:13.937897+00:00. Sole current checkpoint; deadline2026-10-13T16:42:30Z.
+Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, branchphysics-loop/toe-corrected-dynamics-20261013, HEAD8c88ed444f104bfd482c5886d28d7b09f68c6c1b, child of regular9510.
+Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree, prior HEAD92470505a1f8c9f79a43147abffd8da1436c54ce. Primary untouched.
+Seven regular renewal PRs9499/9500/9502/9504/9506/9508/9510 remain open.
+No draft PR, science merge/main push/audit verdict/axiom/prompt change or other-chat message.
+Latest sync06:11:28: main516cb69d, instruction3a4b2c66;18procedure bytes unchanged,
+no changed/new/closed PRs since0526; external9509 remains distinct and unadopted.
 
-Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, branch physics-loop/toe-corrected-dynamics-20261013, HEAD 8c88ed444f104bfd482c5886d28d7b09f68c6c1b, child of regular9510.
-CW is deliberately DIRTY with 248 exact self-created untracked
-V1 install/cache files. Tracked tree/index remain unchanged. Partial manifest
-/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CORRECTED_DYNAMICS_PARTIAL_INSTALL_0550.json is authoritative. Preserve and move only that verified set
-before a separately reviewed V2 installation; no blanket reset or clean.
-Seven renewal regular PRs9499/9500/9502/9504/9506/9508/9510 remain open.
-Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree, prior HEAD a0be3117d0ee71e331e6dfc736c05bc7fc67e6af; primary untouched.
-Latest sync05:26:48: main516cb69d and instruction3a4b2c66 unchanged;
-18procedure bytes unchanged, no PR delta since0438; external9509 distinct.
+## Publication recovery and active execution
 
-## Publication failure and recovery
+V1 failure and its source33d614ce remain immutable. All248 exact self-created
+untracked partial files moved to R/corrected_dynamics_partial_v1_recovery_20261013T061234Z,
+verified before/after; CW clean06:12:35, tracked/index unchanged. See
+CORRECTED_DYNAMICS_PARTIAL_RECOVERY_COMPLETE.json. No reset/clean used.
 
-V1 R/corrected_dynamics_publication_preparation is immutable at freeze
-33d614ce (372members), source driver a3156a9c. Root review622bfbe3 and
-acceptance4971ea44 record actual complete new-source coverage. Three2380line
-proof cores retain earlier accepted identities. A static root replay passed
-after an isolated JSON tuple/list comparison repair; it did not test the
-old assembly-diff convention. Original failed and corrected replay logs remain.
+V2 Q=R/corrected_dynamics_publication_preparation_v2 freeze3165fc3a (581members)
+root reviewa62820bb and acceptance9143ac9d are complete. Exact driver749/a3156a9c
+and accepted2380 core lines unchanged. Changed helpers restore historical
+context-three original/canonical source diffs; publication full-context diffs
+remain distinct. Root static replay092cd2 exit0,0.420s; saved scratch regression
+reproduces V1 failure and three repaired runner successes, zero math predicates.
+276payload/278install/282planned-stage paths. No new full canonical-body or
+generated-runner manual-read claim; exact prior coverage and generation reused.
 
-Actual prepare at R/corrected_dynamics_publication_execution/
-20261013T053010_prepare_9c14ed338a5e failed at the FIRST canonical identity
-check with 'Complete accepted assembly diff differs'. Outer execution
-R/corrected_dynamics_publication_outer/20261013T053010Z_prepare failed exit1
-after108.501904s; complete logs preserved. Old accepted diff uses
-original/sourcebody -> canonical path with context3. New checker expected
-baseline -> candidate labels and full context. The proof files are unchanged.
-Zero mathematical predicates ran. No later runners, corruptions, graph-after,
-staging, verify, science commit or new PR occurred.
+Actual prepare started06:18:33 via run_corrected_dynamics_publication_v2.py,
+session42000; run corrected_dynamics_publication_execution/20261013T061833_prepare_e775cd083f27.
+Its result may finish while checkpointing. Inspect actual outer EXECUTION,
+PREPARED or failure logs before staging. Never infer success from this checkpoint.
+Root owns exact staging, verify, commit, push and regular PR+attachment.
+Live execution is excluded from this archive. Original failed run remains preserved.
 
-observable_correlations_recovery now builds separate immutable
-R/corrected_dynamics_publication_preparation_v2. It may run scratch-root
-identity checks only; root owns CW cleanup/installation/caches/PR. Review
-every changed program/pin/projection and full failure repair record before
-execution. Do not retry V1 or edit its frozen source.
+## Accepted sources and open scientific checks
 
-## Accepted and continuing science
+Prepared-energy source assembly frozen32238b64/309members, root review301dc365
+and acceptance7a113128. Four notes preserve2923 accepted core lines; all401
+new wrapper and624 new-program lines checked. Root identity replay032ef6
+exit0,0.261s. No mathematical predicates. Build publication driver only after
+the corrected-dynamics parent PR/head exists; canonical parent hashes remain
+8e01914f/42f5cc24/0da8c652. Its own historical diffs use baseline/proposed,
+unlike the old corrected source; reconstruct each exact producer convention.
 
-Higher-energy750/d5a218cd and complete source comparison614/04711a12 plus
-precisions are root-accepted. Cross acceptance8f63e806 verifies49members;
-full reads b71f14/660aa7/951de0. The shifted general estimate does not
-literally recover the old constant; uniform bounded variation is required
-for fixed-resource convergence. Both original sources remain unchanged.
+All-time separate768/2322eec9 frozenf776e193 (23members) fully root-read
+a9e3a3/b8ee44/bb8c8e; review4174191c/acceptance272b8d8f. Conditional fixed
+preparation and fixed-probe correlations hold uniformly over arbitrary free
+times in the actual energy representation; FREE energy-law TV and higher
+moment consequences have explicit hypotheses. Smooth static defect O(c).
+Actual critical-time physical trace, moving-state probe, narrow-packet TV
+and high-branch counterexamples are retained. No general physical trace or
+instantaneous perturbed-energy TV inference. Existing energy mechanism is
+canonical e8b34ef4; no novelty claim about that coordinate construction.
 
-Observable687/e2e62b81 is fully root-read ca2c99/e5fe8b/04da0b and accepted
-cda4aefc (85members). Cross327/61baf1f1 plus scope addendum107/ddfcadb5 fully
-read a0c38d with omitted transition recovereda4c253; acceptance986dd552
-verifies48members. O1-O15 stand. A literal finite physical spin hull also
-requires compact support; H^r regularity and evenness alone do not imply it.
-Recovery author comparison is source-exposed, not new independent proof.
-Varying-state critical-time and stronger-topology counterexamples remain.
+New sealed root255/1ba2b386 proposes ongoing bounded finite-even-CAR drive
+comparison by integrated static defects. Root199/673064db proposes global
+Schwartz finite-order expansion; root207/13f6980c proposes polynomial local
+coefficients and a right inverse preserving fixed compact spatial support.
+If checked, actual calibrated inputs approach a fixed continuum protocol at
+arbitrary finite order without changing native free dynamics. These are still
+proposals: do not promote them from this checkpoint. Original sources/seals
+and exposure histories are archived; no formal analytic or retained audit.
 
-Root301/04f9c834 and root251/2b267b8c remain independent-review-pending
-all-time/fixed-normal-state candidates. The exact energy-coordinate mechanism
-already exists in ENERGY_ADAPTED_REFINEMENT/e8b34ef4; reconciliation is in
-ALL_TIME_ENERGY_TRANSPORT_SOURCE_RECONCILIATION.md. Do not claim mechanism
-novelty or change physical placement. prepared_pulse_independent derives the
-new question from older accepted sources with these new root outputs excluded.
-Wait for R/ALL_TIME_PREPARED_COMPARISON_INDEPENDENT.md and its final freeze
-before exposure or review. No draft finding has been adopted.
-
-spatial_recovery_final now assembles four source-only prepared-energy notes
-from accepted preparation534, G/endpoint585, nonautonomous774/cross577 and
-higher-energy750/cross614. R/prepared_energy_source_assembly is active and
-excluded from checkpoint. No publication driver requested yet; no new math
-rewrite may be silently substituted. Finite histories/observable notes deferred.
-
-All workers retain selected model/effort. Same-family independent derivations
-and source-exposed checks are not model-diverse/formal analytic/retained
-audit evidence. Current763082a6 remains open_gate; intended3D and creator
-coverage remain open. Prior source identities/evidence remain in STATE/MAP.
+Active agents: energy_cell_expansion_fresh derives neutral global expansion
+from old canonical568, excluding all new roots/other workers/failed partials.
+observable_correlations_recovery checks I1-I14 source-exposed.
+prepared_pulse_independent crosschecks all-time301/251 and driven255 against
+its frozen768, plus Schwartz199 if feasible. Wait for final freezes before
+opening new outputs. spatial_recovery_final's new expansion failed native
+compaction twice (7a19ef97 and b6bad131); no partial science adopted, no
+mathematical obstruction inferred. Failure record is archived.
 
 ## Recovery and next decisions
 
-Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/publication_failure_and_reviews_recovery_20261013T054557Z.tar.gz, manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/publication_failure_and_reviews_recovery_20261013T054557Z.tar.MANIFEST.json; 848 frozen/failure/partial members.
-MAP 8413 source/archive aliases verified; identity bookkeeping only.
-Active V2, preparation assembly and all-time worker outputs are excluded.
-Prior HANDOFF archived at history/20261013T054557Z_HANDOFF.md.gz.
+Bundle/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_coordinate_and_publication_recovery_20261013T062213Z.tar.gz; manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_coordinate_and_publication_recovery_20261013T062213Z.tar.MANIFEST.json; 1298 immutable members.
+MAP9713 source/archive aliases verified; bookkeeping only.
+Prior HANDOFF archived athistory/20261013T062213Z_HANDOFF.md.gz. Active workers and live
+publication run excluded. State preserves earlier results and failed routes.
+Current763082a6 remains open_gate; intended3D and creator coverage unresolved.
+Same-family separate proofs/source-exposed checks are not model-diverse or
+formal analytic/retained verification. No editable prompt files changed.
 
-Next: review V2 changes, preserve/move exact partial CW files, then actual
-prepare/verify and regular PR. Continue all-time and preparation routes.
-Lock refreshed05:27:28Z, expires07:27:28Z, refresh before07:07:28Z.
-Next checkpoint06:20 or milestone. At fixed deadline stop new research,
-preserve recovery, release lock and delete heartbeat
-toe-derivations-24-hour-campaign. Never extend the deadline.
+Next finish corrected-dynamics regular PR, then prepared-energy publication;
+review focused energy-coordinate corrections when frozen. Refresh checkpoint
+at milestone or06:50. Lock05:27:28 expires07:27:28; refresh before07:07:28.
+At fixed deadline stop new science, checkpoint, release lock and delete
+toe-derivations-24-hour-campaign. Never extend this deadline.

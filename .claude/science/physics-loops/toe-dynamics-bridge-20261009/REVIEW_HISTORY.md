@@ -47,3 +47,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T05:18:40.034023+00:00: Higher-energy750 accepted; comparison614 and recovered observable687 frozen for root review. New all-time root proposals explicitly composed with existing energy-adapted source, separate derivation underway. Corrected-dynamics publication preparation continues. No prompt/audit change.
 
 2026-10-13T05:45:57.332674+00:00: Canonical V1 publication failed at historical diff reconstruction, proof cores unchanged; exact partial install and full logs preserved, V2 source repair active. Higher-energy614 and observable687/327 accepted with stated precisions. No science PR or prompt/audit change.
+
+2026-10-13T06:22:13.937897+00:00: V2 source repair accepted and partial-V1 files safely preserved; canonical prepare active. Prepared-energy source309 and all-time768 root-accepted. New driven255/global199/local-inverse207 candidates under focused checks; no new retained or formal status.

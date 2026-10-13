@@ -13,14 +13,14 @@ base_revision: 8c88ed444f104bfd482c5886d28d7b09f68c6c1b
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Review repaired V2 publication and safely replace only preserved self-created partial install; publish
-  regular milestone. In parallel review all-time fixed-preparation derivation and source-only prepared-energy assembly
-  when frozen.
+active_route: Finish V2 prepare/verify and regular PR; prepare accepted prepared-energy milestone on actual parent.
+  Check global/local energy-coordinate correction route while preserving fixed-preparation and varying-state distinctions.
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Seven regular renewal PRs. Corrected-dynamics V1 prepare failed at source-diff reconstruction; V2 repair
-  active. Higher-energy614 and observable687/327 checks now root-accepted with precise qualifications.
+milestone: Seven regular renewal PRs. V2 source repair and exact partial-V1 recovery completed; canonical prepare
+  active. All-time768 and prepared-energy assembly root-accepted. New driven/global/local-inverse proposals under
+  focused checks.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -30,17 +30,15 @@ independent_checks: Separate frozen derivations and source-exposed comparison fo
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: Child of9510 with exact preserved untracked V1 install; first canonical identity check failed.
-  No new PR created.
+active_pr_status: Corrected-dynamics V2 canonical prepare launched06:18:33, result must be checked. No new PR yet.
 active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-13T07:07:28.785481+00:00'
-next_action: Root-review V2 exact changes/scratch identity evidence, preserve and move exact partial files, then
-  actual prepare/verify/regular PR. Await all-time and prepared-energy freezes before opening. Next checkpoint06:20
-  or milestone.
+next_action: Inspect live V2 publication result, exact stage/verify/commit/regular PR+attachment. Refresh checkpoint
+  at milestone or06:50; lock before07:07. Do not inspect active independent drafts before freeze.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -65,9 +63,9 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-13T05:45:57.332674+00:00'
-latest_source_refresh: '2026-10-13T05:26:48.879752+00:00'
-latest_other_pr: No changed/new/closed PRs since0438; external9509/fa25be87 distinct and unadopted.
+checkpoint_utc: '2026-10-13T06:22:13.937897+00:00'
+latest_source_refresh: '2026-10-13T06:11:28.335074+00:00'
+latest_other_pr: No changed/new/closed PRs since0526; external9509/fa25be87 distinct and unadopted.
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
 current_mass_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9491
 current_mass_published_science_revision: e26e2de4fd64ee49d0745cbf02fd05355494b569
@@ -135,7 +133,7 @@ scoped_lean_status: 'Spatial8Ring/lowblock3Ring scope checked. Dispersion88a3598
   positivity/domains/dynamics not formalized. PowerJump837784b4 attempt02 compiled22.899s exit0,d6ee02: general
   ring jump, square commutator and exact2x2 omission countercontrol. Only standard propext/choice/quot axioms. Attempt01
   missing aggregate Tactic.olean preserved; no analytic/domain/BV verification.'
-previous_checkpoint_commit: a0be3117d0ee71e331e6dfc736c05bc7fc67e6af
+previous_checkpoint_commit: 92470505a1f8c9f79a43147abffd8da1436c54ce
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -148,8 +146,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/publication_failure_and_reviews_recovery_20261013T054557Z.tar.gz
-recovery_map_aliases: 8413
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_coordinate_and_publication_recovery_20261013T062213Z.tar.gz
+recovery_map_aliases: 9713
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -348,3 +346,33 @@ corrected_dynamics_publication_failure: '20261013T053010_prepare_9c14ed338a5e: o
   cores unchanged, zero mathematical predicates. No second/third runner, corruptions, graph-after, stage, verify,
   commit or PR. V2 worker repairs separate source package; V1 and exact partial install preserved.'
 corrected_dynamics_partial_install: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CORRECTED_DYNAMICS_PARTIAL_INSTALL_0550.json
+corrected_dynamics_v2_status: Freeze3165fc3a has581members. Root reviewa62820bb and acceptance9143ac9d. Complete
+  changed-source review and unchanged driver/core reuse documented. Root static replay092cd2 exit0,0.420s; old scratch
+  failure and three new runner successes reviewed, zero mathematical predicates.
+corrected_dynamics_partial_recovery: Exact248 self-created files moved after hash verification to corrected_dynamics_partial_v1_recovery_20261013T061234Z.
+  CW clean at06:12:35, before V2 launch; no tracked/index mutation or blanket cleanup.
+corrected_dynamics_active_execution: run_corrected_dynamics_publication_v2.py prepare, session42000, run corrected_dynamics_publication_execution/20261013T061833_prepare_e775cd083f27.
+  Inspect actual outer EXECUTION/PREPARED or failure before proceeding. Live run excluded from this archive.
+prepared_energy_assembly_status: Four source-only notes from2923 unchanged accepted core lines. Freeze32238b64 has309members;
+  root review301dc365/acceptance7a113128. Complete wrappers401/new programs624 reviewed; root identity replay032ef6
+  exit0,0.261s. Driver and canonical runtime pending actual corrected-dynamics parent PR/head.
+all_time_prepared_status: Separate768line2322eec9 frozenf776e193,23members; full root reads a9e3a3/b8ee44/bb8c8e.
+  Root review4174191c/acceptance272b8d8f. Actual energy embedding gives fixed-probe all-free-time correlations and
+  FREE energy-law TV for fixed finite preparation; smooth static defect O(c). Critical-time physical trace, moving-state
+  fixed-probe and varying-packet TV countercontrols preserved.
+energy_adapted_driven_status: Sealed root255/1ba2b386 extends exact energy-coordinate comparison to ongoing bounded
+  even finite-CAR L1 drives. Integrated static defects control propagators, finite probes and FREE energy TV. Under
+  source-exposed crosscheck; not yet checked result.
+energy_adapted_schwartz_status: Sealed root199/673064db proposes arbitrary finite-order global Schwartz Taylor remainder
+  using parameter-uniform central cutoff and contraction tails. Written after full independent768 exposure; not
+  independent. Crosscheck pending.
+energy_adapted_local_inverse_status: Sealed root207/13f6980c proposes polynomial differential coefficients from
+  exact angle cancellation and formal right inverse preserving fixed compact support. First/second coefficients
+  and norm-loss consistency stated. Calibrated actual lattice inputs target fixed continuum drives/probes to arbitrary
+  finite order, conditional on global remainder. Focused source-exposed reviewer and separately blinded expansion
+  worker active; not yet accepted.
+active_workers:
+  energy_cell_expansion_fresh: neutral independent global expansion; excludes all new roots and failed partial
+  observable_correlations_recovery: I1-I14 local-inverse source-exposed check
+  prepared_pulse_independent: all-time/ongoing-drive crosscheck, Schwartz addendum if feasible
+worker_compaction_failures: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CELL_EXPANSION_WORKER_COMPACTION_FAILURES_0620.json

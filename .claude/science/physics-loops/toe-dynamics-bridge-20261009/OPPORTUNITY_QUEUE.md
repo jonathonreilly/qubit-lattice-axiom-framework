@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Repair source-integrity publication and publish corrected kinetic/potential/moment milestone.
-2. Check fixed-preparation all-time physical correlations and total-variation energy laws, retaining the auxiliary-placement and fixed-target premises.
-3. Package accepted smooth preparation, graph applicability, BV dynamics and higher-energy endpoints.
-4. Develop bounded-drive energy-transport comparisons only after explicit coefficient-map and initial-state checks.
-5. Finite histories and finite-CAR observable milestone; creator coverage/intended3D remain open.
+1. Publish corrected-dynamics V2 after exact canonical checks.
+2. Check energy-adapted global expansion and local inverse calibration for fixed continuum drives and probes.
+3. Publish accepted smooth preparation, graph applicability, BV dynamics and higher-energy endpoints.
+4. Complete all-time fixed-preparation/ongoing-drive source comparison, preserving stronger-topology counterexamples.
+5. Finite histories/finite-CAR observable milestone and unresolved intended3D/creator coverage.
 
-Fixed deadline2026-10-13T16:42:30Z. No main push, science merge, audit verdict or axiom change.
+Deadline2026-10-13T16:42:30Z. No main push, science merge, audit verdict or physical-axiom change.

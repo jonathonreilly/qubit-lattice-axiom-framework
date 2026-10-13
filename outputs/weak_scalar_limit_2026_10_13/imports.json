@@ -1,0 +1,16 @@
+{
+  "candidate_assumptions": [
+    "Complete supplied local three-scalar Einstein action, kinetic metric and potential",
+    "Universal physical metric C_B times Einstein metric",
+    "Q(k)=Q0(1+k), fixed positive Q0,H_v,rho_unit,nu",
+    "Flat homogeneous expanding constraint with nonnegative physical fluid density",
+    "Bounded scaled states u=k^2 v, p_u=k w and bounded transverse coordinates/velocities",
+    "Sufficiently regular solution limit only for the conditional transverse equation",
+    "Local light weak-body exchange law only for the conditional Newton readout"
+  ],
+  "measured_inputs": [],
+  "fitted_parameters": [],
+  "independent_empirical_tests": [],
+  "repository_dependencies": [],
+  "scope": "Pointwise coefficient theorem uniform on fixed compact sets; no finite-k trajectory or quantum convergence."
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 15913,
- "node_count": 7051,
+ "edge_count": 15916,
+ "node_count": 7052,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14633,6 +14633,10 @@
   "mixed_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "modulated_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "a98c9250ef31",
+   "out_degree": 3
   },
   "modulus_three_complement_mixture_bounded_theorem_note_2026-10-10": {
    "deps_hash": "9ac295ff0640",

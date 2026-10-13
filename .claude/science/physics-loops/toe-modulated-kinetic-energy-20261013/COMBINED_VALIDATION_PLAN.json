@@ -1,0 +1,29 @@
+{
+  "combined_current_main_gate": false,
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "ROOT_REVIEWED_CURRENT_MAIN",
+      "--include-worktree",
+      "--json"
+    ]
+  ],
+  "executed": false,
+  "prerequisites": [
+    "Exact clean integrated current-main candidate and separate root acceptance",
+    "Candidate head/tree/current-main and procedure pins reviewed",
+    "Explicit generated-path allowance and root-owned recovery"
+  ],
+  "scope": "Separate future gate; no pipeline or strict lint executed here."
+}

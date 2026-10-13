@@ -1,0 +1,71 @@
+# Root modulated publication review
+
+Accepted for source integration at preparation freeze
+2a5dc972904e65d05119d2a9997203026d1cdd49f3bb896852e2f76c354cc999,
+driver99acf05a1e097c3ef0edb0f67881b0644a0dd6b7bb5506a96666129a95bf63ff.
+Actual base0ce6e5ba is regular kineticPR9516, branch
+physics-loop/toe-modulated-kinetic-energy-20261013. This permits the specific
+source integration and regular PR, not a merge or retained audit verdict.
+
+The exact accepted464 core422a92a8 is preserved. Its mathematical acceptance
+d73401de and prior complete root reads, including the complete renewed read
+while deriving the chirped extension, remain valid at unchanged identities.
+Both publication wrappers were read completely, as were their changes and
+the required correction. The slow-time integral is J, and the Poisson
+intensity is nu_omega J. The old erroneous wrapper remains archived. No
+formula in the accepted scientific core was changed. The time-window,
+carrier-gap, real-BV resources and initial-vacuum hypotheses remain explicit;
+no initial-state, chirped or multi-time conclusion is added by this wrapper.
+
+All complete prepare-driver changes against the already fully covered
+kinetic773 logic were read. Exact old/new source identities and the complete
+three-context-line diff were independently regenerated. The full current
+identity163 logic and read-only source checker were read, plus the one changed
+line of the reused combined-validation program. This supplies complete code
+argument coverage by exact unchanged-source reuse plus every change. Generated
+literal arrays were deterministically reconstructed, not described as a fresh
+manual read of every generated line. Historical source-authoring programs
+remain provenance; they were not rerun or newly audited here.
+
+The complete block prose, conformance, PR text, dependency records and graph
+proposal were read. Three real canonical parents bind four exact cores:
+general470 and mean301 share the general compact-control owner; corrected859
+and correlation335 have their own owners. These give exactly three direct
+scientific edges. M23 is a supplied-hypothesis implication; its real common
+energy/vacuum, control, commutator and one-particle bounds are not discharged
+by archived calibration or embedding context. Three such historical context
+records remain separate from graph edges and Git ancestry. No conditional
+parent is promoted to retained status.
+
+Root static reconstruction exited0 in0.205396 seconds with empty stderr.
+It verified228 frozen members and the exact229-file tree,175 original source
+members,135 original selected sources,187 live archive aliases/134 compressed
+objects, seven immediate closure extents,464 unchanged core lines, all
+wrapper/whole-note/repair diffs, four canonical maps and the exact165-path
+stage contract. The immutable package remained unchanged. Full records are
+MODULATED_KINETIC_PUBLICATION_ROOT_STATIC_VERIFICATION.json and
+modulated_kinetic_publication_root_static/. A generated root-checker draft
+mistakenly substituted the new driver hash into the old-driver slot; full diff
+review caught and repaired this before execution. That unused draft is kept.
+No failed or truncated read supplies mathematical verification.
+
+The current remote refresh at12:39:07 confirms main516cb69d and ai3a4b2c66,
+with18 governing procedure bytes unchanged. Only the campaign's own new9516
+appeared since the prior inventory. No external scientific change was adopted.
+The earlier missing top-level HANDOFF lookup was a read-path error only;
+the actual packet HANDOFF and every needed new argument were subsequently
+read completely. No science was changed by that lookup.
+
+The source driver prepares161 frozen payload files, one fresh identity-only
+cache, the citation manifest and two external root records. Root must inspect
+actual execution receipts, then explicitly stage the exact165-path list and
+run verification. Four byte-corruption controls test integrity only. An empty
+existing-ledger checked list would verify no mathematical claim. No broad
+whitespace or link exception is authorized. The citation manifest is the only
+existing tracked target. Combined-current-main validation, cumulative landing
+review and retained audit remain separate and unexecuted by this acceptance.
+
+No editable prompt, physical axiom, status ledger, audit verdict or other chat
+changed. N1/N5 remain pending for broader negative interpretations; the source
+claims no general impossibility outside its proved regime. No further repair
+is required before the specified source-integration execution.

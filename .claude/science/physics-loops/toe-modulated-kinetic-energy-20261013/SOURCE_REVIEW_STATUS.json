@@ -1,0 +1,30 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "0ce6e5ba7483d8ca14513b809009c7169c171a97",
+  "branch": "physics-loop/toe-modulated-kinetic-energy-20261013",
+  "disposition": "conditional_BV_modulated_marginal_law_with_required_wrapper_repair_and_exact_parent_bindings",
+  "fresh_full_final_core_manual_read": true,
+  "new_canonical_runtime_execution": "not_performed",
+  "new_independent_mathematical_review": false,
+  "new_publication_root_review": "pending",
+  "no_go_packet_pass": false,
+  "prepared_source_freeze_sha256": "c32a537caaa2be0dd08cb45c3a1f9b07f0e1956db116e73b78b214f2ee330b92",
+  "required_publication_copy_repair_applied": true,
+  "source_assembly_root_acceptance_sha256": "4c7e3bba0a760bf09c3de680c18d44823af60d3f2b3ee43c5286065dac2b8d1e",
+  "source_assembly_root_review_sha256": "754fa7b9913c75b32665db816a3c9b6673172d1b8c2471e16acf19effddc555f",
+  "source_review_coverage_verbatim": {
+    "actual_canonical_dependency_binding": "Pending actual kinetic PR",
+    "disposition": "Source archive verified; publication wrapper correction required. Exact accepted scientific core unchanged.",
+    "editable_prompt_files_changed": [],
+    "freeze_sha256": "c32a537caaa2be0dd08cb45c3a1f9b07f0e1956db116e73b78b214f2ee330b92",
+    "publication_execution_approved_by_this_receipt": false,
+    "publication_preparation_authorized": true,
+    "required_publication_repairs": [
+      "Slow-time paragraph: J is the amplitude-square integral; Poisson intensity is nu_omega J. Preserve original archive; change only publication copy with complete diff."
+    ],
+    "review_sha256": "754fa7b9913c75b32665db816a3c9b6673172d1b8c2471e16acf19effddc555f",
+    "utc": "2026-10-13T11:47:42.608922+00:00",
+    "verification_sha256": "c24f4f4419c9cd04971e8d8ff2d0917e7d84441b10e0caaf55373547b8a47e90"
+  }
+}

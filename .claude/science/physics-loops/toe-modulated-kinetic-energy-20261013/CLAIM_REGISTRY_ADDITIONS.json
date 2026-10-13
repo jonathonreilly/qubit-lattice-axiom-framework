@@ -1,0 +1,55 @@
+{
+  "archived_proof_import_relations": [],
+  "direct_edges": [
+    {
+      "from": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 3,
+    "nodes": 1
+  },
+  "history_only_relations": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/sources/run/ENERGY_ADAPTED_WEIGHTED_CALIBRATION_INDEPENDENT.md",
+      "direct_edge": false,
+      "role": "Historical context; M23 calibration estimates remain supplied hypotheses",
+      "sha256": "974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/sources/run/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+      "direct_edge": false,
+      "role": "Historical smooth-domain context; no separate direct import established here",
+      "sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/sources/canonical_snapshot/docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "direct_edge": false,
+      "role": "Historical real embedding context; M23 is explicitly conditional",
+      "sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88"
+    }
+  ],
+  "nodes": [
+    {
+      "claim_id": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+      ],
+      "key": "modulated",
+      "path": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/modulated_kinetic_identity_2026_10_13.py"
+    }
+  ],
+  "status": "proposal_only_no_graph_execution"
+}

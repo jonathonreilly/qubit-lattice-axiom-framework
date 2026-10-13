@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-13T12:09:38.299085+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "base": "0ce6e5ba7483d8ca14513b809009c7169c171a97",
+  "branch": "physics-loop/toe-modulated-kinetic-energy-20261013",
+  "parent_branch": "physics-loop/toe-kinetic-energy-20261013",
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9516",
+  "parent_regular_open_attached": true,
+  "commands": [
+    {
+      "label": "parent",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "b8e71b87f9dbb50bc0597481a9d2258f443b27e46a1309f025460fb50d268284",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "parent_branch",
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "170cec4a03e5ea950f610d4bd561ce6d68f29b8d06506d711f0adbc3906a88c6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "clean_before",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "switch",
+      "argv": [
+        "git",
+        "switch",
+        "-c",
+        "physics-loop/toe-modulated-kinetic-energy-20261013"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3c976d482550d5e3380eaf06009db74a5ded9d81650e7cc7e97b867cf3c1165b"
+    },
+    {
+      "label": "clean_after",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

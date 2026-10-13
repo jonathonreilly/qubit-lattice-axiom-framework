@@ -1,0 +1,14 @@
+--- original_wrapper_prefix
++++ normalization_corrected_wrapper_prefix
+@@ -52,8 +52,9 @@
+ family without a claimed W1 rate. When J converges, the laws converge to the
+ corresponding single limiting law; the stated zero-rate cases remain included.
+ 
+-For slow-time modulation A(t)=a(lambda^2 t), T=tau/lambda^2, the intensity
+-is integral_0^tau a(s)^2 ds. These are one-time marginal laws. No joint
++For slow-time modulation A(t)=a(lambda^2 t), T=tau/lambda^2,
++J=integral_0^tau a(s)^2 ds and the Poisson intensity is nu_omega J.
++These are one-time marginal laws. No joint
+ multi-time law, independent increments, inhomogeneous Poisson process,
+ trajectory convergence or repeated-measurement theorem is asserted.
+ 

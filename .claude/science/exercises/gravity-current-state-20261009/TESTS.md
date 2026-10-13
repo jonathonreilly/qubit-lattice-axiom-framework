@@ -6189,3 +6189,16 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - conditional on H-RB, the strain response is velocity × label, not p·v.
   - **Coverage:** the six-band and C₂-exchanged families are included.
   - **Still open:** altered or component-mixing generators (R17-8 running).
+- **R17-6 (Z₂ helicity-2 search): worker reading OPEN**, with subclass OBSTRUCTED results offered to the referee. The method was pre-stated in `agents/C5_R17-6_method.md`.
+  - **The representation obstruction is not general.**
+    - Proposition F: T₂ multiplicity equals the site group's fixed-vector count.
+    - N0914's slots carry A₁+E+T₂ at the zone corner.
+    - Proposition S: the shift action is the natural action conjugated by a staggered flip, so it only relocates the readout to R.
+    - Two-slot product labels carry T₂ at zero momentum.
+  - **Theorem G (Goldstone):** if the TT modes are Goldstone modes, there are at least 4 gapless branches.
+  - **Theorem Z (f-sum).** A vanishing TT f-sum with a finite static response forces either vector/scalar weight at zero energy or a pinch point. Z′ covers the divergent case. A k⁰ f-sum with finite response is not covered.
+  - **Lemma R:** equal-weight (CSS/RK) Z₂ states have no pinch points.
+  - **Best candidate.** It needs bound γ-charges at U ~ K, the same window as P-r16-7a. ED is infeasible (2³¹ states).
+  - **Prices:** P-r17-6a to P-r17-6d.
+
+  Referee running.

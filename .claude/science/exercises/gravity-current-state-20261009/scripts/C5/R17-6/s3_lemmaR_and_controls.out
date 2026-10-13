@@ -1,0 +1,11 @@
+(i) L=4: 384 slots, 192 Gauss rows, rank over F2 = 185
+    single slots in rowspace (frozen labels): 0
+    slot pairs tested: 73536; pairs in rowspace (correlated labels): 0
+    row weights: [np.uint64(6)]
+
+(ii) controls: chi_ab(k)/(1/J) for E readout, k = 1e-3 along z and along y, component xz
+   k || z         EH: chi_xz,xz = 0.000, rank(chi) = 2; elastic: chi_xz,xz = 1.000, rank = 6
+   k || y         EH: chi_xz,xz = 1.000, rank(chi) = 2; elastic: chi_xz,xz = 1.000, rank = 6
+   k || (1,1,0)   EH: chi_xz,xz = 0.500, rank(chi) = 2; elastic: chi_xz,xz = 1.000, rank = 6
+   EH: chi(k) -> P_TT(khat)/J, direction-dependent at k -> 0 (pinch point): branch (B) of Theorem Z.
+   elastic: chi = I/J regular; m1 = g qhat^2 on all 6 -> six linear branches: branch (A), partners.

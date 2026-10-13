@@ -1,0 +1,11 @@
+(i) shift-sign == staggered-sign change: 9216/9216 slot-rotation pairs agree; unit translations flip stag on every slot
+    vector Gauss row weight (N0914:95-97): 2 diagonal + 4 face = 6 (even) -> global flip F_all preserves the mod-2 sector
+(ii) minimum Goldstone branch count with two helicity-2 branches (C4 axis and C2' diagonal): 4
+     type-A part {}  type-B part {'E': 4}
+     type-A part {}  type-B part {'A2': 2, 'T2': 2}
+     type-A part {}  type-B part {'A1': 2, 'A2': 2, 'E': 2}
+     type-A part {}  type-B part {'A1': 4, 'A2': 4}
+     type-A part {'T2': 1}  type-B part {'A2': 2}
+     type-A part {'E': 1}  type-B part {'E': 2}
+     type-A part {'E': 1}  type-B part {'A1': 2, 'A2': 2}
+     type-A part {'E': 2}  type-B part {}

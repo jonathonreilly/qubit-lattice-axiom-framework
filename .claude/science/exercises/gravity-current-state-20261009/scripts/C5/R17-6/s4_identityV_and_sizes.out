@@ -1,0 +1,3 @@
+(i) Identity V on 20 random configs, L=6, all k = 2 pi m/6 along z: max |lhs - rhs| = 1.36e-13
+(ii) L=2: slots 48, Gauss rows 24, rank_F2 17, zero-syndrome sector dim 2^31 = 2.15e+09
+(ii) L=3: slots 162, Gauss rows 81, rank_F2 78, zero-syndrome sector dim 2^84 = 1.93e+25

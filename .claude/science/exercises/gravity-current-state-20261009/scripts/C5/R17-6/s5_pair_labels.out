@@ -1,0 +1,11 @@
+87 nearest slot pairs (|d| <= 1) mod translations in 10 O-orbits
+  orbit size  3  example d0@(np.int64(0), np.int64(0), np.int64(0)) -- d1@(np.int64(0), np.int64(0), np.int64(0)) (2d=(np.int64(0), np.int64(0), np.int64(0)))  Gamma content {'A1': 1, 'E': 1}
+  orbit size 24  example d0@(np.int64(0), np.int64(0), np.int64(0)) -- f(0, 1)@(np.int64(-1), np.int64(-1), np.int64(0)) (2d=(np.int64(-1), np.int64(-1), np.int64(0)))  Gamma content {'A1': 1, 'A2': 1, 'E': 2, 'T1': 3, 'T2': 3}
+  orbit size 12  example d0@(np.int64(0), np.int64(0), np.int64(0)) -- f(1, 2)@(np.int64(0), np.int64(-1), np.int64(-1)) (2d=(np.int64(0), np.int64(-1), np.int64(-1)))  Gamma content {'A1': 1, 'E': 1, 'T1': 1, 'T2': 2}
+  orbit size 12  example f(0, 1)@(np.int64(-1), np.int64(1), np.int64(0)) -- f(1, 2)@(np.int64(0), np.int64(1), np.int64(1)) (2d=(np.int64(1), np.int64(0), np.int64(1)))  Gamma content {'A1': 1, 'E': 1, 'T1': 1, 'T2': 2}
+  orbit size  6  example d0@(np.int64(0), np.int64(-2), np.int64(0)) -- d2@(np.int64(0), np.int64(0), np.int64(0)) (2d=(np.int64(0), np.int64(2), np.int64(0)))  Gamma content {'A1': 1, 'E': 1, 'T2': 1}
+  orbit size  6  example d0@(np.int64(0), np.int64(-2), np.int64(0)) -- d0@(np.int64(0), np.int64(0), np.int64(0)) (2d=(np.int64(0), np.int64(2), np.int64(0)))  Gamma content {'A1': 1, 'A2': 1, 'E': 2}
+  orbit size 12  example d0@(np.int64(-2), np.int64(0), np.int64(0)) -- d1@(np.int64(0), np.int64(0), np.int64(0)) (2d=(np.int64(2), np.int64(0), np.int64(0)))  Gamma content {'A1': 1, 'A2': 1, 'E': 2, 'T1': 1, 'T2': 1}
+  orbit size  6  example f(0, 1)@(np.int64(-1), np.int64(1), np.int64(0)) -- f(0, 1)@(np.int64(1), np.int64(1), np.int64(0)) (2d=(np.int64(2), np.int64(0), np.int64(0)))  Gamma content {'A1': 1, 'A2': 1, 'E': 2}
+  orbit size  3  example f(0, 1)@(np.int64(1), np.int64(1), np.int64(-2)) -- f(0, 1)@(np.int64(1), np.int64(1), np.int64(0)) (2d=(np.int64(0), np.int64(0), np.int64(2)))  Gamma content {'A1': 1, 'E': 1}
+  orbit size  3  example d0@(np.int64(-2), np.int64(0), np.int64(0)) -- d0@(np.int64(0), np.int64(0), np.int64(0)) (2d=(np.int64(2), np.int64(0), np.int64(0)))  Gamma content {'A1': 1, 'E': 1}

@@ -1,0 +1,49 @@
+(c) max |D(G delta) + M0(delta)| over 200 random integer patterns = 0.0e+00
+
+N=2 box 4 fixed slot ((1, 1, 1), 0): Optimization terminated successfully. (HiGHS Status 7: Optimal)
+  weight=8  G m = 0 mod N: True  extent=[3 1 3]
+  pattern: [((0, 1, 1), (0, 2), 1), ((0, 1, 2), (2, 2), 1), ((0, 1, 2), (0, 2), 1), ((1, 1, 1), (0, 0), 1), ((1, 1, 1), (0, 2), 1), ((1, 1, 2), (0, 2), 1), ((1, 1, 3), (0, 0), 1), ((2, 1, 2), (2, 2), 1)]
+  integer G m (as 0..N-1 lift): {((0, 1, 1), 2): 2, ((0, 1, 1), 0): 2, ((2, 1, 2), 2): -2, ((1, 1, 3), 0): -2}
+  M0(as-is lift) = [[2, 0, 4], [0, 0, 0], [4, 0, 2]]
+  realizable lifts: 256 ; integer-invariant (G delta=0): 0 ; M0=0: 24 ; M0=M1=0: 0 ; min sum|M0| = 0
+  a lift attaining min |M0|: [((0, 2), 1), ((2, 2), 1), ((0, 2), 1), ((0, 0), 1), ((0, 2), -1), ((0, 2), -1), ((0, 0), -1), ((2, 2), -1)]  M0 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+N=2 box 4 fixed slot ((1, 1, 1), 3): Optimization terminated successfully. (HiGHS Status 7: Optimal)
+  weight=6  G m = 0 mod N: True  extent=[2 2 2]
+  pattern: [((1, 1, 0), (0, 1), 1), ((1, 1, 0), (1, 2), 1), ((1, 1, 0), (0, 2), 1), ((1, 1, 1), (0, 1), 1), ((1, 2, 0), (0, 2), 1), ((2, 1, 0), (1, 2), 1)]
+  integer G m (as 0..N-1 lift): {((1, 1, 0), 1): 2, ((1, 1, 0), 0): 2, ((1, 1, 0), 2): 2, ((2, 1, 1), 1): -2, ((1, 2, 1), 0): -2, ((2, 2, 0), 2): -2}
+  M0(as-is lift) = [[0, 2, 2], [2, 0, 2], [2, 2, 0]]
+  realizable lifts: 64 ; integer-invariant (G delta=0): 0 ; M0=0: 8 ; M0=M1=0: 0 ; min sum|M0| = 0
+  a lift attaining min |M0|: [((0, 1), 1), ((1, 2), 1), ((0, 2), 1), ((0, 1), -1), ((0, 2), -1), ((1, 2), -1)]  M0 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+N=3 box 4 fixed slot ((1, 1, 1), 0): Optimization terminated successfully. (HiGHS Status 7: Optimal)
+  weight=10  G m = 0 mod N: True  extent=[3 1 3]
+  pattern: [((0, 1, 0), (0, 2), 2), ((0, 1, 1), (2, 2), 1), ((0, 1, 1), (0, 2), 1), ((1, 1, 0), (0, 0), 1), ((1, 1, 0), (0, 2), 1), ((1, 1, 1), (0, 0), 1), ((1, 1, 1), (2, 2), 1), ((1, 1, 1), (0, 2), 2), ((1, 1, 2), (0, 0), 1), ((2, 1, 1), (2, 2), 1)]
+  integer G m (as 0..N-1 lift): {((0, 1, 0), 2): 3, ((0, 1, 0), 0): 3, ((2, 1, 1), 2): -3, ((1, 1, 2), 0): -3}
+  M0(as-is lift) = [[3, 0, 6], [0, 0, 0], [6, 0, 3]]
+  realizable lifts: 1024 ; integer-invariant (G delta=0): 1 ; M0=0: 54 ; M0=M1=0: 2 ; min sum|M0| = 0
+  a lift attaining min |M0|: [((0, 2), 2), ((2, 2), 1), ((0, 2), 1), ((0, 0), 1), ((0, 2), -2), ((0, 0), 1), ((2, 2), 1), ((0, 2), -1), ((0, 0), -2), ((2, 2), -2)]  M0 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+N=3 box 4 fixed slot ((1, 1, 1), 3): Optimization terminated successfully. (HiGHS Status 7: Optimal)
+  weight=10  G m = 0 mod N: True  extent=[3 3 1]
+  pattern: [((0, 0, 1), (0, 1), 2), ((0, 1, 1), (1, 1), 1), ((0, 1, 1), (0, 1), 1), ((1, 0, 1), (0, 0), 1), ((1, 0, 1), (0, 1), 1), ((1, 1, 1), (0, 0), 1), ((1, 1, 1), (1, 1), 1), ((1, 1, 1), (0, 1), 2), ((1, 2, 1), (0, 0), 1), ((2, 1, 1), (1, 1), 1)]
+  integer G m (as 0..N-1 lift): {((0, 0, 1), 1): 3, ((0, 0, 1), 0): 3, ((2, 1, 1), 1): -3, ((1, 2, 1), 0): -3}
+  M0(as-is lift) = [[3, 6, 0], [6, 3, 0], [0, 0, 0]]
+  realizable lifts: 1024 ; integer-invariant (G delta=0): 1 ; M0=0: 54 ; M0=M1=0: 2 ; min sum|M0| = 0
+  a lift attaining min |M0|: [((0, 1), 2), ((1, 1), 1), ((0, 1), 1), ((0, 0), 1), ((0, 1), -2), ((0, 0), 1), ((1, 1), 1), ((0, 1), -1), ((0, 0), -2), ((1, 1), -2)]  M0 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+N=4 box 4 fixed slot ((1, 1, 1), 0): Optimization terminated successfully. (HiGHS Status 7: Optimal)
+  weight=8  G m = 0 mod N: True  extent=[3 1 3]
+  pattern: [((0, 1, 1), (0, 2), 2), ((0, 1, 2), (2, 2), 2), ((0, 1, 2), (0, 2), 2), ((1, 1, 1), (0, 0), 2), ((1, 1, 1), (0, 2), 2), ((1, 1, 2), (0, 2), 2), ((1, 1, 3), (0, 0), 2), ((2, 1, 2), (2, 2), 2)]
+  integer G m (as 0..N-1 lift): {((0, 1, 1), 2): 4, ((0, 1, 1), 0): 4, ((2, 1, 2), 2): -4, ((1, 1, 3), 0): -4}
+  M0(as-is lift) = [[4, 0, 8], [0, 0, 0], [8, 0, 4]]
+  realizable lifts: 256 ; integer-invariant (G delta=0): 0 ; M0=0: 24 ; M0=M1=0: 0 ; min sum|M0| = 0
+  a lift attaining min |M0|: [((0, 2), 2), ((2, 2), 2), ((0, 2), 2), ((0, 0), 2), ((0, 2), -2), ((0, 2), -2), ((0, 0), -2), ((2, 2), -2)]  M0 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+N=4 box 4 fixed slot ((1, 1, 1), 3): Optimization terminated successfully. (HiGHS Status 7: Optimal)
+  weight=6  G m = 0 mod N: True  extent=[2 2 2]
+  pattern: [((1, 1, 1), (0, 1), 2), ((1, 1, 1), (1, 2), 2), ((1, 1, 1), (0, 2), 2), ((1, 1, 2), (0, 1), 2), ((1, 2, 1), (0, 2), 2), ((2, 1, 1), (1, 2), 2)]
+  integer G m (as 0..N-1 lift): {((1, 1, 1), 1): 4, ((1, 1, 1), 0): 4, ((1, 1, 1), 2): 4, ((2, 1, 2), 1): -4, ((1, 2, 2), 0): -4, ((2, 2, 1), 2): -4}
+  M0(as-is lift) = [[0, 4, 4], [4, 0, 4], [4, 4, 0]]
+  realizable lifts: 64 ; integer-invariant (G delta=0): 0 ; M0=0: 8 ; M0=M1=0: 0 ; min sum|M0| = 0
+  a lift attaining min |M0|: [((0, 1), 2), ((1, 2), 2), ((0, 2), 2), ((0, 1), -2), ((0, 2), -2), ((1, 2), -2)]  M0 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]

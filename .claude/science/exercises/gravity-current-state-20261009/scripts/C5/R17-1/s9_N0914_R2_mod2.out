@@ -1,0 +1,7 @@
+R2_xx at doubled (4, 4, 4): weight 10, max|coef| 4, l1 24, integer G R2 = 0: True ; mod-2 weight 0 ; mod-2 types []
+R2_xy at doubled (5, 5, 4): weight 15, max|coef| 2, l1 20, integer G R2 = 0: True ; mod-2 weight 10 ; mod-2 types [(0, 1), (0, 2), (1, 2)]
+    mod-2 pattern == cube(x) xor cube(x - e_k): True ; G(mod-2 pattern) = 0 mod 2: True ; M0 of 0/1 lift (xy,yz,xz counts) = [2, 4, 4]
+R2_yz at doubled (4, 5, 5): weight 15, max|coef| 2, l1 20, integer G R2 = 0: True ; mod-2 weight 10 ; mod-2 types [(0, 1), (0, 2), (1, 2)]
+    mod-2 pattern == cube(x) xor cube(x - e_k): True ; G(mod-2 pattern) = 0 mod 2: True ; M0 of 0/1 lift (xy,yz,xz counts) = [4, 2, 4]
+R2_xz at doubled (5, 4, 5): weight 15, max|coef| 2, l1 20, integer G R2 = 0: True ; mod-2 weight 10 ; mod-2 types [(0, 1), (0, 2), (1, 2)]
+    mod-2 pattern == cube(x) xor cube(x - e_k): True ; G(mod-2 pattern) = 0 mod 2: True ; M0 of 0/1 lift (xy,yz,xz counts) = [4, 4, 2]

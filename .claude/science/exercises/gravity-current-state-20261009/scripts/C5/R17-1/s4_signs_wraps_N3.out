@@ -1,0 +1,34 @@
+(1) face 3-plet characters by class (unsigned = Z2 permutation action; signed = tensor):
+   E    unsigned {3}   signed {3}
+   C3   unsigned {0}   signed {0}
+   C2   unsigned {3}   signed {-1}
+   C4   unsigned {1}   signed {-1}
+   C2'  unsigned {1}   signed {1}
+   O-group irreps (E,8C3,3C2,6C4,6C2'): A1 (1,1,1,1,1) E (2,-1,2,0,0) T2 (3,0,-1,-1,1) -> unsigned = A1+E, signed = T2
+(1) shift implementation of C4_z: sign-flipped slot types [(0, 1), (1, 2)] ; flipped-slot parity per Gauss row (x,y,z) = [0, 0, 0]
+(1) shift implementation of C3_111: sign-flipped slot types [] ; flipped-slot parity per Gauss row (x,y,z) = [0, 0, 0]
+(1) shift implementation of C2_z: sign-flipped slot types [(1, 2), (0, 2)] ; flipped-slot parity per Gauss row (x,y,z) = [0, 0, 0]
+(2) 3x3x2, h=0: exact formula with the Lz=2 top/bottom coincidence vs s3 ED
+   k/pi=[0.67 0.   0.  ] p0 exact(Lz=2) = 0.0000 ; ED = 0.0
+   k/pi=[0.67 0.   0.  ] p1 exact(Lz=2) = 4.0000 ; ED = 4.0
+   k/pi=[0.67 0.67 0.  ] p0 exact(Lz=2) = 2.0000 ; ED = 2.0
+   k/pi=[0.67 0.67 0.  ] p1 exact(Lz=2) = 4.0000 ; ED = 4.0
+   k/pi=[0. 0. 1.] p0 exact(Lz=2) = 0.0000 ; ED = 0.0
+   k/pi=[0. 0. 1.] p1 exact(Lz=2) = 0.0000 ; ED = 0.0
+   k/pi=[0.67 0.   1.  ] p0 exact(Lz=2) = 0.8521 ; ED = 0.8521
+   k/pi=[0.67 0.   1.  ] p1 exact(Lz=2) = 1.2308 ; ED = 1.2308
+(3) uniform labels: E[delta], Var[delta] for each N, m
+   N=2 m=1: E=0.000 Var=1.000 (m(N-m)=1)
+   N=3 m=1: E=0.000 Var=2.000 (m(N-m)=2)
+   N=3 m=2: E=0.000 Var=2.000 (m(N-m)=2)
+   N=4 m=1: E=0.000 Var=3.000 (m(N-m)=3)
+   N=4 m=2: E=0.000 Var=4.000 (m(N-m)=4)
+   N=4 m=3: E=0.000 Var=3.000 (m(N-m)=3)
+   N=8 m=1: E=0.000 Var=7.000 (m(N-m)=7)
+   N=8 m=2: E=0.000 Var=12.000 (m(N-m)=12)
+   N=8 m=3: E=0.000 Var=15.000 (m(N-m)=15)
+   N=8 m=4: E=0.000 Var=16.000 (m(N-m)=16)
+   N=8 m=5: E=0.000 Var=15.000 (m(N-m)=15)
+   N=8 m=6: E=0.000 Var=12.000 (m(N-m)=12)
+   N=8 m=7: E=0.000 Var=7.000 (m(N-m)=7)
+   N=3 minimal pattern (w=10; one of its lifts is integer-invariant, s1), k=0, uniform labels: <|chat.delta|^2> label probe = 3.4501 (formula sum c^2 m(N-m) = 3.4501) ; clock probe = 0.5899 ; min over lifts = 0.00e+00

@@ -1,0 +1,8 @@
+proper rotations: 24
+(check) all 24 rotations of mu6 are F2-invariant: True
+(check) int10 integer-invariant lift found: True  entries: [-2, -1, 1]
+(check) lift6 G delta (integer): {((np.int64(1), np.int64(1), np.int64(0)), 1): 2, ((np.int64(2), np.int64(1), np.int64(0)), 1): -2, ((np.int64(1), np.int64(1), np.int64(0)), 0): 2, ((np.int64(1), np.int64(2), np.int64(0)), 0): -2, ((np.int64(1), np.int64(1), np.int64(0)), 2): 2, ((np.int64(1), np.int64(2), np.int64(0)), 2): -2, ((np.int64(1), np.int64(1), np.int64(1)), 1): -2, ((np.int64(2), np.int64(1), np.int64(0)), 2): -2, ((np.int64(1), np.int64(1), np.int64(1)), 0): -2, ((np.int64(2), np.int64(1), np.int64(1)), 1): 2, ((np.int64(1), np.int64(2), np.int64(1)), 0): 2, ((np.int64(2), np.int64(2), np.int64(0)), 2): 2}
+distinct rotated copies of mu6 (mod translation): 1
+mu8: all rotations F2-invariant: True ; distinct copies: 3
+(A') CSS mu8, E_g pol, k||x: m1(1e-3) = 4.0000e+00 ; m1/k^2 = 4.0000e+06 ; slopes [0. 0. 0. 0. 0.]
+(B') dipole hop mu8, E_g pol, k||x: m1(1e-3) = 4.0000e-06 ; m1/k^2 = 4.0000e+00 ; slopes [2.    2.    1.999 1.992 1.92 ]

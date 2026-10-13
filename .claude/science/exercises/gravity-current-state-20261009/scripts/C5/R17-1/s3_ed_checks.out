@@ -1,0 +1,55 @@
+(i) toric code 2x2x2: links 24, distinct plaquette flips 24, sector dim 16384
+  h=0.0 E0=-24.000000 gap=8.00000 | k=[0. 0. 0.] e=(1, 0, 0): m1=4.00000 chi=0.06250 | k=[0. 1. 0.] e=(1, 0, 0): m1=4.00000 chi=0.06250 | k=[0. 0. 1.] e=(1, 0, 0): m1=4.00000 chi=0.06250 | k=[1. 1. 0.] e=(0, 0, 1): m1=4.00000 chi=0.06250
+  h=0.2 E0=-24.120658 gap=7.37712 | k=[0. 0. 0.] e=(1, 0, 0): m1=3.99972 chi=0.06413 | k=[0. 1. 0.] e=(1, 0, 0): m1=3.97967 chi=0.06224 | k=[0. 0. 1.] e=(1, 0, 0): m1=3.97967 chi=0.06224 | k=[1. 1. 0.] e=(0, 0, 1): m1=3.95961 chi=0.06193
+  h=0.5 E0=-24.777998 gap=5.92981 | k=[0. 0. 0.] e=(1, 0, 0): m1=3.98933 chi=0.07386 | k=[0. 1. 0.] e=(1, 0, 0): m1=3.85983 chi=0.06101 | k=[0. 0. 1.] e=(1, 0, 0): m1=3.85983 chi=0.06101 | k=[1. 1. 0.] e=(0, 0, 1): m1=3.73033 chi=0.05885
+  (U(1) contrast, identity) circulation delta = +x(x) +y(x+ex) -x(x+ey) -y(x): M0 = 0 exactly, so its k=0 f-sum is 0.
+
+(ii-a) 2x2x2 duality (h/K=0.3): face-basis sector dim 128 ; lowest: [-9.61218213 -7.66715335 -6.13371047 -6.13371047 -6.13371047 -5.77124728]
+       TFIM Z2-even sector dim 128 ; lowest:   [-9.61218213 -7.66715335 -6.13371047 -6.13371047 -6.13371047 -5.77124728]
+
+(ii-b) cube model on 3x3x2 torus (18 cubes, 54 face slots; TFIM dim 262144)
+  h/K=0.0 E0/V=-1.000000 gap=2.00000
+     k/pi=[0.67 0.   0.  ] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0.67 0.   0.  ] p1 m1=4.0000 (h=0 exact 4.0000) chi=0.2500
+     k/pi=[0.67 0.67 0.  ] p0 m1=2.0000 (h=0 exact 1.0000) chi=0.1250
+     k/pi=[0.67 0.67 0.  ] p1 m1=4.0000 (h=0 exact 4.0000) chi=0.2500
+     k/pi=[0. 0. 1.] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0. 0. 1.] p1 m1=0.0000 (h=0 exact 4.0000) chi=0.0000
+     k/pi=[0.67 0.   1.  ] p0 m1=0.8521 (h=0 exact 0.8521) chi=0.0533
+     k/pi=[0.67 0.   1.  ] p1 m1=1.2308 (h=0 exact 4.0000) chi=0.0769
+  h/K=0.1 E0/V=-1.010526 gap=1.33636
+     k/pi=[0.67 0.   0.  ] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0.67 0.   0.  ] p1 m1=3.8459 (h=0 exact 4.0000) chi=0.2417
+     k/pi=[0.67 0.67 0.  ] p0 m1=1.9771 (h=0 exact 1.0000) chi=0.1226
+     k/pi=[0.67 0.67 0.  ] p1 m1=3.8298 (h=0 exact 4.0000) chi=0.2332
+     k/pi=[0. 0. 1.] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0. 0. 1.] p1 m1=0.0000 (h=0 exact 4.0000) chi=0.0000
+     k/pi=[0.67 0.   1.  ] p0 m1=0.8885 (h=0 exact 0.8521) chi=0.0605
+     k/pi=[0.67 0.   1.  ] p1 m1=1.1833 (h=0 exact 4.0000) chi=0.0708
+  h/K=0.2 E0/V=-1.050246 gap=0.48070
+     k/pi=[0.67 0.   0.  ] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0.67 0.   0.  ] p1 m1=3.3406 (h=0 exact 4.0000) chi=0.2380
+     k/pi=[0.67 0.67 0.  ] p0 m1=1.8312 (h=0 exact 1.0000) chi=0.1103
+     k/pi=[0.67 0.67 0.  ] p1 m1=3.1543 (h=0 exact 4.0000) chi=0.1799
+     k/pi=[0. 0. 1.] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0. 0. 1.] p1 m1=0.0000 (h=0 exact 4.0000) chi=0.0000
+     k/pi=[0.67 0.   1.  ] p0 m1=0.9172 (h=0 exact 0.8521) chi=0.0661
+     k/pi=[0.67 0.   1.  ] p1 m1=1.0279 (h=0 exact 4.0000) chi=0.0585
+  h/K=0.3 E0/V=-1.185306 gap=0.01430
+     k/pi=[0.67 0.   0.  ] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0.67 0.   0.  ] p1 m1=1.6526 (h=0 exact 4.0000) chi=0.1024
+     k/pi=[0.67 0.67 0.  ] p0 m1=1.1839 (h=0 exact 1.0000) chi=0.0602
+     k/pi=[0.67 0.67 0.  ] p1 m1=0.9614 (h=0 exact 4.0000) chi=0.0286
+     k/pi=[0. 0. 1.] p0 m1=0.0000 (h=0 exact 0.0000) chi=0.0000
+     k/pi=[0. 0. 1.] p1 m1=0.0000 (h=0 exact 4.0000) chi=0.0000
+     k/pi=[0.67 0.   1.  ] p0 m1=0.8091 (h=0 exact 0.8521) chi=0.0479
+     k/pi=[0.67 0.   1.  ] p1 m1=0.5085 (h=0 exact 4.0000) chi=0.0234
+
+(iii) dipole hop on 2x2x3 torus, one flipped cube: reachable dim 12 ; E0 = -6.000000 ; -E0/V = 0.500000
+  k/pi=[1. 0. 0.] p0: m1(ED)=0.000000e+00  identity sum_delta w|chat.delta|^2 = 0.000000e+00  chi=0.0000e+00
+  k/pi=[1. 0. 0.] p1: m1(ED)=1.156321e-48  identity sum_delta w|chat.delta|^2 = 0.000000e+00  chi=3.2048e-65
+  k/pi=[0.   0.   0.67] p0: m1(ED)=0.000000e+00  identity sum_delta w|chat.delta|^2 = 0.000000e+00  chi=0.0000e+00
+  k/pi=[0.   0.   0.67] p1: m1(ED)=1.000000e+00  identity sum_delta w|chat.delta|^2 = 1.000000e+00  chi=1.1111e-01
+  k/pi=[1.   1.   0.67] p0: m1(ED)=6.136364e-01  identity sum_delta w|chat.delta|^2 = 6.136364e-01  chi=5.0714e-03
+  k/pi=[1.   1.   0.67] p1: m1(ED)=6.666667e-01  identity sum_delta w|chat.delta|^2 = 6.666667e-01  chi=5.5096e-03
+python3 s3_ed_checks.py  14.27s user 2.90s system 99% cpu 17.230 total

@@ -1,0 +1,4 @@
+h/K=0.0 lowest (E, parity): [(np.float64(-18.0), 1), (np.float64(-16.0), -1), (np.float64(-16.0), -1), (np.float64(-16.0), -1), (np.float64(-16.0), -1), (np.float64(-16.0), -1)] ; even-sector gap = >= 2.0000
+h/K=0.1 lowest (E, parity): [(np.float64(-18.18946), 1), (np.float64(-16.8531), -1), (np.float64(-16.46416), -1), (np.float64(-16.34945), -1), (np.float64(-16.14802), -1), (np.float64(-16.05021), -1)] ; even-sector gap = >= 2.1393
+h/K=0.2 lowest (E, parity): [(np.float64(-18.90443), 1), (np.float64(-18.42373), -1), (np.float64(-17.47675), 1), (np.float64(-17.29125), -1), (np.float64(-17.29125), -1), (np.float64(-17.03095), -1)] ; even-sector gap = 1.42769
+h/K=0.3 lowest (E, parity): [(np.float64(-21.33551), 1), (np.float64(-21.32121), -1), (np.float64(-19.43036), 1), (np.float64(-18.88361), -1), (np.float64(-18.73862), -1), (np.float64(-18.53246), 1)] ; even-sector gap = 1.90515

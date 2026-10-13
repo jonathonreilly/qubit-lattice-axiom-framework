@@ -5920,3 +5920,20 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r173a (= P92), P-r173b, P-r173c, P-r173d.
 
   Referee running.
+- **R17-1 (literal qubits as Z₂ clocks): worker reading WINDOW.** It refutes EXTENDS in the class, which needs the referee.
+  - **Why the bound fails.** A mod-N law allows jumps with Gδ = Nγ. Their zeroth moment is M₀ = −N·D(γ):
+    - a zero dipole gives k²;
+    - a TT dipole gives k⁰;
+    - integer-invariant hops give k⁴ (R16-7).
+  - **Minimal hops.** Every Z₂-invariant hop of weight < 20 has no integer lift. N0914's own Hamiltonian at N = 2 is in the k⁰ class.
+  - **Explicit qubit models:**
+    - **k⁰ (cube moves).** Plus an electric term, this is exactly the 3D transverse-field Ising model on the dual lattice: a scalar Ising model, not a graviton.
+    - **k²** (neighbour hop; slope 2.000). Probably a helicity-0 sound mode.
+  - **Readout bridge.**
+    - On a Z₂ clock the face labels carry A₁+E, not T₂, under the natural action.
+    - Every invariant move is Hermitian, so the sine-curvature probe vanishes.
+  - **Control.** The 3D toric code gives a gapped k⁰ f-sum, a negative control only.
+  - **The question moves to:** does any mod-2 model have exactly two helicity-±2 gapless branches, gapped V/S channels and a metric readout?
+  - **Prices:** P-r17-1a to P-r17-1d.
+
+  Referee running.

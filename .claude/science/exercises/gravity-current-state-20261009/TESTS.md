@@ -5662,3 +5662,210 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-W7K, P-W7sf, P-W7v.
 
   Referee running.
+
+#### C5 Round 16 referee verdict, item 9 (recorded 00:10Z; codex gpt-5.6-sol, xhigh)
+
+- **R16-9 referee: NOT CONFIRMED (the CONFLICT). Reading OPEN** (`agents/C5_R16-9_referee_verdict.md`, full record `agents/C5_R16-9_referee.md`).
+  - **Confirmed:**
+    - Lemma R, as a continuous relaxation at fixed exact parameters;
+    - Lemma R_U's necessary inequalities;
+    - the fast-state identity;
+    - the tadpole monotonicity;
+    - one M cell, independently: μ_E = +1.255274e-3.
+  - **Why it is not a CONFLICT:**
+    - the scanned grids are not proved supersets;
+    - local optima are only upper bounds;
+    - the parameters were sampled, not exhausted;
+    - the thin U margin needs a certified enclosure.
+  - **Scope of the remaining claims:**
+    - The block split holds only for the truncated scalar-loop prescription.
+    - The 9/13 + CC bill is conditional bookkeeping, not an established minimal bill, and μ_T2 = 0 is coupling-specific.
+  - **Referee's summary:** credible search evidence for tension.
+
+### C5 Round 17 (pre-registered 00:10Z from S20 §7 (agents/C5_S20_synthesis.md), text fixed before any run; R17-1, R17-3, R17-4 launched now; R17-2 after R16-12's referee; R17-5 if time allows)
+
+
+**Rules (as rounds 2–16).**
+- Probes run on Opus 5.5 at xhigh. Every FAIL, EXCLUDED or no-go goes to codex gpt-5.6-sol (xhigh) before it is recorded.
+- Prices are named, never adopted.
+- Each probe greps the repository and packet for prior art first and counts each match once.
+- Hypotheses come before titles, and excluded outside realizations are listed. Numbers from memory are labelled RECALLED.
+- Every tail or decay clause names its subtraction before any run. A PRODUCED or PASS clause names the perturbative order of each exactness condition.
+- **Round-16 head rules (`TESTS:5039`):**
+  - every law states its whole-zone v_max;
+  - every frame-tied kernel states its self-force on a moving compact body;
+  - every Ward requirement says standard or deformed.
+- **New rules (from round-16 verdicts):**
+  - **Gauge fields too.** The v_max rule applies to photon, gluon and graviton symbols, not only matter (R16-10's v_max 7.35 photon).
+  - **Counting conventions.** Every tuning count states its counterterm basis: per species, per (spin, |q|) class, or q²-correlated (`vR16-2:13`).
+  - **Enforced or stipulated.** Every Λ mechanism states whether any number it needs is enforced (by a symmetry, constraint or theorem) or stipulated, and checks radiative stability (`vR16-6:26`).
+  - **Physical controls.** A "control" must measure the same physical observable in a model known to have the target phase. An operator identity is not a control (`vR16-7:13`).
+  - **Readout bridges.** Every finite-slot susceptibility or stiffness claim names its readout (observable) bridge (`vR16-7:5`; `AX:85-90`).
+  - **Forks.** Every dichotomy offered as exhaustive lists the alternatives it excludes and why (`vR16-8:9`).
+  - **Generic GR comparison.** Every initial-state or memory claim says whether the effect is generic GR behaviour or specific to the model (`vR16-4:13`).
+  - **Changed hypotheses.** Every expectation names which hypothesis of the governing prior no-go the new setting removes (§6).
+
+**Overlap check.**
+- R16-13 covers fermion/photon TT and shear vertices; no R17 item repeats it.
+- R16-14 covers set A's noise-fed PPN; no R17 item is on set A.
+- R16-11 covers quasi-local dressing; R17-1 covers only small-N clocks and readouts, which R16-11 leaves open (`C5_R16-11_report.md:288,290`).
+- R16-12 covers the (α)/(β) fork in class 𝒞. R17-2 covers the boost-sector escapes it leaves undecided (`C5_R16-12_report.md:263-276`) and the constraint-invariant observables.
+- R16-10 covers Lemma F; R17-4 covers only the three uncomputed bill rows and R16-9's missing enclosure.
+
+**Priority.**
+1. R17-1 (graviton, axiom-level) and R17-3 (Λ), in parallel.
+2. R17-4 (bill rows, owner Q3). Its probe (f) only if R16-13 does not return LIFTED.
+3. R17-2 (W7), preferably after R16-12's referee.
+4. R17-5 (W15) only if time allows.
+
+---
+
+**R17-1. Literal qubits: does the k⁴ obstruction survive on Z₂ and Z₃ clocks, where integer lifting fails?**
+
+- **Plain question.** R16-7 (refereed) proves that finite slots with an exact *integer* vector Gauss law cannot give Einstein–Hilbert TT stiffness through the electric f-sum. R16-11 (worker) extends this to every phase reachable by a quasi-local dressing. Both leave out mod-N clocks at small N. There "divergence-free" holds only mod N, so the moment lemma's integer lift fails. The axioms' one-site algebra is M₂(C), so a qubit metric slot in the Weyl presentation is a Z₂ clock. Is the qubit case inside the obstruction, or is it the window?
+- **Setting.**
+  - Z_N clock tensor model on Z³ (N0914's slot positions and stencil), N ∈ {2, 3, 4}.
+  - Exact mod-N vector Gauss law, plus any local Hamiltonian, bounded below and quasi-local.
+  - Probes: TT-component clock operators (state the operator used for E_TT at N = 2, e.g. the Hermitian part of the clock Z^{ε}) and gauge-invariant curvature probes (R16-11's B-inv form).
+  - A stated readout bridge for "metric susceptibility".
+  - Excluded: rotors; integer-law QLMs (R16-7, R16-11 cover them); non-local hops.
+- **Prior art (count once).** R16-7 and its verdict (`vR16-7:5-7`; `C5_R16-7_report.md:224-230`, its suggested §8 on mod-N); R16-11 Lemma S (`C5_R16-11_report.md:94-135,288`); N0914's moment lemma and lifting bound (`N0914:109-129,218-250`); R15-5 Lemma W's N > 36nM (`vR15-5:33`); X-cube/Z_N rank-2 fracton literature (comparator, RECALLED: gapped at large penalty).
+- **Hypothesis that changes from the prior no-go.** Integer lifting (removed). Kept: finite slots, exact law, quasi-locality.
+- **Probes.**
+  - (a) Enumerate the minimal gauge-invariant hops at N = 2, 3, 4 up to a stated support size. For each, compute its zeroth and first moments as integers of a minimal lift. Identify every invariant hop with no lift of vanishing moments.
+  - (b) Compute m₁(k) for the TT probe with those hops present. Is it still ≤ Ck⁴, or does a k² or k⁰ term appear? Give exact symbols.
+  - (c) If the bound fails, state what the failure buys. A k⁰ f-sum gives no exclusion and no production; say which. Check one explicit qubit model's static TT response by exact diagonalization on the largest feasible cluster, labelled with its size limit.
+  - (d) The readout bridge: which record-readable quantity is "the metric" at N = 2 (`AX:82-83`)?
+  - (e) Physical control: the 3D Z₂ vector gauge theory (toric code). The method must not report a gapless photon there (comparator, RECALLED: gapped deconfined phase).
+  - (f) Prices.
+- **FIXED readings.**
+  - **EXTENDS:** a refereed proof that m₁(E_TT) ≤ Ck⁴ (or the B-inv curvature bound) holds at N = 2 (and stated N) in the stated class, with the readout bridge named.
+  - **WINDOW:** an explicit qubit (N = 2) model in the class with an invariant hop giving m₁ ≥ ck² (or k⁰) for the TT probe, checked. This is a window, not a production claim.
+  - **OPEN:** otherwise.
+- **Expectation.** WINDOW at the f-sum level. At N = 2 every shift is its own inverse, so invariant patterns need not lift to moment-free integer patterns. But no gapless TT phase follows from that, and every known Z₂ tensor phase is gapped (comparator). If so, the obstruction moves from "the f-sum" to "whether any gapless Z₂ tensor phase exists", which no method here decides.
+
+---
+
+**R17-2. W7 in the boost bracket: does any escape outside class 𝒞 close degree 3, and is anything physical left?** *(Preferably launched after R16-12's referee. The readings are fixed now.)*
+
+- **Plain question.** R16-8 (refereed OPEN) gives the off-box tail as a 1/r² kernel with a 1/r⁴ curvature, inert on box states but not shown physical or harmless. R16-12 (worker OPEN) finds three things:
+  - the translation part is repaired by (β), with weak closure only;
+  - the boost bracket {H[x_b], H[1]} = D[e_b] forces a world-line Coulomb kernel X_T ∝ 1/(q·v), unbounded on q ⊥ v. So in class 𝒞 (homogeneous kernels bounded on the sphere) there is no quasi-local completion;
+  - by Lemma W, whether this reads as "(α) non-local" or "(β) quasi-local" depends on the canonical variables. Only constraint-invariant observables can decide.
+
+  Two questions remain: does an escape outside 𝒞 close the boost bracket with quasi-local dynamics, and does any constraint-invariant observable respond at a distance?
+- **Setting.**
+  - R12-1's completion with R16-8's Lemma-P placement and R16-12's Theorem T3 translation repair.
+  - The R14-1 S(1.4) or G(1.4) box (whole-zone v_max 0.99270 or 0.99386; R16-12's Lemma C needs |v| < 1).
+  - d = 3; linear in matter bilinears; through κ³, plus degree-4 shell terms where an escape needs them.
+  - Standard hypersurface algebra, unless the deformation is the escape under test, in which case it is stated (standard or deformed, per rule).
+  - Excluded: pairing; P90 matter; nonlinear gravity beyond the stated degree.
+- **Prior art (count once).**
+  - R16-8 and its verdict (`vR16-8:5-17`);
+  - R16-12 and its referee when back (`C5_R16-12_report.md:230-313`; Theorem B3, Lemma W, escapes 1–7 at `:263-276`);
+  - R12-1 and its verdict; R13-4's criterion (`vR13-4:18`);
+  - R16-5's grading lemma (`vR16-5:19`), which already excludes pair channels;
+  - SUMMARY §17's boost wall;
+  - RFW F2's first-jet obstruction;
+  - the hypersurface-deformation literature with field-dependent structure functions (comparator, RECALLED).
+- **Hypothesis that changes from the prior no-go.** Theorem B3 assumes homogeneous kernels bounded on the sphere and a fixed presentation. This item allows world-line (non-homogeneous) boost kernels, degree-4 shell terms, constrained auxiliaries (`vR16-8:7`) and canonical relocations.
+- **Probes.**
+  - (a) Escapes 2, 3 and 5 of `C5_R16-12_report.md:269-274`. For each, close {P_c, K_b} = δ_bc H and {K_a, K_b} = J at degree 3, or prove inconsistency in a stated class.
+  - (b) For any closed system, build at least one bounded observable invariant under the completed constraints, at distance r from a defect-carrying quantum. Test R13-4's criterion: an instantaneous response, and its r-dependence.
+  - (c) If a response exists, state its size at a = ℓ_P per edge quantum and for thermal populations at T_CMB and 1e16 GeV, with the subtraction named. R16-12's ≥ 1.41/a quantum energy is the input.
+  - (d) Settle Lemma W's question: is the non-locality removable by a canonical map on the physical (invariant) domain, or only relocated?
+  - (e) Prices.
+- **FIXED readings.**
+  - **LOCAL-EQUIVALENT:** a closed degree-3 completion with an invariant physical domain on which no bounded invariant observable responds outside the light cone, checked through the stated degree.
+  - **PHYSICALLY NON-LOCAL:** a refereed demonstration of a bounded constraint-invariant observable responding instantaneously through the tail, in a class containing escapes 2, 3 and 5, with its size.
+  - **OPEN:** otherwise.
+- **Expectation.** PHYSICALLY NON-LOCAL in principle and unobservable in practice, or OPEN. Theorem B3's kernel is the Coulomb field along the defect's world-line, which is the hallmark of a constraint carrying non-local charge (as in Coulomb-gauge QED). Its invariant content is likely real but tied to Planckian edge quanta, whose thermal occupation is 10^(−3.3e31) at T_CMB. The likeliest failure is that no invariant observable can be built at this degree, which would give OPEN.
+
+---
+
+**R17-3. Λ after R16-6: can anything in the four axioms force the gravitating zero, or is it necessarily a tuning?**
+
+- **Plain question.** R16-6 (refereed INCONCLUSIVE) shows that the only non-signalling route is GR with one constant: the law's late (T = 0) vacuum. Choosing that constant is Lemma PT's counterterm unless something forces it. Theorem NA suggests why a causal law cannot do better [S20 reading]: it cannot know the final vacuum before reaching it, so that energy must be a law constant. Three candidates might force it:
+  - (i) **Record sourcing.** "Only records are readable; a site with no record cannot be read" (`AX:82-83`). Read as a source bridge, gravity sees only recorded content, so the unrecorded ground state never weighs.
+  - (ii) **A global constraint** that fixes the constant from the whole history's average (sequestering-type; RECALLED).
+  - (iii) **The vacuum-shift symmetry** ρ_v → ρ_v + C, λ → λ − κC of R14-5 (`vR14-5:29-35`), extended to the creation law.
+
+  Does any of these force C = ρ_v,late without a tuned number, keep inflation, and stay causal?
+- **Setting.**
+  - R16-6's homogeneous equations (Theorem Z, `vR16-6:5-14`), plus the R15-1 linear k ≠ 0 sector for causality.
+  - Histories: SM crossovers, supercooling control, m²φ² inflation + reheating (65 e-folds), DESI-like CPL, as in R16-6.
+  - Radiative stability: one-loop SM shifts of ρ_v,late (RECALLED sizes).
+  - The source bridge for (i) is stated as a hypothesis on `AX:187`, not as axiom content. The owner's "records are mass" picture is a thought, not a rule (`owner-readings-are-thoughts`); it is tested here as a hypothesis.
+  - Excluded: active compensation (R15-1 covers it); readers in 𝓡⁺ (R15-4 covers them).
+- **Prior art (count once).** R16-6 and its verdict; R5-3 Lemma PT (`TESTS:2985-2988`); R14-5 vacuum-shift symmetry (`vR14-5:29-35`); R15-1 Lemma V and the (d-i)/(d-ii) bridge (`vR15-1:15`); R10-4 q-charge (`TESTS` R10-4 entry); R11-3 (grid zero-point w ≥ 0); the stadium/records-are-mass thread (owner thought; memory); sequestering (comparator, RECALLED).
+- **Hypothesis that changes from the prior no-go.** R16-6 stipulated C. Here C must follow from a stated law structure.
+- **Probes.**
+  - (a) Under (i), what gravitates during inflation? Is a homogeneous false vacuum "recorded"? If it is, why is the late vacuum not? If it is not, does inflation fail (R16-6 §4.2)?
+  - (b) Under (ii), state the global constraint, check that it fixes C = ρ_v,late, and test causality: does a late vacuum change alter early-time gravity?
+  - (c) Under (iii), find whether the symmetry plus any creation-law structure selects C, or leaves it a free datum (`vR14-5:35`).
+  - (d) Radiative stability of whichever mechanism survives (a)–(c).
+  - (e) Prices.
+- **FIXED readings.**
+  - **ENFORCED:** a stated law structure, in class (i), (ii) or (iii), that forces C = ρ_v,late with no independent number, keeps 60+ e-folds of inflation, has no R15-1-type signalling, and is radiatively stable, checked.
+  - **TUNING:** a refereed proof that in a stated class containing (i)–(iii), every law with g ≡ 0 and Λ̃_late = 0 needs an independent exact number, or an acausal (final-state) input.
+  - **OPEN:** otherwise.
+- **Expectation.** TUNING for (i) and (iii). Under (i), inflation needs the false vacuum to gravitate; any rule that lets it, but not the true vacuum, must single out the true vacuum's energy, which is the counterterm again. (ii) can force C only with a whole-history (final-state) input, which is the acausal price. The likeliest outcome is a refereed "tuning or acausal" theorem. This would turn owner Q1(b) into a plain choice between a tuning and a final-state law.
+
+---
+
+**R17-4. The cone bill's three uncomputed rows (off-axis graviton speeds, LV tadpole), and a certified answer for the shear row.**
+
+- **Plain question.** R16-9's bill is 9 + CC (per class) or 13 + CC (per species). The referee confirmed the arithmetic but called it conditional bookkeeping (`vR16-9:19`). Three of its rows were never computed:
+  - the two off-axis TT speed anisotropies (R16-3 zeroed only the axis speeds);
+  - the LV tadpole.
+
+  Do the zigzag laws that zero E_g and T₂g on the axis also zero the off-axis speeds? Or does each cost a further edge shape, with longer tails? Is the tadpole a separate tuning?
+- **Setting.**
+  - R13-8's P,T-even degree-2 TT basis (graviton speed + 3 anisotropies; `vR13-8:15-18`).
+  - R9-9's M and U vertices extended to q along a face diagonal and a body diagonal. State the extension and the assumed standard W1.
+  - Scalar edges in 𝒮: R16-3's checked zero law and R16-9's M-best/U-best laws, with v_max and raw tails stated. Masses m = 0.1 and 0.01. Supplied zero-point vacuum.
+  - Excluded: Dirac/photon/gluon vertices (R16-13); pairing; deformed W2 (R16-5).
+- **Prior art (count once).** R16-3 and its verdict (Z1, IBP identity Ξ = (1/32)⟨|V|²(5v_z² − 1)/ε⁵⟩, `C5_R16-3_report.md`); R16-9 and its verdict (`C5_R16-9_report.md:216-235`; Lemma R and R_U and the fast-state identity confirmed in continuous form, `vR16-9:5-11`); R13-8 (`vR13-8:11-22`); R9-9 Theorem T; R14-3 analyticity in m² (`vR14-3:18`).
+- **Hypothesis that changes from the prior no-go.** R16-3 restricted q to an axis. Here q is off-axis.
+- **Probes.**
+  - (a) The off-axis generalization of the IBP identity, giving the four degree-2 TT speed parameters in closed form.
+  - (b) Evaluate them on the axis-zero laws. Count how many further shape conditions are needed, and find one law with all four zero at a common light mass, or show that two conditions conflict in the family. A conflict needs a certified enclosure, since R16-9's scans did not meet that clause (`vR16-9:9`).
+  - (c) The LV tadpole row on the same laws: is it a separate condition, or fixed by the others?
+  - (d) The resulting v_max and raw tails.
+  - (e) The total in R13-8's rows.
+  - (f) *Only if R16-13 does not return LIFTED.* A certified answer to R16-9's shear row. Run an outward-rounded, interval-enclosed version of Lemma R_U's continuous relaxation, covering continuous b, lo, hi, s_min and m ∈ [0.01, 0.1], first for the U vertex, whose margin is thinner. It should either prove μ_E > 0 at every graviton-cone zero in 𝒮, or return a certified feasible point with μ_E ≤ 0 (`vR16-9:5-9`).
+- **FIXED readings.**
+  - **COUNTED-ROWS:** an explicit law with every TT speed parameter and the tadpole zero at a common light mass, checked, with the number of shape conditions. Or a proof that some rows vanish identically given the axis zeros.
+  - **For (f) separately: CERTIFIED-CONFLICT** (an enclosure proof, refereed) **or JOINT** (a certified law with Ξ_Eg = Ξ_T2g = μ_E = 0).
+  - **CONFLICT:** a demonstration, refereed if class-wide, that the off-axis rows cannot be zeroed together with the axis rows in 𝒮.
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - COUNTED-ROWS with two further shape conditions. That would confirm 9 + CC per class as a count, with tails growing beyond R16-3's 3.67e-5 at r = 128.
+  - The main alternative is a CONFLICT inside separable 𝒮, since off-axis zeros need more zigzag structure than a single-axis separable law may have. That would push the off-axis rows to non-separable laws.
+  - For (f): CERTIFIED-CONFLICT for M. The U vertex is likelier to yield a JOINT point if one exists, because its margin is ~10× thinner.
+
+---
+
+**R17-5. GW170817 on the grid, second attempt: a multi-band W2_pf completion.** *(Launch only if time allows.)*
+
+- **Plain question.** R16-5 (refereed OPEN) proves that single-band matter admits no nontrivial pair stress under the preferred-frame second-order identity. The referee exhibited a six-band signed-axis construction (Π_j = diag(v_j), v ∈ {±e_x, ±e_y, ±e_z}) that satisfies the zeroth moment with θ = 0 (`vR16-5:13`). Can it, or a C₂-exchanged band family, be completed into full W2_pf matter whose momentum generator carries physical (redshifting) momentum? If so, what is the gauge-invariant graviton–matter pole split?
+- **Setting.**
+  - Six-band and C₂-exchanged band families with proper cubic covariance; continuous quasi-local kernels; finite pair channels; projectable lapse.
+  - R9-9's N-type graviton.
+  - The redshift test needs a stated source/observable bridge (`vR16-5:19`).
+  - Excluded: single-band (covered), discontinuous symbols (P90), tower matter (P64).
+- **Prior art (count once).** R16-5 and its verdict (`vR16-5:5-25`); R13-5 (`vR13-5:7,13`); R16-8's relation of P-pf1 to W7 (`vR16-8:13`); RN L3 (projectable Hořava); RFW F1.
+- **Hypothesis that changes from the prior no-go.** Single-band (removed). Kept: continuity, quasi-locality, multiplier-generated shifts.
+- **Probes.**
+  - (a) Complete the six-band construction to a W2_pf-complete stress, or prove none exists in a stated multi-band class.
+  - (b) Does its P_j generate physical translations? Test whether a homogeneous strain shifts its one-particle energies (the redshift bridge, stated).
+  - (c) If (a) and (b) succeed, compute c_m − c_T for both polarizations, gauge-invariant, at a = ℓ_P.
+  - (d) Prices.
+- **FIXED readings.**
+  - **SPLIT-PRESENT / SPLIT-ABSENT:** as R16-5 (`TESTS:5145-5148`), with a W2_pf-complete multi-band stress that passes (b).
+  - **EXCLUDED-MB:** a refereed no-go for W2_pf-complete stresses with physical momentum in a stated multi-band class containing the six-band and C₂-exchanged families.
+  - **OPEN:** otherwise.
+- **Expectation.** EXCLUDED-MB or OPEN. The signed-axis Π_j has k-independent spectra, so it labels bands rather than carrying kinetic momentum. It is likely to fail (b) for the same reason T_pf forces g ≡ 0. A physical multi-band completion would be the first gauge-invariant GW170817 test on a grid and would change W15.
+
+---
+

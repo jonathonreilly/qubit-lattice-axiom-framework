@@ -5884,3 +5884,23 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **New price:** P-r16-14a (completion N). Owner choice: N, or the mean-field alternative, which conflicts with AX:82-83.
 
   Referee running.
+
+#### C5 Round 16 referee verdicts, items 10–12 (recorded 00:19Z; codex gpt-5.6-sol, xhigh)
+
+- **R16-10 referee: CONFIRMED WITH CORRECTIONS. Reading: Dirac REFUTED-ZERO under the literal registered class; scalar OPEN; COUNTED not met.**
+  - **Theorem L is confirmed** for the named box-exact families with integrable valleys. It gives a finite, path-independent (m, λ) → (0, 0) limit with K_0 = −1/3 and K_½ = 2/3, and no divergent IR log. λ = 0 is understood as a boundary value, and vanishing corrections such as m² log m are not excluded.
+  - **The Dirac zero.** The stiffened R8-5 photon gives a checked Dirac zero near G = 3.1264. If admissibility also requires a whole-zone subluminal photon, that witness is excluded and Dirac is OPEN.
+  - **The two-condition SM construction** is a checked upper bound, not a minimality theorem.
+- **R16-11 referee: CONFIRMED WITH CORRECTIONS. Reading TRANSFERS.**
+  - **The statement.** Take a volume-uniform quasi-local unitary that maps the chosen ground state into an exact Gauss sector, with the transformed H having finite K₂ (Σr¹³Φ < ∞ suffices for finite-range bounded-density H). Then the dressed, V^{−1/2}-normalized TT-electric m₁ ≤ 2S²K₂k⁴. The Bogoliubov bound and the ω ≤ Ck² corollary follow.
+  - **Overstated:**
+    - the curvature consequence. A local invariant probe with a nonzero vertex has an O(1) lower bound on its total susceptibility, but that is not identified with physical curvature, and it does not exclude an Einstein–Hilbert IR pole without a readout and spectral-isolation bridge;
+    - the approximate floor;
+    - the global 20-slot minimum. An 8³ MILP also gives 20.
+- **R16-12 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Confirmed:** T3 and J3 at leading order in the weak Killing sector, and the S/G Cherenkov avoidance.
+  - **B3 is narrowed.** Under the standard HDA, within the linear-bilinear bounded-angular ansatz, X_T ∝ 1/(q·v) is forced. This is only a presentation-dependent obstruction.
+    - The translation closure is weak or deformed.
+    - The full degree-3 and boost brackets are unbuilt.
+    - Strict subluminality is not necessary at the luminal boundary.
+    - There is no bounded Dirac observable with an instantaneous distant response.

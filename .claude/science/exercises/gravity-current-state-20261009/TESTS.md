@@ -8497,6 +8497,35 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **No lattice force and no signalling.**
   - **Price:** P-R19-27a (per-site Higgs-sector counterterms plus the LCP; no new numbers).
   - **Suggested:** R19-21's C-box-E enthalpy claims also depend on the counterterm scheme.
-  - **Archive fix (07:05Z):** `scripts/C5/R19-21/r1921_enthalpy.py` imported from the non-archived `../arch/R18-5`. It now uses `../R18-5`, and its rerun output is identical. (Reported by R19-27.)
+  - **Archive fix (07:02Z):** `scripts/C5/R19-21/r1921_enthalpy.py` imported from the non-archived `../arch/R18-5`. It now uses `../R18-5`, and its rerun output is identical. (Reported by R19-27.)
 
   Referee running.
+
+### C5 Round 19, item 28 (pre-registered 07:04Z, before launch)
+
+**R19-28. Set B with (Σ): if time is on the grid too (Z⁴), the charge block vanishes by symmetry (R19-24, worker). Do set B's refereed walls survive once (Σ) handles the gravitating source? What is set B's total bill?**
+- **Plain question.**
+  - R19-24 (worker; referee running) finds that with continuous time no symmetry fixes the particle speeds, so the charge block stays as counterterms.
+  - On hypercubic Z⁴ with a_t = a_s, the 90° time–space rotation zeroes every dimension-4 speed row at all orders. This is refereed prior art: T1, F2, O1.
+  - Set B was set aside earlier for other walls:
+    - R2-4, R2-5 and R2-1 (`TESTS:2728-2760`);
+    - RK2 (`TESTS:1663`);
+    - reflection positivity (RP) with box symbols, R10-2.
+  - With (Σ), the vacuum-gravity source rule, now available, are those walls about the gravitating source, which (Σ) would address? Or are they about matter, records or unitarity, which it would not?
+  - Is set B + (Σ) a package with zero tuned numbers, apart from the CC, which (S) handles?
+- **Setting.**
+  - Set B as registered earlier: Euclidean Z⁴ with a transfer matrix, records via RP, and box symbols per R10-2.
+  - Together with (Σ), W1-weight and a carrier (R19-20).
+  - Re-read each refereed set-B wall and classify it as source-side, matter-side, or record/unitarity-side.
+- **Prior art (count once):** set B's walls and verdicts (T1, F2, O1, RK2, R2-1, R2-4, R2-5, R10-2, R5-x as applicable), R19-20 and R19-24, and the C1-C4 lanes on Z⁴.
+- **Removed hypothesis:** set B judged without (Σ).
+- **Probes.**
+  - (a) A table of set-B walls, each classified, citing its verdict.
+  - (b) For each source-side wall, whether (Σ) removes it.
+  - (c) The total bill for set B + (Σ).
+  - (d) Prices, including the Lattice axiom change (time on the grid) and the RP and record issues.
+- **FIXED readings.**
+  - **B-PACKAGE:** set B + (Σ) has every refereed set-B wall either removed by (Σ) or priced, with a stated total bill lower than C-box's. Checked against the verdicts.
+  - **B-STILL-WALLED:** a set-B wall that (Σ) does not touch and no stated price passes (cite it).
+  - **OPEN:** otherwise.
+- **Expectation.** B-STILL-WALLED. Set B's main walls are RP and record ones (R10-2: box symbols lose RP; R2-x), which concern matter and records, not the gravitating source. (Σ) cannot touch them.

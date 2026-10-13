@@ -1,0 +1,7 @@
+content Ns=4 real scalars (vertex M) + ND=1 Dirac, m=0.01; bA=1.8300 wf=0.004654 r=0.5770
+knobs u=0.0300707473 v=0.0000000000 (1-u-v=0.9699292527) bf=1.4810876930  (nfev 27, 52.9s)
+scalar per real: Xi_T2g -1.385938e-03 Xi_Eg -7.431896e-04 mu_E +6.169827e-03
+fermion per Dirac: Xi_T2g +5.595836e-03 Xi_Eg +2.883629e-03 mu_E -2.468454e-02 mu_T2 +8.484412e-06
+TOTAL: Xi_T2g +5.209e-05 Xi_Eg -8.913e-05 mu_E -5.236e-06 | mu_T2 +8.484e-06
+scalar edge: max|sigma'| 1.000000000, valleys [], v_max(m) 0.999995
+fermion DG W_pi 0.1018, sampled v_max 0.999992 (Lemma V1 bound 1 since r<=1/sqrt3)

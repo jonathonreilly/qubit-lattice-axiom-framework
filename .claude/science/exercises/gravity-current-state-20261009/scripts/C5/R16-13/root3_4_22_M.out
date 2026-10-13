@@ -1,0 +1,5 @@
+content: Ns=4 real scalars on G(bA) [M vertex] + ND=22.5 Dirac on D1(bf, r); m=0.01  (nfev 35, 33.7s)
+knobs: bA=0.3000000002  bf=0.3915033552  r=0.5773000000   (r_max=1/sqrt3=0.5773503)
+scalar per real: Xi_T2g -3.024098e-03 Xi_Eg -1.204416e-03 mu_E +1.416323e-03
+fermion per Dirac: Xi_T2g +1.571292e-03 Xi_Eg -1.390544e-03 mu_E -2.898640e-04 mu_T2 +5.717120e-03  W_pi 0.6578
+TOTAL: Xi_T2g +2.326e-02 Xi_Eg -3.610e-02 mu_E -8.566e-04 | mu_T2 +1.286e-01

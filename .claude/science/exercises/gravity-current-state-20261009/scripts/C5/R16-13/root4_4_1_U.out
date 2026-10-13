@@ -1,0 +1,4 @@
+content: Ns=4 real scalars on G_w(bA, wA) [U] + ND=1 Dirac on D1(bf, r); m=0.01 (nfev 120, 213.6s)
+knobs: bA=0.4387723395 wA=2.7028203141 (frac 1.000000) bf=0.5607292895 r=0.5773000000
+scalar per real: -3.193871e-04 -1.543386e-04 +1.668101e-03 | fermion per Dirac: +2.566113e-03 -5.346042e-04 -6.632767e-03 mu_T2 +2.517e-03
+TOTAL: Xi_T2g +1.289e-03 Xi_Eg -1.152e-03 mu_E +3.964e-05 | mu_T2 +2.517e-03

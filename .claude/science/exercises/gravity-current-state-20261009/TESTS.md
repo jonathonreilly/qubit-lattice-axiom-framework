@@ -6085,3 +6085,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **EXCLUDED-MIX:** a refereed no-go covering mixing and linear field-dependent generators.
   - **OPEN:** otherwise.
 - **Expectation.** EXCLUDED-MIX. The zone-mean anomaly of a periodic symbol is topological (winding), and mixing cannot change a winding. That would leave only P64, P90, or giving up W2_pf.
+- **R16-13 (fermion loops): worker reading LIFTED on the letter of the clause; SM-like content OPEN.** A referee is required.
+  - **Theorem DT:** the Dirac cone shift, computed under two stipulations:
+    - a vielbein TT vertex with the Wilson mass not coupled;
+    - R9-2's strain flow for the Dirac sea.
+  - **Signs:** opposite to the scalar for Ξ_T2g, Ξ_Eg and μ_E.
+  - **Lemma V1:** s′² + 3W′² ≤ 1 implies v_max ≤ 1.
+  - **New row:** a Wilson-Dirac T₂g shear mass, so R16-9's "μ_T2 = 0" fails with fermions.
+  - **Joint zero:** E_g = T₂g = μ_E = 0 at m = 0.01 and 0.001.
+    - Content: 2 scalars on G(2.5647), 2 on G_w(1.7406, 0.7413), and 1 Dirac on D1(1.3133, r = 0.5731), all subluminal.
+    - Cost: 3 tunings.
+  - **Caveats:**
+    - μ_T2 ≠ 0 at the root;
+    - it needs two scalar edge families, and one Higgs edge stalls;
+    - SM counts (4 scalars + 22.5 Dirac) are not reached, because Dirac birefringence dominates;
+    - r sits 0.7% below the cap;
+    - there are no photon or gluon loops.
+  - **Prices:** P-R16-13a, b and c.
+
+  Referee running.

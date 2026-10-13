@@ -1,0 +1,7 @@
+8-comp control m=0.3 N=96 T2g: alpha_F +0.03588  beta_F -0.040080  Xi_F -0.004195   (R10-5: alpha_F +0.03588, Xi_F -0.004195)
+8-comp control m=0.3 N=160 T2g: alpha_F +0.03588  beta_F -0.040080  Xi_F -0.004195   (R10-5: alpha_F +0.03588, Xi_F -0.004195)
+closed form (PT, fermion alone) T2g: -0.004195   evaluator -0.004195
+closed form (PT, fermion alone) Eg: -0.013653   evaluator -0.013653
+NN scalar m=1 N=64: mu_E^s +1.9703886419e-03 (V3 +1.97038864e-3)  mu_T2^s -0.00e+00
+NN scalar m=1 N=96: mu_E^s +1.9703886419e-03 (V3 +1.97038864e-3)  mu_T2^s -0.00e+00
+elapsed 0.8s

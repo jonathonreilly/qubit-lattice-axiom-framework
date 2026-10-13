@@ -1,0 +1,6 @@
+VMone  at R17-9 VM root (N=48): TOTAL Xi_T2g +1.0976e-12 Xi_Eg +1.1668e-12 mu_E +1.3183e-11 mu_T2 +1.0533e-01 | 12 vectors [-0.0325  0.0355 -0.0019  0.    ]
+VMsym  at R17-9 VM root (N=48): TOTAL Xi_T2g +1.9708e-02 Xi_Eg +3.2121e-01 mu_E +1.3183e-11 mu_T2 +1.0533e-01 | 12 vectors [-0.0128  0.3567 -0.0019  0.    ]
+VW0    at R17-9 VM root (N=48): TOTAL Xi_T2g +1.9708e-02 Xi_Eg -3.9531e-02 mu_E +1.3183e-11 mu_T2 +1.0533e-01 | 12 vectors [-0.0128 -0.004  -0.0019  0.    ]
+VU     at R17-9 VM root (N=48): TOTAL Xi_T2g +7.7051e-02 Xi_Eg +7.2053e-02 mu_E +1.3183e-11 mu_T2 +1.0533e-01 | 12 vectors [ 0.0446  0.1076 -0.0019  0.    ]
+scalars [-0.00249098 -0.0015253   0.03778961  0.        ] 
+Dirac [ 0.03495217 -0.03399628 -0.0359017   0.10533358]

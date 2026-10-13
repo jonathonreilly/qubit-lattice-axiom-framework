@@ -1,0 +1,40 @@
+== gammaNN (box |k_i| <= b: c = 1)
+  box   T2g  max|S - S_req| (scale 1.29e-01): VU 1.33e-03, VMone 5.55e-17, VMsym 6.25e-17, VW0 6.25e-17, VW1 6.25e-17
+  box   Eg   max|S - S_req| (scale 9.31e-02): VU 1.14e-03, VMone 9.37e-04, VMsym 9.37e-04, VW0 7.63e-17, VW1 7.63e-17
+  zedge T2g  max|S - S_req| (scale 2.42e-02): VU 7.61e-01, VMone 3.59e-16, VMsym 3.59e-16, VW0 3.59e-16, VW1 3.59e-16
+  zedge Eg   max|S - S_req| (scale 1.12e-02): VU 7.54e-01, VMone 1.12e-04, VMsym 1.12e-04, VW0 5.52e-16, VW1 5.52e-16
+  any   T2g  max|S - S_req| (scale 5.33e-01): VU 8.00e-01, VMone 3.33e-16, VMsym 3.33e-16, VW0 3.33e-16, VW1 3.33e-16
+  any   Eg   max|S - S_req| (scale 2.91e-01): VU 1.26e+00, VMone 9.32e-01, VMsym 9.32e-01, VW0 4.16e-16, VW1 4.16e-16
+  rank-one test VU    : max rel |Lambda_T2g - Lambda_Eg| over 384 edge/zone points = 8.157e+02
+  rank-one test VMone : max rel |Lambda_T2g - Lambda_Eg| over 386 edge/zone points = 4.747e+02
+  rank-one test VW0   : max rel |Lambda_T2g - Lambda_Eg| over 399 edge/zone points = 9.799e-14
+== gammaG(1.4000) (box |k_i| <= b: c = 1)
+  box   T2g  max|S - S_req| (scale 1.32e-01): VU 5.55e-17, VMone 6.94e-17, VMsym 5.55e-17, VW0 5.55e-17, VW1 5.55e-17
+  box   Eg   max|S - S_req| (scale 9.58e-02): VU 5.03e-17, VMone 4.51e-17, VMsym 5.03e-17, VW0 5.03e-17, VW1 5.03e-17
+  zedge T2g  max|S - S_req| (scale 1.97e-02): VU 8.68e-01, VMone 4.44e-16, VMsym 5.14e-16, VW0 5.14e-16, VW1 5.14e-16
+  zedge Eg   max|S - S_req| (scale 1.15e-02): VU 8.62e-01, VMone 5.09e-16, VMsym 5.09e-16, VW0 5.09e-16, VW1 5.09e-16
+  any   T2g  max|S - S_req| (scale 1.13e+00): VU 1.32e+00, VMone 6.66e-16, VMsym 5.00e-16, VW0 5.00e-16, VW1 5.00e-16
+  any   Eg   max|S - S_req| (scale 7.80e-01): VU 1.74e+00, VMone 1.13e+00, VMsym 1.13e+00, VW0 6.11e-16, VW1 6.11e-16
+  rank-one test VU    : max rel |Lambda_T2g - Lambda_Eg| over 343 edge/zone points = 1.556e+02
+  rank-one test VMone : max rel |Lambda_T2g - Lambda_Eg| over 356 edge/zone points = 2.307e+02
+  rank-one test VW0   : max rel |Lambda_T2g - Lambda_Eg| over 328 edge/zone points = 1.235e-13
+== gammaGw(0.2513,1.0195) (box |k_i| <= b: c = 1)
+  box   T2g  max|S - S_req| (scale 1.39e-01): VU 5.55e-17, VMone 5.55e-17, VMsym 5.55e-17, VW0 5.55e-17, VW1 5.55e-17
+  box   Eg   max|S - S_req| (scale 9.60e-02): VU 5.55e-17, VMone 5.55e-17, VMsym 5.55e-17, VW0 5.55e-17, VW1 5.55e-17
+  zedge T2g  max|S - S_req| (scale 4.54e-02): VU 3.47e-01, VMone 1.84e-16, VMsym 1.67e-16, VW0 1.67e-16, VW1 1.67e-16
+  zedge Eg   max|S - S_req| (scale 2.44e-02): VU 3.24e-01, VMone 1.85e-16, VMsym 2.29e-16, VW0 2.29e-16, VW1 2.29e-16
+  any   T2g  max|S - S_req| (scale 2.16e-01): VU 3.83e-01, VMone 1.67e-16, VMsym 1.73e-16, VW0 1.73e-16, VW1 1.73e-16
+  any   Eg   max|S - S_req| (scale 1.20e-01): VU 5.66e-01, VMone 3.47e-01, VMsym 3.47e-01, VW0 1.73e-16, VW1 1.73e-16
+  rank-one test VU    : max rel |Lambda_T2g - Lambda_Eg| over 39 edge/zone points = 4.428e+01
+  rank-one test VMone : max rel |Lambda_T2g - Lambda_Eg| over 49 edge/zone points = 4.497e+02
+  rank-one test VW0   : max rel |Lambda_T2g - Lambda_Eg| over 59 edge/zone points = 4.609e-14
+== gammaGw(0.3000,0.5000) (box |k_i| <= b: c = 1)
+  box   T2g  max|S - S_req| (scale 1.29e-01): VU 6.94e-17, VMone 6.94e-17, VMsym 6.94e-17, VW0 6.94e-17, VW1 6.94e-17
+  box   Eg   max|S - S_req| (scale 8.99e-02): VU 6.94e-17, VMone 6.94e-17, VMsym 6.94e-17, VW0 6.94e-17, VW1 6.94e-17
+  zedge T2g  max|S - S_req| (scale 5.85e-02): VU 2.74e-01, VMone 1.22e-16, VMsym 1.22e-16, VW0 1.22e-16, VW1 1.22e-16
+  zedge Eg   max|S - S_req| (scale 3.29e-02): VU 2.45e-01, VMone 1.44e-16, VMsym 1.44e-16, VW0 1.44e-16, VW1 1.44e-16
+  any   T2g  max|S - S_req| (scale 1.85e-01): VU 3.56e-01, VMone 8.33e-17, VMsym 8.33e-17, VW0 8.33e-17, VW1 8.33e-17
+  any   Eg   max|S - S_req| (scale 1.10e-01): VU 4.19e-01, VMone 2.75e-01, VMsym 2.75e-01, VW0 1.11e-16, VW1 1.11e-16
+  rank-one test VU    : max rel |Lambda_T2g - Lambda_Eg| over 21 edge/zone points = 1.537e+01
+  rank-one test VMone : max rel |Lambda_T2g - Lambda_Eg| over 24 edge/zone points = 2.673e+01
+  rank-one test VW0   : max rel |Lambda_T2g - Lambda_Eg| over 21 edge/zone points = 8.054e-15

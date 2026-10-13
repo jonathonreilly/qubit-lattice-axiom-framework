@@ -6576,3 +6576,38 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
 ---
 
+
+#### C5 referee verdicts R17-9, R17-10, R17-11 and the R17-12 worker reading (recorded 02:20Z)
+
+- **R17-9 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN with the imported placement; SM-LIFTED only if VM and its G_w photon are admitted as extra stipulations.**
+  - **VU:** confirmed representative-invariant with the correct continuum Maxwell amplitude. It is absolutely summable and quasi-local, not finite-range. Its positive cone shifts come from E–B interference.
+  - **VM:** a genuine subluminal rank-3 SM-count zero exists after a small high-resolution retuning, leaving μ_T2 = 0.10619 unpaid.
+  - **No enclosure excludes a VU solution.**
+- **R17-10 referee: CONFIRMED WITH CORRECTIONS. Readings: K₆ OPEN, μ_E OPEN, JOINT not met.**
+  - **Theorem F is valid** on the conditioned fast relaxation face (u = 1, b ≥ 2.9935m, s_min ≥ 1.3768m). It persists locally around each realizable sharp-turn skeleton.
+  - **It does not meet CERTIFIED-CONFLICT,** because it covers neither the full relaxation nor any class-wide portion of 𝒮.
+  - **The μ_E remark** rules out only constant-multiplier pointwise certificates, not certificates built along trajectories.
+- **R17-11 referee: CONFIRMED WITH CORRECTIONS. Central result survives (CONSISTENT in the stipulated class).**
+  - **The class:** the smooth hypersurface-orthogonal E-sector with the spatial trace equation omitted, sites riding the normals, and λ = −κe₀.
+  - **The result:**
+    - Q_ν = ∇^μ(W h_μν) cancels W exactly.
+    - The Lemma-S parameter is zero on expanding intervals.
+    - The equations reduce to GR with residual V − e₀.
+    - There is no instantaneous gravitational channel at linear order.
+  - **Limits:** this is an on-shell, one-point covariant embedding, not derived from the axioms or from a completed action. The Planckian vacuum inertia is hidden in an exactly tracking sector, and moving-body and anisotropic responses lie outside the class.
+  - **Corrections:**
+    - the universal (d-ii) no-go fails;
+    - the one-row bill reduction is conditional bookkeeping: it replaces a trace counterterm with the stipulated P-vac′ bridge.
+- **R17-12 (vector placement): worker reading OPEN.** Substantively, neither placement survives.
+  - **VU fails W1 at O(q).**
+    - Lemma F: W1 plus a symmetric stress fixes the forward stress, F = ω v_i v_j δ.
+    - F1: VU's z-averaged B legs mix polarizations, giving a violation of 0.25–0.87 against a required scale of 0.01–0.06.
+  - **VM breaks C₂ covariance** (Lemma C, a defect of 15–29% at q = 0.3). Its E_g row also fails Lemma F. Correction to R17-9: VM is local but non-covariant.
+  - **What survives: the family VW** (per-leg σ′σ′ averaging, symmetric, trace kept).
+    - Lemma X: the T₂g q = 0 vertex is fixed and equals VM's.
+    - Lemma I: the O(q²) stencils are FREE law data.
+  - **Under VW0,** the VM root does not carry over, and no SM zero was found in sampled solves.
+  - **Prices:** P-R17-12a, b and c.
+
+  Referee running.
+- **R18-3 dropped (02:20Z).** Its premise was a certificate for the VU conflict, and VU is now excluded by W1 (R17-12, worker; referee running). Its part (a), V0 locality, is folded into R18-5 below.

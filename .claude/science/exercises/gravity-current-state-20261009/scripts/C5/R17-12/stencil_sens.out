@@ -1,0 +1,19 @@
+gammaGw(0.2513,1.0195)   a=-0.30 lam=-0.350  Xi_T2g -8.5802e-03  Xi_Eg -2.6753e-02  diff -1.8172e-02
+gammaGw(0.2513,1.0195)   a=-0.20 lam=-0.150  Xi_T2g -6.0745e-03  Xi_Eg -1.7947e-02  diff -1.1872e-02
+gammaGw(0.2513,1.0195)   a=-0.10 lam=+0.050  Xi_T2g -3.5689e-03  Xi_Eg -9.1415e-03  diff -5.5725e-03
+gammaGw(0.2513,1.0195)   a=+0.00 lam=+0.250  Xi_T2g -1.0634e-03  Xi_Eg -3.3636e-04  diff +7.2708e-04
+gammaGw(0.2513,1.0195)   a=+0.10 lam=+0.450  Xi_T2g +1.4420e-03  Xi_Eg +8.4685e-03  diff +7.0265e-03
+gammaGw(0.2513,1.0195)   a=+0.20 lam=+0.650  Xi_T2g +3.9474e-03  Xi_Eg +1.7273e-02  diff +1.3326e-02
+gammaGw(0.3000,1.0000)   a=-0.30 lam=-0.350  Xi_T2g -9.3294e-03  Xi_Eg -2.8193e-02  diff -1.8863e-02
+gammaGw(0.3000,1.0000)   a=-0.20 lam=-0.150  Xi_T2g -6.3860e-03  Xi_Eg -1.8313e-02  diff -1.1927e-02
+gammaGw(0.3000,1.0000)   a=-0.10 lam=+0.050  Xi_T2g -3.4428e-03  Xi_Eg -8.4344e-03  diff -4.9916e-03
+gammaGw(0.3000,1.0000)   a=+0.00 lam=+0.250  Xi_T2g -4.9961e-04  Xi_Eg +1.4442e-03  diff +1.9438e-03
+gammaGw(0.3000,1.0000)   a=+0.10 lam=+0.450  Xi_T2g +2.4435e-03  Xi_Eg +1.1322e-02  diff +8.8790e-03
+gammaGw(0.3000,1.0000)   a=+0.20 lam=+0.650  Xi_T2g +5.3865e-03  Xi_Eg +2.1200e-02  diff +1.5814e-02
+gammaG(1.4000)           a=-0.30 lam=-0.350  Xi_T2g -7.3978e-02  Xi_Eg -1.0455e-01  diff -3.0568e-02
+gammaG(1.4000)           a=-0.20 lam=-0.150  Xi_T2g -2.1285e-02  Xi_Eg -3.2648e-02  diff -1.1362e-02
+gammaG(1.4000)           a=-0.10 lam=+0.050  Xi_T2g +3.1406e-02  Xi_Eg +3.9249e-02  diff +7.8429e-03
+gammaG(1.4000)           a=+0.00 lam=+0.250  Xi_T2g +8.4096e-02  Xi_Eg +1.1114e-01  diff +2.7047e-02
+gammaG(1.4000)           a=+0.10 lam=+0.450  Xi_T2g +1.3678e-01  Xi_Eg +1.8303e-01  diff +4.6251e-02
+gammaG(1.4000)           a=+0.20 lam=+0.650  Xi_T2g +1.8947e-01  Xi_Eg +2.5492e-01  diff +6.5454e-02
+elapsed 14.5s

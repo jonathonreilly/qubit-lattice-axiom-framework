@@ -1,10 +1,10 @@
 # Current ranked opportunity queue
 
-1. Package checked all-BV work, graph energy bounds, prepared pulse and full-state/separate-free-energy protocol limits as the next regular milestone; exact source corrections and inherited assumptions remain explicit.
-2. Complete low-block root/addendum and finite Lean scope comparison after725-line independent proof; resolve same-time finite-c generation before any continuum-time claim.
-3. Complete phase-space root comparison after679-line independent proof; use configuration tightness and energy-tail criteria at exact scope.
-4. Independently derive energy-law and regular-insertion consequences; root W1 candidate remains unreviewed.
-5. Independently check actual smooth ordinary-cell high-band coupling, diagonal compression and ground estimates; retain low-dispersion growing-time limitation.
-6. After these results, identify actual channel/interaction/observable selection obligations from current repo science, without changing physical axioms or duplicating active PRs.
+1. Finish checked BV/graph/prepared/driven two-note milestone source assembly, exact review, guarded execution and regular PR. Keep new unreviewed consequences separate.
+2. Complete energy-law comparison, especially the new graph-protocol W2 and second-moment endpoint and conditional insertion resources.
+3. Complete actual smooth high-band comparison and its low-block dynamical substitution; preserve the genuine separate O(c) continuum coordinate term.
+4. Independently derive corrected-dispersion dynamics for smooth local controls; test cell graph regularity and bounded spectral windows, distinguish exact compressed finite-c potential from fixed continuum potential.
+5. Independently check energy-weighted trace interpolation and ordinary local-pulse spatial escape; combine only after scope checks.
+6. Then derive needed cell/potential counterterms or another controlled interacting continuum route, guided by current repo science, without altering physical axioms or duplicating open PR work.
 
-RegularPR9506 now published, not a reason to stop. N1/N5 remain pending; no negative-packet PASS, retained audit or main merge. Fixeddeadline2026-10-13T16:42:30Z. Original math authorized; scoped Lean evidence must state its exact coverage.
+Five regular renewal PRs exist; this is not a stop condition. Same-family checks and scoped Lean leaves are not retained audits. Original mathematics authorized. Fixeddeadline2026-10-13T16:42:30Z, never extend. N1/N5 incomplete, no global no-goPASS.

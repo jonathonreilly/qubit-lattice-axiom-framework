@@ -8171,3 +8171,35 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **HISTORY-CONFLICT:** a refereed demonstration that every stated version yields an excluded early-universe effect (e.g. a tachyonic instability faster than H, or erased tensor modes conflicting with data), or needs a ~1e-67 tuning.
   - **OPEN:** otherwise.
 - **Expectation.** HISTORY-CONFLICT for fixed (S\*\*) under the canonical-mass reading, since |m_g| ≫ H. A state-tracking variant could be HISTORY-SAFE if the frame field carries the drift (R19-17). The thermal μ_th is likely the dominant physical piece, and in a plasma it is a genuine, observable effect.
+
+### C5 Round 19, item 22 (pre-registered 06:14Z, before launch)
+
+**R19-22. Pricing the supplied graviton: how large a finite site space reproduces the CCR N-type graviton to observational accuracy?**
+- **Plain question.**
+  - Every refereed route to producing the graviton from qubits fails or stays open:
+    - integer-law k⁴ (R16-7, R16-11);
+    - the Z₂ window with no light-like branch (R17-1, R17-6, R18-1, R19-1, R19-7).
+  - The only working source is P-N1: supplied CCR (noncompact) tensor pairs, R15-5's exact N-type with ω = |k|. That violates "one M₂(C) per site" (AX:47).
+  - How expensive is P-N1, made finite? Truncate each CCR pair to a spin-S or clock-N representation, e.g. Holstein–Primakoff / large-S, or a Z_N clock with N → ∞.
+    - At what S or N does the graviton branch stay light-like, with z = 1 and the 1/r pull, to the accuracy GW170817 (|c_g − c| ≲ 1e-15) and Newtonian tests need, at the accessible energies?
+    - Is the error ∝ 1/S, or exponentially small?
+    - How many qubits per site does that mean (log₂(2S+1) per slot)?
+- **Setting.**
+  - R15-5's exact N-type theory with CCR replaced by spin-S (Holstein–Primakoff) or a Z_N clock with a large-N rotor limit.
+  - The R16-7 and R17-1 machinery: f-sum classes, compactness ladder.
+  - Linear response at k ≪ 1/a, with occupation ≪ S.
+- **Prior art (count once):**
+  - R15-5 and its verdict (the compactness ladder, Lemma L: qubit/qubit gives z = 3, rotor rungs give z = 2);
+  - R16-7, R16-11, R17-1 and R17-6 with their verdicts;
+  - the quantum-link / large-S approach to U(1) photons (RECALLED; e.g. Banerjee et al., quantum link models; Wiese).
+- **Removed hypothesis:** exactly CCR or exactly qubit, as opposed to finite S.
+- **Probes.**
+  - (a) The dispersion and static response of the spin-S N-type graviton at k ≪ 1/a: how the z = 1 branch is recovered as S → ∞, and its error scaling.
+  - (b) Whether the compactness ladder (k³ / k² rungs) moves with S: does the crossover scale k_c(S) → 0?
+  - (c) The S needed for GW170817 at a = ℓ_P for LIGO-band k, and for the 1/r pull.
+  - (d) Qubits per site, and the AX:47 price.
+- **FIXED readings.**
+  - **FINITE-PRICE:** a stated S (or N) and qubit count per site that reproduces the graviton to the stated bounds at the relevant k. Checked, with the scaling law.
+  - **NO-FINITE:** a demonstration (refereed) that no finite S reproduces z = 1 at any k, e.g. compactness forces k³ for every finite S.
+  - **OPEN:** otherwise.
+- **Expectation.** FINITE-PRICE. The truncation error is controlled by occupation/S, and the z = 1 branch holds for k ≫ k_c(S) ~ 1/(aS^p). Modest S (tens of qubits per site) suffices at LIGO wavelengths, because the relevant occupations are tiny. That would give an honest price for "supply the graviton": a larger site space, not an extra field.

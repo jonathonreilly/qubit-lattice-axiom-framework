@@ -7574,6 +7574,37 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **No conflict found** with (d-i), P88, R18-6 or R18-11. R18-7's a = 4 is replaced by a = 2, which keeps CP and β = γ = 1 and loses only the static a = 4 zero.
   - **The full bridge** is 4 clauses with 0 numbers: (S), (d-i), N_red and W1. W1 merges P145 and P-r193a.
   - **What W1 does not fix:** the noise's remaining gravitating size, which still depends on P-r192a/b/c and P146.
-  - **Archive fix (04:52Z).** `scripts/C5/R19-3/r193_lattice.py` imported from the non-archived `../recheck/R9-9`. It now points to `../R9-9`, and the rerun output is identical. (Reported by R19-6.)
+  - **Archive fix (04:43Z).** `scripts/C5/R19-3/r193_lattice.py` imported from the non-archived `../recheck/R9-9`. It now points to `../R9-9`, and the rerun output is identical. (Reported by R19-6.)
 
   Referee running.
+
+### C5 Round 19, item 10 (pre-registered 04:45Z, before launch)
+
+**R19-10. Is "the law's lowest state" well defined when the lattice creates sites? e₀ for a growing lattice.**
+- **Plain question.**
+  - (S) sets C = e₀[H]: the ground-state energy density of the law's Hamiltonian (R17-3, R17-7).
+  - In C-box-E, the arena where (S), (d-i), N_red and W1 form a consistent bridge (R18-6, R19-6), sites are created at rate 3H (P52).
+  - The Hilbert space and H then change with time. Is "the lowest state" defined, and is e₀ a time-independent intensive constant?
+  - Concrete issues:
+    - (i) Is e₀ = lim E₀/V the same for every volume, with no 1/V or boundary terms that would make Λ̃ drift as sites are added?
+    - (ii) Does site creation inject energy relative to the instantaneous ground state, i.e. excitations? The creation law must place new sites in some state (AX:37, AX:92-94).
+    - (iii) Does the answer depend on whether new sites are created in their local ground state or in a fixed product state?
+- **Setting.**
+  - Free lattice fields (scalar, Wilson-Dirac, photon) on growing boxes L → L + 1, plus a local site-insertion rule. Candidates: insert in a product state, or insert adiabatically.
+  - FRW-like slow growth (H ≪ 1/a).
+  - Measures:
+    - e₀(L) and its finite-size corrections;
+    - the energy above the instantaneous ground state after insertions, per unit volume per e-fold.
+  - Excluded: interacting matter; gravity backreaction beyond the (S) bookkeeping.
+- **Prior art (count once):** R17-3 and its verdict (Lemma U, Theorem T), R17-7 and its verdict (Lemma X: records cost energy above E₀), R17-11, R18-6, R12-2 (site creation forced at 3H), R13-3, P52/P53, and adiabatic theorems (RECALLED).
+- **Removed hypothesis:** a fixed Hilbert space.
+- **Probes.**
+  - (a) e₀(L) convergence and its corrections, for each field.
+  - (b) Excitation energy per inserted site for each insertion rule, and the resulting energy density injected per e-fold, against ρ_Λ at a = ℓ_P.
+  - (c) Whether any local insertion rule injects less than ρ_Λ per Hubble time, or the result is a new Λ-like or dust-like term.
+  - (d) Prices.
+- **FIXED readings.**
+  - **WELL-DEFINED:** e₀ is intensive with corrections that vanish, and some stated local insertion rule injects energy below ρ_Λ per Hubble time at a = ℓ_P. Checked.
+  - **INJECTS:** a refereed demonstration that every local insertion rule in a stated class injects energy above ρ_Λ per Hubble time.
+  - **OPEN:** otherwise.
+- **Expectation.** INJECTS for product-state insertion: each inserted site costs about the local zero-point gap, ~1/a. Adiabatic insertion is plausibly WELL-DEFINED, but it needs a rate slower than the gap, which a = ℓ_P, H ≪ 1/a satisfies. The question is whether adiabatic insertion is local.

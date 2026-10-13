@@ -159,3 +159,9 @@ Fixed deadline16:53Z and discovery cutoff16:38Z unchanged. Parent is the author.
 Retired/cancelled authors remain absent; focused independent reviews are active.
 Cooperative lock same holder expires14:20:33Z. PDG source retrieval initially
 failed for missing default CA; verified certifi route recovered the exact PDF.
+
+## Curvature milestone delivered 2026-10-13T14:09:25.322750+00:00
+
+Curvature/fluid PR9519 OPEN and attached at04105adaaba9064043cea489ae23303a408af9b5. Canonical6651/0, final251/0 source/gate mapping, full original15/final58 dispositions; source tree8f9201b7 matches actual validated copy2bcc41d5 againstmain583. Final committed UNITv5/cache and allthree mechanical gates passed. No merge or formal audit.
+
+Final evidence is in milestones/curvature_final_20261013. Direct continuous-history work continues; original thermal-matter timeouts and trace-control conditioning failures remain unresolved. Parent authorship and fixed16:53Z deadline unchanged. Latest prior pushed checkpoint6ae9dd866d0828e052f23a660caa6462ddfcdd04 stores912 exact members as three40MiB-or-smaller pieces after preserving a remote oversized-blob rejection.

@@ -1,0 +1,954 @@
+{
+  "at": "2026-10-13T14:09:25.322750+00:00",
+  "archive": {
+    "path": "RECOVERY_v1.tar.gz",
+    "sha256": "75a3f9afd3ec9b63246fffc42bc937835313cf3f818e065dfdc26d7f11681e94",
+    "bytes": 52941494
+  },
+  "members": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/CHECK_RESULTS_v1.json",
+      "member": "final_manifest_gate_review/CHECK_RESULTS_v1.json",
+      "sha256": "6159daef220e61f9825929164b2bb1b8fdae557bd65915b9246bdd29eb20ce80",
+      "bytes": 45066
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/EXECUTION_v1.json",
+      "member": "final_manifest_gate_review/EXECUTION_v1.json",
+      "sha256": "3923c190a0df41c80911cf73a7e03d29deb7e3a3cba2d2a52bf94c995c0f124c",
+      "bytes": 272
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/FINAL_DISPOSITIONS_v1.json",
+      "member": "final_manifest_gate_review/FINAL_DISPOSITIONS_v1.json",
+      "sha256": "85481abe927c24bc9a3a0933635956842061826cc95cd7a49020d52876ce60f3",
+      "bytes": 42304
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/FINAL_MANIFEST_GATE_REVIEW_v1.md",
+      "member": "final_manifest_gate_review/FINAL_MANIFEST_GATE_REVIEW_v1.md",
+      "sha256": "a8d16d52b9a94a71a4f6376b3720ab4bcd8e09440dfef486653a7001567182dc",
+      "bytes": 9299
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/FINAL_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/FINAL_RECEIPT_v1.json",
+      "sha256": "ded939816cba6ddddb1d746a9ff98f901797c9bc99264f2321822e35ca60c3ac",
+      "bytes": 64956
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/FINAL_SOURCE_COPY_MAPPING_v1.json",
+      "member": "final_manifest_gate_review/FINAL_SOURCE_COPY_MAPPING_v1.json",
+      "sha256": "def40b04b7a69f2a90ad6ca65276d6a96d184fb831efc882f91707c93a29644a",
+      "bytes": 43658
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/MANIFEST_DELTA_v1.json",
+      "member": "final_manifest_gate_review/MANIFEST_DELTA_v1.json",
+      "sha256": "fb78dd4a4bd364893d96dacbb9a93c507978aaa4f3bcde7a8dd8c83fa1274652",
+      "bytes": 450
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/ORIGINAL_MANIFEST_exact.json",
+      "member": "final_manifest_gate_review/ORIGINAL_MANIFEST_exact.json",
+      "sha256": "e36fa2d9275c8fbbb17b3174866232903ddb20645afdde8dc586b9ec6b90ab03",
+      "bytes": 1004650
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/READING_AND_CONTINUITY_v1.json",
+      "member": "final_manifest_gate_review/READING_AND_CONTINUITY_v1.json",
+      "sha256": "8d7a10506840c70fa2467c8ec8617f39363fbed2e1dd9609539cd199b700207a",
+      "bytes": 1162
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/READ_ONLY_GIT_COMMANDS_v1.json",
+      "member": "final_manifest_gate_review/READ_ONLY_GIT_COMMANDS_v1.json",
+      "sha256": "b952d61d95ce9feb3441a107a511390c9b97d31692be0bf3244365e7df14a676",
+      "bytes": 54125
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/SOURCE_FREEZE_v1.json",
+      "member": "final_manifest_gate_review/SOURCE_FREEZE_v1.json",
+      "sha256": "d69aac5cd9f67147798acb13e8805337855705d1f97866344df0e1d44084bf2f",
+      "bytes": 53956
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/check_manifest_gates_v1.py",
+      "member": "final_manifest_gate_review/check_manifest_gates_v1.py",
+      "sha256": "212eadaf52d28c14318c0a60ad9ca31b837228416f76a8cab67cb991ae52b084",
+      "bytes": 12549
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/finalize_receipt_v1.py",
+      "member": "final_manifest_gate_review/finalize_receipt_v1.py",
+      "sha256": "7d62483b1ab0750f82247c018b469945fc9a388170185fe55730a04c2ecba377",
+      "bytes": 4462
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/000_CANONICAL_EXECUTION_v2.json",
+      "member": "final_manifest_gate_review/snapshots/000_CANONICAL_EXECUTION_v2.json",
+      "sha256": "a957428daaf955785120476659f2bd805d0ab6df11d6cc2d7fb32ab37d365371",
+      "bytes": 1442
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/001_CLAIM_STATUS_CERTIFICATE.md",
+      "member": "final_manifest_gate_review/snapshots/001_CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "2a02758d9715b8ef8dc88a925de1d5fbd2e5ba5898da3c9b7a5be43764eda07c",
+      "bytes": 558
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/002_EXPLORATORY_RECOVERY_v1.tar.gz",
+      "member": "final_manifest_gate_review/snapshots/002_EXPLORATORY_RECOVERY_v1.tar.gz",
+      "sha256": "dc14b646a06fb8e5571b62c841de39800bd4407e3b251a62702e482107f2224d",
+      "bytes": 4596959
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/003_FINAL_REVIEW_RECOVERY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/003_FINAL_REVIEW_RECOVERY_v1.json",
+      "sha256": "62bb9152a528782f3232b0b5ade37e3ddb3cdd64f0d7aaf0087b62dfc1f89a02",
+      "bytes": 147900
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/004_FINAL_REVIEW_RECOVERY_v1.tar.gz",
+      "member": "final_manifest_gate_review/snapshots/004_FINAL_REVIEW_RECOVERY_v1.tar.gz",
+      "sha256": "6eef208faa0779c850db3556737d2a04a7dc984ebf1a63f3c3a1d8ef39dcc740",
+      "bytes": 20867324
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/005_GOAL.md",
+      "member": "final_manifest_gate_review/snapshots/005_GOAL.md",
+      "sha256": "13b6e67e49a0e3fd731c37dc7095551e68765330733cc1c3ccda12552a621ba2",
+      "bytes": 781
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/006_HANDOFF.md",
+      "member": "final_manifest_gate_review/snapshots/006_HANDOFF.md",
+      "sha256": "87e4a404a7871b8be299b08190a67c2439a4de2d67f6bf93ea6a3c9837d68ccc",
+      "bytes": 1100
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/007_PARENT_EXECUTION_REVIEW_v1.json",
+      "member": "final_manifest_gate_review/snapshots/007_PARENT_EXECUTION_REVIEW_v1.json",
+      "sha256": "1ac61e6ab29021251117d26b2611f8880d2dc7452e8e91975af03cc2c5cf2da3",
+      "bytes": 30814
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/008_PARENT_PRIOR_REVIEW_v1.json",
+      "member": "final_manifest_gate_review/snapshots/008_PARENT_PRIOR_REVIEW_v1.json",
+      "sha256": "ea589bf97df603153b482747852624e5ecc739ea7a2465cb5d9d9646e99fe3de",
+      "bytes": 66297
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/009_PARENT_SOURCE_REVIEW_v1.json",
+      "member": "final_manifest_gate_review/snapshots/009_PARENT_SOURCE_REVIEW_v1.json",
+      "sha256": "99e6fcd3f4b819d9fb01152cfc3306393aefc3d33d393c8a18a8151f72903b2f",
+      "bytes": 224949
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/010_PORT_FUNCTION_IDENTITY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/010_PORT_FUNCTION_IDENTITY_v1.json",
+      "sha256": "02b847a9f927ee6a6af6f4b95be87816bc1b9475df36d9d406cdc0166949ca0e",
+      "bytes": 1428
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/011_PORT_v1.diff.gz",
+      "member": "final_manifest_gate_review/snapshots/011_PORT_v1.diff.gz",
+      "sha256": "3eed212e74d1b8b3edcda6b4872dda3f0fa150faade01db2d14274d0d466d8fb",
+      "bytes": 1083
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/012_RECOVERY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/012_RECOVERY_v1.json",
+      "sha256": "b12ebd35e92ab4a746c8bb7f79e686bf369bddccf290b26950f0a69650e0269a",
+      "bytes": 210513
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/013_REVIEW_HISTORY.md",
+      "member": "final_manifest_gate_review/snapshots/013_REVIEW_HISTORY.md",
+      "sha256": "1cf70ac4ad19092b1748b7356f35b1e1cd5daacf6f3279cd4b3f289747e17336",
+      "bytes": 885
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/014_STATE.yaml",
+      "member": "final_manifest_gate_review/snapshots/014_STATE.yaml",
+      "sha256": "d988c3ba2a1784319a3dc39397ac999d004fb26ca9d2fa24a975a85527224de5",
+      "bytes": 797
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/015_TRACE_GATE.md",
+      "member": "final_manifest_gate_review/snapshots/015_TRACE_GATE.md",
+      "sha256": "869d9915cdd5735329a7b6b0ea6a6adc8b36c8f916cae9f87469230e35e9ba79",
+      "bytes": 475
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/016_CANONICAL_SOURCE_REVIEW_v1.md",
+      "member": "final_manifest_gate_review/snapshots/016_CANONICAL_SOURCE_REVIEW_v1.md",
+      "sha256": "7af72b546dc53eba0e72ce09fbb148d93a25fcf58b86f8e5e0de0522babd7c23",
+      "bytes": 14415
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/017_CONTEXT_AND_TOOLING_PINS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/017_CONTEXT_AND_TOOLING_PINS_v1.json",
+      "sha256": "6fd1cb6ca1d1ff91f1d955243c12ac39d9a3a9573deeae9e3941b4669d095f11",
+      "bytes": 8378
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/018_DISCOVERY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/018_DISCOVERY_v1.json",
+      "sha256": "71a7ce8dbd6a781b2c9e393e9b3786c6bcb132d8af56d6fb8902ef50a6c3eb60",
+      "bytes": 1016
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/019_EXECUTION_RECORD_v1.json",
+      "member": "final_manifest_gate_review/snapshots/019_EXECUTION_RECORD_v1.json",
+      "sha256": "d20cb7775b0e4a402ae570f906175bc32c05f73b14f46ba0c8cc9abeb18224b2",
+      "bytes": 1659
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/020_FINAL_SOURCE_COMMANDS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/020_FINAL_SOURCE_COMMANDS_v1.json",
+      "sha256": "4c29132ae42883f5fe314504e78d3f7d6ba0dbf2e2b1ef9177ee86def2ae12d1",
+      "bytes": 900
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/021_FINAL_SOURCE_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/021_FINAL_SOURCE_RECEIPT_v1.json",
+      "sha256": "a899592fa9792bf8aa65959ce631b6138b510be2a4d63491ee50c0c73f4bcb64",
+      "bytes": 194395
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/022_FOCUSED_PROOF_REFERENCE_v1.json",
+      "member": "final_manifest_gate_review/snapshots/022_FOCUSED_PROOF_REFERENCE_v1.json",
+      "sha256": "b6d4484a305d9139341f2c3a52aa77a98899015245558828a39582f1321d3584",
+      "bytes": 311
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/023_IO_CONTROLS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/023_IO_CONTROLS_v1.json",
+      "sha256": "d6edb25637ac8e65b94a509380e5213feba24499e37bde9cad26807f391a2761",
+      "bytes": 2388
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/024_READING_LEDGER_v1.json",
+      "member": "final_manifest_gate_review/snapshots/024_READING_LEDGER_v1.json",
+      "sha256": "ec2472fb1174d6b9f1ce48259144e8be969e4437068238839f87d7340114b41e",
+      "bytes": 2569
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/025_SOURCE_FREEZE_FINAL_v2.json",
+      "member": "final_manifest_gate_review/snapshots/025_SOURCE_FREEZE_FINAL_v2.json",
+      "sha256": "a44c73a9ddf99a4dc6b84e7016d0c229be9feb8ae68324188a7bd3d19651a9a4",
+      "bytes": 14066
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/026_SOURCE_FREEZE_v1.json",
+      "member": "final_manifest_gate_review/snapshots/026_SOURCE_FREEZE_v1.json",
+      "sha256": "6e39eda5ae20267ffb745e54c804f9a92016f77f706e93138fca394b4671e8f3",
+      "bytes": 11713
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/027_EXECUTION_CONFIRMATION_v1.md",
+      "member": "final_manifest_gate_review/snapshots/027_EXECUTION_CONFIRMATION_v1.md",
+      "sha256": "8b6ece685d9fcdbc7973ad64d7e30107e70a0d089a57b651d82bfb3a6f3b9fd1",
+      "bytes": 9750
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/028_FINAL_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/028_FINAL_RECEIPT_v1.json",
+      "sha256": "e94966beae490b1224b898ec8b81bb05c6b66495258dedc9b272b8ac654db02a",
+      "bytes": 62442
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/029_ORIGINAL_CONSTITUENT_DISPOSITIONS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/029_ORIGINAL_CONSTITUENT_DISPOSITIONS_v1.json",
+      "sha256": "18076613f95f3dcf0dfa055b8245f31b6597c39031f503e9c7cef6c17e922054",
+      "bytes": 11182
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/030_REVIEWER_FAILURE_HISTORY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/030_REVIEWER_FAILURE_HISTORY_v1.json",
+      "sha256": "2052436cbe4a569f681cd58a8cdbdb3aca74a760ef858d7f5d39489ee163f956",
+      "bytes": 1282
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/031_CHANGED_PR_COLLECTION_v1.json",
+      "member": "final_manifest_gate_review/snapshots/031_CHANGED_PR_COLLECTION_v1.json",
+      "sha256": "a920e8ed83547348e9e37791a38c427b2dd7c86f95f305668a141e533337af80",
+      "bytes": 970
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/032_CHANGED_PR_COLLECTION_v2.json",
+      "member": "final_manifest_gate_review/snapshots/032_CHANGED_PR_COLLECTION_v2.json",
+      "sha256": "50b868c6956cff4b092223a52c97a175982e3493f62832b3948ece5f8e552a22",
+      "bytes": 22912
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/033_FINAL_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/033_FINAL_RECEIPT_v1.json",
+      "sha256": "a04eef3784645e6876b4a871c0e027045b8af1b6f547241ed3ff6633d60aa3dc",
+      "bytes": 69256
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/034_FINAL_REMOTE_IDENTITY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/034_FINAL_REMOTE_IDENTITY_v1.json",
+      "sha256": "4540dde75c7a3307a29ae04491b024134bd60db9778e142640bf1e54aae69387",
+      "bytes": 7340
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/035_FINAL_VERIFICATION_v1.json",
+      "member": "final_manifest_gate_review/snapshots/035_FINAL_VERIFICATION_v1.json",
+      "sha256": "f3f53440d0bddbd4782ba93d230bd38566582b3203122416f85a0f2f86695175",
+      "bytes": 25055
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/036_INSTRUCTION_IDENTITIES_v1.json",
+      "member": "final_manifest_gate_review/snapshots/036_INSTRUCTION_IDENTITIES_v1.json",
+      "sha256": "944614f3dd1e8e6b5fffec1e1f22f5795926def389719836aa42fe0ebd08686d",
+      "bytes": 3460
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/037_MAIN_REF_FINAL_v1.json",
+      "member": "final_manifest_gate_review/snapshots/037_MAIN_REF_FINAL_v1.json",
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "bytes": 386
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/038_MAIN_REF_INITIAL_v1.json",
+      "member": "final_manifest_gate_review/snapshots/038_MAIN_REF_INITIAL_v1.json",
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "bytes": 386
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/039_MAIN_SEARCH_COMMANDS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/039_MAIN_SEARCH_COMMANDS_v1.json",
+      "sha256": "c08d29c04c987ef745370c1f558249c89444b0cf074ed6f8853470f3a50adb6f",
+      "bytes": 19246
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/040_NEW_MAIN_SCREEN_EXCERPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/040_NEW_MAIN_SCREEN_EXCERPT_v1.json",
+      "sha256": "5a00c3caf4c825ff487365536a24c639b2009bce0699744d3d5e70534ee78af8",
+      "bytes": 14133
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/041_NEW_PR_SCREEN_EXCERPTS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/041_NEW_PR_SCREEN_EXCERPTS_v1.json",
+      "sha256": "e8b90f8d3f8b4147d9362d4d70ccfb26fb229939ad2bfaff93044691dd729e98",
+      "bytes": 68514
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/042_PR9514_INITIAL_v1.json",
+      "member": "final_manifest_gate_review/snapshots/042_PR9514_INITIAL_v1.json",
+      "sha256": "5ab0333fca1c19583fa692d817c67b780791dbb4d8e8e65cfd2f2feac442d437",
+      "bytes": 24800
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/043_PRIOR_SOURCE_SCOPE_REPORT_v1.md",
+      "member": "final_manifest_gate_review/snapshots/043_PRIOR_SOURCE_SCOPE_REPORT_v1.md",
+      "sha256": "6b4764e795ce77edc92f35012c74cbbc99f3d00b6c4314c43eee8cf1310174d7",
+      "bytes": 12130
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/044_READ_FAILURES_v1.json",
+      "member": "final_manifest_gate_review/snapshots/044_READ_FAILURES_v1.json",
+      "sha256": "4dd6a40eff8ab70508a68447bce924cdaf18582dca0d26220bf14d12909518b6",
+      "bytes": 555
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/045_READ_FAILURES_v2.json",
+      "member": "final_manifest_gate_review/snapshots/045_READ_FAILURES_v2.json",
+      "sha256": "9b066b80a22002a61257389fff4f29cf00415aad409e8d0a81789e0f55d5e710",
+      "bytes": 1539
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/046_READ_FAILURES_v3.json",
+      "member": "final_manifest_gate_review/snapshots/046_READ_FAILURES_v3.json",
+      "sha256": "127207de4be3e297c1e4ef049016ad3a110a0252d2fd1335a22d2f35adc75633",
+      "bytes": 2015
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/047_REMOTE_READ_COMMANDS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/047_REMOTE_READ_COMMANDS_v1.json",
+      "sha256": "87a1e5ffbc5775a85c87587b436fe198b1c53c97b459d04d5a873679350e2cd0",
+      "bytes": 2105
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/048_REUSED_CANONICAL_REVIEW_BINDING_v1.json",
+      "member": "final_manifest_gate_review/snapshots/048_REUSED_CANONICAL_REVIEW_BINDING_v1.json",
+      "sha256": "fde075e704b84264a8b3aa3e6b6c8957d52d438324fc81d95643c87cb359f371",
+      "bytes": 3321
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/049_REUSE_AND_CANDIDATE_IDENTITIES_v1.json",
+      "member": "final_manifest_gate_review/snapshots/049_REUSE_AND_CANDIDATE_IDENTITIES_v1.json",
+      "sha256": "94e4a55bd48bbe674d1976a93b8cf8adca0261aca754d9951607b19f58810dd8",
+      "bytes": 85342
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/050_SOURCE_DISPOSITIONS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/050_SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "a8d042f42e56f7d2767d7638a39fcc364f21e140c807c8564d98a39384add03b",
+      "bytes": 70972
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/051_CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "final_manifest_gate_review/snapshots/051_CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "5bc43c79d36e7eae654be140c778ce562edf6ff49a5d6bbe8492ac6dc03f853d",
+      "bytes": 15659
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/052_citation_graph_manifest.json",
+      "member": "final_manifest_gate_review/snapshots/052_citation_graph_manifest.json",
+      "sha256": "3e299ca5692bd5fc341672038e48d4175260d1f0604eaa53a64d70e2b043741b",
+      "bytes": 1004774
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/053_curvature_fluid_construction_2026_10_13.txt",
+      "member": "final_manifest_gate_review/snapshots/053_curvature_fluid_construction_2026_10_13.txt",
+      "sha256": "4bd7405ff7da50230db862021c5fdc421d1b6a6da412e6390f4a423bfdb846d1",
+      "bytes": 640
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/054_NUMERICAL_FIXTURES_v1.json",
+      "member": "final_manifest_gate_review/snapshots/054_NUMERICAL_FIXTURES_v1.json",
+      "sha256": "c70c9f46b7a888e16e1c599c7586859be34de1f089637e4bf23109387e62cda1",
+      "bytes": 1630
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/055_OFF_TRAJECTORY_FIXTURES_v2.json",
+      "member": "final_manifest_gate_review/snapshots/055_OFF_TRAJECTORY_FIXTURES_v2.json",
+      "sha256": "431214309e28e4ab1e67c18635d05f0b8dd7549db039aa2ca56c7a42abf8b325",
+      "bytes": 549
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/056_imports.json",
+      "member": "final_manifest_gate_review/snapshots/056_imports.json",
+      "sha256": "a6daf9d98305241a7b1f696753649c2cd6b9fdee41f1519d097dbb412ed3e44e",
+      "bytes": 1161
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/057_curvature_fluid_construction_2026_10_13.py",
+      "member": "final_manifest_gate_review/snapshots/057_curvature_fluid_construction_2026_10_13.py",
+      "sha256": "3675d6d0aab39e3898c9d96bce321a7ff8460058b458f6ca9bcf68b72cdd17bb",
+      "bytes": 19986
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/058_FINAL_SOURCE_UNIT_v2.json",
+      "member": "final_manifest_gate_review/snapshots/058_FINAL_SOURCE_UNIT_v2.json",
+      "sha256": "a6dfe10d9e856e41cc9e70e851f674f5f8e22a3079d5a04c4db8cdb375c8c4a2",
+      "bytes": 12890
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/059_FINAL_SOURCE_UNIT_v3.json",
+      "member": "final_manifest_gate_review/snapshots/059_FINAL_SOURCE_UNIT_v3.json",
+      "sha256": "5680a35dd4c45eaa2980aff7fb56cb0ca62f3be8520b0398c251dc67d5815003",
+      "bytes": 14719
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/060_COMBINED_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/060_COMBINED_RECEIPT_v1.json",
+      "sha256": "ec85ce3268d772d1cb0b077470c616bfcc636265bf82b8b2d031082a380f3dab",
+      "bytes": 1226
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/061_SOURCE_COPY_IDENTITY_v1.json",
+      "member": "final_manifest_gate_review/snapshots/061_SOURCE_COPY_IDENTITY_v1.json",
+      "sha256": "ebc71751c2d9c9aa2de0d431861dd3f715ee2bd26d041cfe783601136fcbfbf4",
+      "bytes": 12854
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/062_START_v1.json",
+      "member": "final_manifest_gate_review/snapshots/062_START_v1.json",
+      "sha256": "5d79de0afd87c97985105817b32d45bda42ad7642e363672443b29496d1447a0",
+      "bytes": 329
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/063_FINAL_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/063_FINAL_RECEIPT_v1.json",
+      "sha256": "be8fb4c915f65425a56c366a36a78d4bc2477cb162dec13d3b8b65862608beb6",
+      "bytes": 289221
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/064_FINAL_PACKAGE_REVIEW_v1.md",
+      "member": "final_manifest_gate_review/snapshots/064_FINAL_PACKAGE_REVIEW_v1.md",
+      "sha256": "4fea117fa18952c31123212352da60ea00bdf4c64cbf407fc665e4c40ec9754c",
+      "bytes": 9896
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/065_FINAL_DISPOSITIONS_v1.json",
+      "member": "final_manifest_gate_review/snapshots/065_FINAL_DISPOSITIONS_v1.json",
+      "sha256": "4aae2cd2b0e2bcbcac7b7aabb707166f77d5c129e41b2001d9aec1506af5ae25",
+      "bytes": 41797
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/066_FINAL_RECEIPT_v1.json",
+      "member": "final_manifest_gate_review/snapshots/066_FINAL_RECEIPT_v1.json",
+      "sha256": "ce882bcd3876c8baf59d3306bcf13d6d946b8a11b19d60ce83d0128d22702269",
+      "bytes": 206837
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/067_CURRENT_MAIN_CONFIRMATION_v1.md",
+      "member": "final_manifest_gate_review/snapshots/067_CURRENT_MAIN_CONFIRMATION_v1.md",
+      "sha256": "703c40128b79c250c5f57258c22cf059d4226898bb3bbd8280820cc4c5ccf012",
+      "bytes": 7205
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/068_WORKFLOW_PATH_CORRECTION_v2.json",
+      "member": "final_manifest_gate_review/snapshots/068_WORKFLOW_PATH_CORRECTION_v2.json",
+      "sha256": "ac464108b90b650b4d3c8735ca19982111493f69caa0bdbb5edb52a69851a362",
+      "bytes": 2038
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/069_runner_cache.py",
+      "member": "final_manifest_gate_review/snapshots/069_runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/070_gate1.json",
+      "member": "final_manifest_gate_review/snapshots/070_gate1.json",
+      "sha256": "d38f8fe03aabfa143855c4bc1bf2dc5249ecf806e0207b45590de7d867657c48",
+      "bytes": 932
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/071_gate1.stdout",
+      "member": "final_manifest_gate_review/snapshots/071_gate1.stdout",
+      "sha256": "0bcb226aa6677517a896b8c9befac865866c4fc5ba763a5c7697311171537726",
+      "bytes": 21648
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/072_gate1.stderr",
+      "member": "final_manifest_gate_review/snapshots/072_gate1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/073_gate2.json",
+      "member": "final_manifest_gate_review/snapshots/073_gate2.json",
+      "sha256": "deebfae10d2fcc6ba0cfb35d716157cfaa4720d3cf33892cd2c04ec3b7dfddb2",
+      "bytes": 931
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/074_gate2.stdout",
+      "member": "final_manifest_gate_review/snapshots/074_gate2.stdout",
+      "sha256": "2a2399cdfc694a7c7d1592a7697c2be79d9c2863cbba9101e1a2f962e75bcc39",
+      "bytes": 13775
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/075_gate2.stderr",
+      "member": "final_manifest_gate_review/snapshots/075_gate2.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/076_gate3.json",
+      "member": "final_manifest_gate_review/snapshots/076_gate3.json",
+      "sha256": "307af4a88c4ca40a8ff7bdc2fc8e141affa429f862b5118c9fc1c96d1746edd3",
+      "bytes": 991
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/077_gate3.stdout",
+      "member": "final_manifest_gate_review/snapshots/077_gate3.stdout",
+      "sha256": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+      "bytes": 64
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/snapshots/078_gate3.stderr",
+      "member": "final_manifest_gate_review/snapshots/078_gate3.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/stderr_v1.txt",
+      "member": "final_manifest_gate_review/stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/final_manifest_gate_v1/stdout_v1.txt",
+      "member": "final_manifest_gate_review/stdout_v1.txt",
+      "sha256": "e0a5ac7f8752c36c9eca7f9d91811af9081d45b4a8946886e8ac732c63996e7a",
+      "bytes": 264
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/CANONICAL_NOTE_before_vacuum_label.md",
+      "member": "runtime/CANONICAL_NOTE_before_vacuum_label.md",
+      "sha256": "11cb4fa5764a12aa9978539cfb847c2f50eea790d810777d8381647a1b129b1e",
+      "bytes": 15461
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/DIFF_CHECK_v1.json",
+      "member": "runtime/DIFF_CHECK_v1.json",
+      "sha256": "0765c95806b10addb2925536a0666d0b35b8703c31ba49a46d8b52c83412f8be",
+      "bytes": 53
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/FINAL_COMMIT_v1.json",
+      "member": "runtime/FINAL_COMMIT_v1.json",
+      "sha256": "31d78dc88b197ccaafd5d1e98eacc9ba305bdd9679a6f6a5550cf1bb78fbdfac",
+      "bytes": 6450
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/FINAL_DIFF_CHECK_v1.json",
+      "member": "runtime/FINAL_DIFF_CHECK_v1.json",
+      "sha256": "0765c95806b10addb2925536a0666d0b35b8703c31ba49a46d8b52c83412f8be",
+      "bytes": 53
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/FINAL_SOURCE_UNIT_v1.json",
+      "member": "runtime/FINAL_SOURCE_UNIT_v1.json",
+      "sha256": "8a196e1f9f6ec253b0bfd96292c8754639fca4e7b840cc1497527444a3224c25",
+      "bytes": 12751
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/FINAL_SOURCE_UNIT_v2.json",
+      "member": "runtime/FINAL_SOURCE_UNIT_v2.json",
+      "sha256": "a6dfe10d9e856e41cc9e70e851f674f5f8e22a3079d5a04c4db8cdb375c8c4a2",
+      "bytes": 12890
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/FINAL_SOURCE_UNIT_v3.json",
+      "member": "runtime/FINAL_SOURCE_UNIT_v3.json",
+      "sha256": "5680a35dd4c45eaa2980aff7fb56cb0ca62f3be8520b0398c251dc67d5815003",
+      "bytes": 14719
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/INITIAL_DIFF_CHECK_v1.json",
+      "member": "runtime/INITIAL_DIFF_CHECK_v1.json",
+      "sha256": "249cb245d942c8a00d2d7b58e747b838ccdc3b90b976a6ff2fd9a8aa825314aa",
+      "bytes": 724
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PACKAGED_DIFF_CHECK_v1.json",
+      "member": "runtime/PACKAGED_DIFF_CHECK_v1.json",
+      "sha256": "0765c95806b10addb2925536a0666d0b35b8703c31ba49a46d8b52c83412f8be",
+      "bytes": 53
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PARENT_CURRENT_MAIN_RECEIPT_v1.json",
+      "member": "runtime/PARENT_CURRENT_MAIN_RECEIPT_v1.json",
+      "sha256": "94873ce05f5941e4e706c74822ecf086272aa211515ea20c2bd69dd2e391bc77",
+      "bytes": 204605
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PARENT_EXECUTION_REVIEW_v1.json",
+      "member": "runtime/PARENT_EXECUTION_REVIEW_v1.json",
+      "sha256": "1ac61e6ab29021251117d26b2611f8880d2dc7452e8e91975af03cc2c5cf2da3",
+      "bytes": 30814
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PARENT_FINAL_MANIFEST_RECEIPT_v1.json",
+      "member": "runtime/PARENT_FINAL_MANIFEST_RECEIPT_v1.json",
+      "sha256": "d355a01c237af4fd9b22d2916096b450c775b40ffd8cb0f682a643a58e406bf2",
+      "bytes": 61150
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PARENT_FINAL_PACKAGE_RECEIPT_v1.json",
+      "member": "runtime/PARENT_FINAL_PACKAGE_RECEIPT_v1.json",
+      "sha256": "2fe87ce85f3f3e60d971df15c65b4f6872b677ff34e7f63b3a417f3923fee3ee",
+      "bytes": 285261
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PARENT_PRIOR_REVIEW_v1.json",
+      "member": "runtime/PARENT_PRIOR_REVIEW_v1.json",
+      "sha256": "ea589bf97df603153b482747852624e5ecc739ea7a2465cb5d9d9646e99fe3de",
+      "bytes": 66297
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PARENT_SOURCE_REVIEW_v1.json",
+      "member": "runtime/PARENT_SOURCE_REVIEW_v1.json",
+      "sha256": "99e6fcd3f4b819d9fb01152cfc3306393aefc3d33d393c8a18a8151f72903b2f",
+      "bytes": 224949
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PR_BODY.md",
+      "member": "runtime/PR_BODY.md",
+      "sha256": "c2f8111934934735749e750a62fd114b2c03fdd4bf0e6fc42bcb361fb17c24a9",
+      "bytes": 4613
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PR_BODY_INITIAL_v1.md",
+      "member": "runtime/PR_BODY_INITIAL_v1.md",
+      "sha256": "ae46204100a927a06953485bb4772c441d4063866a5118805fa8a230b41d075c",
+      "bytes": 4579
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PR_CREATE_v1.json",
+      "member": "runtime/PR_CREATE_v1.json",
+      "sha256": "5bc7951e12f98f051b891e0b6c98479a3733b1282e206e7aa8e2982fcc6f5db4",
+      "bytes": 172
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PR_VERIFIED_v1.json",
+      "member": "runtime/PR_VERIFIED_v1.json",
+      "sha256": "6d8d767e6fa61f325206edd0f2b4330bff01cd41247436fe97a032473b4c5062",
+      "bytes": 448
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/PUSH_v1.json",
+      "member": "runtime/PUSH_v1.json",
+      "sha256": "ddee95afefa056fd820545af27533eb972d534cd0fe3a2674c73d64d1922c9e1",
+      "bytes": 683
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/SOURCE_COMMIT_v1.json",
+      "member": "runtime/SOURCE_COMMIT_v1.json",
+      "sha256": "4f08ab712c77d0f471ec01c2254638527e808c3ee805b66bc0f956b111ec2441",
+      "bytes": 2239
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/SOURCE_UNIT_v1.json",
+      "member": "runtime/SOURCE_UNIT_v1.json",
+      "sha256": "754c0dab7355d81c0f8c3d1fb713eb1409defcd5d57db44a20688f0443493d46",
+      "bytes": 3122
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/SOURCE_UNIT_v2.json",
+      "member": "runtime/SOURCE_UNIT_v2.json",
+      "sha256": "af5df242c8f8b0a97400ae086685ad236efdbf360915b7c2aa9ff574ce4d71d0",
+      "bytes": 3122
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_PREFLIGHT_v1.json",
+      "member": "runtime/UNIT_PREFLIGHT_v1.json",
+      "sha256": "d1ffac198735010fd9da4a5b275e3348550869f2d9af0d0b6e936798cfafcae9",
+      "bytes": 809
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_PREFLIGHT_v2.json",
+      "member": "runtime/UNIT_PREFLIGHT_v2.json",
+      "sha256": "20852e870d1a75584e846aadb7e1c63c2c1df666acf522be1bfa6123688f837e",
+      "bytes": 2047
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_PREFLIGHT_v3.json",
+      "member": "runtime/UNIT_PREFLIGHT_v3.json",
+      "sha256": "f9fffd7aba25c3bdb54580b5388353df57ad6f97a59a20acbedd2a76febcc81a",
+      "bytes": 1903
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_PREFLIGHT_v4.json",
+      "member": "runtime/UNIT_PREFLIGHT_v4.json",
+      "sha256": "99ab0a2978c591c84b3c1b7b3284b254b6a09b800d92e5f12a6f18390cda11fd",
+      "bytes": 1947
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_PREFLIGHT_v5.json",
+      "member": "runtime/UNIT_PREFLIGHT_v5.json",
+      "sha256": "794f85c15b27d4e1afe854e17731c344c0de54fa2dfacc3e014a3baef277c7ed",
+      "bytes": 1948
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_v1.json",
+      "member": "runtime/UNIT_v1.json",
+      "sha256": "396a83307c0d738e349a831b64620f2b2705693fa42dad34d19db66644f77385",
+      "bytes": 9720
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_v2.json",
+      "member": "runtime/UNIT_v2.json",
+      "sha256": "575cb86d9a0e29195f9dff5e20c4aeb7299b02fd8b848ad5ea9a9a503eeb8bcc",
+      "bytes": 9771
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_v3.json",
+      "member": "runtime/UNIT_v3.json",
+      "sha256": "59cd7d16b46e59c70d69cf27cd18d257453e0f4af7c81d0c22c09a66cdb63b93",
+      "bytes": 20721
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_v4.json",
+      "member": "runtime/UNIT_v4.json",
+      "sha256": "03fa4dd4ee13c2c23165756fbcf33e83a438e07176894891812ae98d34a5f8db",
+      "bytes": 22239
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_v5.json",
+      "member": "runtime/UNIT_v5.json",
+      "sha256": "1cbb13e90678cf68cf045499c512a0941020d8c152c5058ead63bc623bb26083",
+      "bytes": 22239
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/VACUUM_LABEL_CORRECTION_v2.diff",
+      "member": "runtime/VACUUM_LABEL_CORRECTION_v2.diff",
+      "sha256": "4967c03f61641c3c93acaac2ba7bef2b5a9b7c2a2fb69a17e9b6a1f4fa759724",
+      "bytes": 932
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/VOCABULARY_RUN_v1.json",
+      "member": "runtime/VOCABULARY_RUN_v1.json",
+      "sha256": "256153b52ca453734e7d8c96526fe98a0e15cf7e6ba1dac18d83f0efef99005d",
+      "bytes": 1079
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/first_capture_guard_failure_v1/FAILURE.json",
+      "member": "runtime/first_capture_guard_failure_v1/FAILURE.json",
+      "sha256": "83e9ae5205aa8939c243668d87f3e52749a3782152f8a7a3ad5682c249d001c3",
+      "bytes": 1200
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/first_capture_guard_failure_v1/RESULTS.json",
+      "member": "runtime/first_capture_guard_failure_v1/RESULTS.json",
+      "sha256": "a358f02ebd6008ce585297adbe7784bc43a35669fb9218376a0cc1839da2828e",
+      "bytes": 1801643
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/first_capture_guard_failure_v1/TOOL_EXCEPTION_EXCERPT_v1.json",
+      "member": "runtime/first_capture_guard_failure_v1/TOOL_EXCEPTION_EXCERPT_v1.json",
+      "sha256": "ff497a85de573892edd51ab063bfda1374ec43a58cb0eddc1d2bd9546442cb78",
+      "bytes": 1214
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/preparation_v1/.claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "member": "runtime/preparation_v1/.claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "sha256": "94bca022b20ec0c0245ba720f38daf1ac80f20892f9ce43d3f5c75bae38286e9",
+      "bytes": 977
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/preparation_v1/.claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_v1.diff",
+      "member": "runtime/preparation_v1/.claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_v1.diff",
+      "sha256": "b5fa5451618ea705078508502bc902764808581cf5152746dd825711ce707b98",
+      "bytes": 2114
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/preparation_v1/outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json",
+      "member": "runtime/preparation_v1/outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json",
+      "sha256": "88af54e27261cadd28b661326e498f7e546f2ff9431362876f4d89597d895455",
+      "bytes": 1631
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/preparation_v1/scripts/curvature_fluid_construction_2026_10_13.py",
+      "member": "runtime/preparation_v1/scripts/curvature_fluid_construction_2026_10_13.py",
+      "sha256": "dda905cead7144ef6451e54f74b26575c8f2121a6af07efefd763da66c160600",
+      "bytes": 19987
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation/FETCH_v1.json",
+      "member": "runtime/validation/FETCH_v1.json",
+      "sha256": "60b5506760a8666767c509484b4ed59508f0319a6ee767b661197c7d7fac1941",
+      "bytes": 274
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation/STOP_BEFORE_GATES_v1.json",
+      "member": "runtime/validation/STOP_BEFORE_GATES_v1.json",
+      "sha256": "2f38840865258c04c57442c975d38f6dd1a210f8bf36837e2221ee380c8a4645",
+      "bytes": 347
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation/TOOL_STOP_TRANSCRIPTION_v1.json",
+      "member": "runtime/validation/TOOL_STOP_TRANSCRIPTION_v1.json",
+      "sha256": "0a60a7ceb155673c401183cbf233eb86372aa5452d46d8225357f8af24ba688d",
+      "bytes": 748
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/COMBINED_RECEIPT_v1.json",
+      "member": "runtime/validation_v2/COMBINED_RECEIPT_v1.json",
+      "sha256": "ec85ce3268d772d1cb0b077470c616bfcc636265bf82b8b2d031082a380f3dab",
+      "bytes": 1226
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/COPY_CREATION_v1.json",
+      "member": "runtime/validation_v2/COPY_CREATION_v1.json",
+      "sha256": "062f794d72192588cf5a03e24526b887049cf0dce957ce0be3b01ae45fda6165",
+      "bytes": 3402
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/FETCH_v1.json",
+      "member": "runtime/validation_v2/FETCH_v1.json",
+      "sha256": "14807bcbd46ae26ed9d060f88fb715eb31d0ce042e47f701780b36c0511b86d0",
+      "bytes": 220
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/REVIEWED_SOURCE.patch",
+      "member": "runtime/validation_v2/REVIEWED_SOURCE.patch",
+      "sha256": "d411496ad44b1e73d8a97af70d8aa67eb0e65ac4fb828f7fb9ca65cd89fc2dbc",
+      "bytes": 34162941
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/SOURCE_COPY_IDENTITY_v1.json",
+      "member": "runtime/validation_v2/SOURCE_COPY_IDENTITY_v1.json",
+      "sha256": "ebc71751c2d9c9aa2de0d431861dd3f715ee2bd26d041cfe783601136fcbfbf4",
+      "bytes": 12854
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/START_v1.json",
+      "member": "runtime/validation_v2/START_v1.json",
+      "sha256": "5d79de0afd87c97985105817b32d45bda42ad7642e363672443b29496d1447a0",
+      "bytes": 329
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate1.json",
+      "member": "runtime/validation_v2/gate1.json",
+      "sha256": "d38f8fe03aabfa143855c4bc1bf2dc5249ecf806e0207b45590de7d867657c48",
+      "bytes": 932
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate1.stderr",
+      "member": "runtime/validation_v2/gate1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate1.stdout",
+      "member": "runtime/validation_v2/gate1.stdout",
+      "sha256": "0bcb226aa6677517a896b8c9befac865866c4fc5ba763a5c7697311171537726",
+      "bytes": 21648
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate2.json",
+      "member": "runtime/validation_v2/gate2.json",
+      "sha256": "deebfae10d2fcc6ba0cfb35d716157cfaa4720d3cf33892cd2c04ec3b7dfddb2",
+      "bytes": 931
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate2.stderr",
+      "member": "runtime/validation_v2/gate2.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate2.stdout",
+      "member": "runtime/validation_v2/gate2.stdout",
+      "sha256": "2a2399cdfc694a7c7d1592a7697c2be79d9c2863cbba9101e1a2f962e75bcc39",
+      "bytes": 13775
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate3.json",
+      "member": "runtime/validation_v2/gate3.json",
+      "sha256": "307af4a88c4ca40a8ff7bdc2fc8e141affa429f862b5118c9fc1c96d1746edd3",
+      "bytes": 991
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate3.stderr",
+      "member": "runtime/validation_v2/gate3.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/validation_v2/gate3.stdout",
+      "member": "runtime/validation_v2/gate3.stdout",
+      "sha256": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+      "bytes": 64
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/vocabulary_v1.json",
+      "member": "runtime/vocabulary_v1.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "scope": "Final58path review, exact source/disposition/gate mapping, actual committed UNITv5 and PR9519 creation/push verification. Earlier final package/current-main reviews are preserved in checkpoint6ae9dd866d chunks.",
+  "parts": [
+    {
+      "path": "RECOVERY_v1.tar.gz.part001",
+      "sha256": "230c4e78d5800e07a96efa64a18741bb39acf8437db10e32317d344503563478",
+      "bytes": 41943040
+    },
+    {
+      "path": "RECOVERY_v1.tar.gz.part002",
+      "sha256": "9a76098e2d4aca0b9e50cda0478cead23731db6ec40afa408405b632b7766093",
+      "bytes": 10998454
+    }
+  ],
+  "reassembly": "Concatenate parts in listed order; verify full archive hash before extraction."
+}

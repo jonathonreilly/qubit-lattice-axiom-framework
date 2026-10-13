@@ -13,13 +13,13 @@ base_revision: f6a820fd66011a50752670a454fb375b420ddbd6
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish calibrated energy-coordinate/transfer milestone while comparing pair response and deriving
-  finite-heating kinetic limit.
+active_route: Publish accepted calibrated energy and pair-response milestones; independently check finite-heating
+  kinetic candidate.
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Nine regular renewal PRs. Prepared-energy9512 published353paths. Graph-transfer466 checked; weighted/graph
-  interface check active. Fresh pair792 frozen awaiting root comparison. Kinetic response route launched.
+milestone: Nine renewal regular PRs through9512. Fresh pair792 and weighted interface417 fully checked. Calibrated
+  three-note and pair one-note source assemblies running. Root kinetic484 frozen, independent kinetic route ongoing.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -37,9 +37,9 @@ transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framewor
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-13T09:40:24.999251+00:00'
-next_action: Read and compare full fresh pair792 with sealed root286. Inspect completed interface check. Package
-  calibrated all-time/inverse/weighted/transfer sources. Complete root kinetic proof with explicit domains; keep
-  worker source barriers. Checkpoint0830 or milestone; refresh lock before0940.
+next_action: Continue kinetic source-excluded derivation, then full comparison with root484 after independent freeze.
+  Inspect source-only calibrated and pair assemblies, prepare/run regular PR publication gates. Refresh remote before
+  publication; lock before0940; checkpoint0905 or milestone.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -64,7 +64,7 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-13T08:04:23.211626+00:00'
+checkpoint_utc: '2026-10-13T08:36:01.459048+00:00'
 latest_source_refresh: '2026-10-13T07:39:53.570649+00:00'
 latest_other_pr: No changed/new/closed PRs since0704; main516cb69d and instruction3a4b2c66 unchanged, all18procedurebytes
   unchanged. Own regular9512 subsequently opened.
@@ -135,7 +135,7 @@ scoped_lean_status: 'Spatial8Ring/lowblock3Ring scope checked. Dispersion88a3598
   positivity/domains/dynamics not formalized. PowerJump837784b4 attempt02 compiled22.899s exit0,d6ee02: general
   ring jump, square commutator and exact2x2 omission countercontrol. Only standard propext/choice/quot axioms. Attempt01
   missing aggregate Tactic.olean preserved; no analytic/domain/BV verification.'
-previous_checkpoint_commit: ace3b94b75c38abfa72c2602a1fa74c7761d15c0
+previous_checkpoint_commit: 44846d11e764873865b6739b50c6237c536e1e1d
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -148,8 +148,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_and_response_recovery_20261013T080423Z.tar.gz
-recovery_map_aliases: 11284
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_pair_and_kinetic_root_recovery_20261013T083601Z.tar.gz
+recovery_map_aliases: 11369
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -194,7 +194,11 @@ bookkeeping_failures_since_prior: 'Identity walker0e119d mishandled current free
   label mapping923e76;exact narrow fixes preserved, v3dfb41e exit0. Metadata projection7c0762 assumed OUTER dict
   though it is tuple serialization; c2a4ba recovered. Verify inspection5e0cdc compared expected_code[0,2] with0;377f8a/f1f4fe
   verified actualexit0. No frozen/canonical science changed. Graph crosscheck own read/metadata failures preserved.
-  Full new science reads remain untruncated; large metadata arrays mechanically verified, no full manual claim.'
+  Full new science reads remain untruncated; large metadata arrays mechanically verified, no full manual claim.
+  Resumption aggregate current checkpoint/skill display truncated; active HANDOFF fully recoveredc551f9 and all18procedurebytes
+  verifiedc7fbb0 against prior complete reads. Guessed docs/theory directory absent27bfe2; canonical actual docs
+  path recoveredb96530 and E1-E15 refreshed8fa2db. Refresh JSON display9336c6 truncated metadata only; exact procedure
+  list mechanically verifiedc7fbb0. No scientific coverage inferred from truncated outputs.'
 sharpness_status: 'Root and separate427-line derivations plus complete crosscheck accepted: actual linear-ramp excess
   has positive tau^-2 lower envelope in an even two-mode witness; not every protocol/model.'
 spatial_correlation_status: 566-line independent core and 325-line comparison fully read; contracted-support continuum
@@ -385,10 +389,10 @@ energy_adapted_local_inverse_status: Root207/13f6980c and full source-exposed520
   norm budgets and initial delta costs explicit. Separate neutral inverse derivation active, no result adopted yet.
   Separate compact360 now accepted0d7c0efc; it does not repeat independent proof of exposed423.
 active_workers:
-  energy_cell_expansion_fresh: weighted-transfer interface check; completed graph466 preserved
-  pair_response_fresh: fresh pair792 frozen; pending root full read
-  weak_drive_kinetic_independent: neutral independent kinetic route running; no finding preview
-  observable_correlations_recovery: compact error on old pair task; accepted weighted566 unaffected
+  energy_cell_expansion_fresh: source-only three-note calibrated-energy assembly; only historical bound corrected-dispersion/effective-potential
+    provenance additionally allowed as opaque bytes
+  pair_response_fresh: source-only pair-response assembly; later root286/review exposure explicit
+  weak_drive_kinetic_independent: neutral independent kinetic derivation still active; no output opened
 worker_compaction_failures: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CELL_EXPANSION_WORKER_COMPACTION_FAILURES_0620.json
 corrected_dynamics_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9511
 corrected_dynamics_published_science_revision: bd831ffb14c7d7f12bf1b8165596a0db85f838ef
@@ -416,10 +420,10 @@ energy_adapted_graph_transfer_status: Root262/27e2e2ad plus separate source-expo
   no formula repair; remaining-order domains and fixed-n q<=2n clarified. Weighted source excluded from that check;
   actual composition separate.
 worker_capacity_failure_record: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/WORKER_CAPACITY_FAILURES_0705.json
-low_energy_pair_response_status: 'Root286/c388c16e sealeda85b6101 before fresh proof: pair spectral formula,linear
-  threshold,free t^-2 correlation,weakdrive joint limits; ordinary candidate pending comparison. Earlier worker
-  compact error4d8156fe preserved. Fresh source-excluded792/4e0de0b1 frozen075753; final preview reports threshold
-  hierarchy,eta*T weak regime and threshold logarithm. Full fresh proof not yet root-read; no additions accepted.'
+low_energy_pair_response_status: Fresh792/4e0de0b1 full reads9ff5f1/d6bc6f/099aa3/e8aaec/8fb780. Rootreview4f16e858,acceptancebb1ade62;24evidence
+  verified. No required formula repair. Opposite time phases are C(t)=omega(alpha_t(B)B), root K(t)=C(-t). Threshold
+  hierarchy,eta*T weak regime,logarithmic threshold and actual joint limits checked. Source-only assembly active;
+  original proof/barriers unchanged.
 prepared_energy_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9512
 prepared_energy_published_science_revision: f6a820fd66011a50752670a454fb375b420ddbd6
 prepared_energy_publication_status: Frozen packagef53bdbbb/511members accepteda055707a,review9be8fc55. Six cores2923lines
@@ -427,10 +431,12 @@ prepared_energy_publication_status: Frozen packagef53bdbbb/511members accepteda0
   Exact353stageblobs verified pre/post focusedcheckerchecked[]empty;rawwhitespaceexit0,noexceptions. Committedf6a820fd,regular9512openattachedunmerged.
   Rootstaticfailures are preserved bookkeeping mismatches;zero mathematical predicates. Combined landing/audit gates
   remain separate.
-energy_adapted_weighted_transfer_interface_status: Root111line V2/884c265e explicitly matches accepted weighted566
-  to checked graph G1-G14 and common vacuum actual embedding. V1/e7d605b preserved; V2 corrects formula reference
-  and removes comparative adjective, no formula change. Source-exposed interface worker active, no result.
-weak_drive_kinetic_status: Root plan45/2bf34704 sealed075943 with explicit pair-preview exposure; working notes
-  propose finite-rank Volterra/time-L2 synthesis under componentwise zero input means. Candidate finite-heating
-  T=tau/lambda^2 and actual a^(N+1)=o(lambda^2) are unverified. Independent kinetic worker has neutral question
-  and excludes all pair/rootkinetic drafts. No theorem claimed yet.
+energy_adapted_weighted_transfer_interface_status: 417line b4bfa525 full reads69e2d7/09810a/272cc5. Identityffc335
+  verifies36evidence/13sourcepairs/14bindings. Rootreview83008698,acceptance829bae7e. No required formula repair;
+  actual finite-resource common-vacuum application checked with explicit later weighted exposure.
+weak_drive_kinetic_status: Root484/d3f10645 frozen083340,seal53694f70. Completed conditional candidate gives uniform
+  |lambda|^3*T energy remainder by exact Fock covariance, integrable local kernels and time-L2 Volterra/synthesis;
+  finite heating T=tau/lambda^2 for zero-component-mean controls, positive cubic-threshold witness, joint actual
+  a^(N+1)=o(lambda^2). Root exposed to full accepted pair792 before this proof; independent kinetic worker excludes
+  every pair/rootkinetic source and has provided no science preview. Separate comparison still required; no analytic
+  Lean or retained status.

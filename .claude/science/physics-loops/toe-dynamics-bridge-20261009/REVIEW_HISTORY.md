@@ -55,3 +55,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T07:18:51.999539+00:00: Compact360 and weighted566 fully root-read/conditionally accepted. Root graph262 sealed but separate review pending selected-model capacity. Publication package retrying; pair response is proposed next route only. No model/effort, prompt, axiom or audit change.
 
 2026-10-13T08:04:23.211626+00:00: Regular9512 published353paths after exact source/runtime checks. Graph466 fully root-read/accepted; interface pending. Fresh pair792 frozen but root-unread. Root kinetic route proposed with explicit exposure chronology. No formal/retained or physical claim added.
+
+2026-10-13T08:36:01.459048+00:00: Fresh pair792 and weighted interface417 fully read/accepted at conditional scope. Root kinetic484 frozen awaiting independent comparison; exact prior exposure disclosed. Three-note calibrated and one-note pair source assemblies active. No retained/physical/analytic Lean claim.

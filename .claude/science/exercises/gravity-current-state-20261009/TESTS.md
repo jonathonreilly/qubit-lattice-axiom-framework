@@ -9237,3 +9237,44 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - P-R19-31b covers the source side only;
     - (S_loc) as registered and the vacuum clauses do not cover it.
   - **Not computed:** an O(t²) unitary dressing; non-axis-ordered paths.
+
+**F3. F1's first uncomputed freedom: a momentum-dependent unitary dressing of the strained Dirac operator at O(t²).** (Pre-registered 2026-10-13 13:12Z.)
+- **Plain question.**
+  - F1 builds D_t(k) = D(Φ_t(k)). The registered texts fix the strained law only through UD, its first-order generator, and the SF free energies.
+  - Any D_t′ = V_t(k) D(Φ_t(k)) V_t(k)† with a smooth unitary V_t = 1 + O(t²) leaves the spectrum unchanged, and so also every SF free energy and every first-order vertex. But it changes the O(t²) two-photon (seagull) structure through minimal coupling.
+  - Can such a dressing change the additive-mass E_g Hessian? If it can, by how much, and can it reach zero?
+- **Setting:**
+  - F1's law and code (scripts/C5/F1);
+  - V_t = exp(t²·i·G(k)), with G a hermitian, smooth, cubic-covariant 4×4 generator built from the Dirac algebra and lattice trig functions, up to next-nearest range;
+  - minimal coupling of the dressed operator by F1's Psym links.
+- **Prior art (count once):** F1 (worker; referee running), R19-34 and R19-30 (re-placement freedoms that are row-neutral).
+- **Probes.**
+  - (a) Prove or disprove: does a k-dependent unitary conjugation change the one-loop additive mass at O(t²)? Use the Ward identity and gauge-covariant form.
+  - (b) If it can: parametrize a basis of admissible G, compute the Hessian's linear response to each, and find the reachable range.
+  - (c) Is the zero reachable with local generators, and at what cost? Does it change anything observed (rows, W1)?
+- **FIXED readings.**
+  - **DRESS-INVARIANT:** the Hessian is unchanged by every admissible dressing (proved, or checked ≤ 1e-8 across a basis).
+  - **DRESS-SHIFTS:** some admissible dressing changes it. Report the range, and whether zero is reachable (a reachable zero would be a tuning and would be priced).
+  - **OPEN:** otherwise.
+- **Expectation.** DRESS-INVARIANT at one loop for the zero-momentum additive mass, because unitary conjugation by a k-dependent V is a field redefinition ψ → Vψ. Its effect on the gauge coupling is a covariant-derivative reshuffle that cannot change the pole mass. Possibly DRESS-SHIFTS for the off-shell Σ(0), but not the physical mass.
+
+**F4. F1's second uncomputed freedom: path families other than axis-ordered for the strained Dirac hops.** (Pre-registered 2026-10-13 13:12Z.)
+- **Plain question.**
+  - The strained Dirac operator mixes axes, so each hop needs a gauge path.
+  - F1 averages the six axis orderings (Psym).
+  - Other cubic and hermitian families exist: straight-line/diagonal paths (Peierls integral along the segment), paths via plaquette centres, and weighted mixtures.
+  - Does the Hessian depend on the path family? The pole mass is gauge invariant, but different paths are different laws, differing in their coupling to field strength.
+- **Setting:**
+  - F1's law and code;
+  - at least three families, including Psym, straight-line Peierls and a staple/plaquette-average family;
+  - Ward identity checked for each.
+- **Prior art (count once):** F1, R19-34 (its divided-difference links) and R19-31.
+- **Probes.**
+  - (a) A proof or argument for which part of the O(t²) seagull and vertex is path-dependent: terms ∝ F_μν at zero external momentum.
+  - (b) The Hessian per family, converged.
+  - (c) If it differs: the range, and whether zero is reachable by a cubic, local family.
+- **FIXED readings.**
+  - **PATH-INVARIANT:** all families agree to ≤ 1e-6 relative, or a proof that path dependence cannot enter the zero-momentum additive mass at one loop.
+  - **PATH-SHIFTS:** the families differ. Report the range, and whether zero is reachable (a reachable zero would be priced).
+  - **OPEN:** otherwise.
+- **Expectation.** PATH-SHIFTS at a small level. Path dependence enters through the transverse photon coupling inside the loop, which is not zero at zero external momentum. F1 already found the single orderings within 4e-6 of Psym, which suggests a small spread.

@@ -1,8 +1,9 @@
 # Ranked opportunity queue
 
-1. Finish kinetic regular PR against9515 after full source/package review.
-2. Review source assembly and publish accepted time-varying464 after kinetic milestone.
-3. Examine finite-initial-energy convolution law or finitely many carrier frequencies; currently unproved.
-4. Preserve actual-cell transfer hypotheses; intended3D creators and physical channel selection remain open.
+1. Publish reviewed kinetic milestone against actual9515 parent.
+2. Publish accepted amplitude-modulated theorem after canonical binding and wrapper normalization correction.
+3. Compare independent fixed-initial-state derivation with provisional root407; verify weighted mean/domains.
+4. Derive/check slow-frequency extension with strict carrier gap; no result accepted yet.
+5. Intended3D creators and physical channel selection remain open.
 
-Fixed deadline2026-10-13T16:42:30Z. No merge/main push/audit verdict/axiom change.
+Fixed deadline2026-10-13T16:42:30Z; no merge/main push/audit verdict/axiom change.

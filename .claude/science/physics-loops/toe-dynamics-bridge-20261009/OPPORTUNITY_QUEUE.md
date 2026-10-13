@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Publish the accepted kinetic/potential/moment milestone after exact publication-code review and required checks.
-2. Reconcile independent all-state fixed-CAR correlation and higher-moment energy endpoint derivations with the sealed root candidates.
-3. Package accepted smooth preparation, BV dynamics and finite histories in a coherent regular milestone.
-4. Check quantitative fixed-target preparation and local-pulse spatial escape if distinct from existing driven results.
-5. Microscopic creator coverage, interacting channel selection and intended3D realization remain open.
+1. Publish corrected kinetic/potential/moment milestone after exact driver and required checks.
+2. Finish root review of higher-moment endpoints and uniform all-state finite-CAR comparisons.
+3. Test fixed-preparation all-time correlations and total-variation energy laws using the existing energy-adapted mechanism; preserve original physical embedding.
+4. Package accepted preparation, BV dynamics and finite histories in a regular milestone.
+5. Creator coverage, intended3D realization and interacting channel selection remain open.
 
-Fixed deadline2026-10-13T16:42:30Z. No science merge/main push/audit/axiom changes.
+Fixed deadline2026-10-13T16:42:30Z. No main push, science merge, audit verdict or axiom change.

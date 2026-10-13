@@ -1,86 +1,81 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T04:41:25.601084+00:00. Sole checkpoint. Deadline2026-10-13T16:42:30Z is fixed.
+Updated 2026-10-13T05:18:40.034023+00:00. Sole current checkpoint. Fixed deadline2026-10-13T16:42:30Z.
 Latest human request: continue. No editable prompt changes, science merge,
 main push, audit verdict, physical-axiom change or other-chat messages.
 
-Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, clean branchphysics-loop/toe-corrected-dynamics-20261013, HEAD8c88ed444f104bfd482c5886d28d7b09f68c6c1b. This child of9510 was
-created by root after sync; no new science installed and no new PR yet.
-Seven regular renewal PRs9499/9500/9502/9504/9506/9508/9510 remain open.
-Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree, previous439ec6f2d7dc20bb7ed358c89ac2a87da94c1fba; primary untouched.
+Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, clean branchphysics-loop/toe-corrected-dynamics-20261013, HEAD8c88ed444f104bfd482c5886d28d7b09f68c6c1b, child of regular9510.
+No new canonical source installation, execution or new PR yet. Seven renewal
+regular PRs9499/9500/9502/9504/9506/9508/9510 remain open at latest sync.
+Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree, prior HEAD67ea706d00a7d1cd68d4820129fe0d64f8e46e8c; primary untouched.
+Latest sync04:38:09: main516cb69d and instruction3a4b2c66 unchanged,
+18procedure bytes unchanged, no PR delta from0342; external9509 distinct.
+Refresh relevant source identities again before publication if needed.
 
-Latest sync04:38:09: main516cb69d and procedure3a4b2c66 unchanged;
-18procedure bytes unchanged, no changed/new/closed PRs since0342.
-External9509/fa25be87 distinct/unadopted. Current763082a6 remainsopen_gate.
-Receipts CORRECTED_DYNAMICS_REPO_REFRESH_0438.json and
-CORRECTED_DYNAMICS_BRANCH_START.json; complete logs archived.
+## Accepted and frozen work
 
-## Checked science and current work
+All prior accepted source identities and read coverage remain in STATE and
+archived HANDOFF. Corrected-dynamics source assembly1397b1c6 has236members,
+three unchanged2380line cores,334new wrapper lines and780program lines fully
+reviewed as recorded. Root source acceptance8df5f60b, identity rerunf0e7c9.
+spatial_recovery_final builds only R/corrected_dynamics_publication_preparation.
+Do not execute its driver before root reviews all exact new/changed code and
+projections. Its current active output is excluded from this checkpoint.
 
-Prior preparation534/390a9efe, nonautonomous774/31100719 plus577/8c92f6c7,
-and graph/endpoint585/41fdd517 retain their exact accepted ordinary proofs.
-Details and source identities persist in STATE and the archived prior HANDOFF.
+Higher-energy750/d5a218cd freeze8d92dc3d fully read14049f/64d14e/64ac5e.
+Root acceptance8c5ff6af verifies30members; no formula repair. Native joint
+geometry D<=H and D<=O(c^2)H^3 improves the native contribution. All finite
+smooth preparation/BV resources and endpoint countercontrols are explicit.
+For fixed resources and tenth moments, J1 gives W2 O(c^2+epsilon^(2/5))
+and weighted graph trace O(c^2+epsilon^(4/5)); epsilon=(1+T)c^4.
+The sharper native piece does not improve the different time-dependent
+trace-comparison exponent automatically. Complete614line source comparison
+04711a12, freeze4b942412, is now frozen; root full read/acceptance pending.
+Reported precisions concern literal shifted constant recovery and uniform
+total variation; do not treat the handoff as completed verification.
 
-Finite-history630/d231954b freeze3c4a31a7 fully root-read99dd8b/47006b/e0ade1,
-acceptedfbcf2ac4 (28members). It tracks cross-histories, inserted-state
-moments, per-slot leakage and explicit time/variation resources. Root231
-fully reread9132a8 and compared in FINITE_HISTORY_ROOT_COMPARISON.md.
-Its conditioning wording needs this precision: a positive uniform success
-probability is sufficient; vanishing probabilities can work if divided
-errors vanish. No displayed formula repair. Frozen originals remain.
+Observable687/e2e62b81 freeze12acad6e is recovered predecessor work,
+not a fresh independent proof relative to the original draft.85evidence
+members and26preserved predecessor files are bound; root full read pending.
+Two native transport failures preceded recovery, not math failures. Worker
+observable_correlations_recovery now source-compares it against the hidden-
+until-freeze root236/96778c85. New comparison output not yet inspected.
 
-BV/local-energy613/039d114b freeze08239379 fully read in the same three
-chunks, acceptedaadbcb13 (28members). All B1-B9 formulas accepted within
-their hypotheses; native joint geometry and target moment propagation are
-separate necessary proof steps. The two proposed growing-variation conditions
-are sufficient, with c*zeta^3 redundant under epsilon*zeta^(3r)->0.
+Root301/04f9c834 and root251/2b267b8c propose all-time fixed-normal-state
+finite physical correlations and total-variation energy-law convergence.
+They are unreviewed candidates. The energy-coordinate mechanism already
+exists in canonical ENERGY_ADAPTED_REFINEMENT/e8b34ef4,568lines, read fully
+after recovering the52token omission via4ac4b3. Root coauthored the older
+route brief: no historical blindness or coordinate novelty is claimed.
+ALL_TIME_ENERGY_TRANSPORT_SOURCE_RECONCILIATION.md records the precise
+relation: whole lattice energy band2/c versus current low energy band
+sqrt(2)/c, auxiliary transport only, new proposed fixed-target/all-time
+and bounded energy-measurement scope. Original roots remain unchanged.
 
-Corrected-dynamics source assembly freeze1397b1c6 has236members, three
-unchanged2380line accepted cores. Root read all334new wrapper and780program
-lines; truncated code recoveredc84826, binding metadatafac7de. Acceptance
-8df5f60b and review03a05171 authorize separate publication preparation.
-Actual identity rerunf0e7c9 exit0 in0.320s checked198aliases154archive files,
-zero mathematical predicates. Same-packet moment->kinetic dependency,
-six direct edges, four provisional relations and seven archive exclusions
-remain explicit. No fresh manual entire2714line assembled-body/raw-diff read
-is claimed; complete old body/comparison coverage is reused at exact bytes.
+prepared_pulse_independent now performs a neutral new-question derivation
+using the older energy-adapted note and accepted Current/Local/driven,
+dispersion, potential, preparation and own higher-moment proofs. Root301,
+root251, their evidence/reconciliation and unrelated worker output are
+excluded until the new proof freezes. Deliverable
+R/ALL_TIME_PREPARED_COMPARISON_INDEPENDENT.md, evidence
+R/all_time_prepared_comparison_independent/. No result preview yet.
 
-spatial_recovery_final now builds only
-R/corrected_dynamics_publication_preparation: source-pinned driver, runners,
-maps, stage pins and regular-PR template. DO NOT run it until root reads the
-exact new/changed code and projection. The worker must not mutate CW/Git/cache
-or run scientific/publication programs. Original source package stays frozen.
+All workers retain selected model/effort. Same-family separate derivations
+and source-exposed checks are not formal analytic, model-diverse or retained
+audit evidence. Current763082a6 remainsopen_gate. Preserve varying-state
+and long-hold full-density counterexamples; fixed-target preparation is a
+substantive extra premise. Intended3D/creator coverage remains open.
 
-corrected_kinetic_recovery now neutrally derives fixed smooth finite CAR
-correlation bounds uniform over all initial normal states. Root236/96778c85
-seal0ae38530 is hidden; it proposes free coefficient and interaction-picture
-cocycle norm comparison, bounded integrated drive resources and corrected
-T*c^a windows (T^2*c^a sufficient for bounded amplitudes through long T).
-Published driven624 supplies only the earlier qualitative compact-time route.
-Wait for a frozen new proof before source-exposed comparison.
+## Recovery and next steps
 
-prepared_pulse_independent now neutrally derives higher-moment energy
-endpoints, using accepted preparation and BV parents. Root238/7cf607b2
-seala396e6b9 is hidden and not independently accepted. Full saved-text reads
-b376cd/b35b41 repair prior truncatedd9a006. Proposed common-law Wp exponent
-1/p-1/q, weighted trace1-b/k, all finite localized commutator orders and
-polynomial variation propagation. J1 tenth-moment example gives2/5 and4/5.
-PreparedBV137/d885d336 seal947b6345 is also a hidden proposed composition.
-No new endpoint-worker result has been previewed.
+Bundle/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/all_time_higher_energy_recovery_20261013T051840Z.tar.gz, manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/all_time_higher_energy_recovery_20261013T051840Z.tar.MANIFEST.json; 207members.
+MAP7563 verified source/archive aliases; bookkeeping only.
+Prior HANDOFF archived athistory/20261013T051840Z_HANDOFF.md.gz. Active new-worker outputs
+excluded. Root proof/review bodies and failed routes preserved.
 
-All workers keep the selected model/effort. Same-family source-excluded
-derivations plus later exposed comparisons are not model diversity or formal
-analytic/retained audits. Local-pulse spatial escape71 remains unreviewed;
-microscopic creator coverage and intended3D realization remain open.
-
-## Recovery and boundaries
-
-Bundle/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_history_energy_recovery_20261013T044125Z.tar.gz; manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_history_energy_recovery_20261013T044125Z.tar.MANIFEST.json; 416members.
-MAP7354 byte-verified aliases, not mathematical validation.
-Active worker output excluded. Prior HANDOFF:history/20261013T044125Z_HANDOFF.md.gz.
-Historical failures/countercontrols, phase-placement repair and exact earlier
-publication/Lean scope survive in STATE and recovery. No prompt files changed.
-
+Next: full root reads of observable687 and comparison614/precisions;
+review and run publication package when ready; then milestone regular PR.
 Lock refreshed04:01:57Z, expires06:01:57Z; refresh before05:41:57Z.
-Next checkpoint05:10 or milestone. At deadline start no new research;
-preserve recovery, release lock and delete heartbeattoe-derivations-24-hour-campaign.
+Next checkpoint05:50 or substantive milestone. At fixed deadline stop new
+research, preserve recovery, release lock and delete heartbeat
+toe-derivations-24-hour-campaign. Never extend the deadline.

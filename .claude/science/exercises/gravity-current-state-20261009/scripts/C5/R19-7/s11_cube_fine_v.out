@@ -1,0 +1,60 @@
+bU=1: min d2E0/dv2 = -76.891 at v = 1.04 ; min gap 0.274 at v = 1.50
+   v=0.50 E0= -12.4576 gap=3.505 d2E0=     nan face-TT2 main=6.487 (S=0.125) axis-T2 main=8.14
+   v=0.60 E0=  -9.8664 gap=3.392 d2E0=  -5.257 face-TT2 main=5.532 (S=0.102) axis-T2 main=8.095
+   v=0.70 E0=  -7.3304 gap=2.98 d2E0=  -3.323 face-TT2 main=4.511 (S=0.098) axis-T2 main=8.082
+   v=0.80 E0=  -4.8289 gap=2.337 d2E0=  -3.280 face-TT2 main=3.441 (S=0.120) axis-T2 main=8.087
+   v=0.90 E0=  -2.3633 gap=1.557 d2E0=  -7.802 face-TT2 main=2.346 (S=0.210) axis-T2 main=8.114
+   v=0.92 E0=  -1.8773 gap=1.397 d2E0= -10.633 face-TT2 main=2.129 (S=0.252) axis-T2 main=8.125
+   v=0.94 E0=  -1.3956 gap=1.24 d2E0= -15.152 face-TT2 main=1.914 (S=0.312) axis-T2 main=8.138
+   v=0.96 E0=  -0.9199 gap=1.09 d2E0= -22.418 face-TT2 main=1.703 (S=0.399) axis-T2 main=8.156
+   v=0.98 E0=  -0.4532 gap=0.9539 d2E0= -33.812 face-TT2 main=1.5 (S=0.531) axis-T2 main=8.181
+   v=1.00 E0=   0.0000 gap=0.8404 d2E0= -49.950 face-TT2 main=1.309 (S=0.727) axis-T2 main=8.216
+   v=1.02 E0=   0.4332 gap=0.7631 d2E0= -67.455 face-TT2 main=1.137 (S=1.002) axis-T2 main=8.264
+   v=1.04 E0=   0.8394 gap=0.7361 d2E0= -76.891 face-TT2 main=0.9903 (S=1.339) axis-T2 main=8.326
+   v=1.06 E0=   1.2149 gap=0.7232 d2E0= -71.180 face-TT2 main=0.8733 (S=1.673) axis-T2 main=8.389
+   v=1.08 E0=   1.5619 gap=0.6445 d2E0= -55.531 face-TT2 main=0.7835 (S=1.942) axis-T2 main=8.427
+   v=1.10 E0=   1.8867 gap=0.5861 d2E0= -39.644 face-TT2 main=0.7149 (S=2.129) axis-T2 main=8.433
+   v=1.20 E0=   3.3459 gap=0.4343 d2E0=  -9.513 face-TT2 main=0.5219 (S=2.456) axis-T2 main=8.363
+   v=1.30 E0=   4.6943 gap=0.3604 d2E0=  -4.729 face-TT2 main=0.4191 (S=2.530) axis-T2 main=8.311
+   v=1.40 E0=   5.9933 gap=0.3111 d2E0=  -3.104 face-TT2 main=0.3493 (S=2.563) axis-T2 main=8.274
+   v=1.50 E0=   7.2608 gap=0.2745 d2E0=     nan face-TT2 main=0.2978 (S=2.584) axis-T2 main=8.246
+bU=2: min d2E0/dv2 = -568.338 at v = 1.00 ; min gap 0.0206 at v = 1.50
+   v=0.50 E0= -12.0279 gap=7.428 d2E0=     nan face-TT2 main=7.574 (S=0.001) axis-T2 main=7.998
+   v=0.60 E0=  -9.6144 gap=6.018 d2E0=  -0.226 face-TT2 main=6.116 (S=0.001) axis-T2 main=8.002
+   v=0.70 E0=  -7.2033 gap=4.557 d2E0=  -0.150 face-TT2 main=4.629 (S=0.001) axis-T2 main=8.005
+   v=0.80 E0=  -4.7936 gap=3.068 d2E0=  -0.121 face-TT2 main=3.123 (S=0.001) axis-T2 main=8.008
+   v=0.90 E0=  -2.3853 gap=1.561 d2E0=  -0.260 face-TT2 main=1.605 (S=0.002) axis-T2 main=8.011
+   v=0.92 E0=  -1.9039 gap=1.259 d2E0=  -0.437 face-TT2 main=1.301 (S=0.003) axis-T2 main=8.011
+   v=0.94 E0=  -1.4226 gap=0.9561 d2E0=  -0.951 face-TT2 main=0.9962 (S=0.005) axis-T2 main=8.012
+   v=0.96 E0=  -0.9418 gap=0.6536 d2E0=  -3.245 face-TT2 main=0.6916 (S=0.011) axis-T2 main=8.013
+   v=0.98 E0=  -0.4622 gap=0.3534 d2E0= -43.483 face-TT2 main=0.388 (S=0.034) axis-T2 main=8.015
+   v=1.00 E0=  -0.0000 gap=0.08757 d2E0=-568.338 face-TT2 main=0.1015 (S=0.727) axis-T2 main=8.031
+   v=1.02 E0=   0.2349 gap=0.04204 d2E0=-139.024 face-TT2 main=0.04204 (S=2.610) axis-T2 main=8.045
+   v=1.04 E0=   0.4141 gap=0.03795 d2E0=  -5.857 face-TT2 main=0.03795 (S=2.651) axis-T2 main=8.042
+   v=1.06 E0=   0.5910 gap=0.03596 d2E0=  -1.897 face-TT2 main=0.03596 (S=2.658) axis-T2 main=8.04
+   v=1.08 E0=   0.7671 gap=0.0345 d2E0=  -1.130 face-TT2 main=0.0345 (S=2.660) axis-T2 main=8.039
+   v=1.10 E0=   0.9428 gap=0.03329 d2E0=  -0.858 face-TT2 main=0.03329 (S=2.661) axis-T2 main=8.038
+   v=1.20 E0=   1.8169 gap=0.0287 d2E0=  -0.504 face-TT2 main=0.0287 (S=2.663) axis-T2 main=8.034
+   v=1.30 E0=   2.6859 gap=0.02535 d2E0=  -0.377 face-TT2 main=0.02535 (S=2.664) axis-T2 main=8.032
+   v=1.40 E0=   3.5510 gap=0.02272 d2E0=  -0.295 face-TT2 main=0.02272 (S=2.664) axis-T2 main=8.029
+   v=1.50 E0=   4.4132 gap=0.0206 d2E0=     nan face-TT2 main=0.0206 (S=2.665) axis-T2 main=8.027
+bU=3: min d2E0/dv2 = -766.848 at v = 1.00 ; min gap 0.00229 at v = 1.50
+   v=0.50 E0= -12.0028 gap=7.929 d2E0=     nan face-TT2 main=7.937 (S=0.000) axis-T2 main=7.999
+   v=0.60 E0=  -9.6013 gap=6.351 d2E0=  -0.026 face-TT2 main=6.358 (S=0.000) axis-T2 main=8
+   v=0.70 E0=  -7.2000 gap=4.768 d2E0=  -0.017 face-TT2 main=4.774 (S=0.000) axis-T2 main=8.001
+   v=0.80 E0=  -4.7988 gap=3.182 d2E0=  -0.012 face-TT2 main=3.187 (S=0.000) axis-T2 main=8.001
+   v=0.90 E0=  -2.3978 gap=1.594 d2E0=  -0.011 face-TT2 main=1.598 (S=0.000) axis-T2 main=8.001
+   v=0.92 E0=  -1.9177 gap=1.277 d2E0=  -0.014 face-TT2 main=1.281 (S=0.000) axis-T2 main=8.002
+   v=0.94 E0=  -1.4375 gap=0.9589 d2E0=  -0.024 face-TT2 main=0.9627 (S=0.000) axis-T2 main=8.002
+   v=0.96 E0=  -0.9573 gap=0.6411 d2E0=  -0.072 face-TT2 main=0.6448 (S=0.000) axis-T2 main=8.002
+   v=0.98 E0=  -0.4772 gap=0.3233 d2E0=  -7.474 face-TT2 main=0.3269 (S=0.001) axis-T2 main=8.002
+   v=1.00 E0=  -0.0000 gap=0.0114 d2E0=-766.848 face-TT2 main=0.01186 (S=0.727) axis-T2 main=8.004
+   v=1.02 E0=   0.1704 gap=0.003568 d2E0= -20.527 face-TT2 main=0.003568 (S=2.666) axis-T2 main=8.005
+   v=1.04 E0=   0.3326 gap=0.003451 d2E0=  -0.162 face-TT2 main=0.003451 (S=2.666) axis-T2 main=8.005
+   v=1.06 E0=   0.4948 gap=0.003365 d2E0=  -0.105 face-TT2 main=0.003365 (S=2.667) axis-T2 main=8.005
+   v=1.08 E0=   0.6569 gap=0.003289 d2E0=  -0.090 face-TT2 main=0.003289 (S=2.666) axis-T2 main=8.005
+   v=1.10 E0=   0.8189 gap=0.003219 d2E0=  -0.082 face-TT2 main=0.003219 (S=2.667) axis-T2 main=8.005
+   v=1.20 E0=   1.6288 gap=0.002917 d2E0=  -0.060 face-TT2 main=0.002917 (S=2.666) axis-T2 main=8.004
+   v=1.30 E0=   2.4380 gap=0.002671 d2E0=  -0.047 face-TT2 main=0.002671 (S=2.667) axis-T2 main=8.004
+   v=1.40 E0=   3.2468 gap=0.002464 d2E0=  -0.038 face-TT2 main=0.002464 (S=2.667) axis-T2 main=8.004
+   v=1.50 E0=   4.0552 gap=0.002288 d2E0=     nan face-TT2 main=0.002288 (S=2.667) axis-T2 main=8.003

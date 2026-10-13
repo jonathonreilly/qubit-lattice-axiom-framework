@@ -1,0 +1,28 @@
+torus (2, 2, 2, 0, 0, 0) V=8 N=1024  #gamma=0 states in coset: 88
+   bU=1 min (v>0): D=11.248  degeneracy 24  E of minimisers [0]  min_m Delta [0]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 4, 4, 0), (0, 0, 0, 4, 4, 0), (0, 0, 0, 4, 0, 4), (0, 0, 0, 4, 4, 4)]
+   bU=1 max (v<0): D=4537.79  degeneracy 2  E of minimisers [24]  min_m Delta [-12]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 4, 4, 4), (0, 0, 0, 4, 4, 4)]
+   bU=2 min (v>0): D=8.43958  degeneracy 24  E of minimisers [0]  min_m Delta [0]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 4, 4, 0), (0, 0, 0, 4, 4, 0), (0, 0, 0, 4, 0, 4), (0, 0, 0, 4, 4, 4)]
+   bU=2 max (v<0): D=1.37358e+06  degeneracy 2  E of minimisers [24]  min_m Delta [-12]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 4, 4, 4), (0, 0, 0, 4, 4, 4)]
+   bU=3 min (v>0): D=8.05949  degeneracy 24  E of minimisers [0]  min_m Delta [0]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 4, 4, 0), (0, 0, 0, 4, 4, 0), (0, 0, 0, 4, 0, 4), (0, 0, 0, 4, 4, 4)]
+   bU=3 max (v<0): D=5.29186e+08  degeneracy 2  E of minimisers [24]  min_m Delta [-12]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 4, 4, 4), (0, 0, 0, 4, 4, 4)]
+torus (2, 1, 3, 1, 0, 0) V=6 N=8192  #gamma=0 states in coset: 152
+   bU=1 min (v>0): D=5.22656  degeneracy 152  E of minimisers [0]  min_m Delta [2]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0)]
+   bU=1 max (v<0): D=57.3025  degeneracy 192  E of minimisers [8]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(4, 4, 0, 2, 2, 2), (4, 4, 0, 2, 2, 2), (4, 4, 0, 2, 4, 4), (4, 4, 0, 2, 4, 4)]
+   bU=2 min (v>0): D=1.73392  degeneracy 152  E of minimisers [0]  min_m Delta [2]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0)]
+   bU=2 max (v<0): D=283.505  degeneracy 192  E of minimisers [8]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(4, 4, 0, 2, 2, 2), (4, 4, 0, 2, 2, 2), (4, 4, 0, 2, 4, 4), (4, 4, 0, 2, 4, 4)]
+   bU=3 min (v>0): D=0.612317  degeneracy 152  E of minimisers [0]  min_m Delta [2]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0)]
+   bU=3 max (v<0): D=1780.4  degeneracy 192  E of minimisers [8]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(4, 4, 0, 2, 2, 2), (4, 4, 0, 2, 2, 2), (4, 4, 0, 2, 4, 4), (4, 4, 0, 2, 4, 4)]
+torus (2, 1, 4, 1, 0, 0) V=8 N=65536  #gamma=0 states in coset: 656
+   bU=1 min (v>0): D=6.96875  degeneracy 656  E of minimisers [0]  min_m Delta [2]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (8, 0, 0, 0, 0, 0)]
+   bU=1 max (v<0): D=102.605  degeneracy 16  E of minimisers [16]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0)]
+   bU=2 min (v>0): D=2.31189  degeneracy 656  E of minimisers [0]  min_m Delta [2]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (8, 0, 0, 0, 0, 0)]
+   bU=2 max (v<0): D=555.01  degeneracy 16  E of minimisers [16]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0)]
+   bU=3 min (v>0): D=0.816423  degeneracy 656  E of minimisers [0]  min_m Delta [2]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (4, 0, 0, 0, 0, 0), (8, 0, 0, 0, 0, 0)]
+   bU=3 max (v<0): D=3548.8  degeneracy 16  E of minimisers [16]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0), (4, 4, 0, 4, 0, 0)]
+torus (2, 1, 2, 1, 0, 0) V=4 N=16  #gamma=0 states in coset: 8
+   bU=1 min (v>0): D=8.54134  degeneracy 8  E of minimisers [0]  min_m Delta [0]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (0, 0, 0, 4, 0, 0), (0, 0, 0, 0, 4, 0), (0, 0, 0, 4, 4, 0)]
+   bU=1 max (v<0): D=37.5562  degeneracy 8  E of minimisers [4]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2)]
+   bU=2 min (v>0): D=8.07326  degeneracy 8  E of minimisers [0]  min_m Delta [0]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (0, 0, 0, 4, 0, 0), (0, 0, 0, 0, 4, 0), (0, 0, 0, 4, 4, 0)]
+   bU=2 max (v<0): D=226.393  degeneracy 8  E of minimisers [4]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2)]
+   bU=3 min (v>0): D=8.00992  degeneracy 8  E of minimisers [0]  min_m Delta [0]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 0, 0, 0), (0, 0, 0, 4, 0, 0), (0, 0, 0, 0, 4, 0), (0, 0, 0, 4, 4, 0)]
+   bU=3 max (v<0): D=1621.72  degeneracy 8  E of minimisers [4]  min_m Delta [-4]  label totals (xx yy zz xy yz xz) [(0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2), (0, 0, 0, 2, 2, 2)]

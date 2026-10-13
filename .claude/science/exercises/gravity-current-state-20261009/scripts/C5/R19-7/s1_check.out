@@ -1,0 +1,11 @@
+L=2: d=10 N=1024 moves(nonzero)=32 identity moves dropped=0 max|dE|=12
+bU=1 v=t: E0=1.316e-13 |H psi_RK|=4.23e-15 overlap(g,psi_RK)=1.000000000000 gap=0.840445 (R19-1: 0.840445 / 0.087565)
+   TT2 k=(0,0,pi): S=1.57407 SMA=8.2636 main=8.2159  (R19-1 bU=1: S=1.57407 f/S=8.2636 main 8.2159)
+   Lanczos(80): S=1.57407 SMA=8.2636 main=8.2159 low=8.2159 vs dense low=8.2159
+bU=2 v=t: E0=-7.253e-11 |H psi_RK|=4.97e-15 overlap(g,psi_RK)=1.000000000000 gap=0.087565 (R19-1: 0.840445 / 0.087565)
+   TT2 k=(0,0,pi): S=1.63534 SMA=8.0349 main=8.0314  (R19-1 bU=1: S=1.57407 f/S=8.2636 main 8.2159)
+   Lanczos(80): S=1.63534 SMA=8.0349 main=8.0314 low=8.0314 vs dense low=8.0314
+bU=0 v=0: spectrum - E0 (first 6) = [0. 8. 8. 8. 8. 8.]
+bU=0 v=0.5: spectrum - E0 (first 6) = [0. 8. 8. 8. 8. 8.]
+bU=0 v=2: spectrum - E0 (first 6) = [0. 8. 8. 8. 8. 8.]
+time 0.5s

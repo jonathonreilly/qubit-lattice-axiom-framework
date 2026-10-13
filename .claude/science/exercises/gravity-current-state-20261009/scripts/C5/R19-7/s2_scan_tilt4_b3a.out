@@ -1,0 +1,29 @@
+torus HNF [2, 1, 4, 1, 0, 0] V=8 d=16 N=65536 nonzero moves=24 (identity dropped 8) max|dE|=4 build 0.0s
+bU=3.00 v=0.250 E0=-6.197404 gaps(w1..w3-w0)=[0.067459 0.144306] ground amp min/max=7.77e-09/2.51e-02
+   axis    m= 0 k=(0.000,0.000,0.000) | TT1: S=0.7009 sma=1.8124 main=0.6842 low=0.6842 r20=0.6842 | TT2: S=0.0353 sma=6.0546 main=3.0259 low=3.0259 r20=3.0293 | V1: S=2.1394 sma=4.3558 main=4.2081 low=4.2081 r20=4.2094 | V2: S=2.1394 sma=4.3558 main=4.2081 low=4.2081 r20=4.2094 | S1: S=0.2336 sma=1.8124 main=0.6842 low=0.6842 r20=0.6842
+   axis    m= 1 k=(0.000,0.000,1.571) | TT1: S=0 | TT2: S=0.9665 sma=0.2211 main=0.1443 low=0.1443 r20=0.1443 | V1: S=0.8913 sma=6.1804 main=5.1226 low=4.2348 r20=5.1188 | V2: S=0.8913 sma=6.1804 main=5.1226 low=4.2348 r20=5.1188 | S1: S=0
+   axis    m= 2 k=(0.000,0.000,3.142) | TT1: S=0.7009 sma=1.8124 main=0.6842 low=0.6842 r20=0.6842 | TT2: S=0.0353 sma=6.0546 main=3.0259 low=3.0259 r20=3.0293 | V1: S=0.0781 sma=21.7386 main=8.1307 low=7.9562 r20=8.3912 | V2: S=0.0781 sma=21.7386 main=8.1307 low=7.9562 r20=8.3912 | S1: S=0.2336 sma=1.8124 main=0.6842 low=0.6842 r20=0.6842
+   face    m=-1 k=(3.142,3.142,0.000) | TT1: S=0.0920 sma=4.0329 main=2.6306 low=2.6306 r20=2.6332 | TT2: S=0 | V1: S=0 | V2: S=0.3237 sma=3.9237 main=3.2338 low=3.2338 r20=3.2338 | S1: S=0.0357 sma=7.4633 main=2.6306 low=2.6306 r20=2.7463
+   body    m=-1 k=(3.142,3.142,3.142) | TT1: S=0.0958 sma=3.9327 main=3.2338 low=2.6306 r20=2.8084 | TT2: S=0.0715 sma=3.9597 main=2.6306 low=2.6306 r20=2.6591 | V1: S=0.0962 sma=4.7726 main=3.2339 low=2.6307 r20=3.1044 | V2: S=0.1759 sma=4.0784 main=3.2338 low=2.6307 r20=3.2039 | S1: S=0.0120 sma=5.9119 main=2.6306 low=2.6306 r20=2.6317
+   [15.6s]
+bU=3.00 v=0.500 E0=-2.325533 gaps(w1..w3-w0)=[0.007661 0.025758] ground amp min/max=4.39e-10/2.95e-02
+   axis    m= 0 k=(0.000,0.000,0.000) | TT1: S=0.6976 sma=1.5964 main=0.3072 low=0.3072 r20=0.3072 | TT2: S=0.0070 sma=9.5549 main=1.1078 low=1.1078 r20=1.1131 | V1: S=2.3779 sma=3.6065 main=3.5457 low=1.9014 r20=1.9199 | V2: S=2.3779 sma=3.6065 main=3.5457 low=1.9014 r20=1.9199 | S1: S=0.2325 sma=1.5964 main=0.3072 low=0.3072 r20=0.3072
+   axis    m= 1 k=(0.000,0.000,1.571) | TT1: S=0 | TT2: S=0.9949 sma=0.0669 main=0.0258 low=0.0258 r20=0.0258 | V1: S=0.8049 sma=5.6998 main=5.1215 low=3.5458 r20=5.1197 | V2: S=0.8049 sma=5.6998 main=5.1215 low=3.5458 r20=5.1197 | S1: S=0
+   axis    m= 2 k=(0.000,0.000,3.142) | TT1: S=0.6976 sma=1.5964 main=0.3072 low=0.3072 r20=0.3072 | TT2: S=0.0070 sma=9.5549 main=1.1078 low=1.1078 r20=1.1131 | V1: S=0.0123 sma=48.6232 main=9.9657 low=8.1370 r20=9.8679 | V2: S=0.0123 sma=48.6232 main=9.9657 low=8.1370 r20=9.8679 | S1: S=0.2325 sma=1.5964 main=0.3072 low=0.3072 r20=0.3072
+   face    m=-1 k=(3.142,3.142,0.000) | TT1: S=0.0664 sma=4.4409 main=3.9425 low=1.0918 r20=1.0964 | TT2: S=0 | V1: S=0 | V2: S=0.3532 sma=3.1532 main=2.7702 low=2.7702 r20=2.7702 | S1: S=0.0228 sma=6.2583 main=3.9425 low=1.0918 r20=1.1038
+   body    m=-1 k=(3.142,3.142,3.142) | TT1: S=0.0964 sma=3.2869 main=2.7701 low=1.0962 r20=1.1037 | TT2: S=0.0536 sma=3.8737 main=2.7729 low=1.0962 r20=1.1001 | V1: S=0.1002 sma=3.8137 main=2.7702 low=1.1017 r20=1.9200 | V2: S=0.1904 sma=3.2691 main=2.7702 low=1.1017 r20=2.2131 | S1: S=0.0018 sma=12.4260 main=1.0918 low=1.0918 r20=1.0965
+   [77.5s]
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R19-7/scripts/s2_scan.py", line 22, in <module>
+    E0, g, w, dense = ground(mod, v, bU)
+                      ^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R19-7/scripts/ed.py", line 89, in ground
+    w, U = eigsh(op, k=kk, which='SA', tol=tl, maxiter=20000, ncv=max(20, 4*kk+8))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1778, in eigsh
+    params.iterate()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 624, in iterate
+    self._raise_no_convergence()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 421, in _raise_no_convergence
+    raise ArpackNoConvergence(f"No convergence ({num_iter} iterations, "
+scipy.sparse.linalg._eigen.arpack.arpack.ArpackNoConvergence: ARPACK error -1: No convergence (20001 iterations, 2/3 eigenvectors converged)

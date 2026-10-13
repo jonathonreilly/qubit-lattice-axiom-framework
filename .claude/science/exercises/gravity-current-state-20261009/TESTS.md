@@ -7649,3 +7649,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **MASS-OBSTRUCTED:** some row diverges or is non-analytic as m → 0, so that no single law serves all SM masses (refereed).
   - **OPEN:** otherwise.
 - **Expectation.** ONE-LAW. The rows are analytic in m² for gapped valleys, so the corrections are ~(m·a)² ≲ 1e-34. The main risk is IR logs in the Dirac or photon μ rows.
+- **R19-7 (off-RK Z₂ tensor dynamics): worker reading OPEN.** NO-LINEAR holds in some regimes; LINEAR-T2-EVIDENCE is not met. The method is pre-stated in `agents/C5_R19-7_method.md`. The family is sign-free for every v.
+  - **Feasibility.** Exact diagonalization is limited to ≤ 8-site clusters, which are all distorted by wrap-around. The "≥ 3 k-points" condition cannot be reached by ED here.
+  - **No linear T₂ anywhere.** The T₂ pole is either flat in k or has its minimum at finite wavevector. S_TT never grows toward k = 0.
+    - On the v < t side it is a gapped flat paramagnet (exact at v = 0).
+    - The RK point is a sharp avoided crossing.
+    - On the v > t side the system collapses onto a degenerate γ = 0 manifold: soft, but flat, not propagating.
+  - **Lemma B:** off RK the TT f-sum stays k⁰.
+  - **Proposition C:** a linear T₂ branch in the k⁰ class forces S_TT ≳ 1/|k|.
+  - **Lemma G:** the registered moves obey a local F₂ relation per 3³ block, so any pair-insertion QMC is non-ergodic.
+  - **Prices:** P-r19-7a (v/t); P96 sharpened.
+  - Not a no-go, so a referee is optional.

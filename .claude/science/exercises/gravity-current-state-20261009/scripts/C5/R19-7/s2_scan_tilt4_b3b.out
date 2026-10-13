@@ -1,0 +1,1 @@
+STOPPED ~04:42Z: no ground state converged within ~4 min (eigsh k=3 tol 1e-9; LOBPCG with a Jacobi preconditioner also failed to converge in 2 min, t_lobpcg.py): the near-degenerate gamma=0 manifold (656 states, s7) at v >= t. Points not used.

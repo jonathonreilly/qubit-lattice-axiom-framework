@@ -1,0 +1,5 @@
+torus (2, 2, 2, 0, 0, 0)   V=  8 moves(nonzero)= 32  moves touching each slot (type xx yy zz xy yz xz): [np.int64(0), np.int64(0), np.int64(0), np.int64(6), np.int64(6), np.int64(6)]  charged edges from n=0: [0, 6]
+torus (2, 1, 3, 1, 0, 0)   V=  6 moves(nonzero)= 18  moves touching each slot (type xx yy zz xy yz xz): [np.int64(2), np.int64(2), np.int64(0), np.int64(2), np.int64(6), np.int64(6)]  charged edges from n=0: [2, 4]
+torus (2, 1, 4, 1, 0, 0)   V=  8 moves(nonzero)= 24  moves touching each slot (type xx yy zz xy yz xz): [np.int64(2), np.int64(2), np.int64(0), np.int64(2), np.int64(6), np.int64(6)]  charged edges from n=0: [2, 4]
+torus (1, 1, 4, 0, 0, 0)   V=  4 moves(nonzero)= 12  moves touching each slot (type xx yy zz xy yz xz): [np.int64(2), np.int64(2), np.int64(0), np.int64(2), np.int64(0), np.int64(0)]  charged edges from n=0: [0]
+torus (4, 4, 4, 0, 0, 0)   V= 64 moves(nonzero)=256  moves touching each slot (type xx yy zz xy yz xz): [np.int64(4), np.int64(4), np.int64(4), np.int64(6), np.int64(6), np.int64(6)]  charged edges from n=0: [4, 6]

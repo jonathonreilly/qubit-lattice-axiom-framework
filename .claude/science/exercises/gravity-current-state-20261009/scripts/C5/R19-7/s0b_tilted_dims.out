@@ -1,0 +1,21 @@
+cubic L=2: G equal True P equal True
+cubic L=3: G equal True P equal True
+HNF (2, 2, 2, 0, 0, 0) V=8 moves=32 d=10  moves Gn even True  nonzero moves 32
+HNF (2, 1, 2, 1, 0, 0) V=4 moves=16 d=4  moves Gn even True  nonzero moves 12
+HNF (2, 1, 3, 1, 0, 0) V=6 moves=24 d=13  moves Gn even True  nonzero moves 18
+HNF (2, 1, 4, 1, 0, 0) V=8 moves=32 d=16  moves Gn even True  nonzero moves 24
+HNF (2, 1, 5, 1, 0, 0) V=10 moves=40 d=25  moves Gn even True  nonzero moves 30
+HNF (2, 1, 6, 1, 0, 0) V=12 moves=48 d=28  moves Gn even True  nonzero moves 36
+HNF (2, 1, 8, 1, 0, 0) V=16 moves=64 d=40  moves Gn even True  nonzero moves 48
+HNF (2, 2, 3, 0, 0, 0) V=12 moves=48 d=28  moves Gn even True  nonzero moves 48
+HNF (2, 2, 4, 1, 0, 0) V=16 moves=64 d=40  moves Gn even True  nonzero moves 64
+HNF (2, 2, 4, 0, 1, 1) V=16 moves=64 d=40  moves Gn even True  nonzero moves 64
+HNF (2, 2, 2, 1, 1, 1) V=8 moves=32 d=19  moves Gn even True  nonzero moves 32
+HNF (1, 1, 4, 0, 0, 0) V=4 moves=16 d=7  moves Gn even True  nonzero moves 12
+HNF (1, 1, 8, 0, 0, 0) V=8 moves=32 d=19  moves Gn even True  nonzero moves 24
+HNF (1, 1, 6, 0, 0, 0) V=6 moves=24 d=13  moves Gn even True  nonzero moves 18
+HNF (1, 2, 4, 0, 0, 0) V=8 moves=32 d=16  moves Gn even True  nonzero moves 24
+HNF (2, 1, 4, 1, 1, 0) V=8 moves=32 d=19  moves Gn even True  nonzero moves 24
+HNF (2, 1, 6, 1, 1, 0) V=12 moves=48 d=31  moves Gn even True  nonzero moves 36
+HNF (2, 1, 4, 0, 0, 0) V=8 moves=32 d=16  moves Gn even True  nonzero moves 24
+HNF (2, 1, 6, 0, 0, 0) V=12 moves=48 d=28  moves Gn even True  nonzero moves 36

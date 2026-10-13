@@ -1,0 +1,11 @@
+L=2 cubic: G equal True, P equal True
+L=3 cubic: G equal True, P equal True
+Ls=(2, 2, 2) slots=48 moves=32 span dim d=10  ker_F2(G) dim=31  all moves Gn even: True
+Ls=(2, 2, 3) slots=72 moves=48 span dim d=28  ker_F2(G) dim=40  all moves Gn even: True
+Ls=(2, 2, 4) slots=96 moves=64 span dim d=34  ker_F2(G) dim=55  all moves Gn even: True
+Ls=(2, 2, 5) slots=120 moves=80 span dim d=52  ker_F2(G) dim=64  all moves Gn even: True
+Ls=(2, 2, 6) slots=144 moves=96 span dim d=58  ker_F2(G) dim=79  all moves Gn even: True
+Ls=(2, 2, 8) slots=192 moves=128 span dim d=82  ker_F2(G) dim=103  all moves Gn even: True
+Ls=(1, 2, 4) slots=48 moves=32 span dim d=16  ker_F2(G) dim=28  all moves Gn even: True
+Ls=(2, 3, 3) slots=108 moves=72 span dim d=49  ker_F2(G) dim=57  all moves Gn even: True
+Ls=(3, 3, 3) slots=162 moves=108 span dim d=78  ker_F2(G) dim=84  all moves Gn even: True

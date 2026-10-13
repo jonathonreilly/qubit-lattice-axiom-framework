@@ -1,0 +1,28 @@
+s-quadrature check: sum w = 0.99823 (1), sum w s^2 = 1.00000 (1), sum w s^4 = 2.25000 (exact 9/4 = 2.25)
+static delta(g) = E0(K(g)) - E0(K_B) per inserted site, m=0.0: g=0.00: +0.03093, g=0.25: +0.03445, g=0.50: +0.03097, g=0.75: +0.02013, g=1.00: +0.00000
+   (delta(0) = E0(old) + site-local zero point - E0(new); for comparison e0 = 1.19380 per site)
+static delta(g) = E0(K(g)) - E0(K_B) per inserted site, m=1.0: g=0.00: +0.02283, g=0.25: +0.02478, g=0.50: +0.02182, g=0.75: +0.01376, g=1.00: +0.00000
+   (delta(0) = E0(old) + site-local zero point - E0(new); for comparison e0 = 1.30003 per site)
+=== m = 0.0: ramped plane insertion, per inserted site ===
+  T=  1 N= 50: eps_inf = 3.6619e-02 ; A_fix = 4.8974e-02 ; A_law = +3.7408e-02 ; int delta dt = +2.2192e-02 ; [0s]
+  T=  2 N= 52: eps_inf = 1.0662e-02 ; A_fix = 6.9541e-02 ; A_law = +5.5575e-02 ; int delta dt = +4.3611e-02 ; [1s]
+  T=  4 N= 56: eps_inf = 1.9887e-03 ; A_fix = 1.0859e-01 ; A_law = +9.1542e-02 ; int delta dt = +8.6449e-02 ; [1s]
+  T=  8 N= 64: eps_inf = 6.6293e-04 ; A_fix = 2.0418e-01 ; A_law = +1.7529e-01 ; int delta dt = +1.7213e-01 ; [4s]
+  T= 16 N= 80: eps_inf = 1.4431e-04 ; A_fix = 3.9968e-01 ; A_law = +3.4510e-01 ; int delta dt = +3.4348e-01 ; [10s]
+  T= 32 N=112: eps_inf = 3.2773e-05 ; A_fix = 7.9453e-01 ; A_law = +6.8700e-01 ; int delta dt = +6.8619e-01 ; [40s]
+  T= 64 N=176: eps_inf = 7.4767e-06 ; A_fix = 1.5864e+00 ; A_law = +1.3720e+00 ; int delta dt = +1.3716e+00 ; [181s]
+=== m = 0.3: ramped plane insertion, per inserted site ===
+  T=  1 N= 50: eps_inf = 3.3811e-02 ; A_fix = 4.5927e-02 ; A_law = +3.5474e-02 ; int delta dt = +2.1341e-02 ; [181s]
+  T=  2 N= 52: eps_inf = 8.9563e-03 ; A_fix = 6.4468e-02 ; A_law = +5.2380e-02 ; int delta dt = +4.1933e-02 ; [181s]
+  T=  4 N= 56: eps_inf = 1.5018e-03 ; A_fix = 1.0136e-01 ; A_law = +8.7118e-02 ; int delta dt = +8.3117e-02 ; [182s]
+  T=  8 N= 64: eps_inf = 3.1239e-04 ; A_fix = 1.9137e-01 ; A_law = +1.6740e-01 ; int delta dt = +1.6549e-01 ; [184s]
+  T= 16 N= 80: eps_inf = 3.0239e-05 ; A_fix = 3.7657e-01 ; A_law = +3.3092e-01 ; int delta dt = +3.3023e-01 ; [190s]
+  T= 32 N=112: eps_inf = 1.4601e-06 ; A_fix = 7.5056e-01 ; A_law = +6.5998e-01 ; int delta dt = +6.5970e-01 ; [212s]
+=== m = 1.0: ramped plane insertion, per inserted site ===
+  T=  1 N= 50: eps_inf = 2.0822e-02 ; A_fix = 3.1317e-02 ; A_law = +2.5062e-02 ; int delta dt = +1.5934e-02 ; [212s]
+  T=  2 N= 52: eps_inf = 3.0582e-03 ; A_fix = 4.1963e-02 ; A_law = +3.6114e-02 ; int delta dt = +3.1298e-02 ; [213s]
+  T=  4 N= 56: eps_inf = 4.0332e-04 ; A_fix = 6.9832e-02 ; A_law = +6.3517e-02 ; int delta dt = +6.2026e-02 ; [213s]
+  T=  8 N= 64: eps_inf = 1.5198e-05 ; A_fix = 1.3461e-01 ; A_law = +1.2398e-01 ; int delta dt = +1.2348e-01 ; [216s]
+  T= 16 N= 80: eps_inf = 7.8814e-08 ; A_fix = 2.6727e-01 ; A_law = +2.4661e-01 ; int delta dt = +2.4639e-01 ; [222s]
+  T= 32 N=112: eps_inf = 3.1774e-11 ; A_fix = 5.3363e-01 ; A_law = +4.9232e-01 ; int delta dt = +4.9221e-01 ; [255s]
+elapsed 255.3 s

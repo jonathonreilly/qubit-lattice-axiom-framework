@@ -1,0 +1,32 @@
+=== 1D ring, point insertion, scalar (old ring N sites) ===
+  m=0.05 N=64: dE(P-loc, omega_loc=1.4151) = 0.568639 ; dE(P-fix, omega_ref=1) = 0.611716 ; E0 increment = 0.637759
+  m=0.05 N=128: dE(P-loc, omega_loc=1.4151) = 0.559860 ; dE(P-fix, omega_ref=1) = 0.602936 ; E0 increment = 0.637730
+  m=0.05 N=256: dE(P-loc, omega_loc=1.4151) = 0.559603 ; dE(P-fix, omega_ref=1) = 0.602679 ; E0 increment = 0.637729
+  m=0.30 N=64: dE(P-loc, omega_loc=1.4457) = 0.271319 ; dE(P-fix, omega_ref=1) = 0.320977 ; E0 increment = 0.663666
+  m=0.30 N=128: dE(P-loc, omega_loc=1.4457) = 0.271319 ; dE(P-fix, omega_ref=1) = 0.320977 ; E0 increment = 0.663666
+  m=0.30 N=256: dE(P-loc, omega_loc=1.4457) = 0.271319 ; dE(P-fix, omega_ref=1) = 0.320977 ; E0 increment = 0.663666
+  m=1.00 N=64: dE(P-loc, omega_loc=1.7321) = 0.089796 ; dE(P-fix, omega_ref=1) = 0.223771 ; E0 increment = 0.838805
+  m=1.00 N=128: dE(P-loc, omega_loc=1.7321) = 0.089796 ; dE(P-fix, omega_ref=1) = 0.223771 ; E0 increment = 0.838805
+  m=1.00 N=256: dE(P-loc, omega_loc=1.7321) = 0.089796 ; dE(P-fix, omega_ref=1) = 0.223771 ; E0 increment = 0.838805
+  check P-fix - P-loc = (omega_ref - omega_loc)^2/(4 omega_ref): 0.043076
+=== 3D plane insertion, scalar, per inserted site (Lx -> Lx+1, Lp x Lp antiperiodic transverse) ===
+  m=0.0 Lp=8: dE/site: P-loc (omega_loc=2.4495) = 0.058747 ; P-fix = 0.584002 ; P-plane (2D-GS plane) = 0.040129 ; E0 increment/site = 1.193841
+  m=0.0 Lp=16: dE/site: P-loc (omega_loc=2.4495) = 0.059431 ; P-fix = 0.584686 ; P-plane (2D-GS plane) = 0.040813 ; E0 increment/site = 1.193803
+  m=0.1 Lp=8: dE/site: P-loc (omega_loc=2.4515) = 0.058433 ; P-fix = 0.585168 ; P-plane (2D-GS plane) = 0.039868 ; E0 increment/site = 1.194974
+  m=0.1 Lp=16: dE/site: P-loc (omega_loc=2.4515) = 0.059035 ; P-fix = 0.585770 ; P-plane (2D-GS plane) = 0.040470 ; E0 increment/site = 1.194940
+  m=1.0 Lp=8: dE/site: P-loc (omega_loc=2.6458) = 0.040507 ; P-fix = 0.717631 ; P-plane (2D-GS plane) = 0.026123 ; E0 increment/site = 1.300034
+  m=1.0 Lp=16: dE/site: P-loc (omega_loc=2.6458) = 0.040510 ; P-fix = 0.717634 ; P-plane (2D-GS plane) = 0.026126 ; E0 increment/site = 1.300034
+=== 3D plane insertion, Wilson-Dirac (r = 1), per inserted site ===
+  m=0.0 Lp=8 Lx=32: dE/site: P-loc = 0.975567 ; P-fix (alpha_x half filling) = 6.975567 ; E0 increment/site = -6.557211
+  m=0.1 Lp=8 Lx=32: dE/site: P-loc = 0.933311 ; P-fix (alpha_x half filling) = 7.133311 ; E0 increment/site = -6.734919
+  m=1.0 Lp=8 Lx=32: dE/site: P-loc = 0.677308 ; P-fix (alpha_x half filling) = 8.677308 ; E0 increment/site = -8.396586
+=== injected energy per e-fold (= per Hubble time at H = const), P-loc (best product), a = l_P ===
+  rho_Lambda = 1.1338e-123 (Planck units)
+  scalar m=0.0: 3 dE = 1.7829e-01 -> 1.57e+122 rho_Lambda per Hubble time
+  scalar m=0.1: 3 dE = 1.7710e-01 -> 1.56e+122 rho_Lambda per Hubble time
+  scalar m=1.0: 3 dE = 1.2153e-01 -> 1.07e+122 rho_Lambda per Hubble time
+  Wilson-Dirac m=0.0: 3 dE = 2.9267e+00 -> 2.58e+123 rho_Lambda per Hubble time
+  Wilson-Dirac m=0.1: 3 dE = 2.7999e+00 -> 2.47e+123 rho_Lambda per Hubble time
+  Wilson-Dirac m=1.0: 3 dE = 2.0319e+00 -> 1.79e+123 rho_Lambda per Hubble time
+  photon (transverse content = 2 massless scalars; Gauss-law bookkeeping NOT built): 3 dE ~ 3.5659e-01 -> 3.15e+122 rho_Lambda
+elapsed 1.5 s

@@ -1,0 +1,66 @@
+H0 = 1.1775e-61 t_P^-1 ; rho_Lambda = 1.1338e-123 ; standing factor 8 pi/(Omega_L H0) = 3.116e+62 per unit A
+=== m = 0.0 (ramped plane insertion, per inserted site) ===
+  T=  1: net 3 eps_inf = 9.69e+121 rho_L per Hubble time ; standing (A_law) = 1.17e+61 rho_L ; (A_fix) = 1.53e+61 rho_L
+  T=  2: net 3 eps_inf = 2.82e+121 rho_L per Hubble time ; standing (A_law) = 1.73e+61 rho_L ; (A_fix) = 2.17e+61 rho_L
+  T=  4: net 3 eps_inf = 5.26e+120 rho_L per Hubble time ; standing (A_law) = 2.85e+61 rho_L ; (A_fix) = 3.38e+61 rho_L
+  T=  8: net 3 eps_inf = 1.75e+120 rho_L per Hubble time ; standing (A_law) = 5.46e+61 rho_L ; (A_fix) = 6.36e+61 rho_L
+  T= 16: net 3 eps_inf = 3.82e+119 rho_L per Hubble time ; standing (A_law) = 1.08e+62 rho_L ; (A_fix) = 1.25e+62 rho_L
+  T= 32: net 3 eps_inf = 8.67e+118 rho_L per Hubble time ; standing (A_law) = 2.14e+62 rho_L ; (A_fix) = 2.48e+62 rho_L
+  T= 64: net 3 eps_inf = 1.98e+118 rho_L per Hubble time ; standing (A_law) = 4.27e+62 rho_L ; (A_fix) = 4.94e+62 rho_L
+  [checked, computed T only] min over T in {1,2,4,8,16,32,64} of (standing A_law + net per Hubble time) = 2.0e+118 rho_L (T = 64);
+     A_law grows ~linearly beyond the range; for T -> 0 net -> P-loc dE (larger), so this is the floor of the family
+  fit (T >= 8): eps_inf ~ 0.0578 T^-2.15 ; A_law slope dA/dT = 0.0214 (mean in-progress excess delta-bar)
+  [suggested; POWER-LAW extrapolation, valid only if the fit form holds; for gapped m it is superpolynomial] extrapolated over ~54 decades] net < rho_L needs T > 5.0e+56 t_P (Hubble time 8.5e+60 t_P);
+     standing at that T: 3.3e+117 rho_L
+     min over T of (standing + net per Hubble time) = 3.5e+80 rho_L at T = 3.5e+19 t_P
+=== m = 0.3 (ramped plane insertion, per inserted site) ===
+  T=  1: net 3 eps_inf = 8.95e+121 rho_L per Hubble time ; standing (A_law) = 1.11e+61 rho_L ; (A_fix) = 1.43e+61 rho_L
+  T=  2: net 3 eps_inf = 2.37e+121 rho_L per Hubble time ; standing (A_law) = 1.63e+61 rho_L ; (A_fix) = 2.01e+61 rho_L
+  T=  4: net 3 eps_inf = 3.97e+120 rho_L per Hubble time ; standing (A_law) = 2.71e+61 rho_L ; (A_fix) = 3.16e+61 rho_L
+  T=  8: net 3 eps_inf = 8.27e+119 rho_L per Hubble time ; standing (A_law) = 5.22e+61 rho_L ; (A_fix) = 5.96e+61 rho_L
+  T= 16: net 3 eps_inf = 8.00e+118 rho_L per Hubble time ; standing (A_law) = 1.03e+62 rho_L ; (A_fix) = 1.17e+62 rho_L
+  T= 32: net 3 eps_inf = 3.86e+117 rho_L per Hubble time ; standing (A_law) = 2.06e+62 rho_L ; (A_fix) = 2.34e+62 rho_L
+  [checked, computed T only] min over T in {1,2,4,8,16,32} of (standing A_law + net per Hubble time) = 3.9e+117 rho_L (T = 32);
+     A_law grows ~linearly beyond the range; for T -> 0 net -> P-loc dE (larger), so this is the floor of the family
+  fit (T >= 8): eps_inf ~ 1.1 T^-3.87 ; A_law slope dA/dT = 0.0205 (mean in-progress excess delta-bar)
+  [suggested; POWER-LAW extrapolation, valid only if the fit form holds; for gapped m it is superpolynomial] extrapolated over ~30 decades] net < rho_L needs T > 7.9e+31 t_P (Hubble time 8.5e+60 t_P);
+     standing at that T: 5.1e+92 rho_L
+     min over T of (standing + net per Hubble time) = 7.8e+73 rho_L at T = 9.8e+12 t_P
+=== m = 1.0 (ramped plane insertion, per inserted site) ===
+  T=  1: net 3 eps_inf = 5.51e+121 rho_L per Hubble time ; standing (A_law) = 7.81e+60 rho_L ; (A_fix) = 9.76e+60 rho_L
+  T=  2: net 3 eps_inf = 8.09e+120 rho_L per Hubble time ; standing (A_law) = 1.13e+61 rho_L ; (A_fix) = 1.31e+61 rho_L
+  T=  4: net 3 eps_inf = 1.07e+120 rho_L per Hubble time ; standing (A_law) = 1.98e+61 rho_L ; (A_fix) = 2.18e+61 rho_L
+  T=  8: net 3 eps_inf = 4.02e+118 rho_L per Hubble time ; standing (A_law) = 3.86e+61 rho_L ; (A_fix) = 4.19e+61 rho_L
+  T= 16: net 3 eps_inf = 2.09e+116 rho_L per Hubble time ; standing (A_law) = 7.68e+61 rho_L ; (A_fix) = 8.33e+61 rho_L
+  T= 32: net 3 eps_inf = 8.41e+112 rho_L per Hubble time ; standing (A_law) = 1.53e+62 rho_L ; (A_fix) = 1.66e+62 rho_L
+  [checked, computed T only] min over T in {1,2,4,8,16,32} of (standing A_law + net per Hubble time) = 8.4e+112 rho_L (T = 32);
+     A_law grows ~linearly beyond the range; for T -> 0 net -> P-loc dE (larger), so this is the floor of the family
+  fit (T >= 8): eps_inf ~ 7.7e+03 T^-9.43 ; A_law slope dA/dT = 0.0153 (mean in-progress excess delta-bar)
+  [suggested; POWER-LAW extrapolation, valid only if the fit form holds; for gapped m it is superpolynomial] extrapolated over ~11 decades] net < rho_L needs T > 3.1e+13 t_P (Hubble time 8.5e+60 t_P);
+     standing at that T: 1.5e+74 rho_L
+     min over T of (standing + net per Hubble time) = 1.6e+67 rho_L at T = 3.0e+06 t_P
+=== Lemma S-ins: A >= dE_bp^2/(2 Gamma) -> standing >= 8 pi dE_bp^2/(2 Gamma Omega_L H0) rho_L ===
+  3D scalar plane, m=0 (P-loc)   Gamma=   1: A >= 1.77e-03 -> standing >= 5.5e+59 rho_L
+  3D scalar plane, m=0 (P-loc)   Gamma=  10: A >= 1.77e-04 -> standing >= 5.5e+58 rho_L
+  3D scalar plane, m=0 (P-loc)   Gamma needed for standing < rho_L: > 5.5e+59 (Planck units E_P/t_P)
+  3D scalar plane, m=1           Gamma=   1: A >= 8.21e-04 -> standing >= 2.6e+59 rho_L
+  3D scalar plane, m=1           Gamma=  10: A >= 8.21e-05 -> standing >= 2.6e+58 rho_L
+  3D scalar plane, m=1           Gamma needed for standing < rho_L: > 2.6e+59 (Planck units E_P/t_P)
+  3D Wilson-Dirac plane, m=0     Gamma=   1: A >= 4.76e-01 -> standing >= 1.5e+62 rho_L
+  3D Wilson-Dirac plane, m=0     Gamma=  10: A >= 4.76e-02 -> standing >= 1.5e+61 rho_L
+  3D Wilson-Dirac plane, m=0     Gamma needed for standing < rho_L: > 1.5e+62 (Planck units E_P/t_P)
+  1D scalar point, m=0.05        Gamma=   1: A >= 1.57e-01 -> standing >= 4.9e+61 rho_L
+  1D scalar point, m=0.05        Gamma=  10: A >= 1.57e-02 -> standing >= 4.9e+60 rho_L
+  1D scalar point, m=0.05        Gamma needed for standing < rho_L: > 4.9e+61 (Planck units E_P/t_P)
+=== dislocation climb (R12-2: line density 3H/(a v_climb)); delta_line from r1910_dislocation.out ===
+  m=1.0 v=1e+00 c: rho_def = 3 H delta_line / v = -3.1e+61 rho_L (sign of delta_line: negative)
+  m=1.0 v=1e-03 c: rho_def = 3 H delta_line / v = -3.1e+64 rho_L (sign of delta_line: negative)
+  m=0.3 v=1e+00 c: rho_def = 3 H delta_line / v = -3.4e+61 rho_L (sign of delta_line: negative)
+  m=0.3 v=1e-03 c: rho_def = 3 H delta_line / v = -3.4e+64 rho_L (sign of delta_line: negative)
+  m=0.0 v=1e+00 c: rho_def = 3 H delta_line / v = -3.4e+61 rho_L (sign of delta_line: negative)
+  m=0.0 v=1e-03 c: rho_def = 3 H delta_line / v = -3.4e+64 rho_L (sign of delta_line: negative)
+  equivalent in-progress action per inserted site: A = delta_line * (a / v)
+=== rho_ins proportional to H: 1 + w_ins = -Hdot/(3H^2) = (1 + w_tot)/2 ===
+  radiation era  w_tot = +0.333 -> w_ins = -0.333
+  matter era     w_tot = +0.000 -> w_ins = -0.500
+  de Sitter      w_tot = -1.000 -> w_ins = -1.000

@@ -1,0 +1,9 @@
+s-quadrature check: sum w = 0.99823 (1), sum w s^2 = 1.00000 (1), sum w s^4 = 2.25000 (exact 9/4 = 2.25)
+m=0.0 T= 4: int eps_inst dt = 5.1258e-03, 5.1369e-03 ; T * int = 0.0205, 0.0205 [4s]
+m=0.0 T= 8: int eps_inst dt = 3.1733e-03, 3.1780e-03 ; T * int = 0.0254, 0.0254 [15s]
+m=0.0 T=16: int eps_inst dt = 1.6187e-03, 1.6208e-03 ; T * int = 0.0259, 0.0259 [44s]
+m=0.0 T=32: int eps_inst dt = 8.1264e-04 ; T * int = 0.0260 [90s]
+m=1.0 T= 4: int eps_inst dt = 1.4896e-03, 1.4965e-03 ; T * int = 0.0060, 0.0060 [95s]
+m=1.0 T= 8: int eps_inst dt = 4.9229e-04, 4.9511e-04 ; T * int = 0.0039, 0.0040 [109s]
+m=1.0 T=16: int eps_inst dt = 2.1844e-04, 2.1980e-04 ; T * int = 0.0035, 0.0035 [143s]
+m=1.0 T=32: int eps_inst dt = 1.0748e-04 ; T * int = 0.0034 [182s]

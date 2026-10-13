@@ -1,0 +1,10 @@
+s-quadrature check: sum w = 0.99823 (1), sum w s^2 = 1.00000 (1), sum w s^4 = 2.25000 (exact 9/4 = 2.25)
+m=0.0: mean in-progress excess per inserted site vs Delta: -3.0: -0.15342, -2.0: -0.08958, -1.0: -0.03183, +0.0: +0.02142, +1.0: +0.07113
+   zero at Delta* = -0.411175 (d_A = 5.588825); check f(Delta*) = 5.4e-15
+   d Delta*/d m^2 = +0.1637 ; slope d(mean delta)/d Delta at the zero = +0.05286
+m=0.3: mean in-progress excess per inserted site vs Delta: -3.0: -0.15246, -2.0: -0.08939, -1.0: -0.03220, +0.0: +0.02059, +1.0: +0.06994
+   zero at Delta* = -0.398687 (d_A = 5.691313); check f(Delta*) = 2.5e-15
+   d Delta*/d m^2 = +0.1254 ; slope d(mean delta)/d Delta at the zero = +0.05237
+m=1.0: mean in-progress excess per inserted site vs Delta: -3.0: -0.14247, -2.0: -0.08582, -1.0: -0.03352, +0.0: +0.01536, +1.0: +0.06147
+   zero at Delta* = -0.321021 (d_A = 6.678979); check f(Delta*) = -2.4e-16
+   d Delta*/d m^2 = +0.0630 ; slope d(mean delta)/d Delta at the zero = +0.04832

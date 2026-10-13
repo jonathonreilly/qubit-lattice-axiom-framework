@@ -1,0 +1,9 @@
+s-quadrature check: sum w = 0.99823 (1), sum w s^2 = 1.00000 (1), sum w s^4 = 2.25000 (exact 9/4 = 2.25)
+m=0.0 T=1: eps_fix(0) = 0.05958 ; Gamma_hat = 0.06669 ; A_fix = 0.04897 >= eps0^2/(2 Gamma_hat) = 0.02662 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=0.0 T=2: eps_fix(0) = 0.05959 ; Gamma_hat = 0.07725 ; A_fix = 0.06954 >= eps0^2/(2 Gamma_hat) = 0.02298 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=0.0 T=4: eps_fix(0) = 0.05959 ; Gamma_hat = 0.04871 ; A_fix = 0.10859 >= eps0^2/(2 Gamma_hat) = 0.03645 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=0.0 T=8: eps_fix(0) = 0.05959 ; Gamma_hat = 0.02017 ; A_fix = 0.20418 >= eps0^2/(2 Gamma_hat) = 0.08805 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=1.0 T=1: eps_fix(0) = 0.04047 ; Gamma_hat = 0.05753 ; A_fix = 0.03132 >= eps0^2/(2 Gamma_hat) = 0.01424 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=1.0 T=2: eps_fix(0) = 0.04047 ; Gamma_hat = 0.06121 ; A_fix = 0.04196 >= eps0^2/(2 Gamma_hat) = 0.01338 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=1.0 T=4: eps_fix(0) = 0.04047 ; Gamma_hat = 0.03512 ; A_fix = 0.06983 >= eps0^2/(2 Gamma_hat) = 0.02332 : True ; eps(t) >= eps0 - Gamma t everywhere: True
+m=1.0 T=8: eps_fix(0) = 0.04047 ; Gamma_hat = 0.01361 ; A_fix = 0.13461 >= eps0^2/(2 Gamma_hat) = 0.06019 : True ; eps(t) >= eps0 - Gamma t everywhere: True

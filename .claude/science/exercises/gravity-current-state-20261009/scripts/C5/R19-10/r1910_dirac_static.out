@@ -1,0 +1,4 @@
+Wilson-Dirac m=0.0: delta(g) per inserted site: g=0.00: +0.55721, g=0.25: +0.60426, g=0.50: +0.53240, g=0.75: +0.33425, g=1.00: +0.00000
+   smoothstep-path mean delta-bar = +0.37442 per inserted site (adiabatic limit: A_law -> T * delta-bar)
+Wilson-Dirac m=1.0: delta(g) per inserted site: g=0.00: +0.39659, g=0.25: +0.42541, g=0.50: +0.37046, g=0.75: +0.22964, g=1.00: +0.00000
+   smoothstep-path mean delta-bar = +0.26325 per inserted site (adiabatic limit: A_law -> T * delta-bar)

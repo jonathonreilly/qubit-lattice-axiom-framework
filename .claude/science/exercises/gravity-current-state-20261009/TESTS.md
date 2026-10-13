@@ -7701,3 +7701,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **CONFLICT:** a demonstration that the charge rows cannot be paid on the root's edges without breaking a gravity row, in the stated knob class.
   - **OPEN:** otherwise.
 - **Expectation.** ONE-LAW-BILL, with 3 charge counterterms per class. The total is about 6 + 1 + 3 + tadpole + CC, so roughly 11 + CC, or fewer if the tadpole is paid by (d-i).
+- **R19-10 (e₀ with site creation): worker reading INJECTS in class 𝒞_Γ.** A referee is required. WELL-DEFINED is not met.
+  - **Static lattice: e₀ is intensive** (L⁻⁴ Casimir terms, about 1e-121 ρ_Λ at Hubble size). Adding a plane adds exactly e₀ per site.
+  - **Product insertion** costs 0.04–0.06 (scalar) and 0.7–1.0 (Wilson-Dirac) per site, which injects 1e122–3e123 ρ_Λ per Hubble time.
+  - **Lemma S-ins:** bounded local insertion (rate ≤ Γ) leaves a standing excess ρ_ins = 3H·A/a³ ≥ 5.5e59/Γ ρ_Λ.
+    - Slow ramps trade leftover excitation for in-progress energy; the total is ≥ 6.7e60 ρ_Λ for any ramp time T.
+    - Dislocation climb gives ~3.4e61/v ρ_Λ.
+  - **This is a new H-tracking Λ term.** Under (S) + N_red it gravitates. If e₀ is defined from the instantaneous law instead, it drifts and brings back the signalling channel.
+  - **Escapes:** super-Planckian Γ, a per-species 1e-62 tuning plus Hubble-time insertions, acausal born-entangled sites, a new principle, or no site creation.
+  - **Consequence (worker reading):** P93 cannot hold exactly on a lattice that grows by local insertion. C-box-E's "zero numbers" bridge holds only for a static or perfect site set.
+  - **Prices:** P-r1910a (insertion energy), P-r1910b (dislocation cores).
+
+  Referee running.

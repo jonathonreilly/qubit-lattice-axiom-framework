@@ -1,0 +1,39 @@
+m=1.0: e0_2D = 1.09226965
+   L=24 perfect torus: E0/N - e0 = -6.11e-14
+   L=24 l= 2: dE = E0 - (N+l) e0 = -0.236378 ; per core -0.118189 ; [E0(def) - E0(perfect) - l e0 = -0.236378]
+   L=24 l= 4: dE = E0 - (N+l) e0 = -0.235906 ; per core -0.117953 ; [E0(def) - E0(perfect) - l e0 = -0.235906]
+   L=24 l= 8: dE = E0 - (N+l) e0 = -0.235904 ; per core -0.117952 ; [E0(def) - E0(perfect) - l e0 = -0.235904]
+   L=24 l=12: dE = E0 - (N+l) e0 = -0.235904 ; per core -0.117952 ; [E0(def) - E0(perfect) - l e0 = -0.235904]
+   L=32 perfect torus: E0/N - e0 = 0.00e+00
+   L=32 l= 2: dE = E0 - (N+l) e0 = -0.236378 ; per core -0.118189 ; [E0(def) - E0(perfect) - l e0 = -0.236378]
+   L=32 l= 4: dE = E0 - (N+l) e0 = -0.235906 ; per core -0.117953 ; [E0(def) - E0(perfect) - l e0 = -0.235906]
+   L=32 l= 8: dE = E0 - (N+l) e0 = -0.235904 ; per core -0.117952 ; [E0(def) - E0(perfect) - l e0 = -0.235904]
+   L=32 l=12: dE = E0 - (N+l) e0 = -0.235904 ; per core -0.117952 ; [E0(def) - E0(perfect) - l e0 = -0.235904]
+m=0.3: e0_2D = 0.97183291
+   L=24 perfect torus: E0/N - e0 = -1.51e-07
+   L=24 l= 2: dE = E0 - (N+l) e0 = -0.272456 ; per core -0.136228 ; [E0(def) - E0(perfect) - l e0 = -0.272369]
+   L=24 l= 4: dE = E0 - (N+l) e0 = -0.271158 ; per core -0.135579 ; [E0(def) - E0(perfect) - l e0 = -0.271071]
+   L=24 l= 8: dE = E0 - (N+l) e0 = -0.271108 ; per core -0.135554 ; [E0(def) - E0(perfect) - l e0 = -0.271021]
+   L=24 l=12: dE = E0 - (N+l) e0 = -0.271105 ; per core -0.135553 ; [E0(def) - E0(perfect) - l e0 = -0.271018]
+   L=32 perfect torus: E0/N - e0 = -7.41e-09
+   L=32 l= 2: dE = E0 - (N+l) e0 = -0.272378 ; per core -0.136189 ; [E0(def) - E0(perfect) - l e0 = -0.272370]
+   L=32 l= 4: dE = E0 - (N+l) e0 = -0.271081 ; per core -0.135540 ; [E0(def) - E0(perfect) - l e0 = -0.271073]
+   L=32 l= 8: dE = E0 - (N+l) e0 = -0.271033 ; per core -0.135516 ; [E0(def) - E0(perfect) - l e0 = -0.271025]
+   L=32 l=12: dE = E0 - (N+l) e0 = -0.271032 ; per core -0.135516 ; [E0(def) - E0(perfect) - l e0 = -0.271024]
+m=0.1: e0_2D = 0.95967196
+   L=24 perfect torus: E0/N - e0 = -8.63e-06
+   L=24 l= 2: dE = E0 - (N+l) e0 = -0.281982 ; per core -0.140991 ; [E0(def) - E0(perfect) - l e0 = -0.277011]
+   L=24 l= 4: dE = E0 - (N+l) e0 = -0.280546 ; per core -0.140273 ; [E0(def) - E0(perfect) - l e0 = -0.275576]
+   L=24 l= 8: dE = E0 - (N+l) e0 = -0.280427 ; per core -0.140213 ; [E0(def) - E0(perfect) - l e0 = -0.275456]
+   L=24 l=12: dE = E0 - (N+l) e0 = -0.280377 ; per core -0.140188 ; [E0(def) - E0(perfect) - l e0 = -0.275406]
+   L=32 perfect torus: E0/N - e0 = -1.90e-06
+   L=32 l= 2: dE = E0 - (N+l) e0 = -0.278984 ; per core -0.139492 ; [E0(def) - E0(perfect) - l e0 = -0.277034]
+   L=32 l= 4: dE = E0 - (N+l) e0 = -0.277566 ; per core -0.138783 ; [E0(def) - E0(perfect) - l e0 = -0.275616]
+   L=32 l= 8: dE = E0 - (N+l) e0 = -0.277481 ; per core -0.138741 ; [E0(def) - E0(perfect) - l e0 = -0.275531]
+   L=32 l=12: dE = E0 - (N+l) e0 = -0.277464 ; per core -0.138732 ; [E0(def) - E0(perfect) - l e0 = -0.275515]
+=== 3D straight edge dislocation lines (2D dipole x Z): energy per unit line length, per line ===
+    delta_line = (1/2) int dk_z/(2 pi) dE_2D(m^2 + 4 sin^2(k_z/2)) [two lines in the dipole]; Gauss-Legendre in k_z
+   m=1.0 (L=24, l=8): delta_line = -0.09904 per lattice step along the line (hbar c / a per a)
+   m=0.3 (L=24, l=8): delta_line = -0.10845 per lattice step along the line (hbar c / a per a)
+   m=0.0 (L=24, l=8): delta_line = -0.10987 per lattice step along the line (hbar c / a per a)
+elapsed 2.0 s

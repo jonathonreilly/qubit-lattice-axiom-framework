@@ -1,3 +1,6 @@
-# Author support status — renewal
+# Author scope certificate
 
-Target bounded_theorem; actual status conditional-support. Finite-energy source has a complete focused proof review, not formal retained audit or Lean certificate. Parent current-refinement proposal retains its published open gates. Renewal does not promote any status.
+Target bounded_theorem; actual conditional-support. Source checks and prior
+focused analytic reviews are evidence, not retained audit status. No new physical
+realization is asserted. Scoped Lean proves the scalar cutoff implication only.
+See STATE.yaml for exact source identities and provisional dependencies.

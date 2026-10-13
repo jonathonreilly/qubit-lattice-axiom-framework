@@ -1,0 +1,431 @@
+{
+  "source_root": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733",
+  "members": [
+    {
+      "path": "AUTOMATION_CREATED.json",
+      "sha256": "5e4998ff5bc6faf1f6753471614c42f1e9d66b2ed3ac48af36b343209866b4a4",
+      "bytes": 290
+    },
+    {
+      "path": "ENERGY_TAIL_BRANCH_CREATED.json",
+      "sha256": "702759610c6f6d21bbf7ca6e1b66f6f11714882c0f3c0b8bd04d838d0e348e2d",
+      "bytes": 468
+    },
+    {
+      "path": "FETCH_PROCESS_STATUS.txt",
+      "sha256": "8ee64cff38b3e1ec1f4fd42338996deb6be30c394e45d648c11035cf9f24fb54",
+      "bytes": 387
+    },
+    {
+      "path": "GROUNDING_LOOKUP_FAILURE.json",
+      "sha256": "263abe7101509b443ba8c1a8df8b17b4dc4f96d43de4b46b06597b0de648d4dc",
+      "bytes": 1338
+    },
+    {
+      "path": "GROUNDING_SOURCES.json",
+      "sha256": "3ea311cb4e11f11c143f126e75588d2ba5324de16e3d2be68f84d3fb86da4cf2",
+      "bytes": 10418
+    },
+    {
+      "path": "LOCK_ACQUIRED.json",
+      "sha256": "4abf7fa6a816bf9203973fc753aca6866050ebf4928252c5a036c8d354eafc7e",
+      "bytes": 408
+    },
+    {
+      "path": "PRIOR_PROCEDURE_REUSE_CHECK.json",
+      "sha256": "6cedbb7f78df540dcb3ad0783d0a4ccf0d7ea3dc35ced63e63d8f2b047ca88ef",
+      "bytes": 3173
+    },
+    {
+      "path": "PROCEDURE_SNAPSHOT.json",
+      "sha256": "a5c3006a24c8102b5a0a5c188f317104e0e0d793424b5257f636261815e064db",
+      "bytes": 3472
+    },
+    {
+      "path": "START.json",
+      "sha256": "3331b3653f39408aaa2c5ed87b7a2823430f70e9622e111e564ed84b9a8b1a9b",
+      "bytes": 877
+    },
+    {
+      "path": "STARTUP_REPO_SYNC.json",
+      "sha256": "3c7e45397283fb1dbda9ce7d2b7e28be118804ad0b7ab592582b9a3b3152a4cd",
+      "bytes": 212573
+    },
+    {
+      "path": "grounding/ai/BACKLOG_STATUS.md",
+      "sha256": "88713c9331b92f3c9d5fff2db898deaf8b04ea8d74dfe0c2525267a6d5b3ab34",
+      "bytes": 37170
+    },
+    {
+      "path": "grounding/ai/CAMPAIGN_STATUS.md",
+      "sha256": "f8543c159bdb2bb8e98d2c42f429fe0b7a0e0f4a62246257fcf0222ea8c1ae2b",
+      "bytes": 5055
+    },
+    {
+      "path": "grounding/ai/OPEN_PR_INVENTORY.json",
+      "sha256": "ed6d7c0e78019d521380b4aa1330296452f908579c8402356bb6eaf01649d1c3",
+      "bytes": 3203
+    },
+    {
+      "path": "grounding/ai/TOE_SCORECARD.md",
+      "sha256": "b235f314801c5c1b6407ef4493804bbae009963dded8ab2648736580bd21e93d",
+      "bytes": 19201
+    },
+    {
+      "path": "grounding/docs__CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "bytes": 109354
+    },
+    {
+      "path": "grounding/docs__MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "grounding/docs__ai_methodology__skills__PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427
+    },
+    {
+      "path": "grounding/docs__audit__data__axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "grounding/docs__repo__ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "bytes": 20824
+    },
+    {
+      "path": "grounding/docs__repo__CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "bytes": 39977
+    },
+    {
+      "path": "grounding/docs__repo__LANE_REGISTRY.yaml",
+      "sha256": "017ea6081e2f3dc029a02f055dfee58f882f27e0a2382c67a2e88c64ef3f34b9",
+      "bytes": 6659
+    },
+    {
+      "path": "grounding/docs__repo__REPO_ORGANIZATION.md",
+      "sha256": "6affc93083237e1039f719d7d0db1dd8b141b285ee85c560ff4874776e304679",
+      "bytes": 5102
+    },
+    {
+      "path": "grounding/docs__repo__REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "bytes": 3694
+    },
+    {
+      "path": "grounding/docs__work_history__repo__LANE_STATUS_BOARD.md",
+      "sha256": "7fd7df2c924ad2c42f7d0e15d0cad836111bfb0605a1907fcd8a7586436a5349",
+      "bytes": 24151
+    },
+    {
+      "path": "grounding/main/.claude/science/physics-loops/toe-current-preserving-20261012/author/current_preserving_refinement/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "bytes": 2265
+    },
+    {
+      "path": "grounding/main/.claude/science/physics-loops/toe-current-preserving-20261012/review_and_root/current_preserving_refinement_review/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "bytes": 2265
+    },
+    {
+      "path": "grounding/main/.claude/science/physics-loops/toe-sharp-current-20261012/author/sharp_current_refinement/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "bytes": 2265
+    },
+    {
+      "path": "grounding/main/archive/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md",
+      "sha256": "64a2c1fe8226d8069340ab3bda6de5af0a57dafc30dfddd9dc823c109d47c11d",
+      "bytes": 55246
+    },
+    {
+      "path": "grounding/main/archive/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md",
+      "sha256": "4dfcb3dfda8e086aaa488b114e52edf19f4ea4f79ff31b37587b943037eaef54",
+      "bytes": 59816
+    },
+    {
+      "path": "grounding/main/docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "bytes": 109354
+    },
+    {
+      "path": "grounding/main/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "grounding/main/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "bytes": 34639
+    },
+    {
+      "path": "grounding/main/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427
+    },
+    {
+      "path": "grounding/main/docs/ai_methodology/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "bytes": 2147
+    },
+    {
+      "path": "grounding/main/docs/ai_methodology/skills/physics-loop/references/assumption-import-audit.md",
+      "sha256": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283",
+      "bytes": 7718
+    },
+    {
+      "path": "grounding/main/docs/ai_methodology/skills/physics-loop/references/long-running-execution.md",
+      "sha256": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47",
+      "bytes": 8756
+    },
+    {
+      "path": "grounding/main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "grounding/main/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "grounding/main/docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "bytes": 20824
+    },
+    {
+      "path": "grounding/main/docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "bytes": 39977
+    },
+    {
+      "path": "grounding/main/docs/repo/LANE_REGISTRY.yaml",
+      "sha256": "017ea6081e2f3dc029a02f055dfee58f882f27e0a2382c67a2e88c64ef3f34b9",
+      "bytes": 6659
+    },
+    {
+      "path": "grounding/main/docs/repo/REPO_ORGANIZATION.md",
+      "sha256": "6affc93083237e1039f719d7d0db1dd8b141b285ee85c560ff4874776e304679",
+      "bytes": 5102
+    },
+    {
+      "path": "grounding/main/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "bytes": 3694
+    },
+    {
+      "path": "grounding/main/docs/work_history/repo/LANE_STATUS_BOARD.md",
+      "sha256": "7fd7df2c924ad2c42f7d0e15d0cad836111bfb0605a1907fcd8a7586436a5349",
+      "bytes": 24151
+    },
+    {
+      "path": "procedures/AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558
+    },
+    {
+      "path": "procedures/docs__ai_methodology__SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435
+    },
+    {
+      "path": "procedures/docs__ai_methodology__skills__physics-loop__SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276
+    },
+    {
+      "path": "procedures/docs__ai_methodology__skills__physics-loop__references__CAMPAIGN.md",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "bytes": 9827
+    },
+    {
+      "path": "procedures/docs__ai_methodology__skills__physics-loop__references__CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755
+    },
+    {
+      "path": "procedures/docs__ai_methodology__skills__physics-loop__references__DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454
+    },
+    {
+      "path": "procedures/docs__ai_methodology__skills__physics-loop__references__DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709
+    },
+    {
+      "path": "procedures/docs__ai_methodology__skills__workhorse__SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419
+    },
+    {
+      "path": "startup_sync/open_prs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/open_prs.stdout",
+      "sha256": "beaad3c1c15b15e61db7ed488cc485f3f6de0df09341d1511fefb23e9093a41d",
+      "bytes": 9807
+    },
+    {
+      "path": "startup_sync/pr_9513.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9513.stdout",
+      "sha256": "fd454cd53079104d4ec4594fe21b3c06a06dcb06f93bf05cfa7d9366bfa08f0f",
+      "bytes": 17485
+    },
+    {
+      "path": "startup_sync/pr_9515.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9515.stdout",
+      "sha256": "468099534aad97b8f6973b509cc6935b99c5839447a7990dd6f9a69208082ebf",
+      "bytes": 18354
+    },
+    {
+      "path": "startup_sync/pr_9516.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9516.stdout",
+      "sha256": "2eacf8cdfdf0847c3f6ff20fb5777f0388caac2b725b0ab18fb48bab21fa1cf9",
+      "bytes": 18039
+    },
+    {
+      "path": "startup_sync/pr_9517.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9517.stdout",
+      "sha256": "6f35470c16e41305d7d5337801cdb394b046d9403b7e105eff1443591e907ffb",
+      "bytes": 19770
+    },
+    {
+      "path": "startup_sync/pr_9518.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9518.stdout",
+      "sha256": "a5148c86c9fa5bb9d1771ffe88206d963d52800de4d42db9c9748bc40c6c96bf",
+      "bytes": 19761
+    },
+    {
+      "path": "startup_sync/pr_9520.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9520.stdout",
+      "sha256": "918ed69470c3c70a0b1505993bee3d2491d6c9432356a141ffe7baef24c05714",
+      "bytes": 18585
+    },
+    {
+      "path": "startup_sync/pr_9521.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9521.stdout",
+      "sha256": "ca2380a4601bda3ae7c04f4017730d40e66426b2ee871d674fed09c3955188d2",
+      "bytes": 18383
+    },
+    {
+      "path": "startup_sync/pr_9522.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9522.stdout",
+      "sha256": "f6f03427dd5cc929adace73f5167cb1ee6178d160881a5014170a64f8322c766",
+      "bytes": 19409
+    },
+    {
+      "path": "startup_sync/pr_9524.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9524.stdout",
+      "sha256": "528a2f6d2f1e5a180b2a0ae0f1961f30c10b9cd250432399cb19389c04ed951c",
+      "bytes": 2640
+    },
+    {
+      "path": "startup_sync/pr_9525.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/pr_9525.stdout",
+      "sha256": "251eda44586a97e3a01272a175661d64c470f8e6e263c5f3d5e40d2accc0ac45",
+      "bytes": 3008
+    },
+    {
+      "path": "startup_sync/ref_HEAD.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/ref_HEAD.stdout",
+      "sha256": "36b0bf8878602733674a3ef0c90b455ace7306c50fb1acd164db8df1cf8c7e16",
+      "bytes": 41
+    },
+    {
+      "path": "startup_sync/ref_origin_ai_execution.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/ref_origin_ai_execution.stdout",
+      "sha256": "8cb6d91272b2abc16c87509533d156aa93ade314c5cf3d0c28fb4322924c63c8",
+      "bytes": 41
+    },
+    {
+      "path": "startup_sync/ref_origin_claude_candidate-law-20261008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/ref_origin_claude_candidate-law-20261008.stdout",
+      "sha256": "6f275e727df512479289c98c848364a1a9877cffa851bbcebd57fc817da49aa8",
+      "bytes": 41
+    },
+    {
+      "path": "startup_sync/ref_origin_codex_observations-to-toe-24h-20261012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/ref_origin_codex_observations-to-toe-24h-20261012.stdout",
+      "sha256": "53cafc1bd07d912d42483ec27ac0682fa0eb712e869dad59caa9a8f7776ba2bb",
+      "bytes": 41
+    },
+    {
+      "path": "startup_sync/ref_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "startup_sync/ref_origin_main.stdout",
+      "sha256": "972ea800452c2557034392a86871078abb2c80157e7eba769e87be9e76b098f1",
+      "bytes": 41
+    },
+    {
+      "path": "update_current_checkpoint.py",
+      "sha256": "33636b523d7fa1d97ac6707405ffcd85b1f303e43aa680c6dee39c7dbf3ec091",
+      "bytes": 16431
+    }
+  ],
+  "archive_sha256": "8c65c67a3ccd1357c40ec98896621e4ffb8c3e3650f2cb283011ab38b4ecc40f"
+}

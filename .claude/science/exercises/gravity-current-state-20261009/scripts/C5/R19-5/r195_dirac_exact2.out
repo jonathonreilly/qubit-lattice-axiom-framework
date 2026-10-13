@@ -1,0 +1,14 @@
+== D1 root edge, m = 0.3 ==
+  (i) forward values (Lemma F: p_i p_j/E on ++, -p_i p_j/E on --; p_j on M^0j) at |q| = 1e-02: max dev 1.78e-02
+  (i) forward values (Lemma F: p_i p_j/E on ++, -p_i p_j/E on --; p_j on M^0j) at |q| = 1e-03: max dev 2.12e-03
+  (i) forward values (Lemma F: p_i p_j/E on ++, -p_i p_j/E on --; p_j on M^0j) at |q| = 1e-04: max dev 1.69e-04
+  (ii) interband (pair) blocks of M^ij minus UD(midpoint), 100 random (k,q), |q_j|<=1: 5.55e-16
+  (iii) far region (|q|_inf >= 0.5, full D): W1 residual 1.78e-15, symmetry 1.11e-16
+  (iv) glued M = chi M_near + (1-chi) M_far, 300 random (k,q): W1 residual + symmetry max 2.23e-15
+== D1 root edge, m = 0.01 ==
+  (i) forward values (Lemma F: p_i p_j/E on ++, -p_i p_j/E on --; p_j on M^0j) at |q| = 1e-02: max dev 1.83e-02
+  (i) forward values (Lemma F: p_i p_j/E on ++, -p_i p_j/E on --; p_j on M^0j) at |q| = 1e-03: max dev 1.69e-03
+  (i) forward values (Lemma F: p_i p_j/E on ++, -p_i p_j/E on --; p_j on M^0j) at |q| = 1e-04: max dev 1.78e-04
+  (ii) interband (pair) blocks of M^ij minus UD(midpoint), 100 random (k,q), |q_j|<=1: 3.90e-16
+  (iii) far region (|q|_inf >= 0.5, full D): W1 residual 1.78e-15, symmetry 1.11e-16
+  (iv) glued M = chi M_near + (1-chi) M_far, 300 random (k,q): W1 residual + symmetry max 2.28e-15

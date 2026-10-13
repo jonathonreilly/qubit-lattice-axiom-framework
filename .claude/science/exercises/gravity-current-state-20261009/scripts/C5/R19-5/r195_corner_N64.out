@@ -1,0 +1,6 @@
+N = 64; settings: root a only, root a + own-direction, continuum (lambda = 0); corner U_r with r in (0.2, 0.4, 0.8)
+T2g    full: root -3.62664e-03  root+w -3.62664e-03  cont +5.57312e-02 | r=0.2: corner(root+w) +1.08e-03, change to cont +5.54e-07 | r=0.4: corner(root+w) +9.24e-03, change to cont +1.26e-05 | r=0.8: corner(root+w) +7.55e-02, change to cont +2.26e-04
+Eg     full: root -1.20921e-04  root+w -1.20921e-04  cont +5.70789e-02 | r=0.2: corner(root+w) +1.05e-03, change to cont +4.70e-07 | r=0.4: corner(root+w) +9.01e-03, change to cont +1.14e-05 | r=0.8: corner(root+w) +7.38e-02, change to cont +2.07e-04
+face1  full: root +2.12207e-01  root+w -8.00829e-03  cont +2.47930e-01 | r=0.2: corner(root+w) +6.41e-04, change to cont +1.40e-06 | r=0.4: corner(root+w) +6.09e-03, change to cont +4.61e-05 | r=0.8: corner(root+w) +5.09e-02, change to cont +8.97e-04
+face2  full: root +1.17165e-01  root+w +3.77058e-03  cont +1.46813e-01 | r=0.2: corner(root+w) +6.87e-04, change to cont +8.70e-07 | r=0.4: corner(root+w) +6.42e-03, change to cont +2.71e-05 | r=0.8: corner(root+w) +5.36e-02, change to cont +5.22e-04
+time 10 s

@@ -1,0 +1,11 @@
+== D1(0.909103708, 0.555604226), m = 0.3 ==
+  near region (|q_j|<=1, 300 random (k,q)): W1 residual max 2.08e-15; Hermitized 2.10e-15; mu-nu symmetry 0.00e+00
+  forward values at |q| = 1e-6 (40 k): |intraband - (p_i p_j/E)(P+ - P-)|, |M^0j - p_j| max 1.73e-05
+  interband (pair) block of M^ij vs UD at midpoint (after Hermitization): max diff 2.55e-07
+  continuity along a ray, |M^xy(s) - M^xy(s/10)| for s = 1e-1..1e-4: 4.1e-02 3.9e-03 3.9e-04 3.9e-05
+== D1(0.909103708, 0.555604226), m = 0.01 ==
+  near region (|q_j|<=1, 300 random (k,q)): W1 residual max 2.43e-15; Hermitized 2.43e-15; mu-nu symmetry 0.00e+00
+  forward values at |q| = 1e-6 (40 k): |intraband - (p_i p_j/E)(P+ - P-)|, |M^0j - p_j| max 1.06e-05
+  interband (pair) block of M^ij vs UD at midpoint (after Hermitization): max diff 2.59e-07
+  continuity along a ray, |M^xy(s) - M^xy(s/10)| for s = 1e-1..1e-4: 3.8e-02 3.5e-03 3.5e-04 3.5e-05
+time 8.0 s

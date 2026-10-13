@@ -1,0 +1,91 @@
+=== (1) Lemma T_pf: zone mean of dPi/dk and finite-q averaging identity ===
+G m=1.0 p=eps*v=u'/2 (R8-2 fwd value)      <Pi'>=-1.11e-16 frac|Pi'-1|>1e-6=0.344 [q=0.01: <dPi>=+4.3e-19, spread=5.31e-02] [q=0.1: <dPi>=+0.0e+00, spread=5.28e-01] [q=1.0: <dPi>=+0.0e+00, spread=4.17e+00]
+G m=1.0 sin k                              <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+G m=1.0 smoothed sawtooth delta=0.5        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.152 [q=0.01: <dPi>=+1.3e-18, spread=1.21e-01] [q=0.1: <dPi>=+0.0e+00, spread=1.20e+00] [q=1.0: <dPi>=+5.6e-17, spread=6.28e+00]
+G m=1.0 smoothed sawtooth delta=0.1        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.031 [q=0.01: <dPi>=+0.0e+00, spread=6.20e-01] [q=0.1: <dPi>=+1.4e-17, spread=3.19e+00] [q=1.0: <dPi>=+1.1e-16, spread=6.28e+00]
+G m=1.0 whole-zone v_max: per axis at this m = 0.9080; any-d, any-m bound sup|u'|/(2 sqrt u) = 1.0000 (|v|^2 = sum u_i'^2/4(m^2+sum u_i) <= max_i u_i'^2/4u_i)
+G m=0.3 p=eps*v=u'/2 (R8-2 fwd value)      <Pi'>=-1.11e-16 frac|Pi'-1|>1e-6=0.344 [q=0.01: <dPi>=+4.3e-19, spread=5.31e-02] [q=0.1: <dPi>=+0.0e+00, spread=5.28e-01] [q=1.0: <dPi>=+0.0e+00, spread=4.17e+00]
+G m=0.3 sin k                              <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+G m=0.3 smoothed sawtooth delta=0.5        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.152 [q=0.01: <dPi>=+1.3e-18, spread=1.21e-01] [q=0.1: <dPi>=+0.0e+00, spread=1.20e+00] [q=1.0: <dPi>=+5.6e-17, spread=6.28e+00]
+G m=0.3 smoothed sawtooth delta=0.1        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.031 [q=0.01: <dPi>=+0.0e+00, spread=6.20e-01] [q=0.1: <dPi>=+1.4e-17, spread=3.19e+00] [q=1.0: <dPi>=+1.1e-16, spread=6.28e+00]
+G m=0.3 whole-zone v_max: per axis at this m = 0.9902; any-d, any-m bound sup|u'|/(2 sqrt u) = 1.0000 (|v|^2 = sum u_i'^2/4(m^2+sum u_i) <= max_i u_i'^2/4u_i)
+L m=1.0 p=eps*v=u'/2 (R8-2 fwd value)      <Pi'>=+0.00e+00 frac|Pi'-1|>1e-6=0.351 [q=0.01: <dPi>=-1.7e-18, spread=5.26e-01] [q=0.1: <dPi>=+0.0e+00, spread=5.09e+00] [q=1.0: <dPi>=+0.0e+00, spread=1.68e+01]
+L m=1.0 sin k                              <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+L m=1.0 smoothed sawtooth delta=0.5        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.152 [q=0.01: <dPi>=+1.3e-18, spread=1.21e-01] [q=0.1: <dPi>=+0.0e+00, spread=1.20e+00] [q=1.0: <dPi>=+5.6e-17, spread=6.28e+00]
+L m=1.0 smoothed sawtooth delta=0.1        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.031 [q=0.01: <dPi>=+0.0e+00, spread=6.20e-01] [q=0.1: <dPi>=+1.4e-17, spread=3.19e+00] [q=1.0: <dPi>=+1.1e-16, spread=6.28e+00]
+L m=1.0 whole-zone v_max: per axis at this m = 3.1315; any-d, any-m bound sup|u'|/(2 sqrt u) = 4.1854 (|v|^2 = sum u_i'^2/4(m^2+sum u_i) <= max_i u_i'^2/4u_i)
+L m=0.3 p=eps*v=u'/2 (R8-2 fwd value)      <Pi'>=+0.00e+00 frac|Pi'-1|>1e-6=0.351 [q=0.01: <dPi>=-1.7e-18, spread=5.26e-01] [q=0.1: <dPi>=+0.0e+00, spread=5.09e+00] [q=1.0: <dPi>=+0.0e+00, spread=1.68e+01]
+L m=0.3 sin k                              <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+L m=0.3 smoothed sawtooth delta=0.5        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.152 [q=0.01: <dPi>=+1.3e-18, spread=1.21e-01] [q=0.1: <dPi>=+0.0e+00, spread=1.20e+00] [q=1.0: <dPi>=+5.6e-17, spread=6.28e+00]
+L m=0.3 smoothed sawtooth delta=0.1        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.031 [q=0.01: <dPi>=+0.0e+00, spread=6.20e-01] [q=0.1: <dPi>=+1.4e-17, spread=3.19e+00] [q=1.0: <dPi>=+1.1e-16, spread=6.28e+00]
+L m=0.3 whole-zone v_max: per axis at this m = 4.0077; any-d, any-m bound sup|u'|/(2 sqrt u) = 4.1854 (|v|^2 = sum u_i'^2/4(m^2+sum u_i) <= max_i u_i'^2/4u_i)
+NN m=1.0 p=eps*v=u'/2 (R8-2 fwd value)      <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+NN m=1.0 sin k                              <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+NN m=1.0 smoothed sawtooth delta=0.5        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.152 [q=0.01: <dPi>=+1.3e-18, spread=1.21e-01] [q=0.1: <dPi>=+0.0e+00, spread=1.20e+00] [q=1.0: <dPi>=+5.6e-17, spread=6.28e+00]
+NN m=1.0 smoothed sawtooth delta=0.1        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.031 [q=0.01: <dPi>=+0.0e+00, spread=6.20e-01] [q=0.1: <dPi>=+1.4e-17, spread=3.19e+00] [q=1.0: <dPi>=+1.1e-16, spread=6.28e+00]
+NN m=1.0 whole-zone v_max: per axis at this m = 0.6180; any-d, any-m bound sup|u'|/(2 sqrt u) = 1.0000 (|v|^2 = sum u_i'^2/4(m^2+sum u_i) <= max_i u_i'^2/4u_i)
+NN m=0.3 p=eps*v=u'/2 (R8-2 fwd value)      <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+NN m=0.3 sin k                              <Pi'>=-2.78e-17 frac|Pi'-1|>1e-6=1.000 [q=0.01: <dPi>=+0.0e+00, spread=1.99e-02] [q=0.1: <dPi>=-1.7e-18, spread=2.00e-01] [q=1.0: <dPi>=+0.0e+00, spread=1.92e+00]
+NN m=0.3 smoothed sawtooth delta=0.5        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.152 [q=0.01: <dPi>=+1.3e-18, spread=1.21e-01] [q=0.1: <dPi>=+0.0e+00, spread=1.20e+00] [q=1.0: <dPi>=+5.6e-17, spread=6.28e+00]
+NN m=0.3 smoothed sawtooth delta=0.1        <Pi'>=-2.22e-16 frac|Pi'-1|>1e-6=0.031 [q=0.01: <dPi>=+0.0e+00, spread=6.20e-01] [q=0.1: <dPi>=+1.4e-17, spread=3.19e+00] [q=1.0: <dPi>=+1.1e-16, spread=6.28e+00]
+NN m=0.3 whole-zone v_max: per axis at this m = 0.8612; any-d, any-m bound sup|u'|/(2 sqrt u) = 1.0000 (|v|^2 = sum u_i'^2/4(m^2+sum u_i) <= max_i u_i'^2/4u_i)
+
+=== (2) forward-limit identity F^{ij}(k,k) = v_i pi_j from W1_pf (nu=j), 1D check ===
+G q=0.001: max|F0x - pi| / max|pi| on |v|>1e-3 = 4.31e-03
+G q=0.0001: max|F0x - pi| / max|pi| on |v|>1e-3 = 1.01e-04
+L q=0.001: max|F0x - pi| / max|pi| on |v|>1e-3 = 8.87e-02
+L q=0.0001: max|F0x - pi| / max|pi| on |v|>1e-3 = 6.19e-04
+
+=== (3) pair channel: first moment of F^{0x}_pair is nonzero, but [B,P]=0 since pi(k)+pi(-k)=0 ===
+G m=1.0: max|b(k)| (pair part of M_xx) = 2.061e-01; max|pi(k)+pi(-k)| = 4.2e-15 -> [B,P_x] = 0
+G m=0.3: max|b(k)| (pair part of M_xx) = 2.451e-01; max|pi(k)+pi(-k)| = 4.2e-15 -> [B,P_x] = 0
+L m=1.0: max|b(k)| (pair part of M_xx) = 2.452e+00; max|pi(k)+pi(-k)| = 3.3e-10 -> [B,P_x] = 0
+L m=0.3: max|b(k)| (pair part of M_xx) = 4.015e+00; max|pi(k)+pi(-k)| = 3.3e-10 -> [B,P_x] = 0
+
+=== (4) sawtooth escape: raw Fourier coefficients of the momentum symbol (nothing subtracted) ===
+sawtooth (exact crystal momentum)    |c_n| at n=10,50,200,1000: 1.00e-01, 2.00e-02, 5.00e-03, 1.01e-03
+                                     integral of (Pi'-1) over the zone (periodic difference, jump included) = -6.2832 (expect -2pi = -6.2832); anomaly set measure = 0.0004
+smoothed sawtooth delta=0.5          |c_n| at n=10,50,200,1000: 4.94e-02, 3.80e-04, 3.88e-09, 1.30e-16
+                                     integral of (Pi'-1) over the zone (periodic difference, jump included) = -6.2832 (expect -2pi = -6.2832); anomaly set measure = 0.9561
+smoothed sawtooth delta=0.1          |c_n| at n=10,50,200,1000: 8.68e-02, 1.10e-02, 1.72e-04, 4.61e-10
+                                     integral of (Pi'-1) over the zone (periodic difference, jump included) = -6.2832 (expect -2pi = -6.2832); anomaly set measure = 0.1921
+G: u'/2 at m=0.3                     |c_n| at n=10,50,200,1000: 4.70e-04, 6.43e-06, 5.27e-11, 2.14e-19
+                                     integral of (Pi'-1) over the zone (periodic difference, jump included) = -6.2832 (expect -2pi = -6.2832); anomaly set measure = 2.1648
+sawtooth n*|c_n| at n=10,100,1000: [np.float64(1.0), np.float64(1.0001), np.float64(1.0062)] (=1 -> |c_n| = 1/n, 1/r tail along each axis)
+
+=== (5) cubic-covariant component mixing (separable, 1D): Pi' eps = c eps + e v Pi  ->  c * oint eps^{-e} = 0 ===
+G m=0.3 e=-2: oint eps^(-e) dk = 1.9920e+01 (>0, so c = 0 forced)
+G m=0.3 e=-1: oint eps^(-e) dk = 9.9555e+00 (>0, so c = 0 forced)
+G m=0.3 e=+0: oint eps^(-e) dk = 6.2832e+00 (>0, so c = 0 forced)
+G m=0.3 e=+1: oint eps^(-e) dk = 6.1176e+00 (>0, so c = 0 forced)
+G m=0.3 e=+2: oint eps^(-e) dk = 9.8582e+00 (>0, so c = 0 forced)
+G m=0.3 e=+5: oint eps^(-e) dk = 1.6461e+02 (>0, so c = 0 forced)
+L m=0.3 e=-2: oint eps^(-e) dk = 1.1100e+01 (>0, so c = 0 forced)
+L m=0.3 e=-1: oint eps^(-e) dk = 7.3477e+00 (>0, so c = 0 forced)
+L m=0.3 e=+0: oint eps^(-e) dk = 6.2832e+00 (>0, so c = 0 forced)
+L m=0.3 e=+1: oint eps^(-e) dk = 8.0848e+00 (>0, so c = 0 forced)
+L m=0.3 e=+2: oint eps^(-e) dk = 1.5554e+01 (>0, so c = 0 forced)
+L m=0.3 e=+5: oint eps^(-e) dk = 3.0593e+02 (>0, so c = 0 forced)
+NN m=0.3 e=-2: oint eps^(-e) dk = 1.3132e+01 (>0, so c = 0 forced)
+NN m=0.3 e=-1: oint eps^(-e) dk = 8.3399e+00 (>0, so c = 0 forced)
+NN m=0.3 e=+0: oint eps^(-e) dk = 6.2832e+00 (>0, so c = 0 forced)
+NN m=0.3 e=+1: oint eps^(-e) dk = 6.5414e+00 (>0, so c = 0 forced)
+NN m=0.3 e=+2: oint eps^(-e) dk = 1.0356e+01 (>0, so c = 0 forced)
+NN m=0.3 e=+5: oint eps^(-e) dk = 1.6560e+02 (>0, so c = 0 forced)
+
+=== (6) nested chi-cut attempt: generator symbol g = k*c(k) (edge decoupled smoothly); identity g(k+q)-g(k) = theta(q) on {F^{0j}(k,k+q) != 0} ===
+c=1 on |k|<=2.0, 0 beyond 2.6: q=0.009971: max_k |g(k+q)-g(k)-q| on support = 8.262e-02 (= 8.29 q); best constant theta: spread of g(k+q)-g(k) on support = 8.262e-02
+c=1 on |k|<=2.0, 0 beyond 2.6: q=0.0009587: max_k |g(k+q)-g(k)-q| on support = 7.945e-03 (= 8.29 q); best constant theta: spread of g(k+q)-g(k) on support = 7.945e-03
+c=1 on |k|<=2.5, 0 beyond 3.0: q=0.009971: max_k |g(k+q)-g(k)-q| on support = 1.155e-01 (= 11.59 q); best constant theta: spread of g(k+q)-g(k) on support = 1.155e-01
+c=1 on |k|<=2.5, 0 beyond 3.0: q=0.0009587: max_k |g(k+q)-g(k)-q| on support = 1.111e-02 (= 11.59 q); best constant theta: spread of g(k+q)-g(k) on support = 1.111e-02
+c=1 on |k|<=2.9, 0 beyond 3.1: q=0.009971: max_k |g(k+q)-g(k)-q| on support = 3.042e-01 (= 30.51 q); best constant theta: spread of g(k+q)-g(k) on support = 3.042e-01
+c=1 on |k|<=2.9, 0 beyond 3.1: q=0.0009587: max_k |g(k+q)-g(k)-q| on support = 2.927e-02 (= 30.53 q); best constant theta: spread of g(k+q)-g(k) on support = 2.927e-02
+A continuous g that equals k on the box must return to 0 somewhere on the coupled set: the identity fails there at O(q).
+
+=== (7) mixing in the T^{0x} identity (1D separable): g' = c + e*v (T^{xx} mixing; T^{00} mixing killed by C2 parity) -> oint: 2pi c + e*oint v = 0 ===
+G m=1.0: oint v dk = +0.00e+00  (=0: periodic eps) -> c = 0 for every e
+G m=0.3: oint v dk = +0.00e+00  (=0: periodic eps) -> c = 0 for every e
+L m=1.0: oint v dk = +2.01e-12  (=0: periodic eps) -> c = 0 for every e
+L m=0.3: oint v dk = +2.83e-12  (=0: periodic eps) -> c = 0 for every e
+NN m=1.0: oint v dk = +0.00e+00  (=0: periodic eps) -> c = 0 for every e
+NN m=0.3: oint v dk = +0.00e+00  (=0: periodic eps) -> c = 0 for every e

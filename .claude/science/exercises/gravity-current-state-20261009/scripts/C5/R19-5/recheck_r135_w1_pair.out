@@ -1,0 +1,19 @@
+=== R13-5 (a): W1 completion of the pair-creating stress (d = 3) ===
+[G U m=1.0] W1 residual: creation 1.3e-15, annihilation 3.0e-15 | D(-q)+D(q)* 1.0e-15 | mu-nu symmetry 2.2e-16 | box pairs: |F^{0nu} - continuum| = 6.5e-16 (17381 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.8e-02 1.6e-03 1.5e-04
+[G U m=0.3] W1 residual: creation 9.9e-16, annihilation 3.1e-15 | D(-q)+D(q)* 9.2e-16 | mu-nu symmetry 2.2e-16 | box pairs: |F^{0nu} - continuum| = 6.7e-16 (17334 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.5e-02 1.9e-03 1.7e-04
+[G M m=1.0] W1 residual: creation 1.8e-15, annihilation 3.5e-15 | D(-q)+D(q)* 1.1e-15 | mu-nu symmetry 4.4e-16 | box pairs: |F^{0nu} - continuum| = 7.2e-16 (17319 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.6e-02 1.8e-03 1.7e-04
+[G M m=0.3] W1 residual: creation 1.8e-15, annihilation 3.6e-15 | D(-q)+D(q)* 1.1e-15 | mu-nu symmetry 4.4e-16 | box pairs: |F^{0nu} - continuum| = 7.2e-16 (17405 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.7e-02 2.1e-03 1.8e-04
+   TT at q||z, U: max| |V_T2g|^2 - 4 w_x^2 w_y^2 | = 8.5e-14 ; max| |V_Eg|^2 - (w_x^2-w_y^2)^2 | = 4.1e-14  (completion does not touch TT)
+   TT at q||z, M: max| |V_T2g|^2 - 4 w_x^2 w_y^2 | = 1.4e-13 ; max| |V_Eg|^2 - (w_x^2-w_y^2)^2 | = 6.4e-14  (completion does not touch TT)
+[L U m=1.0] W1 residual: creation 3.6e-15, annihilation 6.4e-15 | D(-q)+D(q)* 9.9e-16 | mu-nu symmetry 1.8e-15 | box pairs: |F^{0nu} - continuum| = 1.5e-11 (17417 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 7.5e-02 8.1e-03 8.2e-04
+[L U m=0.3] W1 residual: creation 4.0e-15, annihilation 8.2e-15 | D(-q)+D(q)* 1.1e-15 | mu-nu symmetry 1.8e-15 | box pairs: |F^{0nu} - continuum| = 1.8e-11 (17370 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.2e-01 9.3e-03 9.9e-04
+[L M m=1.0] W1 residual: creation 9.9e-16, annihilation 3.0e-15 | D(-q)+D(q)* 9.4e-16 | mu-nu symmetry 2.2e-16 | box pairs: |F^{0nu} - continuum| = 6.9e-16 (17368 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.9e-02 1.8e-03 2.1e-04
+[L M m=0.3] W1 residual: creation 9.9e-16, annihilation 2.5e-15 | D(-q)+D(q)* 1.1e-15 | mu-nu symmetry 2.2e-16 | box pairs: |F^{0nu} - continuum| = 6.5e-16 (17394 pairs) | max|F^{0nu}| at |q|=1e-2,1e-3,1e-4: 1.7e-02 1.8e-03 1.8e-04
+   TT at q||z, U: max| |V_T2g|^2 - 4 w_x^2 w_y^2 | = 2.5e-07 ; max| |V_Eg|^2 - (w_x^2-w_y^2)^2 | = 9.9e-08  (completion does not touch TT)
+   TT at q||z, M: max| |V_T2g|^2 - 4 w_x^2 w_y^2 | = 9.9e-14 ; max| |V_Eg|^2 - (w_x^2-w_y^2)^2 | = 2.8e-14  (completion does not touch TT)
+
+=== (6) locality, d = 1: Fourier coefficients of F^{00}_pair(k1,k2) on T^1 x T^1 (N = 512), max |c| at sup-distance r ===
+  G U: r=1 1.2e-01 | r=10 3.7e-04 | r=40 4.6e-07 | r=100 1.3e-09 | r=200 1.3e-12
+  L U: r=1 1.2e-01 | r=10 1.4e-02 | r=40 1.9e-04 | r=100 1.3e-07 | r=200 1.0e-09
+  L M: r=1 2.3e-01 | r=10 3.0e-03 | r=40 5.8e-05 | r=100 2.9e-08 | r=200 6.3e-11
+  G M: r=1 1.2e-01 | r=10 2.0e-03 | r=40 5.8e-04 | r=100 2.4e-04 | r=200 1.5e-04

@@ -7467,3 +7467,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **E2-OBSTRUCTED:** a refereed demonstration that no E2 completion in a stated class is CP with a conserved source.
   - **OPEN:** otherwise.
 - **Expectation.** E2-OBSTRUCTED, or OPEN. The noiseless outgoing sink has no CP + conserving completion, because a sink that absorbs TT energy without noise violates the fluctuation–dissipation balance. If so, the tie breaks in favour of E1.
+- **R19-5 (exact W1): worker reading OPEN.**
+  - **What the readings come to:**
+    - EXACT-IMPOSSIBLE is refuted for the massive species.
+    - EXACT-KILLS is not supported.
+    - EXACT-SURVIVES is met for scalar and Dirac, and only partly for the photon.
+  - **Exact W1 is not W2.** W15/T_pf forbids the translation Ward identity (W2), not exact conservation (W1). U already had an exact completion via R8-2 and R13-5 Lemma P1; earlier verdicts missed this.
+  - **For massive species, exact W1 constrains nothing in the cone rows.**
+  - **New exact Wilson-Dirac stress** (Lemma Div):
+    - it uses UD's pair block on R18-9's edge;
+    - W1 holds to 2.4e-15;
+    - the own-direction smearings also complete exactly.
+  - **P-R18-13c is class-scoped:** it applies only to channel-tied stresses.
+  - **The photon** needs a continuum Maxwell kernel at the soft corner, at a row cost of O(r⁴) (~1e-6 at r = 0.1). This is an outline only.
+  - **The SM root survives** exact W1 for scalar and Dirac (proved), and for the photon (suggested). The bill is unchanged: 7 knobs.
+  - **Prices:**
+    - P-R19-5a: a channel-decoupled stress;
+    - P-R19-5b: the photon soft-corner clause.
+
+  Referee running.

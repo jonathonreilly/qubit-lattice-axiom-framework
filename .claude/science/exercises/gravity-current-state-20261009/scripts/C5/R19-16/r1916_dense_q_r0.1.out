@@ -1,0 +1,9 @@
+r=0.1 D1 forward-region q 1e-16..3, zero planes, faces: max abs 8.92e-16, rel 7.94e-16, independent-frame abs 9.24e-16; finite True; pieces {'B': 10000} [6s]
+r=0.1 D2 log-uniform legs 1e-12..pi, k_j = 0 planes: max abs 2.03e-15, rel 6.19e-16, independent-frame abs 2.02e-15; finite True; pieces {'C': 7727, 'AR': 1108, 'AL': 1078, 'B': 357} [11s]
+L1 REPAIRED         (a) referee midpoint, t in +-2e-7       : max |second difference| 7.22e-16 at t = -1.3400e-07 (|M| max 0.5)
+L1 REPAIRED         (b) transition, near face, t in +-2e-7  : max |second difference| 1.22e-15 at t = -3.6000e-08 (|M| max 0.5)
+L1 REPAIRED         (c) referee midpoint, t in 1 +- 1e-6    : max |second difference| 2.78e-15 at t = +1.0000e+00 (|M| max 0.7)
+L1 ORIGINAL lib199  (a) referee midpoint, t in +-2e-7       : max |second difference| 1.49e-05 at t = -9.9500e-08 (|M| max 0.5)
+L1 ORIGINAL lib199  (b) transition, near face, t in +-2e-7  : max |second difference| 8.63e-06 at t = -9.9500e-08 (|M| max 0.5)
+L1 ORIGINAL lib199  (c) referee midpoint, t in 1 +- 1e-6    : max |second difference| 2.89e-15 at t = +1.0000e+00 (|M| max 0.7)
+time 13s

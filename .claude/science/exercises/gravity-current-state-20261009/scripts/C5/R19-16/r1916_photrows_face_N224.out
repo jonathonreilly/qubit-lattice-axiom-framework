@@ -1,0 +1,2 @@
+N=224 gammaGw(2.9435,0.1981) analytic, per vector at (wd,wo)=(0,0): face1 +2.182473214657e-01 face2 +1.092917127886e-01 | d/dwd +1.397040089e-01 +0.000000000e+00 | d/dwo +2.892797092e-01 +5.785714206e-01 [223s]
+  analytic - archived table (archived printed to 10/7 digits): [7.657e-10 4.886e-10 8.872e-09 9.203e-09 0.000e+00 2.062e-08]

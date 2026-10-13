@@ -1,0 +1,3 @@
+[r1916_run] r199_dense.py 0.05 with the REPAIRED kernel (lib1916 patch active: sig/cfun analytic, divdiff uniform, piece_A Neumann both sides)
+r=0.05 uniform T3xT3               : max rel 2.77e-16, max abs 1.61e-15; piece usage {'B': 10000} [7s]
+r=0.05 log-uniform legs 1e-6..pi   : max rel 8.02e-16, max abs 1.87e-15; piece usage {'C': 5242, 'B': 1943, 'AR': 1821, 'AL': 1880} [12s]

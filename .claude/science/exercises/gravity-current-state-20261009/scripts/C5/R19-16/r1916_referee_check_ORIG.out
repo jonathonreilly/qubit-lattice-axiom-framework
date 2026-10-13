@@ -1,0 +1,20 @@
+independent W1 contractions (hard-hard, corner, soft-hard):
+1 ['B'] 4.9576022091456170e-16 k1 [-0.88476325 -1.66390844  1.14342411] k2 [-2.45307609  1.7104526  -0.73029887]
+2 ['C'] 1.2629059783242524e-16 k1 [ 0.0054648  -0.02150953  0.02171098] k2 [-0.00915583 -0.00905603  0.01318531]
+3 ['AL'] 1.0059804557047066e-15 k1 [-9.03772646e-05  1.31133259e-03  1.89980881e-03] k2 [ 1.26651405  3.04174519 -2.28396841]
+site-averaged fibre:
+face off=1e-07: left 2.693591e-07, right 2.693591e-07
+face off=1e-09: left 2.104712e-09, right 2.104712e-09
+identity fibre control:
+face off=1e-07: left 7.160193e-01, right 7.160193e-01
+face off=1e-09: left 7.555976e-01, right 7.555976e-01
+divdiff seam q=5.0000e-08: pieces=['B'], physical abs residual=8.0245911213535945e-13
+divdiff seam q=9.9900e-08: pieces=['B'], physical abs residual=1.6031948127834008e-12
+divdiff seam q=1.0010e-07: pieces=['B'], physical abs residual=1.9694862231084629e-16
+kernel jump across |q_j|=1e-7 branch: 1.4887265172486286e-05
+exact single-zero-leg finite: False warnings: 12
+Proposition K independent Fibonacci-sphere estimates:
+T2g +6.670789573264e-05
+Eg +6.670789573264e-05
+face1 +2.966678192317e-04
+face2 +1.609194844576e-04

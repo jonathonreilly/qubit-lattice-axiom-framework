@@ -1,0 +1,18 @@
+S1 referee seam midpoint [3.05 1.   0.7 ], q along x, y, z at 57 values (0, 1e-16..1): pieces ['B']
+   q_x = 0.0000e+00: physical abs residual 2.097e-17 (lib199.w1_resid), 2.232e-17 (independent SVD frame)  [old lib199: -]
+   q_x = 5.0000e-08: physical abs residual 2.419e-16 (lib199.w1_resid), 2.576e-16 (independent SVD frame)  [old lib199: 8.02e-13]
+   q_x = 9.9900e-08: physical abs residual 1.867e-16 (lib199.w1_resid), 2.014e-16 (independent SVD frame)  [old lib199: 1.60e-12]
+   q_x = 1.0010e-07: physical abs residual 2.172e-16 (lib199.w1_resid), 2.328e-16 (independent SVD frame)  [old lib199: 1.97e-16]
+   max over all 171: abs 5.87e-16, rel 2.71e-16, independent-frame abs 6.32e-16
+S2 300 random hard midpoints (transition / near-face / uniform), |q_j| in {0} U [1e-16, 1], exact planes: pieces {'B': 300}; max abs 6.57e-16, rel 2.88e-16, independent-frame abs 9.93e-16
+S3 old 1e-7 switch : |M(q=9.990000e-08) - M(q=1.001000e-07)| = 1.43e-10; smooth expectation |dM/dq|*dq = 1.43e-10 (old lib199 at 1e-7: 1.49e-05)
+S3 |q| = 1 edge    : |M(q=1.000000e+00) - M(q=1.000000e+00)| = 9.55e-10; smooth expectation |dM/dq|*dq = 9.55e-10 (old lib199 at 1e-7: 1.49e-05)
+Z1 exact zero leg, referee k2=(0.9,-1.3,0.4)        (1 x both sides) pieces ['AL', 'AR']: all finite True; W1 (full soft side x P_T hard side) max abs 2.23e-16 rel 1.86e-16
+     limit |M(eps n, k) - M(0, k)| max over directions: eps=1e-02: 7.6e-01, eps=1e-04: 5.7e-05, eps=1e-06: 5.5e-07, eps=1e-08: 5.7e-09, eps=1e-10: 5.4e-11, eps=1e-12: 5.7e-13
+Z1 exact zero leg, random hard k2                   (100 x both sides) pieces ['AL', 'AR']: all finite True; W1 (full soft side x P_T hard side) max abs 1.38e-15 rel 4.14e-16
+     limit |M(eps n, k) - M(0, k)| max over directions: eps=1e-02: 1.4e+00, eps=1e-04: 1.3e-04, eps=1e-06: 1.4e-06, eps=1e-08: 1.4e-08, eps=1e-10: 1.3e-10, eps=1e-12: 1.4e-12
+Z1 exact zero leg, corner annulus |k2| in r/2..r    (100 x both sides) pieces ['AL', 'AR', 'C']: all finite True; W1 (full soft side x P_T hard side) max abs 1.22e-16 rel 5.99e-15
+     limit |M(eps n, k) - M(0, k)| max over directions: eps=1e-02: 4.3e-01, eps=1e-04: 5.1e-04, eps=1e-06: 5.0e-06, eps=1e-08: 5.1e-08, eps=1e-10: 4.9e-10, eps=1e-12: 4.9e-12
+Z1 k1 = k2 = 0: finite True, pieces ['C'], W1 full x full residual 0.0e+00
+Z2 Neumann series vs eigen-sum Sylvester (physical block, both sides, 0.01..1 x r/8): max diff 6.4e-16
+time 2s

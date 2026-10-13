@@ -1,0 +1,2 @@
+r=0.1: 200 x both sides: max |Neumann - eigen-sum| / max|M| on the full 4x4x6x6 kernel = 7.2e-16
+r=0.05: 200 x both sides: max |Neumann - eigen-sum| / max|M| on the full 4x4x6x6 kernel = 7.1e-16

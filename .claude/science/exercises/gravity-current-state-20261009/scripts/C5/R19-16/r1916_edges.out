@@ -1,0 +1,2 @@
+r=0.1: 4374 kernels at exact special points (0, +-1e-300, +-b, +-pi, mid-transition, random): all finite, no warnings; pieces {'C': 90, 'AL': 99, 'AR': 99, 'B': 4156}; max W1 abs residual 1.72e-15
+r=0.05: 4374 kernels at exact special points (0, +-1e-300, +-b, +-pi, mid-transition, random): all finite, no warnings; pieces {'C': 88, 'AL': 92, 'AR': 92, 'B': 4172}; max W1 abs residual 1.77e-15

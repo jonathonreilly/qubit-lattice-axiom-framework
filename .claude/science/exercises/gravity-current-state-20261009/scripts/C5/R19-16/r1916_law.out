@@ -1,0 +1,10 @@
+law gammaGw(2.9435,0.1981) analytic; S(1) = np.float64(0.5000000000000002) (exact 1/2 by sstep(t)+sstep(1-t)=1)
+[R0] analytic sigma vs 40-digit reference, 106 points (60 in the transition): max abs err 2.83e-16; c: 8.25e-16
+     sigma' - c (4th-order FD, h=1e-3, 200 pts in transition): max 4.9e-08 (FD truncation ~h^4)
+[R1] uniform Delta vs 40-digit reference, 165 segments (q from 1e-12 to pi; transition, box edge, BZ face, |q| = 1 plateau edge, |q| = pi tie, referee seam): max abs err 1.72e-14 at (np.float64(3.0484059482019528), 3.0454810707302045, np.float64(2.762065153306225), 2.762065153306242)
+     integral form - direct form at the same point, 400 pairs with |q| in [0.1, pi] (incl. transition/faces): max 4.0e-15; across the old 1e-7 switch: 8.9e-16 (old lib199: 1.49e-5 kernel jump); |Delta(q=2e-12) - Delta(q=0)| max over 200 k: 1.1e-15
+[R0] analytic - archived table at kgrid(224)    : max|d sigma| 1.25e-10, max|d c| 9.47e-10
+[R0] analytic - archived table at kgrid(96)     : max|d sigma| 6.11e-11, max|d c| 1.44e-09
+[R0] analytic - archived table at samples(2^14) : max|d sigma| 1.39e-10, max|d c| 1.93e-09
+[R0] analytic - archived table at dense 2e5     : max|d sigma| 6.11e-11, max|d c| 4.44e-16
+time 3s

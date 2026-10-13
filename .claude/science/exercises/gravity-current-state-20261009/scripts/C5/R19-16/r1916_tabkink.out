@@ -1,0 +1,1 @@
+table cell h = 7.854e-06; 55 nodes in the transition near k = 3.05: |Delta(node - 1e-9) - Delta(node + 1e-9)| at q = 1e-10: archived-table sigma 4.97e-04 (a jump) | analytic sigma (lib1916) 1.21e-07 (the smooth change g'' x 2e-9)

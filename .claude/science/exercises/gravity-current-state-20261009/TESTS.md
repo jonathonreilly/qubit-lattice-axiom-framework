@@ -8203,3 +8203,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **NO-FINITE:** a demonstration (refereed) that no finite S reproduces z = 1 at any k, e.g. compactness forces k³ for every finite S.
   - **OPEN:** otherwise.
 - **Expectation.** FINITE-PRICE. The truncation error is controlled by occupation/S, and the z = 1 branch holds for k ≫ k_c(S) ~ 1/(aS^p). Modest S (tens of qubits per site) suffices at LIGO wavelengths, because the relevant occupations are tiny. That would give an honest price for "supply the graviton": a larger site space, not an extra field.
+- **R19-16 (repair of the photon kernel): worker reading PHOTON-EXACT.**
+  - **The two defects reproduced** exactly with the R19-9 referee's script.
+  - **Three repairs:**
+    - R1: a Hadamard-integral divided difference, uniform over the torus.
+    - R2: an analytic soft-leg series, finite at exact zero.
+    - R0: an analytic photon law. The archived table was piecewise linear and caused a 5e-4 kink at every node; that kink is the source of the referee's 1.49e-5 jump.
+  - **W1** now holds to ≤ 2.3e-15 everywhere tested, including the seam and exact zero legs.
+  - **The root re-solves:**
+    - photon-bearing rows ≤ 1.4e-12;
+    - μ_E at the scalar/Dirac evaluator floor of ~5e-11;
+    - knob shifts ≤ 4e-8.
+  - **Evaluator fact on record:** the archived tabulated photon law used by R18-9, R18-13 and R19-9 differs from the stated law by up to 1.9e-9 in c.
+
+  Referee running.

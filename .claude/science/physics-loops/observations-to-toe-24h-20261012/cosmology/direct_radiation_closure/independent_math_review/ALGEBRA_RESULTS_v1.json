@@ -1,0 +1,172 @@
+{
+  "checks_count": 30,
+  "all_passed": false,
+  "checks": [
+    {
+      "name": "unchanged_Friedmann_solution",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "unchanged_radiation_residual",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "new_Friedmann",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "new_Raychaudhuri",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "u_force_cancellation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "chi_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "claimed_chi_acceleration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "claimed_U_chi",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter_and_radiation_relation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "U_S",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "U_SS",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive_coordinate_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Hessian_determinant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "complete_square",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "coordinate_metric",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "trajectory_Friedmann_coordinate",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "trajectory_Raychaudhuri_coordinate",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "trajectory_x_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "positive_denominator_numerator",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "radiation_velocity_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust_velocity_squared_handwritten",
+      "passed": false,
+      "residual": "-3/(2*(a + 1))"
+    },
+    {
+      "name": "dust_velocity_squared_corrected",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "radiation_exponential_slope_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust_exponential_slope_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "endpoint_S_q2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "endpoint_S_q8over3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "endpoint_U_q2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "endpoint_U_q8over3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "endpoint_M_q2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "endpoint_M_q8over3",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "details": {
+    "unchanged_residual": "2*R*S*a*(-L + S*a + 2*S)/(3*(2*L + S*a + 2*S)**2)",
+    "U_chichi": "(128*L*R**2 + 192*L*R*S + 81*L*S**2 + 256*R**3*a + 256*R**3 + 656*R**2*S*a + 656*R**2*S + 561*R*S**2*a + 561*R*S**2 + 162*S**3*a + 162*S**3)/(6*(4*R + 3*S)**2)",
+    "F_Scoord_derivative": "6*S*(8*L*R + 9*L*S + 24*R**2*a + 24*R**2 + 41*R*S*a + 41*R*S + 18*S**2*a + 18*S**2)/(a*(4*R + 3*S)**2)",
+    "coordinate_denominator_numerator": "(6*L + 2*R*a + 6*R + 3*S*a + 6*S)/3",
+    "velocity_limits_squared": {
+      "radiation": "2/(a + 1)",
+      "dust": "3/(2*(a + 1))"
+    },
+    "endpoint_q_of_y": "-2*b**2*y**7/21 + 2*b*y**5/5 + y**3",
+    "endpoint_S_series_z_q_one_third": "464*b**2*z**10/525 - 4*b*z**8/5 + z**6",
+    "endpoint_U_series_z_q_one_third": "L + 136*a*b**2*z**10/1575 - a*b*z**8/15 + a*z**6/2",
+    "endpoint_M_series_z_q_one_third": "-992*b*z**8/135 + 4*z**6",
+    "full_V_q2_coefficient": "-sqrt(a)*u + a/2 + 2*u**2",
+    "full_V_q8over3_coefficient": "4*sqrt(a)*b*u/5 - a*b/15 - 496*b*u**2/135"
+  }
+}

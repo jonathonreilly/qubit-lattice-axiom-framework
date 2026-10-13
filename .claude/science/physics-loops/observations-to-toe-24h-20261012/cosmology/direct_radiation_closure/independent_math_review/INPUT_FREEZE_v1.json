@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-10-13T04:25:14.299865+00:00",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/HAND_DERIVATION_v1.md",
+      "sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+      "bytes": 5466,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_math_review/source_snapshot/HAND_DERIVATION_v1.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/PROTOCOL_v1.json",
+      "sha256": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+      "bytes": 1996,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_math_review/source_snapshot/PROTOCOL_v1.json"
+    }
+  ],
+  "scope": "Handwritten derivation and protocol before independent checks. No parent implementation is used."
+}

@@ -12,7 +12,7 @@
   "checkpoint_minutes": 30,
   "deep_block_minutes": 90,
   "cycles_completed": 0,
-  "active_route": "Parent648 original perturbation controls pass; independent proof and prose correction complete. Independent numerical reviewer reproduces1489 controls and exposes dropped-u-chi mutant passing original suite. Parent added150 full-operator/Hessian controls;798pass with all seven scientific sections unchanged. Numerical report/affected check pending.",
+  "active_route": "Parent radiation reconstruction1195 controls pass; full independent corrected mathematical proof read and26 path identities verified. Cosmology milestone held pending current five-family negative-packet rule, exact draft/evidence preserved. Parent now derives analytic three-field positive-metric completion with explicit restoring term; independent focused proof and prior numerical checks active.",
   "actual_current_surface_status": "conditional-support",
   "target_claim_type": "bounded_theorem",
   "trace_class": "frontier_discovery",
@@ -23,16 +23,17 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Read full perturbation numerical report, confirm new operator controls with same reviewer, freeze complete cosmology milestone port, run focused port check and exact combined gate, open and attach regular PR. Then pursue early-universe observational closure.",
+  "next_exact_action": "Complete analytic three-field derivation/code with frozen parameters; read independent mathematical and prior radiation numerical reports; preserve any new test failures. Cosmology PR remains pending packet conformance.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-13T04:01:59.745462+00:00",
-  "current_block": "cosmological-perturbation-and-initial-condition-response",
+  "last_checkpoint_at": "2026-10-13T04:47:57.481772+00:00",
+  "current_block": "analytic-dust-radiation-completion",
   "current_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
-    "Perturbation numerical full report and same-reviewer v2 operator-control confirmation.",
-    "Cosmology canonical port and final integration checks."
+    "Two-field radiation implementation/primary-data numeric review.",
+    "Analytic three-field handwritten mathematical check.",
+    "Cosmology N1-N8 packet and final canonical port/delivery checks."
   ],
   "delegated_routes": [
     "gravity_measurements",
@@ -47,7 +48,7 @@
     "Quantum composition and causal physical realization of alternative boundary law",
     "Matter/gauge/cosmological architecture"
   ],
-  "last_pushed_commit": "51d37435c75e2ff6809c668dceedbc273dffb96c",
+  "last_pushed_commit": "9841ab97da40856643fb7647e81f0e4c57ab040d",
   "blocks_completed": [
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
@@ -94,7 +95,10 @@
     "Cosmology full independent report and derivation read,73 unique identities checked;6692 independent checks and63 lineage controls pass, reviewer-only failed oracle retained.",
     "Parent potential inverse obstruction, two-field constant-G trajectory and eta3 Hessian repair executed1494checks; complete independent mathematical proof review read and exact receipt identities checked.",
     "Potential full independent numerical and affected-v2 report read; v2 closes tiny-force control blind spot, all1530checks pass, scientific predictions unchanged.",
-    "Parent personally completed coupled scalar/dust/metric equations, slow matter response and160 disturbed homogeneous evolutions plus4 variations. Original648checks pass; independent proof/prose correction checked; numerical control gap preserved and new150operator checks execute successfully."
+    "Parent personally completed coupled scalar/dust/metric equations, slow matter response and160 disturbed homogeneous evolutions plus4 variations. Original648checks pass; independent proof/prose correction checked; numerical control gap preserved and new150operator checks execute successfully.",
+    "Perturbation original+v2 full numerical reports read;83+55 source identities checked. Same omitted coupling now rejected in120 operator cases; original seven scientific sections unchanged.",
+    "Parent radiation consistency test and new radiation-aware potential1195 controls pass. Corrected handwritten proof independently checked with499 supplementary controls;26 parent identities verified. Future full potential C2/non-C3 limitation exposed.",
+    "Cosmology pending canonical draft and complete original science/review recovery preserved; N1 five-family packet limitation is procedural, not mathematical invalidation."
   ],
   "milestone_worktree": "/private/tmp/observations-positive-response-20261012",
   "milestone_branch": "codex/observations-positive-response-20261012",
@@ -143,7 +147,7 @@
   "author_thread_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
   "background_author_retired_at": "2026-10-12T19:05:00.475532+00:00",
   "quantum_milestone_worktree": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go",
-  "last_science_checkpoint": "51d37435c75e2ff6809c668dceedbc273dffb96c",
+  "last_science_checkpoint": "9841ab97da40856643fb7647e81f0e4c57ab040d",
   "vector_milestone_worktree": "/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go",
   "matter_milestone_worktree": "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go",
   "metric_milestone_worktree": "/Users/jonBridger/.codex/worktrees/metric-clock-20261013/New Axioms Lets Go",

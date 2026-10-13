@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-10-13T04:28:44.226641+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_math_review/check_radiation_algebra_v1.py"
+  ],
+  "sha256": "cd074302bb2aafd57959fd6b6300aa02f4a4013b45868a2337e672b8130806fa",
+  "timeout_seconds": 60
+}

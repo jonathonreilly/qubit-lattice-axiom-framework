@@ -1,0 +1,375 @@
+{
+  "at": "2026-10-13T04:47:57.465245+00:00",
+  "archive_sha256": "e3042630ba88b3ef7c8a00427ff6510fca5af83cab88d628039791913646ba84",
+  "members": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/APPROACH_REGISTRY.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/APPROACH_REGISTRY.md",
+      "sha256": "842195ce21f6e98790a5a3e463cc869b00bb1297f9b33e159f8412b17adfcff7",
+      "bytes": 445
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/ARTIFACT_PLAN.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/ARTIFACT_PLAN.md",
+      "sha256": "eb874e64598db58a54ed7554199fe9eca86b7f4bc988b7efe2435d93792b11ce",
+      "bytes": 404
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/ASSUMPTIONS_AND_IMPORTS.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "e852b86a611a1d695602af52ff044fadf27c3402d13912365251edbb398302ba",
+      "bytes": 514
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "5f591f1f863ee6058a0eb1821f9d016e64b6301c7a21e92eb2626e8b633844dd",
+      "bytes": 386
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/GOAL.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/GOAL.md",
+      "sha256": "2590fdff12a69f1d9cf5b55cf4213ae64654040c3016e717ca07f14d4541e27f",
+      "bytes": 338
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/HANDOFF.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/HANDOFF.md",
+      "sha256": "8e4774778fbf358655de34a028d9b087fe05ef6a8b85546dd95a4dc5bf04c791",
+      "bytes": 752
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/LITERATURE_BRIDGES.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/LITERATURE_BRIDGES.md",
+      "sha256": "196a9469708422ada0edf0d507f8bdbb3391b77d8c9ae168139b25654215c5ab",
+      "bytes": 511
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/NOTE_PORT_DIFFS_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/NOTE_PORT_DIFFS_v1.json",
+      "sha256": "f61403aff408b0b961f14bfc0d88a0afea8c3e8033cfc6b7587c2e4e05bf27fd",
+      "bytes": 13274
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/NO_GO_LEDGER.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/NO_GO_LEDGER.md",
+      "sha256": "07ffcffeda85dbb6ef32dc69d0debaa85a690b1d981daf0cf9cf88ea18a9f551",
+      "bytes": 473
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/OPPORTUNITY_QUEUE.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/OPPORTUNITY_QUEUE.md",
+      "sha256": "988668d3e4f084e7b5f243ed33152f83649808489055c739aca9debc11357ba3",
+      "bytes": 507
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/PORT_MAP_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/PORT_MAP_v1.json",
+      "sha256": "83daf9d15f7b81c9e6c4be411ec5c667993e27fd73ab923bd994fa715e5755f9",
+      "bytes": 28903
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/PORT_MAP_v2.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/PORT_MAP_v2.json",
+      "sha256": "734549f2731272f61673b3f1b8cbe1134f3831994e305b2b59cf97188477a8ea",
+      "bytes": 29675
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/PR_BACKLOG.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/PR_BACKLOG.md",
+      "sha256": "9b66ed7efa3d119b229a951e971a2d908ea7535b7a95d35112d7f6cae173b15d",
+      "bytes": 378
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/REVIEW_HISTORY.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/REVIEW_HISTORY.md",
+      "sha256": "0e4d57e98c4b91035f91666afa9c7e720c316b08f16c76388908765879bb2cb1",
+      "bytes": 508
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/ROUTE_PORTFOLIO.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/ROUTE_PORTFOLIO.md",
+      "sha256": "9507958e94627c62152d507353d75654c6529b2efea4cbfd9fe4492a5dac8a34",
+      "bytes": 269
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/STATE.yaml",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/STATE.yaml",
+      "sha256": "8075519bf36fb246e7e1e557f482922abf31c3a4644f55620361f86425117630",
+      "bytes": 471
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/TRACE_GATE.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/TRACE_GATE.md",
+      "sha256": "9b903f8865b40028343b90e7e166613ee0af71471e72e33ce55a8c8705342bef",
+      "bytes": 313
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/CONSTITUENT_RECOVERY_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/CONSTITUENT_RECOVERY_v1.json",
+      "sha256": "1ae6a9a574ff57f8efd321963f8de45428e408d43888989916d208dcaa9f0bd7",
+      "bytes": 298550
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/CONSTITUENT_RECOVERY_v1.tar.gz",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/CONSTITUENT_RECOVERY_v1.tar.gz",
+      "sha256": "59c654b6648b10c9243c5000d43db8b6d55579a59c8417ee47c344f8d0a478fd",
+      "bytes": 23415698
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/NOTE_STATUS_UPDATE_v3.diff",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/NOTE_STATUS_UPDATE_v3.diff",
+      "sha256": "68657396f1c07de00041e5e9e6631c958265195b7570e2eafbd44555f3c1f0a5",
+      "bytes": 2656
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/PARENT_SCOPE_CHECK_RECEIPT_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/PARENT_SCOPE_CHECK_RECEIPT_v1.json",
+      "sha256": "8c5f970776e36c494874d746eea321a30bace0b177affec8370dc22b80357ddd",
+      "bytes": 11300
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "c79cd71238ecc114acc324d80e9aab7106b73420c3d7dd26511dd4ba560d85ea",
+      "bytes": 49094
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/NOTE_PORT_DIFFS_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/NOTE_PORT_DIFFS_v1.json",
+      "sha256": "f61403aff408b0b961f14bfc0d88a0afea8c3e8033cfc6b7587c2e4e05bf27fd",
+      "bytes": 13274
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/PORT_MAP_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/PORT_MAP_v1.json",
+      "sha256": "83daf9d15f7b81c9e6c4be411ec5c667993e27fd73ab923bd994fa715e5755f9",
+      "bytes": 28903
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/UNEXECUTED_DRAFT.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/UNEXECUTED_DRAFT.json",
+      "sha256": "ded937a3d1eb883c7529d07a0b9f4fd9c9a2089a4c6e3d0e0e0203aff31a9eea",
+      "bytes": 217
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/cosmological_reconstruction_2026_10_13.py",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v1/cosmological_reconstruction_2026_10_13.py",
+      "sha256": "573aa44580684cc160c0ef7dc116a0f3a5dbe00b7da383a0b269823863f1cb42",
+      "bytes": 49933
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v2/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v2/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "c79cd71238ecc114acc324d80e9aab7106b73420c3d7dd26511dd4ba560d85ea",
+      "bytes": 49094
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v2/cosmological_reconstruction_2026_10_13.py",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/evidence/unexecuted_port_v2/cosmological_reconstruction_2026_10_13.py",
+      "sha256": "6fb5ff8193e1a6ee3e41b423e7fa54ab5bf08edc58037d4a29ce83f8d98c2919",
+      "bytes": 52685
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/ADDITIONAL_CONTRACT_PINS_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/ADDITIONAL_CONTRACT_PINS_v1.json",
+      "sha256": "2b7d40ecbbbd8e971eb06003b515de6109ad5e180abf20fe821d7e7021978b35",
+      "bytes": 5665
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/APPLICABILITY_RECEIPT_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/APPLICABILITY_RECEIPT_v1.json",
+      "sha256": "59c58a2455f616754ce89c03bfc8eab9b1b39a292365f64a653e1b49336d581b",
+      "bytes": 25352
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/APPLICABILITY_RECEIPT_v2.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/APPLICABILITY_RECEIPT_v2.json",
+      "sha256": "5cf1e1513e2429a3b5aa08a963fddd09712e36791546d1cdb72700e242b12c40",
+      "bytes": 28817
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/DRAFT_PACKET_SURFACE_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/DRAFT_PACKET_SURFACE_v1.json",
+      "sha256": "c05f9488bcc36d4c079ea01d297777b9b55cc904eded884f58fa03330ffc5c66",
+      "bytes": 2759
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/INPUT_FREEZE_v1.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/INPUT_FREEZE_v1.json",
+      "sha256": "2d948174682c70f397b5b8fdd02591a956dcd5e871ad840ab5b5e07d8a906225",
+      "bytes": 5231
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/NO_GO_APPLICABILITY_REVIEW_v1.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/NO_GO_APPLICABILITY_REVIEW_v1.md",
+      "sha256": "a84bd2e93793e843caa72cff969934d00b9161f296dca14db54da01a92458887",
+      "bytes": 22242
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/PARENT_CHECKPOINT_CONFIRMATION_v1.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/PARENT_CHECKPOINT_CONFIRMATION_v1.md",
+      "sha256": "9b9e1742b596c0155408d64ea7f095e03c0d304d6014b968474395612ddd4b2d",
+      "bytes": 1766
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/PARENT_CHECKPOINT_DELTA_v1.diff",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/PARENT_CHECKPOINT_DELTA_v1.diff",
+      "sha256": "ce34e2e4cac07f42a4fa08f913ec9b88e24fa0c6a054669e34ce64c3ab603b45",
+      "bytes": 2672
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/.claude/commands/no-go-gate.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/.claude/commands/no-go-gate.md",
+      "sha256": "0797389893f01d0975ab35e987361b7bd83e33e0cad052a7b680aa66197dd133",
+      "bytes": 2093
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/AGENTS.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/CHECKPOINT_NOTE_AFTER_SCOPE_FINDING.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/CHECKPOINT_NOTE_AFTER_SCOPE_FINDING.md",
+      "sha256": "7a15b2b144404eb0ce7238cce0cd5be77f09d7ed7d290422b9eb23a896e545fd",
+      "bytes": 50359
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "c79cd71238ecc114acc324d80e9aab7106b73420c3d7dd26511dd4ba560d85ea",
+      "bytes": 49094
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "bytes": 34639
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/audit/data/axiom_premise_nodes.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/audit/scripts/forensic_evidence_readiness.py",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/audit/scripts/forensic_evidence_readiness.py",
+      "sha256": "516e28fafd6fd752a967b6d491b0c9cb8058b60fb6fc7c849b279b185df87f97",
+      "bytes": 4889
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/audit/scripts/no_go_discipline_gate.py",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/independent_scope_check/input_snapshots/docs/audit/scripts/no_go_discipline_gate.py",
+      "sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+      "bytes": 206348
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/NUMERICAL_FIXTURES.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/NUMERICAL_FIXTURES.json",
+      "sha256": "f7a702eda6931ec321a0ef5190928fa5c20e157b11615086d9eb1c5e6649544f",
+      "bytes": 2296
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/PRIMARY_DATA.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/PRIMARY_DATA.json",
+      "sha256": "b0c4eb0fd23ed93e933998a3d336699e498c7b807343cf8fb1056be732b1b5e1",
+      "bytes": 1481
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/data/Pantheon+SH0ES.dat.gz",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/data/Pantheon+SH0ES.dat.gz",
+      "sha256": "64ff1b5b5fe9adfaab8b4e019d11e78fd63465cfb2fa21712432165437c2e762",
+      "bytes": 215932
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/co/data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "sha256": "b360a5ebbec61be26f458079cacb79941e4b44b8706fcd67a092570d360c0031",
+      "bytes": 10085863
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/pe/NUMERICAL_FIXTURES.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/pe/NUMERICAL_FIXTURES.json",
+      "sha256": "0d69fbbef11a6af306e9bd131528efe803339e7efd332e40b598239d735c2de5",
+      "bytes": 3110
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/.claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/pv/NUMERICAL_FIXTURES.json",
+      "member": ".claude/science/physics-loops/cosmology-reconstruction-20261013/inputs/pv/NUMERICAL_FIXTURES.json",
+      "sha256": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+      "bytes": 2117
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/docs/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "docs/COSMOLOGICAL_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "7a15b2b144404eb0ce7238cce0cd5be77f09d7ed7d290422b9eb23a896e545fd",
+      "bytes": 50359
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go/scripts/cosmological_reconstruction_2026_10_13.py",
+      "member": "scripts/cosmological_reconstruction_2026_10_13.py",
+      "sha256": "6fb5ff8193e1a6ee3e41b423e7fa54ab5bf08edc58037d4a29ce83f8d98c2919",
+      "bytes": 52685
+    }
+  ],
+  "disposition": "Exact pending checkpoint, not publication or negative-packet PASS. All negative claims visible in original source and draft note.",
+  "source_worktree": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go",
+  "constituent_recovery": "Nested evidence/CONSTITUENT_RECOVERY_v1.tar.gz and its manifest preserve all369 source/result/review files;96 external primary recoveries remain locally pinned."
+}

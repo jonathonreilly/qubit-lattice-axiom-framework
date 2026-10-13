@@ -1,54 +1,52 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T14:44:48.952007+00:00. Fixed deadline 2026-10-13T16:42:30Z; never extend.
-CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; clean physics-loop/toe-chirped-kinetic-energy-20261013; HEAD/base c5eaa6bf752a0893c83c0509c7c349dab53bff14 (regular9517).
-W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previous checkpoint da87aa6fd7ad2f3c67318cc49adc5da65f9cc42a. Fourteen renewal regular PRs
-through9518 are open/attached. Pair9515, fullkinetic9516, amplitude9517,
-initial-state9518 completed. No main push, merge, audit verdict, physical axiom,
-editable-prompt change or other-chat message.
+Updated 2026-10-13T15:18:48.564425+00:00. Fixed deadline2026-10-13T16:42:30Z, never extend.
+CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; physics-loop/toe-chirped-kinetic-energy-20261013; HEAD/basec5eaa6bf752a0893c83c0509c7c349dab53bff14. Chirp V2 prepare is running
+via execute_chirped_kinetic_v2_phase.py, execsession57871. CW may contain its
+root-owned installation; inspect chirped_kinetic_root_execution_v2/prepare.
+W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previous checkpoint845836fb2a33f69fec243eff50e0bc99cedb4084. Fourteen regular PRs through9518
+open/attached; pair9515,fullkinetic9516,amplitude9517,initial9518 complete.
+No merge/mainpush/auditverdict/physicalaxiom/editableprompt/otherchatmessage.
 
-Chirp publication package froze410cdda0, driver742/bef3f992, note1591/1a25e8eb,
-201payload205stage,4parents5maps. Root is reading complete new wrappers,
-programs and packet before external acceptance and actual prepare/verify.
-Accepted515V2/850 cores unchanged; strict frequency gap retained. Main583c
-and18procedurebytes unchanged at140913. Source preparation does no runtime.
+Main583c699e,ai3a4b2c66 refreshed150235;18procedurebytes unchanged and no
+openPRdelta. Lock refreshed150037 expires170037; release at164230.
 
-Vacuum multitime assembly53f2bfac/note1138/56c5ebf8 accepted2df2022f,
-review6f62765f, after full new source/packet/helper review and source check
-0.13577754s;175pins181aliases7closures3unchangedcores. Pair worker prepares
-publication while waiting for actual chirp commit/PR. Exact common-H/vacuum/
-Lueders instruments and regular boundaries, epsilon=o(h) for fixed bounded
-protocols; means/W1 separate. Finite CAR diagnostic only checks finite algebra.
+Chirp V1 failed exact graph claim-type guard after218.164536292s; YAML hint
+was insufficient. All205 installed paths backed up and clean c5 restored.
+V2 freeze548df4e4 contains437members, note1593/b0df91a8; sole note delta is
+body Claim type line. Both cores515/850 and4runtimeprograms unchanged.
+Root reviewed all new code/wrappers/deltas and reconstructed335V1members;
+sourcechecks0.122186458/0.261276875s exit0,zero science. Accepted0ee74911,
+review1e347548. Driver742/bef3f992,210payload214stage,4parents5maps.
+Await actual prepare result, then inspect fullresults, exactstage/verify,
+regularPR/attach. Preserve failedrun/recovery; no weakened graph guard.
 
-Compact preparation root316/ind461/evidence246/comparison227/evidence240
-fully read; accepteda404a254, review77fe88b9. Norm convergence of actual
-preparation plus uniform individual commutator bounds suffices by interpolation;
-stronger drive error remains necessary for stated conditional mean transfer.
-Known bounded-L1 endpoint compactness prior art recorded, no global novelty,
-no uniformity over arbitrary energy ball and no effective convergence rate.
-Needs source assembly/publication; exact accepted material preserved here.
+Vacuum multitime assembly53f2bfac accepted2df2022f; source publication draft
+awaits actual chirp head/URL. Three unchanged accepted cores; fixed regular
+Lueders histories and arbitrary quantum ordered words. Compact preparation
+accepted a404a254, no source assembly yet. Prepared multitime nowaccepted
+92f5a23c,reviewaae5cf85: root340/ind512/comparison229/evidence328 fullyread,
+77pins11directpairs. Shared initial energy plus increments for fixed normal
+states; C_E means finite-energy densities. Existing Q25tail gap explicit.
 
-Prepared multitime root340/e5f26f18 frozen140756; independent512/48f329cf
-frozen142035 before root opened findings. Root fully read512+205 evidence,
-35pins6pairs. Kinetic worker compares now, checkpoint1455. Shared initial
-energy + marked increments, mixed tensor projector proof and sharper
-state-dependent boundary criterion. Separate root unmeasured chirp mean/W1
-extension and unbounded postmeasurement Q25 remain distinct obligations.
-Not accepted before comparison completes.
+Threshold root275/6a5fba22 and freshind788/0406c0e3 pluscomparison312/e040dd86
+fullyread; accepted1067eaa3/reviewece4f214 at150134. Special real2x2 threshold
+cancellation removes strict pair-threshold gap while Omega>=fixedomega0>0.
+Fullinput, weightedBorn, determinant/mean and BVsecular arguments checked.
+Sourceassembly active due1520. Lean d8ee4d04 successfulattempt02 onlycertifies
+threefinitealgebraidentities; failedattempt01 preserved, noanalyticLean.
 
-Threshold-crossing root275/6a5fba22 frozen142053, seal250fa71a. Special real
-2x2 threshold opposite-band cancellation could replace strict gap by Omega
-bounded below positively; all full-input/weighted/Born/secular steps written.
-Fresh threshold agent excludes root and Lean, checkpoint1450. Old long-context
-worker failed remote compaction; its partial target work was not opened.
-Finite algebra Lean d8ee4d04 attempt02 compiled17.69631654s exit0; three
-identities use only standard axioms, no sorryAx. Failed attempt01 missing Fin
-import and all diagnostics preserved. This does not verify analytic estimates.
-Current strict-gap chirp PR must not silently include this provisional extension.
+New Q25 root306/1dfe0c91 frozen145819,sealed82e977c0. Uniform fullenergygraph
+bounds plus energy truncation may establish UI after finiteprojector chains,
+conditional means/W1 and common-H actual transfer epsilon=o(h^2). Independent
+source-excluded worker completing self-read; do not open partialfindings.
+FiniteFock52line9bfd0dde diagnostic .838123916s exit0,3exactoperatorresiduals
+<=2.77e-14,12mutants detected; no infinite-dimensional analytic verification.
+Frozenroot and finiteFock remain excludedfromworker untilitsfreeze.
 
-Recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T144448Z.tar.gz; manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T144448Z.tar.MANIFEST.json; 498members; MAP17664.
-Active threshold independent, prepared comparison and multitime publication
-work excluded until frozen. Lock expires153601, refresh before151601.
-Next publish checked chirp, then multitime; inspect frozen checks and continue
-useful source assembly. At164230 stop new science, preserve paths, release
-lock and delete heartbeat toe-derivations-24-hour-campaign.
+Recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T151848Z.tar.gz; manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T151848Z.tar.MANIFEST.json; 983members,MAP18649.
+Activepostmeasurementindependent/thresholdassembly/multitimepublication
+excluded from this archive. Next finish chirp publication, supply actualhead,
+review thresholdsource and postmeasurementcheck, publish coherent milestones.
+At164230 start no new science, checkpoint actualoutcomes/recoverypaths,
+release lock and delete heartbeat toe-derivations-24-hour-campaign.

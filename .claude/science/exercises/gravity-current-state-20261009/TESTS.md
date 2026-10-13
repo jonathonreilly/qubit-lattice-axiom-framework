@@ -7713,3 +7713,31 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r1910a (insertion energy), P-r1910b (dislocation cores).
 
   Referee running.
+
+### C5 Round 19, item 13 (pre-registered 05:11Z, before launch)
+
+**R19-13. Can a site be born already entangled? Insertion cost against isometry radius.**
+- **Plain question.** R19-10 (worker; referee running) finds that every product-born insertion with bounded extraction rate Γ leaves a standing excess ρ_ins ≥ 5.5e59/Γ ρ_Λ. Its escape E3 is to insert a site through a local isometry of radius R, which entangles the new site with its neighbours on arrival. That escape was not computed.
+  - How does the best radius-R isometric insertion's excess energy ΔE(R) scale? Expect a power law for gapless fields and exponential decay for gapped ones.
+  - What R makes 3H·ΔE(R)·τ_ins/a³ < ρ_Λ?
+  - Is such an R local (R ~ a few a) or effectively acausal?
+- **Setting.**
+  - Free scalar (m = 0 and m > 0), Wilson-Dirac and photon (transverse) on Z³.
+  - Plane insertion as in R19-10.
+  - The best Gaussian isometry supported on a ball or slab of radius R around the new site, found by optimizing the Gaussian state on the support.
+  - Stated insertion time τ_ins.
+- **Prior art (count once):**
+  - R19-10 (worker): Lemma S-ins and the product costs;
+  - R17-7 Lemma X;
+  - entanglement area laws and the decay of ground-state correlations (RECALLED; e.g. Hastings, Brandão–Horodecki).
+- **Removed hypothesis:** product-born sites.
+- **Probes.**
+  - (a) ΔE(R) for R = 1..R_max on each field. Fit and extrapolate.
+  - (b) The R needed for ρ_ins < ρ_Λ at a = ℓ_P.
+  - (c) Whether the isometry is realizable by a finite-depth local circuit within τ_ins (Lieb–Robinson).
+  - (d) Prices.
+- **FIXED readings.**
+  - **ENTANGLED-ESCAPE:** a stated local isometry rule with R ≤ 10a and circuit depth ≤ τ_ins/a that brings ρ_ins below ρ_Λ. Checked.
+  - **NO-LOCAL-ESCAPE:** a demonstration (refereed) that the required R exceeds a stated bound, e.g. R ≳ 1e30 a for gapless fields.
+  - **OPEN:** otherwise.
+- **Expectation.** For gapped fields, R ≈ ln(1e122)/m: local for m ~ 1/a, non-local for SM masses (m·a ~ 1e-17). For gapless fields (photon, graviton), R ~ (1e122)^{1/4} ~ 1e30 a. So NO-LOCAL-ESCAPE for the photon, which makes the R19-10 injection unavoidable for massless fields.

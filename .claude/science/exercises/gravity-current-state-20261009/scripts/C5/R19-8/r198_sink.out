@@ -1,0 +1,30 @@
+[K1] i p_b K^{ab} + D^a (general S, k): [0, 0, 0, 0]
+     k = 0: K^{00} = -S00 ; K^{0i} = [-S01, -S02, -S03] ; K^{ij} = [0, 0, 0, 0, 0, 0]
+
+[K2] nabla^2 Phi1 - 4 pi Xt^{00} with Phi1 = (M gam/2)(w.xhat): 0  (r != 0)
+     monopole of Xt^{00} over a sphere |x| < R0 (angular integral of x/r^3 times r^2 dr): 0
+
+[K3] per mode (p = Re G_gam, q = -Im G_gam; for the friction law q = -gam w |G_gam|^2):
+     <Q^0[h1; Xt1]> (field energy change due to the sink) = -2*pi*gamma*omega**2*(p**2 + q**2)*(2*T_perp*k**4*rho - 2*T_perp*k**2*omega**2*rho - 4*j_x**2*k**4 + 4*j_x**2*k**2*omega**2 + k**4*rho**2 + 4*k**4*t_p**2 - 2*k**2*omega**2*rho**2 + omega**4*rho**2)/k**4
+     <Q^0[h1; J]>   (field energy change due to the record noise) = -2*pi*omega*q*(2*T_perp*k**4*rho - 2*T_perp*k**2*omega**2*rho - 4*j_x**2*k**4 + 4*j_x**2*k**2*omega**2 + k**4*rho**2 + 4*k**4*t_p**2 - 2*k**2*omega**2*rho**2 + omega**4*rho**2)/k**4
+     <J^{0b} d_b trh/2> (a = 2 insertion term)            = 0
+     with the friction response: <Q^0[h1; J + Xt1]> = 0 (stationary balance: the sink absorbs exactly the noise's work)
+     TT channel alone: sink rate -<Q^0[h1;Xt1]> = 8*pi*gamma*omega**2*t_p**2/(gamma**2*omega**2 + k**4 - 2*k**2*omega**2 + omega**4)
+     rho channel alone: sink rate -<Q^0[h1;Xt1]> = 2*pi*gamma*omega**2*rho**2*(k - omega)**2*(k + omega)**2/(k**4*(gamma**2*omega**2 + k**4 - 2*k**2*omega**2 + omega**4))
+     (TT and rho channels heat the sink (>= 0); the V channel and the rho-T_perp cross term are sign-indefinite in the LL bookkeeping: see [K3b] bracket)
+
+[K3b] sink rate per mode = 2 pi gam w^2 |G_gam|^2 B / k^4 with B = -2*T_perp*rho*x**2 + 2*T_perp*rho + 4*j_x**2*x**2 - 4*j_x**2 + rho**2*x**4 - 2*rho**2*x**2 + rho**2 + 4*t_p**2
+      spacelike, complete split: B = 0
+      timelike, complete split: B = 4*(x - 1)*(x + 1)
+      => at the complete split the record noise heats the sink only through timelike modes (spacelike rate exactly 0, as Theorem I0)
+
+[K4] budget numbers (SI; rho_L, H0 as R19-2/R18-7: H0 = 67.7 km/s/Mpc, Omega_L = 0.69):
+    c tau = 1.49e-03 m, gamma = 0.016 H0: T_eq = 35.1 t_H ; near-cone TT content E2(stationary)/E1(t_H) ~ ln(ck T_eq)/ln(ck t_H) = 1.0534 ; on a t_H history E2 keeps exp(-gamma t_H) = 0.9841 of E1's ; R12-7 split sink (gamma/3H0) = 0.0053 rho_GW
+    c tau = 1.49e-03 m, gamma = 0.047 H0: T_eq = 11.9 t_H ; near-cone TT content E2(stationary)/E1(t_H) ~ ln(ck T_eq)/ln(ck t_H) = 1.0372 ; on a t_H history E2 keeps exp(-gamma t_H) = 0.9541 of E1's ; R12-7 split sink (gamma/3H0) = 0.0157 rho_GW
+    c tau = 1.21e-04 m, gamma = 0.016 H0: T_eq = 35.1 t_H ; near-cone TT content E2(stationary)/E1(t_H) ~ ln(ck T_eq)/ln(ck t_H) = 1.0514 ; on a t_H history E2 keeps exp(-gamma t_H) = 0.9841 of E1's ; R12-7 split sink (gamma/3H0) = 0.0053 rho_GW
+    c tau = 1.21e-04 m, gamma = 0.047 H0: T_eq = 11.9 t_H ; near-cone TT content E2(stationary)/E1(t_H) ~ ln(ck T_eq)/ln(ck t_H) = 1.0358 ; on a t_H history E2 keeps exp(-gamma t_H) = 0.9541 of E1's ; R12-7 split sink (gamma/3H0) = 0.0157 rho_GW
+    c tau = 5.00e-06 m, gamma = 0.016 H0: T_eq = 35.1 t_H ; near-cone TT content E2(stationary)/E1(t_H) ~ ln(ck T_eq)/ln(ck t_H) = 1.0492 ; on a t_H history E2 keeps exp(-gamma t_H) = 0.9841 of E1's ; R12-7 split sink (gamma/3H0) = 0.0053 rho_GW
+    c tau = 5.00e-06 m, gamma = 0.047 H0: T_eq = 11.9 t_H ; near-cone TT content E2(stationary)/E1(t_H) ~ ln(ck T_eq)/ln(ck t_H) = 1.0343 ; on a t_H history E2 keeps exp(-gamma t_H) = 0.9541 of E1's ; R12-7 split sink (gamma/3H0) = 0.0157 rho_GW
+    R19-2 D:17: rho_GW = 3.6e-5 rho_L at the tau_c corner -> E2's -rho_GW/3 term changes by <= 5%; split sink <= 5.6e-07 rho_L
+    friction on the homogeneous (background) mode, IF the FRW lift applied it there: relative O(gamma/H) = 0.016-0.047 in the expansion law (suggested size)
+    runtime 1.7 s

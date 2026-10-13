@@ -1,0 +1,5 @@
+[C] noiseless: Choi eigenvalues [0.08895 0.2057  0.76527 0.94009] ; min 8.89e-02 ; TP err 3.3e-16 ; linearity defect 2.5e-16 ; h a function of records alone: True
+[C] noisy    : Choi eigenvalues [0.12454 0.1732  0.76951 0.93274] ; min 1.25e-01 ; TP err 8.9e-16 ; linearity defect 8.6e-16 ; h a function of records alone: False
+[C] meanfield: Choi eigenvalues [0.04439 0.09252 0.84305 1.02003] ; min 4.44e-02 ; TP err 1.1e-16 ; linearity defect 1.9e-02 ; h a function of records alone: True
+    => friction + deterministic sink inside the classical readout keeps a linear CP instrument with h = functional of records;
+       sink noise is not required by CP; it is excluded by record-only readout (AX:82-83), not by positivity.

@@ -1,0 +1,27 @@
+[M0] flat conservation of J (six channels): [0, 0, 0, 0]
+[M1] harmonic condition d^m hbar_mn on the friction solution: [0, 0, 0, 0]
+[M2] flat conservation of the linear sink stress Xt (d_m Xt^{mn}): [0, 0, 0, 0]
+[M3] E2 linear law G^(1)[h1] = 8 pi (J + Xt) with p = Re G_gam, q = -Im G_gam: components failing = 0 of 10
+[M4] sample Xt cross-term averages (expected 0 by phase): [0, 0]
+[M5] mean momentum tau_0i: [2*pi*(a*j_x*omega**2*p*rho - 4*j_x*omega**4*p**2*rho - 4*j_x*omega**4*q**2*rho - 8*j_x*omega**2*p*rho + k**2*(T_perp*a*j_x*p + 2*T_perp*j_x*k**2*p**2 + 2*T_perp*j_x*k**2*q**2 - 2*T_perp*j_x*omega**2*p**2 - 2*T_perp*j_x*omega**2*q**2 - 4*T_perp*j_x*p - a*j_x*p*rho - 4*j_x*k**2*p**2*rho + 4*j_x*k**2*p**2*t_p - 4*j_x*k**2*q**2*rho + 4*j_x*k**2*q**2*t_p + 8*j_x*omega**2*p**2*rho - 4*j_x*omega**2*p**2*t_p + 8*j_x*omega**2*q**2*rho - 4*j_x*omega**2*q**2*t_p + 8*j_x*p*rho - 8*j_x*p*t_p + 4*j_y*k**2*p**2*t_c + 4*j_y*k**2*q**2*t_c - 4*j_y*omega**2*p**2*t_c - 4*j_y*omega**2*q**2*t_c - 8*j_y*p*t_c))/k**2, 2*pi*(a*j_y*omega**2*p*rho - 4*j_y*omega**4*p**2*rho - 4*j_y*omega**4*q**2*rho - 8*j_y*omega**2*p*rho + k**2*(T_perp*a*j_y*p + 2*T_perp*j_y*k**2*p**2 + 2*T_perp*j_y*k**2*q**2 - 2*T_perp*j_y*omega**2*p**2 - 2*T_perp*j_y*omega**2*q**2 - 4*T_perp*j_y*p - a*j_y*p*rho + 4*j_x*k**2*p**2*t_c + 4*j_x*k**2*q**2*t_c - 4*j_x*omega**2*p**2*t_c - 4*j_x*omega**2*q**2*t_c - 8*j_x*p*t_c - 4*j_y*k**2*p**2*rho - 4*j_y*k**2*p**2*t_p - 4*j_y*k**2*q**2*rho - 4*j_y*k**2*q**2*t_p + 8*j_y*omega**2*p**2*rho + 4*j_y*omega**2*p**2*t_p + 8*j_y*omega**2*q**2*rho + 4*j_y*omega**2*q**2*t_p + 8*j_y*p*rho + 8*j_y*p*t_p))/k**2, 2*pi*omega*(k**4*(-2*T_perp*p**2*rho - 2*T_perp*q**2*rho + 8*j_x**2*p**2 + 8*j_x**2*q**2 + 8*j_y**2*p**2 + 8*j_y**2*q**2 - 5*p**2*rho**2 - 4*p**2*t_c**2 - 4*p**2*t_p**2 - 5*q**2*rho**2 - 4*q**2*t_c**2 - 4*q**2*t_p**2) + k**2*(T_perp*a*p*rho + 2*T_perp*omega**2*p**2*rho + 2*T_perp*omega**2*q**2*rho - a*p*rho**2 - 8*j_x**2*omega**2*p**2 - 8*j_x**2*omega**2*q**2 - 8*j_x**2*p - 8*j_y**2*omega**2*p**2 - 8*j_y**2*omega**2*q**2 - 8*j_y**2*p + 10*omega**2*p**2*rho**2 + 10*omega**2*q**2*rho**2 + 8*p*rho**2) + omega**2*rho**2*(a*p - 5*omega**2*p**2 - 5*omega**2*q**2 - 8*p))/k**3]
+
+[M6] structure of the per-mode coefficients in (p, q) [units pi/k^2, with p, q in units 1/k^2]:
+     tau_00 [rho**2]: {'p^2 q^0': (x - 1)**2*(x + 1)**2*(x**2 + 9), 'p^1 q^0': -2*(a - 8)*(x - 1)*(x + 1), 'p^0 q^2': (x - 1)**2*(x + 1)**2*(x**2 + 9)}
+     tau_00 [T_perp*rho]: {'p^2 q^0': -2*(x - 1)*(x + 1)*(x**2 + 1), 'p^1 q^0': -2*a, 'p^0 q^2': -2*(x - 1)*(x + 1)*(x**2 + 1)}
+     tau_00 [j_x**2]: {'p^2 q^0': 4*(x - 1)*(x + 1)*(x**2 + 3), 'p^1 q^0': 16, 'p^0 q^2': 4*(x - 1)*(x + 1)*(x**2 + 3)}
+     tau_00 [j_y**2]: {'p^2 q^0': 4*(x - 1)*(x + 1)*(x**2 + 3), 'p^1 q^0': 16, 'p^0 q^2': 4*(x - 1)*(x + 1)*(x**2 + 3)}
+     tau_00 [t_p**2]: {'p^2 q^0': 4*(x**2 + 1), 'p^0 q^2': 4*(x**2 + 1)}
+     tau_00 [t_c**2]: {'p^2 q^0': 4*(x**2 + 1), 'p^0 q^2': 4*(x**2 + 1)}
+     tau_kk [rho**2]: {'p^2 q^0': (x - 1)**2*(x + 1)**2*(11*x**2 - 1), 'p^1 q^0': -2*x**2*(a - 8)*(x - 1)*(x + 1), 'p^0 q^2': (x - 1)**2*(x + 1)**2*(11*x**2 - 1)}
+     tau_kk [T_perp*rho]: {'p^2 q^0': -2*(x - 1)*(x + 1)*(3*x**2 - 1), 'p^1 q^0': -2*a*(2*x**2 - 1), 'p^0 q^2': -2*(x - 1)*(x + 1)*(3*x**2 - 1)}
+     tau_kk [T_perp**2]: {'p^2 q^0': 4*(x - 1)*(x + 1), 'p^1 q^0': -2*(a - 4), 'p^0 q^2': 4*(x - 1)*(x + 1)}
+     tau_kk [j_x**2]: {'p^2 q^0': 4*(x - 1)*(x + 1)*(7*x**2 - 3), 'p^1 q^0': 16*(2*x**2 - 1), 'p^0 q^2': 4*(x - 1)*(x + 1)*(7*x**2 - 3)}
+     tau_kk [j_y**2]: {'p^2 q^0': 4*(x - 1)*(x + 1)*(7*x**2 - 3), 'p^1 q^0': 16*(2*x**2 - 1), 'p^0 q^2': 4*(x - 1)*(x + 1)*(7*x**2 - 3)}
+     tau_kk [t_p**2]: {'p^2 q^0': 4*(7*x**2 - 5), 'p^1 q^0': 32, 'p^0 q^2': 4*(7*x**2 - 5)}
+     tau_kk [t_c**2]: {'p^2 q^0': 4*(7*x**2 - 5), 'p^1 q^0': 32, 'p^0 q^2': 4*(7*x**2 - 5)}
+[M7] per-mode mean depends on (p, q) only through p^2 + q^2 = |G_gam|^2 and p = Re G_gam (no pq, no q-linear term): True
+     explicit gam-dependence of the coefficients (beyond p, q): False
+
+[M8] gam -> 0 (E1 in harmonic gauge) vs R19-2 Poisson table at a = 2: 10 of 10 entries agree (Theorem G check)
+     harmonic minus Poisson, general a: {"('tau_00', rho**2)": -2*x**2*(a - 2), "('tau_00', T_perp*rho)": (a - 2)*(x**2 + 1)/((x - 1)*(x + 1)), "('tau_kk', rho**2)": -2*x**4*(a - 2), "('tau_kk', T_perp*rho)": -x**2*(a - 2)*(x**2 - 3)/((x - 1)*(x + 1)), "('tau_kk', T_perp**2)": (a - 2)*(x**2 + 1)/((x - 1)*(x + 1))}
+     runtime 16.3 s

@@ -7608,3 +7608,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **INJECTS:** a refereed demonstration that every local insertion rule in a stated class injects energy above ρ_Λ per Hubble time.
   - **OPEN:** otherwise.
 - **Expectation.** INJECTS for product-state insertion: each inserted site costs about the local zero-point gap, ~1/a. Adiabatic insertion is plausibly WELL-DEFINED, but it needs a rate slower than the gap, which a = ℓ_P, H ≪ 1/a satisfies. The question is whether adiabatic insertion is local.
+- **R19-8 (set A's E2 route): worker reading E2-CONSTRUCTED in a stated scope.** The expectation (OBSTRUCTED or OPEN) was refuted.
+  - **The law.** E2 + N_c is R18-7's law with damped readout □ − γu·∂, a = 2, and the same Π.
+    - The friction stress is flat-conserved.
+    - CP holds: the sink is classical, deterministic and sits inside Π.
+    - β = γ = 1.
+  - **Noise.** Per mode, E2 = |R| × E1, with |R| ≤ 1 and different only in bands |1 − x| ≲ 1e-28. Theorem I₀ carries over. a = 2 is forced by inertness.
+  - **Sink.** It absorbs exactly the noise's work and is pressureless at k = 0. It needs memory (Lemma S2: no instantaneous local sink stress).
+  - **The FDT objection does not bind** a classical zero-temperature sink in set A.
+  - **Caveats:**
+    - a near-cone cap (P-r198c) under P-r14b;
+    - the FRW friction lift (P-r198a);
+    - there is no local sink action.
+  - **The tie with E1 holds.** No observation decides between them; the differences are law data.
+  - **Prices:** P-r198a, P-r198b ("the sink is Π"; retires P-r12b) and P-r198c.
+
+  Referee running.

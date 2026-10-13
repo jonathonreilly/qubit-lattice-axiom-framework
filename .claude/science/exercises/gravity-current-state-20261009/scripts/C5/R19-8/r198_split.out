@@ -1,0 +1,59 @@
+[S1] Re R - |R|^2 = 0
+     |R|^2 = (x - 1)**2*(x + 1)**2/(g**2*x**2 + x**4 - 2*x**2 + 1)
+[S2] E2/E1 per-mode coefficient ratio for arbitrary (c_hh, c_hJ): (x - 1)**2*(x + 1)**2/(g**2*x**2 + x**4 - 2*x**2 + 1)
+
+[S3] numeric least-decoherence optimisation with complex kernel G = R*G1 (K = P^-1/4 + G P G^dagger):
+    x=0.30 g=0.20 |R|=0.99783: K_rr floor 0.454014 vs |R||g11| 0.454014 ; min K_pp 1.096471 vs |R| K1_pp 1.096520 ; max|P*|R| - P1| = 1.1e-04
+        V : P_E2*|R| = 0.250000 vs P_E1 = 1/(2|G1|) = 0.250000
+        TT: P_E2*|R| = 0.227500 vs P_E1 = 1/(2|G1|) = 0.227500
+    x=0.90 g=0.05 |R|=0.97308: K_rr floor 0.092443 vs |R||g11| 0.092443 ; min K_pp 5.121246 vs |R| K1_pp 5.121475 ; max|P*|R| - P1| = 4.9e-04
+        V : P_E2*|R| = 0.250000 vs P_E1 = 1/(2|G1|) = 0.250000
+        TT: P_E2*|R| = 0.047500 vs P_E1 = 1/(2|G1|) = 0.047500
+    x=0.99 g=0.01 |R|=0.89533: K_rr floor 0.008908 vs |R||g11| 0.008908 ; min K_pp 44.989215 vs |R| K1_pp 44.991216 ; max|P*|R| - P1| = 4.6e-02
+        V : P_E2*|R| = 0.250000 vs P_E1 = 1/(2|G1|) = 0.250000
+        TT: P_E2*|R| = 0.004975 vs P_E1 = 1/(2|G1|) = 0.004975
+    x=1.02 g=0.03 |R|=0.79715: K_rr floor 0.016102 vs |R||g11| 0.016102 ; min K_pp 19.730553 vs |R| K1_pp 19.731428 ; max|P*|R| - P1| = 3.2e-02
+        V : P_E2*|R| = 0.250000 vs P_E1 = 1/(2|G1|) = 0.250000
+        TT: P_E2*|R| = 0.010100 vs P_E1 = 1/(2|G1|) = 0.010100
+    x=1.50 g=0.50 |R|=0.85749: K_rr floor 0.535933 vs |R||g11| 0.535933 ; min K_pp 0.685964 vs |R| K1_pp 0.685994 ; max|P*|R| - P1| = 8.3e-05
+        V : P_E2*|R| = 0.250000 vs P_E1 = 1/(2|G1|) = 0.250000
+        TT: P_E2*|R| = 0.312500 vs P_E1 = 1/(2|G1|) = 0.312500
+
+[S4] a = 2, complete split, E2 = |R| x E1 per channel (R19-2 B:13-16, B:26 times |R|):
+    spacelike: sum over channels (E1) tau_00 = 0, tau_kk = 0 ; E2 = |R| x that = 0 for every g
+    timelike (E1, B:26): (4, -4) u0 per mode ; E2: |R| (4, -4) u0, |R| <= 1
+    g=1e-02: TT-only spacelike band int_0.5^1 tau_kk^TT dx = 12.1622 (~ 2 ln(1/g) + c: 9.2103) ; channel total = 0 ; timelike deficit int_1^2 (1-|R|) dx = 5.047e-03 (g/2 = 5.000e-03)
+    g=1e-04: TT-only spacelike band int_0.5^1 tau_kk^TT dx = 21.3822 (~ 2 ln(1/g) + c: 18.4207) ; channel total = 0 ; timelike deficit int_1^2 (1-|R|) dx = 5.001e-05 (g/2 = 5.000e-05)
+    g=1e-08: TT-only spacelike band int_0.5^1 tau_kk^TT dx = 39.8030 (~ 2 ln(1/g) + c: 36.8414) ; channel total = 0 ; timelike deficit int_1^2 (1-|R|) dx = 4.875e-09 (g/2 = 5.000e-09)
+    g=1e-12: TT-only spacelike band int_0.5^1 tau_kk^TT dx = 58.2237 (~ 2 ln(1/g) + c: 55.2620) ; channel total = 0 ; timelike deficit int_1^2 (1-|R|) dx = 4.874e-13 (g/2 = 5.000e-13)
+    => friction regulates the near-cone TT log (E1: age ln(ck t)); at the complete split the channels cancel inside the band too
+    gamma = 0.016 H0, c tau = 1.49e-03 m: g = gamma/(c k) at k = 1/(c tau): 1.74e-31
+    gamma = 0.016 H0, c tau = 5.00e-06 m: g = gamma/(c k) at k = 1/(c tau): 5.85e-34
+    gamma = 0.016 H0, c tau = 4.00e-10 m: g = gamma/(c k) at k = 1/(c tau): 4.68e-38
+    gamma = 0.047 H0, c tau = 1.49e-03 m: g = gamma/(c k) at k = 1/(c tau): 5.12e-31
+    gamma = 0.047 H0, c tau = 5.00e-06 m: g = gamma/(c k) at k = 1/(c tau): 1.72e-33
+    gamma = 0.047 H0, c tau = 4.00e-10 m: g = gamma/(c k) at k = 1/(c tau): 1.38e-37
+    gamma = 7 H0, c tau = 1.49e-03 m: g = gamma/(c k) at k = 1/(c tau): 7.63e-29
+    gamma = 7 H0, c tau = 5.00e-06 m: g = gamma/(c k) at k = 1/(c tau): 2.56e-31
+    gamma = 7 H0, c tau = 4.00e-10 m: g = gamma/(c k) at k = 1/(c tau): 2.05e-35
+
+[S5] E2's readout gauge is harmonic by law (friction breaks gauge invariance), so Theorem G's selection is not available.
+     Harmonic-law per-mode coefficients (r198_modes.out [M8]: harmonic = Poisson + Delta, Delta prop. to (a-2)) at the complete split:
+     spacelike: tau_00/u0 = -6*(a - 2)/((x - 1)*(x + 1)) ; tau_kk/u0 = -2*(a - 2)*(5*x**2 - 2)/((x - 1)*(x + 1)) ; zero at a = [2] / [2]
+     timelike: tau_00/u0 = 2*(3*a + 2*x**2 - 8)/((x - 1)*(x + 1)) ; tau_kk/u0 = 2*(5*a*x**2 - 2*a - 12*x**2 + 6)/((x - 1)*(x + 1)) ; zero at a = [8/3 - 2*x**2/3] / [6*(2*x**2 - 1)/(5*x**2 - 2)]
+     IR check, rho^2 coefficient of tau_kk, harmonic law: 2*a*x**2 - 5*x**2 - 1 (no x^4 term for any a)
+
+[S6] E2 complete split: S-block powers P_E2 = P_E1/|R|.  rho power p1_E2 = 2 sqrt(D')/(1-x^2)^2, D' = (1-x^2)^2 + g^2 x^2:
+     p1_E2 = 2*sqrt(g**2*x**2 + (x**2 - 1)**2)/(x**2 - 1)**2 ; near the cone (1-x^2 = y -> 0): ~ 2*g / y^2
+     => int dx p1_E2 near the cone with an age cutoff |1-x| > 1/(c k t): ~ g c k t / 4 = gamma t / 4 (power law), on top of E1's ln(c k t):
+        gamma t = 0.016 : excess S-channel record variance (units of the per-shell floor) ~ 0.004
+        gamma t = 0.047 : excess S-channel record variance (units of the per-shell floor) ~ 0.0118
+        gamma t = 1     : excess S-channel record variance (units of the per-shell floor) ~ 0.25
+        gamma t = 100   : excess S-channel record variance (units of the per-shell floor) ~ 25
+     so under P-r14b (t >> 1/gamma) the complete split is not record-finite at the cone; a cap in the band is a new datum.
+     g=1e-03: int_0.5^1.5 tau_kk dx: uncapped -1.9980 (timelike -4|R| only: -2.0000) ; capped 0.3135 ; residual 2.3115 ; TT-only (trapezoid, coarse) 30.5 ; leading-log TT 4 ln(2/g) = 30.4 ; residual/(4 ln(2/g)) = 0.076
+     g=1e-05: int_0.5^1.5 tau_kk dx: uncapped -2.0000 (timelike -4|R| only: -2.0000) ; capped 0.3115 ; residual 2.3115 ; TT-only (trapezoid, coarse) 49.0 ; leading-log TT 4 ln(2/g) = 48.8 ; residual/(4 ln(2/g)) = 0.047
+     g=1e-07: int_0.5^1.5 tau_kk dx: uncapped -2.0000 (timelike -4|R| only: -2.0000) ; capped 0.3115 ; residual 2.3115 ; TT-only (trapezoid, coarse) 106.6 ; leading-log TT 4 ln(2/g) = 67.2 ; residual/(4 ln(2/g)) = 0.034
+     extrapolated to record-noise g = 1.7e-31: residual/(4 ln(2/g)) = 0.0081
+     extrapolated to record-noise g = 5.0e-31: residual/(4 ln(2/g)) = 0.0082
+     extrapolated to record-noise g = 2.0e-35: residual/(4 ln(2/g)) = 0.0072

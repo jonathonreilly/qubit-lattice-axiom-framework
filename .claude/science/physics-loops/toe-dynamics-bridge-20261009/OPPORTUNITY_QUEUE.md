@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Package checked scalar-energy laws, weighted coherences and actual normalized-current limits as a regular energy-observables milestone on the clean child of9508. Preserve state-class versus fixed-protocol controls and source-exposed review provenance.
-2. Root-read the frozen Q657 energy-readout composition. Kinetic449/potential496 comparisons are complete and fully read; prepare a coherent corrected-dynamics milestone with their complementary conditional obligations explicit.
-3. Independently derive/check spatial decay of finite potential coefficients and bounded local truncations; separately check the fourth-moment/W2/full graph-weight endpoint resource and actual protocol scope.
-4. Check the fixed local-pulse spatial escape example and trace compactness connection. Preserve its actual domain/support qualifications.
-5. Refresh main, relevant open PRs and source identities. Actual microscopic creators, interacting channel selection and 3D realization remain open; supplied-chain constructions do not close them.
+1. Review and publish the energy-law/weighted-state/current milestone as a regular PR from the clean9508 child. Source/procedure package in progress; no new runtime executed yet.
+2. Package conditionally checked kinetic/potential/Q readout construction. Q657 is now fully root-read and its convergence quantifier precision is explicit.
+3. Finish independent spatial and fourth-moment derivations before exposing root L/F. Recover spatial transport failures without discarding saved work or conflating them with mathematical failures.
+4. Independently derive/check the new moment-sensitive density rates and actual phase control, then the new finite multitime correlation telescope. Their root drafts are frozen but unreviewed; do not publish them as checked yet.
+5. Check local-pulse spatial escape and compactness route; refresh changed repository dependencies. Microscopic creators, interacting channel selection and 3D realization remain open.
 
-Six regular renewal PRs are milestones, not a stop condition. New math allowed; scoped Lean is audit evidence only at its actual coverage. No retained/audit verdict, main push, merge or axiom change. Fixed deadline2026-10-13T16:42:30Z.
+Preserve counterexamples and original proofs. Native same-family comparisons and scoped Lean leaves have explicit limits. No audit verdict/merge/main push/axiom change. Fixed deadline2026-10-13T16:42:30Z.

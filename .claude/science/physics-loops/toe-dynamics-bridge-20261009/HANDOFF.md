@@ -1,5 +1,70 @@
 # Current recovery checkpoint
 
+Updated 2026-10-13T02:03:58.665204+00:00. This is the sole current checkpoint; read its current addendum
+first, then the retained prior snapshot below for exact sources and recovery.
+Renewed fixed deadline2026-10-13T16:42:30Z, never extend. Active clean CW
+physics-loop/toe-energy-observables-20261013 at d52ea018, child9508; no new
+science installed or child PR yet. Checkpoint-only W previous commit76745db13e2efab352642c033ed18afa6ed62ec9.
+Primary checkout untouched; no prompt files changed.
+
+## Current addendum
+
+Q657 EFFECTIVE_DYNAMICS_ENERGY_READOUT_COMPOSITION_CHECK.md d453d02c is now
+fully root-read: f54238/262be5/c4c778. Acceptance52045997 verifies24freeze
+bindings; precision67c76bcb explicitly requires alpha_c->0 and uniform A/B
+resources for convergence, and vanishing coefficient error with bounded norms
+for differing readouts. All Q1-Q10 formulas, stationary mixed-state domains,
+exact-Wc rates and both controls checked. Same-family source-exposed evidence,
+not formal dynamics or retained audit. The prior snapshot's root-unread Q
+status is historical and superseded here.
+
+Three new frozen root candidates are UNREVIEWED and not yet assigned:
+- MOMENT_SENSITIVE_CORRECTED_DYNAMICS_ROOT_PROBE.md229lines d5ae6108,
+  sealb1b5f312. Typed global H^q B^-q comparison with B=1+G+K retains a
+  B^(2s) ensemble moment in the spectral-window Duhamel bound. Candidate
+  density rate epsilon^(s/q), q=2n+3, epsilon=(1+T)c^(2n+2), 0<s<=q.
+  s=1/2 improves first-cap exponent1/(4n+6); s=1 gives1/(2n+3) from an
+  actual free second-moment cap. Explicit-potential order N+1>=2n+2
+  preserves the rate. Readout substitutions remain conditional.
+- MOMENT_SENSITIVE_FREE_PHASE_ROOT_CONTROL.md129lines c2a280b4,
+  sealacd309e2. Actual even free low-pair/vacuum coherent family with
+  moment cap, momentum r_c=(T_c c^(2n+2))^(-1/(2n+3)) and relative phase
+  near pi gives density size Theta((T_c c^(2n+2))^(s/(2n+3))). Fixed
+  T_c>=t_*>0 or growing admissible windows. Not a fixed local protocol,
+  universal dynamics obstruction or sharpness result for every readout.
+- MULTITIME_CORRECTED_CORRELATION_ROOT_PROBE.md223lines5caf264a,
+  seal2d76d9b3. Provisional M parent plus typed common-high-identity column
+  comparison; actual insertion commutators propagate graph budgets,
+  and a finite telescope tests errors only on actual prefixes. Candidate
+  bounded finite multi-time correlations/positive outcome weights on the
+  same corrected windows. No growing word count, unbounded detector,
+  fixed uncorrected evolution or causal theorem. Initial draft and exact
+  notation/domain-precision diff preserved; full body6695c3/diff72fe7b.
+
+Current workers: corrected_kinetic_recovery prepares the energy-observables
+source/procedure packet, with no CW/Git/runtime edits; root will review before
+executing its new driver. prepared_pulse_independent separately derives
+fourth-moment/endpoints with root F excluded. effective_potential_independent
+continues its separately derived spatial tails/local potential route with root
+L/Q/F/M/history excluded. Two transport disconnects (305bb2fd, c3129c04)
+are recorded in SPATIAL_STREAM_EVENTS_ROOT.json. Saved progress includes
+rational poles, exterior exponential-polynomial tails, cancellation routes
+and new diagnostic paths; root read this as incomplete progress only in
+bc89c6, not a final theorem or successful execution report. Resume requests
+preserve the assignment and all files; no restart/model downgrade.
+
+Recovery bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T020358Z.tar.gz, manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T020358Z.tar.MANIFEST.json, 36 members;
+MAP contains5249 aliases verified by decompression/hash. This is
+provenance, not science execution. Prior handoff is archived at
+history/20261013T020358Z_HANDOFF.md.gz. Latest main/procedure/open-PR sync remains01:27,
+all unchanged then. Six regular renewal PRs remain. Lock expires03:32:38.849398Z,
+refreshbefore03:12:38.849398Z. Next checkpoint02:35 or milestone. Continue
+useful science after publication; no merges/main push/audit/axiom changes.
+
+## Retained prior snapshot (historical status where superseded above)
+
+# Current recovery checkpoint
+
 Updated 2026-10-13T01:45:04.863883+00:00. Renewed campaign deadline **2026-10-13 16:42:30 UTC**, never
 extend. Latest human request: continue. Original math and regular PRs are
 authorized; no drafts, main pushes, science merges, audit verdicts, axiom

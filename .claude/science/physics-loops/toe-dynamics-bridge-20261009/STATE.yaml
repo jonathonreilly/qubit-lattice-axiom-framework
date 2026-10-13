@@ -13,8 +13,8 @@ base_revision: d52ea0184932788d3d031e7207a6bad09114716d
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Energy-observables source preparation active. Root-read Q657, continue neutral spatial/endpoint derivations,
-  then compare frozen sources and package corrected dynamics milestone.
+active_route: Energy-observables source package in preparation; root Q accepted. Neutral spatial/endpoint derivations
+  active. New moment-sensitive and multitime candidates need source-excluded checks before publication.
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
@@ -37,8 +37,9 @@ transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framewor
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-13T03:12:38.849398+00:00'
-next_action: Review energy-observables frozen source package before publication runtime/regular PR. Root-read Q657;
-  spatial recovery and endpoint derivation active. Nextcheckpoint02:00 or milestone. Lockrefreshbefore2026-10-13T03:12:38.849398+00:00
+next_action: Review frozen source package then run publication preparation and create regular energy-observables
+  PR. Read spatial/endpoint freezes when delivered, compare to root L/F only after their freezes. Assign neutral
+  moment/history work when a slot is free. Nextcheckpoint02:35 or milestone. Lockrefreshbefore03:12:38.849398Z.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -63,7 +64,7 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-13T01:45:04.863883+00:00'
+checkpoint_utc: '2026-10-13T02:03:58.665204+00:00'
 latest_source_refresh: '2026-10-13T01:27:51.266683+00:00'
 latest_other_pr: 9507 at16838afb97f8a7f3d3bec9b97f640db9c1e01f9f; full345line canonical note28eac494 read for overlap;
   distinct/no adoption
@@ -132,7 +133,7 @@ root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_
 scoped_lean_status: Spatial8Ring/lowblock3Ring scope checked. Dispersion88a3598e compiled2conditional inequalities43.208s;
   PositiveSeriesTail172daac2 compiled2summable-series lemmas37.715s. New leaf scope checks pending; actual substitutions/coefficient
   positivity/domains/dynamics not formalized.
-previous_checkpoint_commit: 6ef8ccf2a17027c451e18ee85c80b52d1fff8c21
+previous_checkpoint_commit: 76745db13e2efab352642c033ed18afa6ed62ec9
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -145,8 +146,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T014504Z.tar.gz
-recovery_map_aliases: 5211
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T020358Z.tar.gz
+recovery_map_aliases: 5249
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -246,10 +247,21 @@ energy_protocol_published_science_revision: d52ea0184932788d3d031e7207a6bad09114
 normalized_current_status: 502line3ed69527 source-exposed check fully read; no J1-J9 formula repair. J6 bounded
   spectral-ratio interpretation. Actual free holds preserve current means at arbitrary different times; explicit
   even interaction changes current.
-effective_energy_readout_status: Root156lined104c34f; source-exposed657lined453d02c frozenaa5b1d24, ROOT FULL READ
-  PENDING. Worker reports no Q1-Q10 formula repair, but alpha must tend to zero for convergence. Do not credit worker
-  report as root acceptance.
-spatial_effective_potential_status: Root173line102af105 unreviewed. Separate neutral spatial derivation active with
-  root excluded. Stream disconnect305bb2fd interrupted it; same-assignment recovery requested with files preserved.
+effective_energy_readout_status: Q657/d453d02c now fully root-read f54238/262be5/c4c778. Acceptance52045997 verifies24freeze
+  bindings; precision67c76bcb requires alpha->0 and bounded moment/coefficient resources for convergence. No Q1-Q10
+  formula repair; both countercontrols retained.
+spatial_effective_potential_status: Separate neutral spatial derivation active with root L/Q/F/M/history excluded.
+  Two stream disconnects305bb2fd and c3129c04; substantial pole/tail/cancellation progress and diagnostic paths
+  saved. Resume same assignment, preserve actual verification outcomes; root read incomplete progress only, no final
+  acceptance.
 fourth_moment_endpoint_status: Root170line1f7391a6 unreviewed. Separate neutral fourth-moment/endpoints derivation
   active with root excluded; domain/commutator and actual fixed-pulse scope required.
+moment_sensitive_status: New root229line d5ae6108 (seal b1b5f312), unreviewed/unassigned. Proposed global H^q B^-q
+  bound, moment-preserving spectral cutoff and rate epsilon^(s/q), improving s=1 second-moment density rate to exponent1/(2n+3).
+  No optimality claim yet.
+moment_phase_control_status: New root129line c2a280b4 (seal acd309e2), unreviewed/unassigned. Actual even free low-pair
+  coherent family with uniform B^(2s) moment realizes proposed epsilon^(s/q) density size. Moving-state class and
+  fixed truncation only, not fixed pulse or global no-go.
+multitime_correlation_status: New root223line5caf264a (seal2d76d9b3), unreviewed/unassigned with provisional M parent.
+  Common-high-identity column intertwining, actual-prefix graph budgets and finite-history telescope propose bounded
+  multitime correlation limits on same corrected polynomial windows. Typed projection precision/draft preserved.

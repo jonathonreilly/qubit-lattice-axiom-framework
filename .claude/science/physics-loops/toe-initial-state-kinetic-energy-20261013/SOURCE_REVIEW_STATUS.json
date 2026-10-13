@@ -1,0 +1,36 @@
+{
+  "N1": "FAIL: fewer than five real route families; no fabricated routes",
+  "N5": "identity-only nonexecution; root canonical cache pending; no mathematical certificate",
+  "N8": "bounded four-record historical scan; no exhaustive/ref-history claim",
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "branch": "physics-loop/toe-initial-state-kinetic-energy-20261013",
+  "chirp_dependency": false,
+  "disposition": "conditional_fixed_initial_state_theorem_with_exact_uniformity_witnesses_and_partial_narrowing_FAIL",
+  "fresh_full_final_core_manual_read": false,
+  "mathematical_core_edits": 0,
+  "new_independent_mathematical_review": false,
+  "no_go_packet_pass": false,
+  "prepared_source_freeze_sha256": "8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819",
+  "pure_root_vs_mixed_independent_scope_preserved": true,
+  "source_assembly_root_acceptance_sha256": "963bb68b3456a0b746f6c227156417c41c837ff7723523b84a1e2ff1e2b0d80d",
+  "source_assembly_root_review_sha256": "002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c",
+  "source_review_coverage_verbatim": {
+    "live_source_rows_rechecked": 18,
+    "math_predicates_executed": 0,
+    "negative_packet_status": "FAIL/procedurally incomplete; partial-narrowing; no PASS",
+    "publication_copy_requirements": [
+      "Bind exact actual modulated9517 parent",
+      "Preserve two exact mathematical core slices and full original sources",
+      "Carry committed checklist/ledger and honest N5 identity-only scope; perform bounded N8 historical search",
+      "Complete changed-wrapper diffs; no original-source edits"
+    ],
+    "publication_execution_approved_by_this_receipt": false,
+    "retained_audit": false,
+    "root_review_sha256": "002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c",
+    "source_freeze_sha256": "8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819",
+    "status": "accepted_for_publication_preparation",
+    "utc": "2026-10-13T13:03:33.373029+00:00"
+  },
+  "two_particle_precision_preserved": true,
+  "unchanged_complete_core_coverage_reused": true
+}

@@ -1,0 +1,41 @@
+{
+  "archived_proof_import_relations": [],
+  "direct_edges": [
+    {
+      "from": "finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13",
+      "to": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13",
+      "to": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13",
+      "to": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13",
+      "to": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 4,
+    "nodes": 1
+  },
+  "history_only_relations": [],
+  "nodes": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "claim_id": "finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+      ],
+      "path": "docs/FINITE_INITIAL_ENERGY_KINETIC_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/initial_state_kinetic_identity_2026_10_13.py"
+    }
+  ]
+}

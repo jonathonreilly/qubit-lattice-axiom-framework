@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-13T13:03:33.373029+00:00",
+  "status": "accepted_for_publication_preparation",
+  "source_freeze_sha256": "8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819",
+  "root_review_sha256": "002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c",
+  "live_source_rows_rechecked": 18,
+  "negative_packet_status": "FAIL/procedurally incomplete; partial-narrowing; no PASS",
+  "publication_copy_requirements": [
+    "Bind exact actual modulated9517 parent",
+    "Preserve two exact mathematical core slices and full original sources",
+    "Carry committed checklist/ledger and honest N5 identity-only scope; perform bounded N8 historical search",
+    "Complete changed-wrapper diffs; no original-source edits"
+  ],
+  "publication_execution_approved_by_this_receipt": false,
+  "retained_audit": false,
+  "math_predicates_executed": 0
+}

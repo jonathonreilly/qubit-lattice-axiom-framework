@@ -1,0 +1,131 @@
+{
+  "archived_provisional_relations": [],
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "boundary": "Four directly used parent nodes and five exact core maps. Mean301 shares the general-control owner. Historical ledgers, review evidence and Git ancestry create no scientific edge. No chirp dependency.",
+  "canonical_core_maps": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/MODULATED_KINETIC_LAW_ROOT_PROBE.md",
+      "byte_end_exclusive": 29984,
+      "byte_start_inclusive": 7387,
+      "bytes": 22597,
+      "canonical_claim_id": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "95710c65c6dab48ffc1b7e643c2bea48b49112d580ff444bcad96766c889aab6",
+      "core_sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+      "line_end_inclusive": 592,
+      "line_start_inclusive": 129,
+      "lines": 464,
+      "scope": "Vacuum law, mean, weighted full-input remainder and kinetic/BV resource estimates"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "byte_end_exclusive": 49856,
+      "byte_start_inclusive": 27798,
+      "bytes": 22058,
+      "canonical_claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "core_sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "line_end_inclusive": 901,
+      "line_start_inclusive": 432,
+      "lines": 470,
+      "scope": "General-control signed-input Born bounds, pair density and positive-production examples"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "byte_end_exclusive": 27376,
+      "byte_start_inclusive": 6841,
+      "bytes": 20535,
+      "canonical_claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "core_sha256": "0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498",
+      "line_end_inclusive": 421,
+      "line_start_inclusive": 121,
+      "lines": 301,
+      "scope": "Transitive mean/Volterra support sharing the same canonical owner"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "byte_end_exclusive": 46480,
+      "byte_start_inclusive": 5846,
+      "bytes": 40634,
+      "canonical_claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a",
+      "core_sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "line_end_inclusive": 964,
+      "line_start_inclusive": 106,
+      "lines": 859,
+      "scope": "Corrected pictures/CAR/graph normalization and energy-domain/work machinery"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/KINETIC_CORRELATION_ROOT_PROBE.md",
+      "byte_end_exclusive": 22090,
+      "byte_start_inclusive": 5679,
+      "bytes": 16411,
+      "canonical_claim_id": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b",
+      "core_sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19",
+      "line_end_inclusive": 439,
+      "line_start_inclusive": 105,
+      "lines": 335,
+      "scope": "Fixed CAR, finite-mode and compact-Fock topology proof machinery"
+    }
+  ],
+  "history_only_relations": [],
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 31703,
+      "claim_id": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 619,
+      "path": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "95710c65c6dab48ffc1b7e643c2bea48b49112d580ff444bcad96766c889aab6",
+      "runner": "scripts/modulated_kinetic_identity_2026_10_13.py",
+      "status": "conditional-support; no retained status inferred"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 52606,
+      "claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 930,
+      "path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "runner": "scripts/general_kinetic_identity_2026_10_13.py",
+      "status": "conditional-support; no retained status inferred"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 49234,
+      "claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 993,
+      "path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a",
+      "runner": "scripts/two_zero_kinetic_identity_2026_10_13.py",
+      "status": "conditional-support; no retained status inferred"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 24714,
+      "claim_id": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+      "lines": 467,
+      "path": "docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b",
+      "runner": "scripts/correlation_kinetic_identity_2026_10_13.py",
+      "status": "conditional-support; no retained status inferred"
+    }
+  ],
+  "regular_parent_pr": 9517,
+  "same_packet_parents": [],
+  "standalone_hypotheses": {
+    "edges_created": [],
+    "items": [
+      "Supplied massive free CAR representation and fixed smooth real spatial slots",
+      "Exact common free energy and actual-cell embedding",
+      "M23 control/commutator calibration and epsilon_a=o(h^2)",
+      "Weighted trace convergence of embedded initial preparations to one fixed finite-energy state"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "diffs": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.publication.diff.gz",
+      "diff_bytes": 17919,
+      "diff_sha256": "51ab85ba4a929ccf2a54215493e06162cf6ee1504383fa46317b523567448cbb",
+      "diff_stored_sha256": "5c30afdb4446e219408ef9edf33089378a4ccd30b40e60ab1e81087eea6d1bc3",
+      "fromfile": "accepted/payload/FINITE_INITIAL_ENERGY_KINETIC_NOTE.md",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "stored_bytes": 6730,
+      "tofile": "docs/FINITE_INITIAL_ENERGY_KINETIC_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.0.diff.gz",
+      "diff_bytes": 15149,
+      "diff_sha256": "12b9cc6dc7e67d2754fa511bc2059f753fc6235fd06d36069b9a56d12329b407",
+      "diff_stored_sha256": "dbdbcf6bb92171872f506ff60c07cdf44385c670546e46e7277a15b4b163686b",
+      "fromfile": "accepted/wrapper_lines_1_34",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "stored_bytes": 5923,
+      "tofile": "wrappers/initial_state.0.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.2.diff.gz",
+      "diff_bytes": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/wrapper_lines_410_416",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "stored_bytes": 20,
+      "tofile": "wrappers/initial_state.2.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.4.diff.gz",
+      "diff_bytes": 2509,
+      "diff_sha256": "4ab26fc42a3c9b8776c6359df31df680b0c7fc0ba4abffbc3e0c89ca8a085356",
+      "diff_stored_sha256": "1b32517dfb337bf1f75a87effffeb198eda7e27178dd3dbb6e6bf8d39469ee11",
+      "fromfile": "accepted/wrapper_lines_614_620",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "stored_bytes": 1232,
+      "tofile": "wrappers/initial_state.4.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/no_go_checklist.diff.gz",
+      "diff_bytes": 10983,
+      "diff_sha256": "6897499101aafc6448eda6c7ab1c0d4d38f9a6a80125a8bb0bb2d68f5cc63262",
+      "diff_stored_sha256": "9248491f870935efc4c820c0781e82290e9a722eb683ad0c560ee05b525261a6",
+      "fromfile": "accepted/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "stored_bytes": 4187,
+      "tofile": ".claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/no_go_ledger.diff.gz",
+      "diff_bytes": 4671,
+      "diff_sha256": "550e6402ac6afba5180d6f4c18d2285334c2a5b5e1a0dc7ea4aad14180f1b48b",
+      "diff_stored_sha256": "153b9ee165c88983010f00e28224781ac29dd91077df8dfcacd9910a819d6841",
+      "fromfile": "accepted/NO_GO_LEDGER.md",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "stored_bytes": 2054,
+      "tofile": ".claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_LEDGER.md"
+    }
+  ],
+  "handling": "All raw diff bytes losslessly gzip archived; decoded content is diff syntax, not authored Markdown whitespace. Exact digest/reconstruction checks apply. No raw .diff enters staged payload.",
+  "prior_failure": "Parent modulated first verify retained exit2 at required_normalization_correction.diff lines6/14. Root supplemental verifier bf2fbc652dda04cc79b39c3c58d81e3a140d76d69e96657572c279d0bd6f5910 classified exact context markers. This package does not rewrite that history."
+}

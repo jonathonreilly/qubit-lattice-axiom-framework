@@ -1,0 +1,29 @@
+{
+  "combined_current_main_gate": false,
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "ROOT_REVIEWED_CURRENT_MAIN",
+      "--include-worktree",
+      "--json"
+    ]
+  ],
+  "executed": false,
+  "prerequisites": [
+    "Exact clean integrated candidate, current-main/head/tree pins and separate root acceptance",
+    "Reviewed complete cumulative source delta including unlanded parent PR9517",
+    "Explicit generated-output allowance and root-owned recovery"
+  ],
+  "scope": "Separate later combined current-main gate, exact cumulative stack review, pipeline and strict lint; no execution during source preparation."
+}

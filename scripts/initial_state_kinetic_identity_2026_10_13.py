@@ -1,0 +1,604 @@
+#!/usr/bin/env python3
+"""Initial-state kinetic source identity only; zero mathematical predicates."""
+from pathlib import Path, PurePosixPath
+import difflib, gzip, hashlib, json, sys
+AUDIT_TIMEOUT_SEC = 60
+AUDIT_INPUT_PATHS = ['.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/ASSUMPTIONS_AND_IMPORTS.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/CLAIM_REGISTRY_ADDITIONS.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/CLAIM_STATUS_CERTIFICATE.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/COMBINED_VALIDATION_PLAN.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/CONFORMANCE.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/EVIDENCE_MAP.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/FINITE_INITIAL_ENERGY_BRANCH_START.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/FINITE_INITIAL_ENERGY_SOURCE_ASSEMBLY_ROOT_ACCEPTANCE.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/FINITE_INITIAL_ENERGY_SOURCE_ASSEMBLY_ROOT_REVIEW.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/HANDOFF.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/MARKDOWN_NOTATION_CLASSIFICATION.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/N3_SCAN.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/N8_HISTORICAL_SCAN.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/N8_SELECTED_SOURCES.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_LEDGER.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PARENT_BINDINGS.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PROGRAM_ARCHIVE_INTEGRITY.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PROGRAM_SOURCE_INVENTORY.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PUBLICATION_EDITS.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/RAW_DIFF_INTEGRITY.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/REVIEW_HISTORY.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_AUTHORITY_BOUNDARY.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_RECOVERY.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_REVIEW_STATUS.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_WHITESPACE_CLASSIFICATION.json',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/TRACE_GATE.md',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.0.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.2.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.4.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.publication.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/no_go_checklist.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/no_go_ledger.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0117363d2a3aa6d1c3efef67e544879273ea6c2d62cf3c39738300e03a31a821.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/01870de7caca112afeefd77b3c3b4c5e263cf5539a33af3f3411100727fad7d3.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0778588c29df17ea479df45ac6364340f9f47b5671c9af3058066c49e997c4f2.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0c2e6e269cd87b5b7b95cf02fead12f25920638954ecff061a508d49bdd3e366.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/12865a35aa790c8d4a8a4b1fe2d599d262672774614fbb2e16c1e4e5ef040fcd.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/154320899ada2ed16f488dfa663eb6d8b6caeeb1a47fe9052acdefa48fcb5963.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/20c9f7cba4ea75cfad431e067f676aae54b15e031005a04dd9b4c63d37423086.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/2289bcc7d9865870e9f836bad37452ddb00855224290dd794069b7f248401521.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/2dc91d06c217908afee186e8b5180b7ed91f9f9328c1978b23e8b36d3ad9901c.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/32b7d982dba310ddddf7736086216476a2ba317c73796fa553426c6870449928.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/34dc4f71b91dab58519d5e815bf08fdb9601a162fbcb13b6ebb3039197c74e6d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/34e14b1e25621ce5b878d76542790a2e39296cba99d66288a805690903fdf32d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/350649052130bb2d4a8483e3040acac9ca0c750bb83ac1ea7ead4dd45a7bb57d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/376277d7f4c7111c345dffa9d5335954fa34cc9d5a3212ac7044cae735de7cf0.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/3db8b654c36a63dea749b4212c9182be4d3c5f6a516acee499d1e2aaedcf3457.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/406a3b1ecd6a2b43d94df02af1971123f43debf1c2cc7b9c93779a488231e4db.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/40caf10926d55bd0dcca4eadbb88f459ce423dc26d66c496a4f2dac1f0e40fdb.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/443ceeaced86b9fdf1004955d8c837e82aefba202c7984cfe69bce9a2feba5cd.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/46f7bd6ff105ee53d2e5ed81ba90b8d22af1d8adec0771bde5ab1476ba949ad2.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/47a52afb2a84427194f3a5892183e448c47914be02af5973e6be9b1911091603.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/4afdfcb75098c7923e936273112eed566fa78be30346076cd65381004d701116.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/4e5382dca48d3873562dc119df0417103eb5566f3b8983c8b869e4ee5287a6de.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/4fd5856b486dec170ef307cf0e626b7bde9aaaf2c7955446e1b325424ed0fd3a.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5042c3ee02ec470def0ce9b42c7b30f255116cc05ac2daecc932403928664508.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5222f8edf54399989bb7859b3b949df219fd62f97dcc7dee41187170a0414331.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/527868da57001dfa014e06fb9c5a599bac34f0db7e0aa37329cb9dc13c3a264e.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5a9bc045cf469e7b96f69095c018280909f0479ee5c25ae4b183e8a97108d5c8.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5d2351915f352a1d65c78b95cf99b3da13db217aa11adb82efe511c9537a9f76.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/6109032f7a66ac47301a722a50d6556afec1661c9842cbe3afce49c18eace343.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/64ac98106bb651f8503edebd021d4153cae449fd7bbcf8b234da11bb6972a255.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/64c536fdc28db655ab895a424d185943e9087237d42c73fbade687df6a1c0e49.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/68487be2a4b090462e12c255f4b069c65ac191a19ec0d85050bc51360725fcf3.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/6ff0583ff1c52f55b0ed100974aca5351428ba0cb1bae333f6db336541ced51f.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/700e1b3b4b85e89a95741fb9cdec7a2068072e312a1053279088c4c29e3fc156.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7745d5a5711bc1afbb0bbceba86e94f4e1ab3fd10d1593c9fb1efcbb5c3f4283.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7c6840c9e350db197cf1ead1aa5a6d344e87d6d2695c22c41e3573caaffda789.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7e74463b6d50abd6044c66c4cea27f530ebf2b48dc87015a2a1d37c11aa2615d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7fa5dc91091af0cc082462bcc757dff6f8aa58f88f0d1cc3bbbbf8fc977aaad5.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/812220f6d6630f7e3e36ad3346685cee3517ee51db509916d2868852bad2f550.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8ae742570189e878bffd807a178ffe67227d36acc43bc497ac988cbfeea39d91.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/94872ea25885a4c60ae4644c0719c1080fb94d9ed6846483f5e0d40a3e153775.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/95710c65c6dab48ffc1b7e643c2bea48b49112d580ff444bcad96766c889aab6.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/963bb68b3456a0b746f6c227156417c41c837ff7723523b84a1e2ff1e2b0d80d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/976242fb7cc430c2123b725904798106c1ba8326de1ddf69c19603db22cd4631.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/99acf05a1e097c3ef0edb0f67881b0644a0dd6b7bb5506a96666129a95bf63ff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/a55573418998e6b496f985f3066835326ea8e74ef1fbb27c54a42bbc37ce422e.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/a77cd79abe18832fd53e93bcba190f44362226ed509aa9638d8dad1b8919dded.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/a7b7b03e50325723c231c9b9e02549254d0761604b6546f679eea2c13624c8ed.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/aa595a9dc5f5634a1840a40bd6b3537b8fb01a83579de6f4640ca681f29ef7f8.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/ad77090d36be8599e89632c345f9ded72ea1bcbb622a76d83ef9c4f061dce66d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b1c6b6d12b4d529c43ba328b8946bc22652b730b4b052591111d3ba65ad16f49.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b4c751706bee81a031c15ced8888480574ac9b51e9ccba3eec5937a307604fc7.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c408b1078ac9bc9981cfc414bdea0802c25501ecec11f54ae0ff7f2f26105d66.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c96efb169fa3d78c5a831d0938d63797e4017e3a818aee448fb85b878676e12b.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/cba779f041e1c7f2a2af4549ed453f6f2dcdbdb02a14c6aeddd2fa8b759a9ae2.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/cdae785baa4d539821250550ccda534e909d125115463c76ee412de9cf4c2d5b.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/d73401de7f2bbdd9a1dc6e07a84fe5d2586b2467d81bc40d38fc37164193528b.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/dffdb9f213980e4c0db4e70d9610233061275df08626af8720253aaf7dc2a1e4.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e1d2a2eb065eac72554a2b20a1e1b53102cfe55ee7a3de92b61608ca2bf84787.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e2a10c73b8f06b022ceda6e79fe9fc3e86589449fe1cb452b833d37b232dce5d.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/eea2cbe9cb7bfe932d6c3cbefde901ba9da4c1abb30ccd931c522df694e7b216.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/ef28bc5d2d917e233c7462bd5199d05fe9b658d1fe6752692d19f9d232caa522.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f13e3d5b74f624614520d9bcd6d7d9cf3a434cbc01801409430c0803646a3d80.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f293eea378fd902ae9b35b71121377c9caa57d76dfb9785a28fa2178be216ee0.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f6d44660cc55ab7d18859e77963faa3b4340ffb05151d957757b0cda1c91d9b6.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/fabb87d8188ce120d7bec6084fac6d48a21d252227b8fbfc2fdcf33192ec3bba.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/fc180e9c470526087afa22d3180ae1faf43c4215fe177215d07311c2b8dec184.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/fd232c87f1a24d6d25924432274322ee114a7572f4b090002512201dd75153ee.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/combined.n3.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/combined_acceptance.n3.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/identity.n3.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/prepare_verify.n3.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/root_acceptance.n3.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/source_checker.n3.diff.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/ADAPT_PROGRAMS.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/BUILD_SOURCE_ONLY.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/CHECK_PREPARATION_SOURCES.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/COMBINED_ROOT_ACCEPTANCE.template.json.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/FINALIZE_SOURCE_ONLY.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/IDENTITY_TOOL.template.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/ROOT_ACCEPTANCE.template.json.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/prepare_verify_initial_state_kinetic_energy.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__CHECK_PREPARATION_SOURCES.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__COMBINED_ROOT_ACCEPTANCE.template.json.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__IDENTITY_TOOL.template.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__ROOT_ACCEPTANCE.template.json.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__prepare_verify_modulated_kinetic_energy.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__run_combined_validation.py.gz',
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/run_combined_validation.py.gz',
+ 'docs/FINITE_INITIAL_ENERGY_KINETIC_BOUNDED_THEOREM_NOTE_2026-10-13.md',
+ 'docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md',
+ 'docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md',
+ 'docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md',
+ 'docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md']
+EXTRA_PINS = {'.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/ASSUMPTIONS_AND_IMPORTS.md': {'bytes': 1541,
+                                                                                                        'sha256': 'ef570ee1fd28272fa47faab536d15ba8cb64f54594615aeb5f3c23b68f6f3344'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/CLAIM_REGISTRY_ADDITIONS.json': {'bytes': 1508,
+                                                                                                           'sha256': '23db6fdf30d62ba6b74d12d73a826d2879c7f5a8f1a6d766bfe2e5b78a2de1d3'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/CLAIM_STATUS_CERTIFICATE.md': {'bytes': 690,
+                                                                                                         'sha256': '7fc0668a7a7764008691a050e88cb9fa947d01c6ca75233d6bc0859af7a7af47'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/COMBINED_VALIDATION_PLAN.json': {'bytes': 853,
+                                                                                                           'sha256': '6ad8c2791c4df9f3e306c9ccc7b4dd379b1d735c1556275bc6fd1ca36202e840'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/CONFORMANCE.md': {'bytes': 1268,
+                                                                                            'sha256': 'a6d244ee4be72059299f417c6b22bdf57687e6a4a0baca788c903c7a2d614baa'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/EVIDENCE_MAP.json': {'bytes': 113668,
+                                                                                               'sha256': 'a82f94a8624ad4b67c6a7d295d1cd95c26f132ba0179ce6afc4851cd069d9ab5'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/FINITE_INITIAL_ENERGY_BRANCH_START.json': {'bytes': 387,
+                                                                                                                     'sha256': '7c6840c9e350db197cf1ead1aa5a6d344e87d6d2695c22c41e3573caaffda789'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/FINITE_INITIAL_ENERGY_SOURCE_ASSEMBLY_ROOT_ACCEPTANCE.json': {'bytes': 869,
+                                                                                                                                        'sha256': '963bb68b3456a0b746f6c227156417c41c837ff7723523b84a1e2ff1e2b0d80d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/FINITE_INITIAL_ENERGY_SOURCE_ASSEMBLY_ROOT_REVIEW.md': {'bytes': 3611,
+                                                                                                                                  'sha256': '002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/HANDOFF.md': {'bytes': 1803,
+                                                                                        'sha256': 'c2032552b3ecc28b9e9392af224fbc574bb9f7d51177bc3159d0f5b5b7437ac3'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/MARKDOWN_NOTATION_CLASSIFICATION.json': {'bytes': 158,
+                                                                                                                   'sha256': '900015cbc3bd89c07d516b2f5f8c6fba679007ae55dac472f36656bfa568d08d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/N3_SCAN.json': {'bytes': 4971,
+                                                                                          'sha256': '78f4aa8902ea1a2fb0891475d15ae815f3588390de4d27ea756114dd4224c146'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/N8_HISTORICAL_SCAN.md': {'bytes': 2182,
+                                                                                                   'sha256': '23f33660131546e979e5e3e85a1e9c8aca3dbb3612e360fcf420e2afd3c29fab'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/N8_SELECTED_SOURCES.json': {'bytes': 1869,
+                                                                                                      'sha256': 'dc42bbc482d40a02dcebf8416244dd50ba66793eeae4e53ecb5033e97d43cc32'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md': {'bytes': 15567,
+                                                                                                           'sha256': 'b408001f7f59514644bae2e7a31b8dbc4edaa510b829dd2a53db22544aed8f0a'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_LEDGER.md': {'bytes': 1938,
+                                                                                             'sha256': '16eb7e8462919d9c54e9104dc3b391d3b5316b4a38735a9a56bc833c884e0a72'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PARENT_BINDINGS.json': {'bytes': 7720,
+                                                                                                  'sha256': 'c7c6ea773dbb63c9240e1a26f1c2fdf278c46c801ce3e4bc2f81a7410e61d146'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PROGRAM_ARCHIVE_INTEGRITY.json': {'bytes': 5855,
+                                                                                                            'sha256': 'e328cd361832d9a707214129c661e7e25557989fc8ef5696ae6370e6e2346c1e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PROGRAM_SOURCE_INVENTORY.json': {'bytes': 4936,
+                                                                                                           'sha256': '198037b090ac8f9c502b732a12df4d098a638f015c8c557e68c33a343d744b2f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PUBLICATION_EDITS.json': {'bytes': 18437,
+                                                                                                    'sha256': '4836ec5371fc0b7921f24ac1fa9869d44e2dcdde23083202ac5f7d839b1d19e8'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/RAW_DIFF_INTEGRITY.json': {'bytes': 3888,
+                                                                                                     'sha256': 'cff1c20974e7ec17ca8c2c27ca1c0438bde297f7f93dec5ecefd5571fa6f1587'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/REVIEW_HISTORY.md': {'bytes': 4186,
+                                                                                               'sha256': '8a359794dac09f4c2a69c55d67082c7daf96bc48a20d39947348c1990760279e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_AUTHORITY_BOUNDARY.md': {'bytes': 712,
+                                                                                                          'sha256': 'b73a9b4c37ce91d677f969b17635d02d14a920c6bc8b8a5eaefa3060329bb82f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_RECOVERY.md': {'bytes': 1213,
+                                                                                                'sha256': '0450df936c88d9b4a00420bf1149b5169ad1cda2002f5fbe9faf4391cd8d2f46'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_REVIEW_STATUS.json': {'bytes': 2098,
+                                                                                                       'sha256': '04a023ffdd35719da9ace4d7c53816596228723567d719326daf62e6a8bd22b8'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_WHITESPACE_CLASSIFICATION.json': {'bytes': 278,
+                                                                                                                   'sha256': '08e62429add156cb9ed77a37f799c1903bcc846befc04af34d87d84859fa5826'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/TRACE_GATE.md': {'bytes': 828,
+                                                                                           'sha256': 'ed16234b73fe4aee75fb24f2d11d014ff5d06bfa79bf6927e17d6529aaa69690'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.0.diff.gz': {'bytes': 5923,
+                                                                                                           'sha256': 'dbdbcf6bb92171872f506ff60c07cdf44385c670546e46e7277a15b4b163686b'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.2.diff.gz': {'bytes': 20,
+                                                                                                           'sha256': '9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.4.diff.gz': {'bytes': 1232,
+                                                                                                           'sha256': '1b32517dfb337bf1f75a87effffeb198eda7e27178dd3dbb6e6bf8d39469ee11'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/initial_state.publication.diff.gz': {'bytes': 6730,
+                                                                                                                     'sha256': '5c30afdb4446e219408ef9edf33089378a4ccd30b40e60ab1e81087eea6d1bc3'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/no_go_checklist.diff.gz': {'bytes': 4187,
+                                                                                                           'sha256': '9248491f870935efc4c820c0781e82290e9a722eb683ad0c560ee05b525261a6'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/diffs/no_go_ledger.diff.gz': {'bytes': 2054,
+                                                                                                        'sha256': '153b9ee165c88983010f00e28224781ac29dd91077df8dfcacd9910a819d6841'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c.gz': {'bytes': 1848,
+                                                                                                                                                         'sha256': 'f6a9c0f1b9208ef3757940f23a1de4bff4ecdd83e5cba4975e6131996bfad6d4'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0117363d2a3aa6d1c3efef67e544879273ea6c2d62cf3c39738300e03a31a821.gz': {'bytes': 974,
+                                                                                                                                                         'sha256': '32b3619d8d6f4428a1530b2f76534b6fb7fa98ed7ca2eb96eb7f59a64659e9da'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/01870de7caca112afeefd77b3c3b4c5e263cf5539a33af3f3411100727fad7d3.gz': {'bytes': 34,
+                                                                                                                                                         'sha256': '73eed88f6cca5e4996430bb6463eaac1007895129e3bb76a3bd03941514236b5'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz': {'bytes': 6353,
+                                                                                                                                                         'sha256': '4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0778588c29df17ea479df45ac6364340f9f47b5671c9af3058066c49e997c4f2.gz': {'bytes': 1259,
+                                                                                                                                                         'sha256': 'd4561745951431c764da4f0642d441e635709e382e81b53b7fe5fce5c4d949a9'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498.gz': {'bytes': 8625,
+                                                                                                                                                         'sha256': 'db95fefdc023bc9e9a8e245aabc005c1b0281fcd98d89cc2f94e5df10c058ce7'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/0c2e6e269cd87b5b7b95cf02fead12f25920638954ecff061a508d49bdd3e366.gz': {'bytes': 516,
+                                                                                                                                                         'sha256': '42a3a43659b7130aec631f8ec85dc5d80c062243b005d46148ef0dbb70e715ac'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/12865a35aa790c8d4a8a4b1fe2d599d262672774614fbb2e16c1e4e5ef040fcd.gz': {'bytes': 942,
+                                                                                                                                                         'sha256': 'e68b0be3d9501cc5a4bc2a61734c14d06aae1fbb84fac2aa9f6e209f6c5ea24a'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/154320899ada2ed16f488dfa663eb6d8b6caeeb1a47fe9052acdefa48fcb5963.gz': {'bytes': 1297,
+                                                                                                                                                         'sha256': '30287ce3f34753305343a8d57d7aa28d7ca025cb21f7b3d7b07ebb502aa37869'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.gz': {'bytes': 7467,
+                                                                                                                                                         'sha256': '1bb30c060ca8c4b6068e4c171c4587a53f4d397ac2d83f66b23326489f4444e7'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/20c9f7cba4ea75cfad431e067f676aae54b15e031005a04dd9b4c63d37423086.gz': {'bytes': 8253,
+                                                                                                                                                         'sha256': '44efe73afb10de8814d5e4a121b383f8e344031b511ea615a7a2539afd93bdc9'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/2289bcc7d9865870e9f836bad37452ddb00855224290dd794069b7f248401521.gz': {'bytes': 1019,
+                                                                                                                                                         'sha256': 'df7935e59118bbddcd9651b79e91c9fc07909cdda85baaaf505350610615db42'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/2dc91d06c217908afee186e8b5180b7ed91f9f9328c1978b23e8b36d3ad9901c.gz': {'bytes': 5401,
+                                                                                                                                                         'sha256': 'f72c3f2c4f81dcfaf8fb906e589b4421f02e19284f21b14a3c07519f4a028d0e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz': {'bytes': 13238,
+                                                                                                                                                         'sha256': 'f8dd35ca9c0a3ece0796ea04634d5fa56133cc7936ca3e406607aa773f7b2564'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/32b7d982dba310ddddf7736086216476a2ba317c73796fa553426c6870449928.gz': {'bytes': 1451,
+                                                                                                                                                         'sha256': '5ab48fd0f4ca345e0e56490980a867fbda9bf9a66994d7974c5e58eef1364560'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/34dc4f71b91dab58519d5e815bf08fdb9601a162fbcb13b6ebb3039197c74e6d.gz': {'bytes': 3390,
+                                                                                                                                                         'sha256': '997fc51042a0f8d94e1362b66dc0bd2ee90e4b9116842794f1245792344cadaf'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/34e14b1e25621ce5b878d76542790a2e39296cba99d66288a805690903fdf32d.gz': {'bytes': 792,
+                                                                                                                                                         'sha256': '6d84ebfafd6fd8c916e21e0b380f929c13a5989f76eeaf1e5ced95e9f35fb451'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/350649052130bb2d4a8483e3040acac9ca0c750bb83ac1ea7ead4dd45a7bb57d.gz': {'bytes': 748,
+                                                                                                                                                         'sha256': 'dc9fa64733899bb159514b7426cef8959e59a78d6099774f21e6ef6dd6101ec8'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/376277d7f4c7111c345dffa9d5335954fa34cc9d5a3212ac7044cae735de7cf0.gz': {'bytes': 467,
+                                                                                                                                                         'sha256': 'c611ec47f6ddcff36ae15e6e9faa53d5a42316b7850aff4667d6f76071d76f8e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b.gz': {'bytes': 10049,
+                                                                                                                                                         'sha256': '4c734cd9ca4f8a81ed14b067d0747598269c2a4da7a4e19782cd3b0c37131f61'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.gz': {'bytes': 4962,
+                                                                                                                                                         'sha256': '0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/3db8b654c36a63dea749b4212c9182be4d3c5f6a516acee499d1e2aaedcf3457.gz': {'bytes': 2503,
+                                                                                                                                                         'sha256': '8c813f48cf868d74db65d88a6bbd8e8152909b638f0212b80a564bed2c69c3aa'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/406a3b1ecd6a2b43d94df02af1971123f43debf1c2cc7b9c93779a488231e4db.gz': {'bytes': 4367,
+                                                                                                                                                         'sha256': '2cf88a8a804f797e8df1a20888d4900d361717050a36e8d7dc558ac555b2333f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19.gz': {'bytes': 7109,
+                                                                                                                                                         'sha256': 'db8312ac43fb5e6f94055a2c8468f6eb6a474220c24e0a13c2252ac66d32af5b'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/40caf10926d55bd0dcca4eadbb88f459ce423dc26d66c496a4f2dac1f0e40fdb.gz': {'bytes': 385,
+                                                                                                                                                         'sha256': '612a4cd0b46dbd3115f84b85355ce58213cf185d5782b9c07a991fad75af7374'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a.gz': {'bytes': 9586,
+                                                                                                                                                         'sha256': 'f4d6947bf8f4d8f682cb00fea879bccb03965de7c0d55c2e1e220e1a5131608c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/443ceeaced86b9fdf1004955d8c837e82aefba202c7984cfe69bce9a2feba5cd.gz': {'bytes': 350,
+                                                                                                                                                         'sha256': '9cc958da7546584bcde54d82c215da1ab9ed7a7643925a41b092608080450e6c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/46f7bd6ff105ee53d2e5ed81ba90b8d22af1d8adec0771bde5ab1476ba949ad2.gz': {'bytes': 1147,
+                                                                                                                                                         'sha256': '1e726f59747ce6416b06e6c1358ce78c4c0e6dc72b1a3c10388029c617b41da2'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/47a52afb2a84427194f3a5892183e448c47914be02af5973e6be9b1911091603.gz': {'bytes': 1681,
+                                                                                                                                                         'sha256': '5f44cf1531f50bbc764e4114aade5fa96206b2abc51f21f752cead60cf48b8f7'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/4afdfcb75098c7923e936273112eed566fa78be30346076cd65381004d701116.gz': {'bytes': 574,
+                                                                                                                                                         'sha256': '916ce4be2231c946c0e0986cf32c58d4e1f0bb744e1c5d9b79fcc33c1c7ed2bd'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/4e5382dca48d3873562dc119df0417103eb5566f3b8983c8b869e4ee5287a6de.gz': {'bytes': 547,
+                                                                                                                                                         'sha256': '3e7c1fd1107c41c9053519adbc38c80f8bba96f8be926e0dc4704c80d149267d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/4fd5856b486dec170ef307cf0e626b7bde9aaaf2c7955446e1b325424ed0fd3a.gz': {'bytes': 8442,
+                                                                                                                                                         'sha256': 'a28e8b869fe8728c602cf3ecb9b1c3607d34c7715e9ed4d7cd540386b6af110d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5042c3ee02ec470def0ce9b42c7b30f255116cc05ac2daecc932403928664508.gz': {'bytes': 6356,
+                                                                                                                                                         'sha256': 'e8ce5a70971c96ae4a5a1cd5ec269434ded03048bf691d55b543ea267f3ad091'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5222f8edf54399989bb7859b3b949df219fd62f97dcc7dee41187170a0414331.gz': {'bytes': 801,
+                                                                                                                                                         'sha256': '4ee8e2c888ce8964ddaedf923aab17b0908a55bca2a8ce77d629faf3fef57f6f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/527868da57001dfa014e06fb9c5a599bac34f0db7e0aa37329cb9dc13c3a264e.gz': {'bytes': 2644,
+                                                                                                                                                         'sha256': '9fd6c44fcee23332b453db3b8f68ed8c22bb67e85b48389e58a004de4fd83b99'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5a9bc045cf469e7b96f69095c018280909f0479ee5c25ae4b183e8a97108d5c8.gz': {'bytes': 1635,
+                                                                                                                                                         'sha256': '74907146154c0df517f61cc90f7dd1c1cb72231cc524fdfcd2dab91ac7376762'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/5d2351915f352a1d65c78b95cf99b3da13db217aa11adb82efe511c9537a9f76.gz': {'bytes': 1868,
+                                                                                                                                                         'sha256': '353019789788be865840c648fc6db4ff5bf9619b1d54b374237f23b82bdf35a6'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/6109032f7a66ac47301a722a50d6556afec1661c9842cbe3afce49c18eace343.gz': {'bytes': 3897,
+                                                                                                                                                         'sha256': '6d268d242b211c47745d1b4656e41619d928cff755fee84ba9b62137f6d311f2'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/64ac98106bb651f8503edebd021d4153cae449fd7bbcf8b234da11bb6972a255.gz': {'bytes': 1794,
+                                                                                                                                                         'sha256': '74ec263e1555244953ce763b98329c5bbd63771ce6102e7dc62272708efb6c26'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/64c536fdc28db655ab895a424d185943e9087237d42c73fbade687df6a1c0e49.gz': {'bytes': 1058,
+                                                                                                                                                         'sha256': '1354b1913931daa9168ff4a2ae7fa73887a29738cf0517a78699b470c6fd5179'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/68487be2a4b090462e12c255f4b069c65ac191a19ec0d85050bc51360725fcf3.gz': {'bytes': 353,
+                                                                                                                                                         'sha256': 'e6e913b3af574214d422d152d05553da8e0f43cd417a7ed39821beb91e8a9e80'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b.gz': {'bytes': 9320,
+                                                                                                                                                         'sha256': '948ef56dc942bc321ef285c6c83815ea604616ef38be3a5f3f6d07204891fb9a'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/6ff0583ff1c52f55b0ed100974aca5351428ba0cb1bae333f6db336541ced51f.gz': {'bytes': 1478,
+                                                                                                                                                         'sha256': '8722665d2147d6f2598f52fb0cffdea0caeae89347965f7d81d99d18a01c06c9'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/700e1b3b4b85e89a95741fb9cdec7a2068072e312a1053279088c4c29e3fc156.gz': {'bytes': 8682,
+                                                                                                                                                         'sha256': 'a1c240c9dc34fb0c9fb6fea3bc71916983e44d79002bcda70819002f6e08a54f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7745d5a5711bc1afbb0bbceba86e94f4e1ab3fd10d1593c9fb1efcbb5c3f4283.gz': {'bytes': 3401,
+                                                                                                                                                         'sha256': '6204c4c599539ea621d203cdd505336953c1f80afdd4a2284e135c3111287373'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7c6840c9e350db197cf1ead1aa5a6d344e87d6d2695c22c41e3573caaffda789.gz': {'bytes': 287,
+                                                                                                                                                         'sha256': '3aad03b4946e5abfd8a2211212aac65b34627d1596cc1a4f592e21a7c980ba8f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz': {'bytes': 4064,
+                                                                                                                                                         'sha256': '08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7e74463b6d50abd6044c66c4cea27f530ebf2b48dc87015a2a1d37c11aa2615d.gz': {'bytes': 265,
+                                                                                                                                                         'sha256': 'f4a033878db72f0171c9921c6d2b9e20c347aa861eab2f2310eb30e6b3faa230'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/7fa5dc91091af0cc082462bcc757dff6f8aa58f88f0d1cc3bbbbf8fc977aaad5.gz': {'bytes': 432,
+                                                                                                                                                         'sha256': '7be7d8848d20a4b7e9b7749d3833dda5cd0b7f823cd4181e6dc521ed6be34afa'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz': {'bytes': 12552,
+                                                                                                                                                         'sha256': '4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/812220f6d6630f7e3e36ad3346685cee3517ee51db509916d2868852bad2f550.gz': {'bytes': 1351,
+                                                                                                                                                         'sha256': '58f4b09caa8564ba830c21435a6d0329aab0c0692dfc28dbf62829a31f93e0e0'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8ae742570189e878bffd807a178ffe67227d36acc43bc497ac988cbfeea39d91.gz': {'bytes': 965,
+                                                                                                                                                         'sha256': '317e101915b83c040424e793845c86eb26ad603e951f48ac53b479c987545687'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819.gz': {'bytes': 4132,
+                                                                                                                                                         'sha256': 'fbb73f08928dd0ecc9dd2b68c5bdb1246bd3b06789611286db0f6026a50172cd'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a.gz': {'bytes': 19589,
+                                                                                                                                                         'sha256': 'a5a9ea113b4abcbaf45fa48b2d2c1c7e43e8af11bcf602cbb919098e08ad0db0'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.gz': {'bytes': 3630,
+                                                                                                                                                         'sha256': '2b810691ebd17a412f702422ec88f33c9a9cdbb6fea77743f1dc7cebc398a065'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc.gz': {'bytes': 6897,
+                                                                                                                                                         'sha256': 'f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/94872ea25885a4c60ae4644c0719c1080fb94d9ed6846483f5e0d40a3e153775.gz': {'bytes': 5991,
+                                                                                                                                                         'sha256': '9551dfd05b4f13e90d5b7983c2b6c5d2e908b1f5ab493722801588d7442e5914'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz': {'bytes': 2676,
+                                                                                                                                                         'sha256': 'c57bd51ce4e75af515fbf5e7904620229cc4943c2796499393885dc06c30bd4b'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/95710c65c6dab48ffc1b7e643c2bea48b49112d580ff444bcad96766c889aab6.gz': {'bytes': 12814,
+                                                                                                                                                         'sha256': '2ce4123f9cd0c4c4f513868c90cae2d4cb3125a9de7eff2b5049d6eeb7daa295'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/963bb68b3456a0b746f6c227156417c41c837ff7723523b84a1e2ff1e2b0d80d.gz': {'bytes': 555,
+                                                                                                                                                         'sha256': 'e17972662e3d4c91a8078c27ab6c2b25a34cdd1c9bfab0e86da062506db146a2'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/976242fb7cc430c2123b725904798106c1ba8326de1ddf69c19603db22cd4631.gz': {'bytes': 592,
+                                                                                                                                                         'sha256': '81801d8aaabcccddd5b836376bbc8c228346b56e7bd8fe2c75c34a1b41d81e9c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.gz': {'bytes': 6019,
+                                                                                                                                                         'sha256': 'e15b35db04ab3450d10ad261d2134083a37114ab123a7cb48ca8222591b0ba7c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/99acf05a1e097c3ef0edb0f67881b0644a0dd6b7bb5506a96666129a95bf63ff.gz': {'bytes': 14952,
+                                                                                                                                                         'sha256': 'f015ea20c9fcd311b4ff1281e716542b8bf142b19c7003a67bbec36a481f5fa2'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2.gz': {'bytes': 19486,
+                                                                                                                                                         'sha256': '51cd4fd42cbb15da85954a6e2317d7f5e8516e67cba38be1d65c95fa2d5552a2'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz': {'bytes': 6269,
+                                                                                                                                                         'sha256': 'b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/a55573418998e6b496f985f3066835326ea8e74ef1fbb27c54a42bbc37ce422e.gz': {'bytes': 1410,
+                                                                                                                                                         'sha256': 'deda50db5b4e9bfb99f8328718caf49950896302a067caa5931ee425d34354b0'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/a77cd79abe18832fd53e93bcba190f44362226ed509aa9638d8dad1b8919dded.gz': {'bytes': 5208,
+                                                                                                                                                         'sha256': '1273e3e6d19b0f32f1eb1be39eea7f38c9f5609e5a79028c6aaf721c1c99000f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/a7b7b03e50325723c231c9b9e02549254d0761604b6546f679eea2c13624c8ed.gz': {'bytes': 333,
+                                                                                                                                                         'sha256': '869de5b44757af876666b689ceff1c7edd0876475c3cd6515c16834c71c4a91d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/aa595a9dc5f5634a1840a40bd6b3537b8fb01a83579de6f4640ca681f29ef7f8.gz': {'bytes': 180,
+                                                                                                                                                         'sha256': '093dcab3d479a459467382ebf54df3b3ddfb36c9fdb2f6244a93488348439cf3'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/ad77090d36be8599e89632c345f9ded72ea1bcbb622a76d83ef9c4f061dce66d.gz': {'bytes': 637,
+                                                                                                                                                         'sha256': '7fc2baa076b220a9391c166f05bd63e24b6e72ca5c2639bf2ee001b82ca94054'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b1c6b6d12b4d529c43ba328b8946bc22652b730b4b052591111d3ba65ad16f49.gz': {'bytes': 1448,
+                                                                                                                                                         'sha256': '58eb42c9f06f0483ff152574a8752b69513d3127109abc603a752495480b201c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz': {'bytes': 1138,
+                                                                                                                                                         'sha256': 'f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz': {'bytes': 1057,
+                                                                                                                                                         'sha256': 'a30d8b2734d82ba86592593d7083416dea4deee7ea0fb7a130d721145d6a6ae6'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/b4c751706bee81a031c15ced8888480574ac9b51e9ccba3eec5937a307604fc7.gz': {'bytes': 447,
+                                                                                                                                                         'sha256': '3b42b74ab1dd5101a0e38403cfc631bde2955813a680789cc43bba7d1f939b06'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7.gz': {'bytes': 4451,
+                                                                                                                                                         'sha256': 'fa197fb471982db8bf959a8a8cddbe0e09ca1f8166ec6c734110c7a298293ff3'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz': {'bytes': 2265,
+                                                                                                                                                         'sha256': '876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz': {'bytes': 6504,
+                                                                                                                                                         'sha256': '7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c408b1078ac9bc9981cfc414bdea0802c25501ecec11f54ae0ff7f2f26105d66.gz': {'bytes': 706,
+                                                                                                                                                         'sha256': '99d6851e3667e2f0b2691ead7212e101cfb40b2a500fbe3d559c8a1e4190d01d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c96efb169fa3d78c5a831d0938d63797e4017e3a818aee448fb85b878676e12b.gz': {'bytes': 1354,
+                                                                                                                                                         'sha256': '8c426c2e56ec6e14233e9bd097c309045594e4503d62433a238a2cbfb89c4e4c'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b.gz': {'bytes': 16630,
+                                                                                                                                                         'sha256': '583d9ed2c263f9a1100af6d339a178e0457b8fd67d6fe83b456146b0fa73b513'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/cba779f041e1c7f2a2af4549ed453f6f2dcdbdb02a14c6aeddd2fa8b759a9ae2.gz': {'bytes': 330,
+                                                                                                                                                         'sha256': '71c1249edcb77776aa276fa38d857e1b210df35807987be221d5196d7aa7a212'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/cdae785baa4d539821250550ccda534e909d125115463c76ee412de9cf4c2d5b.gz': {'bytes': 14586,
+                                                                                                                                                         'sha256': '52f2690f365a63ed6e82cf50cac74cd384984782dab8417ddea9e900887faf2e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/d73401de7f2bbdd9a1dc6e07a84fe5d2586b2467d81bc40d38fc37164193528b.gz': {'bytes': 1400,
+                                                                                                                                                         'sha256': 'd6bcb5374548d8e26413e92c9643a39bbcb59bc947d0b569135396cd8190de0a'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz': {'bytes': 4601,
+                                                                                                                                                         'sha256': 'fbfa023afecaf284a743b1c41200f3d32881107e48640f96836bc9487a2a5cf9'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae.gz': {'bytes': 20141,
+                                                                                                                                                         'sha256': '48637539f6c5d391e18a79a6686577a666451fcdc3fe32699c562d1195465798'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/dffdb9f213980e4c0db4e70d9610233061275df08626af8720253aaf7dc2a1e4.gz': {'bytes': 2164,
+                                                                                                                                                         'sha256': 'ddefe2fd065e18a11e26c948ab188c6165a436b86db199a808fab6ac498247bc'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e1d2a2eb065eac72554a2b20a1e1b53102cfe55ee7a3de92b61608ca2bf84787.gz': {'bytes': 338,
+                                                                                                                                                         'sha256': '21c5bae3f8e2fec097cf88fceb96fd550b12d2773781e5b5449e11eb94d08a6a'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e2a10c73b8f06b022ceda6e79fe9fc3e86589449fe1cb452b833d37b232dce5d.gz': {'bytes': 4937,
+                                                                                                                                                         'sha256': '7ba3d6c0674dbcf8438531496d7789afa00c84df03545967481cd4b389322e32'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz': {'bytes': 6972,
+                                                                                                                                                         'sha256': '50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz': {'bytes': 20,
+                                                                                                                                                         'sha256': '9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.gz': {'bytes': 2509,
+                                                                                                                                                         'sha256': 'bde06cd28ea6b1f7ed4468687b99b794b7d04f458f8e10eaa18f13eb57d7bda0'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/eea2cbe9cb7bfe932d6c3cbefde901ba9da4c1abb30ccd931c522df694e7b216.gz': {'bytes': 1665,
+                                                                                                                                                         'sha256': '8d0e0b236a118dfc90c0e5da5222952de13d755da9a12bb2bb2da4eaa3f6d60f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/ef28bc5d2d917e233c7462bd5199d05fe9b658d1fe6752692d19f9d232caa522.gz': {'bytes': 4116,
+                                                                                                                                                         'sha256': '89bae4dc57af0e37953d3be347af483c8eb24824b000db5fc30aa77893152d6e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f13e3d5b74f624614520d9bcd6d7d9cf3a434cbc01801409430c0803646a3d80.gz': {'bytes': 1685,
+                                                                                                                                                         'sha256': 'b53206b4d8e04c02064fbe4d05546ffe14b9f333d03a7a8408e4f8f365cb9e80'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.gz': {'bytes': 2513,
+                                                                                                                                                         'sha256': '0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f293eea378fd902ae9b35b71121377c9caa57d76dfb9785a28fa2178be216ee0.gz': {'bytes': 8886,
+                                                                                                                                                         'sha256': 'c62ff7f9ce090cfa344ae773dc71932aea4ba518b937e01a901f236b90e5face'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f6d44660cc55ab7d18859e77963faa3b4340ffb05151d957757b0cda1c91d9b6.gz': {'bytes': 1082,
+                                                                                                                                                         'sha256': 'a5ab2820bdbc632fad5102ccfddfba0388972d2746b7ce649d84acc7b1bfeb8b'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz': {'bytes': 724,
+                                                                                                                                                         'sha256': '9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/fabb87d8188ce120d7bec6084fac6d48a21d252227b8fbfc2fdcf33192ec3bba.gz': {'bytes': 3762,
+                                                                                                                                                         'sha256': '7d8cf3da5844c262a719ca091622e9f8a9a6ef7d09b5e5b72dc05df8cbea2ee4'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/fc180e9c470526087afa22d3180ae1faf43c4215fe177215d07311c2b8dec184.gz': {'bytes': 16414,
+                                                                                                                                                         'sha256': '8b052441cce3980bced2e9605fc20fd80a1d551bda8f34ad0b90900780d581bd'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/objects/fd232c87f1a24d6d25924432274322ee114a7572f4b090002512201dd75153ee.gz': {'bytes': 810,
+                                                                                                                                                         'sha256': '97059b96fab0d4404289dbd3b8ce8225f291082baaf651f6f4cb814cac70ced8'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/combined.n3.diff.gz': {'bytes': 510,
+                                                                                                               'sha256': '531d68b6ae4e82b3f15544c95c6261881d12f10fc6afc6131112f35c3799ce11'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/combined_acceptance.n3.diff.gz': {'bytes': 366,
+                                                                                                                          'sha256': '2cd158807e7f859477ca41bd530a1374f42ddd2dd80feabeba8e8faea78a4687'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/identity.n3.diff.gz': {'bytes': 7220,
+                                                                                                               'sha256': '47906bd256920db94f66de9c21ade99c7fdbe312bfb3d1646ad356485daf6587'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/prepare_verify.n3.diff.gz': {'bytes': 7337,
+                                                                                                                     'sha256': '35c161fd574db8dbfcd260f664de2dbcd69b4ecf77cf388e953a764f3b10dd70'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/root_acceptance.n3.diff.gz': {'bytes': 1559,
+                                                                                                                      'sha256': '43237c562f0821723e7d87aaf159cabf1ac4d21d7e420a725a8b19d0e4972146'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_diffs/source_checker.n3.diff.gz': {'bytes': 6877,
+                                                                                                                     'sha256': '4ea3baae449b352a2933e9f13b53b549ecc6b6188c2ce2f8be4e3ab66e618fd5'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/ADAPT_PROGRAMS.py.gz': {'bytes': 4148,
+                                                                                                                  'sha256': '364cfa3c40955651e6487eabdf0bf124bb31ae3f94ced90dc01227be179e161e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/BUILD_SOURCE_ONLY.py.gz': {'bytes': 17026,
+                                                                                                                     'sha256': '1591911742486ebd2d9e950f8ef9e92527a7370fd35ba22d19b4210a2122e228'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/CHECK_PREPARATION_SOURCES.py.gz': {'bytes': 4566,
+                                                                                                                             'sha256': 'f01d927e04e23e133132209cd889f900fc48c0217dd3d99653f74579e8bdfdc9'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/COMBINED_ROOT_ACCEPTANCE.template.json.gz': {'bytes': 352,
+                                                                                                                                       'sha256': '176c9acf562a44720c74e9062d4157568f4ed3572c46109a3be5636d500f7a5f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/FINALIZE_SOURCE_ONLY.py.gz': {'bytes': 6161,
+                                                                                                                        'sha256': '3af9c57f4c89dcada20a5bc0dd17d25603c0b1b185b69e79005b1041df77bb78'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/IDENTITY_TOOL.template.py.gz': {'bytes': 4134,
+                                                                                                                          'sha256': 'd61943cf41e7a93523625cc862c98314905ac40a80bbfb6ed4c69383b0704a1d'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/ROOT_ACCEPTANCE.template.json.gz': {'bytes': 1121,
+                                                                                                                              'sha256': 'f4cc4e09560ff919e6faba2bd82d833be5caf53bc7f52893abca55ff0250ec38'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/prepare_verify_initial_state_kinetic_energy.py.gz': {'bytes': 14600,
+                                                                                                                                               'sha256': 'e7712aab2255d7a57e969f39ca7cd938c06e46ef5f95fe890820a368adb6d63f'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__CHECK_PREPARATION_SOURCES.py.gz': {'bytes': 4116,
+                                                                                                                                                  'sha256': '89bae4dc57af0e37953d3be347af483c8eb24824b000db5fc30aa77893152d6e'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__COMBINED_ROOT_ACCEPTANCE.template.json.gz': {'bytes': 353,
+                                                                                                                                                            'sha256': 'e6e913b3af574214d422d152d05553da8e0f43cd417a7ed39821beb91e8a9e80'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__IDENTITY_TOOL.template.py.gz': {'bytes': 4937,
+                                                                                                                                               'sha256': '7ba3d6c0674dbcf8438531496d7789afa00c84df03545967481cd4b389322e32'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__ROOT_ACCEPTANCE.template.json.gz': {'bytes': 974,
+                                                                                                                                                   'sha256': '32b3619d8d6f4428a1530b2f76534b6fb7fa98ed7ca2eb96eb7f59a64659e9da'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__prepare_verify_modulated_kinetic_energy.py.gz': {'bytes': 14952,
+                                                                                                                                                                'sha256': 'f015ea20c9fcd311b4ff1281e716542b8bf142b19c7003a67bbec36a481f5fa2'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/procedural_template__run_combined_validation.py.gz': {'bytes': 3401,
+                                                                                                                                                'sha256': '6204c4c599539ea621d203cdd505336953c1f80afdd4a2284e135c3111287373'},
+ '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/program_sources/run_combined_validation.py.gz': {'bytes': 3400,
+                                                                                                                           'sha256': '4442fc2ddd5a908755024d0ebbbcc607b1bf9df513d299868398b6faf9b47e2a'}}
+PACKET = '.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013'
+CLAIM = 'finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13'
+MAP_SHA = 'a82f94a8624ad4b67c6a7d295d1cd95c26f132ba0179ce6afc4851cd069d9ab5'
+EDITS_SHA = '4836ec5371fc0b7921f24ac1fa9869d44e2dcdde23083202ac5f7d839b1d19e8'
+PARENTS_SHA = 'c7c6ea773dbb63c9240e1a26f1c2fdf278c46c801ce3e4bc2f81a7410e61d146'
+STATUS_SHA = '04a023ffdd35719da9ace4d7c53816596228723567d719326daf62e6a8bd22b8'
+GRAPH_SHA = '23db6fdf30d62ba6b74d12d73a826d2879c7f5a8f1a6d766bfe2e5b78a2de1d3'
+SOURCE_FREEZE_SHA = '8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819'
+ROOT_ACCEPTANCE_SHA = '963bb68b3456a0b746f6c227156417c41c837ff7723523b84a1e2ff1e2b0d80d'
+ROOT_REVIEW_SHA = '002d3585f3ca5b17ab0eaad81e03f10d97337cace053a4a2393eb6ffe539117c'
+
+def need(ok, message):
+    if not ok: raise ValueError(message)
+def sha(b): return hashlib.sha256(b).hexdigest()
+def diff(a, b, old, new):
+    return b''.join(difflib.diff_bytes(difflib.unified_diff, a.splitlines(True), b.splitlines(True), fromfile=old.encode(), tofile=new.encode(), n=3))
+def verify(root):
+    reads = {}
+    def read(name):
+        p = PurePosixPath(name)
+        need(not p.is_absolute() and '..' not in p.parts, 'Unsafe declared input')
+        path = root.joinpath(*p.parts)
+        need(path.is_file() and not path.is_symlink() and path.resolve().is_relative_to(root), 'Declared input missing or outside repository')
+        if name not in reads: reads[name] = path.read_bytes()
+        return reads[name]
+    def pinned(name, digest, message):
+        b = read(PACKET+'/'+name); need(sha(b) == digest, message); return json.loads(b)
+    evidence = pinned('EVIDENCE_MAP.json', MAP_SHA, 'Archive map changed')
+    contents, origins = {}, {}
+    for obj in evidence['objects']:
+        need(obj['sha256'] not in contents, 'Duplicate archive object')
+        z = read(PACKET+'/'+obj['path'])
+        need(sha(z) == obj['stored_sha256'] and len(z) == obj['stored_bytes'], 'Compressed archive changed')
+        b = gzip.decompress(z)
+        need(sha(b) == obj['sha256'] and len(b) == obj['bytes'] and len(b.splitlines()) == obj['lines'], 'Archived source changed')
+        contents[obj['sha256']] = b
+        for origin in obj['origins']:
+            need(origin['path'] not in origins, 'Duplicate original alias')
+            origins[origin['path']] = obj['sha256']
+    def archived(name): return contents[origins[name]]
+    contract = evidence['accepted_source_package']; prefix = contract['path']+'/'
+    def source(name): return archived(prefix+name)
+    need(contract['freeze_sha256'] == SOURCE_FREEZE_SHA and sha(source('FINAL_FREEZE.json')) == SOURCE_FREEZE_SHA, 'Accepted source freeze differs')
+    seal = json.loads(source('FINAL_FREEZE.json')); members = contract['members']
+    need(seal['files'] == members and len(members) == 52 and contract['all_files'] == 53, 'Original membership differs')
+    wanted = {prefix+r['path'] for r in members} | {prefix+'FINAL_FREEZE.json'}
+    need({p for p in origins if p.startswith(prefix)} == wanted, 'Source package aliases differ')
+    for r in members:
+        b = source(r['path'])
+        need(sha(b) == r['sha256'] and len(b) == r['bytes'] and len(b.splitlines()) == r['lines'], 'Source member identity differs')
+    closure_counts = []
+    for closure in evidence['source_provenance_closure']:
+        rb = archived(closure['receipt']); need(sha(rb) == closure['receipt_sha256'], 'Evidence receipt changed')
+        receipt = json.loads(rb); actual = []
+        for row in receipt['files']:
+            p = PurePosixPath(row['path'])
+            name = str(p if p.is_absolute() else PurePosixPath(closure['receipt']).parent/p)
+            b = archived(name); current = {'path':name,'sha256':sha(b),'bytes':len(b),'lines':len(b.splitlines())}
+            need(all(current[k] == row[k] for k in ['sha256','bytes','lines'] if k in row), 'Evidence member identity differs')
+            actual.append(current)
+        need(actual == closure['members'], 'Evidence closure membership differs'); closure_counts.append(len(actual))
+    need(closure_counts == [52,16,14], 'Evidence closure extents differ')
+    mapping = json.loads(source('ASSEMBLY_MAP.json')); accepted = source(mapping['note']); cores = []
+    for part in mapping['cores']:
+        original = source(part['source'])
+        b = b''.join(original.splitlines(True)[part['source_line_start']-1:part['source_line_end']])
+        need(sha(b) == part['sha256'] and len(b) == part['bytes'], 'Accepted mathematical slice differs')
+        need(b == b''.join(accepted.splitlines(True)[part['note_line_start']-1:part['note_line_end']]), 'Accepted assembly slice differs')
+        cores.append(b)
+    need([sha(c) for c in cores] == ['17e33786ddb4fe51ea94292bcba21ab0c7dc35959ec43dfd4b979709d144cee6','5434448a79ec72c182e938139abf4360146e17120b6d4b08b370fd52ef33d2dc'], 'Core order or extent differs')
+    edits = pinned('PUBLICATION_EDITS.json', EDITS_SHA, 'Publication transformation changed')
+    need(edits['source_freeze_sha256'] == SOURCE_FREEZE_SHA and edits['additional_mathematical_body_edits'] == [] and len(edits['notes']) == 1, 'Publication scope differs')
+    note = edits['notes'][0]; assembled = b''; order = []; wrappers = {}
+    need(archived(note['accepted_candidate_path']) == accepted and sha(accepted) == note['accepted_candidate_sha256'], 'Accepted candidate differs')
+    for piece in note['pieces']:
+        if piece['kind'] == 'accepted_core_slice':
+            original = archived(piece['source_path'])
+            need(sha(original) == piece['source_sha256'], 'Full original source differs')
+            b = b''.join(original.splitlines(True)[piece['source_line_start']-1:piece['source_line_end']])
+            need(sha(b) == piece['expected_slice_sha256'] and piece['additional_mathematical_body_edits'] == [], 'Core slice contract differs'); order.append(b)
+        else:
+            need(piece['kind'] == 'publication_wrapper', 'Unknown publication piece'); b = piece['text'].encode()
+            need(piece['wrapper_path'] not in wrappers, 'Duplicate wrapper'); wrappers[piece['wrapper_path']] = b
+        need(sha(b) == piece['sha256'] and len(b) == piece['bytes'] and piece['byte_offset'] == len(assembled) and piece['first_line'] == assembled.count(b'\n')+1 and piece['last_line'] == (assembled+b).count(b'\n'), 'Publication piece boundary differs')
+        assembled += b
+    actual = read(note['note'])
+    need(order == cores and actual == assembled and sha(actual) == note['published_sha256'] and len(actual) == note['published_bytes'] and len(actual.splitlines()) == note['published_lines'], 'Published source does not reconstruct')
+    def diff_bytes(row):
+        z = read(PACKET+'/'+row['diff']); d = gzip.decompress(z)
+        need(sha(z) == row['diff_stored_sha256'] and sha(d) == row['diff_sha256'] and len(d) == row['diff_bytes'] and len(z) == row['stored_bytes'] and row['context_lines'] == 3, 'Raw diff archive changed')
+        return d
+    need(diff_bytes(note) == diff(accepted, actual, note['fromfile'], note['tofile']), 'Complete publication diff differs')
+    for w in edits['wrapper_changes']:
+        a,z = w['source_line_range']; old = b''.join(accepted.splitlines(True)[a-1:z]); new = wrappers[w['publication']]
+        need(sha(old) == w['source_sha256'] and sha(new) == w['publication_sha256'] and diff_bytes(w) == diff(old,new,w['fromfile'],w['tofile']), 'Complete wrapper diff differs')
+    bindings = pinned('PARENT_BINDINGS.json', PARENTS_SHA, 'Parent bindings changed'); parents = bindings['parents']
+    need(len(parents) == len({p['path'] for p in parents}) == 4 and len(bindings['canonical_core_maps']) == 5, 'Canonical parent membership differs')
+    for p in parents:
+        b = read(p['path']); need(sha(b) == p['published_sha256'] and len(b) == p['bytes'] and archived(p['archive_alias']) == b, 'Canonical parent bytes changed')
+    for m in bindings['canonical_core_maps']:
+        b = read(m['canonical_path']); c = archived(m['archive_alias']); a,z = m['byte_start_inclusive'],m['byte_end_exclusive']
+        need(sha(b) == m['canonical_sha256'] and sha(c) == m['core_sha256'] and b.count(c) == 1 and b[a:z] == c and len(c) == m['bytes'] and len(c.splitlines()) == m['lines'], 'Published parent core map differs')
+        need(b[:a].count(b'\n')+1 == m['line_start_inclusive'] and b[:z].count(b'\n') == m['line_end_inclusive'], 'Canonical line map differs')
+    need(bindings['archived_provisional_relations'] == bindings['same_packet_parents'] == bindings['history_only_relations'] == bindings['standalone_hypotheses']['edges_created'] == [], 'Dependency boundary differs')
+    graph = pinned('CLAIM_REGISTRY_ADDITIONS.json', GRAPH_SHA, 'Graph proposal changed')
+    need(len(graph['nodes']) == 1 and graph['nodes'][0]['claim_id'] == CLAIM and graph['nodes'][0]['deps'] == [p['claim_id'] for p in parents], 'Graph node differs')
+    need(graph['direct_edges'] == [{'from':CLAIM,'to':p['claim_id']} for p in parents] and graph['expected_delta'] == {'nodes':1,'edges':4}, 'Graph edge proposal differs')
+    status = pinned('SOURCE_REVIEW_STATUS.json', STATUS_SHA, 'Review scope changed')
+    acceptance = read(PACKET+'/FINITE_INITIAL_ENERGY_SOURCE_ASSEMBLY_ROOT_ACCEPTANCE.json')
+    need(sha(acceptance) == ROOT_ACCEPTANCE_SHA and sha(read(PACKET+'/FINITE_INITIAL_ENERGY_SOURCE_ASSEMBLY_ROOT_REVIEW.md')) == ROOT_REVIEW_SHA, 'Root source review changed')
+    scope = json.loads(acceptance)
+    need(scope == status['source_review_coverage_verbatim'] and scope['source_freeze_sha256'] == SOURCE_FREEZE_SHA and scope['status'] == 'accepted_for_publication_preparation' and scope['publication_execution_approved_by_this_receipt'] is False, 'Source acceptance scope changed')
+    need(status['no_go_packet_pass'] is False and status['new_independent_mathematical_review'] is False and status['unchanged_complete_core_coverage_reused'] is True and status['mathematical_core_edits'] == 0 and status['chirp_dependency'] is False and status['N1'].startswith('FAIL:'), 'Review limitation changed')
+    for name,p in EXTRA_PINS.items():
+        b = read(name); need(sha(b) == p['sha256'] and len(b) == p['bytes'], 'Additional publication integrity input changed')
+    need(set(reads) == set(AUDIT_INPUT_PATHS) and len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS)), 'Declared read closure differs')
+    return {'result':'source_identities_and_reconstruction_match','claim_id':CLAIM,'meaning':'Byte integrity only; no mathematical calculation, proof or audit executed.','mathematical_operations_executed':False,'mathematical_predicates_executed':0,'scientific_mutations_executed':0,'no_go_packet_pass_supplied_by_tool':False,'independent_review_supplied_by_tool':False,'external_scientific_input_reads':[p['path'] for p in parents],'package_local_integrity_reads':sorted(set(reads)-{p['path'] for p in parents})}
+def main():
+    print(json.dumps(verify(Path(__file__).resolve().parents[1]),sort_keys=True))
+    print('per_element: checked and not executed — source integrity only; no coefficient, covariance or moment predicate was evaluated.')
+    print('per_site: checked and not executed — source integrity only; actual-cell embedding and preparation remain explicit hypotheses.')
+    print('per_mode: checked and not executed — source integrity only; finite-mode CAR bounds were not computed by this runner.')
+    print('per_block: checked and not executed — source integrity only; the one-pair two-particle construction was not simulated.')
+    print('lattice_wide: checked and not executed — source integrity only; no energy-law, mean, topology or no-go theorem was verified.')
+if __name__ == '__main__':
+    try: main()
+    except Exception as error:
+        print(json.dumps({'result':'identity_verification_incomplete','error':str(error),'mathematical_operations_executed':False,'mathematical_predicates_executed':0,'scientific_mutations_executed':0}),file=sys.stderr)
+        raise SystemExit(1)

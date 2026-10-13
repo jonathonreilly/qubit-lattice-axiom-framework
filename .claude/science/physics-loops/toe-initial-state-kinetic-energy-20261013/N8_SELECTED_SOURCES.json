@@ -1,0 +1,40 @@
+{
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "bound": "four directly adjacent ledger/checklist surfaces; filename inventory wider, no claim all 714 bodies read",
+  "files": [
+    {
+      "bytes": 548,
+      "coverage": "complete body",
+      "lines": 10,
+      "path": ".claude/science/physics-loops/toe-energy-correlations-20261012/NO_GO_LEDGER.md",
+      "sha256": "443ceeaced86b9fdf1004955d8c837e82aefba202c7984cfe69bce9a2feba5cd",
+      "snapshot": "n8_sources/.claude/science/physics-loops/toe-energy-correlations-20261012/NO_GO_LEDGER.md"
+    },
+    {
+      "bytes": 5865,
+      "coverage": "complete body",
+      "lines": 86,
+      "path": ".claude/science/physics-loops/toe-energy-correlations-20261012/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "527868da57001dfa014e06fb9c5a599bac34f0db7e0aa37329cb9dc13c3a264e",
+      "snapshot": "n8_sources/.claude/science/physics-loops/toe-energy-correlations-20261012/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "bytes": 865,
+      "coverage": "complete body",
+      "lines": 12,
+      "path": ".claude/science/physics-loops/toe-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "0c2e6e269cd87b5b7b95cf02fead12f25920638954ecff061a508d49bdd3e366",
+      "snapshot": "n8_sources/.claude/science/physics-loops/toe-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "bytes": 728,
+      "coverage": "complete body",
+      "lines": 12,
+      "path": ".claude/science/physics-loops/toe-modulated-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "7fa5dc91091af0cc082462bcc757dff6f8aa58f88f0d1cc3bbbbf8fc977aaad5",
+      "snapshot": "n8_sources/.claude/science/physics-loops/toe-modulated-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md"
+    }
+  ],
+  "git_history_walk_executed": false,
+  "utc": "2026-10-13T13:10:45.756598+00:00"
+}

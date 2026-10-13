@@ -1,0 +1,65 @@
+# Root assessment of initial-state publication integration
+
+Disposition: accepted_for_source_integration. This is ordinary source review,
+not a retained audit or proof certified by the identity runner. The accepted
+root407 and independent224 mathematical reads are reused at their exact
+identities. Their selected375/197-line cores are unchanged, with full originals
+and the later two-particle precision preserved. Exact pure-state distance and
+the additional fixed-mixed-state asymptotic result remain distinct.
+
+All final new wrapper pieces were read in d82580; the complete negative checklist
+in2e8c94; assumptions, handoff, twelve-section review, conformance, N8 and status
+in dfa09f. Parent/core maps, fresh N3 classification, authority and recovery were
+read in e596ca. The earlier aggregate diff display bad2cf was truncated and is
+not counted as complete coverage; the entire final affected arguments were
+recovered in those bounded reads. Full diff bytes are independently regenerated
+by the source checker, including literal context markers in gzip archives.
+
+The complete739-line prepare/verify driver was read in664a35,47b0f0,78ffde;
+the136-line identity template, freeze helper and94-line combined driver in
+0fc5cf; the126-line source checker and complete program inventory in38ba01.
+The rendered runner's data literals and exact rendering are checked mechanically,
+not represented as a new manual read of each literal. The combined driver was
+reviewed but is not authorized or executed by this acceptance.
+
+Four canonical parents/five core maps give exactly one new node/four edges.
+No chirp, history-only or branch-ancestry mathematical edge is added. Normality
+suffices for the weak law; finite initial energy is separate for mean/W1.
+Drive uniformity is for each fixed rho. Common energy, control/commutator
+calibration and weighted trace preparation remain the actual-cell premises.
+No state-uniform energy-cap result or W1 rate is invented.
+
+The positive theorem and exact scoped witnesses may proceed with the explicitly
+incomplete partial-narrowing packet. N1 stays FAIL without fabricated families;
+N5 records identity-only nonexecution; N8 has four historical bodies following
+714-path discovery, not global history coverage. The bounded historical report
+supplies no additional mathematical premise or exhaustive impossibility claim.
+
+The original preparation c90af7b4 was frozen before origin/main advanced to
+583c699e. The full216-path delta is generated audit/front-door metadata, with
+no science-body or procedure changes; all18 procedure identities and open-PR
+identities remain unchanged. Root created an immutable V2 copy that changes
+only SPECIFICATIONS.main and adds refresh provenance. All payload/program bytes
+and the original package are unchanged. V2 seal is
+978f7e1bca00b3997ca860e3889bcf138388a8e87fcd5523e40b7c0a899dd6db.
+No new audit verdict was read into the mathematical premises or adopted.
+
+Root source reconstruction f01d06 ran0.222783s, exit0/empty stderr:132aliases,
+101objects, exact52/16/14 immediate closures, two unchanged slices, four parents,
+five maps,22local links,157payload/160declaredinputs/161stagepaths,232frozenmembers.
+These are identity/structure results with zero mathematical predicates.
+
+Prepare must enforce the exact c5eaa6bf parent, current branch and refreshed
+main reference; install only the frozen additions; preserve every command stream;
+run the single canonical identity cache and four exact-reason corruption controls;
+verify complete old graph objects unchanged; and emit the exact staging set.
+Root then reviews the actual result and stages that set. Verify must compare
+prepared bytes and actual stage-zero blobs before the existing-ledger checker.
+Only declared hash-bound gzip archives bypass text decoding; every other
+unclassified whitespace finding fails. No broad exemption is accepted.
+
+Source integration execution is authorized within that contract. It does not
+authorize a merge, main push, scientific mutation, audit verdict or physical
+axiom change. A regular PR follows successful actual checks and root review.
+Combined current-main landing validation and retained audit remain separate.
+Editable prompt files changed: none.

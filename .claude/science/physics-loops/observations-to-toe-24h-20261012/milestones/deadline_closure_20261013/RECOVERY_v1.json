@@ -1,0 +1,107 @@
+{
+  "at": "2026-10-13T16:53:40.936663+00:00",
+  "scope": "Deadline closure and heartbeat/ownership evidence only. No scientific calculations after cutoff.",
+  "archive": {
+    "path": "RECOVERY_v1.tar.gz",
+    "sha256": "94abd2ce312a1c897ccf0e00477949099f368d73cfe81775780046d0d254a37c",
+    "bytes": 11589
+  },
+  "members": [
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/DEADLINE.json",
+      "member": "DEADLINE.json",
+      "sha256": "0a3f1515ca8927f51bb4c5fa9671fa5f3014b64482c72ec21234a1154cb4665c",
+      "bytes": 228
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/DIRECT_AUTHOR.json",
+      "member": "DIRECT_AUTHOR.json",
+      "sha256": "2bbb41037e4c4c22688459dba6656cf5825ce7cf533da5f3fc478aa03b80706a",
+      "bytes": 430
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/STOP_REQUESTED.json",
+      "member": "STOP_REQUESTED.json",
+      "sha256": "f5c5119343f063f07319fef42f34a937109ed3c1c7bb2af35e29768f79854a76",
+      "bytes": 301
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/STATUS.json",
+      "member": "STATUS.json",
+      "sha256": "5617d42e94c3fd67153ae443402d362d07a65571970654b96d8f1e202e158450",
+      "bytes": 18669
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/MONITOR.json",
+      "member": "MONITOR.json",
+      "sha256": "1d155c605ef2b520ee204894f6f13a5d2ffd7be1badda195c4f70ab065d6f5ac",
+      "bytes": 845
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/AUTOMATION.json",
+      "member": "AUTOMATION.json",
+      "sha256": "f022e738e9cc8cee0d735379d2f114caada477492640670041df120dea81fdfe",
+      "bytes": 450
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/AUTOMATION_BEFORE_PAUSE_v1.json",
+      "member": "AUTOMATION_BEFORE_PAUSE_v1.json",
+      "sha256": "7e341916781649cc1d490efd126a8d775511af4e6da2db7443974569cb9d32a8",
+      "bytes": 2905
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/AUTOMATION_PAUSED_VERIFIED_v1.json",
+      "member": "AUTOMATION_PAUSED_VERIFIED_v1.json",
+      "sha256": "248b467884f3579e2d40fc615cdd44acc0a05d65bae92c963050f58324a69851",
+      "bytes": 2952
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/FINAL_SHUTDOWN_v1.json",
+      "member": "FINAL_SHUTDOWN_v1.json",
+      "sha256": "8ab81725037925b2c5ff3061793fc50ae7a26777e59f0a4f90276b24c32a510e",
+      "bytes": 812
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/FINAL_SHUTDOWN_v2.json",
+      "member": "FINAL_SHUTDOWN_v2.json",
+      "sha256": "2f7aa247cb7ef2972b27064f7213c21591e9f165451cd7e0140fd957434f1e7e",
+      "bytes": 905
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/FINAL_LOCK_RELEASE_v1.json",
+      "member": "FINAL_LOCK_RELEASE_v1.json",
+      "sha256": "b87b35c2f1cb22e06981f208e79f2e520f4ebd13d5e8b31473df324369449f9e",
+      "bytes": 150
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/FINAL_PR_VERIFICATION_v1.json",
+      "member": "FINAL_PR_VERIFICATION_v1.json",
+      "sha256": "2c07a3cb207fce732822e55a77d0098494b21e0d21364ad05abc408a9f19c573",
+      "bytes": 4210
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/FINAL_RECOVERY_VERIFICATION_v1.json",
+      "member": "FINAL_RECOVERY_VERIFICATION_v1.json",
+      "sha256": "7a4fe882586fd11c7fd3fc68906533bf9eba3a6d1ede245d2d9e06430b1b60cd",
+      "bytes": 717
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/FINAL_REPORT_PUSH_v1.json",
+      "member": "FINAL_REPORT_PUSH_v1.json",
+      "sha256": "0a8c8337eaa02d48a8b37ec5d9efff944425500e4a478ecee807adcb5fd9296a",
+      "bytes": 300
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/close_deadline_v1.py",
+      "member": "close_deadline_v1.py",
+      "sha256": "3a23a8122ab7d966ec5671a9ee81f0db0e97e2e85a48113cffb183a755c60a41",
+      "bytes": 3827
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/finalize_report_after_pause_v1.py",
+      "member": "finalize_report_after_pause_v1.py",
+      "sha256": "d14f68609f36634209255d3b735b8d2d0c0ed9520f21e801b52b7eaaf6903d0a",
+      "bytes": 7262
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-13T16:53:40.936663+00:00",
+  "prior_packaging_report_sha256": "19770c15946c04add7547bd458387162fd4484887a675941e70ad98fa7ca6fc0",
+  "final_report_sha256": "5e6e43059bb83eacb232233a403a2e58632a71f55ff0537c2e2fa47cc57ed24f",
+  "draft_v2_sha256": "ef1fcfebb55dde5c2d05a0b2d6d7d00a159ed6e66b1b8dacbfc1d7975282741e",
+  "changes": "Only completion opening and operational deadline-closure paragraph changed from pre-deadline report. Scientific body, observation table and limitations unchanged.",
+  "prior_record": "REPORT_LINEAGE_v1.json"
+}

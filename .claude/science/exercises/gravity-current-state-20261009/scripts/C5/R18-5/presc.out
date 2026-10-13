@@ -1,0 +1,8 @@
+D1(1.4000,0.3000) m=0.3 UD T2g N=96: alpha(mid) +3.334850e-02 alpha(avg) +3.334952e-02  diff +1.018e-06
+D1(1.4000,0.3000) m=0.3 UD T2g N=128: alpha(mid) +3.333845e-02 alpha(avg) +3.333951e-02  diff +1.055e-06
+D1(1.4000,0.3000) m=0.3 UD Eg N=96: alpha(mid) +3.674830e-02 alpha(avg) +3.674848e-02  diff +1.758e-07
+D1(1.4000,0.3000) m=0.3 UD Eg N=128: alpha(mid) +3.672445e-02 alpha(avg) +3.672462e-02  diff +1.749e-07
+D1(0.9167,0.5596) m=0.3 UD T2g N=96: alpha(mid) +1.930817e-02 alpha(avg) +1.949739e-02  diff +1.892e-04
+D1(0.9167,0.5596) m=0.3 UD T2g N=128: alpha(mid) +1.930839e-02 alpha(avg) +1.949763e-02  diff +1.892e-04
+D1(0.9167,0.5596) m=0.3 UD Eg N=96: alpha(mid) +2.054212e-02 alpha(avg) +2.060255e-02  diff +6.043e-05
+D1(0.9167,0.5596) m=0.3 UD Eg N=128: alpha(mid) +2.054236e-02 alpha(avg) +2.060279e-02  diff +6.044e-05

@@ -6776,3 +6776,16 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **ANOMALY:** a refereed demonstration that the asymptotic algebra fails by a term ∝ Q_D, with an observable form.
   - **OPEN:** otherwise.
 - **Expectation.** ANOMALY ∝ Q_D in {K, P}. That would be an edge-quantum Lorentz violation at infinity, unobservable for any thermal population below ~1e19 GeV. That makes W7 a priced, practically invisible defect.
+- **R18-5 (V0 and VW; SM on one cone): worker readings V0-FAILS and SM-LIFTED-CONSERVED (met on the letter).** A referee is required for both.
+  - **V0 fails Lemma F.** Its forward stress is s_is_j/E instead of p_ip_j/E. Off the box the mismatch is O(1), and the mirror boxes even get the wrong sign. V0 is spin-½ covariant: Lemma M′ shows spinors permit a face amplitude.
+  - **Replacement UD = ½(p_j∂_ih + p_i∂_jh).** It is the unique Lemma-F vertex in the one-vector family. It couples the Wilson mass and equals V0 inside the box.
+  - **Correction (P-R18-5a):** every Dirac Ξ number since R16-13 used a non-conserved vertex. R16-13's birefringence obstruction belongs to V0; under UD the birefringence spans −5.2e-4 to +2.4e-3. R17-13's μ_T2 result is unaffected.
+  - **The SM-count root** under U + UD + VW needs a signed VW stencil (λ = 0.0045 < ¼):
+    - content: 4 scalars + 22.5 Dirac + 12 vectors, one Higgs edge, every edge subluminal;
+    - Ξ_Eg = Ξ_T2g = μ_E = 0 at m = 0.01 (residual ~8e-6 at N = 192), and also at m = 0.001;
+    - 3 tunings: two edge shapes plus one placement datum;
+    - μ_T2 = +0.091 is left unpaid.
+  - **Nonnegative stencils** stall.
+  - **Prices:** P-R18-5a, b and c.
+
+  Referee running.

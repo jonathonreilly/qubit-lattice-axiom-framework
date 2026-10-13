@@ -1,0 +1,34 @@
+D1(0.15,0.1000): UD T2g -9.054e-04 Eg -2.908e-03 biref +2.003e-03 | V0 biref +6.536e-03 | V0* biref -2.382e-03 | muE -1.061e-02 muT2 -7.074e-06
+D1(0.15,0.3000): UD T2g -8.530e-04 Eg -2.121e-03 biref +1.268e-03 | V0 biref +5.076e-03 | V0* biref -9.140e-04 | muE -7.548e-03 muT2 -6.088e-05
+D1(0.15,0.5000): UD T2g -8.544e-04 Eg -9.510e-04 biref +9.662e-05 | V0 biref +3.214e-03 | V0* biref +4.746e-05 | muE +1.383e-03 muT2 +5.398e-03
+D1(0.15,0.5773): UD T2g -1.012e-03 Eg -4.932e-04 biref -5.189e-04 | V0 biref +2.569e-03 | V0* biref +3.829e-04 | muE +1.149e-02 muT2 +1.401e-02
+D1(0.20,0.1000): UD T2g -7.621e-04 Eg -2.808e-03 biref +2.046e-03 | V0 biref +6.297e-03 | V0* biref -2.713e-03 | muE -1.120e-02 muT2 -6.456e-06
+D1(0.20,0.3000): UD T2g -7.370e-04 Eg -2.094e-03 biref +1.357e-03 | V0 biref +4.998e-03 | V0* biref -1.204e-03 | muE -8.204e-03 muT2 -8.411e-05
+D1(0.20,0.5000): UD T2g -7.143e-04 Eg -9.691e-04 biref +2.549e-04 | V0 biref +3.281e-03 | V0* biref -2.021e-04 | muE -1.685e-04 muT2 +4.480e-03
+D1(0.20,0.5773): UD T2g -8.407e-04 Eg -5.129e-04 biref -3.278e-04 | V0 biref +2.668e-03 | V0* biref +1.431e-04 | muE +8.746e-03 muT2 +1.187e-02
+D1(0.30,0.1000): UD T2g -4.561e-04 Eg -2.579e-03 biref +2.123e-03 | V0 biref +5.839e-03 | V0* biref -3.372e-03 | muE -1.241e-02 muT2 -5.294e-06
+D1(0.30,0.3000): UD T2g -4.759e-04 Eg -2.001e-03 biref +1.525e-03 | V0 biref +4.821e-03 | V0* biref -1.807e-03 | muE -9.582e-03 muT2 -1.126e-04
+D1(0.30,0.5000): UD T2g -4.253e-04 Eg -9.902e-04 biref +5.649e-04 | V0 biref +3.383e-03 | V0* biref -7.412e-04 | muE -3.078e-03 muT2 +2.974e-03
+D1(0.30,0.5773): UD T2g -4.932e-04 Eg -5.523e-04 biref +5.918e-05 | V0 biref +2.839e-03 | V0* biref -3.829e-04 | muE +3.751e-03 muT2 +8.273e-03
+D1(0.45,0.1000): UD T2g +5.209e-05 Eg -2.164e-03 biref +2.216e-03 | V0 biref +5.206e-03 | V0* biref -4.359e-03 | muE -1.432e-02 muT2 -3.770e-06
+D1(0.45,0.3000): UD T2g -8.634e-06 Eg -1.761e-03 biref +1.753e-03 | V0 biref +4.515e-03 | V0* biref -2.774e-03 | muE -1.182e-02 muT2 -1.217e-04
+D1(0.45,0.5000): UD T2g +4.102e-05 Eg -9.540e-04 biref +9.951e-04 | V0 biref +3.456e-03 | V0* biref -1.643e-03 | muE -7.044e-03 muT2 +1.416e-03
+D1(0.45,0.5773): UD T2g +3.853e-05 Eg -5.733e-04 biref +6.119e-04 | V0 biref +3.023e-03 | V0* biref -1.278e-03 | muE -2.634e-03 muT2 +4.406e-03
+D1(0.60,0.1000): UD T2g +6.192e-04 Eg -1.666e-03 biref +2.285e-03 | V0 biref +4.638e-03 | V0* biref -5.352e-03 | muE -1.636e-02 muT2 -2.527e-06
+D1(0.60,0.3000): UD T2g +5.494e-04 Eg -1.395e-03 biref +1.944e-03 | V0 biref +4.186e-03 | V0* biref -3.820e-03 | muE -1.424e-02 muT2 -1.058e-04
+D1(0.60,0.5000): UD T2g +5.722e-04 Eg -7.956e-04 biref +1.368e-03 | V0 biref +3.442e-03 | V0* biref -2.655e-03 | muE -1.068e-02 muT2 +5.112e-04
+D1(0.60,0.5773): UD T2g +5.993e-04 Eg -4.919e-04 biref +1.091e-03 | V0 biref +3.117e-03 | V0* biref -2.290e-03 | muE -7.932e-03 muT2 +2.009e-03
+D1(0.90,0.1000): UD T2g +1.930e-03 Eg -4.349e-04 biref +2.365e-03 | V0 biref +3.695e-03 | V0* biref -7.371e-03 | muE -2.078e-02 muT2 -8.760e-07
+D1(0.90,0.3000): UD T2g +1.910e-03 Eg -3.036e-04 biref +2.213e-03 | V0 biref +3.529e-03 | V0* biref -6.183e-03 | muE -1.956e-02 muT2 -5.037e-05
+D1(0.90,0.5000): UD T2g +1.921e-03 Eg -1.087e-05 biref +1.932e-03 | V0 biref +3.224e-03 | V0* biref -5.074e-03 | muE -1.759e-02 muT2 -9.380e-05
+D1(0.90,0.5773): UD T2g +1.946e-03 Eg +1.477e-04 biref +1.798e-03 | V0 biref +3.077e-03 | V0* biref -4.714e-03 | muE -1.654e-02 muT2 +9.139e-05
+D1(1.20,0.1000): UD T2g +3.475e-03 Eg +1.082e-03 biref +2.393e-03 | V0 biref +2.992e-03 | V0* biref -9.457e-03 | muE -2.571e-02 muT2 -1.536e-07
+D1(1.20,0.3000): UD T2g +3.516e-03 Eg +1.166e-03 biref +2.350e-03 | V0 biref +2.951e-03 | V0* biref -8.858e-03 | muE -2.527e-02 muT2 -1.066e-05
+D1(1.20,0.5000): UD T2g +3.601e-03 Eg +1.335e-03 biref +2.266e-03 | V0 biref +2.872e-03 | V0* biref -8.148e-03 | muE -2.451e-02 muT2 -5.609e-05
+D1(1.20,0.5773): UD T2g +3.645e-03 Eg +1.422e-03 biref +2.223e-03 | V0 biref +2.832e-03 | V0* biref -7.877e-03 | muE -2.415e-02 muT2 -7.606e-05
+D1(1.40,0.1000): UD T2g +4.633e-03 Eg +2.234e-03 biref +2.399e-03 | V0 biref +2.639e-03 | V0* biref -1.089e-02 | muE -2.930e-02 muT2 -1.532e-08
+D1(1.40,0.3000): UD T2g +4.676e-03 Eg +2.287e-03 biref +2.390e-03 | V0 biref +2.631e-03 | V0* biref -1.069e-02 | muE -2.919e-02 muT2 -1.160e-06
+D1(1.40,0.5000): UD T2g +4.764e-03 Eg +2.391e-03 biref +2.372e-03 | V0 biref +2.616e-03 | V0* biref -1.043e-02 | muE -2.900e-02 muT2 -7.788e-06
+D1(1.40,0.5773): UD T2g +4.808e-03 Eg +2.445e-03 biref +2.363e-03 | V0 biref +2.608e-03 | V0* biref -1.032e-02 | muE -2.891e-02 muT2 -1.279e-05
+UD biref range [-5.189e-04, 2.399e-03]; UD T2g range [-1.012e-03, 4.808e-03]; V0 biref min 2.569e-03; V0* biref max 3.829e-04
+29s

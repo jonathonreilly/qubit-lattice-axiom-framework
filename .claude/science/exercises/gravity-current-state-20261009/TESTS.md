@@ -8044,3 +8044,16 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **TAUTOLOGY-OR-CONFLICT:** a demonstration (refereed) that the clause either conflicts with a refereed result (W1, weight-1, Bianchi) or is equivalent to assuming the answer in a way that makes it non-predictive.
   - **OPEN:** otherwise.
 - **Expectation.** CONE-PRINCIPLE on the letter, with the honest caveat that the clause is a renormalization condition dressed as a principle. The bill drops to the charge block plus the CC. The referee's judgement on tautology decides.
+- **R19-18 (E1/E2 observational tie-break): worker reading OPEN.**
+  - **FRW lifts of E2's friction:**
+    - L0 (perturbations only) is consistent.
+    - L1-H and L1-S (gothic, local) are consistent, but give a negative-energy w = −1/2 sink.
+    - L1-M (fixed global reference) is not consistent.
+  - **The GW equation** is h'' + (2 + γ/H)ℋh' + k²h = 0 in every lift.
+  - **The unique E2 signal:** d_L^GW/d_L^EM = exp(γt_lb/2). At z = 1 it is 0.44–1.30% at the drag ceilings, while E1 predicts exactly 1.
+  - **Current data cannot see it:** GWTC-3 gives γ < 1.35 H₀, and GW170817 ≤ 2.3e-4.
+  - **Forecasts:** ET reaches ≥ 3σ only for γ ≈ 0.039–0.047 H₀ (toy, optimistic). L1 background and growth changes are ~1–2%, not excluded by DESI DR2 + CMB (compressed, RECALLED).
+  - **The tie holds** at and below the signed drag ceiling (0.024 H₀). E2 can be confirmed only if γ is near its ceiling, and can never be excluded as a class. A significant Ξ₀ < 1 would exclude both routes.
+  - **Correction to R19-8:** the 2–5% was the sink's density parameter, not the change in H.
+  - **Prices:** P-r1918a (lift L0), P-r1918b (L1-H).
+  - Not a no-go; a referee is optional.

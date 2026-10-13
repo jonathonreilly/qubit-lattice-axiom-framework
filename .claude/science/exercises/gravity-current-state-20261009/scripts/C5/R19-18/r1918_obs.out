@@ -1,0 +1,58 @@
+[S1] sirens (both lifts): d_L^GW/d_L^EM = exp(gamma t_lb(z)/2); background Planck-like LCDM (Om = 0.3153, h = 0.6736; RECALLED)
+     H0 t0 = 0.9503 ; H0 t_lb: z=0.0098 0.00973, 0.1 0.0931, 0.5 0.3591, 1 0.5479, 2 0.7251, 5 0.8699
+     gamma = 0.016 H0: ratio-1 at z=[0.0098, 0.1, 0.3, 0.5, 1.0, 2.0, 5.0] : 0.00008 0.00074 0.00195 0.00288 0.00439 0.00582 0.00698 ; Xi_0 - 1 = 0.0076 ; n = 1.295 (max fit resid 2.5e-04)
+     gamma = 0.024 H0: ratio-1 at z=[0.0098, 0.1, 0.3, 0.5, 1.0, 2.0, 5.0] : 0.00012 0.00112 0.00293 0.00432 0.00660 0.00874 0.01049 ; Xi_0 - 1 = 0.0115 ; n = 1.293 (max fit resid 3.8e-04)
+     gamma = 0.032 H0: ratio-1 at z=[0.0098, 0.1, 0.3, 0.5, 1.0, 2.0, 5.0] : 0.00016 0.00149 0.00391 0.00576 0.00881 0.01167 0.01402 ; Xi_0 - 1 = 0.0153 ; n = 1.292 (max fit resid 5.1e-04)
+     gamma = 0.047 H0: ratio-1 at z=[0.0098, 0.1, 0.3, 0.5, 1.0, 2.0, 5.0] : 0.00023 0.00219 0.00575 0.00847 0.01296 0.01719 0.02065 ; Xi_0 - 1 = 0.0226 ; n = 1.290 (max fit resid 7.5e-04)
+     gamma = 1.000 H0: ratio-1 at z=[0.0098, 0.1, 0.3, 0.5, 1.0, 2.0, 5.0] : 0.00488 0.04763 0.12972 0.19666 0.31516 0.43699 0.54489 ; Xi_0 - 1 = 0.6083 ; n = 1.148 (max fit resid 3.0e-02)
+     RECALLED ET forecast sigma(Xi0) = 0.008 (Belgacem et al. 2018) -> sigma(gamma/H0) = 0.0168 if applied to Xi0 = exp(gamma t0/2): 0.047/0.032/0.024/0.016 H0 at 2.8/1.9/1.4/1.0 sigma
+     current: GWTC-3 Xi0 = 1.2 +- 0.7 (68%, RECALLED via vR12-7:11) -> gamma < 1.35 H0 (68%) ; GW170817 ratio-1 at gamma = 0.047 H0: 2.3e-04
+     analytic small-z slope: Xi - 1 ~ (gamma/2H0) z => n = 1/(H0 t0) = 1.052
+     mode check (k = 400 H0, z_em = 1): A(gamma)/A(0) = 0.987232 vs exp(-gamma t_lb/2) = 0.987207
+     mode check (k = 400 H0, z_em = 1): A(gamma)/A(0) = 0.760777 vs exp(-gamma t_lb/2) = 0.760366
+[S2] TOY siren Fisher for gamma/H0 (EM cosmology fixed by CMB+BAO; d ln(d_L^GW)/d(gamma/H0) = H0 t_lb/2):
+     ET-like: 1000 BNS+counterparts, z<2, sigma_inst = 5%+5%z   sigma(gamma/H0) = 0.0129 ; sigma(Xi0) ~ 0.0061 ; gamma = 0.047/0.032/0.024/0.016 H0 at 3.7/2.5/1.9/1.2 sigma
+       -> 2 sigma threshold gamma >= 0.026 H0 ; 3 sigma threshold gamma >= 0.039 H0
+     ET-like: 300 BNS+counterparts                              sigma(gamma/H0) = 0.0235 ; sigma(Xi0) ~ 0.0112 ; gamma = 0.047/0.032/0.024/0.016 H0 at 2.0/1.4/1.0/0.7 sigma
+       -> 2 sigma threshold gamma >= 0.047 H0 ; 3 sigma threshold gamma >= 0.070 H0
+     ET-like: 1000 BNS, sigma_inst = 10%+10%z                   sigma(gamma/H0) = 0.0248 ; sigma(Xi0) ~ 0.0118 ; gamma = 0.047/0.032/0.024/0.016 H0 at 1.9/1.3/1.0/0.6 sigma
+       -> 2 sigma threshold gamma >= 0.050 H0 ; 3 sigma threshold gamma >= 0.074 H0
+     LISA-like: 30 MBHB+counterparts, z<6, sigma_inst = 2% (lensing dominated) sigma(gamma/H0) = 0.0360 ; sigma(Xi0) ~ 0.0171 ; gamma = 0.047/0.032/0.024/0.016 H0 at 1.3/0.9/0.7/0.4 sigma
+       -> 2 sigma threshold gamma >= 0.072 H0 ; 3 sigma threshold gamma >= 0.108 H0
+     LISA-like: 100 MBHB+counterparts                           sigma(gamma/H0) = 0.0197 ; sigma(Xi0) ~ 0.0094 ; gamma = 0.047/0.032/0.024/0.016 H0 at 2.4/1.6/1.2/0.8 sigma
+       -> 2 sigma threshold gamma >= 0.039 H0 ; 3 sigma threshold gamma >= 0.059 H0
+[S3] P-r14a zero-integral kernel (vR14-2:5): Re gamma(w)/gamma0 = w^2/(w^2 + wc^2), w = 2 pi f_obs (1+z') along the path
+     gamma0 = 7 H0, wc = 1e3 (R14-2 example)                    d_L ratio at f = 30/300/1000 Hz: z=0.0098: 1.001/1.027/1.034 ; z=0.1: 1.012/1.296/1.375 ; z=0.5: 1.066/2.863/3.438 ; z=1: 1.136/5.232/6.621 ; LISA (1 mHz, z=3): ratio-1 = 4.3e-10
+     gamma0 = 31.7 H0, wc = 3e3 (signed-timing ceiling, vR14-2:5) d_L ratio at f = 30/300/1000 Hz: z=0.0098: 1.001/1.045/1.134 ; z=0.1: 1.006/1.563/3.392 ; z=0.5: 1.034/8.176/136.341 ; z=1: 1.071/40.953/2189.938 ; LISA (1 mHz, z=3): ratio-1 = 2.2e-10
+     gamma0 = 62 H0, wc = 3e3 (conservative ceiling)            d_L ratio at f = 30/300/1000 Hz: z=0.0098: 1.001/1.090/1.279 ; z=0.1: 1.013/2.395/10.900 ; z=0.5: 1.068/60.922/14961.704 ; z=1: 1.144/1423.533/3414575.523 ; LISA (1 mHz, z=3): ratio-1 = 4.2e-10
+     gamma0 = 1 H0, wc = 330                                    d_L ratio at f = 30/300/1000 Hz: z=0.0098: 1.001/1.005/1.005 ; z=0.1: 1.012/1.046/1.048 ; z=0.5: 1.060/1.192/1.196 ; z=1: 1.111/1.309/1.315 ; LISA (1 mHz, z=3): ratio-1 = 5.6e-10
+[B1] L1 background (p_X = kappa_p gamma H/4 pi G; lift A): Omega_s(z), Delta H/H at fixed (Om, h) = (0.3153, 0.6736)
+     g_L = +0.047: Omega_L = 0.72981 ; Omega_s(z)/E(z)^2 at z=[0, 0.5, 1, 2, 5, 1089]: -4.52e-02 -4.09e-02 -3.28e-02 -2.04e-02 -7.58e-03 -3.14e-06 ; Delta H/H: -7.27e-03 -9.09e-03 -7.61e-03 -3.44e-03 -1.57e-06 ; w_DE,eff(z=0) = -1.0203
+     g_L = -0.047: Omega_L = 0.63894 ; Omega_s(z)/E(z)^2 at z=[0, 0.5, 1, 2, 5, 1089]: +4.57e-02 +4.03e-02 +3.20e-02 +1.99e-02 +7.50e-03 +3.14e-06 ; Delta H/H: +7.38e-03 +9.14e-03 +7.61e-03 +3.44e-03 +1.57e-06 ; w_DE,eff(z=0) = -0.9791
+[B2] DESI DR2 BAO + compressed CMB (all RECALLED), profiled over (h, omega_m); r_d, r_s* fixed (L1 is negligible at z > 10):
+     errors x1.0: LCDM chi2_min = 13.11 at h = 0.6892, omega_m = 0.1413 (Om = 0.2976), 13 BAO + 2 CMB numbers
+       g_L:       -0.100  -0.060  -0.047  -0.030  -0.016  -0.008  +0.000  +0.008  +0.016  +0.024  +0.032  +0.047  +0.060  +0.100  +0.140  +0.200
+       dchi2:      +9.72   +4.45   +3.13   +1.69   +0.77   +0.35   -0.00   -0.27   -0.46   -0.56   -0.59   -0.43   -0.06   +2.49   +7.19  +18.47
+       best g_L = +0.0309 (dchi2 = -0.59) ; 68%: [-0.0092, +0.0704] ; 95%: [-0.0483, +0.1079] (kappa_p gamma/H0)
+       dchi2 relative to g_L = 0 at the drag ceilings (kappa_p = 1): 0.016 -> -0.46, 0.024 -> -0.56, 0.032 -> -0.59, 0.047 -> -0.43
+     errors x1.5: LCDM chi2_min = 6.95 at h = 0.6873, omega_m = 0.1415 (Om = 0.2997), 13 BAO + 2 CMB numbers
+       g_L:       -0.100  -0.060  -0.047  -0.030  -0.016  -0.008  +0.000  +0.008  +0.016  +0.024  +0.032  +0.047  +0.060  +0.100  +0.140  +0.200
+       dchi2:      +8.00   +3.90   +2.82   +1.60   +0.77   +0.36   +0.00   -0.31   -0.56   -0.77   -0.92   -1.06   -1.02   +0.00   +2.47   +9.00
+       best g_L = +0.0504 (dchi2 = -1.06) ; 68%: [+0.0015, +0.0985] ; 95%: [-0.0464, +0.1438] (kappa_p gamma/H0)
+       dchi2 relative to g_L = 0 at the drag ceilings (kappa_p = 1): 0.016 -> -0.56, 0.024 -> -0.77, 0.032 -> -0.92, 0.047 -> -1.06
+     BAO alone (h r_d and Om free): dchi2(g_L = 0.047) = +0.66 (h, omega_m degenerate; shape only)
+[G1] growth under L1 (sink smooth; G_eff = G on subhorizon scales, [G3]); same early normalisation, fixed (Om, h) = (0.3153, 0.6736)
+     g_L = +0.016: Delta(f sigma8)/(f sigma8): z=0: +5.38e-03 z=0.3: +7.05e-03 z=0.5: +7.51e-03 z=0.7: +7.58e-03 z=1: +7.25e-03 z=1.5: +6.29e-03 ; sigma8(0) ratio-1 = +4.95e-03 ; ISW proxy (1 - D/a at z=0) ratio-1 = -1.21e-02
+     g_L = +0.047: Delta(f sigma8)/(f sigma8): z=0: +1.59e-02 z=0.3: +2.09e-02 z=0.5: +2.22e-02 z=0.7: +2.25e-02 z=1: +2.15e-02 z=1.5: +1.86e-02 ; sigma8(0) ratio-1 = +1.46e-02 ; ISW proxy (1 - D/a at z=0) ratio-1 = -3.57e-02
+     g_L = -0.047: Delta(f sigma8)/(f sigma8): z=0: -1.56e-02 z=0.3: -2.04e-02 z=0.5: -2.17e-02 z=0.7: -2.19e-02 z=1: -2.09e-02 z=1.5: -1.81e-02 ; sigma8(0) ratio-1 = -1.43e-02 ; ISW proxy (1 - D/a at z=0) ratio-1 = +3.49e-02
+     at each model's own BAO+CMB best fit (g_L = 0.047 vs 0): z=0.3: +1.49e-02 z=0.5: +1.78e-02 z=1: +1.96e-02
+[G3] L0/L1 friction on subhorizon potentials (quasi-static, from (box - gamma u.d) hbar_00): relative (gamma/H)|1-f|(aH/k)^2
+     k = 0.01 h/Mpc, gamma = 0.047 H0, |1-f| = 0.5: 2.6e-05
+     k = 0.05 h/Mpc, gamma = 0.047 H0, |1-f| = 0.5: 1.0e-06
+     k = 0.20 h/Mpc, gamma = 0.047 H0, |1-f| = 0.5: 6.5e-08
+     horizon-scale (k ~ aH) ISW modes: relative O(gamma/H) <= 0.047 (suggested), vs ISW total S/N ~ 4-5 (RECALLED) -> shift <= 0.25 sigma
+[M1] L1-M (global fixed reference, a_ref = a0, C = 1): p_X/rho_crit(z) = (2/3)(gamma/H(z))(1+z)^6
+     z = 1: p_X/rho_crit = 2.38e+01 x (gamma/H0) -> gamma < 4.2e-04 H0 for |p_X| < 1e-2 rho_crit
+     z = 1.09e+03: p_X/rho_crit = 4.84e+13 x (gamma/H0) -> gamma < 2.1e-16 H0 for |p_X| < 1e-2 rho_crit
+     z = 4e+08: p_X/rho_crit = 1.78e+36 x (gamma/H0) -> gamma < 5.6e-39 H0 for |p_X| < 1e-2 rho_crit
+    runtime 48.6 s

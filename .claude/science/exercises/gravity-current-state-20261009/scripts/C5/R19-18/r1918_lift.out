@@ -1,0 +1,14 @@
+[L1] local-reference friction stress of the homogeneous mode (a = 1, N = 1 at the epoch):
+     harmonic (N = a^3, E2's law gauge) rho_X = 0                            p_X = H*gamma/(4*pi*G)         kappa_rho = 0, kappa_p = 1
+     synchronous (N = 1)                rho_X = -3*H*gamma/(16*pi*G)         p_X = H*gamma/(16*pi*G)        kappa_rho = -3/4, kappa_p = 1/4
+     L0 (friction on the deviation from the FRW background): Xt_{k=0} = 0 identically -> kappa_p = 0
+     check harmonic gauge: d_t gothic^{00} with N = a^3: 0
+[L2] global fixed reference (harmonic N = C a^3, eta at a = a_ref): p_X = H*a_ref**6*gamma/(4*pi*C*G*a(t)**6)   [= (gamma H/4 pi G)(a_ref/a)^6/C : not invariant under a -> lambda a]
+[L3] conformal TT equation: A**2*m2*h(eta) + hp*(A*gamma + 2*calH) + hpp + k**2*h(eta)
+     => h'' + (2 + nu) calH h' + (k^2 + a^2 m2) h = 0 with nu = a gamma / calH = gamma / H ; d_L^GW/d_L^EM = exp(int nu/2 dln(1+z)) = exp(gamma t_lb/2)
+     gothic TT lift (harmonic N = a^3): friction term gamma*(4*H*h(t) + Derivative(h(t), t)) -> mass term m^2 = 4*H*gamma
+     gothic TT lift (synchronous N = 1): friction term gamma*(H*h(t) + Derivative(h(t), t)) -> mass term m^2 = H*gamma
+[L4] Lemma F0 (lift A), matter era: Omega_s = -4*sqrt(Omega_m)*g_L/(3*a**(3/2))  ; Omega_s/(g_L/E) = -4*Omega_m/(3*a**3)  ; p_X/rho_c0 = (2/3) g_L E ; w_sink = p/rho = -1/2
+     radiation era: Omega_s/(g_L/E) = -2*Omega_r/a**4 (-> negligible early: |Omega_s|/E^2 ~ g_L/E)
+     sink NEC: rho_s + p_X = (-4/3 + 2/3) g_L/E rho_c(t) -> sign(-kappa_p): kappa_p > 0 sink violates NEC (phantom-like)
+    runtime 0.1 s

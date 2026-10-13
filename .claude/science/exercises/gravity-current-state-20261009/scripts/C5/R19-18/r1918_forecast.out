@@ -1,0 +1,5 @@
+[F] mock = LCDM best fit h = 0.6892, omega_m = 0.1413; Asimov Delta chi2 (profiled over h, omega_m):
+     BAO errors x1.00 (CMB fixed): g_L=+0.016: 0.16 ; g_L=+0.024: 0.37 ; g_L=+0.032: 0.65 ; g_L=+0.047: 1.41 ; g_L=-0.047: 1.37
+     BAO errors x0.50 (CMB fixed): g_L=+0.016: 0.41 ; g_L=+0.024: 0.93 ; g_L=+0.032: 1.66 ; g_L=+0.047: 3.59 ; g_L=-0.047: 3.50
+     BAO errors x0.33 (CMB fixed): g_L=+0.016: 0.81 ; g_L=+0.024: 1.83 ; g_L=+0.032: 3.26 ; g_L=+0.047: 7.07 ; g_L=-0.047: 6.91
+    runtime 25.6 s

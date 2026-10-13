@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 5401 |
+| Ledger rows | 5545 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 5025 |
+| Unaudited rows | 5169 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 5025 |
-| Ready rows | 1738 |
+| Total pending rows | 5169 |
+| Ready rows | 1751 |
 | Cycle-break targets | 80 |
-| Critical pending | 733 |
-| High pending | 377 |
-| Medium pending | 1305 |
-| Leaf pending | 2610 |
+| Critical pending | 736 |
+| High pending | 387 |
+| Medium pending | 1336 |
+| Leaf pending | 2710 |
 
 Next ready rows by queue order:
 
@@ -696,19 +696,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 6879 |
-| Critical nodes | 765 |
-| High nodes | 400 |
-| Medium nodes | 1527 |
-| Leaf nodes | 4187 |
+| Citation-graph nodes | 7023 |
+| Critical nodes | 768 |
+| High nodes | 410 |
+| Medium nodes | 1558 |
+| Leaf nodes | 4287 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2735 descendants; score 548.918
+- `minimal_axioms` - critical; 2845 descendants; score 598.475
 - `three_generation_observable_theorem_note` - critical; 1219 descendants; score 57.253
 - `observable_principle_from_axiom_note` - critical; 1003 descendants; score 53.972
 - `graph_first_su3_integration_note` - critical; 1572 descendants; score 52.119
-- `kinetic_isotropy_primitive` - critical; 904 descendants; score 48.822
+- `kinetic_isotropy_primitive` - critical; 905 descendants; score 48.823
 - `plaquette_self_consistency_note` - critical; 1248 descendants; score 47.787
 - `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 43.513
 - `key_terminology` - critical; 1300 descendants; score 43.345

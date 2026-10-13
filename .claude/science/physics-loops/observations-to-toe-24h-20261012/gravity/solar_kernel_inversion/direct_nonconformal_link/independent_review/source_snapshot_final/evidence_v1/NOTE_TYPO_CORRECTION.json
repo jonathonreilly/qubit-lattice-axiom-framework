@@ -1,0 +1,7 @@
+{
+  "original_sha256": "a0b03a06787b5179cd807e25ef416fe191d79750b279bd5f7fc73ee1cb8a363f",
+  "current_sha256": "c4b7fa0962eccb8023382350e13d2af174f34a3f49ab6685790b00d5e8d98db5",
+  "change": "Replace accidental + with newline between two prose lines. No mathematical, runner or scope change.",
+  "executed_receipt_note_recovery": "evidence_v1/DIRECT_METRIC_RADIATION_LINK_executed_v1.md",
+  "rerun_needed": false
+}

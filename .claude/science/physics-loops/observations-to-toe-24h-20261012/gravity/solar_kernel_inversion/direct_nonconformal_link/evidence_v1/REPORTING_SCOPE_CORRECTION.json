@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-13T00:30:44.266328+00:00",
+  "reason": "Independent checker distinguished scaled versus fractional error, and dipole contribution versus a full charge-corrected flux. No formula, runner, grid or result changed.",
+  "changes": [
+    {
+      "path": "RESULTS_AND_PROOF_DETAILS.md",
+      "snapshot": "evidence_v1/RESULTS_AND_PROOF_DETAILS_before_error_normalization.md",
+      "old_sha256": "31a19e1dc6d7064a30557c034e6a490ecbc69f65ab9435c9a8947633a7332fe7",
+      "new_sha256": "d5dfa01e238581f30dde151590b6063fb96a0c1435efdcf25760f66fd85e204d",
+      "replacement": {
+        "old": "closed ratio within5.33e-15 relative.",
+        "new": "closed ratio within5.33e-15 after normalization by max(1,abs(R)); the\nmaximum strict fractional error is3.17e-14."
+      }
+    },
+    {
+      "path": "BODY_CHARGE_SENSITIVITY.md",
+      "snapshot": "evidence_v1/BODY_CHARGE_SENSITIVITY_before_dipole_scope.md",
+      "old_sha256": "a4aa57fa77c4e274b56cdeff40714d18ef552aba2affc4afcec71248ab3ad742",
+      "new_sha256": "5b288c1191760484c86f505359eab8495ace5f0dc470a99fef9a34cfc181e561",
+      "replacement": {
+        "old": "Neither this additive supplied-orbit diagnostic nor zero residual eta proves\na complete extended-body limit.",
+        "new": "R_dipole is only the odd-angular dipole contribution on the supplied orbit.\nNonzero eta also changes the even source multipoles, and a physical model can\nchange the orbit. It must not be added to the uncharged mono/quadr result and\nlabelled a complete charge-corrected total flux.\n\nNeither this supplied-orbit diagnostic nor zero residual eta proves\na complete extended-body limit."
+      }
+    }
+  ]
+}

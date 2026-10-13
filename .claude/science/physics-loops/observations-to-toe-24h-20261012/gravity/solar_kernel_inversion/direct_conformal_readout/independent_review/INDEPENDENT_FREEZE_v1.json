@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-10-13T00:16:42.936545+00:00",
+  "files": {
+    "independent_check.py": {
+      "bytes": 16012,
+      "sha256": "58b99c15a7faea9add87363795c9309ca8069262d82ce69c924d80d3698becf5"
+    },
+    "source_snapshot/CLAIM_STATUS_CERTIFICATE.md": {
+      "bytes": 885,
+      "sha256": "bc71f99de9fc45abbe078f4a939c000cec3e7ff480ca97c7f9559a5578ba2756"
+    },
+    "source_snapshot/DIRECT_CONFORMAL_DERIVATION.md": {
+      "bytes": 8885,
+      "sha256": "e6eb776e041ca8cff7110762a37167ecfeaed489d1fe0f15bdfc30bba65ac6dc"
+    },
+    "source_snapshot/PROTOCOL.md": {
+      "bytes": 2819,
+      "sha256": "d96a7e4e035ba3a5bf8992a07f1f5487f8d07ea34938de48af7342d88bdde739"
+    },
+    "source_snapshot/RESULTS_AND_SCOPE.md": {
+      "bytes": 3547,
+      "sha256": "8b5bd2e4f34e44aaf164f3b2ce7e39bc1b33110b360cc05b415311179f20a804"
+    },
+    "source_snapshot/TRACE_GATE.md": {
+      "bytes": 685,
+      "sha256": "e92c06d41f1a32aee551fae3ff436dafb8725c78ba5220e943c5d6b9af82b199"
+    },
+    "source_snapshot/check_conformal_completion.py": {
+      "bytes": 7438,
+      "sha256": "9cff4f2123b20e3af29fcaa54b08340d136cc4449ea88fa3d7c09fcb3f5d1eaa"
+    },
+    "source_snapshot/evidence_v1/FAILURE_v1.json": {
+      "bytes": 545,
+      "sha256": "517d4e81ee2c0ebeebd27a22484788c2028317be18363bba9ffc7add1882f4c7"
+    },
+    "source_snapshot/evidence_v1/FREEZE.json": {
+      "bytes": 1155,
+      "sha256": "274e0a7724569ba87516d3d56fff910bb2246e1f8e8d040dc21a9b1f802b5d29"
+    },
+    "source_snapshot/evidence_v1/RESULTS_v2.json": {
+      "bytes": 141173,
+      "sha256": "63f54ee8592a48361d47ea54ed93305c9c69a1cb8e3d37452f263850e7a3a491"
+    },
+    "source_snapshot/evidence_v1/check_conformal_completion_failed_v1.py": {
+      "bytes": 7435,
+      "sha256": "a07e7369ce7bd277c70e96d3259e35756f966947ae3b7a0930e78bb99a283216"
+    },
+    "source_snapshot/evidence_v1/run.stderr.txt": {
+      "bytes": 1227,
+      "sha256": "855323f1f55f2a4474b77d8c1daa9798b3c307b02dd4cec42e9300c34334d361"
+    },
+    "source_snapshot/evidence_v1/run.stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_snapshot/evidence_v1/run_v2.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_snapshot/evidence_v1/run_v2.stdout.txt": {
+      "bytes": 3699,
+      "sha256": "9bafb2f2dd6df5e5d54080282aefeffd51ad2ac83681f4ac451eb8d7ed180c8e"
+    }
+  },
+  "fixed_deadline_utc": "2026-10-13T16:53:00Z",
+  "pre_execution": true,
+  "scope": "independent acceleration-integral, quadratic expansion, selected high-precision null flight, prescribed-wave canonical-probe controls; no parent runner import or execution"
+}

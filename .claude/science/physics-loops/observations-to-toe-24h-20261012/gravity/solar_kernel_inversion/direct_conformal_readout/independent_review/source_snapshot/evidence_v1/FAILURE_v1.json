@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-13T00:04:28.723429+00:00",
+  "failed_source_sha256": "a07e7369ce7bd277c70e96d3259e35756f966947ae3b7a0930e78bb99a283216",
+  "exit_code": 1,
+  "stage": "symbolic linear curvature",
+  "cause": "Sympy Derivative rejects multiplication by native bool",
+  "fix": "Explicit int Kronecker indicator; equations, grid, bounds unchanged",
+  "failed_source": "evidence_v1/check_conformal_completion_failed_v1.py",
+  "stderr": "run.stderr.txt",
+  "fixed_source_sha256": "9cff4f2123b20e3af29fcaa54b08340d136cc4449ea88fa3d7c09fcb3f5d1eaa"
+}

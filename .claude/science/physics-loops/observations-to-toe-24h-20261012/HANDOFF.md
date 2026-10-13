@@ -10,39 +10,50 @@ Cooperative physics-loop lock, same holder, expires02:01:18.073854Z.
 
 ## Current work and exact next action
 
-1. Parent personally completed direct_conformal_readout under
-   gravity/solar_kernel_inversion: new g~=exp(2phi/c²)eta particle/Maxwell
-   metric. Exact particle source mA/gamma changes prior radiation premises.
-   Conditional finite-energy Hamiltonian is nonnegative; no point self-energy
-   or existence result. Linear physical tide is(I-(c/c_s)²nn)psi_tt, with
-   no transverse trace-free component. Parent derived proper-clock optical
-   round trip at all arm frequencies, first order in amplitude. All288
-   independent null-root/clock-functional controls pass, max scaled residual
-   2.5014; designated halving ratios3.99933,3.99966. These controls use
-   first-order endpoint trajectories, not nonlinear solutions. Initial
-   missing output directory and SymPy bool-interface failure preserved.
-   /root/direct_quantum_visibility_review is checking proof and distinct
-   numerical controls in independent_review. Parent must read the full
-   report and resolve actual findings before claiming independent support.
-   Exact conformal null trajectories stay straight: this completion leaves
-   observed gravitational bending unexplained. Next constructive route is
-   an explicit nonconformal metric with linked matter/optical consequences.
+1. Parent is personally constructing direct_tensor_scalar_reconstruction under
+   gravity/solar_kernel_inversion. Frozen protocol supplies Einstein gravity,
+   constant positive scalar kinetic matrix, and one universal conformal matter
+   metric. This known effective theory family is a new campaign candidate,
+   not a new literature discovery or native framework derivation. Exposed
+   lensing, GW polarization and timing context guides reconstruction. Derive
+   invariant scalar coupling, static/lensing split, physical tidal modes and
+   circular source/flux relation, then check distinct computations. New code
+   and proof are still being authored; no independent support claimed yet.
 
-2. Canonical matter/radiation/mechanical-readout milestone is in managed
+2. Conformal completion is fully independently checked. Full report read,
+   all51 identities verified. Exact particle/energy/source and proper-clock
+   transfer agree; distinct acceleration/null-flight/ODE controls supplement
+   the288 parent controls. CHECKED_OUTCOME states the finite-order limits.
+   Exact conformal null paths have no bending; this motivated the next block.
+
+3. Nonconformal metric/source/radiation block is fully independently checked.
+   Full report read, all119 source/evidence identities verified; receipt
+   b0c2f6f911fd123ee1a38c4adee08f7b5d5644369ede4aac886d44c83c74d7e3.
+   One material finding: constant self terms do not eliminate unequal charge
+   dipoles. Parent preserved originals, narrowed the main law to a formal
+   self-term-discarded point action with zero residual body sensitivities,
+   and derived the extra odd-angular dipole. It is not the complete charged
+   flux. Error normalization also corrected.44 radiation rows,8 ray ODEs
+   and4 dipole controls checked. At bending lambda=1 and circular-calibrated
+   c_s/c=.6988271, e=.6 gives1.0578991 times supplied same-orbit GR power.
+   Cancellation instead requires lambda=.15872125. No pulsar fit/exclusion.
+
+4. Canonical matter/radiation/mechanical-readout milestone is in managed
    vector-matter-readout-20261012/New Axioms Lets Go, branch
    codex/local-vector-matter-readout-20261012, stacked on PR9505 exact
-   039198fed41d5599341bbcbc7908dcfae1215421. Initial86-path freeze563deaf...
-   fully checked; parent read full canonical port report and26 evidence
-   hashes. All20 port controls pass, all66 constituent files recoverable.
-   Current package81209c6aea3cbd55486a1f383129e387db4ef266, tree
-   1879e5bf0984fe07f81a19b2238f3eb01e8bc6ca,113 paths. Same-session checker
-   /root/direct_field_check is confirming final Git identities, metadata and
-   updated original dispositions in runtime matter_milestone/final_identity_review.
-   Parent next: build unit record, preflight, run one three-part combined
-   pipeline/lint/changed-evidence gate in an exact disposable checkout,
-   push dedicated branch, create/verify/attach stacked milestone PR.
-   No source changes while final confirmation runs. Immutable review cache
-   snapshot EOF is losslessly archived; raw original remains untracked.
+   039198fed41d5599341bbcbc7908dcfae1215421. Current final source
+   16838afb97f8a7f3d3bec9b97f640db9c1e01f9f, tree
+   5d6681aa8e7bb510582f79d2eb951b5173c13b05,115 paths. Full initial port
+   and final same-session reviews read; final receipt2ca14d5c3e686b25707b9acec375447cfb3c319e2ad2f3785b8a1315a1c3761b.
+   UNIT_v1 preflight found an administrative Markdown citation to a recovery
+   file; fixed to code text with original evidence preserved, cache regenerated,
+   same-session affected source check complete. UNIT_v2 preflight passes,
+   SHA bbb2924dac140f0ddffb092dcb424e3749d8bf73a46afc8cf5ab6a34feae8b1b.
+   Three combined package gates currently run in disposable checkout
+   /private/tmp/local-vector-matter-final-validation-20261013, exec27476,
+   runtime matter_milestone/validation/run_combined_v2.py. Poll/results;
+   if all pass, verify no source/manifest drift, push branch, create/verify/
+   attach stacked PR. No formal audit or landing. Never replace raw histories.
 
 ## Newly checked observation work
 

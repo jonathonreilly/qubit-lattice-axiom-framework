@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-13T00:25:24.180000+00:00",
+  "status": "PASS supplied-orbit charge sensitivity only",
+  "source_sha256": "f7afdaa8df818a5a0ed10b66bc4e499b1a7632d0e0f3fa4b08c6b918389626b2",
+  "note_sha256": "a4aa57fa77c4e274b56cdeff40714d18ef552aba2affc4afcec71248ab3ad742",
+  "premise": "eta contrast is illustrative; no extended-body or passive-charge model",
+  "c": 1000.0,
+  "cs": 698.8271187715792,
+  "a": 1,
+  "G_N": 1,
+  "M": 1,
+  "mu": 0.25,
+  "delta_eta": 0.001,
+  "rows": [
+    {
+      "eccentricity": 0,
+      "direct_power": 6.104491774132339e-17,
+      "formula_power": 6.104491774132338e-17,
+      "additional_ratio_to_GR": 0.15261229435330845
+    },
+    {
+      "eccentricity": 0.2,
+      "direct_power": 6.895592712562517e-17,
+      "formula_power": 6.895592712562517e-17,
+      "additional_ratio_to_GR": 0.13315528636330068
+    },
+    {
+      "eccentricity": 0.6,
+      "direct_power": 2.1982727946399402e-16,
+      "formula_power": 2.1982727946399407e-16,
+      "additional_ratio_to_GR": 0.0537321637779988
+    },
+    {
+      "eccentricity": 0.8,
+      "direct_power": 1.0362563196829588e-15,
+      "formula_power": 1.0362563196829596e-15,
+      "additional_ratio_to_GR": 0.02335982722363815
+    }
+  ]
+}

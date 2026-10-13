@@ -1,0 +1,7 @@
+{
+  "parent_36_max_scaled_error": 5.329070518200751e-15,
+  "parent_36_max_fractional_error": 3.16092859346533e-14,
+  "reviewer_to_parent_44_max_fractional_error": 3.181061896608522e-14,
+  "reviewer_to_formula_44_max_fractional_error": 8.881784197001252e-16,
+  "definition": "fractional error = abs(value-reference)/abs(reference); scaled error = abs(value-reference)/max(1,abs(reference))"
+}

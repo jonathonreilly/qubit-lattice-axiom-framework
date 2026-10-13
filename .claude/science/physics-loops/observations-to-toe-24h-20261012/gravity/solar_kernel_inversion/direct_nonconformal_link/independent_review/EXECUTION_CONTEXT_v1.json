@@ -1,0 +1,12 @@
+{
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "/usr/local/bin/python3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "sympy": "1.14.0",
+  "parent_runner_imported_or_executed": false,
+  "independent_primary_run_exit_code": 0,
+  "affected_source_check_exit_code": 0,
+  "reviewer_failures": []
+}

@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-10-13T00:24:04.594548+00:00",
+  "files": [
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "77810e0584e44d56dc4074fa3644ebb10b828d89ec0667c71c1f57686481aa25",
+      "bytes": 916
+    },
+    {
+      "path": "DIRECT_METRIC_RADIATION_LINK.md",
+      "sha256": "c4b7fa0962eccb8023382350e13d2af174f34a3f49ab6685790b00d5e8d98db5",
+      "bytes": 9797
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "76b02971daeafbf54a217117943cc13187b416ceb420851426412f81efef1ccb",
+      "bytes": 2812
+    },
+    {
+      "path": "RESULTS_AND_PROOF_DETAILS.md",
+      "sha256": "4259f7f6ac8f7ef84334a78581012857e6a0c9190afd2bd89e1aa9c37c1503b3",
+      "bytes": 5473
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "b4de71d79d33b3ff96e3993a05947537c9bc9ad61ab483638860a4a15433e63c",
+      "bytes": 622
+    },
+    {
+      "path": "check_metric_radiation_link.py",
+      "sha256": "2fc082abcbbf0004cfee2a6bfd6bfc212779a2d56f5f6a83bfef5c45b73cee2f",
+      "bytes": 8306
+    },
+    {
+      "path": "evidence_v1/DIRECT_METRIC_RADIATION_LINK_executed_v1.md",
+      "sha256": "a0b03a06787b5179cd807e25ef416fe191d79750b279bd5f7fc73ee1cb8a363f",
+      "bytes": 9797
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "sha256": "a0afea087964bf831cae414614ad4ca6bb8354f259b5e5fea02e7e7fcaaafdbc",
+      "bytes": 749
+    },
+    {
+      "path": "evidence_v1/NOTE_TYPO_CORRECTION.json",
+      "sha256": "2b182328f8af404b4753498a2835a2388003b5f5d33eed8aab2893f6316c81bc",
+      "bytes": 415
+    },
+    {
+      "path": "evidence_v1/RESULTS.json",
+      "sha256": "074d735b4e969aced93696d176dfa75bcd2952ce7f0f943d332ff82701e6e6be",
+      "bytes": 25291
+    },
+    {
+      "path": "evidence_v1/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence_v1/run.stdout.txt",
+      "sha256": "9eaf617a662360d1e6f3e4eed030fef02a851a419285c5bb7cbc7727575852bb",
+      "bytes": 1379
+    }
+  ]
+}

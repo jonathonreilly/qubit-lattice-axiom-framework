@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-13T00:26:22.060962+00:00",
+  "pre_execution": true,
+  "script_sha256": "77d1afcb09ca2471b328cd37f39ea7416ce7d60f40aad860cccfde63620b52d3",
+  "controls": "3-vector source and canonical work; independent true-anomaly quartic sphere integration; ODE null rays; residual constant-charge dipole scope diagnostic",
+  "author_runner_executed_or_imported": false
+}

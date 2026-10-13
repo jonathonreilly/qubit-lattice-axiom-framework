@@ -1,0 +1,145 @@
+{
+  "at": "2026-10-13T00:31:30.160340+00:00",
+  "files": [
+    {
+      "path": "BODY_CHARGE_SENSITIVITY.md",
+      "sha256": "5b288c1191760484c86f505359eab8495ace5f0dc470a99fef9a34cfc181e561",
+      "bytes": 3058
+    },
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "286b6ddf51c25f257dfbb8be38a528aaa1919d8a6832d2731811b3dda70a1ae1",
+      "bytes": 967
+    },
+    {
+      "path": "DIRECT_METRIC_RADIATION_LINK.md",
+      "sha256": "3a44d099c294d4dfdfaa5dffc93cc7753ad26207c7656889073bd3eaeef21864",
+      "bytes": 10102
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "76b02971daeafbf54a217117943cc13187b416ceb420851426412f81efef1ccb",
+      "bytes": 2812
+    },
+    {
+      "path": "RESULTS_AND_PROOF_DETAILS.md",
+      "sha256": "d5dfa01e238581f30dde151590b6063fb96a0c1435efdcf25760f66fd85e204d",
+      "bytes": 6157
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "b4de71d79d33b3ff96e3993a05947537c9bc9ad61ab483638860a4a15433e63c",
+      "bytes": 622
+    },
+    {
+      "path": "check_body_charge.py",
+      "sha256": "f7afdaa8df818a5a0ed10b66bc4e499b1a7632d0e0f3fa4b08c6b918389626b2",
+      "bytes": 1678
+    },
+    {
+      "path": "check_metric_radiation_link.py",
+      "sha256": "d0eff4bc05e94551edda0d705536a78f4ac9ea27128078200d9540a0346102bf",
+      "bytes": 8358
+    },
+    {
+      "path": "evidence_v1/BODY_CHARGE_RESULTS.json",
+      "sha256": "a41b3a0e2a54849a9bd783b94d1c25e4a628b614c886a8695252f76a3c864507",
+      "bytes": 1224
+    },
+    {
+      "path": "evidence_v1/BODY_CHARGE_SENSITIVITY_before_dipole_scope.md",
+      "sha256": "a4aa57fa77c4e274b56cdeff40714d18ef552aba2affc4afcec71248ab3ad742",
+      "bytes": 2785
+    },
+    {
+      "path": "evidence_v1/CLAIM_STATUS_before_self_premise.md",
+      "sha256": "77810e0584e44d56dc4074fa3644ebb10b828d89ec0667c71c1f57686481aa25",
+      "bytes": 916
+    },
+    {
+      "path": "evidence_v1/DIRECT_METRIC_RADIATION_LINK_before_self_premise_v2.md",
+      "sha256": "c4b7fa0962eccb8023382350e13d2af174f34a3f49ab6685790b00d5e8d98db5",
+      "bytes": 9797
+    },
+    {
+      "path": "evidence_v1/DIRECT_METRIC_RADIATION_LINK_executed_v1.md",
+      "sha256": "a0b03a06787b5179cd807e25ef416fe191d79750b279bd5f7fc73ee1cb8a363f",
+      "bytes": 9797
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "sha256": "a0afea087964bf831cae414614ad4ca6bb8354f259b5e5fea02e7e7fcaaafdbc",
+      "bytes": 749
+    },
+    {
+      "path": "evidence_v1/NOTE_TYPO_CORRECTION.json",
+      "sha256": "2b182328f8af404b4753498a2835a2388003b5f5d33eed8aab2893f6316c81bc",
+      "bytes": 415
+    },
+    {
+      "path": "evidence_v1/REPORTING_SCOPE_CORRECTION.json",
+      "sha256": "3390e2c6f460e01becd30150e77a3c8ffddcb33889d0cae6d41657ef61eaefcd",
+      "bytes": 1681
+    },
+    {
+      "path": "evidence_v1/RESULTS.json",
+      "sha256": "074d735b4e969aced93696d176dfa75bcd2952ce7f0f943d332ff82701e6e6be",
+      "bytes": 25291
+    },
+    {
+      "path": "evidence_v1/RESULTS_AND_PROOF_DETAILS_before_error_normalization.md",
+      "sha256": "31a19e1dc6d7064a30557c034e6a490ecbc69f65ab9435c9a8947633a7332fe7",
+      "bytes": 6081
+    },
+    {
+      "path": "evidence_v1/RESULTS_AND_PROOF_DETAILS_before_self_premise.md",
+      "sha256": "4259f7f6ac8f7ef84334a78581012857e6a0c9190afd2bd89e1aa9c37c1503b3",
+      "bytes": 5473
+    },
+    {
+      "path": "evidence_v1/RESULTS_v2.json",
+      "sha256": "17474478b7c9d75d28ab2f960b7f4660a29c0577b1d6932acf6fc425c4af9e54",
+      "bytes": 25343
+    },
+    {
+      "path": "evidence_v1/SELF_PREMISE_CORRECTION.json",
+      "sha256": "8a34478b585406b452b1c92df36360c0be850ebc3885118a455c4cd49157a548",
+      "bytes": 797
+    },
+    {
+      "path": "evidence_v1/body_charge.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence_v1/body_charge.stdout.txt",
+      "sha256": "a41b3a0e2a54849a9bd783b94d1c25e4a628b614c886a8695252f76a3c864507",
+      "bytes": 1224
+    },
+    {
+      "path": "evidence_v1/check_metric_radiation_link_executed_v1.py",
+      "sha256": "2fc082abcbbf0004cfee2a6bfd6bfc212779a2d56f5f6a83bfef5c45b73cee2f",
+      "bytes": 8306
+    },
+    {
+      "path": "evidence_v1/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence_v1/run.stdout.txt",
+      "sha256": "9eaf617a662360d1e6f3e4eed030fef02a851a419285c5bb7cbc7727575852bb",
+      "bytes": 1379
+    },
+    {
+      "path": "evidence_v1/run_v2.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence_v1/run_v2.stdout.txt",
+      "sha256": "c8400f0f80921c4515ef4d7b2e53500bdc63109dd8ec246311e0d6454cd98fa9",
+      "bytes": 1431
+    }
+  ]
+}

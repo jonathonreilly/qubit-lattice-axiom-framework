@@ -31,3 +31,12 @@ Direct-author update, October 12, 2026:
 The last family is a proposed next question, not a result. Current quantum and
 gravity mathematical surfaces are jointly informative constraints but have no
 established shared physical degrees of freedom or unified action.
+
+## Direct action progression, October13
+
+Conformal particle/clock/Maxwell completion: checked, but lacks bending.
+Nonconformal exponential metric: checked linked bending/monopole/quadrupole
+law under a corrected zero-sensitivity point premise; no tensor mode.
+Positive tensor/scalar action: current constructive candidate, motivated by
+exposed observational geometry and timing. New Einstein action and universal
+metric are declared imports; no native-gravity or TOE conclusion.

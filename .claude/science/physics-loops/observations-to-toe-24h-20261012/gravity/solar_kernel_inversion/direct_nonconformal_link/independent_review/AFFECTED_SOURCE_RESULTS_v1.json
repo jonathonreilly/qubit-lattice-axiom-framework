@@ -1,0 +1,50 @@
+{
+  "R1": "discharged by explicit self-term-discarded, zero residual active/passive sensitivity premise",
+  "all_scientific_result_fields_identical": true,
+  "at": "2026-10-13T00:28:46.636199+00:00",
+  "body_result_binds_its_source_and_note": true,
+  "dipole_checks": [
+    {
+      "author_power": 6.104491774132339e-17,
+      "author_ratio": 0.15261229435330845,
+      "e": 0,
+      "independent_power": 6.104491774132338e-17,
+      "independent_ratio": 0.15261229435330845,
+      "ratio_difference": 0.0,
+      "relative_power_difference": 2.220446049250313e-16
+    },
+    {
+      "author_power": 6.895592712562517e-17,
+      "author_ratio": 0.13315528636330068,
+      "e": 0.2,
+      "independent_power": 6.895592712562517e-17,
+      "independent_ratio": 0.13315528636330068,
+      "ratio_difference": 0.0,
+      "relative_power_difference": 0.0
+    },
+    {
+      "author_power": 2.1982727946399402e-16,
+      "author_ratio": 0.0537321637779988,
+      "e": 0.6,
+      "independent_power": 2.1982727946399402e-16,
+      "independent_ratio": 0.053732163777998804,
+      "ratio_difference": 6.938893903907228e-18,
+      "relative_power_difference": 0.0
+    },
+    {
+      "author_power": 1.0362563196829588e-15,
+      "author_ratio": 0.02335982722363815,
+      "e": 0.8,
+      "independent_power": 1.0362563196829596e-15,
+      "independent_ratio": 0.023359827223638174,
+      "ratio_difference": 2.42861286636753e-17,
+      "relative_power_difference": 7.771561172376096e-16
+    }
+  ],
+  "dipole_interpretation": "additive odd-angular contribution on supplied orbit, not a complete charge-corrected total flux",
+  "new_result_binds_corrected_sources": true,
+  "no_parent_runner_execution": true,
+  "old_result_retained": true,
+  "runner_only_scope_string_changed": true,
+  "source_sha256": "10aeedac70730088e404bd4d7d7a5eba35a1d1fa7edc4c27481399531f2b001a"
+}

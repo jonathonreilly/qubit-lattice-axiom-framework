@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-13T00:34:44.395662+00:00",
+  "script_sha256": "220b2b3fe6b33abb880e04ef6fa9e11fe2f73c1d5269a513b008b31f2757aa84",
+  "status": "PASS final identities and affected prose only",
+  "R1_resolved": true,
+  "R2_resolved": true,
+  "R3_clarified": true,
+  "parent_files_unchanged_since_final_snapshot": true,
+  "main_result_binds_current_note_runner_protocol": true,
+  "body_result_original_note_preserved_and_exact_clarification_mapped": true,
+  "all_original_sources_and_results_preserved": true,
+  "scientific_rerun": false
+}

@@ -114,3 +114,19 @@ The figure sigma8 was illustrative. New VLA-ANGST moment products and their exac
 ## Conformal matter/optics candidate
 
 New supplied metric g~=exp(2phi/c^2)eta and minimally coupled particles/Maxwell; preferred vector action unchanged. Conditional finite-energy Hamiltonian is nonnegative; point self-energy/existence unresolved. Exact particle source is mA/gamma, so old mass-conserved radiation does not transfer to all orders. First-order optical timing is defined for free ideal endpoints; no cavity/noise/actual waveform map. Exact conformal null-path cancellation leaves light bending unexplained. Solar VLBA context is exposed, with no imported likelihood.
+
+## Nonconformal source and tensor reconstruction, October13
+
+The metric exp(2psi)/exp(-2lambda psi) and fixed scalar field action are
+supplied. All self terms are formally discarded and residual body-dependent
+active/passive sensitivities are explicitly zero in the main radiation law.
+Constant self terms alone are insufficient; the checked dipole addendum shows
+why. The same-orbit GR comparison is not observed pulsar decay. Scalar speed
+and lambda calibrations remain distinct from the prior anisotropic q model.
+
+The next tensor/scalar block explicitly changes the field action to a supplied
+Einstein metric with positive constant scalar kinetic matrix and universal
+conformal matter coupling. This is a known alternative-gravity construction,
+not a derivation of microscopic fields. Exposed VLBA gamma, GW170814 pure-mode
+geometry comparisons and GW170817 timing motivate it; no independent holdout
+or imported candidate likelihood is asserted.

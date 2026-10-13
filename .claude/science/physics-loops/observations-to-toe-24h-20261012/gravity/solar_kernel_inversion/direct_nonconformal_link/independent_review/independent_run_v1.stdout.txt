@@ -1,0 +1,9 @@
+Exact source, Hamiltonian, Maxwell, true-anomaly and ray-series algebra completed.
+{
+  "radiation_rows_checked": 44,
+  "maximum_radiation_author_relative_difference": 5.440092820663267e-15,
+  "maximum_direct_to_formula_relative_error": 8.881784197001252e-16,
+  "maximum_ray_angle_difference": 4.3021142204224816e-16,
+  "maximum_ray_invariant_error": 2.6645352591003757e-15
+}
+First original law sensitivity condition identified separately; no parent source was altered.

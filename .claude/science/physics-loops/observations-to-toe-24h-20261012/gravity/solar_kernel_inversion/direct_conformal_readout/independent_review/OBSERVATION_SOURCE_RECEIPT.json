@@ -1,0 +1,9 @@
+{
+  "authors": "Fomalont, Kopeikin, Lanyi, Benson",
+  "checked_at": "2026-10-13T00:21:00.385223+00:00",
+  "primary_url": "https://arxiv.org/html/0904.3992v1",
+  "support": "Near-unit fitted PPN gamma; unit-gamma bending in correlator; corrected relative astrometry. No raw visibility-data replay.",
+  "title": "Progress in Measurements of the Gravitational Bending of Radio Waves Using the VLBA",
+  "use": "observation context only; no proof import or candidate likelihood",
+  "verification_route": "web primary manuscript read during this review"
+}

@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-13T00:03:58.447813+00:00",
+  "before_numerical_run": true,
+  "sha256": {
+    "PROTOCOL.md": "d96a7e4e035ba3a5bf8992a07f1f5487f8d07ea34938de48af7342d88bdde739",
+    "DIRECT_CONFORMAL_DERIVATION.md": "e6eb776e041ca8cff7110762a37167ecfeaed489d1fe0f15bdfc30bba65ac6dc",
+    "check_conformal_completion.py": "a07e7369ce7bd277c70e96d3259e35756f966947ae3b7a0930e78bb99a283216"
+  },
+  "grid": {
+    "c_s/c": [
+      0.55,
+      0.7185375538936453,
+      1,
+      1.3
+    ],
+    "mu": [
+      -1,
+      -0.4,
+      0,
+      0.4,
+      0.8,
+      1
+    ],
+    "omega_L/c": [
+      0.08,
+      0.5,
+      1.7,
+      4.2
+    ],
+    "amplitude": [
+      0.002,
+      0.001,
+      0.0005
+    ]
+  },
+  "numerical_rows": 288,
+  "residual_bound": 100,
+  "halving_fixture": {
+    "mu": 0.4,
+    "c_s/c": 0.7185375538936453,
+    "omega_L/c": 0.5,
+    "ratio_interval": [
+      3.9,
+      4.1
+    ]
+  },
+  "prior_operational_failure": {
+    "command": "python runner redirected to absent evidence_v1 directory",
+    "exit_code": 1,
+    "stderr": "zsh:1: no such file or directory: evidence_v1/run.stdout.txt",
+    "scientific_runner_executed": false
+  }
+}

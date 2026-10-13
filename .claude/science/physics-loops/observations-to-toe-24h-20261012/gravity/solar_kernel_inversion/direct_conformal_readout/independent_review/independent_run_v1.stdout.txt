@@ -1,0 +1,38 @@
+Symbolic source, Hamiltonian, metric and curvature identities completed.
+All 288 linear predictions, quadratic fixture and nine high-precision null-flight controls completed.
+{
+  "symbolic_all": true,
+  "all_author_row_metadata": {
+    "count": 288,
+    "unique_count": 288,
+    "exact_frozen_product": true,
+    "max_internal_identity_error": 0.0,
+    "author_reported_max": 2.5013963277026665,
+    "recomputed_max": 2.5013963277026665
+  },
+  "prediction_error": 3.469446951953614e-18,
+  "fixture_quadratic": {
+    "coefficient": 0.7696180283949192,
+    "flight_quadratic": 1.1951706031059108,
+    "clock_integrand_quadratic": -0.16016540299265752,
+    "moving_lower_limit_quadratic": -0.2653871717183341
+  },
+  "max_mp_timing_difference": 2.916341213660134e-15,
+  "max_mp_duration_difference": 3.552713678800501e-15,
+  "probe_halving_ratios": [
+    [
+      3.9978508410504525,
+      3.9989176160834
+    ],
+    [
+      3.9935162415070606,
+      3.996756530006631
+    ],
+    [
+      3.9938770586980192,
+      3.996968875659828
+    ]
+  ],
+  "max_luminal_parallel_coefficient": 5.551115123125783e-16,
+  "result_file": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_conformal_readout/independent_review/INDEPENDENT_RESULTS_v1.json"
+}

@@ -48,3 +48,7 @@ Parent read full independent reports and verified all listed hashes. Readout:12 
 ## 2026-10-13T00:07:49.420347+00:00 direct empirical and optical update
 
 Full HI moment review read and84 identities verified;144 chords336 annuli agree. Conformal completion personally derived and288 controls pass after a preserved SymPy bool-interface error. Independent conformal proof review active. Canonical matter port full report read,26 evidence hashes verified;20 new port checks pass. Final package remains pending.
+
+## 2026-10-13T00:38:09.361259+00:00 conformal and nonconformal checks
+
+Conformal full report and51 source/evidence identities verified. Nonconformal full report and119 identities verified:44 radiation rows,8 independent ray ODEs,4 added dipole controls. Material self-charge assumption gap explicitly narrowed; originals and extra positive dipole preserved. Scaled/fractional error and total-flux wording corrected. No formal audit or empirical exclusion. Final matter115-path review and UNIT_v2 preflight pass; combined gate active.

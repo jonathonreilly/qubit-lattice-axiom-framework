@@ -1,0 +1,752 @@
+{
+  "at": "2026-10-13T01:56:21.495704+00:00",
+  "initial_constituent": "2f451838e0d58df6b52024dd9db1062f60d8bf2b",
+  "tree": "3dde95713fafb4d48c72bcfc673d2d121018cdc5",
+  "all_124_sources_unchanged": true,
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/APPROACH_REGISTRY.md",
+      "sha256": "e58c28b1ed0b84c422c7dde5c8841ee4df3e3004caa8053e136caae4b61ed93a",
+      "bytes": 1216,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "2e9d12800086b1413175c35335846f9cd6068e11feaf9ea05893f37786a4d254",
+      "bytes": 979,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/GOAL.md",
+      "sha256": "18a131ac62ab9b73d4b605919148969acf502c1d629b4536f43509ffeb8a258b",
+      "bytes": 409,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/HANDOFF.md",
+      "sha256": "4116057a64f1b220d5b8134b0e02a26dd0ee37701d0be15c6ff65670a0eb71fd",
+      "bytes": 1330,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/PORT_MAP_v1.json",
+      "sha256": "9190a3549c52dc07c8e388bbd2d0f3e738d784c1a5f7642a6bb4a4a647f98c6d",
+      "bytes": 9405,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/REVIEW_HISTORY.md",
+      "sha256": "fd2739917b99ac8bfa5ad231b73509297649b62bc659f7ede573984917e85b26",
+      "bytes": 686,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/SOURCE_DISPOSITION_v1.json",
+      "sha256": "a8184120d8fa4ecc047028db66a8dd3f4e85349667687d6d61951ed25bd3e8c1",
+      "bytes": 65368,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/TRACE_GATE.md",
+      "sha256": "904fda0e0106c7244de2f039f87d61bfef749efa05c09b0b5f872d2c56344a85",
+      "bytes": 606,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/ARCHIVAL_BYTES_v1.json",
+      "sha256": "5ed1df971fb8715929150719e318b45e138e9cf71df9896cba02343f8f0047d2",
+      "bytes": 38355,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_CACHE_RUN_v1.json",
+      "sha256": "6609cab76f66625df827e298573c9cf699f2b3abd0d5439a04ef02511f506e06",
+      "bytes": 1117,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_EXECUTION_v2.json",
+      "sha256": "802a68e7765a06673590f1556e846941699412975ad1d97b6930c6684c941b52",
+      "bytes": 594,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_FAILURE_v1.json",
+      "sha256": "79897d6005acca80377b28f2df916ef6134d11411b5a8a47195de1b50d4e14ed",
+      "bytes": 924,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_FREEZE_v2.json",
+      "sha256": "d09e4709dac0612b6fb797ffe7aff0960293f5b9888ff244110cd86c747ae186",
+      "bytes": 1782,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_RESULT_v2.json",
+      "sha256": "7348f8f813ee889a47df2c543d8f42e6f519e37347ce5cd544a269979e37b789",
+      "bytes": 118649,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_RUNNER_FAILED_v1.py.snapshot",
+      "sha256": "618cb057779213a878d63d0f185d8c1b42a541473dbe862b55f79a7f791429ce",
+      "bytes": 23325,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_RUN_v2.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_RUN_v2.stdout",
+      "sha256": "f68b6b09a232d495f376108f230d1c1561492b986228ce7462b4bf0d3fb6621e",
+      "bytes": 746,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_WRAPPER_FIX_v2.json",
+      "sha256": "ee93574681e90b54e813eb8bdbdd7ee1c4b7e2e87e1ffb978211addaa11f936b",
+      "bytes": 879,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/PORT_COMPARISON_v2.json",
+      "sha256": "38196dba52b21ef6a46863de8765dd26af1226981c1ecf8634e69a3d920fa351",
+      "bytes": 1520,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/RECOVERY.md",
+      "sha256": "f045e3a7c2f8817020a35b5e8f5116207735d5fac74b1c2575f1e00fb3a812f5",
+      "bytes": 569,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/TOPOLOGY_TIMEOUT_v1.json",
+      "sha256": "744964c5504f9bb52ddd103360f21c1d994b44a37b92e5ba41312d7bc0b065df",
+      "bytes": 472,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/TOPOLOGY_v2.json",
+      "sha256": "8507b01386320b6c84a0e23bd975848667ac0fb722e1a10e06682b2cf8f7c1bc",
+      "bytes": 1008,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/.claude/science/physics-loops/metric-clock-reconstruction-20261013/APPROACH_REGISTRY.md",
+      "sha256": "e58c28b1ed0b84c422c7dde5c8841ee4df3e3004caa8053e136caae4b61ed93a",
+      "bytes": 1216,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/.claude/science/physics-loops/metric-clock-reconstruction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "2e9d12800086b1413175c35335846f9cd6068e11feaf9ea05893f37786a4d254",
+      "bytes": 979,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/.claude/science/physics-loops/metric-clock-reconstruction-20261013/GOAL.md",
+      "sha256": "18a131ac62ab9b73d4b605919148969acf502c1d629b4536f43509ffeb8a258b",
+      "bytes": 409,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/.claude/science/physics-loops/metric-clock-reconstruction-20261013/HANDOFF.md",
+      "sha256": "4116057a64f1b220d5b8134b0e02a26dd0ee37701d0be15c6ff65670a0eb71fd",
+      "bytes": 1330,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/.claude/science/physics-loops/metric-clock-reconstruction-20261013/REVIEW_HISTORY.md",
+      "sha256": "fd2739917b99ac8bfa5ad231b73509297649b62bc659f7ede573984917e85b26",
+      "bytes": 686,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/.claude/science/physics-loops/metric-clock-reconstruction-20261013/TRACE_GATE.md",
+      "sha256": "904fda0e0106c7244de2f039f87d61bfef749efa05c09b0b5f872d2c56344a85",
+      "bytes": 606,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "339df68e83e28d3613e78e9677ddd10a9473f1fc1042efc66785edb593f512e6",
+      "bytes": 29072,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/canonical_source_v2/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "bytes": 23394,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/CHECKED_OUTCOME.md",
+      "sha256": "d903380fe6da9cf70e09bb86692fad71aeb26718059f45b2d6aef5d67c13f49f",
+      "bytes": 1857,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "49e2dac5589a3624b17d80bb3906cfb36460729840fb82135f4db534a49f5c66",
+      "bytes": 991,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/DIRECT_SCALAR_CLOCK_LINK.md",
+      "sha256": "9aefd47dfdb9c02096ec8c268bf389c59459ba2aefc8975eb94636809937de29",
+      "bytes": 10259,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/FREEZE.json",
+      "sha256": "51ed7573c1886acfce346d6bba3b723d500b3da4ce92bdef9e8eb0686d5ee10f",
+      "bytes": 214,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/PARENT_REVIEW_RECEIPT.json",
+      "sha256": "b70493c0c0842accad3d41a987776b24419ed91cb0ebc6c723f1a38e82caf467",
+      "bytes": 24938,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/PROTOCOL.md",
+      "sha256": "8ca2e2bacead8ad55fc72102d089895792e92323c6ff25bbc5c93f6f36ac48f8",
+      "bytes": 2608,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/RESULTS_AND_SCOPE.md",
+      "sha256": "f7571b3903a432d557298b9b451cd6564c0c8524779d30e957e2b15043b26c9d",
+      "bytes": 3961,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/SOURCE_LEDGER.json",
+      "sha256": "3183ea5e98caecd73b206f195e5c28c67093da5c3e9b84e223605c71e11df58e",
+      "bytes": 2490,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/TRACE_GATE.md",
+      "sha256": "dce784a982a6158207db1992ecef9d23234073b093be0eecb3b6817b5989ceab",
+      "bytes": 817,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "sha256": "4928b7497813a91b9ca5cbce57a43fb3cb6da347c10d9ecd73e7fd6b380cd035",
+      "bytes": 9648,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/EXECUTION.json",
+      "sha256": "90007c107521509782c44d497df745b0eb831298eb22b95cfa0323846669326b",
+      "bytes": 522,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/FREEZE.json",
+      "sha256": "779114612754c02e9838d9de9f0950b8b09516c941ed4867683084c8efc42c23",
+      "bytes": 946,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/RESULTS.json",
+      "sha256": "b9e1b1a10cbcc2dbeafec04e41850d959dff5efddad99314b4020106b97d1e5c",
+      "bytes": 64385,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/source_snapshot/DIRECT_SCALAR_CLOCK_LINK.md",
+      "sha256": "9aefd47dfdb9c02096ec8c268bf389c59459ba2aefc8975eb94636809937de29",
+      "bytes": 10259,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "8ca2e2bacead8ad55fc72102d089895792e92323c6ff25bbc5c93f6f36ac48f8",
+      "bytes": 2608,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/source_snapshot/check_scalar_clock_link.py",
+      "sha256": "4928b7497813a91b9ca5cbce57a43fb3cb6da347c10d9ecd73e7fd6b380cd035",
+      "bytes": 9648,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/evidence_v1/stdout.txt",
+      "sha256": "a5d624e0a85a08af6a0c0211dba69ec57787d98cd363e86ca9cea58f497ddf51",
+      "bytes": 346,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/AUTHOR_SOURCE_FREEZE_v1.json",
+      "sha256": "83495121af575ff7fd2fcee608d8f2d29d9d7fe80048eb0545538d6e659c99e8",
+      "bytes": 3221,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/EXECUTION_CONTEXT_v1.json",
+      "sha256": "95dff7a17b1674a3a59d2d19f937eaaf477730cd7a773bc76cda9ba66ab284d0",
+      "bytes": 717,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/EXTERNAL_SOURCE_CHECK.json",
+      "sha256": "b04320022c4f3efb46377b93a743584315bca478aa6c56207eda4e95bec4257d",
+      "bytes": 716,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/FINAL_IDENTITY_CHECK.json",
+      "sha256": "78dcebcedc1d4ca2fcdf1998234078ca63deaa17daa7a11056e7eb49a25de574",
+      "bytes": 16143,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/INDEPENDENT_FREEZE_v1.json",
+      "sha256": "7e8a7b6772dd505cb711185409c4a425e7d8bcbe402febdbf579e93674990e39",
+      "bytes": 427,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "28f8e4e835ffeccb6bc4ee1682c936036c5f05d08eef79333a7efe26fd1cd993",
+      "bytes": 107867,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/REVIEW.md.DISPLAY.txt",
+      "sha256": "5863c27f572e3507c2b55d1143643faf828052f3dc44f4e8312d62a754640e12",
+      "bytes": 17865,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/REVIEW_RECEIPT.json",
+      "sha256": "92b8b5b3d8b4c003f33dc27b420e77effa7b945075567d26ed5f04ccceaf20a3",
+      "bytes": 24690,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/action_source_snapshot/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "bytes": 12034,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/action_source_snapshot/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "bytes": 2278,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/action_source_snapshot/SOURCE_LEDGER.json",
+      "sha256": "c663cf812d14e09801c8b30f8c6c97eb2cc484863fff9bae81927c43860edece",
+      "bytes": 3110,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/independent_check.py.DISPLAY.txt",
+      "sha256": "5ccd8e76db2d1e22eb520dc4a553203341fd87b3936160b0e40dffc8b7cd1f33",
+      "bytes": 10421,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/independent_run_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/independent_run_v1.stdout.txt",
+      "sha256": "47390d2e07a59fce14036aea58aa1c311341d31efab89184ad3c3b60f3aa9bdc",
+      "bytes": 982,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "49e2dac5589a3624b17d80bb3906cfb36460729840fb82135f4db534a49f5c66",
+      "bytes": 991,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/DIRECT_SCALAR_CLOCK_LINK.md",
+      "sha256": "9aefd47dfdb9c02096ec8c268bf389c59459ba2aefc8975eb94636809937de29",
+      "bytes": 10259,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/FREEZE.json",
+      "sha256": "51ed7573c1886acfce346d6bba3b723d500b3da4ce92bdef9e8eb0686d5ee10f",
+      "bytes": 214,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/PROTOCOL.md",
+      "sha256": "8ca2e2bacead8ad55fc72102d089895792e92323c6ff25bbc5c93f6f36ac48f8",
+      "bytes": 2608,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/RESULTS_AND_SCOPE.md",
+      "sha256": "f7571b3903a432d557298b9b451cd6564c0c8524779d30e957e2b15043b26c9d",
+      "bytes": 3961,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/SOURCE_LEDGER.json",
+      "sha256": "3183ea5e98caecd73b206f195e5c28c67093da5c3e9b84e223605c71e11df58e",
+      "bytes": 2490,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/TRACE_GATE.md",
+      "sha256": "dce784a982a6158207db1992ecef9d23234073b093be0eecb3b6817b5989ceab",
+      "bytes": 817,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/check_scalar_clock_link.py",
+      "sha256": "4928b7497813a91b9ca5cbce57a43fb3cb6da347c10d9ecd73e7fd6b380cd035",
+      "bytes": 9648,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/EXECUTION.json",
+      "sha256": "90007c107521509782c44d497df745b0eb831298eb22b95cfa0323846669326b",
+      "bytes": 522,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/FREEZE.json",
+      "sha256": "779114612754c02e9838d9de9f0950b8b09516c941ed4867683084c8efc42c23",
+      "bytes": 946,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/RESULTS.json",
+      "sha256": "b9e1b1a10cbcc2dbeafec04e41850d959dff5efddad99314b4020106b97d1e5c",
+      "bytes": 64385,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/source_snapshot/DIRECT_SCALAR_CLOCK_LINK.md",
+      "sha256": "9aefd47dfdb9c02096ec8c268bf389c59459ba2aefc8975eb94636809937de29",
+      "bytes": 10259,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "8ca2e2bacead8ad55fc72102d089895792e92323c6ff25bbc5c93f6f36ac48f8",
+      "bytes": 2608,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/source_snapshot/check_scalar_clock_link.py",
+      "sha256": "4928b7497813a91b9ca5cbce57a43fb3cb6da347c10d9ecd73e7fd6b380cd035",
+      "bytes": 9648,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/independent_review/source_snapshot/evidence_v1/stdout.txt",
+      "sha256": "a5d624e0a85a08af6a0c0211dba69ec57787d98cd363e86ca9cea58f497ddf51",
+      "bytes": 346,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/CHECKED_OUTCOME.md",
+      "sha256": "419ffc20d3ba42057e36bb99fc6c432055a8aaf8cb2502a559e0994d40fc646b",
+      "bytes": 1869,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "aa26c0746776187342f01c6b5dc6f5165b039fa7fd266fbf2a572d8ec7c41ece",
+      "bytes": 914,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "bytes": 12034,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/FREEZE.json",
+      "sha256": "8dc2d73161d991595d93b19e4107bb66e3d75850a34c527e76ad76d8626e2ccc",
+      "bytes": 357,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/PARENT_REVIEW_RECEIPT.json",
+      "sha256": "2088b7b49ad78d439b6b4b844268e992dc406774e93b67759c3ddce979626ed4",
+      "bytes": 7715,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/PROTOCOL.md",
+      "sha256": "c53b53b2b000313cf9287cd39bfc5fc05b7f67aafd3f541bb8fb135fef4c6cf5",
+      "bytes": 3436,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "bytes": 2278,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/SOURCE_LEDGER.json",
+      "sha256": "c663cf812d14e09801c8b30f8c6c97eb2cc484863fff9bae81927c43860edece",
+      "bytes": 3110,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/TRACE_GATE.md",
+      "sha256": "4681ecddce4ee66ba204ea4a64ee80e17b9a8725152f40f36638da4f63ed1356",
+      "bytes": 532,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "sha256": "1625124b0fd8df1b3432cccdc97ff9a07270d7aff8919d3617f3d97d463aad43",
+      "bytes": 12496,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/evidence_v1/EXECUTION.json",
+      "sha256": "9a8d384f19beb118aa1a344a3a04079e2f71618f5da58bf4da71a509e532f4fc",
+      "bytes": 277,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/evidence_v1/FREEZE.json",
+      "sha256": "96b112f50ed80f1c284bfb64f94e65439b4f7750fb931270b8ff0a80712f73c3",
+      "bytes": 1016,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/evidence_v1/RESULTS.json",
+      "sha256": "b9cde6ce9ebb1b2dc6fa31ab104bcb602605baf31ec03491cd2b97b9062b2860",
+      "bytes": 50167,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/evidence_v1/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/evidence_v1/run.stdout.txt",
+      "sha256": "536d5b0aee9c626d73f848b0422b69a2274227704f9a84beb46e3ba88a9cd425",
+      "bytes": 283,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/EXECUTED_CHECKER_v1.py.snapshot",
+      "sha256": "5af34a6b8c72d574658acfacebb71b3448819395b6a2242f96207272c072134b",
+      "bytes": 14435,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/INDEPENDENT_CHECKS_v1.json",
+      "sha256": "15bc647ba37fb85ea8933438a9978dda6ade7dec3a1ab0712febaeca47a146e8",
+      "bytes": 53753,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/INDEPENDENT_DERIVATION.md",
+      "sha256": "d6882adddc190d9ce0a21321599de045b8d2f714ce0842d6033519480e6352f6",
+      "bytes": 10763,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/INDEPENDENT_EXECUTION_v1.json",
+      "sha256": "25c865a5696d6025699b73f6fd0ca7e1dca39780e978c831f673c07d11a3a44d",
+      "bytes": 326,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/INDEPENDENT_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/INDEPENDENT_RUN_v1.stdout",
+      "sha256": "ff177db9b11969be55a676b7ecf5a259349c9229a9939beade6950a5231de9ef",
+      "bytes": 291,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/OPERATIONAL_NOTES_v1.json",
+      "sha256": "674512e5a7d2c5ce1bd26eabd635bd6a2872fa2112ae32b2af9e72e9bcd23631",
+      "bytes": 1304,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/PRIMARY_READS_v1.json",
+      "sha256": "e01de5d66707f7d5a8d2eec9bdad624847162c2bc6dbcb20e9db4136404e62ec",
+      "bytes": 1691,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/RESULT_ROW_INTEGRITY_v1.json",
+      "sha256": "8f1d5a3845db9a938911b405c1a77cc03863d1481fee0826b2a673357ec95270",
+      "bytes": 919,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/REVIEW_RECEIPT_v1.json",
+      "sha256": "481386eea7570fcf2edb7f063e11addfc878fb65592f52b33b7bff0807f36499",
+      "bytes": 9407,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "c30a1f5bc4e8c8317c674bc0da9d33e75a3a3619654bdb68769c4e34afdd3a66",
+      "bytes": 8353,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/SOURCE_PINS_v1.json",
+      "sha256": "8113d10f811c6708eadb99c68d3f06d1cabfffc48817e8c6880fbcb0698cbcea",
+      "bytes": 3045,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/TENSOR_SCALAR_REVIEW.md",
+      "sha256": "8b4ae972c5982a14d5a48da43686d0b546f469454b1552596722cf991247ae7e",
+      "bytes": 11776,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/check_independent.py",
+      "sha256": "5af34a6b8c72d574658acfacebb71b3448819395b6a2242f96207272c072134b",
+      "bytes": 14435,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "aa26c0746776187342f01c6b5dc6f5165b039fa7fd266fbf2a572d8ec7c41ece",
+      "bytes": 914,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "bytes": 12034,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/FREEZE.json",
+      "sha256": "8dc2d73161d991595d93b19e4107bb66e3d75850a34c527e76ad76d8626e2ccc",
+      "bytes": 357,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/PROTOCOL.md",
+      "sha256": "c53b53b2b000313cf9287cd39bfc5fc05b7f67aafd3f541bb8fb135fef4c6cf5",
+      "bytes": 3436,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "bytes": 2278,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/SOURCE_LEDGER.json",
+      "sha256": "c663cf812d14e09801c8b30f8c6c97eb2cc484863fff9bae81927c43860edece",
+      "bytes": 3110,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/TRACE_GATE.md",
+      "sha256": "4681ecddce4ee66ba204ea4a64ee80e17b9a8725152f40f36638da4f63ed1356",
+      "bytes": 532,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/check_reconstruction.py",
+      "sha256": "1625124b0fd8df1b3432cccdc97ff9a07270d7aff8919d3617f3d97d463aad43",
+      "bytes": 12496,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/evidence_v1/EXECUTION.json",
+      "sha256": "9a8d384f19beb118aa1a344a3a04079e2f71618f5da58bf4da71a509e532f4fc",
+      "bytes": 277,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/evidence_v1/FREEZE.json",
+      "sha256": "96b112f50ed80f1c284bfb64f94e65439b4f7750fb931270b8ff0a80712f73c3",
+      "bytes": 1016,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/evidence_v1/RESULTS.json",
+      "sha256": "b9cde6ce9ebb1b2dc6fa31ab104bcb602605baf31ec03491cd2b97b9062b2860",
+      "bytes": 50167,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/evidence_v1/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/independent_review/snapshots_v1/evidence_v1/run.stdout.txt",
+      "sha256": "536d5b0aee9c626d73f848b0422b69a2274227704f9a84beb46e3ba88a9cd425",
+      "bytes": 283,
+      "unchanged": true
+    },
+    {
+      "path": "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "339df68e83e28d3613e78e9677ddd10a9473f1fc1042efc66785edb593f512e6",
+      "bytes": 29072,
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "852afdfc5de0836eba784eccb11ac6de10a7edc7862dbd922822eeda0979e60a",
+      "bytes": 1004773,
+      "unchanged": true
+    },
+    {
+      "path": "logs/runner-cache/metric_clock_reconstruction_2026_10_13.txt",
+      "sha256": "5b5c66e45134d129317f45efff1cbf64c7e0ce69d95a11e8993acfc036932c59",
+      "bytes": 1102,
+      "unchanged": true
+    },
+    {
+      "path": "scripts/metric_clock_reconstruction_2026_10_13.py",
+      "sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "bytes": 23394,
+      "unchanged": true
+    }
+  ]
+}

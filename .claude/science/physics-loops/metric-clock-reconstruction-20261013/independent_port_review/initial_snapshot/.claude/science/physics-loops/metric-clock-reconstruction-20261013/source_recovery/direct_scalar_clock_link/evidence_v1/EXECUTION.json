@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-13T01:00:00.757296+00:00",
+  "ended_at": "2026-10-13T01:00:02.770432+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py"
+  ],
+  "returncode": 0,
+  "failure": null,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_unchanged": true
+}

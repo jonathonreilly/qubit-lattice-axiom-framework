@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/metric_milestone/mutation_scratch_v1/02/scripts/metric_clock_reconstruction_2026_10_13.py", line 471, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/metric_milestone/mutation_scratch_v1/02/scripts/metric_clock_reconstruction_2026_10_13.py", line 425, in main
+    symbolic=symbolic_operator();examples=field_examples();field=numerical_checks(examples)
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/metric_milestone/mutation_scratch_v1/02/scripts/metric_clock_reconstruction_2026_10_13.py", line 167, in numerical_checks
+    assert trerr < 4e-13 and srerr < 4e-13
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

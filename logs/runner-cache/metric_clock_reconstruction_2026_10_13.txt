@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/metric_clock_reconstruction_2026_10_13.py
 runner_sha256: a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9
-input_fingerprint_sha256: 7b94e79ab2ff7ce22321a292e678df01816d56aba49389ffb9fa3d7ab27d82aa
+input_fingerprint_sha256: 6eed703c5f999c0a4ea5ac2a12f4280189a1b523f3c4ba0e1ee8c7cb56aa27d3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.35
+elapsed_sec: 4.15
 status: ok
 ----- stdout -----
 PASS common action: metric symbol, positive modes,100 patterns,20 fluxes and15 lens integrals.

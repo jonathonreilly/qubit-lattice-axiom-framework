@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-13T01:42:51.642173+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "timeout_seconds": 120,
+  "exception": "subprocess.TimeoutExpired",
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "owned_processes_absent_at": "2026-10-13T01:42:20Z",
+  "recovery": "No lock wait or child process remains; retry same serialized builder with600-second cap, without altering source or tool policy."
+}

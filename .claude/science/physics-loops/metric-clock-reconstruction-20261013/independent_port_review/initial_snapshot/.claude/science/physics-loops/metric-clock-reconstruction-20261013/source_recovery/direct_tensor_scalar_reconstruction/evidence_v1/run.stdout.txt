@@ -1,0 +1,1 @@
+{"flux_rows": 20, "lens_rows": 15, "max_lens_fractional_error": 2.220446049250313e-16, "max_pattern_normalized_error": 4.440892098500626e-16, "max_scalar_flux_fractional_error": 1.7763568394002505e-15, "max_tensor_flux_fractional_error": 3.6637359812630166e-15, "pattern_rows": 100}

@@ -1,0 +1,6 @@
+{
+  "reason": "Convert each check-family status to a built-in bool for JSON serialization. No existing formula body changed.",
+  "before_sha256": "618cb057779213a878d63d0f185d8c1b42a541473dbe862b55f79a7f791429ce",
+  "after_sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+  "diff": "--- CANONICAL_RUNNER_FAILED_v1\n+++ canonical_runner_v2\n@@ -443,6 +443,7 @@\n       'finite_oscillator_visibility':len(oscillators)==32,\n       'illustrative_SI_bounds':len(si['rows'])==27,\n       'sensitivity_to_false_formulas':bool(alternatives)}\n+    families={name:bool(passed) for name,passed in families.items()}\n     assert len(families)==14 and all(families.values())\n     paths=[Path(__file__),*[ROOT/x for x in AUDIT_INPUT_PATHS]]\n     out={'input_identities':{str(q.relative_to(ROOT)):hashlib.sha256(q.read_bytes()).hexdigest() for q in paths},\n"
+}

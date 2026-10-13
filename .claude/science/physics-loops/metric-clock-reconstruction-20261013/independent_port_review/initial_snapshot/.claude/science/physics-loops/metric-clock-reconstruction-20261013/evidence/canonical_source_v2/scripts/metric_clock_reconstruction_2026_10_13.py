@@ -1,0 +1,471 @@
+#!/usr/bin/env python3
+"""Conditional common-metric and scalar-clock controls; no empirical acceptance."""
+from __future__ import annotations
+import os
+for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS'):
+    os.environ[key]='1'
+import argparse,hashlib,json,math,sys
+from functools import lru_cache
+from pathlib import Path
+import mpmath as mp
+import numpy as np
+import scipy
+from scipy.integrate import quad
+from scipy.linalg import expm
+from scipy.special import exp1,erf
+import sympy as sp
+ROOT=Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC=120
+AUDIT_INPUT_PATHS=('docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md',)
+mp.mp.dps=55
+
+def symbolic_operator():
+    eta = sp.diag(-1, 1, 1, 1)
+    w, k = sp.symbols('w k', real=True)
+    q = sp.Matrix([-w, 0, 0, k])
+    qu = eta*q
+    q2 = (q.T*qu)[0]
+    entries = [(i, j) for i in range(4) for j in range(i, 4)]
+    hs = sp.symbols('h:10')
+    h = sp.zeros(4)
+    for z, (i, j) in zip(hs, entries):
+        h[i, j] = h[j, i] = z
+
+    def einstein(hh):
+        hq = hh*qu
+        tr = sp.trace(eta*hh)
+        ric = sp.Matrix(4, 4, lambda i, j:
+                        (-q[i]*hq[j]-q[j]*hq[i]+q2*hh[i, j]+q[i]*q[j]*tr)/2)
+        return sp.simplify(ric-eta*sp.trace(eta*ric)/2)
+
+    gl = einstein(h)
+    assert all(sp.expand(z) == 0 for z in qu.T*gl)
+    gauge_columns = []
+    for a in range(4):
+        xi = sp.eye(4)[:, a]
+        hg = q*xi.T+xi*q.T
+        assert einstein(hg) == sp.zeros(4)
+        gauge_columns.append(sp.Matrix([hg[i, j] for i, j in entries]))
+    gauges = sp.Matrix.hstack(*gauge_columns)
+    mat = sp.Matrix([gl[i, j] for i, j in entries]).jacobian(hs)
+    ranks = []
+    for frequency, wave_number in [(2, 1), (1, 1), (3, 3), (0, 1)]:
+        substitutions = {w: frequency, k: wave_number}
+        rank = mat.subs(substitutions).rank()
+        gauge_rank = gauges.subs(substitutions).rank()
+        expected = 4 if abs(frequency) == abs(wave_number) else 6
+        assert rank == expected and gauge_rank == 4
+        ranks.append(dict(omega_over_c=frequency, k=wave_number, operator_rank=rank,
+                          kernel_dimension=10-rank, gauge_rank=gauge_rank))
+    plus = sp.diag(0, 1, -1, 0)
+    cross = sp.zeros(4)
+    cross[1, 2] = cross[2, 1] = 1
+    for ht in [plus, cross]:
+        assert sp.simplify(einstein(ht)-q2*ht/2) == sp.zeros(4)
+        contraction = sp.trace((eta*ht*eta).T*einstein(ht))
+        assert sp.simplify(contraction-q2) == 0
+    # Constant field metric: product-rule stress identity, two nontrivial fields.
+    coords = sp.symbols('t x y z', real=True)
+    fields = [sp.Function('f')(*coords), sp.Function('g')(*coords)]
+    K = sp.Matrix([[2, 1], [1, 3]])
+    dp = sp.Matrix([[sp.diff(f, x) for x in coords] for f in fields])
+    square = sum(K[a, b]*sum(eta[r, r]*dp[a, r]*dp[b, r] for r in range(4))
+                 for a in range(2) for b in range(2))
+    stress = sp.Matrix(4, 4, lambda i, j:
+                       2*sum(K[a, b]*dp[a, i]*dp[b, j]
+                             for a in range(2) for b in range(2))-eta[i, j]*square)
+    boxes = [sum(eta[r, r]*sp.diff(f, coords[r], 2) for r in range(4)) for f in fields]
+    for nu in range(4):
+        div = sum(eta[mu, mu]*sp.diff(stress[mu, nu], coords[mu]) for mu in range(4))
+        rhs = 2*sum(K[a, b]*boxes[a]*dp[b, nu] for a in range(2) for b in range(2))
+        assert sp.expand(div-rhs) == 0
+    a, gamma = sp.symbols('a gamma', nonnegative=True)
+    gamma_map = (1-a)/(1+a)
+    ratio = (1+a/6)/(1+a)
+    assert sp.factor(ratio-(7+5*gamma_map)/12) == 0
+    assert sp.factor((1-gamma_map)/(1+gamma_map)-a) == 0
+    return dict(bianchi=True, four_gauge_nulls=True, full_metric_ranks=ranks,
+                TT_quadratic_normalization=True, scalar_stress_divergence=True,
+                static_radiation_elimination=True)
+
+
+def field_examples():
+    R = sp.Rational
+    examples = [
+        ('zero', sp.Matrix([[1]]), sp.Matrix([0])),
+        ('small', sp.Matrix([[1]]), sp.Matrix([R(1, 10)])),
+        ('unit', sp.Matrix([[1]]), sp.Matrix([1])),
+        ('diagonal_two', sp.diag(2, 3), sp.Matrix([R(1, 5), -R(1, 7)])),
+        ('mixed_two', sp.Matrix([[2, 1], [1, 3]]), sp.Matrix([R(1, 4), R(1, 3)])),
+    ]
+    result = []
+    for name, K, alpha in examples:
+        assert K.is_positive_definite is True
+        a = (alpha.T*K.inv()*alpha)[0]
+        assert a >= 0
+        transforms = [sp.Matrix([[2]]), sp.Matrix([[-3]])] if len(alpha) == 1 else [
+            sp.Matrix([[1, 2], [0, 1]]), sp.Matrix([[0, 1], [-2, 1]])]
+        for S in transforms:
+            kp, ap = S.T*K*S, S.T*alpha
+            assert sp.simplify((ap.T*kp.inv()*ap)[0]-a) == 0
+        result.append((name, np.array(K, dtype=float), np.array(alpha, dtype=float).ravel(), a))
+    return result
+
+
+def moment(phase, mu, radius, omega):
+    r = radius*np.array([math.cos(phase), math.sin(phase), 0.0])
+    v = radius*omega*np.array([-math.sin(phase), math.cos(phase), 0.0])
+    acc, jerk = -omega**2*r, -omega**2*v
+    second = mu*(np.outer(acc, r)+np.outer(r, acc)+2*np.outer(v, v))
+    third = mu*(np.outer(jerk, r)+np.outer(r, jerk)
+                +3*(np.outer(acc, v)+np.outer(v, acc)))
+    integrated_stress = mu*(np.outer(v, v)-omega**2*np.outer(r, r))
+    assert np.allclose(second, 2*integrated_stress, rtol=2e-14, atol=1e-15)
+    assert abs(np.trace(third)) < 2e-15
+    assert abs(np.sum(third*third)/(32*mu**2*radius**4*omega**6)-1) < 3e-15
+    return second, third
+
+
+def tt(S, n):
+    P = np.eye(3)-np.outer(n, n)
+    return P@S@P-.5*P*np.trace(P@S)
+
+
+def sphere_flux(S, K, alpha, gs, c, distance, nmu=16, nphi=32):
+    v = np.linalg.solve(K, alpha)
+    mus, ws = np.polynomial.legendre.leggauss(nmu)
+    tensor, scalar = 0.0, 0.0
+    for z, wz in zip(mus, ws):
+        for az in np.arange(nphi)*2*math.pi/nphi:
+            n = np.array([math.sqrt(1-z*z)*math.cos(az), math.sqrt(1-z*z)*math.sin(az), z])
+            hd = 2*gs/(c**4*distance)*tt(S, n)
+            pd = -gs/(2*c**4*distance)*v*(n@S@n)
+            weight = wz*2*math.pi/nphi
+            tensor += weight*c**3*distance**2/(32*math.pi*gs)*np.sum(hd*hd)
+            scalar += weight*c**3*distance**2/(4*math.pi*gs)*(pd@K@pd)
+    return tensor, scalar
+
+
+def numerical_checks(examples):
+    c, gn, mass, radius, mu, omega, distance = 1000., 1., 1., 1., .24, 1., 1e6
+    patterns, fluxes, lenses, invariant_rows = [], [], [], []
+    phases = [0., .37, 1.2, 2.5]
+    for name, K, alpha, exact_a in examples:
+        a = float(exact_a)
+        gs = gn/(1+a)
+        gamma = (1-a)/(1+a)
+        invariant_rows.append(dict(name=name, K=K.tolist(), alpha=alpha.tolist(),
+                                   exact_a=str(exact_a), a=a, gamma=gamma,
+                                   scalar_force_fraction=a/(1+a), G_star=gs))
+        for phase in phases:
+            I2, I3 = moment(phase, mu, radius, omega)
+            tensor, scalar = sphere_flux(I3, K, alpha, gs, c, distance)
+            pt = gs*np.sum(I3*I3)/(5*c**5)
+            ps = a*pt/6
+            trerr = abs(tensor/pt-1)
+            srerr = abs(scalar/ps-1) if ps else abs(scalar)
+            assert trerr < 4e-13 and srerr < 4e-13
+            if not ps:
+                assert scalar == 0
+            comparator = gn*np.sum(I3*I3)/(5*c**5)
+            ratio = (tensor+scalar)/comparator
+            assert abs(ratio-(7+5*gamma)/12) < 4e-13
+            fluxes.append(dict(name=name, phase=phase, tensor=tensor, scalar=scalar,
+                               tensor_formula=pt, scalar_formula=ps,
+                               tensor_fractional_error=trerr,
+                               scalar_fractional_error=srerr if ps else None,
+                               same_orbit_ratio=ratio))
+            H0 = 2*gs*mu*radius**2*omega**2/(c**4*distance)
+            for ci in [-1., -.6, 0., .6, 1.]:
+                si = math.sqrt(1-ci*ci)
+                n, p, q = np.array([si, 0., ci]), np.array([ci, 0., -si]), np.array([0., 1., 0.])
+                h = 2*gs/(c**4*distance)*tt(I2, n)
+                field = -gs/(2*c**4*distance)*np.linalg.solve(K, alpha)*(n@I2@n)
+                zeta = alpha@field
+                observed = np.array([.5*(p@h@p-q@h@q), p@h@q, 2*zeta])/H0
+                expected = np.array([-(1+ci*ci)*math.cos(2*phase),
+                                     -2*ci*math.sin(2*phase), a*(1-ci*ci)*math.cos(2*phase)])
+                err = float(np.max(np.abs(observed-expected)))
+                assert err < 5e-14
+                # Fourier linear curvature of h00=-2zeta, hij=hTT+2zeta delta.
+                spatial_metric = h+2*zeta*np.eye(3)
+                curvature = .5*(spatial_metric-2*zeta*np.outer(n, n))
+                tide = .5*h+zeta*(np.eye(3)-np.outer(n, n))
+                assert np.max(np.abs(curvature-tide))/H0 < 3e-15
+                patterns.append(dict(name=name, phase=phase, cos_inclination=ci,
+                                     normalized_amplitudes=observed.tolist(),
+                                     predicted=expected.tolist(), absolute_normalized_error=err))
+        for b in [.7, 2., 10.]:
+            value, err = quad(lambda z:2*gs*mass*b/(c*c*(b*b+z*z)**1.5),
+                              -np.inf, np.inf, epsabs=1e-18, epsrel=3e-13)
+            theory = 2*(1+gamma)*gn*mass/(c*c*b)
+            assert abs(value/theory-1) < 2e-12
+            lenses.append(dict(name=name, impact_parameter=b, integrated_bending=value,
+                               prediction=theory, fractional_error=abs(value/theory-1),
+                               quadrature_estimate=err))
+    # A different grid checks the last nontrivial mixed-field example.
+    name, K, alpha, exact_a = examples[-1]
+    S = moment(.37, mu, radius, omega)[1]
+    lo = sphere_flux(S, K, alpha, gn/(1+float(exact_a)), c, distance, 8, 16)
+    hi = sphere_flux(S, K, alpha, gn/(1+float(exact_a)), c, distance, 16, 32)
+    refinements = [abs(x/y-1) for x, y in zip(lo, hi)]
+    assert max(refinements) < 4e-13
+    return dict(field_examples=invariant_rows, flux_rows=fluxes, pattern_rows=patterns,
+                lens_rows=lenses, angular_grid_refinement=refinements,
+                declared_orbit=dict(c=c, G_N=gn, total_mass=mass, radius=radius,
+                                    reduced_mass=mu, omega=omega, wave_radius=distance,
+                                    relative_speed_over_c=radius*omega/c,
+                                    potential_scale_over_c_squared=gn*mass/radius/c**2))
+
+
+@lru_cache(maxsize=None)
+def F(x):
+    z = mp.mpf(str(x))
+    return z*z/4*mp.hyper([1, 1], [mp.mpf('1.5'), 2], -z*z/4)
+
+
+def dawson(z):
+    return mp.sqrt(mp.pi)/2*mp.exp(-z*z)*mp.erfi(z)
+
+
+def H(x):
+    z = mp.mpf(str(x))
+    return z*F(x)-z+2*dawson(z/2)
+
+
+def J(d):
+    z = mp.mpf(str(d))
+    return F(d)-1+2*dawson(z/2)/z if z else mp.mpf(0)
+
+
+def D(x, d):
+    xx, dd = mp.mpf(str(x)), mp.mpf(str(d))
+    if not dd:
+        return mp.mpf(0)
+    return F(x)+J(d)-(H(str(xx+dd))-H(str(xx-dd)))/(2*dd)
+
+
+def temporal(u, x, echo):
+    if echo:
+        # Integrate the two half intervals with opposite signs.
+        return (2*np.expm1(1j*u*x/2)-np.expm1(1j*u*x))/(1j*u)
+    return np.expm1(1j*u*x)/(1j*u)
+
+
+def direct_channel(x, d, echo=False, nrad=384, nangle=64):
+    t, w = np.polynomial.legendre.leggauss(nrad)
+    u, wr = 6*(t+1), 6*w
+    z, wz = np.polynomial.legendre.leggauss(nangle)
+    # Actual two-center phase difference, with no analytic sinc inserted.
+    form = (4*np.sin(.5*d*u[:, None]*z[None, :])**2)@(wz/2)
+    Y = temporal(u, x, echo)
+    return float(.5*np.sum(wr*u*np.exp(-u*u)*abs(Y)**2*form))
+
+
+def numerical_grid():
+    times, distances = [.1, .5, 1., 2., 5., 10., 30.], [0., .1, .5, 1., 2., 5., 10.]
+    rows = []
+    max_abs, max_fraction = 0., 0.
+    for x in times:
+        for d in distances:
+            values = []
+            for echo in [False, True]:
+                direct = direct_channel(x, d, echo)
+                analytic = 2*(4*D(str(mp.mpf(str(x))/2), d)-D(x, d)) if echo else 2*D(x, d)
+                reference = float(analytic)
+                error = abs(direct-reference)
+                fraction = error/abs(reference) if reference else None
+                assert error < 1e-10
+                if reference:
+                    assert fraction < 3e-9
+                else:
+                    assert direct == 0
+                bound = (16 if echo else 4)*float(J(d))
+                assert direct >= 0 and direct <= bound+1e-12
+                max_abs, max_fraction = max(max_abs, error), max(max_fraction, fraction or 0)
+                values.append(dict(echo=echo, chi_over_kappa_direct=direct,
+                                   chi_over_kappa_closed=reference, absolute_error=error,
+                                   fractional_error=fraction, analytic_all_time_bound=bound))
+            rows.append(dict(x=x, d=d, channels=values))
+    refinements = []
+    for x, d in [(30., 10.), (.1, .1), (10., 1.)]:
+        for echo in [False, True]:
+            lo, hi = direct_channel(x, d, echo, 192, 32), direct_channel(x, d, echo)
+            err = abs(lo-hi)/hi
+            assert err < 4e-10
+            refinements.append(dict(x=x, d=d, echo=echo, fractional_change=err))
+    singles = []
+    for x in times:
+        direct, err = quad(lambda u:np.exp(-u*u)*2*np.sin(x*u/2)**2/u if u else 0,
+                           0, 12, epsabs=2e-13, epsrel=2e-13, limit=300)
+        exact = float(F(x))
+        assert abs(direct-exact) < 5e-12
+        singles.append(dict(x=x, direct=direct, closed=exact, quadrature_error=err))
+    return dict(pair_rows=rows, single_rows=singles, refinements=refinements,
+                max_pair_absolute_error=max_abs, max_pair_fractional_error=max_fraction,
+                radial_tail_bound_for_all_rows=900*math.exp(-144),
+                tail_bound_reason='|Y|<=x<=30; angular form<=4; radial tail x^2 exp(-12^2).')
+
+
+def plateau_and_static():
+    rows = []
+    for d in [.1, .5, 1., 2., 5., 10., 30.]:
+        value, err = quad(lambda u:np.exp(-u*u)*(1-np.sinc(d*u/np.pi))/u if u else 0,
+                           0, 12, epsabs=2e-13, epsrel=2e-13, limit=300)
+        closed = float(J(d))
+        upper = min(d*d/12, 1/12+float(exp1(1/(d*d))))
+        assert abs(value-closed) < 6e-12 and 0 <= closed <= upper
+        # Same spatial smearing in the static inverse-Laplacian kernel.
+        static, static_err = quad(lambda u:np.exp(-u*u)*np.sinc(d*u/np.pi),
+                                 0, 12, epsabs=2e-13, epsrel=2e-13, limit=300)
+        static *= 2/math.pi
+        static_closed = float(erf(d/2)/d)
+        assert abs(static-static_closed) < 4e-13
+        # Large time at fixed distance approaches the plateau from this exact formula.
+        asymptotic_rows = []
+        for x in [100., 300., 1000.]:
+            normalized = float(2*D(x, d))
+            echo = float(2*(4*D(x/2, d)-D(x, d)))
+            asymptotic_rows.append(dict(x=x, ramsey=normalized, echo=echo,
+                                       ramsey_plateau=2*closed, echo_plateau=6*closed))
+        assert abs(asymptotic_rows[-1]['ramsey']/(2*closed)-1) < .001
+        assert abs(asymptotic_rows[-1]['echo']/(6*closed)-1) < .005
+        rows.append(dict(d=d, J_direct=value, J_closed=closed, J_upper=upper,
+                         J_quad_estimate=err, static_direct=static,
+                         static_closed=static_closed, static_quad_estimate=static_err,
+                         late_time_rows=asymptotic_rows))
+    return rows
+
+
+def finite_oscillators():
+    rows = []
+    g = .2
+    for dim in [16, 24]:
+        a = np.diag(np.sqrt(np.arange(1, dim)), 1)
+        vac = np.eye(dim, dtype=complex)[:, 0]
+        for omega in [.7, 1.3]:
+            h0 = omega*a.T@a
+            hp, hm = h0+g*(a+a.T)/2, h0-g*(a+a.T)/2
+            for T in [.1, 1., 3., 6.]:
+                for echo in [False, True]:
+                    if echo:
+                        plus = expm(-1j*hm*T/2)@expm(-1j*hp*T/2)@vac
+                        minus = expm(-1j*hp*T/2)@expm(-1j*hm*T/2)@vac
+                    else:
+                        plus, minus = expm(-1j*hp*T)@vac, expm(-1j*hm*T)@vac
+                    visibility = abs(np.vdot(minus, plus))
+                    Y = temporal(np.array([omega]), T, echo)[0]
+                    chi = .5*g*g*abs(Y)**2
+                    predicted = math.exp(-chi)
+                    error = abs(visibility-predicted)
+                    assert error < 2e-12
+                    rows.append(dict(dim=dim, omega=omega, T=T, echo=echo,
+                                     direct_visibility=float(visibility), predicted=predicted,
+                                     absolute_error=float(error), top_level_population=float(abs(plus[-1])**2)))
+    return rows
+
+
+def si_grid():
+    G, h, c, fraction = 6.67430e-11, 6.62607015e-34, 299792458., 1/2500
+    rows = []
+    for nu in [1e9, 1e14, 1e15]:
+        kappa = 2*G*h*fraction*nu*nu/c**5
+        # Independent dimensional rewrite using hbar and angular frequency.
+        second = G*fraction*(h/(2*math.pi))*(2*math.pi*nu)**2/(math.pi*c**5)
+        assert abs(kappa/second-1) < 3e-15
+        for ell in [1e-9, 1e-6, 1e-3]:
+            for L in [1e-2, 1., 1e3]:
+                d = L/ell
+                upper = min(d*d/12, 1/12+float(exp1(1/(d*d))))
+                rows.append(dict(nu_Hz=nu, width_m=ell, separation_m=L, d=d, kappa=kappa,
+                                 J_analytic_upper=upper,
+                                 all_time_Ramsey_chi_upper=4*kappa*upper,
+                                 all_time_echo_chi_upper=16*kappa*upper))
+    return dict(constants=dict(G_N=G, G_N_reported_standard_uncertainty=1.5e-15,
+                               h_exact=h, c_exact=c, supplied_scalar_fraction_upper=fraction),
+                rows=rows, max_Ramsey_upper=max(r['all_time_Ramsey_chi_upper'] for r in rows),
+                max_echo_upper=max(r['all_time_echo_chi_upper'] for r in rows),
+                empirical_or_confidence_bound=False)
+
+
+def sensitivity_controls():
+    # False-formula comparisons, not altered-source executions.
+    phase=np.arange(64)*2*np.pi/64
+    tensors=[];dust=[];wrong=[]
+    for t in phase:
+        r=np.array([math.cos(t),math.sin(t),0.])
+        v=np.array([-math.sin(t),math.cos(t),0.])
+        d=np.outer(v,v);s=-np.outer(r,r)
+        tensors.append(d+s);dust.append(d);wrong.append(d-s)
+    def harmonic(rows):
+        return np.mean(np.array(rows)*np.exp(-2j*phase)[:,None,None],axis=0)
+    total,alone,reverse=map(harmonic,[tensors,dust,wrong])
+    assert np.linalg.norm(alone-.5*total)<1e-14
+    assert np.linalg.norm(reverse)<1e-14
+    a=1.;gamma=(1-a)/(1+a)
+    correct=(7+5*gamma)/12;wrong_Gstar=1+a/6
+    assert abs(correct-7/12)<1e-15 and abs(correct-wrong_Gstar)>.5
+    alpha=np.array([1.,-1.]);K=np.eye(2)
+    norm=float(alpha@np.linalg.solve(K,alpha))
+    assert norm==2 and float(np.sum(alpha))==0
+    pair=direct_channel(1.,0.)
+    false_independent=2*float(F(1.))
+    assert pair==0 and false_independent>.4
+    return {'omitted_field_stress_amplitude_ratio':float(np.linalg.norm(alone)/np.linalg.norm(total)),
+      'omitted_field_stress_power_ratio':float(np.linalg.norm(alone)**2/np.linalg.norm(total)**2),
+      'reversed_stress_harmonic_norm':float(np.linalg.norm(reverse)),
+      'fixed_Gstar_instead_of_GN_detected':True,'opposite_charge_norm_cancellation_detected':True,
+      'independent_bath_at_zero_separation_detected':True,
+      'scope':'Explicit comparisons with false formula alternatives, not source-mutated runner executions.'}
+
+
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.add_argument('--output-json',type=Path)
+    args=ap.parse_args()
+    symbolic=symbolic_operator();examples=field_examples();field=numerical_checks(examples)
+    lo=sp.Rational(9992,10000)
+    amax=sp.factor((1-lo)/(1+lo));fmax=(1-lo)/2;rmin=(7+5*lo)/12
+    assert (amax,fmax,rmin)==(sp.Rational(1,2499),sp.Rational(1,2500),sp.Rational(2999,3000))
+    grid=numerical_grid();plateau=plateau_and_static();oscillators=finite_oscillators();si=si_grid()
+    alternatives=sensitivity_controls()
+    families={
+      'metric_symbol_and_scalar_stress':all(symbolic[x] for x in ['bianchi','four_gauge_nulls','TT_quadratic_normalization','scalar_stress_divergence','static_radiation_elimination']),
+      'positive_scalar_norm_and_basis_changes':len(field['field_examples'])==5,
+      'circular_tensor_scalar_flux':len(field['flux_rows'])==20,
+      'physical_wave_patterns_and_tides':len(field['pattern_rows'])==100,
+      'static_lensing_integrals':len(field['lens_rows'])==15,
+      'exact_working_rectangle_and_angular_refinement':max(field['angular_grid_refinement'])<4e-13,
+      'clock_two_center_channels':len(grid['pair_rows'])==49,
+      'clock_radial_angular_refinements':len(grid['refinements'])==6,
+      'clock_single_reference':len(grid['single_rows'])==7,
+      'static_gaussian_interaction_and_plateau':len(plateau)==7,
+      'late_time_rows':sum(len(x['late_time_rows']) for x in plateau)==21,
+      'finite_oscillator_visibility':len(oscillators)==32,
+      'illustrative_SI_bounds':len(si['rows'])==27,
+      'sensitivity_to_false_formulas':bool(alternatives)}
+    families={name:bool(passed) for name,passed in families.items()}
+    assert len(families)==14 and all(families.values())
+    paths=[Path(__file__),*[ROOT/x for x in AUDIT_INPUT_PATHS]]
+    out={'input_identities':{str(q.relative_to(ROOT)):hashlib.sha256(q.read_bytes()).hexdigest() for q in paths},
+      'environment':{'python':sys.version,'numpy':np.__version__,'scipy':scipy.__version__,'sympy':sp.__version__,'mpmath':mp.__version__},
+      'field_symbolic':symbolic,'field':field,
+      'working_rectangle':{'gamma_lower':str(lo),'max_a':str(amax),'max_scalar_fraction':str(fmax),'circular_ratio_lower':str(rmin),'confidence_interval':False},
+      'clock_grid':grid,'clock_static_plateau':plateau,'clock_oscillators':oscillators,'illustrative_SI':si,
+      'false_formula_controls':alternatives,'check_families':families,'checks_passed':sum(families.values()),'checks_failed':sum(not x for x in families.values()),
+      'scope':'Supplied common tensor/scalar action and linear Gaussian clock model; no actual apparatus likelihood, quantum-state detection, retained status or TOE.'}
+    encoded=json.dumps(out,indent=2,allow_nan=False)+'\n'
+    if args.output_json:
+        with args.output_json.open('x') as f:f.write(encoded)
+    if args.json:print(encoded,end='')
+    else:
+        print('PASS common action: metric symbol, positive modes,100 patterns,20 fluxes and15 lens integrals.')
+        print('PASS scalar clock:98 pair channels,32 oscillators,static kernel,plateaus and27 illustrative SI cases.')
+        print('False alternatives are formula comparisons, not mutated-source executions.')
+        print('per_element: metric/scalar components and logical-source difference explicitly checked.')
+        print('per_site: two Gaussian clock centers; no microscopic site law supplied.')
+        print('per_mode: two physical tensor modes and finite positive scalar directions checked.')
+        print('per_block: fourteen conservative,radiative,coherence and sensitivity families checked.')
+        print('lattice_wide: checked and not executed; supplied continuum candidate only.')
+        print('TOTAL: PASS=14 FAIL=0; conditional-support, no empirical acceptance.')
+
+if __name__=='__main__':main()

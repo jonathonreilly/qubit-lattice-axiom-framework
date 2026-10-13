@@ -1,0 +1,15 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "head": "2f451838e0d58df6b52024dd9db1062f60d8bf2b",
+  "base_manifest_sha256": "e36fa2d9275c8fbbb17b3174866232903ddb20645afdde8dc586b9ec6b90ab03",
+  "current_manifest_sha256": "852afdfc5de0836eba784eccb11ac6de10a7edc7862dbd922822eeda0979e60a",
+  "added_node": "metric_clock_reconstruction_bounded_theorem_note_2026-10-13",
+  "node": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+  },
+  "unchanged_old_nodes": 7023,
+  "unchanged_edge_count": 15805,
+  "source_meaning": "No repository theorem parents; self-contained supplied action and explicit physical premises.",
+  "pipeline_run": false
+}

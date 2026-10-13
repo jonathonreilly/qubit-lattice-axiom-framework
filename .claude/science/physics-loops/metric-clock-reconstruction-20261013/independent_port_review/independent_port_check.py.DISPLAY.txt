@@ -1,0 +1,377 @@
+#!/usr/bin/env python3
+"""Scoped reviewer checks for the immutable metric/clock port; no author imports."""
+from __future__ import annotations
+import ast
+import base64
+import collections
+import datetime
+import difflib
+import hashlib
+import io
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+import tarfile
+import time
+import traceback
+
+OUT = Path(__file__).resolve().parent
+PACK = OUT.parent
+WORK = PACK.parents[3]
+BASE = "516cb69d8487ff04f8a48e065d3dcbe71d7dd237"
+HEAD = "2f451838e0d58df6b52024dd9db1062f60d8bf2b"
+NOTE = "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+RUNNER = "scripts/metric_clock_reconstruction_2026_10_13.py"
+CACHE = "logs/runner-cache/metric_clock_reconstruction_2026_10_13.txt"
+RECORD = {"started_at": datetime.datetime.now(datetime.timezone.utc).isoformat()}
+for key in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS",
+            "VECLIB_MAXIMUM_THREADS"):
+    os.environ[key] = "1"
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def readj(path):
+    return json.loads(Path(path).read_text())
+
+def save(name, value):
+    with (OUT/name).open("x") as f:
+        f.write(json.dumps(value, indent=2, allow_nan=False)+"\n")
+
+def identity(path):
+    body = Path(path).read_bytes()
+    return {"path": str(path), "sha256": sha(body), "bytes": len(body)}
+
+def command(args):
+    return subprocess.run(args, cwd=WORK, capture_output=True, check=True).stdout
+
+def source_inventory():
+    freeze = readj(OUT/"REVIEW_INPUT_FREEZE_v1.json")
+    original_freeze = readj(OUT/"SOURCE_FREEZE_v1.json")
+    initial = readj(OUT/"INITIAL_STAGING_v1.json")
+    commit_tree = command(["git", "rev-parse", HEAD+"^{tree}"]).decode().strip()
+    assert commit_tree == "3dde95713fafb4d48c72bcfc673d2d121018cdc5"
+    assert command(["git", "rev-parse", HEAD+"^"]).decode().strip() == BASE
+    staged = set(initial["paths"])
+    assert staged == {e["path"] for e in freeze["files"]}
+    archive = command(["git", "archive", "--format=tar", HEAD, "--", *sorted(staged)])
+    committed = {}
+    with tarfile.open(fileobj=io.BytesIO(archive), mode="r:") as tar:
+        for member in tar.getmembers():
+            if member.isfile():
+                committed[member.name] = tar.extractfile(member).read()
+    assert set(committed) == staged
+    current = []
+    for e in freeze["files"]:
+        data = (WORK/e["path"]).read_bytes()
+        snap = (OUT/e["snapshot"]).read_bytes()
+        assert data == snap == committed[e["path"]]
+        assert sha(data) == e["sha256"] and len(data) == e["bytes"]
+        current.append({**e, "original_constituent_commit": HEAD,
+                        "current_sha256": sha(data), "commit_bytes_exact": True,
+                        "disposition": "Retained exact in initial port commit; scoped source/support role in review."})
+    for e in original_freeze["canonical_port_paths"]:
+        assert sha((WORK/e["path"]).read_bytes()) == e["sha256"]
+    d = readj(PACK/"SOURCE_DISPOSITION_v1.json")
+    source_root = Path(d["source_root"])
+    entries = d["entries"]
+    originals = {Path(e["original_path"]) for e in entries}
+    assert len(originals) == len(entries) == 98
+    disk = {q for b in ("direct_tensor_scalar_reconstruction", "direct_scalar_clock_link")
+            for q in (source_root/b).rglob("*") if q.is_file()}
+    extra = disk-originals
+    expected_extra = {source_root/"direct_scalar_clock_link/independent_review"/name
+                      for name in ("REVIEW.md.DISPLAY.txt", "independent_check.py.DISPLAY.txt")}
+    assert extra == expected_extra and not originals-disk
+    archive_entries = readj(PACK/"evidence/ARCHIVAL_BYTES_v1.json")["entries"]
+    dispositions = []
+    for e in entries:
+        original = Path(e["original_path"]).read_bytes()
+        assert sha(original) == e["sha256"] and len(original) == e["bytes"]
+        rel = str(Path(e["original_path"]).relative_to(source_root))
+        if "archive_index" in e:
+            a = archive_entries[e["archive_index"]]
+            recovered = base64.b64decode(a["base64"], validate=True)
+            assert a["original_relative_path"] == rel
+            assert recovered == original and sha(recovered) == a["sha256"]
+            assert len(recovered) == a["bytes"]
+            display = (PACK/e["display_path"]).read_bytes()
+            assert display == original.rstrip(b"\n")+b"\n"
+            assert display != original and not e["display_is_original"]
+            assert Path(e["original_path"]+".DISPLAY.txt").read_bytes() == display
+            route = "lossless_base64_original; separately labelled EOF-normalized display"
+            target = str(PACK/"evidence/ARCHIVAL_BYTES_v1.json")+"#entries/"+str(e["archive_index"])
+        elif "local_recovery" in e:
+            recovered = Path(e["local_recovery"]).read_bytes()
+            assert recovered == original and not (PACK/e["recovery_path"]).exists()
+            route = "primary_page_local_only; identity checked, no new full-paper reading claimed"
+            target = e["local_recovery"]
+        else:
+            recovered = (PACK/e["recovery_path"]).read_bytes()
+            assert recovered == original
+            route = "exact_original_recovery"
+            target = str(PACK/e["recovery_path"])
+        dispositions.append({
+            "original_path": e["original_path"], "original_sha256": e["sha256"],
+            "bytes": e["bytes"], "current_recovery": target,
+            "current_recovered_sha256": sha(recovered), "byte_identity_verified": True,
+            "reviewer_disposition": route,
+            "proof_role": ("historical_independent_check" if "/independent_review/" in rel
+                           else "original_argument_or_execution_and_scope")})
+    save("REVIEWER_ORIGINAL_DISPOSITIONS_v1.json", {
+        "reviewer": "/root/direct_quantum_visibility_review", "original_sources": dispositions,
+        "counts": dict(collections.Counter(x["reviewer_disposition"] for x in dispositions)),
+        "complete_original_inventory": True,
+        "additional_derived_displays": [identity(q) for q in sorted(extra)]})
+    save("REVIEWER_PORT_DISPOSITIONS_v1.json", {
+        "base": BASE, "initial_constituent": HEAD, "tree": commit_tree, "paths": current,
+        "scope": "Exact initial 124-path port; current-main integration and later metadata remain separate."})
+    return {"initial_port_paths": len(current), "original_constituent_paths": len(dispositions),
+            "derived_original_tree_display_files": len(extra), "tree": commit_tree,
+            "runtime_freeze_paths": len(original_freeze["canonical_port_paths"])}
+
+def function_text(source, name):
+    lines = source.splitlines(keepends=True)
+    node = next(n for n in ast.parse(source).body
+                if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) and n.name == name)
+    start = min([node.lineno]+[x.lineno for x in node.decorator_list])-1
+    return "".join(lines[start:node.end_lineno])
+
+def transfer_checks():
+    mapping = readj(PACK/"PORT_MAP_v1.json")
+    canonical = (WORK/RUNNER).read_text()
+    functions = []
+    for e in mapping["unchanged_function_text"]:
+        original = function_text(Path(e["original_path"]).read_text(), e["name"])
+        current = function_text(canonical, e["name"])
+        assert original == current and sha(original.encode()) == e["function_sha256"]
+        functions.append({"name": e["name"], "sha256": sha(current.encode()),
+                          "text_identical_including_decorators": True})
+    text = (WORK/NOTE).read_text()
+    proofs = []
+    for block, name, heading in [
+        ("direct_tensor_scalar_reconstruction", "DIRECT_RECONSTRUCTION.md",
+         "A common tensor/scalar action reconstructed from three observable channels"),
+        ("direct_scalar_clock_link", "DIRECT_SCALAR_CLOCK_LINK.md",
+         "One scalar coupling: static force, clock phase and reference geometry")]:
+        original = (PACK/"source_recovery"/block/name).read_text()
+        promoted = "\n".join("#"+line if line.startswith("#") else line
+                              for line in original.splitlines())+"\n"
+        assert promoted in text
+        first = text[:text.index(promoted)].count("\n")+1
+        proofs.append({"original": str(PACK/"source_recovery"/block/name),
+                       "heading": heading, "canonical_start_line": first,
+                       "canonical_end_line": first+promoted.count("\n")-1,
+                       "complete_proof_exact_except_heading_depth": True})
+    failed = (PACK/"evidence/CANONICAL_RUNNER_FAILED_v1.py.snapshot").read_text()
+    insertion = "    families={name:bool(passed) for name,passed in families.items()}\n"
+    assert canonical == failed.replace("    assert len(families)==14", insertion+"    assert len(families)==14", 1)
+    fix = readj(PACK/"evidence/CANONICAL_WRAPPER_FIX_v2.json")
+    assert sha(failed.encode()) == fix["before_sha256"]
+    assert sha(canonical.encode()) == fix["after_sha256"]
+    imports = []
+    for n in ast.walk(ast.parse(canonical)):
+        if isinstance(n, ast.Import): imports.extend(x.name for x in n.names)
+        elif isinstance(n, ast.ImportFrom): imports.append(n.module)
+    assert not any("reconstruction" in (x or "") for x in imports)
+    return {"functions": functions, "complete_proofs": proofs, "imports": imports,
+            "failed_v1_to_current_v2_change": "one built-in-bool normalization line only",
+            "read_closure": [NOTE, RUNNER], "historical_runner_imports": False}
+
+def comparisons():
+    f = readj(PACK/"source_recovery/direct_tensor_scalar_reconstruction/evidence_v1/RESULTS.json")
+    c = readj(PACK/"source_recovery/direct_scalar_clock_link/evidence_v1/RESULTS.json")
+    p = readj(PACK/"evidence/CANONICAL_RESULT_v2.json")
+    sections = [("field_symbolic", f["symbolic"], p["field_symbolic"])]
+    sections += [("field/"+key, f[key], p["field"][key]) for key in p["field"]]
+    sections += [("clock_grid", c["grid"], p["clock_grid"]),
+                 ("clock_static_plateau", c["plateau"], p["clock_static_plateau"]),
+                 ("clock_oscillators", c["finite_oscillator_rows"], p["clock_oscillators"]),
+                 ("illustrative_SI", c["illustrative_SI"], p["illustrative_SI"])]
+    counts = collections.Counter()
+    leaves = []
+    def compare(a, b, path):
+        assert type(a) is type(b), (path, type(a), type(b))
+        if isinstance(a, dict):
+            assert a.keys() == b.keys(), path
+            for k in a: compare(a[k], b[k], path+"/"+str(k))
+        elif isinstance(a, list):
+            assert len(a) == len(b), path
+            for i, (x, y) in enumerate(zip(a, b)): compare(x, y, path+"/"+str(i))
+        else:
+            assert a == b, (path, a, b)
+            category = "numeric" if isinstance(a, (float, int)) else "other"
+            counts[category] += 1
+            if isinstance(a, bool): counts["booleans_in_numeric_count"] += 1
+            leaves.append({"path": path, "value": a, "unchanged": True})
+    for label, a, b in sections: compare(a, b, label)
+    rect = f["illustrative_rectangle"]
+    pairs = [("gamma_lower","gamma_lower"), ("max_a","max_a"),
+             ("max_scalar_force_fraction","max_scalar_fraction"),
+             ("circular_ratio_lower","circular_ratio_lower"),
+             ("confidence_interval_claim","confidence_interval")]
+    for old, new in pairs:
+        assert rect[old] == p["working_rectangle"][new]
+    assert rect["model_gamma_upper"] == "1" and rect["original_gamma_upper"] == "2501/2500"
+    save("RESULT_LEAF_DISPOSITION_v1.json", {
+        "counts": dict(counts), "leaves": leaves,
+        "rectangle_renamings": pairs,
+        "rectangle_upper_endpoints": {"old_exposed_upper": rect["original_gamma_upper"],
+          "model_upper": rect["model_gamma_upper"], "preserved_in_recovery_and_full_note": True},
+        "wrappers": "Old timestamps, source identities, summaries and scopes remain exact in recovery; new canonical wrapper honestly labels combined scope."})
+    assert p["checks_passed"] == 14 and p["checks_failed"] == 0
+    assert all(p["check_families"].values())
+    for rel, digest in p["input_identities"].items():
+        assert sha((WORK/rel).read_bytes()) == digest
+    return {"scientific_result_leaf_counts": dict(counts), "all_original_sections_exact": True,
+            "canonical_families": p["check_families"], "wrapper_scope_preserved": True}
+
+def independent_mathematics():
+    import math
+    import sympy as s
+    from scipy.integrate import quad
+    # Exact orbital second harmonics from cos/sin Fourier coefficients.
+    rr = s.Matrix([[1,-s.I,0],[-s.I,-1,0],[0,0,0]])/4
+    dust, stress = -rr, -rr
+    norm2 = lambda m: s.simplify(s.trace(s.conjugate(m).T*m))
+    amplitude_squared = s.simplify(norm2(dust)/norm2(dust+stress))
+    assert amplitude_squared == s.Rational(1,4)
+    assert dust-stress == s.zeros(3)
+    # Independent radial Green-kernel differentiation.
+    x,y,z,G,m1,m2 = s.symbols("x y z G m1 m2", real=True)
+    r = s.sqrt(x*x+y*y+z*z); rv = s.Matrix([x,y,z])
+    green = -r/(8*s.pi)
+    interaction = -16*s.pi**2*G**2*m1*m2*s.hessian(green,(x,y,z))
+    expected = 2*s.pi*G**2*m1*m2*(s.eye(3)/r-rv*rv.T/r**3)
+    assert s.simplify(interaction-expected) == s.zeros(3)
+    crossstress = (interaction+interaction.T-s.eye(3)*s.trace(interaction))/(4*s.pi*G)
+    assert s.simplify(crossstress+G*m1*m2*rv*rv.T/r**3) == s.zeros(3)
+    # Exact rotational averages, with no Gauss-sphere runner.
+    n = s.Matrix(s.symbols("n0:3")); M = s.Matrix([[2,3,1],[3,-1,2],[1,2,-1]])
+    square = s.trace(M*M); scalar = (n.T*M*n)[0]**2
+    def average(poly):
+        result=0
+        for powers, coeff in s.Poly(s.expand(poly),*n).terms():
+            if any(v%2 for v in powers): continue
+            numerator=s.prod(s.factorial2(v-1) for v in powers)
+            result += coeff*numerator/s.factorial2(sum(powers)+1)
+        return s.simplify(result)
+    ttnorm = square-2*(n.T*M*M*n)[0]+scalar/2
+    assert average(scalar) == s.Rational(2,15)*square
+    assert average(ttnorm) == s.Rational(2,5)*square
+    a,GN,hbar,c,omega = s.symbols("a GN hbar c omega", positive=True)
+    gamma=(1-a)/(1+a); f=a/(1+a); gs=GN/(1+a)
+    circ=s.factor((1+a/6)/(1+a))
+    assert s.simplify(circ-(7+5*gamma)/12)==0
+    assert s.simplify(circ-(1-5*f/6))==0
+    assert circ.subs(a,1)==s.Rational(7,12)
+    assert (1+a/6).subs(a,1)==s.Rational(7,6)
+    K=s.Matrix([[2,1],[1,3]]);alpha=s.Matrix([s.Rational(2,5),-s.Rational(3,7)])
+    invariant=(alpha.T*K.inv()*alpha)[0]
+    S=s.Matrix([[2,3],[-1,1]])
+    assert s.simplify(((S.T*alpha).T*(S.T*K*S).inv()*(S.T*alpha))[0]-invariant)==0
+    assert (s.Matrix([1,-1]).T*s.eye(2)*s.Matrix([1,-1]))[0]==2
+    # Canonical mode covariance -> angular/on-shell spectrum with every Jacobian.
+    spectrum=(4*s.pi*gs*hbar*a/c**2)*(4*s.pi/(2*s.pi)**3)*(
+        (omega/c)**2/(2*c*(omega/c)))*(2*s.pi/c)
+    assert s.simplify(spectrum-2*GN*f*hbar*omega/c**5)==0
+    # A fresh positive integral for the deliberately false independent-bath limit.
+    independent,err=quad(lambda u:2*math.exp(-u*u)*(1-math.cos(u))/u if u else 0.,
+                         0.,12.,epsabs=1e-13,epsrel=1e-13)
+    assert independent>.4 and err<1e-12
+    # Identical-center difference source is identically zero before all integration.
+    q=s.symbols("q",real=True)
+    assert s.exp(s.I*q)-s.exp(s.I*q)==0
+    return {"omitted_stress_amplitude_ratio":"1/2", "omitted_stress_power_ratio":str(amplitude_squared),
+            "reversed_stress_second_harmonic":"zero exactly",
+            "Green_crossstress":"-G m1 m2 r_i r_j/r^3",
+            "exact_TT_sphere_average_over_S_squared":str(average(ttnorm)/square),
+            "exact_scalar_sphere_average_over_S_squared":str(average(scalar)/square),
+            "fixed_GN_circular_a1":"7/12","incorrect_fixed_Gstar_a1":"7/6",
+            "mixed_basis_invariant":str(invariant),"opposite_components_positive_norm":"2",
+            "clock_spectrum":"2 G_N f_scalar hbar omega/c^5 before Gaussian profile",
+            "same_coefficient_Gstar_a_equals_GN_f":True,
+            "zero_separation_difference":"zero exactly",
+            "false_independent_bath_chi_over_kappa_at_x1":independent,
+            "positive_integral_quadrature_estimate":err}
+
+def cache_check():
+    text=(WORK/CACHE).read_text()
+    header=text.split("----- stdout -----")[0]
+    assert "runner_sha256: "+sha((WORK/RUNNER).read_bytes()) in header
+    rel=NOTE.encode();body=(WORK/NOTE).read_bytes()
+    fingerprint=hashlib.sha256(b"runner-cache-input-fingerprint-v1\0")
+    fingerprint.update(len(rel).to_bytes(8,"big"));fingerprint.update(rel)
+    fingerprint.update(len(body).to_bytes(8,"big"));fingerprint.update(body)
+    assert "input_fingerprint_sha256: "+fingerprint.hexdigest() in header
+    assert "status: ok" in header and "exit_code: 0" in header
+    cache_stdout=text.split("----- stdout -----\n",1)[1].split("\n----- stderr -----",1)[0].rstrip("\n")+"\n"
+    assert cache_stdout==(PACK/"evidence/CANONICAL_RUN_v2.stdout").read_text()
+    return {"runner_sha256":sha((WORK/RUNNER).read_bytes()),
+            "note_sha256":sha(body),"declared_input_fingerprint":fingerprint.hexdigest(),
+            "fresh_against_exact_frozen_input":True,"cache_stdout_matches_executed_stdout":True}
+
+def cli_checks():
+    sandbox=OUT/"cli_fixture"
+    for rel in [NOTE,RUNNER]:
+        target=sandbox/rel;target.parent.mkdir(parents=True,exist_ok=True)
+        with target.open("xb") as f:f.write((WORK/rel).read_bytes())
+    logs=OUT/"cli_logs";logs.mkdir()
+    executions=[]
+    env=dict(os.environ);env["PYTHONDONTWRITEBYTECODE"]="1"
+    def run(label,args,expected):
+        start=time.monotonic()
+        result=subprocess.run([sys.executable,"-B",str(sandbox/RUNNER),*args],
+            cwd=sandbox,capture_output=True,timeout=120,env=env)
+        (logs/(label+".stdout")).write_bytes(result.stdout)
+        (logs/(label+".stderr")).write_bytes(result.stderr)
+        executions.append({"label":label,"arguments":args,"exit":result.returncode,
+                           "expected_exit":expected,"elapsed_seconds":time.monotonic()-start,
+                           "stdout_sha256":sha(result.stdout),"stderr_sha256":sha(result.stderr)})
+        assert result.returncode==expected,(label,result.returncode,result.stderr.decode())
+        if expected==0: assert not result.stderr
+        return result
+    first=run("default_1",[],0);second=run("default_2",[],0)
+    assert first.stdout==second.stdout==(PACK/"evidence/CANONICAL_RUN_v2.stdout").read_bytes()
+    combined=run("json_and_exclusive_output",["--json","--output-json","fresh_result.json"],0)
+    data=(sandbox/"fresh_result.json").read_bytes()
+    assert data==combined.stdout
+    actual=json.loads(data);old=readj(PACK/"evidence/CANONICAL_RESULT_v2.json")
+    assert actual==old
+    run("existing_file_refused",["--output-json","fresh_result.json"],1)
+    assert (sandbox/"fresh_result.json").read_bytes()==data
+    assert "FileExistsError" in (logs/"existing_file_refused.stderr").read_text()
+    # Only an isolated copy changes: proves dynamic source IDs, not historical replay.
+    modified=(sandbox/NOTE).read_bytes()+b"\n<!-- reviewer-only freshness fixture -->\n"
+    (sandbox/NOTE).write_bytes(modified)
+    fresh=run("changed_note_fingerprint",["--json"],0)
+    fresh_json=json.loads(fresh.stdout)
+    assert fresh_json["input_identities"][NOTE]==sha(modified)
+    assert fresh_json["input_identities"][NOTE]!=old["input_identities"][NOTE]
+    fresh_json["input_identities"]=old["input_identities"]
+    assert fresh_json==old
+    return {"executions":executions,"repeatable_default":True,"json_matches_file_from_same_run":True,
+            "all_current_result_fields_reproduced":True,
+            "existing_result_byte_preserving_refusal":True,
+            "copied_note_change_updates_input_hash":True,
+            "scientific_body_or_canonical_source_mutated":False,
+            "expected_nonzero_exit_is_guard_test_not_science_failure":True}
+
+try:
+    RECORD["inventory"]=source_inventory()
+    RECORD["transfer"]=transfer_checks()
+    RECORD["result_comparison"]=comparisons()
+    RECORD["independent_math"]=independent_mathematics()
+    RECORD["cache"]=cache_check()
+    RECORD["cli"]=cli_checks()
+    RECORD["status"]="PASS scoped source port"
+except Exception:
+    RECORD["status"]="FAIL reviewer check"
+    RECORD["exception"]=traceback.format_exc()
+    raise
+finally:
+    RECORD["finished_at"]=datetime.datetime.now(datetime.timezone.utc).isoformat()
+    save("INDEPENDENT_PORT_RESULTS_v1.json",RECORD)
+    print(json.dumps({k:v for k,v in RECORD.items() if k not in ("transfer","result_comparison","cli")},indent=2))

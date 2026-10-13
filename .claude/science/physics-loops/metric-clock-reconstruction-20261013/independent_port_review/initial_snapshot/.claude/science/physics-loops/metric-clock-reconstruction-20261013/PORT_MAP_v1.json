@@ -1,0 +1,131 @@
+{
+  "canonical_note": "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+  "canonical_runner": "scripts/metric_clock_reconstruction_2026_10_13.py",
+  "source_blocks": [
+    "direct_tensor_scalar_reconstruction",
+    "direct_scalar_clock_link"
+  ],
+  "unchanged_function_text": [
+    {
+      "name": "symbolic_operator",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "original_line": 21,
+      "function_sha256": "69af7cbfb25783d441580c9e9ce04bcbc8232c2ea8e560c2585f628873b281ae",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "field_examples",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "original_line": 91,
+      "function_sha256": "f272a4dbc904abce8baede8632ceb541b24c1126046c4aa6ec06206436ae63cb",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "moment",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "original_line": 114,
+      "function_sha256": "635e1d733c64ddab174f60c916ad4b69c8566bbfc95721dada0ec504122d515d",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "tt",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "original_line": 128,
+      "function_sha256": "032f189fed116a43298130ec3f96ae0f414572d8640e3bcc37b201aae8aff388",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "sphere_flux",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "original_line": 133,
+      "function_sha256": "14abe5f45f748a072738b445a123a769f7f0bef32a07dca69c6d0620d613cec0",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "numerical_checks",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/check_reconstruction.py",
+      "original_line": 148,
+      "function_sha256": "0a59ec3b4ddadb89c03c31379248fc1dd60200b675f97637676bd76eb06c3178",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "F",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 25,
+      "function_sha256": "05d6cad6ee7e6e26b4aa8c5281c0f2da06f27fddd59e886f3d74fae20c066cbb",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "dawson",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 31,
+      "function_sha256": "8673a5d142f947fe8dec85789c2ac9f1efa7bdbb8f53244b88e90819cb027483",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "H",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 35,
+      "function_sha256": "a4a082a53ebab82ad7503a8cf2e0cd02ab3efefc643e4e5e0eb493c964a5f310",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "J",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 40,
+      "function_sha256": "130d2dc6fa27a1de625556dce708b24d83d89ede730f7bb6c7dcd9815409dca4",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "D",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 45,
+      "function_sha256": "43ef5f26a4ca00c0d2a8f011a8b84979b12ccd2ebf47e1f9afe581e869c5e9a2",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "temporal",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 52,
+      "function_sha256": "04e5b3e571a15a24a7bdee1c01448efb769e638677325afcda1304eecff70f28",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "direct_channel",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 59,
+      "function_sha256": "ed39b5e2df113d56a4015eae16dec069ba90662fa1abec08c31ed712ddf503e6",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "numerical_grid",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 69,
+      "function_sha256": "a0d17430b9291d08bf7e9dac7509301eb8a33a54d2910878b7841866c4c8163b",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "plateau_and_static",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 114,
+      "function_sha256": "8c45b0f6fffd7a37c05b255c066ba569f4cb96ef32950a6c537e99f164c7e26e",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "finite_oscillators",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 144,
+      "function_sha256": "1c34582505b4bc4b943489ca6f580c4619f035a5350b4fbefd5506fcf44c355f",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    },
+    {
+      "name": "si_grid",
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_scalar_clock_link/check_scalar_clock_link.py",
+      "original_line": 172,
+      "function_sha256": "f4e397f7b258070cabea4e8bda00d0d6dbdd36858cd2f95ddc5b95065a03a89a",
+      "port": "Exact text body, including decorators; only wrapper and imports replaced."
+    }
+  ],
+  "wrapper_changes": "Imports, CLI, source hashes, one combined result object, deterministic default stdout and five explicit false-formula controls. Original result paths never written.",
+  "mathematical_source_changes": "No existing function formula body changed. Supplementary field-stress and canonical-normalization proof paragraphs integrate already checked independent derivations."
+}

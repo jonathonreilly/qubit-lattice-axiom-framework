@@ -1,0 +1,25 @@
+{
+  "scientific_assertion_failures": [],
+  "author_runner_imported_or_executed": false,
+  "source_versions_preserved": [
+    "snapshots_v1/check_reconstruction.py",
+    "EXECUTED_CHECKER_v1.py.snapshot"
+  ],
+  "operational_events": [
+    {
+      "event": "Combined source/results tool output exceeded display budget.",
+      "resolution": "Complete runner remained visible; missing flux rows12-19 and waveform rows0-39 reread in a separate bounded call. All result rows also independently reconciled."
+    },
+    {
+      "event": "Direct official IHES PDF web opening returned Internal Error.",
+      "resolution": "Read exact existing local PDF; SHA256 and length matched the source ledger. Rendered relevant pages retained."
+    }
+  ],
+  "scope_limits": [
+    "Numerical formula checks are not bounds on omitted PN, finite-body or detector corrections.",
+    "Zero residual source-body sensitivity is a stipulated limit, not derived.",
+    "No formal audit or retained-grade decision."
+  ],
+  "all_new_writes_within": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review",
+  "at": "2026-10-13T01:01:07.716469+00:00"
+}

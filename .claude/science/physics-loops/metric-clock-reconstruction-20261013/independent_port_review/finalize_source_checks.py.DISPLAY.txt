@@ -1,0 +1,66 @@
+from pathlib import Path
+import hashlib,json,subprocess,datetime
+out=Path(__file__).resolve().parent;p=out.parent;w=p.parents[3]
+def sha(b):return hashlib.sha256(b).hexdigest()
+def save(n,d):
+ with (out/n).open('x') as f:json.dump(d,f,indent=2);f.write('\n')
+base='516cb69d8487ff04f8a48e065d3dcbe71d7dd237'
+head='2f451838e0d58df6b52024dd9db1062f60d8bf2b'
+manifest='docs/audit/data/citation_graph_manifest.json'
+original_bytes=subprocess.run(['git','show',base+':'+manifest],cwd=w,capture_output=True,check=True).stdout
+old=json.loads(original_bytes);new=json.loads((w/manifest).read_text())
+node='metric_clock_reconstruction_bounded_theorem_note_2026-10-13'
+assert set(new['nodes'])-set(old['nodes'])=={node}
+assert not set(old['nodes'])-set(new['nodes'])
+assert all(new['nodes'][k]==v for k,v in old['nodes'].items())
+assert new['nodes'][node]=={'deps_hash':'e3b0c44298fc','out_degree':0}
+assert new['edge_count']==old['edge_count']==15805
+assert new['node_count']==old['node_count']+1==7024
+save('GRAPH_DELTA_CHECK_v1.json',{'base':base,'head':head,'base_manifest_sha256':sha(original_bytes),
+ 'current_manifest_sha256':sha((w/manifest).read_bytes()),'added_node':node,
+ 'node':new['nodes'][node],'unchanged_old_nodes':len(old['nodes']),
+ 'unchanged_edge_count':15805,'source_meaning':'No repository theorem parents; self-contained supplied action and explicit physical premises.','pipeline_run':False})
+freeze=json.loads((out/'REVIEW_INPUT_FREEZE_v1.json').read_text())
+checks=[]
+for e in freeze['files']:
+ b=(w/e['path']).read_bytes()
+ assert sha(b)==e['sha256']
+ checks.append({'path':e['path'],'sha256':sha(b),'bytes':len(b),'unchanged':True})
+save('FINAL_SOURCE_CONFIRMATION_v1.json',{'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ 'initial_constituent':head,'tree':'3dde95713fafb4d48c72bcfc673d2d121018cdc5',
+ 'all_124_sources_unchanged':True,'paths':checks})
+note='docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md'
+orig='source_recovery/'
+claims=[
+ {'id':'action_modes_exchange','original_argument':orig+'direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md',
+  'canonical_range':'52-122','disposition':'retained complete with heading depth only',
+  'premises':'Einstein metric; finite dimensionless scalar multiplet; constant positive K and constant universal alpha; supplied matter action; linear Minkowski vacuum',
+  'checked':'Full field variation, stress exchange, full metric quotient and TT/scalar quadratic positivity; independent tensor report/derivation read and source-bound; no nonlinear positivity or microscopic action origin.'},
+ {'id':'weak_static_bending_invariant','original_argument':orig+'direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md',
+  'canonical_range':'124-165','disposition':'retained complete with heading depth only',
+  'premises':'Weak unscreened massless universal coupling; leading inertial source identification',
+  'checked':'G_N=Gstar(1+a), gamma=(1-a)/(1+a), nonnegative invariant and field redefinitions, source and optical calibration; rectangle only an exposed illustration.'},
+ {'id':'leading_circular_radiation','original_argument':orig+'direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md',
+  'canonical_range':'167-286','disposition':'retained complete with heading depth only',
+  'premises':'Weak slow circular adiabatic point limit, self terms subtracted and zero residual body sensitivities; retarded sourced field; fixed common G_N and same comparison trajectory',
+  'checked':'Combined field stress and conserved leading source; scalar ordering; ideal tides and angular patterns; P_S/P_T=a/6; R=(7+5gamma)/12; no eccentric or compact-body extension.'},
+ {'id':'canonical_clock_source_and_state','original_argument':orig+'direct_scalar_clock_link/DIRECT_SCALAR_CLOCK_LINK.md',
+  'canonical_range':'288-394','disposition':'retained complete with heading depth only',
+  'premises':'Free canonically quantized scalar sector; Minkowski Gaussian vacuum; identical prescribed Gaussian clocks; linear coupling, factorized initial state, ideal logical controls/readout',
+  'checked':'Canonical normalization and c powers, static E source and Gaussian potential, balanced source and common identity coupling, exact Gaussian influence and spatial difference spectrum; no physical preparation/quantum-state inference.'},
+ {'id':'exact_clock_functions_and_bounds','original_argument':orig+'direct_scalar_clock_link/DIRECT_SCALAR_CLOCK_LINK.md',
+  'canonical_range':'396-509','disposition':'retained complete with heading depth only',
+  'premises':'Same supplied clock model, ell>0, fixed finite d for plateau, SI constants and exposed f<=1/2500 only for illustrative scaling',
+  'checked':'F/J/D, Ramsey/echo factors and asymptotics, distinct order of limits, CP, analytic all-time bounds, classical Gaussian visibility degeneracy; prior full own review reused unchanged.'},
+ {'id':'port_supplements_and_reporting','original_argument':'reviewer derivations and existing original controls',
+  'canonical_range':'511-593','disposition':'new coherent supporting derivation/reporting checked against original reviews',
+  'premises':'Same existing premises; no new hidden normalization',
+  'checked':'Green-kernel interaction stress, canonical q transform, Gaussian packet overlap, finite control counts, original numerical results, physical caveats and primary-source reading limits.'}]
+for c in claims:c['canonical_note']=note;c['canonical_note_sha256']=sha((w/note).read_bytes())
+save('CLAIM_DISPOSITIONS_v1.json',{'reviewer':'/root/direct_quantum_visibility_review',
+ 'claims':claims,'no_source_claim_deleted':True,'new_framework_premise_registered':False,
+ 'unrelated_route_adoption':False,'formal_no_go_packet_required':False,
+ 'no_go_reason':'Constructive conditional realization plus exact invariant/bounds; no failed-search exhaustion or general impossibility/route-closure claim.',
+ 'current_main_combined_gate':'not run; parent responsibility on final candidate',
+ 'landing_authorized':False,'formal_audit':False})
+print('PASS exact graph delta, 124 final source identities, six claim dispositions.')

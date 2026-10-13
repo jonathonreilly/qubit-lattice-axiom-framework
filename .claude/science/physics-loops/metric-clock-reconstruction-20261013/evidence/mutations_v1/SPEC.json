@@ -1,0 +1,75 @@
+{
+  "scope": "Fourteen independent scratch-source changes, one per family, applied to exact reviewed runner before each execution; no assertion edits.",
+  "specs": [
+    {
+      "family": "metric_symbol_and_scalar_stress",
+      "old": "return sp.simplify(ric-eta*sp.trace(eta*ric)/2)",
+      "new": "return sp.simplify(ric-eta*sp.trace(eta*ric)/3)"
+    },
+    {
+      "family": "positive_scalar_norm_and_basis_changes",
+      "old": "kp, ap = S.T*K*S, S.T*alpha",
+      "new": "kp, ap = 2*S.T*K*S, S.T*alpha"
+    },
+    {
+      "family": "circular_tensor_scalar_flux",
+      "old": "hd = 2*gs/(c**4*distance)*tt(S, n)",
+      "new": "hd = 3*gs/(c**4*distance)*tt(S, n)"
+    },
+    {
+      "family": "physical_wave_patterns_and_tides",
+      "old": "p@h@q, 2*zeta])/H0",
+      "new": "p@h@q, 3*zeta])/H0"
+    },
+    {
+      "family": "static_lensing_integrals",
+      "old": "quad(lambda z:2*gs*mass*b/(c*c*(b*b+z*z)**1.5)",
+      "new": "quad(lambda z:3*gs*mass*b/(c*c*(b*b+z*z)**1.5)"
+    },
+    {
+      "family": "exact_working_rectangle_and_angular_refinement",
+      "old": "fmax=(1-lo)/2;rmin",
+      "new": "fmax=(1-lo)/3;rmin"
+    },
+    {
+      "family": "clock_two_center_channels",
+      "old": "form = (4*np.sin(.5*d*u[:, None]*z[None, :])**2)",
+      "new": "form = (3*np.sin(.5*d*u[:, None]*z[None, :])**2)"
+    },
+    {
+      "family": "clock_radial_angular_refinements",
+      "old": "u, wr = 6*(t+1), 6*w",
+      "new": "u, wr = 6*(t+1)*(1.01 if nrad==192 else 1), 6*w"
+    },
+    {
+      "family": "clock_single_reference",
+      "old": "np.exp(-u*u)*2*np.sin(x*u/2)**2/u",
+      "new": "np.exp(-u*u)*3*np.sin(x*u/2)**2/u"
+    },
+    {
+      "family": "static_gaussian_interaction_and_plateau",
+      "old": "static, static_err = quad(lambda u:np.exp(-u*u)*np.sinc(d*u/np.pi)",
+      "new": "static, static_err = quad(lambda u:1.01*np.exp(-u*u)*np.sinc(d*u/np.pi)"
+    },
+    {
+      "family": "late_time_rows",
+      "old": "normalized = float(2*D(x, d))",
+      "new": "normalized = float(3*D(x, d))"
+    },
+    {
+      "family": "finite_oscillator_visibility",
+      "old": "hp, hm = h0+g*(a+a.T)/2, h0-g*(a+a.T)/2",
+      "new": "hp, hm = h0+g*(a+a.T)/3, h0-g*(a+a.T)/2"
+    },
+    {
+      "family": "illustrative_SI_bounds",
+      "old": "kappa = 2*G*h*fraction*nu*nu/c**5",
+      "new": "kappa = 3*G*h*fraction*nu*nu/c**5"
+    },
+    {
+      "family": "sensitivity_to_false_formulas",
+      "old": "d=np.outer(v,v);s=-np.outer(r,r)",
+      "new": "d=np.outer(v,v);s=-2*np.outer(r,r)"
+    }
+  ]
+}

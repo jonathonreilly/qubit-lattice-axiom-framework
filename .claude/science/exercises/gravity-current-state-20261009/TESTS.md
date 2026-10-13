@@ -9472,3 +9472,20 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - **NF-BROKEN:** the symmetry breaks, and the Hessian is ≥ 1e-3 e².
   - **OPEN:** otherwise.
 - **Expectation.** NF-ZERO on strain, then NF-TASTE-WALL overall.
+
+- **Referee records, 2026-10-13 ~21:43Z.** Codex gpt-5.6-sol at xhigh.
+  - **F3: CONFIRMED WITH CORRECTIONS. DRESS-SHIFTS is met on the H-conjugation branch.**
+    - Independent L[G₁] = −0.858582973 e², a* = 0.0141163; L[G₂] = −1.502128 e².
+    - The clover/Pauli remainder mechanism is confirmed.
+    - The literal [V, γ₀] = 0 range-≤NNN branch is DRESS-INVARIANT; S27/S33 add directions.
+    - "Nothing else observed changes" is unproved: vertices, form factors and vacuum polarization move.
+  - **F4: CONFIRMED WITH CORRECTIONS. PATH-SHIFTS is met.**
+    - Independent rerun: ΔJ = +8.884e-5, ΔS2 = +7.083e-4.
+    - J equals the multilinear straight line only for unit-cell hops.
+    - **Material correction:** a positive, cubic, hermitian **local convex** ensemble of repeated closed-loop detours (covariance c_n = 2n² + 2n + 1, mixing n = 11 and 12) reaches H = 0. So the zero needs neither signed weights nor non-locality; it is still tuned and contrived. The "no convex zero" claim is withdrawn.
+  - **F5: CONFIRMED WITH CORRECTIONS. RULE-PARTIAL is met.**
+    - **The Higgs channel's Earth size is correct:** m_g = 5.13 MeV, μ_ρ = 4.8e9, 3.2e38 × F2's Earth coefficient. The apparent conflict with 1.42e-9 eV is just √(ρ_Earth/ρ_mean) scaling (conditional on the TT-pole and BO bridges).
+    - Uniqueness is local and perturbative only.
+    - The knock-on Δμ_E = +1.6894e-2 e_s² per Dirac field is confirmed, and it moves the stored root. A nonlinear retune was not tested.
+    - Multiplicative μ_ρ = 8e-43 is confirmed. The hot-era margins are ~1e7 and 1e5, not ≥ 1e10.
+    - The T₂g singularity is confirmed for F1's frame photon only.

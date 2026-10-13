@@ -1,0 +1,8 @@
+P-J344 H_P 2.424012474155e-02 L 8.879229591811e-05 Q 1.027990192970e-12 roots [-8.63743797e+07 -2.72998925e+02]
+P-S4 H_P 2.423888579022e-02 L 1.134551829607e-03 Q -4.024125361640e-06 roots [301.88978562 -19.95228923]
+P-S32 H_P 2.426239937559e-02 L 1.671583088511e-03 Q -9.679008751890e-06 roots [186.16671678 -13.46482846]
+detour covariance c*=273.998062398429, c11=265, c12=313, theta12=0.187459633301, Hmix=0.000e+00
+
+The P-J quadratic coefficient is exactly zero because the vertex is identical;
+the displayed 1.0e-12 is cancellation/finite-difference roundoff in the stored
+decimal raw integrals.  The physical P-J root is -272.999.

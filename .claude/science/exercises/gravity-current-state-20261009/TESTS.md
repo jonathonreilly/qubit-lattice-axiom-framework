@@ -8459,7 +8459,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OPEN:** otherwise.
 - **Expectation.** V1-RECEIVER under reading A: the frame's zero-inertia constraint becomes a carrier, which is (d-i)'s analogue with the spatial trace freed by X. Otherwise V1-EXCLUDED.
 
-#### C5 referee verdicts R19-20, R19-22 and the R19-24 worker reading (recorded 06:53Z)
+#### C5 referee verdicts R19-20, R19-22 and the R19-24 worker reading (recorded 06:51Z)
 
 - **R19-20 referee: CONFIRMED WITH CORRECTIONS. Reading IRREDUCIBLE** (established by D1 and D2).
   - **What (Σ) is.** Under O_h × T, analyticity and a specified source/Hamiltonian identification, one number-free renormalization rule packages three things: the lowest-state constant, the uniform-strain response, and the linear response through two derivatives.

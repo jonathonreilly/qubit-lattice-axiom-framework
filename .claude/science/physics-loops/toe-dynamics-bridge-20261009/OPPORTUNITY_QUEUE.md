@@ -1,7 +1,8 @@
-# Ranked opportunity queue
+# Ranked opportunity queue after fixed deadline
 
-1. Finish threshold-protocol exposed comparison and exact scope acceptance.
-2. Review accepted postmeasurement source assembly with mandatory J convention precision.
-3. Assemble compact preparation and prepared-state sources at coherent parent bindings.
-4. Preserve physical3D realization/channel-selection and calibrated instrument obligations; do not duplicate existing integrable-kernel lemma.
-5. Fixed deadline164230: finish recovery, release lock and disable heartbeat.
+No automatic continuation. With new authorization:
+
+1. Publish accepted postmeasurement tails, prepared-state/compact-preparation and threshold-protocol composition at exact reconciled canonical parents; preserve sibling ancestry.
+2. Complete or publish graph-interaction-picture sharpening according to its exact final review status; retain all original sufficient estimates and countercontrols.
+3. Attack actual common-H instrument/calibrated embedding and 3D interacting realization/channel selection. Current conditional limits do not discharge these physical premises.
+4. Use scoped Lean obligations where they reduce load-bearing uncertainty; do not treat identity gates or scalar formalization as analytic proof certificates.

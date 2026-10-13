@@ -1,6 +1,6 @@
 {
- "edge_count": 15885,
- "node_count": 7043,
+ "edge_count": 15896,
+ "node_count": 7046,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1838,6 +1838,10 @@
    "deps_hash": "2360df800df3",
    "out_degree": 16
   },
+  "all_time_energy_comparison_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "ddd47276b74a",
+   "out_degree": 6
+  },
   "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14": {
    "deps_hash": "b5763395fdbe",
    "out_degree": 5
@@ -2681,6 +2685,10 @@
   "c_iso_su3_nnlo_closure_bounded_note_2026-05-10_su3nnlo": {
    "deps_hash": "d6a5eeda144b",
    "out_degree": 6
+  },
+  "calibrated_energy_transfer_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "47247d71ff48",
+   "out_degree": 4
   },
   "candidate_assembly_source_linked_graph_eleven_targets_minimal_decision_sets_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
@@ -6061,6 +6069,10 @@
   "endpoint_localization_three_route_discriminator_cycle705_note_2026-07-26": {
    "deps_hash": "4a2a6080dd99",
    "out_degree": 4
+  },
+  "energy_adapted_calibration_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "0b1c457fa92e",
+   "out_degree": 1
   },
   "energy_adapted_refinement_bounded_theorem_note_2026-10-12": {
    "deps_hash": "dc64b7472c92",

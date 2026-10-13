@@ -1,0 +1,17 @@
+{
+  "scope": "Exact reused body alignment; no new full canonical-wrapper mathematical review",
+  "driven": {
+    "source_sha256": "e542889eea6a1cc708874e49e92c87b066ce4a6e539b0b3d7607c86228abb82b",
+    "canonical_file_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+    "canonical_body_sha256": "f14e80f2628aeb5fce225abb13a2fedf04a82d43db36c670f480d70c2cf12a4d",
+    "canonical_line_range": [
+      726,
+      1349
+    ],
+    "historical_body_unchanged_in_archive": true,
+    "precision": "The canonical parent says an initial density supported in the even sector; the archived earlier source says an even initial state. Only the sector-supported interpretation supplies the even excited gap. The calibrated-energy results do not broaden that gap hypothesis.",
+    "diff": "CANONICAL_DRIVEN_PARENT_ALIGNMENT.diff",
+    "diff_context_lines": 3
+  },
+  "other_matches": "Current/Local/Energy canonical bytes equal their archived complete inputs; Smooth534 and Higher750 occur once unchanged in their canonical parents. Higher crosscheck614 remains a separate archived provisional proof input, not a copied canonical core."
+}

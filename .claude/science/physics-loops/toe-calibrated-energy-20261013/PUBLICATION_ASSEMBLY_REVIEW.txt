@@ -1,0 +1,69 @@
+# Root review of calibrated-energy publication source
+
+Disposition: accepted_for_source_integration. This accepts this exact source
+integration package, not a retained audit, new mathematical computation or a
+completed publication runtime. No required wrapper or theorem repair remains.
+
+The package receipt is 5c77ea9a820c0c8ba6b248999481527bf918188e378fb086f44083690ae045b7.
+The prepare/verify program is cc1e6a505954d058b5014bcf5d3897a284cce4ac4ff2eb2faf863086d9e6291a.
+The accepted historical assembly remains 5a6050c11a4c50e449f5996279eb4249f91b28b2a0c1018c221deaf8897d79cc.
+The exact intake is branch physics-loop/toe-calibrated-energy-20261013,
+base f6a820fd66011a50752670a454fb375b420ddbd6, regular parent 9512.
+
+All nine previously read and reviewed cores, 4,182 lines, are unchanged.
+Their exact existing coverage and scientific premises are reused, not counted
+as a new full final-body read. Root read all new publication argument/metadata
+diffs (adcefe), the new identity template140 (19f742), source checker121 and
+combined driver94 (1856b9), the full prepare-driver change163 (6a3149), and
+the changed driver in context (7d6983,74ddf2). The remaining identical driver
+logic reuses the earlier complete 9512 review. Its exact full producer diff
+was reconstructed against template f6daa316. No unchecked changed line is
+hidden by that reuse. Construction scripts not being executed by root remain
+historical provenance; their earlier author invocations are not root outcomes.
+
+The complete new dependency relations, packet handoff, twelve-section review,
+scope, imports, canonical alignment and future combined gate were read in
+b7c6ad, f2a15e, 9533fe, 4650ec and the graph output from the same publication
+read. The first aggregate output was truncated; the omitted packet and parent
+content was recovered in f2a15e/9533fe. The graph's eleven archived relations
+equal the parent registry exactly. Historical exposure fields are expressly
+attributed to the old assembly and are not new independence claims.
+
+Six existing canonical parents and the two consumed same-packet parents have
+the required precise roles. Eleven archived provisional imports are associated
+with owner claims and runner-declared archives, not made retained graph nodes.
+The driven-parent gap uses a density supported in the even sector; merely
+commuting with parity would not suffice. The historical source is preserved
+and its one-line canonical precision is explicitly mapped. The notation-only
+link exclusion is one exact immutable LaTeX factor; no broad scan exception or
+trailing-whitespace exception is accepted.
+
+Root static verification de3a40 checked all 444 bound members plus the receipt,
+the complete 445-file tree, exact full driver diff and unchanged package.
+The read-only source reconstruction actually ran for 0.297835 seconds, exit0,
+with separately saved stdout/stderr and exact program identity. It reconstructed
+three notes and their twelve wrapper transformations, nine cores, 301 aliases,
+241 objects and the specified one-hop closure. Source and publication diffs
+use their exact n=3 producer labels. Three generated identity tools reconstruct
+from the reviewed common template; their actual inputs total296. Prospective
+payload293 and final stage299 are source counts, not a claim of runtime success.
+
+The exact root evidence is CALIBRATED_PUBLICATION_ROOT_STATIC_VERIFICATION.json
+and calibrated_publication_root_static/. It is byte/AST/link/source evidence,
+with zero mathematical predicates. No new identity runner, cache, publication
+driver, full pipeline, staging, commit or PR had run when this review was made.
+
+Root may now execute the frozen prepare program after the repository refresh
+and current source checks succeed. It preserves all failures and exact streams,
+requires actual three identity caches, four corruption controls and the full
+three-node/eleven-edge topology comparison, and leaves staging explicit.
+Verify must compare exact index blobs before and after focused compatibility.
+An empty compatibility checked list verifies no scientific claim.
+
+The separate combined driver is source-reviewed only. It is not authorized
+by this acceptance: a real current-main candidate, cumulative review and exact
+generated-output recovery scope are required before its own acceptance can be
+created. Full cumulative landing validation and independent retained audit
+remain separate. N1/N5 remain pending for any broader negative interpretation;
+the package preserves only its scoped positive theorems and counterexamples.
+No physical axiom, audit verdict, prompt file or platform instruction changed.

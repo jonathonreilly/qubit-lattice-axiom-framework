@@ -1,0 +1,282 @@
+{
+  "utc": "2026-10-13T08:45:59.900028+00:00",
+  "refs": {
+    "HEAD": "f6a820fd66011a50752670a454fb375b420ddbd6",
+    "origin/main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "origin/ai/execution": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "origin/physics-loop/toe-energy-protocol-20261012": "d52ea0184932788d3d031e7207a6bad09114716d",
+    "origin/physics-loop/toe-energy-observables-20261013": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b"
+  },
+  "prs": [
+    {
+      "baseRefName": "physics-loop/toe-corrected-dynamics-20261013",
+      "headRefName": "physics-loop/toe-prepared-energy-20261013",
+      "headRefOid": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "isDraft": false,
+      "number": 9512,
+      "title": "[physics-loop] toe-prepared-energy bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9512"
+    },
+    {
+      "baseRefName": "physics-loop/toe-energy-observables-20261013",
+      "headRefName": "physics-loop/toe-corrected-dynamics-20261013",
+      "headRefOid": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "isDraft": false,
+      "number": 9511,
+      "title": "[physics-loop] corrected-dynamics bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9511"
+    },
+    {
+      "baseRefName": "physics-loop/toe-energy-protocol-20261012",
+      "headRefName": "physics-loop/toe-energy-observables-20261013",
+      "headRefOid": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+      "isDraft": false,
+      "number": 9510,
+      "title": "[physics-loop] energy-observables bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9510"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/metric-clock-reconstruction-20261013",
+      "headRefOid": "fa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9",
+      "isDraft": false,
+      "number": 9509,
+      "title": "[physics-loop] Metric and clock reconstruction under explicit scalar assumptions",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9509"
+    },
+    {
+      "baseRefName": "physics-loop/toe-spatial-control-20261012",
+      "headRefName": "physics-loop/toe-energy-protocol-20261012",
+      "headRefOid": "d52ea0184932788d3d031e7207a6bad09114716d",
+      "isDraft": false,
+      "number": 9508,
+      "title": "[physics-loop] energy-protocol bounded_theorem conditional-support: BV work and prepared states",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9508"
+    },
+    {
+      "baseRefName": "codex/local-vector-response-20261012",
+      "headRefName": "codex/local-vector-matter-readout-20261012",
+      "headRefOid": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+      "isDraft": false,
+      "number": 9507,
+      "title": "[physics-loop] local-vector-matter-readout bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9507"
+    },
+    {
+      "baseRefName": "physics-loop/toe-response-transfer-20261012",
+      "headRefName": "physics-loop/toe-spatial-control-20261012",
+      "headRefOid": "4ff0ff1d7868b24d7854428110512daed13530f9",
+      "isDraft": false,
+      "number": 9506,
+      "title": "[physics-loop] spatial-control bounded_theorem conditional-support: clustering and ground response",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9506"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/local-vector-response-20261012",
+      "headRefOid": "039198fed41d5599341bbcbc7908dcfae1215421",
+      "isDraft": false,
+      "number": 9505,
+      "title": "[physics-loop] local-vector-response bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9505"
+    },
+    {
+      "baseRefName": "physics-loop/toe-bounded-interactions-20261012",
+      "headRefName": "physics-loop/toe-response-transfer-20261012",
+      "headRefOid": "f055a7bee614bd614cf3d387ec60804eb9f7597b",
+      "isDraft": false,
+      "number": 9504,
+      "title": "[physics-loop] toe-response-transfer bounded_theorem conditional-support: excitation response, pulses and temporal transfer",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9504"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/quantum-visibility-reflection-20261012",
+      "headRefOid": "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb",
+      "isDraft": false,
+      "number": 9503,
+      "title": "[physics-loop] sphere-quantum-reflection bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9503"
+    },
+    {
+      "baseRefName": "physics-loop/toe-energy-correlations-20261012",
+      "headRefName": "physics-loop/toe-bounded-interactions-20261012",
+      "headRefOid": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+      "isDraft": false,
+      "number": 9502,
+      "title": "[physics-loop] toe-bounded-interactions bounded_theorem conditional-support: interactions, ground selection and preparation",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9502"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/observations-positive-response-20261012",
+      "headRefOid": "3153d7b2ddceeb26b78f2e1334ffa83218a01333",
+      "isDraft": false,
+      "number": 9501,
+      "title": "[physics-loop] positive-response bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9501"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-energy-correlations-20261012",
+      "headRefOid": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "isDraft": false,
+      "number": 9500,
+      "title": "[physics-loop] toe-energy-correlations: bounded_theorem / conditional-support \u2014 correlations and phase rates",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/toe-finite-energy-20261012",
+      "headRefOid": "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3",
+      "isDraft": false,
+      "number": 9499,
+      "title": "[physics-loop] finite-energy: bounded_theorem / conditional-support \u2014 sector concentration",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9499"
+    }
+  ],
+  "changed_or_new_prs": [
+    {
+      "baseRefName": "physics-loop/toe-corrected-dynamics-20261013",
+      "headRefName": "physics-loop/toe-prepared-energy-20261013",
+      "headRefOid": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "isDraft": false,
+      "number": 9512,
+      "title": "[physics-loop] toe-prepared-energy bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9512"
+    }
+  ],
+  "closed_since_prior": [],
+  "procedures": [
+    {
+      "path": "scripts/runner_cache.py",
+      "prior_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "main_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "worktree_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/vocab_lint.py",
+      "prior_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "main_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "worktree_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/scripts/run_citation_graph_build.py",
+      "prior_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "main_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "worktree_sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "prior_sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "main_sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "worktree_sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "prior_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "main_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "worktree_sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "unchanged": true
+    },
+    {
+      "path": "docs/audit/scripts/check_changed_audit_evidence.py",
+      "prior_sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "main_sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "worktree_sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "prior_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "main_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "worktree_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "prior_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "main_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "worktree_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "prior_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "main_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "worktree_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "prior_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "main_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "worktree_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "prior_sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "main_sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "worktree_sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "unchanged": true
+    },
+    {
+      "path": "AGENTS.md",
+      "prior_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "main_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "worktree_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "prior_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "main_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "worktree_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/workhorse/SKILL.md",
+      "prior_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "main_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "worktree_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "prior_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "main_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "worktree_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "prior_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "main_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "worktree_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "prior_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "main_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "worktree_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "prior_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "main_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "worktree_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged": true
+    }
+  ],
+  "changed_procedures": [],
+  "new_science_adopted": false,
+  "logs": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_sync_0845",
+  "scope": "Ref and publication inventory only; newly changed scientific bodies require a separate read."
+}

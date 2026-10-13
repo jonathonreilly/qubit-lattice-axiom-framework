@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-13T09:02:42.121475+00:00",
+  "freeze_sha256": "5a6050c11a4c50e449f5996279eb4249f91b28b2a0c1018c221deaf8897d79cc",
+  "inventory_members": 294,
+  "exact_file_count": 296,
+  "original_snapshot_pairs": 58,
+  "governing_bindings": 14,
+  "closure_bindings": 435,
+  "unchanged_core_count": 9,
+  "unchanged_core_lines": 4182,
+  "wrapper_lines": 331,
+  "historical_records": [
+    {
+      "path": "evidence/CLOSURE_EXECUTION_01.json",
+      "exit_code": 1,
+      "stdout_sha256": "61a66b826c7d09afb1e55a47a829cd035801e6fa32cd62262901da76cb5f7446"
+    },
+    {
+      "path": "evidence/CLOSURE_EXECUTION_02.json",
+      "exit_code": 0,
+      "stdout_sha256": "19151badb1f278ff328f977bf0e6b2f7ebc54d973b79e72e955834ebeeef6655"
+    },
+    {
+      "path": "evidence/RECONSTRUCTION_EXECUTION_01.json",
+      "exit_code": 0,
+      "stdout_sha256": "407760e81ae353dbdb08df80ca4ca956455086124ff829497965ba49737a4e49"
+    },
+    {
+      "path": "evidence/RECONSTRUCTION_EXECUTION_02.json",
+      "exit_code": 0,
+      "stdout_sha256": "0fb09d86a8afb00857f0a7a2ff47ea8882b0fb4689a1f7af076d68f6f75a4c0c"
+    }
+  ],
+  "reconstruction_execution": {
+    "argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/procedures/reconstruct.py",
+      "--check"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly",
+    "started_utc": "2026-10-13T09:02:41.996250+00:00",
+    "finished_utc": "2026-10-13T09:02:42.121475+00:00",
+    "elapsed_seconds": 0.12416695803403854,
+    "exit_code": 0,
+    "stdout_sha256": "fce00213da8d57a8b3440198e48a004b9cc7c908bfd1a674da9783250a8aa944",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "executed_source_sha256": "fa78507e2ca4aaeec632ac5c24819b56c8114bc90ea44a7f5c60f36b7ec5169f"
+  },
+  "frozen_assembly_unchanged": true,
+  "mathematical_runtime_assertions": 0,
+  "science_audit_verdict": false
+}

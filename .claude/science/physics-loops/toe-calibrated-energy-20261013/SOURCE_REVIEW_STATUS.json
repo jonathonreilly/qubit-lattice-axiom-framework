@@ -1,0 +1,36 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+  "branch": "physics-loop/toe-calibrated-energy-20261013",
+  "disposition": "conditional_calibrated_energy_support_with_exact_supplied_premises_and_preserved_source_scope",
+  "fresh_full_final_core_manual_read": false,
+  "new_canonical_runtime_execution": "not_performed",
+  "new_independent_mathematical_review": false,
+  "new_publication_root_review": "pending",
+  "no_go_packet_pass": false,
+  "prepared_source_freeze_sha256": "5a6050c11a4c50e449f5996279eb4249f91b28b2a0c1018c221deaf8897d79cc",
+  "source_assembly_root_acceptance_sha256": "59748dd96d0c3f43d6683708fed75d99e65d220b594d4c85c15768a586e4f17f",
+  "source_assembly_root_review_sha256": "eefb81f695a4cbd156eec9868be7f2ef5744c81582865b390f296691e3b9bcbe",
+  "source_review_coverage_verbatim": {
+    "assembly_freeze_sha256": "5a6050c11a4c50e449f5996279eb4249f91b28b2a0c1018c221deaf8897d79cc",
+    "disposition": "source assembly accepted for publication preparation; no mathematical or retained-audit verdict",
+    "publication_obligations_open": true,
+    "records": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CALIBRATED_ENERGY_SOURCE_ROOT_REVIEW.md",
+        "sha256": "eefb81f695a4cbd156eec9868be7f2ef5744c81582865b390f296691e3b9bcbe"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CALIBRATED_ENERGY_SOURCE_ROOT_VERIFICATION.json",
+        "sha256": "6775949e2b46545997dc2e283c830d4fd4364802eed5eb8e2700adb7f8d356e8"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/check_calibrated_source_root.py",
+        "sha256": "d2c215fc51760b6252d5b1c0f66c03f5a18c3c9c3e86b0fe3feb2758757df05a"
+      }
+    ],
+    "required_repairs": [],
+    "utc": "2026-10-13T09:03:38.174692+00:00"
+  }
+}

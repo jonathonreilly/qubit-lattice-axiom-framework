@@ -5952,3 +5952,35 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-K6, P-TTV₂, P-LocM, P-Tad.
 
   Referee running.
+
+### C5 Round 17, item 6 (pre-registered 00:46Z, before launch)
+
+**R17-6. The moved question: is there a qubit (Z₂-clock) model with exactly two gapless helicity-±2 branches?**
+- **Plain question.** R17-1 (worker; referee running) finds that the k⁴ obstruction fails for qubits read as Z₂ clocks. It exhibits:
+  - a k⁰ model, which is the 3D transverse-field Ising model (a scalar);
+  - a k² model, probably a helicity-0 sound mode.
+
+  It also finds that under the natural rotation action, on-site Z₂ face labels carry A₁+E and not T₂. Is there any local Z₂-clock model on Z³ whose low-energy spectrum has:
+  - exactly two gapless helicity-±2 branches with ω ∝ k (or at least a definite power);
+  - gapped vector and scalar channels;
+  - a stated metric readout?
+- **Setting.**
+  - Local, translation-invariant, cubic-covariant qubit Hamiltonians on Z³ with a mod-2 tensor Gauss law. Slots can sit on faces, links or sites, with a block encoding into site qubits stated.
+  - Rotation action: natural, or a shift implementation (P-r17-1c), stated.
+  - Excluded: integer-law lifts (R16-7/R16-11), rotors, power-law hops.
+- **Prior art (count once):**
+  - R17-1 and its referee (when back);
+  - R16-7 and R16-11 with their verdicts;
+  - R15-3 (≥ 4 branches in finite PSD Gaussians), R15-5, R13-2, R12-5;
+  - the X-cube/fracton literature (gapped; RECALLED) and the Gu–Wen helicity-±2 claim.
+- **Removed hypothesis:** integer lifting, together with the Gaussian/PSD class of R15-3 (Z₂ models are not Gaussian).
+- **Probes.**
+  - (a) The representation theory. Which slot placements and rotation actions allow a T₂ (or T₂g) on-site or few-site label? Is the A₁+E obstruction general for the natural action?
+  - (b) Construct the best candidate. Compute its excitation spectrum by ED on the largest feasible cluster and by spin-wave or large-N where controlled. Identify the helicity content of the gapless modes, with the method stated in advance.
+  - (c) Does R15-3's partner theorem have a Z₂ analogue, e.g. via an f-sum or the Goldstone-type counting of R16-11?
+  - (d) Prices.
+- **FIXED readings.**
+  - **CANDIDATE:** an explicit qubit model with checked evidence of exactly two helicity-±2 gapless branches and gapped V/S, with its readout stated. Evidence, not production; production would need a referee.
+  - **OBSTRUCTED:** a refereed no-go for a stated Z₂ class, e.g. "no natural-action Z₂ model has a T₂ gapless branch".
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN. Most likely a representation obstruction for the natural action, plus an unresolved shift-action class. A CANDIDATE would be a major result and needs the most careful check.

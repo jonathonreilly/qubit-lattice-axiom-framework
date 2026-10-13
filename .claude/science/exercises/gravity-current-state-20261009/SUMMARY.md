@@ -708,7 +708,7 @@ At strong coupling (R15-5, worker), real-valued fields give exactly the two mode
 **Λ.**
 - **The CMC mechanism (R14-5).** The only smooth way to soak up vacuum changes with these readers is to make lattice time a global CMC time.
 - **It signals faster than light (R15-1: FAIL).** Whenever it is active, a local push changes the density everywhere at once. The referee ruled that a global time ordering does not save it.
-- **The readers (R15-4, R15-6, workers).**
+- **The readers (R15-4: refereed bounded FAIL in 𝓡⁺; R15-6: refereed INCONCLUSIVE. Label corrected 2026-10-13; it originally read "workers").**
   - A regular reader does handle phase transitions and lumps.
   - No positive linear reader tracks DESI's phantom-like dark energy.
   - Only a nonlinear running-minimum reader keeps the clock's variable safe in sign, and only in a simplified class of histories.

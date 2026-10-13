@@ -1,0 +1,37 @@
+Part 1: direct SF-flow Hessians, NN scalar, uniform midpoint grid, d = 0.02
+ N=32 chan=E m_p=0.50 T=0.30: mu_vac +2.467117e-03  mu_th,free +5.0314e-05  G_th(0) 2.05383e-03  G_vac -1.66053e-03  G_th -1.5327e-04 | dmu_vac/dm^2 -8.302661e-04 vs G_vac/2 -8.302669e-04
+   lambda=0.020  FIXED leaves +5.029314e-05 (pred +5.029569e-05, diff -2.5e-09 = O(lambda^2))   STATE-TRACKING leaves +5.031020e-05 (pred +5.031274e-05, diff -2.5e-09)
+   lambda=0.010  FIXED leaves +5.030437e-05 (pred +5.030500e-05, diff -6.3e-10 = O(lambda^2))   STATE-TRACKING leaves +5.031289e-05 (pred +5.031353e-05, diff -6.3e-10)
+ N=32 chan=E m_p=0.50 T=0.15: mu_vac +2.467117e-03  mu_th,free +6.9197e-07  G_th(0) 1.08803e-04  G_vac -1.66053e-03  G_th -5.1219e-06 | dmu_vac/dm^2 -8.302661e-04 vs G_vac/2 -8.302669e-04
+   lambda=0.020  FIXED leaves +6.890688e-07 (pred +6.910649e-07, diff -2.0e-09 = O(lambda^2))   STATE-TRACKING leaves +6.899714e-07 (pred +6.919683e-07, diff -2.0e-09)
+   lambda=0.010  FIXED leaves +6.910195e-07 (pred +6.915180e-07, diff -5.0e-10 = O(lambda^2))   STATE-TRACKING leaves +6.914713e-07 (pred +6.919697e-07, diff -5.0e-10)
+ N=32 chan=T m_p=0.50 T=0.30: mu_vac -1.110223e-11  mu_th,free -5.2457e-11  G_th(0) 2.05383e-03  G_vac +6.26305e-10  G_th +2.8798e-09 | dmu_vac/dm^2 +5.551115e-10 vs G_vac/2 +3.131523e-10
+   lambda=0.020  FIXED leaves -5.329071e-11 (pred -5.242095e-11, diff -8.7e-13 = O(lambda^2))   STATE-TRACKING leaves -5.273559e-11 (pred -5.242738e-11, diff -3.1e-13)
+   lambda=0.010  FIXED leaves -5.218048e-11 (pred -5.243895e-11, diff +2.6e-13 = O(lambda^2))   STATE-TRACKING leaves -5.107026e-11 (pred -5.244217e-11, diff +1.4e-12)
+ N=32 chan=T m_p=0.50 T=0.15: mu_vac -1.110223e-11  mu_th,free -2.0279e-11  G_th(0) 1.08803e-04  G_vac +6.26305e-10  G_th +1.1268e-09 | dmu_vac/dm^2 +5.551115e-10 vs G_vac/2 +3.131523e-10
+   lambda=0.020  FIXED leaves -2.220446e-11 (pred -2.027771e-11, diff -1.9e-12 = O(lambda^2))   STATE-TRACKING leaves -2.220446e-11 (pred -2.027805e-11, diff -1.9e-12)
+   lambda=0.010  FIXED leaves -1.998401e-11 (pred -2.027819e-11, diff +2.9e-13 = O(lambda^2))   STATE-TRACKING leaves -1.998401e-11 (pred -2.027836e-11, diff +2.9e-13)
+ N=40 chan=E m_p=0.50 T=0.30: mu_vac +2.467117e-03  mu_th,free +5.0314e-05  G_th(0) 2.05383e-03  G_vac -1.66053e-03  G_th -1.5324e-04 | dmu_vac/dm^2 -8.302636e-04 vs G_vac/2 -8.302643e-04
+   lambda=0.020  FIXED leaves +5.029270e-05 (pred +5.029524e-05, diff -2.5e-09 = O(lambda^2))   STATE-TRACKING leaves +5.030975e-05 (pred +5.031229e-05, diff -2.5e-09)
+   lambda=0.010  FIXED leaves +5.030392e-05 (pred +5.030455e-05, diff -6.4e-10 = O(lambda^2))   STATE-TRACKING leaves +5.031244e-05 (pred +5.031308e-05, diff -6.3e-10)
+ N=40 chan=E m_p=0.50 T=0.15: mu_vac +2.467117e-03  mu_th,free +6.9180e-07  G_th(0) 1.08803e-04  G_vac -1.66053e-03  G_th -5.1132e-06 | dmu_vac/dm^2 -8.302636e-04 vs G_vac/2 -8.302643e-04
+   lambda=0.020  FIXED leaves +6.888995e-07 (pred +6.908940e-07, diff -2.0e-09 = O(lambda^2))   STATE-TRACKING leaves +6.898032e-07 (pred +6.917973e-07, diff -2.0e-09)
+   lambda=0.010  FIXED leaves +6.908485e-07 (pred +6.913470e-07, diff -5.0e-10 = O(lambda^2))   STATE-TRACKING leaves +6.913004e-07 (pred +6.917987e-07, diff -5.0e-10)
+ N=40 chan=T m_p=0.50 T=0.30: mu_vac -1.110223e-12  mu_th,free -7.8415e-13  G_th(0) 2.05383e-03  G_vac +1.04083e-11  G_th +5.5082e-11 | dmu_vac/dm^2 +0.000000e+00 vs G_vac/2 +5.204170e-12
+   lambda=0.020  FIXED leaves +1.110223e-12 (pred -7.834767e-13, diff +1.9e-12 = O(lambda^2))   STATE-TRACKING leaves +5.551115e-13 (pred -7.835836e-13, diff +1.3e-12)
+   lambda=0.010  FIXED leaves +0.000000e+00 (pred -7.838130e-13, diff +7.8e-13 = O(lambda^2))   STATE-TRACKING leaves -1.110223e-12 (pred -7.838664e-13, diff -3.3e-13)
+ N=40 chan=T m_p=0.50 T=0.15: mu_vac -1.110223e-12  mu_th,free -3.1804e-13  G_th(0) 1.08803e-04  G_vac +1.04083e-11  G_th +2.2368e-11 | dmu_vac/dm^2 +0.000000e+00 vs G_vac/2 +5.204170e-12
+   lambda=0.020  FIXED leaves +1.110223e-12 (pred -3.180261e-13, diff +1.4e-12 = O(lambda^2))   STATE-TRACKING leaves +0.000000e+00 (pred -3.180318e-13, diff +3.2e-13)
+   lambda=0.010  FIXED leaves +1.110223e-12 (pred -3.180350e-13, diff +1.4e-12 = O(lambda^2))   STATE-TRACKING leaves +0.000000e+00 (pred -3.180378e-13, diff +3.2e-13)
+Part 1 time 0 s
+Part 2: graded GL grid, 144 nodes/axis; check vs closed form: NN m=1 mu_E (V3 +1.970388642e-3)
+  m=1 zero-point mu_E (Lemma H formula) +1.970388642e-03
+  m=0.020: mu_vac +2.695393e-03   G_vac -2.025031e-03  (UV, T-independent)
+  T        G_th(0)      T^2/12      mu_th,free    mu_th/T^6     cross(lam=1)=G_th*G_vac/4   m_g^2/H^2 [fixed, lam=1, g*=106.75]   m_g^2/H^2 [state-tracking]
+  0.4000   1.42128e-02  1.33333e-02  +2.44343e-04  +5.9654e-02  -7.19533e-06                  +1.583e-03                          +1.614e-03
+  0.2000   3.11430e-03  3.33333e-03  +1.04468e-05  +1.6323e-01  -1.57664e-06                  +9.471e-04                          +1.109e-03
+  0.1000   6.98935e-04  8.33333e-04  +1.96903e-07  +1.9690e-01  -3.53841e-07                  -2.681e-04                          +3.348e-04
+  0.0500   1.46081e-04  2.08333e-04  +3.12450e-09  +1.9997e-01  -7.39549e-08                  -1.936e-03                          +8.509e-05
+  0.0250   2.58943e-05  5.20833e-05  +4.62977e-11  +1.8964e-01  -1.31092e-08                  -5.713e-03                          +2.020e-05
+  0.0125   3.27320e-06  1.30208e-05  +5.83128e-13  +1.5286e-01  -1.65708e-09                  -1.159e-02                          +4.076e-06
+total time 1 s

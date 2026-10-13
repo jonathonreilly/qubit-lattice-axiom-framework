@@ -8416,3 +8416,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **CUT-INTRINSIC:** a refereed demonstration that no smooth exact completion exists in the stated class because of the wrap, with the cut named as a photon-sector face defect.
   - **OPEN:** otherwise.
 - **Expectation.** PHOTON-EXACT via a twisted fibre identification. The cut is a branch-choice artefact, like the face continuity R19-9 already repaired with I.
+- **R19-21 (the state-tied subtraction across history): worker reading HISTORY-SAFE on the letter, narrowly, via a new clause (S_loc) plus (d-i), in C-box-E.**
+  - **Every fixed lowest-state version is excluded under the canonical-mass reading.** This covers (S\*), (S\*\*), the instantaneous law and (S_ad). The Higgs-vev and thermal channels re-mass the lattice-scale sea and keep |m_g| ≫ H, tachyonic over most of history, from 1e15 GeV to BBN.
+  - **The mass-even part flips sign near 0.5 TeV.** So it is tachyonic on one side of that temperature whatever the sign.
+  - **Today's matter closes the massive-sign escape.** Intergalactic matter shifts the Higgs vev, giving |m_g| ≈ 1.4e-9 eV, about 1e14 above the LVK bound.
+  - **The plasma's own shear is small,** about (Ta)⁶.
+  - **(S_loc):** the LV part of the lowest state's strain response, re-evaluated at the actual state's local IR mean fields, does not gravitate.
+    - It leaves only a T⁶ residue.
+    - Bianchi reduces to R19-17's frame condition (automatic under reading A).
+    - The isotropic enthalpy needs (d-i).
+    - Beyond O(λ) it needs a UV/IR split with an unestimated ambiguity.
+  - **Enthalpy on the D1 root.** The symmetric-phase ΔW ≈ 2.7e106 ρ_Λ, which (d-i) absorbs and nothing else registered does. On V1 nothing absorbs it.
+  - **Prices:**
+    - P-R19-21a: (S_loc), with zero numbers but state-dependent;
+    - P-R19-21b: a mass-blind law, which is a tuning.
+
+  Referee running.

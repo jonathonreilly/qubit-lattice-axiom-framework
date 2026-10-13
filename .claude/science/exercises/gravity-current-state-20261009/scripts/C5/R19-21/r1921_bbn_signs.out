@@ -1,0 +1,27 @@
+BBN, T = 1 MeV: dx (linear response, free e+- etc.; hadrons ignored) = -1.12e-21
+  Wilson  mu_E: Delta mu -5.28e-40  ->  m_g^2/H^2 = -1.99e+49
+  Wilson  mu_T: Delta mu -1.35e-40  ->  m_g^2/H^2 = -5.10e+48
+  twisted mu_E: Delta mu -9.85e-57  ->  m_g^2/H^2 = -3.71e+32
+  twisted mu_T: Delta mu +5.17e-60  ->  m_g^2/H^2 = +1.95e+29
+  one-point enthalpy (D1 dW/dm = -0.6923 per field, r1921_enthalpy.out): |Delta W|/rho_rad = 2.1e+50 (Wilson-type), 3.8e+33 (twisted, dW/dm^2 = -0.4503)
+
+Even part: Delta mu(T)/R2 = (<|phi|^2>_T - v^2)/v^2 (mean field), R2 = sum n c2 (ma)^2 per row:
+  R2(twisted, mu_E) = +4.380e-36
+  R2(twisted, mu_T) = -2.301e-39
+  T = 1000   GeV: (<|phi|^2> - v^2)/v^2 = +2.152
+  T = 600    GeV: (<|phi|^2> - v^2)/v^2 = +0.135
+  T = 450    GeV: (<|phi|^2> - v^2)/v^2 = -0.362
+  T = 426    GeV: (<|phi|^2> - v^2)/v^2 = -0.428
+  T = 400    GeV: (<|phi|^2> - v^2)/v^2 = -0.496
+  T = 300    GeV: (<|phi|^2> - v^2)/v^2 = -0.716
+  T = 170    GeV: (<|phi|^2> - v^2)/v^2 = -0.909
+  T = 150    GeV: (<|phi|^2> - v^2)/v^2 = -0.455
+  T = 100    GeV: (<|phi|^2> - v^2)/v^2 = -0.161
+  T = 10     GeV: (<|phi|^2> - v^2)/v^2 = -0.000
+
+BBN electron-only: dx = -3.94e-23
+  Wilson  mu_E: Delta mu -1.85e-41 -> m_g^2/H^2 = -6.98e+47
+  Wilson  mu_T: Delta mu -4.74e-42 -> m_g^2/H^2 = -1.79e+47
+  twisted mu_E: Delta mu -3.45e-58 -> m_g^2/H^2 = -1.30e+31
+  twisted mu_T: Delta mu +1.81e-61 -> m_g^2/H^2 = +6.83e+27
+  enthalpy |Delta W|/rho_rad = 7.5e+48 (Wilson-type D1), 1.3e+32 (twisted)

@@ -1,0 +1,18 @@
+naive Wilson r=1, N=96: e0 -6.556992  de/dm -1.767029 (R19-20: -1.767029)
+D1 root edge (b_f, r) = (0.915438682, 0.568280847): W_pi = 0.35983
+  N= 64: e0 = -3.2055622   dW/dm = d rho/dm = e'(0) = -0.6923204   twisted e_2 = -<1/E> = -0.675375 -> dW/dm^2 = -0.450250
+  N= 96: e0 = -3.2055621   dW/dm = d rho/dm = e'(0) = -0.6923204   twisted e_2 = -<1/E> = -0.675392 -> dW/dm^2 = -0.450262
+  N=128: e0 = -3.2055621   dW/dm = d rho/dm = e'(0) = -0.6923204   twisted e_2 = -<1/E> = -0.675398 -> dW/dm^2 = -0.450266
+  FD check (N=96): (e(h)-e(-h))/2h = -0.6923204 ; W(m) = (4e - m e')/3 -> dp/dm|0 = -m e''/3 = 0 exactly at m = 0
+
+Symmetric phase (all Dirac masses -> 0): Delta W = W(0) - W(m_SM)
+  Wilson-type D1 edge (linear)   Delta W = +3.043e-17 per cell = 2.68e+106 rho_Lambda
+  twisted-mass edge (quadratic)  Delta W = +2.704e-34 per cell = 2.38e+89 rho_Lambda
+  T = 1e+16    GeV: rho_rad = 1.39e+112 rho_Lambda;  |Delta W|/rho_rad = 1.9e-06 (Wilson-type D1), 1.7e-23 (twisted)
+  T = 1e+08    GeV: rho_rad = 1.39e+80 rho_Lambda;  |Delta W|/rho_rad = 1.9e+26 (Wilson-type D1), 1.7e+09 (twisted)
+  T = 1e+03    GeV: rho_rad = 1.39e+60 rho_Lambda;  |Delta W|/rho_rad = 1.9e+46 (Wilson-type D1), 1.7e+29 (twisted)
+  T = 160      GeV: rho_rad = 9.13e+56 rho_Lambda;  |Delta W|/rho_rad = 2.9e+49 (Wilson-type D1), 2.6e+32 (twisted)
+
+Today, matter channel (dv/v = -f_N rho/(v^2 m_H^2), f_N = 0.30 RECALLED):
+  mean IGM baryons  dv/v -5.72e-58: Delta W = +1.74e-74 (D1 linear), +3.09e-91 (twisted) per cell; matter rho a^4 = 8.16e-125 -> ratios 2.1e+50, 3.8e+33
+  Earth             dv/v -7.48e-27: Delta W = +2.27e-43 (D1 linear), +4.04e-60 (twisted) per cell; matter rho a^4 = 1.07e-93 -> ratios 2.1e+50, 3.8e+33

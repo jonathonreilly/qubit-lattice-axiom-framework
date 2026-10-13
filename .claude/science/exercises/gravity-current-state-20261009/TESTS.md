@@ -6734,3 +6734,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OBSTRUCTED:** a refereed demonstration that no records-as-metric readout in a stated class gives β = 1 with CP.
   - **OPEN:** otherwise.
 - **Expectation.** CONSTRUCTED at O(G²) with the gauge-dependence of the LL source as the main caveat, and premise (iii) forced. That would make R15-2's constraint-energy overshoot live again.
+- **R18-4 (W15 crossing bands): worker reading EXCLUDED-CROSS** for every two-band analytic crossing law, including unprotected Weyl points. Continuous multi-shift mixing is OPEN. A referee is required.
+  - **Lemma S0:** momentum is continuous through conical tips.
+  - **Theorem WX:** the continuation runs on the orientation double cover (again a T³), giving rank C ≤ 1.
+  - **Lemma RB-X:** H-RB forces rank C = 3 at any positive homogeneous extremum, including massless cones.
+  - **Corollary:** no redshifting momentum.
+  - **Lemmas X1/X2:** analytic laws have no odd orientation monodromy.
+  - **RECALLED facts** (to be accepted or replaced): tame Reeb, half-branch evenness, stratification.
+  - **No new price;** P64, P90 and P124 are unchanged.
+  - **Archive fix (02:47Z):** the committed R17-8 runner imported from the non-archived `recheck/R16-5`. It now points at `scripts/C5/R16-5`, and its rerun is byte-identical. Reported by R18-4. An audit of every archived runner's sys.path inserts found no other missing directory.
+
+  Referee running.

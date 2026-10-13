@@ -1,0 +1,50 @@
+=== (1) Lemma S0: at a conical crossing a commuting continuous Pi is scalar on the degenerate space ===
+  weyl: |d(x0)| = 0.0e+00; singular values of the limit-direction set of d-hat (rank >= 2 => non-collinear => b(x0) = 0): [44.791  31.7333 31.4128]
+     example Pi = alpha + lambda d.sigma: max |pi_+ - pi_-| on the 1e-6 sphere/circle = 3.60e-06
+  nodal: |d(x0)| = 1.1e-16; singular values of the limit-direction set of d-hat (rank >= 2 => non-collinear => b(x0) = 0): [46.9259 42.4023  0.    ]
+     example Pi = alpha + lambda d.sigma: max |pi_+ - pi_-| on the 1e-6 sphere/circle = 3.06e-06
+
+=== (2) energy-shell tangential identity on crossing bands, C = 1:  min || P_perp(grad pi_x - e_x) || / || P_perp e_x || ===
+  X_B weyl  tilt=none upper band (sorted, Lipschitz at X), pi_+ = A + B|d| :  R=1 (53 fns): 0.843; R=2 (249 fns): 0.810; R=3 (685 fns): 0.788   [7000 pts, |d|>0.05]
+  X_B weyl  tilt=tilt upper band (sorted, Lipschitz at X), pi_+ = A + B|d| :  R=1 (53 fns): 0.828; R=2 (249 fns): 0.794; R=3 (685 fns): 0.769   [7000 pts, |d|>0.05]
+  X_B nodal tilt=none upper band (sorted, Lipschitz at X), pi_+ = A + B|d| :  R=1 (53 fns): 0.822; R=2 (249 fns): 0.782; R=3 (685 fns): 0.757   [6998 pts, |d|>0.05]
+  X_A folded NN eps=-cos(kx/2)-cos ky-cos kz (branch on the double cover, periods 4pi x 2pi x 2pi): R=1 (26 fns): 0.858; R=2 (124 fns): 0.797; R=3 (342 fns): 0.767
+
+=== (3) controls (same observable) ===
+  CONTROL weyl, R=2 basis + non-periodic k_x admitted: residual = 3.79e-15 (coefficient of k_x = 1.000000)
+  CONTROL one-axis weyl delta=1.0: residual x-identity = 7.859e-01; y-identity = 7.727e-01
+  CONTROL one-axis weyl delta=0.1: residual x-identity = 2.642e-02; y-identity = 9.497e-01
+  CONTROL one-axis weyl delta=0.01: residual x-identity = 3.998e-04; y-identity = 9.894e-01
+
+=== (4) H-RB at a conical extremum: grad phi(p).(C p + f1 phi(p)) = phi(p) for all p; solution space and min sigma_min(C) ===
+  isotropic               : residual 4.6e-16; null-space dim 3; particular C sym part eigs [1. 1. 1.]; min sigma_min(C) over sampled solution space = 1.0000
+  tilted |w|=0.5          : residual 6.9e-16; null-space dim 3; particular C sym part eigs [1. 1. 1.]; min sigma_min(C) over sampled solution space = 0.9897
+  tilted |w|=0.9 oblique  : residual 3.4e-16; null-space dim 3; particular C sym part eigs [1. 1. 1.]; min sigma_min(C) over sampled solution space = 0.7798
+  anisotropic + tilt      : residual 5.6e-16; null-space dim 3; particular C sym part eigs [1. 1. 1.]; min sigma_min(C) over sampled solution space = 0.6833
+  (rank C = 3 on the whole solution space iff min sigma_min > 0; the analytic argument gives this exactly, see report)
+
+=== (5) whole-zone v_max of the test laws (round-16 rule; lattice units, both sorted bands) ===
+  weyl tilt=none: v_max upper = 1.4619, lower = 1.4619
+  weyl tilt=tilt: v_max upper = 1.5835, lower = 1.5833
+  nodal tilt=none: v_max upper = 1.6085, lower = 1.6085
+  folded NN (branch on the cover; in the folded lattice's own units): v_max = 1.4999
+  No gauge-field symbol is introduced: the graviton enters only through theta = C q + O(q^2) (R9-9's v_max not recomputed).
+
+=== (6) continuous multi-shift mixing (title hole), SPECTRAL level only: partner relation along a line ===
+  test: every nonzero eigenvalue g of Pi(t) with |g| > eps has g + s in spec Pi(t+q) for some s in Sigma0(q) (forward direction checked);
+  AND (local-affine step, vR17-8:15) the increment of every eigenvalue that is separated on [t-q, t+q] lies in Sigma0(q)
+  q=1e-02: zigzag {+tri,-tri} (R17-8 control): worst defect / q = 0.497;   touching candidate {tri, +pi/2, -pi/2}: worst defect / q = 0.319
+  q=1e-03: zigzag {+tri,-tri} (R17-8 control): worst defect / q = 0.372;   touching candidate {tri, +pi/2, -pi/2}: worst defect / q = 0.314
+  (defect/q ~ 1 = fails; ~0 = passes the SPECTRAL relation. Passing is necessary only: the intertwiner identity (*),
+   W1 symmetric stress and the redshift test are NOT checked here.)
+
+=== (7) orientation monodromy of the line field span(d) around a conical point in a transverse slice (Lemma X2) ===
+  track a continuous unit field n || d along a small circle (sign chosen for continuity, through sign-flip zeros);
+  monodromy = n(2pi).n(0) (+1 trivial, -1 branched cover). Also count the sign-flip crossings.
+  d=(x^2, xy, 0)            [A-line x=0 through a conical point]: monodromy +1.000000; sign-flip crossings 2
+  d=((y^2-x^3)x,(y^2-x^3)y,0) [cusp A-curve through a conical pt]: monodromy +1.000000; sign-flip crossings 2
+  d=(x(x-y)(x+2y), x y (x-y), y^3) [mixed, cubic]: monodromy +1.000000; sign-flip crossings 0
+  d=(x y, x^2 - y^2, x^3)   [conical only]: monodromy +1.000000; sign-flip crossings 0
+  d=(x, y, 0)               [Weyl-like line, conical only]: monodromy +1.000000; sign-flip crossings 0
+  40 random laws d = (linear form) x (random quadratic+cubic vector): min monodromy +1.000000; flip counts [2]
+  CONTROL (NOT analytic: d = (y, r - x, 0), zero set = one half-line): monodromy -1.000000; sign-flip crossings 1  -> the tracker detects a branched (odd) case when one exists

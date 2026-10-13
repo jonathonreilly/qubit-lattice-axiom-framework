@@ -4,7 +4,7 @@ Raw values everywhere; nothing subtracted. Each block prints what it checks.
 """
 import os, sys
 import numpy as np
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'recheck', 'R16-5'))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'R16-5'))  # archived path: scripts/C5/R16-5
 from r99_profiles_copy import profile
 
 rng = np.random.default_rng(20261013)

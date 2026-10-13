@@ -8901,7 +8901,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
   Referee running.
 
-- **Final records at close, 2026-10-13 ~10:45Z.** Codex gpt-5.6-sol at xhigh. These supersede the [worker] labels for R19-32 to R19-35 in the closing record below.
+- **Final records at close, 2026-10-13 ~10:41Z.** Codex gpt-5.6-sol at xhigh. These supersede the [worker] labels for R19-32 to R19-35 in the closing record below.
   - **R19-32: CONFIRMED WITH CORRECTIONS. OPEN overall.**
     - KREIN-EMPTY meets the four-d rule only in the formula/AP-hopping scope: L = 3, d = 2–5. Emptiness for arbitrary d is not proved.
     - The spectral reading is always nonempty, but indefinite or spurious.
@@ -8957,7 +8957,7 @@ Their line numbers below are as of those reads. **Supervisor: record all three, 
   - R19-33: worker B-RP-OK, narrow (`TESTS:8800-8826`).
   - R19-34: worker PSI-HAZARD (`TESTS:8882-8902`).
 - **Workers running:** R19-35 (λ_nn) and R19-36 (conserved stress + GR bridge RP). No new probes start after 09:57Z.
-- **[UPDATE AT CLOSE]** For each of these five, record the verdict or reading, or "not completed (stopped at end)".
+- [see the close addendum, 10:41Z] For each of these five, record the verdict or reading, or "not completed (stopped at end)".
 
 ---
 
@@ -9101,7 +9101,7 @@ Still in force: S26 §5, S23 §5, S20 §5 and S17 §1.8.
 | Round-20 stubs (S26 §7) | Not launched: the W7 √(E² − P²) readout test; quantum MC of the t ≠ v model; W15 multi-shift mixing | — | — |
 | Named, not done | Set B with (Σ) (R19-24 §0 item 5, suggested); the face1 A₁ recomputation (vR19-23); the QED two-loop A_s, B_s, C_s (vR19-24:15); (S_loc) beyond O(λ) with gauge/Yukawa thermal terms (vR19-21:42) | — | — |
 
-**[UPDATE AT CLOSE]** For R19-26 and R19-27, record the referee verdict, or "referee not back at close". For R19-25 and R19-28, record either the worker reading (marked [worker]) and whether a referee is running, or "not completed at close".
+[see the close addendum, 10:41Z] For R19-26 and R19-27, record the referee verdict, or "referee not back at close". For R19-25 and R19-28, record either the worker reading (marked [worker]) and whether a referee is running, or "not completed at close".
 
 ---
 

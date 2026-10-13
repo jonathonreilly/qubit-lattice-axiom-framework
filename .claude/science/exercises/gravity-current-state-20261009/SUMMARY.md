@@ -721,7 +721,7 @@ At strong coupling (R15-5, worker), real-valued fields give exactly the two mode
 - The closing record is in `TESTS.md` ("C5 closing record"); the prices are in `PRICE_NOTE.md` (v7 delta).
 - Nothing was adopted.
 
-**What these rounds did.** Rounds 16–19 registered 66 probes. By 07:50Z on 2026-10-13, 61 had a referee verdict. R19-7 had none, by design. R19-26 and R19-27 have worker readings; their referees are running. R19-25 and R19-28 were still running. **[UPDATE AT CLOSE]**
+**What these rounds did.** Rounds 16–19 registered 66 probes. By 07:50Z on 2026-10-13, 61 had a referee verdict. R19-7 had none, by design. R19-26 and R19-27 have worker readings; their referees are running. R19-25 and R19-28 were still running. [see the close addendum, 10:41Z]
 
 **The verdict, in one paragraph.**
 - C5 tried to read the rules of a qubit-lattice world off the observations.
@@ -796,12 +796,12 @@ At strong coupling (R15-5, worker), real-valued fields give exactly the two mode
 6. **Set B.** Should time on the grid be reopened as the only symmetry that fixes matter speeds? (R19-28 [pending].)
 7. **Carried.** The top-quark bet or new particles (P93). Signed stencils. W7: accept the anomaly or forbid edge quanta (P141 or P142). E1 or E2, now separable by sirens near E2's ceiling.
 
-**Pending at close.** **[UPDATE AT CLOSE]**
+**Pending at close.** [see the close addendum, 10:41Z]
 - Workers: R19-25 (weak/BRST graviton), R19-28 (set B with (Σ)).
 - Referees: R19-26 (photon wrap cut; worker PHOTON-EXACT) and R19-27 (V1 receiver; worker V1-RECEIVER).
 - The R19-21, R19-23 and R19-24 verdicts are back but are not yet recorded in `TESTS.md`.
 
-**Close addendum (10:45Z).** Final referee readings:
+**Close addendum (10:41Z).** Final referee readings:
 - R19-32: OPEN (KREIN-EMPTY only in scope).
 - R19-33: **B-RP-FAILS** for the conserved bridge; D2 is a non-conserved alternative.
 - R19-34: OPEN (the H-cov hazard is robust, but the root's own strain law was not built).

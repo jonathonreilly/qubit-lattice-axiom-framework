@@ -428,7 +428,7 @@ These were refereed after the delta was drafted. All verdicts are from codex sol
 - R19-26 has a worker reading (PHOTON-EXACT, `TESTS.md:8532-8545`), priced as P191 [worker]; its referee is running.
 - R19-25 and R19-28 have no reading yet. P192 onward is reserved for them.
 - R19-27 has a worker reading, priced as P190 [worker]; its referee is running.
-- **[UPDATE AT CLOSE]**
+- [see the close addendum, 10:41Z]
 
 **Paths.**
 - Bare `C5_*` file names live in `.claude/science/exercises/gravity-current-state-20261009/agents/`.
@@ -634,7 +634,7 @@ As S23 §8.2 (`S23:1034-1127`), with S26's replacement rows (`S26:864-869`) for 
 
 ## 5. Open questions (append to §6)
 
-**C5 items still running.** **[UPDATE AT CLOSE]**
+**C5 items still running.** [see the close addendum, 10:41Z]
 - **R19-25.** Can weakly imposed (Gupta–Bleuler/BRST) constraints on spin-S or clock slots give two light-like helicity-±2 branches with positive norm and the 1/r pull (`TESTS.md:8324-8353`)? It decides whether P183–P185 can replace P-N1.
 - **R19-26** (worker reading at `TESTS.md:8532-8545`; referee running). Is the photon kernel's wrap-cut jump intrinsic, or removable (`TESTS.md:8403-8418`)? [worker] PHOTON-EXACT. The jump came from VW's placement, not from R1 or a twist, and a local re-placement removes it with the rows unchanged. It suggests the same placement test for R19-5's U and UD completions.
 - **R19-27** (worker reading in; referee running). Does V1 have any receiver for the vacuum enthalpy mismatch (`TESTS.md:8438-8460`)? [worker] Yes, in class 𝒱_ct: per-site, lattice-unit Higgs-sector counterterms on a line of constant physics (P190). The mismatch was an artefact of fixed physical-unit counterterms, which would make the vev drift ~2e51 per e-fold (`TESTS.md:8492-8499`). The referee must rule on "absorbs" versus "does not arise" (`rR19-27:222`).
@@ -675,7 +675,7 @@ As S23 §8.2 (`S23:1034-1127`), with S26's replacement rows (`S26:864-869`) for 
 - P148, P150, P156, P158, P161, P164, P168, P176, P178, P180, P184 and P185 rest on worker text only.
 - The P148–P191 numbering and its count-once merges are S29's (same family).
 
-**v7 close addendum (10:45Z).** These prices are named, not adopted:
+**v7 close addendum (10:41Z).** These prices are named, not adopted:
 - **P-R19-34a:** a strain-covariant critical mass. Its hazard reading is OPEN per vR19-34.
 - **P-R19-35a:** the O(h²) one-point counterterm completion. It is unregistered, and λ_nn depends on it (worker, unrefereed).
 

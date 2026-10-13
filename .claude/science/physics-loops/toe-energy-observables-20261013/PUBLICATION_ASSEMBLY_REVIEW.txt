@@ -1,0 +1,95 @@
+# Exact publication assembly review
+
+Root review, 2026-10-13. Disposition: accepted_for_source_integration.
+This acceptance concerns source assembly and the specified integration
+program. It is not a new independent proof, retained audit or physical result.
+
+Frozen package011a1ca5c58b98d756a0a2c05fc1d8c260eaa4faaf5300d79bbe0b557779ba84
+contains207members and159payload files. The driver is
+92d8a0bcbeeb246468e7cbd81a01ffd130d26d2b06b87f0e28b59a7198203731.
+The shared identity template is
+5e333e5d385653e2ca15296f514b6ffcfe791cfdf826795815fea9381f362781.
+Base d52ea0184932788d3d031e7207a6bad09114716d and branch
+physics-loop/toe-energy-observables-20261013 are exact guards. Parent is
+regular9508. There is no authorization to merge science, alter a physical
+axiom, apply an audit verdict or push main.
+
+The prior source acceptance de896ce3b757cbd2365a9c1fdeacc76f47396e400b9a74d7379b2d145f8edf12
+binds complete mathematical-body and comparison coverage already read.
+Those reads are reused at unchanged identities. No fresh complete final-note
+or complete raw-context-diff manual read is claimed. Its two false fields
+remain false. The four accepted bodies are byte-exact at publication;
+the three source-stage wording precisions were previously fully checked.
+
+Fresh complete reads: all736driver lines in8882ff/d0938c/ad272d; complete
+236line identity template inbdf9dc; all six wrappers, reproduction procedure,
+PR proposal and author coverage in597e88; every new packet Markdown file
+in8d25c7; complete parent/dependency and exception records in4a1c65;
+complete publication piece/substitution maps and status scope in6818b2.
+Archive aliases were completely reread in compact relative form inadd290.
+The combined a18f50 rendering and long archive list in6818b2 were truncated;
+their missing portions were not credited and relevant records were reread.
+Specification and acceptance template were visible in full; no scientific
+conclusion depends on a truncated metadata rendering.
+
+The complete byte-check source was read in587188/e8d8bf. Root then executed
+it with its three bookkeeping writes redirected to a new external directory,
+forbidding mutation of the frozen package. Actual169a12 exit0,0.149s,
+empty stderr, verified207frozen members,125accepted source members,
+127archive objects/130aliases,10live canonical parents,18procedurepins,
+four unchanged bodies, all eight complete publication diffs, template-to-
+generated-runner equality,152declared inputs and164planned stage paths.
+All frozen bytes were rechecked after execution. Logs and complete records
+are in energy_observables_publication_root_bytecheck. These are byte and
+syntax checks with zero mathematical predicates. Individual unchanged
+hash literals are mechanically checked, not claimed as a semantic review.
+
+The exact source-integrity template reconstructs both stages and compares
+the actual complete published bytes, maps and parent inputs. It contains no
+mathematical tests. The two generated runners differ only in attribution;
+both were matched exactly to the fully read template and its substitutions.
+The archive retains source projections with their limited coverage and never
+upgrades them into a claim to have read excluded mixed-lane originals.
+
+The driver uses distinct prepare/verify phases, exclusive writes, explicit
+stage lists, deadline and exact input guards, full actual subprocess streams
+and no automatic retry. Four temporary byte-corruption controls follow
+successful identity baselines and require their exact failure reason.
+Canonical cache API stderr is merged into stdout; the program preserves
+the complete available stream rather than claiming separate child stderr.
+Actual stage-0 blob equality is checked before and after include-worktree
+compatibility. An empty checked list supplies no scientific validation.
+
+Dependency metadata adds exactly two nodes and ten edges: seven distribution
+parents, then distribution/Current/Local for weighted-current. Three further
+canonical inputs preserve inherited lineage. All old node/edge objects and
+parent statuses must remain unchanged. Current remains open_gate. The two
+whitespace and notation exception lists are empty; actual lint/link/staging
+results remain execution obligations, not predeclared outcomes.
+
+Scientific scope remains conditional: subquadratic energy-law estimates,
+separately justified quadratic endpoints, common-H weighted interpolation,
+placed native weighted transfer and the specified normalized-current means.
+Weights require their stated probability normalization. Scalar transport and
+weighted coherences have no unconditional strength ordering. Free-current
+hold statements require commutation with the true hold generator. The actual
+high-state and interacting countercontrols remain intact. No universal
+growing-time theorem, fixed-pulse realization, detector selection or
+interacting conservation is inferred by publication.
+
+N1/N5 global-packet obligations and retained audit remain pending. This
+review allows the exact prepared program to run under the existing user
+authorization, followed by inspection of actual integration evidence and a
+regular PR. No generated canonical runtime or new graph/cache result has
+yet been credited by this record. Current-main landing validation remains
+distinct from this child-branch milestone. No editable prompt file changed.
+
+The03:10:28source refresh found unchanged main516cb69d/procedures and one
+new other PR9509 atfa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9. Its complete
+599line canonical note30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5
+was read in96133c/aef52b for overlap. It concerns a separately supplied
+tensor/scalar action and bosonic Gaussian clock channel, with its own
+matter/state/readout assumptions. It neither duplicates these CAR energy
+proofs nor supplies a premise for them. No science from it is adopted or
+validated here. The initial no-new-PR guard5d0503 stopped before writing
+acceptance; this explicit scope read resolves that guard without hiding it.

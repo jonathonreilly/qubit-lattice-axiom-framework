@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-13T02:27:42.840499+00:00",
+  "reviewer": "root",
+  "disposition": "accepted_for_source_integration",
+  "source_package": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation",
+  "source_freeze_sha256": "94d6cae80356b347201074fdd0abb016b75e6b2ef4c52944ec2a01170f8f4e2f",
+  "root_accepts_source_assembly": true,
+  "unchanged_complete_body_and_comparison_coverage_reused": true,
+  "complete_final_notes_and_comparisons_read": false,
+  "complete_raw_context_diffs_freshly_manually_read": false,
+  "all_new_wrappers_and_three_changed_arguments_fully_read": true,
+  "complete_byte_piece_maps_read": true,
+  "complete_source_reconstruction_and_all_diff_bytes_verified": true,
+  "source_dependency_and_chronology_records_read": true,
+  "proposed_procedure_sources_read": true,
+  "root_authorizes_publication_input_preparation": true,
+  "root_authorizes_canonical_installation_or_execution": false,
+  "integrity_execution": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_integrity_0227",
+  "integrity_execution_exit_code": 0,
+  "integrity_mathematical_predicates_executed": 0,
+  "mathematical_audit_or_formal_verification": false,
+  "retained_status": false,
+  "no_go_packet_pass": false,
+  "N1": "pending",
+  "N5": "pending",
+  "prior_complete_math_coverage": [
+    {
+      "name": "ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+      "archive": "source_archive/sha256/4ab02757ff0be403b15d41779a04ca596436bc62240dbc027c01ac6d0fb78abc/ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+      "sha256": "4ab02757ff0be403b15d41779a04ca596436bc62240dbc027c01ac6d0fb78abc",
+      "bytes": 47496,
+      "lines": 944,
+      "role": "proof_body"
+    },
+    {
+      "name": "ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+      "archive": "source_archive/sha256/7c9df64640d1296f2dc8a6d1a522652d0f766fdad769b14ec303f38dd8b6ff23/ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+      "sha256": "7c9df64640d1296f2dc8a6d1a522652d0f766fdad769b14ec303f38dd8b6ff23",
+      "bytes": 31710,
+      "lines": 632,
+      "role": "proof_body"
+    },
+    {
+      "name": "NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+      "archive": "source_archive/sha256/62d98c8f61c8bb842daa3713e6fc46b08c795224073656295d517e7aa280a004/NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+      "sha256": "62d98c8f61c8bb842daa3713e6fc46b08c795224073656295d517e7aa280a004",
+      "bytes": 7068,
+      "lines": 155,
+      "role": "proof_body"
+    },
+    {
+      "name": "NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md",
+      "archive": "source_archive/sha256/3ed69527ba6177ae17a66eeabe45f98591cf60a1d2f9367bfacd95306fca52f6/NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md",
+      "sha256": "3ed69527ba6177ae17a66eeabe45f98591cf60a1d2f9367bfacd95306fca52f6",
+      "bytes": 23235,
+      "lines": 502,
+      "role": "proof_body"
+    },
+    {
+      "name": "ENERGY_DISTRIBUTION_LIMIT_CROSSCHECK.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_DISTRIBUTION_LIMIT_CROSSCHECK.md",
+      "archive": "source_archive/sha256/92a80fb57297812f544adef693caa19a8c28c3d6e008b7093af82526301cba86/ENERGY_DISTRIBUTION_LIMIT_CROSSCHECK.md",
+      "sha256": "92a80fb57297812f544adef693caa19a8c28c3d6e008b7093af82526301cba86",
+      "bytes": 27357,
+      "lines": 514,
+      "role": "comparison"
+    },
+    {
+      "name": "ENERGY_WEIGHTED_TRACE_CROSSCHECK.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_WEIGHTED_TRACE_CROSSCHECK.md",
+      "archive": "source_archive/sha256/202b44242e9f9b1d8ba8e93302745e3c91425aa4a63b6b599850cb8f12de02e7/ENERGY_WEIGHTED_TRACE_CROSSCHECK.md",
+      "sha256": "202b44242e9f9b1d8ba8e93302745e3c91425aa4a63b6b599850cb8f12de02e7",
+      "bytes": 31956,
+      "lines": 584,
+      "role": "comparison"
+    },
+    {
+      "name": "ENERGY_DISTRIBUTION_POSTCOMPARISON_PRECISIONS.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_DISTRIBUTION_POSTCOMPARISON_PRECISIONS.md",
+      "archive": "source_archive/sha256/54d600e491a46d3c84d9d4b3ae849d4d3019f18f5aa6e0736f3f1b606c9fdd62/ENERGY_DISTRIBUTION_POSTCOMPARISON_PRECISIONS.md",
+      "sha256": "54d600e491a46d3c84d9d4b3ae849d4d3019f18f5aa6e0736f3f1b606c9fdd62",
+      "bytes": 2161,
+      "lines": 11,
+      "role": "accepted_precision"
+    },
+    {
+      "name": "ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+      "archive": "source_archive/sha256/12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c/ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+      "sha256": "12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c",
+      "bytes": 1844,
+      "lines": 29,
+      "role": "accepted_precision"
+    },
+    {
+      "name": "NORMALIZED_CURRENT_TRANSFER_ROOT_ADDENDUM.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NORMALIZED_CURRENT_TRANSFER_ROOT_ADDENDUM.md",
+      "archive": "source_archive/sha256/129a1af703261521627e56786fa2bed2a31d494940a13a8d29dd672a1c63f472/NORMALIZED_CURRENT_TRANSFER_ROOT_ADDENDUM.md",
+      "sha256": "129a1af703261521627e56786fa2bed2a31d494940a13a8d29dd672a1c63f472",
+      "bytes": 6593,
+      "lines": 133,
+      "role": "historical_archive_only"
+    }
+  ],
+  "new_review_tool_chunks": [
+    "0f39ca",
+    "0fe72f (wrapper and program portions only; other metadata truncated)",
+    "44fa3c",
+    "abeb93",
+    "0a04e5",
+    "2b212a (existing files only; missing guessed filename recorded)",
+    "ccca10",
+    "6a3280",
+    "22947b"
+  ],
+  "precision": "Exactly three wording changes. Uniform target tails are sufficient for the stated endpoint argument; weighted trace and scalar W2 have no unconditional ordering. All formulas, domains and countercontrols remain unchanged. Current remains open_gate. Same-family source-exposed checks are not an independent retained audit.",
+  "copy_driver_not_executed": "Its combined full-diff-read flag does not express the actual coverage. Use a separately reviewed integration procedure preserving the honest coverage fields."
+}

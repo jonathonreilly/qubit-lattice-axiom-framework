@@ -1,6 +1,6 @@
 {
- "edge_count": 15854,
- "node_count": 7034,
+ "edge_count": 15864,
+ "node_count": 7036,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6062,6 +6062,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "energy_distribution_limit_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "6fd581fea5c4",
+   "out_degree": 7
+  },
   "energy_filters_and_actual_repeated_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "f9183bd2dcb8",
    "out_degree": 3
@@ -6072,6 +6076,10 @@
   },
   "energy_transfer_correlation_bounded_theorem_note_2026-10-12": {
    "deps_hash": "a6a07e3c4279",
+   "out_degree": 3
+  },
+  "energy_weighted_current_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "3859db2a49c2",
    "out_degree": 3
   },
   "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {

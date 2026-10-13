@@ -1,0 +1,94 @@
+{
+  "current_remains": "open_gate",
+  "direct_edges": [
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "prepared_driven_state_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "bounded_interaction_ground_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "to": "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "to": "energy_distribution_limit_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    }
+  ],
+  "existing_status_changes": [],
+  "expected_later_graph_delta": {
+    "direct_edges": 10,
+    "nodes": 2
+  },
+  "nodes": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "artifact_role": "theorem",
+      "assembly_status": "accepted_source_with_reviewable_publication_wrapper",
+      "audit_required_before_effective_retained": true,
+      "bare_retained_allowed": false,
+      "claim_id": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+        "prepared_driven_state_bounded_theorem_note_2026-10-13",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+        "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+        "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12"
+      ],
+      "note_sha256": "dd5bf5be3c3e4e5636056d18fc8c02aa14c7cab9fbc5c8ca59d36f1cd021460b",
+      "path": "docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/energy_distribution_limit_identity_2026_10_13.py",
+      "trace_class": "upstream_support"
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "artifact_role": "theorem",
+      "assembly_status": "accepted_source_with_reviewable_publication_wrapper",
+      "audit_required_before_effective_retained": true,
+      "bare_retained_allowed": false,
+      "claim_id": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ],
+      "note_sha256": "b320a367c3c699afd412f6d4d56e5ff0d9105c86568e062723de2a4775e4fe0f",
+      "path": "docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/energy_weighted_current_identity_2026_10_13.py",
+      "trace_class": "upstream_support"
+    }
+  ],
+  "registration_mechanism": "Canonical frontmatter proposes exactly two nodes and ten direct edges; future root integration must generate and verify the graph.",
+  "status": "PROPOSED_PUBLICATION_NOT_INSTALLED_OR_REGISTERED"
+}

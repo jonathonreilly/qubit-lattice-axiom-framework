@@ -1,0 +1,230 @@
+{
+  "archive": ".claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz",
+  "sha256": "42dc61839bb9ab031a66b7e546a80b24ed0bf6de0cb5c7fd27b432f78a782dd0",
+  "members": [
+    {
+      "member": "author_mutations_v1/SUMMARY.json",
+      "sha256": "9666f175a473123ef43974260944301dc5448528c7f3744447d482967a918167",
+      "bytes": 6458
+    },
+    {
+      "member": "author_mutations_v1/coercive_potential_square/EXECUTION.json",
+      "sha256": "bd64489648523604f23ab88388ba72b08e5cad390b83bd088c611851ed5de6e6",
+      "bytes": 1456
+    },
+    {
+      "member": "author_mutations_v1/coercive_potential_square/RESULTS.json",
+      "sha256": "662c1b683fcf425079ae7305f339433a7ab46028156aa99044e54f74caa93b82",
+      "bytes": 232973
+    },
+    {
+      "member": "author_mutations_v1/coercive_potential_square/harness.py",
+      "sha256": "a0c9fe3a8cb1fc94ba8c3ac04faa8f47cbc63690c7ba2bc7f3448ae917ff6241",
+      "bytes": 499
+    },
+    {
+      "member": "author_mutations_v1/coercive_potential_square/mutant.py",
+      "sha256": "8f12824003119e4e87a40e56c27f52727047c2ab96f253af72d7d29d88d6fb80",
+      "bytes": 19425
+    },
+    {
+      "member": "author_mutations_v1/coercive_potential_square/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "author_mutations_v1/coercive_potential_square/stdout.txt",
+      "sha256": "fad2ad9ac562db3fed77f690a942d404635f6dfb3952aa7b16d5c7ad7dad5c9f",
+      "bytes": 31
+    },
+    {
+      "member": "author_mutations_v1/metric_connection_component/EXECUTION.json",
+      "sha256": "879a07d64f6db6c4317aa2792ec5d1392b7d70da8bf6bd3f25a5ecb70d30ff00",
+      "bytes": 1463
+    },
+    {
+      "member": "author_mutations_v1/metric_connection_component/RESULTS.json",
+      "sha256": "529425b7b878e731f5d75cb27d7655caa99a1d97b0129c821dfbcca7b97326e8",
+      "bytes": 230454
+    },
+    {
+      "member": "author_mutations_v1/metric_connection_component/harness.py",
+      "sha256": "a0c9fe3a8cb1fc94ba8c3ac04faa8f47cbc63690c7ba2bc7f3448ae917ff6241",
+      "bytes": 499
+    },
+    {
+      "member": "author_mutations_v1/metric_connection_component/mutant.py",
+      "sha256": "dae2f714a6dc775a14dcd37d5970dfca025ff55c2a7e10cbd5f7b551fb82a4dd",
+      "bytes": 19425
+    },
+    {
+      "member": "author_mutations_v1/metric_connection_component/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "author_mutations_v1/metric_connection_component/stdout.txt",
+      "sha256": "e166ef6fc924a4645cfcb52ecb75dbd77f96e8e3dec5f5f62584bcb9cfa83e13",
+      "bytes": 30
+    },
+    {
+      "member": "author_mutations_v1/omit_critical_polynomial/EXECUTION.json",
+      "sha256": "6019e772d3cf7b45926eac2c1e4ae7f67b0cd1863bc56805f6d8b59ae4887b10",
+      "bytes": 1439
+    },
+    {
+      "member": "author_mutations_v1/omit_critical_polynomial/RESULTS.json",
+      "sha256": "bf016253ca651e3c60f48c9f56603a1c9803417ca8a4c080f386696a9b28d733",
+      "bytes": 4912
+    },
+    {
+      "member": "author_mutations_v1/omit_critical_polynomial/harness.py",
+      "sha256": "40ed55e17b566f346ac8894511a640f461389fa646832ce94dd4c6a0a3743269",
+      "bytes": 489
+    },
+    {
+      "member": "author_mutations_v1/omit_critical_polynomial/mutant.py",
+      "sha256": "abdff747091fd107bf83c495a2653bdd22ee8bde31574b2cda2480bbf340acbd",
+      "bytes": 19413
+    },
+    {
+      "member": "author_mutations_v1/omit_critical_polynomial/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "author_mutations_v1/omit_critical_polynomial/stdout.txt",
+      "sha256": "5d906a7efd97318abe9d256ef6633f3480b56c144aa3731a35256a2e006cf550",
+      "bytes": 28
+    },
+    {
+      "member": "author_mutations_v1/physical_clock_sign/EXECUTION.json",
+      "sha256": "05873565d91408122b8b9357f07ca44a3ca13a5f23eacd0310f04917d19da9fc",
+      "bytes": 1427
+    },
+    {
+      "member": "author_mutations_v1/physical_clock_sign/RESULTS.json",
+      "sha256": "0f6a528fad795995fc4f1a92f1f26b3c128fa0eda0dadd1a4e3e4f8a1c7837d3",
+      "bytes": 615
+    },
+    {
+      "member": "author_mutations_v1/physical_clock_sign/harness.py",
+      "sha256": "0042220bfbf27719b28aaf0713592a560672594d6a733771a0a9b1b592860016",
+      "bytes": 498
+    },
+    {
+      "member": "author_mutations_v1/physical_clock_sign/mutant.py",
+      "sha256": "68ab9a700ede66af46bda561e13e2fbd9577daff9dc4b9bc13f6b47b98f010bd",
+      "bytes": 19427
+    },
+    {
+      "member": "author_mutations_v1/physical_clock_sign/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "author_mutations_v1/physical_clock_sign/stdout.txt",
+      "sha256": "a947dfb784d32a500b7c4b8def8ba1a8d427f40a2a672a08ce7729056b907733",
+      "bytes": 27
+    }
+  ],
+  "summary": {
+    "scope": "Fresh canonical source mutations; copied source executed in module namespace with ROOT determined by unchanged canonical __file__, and fixture hash explicitly bound. Only named affected functions executed. No source-hash rejection counted as numerical detection.",
+    "mutations": [
+      {
+        "name": "physical_clock_sign",
+        "source_sha256": "68ab9a700ede66af46bda561e13e2fbd9577daff9dc4b9bc13f6b47b98f010bd",
+        "harness_sha256": "0042220bfbf27719b28aaf0713592a560672594d6a733771a0a9b1b592860016",
+        "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+        "selected_families": [
+          "frame_witness_controls"
+        ],
+        "started_at": "2026-10-13T06:34:08.460207+00:00",
+        "finished_at": "2026-10-13T06:34:08.929889+00:00",
+        "command": [
+          "/usr/local/bin/python3",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/physical_clock_sign/harness.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/physical_clock_sign/mutant.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/scripts/analytic_fluid_cosmology_2026_10_13.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/physical_clock_sign/RESULTS.json"
+        ],
+        "exit_code": 1,
+        "passed": 3,
+        "failed": 1,
+        "detection": "actual numerical assertion",
+        "source_unchanged": true
+      },
+      {
+        "name": "omit_critical_polynomial",
+        "source_sha256": "abdff747091fd107bf83c495a2653bdd22ee8bde31574b2cda2480bbf340acbd",
+        "harness_sha256": "40ed55e17b566f346ac8894511a640f461389fa646832ce94dd4c6a0a3743269",
+        "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+        "selected_families": [
+          "mode_controls"
+        ],
+        "started_at": "2026-10-13T06:34:08.930343+00:00",
+        "finished_at": "2026-10-13T06:34:09.368839+00:00",
+        "command": [
+          "/usr/local/bin/python3",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/omit_critical_polynomial/harness.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/omit_critical_polynomial/mutant.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/scripts/analytic_fluid_cosmology_2026_10_13.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/omit_critical_polynomial/RESULTS.json"
+        ],
+        "exit_code": 1,
+        "passed": 21,
+        "failed": 4,
+        "detection": "actual numerical assertion",
+        "source_unchanged": true
+      },
+      {
+        "name": "metric_connection_component",
+        "source_sha256": "dae2f714a6dc775a14dcd37d5970dfca025ff55c2a7e10cbd5f7b551fb82a4dd",
+        "harness_sha256": "a0c9fe3a8cb1fc94ba8c3ac04faa8f47cbc63690c7ba2bc7f3448ae917ff6241",
+        "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+        "selected_families": [
+          "off_trajectory_controls"
+        ],
+        "started_at": "2026-10-13T06:34:09.369221+00:00",
+        "finished_at": "2026-10-13T06:34:09.821112+00:00",
+        "command": [
+          "/usr/local/bin/python3",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/metric_connection_component/harness.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/metric_connection_component/mutant.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/scripts/analytic_fluid_cosmology_2026_10_13.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/metric_connection_component/RESULTS.json"
+        ],
+        "exit_code": 1,
+        "passed": 732,
+        "failed": 60,
+        "detection": "actual numerical assertion",
+        "source_unchanged": true
+      },
+      {
+        "name": "coercive_potential_square",
+        "source_sha256": "8f12824003119e4e87a40e56c27f52727047c2ab96f253af72d7d29d88d6fb80",
+        "harness_sha256": "a0c9fe3a8cb1fc94ba8c3ac04faa8f47cbc63690c7ba2bc7f3448ae917ff6241",
+        "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+        "selected_families": [
+          "off_trajectory_controls"
+        ],
+        "started_at": "2026-10-13T06:34:09.821520+00:00",
+        "finished_at": "2026-10-13T06:34:10.277719+00:00",
+        "command": [
+          "/usr/local/bin/python3",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/coercive_potential_square/harness.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/coercive_potential_square/mutant.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/scripts/analytic_fluid_cosmology_2026_10_13.py",
+          "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/author_mutations_v1/coercive_potential_square/RESULTS.json"
+        ],
+        "exit_code": 1,
+        "passed": 400,
+        "failed": 392,
+        "detection": "actual numerical assertion",
+        "source_unchanged": true
+      }
+    ]
+  },
+  "prior_controls": "Original four independently executed omissions preserved in exploratory archive; all14 scientific functions retain identical AST. New canonical mutations add frame sign, critical polynomial, connection component and coercive square controls.",
+  "scope": "Selected affected functions actually executed; not an assertion of complete mutant coverage."
+}

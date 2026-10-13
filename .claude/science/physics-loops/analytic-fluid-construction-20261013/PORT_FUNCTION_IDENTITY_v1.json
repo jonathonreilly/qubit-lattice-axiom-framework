@@ -1,0 +1,29 @@
+{
+  "original_runner_sha256": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+  "canonical_runner_sha256": "f25b2174668c6c8e2e26f6e55bdb9dfa76aa8a1cd08c896235986c5871a3de39",
+  "unchanged_function_count": 14,
+  "unchanged_function_ast": {
+    "check": true,
+    "close": true,
+    "exact": true,
+    "functions": true,
+    "n_rhs": true,
+    "momentum_quantities": true,
+    "symbolic_controls": true,
+    "off_trajectory_controls": true,
+    "tracking_rhs": true,
+    "tracking_histories": true,
+    "scaled_n_rhs": true,
+    "scaled_momentum_rhs": true,
+    "disturbed_histories": true,
+    "mode_controls": true
+  },
+  "new_functions": [
+    "frame_witness_controls"
+  ],
+  "changed_functions": [
+    "main"
+  ],
+  "fixture_bytes_unchanged": true,
+  "scientific_port_scope": "All original scientific functions identical; new direct frame witness and unique assertion check. Portable I/O and declared timeout/input closure added. No runtime dependency on original campaign paths."
+}

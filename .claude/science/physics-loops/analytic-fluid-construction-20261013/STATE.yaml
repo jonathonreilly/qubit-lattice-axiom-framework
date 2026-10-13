@@ -1,0 +1,15 @@
+{
+  "target_claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "trace_class": "frontier_discovery",
+  "reachability_to_target": "unknown_frontier",
+  "bare_retained_allowed": false,
+  "audit_required_before_effective_retained": true,
+  "status": "preparing_milestone",
+  "parent_campaign": "observations-to-toe-24h-20261012",
+  "fixed_deadline_at": "2026-10-13T16:53:00.057432+00:00",
+  "branch": "codex/analytic-fluid-construction-20261013",
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "scientific_author": "parent /root",
+  "next_action": "Complete portable source preflight, independent final source review, cache and one combined validation; regular PR only when applicable gates pass."
+}

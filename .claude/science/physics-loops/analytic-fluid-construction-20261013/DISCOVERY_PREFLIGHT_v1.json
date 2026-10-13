@@ -1,0 +1,18 @@
+{
+  "claim_id": "analytic_fluid_cosmology_construction_bounded_theorem_note_2026-10-13",
+  "claim_type": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "primary": "scripts/analytic_fluid_cosmology_2026_10_13.py",
+  "helpers_graph": [],
+  "helpers_packet": [],
+  "citations": [],
+  "declared_inputs": [
+    "docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json",
+    "outputs/analytic_fluid_cosmology_2026_10_13/imports.json"
+  ],
+  "timeout": 180,
+  "discovered": true
+}

@@ -9142,3 +9142,66 @@ Still in force: S26 §5, S23 §5, S20 §5 and S17 §1.8.
   - every S29 reading;
   - the owner questions.
 - **Model provenance.** Workers, supervisor and syntheses are Claude Opus 5.5 (one family). Referees are codex gpt-5.6-sol at xhigh, per each `codex_run.log` header.
+
+## C5 follow-up: the root's own strain law on hot matter (Jon, 2026-10-13 12:15Z)
+
+Jon's request: "run the strain law test on hot matter … the root's own strain rule has never been built … If that rule produces the effect, the framework conflicts with observation unless the subtraction also covers that channel."
+
+**Standard (Jon, 2026-10-13):** we only need to match observed physical outcomes. Readings are judged against observational bounds, not against theory preferences. Fixed readings, as always.
+
+**F1. The root's UD/SF-consistent strained QED law, and its hot-matter strain channel.** (Pre-registered 2026-10-13 12:15Z.)
+- **Plain question.**
+  - R19-34 computed the additive-mass strain Hessian of the D1 Wilson-type edges under an added H-cov rule (W/ℓ): −0.0405e².
+  - Its referee recorded OPEN, because the root's registered strain prescription is the SF flow (Lemma H: v = ½h·∇(ε²/2), e(h) = w⟨ε∘Φ_h⟩) with the UD/VW vertices. That law was never built for an interacting gauge theory, and a tuned W/ℓ^κ zero exists.
+  - Build the strained one-loop U(1) law that the root actually implies, and compute its additive-mass E_g strain Hessian on the root's D1 edges. Then size the hot-matter channel against observation.
+- **Setting.**
+  - The R18-9 root, D1(0.909103708, 0.555604226), and the 0⁺ root, D1(0.915438682, 0.568280847).
+  - The photon Gph(2.9435).
+  - The strain applied by SF:
+    - each band's dispersion strained by its own flow Φ_h;
+    - the kinetic operator strained as D_h(k) = D(Φ_h(k)) or the registered equivalent;
+    - the vertices by minimal coupling of the strained operator, consistent with the UD/VW vertices at h = 0.
+  - Identify every choice the root does not fix, and carry each as a branch. Do not pick one silently.
+  - One loop, Feynman gauge (with a gauge-parameter check), and the critical mass fixed at h = 0, as in R19-34.
+- **Prior art (count once):**
+  - R19-34 and its verdict;
+  - R19-31 and its verdict;
+  - R19-15's Lemma H, R19-35's Lemma R1, R16-13, R9-2, R18-9 and R19-11;
+  - P-R19-34a and P-R19-31b;
+  - comparator: Wilson additive mass renormalization (RECALLED).
+- **Probes.**
+  - (a) Construct the SF-strained law. Check locality (smoothness on the torus), gauge invariance (the Ward identity at every h), and that it reproduces the archived shear rows at O(h²) for the free bands.
+  - (b) The additive-mass Hessian under SF, per branch, converged (N and quadrature). Also give a structural account: is there a change-of-variables identity that forces zero when the photon and fermion are flowed alike, and what breaks it?
+  - (c) If nonzero: m_g²/H² through the history (150 GeV → 1 MeV) and today's in-matter |m_g| (Earth, Sun, IGM), using R19-34's canonical mapping (state it).
+  - (d) Does any registered subtraction cover the channel? Check (S_loc) as registered, P-R19-31b (ψ̄ψ as a background) and P-R19-34a (a strain-covariant critical mass). If one covers it, what does it remove, and does it remove anything observed?
+- **FIXED readings.**
+  - **SF-HAZARD:** a nonzero Hessian (≥ 1e-3 e² and converged) in every branch the root permits, with a size beyond an observational bound in at least one epoch or environment (per F2), and no registered subtraction covering it.
+  - **SF-COVERED:** a nonzero Hessian, but a registered subtraction (cite it) removes it, with nothing observed removed.
+  - **SF-SAFE:** the Hessian is zero (proved, or ≤ 1e-10 checked) in every permitted branch, or every size is below the bounds.
+  - **OPEN:** branches disagree in reading, or the law cannot be built from the registered texts. State which.
+- **Expectation.**
+  - The Hessian is nonzero: the photon and the fermion have different dispersions, so their SF flows differ and no common change of variables exists.
+  - The early-universe size is beyond |m_g| < H, as under H-cov.
+  - P-R19-34a would cover it, as an added rule.
+  - So SF-HAZARD on the registered law and SF-COVERED with P-R19-34a.
+
+**F2. What observations allow for an environment-dependent graviton mass or strain stiffness.** (Pre-registered 2026-10-13 12:15Z.)
+- **Plain question.** Hot-matter channels give a strain stiffness μ(ρ, T) that depends on the local matter state: m_g² ∝ ⟨ψ̄ψ⟩ or ⟨φ²⟩ thermal. Before reading F1's sizes against "|m_g| < H" or the LVK vacuum bound, establish which observations actually constrain such a medium-dependent term, and at what size.
+- **Setting.** Linearized TT waves with a stiffness term μ(x, t) set by the local matter state. Cases:
+  - (i) GWs crossing the Earth on the way to the detectors (LIGO/Virgo see sources from all sky directions, including from below);
+  - (ii) GWs crossing the Sun, the Galaxy and the IGM;
+  - (iii) the binary-pulsar near zone inside a neutron star;
+  - (iv) cosmology: primordial tensor modes and the CMB B-mode/BBN bounds through the hot era, including tachyonic growth if the sign is negative;
+  - (v) static potentials: fifth-force tests, which need the scalar/vector content.
+- **Prior art (count once):**
+  - R19-21 and R19-31 (|m_g| < H used as a line; propagation not computed, per their referees);
+  - R19-34's verdict ("needs a propagation calculation");
+  - comparators (RECALLED, with citations where possible): LVK GWTC-4.0 dispersion bounds, GW170817 speed, CMB tensor bounds, massive-gravity screening literature.
+- **Probes.**
+  - (a) For each case, the observable effect of μ(ρ, T): attenuation, reflection, phase shift, or growth.
+  - (b) The bound on μ (or |m_g|) per environment, as a table.
+  - (c) Apply the table to R19-34's H-cov sizes as a placeholder. Apply it to F1's numbers when they exist; F1 may cite F2.
+- **FIXED readings.**
+  - **ENV-BOUNDS:** a table of environment-specific bounds, each with its observational basis and the derivation's assumptions, including at least the Earth-crossing case and the hot early universe.
+  - **OPEN:** otherwise.
+- **Expectation.** Earth-crossing: a wave with ω < |m_g| inside the Earth is evanescent over 1.3e7 m. At |m_g| ~ 1e-9 eV the decay length is ~0.2 m, so sources below the horizon would be invisible, which contradicts detection of sources from all directions. Bounded by geometry. In the early universe, a tachyonic μ ≫ H² gives exponential tensor growth, bounded by the CMB.

@@ -79,3 +79,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T14:44:48.952007+00:00: Vacuum multitime source assembly and compact preparation comparison accepted. Prepared multitime independent fully read; comparison active. Threshold root frozen before fresh check; finite algebra Lean attempt02 passes, failed attempt01 preserved. Chirp publication source frozen under strict gap, root integration pending. No retained verdict or editable-prompt change.
 
 2026-10-13T15:18:48.564425+00:00: Threshold and prepared multitime complete comparisons accepted; postmeasurement root306 frozen before independent check. Chirp V1 runtime metadata failure preserved, V2 exact repair accepted and prepare running. No retained verdict or editable-prompt change.
+
+2026-10-13T15:41:14.430987+00:00: Chirp9520 published/attached with actual gates; multi-time publication accepted and prepare running. Threshold source accepted with explicit104record/110file freeze scope; postmeasurement390 fullyread, comparisonactive. Rootthreshold-protocol211 frozen before fresh targetcheck. No editableprompt or retained verdict.

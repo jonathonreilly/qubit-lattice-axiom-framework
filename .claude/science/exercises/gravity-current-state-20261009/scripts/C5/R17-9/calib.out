@@ -1,0 +1,14 @@
+(i) continuum q=0 photon pair weight vs helicity-2 formula, worst rel. dev: 5.09e-14
+(ii) G(1.4) U scalar m=0.3 N=64 grid-shift Xi_T2g -4.51153e-04 Xi_Eg -2.46541e-04 | closed form -4.51136e-04 -2.46525e-04
+(ii) G(1.4) U scalar m=0.3 N=128 grid-shift Xi_T2g -4.51137e-04 Xi_Eg -2.46526e-04 | closed form -4.51136e-04 -2.46525e-04
+(ii) G(1.4) U scalar m=0.3 N=256 grid-shift Xi_T2g -4.51136e-04 Xi_Eg -2.46526e-04 | closed form -4.51136e-04 -2.46525e-04
+(ii) G(1.4) U scalar m=0.1 N=64 grid-shift Xi_T2g -4.61728e-04 Xi_Eg -2.52861e-04 | closed form -4.61590e-04 -2.52753e-04
+(ii) G(1.4) U scalar m=0.1 N=128 grid-shift Xi_T2g -4.61599e-04 Xi_Eg -2.52761e-04 | closed form -4.61590e-04 -2.52753e-04
+(ii) G(1.4) U scalar m=0.1 N=256 grid-shift Xi_T2g -4.61591e-04 Xi_Eg -2.52754e-04 | closed form -4.61590e-04 -2.52753e-04
+(iii) gammaG(1.4000) N=32 Xi_T2g +9.75680e-02 (a +1.1692e-01 b -1.9350e-02)  Xi_Eg +1.19817e-01 (a +1.4261e-01 b -2.2793e-02)  0.2s
+(iii) gammaG(1.4000) N=48 Xi_T2g +9.78309e-02 (a +1.1718e-01 b -1.9349e-02)  Xi_Eg +1.20121e-01 (a +1.4293e-01 b -2.2810e-02)  0.6s
+(iii) gammaG(1.4000) N=64 Xi_T2g +9.78835e-02 (a +1.1723e-01 b -1.9349e-02)  Xi_Eg +1.20180e-01 (a +1.4300e-01 b -2.2816e-02)  1.4s
+(iii) gammaNN N=32 Xi_T2g +1.43839e-02 (a +2.5271e-02 b -1.0887e-02)  Xi_Eg +1.71740e-02 (a +3.1598e-02 b -1.4424e-02)  0.2s
+(iii) gammaNN N=48 Xi_T2g +1.44124e-02 (a +2.5300e-02 b -1.0887e-02)  Xi_Eg +1.71975e-02 (a +3.1639e-02 b -1.4441e-02)  0.6s
+(iii) gammaNN N=64 Xi_T2g +1.44223e-02 (a +2.5310e-02 b -1.0887e-02)  Xi_Eg +1.72055e-02 (a +3.1653e-02 b -1.4447e-02)  1.4s
+elapsed 7.7s

@@ -6264,3 +6264,18 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Archive fix (01:30Z):** the committed R17-5 runner imported a profile file from a path that was not archived. The file was copied beside it and the path corrected. The rerun matches the stored output (reported by R17-8).
 
   Referee running.
+- **R17-9 (vector loops, SM on one cone): worker reading OPEN.**
+  - **The vector TT vertex VU:** the Maxwell stress of site-averaged fields at R9-9's placement. It is local, and it reduces to the continuum helicity-2 amplitude.
+  - **The Maxwell vector pushes the cone outward, like Dirac (not boson-like).** This comes from E–B interference. So the expectation's sign premise fails.
+  - **Under VU, no SM-count zero.** Two conditions are incompatible on all sampled laws:
+    - the T₂g row needs Ξ_γ,T2g ≤ 6e-4;
+    - the Dirac birefringence needs Ξ_γ,Eg − Ξ_γ,T2g ≥ 4.46e-3.
+  - **Under VM (magnetic part off R9-9's placement), an explicit SM-count zero exists:**
+    - content: 4 scalars + 22.5 Dirac fields + 12 vectors;
+    - cost: 3 edge tunings, every edge subluminal;
+    - Ξ_T2g = Ξ_Eg = μ_E = 0 at m = 0.01 and 0.001;
+    - μ_T2 = +0.106 is left over, from the Wilson-Dirac fields.
+  - **Whether VM is in-setting decides between OPEN and SM-LIFTED.** The placement is a law datum (P-R17-9b).
+  - **Bill:** 9 + CC per class or 13 + CC per species. The gravity–charge block split ends.
+
+  Referee running.

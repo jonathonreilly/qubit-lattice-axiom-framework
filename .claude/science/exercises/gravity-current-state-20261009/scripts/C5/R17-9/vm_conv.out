@@ -1,0 +1,12 @@
+gammaGw(0.3000,1.0000) N= 48 shifts (1, 2) VM Xi_T2g -2.43170e-03 Xi_Eg +7.98835e-03  (1s)
+gammaGw(0.3000,1.0000) N= 64 shifts (1, 2) VM Xi_T2g -2.42121e-03 Xi_Eg +8.00231e-03  (2s)
+gammaGw(0.3000,1.0000) N= 96 shifts (1, 2) VM Xi_T2g -2.41406e-03 Xi_Eg +8.01025e-03  (7s)
+gammaGw(0.3000,1.0000) N=128 shifts (1, 2) VM Xi_T2g -2.41160e-03 Xi_Eg +8.01261e-03  (20s)
+gammaGw(0.3000,1.0000) N=128 shifts (2, 4) VM Xi_T2g -2.41980e-03 Xi_Eg +8.00232e-03  (33s)
+gammaGw(0.3000,0.5000) N= 48 shifts (1, 2) VM Xi_T2g -3.45406e-03 Xi_Eg -2.69124e-02  (34s)
+gammaGw(0.3000,0.5000) N= 64 shifts (1, 2) VM Xi_T2g -3.45257e-03 Xi_Eg -2.68702e-02  (35s)
+gammaGw(0.3000,0.5000) N= 96 shifts (1, 2) VM Xi_T2g -3.44901e-03 Xi_Eg -2.68510e-02  (41s)
+gammaGw(0.3000,0.5000) N=128 shifts (1, 2) VM Xi_T2g -3.44675e-03 Xi_Eg -2.68460e-02  (54s)
+gammaGw(0.3000,0.5000) N=128 shifts (2, 4) VM Xi_T2g -3.45540e-03 Xi_Eg -2.68730e-02  (68s)
+
+[exited with code 0]

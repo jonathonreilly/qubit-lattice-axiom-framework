@@ -1,0 +1,21 @@
+gammaNN T2g parts=EB  symmetric-pair N=64 q=0.08,0.16: alpha +2.53211e-02 beta -1.08873e-02 Xi +1.44337e-02
+gammaNN T2g parts=E  symmetric-pair N=64 q=0.08,0.16: alpha +3.24608e-03 beta -5.19922e-03 Xi -1.95314e-03
+gammaNN T2g parts=B  symmetric-pair N=64 q=0.08,0.16: alpha +3.52821e-03 beta -1.97936e-03 Xi +1.54886e-03
+   grid-shift N=64 shifts (2,4): Xi +1.43892e-02
+   grid-shift N=96 shifts (1,2): Xi +1.44293e-02 (alpha +2.53166e-02 beta -1.08873e-02)
+gammaNN Eg parts=EB  symmetric-pair N=64 q=0.08,0.16: alpha +3.16655e-02 beta -1.44475e-02 Xi +1.72180e-02
+gammaNN Eg parts=E  symmetric-pair N=64 q=0.08,0.16: alpha +3.20242e-03 beta -8.50622e-03 Xi -5.30381e-03
+gammaNN Eg parts=B  symmetric-pair N=64 q=0.08,0.16: alpha +3.29445e-03 beta -1.62548e-03 Xi +1.66898e-03
+   grid-shift N=64 shifts (2,4): Xi +1.71741e-02
+   grid-shift N=96 shifts (1,2): Xi +1.72112e-02 (alpha +3.16630e-02 beta -1.44518e-02)
+gammaG(1.4000) T2g parts=EB  symmetric-pair N=64 q=0.08,0.16: alpha +1.17268e-01 beta -1.93485e-02 Xi +9.79196e-02
+gammaG(1.4000) T2g parts=E  symmetric-pair N=64 q=0.08,0.16: alpha +6.31823e-03 beta -7.50660e-03 Xi -1.18837e-03
+gammaG(1.4000) T2g parts=B  symmetric-pair N=64 q=0.08,0.16: alpha +3.57381e-02 beta -4.77088e-03 Xi +3.09672e-02
+   grid-shift N=64 shifts (2,4): Xi +9.75970e-02
+   grid-shift N=96 shifts (1,2): Xi +9.79071e-02 (alpha +1.17256e-01 beta -1.93485e-02)
+gammaG(1.4000) Eg parts=EB  symmetric-pair N=64 q=0.08,0.16: alpha +1.43037e-01 beta -2.28155e-02 Xi +1.20222e-01
+gammaG(1.4000) Eg parts=E  symmetric-pair N=64 q=0.08,0.16: alpha +6.51600e-03 beta -1.03728e-02 Xi -3.85679e-03
+gammaG(1.4000) Eg parts=B  symmetric-pair N=64 q=0.08,0.16: alpha +3.86412e-02 beta -4.47943e-03 Xi +3.41618e-02
+   grid-shift N=64 shifts (2,4): Xi +1.19843e-01
+   grid-shift N=96 shifts (1,2): Xi +1.20205e-01 (alpha +1.43025e-01 beta -2.28199e-02)
+elapsed 20.7s

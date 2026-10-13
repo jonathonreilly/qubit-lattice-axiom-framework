@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-13T15:24:17.403659+00:00",
+  "pr": {
+    "baseRefName": "physics-loop/toe-modulated-kinetic-energy-20261013",
+    "headRefName": "physics-loop/toe-chirped-kinetic-energy-20261013",
+    "headRefOid": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+    "isDraft": false,
+    "mergeable": "UNKNOWN",
+    "number": 9520,
+    "state": "OPEN",
+    "title": "Derive kinetic energy laws for time-varying drive frequency",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520"
+  },
+  "head": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "committed_path_count": 214,
+  "prepared_receipt_sha256": "9bc0e12b082cb0668a9eac6f80b136b4095af364283301a551e026f4cdb67ba7",
+  "verification_receipt_sha256": "9ab112069b6b154604bb9aa7e7d5d10ad9deb00644566aa3af2ba76482cf1a4d",
+  "pr_body_sha256": "ac1569490f228a8907aaed2a112457c9f2a18753b9963e4a92ce42e56c669bc0",
+  "logs": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_publication_git",
+  "attachment_pending": true,
+  "editable_prompt_files_changed": []
+}

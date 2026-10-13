@@ -1,0 +1,33 @@
+{
+  "direct_edges": [
+    {
+      "from": "threshold_crossing_chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "threshold_crossing_chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "threshold_crossing_chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 3,
+    "nodes": 1
+  },
+  "nodes": [
+    {
+      "claim_id": "threshold_crossing_chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13"
+      ],
+      "path": "docs/THRESHOLD_CROSSING_CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/threshold_crossing_chirp_identity_2026_10_13.py"
+    }
+  ]
+}

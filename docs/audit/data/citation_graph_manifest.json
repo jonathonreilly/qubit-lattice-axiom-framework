@@ -1,6 +1,6 @@
 {
- "edge_count": 15920,
- "node_count": 7053,
+ "edge_count": 15923,
+ "node_count": 7054,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21161,6 +21161,10 @@
   "three_state_clock_endpoint_reflection_sector_energy_and_ground_defect_bound_bounded_theorem_note_2026-09-15": {
    "deps_hash": "29e931ead268",
    "out_degree": 1
+  },
+  "threshold_crossing_chirped_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "8e1a2499f577",
+   "out_degree": 3
   },
   "through_lattice_role_marking_two_finite_negatives_bounded_computation_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",

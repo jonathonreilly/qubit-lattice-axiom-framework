@@ -1,0 +1,126 @@
+{
+  "actual_attachment": {
+    "pr": 9520,
+    "result": "successful tool attachment; raw tool response retained in conversation",
+    "tool": "mcp__codex_app__attach_artifact",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520",
+    "utc": "2026-10-13T15:25:19.382276+00:00"
+  },
+  "actual_parent_pr": {
+    "attachment_pending": true,
+    "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+    "committed_path_count": 214,
+    "editable_prompt_files_changed": [],
+    "head": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+    "logs": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_publication_git",
+    "pr": {
+      "baseRefName": "physics-loop/toe-modulated-kinetic-energy-20261013",
+      "headRefName": "physics-loop/toe-chirped-kinetic-energy-20261013",
+      "headRefOid": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+      "isDraft": false,
+      "mergeable": "UNKNOWN",
+      "number": 9520,
+      "state": "OPEN",
+      "title": "Derive kinetic energy laws for time-varying drive frequency",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520"
+    },
+    "pr_body_sha256": "ac1569490f228a8907aaed2a112457c9f2a18753b9963e4a92ce42e56c669bc0",
+    "prepared_receipt_sha256": "9bc0e12b082cb0668a9eac6f80b136b4095af364283301a551e026f4cdb67ba7",
+    "utc": "2026-10-13T15:24:17.403659+00:00",
+    "verification_receipt_sha256": "9ab112069b6b154604bb9aa7e7d5d10ad9deb00644566aa3af2ba76482cf1a4d"
+  },
+  "archived_provisional_relations": [],
+  "canonical_core_maps": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/CHIRPED_KINETIC_LAW_ROOT_PROBE_V2.md",
+      "byte_end_exclusive": 37005,
+      "byte_start_inclusive": 10440,
+      "bytes": 26565,
+      "canonical_path": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "b0df91a85971695996ac32233c112dbe6718223ad733d1a28424666c9bde3874",
+      "claim_id": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "87011c662344ed684a7251f5067bb8193d156837a50a23e71fa29ccff38e92f6",
+      "line_end_inclusive": 698,
+      "line_start_inclusive": 184,
+      "lines": 515
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/CHIRPED_KINETIC_LAW_INDEPENDENT.md",
+      "byte_end_exclusive": 79635,
+      "byte_start_inclusive": 37437,
+      "bytes": 42198,
+      "canonical_path": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "b0df91a85971695996ac32233c112dbe6718223ad733d1a28424666c9bde3874",
+      "claim_id": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "279a96bc07b495a59b829cac70586ae8e115f0ddefca0d405bb15f0a7de6e95c",
+      "line_end_inclusive": 1558,
+      "line_start_inclusive": 709,
+      "lines": 850
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "byte_end_exclusive": 49856,
+      "byte_start_inclusive": 27798,
+      "bytes": 22058,
+      "canonical_path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "line_end_inclusive": 901,
+      "line_start_inclusive": 432,
+      "lines": 470
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "byte_end_exclusive": 46480,
+      "byte_start_inclusive": 5846,
+      "bytes": 40634,
+      "canonical_path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a",
+      "claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "line_end_inclusive": 964,
+      "line_start_inclusive": 106,
+      "lines": 859
+    }
+  ],
+  "history_only_relations": [],
+  "initial_state_dependency": false,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+      "bytes": 81818,
+      "claim_id": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 1593,
+      "path": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "b0df91a85971695996ac32233c112dbe6718223ad733d1a28424666c9bde3874",
+      "role": "direct mathematical parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+      "bytes": 52606,
+      "claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 930,
+      "path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "role": "direct mathematical parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+      "bytes": 49234,
+      "claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 993,
+      "path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a",
+      "role": "direct mathematical parent"
+    }
+  ],
+  "same_packet_parents": [],
+  "standalone_hypotheses": {
+    "edges_created": [],
+    "scope": "supplied massive free CAR vacuum, fixed real slots, positive frequency floor and fixed resources; separate exact cell embedding/error hypotheses"
+  }
+}

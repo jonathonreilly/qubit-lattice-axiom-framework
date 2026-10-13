@@ -1,0 +1,32 @@
+{
+  "additional_files": {
+    "FINAL_FREEZE.json": {
+      "bytes": 27530,
+      "sha256": "75a56964dd6cd3e83789f0da0638e4ad5101650f710d5c382fa7487573536d72"
+    },
+    "FREEZE_LOG.json": {
+      "bytes": 704,
+      "sha256": "137ce1cb19108533282e312768d23555fa7c6e4117e41a5cd3fa52a207ab1739"
+    },
+    "payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/threshold_crossing_chirp_comparison/FINAL_FREEZE.json": {
+      "bytes": 5440,
+      "sha256": "77967561c7847d6dee9edd5f82293e23e669704b962e275dbda62d0609817040"
+    },
+    "payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/threshold_crossing_chirp_comparison/FREEZE_LOG.json": {
+      "bytes": 1031,
+      "sha256": "214014bef431adb55c0341c86341ea0b9580a23020398364719205f0a900a1c0"
+    },
+    "payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/threshold_crossing_chirp_fresh_independent/FINAL_FREEZE.json": {
+      "bytes": 4603,
+      "sha256": "49608a1191f418ef42f0f51633d3cdd7508e57a65da2e0d95bf355438af47f7c"
+    },
+    "payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/threshold_crossing_chirp_fresh_independent/FREEZE_LOG.json": {
+      "bytes": 1027,
+      "sha256": "21b5e1d338e2613611497a88f1507ae54d2fd35f8eb292088d0982b1f94bd54c"
+    }
+  },
+  "complete_files": 110,
+  "content_or_analytic_repair": false,
+  "meaning": "four nested freeze/log files are indirectly bound by frozen SOURCE_SELECTION; preserve six additional files explicitly without changing accepted freeze",
+  "scoped_frozen_records": 104
+}

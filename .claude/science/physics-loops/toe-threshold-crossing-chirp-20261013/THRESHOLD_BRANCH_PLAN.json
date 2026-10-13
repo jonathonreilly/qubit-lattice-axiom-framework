@@ -1,0 +1,6 @@
+{
+  "base": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+  "branch": "physics-loop/toe-threshold-crossing-chirp-20261013",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520"
+}

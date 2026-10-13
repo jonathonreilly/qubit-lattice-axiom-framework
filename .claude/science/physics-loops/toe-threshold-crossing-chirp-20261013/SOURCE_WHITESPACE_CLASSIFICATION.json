@@ -1,0 +1,4 @@
+{
+  "policy": "exact gzip archives bypass UTF-8 whitespace scanning; no text exceptions",
+  "preserved_source_whitespace": []
+}

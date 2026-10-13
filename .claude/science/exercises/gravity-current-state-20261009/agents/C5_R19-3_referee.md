@@ -1,0 +1,47 @@
+# VERDICT: CONFIRMED WITH CORRECTIONS
+
+The fixed **J2-GAUGE-BRIDGE** reading is met. An independent exact expansion, which does not import or execute the worker's code, reproduces the load-bearing coefficients and the gauge variation. The corrections concern scope and terminology: Lemma D is a theorem about the stated Einstein-density family, not every conceivable quadratic stress; the weight-1 result is established for the registered linear gauges (and, more generally, propagator changes carried by a pure-gauge leg), not literally all gauges; and only the full EH + gauge-fixing + ghost variation is the gauge-fixed effective-action source.
+
+## Per-item findings
+
+1. **One harmonic mode: (A) = 2, (B) = 4, and (C) = 1 — confirmed.** I independently formed \(G^{(2)}_{\mu\nu}\) from the phase-averaged \(\Gamma^{(1)}\Gamma^{(1)}\) terms, formed \(({-g})G^{\mu\nu}\) and \(\sqrt{-g}G^{\mu\nu}\) algebraically, and inverted a separately entered momentum-space Fierz–Pauli plus gauge-fixing quadratic form (R19-3_referee_checks.py:31-153). Its Feynman–de Donder propagator is exactly \(P_{\rm FdD}/(k_0^2-\omega^2)\); for \(k_\mu=(-1,0,0,1)\), TT gives \(c=1\), while harmonic gauge gives \((c_B,c_A,c_{A'})=(4,2,1)\), independent of \(\xi\), and every tensor is \(c\,k_\mu k_\nu/\omega\) (R19-3_referee_checks.out:1-4). This independently matches the worker (R19-3_report.md:44-54; scripts/r193_onepoint.out:3-11; scripts/r193_gauge_family.out:9-15). For (C), ten real symmetric-tensor coordinates contribute \(10(\omega/2)=5\omega\); four complex Grassmann vector ghosts contribute \(-4\omega=-8(\omega/2)\); the net is \(\omega=2(\omega/2)\), hence \(c_C=1\) (R19-3_referee_checks.out:15; R19-3_report.md:239-244). The qualification is that (A) and (B) are the displayed \(h\)-sector composite operators; ghosts do not get added to those definitions. They enter (C) and the complete background-field source.
+
+2. **Lemma D and the symbolic check — confirmed in its proper domain.** For
+
+   \[
+   Y_w^{\mu\nu}=(\sqrt{-g})^wG^{\mu\nu},
+   \]
+
+   the bilinear covariance identity at zero total momentum reduces, after the off-shell linearized Bianchi identity, to a term proportional to
+
+   \[
+   (w-1)(k\!\cdot\!v)G^{(1)\mu\nu}[X].
+   \]
+
+   Thus generic arbitrary \(X\) selects \(w=1\). A direct off-shell substitution of \(h_{\mu\nu}=k_\mu v_\nu+k_\nu v_\mu+X_{\mu\nu}\), using the independent expansion, finds nonzero gauge–\(X\) cross terms in 10/10 components for (A) and (B), and 0/10 for (A′) (R19-3_referee_checks.py:228-247; R19-3_referee_checks.out:13-14). This reproduces the worker's separate symbolic result (scripts/r193_lemmaD.out:3-5) and validates the proof at R19-3_report.md:220-229. The theorem is unique only within the stated contravariant Einstein-density family (with the lower-index (B) checked separately), for generic off-shell modes. It does not say that every possible weight-\(w\) quadratic stress construction is gauge-blind only at \(w=1\).
+
+   **Is the weight-1 vacuum density gauge-independent?** Yes for the registered TT, canonical Coulomb/Poisson, and linear covariant gauges whose propagator differs from TT by terms having a pure-gauge leg. The independent \(\beta\)-scan gives \(c_{A'}=1\) at \(\beta=1/3,1/2,3/4,2\), while (A) and (B) vary (R19-3_referee_checks.out:5-9). No theorem in the packet covers arbitrary axial or nonlinear gauges, regulator contact terms, interactions, or higher loops; the worker itself excludes or disclaims them (R19-3_report.md:118,230-235,275-276). Therefore “in every gauge” must be read as “throughout the registered one-loop linear-gauge class,” not literally every gauge fixing.
+
+3. **Background-field accounting — confirmed, with one naming correction.** In Feynman–de Donder gauge the complete gauge-fixed \(h_{\mu\nu}\) quadratic action has ten real minimal wave operators and therefore contributes \(5\). The independently computed EH variation (A′) contributes \(1\), so the gauge-fixing contribution is \(4\). The four-component complex FP ghost is Grassmann odd and contributes \(-1\) per complex component, hence \(-4\). The total is
+
+   \[
+   1_{\rm EH}+4_{\rm GF}-4_{\rm FP}=1,
+   \]
+
+   exactly the two TT polarizations (R19-3_referee_checks.out:15-16; scripts/r193_gauge_family.out:18-22). The ghost sign and count are correct—“\(-8\) real-scalar equivalents times \(1/2\)” is the same \(-4\). But (A′) alone is the **EH part**, not by itself the metric variation of the full gauge-fixed effective action. The full source is EH + gauge fixing + ghosts; their cancellation was explicitly established only for \(\beta=1/2,\xi=1\) in the worker (R19-3_report.md:235-236,298). General on-shell gauge independence applies to the total effective action, not automatically to each summand; this is also the scope of the primary literature ([Gonçalves, de Paula Netto & Shapiro, Phys. Rev. D 97, 026015](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.026015)).
+
+4. **Literal-N counting — formula confirmed; “double-counts” needs precision.** The independent relaxed-source contraction gives \(c_H=\xi\), so literal \(N\) has
+
+   \[
+   c_N=c_A+c_H=2+\xi,
+   \]
+
+   while the physical BRST/Hamiltonian value is \(c_C=1\) (R19-3_referee_checks.py:194-216,302-306; R19-3_referee_checks.out:10-12). This matches scripts/r193_relaxed.out:4-5 and R19-3_report.md:217-218. It is exactly a **double count only in the exact-harmonic limit** \(\xi\to0\), where \(c_N=2\). At finite Gaussian weight it is a gauge-dependent overcount: the source is \((2+\xi)e_g\) and its excess over the physical zero point is \((1+\xi)e_g\). After (S) subtracts one \(e_g\), a scalar remainder \((1+\xi)e_g\) remains.
+
+5. **The fixed reading — J2-GAUGE-BRIDGE is met.** The exact clause requires “a refereed demonstration that the non-absorbable part depends on the gauge or the pseudotensor choice, so J2 needs a named observable bridge” (TESTS.md:7242-7245). That demonstration now exists independently: (A) changes from \(1\) in TT to \(7/4,2,3,1/2\) across the tested gauges, and (B) changes from \(1\) to \(17/4,4,3,11/2\), while (A′) remains \(1\) (R19-3_referee_checks.out:2-9). Hence the remainder \((c-1)e_g\) depends on both gauge and composite-stress definition and even changes sign for (A) at \(\beta=2\). **J2-ABSORBED is not met literally**, because the registered (A) and (B) fail in harmonic gauge. **NEITHER is not met**, because no gauge-independent non-absorbable remainder appears in (C), the checked full background-field total, or the weight-1 bridge. P-r193a is a genuine named, number-free observable bridge, not a result of the four axioms: source/action and physical-observable identification are expressly outside them (MINIMAL_AXIOMS_2026-06-29.md:85-90,173-190; R19-3_report.md:263-269).
+
+6. **Probe (d) — confirmed only as the stated conditional completion.** If P136(ii) places the quantum gravity sector inside the same full law Hamiltonian that defines \(e_0\), then (S) subtracts its physical \(e_g\) definitionally (C5_R17-7_referee_verdict.md:16-23). If P-r193a selects the weight-1/full-background source and H-V3 supplies the symbol-substituted forward vertex, the remaining isotropic one-point term is \(W_gh_{\mu\nu}\), which the stipulated class-\(\mathcal D\) (d-i) receiver cancels exactly (R19-3_report.md:251-267; C5_R17-11_referee_verdict.md:5-20,28-29). No fitted number is introduced. This is not a derivation from the lattice axioms, a proof for interacting quantum gravity, or physical disappearance of the Planckian inertia: it is hidden in the stipulated E/creation compensator, whose microscopic action remains open (C5_R17-11_referee_verdict.md:22-29,41-45). Cubic invariance makes the summed one-point tensor isotropic, and the stipulated null dispersion gives \(p=e/3\) (R19-3_report.md:181-193), but the quoted \(e_g=2.44707/a^4\) stored sum is not self-containedly rerunnable from this referee packet because scripts/r193_lattice.py:14-15 imports an omitted recheck/R9-9/r99_profiles.py; this reproducibility defect does not affect the exact coefficient or fixed-reading decision.
+
+## Strongest correct statement
+
+For the free one-loop R9-9 box graviton with the stipulated H-V3 forward vertex, zero mode removed, and the registered TT, canonical Coulomb, and linear covariant gauges, the physical BRST/Hamiltonian source is exactly the two-polarization zero point \(t_{\mu\nu}=k_\mu k_\nu/\omega\) per mode, and the explicitly checked Feynman–de Donder background-field total agrees through \(1_{\rm EH}+4_{\rm GF}-4_{\rm FP}=1\), whereas the partial composites \(({-g})t_{LL}^{\mu\nu}\) and \(-G_{\mu\nu}^{(2)}/8\pi G\) give gauge-dependent multiples (including \(2\) and \(4\) in harmonic gauge); within the contravariant Einstein-density family, the linearized Bianchi identity uniquely makes the weight-1 object \(-[\sqrt{-g}G^{\mu\nu}]^{(2)}/8\pi G\) insensitive to pure-gauge legs. Therefore the literal all-definition **J2-ABSORBED** branch fails and the fixed **J2-GAUGE-BRIDGE** branch is confirmed: conditional on the new number-free source bridge P-r193a, the open lattice vertex H-V3, P136(ii)'s inclusion of gravity in \(H\), and the already stipulated class-\(\mathcal D\) (d-i) receiver, (S) removes the graviton vacuum energy and (d-i) compensates its isotropic enthalpy with no fitted number; no claim is established for arbitrary gauges, higher loops, interactions, or a microscopic derivation of the compensator.

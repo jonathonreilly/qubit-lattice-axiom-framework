@@ -7486,3 +7486,57 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - P-R19-5b: the photon soft-corner clause.
 
   Referee running.
+
+#### C5 referee verdicts R18-12, R18-13, R19-1, R19-2, R19-3 (recorded 04:42Z; codex gpt-5.6-sol, xhigh)
+
+- **R18-12 referee: CONFIRMED WITH CORRECTIONS. Reading BOUNDED** (narrowly, through observable (ii)).
+  - **Confirmed:**
+    - for free S/G/D1 bands, crystal momentum is conserved mod 2π;
+    - G + R85 gives free-sector corner photons at 2, 2√2, 2√3 /a with zero group velocity and Q_D/E = −2;
+    - the D1 corner modes are m + nW_π, charged, with Δ = 0;
+    - any surviving conserved relic is bounded by the dark-matter density: Y ≤ 3.76e-28 (doubler) or Y ≤ 1.79e-29 (corner photon).
+  - **Not confirmed:**
+    - the universal corner dichotomy;
+    - the universal Γ/H ceiling;
+    - the quoted T_RH brackets;
+    - strict Lemma L;
+    - "translation invariance invalidates standard expansion".
+  - **Scope:** decay widths and interacting stability are not certified.
+- **R18-13 referee: CONFIRMED WITH CORRECTIONS. ALL-ROWS-ZERO in the O(q) convention.**
+  - **Confirmed:**
+    - rank four, and the body relation;
+    - face1 and face2 are the two independent extra conditions;
+    - signed own-direction weights near (−1.172, −0.195) give a checked, all-subluminal joint zero at m = 0.01, plus a separately tuned m = 0.001 solution;
+    - the cost is six equality tunings plus one photon-window selection.
+  - **Not established:**
+    - exact W1 (R19-5 worker addresses this);
+    - a unique VW extension;
+    - one law at both masses;
+    - the tadpole and CC rows;
+    - radiative stability.
+- **R19-1 referee: CONFIRMED WITH CORRECTIONS. Reading NEITHER.**
+  - **Confirmed:**
+    - Lemma 1: frustration-free, and unitarily equivalent to the reversible Markov generator;
+    - Lemma 2: flat 8t and 12t label modes at βU = 0;
+    - a volume-independent positive k⁰ f-sum at every finite βU (L ≥ 3);
+    - uniform exponential clustering would exclude linear finite-mode Rayleigh–Ritz branches, and isolated light-like branches with analytic complementary moments.
+  - **Open:**
+    - continuum-mixed branches;
+    - finite-βU clustering;
+    - a uniform gap.
+- **R19-2 referee: NOT CONFIRMED (the w → −1 claim). Reading OPEN.**
+  - **Theorem I₀ is confirmed off the cone.** At a = 2, with the newly stipulated complete split, the four-channel source cancels exactly on every spacelike mode. The FRW lift is genuine law data.
+  - **But the worker changed the registered assumption,** from comoving-stationary noise to proper-stationary. Consequences:
+    - the registered comoving spectrum is asymptotically dust-like under lift A, not w = −1;
+    - the 23.24 µm result belongs to a new, out-of-window completion;
+    - free r and the γ-trade are fits;
+    - the near-cone contribution is incomplete.
+  - **Result:** set A is not shown to become a positive cosmological constant.
+- **R19-3 referee: CONFIRMED WITH CORRECTIONS. Reading J2-GAUGE-BRIDGE** (J2-ABSORBED not met).
+  - **Reproduced independently:**
+    - harmonic gauge: c_A = 2, c_B = 4, c_C = 1 with ghosts;
+    - background field: 1 + 4 − 4 = 1;
+    - literal N gives (2 + ξ)e_g, which is exactly double only as ξ → 0.
+  - **Conditional result.** At free one loop, conditional on H-V3, P136(ii), P-r193a and the class-𝒟 receiver, (S) removes the physical graviton zero point and (d-i) compensates its isotropic enthalpy. No fitted number is needed.
+  - **Why a bridge is needed:** the LL and G^(2) composites are gauge-dependent, so a named observable bridge is necessary.
+  - **Not covered:** arbitrary gauges, interactions, higher loops.

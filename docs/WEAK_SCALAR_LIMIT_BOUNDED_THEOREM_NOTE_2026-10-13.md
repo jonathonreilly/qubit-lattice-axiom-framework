@@ -166,7 +166,9 @@ None of these statements assumes a completed finite-\(k\) trajectory.
 ## 4. Transverse equations and the fast coefficient
 
 If a sufficiently regular transverse solution limit exists with the bounded
-scaled states above, its equations in \(N_J\) use
+scaled states above, and \(\rho_J,P_J\) converge uniformly on the fixed
+interval to the limiting matter coefficients used below, its equations in
+\(N_J\) use
 \(\bar g=\operatorname{diag}(4/(9D_0),1/(3D_0))\):
 \[
  \phi_i'=p_i,\quad p_i'=-(3+h_{\rm GR})p_i

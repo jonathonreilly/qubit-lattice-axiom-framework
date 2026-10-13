@@ -1,0 +1,18 @@
+axis h irreps: {'A1': 4, 'A2': 0, 'B1': 1, 'B2': 1, 'E': 2}
+axis gauge irreps: {'A1': 2, 'A2': 0, 'B1': 0, 'B2': 0, 'E': 1}
+face h irreps: {'A1': 5, 'A2': 1, 'B1': 2, 'B2': 2}
+face gauge irreps: {'A1': 2, 'A2': 0, 'B1': 1, 'B2': 1}
+face null-block dK/d(omega^2): [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
+face Schur example: 3/5
+isolated exact mass^2: -eps*mu/(bw*eps - 1)
+isolated exact c^2: -(bq*eps + 1)/(bw*eps - 1)
+solid vector determinant: -eps*mT*q**2
+solid scalar determinant after xi0 gauge fixing: 4*eps*q**2*w**2*(3*lb + mE)/3
+solid TT factors: -eps*mE - q**2 + w**2 ; -eps*mT - q**2 + w**2
+static U_mm/U_GR: (-9*eps*lb*mE + 3*lb*q**2 + mE*q**2)/(q**2*(3*lb + mE))
+static U_ml/U_GR: (-9*eps*lb*mE + 6*lb*q**2 + 2*mE*q**2)/(2*q**2*(3*lb + mE))
+auxiliary speed-row counterexample: [1, 0, 3/4, 0]
+pure-pi0 form of counterexample: 4*c*q**4
+counterexample scalar determinant: -4*c*eps**2*q**6*(3*lb + mE)/3
+generic Goldstone determinant: q**2*w**2*(A*B*q**2 + B*E*w**4 - C**2*w**4)
+all independent symbolic checks: PASS

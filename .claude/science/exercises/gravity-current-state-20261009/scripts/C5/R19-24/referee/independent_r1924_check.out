@@ -1,0 +1,4 @@
+one-loop: tadpole is momentum independent, so delta_c2/lambda = 0 exactly
+NN       L=64 m=0.2: shift/lambda^2=-1.450463814e-05; normalized=-0.361698; dp2=+8.491664251e-06; dw2=+2.299630239e-05
+G(2.526) L=64 m=0.2: shift/lambda^2=-3.640583128e-06; normalized=-0.090784; dp2=+9.332933348e-06; dw2=+1.297351648e-05
+Z4 L=24 m=0.3: residual/lambda^2=+1.694065895e-21; dx2=+7.142266929e-06; dt2=+7.142266929e-06

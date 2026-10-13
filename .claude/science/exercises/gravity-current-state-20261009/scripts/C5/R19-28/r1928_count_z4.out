@@ -1,0 +1,4 @@
+W(B4)              one-point 1  deg0 3  deg2 9  total 13  Ward-exact deg0 0 deg2 1  -> Ward conditions on response 11
+B4+                one-point 1  deg0 3  deg2 9  total 13  Ward-exact deg0 0 deg2 1  -> Ward conditions on response 11
+O(4)               one-point 1  deg0 2  deg2 4  total 7  Ward-exact deg0 0 deg2 1  -> Ward conditions on response 5
+O_h x T (control)  one-point 2  deg0 6  deg2 26  total 34  Ward-exact deg0 0 deg2 2  -> Ward conditions on response 30

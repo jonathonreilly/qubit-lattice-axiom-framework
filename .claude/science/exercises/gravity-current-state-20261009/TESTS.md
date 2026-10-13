@@ -8673,3 +8673,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **KREIN-EMPTY:** the physical space is {0} for every d (proved, or checked over ≥ 4 consecutive d with a mechanism).
   - **OPEN:** otherwise.
 - **Expectation.** KREIN-EMPTY with Bogoliubov-mixed dynamics, per R19-25's s4; leak-controlled only in the free-quotient limit.
+
+- **R19-28 (set B + (Σ)): worker reading B-STILL-WALLED, on the literal registered setting.**
+  - **The wall:** R10-2. Box symbols fail RP, (Σ) does not touch this, and no price passes it. The registered setting (box + transfer matrix + records via RP) contradicts itself inside R10-2's class.
+  - **Box-free set B + (Σ) is OPEN, not B-PACKAGE:**
+    - R2-5 is open for OS-reconstructed records;
+    - K2's coupled RP is open;
+    - R2-4 binds under (Σ) and is priced.
+  - **Checked counts:**
+    - on W(B4), (Σ) = 11 Ward + Λ + Z, with no Lorentz condition, because the single Ward-exact kernel is linear EH;
+    - the O_h × T control reproduces 34 and 30.
+  - **Proved, unrefereed:** a W(B4)-invariant vacuum has ⟨T⟩ ∝ δ, so the vacuum enthalpy mismatch has no set-B counterpart.
+  - **The bill:**
+    - law-functional: 0 numbers + 3 clauses (C-box: 4);
+    - codimension: 12 (C-box: 33 + 4 per class per order).
+
+  Referee running.

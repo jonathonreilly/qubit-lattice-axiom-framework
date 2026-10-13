@@ -1,0 +1,5 @@
+N= 64 F_1/2(0+)=-5.24436 [tad -5.35010]  F_0(0+)=-1.16666 [sea -1.31803] (0s)
+N=128 F_1/2(0+)=-5.24444 [tad -5.35011]  F_0(0+)=-1.16743 [sea -1.31918] (4s)
+N=128 m=0.0025 G12=+0.114293 G0=-0.059166 (4s)
+u=5.8070e-04  kappa_e=+3.0455e-03 kappa_u=+1.3535e-03 kappa_d=+3.3839e-04 kappa_gamma=-5.3351e-04 (uSigma with Sigma=8*0.11484)
+bare in-box speed under a D1 counterterm on the spatial symbol: 1+kappa_e = 1.00305 (whole-zone v_max of the bare e-class law)

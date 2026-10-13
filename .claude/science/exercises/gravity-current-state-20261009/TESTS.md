@@ -8458,3 +8458,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **V1-EXCLUDED:** a refereed demonstration that every V1 completion in a stated class leaves an enthalpy mismatch violating a stated bound.
   - **OPEN:** otherwise.
 - **Expectation.** V1-RECEIVER under reading A: the frame's zero-inertia constraint becomes a carrier, which is (d-i)'s analogue with the spatial trace freed by X. Otherwise V1-EXCLUDED.
+
+#### C5 referee verdicts R19-20, R19-22 and the R19-24 worker reading (recorded 06:53Z)
+
+- **R19-20 referee: CONFIRMED WITH CORRECTIONS. Reading IRREDUCIBLE** (established by D1 and D2).
+  - **What (Σ) is.** Under O_h × T, analyticity and a specified source/Hamiltonian identification, one number-free renormalization rule packages three things: the lowest-state constant, the uniform-strain response, and the linear response through two derivatives.
+  - **It imposes rather than derives** the Lorentz- and diff-invariant vacuum form.
+  - **What it does not entail:** the weight-1 choice, gravitational self-coupling, or a Bianchi-compatible growth or frame completion.
+  - **Not established:** D3 and the claimed three-clause minimality.
+  - **Confirmed in scope:** the 34 → 2 count, and the Wilson 6.6e106 ρ_Λ illustration.
+  - **No robust new gravity prediction follows.**
+    - The present-vacuum O(p⁴) correction is negligible.
+    - The early-state shear, enthalpy, creation, anomaly and relic effects are hazards conditional on the model, the history or the bridge.
+    - The top-mass condition belongs to the stipulated Λ = 0 rule and is not evidence for the grid.
+- **R19-22 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **What holds:**
+    - For the literal linear Holstein–Primakoff replacement, every finite S destroys the first-class pair and leaves no nonzero joint-kernel state.
+    - With fixed penalty couplings, the ground energy is ≤ −3JS/4 + O(1) per cell relative to fixed-occupation states.
+    - Exact non-modular finite-spectrum vector-law models have a k⁴ TT f-sum at each fixed S. Uniformity in S needs another hypothesis.
+  - **Scope of the impossibility.** Finite dimension forbids the noncompact CCR realization, not every exact finite constraint or every emergent finite-slot mechanism.
+  - **No model realizes the graviton** to observational accuracy, and no universal finite-slot no-go is proved.
+- **R19-24 (can the charge block be number-free?): worker reading COUNTERTERMS-NEEDED in class 𝒦′,** with an OPEN remainder and a registration collision.
+  - **The registered one-loop clause D1 fails at two loops.** In the toy λφ⁴ on Z³ × ℝ, the one-loop speed row is exactly zero, yet the two-loop sunset gives δc² ≈ −0.09 to −0.38 (λ/16π²)². The Z⁴ control is zero.
+  - **D1∞ (all orders)** is the on-shell renormalization condition: the R19-12 counterterms (4 per class), re-set at every order.
+  - **Lemma S.** The axioms' symmetry group acts block-diagonally on (t, x), so no symmetry fixes the speed. Only time–space mixing does, via set B's Z⁴ (refereed T1, F2, O1) or set A.
+  - **Lemma E (key).** A state-independent linear source subtraction equals a kinetic counterterm. So (Σ) is, at linear order, the graviton's kinetic counterterm.
+    - The asymmetry is "bridge (supplied sector) vs law", not "source vs dynamics".
+    - (Σ_γ) equals κ_γ.
+    - Consistency demand: either exempt law-level clauses from the count, or count (Σ) as 33 conditions.
+  - **Prices:** P-R19-24a (D1∞, which is P73 restated), P-R19-24b ((Σ_γ) = κ_γ).
+
+  Referee running.

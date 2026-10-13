@@ -61,3 +61,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T09:07:23.013534+00:00: Calibrated and pair source assemblies accepted after complete new-text review and identity checks. Separate kinetic484/847 mean proofs compared and accepted conditionally; full law fresh review active. No retained or analytic Lean claim.
 
 2026-10-13T09:36:01.737541+00:00: Fresh reviewer detected original kinetic picture defect; exact V2 correction confirmed and law accepted conditionally. Root correlation335 frozen awaiting independent check. One-zero-control candidate plan sealed, separate worker active. No retained or analytic Lean claim.
+
+2026-10-13T10:20:21.866866+00:00: Published and attached regular9513 with full runtime provenance. Correlation335, one-zero421 and general-mean301 accepted after scoped complete analytic reviews; full general-law470 frozen awaiting fresh review. Pair publication and kinetic source assembly active. Preserved wrong-owner dispatch correction and kinetic V2 hash transcription correction; no scientific source changed by either. No retained or analytic Lean claim.

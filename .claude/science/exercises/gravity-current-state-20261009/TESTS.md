@@ -7391,3 +7391,79 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r19-1a (RK tuning v = t); P96 sharpened.
 
   Referee running.
+
+### C5 Round 19, items 6–8 (pre-registered 04:21Z, before launch; supervisor-drafted, no synthesis since S26)
+
+**R19-6. One weight-1 source clause for both arenas?**
+- **Plain question.** Three results each single out the weight-1 density as the gravitating source:
+  - R18-11's Theorem G (refereed): a = 2, i.e. the record is √−g T^{μν}, for set A's record noise;
+  - R19-3's Lemma D (worker): only weight-1 stress densities give gauge-independent vacuum stress, which is what J2 needs on the grid;
+  - R19-2's Theorem I₀ (worker): at a = 2 the four-channel noise source vanishes on spacelike modes.
+
+  Is there one clause, "the gravitating one-point source is the weight-1 density", that does all three jobs? Does it fix:
+  - set A's insertion (a = 2);
+  - the quantum graviton's vacuum source (A′);
+  - N_red's readout?
+
+  Does it conflict with any refereed result: (d-i), P88, R18-7's harmonic construction, or the R18-6 bridge?
+- **Setting.** Both arenas, C-box-E with site creation and set A E1+N_c; one loop; O(G²).
+  - Write the clause as an equation for the source of each arena's metric readout.
+  - Check its gauge independence, its Bianchi consistency, and what it predicts for matter (β, γ), for the noise (R19-2) and for the graviton vacuum (R19-3).
+- **Prior art (count once):** R18-11 and its verdict; R19-2 and R19-3 (workers; referees running); R18-6 and its verdict (N_red); R18-7 and its verdict; R16-14; R15-2.
+- **Removed hypothesis:** separate source clauses per arena.
+- **Probes.**
+  - (a) The unified clause.
+  - (b) A consistency check in each arena.
+  - (c) The sentence count of the full bridge: (S), (d-i), N_red and weight-1.
+  - (d) Prices.
+- **FIXED readings.**
+  - **UNIFIED:** one clause covers all three, consistent with every refereed result in both arenas. Checked.
+  - **SPLIT:** a demonstration (refereed if a no-go) that the arenas need different source weights or clauses.
+  - **OPEN:** otherwise.
+- **Expectation.** UNIFIED. All three are the same statement: Lie-derivative covariance of the one-point source. The full classical-plus-quantum bridge is then four clauses and zero numbers.
+
+**R19-7. Away from the RK point: is there a sign-free quantum Z₂ tensor model whose T₂ dynamical structure factor shows a linear mode?**
+- **Plain question.**
+  - R19-1 (worker) finds that at the RK point the T₂ spectrum is gapped or diffusive. A light-like branch needs a phase transition away from RK (P96).
+  - The RK Hamiltonian is stoquastic, and so is H(v) = Σ[−t X^{p} + v·(diagonal)] for v ≠ t.
+  - Using sign-free methods (continuous-time QMC, or exact ED on the smallest cluster), compute the T₂ dynamical structure factor S_TT(k, ω) at v/t < 1 (towards the Coulomb-like side) and at v/t > 1. Does a sharp, linearly dispersing T₂ peak appear anywhere?
+- **Setting.**
+  - R18-1/R19-1's slots and moves (cube, μ8; shift action), with H(v, βU) as stated.
+  - Small L (2–4 for ED, or QMC up to 6) with imaginary-time correlators. Use a maximum-entropy-free diagnostic: the first frequency moment and the SMA ω(k), plus the imaginary-time decay rate per k.
+  - Excluded: integer lifts; non-local moves.
+- **Prior art (count once):**
+  - R19-1, R18-1 and R18-10 (with verdicts as available); R17-6 (Theorem Z, Z₀); R16-7 (Theorem D: stoquastic means no Newtonian attraction);
+  - quantum spin ice and RK-point literature (Hermele–Fisher–Balents, Moessner–Sondhi; RECALLED): the U(1) photon appears on the v < t side.
+- **Removed hypothesis:** the RK point v = t.
+- **Probes.**
+  - (a) A method statement before running.
+  - (b) ω(k) and the SMA along the axis, face and body directions for several v/t, with the TT, V and S channels separated.
+  - (c) Off-axis checks (R18-10 rule).
+  - (d) Is there a regime with ω ∝ |k| in T₂ and gapped V/S, at the system sizes run?
+  - (e) Prices.
+- **FIXED readings.**
+  - **LINEAR-T2-EVIDENCE:** at stated sizes, a T₂ channel with ω(k) linear over ≥ 3 k-points, gapped V/S, consistent across two sizes. Checked. This is evidence only.
+  - **NO-LINEAR:** gapped or quadratic T₂ in every v/t regime tested, consistent across sizes. Checked.
+  - **OPEN:** otherwise.
+- **Expectation.** NO-LINEAR at the accessible sizes, with v < t giving a soft but quadratic T₂. The expectation names its removed hypothesis: RK fine-tuning. It keeps stoquasticity, which by Theorem D already forbids Newtonian attraction.
+
+**R19-8. Set A's leak route E2 under the same source analysis: does E2 tie with E1, or break the tie?**
+- **Plain question.**
+  - E1 and E2 are tied observationally (R14-2, R16-14).
+  - R18-7, R18-11 and R19-2 built E1 + N_c at O(G²) and analyzed its noise source: Theorem G gives a = 2, and Theorem I₀ gives a vanishing spacelike source.
+  - E2 (friction on all of h̄ plus a noiseless outgoing sink) lacks a sink action (R16-14 verdict).
+  - Can E2 be completed the same way (records sourced with a = 2, conserving projection), with CP and a well-posed readout? Does its noise or sink stress gravitate differently from E1's?
+- **Setting.** E2 as in R12-7/R14-2 (γ in the drag-allowed range). Completion as in R18-7 (Π, a = 2). O(G²), static and quasi-static plus the stationary noise. Excluded: strong field.
+- **Prior art (count once):** R12-7, R14-2, R16-14 and R18-7 with their verdicts; R18-11 and its verdict; R19-2 (worker); R16-4 (E2 keeps initial TT energy).
+- **Removed hypothesis:** E1 only.
+- **Probes.**
+  - (a) The E2 + N construction, including a sink action, or proof that none exists in a stated class.
+  - (b) CP.
+  - (c) β, γ.
+  - (d) The noise and sink active density.
+  - (e) Prices, and a tie-break statement.
+- **FIXED readings.**
+  - **E2-CONSTRUCTED:** an explicit E2 + N law at O(G²), CP, with β = γ = 1. Checked, with its noise and sink budget.
+  - **E2-OBSTRUCTED:** a refereed demonstration that no E2 completion in a stated class is CP with a conserved source.
+  - **OPEN:** otherwise.
+- **Expectation.** E2-OBSTRUCTED, or OPEN. The noiseless outgoing sink has no CP + conserving completion, because a sink that absorbs TT energy without noise violates the fluctuation–dissipation balance. If so, the tie breaks in favour of E1.

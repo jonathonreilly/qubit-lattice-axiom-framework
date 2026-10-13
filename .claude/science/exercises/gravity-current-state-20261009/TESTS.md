@@ -8825,7 +8825,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
   Referee running.
 
-- **Referee records, 2026-10-13 ~08:47Z.** Codex gpt-5.6-sol at xhigh.
+- **Referee records, 2026-10-13 ~09:02Z.** Codex gpt-5.6-sol at xhigh.
   - **R19-29: CONFIRMED WITH CORRECTIONS. Recorded reading: OPEN** (the worker said FACE1-HOLDS).
     - Lemma C holds only under H6 (a real-symmetric Gram).
     - Theorem Q's leading algebra is confirmed: an independent 5×5 solve agrees to 4.7e-10.
@@ -8859,3 +8859,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Static T⁰⁰:** attractive at every d; χ_d → ½.
 
   Referee running.
+
+**R19-36. Is there an exactly conserved lattice stress for which the full GR constraint bridge is site-RP?** (Pre-registered 2026-10-13 09:04Z; short probe, return by 09:50Z.)
+- **Plain question.**
+  - R19-33 (worker) finds the GR bridge site-RP in the D2 discretization, which is not exactly conserved, and negative definite with K2's exactly conserved T₄₄.
+  - Within the family of nearest-neighbour stresses that are exactly conserved on shell, does any member make the O(κ²) cross kernel positive type? Or does exact conservation force a straddling ρ term whose cross kernel is indefinite?
+- **Setting.**
+  - Free scalar on Z⁴ as in R19-33.
+  - Stresses T = T_K2 + improvement terms that are identically conserved (∂_μ of antisymmetric-pair or superpotential forms) and nearest-neighbour or next-nearest-neighbour.
+  - The GR bridge with K = (−Δ₃)⁻¹, at O(κ²), using R19-33's site-RP test.
+- **Prior art (count once):** R19-33 (worker; referee running), K2 and R2-4.
+- **Probes.**
+  - (a) Parametrize the conserved improvements.
+  - (b) The minimum eigenvalue of the null-space RP matrix over the family.
+  - (c) If none works, a mechanism: why exact conservation forces the straddling term.
+- **FIXED readings.**
+  - **CONSERVED-RP:** an exactly conserved member with a PSD O(κ²) site-RP matrix in all R19-33 test settings.
+  - **CONSERVED-NO:** no member works across the parametrized family (checked), with the mechanism stated.
+  - **OPEN:** otherwise.
+- **Expectation.** CONSERVED-NO in the nearest-neighbour family, because ρ's time-link part must straddle the slice to be conserved.

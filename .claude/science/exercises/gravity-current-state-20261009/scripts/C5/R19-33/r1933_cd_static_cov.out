@@ -1,0 +1,22 @@
+== (c) static dust-dust response of the bridge, L^3 periodic, zero mode removed ==
+ L=32 axis      r=2.00 4pi(K(r)-K(far))/(1/r-1/r_far)=1.0254 | r=4.00 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8998 | r=6.00 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8183
+ L=32 face diag r=2.83 4pi(K(r)-K(far))/(1/r-1/r_far)=0.9121 | r=5.66 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8174
+ L=32 body diag r=3.46 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8785 | r=6.93 4pi(K(r)-K(far))/(1/r-1/r_far)=0.7690
+ L=64 axis      r=2.00 4pi(K(r)-K(far))/(1/r-1/r_far)=1.0524 | r=4.00 4pi(K(r)-K(far))/(1/r-1/r_far)=0.9627 | r=6.00 4pi(K(r)-K(far))/(1/r-1/r_far)=0.9181 | r=8.00 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8811
+ L=64 face diag r=2.83 4pi(K(r)-K(far))/(1/r-1/r_far)=0.9562 | r=5.66 4pi(K(r)-K(far))/(1/r-1/r_far)=0.9132 | r=8.49 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8670 | r=11.31 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8183
+ L=64 body diag r=3.46 4pi(K(r)-K(far))/(1/r-1/r_far)=0.9347 | r=6.93 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8901 | r=10.39 4pi(K(r)-K(far))/(1/r-1/r_far)=0.8330 | r=13.86 4pi(K(r)-K(far))/(1/r-1/r_far)=0.7719
+ sign: K(r) - K(far) > 0 at all listed r -> cross term +2 lam M1 M2 K raises the weight of nearby
+       like masses -> attractive, V(r) = -2 lam M1 M2/(4 pi r) + const, G_N = lam/(2 pi) [lam = kappa^2/4]
+ light probe on the lattice: q_1 = 0 for a source uniform along x, theta_11(q_1=0) = 1 exactly ->
+       (rho_l + A_l)/rho_l = 2 exactly -> 1 + gamma = 2;  Newton-only bridge (no rho A term): ratio 1, gamma = 0
+
+== (d)(i) lattice-conserved sources: W_TT + W_inst - W_GR at random lattice momenta ==
+ max relative |W_TT + W_inst - W_GR| over 200 momenta: 1.77e-12
+
+== (d)(ii) covariance under the W(B4) element swapping axes 1<->4 ==
+ W_GR: max rel. change 3.9e-14 (covariant);  W_inst alone: max rel. change 1.00 (not covariant); W_TT alone likewise
+
+== (d)(iii) conservation: K2's exact stress vs D2's T_44 on an exact Euclidean lattice solution ==
+ EOM residual in the interior (t=3..Lt-4): 7.8e-14
+ K2: sum (nabla xi + nabla xi) T over time-gauge xi (interior support) = [-0. -0. -0. -0.]
+ D2: sum (nabla xi + nabla xi) T over time-gauge xi (interior support) = [-165.612305  287.138672  696.383789  720.602051]

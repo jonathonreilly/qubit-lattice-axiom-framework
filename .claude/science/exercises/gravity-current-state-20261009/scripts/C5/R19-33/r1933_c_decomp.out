@@ -1,0 +1,20 @@
+den(W_inst) factored: 4*p4**4*(q1**2 + q2**2 + q3**2)**4*(p4**2 + q1**2 + q2**2 + q3**2)
+residue at p^2=0: (W_inst*p^2) at p4^2=-q^2 -> 0
+instantaneous form W_inst = (a rho^2 + b rho A + c |P_perp|^2 + d A^2 + e P_L^2)/q^2 with: [{a: 1/2, b: -1, c: 2, d: 0, e: 1/2}]
+  spot check W_inst - ansatz = 0
+  spot check W_inst - ansatz = 0
+  spot check W_inst - ansatz = 0
+quadratic form in (rho, A, |P_perp|, P_L) (times 1/q^2):
+⎡1/2   -1/2  0   0 ⎤
+⎢                  ⎥
+⎢-1/2   0    0   0 ⎥
+⎢                  ⎥
+⎢ 0     0    2   0 ⎥
+⎢                  ⎥
+⎣ 0     0    0  1/2⎦
+eigenvalues: [1/4 - sqrt(5)/4, 1/4 + sqrt(5)/4, 2, 1/2]
+
+== static responses (Euclidean J_44 = rho; Minkowski T^00 = -J_44, T^ii = J_ii) ==
+dust-dust (A=0,P=0): W = a rho rho'/q^2, a = 1/2  -> log Z gains +a rho rho'/q^2: ATTRACTIVE iff a>0
+light probe: traceless 4D => J_44 + J_ii = 0 ... (Euclidean trace J_44 + J_ii = 0); a light ray along x:
+  light/(dust of equal energy) cross-response ratio = 1+gamma = 2

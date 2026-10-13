@@ -1,0 +1,14 @@
+== phi_0 = zero ==
+  K2-Newton (attractive): lam=0.01 min/max=-4.53e-18 | lam=0.10 min/max=-6.77e-18 | lam=1.00 min/max=-1.98e-16
+  K2-Newton (repulsive): lam=0.01 min/max=-3.68e-03 | lam=0.10 min/max=-3.05e-02 | lam=1.00 min/max=-1.19e-01
+  K2-GR (attractive): lam=0.01 min/max=-5.96e-02 | lam=0.10 min/max=-1.00e+00 | lam=1.00 min/max=-1.00e+00
+  D2-Newton (attractive): lam=0.01 min/max=-2.26e-16 | lam=0.10 min/max=-3.62e-16 | lam=1.00 min/max=-3.46e-16
+  D2-Newton (repulsive): lam=0.01 min/max=-3.18e-03 | lam=0.10 min/max=-3.39e-02 | lam=1.00 min/max=-3.33e-01
+  D2-GR (attractive): lam=0.01 min/max=-3.37e-16 | lam=0.10 min/max=-3.79e-16 | lam=1.00 min/max=-2.55e-16
+== phi_0 = random ==
+  K2-Newton (attractive): lam=0.01 min/max=+2.65e-08 | lam=0.10 min/max=+8.13e-08 | lam=1.00 min/max=-9.56e-16
+  K2-Newton (repulsive): lam=0.01 min/max=-1.34e-01 | lam=0.10 min/max=-9.99e-01 | lam=1.00 min/max=-1.00e+00
+  K2-GR (attractive): lam=0.01 min/max=-2.00e-01 | lam=0.10 min/max=-1.00e+00 | lam=1.00 min/max=-1.00e+00
+  D2-Newton (attractive): lam=0.01 min/max=-2.26e-16 | lam=0.10 min/max=-3.62e-16 | lam=1.00 min/max=-3.46e-16
+  D2-Newton (repulsive): lam=0.01 min/max=-3.18e-03 | lam=0.10 min/max=-3.39e-02 | lam=1.00 min/max=-3.33e-01
+  D2-GR (attractive): lam=0.01 min/max=-3.37e-16 | lam=0.10 min/max=-3.79e-16 | lam=1.00 min/max=-2.55e-16

@@ -8809,3 +8809,18 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **LNN-ZERO-FORCED:** a registered completion forces λ_nn = 0. Name it; face1 then shifts.
   - **OPEN:** otherwise.
 - **Expectation.** LNN-NONZERO under the bare law; LNN-ZERO-FORCED under (Σ), because (Σ) imposes the GR Ward identity, which forbids a degree-0 longitudinal mass. That would put face1 in R19-29's shifted branch whenever (Σ) is adopted.
+
+- **R19-33 (box-free set B, coupled RP): worker reading B-RP-OK, narrow (site RP only).** The FIXED wording collides between the two discretizations.
+  - **Matter + spatial-TT graviton:** slice-local, and site- and link-RP to all orders in κ (proved). This fills K2's open item. The 4D-TT projector is non-local in time and fails RP (checked).
+  - **The bridge** (the instantaneous part of linear GR on conserved sources): W_inst = (½ρ² − ρA + 2|P⊥|² + ½P_L²)/q².
+    - The Newton-only bridge is RP, but γ = 0.
+    - The full bridge gives γ = 1 and an attractive 1/r (4πrG → 1.00 ± 0.01).
+  - **Site RP of the full bridge depends on the discretization:**
+    - K2's exactly conserved T₄₄ gives a negative-definite O(κ²) RP matrix, robust in L, m, IR and non-perturbatively;
+    - the D2 symmetric-link version is RP to all orders (cutoff), but breaks exact conservation at dimension 6.
+  - **Repulsion violates RP.**
+  - **Link RP** with the bridge is only vacuous at O(κ²).
+  - **Not normalizable** without a field cutoff (Newtonian collapse).
+  - **The bridge breaks W(B4) → W(B3)×Z₂ᵀ.** A suggested O(κ²) loop leak threatens R19-28's W(B4) cone saving.
+
+  Referee running.

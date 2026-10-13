@@ -1,0 +1,7 @@
+L=48 axis 4 pi r G(r) [corrected]: r=1.00:1.0777  r=2.00:1.0706  r=4.00:1.0070  r=8.00:0.9933  r=12.00:1.0244
+L=48 face 4 pi r G(r) [corrected]: r=1.41:0.9755  r=2.83:0.9872  r=5.66:0.9836  r=11.31:1.0105  r=16.97:1.1151
+L=48 body 4 pi r G(r) [corrected]: r=1.73:0.9421  r=3.46:0.9743  r=6.93:0.9824  r=13.86:1.0428  r=20.78:1.2317
+L=96 axis 4 pi r G(r) [corrected]: r=1.00:1.0806  r=2.00:1.0761  r=4.00:1.0165  r=8.00:0.9993  r=12.00:0.9991
+L=96 face 4 pi r G(r) [corrected]: r=1.41:0.9796  r=2.83:0.9947  r=5.66:0.9941  r=11.31:0.9961  r=16.97:1.0073
+L=96 body 4 pi r G(r) [corrected]: r=1.73:0.9470  r=3.46:0.9831  r=6.93:0.9918  r=13.86:0.9990  r=20.78:1.0223
+sign: G(r) - C > 0 and decreasing -> bridge cross term +2 lam M1 M2 G(r) is attractive

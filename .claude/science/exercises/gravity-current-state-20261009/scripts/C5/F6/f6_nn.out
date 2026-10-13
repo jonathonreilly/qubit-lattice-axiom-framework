@@ -1,0 +1,4 @@
+NN scalar + NN photon, SF, m=0: Sig(0) 0.683016078 (R19-31 H-cov at m=0.1: 0.683593)  Hess_t -6.077391e-03   [H-cov comparator -0.53181/4 = -0.13295 per t^2]
+   3 G_gam Hessian (relabelling identity, must equal) -6.077391e-03
+NN scalar + root photon Gph(2.9435), SF, m=0: Sig(0) 0.486162237 Hess_t +5.390117e-02
+NN scalar quartic loop: d2_t G_s -2.025797e-03

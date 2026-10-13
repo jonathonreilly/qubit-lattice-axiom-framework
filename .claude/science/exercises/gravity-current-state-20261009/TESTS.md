@@ -9511,3 +9511,26 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - P-NF1c: the photon edge moves.
 
   Referee running.
+
+- **F6 (Higgs mass² strain Hessian under SF): worker reading SCALAR-HAZARD.**
+  - **Scalar edge:** SymG(b_s = 2.526).
+  - **Hessians in SF units:**
+    - U(1): +2.4345e-3 e². The cross term cancels 99.5%; this is 55× smaller than H-cov's −0.532, with the opposite sign. C1 reproduces −0.5318100.
+    - top Yukawa: +6.6248e-3 N_c y_t²;
+    - self-coupling: −2.6748e-3.
+  - **Total:** c_H ≈ +3.7e-3 on the main branch (+3.3e-3 to +1.6e-2 across branches).
+  - **Higgs vev:** δv/v ≈ −1.75e31 t².
+  - **Clock row (bridge-free), NANOGrav E_g-projected:** exceeded by 2.4e18 to 1.5e20.
+  - **Earth row (via the bridge):** ~1e21, tachyonic sign.
+  - **Fermion control:** 6e6 to 8e7 through the same estimator.
+  - **New tadpole channel:** the strain-dependent Wilson condensate, via y_t, gives |δv/v| ~ 1e48 t². It is the same coefficient as R19-21/F5's c₁, so count once. On staggered edges it vanishes (NF-1).
+  - **Lift freedom:** none in the scalar loops. F3's dressing can zero c_H only as a tuning (P-F6b, dominated).
+  - **Coverage:** nothing registered covers it.
+    - (S\*), (Σ) and (S_loc) say what gravitates; they do not change Σ_H(t) in the law.
+    - P-R19-34a′ or the single primitive would cover it.
+  - **Prices:**
+    - P-R19-34a′ (count once);
+    - P-F6a: the Higgs tadpole condition on every strained law;
+    - P-F6b: a tuning, dominated.
+
+  Referee running.

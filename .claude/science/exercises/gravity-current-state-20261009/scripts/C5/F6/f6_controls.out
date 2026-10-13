@@ -1,0 +1,11 @@
+grid nodes 368
+(C1) H-cov NN, m=0.1: Sigma(P=0) 0.683592960 [R19-31: 0.683592960]  d2_h (step .02) -5.318100e-01 [R19-31: -5.318100e-01]  Rich -5.319094e-01
+(C2) t=0.000  Sig_g(scalar=photon edge) 0.568625041619   3 G_gam 0.568625041619   diff +2.22e-16
+(C2) t=0.010  Sig_g(scalar=photon edge) 0.568624590085   3 G_gam 0.568624590085   diff +3.33e-16
+(C2) d=0.0030 Hessian (d) -8.9842800e-03 (2d) -8.9981214e-03 Rich -8.9796662e-03   target 3 c2^V = -8.979e-3
+(C2) d=0.0015 Hessian (d) -8.9808099e-03 (2d) -8.9842800e-03 Rich -8.9796532e-03   target 3 c2^V = -8.979e-3
+(C3) 0+ root b_s=2.590035: d2_t G_s (d=0.0030) -2.7217240e-03 Rich -2.7215634e-03   target 2 c2^s = -2.722e-3
+(C3) 0+ root b_s=2.590035: d2_t G_s (d=0.0015) -2.7216034e-03 Rich -2.7215632e-03   target 2 c2^s = -2.722e-3
+(C4) closed-form Q0 integrals (Feynman loop; xi-term with Ward-reduced numerator) vs quad: max |diff| 8.9e-16
+(C5) Ward sum_j d_j V_j - [K(q) - K(0)] at t = 0.3, 1000 points: max 8.9e-16
+time 10 s

@@ -1,0 +1,5 @@
+Y-b: mu_E(m = -0.0050) per Dirac field (own flow at m) -1.7251141873e-02  (55s)
+Y-b: mu_E(m = +0.0000) per Dirac field (own flow at m) -1.7199080662e-02  (110s)
+Y-b: mu_E(m = +0.0050) per Dirac field (own flow at m) -1.7146702066e-02  (164s)
+Y-b: d mu_E/dm|0 = c1 +1.044398e-02 ; d2 mu_E/dm2|0 = 2 c2 +1.269536e-02  -> Sigma_Y Hessian per N_c y^2 = (1/2) d2 mu = +6.347680e-03 ; tadpole Hessian per N_c y/sqrt2 = c1
+time 164 s

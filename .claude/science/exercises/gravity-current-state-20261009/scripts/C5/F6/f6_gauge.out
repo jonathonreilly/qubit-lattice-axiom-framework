@@ -1,0 +1,26 @@
+LOOP 1 (U(1)), per e^2, SF units t.  R18-9 root b_s = 2.526103698, Gph(2.9435)
+  m=0  n= 6 hmax=0.25 mph= 6 nodes=174 d=0.0030: Sig(0) +0.5659636957  Hess (d) +2.42637707e-03 (2d) +2.40227976e-03 Rich +2.43440951e-03  [H-cov x4 +9.73764e-03]  (0s)
+  m=0  n= 8 hmax=0.15 mph=16 nodes=368 d=0.0030: Sig(0) +0.5659636956  Hess (d) +2.42642765e-03 (2d) +2.40224682e-03 Rich +2.43448793e-03  [H-cov x4 +9.73795e-03]  (2s)
+  m=0  n=10 hmax=0.10 mph=24 nodes=660 d=0.0030: Sig(0) +0.5659636955  Hess (d) +2.42643594e-03 (2d) +2.40225238e-03 Rich +2.43449713e-03  [H-cov x4 +9.73799e-03]  (21s)
+  m=0  n=10 hmax=0.10 mph=24 nodes=660 d=0.0015: Sig(0) +0.5659636955  Hess (d) +2.43249973e-03 (2d) +2.42643594e-03 Rich +2.43452100e-03  [H-cov x4 +9.73808e-03]  (40s)
+  m=0  n=12 hmax=0.08 mph=32 nodes=948 d=0.0015: Sig(0) +0.5659636955  Hess (d) +2.43249805e-03 (2d) +2.42643594e-03 Rich +2.43451876e-03  [H-cov x4 +9.73808e-03]  (78s)
+parts at t=0 (tad, temporal, -exch): ['+0.56479557', '+0.09445197', '-0.09328385']
+parts Hessian (single step 0.0030): tad +6.189009e-03 temporal -1.397421e-03 exch -2.365152e-03
+  m = 0.01 (rows mass)                                           Sig(0) +0.5659714680  Hess Rich +2.43447697e-03
+  m = 0.001                                                      Sig(0) +0.5659638024  Hess Rich +2.43452087e-03
+  control: photon unstrained (scalar own flow)                   Sig(0) +0.5659636955  Hess Rich +1.57652126e-01
+  control: scalar unstrained (photon own flow)                   Sig(0) +0.5659636955  Hess Rich +3.19106413e-01
+  control K1: scalar on the photon flow (common separable flow)  Sig(0) +0.5659636955  Hess Rich -2.84238817e-02
+  control K2: photon on the scalar flow (common separable flow)  Sig(0) +0.5659636955  Hess Rich -3.93655454e-02
+  0+ root b_s = 2.590035, m = 0                                  Sig(0) +0.5665609425  Hess Rich +6.80969166e-04
+gauge-parameter term: Sig_xi/e^2 = (1 - xi) X(m);  X and d2_t X:
+  m=0.010  X -7.772123e-06  d2_t X +5.487646e-08   (X/m^2 -0.0777, d2X/m^2 +0.0005)
+  m=0.003  X -8.367348e-07  d2_t X +4.957716e-09   (X/m^2 -0.0930, d2X/m^2 +0.0006)
+  m=0.001  X -1.068920e-07  d2_t X +5.691768e-10   (X/m^2 -0.1069, d2X/m^2 +0.0006)
+LOOP 4 (quartic): d2_t G_s  (Sigma_lam = 6 lam G_s)
+  R18-9 b_s, m=0, nodes 368 d 0.0030: G_s(0) +0.1908429058  Hess Rich -2.67481231e-03
+  R18-9 b_s, m=0, nodes 660 d 0.0015: G_s(0) +0.1908429058  Hess Rich -2.67481616e-03
+  R18-9 b_s, m=0, nodes 948 d 0.0015: G_s(0) +0.1908429058  Hess Rich -2.67481648e-03
+  R18-9 b_s, m=0.01: Hess Rich -2.67475694e-03
+  0+ root b_s, m=0: Hess Rich -2.72156668e-03   (= 2 c2^s; R19-11 -2.722e-3)
+time 328 s

@@ -1,54 +1,54 @@
 # Current recovery checkpoint
 
-Updated2026-10-13T15:41:14.430987+00:00. Fixed deadline2026-10-13T16:42:30Z, never extend.
-CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; activephysics-loop/toe-multitime-kinetic-energy-20261013,HEAD/baseaf2e44428a10e59cf5eb7130df4265d2949db8df (regular9520).
-Multitime prepare running session92432, execute_multitime_kinetic_phase.py;
-root owns any current installation. Inspect multitime_kinetic_root_execution.
-W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previouscheckpoint370e9bf7f0152b94e9457b2fefb6813d5cec1b0e. Fifteen renewal regularPRs through9520
-open/attached, no drafts/merges/mainpushes/auditverdicts/axiom/promptchanges.
-Main583c/ai3a4b and18procedures lastrefreshed150235. Lock150037 expires170037;
-release at fixed164230, no campaign extension.
+Updated 2026-10-13T16:08:25.301553+00:00. Fixed deadline2026-10-13T16:42:30Z, never extend.
+CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; branchphysics-loop/toe-threshold-crossing-chirp-20261013,HEAD0fbe85f44f45bc8cbf4ca54c65ef8b7ea7950ab3,clean regular9522.
+Parent9520/af2e4442; multitime sibling9521/e8d5b7b preserved. W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree,
+previouscheckpoint9ad13ac50ffef7d6b3c3cfcac77fa6b7e8adfb9e. Seventeen renewal regularPRs open/attached.
+No drafts, merges, main pushes, audit verdicts, axiom or editable prompt changes.
+Main583c/ai3a4b and18procedures refreshed155109 unchanged; no external PRdelta.
+Lock150037 expires170037; release at fixed164230, do not extendcampaign.
 
-Chirp9520/af2e4442 published152417,attached. V2prepare222.157237667s and
-verify3.514095417s exit0,214stagedblobspassed,+1node4edges,oldgraphunchanged,
-4exactbytecorruptionrejections,1freshcache,focusedchecked[]/0math,whitespace0.
-V1failedclaimlabel/218.165s and205pathbackup/recovery preserved; proof unchanged.
+Multitime9521 created154901: prepare225.897381583s,verify3.966326708s exit0.
+387paths,+1node5edges,oldgraphunchanged,4expectedbytecorruptions,1freshcache,
+focusedchecked[]/0math,whitespaceactual0. Receipts0379b5b7 and6d199c96.
+Threshold9522 created160001: prepare221.307255292s,verify3.917852125s exit0.
+132paths,+1node3edges,sameidentityscope. Receipts4ec90631 andcf37e1f0.
+Thresholdsource19141299/196members/note1328 ea8e2ea5 accepted97f974a6,
+review687818a2; sourcecheck0.140701875s208aliases. All6assemblyextrasbound.
+Lean remains finitealgebraonly. BothPRs independently baseon9520.
 
-Multitime frozenpublicationcf112049/588members589total;note1214/b782e481;
-383payload387stage,5parents6maps,3acceptedunchangedcores. Rootreviewa7799c07,
-acceptance328a299d; allnewwrappers/packet and182identity/193checker fullyread.
-Driver745 coverage usespriorfull742 pluscomplete151line exactdiff; no omitted
-changedcode. Rootstatic0.461234666s exit0. Runtime nowpending; stageonlyexact
-successfulPREPARED pins thenverify and create/attach regularPR. Branchcreation
-receipts153257 remainoutsidefrozenpackage. Initial-state sibling not required.
+Postmeasurement tails: root306/1dfe0c91 andind390/9597693a +170/d392d3ff,
+comparison239/7cad0470+412/28a3ebd6 allfullyread. Accepted59f1556c,
+reviewaac66b22; sourcehelper70members59pairs. Finiteinitialfirstenergy
+suffices, noinitialsecondmoment. Exactactualepsilon=o(h^2) commutatorDuhamel
+suppliesforward/inversefullgraphbounds; nosecondcommutatorassumed.
+Freshprotocolcheck founda REAL TYPE PRECISION missedinearlierreads:
+ind390line80 J islinearunitary Gamma C, notantiunitary. Rootverifiedonly
+lines79--80useJ; parentcorrected859454/threshold788443 fixconvention.
+Addendumaff1db27 andPRECISION_ACCEPTANCE08cfed6c supersedeonlyearlier
+no-correctionwording. UnchangedHSproof followsunitaryenergyidentification.
+Frozenoriginals remainimmutable. Sourceassemblymuststatecorrectedreading;
+authorandprotocolcomparator corroborationpendingataddendumtime.
+Postmeasurement sourceassemblyactive underkinetic_correlation_review,
+prepared512/340 areexplicitarchivedprovisionaldependencies, noinventededges.
 
-Threshold assembly75a56964 note1322/30ef4a8e accepted d661fb65/reviewdebdefb5.
-104explicitfreezerecords,110totalfiles:4nested archived freezes/logs excluded
-byfilename butalreadybound82originalsourcepairs. Publicationpins all6extras;
-no analytic/sourcecontent repair. Sourcecheck0.090130083s;3parents4maps,
-root275/ind788 unchanged. Lean onlythreefinitealgebraidentities; bothattempts
-preserved. Worker prepares regularPR sibling on9520;rootCW/Git/runtimepending.
+Threshold-protocol fresh702/2c29d973 +223/bd2f45c3 frozen160106/32d1741b.
+Rootreadall925linesandverified23members10sourcepairs; READreceipt160421.
+It constructs word/normalstate/fixedregularLueders limitsandtialsfromfull
+thresholdweightedbounds, withoutstrictcarriergap. Noinitialsecondmoment.
+It reservesactualgraphs;root211/7a3ecb8b pluspostmeasurementDuhamelbridge
+suppliesstrongerconditionalactualclaim. Exposedcomparisonnowactive in
+threshold_protocol_comparison,plan88d26d10,target1623. Do notacceptbefore
+completecomparisonread. Rootcompositionwasfrozen153219beforefreshfindings.
 
-Postmeasurement independent390/9597693a and170/d392d3ff frozen152511/96865ed3,
-fullyrootread;19pins7livepairsverified. It derives fullforward/inverseHgraph
-bounds fromq2 bypositiveCARcolumn identities, distinctfromroot306normalorder.
-Finitefirstenergy suffices forfixedfiniteprojectorhistoryUI,conditionalmeans
-andW1 atpositiveprobability; noinitialsecondmoment. Exposedcomparisonactive,
-includingrootactualepsilon=o(h^2) commutatorDuhameltransfer. Noacceptanceyet.
-Rootcountercontrol84/1bea9837 frozen152500 beforeindfindings, outsidefixedslot
-family, testsfalsefirstmoment/UIinference. RootfiniteFockdiagnostic staysfinite.
-
-New rootthreshold-protocolcomposition211/7a3ecb8b frozen153219 plus12snapshots.
-It explicitly replaces everystrictgapinput via thresholdqbounds/BVsecular
-andintervalGramdecay, thennormalstateprojectors/tails. Postmeasurement and
-actualtransfer remainprovisionaldependencies. Fresh threshold_protocol_fresh
-excludes rootcomposition,checkpoint1558/target1605. Nootheragentfindingsopened.
 Compactpreparation a404a254 andpreparedmultitime92f5a23c remainaccepted,
-sourceassemblynotyetdone. Physical3Drealization/centralselectionremainopen.
+notseparatelypublished. ExactcommonHphysicalinstrument,actual3Drealization,
+interactingchannelselectionandcentralselectionremainopen. Abstractintegrable
+localcorrelation route was glanced at; corrected859 alreadyhasitscoreoperator
+lemma, so no new duplicate result or 3Dtheorem isclaimed.
 
-Recovery/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T154114Z.tar.gz,manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T154114Z.tar.MANIFEST.json;982members,MAP19633.
-Activecomparison/freshcheck/thresholdpublicationandunfinishedruntimeexcluded.
-Next finishmultitimePR,reviewthresholdpublication,readcompletepostmeasurement
-comparisonandfreshcompositionbeforeacceptance. At164230startnonewscience,
-checkpointactualoutcomes,releasecurrentlock,deleteheartbeat
- toe-derivations-24-hour-campaign. Originalproofsourcesremainimmutable.
+Recovery /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T160825Z.tar.gz,manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T160825Z.tar.MANIFEST.json;817members,MAP20452.
+ActiveprotocolcomparisonandUIsourceassemblyexcludeduntiltheirfreezes.
+Next finishthesechecks/sourcepackaging; at164230startnonewresearch,
+checkpointactualoutcomesandunpublishedwork,releasecurrentlock,deleteheartbeat
+ toe-derivations-24-hour-campaign. Noattestationofunreadorunfinishedwork.

@@ -6,20 +6,20 @@ started_utc: '2026-10-12T16:42:30+00:00'
 deadline_utc: '2026-10-13T16:42:30+00:00'
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-multitime-kinetic-energy-20261013
+active_branch: physics-loop/toe-threshold-crossing-chirp-20261013
 worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: c5eaa6bf752a0893c83c0509c7c349dab53bff14
+base_revision: af2e44428a10e59cf5eb7130df4265d2949db8df
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish accepted vacuum multi-time and threshold extension; finish postmeasurement energy comparison
-  and threshold-protocol composition check.
+active_route: Finish threshold-protocol comparison and accepted postmeasurement source assembly; preserve all exact
+  results and open physical obligations at fixed deadline.
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Fifteen regular PRs through9520. Multitime publication prepare active; threshold publication preparation
-  active; postmeasurement tail comparison and fresh threshold-protocol composition check active.
+milestone: Seventeen renewal regular PRs through9522. Postmeasurement tails accepted with explicit J-type correction.
+  Fresh threshold-protocol702/223 fullyrootread; exposed comparison active. UI source assembly active.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -29,16 +29,15 @@ independent_checks: Separate frozen derivations and source-exposed comparison fo
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: Multitime prepare running; actual clean branch created153257 then exact root-owned prepare installation
-active_pr_url: null
+active_pr_status: Regular OPEN attached; clean source branch
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9522
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: null
-next_action: Inspect multitime prepare session92432 then source-results/exactstage/verify and regularPRattach. Review
-  frozen threshold publication when ready; root creates sibling fromaf2. Read complete postmeasurementcomparison
-  beforeacceptance; check fresh threshold-protocol result. Stop new science164230,checkpoint/release/delete heartbeat.
+next_action: Read complete frozen protocolcomparison before acceptance; review complete UI sourceassembly when frozen.
+  Preserve accepted compact/prepared results and unresolved physical3D/channel-selection. At164230 stopnewscience,checkpointactualoutcomes/recovery,releasecurrentlock,deleteheartbeat.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -63,10 +62,10 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-13T15:41:14.430987+00:00'
-latest_source_refresh: '2026-10-13T14:09:13.940056+00:00'
-latest_other_pr: Main583c/ai3a4b unchanged; all18 procedures unchanged. New9519 at04105ada supplies a separate curvature-fluid
-  construction; body/path inventory only, no proof adoption or kinetic dependency.
+checkpoint_utc: '2026-10-13T16:08:25.301553+00:00'
+latest_source_refresh: '2026-10-13T15:51:09.424592+00:00'
+latest_other_pr: Main583c/ai3a4b and18 procedures unchanged155109; no external PR changes or closures. Only our9520/9521
+  added since150235;9522 separately created160001 andattached.
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
 current_mass_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9491
 current_mass_published_science_revision: e26e2de4fd64ee49d0745cbf02fd05355494b569
@@ -74,8 +73,8 @@ local_continuum_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fr
 local_continuum_published_science_revision: a8ab3f49038327e3080d2f93afb7e34601459928
 dyadic_refinement_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
 dyadic_refinement_published_science_revision: cb882f7c68032986900dec2aaf24617ff3274c08
-campaign_prs_created: 15
-campaign_prs_currently_open: 15
+campaign_prs_created: 17
+campaign_prs_currently_open: 17
 campaign_prs_closed_by_other_activity:
 - 9478
 - 9479
@@ -98,7 +97,7 @@ energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fra
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
 automation_status: ACTIVE
-active_head: af2e44428a10e59cf5eb7130df4265d2949db8df
+active_head: 0fbe85f44f45bc8cbf4ca54c65ef8b7ea7950ab3
 sharp_current_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497
 sharp_current_published_science_revision: 7c0570a4a20a768349f3d88960303f8637e7fe33
 current_preserving_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9498
@@ -134,7 +133,7 @@ scoped_lean_status: 'Spatial8Ring/lowblock3Ring scope checked. Dispersion88a3598
   positivity/domains/dynamics not formalized. PowerJump837784b4 attempt02 compiled22.899s exit0,d6ee02: general
   ring jump, square commutator and exact2x2 omission countercontrol. Only standard propext/choice/quot axioms. Attempt01
   missing aggregate Tactic.olean preserved; no analytic/domain/BV verification.'
-previous_checkpoint_commit: 370e9bf7f0152b94e9457b2fefb6813d5cec1b0e
+previous_checkpoint_commit: 9ad13ac50ffef7d6b3c3cfcac77fa6b7e8adfb9e
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -147,8 +146,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T154114Z.tar.gz
-recovery_map_aliases: 19633
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirp_threshold_prepared_recovery_20261013T160825Z.tar.gz
+recovery_map_aliases: 20452
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -240,7 +239,11 @@ bookkeeping_failures_since_prior: 'Identity walker0e119d mishandled current free
   Root source inventory displays b567ea/101f46 truncated repeated hash-path tables; all result semantics recovered17f81d/8548e6
   and exactpins checked. Wrong defaultcwd/read filename guesses caused read-only misses, corrected with absolute
   paths and actual inventories. STATE inspection datetime JSON serialization failed; recovered withdefault=str.
-  Canonical threshold freeze104records is scoped and110total, publication extra pins required; no bytes lost.'
+  Canonical threshold freeze104records is scoped and110total, publication extra pins required; no bytes lost. Broad
+  JSON inventory7a3a76 printed huge graph data andtruncated; exactprepare/resultsemantics recovered9b3966/0a68b5
+  andstagedpinsverified. Broad PR glob14654f includedprocedurefiles; exactPRbody reread2321a5. Wrong ASSUMPTIONS
+  filename recoveredactual ASSUMPTIONS_AND_IMPORTS, freeze records/files key corrected beforechecker. No scientific
+  failure hidden. J type miss byauthor/comparison/root corrected viaexplicitaddendum, estimatesunchanged.'
 sharpness_status: 'Root and separate427-line derivations plus complete crosscheck accepted: actual linear-ramp excess
   has positive tau^-2 lower envelope in an even two-mode witness; not every protocol/model.'
 spatial_correlation_status: 566-line independent core and 325-line comparison fully read; contracted-support continuum
@@ -373,7 +376,7 @@ smooth_preparation_status: Separate534line390a9efe frozen833421a6, full reads2dd
 moment_local_endpoint_status: G/E585 comparison accepts stationary root126/7ab78b9d under explicit parents. Initial
   fourth moments plus moment731 improve density to c^2+epsilon^(2/r), then W2 c+epsilon^(1/(2r)) and weighted trace
   c+epsilon^(1/r). New BV/local150 remains separate.
-planned_next_branch: physics-loop/toe-threshold-crossing-chirp-20261013
+planned_next_branch: null
 planned_next_base: f6a820fd66011a50752670a454fb375b420ddbd6
 corrected_dynamics_source_status: Freeze1397b1c6 has236members; three2380line cores unchanged. All334wrapper and780program
   lines root-read, omitted integrity-checker dependency lines repairedc84826. Root acceptance8df5f60b and review03a05171;
@@ -431,10 +434,10 @@ energy_adapted_local_inverse_status: Root207/13f6980c and full source-exposed520
   norm budgets and initial delta costs explicit. Separate neutral inverse derivation active, no result adopted yet.
   Separate compact360 now accepted0d7c0efc; it does not repeat independent proof of exposed423.
 active_workers:
-  pair_response_fresh: Finished immutable multitime publication source; idle
-  threshold_crossing_fresh: Threshold regular publication source;checkpoint1540,freeze when complete
-  kinetic_correlation_review: Exposed comparison postmeasurement306/390,actualcommutator transfer and84control;checkpoint1545
-  threshold_protocol_fresh: Fresh source-excluded threshold-protocol composition check;checkpoint1558
+  pair_response_fresh: idle; completed multitime source
+  threshold_crossing_fresh: idle; completed threshold source
+  kinetic_correlation_review: Source-only accepted UI assembly, preserve J precision and provisional prepared dependencies;checkpoint1608,target1617
+  threshold_protocol_fresh: Exposed comparison root211 vsown702, including exactactualcellbridge;checkpoint1614,target1623
 worker_compaction_failures: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CELL_EXPANSION_WORKER_COMPACTION_FAILURES_0620.json
 corrected_dynamics_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9511
 corrected_dynamics_published_science_revision: bd831ffb14c7d7f12bf1b8165596a0db85f838ef
@@ -607,22 +610,28 @@ repo_refresh: CAMPAIGN_REPO_REFRESH_1503.json at150235;18procedurebytes unchange
 chirp_publication_status: Completed regular9520/af2e4442 open attached. V2prepare222.157237667s,verify3.514095417s
   exit0;214paths,one-node/fouredges,4expectedtamperrejections,onefreshidentitycache,focusedchecked[]/0math,whitespaceactual0.
   V1failed218.165s and205path recovery preserved; one body label repair only. No retained/main integration.
-postmeasurement_energy_ui_status: Independent390/9597693a plus170/d392d3ff frozen152511/96865ed3, fullyrootread
-  db2bf4/cf4ca6/d1a1c0;19members7livepairsverified. Distinct positive single/double CAR column proof gives forward/inverse
-  D(H) graph bounds fromq2, firstenergytruncation yieldsfiniteprotocolUI with no initialsecondmoment. Exposed comparison
-  to root306 plusactualcommutator transfer active; no acceptanceyet. Rootcountercontrol84/1bea9837 frozen152500
-  before findings, outsidefixedslots, remainsprovisional. FiniteCARdiagnostic unchanged.
+postmeasurement_energy_ui_status: 'Full390/170 and exposedcomparison239/7cad0470+evidence412/28a3ebd6 read. Accepted59f1556c/reviewaac66b22
+  at155420; sourcecheck70members59pairs. Firstenergyonly finiteprotocolUI and actualepsilon=o(h^2) graphDuhamel
+  transfer supported. REQUIRED NOTATION PRECISION: freshprotocol found390line80 calls Jantiunitary; exactparentJ=Gamma
+  C islinearunitary. Rootconfirmed onlytwoJoccurrences andunchangedHSbounds; originalreviewmisspreserved. Addendumaff1db27/precisionacceptance08cfed6c
+  supersedes onlyno-correctionwording; wrappersmuststatecorrecttype. All originalfreezesimmutable. Sourceassemblyactive,
+  noPRyet.'
 chirped_kinetic_energy_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520
 chirped_kinetic_energy_published_science_revision: af2e44428a10e59cf5eb7130df4265d2949db8df
-multitime_publication_status: Packagecf112049/588members589total,note1214/b782e481,3unchangedcores,383payload387stage,5parents6maps.
-  Root all new wrappers/packet/182identity/193checker read,745driver fully covered by prior742 plus151line exactdiff;combined94
-  priorfull+11line delta. Sourcecheck0.461234666s exit0. Accepted328a299d/reviewa7799c07. Runtime prepare session92432
-  via execute_multitime_kinetic_phase.py; inspect actual completion then exactstage/verify/regularPR.
-threshold_assembly_status: Accepted sourceassembly75a56964,rootacceptanced661fb65/reviewdebdefb5,104explicitrecords/110totalfiles.
-  Four nested archived freezes/logs omitted by filename from direct freeze but bound in SOURCE_SELECTION and82livepairchecks;
-  publication must independently pin6extras. Bothcores unchanged,3directparents4maps; sourcecheck0.090130083s exit0.
-  Actual chirpparent9520 supplied. Sourcepublication active, no runtime yet.
-threshold_protocol_composition_status: New source-exposed root211/7a3ecb8b frozen153219 with12exactsource snapshots.
-  Explicit intervalcutdown/BV, Gramcrossdecay, fullword/normalstate/projector andq2tail maps seek extensionthroughthreshold.
-  Postmeasurement/actualtransfer dependencyprovisional. Fresh target-root-excluded worker threshold_protocol_fresh
-  active, rootproof withheld.
+multitime_publication_status: Completed regular9521/e8d5b7b created154901 andattached. Prepare225.897381583s andverify3.966326708s
+  exit0;387paths,graph1node5edges unchangedoldobjects,4exacttamperrejections,onefreshidentitycache,focusedchecked[]/0math,whitespace0.
+  Sourcecf112049; prepared0379b5b7 verified6d199c96. No mainmerge/retainedaudit.
+threshold_assembly_status: Sourcepublication19141299/196members197total,note1328/ea8e2ea5,128payload132stage; fullyrootreviewed687818a2
+  accepted97f974a6. Driver full prior742+130line diff; all new144identity/99checker/110+152+47generators and wrappers224/8/33
+  read. Sourcecheck0.140701875s,196pins208aliases. Original104scoped+6extras allbound, bothcores unchanged.
+threshold_protocol_composition_status: Root211/7a3ecb8b frozen153219. Fresh702/2c29d973 +223/bd2f45c3 frozen160106/32d1741b,
+  fullyrootread all925lines,23members10sourcepairschecked. Complete weighted thresholdinterface/intervalGram/productphases/normalstate/Gramprojector/q2positivecolumn/tail
+  proof appearsvalid. Fresh702 leavesactualcellgraphconditionsconditional; root211/postmeasurementbridge stronger.
+  Jtypeprecisiondetectedbyfreshworker, rootagrees. Exposedcomparisonactive targeted1623; nofinalacceptanceyet.
+multitime_kinetic_energy_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9521
+multitime_kinetic_energy_published_science_revision: e8d5b7b99c9faab65f71eb5ff353b60e2b609608
+threshold_crossing_chirp_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9522
+threshold_crossing_chirp_published_science_revision: 0fbe85f44f45bc8cbf4ca54c65ef8b7ea7950ab3
+threshold_publication_status: Completed regular9522/0fbe85f4 created160001 andattached. Prepare221.307255292s andverify3.917852125s
+  exit0;132paths,graph1node3edges unchangedoldobjects,4exacttamperrejections,onefreshidentitycache,focusedchecked[]/0math,whitespace0.
+  Prepared4ec90631 verifiedcf37e1f0. Sibling of9521 directlyon9520; no inventedcombinedancestry.

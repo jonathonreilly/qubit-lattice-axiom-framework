@@ -81,3 +81,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T15:18:48.564425+00:00: Threshold and prepared multitime complete comparisons accepted; postmeasurement root306 frozen before independent check. Chirp V1 runtime metadata failure preserved, V2 exact repair accepted and prepare running. No retained verdict or editable-prompt change.
 
 2026-10-13T15:41:14.430987+00:00: Chirp9520 published/attached with actual gates; multi-time publication accepted and prepare running. Threshold source accepted with explicit104record/110file freeze scope; postmeasurement390 fullyread, comparisonactive. Rootthreshold-protocol211 frozen before fresh targetcheck. No editableprompt or retained verdict.
+
+2026-10-13T16:08:25.301553+00:00: Published attached regular9521/9522 with exact gates. Postmeasurement tail/actualtransfer accepted with required explicit J type precision caught by fresh composition check; earlier no-correction wording superseded, originals preserved. Fresh702/223 fullyrootread; exposedcomparison andsourceassembly active. No formal retained verdict or editableprompt change.

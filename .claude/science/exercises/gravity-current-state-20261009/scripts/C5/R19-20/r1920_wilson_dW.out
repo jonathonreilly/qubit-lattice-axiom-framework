@@ -1,0 +1,4 @@
+naive Wilson r=1, N=96: rho0 = -6.556992, p0 = -2.185664, p0/rho0 = 0.333333
+d rho/dm = -1.767029, d p/dm = 0.000e+00, dW/dm = -1.767029  (per 4-component field, lattice units)
+analytic: d rho/dm = -2<R/eps0> = -1.767029
+top-only |Delta W| ~ 7.50e-17 per cell ~ 6.6e+106 rho_Lambda (naive Wilson, illustrative)

@@ -1,0 +1,16 @@
+symmetric-space dims: one-point 10, deg0 55, deg2 550
+O_h x T invariant: one-point 2, deg0 6, deg2 26  -> total local data 34
+Lorentz x T invariant (upper-index tensors): one-point 1, deg0 2, deg2 4
+
+[FULL Ward, O_h x T] allowed deg2 2, deg0 0
+  rank of map to rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) = 1
+  image dir: [1. 1. 1. 1. 0. 0.]
+[FULL Ward, Lorentz] allowed deg2 1, deg0 0
+  EH-type kernel rows: [-0.  0. -0. -0.  0.  0.]
+
+[SPATIAL Ward, O_h x T] allowed deg2 8, deg0 1
+  rank of map to rows (Xi_Eg, Xi_T2g, face1, face2, mu_E, mu_T2) = 2
+  image dir: [ 1.      0.9405  0.9851  0.9405 -0.     -0.    ]
+  image dir: [ 1.     -0.8174  0.5457 -0.8174 -0.     -0.    ]
+
+[no Ward, O_h x T] rank of map to six rows = 6

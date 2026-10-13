@@ -8248,3 +8248,24 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **ARTEFACT:** a demonstration that the five rows are removable, or do not enter any gauge-invariant observable at linear order. Checked, and refereed.
   - **OPEN:** otherwise.
 - **Expectation.** PHYSICAL. Ward violations in a graviton self-energy generically give mass terms and extra polarizations (Fierz–Pauli logic), so the rows are observable and the bill stands. The extra modes may themselves be a new wall: a vDVZ-type discontinuity or a ghost.
+- **R19-20 (source-clause audit): worker reading IRREDUCIBLE.**
+  - **The vacuum clauses collapse into one.** (S), (S\*) and (S\*\*) are truncations of one rule, (Σ): "the lowest state's gravitational effect through two derivatives is replaced by its Lorentz-invariant form with zero CC".
+  - **The full set does not.** W1-weight and N are logically independent of (S\*), with explicit models. The carrier is separate.
+  - **Minimal bridge:** (Σ) + W1-weight (including gravity's own stress) + a carrier. That is 3 clauses and 0 numbers.
+  - **The count** (checked; it reproduces R19-19's Lemma G). The local vacuum response through two derivatives has 34 numbers; a Lorentz/diff-invariant vacuum has 2. (Σ) sets:
+    - 30 by Ward identities;
+    - 2 by Lorentz conditions;
+    - 1 by Λ = 0;
+    - 1 by convention.
+  - **Reading: gravity is GR by stipulation**, for the lowest state, through two derivatives, at linear order. The grid adds nothing measurable for today's vacuum.
+  - **Grid-specific residuals:**
+    - the pre-crossover shear mismatch (tachyonic, conditional);
+    - a pre-crossover enthalpy mismatch, ~7e106 ρ_Λ for the top quark (illustration). (d-i) absorbs it; (S\*), (S\*\*) and (S_ad) do not;
+    - site-creation injection;
+    - the W7 anomaly;
+    - relics;
+    - the charge-block tunings.
+  - **The top-mass test** (M_t ≤ 170.9) comes from Λ = 0 and is not specific to the grid.
+  - **Registration collision:** ONE-CLAUSE and IRREDUCIBLE are not mutually exclusive. IRREDUCIBLE is reported under the literal-first rule.
+
+  Referee running.

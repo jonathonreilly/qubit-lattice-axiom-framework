@@ -1,0 +1,22 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+  "branch": "physics-loop/toe-pair-response-20261013",
+  "coverage": "Exact original complete proof coverage reused; complete new wrapper/program source reading is separate. Root source acceptance does not accept this publication package.",
+  "disposition": "conditional_vacuum_pair_response_with_unchanged_scientific_core",
+  "fresh_full_final_core_manual_read": false,
+  "new_independent_mathematical_review": false,
+  "no_go_packet_pass": false,
+  "prepared_source_freeze_sha256": "c7cdceb95c45c5a05b6248dbf3492c7b5d1e350445fb72714b3d4d46512cef03",
+  "source_assembly_root_acceptance_sha256": "e742f0e914dcd80579defcf799beea02f38e96d825e9686e5d61ea7a4294f37c",
+  "source_assembly_root_review_sha256": "bf13995ffe8f9a69c612b0c237a3f7efb7d6ff1587721f16213cf89a1ea4532f",
+  "source_review_coverage_verbatim": {
+    "assembly_freeze_sha256": "c7cdceb95c45c5a05b6248dbf3492c7b5d1e350445fb72714b3d4d46512cef03",
+    "remaining_parent_binding": "Actual calibrated weighted canonical parent and publication base not selected yet.",
+    "review": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PAIR_RESPONSE_SOURCE_ROOT_REVIEW.md",
+    "review_sha256": "bf13995ffe8f9a69c612b0c237a3f7efb7d6ff1587721f16213cf89a1ea4532f",
+    "scope": "Source-only assembly accepted for publication preparation, with one recorded author-read wording correction in the later publication copy. No mathematical core repair or audit verdict.",
+    "utc": "2026-10-13T08:52:45.194494+00:00"
+  }
+}

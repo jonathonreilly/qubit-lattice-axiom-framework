@@ -1,6 +1,6 @@
 {
- "edge_count": 15896,
- "node_count": 7046,
+ "edge_count": 15899,
+ "node_count": 7047,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21857,6 +21857,10 @@
   "vacuum_critical_stability_note": {
    "deps_hash": "0a176676c374",
    "out_degree": 4
+  },
+  "vacuum_pair_response_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "5ace3230e7d3",
+   "out_degree": 3
   },
   "valley_linear_action_note": {
    "deps_hash": "e3b0c44298fc",

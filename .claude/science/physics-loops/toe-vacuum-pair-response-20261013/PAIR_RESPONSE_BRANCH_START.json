@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-13T10:07:08.135059+00:00",
+  "branch": "physics-loop/toe-pair-response-20261013",
+  "base": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+  "parent_branch": "physics-loop/toe-calibrated-energy-20261013",
+  "parent_pr": 9513,
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "clean": true,
+  "stdout": "",
+  "stderr": "Switched to a new branch 'physics-loop/toe-pair-response-20261013'\n"
+}

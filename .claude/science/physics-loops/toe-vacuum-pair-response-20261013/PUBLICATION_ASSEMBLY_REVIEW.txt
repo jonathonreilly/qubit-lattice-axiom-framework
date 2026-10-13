@@ -1,0 +1,79 @@
+# Root review of the exact pair-response publication preparation
+
+Disposition: accepted_for_source_integration. This accepts the exact new publication
+source and bounded prepare/stage/verify procedure. It is not a retained verdict,
+new independent mathematical check, or authorization to merge science.
+
+Package SOURCE_FREEZE.json is a20e4d112f6610d3eb009136c3912606f01cec868aa13cc66b1aabde5f22b8d4,
+202 bound files plus that receipt. The prepared driver is
+21a341e1323dccb27122c38927d61f1cdca73ac4bde1197f55f5e03f69e556fb.
+The actual child is physics-loop/toe-pair-response-20261013 at
+ a968559552de327386e3a5b74c7c72a3c17f87bc, on regular9513.
+
+The exact accepted792 scientific core and its earlier full analytic coverage
+remain valid and unchanged. The919-line publication note has SHA
+4d0a8c9b8a19ef46c4d7779f1a12f8149532762f39d5e607ae7c9b2edbad7f41.
+All127 wrapper lines, all new support/diff content, three actual canonical
+bindings and one-node/three-edge proposal were read. The root's incorrect
+initial weighted-owner dispatch was corrected: calibration1481 contains W566,
+while pair derives its own graph comparison. Branch ancestry is not an extra
+mathematical edge. The correlation convention K(t)=C(-t), zero/higher-order
+threshold cases, fixed-input joint limits, supplied free vacuum and conditional
+actual-cell resources remain explicit. No finite-heating kinetic theorem is
+inferred from this pair note; the separately reviewed kinetic result has its
+own proof and subsequent publication obligation.
+
+Coverage: full765-line prepare/verify source read in5957a9/df8d83/cfd410,
+with the truncated112-token gap recovered exactly in a4c86a. Full198-line
+identity logic read91a852; complete program differences readf73a98/dbd658/75c206.
+The94-line combined driver and its unfilled acceptance were readb9766c.
+Complete scientific-wrapper/support diffs were read83e9eb/170cac/1e3a06;
+the duplicated head gap in83e9eb was recovered by the complete63-line head
+in170cac. Full current wrappers and all parent/graph records readf276e7.
+README/reproduction35b1e1, specification/acceptance412a9b, conformance/PR scope
+e049f3, and the separate source checker2034d1 were read. The earlier aggregate
+b4651f was truncated; its missing contents were recovered by these named reads.
+The attempted unneeded CLUSTER_LIMITS.json lookup failed; the actual specification
+was fully read. No missing file was treated as verified.
+
+Root source-only verification b3be00 checked all202 frozen identities, exact203
+file membership and equality of all three procedural templates to previously
+reviewed9513 sources. The separately read checker then ran0.193630875 seconds,
+exit0 with separately empty stderr. It reconstructed all77 accepted files,
+original24 and immediate32 sets, all15 forward/reverse diff projections, the
+792-line core and every canonical consumed slice. It checked all111 declared
+identity inputs and the complete rendered runner against the reviewed template.
+The109 payload files imply113 final paths including two root records, cache and
+citation manifest. Generated pin arrays were checked by complete equality, not
+represented as a manual entry-by-entry reading. Full raw output is in
+pair_publication_root_static; the immutable package stayed unchanged.
+
+The procedure preserves the deadline, exact branch/base, current parent/source
+and procedure identities. Prepare installs only new frozen paths, runs the
+canonical cache API with60seconds, preserves raw INNER/OUTER and the complete
+available merged stream, then tests four exact-reason corrupted-byte failures.
+Those checks establish source identity only. The graph comparison checks all
+prior complete objects and exactly the declared new node/edges. Root must inspect
+actual evidence and stage only the successful NUL path set. Verify checks exact
+regular stage-zero blobs and absence of unstaged drift before and after focused
+compatibility. An empty selected-claim list verifies no scientific claim.
+Neither program commits, pushes, opens PRs, retries, applies audits or changes
+retained status. Failures preserve partial files and logs for narrow recovery.
+
+There are no whitespace or mathematical-notation exceptions. Vocabulary may
+not silently change frozen bytes. Links resolve against the actual tracked
+parents and selected new files; historical absolute paths remain source data.
+The12 conformance sections distinguish source coverage from pending runtime,
+scientific review and retained audit. N1/N5 stay pending for any broader negative
+claim; no_go_packet_pass remains false. No broad no-go or retired premise is
+introduced. The historical human-coverage wording is corrected to author read
+coverage only in the new publication copy, with original and exact diff retained.
+
+The combined current-main driver is separately gated and is not authorized by
+this acceptance. Cumulative inherited-stack landing review, combined pipeline,
+strict audit lint and independent retained audit remain explicit obligations.
+This review authorizes the ordinary source-integration procedure and a regular
+milestone PR after actual successful verification. No merge, main push, physical
+axiom, audit verdict, other-chat message or editable prompt change is authorized
+or reported. Exact original-body coverage is reused, not relabelled as a fresh
+read or independent proof of unchanged mathematics.

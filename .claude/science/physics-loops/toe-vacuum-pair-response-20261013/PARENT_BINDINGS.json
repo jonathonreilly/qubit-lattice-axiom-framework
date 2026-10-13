@@ -1,0 +1,72 @@
+{
+  "archived_provisional_relations": [],
+  "boundary": "Only the three original consumed cores are scientific premises; unrelated cores in composite canonical parents are not adopted. Transfer note is branch/context ancestry, not a direct pair-proof input.",
+  "canonical_bindings_are_conditional": true,
+  "dispatch_correction": "PARENT_OWNER_CORRECTION.json",
+  "parents": [
+    {
+      "bytes": 35591,
+      "claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "consumed_cores": [
+        {
+          "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/fresh/frozen_sources/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "byte_range": [
+            0,
+            35591
+          ],
+          "line_range": [
+            1,
+            568
+          ],
+          "sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88"
+        }
+      ],
+      "lines": 568,
+      "path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88"
+    },
+    {
+      "bytes": 68680,
+      "claim_id": "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+      "consumed_cores": [
+        {
+          "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/fresh/frozen_sources/ENERGY_ADAPTED_WEIGHTED_CALIBRATION_INDEPENDENT.md",
+          "byte_range": [
+            41184,
+            66743
+          ],
+          "line_range": [
+            897,
+            1462
+          ],
+          "sha256": "974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c"
+        }
+      ],
+      "lines": 1481,
+      "path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294"
+    },
+    {
+      "bytes": 34185,
+      "claim_id": "smooth_preparation_moments_bounded_theorem_note_2026-10-13",
+      "consumed_cores": [
+        {
+          "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/fresh/frozen_sources/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+          "byte_range": [
+            4170,
+            31186
+          ],
+          "line_range": [
+            72,
+            605
+          ],
+          "sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1"
+        }
+      ],
+      "lines": 653,
+      "path": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2"
+    }
+  ],
+  "same_packet_parents": []
+}

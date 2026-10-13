@@ -1,0 +1,115 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: invalid value encountered in multiply
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: invalid value encountered in multiply
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: invalid value encountered in multiply
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: invalid value encountered in multiply
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: invalid value encountered in multiply
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: divide by zero encountered in scalar divide
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R17-10/scripts/relaxK6.py:67: RuntimeWarning: invalid value encountered in multiply
+  Mm = (DL + rng.exponential(1.0, L)*(rng.uniform(size=L) < rng.uniform(0.1, 0.7)))*ins; Mm *= E/Mm.sum()
+eq b=0.10 hi=0.10 m=0.01: no feasible point found (best min(Eg,T2g) -1.000e+00) (0s)
+eq b=0.10 hi=0.15 m=0.01: no feasible point found (best min(Eg,T2g) +2.371e-03) (11s)
+eq b=0.10 hi=0.20 m=0.01: no feasible point found (best min(Eg,T2g) +2.371e-03) (20s)
+eq b=0.10 hi=0.35 m=0.01: no feasible point found (best min(Eg,T2g) +2.740e-03) (36s)
+eq b=0.10 hi=0.60 m=0.01: no feasible point found (best min(Eg,T2g) +2.594e-03) (48s)
+eq b=0.10 hi=0.85 m=0.01: no feasible point found (best min(Eg,T2g) +2.730e-03) (67s)
+eq b=0.10 hi=1.10 m=0.01: no feasible point found (best min(Eg,T2g) +1.026e-03) (83s)
+eq b=0.10 hi=1.60 m=0.01: no feasible point found (best min(Eg,T2g) -1.867e-05) (101s)
+OVERALL eq b=0.10 m=0.01 smin=0.15: none; runtime 101s
+eq b=0.20 hi=0.20 m=0.01: no feasible point found (best min(Eg,T2g) +2.394e-03) (7s)
+eq b=0.20 hi=0.25 m=0.01: MAX K6row -1.4342e-03 | Eg +1.14e-16 T2g -1.09e-16 face1 -1.434e-03 K6row -1.434e-03 mu_E +1.418e-03 | edge P/M 0.623 Q/M 0.623 R/M 0.623 (24s)
+eq b=0.20 hi=0.30 m=0.01: MAX K6row -8.3091e-04 | Eg -4.07e-16 T2g -5.59e-16 face1 -8.309e-04 K6row -8.309e-04 mu_E +5.558e-04 | edge P/M 0.405 Q/M 0.348 R/M 0.341 (37s)
+eq b=0.20 hi=0.45 m=0.01: MAX K6row -2.0009e-04 | Eg -7.47e-17 T2g -5.85e-17 face1 -2.001e-04 K6row -2.001e-04 mu_E +1.500e-04 | edge P/M 0.247 Q/M 0.211 R/M 0.205 (63s)
+eq b=0.20 hi=0.70 m=0.01: no feasible point found (best min(Eg,T2g) +7.405e+09) (75s)
+eq b=0.20 hi=0.95 m=0.01: MAX K6row -1.8339e-04 | Eg -8.89e-16 T2g +2.36e-17 face1 -1.834e-04 K6row -1.834e-04 mu_E +4.694e-04 | edge P/M 0.380 Q/M 0.352 R/M 0.347 (87s)
+eq b=0.20 hi=1.20 m=0.01: no feasible point found (best min(Eg,T2g) -2.146e-04) (89s)
+eq b=0.20 hi=1.70 m=0.01: no feasible point found (best min(Eg,T2g) -2.853e-04) (93s)
+OVERALL eq b=0.20 m=0.01 smin=0.15: -1.8339e-04 (hi=0.95); runtime 93s
+eq b=0.30 hi=0.30 m=0.01: MAX K6row -1.0601e-03 | Eg -5.46e-16 T2g +4.44e-15 face1 -1.060e-03 K6row -1.060e-03 mu_E +1.263e-03 | edge P/M 0.548 Q/M 0.548 R/M 0.548 (11s)
+eq b=0.30 hi=0.35 m=0.01: MAX K6row -8.1612e-04 | Eg +2.47e-15 T2g +2.09e-15 face1 -8.161e-04 K6row -8.161e-04 mu_E +9.864e-04 | edge P/M 0.501 Q/M 0.499 R/M 0.499 (26s)
+eq b=0.30 hi=0.40 m=0.01: MAX K6row -3.7829e-04 | Eg +1.27e-16 T2g +3.69e-17 face1 -3.783e-04 K6row -3.783e-04 mu_E +3.532e-04 | edge P/M 0.321 Q/M 0.268 R/M 0.262 (53s)
+eq b=0.30 hi=0.55 m=0.01: no feasible point found (best min(Eg,T2g) +2.182e-03) (65s)
+eq b=0.30 hi=0.80 m=0.01: no feasible point found (best min(Eg,T2g) +1.552e-03) (82s)
+eq b=0.30 hi=1.05 m=0.01: MAX K6row -1.9511e-04 | Eg -4.33e-17 T2g -3.25e-18 face1 -1.951e-04 K6row -1.951e-04 mu_E +5.296e-04 | edge P/M 0.375 Q/M 0.341 R/M 0.334 (94s)
+eq b=0.30 hi=1.30 m=0.01: no feasible point found (best min(Eg,T2g) -3.993e-04) (102s)
+eq b=0.30 hi=1.80 m=0.01: no feasible point found (best min(Eg,T2g) -6.968e-04) (108s)
+OVERALL eq b=0.30 m=0.01 smin=0.15: -1.9511e-04 (hi=1.05); runtime 108s
+eq b=0.40 hi=0.40 m=0.01: no feasible point found (best min(Eg,T2g) +2.531e-03) (12s)
+eq b=0.40 hi=0.45 m=0.01: MAX K6row -7.3674e-04 | Eg -3.56e-16 T2g -5.19e-16 face1 -7.367e-04 K6row -7.367e-04 mu_E +1.011e-03 | edge P/M 0.451 Q/M 0.400 R/M 0.394 (19s)
+eq b=0.40 hi=0.50 m=0.01: no feasible point found (best min(Eg,T2g) +2.431e-03) (35s)
+eq b=0.40 hi=0.65 m=0.01: MAX K6row -2.1200e-04 | Eg -7.19e-17 T2g -2.71e-17 face1 -2.120e-04 K6row -2.120e-04 mu_E +3.446e-04 | edge P/M 0.290 Q/M 0.253 R/M 0.245 (47s)
+eq b=0.40 hi=0.90 m=0.01: MAX K6row -1.9545e-04 | Eg -9.06e-17 T2g -1.91e-17 face1 -1.954e-04 K6row -1.954e-04 mu_E +4.886e-04 | edge P/M 0.344 Q/M 0.317 R/M 0.312 (57s)
+eq b=0.40 hi=1.15 m=0.01: no feasible point found (best min(Eg,T2g) +7.220e-04) (71s)
+eq b=0.40 hi=1.40 m=0.01: no feasible point found (best min(Eg,T2g) -7.392e-04) (77s)
+eq b=0.40 hi=1.90 m=0.01: no feasible point found (best min(Eg,T2g) -4.491e-04) (84s)
+OVERALL eq b=0.40 m=0.01 smin=0.15: -1.9545e-04 (hi=0.90); runtime 84s
+eq b=0.50 hi=0.50 m=0.01: MAX K6row -6.2968e-04 | Eg +3.88e-16 T2g +5.63e-16 face1 -6.297e-04 K6row -6.297e-04 mu_E +1.804e-03 | edge P/M 0.541 Q/M 0.541 R/M 0.541 (13s)
+eq b=0.50 hi=0.55 m=0.01: MAX K6row -5.2902e-04 | Eg -1.86e-16 T2g -3.09e-16 face1 -5.290e-04 K6row -5.290e-04 mu_E +1.531e-03 | edge P/M 0.506 Q/M 0.505 R/M 0.505 (22s)
+eq b=0.50 hi=0.60 m=0.01: no feasible point found (best min(Eg,T2g) +6.479e+10) (38s)
+eq b=0.50 hi=0.75 m=0.01: MAX K6row -2.8155e-04 | Eg -9.61e-17 T2g -5.16e-17 face1 -2.815e-04 K6row -2.815e-04 mu_E +6.664e-04 | edge P/M 0.356 Q/M 0.323 R/M 0.315 (57s)
+eq b=0.50 hi=1.00 m=0.01: no feasible point found (best min(Eg,T2g) +1.170e-03) (60s)
+eq b=0.50 hi=1.25 m=0.01: MAX K6row -3.8527e-04 | Eg -9.32e-17 T2g -2.17e-17 face1 -3.853e-04 K6row -3.853e-04 mu_E +2.333e-03 | edge P/M 0.622 Q/M 0.603 R/M 0.593 (70s)
+eq b=0.50 hi=1.50 m=0.01: no feasible point found (best min(Eg,T2g) -1.059e-03) (74s)
+eq b=0.50 hi=2.00 m=0.01: no feasible point found (best min(Eg,T2g) -5.825e-04) (81s)
+OVERALL eq b=0.50 m=0.01 smin=0.15: -2.8155e-04 (hi=0.75); runtime 81s
+eq b=0.60 hi=0.60 m=0.01: MAX K6row -5.3604e-04 | Eg -5.94e-17 T2g -1.48e-16 face1 -5.360e-04 K6row -5.360e-04 mu_E +1.664e-03 | edge P/M 0.509 Q/M 0.499 R/M 0.496 (14s)
+eq b=0.60 hi=0.65 m=0.01: no feasible point found (best min(Eg,T2g) +1.421e-03) (23s)
+eq b=0.60 hi=0.70 m=0.01: no feasible point found (best min(Eg,T2g) +1.504e-03) (37s)
+eq b=0.60 hi=0.85 m=0.01: MAX K6row -3.1779e-04 | Eg -4.12e-17 T2g -2.34e-17 face1 -3.178e-04 K6row -3.178e-04 mu_E +1.111e-03 | edge P/M 0.430 Q/M 0.410 R/M 0.405 (53s)
+eq b=0.60 hi=1.10 m=0.01: no feasible point found (best min(Eg,T2g) +8.644e-04) (62s)
+eq b=0.60 hi=1.35 m=0.01: no feasible point found (best min(Eg,T2g) +4.863e-04) (75s)
+eq b=0.60 hi=1.60 m=0.01: no feasible point found (best min(Eg,T2g) -7.401e-04) (79s)
+eq b=0.60 hi=2.10 m=0.01: no feasible point found (best min(Eg,T2g) -4.096e-04) (90s)
+OVERALL eq b=0.60 m=0.01 smin=0.15: -3.1779e-04 (hi=0.85); runtime 90s
+eq b=0.80 hi=0.80 m=0.01: no feasible point found (best min(Eg,T2g) -4.608e-04) (3s)
+eq b=0.80 hi=0.85 m=0.01: MAX K6row -4.4796e-04 | Eg +7.55e-15 T2g +5.64e-15 face1 -4.480e-04 K6row -4.480e-04 mu_E +2.454e-03 | edge P/M 0.575 Q/M 0.575 R/M 0.575 (12s)
+eq b=0.80 hi=0.90 m=0.01: MAX K6row -4.2952e-04 | Eg -2.53e-16 T2g -1.15e-16 face1 -4.295e-04 K6row -4.295e-04 mu_E +2.427e-03 | edge P/M 0.577 Q/M 0.577 R/M 0.577 (32s)
+eq b=0.80 hi=1.05 m=0.01: MAX K6row -4.1680e-04 | Eg -6.07e-17 T2g -3.12e-17 face1 -4.168e-04 K6row -4.168e-04 mu_E +2.522e-03 | edge P/M 0.595 Q/M 0.595 R/M 0.595 (45s)
+eq b=0.80 hi=1.30 m=0.01: no feasible point found (best min(Eg,T2g) -5.206e-04) (48s)
+eq b=0.80 hi=1.55 m=0.01: no feasible point found (best min(Eg,T2g) -7.926e-04) (52s)
+eq b=0.80 hi=1.80 m=0.01: no feasible point found (best min(Eg,T2g) -6.545e-04) (60s)
+eq b=0.80 hi=2.30 m=0.01: no feasible point found (best min(Eg,T2g) -9.822e-04) (65s)
+OVERALL eq b=0.80 m=0.01 smin=0.15: -4.1680e-04 (hi=1.05); runtime 65s
+eq b=1.00 hi=1.00 m=0.01: no feasible point found (best min(Eg,T2g) +8.066e-04) (10s)
+eq b=1.00 hi=1.05 m=0.01: no feasible point found (best min(Eg,T2g) +1.063e-02) (18s)
+eq b=1.00 hi=1.10 m=0.01: no feasible point found (best min(Eg,T2g) +7.382e-04) (23s)
+eq b=1.00 hi=1.25 m=0.01: no feasible point found (best min(Eg,T2g) +4.336e+13) (34s)
+eq b=1.00 hi=1.50 m=0.01: no feasible point found (best min(Eg,T2g) -7.018e-04) (38s)
+eq b=1.00 hi=1.75 m=0.01: no feasible point found (best min(Eg,T2g) -9.061e-04) (42s)
+eq b=1.00 hi=2.00 m=0.01: no feasible point found (best min(Eg,T2g) -9.066e-04) (51s)
+eq b=1.00 hi=2.50 m=0.01: no feasible point found (best min(Eg,T2g) -1.131e-03) (61s)
+OVERALL eq b=1.00 m=0.01 smin=0.15: none; runtime 61s
+eq b=1.20 hi=1.20 m=0.01: no feasible point found (best min(Eg,T2g) -3.833e-05) (5s)
+eq b=1.20 hi=1.25 m=0.01: no feasible point found (best min(Eg,T2g) +1.585e-04) (10s)
+eq b=1.20 hi=1.30 m=0.01: no feasible point found (best min(Eg,T2g) -7.491e-04) (12s)
+eq b=1.20 hi=1.45 m=0.01: no feasible point found (best min(Eg,T2g) -5.359e-04) (15s)
+eq b=1.20 hi=1.70 m=0.01: no feasible point found (best min(Eg,T2g) -7.316e-04) (18s)
+eq b=1.20 hi=1.95 m=0.01: no feasible point found (best min(Eg,T2g) -9.300e-04) (22s)
+eq b=1.20 hi=2.20 m=0.01: no feasible point found (best min(Eg,T2g) -1.054e-03) (29s)
+eq b=1.20 hi=2.70 m=0.01: no feasible point found (best min(Eg,T2g) -9.409e-04) (39s)
+OVERALL eq b=1.20 m=0.01 smin=0.15: none; runtime 39s
+eq b=1.40 hi=1.40 m=0.01: no feasible point found (best min(Eg,T2g) -4.763e-04) (4s)
+eq b=1.40 hi=1.45 m=0.01: no feasible point found (best min(Eg,T2g) -5.458e-04) (7s)
+eq b=1.40 hi=1.50 m=0.01: no feasible point found (best min(Eg,T2g) -6.227e-04) (11s)
+eq b=1.40 hi=1.65 m=0.01: no feasible point found (best min(Eg,T2g) -7.556e-04) (16s)
+eq b=1.40 hi=1.90 m=0.01: no feasible point found (best min(Eg,T2g) -9.509e-04) (27s)
+eq b=1.40 hi=2.15 m=0.01: no feasible point found (best min(Eg,T2g) -9.834e-04) (36s)
+eq b=1.40 hi=2.40 m=0.01: no feasible point found (best min(Eg,T2g) -9.590e-04) (42s)
+eq b=1.40 hi=2.90 m=0.01: no feasible point found (best min(Eg,T2g) -9.891e-04) (49s)
+OVERALL eq b=1.40 m=0.01 smin=0.15: none; runtime 49s
+DONE

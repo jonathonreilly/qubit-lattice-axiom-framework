@@ -1,0 +1,11 @@
+fast-only path-free OVERALL lag b=1.00 m=0.1 smin=0.15: none; runtime 66s
+fast-only path-free lag b=0.60 hi=0.90 m=0.01: MAX Lagrangian -8.5749e-04 | Eg +2.07e-04 T2g -4.52e-04 face1 -6.220e-04 K6row -6.644e-04 mu_E +8.369e-03 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (43s)
+fast-only path-free OVERALL lag b=0.60 m=0.01 smin=0.15: -8.5749e-04 (hi=0.90); runtime 80s
+fast-only path-free lag b=1.00 hi=1.30 m=0.01: MAX Lagrangian -6.0964e-04 | Eg -4.78e-05 T2g -7.16e-04 face1 -5.590e-04 K6row -3.441e-04 mu_E +1.078e-02 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (38s)
+fast-only path-free OVERALL lag b=1.00 m=0.01 smin=0.15: -6.0964e-04 (hi=1.30); runtime 83s
+fast-only path-free OVERALL lag b=0.60 m=0.1 smin=0.15: none; runtime 84s
+fast-only path-free lag b=0.30 hi=0.30 m=0.1: MAX Lagrangian -2.5380e-03 | Eg +1.86e-03 T2g +7.67e-03 face1 -1.922e-03 K6row -5.238e-03 mu_E +5.670e-03 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (37s)
+fast-only path-free lag b=0.30 hi=0.60 m=0.1: MAX Lagrangian -1.3108e-03 | Eg +5.63e-04 T2g +2.76e-04 face1 -8.636e-04 K6row -1.354e-03 mu_E +6.364e-03 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (53s)
+fast-only path-free OVERALL lag b=0.30 m=0.1 smin=0.15: -1.3108e-03 (hi=0.60); runtime 88s
+fast-only path-free lag b=0.30 hi=0.30 m=0.01: MAX Lagrangian -2.9850e-03 | Eg +1.87e-03 T2g +2.00e-02 face1 -3.943e-03 K6row -1.036e-02 mu_E +6.261e-03 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (50s)
+fast-only path-free OVERALL lag b=0.30 m=0.01 smin=0.15: -2.9850e-03 (hi=0.30); runtime 109s

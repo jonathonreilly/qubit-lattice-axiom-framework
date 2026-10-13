@@ -1,0 +1,2 @@
+ge b=0.30 hi=0.80 m=0.01: no feasible point found (best min(Eg,T2g) +1.568e-03) (94s)
+OVERALL ge b=0.30 m=0.01 smin=0.15: none; runtime 94s

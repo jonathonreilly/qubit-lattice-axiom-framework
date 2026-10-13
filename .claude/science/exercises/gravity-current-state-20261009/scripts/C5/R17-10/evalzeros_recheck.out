@@ -1,0 +1,9 @@
+corner A=G(1.0)  m=0.1 U: Eg -2.1088e-04 T2g -4.0137e-04 face1 -2.7912e-04 face2 -4.0137e-04 body -3.5620e-04 (face2-T2g 6.3e-14, Oh resid 1.6e-19)
+corner C2        m=0.1 U: Eg +9.7718e-06 T2g +3.7217e-04 face1 -9.3297e-04 face2 +3.7223e-04 body -6.6713e-04 (face2-T2g 6.4e-08, Oh resid 1.7e-18)
+corner C         m=0.1 U: Eg -1.9033e-04 T2g +6.8018e-05 face1 -1.0808e-03 face2 +6.8076e-05 body -8.6700e-04 (face2-T2g 5.8e-08, Oh resid 2.2e-18)
+corner Z1        m=0.1 U: Eg +5.9390e-04 T2g +6.1522e-04 face1 -2.2981e-04 face2 +6.1524e-04 body -1.2881e-04 (face2-T2g 1.7e-08, Oh resid 1.2e-18)
+U axis zero (A,C2,C) m=0.10 (u,v)=(0.964879,0.007410) in-simplex=True | U rows: Eg +8.96e-15 T2g -4.01e-15 face1 -8.93992e-04 face2 +5.10e-08 body -7.94637e-04 | v_max 0.998293 max|s'| 1.000000000
+U axis zero (A,C2,C) m=0.03 (u,v)=(0.955996,0.015995) in-simplex=True | U rows: Eg +8.84e-15 T2g -4.54e-15 face1 -8.95970e-04 face2 +5.00e-08 body -7.96395e-04 | v_max 0.999846 max|s'| 1.000000000
+U axis zero (A,C2,C) m=0.01 (u,v)=(0.955208,0.016763) in-simplex=True | U rows: Eg +8.59e-15 T2g -4.75e-15 face1 -8.96115e-04 face2 +4.99e-08 body -7.96524e-04 | v_max 0.999983 max|s'| 1.000000000
+runtime 9.7s
+python3 evalzeros.py  7.83s user 2.10s system 99% cpu 9.963 total

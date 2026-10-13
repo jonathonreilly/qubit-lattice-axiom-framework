@@ -1,0 +1,8 @@
+lag b=0.20 hi=0.20 m=0.1: MAX Lagrangian +4.6224e-05 | Eg -1.24e-03 T2g -2.17e-04 face1 -9.885e-04 K6row -4.924e-06 mu_E -1.189e-04 | edge P/M 0.043 Q/M 0.043 R/M 0.043 (6s)
+lag b=0.20 hi=0.45 m=0.1: MAX Lagrangian +1.0165e-04 | Eg -4.12e-03 T2g -5.23e-04 face1 -3.366e-03 K6row -1.442e-04 mu_E -8.004e-04 | edge P/M 0.097 Q/M 0.084 R/M 0.074 (24s)
+lag b=0.20 hi=0.70 m=0.1: MAX Lagrangian +8.6200e-05 | Eg -4.46e-03 T2g -5.98e-04 face1 -3.665e-03 K6row -1.679e-04 mu_E -1.587e-03 | edge P/M 0.138 Q/M 0.103 R/M 0.079 (45s)
+lag b=0.20 hi=1.20 m=0.1: MAX Lagrangian +2.1746e-05 | Eg -2.12e-03 T2g -3.52e-04 face1 -1.750e-03 K6row -7.316e-05 mu_E -2.759e-03 | edge P/M 0.174 Q/M 0.142 R/M 0.118 (64s)
+lag b=0.20 hi=2.20 m=0.1: no feasible point found (best min(Eg,T2g) -8.924e-04) (72s)
+OVERALL lag b=0.20 m=0.1 smin=0.15: +1.0165e-04 (hi=0.45); runtime 72s
+lag b=0.30 hi=0.30 m=0.1: MAX Lagrangian +9.7918e-05 | Eg -4.21e-03 T2g -6.35e-04 face1 -3.430e-03 K6row -1.149e-04 mu_E -6.201e-04 | edge P/M 0.069 Q/M 0.069 R/M 0.069 (11s)
+lag b=0.30 hi=0.55 m=0.1: MAX Lagrangian +9.2918e-05 | Eg -4.77e-03 T2g -7.06e-04 face1 -3.909e-03 K6row -1.537e-04 mu_E -1.087e-03 | edge P/M 0.098 Q/M 0.081 R/M 0.068 (24s)

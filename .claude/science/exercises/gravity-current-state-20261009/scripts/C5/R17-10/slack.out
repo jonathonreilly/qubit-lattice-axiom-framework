@@ -1,0 +1,2 @@
+relaxK6_ge_m0.01_b0.30_hi0.80.npy L=50: face1(node, NU=700) -9.361958e-05  (NU=2800) -9.361958e-05  quad diff 7.8e-18 | outward-placement upper bound +6.498345e-03  slack +6.592e-03  (margin 9.362e-05)
+relaxK6_ge_m0.01_b0.60_hi0.65.npy L=50: face1(node, NU=700) -1.177149e-04  (NU=2800) -1.177149e-04  quad diff 3.9e-18 | outward-placement upper bound +9.062306e-03  slack +9.180e-03  (margin 1.177e-04)

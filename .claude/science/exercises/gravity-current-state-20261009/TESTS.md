@@ -6381,3 +6381,10 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **ZEROED:** an explicit subluminal law with μ_T2 = 0, checked. If (c) succeeds, also report the full 4-row root.
   - **OPEN:** otherwise.
 - **Expectation.** SIGN-DEFINITE on D1 (positive), via the Wilson mass coupling directions, which would make μ_T2 a separate knob.
+- **R17-10 (certification): worker reading K₆ OPEN on the relaxation superset, with CERTIFIED-CONFLICT on the fast-only slice 𝓕 (the sharp-turn limit, disjoint from 𝒮); μ_E OPEN.** The method is pre-stated in `agents/C5_R17-10_method.md`.
+  - **Theorem F.** On 𝓕, an exact rational certificate shows that the axis zeros (Ξ_Eg = Ξ_T2g = 0) force ⟨K₆/ε⁷⟩ > 0 for every m. It uses multipliers 536/625 and −16/125 and a margin of −117/1600000.
+  - **The general relaxation** keeps the sign in local searches (best −6.3e-5), but it is not certified: bin slack is 70–80× the margin, and no SDP solver is installed.
+  - **μ_E:** no constant-multiplier pointwise certificate can exist.
+  - **P-K6′:** any shape solution of the K₆ row needs a finite fraction of slow-slope structure.
+
+  Referee running.

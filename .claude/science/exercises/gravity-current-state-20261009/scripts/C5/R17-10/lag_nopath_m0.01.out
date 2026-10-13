@@ -1,0 +1,14 @@
+lag b=0.20 hi=0.20 m=0.01: MAX Lagrangian +6.2434e-05 | Eg -1.81e-03 T2g -3.45e-04 face1 -1.449e-03 K6row -2.480e-06 mu_E -1.527e-04 | edge P/M 0.048 Q/M 0.048 R/M 0.048 (5s)
+lag b=0.20 hi=0.45 m=0.01: MAX Lagrangian -1.0489e-03 | Eg -3.01e-04 T2g -1.78e-03 face1 -1.079e-03 K6row -4.083e-04 mu_E +1.565e-03 | edge P/M 0.476 Q/M 0.271 R/M 0.181 (14s)
+lag b=0.20 hi=0.70 m=0.01: MAX Lagrangian -8.1615e-04 | Eg -5.69e-05 T2g -1.05e-03 face1 -7.308e-04 K6row -4.262e-04 mu_E +4.567e-03 | edge P/M 0.587 Q/M 0.386 R/M 0.280 (23s)
+lag b=0.20 hi=1.20 m=0.01: MAX Lagrangian -6.2346e-04 | Eg -2.08e-04 T2g -8.38e-04 face1 -6.942e-04 K6row -3.291e-04 mu_E +5.951e-03 | edge P/M 0.666 Q/M 0.467 R/M 0.346 (28s)
+lag b=0.20 hi=2.20 m=0.01: no feasible point found (best min(Eg,T2g) +3.867e-04) (35s)
+OVERALL lag b=0.20 m=0.01 smin=0.15: +6.2434e-05 (hi=0.20); runtime 35s
+lag b=0.30 hi=0.30 m=0.01: MAX Lagrangian +6.5952e-05 | Eg -2.04e-03 T2g -2.07e-04 face1 -1.654e-03 K6row -7.473e-05 mu_E -2.819e-04 | edge P/M 0.000 Q/M 0.000 R/M 0.000 (7s)
+lag b=0.30 hi=0.55 m=0.01: MAX Lagrangian +4.7496e-06 | Eg -2.49e-04 T2g -6.22e-05 face1 -2.008e-04 K6row +1.465e-06 mu_E -6.803e-05 | edge P/M 0.000 Q/M 0.000 R/M 0.000 (16s)
+lag b=0.30 hi=0.80 m=0.01: MAX Lagrangian -1.0155e-03 | Eg -6.30e-04 T2g -1.88e-03 face1 -1.316e-03 K6row -3.737e-04 mu_E +3.823e-03 | edge P/M 0.679 Q/M 0.499 R/M 0.389 (28s)
+lag b=0.30 hi=1.30 m=0.01: MAX Lagrangian -4.7122e-04 | Eg -4.42e-04 T2g -1.05e-03 face1 -7.160e-04 K6row -1.230e-04 mu_E +4.894e-03 | edge P/M 0.651 Q/M 0.501 R/M 0.432 (39s)
+lag b=0.30 hi=2.30 m=0.01: no feasible point found (best min(Eg,T2g) -1.713e-05) (47s)
+OVERALL lag b=0.30 m=0.01 smin=0.15: +6.5952e-05 (hi=0.30); runtime 47s
+lag b=0.40 hi=0.40 m=0.01: MAX Lagrangian -1.5601e-03 | Eg -6.45e-05 T2g -1.60e-03 face1 -1.411e-03 K6row -9.627e-04 mu_E +2.585e-03 | edge P/M 0.551 Q/M 0.323 R/M 0.205 (9s)
+lag b=0.40 hi=0.65 m=0.01: MAX Lagrangian -1.0727e-03 | Eg -7.23e-05 T2g -1.28e-03 face1 -9.712e-04 K6row -5.977e-04 mu_E +4.663e-03 | edge P/M 0.638 Q/M 0.426 R/M 0.300 (17s)

@@ -1,0 +1,4 @@
+b=0.58 m=0.01: mu_E moment +4.4677980845e-04 fast form +4.4677986452e-04 diff 5.6e-11
+b=0.58 m=0.10: mu_E moment +9.3551102139e-03 fast form +9.3551102506e-03 diff 3.7e-11
+b=0.35 m=0.03: mu_E moment -5.3349594077e-03 fast form -5.3349593383e-03 diff 6.9e-11
+b=0.87 m=0.01: mu_E moment +9.2181939271e-03 fast form +9.2181939937e-03 diff 6.7e-11

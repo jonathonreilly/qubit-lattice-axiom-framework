@@ -1,0 +1,2 @@
+all-fast measure (stored M at b=0.3, hi=0.8, m=0.01): face1 five-moment -9.36193946e-05 | fast IBP form -9.36193940e-05 | diff 5.1e-13
+m->0 integrand psi(x) roots: [1.21483729 0.34028082 0.        ]  psi(0.5) = +3.6250 (positive: not sign-definite pointwise)

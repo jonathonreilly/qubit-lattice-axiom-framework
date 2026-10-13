@@ -1,0 +1,16 @@
+ge b=0.20 hi=0.70 m=0.01: MAX face1 -8.3961e-05 | Eg +1.14e-03 T2g +1.51e-03 face1 -8.396e-05 K6row -1.312e-03 mu_E +1.348e-02 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (8s)
+ge b=0.20 hi=3.08 m=0.01: no feasible point found (best min(Eg,T2g) +1.408e-05) (18s)
+OVERALL ge b=0.20 m=0.01 smin=0.15: -8.3961e-05 (hi=0.70); runtime 18s
+ge b=0.30 hi=0.80 m=0.01: MAX face1 -7.0364e-05 | Eg +1.12e-03 T2g +1.45e-03 face1 -7.036e-05 K6row -1.275e-03 mu_E +1.376e-02 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (7s)
+ge b=0.30 hi=3.08 m=0.01: no feasible point found (best min(Eg,T2g) +9.125e+14) (31s)
+OVERALL ge b=0.30 m=0.01 smin=0.15: -7.0364e-05 (hi=0.80); runtime 31s
+ge b=0.40 hi=0.90 m=0.01: no feasible point found (best min(Eg,T2g) +2.692e-03) (7s)
+ge b=0.40 hi=3.08 m=0.01: no feasible point found (best min(Eg,T2g) -1.624e-05) (16s)
+OVERALL ge b=0.40 m=0.01 smin=0.15: none; runtime 16s
+ge b=0.60 hi=1.10 m=0.01: no feasible point found (best min(Eg,T2g) +1.827e-03) (7s)
+ge b=0.60 hi=3.08 m=0.01: no feasible point found (best min(Eg,T2g) +4.485e-02) (17s)
+OVERALL ge b=0.60 m=0.01 smin=0.15: none; runtime 17s
+ge b=1.00 hi=1.50 m=0.01: no feasible point found (best min(Eg,T2g) +9.212e-04) (5s)
+ge b=1.00 hi=3.08 m=0.01: no feasible point found (best min(Eg,T2g) +3.583e+12) (23s)
+OVERALL ge b=1.00 m=0.01 smin=0.15: none; runtime 23s
+DONE

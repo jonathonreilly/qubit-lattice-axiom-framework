@@ -1,0 +1,7 @@
+ge b=0.30 hi=0.80 m=0.01: MAX face1 -6.2800e-05 | Eg +1.12e-03 T2g +1.48e-03 face1 -6.280e-05 K6row -1.276e-03 mu_E +1.407e-02 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (46s)
+OVERALL ge b=0.30 m=0.01 smin=0.15: -6.2800e-05 (hi=0.80); runtime 46s
+ge b=0.20 hi=0.70 m=0.01: no feasible point found (best min(Eg,T2g) +5.940e+00) (32s)
+OVERALL ge b=0.20 m=0.01 smin=0.15: none; runtime 32s
+ge b=0.30 hi=1.30 m=0.01: MAX face1 -7.0364e-05 | Eg +1.12e-03 T2g +1.45e-03 face1 -7.036e-05 K6row -1.275e-03 mu_E +1.376e-02 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (28s)
+OVERALL ge b=0.30 m=0.01 smin=0.15: -7.0364e-05 (hi=1.30); runtime 28s
+DONE

@@ -1,0 +1,35 @@
+UMIN=0.9 lag b=0.60 hi=0.60 m=0.01: MAX Lagrangian -8.9126e-04 | Eg +4.52e-04 T2g -4.60e-04 face1 -4.448e-04 K6row -6.688e-04 mu_E +7.185e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (7s)
+UMIN=0.9 lag b=0.60 hi=1.10 m=0.01: MAX Lagrangian -4.8370e-04 | Eg -2.31e-04 T2g -9.28e-04 face1 -5.631e-04 K6row -1.578e-04 mu_E +9.586e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (14s)
+UMIN=0.9 lag b=0.60 hi=1.60 m=0.01: MAX Lagrangian -3.5743e-04 | Eg -9.15e-04 T2g -1.22e-03 face1 -9.854e-04 K6row +6.857e-06 mu_E +6.693e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (20s)
+UMIN=0.9 OVERALL lag b=0.60 m=0.01 smin=0.15: -3.5743e-04 (hi=1.60); runtime 20s
+UMIN=0.9 lag b=0.20 hi=0.20 m=0.01: MAX Lagrangian -3.6967e-03 | Eg +2.39e-03 T2g +1.83e-02 face1 -3.982e-03 K6row -1.035e-02 mu_E +3.506e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (4s)
+UMIN=0.9 lag b=0.20 hi=0.70 m=0.01: MAX Lagrangian -6.8829e-04 | Eg -9.23e-05 T2g -1.01e-03 face1 -6.385e-04 K6row -3.172e-04 mu_E +7.748e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (15s)
+UMIN=0.9 lag b=0.20 hi=1.20 m=0.01: MAX Lagrangian -4.0924e-04 | Eg -2.93e-04 T2g -8.80e-04 face1 -5.475e-04 K6row -1.081e-04 mu_E +1.146e-02 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (23s)
+UMIN=0.9 OVERALL lag b=0.20 m=0.01 smin=0.15: -4.0924e-04 (hi=1.20); runtime 23s
+UMIN=0.9 lag b=0.30 hi=0.30 m=0.01: MAX Lagrangian -2.0011e-03 | Eg +2.08e-03 T2g +6.81e-03 face1 -1.091e-03 K6row -4.352e-03 mu_E +5.410e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (18s)
+UMIN=0.9 lag b=0.30 hi=0.80 m=0.01: MAX Lagrangian -6.3815e-04 | Eg -1.05e-04 T2g -9.84e-04 face1 -6.021e-04 K6row -2.773e-04 mu_E +8.238e-03 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (25s)
+UMIN=0.9 lag b=0.30 hi=1.30 m=0.01: MAX Lagrangian -3.9309e-04 | Eg -2.72e-04 T2g -8.55e-04 face1 -5.168e-04 K6row -9.919e-05 mu_E +1.175e-02 | edge P/M 0.900 Q/M 0.900 R/M 0.900 (33s)
+UMIN=0.9 OVERALL lag b=0.30 m=0.01 smin=0.15: -3.9309e-04 (hi=1.30); runtime 33s
+UMIN=0.7 lag b=0.20 hi=0.20 m=0.01: MAX Lagrangian -2.4901e-03 | Eg +1.25e-03 T2g +3.31e-03 face1 -1.842e-03 K6row -3.607e-03 mu_E +1.807e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (5s)
+UMIN=0.7 lag b=0.20 hi=0.70 m=0.01: MAX Lagrangian -4.2818e-04 | Eg -1.24e-03 T2g -1.72e-03 face1 -1.274e-03 K6row +8.810e-05 mu_E +2.593e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (13s)
+UMIN=0.7 lag b=0.20 hi=1.20 m=0.01: MAX Lagrangian -2.5374e-04 | Eg -1.00e-03 T2g -1.18e-03 face1 -9.633e-04 K6row +8.341e-05 mu_E +3.282e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (25s)
+UMIN=0.7 OVERALL lag b=0.20 m=0.01 smin=0.15: -2.5374e-04 (hi=1.20); runtime 25s
+UMIN=0.7 lag b=0.60 hi=0.60 m=0.01: MAX Lagrangian -6.1143e-04 | Eg -6.95e-04 T2g -1.64e-03 face1 -9.975e-04 K6row -6.671e-05 mu_E +3.280e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (9s)
+UMIN=0.7 lag b=0.60 hi=1.10 m=0.01: MAX Lagrangian -3.2797e-04 | Eg -9.68e-04 T2g -1.29e-03 face1 -9.932e-04 K6row +5.452e-05 mu_E +2.986e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (19s)
+UMIN=0.7 OVERALL lag b=0.60 m=0.01 smin=0.15: -3.2797e-04 (hi=1.10); runtime 25s
+UMIN=0.7 lag b=0.30 hi=0.30 m=0.01: MAX Lagrangian -1.3400e-03 | Eg +5.42e-04 T2g -1.84e-05 face1 -8.729e-04 K6row -1.275e-03 mu_E +2.586e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (15s)
+UMIN=0.7 lag b=0.30 hi=0.80 m=0.01: MAX Lagrangian -4.0371e-04 | Eg -1.10e-03 T2g -1.58e-03 face1 -1.142e-03 K6row +7.628e-05 mu_E +2.870e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (25s)
+UMIN=0.7 lag b=0.30 hi=1.30 m=0.01: MAX Lagrangian -2.4738e-04 | Eg -9.48e-04 T2g -1.13e-03 face1 -9.154e-04 K6row +7.853e-05 mu_E +3.288e-03 | edge P/M 0.700 Q/M 0.700 R/M 0.700 (31s)
+UMIN=0.7 OVERALL lag b=0.30 m=0.01 smin=0.15: -2.4738e-04 (hi=1.30); runtime 31s
+UMIN=0.5 lag b=0.20 hi=0.20 m=0.01: MAX Lagrangian -1.3329e-03 | Eg -1.11e-03 T2g -2.52e-03 face1 -1.965e-03 K6row -4.999e-04 mu_E +6.228e-04 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (6s)
+UMIN=0.5 lag b=0.20 hi=0.70 m=0.01: MAX Lagrangian -2.0587e-04 | Eg -1.84e-03 T2g -1.43e-03 face1 -1.598e-03 K6row +1.387e-04 mu_E -3.660e-04 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (13s)
+UMIN=0.5 lag b=0.20 hi=1.20 m=0.01: MAX Lagrangian -1.2149e-04 | Eg -1.32e-03 T2g -9.24e-04 face1 -1.138e-03 K6row +8.551e-05 mu_E -1.226e-03 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (23s)
+UMIN=0.5 OVERALL lag b=0.20 m=0.01 smin=0.15: -1.2149e-04 (hi=1.20); runtime 23s
+UMIN=0.5 lag b=0.60 hi=0.60 m=0.01: MAX Lagrangian -3.5958e-04 | Eg -1.44e-03 T2g -1.72e-03 face1 -1.374e-03 K6row +1.359e-04 mu_E +7.668e-04 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (5s)
+UMIN=0.5 lag b=0.60 hi=1.10 m=0.01: MAX Lagrangian -1.9478e-04 | Eg -1.46e-03 T2g -1.16e-03 face1 -1.301e-03 K6row +8.572e-05 mu_E -9.182e-04 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (17s)
+UMIN=0.5 lag b=0.60 hi=1.60 m=0.01: MAX Lagrangian -1.5963e-04 | Eg -1.69e-03 T2g -1.02e-03 face1 -1.480e-03 K6row +4.279e-05 mu_E -3.487e-03 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (24s)
+UMIN=0.5 OVERALL lag b=0.60 m=0.01 smin=0.15: -1.5963e-04 (hi=1.60); runtime 24s
+UMIN=0.5 lag b=0.30 hi=0.30 m=0.01: MAX Lagrangian -7.2202e-04 | Eg -1.26e-03 T2g -2.23e-03 face1 -1.514e-03 K6row -1.248e-05 mu_E +7.579e-04 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (9s)
+UMIN=0.5 lag b=0.30 hi=0.80 m=0.01: MAX Lagrangian -2.0233e-04 | Eg -1.58e-03 T2g -1.32e-03 face1 -1.384e-03 K6row +1.281e-04 mu_E -2.306e-04 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (16s)
+UMIN=0.5 lag b=0.30 hi=1.30 m=0.01: MAX Lagrangian -1.2453e-04 | Eg -1.46e-03 T2g -9.42e-04 face1 -1.257e-03 K6row +7.448e-05 mu_E -1.863e-03 | edge P/M 0.500 Q/M 0.500 R/M 0.500 (25s)
+UMIN=0.5 OVERALL lag b=0.30 m=0.01 smin=0.15: -1.2453e-04 (hi=1.30); runtime 25s

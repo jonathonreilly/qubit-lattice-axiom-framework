@@ -1,0 +1,3 @@
+mu b=0.30 hi=0.55 m=0.01: no feasible point found (best min(Eg,T2g) +2.292e-03) (12s)
+mu b=0.30 hi=0.80 m=0.01: no feasible point found (best min(Eg,T2g) +1.568e-03) (18s)
+OVERALL mu b=0.30 m=0.01 smin=0.15: none; runtime 18s

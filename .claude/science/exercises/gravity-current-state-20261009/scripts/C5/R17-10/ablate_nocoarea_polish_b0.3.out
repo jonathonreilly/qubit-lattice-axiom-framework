@@ -1,0 +1,2 @@
+ge b=0.30 hi=0.80 m=0.01: MAX face1 -9.3620e-05 | Eg +1.18e-03 T2g +1.56e-03 face1 -9.362e-05 K6row -1.368e-03 mu_E +1.278e-02 | edge P/M 1.000 Q/M 1.000 R/M 1.000 (13s)
+OVERALL ge b=0.30 m=0.01 smin=0.15: -9.3620e-05 (hi=0.80); runtime 13s

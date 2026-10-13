@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-13T06:57:49.890972+00:00",
+  "scope": "Source/recovery/port and changed I/O only; reuse valid archived independent science by exact identity.",
+  "checks": [
+    "All16 source paths match declared frozen tree and current bytes.",
+    "Both complete archives match every regular-file member and SHA.",
+    "Original eligible source/evidence inventory recovered.",
+    "All14 old function ASTs and fixture bytes identical.",
+    "All4 fresh actual author mutant payloads/executions checked without rerunning.",
+    "New frame witness checked by independent exact arithmetic; synthetic repeated default and sidecar-collision I/O only."
+  ],
+  "full_positive_scientific_rerun": false,
+  "mechanical_gate": "Parent/coordinator responsibility; record identities separately."
+}

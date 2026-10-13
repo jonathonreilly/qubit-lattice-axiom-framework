@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/analytic_fluid_cosmology_2026_10_13.py
+runner_sha256: f25b2174668c6c8e2e26f6e55bdb9dfa76aa8a1cd08c896235986c5871a3de39
+input_fingerprint_sha256: 1a30c78d40b2ff5d0f6d0f56106a02abcd1d4eba3b2728dfe779b1e8248fcb27
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 20.36
+status: ok
+----- stdout -----
+full off-orbit cases: 72
+free-mode rows: 25
+tracking families: 12
+disturbed histories: 48
+Interpretation: conditional classical construction; finite checks supplement the written proof; no independent empirical test.
+Frame witness: H_E=2, H_J=-1, E=6 for a=nu=H_v=1 and u_dot=-3 at zero fields and fluids.
+TOTAL: PASS=1497 FAIL=0
+
+----- stderr -----
+

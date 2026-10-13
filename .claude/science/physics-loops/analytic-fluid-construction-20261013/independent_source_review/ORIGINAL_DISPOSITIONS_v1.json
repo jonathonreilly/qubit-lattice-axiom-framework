@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-10-13T07:12:00.546780+00:00",
+  "reviewer": "/root/launch_check",
+  "kind": "Immutable reviewer-owned original16-path source dispositions; not a full review_receipt.py unit record.",
+  "original_source_base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "original_source_commit": "eb22c212bd0feeff27525453cbe21fc925bb667f",
+  "original_source_tree": "815c161466910010e9da84b4adf899cafd6d2746",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/REPORT_v1.md",
+    "sha256": "76711b1ead0101f475a10b27f9f16dac70ffd1e50d96835070b984cd918e7a54",
+    "bytes": 17674
+  },
+  "final_binding": {
+    "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/FINAL_BINDING_v1.json",
+    "sha256": "62895b7b4298fc9b65caa5e2d670a5125ef0aba5118786e1d79a69c70efc1814",
+    "bytes": 52090
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.json",
+      "original_sha256": "b5980d3ebdb8f2e8599cdff4530d32bc702cd616404dc723d1a33053562774be",
+      "disposition": "Retain as reviewed execution/provenance evidence for four actual affected-function source mutants; all four fail assertions. No exhaustive mutation or negative-family coverage inferred.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.json; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.json",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.json",
+      "final_sha256": "b5980d3ebdb8f2e8599cdff4530d32bc702cd616404dc723d1a33053562774be"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz",
+      "original_sha256": "42dc61839bb9ab031a66b7e546a80b24ed0bf6de0cb5c7fd27b432f78a782dd0",
+      "disposition": "Retain intact: all25 regular members checked by exact names, sizes and hashes, including mutated source, harnesses, complete results and execution evidence.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz",
+      "final_sha256": "42dc61839bb9ab031a66b7e546a80b24ed0bf6de0cb5c7fd27b432f78a782dd0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "30539ce603dad541e097790c8f2830a7b88ba0ba4409431202e721ae667bd186",
+      "disposition": "Retain as scope/status metadata for an independent conditional constructive source unit. It grants no retained/audit status or final mechanical gate success.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "30539ce603dad541e097790c8f2830a7b88ba0ba4409431202e721ae667bd186"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/DISCOVERY_PREFLIGHT_v1.json",
+      "original_sha256": "29070c1960f9fa6ebab275542d378fe1625c9782ef5d35892b3bb67b928deb37",
+      "disposition": "Retain as actual pre-execution discovery, declared-input and timeout evidence. It is not a full UNIT_RECEIPT invocation; the omitted earlier full helper is a recorded process timing deviation.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/DISCOVERY_PREFLIGHT_v1.json; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/DISCOVERY_PREFLIGHT_v1.json",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/DISCOVERY_PREFLIGHT_v1.json",
+      "final_sha256": "29070c1960f9fa6ebab275542d378fe1625c9782ef5d35892b3bb67b928deb37"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "original_sha256": "43198e5a40f0c8abe98f0fbc43ee85a50a1c4c44a3362f72f8de1fdfc43ba09c",
+      "disposition": "Retain intact: all174 eligible original regular files match original inventory and bytes. Reuse identical positive proof/numerical content; preserve original failures and defer broader negative history-selection delivery and its five-family obligation.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "final_sha256": "43198e5a40f0c8abe98f0fbc43ee85a50a1c4c44a3362f72f8de1fdfc43ba09c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/GOAL.md",
+      "original_sha256": "1b09a3c83f4f3887153ea685c4fb0eb1b03fc9a61725a568d6c67bbe43d7b7c6",
+      "disposition": "Retain as process scope: genuinely separate positive conditional model construction with explicit limitations, not a relabeled mixed positive/negative publication packet.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/GOAL.md; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/GOAL.md",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/GOAL.md",
+      "final_sha256": "1b09a3c83f4f3887153ea685c4fb0eb1b03fc9a61725a568d6c67bbe43d7b7c6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/HANDOFF.md",
+      "original_sha256": "1158b5042c368d05f989cdcfc0b3611453018aebe73d71d99ff165cd40d5a927",
+      "disposition": "Retain as honest source handoff describing portable constructive scope, full recovery and deferred broader negative obligation; final gate status remains pending at this original identity.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/HANDOFF.md; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/HANDOFF.md",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/HANDOFF.md",
+      "final_sha256": "1158b5042c368d05f989cdcfc0b3611453018aebe73d71d99ff165cd40d5a927"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "original_sha256": "5fe5a34e7e379af7c59c0e66016666e4df0b838c9bc28606a77761ed07fd1bea",
+      "disposition": "Retain: all14 scientific function AST identities and byte-identical fixture independently verified; port changes reviewed in full with no material issue.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "final_sha256": "5fe5a34e7e379af7c59c0e66016666e4df0b838c9bc28606a77761ed07fd1bea"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/RECOVERY_v1.json",
+      "original_sha256": "902016c5d5e14e78566048c9f7d7360ea5b00bdef61f8d8d4a18d94260cea663",
+      "disposition": "Retain: complete original-member receipt verified against archive and original files. Deferred negative material remains recoverable and is not a hidden premise or publication PASS.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/RECOVERY_v1.json; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/RECOVERY_v1.json",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/RECOVERY_v1.json",
+      "final_sha256": "902016c5d5e14e78566048c9f7d7360ea5b00bdef61f8d8d4a18d94260cea663"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "original_sha256": "9a5745abe69b8cf563f32b25692379b4a0f6155fa56996615f48874d1ff1e581",
+      "disposition": "Retain as historical chronology and review planning metadata. Subsequent canonical execution, reviewer binding and gate outcomes must be recorded separately, not projected into these earlier bytes.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/REVIEW_HISTORY.md; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "final_sha256": "9a5745abe69b8cf563f32b25692379b4a0f6155fa56996615f48874d1ff1e581"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/STATE.yaml",
+      "original_sha256": "0533078984ce98ee746d9f96fcb3322416cc0037f23e4d13fee4ed69419427eb",
+      "disposition": "Retain as original process state for the conditional constructive milestone. This historical state does not certify subsequent mechanical delivery or audit status.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/STATE.yaml; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/STATE.yaml",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/STATE.yaml",
+      "final_sha256": "0533078984ce98ee746d9f96fcb3322416cc0037f23e4d13fee4ed69419427eb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/TRACE_GATE.md",
+      "original_sha256": "a879770ba98b5143e5cbc40883ce699afb7507dd13882c9ab3f8ff16938ccfdd",
+      "disposition": "Retain as scope and trace metadata preserving limitations and the separate broader negative gate. It is not proof that the current full final gate has run.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:.claude/science/physics-loops/analytic-fluid-construction-20261013/TRACE_GATE.md; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/TRACE_GATE.md",
+      "final_path": ".claude/science/physics-loops/analytic-fluid-construction-20261013/TRACE_GATE.md",
+      "final_sha256": "a879770ba98b5143e5cbc40883ce699afb7507dd13882c9ab3f8ff16938ccfdd"
+    },
+    {
+      "original_path": "docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "original_sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a",
+      "disposition": "Accept as bounded constructive source after complete equation/proof/premise review: analytic positive metric, full supplied-fluid reconstruction, and global future homogeneous convergence for the stated classical action/domain. Retain free modes, physical-frame contraction witness, explicit assumptions, and finite-history/inhomogeneous/quantum limitations. No empirical, framework-derivation, novelty, or publication-status claim.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a"
+    },
+    {
+      "original_path": "outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json",
+      "original_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+      "disposition": "Retain as exposed supplied benchmark data, byte-identical to the fully reviewed original. It supplies numerical controls and is not independent observational evidence or a derived abundance/vacuum scale.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json",
+      "final_path": "outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json",
+      "final_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9"
+    },
+    {
+      "original_path": "outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "original_sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb",
+      "disposition": "Retain as explicit supplied-model and benchmark scope declaration; reviewed in full with no hidden load-bearing repository theorem or observation claim.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:outputs/analytic_fluid_cosmology_2026_10_13/imports.json; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "final_path": "outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "final_sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb"
+    },
+    {
+      "original_path": "scripts/analytic_fluid_cosmology_2026_10_13.py",
+      "original_sha256": "f25b2174668c6c8e2e26f6e55bdb9dfa76aa8a1cd08c896235986c5871a3de39",
+      "disposition": "Accept for the bounded controls: full runner and diff reviewed;14 scientific function ASTs unchanged; new frame witness independently checked; output handling and assertion integrity checked. Reuse source-bound original independent math/numerics and actual1497/0 canonical cache; no exhaustive scientific coverage inferred.",
+      "recovery": "Exact original commit eb22c212bd0feeff27525453cbe21fc925bb667f:scripts/analytic_fluid_cosmology_2026_10_13.py; identical reviewer snapshot /Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/scripts/analytic_fluid_cosmology_2026_10_13.py",
+      "final_path": "scripts/analytic_fluid_cosmology_2026_10_13.py",
+      "final_sha256": "f25b2174668c6c8e2e26f6e55bdb9dfa76aa8a1cd08c896235986c5871a3de39"
+    }
+  ],
+  "later_changes": "Final paths/hashes here are the original unchanged source identities. Any later process or scientific change needs a separate affected confirmation/mapping; do not rewrite this record."
+}

@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-10-13T06:57:49.834299+00:00",
+  "ended_at": "2026-10-13T06:57:51.126528+00:00",
+  "wall_seconds": 1.2919967090710998,
+  "returncode": 0,
+  "script_sha256": "eb85c4d3a2c02cad0a03c016d1df4a8b82309c655e7e1cf3666056e2631fceef",
+  "outputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/stdout_v1.txt",
+      "sha256": "7bdfbc4f4b9a2702635a80cb343732a9dcdcc1efb1e569af8aa8b08bff3bce2f",
+      "bytes": 123
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/SOURCE_CHECKS_v1.json",
+      "sha256": "bf987eb559d9de9131b5e7abdc48821f9ab0c76b3bbb019a270473ee785e00e0",
+      "bytes": 90836
+    }
+  ]
+}

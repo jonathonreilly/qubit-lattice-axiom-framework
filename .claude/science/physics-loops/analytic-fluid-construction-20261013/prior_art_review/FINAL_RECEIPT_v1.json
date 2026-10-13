@@ -1,0 +1,852 @@
+{
+  "created_at": "2026-10-13T06:40:55.005392+00:00",
+  "review_directory": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review",
+  "task": "Focused current-main/open-PR prior-art and source-scope check",
+  "main_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "candidate_sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+  "source_count": 44,
+  "open_pr_count": 13,
+  "canonical_pr_note_count": 22,
+  "report": "PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+  "source_dispositions": "SOURCE_DISPOSITIONS_v1.json",
+  "artifacts": [
+    {
+      "path": "ADDITIONAL_CANONICAL_GRAVITY_SOURCE_v1.json",
+      "bytes": 748,
+      "sha256": "2c60ef2f278511e667df181aeb1afcbce33b3afaf525ad899e0315c44913b663"
+    },
+    {
+      "path": "ADDITIONAL_SEARCH_v1.json",
+      "bytes": 5765,
+      "sha256": "1dea7c7581882684b5d170f7d62ed528683e3910a9b872bb6d02292bbc3fb22e"
+    },
+    {
+      "path": "COMPARISON_SOURCES_v1.json",
+      "bytes": 19976,
+      "sha256": "4a7f4e01fce3135c4268f95b4db56c6673b6053d491e18cf2fa99614840cd76e"
+    },
+    {
+      "path": "FINAL_REMOTE_IDENTITY_v1.json",
+      "bytes": 4531,
+      "sha256": "101b883e558b8bcdffeea788415d2c7239f553be0c3aac38dcda4c098afa1eb9"
+    },
+    {
+      "path": "FINAL_REMOTE_IDENTITY_v2.json",
+      "bytes": 1441,
+      "sha256": "0d6ed4aaf08fac55a5ad50a0cddd6ff563003d31f15d32f61881c1e4739505fc"
+    },
+    {
+      "path": "MAIN_SELECTED_SOURCES_v1.json",
+      "bytes": 8189,
+      "sha256": "24bc109cd78bf44d1bc1848acd381274e5ca2a057a67a3a8b953cef1176f1f3c"
+    },
+    {
+      "path": "NEW_PR9511_SOURCES_v1.json",
+      "bytes": 2717,
+      "sha256": "2caa13b7dba6791c4b42ee84073e32a5a2365c9f6e1162e43ccfbf8a2e858f1b"
+    },
+    {
+      "path": "OPEN_PRS_INITIAL.json",
+      "bytes": 5261,
+      "sha256": "28a8b7eb99285ff406f5a5cbd08610c6b413a8e7703c08c13e28e4840f90e14c"
+    },
+    {
+      "path": "OPEN_PRS_WITH_BASES_v1.json",
+      "bytes": 6005,
+      "sha256": "f09e97bf87fd785f3764c71e1a75342c860dcdd2cba54e6a7ab922fe35bbb443"
+    },
+    {
+      "path": "OPEN_PR_SCREEN_EXCERPTS_v1.json",
+      "bytes": 19230,
+      "sha256": "2a8bbef9340d63ecd6348d57995109f38f93e44002530a845b596332e8340c0f"
+    },
+    {
+      "path": "OPEN_PR_SOURCE_SELECTION_v1.json",
+      "bytes": 8009,
+      "sha256": "b2f5a0d47b48d741b73fbe7ab91b20ed5139fe1f1adc9c8a7aa055b8c0b12322"
+    },
+    {
+      "path": "PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+      "bytes": 12470,
+      "sha256": "dda0b7daf9cc2c16f53a2e82f3838f5ee60942dd3f888c9d587aaff22987ec05"
+    },
+    {
+      "path": "READ_ATTEMPTS_v1.json",
+      "bytes": 1243,
+      "sha256": "aafff6414c2bcdf4705c120da3df7d73aef74284bebcb0727097117d7101e461"
+    },
+    {
+      "path": "SEARCH_START_v1.json",
+      "bytes": 3739,
+      "sha256": "d531e0cf397692a28f04c615093932dd74668aef95504e7ccf6a4430706d83f7"
+    },
+    {
+      "path": "SOURCE_COMPARISON_RESULT_v1.json",
+      "bytes": 1297,
+      "sha256": "c3eb97949fd643acca6fe4ed042a4da0a24f4df132fa665d9b5d72ad21ea7b90"
+    },
+    {
+      "path": "SOURCE_DISPOSITIONS_v1.json",
+      "bytes": 49827,
+      "sha256": "5a661d95b48cfcf3814afa5f7e90e65892f39825e8856ccecad7f3f174e9a0b6"
+    },
+    {
+      "path": "SOURCE_SEARCH_COMMANDS_v1.json",
+      "bytes": 33696,
+      "sha256": "2ff9911efe7e84aaa76b00724c0a412cb4b3093e3621545761fbe74e33b2ed1a"
+    },
+    {
+      "path": "additional_scope_search_v1.py",
+      "bytes": 2153,
+      "sha256": "23a960314e8552fc2191d14b2bbcffc4a42f9fa5235367c8a2833cae564d18da"
+    },
+    {
+      "path": "collect_comparison_sources_v1.py",
+      "bytes": 2646,
+      "sha256": "f6eadac47d401b91fc0442fda63435fec52ec29779bc4a2be500a553f81ad317"
+    },
+    {
+      "path": "collect_source_scope_v1.py",
+      "bytes": 3229,
+      "sha256": "f0a202d2869cb9609636f8aa3991feac15383047f95119bd5fbeb75d2e393b23"
+    },
+    {
+      "path": "commands/additional_scope_search.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/additional_scope_search.stdout.txt",
+      "bytes": 58,
+      "sha256": "0a6da11adaf3d6d82bb883b728558f07e9757e67184d69da44fb0888e4ea4ecf"
+    },
+    {
+      "path": "commands/comparison_source_collection.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/comparison_source_collection.stdout.txt",
+      "bytes": 2146,
+      "sha256": "7b57dec8c49cf3dbbcb96f5362e6fa2dfeb53ce5a33a27ae68ac0ebdbce603aa"
+    },
+    {
+      "path": "commands/confirmed_open_prs.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/confirmed_open_prs.stdout.txt",
+      "bytes": 5797,
+      "sha256": "328a34c6c3f339317b72b98697af48c51d4d9e3da454f45d229e90d5095dfbaf"
+    },
+    {
+      "path": "commands/final_local_identity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/final_local_identity.stdout.txt",
+      "bytes": 173,
+      "sha256": "d149c751796e89b89f3e367c6278f9c319aa6739bd1bd9ed98ab5a9721257710"
+    },
+    {
+      "path": "commands/final_main_remote.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/final_main_remote.stdout.txt",
+      "bytes": 386,
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232"
+    },
+    {
+      "path": "commands/final_open_prs.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/final_open_prs.stdout.txt",
+      "bytes": 5797,
+      "sha256": "328a34c6c3f339317b72b98697af48c51d4d9e3da454f45d229e90d5095dfbaf"
+    },
+    {
+      "path": "commands/main_additional_attractors.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_additional_attractors.stdout.txt",
+      "bytes": 92918,
+      "sha256": "52eeaeb2efa6405139448d55a1a200e5357b0f2e88076c7d9b08d31538448304"
+    },
+    {
+      "path": "commands/main_additional_exact_fingerprint.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_additional_exact_fingerprint.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_additional_field_metrics.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_additional_field_metrics.stdout.txt",
+      "bytes": 53919,
+      "sha256": "8f280fbee6630559dbe1a9afe42444fd6663272f1dc995444e97037683b37b9e"
+    },
+    {
+      "path": "commands/main_dynamics.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_dynamics.stdout.txt",
+      "bytes": 960,
+      "sha256": "cd5f5e0f3ae1a4d50a95e7d3485dfacdb6972c229200f8e26fc95c20c7bfde2f"
+    },
+    {
+      "path": "commands/main_fluid_scopes.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_fluid_scopes.stdout.txt",
+      "bytes": 26080,
+      "sha256": "29b831d6df64dc99c8091d5735eef22071b3f6a978a453e59944e10d2c891c67"
+    },
+    {
+      "path": "commands/main_identity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_identity.stdout.txt",
+      "bytes": 82,
+      "sha256": "2fde1be6173610b20a13b30dbb701f23800f2b2cfe7af0877ef1fe792b396a70"
+    },
+    {
+      "path": "commands/main_reconstruction.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_reconstruction.stdout.txt",
+      "bytes": 1647,
+      "sha256": "0ca05750ed9d8c8909d1e5e7c6c5d57d279eaf354d8264cf9b000e4346c02bc0"
+    },
+    {
+      "path": "commands/main_remote.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_remote.stdout.txt",
+      "bytes": 386,
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232"
+    },
+    {
+      "path": "commands/main_specific.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/main_specific.stdout.txt",
+      "bytes": 2240,
+      "sha256": "e317cb974db42bead15f317d4212f360c5e91deb625c0df336b4b0443f708ba9"
+    },
+    {
+      "path": "commands/new_pr9511_collection.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/new_pr9511_collection.stdout.txt",
+      "bytes": 224,
+      "sha256": "7fd7a82759883faf9b6f49eb24d79a77050d6760d86c1452edd319797b57eac1"
+    },
+    {
+      "path": "commands/open_prs.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/open_prs.stdout.txt",
+      "bytes": 4678,
+      "sha256": "ec069d6f48f09e08df89a7db71d5ddbbfce65207786017c1d935bf9b6cdb54b1"
+    },
+    {
+      "path": "commands/open_prs_with_bases.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/open_prs_with_bases.stdout.txt",
+      "bytes": 5350,
+      "sha256": "9861d5d5164ae32747d5f8dd04c8c7db43ed4e77f1d76aad375fc3e95ea97055"
+    },
+    {
+      "path": "commands/pr9511_files.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr9511_files.stdout.txt",
+      "bytes": 814079,
+      "sha256": "ac9b638539a1928ced613920a934cabb4be40d27043cef9ae38b4b0c811b431f"
+    },
+    {
+      "path": "commands/pr_9499_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9499_canonical_delta.stdout.txt",
+      "bytes": 184,
+      "sha256": "6cff5b2a7884329b0151822702d3dbee0e687ee89cd975ffbb999f9d7df5f804"
+    },
+    {
+      "path": "commands/pr_9499_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9499_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9500_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9500_canonical_delta.stdout.txt",
+      "bytes": 319,
+      "sha256": "e1c6cd2572f395de85aadb7a3372dffd308de032030dcd15d571864bdcdce706"
+    },
+    {
+      "path": "commands/pr_9500_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9500_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9501_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9501_canonical_delta.stdout.txt",
+      "bytes": 247,
+      "sha256": "f5479945a9d2163f8b33be099c75ba5aa91c0376c9c8257fba9ade0d517af6bf"
+    },
+    {
+      "path": "commands/pr_9501_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9501_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9502_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9502_canonical_delta.stdout.txt",
+      "bytes": 309,
+      "sha256": "5a38e2da55a53e4d7f5705d81d8ed13ff445071f5d0bce4bdc078ccdfcd67482"
+    },
+    {
+      "path": "commands/pr_9502_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9502_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9503_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9503_canonical_delta.stdout.txt",
+      "bytes": 187,
+      "sha256": "bb13431546ec67c6fe76aea7c25661ebee420f2884a9b22cc8ff1f7693fc83cf"
+    },
+    {
+      "path": "commands/pr_9503_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9503_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9504_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9504_canonical_delta.stdout.txt",
+      "bytes": 309,
+      "sha256": "51988b140282097e8870e206076ef6b57b9db726dd097bf97bc722c22b59be02"
+    },
+    {
+      "path": "commands/pr_9504_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9504_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9505_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9505_canonical_delta.stdout.txt",
+      "bytes": 181,
+      "sha256": "629c6a9e488950655902295d0588a06b9176870c8a8d49e47620eefc255fb764"
+    },
+    {
+      "path": "commands/pr_9505_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9505_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9506_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9506_canonical_delta.stdout.txt",
+      "bytes": 456,
+      "sha256": "c1a536bea636398ac2373b0b45413f957465555d0a03fe6b46e5d4338740f21e"
+    },
+    {
+      "path": "commands/pr_9506_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9506_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9507_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9507_canonical_delta.stdout.txt",
+      "bytes": 179,
+      "sha256": "3155fb659176186e3ad4b07e247ee66cc03f8aa5c98f1e36dd8b0c85ffe3a7cd"
+    },
+    {
+      "path": "commands/pr_9507_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9507_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9508_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9508_canonical_delta.stdout.txt",
+      "bytes": 291,
+      "sha256": "3f0d5de4d2b0d6584801fd886dfc5a35d0bb73e60208311428acb6b74b5ba2a2"
+    },
+    {
+      "path": "commands/pr_9508_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9508_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9509_canonical_delta.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9509_canonical_delta.stdout.txt",
+      "bytes": 169,
+      "sha256": "916823574178891480b1da40e6516a2acc507dcccf1213ad4c0d807dd7806d78"
+    },
+    {
+      "path": "commands/pr_9509_local_head.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9509_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9510_files.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "commands/pr_9510_files.stdout.txt",
+      "bytes": 550499,
+      "sha256": "307f992ba6ec2ffa7a49851c22f10d34e43a5306cf0c3298b8058dec6bf891e6"
+    },
+    {
+      "path": "commands/pr_9510_local_head.stderr.txt",
+      "bytes": 81,
+      "sha256": "1e7c5eac465ffa05b34e4d65b9b2fca4b179ad1ff1e87d8bac31b5802d49491d"
+    },
+    {
+      "path": "commands/pr_9510_local_head.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "finalize_scope_receipt_v1.py",
+      "bytes": 8274,
+      "sha256": "4c7a4c67cd8c3c1e61361eaa2b2e5eebd210ad8bab0ce1771bcdfc7c8783865b"
+    },
+    {
+      "path": "screen_new_pr9511_v1.py",
+      "bytes": 1710,
+      "sha256": "7431d80b8f56779d227641b5a0383fb3e73840dcf28beb2a5cf8165dbe4f9f4d"
+    },
+    {
+      "path": "source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "bytes": 7275,
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "bytes": 9228,
+      "sha256": "a08b1b7c08bf9dc8a578e93a5a3a0de2096f502c1ab90eeb54d4d375ace9c473"
+    },
+    {
+      "path": "source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "bytes": 13545,
+      "sha256": "f2a91f3813a8f03609327d20c56aa40b222bceb41fbc40296727726c4d36eb59"
+    },
+    {
+      "path": "source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "bytes": 12081,
+      "sha256": "e7474cd8bfca8d7398da5c0ca6e3674481a4bdd0a13f145422a20c311aa7e79c"
+    },
+    {
+      "path": "source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "bytes": 11562,
+      "sha256": "0b108531b9ac809d6d7ee58cb69d3ee1d2d926a73608906092e5ed609c6077a9"
+    },
+    {
+      "path": "source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "bytes": 15862,
+      "sha256": "c81c0029fb70d1cea0ecf41ee893caf357747bcda138af5d1bef5ed5848a114a"
+    },
+    {
+      "path": "source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "bytes": 13114,
+      "sha256": "5a9a12c08eb9eadda495111e6d7a20665210ade5dadfae69ba8f9220c4ed963d"
+    },
+    {
+      "path": "source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "bytes": 23774,
+      "sha256": "2549791c67c567049e6ef387ed42d7a3692441a78dbd95b72316483130d04e3f"
+    },
+    {
+      "path": "source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "bytes": 6257,
+      "sha256": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96"
+    },
+    {
+      "path": "source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "bytes": 7046,
+      "sha256": "5cbed0a436adbe043ca93f746a6cdd5a0b2825838cc356886e31c6bffcbe86e0"
+    },
+    {
+      "path": "source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "bytes": 18016,
+      "sha256": "33a8da1a891c95f2bbf2212480bb7b4edb260e9b219f979329e6619b0f5a893a"
+    },
+    {
+      "path": "source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "bytes": 6569,
+      "sha256": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28"
+    },
+    {
+      "path": "source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "bytes": 52178,
+      "sha256": "d23611a557a4cc8912c1c0e6fa474ed115bbfd507623c38736d6a47821e2fcba"
+    },
+    {
+      "path": "source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "bytes": 23997,
+      "sha256": "af7bbdfda8831df1c86ec7ca9cf62b6cbdd920f4dca1a4cb03e7f389c73e386a"
+    },
+    {
+      "path": "source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "bytes": 6377,
+      "sha256": "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f"
+    },
+    {
+      "path": "source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "bytes": 7586,
+      "sha256": "0ea0828bc054507d4aa0ecab9190172620084197941189f0ed4942b1399e0fa6"
+    },
+    {
+      "path": "source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "bytes": 18171,
+      "sha256": "aee05c3b33a67de1f05bc38d717ede36a8ad2d7f4db13a6f883efbea64a65de9"
+    },
+    {
+      "path": "source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "bytes": 8688,
+      "sha256": "ddd96589d48c9b7c2c6d44afe4fc7be3aa66bbe522be4576de2f2383786b3511"
+    },
+    {
+      "path": "source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 17353,
+      "sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d"
+    },
+    {
+      "path": "source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 53292,
+      "sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843"
+    },
+    {
+      "path": "source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 8807,
+      "sha256": "361e7cf37b379ceaa5958b27c53833110658956bd3d0c6f811cafe2440c6a4fe"
+    },
+    {
+      "path": "source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 14811,
+      "sha256": "0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77"
+    },
+    {
+      "path": "source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "bytes": 10558,
+      "sha256": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9"
+    },
+    {
+      "path": "source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 69122,
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca"
+    },
+    {
+      "path": "source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 61231,
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2"
+    },
+    {
+      "path": "source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 14689,
+      "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef"
+    },
+    {
+      "path": "source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 63908,
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef"
+    },
+    {
+      "path": "source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 38862,
+      "sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1"
+    },
+    {
+      "path": "source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 11292,
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+    },
+    {
+      "path": "source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "bytes": 8556,
+      "sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b"
+    },
+    {
+      "path": "source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 59969,
+      "sha256": "376937859671164477c78965dbee50856f01e5c0700b35efa53594fcab1dacf4"
+    },
+    {
+      "path": "source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 37982,
+      "sha256": "e048553d5826df8f8110c8e9a28e7180bf0ebf218df89b5e600d07b0d7ca9f81"
+    },
+    {
+      "path": "source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 36046,
+      "sha256": "08f11b9bf7b952b53034915e8a6bcc3c53afe16b4e0939b66c9ecbca390cda17"
+    },
+    {
+      "path": "source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 17317,
+      "sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d"
+    },
+    {
+      "path": "source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "bytes": 16442,
+      "sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e"
+    },
+    {
+      "path": "source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 82120,
+      "sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342"
+    },
+    {
+      "path": "source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 75306,
+      "sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9"
+    },
+    {
+      "path": "source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 30422,
+      "sha256": "30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5"
+    },
+    {
+      "path": "source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "bytes": 23394,
+      "sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9"
+    },
+    {
+      "path": "source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 56130,
+      "sha256": "dd5bf5be3c3e4e5636056d18fc8c02aa14c7cab9fbc5c8ca59d36f1cd021460b"
+    },
+    {
+      "path": "source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 72190,
+      "sha256": "b320a367c3c699afd412f6d4d56e5ff0d9105c86568e062723de2a4775e4fe0f"
+    },
+    {
+      "path": "source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 53254,
+      "sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089"
+    },
+    {
+      "path": "source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 36202,
+      "sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9"
+    },
+    {
+      "path": "source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 40821,
+      "sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f"
+    },
+    {
+      "path": "source_snapshot/screen_01.txt",
+      "bytes": 7510,
+      "sha256": "4f8cb61634106366771707eedd793e4b8dfe1fe1ee53fe96d8df5cce2d81fc35"
+    },
+    {
+      "path": "source_snapshot/screen_02.txt",
+      "bytes": 7699,
+      "sha256": "4fb441bbea0976d966e22f148ac54c0706160f549742800c0fa68d84d32fb36b"
+    },
+    {
+      "path": "source_snapshot/screen_03.txt",
+      "bytes": 7197,
+      "sha256": "224eaa4848eeb431d2fe97d512732421bcbbc1c9aa3400f1f564f8c2524760c6"
+    },
+    {
+      "path": "source_snapshot/screen_04.txt",
+      "bytes": 7214,
+      "sha256": "d1acbb346b31218ae6f55a6c1a4390f83ec0f3b0c2f9f016c93f072e00bddde2"
+    },
+    {
+      "path": "source_snapshot/screen_05.txt",
+      "bytes": 6532,
+      "sha256": "5f97245bcb3bf9908f689762d3b9e37184ac1d441df448b8200fd2a32c94571f"
+    },
+    {
+      "path": "source_snapshot/screen_06.txt",
+      "bytes": 7012,
+      "sha256": "c27d7ba009793d4ffb2b9132f872dd058f840890aab4976eb853eb57118ea114"
+    },
+    {
+      "path": "source_snapshot/screen_07.txt",
+      "bytes": 6726,
+      "sha256": "0755e34ecd08ebe8492471b280839ab3f6c0a0e5e83c543f193b463ec4429d0e"
+    },
+    {
+      "path": "source_snapshot/screen_08.txt",
+      "bytes": 7215,
+      "sha256": "b867aec15f4c0c8c135076a371bbdfe47459739b586e0276deaca9a8b9a6976d"
+    },
+    {
+      "path": "source_snapshot/screen_09.txt",
+      "bytes": 7495,
+      "sha256": "8f10be00b3289788e2eb4c91b5e6b8e28b7c8388b5121031de1d62757781b5d0"
+    },
+    {
+      "path": "source_snapshot/screen_10.txt",
+      "bytes": 7161,
+      "sha256": "e4577b392a97ae9b466443272f423d2945280e5bc0b5183a6f118bb54c0b7e33"
+    },
+    {
+      "path": "source_snapshot/screen_11.txt",
+      "bytes": 7191,
+      "sha256": "4acd2c2bfa5e46dcc539a0d868b862f2fa553010d5cde9228fb2f6789078fe65"
+    },
+    {
+      "path": "source_snapshot/screen_12.txt",
+      "bytes": 7033,
+      "sha256": "91d739598600d6504c72ed1772abaf5772cada2702e7cdf40bc3a8ede3069950"
+    },
+    {
+      "path": "source_snapshot/screen_13.txt",
+      "bytes": 8048,
+      "sha256": "90dec26e2cee678715447d2c64de3fbd2e1efca950242eb58dce799fb2f22cdc"
+    },
+    {
+      "path": "source_snapshot/screen_14.txt",
+      "bytes": 6678,
+      "sha256": "e85651e33a7755c3f1e33044b8b1634eb8fea54a56fd6f15a0ded76f82b5e845"
+    },
+    {
+      "path": "source_snapshot/screen_15.txt",
+      "bytes": 7485,
+      "sha256": "d9d3bc53de0a0e64d9ea4873f7be88587e29cd618633ca3147c6f85627d7d4b2"
+    }
+  ],
+  "artifact_count": 167,
+  "scientific_execution_count": 0,
+  "write_boundary": "This review directory only. No Git or PR mutation; earlier reviews unchanged."
+}

@@ -1,6 +1,6 @@
 {
  "edge_count": 15805,
- "node_count": 7023,
+ "node_count": 7024,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1919,6 +1919,10 @@
    "out_degree": 0
   },
   "alternative_coupled_field_probe_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "analytic_fluid_cosmology_construction_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

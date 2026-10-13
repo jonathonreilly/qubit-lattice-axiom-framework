@@ -1,0 +1,1286 @@
+{
+  "created_at": "2026-10-13T07:14:50.330176+00:00",
+  "archive": "FINAL_REVIEW_RECOVERY_v1.tar.gz",
+  "archive_sha256": "840703e38fd81e2b7711450191fda293c823f10fc7371b01b67ea16142c7523c",
+  "members": [
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/EXECUTION_v1.json",
+      "member": "independent_source_review/EXECUTION_v1.json",
+      "sha256": "2faf88c8ec829e835477ab75f9d9213da05cfd80f2d5d4103a205359d14df8e1",
+      "bytes": 1269
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/FINAL_BINDING_v1.json",
+      "member": "independent_source_review/FINAL_BINDING_v1.json",
+      "sha256": "62895b7b4298fc9b65caa5e2d670a5125ef0aba5118786e1d79a69c70efc1814",
+      "bytes": 52090
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/INPUT_FREEZE_v1.json",
+      "member": "independent_source_review/INPUT_FREEZE_v1.json",
+      "sha256": "f3998aed54de27d2db0f9bfc2f5faaf3ef9fce1a9679abf3c7ac57647d5ede0d",
+      "bytes": 16030
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/ORIGINAL_DISPOSITIONS_v1.json",
+      "member": "independent_source_review/ORIGINAL_DISPOSITIONS_v1.json",
+      "sha256": "5f680e261aedab601e2f5da5f9d058935f6f6f1cca61e3499b61a2833f49d537",
+      "bytes": 19083
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/PRE_EXECUTION_PLAN_v1.json",
+      "member": "independent_source_review/PRE_EXECUTION_PLAN_v1.json",
+      "sha256": "3b409d3463e2f2e62dc0ce8bb6b63ef7db4782555bd904b6b23cee7eee6c910a",
+      "bytes": 798
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/RECEIPT_v1.json",
+      "member": "independent_source_review/RECEIPT_v1.json",
+      "sha256": "d11c89820771d38960f573c9bab8ff02cda47e94a70f293c96b12e18e4d1a86b",
+      "bytes": 60830
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/REPORT_v1.md",
+      "member": "independent_source_review/REPORT_v1.md",
+      "sha256": "76711b1ead0101f475a10b27f9f16dac70ffd1e50d96835070b984cd918e7a54",
+      "bytes": 17674
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/REVIEWED_PORT.diff",
+      "member": "independent_source_review/REVIEWED_PORT.diff",
+      "sha256": "4e6b5908b6b7df2595872d4b1aed29a393f622cb0f4fff7bdcdfecf1877b85ad",
+      "bytes": 4394
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/SOURCE_CHECKS_v1.json",
+      "member": "independent_source_review/SOURCE_CHECKS_v1.json",
+      "sha256": "bf987eb559d9de9131b5e7abdc48821f9ab0c76b3bbb019a270473ee785e00e0",
+      "bytes": 90836
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/check_source_packet_v1.py",
+      "member": "independent_source_review/check_source_packet_v1.py",
+      "sha256": "eb85c4d3a2c02cad0a03c016d1df4a8b82309c655e7e1cf3666056e2631fceef",
+      "bytes": 13900
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/coercive_potential_square.diff",
+      "member": "independent_source_review/coercive_potential_square.diff",
+      "sha256": "b07afea7eb4d8c5c1bfdbc22f81ea6b04e1d7ba2edcd44308614ed7995d17e51",
+      "bytes": 361
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/coercive_potential_square_harness.py",
+      "member": "independent_source_review/coercive_potential_square_harness.py",
+      "sha256": "a0c9fe3a8cb1fc94ba8c3ac04faa8f47cbc63690c7ba2bc7f3448ae917ff6241",
+      "bytes": 499
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/finalize_binding_v1.py",
+      "member": "independent_source_review/finalize_binding_v1.py",
+      "sha256": "0b7d89be94a4fdaabcdbe4bac0e36a3b5065a67e128119b6de36750eb914b3a3",
+      "bytes": 13081
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/metric_connection_component.diff",
+      "member": "independent_source_review/metric_connection_component.diff",
+      "sha256": "f6fb20cb135e33f9009465b11c7c328e41f0704db4da50330d4d65242919f4c4",
+      "bytes": 341
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/metric_connection_component_harness.py",
+      "member": "independent_source_review/metric_connection_component_harness.py",
+      "sha256": "a0c9fe3a8cb1fc94ba8c3ac04faa8f47cbc63690c7ba2bc7f3448ae917ff6241",
+      "bytes": 499
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/omit_critical_polynomial.diff",
+      "member": "independent_source_review/omit_critical_polynomial.diff",
+      "sha256": "b7b9537cc6c2158e7cd98edc6e0a3717de105c585ddd9672b656e8b9be2c4e07",
+      "bytes": 380
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/omit_critical_polynomial_harness.py",
+      "member": "independent_source_review/omit_critical_polynomial_harness.py",
+      "sha256": "40ed55e17b566f346ac8894511a640f461389fa646832ce94dd4c6a0a3743269",
+      "bytes": 489
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/physical_clock_sign.diff",
+      "member": "independent_source_review/physical_clock_sign.diff",
+      "sha256": "8aedf44f5fd0edafca69b9522c2cd5af33083475e995b1bca1477498669ba569",
+      "bytes": 444
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/physical_clock_sign_harness.py",
+      "member": "independent_source_review/physical_clock_sign_harness.py",
+      "sha256": "0042220bfbf27719b28aaf0713592a560672594d6a733771a0a9b1b592860016",
+      "bytes": 498
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.json",
+      "sha256": "b5980d3ebdb8f2e8599cdff4530d32bc702cd616404dc723d1a33053562774be",
+      "bytes": 12022
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/AUTHOR_MUTATIONS_v1.tar.gz",
+      "sha256": "42dc61839bb9ab031a66b7e546a80b24ed0bf6de0cb5c7fd27b432f78a782dd0",
+      "bytes": 55253
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/CANONICAL_EXECUTION_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/CANONICAL_EXECUTION_v1.json",
+      "sha256": "59579748c3b7bbc3d1056cdc92cdcf42b81349b99d4c3d173781411fc345597b",
+      "bytes": 1304
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "30539ce603dad541e097790c8f2830a7b88ba0ba4409431202e721ae667bd186",
+      "bytes": 819
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/DISCOVERY_PREFLIGHT_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/DISCOVERY_PREFLIGHT_v1.json",
+      "sha256": "29070c1960f9fa6ebab275542d378fe1625c9782ef5d35892b3bb67b928deb37",
+      "bytes": 568
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "sha256": "43198e5a40f0c8abe98f0fbc43ee85a50a1c4c44a3362f72f8de1fdfc43ba09c",
+      "bytes": 3060441
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/GOAL.md",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/GOAL.md",
+      "sha256": "1b09a3c83f4f3887153ea685c4fb0eb1b03fc9a61725a568d6c67bbe43d7b7c6",
+      "bytes": 1063
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/HANDOFF.md",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/HANDOFF.md",
+      "sha256": "1158b5042c368d05f989cdcfc0b3611453018aebe73d71d99ff165cd40d5a927",
+      "bytes": 1285
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PARENT_PRIOR_ART_RECEIPT_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PARENT_PRIOR_ART_RECEIPT_v1.json",
+      "sha256": "535b922147ba08f59178b5c1e58ebe158122919f874e9665782ed2dcbe29e982",
+      "bytes": 51301
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "sha256": "5fe5a34e7e379af7c59c0e66016666e4df0b838c9bc28606a77761ed07fd1bea",
+      "bytes": 1005
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_v1.diff",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/PORT_v1.diff",
+      "sha256": "4e6b5908b6b7df2595872d4b1aed29a393f622cb0f4fff7bdcdfecf1877b85ad",
+      "bytes": 4394
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/RECOVERY_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/RECOVERY_v1.json",
+      "sha256": "902016c5d5e14e78566048c9f7d7360ea5b00bdef61f8d8d4a18d94260cea663",
+      "bytes": 90202
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "sha256": "9a5745abe69b8cf563f32b25692379b4a0f6155fa56996615f48874d1ff1e581",
+      "bytes": 1001
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/SOURCE_UNIT_v1.json",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/SOURCE_UNIT_v1.json",
+      "sha256": "7a91d2c2453495f648365d49d1393a536574f9e28bd651ce908aab064b195e86",
+      "bytes": 4074
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/STATE.yaml",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/STATE.yaml",
+      "sha256": "0533078984ce98ee746d9f96fcb3322416cc0037f23e4d13fee4ed69419427eb",
+      "bytes": 746
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/TRACE_GATE.md",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/TRACE_GATE.md",
+      "sha256": "a879770ba98b5143e5cbc40883ce699afb7507dd13882c9ab3f8ff16938ccfdd",
+      "bytes": 694
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+      "member": "independent_source_review/source_snapshot/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+      "sha256": "dda0b7daf9cc2c16f53a2e82f3838f5ee60942dd3f888c9d587aaff22987ec05",
+      "bytes": 12470
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "independent_source_review/source_snapshot/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a",
+      "bytes": 13309
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/logs/runner-cache/analytic_fluid_cosmology_2026_10_13.txt",
+      "member": "independent_source_review/source_snapshot/logs/runner-cache/analytic_fluid_cosmology_2026_10_13.txt",
+      "sha256": "5cf14bd0b8f22432f142778c183705823530ddc16cc8c132db3ca4ce75a4b7aa",
+      "bytes": 684
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json",
+      "member": "independent_source_review/source_snapshot/outputs/analytic_fluid_cosmology_2026_10_13/fixtures.json",
+      "sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+      "bytes": 3572
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "member": "independent_source_review/source_snapshot/outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb",
+      "bytes": 1025
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/source_snapshot/scripts/analytic_fluid_cosmology_2026_10_13.py",
+      "member": "independent_source_review/source_snapshot/scripts/analytic_fluid_cosmology_2026_10_13.py",
+      "sha256": "f25b2174668c6c8e2e26f6e55bdb9dfa76aa8a1cd08c896235986c5871a3de39",
+      "bytes": 19427
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/stderr_v1.txt",
+      "member": "independent_source_review/stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/stdout_v1.txt",
+      "member": "independent_source_review/stdout_v1.txt",
+      "sha256": "7bdfbc4f4b9a2702635a80cb343732a9dcdcc1efb1e569af8aa8b08bff3bce2f",
+      "bytes": 123
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/synthetic_io/CONTROLS.json",
+      "member": "independent_source_review/synthetic_io/CONTROLS.json",
+      "sha256": "5d4167bd72d06986bb486313556a58959024061e9fd6c65f0564e723949eddbb",
+      "bytes": 3550
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/synthetic_io/synthetic_result.json",
+      "member": "independent_source_review/synthetic_io/synthetic_result.json",
+      "sha256": "80bb47cde66e54d6f3f867d11f6aba43dec28e342e890504cd722dd3552ffbfc",
+      "bytes": 1180
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/ADDITIONAL_CANONICAL_GRAVITY_SOURCE_v1.json",
+      "member": "prior_art_review/ADDITIONAL_CANONICAL_GRAVITY_SOURCE_v1.json",
+      "sha256": "2c60ef2f278511e667df181aeb1afcbce33b3afaf525ad899e0315c44913b663",
+      "bytes": 748
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/ADDITIONAL_SEARCH_v1.json",
+      "member": "prior_art_review/ADDITIONAL_SEARCH_v1.json",
+      "sha256": "1dea7c7581882684b5d170f7d62ed528683e3910a9b872bb6d02292bbc3fb22e",
+      "bytes": 5765
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/COMPARISON_SOURCES_v1.json",
+      "member": "prior_art_review/COMPARISON_SOURCES_v1.json",
+      "sha256": "4a7f4e01fce3135c4268f95b4db56c6673b6053d491e18cf2fa99614840cd76e",
+      "bytes": 19976
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/FINAL_RECEIPT_v1.json",
+      "member": "prior_art_review/FINAL_RECEIPT_v1.json",
+      "sha256": "61a3a9f7b3e6889b40b50ace3fa0dd89b4e20c0eb6256ae8f30a2fb06fc3a555",
+      "bytes": 31801
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/FINAL_REMOTE_IDENTITY_v1.json",
+      "member": "prior_art_review/FINAL_REMOTE_IDENTITY_v1.json",
+      "sha256": "101b883e558b8bcdffeea788415d2c7239f553be0c3aac38dcda4c098afa1eb9",
+      "bytes": 4531
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/FINAL_REMOTE_IDENTITY_v2.json",
+      "member": "prior_art_review/FINAL_REMOTE_IDENTITY_v2.json",
+      "sha256": "0d6ed4aaf08fac55a5ad50a0cddd6ff563003d31f15d32f61881c1e4739505fc",
+      "bytes": 1441
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/MAIN_SELECTED_SOURCES_v1.json",
+      "member": "prior_art_review/MAIN_SELECTED_SOURCES_v1.json",
+      "sha256": "24bc109cd78bf44d1bc1848acd381274e5ca2a057a67a3a8b953cef1176f1f3c",
+      "bytes": 8189
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/NEW_PR9511_SOURCES_v1.json",
+      "member": "prior_art_review/NEW_PR9511_SOURCES_v1.json",
+      "sha256": "2caa13b7dba6791c4b42ee84073e32a5a2365c9f6e1162e43ccfbf8a2e858f1b",
+      "bytes": 2717
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/OPEN_PRS_INITIAL.json",
+      "member": "prior_art_review/OPEN_PRS_INITIAL.json",
+      "sha256": "28a8b7eb99285ff406f5a5cbd08610c6b413a8e7703c08c13e28e4840f90e14c",
+      "bytes": 5261
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/OPEN_PRS_WITH_BASES_v1.json",
+      "member": "prior_art_review/OPEN_PRS_WITH_BASES_v1.json",
+      "sha256": "f09e97bf87fd785f3764c71e1a75342c860dcdd2cba54e6a7ab922fe35bbb443",
+      "bytes": 6005
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/OPEN_PR_SCREEN_EXCERPTS_v1.json",
+      "member": "prior_art_review/OPEN_PR_SCREEN_EXCERPTS_v1.json",
+      "sha256": "2a8bbef9340d63ecd6348d57995109f38f93e44002530a845b596332e8340c0f",
+      "bytes": 19230
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/OPEN_PR_SOURCE_SELECTION_v1.json",
+      "member": "prior_art_review/OPEN_PR_SOURCE_SELECTION_v1.json",
+      "sha256": "b2f5a0d47b48d741b73fbe7ab91b20ed5139fe1f1adc9c8a7aa055b8c0b12322",
+      "bytes": 8009
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+      "member": "prior_art_review/PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+      "sha256": "dda0b7daf9cc2c16f53a2e82f3838f5ee60942dd3f888c9d587aaff22987ec05",
+      "bytes": 12470
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/READ_ATTEMPTS_v1.json",
+      "member": "prior_art_review/READ_ATTEMPTS_v1.json",
+      "sha256": "aafff6414c2bcdf4705c120da3df7d73aef74284bebcb0727097117d7101e461",
+      "bytes": 1243
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/SEARCH_START_v1.json",
+      "member": "prior_art_review/SEARCH_START_v1.json",
+      "sha256": "d531e0cf397692a28f04c615093932dd74668aef95504e7ccf6a4430706d83f7",
+      "bytes": 3739
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/SOURCE_COMPARISON_RESULT_v1.json",
+      "member": "prior_art_review/SOURCE_COMPARISON_RESULT_v1.json",
+      "sha256": "c3eb97949fd643acca6fe4ed042a4da0a24f4df132fa665d9b5d72ad21ea7b90",
+      "bytes": 1297
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/SOURCE_DISPOSITIONS_v1.json",
+      "member": "prior_art_review/SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "5a661d95b48cfcf3814afa5f7e90e65892f39825e8856ccecad7f3f174e9a0b6",
+      "bytes": 49827
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/SOURCE_SEARCH_COMMANDS_v1.json",
+      "member": "prior_art_review/SOURCE_SEARCH_COMMANDS_v1.json",
+      "sha256": "2ff9911efe7e84aaa76b00724c0a412cb4b3093e3621545761fbe74e33b2ed1a",
+      "bytes": 33696
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/additional_scope_search_v1.py",
+      "member": "prior_art_review/additional_scope_search_v1.py",
+      "sha256": "23a960314e8552fc2191d14b2bbcffc4a42f9fa5235367c8a2833cae564d18da",
+      "bytes": 2153
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/collect_comparison_sources_v1.py",
+      "member": "prior_art_review/collect_comparison_sources_v1.py",
+      "sha256": "f6eadac47d401b91fc0442fda63435fec52ec29779bc4a2be500a553f81ad317",
+      "bytes": 2646
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/collect_source_scope_v1.py",
+      "member": "prior_art_review/collect_source_scope_v1.py",
+      "sha256": "f0a202d2869cb9609636f8aa3991feac15383047f95119bd5fbeb75d2e393b23",
+      "bytes": 3229
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/additional_scope_search.stderr.txt",
+      "member": "prior_art_review/commands/additional_scope_search.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/additional_scope_search.stdout.txt",
+      "member": "prior_art_review/commands/additional_scope_search.stdout.txt",
+      "sha256": "0a6da11adaf3d6d82bb883b728558f07e9757e67184d69da44fb0888e4ea4ecf",
+      "bytes": 58
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/comparison_source_collection.stderr.txt",
+      "member": "prior_art_review/commands/comparison_source_collection.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/comparison_source_collection.stdout.txt",
+      "member": "prior_art_review/commands/comparison_source_collection.stdout.txt",
+      "sha256": "7b57dec8c49cf3dbbcb96f5362e6fa2dfeb53ce5a33a27ae68ac0ebdbce603aa",
+      "bytes": 2146
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/confirmed_open_prs.stderr.txt",
+      "member": "prior_art_review/commands/confirmed_open_prs.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/confirmed_open_prs.stdout.txt",
+      "member": "prior_art_review/commands/confirmed_open_prs.stdout.txt",
+      "sha256": "328a34c6c3f339317b72b98697af48c51d4d9e3da454f45d229e90d5095dfbaf",
+      "bytes": 5797
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/final_local_identity.stderr.txt",
+      "member": "prior_art_review/commands/final_local_identity.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/final_local_identity.stdout.txt",
+      "member": "prior_art_review/commands/final_local_identity.stdout.txt",
+      "sha256": "d149c751796e89b89f3e367c6278f9c319aa6739bd1bd9ed98ab5a9721257710",
+      "bytes": 173
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/final_main_remote.stderr.txt",
+      "member": "prior_art_review/commands/final_main_remote.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/final_main_remote.stdout.txt",
+      "member": "prior_art_review/commands/final_main_remote.stdout.txt",
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "bytes": 386
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/final_open_prs.stderr.txt",
+      "member": "prior_art_review/commands/final_open_prs.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/final_open_prs.stdout.txt",
+      "member": "prior_art_review/commands/final_open_prs.stdout.txt",
+      "sha256": "328a34c6c3f339317b72b98697af48c51d4d9e3da454f45d229e90d5095dfbaf",
+      "bytes": 5797
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_additional_attractors.stderr.txt",
+      "member": "prior_art_review/commands/main_additional_attractors.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_additional_attractors.stdout.txt",
+      "member": "prior_art_review/commands/main_additional_attractors.stdout.txt",
+      "sha256": "52eeaeb2efa6405139448d55a1a200e5357b0f2e88076c7d9b08d31538448304",
+      "bytes": 92918
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_additional_exact_fingerprint.stderr.txt",
+      "member": "prior_art_review/commands/main_additional_exact_fingerprint.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_additional_exact_fingerprint.stdout.txt",
+      "member": "prior_art_review/commands/main_additional_exact_fingerprint.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_additional_field_metrics.stderr.txt",
+      "member": "prior_art_review/commands/main_additional_field_metrics.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_additional_field_metrics.stdout.txt",
+      "member": "prior_art_review/commands/main_additional_field_metrics.stdout.txt",
+      "sha256": "8f280fbee6630559dbe1a9afe42444fd6663272f1dc995444e97037683b37b9e",
+      "bytes": 53919
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_dynamics.stderr.txt",
+      "member": "prior_art_review/commands/main_dynamics.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_dynamics.stdout.txt",
+      "member": "prior_art_review/commands/main_dynamics.stdout.txt",
+      "sha256": "cd5f5e0f3ae1a4d50a95e7d3485dfacdb6972c229200f8e26fc95c20c7bfde2f",
+      "bytes": 960
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_fluid_scopes.stderr.txt",
+      "member": "prior_art_review/commands/main_fluid_scopes.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_fluid_scopes.stdout.txt",
+      "member": "prior_art_review/commands/main_fluid_scopes.stdout.txt",
+      "sha256": "29b831d6df64dc99c8091d5735eef22071b3f6a978a453e59944e10d2c891c67",
+      "bytes": 26080
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_identity.stderr.txt",
+      "member": "prior_art_review/commands/main_identity.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_identity.stdout.txt",
+      "member": "prior_art_review/commands/main_identity.stdout.txt",
+      "sha256": "2fde1be6173610b20a13b30dbb701f23800f2b2cfe7af0877ef1fe792b396a70",
+      "bytes": 82
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_reconstruction.stderr.txt",
+      "member": "prior_art_review/commands/main_reconstruction.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_reconstruction.stdout.txt",
+      "member": "prior_art_review/commands/main_reconstruction.stdout.txt",
+      "sha256": "0ca05750ed9d8c8909d1e5e7c6c5d57d279eaf354d8264cf9b000e4346c02bc0",
+      "bytes": 1647
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_remote.stderr.txt",
+      "member": "prior_art_review/commands/main_remote.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_remote.stdout.txt",
+      "member": "prior_art_review/commands/main_remote.stdout.txt",
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "bytes": 386
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_specific.stderr.txt",
+      "member": "prior_art_review/commands/main_specific.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/main_specific.stdout.txt",
+      "member": "prior_art_review/commands/main_specific.stdout.txt",
+      "sha256": "e317cb974db42bead15f317d4212f360c5e91deb625c0df336b4b0443f708ba9",
+      "bytes": 2240
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/new_pr9511_collection.stderr.txt",
+      "member": "prior_art_review/commands/new_pr9511_collection.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/new_pr9511_collection.stdout.txt",
+      "member": "prior_art_review/commands/new_pr9511_collection.stdout.txt",
+      "sha256": "7fd7a82759883faf9b6f49eb24d79a77050d6760d86c1452edd319797b57eac1",
+      "bytes": 224
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/open_prs.stderr.txt",
+      "member": "prior_art_review/commands/open_prs.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/open_prs.stdout.txt",
+      "member": "prior_art_review/commands/open_prs.stdout.txt",
+      "sha256": "ec069d6f48f09e08df89a7db71d5ddbbfce65207786017c1d935bf9b6cdb54b1",
+      "bytes": 4678
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/open_prs_with_bases.stderr.txt",
+      "member": "prior_art_review/commands/open_prs_with_bases.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/open_prs_with_bases.stdout.txt",
+      "member": "prior_art_review/commands/open_prs_with_bases.stdout.txt",
+      "sha256": "9861d5d5164ae32747d5f8dd04c8c7db43ed4e77f1d76aad375fc3e95ea97055",
+      "bytes": 5350
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr9511_files.stderr.txt",
+      "member": "prior_art_review/commands/pr9511_files.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr9511_files.stdout.txt",
+      "member": "prior_art_review/commands/pr9511_files.stdout.txt",
+      "sha256": "ac9b638539a1928ced613920a934cabb4be40d27043cef9ae38b4b0c811b431f",
+      "bytes": 814079
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9499_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9499_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9499_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9499_canonical_delta.stdout.txt",
+      "sha256": "6cff5b2a7884329b0151822702d3dbee0e687ee89cd975ffbb999f9d7df5f804",
+      "bytes": 184
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9499_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9499_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9499_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9499_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9500_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9500_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9500_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9500_canonical_delta.stdout.txt",
+      "sha256": "e1c6cd2572f395de85aadb7a3372dffd308de032030dcd15d571864bdcdce706",
+      "bytes": 319
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9500_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9500_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9500_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9500_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9501_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9501_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9501_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9501_canonical_delta.stdout.txt",
+      "sha256": "f5479945a9d2163f8b33be099c75ba5aa91c0376c9c8257fba9ade0d517af6bf",
+      "bytes": 247
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9501_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9501_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9501_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9501_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9502_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9502_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9502_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9502_canonical_delta.stdout.txt",
+      "sha256": "5a38e2da55a53e4d7f5705d81d8ed13ff445071f5d0bce4bdc078ccdfcd67482",
+      "bytes": 309
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9502_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9502_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9502_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9502_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9503_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9503_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9503_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9503_canonical_delta.stdout.txt",
+      "sha256": "bb13431546ec67c6fe76aea7c25661ebee420f2884a9b22cc8ff1f7693fc83cf",
+      "bytes": 187
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9503_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9503_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9503_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9503_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9504_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9504_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9504_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9504_canonical_delta.stdout.txt",
+      "sha256": "51988b140282097e8870e206076ef6b57b9db726dd097bf97bc722c22b59be02",
+      "bytes": 309
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9504_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9504_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9504_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9504_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9505_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9505_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9505_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9505_canonical_delta.stdout.txt",
+      "sha256": "629c6a9e488950655902295d0588a06b9176870c8a8d49e47620eefc255fb764",
+      "bytes": 181
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9505_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9505_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9505_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9505_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9506_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9506_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9506_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9506_canonical_delta.stdout.txt",
+      "sha256": "c1a536bea636398ac2373b0b45413f957465555d0a03fe6b46e5d4338740f21e",
+      "bytes": 456
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9506_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9506_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9506_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9506_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9507_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9507_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9507_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9507_canonical_delta.stdout.txt",
+      "sha256": "3155fb659176186e3ad4b07e247ee66cc03f8aa5c98f1e36dd8b0c85ffe3a7cd",
+      "bytes": 179
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9507_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9507_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9507_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9507_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9508_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9508_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9508_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9508_canonical_delta.stdout.txt",
+      "sha256": "3f0d5de4d2b0d6584801fd886dfc5a35d0bb73e60208311428acb6b74b5ba2a2",
+      "bytes": 291
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9508_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9508_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9508_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9508_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9509_canonical_delta.stderr.txt",
+      "member": "prior_art_review/commands/pr_9509_canonical_delta.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9509_canonical_delta.stdout.txt",
+      "member": "prior_art_review/commands/pr_9509_canonical_delta.stdout.txt",
+      "sha256": "916823574178891480b1da40e6516a2acc507dcccf1213ad4c0d807dd7806d78",
+      "bytes": 169
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9509_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9509_local_head.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9509_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9509_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9510_files.stderr.txt",
+      "member": "prior_art_review/commands/pr_9510_files.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9510_files.stdout.txt",
+      "member": "prior_art_review/commands/pr_9510_files.stdout.txt",
+      "sha256": "307f992ba6ec2ffa7a49851c22f10d34e43a5306cf0c3298b8058dec6bf891e6",
+      "bytes": 550499
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9510_local_head.stderr.txt",
+      "member": "prior_art_review/commands/pr_9510_local_head.stderr.txt",
+      "sha256": "1e7c5eac465ffa05b34e4d65b9b2fca4b179ad1ff1e87d8bac31b5802d49491d",
+      "bytes": 81
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/commands/pr_9510_local_head.stdout.txt",
+      "member": "prior_art_review/commands/pr_9510_local_head.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/finalize_scope_receipt_v1.py",
+      "member": "prior_art_review/finalize_scope_receipt_v1.py",
+      "sha256": "4c7a4c67cd8c3c1e61361eaa2b2e5eebd210ad8bab0ce1771bcdfc7c8783865b",
+      "bytes": 8274
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/screen_new_pr9511_v1.py",
+      "member": "prior_art_review/screen_new_pr9511_v1.py",
+      "sha256": "7431d80b8f56779d227641b5a0383fb3e73840dcf28beb2a5cf8165dbe4f9f4d",
+      "bytes": 1710
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "member": "prior_art_review/source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "bytes": 7275
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "member": "prior_art_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "a08b1b7c08bf9dc8a578e93a5a3a0de2096f502c1ab90eeb54d4d375ace9c473",
+      "bytes": 9228
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "member": "prior_art_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "sha256": "f2a91f3813a8f03609327d20c56aa40b222bceb41fbc40296727726c4d36eb59",
+      "bytes": 13545
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "member": "prior_art_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "sha256": "e7474cd8bfca8d7398da5c0ca6e3674481a4bdd0a13f145422a20c311aa7e79c",
+      "bytes": 12081
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "member": "prior_art_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "sha256": "0b108531b9ac809d6d7ee58cb69d3ee1d2d926a73608906092e5ed609c6077a9",
+      "bytes": 11562
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "member": "prior_art_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "c81c0029fb70d1cea0ecf41ee893caf357747bcda138af5d1bef5ed5848a114a",
+      "bytes": 15862
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "member": "prior_art_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "sha256": "5a9a12c08eb9eadda495111e6d7a20665210ade5dadfae69ba8f9220c4ed963d",
+      "bytes": 13114
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "member": "prior_art_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "sha256": "2549791c67c567049e6ef387ed42d7a3692441a78dbd95b72316483130d04e3f",
+      "bytes": 23774
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "member": "prior_art_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "sha256": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96",
+      "bytes": 6257
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "member": "prior_art_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "sha256": "5cbed0a436adbe043ca93f746a6cdd5a0b2825838cc356886e31c6bffcbe86e0",
+      "bytes": 7046
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "member": "prior_art_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "sha256": "33a8da1a891c95f2bbf2212480bb7b4edb260e9b219f979329e6619b0f5a893a",
+      "bytes": 18016
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "member": "prior_art_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "sha256": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28",
+      "bytes": 6569
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "member": "prior_art_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "d23611a557a4cc8912c1c0e6fa474ed115bbfd507623c38736d6a47821e2fcba",
+      "bytes": 52178
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "member": "prior_art_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "sha256": "af7bbdfda8831df1c86ec7ca9cf62b6cbdd920f4dca1a4cb03e7f389c73e386a",
+      "bytes": 23997
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "member": "prior_art_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "sha256": "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f",
+      "bytes": 6377
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "member": "prior_art_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "sha256": "0ea0828bc054507d4aa0ecab9190172620084197941189f0ed4942b1399e0fa6",
+      "bytes": 7586
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "member": "prior_art_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "sha256": "aee05c3b33a67de1f05bc38d717ede36a8ad2d7f4db13a6f883efbea64a65de9",
+      "bytes": 18171
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "member": "prior_art_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "sha256": "ddd96589d48c9b7c2c6d44afe4fc7be3aa66bbe522be4576de2f2383786b3511",
+      "bytes": 8688
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d",
+      "bytes": 17353
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "bytes": 53292
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "361e7cf37b379ceaa5958b27c53833110658956bd3d0c6f811cafe2440c6a4fe",
+      "bytes": 8807
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77",
+      "bytes": 14811
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "member": "prior_art_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "sha256": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9",
+      "bytes": 10558
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "bytes": 69122
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "bytes": 61231
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+      "bytes": 14689
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "bytes": 63908
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "bytes": 38862
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "bytes": 11292
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "member": "prior_art_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "bytes": 8556
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "376937859671164477c78965dbee50856f01e5c0700b35efa53594fcab1dacf4",
+      "bytes": 59969
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "e048553d5826df8f8110c8e9a28e7180bf0ebf218df89b5e600d07b0d7ca9f81",
+      "bytes": 37982
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "08f11b9bf7b952b53034915e8a6bcc3c53afe16b4e0939b66c9ecbca390cda17",
+      "bytes": 36046
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "member": "prior_art_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+      "bytes": 17317
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "member": "prior_art_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+      "bytes": 16442
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "bytes": 82120
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "bytes": 75306
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5",
+      "bytes": 30422
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "member": "prior_art_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "bytes": 23394
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "dd5bf5be3c3e4e5636056d18fc8c02aa14c7cab9fbc5c8ca59d36f1cd021460b",
+      "bytes": 56130
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "b320a367c3c699afd412f6d4d56e5ff0d9105c86568e062723de2a4775e4fe0f",
+      "bytes": 72190
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089",
+      "bytes": 53254
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9",
+      "bytes": 36202
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "member": "prior_art_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f",
+      "bytes": 40821
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_01.txt",
+      "member": "prior_art_review/source_snapshot/screen_01.txt",
+      "sha256": "4f8cb61634106366771707eedd793e4b8dfe1fe1ee53fe96d8df5cce2d81fc35",
+      "bytes": 7510
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_02.txt",
+      "member": "prior_art_review/source_snapshot/screen_02.txt",
+      "sha256": "4fb441bbea0976d966e22f148ac54c0706160f549742800c0fa68d84d32fb36b",
+      "bytes": 7699
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_03.txt",
+      "member": "prior_art_review/source_snapshot/screen_03.txt",
+      "sha256": "224eaa4848eeb431d2fe97d512732421bcbbc1c9aa3400f1f564f8c2524760c6",
+      "bytes": 7197
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_04.txt",
+      "member": "prior_art_review/source_snapshot/screen_04.txt",
+      "sha256": "d1acbb346b31218ae6f55a6c1a4390f83ec0f3b0c2f9f016c93f072e00bddde2",
+      "bytes": 7214
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_05.txt",
+      "member": "prior_art_review/source_snapshot/screen_05.txt",
+      "sha256": "5f97245bcb3bf9908f689762d3b9e37184ac1d441df448b8200fd2a32c94571f",
+      "bytes": 6532
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_06.txt",
+      "member": "prior_art_review/source_snapshot/screen_06.txt",
+      "sha256": "c27d7ba009793d4ffb2b9132f872dd058f840890aab4976eb853eb57118ea114",
+      "bytes": 7012
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_07.txt",
+      "member": "prior_art_review/source_snapshot/screen_07.txt",
+      "sha256": "0755e34ecd08ebe8492471b280839ab3f6c0a0e5e83c543f193b463ec4429d0e",
+      "bytes": 6726
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_08.txt",
+      "member": "prior_art_review/source_snapshot/screen_08.txt",
+      "sha256": "b867aec15f4c0c8c135076a371bbdfe47459739b586e0276deaca9a8b9a6976d",
+      "bytes": 7215
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_09.txt",
+      "member": "prior_art_review/source_snapshot/screen_09.txt",
+      "sha256": "8f10be00b3289788e2eb4c91b5e6b8e28b7c8388b5121031de1d62757781b5d0",
+      "bytes": 7495
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_10.txt",
+      "member": "prior_art_review/source_snapshot/screen_10.txt",
+      "sha256": "e4577b392a97ae9b466443272f423d2945280e5bc0b5183a6f118bb54c0b7e33",
+      "bytes": 7161
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_11.txt",
+      "member": "prior_art_review/source_snapshot/screen_11.txt",
+      "sha256": "4acd2c2bfa5e46dcc539a0d868b862f2fa553010d5cde9228fb2f6789078fe65",
+      "bytes": 7191
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_12.txt",
+      "member": "prior_art_review/source_snapshot/screen_12.txt",
+      "sha256": "91d739598600d6504c72ed1772abaf5772cada2702e7cdf40bc3a8ede3069950",
+      "bytes": 7033
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_13.txt",
+      "member": "prior_art_review/source_snapshot/screen_13.txt",
+      "sha256": "90dec26e2cee678715447d2c64de3fbd2e1efca950242eb58dce799fb2f22cdc",
+      "bytes": 8048
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_14.txt",
+      "member": "prior_art_review/source_snapshot/screen_14.txt",
+      "sha256": "e85651e33a7755c3f1e33044b8b1634eb8fea54a56fd6f15a0ded76f82b5e845",
+      "bytes": 6678
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/screen_15.txt",
+      "member": "prior_art_review/source_snapshot/screen_15.txt",
+      "sha256": "d9d3bc53de0a0e64d9ea4873f7be88587e29cd618633ca3147c6f85627d7d4b2",
+      "bytes": 7485
+    }
+  ],
+  "scope": "Byte-exact final constructive source review and bounded prior-art review. Original exploratory science remains in EXPLORATORY_RECOVERY_v1.tar.gz. This recovery does not infer final pipeline or audit success."
+}

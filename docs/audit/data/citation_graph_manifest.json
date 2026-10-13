@@ -1,6 +1,6 @@
 {
- "edge_count": 15870,
- "node_count": 7039,
+ "edge_count": 15885,
+ "node_count": 7043,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5966,6 +5966,10 @@
    "deps_hash": "23cb4395db57",
    "out_degree": 6
   },
+  "effective_potential_graph_local_endpoint_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "1e8aa8b045c8",
+   "out_degree": 5
+  },
   "eigenvalue_anderson_phase_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -8893,6 +8897,10 @@
   "high_flux_actual_birth_energy_spread_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1e5276f1135b",
    "out_degree": 2
+  },
+  "higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "49833958cc0f",
+   "out_degree": 3
   },
   "higher_order_structural_theorems_note": {
    "deps_hash": "a525afe982f4",
@@ -15630,6 +15638,10 @@
    "deps_hash": "b64b8dc7658d",
    "out_degree": 4
   },
+  "nonautonomous_corrected_dynamics_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "0bcc440a90ee",
+   "out_degree": 3
+  },
   "nonisolated_fock_bounded_theorem_note_2026-10-12": {
    "deps_hash": "ec3b4535e53c",
    "out_degree": 2
@@ -19533,6 +19545,10 @@
   "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15": {
    "deps_hash": "f1d139b543d4",
    "out_degree": 1
+  },
+  "smooth_preparation_moments_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "15ac0c199963",
+   "out_degree": 4
   },
   "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-13T06:00:54.934835+00:00",
+  "source_freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/SOURCE_FREEZE.json",
+  "source_freeze_sha256": "32238b64fbcd6aed9a43557af422e0b9cb8da7cd070ce84f6d73028c1105b0fe",
+  "members_verified": 309,
+  "review": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PREPARED_ENERGY_SOURCE_ROOT_REVIEW.md",
+  "review_sha256": "301dc365eef769c9111f53d20725c1ad8e0b7bb9ce69ae25f753d5511073681e",
+  "candidate_notes": [
+    {
+      "canonical_path_proposed": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "core_keys": [
+        "preparation"
+      ],
+      "key": "preparation",
+      "path": "proposed/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "root_exact_assembly_review_pending": true,
+      "sha256": "64b53e49285ed5c32602629756fd4975fae477892ae8e301e52fcbe7579fdd53",
+      "source_only": true
+    },
+    {
+      "canonical_path_proposed": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "core_keys": [
+        "graph_root",
+        "local_root",
+        "graph_check"
+      ],
+      "key": "graph",
+      "path": "proposed/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "root_exact_assembly_review_pending": true,
+      "sha256": "17629db1ccf576fe1e6b677cfb3f177ce1e6e801132ed0ba1e90edf8d8046217",
+      "source_only": true
+    },
+    {
+      "canonical_path_proposed": "docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "core_keys": [
+        "nonautonomous"
+      ],
+      "key": "nonautonomous",
+      "path": "proposed/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "root_exact_assembly_review_pending": true,
+      "sha256": "2e42e051c902345872bab13a1abdcb975e89017097c9ec5a2a72b9b264a64ee0",
+      "source_only": true
+    },
+    {
+      "canonical_path_proposed": "docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "core_keys": [
+        "higher"
+      ],
+      "key": "higher",
+      "path": "proposed/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "root_exact_assembly_review_pending": true,
+      "sha256": "947e62ddd7be640eca2cfc98a0e093a5fd83fade9f641432779849064878aa3d",
+      "source_only": true
+    }
+  ],
+  "new_full_read_coverage": {
+    "wrappers_401": "da7cbf",
+    "programs_624": [
+      "f67fb8",
+      "bb34d3"
+    ],
+    "dependency_roles_registry_status": "718654"
+  },
+  "unchanged_core_lines_reused": 2923,
+  "identity_execution": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_root_check/EXECUTION.json",
+  "identity_execution_sha256": "3dd887ce0d97985823a5440a6d42c665db9595153632dfe43091149de196b098",
+  "identity_tool_chunk": "032ef6",
+  "mathematical_predicates_executed": 0,
+  "status": "source assembly accepted for subsequent publication preparation; parent installation/runtime pending",
+  "mathematical_body_repairs": [],
+  "formal_analytic_or_model_diverse_review": false,
+  "retained_audit_verdict": false,
+  "editable_prompt_files_changed": []
+}

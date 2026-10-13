@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-13T06:36:08.494680+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "branch": "physics-loop/toe-prepared-energy-20261013",
+  "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+  "parent_branch": "physics-loop/toe-corrected-dynamics-20261013",
+  "parent_pr": 9511,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Switched to a new branch 'physics-loop/toe-prepared-energy-20261013'\n"
+}

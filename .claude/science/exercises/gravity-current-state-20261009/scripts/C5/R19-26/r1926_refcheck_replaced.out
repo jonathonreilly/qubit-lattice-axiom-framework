@@ -1,0 +1,9 @@
+independent W1: seam 2.073e-16; exact-zero full-left x transverse-right 1.671e-16; finite True; warnings 0
+exact-zero directional limit eps=1e-6,1e-8,1e-10: [np.float64(4.224088268056647e-07), np.float64(4.22409018874248e-09), np.float64(4.224098848482072e-11)]
+R0 stated-law max error at 0,b,(b+pi)/2,pi: 4.441e-16
+R1 defining quotient (200 nonsingular pairs) max error 4.219e-14; q=0 limit error 0.000e+00
+q-wrap eps 1e-04: |dk1| 2.000e-04; Delta limits +3.678439308e+00 -3.677890989e+00; kernel jump 1.310001202e+00 (M00 4.663e-05, M02 3.274369749e-05, projected M02 3.274369749e-05); W1 sides 4.62e-16 7.61e-16
+q-wrap eps 1e-06: |dk1| 2.000e-06; Delta limits +3.678167881e+00 -3.678162398e+00; kernel jump 1.310001203e+00 (M00 4.663e-07, M02 3.274369756e-07, projected M02 3.274369756e-07); W1 sides 7.28e-16 5.80e-16
+q-wrap eps 1e-08: |dk1| 2.000e-08; Delta limits +3.678165167e+00 -3.678165112e+00; kernel jump 1.310001203e+00 (M00 4.663e-09, M02 3.274369772e-09, projected M02 3.274369782e-09); W1 sides 3.36e-16 4.99e-16
+q-wrap eps 1e-10: |dk1| 2.000e-10; Delta limits +3.678165139e+00 -3.678165139e+00; kernel jump 1.310001203e+00 (M00 4.663e-11, M02 3.274373481e-11, projected M02 3.274373828e-11); W1 sides 3.23e-16 5.61e-16
+R2 vs independent transverse-basis Sylvester max abs 1.332e-15; exact-zero formula errors 0.000e+00 0.000e+00

@@ -1,0 +1,32 @@
+[R19-16 kernel] eps 1e-06  q_x(a,b) = +3.1415916536 -3.1415916536
+   total      RAW max 1.310e+00 | PLACE max 7.491e-01 at M^{xz} | PLACE phys-block max 7.491e-01
+   scattering RAW max 4.632e-01 | PLACE max 4.149e-07 at M^{xx} | PLACE phys-block max 4.149e-07
+   pair       RAW max 1.015e+00 | PLACE max 7.491e-01 at M^{xz} | PLACE phys-block max 7.491e-01
+   spatial kernel alone: jump as a SITE operator (p=0) 8.522e-07 | as a PLAQUETTE operator (p=(e_i+e_j)/2) 1.391e+00
+[R19-16 kernel] eps 1e-08  q_x(a,b) = +3.1415926436 -3.1415926436
+   total      RAW max 1.310e+00 | PLACE max 7.491e-01 at M^{xz} | PLACE phys-block max 7.491e-01
+      PLACE phys-block per (mu,nu):
+      4.66e-09 5.32e-09 2.79e-01 3.32e-01
+      5.32e-09 5.47e-09 5.95e-01 7.49e-01
+      2.79e-01 5.95e-01 3.24e-09 3.15e-09
+      3.32e-01 7.49e-01 3.15e-09 4.47e-09
+      M^{0x}: <M_b, M_a>/<M_b, M_b> = -0.999999996342  (a local link operator must give -1)
+   scattering RAW max 4.632e-01 | PLACE max 4.149e-09 at M^{xx} | PLACE phys-block max 4.149e-09
+   pair       RAW max 1.015e+00 | PLACE max 7.491e-01 at M^{xz} | PLACE phys-block max 7.491e-01
+   spatial kernel alone: jump as a SITE operator (p=0) 8.522e-09 | as a PLAQUETTE operator (p=(e_i+e_j)/2) 1.391e+00
+[re-placed kernel] eps 1e-06  q_x(a,b) = +3.1415916536 -3.1415916536
+   total      RAW max 1.310e+00 | PLACE max 6.189e-07 at M^{xz} | PLACE phys-block max 6.189e-07
+   scattering RAW max 4.632e-01 | PLACE max 4.149e-07 at M^{xx} | PLACE phys-block max 4.149e-07
+   pair       RAW max 1.015e+00 | PLACE max 5.618e-07 at M^{xz} | PLACE phys-block max 5.618e-07
+   spatial kernel alone: jump as a SITE operator (p=0) 8.522e-07 | as a PLAQUETTE operator (p=(e_i+e_j)/2) 1.043e-06
+[re-placed kernel] eps 1e-08  q_x(a,b) = +3.1415926436 -3.1415926436
+   total      RAW max 1.310e+00 | PLACE max 6.189e-09 at M^{xz} | PLACE phys-block max 6.189e-09
+      PLACE phys-block per (mu,nu):
+      4.66e-09 5.32e-09 3.27e-09 3.07e-09
+      5.32e-09 5.47e-09 5.63e-09 6.19e-09
+      3.27e-09 5.63e-09 3.24e-09 3.15e-09
+      3.07e-09 6.19e-09 3.15e-09 4.47e-09
+      M^{0x}: <M_b, M_a>/<M_b, M_b> = -0.999999996342  (a local link operator must give -1)
+   scattering RAW max 4.632e-01 | PLACE max 4.149e-09 at M^{xx} | PLACE phys-block max 4.149e-09
+   pair       RAW max 1.015e+00 | PLACE max 5.618e-09 at M^{xz} | PLACE phys-block max 5.618e-09
+   spatial kernel alone: jump as a SITE operator (p=0) 8.522e-09 | as a PLAQUETTE operator (p=(e_i+e_j)/2) 1.043e-08

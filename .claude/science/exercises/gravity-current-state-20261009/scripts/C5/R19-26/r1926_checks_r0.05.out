@@ -1,0 +1,29 @@
+r = 0.05
+C1 W1 referee seam                   w1_resid 1.94e-16 | indep. frame 2.07e-16 | finite True
+C1 W1 exact zero leg (left)          w1_resid nan | indep. frame 1.67e-16 | finite True
+C1 W1 exact zero leg (right)         w1_resid nan | indep. frame 1.93e-16 | finite True
+C1 W1 both zero                      w1_resid nan | indep. frame 0.00e+00 | finite True
+C1 W1 dense hard x hard (600)        w1_resid 1.33e-15 | indep. frame 1.39e-15 | finite True
+C1 W1 dense soft x hard (600)        w1_resid 1.40e-15 | indep. frame 1.92e-15 | finite True
+C1 W1 dense hard x soft (600)        w1_resid 1.95e-15 | indep. frame 1.95e-15 | finite True
+C1 W1 dense annulus x annulus (600)  w1_resid 1.19e-16 | indep. frame 1.50e-16 | finite True
+C1 W1 dense annulus x hard (600)     w1_resid 1.25e-15 | indep. frame 1.31e-15 | finite True
+C2 R19-16   axis 0 eps 1e-07: max PLACE jump full 1.956e+00 | physical block 1.437e+00
+C2 R19-16   axis 0 eps 1e-09: max PLACE jump full 1.950e+00 | physical block 1.419e+00
+C2 R19-16   axis 1 eps 1e-07: max PLACE jump full 1.950e+00 | physical block 1.400e+00
+C2 R19-16   axis 1 eps 1e-09: max PLACE jump full 1.916e+00 | physical block 1.395e+00
+C2 R19-16   axis 2 eps 1e-07: max PLACE jump full 1.929e+00 | physical block 1.414e+00
+C2 R19-16   axis 2 eps 1e-09: max PLACE jump full 1.967e+00 | physical block 1.427e+00
+C2 REPLACED axis 0 eps 1e-07: max PLACE jump full 1.905e-04 | physical block 1.053e-04 | W1 at cut 1.68e-15
+C2 REPLACED axis 0 eps 1e-09: max PLACE jump full 1.825e-06 | physical block 1.371e-06 | W1 at cut 1.27e-15
+C2 REPLACED axis 1 eps 1e-07: max PLACE jump full 1.864e-04 | physical block 9.096e-05 | W1 at cut 1.27e-15
+C2 REPLACED axis 1 eps 1e-09: max PLACE jump full 1.407e-06 | physical block 8.527e-07 | W1 at cut 1.13e-15
+C2 REPLACED axis 2 eps 1e-07: max PLACE jump full 2.095e-04 | physical block 8.146e-05 | W1 at cut 1.34e-15
+C2 REPLACED axis 2 eps 1e-09: max PLACE jump full 1.756e-06 | physical block 9.171e-07 | W1 at cut 1.83e-15
+C3 BZ-face continuity (twist T_l, both legs, 1e-9 from the face, 240 crossings): max jump 2.83e-09
+C4 line scan across q_0 = -pi (801 pts, step 1e-4): max |M| 1.103, max first diff 6.97e-05, max second diff 5.74e-09
+C4 line scan across q_1 = -pi (801 pts, step 1e-4): max |M| 0.555, max first diff 6.48e-05, max second diff 3.35e-09
+C4 line scan across q_2 = -pi (801 pts, step 1e-4): max |M| 1.257, max first diff 4.40e-05, max second diff 5.68e-09
+C5 covariance C4z      max |M(Rk1,Rk2) - R.M(k1,k2)| over 300 pairs = 4.44e-16
+C5 covariance C3(111)  max |M(Rk1,Rk2) - R.M(k1,k2)| over 300 pairs = 8.88e-16
+C5 covariance C2(110)  max |M(Rk1,Rk2) - R.M(k1,k2)| over 300 pairs = 4.44e-16

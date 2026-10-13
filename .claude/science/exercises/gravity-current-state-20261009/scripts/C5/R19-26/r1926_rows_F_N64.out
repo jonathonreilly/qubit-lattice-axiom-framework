@@ -1,0 +1,2 @@
+N=64 mode=F face1: per vector at (wd,wo)=(0,0) +2.122093426358e-01 | d/dwd +1.396265627541e-01 | d/dwo +2.897502154802e-01 [2s]
+N=64 mode=F face2: per vector at (wd,wo)=(0,0) +1.171671538496e-01 | d/dwd +0.000000000000e+00 | d/dwo +5.802564787116e-01 [5s]

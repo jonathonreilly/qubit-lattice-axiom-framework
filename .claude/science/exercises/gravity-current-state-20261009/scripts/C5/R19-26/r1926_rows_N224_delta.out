@@ -1,0 +1,6 @@
+N=224 per vector, re-placed minus R19-16 (analytic law): face1 +2.062e-08, face2 +2.085e-08 | d/dwd -3.210e-12 +0.000e+00 | d/dwo +6.679e-08 +6.699e-08
+N= 64  delta(face1, face2) = +2.0546e-06 +2.1835e-06   N^4*delta = 34.47 36.63   N^4*delta/ln N = 8.288 8.809
+N= 96  delta(face1, face2) = +4.8199e-07 +4.9889e-07   N^4*delta = 40.94 42.37   N^4*delta/ln N = 8.969 9.283
+N=128  delta(face1, face2) = +1.6786e-07 +1.7181e-07   N^4*delta = 45.06 46.12   N^4*delta/ln N = 9.287 9.505
+N=224  delta(face1, face2) = +2.0615e-08 +2.0853e-08   N^4*delta = 51.90 52.50   N^4*delta/ln N = 9.591 9.701
+predicted change of the 12-vector face totals at R19-16 r=0.1 root: +9.080e-08 +9.316e-08 ; predicted step dw = -2.638e-08 -1.342e-08

@@ -1,0 +1,2 @@
+N=128 mode=noF face1: per vector at (wd,wo)=(0,0) +2.070567019828e-01 | d/dwd +1.396592277493e-01 | d/dwo +2.891862204615e-01 [18s]
+N=128 mode=noF face2: per vector at (wd,wo)=(0,0) +1.031547312307e-01 | d/dwd +0.000000000000e+00 | d/dwo +5.784496410193e-01 [34s]

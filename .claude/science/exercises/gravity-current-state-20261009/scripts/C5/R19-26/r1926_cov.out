@@ -1,0 +1,4 @@
+[r1926_run] r199_cov.py  with the RE-PLACED kernel (lib1916 R0/R1/R2 + lib1926 F(q_i)F(q_j) on off-diagonal VW)
+C4z: max |M(Rk1,Rk2) - R.M(k1,k2)| over 300 pairs (half in the corner region) = 4.44e-16
+C3(111): max |M(Rk1,Rk2) - R.M(k1,k2)| over 300 pairs (half in the corner region) = 8.88e-16
+C2(110): max |M(Rk1,Rk2) - R.M(k1,k2)| over 300 pairs (half in the corner region) = 4.44e-16

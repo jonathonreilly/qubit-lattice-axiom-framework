@@ -1,0 +1,28 @@
+[r1926_run] r199_exact.py 0.05 with the RE-PLACED kernel (lib1916 R0/R1/R2 + lib1926 F(q_i)F(q_j) on off-diagonal VW)
+photon gammaGw(2.9435,0.1981); root a=-0.176095005436, (wd, wo)=(-1.171554, -0.195418); corner radius r=0.05; SIGN=-1.0
+[0] vertex(P,u arrays) vs archived vwface.vertex_geo, 300 random: max diff 0.0e+00
+    component kernels recombine to vertex_geo(e): 6.2e-01
+[1] continuum Maxwell kernel, SIGN=-1: max relative W1 residual over 200 corner pairs = 6.17e-15
+[1] continuum Maxwell kernel, SIGN=+1: max relative W1 residual over 200 corner pairs = 9.82e-01
+[2] W1 glued, torus uniform                            n=400 pieces ['B']: max rel 2.55e-16  max abs 1.30e-15
+[2] W1 glued, near shell |w1-w2|<~1e-9                 n=106 pieces ['B']: max rel 2.21e-16  max abs 8.02e-16
+[2] W1 glued, forward, q_l = 0 planes                  n=200 pieces ['B']: max rel 3.16e-16  max abs 6.18e-16
+[2] W1 glued, single soft left                         n=200 pieces ['AL', 'B']: max rel 5.54e-16  max abs 1.25e-15
+[2] W1 glued, single soft right                        n=200 pieces ['AR', 'B']: max rel 6.06e-16  max abs 1.29e-15
+[2] W1 glued, corner U_r (both < r)                    n=300 pieces ['AR', 'B', 'C']: max rel 7.37e-15  max abs 1.11e-16
+[2] W1 glued, corner, on shell                         n=200 pieces ['B', 'C']: max rel 3.36e-14  max abs 1.31e-16
+[2] W1 glued, annulus r/2..2r                          n=300 pieces ['B', 'C']: max rel 2.38e-15  max abs 1.08e-16
+[2] W1 glued, one leg in r/16..r/4, other in r/4..2r   n=300 pieces ['AL', 'B', 'C']: max rel 7.67e-15  max abs 1.21e-16
+[2] W1 glued, near BZ faces                            n=100 pieces ['B']: max rel 2.32e-16  max abs 8.86e-16
+    ALL FAMILIES: max relative W1 residual 3.36e-14, max absolute 1.30e-15
+[3] mu-nu symmetry max 2.2e-16; exchange Hermiticity (physical block) max 4.38e-16
+[3] (H-E) P_T M00(k,k) P_T = P_T/2 (so int T00 = H): max dev 3.9e-16; forward scattering values = Lemma F (v_j, v_i v_j): max dev 3.3e-16
+[3] spatial PAIR blocks: == VW (root a, wd, wo) where a leg is outside U_r: max dev 6.2e-16; == continuum inside U_(r/2): 0.0e+00
+[4] soft left leg: eigen-sum Sylvester vs Neumann series in h(k1): max diff 0.0e+00
+    |k1| = 1e-02: spread of the full-left kernel over 6 directions 6.80e-03 (vs spread of P_T(k1) 0.79)
+    |k1| = 1e-04: spread of the full-left kernel over 6 directions 5.01e-05 (vs spread of P_T(k1) 0.88)
+    |k1| = 1e-06: spread of the full-left kernel over 6 directions 8.90e-07 (vs spread of P_T(k1) 0.68)
+    |k1| = 1e-08: spread of the full-left kernel over 6 directions 7.47e-09 (vs spread of P_T(k1) 0.57)
+[5] across the BZ face (rotated-frame twist T_l), 60 pairs at 1e-07 from the face: max jump 2.14e-07 (scales with the gap 2x1e-07)
+[5] across the BZ face (rotated-frame twist T_l), 60 pairs at 1e-09 from the face: max jump 1.85e-09 (scales with the gap 2x1e-09)
+time 3 s

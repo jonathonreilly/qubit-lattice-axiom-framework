@@ -8529,3 +8529,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **B-STILL-WALLED:** a set-B wall that (Σ) does not touch and no stated price passes (cite it).
   - **OPEN:** otherwise.
 - **Expectation.** B-STILL-WALLED. Set B's main walls are RP and record ones (R10-2: box symbols lose RP; R2-x), which concern matter and records, not the gravitating source. (Σ) cannot touch them.
+- **R19-26 (photon kernel wrap cut): worker reading PHOTON-EXACT.**
+  - **Lemma P.** With R9-9's placement, a local stress's wrapped-q kernel must flip sign at q = ±π. So R1's opposite limits are required, not a defect.
+  - **The real defect** was VW's site-placed off-diagonal stress used as plaquette-centred: a non-local half-shift that gave the O(1) jump.
+  - **The repair:** a local 4-point re-placement F(q_i)F(q_j), with F = 1 + O(q⁴). It leaves every row unchanged and keeps W1 exact to ≤ 2e-15.
+  - **Checks:**
+    - the placement-corrected jump vanishes like ε;
+    - the referee's script gives 3.3e-11;
+    - the kernel's Fourier coefficients decay faster than any power (before the repair they decayed like 1/n).
+  - **The root re-solves:** face totals ~1e-12.
+  - **Correction:** R17-12's co-location claim held only along the axis.
+  - **Price:** P-R19-26a (re-placement law data, zero numbers).
+  - **Flag:** R19-5's U/UD exact completions should get the same placement and Fourier test.
+
+  Referee running.

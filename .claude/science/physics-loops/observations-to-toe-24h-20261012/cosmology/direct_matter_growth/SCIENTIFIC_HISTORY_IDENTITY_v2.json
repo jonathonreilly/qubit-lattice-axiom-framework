@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-13T13:03:20.932743+00:00",
+  "issues": [],
+  "all_twenty_state_arrays_identical": true,
+  "unchanged_old_scientific_checks": 7329,
+  "old_counts": {
+    "passed": 7338,
+    "failed": 0,
+    "total": 7338
+  },
+  "new_counts": {
+    "passed": 23628,
+    "failed": 0,
+    "total": 23628
+  },
+  "scope": "Complete history sections except measured wall times, GR/reference/comparison/scope sections and all original non-source assertion objects compared exactly.",
+  "comparison_tool_failure": "First handwritten shell comparison snippet had a syntax typo before any execution; corrected here. Scientific runners unchanged."
+}

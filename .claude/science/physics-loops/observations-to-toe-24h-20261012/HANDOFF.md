@@ -137,3 +137,14 @@ Curvature/fluid v2 fully checked:6663 parent,103 mathematical,32831 original and
 Personally derive and test full coupled matter/scalar/metric perturbations and the lensing/growth readout; finish thermal affected review and canonical curvature/fluid milestone after actual preflight and independent source checks.
 
 Canonical source has an explicit vacuum-subtracted dynamical matter label; earlier ambiguous notation preserved for review. Thermal SciPy Jacobian warning remains recorded. Fixed16:53Z deadline and16:38Z discovery cutoff unchanged. Retired/cancelled authors stay stopped.
+
+## Direct-author continuation 2026-10-13T13:05:00.926750+00:00
+
+Thermal v2 fully checked29986/0 with affected49593/0; actual clock-readout mutation now fails1216. Matter-growth full coupled operator49/0 and handwritten66/0,20historyv1 7338/0; genuine normalized-readout survivor preserved. Parent historyv2 23628/0 with all20histories and7329original non-source controls identical; numerical review active. Curvature canonical capture6651/0 and independent112identity checks; final57path package under review. Thermal-matter bridge handwritten v2 and physical/PDG inputs prepared; no bridge history executed.
+
+Personally implement the continuous thermal/matter/neutrino history with fixed action and frozen inputs; inspect growth affected review; complete canonical curvature final source, mechanical gates and review PR.
+
+Fixed deadline16:53Z and discovery cutoff16:38Z unchanged. Parent is the author.
+Retired/cancelled authors remain absent; focused independent reviews are active.
+Cooperative lock same holder expires14:20:33Z. PDG source retrieval initially
+failed for missing default CA; verified certifi route recovered the exact PDF.

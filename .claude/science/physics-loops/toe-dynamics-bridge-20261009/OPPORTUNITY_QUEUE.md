@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Publish corrected-dynamics V2 after exact canonical checks.
-2. Check energy-adapted global expansion and local inverse calibration for fixed continuum drives and probes.
-3. Publish accepted smooth preparation, graph applicability, BV dynamics and higher-energy endpoints.
-4. Complete all-time fixed-preparation/ongoing-drive source comparison, preserving stronger-topology counterexamples.
-5. Finite histories/finite-CAR observable milestone and unresolved intended3D/creator coverage.
+1. Energy-weighted local calibration and L1-driven free-energy moments/transfer.
+2. Publish accepted four-note prepared-energy milestone on9511.
+3. Complete independent compact-input calibration and package the energy-coordinate theorem family.
+4. Finite histories and observable norm consequences with explicit measurement/state hypotheses.
+5. Intended3D and creator/channel coverage remain open; refresh routes if these focused constructions stall.
 
-Deadline2026-10-13T16:42:30Z. No main push, science merge, audit verdict or physical-axiom change.
+Deadline2026-10-13T16:42:30Z. No science merge/main push/audit verdict/axiom change.

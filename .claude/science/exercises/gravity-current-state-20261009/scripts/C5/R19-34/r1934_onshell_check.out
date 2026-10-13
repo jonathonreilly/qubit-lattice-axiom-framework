@@ -1,0 +1,8 @@
+(0) per-axis rewrite vs unmodified r1610_core.dirac_pt at l = 1, p = 0, m = 0.05: max |diff| = 0.0e+00 (scale 9.4e+00)
+(1) Euclidean P=0 formula, R18-9 root edge + Gph: dm = +0.041858389  d2/dh2 Rich = -4.047466e-02
+    on-shell dE(0): lam=1e-02 m=1e-02: dE = +0.044202797 (diff to dm +2.34e-03)  d2/dh2 Rich = -4.119109e-02 (diff -7.16e-04)
+    on-shell dE(0): lam=1e-02 m=3e-03: dE = +0.042603227 (diff to dm +7.45e-04)  d2/dh2 Rich = -4.069000e-02 (diff -2.15e-04)
+    on-shell dE(0): lam=1e-02 m=1e-03: dE = +0.042110316 (diff to dm +2.52e-04)  d2/dh2 Rich = -4.054650e-02 (diff -7.18e-05)
+(2) naive Wilson r=1: Euclidean dm +0.374347473 Hess -6.218223e-02 | on-shell m=1e-02: dE +0.375934519 Hess -6.228772e-02
+(2) naive Wilson r=1: Euclidean dm +0.374347473 Hess -6.218223e-02 | on-shell m=1e-03: dE +0.374508708 Hess -6.219892e-02
+time 74 s

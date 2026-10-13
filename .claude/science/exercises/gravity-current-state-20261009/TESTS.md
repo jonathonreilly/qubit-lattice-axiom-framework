@@ -8878,3 +8878,25 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **CONSERVED-NO:** no member works across the parametrized family (checked), with the mechanism stated.
   - **OPEN:** otherwise.
 - **Expectation.** CONSERVED-NO in the nearest-neighbour family, because ρ's time-link part must straddle the slice to be conserved.
+
+- **R19-34 (Wilson ψ̄ψ strain channel on the root's edges): worker reading PSI-HAZARD, under H-cov strain.**
+  - **The root's edges:** all 22.5 SM Dirac fields are on D1(b_f, r) Wilson-type edges. The R18-9 root is D1(0.9091, 0.5556); twisted mass is only the priced alternative.
+  - **The Hessian:** the one-loop additive-mass strain Hessian is −0.04047e² (0⁺ root: −0.04081e²). An independent on-shell formalism agrees.
+  - **R19-31's −0.0622 for naive Wilson** reproduces to every digit.
+  - **Symmetry:** δm(h) is even in h, with one E_g coefficient. Zeros occur only at r = 0 (doublers), for staggered edges (U(1)_ε), or for GW edges.
+  - **Twisted mass:** the zero comes through orthogonality (O(e⁴h⁴/μ)); a residual ∝ m_f is below |m_g| < H.
+  - **A tuned zero:** placing the Wilson term as W/ℓ^κ gives a zero at κ* = 0.188. Not viable, because it would need ~2e-16 precision at all orders.
+  - **Sizes (canonical, conditional):**
+    - m_g²/H² from −2e13 to −4.8e15 between 150 GeV and 1 GeV;
+    - Earth |m_g| ≈ 2.3e-9 eV (against a 100 Hz GW, 4.1e-13 eV; propagation not computed);
+    - IGM 6.5e-25 eV.
+  - **Prices:**
+    - P-R19-31b on the root: ψ̄ψ as an (S_loc) background;
+    - new P-R19-34a: a strain-covariant critical mass (number-free under the vR19-24 convention);
+    - P-R19-34b: κ tuning, not viable.
+  - **Scope:**
+    - one loop, U(1), Feynman gauge;
+    - not computed: T₂g strain, Yukawa/W/Z, two loops;
+    - not built: a strained law consistent with the UD vertex.
+
+  Referee running.

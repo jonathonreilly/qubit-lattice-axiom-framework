@@ -1,0 +1,55 @@
+(i) D1(b, r) family, H-cov: dm, d2dm/dh2, ratio
+  photon ('Gph', 2.9435) b=0.6000 r=0.1000: dm +0.012562  Hess -0.012934  ratio -1.0296
+  photon ('Gph', 2.9435) b=0.6000 r=0.3000: dm +0.035598  Hess -0.035326  ratio -0.9924
+  photon ('Gph', 2.9435) b=0.6000 r=0.5556: dm +0.059890  Hess -0.052607  ratio -0.8784
+  photon ('Gph', 2.9435) b=0.8380 r=0.1000: dm +0.009226  Hess -0.009529  ratio -1.0328
+  photon ('Gph', 2.9435) b=0.8380 r=0.3000: dm +0.026632  Hess -0.027017  ratio -1.0145
+  photon ('Gph', 2.9435) b=0.8380 r=0.5556: dm +0.046009  Hess -0.043695  ratio -0.9497
+  photon ('Gph', 2.9435) b=0.9091 r=0.1000: dm +0.008279  Hess -0.008554  ratio -1.0332
+  photon ('Gph', 2.9435) b=0.9091 r=0.3000: dm +0.024028  Hess -0.024487  ratio -1.0191
+  photon ('Gph', 2.9435) b=0.9091 r=0.5556: dm +0.041858  Hess -0.040475  ratio -0.9669
+  photon ('Gph', 2.9435) b=1.2000 r=0.1000: dm +0.004560  Hess -0.004713  ratio -1.0335
+  photon ('Gph', 2.9435) b=1.2000 r=0.3000: dm +0.013499  Hess -0.013914  ratio -1.0308
+  photon ('Gph', 2.9435) b=1.2000 r=0.5556: dm +0.024327  Hess -0.024742  ratio -1.0171
+  photon ('Gph', 2.9435) b=1.4000 r=0.1000: dm +0.002089  Hess -0.002158  ratio -1.0331
+  photon ('Gph', 2.9435) b=1.4000 r=0.3000: dm +0.006245  Hess -0.006452  ratio -1.0331
+  photon ('Gph', 2.9435) b=1.4000 r=0.5556: dm +0.011474  Hess -0.011836  ratio -1.0316
+  photon ('naive',)     b=0.6000 r=0.1000: dm +0.021099  Hess -0.021602  ratio -1.0238
+  photon ('naive',)     b=0.6000 r=0.3000: dm +0.059285  Hess -0.059216  ratio -0.9988
+  photon ('naive',)     b=0.6000 r=0.5556: dm +0.098731  Hess -0.088371  ratio -0.8951
+  photon ('naive',)     b=0.8380 r=0.1000: dm +0.015661  Hess -0.015927  ratio -1.0170
+  photon ('naive',)     b=0.8380 r=0.3000: dm +0.044945  Hess -0.045280  ratio -1.0075
+  photon ('naive',)     b=0.8380 r=0.5556: dm +0.077054  Hess -0.073454  ratio -0.9533
+  photon ('naive',)     b=0.9091 r=0.1000: dm +0.014089  Hess -0.014302  ratio -1.0151
+  photon ('naive',)     b=0.9091 r=0.3000: dm +0.040683  Hess -0.041035  ratio -1.0086
+  photon ('naive',)     b=0.9091 r=0.5556: dm +0.070386  Hess -0.068032  ratio -0.9666
+  photon ('naive',)     b=1.2000 r=0.1000: dm +0.007819  Hess -0.007885  ratio -1.0083
+  photon ('naive',)     b=1.2000 r=0.3000: dm +0.023092  Hess -0.023299  ratio -1.0090
+  photon ('naive',)     b=1.2000 r=0.5556: dm +0.041465  Hess -0.041509  ratio -1.0011
+  photon ('naive',)     b=1.4000 r=0.1000: dm +0.003592  Hess -0.003612  ratio -1.0055
+  photon ('naive',)     b=1.4000 r=0.3000: dm +0.010729  Hess -0.010798  ratio -1.0065
+  photon ('naive',)     b=1.4000 r=0.5556: dm +0.019685  Hess -0.019820  ratio -1.0069
+  photon ('Gph', 1.0)   b=0.6000 r=0.1000: dm +0.017553  Hess -0.018067  ratio -1.0293
+  photon ('Gph', 1.0)   b=0.6000 r=0.3000: dm +0.049180  Hess -0.049538  ratio -1.0073
+  photon ('Gph', 1.0)   b=0.6000 r=0.5556: dm +0.081650  Hess -0.074018  ratio -0.9065
+  photon ('Gph', 1.0)   b=0.8380 r=0.1000: dm +0.013005  Hess -0.013313  ratio -1.0236
+  photon ('Gph', 1.0)   b=0.8380 r=0.3000: dm +0.037240  Hess -0.037846  ratio -1.0163
+  photon ('Gph', 1.0)   b=0.8380 r=0.5556: dm +0.063672  Hess -0.061427  ratio -0.9647
+  photon ('Gph', 1.0)   b=0.9091 r=0.1000: dm +0.011696  Hess -0.011952  ratio -1.0219
+  photon ('Gph', 1.0)   b=0.9091 r=0.3000: dm +0.033703  Hess -0.034292  ratio -1.0175
+  photon ('Gph', 1.0)   b=0.9091 r=0.5556: dm +0.058162  Hess -0.056873  ratio -0.9778
+  photon ('Gph', 1.0)   b=1.2000 r=0.1000: dm +0.006484  Hess -0.006587  ratio -1.0158
+  photon ('Gph', 1.0)   b=1.2000 r=0.3000: dm +0.019129  Hess -0.019462  ratio -1.0174
+  photon ('Gph', 1.0)   b=1.2000 r=0.5556: dm +0.034296  Hess -0.034672  ratio -1.0110
+  photon ('Gph', 1.0)   b=1.4000 r=0.1000: dm +0.002978  Hess -0.003017  ratio -1.0132
+  photon ('Gph', 1.0)   b=1.4000 r=0.3000: dm +0.008891  Hess -0.009020  ratio -1.0145
+  photon ('Gph', 1.0)   b=1.4000 r=0.5556: dm +0.016303  Hess -0.016555  ratio -1.0154
+(ii) root edge D1(0.909103708, 0.555604226) + Gph(2.9435): Wilson strain placement kappa
+  kappa=0.00: dm +0.041858  Hess +0.013092
+  kappa=0.50: dm +0.041858  Hess -0.018600
+  kappa=1.00: dm +0.041858  Hess -0.040475
+  kappa=1.50: dm +0.041858  Hess -0.052532
+  kappa=2.00: dm +0.041858  Hess -0.054771
+  kappa=3.00: dm +0.041858  Hess -0.029798
+  zero of the Hessian at kappa* = 0.188360 (Hess -2.60e-14)
+time 33 s

@@ -1,0 +1,5 @@
+root Dirac edge D1(0.909103708, 0.555604226) + Gph(2.9435), lam = 0.01, H-cov E_g; on-shell O(e^2) rest-energy shift dE and d2dE/dh2
+  mass 1e-02:  Wilson-type (untwisted m): dE +0.04420280  Hess -4.119110e-02   |  twisted (mu): dE +0.00245621  Hess -9.240603e-04  Hess/mu -0.0924
+  mass 3e-03:  Wilson-type (untwisted m): dE +0.04260323  Hess -4.069000e-02   |  twisted (mu): dE +0.00077816  Hess -2.772110e-04  Hess/mu -0.0924
+  mass 1e-03:  Wilson-type (untwisted m): dE +0.04211032  Hess -4.054651e-02   |  twisted (mu): dE +0.00026323  Hess -9.240329e-05  Hess/mu -0.0924
+time 69 s

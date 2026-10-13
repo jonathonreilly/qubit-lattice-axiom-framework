@@ -1,0 +1,41 @@
+naive Wilson r=1 (R19-31 control): d2dm/dh2 = -0.062100 e^2
+   T =  150.0 GeV: mu_SF = -4.186e-54  m_g^2/H^2 = -3.139e+13
+   T =  100.0 GeV: mu_SF = -1.275e-54  m_g^2/H^2 = -4.838e+13
+   T =   50.0 GeV: mu_SF = -9.495e-56  m_g^2/H^2 = -7.137e+13
+   T =   10.0 GeV: mu_SF = -8.527e-58  m_g^2/H^2 = -4.006e+14
+   T =    1.0 GeV: mu_SF = -1.569e-60  m_g^2/H^2 = -7.369e+15
+   today IGM n ~ 0.25 /m^3      electrons |m_g| = 1.11e-25 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today IGM n ~ 0.25 /m^3      nucleons  |m_g| = 7.99e-25 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today Earth n ~ 3.3e30 /m^3  electrons |m_g| = 4.02e-10 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today Earth n ~ 3.3e30 /m^3  nucleons  |m_g| = 2.90e-09 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+R18-9 root D1 + Gph: d2dm/dh2 = -0.040475 e^2
+   T =  150.0 GeV: mu_SF = -2.728e-54  m_g^2/H^2 = -2.046e+13
+   T =  100.0 GeV: mu_SF = -8.307e-55  m_g^2/H^2 = -3.153e+13
+   T =   50.0 GeV: mu_SF = -6.189e-56  m_g^2/H^2 = -4.652e+13
+   T =   10.0 GeV: mu_SF = -5.558e-58  m_g^2/H^2 = -2.611e+14
+   T =    1.0 GeV: mu_SF = -1.022e-60  m_g^2/H^2 = -4.803e+15
+   today IGM n ~ 0.25 /m^3      electrons |m_g| = 8.94e-26 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today IGM n ~ 0.25 /m^3      nucleons  |m_g| = 6.45e-25 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today Earth n ~ 3.3e30 /m^3  electrons |m_g| = 3.25e-10 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today Earth n ~ 3.3e30 /m^3  nucleons  |m_g| = 2.34e-09 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+R19-11 0+ root D1 + Gph: d2dm/dh2 = -0.040813 e^2
+   T =  150.0 GeV: mu_SF = -2.751e-54  m_g^2/H^2 = -2.063e+13
+   T =  100.0 GeV: mu_SF = -8.376e-55  m_g^2/H^2 = -3.180e+13
+   T =   50.0 GeV: mu_SF = -6.240e-56  m_g^2/H^2 = -4.691e+13
+   T =   10.0 GeV: mu_SF = -5.604e-58  m_g^2/H^2 = -2.633e+14
+   T =    1.0 GeV: mu_SF = -1.031e-60  m_g^2/H^2 = -4.843e+15
+   today IGM n ~ 0.25 /m^3      electrons |m_g| = 8.98e-26 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today IGM n ~ 0.25 /m^3      nucleons  |m_g| = 6.48e-25 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today Earth n ~ 3.3e30 /m^3  electrons |m_g| = 3.26e-10 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+   today Earth n ~ 3.3e30 /m^3  nucleons  |m_g| = 2.35e-09 eV   (LVK 1.92e-23 eV; 100 Hz GW 4.1e-13 eV)
+
+Tuning needed to bring the root-edge channel to the bound lines (|coefficient| allowed / actual):
+   history (|m_g| < H, worst T in list): 2.1e-16
+   Earth (|m_g| below the 100 Hz GW energy 4.1e-13 eV): 3.1e-08
+
+Multiplicative (m-linear) channel on the root edge, z'' = -0.0717 e^2: cross term <psibar psi>_th m_f z'' (top-dominated):
+   T =  150.0 GeV: m_g^2/H^2 = -4.88e-04
+   T =  100.0 GeV: m_g^2/H^2 = -7.34e-04
+   T =   50.0 GeV: m_g^2/H^2 = -8.88e-04
+   T =   10.0 GeV: m_g^2/H^2 = -1.31e-04
+   T =    1.0 GeV: m_g^2/H^2 = -1.36e-03

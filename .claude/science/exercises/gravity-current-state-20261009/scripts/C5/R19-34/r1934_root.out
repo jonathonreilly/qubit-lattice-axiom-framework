@@ -1,0 +1,35 @@
+R18-9 root D1(0.909103708,0.555604226)+Gph(2.9435)  [W_pi = 0.355204]
+   n=6 hmax=0.25 (126 nodes/half-axis): dm/e^2 = +0.041858396   d/dh = -3.5e-16   d2dm/dh2 [Eg (h,-h,0)] = -4.045841e-02 (d) -4.040963e-02 (2d) Rich -4.047466e-02
+   n=8 hmax=0.25 (168 nodes/half-axis): dm/e^2 = +0.041858389   d/dh = -3.5e-16   d2dm/dh2 [Eg (h,-h,0)] = -4.045840e-02 (d) -4.040963e-02 (2d) Rich -4.047466e-02
+   n=8 hmax=0.15 (232 nodes/half-axis): dm/e^2 = +0.041858390   d/dh = -3.5e-16   d2dm/dh2 [Eg (h,-h,0)] = -4.045840e-02 (d) -4.040963e-02 (2d) Rich -4.047466e-02
+   cubic check: Hessian along (h,h,-2h) = -1.214234e-01 Rich; ratio to Eg = 2.999986 (expect 3)
+   dilation check: dm(iso) d/dh = -4.186118e-02 (expect -dm = -4.185839e-02), d2/dh2 Rich = +4.185839e-02 (expect +dm)
+   parts at h=0: tadpole +0.018085  exchange +0.023773
+R19-11 0+ root D1(0.915438682,0.568280847)+Gph(2.9435)  [W_pi = 0.359830]
+   n=6 hmax=0.25 (126 nodes/half-axis): dm/e^2 = +0.042294404   d/dh = +0.0e+00   d2dm/dh2 [Eg (h,-h,0)] = -4.079630e-02 (d) -4.074712e-02 (2d) Rich -4.081270e-02
+   n=8 hmax=0.25 (168 nodes/half-axis): dm/e^2 = +0.042294397   d/dh = +1.7e-16   d2dm/dh2 [Eg (h,-h,0)] = -4.079629e-02 (d) -4.074711e-02 (2d) Rich -4.081269e-02
+   n=8 hmax=0.15 (232 nodes/half-axis): dm/e^2 = +0.042294398   d/dh = -3.5e-16   d2dm/dh2 [Eg (h,-h,0)] = -4.079629e-02 (d) -4.074711e-02 (2d) Rich -4.081269e-02
+   cubic check: Hessian along (h,h,-2h) = -1.224375e-01 Rich; ratio to Eg = 2.999986 (expect 3)
+   dilation check: dm(iso) d/dh = -4.229722e-02 (expect -dm = -4.229440e-02), d2/dh2 Rich = +4.229440e-02 (expect +dm)
+   parts at h=0: tadpole +0.018301  exchange +0.023994
+R18-9 root Dirac edge + naive photon  [W_pi = 0.355204]
+   n=6 hmax=0.25 (126 nodes/half-axis): dm/e^2 = +0.070386232   d/dh = -6.9e-16   d2dm/dh2 [Eg (h,-h,0)] = -6.800448e-02 (d) -6.792195e-02 (2d) Rich -6.803199e-02
+   n=8 hmax=0.25 (168 nodes/half-axis): dm/e^2 = +0.070386231   d/dh = +0.0e+00   d2dm/dh2 [Eg (h,-h,0)] = -6.800448e-02 (d) -6.792195e-02 (2d) Rich -6.803199e-02
+   n=8 hmax=0.15 (232 nodes/half-axis): dm/e^2 = +0.070386231   d/dh = +3.5e-16   d2dm/dh2 [Eg (h,-h,0)] = -6.800448e-02 (d) -6.792195e-02 (2d) Rich -6.803199e-02
+   cubic check: Hessian along (h,h,-2h) = -2.040950e-01 Rich; ratio to Eg = 2.999986 (expect 3)
+   dilation check: dm(iso) d/dh = -7.039092e-02 (expect -dm = -7.038623e-02), d2/dh2 Rich = +7.038623e-02 (expect +dm)
+   parts at h=0: tadpole +0.034096  exchange +0.036290
+D1(1.4,1/sqrt3) + naive photon (R16-1 member)  [W_pi = 0.095274]
+   n=6 hmax=0.25 (126 nodes/half-axis): dm/e^2 = +0.020436519   d/dh = +8.7e-17   d2dm/dh2 [Eg (h,-h,0)] = -2.056775e-02 (d) -2.054363e-02 (2d) Rich -2.057579e-02
+   n=8 hmax=0.25 (168 nodes/half-axis): dm/e^2 = +0.020436515   d/dh = -1.7e-16   d2dm/dh2 [Eg (h,-h,0)] = -2.056775e-02 (d) -2.054363e-02 (2d) Rich -2.057579e-02
+   n=8 hmax=0.15 (240 nodes/half-axis): dm/e^2 = +0.020436516   d/dh = +1.7e-16   d2dm/dh2 [Eg (h,-h,0)] = -2.056775e-02 (d) -2.054363e-02 (2d) Rich -2.057579e-02
+   cubic check: Hessian along (h,h,-2h) = -6.172709e-02 Rich; ratio to Eg = 2.999986 (expect 3)
+   dilation check: dm(iso) d/dh = -2.043788e-02 (expect -dm = -2.043652e-02), d2/dh2 Rich = +2.043652e-02 (expect +dm)
+   parts at h=0: tadpole +0.008862  exchange +0.011575
+R18-9 root D1, r -> 0 (chiral control) + Gph  [W_pi = 0.000000]
+   n=6 hmax=0.25 (126 nodes/half-axis): dm/e^2 = +0.000000000   d/dh = +0.0e+00   d2dm/dh2 [Eg (h,-h,0)] = +0.000000e+00 (d) +0.000000e+00 (2d) Rich +0.000000e+00
+   n=8 hmax=0.25 (168 nodes/half-axis): dm/e^2 = +0.000000000   d/dh = +0.0e+00   d2dm/dh2 [Eg (h,-h,0)] = +0.000000e+00 (d) +0.000000e+00 (2d) Rich +0.000000e+00
+   n=8 hmax=0.15 (232 nodes/half-axis): dm/e^2 = +0.000000000   d/dh = +0.0e+00   d2dm/dh2 [Eg (h,-h,0)] = +0.000000e+00 (d) +0.000000e+00 (2d) Rich +0.000000e+00
+naive Wilson r=1.000000, naive photon: dm/e^2 = +0.374347473  d2dm/dh2 Rich = -6.218223e-02  ratio Hess/dm = -0.16611
+naive Wilson r=0.555604, naive photon: dm/e^2 = +0.250867400  d2dm/dh2 Rich = -1.084424e-01  ratio Hess/dm = -0.43227
+time 25 s

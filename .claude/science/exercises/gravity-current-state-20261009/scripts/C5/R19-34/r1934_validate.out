@@ -1,0 +1,4 @@
+naive Wilson r=1, naive photon, n=6 (120 nodes/half-axis): dm/e^2 = +0.374347473 (R19-31 +0.374347473)  d/dh +1.4e-15  d2/dh2 = -6.21578e-02 (d=0.02) -6.20847e-02 (2d) Richardson -6.21822e-02 (R19-31 -6.21578e-02 / -6.20847e-02)
+naive Wilson r=1, naive photon, n=8 (160 nodes/half-axis): dm/e^2 = +0.374347473 (R19-31 +0.374347473)  d/dh +4.2e-15  d2/dh2 = -6.21578e-02 (d=0.02) -6.20847e-02 (2d) Richardson -6.21822e-02 (R19-31 -6.21578e-02 / -6.20847e-02)
+r = 0 control: dm = +0.00e+00
+time 0 s

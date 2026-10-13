@@ -6895,3 +6895,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **SCREENED:** ξ finite at every finite βU tested. Checked.
   - **OPEN:** otherwise, including non-ergodic moves.
 - **Expectation.** PINCH-PRESENT. Dipole conservation makes the charges hyperuniform (S_γ ∝ k²) at any fugacity. It costs a new conservation law, and the result is a static window only.
+- **R18-7 (set A completion N): worker reading CONSTRUCTED** in a stated scope: static and quasi-static, O(G²), harmonic gauge.
+  - **The law E1 + N_c:**
+    - The record is unchanged.
+    - The source is (−g)J + Λ[h], where Λ is the LL pseudotensor plus the harmonic-gauge term.
+    - A causal conserving projection Π is added.
+    - The readout is □h = −16πG τ_rec.
+  - **What it gives:**
+    - G = 8πG T_eff exactly.
+    - The readout is well-posed: each order is a flat retarded wave equation.
+    - CP holds: the instrument is R13-6's plus record-controlled classical feedback.
+    - β = γ = 1 (point mass: g₀₀ = −1 + 2M/r − 2M²/r²).
+  - **Corrections to R16-14:**
+    - N as written does not close at O(G²): the gain does not commute with the gravitational force, so Π is required.
+    - N̄ (mean-metric feedback) is not CP, which drops it from owner Q2.
+  - **Premise (iii):** the static active density is (2a − 8)|u₁|, which vanishes only at insertion weight a = 4.
+  - **Caveat:** harmonic gauge conflicts with P-r15b. The pure-gauge S/V noise grows secularly, so the time-dependent noise terms are not gauge-invariant yet.
+  - **Prices:** P-r18-7a (Π), P-r18-7b (readout gauge), P-r18-7c (weight a); P88 extended.
+
+  Referee running.

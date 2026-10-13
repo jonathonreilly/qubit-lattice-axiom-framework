@@ -1,0 +1,66 @@
+[3] static point mass M = 1 smeared by F = exp(-k^2 l^2/2), l = 1; O(M^2) g00 outside
+    subtraction: the GR exterior -2M^2/r^2 and the fitted O(M^2) mass renormalisation 2 dM/r
+    r =     20 l: (F-1)Lambda00 = -2.661270e-08 ; local (l^2/2)lap Lambda00 = -2.611136e-08
+    r =    100 l: (F-1)Lambda00 = -1.672881e-12 ; local (l^2/2)lap Lambda00 = -1.671127e-12
+    r =   1000 l: (F-1)Lambda00 = -1.671327e-18 ; local (l^2/2)lap Lambda00 = -1.671127e-18
+    numerical monopole leak subtracted as mass renormalisation: 16pi Q00 = 2.54e-06, 16pi Qkk = -2.79e-07 (analytic: 0)
+    integral of (F-1)Lambda00 over space (F preserves integrals -> 0): 6.346e-07 (vs int Lambda00 = -1.9747)
+    r =    10 l: N_F - N_1: dh00 r^4/l^2 =   7.2135 (pred 7), dhkk r^4/l^2 =  1.0311 (pred 1), dg00 r^4/l^2 =  4.1223 (pred 4) -> beta_eff - 1 = -dg00 r^2/2 = -2.061e-02
+    r =    30 l: N_F - N_1: dh00 r^4/l^2 =   6.8212 (pred 7), dhkk r^4/l^2 =  0.9918 (pred 1), dg00 r^4/l^2 =  3.9065 (pred 4) -> beta_eff - 1 = -dg00 r^2/2 = -2.170e-03
+    r =   100 l: N_F - N_1: dh00 r^4/l^2 =   4.8632 (pred 7), dhkk r^4/l^2 =  1.3359 (pred 1), dg00 r^4/l^2 =  3.0996 (pred 4) -> beta_eff - 1 = -dg00 r^2/2 = -1.550e-04
+    r =   300 l: N_F - N_1: dh00 r^4/l^2 = 131.9830 (pred 7), dhkk r^4/l^2 = 36.1674 (pred 1), dg00 r^4/l^2 = 84.0752 (pred 4) -> beta_eff - 1 = -dg00 r^2/2 = -4.671e-04
+    N_1 exterior check r =    5 l: |Lambda00(smeared U)/Lambda00(M/r) - 1| = 3.09e-05
+    N_1 exterior check r =    8 l: |Lambda00(smeared U)/Lambda00(M/r) - 1| = 1.64e-13
+    N_1 exterior check r =   10 l: |Lambda00(smeared U)/Lambda00(M/r) - 1| = 0.00e+00
+    => N_1: beta = 1 up to exp(-r^2/2l^2); N_F: beta = 1 in PPN form plus a non-PPN 4 l^2 M^2/r^4 term in g00
+
+[4] defect D = (F rho) grad U_F - F[rho grad U_F] (matter in hydrostatic equilibrium in the record metric U_F)
+    subtraction: none (D measured against zero; ratio to |rho grad U_F|)
+    l/R = 0.30: ||D|| / ||rho grad U|| = 1.0102e-01 ; /(l/R)^2 = 1.1225
+    l/R = 0.10: ||D|| / ||rho grad U|| = 1.3724e-02 ; /(l/R)^2 = 1.3724
+    l/R = 0.03: ||D|| / ||rho grad U|| = 1.2766e-03 ; /(l/R)^2 = 1.4184
+    => D != 0 at O(G): R16-14's 'Bianchi holds at O(G^2) because F commutes with d' needs a conserved total source, which literal N lacks
+
+[5] homogeneous static Gaussian noise potential U_n on a periodic box; rho_n = -lap U_n/(4 pi); u1 = <|grad U|^2>/(8 pi)
+    subtraction: none (means of positive/indefinite quadratic forms; <rho_n> = 0 exactly)
+    <U rho>/u1 over 4 realisations: [2. 2. 2. 2.] (identity: 2)
+    insertion (1 + 0.00 U) rho_n: <tau00>/u1 = -7.00, <tau00 + tau_kk>/u1 = -8.00
+    insertion (1 + 3.50 U) rho_n: <tau00>/u1 = +0.00, <tau00 + tau_kk>/u1 = -1.00
+    insertion (1 + 3.75 U) rho_n: <tau00>/u1 = +0.50, <tau00 + tau_kk>/u1 = -0.50
+    insertion (1 + 4.00 U) rho_n: <tau00>/u1 = +1.00, <tau00 + tau_kk>/u1 = +0.00
+    insertion (1 + 6.00 U) rho_n: <tau00>/u1 = +5.00, <tau00 + tau_kk>/u1 = +4.00
+    (a = 0: meter measures (-g)T, noise added after; a = 4: record multiplied by (-g) classically; a = 6: noise as static dust (-g)u0u0)
+    min over a of max(|2a-7|, |2a-8|) = 0.5 at a = 3.75: no one-parameter insertion removes both the energy and the active density
+    lapse equation (spatial-gauge invariant): a = 0 (a' = -6): <rho_act> = <lap N2>/(4 pi) = -8.0000 u1 ; harmonic-LL value 2a-8 = -8
+    lapse equation (spatial-gauge invariant): a = 4 (a' = -2): <rho_act> = <lap N2>/(4 pi) = -0.0000 u1 ; harmonic-LL value 2a-8 = +0
+    lapse equation (spatial-gauge invariant): a = 6 (a' = +0): <rho_act> = <lap N2>/(4 pi) = +4.0000 u1 ; harmonic-LL value 2a-8 = +4
+    => the static active density (2a-8)u1 is not a harmonic-gauge artefact; a = 4 (unchanged meter; tau = (-g)(J + t_LL) + t_H formed classically) gives 0
+
+[6] per frame mode: harmonic-gauge h00 is a resonant oscillator driven by the S noise; Poisson-gauge Phi is instantaneous
+    subtraction: none.  R(k) = secular harmonic 'energy' / stationary Poisson analogue = (1/2) W^2 |F_t(W)|^2 T tau / I, I = tau int |F_t|^2 dw/2pi
+    I = tau int |F_t|^2 dw/(2 pi) = 0.65625 (repaired gain)
+    T =   200: E(T) numeric = 106.2031 ; (1/2)|F_t(W)|^2 T = 106.2500
+    T =   800: E(T) numeric = 424.9531 ; (1/2)|F_t(W)|^2 T = 425.0000
+    strict tau=l/c, l=5e-6    : max_k R(k) at t_H = 2.22e+31 (at k = 1.93e+05 /m)
+    strict, l=4e-10           : max_k R(k) at t_H = 2.77e+35 (at k = 2.41e+09 /m)
+    tau_c ceiling, l=5e-6     : max_k R(k) at t_H = 7.44e+28 (at k = 6.57e+02 /m)
+    => in harmonic gauge the realised S/V record noise carries secular pure-gauge parts ~1e29 x the Poisson-gauge field;
+       the LL pseudotensor of the realised field is gauge-dependent, so N must be posed in the frame's Poisson gauge (P-r15b)
+
+[7] qubit toy, 6 steps: weak sigma_z measurement with record-dependent strength eps(q), feedback exp(-i th(q) sigma_x),
+    q updated NONLINEARLY from records (q <- q + r + 0.7 r q^2).  Averaged map's Choi matrix; mean-field variant uses <sigma_z>_rho
+    record-controlled map: Choi eigenvalues [0.1647 0.1906 0.7574 0.8873] (all >= 0 -> CP) ; trace-preservation err 2.2e-16
+    meanfield=False: linearity defect |Phi(mix) - mix(Phi)| = 1.110e-16
+    meanfield=True: linearity defect |Phi(mix) - mix(Phi)| = 1.617e-02
+    => record-controlled nonlinear feedback is a CP instrument (linear in rho); mean-metric (N-bar-type) feedback is not linear in rho
+
+[8] |u1| = hbar I_F/(32 pi^1.5 l^3 tau), I_F = 21/32 (R15-2, vR15-2:17); Mercury bound |rho_act| < 9.29e-15 kg/m^3 (R16-14, vR16-14:11)
+    subtraction: none
+    strict           l = 4e-10 m: |u1|/rho_L = 8.52e+18 ; a=0 active 8|u1| / Mercury bound = 4.36e+07 ; a=3.75 (max 0.5|u1|) / rho_L = 4.26e+18
+    strict           l = 3e-08 m: |u1|/rho_L = 2.69e+11 ; a=0 active 8|u1| / Mercury bound = 1.38e+00 ; a=3.75 (max 0.5|u1|) / rho_L = 1.35e+11
+    strict           l = 1e-06 m: |u1|/rho_L = 2.18e+05 ; a=0 active 8|u1| / Mercury bound = 1.12e-06 ; a=3.75 (max 0.5|u1|) / rho_L = 1.09e+05
+    strict           l = 5e-06 m: |u1|/rho_L = 3.49e+02 ; a=0 active 8|u1| / Mercury bound = 1.79e-09 ; a=3.75 (max 0.5|u1|) / rho_L = 1.74e+02
+    tau_c=1.49e-3/c  l = 4e-10 m: |u1|/rho_L = 2.29e+12 ; a=0 active 8|u1| / Mercury bound = 1.17e+01 ; a=3.75 (max 0.5|u1|) / rho_L = 1.14e+12
+    tau_c=1.49e-3/c  l = 3e-08 m: |u1|/rho_L = 5.42e+06 ; a=0 active 8|u1| / Mercury bound = 2.77e-05 ; a=3.75 (max 0.5|u1|) / rho_L = 2.71e+06
+    tau_c=1.49e-3/c  l = 1e-06 m: |u1|/rho_L = 1.46e+02 ; a=0 active 8|u1| / Mercury bound = 7.49e-10 ; a=3.75 (max 0.5|u1|) / rho_L = 7.32e+01
+    tau_c=1.49e-3/c  l = 5e-06 m: |u1|/rho_L = 1.17e+00 ; a=0 active 8|u1| / Mercury bound = 5.99e-12 ; a=3.75 (max 0.5|u1|) / rho_L = 5.85e-01

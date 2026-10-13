@@ -8269,3 +8269,40 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Registration collision:** ONE-CLAUSE and IRREDUCIBLE are not mutually exclusive. IRREDUCIBLE is reported under the literal-first rule.
 
   Referee running.
+
+### C5 Round 19, item 24 (pre-registered 06:32Z, before launch)
+
+**R19-24. Can the charge block be paid the same way? Is there a number-free clause for the matter and photon light cones, or must they stay counterterms?**
+- **Plain question.**
+  - R19-20 (worker; referee running) reads the gravity sector as GR by stipulation via (Σ). (Σ) is a source clause: it changes what gravitates, not how matter moves.
+  - The charge block (4 per class, 10 per species; R19-12 refereed) consists of matter and photon propagation speeds, which are dynamics. A source clause cannot touch them.
+  - Is there a number-free dynamical clause, for example "the law's quadratic effective action for every species is Lorentz-invariant through two derivatives at one loop", that zeroes the charge rows?
+    - (i) Is such a clause a law-level statement, or does it require counterterms, i.e. numbers, in the law?
+    - (ii) Is it consistent with gauge invariance (Peierls coupling, the Ward identity) and locality?
+    - (iii) Is it radiatively stable?
+    - (iv) If it requires numbers, how many, and how precisely tuned? This is P73, restated.
+  - Contrast with (Σ): why can a source clause be number-free while a dynamics clause cannot? Or can it?
+- **Setting.**
+  - One-loop QED on the SM root's edges (R19-12).
+  - The counterterm basis (rule `TESTS:5700`).
+  - Candidate clauses:
+    - (D1) "the law includes whatever local quadratic terms make each species' one-loop dispersion Lorentz-invariant to O(q²)", i.e. the law depends on its own loop corrections;
+    - (D2) a symmetry that forces it;
+    - (D3) RG fixed-point arguments (RECALLED: Collins et al. on Lorentz violation in loops).
+- **Prior art (count once):**
+  - R16-1, R16-2, R16-10 and R19-12, with their verdicts;
+  - R13-7 (no structural zero);
+  - R10-1 and R11-1 (pairing is necessary for an untuned cancellation);
+  - R19-15, R19-19 and R19-20 (the source clauses);
+  - Collins–Perez–Sudarsky–Urrutia–Vucetich (RECALLED).
+- **Removed hypothesis:** counterterms as the only route.
+- **Probes.**
+  - (a) Classify D1–D3.
+  - (b) For D1: is "a law that contains its own one-loop counterterm" self-consistent, and is it number-free? What happens at two loops?
+  - (c) The source-versus-dynamics asymmetry.
+  - (d) Prices.
+- **FIXED readings.**
+  - **DYNAMIC-CLAUSE:** a stated number-free, local, gauge-invariant clause that zeroes the charge rows at one loop and stays zero at two loops. Checked.
+  - **COUNTERTERMS-NEEDED:** a refereed demonstration that every clause in a stated class amounts to tuned counterterms (numbers) that must be re-set at each loop order.
+  - **OPEN:** otherwise.
+- **Expectation.** COUNTERTERMS-NEEDED. A dynamics clause that refers to its own loop corrections is a renormalization condition whose coefficients are numbers fixed order by order, which is P73. The asymmetry with (Σ) is that (Σ) subtracts the result after the fact, from the source, and never feeds back into propagation.

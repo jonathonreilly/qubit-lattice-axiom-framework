@@ -6333,3 +6333,51 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r1711a, b and c.
 
   Referee running.
+
+### C5 Round 17, items 12–13 (pre-registered 01:39Z, before launch)
+
+**R17-12. Which vector-vertex placement does consistency force: VU (R9-9's placement) or VM?**
+- **Plain question.** R17-9 (worker; referee running) finds that the choice decides everything. Under VU, the Maxwell stress at R9-9's 09-14 placement, no SM-count zero exists. Under VM, where the magnetic product is moved to z + ½, there is an explicit SM-count zero with 3 tunings. Is the placement free, or is it fixed by something we already require?
+  - (i) The vector W1 Ward identity, i.e. a conserved lattice stress for the photon coupled to the stated graviton.
+  - (ii) Gauge invariance of the pair vertex.
+  - (iii) R9-9's own graviton placement and its Killing identities.
+  - (iv) Locality (Lemma M-type covariance).
+- **Setting.**
+  - The R14-1 subluminal photon edge, compact or non-compact U(1).
+  - R9-9's graviton and placement.
+  - The Maxwell stress family, with E and B products placed at any half-integer offsets.
+  - One loop, axial q.
+  - Excluded: superluminal photons, pairing.
+- **Prior art (count once):** R17-9, R9-9 (placement at `C5_R9-9_report.md:100`), R13-5 (W1, B2), R17-4 (Lemma M, P-TTV₂), R16-13 (V0 stipulation, `vR16-13:5`), R8-5, and the lattice Maxwell stress tensor literature (RECALLED).
+- **Removed hypothesis:** the vertex as a free datum.
+- **Probes.**
+  - (a) Write the vector W1 identity on the lattice for each placement. Which placements satisfy it, exactly or to O(q)?
+  - (b) Gauge invariance and C₂ covariance of each placement (Lemma M test).
+  - (c) If several placements survive, state the residual freedom as a law datum. If exactly one survives, recompute R17-9's sign for it.
+  - (d) Prices.
+- **FIXED readings.**
+  - **FORCED-VU:** a refereed proof that consistency selects VU, or excludes VM, in the stated class.
+  - **FORCED-VM:** the same for VM.
+  - **FREE:** both satisfy every stated requirement (checked). The placement is then a law datum.
+  - **OPEN:** otherwise.
+- **Expectation.** FREE at O(q). W1 constrains only the divergence, and the placement is an O(q²) datum.
+
+**R17-13. The Wilson-Dirac T₂g shear row μ_T2: can it be zeroed with SM content, and at what cost?**
+- **Plain question.** R16-13 (refereed) found a nonzero Wilson-Dirac T₂g shear mass. R17-9's VM root leaves μ_T2 = +0.106, all from 22.5 Wilson-Dirac fields, and a 4-row solve stalled at the parameter bounds. Is μ_T2 = 0 reachable by edge shape on subluminal Dirac edges? Or is it sign-definite on D1-type Wilson edges, making it a separate non-shape knob?
+- **Setting.**
+  - The Dirac edges: D1(b, r) and Wilson families with r ≤ 1/√3 or s′² + 3W′² ≤ 1 (Lemma V1).
+  - The SF strain flow, as R16-13 stipulated.
+  - One loop, m ∈ [0.001, 0.01].
+  - Excluded: superluminal edges, pairing.
+- **Prior art (count once):** R16-13 (mechanism) and its verdict, R17-9, R16-1 (Theorem W/K: convexity sign arguments), R14-3 (μ_E Theorem B), R17-4.
+- **Removed hypothesis:** μ_T2 = 0 at one loop (R16-9).
+- **Probes.**
+  - (a) A closed form or IBP identity for μ_T2^F.
+  - (b) A sign theorem on the subluminal Wilson class (convexity as in R16-1/K), or a zero.
+  - (c) If a zero exists, add it to R17-9's VM root (4 rows, 4 knobs).
+  - (d) Prices and the bill.
+- **FIXED readings.**
+  - **SIGN-DEFINITE:** a refereed proof that μ_T2^F has a fixed sign in a stated subluminal Wilson class.
+  - **ZEROED:** an explicit subluminal law with μ_T2 = 0, checked. If (c) succeeds, also report the full 4-row root.
+  - **OPEN:** otherwise.
+- **Expectation.** SIGN-DEFINITE on D1 (positive), via the Wilson mass coupling directions, which would make μ_T2 a separate knob.

@@ -1,0 +1,8 @@
+grid n=6 hmax=0.25 mph=6 (156 nodes), d=0.0030
+B3 single order xyz (non-hermitian)   : dm +0.041858391  Hess_t +2.4242269e-02  grad -1.03e-11
+B3 single order yxz (non-hermitian)   : dm +0.041858391  Hess_t +2.4242269e-02  grad +1.03e-11
+B3 single order xzy (non-hermitian)   : dm +0.041858391  Hess_t +2.4235884e-02  grad +0.00e+00
+B3 single order zxy (non-hermitian)   : dm +0.041858391  Hess_t +2.4242269e-02  grad +1.03e-11
+B3 single order yzx (non-hermitian)   : dm +0.041858391  Hess_t +2.4235884e-02  grad +0.00e+00
+B3 single order zyx (non-hermitian)   : dm +0.041858391  Hess_t +2.4242269e-02  grad -1.03e-11
+time 95 s

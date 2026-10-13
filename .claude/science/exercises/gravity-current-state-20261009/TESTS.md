@@ -9216,3 +9216,24 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - massive: no observational bound, so "|m_g| < H" is a theory line there.
   - **Static potentials:** bounded only with trace content.
   - **The R19-34 H-cov placeholder (1.0e-21)** fails the Earth rows by 6.7e7 and the hot era (tachyonic) by ~1e15 in |A|. It passes Galaxy/IGM.
+
+- **F1 (the root's SF strain law on hot matter): worker reading SF-HAZARD on the registered law; SF-COVERED with P-R19-34a** (unrefereed; referee running).
+  - **The law built:**
+    - Dirac D_t(k) = D(Φ_t(k)), with UD as its generator;
+    - photon with flowed symbols;
+    - Psym path-averaged links, which is the only cubic and hermitian choice in the axis-ordered family.
+    - Checks: Ward identity to 4e-16, gauge-parameter independence, smooth; it reproduces R19-34 at h = 0 and the archived free shear rows.
+  - **The Hessian:** +2.42401e-2 e² in SF units (+0.097 in H-cov units, the opposite sign to R19-34). Converged to 1.6e-7; the branches agree (0⁺ root: +2.4535e-2). There is no κ-type knob under SF.
+  - **The mechanism:**
+    - a common separable flow is an exact relabelling except for a lattice Jacobian, because no volume-preserving separable E_g flow exists on the torus (proved);
+    - the photon/Dirac flow mismatch dominates.
+  - **Sizes (canonical mapping, conditional):**
+    - massive sign;
+    - m_g²/H² from +4.9e13 at 150 GeV to +1.2e16 at 1 GeV;
+    - Earth |m_g| ≈ 3.6e-9 eV, μ_ρ = 2.4e-21, which exceeds F2's Earth-crossing bound by 1.6e8.
+    - The hot era (massive sign) has no observational bound per F2. The conflict rests on today's matter rows.
+  - **Subtractions:**
+    - P-R19-34a covers the channel exactly, and nothing observed is removed;
+    - P-R19-31b covers the source side only;
+    - (S_loc) as registered and the vacuum clauses do not cover it.
+  - **Not computed:** an O(t²) unitary dressing; non-axis-ordered paths.

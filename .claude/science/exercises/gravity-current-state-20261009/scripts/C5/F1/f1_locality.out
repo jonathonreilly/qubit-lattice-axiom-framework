@@ -1,0 +1,9 @@
+t = 0.0   D_t mass part M_t: tail max|hop| for |x|>=R, R = 1,3,5,9,13,17,25,31: 1.1e-01 3.0e-02 1.2e-02 5.4e-04 4.6e-04 8.6e-05 2.3e-05 7.7e-06
+          D_t gamma_x part : tail max|hop| for |x|>=R, R = 1,3,5,9,13,17,25,31: 6.2e-01 5.7e-02 1.3e-02 4.3e-04 3.3e-04 3.7e-05 5.6e-06 1.5e-06
+          photon d_t^2 (axis sgn +1): tail max|hop| R = 1,3,5,9,17,25,31: 2.0e+00 2.1e-01 7.0e-02 1.5e-02 1.8e-03 1.7e-03 1.2e-03
+          photon d_t^2 (axis sgn -1): tail max|hop| R = 1,3,5,9,17,25,31: 2.0e+00 2.1e-01 7.0e-02 1.5e-02 1.8e-03 1.7e-03 1.2e-03
+   root photon ODD symbol d (gauge-transformation kernel), t = 0: |hop| at R = 1,2,4,8,16,31: 1.0e+00 5.0e-01 2.5e-01 1.3e-01 6.4e-02 3.7e-02  (face jump d(pi) = 3.0425: power-law tail, pre-existing)
+t = 0.2   D_t mass part M_t: tail max|hop| for |x|>=R, R = 1,3,5,9,13,17,25,31: 1.1e-01 3.4e-02 1.6e-02 4.0e-03 4.6e-04 1.5e-04 3.8e-05 1.5e-05
+          D_t gamma_x part : tail max|hop| for |x|>=R, R = 1,3,5,9,13,17,25,31: 6.6e-01 4.1e-02 4.8e-03 2.6e-03 5.6e-04 1.1e-04 3.2e-05 9.0e-06
+          photon d_t^2 (axis sgn +1): tail max|hop| R = 1,3,5,9,17,25,31: 2.3e+00 1.2e-01 3.7e-02 2.3e-02 5.2e-03 1.8e-03 1.2e-03
+          photon d_t^2 (axis sgn -1): tail max|hop| R = 1,3,5,9,17,25,31: 1.7e+00 2.1e-01 8.9e-02 4.2e-02 2.3e-02 1.5e-02 9.8e-03

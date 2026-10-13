@@ -12,7 +12,7 @@
   "checkpoint_minutes": 30,
   "deep_block_minutes": 90,
   "cycles_completed": 0,
-  "active_route": "Continuous historyv3 collection11of15casescompleted,1992pass8failed completion/census; eight original histories reused by hash. Independent original64327pass4coarse-energyfail and6512selected-path/refinementpass; four weak independent timeouts preserved. Exact neutrino trace mutant detected159additional failures, baseline9conditioning failures retained. Full u force34digit evaluation matches independent80digit108states, local1190/0, but refinedv5history stilltimedout300s. Exposed fixed-history SN comparison219/0,405cal953transfer, onlyinterceptfit; independent check active.",
+  "active_route": "Supernova v2 4567/0, independent original6067/0 and affected4416/0; wrong-clock mutant detected1055. Actual-background PPN167/0, independent370/0; exact weak-boundary and tiny-drift precision qualifications retained. Weak-limit317/0, independent5279/0 plus27 full-force controls; physical rescaling482/0 and affected2552/0. BAO v2 1863/0, original independent1785/0 and affected3896/0; exact Lyalpha-order survivor now fails2 semantic controls. All scientific outputs preserved. No repaired finite-k trajectory or empirical acceptance.",
   "actual_current_surface_status": "conditional-support",
   "target_claim_type": "bounded_theorem",
   "trace_class": "frontier_discovery",
@@ -23,15 +23,15 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Personally map actual late scalar backgrounds into the previously exposed weak-field observations; finish independent distance check and retain unresolved stiff-history limits. No new discovery after16:38Z; final deadline16:53Z.",
+  "next_exact_action": "Personally finish first-order physical expansion theorem and canonical weak-limit milestone review, preflight, execution and gates. Integrate observation limits and prepare final synthesis. Discovery stops16:38Z; deadline16:53Z.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-13T14:29:09.975282+00:00",
-  "current_block": "cross-domain-completed-history-comparison",
+  "last_checkpoint_at": "2026-10-13T15:18:14.009754+00:00",
+  "current_block": "weak-limit-canonical-and-observation-integration",
   "current_main": "583c699e859b64ff01c8bc92d1c04bdfe9994509",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
-    "Completed-history distance comparison",
+    "Canonical weak-limit source and gates",
     "Older cosmology N1-N8 publication unit"
   ],
   "delegated_routes": [
@@ -47,7 +47,7 @@
     "Quantum composition and causal physical realization of alternative boundary law",
     "Matter/gauge/cosmological architecture"
   ],
-  "last_pushed_commit": "57e279c31fe9494809e27a516bb688264f7aa928",
+  "last_pushed_commit": "d63e9c6599b0d863cdb61cce5aa008ff52f81992",
   "blocks_completed": [
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
@@ -180,8 +180,8 @@
   "current_target_ref": "origin/main",
   "current_target_head": "583c699e859b64ff01c8bc92d1c04bdfe9994509",
   "cosmology_milestone_worktree": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go",
-  "checked_at": "2026-10-13T14:29:09.975282+00:00",
-  "last_progress": "Continuous historyv3 collection11of15casescompleted,1992pass8failed completion/census; eight original histories reused by hash. Independent original64327pass4coarse-energyfail and6512selected-path/refinementpass; four weak independent timeouts preserved. Exact neutrino trace mutant detected159additional failures, baseline9conditioning failures retained. Full u force34digit evaluation matches independent80digit108states, local1190/0, but refinedv5history stilltimedout300s. Exposed fixed-history SN comparison219/0,405cal953transfer, onlyinterceptfit; independent check active.",
+  "checked_at": "2026-10-13T15:18:14.009754+00:00",
+  "last_progress": "Supernova v2 4567/0, independent original6067/0 and affected4416/0; wrong-clock mutant detected1055. Actual-background PPN167/0, independent370/0; exact weak-boundary and tiny-drift precision qualifications retained. Weak-limit317/0, independent5279/0 plus27 full-force controls; physical rescaling482/0 and affected2552/0. BAO v2 1863/0, original independent1785/0 and affected3896/0; exact Lyalpha-order survivor now fails2 semantic controls. All scientific outputs preserved. No repaired finite-k trajectory or empirical acceptance.",
   "curvature_fluid_independent_check": "Complete:29 math,198 original numeric,321 affected parent-verified paths, full reports read.",
   "thermal_independent_check": "Complete full original and affected reports read,215 original and128affected identities; physical-readout mutation detected.",
   "curvature_milestone_worktree": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go",

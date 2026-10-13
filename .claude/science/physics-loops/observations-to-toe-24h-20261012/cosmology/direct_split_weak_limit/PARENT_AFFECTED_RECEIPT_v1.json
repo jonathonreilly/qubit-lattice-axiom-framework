@@ -1,0 +1,136 @@
+{
+  "at": "2026-10-13T15:16:58.499338+00:00",
+  "full_report_and_derivation_read": true,
+  "scope": "Read-only source/evidence identity closure; independent calculations remain attributed to their reviewer.",
+  "receipt": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/FINAL_RECEIPT_v1.json",
+  "verified_paths": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/DERIVATION_v1.md",
+      "sha256": "312acb9850e8cd17c048a4f5c7f87869b39b44292fad133a2c112832e3f4a7a6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/DERIVATION_v2.md",
+      "sha256": "bf60ee237d796036aef551257fbb97d35448da3eb2fe4f5b0cdf75bc6e0879c5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/check_physical_comparison_v2.py",
+      "sha256": "642b32d6f154b752dbc3cff03e160ca6c3f73302bdeecf1890dc1c7488ea53d6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/evidence_v1/RESULTS.json",
+      "sha256": "b1a126405f8fd1d3424ced72b9d86768e5b16a1dd0d79240d4b33b402ee27dbe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/FINAL_RECEIPT_v1.json",
+      "sha256": "a7c971a3d7a9052b7d4410bdb8b68ac80d45e9b5f5e830f0688eb616b880f0cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/PHYSICAL_SCALING_CHECK_v1.json",
+      "sha256": "5bc7aa69cfdcd0bb5565dddfd2ffd9b04d65eb421061fe2b21d4e0801bf148ed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/SPLIT_WEAK_LIMIT_REVIEW_v1.md",
+      "sha256": "a8e8841d0fc5bbf0893ced1d22f36418ded73473be82f8cdd4637d3978600c3d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/AFFECTED_V2_REVIEW.md",
+      "sha256": "2d72d050021c3301064bdcad7aa7d1a45065d9343cd803f90e5a293b6f7d347c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/EXECUTION_RECORD_v1.json",
+      "sha256": "6f3d86d877e6caa466929a8de19adc743bc36f9c5d34862ef359bfcdae090ab6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/FINAL_RECEIPT_v1.json",
+      "sha256": "e50380e15f2b39da82d40bce23c22d656cebb3c9ed5f889dd1b4f1d72e91eb94"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/FREEZE_SCHEMA_FAILURE_v1.json",
+      "sha256": "df5951d85baf03112cb4d61333fb31bcda05fc120f1f09fbd599748ecde585cc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/INDEPENDENT_COMPARISON_v1.json",
+      "sha256": "f8984d44844544e98fe18d22e99ed317db8ddb399cb086f67c75d6623536567d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/INPUT_FREEZE_v1.json",
+      "sha256": "2076e44bc2804595cb6b7dd35d06727c90f4892a64310a828f3dd1f5fdc55ab3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/ORIGINAL_SOURCE_IDENTITY_v1.json",
+      "sha256": "345358b2638df8381cd195f27a699d4d5c62f3b66be5c75179e562e24c8b58e4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/REVIEWED_NOTE_v1_to_v2.diff",
+      "sha256": "a095c55a2946eb657ba2985bbccbe2ef8cfb2f9d8cf184323f81d365a51601f5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/SOURCE_DISPOSITION_v1.json",
+      "sha256": "9f9fef6594b49b01e6d7d089dae4b1d64bd30fc70f7ca2ba0dee0c91f2670cb9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/check_affected_v2.py",
+      "sha256": "59871aa950cd8df14ae6097a1075ec3029201294f37b56f276a135bb7b95492b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/DERIVATION_v1.md",
+      "sha256": "312acb9850e8cd17c048a4f5c7f87869b39b44292fad133a2c112832e3f4a7a6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/DERIVATION_v2.md",
+      "sha256": "bf60ee237d796036aef551257fbb97d35448da3eb2fe4f5b0cdf75bc6e0879c5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/check_physical_comparison_v2.py",
+      "sha256": "642b32d6f154b752dbc3cff03e160ca6c3f73302bdeecf1890dc1c7488ea53d6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/evidence_v1/RESULTS.json",
+      "sha256": "b1a126405f8fd1d3424ced72b9d86768e5b16a1dd0d79240d4b33b402ee27dbe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/external/histories/RESULTS.json",
+      "sha256": "719d51344ec3b1d29131bacfef477aaf90387775cdff336406c18de68eaac8a0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/independent_review/FINAL_RECEIPT_v1.json",
+      "sha256": "a7c971a3d7a9052b7d4410bdb8b68ac80d45e9b5f5e830f0688eb616b880f0cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/independent_review/PHYSICAL_SCALING_CHECK_v1.json",
+      "sha256": "5bc7aa69cfdcd0bb5565dddfd2ffd9b04d65eb421061fe2b21d4e0801bf148ed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/independent_review/SPLIT_WEAK_LIMIT_REVIEW_v1.md",
+      "sha256": "a8e8841d0fc5bbf0893ced1d22f36418ded73473be82f8cdd4637d3978600c3d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/physical_comparison_v2/FREEZE.json",
+      "sha256": "2668e53ab653e8c9771e9cf0923593d274822a80171ec87696921f70525b24e0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/source_snapshot/physical_comparison_v2/RESULTS.json",
+      "sha256": "536ee1e14d2aa5b1124f7f9809263fc40a6b773d81d33760bab325b921b3a0f0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/affected_v2/stdout_v1.txt",
+      "sha256": "b2108aa088a2c38693e46952c934634cc0fa72ad74fe0ec73c97488f0c02299d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/physical_comparison_v2/FREEZE.json",
+      "sha256": "2668e53ab653e8c9771e9cf0923593d274822a80171ec87696921f70525b24e0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/physical_comparison_v2/RESULTS.json",
+      "sha256": "536ee1e14d2aa5b1124f7f9809263fc40a6b773d81d33760bab325b921b3a0f0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v3/histories/RESULTS.json",
+      "sha256": "719d51344ec3b1d29131bacfef477aaf90387775cdff336406c18de68eaac8a0"
+    }
+  ]
+}

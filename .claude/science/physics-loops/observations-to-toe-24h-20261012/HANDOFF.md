@@ -173,3 +173,11 @@ Continuous historyv3 collection11of15casescompleted,1992pass8failed completion/c
 Personally map actual late scalar backgrounds into the previously exposed weak-field observations; finish independent distance check and retain unresolved stiff-history limits. No new discovery after16:38Z; final deadline16:53Z.
 
 Canonical curvaturePR9519openandattached; allthreegates+finalcommittedUNITcachepassed. Full finaldelivery archive in57e279c31. Parent owns research; retired/cancelled authors remain stopped. Original deadline and no-restart instructions unchanged.
+
+## Direct-author continuation 2026-10-13T15:18:14.009754+00:00
+
+Supernova v2 4567/0, independent original6067/0 and affected4416/0; wrong-clock mutant detected1055. Actual-background PPN167/0, independent370/0; exact weak-boundary and tiny-drift precision qualifications retained. Weak-limit317/0, independent5279/0 plus27 full-force controls; physical rescaling482/0 and affected2552/0. BAO v2 1863/0, original independent1785/0 and affected3896/0; exact Lyalpha-order survivor now fails2 semantic controls. All scientific outputs preserved. No repaired finite-k trajectory or empirical acceptance.
+
+Personally finish first-order physical expansion theorem and canonical weak-limit milestone review, preflight, execution and gates. Integrate observation limits and prepare final synthesis. Discovery stops16:38Z; deadline16:53Z.
+
+Canonical curvaturePR9519openandattached; allthreegates+finalcommittedUNITcachepassed. Full finaldelivery archive in57e279c31. Parent owns research; retired/cancelled authors remain stopped. Original deadline and no-restart instructions unchanged.

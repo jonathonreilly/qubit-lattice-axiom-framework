@@ -1,0 +1,4 @@
+m->0+ root, a = -0.1761772299: per scalar face1 -4.646720e-04 face2 -6.368017e-04 | per Dirac (m=0) face1 +1.190214e-03 face2 +2.195877e-03 | per vector face1 +2.18189882e-01 face2 +1.09244139e-01
+totals at (w_d, w_o) = (0, 0): face1 +2.643200e+00 face2 +1.357790e+00
+Jacobian (12 vectors) [[1.6764481068364345, 3.4713565103865296], [0.0, 6.942857048202919]] det +1.16393e+01 -> (w_d, w_o) = (-1.17171474, -0.19556642)   [R18-13 at m = 0.01, N = 224: (-1.17155412, -0.19541845)]
+linear-model totals after solve: +0.00e+00 -2.22e-16 (Lemma O: exactly linear in (w_d, w_o) up to the grid artefact)

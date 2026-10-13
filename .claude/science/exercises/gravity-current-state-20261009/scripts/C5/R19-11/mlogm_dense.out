@@ -1,0 +1,17 @@
+== mscan_d_root0_dense_GL4_10.out, 14 points m in [0, 0.0025]
+  T2g       no-log: c1 -1.445950e-03 res 3.8e-16 | with m ln m: e -7.110e-13 c1 -1.445950e-03 res 3.8e-16
+  Eg        no-log: c1 -1.670371e-04 res 5.0e-17 | with m ln m: e -3.033e-13 c1 -1.670371e-04 res 3.7e-17
+  muE       no-log: c1 +1.069319e-02 res 4.5e-15 | with m ln m: e +1.200e-11 c1 +1.069319e-02 res 5.0e-15
+  muT2      no-log: c1 +2.739286e-03 res 6.1e-17 | with m ln m: e -5.349e-13 c1 +2.739286e-03 res 3.1e-17
+  off_face1 no-log: c1 -1.691435e-03 res 1.1e-11 | with m ln m: e +1.537e-07 c1 -1.690192e-03 res 3.4e-12
+  off_face2 no-log: c1 -2.144719e-03 res 2.4e-11 | with m ln m: e -2.938e-07 c1 -2.147095e-03 res 1.4e-11
+  off_d1    no-log: c1 -1.204499e-03 res 2.2e-11 | with m ln m: e +3.012e-07 c1 -1.202062e-03 res 6.9e-12
+  off_d2    no-log: c1 -6.989996e-04 res 3.9e-11 | with m ln m: e -2.931e-07 c1 -7.013702e-04 res 4.4e-11
+== mscan_s_root0.out, 9 points m in [1e-05, 0.02]
+  T2g       no-log: c1 -1.673321e-08 res 3.2e-11 | with m ln m: e +4.767e-08 c1 +2.760770e-07 res 1.8e-11
+  Eg        no-log: c1 -7.747404e-10 res 1.0e-12 | with m ln m: e +1.950e-09 c1 +1.120634e-08 res 4.4e-13
+  muE       no-log: c1 -2.708840e-11 res 3.3e-14 | with m ln m: e +3.793e-11 c1 +2.059108e-10 res 1.5e-14
+  off_face1 no-log: c1 -7.249372e-09 res 1.2e-11 | with m ln m: e +1.937e-08 c1 +1.117316e-07 res 5.8e-12
+  off_face2 no-log: c1 +1.625402e-08 res 2.7e-11 | with m ln m: e -4.402e-08 c1 -2.541724e-07 res 1.4e-11
+  off_d1    no-log: c1 -3.365562e-09 res 3.1e-12 | with m ln m: e +4.023e-09 c1 +2.134420e-08 res 1.9e-12
+  off_d2    no-log: c1 +3.302937e-08 res 5.9e-11 | with m ln m: e -9.184e-08 c1 -5.310934e-07 res 3.2e-11

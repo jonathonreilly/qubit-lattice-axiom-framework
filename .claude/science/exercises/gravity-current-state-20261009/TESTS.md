@@ -7808,3 +7808,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - site creation injects energy (R19-10).
 
   If so, (S) is number-free only on a static universe, and Λ goes back to a tuning or a new principle.
+- **R19-11 (one law for every SM mass): worker reading OPEN.**
+  - **Massless limit.** Every row has a finite limit as m → 0⁺.
+    - Scalar and vector rows are analytic in m².
+    - Wilson-Dirac rows have linear-in-m terms (Lemma A: the Wilson mass breaks m → −m).
+  - **The m → 0⁺ root exists:** (2.590035, 0.915439, 0.568281, −0.176177), with off-axis (−1.1717, −0.1956). It is subluminal and transversal.
+  - **Residuals with SM masses at a = ℓ_P** (top-dominated, O(ma) ≈ 1e-17):
+    - speed rows: Δc ≈ 0.2–2.4e-18. Below GW170817, but 6–9× above R16-2's photon comparator.
+    - shear rows: μ ≈ 1–5e-19 per cell. Read as a graviton mass (~6e10 GeV), that is ~1e79 above the GW170817-level bound.
+  - **A spectrum-tuned law exists** (implicit-function theorem). It zeroes all six rows, but its knobs encode the SM mass sums to ~1e-98, and electroweak-transition changes detune it.
+  - **Twisted-mass Dirac** (P-R19-11c) brings the speed residuals to ~1e-35. The shear residual stays ~1e62 too large.
+  - **A mass-blind law** needs ~14–17 more conditions.
+  - **Prices:** P-R19-11a, b and c.
+
+  Referee running.

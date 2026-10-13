@@ -1,0 +1,31 @@
+== mscan_d_GL4_10.out (dirac), m in [0, 0.0025], 7 points
+  T2g    c0 +1.9989833334e-03 c1 -1.43476e-03 c2 -6.68801e-04 c3/c4 +1.010e-03 | maxres 4.1e-16 || with m^2 ln m: d +1.741e-08 (c1 -1.43476e-03 c2 -6.6868e-04) maxres 1.6e-16
+  Eg     c0 +1.3375348193e-04 c1 -1.60059e-04 c2 +7.75659e-06 c3/c4 +2.150e-04 | maxres 2.5e-17 || with m^2 ln m: d -5.295e-10 (c1 -1.60059e-04 c2 +7.7530e-06) maxres 2.2e-17
+  muE    c0 -1.7199167727e-02 c1 +1.04402e-02 c2 +6.53268e-03 c3/c4 -5.030e-03 | maxres 2.5e-15 || with m^2 ln m: d -1.446e-08 (c1 +1.04402e-02 c2 +6.5326e-03) maxres 2.6e-15
+  muT2   c0 -2.5516974358e-05 c1 +2.53128e-03 c2 +2.05125e-03 c3/c4 -5.482e-04 | maxres 1.3e-17 || with m^2 ln m: d +5.874e-10 (c1 +2.53128e-03 c2 +2.0513e-03) maxres 3.3e-18
+  face1  c0 +1.1402974593e-03 c1 -1.66674e-03 c2 -4.10062e-03 c3/c4 +5.029e-01 | maxres 7.3e-12 || with m^2 ln m: d -3.837e-04 (c1 -1.66694e-03 c2 -6.6972e-03) maxres 9.3e-13
+  face2  c0 +2.1445399423e-03 c1 -2.12640e-03 c2 +6.71592e-03 c3/c4 -1.369e+00 | maxres 1.8e-11 || with m^2 ln m: d +9.641e-04 (c1 -2.12590e-03 c2 +1.3241e-02) maxres 2.0e-12
+  d1     c0 +5.4026039157e-04 c1 -1.18788e-03 c2 -6.67907e-03 c3/c4 +9.859e-01 | maxres 1.5e-11 || with m^2 ln m: d -7.744e-04 (c1 -1.18828e-03 c2 -1.1920e-02) maxres 2.0e-12
+  d2     c0 +1.4552790779e-04 c1 -6.91902e-04 c2 +1.35057e-02 c3/c4 -2.597e+00 | maxres 3.0e-11 || with m^2 ln m: d +1.587e-03 (c1 -6.91071e-04 c2 +2.4248e-02) maxres 2.5e-12
+== mscan_s.out (scalar), m in [1e-05, 0.02], 9 points
+  T2g    c0 -6.2775984954e-04 c1 -1.67332e-08 c2 +1.06616e-04 c3/c4 -2.156e-03 | maxres 3.2e-11 || with m^2 ln m: d -1.082e-05 (c1 -7.55707e-08 c2 +6.0885e-05) maxres 2.3e-11
+  Eg     c0 -3.6216294005e-04 c1 -7.74740e-10 c2 +6.75939e-05 c3/c4 -1.073e-04 | maxres 1.0e-12 || with m^2 ln m: d -4.631e-07 (c1 -3.29181e-09 c2 +6.5638e-05) maxres 6.3e-13
+  muE    c0 +1.0627369785e-02 c1 -2.41474e-11 c2 -1.33741e-03 c3/c4 +1.451e-04 | maxres 2.9e-14 || with m^2 ln m: d -8.764e-09 (c1 -7.17878e-11 c2 -1.3374e-03) maxres 1.8e-14
+  face1  c0 -4.5765306559e-04 c1 -7.24936e-09 c2 +8.23302e-05 c3/c4 -9.332e-04 | maxres 1.2e-11 || with m^2 ln m: d -4.495e-06 (c1 -3.16854e-08 c2 +6.3337e-05) maxres 7.7e-12
+  face2  c0 -6.2775991045e-04 c1 +1.62540e-08 c2 +1.03435e-04 c3/c4 +2.060e-03 | maxres 2.7e-11 || with m^2 ln m: d +1.018e-05 (c1 +7.16041e-08 c2 +1.4646e-04) maxres 1.8e-11
+  d1     c0 -2.9090901692e-05 c1 +6.55702e-10 c2 +4.64489e-06 c3/c4 +1.287e-04 | maxres 6.4e-12 || with m^2 ln m: d -1.626e-06 (c1 -8.18201e-09 c2 -2.2242e-06) maxres 3.8e-12
+== vector muE (per vector): c0 +2.8508919493e-02 c1 -8.559e-11 c2 -2.99321e-03 c4 +2.657e-04 maxres 7.6e-14
+
+Dirac: sum n m a = 4.3952e-17, sum n (m a)^2 = 6.0061e-34 ; top m a = 1.4145e-17
+scalar edge: sum (m a)^2 = 2.4771e-34 (Feynman gauge) / 1.0525e-34 (Landau) ; vectors sum (m a)^2 = 1.4247e-34
+omega a at 100 Hz = 3.3873e-41
+
+(c) residuals of the m->0+ law at the SM spectrum (per row, totals):
+  T2g   Dirac -6.306e-20 scalar +2.641e-38 vector (not computed; massless evaluator) TOTAL(D+S) -6.306e-20 -> dc = 8 pi Xi = 1.58e-18 (GW170817 7e-16; R16-2 photon comparator 2.66e-19)
+  Eg    Dirac -7.035e-21 scalar +1.674e-38 vector (not computed; massless evaluator) TOTAL(D+S) -7.035e-21 -> dc = 8 pi Xi = 1.77e-19 (GW170817 7e-16; R16-2 photon comparator 2.66e-19)
+  face1 Dirac -7.326e-20 scalar +2.039e-38 vector (not computed; massless evaluator) TOTAL(D+S) -7.326e-20 -> dc = 8 pi Xi = 1.84e-18 (GW170817 7e-16; R16-2 photon comparator 2.66e-19)
+  face2 Dirac -9.346e-20 scalar +2.562e-38 vector (not computed; massless evaluator) TOTAL(D+S) -9.346e-20 -> dc = 8 pi Xi = 2.35e-18 (GW170817 7e-16; R16-2 photon comparator 2.66e-19)
+  muE   Dirac +4.589e-19 scalar -3.313e-37 vector -4.264e-37 TOTAL +4.589e-19 -> 16 pi mu = 2.31e-17 (a=l_P units); dc at 100 Hz = 8 pi mu/(omega a)^2 = 1.01e+64 (GW170817 band 7e-16)
+  muT2  Dirac +1.113e-19 scalar +0.000e+00 vector +nan TOTAL +1.113e-19 -> 16 pi mu = 5.59e-18 (a=l_P units); dc at 100 Hz = 8 pi mu/(omega a)^2 = 2.44e+63 (GW170817 band 7e-16)
+
+thresholds: |Xi| <= 7e-16/(8 pi) = 2.79e-17 (GW170817 upper), 2.66e-19/(8 pi) = 1.06e-20 (R16-2); |mu| <= 7e-16 (omega a)^2/(8 pi) = 3.20e-98

@@ -1,0 +1,4 @@
+T2g   twisted Dirac: c0 +2.036924240e-03 c1 +1.32e-08 c2 -1.7925e-03 (fit res 1.7e-12) | residual at SM spectrum (D+S+V) -1.077e-36 -> dc = 8 pi Xi = 2.71e-35
+Eg    twisted Dirac: c0 +1.821584948e-04 c1 -1.21e-09 c2 -7.0875e-04 (fit res 2.4e-13) | residual at SM spectrum (D+S+V) -4.257e-37 -> dc = 8 pi Xi = 1.07e-35
+muE   twisted Dirac: c0 -1.718338041e-02 c1 -6.20e-08 c2 +8.5643e-03 (fit res 1.2e-11) | residual at SM spectrum (D+S+V) +4.380e-36 -> dc(100 Hz) = 8 pi mu/(omega a)^2 = 9.59e+46; |mu|/3.2e-98 = 1.4e+62
+muT2  twisted Dirac: c0 +4.706510878e-10 c1 +5.07e-16 c2 -3.8315e-06 (fit res 5.7e-19) | residual at SM spectrum (D+S+V) -2.301e-39 -> dc(100 Hz) = 8 pi mu/(omega a)^2 = 5.04e+43; |mu|/3.2e-98 = 7.2e+58

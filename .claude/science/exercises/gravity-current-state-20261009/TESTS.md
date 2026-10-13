@@ -7983,7 +7983,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **TIE-HOLDS:** every consistent lift's signal is below current and forecast sensitivity. Checked.
   - **OPEN:** otherwise.
 - **Expectation.** TIE-BROKEN under L1 by forecast sirens: d_L^GW/d_L^EM − 1 ≈ γ/(2H₀) × O(1) ~ 1–2% at z ~ 1, within ET/LISA reach. Under L0 the GW damping alone gives a similar siren signal, since E1 has none.
-- **R19-11 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN** (recorded 05:52Z).
+- **R19-11 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN** (recorded 05:46Z).
   - **Confirmed:**
     - Lemma A: Wilson-Dirac rows are analytic in m, with nonzero linear terms.
     - Lemma B: scalar and vector rows are analytic in m².
@@ -8004,3 +8004,43 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R19-15a ((S\*)), P-R19-15b (whole linear response, non-local).
 
   Referee running.
+
+### C5 Round 19, item 19 (pre-registered 05:48Z, before launch)
+
+**R19-19. Extend (S\*) to O(q²): can one local, number-free source clause remove every graviton-cone row, and what does it cost?**
+- **Plain question.**
+  - R19-15 (worker; referee running) finds that (S\*), "the lowest state's response to uniform static deformation does not gravitate", removes the shear rows (q⁰) with no numbers.
+  - The remaining graviton-cone rows (Ξ_Eg, Ξ_T2g, face1, face2) are the O(q²) coefficients of the vacuum's TT self-energy.
+  - Consider (S\*\*): "the lowest state's TT response through O(q²) contributes only its Lorentz-invariant (continuum) form to the gravitating source." This is a local subtraction, since it is a Taylor polynomial in q.
+  - Does (S\*\*):
+    - zero every graviton-cone row for every species at every mass, with no tuning;
+    - stay local, covariant and non-signalling;
+    - leave only the charge block (R16-2/R19-12) plus the CC?
+  - What does it cost? Is it radiatively stable? Does it conflict with the refereed W1 / weight-1 results?
+  - Does it also affect matter's own cone rows? (It should not: those come from the matter self-energy, not the graviton's.)
+- **Setting.**
+  - The SM root (R18-9/R18-13/R19-9/R19-11) and its vertices.
+  - Graviton TT self-energy Π_TT(q) from the vacuum loops.
+  - (S\*\*) defined as subtracting Π_TT's Taylor coefficients at q⁰ and q² minus their continuum Lorentz-invariant values.
+  - One loop, plus the R19-15 two-loop model for the radiative check.
+- **Prior art (count once):**
+  - R19-15 (worker) and its referee when back;
+  - R17-3 (S accepted as a principle);
+  - C4 V3's R₀ (called tautological);
+  - R16-3 (IBP identity: the Ξ rows as q² coefficients);
+  - R17-4 (off-axis);
+  - R19-12 (the bill);
+  - R9-9 (vertex prescription).
+- **Removed hypothesis:** the cone rows paid by tunings.
+- **Probes.**
+  - (a) The clause as an equation.
+  - (b) Its effect on each of the six rows.
+  - (c) Locality, Bianchi and signalling.
+  - (d) What remains at O(q⁴) and beyond. The O(q⁴) remainder gives dispersion such as ω² = k² + αk⁴a²; check it against GW170817 and Fermi-LAT-type bounds at a = ℓ_P (RECALLED).
+  - (e) The two-loop check.
+  - (f) The new bill.
+- **FIXED readings.**
+  - **CONE-PRINCIPLE:** a stated local, number-free, non-signalling clause zeroes all six graviton-cone rows for every species and mass, with O(q⁴) remainders below bounds. Checked.
+  - **TAUTOLOGY-OR-CONFLICT:** a demonstration (refereed) that the clause either conflicts with a refereed result (W1, weight-1, Bianchi) or is equivalent to assuming the answer in a way that makes it non-predictive.
+  - **OPEN:** otherwise.
+- **Expectation.** CONE-PRINCIPLE on the letter, with the honest caveat that the clause is a renormalization condition dressed as a principle. The bill drops to the charge block plus the CC. The referee's judgement on tautology decides.

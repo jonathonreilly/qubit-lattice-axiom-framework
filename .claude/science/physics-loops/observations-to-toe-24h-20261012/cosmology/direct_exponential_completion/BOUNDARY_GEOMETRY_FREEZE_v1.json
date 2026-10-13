@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-13T16:27:15.664193+00:00",
+  "scope": "Exact boundary-geometry calculation, frozen before execution.",
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/BOUNDARY_GEOMETRY_DERIVATION_v1.md",
+      "sha256": "902e0c54f7fefba200c0eb04e122866dd4f502495338317528039ab191e75f27"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_boundary_geometry_v1.py",
+      "sha256": "2390776877a9e164e9eb90d152ce08bb376a030637d67f1b7897f98c96dfd3ee"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/REGULAR_LIMIT_DERIVATION_v1.md",
+      "sha256": "fb5447dbd13fb5015a8f6b06f2ecb92a6e543028176df24e566defa8ef0a2afa"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/DERIVATION_v1.md",
+      "sha256": "caf44625b1afd2be042f791800635d2e3707a8a997aab313cc7bcb2bb5623e27"
+    }
+  ]
+}

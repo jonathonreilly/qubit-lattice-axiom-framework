@@ -1,0 +1,30 @@
+{
+  "scope": "Exact local response identities for the matched limiting state; no later-state or empirical assertion.",
+  "checks": [
+    {
+      "name": "initial_coefficient",
+      "actual": "0",
+      "expected": "0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "initial_u_acceleration",
+      "actual": "-6*(-3*pressure + y**2)/(2*x**2 + 2*y**2 + 3)",
+      "expected": "(6*pressure - 2*y**2)/(2*x**2/3 + 2*y**2/3 + 1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "initial_physical_coefficient_slope",
+      "actual": "-8*(-3*pressure + y**2)/(2*x**2 + 2*y**2 + 3)",
+      "expected": "(24*pressure - 8*y**2)/(2*x**2 + 2*y**2 + 3)",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "passed": 3,
+    "failed": 0
+  }
+}

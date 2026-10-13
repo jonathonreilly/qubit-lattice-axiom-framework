@@ -153,3 +153,7 @@ zero residual sensitivity only for this weak model; they do not close compact
 matter or a native microscopic origin. Historical geophysical Earth/Moon
 energy difference is an imported coefficient, distinct from measured LLR EP.
 An arbitrary nonuniversal composition nuisance would leave f degenerate.
+
+## Closing cosmological assumptions, October 13
+
+The continuous histories import H0=70, Omega_dust=.3, the vacuum/expansion scale, initial fields, measured electron/neutrino inputs, a supplied lightest neutrino mass, approximate thermal/decoupling gas models, and explicit target metrics/potentials. The new exponential action is an intentional change after failures of the original stiff potential. It preserves ideal-fluid matching but does not derive the dimensional scales, matter content or initial state. All supernova, BAO and local-gravity observations were already exposed during development. Only declared nuisance intercept/ruler calibrations are fitted in the new comparisons. PPN transfer still assumes sufficiently long-range weak-body exchange and local environment matching. The regular-limit theorem assumes a limiting solution that remains bounded over the specified finite interval. Positive metric/potential alone does not establish this. No Born-rule, gauge-group, mass-spectrum or quantum-vacuum origin is claimed.

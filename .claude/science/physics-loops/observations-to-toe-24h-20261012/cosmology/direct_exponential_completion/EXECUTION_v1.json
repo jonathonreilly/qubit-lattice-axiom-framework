@@ -1,0 +1,10 @@
+{
+  "started_at": "2026-10-13T15:44:35.474710+00:00",
+  "driver_pid": 84347,
+  "scope": "New candidate; six predeclared complete histories, original frozen thresholds.",
+  "deadline_at": "2026-10-13T16:53:00.057432+00:00",
+  "worker_pid": 84349,
+  "finished_at": "2026-10-13T15:44:48.577084+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 13.101880125235766
+}

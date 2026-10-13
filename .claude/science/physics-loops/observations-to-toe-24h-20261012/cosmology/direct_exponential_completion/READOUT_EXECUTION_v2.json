@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-10-13T15:53:54.943147+00:00",
+  "finished_at": "2026-10-13T15:53:55.024257+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_serialized_readout_v2.py",
+    "--freeze",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_FREEZE_v2.json",
+    "--results",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/RESULTS.json",
+    "--out",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_RESULTS_v2.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{'passed': 4352, 'failed': 0}\n",
+  "stderr": ""
+}

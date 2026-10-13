@@ -1,0 +1,17 @@
+{
+  "scope": "Plot of stored personally computed histories and regular limit; no refit or new calculation of dynamics.",
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/RESULTS.json",
+      "sha256": "4525898f9a23b136fc6ff13722ca85a3a22210f2034dc35eb7808e455e75fcf8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/REGULAR_LIMIT_RESULTS_v1.json",
+      "sha256": "f3eca7c565d6c22f568edb3468d123b0cff3d3fdbcc4b1f526e2f6adb50f6ead"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_RESULTS_v2.json",
+      "sha256": "41c12d3d5331996b4e286f4a4aaa525fefce4ea5674047a2a81c7a3be62ad0a3"
+    }
+  ]
+}

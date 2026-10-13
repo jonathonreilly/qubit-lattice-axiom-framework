@@ -189,3 +189,15 @@ New parent positive exponential potential preserves exact ideal first jet and ha
 Complete new-action independent full paths/readouts and mutation closure; finish weak-limit final UNIT/cache, combined gates and PR. Integrate observation constraints; no new discovery after16:38Z and final deadline16:53Z.
 
 Original deadline and ownership unchanged; retired/cancelled authors stay stopped. New potential is explicitly different from the original failed stiff-history model.
+
+## Direct-author closing continuation 2026-10-13T16:32:41.179940+00:00
+
+New exponential action: six full parent histories3145/0, three independent histories agree2.05e-10; physical readout4352/0 and affected4544/0; observations1765/0 with exact science preserved, affected20311/0. Regular limit82/0 independently116/0 and conditional compact-history proof; local trace3 exact parent identities and69 independent controls. Boundary geometry11/0, focused check closing. Canonical original-action weak-limit PR9523 OPEN and attached at40c809a346; all three gates and final UNIT/cache passed. No TOE or empirical acceptance.
+
+Close normalized-boundary and synthesis consistency checks, archive all exact final source/review evidence and publish recovery checkpoint. At16:38Z enter packaging only; at16:53Z stop owned research and pause existing heartbeat without restarting authors.
+
+Eight PRs open, no merges. Sameholder lease expires17:59:25Z only for ownership; original research deadline remains16:53Z. Retired/cancelled authors remain stopped. Draft report at synthesis/DRAFT_FINAL_REPORT_v1.md.
+
+## Final independent closures 2026-10-13T16:37:43.836896+00:00
+
+Boundary geometry and scoped report checks complete. Parent read complete reports and verified24 boundary plus32 synthesis identities. No discovery remains active. Next action is preservation and finalization only, with the original16:53Z deadline unchanged.

@@ -1,0 +1,103 @@
+{
+  "at": "2026-10-13T16:33:51.257846+00:00",
+  "full_report_and_derivation_read": true,
+  "verified_count": 24,
+  "verified": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/BOUNDARY_GEOMETRY_DERIVATION_v1.md",
+      "sha256": "902e0c54f7fefba200c0eb04e122866dd4f502495338317528039ab191e75f27"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/BOUNDARY_GEOMETRY_EXECUTION_v1.json",
+      "sha256": "462eb69ba233ab58e4883816bec8671aeab6aa4a6094075e390eb6bcd11a402d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/BOUNDARY_GEOMETRY_FREEZE_v1.json",
+      "sha256": "ede69b6a712140adf40ac07053e1feb3fb07021bcb4a643d2807327de637982b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/BOUNDARY_GEOMETRY_RESULTS_v1.json",
+      "sha256": "10128758a4ecc5d3aa8a7ffef8714a12cee6c49e4b8b18d17bdfd5a805dc6ccf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/DERIVATION_v1.md",
+      "sha256": "caf44625b1afd2be042f791800635d2e3707a8a997aab313cc7bcb2bb5623e27"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/REGULAR_LIMIT_DERIVATION_v1.md",
+      "sha256": "fb5447dbd13fb5015a8f6b06f2ecb92a6e543028176df24e566defa8ef0a2afa"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_boundary_geometry_v1.py",
+      "sha256": "2390776877a9e164e9eb90d152ce08bb376a030637d67f1b7897f98c96dfd3ee"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/ADDITIONAL_INPUT_FREEZE_v1.json",
+      "sha256": "d40510769cf9bd6adc550779b72d90282f90479483e1060f504960f65253a290"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/BOUNDARY_GEOMETRY_REVIEW_v1.md",
+      "sha256": "739ded74079b8f23f7982c6e4b551b8ea1604a2aac307201ead710393957d9b5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/FINAL_RECEIPT_v1.json",
+      "sha256": "e9dcf53f56da1bfc3627e17f4f0d3434bf2b0354407531c6a357a70f56933bbc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/INDEPENDENT_EXECUTION_v1.json",
+      "sha256": "e7fe1e32621dff959e2986ff0bb3ec94bd16ab597e733349812a1d00f5b71695"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "f994fd7c9e66a375cc2776f287f984c028203de5376231ede1d2a3ef2899dffd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/REVIEW_INPUT_FREEZE_v1.json",
+      "sha256": "32fe0e01d309a61d9a2b9432992c40eaa03b5134f3ffc3504b6aac41b1536cd1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "e3602125617f91a47ff509b62c4d557410a306cccf1c139e3e5119bc2382c6cf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/SOURCE_IDENTITY_CHECK_v1.json",
+      "sha256": "bd558f55e0c0269150d1a68e680699ef23f94cc302abb46e967c0f0ec5b024ce"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/TOOL_FAILURES_v1.json",
+      "sha256": "cb4b9582086339e8a35134deb0b36906bc93826686aadd0fe98c9fd11a30fc1a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/independent_boundary_check_v1.py",
+      "sha256": "163617d7fcc9003de29b4ff257debe3ed52e9eb2accd129ef8ccc3a0071597e8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/BOUNDARY_GEOMETRY_DERIVATION_v1.md",
+      "sha256": "902e0c54f7fefba200c0eb04e122866dd4f502495338317528039ab191e75f27"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/BOUNDARY_GEOMETRY_EXECUTION_v1.json",
+      "sha256": "462eb69ba233ab58e4883816bec8671aeab6aa4a6094075e390eb6bcd11a402d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/BOUNDARY_GEOMETRY_FREEZE_v1.json",
+      "sha256": "ede69b6a712140adf40ac07053e1feb3fb07021bcb4a643d2807327de637982b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/BOUNDARY_GEOMETRY_RESULTS_v1.json",
+      "sha256": "10128758a4ecc5d3aa8a7ffef8714a12cee6c49e4b8b18d17bdfd5a805dc6ccf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/DERIVATION_v1.md",
+      "sha256": "caf44625b1afd2be042f791800635d2e3707a8a997aab313cc7bcb2bb5623e27"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/REGULAR_LIMIT_DERIVATION_v1.md",
+      "sha256": "fb5447dbd13fb5015a8f6b06f2ecb92a6e543028176df24e566defa8ef0a2afa"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/independent_boundary_review/source_snapshot/check_boundary_geometry_v1.py",
+      "sha256": "2390776877a9e164e9eb90d152ce08bb376a030637d67f1b7897f98c96dfd3ee"
+    }
+  ]
+}

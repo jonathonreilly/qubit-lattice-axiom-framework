@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T15:53:54.941986+00:00",
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_serialized_readout_v2.py",
+      "sha256": "3dab61693f5c5d805ba05ce0f6d2953f6fbbdff2867a4b8e1c5fd614ff00147c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_CORRECTION_v2.md",
+      "sha256": "c949ba91df7b06bd7f4e1a62e4afc3de8f82bcc28b57077a735dac75ec828afb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/RESULTS.json",
+      "sha256": "4525898f9a23b136fc6ff13722ca85a3a22210f2034dc35eb7808e455e75fcf8"
+    }
+  ]
+}

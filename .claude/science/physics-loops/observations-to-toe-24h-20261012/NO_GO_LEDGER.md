@@ -64,3 +64,7 @@ Unverified field-coefficient errors, source reconstruction, pressure/height
 maps, per-galaxy external fields, other response bases and additional matter
 can change the matrix and remain live routes. See the complete source and
 N1-N8 scope in gravity/solar_kernel_inversion/nine_source_reconstruction/.
+
+## Closing cosmological route limits, October 13
+
+The original no-potential cosmological bound is conditional on its narrow class; its exposed distance contrast is not a blind significance. Its canonical negative-route publication unit remains incomplete. The original continuous scalar/thermal action retains weak-history timeouts and coarse/trace-conditioning failures despite alternate stiff solvers and higher precision. The new exponential potential is a distinct theory and does not retroactively repair them. Strong-coupling distance agreement fails the conditional Cassini bridge; weak coupling approaches the reference expansion without selecting a unique action. The revised normalized field geometry has a finite-distance endpoint with finite potential; its compact-history premise is not replaced by positive local kinetic terms. No universal scalar no-go or proof of actual escape follows.

@@ -197,6 +197,8 @@ At \(x=0\) the displayed leading curvature vanishes.
 
 ## Reproduction and limits of evidence
 
+Primary runner: `scripts/weak_scalar_limit_2026_10_13.py`.
+
 Run `python3 scripts/weak_scalar_limit_2026_10_13.py`. It checks exact
 algebra, compact/original action agreement at frozen numerical points,
 the leading physical correction, curved connections and their omission

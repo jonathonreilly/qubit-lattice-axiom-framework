@@ -1,69 +1,63 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T11:49:59.636549+00:00. Sole current checkpoint. Fixed deadline2026-10-13T16:42:30Z.
-CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; clean branch physics-loop/toe-kinetic-energy-20261013; HEAD/base 301b06c3c2b8ce3c1b33c9333eee89a2248e4a99, child of regular9515.
-Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previous checkpoint e95333d20e68e8763ac3eb9b23b124bcb5ae7428. Primary untouched.
-Eleven regular renewal PRs through9515; pair9515 OPEN/regular/attached.
+Updated 2026-10-13T12:27:00.949182+00:00. Sole current checkpoint. Fixed deadline2026-10-13T16:42:30Z.
+CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; clean branch physics-loop/toe-modulated-kinetic-energy-20261013; HEAD/base 0ce6e5ba7483d8ca14513b809009c7169c171a97, child of regular9516.
+Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previous checkpoint 59fd040b45dea6e6cab33f9083787fc799385491. Primary untouched.
+Twelve regular renewal PRs through9516; pair9515 andkinetic9516 OPEN/attached.
 No merge, main push, audit verdict, physical-axiom or editable-prompt change,
-or other-chat message. No repeated already-passed publication runs needed.
+or other-chat message. Do not repeat successful publication validation.
 
-The pair9515 result and actual publication evidence are complete in prior
-MAP/checkpoint. Source203files freezea20e4d11; accepted792 core in919note.
-Prepare234.864976s/verify3.263521s exited0;1node3edges;113commit paths.
-Four corruption controls and exact staged/live blobs verified. Identity
-runner has zero mathematical predicates; focused checker checked=[].
-Combined current-main landing and retained audit remain separate gates.
+Kinetic9516 is COMPLETE. Frozen preparation435files cd72bf6a; root review
+f99d5142/acceptance770da6c0. Four notes preserve five exact scientific cores.
+Actual prepare222.186834s andverify3.270300s exited0 with empty outerstderr.
+Four fresh identity caches,4exact-reason corruption controls,4graphnodes and
+14directedges; old complete objects unchanged. Exact366 staged/live blobs
+were checked before commit0ce6e5ba. Focused checker checked=[]; mathematical
+predicate count is zero. These are publication/identity checks, not theorem
+or retained audit verification. Earlier analytic proof/check evidence remains
+in MAP. Combined current-main landing gates remain separate. Failed initial
+launcher FileNotFound was before driver/science and is preserved in separate
+kinetic_prepare folder; actual kinetic_prepare01 succeeded. No rerun needed.
 
-Kinetic source assembly R/kinetic_law_source_assembly now ACCEPTED:
-freeze e949acc4f46e5ffbc7f58818ca78e58610f3c21f3ee647fa0b2a8cb3b8311c26,
-403bound/405totalfiles. Four notes preserve corrected859,onezero421,
-general mean301+full470,andcorrelation335 exactly. Root review40bd948d,
-acceptance3c354404,112016. All new wrapper/code/import content read; source
-checker passed and live cores checked.14direct mathematical edges expected,
-5history links excluded from new graph. Original847 picture defect/root miss
-and V2 correction remain. Worker energy_cell_expansion_fresh prepares only
-R/kinetic_energy_publication_preparation against actual parent9515/301b06c3.
-Root alone executes gates/mutates CW/Git/publishes. Checkpoint1210 if incomplete.
+Modulated amplitude464/422a92a8 remains analytically accepted, root acceptance
+d73401de. Source175files/c32a537c reviewed with required publication-only
+wrapper correction: J=integral a², intensity=nu_omega J. Original core/source
+unchanged. Worker energy_cell_expansion_fresh prepares only
+R/modulated_kinetic_energy_publication_preparation against actual9516 parents.
+Root alone reviews/executes/mutates CW/publishes. Checkpoint1255 if incomplete.
 
-Modulated amplitude theorem464/422a92a8 remains analytically accepted under
-fixed supplied model, carrier>2m and BV amplitude/variation resources. Its
-source assembly R/modulated_kinetic_law_source_assembly froze c32a537c,
-174bound/175totalfiles,135sources,7closures. Root read all new wrappers,
-support and helper programs; source checker exited0 in0.104281s; all135live
-pins rehashed. REQUIRED publication-copy correction: slow-time integral a²
-is J, while Poisson intensity is nu_omega J. Preserve original frozen package.
-See MODULATED_KINETIC_LAW_ASSEMBLY_ROOT_REVIEW.md and ROOT_DISPOSITION.json.
-Core unchanged, no proof repair. Actual kinetic canonical parents still must
-be bound after its PR; no invented future head/ID. Mean/W1 remain separate,
-only one-time marginals; explicit M23 actual-cell hypotheses remain exposed.
+Fixed-initial-state theorem now ACCEPTED for source assembly, not audit:
+root407/20c9f7cb, independent224/f293eea3+216/4fd5856b, comparison106/5042c3ee
+and evidence138/700e1b3b fully read. Root reviewfabb87d8 and acceptance0778588c
+at122423;30boundfiles and160source-refreshrows rehashed. For each fixed normal
+rho, energy law convolves with vacuum response; finite energy gives separate
+mean/W1. Complementary covariance conventions reconcile anomalous signs.
+Independent mixed-state distance and full compact comparison are additional
+results, not silently attributed to root407. Actual-cell transfer explicitly
+requires M23, common energy identification and weighted initial-state trace
+convergence. Drive-dependent inverse vacuum and two-particle preparations
+preserve the precise failure of all-bounded-energy-state uniformity. No broad
+no-go. Negative packet requirements must be handled honestly in source assembly;
+no invented route families/packet PASS. Worker kinetic_correlation_review
+assembles only R/finite_initial_energy_kinetic_source_assembly, checkpoint1300.
+No new numerical/formal run; earlier root finite-Fock algebra check is limited.
 
-New root fixed-normal initial-state proof407 is PROVISIONAL, not accepted:
-FINITE_INITIAL_ENERGY_KINETIC_ROOT_PROBE.md SHA20c9f7cba4ea75cfad431e067f676aae54b15e031005a04dd9b4c63d37423086,
-seal7494ec82 at113144 with13input snapshots. Proposed convolution energy law,
-separate finite-energy mean/W1, topology distinctions and weighted initial
-state actual-cell hypotheses. Full own read. Root finite4-mode Fock check
-has12cases, covariance/energy residuals below2.55e-15 and five incorrect
-variants detected. Freeze c4e392dc, actual0.822844s exit0; finite floating
-algebra only, no continuum/domain/formal certificate. Independent worker
-kinetic_correlation_review derives separately without new root407 exposure;
-checkpoint1210. Do not infer agreement before reading frozen findings.
+Chirped carrier ROOT515 frozen120415, SHA03d2e4cd8c36b1ec5c5d04fb4efdaaefe6b0346d58ad4885b1a292cb7a0d48,
+seal8b4ca09b. Complete own read. Candidate law has Levy measure
+(pi/2) integral a²r(varpi) delta_varpi du for BV slow profiles with strict
+gap above2m, plus separate mean/W1 and conditional cell transfer. Independent
+850line proof279a96bc froze with24members, freezee4d99288; no root chirp
+exposure. Root has NOT yet read/accepted its full findings at this checkpoint.
+Both frozen routes are archived; focused comparison is next. One-time laws
+only, no process/independent-increments claim. No scientific numeric/Lean run.
 
-New root slow-frequency plan48 sealed114742, SHAed994339. Candidate route:
-BV slow amplitude/frequency with strict gap above2m; no proved result yet.
-Independent pair_response_fresh separately plans/derives with no root-plan
-exposure and freezes before findings; checkpoint1245. Root likewise freezes
-before opening new independent findings. Do not call a marginal law a process.
+Main516cb69d/ai3a4b2c66 refreshed115432;18procedurebytes unchanged. External
+9514/75d8f001 fluidconstruction metadata only reviewed; source not adopted.
+Lock refreshed121022; expires141022, refresh before135022.
+Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_publication_and_initial_chirp_recovery_20261013T122700Z.tar.gz; manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_publication_and_initial_chirp_recovery_20261013T122700Z.tar.MANIFEST.json; 896members. MAP 15047aliases verified.
+Active modulated publication and initial-state source assembly excluded.
 
-Main516cb69d/ai3a4b2c66 last refreshed105734;18procedure bytes unchanged then.
-External9514/75d8f001 has different fluid-construction scope, metadata only
-read, not adopted. Shared citation manifest is future integration concern.
-Lock refreshed105254, expires125254; refresh before123254.
-Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_assembly_and_frontier_recovery_20261013T114959Z.tar.gz; manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_assembly_and_frontier_recovery_20261013T114959Z.tar.MANIFEST.json; 646members. MAP 14156aliases verified.
-Active publication and independent research folders excluded from this bundle.
-
-Next publish kinetic regular PR after complete preparation review and gates,
-then publish checked amplitude-modulated extension with wrapper repair and
-real canonical dependencies. Compare frozen initial-state derivations, derive
-and check slow-frequency route. Checkpoint1220 or milestone. At fixed deadline
-stop new science, checkpoint, release lock, delete heartbeat
- toe-derivations-24-hour-campaign and report outcomes/verification limits.
+Next finish modulated regular PR, read/compare chirp proofs and review initial
+assembly. Checkpoint1300 or milestone. At fixed deadline stop new science,
+checkpoint, release lock, delete heartbeat toe-derivations-24-hour-campaign
+and report actual outcomes with verification limits.

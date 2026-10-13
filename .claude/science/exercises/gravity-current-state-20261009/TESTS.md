@@ -9489,3 +9489,25 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - The knock-on Δμ_E = +1.6894e-2 e_s² per Dirac field is confirmed, and it moves the stored root. A nonlinear retune was not tested.
     - Multiplicative μ_ρ = 8e-43 is confirmed. The hot-era margins are ~1e7 and 1e5, not ≥ 1e10.
     - The T₂g singularity is confirmed for F1's frame photon only.
+
+- **NF-1 (staggered strain control): worker reading NF-TASTE-WALL.** The symmetry is corrected; the literal-U(1)_ε reading is flagged for the referee.
+  - **The panel named the wrong symmetry.** With continuous time, U(1)_ε is not a symmetry, even at t = 0.
+  - **Two discrete symmetries do the work:**
+    - Θ (sublattice chirality with τ → −τ);
+    - P_stag (inversion with ε).
+    - They hold under any uniform SF strain and any c-number link functional, so Σ(0, 0) = 0 for all 64 entries, at every strain channel and order (proved). This is checked to ≤ 1.2e-17, and the grid reproduces F1's Wilson values.
+  - **Controls:**
+    - G₁ dressing: L = −0.8833 e²;
+    - explicit ε-breaking: −1.7e-3 to −1.2e-2 e².
+  - **Residual:** multiplicative z″ = +1.139e-2 e², which is 1.3e-13 of the Earth row and ~10× the toy pulsar row.
+  - **No critical mass,** so there is no knock-on, and the Wilson-c₁ Higgs-vev channel vanishes. The even Higgs-mass² channel (F6) remains.
+  - **Taste wall:**
+    - T1 (a twin per field): fails R9-1, +84 MeV Z width (36σ);
+    - T2 (twins paired across generations): needs SM + 3ν_R + one vector-like family, not computed.
+  - **Rows:** μ_T2 ≡ 0. Three rows for three knobs re-solve only at a small-box photon edge (knobs move ~5% with the grid).
+  - **Prices:**
+    - P-NF1a: the native staggered route with T2 content;
+    - P-NF1b: the strained law keeps Θ and P_stag;
+    - P-NF1c: the photon edge moves.
+
+  Referee running.

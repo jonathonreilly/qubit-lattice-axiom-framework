@@ -1,0 +1,26 @@
+NF-1 direct 8x8 staggered self-energy at P = 0, full-BZ midpoint N = 32 (32768 points); per e^2
+ A: staggered (r = 0) under SF strain
+  A t=+0.00                          m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +0.000000000000e+00 | diff 0.0e+00 | ||rest|| 1.2e-17 | taste-breaking 1.3e-18 | top: alpha_z -4.0e-18, alpha_y -1.2e-18, 1 +6.0e-19
+  A t=+0.10                          m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +0.000000000000e+00 | diff 0.0e+00 | ||rest|| 8.8e-18 | taste-breaking 6.3e-18 | top: alpha_z -1.6e-18, alpha_y -1.2e-18, alpha_x -7.4e-19
+  A t=-0.10                          m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +0.000000000000e+00 | diff 0.0e+00 | ||rest|| 6.8e-18 | taste-breaking 1.1e-18 | top: alpha_x -1.8e-18, alpha_z -1.2e-18, 1 +6.1e-19
+  A t=+0.20                          m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +0.000000000000e+00 | diff 0.0e+00 | ||rest|| 1.1e-17 | taste-breaking 9.3e-18 | top: alpha_z -1.7e-18, alpha_x +1.1e-18, alpha_y +5.5e-19
+ B: control, G1 dressing (t = 0), eps = t^2 a
+  B eps=+0.001                       m_eps -8.827206178727e-04 | 4x4 reduced (same grid) -8.827206178727e-04 | diff -5.4e-19 | ||rest|| 9.1e-18 | taste-breaking 3.7e-18 | top: beta -8.8e-04, alpha_z -2.7e-18, alpha_y -9.7e-19
+  B eps=-0.001                       m_eps +8.827206178727e-04 | 4x4 reduced (same grid) +8.827206178727e-04 | diff 5.4e-19 | ||rest|| 9.3e-18 | taste-breaking 3.9e-18 | top: beta +8.8e-04, alpha_z -2.4e-18, alpha_y -1.4e-18
+  B eps=+0.050                       m_eps -4.401752204938e-02 | 4x4 reduced (same grid) -4.401752204938e-02 | diff 2.1e-17 | ||rest|| 1.6e-17 | taste-breaking 9.0e-17 | top: beta -4.4e-02, Sigma_y +1.3e-17, i beta alpha_x -1.0e-17
+   L = d m_eps/d eps (central, eps = +-1e-3) = -8.827206e-01 per e^2  (Hess_t = 2 a L)
+ C: control, eps-Wilson r_c sum sin^2 k_j Gamma_eps (critical mass fixed at t = 0)
+  C rc=0.1 t=+0.00                   m_eps +3.861088436239e-02 | 4x4 reduced (same grid) +3.861088436239e-02 | diff 0.0e+00 | ||rest|| 1.0e-17 | taste-breaking 8.1e-17 | top: beta +3.9e-02, Sigma_y -1.1e-17, alpha_y -9.0e-18
+  C rc=0.1 t=+0.10                   m_eps +3.859964333214e-02 | 4x4 reduced (same grid) +3.859964333214e-02 | diff -6.9e-18 | ||rest|| 1.0e-17 | taste-breaking 7.8e-17 | top: beta +3.9e-02, Sigma_y -1.1e-17, alpha_y -9.3e-18
+  C rc=0.1 t=+0.20                   m_eps +3.855459985756e-02 | 4x4 reduced (same grid) +3.855459985756e-02 | diff 1.4e-17 | ||rest|| 2.1e-17 | taste-breaking 8.0e-17 | top: beta +3.9e-02, Sigma_y -1.1e-17, alpha_x -1.1e-17
+   rc=0.1: coarse Hess_t (d=0.1) -2.2482e-03 (d=0.2) -2.8142e-03  [coarse grid; converged values in nf1_conv]
+  C rc=0.3 t=+0.00                   m_eps +1.138314800433e-01 | 4x4 reduced (same grid) +1.138314800433e-01 | diff -8.3e-17 | ||rest|| 2.9e-17 | taste-breaking 2.3e-16 | top: beta +1.1e-01, Sigma_y -3.2e-17, i beta alpha_x +2.6e-17
+  C rc=0.3 t=+0.10                   m_eps +1.137899647885e-01 | 4x4 reduced (same grid) +1.137899647885e-01 | diff 2.8e-17 | ||rest|| 3.1e-17 | taste-breaking 2.3e-16 | top: beta +1.1e-01, Sigma_y -3.2e-17, i beta alpha_x +2.6e-17
+  C rc=0.3 t=+0.20                   m_eps +1.136320930211e-01 | 4x4 reduced (same grid) +1.136320930211e-01 | diff 2.8e-17 | ||rest|| 4.0e-17 | taste-breaking 2.4e-16 | top: beta +1.1e-01, Sigma_y -3.3e-17, i beta alpha_x +2.6e-17
+   rc=0.3: coarse Hess_t (d=0.1) -8.3031e-03 (d=0.2) -9.9694e-03  [coarse grid; converged values in nf1_conv]
+ D: eps-RESPECTING dressing (check of the mechanism): G_c = sum_{j<k} i Gamma_j Gamma_k sin k_j sin k_k ([G_c, Gamma_eps] = 0, even in k)
+   max |[G_c, Gamma_eps]| = 0.0e+00
+  D t=+0.00 eps=0.05                 m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +nan | diff nan | ||rest|| 1.7e-17 | taste-breaking 8.8e-18 | top: alpha_z -4.9e-18, alpha_x -1.2e-18, alpha_y -1.2e-18
+  D t=+0.10 eps=0.05                 m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +nan | diff nan | ||rest|| 6.7e-18 | taste-breaking 3.8e-18 | top: alpha_y -1.4e-18, alpha_z -1.3e-18, 1 +4.4e-19
+  D t=+0.20 eps=0.30                 m_eps +0.000000000000e+00 | 4x4 reduced (same grid) +nan | diff nan | ||rest|| 7.3e-18 | taste-breaking 6.1e-18 | top: alpha_x +1.2e-18, 1 +6.8e-19, alpha_y -2.6e-19
+time 5 s

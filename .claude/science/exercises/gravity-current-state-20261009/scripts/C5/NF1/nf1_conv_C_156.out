@@ -1,0 +1,5 @@
+NF-1 part C; grid n=6 hmax=0.25 mph=6 (156 nodes), d=0.0030; staggered edge s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  eps-Wilson r_c=0.05: dm(t=0) +0.019353255  Hess_t (d) -1.7287697e-03 (2d) -1.7290358e-03 Rich -1.7286810e-03  Hess/dm -0.0893
+  eps-Wilson r_c=0.10: dm(t=0) +0.038639445  Hess_t (d) -3.5098489e-03 (2d) -3.5103805e-03 Rich -3.5096717e-03  Hess/dm -0.0908
+  eps-Wilson r_c=0.30: dm(t=0) +0.113917017  Hess_t (d) -1.2028046e-02 (2d) -1.2029616e-02 Rich -1.2027522e-02  Hess/dm -0.1056
+time 16 s

@@ -1,0 +1,46 @@
+NF-1 (d) rows: naive D1(b_f, r=0) per 4-comp field under UD at m = 0.01, GL (3, 8); staggered per field = 1/4 of these
+  b_f=0.300000 naive: T2g -4.338292e-04 Eg -2.651518e-03 muE -1.296368e-02 muT2 +0.0e+00 | staggered/field: T2g -1.084573e-04 Eg -6.628795e-04 muE -3.240921e-03
+  b_f=0.500000 naive: T2g +2.561996e-04 Eg -2.047761e-03 muE -1.541504e-02 muT2 +0.0e+00 | staggered/field: T2g +6.404989e-05 Eg -5.119402e-04 muE -3.853761e-03
+  b_f=0.700000 naive: T2g +1.045284e-03 Eg -1.312472e-03 muE -1.808209e-02 muT2 +0.0e+00 | staggered/field: T2g +2.613210e-04 Eg -3.281180e-04 muE -4.520523e-03
+  b_f=0.800000 naive: T2g +1.478067e-03 Eg -8.966037e-04 muE -1.949906e-02 muT2 +0.0e+00 | staggered/field: T2g +3.695167e-04 Eg -2.241509e-04 muE -4.874766e-03
+  b_f=0.900000 naive: T2g +1.936804e-03 Eg -4.494545e-04 muE -2.097402e-02 muT2 +0.0e+00 | staggered/field: T2g +4.842011e-04 Eg -1.123636e-04 muE -5.243506e-03
+  b_f=0.909104 naive: T2g +1.979866e-03 Eg -4.072194e-04 muE -2.111126e-02 muT2 +0.0e+00 | staggered/field: T2g +4.949664e-04 Eg -1.018048e-04 muE -5.277814e-03
+  b_f=1.000000 naive: T2g +2.421782e-03 Eg +2.822762e-05 muE -2.250930e-02 muT2 +0.0e+00 | staggered/field: T2g +6.054456e-04 Eg +7.056905e-06 muE -5.627326e-03
+  b_f=1.100000 naive: T2g +2.933250e-03 Eg +5.356562e-04 muE -2.410765e-02 muT2 +0.0e+00 | staggered/field: T2g +7.333125e-04 Eg +1.339141e-04 muE -6.026912e-03
+  b_f=1.200000 naive: T2g +3.471424e-03 Eg +1.072029e-03 muE -2.577219e-02 muT2 +0.0e+00 | staggered/field: T2g +8.678561e-04 Eg +2.680072e-04 muE -6.443047e-03
+  b_f=1.300000 naive: T2g +4.036496e-03 Eg +1.636545e-03 muE -2.750641e-02 muT2 +0.0e+00 | staggered/field: T2g +1.009124e-03 Eg +4.091361e-04 muE -6.876601e-03
+  b_f=1.400000 naive: T2g +4.628631e-03 Eg +2.228415e-03 muE -2.931411e-02 muT2 +0.0e+00 | staggered/field: T2g +1.157158e-03 Eg +5.571038e-04 muE -7.328529e-03
+  check: Wilson root D1(0.909103708, 0.555604226): T2g +1.984625e-03 Eg +1.321931e-04 muE -1.709186e-02 muT2 +1.1e-08  (R18-9 record +1.98457e-3, +1.3215e-4, -1.70941e-2)
+
+  per-species budget: scalar mu_E in [-6.107e-04, 1.606e-02] (x4); photon mu_E in [-9.584e-04, 2.963e-02] (x12); staggered mu_E/field in [-7.329e-03, -3.241e-03]
+
+  N_s = 11.25 (22.5 Dirac as tastes; formal, non-integer): w_F = 2.8125
+    (edge, b_f) pairs: 594; mu_E row solvable on 144; too negative 0; too positive 450
+    E-residual on the mu_E level set: [-4.0240e-02, +8.2636e-02]; pairs with a sign change (=> a 3-row root nearby): 0
+      gGw(0.60,fw=0.50) stag b_f=1.300: gE range [-3.0189e-04, -7.9147e-05] over 6 points
+      gGw(0.60,fw=0.50) stag b_f=1.200: gE range [+1.4129e-04, +3.2271e-04] over 5 points
+      gGw(0.60,fw=0.50) stag b_f=1.100: gE range [+5.6371e-04, +7.6328e-04] over 5 points
+      gGw(0.60,fw=0.50) stag b_f=1.400: gE range [-7.5404e-04, -5.6958e-04] over 5 points
+      gGw(0.60,fw=0.50) stag b_f=1.000: gE range [+9.3817e-04, +1.1831e-03] over 6 points
+      gGw(0.60,fw=0.50) stag b_f=0.909: gE range [+1.2771e-03, +1.5443e-03] over 6 points
+
+  N_s = 16 (charge-identical taste pairs: SM + 3 nu_R + one vector-like family = 32 Dirac): w_F = 4.0000
+    (edge, b_f) pairs: 594; mu_E row solvable on 153; too negative 0; too positive 441
+    E-residual on the mu_E level set: [-4.0271e-02, +8.2952e-02]; pairs with a sign change (=> a 3-row root nearby): 0
+      gGw(0.60,fw=0.50) stag b_f=1.000: gE range [-2.7605e-04, -1.1659e-04] over 5 points
+      gGw(0.60,fw=0.50) stag b_f=0.909: gE range [+2.3207e-04, +4.1000e-04] over 5 points
+      gGw(0.60,fw=0.50) stag b_f=0.900: gE range [+2.8172e-04, +4.6147e-04] over 5 points
+      gGw(0.60,fw=0.50) stag b_f=1.100: gE range [-8.4781e-04, -7.2633e-04] over 4 points
+      gGw(0.60,fw=0.50) stag b_f=0.800: gE range [+7.9106e-04, +1.0106e-03] over 6 points
+      gGw(0.60,fw=0.50) stag b_f=0.700: gE range [+1.2849e-03, +1.4669e-03] over 5 points
+
+  N_s = 22.5 (one staggered field per SM Dirac field: 22.5 twins): w_F = 5.6250
+    (edge, b_f) pairs: 594; mu_E row solvable on 177; too negative 0; too positive 417
+    E-residual on the mu_E level set: [-4.4991e-02, +8.3646e-02]; pairs with a sign change (=> a 3-row root nearby): 0
+      gGw(1.00,fw=0.10) stag b_f=1.400: gE range [+5.0409e-05, +5.0409e-05] over 1 points
+      gGw(0.60,fw=0.50) stag b_f=0.700: gE range [+1.9941e-04, +3.0993e-04] over 4 points
+      gGw(0.60,fw=0.50) stag b_f=0.800: gE range [-5.0680e-04, -4.3307e-04] over 3 points
+      gGw(1.00,fw=0.10) stag b_f=1.300: gE range [+1.1683e-03, +1.1683e-03] over 1 points
+      gGw(0.60,fw=0.50) stag b_f=0.900: gE range [-1.2799e-03, -1.1737e-03] over 4 points
+      gGw(0.60,fw=0.50) stag b_f=0.909: gE range [-1.3522e-03, -1.2473e-03] over 4 points
+time 7 s

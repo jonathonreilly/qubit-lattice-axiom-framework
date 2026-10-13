@@ -1,0 +1,5126 @@
+{
+  "additional_mathematical_body_edits": [],
+  "historical_status_and_exposure_body_bytes_preserved": true,
+  "line_numbers": "one-based inclusive; byte offsets zero-based",
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/payload/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "7498861523ce2fc66ca6277110b8b11a7ac672494e1701753d0017be33e1e320",
+      "additional_mathematical_body_edits": [],
+      "claim_id": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "diff": "publication_diffs/bv_graph_publication.diff.gz",
+      "diff_sha256": "a91fdfe4e5460dbdb75dab897b5ddb914178b0948fc34e95d1c133e2e6a2ce52",
+      "diff_stored_sha256": "aba03e431d6c322d2fdc70ed1d40afaba0418801c01e21085b6c21a46d97ac02",
+      "key": "bv_graph",
+      "note": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3839,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 68,
+          "sha256": "76aaecd7684249490c7cd95d482f2de75d3c75f471be873307e1f04e7ca7fc39",
+          "text": "---\nclaim_id: bv_graph_energy_protocol_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Compact real scalar BV work and domain preservation; slow-preparation and finite-BV graph moments, actual high-sector bounds and finite-word comparisons under the original hypotheses.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: source_accepted_publication_scope_separately_gated\nrunner: scripts/bv_graph_energy_protocol_identity_2026_10_13.py\nscientific_execution: no_mathematical_predicates_in_identity_tools\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: supplied-model conditional arguments with explicit provisional dependencies\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: complete conditional proof bodies preserved with two specifically authorized wording corrections across this source assembly\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: exact publication review and source integration, cumulative stack checks, then independent retained audit\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n  - adiabatic_ground_preparation_bounded_theorem_note_2026-10-12\n  - excitation_pulse_response_bounded_theorem_note_2026-10-12\n  - energy_transfer_correlation_bounded_theorem_note_2026-10-12\n  - time_averaged_energy_transfer_bounded_theorem_note_2026-10-12\n---\n\n# BV work and graph-energy protocol sources\n\n**Type:** bounded_theorem\n\nStatus: conditional-support. Root accepted the pinned source assembly for\npublication preparation. Exact publication-wrapper and program acceptance is\nrecorded separately in the installed evidence packet; source acceptance alone\nauthorizes no execution. The filename date is not evidence of publication.\n\nThe two complete arguments below retain their own local notation, equation\nlabels, premises, controls and historical status/exposure statements. Each\nsource was frozen before its later source-exposed comparison. The assembly\ndoes not create a new combined theorem by concatenating them. All original\nbytes are recoverable from the content-addressed source archive.\n\nThe selected sources are `BV_PULSE_WORK_INDEPENDENT.md` and `GRAPH_ENERGY_INDEPENDENT.md`. Original phrases saying\nthat comparisons or root reads are pending describe their earlier freezes.\nThe later complete comparison reports are archived separately, and root reports\ncomplete reads of the four independent bodies and four comparison reports.\nThis worker read those eight complete bodies during source assembly. Root\nreused its complete body/comparison reads at unchanged hashes, read the six\nnew source wrappers and changed surrounding arguments, and mechanically\nreconstructed all twelve complete diffs and 211 original aliases. Root did not\nclaim to manually reread every assembled unchanged line or complete diff.\nThe exact source acceptance record preserves those coverage limits. Publication\nwrapper/program review is a separate gate. This chronology is not a new proof.\n\nThe derivation/comparison lineage is separate-context reasoning within the same\nselected model family with shared parents, followed by source-exposed checks.\nIt is neither model-diverse checking, analytic Lean verification nor retained\naudit. Current remains `open_gate`; every inherited conditional/open premise\nremains explicit. No N1/N5 packet PASS or global no-go is assigned.\n\n## First complete source body\n\n",
+          "wrapper_path": "wrappers/bv_graph_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 3839,
+          "bytes": 26924,
+          "first_line": 69,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 613,
+          "original_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BV_PULSE_WORK_INDEPENDENT.md",
+          "original_source_sha256": "0af3a48b0604b6dfd530dfc901d81e789a89ef65b89d43391ed351f6f0ac95d9",
+          "sha256": "0af3a48b0604b6dfd530dfc901d81e789a89ef65b89d43391ed351f6f0ac95d9",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/body_copies/BV_PULSE_WORK_INDEPENDENT.md",
+          "source_sha256": "0af3a48b0604b6dfd530dfc901d81e789a89ef65b89d43391ed351f6f0ac95d9"
+        },
+        {
+          "byte_offset": 30763,
+          "bytes": 409,
+          "first_line": 614,
+          "kind": "publication_wrapper",
+          "last_line": 623,
+          "sha256": "4689e058aa9d2cdb1ec53fd9be590a90d47877c8386a0b0fb632efa2f7263a93",
+          "text": "\n\n## Second complete source body\n\nThe following graph-energy argument is preserved in full. Its one tracked edit\nreplaces the unqualified \"already sharper\" wording by the exact qualified\nminimum-of-bounds wording in the archived correction record. No displayed\nformula or constant is changed. The graph comparison's additional X18 remains\narchived comparison material and is not added here as a new theorem.\n\n",
+          "wrapper_path": "wrappers/bv_graph_between.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 31172,
+          "bytes": 46056,
+          "first_line": 624,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 1511,
+          "original_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+          "original_source_sha256": "5c147e2f079f12eb6a4d2f75264ffa51757729c8d444634b203542706fb53967",
+          "sha256": "b0dbfbfa6c9020bb9c88d5b8f16c968863da99835592b0f9638335eec938a795",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/body_copies/GRAPH_ENERGY_INDEPENDENT.md",
+          "source_sha256": "b0dbfbfa6c9020bb9c88d5b8f16c968863da99835592b0f9638335eec938a795"
+        },
+        {
+          "byte_offset": 77228,
+          "bytes": 4892,
+          "first_line": 1512,
+          "kind": "publication_wrapper",
+          "last_line": 1581,
+          "sha256": "c35fedfbfc7beb6ae52151ff653a3a60fa9471989e00ad812759f688cb736380",
+          "text": "\n\n## Publication provenance and dependency scope\n\nThe installed [evidence map](../.claude/science/physics-loops/toe-energy-protocol-20261012/EVIDENCE_MAP.json)\nindexes every accepted source-package member and all 211 original aliases.\nThe original/copy manifests, correction records, complete source diffs,\nline-piece map and canonical-parent history remain losslessly archived.\nThe [publication map](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_EDITS.json)\nrecords every new wrapper substitution and full publication diff. All four\naccepted scientific bodies retain their exact bytes, including the two\npreviously accepted wording corrections. No further body edit is made.\n\nThe [source review](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_REVIEW.json)\nand [root reconstruction](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_RECONSTRUCTION.json)\nstate the actual earlier read and mechanical coverage. The distinct\n[publication acceptance](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ROOT_ACCEPTANCE.json)\nand [publication review](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ASSEMBLY_REVIEW.txt)\nmust be supplied by root before guarded integration can install this note.\nThe [identity tool](../scripts/bv_graph_energy_protocol_identity_2026_10_13.py) checks source bytes and reconstruction\nonly, with zero mathematical predicates. Its cache is integration evidence,\nnot a proof, analytic formal check, new independent review or audit.\n\nThe canonical source dependencies are the supplied [Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Concrete](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[energy transfer](ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[bounded interaction and ground](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[preparation](ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[response](EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md), and\n[time averaging](TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md).\n`ACCEPTED_DEPENDENCY_MAP.json` in the installed packet distinguishes their actual roles for each source body.\nIn particular, time averaging is used by the graph-word argument; it is not\na premise of the driven-state theorem. The separate driven-state companion uses the BV body here. Its prepared-pulse\nand driven-state results are not premises of this note. That source-role statement does\nnot import every theorem in a cited combined note.\n\nThe finite-energy pulse core and comparison remain explicitly archived\nprovisional inputs; no absent canonical pulse note is silently replaced by\nthe different finite-energy sector-selection note. Local sections 3 and 6,\nespecially L23-L24, supply physical cell support; L18 fixes the field\nnormalization. Historical Local L10 support attributions in inherited sources\nare corrected only in their already identified published copies or records.\n\nThe task used the checkout reported by root as clean at\n`4ff0ff1d7868b24d7854428110512daed13530f9`, branch\n`physics-loop/toe-energy-protocol-20261012`, stacked on regular PR9506.\nRoot reported main `516cb69d8487ff04f8a48e065d3dcbe71d7dd237`.\nThe source and publication-preparation workers ran no Git commands.\nExact file hashes were checked. Root execution must separately verify the\nbranch, exact base, clean state, parent identities and frozen source bytes. Front-matter dependency traversal\nrecords the transitive source graph; it is not a complete proof or audit of\nthat graph. Existing parent status text and formal appendices confer no new\nanalytic verification on these arguments.\n\nThe supplied dynamics, representation, state/control/readout prescriptions,\nactual gaps, support restrictions and stated convergence resources remain\nhypotheses. Every counterexample retains its original actual-model or abstract\nscope. No new low-block, phase-space/escape, energy-distribution/weighted-trace,\nsmooth-high-band or checkpoint/queue contents are included in this assembly.\nThe graph/native correction record is archived whole for byte preservation;\nonly its graph wording item 2 changes a selected body here.\n\nAt publication-preparation freeze, no scientific, numerical, symbolic or\nformal program, proposed identity tool or publication driver had been run.\nNo checkout, checkpoint, queue, editable prompt, axiom, Git/PR or audit surface\nwas changed by either worker. The guarded program and new publication wrappers\nrequire root review of their exact bytes before execution. Later execution\nrecords report actual integration outcomes; formal retained status remains\nwith the independent audit path.\n",
+          "wrapper_path": "wrappers/bv_graph_appendix.md"
+        }
+      ],
+      "published_bytes": 82120,
+      "published_lines": 1581,
+      "published_sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/payload/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "9ce82268fc8acdbff86d1e9c6ca7b2218fb3088c06486e959429fa5a0ea71eda",
+      "additional_mathematical_body_edits": [],
+      "claim_id": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "diff": "publication_diffs/prepared_driven_publication.diff.gz",
+      "diff_sha256": "23fba2608e8b54e4073afaa6753fd07dd60a3732db0c0a00e7468f224b7d33b9",
+      "diff_stored_sha256": "5384315537c03383eb95a537dbb1e52c7e1850670ace3352ea10b94b6337c8c2",
+      "key": "prepared_driven",
+      "note": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3780,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 67,
+          "sha256": "cc036cf0d53f4b02f6cb3b7005b116fa646977a80989622156e4b7ffe5d28305",
+          "text": "---\nclaim_id: prepared_driven_state_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Finite-form near-ground pulse work and actual excess; full driven density and separate free-energy limits, with original fixed-window hypotheses and scoped controls.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: source_accepted_publication_scope_separately_gated\nrunner: scripts/prepared_driven_state_identity_2026_10_13.py\nscientific_execution: no_mathematical_predicates_in_identity_tools\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: supplied-model conditional arguments with explicit provisional dependencies\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: complete conditional proof bodies preserved with two specifically authorized wording corrections across this source assembly\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: exact publication review and source integration, cumulative stack checks, then independent retained audit\nupstream_dependencies:\n  - bv_graph_energy_protocol_bounded_theorem_note_2026-10-13\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n  - adiabatic_ground_preparation_bounded_theorem_note_2026-10-12\n  - excitation_pulse_response_bounded_theorem_note_2026-10-12\n---\n\n# Prepared-pulse robustness and driven-state sources\n\n**Type:** bounded_theorem\n\nStatus: conditional-support. Root accepted the pinned source assembly for\npublication preparation. Exact publication-wrapper and program acceptance is\nrecorded separately in the installed evidence packet; source acceptance alone\nauthorizes no execution. The filename date is not evidence of publication.\n\nThe two complete arguments below retain their own local notation, equation\nlabels, premises, controls and historical status/exposure statements. Each\nsource was frozen before its later source-exposed comparison. The assembly\ndoes not create a new combined theorem by concatenating them. All original\nbytes are recoverable from the content-addressed source archive.\n\nThe selected sources are `PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md` and `DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md`. Original phrases saying\nthat comparisons or root reads are pending describe their earlier freezes.\nThe later complete comparison reports are archived separately, and root reports\ncomplete reads of the four independent bodies and four comparison reports.\nThis worker read those eight complete bodies during source assembly. Root\nreused its complete body/comparison reads at unchanged hashes, read the six\nnew source wrappers and changed surrounding arguments, and mechanically\nreconstructed all twelve complete diffs and 211 original aliases. Root did not\nclaim to manually reread every assembled unchanged line or complete diff.\nThe exact source acceptance record preserves those coverage limits. Publication\nwrapper/program review is a separate gate. This chronology is not a new proof.\n\nThe derivation/comparison lineage is separate-context reasoning within the same\nselected model family with shared parents, followed by source-exposed checks.\nIt is neither model-diverse checking, analytic Lean verification nor retained\naudit. Current remains `open_gate`; every inherited conditional/open premise\nremains explicit. No N1/N5 packet PASS or global no-go is assigned.\n\n## First complete source body\n\n",
+          "wrapper_path": "wrappers/prepared_driven_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 3780,
+          "bytes": 32709,
+          "first_line": 68,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 715,
+          "original_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md",
+          "original_source_sha256": "0096ba164586386693fe506863da477224d1327febe6afbe861bd70417a4ea68",
+          "sha256": "0096ba164586386693fe506863da477224d1327febe6afbe861bd70417a4ea68",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/body_copies/PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md",
+          "source_sha256": "0096ba164586386693fe506863da477224d1327febe6afbe861bd70417a4ea68"
+        },
+        {
+          "byte_offset": 36489,
+          "bytes": 414,
+          "first_line": 716,
+          "kind": "publication_wrapper",
+          "last_line": 725,
+          "sha256": "2ab2fbc7726c08dd5b534f887be57ed012d3ee7856973c3648d4b7ce7a1c0e78",
+          "text": "\n\n## Second complete source body\n\nThe following driven-state argument is preserved in full. Its one tracked edit\nrequires the initial density to be supported in the even sector when invoking\nthe optional larger gap. Mere parity invariance is insufficient. No displayed\nformula or constant is changed. This argument needs the BV work and prepared-\npulse premises; it does not import the graph-energy improvements.\n\n",
+          "wrapper_path": "wrappers/prepared_driven_between.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 36903,
+          "bytes": 33519,
+          "first_line": 726,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 1349,
+          "original_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "original_source_sha256": "e542889eea6a1cc708874e49e92c87b066ce4a6e539b0b3d7607c86228abb82b",
+          "sha256": "f14e80f2628aeb5fce225abb13a2fedf04a82d43db36c670f480d70c2cf12a4d",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/body_copies/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "source_sha256": "f14e80f2628aeb5fce225abb13a2fedf04a82d43db36c670f480d70c2cf12a4d"
+        },
+        {
+          "byte_offset": 70422,
+          "bytes": 4884,
+          "first_line": 1350,
+          "kind": "publication_wrapper",
+          "last_line": 1420,
+          "sha256": "e1981468bc45c845834cc1b959538a95628e7a8b0e4e79bbd690c534083a584c",
+          "text": "\n\n## Publication provenance and dependency scope\n\nThe installed [evidence map](../.claude/science/physics-loops/toe-energy-protocol-20261012/EVIDENCE_MAP.json)\nindexes every accepted source-package member and all 211 original aliases.\nThe original/copy manifests, correction records, complete source diffs,\nline-piece map and canonical-parent history remain losslessly archived.\nThe [publication map](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_EDITS.json)\nrecords every new wrapper substitution and full publication diff. All four\naccepted scientific bodies retain their exact bytes, including the two\npreviously accepted wording corrections. No further body edit is made.\n\nThe [source review](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_REVIEW.json)\nand [root reconstruction](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_RECONSTRUCTION.json)\nstate the actual earlier read and mechanical coverage. The distinct\n[publication acceptance](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ROOT_ACCEPTANCE.json)\nand [publication review](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ASSEMBLY_REVIEW.txt)\nmust be supplied by root before guarded integration can install this note.\nThe [identity tool](../scripts/prepared_driven_state_identity_2026_10_13.py) checks source bytes and reconstruction\nonly, with zero mathematical predicates. Its cache is integration evidence,\nnot a proof, analytic formal check, new independent review or audit.\n\nThe canonical source dependencies are the supplied [Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Concrete](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[bounded interaction and ground](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[preparation](ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[response](EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md).\nEnergy-transfer sources remain inherited through their named parent roles;\ntime averaging belongs to the separate graph-energy argument.\n`ACCEPTED_DEPENDENCY_MAP.json` in the installed packet distinguishes their actual roles for each source body.\nIn particular, time averaging is used by the graph-word argument; it is not\na premise of the driven-state theorem. The latter uses the BV body in the\npaired [BV/graph note](BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md)\nand the complete prepared-pulse body above. That source-role statement does\nnot import every theorem in a cited combined note.\n\nThe finite-energy pulse core and comparison remain explicitly archived\nprovisional inputs; no absent canonical pulse note is silently replaced by\nthe different finite-energy sector-selection note. Local sections 3 and 6,\nespecially L23-L24, supply physical cell support; L18 fixes the field\nnormalization. Historical Local L10 support attributions in inherited sources\nare corrected only in their already identified published copies or records.\n\nThe task used the checkout reported by root as clean at\n`4ff0ff1d7868b24d7854428110512daed13530f9`, branch\n`physics-loop/toe-energy-protocol-20261012`, stacked on regular PR9506.\nRoot reported main `516cb69d8487ff04f8a48e065d3dcbe71d7dd237`.\nThe source and publication-preparation workers ran no Git commands.\nExact file hashes were checked. Root execution must separately verify the\nbranch, exact base, clean state, parent identities and frozen source bytes. Front-matter dependency traversal\nrecords the transitive source graph; it is not a complete proof or audit of\nthat graph. Existing parent status text and formal appendices confer no new\nanalytic verification on these arguments.\n\nThe supplied dynamics, representation, state/control/readout prescriptions,\nactual gaps, support restrictions and stated convergence resources remain\nhypotheses. Every counterexample retains its original actual-model or abstract\nscope. No new low-block, phase-space/escape, energy-distribution/weighted-trace,\nsmooth-high-band or checkpoint/queue contents are included in this assembly.\nThe graph/native correction record is archived whole for byte preservation;\nonly its graph wording item 2 changes a selected body here.\n\nAt publication-preparation freeze, no scientific, numerical, symbolic or\nformal program, proposed identity tool or publication driver had been run.\nNo checkout, checkpoint, queue, editable prompt, axiom, Git/PR or audit surface\nwas changed by either worker. The guarded program and new publication wrappers\nrequire root review of their exact bytes before execution. Later execution\nrecords report actual integration outcomes; formal retained status remains\nwith the independent audit path.\n",
+          "wrapper_path": "wrappers/prepared_driven_appendix.md"
+        }
+      ],
+      "published_bytes": 75306,
+      "published_lines": 1420,
+      "published_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9"
+    }
+  ],
+  "schema": "energy-protocol-publication-wrapper-transformations-v1",
+  "source_freeze_sha256": "706f533560196f4411f94100111e9c4720aefc66ee631d334a88518c56dd254e",
+  "source_stage_authorized_body_edits": {
+    "BV_and_PREPARED_byte_identical": true,
+    "edits": [
+      {
+        "authority": {
+          "bytes": 3546,
+          "lines": 55,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_NATIVE_POSTCOMPARISON_CORRECTIONS.md",
+          "sha256": "11d55133cd32a47d2bc79151a12f3fb2512bd79ea5144fa40eb747b221e9076f"
+        },
+        "authority_scope": "item 2 only",
+        "corrected_sha256": "b0dbfbfa6c9020bb9c88d5b8f16c968863da99835592b0f9638335eec938a795",
+        "new": "For B=0 the parent amplitude estimate 2 min(1,C_ad/tau) also remains\navailable; take the minimum with the bound in (20). The displayed constants\ncross; there is no uniform ordering of those older bounds.",
+        "old": "For B=0 the already sharper parent amplitude estimate\n2 min(1,C_ad/tau) remains available.",
+        "original_byte_end_exclusive": 14065,
+        "original_byte_start": 13975,
+        "original_line_end": 279,
+        "original_line_start": 278,
+        "source": {
+          "bytes": 45943,
+          "lines": 887,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+          "sha256": "5c147e2f079f12eb6a4d2f75264ffa51757729c8d444634b203542706fb53967"
+        }
+      },
+      {
+        "authority": {
+          "bytes": 1803,
+          "lines": 29,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_POSTCOMPARISON_CLARIFICATION.md",
+          "sha256": "ba2581da9bc0580866226317509124f6379636a45410700f1fa527540560ce36"
+        },
+        "authority_scope": "opening support clarification",
+        "corrected_sha256": "f14e80f2628aeb5fce225abb13a2fedf04a82d43db36c670f480d70c2cf12a4d",
+        "new": "An initial density supported in the even sector and an even pulse",
+        "old": "An even initial state and even pulse",
+        "original_byte_end_exclusive": 1644,
+        "original_byte_start": 1608,
+        "original_line_end": 28,
+        "original_line_start": 28,
+        "source": {
+          "bytes": 33490,
+          "lines": 624,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "sha256": "e542889eea6a1cc708874e49e92c87b066ce4a6e539b0b3d7607c86228abb82b"
+        }
+      }
+    ],
+    "graph_X18": "Full comparison is archived; X18 is not added to either publication body or wrapper as a new theorem.",
+    "no_formula_or_constant_change": true,
+    "only_two_scientific_wording_edits": true,
+    "originals_unchanged": true,
+    "other_historical_status_text_remains_literal": true,
+    "root_graph_zero_absorption_sentence": "Historical root source is archived unchanged. Its item-1 correction remains recorded, but that root body is not a selected publication body."
+  },
+  "wrapper_changes": [
+    {
+      "diff": "publication_diffs/bv_graph_header.md.diff.gz",
+      "diff_sha256": "f4d23884f24c5f44dd696c8492451e04a2328239eb0e705dcaa77ed06d51492b",
+      "diff_stored_sha256": "4bcb934ae1abdfa13afdf28c809a3bbcaee8dae1faa9ba37b95d90ed564ff6e8",
+      "exact_character_substitutions": [
+        {
+          "new": "accepted_publicati",
+          "new_character_range": [
+            431,
+            449
+          ],
+          "old": "",
+          "old_character_range": [
+            431,
+            431
+          ]
+        },
+        {
+          "new": "_scope_separate",
+          "new_character_range": [
+            451,
+            466
+          ],
+          "old": "",
+          "old_character_range": [
+            433,
+            433
+          ]
+        },
+        {
+          "new": "gat",
+          "new_character_range": [
+            469,
+            472
+          ],
+          "old": "",
+          "old_character_range": [
+            436,
+            436
+          ]
+        },
+        {
+          "new": "d\nrunner: scripts/bv_gr",
+          "new_character_range": [
+            473,
+            496
+          ],
+          "old": "x",
+          "old_character_range": [
+            437,
+            438
+          ]
+        },
+        {
+          "new": "ph",
+          "new_character_range": [
+            497,
+            499
+          ],
+          "old": "ct",
+          "old_character_range": [
+            439,
+            441
+          ]
+        },
+        {
+          "new": "energy_p",
+          "new_character_range": [
+            500,
+            508
+          ],
+          "old": "",
+          "old_character_range": [
+            442,
+            442
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            510,
+            511
+          ],
+          "old": "",
+          "old_character_range": [
+            444,
+            444
+          ]
+        },
+        {
+          "new": "col",
+          "new_character_range": [
+            512,
+            515
+          ],
+          "old": "t",
+          "old_character_range": [
+            445,
+            446
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            516,
+            516
+          ],
+          "old": "rev",
+          "old_character_range": [
+            447,
+            450
+          ]
+        },
+        {
+          "new": "d",
+          "new_character_range": [
+            517,
+            518
+          ],
+          "old": "ew_p",
+          "old_character_range": [
+            451,
+            455
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            520,
+            521
+          ],
+          "old": "d",
+          "old_character_range": [
+            457,
+            458
+          ]
+        },
+        {
+          "new": "ty_2026_10_13.py",
+          "new_character_range": [
+            522,
+            538
+          ],
+          "old": "ng",
+          "old_character_range": [
+            459,
+            461
+          ]
+        },
+        {
+          "new": "_math",
+          "new_character_range": [
+            563,
+            568
+          ],
+          "old": "n",
+          "old_character_range": [
+            486,
+            487
+          ]
+        },
+        {
+          "new": "matical_predicates",
+          "new_character_range": [
+            569,
+            587
+          ],
+          "old": "",
+          "old_character_range": [
+            488,
+            488
+          ]
+        },
+        {
+          "new": "iden",
+          "new_character_range": [
+            591,
+            595
+          ],
+          "old": "",
+          "old_character_range": [
+            492,
+            492
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            596,
+            596
+          ],
+          "old": "h",
+          "old_character_range": [
+            493,
+            494
+          ]
+        },
+        {
+          "new": "ty_tool",
+          "new_character_range": [
+            597,
+            604
+          ],
+          "old": "",
+          "old_character_range": [
+            495,
+            495
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            605,
+            605
+          ],
+          "old": "_assembly",
+          "old_character_range": [
+            496,
+            505
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1168,
+            1168
+          ],
+          "old": "root review of ",
+          "old_character_range": [
+            1068,
+            1083
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1173,
+            1173
+          ],
+          "old": " source assembly before any separate",
+          "old_character_range": [
+            1088,
+            1124
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1185,
+            1185
+          ],
+          "old": "-execution",
+          "old_character_range": [
+            1136,
+            1146
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1186,
+            1186
+          ],
+          "old": "p",
+          "old_character_range": [
+            1147,
+            1148
+          ]
+        },
+        {
+          "new": "view ",
+          "new_character_range": [
+            1188,
+            1193
+          ],
+          "old": "p",
+          "old_character_range": [
+            1150,
+            1151
+          ]
+        },
+        {
+          "new": "nd source integ",
+          "new_character_range": [
+            1194,
+            1209
+          ],
+          "old": "",
+          "old_character_range": [
+            1152,
+            1152
+          ]
+        },
+        {
+          "new": ", cumulative stack checks, then independent retained audit",
+          "new_character_range": [
+            1215,
+            1273
+          ],
+          "old": "",
+          "old_character_range": [
+            1158,
+            1158
+          ]
+        },
+        {
+          "new": "Root",
+          "new_character_range": [
+            1904,
+            1908
+          ],
+          "old": "This is",
+          "old_character_range": [
+            1789,
+            1796
+          ]
+        },
+        {
+          "new": "ccepted the pinned",
+          "new_character_range": [
+            1910,
+            1928
+          ],
+          "old": "",
+          "old_character_range": [
+            1798,
+            1798
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1935,
+            1935
+          ],
+          "old": "-only",
+          "old_character_range": [
+            1805,
+            1810
+          ]
+        },
+        {
+          "new": "fo",
+          "new_character_range": [
+            1945,
+            1947
+          ],
+          "old": "awaiting ",
+          "old_character_range": [
+            1820,
+            1829
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1948,
+            1948
+          ],
+          "old": "oot review",
+          "old_character_range": [
+            1830,
+            1840
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1949,
+            1949
+          ],
+          "old": "of its exact final bytes. It has no ",
+          "old_character_range": [
+            1841,
+            1877
+          ]
+        },
+        {
+          "new": "pr",
+          "new_character_range": [
+            1961,
+            1963
+          ],
+          "old": "",
+          "old_character_range": [
+            1889,
+            1889
+          ]
+        },
+        {
+          "new": "pa",
+          "new_character_range": [
+            1964,
+            1966
+          ],
+          "old": "xecuto",
+          "old_character_range": [
+            1890,
+            1896
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1967,
+            1967
+          ],
+          "old": " or scientific runner.\nThe date in the filename identifies the intended public",
+          "old_character_range": [
+            1897,
+            1975
+          ]
+        },
+        {
+          "new": ".",
+          "new_character_range": [
+            1972,
+            1973
+          ],
+          "old": "",
+          "old_character_range": [
+            1980,
+            1980
+          ]
+        },
+        {
+          "new": "Ex",
+          "new_character_range": [
+            1974,
+            1976
+          ],
+          "old": "date; this p",
+          "old_character_range": [
+            1981,
+            1993
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1978,
+            1978
+          ],
+          "old": "kage\ndoes not assert tha",
+          "old_character_range": [
+            1995,
+            2019
+          ]
+        },
+        {
+          "new": "-wrapper",
+          "new_character_range": [
+            1991,
+            1999
+          ],
+          "old": "",
+          "old_character_range": [
+            2032,
+            2032
+          ]
+        },
+        {
+          "new": "and program acceptance is\nrecorded separately in t",
+          "new_character_range": [
+            2000,
+            2050
+          ],
+          "old": "",
+          "old_character_range": [
+            2033,
+            2033
+          ]
+        },
+        {
+          "new": "e inst",
+          "new_character_range": [
+            2051,
+            2057
+          ],
+          "old": "",
+          "old_character_range": [
+            2034,
+            2034
+          ]
+        },
+        {
+          "new": "lled evidence packet; source acceptance alone\nauthorize",
+          "new_character_range": [
+            2058,
+            2113
+          ],
+          "old": "",
+          "old_character_range": [
+            2035,
+            2035
+          ]
+        },
+        {
+          "new": "n",
+          "new_character_range": [
+            2115,
+            2116
+          ],
+          "old": "",
+          "old_character_range": [
+            2037,
+            2037
+          ]
+        },
+        {
+          "new": " exe",
+          "new_character_range": [
+            2117,
+            2121
+          ],
+          "old": "c",
+          "old_character_range": [
+            2038,
+            2039
+          ]
+        },
+        {
+          "new": "tion. Th",
+          "new_character_range": [
+            2123,
+            2131
+          ],
+          "old": "rr",
+          "old_character_range": [
+            2041,
+            2043
+          ]
+        },
+        {
+          "new": " filename ",
+          "new_character_range": [
+            2132,
+            2142
+          ],
+          "old": "",
+          "old_character_range": [
+            2044,
+            2044
+          ]
+        },
+        {
+          "new": "ate is not evidence of publication",
+          "new_character_range": [
+            2143,
+            2177
+          ],
+          "old": "",
+          "old_character_range": [
+            2045,
+            2045
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            2935,
+            2935
+          ],
+          "old": ".",
+          "old_character_range": [
+            2803,
+            2804
+          ]
+        },
+        {
+          "new": "during sour",
+          "new_character_range": [
+            2936,
+            2947
+          ],
+          "old": "Exa",
+          "old_character_range": [
+            2805,
+            2808
+          ]
+        },
+        {
+          "new": "e",
+          "new_character_range": [
+            2948,
+            2949
+          ],
+          "old": "t",
+          "old_character_range": [
+            2809,
+            2810
+          ]
+        },
+        {
+          "new": ". Root\nreused its complete body/comparison reads at unchanged hashes, read the six\nnew source wrappers and changed surrounding arguments, and mechanically\nreconstructed all twelve complete diffs and 211 original aliases. Root did not\nclaim to manually reread every assembled unchanged line or complete diff.\nThe exact source",
+          "new_character_range": [
+            2958,
+            3282
+          ],
+          "old": "",
+          "old_character_range": [
+            2819,
+            2819
+          ]
+        },
+        {
+          "new": "cord preserves those coverage li",
+          "new_character_range": [
+            3296,
+            3328
+          ],
+          "old": "",
+          "old_character_range": [
+            2833,
+            2833
+          ]
+        },
+        {
+          "new": "its. Public",
+          "new_character_range": [
+            3329,
+            3340
+          ],
+          "old": "",
+          "old_character_range": [
+            2834,
+            2834
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            3341,
+            3342
+          ],
+          "old": "",
+          "old_character_range": [
+            2835,
+            2835
+          ]
+        },
+        {
+          "new": "o",
+          "new_character_range": [
+            3343,
+            3344
+          ],
+          "old": "",
+          "old_character_range": [
+            2836,
+            2836
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3345,
+            3345
+          ],
+          "old": "s",
+          "old_character_range": [
+            2837,
+            2838
+          ]
+        },
+        {
+          "new": "wrap",
+          "new_character_range": [
+            3346,
+            3350
+          ],
+          "old": "",
+          "old_character_range": [
+            2839,
+            2839
+          ]
+        },
+        {
+          "new": "r/program rev",
+          "new_character_range": [
+            3352,
+            3365
+          ],
+          "old": "nd",
+          "old_character_range": [
+            2841,
+            2843
+          ]
+        },
+        {
+          "new": "ew is a separate ",
+          "new_character_range": [
+            3366,
+            3383
+          ],
+          "old": "n",
+          "old_character_range": [
+            2844,
+            2845
+          ]
+        },
+        {
+          "new": "ate",
+          "new_character_range": [
+            3384,
+            3387
+          ],
+          "old": "",
+          "old_character_range": [
+            2846,
+            2846
+          ]
+        },
+        {
+          "new": "is",
+          "new_character_range": [
+            3391,
+            3393
+          ],
+          "old": "at",
+          "old_character_range": [
+            2850,
+            2852
+          ]
+        },
+        {
+          "new": "i",
+          "new_character_range": [
+            3405,
+            3406
+          ],
+          "old": "doe",
+          "old_character_range": [
+            2864,
+            2867
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3412,
+            3412
+          ],
+          "old": "supply ",
+          "old_character_range": [
+            2873,
+            2880
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3417,
+            3417
+          ],
+          "old": " independent",
+          "old_character_range": [
+            2885,
+            2897
+          ]
+        }
+      ],
+      "publication": "wrappers/bv_graph_header.md",
+      "publication_sha256": "76aaecd7684249490c7cd95d482f2de75d3c75f471be873307e1f04e7ca7fc39",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/wrappers/bv_graph_header.md",
+      "source_sha256": "c27cd2b0854d7b00b03e25afac145a71188fab22d0828560a75bf9c38718c100"
+    },
+    {
+      "diff": "publication_diffs/bv_graph_between.md.diff.gz",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "exact_character_substitutions": [],
+      "publication": "wrappers/bv_graph_between.md",
+      "publication_sha256": "4689e058aa9d2cdb1ec53fd9be590a90d47877c8386a0b0fb632efa2f7263a93",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/wrappers/bv_graph_between.md",
+      "source_sha256": "4689e058aa9d2cdb1ec53fd9be590a90d47877c8386a0b0fb632efa2f7263a93"
+    },
+    {
+      "diff": "publication_diffs/bv_graph_appendix.md.diff.gz",
+      "diff_sha256": "6edfedd70141586cc8cd63213d0831042896980078520702499b0873396762f8",
+      "diff_stored_sha256": "1adb93bb7634ba149b5d3c79dd2e6e094485a6880fd7a0d2474239f9ddd8b9aa",
+      "exact_character_substitutions": [
+        {
+          "new": "Pu",
+          "new_character_range": [
+            5,
+            7
+          ],
+          "old": "Assem",
+          "old_character_range": [
+            5,
+            10
+          ]
+        },
+        {
+          "new": "ication",
+          "new_character_range": [
+            9,
+            16
+          ],
+          "old": "y",
+          "old_character_range": [
+            12,
+            13
+          ]
+        },
+        {
+          "new": "installed [evidence map](../.claude/science/physics-loops/toe-energy-protocol-20261012/EVIDENCE_MAP.json)\nind",
+          "new_character_range": [
+            54,
+            163
+          ],
+          "old": "",
+          "old_character_range": [
+            51,
+            51
+          ]
+        },
+        {
+          "new": "es every ",
+          "new_character_range": [
+            165,
+            174
+          ],
+          "old": "",
+          "old_character_range": [
+            53,
+            53
+          ]
+        },
+        {
+          "new": "cep",
+          "new_character_range": [
+            176,
+            179
+          ],
+          "old": "",
+          "old_character_range": [
+            55,
+            55
+          ]
+        },
+        {
+          "new": "ed source-package member and all 211",
+          "new_character_range": [
+            180,
+            216
+          ],
+          "old": "",
+          "old_character_range": [
+            56,
+            56
+          ]
+        },
+        {
+          "new": " alia",
+          "new_character_range": [
+            225,
+            230
+          ],
+          "old": "",
+          "old_character_range": [
+            65,
+            65
+          ]
+        },
+        {
+          "new": "es.\nThe",
+          "new_character_range": [
+            231,
+            238
+          ],
+          "old": ",",
+          "old_character_range": [
+            66,
+            67
+          ]
+        },
+        {
+          "new": "original/",
+          "new_character_range": [
+            239,
+            248
+          ],
+          "old": "",
+          "old_character_range": [
+            68,
+            68
+          ]
+        },
+        {
+          "new": "py ",
+          "new_character_range": [
+            250,
+            253
+          ],
+          "old": "",
+          "old_character_range": [
+            70,
+            70
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            254,
+            254
+          ],
+          "old": "p",
+          "old_character_range": [
+            71,
+            72
+          ]
+        },
+        {
+          "new": "n",
+          "new_character_range": [
+            255,
+            256
+          ],
+          "old": "r",
+          "old_character_range": [
+            73,
+            74
+          ]
+        },
+        {
+          "new": "fe",
+          "new_character_range": [
+            257,
+            259
+          ],
+          "old": "",
+          "old_character_range": [
+            75,
+            75
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            260,
+            261
+          ],
+          "old": "on",
+          "old_character_range": [
+            76,
+            78
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            262,
+            262
+          ],
+          "old": ", root evidence",
+          "old_character_range": [
+            79,
+            94
+          ]
+        },
+        {
+          "new": "complete ",
+          "new_character_range": [
+            284,
+            293
+          ],
+          "old": "",
+          "old_character_range": [
+            116,
+            116
+          ]
+        },
+        {
+          "new": " diffs,",
+          "new_character_range": [
+            299,
+            306
+          ],
+          "old": "",
+          "old_character_range": [
+            122,
+            122
+          ]
+        },
+        {
+          "new": "line-",
+          "new_character_range": [
+            307,
+            312
+          ],
+          "old": "co",
+          "old_character_range": [
+            123,
+            125
+          ]
+        },
+        {
+          "new": "ce map",
+          "new_character_range": [
+            315,
+            321
+          ],
+          "old": "s",
+          "old_character_range": [
+            128,
+            129
+          ]
+        },
+        {
+          "new": "hi",
+          "new_character_range": [
+            343,
+            345
+          ],
+          "old": "",
+          "old_character_range": [
+            151,
+            151
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            346,
+            347
+          ],
+          "old": "napsh",
+          "old_character_range": [
+            152,
+            157
+          ]
+        },
+        {
+          "new": "ry",
+          "new_character_range": [
+            348,
+            350
+          ],
+          "old": "ts",
+          "old_character_range": [
+            158,
+            160
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            351,
+            351
+          ],
+          "old": "a",
+          "old_character_range": [
+            161,
+            162
+          ]
+        },
+        {
+          "new": "ma",
+          "new_character_range": [
+            353,
+            355
+          ],
+          "old": " ",
+          "old_character_range": [
+            164,
+            165
+          ]
+        },
+        {
+          "new": " lossl",
+          "new_character_range": [
+            357,
+            363
+          ],
+          "old": "d",
+          "old_character_range": [
+            167,
+            168
+          ]
+        },
+        {
+          "new": "ssly",
+          "new_character_range": [
+            364,
+            368
+          ],
+          "old": "xed",
+          "old_character_range": [
+            169,
+            172
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            369,
+            369
+          ],
+          "old": "by\n`source_",
+          "old_character_range": [
+            173,
+            184
+          ]
+        },
+        {
+          "new": "d.\n",
+          "new_character_range": [
+            376,
+            379
+          ],
+          "old": "/ORIGINAL_MANIFES",
+          "old_character_range": [
+            191,
+            208
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            380,
+            380
+          ],
+          "old": ".json` and `source_archive/COPY_MANIFEST.json`\nin t",
+          "old_character_range": [
+            209,
+            260
+          ]
+        },
+        {
+          "new": "[publication map](../.claude/",
+          "new_character_range": [
+            383,
+            412
+          ],
+          "old": "",
+          "old_character_range": [
+            263,
+            263
+          ]
+        },
+        {
+          "new": "cien",
+          "new_character_range": [
+            413,
+            417
+          ],
+          "old": "our",
+          "old_character_range": [
+            264,
+            267
+          ]
+        },
+        {
+          "new": "/",
+          "new_character_range": [
+            419,
+            420
+          ],
+          "old": " ",
+          "old_character_range": [
+            269,
+            270
+          ]
+        },
+        {
+          "new": "hysi",
+          "new_character_range": [
+            421,
+            425
+          ],
+          "old": "a",
+          "old_character_range": [
+            271,
+            272
+          ]
+        },
+        {
+          "new": "s-loops/toe-ener",
+          "new_character_range": [
+            426,
+            442
+          ],
+          "old": "ka",
+          "old_character_range": [
+            273,
+            275
+          ]
+        },
+        {
+          "new": "y-protocol-20261012/PUBLIC",
+          "new_character_range": [
+            443,
+            469
+          ],
+          "old": "e. `",
+          "old_character_range": [
+            276,
+            280
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            470,
+            470
+          ],
+          "old": "U",
+          "old_character_range": [
+            281,
+            282
+          ]
+        },
+        {
+          "new": "I",
+          "new_character_range": [
+            471,
+            472
+          ],
+          "old": "H",
+          "old_character_range": [
+            283,
+            284
+          ]
+        },
+        {
+          "new": "N",
+          "new_character_range": [
+            473,
+            474
+          ],
+          "old": "RIZED_BODY",
+          "old_character_range": [
+            285,
+            295
+          ]
+        },
+        {
+          "new": ")\nr",
+          "new_character_range": [
+            485,
+            488
+          ],
+          "old": "` nam",
+          "old_character_range": [
+            306,
+            311
+          ]
+        },
+        {
+          "new": "cord",
+          "new_character_range": [
+            489,
+            493
+          ],
+          "old": "",
+          "old_character_range": [
+            312,
+            312
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            501,
+            501
+          ],
+          "old": "cha",
+          "old_character_range": [
+            320,
+            323
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            502,
+            502
+          ],
+          "old": "g",
+          "old_character_range": [
+            324,
+            325
+          ]
+        },
+        {
+          "new": "w",
+          "new_character_range": [
+            503,
+            504
+          ],
+          "old": "d body\nbyte; `LINE_PIECE_MAP.json` maps all",
+          "old_character_range": [
+            326,
+            369
+          ]
+        },
+        {
+          "new": "su",
+          "new_character_range": [
+            513,
+            515
+          ],
+          "old": "and ",
+          "old_character_range": [
+            378,
+            382
+          ]
+        },
+        {
+          "new": "st",
+          "new_character_range": [
+            516,
+            518
+          ],
+          "old": "ody p",
+          "old_character_range": [
+            383,
+            388
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            519,
+            519
+          ],
+          "old": "eces. The comple",
+          "old_character_range": [
+            389,
+            405
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            520,
+            520
+          ],
+          "old": "e\ncontext diffs incl",
+          "old_character_range": [
+            406,
+            426
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            521,
+            521
+          ],
+          "old": "de both correc",
+          "old_character_range": [
+            427,
+            441
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            525,
+            525
+          ],
+          "old": "s",
+          "old_character_range": [
+            445,
+            446
+          ]
+        },
+        {
+          "new": "fu",
+          "new_character_range": [
+            530,
+            532
+          ],
+          "old": "each who",
+          "old_character_range": [
+            451,
+            459
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            533,
+            533
+          ],
+          "old": "e assemb",
+          "old_character_range": [
+            460,
+            468
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            534,
+            534
+          ],
+          "old": "ed note.\n`PARENT_SOURCE_BINDINGS.json` keeps original and",
+          "old_character_range": [
+            469,
+            526
+          ]
+        },
+        {
+          "new": "cation diff. All four\naccept",
+          "new_character_range": [
+            540,
+            568
+          ],
+          "old": "sh",
+          "old_character_range": [
+            532,
+            534
+          ]
+        },
+        {
+          "new": "sci",
+          "new_character_range": [
+            571,
+            574
+          ],
+          "old": "par",
+          "old_character_range": [
+            537,
+            540
+          ]
+        },
+        {
+          "new": "ific",
+          "new_character_range": [
+            577,
+            581
+          ],
+          "old": "",
+          "old_character_range": [
+            543,
+            543
+          ]
+        },
+        {
+          "new": "bodies ret",
+          "new_character_range": [
+            582,
+            592
+          ],
+          "old": "h",
+          "old_character_range": [
+            544,
+            545
+          ]
+        },
+        {
+          "new": "in t",
+          "new_character_range": [
+            593,
+            597
+          ],
+          "old": "s",
+          "old_character_range": [
+            546,
+            547
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            599,
+            599
+          ],
+          "old": "s\nd",
+          "old_character_range": [
+            549,
+            552
+          ]
+        },
+        {
+          "new": "r exa",
+          "new_character_range": [
+            600,
+            605
+          ],
+          "old": "stin",
+          "old_character_range": [
+            553,
+            557
+          ]
+        },
+        {
+          "new": " bytes",
+          "new_character_range": [
+            607,
+            613
+          ],
+          "old": "",
+          "old_character_range": [
+            559,
+            559
+          ]
+        },
+        {
+          "new": " two\np",
+          "new_character_range": [
+            628,
+            634
+          ],
+          "old": "i",
+          "old_character_range": [
+            574,
+            575
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            635,
+            635
+          ],
+          "old": " ",
+          "old_character_range": [
+            576,
+            577
+          ]
+        },
+        {
+          "new": "v",
+          "new_character_range": [
+            636,
+            637
+          ],
+          "old": "arlier citat",
+          "old_character_range": [
+            578,
+            590
+          ]
+        },
+        {
+          "new": "usly accepted wordi",
+          "new_character_range": [
+            639,
+            658
+          ],
+          "old": "",
+          "old_character_range": [
+            592,
+            592
+          ]
+        },
+        {
+          "new": "g",
+          "new_character_range": [
+            659,
+            660
+          ],
+          "old": "",
+          "old_character_range": [
+            593,
+            593
+          ]
+        },
+        {
+          "new": ". No further body edit is made.\n\nThe [source review](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_REVIEW.json)\nand [root reconstruction](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_RECONSTRUCTION.json)\nstate the actual earlier read",
+          "new_character_range": [
+            672,
+            994
+          ],
+          "old": "",
+          "old_character_range": [
+            605,
+            605
+          ]
+        },
+        {
+          "new": "mec",
+          "new_character_range": [
+            999,
+            1002
+          ],
+          "old": "",
+          "old_character_range": [
+            610,
+            610
+          ]
+        },
+        {
+          "new": "an",
+          "new_character_range": [
+            1003,
+            1005
+          ],
+          "old": "istor",
+          "old_character_range": [
+            611,
+            616
+          ]
+        },
+        {
+          "new": "cove",
+          "new_character_range": [
+            1010,
+            1014
+          ],
+          "old": "w",
+          "old_character_range": [
+            621,
+            622
+          ]
+        },
+        {
+          "new": "g",
+          "new_character_range": [
+            1016,
+            1017
+          ],
+          "old": "pp",
+          "old_character_range": [
+            624,
+            626
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1018,
+            1018
+          ],
+          "old": "r\nrevisions",
+          "old_character_range": [
+            627,
+            638
+          ]
+        },
+        {
+          "new": " di",
+          "new_character_range": [
+            1023,
+            1026
+          ],
+          "old": "",
+          "old_character_range": [
+            643,
+            643
+          ]
+        },
+        {
+          "new": "tinct\n[publication acceptance](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ROOT_ACCEPTANCE.json)\nand [publication review](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ASSEMBLY_REVIEW.txt)\nmust b",
+          "new_character_range": [
+            1027,
+            1280
+          ],
+          "old": "",
+          "old_character_range": [
+            644,
+            644
+          ]
+        },
+        {
+          "new": "su",
+          "new_character_range": [
+            1282,
+            1284
+          ],
+          "old": "",
+          "old_character_range": [
+            646,
+            646
+          ]
+        },
+        {
+          "new": "plied by root before guarded integr",
+          "new_character_range": [
+            1285,
+            1320
+          ],
+          "old": "",
+          "old_character_range": [
+            647,
+            647
+          ]
+        },
+        {
+          "new": "ion can install t",
+          "new_character_range": [
+            1322,
+            1339
+          ],
+          "old": "",
+          "old_character_range": [
+            649,
+            649
+          ]
+        },
+        {
+          "new": "i",
+          "new_character_range": [
+            1340,
+            1341
+          ],
+          "old": "",
+          "old_character_range": [
+            650,
+            650
+          ]
+        },
+        {
+          "new": "note.\nThe [i",
+          "new_character_range": [
+            1343,
+            1355
+          ],
+          "old": "",
+          "old_character_range": [
+            652,
+            652
+          ]
+        },
+        {
+          "new": "ntity tool](../",
+          "new_character_range": [
+            1357,
+            1372
+          ],
+          "old": "",
+          "old_character_range": [
+            654,
+            654
+          ]
+        },
+        {
+          "new": "pts/",
+          "new_character_range": [
+            1376,
+            1380
+          ],
+          "old": "",
+          "old_character_range": [
+            658,
+            658
+          ]
+        },
+        {
+          "new": "v_graph_energy_protocol_identity_2026_10_13.py) checks sourc",
+          "new_character_range": [
+            1381,
+            1441
+          ],
+          "old": "",
+          "old_character_range": [
+            659,
+            659
+          ]
+        },
+        {
+          "new": "bytes and reconstruction\nonly, with zero mathematical ",
+          "new_character_range": [
+            1443,
+            1497
+          ],
+          "old": "",
+          "old_character_range": [
+            661,
+            661
+          ]
+        },
+        {
+          "new": "redicates. Its c",
+          "new_character_range": [
+            1498,
+            1514
+          ],
+          "old": "",
+          "old_character_range": [
+            662,
+            662
+          ]
+        },
+        {
+          "new": "he is integr",
+          "new_character_range": [
+            1516,
+            1528
+          ],
+          "old": "k",
+          "old_character_range": [
+            664,
+            665
+          ]
+        },
+        {
+          "new": "tion",
+          "new_character_range": [
+            1529,
+            1533
+          ],
+          "old": "ge",
+          "old_character_range": [
+            666,
+            668
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            1543,
+            1544
+          ],
+          "old": " ",
+          "old_character_range": [
+            678,
+            679
+          ]
+        },
+        {
+          "new": " proof, a",
+          "new_character_range": [
+            1549,
+            1558
+          ],
+          "old": "",
+          "old_character_range": [
+            684,
+            684
+          ]
+        },
+        {
+          "new": "alytic formal check, new",
+          "new_character_range": [
+            1559,
+            1583
+          ],
+          "old": "",
+          "old_character_range": [
+            685,
+            685
+          ]
+        },
+        {
+          "new": "dependen",
+          "new_character_range": [
+            1586,
+            1594
+          ],
+          "old": "s",
+          "old_character_range": [
+            688,
+            689
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1595,
+            1595
+          ],
+          "old": "alled",
+          "old_character_range": [
+            690,
+            695
+          ]
+        },
+        {
+          "new": "v",
+          "new_character_range": [
+            1598,
+            1599
+          ],
+          "old": "pos",
+          "old_character_range": [
+            698,
+            701
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1600,
+            1600
+          ],
+          "old": "tory\nrunn",
+          "old_character_range": [
+            702,
+            711
+          ]
+        },
+        {
+          "new": "w",
+          "new_character_range": [
+            1601,
+            1602
+          ],
+          "old": "r",
+          "old_character_range": [
+            712,
+            713
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1607,
+            1607
+          ],
+          "old": " completed a",
+          "old_character_range": [
+            718,
+            730
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1610,
+            1610
+          ],
+          "old": "t packe",
+          "old_character_range": [
+            733,
+            740
+          ]
+        },
+        {
+          "new": "ACCEPTED_",
+          "new_character_range": [
+            2301,
+            2310
+          ],
+          "old": "",
+          "old_character_range": [
+            1431,
+            1431
+          ]
+        },
+        {
+          "new": " in the installed packet",
+          "new_character_range": [
+            2330,
+            2354
+          ],
+          "old": "",
+          "old_character_range": [
+            1451,
+            1451
+          ]
+        },
+        {
+          "new": "The source and publication-preparation workers ran n",
+          "new_character_range": [
+            3431,
+            3483
+          ],
+          "old": "N",
+          "old_character_range": [
+            2528,
+            2529
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3496,
+            3496
+          ],
+          "old": " independently rechecked tho",
+          "old_character_range": [
+            2542,
+            2570
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3497,
+            3497
+          ],
+          "old": "e reports in this source-only task",
+          "old_character_range": [
+            2571,
+            2605
+          ]
+        },
+        {
+          "new": ". Root execution must separately verify the\nbranch, exact base, clean state, parent",
+          "new_character_range": [
+            3529,
+            3612
+          ],
+          "old": "",
+          "old_character_range": [
+            2637,
+            2637
+          ]
+        },
+        {
+          "new": "de",
+          "new_character_range": [
+            3614,
+            3616
+          ],
+          "old": "",
+          "old_character_range": [
+            2639,
+            2639
+          ]
+        },
+        {
+          "new": "titie",
+          "new_character_range": [
+            3617,
+            3622
+          ],
+          "old": "",
+          "old_character_range": [
+            2640,
+            2640
+          ]
+        },
+        {
+          "new": " and frozen source by",
+          "new_character_range": [
+            3623,
+            3644
+          ],
+          "old": "",
+          "old_character_range": [
+            2641,
+            2641
+          ]
+        },
+        {
+          "new": "s",
+          "new_character_range": [
+            3646,
+            3647
+          ],
+          "old": "ad",
+          "old_character_range": [
+            2643,
+            2645
+          ]
+        },
+        {
+          "new": "At publication-preparation freeze, n",
+          "new_character_range": [
+            4402,
+            4438
+          ],
+          "old": "N",
+          "old_character_range": [
+            3400,
+            3401
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            4474,
+            4475
+          ],
+          "old": " ",
+          "old_character_range": [
+            3437,
+            3438
+          ]
+        },
+        {
+          "new": ",",
+          "new_character_range": [
+            4489,
+            4490
+          ],
+          "old": "",
+          "old_character_range": [
+            3452,
+            3452
+          ]
+        },
+        {
+          "new": "proposed identity tool or public",
+          "new_character_range": [
+            4491,
+            4523
+          ],
+          "old": "w",
+          "old_character_range": [
+            3453,
+            3454
+          ]
+        },
+        {
+          "new": "tion driver had been",
+          "new_character_range": [
+            4524,
+            4544
+          ],
+          "old": "s",
+          "old_character_range": [
+            3455,
+            3456
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            4549,
+            4550
+          ],
+          "old": " ",
+          "old_character_range": [
+            3461,
+            3462
+          ]
+        },
+        {
+          "new": " ",
+          "new_character_range": [
+            4562,
+            4563
+          ],
+          "old": "\n",
+          "old_character_range": [
+            3474,
+            3475
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            4629,
+            4630
+          ],
+          "old": " ",
+          "old_character_range": [
+            3541,
+            3542
+          ]
+        },
+        {
+          "new": " by either worker",
+          "new_character_range": [
+            4641,
+            4658
+          ],
+          "old": "",
+          "old_character_range": [
+            3553,
+            3553
+          ]
+        },
+        {
+          "new": " ",
+          "new_character_range": [
+            4659,
+            4660
+          ],
+          "old": "\n",
+          "old_character_range": [
+            3554,
+            3555
+          ]
+        },
+        {
+          "new": "guarded pr",
+          "new_character_range": [
+            4664,
+            4674
+          ],
+          "old": "s",
+          "old_character_range": [
+            3559,
+            3560
+          ]
+        },
+        {
+          "new": "g",
+          "new_character_range": [
+            4675,
+            4676
+          ],
+          "old": "u",
+          "old_character_range": [
+            3561,
+            3562
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4677,
+            4677
+          ],
+          "old": "ce ",
+          "old_character_range": [
+            3563,
+            3566
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4678,
+            4678
+          ],
+          "old": "sse",
+          "old_character_range": [
+            3567,
+            3570
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4679,
+            4679
+          ],
+          "old": "bly",
+          "old_character_range": [
+            3571,
+            3574
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4684,
+            4684
+          ],
+          "old": "its mecha",
+          "old_character_range": [
+            3579,
+            3588
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4685,
+            4685
+          ],
+          "old": "ical identity checks require separate root\nrevi",
+          "old_character_range": [
+            3589,
+            3636
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4687,
+            4687
+          ],
+          "old": " before a",
+          "old_character_range": [
+            3638,
+            3647
+          ]
+        },
+        {
+          "new": " wrappers\nrequire root review of their exact bytes before ",
+          "new_character_range": [
+            4699,
+            4757
+          ],
+          "old": "-",
+          "old_character_range": [
+            3659,
+            3660
+          ]
+        },
+        {
+          "new": ".",
+          "new_character_range": [
+            4766,
+            4767
+          ],
+          "old": "",
+          "old_character_range": [
+            3669,
+            3669
+          ]
+        },
+        {
+          "new": "L",
+          "new_character_range": [
+            4768,
+            4769
+          ],
+          "old": "p",
+          "old_character_range": [
+            3670,
+            3671
+          ]
+        },
+        {
+          "new": "ter exe",
+          "new_character_range": [
+            4770,
+            4777
+          ],
+          "old": "",
+          "old_character_range": [
+            3672,
+            3672
+          ]
+        },
+        {
+          "new": "ution\nr",
+          "new_character_range": [
+            4778,
+            4785
+          ],
+          "old": "kag",
+          "old_character_range": [
+            3673,
+            3676
+          ]
+        },
+        {
+          "new": "cords",
+          "new_character_range": [
+            4786,
+            4791
+          ],
+          "old": "",
+          "old_character_range": [
+            3677,
+            3677
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4792,
+            4792
+          ],
+          "old": "can be p",
+          "old_character_range": [
+            3678,
+            3686
+          ]
+        },
+        {
+          "new": "o",
+          "new_character_range": [
+            4795,
+            4796
+          ],
+          "old": "a",
+          "old_character_range": [
+            3689,
+            3690
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4797,
+            4797
+          ],
+          "old": "ed. Roo",
+          "old_character_range": [
+            3691,
+            3698
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4801,
+            4801
+          ],
+          "old": "cep",
+          "old_character_range": [
+            3702,
+            3705
+          ]
+        },
+        {
+          "new": "u",
+          "new_character_range": [
+            4802,
+            4803
+          ],
+          "old": "",
+          "old_character_range": [
+            3706,
+            3706
+          ]
+        },
+        {
+          "new": "l",
+          "new_character_range": [
+            4804,
+            4805
+          ],
+          "old": "nce\nis",
+          "old_character_range": [
+            3707,
+            3713
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4806,
+            4806
+          ],
+          "old": "pend",
+          "old_character_range": [
+            3714,
+            3718
+          ]
+        },
+        {
+          "new": "te",
+          "new_character_range": [
+            4808,
+            4810
+          ],
+          "old": "",
+          "old_character_range": [
+            3720,
+            3720
+          ]
+        },
+        {
+          "new": "ration",
+          "new_character_range": [
+            4811,
+            4817
+          ],
+          "old": ",",
+          "old_character_range": [
+            3721,
+            3722
+          ]
+        },
+        {
+          "new": "outcomes;",
+          "new_character_range": [
+            4818,
+            4827
+          ],
+          "old": "and",
+          "old_character_range": [
+            3723,
+            3726
+          ]
+        },
+        {
+          "new": "\nwith",
+          "new_character_range": [
+            4858,
+            4863
+          ],
+          "old": " for",
+          "old_character_range": [
+            3757,
+            3761
+          ]
+        }
+      ],
+      "publication": "wrappers/bv_graph_appendix.md",
+      "publication_sha256": "c35fedfbfc7beb6ae52151ff653a3a60fa9471989e00ad812759f688cb736380",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/wrappers/bv_graph_appendix.md",
+      "source_sha256": "f3720197ab0e05f834f9d519748d7491bbbf675852f04845bdbbe0d50ecab2d3"
+    },
+    {
+      "diff": "publication_diffs/prepared_driven_header.md.diff.gz",
+      "diff_sha256": "6e3d78c246ac05aef7b4629cf575590faa462a637a6f5c3545349850119ed605",
+      "diff_stored_sha256": "52a4f2a5c98f67c187110610ec1c17724ca651d689d2104107d554717b04d6a3",
+      "exact_character_substitutions": [
+        {
+          "new": "accepted_publicati",
+          "new_character_range": [
+            410,
+            428
+          ],
+          "old": "",
+          "old_character_range": [
+            410,
+            410
+          ]
+        },
+        {
+          "new": "_scope_separate",
+          "new_character_range": [
+            430,
+            445
+          ],
+          "old": "",
+          "old_character_range": [
+            412,
+            412
+          ]
+        },
+        {
+          "new": "gat",
+          "new_character_range": [
+            448,
+            451
+          ],
+          "old": "",
+          "old_character_range": [
+            415,
+            415
+          ]
+        },
+        {
+          "new": "d\nrunner: s",
+          "new_character_range": [
+            452,
+            463
+          ],
+          "old": "xa",
+          "old_character_range": [
+            416,
+            418
+          ]
+        },
+        {
+          "new": "rip",
+          "new_character_range": [
+            464,
+            467
+          ],
+          "old": "",
+          "old_character_range": [
+            419,
+            419
+          ]
+        },
+        {
+          "new": "s/p",
+          "new_character_range": [
+            468,
+            471
+          ],
+          "old": "_root_",
+          "old_character_range": [
+            420,
+            426
+          ]
+        },
+        {
+          "new": "pared_dri",
+          "new_character_range": [
+            473,
+            482
+          ],
+          "old": "",
+          "old_character_range": [
+            428,
+            428
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            483,
+            483
+          ],
+          "old": "iew_p",
+          "old_character_range": [
+            429,
+            434
+          ]
+        },
+        {
+          "new": "_state_i",
+          "new_character_range": [
+            485,
+            493
+          ],
+          "old": "",
+          "old_character_range": [
+            436,
+            436
+          ]
+        },
+        {
+          "new": "ent",
+          "new_character_range": [
+            494,
+            497
+          ],
+          "old": "",
+          "old_character_range": [
+            437,
+            437
+          ]
+        },
+        {
+          "new": "ty_2026_10_13.py",
+          "new_character_range": [
+            498,
+            514
+          ],
+          "old": "ng",
+          "old_character_range": [
+            438,
+            440
+          ]
+        },
+        {
+          "new": "_math",
+          "new_character_range": [
+            539,
+            544
+          ],
+          "old": "n",
+          "old_character_range": [
+            465,
+            466
+          ]
+        },
+        {
+          "new": "matical_predicates",
+          "new_character_range": [
+            545,
+            563
+          ],
+          "old": "",
+          "old_character_range": [
+            467,
+            467
+          ]
+        },
+        {
+          "new": "iden",
+          "new_character_range": [
+            567,
+            571
+          ],
+          "old": "",
+          "old_character_range": [
+            471,
+            471
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            572,
+            572
+          ],
+          "old": "h",
+          "old_character_range": [
+            472,
+            473
+          ]
+        },
+        {
+          "new": "ty_tool",
+          "new_character_range": [
+            573,
+            580
+          ],
+          "old": "",
+          "old_character_range": [
+            474,
+            474
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            581,
+            581
+          ],
+          "old": "_assembly",
+          "old_character_range": [
+            475,
+            484
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1144,
+            1144
+          ],
+          "old": "root review of ",
+          "old_character_range": [
+            1047,
+            1062
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1149,
+            1149
+          ],
+          "old": " source assembly before any separate",
+          "old_character_range": [
+            1067,
+            1103
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1161,
+            1161
+          ],
+          "old": "-execution",
+          "old_character_range": [
+            1115,
+            1125
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1162,
+            1162
+          ],
+          "old": "p",
+          "old_character_range": [
+            1126,
+            1127
+          ]
+        },
+        {
+          "new": "view ",
+          "new_character_range": [
+            1164,
+            1169
+          ],
+          "old": "p",
+          "old_character_range": [
+            1129,
+            1130
+          ]
+        },
+        {
+          "new": "nd source integ",
+          "new_character_range": [
+            1170,
+            1185
+          ],
+          "old": "",
+          "old_character_range": [
+            1131,
+            1131
+          ]
+        },
+        {
+          "new": ", cumulative stack checks, then independent retained audit",
+          "new_character_range": [
+            1191,
+            1249
+          ],
+          "old": "",
+          "old_character_range": [
+            1137,
+            1137
+          ]
+        },
+        {
+          "new": "Root",
+          "new_character_range": [
+            1820,
+            1824
+          ],
+          "old": "This is",
+          "old_character_range": [
+            1708,
+            1715
+          ]
+        },
+        {
+          "new": "ccepted the pinned",
+          "new_character_range": [
+            1826,
+            1844
+          ],
+          "old": "",
+          "old_character_range": [
+            1717,
+            1717
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1851,
+            1851
+          ],
+          "old": "-only",
+          "old_character_range": [
+            1724,
+            1729
+          ]
+        },
+        {
+          "new": "fo",
+          "new_character_range": [
+            1861,
+            1863
+          ],
+          "old": "awaiting ",
+          "old_character_range": [
+            1739,
+            1748
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1864,
+            1864
+          ],
+          "old": "oot review",
+          "old_character_range": [
+            1749,
+            1759
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1865,
+            1865
+          ],
+          "old": "of its exact final bytes. It has no ",
+          "old_character_range": [
+            1760,
+            1796
+          ]
+        },
+        {
+          "new": "pr",
+          "new_character_range": [
+            1877,
+            1879
+          ],
+          "old": "",
+          "old_character_range": [
+            1808,
+            1808
+          ]
+        },
+        {
+          "new": "pa",
+          "new_character_range": [
+            1880,
+            1882
+          ],
+          "old": "xecuto",
+          "old_character_range": [
+            1809,
+            1815
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1883,
+            1883
+          ],
+          "old": " or scientific runner.\nThe date in the filename identifies the intended public",
+          "old_character_range": [
+            1816,
+            1894
+          ]
+        },
+        {
+          "new": ".",
+          "new_character_range": [
+            1888,
+            1889
+          ],
+          "old": "",
+          "old_character_range": [
+            1899,
+            1899
+          ]
+        },
+        {
+          "new": "Ex",
+          "new_character_range": [
+            1890,
+            1892
+          ],
+          "old": "date; this p",
+          "old_character_range": [
+            1900,
+            1912
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1894,
+            1894
+          ],
+          "old": "kage\ndoes not assert tha",
+          "old_character_range": [
+            1914,
+            1938
+          ]
+        },
+        {
+          "new": "-wrapper",
+          "new_character_range": [
+            1907,
+            1915
+          ],
+          "old": "",
+          "old_character_range": [
+            1951,
+            1951
+          ]
+        },
+        {
+          "new": "and program acceptance is\nrecorded separately in t",
+          "new_character_range": [
+            1916,
+            1966
+          ],
+          "old": "",
+          "old_character_range": [
+            1952,
+            1952
+          ]
+        },
+        {
+          "new": "e inst",
+          "new_character_range": [
+            1967,
+            1973
+          ],
+          "old": "",
+          "old_character_range": [
+            1953,
+            1953
+          ]
+        },
+        {
+          "new": "lled evidence packet; source acceptance alone\nauthorize",
+          "new_character_range": [
+            1974,
+            2029
+          ],
+          "old": "",
+          "old_character_range": [
+            1954,
+            1954
+          ]
+        },
+        {
+          "new": "n",
+          "new_character_range": [
+            2031,
+            2032
+          ],
+          "old": "",
+          "old_character_range": [
+            1956,
+            1956
+          ]
+        },
+        {
+          "new": " exe",
+          "new_character_range": [
+            2033,
+            2037
+          ],
+          "old": "c",
+          "old_character_range": [
+            1957,
+            1958
+          ]
+        },
+        {
+          "new": "tion. Th",
+          "new_character_range": [
+            2039,
+            2047
+          ],
+          "old": "rr",
+          "old_character_range": [
+            1960,
+            1962
+          ]
+        },
+        {
+          "new": " filename ",
+          "new_character_range": [
+            2048,
+            2058
+          ],
+          "old": "",
+          "old_character_range": [
+            1963,
+            1963
+          ]
+        },
+        {
+          "new": "ate is not evidence of publication",
+          "new_character_range": [
+            2059,
+            2093
+          ],
+          "old": "",
+          "old_character_range": [
+            1964,
+            1964
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            2876,
+            2876
+          ],
+          "old": ".",
+          "old_character_range": [
+            2747,
+            2748
+          ]
+        },
+        {
+          "new": "during sour",
+          "new_character_range": [
+            2877,
+            2888
+          ],
+          "old": "Exa",
+          "old_character_range": [
+            2749,
+            2752
+          ]
+        },
+        {
+          "new": "e",
+          "new_character_range": [
+            2889,
+            2890
+          ],
+          "old": "t",
+          "old_character_range": [
+            2753,
+            2754
+          ]
+        },
+        {
+          "new": ". Root\nreused its complete body/comparison reads at unchanged hashes, read the six\nnew source wrappers and changed surrounding arguments, and mechanically\nreconstructed all twelve complete diffs and 211 original aliases. Root did not\nclaim to manually reread every assembled unchanged line or complete diff.\nThe exact source",
+          "new_character_range": [
+            2899,
+            3223
+          ],
+          "old": "",
+          "old_character_range": [
+            2763,
+            2763
+          ]
+        },
+        {
+          "new": "cord preserves those coverage li",
+          "new_character_range": [
+            3237,
+            3269
+          ],
+          "old": "",
+          "old_character_range": [
+            2777,
+            2777
+          ]
+        },
+        {
+          "new": "its. Public",
+          "new_character_range": [
+            3270,
+            3281
+          ],
+          "old": "",
+          "old_character_range": [
+            2778,
+            2778
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            3282,
+            3283
+          ],
+          "old": "",
+          "old_character_range": [
+            2779,
+            2779
+          ]
+        },
+        {
+          "new": "o",
+          "new_character_range": [
+            3284,
+            3285
+          ],
+          "old": "",
+          "old_character_range": [
+            2780,
+            2780
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3286,
+            3286
+          ],
+          "old": "s",
+          "old_character_range": [
+            2781,
+            2782
+          ]
+        },
+        {
+          "new": "wrap",
+          "new_character_range": [
+            3287,
+            3291
+          ],
+          "old": "",
+          "old_character_range": [
+            2783,
+            2783
+          ]
+        },
+        {
+          "new": "r/program rev",
+          "new_character_range": [
+            3293,
+            3306
+          ],
+          "old": "nd",
+          "old_character_range": [
+            2785,
+            2787
+          ]
+        },
+        {
+          "new": "ew is a separate ",
+          "new_character_range": [
+            3307,
+            3324
+          ],
+          "old": "n",
+          "old_character_range": [
+            2788,
+            2789
+          ]
+        },
+        {
+          "new": "ate",
+          "new_character_range": [
+            3325,
+            3328
+          ],
+          "old": "",
+          "old_character_range": [
+            2790,
+            2790
+          ]
+        },
+        {
+          "new": "is",
+          "new_character_range": [
+            3332,
+            3334
+          ],
+          "old": "at",
+          "old_character_range": [
+            2794,
+            2796
+          ]
+        },
+        {
+          "new": "i",
+          "new_character_range": [
+            3346,
+            3347
+          ],
+          "old": "doe",
+          "old_character_range": [
+            2808,
+            2811
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3353,
+            3353
+          ],
+          "old": "supply ",
+          "old_character_range": [
+            2817,
+            2824
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3358,
+            3358
+          ],
+          "old": " independent",
+          "old_character_range": [
+            2829,
+            2841
+          ]
+        }
+      ],
+      "publication": "wrappers/prepared_driven_header.md",
+      "publication_sha256": "cc036cf0d53f4b02f6cb3b7005b116fa646977a80989622156e4b7ffe5d28305",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/wrappers/prepared_driven_header.md",
+      "source_sha256": "c9cc5fd6827f057faa1d7772fcafed0de6f0dbbba772848255e7710e1c13b361"
+    },
+    {
+      "diff": "publication_diffs/prepared_driven_between.md.diff.gz",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "exact_character_substitutions": [],
+      "publication": "wrappers/prepared_driven_between.md",
+      "publication_sha256": "2ab2fbc7726c08dd5b534f887be57ed012d3ee7856973c3648d4b7ce7a1c0e78",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/wrappers/prepared_driven_between.md",
+      "source_sha256": "2ab2fbc7726c08dd5b534f887be57ed012d3ee7856973c3648d4b7ce7a1c0e78"
+    },
+    {
+      "diff": "publication_diffs/prepared_driven_appendix.md.diff.gz",
+      "diff_sha256": "5ba10064f2e0c2d1820fa3da288af59a909a880a5a758914299d61e83d89f847",
+      "diff_stored_sha256": "189afd7391ad27849c1790fa4204f97b39144c8f30fa4fa1a94a8de30124d536",
+      "exact_character_substitutions": [
+        {
+          "new": "Pu",
+          "new_character_range": [
+            5,
+            7
+          ],
+          "old": "Assem",
+          "old_character_range": [
+            5,
+            10
+          ]
+        },
+        {
+          "new": "ication",
+          "new_character_range": [
+            9,
+            16
+          ],
+          "old": "y",
+          "old_character_range": [
+            12,
+            13
+          ]
+        },
+        {
+          "new": "installed [evidence map](../.claude/science/physics-loops/toe-energy-protocol-20261012/EVIDENCE_MAP.json)\nind",
+          "new_character_range": [
+            54,
+            163
+          ],
+          "old": "",
+          "old_character_range": [
+            51,
+            51
+          ]
+        },
+        {
+          "new": "es every ",
+          "new_character_range": [
+            165,
+            174
+          ],
+          "old": "",
+          "old_character_range": [
+            53,
+            53
+          ]
+        },
+        {
+          "new": "cep",
+          "new_character_range": [
+            176,
+            179
+          ],
+          "old": "",
+          "old_character_range": [
+            55,
+            55
+          ]
+        },
+        {
+          "new": "ed source-package member and all 211",
+          "new_character_range": [
+            180,
+            216
+          ],
+          "old": "",
+          "old_character_range": [
+            56,
+            56
+          ]
+        },
+        {
+          "new": " alia",
+          "new_character_range": [
+            225,
+            230
+          ],
+          "old": "",
+          "old_character_range": [
+            65,
+            65
+          ]
+        },
+        {
+          "new": "es.\nThe",
+          "new_character_range": [
+            231,
+            238
+          ],
+          "old": ",",
+          "old_character_range": [
+            66,
+            67
+          ]
+        },
+        {
+          "new": "original/",
+          "new_character_range": [
+            239,
+            248
+          ],
+          "old": "",
+          "old_character_range": [
+            68,
+            68
+          ]
+        },
+        {
+          "new": "py ",
+          "new_character_range": [
+            250,
+            253
+          ],
+          "old": "",
+          "old_character_range": [
+            70,
+            70
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            254,
+            254
+          ],
+          "old": "p",
+          "old_character_range": [
+            71,
+            72
+          ]
+        },
+        {
+          "new": "n",
+          "new_character_range": [
+            255,
+            256
+          ],
+          "old": "r",
+          "old_character_range": [
+            73,
+            74
+          ]
+        },
+        {
+          "new": "fe",
+          "new_character_range": [
+            257,
+            259
+          ],
+          "old": "",
+          "old_character_range": [
+            75,
+            75
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            260,
+            261
+          ],
+          "old": "on",
+          "old_character_range": [
+            76,
+            78
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            262,
+            262
+          ],
+          "old": ", root evidence",
+          "old_character_range": [
+            79,
+            94
+          ]
+        },
+        {
+          "new": "complete ",
+          "new_character_range": [
+            284,
+            293
+          ],
+          "old": "",
+          "old_character_range": [
+            116,
+            116
+          ]
+        },
+        {
+          "new": " diffs,",
+          "new_character_range": [
+            299,
+            306
+          ],
+          "old": "",
+          "old_character_range": [
+            122,
+            122
+          ]
+        },
+        {
+          "new": "line-",
+          "new_character_range": [
+            307,
+            312
+          ],
+          "old": "co",
+          "old_character_range": [
+            123,
+            125
+          ]
+        },
+        {
+          "new": "ce map",
+          "new_character_range": [
+            315,
+            321
+          ],
+          "old": "s",
+          "old_character_range": [
+            128,
+            129
+          ]
+        },
+        {
+          "new": "hi",
+          "new_character_range": [
+            343,
+            345
+          ],
+          "old": "",
+          "old_character_range": [
+            151,
+            151
+          ]
+        },
+        {
+          "new": "t",
+          "new_character_range": [
+            346,
+            347
+          ],
+          "old": "napsh",
+          "old_character_range": [
+            152,
+            157
+          ]
+        },
+        {
+          "new": "ry",
+          "new_character_range": [
+            348,
+            350
+          ],
+          "old": "ts",
+          "old_character_range": [
+            158,
+            160
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            351,
+            351
+          ],
+          "old": "a",
+          "old_character_range": [
+            161,
+            162
+          ]
+        },
+        {
+          "new": "ma",
+          "new_character_range": [
+            353,
+            355
+          ],
+          "old": " ",
+          "old_character_range": [
+            164,
+            165
+          ]
+        },
+        {
+          "new": " lossl",
+          "new_character_range": [
+            357,
+            363
+          ],
+          "old": "d",
+          "old_character_range": [
+            167,
+            168
+          ]
+        },
+        {
+          "new": "ssly",
+          "new_character_range": [
+            364,
+            368
+          ],
+          "old": "xed",
+          "old_character_range": [
+            169,
+            172
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            369,
+            369
+          ],
+          "old": "by\n`source_",
+          "old_character_range": [
+            173,
+            184
+          ]
+        },
+        {
+          "new": "d.\n",
+          "new_character_range": [
+            376,
+            379
+          ],
+          "old": "/ORIGINAL_MANIFES",
+          "old_character_range": [
+            191,
+            208
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            380,
+            380
+          ],
+          "old": ".json` and `source_archive/COPY_MANIFEST.json`\nin t",
+          "old_character_range": [
+            209,
+            260
+          ]
+        },
+        {
+          "new": "[publication map](../.claude/",
+          "new_character_range": [
+            383,
+            412
+          ],
+          "old": "",
+          "old_character_range": [
+            263,
+            263
+          ]
+        },
+        {
+          "new": "cien",
+          "new_character_range": [
+            413,
+            417
+          ],
+          "old": "our",
+          "old_character_range": [
+            264,
+            267
+          ]
+        },
+        {
+          "new": "/",
+          "new_character_range": [
+            419,
+            420
+          ],
+          "old": " ",
+          "old_character_range": [
+            269,
+            270
+          ]
+        },
+        {
+          "new": "hysi",
+          "new_character_range": [
+            421,
+            425
+          ],
+          "old": "a",
+          "old_character_range": [
+            271,
+            272
+          ]
+        },
+        {
+          "new": "s-loops/toe-ener",
+          "new_character_range": [
+            426,
+            442
+          ],
+          "old": "ka",
+          "old_character_range": [
+            273,
+            275
+          ]
+        },
+        {
+          "new": "y-protocol-20261012/PUBLIC",
+          "new_character_range": [
+            443,
+            469
+          ],
+          "old": "e. `",
+          "old_character_range": [
+            276,
+            280
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            470,
+            470
+          ],
+          "old": "U",
+          "old_character_range": [
+            281,
+            282
+          ]
+        },
+        {
+          "new": "I",
+          "new_character_range": [
+            471,
+            472
+          ],
+          "old": "H",
+          "old_character_range": [
+            283,
+            284
+          ]
+        },
+        {
+          "new": "N",
+          "new_character_range": [
+            473,
+            474
+          ],
+          "old": "RIZED_BODY",
+          "old_character_range": [
+            285,
+            295
+          ]
+        },
+        {
+          "new": ")\nr",
+          "new_character_range": [
+            485,
+            488
+          ],
+          "old": "` nam",
+          "old_character_range": [
+            306,
+            311
+          ]
+        },
+        {
+          "new": "cord",
+          "new_character_range": [
+            489,
+            493
+          ],
+          "old": "",
+          "old_character_range": [
+            312,
+            312
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            501,
+            501
+          ],
+          "old": "cha",
+          "old_character_range": [
+            320,
+            323
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            502,
+            502
+          ],
+          "old": "g",
+          "old_character_range": [
+            324,
+            325
+          ]
+        },
+        {
+          "new": "w",
+          "new_character_range": [
+            503,
+            504
+          ],
+          "old": "d body\nbyte; `LINE_PIECE_MAP.json` maps all",
+          "old_character_range": [
+            326,
+            369
+          ]
+        },
+        {
+          "new": "su",
+          "new_character_range": [
+            513,
+            515
+          ],
+          "old": "and ",
+          "old_character_range": [
+            378,
+            382
+          ]
+        },
+        {
+          "new": "st",
+          "new_character_range": [
+            516,
+            518
+          ],
+          "old": "ody p",
+          "old_character_range": [
+            383,
+            388
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            519,
+            519
+          ],
+          "old": "eces. The comple",
+          "old_character_range": [
+            389,
+            405
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            520,
+            520
+          ],
+          "old": "e\ncontext diffs incl",
+          "old_character_range": [
+            406,
+            426
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            521,
+            521
+          ],
+          "old": "de both correc",
+          "old_character_range": [
+            427,
+            441
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            525,
+            525
+          ],
+          "old": "s",
+          "old_character_range": [
+            445,
+            446
+          ]
+        },
+        {
+          "new": "fu",
+          "new_character_range": [
+            530,
+            532
+          ],
+          "old": "each who",
+          "old_character_range": [
+            451,
+            459
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            533,
+            533
+          ],
+          "old": "e assemb",
+          "old_character_range": [
+            460,
+            468
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            534,
+            534
+          ],
+          "old": "ed note.\n`PARENT_SOURCE_BINDINGS.json` keeps original and",
+          "old_character_range": [
+            469,
+            526
+          ]
+        },
+        {
+          "new": "cation diff. All four\naccept",
+          "new_character_range": [
+            540,
+            568
+          ],
+          "old": "sh",
+          "old_character_range": [
+            532,
+            534
+          ]
+        },
+        {
+          "new": "sci",
+          "new_character_range": [
+            571,
+            574
+          ],
+          "old": "par",
+          "old_character_range": [
+            537,
+            540
+          ]
+        },
+        {
+          "new": "ific",
+          "new_character_range": [
+            577,
+            581
+          ],
+          "old": "",
+          "old_character_range": [
+            543,
+            543
+          ]
+        },
+        {
+          "new": "bodies ret",
+          "new_character_range": [
+            582,
+            592
+          ],
+          "old": "h",
+          "old_character_range": [
+            544,
+            545
+          ]
+        },
+        {
+          "new": "in t",
+          "new_character_range": [
+            593,
+            597
+          ],
+          "old": "s",
+          "old_character_range": [
+            546,
+            547
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            599,
+            599
+          ],
+          "old": "s\nd",
+          "old_character_range": [
+            549,
+            552
+          ]
+        },
+        {
+          "new": "r exa",
+          "new_character_range": [
+            600,
+            605
+          ],
+          "old": "stin",
+          "old_character_range": [
+            553,
+            557
+          ]
+        },
+        {
+          "new": " bytes",
+          "new_character_range": [
+            607,
+            613
+          ],
+          "old": "",
+          "old_character_range": [
+            559,
+            559
+          ]
+        },
+        {
+          "new": " two\np",
+          "new_character_range": [
+            628,
+            634
+          ],
+          "old": "i",
+          "old_character_range": [
+            574,
+            575
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            635,
+            635
+          ],
+          "old": " ",
+          "old_character_range": [
+            576,
+            577
+          ]
+        },
+        {
+          "new": "v",
+          "new_character_range": [
+            636,
+            637
+          ],
+          "old": "arlier citat",
+          "old_character_range": [
+            578,
+            590
+          ]
+        },
+        {
+          "new": "usly accepted wordi",
+          "new_character_range": [
+            639,
+            658
+          ],
+          "old": "",
+          "old_character_range": [
+            592,
+            592
+          ]
+        },
+        {
+          "new": "g",
+          "new_character_range": [
+            659,
+            660
+          ],
+          "old": "",
+          "old_character_range": [
+            593,
+            593
+          ]
+        },
+        {
+          "new": ". No further body edit is made.\n\nThe [source review](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_REVIEW.json)\nand [root reconstruction](../.claude/science/physics-loops/toe-energy-protocol-20261012/ENERGY_PROTOCOL_SOURCE_ROOT_RECONSTRUCTION.json)\nstate the actual earlier read",
+          "new_character_range": [
+            672,
+            994
+          ],
+          "old": "",
+          "old_character_range": [
+            605,
+            605
+          ]
+        },
+        {
+          "new": "mec",
+          "new_character_range": [
+            999,
+            1002
+          ],
+          "old": "",
+          "old_character_range": [
+            610,
+            610
+          ]
+        },
+        {
+          "new": "an",
+          "new_character_range": [
+            1003,
+            1005
+          ],
+          "old": "istor",
+          "old_character_range": [
+            611,
+            616
+          ]
+        },
+        {
+          "new": "cove",
+          "new_character_range": [
+            1010,
+            1014
+          ],
+          "old": "w",
+          "old_character_range": [
+            621,
+            622
+          ]
+        },
+        {
+          "new": "g",
+          "new_character_range": [
+            1016,
+            1017
+          ],
+          "old": "pp",
+          "old_character_range": [
+            624,
+            626
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1018,
+            1018
+          ],
+          "old": "r\nrevisions",
+          "old_character_range": [
+            627,
+            638
+          ]
+        },
+        {
+          "new": " di",
+          "new_character_range": [
+            1023,
+            1026
+          ],
+          "old": "",
+          "old_character_range": [
+            643,
+            643
+          ]
+        },
+        {
+          "new": "tinct\n[publication acceptance](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ROOT_ACCEPTANCE.json)\nand [publication review](../.claude/science/physics-loops/toe-energy-protocol-20261012/PUBLICATION_ASSEMBLY_REVIEW.txt)\nmust b",
+          "new_character_range": [
+            1027,
+            1280
+          ],
+          "old": "",
+          "old_character_range": [
+            644,
+            644
+          ]
+        },
+        {
+          "new": "su",
+          "new_character_range": [
+            1282,
+            1284
+          ],
+          "old": "",
+          "old_character_range": [
+            646,
+            646
+          ]
+        },
+        {
+          "new": "plied by root before guarded integr",
+          "new_character_range": [
+            1285,
+            1320
+          ],
+          "old": "",
+          "old_character_range": [
+            647,
+            647
+          ]
+        },
+        {
+          "new": "ion can install t",
+          "new_character_range": [
+            1322,
+            1339
+          ],
+          "old": "",
+          "old_character_range": [
+            649,
+            649
+          ]
+        },
+        {
+          "new": "i",
+          "new_character_range": [
+            1340,
+            1341
+          ],
+          "old": "",
+          "old_character_range": [
+            650,
+            650
+          ]
+        },
+        {
+          "new": "note.\nThe [i",
+          "new_character_range": [
+            1343,
+            1355
+          ],
+          "old": "",
+          "old_character_range": [
+            652,
+            652
+          ]
+        },
+        {
+          "new": "ntity tool](../",
+          "new_character_range": [
+            1357,
+            1372
+          ],
+          "old": "",
+          "old_character_range": [
+            654,
+            654
+          ]
+        },
+        {
+          "new": "pts/prepared_driven_state_identity_2026_10_13.py) checks sourc",
+          "new_character_range": [
+            1376,
+            1438
+          ],
+          "old": "b",
+          "old_character_range": [
+            658,
+            659
+          ]
+        },
+        {
+          "new": "bytes and reconstruction\nonly, with zero mathematical ",
+          "new_character_range": [
+            1440,
+            1494
+          ],
+          "old": "",
+          "old_character_range": [
+            661,
+            661
+          ]
+        },
+        {
+          "new": "redicates. Its c",
+          "new_character_range": [
+            1495,
+            1511
+          ],
+          "old": "",
+          "old_character_range": [
+            662,
+            662
+          ]
+        },
+        {
+          "new": "he is integr",
+          "new_character_range": [
+            1513,
+            1525
+          ],
+          "old": "k",
+          "old_character_range": [
+            664,
+            665
+          ]
+        },
+        {
+          "new": "tion",
+          "new_character_range": [
+            1526,
+            1530
+          ],
+          "old": "ge",
+          "old_character_range": [
+            666,
+            668
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            1540,
+            1541
+          ],
+          "old": " ",
+          "old_character_range": [
+            678,
+            679
+          ]
+        },
+        {
+          "new": " proof, a",
+          "new_character_range": [
+            1546,
+            1555
+          ],
+          "old": "",
+          "old_character_range": [
+            684,
+            684
+          ]
+        },
+        {
+          "new": "alytic formal check, new",
+          "new_character_range": [
+            1556,
+            1580
+          ],
+          "old": "",
+          "old_character_range": [
+            685,
+            685
+          ]
+        },
+        {
+          "new": "dependen",
+          "new_character_range": [
+            1583,
+            1591
+          ],
+          "old": "s",
+          "old_character_range": [
+            688,
+            689
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1592,
+            1592
+          ],
+          "old": "alled",
+          "old_character_range": [
+            690,
+            695
+          ]
+        },
+        {
+          "new": "v",
+          "new_character_range": [
+            1595,
+            1596
+          ],
+          "old": "pos",
+          "old_character_range": [
+            698,
+            701
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1597,
+            1597
+          ],
+          "old": "tory\nrunn",
+          "old_character_range": [
+            702,
+            711
+          ]
+        },
+        {
+          "new": "w",
+          "new_character_range": [
+            1598,
+            1599
+          ],
+          "old": "r",
+          "old_character_range": [
+            712,
+            713
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1604,
+            1604
+          ],
+          "old": " completed a",
+          "old_character_range": [
+            718,
+            730
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            1607,
+            1607
+          ],
+          "old": "t packe",
+          "old_character_range": [
+            733,
+            740
+          ]
+        },
+        {
+          "new": "ACCEPTED_",
+          "new_character_range": [
+            2264,
+            2273
+          ],
+          "old": "",
+          "old_character_range": [
+            1397,
+            1397
+          ]
+        },
+        {
+          "new": " in the installed packet",
+          "new_character_range": [
+            2293,
+            2317
+          ],
+          "old": "",
+          "old_character_range": [
+            1417,
+            1417
+          ]
+        },
+        {
+          "new": "The source and publication-preparation workers ran n",
+          "new_character_range": [
+            3423,
+            3475
+          ],
+          "old": "N",
+          "old_character_range": [
+            2523,
+            2524
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3488,
+            3488
+          ],
+          "old": " independently rechecked tho",
+          "old_character_range": [
+            2537,
+            2565
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            3489,
+            3489
+          ],
+          "old": "e reports in this source-only task",
+          "old_character_range": [
+            2566,
+            2600
+          ]
+        },
+        {
+          "new": ". Root execution must separately verify the\nbranch, exact base, clean state, parent",
+          "new_character_range": [
+            3521,
+            3604
+          ],
+          "old": "",
+          "old_character_range": [
+            2632,
+            2632
+          ]
+        },
+        {
+          "new": "de",
+          "new_character_range": [
+            3606,
+            3608
+          ],
+          "old": "",
+          "old_character_range": [
+            2634,
+            2634
+          ]
+        },
+        {
+          "new": "titie",
+          "new_character_range": [
+            3609,
+            3614
+          ],
+          "old": "",
+          "old_character_range": [
+            2635,
+            2635
+          ]
+        },
+        {
+          "new": " and frozen source by",
+          "new_character_range": [
+            3615,
+            3636
+          ],
+          "old": "",
+          "old_character_range": [
+            2636,
+            2636
+          ]
+        },
+        {
+          "new": "s",
+          "new_character_range": [
+            3638,
+            3639
+          ],
+          "old": "ad",
+          "old_character_range": [
+            2638,
+            2640
+          ]
+        },
+        {
+          "new": "At publication-preparation freeze, n",
+          "new_character_range": [
+            4394,
+            4430
+          ],
+          "old": "N",
+          "old_character_range": [
+            3395,
+            3396
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            4466,
+            4467
+          ],
+          "old": " ",
+          "old_character_range": [
+            3432,
+            3433
+          ]
+        },
+        {
+          "new": ",",
+          "new_character_range": [
+            4481,
+            4482
+          ],
+          "old": "",
+          "old_character_range": [
+            3447,
+            3447
+          ]
+        },
+        {
+          "new": "proposed identity tool or public",
+          "new_character_range": [
+            4483,
+            4515
+          ],
+          "old": "w",
+          "old_character_range": [
+            3448,
+            3449
+          ]
+        },
+        {
+          "new": "tion driver had been",
+          "new_character_range": [
+            4516,
+            4536
+          ],
+          "old": "s",
+          "old_character_range": [
+            3450,
+            3451
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            4541,
+            4542
+          ],
+          "old": " ",
+          "old_character_range": [
+            3456,
+            3457
+          ]
+        },
+        {
+          "new": " ",
+          "new_character_range": [
+            4554,
+            4555
+          ],
+          "old": "\n",
+          "old_character_range": [
+            3469,
+            3470
+          ]
+        },
+        {
+          "new": "\n",
+          "new_character_range": [
+            4621,
+            4622
+          ],
+          "old": " ",
+          "old_character_range": [
+            3536,
+            3537
+          ]
+        },
+        {
+          "new": " by either worker",
+          "new_character_range": [
+            4633,
+            4650
+          ],
+          "old": "",
+          "old_character_range": [
+            3548,
+            3548
+          ]
+        },
+        {
+          "new": " ",
+          "new_character_range": [
+            4651,
+            4652
+          ],
+          "old": "\n",
+          "old_character_range": [
+            3549,
+            3550
+          ]
+        },
+        {
+          "new": "guarded pr",
+          "new_character_range": [
+            4656,
+            4666
+          ],
+          "old": "s",
+          "old_character_range": [
+            3554,
+            3555
+          ]
+        },
+        {
+          "new": "g",
+          "new_character_range": [
+            4667,
+            4668
+          ],
+          "old": "u",
+          "old_character_range": [
+            3556,
+            3557
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4669,
+            4669
+          ],
+          "old": "ce ",
+          "old_character_range": [
+            3558,
+            3561
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4670,
+            4670
+          ],
+          "old": "sse",
+          "old_character_range": [
+            3562,
+            3565
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4671,
+            4671
+          ],
+          "old": "bly",
+          "old_character_range": [
+            3566,
+            3569
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4676,
+            4676
+          ],
+          "old": "its mecha",
+          "old_character_range": [
+            3574,
+            3583
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4677,
+            4677
+          ],
+          "old": "ical identity checks require separate root\nrevi",
+          "old_character_range": [
+            3584,
+            3631
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4679,
+            4679
+          ],
+          "old": " before a",
+          "old_character_range": [
+            3633,
+            3642
+          ]
+        },
+        {
+          "new": " wrappers\nrequire root review of their exact bytes before ",
+          "new_character_range": [
+            4691,
+            4749
+          ],
+          "old": "-",
+          "old_character_range": [
+            3654,
+            3655
+          ]
+        },
+        {
+          "new": ".",
+          "new_character_range": [
+            4758,
+            4759
+          ],
+          "old": "",
+          "old_character_range": [
+            3664,
+            3664
+          ]
+        },
+        {
+          "new": "L",
+          "new_character_range": [
+            4760,
+            4761
+          ],
+          "old": "p",
+          "old_character_range": [
+            3665,
+            3666
+          ]
+        },
+        {
+          "new": "ter exe",
+          "new_character_range": [
+            4762,
+            4769
+          ],
+          "old": "",
+          "old_character_range": [
+            3667,
+            3667
+          ]
+        },
+        {
+          "new": "ution\nr",
+          "new_character_range": [
+            4770,
+            4777
+          ],
+          "old": "kag",
+          "old_character_range": [
+            3668,
+            3671
+          ]
+        },
+        {
+          "new": "cords",
+          "new_character_range": [
+            4778,
+            4783
+          ],
+          "old": "",
+          "old_character_range": [
+            3672,
+            3672
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4784,
+            4784
+          ],
+          "old": "can be p",
+          "old_character_range": [
+            3673,
+            3681
+          ]
+        },
+        {
+          "new": "o",
+          "new_character_range": [
+            4787,
+            4788
+          ],
+          "old": "a",
+          "old_character_range": [
+            3684,
+            3685
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4789,
+            4789
+          ],
+          "old": "ed. Roo",
+          "old_character_range": [
+            3686,
+            3693
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4793,
+            4793
+          ],
+          "old": "cep",
+          "old_character_range": [
+            3697,
+            3700
+          ]
+        },
+        {
+          "new": "u",
+          "new_character_range": [
+            4794,
+            4795
+          ],
+          "old": "",
+          "old_character_range": [
+            3701,
+            3701
+          ]
+        },
+        {
+          "new": "l",
+          "new_character_range": [
+            4796,
+            4797
+          ],
+          "old": "nce\nis",
+          "old_character_range": [
+            3702,
+            3708
+          ]
+        },
+        {
+          "new": "",
+          "new_character_range": [
+            4798,
+            4798
+          ],
+          "old": "pend",
+          "old_character_range": [
+            3709,
+            3713
+          ]
+        },
+        {
+          "new": "te",
+          "new_character_range": [
+            4800,
+            4802
+          ],
+          "old": "",
+          "old_character_range": [
+            3715,
+            3715
+          ]
+        },
+        {
+          "new": "ration",
+          "new_character_range": [
+            4803,
+            4809
+          ],
+          "old": ",",
+          "old_character_range": [
+            3716,
+            3717
+          ]
+        },
+        {
+          "new": "outcomes;",
+          "new_character_range": [
+            4810,
+            4819
+          ],
+          "old": "and",
+          "old_character_range": [
+            3718,
+            3721
+          ]
+        },
+        {
+          "new": "\nwith",
+          "new_character_range": [
+            4850,
+            4855
+          ],
+          "old": " for",
+          "old_character_range": [
+            3752,
+            3756
+          ]
+        }
+      ],
+      "publication": "wrappers/prepared_driven_appendix.md",
+      "publication_sha256": "e1981468bc45c845834cc1b959538a95628e7a8b0e4e79bbd690c534083a584c",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_protocol_source_preparation/wrappers/prepared_driven_appendix.md",
+      "source_sha256": "5474b805afae4f3702b763fe83f370ca607d36ae32a758720192e4f98cf1f917"
+    }
+  ]
+}

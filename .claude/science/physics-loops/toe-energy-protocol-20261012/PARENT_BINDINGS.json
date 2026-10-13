@@ -1,0 +1,164 @@
+{
+  "finite_energy_pulse_status": "The finite-energy pulse core 2ee875... and comparison dac8b4... are explicit archived provisional source dependencies. No matching canonical finite-energy-pulse note is asserted or substituted. The unrelated sector-selection note is not its canonical replacement.",
+  "historical_publication_identity_differences": [
+    {
+      "canonical_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "disposition": "Explicit historical publication-wrapper revision; selected live parent matches later frozen map and prior parent pins. No scientific source was refreshed or changed here.",
+      "matching_later_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map_published_sha256": "6babbed7f8fafb5a623d6f36b57d05377e23fa7326c398ebe0b4a1a3c4ef6249",
+      "selected_current_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2"
+    },
+    {
+      "canonical_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "disposition": "Explicit historical publication-wrapper revision; selected live parent matches later frozen map and prior parent pins. No scientific source was refreshed or changed here.",
+      "matching_later_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map_published_sha256": "2b9c1904c93b903765f0af1830d6a04d4d0728d39f551ccc03f14c91e1d5c2bc",
+      "selected_current_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca"
+    }
+  ],
+  "parents": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 51903,
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 31832,
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "claim_type": "open_gate",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 36376,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 61231,
+      "claim_id": "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 69122,
+      "claim_id": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 63908,
+      "claim_id": "excitation_pulse_response_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 53292,
+      "claim_id": "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 38862,
+      "claim_id": "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "published_sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 35981,
+      "claim_id": "weighted_current_closure_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "published_sha256": "c4d35e7b922959fcc74efe015e18f6c36db030af3fd3280b446b861e7cf14aa3",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 44691,
+      "claim_id": "gapped_boost_invariance_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "published_sha256": "209e8bae9db47468ee4e9c00a91f19e382a313b69e38a6c1e8d3fa99d64f180c",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 44845,
+      "claim_id": "microscopic_boost_flow_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "published_sha256": "fdc67ccbf68ddc1448f8ba7cf452602777c3fd7caec8cc175bd58cb8c57480d7",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 38590,
+      "claim_id": "microscopic_current_implementation_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "published_sha256": "3b59c6aebd78eca1ad72c69b9b73cfede0abd1a7a315389cf0c6c7eebeb20485",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 35738,
+      "claim_id": "microscopic_joint_flow_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "path": "docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "published_sha256": "0179b4fd8f5c46b4da912f172754c40c4fb3c64ce34bf95ce1ff07c645e509c4",
+      "scope": "Current canonical byte identity; no new parent proof or audit."
+    }
+  ],
+  "selected_canonical_pins": {
+    "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+    "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+    "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+    "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+    "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+    "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+    "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+    "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1"
+  },
+  "unresolved_expected_parent_hash_mismatches": []
+}

@@ -1,0 +1,117 @@
+{
+  "direct_edges": [
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "bounded_interaction_ground_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "energy_transfer_correlation_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "excitation_pulse_response_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "to": "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "bounded_interaction_ground_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "excitation_pulse_response_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    }
+  ],
+  "expected_delta": {
+    "edges": 15,
+    "nodes": 2
+  },
+  "nodes": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "artifact_role": "theorem",
+      "audit_required_before_effective_retained": true,
+      "bare_retained_allowed": false,
+      "claim_id": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+        "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+        "excitation_pulse_response_bounded_theorem_note_2026-10-12",
+        "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+        "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12"
+      ],
+      "key": "bv_graph",
+      "note_sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/bv_graph_energy_protocol_identity_2026_10_13.py"
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "artifact_role": "theorem",
+      "audit_required_before_effective_retained": true,
+      "bare_retained_allowed": false,
+      "claim_id": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+        "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+        "excitation_pulse_response_bounded_theorem_note_2026-10-12"
+      ],
+      "key": "prepared_driven",
+      "note_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/prepared_driven_state_identity_2026_10_13.py"
+    }
+  ],
+  "registration_mechanism": "Existing citation-graph builder reads the two canonical note front matters. Root execution checks the exact delta; no separate audit/ledger registry is edited.",
+  "schema": "proposed-claim-registry-additions-v1",
+  "source_role_limit": "Prepared/Driven uses the BV body in the first combined note; Graph and time averaging are not mathematical premises of Driven.",
+  "status": "PREPARATION_ONLY_NOT_INSTALLED"
+}

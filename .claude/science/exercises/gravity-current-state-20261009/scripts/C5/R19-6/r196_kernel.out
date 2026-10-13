@@ -1,0 +1,9 @@
+[K1] exchange form J.h[J] in units 16 pi G = 1, k = 1:
+     rho**2   -(x - 1)*(x + 1)/2
+     T_perp*rho 1
+     T_perp**2 0
+     j_x**2   -2
+     t_p**2   -2/((x - 1)*(x + 1))
+     j_x*rho  0
+     rho*t_p  0
+[K2] quoted kernel: rho^2 (1-x^2)/2, rho T_perp 2*(1/2) = 1, T_perp^2 0, j^2 -2, t^2 2/(1-x^2): match = True

@@ -11,7 +11,7 @@ Outputs (lattice units hbar = c = a = 1):
   - the harmonic-gauge remainders (c - 1) e_g, and sizes at a = l_P in units of rho_Lambda (RECALLED 5.3e-10 J/m^3).
 """
 import numpy as np, itertools, sys, os
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'recheck', 'R9-9'))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'R9-9'))
 from r99_profiles import plateau, wrap
 C1, C2 = 1.0, 2.5
 def dsym(q):

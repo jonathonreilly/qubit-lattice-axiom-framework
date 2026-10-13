@@ -1,0 +1,45 @@
+[A0] flat conservation of J: [0, 0, 0, 0]
+[A1] Poisson-gauge solution: Phi = -4*pi*(T_perp*k**2 + k**2*rho - 2*omega**2*rho)/k**4, Psi = -4*pi*rho/k**2, S_x = -16*pi*j_x/k**2, h_+ = 16*pi*t_p/((k - omega)*(k + omega))
+     Poisson : G^(1)[h] = 8 pi J_lower violated in 0 of 16 components
+     harmonic: G^(1)[h] = 8 pi J_lower violated in 0 of 16 components
+     [10.3s]
+[A2:Poisson] done [25.4s]
+[A2:harmonic] done [124.3s]
+
+[A2] per-monomial mean source (units pi/k^2), weight-1 form (*) = record term + A'[h]:
+     Poisson gauge: (*) equals R19-2's lower-index table in 14 of 14 entries (form independence)
+     Poisson: cross monomials (should be 0): set() ; tau_0i: [pi*(-j_x*(a - 2)*(k**2 - omega**2)*(k**2*(T_perp - 2*rho) - 2*omega**2*rho) + 4*k**2*(-j_x*k**2*rho + 2*j_x*k**2*t_p + j_x*omega**2*rho + 2*j_y*k**2*t_c))/(k**4*(k**2 - omega**2)), pi*(-j_y*(a - 2)*(k**2 - omega**2)*(k**2*(T_perp - 2*rho) - 2*omega**2*rho) + 4*k**2*(2*j_x*k**2*t_c - j_y*k**2*rho - 2*j_y*k**2*t_p + j_y*omega**2*rho))/(k**4*(k**2 - omega**2)), pi*omega*(2*k**2*(-k**4*rho**2 + 4*k**4*t_c**2 + 4*k**4*t_p**2 + 2*k**2*omega**2*rho**2 - omega**4*rho**2) - rho*(a - 2)*(k**2*(T_perp - 2*rho) - 2*omega**2*rho)*(k**4 - 2*k**2*omega**2 + omega**4))/(k**5*(k**4 - 2*k**2*omega**2 + omega**4))]
+     harmonic: cross monomials (should be 0): set() ; tau_0i: [2*pi*(-2*j_x*k**2*rho + 4*j_x*k**2*t_p + 2*j_x*omega**2*rho - j_x*(a - 2)*(T_perp*k**2 - k**2*rho + omega**2*rho) + 4*j_y*k**2*t_c)/(k**2*(k**2 - omega**2)), 2*pi*(4*j_x*k**2*t_c - 2*j_y*k**2*rho - 4*j_y*k**2*t_p + 2*j_y*omega**2*rho - j_y*(a - 2)*(T_perp*k**2 - k**2*rho + omega**2*rho))/(k**2*(k**2 - omega**2)), 2*pi*omega*(-rho*(a - 2)*(k**4 - 2*k**2*omega**2 + omega**4)*(T_perp*k**2 - k**2*rho + omega**2*rho) + (k**2 - omega**2)*(-k**4*rho**2 + 4*k**4*t_c**2 + 4*k**4*t_p**2 + 2*k**2*omega**2*rho**2 - omega**4*rho**2))/(k**3*(k**2 - omega**2)*(k**4 - 2*k**2*omega**2 + omega**4))]
+
+     A'[h_n] = field part alone (= the whole source at a = 2), Poisson gauge, per monomial (units pi/k^2):
+       rho**2   tau_00 = x**2 - 3                           tau_kk = -x**2 - 1
+       T_perp*rho tau_00 = -2                                 tau_kk = 2
+       T_perp**2 tau_00 = 0                                  tau_kk = 0
+       j_x**2   tau_00 = 4                                  tau_kk = -4
+       j_y**2   tau_00 = 4                                  tau_kk = -4
+       t_p**2   tau_00 = 4*(x**2 + 1)/((x - 1)**2*(x + 1)**2) tau_kk = -4*(x**2 - 3)/((x - 1)**2*(x + 1)**2)
+       t_c**2   tau_00 = 4*(x**2 + 1)/((x - 1)**2*(x + 1)**2) tau_kk = -4*(x**2 - 3)/((x - 1)**2*(x + 1)**2)
+     record term (a-2)/4 <tr h J>, Poisson gauge:
+       rho**2   tau_00 = 2*(a - 2)*(x**2 + 1)               tau_kk = 2*x**2*(a - 2)*(x**2 + 1)
+       T_perp*rho tau_00 = 2 - a                              tau_kk = (a - 2)*(x**2 + 2)
+       T_perp**2 tau_00 = 0                                  tau_kk = 2 - a
+       j_x**2   tau_00 = 0                                  tau_kk = 0
+       j_y**2   tau_00 = 0                                  tau_kk = 0
+       t_p**2   tau_00 = 0                                  tau_kk = 0
+       t_c**2   tau_00 = 0                                  tau_kk = 0
+
+[A3] readout-gauge dependence, Poisson minus harmonic, per monomial:
+       rho**2   tau_00: field part diff = 0 ; record part diff = 2*x**2*(a - 2)
+       rho**2   tau_kk: field part diff = 0 ; record part diff = 2*x**4*(a - 2)
+       T_perp*rho tau_00: field part diff = 0 ; record part diff = -(a - 2)*(x**2 + 1)/((x - 1)*(x + 1))
+       T_perp*rho tau_kk: field part diff = 0 ; record part diff = x**2*(a - 2)*(x**2 - 3)/((x - 1)*(x + 1))
+       T_perp**2 tau_kk: field part diff = 0 ; record part diff = -(a - 2)*(x**2 + 1)/((x - 1)*(x + 1))
+     field part A'[h] gauge-independent for every monomial: True  (Lemma D on the classical noise metric)
+     => total source gauge-independent iff a = 2 (record-term difference carries the factor (a-2)); matches Theorem G
+
+[A4] Theorem I0 restated: A'[h_n] at R19-2's complete least-decoherence split (r192_split.out [B2] powers)
+     x < 1, Poisson : A'[h_n] (tau_00, tau_kk)/u0 = (0, 0) ; record term = (-(a - 2)*(3*x**2 + 5)/((x - 1)*(x + 1)), -(a - 2)*(4*x**4 + 7*x**2 - 3)/((x - 1)*(x + 1)))
+     x < 1, harmonic: A'[h_n] (tau_00, tau_kk)/u0 = (0, 0) ; record term = (-6*(a - 2)/((x - 1)*(x + 1)), -2*(a - 2)*(5*x**2 - 2)/((x - 1)*(x + 1)))
+     x > 1, Poisson : A'[h_n] (tau_00, tau_kk)/u0 = (4, -4) ; record term = ((a - 2)*(3*x**2 + 5)/((x - 1)*(x + 1)), (a - 2)*(4*x**4 + 7*x**2 - 3)/((x - 1)*(x + 1)))
+     x > 1, harmonic: A'[h_n] (tau_00, tau_kk)/u0 = (4, -4) ; record term = (6*(a - 2)/((x - 1)*(x + 1)), 2*(a - 2)*(5*x**2 - 2)/((x - 1)*(x + 1)))
+total time 125.1s

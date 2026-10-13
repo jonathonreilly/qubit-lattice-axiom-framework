@@ -1,0 +1,13 @@
+[V0] O(s^2) forms built [20.1s]
+     w=0 upper          TT  : c = 1    [t^{mu nu} = c * k^mu k^nu * const: True]
+     w=0 upper          FdD : c = 0    [t^{mu nu} = c * k^mu k^nu * const: True]
+     w=1 upper          TT  : c = 1    [t^{mu nu} = c * k^mu k^nu * const: True]
+     w=1 upper          FdD : c = 1    [t^{mu nu} = c * k^mu k^nu * const: True]
+     w=2 upper          TT  : c = 1    [t^{mu nu} = c * k^mu k^nu * const: True]
+     w=2 upper          FdD : c = 2    [t^{mu nu} = c * k^mu k^nu * const: True]
+     G_mu nu lower (B)  TT  : c = 1    [t^{mu nu} = c * k^mu k^nu * const: True]
+     G_mu nu lower (B)  FdD : c = 4    [t^{mu nu} = c * k^mu k^nu * const: True]
+
+[V1] reading: the weight-1 functional A' gives the TT zero point (c = 1) on the FdD vacuum as on TT; the w-family
+     is linear in w (c = 1 + (w-1) * Delta) because the weight enters only through (w/2)<tr h G^(1)[h]>.
+total time 20.3s

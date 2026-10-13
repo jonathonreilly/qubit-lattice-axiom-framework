@@ -1,0 +1,27 @@
+[L1] Lemma L on a generic flat-conserved density mode (this is instance (i): the record mode J, all six of
+     R15-2's channel variables rho, T_perp, j_x, j_y, t_+, t_x), symbolic weight w, off-shell, 4 random draws
+     draw 0: w/k = 4/3 ; conserved: True ; <L_xi Y> - (w-1)<(d.xi)Y> = 0 in 16/16 comps ; <(d.xi)Y> nonzero in 16/16 comps
+     draw 1: w/k = 1/2 ; conserved: True ; <L_xi Y> - (w-1)<(d.xi)Y> = 0 in 16/16 comps ; <(d.xi)Y> nonzero in 16/16 comps
+     draw 2: w/k = 4 ; conserved: True ; <L_xi Y> - (w-1)<(d.xi)Y> = 0 in 16/16 comps ; <(d.xi)Y> nonzero in 16/16 comps
+     draw 3: w/k = 1/2 ; conserved: True ; <L_xi Y> - (w-1)<(d.xi)Y> = 0 in 16/16 comps ; <(d.xi)Y> nonzero in 16/16 comps
+     => <L_xi Y> vanishes for every xi iff w = 1 (generic <(d.xi)Y> != 0)  [0.2s]
+
+[L2] instance (ii): field side.  h = L_xi eta (pure gauge, lower: d_mu xi_nu + d_nu xi_mu) and X arbitrary,
+     same phase (zero total momentum after averaging).  Forward cross term of Y_w^(2) = [(-g)^{w/2} G^{mu nu}]^(2),
+     compared with Lemma L applied to the conserved density G^(1)mu nu[X]:  (w-1)<(d.xi) G^(1)[X]>
+     draw 0 (w/k = 3): G^(1)[X] conserved: True
+       weight 0: gauge-X cross term nonzero in 16/16 comps ; equals <L_xi G^(1)[X]>: True ; equals (w-1)<(d.xi)G^(1)[X]>: True
+       weight 1: gauge-X cross term nonzero in 13/16 comps ; equals <L_xi G^(1)[X]>: False ; equals (w-1)<(d.xi)G^(1)[X]>: True
+       weight 2: gauge-X cross term nonzero in 16/16 comps ; equals <L_xi G^(1)[X]>: False ; equals (w-1)<(d.xi)G^(1)[X]>: True
+       lower G_mu nu (weight 0): gauge-X cross term nonzero in 16/16 comps
+       [4.4s]
+     draw 1 (w/k = 1/6): G^(1)[X] conserved: True
+       weight 0: gauge-X cross term nonzero in 16/16 comps ; equals <L_xi G^(1)[X]>: True ; equals (w-1)<(d.xi)G^(1)[X]>: True
+       weight 1: gauge-X cross term nonzero in  9/16 comps ; equals <L_xi G^(1)[X]>: False ; equals (w-1)<(d.xi)G^(1)[X]>: True
+       weight 2: gauge-X cross term nonzero in 16/16 comps ; equals <L_xi G^(1)[X]>: False ; equals (w-1)<(d.xi)G^(1)[X]>: True
+       lower G_mu nu (weight 0): gauge-X cross term nonzero in 16/16 comps
+       [8.9s]
+
+[L3] conclusion: Theorem G (records) and Lemma D (field) are the same identity, Lemma L, applied to the two
+     conserved objects that enter the one-point source: the recorded stress and the linearized Einstein tensor.
+total time 8.9s

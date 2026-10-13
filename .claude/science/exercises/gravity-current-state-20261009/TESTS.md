@@ -7566,3 +7566,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **PHOTON-OBSTRUCTED:** a demonstration (refereed) that no exact completion exists in a stated class (e.g. a single-soft-leg Gauss-law obstruction).
   - **OPEN:** otherwise.
 - **Expectation.** PHOTON-EXACT with knob shifts ~1e-6.
+- **R19-6 (one weight-1 source clause): worker reading UNIFIED.**
+  - **The clause W1:** "the gravitating one-point source is the weight-1 density √−g T^{μν}; records and expectations are of it; gravity's own stress enters as −[√−g G]^{(≥2)}/8πG".
+  - **Lemma L.** ⟨L_ξ𝔜⟩ = (w − 1)⟨(∂·ξ)𝔜⟩ for any flat-conserved weight-w density, so only w = 1 gives gauge-blind averages. It covers both R18-11's Theorem G and R19-3's Lemma D.
+  - **Proposition U.** At a = 2, set A's noise gravitates through the same functional A′ as the graviton vacuum. Gauge dependence at a ≠ 2 carries the factor (a − 2).
+  - **Graviton vacuum.** In Feynman–de Donder gauge c = w. Only w = 1 matches the TT value in every gauge.
+  - **No conflict found** with (d-i), P88, R18-6 or R18-11. R18-7's a = 4 is replaced by a = 2, which keeps CP and β = γ = 1 and loses only the static a = 4 zero.
+  - **The full bridge** is 4 clauses with 0 numbers: (S), (d-i), N_red and W1. W1 merges P145 and P-r193a.
+  - **What W1 does not fix:** the noise's remaining gravitating size, which still depends on P-r192a/b/c and P146.
+  - **Archive fix (04:52Z).** `scripts/C5/R19-3/r193_lattice.py` imported from the non-archived `../recheck/R9-9`. It now points to `../R9-9`, and the rerun output is identical. (Reported by R19-6.)
+
+  Referee running.

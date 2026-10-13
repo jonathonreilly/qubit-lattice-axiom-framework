@@ -1,0 +1,8 @@
+L=4 bU=0.0: 30 canonical samples; balanced local flips per state: min 14 mean 25.7 (of 256); non-raising: min 9 mean 15.7; frozen states 0; E/edge mean 0.3656
+L=4 bU=2.0: 30 canonical samples; balanced local flips per state: min 26 mean 35.8 (of 256); non-raising: min 0 mean 1.3; frozen states 0; E/edge mean 0.0476
+L=4 bU=3.0: 30 canonical samples; balanced local flips per state: min 24 mean 32.0 (of 256); non-raising: min 0 mean 1.0; frozen states 0; E/edge mean 0.0344
+L=4 bU=4.0: 30 canonical samples; balanced local flips per state: min 29 mean 34.6 (of 256); non-raising: min 0 mean 0.8; frozen states 0; E/edge mean 0.0208
+L=6 bU=0.0: 30 canonical samples; balanced local flips per state: min 70 mean 91.0 (of 864); non-raising: min 42 mean 59.9; frozen states 0; E/edge mean 0.3722
+L=6 bU=2.0: 30 canonical samples; balanced local flips per state: min 81 mean 94.0 (of 864); non-raising: min 2 mean 6.1; frozen states 0; E/edge mean 0.0877
+L=6 bU=3.0: 30 canonical samples; balanced local flips per state: min 80 mean 99.0 (of 864); non-raising: min 0 mean 1.1; frozen states 0; E/edge mean 0.0330
+L=6 bU=4.0: 30 canonical samples; balanced local flips per state: min 103 mean 117.0 (of 864); non-raising: min 0 mean 0.4; frozen states 0; E/edge mean 0.0178

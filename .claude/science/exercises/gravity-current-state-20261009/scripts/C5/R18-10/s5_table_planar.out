@@ -1,0 +1,7 @@
+bU L run E/edge | rho(q1) = rho(q1) (axis: exact 0 => xi^2 overflow, not printed)
+1.00 6 PL_L6_b1.0.pkl 0.18142+-0.00154 | rho(q1) = 0.0000+-0.0000 (axis: exact 0 => xi^2 overflow, not printed)
+1.00 8 PL_L8_b1.0.pkl 0.18324+-0.00132 | rho(q1) = 0.0000+-0.0000 (axis: exact 0 => xi^2 overflow, not printed)
+1.00 10 PL_L10_b1.0.pkl 0.19168+-0.00124 | rho(q1) = 0.0000+-0.0000 (axis: exact 0 => xi^2 overflow, not printed)
+2.00 6 PL_L6_b2.0.pkl 0.15107+-0.00089 | rho(q1) = 0.0000+-0.0000 (axis: exact 0 => xi^2 overflow, not printed)
+2.00 8 PL_L8_b2.0.pkl 0.18483+-0.00133 | rho(q1) = 0.0000+-0.0000 (axis: exact 0 => xi^2 overflow, not printed)
+2.00 10 PL_L10_b2.0.pkl 0.17211+-0.00087 | rho(q1) = 0.0000+-0.0000 (axis: exact 0 => xi^2 overflow, not printed)

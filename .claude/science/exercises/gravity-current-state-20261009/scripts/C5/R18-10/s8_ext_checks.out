@@ -1,0 +1,2 @@
+(i) L=2, extended family: hop moves stay in the coset: True; classes 53 (registered family: 511); N-sectors 53, split: 0; singleton classes 8
+(iii) L=6, extended family, 2000 sweeps at bU = 1: N_xx(x), N_yy(y), N_zz(z) unchanged: (False, False, False); N_zz(z) before [12 18 18 22 20 18] after [20 22 18 14 18 16]; N_ab - V/2 = [0 0 0 0 0 0]

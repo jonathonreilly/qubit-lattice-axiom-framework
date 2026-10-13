@@ -6975,3 +6975,12 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - there is no Lemma-S channel;
     - it takes three clauses and zero fitted numbers.
   - **Still open:** the quantum J2 step, full quantum-gravity completion, and set A noise completion.
+- **R18-10 (dipole-conserving Z₂ ensemble): worker reading OPEN.** No pinch point was found anywhere. SCREENED is checked for βU ≤ 2.5, but βU = 3–3.5 is not seed-stable and the registered moves are non-ergodic. The method is pre-stated in `agents/C5_R18-10_method.md`.
+  - **Dipole = labels.** The γ-dipole equals −½ × the six slot-label totals. So dipole conservation is six global numbers and imposes no local Gauss law.
+  - **The fixed sector is screened,** with R18-1's ξ.
+  - **The registered moves fragment:** they conserve 3L planar counts.
+  - **Diagnostic correction.** Planar conservation laws fake an axis pinch (ρ = 0 on the axes) while the off-axis channels stay screened. Every pinch claim must check face and body directions too.
+  - **The expectation's mechanism fails.** S_γ ∝ k² already holds in screened ensembles; a pinch needs o(k²).
+  - **Prices:** P-r18-10a, b and c. P96 sharpened: move conservation laws cannot replace exact charge suppression.
+
+  Referee running.

@@ -1,0 +1,6 @@
+L=2: states 1024, N-sectors 53, filtered components 511, N-sectors split into >1 component: 44
+component size histogram (size: count): [(1, 504), (16, 6), (424, 1)]
+largest component: size 424, N = [0 0 0 4 4 4]; its N-sector size 424
+bU=0.0 component size 424: exact <sum g^2> = 7.2453, MC = 7.2567 +- 0.0215; max |state-prob diff| = 0.0007; MC left component: False
+bU=1.0 component size 424: exact <sum g^2> = 0.4216, MC = 0.4082 +- 0.0070; max |state-prob diff| = 0.0105; MC left component: False
+bU=2.0 component size 424: exact <sum g^2> = 0.0080, MC = 0.0085 +- 0.0012; max |state-prob diff| = 0.0896; MC left component: False

@@ -1,0 +1,8 @@
+(i) pattern sign-lifts tested: 832, failures of D(G delta) = -M0(delta) with zero total charge: 0
+(ii) random integer deltas: 2000, failures: 0
+(iii) => D(gamma) = -M0(n)/2 is a symmetric tensor; its 6 components are -N_ab/2 (diag) and -N_ab/2 (faces, each of D_ab, D_ba)
+  pattern types [3, 3, 4, 4, 5, 5]: D-conserving fraction over local labels = 8/64
+  pattern types [0, 0, 2, 2, 5, 5, 5, 5]: D-conserving fraction over local labels = 24/256
+  pattern types [0, 0, 1, 1, 3, 3, 3, 3]: D-conserving fraction over local labels = 24/256
+  pattern types [1, 1, 2, 2, 4, 4, 4, 4]: D-conserving fraction over local labels = 24/256
+(v) under a site rotation with the shift action, face labels of types with sigma_i sigma_j = -1 map n -> 1-n, so Q_ab -> sigma_a sigma_b Q_{R(ab)}: Q transforms as a symmetric tensor; the sector Q = 0 is invariant.

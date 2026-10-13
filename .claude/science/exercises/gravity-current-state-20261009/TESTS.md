@@ -8744,7 +8744,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OPEN:** otherwise.
 - **Expectation.** PSI-HAZARD if the root uses Wilson-type doubler removal; PSI-ZERO if it uses a chirally symmetric kinetic term (staggered or twisted).
 
-- **Referee records, 2026-10-13 ~07:45Z.** Codex gpt-5.6-sol at xhigh.
+- **Referee records, 2026-10-13 ~07:38Z.** Codex gpt-5.6-sol at xhigh.
   - **R19-25: NOT CONFIRMED.**
     - The recorded reading is **WEAK-OBSTRUCTED** for the minimal c-polarized BRST class 𝔅_c. (The worker said OPEN.) A charge in 𝔅_c is either not nilpotent or has empty ghost-0 cohomology, and finite-volume Lie-closure BRST is acyclic.
     - It is not a universal finite-slot no-go:

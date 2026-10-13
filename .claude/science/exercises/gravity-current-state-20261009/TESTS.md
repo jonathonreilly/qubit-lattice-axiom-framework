@@ -6279,3 +6279,40 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Bill:** 9 + CC per class or 13 + CC per species. The gravity–charge block split ends.
 
   Referee running.
+
+#### C5 referee verdicts R17-6, R17-7, R17-8 (recorded 01:38Z; codex gpt-5.6-sol, xhigh)
+
+- **R17-6 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - No qubit model with exactly two helicity-±2 gapless branches and strict V/S gaps is established, and no universal qubit no-go is proved.
+  - **No representation obstruction under the natural action.** T₂ appears at R, in low-symmetry slot orbits, and in pair labels at Γ.
+  - **Bounded results:**
+    - **Internal-Goldstone subclass:** at least four gapless branches, rigorously.
+    - **Unique symmetric quasi-local class** where both axial TT f-sums vanish, both TT responses stay nonzero, and the full response has a finite, direction-independent limit: strict V/S gaps are impossible without a pinch point.
+  - **Still open:**
+    - pinch-point phases;
+    - finite-response k⁰ f-sums;
+    - non-strict V/S continua;
+    - degenerate or symmetry-broken ground states;
+    - other readouts.
+- **R17-7 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Corrections:**
+    - Dark energy above e₀ need not be temporary.
+    - "One tuning per order" is proved only through m⁴.
+    - Bianchi excludes (S′-current) only without a local carrier.
+  - **Strongest statement.** C = e₀, if stipulated, is a fixed, non-signalling constant, and the residual κ(ρ_v − e₀) is ≥ 0. Its viability has these conditions:
+    - The DESI proxy recovers 54–62% of one synthetic gap and cannot realize w < −1.
+    - The grid enthalpy needs bridge (d-i) or structural cancellations.
+    - P93 is a severe stabilization condition.
+    - R-projection records give P4 heating; R-label records give nothing.
+  - **Status:** not excluded, and conditionally viable.
+- **R17-8 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Confirmed, as scoped no-gos:**
+    - **Lemma N:** canonical, local-in-time; it locks the generator to T^{0j}.
+    - **MIX-1:** single band.
+    - **MIX-2:** one small eigenvalue; finitely many under analyticity.
+    - **FD:** the equal-energy O(q) tangential identity is unaltered.
+    - **Theorem W:** conditional on H-RB, with analytic continuation and tame Reeb topology.
+  - **Still open:**
+    - continuous non-analytic multi-shift mixing;
+    - crossing bands;
+    - joint mixing with field-dependent generators.

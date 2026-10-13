@@ -1,166 +1,215 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T01:06:58.774051+00:00. Renewed campaign ends **2026-10-13 16:42:30 UTC**, never extend.
-Latest user: continue. Original mathematics and regular PRs authorized; no
-drafts, science merges, main pushes, audit verdicts, axiom changes or other-chat
-messages. Same selected model and effort. At deadline start no new research,
-preserve recovery, release lock, delete heartbeat and report actual outcomes.
-No editable prompt files changed.
+Updated 2026-10-13T01:45:04.863883+00:00. Renewed campaign deadline **2026-10-13 16:42:30 UTC**, never
+extend. Latest human request: continue. Original math and regular PRs are
+authorized; no drafts, main pushes, science merges, audit verdicts, axiom
+changes or other-chat messages. Same selected model/effort. At deadline start
+no new research, checkpoint, release lock, delete heartbeat and report.
+No editable prompt files changed. This is the sole current checkpoint.
 
 Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree,
-clean **physics-loop/toe-energy-observables-20261013**, HEAD/base
+clean branch **physics-loop/toe-energy-observables-20261013**, HEAD/base
 **d52ea0184932788d3d031e7207a6bad09114716d**, child of regular PR9508.
-No new child science installed or PR. W=../worktree remains checkpoint-only
-physics-loop/toe-nonlinear-transport-20261011, prior checkpoint
-5d1a56ffebb11267c7189a2d1279e0d5ceec30d2. R=../resume_20261012.
-Finite-energy worktree preserves9499; primary checkout untouched. This is
-the sole current checkpoint. Previous full handoff is archived at history/20261013T010658Z_HANDOFF.md.gz;
-older source proofs, failed routes and read identities remain in MAP/history.
+No new child science installed or PR. W=../worktree is checkpoint-only
+physics-loop/toe-nonlinear-transport-20261011, prior checkpoint6ef8ccf2a17027c451e18ee85c80b52d1fff8c21.
+R=../resume_20261012. Primary checkout untouched; finite_energy_worktree
+preserves9499. Earlier full handoff archived at history/20261013T014504Z_HANDOFF.md.gz; MAP retains all
+older source identities, failed routes and substantive evidence.
 
-## Published milestone and synchronization
+## Publication and synchronization
 
-**Six renewal regular PRs**:9499 finite-energy (173c0d4d),9500 energy/correlations
-(3679df3c),9502 bounded interactions (ba3ea535),9504 response (f055a7be),9506
-spatial control (4ff0ff1d),**9508 energy protocols (d52ea018)**, all attached.
-9508=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9508,
-base physics-loop/toe-spatial-control-20261012. No merges or main push.
-R/ENERGY_PROTOCOL_REGULAR_PR.json, ENERGY_PROTOCOL_PUBLICATION_GIT.json and
-ENERGY_OBSERVABLES_BRANCH.json bind actual outcomes. PR body is
-ENERGY_PROTOCOL_PR_BODY.md. Root checked isDraft=false/stateOPEN/exacthead.
+Six renewal regular PRs remain open and attached:9499 finite-energy173c0d4d,
+9500 energy/correlations3679df3c,9502 interactionsba3ea535,9504 responsef055a7be,
+9506 spatial4ff0ff1d,9508 energy protocols d52ea018. PR9508 URL:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9508.
+Its exact prepare230.247s/verify4.479s,367paths,+2nodes15edges and review
+package4b00550c remain accepted at the scope preserved in prior handoff.
+Identity caches execute no mathematical predicates; ledger checked[] empty.
+Cumulative stack landing checks/independent retained audit remain distinct.
 
-Latest fetch/list00:53:43: main516cb69d8487ff04f8a48e065d3dcbe71d7dd237,
-our existing heads and all18 procedure bytes unchanged. New other PR9507 at
-16838afb97f8a7f3d3bec9b97f640db9c1e01f9f; complete345line classical vector
-matter/radiation/readout note28eac494 read for overlap, distinct/no adoption,
-not an audit of linked evidence. R/ENERGY_PROTOCOL_PREPUBLICATION_REFRESH.json
-and ENERGY_PROTOCOL_PR9507_RELEVANCE.json retain evidence. Other9501/9503/9505
-unchanged. Unpublished candidate-lawdf06225c and observationsdb762960 were last
-observed00:38, not adopted or fully reviewed. Instructions3a4b2c66/manifest
-8ec70154 reused; Current763082a6 staysopen_gate.
+Latest fetch/list **01:27:51**: main516cb69d8487ff04f8a48e065d3dcbe71d7dd237,
+ai/execution3a4b2c66a1ead7a1c48b4359627e968f681e3c39, all18 procedure bytes
+unchanged; no external open-PR head/base/status changes since00:53.
+Only newly listed item was our9508. No source science adopted. Full raw
+streams in energy_observables_sync_0130; report
+ENERGY_OBSERVABLES_REPO_REFRESH_0130.json. Other9501/9503/9505/9507 science
+retains its prior overlap-read status; Current763082a6 remains open_gate.
+Unpublished refs last observed00:38 remain unadopted.
 
-9508 package R/energy_protocol_publication_preparation/SOURCE_FREEZE.json
-**4b00550c111f28bacb6019cfe35583cdf88a4e13d60c32fea5455f4de1ad77fc**,
-drivera5f27437. Accepted bodies are unchanged from706f5335 source package.
-Root read all6 wrappers,718line driver,205line identity template, complete
-changed runtime hunks, packet text and dependency roles. Prior complete body
-and comparison reads reused at exact hashes; prior false full-final-note and
-manual-full-diff fields remain false. Root byte reconstruction verifies432
-files,398aliases329objects,2notes,8publicationdiffs,2runtime diffs, generated
-executable ASTs,13parents18procedures. First attempt failed only because it
-expected different identity-diff header labels; original checker/failure kept.
-Inventory-heavy truncated outputs are not claimed as completed manual reads.
-Root acceptancef8b2b393 and review3735a81b preserve actual read coverage.
+## Newly read and conditionally accepted mathematics
 
-Actual prepare230.247s and verify4.479s, both exit0. Execution directories:
-energy_protocol_publication_execution/20261013T005434_prepare_5dccd8df29ea and
-20261013T010104_verify_db1cde8ae611. Exactly367paths,+2nodes/+15edges, old full
-graph objects unchanged,2freshidentitycaches,4exact-reason corruption controls,
-whitespace actualexit0. Canonical streams/rawreturns/full outer logs preserved.
-Ledger checked[] empty; identity tools execute0 mathematical predicates.
-R/ENERGY_PROTOCOL_PREPARED_ROOT_PIN.json binds8943cfc7 receipt. Cumulative stack
-landing validation and independent retained audit are separate obligations.
-No additional mathematical composition was inserted by publication.
+**Corrected kinetic proof:**1049lines CORRECTED_DISPERSION_INDEPENDENT.md
+**402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d**,
+freeze01:08:09 in corrected_dispersion_independent_recovery. Root fullreads
+4aa0a6/7454e4/0a39a3 and169line recovery proofcheckf99eb5; root identity
+acceptance5169f328 verifies19paths. Same-family recovery exposed to prior
+890line draft, excluded all new root/Lean/symbolic candidates before freeze.
 
-## New checked weighted science
+Cell averaging intertwines the literal lattice translations and gives
+constant-one |||Dc|^r Ccf||<=||E^r f||, all aliases included. Fixed regular
+finite CAR inputs give bounded free commutators; their norm-flow domains
+yield D(G^r)=D(H^r), with explicit polynomial graph bounds on actual G
+spectral windows. Positive coefficients of sqrt(1+u g(z)) are derived by
+residue Lagrange inversion and a decreasing alternating finite sum, with
+global positive-series tail through the fold. First kinetic correction is
+c²v²p4/(8E), residual<=3c4E5/(8v4), also checked by a distinct rational
+identity in the same context. Each finite order J gives positive full-low
+energy and residual<=c^(2J+2)E^(2J+3)/(2v^(2J+2)).
 
-Independent632line ENERGY_WEIGHTED_TRACE_INDEPENDENT.md **7c9df646** frozen
-18c4c808 at00:42:40, complete root read f437f5/199c6e; own identity check49
-path instances. Complete584line ENERGY_WEIGHTED_TRACE_CROSSCHECK.md
-**202b44242e9f9b1d8ba8e93302745e3c91425aa4a63b6b599850cb8f12de02e7** read
-ce4b20/dea0ab; all70 comparison path identities checked. No formula repair.
-Acceptance records ENERGY_WEIGHTED_TRACE_ROOT_READ_ACCEPTANCE.json and
-ENERGY_WEIGHTED_TRACE_COMPARISON_ROOT_ACCEPTANCE.json. Original/seals unchanged.
+Exact compressed Wc retained. Actual G-window/Sylvester/Duhamel/high discard
+gives density comparison for T=o(c^-(2J+2)); first G-energy cap extends it
+with nonoptimal O(((1+T)c^(2J+2))^(1/(4J+7))). This matches a c-dependent
+low initial partial density, not fixed-state compactness. Actual even
+vacuum/pair free controls fail at the truncation's critical time. Fixed V0
+has a separate O(c) potential error; its norm witness does not establish a
+density critical time. No no-go/analytic Lean/retained audit.
 
-For A=1+H/h*, X=rho-sigma, delta=||X||1 and Gamma=||A X A||1,
-||A^theta X A^theta||1<=delta^(1-theta) Gamma^theta<=delta^(1-theta) M^(2theta).
-Proof includes noncommuting spectral cutoffs/HS domains/scalar strip proof.
-Asymmetric weights max(a,b)<1, homogeneous weights, relative forms, actual
-number/current means, endpoint tail/graph sufficient resources and actual
-even sharpness/domain controls retained. Bounded second moments do not imply
-full graph-weight convergence; energy laws miss coherences.
+**Explicit potential proof:**600lines EFFECTIVE_POTENTIAL_INDEPENDENT.md
+**8f1e13d1ca4c42bbf4e5483c4035cacf28fd2bc82ee4b470776409e7753323be**,
+freeze3e4abded01:15:28. Root fullreads47d578/dc2e26, acceptance7668fdb2
+verifies38paths. Its four sources were fully read under plan6629b761;
+no new root candidate exposure before freeze. First-order old-source
+exposure disclosed. Actual M=w^-1/2 sinc(t/2)exp(itB)exp(-id sigmaz/2),
+B=diag(3/4,1/4); cubic coefficients agree with root on direct inspection.
 
-Native155line root62d98c8f received **source-exposed composition check**, not
-second independent native derivation. Actual Gamma_c=sqrt(1+Hc)rho sqrt(1+Hc)
-placed trace error <=2Sc sqrt((1+Sc)kappa)+sqrt(alpha[(1+Sc)^2+(1+S0)^2]),
-kappa=c/(2v)+1/Lambda. Strongly commuting actual energy/low bridge essential.
-Actual even high-pair coherent family has weighted errorTheta(sqrt(c)) while
-full traceTheta(c),low marginalvacuum,M2=1; test varies withc. This is not a
-fixed local pulse or all physical detector theorem. Root postcomparison
-precisions: continuum two-particle witness versus fixed-spacing particle
-growth; specified bounded position embedding; no unconditional ordering of
-weighted-density and scalarW2 topologies. Energy-weighted half-sandwich does
-not imply second-moment convergence. No analytic Lean/retained audit.
+For r=N+1, Xr has norm sum(j<=ceil(r/2))||x^j f||H^(r+j). Fractional-band
+input cutoff, exact contraction for omitted aliases/edge, multiplier Taylor,
+argument Taylor and monotone transport give global Oc^r low coefficient
+remainder. Finite CAR telescoping and quadratic high-vacuum contractions
+give full-low operator-norm expansion at every fixed N. Exact graded
+Pfaffian formula retained. T2 has a massive resolvent derivative and a
+nonzero exterior exponential tail for a nonnegative bump; not every
+polynomial is nonlocal. No order-uniform, full-series, dynamics or locality
+claim for the complete effective generator.
 
-## Active work and unreviewed candidates
+Root read full9596byte algebra script6ffbe2f4 (ce0db9), complete final
+result/repair/coverage records3a6c04. Author diagnostic17.722s: direct original
+complex chain entry matches 8 component/transport coefficients, explicit
+2P0 matches36 literal covariances, CAR degrees2/4/6 match, targeted mutations
+detected at their exact scope. Initial structural Matrix equality failure
+and entry-simplification repair retained. No fresh root run/all-order formal
+verification is inferred from that finite diagnostic.
 
-prepared_pulse_independent now checks new133line
-NORMALIZED_CURRENT_TRANSFER_ROOT_ADDENDUM.md **129a1af703261521627e56786fa2bed2a31d494940a13a8d29dd672a1c63f472**.
-This is source-exposed composition using the frozen weighted proof, not new
-independence. Candidate actual normalized current Kc=dGamma(pL)+dGamma(pH):
-|currentmean difference|<=Sc^2/(c Lambda^2)+sqrt(alpha_low[Sc^2+S0^2])/v.
-Uses only low-density trace error and actualM2, with highnumberHc² suppression.
-Actual even highpairmixture realizesTheta(c)highmean with lowmarginalvacuum,
-so unscaled(v²/c)current need not converge. Worker also checks arbitrary free
-post-preparation hold times by exact current conservation; interacting baseline
-not included. Deliver NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md.
+**Current composition:**502lines NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md
+**3ed69527ba6177ae17a66eeabe45f98591cf60a1d2f9367bfacd95306fca52f6**,
+freeze7daecafbfrozen01:16:51. Root complete3c153e/3c0c67; acceptance
+bae356ec verifies19freeze paths. No J1-J9 formula repair. J6 inverse-energy
+notation means bounded joint spectral ratio/core closure.
 
-Fresh **corrected_kinetic_recovery** is finishing an independently planned
-kinetic/domain derivation in corrected_dispersion_independent_recovery from
-earlier partial draft and exact allowed Current/Local/Ground/smooth/lowblock
-sources. Prior fresh agent failed twice, then older smooth worker twice more
-(b361d6b4,d32fe298 stream disconnects). No unfinished attempt counts as proof.
-Fresh worker has not seen new root proofs or Lean, preserves same model/effort.
-Deliver CORRECTED_DISPERSION_INDEPENDENT.md before any root comparison.
-Root257line50f27bc9 proposes uniform cell energy regularity, iterated CAR
-commutator/domain bootstrap, interacting windowH5 and global kinetic correction
-E+c²v²p4/(8E) with residual<=3c4E5/(8v4), T=o(c^-4) to exact finite-c
-compressed potential. Still unreviewed. Finite-c potential is not fixedV0.
+Actual Kc=dGamma(pL)+dGamma(pH)=(c/v²)Pactual. Given low trace erroralpha
+and actual second moments Sc²,S0², current mean error is
+Sc²/(cLambda²)+sqrt(alpha(Sc²+S0²))/v. Highparticle integer bound gives
+the Oc high term; actual even highpair mixture with exact lowvacuum shows
+Theta(c), and the unscaled current need not converge. This is a varying
+state-family control, not a fixed pulse. Free holds of arbitrary different
+finite durations preserve both mean values by strong commutation, including
+durations diverging withc. No later density comparison is needed for that
+observable. A bounded even pair-creation interaction has nonzero current
+derivative -gamma k, preventing automatic interacting-hold conservation.
 
-**effective_potential_independent** separately derives actual low cell/frame
-expansion and induced potential through cubic and any fixed finite order in
-new effective_potential_independent/, exact allowed Current/Local/smoothhigh
-and its crosscheck only. All allowed sources fully read, plan6629b761 frozen
-before science reads. No root/Lean/symbolic/otheractive draft exposure. Progress
-is provisional; wait for EFFECTIVE_POTENTIAL_INDEPENDENT.md and freeze.
-Root285lineb8a7cffe proposes explicit first3potential corrections/globalOc4
-norm remainder. Earlier exact8scalar component Sympy check remains limited.
+Earlier accepted scalar-energy944/cross514, weighted632/cross584/native155,
+smoothhigh768/cross642, phase679/cross546 and lowblock725/cross480 remain
+at exact prior hashes and standalone precision records. No new audit status.
 
-Root196linefa85a74d finite-order candidate remains unreviewed: Lagrange
-inversion yields proposed all-positive kinetic coefficients, global whole-band
-tail<=(sqrt2-1)x^(n+1), positive finite-order generator, then potential/domain
-composition to any chosen fixed polynomial time with order selected beforehand.
-No n-uniform, exponential-time or fixed-G0 theorem. Primary Gessel theorem
-2.1.1 record unchanged. New root exact Sympy checka0ddc8e4 compared direct
-symbol series to coefficient formula fororders1..8, allzero residuals/positive
-rational factors, wrong doubledformula rejected; exit0,.749s. This finite
-check proves no all-order analytic/domain/dynamics statement.
+## Completed comparisons, active checks and new root candidates
 
-New limited Lean PositiveSeriesTail.lean172daac2 compiled37.715sexit0 in
-positive_series_lean/logs/attempt01, two nonnegative summable-series tail lemmas.
-Mathlib939d5d5d/Lean4.35.0-rc4, axiomspropext/Classical.choice/Quot.sound.
-Does not establish actual coefficient positivity or analytic identification.
-Older DispersionCorrection.lean88a3598e compiled43.208sexit0 onsecondattempt;
-first import failure preserved. Both new leaf scope checks remain pending.
+Kinetic comparison CORRECTED_DISPERSION_CROSSCHECK.md449lines a89c8915 and
+potential comparison EFFECTIVE_POTENTIAL_CROSSCHECK.md496lines47d94f2b are
+frozen and fully root-read (7d1118/ae6242 and00fd6f/b7b4d1; both addenda
+21bbb1). Root acceptance b045c5a8/85d4a9cc verifies76/18 freeze bindings.
+No formula repair was needed. The orthogonal high/low columns give the
+sharper bound2sqrt(eta²+t²zeta²)+eta². Root's positive-binomial coefficients,
+whole-band remainder, typed domains and first-cap extension agree with the
+independent kinetic route. Finite explicit potential coefficients and
+global remainders agree with the independent potential route; root's more
+conservative seminorm dominates. Same-kinetic bounded Duhamel applies on the
+full carrier; replacement potential need not reduce the physical band.
+Each comparison preserves its external premise, covered by the other
+check. Root combined finite-order construction is now conditionally checked.
+This is complementary same-family analytic evidence, not a formal dynamics
+proof, retained audit or model-diversity claim.
 
-Previously checked energy-law944/cross514, smoothhigh768/cross642, phase679/
-cross546 and lowblock725/cross480 remain at their archived accepted identities
-and narrow correction records. Details are in previous handoff/history.
-LOCAL_PULSE_SPATIAL_ESCAPE_ROOT_ADDENDUM71line36308713 remains unreviewed.
-Broader actual creators/channel coverage, 3D selection and physical axioms
-remain open; this supplied-chain work does not close them.
+Precision addenda keep initial-density replacement explicitly in trace norm,
+physical-band zero extension, R>-K for tail division, common placed bounded
+observables and diagnostic chronology. Scalar/positive-series Lean leaves
+have identity-bound saved receipts only at their conditional leaf scope;
+ordinary mathematics checks actual substitutions and analytic identification.
+Finite8order symbolic control is in-script, not a separate mutated run.
 
-## Recovery and next decisions
+corrected_kinetic_recovery now assembles ONLY the already checked energy-law,
+weighted/native and current sources under energy_observables_source_preparation.
+It may create two proposed canonical notes and provenance/review materials;
+no CW/Git/PR/audit edits. Root must read changed wrappers/precision diffs and
+review the frozen package before any publication runtime.
 
-Bundle/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T010658Z.tar.gz, manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T010658Z.tar.MANIFEST.json, 1920members; MAP4939aliases.
-Frozen publication/weighted evidence, actual Git/runtime logs and new scalar
-checks included. All active current/kinetic/potential drafts excluded. Prior
-failed readings/checkers retained with their limited scope. N1/N5 pending,
-no global no-go or retained/audit verdict.
+effective_potential_independent now separately derives finite-coefficient
+spatial tails/local potential approximation under effective_potential_spatial_independent.
+Root L/Q/F probes excluded. Stream disconnect request305bb2fd-ef58-4037-8a21-40b4adaef303
+interrupted this new assignment; resume instruction preserves its existing
+plan/draft and failure history. No original proof/check was lost.
 
-Lockowner codex-toe-native-20261012, holder01a11691-f332-7852-b641-6ee714aab15a,
-refreshed2026-10-13T00:09:02.133415+00:00,expires2026-10-13T02:09:02.133415+00:00,refreshbefore2026-10-13T01:49:02.133415+00:00.
-Next: read kinetic/potential/current freezes and compare at exact sources;
-prepare coherent energy-observables milestone on new clean branch after
-current review; independently test all-order kinetic route once first-order
-worker freezes. Next checkpoint01:35 or milestone. Continue useful science,
-not merely one PR. No root command running once this checkpoint push finishes.
+prepared_pulse_independent has frozen a657line source-exposed check of **156line** root
+EFFECTIVE_DYNAMICS_ENERGY_READOUT_ROOT_COMPOSITION.md **d104c34f**,
+seal9b25ee94. Given Q1 free scalar orders and a separately supplied full
+density erroralpha, actual/effective bounded stationary interactions imply
+all-time M2 roots A=S+2K and B=S+2K*. Partial trace initially bounds the
+corrected free M2. This would transfer the same corrected time window to
+Wr(r<2), native half-energy weighted trace and normalized-current means,
+without assuming interacting current conservation. Exact-W first-cap rate
+yields current O(c+epsilon^(1/(8n+14))) and weighted O(sqrtc+same).
+Root complete readcb95aa; current was pending at historical freeze, now checked.
+EFFECTIVE_DYNAMICS_ENERGY_READOUT_COMPOSITION_CHECK.md d453d02c, freezeaa5b1d24.
+Root full read is pending. Worker reports no Q1-Q10 formula repair but requires
+alpha->0 for convergence (alpha<=2 alone is insufficient), preserving an
+explicit control. This report is not root acceptance yet. Worker now begins
+a neutral fourth-moment/endpoint derivation with root F excluded; allowed
+earlier source exposure and exact domains must be disclosed.
+
+Two newer root probes are frozen but **unreviewed**, with separate derivations active:
+
+- EFFECTIVE_POTENTIAL_SPATIAL_DECAY_ROOT_PROBE.md173lines **102af105**,
+  sealbb8ca3c6. Finite coefficient ring C[p,(m²+v²p²)^-1], pole order at
+  most floor(n/2)-j, gives polynomial times exp(-m|x|/v) tails. Candidate
+  local potential truncation error C c² exp(-nu R), nu<m/v, plus global
+  Cc^(N+1). RadiusR~log(1/c) could retain that local potential on polynomial
+  time windows. No propagation or whole-Hamiltonian locality follows.
+- FOURTH_MOMENT_EFFECTIVE_ENDPOINT_ROOT_PROBE.md170lines **1f7391a6**,
+  seal40289b96. New F1-F8: typed first commutator plus initial fourth moment
+  gives ||H²U rho^.5||HS<=M+4KS+2L+6K², duration-independent. Actual/effective
+  moment resources would yield W2<=kappa Mc+sqrt(Mc+M0)(alpha/2)^1/4 and
+  full native graph-weight trace convergence. Exact/smooth effective
+  potentials supply the commutator condition; sharp spatial cutoffs are
+  not assumed to. These are candidates requiring focused checks.
+
+New Lean leaves remain scoped: DispersionCorrection88a3598e compiled43.208s
+(prior import failure kept); PositiveSeriesTail172daac2 compiled37.715s,
+mathlib939d5d5d/Lean4.35.0-rc4. Only conditional inequalities and abstract
+summable-series tails, not actual substitutions/coefficient identification/
+analytic dynamics. Exact8coefficient Sympy finite checka0ddc8e4 unchanged.
+LOCAL_PULSE_SPATIAL_ESCAPE_ROOT_ADDENDUM36308713 remains unreviewed.
+
+## Recovery, failures and next decisions
+
+Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T014504Z.tar.gz, manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T014504Z.tar.MANIFEST.json, 293 members, MAP5211 aliases.
+Includes the three completed new frozen checks/proofs, both completed source
+comparisons, frozen but root-unread Q check, root read acceptances, three
+frozen new root candidates, source sync and preceding checkpoint execution
+logs. New active source-preparation/spatial/endpoint directories excluded. Prior checkpoint and
+all historical originals retained; hashes are provenance, not science tests.
+
+Bookkeeping failure0e119d: generic acceptance identity walk treated current
+freeze's relative EXPOSURE.md as cwd-relative. Potential38path acceptance
+had already succeeded; current/new spatial seal were not created. Separate
+SOURCE_ACCEPTANCE_PATH_REPAIR_0124.json records it; corrected base resolution
+verified19paths, exit0. No science changed. Inventory-only gitstat truncated
+1283be is not a full read; exact needed paths recovered33ff3d. Earlier failures
+remain in MAP/history. No global no-go packet PASS or audit application.
+
+Lock ownercodex-toe-native-20261012, holder01a11691-f332-7852-b641-6ee714aab15a,
+refreshed2026-10-13T01:32:38.849398+00:00,expires2026-10-13T03:32:38.849398+00:00,refreshbefore2026-10-13T03:12:38.849398+00:00.
+Next checkpoint02:00 or milestone. Next: package the already checked
+scalar-energy/weighted/current sources as a regular energy-observables PR;
+read the frozen Q composition check; selectively derive/check
+new spatial-decay and fourth-moment endpoint routes. Continuous discovery
+continues after a PR. Actual microscopic creators, interacting channel
+selection and 3D realization remain open.

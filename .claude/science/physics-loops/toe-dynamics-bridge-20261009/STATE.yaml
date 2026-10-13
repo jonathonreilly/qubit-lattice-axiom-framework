@@ -13,13 +13,14 @@ base_revision: d52ea0184932788d3d031e7207a6bad09114716d
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Check normalized current, corrected kinetic/domain and explicit potential independent freezes; package
-  energy-sensitive observables, then check all-order kinetic/effective-time route.
+active_route: Energy-observables source preparation active. Root-read Q657, continue neutral spatial/endpoint derivations,
+  then compare frozen sources and package corrected dynamics milestone.
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Six renewal regular PRs;9508 energy protocols published. Weighted interpolation/native transfer comparison
-  complete. Current and corrected effective dynamics checks active.
+milestone: Six renewal regular PRs. Kinetic1049/potential600/current502 and kinetic449/potential496 comparisons
+  fully root-read; complementary combined finite-order argument conditionally checked. Q657 frozen root-unread;
+  energy-observables source preparation and new spatial/endpoint derivations active.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -35,9 +36,9 @@ walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
-lock_refresh_before_utc: '2026-10-13T01:49:02.133415+00:00'
-next_action: Read new current/kinetic/potential freezes. Prepare next energy-observables milestone on clean child
-  of9508 only after current composition review. Nextcheckpoint01:35 or milestone. Lockrefreshbefore2026-10-13T01:49:02.133415+00:00
+lock_refresh_before_utc: '2026-10-13T03:12:38.849398+00:00'
+next_action: Review energy-observables frozen source package before publication runtime/regular PR. Root-read Q657;
+  spatial recovery and endpoint derivation active. Nextcheckpoint02:00 or milestone. Lockrefreshbefore2026-10-13T03:12:38.849398+00:00
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -62,8 +63,8 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-13T01:06:58.774051+00:00'
-latest_source_refresh: '2026-10-13T00:53:43.913053+00:00'
+checkpoint_utc: '2026-10-13T01:45:04.863883+00:00'
+latest_source_refresh: '2026-10-13T01:27:51.266683+00:00'
 latest_other_pr: 9507 at16838afb97f8a7f3d3bec9b97f640db9c1e01f9f; full345line canonical note28eac494 read for overlap;
   distinct/no adoption
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
@@ -91,8 +92,8 @@ campaign_prs_closed_by_other_activity:
 - 9491
 state_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9495
 state_adapted_published_science_revision: 0d99401253ebf5790b5ac24a2dcb94a74871f874
-lock_refreshed_utc: '2026-10-13T00:09:02.133415+00:00'
-lock_expires_utc: '2026-10-13T02:09:02.133415+00:00'
+lock_refreshed_utc: '2026-10-13T01:32:38.849398+00:00'
+lock_expires_utc: '2026-10-13T03:32:38.849398+00:00'
 energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9496
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
@@ -131,7 +132,7 @@ root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_
 scoped_lean_status: Spatial8Ring/lowblock3Ring scope checked. Dispersion88a3598e compiled2conditional inequalities43.208s;
   PositiveSeriesTail172daac2 compiled2summable-series lemmas37.715s. New leaf scope checks pending; actual substitutions/coefficient
   positivity/domains/dynamics not formalized.
-previous_checkpoint_commit: 5d1a56ffebb11267c7189a2d1279e0d5ceec30d2
+previous_checkpoint_commit: 6ef8ccf2a17027c451e18ee85c80b52d1fff8c21
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -144,8 +145,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T010658Z.tar.gz
-recovery_map_aliases: 4939
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T014504Z.tar.gz
+recovery_map_aliases: 5211
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -155,9 +156,9 @@ ground_assembly_status: 1057-line assembly b8bcba76 and exact-source review af0c
 response_status: 717-line independent core and 433-line comparison fully read; no required repair. Static spectral/response
   theorem accepted conditionally.
 root_response_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GROUND_SPECTRAL_RESPONSE_ROOT_PROBE.md
-bookkeeping_failures_since_prior: Truncated inventory/diff reads not credited; full changed runtime hunks and necessary
-  science reread. Root byte checker first expected wrong identity-diff header labels; preserved first source/failure,
-  corrected check0. Two additional native stream disconnects; new same-model recovery worker.
+bookkeeping_failures_since_prior: Identity walker0e119d mishandled current freeze relative evidence paths; potential
+  acceptance had succeeded; current/spatial seal not yet written. Corrected base resolution19f7ea exit0, failure
+  record retained, no science change. Inventory-only gitstat1283be truncated; needed exact paths recovered33ff3d.
 sharpness_status: 'Root and separate427-line derivations plus complete crosscheck accepted: actual linear-ramp excess
   has positive tau^-2 lower envelope in an even two-mode witness; not every protocol/model.'
 spatial_correlation_status: 566-line independent core and 325-line comparison fully read; contracted-support continuum
@@ -228,20 +229,27 @@ smooth_high_band_status: 768-line independentc69d638e and642-linecross1a10d9c6 f
 weighted_trace_status: 632line independent7c9df646 and584line cross202b4424 fully root-read. No formula repair.
   Three standalone precisions recorded. Native155line62d98c8f source-exposed composition accepted; no second independent
   native derivation/formal audit.
-dispersion_corrected_status: Root257line50f27bc9 unreviewed. After two fresh/two recovered-worker stream failures,
-  new corrected_kinetic_recovery independently finishes prior exact-source plan/draft without root/Lean exposure.
-  Await frozen CORRECTED_DISPERSION_INDEPENDENT.
+dispersion_corrected_status: 1049line402cbc03 plus449linea89c8915 comparison fully root-read. Positive kinetic hierarchy,
+  typed domains, sharper orthogonal-column density/first-cap bounds checked conditionally. Two Lean leaves scoped
+  to saved conditional receipts; actual analytic identification ordinary mathematics.
 energy_protocol_source_status: Four accepted bodies unchanged; six publication wrappers/full718line driver/205line
   template and all changed runtime hunks read. Exact reconstruction432files398aliases; published9508. Prior honest
   source coverage retained.
-explicit_potential_status: Root285lineb8a7cffe unreviewed; new effective_potential_independent deriving actual cell/frame
-  and finite-order CAR potential with full global remainder. Exact allowed sources read; plan6629b761 frozen. Earlier8scalar
-  Sympy checks limited.
-finite_order_status: Root196linefa85a74d unreviewed; positive coefficients/global kinetic tail and arbitrary fixed
-  polynomial-time effective family conditional. New Sympy8exact series coefficients a0ddc8e4 exit0 .749s, no all-order
-  proof. Gessel primary source retained.
+explicit_potential_status: 600line8f1e13d1 plus496line47d94f2b comparison fully root-read. Fixed-order coefficient/full-low
+  potential norm remainder and conditional same-kinetic bounded Duhamel checked; root conservative norm dominates.
+  Physical band, R>-K and common-observable precisions retained. Finite diagnostics not analytic formal proof.
+finite_order_status: Separate source-excluded derivations and complementary root source comparisons completed/root-read.
+  Combined finite-order kinetic plus potential dynamics conditionally checked within canonical open-gate premises;
+  not retained/model-diverse/formal analytic verification.
 energy_protocol_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9508
 energy_protocol_published_science_revision: d52ea0184932788d3d031e7207a6bad09114716d
-normalized_current_status: "New133line129a1af7 proposes actual normalized-current mean bound Sc\xB2/(cLambda\xB2\
-  )+sqrt(alpha_low(Sc\xB2+S0\xB2))/v and even highpair sharpness/unscaled failure. Source-exposed composition check\
-  \ active; no acceptance yet."
+normalized_current_status: 502line3ed69527 source-exposed check fully read; no J1-J9 formula repair. J6 bounded
+  spectral-ratio interpretation. Actual free holds preserve current means at arbitrary different times; explicit
+  even interaction changes current.
+effective_energy_readout_status: Root156lined104c34f; source-exposed657lined453d02c frozenaa5b1d24, ROOT FULL READ
+  PENDING. Worker reports no Q1-Q10 formula repair, but alpha must tend to zero for convergence. Do not credit worker
+  report as root acceptance.
+spatial_effective_potential_status: Root173line102af105 unreviewed. Separate neutral spatial derivation active with
+  root excluded. Stream disconnect305bb2fd interrupted it; same-assignment recovery requested with files preserved.
+fourth_moment_endpoint_status: Root170line1f7391a6 unreviewed. Separate neutral fourth-moment/endpoints derivation
+  active with root excluded; domain/commutator and actual fixed-pulse scope required.

@@ -7822,3 +7822,37 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R19-11a, b and c.
 
   Referee running.
+
+### C5 Round 19, item 15 (pre-registered 05:24Z, before launch)
+
+**R19-15. The shear rows as a graviton mass: does any part of the bridge — exact W1, (S), (d-i), W1-weight — remove them, or are they a ~1e-98 tuning?**
+- **Plain question.**
+  - The shear rows μ_E and μ_T2 are the supplied zero-point vacuum's response to a static TT strain.
+  - R19-11 (worker; referee running) reads them as a graviton mass. At SM masses, an untwisted law leaves μ ~ 1e-19 per cell, ~1e79 above the GW170817-level bound. A spectrum-tuned law zeroes them only by encoding mass sums to ~1e-98 (P0-level).
+  - Does any refereed piece of the bridge force μ = 0 structurally?
+    - Exact W1 (R19-5/R19-9): a conserved stress.
+    - (S): e₀ removed.
+    - (d-i): it absorbs the isotropic enthalpy W h[n] only (R17-11 says the anisotropic part is not absorbed).
+    - The weight-1 source (R19-6).
+  - Or is a separate principle needed? For example: "the vacuum's static strain response does not gravitate", or "the gravitating source is the strain-subtracted stress".
+  - Is any such principle number-free and non-signalling?
+- **Setting.**
+  - The C-box-E bridge with the exact W1 stresses.
+  - The supplied zero-point vacuum; one loop; the TT static response at q → 0.
+  - Compare with continuum GR with Lorentz-invariant regularization, where μ = 0 by Lorentz invariance of the vacuum (comparator).
+- **Prior art (count once):**
+  - R14-3 (μ_E), R16-9, R16-13 (μ_T2), R17-11, R17-13, R18-6, R19-5, R19-6, R19-9 and R19-11, with their verdicts;
+  - PRICE_NOTE P0;
+  - the R9-9 vertex.
+- **Removed hypothesis:** shear rows paid by tuning only.
+- **Probes.**
+  - (a) Identify μ as a vacuum strain response. Is it ⟨T_ij⟩'s derivative with respect to a uniform TT strain, minus the contact term?
+  - (b) Check each bridge piece for whether it cancels μ.
+  - (c) If none does, the minimal principle that does, and its cost: Bianchi, signalling, numbers.
+  - (d) Radiative stability of μ = 0 under each option.
+  - (e) Prices.
+- **FIXED readings.**
+  - **STRUCTURAL-ZERO:** a stated principle (existing or new, number-free, non-signalling) forces μ_E = μ_T2 = 0 for every species at every mass. Checked.
+  - **TUNING-ONLY:** a refereed demonstration that within the stated bridge class μ = 0 requires tuning at the ~1e-98 level and is radiatively unstable.
+  - **OPEN:** otherwise.
+- **Expectation.** TUNING-ONLY within the current bridge. A new principle ("only the strain-subtracted vacuum stress gravitates") could give STRUCTURAL-ZERO, but it would be a fifth clause, and likely the lattice analogue of requiring a Lorentz-invariant vacuum, which the lattice lacks.

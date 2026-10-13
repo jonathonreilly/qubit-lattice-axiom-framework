@@ -7057,3 +7057,35 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R18-9a (photon window), P-R18-9b (UD off-axis).
 
   Referee running.
+
+### C5 Round 18, item 13 (pre-registered 03:40Z, before launch)
+
+**R18-13. The off-axis graviton rows at the SM root: how many more conditions, and can shape or placement pay them?**
+- **Plain question.**
+  - R18-9 (worker; referee running) zeroes the four axial rows at SM counts with conserved vertices (U, UD, VW with a signed stencil).
+  - The off-axis rows are unpaid:
+    - for scalars, face2 ≡ T₂g and face1 adds K₆ (R17-4);
+    - for UD Dirac, face2 ≠ T₂g (~7e-5);
+    - VW is defined only for q ∥ z (R17-12), so its off-axis extension is a further law datum.
+  - At the SM root:
+    - How many independent off-axis conditions are there (face1, face2, body)?
+    - Can the remaining freedom pay them: the Dirac pair block, the off-axis VW stencils and UD's O(q²) placement (P-R18-5b/c)?
+    - Or do they need non-shape knobs?
+- **Setting.**
+  - R18-9's root content and vertices.
+  - VW extended off-axis covariantly (stencils per symmetry type, stated).
+  - UD with its O(q²) placement data.
+  - Off-axis directions: face (110) and body (111), m = 0.01, one loop.
+  - Excluded: pairing; superluminal edges; M; V0.
+- **Prior art (count once):** R17-4 (off-axis formula; U identities; K₆), R17-10 (Theorem F), R18-9, R18-5, R17-12 (Lemma I, stencils free), R13-8 (rank-4 TT space).
+- **Removed hypothesis:** axial q only.
+- **Probes.**
+  - (a) An off-axis extension of VW and UD that keeps covariance and the forward test.
+  - (b) The face1, face2 and body rows at the R18-9 root, per species and in total.
+  - (c) The count of independent extra conditions, and a solve using the off-axis placement data (declared knobs) together with the axial rows.
+  - (d) The bill.
+- **FIXED readings.**
+  - **ALL-ROWS-ZERO:** an explicit SM-count law with conserved covariant vertices, all subluminal, and the axial and off-axis rows all zero at a common light mass. Checked, with the knob count.
+  - **OFF-AXIS-COUNTED:** the number of extra conditions is established (proved or checked), with a stated payment route, but no joint root is found.
+  - **OPEN:** otherwise.
+- **Expectation.** OFF-AXIS-COUNTED with two extra conditions (face1 and face2), payable by off-axis stencil data. The bill then becomes ~6 tunings for the SM gravity block, plus the charge block.

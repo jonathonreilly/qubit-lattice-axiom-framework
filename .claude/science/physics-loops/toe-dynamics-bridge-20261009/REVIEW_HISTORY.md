@@ -37,3 +37,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T02:35:38.512716+00:00: Energy-observables source accepted with honest coverage and exact reconstruction; no install. Spatial626 and fourth867 fully read/conditionally checked, comparisons active. Neutral moment worker active. BV fourth190 and new BV dynamics230 root candidates frozen unreviewed. No prompt or audit changes.
 
 2026-10-13T03:01:16.594120+00:00: Spatial/fourth comparisons complete; stationary moment731 conditionally accepted and root comparison active. Nonautonomous neutral worker active. Graph-regularity154 unreviewed. Scoped power-jump Lean attempt02 successful after import-only failure. New publication preparation active, no install. No prompt/audit change.
+
+2026-10-13T03:30:03.760058+00:00: Regular9510 published at8c88ed44 after exact source/program/runtime review. Moment cross468 accepted with explicit eigenline repair, originals retained. Nonautonomous774 delivered/root-read pending; G/E and preparation checks active. No prompt/audit change.

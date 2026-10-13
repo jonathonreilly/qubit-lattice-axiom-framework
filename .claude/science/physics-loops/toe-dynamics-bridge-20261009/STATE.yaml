@@ -13,14 +13,14 @@ base_revision: d52ea0184932788d3d031e7207a6bad09114716d
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Complete source-only publication preparation; then exact root program review and regular PR. Moment
-  root comparison and neutral nonautonomous derivation active. Graph/history/local-pulse candidates need focused
-  checks.
+active_route: Review frozen nonautonomous774 and pending G/E comparison; independently test smooth-preparation moments.
+  Next coherent milestone packages accepted finite-order kinetic/potential/moment bounds. History/local-pulse checks
+  remain queued.
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Six regular renewal PRs. Energy-observables publication preparation active; no install. Spatial/fourth
-  comparisons accepted. New moment731 proof fully read. Scoped noncommutative Lean check completed.
+milestone: Seven regular renewal PRs. Energy observables9510 published. Moment comparison accepted with explicit
+  eigenline repair. Neutral nonautonomous774 delivered; full root review and comparison pending.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -30,16 +30,15 @@ independent_checks: Separate frozen derivations and source-exposed comparison fo
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: Clean child for energy-sensitive observables; no child science installed or PR
-active_pr_url: null
+active_pr_status: Regular PR9510 open and attached; clean active branch
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9510
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-13T04:37:21.994958+00:00'
-next_action: Review frozen publication preparation on delivery; install/run/stage/verify/publish regular PR. Read
-  moment comparison and nonautonomous proof; continue graph/history lanes. Next checkpoint03:35 or milestone; refresh
-  lock before04:37:21.994958Z.
+next_action: Read complete774-line nonautonomous proof, inspect focused G/E and preparation results, continue science
+  and finite-order milestone. Next checkpoint04:05 or milestone; refresh lock before04:37:21.994958Z.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -64,10 +63,10 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-13T03:01:16.594120+00:00'
-latest_source_refresh: '2026-10-13T02:36:17.138687+00:00'
-latest_other_pr: 9507 at16838afb97f8a7f3d3bec9b97f640db9c1e01f9f; full345line canonical note28eac494 read for overlap;
-  distinct/no adoption
+checkpoint_utc: '2026-10-13T03:30:03.760058+00:00'
+latest_source_refresh: '2026-10-13T03:10:28.013018+00:00'
+latest_other_pr: 9509 atfa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9; full599line canonical30696ddd read for overlap;
+  distinct scalar/tensor and bosonic clock assumptions, no adoption
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
 current_mass_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9491
 current_mass_published_science_revision: e26e2de4fd64ee49d0745cbf02fd05355494b569
@@ -75,8 +74,8 @@ local_continuum_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fr
 local_continuum_published_science_revision: a8ab3f49038327e3080d2f93afb7e34601459928
 dyadic_refinement_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
 dyadic_refinement_published_science_revision: cb882f7c68032986900dec2aaf24617ff3274c08
-campaign_prs_created: 6
-campaign_prs_currently_open: 6
+campaign_prs_created: 7
+campaign_prs_currently_open: 7
 campaign_prs_closed_by_other_activity:
 - 9478
 - 9479
@@ -99,7 +98,7 @@ energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fra
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
 automation_status: ACTIVE
-active_head: d52ea0184932788d3d031e7207a6bad09114716d
+active_head: 8c88ed444f104bfd482c5886d28d7b09f68c6c1b
 sharp_current_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497
 sharp_current_published_science_revision: 7c0570a4a20a768349f3d88960303f8637e7fe33
 current_preserving_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9498
@@ -135,7 +134,7 @@ scoped_lean_status: 'Spatial8Ring/lowblock3Ring scope checked. Dispersion88a3598
   positivity/domains/dynamics not formalized. PowerJump837784b4 attempt02 compiled22.899s exit0,d6ee02: general
   ring jump, square commutator and exact2x2 omission countercontrol. Only standard propext/choice/quot axioms. Attempt01
   missing aggregate Tactic.olean preserved; no analytic/domain/BV verification.'
-previous_checkpoint_commit: 6a8b33ef7a4c6c5086127e1bc9ea978665107fde
+previous_checkpoint_commit: 2575878138dab5dd509981d76f181a0007e5d4fe
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -148,8 +147,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T030116Z.tar.gz
-recovery_map_aliases: 5666
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T033003Z.tar.gz
+recovery_map_aliases: 6739
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -164,7 +163,9 @@ bookkeeping_failures_since_prior: 'Identity walker0e119d mishandled current free
   record retained, no science change. Inventory-only gitstat1283be truncated; needed exact paths recovered33ff3d.
   New07913b: moment acceptance, lock and Lean receipts succeeded, then guessed comparison-folder inventory failed;
   actual nested comparison paths resolved8a50bd/4a5d83.94c8c7 two guessed source names absent before exact resolution.
-  No science altered.'
+  No science altered. Current read-only metadata commands33c16f/0190ce overprinted bulk identity lists and were
+  truncated; wrong PR_BODY_TEMPLATE filename failed. No scientific coverage inferred; actual compact statuses,164pins
+  and exact canonical runner outcome reread b5254b; verify result fully527bb7.'
 sharpness_status: 'Root and separate427-line derivations plus complete crosscheck accepted: actual linear-ramp excess
   has positive tau^-2 lower envelope in an even two-mode witness; not every protocol/model.'
 spatial_correlation_status: 566-line independent core and 325-line comparison fully read; contracted-support continuum
@@ -177,11 +178,12 @@ time_filtered_status: 696-line core and410-line comparison46533eb1 fully read; n
   and sufficient window conditions kept explicit.
 native_spatial_status: 604-line core7ec62ba1 and336-line comparison034ac859 fully read; uniform native clustering
   accepted at stated scope, arbitrary norm-bounded even interval V.
-publication_package: R/energy_protocol_publication_preparation published regular PR9508; exact root source/program
-  review complete
-publication_package_sha256: 4b00550c111f28bacb6019cfe35583cdf88a4e13d60c32fea5455f4de1ad77fc
-publication_execution: Prepare230.247s/verify4.479s exit0;367paths,+2nodes15edges,2freshidentitycaches,4exact-reason
-  corruption controls,whitespace0. Ledgerchecked[] empty;mathpredicates0.
+publication_package: R/energy_observables_publication_preparation; source freeze011a1ca5, root acceptanceafda43e4;
+  regular9510 published
+publication_package_sha256: 011a1ca5c58b98d756a0a2c05fc1d8c260eaa4faaf5300d79bbe0b557779ba84
+publication_execution: Actual prepare221.301s and verify4.391s exit0.164exact staged blobs,2fresh identity caches,4exact-reason
+  corruptions,graph+2nodes10edges,old graph unchanged.Compatibilitychecked[]empty;zero mathematical predicates.
+  Regular9510 head8c88ed444f104bfd482c5886d28d7b09f68c6c1b attached.
 root_pulse_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SMOOTH_PULSE_ENERGY_ROOT_PROBE.md
 root_time_filtered_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/TIME_SMEARED_TRANSFER_ROOT_PROBE.md
 root_native_spatial_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_ROOT_PROBE.md
@@ -264,22 +266,33 @@ fourth_moment_endpoint_status: 867line34bf78f5 and505linecomparison4bc61a1a full
 moment_sensitive_status: 731line8361667a separately derived and fully read ffd969/81e201/59aa8e; acceptanceb2b572b7
   verifies19 identities. Global weighted projected defect and interpolation yield c^(s/2)+(T c^(2J+2))^min(s/(4J+6),1)
   for spectral moment order s. Root M uses column order s, twice this convention. Matching actual free state-class
-  controls, no fixed-preparation claim. Root comparison active.
-moment_phase_control_status: New root129line c2a280b4 (seal acd309e2), unreviewed/unassigned. Actual even free low-pair
-  coherent family with uniform B^(2s) moment realizes proposed epsilon^(s/q) density size. Moving-state class and
-  fixed truncation only, not fixed pulse or global no-go.
+  controls, no fixed-preparation claim. Complete468line crossa10c7c59 read63c10c/06241e; precisione48991. Acceptance306e8a77
+  verifies26frozenmembers. No M1-M13 formula repair; root phase placement corrected by explicit momentum-dependent
+  eigenline section. Original retained.
+moment_phase_control_status: 129line c2a280b4 checked in complete cross468; precision8210a7e2 accepted306e8a77.
+  Literal constant physical spinor is false; use normalized momentum-dependent positive eigenline section or declared
+  scalar coordinates. C1/C2 powers/constants survive. Original unchanged; varying-state class, no fixed-pulse realization.
 multitime_correlation_status: New root223line5caf264a (seal2d76d9b3), unreviewed/unassigned with provisional M parent.
   Common-high-identity column intertwining, actual-prefix graph budgets and finite-history telescope propose bounded
   multitime correlation limits on same corrected polynomial windows. Typed projection precision/draft preserved.
-energy_observables_source_status: 125-file freeze94d6cae8; source acceptance de896ce3. Root full new-wrapper/three-edit/map/dependency/program
-  review, unchanged complete bodies reused. Exact reconstruction and28live pins verified ccca10 exit0, zero math
-  predicates. New publication runtime still requires separate reviewed preparation.
+energy_observables_source_status: 207member publication freeze,736line driver and236line template fully read. Prior
+  four complete body reads reused at exact bytes; all wrappers/new programs/maps reviewed. No fresh full-final-note
+  or raw-context manual read claimed. Record81a2c30e/afda43e4; current164pins checked b5254b. Source/runtime/PR
+  evidence archived.
 bv_fourth_moment_status: Root190line689dd652, seale64b1390, frozen unreviewed. BV(V,[H,V]) gives duration-independent
   H-squared column bound. Worker fourth867 separately derived a related sharper switching argument; exact root BV
   comparison not yet assigned.
-bv_corrected_dynamics_status: Root230lineb475f153 remains unreviewed. prepared_pulse_independent is neutrally deriving
-  nonautonomous regular-control dynamics with roots BV/M/history/G excluded. No instantaneous spectral-projector
-  invariance assumed.
+bv_corrected_dynamics_status: Separate774line31100719 frozen67df1109 delivered, root complete read pending. Source-exposed
+  comparison of exact rootBV230/b475f153 andBV190/689dd652 now active; M/history/G/E/P/checkpoint excluded. No instantaneous
+  spectral-projector invariance assumed.
 effective_potential_graph_status: New root154line4282b727, seal1d1a0d04, full readff9bcd/fb05ea. Actual rational
   differential T_j preserves Schwartz; smooth fixed-width spatial cutoff retains radius-uniform free commutator.
   Conditional fourth-moment/readout composition. Focused check pending.
+energy_observables_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9510
+energy_observables_published_science_revision: 8c88ed444f104bfd482c5886d28d7b09f68c6c1b
+smooth_preparation_status: 'Root167linec08d283a sealed5c6c68ba: L1-time graph-Dyson control and finite output commutator
+  conversion propose uniform arbitrary fixed moments and linear finite-order density error. Neutral separate derivation
+  active with root hidden. No acceptance yet.'
+moment_local_endpoint_status: Root126line7ab78b9d sealed1a2199f3 composes stationary moment and fourth endpoint
+  with G154 radius-uniform smooth-cutoff graph bounds. Full root readf1de8f; source-exposed G/E comparison active.
+  No independent result yet.

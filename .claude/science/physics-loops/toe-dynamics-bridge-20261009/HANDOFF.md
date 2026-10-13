@@ -1,79 +1,80 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T03:01:16.594120+00:00. Sole current checkpoint; renewal deadline2026-10-13T16:42:30Z,
-never extend. Latest human instruction: continue. No prompt files changed;
-no science merge/main push/audit verdict/physical-axiom change.
+Updated 2026-10-13T03:30:03.760058+00:00. Sole checkpoint. Renewed campaign deadline2026-10-13T16:42:30Z
+is fixed. Latest human instruction: continue. No editable prompt changes,
+science merge, main push, audit verdict or physical-axiom change.
 
 Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, clean physics-loop/toe-energy-observables-20261013,
-HEAD/based52ea0184932788d3d031e7207a6bad09114716d, child of regular9508. No new canonical installation or PR.
-Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; prior6a8b33ef7a4c6c5086127e1bc9ea978665107fde. Primary untouched.
+HEAD8c88ed444f104bfd482c5886d28d7b09f68c6c1b. Regular PR9510 open and attached, base regular9508 atd52ea018.
+Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; prior2575878138dab5dd509981d76f181a0007e5d4fe. Primary untouched.
 
-## Current results
+## Published milestone
 
-Source package125files94d6cae8 and root acceptance de896ce3 remain accepted.
-Exact reconstruction/source integrity ccca10 exit0; prior full body reads
-reused, all new wrappers/three wording changes/maps/programs read. No fresh
-whole-final-note/raw-context manual read claimed. Old718line drivera5f27437
-fully read; new exact publication program is NOT reviewed or executed yet.
-Worker spatial_recovery_final owns only R/energy_observables_publication_preparation;
-prepares payload and2identityrunners/driver. Parentd52ea018,2nodes10edges,
-10canonicalparents18procedurepins. No math predicates, status promotion
-or inferred manual-read gate. Root must inspect programs before mutation.
+Seven regular renewal PRs9499/9500/9502/9504/9506/9508/9510.9510 contains
+energy distribution and weighted/current conditional theorems. Four accepted
+bodies retained exactly; source exposure and countercontrols preserved.
+Publication freeze011a1ca5 has207members,159payloadfiles. Driver736lines
+92d8a0bc andtemplate236lines5e333e5d fully root-read. Review81a2c30e,
+acceptanceafda43e4. False fresh-full-final-note/raw-context manual-read
+fields remain false; old exact complete body coverage reused.
 
-Spatial626+comparison328 fully read, acceptances8afd8e6a/8bb718c0;
-fourth867+comparison505 fully read, acceptances3f1683a9/203af77c.
-No formula repair. Preserve actual exponential-polynomial tails/cancellations,
-sharp-vs-smooth cutoff domain distinction, finite-c bandlimit limitation,
-and fourth-moment fixed-bounded/state-class counterexamples. Independent
-stationary fourth bound has4K² where root's6K² is safely looser.
-The fourth comparison did not inspect actual coefficient T_j. New root
-G154/4282b727/seal1d1a0d04 addresses their full momentum-derivative form,
-Schwartz regularity and radius-uniform smooth-cutoff commutators. Fully
-root-readff9bcd/fb05ea, focused check still pending. No original modified.
+Actual prepare221.301s exit0 andverify4.391s exit0. Stage164exactblobs,
+2fresh identity caches,4byte-corruption controls rejected for exact reasons,
+graph+2nodes10edges with complete old graph objects unchanged. Compatibility
+completed checked[]empty: zero scientific validation from it or the identity
+runners. Actual full streams in R/energy_observables_publication_execution,
+outer receipts, Git publication records and PR body preserved. Head8c88ed44,
+PR9510 regular/open verified and attached. Combined current-main landing,
+strict audit lint, independent retained audit and N1/N5 remain pending.
 
-New stationary moment731/8361667a is fully root-readffd969/81e201/59aa8e;
-root acceptanceb2b572b7 verifies19identities. Global integer graph bounds
-plus bounded right-weight interpolation give full normal-density error
-O(c^(s/2)+(T c^(2J+2))^min(s/(4J+6),1)) for spectral power s. Uniform
-commutators and stationary interacting moment are essential; beta<=K
-suffices for this proof. Actual free state-class controls match low/high
-powers in their separate regimes; fixed preparation and arbitrary generators
-remain separate. Root M uses column power, twice the spectral convention.
-Worker corrected_kinetic_recovery now compares exact rootM229/phase129;
-roots BV/history/G/fourth/spatial excluded. This source-exposed comparison
-is not a new independent proof or model-diverse check.
+Latest sync03:10:28: main516cb69d andprocedures3a4b2c66 unchanged. New other
+PR9509 atfa25be87: complete599line canonical30696ddd read96133c/aef52b for
+overlap. Distinct supplied tensor/scalar action and bosonic Gaussian clock
+channel; no premise adopted or claims/runners validated. Prior9507 distinct,
+otheropen science unchanged. Current763082a6 remainsopen_gate.
 
-Worker prepared_pulse_independent neutrally derives regular BV/nonautonomous
-corrected dynamics, including initial moments, norm/commutator variations
-and physical-band issues. RootBV230/M/history/G and checkpoint excluded.
-RootBV230/b475f153, priorBV190/689dd652, history223/5caf264a and localpulse71/
-36308713 remain pending focused checks. Earlier stationary/kinetic/potential
-and Q657 accepted exact proofs retain the identities/scopes in STATE and
-archived handoff. Do not conflate holding-time or fixed-preparation claims.
+## Current research
 
-Scoped Lean: PowerJump837784b4 compiled22.899s exit0,d6ee02. It verifies
-noncommutative ring power telescoping, the square identity with commutator,
-and an exact2x2 counterexample to deleting that term. Printed axioms only
-propext, Classical.choice, Quot.sound; no sorry/new axiom. Attempt01 failed
-on missing aggregate Mathlib.Tactic.olean before theorem processing;
-minimal compiled imports fixed attempt02. All attempts/source/output saved
-under R/bv_power_jump_lean. No unbounded-domain/BV/Fock/dynamics formalization.
+Stationary moment731/8361667a remains conditionally acceptedb2b572b7.
+Cross468/a10c7c59 fully read63c10c/06241e, precision8210a7e2/e48991,
+acceptance306e8a77 verifies26identities. M1-M13 formulas stand; root column
+moment s equals independent spectral moment2s. Literal constant physical
+spinor in phase control is false. Use the explicit smooth momentum-dependent
+positive eigenline section; C1/C2 rates/constants survive. Original kept.
+No fixed-preparation or energy-readout sharpness inferred.
 
-Six regular renewal PRs9499/9500/9502/9504/9506/9508 remain attached.
-Latest sync02:36:17: main516cb69d,ai/execution3a4b2c66,all18procedurebytes
-and open-PR identities unchanged. Current763082a6 remainsopen_gate; no new
-science adopted. Relevant other9507 unchanged/distinct, fully read earlier.
+Neutral nonautonomous774/31100719 freeze67df1109 delivered, root full read
+pending. Worker prepared_pulse_independent now performs source-exposed
+comparison with rootBV230/b475f153 andBV190/689dd652; allothernewroots and
+checkpoint excluded. Independent result is not accepted from its summary.
 
-Recovery bundle/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T030116Z.tar.gz;manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T030116Z.tar.MANIFEST.json;189members,
-MAP5666aliases verified as byte provenance, not mathematics.
-Prior complete handoff:history/20261013T030116Z_HANDOFF.md.gz. It preserves earlierfailed
-routes and recovery paths. Read original proof evidence when needed.
-Read-only guessed paths94c8c7/07913b failed; the three receipt writes before
-07913b's final inventory error succeeded. Actual paths resolved before
-archival. No mathematical validation inferred from those scripts.
+G154/4282b727(seal1d1a0d04) proposes full rational-differential T_j Schwartz
+regularity and radius-uniform smooth-cutoff commutators. E126/7ab78b9d
+(seal1a2199f3) composes stationary moment and fourth endpoints for local
+potential. Worker spatial_recovery_final checks both with exact accepted
+kinetic/potential/spatial/moment/fourth parents; source-exposed, not new
+independence. Complete parent proofs and root acceptances remain in STATE.
 
-Next: exact publication review/execution and regular PR; complete moment/BV
-checks, then graph/history/local-pulse lanes. Continue useful discovery
-through milestones. Next checkpoint03:35 or milestone. Lock refreshed
-02:57:21.994958Z, expires04:57:21.994958Z; refreshbefore04:37:21.994958Z.
-At fixed deadline start no research; checkpoint/release/delete heartbeat.
+P167/c08d283a(seal5c6c68ba) proposes L1-time graph-Dyson preparation moment
+bounds and conversion to stationary output moments. Arbitrary fixed-order
+smooth prep could supply the stronger convergence resources; root result
+unreviewed. Worker corrected_kinetic_recovery derives this neutrally with
+P and BV/history/G/E/checkpoint hidden. No result presumed.
+
+Root history223/5caf264a and fixed local pulse71/36308713 still await focused
+checks. Explicit finite-order kinetic1049/potential600, spatial626 and
+fourth867 plus complete comparisons already accepted at their exact scope.
+The next milestone can package kinetic/potential/moment results while
+preparation, endpoint and nonautonomous extensions continue. Keep actual
+carrier/domain/moment assumptions and all failed routes/counterexamples.
+Scoped PowerJump Lean remains ring algebra only, not unbounded domains.
+
+Recovery bundle/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T033003Z.tar.gz; manifest/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_recovery_20261013T033003Z.tar.MANIFEST.json;1075members. MAP6739
+aliases verified for byte recovery, not scientific validation. Active worker
+outputs excluded. Previous full HANDOFF:history/20261013T033003Z_HANDOFF.md.gz.
+Truncated bulk metadata reads were not scientific verification; compact
+outcomes and exact164pins were rereadb5254b; verify record527bb7.
+
+Next checkpoint04:05 or milestone. Lock expires04:57:21.994958Z; refresh
+before04:37:21.994958Z. At deadline start no research; checkpoint, release
+lock and delete heartbeattoe-derivations-24-hour-campaign.

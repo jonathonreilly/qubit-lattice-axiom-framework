@@ -1,0 +1,21 @@
+R1/R2. KS sea, ED at L = 8 (per site, lattice units, energy unit hbar c / a):
+   m=0.0: E0/N = -1.190150 ; pinched <H>/N = +0.000000 ; excess over E0 = +1.190150 ; -<H_off>_0/N = +1.190150 ; one-record cost Delta E_1 = +2.380301  (zero modes: half-filled mixture)
+   m=0.3: E0/N = -1.202077 ; pinched <H>/N = -0.021414 ; excess over E0 = +1.180663 ; -<H_off>_0/N = +1.180663 ; one-record cost Delta E_1 = +2.361327
+   m=1.0: E0/N = -1.299638 ; pinched <H>/N = -0.201703 ; excess over E0 = +1.097935 ; -<H_off>_0/N = +1.097935 ; one-record cost Delta E_1 = +2.195869
+   m=2.0: E0/N = -1.568597 ; pinched <H>/N = -0.648783 ; excess over E0 = +0.919814 ; -<H_off>_0/N = +0.919814 ; one-record cost Delta E_1 = +1.839628
+R1 (Bloch, L = 257): excess over E0 per site = (1/2)<|eps|> - (m^2/2)<1/|eps|> = <sum 4cos^2 k/(2|eps|)> (kinetic share):
+   m=0.0: E0/N = -1.193801 ; pinched = -0.000000 ; excess = +1.193801
+   m=0.3: E0/N = -1.203952 ; pinched = -0.020138 ; excess = +1.183814
+   m=1.0: E0/N = -1.300034 ; pinched = -0.200863 ; excess = +1.099171
+   m=2.0: E0/N = -1.568653 ; pinched = -0.648581 ; excess = +0.920072
+R3. Sizes with a = l_P (OPEN bridge; RECALLED inputs):
+   fully recorded vacuum, (S) weight = 1.194 M_P^4 = 2.65e+76 GeV^4 = 1.05e+123 rho_Lambda per staggered field (m -> 0)
+   one record in the vacuum: Delta E_1 ~ 2.4 hbar c/a = 2.93e+19 GeV per record (energy injected; generic, not (S)-specific)
+   records-as-dark-energy (if rho_rec = n_rec eps_rec = rho_Lambda with eps_rec = 2.4 M_P): n_rec = 8.60e-67 GeV^3 = 1.12e-19 per m^3
+R4. Permanent-record component under (S), constant formation rate per physical volume, LCDM background (Om = 0.31):
+   z = +3.00: w_eff = -1.4898  (a^3 rho non-decreasing => w <= 0; here w <= -1: phantom-like, never crosses)
+   z = +1.00: w_eff = -1.4311  (a^3 rho non-decreasing => w <= 0; here w <= -1: phantom-like, never crosses)
+   z = +0.50: w_eff = -1.3673  (a^3 rho non-decreasing => w <= 0; here w <= -1: phantom-like, never crosses)
+   z = +0.00: w_eff = -1.2415  (a^3 rho non-decreasing => w <= 0; here w <= -1: phantom-like, never crosses)
+   z = -0.50: w_eff = -1.0727  (a^3 rho non-decreasing => w <= 0; here w <= -1: phantom-like, never crosses)
+   z = -0.75: w_eff = -1.0156  (a^3 rho non-decreasing => w <= 0; here w <= -1: phantom-like, never crosses)

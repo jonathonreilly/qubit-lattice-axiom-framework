@@ -6126,3 +6126,17 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **SM-CONFLICT:** a demonstration (refereed if class-wide) that no tuning of the stated families achieves it.
   - **OPEN:** otherwise.
 - **Expectation.** OPEN. The vector sign is likely boson-like (the same sign as the scalar), so the vectors add to the scalar side. That could offset the Dirac birefringence at SM ratios, but the margins are unknown.
+- **R17-7 (the E₀ principle): worker reading OPEN.** The principle is consistent only under named conditions.
+  - **(a) Late universe.** Λ̃_late ≥ 0 always, and equals 0 with P93. So today's acceleration must be temporary, rolling dark energy, which predicts eventual deceleration.
+    - A BAO-only DESI proxy: thawing scalars recover 54–62% of the ΛCDM-to-CPL gap.
+    - DESI's phantom side cannot be reproduced.
+  - **(b) Grid zero-point.** The energy cancels by definition, but the pressure residual ρ₀+p₀ ≈ 1e123 ρ_Λ per scalar remains.
+    - Invisible under bridge (d-i).
+    - Under (d-ii) it needs pairing, or one tuning per order per species.
+  - **(c) Metastability.** SM-only running gives Λ̃ ≈ 1e112–1e120 ρ_Λ, so the principle predicts a stabilized EW vacuum (P93).
+    - Causal alternative: (S′-start), the bottom of the starting basin (P-r177a).
+    - (S′-current) breaks Bianchi in every local form, a no-go.
+  - **(d) Covariant form.** G + Λ_* g = κT with Λ_* = −κe₀, a law constant. It is local and non-signalling.
+  - **Records (Lemma X).** Dense site-projection records cost ~1e123 ρ_Λ per field. That is P4's heating, not the principle's. Under (S) the records-are-mass thought follows as a consequence.
+
+  Referee running.

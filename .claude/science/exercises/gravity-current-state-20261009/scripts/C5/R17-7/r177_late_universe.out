@@ -1,0 +1,10 @@
+a1. CPL truth (w0, wa, Om) = (-0.75, -0.86, 0.31); w crosses -1 at z = 0.410
+    LCDM (pure Lambda; forbidden under (S)+P93): best Om = 0.2823, chi2_proxy = 0.529
+    thawing canonical scalar (exp): best Om = 0.2850, lam = 0.639, chi2_proxy = 0.241; w(z=0) = -0.935, min w = -1.0000 (>= -1), CPL-equivalent (w0, wa) on z<1 = (-0.934, -0.098)
+    thawing canonical scalar (pngb): best Om = 0.2891, lam = 2.804, chi2_proxy = 0.200; w(z=0) = -0.863, min w = -1.0000 (>= -1), CPL-equivalent (w0, wa) on z<1 = (-0.889, -0.230)
+a2. max |ln(model/CPL)| for 0.1<z<2.33 (H, D_M), no amplitude freedom (H0 fixed common):
+    LCDM best-fit Om: H 0.0441, D_M 0.0357
+    thawing exp      : H 0.0300, D_M 0.0241
+    thawing pngb     : H 0.0218, D_M 0.0172
+a3. Fraction of the LCDM-vs-CPL chi2_proxy gap recovered by (S)'s minimal content: exp 0.54, pngb 0.62
+    (proxy only: diagonal RECALLED DR2-like errors, BAO-only, no CMB/SN; DESI's 2.8-4.2 sigma preference (RECALLED) comes mostly from BAO+CMB+SN combinations, which this does not model)

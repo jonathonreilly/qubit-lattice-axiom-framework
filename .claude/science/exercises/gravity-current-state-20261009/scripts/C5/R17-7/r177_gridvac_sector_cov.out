@@ -1,0 +1,27 @@
+B1. Lemma V with (S), homogeneous (bridge d-i):
+   lambda' from total conservation: -3*gprime*H(t)  (= -3 H g')
+   -2 H' = gprime + p_m + rho_m(t)  ; p_v appears: False
+   Friedmann: 3H^2 = rho_m + (lambda + rho_v): geometry sees only Lt = lambda + rho_v and g'.
+   (S): lambda_bare = -e0 = -(rho_v + rho_rest), rho_rest = the other ground-state energy (EW etc.) already in rho_tot;
+        Lt_late = lambda + rho_v + rho_rest(our vacuum) = 0  => exactly zero, any p_v.
+B2. No exchange (d-ii), metric GR, constant site-frame vacuum:
+   vacuum non-conservation rho_v' + 3H(rho+p)_v = 3*H*(p_v + rho_v)  -> consistent only if (rho+p)_v = 0 (P70)
+   (S) residual (vacuum + counterterm Lambda_bare = -kappa rho_v): rho_res = 0, p_res = p_v + rho_v
+   inhomogeneous Euler (R15-1, counted once): (rho+p)_v d ln N = 0 -> fails in every potential well unless (rho+p)_v = 0
+B3. Residual enthalpy from R11-3's table (C5_R11-3_report.md:135-141, counted once), per real scalar, m = 1:
+   L : rho_v = 1.1938, (rho+p)_v = 2.0683, ratio = 1.733 -> (S) leaves p_res = 2.0683 /a^4 ~ 1.8e+123 rho_Lambda at a = l_P
+   G : rho_v = 1.5567, (rho+p)_v = 1.8492, ratio = 1.188 -> (S) leaves p_res = 1.8492 /a^4 ~ 1.6e+123 rho_Lambda at a = l_P
+   NN: rho_v = 1.3000, (rho+p)_v = 1.3991, ratio = 1.076 -> (S) leaves p_res = 1.3991 /a^4 ~ 1.2e+123 rho_Lambda at a = l_P
+C1. SM metastability under (S) (RECALLED inputs; order of magnitude; cutoff on the field range is a reading):
+   lambda_min ~ -0.015 near 1e17 GeV: V ~ -3.75e+65 GeV^4 -> Lambda_late = kappa(V_EW - E0) >~ 1.5e+112 rho_Lambda
+   lambda(M_P) ~ -0.013 at h = M_P: V ~ -7.22e+73 GeV^4 -> Lambda_late = kappa(V_EW - E0) >~ 2.9e+120 rho_Lambda
+   instability scale (RECALLED): lambda < 0 above ~1e10-1e11 GeV at m_t ~ 172.6-173 GeV; stability needs m_t <~ 171 GeV
+C2. Three rules on a decay history (+ basin our vacuum V_p, true vacuum V_m < V_p, decay at t_d), homogeneous:
+   (S) C = E0 = V_m                     Lambda_before = kappa*(-V_m + V_p) Lambda_after = 0                g = 0
+   (S'-start) C = V_p                   Lambda_before = 0                Lambda_after = kappa*(V_m - V_p) g = 0
+   (S'-current) C = V(current basin)    Lambda_before = 0                Lambda_after = 0                g = kappa*(V_m - V_p)*DiracDelta(t - t_d)/3
+D1. Local covariant form G_mn = kappa (T_mn - C(x) g_mn), conserved T: Bianchi requires
+   nabla^m (C g_mn) = [Derivative(C(x0, x1, x2, x3), x0), Derivative(C(x0, x1, x2, x3), x1), Derivative(C(x0, x1, x2, x3), x2), Derivative(C(x0, x1, x2, x3), x3)]  (flat, Cartesian) -> must vanish -> C = constant.
+   So every local form of 'C tracks something' is either a constant (the law constant e0[H]) or needs a
+   non-conserved exchange sector (g != 0: R15-1 signalling).
+D2. R15-1 Lemma S remote response coefficient (3g/2)/(k^2/a^2 + Qbar) at g = 0: 0 (ultralocal: GR)

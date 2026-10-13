@@ -1,0 +1,5 @@
+Growth under (S) = GR + smooth content above E0 (no new k-dependence; Lemma S ultralocal at g = 0):
+   LCDM (Om=0.2823)                   D(1)/D_LCDM(1) = 1.0000 ; z=0.0: fD/fD_LCDM = 1.0000 ; z=0.5: fD/fD_LCDM = 1.0000 ; z=1.0: fD/fD_LCDM = 1.0000
+   CPL truth (Om=0.31)                D(1)/D_LCDM(1) = 1.0314 ; z=0.0: fD/fD_LCDM = 1.0840 ; z=0.5: fD/fD_LCDM = 1.0330 ; z=1.0: fD/fD_LCDM = 1.0410
+   thaw exp (Om=0.2850, lam=0.639)    D(1)/D_LCDM(1) = 0.9931 ; z=0.0: fD/fD_LCDM = 0.9966 ; z=0.5: fD/fD_LCDM = 0.9836 ; z=1.0: fD/fD_LCDM = 0.9882
+   thaw pngb (Om=0.2891, lam=2.804)   D(1)/D_LCDM(1) = 0.9949 ; z=0.0: fD/fD_LCDM = 1.0057 ; z=0.5: fD/fD_LCDM = 0.9846 ; z=1.0: fD/fD_LCDM = 0.9903

@@ -8569,3 +8569,64 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - Under the campaign's law-functional precedent, D1_∞ is number-free and meets DYNAMIC-CLAUSE by construction. Under law-level counting it is OPEN.
     - D1_∞ and linear Σ are the same inverse-kernel renormalization move. Both impose Lorentz invariance; neither predicts it.
     - No class-wide counterterm no-go is proved.
+
+**R19-29. face1's Schur completion: does face1 still have to vanish once the A_1 gauge block is included?** (Pre-registered 2026-10-13 07:10Z.)
+- **Plain question.**
+  - The R19-23 referee confirmed that face1 shifts a physical pole only through δω²/ε = Π₁₁ − Π_{1G}Π_{GG}⁻¹Π_{G1}, using the uncomputed A_1 block.
+  - R18-13 and R19-12 zeroed and billed the raw TT row, so the face1 zero, its Jacobian and its (w_d, w_o) solution are all CONDITIONAL.
+  - Compute the A_1 block for the actual U/UD/VW one-loop response. Re-solve the zero with the Schur-completed row.
+- **Setting.**
+  - R9-9's tree graviton and R18-13's one-loop U/UD/VW kernel, in R18-13's conventions.
+  - Fixed SM masses as in R18-13.
+  - The A_1 irreps on the face, including their gauge image, per R19-23's decomposition.
+- **Prior art (count once):** R18-13, R19-12, R19-23 and their verdicts, and R9-9.
+- **Probes.**
+  - (a) Π_{1G}, Π_{GG} and Π_{G1}, with gauge-direction checks.
+  - (b) The Schur-completed face1 condition.
+  - (c) Re-solve the all-rows zero, with the knob count and Jacobian rank.
+  - (d) Is the correction O(1) relative to the raw row?
+- **FIXED readings.**
+  - **FACE1-HOLDS:** the all-rows zero survives with the Schur row at the same knob count, with a nonsingular Jacobian.
+  - **FACE1-SHIFTS:** a zero survives, but needs a different solution or knob. Give it.
+  - **FACE1-FAILS:** no zero within the 6 + 1 knobs.
+  - **OPEN:** otherwise.
+- **Expectation.** FACE1-SHIFTS: the off-diagonal gauge mixing is generically nonzero at one loop.
+
+**R19-30. Do U and UD need the same re-placement as VW?** R19-26 (worker) found that VW's site-placed off-diagonal stress, used as plaquette-centred, produced a non-local jump at the cut. (Pre-registered 2026-10-13 07:10Z.)
+- **Plain question.**
+  - R19-5's exact W1 completions for the massive species use U and UD.
+  - Do their stresses sit at R9-9's placement?
+  - If not, does the same F(q_i)F(q_j) re-placement fix them with no row change, keeping the exact W1?
+- **Setting:** R19-5's U and UD completions, R19-26's Lemma P and Fourier locality test, and R9-9's placement.
+- **Prior art (count once):** R19-5, R19-16, R19-26 and its referee (running), and R9-9.
+- **Probes.**
+  - (a) A placement audit of U and UD.
+  - (b) The jump at q = ±π, both before and after any placement correction.
+  - (c) Fourier coefficient decay.
+  - (d) W1 residuals after the fix.
+  - (e) Rows unchanged?
+- **FIXED readings.**
+  - **UD-LOCAL:** both are already local at the cut (Fourier decay faster than any power), or are made local by a row-neutral re-placement with W1 exact to ≤ 1e-12.
+  - **UD-DEFECT:** a non-local piece that no row-neutral local re-placement removes.
+  - **OPEN:** otherwise.
+- **Expectation.** UD-LOCAL after the same F re-placement.
+
+**R19-31. Gauge and Yukawa thermal masses against (S_loc).** The R19-21 referee left g²T² gauge/Yukawa thermal terms unexcluded. Does (S_loc)'s cancellation extend to them? (Pre-registered 2026-10-13 07:10Z.)
+- **Plain question.**
+  - (S_loc) cancels the O(λ) NN Hartree cross term in a scalar model.
+  - In the SM, hot gauge bosons and fermions get Debye/HTL masses of order g²T².
+  - Does subtracting at the local effective mass also cancel their grid cross terms (the root-edge coefficients × thermal masses)? Or is a residue of order g²T² × (edge) left, larger than R19-21's T⁶ estimate?
+- **Setting.**
+  - R19-21's setup: Born–Oppenheimer, root-edge coefficients and the (S_loc) definition.
+  - A U(1) gauge field on the grid with a Wilson action and NN fermions (or scalars, as a comparator), at one loop in the hot phase, using the lattice Debye mass.
+- **Prior art (count once):** R19-21 and its verdict, R19-17, R17-11, and R11-3's edge coefficients.
+- **Probes.**
+  - (a) The one-loop thermal self-energy of the lattice photon: its static Debye and magnetic parts.
+  - (b) The grid cross term with and without (S_loc).
+  - (c) The scaling in g and T.
+  - (d) The size through the SM history against the bounds R19-21 used.
+- **FIXED readings.**
+  - **GAUGE-CANCELS:** (S_loc) removes the g²T² cross term at one loop, with any residue O(g⁴) or O(T⁶) and below bounds, as checked.
+  - **GAUGE-RESIDUE:** a g²T² cross term that (S_loc) leaves. Size it.
+  - **OPEN:** otherwise.
+- **Expectation.** GAUGE-CANCELS for the Debye (electric) part, because it is a local mass. OPEN for the magnetic/HTL nonlocal part.

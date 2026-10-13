@@ -7857,7 +7857,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OPEN:** otherwise.
 - **Expectation.** TUNING-ONLY within the current bridge. A new principle ("only the strain-subtracted vacuum stress gravitates") could give STRUCTURAL-ZERO, but it would be a fifth clause, and likely the lattice analogue of requiring a Lorentz-invariant vacuum, which the lattice lacks.
 
-#### C5 referee verdicts R19-9, R19-10 and worker readings R19-12, R19-14 (recorded 05:50Z)
+#### C5 referee verdicts R19-9, R19-10 and worker readings R19-12, R19-14 (recorded 05:42Z)
 
 - **R19-9 referee: NOT CONFIRMED (the PHOTON-EXACT). Reading OPEN.**
   - **What holds:**
@@ -7900,3 +7900,43 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - (S_ad), "the adiabatic lowest state weighs nothing", removes the lag with no number.
   - **Result:** V1 + (S_ad) + N_red + W1 is a homogeneous-only, 0-number candidate.
   - **Prices:** P-r1914a (S_ad), P-r1914b (tune s), P-r1914c (no lattice-native scale), P-r1914d (lattice-frame motion).
+
+### C5 Round 19, items 16–17 (pre-registered 05:44Z, before launch)
+
+**R19-16. Repair R19-9's photon kernel: remove the divided-difference seam and the exact-zero soft-leg NaN, then re-check exactness torus-wide.**
+- **Plain question.** R19-9's referee (NOT CONFIRMED → OPEN) accepts the analytic blueprint, Proposition K and the root re-solve. Two implementation defects block PHOTON-EXACT:
+  - (i) the finite-width divided-difference fallback creates an internal discontinuity with W1 residual > 1e-12;
+  - (ii) exact-zero soft legs return NaN.
+
+  Repair both. For (i), use an analytic divided difference (e.g. a Taylor or complex-step form valid uniformly). For (ii), use the analytic limit at k = 0. Then rerun the targeted and dense W1 checks, including the referee's seam and zero-leg cases, and confirm that the root re-solve is unchanged.
+- **Setting:** R19-9's construction and root (U, UD, VW-exact; r = 0.05, 0.1).
+- **Prior art (count once):** R19-9 and its verdict (the seam location and NaN cases), R19-5 and its verdict.
+- **Removed hypothesis:** finite-width numerical fallback.
+- **FIXED readings:**
+  - **PHOTON-EXACT** (as in R19-9's item): W1 ≤ 1e-12 torus-wide, including the referee's seam and zero-leg cases, and the SM root re-solved with all rows zero. Checked.
+  - **OPEN:** otherwise.
+- **Expectation:** PHOTON-EXACT.
+
+**R19-17. V1 + (S_ad) beyond homogeneity: is the adiabatic-lowest-state rule local, covariant and non-signalling for lumps?**
+- **Plain question.** R19-14 (worker) finds that a growing-spacing lattice V1 with (S_ad), "the adiabatic lowest state weighs nothing", plus N_red and W1, is number-free in the homogeneous universe. Its price is that the lattice sets no physical scale (ℓ/ℓ_P free). Open questions:
+  - Is "adiabatic lowest state" definable locally when the expansion is inhomogeneous (lumps, local strain rates)?
+  - Does subtracting its stress keep Bianchi without a CMC-type global carrier (which would mean Lemma S signalling)?
+  - What frame does the lattice move with (P-r1914d)?
+- **Setting.**
+  - V1 with a local scale factor a(x,t) (the lattice spacing follows local volume expansion θ).
+  - Free fields; adiabatic expansion of the vacuum stress to second order in gradients and θ.
+  - Linear perturbations of FRW with dust.
+  - Excluded: site creation.
+- **Prior art (count once):** R19-14 (worker), R19-10 and its verdict, R17-11 and its verdict (class 𝒟; Lemma V), R15-1 and its verdict (Lemma S), R13-3, R11-3, R12-2; adiabatic regularization and the local Hadamard / adiabatic vacuum (Parker–Fulling, RECALLED).
+- **Removed hypothesis:** homogeneity.
+- **Probes.**
+  - (a) A local covariant form of ⟨T⟩_ad, to the stated adiabatic order.
+  - (b) Bianchi and the linear signalling test (the Lemma S jump).
+  - (c) The lattice-frame rule.
+  - (d) Observables, including any frame dependence.
+  - (e) Prices.
+- **FIXED readings:**
+  - **LOCAL-OK:** a local covariant (S_ad) for lumps, Bianchi-consistent with no instantaneous channel at linear order. Checked.
+  - **NONLOCAL:** a refereed demonstration that (S_ad) beyond homogeneity needs a global or instantaneous carrier.
+  - **OPEN:** otherwise.
+- **Expectation:** LOCAL-OK to second adiabatic order. The adiabatic subtraction is the standard local Hadamard/adiabatic counterterm structure, which is covariant. The price moves to "which state is adiabatic", i.e. the frame.

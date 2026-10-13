@@ -8352,7 +8352,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OPEN:** otherwise.
 - **Expectation.** WEAK-OBSTRUCTED. The finite-S constraints do not close (Lemma J), so the BRST charge does not square to zero and the Gupta–Bleuler condition is not preserved, both at O(1/S). An O(1/S) approximate version may hold, with a 1/S leak into unphysical states.
 
-#### C5 referee verdicts R19-14, R19-16, R19-17, R19-18, R19-19 and the R19-23 worker reading (recorded 06:43Z)
+#### C5 referee verdicts R19-14, R19-16, R19-17, R19-18, R19-19 and the R19-23 worker reading (recorded 06:38Z)
 
 - **R19-14 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
   - Lemma G0 does not follow from translation covariance for interacting or general time-dependent laws.
@@ -8397,3 +8397,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Speed-row Ward violations** add a time-diffeo Goldstone π⁰ whose stability depends on the sample. This is a candidate new wall (P-R19-23b).
 
   Referee running.
+
+### C5 Round 19, item 26 (pre-registered 06:40Z, before launch)
+
+**R19-26. Close the photon kernel at the wrapped-transfer cut q_j = ±π.**
+- **Plain question.** R19-16's referee (NOT CONFIRMED → OPEN) finds that R1, the Hadamard divided difference, has opposite limits at the wrapped-transfer cut q_j = ±π. That gives an O(1) physically projected kernel jump, so the photon completion is not yet smooth or quasi-local.
+  - Is the cut intrinsic? For example, does a periodic σ² imply that its divided difference must jump where the transfer momentum wraps?
+  - Or can it be removed? Candidates:
+    - a fibre identification I that is twisted at the cut;
+    - a choice of transfer representative tied to the stress placement;
+    - using R8-2's continuous dust kernel variant.
+  - If it is intrinsic, is it a physical defect (the photon stress is non-local at the zone face), or a removable coordinate artefact?
+- **Setting.** R19-9/R19-16's kernel at the root; the referee's cut-check script at scratchpad/C5/ref_R19-16.
+- **Prior art (count once):** R19-9 and R19-16 with their verdicts; R8-2 Construction A; R16-5 (W15 face issues); R18-12 (corner and face states).
+- **Removed hypothesis:** an untwisted, transfer-cut divided difference.
+- **FIXED readings.**
+  - **PHOTON-EXACT:** a W1-exact (≤ 1e-12), smooth, quasi-local photon completion with no O(1) jump anywhere on the torus, including the q = ±π cut. The root is re-solved. Checked.
+  - **CUT-INTRINSIC:** a refereed demonstration that no smooth exact completion exists in the stated class because of the wrap, with the cut named as a photon-sector face defect.
+  - **OPEN:** otherwise.
+- **Expectation.** PHOTON-EXACT via a twisted fibre identification. The cut is a branch-choice artefact, like the face continuity R19-9 already repaired with I.

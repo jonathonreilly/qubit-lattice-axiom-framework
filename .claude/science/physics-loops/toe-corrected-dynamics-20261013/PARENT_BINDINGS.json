@@ -1,0 +1,86 @@
+{
+  "archived_provisional_relations": [
+    {
+      "archive": "source_archive/sha256/c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd/SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "name": "SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "role": "Fixed smooth high-tail/off-block decay resource in corrected windows.",
+      "sha256": "c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd",
+      "status": "explicit archived provisional support"
+    },
+    {
+      "archive": "source_archive/sha256/10aa75b19058e8cc635a7c2a35a31552fbdb7976851c6bb0ec3c432ad9a061e3/LOW_BLOCK_EFFECTIVE_DYNAMICS_CROSSCHECK.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "name": "LOW_BLOCK_EFFECTIVE_DYNAMICS_CROSSCHECK.md",
+      "role": "Separated high-block graph/Sylvester mechanism reconstructed in the corrected proof; window classes remain distinct.",
+      "sha256": "10aa75b19058e8cc635a7c2a35a31552fbdb7976851c6bb0ec3c432ad9a061e3",
+      "status": "explicit archived provisional support"
+    },
+    {
+      "archive": "source_archive/sha256/c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd/SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "name": "SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "role": "Actual high-tail and high-vacuum compression conventions.",
+      "sha256": "c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd",
+      "status": "explicit archived provisional support"
+    },
+    {
+      "archive": "source_archive/sha256/1a10d9c613bf7760f0e9d6e55f9f690b495c4225a101bf69af2711ab245a6f58/SMOOTH_HIGH_BAND_DECOUPLING_CROSSCHECK.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "name": "SMOOTH_HIGH_BAND_DECOUPLING_CROSSCHECK.md",
+      "role": "Unital full-low placement, support and selfadjointness precision.",
+      "sha256": "1a10d9c613bf7760f0e9d6e55f9f690b495c4225a101bf69af2711ab245a6f58",
+      "status": "explicit archived provisional support"
+    }
+  ],
+  "parents": [
+    {
+      "bytes": 31832,
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "role": "Actual supplied symbols, frame, current-coordinate branches, cells and physical placement. Current remains open_gate.",
+      "source_archive": "source_archive/sha256/763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "bytes": 36376,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "role": "Real CAR normalization and coefficient flow; full Fock and even-spin realization.",
+      "source_archive": "source_archive/sha256/b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "bytes": 61231,
+      "claim_id": "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+      "path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "role": "Corrected core's actual two-branch Fock carrier and rough-domain counterexample only; not its small-interaction ground-selection theorem.",
+      "source_archive": "source_archive/sha256/8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    }
+  ],
+  "publication_lineage_only": {
+    "fresh_git_verification": false,
+    "mathematical_premise": false,
+    "parent_regular_pr": 9510,
+    "planned_base": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+    "planned_branch": "physics-loop/toe-corrected-dynamics-20261013",
+    "planned_packet": ".claude/science/physics-loops/toe-corrected-dynamics-20261013",
+    "source": "root task instruction"
+  },
+  "same_packet_parent": {
+    "core_sha256": "402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d",
+    "dependent": "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13",
+    "parent": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+    "path": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "published_sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089"
+  }
+}

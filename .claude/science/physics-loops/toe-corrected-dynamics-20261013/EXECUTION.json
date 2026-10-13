@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-13T04:37:20.744701+00:00",
+  "finished_utc": "2026-10-13T04:37:21.064572+00:00",
+  "elapsed_seconds": 0.31990062538534403,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/CHECK_SOURCE_INTEGRITY.py"
+  ],
+  "script_sha256": "954b69fb01dccbd675f89c93fb511e0606614065bee05eb46f86c3331fbdcbf9",
+  "exit_code": 0,
+  "stdout_sha256": "e2ffd33d49a493168cf72b2712321015cce8b5fb0757031a37f6e6b39e7b53e2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "source identity and reconstruction only; zero mathematical predicates"
+}

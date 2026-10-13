@@ -1,6 +1,6 @@
 {
- "edge_count": 15864,
- "node_count": 7036,
+ "edge_count": 15870,
+ "node_count": 7039,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4146,6 +4146,10 @@
    "deps_hash": "311d6b921eb1",
    "out_degree": 3
   },
+  "corrected_dispersion_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "d9669c5e9542",
+   "out_degree": 3
+  },
   "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
@@ -6329,6 +6333,10 @@
   "experiment_backmatch_query_pack_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "explicit_effective_potential_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "907b971d78de",
+   "out_degree": 2
   },
   "exponent_derivation": {
    "deps_hash": "5861e51d4c5d",
@@ -14605,6 +14613,10 @@
   "modulus_three_triple_complement_bounded_theorem_note_2026-10-10": {
    "deps_hash": "5859f1e27606",
    "out_degree": 3
+  },
+  "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "40f6445cf358",
+   "out_degree": 1
   },
   "momentum_charge_commute_theorem_note_2026-05-02": {
    "deps_hash": "ec6690abc5b2",

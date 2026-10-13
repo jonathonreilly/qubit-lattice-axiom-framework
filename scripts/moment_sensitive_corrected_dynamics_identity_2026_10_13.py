@@ -1,0 +1,481 @@
+#!/usr/bin/env python3
+"""Exact selected source recovery and publication bytes; zero mathematical predicates."""
+from pathlib import Path, PurePosixPath
+import difflib
+import gzip
+import hashlib
+import json
+import sys
+
+AUDIT_TIMEOUT_SEC = 60
+AUDIT_INPUT_PATHS = [
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/CLAIM_REGISTRY_ADDITIONS.json",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/CORRECTED_DYNAMICS_SOURCE_ROOT_ACCEPTANCE.json",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/CORRECTED_DYNAMICS_SOURCE_ROOT_REVIEW.md",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/EVIDENCE_MAP.json",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/PARENT_BINDINGS.json",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/PUBLICATION_EDITS.json",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/SOURCE_REVIEW_STATUS.json",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/dispersion.publication.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/dispersion_appendix.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/dispersion_header.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/moment.publication.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/moment_appendix.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/moment_header.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/potential.publication.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/potential_appendix.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/diffs/potential_header.diff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0008632914f15cb66c9fcae0f1732b369671f944da78401075e90a2a3fea8774.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/012170c9948595c5a2c7f84ce8bebfe307a8685b0d04d8a417e4943f455cdc65.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0164b655081aefc8f10f670c800cabf17c405402bfd876074314fd844d21a674.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/02aaa9e4a3119db54db012ab7a6c890b66426a34f03d5f08aeb071ca80206986.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0387ccde2db5bbe34f0558f1fb28262ec700d63defc37611c98f9a0b1ab7c17d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/03a051715e85c11d38ad9a9875f8227dda579b1869a9ef7d58d1d858aac47008.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/04057047b9b8082d1ffe5be371125a1a9f14f5e9c474f48350777d73f07b16dc.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/054f6b12d3969be4e5ce84bb1aa2bed954eada7a81eb01b970d983dc8be647af.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/070b9df4f39660c8b33242b9e9f6eb27b923b951b22d486292eb5d1036425f82.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/09440bf986a86bb087888060b2e778e2988c1daaa41ece5d9abed6d56745e55a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0b1ff478ef8f8dbd71cf68d9206e7947d242bcab246c13ce6f9cc1a0f74f232c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0b9a7ec028f82763497a65a4ac155ad3b26eb11db8fe7e4757e04b8ea4b13003.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0c4056a52e1bfde405ba1aa80674889a33d72346d75de67b9216a58241bc5b2d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/0f66fd487e8d464b68cef0692a1ffa9545600cbcea8918a61db3515eca25f797.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/10aa75b19058e8cc635a7c2a35a31552fbdb7976851c6bb0ec3c432ad9a061e3.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1136039ff011a4af20a092ee18d56ad069274d10330b1adb0914192aa7f4a217.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/131e34cfd73dac94b9cb1f48a1d7f95ff25bceac757d275655109ae79a392d78.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1397b1c6397ce7db4c84716cde94a529aa51422f19942ffec3ec43db7eb46c48.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/14c545558595709a433f1312b0ba13af22a31fd3b93b96e51f68f491c36e3b8e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/16530478227d6c994de25cbfd845990812f7f196f9c2c71f5fb2a4612f1bd090.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/172daac2dce1443fb46c5545817d596e8be296e8fe2757fbd3f3dfd06f069431.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1798b042338173208b9822c54f7eca70ce6a3c0b44815d97e0e1d2040648ec0f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1897eac6c05de4fbe3bb20289be165108d1c3ebf11cc781d5211ec8247c5ed90.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1a10d9c613bf7760f0e9d6e55f9f690b495c4225a101bf69af2711ab245a6f58.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1acc5fb9ef00088f3e781d59d52529ed91b066954f4dd1e74c7fbba4568f13ad.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1b02433c7e147ea50e63add73925ae3bf2472a570a522cf9a999d1bd249526e6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/1f863124456abb5b9d98b6465c135a8fe6625f84995b45bfbefccb366e079753.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/204b6dd5c367ab358943a0123f377fba397253a95ca8295260f74802906f1614.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/2081dff3aead390d6a49c31cb9563ec23b2b633ae5f1696a52b268b187c5f86d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/218c048c27ce6b338bbc71afccab822ef0caf7069766ce17681759428962504f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/22979a858d26e65f99a5368d12b64c89bf8189d87e96111b6f5ddf7f733c689e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/2aa25da7e770db9318882bc91010789f2d1b819e06806b9fa1b214ce4e8840eb.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/2bbc697a6c1a7698587ac89bf168855fadfaa932470d4d59b8ea49752cb20d6b.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/2c49249ce4e43af85748a4f3148204ec973eb281fa8c30342f4456932080bc2b.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/306e8a7709dd40fd93188823f6e0175f6fac1961c660b40280b728fe906d88a9.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3134d82e5a5c4beb4355cbd0330680470188c5e01735ba3121514e25bdada7be.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3408412e606bb8e3f620a697741d0b86870045a697d6ab0e0175f57d5db926ea.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3577dd5ea22413e002263d902cfdd9bf00fb294fe40f64f6a8469c112dac8653.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/37fa1a034fcccbb2714cbf34da0163d359471b96259277a4fb0e1b09fda6bc52.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3800d61101b9278d4c3095fb6473e695bb5d14cad3777027584c3120a08b927f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3861c0b6c095788a3edaae7dad880e7f601dcda368fb8a20b88b9b9c04d0a5d6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3aa99bd1eac294bfe92874946ba637ff8971b7b9dce6092b4c98b5056c8df90c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3b9db5ad6b5cee3d79a3bf68040acba66402322b16c9e9eacd5d7ec4350e560d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3dc9c76a8825dd07f066326a0c8e95130a179942b926ee6f364aa61ef44c6c93.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3e4abdedc423782ce5514efe2f7320ab0b95f9731fac5c7a79edbb1b9678bd2f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/3edab436aa64d3d102f42450974be4e411b29480f5333521c4b47715f25fc449.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/432b9a183fda03511c50b2cc348002818c9459d756332c7ce95c2bf7d03a1795.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/47d94f2b67f97b1180d2b32a1445d2afda9b3ce8322ec5a278c47d486d872160.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/4a982e4a67d1b1308771de4dc86557d7155d488d1ba6bad2b5552e19c7ede5f1.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/4d07bcd208b28a5b3e714c34306f4e4c7d382e23319679a64686b14bc1b8590d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/4d529b897a145561c8de4fdfa47c1cbd6971c9f47637ba14afb57a08f112e4e9.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/4fe4ea12699b2f3a833b37771d649457ea03b41c230c5fec9059f93ad9e3c531.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/50f27bc9fa40767ac7eafabc2bd1aeb9d3d016a19139181ed9334a049847873c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/512e0f8151ecf611d2831dcb2b10240dc5fa31c1dba08c2cfc986c8a2a014713.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/5169f32898d6f1c1a32f7ebf297215b73e75ef5c68e20a9bc09b32b0d1e34965.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/52784539b9d0bd1939fba0e1be73a6f3f94e318a18a166cde29914b6463a4340.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/52f10e12a4b673e731a61f0b9573d28e4a2049368b8708f4e7b129f6e4db06f6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/53cd01c17b57821542bc4918d902d0e771805746a252590ebddcf7eea2b11d8e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/551708f6dc8f07b21ae038bc7e8217d057a23f064617720d9a2dc9da70918f37.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/5636bb862738e03390e725a45f08163994738fef970bd9ed013d2b49ccbe3848.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/595345c97d8230fa61e932458df3572a45b851e79e1badcfd45c2244244b7250.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/5a765bfac8fbad6d6b88d45dbe45972d83ec90a70792280f46fcf408738c9f05.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/5e2656627d5e8fc665e17776328234151a5fd26f7a4dfe47c6b91cffdd814dcf.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/5fbc799fddd32c0afbebecd4dee4352cd2cad64d33971f88ba3d552f46e2012b.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6017e87dc8597e193cda314883a77ee2dc0c82af35947af9d9b5a41cedf0de65.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/607c44b463776a2bb3b8f46c3c7db6679ad5058b00916c5fb9e4940d5592d15c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/60a7f12858e3d8eaedb2a32c0bb075c535ec74aa5d17b8a1162424cfcbc65fae.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/61b2500c0f0248d85c161ffc7e5d4298d121133c781db837f5c8c0300939eb4e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/624fcac2cc287497d6d8c66242203e3b883ed4f33724b1b7d112e411112b3d81.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/638c66220ebd546b07ecbdbcf4f8100d133048ac81bc5eeb0fd96ac1feef9d82.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/661cd77cd9038ed7bc989a4e8882f0bceb7250e5674edf00da592f04463dc325.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6629b761586abef8fdf295deb81be41d2a5a258533d4cef92d63cc30fe2a7591.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6698db9e240ab7a2c4d87d0c5719a85f81ca6df35ff57013beb0955feb47d57c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/66fe93491ec98bb6fcd4cfb9773d53ba8c9cc9c3373430f71f8cccf386de445c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/67c0a9e9da17b2ccf9051cc8f230f83e9959d27b5c20d8e22af8443d941ac8b2.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6afad8a650d6faf56eea661399aec7e1010051d788744786064567f170ff3166.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6b1606cbddd9faa2a128d7f4ed13428b3308fda5192805e0b02ff9619b1d136e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6cf57c679a475de5d88353231cf0b31eecc6a3e7fd85b5a6e1e78d57bc79b5db.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6dcff642b51048a3caf9975474388ffb2169e1420be718f75f6b48b23b82aefc.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/6ffbe2f4a9f4e84134403e78f738c170574e165f6e7ead7dd6777e9832ec0cf7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/71c2571dc3e015ca0485bf5fb0ca0fac44c421284773c1bbe9a7b4422219d384.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/720ba2afb45dfa47bfd3d26bfb7a6743f21bef0c740febb41bc1887b8cf799cd.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/72b59af3856e0d437e9def314bce7e82c073d603b7bf6843b041b4e5b0b0806c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/73b0d2032be7635c27fc2fb29a87e1455b4f238bd08538a809695b43b2cce8e4.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/73e1d124a95b21d6cd0dcb4efcb1648179a6f34d59b35bbc473fb0325fee965c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/7419b646ed06384649f3b3a5cf89f39ccfac29898d334219c6edcc7bd955c34f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/746dbc8bcbfce00f8104e488dda4ea49257162d5ee5c0242178032142d02f83c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/7668fdb282a1b4063b73bf9d300b81df37d6aa830ed153127a1714ffcaef91ee.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/7ac8e11a89077269e3f5f528513b5341ebb56e2baaefb7ffe93719fd5c233fc7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/7cc63231e65235a67faec80b551b9d77b650e0fec595085d96ef9feb1f53e56d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/7d4bc5d6ca3cc4fb64ba1951c089d8d1089f3459da3120eb274cb1b093f35fe5.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/803d04d336f6e1c8596adb6be8df9811921ceee4aa29f4c2775685b203195e9c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/80cf29fcbf6dbc920f628101bbaf8082e265d1f27972cf705f1fe98d432e45e7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/81350f22223a8dad58a929d78dbfb305f249fa35cf2e9f32c3d4634f89fbdfd0.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8136f291960784a3abd29cd9904ed23d916a610bde4bef78c32197964d5b844f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/81fc601dcbf8ac40c4200f3d8e559fa0d078cc884c8648b079e20239c0912868.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8210a7e2f04f2a6fee7944b0e56c73d4433e2a9f562a5b081095712967be7a79.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/82278315e0a69dd69073bbb8057ae64bd52b32f1f11853a9c0a20d8e67240c5d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8361667a12e01be16c40b01a3fc6aff14512fb1fed6f29ccdd9cac2e4c408c09.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/840c11bbd46d8cc7a948dfee7d85b2d2748dafd6f8da155d4c910b2247b7ea7c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/841febb1cd71e4b2e5abfaa4be81870211f3d48ece6eb7a0f0c46b8a6e99da60.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/845fc589d87872b10643aa710d0c6dd65a0c0149cc25bd9f01d57ddcff7df5d9.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/84dedb11c7f2de64bc9e0260ab74baade9500f19c4bbe4df9e0e737c79807de9.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/84f3719c63772efa58435e4f2d5340fbae9285df95f0b994fa4578601486e7cc.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/85d4a9cc39efa47700e06034c0e76eca96c1fbe6c736b2ccdb5df3ac6c06c6a3.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/86fcafaae0c970d31856f596be31bbe4a343bb5d9d6dedd4621191b19b17671e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8846a49ede134f102e00a25ce59d2a87bbbd88ae02b5a71dc44342aa4f83ac57.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/88a3598e1f29c5c12039eed9320c6fed0130453e8f14cbe2d2a1347517bf467b.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8ad14abd0e8cb0c7ecaf3d2eda70ad192729752d093f66349a5d09bd0f36087c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8cc28bd6ced389330429111a3731f8ca838a7d294ed6d5849e0a8c894b1457a6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8df5f60b85d5e9b22b7d6281bc9941c300ce408caba135f988a125393d212bb2.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8f1e13d1ca4c42bbf4e5483c4035cacf28fd2bc82ee4b470776409e7753323be.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/9522c5c0cb4026e3f0bbebebce41bbe58015b72cde9c27a6763966ab6cd530e3.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/954b69fb01dccbd675f89c93fb511e0606614065bee05eb46f86c3331fbdcbf9.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/95c03770fbb7a1e40cc8fd4993df19dbef5c211fdb50a5dccfa8c9369879bf1e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/970d92231c811ffcee266bbdc4d44b4aedbc4167aa8128b6c3bbaa43e2cd0add.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/981d4f483c12ab6a4539c8b97e5176e4b47870dde0181a2922f78e527336f691.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/986704695bcf438e8214010c40ef4aca7fa82c6db4ae996986680558c235a194.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/9c07169114b99851e6e4bbe4ba3549caadc92d225f0ce026dab37d1a09963b7d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/9d88004c45cefd0acf01d595af2b73ccf0e1b8f937853c348924cc45862a87d1.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/9e91ae898c683e0c5cd11a5b9ea7b993eec15d54148ccb5a2681f07b24738b3a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a0ddc8e4e20c8b89efe296e59f294069a3c173f9d8fa8b022eb006f387282974.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a10c7c59eec9e49a597f678202b4a1f4e1f5436db879633b4b12edc5003676a2.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a17f24232b737c1afeeb2b6b2ea3cd8769984c327ac5eb0577fb967c72d8819f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a21f28bb1570757a997ed3216f47a87f84bd2e10282434c11e92d33d7527c366.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a23a58d74dcb6093815003e122ed7ffdefc31b17070362ea352dc12b9b0fba59.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a551c5f7f8abe862112efa74e358bcaca3a7246e9fcbed410ef94662d44be7b7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a729d424ad16223df5951b508ffdaa0711afc79691c8639ec44dccffa87d97ca.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a7743f35febc5602c0736dbe61347464ea9f9acbf54b95a28bf3826a8e5a0c05.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a89c8915a2f1207aaee8fbef7273494126445d4e26fbda625d418f0557a83cb6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/a9c1a98a40384df1a3a81a9d06622b9b51e10b15fab2cb74d21c95ea14594684.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/aa25baeebfa5af0a598a9def9397f2d168ac2b3e4a95e83d9124ce95031f7037.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/aca4273fd16081446f88683fde1332754e8af7b4ad1ee154bb18093890389d71.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/acd309e29ffc802c57253b069e1df1321111cf268f1716dad8e54ab93d91c38f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/aec9783ce062adcbd422337b73c04f7a5f06c840cb23a71edcdb54443894791a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b045c5a86bf619ae54cffc10288a1c7db6bd3c9bcc72a50c8d1b07fb5a1d4fba.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b0ecc73027ee7d65e720378b0556d20d8d8ca560201551aa79e9f41febed7fe8.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b1b5f3122051f2abb237e850b43f5a351a4dcd71628edf917576de4d00ec1c1e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b247f496801349da251a2481654c8e36f5ba78eff3700f6fb9a1fe186c1b7f23.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b28541f585a6cb3cceb9aebe037e37cd1a0e5ba0b6897e001eff4f5b351a5503.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b2b572b7235b4e08f4b0de11915dbd09261074e3c339a65d0661bd915f405fbf.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b5a18337f38db9d3bc7cdd3eb27adc87a578dbf53fb63310d93c83f10f1ef9ce.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b641684ca4948e2ac33e0a42eac24b37bac92ac3837927526e5c051b0283f5f6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b77e1920007f41a37a64e152c7eb9c20ec6fa88ed7990f207212efc84a771d12.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b85696405c90683b9c98e7029edeef4a33162e9f51002c7b4a0b126488182e0a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/b8a7cffeba7aeb15f620d60c828995bc2efe91becebaeaf7136193a33314aa7a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/bb97a6b6cd1199344b91f020c07a4a7181a21cc062a02ca3e1bcbf2447ede0fd.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/bf798e7751bd8558bf51bb43f40ac866109d363f7159e6e255eaedfef0949ff7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c0a3e9025bdeefe73a871abb0ae016018f31929de1300013bf9783454efb1d0d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c2a280b46f085788cf128864a10e8178bc9241f6455a11bd9d001afa3c264758.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c2e35f209cc790a5feaab6dba3001bd3b4de3596c64f7c8d7c5909287b805781.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c43d0cd5aaab834ca48984cea4e5ee9bd1f81f2c96b8332d0e2fec1ee7cdcc86.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c45fa7c5e4e6f26c50d25f57781c41705ad3f69142fb3ae2032026321ba6a0c8.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c5487006f03a19dbb42aa261d4bb1d955bd1f676030a722ea6f5b6d04c237fe7.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c7777c62ff23e2f0edbc387236f0967c63b4a6086280a79a35299fa7493f7793.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/c99e82924249c2583af26ae6fc92b1e5445f3f68cfd475f6a118711622f3b615.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/ca9917de7185bcbc178936e0675a5f5e50f90263f8437101ecb4e86e0c44ef0a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/ceb1e2b8f9bdf503a1c6837e124c79af8294bce499c20edf037a2953c49112e6.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d005060f50d7fe104e53912f32dabe5c400e8bdd0319fd3a8cf763c5c8ae3c25.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d0741af5bdf39c8d76f63126217ea5f0ff16438f97bd90918ed654420d73567e.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d1910fcfa691987869e5e263619aea32964cfb38dae837bb5c2e015303320c35.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d3565e563bef939abf18a5df4388dfef030476a94c3e5ac421c3199af49bf834.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d37246a37ebea4a3104002e4405cad75ae76cf68be879cfd54c85329d61b80d0.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d5ae61083e31a77f015d0d3f8ee1856b9e9e429c7f873c1d225522abedcd2b0d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d6ff1f9eb7781ae6fa601874f79cd4ee8e988d1b42021da0e72c9952ab360a82.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d7b2944c2c325e576f28f454750ab64e16b3afd615e87d6523bd2e41afe27780.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d80c1b0465301ad07924b30a9156d2bbb860ab63d5f1dc6bc992302e72919f55.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d8383a8aee321995bd70bfedba113ca4b4a994e11802154185849a686619888a.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/d970b7ec044d50d1c767efbdbdbf5f7ab7309eab1c788784c3a38c050267f595.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/de66e6ed74ec61b9ce3f86c3cc7bb467ab68de6c0fddd9c90ab071556fdd9a5d.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e0b4abc7a80965ef48e9014388b44bc94b183b298996103a4001fe38880824ec.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e5dbdffeba5514cad47ebc02b04531025ad4aa32445f6295cd9754afacc01043.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e6a539c68985d3d96420c4047474aee8a68b288f3bb4b9a986af7ef47194e5fa.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e6b4c783b4b1f0d3d25e3383e52b95a6a9226128c1be92133bb40f30720ab244.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e6b9117c5770ad581a00b47963b94497a87ceee2cd38c14b47f7a5e102754a84.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e8692ab7f92526361beb699535e5fe01bf13431171457f78dd1a7e9993c9e1a8.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/ebec9b7afc8897d64293b48a2b483799f994cbc65206d9f91eafdbe7886f5295.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/ec86eea5144aecb7549bd9a9c1e889797e26fa802865707f3d355dc2581ae8f9.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/f21220ffa7e183bf1348dc68a4392ced81d76bc9ee327915534ef990e4b97392.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/f22ad7e16fffce7252062e7a7c5da339a032d12dbc5997715c9cc4bd573cdd32.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/f33f4dcd96818d7296eccd77b2fc4c26fb61f9250016c7e309370e22064049c2.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/f8e3ca51ff4b31395e4c431ea6fabfb5613cc88ead77f1d641789611de526cdb.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/fa0ad4e946e5f0acf082d3189f38f58dd3a62afec360a53dc43d25f441958ad5.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/fa85a74d7d35dda9dc03508c95c408889beecd2f5f2094ff7567c74626d6673f.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/fb2eec57cd20915ab51ff3eb02282cd7f764fc50244effc09028ce1700532775.gz",
+    ".claude/science/physics-loops/toe-corrected-dynamics-20261013/objects/fcecae22ca22c39620c56b4c3ca3e30d633e95bfd8ecb4e87e95b7ff93a87ab3.gz",
+    "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+]
+PACKET = '.claude/science/physics-loops/toe-corrected-dynamics-20261013'
+CLAIM = 'moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13'
+MAP_SHA = '8fbf00f870a5b9694535f7cbc23c7a0ed68c3188f57a61e64de91426af91cfb4'
+EDITS_SHA = '60ea84c915781eef209c86e463e8139fd301df7db67eadfc6a55cb69f20a9332'
+PARENTS_SHA = 'd89db5e1bcc7749a6226e024200189f0e894985777aa8dc7dcbc03a1459c03fa'
+STATUS_SHA = '8039a4b2e89f5f41f175e6b068551818fd75784bed715dba0bde34560b552567'
+GRAPH_SHA = '4bea7ccd2bc4e0dbb7a32bd52519e93fa0a7367114f66c0b12a70a05e71fe506'
+SOURCE_FREEZE_SHA = '1397b1c6397ce7db4c84716cde94a529aa51422f19942ffec3ec43db7eb46c48'
+ROOT_ACCEPTANCE_SHA = '8df5f60b85d5e9b22b7d6281bc9941c300ce408caba135f988a125393d212bb2'
+ROOT_REVIEW_SHA = '03a051715e85c11d38ad9a9875f8227dda579b1869a9ef7d58d1d858aac47008'
+
+
+def need(ok, message):
+    if not ok:
+        raise ValueError(message)
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def complete_diff(a, b, name_a, name_b):
+    return ''.join(difflib.unified_diff(a.decode().splitlines(True), b.decode().splitlines(True),
+        name_a, name_b, n=max(len(a.splitlines()), len(b.splitlines())))).encode()
+
+
+def accepted_source_diff(a, b, name_a, name_b):
+    return ''.join(difflib.unified_diff(a.decode().splitlines(True), b.decode().splitlines(True),
+        fromfile=name_a, tofile=name_b, n=3)).encode()
+
+
+def verify(root):
+    reads = []
+    def read(name):
+        relative = PurePosixPath(name)
+        need(not relative.is_absolute() and '..' not in relative.parts, 'Unsafe declared input')
+        path = root.joinpath(*relative.parts)
+        need(path.is_file() and not path.is_symlink() and path.resolve().is_relative_to(root),
+             'Declared input missing or outside repository')
+        reads.append(name)
+        return path.read_bytes()
+    raw_map = read(PACKET + '/EVIDENCE_MAP.json')
+    need(sha(raw_map) == MAP_SHA, 'Archive map changed')
+    evidence = json.loads(raw_map)
+    objects = evidence['objects']
+    need(len({o['sha256'] for o in objects}) == len(objects) and
+         len({o['path'] for o in objects}) == len(objects), 'Duplicate archive object')
+    contents, origins = {}, {}
+    for obj in objects:
+        stored = read(PACKET + '/' + obj['path'])
+        need(sha(stored) == obj['stored_sha256'] and len(stored) == obj['stored_bytes'], 'Compressed archive changed')
+        value = gzip.decompress(stored)
+        need(sha(value) == obj['sha256'] and len(value) == obj['bytes'], 'Archived source changed')
+        contents[obj['sha256']] = value
+        for origin in obj['origins']:
+            need(origin['path'] not in origins, 'Duplicate original alias')
+            origins[origin['path']] = obj['sha256']
+    contract = evidence['accepted_source_package']
+    prefix = contract['path'] + '/'
+    need(contract['freeze_sha256'] == SOURCE_FREEZE_SHA and
+         origins[prefix + 'SOURCE_FREEZE.json'] == SOURCE_FREEZE_SHA, 'Accepted source freeze differs')
+    original_freeze = json.loads(contents[SOURCE_FREEZE_SHA])
+    need(original_freeze['files'] == contract['members'] and
+         original_freeze['file_count_excluding_self'] == 236 and
+         len({r['path'] for r in contract['members']}) == len(contract['members']) == 236,
+         'Original membership differs')
+    expected_aliases = {prefix + r['path'] for r in contract['members']} | {prefix + 'SOURCE_FREEZE.json'}
+    need({p for p in origins if p.startswith(prefix)} == expected_aliases, 'Source package aliases differ')
+    for item in contract['members']:
+        need(origins[prefix + item['path']] == item['sha256'] and
+             len(contents[item['sha256']]) == item['bytes'], 'Source member identity differs')
+    def archived(path):
+        return contents[origins[path]]
+    def source(name):
+        return archived(prefix + name)
+    identities = json.loads(source('SOURCE_IDENTITIES.json'))
+    need(len(identities['files']) == identities['source_alias_count'] == 198 and
+         len(set(identities['archive_relative_paths'])) == 154, 'Original source-alias count differs')
+    for item in identities['files']:
+        value = source(item['archive'])
+        need(sha(value) == item['sha256'] and len(value) == item['bytes'], 'Exact original archive differs')
+    manifest = json.loads(source('SCIENTIFIC_INPUT_MANIFEST.json'))
+    need(len(manifest['sources']) == 17, 'Scientific original membership differs')
+    need(json.loads(source('EVIDENCE_ARCHIVE_MANIFEST.json')) == evidence['source_archive_manifest'],
+         'Original archive closure limits changed')
+    bodies = json.loads(source('BODY_COPY_MANIFEST.json'))['bodies']
+    complete = {}
+    need(len(bodies) == 3 and sum(b['original_lines'] for b in bodies) == 2380, 'Core membership differs')
+    for body in bodies:
+        original = source(body['source_archive'])
+        need(body['all_original_bytes_preserved'] is True and body['edit_ids'] == [] and
+             sha(original) == body['original_sha256'] == body['transformed_sha256'] and
+             len(original) == body['original_bytes'] == body['transformed_bytes'] and
+             original == source(body['body_copy']) and source(body['diff']) == b'', 'Complete accepted core differs')
+        complete[prefix + body['body_copy']] = original
+    source_map = json.loads(source('LINE_PIECE_MAP.json'))
+    need(len(source_map['notes']) == 3, 'Accepted candidate membership differs')
+    for note in source_map['notes']:
+        assembled = b''
+        kinds = []
+        for piece in note['pieces']:
+            part = source(piece['source'])
+            kinds.append(piece['kind'])
+            first = assembled.count(b'\n') + 1
+            end = (assembled + part).count(b'\n')
+            need(piece['output_byte_range'] == [len(assembled), len(assembled) + len(part)] and
+                 piece['output_line_range'] == [first, end] and sha(part) == piece['sha256'] and
+                 len(part) == piece['bytes'], 'Accepted piece boundary differs')
+            assembled += part
+        need(kinds == ['new scope/chronology wrapper', 'byte-identical complete original core',
+                       'new scope/chronology wrapper'], 'Accepted piece order differs')
+        need(assembled == source(note['candidate_path']) and sha(assembled) == note['sha256'] and
+             len(assembled) == note['bytes'], 'Accepted source-note reconstruction differs')
+        need(len(note['source_body_order']) == 1, 'Accepted source core order differs')
+        baseline = source('body_copies/' + note['source_body_order'][0])
+        need(baseline == source(note['original_body_concatenation']) and source(note['complete_diff']) ==
+             accepted_source_diff(baseline, assembled, 'original/' + note['source_body_order'][0], note['canonical_path']),
+             'Complete accepted assembly diff differs')
+        need(source(note['proposed_new_file_diff']) ==
+             accepted_source_diff(b'', assembled, '/dev/null', note['canonical_path']),
+             'Accepted proposed-new-file diff differs')
+    raw_edits = read(PACKET + '/PUBLICATION_EDITS.json')
+    need(sha(raw_edits) == EDITS_SHA, 'Publication transformation changed')
+    edits = json.loads(raw_edits)
+    need(edits['source_freeze_sha256'] == SOURCE_FREEZE_SHA and
+         edits['additional_mathematical_body_edits'] == [] and len(edits['notes']) == 3,
+         'Publication scope differs')
+    wrappers, published_notes = {}, {}
+    for note in edits['notes']:
+        need(origins[note['accepted_candidate_path']] == note['accepted_candidate_sha256'] and
+             note['additional_mathematical_body_edits'] == [], 'Accepted note or no-edit contract differs')
+        assembled, body_names = b'', []
+        for piece in note['pieces']:
+            if piece['kind'] == 'accepted_complete_core':
+                need(piece['additional_mathematical_body_edits'] == [] and
+                     piece['historical_status_and_exposure_bytes_preserved'] is True and
+                     origins[piece['source_path']] == piece['source_sha256'], 'Core preservation differs')
+                part = complete[piece['source_path']]
+                body_names.append(Path(piece['source_path']).name)
+            else:
+                need(piece['kind'] == 'publication_wrapper', 'Unknown publication piece')
+                part = piece['text'].encode()
+                need(piece['wrapper_path'] not in wrappers, 'Duplicate wrapper')
+                wrappers[piece['wrapper_path']] = part
+            need(len(assembled) == piece['byte_offset'] and len(part) == piece['bytes'] and sha(part) == piece['sha256'] and
+                 assembled.count(b'\n') + 1 == piece['first_line'] and (assembled + part).count(b'\n') == piece['last_line'],
+                 'Publication boundary differs')
+            assembled += part
+        accepted_note = next(n for n in source_map['notes'] if n['canonical_path'] == note['note'])
+        need(body_names == accepted_note['source_body_order'], 'Complete core order differs')
+        published = read(note['note'])
+        need(published == assembled and len(published) == note['published_bytes'] and sha(published) == note['published_sha256'],
+             'Published source does not reconstruct')
+        published_notes[note['note']] = published
+        stored = read(PACKET + '/' + note['diff'])
+        need(sha(stored) == note['diff_stored_sha256'], 'Compressed publication diff changed')
+        delta = gzip.decompress(stored)
+        need(sha(delta) == note['diff_sha256'] and delta == complete_diff(archived(note['accepted_candidate_path']),
+             published, accepted_note['candidate_path'], note['note']), 'Complete publication diff differs')
+    for wrapper in edits['wrapper_changes']:
+        old, new = archived(wrapper['source']), wrappers[wrapper['publication']]
+        need(sha(old) == wrapper['source_sha256'] and sha(new) == wrapper['publication_sha256'], 'Wrapper identity differs')
+        stored = read(PACKET + '/' + wrapper['diff'])
+        need(sha(stored) == wrapper['diff_stored_sha256'], 'Compressed wrapper diff changed')
+        delta = gzip.decompress(stored)
+        need(sha(delta) == wrapper['diff_sha256'] and delta == complete_diff(old, new,
+             'accepted/' + wrapper['publication'], 'publication/' + wrapper['publication']), 'Complete wrapper diff differs')
+    raw_parents = read(PACKET + '/PARENT_BINDINGS.json')
+    need(sha(raw_parents) == PARENTS_SHA, 'Parent bindings changed')
+    bindings = json.loads(raw_parents)
+    parents = bindings['parents']
+    need(len(parents) == len({p['path'] for p in parents}) == 3, 'Parent membership differs')
+    for item in parents:
+        value = read(item['path'])
+        need(sha(value) == item['published_sha256'] and len(value) == item['bytes'], 'Canonical parent bytes changed')
+    same = bindings['same_packet_parent']
+    need(same['parent'] == 'corrected_dispersion_bounded_theorem_note_2026-10-13' and
+         same['dependent'] == 'moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13' and
+         sha(published_notes[same['path']]) == same['published_sha256'] and
+         same['core_sha256'] == '402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d',
+         'Same-packet kinetic parent differs')
+    dependencies = json.loads(source('DEPENDENCY_MAP.json'))
+    need(bindings['archived_provisional_relations'] == dependencies['external_provisional_support_relations'] and
+         len(bindings['archived_provisional_relations']) == 4 and
+         bindings['publication_lineage_only'] == dependencies['publication_lineage'], 'Provisional or lineage scope changed')
+    raw_graph = read(PACKET + '/CLAIM_REGISTRY_ADDITIONS.json')
+    need(sha(raw_graph) == GRAPH_SHA, 'Graph proposal changed')
+    graph = json.loads(raw_graph)
+    edges = {(r['from'], r['to']) for r in graph['direct_edges']}
+    need(len(graph['nodes']) == 3 and len(edges) == len(graph['direct_edges']) == 6 and
+         edges == {(r['from'], r['to']) for r in dependencies['edges']} and
+         CLAIM in {n['claim_id'] for n in graph['nodes']}, 'Exact direct graph proposal differs')
+    raw_status = read(PACKET + '/SOURCE_REVIEW_STATUS.json')
+    need(sha(raw_status) == STATUS_SHA, 'Review scope changed')
+    status = json.loads(raw_status)
+    root_acceptance = read(PACKET + '/CORRECTED_DYNAMICS_SOURCE_ROOT_ACCEPTANCE.json')
+    need(sha(root_acceptance) == ROOT_ACCEPTANCE_SHA, 'Root source acceptance changed')
+    scope = json.loads(root_acceptance)
+    root_review = read(PACKET + '/CORRECTED_DYNAMICS_SOURCE_ROOT_REVIEW.md')
+    need(sha(root_review) == ROOT_REVIEW_SHA, 'Root source review changed')
+    need(scope == status['source_review_coverage_verbatim'] and
+         scope['source_freeze_sha256'] == SOURCE_FREEZE_SHA and scope['required_repairs'] == [] and
+         scope['fresh_full_final_candidate_manual_read'] is False and
+         scope['full_raw_newfile_diff_manual_reread'] is False and
+         scope['reconstruction_and_full_diff_verification'] is True and
+         scope['new_independent_mathematical_review'] is False and scope['new_scientific_execution'] is False and
+         scope['model_diverse_or_formal_analytic_check'] is False and scope['audit_verdict'] is False and
+         status['no_go_packet_pass'] is False and status['N1'] == status['N5'] == 'pending' and
+         status['dynamics_source_freeze_sha256'] == SOURCE_FREEZE_SHA, 'Source coverage or pending status changed')
+    need(set(reads) == set(AUDIT_INPUT_PATHS) and len(reads) == len(set(reads)), 'Declared read closure differs')
+    return {'result': 'source_identities_and_reconstruction_match', 'claim_id': CLAIM,
+        'meaning': 'Integrity only; no mathematical calculation, proof or audit was executed.',
+        'mathematical_operations_executed': False, 'mathematical_predicates_executed': 0,
+        'scientific_mutations_executed': 0, 'independent_review_supplied_by_tool': False,
+        'no_go_packet_pass_supplied_by_tool': False,
+        'external_scientific_input_reads': [p['path'] for p in parents],
+        'package_local_integrity_reads': sorted(set(reads) - {p['path'] for p in parents})}
+
+
+def main():
+    print(json.dumps(verify(Path(__file__).resolve().parents[1]), sort_keys=True))
+    print('per_element: checked and not executed — source integrity only; no scalar coefficient or positivity theorem was proved.')
+    print('per_site: checked and not executed — source integrity only; no CAR grading or locality estimate was computed.')
+    print('per_mode: checked and not executed — source integrity only; no dispersion or physical-band estimate was computed.')
+    print('per_block: checked and not executed — source integrity only; no graph domain, commutator or compression theorem was tested.')
+    print('lattice_wide: checked and not executed — source integrity only; no time-window, moment, physical-selection or no-go result was verified.')
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception as error:
+        print(json.dumps({'result': 'identity_verification_incomplete', 'error': str(error),
+                          'mathematical_operations_executed': False,
+                          'mathematical_predicates_executed': 0,
+                          'scientific_mutations_executed': 0}), file=sys.stderr)
+        raise SystemExit(1)

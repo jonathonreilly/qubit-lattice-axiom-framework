@@ -8432,3 +8432,29 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - P-R19-21b: a mass-blind law, which is a tuning.
 
   Referee running.
+
+### C5 Round 19, item 27 (pre-registered 06:42Z, before launch)
+
+**R19-27. V1's enthalpy gap: does a growing-spacing lattice have any receiver for the vacuum enthalpy mismatch, or is V1 excluded by history?**
+- **Plain question.**
+  - On V1 (growing spacing, fixed sites), (S_ad) with N_red and W1 is number-free and LOCAL-OK in a stated class (R19-14, R19-17; refereed with corrections).
+  - R19-20 and R19-21 (workers) find a vacuum enthalpy mismatch in non-lowest states (pre-crossover, BBN, today's matter): ΔW ~ 1e106 ρ_Λ in the symmetric phase.
+  - (d-i) absorbs that mismatch only where the spatial trace equation is unimposed (C-box-E with site creation). (d-i) cannot be posed on V1 (R17-11, R19-14).
+  - Does V1 admit any receiver, e.g. through R19-17's lattice frame (readings W and A), or through V1's spacing dynamics?
+  - Or does the enthalpy mismatch exclude V1 under N_red?
+- **Setting.**
+  - V1 with comoving frame fields X^I (R19-17's class 𝒱).
+  - (S_ad) or (S_loc).
+  - The enthalpy mismatch ΔW(T) from R19-21 (D1 root edges).
+  - Linear perturbations plus the homogeneous history.
+- **Prior art (count once):** R17-11 and its verdict, R19-14, R19-17 and R19-21 with their verdicts or worker reports, R19-20, R12-2, R11-3.
+- **Removed hypothesis:** site creation as the only receiver.
+- **Probes.**
+  - (a) Can the lattice frame (W or A) or the spacing evolution absorb an isotropic enthalpy, and at what cost (signalling, a number)?
+  - (b) If none can, the size of the gravitational effect at BBN and today against the bounds.
+  - (c) Prices.
+- **FIXED readings.**
+  - **V1-RECEIVER:** a stated V1 mechanism absorbs the enthalpy mismatch with no number and no signalling. Checked.
+  - **V1-EXCLUDED:** a refereed demonstration that every V1 completion in a stated class leaves an enthalpy mismatch violating a stated bound.
+  - **OPEN:** otherwise.
+- **Expectation.** V1-RECEIVER under reading A: the frame's zero-inertia constraint becomes a carrier, which is (d-i)'s analogue with the spatial trace freed by X. Otherwise V1-EXCLUDED.

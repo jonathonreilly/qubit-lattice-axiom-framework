@@ -1,0 +1,126 @@
+{
+  "ancestry_and_math": "Planned child starts directly from PR9517; no initial-state ancestry or mathematical dependency.",
+  "archived_provisional_relations": [],
+  "canonical_core_maps": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/MODULATED_KINETIC_LAW_ROOT_PROBE.md",
+      "byte_end_exclusive": 29984,
+      "byte_start_inclusive": 7387,
+      "bytes": 22597,
+      "canonical_path": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "95710c65c6dab48ffc1b7e643c2bea48b49112d580ff444bcad96766c889aab6",
+      "claim_id": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+      "line_end_inclusive": 592,
+      "line_start_inclusive": 129,
+      "lines": 464,
+      "role": "direct mathematical parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "byte_end_exclusive": 49856,
+      "byte_start_inclusive": 27798,
+      "bytes": 22058,
+      "canonical_path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "line_end_inclusive": 901,
+      "line_start_inclusive": 432,
+      "lines": 470,
+      "role": "direct mathematical parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "byte_end_exclusive": 46480,
+      "byte_start_inclusive": 5846,
+      "bytes": 40634,
+      "canonical_path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a",
+      "claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "core_sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "line_end_inclusive": 964,
+      "line_start_inclusive": 106,
+      "lines": 859,
+      "role": "direct mathematical parent with conditional cell premises"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/KINETIC_CORRELATION_ROOT_PROBE.md",
+      "byte_end_exclusive": 22090,
+      "byte_start_inclusive": 5679,
+      "bytes": 16411,
+      "canonical_path": "docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b",
+      "claim_id": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+      "core_sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19",
+      "line_end_inclusive": 439,
+      "line_start_inclusive": 105,
+      "lines": 335,
+      "role": "direct cited machinery and conditional cell parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "byte_end_exclusive": 27376,
+      "byte_start_inclusive": 6841,
+      "bytes": 20535,
+      "canonical_path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "claim_id": null,
+      "core_sha256": "0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498",
+      "line_end_inclusive": 421,
+      "line_start_inclusive": 121,
+      "lines": 301,
+      "role": "contained historical mean core; no additional direct chirp graph edge"
+    }
+  ],
+  "historical_mean301": "Contained in general canonical parent; no additional edge.",
+  "history_only_relations": [],
+  "initial_state_dependency": false,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+      "bytes": 31703,
+      "claim_id": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 619,
+      "path": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "95710c65c6dab48ffc1b7e643c2bea48b49112d580ff444bcad96766c889aab6",
+      "role": "direct mathematical parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+      "bytes": 52606,
+      "claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 930,
+      "path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2",
+      "role": "direct mathematical parent"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+      "bytes": 49234,
+      "claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 993,
+      "path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a",
+      "role": "direct mathematical parent with conditional cell premises"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "base_commit": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+      "bytes": 24714,
+      "claim_id": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+      "lines": 467,
+      "path": "docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b",
+      "role": "direct cited machinery and conditional cell parent"
+    }
+  ],
+  "same_packet_parents": [],
+  "standalone_hypotheses": {
+    "edges_created": [],
+    "scope": "Supplied model, vacuum, fixed smooth slots and BV resources, strict frequency gap, and actual-cell embedding/calibration assumptions remain exposed premises, not new graph nodes."
+  }
+}

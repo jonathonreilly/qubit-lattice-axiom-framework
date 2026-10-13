@@ -1,0 +1,70 @@
+{
+  "convention": "LF-preserving difflib.diff_bytes(unified_diff),n=3,literal labels,no timestamps,lossless gzip",
+  "diffs": [
+    {
+      "context_lines": 3,
+      "diff": "program_diffs/prepare_verify_chirped_kinetic_energy.diff.gz",
+      "diff_bytes": 8526,
+      "diff_lines": 105,
+      "diff_sha256": "998817307a75878a2ce5ab3c1c87d1624dcd0e9f34b43f37ea95c85b467dc9f9",
+      "diff_stored_sha256": "5ffbc231a9dc2f86252f3b7f9ad27dd76ddb8d279c62923074af4523c5ed2a64",
+      "fromfile": "reviewed_template/prepare_verify_initial_state_kinetic_energy.py",
+      "program": "prepare_verify_chirped_kinetic_energy.py",
+      "program_sha256": "bef3f99296adf545d0bd24ea721dab8880dfc4b3454417df3f4273c2c80767a0",
+      "readable_diff": "program_diffs/prepare_verify_chirped_kinetic_energy.diff",
+      "stored_bytes": 3297,
+      "template": "procedural_template/prepare_verify_initial_state_kinetic_energy.py",
+      "template_sha256": "1213c7a2081ab7f07bbcff65c2b36ccd2c6de14d0933af690fe85ce06605b297",
+      "tofile": "chirped_publication/prepare_verify_chirped_kinetic_energy.py"
+    },
+    {
+      "context_lines": 3,
+      "diff": "program_diffs/IDENTITY_TOOL.template.diff.gz",
+      "diff_bytes": 9440,
+      "diff_lines": 107,
+      "diff_sha256": "065c13bf3ffd5fdb637fd127912505fd34b030aa2efc8ba71f18a2ff481af989",
+      "diff_stored_sha256": "c98e0f403b7fb3f54cced0cf743d013a6adc23ac965d14abe74e9a5254d120f4",
+      "fromfile": "reviewed_template/IDENTITY_TOOL.template.py",
+      "program": "IDENTITY_TOOL.template.py",
+      "program_sha256": "a817e57d4a6ebb392f00928ccf144e97ae208572c6aa181a473b507fd1673e2c",
+      "readable_diff": "program_diffs/IDENTITY_TOOL.template.diff",
+      "stored_bytes": 3344,
+      "template": "procedural_template/IDENTITY_TOOL.template.py",
+      "template_sha256": "81cd741addeb057d0fe6ee1dee0594925092fbfa588eb06388fd2fc2d4940817",
+      "tofile": "chirped_publication/IDENTITY_TOOL.template.py"
+    },
+    {
+      "context_lines": 3,
+      "diff": "program_diffs/run_combined_validation.diff.gz",
+      "diff_bytes": 959,
+      "diff_lines": 11,
+      "diff_sha256": "dae82eb6e9531a9f81c19442ec691027fdc8ddd25c474436296d3e2987374055",
+      "diff_stored_sha256": "72f3d7937f0aec99b16feae0c4c4a89d1d7dcaab0de10ab37adef026b4a6565a",
+      "fromfile": "reviewed_template/run_combined_validation.py",
+      "program": "run_combined_validation.py",
+      "program_sha256": "537b98824b1cd27fdb9519f3eaba43305c137ce0a9d22281216b0affef514ff6",
+      "readable_diff": "program_diffs/run_combined_validation.diff",
+      "stored_bytes": 509,
+      "template": "procedural_template/run_combined_validation.py",
+      "template_sha256": "3ac30326baf9300084bc893ac89392e136331b68f42a7b4e01ebbaa23eee79ee",
+      "tofile": "chirped_publication/run_combined_validation.py"
+    },
+    {
+      "context_lines": 3,
+      "diff": "program_diffs/CHECK_PREPARATION_SOURCES.diff.gz",
+      "diff_bytes": 28484,
+      "diff_lines": 245,
+      "diff_sha256": "9f06aeed584e488abafdf48742898235baf5be9199a2b456a6a7906e51caef18",
+      "diff_stored_sha256": "793673b91a59a42c8326ccb7df4d1daa4849128261381d70c8acb15e9986abf7",
+      "fromfile": "reviewed_template/CHECK_PREPARATION_SOURCES.py",
+      "program": "CHECK_PREPARATION_SOURCES.py",
+      "program_sha256": "f5dfabf8ff228c1998be1700b1d00b4b6e0d4e43e1204b5dbd784bdbca66121b",
+      "readable_diff": "program_diffs/CHECK_PREPARATION_SOURCES.diff",
+      "stored_bytes": 7748,
+      "template": "procedural_template/CHECK_PREPARATION_SOURCES.py",
+      "template_sha256": "380e9bdce4fc2590d7c2988652e33be692631d18f8ba44494fcda49d761aef51",
+      "tofile": "chirped_publication/CHECK_PREPARATION_SOURCES.py"
+    }
+  ],
+  "mathematical_body_template_adoption": false
+}

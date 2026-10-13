@@ -1,0 +1,12 @@
+{
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "branch": "physics-loop/toe-chirped-kinetic-energy-20261013",
+  "branch_created_by_source_preparer": false,
+  "historical_source_acceptance_branch_false_preserved": true,
+  "initial_state_ancestry_required": false,
+  "later_root_creation_receipt": "CHIRPED_BRANCH_CREATED.json",
+  "later_root_creation_receipt_sha256": "34c318ded50947ee4d654001eb38637060c9ce6da4c07c3a201c757a52a4bd4a",
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9517",
+  "runtime_requirement": "Exact planned branch at exact base and clean tracked/untracked status; root selects it separately.",
+  "source_generation_current_branch_requirement": false
+}

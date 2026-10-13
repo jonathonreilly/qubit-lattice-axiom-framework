@@ -1,6 +1,6 @@
 {
- "edge_count": 15916,
- "node_count": 7052,
+ "edge_count": 15920,
+ "node_count": 7053,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3272,6 +3272,10 @@
   },
   "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08": {
    "deps_hash": "a4bb0c06fb4f",
+   "out_degree": 4
+  },
+  "chirped_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "87bc9b727d16",
    "out_degree": 4
   },
   "chronology_protection_note_2026-05-17": {

@@ -1,0 +1,32 @@
+# Root review of chirp publication metadata V2
+
+The V1 prepare failed after218.164536292s because its unchanged exact graph guard
+requires author and seed hints bounded_theorem. The parser reads a standalone
+body label. Root restored the exact205 owned paths after preserving every byte;
+CHIRPED_PREPARE01_RECOVERY.json verifies the clean c5eaa6bf base.
+
+V2 is accepted for source integration and root prepare/verify. Its sole note
+change is the standalone Claim type: bounded_theorem line plus blank separator.
+The515/850 mathematical cores, all4 runtime/identity/checker programs and graph
+guards remain byte-identical. The17 source-review obligations accepted in V1
+remain valid at unchanged identities. The full note and program delta was read,
+as were both new source repair/check programs, changed freeze/launcher code,
+new history/provenance and wrapper changes. Root read c153e3,0b5a0b,e4c6d4;
+unchanged742-line driver full coverage is inherited at bef3f992.
+
+Root independently verified all437 frozen members and exact membership; ran
+CHECK_V2_REPAIR.py0.122186458s and CHECK_PREPARATION_SOURCES.py0.261276875s,
+both exit0 empty stderr. Those reconstruct all335V1 members, both unchanged
+cores,155objects308aliases,4parents5maps,210payload214stage paths.
+These are structural/byte checks with zero mathematical predicates.
+
+The notation inventory retains canonical_source_sha256 as the original V1
+source identity and adds note_sha256 for the current V2 note; the line moves
+381 to383 while its exact mathematical context is unchanged. Neither field
+supplies a scientific test. No graph-gate relaxation, science edit or extra
+citation edge was introduced. Six selected failure records are included in
+V2; the complete failed runtime is retained externally and in recovery.
+
+V1 failed runtime, recovery, V1 freeze and old review remain immutable. No
+retained verdict, model-diverse review or analytic Lean verification follows
+from this source acceptance. No editable prompt files changed.

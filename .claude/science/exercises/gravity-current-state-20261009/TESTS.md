@@ -6651,3 +6651,13 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **V0-FAILS:** a demonstration (referee required) that V0 violates Lemma F or Lemma M, with the replacement vertex stated. This can be recorded together with either of the other readings.
   - **OPEN:** otherwise.
 - **Expectation.** V0-FAILS: the Wilson mass must couple to the stress, which changes the Dirac signs. The SM solve then stays OPEN.
+- **R17-13 (Wilson-Dirac μ_T2): worker reading ZEROED on the letter of the clause; the 4-row SM root was not found; SIGN-DEFINITE is false.**
+  - **The sign is not fixed.** μ_T2 takes both signs on D1. The Wilson piece (positive) competes with the kinetic–Wilson interference (negative).
+  - **Lemma S:** for the mirror-symmetric class, μ_T2 = r⁴C₄ + O(r⁵) with C₄ < 0.
+  - **Closed forms:** P and I.
+  - **The zero.** D1(0.916719, 0.559627) at m = 0.01 gives μ_T2 = 0. It costs one Dirac-edge shape tuning, and the zero carries over to m = 0.001.
+  - **Vertex independence.** μ_T2 depends only on the band and on SF, so the result holds whatever the vector or Dirac TT vertex placement.
+  - **No SM root.** On the zero curve the Dirac μ_E is too negative at SM counts: the shortfall is 2.5–6× on the sampled ranges. A non-shape shear knob, or wider families, would be needed (P-R17-13b).
+  - **Prices:** P-R17-13a (one shape tuning per Wilson-Dirac edge) and P-R17-13b.
+
+  Referee running.

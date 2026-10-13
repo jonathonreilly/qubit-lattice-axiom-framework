@@ -1,0 +1,21 @@
+Dirac points on mu_T2=0: 66 (D1 12, DG 54); scalars 112; photons 91
+dist 0.209 | Dirac DG(b=1.00,w=0.05,r*=0.0747) | scalar (b_s=3.10,fr=1.00) | photon (b=0.15,fw=0.50) | P* [-0.0009  0.0138  0.0003] vs grid [-1.7556e-03  1.5552e-02 -8.9402e-06]
+dist 0.235 | Dirac DG(b=1.00,w=0.03,r*=0.0559) | scalar (b_s=3.05,fr=0.80) | photon (b=0.15,fw=0.50) | P* [-6.1087e-04  1.4493e-02  2.5384e-05] vs grid [-1.7556e-03  1.5552e-02 -8.9402e-06]
+dist 0.387 | Dirac DG(b=0.90,w=0.20,r*=0.1370) | scalar (b_s=3.10,fr=1.00) | photon (b=0.20,fw=0.50) | P* [0.0003 0.0154 0.0001] vs grid [-1.3506e-03  1.9622e-02 -2.1174e-06]
+dist 0.387 | Dirac DG(b=1.00,w=0.10,r*=0.1116) | scalar (b_s=3.10,fr=1.00) | photon (b=0.15,fw=0.50) | P* [-0.0015  0.0121  0.0017] vs grid [-1.7556e-03  1.5552e-02 -8.9402e-06]
+dist 0.497 | Dirac DG(b=0.50,w=0.20,r*=0.0633) | scalar (b_s=1.00,fr=0.02) | photon (b=1.60,fw=0.05) | P* [ 0.022  0.067 -0.001] vs grid [ 0.0206  0.0745 -0.0002]
+dist 0.534 | Dirac DG(b=0.50,w=0.10,r*=0.0413) | scalar (b_s=1.00,fr=0.02) | photon (b=1.60,fw=0.20) | P* [ 0.0265  0.0808 -0.0016] vs grid [0.0255 0.0791 0.0009]
+dist 0.557 | Dirac DG(b=0.90,w=0.10,r*=0.0895) | scalar (b_s=2.50,fr=0.80) | photon (b=0.25,fw=0.50) | P* [1.7034e-03 1.9356e-02 2.7315e-05] vs grid [-8.8406e-04  2.3470e-02  7.1450e-06]
+dist 0.568 | Dirac DG(b=0.60,w=0.03,r*=0.0249) | scalar (b_s=1.00,fr=0.02) | photon (b=1.60,fw=0.05) | P* [ 0.02   0.066 -0.002] vs grid [ 0.0206  0.0745 -0.0002]
+dist 0.575 | Dirac DG(b=0.90,w=0.30,r*=0.1804) | scalar (b_s=3.10,fr=1.00) | photon (b=0.15,fw=0.50) | P* [-0.0011  0.0121  0.0026] vs grid [-1.7556e-03  1.5552e-02 -8.9402e-06]
+dist 0.601 | Dirac DG(b=0.30,w=0.50,r*=0.0832) | scalar (b_s=1.00,fr=0.02) | photon (b=1.60,fw=0.20) | P* [ 2.8242e-02  7.5847e-02 -7.3499e-05] vs grid [0.0255 0.0791 0.0009]
+dist 0.630 | Dirac DG(b=0.90,w=0.05,r*=0.0600) | scalar (b_s=2.00,fr=0.80) | photon (b=0.30,fw=0.50) | P* [0.0025 0.0216 0.0002] vs grid [-3.5532e-04  2.7122e-02  1.9315e-05]
+dist 0.654 | Dirac DG(b=0.80,w=0.30,r*=0.1461) | scalar (b_s=2.80,fr=0.80) | photon (b=0.30,fw=0.50) | P* [0.0022 0.0192 0.0001] vs grid [-3.5532e-04  2.7122e-02  1.9315e-05]
+dist 0.668 | Dirac DG(b=0.90,w=0.03,r*=0.0449) | scalar (b_s=1.50,fr=1.00) | photon (b=0.30,fw=0.50) | P* [2.7780e-03 2.2504e-02 5.1700e-05] vs grid [-3.5532e-04  2.7122e-02  1.9315e-05]
+dist 0.693 | Dirac DG(b=0.60,w=0.05,r*=0.0334) | scalar (b_s=1.00,fr=0.02) | photon (b=1.60,fw=0.05) | P* [ 0.0193  0.0635 -0.0018] vs grid [ 0.0206  0.0745 -0.0002]
+dist 0.718 | Dirac DG(b=0.80,w=0.50,r*=0.2148) | scalar (b_s=3.10,fr=1.00) | photon (b=0.15,fw=0.50) | P* [-0.0005  0.0123  0.0033] vs grid [-1.7556e-03  1.5552e-02 -8.9402e-06]
+D1(b=0.150, r*=0.3178): rows needed from scalars+vectors (T2g, Eg, muE) = [-0.0088  0.1017  0.1618] ; max (4S_mu+12P_mu) among combos meeting the T2g row within 25%: +0.0636
+D1(b=0.200, r*=0.3281): rows needed from scalars+vectors (T2g, Eg, muE) = [-0.0158  0.0913  0.1721] ; max (4S_mu+12P_mu) among combos meeting the T2g row within 25%: +0.0635
+D1(b=0.250, r*=0.3389): rows needed from scalars+vectors (T2g, Eg, muE) = [-0.0226  0.0813  0.183 ] ; max (4S_mu+12P_mu) among combos meeting the T2g row within 25%: +0.0633
+D1(b=0.800, r*=0.5040): rows needed from scalars+vectors (T2g, Eg, muE) = [-0.0862 -0.0118  0.3428] ; max (4S_mu+12P_mu) among combos meeting the T2g row within 25%: none
+D1(b=0.900, r*=0.5509): rows needed from scalars+vectors (T2g, Eg, muE) = [-0.0962 -0.0258  0.3809] ; max (4S_mu+12P_mu) among combos meeting the T2g row within 25%: none

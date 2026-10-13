@@ -1,0 +1,544 @@
+{
+  "at": "2026-10-13T15:55:09.656531+00:00",
+  "archive": {
+    "path": "SOURCE_REVIEW_RECOVERY_v1.tar.gz",
+    "sha256": "602c6ceb77126c9f11a0746a6b1367b0bc0cd3b62c65855abed1abaeb26425e2"
+  },
+  "files": [
+    {
+      "member": "independent_source_review/RECEIPT.json",
+      "sha256": "09ca94d6aacdfc4c9c8927549bcd18441c2cf7460e6bade6977770fa17e9c997",
+      "bytes": 23849
+    },
+    {
+      "member": "independent_source_review/DISCOVERY_CLOSURE_v1.json",
+      "sha256": "d051edb43a7db2e42d51bf15fcd9f5733620ce65a07a810ed36cba831cfff65e",
+      "bytes": 3085
+    },
+    {
+      "member": "independent_source_review/END_GUARD.json",
+      "sha256": "dcdd3e0a082764b6c57330f504f2bfd6c95c5822c7a23259fa01fa61f13b7fcf",
+      "bytes": 529
+    },
+    {
+      "member": "independent_source_review/FAILURES_AND_RECOVERY_v1.json",
+      "sha256": "7f84a5e029b0310b16f5383e5902eedf7a0fdc5ce2f19dedc74db853011dcafd",
+      "bytes": 1656
+    },
+    {
+      "member": "independent_source_review/FINAL_FREEZE.json",
+      "sha256": "9392f824803d52d183303f00eddc5d7b8deb94bd388cc59ff7648b477c172838",
+      "bytes": 8283
+    },
+    {
+      "member": "independent_source_review/FINAL_FREEZE_v2.json",
+      "sha256": "bca9868f6d7f45f28ff7a9f139bb571ce33e29e22753b16954963e027b8ce8b7",
+      "bytes": 7878
+    },
+    {
+      "member": "independent_source_review/FREEZE.json",
+      "sha256": "49e95d01c74bfa359438f3228b531f722cd0eb52e18c2bc0c9a00141342c2a40",
+      "bytes": 1956
+    },
+    {
+      "member": "independent_source_review/INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "8fb3a80dd0529f286602da573d80f741f336345872527be0821dea80c0864a47",
+      "bytes": 5279
+    },
+    {
+      "member": "independent_source_review/MANIFEST_CHECK_v1.json",
+      "sha256": "22bab116fcf3c7c49fa540144cd50d73f75cbdf77142581fa2530c2173221750",
+      "bytes": 319
+    },
+    {
+      "member": "independent_source_review/MUTANT_SUMMARY.json",
+      "sha256": "1ed91f0f9611dbe54973176f100a033c51a96f801a138f76a5f7392ae6f4e535",
+      "bytes": 11024
+    },
+    {
+      "member": "independent_source_review/REPORT_v1.md",
+      "sha256": "8245ddc92d85b4ff09f863c879887a6e2af18a57eee81cf5c165fd665c1fc31a",
+      "bytes": 12934
+    },
+    {
+      "member": "independent_source_review/REPORT_v2.md",
+      "sha256": "a93da938c162abf0f1ae4ed46f991fd65f7ec2fb8d726e9e0f16922851451788",
+      "bytes": 13996
+    },
+    {
+      "member": "independent_source_review/RESULTS_v2.json",
+      "sha256": "9f86dd0051c79761a0e5a56cc30372e8aba38e2f55e5dc0a9c831e64da843d0d",
+      "bytes": 67836
+    },
+    {
+      "member": "independent_source_review/REVIEW_v1.json",
+      "sha256": "3acd4ca4a0c758e8e32194b782baab2dfd941e45e71bcdf43d0ff7a16055c76f",
+      "bytes": 7385
+    },
+    {
+      "member": "independent_source_review/REVIEW_v2.json",
+      "sha256": "fb00b19e895fc6c54db88cb766caaf9cc18e70eb5e87ac5457caa47b19edadd3",
+      "bytes": 21028
+    },
+    {
+      "member": "independent_source_review/SYMBOLIC_v2.json",
+      "sha256": "e2773a03c24ac2010d40567d78f294deceeb607661707784ad6fa7f23c61aa39",
+      "bytes": 620
+    },
+    {
+      "member": "independent_source_review/check_discovery_closure_v1.py",
+      "sha256": "cfbdb04099bfb70d4957cc90e1830569d78f74c0632591a03d68c9d3c3b107ea",
+      "bytes": 3520
+    },
+    {
+      "member": "independent_source_review/check_independent_v1.py",
+      "sha256": "ab148ae4eb1ff71cd8f2f1dba84ebb566fc52943f7baa2dabe01dc83e333967c",
+      "bytes": 6996
+    },
+    {
+      "member": "independent_source_review/check_independent_v2.py",
+      "sha256": "98f33a04c14e80beaba7ac4aae164eeef3163cfe5bcf50257031769330fc0e3a",
+      "bytes": 8697
+    },
+    {
+      "member": "independent_source_review/execution_v1/EXECUTION.json",
+      "sha256": "57032dbad238d6192e110fd4bd3920ed3005b1115ce77a24eb395fbff3de071e",
+      "bytes": 618
+    },
+    {
+      "member": "independent_source_review/execution_v1/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/execution_v1/stdout.log",
+      "sha256": "3b2c1887e638e3ea10c61a45344465e47cb3be8426c14112522be88b6e3c15a0",
+      "bytes": 32
+    },
+    {
+      "member": "independent_source_review/execution_v2/EXECUTION.json",
+      "sha256": "05568d1edb71ae41a414e4a94c739cb3f9f91d74fa36a97fe853a0039bfe23a1",
+      "bytes": 589
+    },
+    {
+      "member": "independent_source_review/execution_v2/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/execution_v2/stdout.log",
+      "sha256": "93293f3e85fd5648040d51e6134098b1061eef0161679d8220fe16b684b7182c",
+      "bytes": 168
+    },
+    {
+      "member": "independent_source_review/external_abstracts/ABSTRACT_TEXT.json",
+      "sha256": "1c6c6e4ec827627191d2156add120931a158c8535fa6220df0064ad22dc66208",
+      "bytes": 3555
+    },
+    {
+      "member": "independent_source_review/external_abstracts/RECOVERY.json",
+      "sha256": "b799684c2d06d4d36b4ad76a40042958a0b6261d12f0f1132c080913af2448d3",
+      "bytes": 1392
+    },
+    {
+      "member": "independent_source_review/external_abstracts/RECOVERY_v2.json",
+      "sha256": "f6a5e2093504a7fcd5976280143c9e6a67510e45ceb1d1022fc475b06881b41c",
+      "bytes": 3533
+    },
+    {
+      "member": "independent_source_review/external_abstracts/damour_esposito_farese_1996.curl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/external_abstracts/damour_esposito_farese_1996.html",
+      "sha256": "6770be5e8869f70b7f43e6f46df0aaebb2a9c3ace72858a18635802bd4fa197e",
+      "bytes": 43470
+    },
+    {
+      "member": "independent_source_review/external_abstracts/esposito_farese_polarski_2000.curl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/external_abstracts/esposito_farese_polarski_2000.html",
+      "sha256": "210b9e916eaedc883af42775ca57cede42fbd436fb060b25774c1df2d17b1e06",
+      "bytes": 43175
+    },
+    {
+      "member": "independent_source_review/external_abstracts/perivolaropoulos_2003.curl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/external_abstracts/perivolaropoulos_2003.html",
+      "sha256": "63de9984b6bb61e217a31bf857e408f973a4014670d075a9d1a951b64a426376",
+      "bytes": 43809
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "5286200dde2b972213e6a3755f588eb319d6971bdcaceb37ddb30adb15bdb31c",
+      "bytes": 609
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/GOAL.md",
+      "sha256": "64a5ad8bff9c3b94a4da4eb076b197e93b0aafab5dacb7021c75ee9d527e1025",
+      "bytes": 804
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/HANDOFF.md",
+      "sha256": "8cd429cdf7a1c7e8d7502864ef7ebb962e561ceebc468bb23f12602bcb211074",
+      "bytes": 609
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/PRIOR_ART_SCOPE_v1.md",
+      "sha256": "09891647cb28552cc40b593c101042885375c2d2bf2b7a16759edbc1118d2f85",
+      "bytes": 2146
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/REVIEW_HISTORY.md",
+      "sha256": "c7700039b3c17731b4154d056d3467a1fa72ab9df4c13a9c5527b590efe92d78",
+      "bytes": 142
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/STATE.yaml",
+      "sha256": "b2a4d15360658290406eb5eb8e3ba13ee692049d118dddbb1439b2511935bbc8",
+      "bytes": 449
+    },
+    {
+      "member": "independent_source_review/final_source/.claude/science/physics-loops/weak-scalar-limit-20261013/TRACE_GATE.md",
+      "sha256": "edaf89a71b182509f68ab1bec1282a6fdc68bdb611888c289915d6e901d19b3a",
+      "bytes": 521
+    },
+    {
+      "member": "independent_source_review/final_source/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "01ff8fa8d25ef12dcd6592646d81cce17bfe7145127334b48da7beaf83a66f9e",
+      "bytes": 9093
+    },
+    {
+      "member": "independent_source_review/final_source/docs/audit/data/citation_graph_manifest.json",
+      "sha256": "875c875c40cbbb7d9301196cc8b331f1f55e95bd255ed564b477ffd66612fde8",
+      "bytes": 1004763
+    },
+    {
+      "member": "independent_source_review/final_source/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/final_source/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/final_source/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "b127b20aa44a2eb1a2dfd1f08c2e01d06389bf05f017d60023df1ce94efa92e6",
+      "bytes": 8510
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "5286200dde2b972213e6a3755f588eb319d6971bdcaceb37ddb30adb15bdb31c",
+      "bytes": 609
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/GOAL.md",
+      "sha256": "64a5ad8bff9c3b94a4da4eb076b197e93b0aafab5dacb7021c75ee9d527e1025",
+      "bytes": 804
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/HANDOFF.md",
+      "sha256": "8cd429cdf7a1c7e8d7502864ef7ebb962e561ceebc468bb23f12602bcb211074",
+      "bytes": 609
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/PRIOR_ART_SCOPE_v1.md",
+      "sha256": "09891647cb28552cc40b593c101042885375c2d2bf2b7a16759edbc1118d2f85",
+      "bytes": 2146
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/REVIEW_HISTORY.md",
+      "sha256": "c7700039b3c17731b4154d056d3467a1fa72ab9df4c13a9c5527b590efe92d78",
+      "bytes": 142
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/STATE.yaml",
+      "sha256": "b2a4d15360658290406eb5eb8e3ba13ee692049d118dddbb1439b2511935bbc8",
+      "bytes": 449
+    },
+    {
+      "member": "independent_source_review/final_source_v2/.claude/science/physics-loops/weak-scalar-limit-20261013/TRACE_GATE.md",
+      "sha256": "edaf89a71b182509f68ab1bec1282a6fdc68bdb611888c289915d6e901d19b3a",
+      "bytes": 521
+    },
+    {
+      "member": "independent_source_review/final_source_v2/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "d9c1a91277f159fd727b16ad0497b18629e97118ca5a393bf566d33597518170",
+      "bytes": 9201
+    },
+    {
+      "member": "independent_source_review/final_source_v2/docs/audit/data/citation_graph_manifest.json",
+      "sha256": "875c875c40cbbb7d9301196cc8b331f1f55e95bd255ed564b477ffd66612fde8",
+      "bytes": 1004763
+    },
+    {
+      "member": "independent_source_review/final_source_v2/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/final_source_v2/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/final_source_v2/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "b127b20aa44a2eb1a2dfd1f08c2e01d06389bf05f017d60023df1ce94efa92e6",
+      "bytes": 8510
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/EXECUTION.json",
+      "sha256": "c30a817c03b1fd4f740679bb6565fac24a829336afcb2a82ff82b1dce28ba467",
+      "bytes": 2974
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/MUTATION.diff",
+      "sha256": "1e09b83a95ef56785eb4f00dd5926966c2f5cf8aa3e095f423f5434586607cc9",
+      "bytes": 661
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/RESULTS.json",
+      "sha256": "5bd50dbd697eda83a8a8d27469191864163493e7e1e2a58cff76f8c72e9f9e55",
+      "bytes": 125205
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "01ff8fa8d25ef12dcd6592646d81cce17bfe7145127334b48da7beaf83a66f9e",
+      "bytes": 9093
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "b24c2b30734bfd22ae6fba3ad5a3661576f945ab35803a63f4a0c6ba65ba0e69",
+      "bytes": 8475
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/mutants/freeze_before_second_derivative/stdout.log",
+      "sha256": "9585cf8d7751ea9f20f0d795d3d50e71920e55a5261f5a47d635f2b3dda766e8",
+      "bytes": 133
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/EXECUTION.json",
+      "sha256": "e10e877da5386618e1f33d095f97981aaa89eb917adfef213f7745bb71f8041e",
+      "bytes": 2214
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/MUTATION.diff",
+      "sha256": "f71e2f8314dcfae38298d52bca91c227cf5e35f8661a4450c75aaab35233d0cd",
+      "bytes": 683
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/RESULTS.json",
+      "sha256": "ca4fa662ab9fbf13001a2e126c060ae0f775b0e77d847d18f15adaa1c9927b20",
+      "bytes": 131679
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "01ff8fa8d25ef12dcd6592646d81cce17bfe7145127334b48da7beaf83a66f9e",
+      "bytes": 9093
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "08d9cd8b9f17a472547158988f482132549b5a05495bb93e02296979b70cb7d9",
+      "bytes": 8504
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/mutants/missing_Q_normalization/stdout.log",
+      "sha256": "1ba2022b3a0359a302360676e7ee478a4fcdc20be620dddd470ba01b4990955a",
+      "bytes": 133
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/EXECUTION.json",
+      "sha256": "ba9293109eb6471716f6973de7eb09befb1354b9f1cadcfe7c7029754eb1dec8",
+      "bytes": 2738
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/MUTATION.diff",
+      "sha256": "b3e4ff8dab16a57e2dff68527e40bf9f23be4dafc48f39da365afe81d96eaf65",
+      "bytes": 686
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/RESULTS.json",
+      "sha256": "f9099a750a6fe637a985ee35f1d96945f6bd0a5d2d0c3b41f52393a3ba8c79f1",
+      "bytes": 131526
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "01ff8fa8d25ef12dcd6592646d81cce17bfe7145127334b48da7beaf83a66f9e",
+      "bytes": 9093
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "922b54e0f866c78c0d632328062005428f0d0cc5c6f6d1bfd3c5d6c35d00c6ec",
+      "bytes": 8508
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/mutants/missing_constraint_two/stdout.log",
+      "sha256": "63ce343620cff5b4bdfe70c30e7ce4a4e71e26b651b7dc67036d23ea22d8b7c4",
+      "bytes": 133
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/EXECUTION.json",
+      "sha256": "f72e60f25565667909431311a85ffed32631a134ea59fe47aeb4232ad1e57138",
+      "bytes": 1883
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/MUTATION.diff",
+      "sha256": "f2779facec47404780403c8e6bbbd342dcd1e479efacfdc335dbc998dc4fb817",
+      "bytes": 576
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/RESULTS.json",
+      "sha256": "7d8c75126fe2312d5d27e5ecf3b6a73eedf17fb428bc274ccc435533e613cac9",
+      "bytes": 131187
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "01ff8fa8d25ef12dcd6592646d81cce17bfe7145127334b48da7beaf83a66f9e",
+      "bytes": 9093
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "7009e7ea07f79440e5cecb2591a64a40e8e967f3904658132d95940167718dd1",
+      "bytes": 8409
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "member": "independent_source_review/mutants/omit_connections/stdout.log",
+      "sha256": "4858cffb121d696f86acc2d4f207eaf5abfb54aee4d523183251aba361cc1848",
+      "bytes": 132
+    },
+    {
+      "member": "independent_source_review/original_source/docs/WEAK_SCALAR_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "c82dd7d0e2b07bc1795e773c9b45c8bd7855985c542bfdd209afcb58dee8a26e",
+      "bytes": 9027
+    },
+    {
+      "member": "independent_source_review/original_source/outputs/weak_scalar_limit_2026_10_13/FIXTURES_v1.json",
+      "sha256": "bd7e8ade71fb75aecd4c874eb123e8f745f0441c5bbf736acf15fe6ec5ce7f5e",
+      "bytes": 640
+    },
+    {
+      "member": "independent_source_review/original_source/outputs/weak_scalar_limit_2026_10_13/imports.json",
+      "sha256": "e7a812d813a3bb0a3c38429895d9776a4dd6b639311ef17be747f6ec016b4711",
+      "bytes": 831
+    },
+    {
+      "member": "independent_source_review/original_source/scripts/weak_scalar_limit_2026_10_13.py",
+      "sha256": "b127b20aa44a2eb1a2dfd1f08c2e01d06389bf05f017d60023df1ce94efa92e6",
+      "bytes": 8510
+    },
+    {
+      "member": "independent_source_review/provenance/AFFECTED_CONVERGENCE_FIX.diff",
+      "sha256": "e334ef1f01674033df99d656bce05cd7457994e32e87cbab197cf42dc3d86728",
+      "bytes": 829
+    },
+    {
+      "member": "independent_source_review/provenance/MANIFEST_DELTA.diff",
+      "sha256": "b1b02a8fa7b7610c5c7beb2d22e4b2da2b08b79f949d9631f057a8f3da4cc819",
+      "bytes": 728
+    },
+    {
+      "member": "independent_source_review/provenance/ORIGINAL_TO_FINAL_NOTE.diff",
+      "sha256": "66e75302e3098f61f74c4cf50cc6eb3d5ccc276555369acd695401c094bbb6a1",
+      "bytes": 806
+    },
+    {
+      "member": "independent_source_review/provenance/ORIGINAL_TO_FINAL_NOTE_v2.diff",
+      "sha256": "bfecf9895ba9b0d00d90f9de9c938857eb66a397bbd3123d11563833e9f1ec7f",
+      "bytes": 1252
+    },
+    {
+      "member": "independent_source_review/provenance/RUNNER_DISCOVERY_FAILURE_v1.json",
+      "sha256": "c871dd8e73162ca27cf3b7016b781d71a8588138c6507e715925809418d566ce",
+      "bytes": 533
+    },
+    {
+      "member": "independent_source_review/provenance/SOURCE_UNIT_v1.json",
+      "sha256": "34565c4ffa669dbef3a812e367901a8be86574f9c69b1e926457cfa99b18e165",
+      "bytes": 2407
+    },
+    {
+      "member": "independent_source_review/provenance/SOURCE_UNIT_v2.json",
+      "sha256": "914e6f1c6d43c13b661ae20c7449309a3e22fd34b536290b52f285ac732cd346",
+      "bytes": 2407
+    },
+    {
+      "member": "independent_source_review/provenance/citation_graph_manifest_base.json",
+      "sha256": "e36fa2d9275c8fbbb17b3174866232903ddb20645afdde8dc586b9ec6b90ab03",
+      "bytes": 1004650
+    },
+    {
+      "member": "independent_source_review/run_negative_mutants_v1.py",
+      "sha256": "8ab205dd6d1c3dd308362d3da75ee6d7d6f114e27fa4b3eb0c50828de1f39603",
+      "bytes": 3214
+    }
+  ]
+}

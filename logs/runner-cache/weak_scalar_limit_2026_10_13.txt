@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/weak_scalar_limit_2026_10_13.py
+runner_sha256: b127b20aa44a2eb1a2dfd1f08c2e01d06389bf05f017d60023df1ce94efa92e6
+input_fingerprint_sha256: 3b94055747bca7d2cad8ffe297eba6bd70c6d1623ac05bd0ac594ea0fc56cbd0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+Weighted action limits, first physical Hubble correction, curved connection and supplied local Newton limit.
+TOTAL: PASS=510 FAIL=0
+
+----- stderr -----
+

@@ -7540,3 +7540,29 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Conditional result.** At free one loop, conditional on H-V3, P136(ii), P-r193a and the class-𝒟 receiver, (S) removes the physical graviton zero point and (d-i) compensates its isotropic enthalpy. No fitted number is needed.
   - **Why a bridge is needed:** the LL and G^(2) composites are gauge-dependent, so a named observable bridge is necessary.
   - **Not covered:** arbitrary gauges, interactions, higher loops.
+
+### C5 Round 19, item 9 (pre-registered 04:44Z, before launch)
+
+**R19-9. Close the photon at EXACT-SURVIVES: build the exact W1 completion of VW numerically and re-solve the SM root.**
+- **Plain question.** R19-5 (worker; referee running) finds:
+  - exact W1 exists for scalars and Dirac, and the SM rows are unchanged;
+  - for the photon only an outline exists: Sylvester inversion, plus division on the scattering shell, plus the continuum Maxwell kernel in a soft-corner cube of radius r, with row cost O(r⁴).
+
+  Build it, check W1 to machine precision, and re-solve the 6-knob SM root at r ≈ 0.05–0.1.
+- **Setting.**
+  - R18-9/R18-13's SM root (U, UD, VW with signed own-direction stencils) on its stated edges.
+  - The photon on γG_w(2.9435, 0.198093); the graviton as R9-9.
+  - Exact W1 means machine precision over the torus.
+  - Single soft legs: write the Gauss-law bookkeeping.
+- **Prior art (count once):** R19-5 (worker), R8-2 Construction A, R13-5 Lemma P1, R17-12, R18-9 and R18-13 with their verdicts.
+- **Removed hypothesis:** conservation only at O(q), for the photon.
+- **Probes.**
+  - (a) The exact photon stress and its W1 check.
+  - (b) Its corner cost.
+  - (c) Re-solve the root: all axial and off-axis rows, with knob shifts.
+  - (d) Prices.
+- **FIXED readings.**
+  - **PHOTON-EXACT:** the exact photon completion is checked to ≤ 1e-12 and the SM root is re-solved with all rows zero. Checked.
+  - **PHOTON-OBSTRUCTED:** a demonstration (refereed) that no exact completion exists in a stated class (e.g. a single-soft-leg Gauss-law obstruction).
+  - **OPEN:** otherwise.
+- **Expectation.** PHOTON-EXACT with knob shifts ~1e-6.

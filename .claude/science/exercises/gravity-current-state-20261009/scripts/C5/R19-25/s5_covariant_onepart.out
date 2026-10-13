@@ -1,0 +1,13 @@
+(a) covariant de Donder GB, one-particle space; metric inertia on all 10 components: (6, 4)
+  k=[0.  0.  0.3]: dim V1 = 6, Krein inertia (+,-,0) = (2, 0, 4); gauge modes in V1: 1.4e-17, null: 5.6e-17; TT in V1: 3.0e-18, TT Gram = [1. 1.]
+  k=[0.2  0.1  0.05]: dim V1 = 6, Krein inertia (+,-,0) = (2, 0, 4); gauge modes in V1: 2.1e-17, null: 5.6e-17; TT in V1: 3.2e-17, TT Gram = [1. 1.]
+  k=[1.  2.  0.5]: dim V1 = 6, Krein inertia (+,-,0) = (2, 0, 4); gauge modes in V1: 1.3e-15, null: 2.7e-15; TT in V1: 2.8e-16, TT Gram = [1. 1.]
+  k=[2.827 0.3   1.7  ]: dim V1 = 6, Krein inertia (+,-,0) = (2, 0, 4); gauge modes in V1: 8.9e-16, null: 3.6e-15; TT in V1: 4.1e-16, TT Gram = [1. 1.]
+  static source T^00: propagator numerator P^(00,00) = 0.5000 (GR: 1/2 > 0, attractive 1/qhat^2)
+  (check with inverse metric, the Feynman-gauge propagator numerator for T_00: 0.5000)
+
+(b) 6 spatial slots only: G(k) eta G(k)^dag for per-slot metric signs (eta_diag, eta_off)
+  (eta_d, eta_o) = (+1,+1): ||G eta G^T|| at three k = [0.0893 0.0524 3.9965]
+  (eta_d, eta_o) = (+1,-1): ||G eta G^T|| at three k = [0.0893 0.0361 2.4902]
+  (eta_d, eta_o) = (-1,+1): ||G eta G^T|| at three k = [0.0893 0.0361 2.4902]
+  (eta_d, eta_o) = (-1,-1): ||G eta G^T|| at three k = [0.0893 0.0524 3.9965]

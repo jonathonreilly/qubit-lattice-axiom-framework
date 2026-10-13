@@ -1,0 +1,24 @@
+(a) naive abelian Q = c1 G + c2 Sc on 3 HP slots, g=(1,-1,0), s=(1,1,5), g.s=0
+  S= 0.5: |Q^2 - pred| = 4.4e-16;  ||Q^2|| full = 2.0000;  on n_tot<=0: 4.5e-17, <=1: 2.0000, <=2: 2.0000
+  S=   1: |Q^2 - pred| = 4.4e-16;  ||Q^2|| full = 2.0000;  on n_tot<=0: 8.5e-17, <=1: 1.0000, <=2: 2.0000
+  S=   2: |Q^2 - pred| = 8.9e-16;  ||Q^2|| full = 2.0000;  on n_tot<=0: 4.5e-17, <=1: 0.5000, <=2: 1.0000
+  S=   3: |Q^2 - pred| = 1.3e-15;  ||Q^2|| full = 2.0000;  on n_tot<=0: 2.0e-17, <=1: 0.3333, <=2: 0.6667
+
+(b) Chevalley-Eilenberg cohomology dims H^n(g, V) via Q = c^a T_a - 1/2 f_ab^c c^a c^b b_c
+  su(2) on V_0: [T_x,T_y]-T_z = 0.0e+00; |Q^2| = 0.0e+00; dim H^n, n=0..3: [np.int64(1), np.int64(0), np.int64(0), np.int64(1)]
+  su(2) on V_0.5: [T_x,T_y]-T_z = 0.0e+00; |Q^2| = 0.0e+00; dim H^n, n=0..3: [np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2) on V_1: [T_x,T_y]-T_z = 0.0e+00; |Q^2| = 2.2e-16; dim H^n, n=0..3: [np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2) on V_1.5: [T_x,T_y]-T_z = 1.1e-16; |Q^2| = 2.2e-16; dim H^n, n=0..3: [np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2) on V_2: [T_x,T_y]-T_z = 0.0e+00; |Q^2| = 5.0e-16; dim H^n, n=0..3: [np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2) on V_3: [T_x,T_y]-T_z = 0.0e+00; |Q^2| = 1.6e-15; dim H^n, n=0..3: [np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2)+su(2) on V_0.5 x V_0.5: |Q^2| = 0.0e+00; dim H^n, n=0..6: [np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2)+su(2) on V_1 x V_0.5: |Q^2| = 2.2e-16; dim H^n, n=0..6: [np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+  su(2)+su(2) on V_0 x V_0.5: |Q^2| = 0.0e+00; dim H^n, n=0..6: [np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]
+
+(c) c-polarization H^0 = joint kernel of the constraints (toy, 3 slots): smallest eig of G^2 + Sc^2
+  S=0.5: min eig = 5.450e+00  (toy only; on the N0914 lattice Lemma J gives 0 joint kernel at every S)
+  S=1: min eig = 1.510e-14  (toy only; on the N0914 lattice Lemma J gives 0 joint kernel at every S)
+  S=1.5: min eig = 7.100e-01  (toy only; on the N0914 lattice Lemma J gives 0 joint kernel at every S)
+  S=2: min eig = 1.099e-14  (toy only; on the N0914 lattice Lemma J gives 0 joint kernel at every S)
+  S=2.5: min eig = 4.260e-01  (toy only; on the N0914 lattice Lemma J gives 0 joint kernel at every S)
+python3 s2_brst_finite.py  0.68s user 0.03s system 105% cpu 0.663 total

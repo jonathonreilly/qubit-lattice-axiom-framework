@@ -1,0 +1,14 @@
+ring L=3, m=1.0, omega_k = [1. 2. 2.]
+d=2: Hilbert dim 64; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 1.429
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 3.910e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 5.529e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.7202 0.6901 0.5511 0.5324 0.4307]
+d=3: Hilbert dim 729; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 3.031
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 1.209e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.709e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.473  0.4717 0.4717 0.4499 0.1399]
+d=4: Hilbert dim 4096; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 4.950
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 1.091e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.543e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.2087 0.2066 0.2066 0.1213 0.1179]
+python3 s4_ring_gb_bogoliubov.py  296.11s user 8.62s system 127% cpu 3:59.74 total

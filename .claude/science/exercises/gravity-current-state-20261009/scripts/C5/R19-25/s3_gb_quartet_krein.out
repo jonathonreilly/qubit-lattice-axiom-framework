@@ -1,0 +1,31 @@
+=== HP slots ===
+ d= 2: exact frequency residual 0.0e+00; ||[G+,G+^K]|| full = 2.0000, on N<=2: 2.0000; G+ nilpotent of index 3; min sing. value of (G+ - 0.3) = 0.013; ||[G+,phi]|| = 2.000
+       first level N>=1 where V_N is not purely null: None
+ d= 3: exact frequency residual 0.0e+00; ||[G+,G+^K]|| full = 2.0000, on N<=2: 2.0000; G+ nilpotent of index 5; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 2.000
+       first level N>=1 where V_N is not purely null: (2, (1, 0, 0), array([0.3333]))
+ d= 5: exact frequency residual 4.4e-16; ||[G+,G+^K]|| full = 2.0000, on N<=2: 1.0000; G+ nilpotent of index 9; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 2.000
+       first level N>=1 where V_N is not purely null: (2, (1, 0, 0), array([0.1429]))
+       per level (N, dim V_N, inertia(+,-,0), ||leak on V_N||): [(0, 1, (1, 0, 0), np.float64(0.0)), (1, 1, (0, 0, 1), np.float64(0.5)), (2, 1, (1, 0, 0), np.float64(0.756)), (3, 1, (0, 0, 1), np.float64(1.025)), (4, 1, (1, 0, 0), np.float64(1.414)), (5, 0, (0, 0, 0), 0.0), (6, 0, (0, 0, 0), 0.0), (7, 0, (0, 0, 0), 0.0), (8, 0, (0, 0, 0), 0.0)]
+ d= 9: exact frequency residual 2.2e-15; ||[G+,G+^K]|| full = 2.0000, on N<=2: 0.5000; G+ nilpotent of index 17; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 2.000
+       first level N>=1 where V_N is not purely null: (2, (1, 0, 0), array([0.0667]))
+       per level (N, dim V_N, inertia(+,-,0), ||leak on V_N||): [(0, 1, (1, 0, 0), np.float64(0.0)), (1, 1, (0, 0, 1), np.float64(0.25)), (2, 1, (1, 0, 0), np.float64(0.365)), (3, 1, (0, 0, 1), np.float64(0.465)), (4, 1, (1, 0, 0), np.float64(0.564)), (5, 1, (0, 0, 1), np.float64(0.672)), (6, 1, (1, 0, 0), np.float64(0.802)), (7, 1, (0, 0, 1), np.float64(0.981)), (8, 1, (1, 0, 0), np.float64(1.291)), (9, 0, (0, 0, 0), 0.0), (10, 0, (0, 0, 0), 0.0), (11, 0, (0, 0, 0), 0.0), (12, 0, (0, 0, 0), 0.0), (13, 0, (0, 0, 0), 0.0), (14, 0, (0, 0, 0), 0.0), (15, 0, (0, 0, 0), 0.0), (16, 0, (0, 0, 0), 0.0)]
+ d=17: exact frequency residual 6.2e-15; ||[G+,G+^K]|| full = 2.0000, on N<=2: 0.2500; G+ nilpotent of index 33; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 2.000
+       first level N>=1 where V_N is not purely null: (2, (1, 0, 0), array([0.0323]))
+=== trunc slots ===
+ d= 2: exact frequency residual 0.0e+00; ||[G+,G+^K]|| full = 2.0000, on N<=2: 2.0000; G+ nilpotent of index 3; min sing. value of (G+ - 0.3) = 0.013; ||[G+,phi]|| = 2.000
+       first level N>=1 where V_N is not purely null: None
+ d= 3: exact frequency residual 2.2e-16; ||[G+,G+^K]|| full = 3.0000, on N<=2: 3.0000; G+ nilpotent of index 5; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 3.000
+       first level N>=1 where V_N is not purely null: None
+ d= 5: exact frequency residual 1.3e-15; ||[G+,G+^K]|| full = 5.0000, on N<=2: 0.0000; G+ nilpotent of index 9; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 5.000
+       first level N>=1 where V_N is not purely null: None
+       per level (N, dim V_N, inertia(+,-,0), ||leak on V_N||): [(0, 1, (1, 0, 0), np.float64(0.0)), (1, 1, (0, 0, 1), np.float64(0.0)), (2, 1, (0, 0, 1), np.float64(0.0)), (3, 1, (0, 0, 1), np.float64(0.0)), (4, 1, (0, 0, 1), np.float64(1.768)), (5, 0, (0, 0, 0), 0.0), (6, 0, (0, 0, 0), 0.0), (7, 0, (0, 0, 0), 0.0), (8, 0, (0, 0, 0), 0.0)]
+ d= 9: exact frequency residual 5.8e-15; ||[G+,G+^K]|| full = 9.0000, on N<=2: 0.0000; G+ nilpotent of index 17; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 9.000
+       first level N>=1 where V_N is not purely null: None
+       per level (N, dim V_N, inertia(+,-,0), ||leak on V_N||): [(0, 1, (1, 0, 0), np.float64(0.0)), (1, 1, (0, 0, 1), np.float64(0.0)), (2, 1, (0, 0, 1), np.float64(0.0)), (3, 1, (0, 0, 1), np.float64(0.0)), (4, 1, (0, 0, 1), np.float64(0.0)), (5, 1, (0, 0, 1), np.float64(0.0)), (6, 1, (0, 0, 1), np.float64(0.0)), (7, 1, (0, 0, 1), np.float64(0.0)), (8, 1, (0, 0, 1), np.float64(0.795)), (9, 0, (0, 0, 0), 0.0), (10, 0, (0, 0, 0), 0.0), (11, 0, (0, 0, 0), 0.0), (12, 0, (0, 0, 0), 0.0), (13, 0, (0, 0, 0), 0.0), (14, 0, (0, 0, 0), 0.0), (15, 0, (0, 0, 0), 0.0), (16, 0, (0, 0, 0), 0.0)]
+ d=17: exact frequency residual 1.2e-14; ||[G+,G+^K]|| full = 17.0000, on N<=2: 0.0000; G+ nilpotent of index 33; min sing. value of (G+ - 0.3) = 0.000; ||[G+,phi]|| = 17.000
+       first level N>=1 where V_N is not purely null: None
+
+(5) Lemma K: partial trace isolates each single-slot term of [C+, C+^K]
+  trial 0: |partial trace - (prod dims) kappa_a| = [0. 0. 0.];  tr kappa_a = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+  trial 1: |partial trace - (prod dims) kappa_a| = [0. 0. 0.];  tr kappa_a = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+  trial 2: |partial trace - (prod dims) kappa_a| = [0. 0. 0.];  tr kappa_a = [np.float64(0.0), np.float64(0.0), np.float64(0.0)]

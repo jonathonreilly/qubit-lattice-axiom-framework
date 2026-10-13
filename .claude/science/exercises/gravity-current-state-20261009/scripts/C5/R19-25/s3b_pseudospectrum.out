@@ -1,0 +1,8 @@
+HP    d= 3: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 1.66e-06, 3.87e-04, 9.69e-02
+HP    d= 5: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 6.32e-12, 1.19e-07, 3.77e-03
+HP    d= 9: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 5.05e-24, 9.90e-16, 4.82e-07
+HP    d=17: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 2.53e-46, 2.45e-34, 4.23e-17
+trunc d= 3: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 8.30e-07, 1.96e-04, 5.62e-02
+trunc d= 5: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 5.93e-13, 1.14e-08, 4.34e-04
+trunc d= 9: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 8.56e-24, 2.45e-18, 1.45e-09
+trunc d=17: min sing.val of (G+ - rho) for rho = 0.1, 0.3, 1.0: 5.41e-37, 1.76e-29, 3.68e-21

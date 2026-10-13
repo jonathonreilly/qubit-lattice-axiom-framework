@@ -8630,3 +8630,25 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **GAUGE-RESIDUE:** a g²T² cross term that (S_loc) leaves. Size it.
   - **OPEN:** otherwise.
 - **Expectation.** GAUGE-CANCELS for the Debye (electric) part, because it is a local mass. OPEN for the magnetic/HTL nonlocal part.
+
+- **R19-25 (weak/BRST graviton constraints at finite S): worker reading OPEN.**
+  - **Proved, unrefereed:**
+    - (§3.1) With the standard polarization, the BRST ghost-0 cohomology equals the strong joint kernel, which is {0} by Lemma J, at every S.
+    - (§3.2) The closed algebra is ⊕su(2), whose cohomology is zero in all degrees.
+    - (§3.3) Q² = (i/S) Σ n_a C^G C^S.
+  - **Gupta–Bleuler escapes at the vacuum**, because the lowering parts commute. A Krein metric sidesteps Proposition C.
+  - **Lemma K:** the per-slot commutators must vanish. So there is no ±1 slot cancellation at finite dimension, and no nilpotent Kugo–Ojima charge in that form.
+  - **Two-slot toy:**
+    - spin-S slots: an O(1/S) leak and spurious states with norm 1/(4S−1);
+    - truncated oscillators: exactly the vacuum.
+  - **Local Bogoliubov dynamics:** the GB space is empty in small rings (checked, not proved).
+  - **Six-slot:** no sign metric makes the vector constraint null.
+  - **10-slot covariant:** Krein inertia (2, 0, 4) and T⁰⁰ = ½, attractive.
+  - **Prices:**
+    - P-r19-25a: a Krein metric (AX:47, 60-61, 79-83);
+    - P-r19-25b: 10 slots per cell;
+    - P-r19-25c: weak selection as a law;
+    - P-r19-25d: ghosts.
+  - **Decisive missing item:** a covariant 10-slot truncated Krein model with local dynamics.
+
+  Referee running.

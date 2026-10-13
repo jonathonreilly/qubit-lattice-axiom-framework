@@ -1,0 +1,55 @@
+ring L=2, m=1.0, omega_k = [1.     2.2361]
+d=2: Hilbert dim 16; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 2.184
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 2.745e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 3.883e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [1.3129 0.6805 0.5592 0.3883 0.3485]
+d=3: Hilbert dim 81; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 4.632
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 1.056e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.494e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.4736 0.4395 0.3947 0.3898 0.1159]
+d=4: Hilbert dim 256; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 7.565
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 7.387e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.045e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.3821 0.2205 0.2072 0.1331 0.081 ]
+d=5: Hilbert dim 625; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 10.919
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 3.334e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 4.716e-02
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.1828 0.1233 0.1106 0.0982 0.0356]
+d=6: Hilbert dim 1296; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 14.649
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 1.908e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 2.698e-02
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.1069 0.0683 0.0582 0.0416 0.0179]
+d=7: Hilbert dim 2401; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 18.722
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 9.079e-03  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.284e-02
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.0592 0.0322 0.031  0.0227 0.0084]
+ring L=2, m=0.3, omega_k = [0.3    2.0224]
+d=2: Hilbert dim 16; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 2.017
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 1.445e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 2.043e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [1.2867 1.0257 0.9993 0.7027 0.2043]
+d=3: Hilbert dim 81; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 4.278
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 1.263e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.786e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.9037 0.6539 0.5207 0.4393 0.1685]
+d=4: Hilbert dim 256; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 7.303
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 9.127e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 1.291e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.5391 0.4194 0.3079 0.2738 0.1148]
+d=5: Hilbert dim 625; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 11.180
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 6.064e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 8.575e-02
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.3327 0.2652 0.1914 0.1676 0.0725]
+d=6: Hilbert dim 1296; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 15.492
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 3.843e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 5.435e-02
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.206  0.1637 0.1191 0.1004 0.044 ]
+d=7: Hilbert dim 2401; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 20.207
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 2.366e-02  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 3.346e-02
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.1262 0.0986 0.0729 0.0589 0.0259]
+ring L=3, m=1.0, omega_k = [1. 2. 2.]
+d=2: Hilbert dim 64; H Krein-self-adjoint residual 0.0e+00; |[H,bL]+w bL| (full space) = 1.429
+      exact Fock vacuum of the positive field? min sing.val of stacked bL(k) = 3.910e-01  (0 => exists)
+      best approximate joint vacuum residual (stacked bL,bT) = 5.529e-01
+      V = ker{D_k}: dim 0; 5 smallest sing. vals of stacked D = [0.7202 0.6901 0.5511 0.5324 0.4307]

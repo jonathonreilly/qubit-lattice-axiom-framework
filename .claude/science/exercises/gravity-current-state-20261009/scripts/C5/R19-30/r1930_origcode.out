@@ -1,0 +1,9 @@
+(i) R13-5 pair_kernel (unmodified), member U, profile G, m = 0.3, d = 3: jump across q_x = +-pi at fixed torus point
+  eps=1e-06  max jump: F^xy 2.26e+00  F^xz 2.42e+00  F^yz 2.45e-07  F^xx 6.16e-06  F^yy 1.27e-06  F^00 1.04e+00  F^0x 1.29e+00  F^0y 9.14e-01   (|F^xy| up to 1.13, |F^00| up to 1.11)
+  eps=1e-08  max jump: F^xy 2.28e+00  F^xz 2.34e+00  F^yz 2.66e-09  F^xx 6.93e-08  F^yy 1.21e-08  F^00 1.10e+00  F^0x 1.29e+00  F^0y 8.95e-01   (|F^xy| up to 1.14, |F^00| up to 1.08)
+(ii) R19-5 Dirac construction (verbatim far(); q_x near +-pi is in the far region), archived D1 root law, m = 0.01
+  full kernel as built               eps=1e-06  max jump M^xy 1.14e+00 M^xx 1.90e+00 M^yy 8.48e-02 M^zz 7.77e-02 M^yz 8.03e-02 M^00 2.06e+00 M^0x 1.76e+00  (|M^xy| up to 0.59)
+  full kernel as built               eps=1e-08  max jump M^xy 1.14e+00 M^xx 1.82e+00 M^yy 9.39e-02 M^zz 7.94e-02 M^yz 8.41e-02 M^00 1.56e+00 M^0x 1.63e+00  (|M^xy| up to 0.61)
+  scattering blocks only (UD -> 0)   eps=1e-06  max jump M^xy 1.03e-07 M^xx 3.26e-07 M^yy 8.76e-08 M^zz 7.41e-08 M^yz 6.44e-08 M^00 1.17e-06 M^0x 5.85e-07  (|M^xy| up to 0.04)
+  scattering blocks only (UD -> 0)   eps=1e-08  max jump M^xy 1.85e-09 M^xx 3.93e-09 M^yy 9.97e-10 M^zz 1.24e-09 M^yz 1.05e-09 M^00 1.55e-08 M^0x 8.46e-09  (|M^xy| up to 0.09)
+(iii) R13-5 check (6) evaluates pair_kernel with k1, k2 of shape (..., 1): d = 1 has only F^{11} (p = e_1, an integer placement), so the off-diagonal half-integer placement was never exercised by that test.

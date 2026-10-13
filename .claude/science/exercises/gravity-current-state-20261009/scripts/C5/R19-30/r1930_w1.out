@@ -1,0 +1,11 @@
+R19-30 (d) W1 after the re-placement; analytic D1(0.909103708, 0.555604226), m = 0.01
+  Dirac full kernel (R19-5 scattering + re-placed pair, PR): generic, |q|_inf in (0.05, pi)                n=150  W1 max 2.42e-15  mu-nu symmetry 1.39e-16
+  Dirac full kernel (R19-5 scattering + re-placed pair, PR): near region |q_j| <= 0.5, no zero component   n=150  W1 max 2.24e-15  mu-nu symmetry 0.00e+00
+  Dirac full kernel (R19-5 scattering + re-placed pair, PR): at the cut, q_x = pi - 1e-9                   n=150  W1 max 1.32e-15  mu-nu symmetry 5.55e-17
+  Dirac full kernel (R19-5 scattering + re-placed pair, PR): at the cut, q_x = -pi + 1e-9                  n=150  W1 max 1.17e-15  mu-nu symmetry 3.93e-17
+  Dirac pair block, time components M^{0nu} across q_l = +-pi (eps = 1e-8): max jump 2.14e-08 (|M^{0nu}| up to 0.68)
+  Dirac M^{0x}, M^{00} (PR re-placed) Fourier max|c_n| n=[32,64) 2.0e-06 [128,256) 6.3e-11 [512,1024) 1.4e-17
+  Dirac M^{0x}, M^{00} (raw UD at R9-9 placement) Fourier max|c_n| n=[32,64) 3.3e-03 [128,256) 8.1e-04 [512,1024) 2.2e-04
+  scalar Upl  (F(q_i)F(q_j)): P1 W1 residual creation 9.93e-16 annihilation 2.26e-15 (4000 random pairs, whole torus) | F^{0nu} Fourier n=[128,256) 3.2e-08 [1024,2048) 3.2e-17
+  scalar E1   (parity-resolved): P1 W1 residual creation 9.93e-16 annihilation 2.67e-15 (4000 random pairs, whole torus) | F^{0nu} Fourier n=[128,256) 1.5e-08 [1024,2048) 2.9e-17
+time 21.4 s

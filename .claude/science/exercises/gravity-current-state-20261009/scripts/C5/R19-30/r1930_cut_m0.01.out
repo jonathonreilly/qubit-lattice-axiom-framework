@@ -1,0 +1,35 @@
+R19-30 cut/Fourier audit, m = 0.01. Scalar G_w(2.5261508, 0.615442); Dirac D1(0.909103708, 0.555604226) (analytic laws).
+scalar f = sigma sigma': max|odd-class part| 1.571, max|even-class part| 1.049 (NN f = sin k would be pure odd)
+Dirac S(k+pi) + S(k): 1.6e-15 ; dW(k+pi) + dW(k): 9.2e-16 ; W(k+pi) + W(k) - W_pi: 7.8e-16  (S, W', W - W_pi/2 are pure odd class)
+== scalar U, R13-5 per-leg kernel as coded (site-label = e^{-iq.p} x per-leg product) ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 2.3e+00/2.5e+00  y: 2.4e+00/2.6e+00  z: 2.3e-07/2.2e-09  |G|max 1.29 | Fourier max|c_n| along k1_x n=[32,64) 7.2e-03 [128,256) 1.7e-03 [512,1024) 4.4e-04 [1024,2048) 2.4e-04 ; along k1_z [1024,2048) 4.8e-18
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 3.7e-06/3.2e-08  y: 3.9e-07/3.7e-09  z: 3.7e-07/3.8e-09  |G|max 1.74 | Fourier max|c_n| along k1_x n=[32,64) 1.0e-03 [128,256) 3.5e-07 [512,1024) 4.7e-13 [1024,2048) 8.6e-17 ; along k1_z [1024,2048) 2.7e-17
+== scalar U, R13-5 per-leg kernel + R19-26 F(q_i)F(q_j) ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.9e-06/1.6e-08  y: 1.7e-06/1.7e-08  z: 2.0e-07/2.2e-09  |G|max 1.19 | Fourier max|c_n| along k1_x n=[32,64) 3.5e-04 [128,256) 1.4e-07 [512,1024) 1.7e-13 [1024,2048) 5.7e-17 ; along k1_z [1024,2048) 2.0e-18
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 2.9e-06/3.0e-08  y: 4.8e-07/3.8e-09  z: 4.3e-07/4.6e-09  |G|max 1.92 | Fourier max|c_n| along k1_x n=[32,64) 1.0e-03 [128,256) 3.5e-07 [512,1024) 4.7e-13 [1024,2048) 8.6e-17 ; along k1_z [1024,2048) 2.7e-17
+== scalar U, E1 midpoint kernel (root off-axis vertex) at R9-9 placement ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.6e+00/1.5e+00  y: 1.8e+00/1.6e+00  z: 7.1e-07/5.8e-09  |G|max 1.85 | Fourier max|c_n| along k1_x n=[32,64) 6.1e-03 [128,256) 1.5e-03 [512,1024) 3.9e-04 [1024,2048) 2.1e-04 ; along k1_z [1024,2048) 4.9e-17
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 3.0e+00/3.0e+00  y: 9.6e-07/1.7e-08  z: 9.6e-07/1.1e-08  |G|max 2.78 | Fourier max|c_n| along k1_x n=[32,64) 7.6e-03 [128,256) 1.9e-03 [512,1024) 4.7e-04 [1024,2048) 2.6e-04 ; along k1_z [1024,2048) 2.8e-17
+== scalar U, E1 midpoint + F(q_i)F(q_j) ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.1e-06/9.8e-09  y: 1.1e-06/9.9e-09  z: 2.7e-07/2.9e-09  |G|max 1.33 | Fourier max|c_n| along k1_x n=[32,64) 3.0e-04 [128,256) 1.8e-05 [512,1024) 1.1e-06 [1024,2048) 2.5e-07 ; along k1_z [1024,2048) 1.5e-17
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 3.3e+00/2.9e+00  y: 1.3e-06/1.2e-08  z: 2.1e-06/2.7e-08  |G|max 2.17 | Fourier max|c_n| along k1_x n=[32,64) 7.6e-03 [128,256) 1.9e-03 [512,1024) 4.7e-04 [1024,2048) 2.6e-04 ; along k1_z [1024,2048) 2.8e-17
+== scalar U, E1 midpoint + parity-resolved re-placement ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 4.1e-06/4.4e-08  y: 3.7e-06/3.7e-08  z: 7.1e-07/4.0e-09  |G|max 1.58 | Fourier max|c_n| along k1_x n=[32,64) 3.7e-05 [128,256) 1.3e-09 [512,1024) 8.8e-17 [1024,2048) 1.1e-16 ; along k1_z [1024,2048) 3.8e-17
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 8.4e-06/8.5e-08  y: 8.6e-07/1.8e-08  z: 5.4e-07/1.3e-08  |G|max 2.06 | Fourier max|c_n| along k1_x n=[32,64) 7.2e-05 [128,256) 2.5e-09 [512,1024) 7.2e-17 [1024,2048) 1.1e-16 ; along k1_z [1024,2048) 2.5e-17
+== Dirac UD as placed in R19-5 r195_dirac_exact.py (UD(kbar) = site-label kernel) ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.2e+00/1.0e+00  y: 1.2e+00/1.1e+00  z: 8.9e-02/8.0e-02  |G|max 0.51 | Fourier max|c_n| along k1_x n=[32,64) 3.4e-04 [128,256) 8.4e-05 [512,1024) 2.2e-05 [1024,2048) 1.2e-05 ; along k1_z [1024,2048) 2.8e-06
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.9e+00/2.1e+00  y: 8.1e-02/9.2e-02  z: 8.2e-02/7.8e-02  |G|max 0.91 | Fourier max|c_n| along k1_x n=[32,64) 4.9e-03 [128,256) 1.2e-03 [512,1024) 3.2e-04 [1024,2048) 1.7e-04 ; along k1_z [1024,2048) 1.3e-17
+== Dirac UD at R9-9 placement, tilde = UD(kbar) (rows convention) ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 9.9e-01/1.0e+00  y: 1.0e+00/1.0e+00  z: 8.3e-02/8.6e-02  |G|max 0.55 | Fourier max|c_n| along k1_x n=[32,64) 1.8e-03 [128,256) 4.4e-04 [512,1024) 1.1e-04 [1024,2048) 6.1e-05 ; along k1_z [1024,2048) 2.8e-06
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 2.0e+00/2.0e+00  y: 8.2e-02/9.0e-02  z: 8.3e-02/7.7e-02  |G|max 0.76 | Fourier max|c_n| along k1_x n=[32,64) 5.1e-03 [128,256) 1.2e-03 [512,1024) 3.2e-04 [1024,2048) 1.7e-04 ; along k1_z [1024,2048) 3.1e-17
+== Dirac UD at R9-9 placement + F(q_i)F(q_j) ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 5.7e-07/6.1e-09  y: 5.8e-07/7.3e-09  z: 7.8e-02/7.4e-02  |G|max 0.46 | Fourier max|c_n| along k1_x n=[32,64) 9.2e-06 [128,256) 4.9e-07 [512,1024) 3.0e-08 [1024,2048) 6.8e-09 ; along k1_z [1024,2048) 4.9e-07
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 2.1e+00/2.1e+00  y: 8.8e-02/8.2e-02  z: 8.3e-02/8.1e-02  |G|max 0.89 | Fourier max|c_n| along k1_x n=[32,64) 5.1e-03 [128,256) 1.2e-03 [512,1024) 3.2e-04 [1024,2048) 1.7e-04 ; along k1_z [1024,2048) 3.1e-17
+== Dirac UD at R9-9 placement + parity-resolved re-placement ==
+  T^xy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.7e-06/1.5e-08  y: 1.7e-06/1.7e-08  z: 4.1e-07/6.5e-09  |G|max 0.49 | Fourier max|c_n| along k1_x n=[32,64) 1.9e-06 [128,256) 5.7e-11 [512,1024) 1.9e-17 [1024,2048) 2.1e-17 ; along k1_z [1024,2048) 1.4e-17
+  T^xz  jump at q_l=+-pi (eps=1e-6/1e-8) x: 1.9e-06/1.3e-08  y: 7.1e-07/1.1e-08  z: 1.7e-06/1.2e-08  |G|max 0.59 | Fourier max|c_n| along k1_x n=[32,64) 1.9e-06 [128,256) 6.6e-11 [512,1024) 1.7e-17 [1024,2048) 1.9e-17 ; along k1_z [1024,2048) 4.7e-17
+  T^yz  jump at q_l=+-pi (eps=1e-6/1e-8) x: 6.5e-07/5.4e-09  y: 1.6e-06/1.4e-08  z: 1.3e-06/1.4e-08  |G|max 0.56 | Fourier max|c_n| along k1_x n=[32,64) 2.1e-07 [128,256) 4.3e-11 [512,1024) 7.8e-18 [1024,2048) 5.8e-18 ; along k1_z [1024,2048) 2.1e-17
+  T^xx  jump at q_l=+-pi (eps=1e-6/1e-8) x: 2.6e-06/1.8e-08  y: 9.7e-07/7.1e-09  z: 9.4e-07/1.1e-08  |G|max 0.70 | Fourier max|c_n| along k1_x n=[32,64) 2.4e-06 [128,256) 1.2e-10 [512,1024) 2.6e-17 [1024,2048) 3.5e-17 ; along k1_z [1024,2048) 3.5e-18
+  T^yy  jump at q_l=+-pi (eps=1e-6/1e-8) x: 7.4e-07/1.8e-08  y: 2.3e-06/2.2e-08  z: 8.0e-07/8.0e-09  |G|max 0.77 | Fourier max|c_n| along k1_x n=[32,64) 8.1e-08 [128,256) 1.6e-11 [512,1024) 3.0e-18 [1024,2048) 3.9e-18 ; along k1_z [1024,2048) 7.2e-18
+  T^zz  jump at q_l=+-pi (eps=1e-6/1e-8) x: 6.7e-07/9.6e-09  y: 5.9e-07/8.6e-09  z: 2.1e-06/2.5e-08  |G|max 0.23 | Fourier max|c_n| along k1_x n=[32,64) 4.8e-07 [128,256) 9.6e-11 [512,1024) 1.8e-17 [1024,2048) 1.7e-17 ; along k1_z [1024,2048) 3.2e-17
+time 2.4 s

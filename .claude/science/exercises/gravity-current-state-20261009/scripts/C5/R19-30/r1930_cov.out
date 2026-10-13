@@ -1,0 +1,2 @@
+scalar E1 tilde kernel, mode raw: max |T(Rk) - s_i s_j T^{pi(i)pi(j)}(k)| over 3000 pairs (1000 at the q_x cut): C4z 1.1e-14, mirror x 9.5e-15, C3(111) 8.9e-16, C2(110) 7.3e-15
+scalar E1 tilde kernel, mode PR : max |T(Rk) - s_i s_j T^{pi(i)pi(j)}(k)| over 3000 pairs (1000 at the q_x cut): C4z 7.3e-15, mirror x 8.0e-15, C3(111) 1.3e-15, C2(110) 7.0e-15

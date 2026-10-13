@@ -8743,3 +8743,41 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **PSI-HAZARD:** nonzero on the root's edges, giving a size above the bound unless ψ̄ψ is an (S_loc) background. Name that price.
   - **OPEN:** otherwise.
 - **Expectation.** PSI-HAZARD if the root uses Wilson-type doubler removal; PSI-ZERO if it uses a chirally symmetric kinetic term (staggered or twisted).
+
+- **Referee records, 2026-10-13 ~07:45Z.** Codex gpt-5.6-sol at xhigh.
+  - **R19-25: NOT CONFIRMED.**
+    - The recorded reading is **WEAK-OBSTRUCTED** for the minimal c-polarized BRST class 𝔅_c. (The worker said OPEN.) A charge in 𝔅_c is either not nilpotent or has empty ghost-0 cohomology, and finite-volume Lie-closure BRST is acyclic.
+    - It is not a universal finite-slot no-go:
+      - slot-linear Gupta–Bleuler evades Lemma J on its vacuum;
+      - Lemma K is not a GB no-go;
+      - approximate covariant truncations remain open.
+    - Correction: 1/(4S−1) is only the N = 2 Gram value.
+    - The 10-slot comparator is confirmed: inertia (6, 4), de Donder kernel (2, 0, 4), P^{00,00} = ½.
+  - **R19-26: CONFIRMED WITH CORRECTIONS. PHOTON-EXACT is met.**
+    - Lemma P is confirmed independently: the flip ratios are +1, −1, +1 for p = 0, ½, 1.
+    - The diagnosis stands. Correction: B_iB_j keeps a half-stencil in the third direction.
+    - F(q_i)F(q_j) is a 16-point planar convolution, not 4-point.
+    - Measured: W1 5e-16, Fourier tail 1.3e-12, root re-solved to 2e-12. μ_E stays at its 5.6e-11 floor.
+    - F is counted as new row-invisible law data.
+  - **R19-27: NOT CONFIRMED. Recorded reading: OPEN** (the worker said V1-RECEIVER).
+    - Per-site counterterms that follow an exact LCP cancel the leading D1 and NN O(λ) state-dependent enthalpy, with no new fitted parameter.
+    - But that is a new conditional law completion that PREVENTS the mismatch. It is not a receiver derived from V1.
+    - "Every BO state" is unsupported.
+    - R19-21's one-point mismatch is completion-dependent; its shear claims are unaffected.
+    - The LI-scheme vev drift is a large but conditional warning.
+  - **R19-28: CONFIRMED WITH CORRECTIONS. B-STILL-WALLED holds on the literal setting** (R10-2; box symbols are part of the fixed setting).
+    - **Box-free:**
+      - the counts 13 = 1 + 3 + 9 hold, with a unique Ward-exact EH kernel, so (Σ) = 11 Ward + Λ + Z with no Lorentz condition;
+      - zero vacuum enthalpy holds only for exactly W(B4)-invariant ground states, not for crossover, thermal or symmetry-breaking states;
+      - the bill is lower only on the formal response/counterterm ledger, not overall.
+    - **R2-4** binds under its full premises. Price: a non-positive sourced measure, or a non-real/non-local bridge.
+    - **R2-5** is OPEN and is a Record-sector cost.
+    - **R2-1 and K2:** the worker said R2-1 is bypassed. That is overstated; both leave the nonlinear completion OPEN.
+
+- **R19-30 (U/UD placement): worker reading UD-LOCAL.**
+  - Neither kernel is local as delivered.
+  - Per-leg U (R13-5) is fixed by F(q_i)F(q_j).
+  - E1 U and UD have mixed offset parity, and no q-only multiplier fixes them (proved). They need a class-resolved re-placement: 8 parity classes, with F per wrong-parity direction (P-R19-30a, counted once with P-R19-26a). With it, W1 ≤ 2.7e-15, the rows are unchanged, and the kernel is covariant to 1e-14.
+  - **Side finding:** R19-5's Dirac code puts the pair block without its placement phase. This shifts face1 by +1.11e-2 per field at m = 0.3 (≈ +0.29 on the face1 total), and the O_h relation fails by ~1e-2. The other rows are unchanged.
+
+  Referee running.

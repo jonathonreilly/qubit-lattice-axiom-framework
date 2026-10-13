@@ -1,0 +1,8 @@
+R19-30 Lemma P recheck: explicit lattice operators, symbols on the infinite lattice (one translation cell)
+  nn     declared at p = 0.5 : |G(q) - G(q - 2pi)| max 1.67e-15 (|G| ~ 1.99)  | Fourier |c_n| n in [64,128) 1.5e-17  [512,1024) 6.1e-17  [1024,2048) 4.7e-17
+  nnn    declared at p = 0.0 : |G(q) - G(q - 2pi)| max 1.30e-15 (|G| ~ 1.40)  | Fourier |c_n| n in [64,128) 1.6e-17  [512,1024) 5.3e-17  [1024,2048) 5.3e-17
+  nnn    declared at p = 0.5 : |G(q) - G(q - 2pi)| max 2.80e+00 (|G| ~ 1.40)  | Fourier |c_n| n in [64,128) 5.2e-03  [512,1024) 6.6e-04  [1024,2048) 3.6e-04
+  mixed  declared at p = 0.5 : |G(q) - G(q - 2pi)| max 2.80e+00 (|G| ~ 3.34)  | Fourier |c_n| n in [64,128) 5.2e-03  [512,1024) 6.6e-04  [1024,2048) 3.6e-04
+  mixed  declared at p = 0.0 : |G(q) - G(q - 2pi)| max 3.97e+00 (|G| ~ 3.34)  | Fourier |c_n| n in [64,128) 3.6e-03  [512,1024) 4.6e-04  [1024,2048) 2.5e-04
+  fixed  declared at p = 0.5 : |G(q) - G(q - 2pi)| max 1.99e-15 (|G| ~ 3.29)  | Fourier |c_n| n in [64,128) 4.2e-17  [512,1024) 8.5e-17  [1024,2048) 8.3e-17
+expected: nn@1/2, nnn@0, fixed@1/2 representative-independent (local); nnn@1/2, mixed@1/2, mixed@0 not (1/n tails)

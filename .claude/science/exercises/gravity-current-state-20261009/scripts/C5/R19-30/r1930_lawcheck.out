@@ -1,0 +1,3 @@
+Dirac: max|S-S_arch| 6.7e-15 |S'-S'_arch| 0.0e+00 |W-W_arch| 1.7e-11 |W'-W'_arch| 4.5e-09  W_pi 0.355203582236 vs 0.355203582219
+scalar: max|sigma - sigma_arch| 1.0e-10  |sigma' - sigma'_arch| 4.6e-10
+scalar f = sigma sigma' at +-pi: 0.0e+00 0.0e+00 (flat zero)

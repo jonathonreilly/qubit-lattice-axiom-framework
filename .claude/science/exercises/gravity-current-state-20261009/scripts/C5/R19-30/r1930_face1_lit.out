@@ -1,0 +1,4 @@
+s = 0.200 : [Pi_lit(+) - Pi_rows]/s^2 = +1.105055e-02 ; [Pi_lit(-) - Pi_rows]/s^2 = +1.105055e-02
+s = 0.100 : [Pi_lit(+) - Pi_rows]/s^2 = +1.108926e-02 ; [Pi_lit(-) - Pi_rows]/s^2 = +1.108926e-02
+s = 0.050 : [Pi_lit(+) - Pi_rows]/s^2 = +1.109900e-02 ; [Pi_lit(-) - Pi_rows]/s^2 = +1.109900e-02
+s = 0.025 : [Pi_lit(+) - Pi_rows]/s^2 = +1.110144e-02 ; [Pi_lit(-) - Pi_rows]/s^2 = +1.110144e-02

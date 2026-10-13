@@ -1,0 +1,9 @@
+toy p=0.0: Mtilde(+pi)/Mtilde(-pi)=+1.000000000+0.000000000i; restored jump 0.00e+00
+toy p=0.5: Mtilde(+pi)/Mtilde(-pi)=-1.000000000+0.000000001i; restored jump 1.76e-26
+toy p=1.0: Mtilde(+pi)/Mtilde(-pi)=+1.000000000-0.000000002i; restored jump 0.00e+00
+F stencil identity max error 3.38e-16; numerical q^4 coefficient -0.023436719 (target -0.023437500)
+R19-16: raw jump 1.310001203e+00; restored-periodic jump 7.490683965e-01; projected M02 raw 2.525562139e-01; independent W1 4.99e-16
+repaired: raw jump 1.310001203e+00; restored-periodic jump 2.505716263e-08; projected M02 raw 2.903543496e-09; independent W1 4.99e-16
+fresh cubic covariance max error 6.66e-16
+R19-16 Fourier bands: [32,64] 5.277e-03; [128,256] 9.792e-04; [512,900] 2.693e-04
+repaired Fourier bands: [32,64] 1.958e-03; [128,256] 1.833e-05; [512,900] 3.609e-09

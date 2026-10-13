@@ -6678,3 +6678,59 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **New price:** P-r18-1a.
 
   Referee running.
+
+### C5 Round 18, items 6–7 (pre-registered 02:45Z, before launch)
+
+**R18-6. One source bridge for everything? Are (S), (d-i) and completion N jointly consistent?**
+- **Plain question.** S23 reads every remaining unpriced item as a question about the source/observable bridge that the axioms leave open (`AX:85-90,187`). The separately refereed candidate pieces are:
+  - (S): C = E₀, "the lowest state weighs nothing" (R17-3, R17-7);
+  - (d-i): the vacuum enthalpy is exchanged with site creation (R17-11);
+  - completion N: the metric record is sourced by total stress, gravity's own included (R16-14).
+
+  Written as one bridge — what gravitates, and how the metric is read from records — are they consistent together? In particular:
+  - (S) subtracts e₀ while N adds gravity's own energy. Does N's gravitational-energy source include a vacuum part that (S) must also subtract?
+  - (d-i) needs √h fixed per site with site creation, while set A (where N was posed) is a continuum.
+- **Setting.**
+  - Two arenas:
+    - set C-box with site creation (P52) and the R14-5 E-sector;
+    - set A (continuum, records-as-metric).
+  - State the bridge as equations: the source T_eff, the metric readout, the exchange current.
+  - Linear plus second order (enough for β and for the Lemma-S test).
+  - Excluded: active compensation; superluminal edges.
+- **Prior art (count once):** R16-14 and its verdict; R17-3, R17-7 and R17-11 with their verdicts; R13-6 and R15-2 (set A); R14-5 and R15-1; S23 §§1.0, 4.
+- **Removed hypothesis:** the bridge pieces were each tested alone.
+- **Probes.**
+  - (a) Write the combined bridge in each arena, or show that a piece cannot be posed there (e.g. (d-i) in set A).
+  - (b) Check Bianchi consistency at second order, β = 1, Λ̃ = 0 under P93, and no Lemma-S channel.
+  - (c) Count the independent stipulated sentences and numbers.
+  - (d) Prices.
+- **FIXED readings.**
+  - **JOINT-CONSISTENT:** an explicit combined bridge in a stated arena satisfying (b), with its sentence count. Checked.
+  - **JOINT-CONFLICT:** a refereed demonstration that two of the pieces cannot hold together in a stated arena.
+  - **OPEN:** otherwise.
+- **Expectation.** JOINT-CONSISTENT in C-box with site creation (N's gravitational-energy source is Λ-free once e₀ is subtracted). (d-i) cannot be posed in set A, so set A needs pairing or a tuning for the enthalpy.
+
+**R18-7. Set A's completion N as a construction: a well-posed, CP, records-as-metric law with β = 1?**
+- **Plain question.** R16-14 (refereed) shows that a metric linear in matter records fails Mercury. Completion N (a total-stress, Landau–Lifshitz-type source) formally restores β = 1, but it is "a new, uncompleted nonlinear source/action bridge", and E2 lacks a sink action. Can set A's E1 route be completed with:
+  - a nonlinear record readout that is well-posed as an initial-value problem at O(G²);
+  - complete positivity (CP) of the record/measurement map;
+  - consistency with the R16-4 initial-TT datum (P88);
+  - β = 1 and γ = 1, with the R13-6/R15-2 noise kernel intact?
+- **Setting.**
+  - The E1 model (R13-6 repaired gain, R15-2 channels, P88 zero datum).
+  - Post-Newtonian order O(G²).
+  - The record source is total stress (matter + Landau–Lifshitz pseudotensor, or an equivalent, gauge stated).
+  - Excluded: E2; strong field.
+- **Prior art (count once):** R16-14 and its verdict, R16-4, R15-2, R13-6, R12-4, R6-4; Landau–Lifshitz and the post-Minkowskian iteration (RECALLED).
+- **Removed hypothesis:** a metric linear in records.
+- **Probes.**
+  - (a) The O(G²) iteration with recorded sources: does it close? Is the readout a well-defined functional of records plus P88?
+  - (b) CP of the composite (nonlinear) measurement map, at least at Gaussian order.
+  - (c) β, γ, and the noise-fed corrections at O(G²).
+  - (d) Does premise (iii) (non-radiative noise gravitates) become forced?
+  - (e) Prices.
+- **FIXED readings.**
+  - **CONSTRUCTED:** an explicit E1 + N law at O(G²) with a well-posed readout, CP at Gaussian order, and β = γ = 1. Checked.
+  - **OBSTRUCTED:** a refereed demonstration that no records-as-metric readout in a stated class gives β = 1 with CP.
+  - **OPEN:** otherwise.
+- **Expectation.** CONSTRUCTED at O(G²) with the gauge-dependence of the LL source as the main caveat, and premise (iii) forced. That would make R15-2's constraint-energy overshoot live again.

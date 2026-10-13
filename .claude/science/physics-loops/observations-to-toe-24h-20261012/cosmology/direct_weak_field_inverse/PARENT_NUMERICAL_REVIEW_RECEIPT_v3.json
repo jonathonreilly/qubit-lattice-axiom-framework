@@ -1,0 +1,1506 @@
+{
+  "created_at": "2026-10-13T11:10:40.035261+00:00",
+  "scope": "Parent read complete affected v3 report and original full report/method; all affected receipt paths verified. No positive science rerun.",
+  "receipt_sha256": "97fb67aa43e4bffa01ce923da6a97eff4368814ebf8e3d1a07853746538ea3a4",
+  "verified_unique_paths": 371,
+  "parent_v3_counts": {
+    "passed": 2043,
+    "failed": 0
+  },
+  "independent_affected_counts": {
+    "passed": 5076,
+    "failed": 0
+  },
+  "mutant_failures": [
+    21,
+    1
+  ],
+  "all_fresh_input_hashes_pass": true,
+  "scientific_sections_unchanged": true,
+  "verified_paths": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/HAND_DERIVATION_v1.md",
+      "sha256": "be32c0394625ed6a246a81cf2b87ed842e2edac49d0afe974dbe129af1df71c2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.diff",
+      "sha256": "6e12455ef7c3fa12c366ca76eb5dc89795373e63239b266c8a7bc02181bccfa1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/NUMERICAL_DETAILS_v1.md",
+      "sha256": "14c3ad3e740cf7da60ca24436363028839b9a2c475de5f23ccdb4b42c46f0056"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/OUTPUT_CONTROL_CORRECTION_v3.diff",
+      "sha256": "b66ce7ca91c7fcf4c635bce1af9668309def52a5d99e28bbfbd214c506ac8f7e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/OUTPUT_CONTROL_CORRECTION_v3.json",
+      "sha256": "5f43e09942a2a40d94682529e96d8c656dfc7371ef73d2fb40064958caee16d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/PROTOCOL_v1.json",
+      "sha256": "c50eca656f9efbd4010a2fdeacdf98e7130820ed7e4680df7a4b2b56b76a3d9c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/SCIENTIFIC_OUTPUT_IDENTITY_v3.json",
+      "sha256": "ce1979a25e86d40f7c92e1806f0c883162c0580a9aba8dda94bfbcfbdbc503c9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/check_weak_field_inverse_v1.py",
+      "sha256": "ac6c5ee62b1951f6a224f48dde3da0b21280f5be293dada048ab1d7173703507"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "6a155c3c849c9783a3cffb8c1bc0dcdd5d3044ba193ac372e09c12530b821fc6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/check_weak_field_inverse_v3.py",
+      "sha256": "0882f0cd194aec4ce1295118ea034907dcfe25e65267429db4faa5b213433b56"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/EXECUTION.json",
+      "sha256": "8f50d4f5a947b0b2c7414c6a4d5e8442887208ae0ee72d318fdcc5cb89b6b97e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/FREEZE.json",
+      "sha256": "fff65e775850ca5ac208e520f5021fa2510886d29a5aa12fd21257ee4aab439e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/LAUNCH.json",
+      "sha256": "dd1f3af93c8f32da11aec0ca7abf4324daac0870b777fa153c0f86dbb63fdef1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v1.md",
+      "sha256": "be32c0394625ed6a246a81cf2b87ed842e2edac49d0afe974dbe129af1df71c2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.diff",
+      "sha256": "6e12455ef7c3fa12c366ca76eb5dc89795373e63239b266c8a7bc02181bccfa1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/NUMERICAL_DETAILS_v1.md",
+      "sha256": "14c3ad3e740cf7da60ca24436363028839b9a2c475de5f23ccdb4b42c46f0056"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/PROTOCOL_v1.json",
+      "sha256": "c50eca656f9efbd4010a2fdeacdf98e7130820ed7e4680df7a4b2b56b76a3d9c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/source_snapshot/direct_weak_field_inverse/check_weak_field_inverse_v1.py",
+      "sha256": "ac6c5ee62b1951f6a224f48dde3da0b21280f5be293dada048ab1d7173703507"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/stderr.txt",
+      "sha256": "face3b94816fa0b7771a77f47353c8592acd52afc25194d016747caadde1379e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v1/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/EXECUTION.json",
+      "sha256": "7d8cadf62f9d54980b4c9af91bc2716326757d4b1c7a211652d81340b7495833"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/FREEZE.json",
+      "sha256": "52c18f7109b114943def9a3de158c72a13e8422d7c27311cdd3da92879a35e5a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/LAUNCH.json",
+      "sha256": "ec15692327a8172b2d2bc0f2afee58ed93d59bb0094d63adbaa36639852cbb04"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/RESULTS.json",
+      "sha256": "bd4f6c8877d5837512d2abd4ef245e1e59526e9c5615d4921382b0d565158320"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/source_snapshot/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "6a155c3c849c9783a3cffb8c1bc0dcdd5d3044ba193ac372e09c12530b821fc6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v2/stdout.txt",
+      "sha256": "3a68d97ebd6b966cc1e39bd4a9303c1c0ae53814a0eed89a12e9640ff849398c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/EXECUTION.json",
+      "sha256": "b2a8c215d71d3b7c11d738a86d72ff45f7829b98bb27d2593fd0f8e21e35a48f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/FREEZE.json",
+      "sha256": "ca3290f205e9548366f62a13347230047c7c38780b953202e3653de545b5bcf3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/LAUNCH.json",
+      "sha256": "0502dde2bf5cc5ed6fb5cf973f220b4b3d5af1754ec6fb9c0312aad3fdc89d6c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/RESULTS.json",
+      "sha256": "45682309b8818f24a2d66fc7345578bc113b4ef039d9e6928248f275b8e02a65"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/OUTPUT_CONTROL_CORRECTION_v3.json",
+      "sha256": "5f43e09942a2a40d94682529e96d8c656dfc7371ef73d2fb40064958caee16d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/source_snapshot/direct_weak_field_inverse/check_weak_field_inverse_v3.py",
+      "sha256": "0882f0cd194aec4ce1295118ea034907dcfe25e65267429db4faa5b213433b56"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/evidence_v3/stdout.txt",
+      "sha256": "18155526bee3898d65984386e9aa5cdfdb28c9323dd7b5af748a60d190d64ea8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/AUTHOR_FREEZE_CLOSURE_v1.json",
+      "sha256": "301556f82337d6c4b9a0454f6c2633b1f025984b94cddcf23bd3fbd26f5a7cdb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/DISTANCE_AND_BAND_CONTROLS_v1.json",
+      "sha256": "239e5be261874f5c0f106cb14e006b3ab56d956f2e1c253ab9183334446d0b99"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/FINAL_PROCESS_CHECK_v1.json",
+      "sha256": "afaba990a754d04bb61171dc19662f95427428dbbb5fcad7deb35e2806c3e2cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/FINAL_RECEIPT_v1.json",
+      "sha256": "d7ad800ade245f6cf3f9fb706e088823628397a78304baa050ba65462726fa74"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/INDEPENDENT_CALCULATION_NOTE_v1.md",
+      "sha256": "0ecfb66e217aeb76dcddd2414755f1818360d06578eb29c3572c346892f70313"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/INDEPENDENT_EXECUTION_v1.json",
+      "sha256": "f1d848932a1443d6c87633d2886cf89a2b83f39ba4a8726c47ede766957b51ec"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/INDEPENDENT_LAUNCH_v1.json",
+      "sha256": "d76d3422fbbb09fdd2dd1627c23e611cd119b30000ff545e1f305d4038076b02"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/INDEPENDENT_NUMERICAL_REVIEW_v1.md",
+      "sha256": "387fdc32777b561c99fb22e0f25745cf2174a5c4e23a13d7da9a286fa90954f5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "87d7315e0e552b580832c92ddc7fa42f8ae5da4beb0465454df38f03086618ca"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/INDEPENDENT_SCIENTIFIC_REFERENCE_v1.json",
+      "sha256": "caaa8559089d239e941536fc00c848193948ae24633c9180fa067f7ba87b9c24"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/MUTANT_OUTPUT_COMPARISON_v1.json",
+      "sha256": "b9027c90b8fc59b0d154098078258f7c63ff8e392b29e5a4809d396ed586810d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/MUTATION_PLAN_v1.json",
+      "sha256": "0714e7ead67d6f575d48efe9b9f3dddea90784cce677507067844a71de9c2822"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/MUTATION_RESULTS_v1.json",
+      "sha256": "cb3e143be16eb58c2ae239b1683a5774f9656378e3e35ff88c86d77ec59c4c7d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/PRIMARY_READING_RECORD_v1.json",
+      "sha256": "c07401a3133e8a195b68f1e4a04e200bfb5b43914a9f84f45cde551b9d4f5c09"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/READING_LEDGER_v1.json",
+      "sha256": "ee0c06995faca95efdb6d75cabe763c50373cbb65ba344622d3670b308715b2c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/SOURCE_FREEZE_v1.json",
+      "sha256": "78a2b0f7d2623f19c5a9f3778d1d30e4ebf46ca73f50ee53dfb17b01343dbe4f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/V1_V2_HISTORY_CHECK_v1.json",
+      "sha256": "056e12a578b6fda9296ec4449b09b2189dacac22a08d6253103c170dd34de3a8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/AFFECTED_CHECK_RESULTS_v1.json",
+      "sha256": "49c83c9cd2a0e69b3386a621b2452ce46ffd330e0e72fbcab833bf0c620cc9a3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/AFFECTED_V3_REVIEW_v1.md",
+      "sha256": "2a1aa31e3d5a1dc02dd55dca350c764b33b1e4b3eb67a3051800c11128a25943"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/FINAL_PROCESS_CHECK_v1.json",
+      "sha256": "ad8e325e0eca3e3761bbc03ee6ff5b058c5d2cf865146353ff2366ffc0d2a08a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/FINAL_RECEIPT_v1.json",
+      "sha256": "97fb67aa43e4bffa01ce923da6a97eff4368814ebf8e3d1a07853746538ea3a4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/INDEPENDENT_RATIONAL_OUTPUT_CONTROLS_v1.json",
+      "sha256": "54dc5ace657d05deb9696933e1a2d29edf76ba2fac7068d943db3a86c8a4ce63"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/MUTATION_EVIDENCE_VERIFICATION_v1.json",
+      "sha256": "752d2a8f7ec6110c345d9d0edf2e2071640695dfa7ea365ff59565284d8a060f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/MUTATION_PLAN_v1.json",
+      "sha256": "ded5d6bce7b73209d8b6203db93de1e672401b2705a42ebfb022b105641bfbb3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/MUTATION_RESULTS_v1.json",
+      "sha256": "102f2b8040182ce288fb8c8692b778c1c27cdbd82a585e50a4b355031016d462"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/READING_LEDGER_v1.json",
+      "sha256": "932b27d6268f32a1b709100fd4b4912ff8b88db1711e495e6182495db5743d43"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/REVIEW_EXECUTION_v1.json",
+      "sha256": "40ca88ae1abccbdd503a6030fed4722a5e99052cbbd6a92c3ae3b1522bce581f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/SOURCE_FREEZE_v1.json",
+      "sha256": "2e0a38c00f75c8df5a6d16cc00713516bf7238e8fa981487552fe56db9ca8e41"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/affected_check_stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/affected_check_stdout_v1.txt",
+      "sha256": "a2661b587096901287d2de53e0da49fa49812041a1a7a8a1bc14c381ff907e38"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/finalize_receipt_v1.py",
+      "sha256": "8a54a0e40f3cff36afbc6b084e9aecebd2b20b28369dccf00130ee8999a20370"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutation_stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutation_stdout_v1.txt",
+      "sha256": "9be60c3cf2ea65a99d879f2fd6ae814e4dccc5150d930f71d0644c5813b9dca4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutation_verification_stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutation_verification_stdout_v1.txt",
+      "sha256": "fcca26258721c58247042573374076265dbffd2b1b6e0fb0d2d86a7f0246e72d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/EXECUTION.json",
+      "sha256": "580035c9ba4012df155087ab6a3ecb520e67fd1fd58ecbd3b284cc57c72f3784"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/FREEZE.json",
+      "sha256": "0d27a0224edc9b8aea434bfcc94b16f30ad94e5116849f3c5b91fe5098c9a2a5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/LAUNCH.json",
+      "sha256": "01b5f05101cf65ed6008045a782d83fa6cf800533a3fe966875b931a5df12dee"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/MUTATION.diff",
+      "sha256": "05536f2e55cf13b1a9b545e9fdba77a420791ebcdbe854aa93581ac5931da2ad"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/RESULTS.json",
+      "sha256": "503409f59118b7f32049fe1421c75379f47d807ad357d12b27e1a66747000833"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/OUTPUT_CONTROL_CORRECTION_v3.json",
+      "sha256": "5f43e09942a2a40d94682529e96d8c656dfc7371ef73d2fb40064958caee16d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/check_weak_field_inverse_v3.py",
+      "sha256": "0485e78635dd532fbae396678e76bf66cb253518ca3f46b4e8f75c24de6a1cb2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m5_all_band_memberships_true/stdout.txt",
+      "sha256": "597a964431b20a4d422da609ac010d8ac825760e3eea0e3ba6a700fbc050e546"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/EXECUTION.json",
+      "sha256": "d4b43e958daffb7cf3e2398671083e9cb91cc0db198994bc5c8e57f8ce78d57b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/FREEZE.json",
+      "sha256": "d4713d016ab8ab754b1c8ab3ff568649ff6cd490c0f2564e69acb2657d56b691"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/LAUNCH.json",
+      "sha256": "4e6d3c9ab97a7d3a6fb50b913b97863f1587a3d7c447569fc4e190dd0e1880ee"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/MUTATION.diff",
+      "sha256": "a96edf36de53bb4bd92d49dd4d8110506f77115818769922a3f57eec8e21a78e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/RESULTS.json",
+      "sha256": "3cd86b59db4330b909b3519750710ad92b37dd606f3b34aaf9287b692a008491"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/OUTPUT_CONTROL_CORRECTION_v3.json",
+      "sha256": "5f43e09942a2a40d94682529e96d8c656dfc7371ef73d2fb40064958caee16d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/check_weak_field_inverse_v3.py",
+      "sha256": "f54c036f737fe7f6bdc5c2234a5d67eeb4dddf6f3e53a95134cb7d2439b9975f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/mutations/m6_omit_singular_records/stdout.txt",
+      "sha256": "cdea86e23f731bc2530b6f245ef0b81499679fb129cf4ee44e0baa091bd4dd70"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/run_two_mutations_v1.py",
+      "sha256": "edbe5e6c42dcff9fa38d199c1791e155d05432602ea56aa51cb457a9e2c57c19"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/OUTPUT_CONTROL_CORRECTION_v3.diff",
+      "sha256": "b66ce7ca91c7fcf4c635bce1af9668309def52a5d99e28bbfbd214c506ac8f7e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/OUTPUT_CONTROL_CORRECTION_v3.json",
+      "sha256": "5f43e09942a2a40d94682529e96d8c656dfc7371ef73d2fb40064958caee16d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/SCIENTIFIC_OUTPUT_IDENTITY_v3.json",
+      "sha256": "ce1979a25e86d40f7c92e1806f0c883162c0580a9aba8dda94bfbcfbdbc503c9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/check_weak_field_inverse_v2.py",
+      "sha256": "6a155c3c849c9783a3cffb8c1bc0dcdd5d3044ba193ac372e09c12530b821fc6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/check_weak_field_inverse_v3.py",
+      "sha256": "0882f0cd194aec4ce1295118ea034907dcfe25e65267429db4faa5b213433b56"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v2/EXECUTION.json",
+      "sha256": "7d8cadf62f9d54980b4c9af91bc2716326757d4b1c7a211652d81340b7495833"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v2/FREEZE.json",
+      "sha256": "52c18f7109b114943def9a3de158c72a13e8422d7c27311cdd3da92879a35e5a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v2/RESULTS.json",
+      "sha256": "bd4f6c8877d5837512d2abd4ef245e1e59526e9c5615d4921382b0d565158320"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/EXECUTION.json",
+      "sha256": "b2a8c215d71d3b7c11d738a86d72ff45f7829b98bb27d2593fd0f8e21e35a48f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/FREEZE.json",
+      "sha256": "ca3290f205e9548366f62a13347230047c7c38780b953202e3653de545b5bcf3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/LAUNCH.json",
+      "sha256": "0502dde2bf5cc5ed6fb5cf973f220b4b3d5af1754ec6fb9c0312aad3fdc89d6c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/RESULTS.json",
+      "sha256": "45682309b8818f24a2d66fc7345578bc113b4ef039d9e6928248f275b8e02a65"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/OUTPUT_CONTROL_CORRECTION_v3.json",
+      "sha256": "5f43e09942a2a40d94682529e96d8c656dfc7371ef73d2fb40064958caee16d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/source_snapshot/direct_weak_field_inverse/check_weak_field_inverse_v3.py",
+      "sha256": "0882f0cd194aec4ce1295118ea034907dcfe25e65267429db4faa5b213433b56"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/evidence_v3/stdout.txt",
+      "sha256": "18155526bee3898d65984386e9aa5cdfdb28c9323dd7b5af748a60d190d64ea8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/independent_numerical_review/INDEPENDENT_NUMERICAL_REVIEW_v1.md",
+      "sha256": "387fdc32777b561c99fb22e0f25745cf2174a5c4e23a13d7da9a286fa90954f5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/independent_numerical_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "87d7315e0e552b580832c92ddc7fa42f8ae5da4beb0465454df38f03086618ca"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/independent_numerical_review/MUTATION_PLAN_v1.json",
+      "sha256": "0714e7ead67d6f575d48efe9b9f3dddea90784cce677507067844a71de9c2822"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/independent_numerical_review/MUTATION_RESULTS_v1.json",
+      "sha256": "cb3e143be16eb58c2ae239b1683a5774f9656378e3e35ff88c86d77ec59c4c7d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/snapshots/inherited/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/verify_affected_v3.py",
+      "sha256": "97a94f6965d7d5543cd16d5f27e024f0317ffe9f27f69e43d5cd69338fdf732d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/affected_v3/verify_mutation_evidence_v1.py",
+      "sha256": "733ad0311f4ecfa61c4a27f5149701bf0f190799983b758d9977316f878386cf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/independent_recompute_v1.py",
+      "sha256": "b43cb087932a88cc803dc35be9f2f738195c8dc3be75754ce4ef44d5d18051e7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/independent_stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/independent_stdout_v1.txt",
+      "sha256": "77954cc6ad09296e596f89174f61c1483fb0b914e9af877b70fca451c7d8a9ec"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/EXECUTION.json",
+      "sha256": "fe45111bda773515899c7a874be968b68170c426bb88eb9bdb01a3633e89ce2b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/FREEZE.json",
+      "sha256": "a7fdfa0a43b88cfa272f7beee6cb979f0d27f991ecec74bc11802032489e6813"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/LAUNCH.json",
+      "sha256": "25b48944692ae732c4c2c3ade8387cc02f9fdab32bc9a2aedf3b7e9cc7f18d34"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/MUTATION.diff",
+      "sha256": "bbd3dfa99bc11a1c4be91fd69016c97d690c60330a7c3702597cef27e19c53d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/RESULTS.json",
+      "sha256": "69ac3c81b761ece780adfc9cd3a65aee22307d8caee331f77c1b29c0897814e1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/sources/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "9cbe6f7d5eb615f82b0b074e246ef0d46bbce72046ccf8c257edcd3763d3f245"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m1_omit_scalar_coordinate_normalization/stdout.txt",
+      "sha256": "a1ffe8d7a8bf963d8a5abe9f3e6c5d212ee14eac85e4cd0a53451af14a54d693"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/EXECUTION.json",
+      "sha256": "651c157115804109fb224a8be8b27e7eeccacb1b0abb37c551a7d2098ea9f682"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/FREEZE.json",
+      "sha256": "a41e2eb2c1461538399da60d468c99b4f1bcac0a455f8ca6bbcbc90277d4f527"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/LAUNCH.json",
+      "sha256": "22f93c68afa64cc84dc5372c9dfb148b412459fa607bfd3258b23402aa0635dc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/MUTATION.diff",
+      "sha256": "d179db9187b61f94d0c6506403390aa8ea5c42acbb5b1f805b534c72f6840254"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/RESULTS.json",
+      "sha256": "7d900e9f8204168db697a6dfdb29b7df5b3a9de717f7189208a85b39979fa54f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/sources/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "8bc77ce3d91fc16b254007c84d536e95ff9d36afa0eb45a339698166966b743c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m2_confuse_betaD_with_delta_beta/stdout.txt",
+      "sha256": "4e44a51d980b6fe15f1e3c979032c8a79a30b5b94a0e35f54968783c2ed2e33f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/EXECUTION.json",
+      "sha256": "bcf42d68137029d55c1122d2003fa8accb120e1f46347834b2789ec418133d96"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/FREEZE.json",
+      "sha256": "f9be60ca5c546d4a6c873db672684fa58c1272fcd69c4256a76ac7c72a947563"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/LAUNCH.json",
+      "sha256": "04347b92071ba2ec75adb264d807b0e2e32a9fca10fa7bb33a578687ca1ee062"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/MUTATION.diff",
+      "sha256": "cac252f792a0fd03bf5a72a1dea99b5449d1e7c280f3dce38e4a46603decb633"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/RESULTS.json",
+      "sha256": "17c602f57ecb0546a501c62384aee7e174cd9703a4f567bd402846d2a93fb463"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/sources/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "9af55cb19f5cc3db509819146bb3dcce9cc9bb234f27968aa70d083a8666a1c8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m3_fixed_k_G_derivative/stdout.txt",
+      "sha256": "aa3879e2cc0a4d3da459914371b73680105d33bb8cdfc0bc409a81e305d384f7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/EXECUTION.json",
+      "sha256": "69822bae88b445c3b395388dc808c527ebbeccaf13b7df20f28b36e2ccf9ea88"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/FREEZE.json",
+      "sha256": "3bf23a132a0170210068b5d6d66f82e72fda73116883938b350f78e7ec7eeb71"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/LAUNCH.json",
+      "sha256": "45995180332c95136ba132cdcfcb1f0660764afee12fa7e1edf38d439c698cdc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/MUTATION.diff",
+      "sha256": "00a1d00d04e9c484a2bedcb0238fd7ecfccc297176aac5474a3dcd7bae466766"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/RESULTS.json",
+      "sha256": "2402e4e07c11ed8f9c22ec31f478aaa7f4065acb7cd8cce7bb2895c3d2f76f8a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/sources/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "a2b5708e066d163041c256a59599befd91e489c57b46d47d249639e76b9ebea5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m4_drop_excluded_forward_rows/stdout.txt",
+      "sha256": "364320994a8e3ec4f0664c21032112d4c2093371c931a4f326f178c253f28f34"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/EXECUTION.json",
+      "sha256": "0f2820ba37b4e9a4a5d9cae9f885354545288f8526952fe5429ebed7d55d5224"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/FREEZE.json",
+      "sha256": "6ceab7918f65a20917e4ac46171668348cdbe1d7e4638e982ca6d43d1fd1fcb0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/LAUNCH.json",
+      "sha256": "8a1f75538062fc198aaaa618675431e3c1215286bfdbd14470e5e6be1106cef6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/MUTATION.diff",
+      "sha256": "0c06248da182c31859b812ebea7de1ee4c9c46b402bf742f289a75349ed31d39"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/RESULTS.json",
+      "sha256": "d86db90043f4b53aae503711a618ef9c83ae0c17f8684738d7149ac678f7960d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/sources/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "f2252d778ab2e27a0b7e8654d099022f811b880beb78c4a4137bdd4714c7a7f5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m5_all_band_memberships_true/stdout.txt",
+      "sha256": "3a68d97ebd6b966cc1e39bd4a9303c1c0ae53814a0eed89a12e9640ff849398c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/COMPLETE.json",
+      "sha256": "ad1ed6243ea081e7d97d9e7bf7443870a40e1ea693c6c7fb4a35354451f1de93"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/EXECUTION.json",
+      "sha256": "59888845a3bf3fc9cb68dd3c353baad2424497e1d23af45b86d7fae8b2dab191"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/FREEZE.json",
+      "sha256": "43ea5bc8060f7e22b0979c66d8714739afbc04ad7d831918b48e4037c6b5efa3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/LAUNCH.json",
+      "sha256": "1637061ad9516629fc237b179b226932104a0d2d835b458ba281d1aed15034e1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/MUTATION.diff",
+      "sha256": "1326921fdbf80c6607162d2aae6e492ae895baafc02ab40f7ec69fdb1f559d0d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/RESULTS.json",
+      "sha256": "a7bf25659f3965660080ab5f9d33b2d9d53f5bfbecd1374254d04599b8012573"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/sources/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "37c1a31ede14626419bd20d4c17076503d18e402f72afcec301279e7147b4289"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/mutations/m6_omit_singular_records/stdout.txt",
+      "sha256": "3a68d97ebd6b966cc1e39bd4a9303c1c0ae53814a0eed89a12e9640ff849398c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/run_mutations_v1.py",
+      "sha256": "900d57fba89591156e439c7b11d7ca9ce16603a5364eaae2f7466c09a51cba2a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/EXECUTION.json",
+      "sha256": "8f50d4f5a947b0b2c7414c6a4d5e8442887208ae0ee72d318fdcc5cb89b6b97e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/FREEZE.json",
+      "sha256": "fff65e775850ca5ac208e520f5021fa2510886d29a5aa12fd21257ee4aab439e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/LAUNCH.json",
+      "sha256": "dd1f3af93c8f32da11aec0ca7abf4324daac0870b777fa153c0f86dbb63fdef1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v1.md",
+      "sha256": "be32c0394625ed6a246a81cf2b87ed842e2edac49d0afe974dbe129af1df71c2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.diff",
+      "sha256": "6e12455ef7c3fa12c366ca76eb5dc89795373e63239b266c8a7bc02181bccfa1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/NUMERICAL_DETAILS_v1.md",
+      "sha256": "14c3ad3e740cf7da60ca24436363028839b9a2c475de5f23ccdb4b42c46f0056"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/PROTOCOL_v1.json",
+      "sha256": "c50eca656f9efbd4010a2fdeacdf98e7130820ed7e4680df7a4b2b56b76a3d9c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/source_snapshot/direct_weak_field_inverse/check_weak_field_inverse_v1.py",
+      "sha256": "ac6c5ee62b1951f6a224f48dde3da0b21280f5be293dada048ab1d7173703507"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/stderr.txt",
+      "sha256": "face3b94816fa0b7771a77f47353c8592acd52afc25194d016747caadde1379e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v1/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/EXECUTION.json",
+      "sha256": "7d8cadf62f9d54980b4c9af91bc2716326757d4b1c7a211652d81340b7495833"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/FREEZE.json",
+      "sha256": "52c18f7109b114943def9a3de158c72a13e8422d7c27311cdd3da92879a35e5a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/LAUNCH.json",
+      "sha256": "ec15692327a8172b2d2bc0f2afee58ed93d59bb0094d63adbaa36639852cbb04"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/RESULTS.json",
+      "sha256": "bd4f6c8877d5837512d2abd4ef245e1e59526e9c5615d4921382b0d565158320"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/source_snapshot/direct_weak_field_inverse/check_weak_field_inverse_v2.py",
+      "sha256": "6a155c3c849c9783a3cffb8c1bc0dcdd5d3044ba193ac372e09c12530b821fc6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/evidence_v2/stdout.txt",
+      "sha256": "3a68d97ebd6b966cc1e39bd4a9303c1c0ae53814a0eed89a12e9640ff849398c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/CANONICAL_DISTANCE_ADDENDUM_v1.md",
+      "sha256": "ecd4487e25f63128028c0d320c010f0a2010cf29b9e7920c3122f76d90d32309"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/CANONICAL_ENDPOINT_CORRECTION_v2.diff",
+      "sha256": "ec5b6aadbe04cee2820ebb97e85f3cedf749769408f5370f39705a73a9ca63ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/CANONICAL_ENDPOINT_CORRECTION_v2.json",
+      "sha256": "0689760fdaec76ce6810fc4a93e3260b895fe755bbd0dc22471c202cd04885d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/HAND_DERIVATION_v1.md",
+      "sha256": "be32c0394625ed6a246a81cf2b87ed842e2edac49d0afe974dbe129af1df71c2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/HAND_SCOPE_CORRECTION_v2.diff",
+      "sha256": "6e12455ef7c3fa12c366ca76eb5dc89795373e63239b266c8a7bc02181bccfa1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/HAND_SCOPE_CORRECTION_v2.json",
+      "sha256": "088dbb6eaf4358ae3e6d113ade8f57d2cad8c62b94aac208c1c3cee68d4aa34f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/NULL_CURVATURE_ADDENDUM_v1.md",
+      "sha256": "87e5a73fb04937b309905c9625f7655f881525ac6b30c56a065724c9a71dda79"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/NUMERICAL_DETAILS_v1.md",
+      "sha256": "14c3ad3e740cf7da60ca24436363028839b9a2c475de5f23ccdb4b42c46f0056"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/NUMERICAL_DETAILS_v2.md",
+      "sha256": "8e3e0fcd27dde658788f2b923a4afc5194c83d328f95d52babf4e9a3349edd82"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/PROTOCOL_v1.json",
+      "sha256": "c50eca656f9efbd4010a2fdeacdf98e7130820ed7e4680df7a4b2b56b76a3d9c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/PROTOCOL_v2.json",
+      "sha256": "625162f5d4162da494541f046bbe6ebe41a03525a85e1a2ff126adfd73effe0e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/check_weak_field_inverse_v1.py",
+      "sha256": "ac6c5ee62b1951f6a224f48dde3da0b21280f5be293dada048ab1d7173703507"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_files/check_weak_field_inverse_v2.py",
+      "sha256": "6a155c3c849c9783a3cffb8c1bc0dcdd5d3044ba193ac372e09c12530b821fc6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/independent_numerical_review/snapshots/parent_inputs/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    }
+  ]
+}

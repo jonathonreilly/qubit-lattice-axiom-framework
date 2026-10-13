@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T10:51:39.002938+00:00",
+  "keys": [
+    "scope",
+    "forward",
+    "inverse",
+    "singular",
+    "null_family",
+    "null_finite_differences",
+    "observation_bands",
+    "diagnostic"
+  ],
+  "all_scientific_values_identical": true,
+  "v2_sha256": "bd4f6c8877d5837512d2abd4ef245e1e59526e9c5615d4921382b0d565158320",
+  "v3_sha256": "45682309b8818f24a2d66fc7345578bc113b4ef039d9e6928248f275b8e02a65"
+}

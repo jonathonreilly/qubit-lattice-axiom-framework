@@ -117,3 +117,15 @@ Curvature v2 fully checked:9605 parent,21325 affected independent,3 prior surviv
 Deliver AN review PR with exact gate/source receipts. Finish weak-field implementation review and checkpoint endpoint/null response calculations. Reconstruct a consistent observed dust/radiation history with the induced curvature term, exposing any extra kinetic/potential assumptions and q-variation changes.
 
 Historical summaries remain exposed development comparisons, no joint likelihood. Finite local scalar distance is a property of this supplied metric, not a derived quantum cutoff. Deadline unchanged16:53Z, discovery cutoff16:38Z.
+
+## Analytic milestone delivered 2026-10-13T10:52:50.910648+00:00
+
+PR9514 OPEN, attached and verified at75d8f001c8e055acd91383e3e088ead76f1851f2; tree9ae2ad5a matches independent final confirmation, successful UNIT_v2/cache and actual combined validation. Complete final evidence recovery committed/pushed in campaign4f349b09c2aff65dc9e55c9e040175c091b32b61. Earlier helper-timing deviation explicit in source, report and PR. No merge or audit.
+
+## Direct-author continuation 2026-10-13T11:17:41.641697+00:00
+
+Weak-field v3 fully checked:2043 parent,6498 original and5076 affected independent; all science unchanged, actual survivor mutations now fail21/1,243+371 parent path identities. Parent curvature-fluid action5795/0; explicit b independent of a repairs ideal normalization by calibration, no thermal fit. Four full histories agree below4e-11; both focused checks active.
+
+Personally implement the electron-pair thermal transition and test the full coupled history at fixed constants; finish curvature-fluid independent checks and package a constructive milestone.
+
+Fixed deadline16:53Z and discovery cutoff16:38Z unchanged. Retired/cancelled authors absent. Independent handwritten checker encountered a remote stream disconnect and was resumed from preserved evidence; no research-model change or author replacement.

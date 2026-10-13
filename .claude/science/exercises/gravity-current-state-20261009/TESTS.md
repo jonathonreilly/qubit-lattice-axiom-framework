@@ -8217,3 +8217,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Evaluator fact on record:** the archived tabulated photon law used by R18-9, R18-13 and R19-9 differs from the stated law by up to 1.9e-9 in c.
 
   Referee running.
+
+### C5 Round 19, item 23 (pre-registered 06:13Z, before launch)
+
+**R19-23. Are the five Ward-violating cone rows physical observables or prescription artefacts?**
+- **Plain question.**
+  - R19-19 (worker; referee running) shows by exact linear algebra (Lemma G) that, under the full linearized-diffeo Ward identity, only an isotropic graviton speed shift is allowed. The other five rows (E_g − T₂g birefringence, face1's K₆ part, face2 − T₂g, μ_E and μ_T2) are Ward violations of the vacuum response.
+  - Two readings follow:
+    - (i) the rows are real, gauge-invariant effects of a grid that breaks the graviton's gauge symmetry, and observable, e.g. as GW birefringence or a graviton mass;
+    - (ii) the rows are artefacts of a matter–graviton coupling that is not consistently gauge-completed at second order (W2 is excluded on the lattice by W15).
+  - If (ii) holds, the physical bill drops to one row: the isotropic speed. If (i) holds, these rows signal extra propagating graviton polarizations or gauge-symmetry breaking, which is constrained independently.
+- **Setting.**
+  - R9-9's N-type graviton (state whether its gauge group is full or spatial-only).
+  - The SM root's vacuum response Π.
+  - Gauge-invariant observables: GW phase velocity per polarization from the full quadratic action (graviton kinetic term plus Π); the number of propagating modes (does Ward violation add scalar or vector modes?); the static potential between sources.
+  - Linear order, one loop.
+- **Prior art (count once):**
+  - R19-19 (Lemma G, worker), R19-15 and its verdict, R19-5 and its verdict (W1 exact, W2 not);
+  - R16-5, R17-5 and R17-8 (W15);
+  - R13-5;
+  - Fierz–Pauli / vDVZ and massive-gravity mode counting (RECALLED).
+- **Removed hypothesis:** the rows read directly as observables.
+- **Probes.**
+  - (a) The quadratic action graviton plus Π, its propagating modes and their dispersion for each polarization.
+  - (b) Which rows change a gauge-invariant observable, and which are removable by field redefinition or gauge choice.
+  - (c) The extra modes, if any, and their coupling to matter.
+  - (d) Bill consequences.
+- **FIXED readings.**
+  - **PHYSICAL:** a demonstration that the five rows change gauge-invariant observables (polarization-dependent speeds, masses, or extra modes). Checked, and refereed if class-wide.
+  - **ARTEFACT:** a demonstration that the five rows are removable, or do not enter any gauge-invariant observable at linear order. Checked, and refereed.
+  - **OPEN:** otherwise.
+- **Expectation.** PHYSICAL. Ward violations in a graviton self-energy generically give mass terms and extra polarizations (Fierz–Pauli logic), so the rows are observable and the bill stands. The extra modes may themselves be a new wall: a vDVZ-type discontinuity or a ghost.

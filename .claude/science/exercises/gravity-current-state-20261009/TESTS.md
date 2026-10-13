@@ -8791,3 +8791,21 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Price:** P-R19-29a, λ_nn ≠ 0 (an inequality).
 
   Referee running.
+
+**R19-35. Compute λ_nn: the vacuum's degree-0 bulk (longitudinal) graviton entry at the root.** (Pre-registered 2026-10-13 07:45Z.)
+- **Plain question.** R19-29 (worker) makes face1 hold if λ_nn ≠ 0. The bubble part is −25.9, and λ_nn would vanish only if the seagull bulk entry were exactly +6.47. Compute the seagull/measure bulk entry and λ_nn at the root, and its sign and size. Also: does any registered completion, such as (S\*) or (Σ), force λ_nn = 0?
+- **Setting.**
+  - R18-13's root vertices: U, UD, VW and the ultralocal seagull, with SM species weights as in R19-29.
+  - The bulk strain Hessian of the vacuum energy at zero momentum, with the bubble and seagull together.
+  - The Dirac rows' convention.
+- **Prior art (count once):** R19-29 (worker; referee running), R19-23, R18-13, R17-4 (P-Tad), R19-15 (S\*) and R19-20 (Σ).
+- **Probes.**
+  - (a) The seagull bulk entry per species.
+  - (b) λ_nn total, with its N-convergence.
+  - (c) Whether (S\*) or (Σ) sets the degree-0 bulk entry to zero. Lemma E: (Σ)'s linear part includes mass-like pieces.
+  - (d) The consequence for face1 under each reading.
+- **FIXED readings.**
+  - **LNN-NONZERO:** λ_nn ≠ 0, with |λ_nn| ≥ 0.1 × |bubble| at the root, under the bare law, and not forced to zero by any registered completion.
+  - **LNN-ZERO-FORCED:** a registered completion forces λ_nn = 0. Name it; face1 then shifts.
+  - **OPEN:** otherwise.
+- **Expectation.** LNN-NONZERO under the bare law; LNN-ZERO-FORCED under (Σ), because (Σ) imposes the GR Ward identity, which forbids a degree-0 longitudinal mass. That would put face1 in R19-29's shifted branch whenever (Σ) is adopted.

@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-10-13T01:41:33.152340+00:00",
+  "checks": {
+    "before_hash": true,
+    "after_hash": true,
+    "complete_recorded_diff_exact": true,
+    "old_executed_note_preserved": true,
+    "no_other_original_changes": true
+  },
+  "original_paths_changed": [
+    "DIRECT_CHARGE_RECONSTRUCTION.md"
+  ],
+  "new_source_sha256": "bc695597af77e0d90d60a67b2765d4a49e27806a652b7da3cd6986f47094cd17",
+  "correction_record_sha256": "3c8333b8f0cdeabf5955ecc1e1706dab4c5f99d5276508ae82b14e9aaf991253",
+  "qualified_math_confirmed": true,
+  "scientific_reason": "For a singlet compensator T3=0, Q0=Y/(2h). A nonzero Q0 forbids a vev preserving that U(1); nonzero Y alone does not. The displayed common-charge Majorana and Weinberg obstruction remains."
+}

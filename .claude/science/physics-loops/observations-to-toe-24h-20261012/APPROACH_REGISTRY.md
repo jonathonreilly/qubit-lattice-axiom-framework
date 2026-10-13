@@ -44,3 +44,12 @@ metric are declared imports; no native-gravity or TOE conclusion.
 ## 2026-10-13T01:08:26.524489+00:00 direct routes
 
 Tensor/scalar common-action route independently checked in its weak circular scope; source-body and microscopic origin remain open. Scalar vacuum clock route links the same static coefficient to an explicit two-center source and logical readout; quantum/state premises exposed, independent check active. Next route: observed charge pattern and neutrality to anomaly/Yukawa family, testing added right-handed neutrinos and compact charge-lattice assumptions without assuming exact neutrino neutrality.
+
+### Equilibrium-envelope source reconstruction
+
+Target: replace a specified missing body's scalar sensitivity. Approach:
+energy-envelope and constrained-Hessian identities, solved hydrostatic density
+profiles, radial pulsation energy and exterior multipole flux. Parent proof
+and numeric controls complete; independent focused check active. Strongest
+result is conditional b=alpha(1-2s); remaining obligations are microscopic
+matter, relativistic/compact matching, real sources and likelihoods.

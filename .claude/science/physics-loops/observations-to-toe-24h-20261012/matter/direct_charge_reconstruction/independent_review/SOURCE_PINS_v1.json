@@ -1,0 +1,114 @@
+{
+  "root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/matter/direct_charge_reconstruction",
+  "created_utc": "2026-10-13T01:30:52.588502+00:00",
+  "sources": [
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "e26d96fdbd030756ed9cefebd725ca61f45dbf60d9613b9462d9e7745d1f5457",
+      "bytes": 1195,
+      "snapshot": "snapshots_v1/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": "DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "bytes": 15712,
+      "snapshot": "snapshots_v1/DIRECT_CHARGE_RECONSTRUCTION.md"
+    },
+    {
+      "path": "FREEZE.json",
+      "sha256": "588adaa35c82b88f3d410b86c06145c4e52983bc40b0fbb0fba5ee984ac29186",
+      "bytes": 225,
+      "snapshot": "snapshots_v1/FREEZE.json"
+    },
+    {
+      "path": "OBSERVATION_INPUTS.json",
+      "sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "bytes": 2019,
+      "snapshot": "snapshots_v1/OBSERVATION_INPUTS.json"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "bytes": 4734,
+      "snapshot": "snapshots_v1/PROTOCOL.md"
+    },
+    {
+      "path": "RESULTS_AND_SCOPE.md",
+      "sha256": "c78918d9c2590d573ed000befd57abb9ffeeae5f15cc393c8cfcfac09b356cda",
+      "bytes": 5498,
+      "snapshot": "snapshots_v1/RESULTS_AND_SCOPE.md"
+    },
+    {
+      "path": "SOURCE_LEDGER.json",
+      "sha256": "eb0a6a0bca3631f97b57021cf10b66820c4a19419c48f9bd6fd83276181ffdd7",
+      "bytes": 8483,
+      "snapshot": "snapshots_v1/SOURCE_LEDGER.json"
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "9e1325ec34ce41ae27449e104ac80f9aae9e02e04792e4a730c27b77393f89e6",
+      "bytes": 798,
+      "snapshot": "snapshots_v1/TRACE_GATE.md"
+    },
+    {
+      "path": "check_charge_reconstruction.py",
+      "sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "bytes": 13314,
+      "snapshot": "snapshots_v1/check_charge_reconstruction.py"
+    },
+    {
+      "path": "evidence_v1/EXECUTION.json",
+      "sha256": "e7f0a0b262a2066fed96c1d5e6e3ce9de24aedb4a97297c6410d6a68cc3724f2",
+      "bytes": 504,
+      "snapshot": "snapshots_v1/evidence_v1/EXECUTION.json"
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "sha256": "61ec63f12a8716860474f83df8505be284863bedcca9813fa41b4ad93a056b57",
+      "bytes": 849,
+      "snapshot": "snapshots_v1/evidence_v1/FREEZE.json"
+    },
+    {
+      "path": "evidence_v1/RESULTS.json",
+      "sha256": "ac71a7b637410ef061f19906e7d1a6a92f874549ecf2a879dc1cf3e5a3a9bc7d",
+      "bytes": 216940,
+      "snapshot": "snapshots_v1/evidence_v1/RESULTS.json"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "bytes": 15712,
+      "snapshot": "snapshots_v1/evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "bytes": 2019,
+      "snapshot": "snapshots_v1/evidence_v1/source_snapshot/OBSERVATION_INPUTS.json"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "bytes": 4734,
+      "snapshot": "snapshots_v1/evidence_v1/source_snapshot/PROTOCOL.md"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "bytes": 13314,
+      "snapshot": "snapshots_v1/evidence_v1/source_snapshot/check_charge_reconstruction.py"
+    },
+    {
+      "path": "evidence_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "snapshot": "snapshots_v1/evidence_v1/stderr.txt"
+    },
+    {
+      "path": "evidence_v1/stdout.txt",
+      "sha256": "f9b4069c332a4d99269208f2101ed29010bebb18024915a4ecbcdd4fecd4db6d",
+      "bytes": 315,
+      "snapshot": "snapshots_v1/evidence_v1/stdout.txt"
+    }
+  ]
+}

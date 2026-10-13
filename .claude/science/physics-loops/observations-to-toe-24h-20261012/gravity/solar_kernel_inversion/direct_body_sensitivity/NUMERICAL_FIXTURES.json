@@ -1,0 +1,24 @@
+{
+  "written_before_first_execution": true,
+  "polytrope_indices": [1.0,1.5,2.0,2.5],
+  "initial_G_J": [0.000001,0.0001,0.001],
+  "M_b":1.0,"R_initial":1.0,"c":1.0,
+  "zeta_steps":[0.001,0.0005,0.00025],
+  "Lane_Emden_max_steps":[0.03,0.015],
+  "radial_displacements_even_polynomial_coefficients":[[1],[0,1],[1,1],[1,-1,1]],
+  "K":[[1.4,0.2],[0.2,0.9]],
+  "alpha_direction":[0.6,-0.8],
+  "f_for_binary_examples":0.0002,
+  "binary_profile_pairs":[
+    {"G_J":0.000001,"n1":1.0,"n2":1.0},
+    {"G_J":0.000001,"n1":1.0,"n2":2.5},
+    {"G_J":0.0001,"n1":1.0,"n2":1.5},
+    {"G_J":0.0001,"n1":1.5,"n2":2.0},
+    {"G_J":0.001,"n1":1.0,"n2":2.5},
+    {"G_J":0.001,"n1":2.0,"n2":2.5}
+  ],
+  "orbital_v_over_c":[0.00001,0.00003,0.0001],
+  "orbital_phases":16,
+  "sphere_quadratures":[[12,24],[24,48]],
+  "interpretation":"Synthetic equilibrium bodies and their separately leading exterior radiation channels; no actual Earth/Moon profiles or complete post-Newtonian binary power."
+}

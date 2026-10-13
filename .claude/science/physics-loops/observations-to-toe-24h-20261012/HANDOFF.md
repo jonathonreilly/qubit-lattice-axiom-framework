@@ -136,3 +136,44 @@ Campaign continues through local failures. At16:38Z stop new discovery and
 write FINAL_REPORT.md; at16:53Z stop owned research, summarize checked results,
 failures, assumptions, gaps and PRs, then pause the existing heartbeat using
 runtime AUTOMATION.json. Do not restart retired or cancelled campaigns.
+
+## Latest direct-author checkpoint — 2026-10-13 02:14 UTC
+
+The earlier pending wording above is historical. Charge review is complete:
+parent read full report/derivation, checked53 unique source/evidence paths and
+adopted the one narrow scalar-vev correction. All1216 independent checks pass.
+See matter/direct_charge_reconstruction/CHECKED_OUTCOME.md.
+
+Parent personally completed gravity/solar_kernel_inversion/direct_body_sensitivity.
+For supplied fixed-baryon Newtonian equilibrium, G_J=G_*A^2(1+a),
+b=alpha(1-2s),s=-U_G/(M c^2). The envelope derivative distinguishes gravitational
+energy from total binding. Stable-branch and actual radial polytropic proofs
+are supplied. The source charge controls both differential free fall and scalar
+dipole radiation; the channel sum is explicitly not a full next-order binary
+power calculation. First execution failed on one missing direction-vector
+operand; exact frozen source/error/correction preserved. v2 passes2818checks,
+12 profiles,48 radial controls and18 binary cases with576 sphere evaluations.
+Historical LLR summary stays exposed and unrefitted: Delta=-8.90e-10 f, with
+endpointf=.0004 giving1.82857 reported uncertainties. No confidence bound or
+actual Earth/Moon profile reconstruction. /root/direct_field_check reviews only
+this block's independent_review/; do not edit its pinned inputs casually.
+
+Metric/clock canonical source review is complete. Parent read full report;
+all164 unique identities match. Fourteen actual isolated source mutations
+(one/family) fail with AssertionError. After narrow trace/review metadata,
+fresh cache passes and328 staged paths have clean vocabulary/syntax/diffs.
+Tree c41c2cd4729ecdd57483ed62a782ec859cd47c52, initial HEAD2f451838,
+base currentmain516cb69d. /root/direct_quantum_visibility_review is confirming
+final metadata and original constituent mapping in runtime metric_milestone/
+final_identity_review_v3. No full pipeline or PR yet. Parent owns remaining
+unit preflight/cache and one disposable combined gate, then verified attached
+regular PR. Original source and EOF artifacts are losslessly preserved.
+
+The original clock CHECKED_OUTCOME wording about six independent refinements
+is too broad: reviewer reproduced98 channels and32 oscillators, but inspected
+the six author refinements. The underlying immutable report and canonical note
+are accurate; the narrower interpretation is now explicit in delivery records.
+
+No conflicting retired/cancelled author process was found at this checkpoint.
+Only direct parent and focused check agents act; no new background author.
+The original fixed deadline/packaging cutoff and no-merge/audit rules remain.

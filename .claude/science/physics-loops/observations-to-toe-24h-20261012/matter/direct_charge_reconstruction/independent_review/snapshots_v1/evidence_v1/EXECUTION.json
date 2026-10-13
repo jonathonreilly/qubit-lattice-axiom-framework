@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-13T01:21:55.626108+00:00",
+  "ended_at": "2026-10-13T01:21:56.388849+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/observations-to-toe-24h-20261012/matter/direct_charge_reconstruction/check_charge_reconstruction.py"
+  ],
+  "returncode": 0,
+  "error": null,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_unchanged": true
+}

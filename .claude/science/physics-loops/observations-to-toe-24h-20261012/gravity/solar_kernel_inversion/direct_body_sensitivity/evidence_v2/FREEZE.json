@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-13T02:03:13.161873+00:00",
+  "files": {
+    "PROTOCOL.md": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+    "NUMERICAL_FIXTURES.json": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+    "OBSERVATION_INPUTS.json": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+    "DIRECT_BODY_SENSITIVITY.md": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+    "check_body_sensitivity.py": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c"
+  },
+  "original_failed_execution": "../evidence_v1"
+}

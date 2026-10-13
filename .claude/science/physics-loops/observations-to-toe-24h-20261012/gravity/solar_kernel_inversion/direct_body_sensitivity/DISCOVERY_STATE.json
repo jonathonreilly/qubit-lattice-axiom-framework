@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-13T01:50:10.144183+00:00",
+  "author": "direct parent",
+  "phase": "parent calculation complete; prepare focused independent check",
+  "deadline": "2026-10-13T16:53:00.057432+00:00",
+  "protocol_hash": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+  "numerical_execution_started": true,
+  "executions": [
+    {
+      "version": 1,
+      "exit_code": 1,
+      "cause": "missing angular contraction operand"
+    },
+    {
+      "version": 2,
+      "exit_code": 0,
+      "checks": 2818
+    }
+  ],
+  "last_updated": "2026-10-13T02:05:05.070284+00:00"
+}

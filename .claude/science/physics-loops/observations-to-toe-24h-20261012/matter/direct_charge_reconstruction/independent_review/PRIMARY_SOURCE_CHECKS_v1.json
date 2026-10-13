@@ -1,0 +1,61 @@
+{
+  "checked_utc": "2026-10-13T01:45:51.116552+00:00",
+  "external_exact_files": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011.pdf",
+      "bytes": 2443256,
+      "sha256": "9b7347b92bb417e5da019a355b0d681838a31ea8a47dbf8350d0c13d27a0312f",
+      "matches_parent_record": true,
+      "copied_to_review": false
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011_page_13.png",
+      "bytes": 207369,
+      "sha256": "7bc1149abf692816faaba1c4efaa1b5d82a943a5e871af7dcc0ec0f124de0717",
+      "matches_parent_record": true,
+      "copied_to_review": false
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011_page_2.png",
+      "bytes": 212266,
+      "sha256": "32d6aecb0ca6abc46969b69a67bb7499983cba07f13cdd26a0cdc64ca6c59c1a",
+      "matches_parent_record": true,
+      "copied_to_review": false
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011_page_3.png",
+      "bytes": 174168,
+      "sha256": "9b4a1ae33c276879cd23bcbcc0337c82fc37969c1ca4d89ea7c8c1a24419548c",
+      "matches_parent_record": true,
+      "copied_to_review": false
+    }
+  ],
+  "reads": [
+    {
+      "url": "https://doi.org/10.1103/PhysRevD.37.3107",
+      "scope": "Primary abstract only; reported neutron mean/uncertainty checked. No fulltext read claimed.",
+      "independent_web_access": "success for abstract",
+      "parent_fulltext_failure_preserved": true
+    },
+    {
+      "url": "https://arxiv.org/pdf/1102.2766v2",
+      "scope": "Existing local PDF text on pages 1,2,3,13; existing images of pages 2,3,13 viewed. Page1 v2 identifier confirmed. Molecular response, neutrality premise, nominal counts and polarity summary checked. Other pages not fully read or acoustic PDE rederived.",
+      "independent_web_access": "success; version metadata and matching displayed text",
+      "primary_pdf_or_page_written_to_review": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/hep-ph/9209259",
+      "scope": "Targeted text: initial one-generation/Yukawa/anomaly discussion and Dirac relation near Eq28. Full18-page read not claimed. Independent charge algebra does not rely on a borrowed verdict."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1705.01853v2",
+      "scope": "Targeted Section3 center generator and Z2/Z3 character discussion; full18-page read or all line-operator classification not claimed. Center phases independently derived."
+    }
+  ],
+  "prior_repository_notes": {
+    "role": "Source ledger read; previous status not promoted or independently audited.",
+    "parent_pin": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "new_prior_note_runner_executions": 0
+  },
+  "new_empirical_inputs_or_fits": 0
+}

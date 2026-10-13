@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "kind": "scientific wording finding",
+      "original_source_sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "location": "DIRECT_CHARGE_RECONSTRUCTION.md original lines111-112",
+      "finding": "Nonzero hypercharge alone does not forbid a photon-preserving scalar vev.",
+      "independent_counterexample": "The stated H has Y=h and a Q0-neutral lower component.",
+      "disposition": "Resolved by parent, singlet/nonzero-Q0 qualification; original bytes and exact diff preserved.",
+      "final_note_sha256": "bc695597af77e0d90d60a67b2765d4a49e27806a652b7da3cd6986f47094cd17"
+    },
+    {
+      "kind": "parent primary-source access failure",
+      "source": "Baumann1988 fulltext endpoint",
+      "recorded_failure": "InternalError",
+      "disposition": "Preserved explicitly. Reviewer also relies only on primary abstract for the neutron summary."
+    },
+    {
+      "kind": "review tool output truncation",
+      "finding": "One combined runner/large-result display exceeded output budget.",
+      "disposition": "Runner completely reread and bounded schema displayed; every frozen row then independently consumed. No table silently omitted."
+    }
+  ],
+  "independent_execution_failures": [],
+  "expected_negative_controls_are_not_failed_executions": true,
+  "unresolved_material_findings": []
+}

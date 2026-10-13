@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-13T02:03:13.075901+00:00",
+  "failure": "First frozen execution exited1 in scalar angular quadrupole contraction: the second unit-vector operand was missing. No result JSON was created.",
+  "old_sha256": "b6c1a5b041bcc6248a09c22aa3f47d2a5921be3a22ef4050780c4211a2c5ed57",
+  "new_sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+  "original_recovery": "evidence_v1/source_snapshot/check_body_sensitivity.py",
+  "fix": "Supply both direction vectors for n_i I_ij n_j; no equation, input, protocol, fixture or tolerance changed.",
+  "diff": "--- v1\n+++ v2\n@@ -218,7 +218,7 @@\n     d2 = -mu*r*omega**2*np.outer(b1-b2, radial)\n     bq = (m2*b1+m1*b2)/(m1+m2)\n     dip = points@d2.T\n-    quad_amplitude = 0.5*np.einsum(\"ni,ij,nj->n\", points, third)[:, None]*bq\n+    quad_amplitude = 0.5*np.einsum(\"ni,ij,nj->n\", points, third, points)[:, None]*bq\n     norm = lambda field: np.einsum(\"ni,ij,nj->n\", field, Kinv, field)\n     dipole = gs/(4*PI)*np.dot(weights, norm(dip))\n     scalar_quad = gs/(4*PI)*np.dot(weights, norm(quad_amplitude))\n"
+}

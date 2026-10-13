@@ -1,14 +1,16 @@
 # Ranked science opportunities
 
-Direct parent author; fixed deadline unchanged. Primary work remains here.
+Direct parent author; original fixed deadline and ownership unchanged.
 
-| Rank | Next question | Evidence and scope |
+| Rank | Question and discriminator | Evidence value and scope |
 |---|---|---|
-| 1 | Reconstruct a tensor/scalar action constrained by observed bending, polarization and timing | New supplied covariant action; derive source conservation, positive modes, physical readout and shared circular radiation map. Protocol frozen. |
-| 2 | Complete source-body structure and charge sensitivity | Nonconformal material finding shows why weak self-gravity alone does not eliminate dipole. No compact-star inference before a body model. |
-| 3 | Connect gravity to quantum matter, gauge and cosmological observations | Common parameters and actual material/readout bridges remain missing; choose a linked reconstruction rather than a detached fit. |
-| 4 | Recover intrinsic pressure from actual HI products |144 measured-product chords checked; beam/3D velocity/source reconstruction still required. |
-| 5 | Nonlinear extension of homogeneous vector response | Direction/background formation and characteristics open; no transfer of homogeneous theorem to fits. |
+| 1 | Derive finite-body scalar charges from equilibrium and compare Earth-Moon free fall | Replaces the explicit zero-sensitivity source input for a specified weak material model; links static bending, material response and dipole radiation. Parent block started. |
+| 2 | Connect charge reconstruction to physical matter and common gravity parameters | Exact anomaly/mixing/global-lattice family now checked; real source charge, quantum trace response and common parameter origins remain unsupplied. |
+| 3 | Infer a cosmological history from the same action and actual expansion/growth observations | Distinguishes a shared theory from disconnected fits; must track state/potential/matter imports. No cosmological fit started. |
+| 4 | Recover intrinsic pressure from actual HI products |144 measured-product chords checked; beam,3D velocity and source reconstruction are the hard remaining empirical inputs. |
+| 5 | Nonlinear extension of homogeneous vector response | Direction/background formation and characteristics open; no transfer of homogeneous theorem into nonlinear galaxy fits. |
 
-Conformal and nonconformal optical/source blocks are checked and preserved.
-Matter milestone final package validation runs alongside direct research.
+The common metric/clock canonical port repeats all2431 numeric source values;
+focused port review and final packaging run beside direct research. Earlier
+conformal/nonconformal alternatives remain preserved with their limitations.
+This ranking values missing physical bridges, not additional check or PR counts.

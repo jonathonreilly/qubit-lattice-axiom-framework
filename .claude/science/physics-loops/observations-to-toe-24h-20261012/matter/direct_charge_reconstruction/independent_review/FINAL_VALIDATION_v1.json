@@ -1,0 +1,147 @@
+{
+  "checked_utc": "2026-10-13T01:46:45.885715+00:00",
+  "source_checks": [
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "DIRECT_CHARGE_RECONSTRUCTION.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "FREEZE.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "OBSERVATION_INPUTS.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "PROTOCOL.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "RESULTS_AND_SCOPE.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "SCALAR_COMPENSATOR_CORRECTION_v2.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "SOURCE_LEDGER.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "check_charge_reconstruction.py",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/EXECUTION.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/RESULTS.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/stderr.txt",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/stdout.txt",
+      "final_hash_matches": true,
+      "recovery_hash_matches": true
+    }
+  ],
+  "source_inventory_complete": true,
+  "source_count": 19,
+  "new_authored_text_eof": [
+    {
+      "path": "FAILURES_AND_RESOLUTIONS_v1.json",
+      "single_final_newline": true
+    },
+    {
+      "path": "SOURCE_PINS_v1.json",
+      "single_final_newline": true
+    },
+    {
+      "path": "CHARGE_RECONSTRUCTION_REVIEW.md",
+      "single_final_newline": true
+    },
+    {
+      "path": "original_dispositions_v1.json",
+      "single_final_newline": true
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "single_final_newline": true
+    },
+    {
+      "path": "AFFECTED_SOURCE_CONFIRMATION_v2.json",
+      "single_final_newline": true
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_v1.json",
+      "single_final_newline": true
+    },
+    {
+      "path": "independent_charge_checks_v1.py",
+      "single_final_newline": true
+    },
+    {
+      "path": "PRIMARY_SOURCE_CHECKS_v1.json",
+      "single_final_newline": true
+    },
+    {
+      "path": "execution_v1/EXECUTION.json",
+      "single_final_newline": true
+    }
+  ],
+  "independent_script_matches_executed_snapshot": true,
+  "result_script_identity_matches": true,
+  "reported_checks_all_passed": true
+}

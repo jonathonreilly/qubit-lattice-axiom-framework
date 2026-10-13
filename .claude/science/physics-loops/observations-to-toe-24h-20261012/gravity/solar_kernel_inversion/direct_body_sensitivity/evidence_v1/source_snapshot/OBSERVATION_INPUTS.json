@@ -1,0 +1,37 @@
+{
+  "source_url": "https://arxiv.org/pdf/gr-qc/0411113",
+  "source_version": "gr-qc/0411113v2; Phys Rev Lett93 261101 (2004)",
+  "read_scope": "Substantive primary text through conclusions; relevant pages2,3 rendered and inspected. Final reference-page end not needed. No raw normal points or ephemeris likelihood.",
+  "LLR_total_EP": {
+    "Earth_minus_Moon_mean": "-1.0e-13",
+    "reported_uncertainty": "1.4e-13",
+    "equation": 5,
+    "role": "Exposed development comparison, no fit in principal comparison"
+  },
+  "geophysical_self_energy_difference": {
+    "Earth_minus_Moon": "-4.45e-10",
+    "equation": 3,
+    "role": "Supplied physical body-model coefficient; no uncertainty or independent density reconstruction supplied in this block"
+  },
+  "scalar_force_fraction": {
+    "earlier_working_interval": [
+      "0",
+      "1/2500"
+    ],
+    "frozen_prediction_grid": [
+      "0",
+      "0.0001",
+      "0.0002",
+      "0.0004"
+    ],
+    "role": "Unchanged earlier exposed weak-bending working interval, not a confidence level"
+  },
+  "dependent_summaries_not_new_data": [
+    "The paper SEP estimate combines its Eq5 with an external composition test.",
+    "Its eta estimate reuses that SEP estimate and Eq3.",
+    "The Cassini-derived beta estimate is not imported."
+  ],
+  "extra_composition_force_assumed_zero_in_principal_candidate": true,
+  "free_nuisance_variant_required": true,
+  "blind_holdout": false
+}

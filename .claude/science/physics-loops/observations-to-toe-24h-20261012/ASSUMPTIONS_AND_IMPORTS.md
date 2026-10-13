@@ -142,3 +142,14 @@ coupling fixes vacuum amplitude only after the state/action assumptions.
 The previous exposed gamma rectangle gives illustrative SI sizes, not a new
 confidence bound. Classical matched Gaussian noise has identical longitudinal
 visibilities. No quantum-noise identification or total gravity bound.
+
+### Finite material source, added October13
+
+Direct-body sensitivity supplies fixed baryon number/entropy, Newtonian
+barotropic energy, proper nongravitational parameters independent of ambient
+scalar, isolated nonrotating equilibrium, no extra long-range force and
+effective-action matching m_*=A E_eq/c^2. These assumptions partially replace
+zero residual sensitivity only for this weak model; they do not close compact
+matter or a native microscopic origin. Historical geophysical Earth/Moon
+energy difference is an imported coefficient, distinct from measured LLR EP.
+An arbitrary nonuniversal composition nuisance would leave f degenerate.

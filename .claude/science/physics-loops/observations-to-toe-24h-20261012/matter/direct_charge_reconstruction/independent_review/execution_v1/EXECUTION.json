@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-13T01:40:23.019798+00:00",
+  "ended_utc": "2026-10-13T01:40:23.621110+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/observations-to-toe-24h-20261012/matter/direct_charge_reconstruction/independent_review/independent_charge_checks_v1.py",
+    ".claude/science/physics-loops/observations-to-toe-24h-20261012/matter/direct_charge_reconstruction/independent_review/INDEPENDENT_RESULTS_v1.json"
+  ],
+  "exit_code": 0,
+  "script_sha256": "02c263246c65c3a6c8e65d3969e00a253645fc084353c204445fae30b7bc65fd",
+  "stdout_sha256": "e97492a09fb371d3b637bd365d3d2e25400631b7f19076dc7c29304b3e6057d8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "author_runner_imported_or_executed": false
+}

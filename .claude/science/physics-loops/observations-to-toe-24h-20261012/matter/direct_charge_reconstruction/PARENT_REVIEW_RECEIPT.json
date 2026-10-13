@@ -1,0 +1,277 @@
+{
+  "checked_at": "2026-10-13T01:55:41.817776+00:00",
+  "review_receipt_sha256": "4c62ffc204146c8490c7e8b3b2b84dcce1445e9b6684a8f8b167045f5014039a",
+  "parent_read": "Full report, full independent derivation and receipt read; source correction and empirical limits understood.",
+  "checked_unique_paths": 53,
+  "all_identities_match": true,
+  "independent_checks": 1216,
+  "unresolved_material_findings": [],
+  "paths": [
+    {
+      "path": "independent_review/AFFECTED_SOURCE_CONFIRMATION_v2.json",
+      "sha256": "e5ac43fefed5643ccb8eefc864a2ca479796d5053a5e36ec7bb756cdfa7b96d9",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/CHARGE_RECONSTRUCTION_REVIEW.md",
+      "sha256": "8eb939d1eb74c0c9416dfd2a2acf40257e24d596d787dfe613759c657d848618",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/FAILURES_AND_RESOLUTIONS_v1.json",
+      "sha256": "10c8714ba13645ce9d5ec2468ea06762658f7f811a2e63323d8e660194c1dbce",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/FINAL_VALIDATION_v1.json",
+      "sha256": "496e5c6ee5dd970f49b01da301c5e4bc4ea346df4aea61373156ab1035033656",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/INDEPENDENT_DERIVATION.md",
+      "sha256": "eb28ffec844cd2d914abffa5acd9a6dccefe98e75a6f18923504727939e9e873",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "8f48dcfc6e0120391866614250b3d3c6ab920b778305bdb72faf7a81ba3666b3",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/PRIMARY_SOURCE_CHECKS_v1.json",
+      "sha256": "2f5d787b16b2faf666e4ea21f49f70c2466c5f811b787acea62979ecbc3a1524",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/SOURCE_PINS_v1.json",
+      "sha256": "b0f4a39ed224e84374caa862f32793842203647009af58c151b9b297a8ae54e1",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/execution_v1/EXECUTION.json",
+      "sha256": "fea687b3f8f16e37f46f46c4d6bd65d5e24f857fde8826ef6c17ec12e665a9d5",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/execution_v1/independent_charge_checks_v1.py.snapshot",
+      "sha256": "02c263246c65c3a6c8e65d3969e00a253645fc084353c204445fae30b7bc65fd",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/execution_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/execution_v1/stdout.txt",
+      "sha256": "e97492a09fb371d3b637bd365d3d2e25400631b7f19076dc7c29304b3e6057d8",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/independent_charge_checks_v1.py",
+      "sha256": "02c263246c65c3a6c8e65d3969e00a253645fc084353c204445fae30b7bc65fd",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/original_dispositions_v1.json",
+      "sha256": "65f8d2de0f427a9d51990bb6104aef7af0b13857eef12d64e1737f53e63499ef",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/snapshots_v1/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "e26d96fdbd030756ed9cefebd725ca61f45dbf60d9613b9462d9e7745d1f5457",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/FREEZE.json",
+      "sha256": "588adaa35c82b88f3d410b86c06145c4e52983bc40b0fbb0fba5ee984ac29186",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/OBSERVATION_INPUTS.json",
+      "sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/PROTOCOL.md",
+      "sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/RESULTS_AND_SCOPE.md",
+      "sha256": "c78918d9c2590d573ed000befd57abb9ffeeae5f15cc393c8cfcfac09b356cda",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/SOURCE_LEDGER.json",
+      "sha256": "eb0a6a0bca3631f97b57021cf10b66820c4a19419c48f9bd6fd83276181ffdd7",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/TRACE_GATE.md",
+      "sha256": "9e1325ec34ce41ae27449e104ac80f9aae9e02e04792e4a730c27b77393f89e6",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/check_charge_reconstruction.py",
+      "sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/EXECUTION.json",
+      "sha256": "e7f0a0b262a2066fed96c1d5e6e3ce9de24aedb4a97297c6410d6a68cc3724f2",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/FREEZE.json",
+      "sha256": "61ec63f12a8716860474f83df8505be284863bedcca9813fa41b4ad93a056b57",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/RESULTS.json",
+      "sha256": "ac71a7b637410ef061f19906e7d1a6a92f874549ecf2a879dc1cf3e5a3a9bc7d",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v1/evidence_v1/stdout.txt",
+      "sha256": "f9b4069c332a4d99269208f2101ed29010bebb18024915a4ecbcdd4fecd4db6d",
+      "role": "exact recovery"
+    },
+    {
+      "path": "independent_review/snapshots_v2/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "bc695597af77e0d90d60a67b2765d4a49e27806a652b7da3cd6986f47094cd17",
+      "role": "review evidence"
+    },
+    {
+      "path": "independent_review/snapshots_v2/SCALAR_COMPENSATOR_CORRECTION_v2.json",
+      "sha256": "3c8333b8f0cdeabf5955ecc1e1706dab4c5f99d5276508ae82b14e9aaf991253",
+      "role": "exact recovery"
+    },
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "e26d96fdbd030756ed9cefebd725ca61f45dbf60d9613b9462d9e7745d1f5457",
+      "role": "final live source"
+    },
+    {
+      "path": "DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "bc695597af77e0d90d60a67b2765d4a49e27806a652b7da3cd6986f47094cd17",
+      "role": "final live source"
+    },
+    {
+      "path": "FREEZE.json",
+      "sha256": "588adaa35c82b88f3d410b86c06145c4e52983bc40b0fbb0fba5ee984ac29186",
+      "role": "final live source"
+    },
+    {
+      "path": "OBSERVATION_INPUTS.json",
+      "sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "role": "final live source"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "role": "final live source"
+    },
+    {
+      "path": "RESULTS_AND_SCOPE.md",
+      "sha256": "c78918d9c2590d573ed000befd57abb9ffeeae5f15cc393c8cfcfac09b356cda",
+      "role": "final live source"
+    },
+    {
+      "path": "SCALAR_COMPENSATOR_CORRECTION_v2.json",
+      "sha256": "3c8333b8f0cdeabf5955ecc1e1706dab4c5f99d5276508ae82b14e9aaf991253",
+      "role": "final live source"
+    },
+    {
+      "path": "SOURCE_LEDGER.json",
+      "sha256": "eb0a6a0bca3631f97b57021cf10b66820c4a19419c48f9bd6fd83276181ffdd7",
+      "role": "final live source"
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "9e1325ec34ce41ae27449e104ac80f9aae9e02e04792e4a730c27b77393f89e6",
+      "role": "final live source"
+    },
+    {
+      "path": "check_charge_reconstruction.py",
+      "sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/EXECUTION.json",
+      "sha256": "e7f0a0b262a2066fed96c1d5e6e3ce9de24aedb4a97297c6410d6a68cc3724f2",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "sha256": "61ec63f12a8716860474f83df8505be284863bedcca9813fa41b4ad93a056b57",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/RESULTS.json",
+      "sha256": "ac71a7b637410ef061f19906e7d1a6a92f874549ecf2a879dc1cf3e5a3a9bc7d",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "final live source"
+    },
+    {
+      "path": "evidence_v1/stdout.txt",
+      "sha256": "f9b4069c332a4d99269208f2101ed29010bebb18024915a4ecbcdd4fecd4db6d",
+      "role": "final live source"
+    }
+  ],
+  "scope": "Focused scientific check; no formal audit, status promotion or empirical acceptance."
+}

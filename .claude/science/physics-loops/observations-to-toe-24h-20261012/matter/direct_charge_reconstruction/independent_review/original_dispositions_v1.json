@@ -1,0 +1,199 @@
+{
+  "root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/matter/direct_charge_reconstruction",
+  "created_utc": "2026-10-13T01:45:51.109670+00:00",
+  "original_source_count": 18,
+  "final_source_count": 19,
+  "all_original_paths_accounted_for": true,
+  "original_dispositions": [
+    {
+      "original_path": "CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "e26d96fdbd030756ed9cefebd725ca61f45dbf60d9613b9462d9e7745d1f5457",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": "CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "e26d96fdbd030756ed9cefebd725ca61f45dbf60d9613b9462d9e7745d1f5457",
+      "bytes": 1195,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "DIRECT_CHARGE_RECONSTRUCTION.md",
+      "original_sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "disposition": "checked; narrow scalar-vev correction with original recovery",
+      "recovery": "independent_review/snapshots_v1/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "final_path": "DIRECT_CHARGE_RECONSTRUCTION.md",
+      "final_sha256": "bc695597af77e0d90d60a67b2765d4a49e27806a652b7da3cd6986f47094cd17",
+      "bytes": 15981,
+      "coverage": "Complete original mathematical note read; final change fully confirmed by byte-exact diff and affected reread."
+    },
+    {
+      "original_path": "FREEZE.json",
+      "original_sha256": "588adaa35c82b88f3d410b86c06145c4e52983bc40b0fbb0fba5ee984ac29186",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/FREEZE.json",
+      "final_path": "FREEZE.json",
+      "final_sha256": "588adaa35c82b88f3d410b86c06145c4e52983bc40b0fbb0fba5ee984ac29186",
+      "bytes": 225,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "OBSERVATION_INPUTS.json",
+      "original_sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/OBSERVATION_INPUTS.json",
+      "final_path": "OBSERVATION_INPUTS.json",
+      "final_sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "bytes": 2019,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "PROTOCOL.md",
+      "original_sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/PROTOCOL.md",
+      "final_path": "PROTOCOL.md",
+      "final_sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "bytes": 4734,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "RESULTS_AND_SCOPE.md",
+      "original_sha256": "c78918d9c2590d573ed000befd57abb9ffeeae5f15cc393c8cfcfac09b356cda",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/RESULTS_AND_SCOPE.md",
+      "final_path": "RESULTS_AND_SCOPE.md",
+      "final_sha256": "c78918d9c2590d573ed000befd57abb9ffeeae5f15cc393c8cfcfac09b356cda",
+      "bytes": 5498,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "SCALAR_COMPENSATOR_CORRECTION_v2.json",
+      "original_sha256": "3c8333b8f0cdeabf5955ecc1e1706dab4c5f99d5276508ae82b14e9aaf991253",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v2/SCALAR_COMPENSATOR_CORRECTION_v2.json",
+      "final_path": "SCALAR_COMPENSATOR_CORRECTION_v2.json",
+      "final_sha256": "3c8333b8f0cdeabf5955ecc1e1706dab4c5f99d5276508ae82b14e9aaf991253",
+      "bytes": 1991,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "SOURCE_LEDGER.json",
+      "original_sha256": "eb0a6a0bca3631f97b57021cf10b66820c4a19419c48f9bd6fd83276181ffdd7",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/SOURCE_LEDGER.json",
+      "final_path": "SOURCE_LEDGER.json",
+      "final_sha256": "eb0a6a0bca3631f97b57021cf10b66820c4a19419c48f9bd6fd83276181ffdd7",
+      "bytes": 8483,
+      "coverage": "Complete ledger read; declared source-role boundaries checked; primary materials accessed only at reported reviewer scope."
+    },
+    {
+      "original_path": "TRACE_GATE.md",
+      "original_sha256": "9e1325ec34ce41ae27449e104ac80f9aae9e02e04792e4a730c27b77393f89e6",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/TRACE_GATE.md",
+      "final_path": "TRACE_GATE.md",
+      "final_sha256": "9e1325ec34ce41ae27449e104ac80f9aae9e02e04792e4a730c27b77393f89e6",
+      "bytes": 798,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "check_charge_reconstruction.py",
+      "original_sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/check_charge_reconstruction.py",
+      "final_path": "check_charge_reconstruction.py",
+      "final_sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "bytes": 13314,
+      "coverage": "Complete runner source read; formulas independently derived and no author runner executed."
+    },
+    {
+      "original_path": "evidence_v1/EXECUTION.json",
+      "original_sha256": "e7f0a0b262a2066fed96c1d5e6e3ce9de24aedb4a97297c6410d6a68cc3724f2",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/EXECUTION.json",
+      "final_path": "evidence_v1/EXECUTION.json",
+      "final_sha256": "e7f0a0b262a2066fed96c1d5e6e3ce9de24aedb4a97297c6410d6a68cc3724f2",
+      "bytes": 504,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "evidence_v1/FREEZE.json",
+      "original_sha256": "61ec63f12a8716860474f83df8505be284863bedcca9813fa41b4ad93a056b57",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/FREEZE.json",
+      "final_path": "evidence_v1/FREEZE.json",
+      "final_sha256": "61ec63f12a8716860474f83df8505be284863bedcca9813fa41b4ad93a056b57",
+      "bytes": 849,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "evidence_v1/RESULTS.json",
+      "original_sha256": "ac71a7b637410ef061f19906e7d1a6a92f874549ecf2a879dc1cf3e5a3a9bc7d",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/RESULTS.json",
+      "final_path": "evidence_v1/RESULTS.json",
+      "final_sha256": "ac71a7b637410ef061f19906e7d1a6a92f874549ecf2a879dc1cf3e5a3a9bc7d",
+      "bytes": 216940,
+      "coverage": "Complete JSON read and all numeric tables independently consumed; no author helper imports."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "original_sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "final_path": "evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+      "final_sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+      "bytes": 15712,
+      "coverage": "Complete original mathematical note read; final change fully confirmed by byte-exact diff and affected reread."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "original_sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_sha256": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+      "bytes": 2019,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "original_sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/PROTOCOL.md",
+      "final_path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "final_sha256": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+      "bytes": 4734,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "original_sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "final_path": "evidence_v1/source_snapshot/check_charge_reconstruction.py",
+      "final_sha256": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057",
+      "bytes": 13314,
+      "coverage": "Complete runner source read; formulas independently derived and no author runner executed."
+    },
+    {
+      "original_path": "evidence_v1/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/stderr.txt",
+      "final_path": "evidence_v1/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    },
+    {
+      "original_path": "evidence_v1/stdout.txt",
+      "original_sha256": "f9b4069c332a4d99269208f2101ed29010bebb18024915a4ecbcdd4fecd4db6d",
+      "disposition": "checked; original bytes retained",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/stdout.txt",
+      "final_path": "evidence_v1/stdout.txt",
+      "final_sha256": "f9b4069c332a4d99269208f2101ed29010bebb18024915a4ecbcdd4fecd4db6d",
+      "bytes": 315,
+      "coverage": "Complete source, metadata, or evidence file read; identity and relevant role checked."
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Review and publish the energy-law/weighted-state/current milestone as a regular PR from the clean9508 child. Source/procedure package in progress; no new runtime executed yet.
-2. Package conditionally checked kinetic/potential/Q readout construction. Q657 is now fully root-read and its convergence quantifier precision is explicit.
-3. Finish independent spatial and fourth-moment derivations before exposing root L/F. Recover spatial transport failures without discarding saved work or conflating them with mathematical failures.
-4. Independently derive/check the new moment-sensitive density rates and actual phase control, then the new finite multitime correlation telescope. Their root drafts are frozen but unreviewed; do not publish them as checked yet.
-5. Check local-pulse spatial escape and compactness route; refresh changed repository dependencies. Microscopic creators, interacting channel selection and 3D realization remain open.
+1. Publish the accepted energy-distribution/weighted/current milestone as a regular PR; source packet and its root read acceptance are ready, new publication runtime is not.
+2. Package the checked kinetic/potential/Q construction together with suitable reviewed spatial/fourth refinements at coherent milestones. Complete source comparisons before claiming those root candidates checked.
+3. Finish neutral stationary moment-sensitive derivation, then compare root M/phase control. Obtain a focused finite multitime correlation check.
+4. Independently derive nonautonomous graph propagation and corrected dynamics for regular BV controls; root230line candidate is unreviewed. Preserve the stationary gap route and exact/off-diagonal tradeoff.
+5. Check local-pulse spatial escape; refresh changed repository premises. Microscopic creators, interacting channel selection and 3D realization remain open.
 
-Preserve counterexamples and original proofs. Native same-family comparisons and scoped Lean leaves have explicit limits. No audit verdict/merge/main push/axiom change. Fixed deadline2026-10-13T16:42:30Z.
+Fixed deadline2026-10-13T16:42:30Z. No science merge/main push/audit/axiom changes. Scoped diagnostics and Lean leaves have explicit limits.

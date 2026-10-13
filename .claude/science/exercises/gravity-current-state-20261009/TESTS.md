@@ -7660,3 +7660,12 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Lemma G:** the registered moves obey a local F₂ relation per 3³ block, so any pair-insertion QMC is non-ergodic.
   - **Prices:** P-r19-7a (v/t); P96 sharpened.
   - Not a no-go, so a referee is optional.
+- **R19-6 referee: NOT CONFIRMED (the UNIFIED). Reading OPEN** (recorded 04:52Z). W1 replaces R18-7's registered a = 4 law instead of staying consistent with it; under the "literal first" rule that makes the reading OPEN, not SPLIT.
+  - **Confirmed, within the stated contravariant density families and perturbative domains:**
+    - Lemma L, with both of its instances;
+    - weight one unifies the conserved-record and linearized-Einstein gauge identities;
+    - it makes set A's a = 2 mean source equal to the same Einstein–Hilbert functional A′ used for the graviton vacuum;
+    - with the complete split, the spacelike off-cone noise mean cancels;
+    - the TT and Feynman–de Donder vacuum coefficient is 1.
+  - **The new a = 2 law** is past-record-adaptive and causally completed. It keeps CP and static spherical β = γ = 1, but loses R18-7's pure-scalar cancellation.
+  - **Net:** this is a coherent, number-free common-source completion, but not strictly UNIFIED.

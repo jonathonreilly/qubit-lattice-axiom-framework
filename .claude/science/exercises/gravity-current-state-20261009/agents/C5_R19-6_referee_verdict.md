@@ -1,0 +1,21 @@
+# VERDICT: NOT CONFIRMED
+
+The correct fixed reading is **OPEN**, not SPLIT. The algebra largely checks, but W1 replaces R18-7’s registered \(a=4\) law rather than remaining consistent with it under Round 19’s “literal first” rule (`TESTS.md:7117-7125`).
+
+1. **Lemma L — confirmed in scope.** Integration by parts and flat conservation give the stated \((w-1)\) identity. Both the record and \(G^{(1)}[X]\) instances follow, and rerunning the symbolic test reproduced 16/16 generic nonzero obstructions for \(w\ne1\) and 0/16 for \(w=1\). These are generic sampled counts within the contravariant density family, not universal componentwise nonvanishing claims (`R19-6_report.md:114-129`; `scripts/r196_lemmaL.out:1-26`).
+
+2. **Proposition U — confirmed with qualifications.** The expansion yields
+   \[
+   \tau_a=\frac{a-2}{4}\langle\operatorname{tr}(\eta h)J\rangle+A'[h_n].
+   \]
+   The rerun reproduced the 14/14 \(00\)/spatial-trace entries and Poisson–harmonic equality at \(a=2\) (`R19-6_report.md:131-146`; `scripts/r196_setA.out:1-38`). The explicit runner comparison covers \(00\) and spatial trace; full-tensor gauge identity relies on Lemma D. W1 alone does not imply \(I_0\): the complete split and off-cone restriction remain essential (`scripts/r196_setA.py:140-150`; `C5_R19-2_referee.md:5-10`).
+
+3. **Vacuum coefficients — confirmed.** The rerun gives \(c_{\rm FdD}=w\), \(c_{\rm TT}=1\), and \(c_{\rm FdD}=4\) for lower-index \(G_{\mu\nu}\). Thus only weight one matches TT and Feynman–de Donder within the tested contravariant family (`scripts/r196_vacuum.out:1-12`). \(A'\) is the EH contribution; the complete source still requires gauge-fixing and ghost accounting (`C5_R19-3_referee.md:25-31`).
+
+4. **R18-7 replacement — not literally consistent.** CP can survive at \(a=2\) if one supplies a normalized instrument depending only on past records. Static spherical \(\beta=\gamma=1\) also survives after mass renormalization because the insertion change affects the \(O(G^2)/r\) term, not the exterior \(M^2/r^2\) coefficient (`R19-6_report.md:180-187`; `C5_R18-7_referee.md:21-27`). But R18-7 registered \(S=(-g)J+\Lambda\), \(a=4\), with an unchanged \(T\)-meter (`C5_R18-7_report.md:128-143`). Its refereed scalar active density \((2a-8)|u_1|\) vanishes at \(a=4\) and becomes \(-4|u_1|\) at \(a=2\) (`C5_R18-7_referee.md:29-33`). This is not a contradiction between conditional formulas; it is a materially different construction.
+
+5. **UNIFIED — not met as fixed.** W1 genuinely unifies the R18-11 and R19-3 gauge identities and supports a coherent modified bridge. But fixed UNIFIED requires consistency with every refereed result, expressly including R18-7 (`TESTS.md:7397-7422`). Replacing its source law fails that literal requirement. No theorem forces different weights in the two arenas, so SPLIT is also unmet; therefore OPEN applies.
+
+All supplied scripts compiled. Fresh reruns reproduced every algebraic output, with only timing differences; the kernel output was byte-identical. The full referee record is [R19-6_referee.md](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-6/R19-6_referee.md:1).
+
+**Strongest correct statement:** Within the stated contravariant density families and perturbative domains, weight one unifies the conserved-record and linearized-Einstein gauge identities and makes set A’s \(a=2\) mean source equal to the same EH quadratic functional \(A'\) used for the free graviton vacuum; with the separately stipulated complete split, its spacelike off-cone noise mean cancels, and its TT and Feynman–de Donder vacuum coefficient is one. A new past-record-adaptive, causally completed \(a=2\) law can retain CP and static spherical \(\beta=\gamma=1\), but it replaces R18-7’s registered \(a=4\) source/meter law and loses that law’s pure-scalar cancellation. This establishes a coherent number-free common-source completion, not strict UNIFIED; the strongest fixed reading is OPEN.

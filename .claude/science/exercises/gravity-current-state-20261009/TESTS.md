@@ -8689,3 +8689,24 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - codimension: 12 (C-box: 33 + 4 per class per order).
 
   Referee running.
+
+**R19-33. Box-free set B: is the coupled matter + TT graviton reflection-positive, with the Newtonian part carried as a non-local constraint bridge?** (Pre-registered 2026-10-13 07:21Z.)
+- **Plain question.**
+  - R19-28 (worker) leaves box-free set B + (Σ) OPEN, mainly on K2 (coupled RP is unproved) and on R2-4, which (Σ) makes bind. Its suggested payment: keep only the TT polarizations in the transfer matrix, and carry the Newtonian part non-locally.
+  - Is the coupled Gaussian (matter + TT) transfer matrix positive on Z⁴ at linear coupling and O(κ²)?
+  - Does the constraint bridge reproduce the 1/r static pull without breaking RP?
+- **Setting.**
+  - Euclidean Z⁴ with a_t = a_s and W(B4)-covariant lattice actions.
+  - A free massive scalar (and a Wilson fermion, as a comparator) coupled via T^{μν}h_{μν} to TT-projected h.
+  - The Newtonian part via a Poisson-type constraint, non-local in space and local in time.
+- **Prior art (count once):** R19-28, K2 (`C4_K2_report/referee`), R2-4, R10-2 and R19-20; OS reconstruction and RP for lattice gauge theory (comparator, RECALLED).
+- **Probes.**
+  - (a) Site and link RP of the coupled quadratic form, at O(κ) and O(κ²), checked numerically on small lattices (RP-matrix eigenvalues).
+  - (b) The TT projector's locality in time, and RP of the projection.
+  - (c) The static T⁰⁰ response from the constraint bridge: 1/r and its sign.
+  - (d) Is the bridge W(B4)-covariant? If not, what does it cost?
+- **FIXED readings.**
+  - **B-RP-OK:** the coupled form is RP at O(κ²), checked, and the bridge gives an attractive 1/r with its covariance cost named.
+  - **B-RP-FAILS:** a negative RP eigenvalue at O(κ) or O(κ²) that persists under refinement (cite it).
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN. The TT projector is non-local in time on Z⁴, so RP of the projected form is unclear; the bridge breaks W(B4) to a foliation.

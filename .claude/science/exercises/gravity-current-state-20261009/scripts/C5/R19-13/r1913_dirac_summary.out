@@ -1,0 +1,19 @@
+Wilson-Dirac m=0 explicit isometry (8x8 graded GL grid): R=0:6.2450e-01  R=1:2.7386e-03  R=2:5.6702e-05  R=3:6.7375e-06  R=4:1.7350e-06  R=5:6.0696e-07  R=6:2.5043e-07  R=8:5.9632e-08
+   local exponent 1-2: 5.59 ; ratio 48.3
+   local exponent 2-3: 5.25 ; ratio 8.4
+   local exponent 3-4: 4.72 ; ratio 3.9
+   local exponent 4-5: 4.71 ; ratio 2.9
+   local exponent 5-6: 4.86 ; ratio 2.4
+   local exponent 6-8: 4.99 ; ratio 4.2
+   quadrature check R=4: 12x12 grid 1.7058e-06 vs 8x8 1.7350e-06 (rel diff 1.71%)
+   quadrature check R=2: 12x12 grid 5.6751e-05 vs 8x8 5.6702e-05 (rel diff -0.09%)
+   central (suggested, R^-5 from R=8, C=1.954e-03): persistent R ~ 1.39e+24 a ; registered tau=R: R ~ 9.21e+09 a
+Wilson-Dirac m=1 explicit isometry (8x8 graded GL grid): R=0:4.2005e-01  R=1:1.9800e-03  R=2:1.5474e-05  R=3:3.4274e-07  R=4:1.2166e-08
+   local exponent 1-2: 7.00 ; ratio 128.0
+   local exponent 2-3: 9.40 ; ratio 45.1
+   local exponent 3-4: 11.60 ; ratio 28.2
+   quadrature check R=2: 12x12 grid 1.5474e-05 vs 8x8 1.5474e-05 (rel diff -0.00%)
+   central (suggested, exponential rate 3.34 per site from R=3,4): persistent R ~ 84 a ; registered tau=R: R ~ 42 a
+Dirac m=0 lower bound: LB(512) = 6.201e-23 > persistent thr 3.78e-124 and > registered thr/512 = 6.27e-66 -> required R > 512 a (proved inequality, numerically evaluated)
+   suggested extrapolation LB ~ 6.00e-04 R^-7 (local exponent -> 7): persistent R > 1.48e+17 a ; registered tau=R: R > 2.56e+07 a ; tau=1: R > 2.93e+08 a
+Dirac m=1 lower bound: LB(16) = 1.464e-26 -> required R > 16 a (proved inequality, numerically evaluated); LB(32,64) are at the k-sum roundoff floor

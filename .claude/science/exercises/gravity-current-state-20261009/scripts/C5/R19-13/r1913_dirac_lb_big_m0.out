@@ -1,0 +1,10 @@
+# Wilson-Dirac m=0: rigorous lower bound per inserted site (BZ average), any slab operation; weight sum 0.99989796
+R=32  LB=1.530186e-14
+R=64  LB=1.292954e-16
+R=128  LB=1.050898e-18
+R=256  LB=8.331244e-21
+R=512  LB=6.200984e-23
+local exponent 32-64: 6.887
+local exponent 64-128: 6.943
+local exponent 128-256: 6.979
+local exponent 256-512: 7.070

@@ -7940,3 +7940,13 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **NONLOCAL:** a refereed demonstration that (S_ad) beyond homogeneity needs a global or instantaneous carrier.
   - **OPEN:** otherwise.
 - **Expectation:** LOCAL-OK to second adiabatic order. The adiabatic subtraction is the standard local Hadamard/adiabatic counterterm structure, which is covariant. The price moves to "which state is adiabatic", i.e. the frame.
+- **R19-13 (entangled-born sites): worker reading NO-LOCAL-ESCAPE.** A referee is required. ENTANGLED-ESCAPE (R ≤ 10a) is excluded for every field.
+  - **Best insertion cost against slab radius.** It falls as R⁻⁵ for massless fields, and as e^{−4κR} (κ = arccosh(1 + m²/2)) for massive ones.
+  - **Lower bound (proved).** Fidelity and trace-distance with fixed bounding planes, which the slab cannot re-space. It holds for any slab operation.
+  - **Required radius:**
+    - lattice-proved: R > 256a (massless scalar and photon), 512a (Dirac), 12–16a (m ~ 1/a);
+    - continuum-asymptotic: R > 1.7e23 a for massless fields.
+  - **Consequences.** Ball-shaped insertions would overlap, so creation becomes collective rather than a series of local events. An entangled birth is not local.
+  - **Price:** P-r1913a.
+
+  Referee running.

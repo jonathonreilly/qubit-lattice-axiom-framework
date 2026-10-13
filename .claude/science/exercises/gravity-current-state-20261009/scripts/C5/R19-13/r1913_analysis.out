@@ -1,0 +1,50 @@
+rho_L = 1.1338e-123 ; persistent threshold dE < 3.779e-124 ; registered threshold dE*tau < 3.209e-63
+quadrature weight sum = 0.9999980000
+
+(A) 3D scalar plane insertion: best radius-R isometric insertion, cost per inserted site (upper bound = explicit Gaussian isometry)
+  m=0.0: R=1:3.064e-04  R=2:1.247e-05  R=3:1.921e-06  R=4:4.998e-07  R=5:1.737e-07  R=6:7.276e-08  R=8:1.824e-08  R=10:6.183e-09  R=12:2.542e-09  R=14:1.200e-09  R=16:6.251e-10  R=20:2.099e-10  R=24:8.620e-11  R=32:2.159e-11
+  m=0.1: R=1:3.014e-04  R=2:1.175e-05  R=3:1.699e-06  R=4:4.067e-07  R=5:1.279e-07  R=6:4.763e-08  R=8:9.034e-09  R=10:2.201e-09  R=12:6.217e-10  R=14:1.969e-10  R=16:6.654e-11  R=20:9.455e-12  R=24:1.610e-12  R=32:1.131e-13
+  m=0.3: R=1:2.708e-04  R=2:8.046e-06  R=3:7.861e-07  R=4:1.160e-07  R=5:2.098e-08  R=6:4.289e-09  R=8:2.375e-10  R=10:1.980e-11  R=12:2.272e-12  R=14:5.301e-13  R=16:1.296e-13  R=20:4.515e-14  R=24:5.444e-15  R=32:4.569e-15
+  m=1.0: R=1:1.168e-04  R=2:5.029e-07  R=3:4.826e-09  R=4:7.042e-11  R=5:4.235e-12  R=6:6.718e-13  R=8:1.313e-14  R=10:2.874e-14  R=12:2.219e-14  R=14:2.164e-14  R=16:2.741e-14  R=20:2.006e-14  R=24:2.877e-15  R=32:2.709e-15
+  m=0 local exponents -dln dE/dln R: 1-2:4.62  2-3:4.61  3-4:4.68  4-5:4.74  5-6:4.77  6-8:4.81  8-10:4.85  10-12:4.87  12-14:4.87  14-16:4.88  16-20:4.89  20-24:4.88  24-32:4.81
+  m=0 fit R>=10: dE3 = 4.563e-04 * R^-4.869
+  m=0 dE3*R^5: R=1:3.064e-04  R=2:3.989e-04  R=3:4.669e-04  R=4:5.118e-04  R=5:5.429e-04  R=6:5.658e-04  R=8:5.975e-04  R=10:6.183e-04  R=12:6.326e-04  R=14:6.454e-04  R=16:6.555e-04  R=20:6.716e-04  R=24:6.863e-04  R=32:7.245e-04
+  m=1 successive ratios dE3(R)/dE3(R+1): 1:232.3  2:104.2  3:68.5  4:16.6  5:6.3
+  chain decay rate kappa(M=1) = arccosh(1.5) = 0.9624 ; exp(4 kappa) = 47.0
+
+(B) rigorous lower bound per inserted site (any slab operation), lattice correlators, BZ average
+  m=0.0: R=1:1.728e-06  R=2:1.113e-07  R=4:4.894e-09  R=8:1.647e-10  R=16:4.766e-12  R=32:1.282e-13  R=64:3.356e-15  R=128:8.739e-17  R=256:2.287e-18
+  m=1.0: R=1:3.127e-07  R=2:1.655e-09  R=4:1.875e-13  R=8:9.625e-21  R=16:0.000e+00  R=32:0.000e+00  R=64:0.000e+00  R=128:0.000e+00  R=256:0.000e+00
+    m=0 R=1: lower bound 1.728e-06 <= best isometry 3.064e-04 (ratio 177.35)
+    m=0 R=2: lower bound 1.113e-07 <= best isometry 1.247e-05 (ratio 112.05)
+    m=0 R=4: lower bound 4.894e-09 <= best isometry 4.998e-07 (ratio 102.12)
+    m=0 R=8: lower bound 1.647e-10 <= best isometry 1.824e-08 (ratio 110.69)
+    m=0 R=16: lower bound 4.766e-12 <= best isometry 6.251e-10 (ratio 131.17)
+    m=0 R=32: lower bound 1.282e-13 <= best isometry 2.159e-11 (ratio 168.39)
+    m=1 R=1: lower bound 3.127e-07 <= best isometry 1.168e-04 (ratio 373.60)
+    m=1 R=2: lower bound 1.655e-09 <= best isometry 5.029e-07 (ratio 303.84)
+    m=1 R=4: lower bound 1.875e-13 <= best isometry 7.042e-11 (ratio 375.58)
+    m=1 R=8: lower bound 9.625e-21 <= best isometry 1.313e-14 (ratio 1363674.66)
+    m=1 R=16: lower bound 0.000e+00 <= best isometry 2.741e-14 (ratio inf)
+    m=1 R=32: lower bound 0.000e+00 <= best isometry 2.709e-15 (ratio inf)
+
+(C) pi*G0(M) + (1/2) ln M (should tend to a constant c0): 1.039721 1.039721 1.039721 1.039721 1.039721 1.039721 1.039721 1.039719 1.039703 1.039579 1.038665
+  R=4: lattice LB 4.8942e-09 ; continuum asymptotic 4.6751e-09 (ratio 1.047)
+  R=8: lattice LB 1.6474e-10 ; continuum asymptotic 1.6325e-10 (ratio 1.009)
+  R=16: lattice LB 4.7658e-12 ; continuum asymptotic 4.7441e-12 (ratio 1.005)
+  R=32: lattice LB 1.2823e-13 ; continuum asymptotic 1.2780e-13 (ratio 1.003)
+  R=64: lattice LB 3.3560e-15 ; continuum asymptotic 3.3459e-15 (ratio 1.003)
+  R=128: lattice LB 8.7387e-17 ; continuum asymptotic 8.7131e-17 (ratio 1.003)
+  R=256: lattice LB 2.2874e-18 ; continuum asymptotic 2.2807e-18 (ratio 1.003)
+
+(D) required R (proved lower bound on the requirement, evaluated with the continuum asymptotic)
+  massless scalar: persistent (dE<rho_L/3): R > 1.66e+23 a ; registered with tau_ins = 1 t_P: R > 1.43e+11 a ; with tau_ins = R t_P: R > 7.91e+13 a
+     photon (2 transverse massless scalars, suggested identification): persistent R > 1.90e+23 a
+  scalar m a = 1e-17 (SM-like): persistent (dE<rho_L/3): R > 1.71e+18 a ; registered with tau_ins = 1 t_P: R > 1.43e+11 a ; with tau_ins = R t_P: R > 7.91e+13 a
+  scalar m a = 1e-10: persistent (dE<rho_L/3): R > 3.71e+11 a ; registered with tau_ins = 1 t_P: R > 3.35e+10 a ; with tau_ins = R t_P: R > 9.10e+10 a
+
+(E) central estimate from the explicit-isometry fit dE3 = 4.563e-04 R^-4.869 (suggested extrapolation):
+  persistent: R ~ 4.59e+24 a ; registered tau=R: R ~ 1.94e+15 a ; photon x2 persistent: R ~ 5.29e+24 a
+  m=1 (rate 2.811 per site from R=4,5): persistent R ~ 96.8 a ; registered (tau=R) R ~ 47.4 a
+  persistent with R=10: needs 4*kappa*10 >~ ln(1/thr) -> kappa >~ 7.10 -> m a >~ 34.9 (suggested, prefactor ~1)
+  registered tau=10 with R=10: needs 4*kappa*10 >~ ln(1/thr) -> kappa >~ 3.65 -> m a >~ 6.1 (suggested, prefactor ~1)

@@ -1,0 +1,6 @@
+m=0 R=0 P-loc (R19-10 state, infinite chain) = 0.975567  [R19-10 ring Lx=32: 0.975567];  per-q optimal R=0 = 0.624321
+m=1 R=0 P-loc (R19-10 state, infinite chain) = 0.677308  [R19-10 ring Lx=32: 0.677308];  per-q optimal R=0 = 0.420103
+gradcheck: analytic 1.3966609755e+00  finite-diff 1.3966609771e+00
+R=1 dE=9.5970717329e-03 (0.0s); random restarts: 9.5970717329e-03 9.5970717329e-03
+R=2 dE=7.4366262217e-04 (0.1s); random restarts: 7.4366262216e-04 7.4366262447e-04
+R=3 dE=8.6538143905e-05 (2.3s); random restarts: 8.6552839858e-05 8.6551931227e-05

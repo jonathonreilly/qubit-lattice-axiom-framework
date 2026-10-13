@@ -1,0 +1,15 @@
+H0 = 1.1775e-61 /t_P ; rho_L = 1.1338e-123 ; 1/H0 = 8.492e+60 t_P
+persistent threshold: 3 dE / a^3 per Hubble time < rho_L  <=>  dE < 3.779e-124
+registered threshold: 3 H dE tau / a^3 < rho_L  <=>  dE tau < 3.209e-63
+scalar m=0: R=0 per-q optimum (new plane in its 2D GS) dE = 0.041031 per site [R19-10 P-plane Lp=16: 0.040813]
+scalar m=1: R=0 per-q optimum (new plane in its 2D GS) dE = 0.026126 per site [R19-10 P-plane Lp=16: 0.026126]
+  R = 1.66e+23 a = 2.68e-12 m ; light-crossing R/c = 8.95e-21 s = 1.95e-38 of 1/H0
+  R = 4.60e+24 a = 7.43e-11 m ; light-crossing R/c = 2.48e-19 s = 5.42e-37 of 1/H0
+  R = 7.90e+13 a = 1.28e-21 m ; light-crossing R/c = 4.26e-30 s = 9.30e-48 of 1/H0
+  R = 1.43e+11 a = 2.31e-24 m ; light-crossing R/c = 7.71e-33 s = 1.68e-50 of 1/H0
+  R = 1.71e+18 a = 2.76e-17 m ; light-crossing R/c = 9.22e-26 s = 2.01e-43 of 1/H0
+ball (point) insertions: concurrent overlapping events per site = 4 pi H R^4 (tau = R): equals 1 at R = 9.07e+14 a
+plane insertions: overlap count = 2 R^2 H (tau = R): equals 1 at R = 2.06e+30 a
+  R=1.00e+15: ball overlap 1.48e+00 ; plane overlap 2.36e-31
+  R=1.66e+23: ball overlap 1.12e+33 ; plane overlap 6.49e-15
+  R=4.60e+24: ball overlap 6.63e+38 ; plane overlap 4.98e-12

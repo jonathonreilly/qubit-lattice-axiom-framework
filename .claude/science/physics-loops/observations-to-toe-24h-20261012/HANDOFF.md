@@ -148,3 +148,14 @@ Fixed deadline16:53Z and discovery cutoff16:38Z unchanged. Parent is the author.
 Retired/cancelled authors remain absent; focused independent reviews are active.
 Cooperative lock same holder expires14:20:33Z. PDG source retrieval initially
 failed for missing default CA; verified certifi route recovered the exact PDF.
+
+## Direct-author continuation 2026-10-13T13:49:36.147557+00:00
+
+Matter growth fully checked:23628 parent controls, independent18620 affected controls, original readout survivor now fails6108 with all20 physical histories unchanged. Continuous thermal/matter/neutrino bridge actualv1 completed8of12 histories, four solver timeouts and four coarse energy derivative failures retained. Handwritten154 checks pass; v3 dimensional label corrected. Recoveryv2 stopped1170pass8failed Jacobian-reference cancellation checks; v3 high-precision reference1182local controls pass and history recovery active. Curvature canonical6651/0, full57path package2734/0, current-main correction reviewed, all three combined gates pass;58path final manifest review active.
+
+Personally add neutrino-trace-sensitive action controls, finish continuous-history recovery and independent numerical check without merging ideal growth results onto a different background, then deliver the reviewed curvature milestone PR.
+
+Fixed deadline16:53Z and discovery cutoff16:38Z unchanged. Parent is the author.
+Retired/cancelled authors remain absent; focused independent reviews are active.
+Cooperative lock same holder expires14:20:33Z. PDG source retrieval initially
+failed for missing default CA; verified certifi route recovered the exact PDF.

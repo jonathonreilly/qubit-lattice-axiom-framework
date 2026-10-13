@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-13T13:51:53.986289+00:00",
+  "reason": "GitHub rejected one116.58MiBfile; identical archive split into40MiB pieces without changing any member.",
+  "rejected_unpublished_commit": "b8786d3e00f843a4387cda6d39d4f688eb44937b",
+  "original_archive": {
+    "path": "RECOVERY_v1.tar.gz",
+    "sha256": "73cd845fd29a69905c4847a2a3b36386b5e0736fea7fd65dc8e9ed884615b0b8",
+    "bytes": 122240592
+  },
+  "parts": [
+    {
+      "path": "RECOVERY_v1.tar.gz.part001",
+      "sha256": "8a6ac0db0a4ededa15017c271069a9fc5c2b8304c5632963ecd410d19288597a",
+      "bytes": 41943040
+    },
+    {
+      "path": "RECOVERY_v1.tar.gz.part002",
+      "sha256": "e1d30d655f0d67cafeb270839d6954a2d0a6ac7501626bc1a3f1fb6ddc58f87b",
+      "bytes": 41943040
+    },
+    {
+      "path": "RECOVERY_v1.tar.gz.part003",
+      "sha256": "7e86b62e287f39635250cfdfd3b6f7c4b3a120036980c6610c1a662e80dd311a",
+      "bytes": 38354512
+    }
+  ],
+  "reassembly": "Concatenate parts in listed order to RECOVERY_v1.tar.gz and verify full SHA256 before extracting. RECOVERY_v1.json preserves original member map.",
+  "original_remote_rejection": {
+    "at": "2026-10-13T13:50:27.007350+00:00",
+    "commit": "b8786d3e00f843a4387cda6d39d4f688eb44937b",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "remote: error: Trace: cd95f080e2c24b51e18781ca490a60a187457f2b411bb723cf8c3a0075532ac1        \nremote: error: See https://gh.io/lfs for more information.        \nremote: error: File .claude/science/physics-loops/observations-to-toe-24h-20261012/milestones/direct_continuous_history_checkpoint_20261013/RECOVERY_v1.tar.gz is 116.58 MB; this exceeds GitHub's file size limit of 100.00 MB        \nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        \nTo https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git\n ! [remote rejected]       HEAD -> codex/observations-to-toe-24h-20261012 (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git'\n"
+  }
+}

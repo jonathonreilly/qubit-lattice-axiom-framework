@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Publish the accepted energy-distribution/weighted/current milestone as a regular PR; source packet and its root read acceptance are ready, new publication runtime is not.
-2. Package the checked kinetic/potential/Q construction together with suitable reviewed spatial/fourth refinements at coherent milestones. Complete source comparisons before claiming those root candidates checked.
-3. Finish neutral stationary moment-sensitive derivation, then compare root M/phase control. Obtain a focused finite multitime correlation check.
-4. Independently derive nonautonomous graph propagation and corrected dynamics for regular BV controls; root230line candidate is unreviewed. Preserve the stationary gap route and exact/off-diagonal tradeoff.
-5. Check local-pulse spatial escape; refresh changed repository premises. Microscopic creators, interacting channel selection and 3D realization remain open.
+1. Publish accepted energy-distribution/weighted/current milestone; source-only publication worker active. Root exact runtime review pending.
+2. Package checked kinetic/potential/Q and spatial/fourth refinements at coherent milestones; preserve conditional open-gate dependencies.
+3. Finish root comparison of sharper stationary moment bound and actual phase controls. Derive/check finite multitime correlations without resetting moment resources at each insertion.
+4. Complete neutral nonautonomous BV dynamics proof; compare root candidate only after freeze. Check explicit T_j/smooth-local graph regularity for endpoint application.
+5. Check fixed local-pulse spatial escape; refresh changed repository premises. Microscopic creators, interacting channel selection and 3D realization remain open.
 
-Fixed deadline2026-10-13T16:42:30Z. No science merge/main push/audit/axiom changes. Scoped diagnostics and Lean leaves have explicit limits.
+Deadline2026-10-13T16:42:30Z fixed. No science merge/main push/audit/axiom changes. Identity checks and scoped Lean have explicit limits.

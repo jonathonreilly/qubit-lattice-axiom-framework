@@ -35,3 +35,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T02:03:58.665204+00:00: Q657 fully read and conditionally accepted with alpha->0 precision. New unreviewed M229/phase129/history223 root candidates frozen; source-excluded checks still needed. Spatial stream interrupted twice with saved progress; same-assignment recovery requested. Source preparation and neutral endpoint derivation continue. No new science PR/runtime/audit/prompt changes.
 
 2026-10-13T02:35:38.512716+00:00: Energy-observables source accepted with honest coverage and exact reconstruction; no install. Spatial626 and fourth867 fully read/conditionally checked, comparisons active. Neutral moment worker active. BV fourth190 and new BV dynamics230 root candidates frozen unreviewed. No prompt or audit changes.
+
+2026-10-13T03:01:16.594120+00:00: Spatial/fourth comparisons complete; stationary moment731 conditionally accepted and root comparison active. Nonautonomous neutral worker active. Graph-regularity154 unreviewed. Scoped power-jump Lean attempt02 successful after import-only failure. New publication preparation active, no install. No prompt/audit change.

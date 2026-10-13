@@ -8306,3 +8306,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **COUNTERTERMS-NEEDED:** a refereed demonstration that every clause in a stated class amounts to tuned counterterms (numbers) that must be re-set at each loop order.
   - **OPEN:** otherwise.
 - **Expectation.** COUNTERTERMS-NEEDED. A dynamics clause that refers to its own loop corrections is a renormalization condition whose coefficients are numbers fixed order by order, which is P73. The asymmetry with (Σ) is that (Σ) subtracts the result after the fact, from the source, and never feeds back into propagation.
+- **R19-22 (finite-site supplied graviton): worker reading OPEN.** FINITE-PRICE is not met, and neither is NO-FINITE. The expectation of tens of qubits per site fails structurally.
+  - **Truncating the modes is cheap.** Single-mode truncation error is 1/S for spins and e^(−1.45N) for clocks. The helicity-±2 modes stay light-like under every local completion.
+  - **Exact constraints are impossible on finite slots.** The N-type graviton needs two exact gauge constraints, and those need [h, E] = i·1, which is impossible in finite dimensions (trace argument). The constraints are what remove the partners, and the conformal sector carries the 1/r pull.
+  - **Theorem B holds for any finite spectrum.** The TT f-sum is O(k⁴) at every S.
+  - **Lemma J.** With spin-S fields, the constraints stop commuting and the only joint solution is the zero state.
+  - **Proposition C.** With penalty constraints, the graviton sector sits ≥ (3/4)JS above the ground state. Every local repair fails: a Jordan chain, a tachyon, or six gapless branches.
+  - **Exact clocks** spread labels uniformly across the wrap.
+  - **Conditional on an unbuilt protection mechanism,** ~30–2000 qubits per cell would suffice.
+  - **The irreducible price** is noncompact exact gauge (P-N1 + P-r15-5b), not a larger site.
+  - **Prices:** P-r19-22a (a larger site algebra), b (an unbuilt protection) and c (a metastable sector).
+
+  Referee running.

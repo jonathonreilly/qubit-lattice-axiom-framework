@@ -1,0 +1,36 @@
+(0) sanity: h-side spectrum of R/qhat^2 and E-side spectrum of K at k=0.3 along (1,2,5)
+  eig R/qhat^2 = [-1. -0. -0.  0.  1.  1.]   eig K = [-0.5  1.   1.   1.   1.   1. ]
+  G S^T = 6.505213034913027e-19   G R = 7.023622513515094e-19
+
+(a) TT block omega^2/(J g qhat^2) under every completion (k=1e-2)
+  z    [1.000000,1.000000] leak 4.4e-16  [1.000000,1.000000] leak 4.4e-16  [1.000000,1.000000] leak 4.4e-16  [1.000000,1.000000] leak 4.4e-16
+  110  [1.000000,1.000000] leak 2.2e-16  [1.000000,1.000000] leak 2.2e-16  [1.000000,1.000000] leak 2.2e-16  [1.000000,1.000000] leak 2.2e-16
+  111  [1.000000,1.000000] leak 1.1e-16  [1.000000,1.000000] leak 1.1e-16  [1.000000,1.000000] leak 1.7e-16  [1.000000,1.000000] leak 1.7e-16
+  125  [1.000000,1.000000] leak 2.2e-16  [1.000000,1.000000] leak 2.2e-16  [1.000000,1.000000] leak 3.3e-16  [1.000000,1.000000] leak 3.3e-16
+
+(b) lam=0, finite penalties: scalar kinetic det and Hamilton-matrix structure (k=0.05 along z)
+  U=    0 V=    0: det A_scalar = -0.5000 (J=1: -1/2 expected); B_scalar diag = [-0.0025  0.    ] ; eig(AB)/q^2 = [0. 0. 0. 0. 1. 1.]
+       rank(F_nonTT^n), n=1..6: [np.int64(5), np.int64(2), np.int64(1), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]  (0 => nilpotent: Jordan chains, polynomial growth)
+  U=    1 V=    0: det A_scalar = -0.5000 (J=1: -1/2 expected); B_scalar diag = [-0.0025  0.    ] ; eig(AB)/q^2 = [0. 0. 0. 0. 1. 1.]
+       rank(F_nonTT^n), n=1..6: [np.int64(5), np.int64(2), np.int64(1), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]  (0 => nilpotent: Jordan chains, polynomial growth)
+  U=   10 V=   10: det A_scalar = -0.5000 (J=1: -1/2 expected); B_scalar diag = [-0.00237  0.     ] ; eig(AB)/q^2 = [0. 0. 0. 0. 1. 1.]
+       rank(F_nonTT^n), n=1..6: [np.int64(5), np.int64(2), np.int64(1), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]  (0 => nilpotent: Jordan chains, polynomial growth)
+  U= 1000 V= 1000: det A_scalar = -0.5000 (J=1: -1/2 expected); B_scalar diag = [0.01 0.  ] ; eig(AB)/q^2 = [0. 0. 0. 0. 1. 1.]
+       rank(F_nonTT^n), n=1..6: [np.int64(5), np.int64(2), np.int64(1), np.int64(0), np.int64(0), np.int64(0), np.int64(0), np.int64(0)]  (0 => nilpotent: Jordan chains, polynomial growth)
+
+(c) kinetic made PSD by lam (trE)^2: conformal-mode growth rate gamma(k) = sqrt(-min eig(AB))
+  lam= 0.10: min eig A = +0.1000;  gamma/|qhat| at k=1e-1..1e-4 = [0.6261  0.63239 0.63245 0.63246]
+  lam= 0.25: min eig A = +1.0000;  gamma/|qhat| at k=1e-1..1e-4 = [0.98996 0.9999  1.      1.     ]
+  lam= 1.00: min eig A = +1.0000;  gamma/|qhat| at k=1e-1..1e-4 = [1.97992 1.9998  2.      2.     ]
+
+(d) full PSD local completion: count small-k branches with omega -> 0 (k=1e-3, 1e-4)
+  {'U': 1, 'V': 1, 'lam': 1, 'mu': 2, 'nu': 2}: PSD(A,B)=(np.True_, np.True_); omega^2/qhat^2 at 1e-3: [ 0.65987  1.       1.       1.       1.      33.34015]; at 1e-4: [ 0.65987  1.       1.       1.       1.      33.34013]
+  {'U': 3, 'V': 2, 'lam': 0.5, 'mu': 3, 'nu': 1}: PSD(A,B)=(np.True_, np.True_); omega^2/qhat^2 at 1e-3: [0.52787 1.      1.      1.5     1.5     9.47215]; at 1e-4: [0.52786 1.      1.      1.5     1.5     9.47214]
+  {'U': 1, 'V': 1, 'lam': 0.3, 'mu': 1, 'nu': 5}: PSD(A,B)=(np.True_, np.True_); omega^2/qhat^2 at 1e-3: [ 0.27185  0.5      0.5      1.       1.      19.12816]; at 1e-4: [ 0.27185  0.5      0.5      1.       1.      19.12815]
+  {'U': 1, 'V': 1, 'lam': 1, 'mu': 1, 'nu': 1}: PSD(A,B)=(np.True_, np.True_); omega^2/qhat^2 at 1e-3: [ 0.       0.5      0.5      1.       1.      15.00001]; at 1e-4: [ 0.   0.5  0.5  1.   1.  15. ]
+  {'U': 1, 'V': 1, 'lam': 1, 'mu': 1, 'nu': 0.6}: PSD(A,B)=(np.True_, np.False_); omega^2/qhat^2 at 1e-3: [-0.25421  0.5      0.5      1.       1.       8.65422]; at 1e-4: [-0.25421  0.5      0.5      1.       1.       8.65421]
+  (gamma formula check: 4*lam for B11=-q^2 => gamma/|q| = 2 sqrt(lam): [np.float64(0.63246), np.float64(1.0), np.float64(2.0)] )
+
+(e) trace collapse, one cell, diagonal slots only: min over |e_i|<=Emax of e.e - (sum e)^2/2
+  Emax^2=1: min K_diag = -1.5000  (claim -3/2 Emax^2 = -1.5000)
+  Emax^2=16: min K_diag = -24.0000  (claim -3/2 Emax^2 = -24.0000)

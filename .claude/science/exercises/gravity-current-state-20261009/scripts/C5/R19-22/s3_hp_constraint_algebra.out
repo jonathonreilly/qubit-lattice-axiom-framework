@@ -1,0 +1,17 @@
+L=3: slots=162  max|G S^T|=0  rows(C)=810  rank C = 161  full column rank: False
+L=4: slots=384  max|G S^T|=0  rows(C)=1920  rank C = 383  full column rank: False
+L=5: slots=750  max|G S^T|=0  rows(C)=3750  rank C = 749  full column rank: False
+S=0.5: commutator identity residual 4.44e-16;  min |eig S^x| = 0.500
+S=1.0: commutator identity residual 0.00e+00;  min |eig S^x| = 0.000
+S=1.5: commutator identity residual 8.88e-16;  min |eig S^x| = 0.500
+
+Rank deficiency of C is the uniform vector (S^x_a = const passes); go to double commutators (added 06:31Z):
+ [Gp_e,[Gp_e',Sq_y]] = (1/S) sum_a G[e,a]G[e',a]S[y,a] q_a ;  [Sq_y',[Gp_e,Sq_y]] = -(1/S) sum_a G[e,a]S[y,a]S[y',a] p_a
+ On a joint zero vector both vanish; full column rank of the coefficient matrices => q_a psi = p_a psi = 0 for all a
+ => S^x_a psi = -i[S^y_a,S^z_a] psi = 0 => S_a^2 psi = S(S+1) psi = 0 => psi = 0 (every S >= 1/2).
+L=3: slots=162  rank D_q = 162  rank D_p = 162
+L=4: slots=384  rank D_q = 384  rank D_p = 384
+ toy 3-slot S=0.5: g.s=0; smallest eig of A^dag A + B^dag B = 2.725e+00  (0 => joint kernel exists)
+ toy 3-slot S=1.0: g.s=0; smallest eig of A^dag A + B^dag B = -2.486e-15  (0 => joint kernel exists)
+ toy 3-slot S=1.5: g.s=0; smallest eig of A^dag A + B^dag B = 1.065e+00  (0 => joint kernel exists)
+ toy 3-slot S=2.0: g.s=0; smallest eig of A^dag A + B^dag B = -6.344e-14  (0 => joint kernel exists)

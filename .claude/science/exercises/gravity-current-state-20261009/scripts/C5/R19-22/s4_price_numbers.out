@@ -1,0 +1,31 @@
+LIGO-band k a and lattice dispersion (omega = (2/a) sin(k a/2)):
+  f=   10 Hz: k a = 3.387e-42;  1 - v_group = 1 - cos(ka/2) ~ (ka)^2/8 = 1.434e-84
+  f=  100 Hz: k a = 3.387e-41;  1 - v_group = 1 - cos(ka/2) ~ (ka)^2/8 = 1.434e-82
+  f= 1000 Hz: k a = 3.387e-40;  1 - v_group = 1 - cos(ka/2) ~ (ka)^2/8 = 1.434e-80
+
+m_g/M_P <= 1.040e-51;  (m_g a)^2 <= 1.082e-102;  Compton range hbar/(m_g c) = 1.554e+16 m = 1.64 ly
+  massive dispersion at 10 Hz: 1 - v_g ~ m^2/(2 w^2) = 4.715e-20  (vs GW170817 1e-15: mass bound binds, not speed)
+  massive dispersion at 100 Hz: 1 - v_g ~ m^2/(2 w^2) = 4.715e-22  (vs GW170817 1e-15: mass bound binds, not speed)
+
+CONDITIONAL price table (one TT-protecting mechanism assumed to exist; per slot, 6 slots per cell):
+  speed offset dc/c ~ eps  (no retuning): eps <= 1.00e-15
+     HP eps ~ 1/S   : S >= 1.00e+15  qubits/slot =   50.8  per cell =   305.0
+     HP eps ~ 1/S^2 : S >= 3.16e+07  qubits/slot =   25.9  per cell =   155.5
+     clock eps ~ exp(-pi N/2): N >= 22.0  qubits/slot =  4.46 (ceil 5)  per cell = 30
+     clock with s1's fitted slope 1.4452: N >= 23.9  qubits/slot =  4.58
+  mass m_g^2 a^2 ~ eps: eps <= 1.08e-102
+     HP eps ~ 1/S   : S >= 9.24e+101  qubits/slot =  339.7  per cell =  2038.3
+     HP eps ~ 1/S^2 : S >= 9.61e+50  qubits/slot =  170.4  per cell =  1022.2
+     clock eps ~ exp(-pi N/2): N >= 149.5  qubits/slot =  7.22 (ceil 8)  per cell = 48
+     clock with s1's fitted slope 1.4452: N >= 162.5  qubits/slot =  7.34
+
+Age of universe / t_P = 8.08e+60. Lifetime scenario t* ~ S^alpha t_P (SUGGESTED, alpha unknown):
+  alpha=0.5: S >= 6.53e+121, qubits/slot = 405.7
+  alpha=0.75: S >= 1.62e+81, qubits/slot = 270.8
+  alpha=1.0: S >= 8.08e+60, qubits/slot = 203.3
+
+Trace-collapse depth (proved bound, per cell): HP E_gs <= -(3/4) J S + O(1);  clock (CCR scaling) <= -(3 pi/8) J N + O(1)
+  S=1e+01: collapse depth ~ 7.50e+00 J per cell below the HP graviton sector
+  S=1e+15: collapse depth ~ 7.50e+14 J per cell below the HP graviton sector
+  S=1e+51: collapse depth ~ 7.50e+50 J per cell below the HP graviton sector
+  S=1e+102: collapse depth ~ 7.50e+101 J per cell below the HP graviton sector

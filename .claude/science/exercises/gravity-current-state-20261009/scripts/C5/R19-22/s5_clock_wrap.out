@@ -1,0 +1,4 @@
+N=  16: mean fraction of wrapped slots = 0.327;  mean max|S c(n)|/N = 6.00;  slot-0 label histogram (8 bins, 200 samples) = [24 26 32 25 22 24 23 24]
+N=  64: mean fraction of wrapped slots = 0.324;  mean max|S c(n)|/N = 6.04;  slot-0 label histogram (8 bins, 200 samples) = [30 16 28 27 32 28 22 17]
+N= 256: mean fraction of wrapped slots = 0.327;  mean max|S c(n)|/N = 5.95;  slot-0 label histogram (8 bins, 200 samples) = [22 34 19 28 21 23 24 29]
+Exact identity S c(n) = -N S w held on every sample (assert).

@@ -5,55 +5,53 @@ stopped; no replacement author. Focused agents check only. No other-chat
 messages, model changes, credits, main pushes, merges or formal audits.
 Deadline2026-10-13T16:53:00.057432Z, packaging begins16:38Z. Never extend.
 Cancelled toe-observation-inversion campaign remains stopped. Original
-Documents checkout untouched. No conflicting owned process at00:00:30Z.
+Documents checkout untouched. No conflicting owned process at00:59:35Z.
 Cooperative physics-loop lock, same holder, expires02:01:18.073854Z.
 
 ## Current work and exact next action
 
-1. Parent is personally constructing direct_tensor_scalar_reconstruction under
-   gravity/solar_kernel_inversion. Frozen protocol supplies Einstein gravity,
-   constant positive scalar kinetic matrix, and one universal conformal matter
-   metric. This known effective theory family is a new campaign candidate,
-   not a new literature discovery or native framework derivation. Exposed
-   lensing, GW polarization and timing context guides reconstruction. Derive
-   invariant scalar coupling, static/lensing split, physical tidal modes and
-   circular source/flux relation, then check distinct computations. New code
-   and proof are still being authored; no independent support claimed yet.
+1. Parent personally derived the tensor/scalar reconstruction. Full independent
+   report and derivation read; all47 identities verified.175 individual checks
+   and9 row/provenance checks pass with no material finding. The central
+   conditional relation is f_scalar=(1-gamma)/2 and R_circ=(7+5gamma)/12.
+   Action, universal matter metric, zero residual body sensitivities and
+   weak adiabatic circular source are supplied. No empirical acceptance.
+   See direct_tensor_scalar_reconstruction/CHECKED_OUTCOME.md.
 
-2. Conformal completion is fully independently checked. Full report read,
-   all51 identities verified. Exact particle/energy/source and proper-clock
-   transfer agree; distinct acceleration/null-flight/ODE controls supplement
-   the288 parent controls. CHECKED_OUTCOME states the finite-order limits.
-   Exact conformal null paths have no bending; this motivated the next block.
+2. Parent authored and executed direct_scalar_clock_link. Same coupling fixes
+   the canonical scalar vacuum spectrum and a defined balanced two-clock
+   source/readout.98 direct field channels and32 finite oscillator controls
+   pass. Shared long wavelengths cancel, giving finite fixed-distance
+   Ramsey/echo plateaus. Conditional illustrative all-time1-V bounds peak
+   at3.20064e-57/1.28026e-56; they are not actual apparatus constraints or
+   bounds on total gravity noise. Focused independent reviewer
+   /root/direct_quantum_visibility_review is active in independent_review/.
+   Do not modify pinned parent source while it checks.
 
-3. Nonconformal metric/source/radiation block is fully independently checked.
-   Full report read, all119 source/evidence identities verified; receipt
-   b0c2f6f911fd123ee1a38c4adee08f7b5d5644369ede4aac886d44c83c74d7e3.
-   One material finding: constant self terms do not eliminate unequal charge
-   dipoles. Parent preserved originals, narrowed the main law to a formal
-   self-term-discarded point action with zero residual body sensitivities,
-   and derived the extra odd-angular dipole. It is not the complete charged
-   flux. Error normalization also corrected.44 radiation rows,8 ray ODEs
-   and4 dipole controls checked. At bending lambda=1 and circular-calibrated
-   c_s/c=.6988271, e=.6 gives1.0578991 times supplied same-orbit GR power.
-   Cancellation instead requires lambda=.15872125. No pulsar fit/exclusion.
+3. Parent next block works backward from matter charges and neutrino structure:
+   solve anomaly/Yukawa constraints with and without neutral singlets, expose
+   residual B-L freedom, and map primary neutron/molecular neutrality data
+   without importing a neutrality assumption into its own test. Initial
+   primary reading and repo grounding underway. No new runner/output yet.
+   This chat remains sole lead author; agents only check completed sources.
 
-4. Canonical matter/radiation/mechanical-readout milestone is in managed
-   vector-matter-readout-20261012/New Axioms Lets Go, branch
-   codex/local-vector-matter-readout-20261012, stacked on PR9505 exact
-   039198fed41d5599341bbcbc7908dcfae1215421. Current final source
+4. PR9507 is OPEN, verified and attached, branch
+   codex/local-vector-matter-readout-20261012 stacked on PR9505 exact
+   039198fed41d5599341bbcbc7908dcfae1215421. Final source
    16838afb97f8a7f3d3bec9b97f640db9c1e01f9f, tree
-   5d6681aa8e7bb510582f79d2eb951b5173c13b05,115 paths. Full initial port
-   and final same-session reviews read; final receipt2ca14d5c3e686b25707b9acec375447cfb3c319e2ad2f3785b8a1315a1c3761b.
-   UNIT_v1 preflight found an administrative Markdown citation to a recovery
-   file; fixed to code text with original evidence preserved, cache regenerated,
-   same-session affected source check complete. UNIT_v2 preflight passes,
-   SHA bbb2924dac140f0ddffb092dcb424e3749d8bf73a46afc8cf5ab6a34feae8b1b.
-   Three combined package gates currently run in disposable checkout
-   /private/tmp/local-vector-matter-final-validation-20261013, exec27476,
-   runtime matter_milestone/validation/run_combined_v2.py. Poll/results;
-   if all pass, verify no source/manifest drift, push branch, create/verify/
-   attach stacked PR. No formal audit or landing. Never replace raw histories.
+   5d6681aa8e7bb510582f79d2eb951b5173c13b05,115 paths.
+   All three final mechanical package gates passed; source and manifest
+   unchanged. Generated validation changes remain only in disposable checkout.
+   Full source/final review read previously; exact final evidence is copied
+   into milestones/matter_readout with DELIVERY_RECEIPT.json. No running gate,
+   formal audit, merge or main push. Raw recovery bytes remain unchanged.
+
+5. Conformal and nonconformal preceding blocks are fully checked:51/119
+   source identities, respectively. Conformal null paths have no bending.
+   Nonconformal lambda=1 plus circular speed calibration gives e=.6
+   R=1.0578991; source-body sensitivity gap explicitly narrowed and extra
+   dipole diagnostic preserved. No pulsar exclusion. These blocks and the
+   new tensor/clock relation form the next coherent reviewable milestone.
 
 ## Newly checked observation work
 

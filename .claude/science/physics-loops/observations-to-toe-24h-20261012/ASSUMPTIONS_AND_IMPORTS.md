@@ -130,3 +130,15 @@ conformal matter coupling. This is a known alternative-gravity construction,
 not a derivation of microscopic fields. Exposed VLBA gamma, GW170814 pure-mode
 geometry comparisons and GW170817 timing motivate it; no independent holdout
 or imported candidate likelihood is asserted.
+
+## Scalar quantum clock extension
+
+Canonical quantization, a Gaussian Minkowski vacuum, factorized initial
+clock/field state, Gaussian spatial profiles and ideal logical preparation/
+readout are new supplied assumptions. Tensor/apparatus contributions remain
+outside the result. Shared-field source differences are calculated explicitly;
+a single unaffected reference is a distinct supplied comparison. Static
+coupling fixes vacuum amplitude only after the state/action assumptions.
+The previous exposed gamma rectangle gives illustrative SI sizes, not a new
+confidence bound. Classical matched Gaussian noise has identical longitudinal
+visibilities. No quantum-noise identification or total gravity bound.

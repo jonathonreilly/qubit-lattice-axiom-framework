@@ -1,0 +1,138 @@
+{
+  "schema": "focused_same_session_affected_final_identity_v2",
+  "completed_utc": "2026-10-13T00:24:29.133564+00:00",
+  "reviewer_session": "/root/direct_field_check",
+  "same_session_continuation": true,
+  "source_root": "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go",
+  "base": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "original_head": "563deaf1969d342b2b44774062afcd4f592bb2ee",
+  "previous_head": "81209c6aea3cbd55486a1f383129e387db4ef266",
+  "head": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+  "tree": "5d6681aa8e7bb510582f79d2eb951b5173c13b05",
+  "confirmation": "Affected note-link/cache/input identities and two new receipts confirmed; complete 115-path map verified; no material discrepancy.",
+  "report": {
+    "path": "AFFECTED_FINAL_REVIEW.md",
+    "sha256": "a9718f12ef1bf3149c28ec369dc4ada982333feceb95482bdd422e6d4a6aacbe",
+    "bytes": 7278
+  },
+  "original_dispositions": {
+    "path": "original_dispositions_v3.json",
+    "sha256": "d325021ea1303dd35143f9f2e8bb922e293a28421833151ff89456329f644eec",
+    "bytes": 138122
+  },
+  "checks": {
+    "path": "AFFECTED_IDENTITY_CHECKS_v1.json",
+    "sha256": "ebe4709a94ecad4ec22a32385e3ad2d7e3ce1cff73e170040641d689fce5639e",
+    "bytes": 99146
+  },
+  "counts": {
+    "final_paths": 115,
+    "original_dispositions": 86,
+    "unchanged_originals": 82,
+    "previous_metadata_updates": 2,
+    "link_display_updates": 1,
+    "cache_refreshes": 1,
+    "added_receipts": 2,
+    "focused_identity_checks_passed": 143,
+    "focused_identity_checks_failed": 0
+  },
+  "current_note_sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+  "current_cache_sha256": "91126ec54413b351630f1db10cf285ecba4155ecee1a2506282d58480d3c2635",
+  "runner_sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+  "current_input_fingerprint": "43aca66f3af1cda67fe1ecae00cab9bf2c6cdc78077a1783e719c9e0ed035b03",
+  "unchanged_proof_scope": "Exact single markup substitution in the note; runner and all scientific argument bytes unchanged. All earlier mathematical/port checks reused.",
+  "execution_evidence": "Preserved v3 raw receipt reports exit0 and11 passing families; reviewer independently reconstructs exact current cache and fingerprint without executing the author runner.",
+  "original_recovery": "Original note retained in committed reviewer snapshot and original Git objects; original cache retained in exact Git objects and decoded lossless archive. All preceding records preserved.",
+  "historical_topology_note_hash": "TOPOLOGY_v1 still pins original note5f31b076; current note28eac494 bound by correction receipt and FINAL_SOURCE_v2. Dependency manifest unchanged.",
+  "prior_final_receipt": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review/FINAL_IDENTITY_RECEIPT_v1.json",
+    "sha256": "8f51605c7c3fdaa6d7e703b5b69f6d26ff4c5b191df32449118826c3d5115746",
+    "unchanged": true
+  },
+  "final_stability_check": {
+    "head_tree_unchanged": true,
+    "all115_working_hashes_unchanged": true
+  },
+  "limitations": [
+    "Parent-owned replacement unit preflight and combined mechanical gates remain pending.",
+    "No new science computation, empirical likelihood, formal audit, retained grade or landing authority."
+  ],
+  "source_edits": 0,
+  "git_mutations": 0,
+  "author_code_executions_or_imports": 0,
+  "workers_or_models_changed": 0,
+  "write_scope": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review_v2",
+  "evidence_inventory_excludes_receipt_itself": true,
+  "evidence_inventory": [
+    {
+      "path": "AFFECTED_FINAL_REVIEW.md",
+      "sha256": "a9718f12ef1bf3149c28ec369dc4ada982333feceb95482bdd422e6d4a6aacbe",
+      "bytes": 7278
+    },
+    {
+      "path": "AFFECTED_IDENTITY_CHECKS_v1.json",
+      "sha256": "ebe4709a94ecad4ec22a32385e3ad2d7e3ce1cff73e170040641d689fce5639e",
+      "bytes": 99146
+    },
+    {
+      "path": "AFFECTED_SOURCE_CHANGE.diff",
+      "sha256": "c27acf3ea01f380ca5792b701b1830f134f34f8dde79256cddcde22fc263b74b",
+      "bytes": 1949
+    },
+    {
+      "path": "CANONICAL_CACHE_RUN_v3.snapshot.json",
+      "sha256": "f30f45adb0169737354fd7f9961fdb3c0f5be3fb1fce80ad78b5a8cf62996416",
+      "bytes": 1116
+    },
+    {
+      "path": "FINAL_CACHE.snapshot.txt",
+      "sha256": "91126ec54413b351630f1db10cf285ecba4155ecee1a2506282d58480d3c2635",
+      "bytes": 1092
+    },
+    {
+      "path": "FINAL_NOTE.snapshot.md",
+      "sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+      "bytes": 17317
+    },
+    {
+      "path": "FINAL_SOURCE_v2.snapshot.json",
+      "sha256": "83773f959b1aa6720031709fbaa59bc7a8b85ad755eac561a2fadecb788f42b9",
+      "bytes": 28900
+    },
+    {
+      "path": "ORIGINAL_CACHE.snapshot.txt",
+      "sha256": "d48905568a01f4351a450c6861265bc64f309ef95a87bbf0d915e5c33eeca220",
+      "bytes": 1092
+    },
+    {
+      "path": "ORIGINAL_NOTE.snapshot.md",
+      "sha256": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d",
+      "bytes": 17318
+    },
+    {
+      "path": "PREFLIGHT_LINK_CORRECTION_v1.snapshot.json",
+      "sha256": "39c3b8524c28c669b0c8733e1bc17689012ca40280e35a8f2222e3ddb5f195aa",
+      "bytes": 956
+    },
+    {
+      "path": "PRESERVED_UNIT_PREFLIGHT_v1.json",
+      "sha256": "00aa906ece773fa522bf5ae80a7cabd55cc8489698bc8b9e4e74265fa178a247",
+      "bytes": 698
+    },
+    {
+      "path": "PRESERVED_UNIT_v1.json",
+      "sha256": "7219d0cb28529637e517efa818b27db3d6714824f5ef8dd2a8bd9b42415800ab",
+      "bytes": 36006
+    },
+    {
+      "path": "check_affected_identity.py",
+      "sha256": "4b7f7d136f8f3232531c4a68f058d00824838cea13f1a3377d08bdd7d4bf0d73",
+      "bytes": 17344
+    },
+    {
+      "path": "original_dispositions_v3.json",
+      "sha256": "d325021ea1303dd35143f9f2e8bb922e293a28421833151ff89456329f644eec",
+      "bytes": 138122
+    }
+  ]
+}

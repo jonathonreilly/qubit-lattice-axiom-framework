@@ -1,0 +1,255 @@
+{
+  "schema": "focused_tensor_scalar_independent_review_v1",
+  "completed_utc": "2026-10-13T01:01:07.720472+00:00",
+  "reviewer_session": "/root/direct_field_check",
+  "source_root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction",
+  "report": {
+    "path": "TENSOR_SCALAR_REVIEW.md",
+    "sha256": "8b4ae972c5982a14d5a48da43686d0b546f469454b1552596722cf991247ae7e",
+    "bytes": 11776
+  },
+  "independent_derivation": {
+    "path": "INDEPENDENT_DERIVATION.md",
+    "sha256": "d6882adddc190d9ce0a21321599de045b8d2f714ce0842d6033519480e6352f6",
+    "bytes": 10763
+  },
+  "original_dispositions": {
+    "path": "SOURCE_DISPOSITIONS_v1.json",
+    "sha256": "c30a1f5bc4e8c8317c674bc0da9d33e75a3a3619654bdb68769c4e34afdd3a66",
+    "bytes": 8353
+  },
+  "source_pins": {
+    "path": "SOURCE_PINS_v1.json",
+    "sha256": "8113d10f811c6708eadb99c68d3f06d1cabfffc48817e8c6880fbcb0698cbcea",
+    "bytes": 3045
+  },
+  "controls": {
+    "path": "INDEPENDENT_CHECKS_v1.json",
+    "sha256": "15bc647ba37fb85ea8933438a9978dda6ade7dec3a1ab0712febaeca47a146e8",
+    "bytes": 53753
+  },
+  "row_integrity": {
+    "path": "RESULT_ROW_INTEGRITY_v1.json",
+    "sha256": "8f1d5a3845db9a938911b405c1a77cc03863d1481fee0826b2a673357ec95270",
+    "bytes": 919
+  },
+  "scope": "Complete 13-file block read, all output rows read and independently checked; focused mathematical/source review, no formal audit.",
+  "confirmation": "No material mathematical or implementation correction found within the explicit supplied-action, weak point-body, zero residual sensitivity and adiabatic circular scope.",
+  "complete_source_coverage": {
+    "original_files": 13,
+    "field_cases": 5,
+    "author_metric_rank_rows": 4,
+    "pattern_rows": 100,
+    "flux_rows": 20,
+    "lens_rows": 15,
+    "angular_refinement_values": 2,
+    "remaining_result_metadata_read": true
+  },
+  "independent_checks": {
+    "total_passed": 175,
+    "failed": 0,
+    "additional_row_provenance_checks_passed": 9,
+    "nonaxis_metric_symbol_cases": 5,
+    "nonaxis_curvature_cases": 2,
+    "author_runner_imported_or_executed": false,
+    "primary_computational_methods": [
+      "Fierz-Pauli Hessian",
+      "direct linear Riemann",
+      "differentiated inverse-k^4 Green kernel",
+      "sampled orbital Fourier moments",
+      "14-node degree-five sphere cubature",
+      "exact rational sphere moments",
+      "compactified Simpson ray integral"
+    ]
+  },
+  "material_corrections_required": [],
+  "preserved_limits": [
+    "K positive, universal massless conformal coupling and Einstein sector are supplied premises.",
+    "No general nonlinear positivity or material-interior theorem.",
+    "Zero residual body-dependent sensitivities are explicit assumptions; arbitrary compact bodies and eccentric scalar monopoles remain outside the result.",
+    "Formula precision is not an error bound for higher-order source or detector physics.",
+    "Exposed VLBA rectangle is a chosen development rectangle; no candidate-specific GW or pulsar likelihood or new empirical acceptance."
+  ],
+  "final_source_identity": {
+    "all13_sources_match_original_snapshots": true,
+    "author_source_edits": 0
+  },
+  "git_mutations": 0,
+  "formal_audits": 0,
+  "workers_or_models_changed": 0,
+  "new_primary_theory_authored": false,
+  "write_scope": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review",
+  "evidence_inventory_excludes_receipt_itself": true,
+  "evidence_inventory": [
+    {
+      "path": "EXECUTED_CHECKER_v1.py.snapshot",
+      "sha256": "5af34a6b8c72d574658acfacebb71b3448819395b6a2242f96207272c072134b",
+      "bytes": 14435
+    },
+    {
+      "path": "INDEPENDENT_CHECKS_v1.json",
+      "sha256": "15bc647ba37fb85ea8933438a9978dda6ade7dec3a1ab0712febaeca47a146e8",
+      "bytes": 53753
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "sha256": "d6882adddc190d9ce0a21321599de045b8d2f714ce0842d6033519480e6352f6",
+      "bytes": 10763
+    },
+    {
+      "path": "INDEPENDENT_EXECUTION_v1.json",
+      "sha256": "25c865a5696d6025699b73f6fd0ca7e1dca39780e978c831f673c07d11a3a44d",
+      "bytes": 326
+    },
+    {
+      "path": "INDEPENDENT_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "INDEPENDENT_RUN_v1.stdout",
+      "sha256": "ff177db9b11969be55a676b7ecf5a259349c9229a9939beade6950a5231de9ef",
+      "bytes": 291
+    },
+    {
+      "path": "OPERATIONAL_NOTES_v1.json",
+      "sha256": "674512e5a7d2c5ce1bd26eabd635bd6a2872fa2112ae32b2af9e72e9bcd23631",
+      "bytes": 1304
+    },
+    {
+      "path": "PRIMARY_READS_v1.json",
+      "sha256": "e01de5d66707f7d5a8d2eec9bdad624847162c2bc6dbcb20e9db4136404e62ec",
+      "bytes": 1691
+    },
+    {
+      "path": "RESULT_ROW_INTEGRITY_v1.json",
+      "sha256": "8f1d5a3845db9a938911b405c1a77cc03863d1481fee0826b2a673357ec95270",
+      "bytes": 919
+    },
+    {
+      "path": "SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "c30a1f5bc4e8c8317c674bc0da9d33e75a3a3619654bdb68769c4e34afdd3a66",
+      "bytes": 8353
+    },
+    {
+      "path": "SOURCE_PINS_v1.json",
+      "sha256": "8113d10f811c6708eadb99c68d3f06d1cabfffc48817e8c6880fbcb0698cbcea",
+      "bytes": 3045
+    },
+    {
+      "path": "TENSOR_SCALAR_REVIEW.md",
+      "sha256": "8b4ae972c5982a14d5a48da43686d0b546f469454b1552596722cf991247ae7e",
+      "bytes": 11776
+    },
+    {
+      "path": "check_independent.py",
+      "sha256": "5af34a6b8c72d574658acfacebb71b3448819395b6a2242f96207272c072134b",
+      "bytes": 14435
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_23.png",
+      "sha256": "1751498212760343baf3a9ffd4aeb4235f0ab4a1ae452a3e05f5845d49d0fa1e",
+      "bytes": 701927
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_23.txt",
+      "sha256": "6fa122c66ab76178db2e02a20da28fe4325e9508a5903abc92e042b1eb1d0385",
+      "bytes": 2011
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_27.png",
+      "sha256": "763e1b618c6ddc7c1ee58ac8dce850eba91a848a948a0ba8f965b5260636e4ce",
+      "bytes": 544187
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_27.txt",
+      "sha256": "31fa8b2d6879756ad83247bd58ffc2ebcc63b6476638d19363753991adb89f31",
+      "bytes": 1159
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_8.png",
+      "sha256": "6e7ede454250d3a27c036f7e184ec49e476a75e343079d97882abf9670b9b51e",
+      "bytes": 664705
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_8.txt",
+      "sha256": "49deea27c00d2f423427ac8f112d34dee1a1f8bcd1f0ec30bcf70b510ef7a54e",
+      "bytes": 1904
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_9.png",
+      "sha256": "3c3e47b6da08869922621aa45960005d4f70f050ce024dee3ceaea907eda97f4",
+      "bytes": 560507
+    },
+    {
+      "path": "primary_checks/IHES_pdf_page_9.txt",
+      "sha256": "a1b95b92c774a3d5c91fca9de3abc70883087c350dced4145264112e05451553",
+      "bytes": 1390
+    },
+    {
+      "path": "snapshots_v1/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "aa26c0746776187342f01c6b5dc6f5165b039fa7fd266fbf2a572d8ec7c41ece",
+      "bytes": 914
+    },
+    {
+      "path": "snapshots_v1/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "bytes": 12034
+    },
+    {
+      "path": "snapshots_v1/FREEZE.json",
+      "sha256": "8dc2d73161d991595d93b19e4107bb66e3d75850a34c527e76ad76d8626e2ccc",
+      "bytes": 357
+    },
+    {
+      "path": "snapshots_v1/PROTOCOL.md",
+      "sha256": "c53b53b2b000313cf9287cd39bfc5fc05b7f67aafd3f541bb8fb135fef4c6cf5",
+      "bytes": 3436
+    },
+    {
+      "path": "snapshots_v1/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "bytes": 2278
+    },
+    {
+      "path": "snapshots_v1/SOURCE_LEDGER.json",
+      "sha256": "c663cf812d14e09801c8b30f8c6c97eb2cc484863fff9bae81927c43860edece",
+      "bytes": 3110
+    },
+    {
+      "path": "snapshots_v1/TRACE_GATE.md",
+      "sha256": "4681ecddce4ee66ba204ea4a64ee80e17b9a8725152f40f36638da4f63ed1356",
+      "bytes": 532
+    },
+    {
+      "path": "snapshots_v1/check_reconstruction.py",
+      "sha256": "1625124b0fd8df1b3432cccdc97ff9a07270d7aff8919d3617f3d97d463aad43",
+      "bytes": 12496
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/EXECUTION.json",
+      "sha256": "9a8d384f19beb118aa1a344a3a04079e2f71618f5da58bf4da71a509e532f4fc",
+      "bytes": 277
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/FREEZE.json",
+      "sha256": "96b112f50ed80f1c284bfb64f94e65439b4f7750fb931270b8ff0a80712f73c3",
+      "bytes": 1016
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/RESULTS.json",
+      "sha256": "b9cde6ce9ebb1b2dc6fa31ab104bcb602605baf31ec03491cd2b97b9062b2860",
+      "bytes": 50167
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/run.stdout.txt",
+      "sha256": "536d5b0aee9c626d73f848b0422b69a2274227704f9a84beb46e3ba88a9cd425",
+      "bytes": 283
+    }
+  ]
+}

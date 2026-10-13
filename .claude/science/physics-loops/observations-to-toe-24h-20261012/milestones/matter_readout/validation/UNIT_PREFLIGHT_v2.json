@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go",
+    "--record",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/UNIT_v2.json",
+    "--cache"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"schema_version\": 1,\n  \"record_schema_version\": 1,\n  \"mechanical_status\": \"ok\",\n  \"authority\": \"mechanical checks only; independent science review and combined integration gate remain separate\",\n  \"unit_id\": \"local-vector-matter-readout-milestone-20261012\",\n  \"tree\": \"5d6681aa8e7bb510582f79d2eb951b5173c13b05\",\n  \"cache_checked\": true,\n  \"notes\": [\n    {\n      \"path\": \"docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n      \"claim_id\": \"local_vector_matter_radiation_readout_bounded_theorem_note_2026-10-12\",\n      \"primary_runner\": \"scripts/local_vector_matter_readout_2026_10_12.py\",\n      \"helpers\": [],\n      \"graph_transitive_helpers\": [],\n      \"packet_transitive_helpers\": [],\n      \"citations\": [\n        \"docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md\"\n      ]\n    }\n  ],\n  \"supporting_proofs\": [],\n  \"discovery_cache\": {\n    \"graph_imports\": {\n      \"hits\": 8866,\n      \"misses\": 5203\n    },\n    \"packet_imports\": {\n      \"hits\": 8856,\n      \"misses\": 5201\n    },\n    \"declared_inputs\": {\n      \"hits\": 8954,\n      \"misses\": 5364\n    }\n  },\n  \"record_sha256\": \"bbb2924dac140f0ddffb092dcb424e3749d8bf73a46afc8cf5ab6a34feae8b1b\",\n  \"checker_sha256\": \"be6b7b3406423888719c87c966c7373a35b34ae5a2d548fcf1249ad4f981a54a\"\n}\n",
+  "stderr": ""
+}

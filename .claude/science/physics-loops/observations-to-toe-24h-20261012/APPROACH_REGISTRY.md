@@ -40,3 +40,7 @@ law under a corrected zero-sensitivity point premise; no tensor mode.
 Positive tensor/scalar action: current constructive candidate, motivated by
 exposed observational geometry and timing. New Einstein action and universal
 metric are declared imports; no native-gravity or TOE conclusion.
+
+## 2026-10-13T01:08:26.524489+00:00 direct routes
+
+Tensor/scalar common-action route independently checked in its weak circular scope; source-body and microscopic origin remain open. Scalar vacuum clock route links the same static coefficient to an explicit two-center source and logical readout; quantum/state premises exposed, independent check active. Next route: observed charge pattern and neutrality to anomaly/Yukawa family, testing added right-handed neutrinos and compact charge-lattice assumptions without assuming exact neutrino neutrality.

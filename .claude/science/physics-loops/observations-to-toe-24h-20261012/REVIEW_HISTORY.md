@@ -52,3 +52,7 @@ Full HI moment review read and84 identities verified;144 chords336 annuli agree.
 ## 2026-10-13T00:38:09.361259+00:00 conformal and nonconformal checks
 
 Conformal full report and51 source/evidence identities verified. Nonconformal full report and119 identities verified:44 radiation rows,8 independent ray ODEs,4 added dipole controls. Material self-charge assumption gap explicitly narrowed; originals and extra positive dipole preserved. Scaled/fractional error and total-flux wording corrected. No formal audit or empirical exclusion. Final matter115-path review and UNIT_v2 preflight pass; combined gate active.
+
+## 2026-10-13T01:08:26.524489+00:00 tensor and clock update
+
+Parent read complete tensor/scalar independent report and derivation, verified all47 original/evidence paths;175 checks and9 provenance controls pass without correction. Receipt481386eea7570fcf2edb7f063e11addfc878fb65592f52b33b7bff0807f36499. Scalar-clock parent98 channel/32 oscillator controls pass, focused check active. PR9507 final source and all three mechanical gates passed; exact copied evidence under milestones/matter_readout. No formal audit.

@@ -1,0 +1,21 @@
+{
+  "base": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "changed_path_count": 333,
+  "checked": [
+    {
+      "changed_surfaces": [
+        "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "scripts/local_vector_matter_readout_2026_10_12.py"
+      ],
+      "claim_id": "local_vector_matter_radiation_readout_bounded_theorem_note_2026-10-12",
+      "forensic_evidence_ready": true,
+      "helper_runner_paths": [],
+      "issue": null,
+      "runner_path": "scripts/local_vector_matter_readout_2026_10_12.py"
+    }
+  ],
+  "control_failures": [],
+  "diff_scope": "committed_and_worktree",
+  "failures": [],
+  "schema": "changed_audit_evidence_readiness_v1"
+}

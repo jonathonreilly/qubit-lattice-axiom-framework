@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go",
+    "--record",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/UNIT_v1.json",
+    "--cache"
+  ],
+  "exit_code": 1,
+  "stdout": "{\"schema_version\": 1, \"mechanical_status\": \"invalid\", \"error\": \"unresolved source citation: ../.claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md\"}\n",
+  "stderr": ""
+}

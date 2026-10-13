@@ -1,0 +1,459 @@
+{
+  "base": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "head": "81209c6aea3cbd55486a1f383129e387db4ef266",
+  "tree": "1879e5bf0984fe07f81a19b2238f3eb01e8bc6ca",
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/APPROACH_REGISTRY.md",
+      "sha256": "5725b78f26b12922f156dc6e0c195d73b7f14f398b987f32ba5fdf0d42c3bc3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "dcb1dcd0ece5a4de66fd1c3f1446f01dcc854943b7d022cc45d2a139f4986f58"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/GOAL.md",
+      "sha256": "414a0160a278b84544d432082405433faf5250456c5e55630f67bf82c3cc5fc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md",
+      "sha256": "ea940664640a6bf70ec9c5b0e9bd4a8ab4953902ef6cc60f018f407e7ea82460"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/PORT_MAP_v1.json",
+      "sha256": "c644b4f198df621c1308356356488bdd600640bdd1050fca373d31e899a8f130"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/REVIEW_HISTORY.md",
+      "sha256": "80551ee1c2d9f7ced925e90385a78a9495d54e1ef1dacb97718cfe8de4368f13"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/SOURCE_DISPOSITION_v1.json",
+      "sha256": "67bc99522a4471fda00749db3bb687ff3cde20b37d9ba30767591f427460aa59"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/TRACE_GATE.md",
+      "sha256": "7423e7e2a2ca187767e3e1675837322ab35fc817328389ce12ac296db734afdb"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/ARCHIVAL_BYTES_v1.json",
+      "sha256": "716229493a0ba004a135a5ebb31058152619ce1f6b05f2f18b6cc95512b51031"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/CANONICAL_CACHE_RUN_v1.json",
+      "sha256": "dfce342491ad572cdd6e2c5dc09aa04de399b692daf4bb6f78de98445251bcd2"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/CANONICAL_CACHE_RUN_v2.json",
+      "sha256": "a46591e3f0565eee0335840c8c1b08596bd0c8d1756af73d5ce54da4391096ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/CANONICAL_RUN_v1.json",
+      "sha256": "b16a76c30c747ef1fd82037a290bc11a2c28846d1eb4d7cbb0c3925d09e7e1ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/CANONICAL_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/CANONICAL_RUN_v1.stdout",
+      "sha256": "1250cd0ddb48b47b792f936f79bf396c254e52b69cfa88ddb44c61ab12358247"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/EXECUTED_RUNNER_v1.json",
+      "sha256": "21872096f717b6366c4a95dd31fab2d765ba7b7682ad2896501dc2670ea1510f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/RECOVERY.md",
+      "sha256": "d5e206088a13d7910bfe7d55c3c0e61ea2a9763786876084e2c396e6f6b49ef9"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/REVIEW_CACHE_SNAPSHOT_BYTES_v1.json",
+      "sha256": "574491486bb1bb6b431d5bac45c9837dcdd4610beabfbee99249489979757daf"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/TOPOLOGY_v1.json",
+      "sha256": "46bf489a8409f6a59337111218e225730b8e46a8c234cc7945d7b14133986a16"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/CANONICAL_PORT_REVIEW.md",
+      "sha256": "54b4eeb00ed8c24abab455b4f8e6dff876c485547a18dbe089c81cb81b8c8019"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/CONTEXT_PINS_v1.json",
+      "sha256": "48a7022dcd6e088b56c2d463e4eb5155a87eb1a62495df7d24c4d3246472a362"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/OPERATIONAL_NOTES_v1.json",
+      "sha256": "100c34ae6e4917889eece7189661fe162a1436943bff0132626a555c40b5af1f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/PARENT_INITIAL_WHITESPACE_CHECK.snapshot.json",
+      "sha256": "a2c707c88d74ad13759d3be2566cb50748e690404f68b2a4592f65799dc17971"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/PORT_CONTROLS_v1.json",
+      "sha256": "824b5a335acd22a1af60b460b86532ce422a692ae9ce93fd8320a2cf14e383ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/PORT_PRESERVATION_CHECKS_v1.json",
+      "sha256": "185d700bf9abde4b2155a319f86d8deb391b6825dc7e3abaaeab0b3b1d2e9932"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/PORT_REVIEW_RECEIPT_v1.json",
+      "sha256": "8b2b1d85cd1b87acae7691c20066b269e75b402c96f6f584d0b998fa62241dab"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/PORT_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/PORT_RUN_v1.stdout",
+      "sha256": "0bdb3ac4004a7ff69bcbb6b1104c1e83f64cfc31a132524d538f887f5a3c95d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/SOURCE_FREEZE_v1.json",
+      "sha256": "8158829adf3195eaceb75cf921f2179ec3b84c0d8a10216d0a954a2dee901e2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/SOURCE_PINS_v1.json",
+      "sha256": "3adfb42d211a76e6b8651ce399ea4793c7cfc943953f1ee5b5f4373d11859ba5"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/TOPOLOGY_CHECK_v1.json",
+      "sha256": "64c055885a55b9da9551dbb30392e981a7d24f32d4af1b863d66b7b98881159f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/check_port_independent.py",
+      "sha256": "04236ac9d5d9e66197dc89f2022234d6033a08425589c8ca5952a617af73b11b"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/io_fixtures/same_run.json",
+      "sha256": "a40175f85273ef6efd73638b2b85c4cb857ce5f2746d9cfc16acf8245c26a921"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/original_dispositions_v1.json",
+      "sha256": "f1e9d105a157c86459c8db027c810dfbcfcd9ba88d38da26d68506457783dbf3"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/APPROACH_REGISTRY.md",
+      "sha256": "5725b78f26b12922f156dc6e0c195d73b7f14f398b987f32ba5fdf0d42c3bc3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "dcb1dcd0ece5a4de66fd1c3f1446f01dcc854943b7d022cc45d2a139f4986f58"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/GOAL.md",
+      "sha256": "414a0160a278b84544d432082405433faf5250456c5e55630f67bf82c3cc5fc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md",
+      "sha256": "1f2b3931f17fc6915bd19738250735f942f0773883d058061fbec25b7333e142"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/PORT_MAP_v1.json",
+      "sha256": "c644b4f198df621c1308356356488bdd600640bdd1050fca373d31e899a8f130"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/REVIEW_HISTORY.md",
+      "sha256": "2047014591e7b0c3eb0bf1977c929d99dc2aceac56c3cdce3d3be9086ac83b0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/SOURCE_DISPOSITION_v1.json",
+      "sha256": "67bc99522a4471fda00749db3bb687ff3cde20b37d9ba30767591f427460aa59"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/TRACE_GATE.md",
+      "sha256": "7423e7e2a2ca187767e3e1675837322ab35fc817328389ce12ac296db734afdb"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/independent_port_review/snapshots_v1/scripts/local_vector_matter_readout_2026_10_12.py",
+      "sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/CHECKED_OUTCOME.md",
+      "sha256": "c5c29efb132c07c210a3de0855ac35113a1199578924af84ea4f26326c5dda4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "ebab250807cf24053102324ae55b0a88a7d2d5f3fdb7af0efcf243733fe698e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/DIRECT_MATTER_RADIATION.md",
+      "sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/PROTOCOL.md",
+      "sha256": "ce1cda1413472803548599058dca8b468f897b42e569ecfc93014cafecffa43c"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/SOURCE_LEDGER.md",
+      "sha256": "7ea013f46a77b7a1e7c8d0c592c1918e026aeb26bb36a5fa6da32c0cc76cc802"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/TRACE_GATE.md",
+      "sha256": "ad0964fe92edb93d3d45fde473d80850b6dff3026ddafe320e678c3eb24b7af8"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/direct_radiation_check.py",
+      "sha256": "c88e590e32a308ec9012cc814a21a021aaf9d6ce78dfdf3d50f87db10634d9f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/evidence_v1/RESULTS.json",
+      "sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/CHECKS_v1.json",
+      "sha256": "ac58e97d57f1c39ad105e2adc559bbd44fd11d3c13a96f86549cb7ec3c561bc1"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/HARMONIC_TAIL_BOUND_v1.json",
+      "sha256": "a3a1686a12c6f7d63b766137c84f528adc466c48c100f6fabb486219366e987a"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/METADATA_CONFIRMATION_v1.md",
+      "sha256": "0941695a5c6c40786bd942973d2aa37fd5d488c86c2873f4fd27705134973275"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/PRIMARY_SOURCE_CHECK_v1.json",
+      "sha256": "895bc3ba9704bb899999df4c8b2cd6f6ae9c5a75b39bd2994f92a625c028b836"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/RAW_EXECUTION_v1.json",
+      "sha256": "e35f0e2910a73f0b61d7f041c53529972f60da0555d1271c7827f645df8e29eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/REPORT_WRITE_FAILURE_v1.txt",
+      "sha256": "9f74e9b7b3b169ec614491a5f72fa3fd23d5211fa1c44ce11d857eeb7c5b1510"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/REVIEW.md",
+      "sha256": "39e049333ce480b41cd87c2bd1092e1562c54834428adb5abe2e5bc2a8790e51"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/REVIEW_RECEIPT_v1.json",
+      "sha256": "948971bc1b2c2d6d73d59b0c295c062e380480bbc30d8f044fd7e30186d8ea53"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/REVIEW_RECEIPT_v2.json",
+      "sha256": "a454751a65971f15b284d70862a0e6355f6305c8040c51d9aa166a6986ab5b40"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/SOURCE_PINS_v1.json",
+      "sha256": "cfb4d36c3ce9de42470de85421709e396cd974ac2ef236d95f9d04bfb311f8a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/independent_radiation_check.py",
+      "sha256": "f8956e09e3f960f57ab514076348cfbef778684b4fa18dc24608fa92d87713a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "ebab250807cf24053102324ae55b0a88a7d2d5f3fdb7af0efcf243733fe698e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/DIRECT_MATTER_RADIATION.md",
+      "sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/FIELD_PREMISES.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/PROTOCOL.md",
+      "sha256": "ce1cda1413472803548599058dca8b468f897b42e569ecfc93014cafecffa43c"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/SOURCE_LEDGER.md",
+      "sha256": "7ea013f46a77b7a1e7c8d0c592c1918e026aeb26bb36a5fa6da32c0cc76cc802"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/TRACE_GATE.md",
+      "sha256": "ad0964fe92edb93d3d45fde473d80850b6dff3026ddafe320e678c3eb24b7af8"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/direct_radiation_check.py",
+      "sha256": "c88e590e32a308ec9012cc814a21a021aaf9d6ce78dfdf3d50f87db10634d9f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_matter_radiation/independent_review/pinned_source/evidence_v1/RESULTS.json",
+      "sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/CHECKED_OUTCOME.md",
+      "sha256": "1ef13a76706a93470048372a1520d6f80d48e64fec690843a78734651e48499f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "c8239cdb5b6dbe5e1b1843c5858a27f63daf34a3e7c8454beff9ff0c605c31c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/DIRECT_READOUT.md",
+      "sha256": "6c33aa974f21ff0934a8c825c5b77ba8354b68bc7e27a802d13531fb6b5ca290"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/PROTOCOL.md",
+      "sha256": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/SOURCE_LEDGER.md",
+      "sha256": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/TRACE_GATE.md",
+      "sha256": "8c44d7ba8b26284f6b5af12336b454615304c425624931f38ecac9539c69f160"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/direct_readout_check.py",
+      "sha256": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/evidence_v1/RESULTS.json",
+      "sha256": "38211e20ff4a0d9cac2602994dbc34955ffbd9fa9f07178639cca01db534e9f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/evidence_v1/source_snapshot/DIRECT_READOUT.md",
+      "sha256": "392e8d068c9f07c1e3584a8f5f93cc014afcf09a02f67f43eeafa646b19b7f8c"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/evidence_v1/source_snapshot/SOURCE_LEDGER.md",
+      "sha256": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/evidence_v1/source_snapshot/direct_readout_check.py",
+      "sha256": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/FINAL_REVIEW_RECEIPT_v1.json",
+      "sha256": "23c796065abd9801c535a553149cf3f23f05a7cb1bb116991f699593277aae25"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/INDEPENDENT_CALCULATIONS_v1.json",
+      "sha256": "ec51f4ec4bbbe5bf5f2e1319dacb57bc03ec61233840098d7a077396e64e9e4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/INDEPENDENT_CALCULATIONS_v2.json",
+      "sha256": "d52d022e2d9916a77d9a73ed5a05884ec459c71f2f627b4063bab2ceae278700"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/INDEPENDENT_RUN_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/INDEPENDENT_RUN_v1.stdout",
+      "sha256": "5acd05fcbb5d8876a7db08b59cd427e4b2c75ccb7b219ccab4eb8206245a5090"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/INDEPENDENT_RUN_v2.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/INDEPENDENT_RUN_v2.stdout",
+      "sha256": "9d978220044a7e478cb3819f7f7301967714eeeac05b81448a3a5d09b239a046"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/READOUT_REVIEW.md",
+      "sha256": "e914370e90dd7cab8c5f88b8d2c4c218e3abda55ebd7419bb4566086866d0484"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/REVIEWER_CONTROL_CORRECTION_v1.json",
+      "sha256": "7bb622d196f6c0b535df7d762569f6095133479608ae18b273491235ad3421b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/check_readout_independent.py",
+      "sha256": "ab008e45df5e193395d1248e0f88e0f74b92dbc3d5e5b8ed8d3a9d309cdcbf8e"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/check_readout_independent_v2.py",
+      "sha256": "eb51cc14303875c3b5b9ea018dea518d80def4893dc51f558ab98bcedbb9fdef"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/operational_failures_v1.json",
+      "sha256": "2e21191ea3d23bd24ccdfb7fcda160b80f17412789bf5075adffbf73caea688e"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/primary_sources/SOURCE_READ_v1.json",
+      "sha256": "39c263cf2339cf63da758101149e200d300c4c5e32d7f1083e6bd48f69787d9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/reviewer_v1_to_v2.diff",
+      "sha256": "70a4e4efc1e2a83cbdbb43b9e2fe8efde13b55b176a324793732d24004beff6a"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/DIRECT_READOUT.md",
+      "sha256": "6c33aa974f21ff0934a8c825c5b77ba8354b68bc7e27a802d13531fb6b5ca290"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/PROTOCOL.md",
+      "sha256": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/SOURCE_LEDGER.md",
+      "sha256": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/direct_readout_check.py",
+      "sha256": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/evidence_v1/RESULTS.json",
+      "sha256": "38211e20ff4a0d9cac2602994dbc34955ffbd9fa9f07178639cca01db534e9f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/original_executed/DIRECT_READOUT.md",
+      "sha256": "392e8d068c9f07c1e3584a8f5f93cc014afcf09a02f67f43eeafa646b19b7f8c"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/original_executed/PROTOCOL.md",
+      "sha256": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/original_executed/SOURCE_LEDGER.md",
+      "sha256": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/original_executed/direct_readout_check.py",
+      "sha256": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/prior_matter/DIRECT_MATTER_RADIATION.md",
+      "sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/snapshots/prior_matter/evidence_v1/RESULTS.json",
+      "sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/source_recovery/direct_vector_readout/independent_review/source_manifest_v1.json",
+      "sha256": "64521db2ca1756ee0f0eb1baf779c3b2beafef9a287fa1a7866e4a8826b689b0"
+    },
+    {
+      "path": "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "d727b2b7a64dd07e913f670f415c4f4355d2671a1199b252fc3ff6ec10ef7361"
+    },
+    {
+      "path": "logs/runner-cache/local_vector_matter_readout_2026_10_12.txt",
+      "sha256": "d48905568a01f4351a450c6861265bc64f309ef95a87bbf0d915e5c33eeca220"
+    },
+    {
+      "path": "scripts/local_vector_matter_readout_2026_10_12.py",
+      "sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e"
+    }
+  ]
+}

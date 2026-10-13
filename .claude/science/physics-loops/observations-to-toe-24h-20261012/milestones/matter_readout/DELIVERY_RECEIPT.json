@@ -1,0 +1,127 @@
+{
+  "at": "2026-10-13T01:04:27.415090+00:00",
+  "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9507",
+  "verified_head": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+  "verified_tree": "5d6681aa8e7bb510582f79d2eb951b5173c13b05",
+  "verified_base": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "chat_attached": true,
+  "verification_record": "runtime PRS.json",
+  "source_package": "codex/local-vector-matter-readout-20261012",
+  "copied_evidence": [
+    {
+      "path": "FINAL_SOURCE_v1.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/FINAL_SOURCE_v1.json",
+      "sha256": "c163499842b31d408fb943887cc6879ed88cefa3dd1d135a1c2d3848a36023a2",
+      "bytes": 28460
+    },
+    {
+      "path": "FINAL_SOURCE_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/FINAL_SOURCE_v2.json",
+      "sha256": "83773f959b1aa6720031709fbaa59bc7a8b85ad755eac561a2fadecb788f42b9",
+      "bytes": 28900
+    },
+    {
+      "path": "PR_BODY.md",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/PR_BODY.md",
+      "sha256": "e932b0ebbcc4301c1dcc8e0f248fc6a85ace2ee21ea830eda10d59426c13958e",
+      "bytes": 1383
+    },
+    {
+      "path": "validation/UNIT_v1.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/UNIT_v1.json",
+      "sha256": "7219d0cb28529637e517efa818b27db3d6714824f5ef8dd2a8bd9b42415800ab",
+      "bytes": 36006
+    },
+    {
+      "path": "validation/UNIT_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/UNIT_v2.json",
+      "sha256": "bbb2924dac140f0ddffb092dcb424e3749d8bf73a46afc8cf5ab6a34feae8b1b",
+      "bytes": 37244
+    },
+    {
+      "path": "validation/UNIT_PREFLIGHT_v1.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/UNIT_PREFLIGHT_v1.json",
+      "sha256": "00aa906ece773fa522bf5ae80a7cabd55cc8489698bc8b9e4e74265fa178a247",
+      "bytes": 698
+    },
+    {
+      "path": "validation/UNIT_PREFLIGHT_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/UNIT_PREFLIGHT_v2.json",
+      "sha256": "375129dff97789a9582a5df8e229a6b14ddac4e6e00da5e56b210f662e731b22",
+      "bytes": 1918
+    },
+    {
+      "path": "validation/START_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/START_v2.json",
+      "sha256": "8b14d9eb38e5ae48b71b6690a6787279eec4ca0cb7b99765a6ecd8ec754970ad",
+      "bytes": 1119
+    },
+    {
+      "path": "validation/RESULTS_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/RESULTS_v2.json",
+      "sha256": "a5adc8cf618f14cae2e5c25bfb31bb2f6fb5de50c54e522e0ba36787d5e395ec",
+      "bytes": 2449
+    },
+    {
+      "path": "validation/FINAL_SOURCE_STABILITY_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/FINAL_SOURCE_STABILITY_v2.json",
+      "sha256": "5100e2646be5e57c551cdad6383ac97f6ac8daab0eeed19574070e655680bfcf",
+      "bytes": 485
+    },
+    {
+      "path": "validation/run_combined_v2.py",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/run_combined_v2.py",
+      "sha256": "a193a44f4c48fe49d4fc0df64ea35bb310c7debcda1c7732afeaefa8d66be511",
+      "bytes": 2589
+    },
+    {
+      "path": "validation/gate-1_v2.log",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/gate-1_v2.log",
+      "sha256": "6c7029f22b87d707fddbf27340bd4c39fdd8a8951d2d391eb4b3229b5eccc3d6",
+      "bytes": 21650
+    },
+    {
+      "path": "validation/gate-2_v2.log",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/gate-2_v2.log",
+      "sha256": "33c89038162a44d914762f3623645870effbe75f89b0997ca36fa429311da856",
+      "bytes": 13775
+    },
+    {
+      "path": "validation/gate-3_v2.log",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/validation/gate-3_v2.log",
+      "sha256": "a5f571f40e63ab6492b8867979417c6516acf4583ab224ad80bc41b9c3771389",
+      "bytes": 698
+    },
+    {
+      "path": "final_identity_review/FINAL_IDENTITY_REVIEW.md",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review/FINAL_IDENTITY_REVIEW.md",
+      "sha256": "246b2793c10403015b8f3075860d342818d91e323f97a5844af70f2197cd64e2",
+      "bytes": 8787
+    },
+    {
+      "path": "final_identity_review/FINAL_IDENTITY_CHECKS_v1.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review/FINAL_IDENTITY_CHECKS_v1.json",
+      "sha256": "ea382b0d2b4e887026f7c8d8c3ca9de8e787823c088a53f16cbd88906c6c011b",
+      "bytes": 185966
+    },
+    {
+      "path": "final_identity_review/FINAL_IDENTITY_RECEIPT_v1.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review/FINAL_IDENTITY_RECEIPT_v1.json",
+      "sha256": "8f51605c7c3fdaa6d7e703b5b69f6d26ff4c5b191df32449118826c3d5115746",
+      "bytes": 6698
+    },
+    {
+      "path": "final_identity_review_v2/AFFECTED_FINAL_REVIEW.md",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review_v2/AFFECTED_FINAL_REVIEW.md",
+      "sha256": "a9718f12ef1bf3149c28ec369dc4ada982333feceb95482bdd422e6d4a6aacbe",
+      "bytes": 7278
+    },
+    {
+      "path": "final_identity_review_v2/AFFECTED_FINAL_RECEIPT_v2.json",
+      "runtime_original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/matter_milestone/final_identity_review_v2/AFFECTED_FINAL_RECEIPT_v2.json",
+      "sha256": "2ca14d5c3e686b25707b9acec375447cfb3c319e2ad2f3785b8a1315a1c3761b",
+      "bytes": 5963
+    }
+  ],
+  "original_review_source_and_other_snapshots": "Preserved in original runtime paths and source PR; these copied receipts identify them."
+}

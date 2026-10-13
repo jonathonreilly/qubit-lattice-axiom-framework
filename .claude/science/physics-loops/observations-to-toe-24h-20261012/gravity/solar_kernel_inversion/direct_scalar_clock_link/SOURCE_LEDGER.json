@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-10-13T01:01:46.288504+00:00",
+  "author": "direct_chat_author",
+  "local_action_inputs": [
+    {
+      "path": "../direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "scope": "Supplied known effective action and parent conditional static coefficient; focused independent review in progress."
+    },
+    {
+      "path": "../direct_tensor_scalar_reconstruction/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "scope": "Supplied known effective action and parent conditional static coefficient; focused independent review in progress."
+    },
+    {
+      "path": "../direct_tensor_scalar_reconstruction/SOURCE_LEDGER.json",
+      "sha256": "c663cf812d14e09801c8b30f8c6c97eb2cc484863fff9bae81927c43860edece",
+      "scope": "Supplied known effective action and parent conditional static coefficient; focused independent review in progress."
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "NIST CODATA 2022 complete constants table",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "read_scope": "Entries for Newtonian gravitation, Planck constant and speed of light; no later adjustment assumed.",
+      "used_values": {
+        "G_N": 6.6743e-11,
+        "standard_uncertainty_G_N": 1.5e-15,
+        "h_exact": 6.62607015e-34,
+        "c_exact": 299792458
+      },
+      "role": "Illustrative unit translation, not independent physics likelihood."
+    },
+    {
+      "title": "Quantum Computers and Dissipation, Palma, Suominen, Ekert",
+      "url": "https://arxiv.org/abs/quant-ph/9702001",
+      "read_scope": "Search result/abstract only.",
+      "role": "Prior-art context for shared-environment dephasing; no equation imported and no new-literature-discovery claim."
+    }
+  ],
+  "local_calculation": "Canonical normalization, Gaussian source Fourier factors, exact integrals, bounds and controls derived directly in this chat.",
+  "observation_roles": {
+    "calibration": "No new fitted parameter. Prior exposed gamma working rectangle supplies an illustrative upper fraction.",
+    "exposed_development": "Physical clock/gravity motivation and CODATA values.",
+    "independent_test": "None. All executed rows are mathematical/synthetic controls."
+  },
+  "failures": "No failed execution of this runner; first frozen run exit0 with unchanged source."
+}

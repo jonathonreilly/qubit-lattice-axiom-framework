@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-13T00:39:30.983334+00:00",
+  "source_head": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+  "source_tree": "5d6681aa8e7bb510582f79d2eb951b5173c13b05",
+  "all_three_gates_passed": true,
+  "source_tracked_clean": true,
+  "validation_tracked_drift_is_generated_only": true,
+  "generated_changes_not_copied_to_source": true,
+  "principal_source_and_manifest_unchanged": true,
+  "result_sha256": "a5adc8cf618f14cae2e5c25bfb31bb2f6fb5de50c54e522e0ba36787d5e395ec"
+}

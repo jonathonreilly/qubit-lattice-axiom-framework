@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-13T01:03:18.335706+00:00",
+  "full_primary_sources_preserved_not_republished": [
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_23.png",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_23.png",
+      "sha256": "1751498212760343baf3a9ffd4aeb4235f0ab4a1ae452a3e05f5845d49d0fa1e",
+      "bytes": 701927,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_23.txt",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_23.txt",
+      "sha256": "6fa122c66ab76178db2e02a20da28fe4325e9508a5903abc92e042b1eb1d0385",
+      "bytes": 2011,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_27.png",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_27.png",
+      "sha256": "763e1b618c6ddc7c1ee58ac8dce850eba91a848a948a0ba8f965b5260636e4ce",
+      "bytes": 544187,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_27.txt",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_27.txt",
+      "sha256": "31fa8b2d6879756ad83247bd58ffc2ebcc63b6476638d19363753991adb89f31",
+      "bytes": 1159,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_8.png",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_8.png",
+      "sha256": "6e7ede454250d3a27c036f7e184ec49e476a75e343079d97882abf9670b9b51e",
+      "bytes": 664705,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_8.txt",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_8.txt",
+      "sha256": "49deea27c00d2f423427ac8f112d34dee1a1f8bcd1f0ec30bcf70b510ef7a54e",
+      "bytes": 1904,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_9.png",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_9.png",
+      "sha256": "3c3e47b6da08869922621aa45960005d4f70f050ce024dee3ceaea907eda97f4",
+      "bytes": 560507,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_9.txt",
+      "runtime_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/independent_review/primary_checks/IHES_pdf_page_9.txt",
+      "sha256": "a1b95b92c774a3d5c91fca9de3abc70883087c350dced4145264112e05451553",
+      "bytes": 1390,
+      "public_source_url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "read_scope": "Reviewer-selected pages8,9,23,27; full primary source is not republished."
+    }
+  ]
+}

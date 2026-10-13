@@ -1,68 +1,60 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T07:18:51.999539+00:00. Sole current checkpoint. Deadline 2026-10-13T16:42:30Z.
-Active CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, clean branch physics-loop/toe-prepared-energy-20261013, HEAD/base bd831ffb14c7d7f12bf1b8165596a0db85f838ef, child of regular9511.
-Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree, prior HEAD bd29d21da6d878d665807257c6681ed1511c48b1. Primary untouched.
-Eight renewal regular PRs9499/9500/9502/9504/9506/9508/9510/9511 remain open.
-9511 is attached, regular and unmerged. No science main push, audit verdict,
-physical-axiom or editable-prompt change, or other-chat message.
+Updated 2026-10-13T08:04:23.211626+00:00. Sole current checkpoint. Deadline 2026-10-13T16:42:30Z.
+CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; clean active branch physics-loop/toe-calibrated-energy-20261013, HEAD/base f6a820fd66011a50752670a454fb375b420ddbd6, child of regular9512.
+Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; prior checkpoint ace3b94b75c38abfa72c2602a1fa74c7761d15c0. Primary untouched.
+Nine renewal regular PRs9499/9500/9502/9504/9506/9508/9510/9511/9512 remain open.
+No merge/main push/audit verdict/physical-axiom or editable-prompt change/other-chat message.
 
-## Current science
+Prepared-energy9512 is open, regular, attached. Exact353committedpaths atf6a820fd.
+Packagef53bdbbb/511members, rootacceptancea055707a/review9be8fc55. Six2923corelines
+unchanged. Prepare225.743s and verify4.516s exit0;4freshidentitycaches,4exactreason
+corruption failures,+4nodes/+15edges,oldcompletegraphpreserved. Exactstageblobs
+verified before/afterfocusedchecker: checked=[];zero mathematical predicates.
+Rawwhitespaceexit0,noexceptions. Do not rerun completed publication. Later
+combined current-main pipeline/strict lint/cumulative stack/audit gates remain.
 
-Prior fully checked all-time809, independent423 and inverse520 remain valid
-at their frozen identities. The prior HANDOFF is archived in history; their
-complete evidence and corrected-dynamics9511 publication remain in MAP.
-Do not re-run9511 preparation: actual prepare225.990s/verify3.794s and separate
-root completion supplement produced284committedpaths. Identity checks had
-zero scientific predicates; formal/combined landing gates remain separate.
+All-time809/3c4ba3b8, independent423/1930c88f, inverse520/b2f10966,
+compact360/e1973088 and weighted566/974e43e2 remain accepted at their exact
+prior identities. Their complete proofs, reviews and counterexamples are in MAP.
+The energy-coordinate/all-time/local-calibration/weighted family still needs
+a coherent regular milestone PR; avoid losing this unpublished work.
 
-New separate compact-input360/e1973088 frozen873d0a05 is fully root-read
-d419bd/93adb5 and accepted0d7c0efc, review51055a2c. Eight evidence members,
-fourteen bindings and two source refreshes verified. Ordered inverse, support,
-explicit finite seminorm and norm compensation checked. This uses own423 as
-an exposed premise; it is not another independent expansion proof.
+Graph262/27e2e2ad now has full separate crosscheck466/93c2604d frozenfee61561,
+root reads eb13f1/91ffb0/24157c and acceptance11890760,review8a415437.
+G1-G14 no mandatory formula repair. Domain regularity is remaining-order;
+fixed n supportsq<=2n. Direct finite-first-energy work estimate needs onlyL1
+controls and first commutators. Weighted source stayed excluded from that
+crosscheck. Root interface111/V2 884c265e composes accepted weighted566 and
+graph results; focused source-exposed check active. Its V1 is preserved.
 
-Weighted566/974e43e2 frozen1499df76 fully read201319/47a0f2/c9efd2,
-accepted798c14f8, reviewc20bf736,30members verified. Exact energy-graph
-contractivity retains all aliases. Global weighted Taylor/inverse error is
-O(a^(N+1)) with M>2N+r+5/2 and N+1 Fourier derivatives. Finite even CAR
-commutator errors follow. Fixed data/orders/resources; no boost or physical
-selection claim. No formula repair; ordinary analytic review, not Lean/audit.
+Root pair286/c388c16e sealeda85b6101 is an ordinary conditional candidate.
+Fresh pair792/4e0de0b1 frozen075753 is archived but NOT YET ROOT-READ.
+Preview reports same linear threshold coefficient, general hierarchy,
+eta*T->0 weak regime, logarithmic threshold drive and calibrated limits.
+Compare the complete arguments and correlation conventions before adoption.
+Old pair worker's compact failure4d8156fe is preserved; no partial result used.
 
-Root262/27e2e2ad graph-transfer candidate was sealedeba0a48f before the
-weighted source was opened. Original seal and source-resolution supplement
-preserve filename lookup history. Coupled triangular comparison, fractional
-weighted density/free-energy-law bounds and finite-first-energy work estimate
-G1-G14 are only root-checked so far. Accepted weighted566 supplies its actual
-input premise. Separate check has no result after two selected-model capacity
-errors. Do not label the propagation theorem independently checked yet.
+Kinetic root plan2bf34704 and WORKING_NOTES preserve an unverified proposed
+finite-rank Volterra/time-L2 proof for zero-mean compact inputs. They target
+nonzero energy atT=tau/lambda^2 and a^(N+1)=o(lambda^2), not an accepted theorem.
+Root saw the pair preview before saving the plan but has not opened its full
+proof or any independent kinetic draft. Dedicated kinetic worker has a neutral
+question, exact canonical/weighted/smooth/graph premises and excludes every
+pair-response/rootkinetic source. Preserve this exposure boundary.
 
-LOW_ENERGY_PAIR_RESPONSE_ROOT_PLAN.md proposes direct pair spectral density,
-threshold and a weak long-drive actual-cell limit. This is a next route, not
-an accepted response law. Inspect normalization and positive polarization.
+Active workers: energy_cell_expansion_fresh checks weighted/graph interface;
+weak_drive_kinetic_independent derives kinetic route; pair_response_fresh
+completed792, idle awaiting root; observable_correlations_recovery errored
+on old pair task, accepted weighted566 unaffected. No model/effort downgrade.
 
-## Publication and workers
+Latest remote refresh073953: main516cb69d,instruction3a4b2c66,all18procedurebytes
+unchanged; nochangedexternalPRs. Own9512 subsequentlypublished. Lock expires
+2026-10-13T10:00:24.999251+00:00; refresh before0940UTC. Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_and_response_recovery_20261013T080423Z.tar.gz;
+manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_and_response_recovery_20261013T080423Z.tar.MANIFEST.json; 979 files. MAP 11284 aliases hash-verified.
+Active interface/kinetic worker outputs excluded; all failures retained.
 
-Prepared-energy assembly32238b64 remains accepted7a113128,2923unchangedcorelines.
-Source-only prepared_energy_publication_preparation contains481files as of
-root inventory49929b, no FINAL_FREEZE at that time. The worker failed for
-model capacity, then was retried with unchanged model/effort. It is running.
-Root has not adopted partial package contents or performed canonical runtime.
-Wait for freeze; if repeated capacity failure, preserve/recover partial work
-explicitly before root completion. Do not claim the failed turn completed.
-
-energy_cell_expansion_fresh: graph-transfer reviewer failed twice for model
-capacity; retry with backoff and same selection. observable_correlations_recovery:
-weighted566 complete/root accepted, idle. These are native current-task workers,
-not other chats. No model downgrade or fake mathematical failure inference.
-
-Latest sync07:04:09 main516cb69d/instruction3a4b2c66,18procedurebytes unchanged.
-Only own9511 newly listed since0627, no external PR changes. CW clean.
-Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/weighted_calibration_and_graph_transfer_recovery_20261013T071851Z.tar.gz; manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/weighted_calibration_and_graph_transfer_recovery_20261013T071851Z.tar.MANIFEST.json; 154 completed/frozen files.
-MAP 10307 source/archive aliases verified. Active package/reviewer
-outputs excluded; old reviews, counters and failed publication remain archived.
-
-Next finish publication, retry graph check, derive pair response. Checkpoint
-07:45 or milestone. Lock still expires08:42:59; refresh before08:22:59 UTC.
-At deadline stop new research, checkpoint/recover, release lock and delete
-heartbeat toe-derivations-24-hour-campaign. Never extend the deadline.
+Next readfresh792, finishinterface, packagecalibratedmilestone, derivekinetic.
+Checkpoint0830 or milestone. At deadline start no new research; preserve work,
+release lock, delete heartbeat toe-derivations-24-hour-campaign and report
+actual outcomes and verification limits. Never extend deadline.

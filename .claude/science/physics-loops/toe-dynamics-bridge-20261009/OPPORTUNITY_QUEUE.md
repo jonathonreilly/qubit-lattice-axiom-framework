@@ -1,9 +1,9 @@
 # Ranked opportunity queue
 
-1. Finish prepared-energy regular PR on9511 from reviewed four-note source assembly.
-2. Complete separate coupled graph-transfer check and compose accepted weighted calibration.
-3. Explicit low-energy pair spectral density and controlled weak long-drive actual-cell response.
-4. Package coherent energy-coordinate/all-time/local-calibration milestone.
-5. Intended3D and creator/channel selection remain unresolved supplied-model obligations.
+1. Complete/check finite-heating weak-drive limit in explicit zero-mean quadratic-control class; retain general-class obstacles.
+2. Full comparison of fresh pair792 and root286, including threshold resonance and actual joint limits.
+3. Complete weighted/graph interface check and publish coherent calibrated-energy/all-time/inverse/transfer milestone.
+4. Publish checked pair-response milestone with exact physical limitations.
+5. Intended3D and physical creator/channel selection remain unresolved supplied-model obligations.
 
-Fixed deadline2026-10-13T16:42:30Z; no science merge/main push/audit verdict/axiom change.
+Regular9512 completed. Fixed deadline2026-10-13T16:42:30Z. No science merge/main push/audit verdict/axiom change.

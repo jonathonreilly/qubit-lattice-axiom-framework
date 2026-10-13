@@ -1,0 +1,17 @@
+B1 (R18-9, 344 nodes)    G1: Hess_F1 +2.424011e-02  L -8.585830e-01  ->  a* = +1.411635e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0489
+B1 (R18-9, 344 nodes)    G2: Hess_F1 +2.424011e-02  L -1.502128e+00  ->  a* = +8.068589e-03   max dressing angle per unit t^2: 2 a* max|f| = 0.0559
+B1 (R18-9, 344 nodes)    G3: Hess_F1 +2.424011e-02  L -7.119681e-01  ->  a* = +1.702331e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0590
+B1 (R18-9, 344 nodes)    G4: Hess_F1 +2.424011e-02  L -8.465599e-01  ->  a* = +1.431683e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0496
+B2 (R18-9, 240 nodes)    G1: Hess_F1 +2.426109e-02  L -8.585830e-01  ->  a* = +1.412857e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0489
+B2 (R18-9, 240 nodes)    G2: Hess_F1 +2.426109e-02  L -1.502128e+00  ->  a* = +8.075572e-03   max dressing angle per unit t^2: 2 a* max|f| = 0.0559
+B2 (R18-9, 240 nodes)    G3: Hess_F1 +2.426109e-02  L -7.119681e-01  ->  a* = +1.703805e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0590
+B2 (R18-9, 240 nodes)    G4: Hess_F1 +2.426109e-02  L -8.465599e-01  ->  a* = +1.432922e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0496
+0+ root B1 (240 nodes)   G1: Hess_F1 +2.453499e-02  L -8.581123e-01  ->  a* = +1.429591e-02   max dressing angle per unit t^2: 2 a* max|f| = 0.0495
+0+ root B1 (240 nodes)   G2: Hess_F1 +2.453499e-02  L -1.502419e+00  ->  a* = +8.165161e-03   max dressing angle per unit t^2: 2 a* max|f| = 0.0566
+
+range for |a| <= 1 (G1 alone): Hess in [-1.6929, +1.7414] ; (G1 and G2, |a_i| <= 1): [-4.6972, +4.7457] ; unbounded for unbounded a
+H-cov units (x4): Hess_h(a) = +0.09696 -6.86866 a  (G1)
+tuning precision to pass F2 row 1 (Earth crossing): |a/a* - 1| <= 1/1.62e+08 = 6.2e-09
+IR Pauli estimate (suggested) electron, t ~ 1e-9 (static potential scale) : delta a ~ 4 a* t^2 (m l_P) = 2.4e-42
+IR Pauli estimate (suggested) electron, t ~ 1e-21 (GW strain)             : delta a ~ 4 a* t^2 (m l_P) = 2.4e-66
+IR Pauli estimate (suggested) top quark, t ~ 1e-9                         : delta a ~ 4 a* t^2 (m l_P) = 7.9e-37

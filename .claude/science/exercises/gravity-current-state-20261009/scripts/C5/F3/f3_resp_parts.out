@@ -1,0 +1,4 @@
+(D) parts (tadpole / exchange) of L, 240 nodes, central d = 1e-3
+   G1: L_total -8.585821e-01  L_tadpole -6.829457e-01  L_exchange -1.756365e-01
+   G2: L_total -1.502126e+00  L_tadpole -1.365890e+00  L_exchange -1.362355e-01
+time 33 s

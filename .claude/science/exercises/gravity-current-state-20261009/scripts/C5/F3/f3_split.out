@@ -1,0 +1,6 @@
+split of L (156 nodes, central eps = 1e-3), R18-9 root; per e^2 per unit eps
+   G1: L_M -8.458024e-01 (tad -6.8295e-01, exch -1.6286e-01) ; L_c -1.277969e-02 (tad +0.0000e+00, exch -1.2780e-02) ; L_M + L_c -8.585821e-01
+       L_M inside the box -4.355583e-01 ; outside -4.102440e-01 (diagnostic indicator split)
+   G2: L_M -1.503487e+00 (tad -1.3659e+00, exch -1.3760e-01) ; L_c +1.360644e-03 (tad +0.0000e+00, exch +1.3606e-03) ; L_M + L_c -1.502126e+00
+       L_M inside the box -8.669017e-01 ; outside -6.365854e-01 (diagnostic indicator split)
+time 39 s

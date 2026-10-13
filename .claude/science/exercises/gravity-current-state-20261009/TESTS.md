@@ -9278,3 +9278,29 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - **PATH-SHIFTS:** the families differ. Report the range, and whether zero is reachable (a reachable zero would be priced).
   - **OPEN:** otherwise.
 - **Expectation.** PATH-SHIFTS at a small level. Path dependence enters through the transverse photon coupling inside the loop, which is not zero at zero external momentum. F1 already found the single orderings within 4e-6 of Psym, which suggests a small spread.
+
+- **Referee records, 2026-10-13 ~14:01Z.** Codex gpt-5.6-sol at xhigh.
+  - **F1: NOT CONFIRMED. Recorded reading: OPEN** (the worker said SF-HAZARD).
+    - The Hessian +2.42401e-2 e² is confirmed independently for the U = 1, Psym branch. This is the massive sign, and its Earth mapping is 1.62e8 × F2's coefficient (conditional).
+    - But the registered SF data do not fix the interacting lift. An admissible O(t²) unitary lift moves the Hessian through zero, with the spectrum, the first-order UD and Ward all preserved.
+    - Psym is forced only within the six-shortest-path ansatz.
+    - The volume-preserving lemma needs the origin-fixing hypothesis.
+    - (S_loc)'s background list is open, so its coverage is unresolved.
+    - P-R19-34a covers the channel only as an added rule.
+  - **F2: CONFIRMED WITH CORRECTIONS. ENV-BOUNDS is met literally.**
+    - The geometry is confirmed: −62.10° at H1, −46.83° at L1, with chords of 11,261 and 9,293 km.
+    - The 1D transfer gives ~1e-29 eV² m³/kg sensitivity for the **positive-mass sign** (F1's sign). The negative-sign bound needs a signed waveform analysis.
+    - The ground near-node is a half-space estimate, not a likelihood bound.
+    - The pulsar row is a strong-field toy forecast.
+    - The tachyonic hot-era ceiling depends on the history.
+    - "No bound in the massive hot era" holds only within the adiabatic tensor-only model.
+
+- **F3 (O(t²) unitary dressing): worker reading DRESS-SHIFTS** on the spectrum-preserving (H-conjugation) class. The literal [V, γ₀] = 0 sub-branch is DRESS-INVARIANT.
+  - Hess(a) = Hess_F1 + 2a·L[G].
+  - Only the generators G₁ = −Σγ_j sin k_j (L = −0.8586 e²) and G₂ (L = −1.5021 e²) survive the symmetry reduction.
+  - The zero is at a* = 0.0141 (rotation ≤ 0.049 t²). It is confirmed on the full strained law: −1.2e-12 at a*, and F1's value is reproduced at a = 0.
+  - **Mechanism:** minimal coupling does not commute with the conjugation, so the dressing adds a Pauli/clover-type term that moves the critical mass. The band energies, the SF rows, UD/W1 and Ward are untouched.
+  - **Price:** P-F3a, an a* tuning per channel, loop order and root, with precision ≤ 6.2e-9 to pass Earth crossing. It is dominated by P-R19-34a, which costs zero numbers.
+  - This agrees with the F1 referee's independent finding.
+
+  Referee running.

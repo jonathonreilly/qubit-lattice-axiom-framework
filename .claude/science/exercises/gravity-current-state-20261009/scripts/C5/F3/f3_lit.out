@@ -1,0 +1,41 @@
+(1) exact D-H dressing vs f3_lib.rotate (eps = 0.3, 200 random k):
+   G1: max|H_expm - H_rot| = 2.6e-15 ; E preserved: 3.6e-15
+   G2: max|H_expm - H_rot| = 2.7e-15 ; E preserved: 4.4e-15
+
+(2) matrix formula vs reduced dm_gen on the same full-BZ midpoint grid N = 16:
+   undressed  eps=0.00: matrix +4.19414412125607e-02  reduced +4.19414412125607e-02  diff -6.9e-18
+   G1         eps=0.05: matrix -1.24568758669372e-03  reduced -1.24568758669371e-03  diff -6.9e-18
+   G2         eps=0.05: matrix -3.33145963045828e-02  reduced -3.33145963045829e-02  diff 3.5e-17
+
+(3)/(4) linear response L = d dm/d eps at eps = 0 (central, eps = +-1e-3), full-BZ midpoint N = 16 (matrix code):
+   generator                                            cubic   P T C  |[G,b]|   L
+   G1 = sum i beta alpha_j sin k_j                      3e-16   + + +  2.8e+00   -8.566636e-01
+   G2 = sum i beta alpha_j sin k_j (cos k_l + cos k_m)  4e-16   + + +  3.6e+00   -1.498151e+00
+   beta (const)                                         2e-16   + - +  0.0e+00   +0.000000e+00
+   beta sum cos k_j                                     4e-16   + - +  0.0e+00   +3.469447e-15
+   beta sum cos k_j cos k_l                             3e-16   + - +  0.0e+00   +3.469447e-15
+   sum alpha_j sin k_j                                  3e-16   + - +  2.8e+00   +0.000000e+00
+   sum alpha_j sin k_j (cos+cos)                        4e-16   + - +  3.6e+00   +0.000000e+00
+   1 x sum cos k_j (commutes)                           4e-16   + - -  0.0e+00   +0.000000e+00
+   sum Sigma_j sin k_j                                  3e-16   - - -  0.0e+00   +0.000000e+00
+   sum beta Sigma_j sin k_j                             3e-16   - - +  0.0e+00   +3.469447e-15
+   g5 (const)                                           2e-16   - - +  2.0e+00   +0.000000e+00
+   i beta g5 sum cos k_j                                4e-16   - + +  4.1e+00   +0.000000e+00
+   g5 sum cos k_j                                       4e-16   - - +  4.1e+00   -6.938894e-15
+   sum g5 alpha_j sin k_j                               3e-16   - - -  0.0e+00   +0.000000e+00
+   (undressed dm on this grid: +0.0419414412)
+time 1 s
+
+[f3_lit] (1) literal V D V^dag with V = exp(i eps G1), eps = 1e-2: band energies |eig(g0 D') - eig(H)| (300 random k)
+   max change 7.90e-06 ; median 1.46e-06 ; max |Im eig| 5.4e-03   (D-H dressing of the same G1: 3.6e-15, f3_mat (1))
+   rep beta                   cubic 2e-16  P+ T- C+  |[G,beta]| 0e+00
+   rep beta sum cos           cubic 4e-16  P+ T- C+  |[G,beta]| 0e+00
+   rep beta sum cos cos       cubic 3e-16  P+ T- C+  |[G,beta]| 0e+00
+   rep beta Sigma.sin         cubic 3e-16  P- T- C+  |[G,beta]| 0e+00
+   rep beta Sigma.sin(c+c)    cubic 4e-16  P- T- C+  |[G,beta]| 0e+00
+   rep Sigma.sin              cubic 3e-16  P- T- C-  |[G,beta]| 0e+00
+   rep Sigma.sin(c+c)         cubic 4e-16  P- T- C-  |[G,beta]| 0e+00
+   rep trivial 1 x sum cos    cubic 4e-16  P+ T- C-  |[G,beta]| 0e+00
+   rank of commutator images of the 7 nontrivial reps: 7 (f3_sym S19 literal-branch nontrivial total: 3 + 2 + 2 = 7)
+   (2) random element of the literal-branch span, N = 16: L = +0.00e+00 ; finite eps = 0.2 shift dm(0.2) - dm(0) = -5.16e-03 (O(eps^2) allowed)
+   (2) random element of the literal-branch span, N = 24: L = +0.00e+00 ; finite eps = 0.2 shift dm(0.2) - dm(0) = -5.15e-03 (O(eps^2) allowed)

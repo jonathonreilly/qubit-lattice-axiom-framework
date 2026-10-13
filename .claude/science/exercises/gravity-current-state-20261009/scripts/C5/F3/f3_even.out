@@ -1,0 +1,10 @@
+(A) evenness of the dressed integrand in each q_j: octant midpoint N vs full-BZ midpoint 2N (same |q| node set)
+   N=12 G1 eps=0.05: octant -1.400940251340965e-03  full -1.400940251340957e-03  diff -8.7e-18
+   N=12 G2 eps=0.05: octant -3.352376177524935e-02  full -3.352376177524932e-02  diff -2.8e-17
+   N=12 G3 eps=0.05: octant +6.152297036711704e-03  full +6.152297036711718e-03  diff -1.4e-17
+   N=12 G4 eps=0.05: octant -4.013642776703810e-04  full -4.013642776703637e-04  diff -1.7e-17
+   N=20 G1 eps=0.05: octant -1.410667902480518e-03  full -1.410667902480517e-03  diff -1.7e-18
+   N=20 G2 eps=0.05: octant -3.356422435577279e-02  full -3.356422435577279e-02  diff 0.0e+00
+   N=20 G3 eps=0.05: octant +6.144485216874614e-03  full +6.144485216874617e-03  diff -3.5e-18
+   N=20 G4 eps=0.05: octant -4.378031256304822e-04  full -4.378031256304857e-04  diff 3.5e-18
+time 0 s

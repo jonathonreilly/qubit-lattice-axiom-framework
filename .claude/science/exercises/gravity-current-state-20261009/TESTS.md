@@ -6984,3 +6984,36 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r18-10a, b and c. P96 sharpened: move conservation laws cannot replace exact charge suppression.
 
   Referee running.
+
+### C5 Round 18, item 12 (pre-registered 03:37Z, before launch)
+
+**R18-12. Relic edge quanta: how many can exist, and does the W7 anomaly or anything else bound them?**
+- **Plain question.**
+  - R18-8 (worker; referee running) finds the W7 tail survives as an asymptotic Poincaré anomaly ∝ Q_D: a direction- and velocity-dependent far-field mass for bodies with edge content.
+  - Thermal populations are invisible below ~1e18 GeV. But number-conserving matter can keep any initial edge population (`vR16-12:19`), and no relic population has been bounded.
+  - Edge quanta are Planckian (≥ 1.4/a ≈ 1.7e19 GeV) and carry lattice Lorentz violation.
+  - What populations survive from a hot early universe or reheating? Do they decay, annihilate or redshift away? What observational bounds apply?
+- **Setting.**
+  - Box-law matter with subluminal edges (S/G(1.4), D1): edge quanta are states with |k_i| > b/a.
+  - Interactions:
+    - gauge (Peierls), giving an annihilation and scattering cross-section into box quanta;
+    - gravity.
+  - Cosmology: reheating temperature T_RH as a parameter, with standard expansion.
+  - Observables:
+    - (i) R18-8's mass anomaly (a gravitational test, e.g. a frame-dependent equivalence-principle signal);
+    - (ii) the edge quanta's own energy density as dark matter;
+    - (iii) the matter-sector Lorentz-violation bounds (RECALLED);
+    - (iv) BBN and CMB energy-injection bounds.
+- **Prior art (count once):** R18-8, R16-12 and its verdict (population), R16-8, R17-2, SUMMARY §17 (the root obstruction), R9-1, and the relic-abundance literature (RECALLED; e.g. Planckian relics, freeze-out).
+- **Removed hypothesis:** thermal populations only.
+- **Probes.**
+  - (a) Number-changing processes for edge quanta: decay to box quanta (is it allowed kinematically and by symmetry?), annihilation, and scattering out of the edge.
+  - (b) The relic abundance as a function of T_RH, including a T_RH ≥ 1/a case.
+  - (c) The bounds on that population from (i)–(iv).
+  - (d) Whether P-W7edge0 ("physical states carry no edge quanta") is a dynamical consequence or a stipulation.
+  - (e) Prices.
+- **FIXED readings.**
+  - **SELF-CLEANING:** edge quanta decay or annihilate efficiently, so the relic population is below every bound for any T_RH. Checked.
+  - **BOUNDED:** a stated maximum T_RH, or initial population, above which a stated observable is violated. Checked.
+  - **OPEN:** otherwise.
+- **Expectation.** SELF-CLEANING. Edge quanta can scatter into box states by Peierls vertices (umklapp), so they cannot be stable. The main risk is a conserved edge number in some sector.

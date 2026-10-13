@@ -1,0 +1,64 @@
+{
+  "canonical": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 81818,
+      "claim_id": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 1593,
+      "path": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "present_at_base": "e8d5b7b99c9faab65f71eb5ff353b60e2b609608",
+      "published_commit": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+      "published_sha256": "b0df91a85971695996ac32233c112dbe6718223ad733d1a28424666c9bde3874",
+      "regular_pr": 9520
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 62132,
+      "claim_id": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 1214,
+      "path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "present_at_base": "e8d5b7b99c9faab65f71eb5ff353b60e2b609608",
+      "published_commit": "e8d5b7b99c9faab65f71eb5ff353b60e2b609608",
+      "published_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "regular_pr": 9521
+    }
+  ],
+  "full_source_closure": "EVIDENCE_MAP.json: accepted source assembly 327 files and every 294 original alias, including both prepared proofs and full comparison evidence.",
+  "history_only": [
+    {
+      "canonical_edge_created": false,
+      "role": "Regular PR9518 sibling provenance; no combined ancestry",
+      "sha256": "400d2a2ba01fdb5ebc3751f21ef560d644cc8c4ed3f7b64d2ad877c3c19f3aa7",
+      "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/INITIAL_STATE_KINETIC_ENERGY_PR_CREATED.json"
+    }
+  ],
+  "no_combined_sibling_ancestry": true,
+  "no_threshold_or_relative_graph_sharpening": true,
+  "optional_compact_preparation": "Only conditional composition at archived accepted weighted compactness scope; not a new claim.",
+  "provisional_supplied_scientific_dependencies": [
+    {
+      "canonical_edge_created": false,
+      "role": "Full normal-state finite-protocol weak-law argument, supplied conditional premise",
+      "sha256": "e5f26f180b2293a13e51159490208be299a665565521926044d5660eb82a2caf",
+      "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PREPARED_MULTITIME_ENERGY_ROOT_PROBE.md"
+    },
+    {
+      "canonical_edge_created": false,
+      "role": "Full independent prepared-state protocol theorem512, supplied conditional premise",
+      "sha256": "48f329cf8795f7f222b091c5152899809199566898b32f2aa310b338dbc9e4d8",
+      "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_multitime_energy_independent/DERIVATION.md"
+    },
+    {
+      "canonical_edge_created": false,
+      "role": "Accepted comparison scope, not canonical publication",
+      "sha256": "92f5a23c8e13481b393ac32bb6aaefa3ceb94fdf967ead13c95e824d49240766",
+      "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PREPARED_MULTITIME_ENERGY_ROOT_ACCEPTANCE.json"
+    },
+    {
+      "canonical_edge_created": false,
+      "role": "Full fixed-normal-state and weighted-domain premise; initial-state publication is a sibling",
+      "sha256": "20c9f7cba4ea75cfad431e067f676aae54b15e031005a04dd9b4c63d37423086",
+      "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/FINITE_INITIAL_ENERGY_KINETIC_ROOT_PROBE.md"
+    }
+  ]
+}

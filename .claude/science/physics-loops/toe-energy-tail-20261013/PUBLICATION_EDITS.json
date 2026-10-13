@@ -1,0 +1,99 @@
+{
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "bytes": 47782,
+      "diff_path": "diffs/publication_complete.diff.gz",
+      "diff_raw_bytes": 20625,
+      "diff_raw_sha256": "8f09561618bd7f403ea122b82f4af433507199a4b85f424f2beb20e9fea83c3c",
+      "fromfile": "POSTMEASUREMENT_FINITE_ENERGY_THEOREM_CANDIDATE.md",
+      "lines": 964,
+      "path": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_end": 9683,
+          "byte_start": 0,
+          "bytes": 9683,
+          "kind": "wrapper",
+          "line_end": 176,
+          "line_start": 1,
+          "lines": 176,
+          "sha256": "95c951388c87c147a8247a4f89cb4e8729128df0be4ef04c00f519aea250c45b",
+          "wrapper": "wrappers/part0.md.gz"
+        },
+        {
+          "byte_end": 25040,
+          "byte_start": 9683,
+          "bytes": 15357,
+          "kind": "accepted_core_slice",
+          "line_end": 482,
+          "line_start": 177,
+          "lines": 306,
+          "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639",
+          "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_source_assembly/archive/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "source_line_end": 306,
+          "source_line_start": 1,
+          "source_sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639",
+          "unchanged_diff": "diffs/core0.unchanged.diff.gz"
+        },
+        {
+          "byte_end": 25282,
+          "byte_start": 25040,
+          "bytes": 242,
+          "kind": "wrapper",
+          "line_end": 487,
+          "line_start": 483,
+          "lines": 5,
+          "sha256": "eee62ce729bf41fc69ee08f30d9986d02b3572b672a839c98580e72a270195a3",
+          "wrapper": "wrappers/part1.md.gz"
+        },
+        {
+          "byte_end": 43456,
+          "byte_start": 25282,
+          "bytes": 18174,
+          "kind": "accepted_core_slice",
+          "line_end": 877,
+          "line_start": 488,
+          "lines": 390,
+          "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96",
+          "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_source_assembly/archive/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "source_line_end": 390,
+          "source_line_start": 1,
+          "source_sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96",
+          "unchanged_diff": "diffs/core1.unchanged.diff.gz"
+        },
+        {
+          "byte_end": 43504,
+          "byte_start": 43456,
+          "bytes": 48,
+          "kind": "wrapper",
+          "line_end": 880,
+          "line_start": 878,
+          "lines": 3,
+          "sha256": "23ff55eae7b546ecce1b03ba65076b6114cf12a7542f7913a79d19c987aba939",
+          "wrapper": "wrappers/part2.md.gz"
+        },
+        {
+          "byte_end": 47782,
+          "byte_start": 43504,
+          "bytes": 4278,
+          "kind": "accepted_core_slice",
+          "line_end": 964,
+          "line_start": 881,
+          "lines": 84,
+          "sha256": "1bea9837de02088791faa010c86d7c0baf9364662849ab23e15dd8176a56db2a",
+          "source_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_source_assembly/archive/POSTMEASUREMENT_ENERGY_UI_ROOT_COUNTERCONTROL.md",
+          "source_line_end": 84,
+          "source_line_start": 1,
+          "source_sha256": "1bea9837de02088791faa010c86d7c0baf9364662849ab23e15dd8176a56db2a",
+          "unchanged_diff": "diffs/core2.unchanged.diff.gz"
+        }
+      ],
+      "sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+      "source_candidate_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_source_assembly/POSTMEASUREMENT_FINITE_ENERGY_THEOREM_CANDIDATE.md",
+      "tofile": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "producer": "Python difflib.diff_bytes(unified_diff), n=3, splitlines(True), literal raw diff compressed with gzip mtime0; no whitespace normalization",
+  "source_freeze_sha256": "8a19d7e566f1ed77a2effe2234ad4fc0e4398f28a562c151b3245e5abbcfc7cf"
+}

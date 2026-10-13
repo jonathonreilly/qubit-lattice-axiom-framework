@@ -1,6 +1,6 @@
 {
- "edge_count": 15925,
- "node_count": 7054,
+ "edge_count": 15927,
+ "node_count": 7055,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17421,6 +17421,10 @@
   "postmark_electric_two_band_central_match_bounded_theorem_note_2026-09-24": {
    "deps_hash": "931389bef13c",
    "out_degree": 4
+  },
+  "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "87de279a8279",
+   "out_degree": 2
   },
   "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
    "deps_hash": "c8eee4235fc9",

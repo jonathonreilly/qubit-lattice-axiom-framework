@@ -1,0 +1,13 @@
+# Review and correction history
+
+Original root306 and independent390 were separately frozen before their focused comparison. The accepted comparison239/evidence412 resolved the independent proof's actual-cell extra-graph reservation using the root commutator Duhamel argument at epsilon=o(h^2). The complete originals and all frozen comparison evidence remain archived. Same-family source exposure and lack of model diversity remain explicit; author self-check is distinct from root source review.
+
+Original acceptance59f1556c missed the J type adjective. Precision addendumaff1db27 and acceptance08cfed6c require linear/unitary J=Gamma C. Author check9f7cc514 and corroboration0683ce8d preserve all formulas/domain consequences. Earlier pending/no-correction wording remains historical.
+
+Source assembly freeze8a19d7e5/candidatebd3a9cfd was fully reviewed by root54072cf0 and accepted2012521f at 16:28:53 UTC. The renewal reuses those exact scientific bytes and scope; no new mathematical review is manufactured. Full source freezes, diagnostic failures/controls and publication ancestry records remain archived.
+
+The later scalar Lean compile exit 0 belongs only to the common-modulus scalar implication. New source-only publication checks will be recorded separately; canonical runtime, complete new-wrapper/program root acceptance and regular PR are pending. The earlier driver-adaptation duplicate-replacement assertion failed before output. Source-check attempt01 later failed on two literal spectral-indicator formulas parsed as links; its full logs and checker/config revision are archived. The exact two-line classification repairs only this bookkeeping issue. PROGRAM_TRANSFORMATIONS.json and SOURCE_CHECK_FAILURE_HISTORY.md are available by archive alias. Root subsequently required valid structured trace enums, null downstream target/blocker fields and separate PR-title claim/status slots. Full pre-correction wrapper, note, diff, maps and programs are preserved under trace_metadata_correction aliases. Source checker and root driver now enforce the exact corrected fields.
+
+## Source-only citation repair v2
+
+The complete v1 frozen preparation and all 76 files of the failed root prepare are preserved by exact archive aliases. V1 added the correct claim node but no edges because the builder extracts Markdown docs citations, not YAML upstream dependencies. V2 adds two descriptive links to the already declared canonical parents and a source-only extraction guard; mathematical cores and dependency scope are unchanged. CITATION_REPAIR_PROVENANCE.json records exact identities. Canonical prepare/verify must be rerun by root under a fresh acceptance; this repair does not convert the prior failure into success.

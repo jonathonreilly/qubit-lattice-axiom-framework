@@ -1,0 +1,5 @@
+# Scalar Lean evidence only
+
+The archive includes the complete energy_tail_cutoff_lean_source closure and energy_tail_cutoff_lean_execution/attempt01: exact 71-line source, compiler/environment/contract, stdout, empty stderr, result and compiled object. Source SHA256 is bbcb658c8e40f215b10dc2a83d35e4ee54d44c55748eb1c69edaeec1c3f7f952. The recorded root compile ran 2026-10-13 16:24:09–16:24:30UTC, elapsed 20.3992159999907s, exit 0. Actual output lists propext, Classical.choice, Quot.sound. No new Lean execution occurred during publication preparation.
+
+The theorem assumes nonnegative finite real A,B,M, nonnegative F(i,R), a single shared t(K)->0 and F(i,R)<=A t(K)+B(1+K)(1+M)/R. It proves one R0 works for every i and R>=R0. It does not prove the common graph/trace bound, the common modulus, domains, CAR identities, calibration, weak laws, conditional means or W1. Historical source prose saying compilation remained pending describes its earlier freeze and is preserved alongside the actual later receipt. No operator-domain formalization or retained audit is claimed.

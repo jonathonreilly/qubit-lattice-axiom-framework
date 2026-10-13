@@ -7017,7 +7017,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **BOUNDED:** a stated maximum T_RH, or initial population, above which a stated observable is violated. Checked.
   - **OPEN:** otherwise.
 - **Expectation.** SELF-CLEANING. Edge quanta can scatter into box states by Peierls vertices (umklapp), so they cannot be stable. The main risk is a conserved edge number in some sector.
-- **R18-7 referee: CONFIRMED WITH CORRECTIONS. CONSTRUCTED, only in the stated weak-field harmonic static/quasi-static scope** (recorded 03:42Z).
+- **R18-7 referee: CONFIRMED WITH CORRECTIONS. CONSTRUCTED, only in the stated weak-field harmonic static/quasi-static scope** (recorded 03:37Z).
   - **What holds:** the retarded Π gives a causal, conserved, order-by-order records-to-metric law through O(G²). h₁ is E1. The record-conditioned instrument is CP. Static spherical β = γ = 1 after mass renormalization.
   - **R16-14's unprojected completion is genuinely non-conserving.** The worker gave the wrong exact commutator and coefficient for it.
   - **Limits:**

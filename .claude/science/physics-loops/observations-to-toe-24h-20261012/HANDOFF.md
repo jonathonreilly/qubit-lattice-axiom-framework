@@ -165,3 +165,11 @@ failed for missing default CA; verified certifi route recovered the exact PDF.
 Curvature/fluid PR9519 OPEN and attached at04105adaaba9064043cea489ae23303a408af9b5. Canonical6651/0, final251/0 source/gate mapping, full original15/final58 dispositions; source tree8f9201b7 matches actual validated copy2bcc41d5 againstmain583. Final committed UNITv5/cache and allthree mechanical gates passed. No merge or formal audit.
 
 Final evidence is in milestones/curvature_final_20261013. Direct continuous-history work continues; original thermal-matter timeouts and trace-control conditioning failures remain unresolved. Parent authorship and fixed16:53Z deadline unchanged. Latest prior pushed checkpoint6ae9dd866d0828e052f23a660caa6462ddfcdd04 stores912 exact members as three40MiB-or-smaller pieces after preserving a remote oversized-blob rejection.
+
+## Direct-author continuation 2026-10-13T14:29:09.975282+00:00
+
+Continuous historyv3 collection11of15casescompleted,1992pass8failed completion/census; eight original histories reused by hash. Independent original64327pass4coarse-energyfail and6512selected-path/refinementpass; four weak independent timeouts preserved. Exact neutrino trace mutant detected159additional failures, baseline9conditioning failures retained. Full u force34digit evaluation matches independent80digit108states, local1190/0, but refinedv5history stilltimedout300s. Exposed fixed-history SN comparison219/0,405cal953transfer, onlyinterceptfit; independent check active.
+
+Personally map actual late scalar backgrounds into the previously exposed weak-field observations; finish independent distance check and retain unresolved stiff-history limits. No new discovery after16:38Z; final deadline16:53Z.
+
+Canonical curvaturePR9519openandattached; allthreegates+finalcommittedUNITcachepassed. Full finaldelivery archive in57e279c31. Parent owns research; retired/cancelled authors remain stopped. Original deadline and no-restart instructions unchanged.

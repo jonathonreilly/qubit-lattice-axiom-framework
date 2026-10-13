@@ -1,0 +1,521 @@
+{
+  "at": "2026-10-13T14:27:16.566343+00:00",
+  "full_report_read": true,
+  "verified": 128,
+  "paths": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/Fixsen_2009_v2.pdf",
+      "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/external/cosmology_radiation/Fixsen_2009_v2.pdf",
+      "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/external/matter_vacuum/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/thermal_matter_bridge/PDG2024_neutrino_mixing.pdf",
+      "sha256": "8f010a5e4ae805227a15d977badb8e2d4ddc03fd4865b0c4085665b4f35bd1d8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/external/thermal_matter_bridge/PDG2024_neutrino_mixing.pdf",
+      "sha256": "8f010a5e4ae805227a15d977badb8e2d4ddc03fd4865b0c4085665b4f35bd1d8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/check_curvature_fluid_v2.py",
+      "sha256": "78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/external/direct_curvature_fluid_reconstruction/check_curvature_fluid_v2.py",
+      "sha256": "78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/ENERGY_DIFFERENCE_DIAGNOSIS_v1.json",
+      "sha256": "e3d0fdf2cbde1e14e78fbfbe7255dc5c54b074262c4e49f0103e07f0ee2f290d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/ENERGY_DIFFERENCE_DIAGNOSIS_v1.json",
+      "sha256": "e3d0fdf2cbde1e14e78fbfbe7255dc5c54b074262c4e49f0103e07f0ee2f290d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/FIXTURES_v1.json",
+      "sha256": "be342bccdcb1e2dac97cd7b12c1547b9f11bf25a24d30bc5f9ccb288f8897679"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/FIXTURES_v1.json",
+      "sha256": "be342bccdcb1e2dac97cd7b12c1547b9f11bf25a24d30bc5f9ccb288f8897679"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/FIXTURES_v2.json",
+      "sha256": "60fbd6ac9ffd04371dd866cd833423f22bb478b74e6e1cc971360906ba0e99f2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/FIXTURES_v2.json",
+      "sha256": "60fbd6ac9ffd04371dd866cd833423f22bb478b74e6e1cc971360906ba0e99f2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/HAND_DERIVATION_v3.md",
+      "sha256": "91c7d14902c8297662cfafe6e3f0961db02d9866cd6f7317b016a0f45b8ce8b1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/HAND_DERIVATION_v3.md",
+      "sha256": "91c7d14902c8297662cfafe6e3f0961db02d9866cd6f7317b016a0f45b8ce8b1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/INPUTS_v1.json",
+      "sha256": "34e20db2d5118cb6562cebb81821e1323e335c79d796dd51ac8e321a9a4c0860"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/INPUTS_v1.json",
+      "sha256": "34e20db2d5118cb6562cebb81821e1323e335c79d796dd51ac8e321a9a4c0860"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/JACOBIAN_REFERENCE_v3.json",
+      "sha256": "7d476132afaf03d84b0d71a86ca2211c7c5d866f25ab0f78a02fb47c15d9aecc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/JACOBIAN_REFERENCE_v3.json",
+      "sha256": "7d476132afaf03d84b0d71a86ca2211c7c5d866f25ab0f78a02fb47c15d9aecc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/PROTOCOL_v1.json",
+      "sha256": "244321aaa03db6dfdf1ff4c5de7cf264c03116a902625b784f6bb81b9959f006"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/PROTOCOL_v1.json",
+      "sha256": "244321aaa03db6dfdf1ff4c5de7cf264c03116a902625b784f6bb81b9959f006"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/RECOVERY_ROUTE_v2.json",
+      "sha256": "dac6a58e8629962a7b39fa1da656b381d862bd0fde9f7660345fb08ae7c0432e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/RECOVERY_ROUTE_v2.json",
+      "sha256": "dac6a58e8629962a7b39fa1da656b381d862bd0fde9f7660345fb08ae7c0432e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/REUSED_HISTORY_INPUTS_v2.json",
+      "sha256": "28e11c3c8bdf87e770dd2c6247a61c16745e8e87fbd6f2ba4decddad6c19feaf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/REUSED_HISTORY_INPUTS_v2.json",
+      "sha256": "28e11c3c8bdf87e770dd2c6247a61c16745e8e87fbd6f2ba4decddad6c19feaf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/SOURCE_LEDGER_v1.json",
+      "sha256": "c0ccc046b24d613cf1a8cc85746eea0c5c781bd3bc601951c55f5d2d05542ca5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/SOURCE_LEDGER_v1.json",
+      "sha256": "c0ccc046b24d613cf1a8cc85746eea0c5c781bd3bc601951c55f5d2d05542ca5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v1.py",
+      "sha256": "483db2fa7cd17cd707f00a46c8fb4f2deba8c93a691c77026851fd31321a6c2d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/check_thermal_matter_bridge_v1.py",
+      "sha256": "483db2fa7cd17cd707f00a46c8fb4f2deba8c93a691c77026851fd31321a6c2d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v2.py",
+      "sha256": "7b36bd13a67affbbe100a5aa2e5004c10ae058bbe86cdd52f1b18e58d2a50624"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/check_thermal_matter_bridge_v2.py",
+      "sha256": "7b36bd13a67affbbe100a5aa2e5004c10ae058bbe86cdd52f1b18e58d2a50624"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v3.py",
+      "sha256": "8bba891dc94846cd3a68b430f068aad97eaddb8c555daa5579bb92cc3d89592a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/check_thermal_matter_bridge_v3.py",
+      "sha256": "8bba891dc94846cd3a68b430f068aad97eaddb8c555daa5579bb92cc3d89592a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/EXECUTION.json",
+      "sha256": "2eabf9a16f936a830bde8058f3803c6369a0a88c3efcafa6241f85e7aa168d68"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/EXECUTION.json",
+      "sha256": "2eabf9a16f936a830bde8058f3803c6369a0a88c3efcafa6241f85e7aa168d68"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/RESULTS.json",
+      "sha256": "b4aa2b0e5a627c071c6677f56d3119ef38a2e6b47674d8a0c0de93d285697b0b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/RESULTS.json",
+      "sha256": "b4aa2b0e5a627c071c6677f56d3119ef38a2e6b47674d8a0c0de93d285697b0b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k0.01.json",
+      "sha256": "0505d3141917181f25d203e60c34fa5d2cdc32a091e898db68be7b87127630bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/equal_k0.01.json",
+      "sha256": "0505d3141917181f25d203e60c34fa5d2cdc32a091e898db68be7b87127630bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k1e-05.json",
+      "sha256": "9114fa2a3947a4d96401329a2366e698432d3c91c023a89207978c28a0151942"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/equal_k1e-05.json",
+      "sha256": "9114fa2a3947a4d96401329a2366e698432d3c91c023a89207978c28a0151942"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k1e-06.json",
+      "sha256": "bdde970765f7855b16ce1d4cff3c5cd7fd43c84ddd5802fbca75d54e7b53bf5e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/equal_k1e-06.json",
+      "sha256": "bdde970765f7855b16ce1d4cff3c5cd7fd43c84ddd5802fbca75d54e7b53bf5e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k1e-5_refined.json",
+      "sha256": "462a6515508a9859c6b09826649b57a8f13f4996200cd470429d4785f31121bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/equal_k1e-5_refined.json",
+      "sha256": "462a6515508a9859c6b09826649b57a8f13f4996200cd470429d4785f31121bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k0.01.json",
+      "sha256": "0c03021aba87d29b61ad76d7da45cdbd6e36a327a31e96043b07f1db21e97fd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/split_k0.01.json",
+      "sha256": "0c03021aba87d29b61ad76d7da45cdbd6e36a327a31e96043b07f1db21e97fd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k1e-06.json",
+      "sha256": "f357ba855560d36cc16e64a65db9e284bee35e162c96d8a512cfb8d0b6281c45"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/split_k1e-06.json",
+      "sha256": "f357ba855560d36cc16e64a65db9e284bee35e162c96d8a512cfb8d0b6281c45"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k1e-5_ideal_gas.json",
+      "sha256": "693e99c3e45907f5bcef4b6d996921ddf409948033802c0cbeae4720396a3b76"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/split_k1e-5_ideal_gas.json",
+      "sha256": "693e99c3e45907f5bcef4b6d996921ddf409948033802c0cbeae4720396a3b76"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k1e-5_no_dust.json",
+      "sha256": "688ab5a3c63514bc335c75d6cc445f77d6f5e383aab670a935d256b7083d1d11"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v1/histories/split_k1e-5_no_dust.json",
+      "sha256": "688ab5a3c63514bc335c75d6cc445f77d6f5e383aab670a935d256b7083d1d11"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v2/EXECUTION.json",
+      "sha256": "56eea7be65cf2b32c21dbd38961d6c1bd3970e4e670fd16e38219c67eace27cc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v2/EXECUTION.json",
+      "sha256": "56eea7be65cf2b32c21dbd38961d6c1bd3970e4e670fd16e38219c67eace27cc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v2/histories/RESULTS.json",
+      "sha256": "1f53af80396e448e6aed457be1d40e69fbe82598a0aa09c33cb47fa2b29ecb4f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/evidence_v2/histories/RESULTS.json",
+      "sha256": "1f53af80396e448e6aed457be1d40e69fbe82598a0aa09c33cb47fa2b29ecb4f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/QUADRATURE_NODES_v1.json",
+      "sha256": "a2af70a228633c13e9477f198b2a520cf4205ee57d6e8c48f632237fb056a549"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/external/direct_thermal_transition/QUADRATURE_NODES_v1.json",
+      "sha256": "a2af70a228633c13e9477f198b2a520cf4205ee57d6e8c48f632237fb056a549"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/check_thermal_transition_v2.py",
+      "sha256": "4ce62456ddf2e5521bab9c5985e4ba5d0cc6423c05da446238374d995258d17b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/external/direct_thermal_transition/check_thermal_transition_v2.py",
+      "sha256": "4ce62456ddf2e5521bab9c5985e4ba5d0cc6423c05da446238374d995258d17b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_neutrino_trace_controls_v1.py",
+      "sha256": "2b347ebf4b540eee08eb353f707434531a71990da24b94e493735f1cde0abbf3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/check_neutrino_trace_controls_v1.py",
+      "sha256": "2b347ebf4b540eee08eb353f707434531a71990da24b94e493735f1cde0abbf3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/NEUTRINO_TRACE_CONTROL_v1.md",
+      "sha256": "5ab3100e43050cbb0b88b0c54335eefe7e3b098a08c4df426281a0b0c81f03cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/NEUTRINO_TRACE_CONTROL_v1.md",
+      "sha256": "5ab3100e43050cbb0b88b0c54335eefe7e3b098a08c4df426281a0b0c81f03cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/trace_control_v1/EXECUTION.json",
+      "sha256": "aa91047e717e9c3f6becad9c29111688651d4f4066fe6d4087c839f573e86f66"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/trace_control_v1/EXECUTION.json",
+      "sha256": "aa91047e717e9c3f6becad9c29111688651d4f4066fe6d4087c839f573e86f66"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/trace_control_v1/FREEZE.json",
+      "sha256": "f52363b9cb464bc50e25a56534608c37ba3ebb9d65994f8ae4b4a1daa044231d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/trace_control_v1/FREEZE.json",
+      "sha256": "f52363b9cb464bc50e25a56534608c37ba3ebb9d65994f8ae4b4a1daa044231d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/trace_control_v1/RESULTS.json",
+      "sha256": "4ef06df0f583352350bba05f3099c08d2db0bf2de04c5e10f76077e8a82fa39d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/trace_control_v1/RESULTS.json",
+      "sha256": "4ef06df0f583352350bba05f3099c08d2db0bf2de04c5e10f76077e8a82fa39d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/trace_control_v1/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/trace_control_v1/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/trace_control_v1/stdout.log",
+      "sha256": "9b6313fe864ef9090c420bb2f0818a006c93b5cf469964bd7f5a7f1986e975a0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/source_snapshot/block/trace_control_v1/stdout.log",
+      "sha256": "9b6313fe864ef9090c420bb2f0818a006c93b5cf469964bd7f5a7f1986e975a0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/AFFECTED_TRACE_SUPPLEMENT_REVIEW_v1.md",
+      "sha256": "bcdfc504b5819834954fcc03e5ffeadacf1da12f97c635fb92b057042e00a316"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/COMPARISON_v1.json",
+      "sha256": "c546a7f8952914bffd528dcc2d13e059d53122133e4dba2566e70cc05d532b72"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/INDEPENDENT_MATCHED_ACTION_RESULTS_v1.json",
+      "sha256": "3c585b1f7e113131710ccc39b02e5969f469ab58a877daa97f67d13f4add9a40"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/INPUT_FREEZE_v1.json",
+      "sha256": "b12e148c769d120d248f051a2f4c03bad6c9706b50afd85ca9857b7926da6a9a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/MATCHED_ACTION_PLAN_v1.json",
+      "sha256": "6747e751a64a4b3d16f4ac8fc47b5e98372e73cc7f912e535efda8cf76d50147"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/PLAN_v1.json",
+      "sha256": "448cda22c397502b397780a3cc01dceada0b3eb9931146cbba8020163cbefa5e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/SOURCE_DISPOSITION_v1.json",
+      "sha256": "988fbd3feb56bff7a709255637b8bc4f673dfff57d6c8f4167cc5aeed6cc3077"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/check_matched_action_v1.py",
+      "sha256": "d9592242940075a62dbeac771f0df1591e85e229aa33065e04a4225bcb221ab5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/matched_stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/matched_stdout_v1.txt",
+      "sha256": "e6d0425be63d8cd5354353dee0f22245238f5ed13f70e586cbd69a138f32fc61"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/run_actual_trace_comparison_v1.py",
+      "sha256": "99a3bafeb8625525b642772278ec68a562dfd15ae58caaa31f184a23d40416de"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/EXECUTION.json",
+      "sha256": "a0f0797a402ef97e0910e6c19443a5539b9a7109876f9f4a77988f0782939632"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/FRESH_FREEZE.json",
+      "sha256": "0a7f1c675003e4118588897485c1a5106ac7967c527ac158c1fd7d74cffc4e10"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/NEUTRINO_TRACE_CONTROL_v1.md",
+      "sha256": "5ab3100e43050cbb0b88b0c54335eefe7e3b098a08c4df426281a0b0c81f03cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/RESULTS.json",
+      "sha256": "38ad202f9553d6a11b1dc3b552a63c3ff40a336c97550d40e10515eb8706667b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/SOURCE_MAPPING.json",
+      "sha256": "c90138829e5f5af1825d5fde724053aa9882f918256fdd18f81780511ca3da76"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/check_neutrino_trace_controls_v1.py",
+      "sha256": "2b347ebf4b540eee08eb353f707434531a71990da24b94e493735f1cde0abbf3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_curvature_fluid_reconstruction/check_curvature_fluid_v2.py",
+      "sha256": "78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_matter_bridge/FIXTURES_v1.json",
+      "sha256": "be342bccdcb1e2dac97cd7b12c1547b9f11bf25a24d30bc5f9ccb288f8897679"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_matter_bridge/HAND_DERIVATION_v3.md",
+      "sha256": "91c7d14902c8297662cfafe6e3f0961db02d9866cd6f7317b016a0f45b8ce8b1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_matter_bridge/INPUTS_v1.json",
+      "sha256": "34e20db2d5118cb6562cebb81821e1323e335c79d796dd51ac8e321a9a4c0860"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_matter_bridge/PROTOCOL_v1.json",
+      "sha256": "244321aaa03db6dfdf1ff4c5de7cf264c03116a902625b784f6bb81b9959f006"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_matter_bridge/SOURCE_LEDGER_v1.json",
+      "sha256": "c0ccc046b24d613cf1a8cc85746eea0c5c781bd3bc601951c55f5d2d05542ca5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v1.py",
+      "sha256": "bd96c925e273869a1bb1fac81fe4cba0dd7f56cb00210bf65ac3ef491cc67eea"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_transition/QUADRATURE_NODES_v1.json",
+      "sha256": "a2af70a228633c13e9477f198b2a520cf4205ee57d6e8c48f632237fb056a549"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/cosmology/direct_thermal_transition/check_thermal_transition_v2.py",
+      "sha256": "4ce62456ddf2e5521bab9c5985e4ba5d0cc6423c05da446238374d995258d17b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/external/cosmology_radiation/Fixsen_2009_v2.pdf",
+      "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/external/matter_vacuum/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/external/thermal_matter_bridge/PDG2024_neutrino_mixing.pdf",
+      "sha256": "8f010a5e4ae805227a15d977badb8e2d4ddc03fd4865b0c4085665b4f35bd1d8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/same_actual_omitted_neutrino_trace/stdout.txt",
+      "sha256": "4ddda680d4359d4129b3d93353514f9d1aa44a43e8c1d092569944a0b0a97648"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/EXECUTION.json",
+      "sha256": "5ec70299562e4da2c1c7b25cb150fc56a84164f5870ca240dbb40b383d5900ab"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/FRESH_FREEZE.json",
+      "sha256": "2fa73a408c4defde144beaef45a7fe845ed9bd1de34e7297b60a5c9378541bc1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/NEUTRINO_TRACE_CONTROL_v1.md",
+      "sha256": "5ab3100e43050cbb0b88b0c54335eefe7e3b098a08c4df426281a0b0c81f03cb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/RESULTS.json",
+      "sha256": "4309a70a91a42dbdcb4c374683bcf8e29c4d5c4231c7c505f72410b29eff92ac"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/SOURCE_MAPPING.json",
+      "sha256": "b92ee8686ee36d59e38eb03bbc6f1088c9228d109966da63e60958e02dd7d59a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/check_neutrino_trace_controls_v1.py",
+      "sha256": "2b347ebf4b540eee08eb353f707434531a71990da24b94e493735f1cde0abbf3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_curvature_fluid_reconstruction/check_curvature_fluid_v2.py",
+      "sha256": "78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_matter_bridge/FIXTURES_v1.json",
+      "sha256": "be342bccdcb1e2dac97cd7b12c1547b9f11bf25a24d30bc5f9ccb288f8897679"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_matter_bridge/HAND_DERIVATION_v3.md",
+      "sha256": "91c7d14902c8297662cfafe6e3f0961db02d9866cd6f7317b016a0f45b8ce8b1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_matter_bridge/INPUTS_v1.json",
+      "sha256": "34e20db2d5118cb6562cebb81821e1323e335c79d796dd51ac8e321a9a4c0860"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_matter_bridge/PROTOCOL_v1.json",
+      "sha256": "244321aaa03db6dfdf1ff4c5de7cf264c03116a902625b784f6bb81b9959f006"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_matter_bridge/SOURCE_LEDGER_v1.json",
+      "sha256": "c0ccc046b24d613cf1a8cc85746eea0c5c781bd3bc601951c55f5d2d05542ca5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v1.py",
+      "sha256": "483db2fa7cd17cd707f00a46c8fb4f2deba8c93a691c77026851fd31321a6c2d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_transition/QUADRATURE_NODES_v1.json",
+      "sha256": "a2af70a228633c13e9477f198b2a520cf4205ee57d6e8c48f632237fb056a549"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/cosmology/direct_thermal_transition/check_thermal_transition_v2.py",
+      "sha256": "4ce62456ddf2e5521bab9c5985e4ba5d0cc6423c05da446238374d995258d17b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/external/cosmology_radiation/Fixsen_2009_v2.pdf",
+      "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/external/matter_vacuum/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/external/thermal_matter_bridge/PDG2024_neutrino_mixing.pdf",
+      "sha256": "8f010a5e4ae805227a15d977badb8e2d4ddc03fd4865b0c4085665b4f35bd1d8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/unchanged_original_v1/stdout.txt",
+      "sha256": "751d565bedf3ba6e91cde4822e71bbbc21ebdf86cbef22dbcd03c38b6f6ed66d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/independent_numerical_review/affected_trace_supplement_v1/FINAL_RECEIPT_v1.json",
+      "sha256": "ff8ddeddc70a1a0d69635450bade9e36c6cb54e6b475b06c7b6ea0ee50ecfc4f"
+    }
+  ],
+  "scope": "Exact old omission mutant now168scientificfailures versus9baseline;14freshhashespassboth,159additional scientific failures. Original9conditioning failures notclosed.",
+  "parent_schema_read_failure": "First traversal treated recovery object as a list and raised TypeError before this verification; inspected actual schema and corrected. No reviewer evidence changed."
+}

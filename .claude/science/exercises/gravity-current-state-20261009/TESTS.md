@@ -6577,7 +6577,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 ---
 
 
-#### C5 referee verdicts R17-9, R17-10, R17-11 and the R17-12 worker reading (recorded 02:20Z)
+#### C5 referee verdicts R17-9, R17-10, R17-11 and the R17-12 worker reading (recorded 02:16Z)
 
 - **R17-9 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN with the imported placement; SM-LIFTED only if VM and its G_w photon are admitted as extra stipulations.**
   - **VU:** confirmed representative-invariant with the correct continuum Maxwell amplitude. It is absolutely summable and quasi-local, not finite-range. Its positive cone shifts come from E–B interference.
@@ -6610,7 +6610,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R17-12a, b and c.
 
   Referee running.
-- **R18-3 dropped (02:20Z).** Its premise was a certificate for the VU conflict, and VU is now excluded by W1 (R17-12, worker; referee running). Its part (a), V0 locality, is folded into R18-5 below.
+- **R18-3 dropped (02:16Z).** Its premise was a certificate for the VU conflict, and VU is now excluded by W1 (R17-12, worker; referee running). Its part (a), V0 locality, is folded into R18-5 below.
 - **R18-2 (EW vacuum stability under (S)): worker reading NEEDS-STABILIZER on the primary inputs. The σ condition is fragile.** Inputs RECALLED; method pre-stated in `agents/C5_R18-2_prereg.md`.
   - **SM-only running (two-loop):**
     - λ_eff crosses zero at 1.8e11 GeV;
@@ -6622,6 +6622,32 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - **Vector-like 5-plets (n5 ≥ 2):** chirally protected, so no precision tuning. They face collider and relic costs (RECALLED).
   - **(S) prediction:** with SM content alone, (S) requires M_t(pole) ≤ 170.9 GeV.
   - **Prices:** P93 sharpened; P-r182a (singlet); P-r182b (5-plets).
-  - **Archive fix (02:25Z):** the committed R17-7 runner `r177_enthalpy_orders.py` imported from a path that is not archived. It now imports from `scripts/C5/R11-3`, and its rerun matches the stored output. Reported by R18-2.
+  - **Archive fix (02:17Z):** the committed R17-7 runner `r177_enthalpy_orders.py` imported from a path that is not archived. It now imports from `scripts/C5/R11-3`, and its rerun matches the stored output. Reported by R18-2.
 
   Referee running.
+
+### C5 Round 18, item 5 (pre-registered 02:18Z, before launch; replaces dropped R18-3)
+
+**R18-5. Do the Dirac vertex V0 and the surviving vector family VW pass the forward test, and can SM content sit on one cone under them?**
+- **Plain question.**
+  - R17-12 (worker; referee running) shows that W1 plus a symmetric stress fixes the forward stress (Lemma F). That test excludes VU, and C₂ covariance excludes VM. Only the per-leg-averaged family VW survives, with free O(q²) stencils (Lemma I).
+  - Every Dirac number since R16-13 uses the stipulated V0 vertex, which leaves the Wilson mass uncoupled. That includes R17-9's SM root and R17-13's μ_T2.
+  - Does V0 pass Lemma F and the Lemma-M covariance zero? If not, what is the conserved Dirac vertex?
+  - With conserved vertices (U scalar, a conserved Dirac vertex, VW vector), is there an SM-count zero Ξ_Eg = Ξ_T2g = μ_E = 0? The VW stencils may be used as law data, and must be stated.
+- **Setting.** Wilson-Dirac D1-type edges (Lemma V1 subluminal), the U scalar vertex on one Higgs edge, VW vectors on subluminal photon edges. SM counts 4 + 22.5 + 12. Axial q, m ≤ 0.01, one loop, supplied zero-point vacuum, ultralocal seagull.
+- **Excluded:** VU, VM, the M vertex, pairing, superluminal edges.
+- **Prior art (count once):**
+  - R17-12 (Lemmas F, C, X, I; VW) and its referee when back;
+  - R17-9 and its verdict; R16-13 and its verdict (V0 and SF as stipulations);
+  - R17-4 (Lemma M); R13-5 (W1 hypotheses); R17-13 (running; μ_T2).
+- **Removed hypothesis:** V0 taken as a stipulation (it is now tested against Lemma F and Lemma M).
+- **Probes.**
+  - (a) The Lemma-F forward test and the Lemma-M covariance zero for V0. If V0 fails, construct the Dirac vertex fixed by Lemma F, including the Wilson-mass coupling.
+  - (b) Signs and sizes of the conserved Dirac Ξ_T2g, Ξ_Eg and μ_E on D1, compared with V0's.
+  - (c) The SM-count solve under (U, conserved Dirac, VW), with the VW stencils as declared extra knobs. Count the knobs and say which are law data.
+  - (d) Prices and the bill.
+- **FIXED readings.**
+  - **SM-LIFTED-CONSERVED:** an explicit SM-count content with conserved, covariant, local vertices, every edge subluminal and one Higgs edge, with Ξ_Eg = Ξ_T2g = μ_E = 0 at a common light mass. Checked, with knobs counted.
+  - **V0-FAILS:** a demonstration (referee required) that V0 violates Lemma F or Lemma M, with the replacement vertex stated. This can be recorded together with either of the other readings.
+  - **OPEN:** otherwise.
+- **Expectation.** V0-FAILS: the Wilson mass must couple to the stress, which changes the Dirac signs. The SM solve then stays OPEN.

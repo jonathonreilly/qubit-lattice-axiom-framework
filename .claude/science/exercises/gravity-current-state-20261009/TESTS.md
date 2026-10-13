@@ -7089,3 +7089,175 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OFF-AXIS-COUNTED:** the number of extra conditions is established (proved or checked), with a stated payment route, but no joint root is found.
   - **OPEN:** otherwise.
 - **Expectation.** OFF-AXIS-COUNTED with two extra conditions (face1 and face2), payable by off-axis stencil data. The bill then becomes ~6 tunings for the SM gravity block, plus the charge block.
+
+#### C5 referee verdicts R18-8, R18-10 (recorded 03:52Z; codex gpt-5.6-sol, xhigh)
+
+- **R18-8 referee: CONFIRMED WITH CORRECTIONS. Reading ANOMALY.**
+  - **The anomaly.** In the standard Regge–Teitelboim asymptotically flat phase space with free current-aligned S/G matter, the improved Killing generators have vanishing degree-1 pieces. So the degree-2 algebra contains {K_b, P_c} = δ_bc H + Q_D,cb, with defect moments in the rotation sector. {K,H}, {K,K} and {P,P} close.
+  - **No completion removes it** if the completion starts at degree 3.
+  - **Corrections:**
+    - Lemma T survives, but the surface-sign explanation is reversed.
+    - The no-repair corollaries are narrow.
+    - F(Q_D) stays conditional on the dressing's boundary domain.
+    - The observable is a frame-dependent combination of the ADM translation charges, not an invariant mass. Its thermal suppression rests on the stated population and scale assumptions.
+- **R18-10 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **Confirmed:**
+    - γ-dipole conservation by local XOR moves is exactly the conservation of six global label totals.
+    - The fixed-N half-filled sector through βU ≤ 2.5 is consistent with R18-1's screened width; no pinch point was found.
+    - M1 is rigorously fragmented.
+  - **Limits:**
+    - M2 is proven sector-ergodic only at L = 2.
+    - Higher couplings are mixing-limited.
+    - Subsystem conservation can manufacture exact axial zeros, so off-axis checks are required.
+  - **Not shown:** that all dipole-conserving Z₂ ensembles are screened.
+
+### C5 Round 19 (pre-registered 03:53Z from S26 §7 (agents/C5_S26_synthesis.md), text fixed before any run; R19-1..3 launched now)
+
+
+**Rules (as rounds 2–18, `TESTS:5688-5706`, `TESTS:6395-6406`).**
+- Probes on Opus 5.5 at xhigh. Every FAIL, EXCLUDED, OBSTRUCTED, CONFLICT or no-go goes to codex gpt-5.6-sol (xhigh) before it is recorded.
+- Prices are named, never adopted. Prior art is grepped first and counted once. Hypotheses come before titles. Numbers from memory are labelled RECALLED.
+- Every law states its whole-zone v_max, gauge fields included. Every count states its counterterm basis. Every Λ mechanism says what is enforced and what is stipulated.
+- Round-18 rules kept: locality of vertices (Lemma M, with Lemma M′ for spinors); number-free ≠ forced; bounded classes for spectra; certificates stated in advance.
+- **New (from round-18 verdicts):**
+  - **Exhaustive forks.** Every fork of the form FORCED-X / FORCED-Y has an explicit NEITHER branch (`vR17-12:17`).
+  - **Literal first.** A registered piece is tested as written. A restatement is reported as a new completion and priced (`vR18-6:5`).
+  - **Signs of law data.** Each registration says whether law-data weights may be signed (`vR18-5:16-20`).
+  - **Equilibration stated in advance.** Any MC reading states its equilibration criterion (round trips, seed stability, ladder) before the run (`vR18-1:9`).
+  - **Same-component controls.** A control measures the same component and normalization as the observable (`vR18-1:7`).
+  - **Off-axis pinch checks.** Any pinch claim reports the face and body channels, not the axes only (R18-10's correction to R18-1's diagnostic, `TESTS:6982`; `vR18-10:11`).
+  - **Thresholds recomputed.** A printed window or threshold is recomputed in exact or interval arithmetic before it is quoted (`vR18-2:11`).
+  - **Invariance, not covariance.** Isotropy claims cite the invariance of the state (`vR18-6:7`).
+  - **Vertex conservation.** Every TT or stress vertex passes the Lemma-F forward test, or is labelled non-conserved (`vR17-12:5`; `vR18-5:3`).
+
+**Timing.** Each item is sized for about 75 minutes of worker time. No new probe starts after 09:57Z; the campaign ends at 10:57Z. At about 03:30Z that leaves room for about five more rounds.
+
+**Overlap check (running items are not duplicated).**
+- R18-9 (worker FOUR-ROW-ZERO) covered the four axial rows at SM counts. **R18-13 (running) covers the off-axis rows at the SM root. No round-19 item drafts either; S26's earlier R19-4 is withdrawn.**
+- R18-10 (refereed OPEN) covered static dipole-conserving ensembles. R19-1 covers dynamics (the dispersion of the tensor branch), on R18-1's ensemble.
+- R18-11 (worker OPEN; referee running) covers set A on a Minkowski background in Poisson gauge. R19-2 covers only the FRW step its report names as decisive (`rR18-11:271`).
+- R18-8 (refereed ANOMALY) covers W7's algebra, and **R18-12 (running) covers the relic population, its bounds and whether P-W7edge0 holds dynamically. No round-19 item drafts either.** (An earlier S26 draft of a W7 relic item was withdrawn when R18-12 was registered.)
+- R18-6 covers the classical bridge. R19-3 covers only the quantum J2 step that `vR18-6:7` leaves open.
+
+**Priority.**
+1. R19-1 (graviton dynamics) and R19-3 (J2), in parallel, now.
+2. R19-2 (set A in FRW), after R18-11's referee confirms Theorem G and Lemma P, or now with its readings conditional on them.
+3. (R19-4 withdrawn: R18-13 covers it.)
+
+---
+
+**R19-1. Graviton production from the Z₂ window: can a tensor branch be light-like at or near the RK point?**
+
+- **Plain question.**
+  - Z₀ (refereed, bounded) says a statically visible gapless tensor branch with a strict vector gap forces a pinch point. R18-1 (refereed OPEN) and R18-10 (refereed OPEN) found no such static window yet.
+  - A static pinch point is necessary, not sufficient. Production needs a light-like branch, ω = ck.
+  - At a Rokhsar–Kivelson (RK) point the quantum dynamics is similar to the classical Markov generator of the same ensemble. The single-mode (Bijl–Feynman) bound gives ω(k) ≤ f(k)/S(k), where f is the f-sum (R17-1: k⁰ or k² for the Z₂ models) and S the static structure factor.
+  - With S finite at a pinch point, f ∝ k² gives z = 2 and f ∝ k⁰ gives a gap. A light-like branch needs S_TT ∝ |k|, a quantum (non-RK) Coulomb-type phase.
+  - Question: in the RK family on N0914's slots, can any tensor branch be light-like? If not, what exactly must the non-RK deformation supply?
+- **Setting.**
+  - N0914's slots, mod-2 law, the shift action (P112), the E⊕T₂ readout of R18-1.
+  - RK Hamiltonians H = Σ_moves [−t·flip + v·(potential)], at t = v, for R18-1's ensemble. (R18-10's fixed-dipole sector has the same ξ [ref, `vR18-10:7`], so it adds nothing.)
+  - Observables: the RK-point f-sum f_TT(k) as an exact classical average; S_TT(k) from MC (R18-1's data and runners, rerun first); the SMA bound along axis, face and body directions; the spectral gap of the Markov generator restricted to the TT channel, on small L by exact diagonalization where feasible.
+  - Excluded: integer-law lifts; non-local moves; degenerate grounds; the t ≠ v quantum phase beyond leading order.
+- **Prior art (count once):**
+  - R18-1 and vR18-1 (Z₀; the ensemble; frozen βU = ∞); R18-10 and vR18-10 (OPEN: the dipole is six label totals; planar laws fake axis pinches); R17-6 and vR17-6 (Theorems G, Z); R17-1 and vR17-1 (f-sum orders, k⁰/k² models); R15-5 (worker: qubits give k³ at every finite order at strong coupling);
+  - RK-point dynamics of classical Coulomb phases has z = 2 (Henley; Moessner–Sondhi; comparators, RECALLED);
+  - quantum Coulomb phase away from the RK point has ω ∝ k (Hermele–Fisher–Balents; comparator, RECALLED);
+  - rank-2 and lattice-graviton qubit models (Xu; Gu–Wen; Pretko; comparators, RECALLED).
+- **Removed hypothesis.** Statics only.
+- **Probes.**
+  - (a) The RK-point f_TT(k): its leading k-order in the registered ensemble, as an exact classical expression.
+  - (b) The SMA bound ω_SMA(k) = f/S along axis, face and body directions (R18-10's diagnostic correction), at βU ≤ 3.5, where vR18-1 accepts the data.
+  - (c) Analytic. For local RK generators with the mod-2 law, prove z ≥ 2 (or a gap) for every T₂ branch, or exhibit a counterexample. State the needed hypotheses (detailed balance, locality, the conserved structure).
+  - (d) What a light-like branch needs (S_TT ∝ |k|), and the leading t ≠ v correction to S_TT, if it fits in time.
+  - (e) Prices.
+- **FIXED readings.**
+  - **RK-Z2:** a refereed proof that, in the stated RK class, every T₂ branch is gapped or has z ≥ 2. Light-like production then needs a non-RK phase.
+  - **LIGHT-LIKE-SMA:** an explicit ensemble in the stated class whose SMA bound is linear in k in the TT channel, with checked strict V/S gaps. Checked.
+  - **NEITHER:** both fail; for example, the bound is z = 2 on samples but no proof covers the class.
+  - **OPEN:** otherwise.
+- **Expectation.** RK-Z2.
+  - Removed hypothesis: statics. RK dynamics is a symmetric Markov generator, and conserved local structure gives diffusive (z = 2) relaxation (comparator).
+  - The likeliest failure is a k⁰ f-sum (R17-1's face-only model) making the SMA bound uninformative (a gap). That gives NEITHER or OPEN.
+  - If RK-Z2 holds, the graviton window becomes "a non-RK quantum phase with S_TT ∝ |k|", which is P96 stated as a measurable target for quantum MC.
+
+---
+
+**R19-2. Set A's record noise in an expanding universe: does the a = 2 noise settle into a positive cosmological constant, and can it be the observed dark energy?** *(Launch after R18-11's referee confirms Theorem G and Lemma P, or now with the readings conditional on them. If the referee rejects either, the item is moot. This replaces an earlier S26 draft on W7 relics, which R18-12 now covers.)*
+
+- **Plain question.**
+  - R18-7 (refereed, in scope) builds set A's E1 + N_c at O(G²) in harmonic gauge.
+  - R18-11 (worker; referee running) finds that only the insertion a = 2, the record as √−g T^{μν}, makes the averaged noise source independent of the readout gauge (Theorem G). On Minkowski, Lemma P pins the noise's mean energy at its zero start, so only its pressure acts. At a = 2 the active density is negative and |ρ_act| > ρ_Λ over all of R15-2's window (×1.17 to ×1e19): a NOISE-OVERSHOOT candidate.
+  - R18-11 also suggests, without building it, that in FRW the switched-on noise settles to w = −1 with ρ ≈ (1 + ⟨x²⟩ + 2r + u_V/u₁)u₁/3 > 0. That equals ρ_Λ at ℓ ≈ 3.65 µm at the τ_c ceiling (`rR18-11:211-216`). Its report names this as one of the deciding computations (`rR18-11:271`).
+  - Question: with an FRW version of Π, does the a = 2 noise become an exact w = −1 component? If so, is its size a prediction (one relation between ℓ and τ) inside R15-2's window and R6-4's lab bounds, or does it overshoot everywhere?
+- **Setting.**
+  - E1 + N_c at a = 2 (P145); R15-2's channels (ρ, T_⊥, V, TT) at the least-decoherence split; P76; P88 (extended to TT only, as R18-11 states for Poisson gauge).
+  - A spatially flat FRW background with matter and radiation; the O(G·noise²) mean source; a noise spectrum stationary in comoving units.
+  - An FRW version of Π: a causal conserving completion with zero homogeneous data before t₀. Any homogeneous-pressure freedom is stated as a price, not used to cancel.
+  - Both energy histories, (P) and (U) (P146).
+  - Excluded: E2; strong field; a ≠ 2; the γ-trade (P-r15c) except as a stated price.
+- **Prior art (count once):** R18-11 (worker; its referee when back); R18-7 and vR18-7 (Π, the CP instrument, the scoped a = 4 zero); R18-6 and vR18-6 (set A: (S) cannot remove a non-vacuum stress); R15-2 and vR15-2 (u₁, the window, premise (iii)); R14-2 (the τ_c ceiling, suggested); R6-4 (the window's endpoint); R16-14 and vR16-14 (the Mercury bound); averaged backreaction (Isaacson; Green–Wald; comparators, RECALLED).
+- **Removed hypothesis.** The Minkowski background of R18-11's Lemma P.
+- **Probes.**
+  - (a) The FRW Π and the homogeneous mode: prove or refute ρ̇_K + 3Hρ_K = −3H(ρ_s + p_s) and the w → −1 attractor; state the decaying remainder.
+  - (b) The late-time ρ_noise in all channels (r, u_V, ⟨x²⟩ from R15-2's spectrum), as a function of (ℓ, τ).
+  - (c) Where ρ_noise = ρ_Λ, and whether that point lies inside R15-2's window and R6-4's bounds; the local Mercury bound at that point (R18-11's a = 2 exclusion of ℓ ≲ 2.5e-8 m).
+  - (d) Prediction or tuning: state the precision any match requires.
+  - (e) Prices.
+- **FIXED readings.**
+  - **NOISE-IS-Λ:** an explicit FRW construction in which the a = 2 noise tends to w = −1 with ρ_noise = ρ_Λ at a stated (ℓ, τ) inside the window, consistent with Mercury and R6-4's bounds, with the required precision stated. Checked.
+  - **NOISE-OVERSHOOT-FRW:** a refereed demonstration that in the stated class the late-time |ρ_act| exceeds ρ_Λ at every (ℓ, τ) in the window.
+  - **NEITHER:** the attractor exists, but its size cannot match ρ_Λ anywhere in the window without the γ-trade or a tuning (state which).
+  - **OPEN:** otherwise.
+- **Expectation.** NEITHER, leaning NOISE-IS-Λ only at the window's top corner.
+  - R18-11's suggested match needs the τ_c ceiling (itself suggested, R14-2) and small r and u_V. The T_⊥ and V channels add positive terms (2r, u_V/u₁) that push the match toward or past the window's edge.
+  - Removed hypothesis: the Minkowski background. Kept: a = 2; E1's zero-energy start.
+  - If NOISE-IS-Λ holds, set A would produce dark energy from its own record noise, with (S) setting the vacuum part to zero. That would be the campaign's first number that comes out rather than being tuned. It would also make P-r15c unnecessary at that point.
+
+---
+
+**R19-3. (S) as a quantum statement (J2): is the graviton's own zero-point stress absorbed by (S) and (d-i) in every gauge?**
+
+- **Plain question.**
+  - vR18-6 confirms the classical bridge (S) + (d-i) + N_red. It leaves the quantum step J2 OPEN (`vR18-6:7`):
+    - isotropy needs the vacuum to be cubic-*invariant*;
+    - the virial identification of ⟨t_LL⟩₀'s energy with the Hamiltonian zero-point covers only free, gauge-fixed TT modes;
+    - constraints, ghosts, interactions and the gauge-dependent LL pseudotensor are not covered.
+  - For linearized gravity on the box regulator, is the one-loop gravitational vacuum stress of the absorbable form −e_g g + W_g h[n] in every gauge, with e_g the TT zero-point energy density? If yes, (S) with the gravity sector inside H, plus (d-i), removes it with no number. If a non-absorbable part depends on the gauge or on the pseudotensor, J2 needs a named observable bridge.
+- **Setting.**
+  - R9-9's N-type box graviton (whole-zone v_max stated), lattice frame, Fierz–Pauli quadratic action.
+  - Three treatments: reduced phase space (TT only); harmonic gauge with Faddeev–Popov ghosts; Coulomb/Poisson gauge.
+  - The one-point stress via (A) ⟨t_LL⟩, (B) the second-order Einstein tensor ⟨G^(2)⟩ (Isaacson-type), and (C) the Hamiltonian zero-point. One loop.
+  - Check cubic invariance of each vacuum, not just covariance.
+  - Excluded: graviton self-interaction beyond one loop; matter; backreaction.
+- **Prior art (count once):** R18-6 and vR18-6/refR18-6 (J2); R17-11 and vR17-11 (the exchange current); R17-7 (the enthalpy residual); R11-3 (zero-point stress of lattice fields); R9-9 (graviton symbol); the Isaacson effective stress and the gauge independence of the on-shell one-loop effective action (comparators, RECALLED).
+- **Removed hypothesis.** Free TT-only, gauge-fixed modes.
+- **Probes.**
+  - (a) ⟨G^(2)_μν⟩ and ⟨t_LL⟩ in each of the three treatments, on the box regulator.
+  - (b) Decompose each into −e g + W h[n] plus a remainder; check cubic invariance; compare e with the TT zero-point.
+  - (c) Does the remainder vanish, and is it gauge-independent?
+  - (d) Under (S) with the gravity sector inside H, plus (d-i): is the gravitational vacuum removed with no number?
+  - (e) Prices.
+- **FIXED readings.**
+  - **J2-ABSORBED:** in all three treatments, the one-loop gravitational vacuum stress has the form −e_g g + W_g h[n], with e_g equal to the TT zero-point energy density and no remainder. Checked.
+  - **J2-GAUGE-BRIDGE:** a refereed demonstration that the non-absorbable part depends on the gauge or the pseudotensor choice, so J2 needs a named observable bridge.
+  - **NEITHER:** a gauge-independent non-absorbable remainder (J2 fails outright in the stated class). Refereed.
+  - **OPEN:** otherwise.
+- **Expectation.** J2-ABSORBED for (B) and (C); (A) may differ.
+  - On shell, the one-loop effective action is gauge-independent (comparator), and ghosts cancel the unphysical polarizations, leaving the two TT modes.
+  - In the lattice frame the vacuum is cubic-invariant, so its one-point stress is isotropic.
+  - The likeliest failure is ⟨t_LL⟩'s off-shell gauge dependence, which would make (A) disagree and give J2-GAUGE-BRIDGE for the pseudotensor reading only.
+  - Removed hypothesis: free TT-only modes. Kept: one loop, box regulator.
+
+---
+
+**R19-4 (withdrawn at 03:42Z).** Its question, the off-axis rows for UD and VW at the SM root, is now R18-13 (pre-registered 03:40Z, running; `TESTS:7061-7091`). R18-9 [worker] already found face2 ≠ T₂g for UD (`TESTS:7055`). So round 19 has three items.
+
+**Queued for round 20 (stubs only; register after the named reading).**
+- W7: if R18-12 returns BOUNDED or OPEN, the observational test of √(E² − P²) under the ADM readout bridge that P141 names.
+- The bill's off-axis fallback (P122 as a non-shape knob, or a q²-dependent seagull), if R18-13 returns OPEN or its count exceeds the placement data.
+- Quantum MC of the t ≠ v Z₂ model for S_TT ∝ |k|, if R19-1 returns RK-Z2.
+- W15's continuous multi-shift mixing (`vR18-4:3`), if time allows.
+
+---
+

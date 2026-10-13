@@ -1,0 +1,57 @@
+## (A) Riccati check of the second-order lag, per mode (excess above the instantaneous lowest state of H'_s)
+   Om    m     Hf     a_end   s=0: num / pred        s=0.5: num / pred      s=1: num / pred
+   0.5  0.0  0.020  2980.958   4.1297e-01 / 4.1044e-01   nan / 1.0261e-01   nan / 0.0000e+00
+   0.5  0.0  0.010   54.598   2.2501e-03 / 2.2501e-03   5.9601e-04 / 5.6252e-04   nan / 0.0000e+00
+   0.5  0.5  0.020  2980.958   4.5122e-04 / 4.5000e-04   2.0068e-04 / 2.0000e-04   5.0216e-05 / 5.0000e-05
+   0.5  0.5  0.010   54.598   1.1251e-04 / 1.1243e-04   5.0004e-05 / 4.9961e-05   1.2497e-05 / 1.2484e-05
+   1.0  0.0  0.020  2980.958   2.0513e-01 / 2.0522e-01   nan / 5.1305e-02   nan / 0.0000e+00
+   1.0  0.0  0.010   54.598   1.1250e-03 / 1.1250e-03   2.8507e-04 / 2.8126e-04   6.6959e-05 / 0.0000e+00
+   1.0  0.5  0.020  2980.958   4.5122e-04 / 4.5000e-04   2.0068e-04 / 2.0000e-04   5.0216e-05 / 5.0000e-05
+   1.0  0.5  0.010   54.598   1.1231e-04 / 1.1223e-04   4.9889e-05 / 4.9846e-05   1.2449e-05 / 1.2436e-05
+   2.0  0.0  0.020  2980.958   1.0261e-01 / 1.0261e-01   nan / 2.5652e-02   nan / 0.0000e+00
+   2.0  0.0  0.010   54.598   5.6252e-04 / 5.6252e-04   1.4110e-04 / 1.4063e-04   7.6195e-06 / 0.0000e+00
+   2.0  0.5  0.020  2980.958   4.5122e-04 / 4.5000e-04   2.0068e-04 / 2.0000e-04   5.0215e-05 / 4.9999e-05
+   2.0  0.5  0.010   54.598   1.1151e-04 / 1.1143e-04   4.9433e-05 / 4.9391e-05   1.2260e-05 / 1.2247e-05
+   3.4  0.0  0.020  2980.958   6.0358e-02 / 6.0358e-02   nan / 1.5090e-02   nan / 0.0000e+00
+   3.4  0.0  0.010   54.598   3.3089e-04 / 3.3089e-04   8.2817e-05 / 8.2723e-05   1.5222e-06 / 0.0000e+00
+   3.4  0.5  0.020  2980.958   4.5121e-04 / 4.4999e-04   2.0068e-04 / 2.0000e-04   5.0214e-05 / 4.9998e-05
+   3.4  0.5  0.010   54.598   1.0955e-04 / 1.0948e-04   4.8319e-05 / 4.8279e-05   1.1801e-05 / 1.1789e-05
+  (num = time-averaged excess after an adiabatic ramp of H from 0; pred = Hub^2 (2 + m^2/w^2 - 2s)^2/(16 w))
+
+## (B) zone averages for the 3D NN scalar (a = 1, lattice units)
+  <1/Om> = 0.455330   (N = 96; N = 64 check below)
+  <1/Om> (N = 64) = 0.455313
+  m = 0.0: c_X(s=0) = <(2+m^2/w^2)^2/(16 w)> = 0.113833   e0 = <w>/2 = 1.193801
+  m = 0.1: c_X(s=0) = <(2+m^2/w^2)^2/(16 w)> = 0.114071   e0 = <w>/2 = 1.194938
+  m = 0.3: c_X(s=0) = <(2+m^2/w^2)^2/(16 w)> = 0.115304   e0 = <w>/2 = 1.203952
+  m = 1.0: c_X(s=0) = <(2+m^2/w^2)^2/(16 w)> = 0.121125   e0 = <w>/2 = 1.300034
+  massless minimal scalar: rho_X = c_X H^2 / ell^2 with c_X = <1/Om>/4 = 0.113833
+
+## (C) cosmology (Planck units G = c = hbar = 1; inputs RECALLED)
+  rho_Lambda = 1.1337e-123;  rho_crit,0 = 1.6550e-123
+  per minimally coupled massless real dof, at ell = ell_P:  rho_X/rho_crit = (8 pi/3) c_X = 0.9536
+  today (H = H0, ell = ell_P): rho_X/rho_Lambda = 1.3922 per dof
+  N_min = 2 (gravitons only (J2)): x(ell) = rho_X/rho_crit = 1.907 (ell_P/ell)^2
+    BBN (|dG/G| < 10% at z ~ 4e+08): ell(BBN) > 4.58 ell_P  ->  ell_today > 1.83e+09 ell_P = 2.96e-26 m
+    LLR (|Gdot/G| < 1.5e-13/yr): x_today < 1.04e-03  ->  ell_today > 42.79 ell_P
+    60 e-folds, T_rh = 1e-02 GeV: x < 1 at inflation start needs ell_today > 6.71e+36 ell_P = 1.08e+02 m
+    60 e-folds, T_rh = 1e+09 GeV: x < 1 at inflation start needs ell_today > 6.71e+47 ell_P = 1.08e+13 m
+    60 e-folds, T_rh = 1e+15 GeV: x < 1 at inflation start needs ell_today > 6.71e+53 ell_P = 1.08e+19 m
+  N_min = 6 (gravitons + Higgs doublet (xi = 0)): x(ell) = rho_X/rho_crit = 5.722 (ell_P/ell)^2
+    BBN (|dG/G| < 10% at z ~ 4e+08): ell(BBN) > 7.93 ell_P  ->  ell_today > 3.17e+09 ell_P = 5.13e-26 m
+    LLR (|Gdot/G| < 1.5e-13/yr): x_today < 1.04e-03  ->  ell_today > 74.11 ell_P
+    60 e-folds, T_rh = 1e-02 GeV: x < 1 at inflation start needs ell_today > 1.16e+37 ell_P = 1.88e+02 m
+    60 e-folds, T_rh = 1e+09 GeV: x < 1 at inflation start needs ell_today > 1.16e+48 ell_P = 1.88e+13 m
+    60 e-folds, T_rh = 1e+15 GeV: x < 1 at inflation start needs ell_today > 1.16e+54 ell_P = 1.88e+19 m
+  LV comparators (RECALLED, labelled): LHC/colliders probe ~1e-19 m = 6e15 ell_P; GRB photon quadratic dispersion
+  E_QG,2 >~ 1e11-1e12 GeV -> ell <~ 1e7-1e8 ell_P for a literal NN photon (not binding on box laws, exact inside the box).
+
+## (D) literal (S) on V1: C fixed, vacuum e0(t) = eps0/ell(t)^4 (massless part)
+  z =  0.001 after the tuning epoch (ell = ell_P then): Lambda~ residual = 4.782e-03 M_P^4 = 4.218e+120 rho_Lambda per scalar
+  z =  0.010 after the tuning epoch (ell = ell_P then): Lambda~ residual = 4.847e-02 M_P^4 = 4.276e+121 rho_Lambda per scalar
+  z =  0.100 after the tuning epoch (ell = ell_P then): Lambda~ residual = 5.540e-01 M_P^4 = 4.887e+122 rho_Lambda per scalar
+  z =  1.000 after the tuning epoch (ell = ell_P then): Lambda~ residual = 1.791e+01 M_P^4 = 1.580e+124 rho_Lambda per scalar
+  drift of e0 a^4 from the mass term (eps0(mu) - eps0(0) ~ c_rho mu^2, mu = m ell, c_rho = 0.1138 NN (R11-3)):
+    mu = 1e-17: d ln(e0 a^4)/d ln a = 2 c_rho mu^2/eps0(0) = 1.907e-35
+    mu = 1e-05: d ln(e0 a^4)/d ln a = 2 c_rho mu^2/eps0(0) = 1.907e-11
+    mu = 1e-02: d ln(e0 a^4)/d ln a = 2 c_rho mu^2/eps0(0) = 1.907e-05

@@ -7856,3 +7856,47 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **TUNING-ONLY:** a refereed demonstration that within the stated bridge class μ = 0 requires tuning at the ~1e-98 level and is radiatively unstable.
   - **OPEN:** otherwise.
 - **Expectation.** TUNING-ONLY within the current bridge. A new principle ("only the strain-subtracted vacuum stress gravitates") could give STRUCTURAL-ZERO, but it would be a fifth clause, and likely the lattice analogue of requiring a Lorentz-invariant vacuum, which the lattice lacks.
+
+#### C5 referee verdicts R19-9, R19-10 and worker readings R19-12, R19-14 (recorded 05:50Z)
+
+- **R19-9 referee: NOT CONFIRMED (the PHOTON-EXACT). Reading OPEN.**
+  - **What holds:**
+    - the analytic strategy (continuum / Sylvester / dust) is a valid blueprint;
+    - the fibre identification gives the correct face continuity;
+    - there is no single-soft-leg Gauss-law obstruction;
+    - Proposition K's C_e r⁴ costs are confirmed independently;
+    - the six-knob SM root re-solves at r = 0.05–0.1, with direct N = 224 residuals < 4e-12.
+  - **Why it is not yet exact torus-wide:**
+    - the finite-width divided-difference fallback creates an internal discontinuity, with a residual > 1e-12 at a seam;
+    - exact-zero soft legs return NaN.
+  - **What is needed:** two implementation repairs and a renewed targeted check.
+- **R19-10 referee: NOT CONFIRMED (the INJECTS). Reading OPEN.**
+  - **Confirmed:**
+    - the completed-law e₀ exists, with L⁻⁴ (gapless) or exponential (gapped) finite-size corrections;
+    - the product-insertion costs: 0.04–0.06 per scalar site and 0.68–0.98 per Wilson-Dirac site;
+    - Lemma S-ins, under completed-law energy accounting with bounded extraction power Γ.
+  - **Why it does not establish INJECTS:** for a genuinely growing law, the axioms do not select the Hilbert-space embedding, the instantaneous Hamiltonian, the energy comparator, the insertion map, the interaction norms or event additivity.
+  - **What it does establish:** a strong conditional creation-energy obstruction, and a missing condition in the C-box-E realization. It does not show that every local growing lattice violates P93.
+- **R19-12 (charge block on the gravity root's edges): worker reading ONE-LAW-BILL.**
+  - **Charge rows on the root edges:** F_½ = −5.24 and Σ = +0.92 to +1.04.
+  - **Lemma A:** on one law the neutral species sit exactly on the tree cone, so the photon needs its own row (R16-9 missed this). The charge block is then 4 per class.
+  - **Shared knobs:** the gravity stencils never enter the charge rows. The window's free direction can pay Σ = 0, because Σ and μ_T2 are both Dirac-only; roots bracket Σ = 0 near b_γ ≈ 2.93605.
+  - **Bill** for SM content on one law, per (spin, |q|) class:
+    - **(A):** 11 equalities + photon window + CC.
+    - **(B):** at the Σ = 0 root, 11 + CC with no open selection.
+    - **With (d-i):** 10 + CC.
+    - **Per species:** 17 + CC.
+  - **R16-10's superluminal-photon route** is incompatible with the gravity root (v_max 8.05).
+  - **Prices:** P-R19-12a (photon-to-neutral row), P73 refined.
+
+  Referee running.
+- **R19-14 (other growth modes under (S)): worker reading OPEN.**
+  - **Lemma G0:** on fixed sites with a uniform law, light keeps its lattice wavenumber. So a fixed grid gives no redshift (excluded), and "records carry the expansion" is V1 (growing spacing) in another frame.
+  - **V1 needs no lattice-native scale:** Ġ/G = 2H is excluded by lunar ranging, and ℓ/ℓ_P drifts by ≥ 1e50.
+  - **V1 under (S).**
+    - e₀ ∝ a⁻⁴. A literal fixed C drifts; (d-i) cannot be posed there.
+    - (S_V), which subtracts the instantaneous lowest-state stress, closes Bianchi with no signalling.
+    - It leaves a second-order adiabatic lag of 0.954(1−s)²(ℓ_P/ℓ)² ρ_crit per field. That is non-negative and depends on the field-variable choice s. At s = 0 it excludes inflation unless ℓ > 100 m.
+    - (S_ad), "the adiabatic lowest state weighs nothing", removes the lag with no number.
+  - **Result:** V1 + (S_ad) + N_red + W1 is a homogeneous-only, 0-number candidate.
+  - **Prices:** P-r1914a (S_ad), P-r1914b (tune s), P-r1914c (no lattice-native scale), P-r1914d (lattice-frame motion).

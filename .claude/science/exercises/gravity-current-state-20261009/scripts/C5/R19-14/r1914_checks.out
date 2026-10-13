@@ -1,0 +1,42 @@
+## (1) sub-horizon modes (a_end ~ 1.5, w >> H): excess above the instantaneous lowest state of H'_s
+   Om   m     Hf     a_end    s=0 num/pred            s=0.5 num/pred          s=1 num/pred      ratio(Hf)/ratio(Hf/2), s=0
+   0.5 0.0  0.0040   1.522   1.1818e-05/1.1818e-05   2.9544e-06/2.9544e-06   4.1309e-10/0.0000e+00
+   0.5 0.0  0.0020   1.522   2.9544e-06/2.9544e-06   7.3860e-07/7.3860e-07   2.5811e-11/0.0000e+00
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+   0.5 0.3  0.0040   1.522   1.3163e-05/1.3162e-05   4.5847e-06/4.5842e-06   4.2829e-07/4.2812e-07
+   0.5 0.3  0.0020   1.522   3.2905e-06/3.2904e-06   1.1461e-06/1.1460e-06   1.0704e-07/1.0703e-07
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0002 (H^2 law: 4)
+   1.0 0.0  0.0040   1.522   5.9088e-06/5.9088e-06   1.4772e-06/1.4772e-06   5.1623e-11/0.0000e+00
+   1.0 0.0  0.0020   1.522   1.4772e-06/1.4772e-06   3.6930e-07/3.6930e-07   3.2264e-12/0.0000e+00
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+   1.0 0.3  0.0040   1.522   6.3255e-06/6.3254e-06   1.8305e-06/1.8305e-06   3.6491e-08/3.6457e-08
+   1.0 0.3  0.0020   1.522   1.5814e-06/1.5814e-06   4.5762e-07/4.5762e-07   9.1164e-09/9.1143e-09
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+   2.0 0.0  0.0040   1.522   2.9544e-06/2.9544e-06   7.3860e-07/7.3860e-07   6.4528e-12/0.0000e+00
+   2.0 0.0  0.0020   1.522   7.3860e-07/7.3860e-07   1.8465e-07/1.8465e-07   4.0328e-13/0.0000e+00
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+   2.0 0.3  0.0040   1.522   3.0211e-06/3.0211e-06   7.9023e-07/7.9023e-07   1.5893e-09/1.5836e-09
+   2.0 0.3  0.0020   1.522   7.5527e-07/7.5527e-07   1.9756e-07/1.9756e-07   3.9626e-10/3.9590e-10
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+   3.4 0.0  0.0040   1.522   1.7379e-06/1.7379e-06   4.3447e-07/4.3447e-07   1.3133e-12/0.0000e+00
+   3.4 0.0  0.0020   1.522   4.3447e-07/4.3447e-07   1.0862e-07/1.0862e-07   8.2051e-14/0.0000e+00
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+   3.4 0.3  0.0040   1.522   1.7522e-06/1.7522e-06   4.4535e-07/4.4535e-07   1.2183e-10/1.2057e-10
+   3.4 0.3  0.0020   1.522   4.3806e-07/4.3806e-07   1.1134e-07/1.1134e-07   3.0222e-11/3.0143e-11
+      H^2 scaling (s=0): excess(0.004)/excess(0.002) = 4.0000 (H^2 law: 4)
+
+## (2) homogeneous Bianchi bookkeeping on V1 (sympy)
+  vacuum fluid rho = eps(m ell0 a)/(ell0 a)^4, p = -d(rho V)/dV:  rho_dot + 3H(rho+p) = 0
+  enthalpy W = rho + p = (-ell0*m*a(t)*Subs(Derivative(eps(_xi_1), _xi_1), _xi_1, ell0*m*a(t)) + 4*eps(ell0*m*a(t)))/(3*ell0**4*a(t)**4)
+  (S) literal (C const), vacuum part kept as (rho-C, p+C): defect = 0  (zero: conserved, but Lambda~ = kappa(rho(t) - C) drifts as a^-4)
+  N_red source -(V - e0) g with V = rho(t), e0 = C: defect = d(rho)/dt = (ell0*m*a(t)*Subs(Derivative(eps(_xi_1), _xi_1), _xi_1, ell0*m*a(t)) - 4*eps(ell0*m*a(t)))*Derivative(a(t), t)/(ell0**4*a(t)**5)   -> needs a carrier Q_0 = d e0/dt = -3 H W
+  (S-inst) C(t) = e0(t) in C g only: gravitating vacuum (0, W): defect = 3 H W = (-ell0*m*a(t)*Subs(Derivative(eps(_xi_1), _xi_1), _xi_1, ell0*m*a(t)) + 4*eps(ell0*m*a(t)))*Derivative(a(t), t)/(ell0**4*a(t)**5)  = -d e0/dt: True
+  (S_V) full instantaneous vacuum stress removed: gravitating vacuum (0, 0): defect = 0; receiver of W is e0's own drift (Q = d e0)
+
+## (3) frame dependence of the lowest state, zone totals (massless NN scalar, per minimal dof)
+  s = 0.0: rho_X = 0.11383 H^2/ell^2 ;  rho_X/rho_crit at ell = ell_P: 0.9536
+  s = 0.5: rho_X = 0.02846 H^2/ell^2 ;  rho_X/rho_crit at ell = ell_P: 0.2384
+  s = 1.0: rho_X = 0.00000 H^2/ell^2 ;  rho_X/rho_crit at ell = ell_P: 0.0000
+  s = 1.5: rho_X = 0.02846 H^2/ell^2 ;  rho_X/rho_crit at ell = ell_P: 0.2384
+  s = 2.0: rho_X = 0.11383 H^2/ell^2 ;  rho_X/rho_crit at ell = ell_P: 0.9536
+  (s = 1: the lowest state of H'_1 is the first-order adiabatic vacuum; lag is then 4th order, O(H^4))

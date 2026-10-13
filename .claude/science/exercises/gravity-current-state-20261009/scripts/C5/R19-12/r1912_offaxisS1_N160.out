@@ -1,0 +1,8 @@
+S1 root (b_s, b_f, r, a, fr, b_g, fw, m) = [ 1.33421504  0.83791615  0.52077826 -0.17550219  1.          2.936996
+  1.          0.01      ]
+scalar per real: {'Eg': '-2.467071e-04', 'T2g': '-4.530435e-04', 'face1': '-3.201160e-04', 'face2': '-4.530435e-04', 'body': '-4.036645e-04'} (1s)
+Dirac per field: {'T2g': '+1.61384081e-03', 'Eg': '-1.79173404e-04', 'face1': '+7.23640932e-04', 'face2': '+1.68024477e-03', 'body': '+1.44973631e-03', 'xz': '+1.61384081e-03'} (5s)
+N=160 photon per vector at (0,0): face1 +2.076617e-01 face2 +1.031355e-01 ; totals at (0,0): face1 +2.5069e+00 face2 +1.2736e+00 ; J det +1.1596e+01 ; solved (w_d, w_o) = (-1.116807, -0.183918) (71s)
+DIRECT at solved (w_d, w_o): per vector T2g -2.874948241e-03 Eg +4.181682869e-04 face1 -1.250588881e-03 face2 -2.999555347e-03
+TOTALS: face1 -5.610e-06 face2 -1.331e-06 | axial T2g -1.345e-07 Eg -2.106e-07 at this photon N (the S1 axial root used the exact-quadratic photon at N=160)
+time 135s

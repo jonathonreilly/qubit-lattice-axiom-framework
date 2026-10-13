@@ -6,7 +6,7 @@ renewal_number: 2
 started_utc: '2026-10-13T21:37:33+00:00'
 deadline_utc: '2026-10-14T21:37:33+00:00'
 checkpoint_interval: 30m
-checkpoint_utc: '2026-10-13T22:25:08.558614+00:00'
+checkpoint_utc: '2026-10-13T22:51:05.358644+00:00'
 campaign_status: active
 automation_status: ACTIVE
 automation_id: toe-physical-realization-renewed-24-hour-campaign
@@ -14,15 +14,15 @@ authorization: 'Explicit user renewal: another 24 hours; latest repo sync; regul
   PRs; then highest-leverage physical-realization gaps.'
 active_branch: physics-loop/toe-energy-tail-20261013
 worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree
-active_head: e8d5b7b99c9faab65f71eb5ff353b60e2b609608
+active_head: ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989
 base_revision: e8d5b7b99c9faab65f71eb5ff353b60e2b609608
 active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9521
-active_pr_status: Prepare failed on missing Markdown parent citations; root-owned partial install preserved and
-  cleaned; narrow source repair active.
-active_pr_url: null
+active_pr_status: Regular PR9526 OPEN; clean published science head. Calibration actual-parent binding and physical
+  instrument checks active.
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9526
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
 checkpoint_branch: physics-loop/toe-nonlinear-transport-20261011
-previous_checkpoint_commit: 519399609b0a5790369295af3e675fe21b676d34
+previous_checkpoint_commit: 16183b28ebcf88a7805387fb450e546026537ab1
 source_root: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733
 prior_source_root: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012
 latest_main_revision: 583c699e859b64ff01c8bc92d1c04bdfe9994509
@@ -42,8 +42,8 @@ active_route: Publish energy-tail and graph-calibration results; then coarse com
   with explicit resources.
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-campaign_prs_created: 0
-campaign_prs_currently_open: 0
+campaign_prs_created: 1
+campaign_prs_currently_open: 1
 prior_campaign:
   archive: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/history/renewal-1-complete-before-20261013T213733Z
   started_utc: '2026-10-12T16:42:30+00:00'
@@ -70,23 +70,31 @@ prior_campaign:
   checkpoint_head: c03620656c4b745351e388d8dad1e12d1a0eb324
   recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/campaign_final_recovery_20261013T164310Z.tar.gz
 energy_tail:
-  status: Analytic source accepted; publication source v1 accepted but canonical prepare failed graph delta; no
-    PR yet.
+  status: Published regular PR9526; conditional-support analytic theorem, unchanged mathematical cores.
   assembly: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_source_assembly
   freeze_sha256: 8a19d7e566f1ed77a2effe2234ad4fc0e4398f28a562c151b3245e5abbcfc7cf
   root_review_sha256: 54072cf09669f21b4581abb79da64bcf9ce37fbd3de2e49f86ed8aa7a5fdac90
-  publication_folder: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation
+  publication_folder: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2
   scope: Fixed first-energy normal state and uniformly graph-bounded finite protocol imply final-energy uniform
     integrability. Varying states require joint limsup quantifier. J=Gamma C is linear/unitary. Weak prepared-state
     law remains explicitly supplied/provisional in its corollary.
-  publication_acceptance: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_PUBLICATION_ROOT_ACCEPTANCE.json
+  publication_acceptance: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_PUBLICATION_V2_ROOT_ACCEPTANCE.json
   failed_prepare: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_execution/20261013T221757_prepare_72458b48a14c
   recovery: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_FAILED_INSTALL_RECOVERY.json
   failure_scope: Canonical identity baseline and four exact byte controls passed; zero mathematical predicates.
     New node had no edges because YAML dependencies do not create citation edges. Source-only repair adds two Markdown
     parent citations.
+  publication_freeze_sha256: c92f7441e466d4ac8ed5f71d0cb79a4f04afe9c3f31b5450e69e009a51a3d8b2
+  canonical_note_sha256: dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592
+  pr_receipt: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_PR_CREATED.json
+  head: ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989
+  prepare: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_execution/20261013T223622_prepare_04336d40a60d
+  verify: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_execution/20261013T224113_verify_2df4239a9599
+  verification_scope: All source, graph and exact staging checks passed; graph +1 node/+2 edges. Canonical identity
+    and four corruption controls are zero-math checks. Focused ledger checked=[]; no retained verification inferred.
 graph_calibration:
-  status: Source assembly accepted; unbound publication package prepared; actual tail PR/head required.
+  status: Source accepted and unbound package corrected; actual PR9526/head supplied to preparation worker. Resume
+    final binding when a concurrency slot frees; no final freeze or runtime yet.
   acceptance: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_ACCEPTANCE.json
   acceptance_sha256: 6766afd47d73f3de5ab1a1a3437dac43f6a31ef734566ec51cf88876557660ad
   source_folder: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly
@@ -105,8 +113,8 @@ independent_audit: not_requested; no verdicts applied
 provisional_dependencies: Supplied one-dimensional gapped CAR/spin chain, graph bounds, common Hamiltonian and exact
   instruments. Prepared and compact-normal-family results remain checked provisional dependencies where invoked.
 strongest_unresolved_obligations:
-- Actual three-dimensional local-qubit realization
-- Physical common-H observable/instrument and calibrated embedding
+- Finite local apparatus and finite-volume interface to the existing supplied infinite-chain energy/Fock embedding
+- Native preparation, controls, energy accounting and actual three-dimensional local-qubit realization
 - Interacting-channel and central-rate selection
 failed_routes_and_corrections:
 - Original energy-tail J antiunitary wording corrected by immutable precision addendum; later Gamma remains antiunitary.
@@ -122,13 +130,20 @@ failed_routes_and_corrections:
   version preserved.
 - G0c primary modules absent from bounded reachable local paths/history/archives; joint matter/photon route remains
   secondary.
+- Tail v2 prepare accidentally invoked with PLACEHOLDER acceptance hash; rejected before mutation, preserved, then
+  correct pinned invocation succeeded.
+- Read-only source command ran git in evidence directory and short-circuited intended reads; immediately reran reads
+  in the correct directories.
+- 'Earlier physical-target checkpoint understated existing common-energy identification: source reconciliation found
+  exact energy-adapted infinite-chain/Fock/PVM bridge. Finite-apparatus interface remains distinct.'
 active_workers:
-  kinetic_correlation_review: Narrow source-only correction of missing canonical Markdown citations
-  threshold_protocol_fresh: Unbound calibration packet ready; waits actual tail PR/head
-  physical_source_survey: Completed reconnaissance and bounded source recovery
-next_action: Review narrowly corrected energy-tail frozen source, repeat prepare and exact staging/verify, publish
-  regular PR and attach it. Bind/review calibration packet to actual parent and publish regular PR. Then start the
-  physical energy-instrument target; no new result is yet asserted.
+  coarse_energy_instrument_derivation: Independent full-instrument analytic target, root candidate hidden
+  local_instrument_compiler_review: Source-exposed local compiler and finite full-instrument checks
+  physical_source_survey: Exact existing energy/Fock bridge applicability report
+  threshold_protocol_fresh: Idle pending concurrency slot; actual PR9526/head sent, final parent binding needed
+next_action: Resume calibration parent binding after a slot frees; review final changed sources, root prepare/stage/verify,
+  regular PR and attachment. Complete physical instrument independent checks and reconcile existing energy-adapted
+  bridge before the next finite-apparatus derivation.
 lock_owner: codex-toe-native-20261013
 lock_status: held
 lock_expires_utc: '2026-10-13T23:41:58.220204+00:00'
@@ -145,16 +160,28 @@ boundaries:
 editable_prompt_files_changed: []
 automatic_continuation_disabled: false
 physical_realization:
-  status: Target contract only; no new physical derivation yet.
+  status: Root full coarse energy instrument candidate sealed; finite matrix controls pass; independent derivation
+    and exposed local-compiler review active. No scientific acceptance or physical realization claimed.
   contract: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/PHYSICAL_REALIZATION_TARGET_CONTRACT.md
   contract_sha256: 636c4f620a9bf590bf47ea2e60586c7a9c2b419720c620aee18779f7da55f63f
   survey: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/physical_realization_reconnaissance/REPORT.md
   g0c_recovery: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/g0c_primary_recovery/REPORT.md
-  first_target: "Full coarse energy L\xFCders instrument preserving within-bin coherence and reference correlations,\
-    \ finite-energy error transfer, local implementation and priced resources. Common-H continuum/lattice identification\
-    \ remains separate."
+  first_target: "Full coarse common-H energy L\xFCders instrument preserving within-bin coherence and references,\
+    \ graph error transfer and priced finite local compiler. Connect finite apparatus to the existing exact infinite-chain\
+    \ energy bridge; do not rebuild that bridge."
   prior_art: Existing 3D local-even encoding and finite autonomous original-record supplier make generic encoding/pointer
     construction duplicates. Standard phase estimation and coherent uncompute are prior art.
   g0c_limit: Referenced external primary modules were not recovered in bounded local search; preserve referee scope,
     do not claim global absence or rerun success.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/recovery/renewal-20261013-failed-tail-integration.tar.gz
+  root_candidate: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/coarse_energy_instrument_root/DERIVATION.md
+  root_candidate_sha256: aa8349482e636744d001946cf2531d83f12d79847e3d025c35d657f4d6d093a8
+  root_candidate_sealed_utc: '2026-10-13T22:34:51.077825+00:00'
+  root_finite_controls: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/coarse_energy_instrument_root/finite_controls_run01/RECEIPT.json
+  root_finite_scope: Reference-entangled full CQ instruments, fine-archive coherence counterexample, phase tails/boundary/alias
+    controls, finite local product formula and coherent bus reset. Floating finite controls, not infinite-dimensional
+    proof.
+  existing_bridge: Exact infinite-chain energy-adapted J_a, positive one-particle Fock lift I_a, vacuum and energy-PVM
+    intertwining already exist for the supplied model. Do not duplicate or claim absent. The finite-volume/apparatus
+    and quantitative locality/resource interface remains open.
+  source_reconciliation: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ROOT_INSTRUMENT_TARGET_SOURCE_READS.json
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/recovery/renewal-20261013-tail-pr-physical-candidate.tar.gz

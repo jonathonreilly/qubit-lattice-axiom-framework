@@ -1,9 +1,14 @@
 # Current ranked queue
 
-1. Correct two missing canonical Markdown citations, then publish accepted energy-tail result as a regular PR. Preserve failed integration; mathematical bodies unchanged.
-2. Bind graph calibration to actual tail PR and publish epsilon=o(h), retaining uniform common-H graph and instrument assumptions.
-3. Derive full coarse energy instrument approximation with within-bin coherence, passive references, finite-first-energy control and explicit local apparatus resources. First finite fixture distinguishes full branch maps from a fine-energy archive.
-4. Prove the actual local-spin finite-volume/continuum energy bridge, if available; an algebra embedding alone does not identify the energy representations.
-5. Joint 3D matter/photon geometric realization remains secondary; bounded G0c source recovery failed, and existing local-even encoding must not be duplicated.
+1. Finish regular epsilon=o(h) calibration PR, bound to published tail PR9526.
+2. Check the full coarse common-H energy instrument and conditional finite local
+   compiler against independent derivation and exposed decisive controls.
+3. Connect finite apparatus/volume to the existing exact supplied infinite-chain
+   energy-adapted Fock embedding. Quantify locality, preparation and resources.
+4. Native three-dimensional realization, interacting channels and rate selection;
+   reopen only a concrete source-grounded target, preserving supplied assumptions.
+5. Threshold finite-protocol source remains accepted and unpublished if needed.
 
-No new physical theorem asserted yet. Fixed deadline2026-10-14T21:37:33Z.
+Tail regular PR9526 is complete. Existing infinite-chain energy/PVM intertwining
+is prior art, not a new gap. Local blockers do not exhaust the queue.
+Fixed deadline2026-10-14T21:37:33Z; no automatic extension.

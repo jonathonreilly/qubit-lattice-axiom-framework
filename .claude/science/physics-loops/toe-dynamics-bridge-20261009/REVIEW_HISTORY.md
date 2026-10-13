@@ -89,3 +89,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 Renewal2 started2026-10-13T21:37:33Z; checkpoint2026-10-13T21:51:43.917327+00:00. Prior campaign archived unchanged. Main/instructions unchanged; own publication heads unchanged. New regular tail/calibration preparation and read-only physical source survey active. No new scientific acceptance or audit verdict.
 
 2026-10-13T22:25:08.558614+00:00: Calibration source assembly accepted; tail publication integration failed missing Markdown citations with exact analytic bodies unchanged. Failed install preserved and cleaned; narrow repair active. Physical survey complete and coarse energy-instrument target selected, no new physical theorem.
+
+2026-10-13T22:51:05.358644+00:00: Regular tail PR9526 published and attached; exact runtime source/graph checks, no new retained status. Calibration binding pending slot. Root full-instrument candidate sealed with finite controls; independent checks active. Existing exact infinite-chain energy/Fock bridge source reconciliation narrows the next gap to finite apparatus/locality.

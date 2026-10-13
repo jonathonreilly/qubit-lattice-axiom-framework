@@ -1,0 +1,46 @@
+=== (1) single band, general finite component mixing: [P_j,T^a(q)] = sum_b M^{ab}(q) T^b(q) ===
+G m=1.0: rank of forward values (A=9 components) = 9 -> M(0) = 0 on the coupled space
+   |q|=1e-01: distinct Delta_q(k)/|q| values over 4000 k = 1484 (identity allows <= 9); best 9x9 M: rel. residual = 0.995
+   |q|=1e-02: distinct Delta_q(k)/|q| values over 4000 k = 1436 (identity allows <= 9); best 9x9 M: rel. residual = 0.995
+   |q|=1e-03: distinct Delta_q(k)/|q| values over 4000 k = 1434 (identity allows <= 9); best 9x9 M: rel. residual = 0.995
+G m=0.3: rank of forward values (A=9 components) = 9 -> M(0) = 0 on the coupled space
+   |q|=1e-01: distinct Delta_q(k)/|q| values over 4000 k = 1484 (identity allows <= 9); best 9x9 M: rel. residual = 0.994
+   |q|=1e-02: distinct Delta_q(k)/|q| values over 4000 k = 1436 (identity allows <= 9); best 9x9 M: rel. residual = 0.993
+   |q|=1e-03: distinct Delta_q(k)/|q| values over 4000 k = 1434 (identity allows <= 9); best 9x9 M: rel. residual = 0.993
+NN m=1.0: rank of forward values (A=9 components) = 9 -> M(0) = 0 on the coupled space
+   |q|=1e-01: distinct Delta_q(k)/|q| values over 4000 k = 4000 (identity allows <= 9); best 9x9 M: rel. residual = 0.995
+   |q|=1e-02: distinct Delta_q(k)/|q| values over 4000 k = 4000 (identity allows <= 9); best 9x9 M: rel. residual = 0.995
+   |q|=1e-03: distinct Delta_q(k)/|q| values over 4000 k = 4000 (identity allows <= 9); best 9x9 M: rel. residual = 0.995
+NN m=0.3: rank of forward values (A=9 components) = 9 -> M(0) = 0 on the coupled space
+   |q|=1e-01: distinct Delta_q(k)/|q| values over 4000 k = 4000 (identity allows <= 9); best 9x9 M: rel. residual = 0.992
+   |q|=1e-02: distinct Delta_q(k)/|q| values over 4000 k = 4000 (identity allows <= 9); best 9x9 M: rel. residual = 0.992
+   |q|=1e-03: distinct Delta_q(k)/|q| values over 4000 k = 4000 (identity allows <= 9); best 9x9 M: rel. residual = 0.992
+L m=0.3: rank of forward values (A=9 components) = 9 -> M(0) = 0 on the coupled space
+   |q|=1e-01: distinct Delta_q(k)/|q| values over 4000 k = 1509 (identity allows <= 9); best 9x9 M: rel. residual = 0.980
+   |q|=1e-02: distinct Delta_q(k)/|q| values over 4000 k = 1464 (identity allows <= 9); best 9x9 M: rel. residual = 0.978
+   |q|=1e-03: distinct Delta_q(k)/|q| values over 4000 k = 1591 (identity allows <= 9); best 9x9 M: rel. residual = 0.978
+   CONTROL continuum g = k, |q|=1e-01: rel. residual = 6.8e-16; M = q_x*1 recovered to 8.3e-17
+   CONTROL continuum g = k, |q|=1e-02: rel. residual = 8.9e-16; M = q_x*1 recovered to 1.9e-17
+   CONTROL continuum g = k, |q|=1e-03: rel. residual = 2.3e-15; M = q_x*1 recovered to 2.0e-18
+
+=== (2) multi-band mixing: reduction lemma and the su(2) ('rotation-like') mixing ===
+  spin-1 Pi_j = S_j: |[S_x,S_y] - i S_z| = 0.0e+00; spec S_x = [-1.  0.  1.] (k-independent)
+  G m=0.3: spin-1 multiplet, max_k |v_i S_j - v_j S_i| = 0.981 (0 needed for symmetric T^ij -> v = 0: flat band)
+  NN m=1.0: spin-1 multiplet, max_k |v_i S_j - v_j S_i| = 0.607 (0 needed for symmetric T^ij -> v = 0: flat band)
+  zigzag {+tri,-tri}, shifts {+q,-q}, q=1e-01: partner violation max = 9.99e-02 (= 1.00 q) at k = +3.0916 (peak k = +-pi); violation at |k|<2.5: 5.6e-16
+  zigzag {+tri,-tri}, shifts {+q,-q}, q=1e-02: partner violation max = 9.95e-03 (= 0.99 q) at k = +3.1366 (peak k = +-pi); violation at |k|<2.5: 8.9e-16
+  zigzag {+tri,-tri}, shifts {+q,-q}, q=1e-03: partner violation max = 7.43e-04 (= 0.74 q) at k = +3.1410 (peak k = +-pi); violation at |k|<2.5: 5.6e-16
+
+=== (3) field-dependent generators: Poisson-bracket check of the 'graviton inverse propagator' structure ===
+  pi-coefficient of {Q, Hm+Hg}: (ai*bi + ar*br)*(Y*c + Z*e1 - Z*e2)
+  require it = 0  ->  Y = [Z*(-e1 + e2)/c]
+  h-coefficient after that: Z*(ai*br - ar*bi)*(Kq*c - e1**2 + 2*e1*e2 - e2**2)/c   (omega = e2 - e1; factor (c*Kq - omega^2)/c * Z = graviton inverse propagator at (omega, q) times Z: zero only for an on-shell graviton)
+
+=== (4) energy-shell (field-dependent) form, single band: t.grad(Pi_x) = t_x for t tangent to the energy surface ===
+  NN m=0.3 (cubic): min rel. tangential residual  R=1 (4 coeffs): 0.896; R=2 (18 coeffs): 0.799; R=4 (100 coeffs): 0.757; R=6 (294 coeffs): 0.745
+  G m=0.3 (cubic): min rel. tangential residual  R=1 (4 coeffs): 0.885; R=2 (18 coeffs): 0.814; R=4 (100 coeffs): 0.734; R=6 (294 coeffs): 0.716
+  CONTROL NN anisotropy delta=1.0: min rel. tangential residual (R=4) = 7.568e-01
+  CONTROL NN anisotropy delta=0.1: min rel. tangential residual (R=4) = 2.140e-02
+  CONTROL NN anisotropy delta=0.01: min rel. tangential residual (R=4) = 2.696e-04
+  NN m=0.3: full Fourier basis (no parity imposed), R=3 (342 functions): min rel. tangential residual = 0.769
+  G m=0.3: full Fourier basis (no parity imposed), R=3 (342 functions): min rel. tangential residual = 0.761

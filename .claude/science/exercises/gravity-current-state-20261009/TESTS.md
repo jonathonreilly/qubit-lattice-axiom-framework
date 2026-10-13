@@ -6248,3 +6248,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **SIGNALS / INCONSISTENT:** a refereed demonstration that every (d-i) form in a stated class signals or breaks Bianchi.
   - **OPEN:** otherwise.
 - **Expectation.** SIGNALS. Absorbing a uniform pressure exactly at all times is the CMC/g ≠ 0 pattern again, unless the pressure residual is itself constant, in which case (d-i) may be trivial.
+- **R17-8 (mixing, field-dependent and altered generators): worker reading OPEN.** The no-gos cover each generator kind separately, not jointly.
+  - **Lemma N (Noether lock).** W1_pf forces the shift generator to be ∫T^{0j} on shell. This closes RFW F2's altered-generator item in the canonical class.
+  - **MIX-1 (single band).** Finitely many shift eigenvalues cannot track a continuous symbol, so g ≡ 0.
+  - **MIX-2 (multi-band).** The k-independent Π spectrum is proved for one small shift and for analytic symbols. The generalized RB then fails the redshift test.
+  - **Lemma FD.** Field-dependent generators enforce W2_pf only on shell, up to O(q²).
+  - **Theorem W (winding).** The redshift bridge needs rank-3 windings, but a T³ band's Reeb graph allows rank ≤ 1, so π ≡ 0 for isolated analytic bands.
+  - **Not covered:**
+    - mixing and field-dependent generators used together;
+    - continuous-only symbols with several shifts;
+    - crossing bands.
+  - **Prices:**
+    - P-r178a: a non-canonical shift action;
+    - P64 and P90 unchanged.
+  - **Archive fix (01:30Z):** the committed R17-5 runner imported a profile file from a path that was not archived. The file was copied beside it and the path corrected. The rerun matches the stored output (reported by R17-8).
+
+  Referee running.

@@ -4,7 +4,7 @@ Raw values everywhere; no subtraction. Each block prints what it checks.
 """
 import os, sys
 import numpy as np
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'r165_recheck'))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # archived: profile copy sits beside this script
 from r99_profiles_copy import profile
 
 rng = np.random.default_rng(20261013)

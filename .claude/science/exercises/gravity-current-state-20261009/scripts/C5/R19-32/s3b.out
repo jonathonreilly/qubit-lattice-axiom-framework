@@ -1,0 +1,7 @@
+Tue Oct 13 07:25:47 UTC 2026
+vecx L=3 AP d= 2 nu=1.0000 (freqs [1. 2.]; mixing=yes): dim 64; dim V = 0; min sing = 6.452e-02  [0.0s]
+vecx L=3 AP d= 2 nu=2.0000 (freqs [1. 2.]; mixing=yes): dim 64; dim V = 0; min sing = 9.198e-02  [0.0s]
+vecx L=3 AP d= 3 nu=1.0000 (freqs [1. 2.]; mixing=yes): dim 729; dim V = 0; min sing = 1.215e-02  [0.3s]
+vecx L=3 AP d= 3 nu=2.0000 (freqs [1. 2.]; mixing=yes): dim 729; dim V = 0; min sing = 2.689e-02  [0.3s]
+vecx L=3 AP d= 4 nu=1.0000 (freqs [1. 2.]; mixing=yes): dim 4096; dim V = 0; min sing = 2.282e-03  [26.5s]
+vecx L=3 AP d= 4 nu=2.0000 (freqs [1. 2.]; mixing=yes): dim 4096; dim V = 0; min sing = 9.028e-03  [26.3s]

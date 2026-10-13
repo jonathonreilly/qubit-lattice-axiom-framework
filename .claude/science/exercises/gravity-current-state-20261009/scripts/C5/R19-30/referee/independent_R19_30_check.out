@@ -1,0 +1,39 @@
+OFFSET-PARITY CONTENT (independent character projectors)
+  UD   T^01: correct-class RMS share 0.1743; active classes 5/8
+  UD   T^00: correct-class RMS share 0.1246; active classes 4/8
+  E1 U T^01: correct-class RMS share 0.8348; active classes 4/8
+  E1 U T^00: correct-class RMS share 0.8142; active classes 2/8
+CUT TEST (independent character decomposition)
+  per-leg U xy raw      : eps 1e-5 2.033e+00; eps 1e-7 2.491e+00
+  per-leg U xy FF       : eps 1e-5 1.607e-05; eps 1e-7 1.436e-07
+  E1 U xy raw           : eps 1e-5 1.896e+00; eps 1e-7 1.599e+00
+  E1 U xy FF            : eps 1e-5 1.099e-05; eps 1e-7 9.335e-08
+  E1 U xx FF            : eps 1e-5 4.084e+00; eps 1e-7 3.697e+00
+  E1 U xy PR            : eps 1e-5 4.107e-05; eps 1e-7 3.871e-07
+  E1 U xx PR            : eps 1e-5 6.232e-05; eps 1e-7 6.563e-07
+  UD xy raw, x cut      : eps 1e-5 9.460e-01; eps 1e-7 9.050e-01
+  UD xy FF, z cut       : eps 1e-5 6.973e-02; eps 1e-7 7.487e-02
+  UD xx FF, x cut       : eps 1e-5 2.141e+00; eps 1e-7 2.143e+00
+  UD PR, all 6 comps/all 3 cuts: eps 1e-5 1.611e-05; eps 1e-7 2.170e-07
+FACE1 INDEPENDENT EVALUATOR (m=0.3, midpoint grid)
+  N=32, h=0.05: literal minus true-position row = +1.11022474e-02
+  N=32, h=0.05: PR minus true-position row      = +3.98026797e-09
+  independent convergence rerun: N=40 literal minus true-position = +1.11071305e-02
+  independent convergence rerun: N=40 PR minus true-position      = +3.96836175e-09
+ROW-KERNEL SCALING max |PR-raw|/s^4 (Dirac, 300 kbar)
+  axis: 2.51716e-02 2.52346e-02 2.52503e-02
+  face: 6.39427e-03 6.40227e-03 6.40427e-03
+  body: 2.89091e-03 2.89332e-03 2.89393e-03
+W1, independently rebuilt PR pair block
+  Dirac generic: 6.684e-16
+  Dirac x cut +: 6.280e-16
+  Dirac x cut -: 1.110e-15
+  scalar E1 PR, 1500 whole-torus pairs: 9.930e-16
+CUBIC COVARIANCE OF PR COEFFICIENTS
+  C4z: scalar 1.421e-14; Dirac coefficient tensor 1.554e-15
+  C3 : scalar 1.776e-15; Dirac coefficient tensor 4.441e-16
+  C2 : scalar 1.243e-14; Dirac coefficient tensor 1.887e-15
+Q-ONLY MULTIPLIER SCOPE
+  raw mixed-parity cut jump: 1.561e+00
+  flat-cutoff cut jump:       0.000e+00
+  max |chi-1| for |q_l|<0.9: 0.000e+00

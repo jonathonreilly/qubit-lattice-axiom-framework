@@ -1,0 +1,6 @@
+vecx L=3 P  d= 2 nu=1.0000 (freqs [1.7321]; mixing=yes): dim 64; dim V = 4; min sing = 2.123e-16; inertia (2, 2, 0), quotient (+,-) = (2, 2), smallest nonnull Gram [-1. -1.  1.  1.], H-leak 4.26e-01  [0.0s]
+vecx L=3 P  d= 2 nu=1.7321 (freqs [1.7321]; mixing=no): dim 64; dim V = 9; min sing = 3.848e-17; inertia (3, 2, 4), quotient (+,-) = (3, 2), smallest nonnull Gram [-1.  -1.   0.5  1.   1. ], H-leak 1.71e-01  [0.0s]
+vecx L=3 P  d= 3 nu=1.0000 (freqs [1.7321]; mixing=yes): dim 729; dim V = 9; min sing = 1.904e-16; inertia (6, 3, 0), quotient (+,-) = (6, 3), smallest nonnull Gram [-1. -1. -1.  1.  1.  1.], H-leak 4.30e-01  [0.3s]
+vecx L=3 P  d= 3 nu=1.7321 (freqs [1.7321]; mixing=no): dim 729; dim V = 40; min sing = 3.062e-17; inertia (9, 5, 26), quotient (+,-) = (9, 5), smallest nonnull Gram [-1.     -1.     -1.     -0.75   -0.6364  0.125 ], H-leak 2.62e-01  [0.3s]
+vecx L=3 P  d= 4 nu=1.0000 (freqs [1.7321]; mixing=yes): dim 4096; dim V = 16; min sing = 3.064e-16; inertia (8, 8, 0), quotient (+,-) = (8, 8), smallest nonnull Gram [-1. -1. -1. -1. -1. -1.], H-leak 3.52e-01  [31.3s]
+vecx L=3 P  d= 4 nu=1.7321 (freqs [1.7321]; mixing=no): dim 4096; dim V = 124; min sing = 3.759e-17; inertia (16, 13, 95), quotient (+,-) = (16, 13), smallest nonnull Gram [-1. -1. -1. -1. -1. -1.], H-leak 2.24e-01  [28.0s]

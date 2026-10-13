@@ -1,0 +1,12 @@
+L=3 AP d=3: chi_d(eta=+1) = 0.085405, chi_d(eta=-1) = -0.085405 (expect -chi_+); CCR static G(0)/2 = 0.375000
+L=3 AP d=4: chi_d(eta=+1) = 0.425086, chi_d(eta=-1) = -0.425086 (expect -chi_+); CCR static G(0)/2 = 0.375000
+L=3 AP d=5: chi_d(eta=+1) = 0.370534, chi_d(eta=-1) = -0.370534 (expect -chi_+); CCR static G(0)/2 = 0.375000
+L=3 AP d=6: chi_d(eta=+1) = 0.375675, chi_d(eta=-1) = -0.375675 (expect -chi_+); CCR static G(0)/2 = 0.375000
+L=3 AP d=7: chi_d(eta=+1) = 0.374954, chi_d(eta=-1) = -0.374954 (expect -chi_+); CCR static G(0)/2 = 0.375000
+L=3 AP d=8: chi_d(eta=+1) = 0.375009, chi_d(eta=-1) = -0.375009 (expect -chi_+); CCR static G(0)/2 = 0.375000
+L=4 AP d=3: chi_d(eta=+1) = 0.133611, chi_d(eta=-1) = -0.133611 (expect -chi_+); CCR static G(0)/2 = 0.500000
+L=4 AP d=4: chi_d(eta=+1) = 0.531389, chi_d(eta=-1) = -0.531389 (expect -chi_+); CCR static G(0)/2 = 0.500000
+L=4 AP d=5: chi_d(eta=+1) = 0.500481, chi_d(eta=-1) = -0.500481 (expect -chi_+); CCR static G(0)/2 = 0.500000
+L=4 AP d=6: chi_d(eta=+1) = 0.500263, chi_d(eta=-1) = -0.500263 (expect -chi_+); CCR static G(0)/2 = 0.500000
+L=4 AP d=7: chi_d(eta=+1) = 0.500028, chi_d(eta=-1) = -0.500028 (expect -chi_+); CCR static G(0)/2 = 0.500000
+L=4 AP d=8: chi_d(eta=+1) = 0.500004, chi_d(eta=-1) = -0.500004 (expect -chi_+); CCR static G(0)/2 = 0.500000

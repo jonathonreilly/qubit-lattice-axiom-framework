@@ -1,0 +1,2 @@
+vecx L=3 AP d=6 nu=1.0000: dim 46656; dim V (among 12 smallest) = 0; min sing = 7.479e-05; next [0.00042  0.000421 0.000421]  [2457.4s]
+vecx L=3 AP d=6 nu=2.0000: dim 46656; dim V (among 12 smallest) = 0; min sing = 7.449e-04; next [0.002592 0.00261  0.00261 ]  [1212.9s]

@@ -1,0 +1,10 @@
+vecx L=1 d=3 nu=1.0000 (v_k != 0): dim V 3; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.0108
+vecx L=1 d=5 nu=1.0000 (v_k != 0): dim V 5; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.0001
+vecx L=1 d=4 nu=1.0000 (v_k != 0): dim V 4; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.0012
+vecx L=2 d=3 nu=1.0000 (v_k != 0): dim V 1; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.0568
+vecx L=2 d=5 nu=1.0000 (v_k != 0): dim V 1; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.0013
+scal L=1 d=3 nu=1.0000 (v_k != 0): dim V 1; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.1945
+scal L=1 d=5 nu=1.0000 (v_k != 0): dim V 1; dim(V cap W_<top) = 0; min top-level weight over unit v in V = 0.0174
+vecx L=1 d=4 nu=2.0000 (v_k = 0): dim V 4; dim(V cap W_<top) = 3; min top-level weight over unit v in V = 0.0000
+vecx L=2 d=4 nu=1.4142 (v_k = 0): dim V 11; dim(V cap W_<top) = 6; min top-level weight over unit v in V = 0.0000
+scal L=1 d=4 nu=2.0000 (v_k = 0): dim V 11; dim(V cap W_<top) = 6; min top-level weight over unit v in V = 0.0000

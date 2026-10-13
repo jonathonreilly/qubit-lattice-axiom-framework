@@ -8824,3 +8824,38 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **The bridge breaks W(B4) → W(B3)×Z₂ᵀ.** A suggested O(κ²) loop leak threatens R19-28's W(B4) cone saving.
 
   Referee running.
+
+- **Referee records, 2026-10-13 ~08:47Z.** Codex gpt-5.6-sol at xhigh.
+  - **R19-29: CONFIRMED WITH CORRECTIONS. Recorded reading: OPEN** (the worker said FACE1-HOLDS).
+    - Lemma C holds only under H6 (a real-symmetric Gram).
+    - Theorem Q's leading algebra is confirmed: an independent 5×5 solve agrees to 4.7e-10.
+    - "λ_nn generic" is not a proof. So the result is HOLDS if λ_nn ≠ 0 and SHIFTS if λ_nn = 0, which is OPEN.
+    - Corrections:
+      - c₄ is not converged (−2.83 at N = 160);
+      - −25.9 is G(0), and the nn bubble entry is ≈ −6.47;
+      - the λ_nn = 0 root moves from w_d = 0.753 to 0.942 at N = 160, so it is not converged.
+    - The literal R19-5 code does give SHIFTS qualitatively, but w_d = −1.377 is only conditional.
+  - **R19-30: CONFIRMED WITH CORRECTIONS. UD-LOCAL is met.**
+    - The rows use the true-position kernel.
+    - R19-5's face1 shift is independently +1.11e-2 per field at m = 0.3, which is about +0.25 on the total at m = 0.3 (+0.29 is the m = 0.01 estimate).
+    - The class decomposition, W1 ≤ 2.7e-15, row-neutrality and covariance are all confirmed.
+    - Correction: the unqualified q-only no-go is false. An infinitely flat q-only cutoff is also a valid row-neutral repair, so class resolution is not uniquely necessary.
+  - **R19-31: CONFIRMED WITH CORRECTIONS. The reading is OPEN.**
+    - Confirmed:
+      - the abelian spatial Ward identity at every strain (but Π₀₀ = m_D² ≠ 0, and the non-abelian case is unchecked);
+      - the background-field gap −0.0823e²m²;
+      - the scalar speed residue −0.0860e²T⁴, with m_g²/H² = −1.7e-3 under the Higgs mapping. The −4e-2 total is only a scenario;
+      - the Wilson Hessian −0.0622e² and the 100 GeV figure −4.8e13. That number is correct arithmetic but conditional, not an SM prediction.
+    - R19-27's per-site counterterms cannot reach the shear Hessians; per-link counterterms are not excluded.
+
+- **R19-32 (10-slot Krein graviton): worker reading OPEN overall. KREIN-EMPTY holds only in this scope:** the formula reading, antiperiodic rings with hopping, d = 2–5, with a proved mechanism.
+  - **Correction to R19-25 s5:** forward differences make the de Donder lowering parts non-null. The staggered tensor placement makes them null to 3.7e-16, with inertia (2, 0, 4) and a 2-TT quotient (P-r19-32a).
+  - **Covariant Lemma K:** the commutators equal −d × Bogoliubov × top-level projectors. So they commute iff there is one frequency.
+  - **Top-support lemma:** every exact physical state touches the truncation edge.
+  - **Controls:**
+    - rings with no hopping work: vacuum quotient, zero leak below the top level;
+    - periodic rings give an indefinite quotient.
+  - **Spectral reading (P-r19-32b):** never empty, but not positive, with extra branches at d = 5–7.
+  - **Static T⁰⁰:** attractive at every d; χ_d → ½.
+
+  Referee running.

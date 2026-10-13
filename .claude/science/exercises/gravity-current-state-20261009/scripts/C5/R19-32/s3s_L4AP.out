@@ -1,0 +1,6 @@
+vecx L=4 AP d=2 nu=1.0000: dim 256; dim V (among 12 smallest) = 0; min sing = 8.403e-02; next [0.213897 0.213897 0.220167]  [0.0s]
+vecx L=4 AP d=2 nu=0.7654: dim 256; dim V (among 12 smallest) = 0; min sing = 1.738e-01; next [0.24875  0.24875  0.304167]  [0.0s]
+vecx L=4 AP d=2 nu=1.8478: dim 256; dim V (among 12 smallest) = 0; min sing = 1.498e-01; next [0.255574 0.255574 0.268003]  [0.0s]
+vecx L=4 AP d=3 nu=1.0000: dim 6561; dim V (among 12 smallest) = 0; min sing = 1.823e-02; next [0.058534 0.058534 0.058649]  [3.5s]
+vecx L=4 AP d=3 nu=0.7654: dim 6561; dim V (among 12 smallest) = 0; min sing = 5.565e-02; next [0.107516 0.107516 0.107564]  [3.7s]
+vecx L=4 AP d=3 nu=1.8478: dim 6561; dim V (among 12 smallest) = 0; min sing = 4.873e-02; next [0.101598 0.101598 0.101625]  [3.6s]

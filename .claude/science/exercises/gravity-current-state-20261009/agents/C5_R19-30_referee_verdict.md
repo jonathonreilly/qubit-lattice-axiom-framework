@@ -1,0 +1,19 @@
+# VERDICT: CONFIRMED WITH CORRECTIONS
+
+1. **Row convention:** Confirmed. The scalar and Dirac rows contract the true-position kernel, `M_tilde = UD(kbar)`, while R19-5’s W1 code treats its phase-free pair block as the site-label kernel. `C5_R9-9_report.md:100-101`; `C5_R17-4_report.md:44-50`; `../ref_R19-26/orig/arch18_13/dface.py:5-11,51-57`.
+
+2. **R19-5 face1 shift:** Confirmed independently: \(+1.11022474\times10^{-2}\) at \(N=32\) and \(+1.11071305\times10^{-2}\) at \(N=40\), for \(m=0.3\). The placement repair changes the row only by \(4.0\times10^{-9}\). Correction: multiplying the \(m=0.3\) value by 22.5 gives about \(+0.25\), not \(+0.29\); \(+0.29\) is the worker’s separate \(m=0.01\) estimate. `r195copy/r195_dirac_exact.py:81,95-108`; `independent_R19_30_check.out:18-22`.
+
+3. **Cut/class test:** Confirmed with an independent eight-character decomposition. The correct-class UD shares are 0.1743 for \(xy\) and 0.1246 for \(xx\). Raw kernels retain \(O(1)\) jumps; ordinary \(F(q_i)F(q_j)\) fixes per-leg U but leaves E1/UD diagonal and third-direction defects. Class-resolved PR makes all six UD components scale with the cut gap. `independent_R19_30_check.out:1-17`; `r1930_cut_m0.01.out:13-34`.
+
+4. **W1:** Confirmed. Independent pair-block residuals are at most \(1.11\times10^{-15}\); the fresh full-kernel rerun reaches a maximum \(2.67\times10^{-15}\), below the required \(10^{-12}\). `independent_R19_30_check.out:27-31`; `r1930_w1.out:1-10`.
+
+5. **Row-neutrality and covariance:** Confirmed. Since \(F=1-3q^4/128+O(q^6)\), PR changes the kernel only by \(O(q^4)\), leaving continuum \(q^2\) and \(q=0\) rows unchanged. Independent scalar and Dirac covariance residuals are at most \(1.4\times10^{-14}\). `independent_R19_30_check.out:20-35`.
+
+6. **q-only no-go:** Correction required. No common multiplier with a non-flat seam germ—and therefore no nontrivial analytic/finite-stencil scalar—can repair opposite parity classes. But the unqualified claim is false: a smooth q-only cutoff equal to one near \(q=0\) and zero near the cuts is row-neutral and repairs the seam. The worker acknowledges this at `R19-30_report.md:149`. `independent_R19_30_check.out:36-39`; `R19-30_NO_GO_DISCIPLINE_CHECKLIST.md:5-47`.
+
+7. **Fixed reading:** **UD-LOCAL is met.** The fixed wording requires some row-neutral local re-placement, not necessarily VW’s identical factor. Per-leg U uses \(F(q_i)F(q_j)\); mixed-parity E1 U and UD admit the class-resolved repair, with exact W1 and unchanged rows. `TESTS.md:8608-8611`.
+
+**Strongest correct statement.** At the R9-9 site/plaquette placement actually used by the row evaluators, delivered per-leg U, E1 midpoint U and midpoint UD are not all local: VW’s \(F(q_i)F(q_j)\) fixes per-leg U but not the mixed-parity E1/UD kernels. The eight-class repair makes those kernels smooth and covariant, changes them only at \(O(q^4)\), and preserves W1 to \(2.7\times10^{-15}\), so **UD-LOCAL** is established. R19-5’s missing pair-block placement phase also genuinely shifts the \(m=0.3\) face1 row by \(+1.11\times10^{-2}\) per field. Class resolution is not uniquely necessary, however: an infinitely flat q-only cutoff is another valid row-neutral repair.
+
+Artifacts: [full verdict](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-30/R19-30_referee_verdict.md:1), [independent evaluator](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-30/independent_R19_30_check.py:1), [output](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-30/independent_R19_30_check.out:1).

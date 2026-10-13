@@ -1,0 +1,7 @@
+vecx L=3 AP d=6 nu=1.0: dim 46656; ws=[1. 2. 1.]; E0=3.999591; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(0.99558), 4), (np.float64(1.98067), 2), (np.float64(1.98592), 4), (np.float64(1.98699), 2), (np.float64(1.99117), 4), (np.float64(2.28391), 4), (np.float64(2.32763), 2)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=0.99558 deg 4: dim V_E = 2, Gram eigenvalues [0.0007807 0.000857 ]
+   level 2: E-E0=1.98067 deg 2: dim V_E = 0
+   level 3: E-E0=1.98592 deg 4: dim V_E = 0
+   window of 4 levels: V_spec inertia (+,-,0) = (3,0,0); quotient (+,-) = (3,0)  [20.4s]
+python3 s4_spectral_gb.py vecx 3 -1 6 1.0 4 40  17.44s user 0.61s system 87% cpu 20.719 total

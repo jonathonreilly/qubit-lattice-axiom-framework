@@ -1,0 +1,5 @@
+vecx L=3 AP d=7 nu=1.0: dim 117649; ws=[1. 2. 1.]; E0=3.999923; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(0.99961), 4), (np.float64(1.98693), 2), (np.float64(1.99301), 4), (np.float64(1.99906), 2), (np.float64(1.99922), 4), (np.float64(2.90653), 3), (np.float64(2.97598), 2)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=0.99961 deg 4: dim V_E = 2, Gram eigenvalues [0.0004085 0.0004109]
+   level 2: E-E0=1.98693 deg 2: dim V_E = 0
+   window of 3 levels: V_spec inertia (+,-,0) = (3,0,0); quotient (+,-) = (3,0)  [25.8s]

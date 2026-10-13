@@ -1,0 +1,10 @@
+vecx L=2 twist=-1 d=3 nu=1.0: dim 81; H Krein-s.a. 0.0e+00, Hermitian 0.0e+00; ws=[1.4142 1.4142]
+   Lemma-K identity residuals: [D,D^K] 4.4e-16 (max|[D,D^K]| 1.500), [D,D] 2.2e-16 (max|[D,D]| 0.000); frequency |<low|[H,D]+wD|low>| = 0.0e+00
+vecx L=3 twist=-1 d=3 nu=1.0: dim 729; H Krein-s.a. 0.0e+00, Hermitian 0.0e+00; ws=[1. 2. 1.]
+   Lemma-K identity residuals: [D,D^K] 1.4e-15 (max|[D,D^K]| 1.500), [D,D] 1.0e-15 (max|[D,D]| 0.354); frequency |<low|[H,D]+wD|low>| = 0.0e+00
+vecx L=3 twist=1 d=3 nu=1.0: dim 729; H Krein-s.a. 0.0e+00, Hermitian 0.0e+00; ws=[0.     1.7321 1.7321]
+   Lemma-K identity residuals: [D,D^K] 1.6e-15 (max|[D,D^K]| 1.500), [D,D] 4.2e-16 (max|[D,D]| 0.000); frequency |<low|[H,D]+wD|low>| = 0.0e+00
+scal L=2 twist=-1 d=2 nu=1.0: dim 256; H Krein-s.a. 0.0e+00, Hermitian 0.0e+00; ws=[1.4142 1.4142]
+   Lemma-K identity residuals: [D,D^K] 7.8e-16 (max|[D,D^K]| 1.500), [D,D] 1.2e-16 (max|[D,D]| 0.000); frequency |<low|[H,D]+wD|low>| = 0.0e+00
+scal L=1 twist=-1 d=3 nu=2.0: dim 81; H Krein-s.a. 0.0e+00, Hermitian 0.0e+00; ws=[2.]
+   Lemma-K identity residuals: [D,D^K] 1.1e-15 (max|[D,D^K]| 2.250), [D,D] 0.0e+00 (max|[D,D]| 0.000); frequency |<low|[H,D]+wD|low>| = 0.0e+00

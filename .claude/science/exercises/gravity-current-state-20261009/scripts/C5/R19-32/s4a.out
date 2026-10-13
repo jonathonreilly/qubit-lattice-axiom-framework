@@ -1,0 +1,38 @@
+vecx L=1 AP d=3 nu=2.0: dim 9; ws=[2.]; E0=2.000000; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(1.0), 2), (np.float64(2.0), 3), (np.float64(3.0), 2), (np.float64(4.0), 1)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=1.00000 deg 2: dim V_E = 2, Gram eigenvalues [1. 1.]
+   level 2: E-E0=2.00000 deg 3: dim V_E = 1, Gram eigenvalues [1.]
+   level 3: E-E0=3.00000 deg 2: dim V_E = 0
+   level 4: E-E0=4.00000 deg 1: dim V_E = 0
+   window of 6 levels: V_spec inertia (+,-,0) = (4,0,0); quotient (+,-) = (4,0)  [0.0s]
+vecx L=1 AP d=4 nu=2.0: dim 16; ws=[2.]; E0=2.000000; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(2.0), 4), (np.float64(4.0), 6), (np.float64(6.0), 4), (np.float64(8.0), 1)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=2.00000 deg 4: dim V_E = 3, Gram eigenvalues [-1.  0.  1.]
+   level 2: E-E0=4.00000 deg 6: dim V_E = 2, Gram eigenvalues [-1.  -0.6]
+   level 3: E-E0=6.00000 deg 4: dim V_E = 0
+   level 4: E-E0=8.00000 deg 1: dim V_E = 0
+   window of 6 levels: V_spec inertia (+,-,0) = (2,3,1); quotient (+,-) = (2,3)  [0.0s]
+vecx L=1 AP d=5 nu=2.0: dim 25; ws=[2.]; E0=2.000000; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(2.0), 2), (np.float64(3.0), 2), (np.float64(4.0), 3), (np.float64(5.0), 2), (np.float64(6.0), 5), (np.float64(7.0), 2), (np.float64(8.0), 3)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=2.00000 deg 2: dim V_E = 1, Gram eigenvalues [-0.]
+   level 2: E-E0=3.00000 deg 2: dim V_E = 2, Gram eigenvalues [1. 1.]
+   level 3: E-E0=4.00000 deg 3: dim V_E = 1, Gram eigenvalues [0.]
+   level 4: E-E0=5.00000 deg 2: dim V_E = 0
+   level 5: E-E0=6.00000 deg 5: dim V_E = 1, Gram eigenvalues [1.]
+   window of 6 levels: V_spec inertia (+,-,0) = (4,0,2); quotient (+,-) = (4,0)  [0.0s]
+vecx L=1 AP d=6 nu=2.0: dim 36; ws=[2.]; E0=2.000000; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(2.0), 2), (np.float64(4.0), 5), (np.float64(6.0), 6), (np.float64(8.0), 8), (np.float64(10.0), 6), (np.float64(12.0), 5), (np.float64(14.0), 2)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=2.00000 deg 2: dim V_E = 1, Gram eigenvalues [-0.]
+   level 2: E-E0=4.00000 deg 5: dim V_E = 3, Gram eigenvalues [-1.  0.  1.]
+   level 3: E-E0=6.00000 deg 6: dim V_E = 1, Gram eigenvalues [-0.]
+   level 4: E-E0=8.00000 deg 8: dim V_E = 1, Gram eigenvalues [-1.]
+   level 5: E-E0=10.00000 deg 6: dim V_E = 0
+   window of 6 levels: V_spec inertia (+,-,0) = (2,2,3); quotient (+,-) = (2,2)  [0.0s]
+vecx L=1 AP d=8 nu=2.0: dim 64; ws=[2.]; E0=2.000000; first levels (E-E0, degeneracy): [(np.float64(0.0), 1), (np.float64(2.0), 2), (np.float64(4.0), 3), (np.float64(6.0), 6), (np.float64(8.0), 7), (np.float64(10.0), 8), (np.float64(12.0), 10), (np.float64(14.0), 8)]
+   level 0: E-E0=0.00000 deg 1: dim V_E = 1, Gram eigenvalues [1.]
+   level 1: E-E0=2.00000 deg 2: dim V_E = 1, Gram eigenvalues [-0.]
+   level 2: E-E0=4.00000 deg 3: dim V_E = 1, Gram eigenvalues [0.]
+   level 3: E-E0=6.00000 deg 6: dim V_E = 3, Gram eigenvalues [-1. -0.  1.]
+   level 4: E-E0=8.00000 deg 7: dim V_E = 1, Gram eigenvalues [-0.]
+   level 5: E-E0=10.00000 deg 8: dim V_E = 1, Gram eigenvalues [0.]
+   window of 6 levels: V_spec inertia (+,-,0) = (2,1,5); quotient (+,-) = (2,1)  [0.0s]

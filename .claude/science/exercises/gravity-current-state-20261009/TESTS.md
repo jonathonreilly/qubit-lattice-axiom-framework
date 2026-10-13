@@ -6940,3 +6940,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **NOISE-OVERSHOOT:** a refereed demonstration that for every a in a stated class, the gauge-invariant active density exceeds ρ_Λ over the whole window.
   - **OPEN:** otherwise.
 - **Expectation.** OPEN. The a = 4 cancellation is a harmonic-gauge statement, and the gauge-invariant density is likely a different combination. The main risk is that no natural a works, which would revive R15-2's overshoot as a set A wall.
+- **R18-8 (W7 at infinity): worker reading ANOMALY, pending the referee.**
+  - **Theorem A (degree 2).** The asymptotic Poincaré algebra fails by the defect charge: {K_b, P_c} = δ_bc H + Q_D,cb. This holds for every completion whose added terms have degree ≥ 3. Checked by symbolic algebra and by a 2048-site lattice operator identity.
+  - **Lemma S∞.** One shell term cancels the defect in the bulk constraints and reproduces it in the boost charge, so these are the same statement. Correction: R16-8 Lemma F's "Consequence" applies only to the weakly-zero generator.
+  - **Lemma T.** The tail of a point defect is a mass dipole (M·a = −Δ) plus gauge. Corollaries N and N′: no boundary functional and no matter-moment redefinition repairs the algebra.
+  - **Theorem A3 (degree 3).** The anomaly is F(Q_D) in the dressed presentation, conditional on F's boundary terms. This corrects R17-2's Jacobi lemma.
+  - **Observable.** A body with edge content has a direction- and velocity-dependent far-field mass. Thermal populations are invisible below ~1e18 GeV. Relic populations are not bounded.
+  - **Prices:**
+    - P-W7anom: accept the anomaly.
+    - P-W7edge0: physical states carry no edge quanta.
+    - R17-2's P-W7bdy reduces to P-W7anom.
+
+  Referee running.

@@ -1,0 +1,13 @@
+(A) Vlasov symbol identities, generic separable band, current-aligned P = d(eps^2/2):
+  {K_b,H} - P_b = 0 for all b: True
+  {P_c,H} = 0, {P_c,P_d} = 0: True
+  {K_a,K_b} + J_ab = 0 for all a,b: True
+  {J_ab,H} = 0: True
+  {K_b,P_c} - delta_bc H - Delta_cb = 0 for all b,c: True
+  Delta off-diagonal = 0 (separable): True
+  {J_ab,P_c} - [delta_ac P_b - delta_bc P_a] = v_b Delta_ca - v_a Delta_cb: True
+  {J_ab,K_c} - [delta_ac K_b - delta_bc K_a] = -(x_a Delta_bc - x_b Delta_ac): True
+  {J_ab,J_cd} - [Poincare] = defect bilinear in (x, v, Delta): True
+  NEGATIVE controls (must be False): {K_b,P_b} - H == 0: False; {K_1,P_2}+{J_12,P_1} sign-flipped == 0: False; {J_12,P_1} - P_2 == 0: False
+  continuum control u_i = k_i^2: Delta == 0: True
+  zone-mean root (SUMMARY s17): int (P_c' - 1) dk_c = [P_c]_{-pi}^{pi} - 2pi = -2pi for continuous periodic P_c

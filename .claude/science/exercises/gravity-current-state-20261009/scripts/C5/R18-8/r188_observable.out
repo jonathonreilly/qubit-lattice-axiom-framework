@@ -1,0 +1,67 @@
+(D1) single quanta: far-field M^2 = E^2 - P^2 along the K_b orbit (b = boost axis)
+  G(1.4) box rest                             M^2(eta=0.0,0.5,1.0,2.0,2.5,3.0,4.0) = 0.090000 0.090000 0.090000 0.090000 0.428160 5.246041 0.090000
+      at eta=0: Q_bb = +0.00000, E = 0.30000, |P| = 0.000e+00
+  G(1.4) edge corner, boost along edge axis   M^2(eta=0.0,0.5,1.0,2.0,2.5,3.0,4.0) = 5.246516 1.707764 0.090000 0.090000 0.090000 0.090000 0.090000
+      at eta=0: Q_bb = -2.29053, E = 2.29053, |P| = 0.000e+00
+  G(1.4) edge corner, boost along box axis    M^2(eta=0.0,0.5,1.0,2.0,2.5,3.0,4.0) = 5.246516 5.246516 10.321298 5.246516 5.246516 5.385928 5.246516
+      at eta=0: Q_bb = +0.00000, E = 2.29053, |P| = 0.000e+00
+  G(1.4) edge k1=2.0 (moving)                 M^2(eta=0.0,0.5,1.0,2.0,2.5,3.0,4.0) = 1.502174 5.246516 1.921313 0.090000 0.090000 0.090000 0.090000
+      at eta=0: Q_bb = -4.63910, E = 1.99677, |P| = 1.576e+00
+  S(1.4) box rest                             M^2(eta=0.0,0.5,1.0,2.0,2.5,3.0,4.0) = 0.090000 0.090000 0.090000 0.090000 0.090000 0.090000 0.090000
+      at eta=0: Q_bb = +0.00000, E = 0.30000, |P| = 0.000e+00
+  S(1.4) strip k1=1.57                        M^2(eta=0.0,0.5,1.0,2.0,2.5,3.0,4.0) = 2.411550 0.090000 0.090000 0.090000 0.090000 0.090000 0.090000
+      at eta=0: Q_bb = -29.26156, E = 1.55298, |P| = 1.421e-02
+(D2) composite bodies at rest (pairs +-k so P = 0); second derivative of M^2 vs -2(E+Q_bb)Q_bb; V and dM/M
+  S(1.4) edges=0 b=0  E=  39.5845  Q_bb=  +0.0000  d2M2=+0.000000e+00  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=+2.22045e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=+0.00000e+00  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  S(1.4) edges=0 b=2  E=  39.5845  Q_bb=  +0.0000  d2M2=+0.000000e+00  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=+0.00000e+00  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=+0.00000e+00  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  S(1.4) edges=2 b=0  E=  46.1593  Q_bb= -78.4421  d2M2=-5.054219e+03  pred -2(E+Q)Q=-5.064674e+03
+      eta=0.020  V=-1.246511e-02 (1+Q/E)eta=-1.398760e-02   dM/M=-2.10007e-04  pred -Q V^2/(2(E+Q))=-1.88773e-04
+      eta=0.002  V=-1.397285e-03 (1+Q/E)eta=-1.398760e-03   dM/M=-2.37422e-06  pred -Q V^2/(2(E+Q))=-2.37201e-06
+  S(1.4) edges=2 b=2  E=  46.1593  Q_bb=  +0.0000  d2M2=+4.547474e-07  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=-1.11022e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=+0.00000e+00  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  S(1.4) edges=8 b=0  E=  59.2223  Q_bb=-229.6713  d2M2=-7.818887e+04  pred -2(E+Q)Q=-7.829452e+04
+      eta=0.020  V=-5.488306e-02 (1+Q/E)eta=-5.756248e-02   dM/M=-2.06836e-03  pred -Q V^2/(2(E+Q))=-2.02936e-03
+      eta=0.002  V=-5.753532e-03 (1+Q/E)eta=-5.756248e-03   dM/M=-2.23065e-05  pred -Q V^2/(2(E+Q))=-2.23024e-05
+  S(1.4) edges=8 b=2  E=  59.2223  Q_bb=  +0.0000  d2M2=+1.818989e-06  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=-1.11022e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=-1.11022e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  G(1.4) edges=0 b=0  E=  40.0126  Q_bb=  +0.0000  d2M2=-9.094947e-07  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=-2.22045e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=-3.33067e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  G(1.4) edges=0 b=2  E=  40.0126  Q_bb=  +0.0000  d2M2=+1.364242e-06  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=-2.22045e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=-3.33067e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  G(1.4) edges=2 b=0  E=  47.6578  Q_bb= -13.8296  d2M2=+9.355868e+02  pred -2(E+Q)Q=+9.356598e+02
+      eta=0.020  V=+1.421524e-02 (1+Q/E)eta=+1.419630e-02   dM/M=+4.10120e-05  pred -Q V^2/(2(E+Q))=+4.13056e-05
+      eta=0.002  V=+1.419649e-03 (1+Q/E)eta=+1.419630e-03   dM/M=+4.11937e-07  pred -Q V^2/(2(E+Q))=+4.11966e-07
+  G(1.4) edges=2 b=2  E=  47.6578  Q_bb=  +0.0000  d2M2=+2.273737e-06  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=-1.11022e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=+0.00000e+00  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  G(1.4) edges=8 b=0  E=  56.6217  Q_bb= -28.9029  d2M2=+1.602377e+03  pred -2(E+Q)Q=+1.602305e+03
+      eta=0.020  V=+9.765066e-03 (1+Q/E)eta=+9.790855e-03   dM/M=+5.00991e-05  pred -Q V^2/(2(E+Q))=+4.97152e-05
+      eta=0.002  V=+9.790590e-04 (1+Q/E)eta=+9.790855e-04   dM/M=+4.99794e-07  pred -Q V^2/(2(E+Q))=+4.99754e-07
+  G(1.4) edges=8 b=2  E=  56.6217  Q_bb=  +0.0000  d2M2=-4.547474e-07  pred -2(E+Q)Q=-0.000000e+00
+      eta=0.020  V=+1.999733e-02 (1+Q/E)eta=+2.000000e-02   dM/M=+2.22045e-16  pred -Q V^2/(2(E+Q))=-0.00000e+00
+      eta=0.002  V=+1.999997e-03 (1+Q/E)eta=+2.000000e-03   dM/M=+0.00000e+00  pred -Q V^2/(2(E+Q))=-0.00000e+00
+  S(1.4): K-orbit period oint dk/eps = 9.433331; after one period (E, P_b) = (0.300000, -3.44e-12) vs start (0.300000, +0.00e+00)
+  G(1.4): K-orbit period oint dk/eps = 6.220485; after one period (E, P_b) = (0.300000, -3.02e-12) vs start (0.300000, +0.00e+00)
+(D3) closure test: span of k-functions generated from {1, eps, P_b} by ad_K: g -> eps dg/dk_b (axis b = 0, k2 = k3 = 0.3)
+  S(1.4): Delta in span{1, eps, P}? relative residual 0.858 (0 would mean a redefinable/central term);
+      rank of {1, eps, P, (eps d)^1 P, ..., (eps d)^n P}, n = 1..6: [4, 5, 6, 7, 8, 9] (Poincare closure would stop at 3)
+  G(1.4): Delta in span{1, eps, P}? relative residual 0.482 (0 would mean a redefinable/central term);
+      rank of {1, eps, P, (eps d)^1 P, ..., (eps d)^n P}, n = 1..6: [4, 5, 6, 7, 8, 9] (Poincare closure would stop at 3)
+(D4a) per-quantum, per-axis defect ratio |Q_bb|/eps = |P_b' - 1| over the whole zone (4e5-point scan): S(1.4) max 18.8427, G(1.4) max 3.3485
+(D4) size: thermal edge fraction and the far-field mass shift for the Earth's CMB speed V = 1.2335e-3
+  m=0 floor 1.400/a        T_CMB      log10(edge fraction) <= -3.161e+31 ;  log10|dM/M| <= -3.161e+31 (|Q/E| per edge quantum <= 40 assumed)
+  m=0 floor 1.400/a        1 TeV      log10(edge fraction) <= -7.423e+15 ;  log10|dM/M| <= -7.423e+15 (|Q/E| per edge quantum <= 40 assumed)
+  m=0 floor 1.400/a        1e16 GeV   log10(edge fraction) <= -732.6 ;  log10|dM/M| <= -737.1 (|Q/E| per edge quantum <= 40 assumed)
+  m=0 floor 1.400/a        1e18 GeV   log10(edge fraction) <= -3.725 ;  log10|dM/M| <= -8.241 (|Q/E| per edge quantum <= 40 assumed)
+  m=0.3 floor 1.431782/a   T_CMB      log10(edge fraction) <= -3.233e+31 ;  log10|dM/M| <= -3.233e+31 (|Q/E| per edge quantum <= 40 assumed)
+  m=0.3 floor 1.431782/a   1 TeV      log10(edge fraction) <= -7.592e+15 ;  log10|dM/M| <= -7.592e+15 (|Q/E| per edge quantum <= 40 assumed)
+  m=0.3 floor 1.431782/a   1e16 GeV   log10(edge fraction) <= -749.4 ;  log10|dM/M| <= -754 (|Q/E| per edge quantum <= 40 assumed)
+  m=0.3 floor 1.431782/a   1e18 GeV   log10(edge fraction) <= -3.864 ;  log10|dM/M| <= -8.381 (|Q/E| per edge quantum <= 40 assumed)

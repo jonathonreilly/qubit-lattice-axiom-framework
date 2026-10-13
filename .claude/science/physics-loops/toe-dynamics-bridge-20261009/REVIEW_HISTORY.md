@@ -87,3 +87,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T16:43:10.794253+00:00: Deadline closeout:17 regular PRs preserved; checked postmeasurement source assembly and threshold finite protocols, plus scoped scalar Lean proof. Final graph-transfer review recorded separately. No main/axiom/prompt/audit mutations. Graph-Dyson epsilon=o(h) accepted after separate derivation, complete exposed comparison and additional independent-context domain checks; growing-C_G scope precision retained.
 
 Renewal2 started2026-10-13T21:37:33Z; checkpoint2026-10-13T21:51:43.917327+00:00. Prior campaign archived unchanged. Main/instructions unchanged; own publication heads unchanged. New regular tail/calibration preparation and read-only physical source survey active. No new scientific acceptance or audit verdict.
+
+2026-10-13T22:25:08.558614+00:00: Calibration source assembly accepted; tail publication integration failed missing Markdown citations with exact analytic bodies unchanged. Failed install preserved and cleaned; narrow repair active. Physical survey complete and coarse energy-instrument target selected, no new physical theorem.

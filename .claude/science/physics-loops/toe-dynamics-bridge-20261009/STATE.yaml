@@ -6,7 +6,7 @@ renewal_number: 2
 started_utc: '2026-10-13T21:37:33+00:00'
 deadline_utc: '2026-10-14T21:37:33+00:00'
 checkpoint_interval: 30m
-checkpoint_utc: '2026-10-13T21:51:43.917327+00:00'
+checkpoint_utc: '2026-10-13T22:25:08.558614+00:00'
 campaign_status: active
 automation_status: ACTIVE
 automation_id: toe-physical-realization-renewed-24-hour-campaign
@@ -17,30 +17,29 @@ worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/corre
 active_head: e8d5b7b99c9faab65f71eb5ff353b60e2b609608
 base_revision: e8d5b7b99c9faab65f71eb5ff353b60e2b609608
 active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9521
-active_pr_status: Publication preparation; no new PR yet
+active_pr_status: Prepare failed on missing Markdown parent citations; root-owned partial install preserved and
+  cleaned; narrow source repair active.
 active_pr_url: null
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
 checkpoint_branch: physics-loop/toe-nonlinear-transport-20261011
-previous_checkpoint_commit: c03620656c4b745351e388d8dad1e12d1a0eb324
+previous_checkpoint_commit: 519399609b0a5790369295af3e675fe21b676d34
 source_root: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733
 prior_source_root: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012
 latest_main_revision: 583c699e859b64ff01c8bc92d1c04bdfe9994509
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 latest_candidate_law_revision: 56a60d09abe4aa99cc41a517c2881f5e64da7e6f
 latest_observations_revision: 873795e3cd34b1e26d3fa1937169588c50ad5609
-startup_status: Fetch, source refs, open-PR inventory and current instruction identity refresh complete; physical-route
-  primary-source reconnaissance in progress.
+startup_status: Synchronization and bounded physical-route source reconnaissance complete.
 source_refresh_evidence: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/STARTUP_REPO_SYNC.json
 procedure_evidence: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/PROCEDURE_SNAPSHOT.json
 grounding_evidence: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GROUNDING_SOURCES.json
 pr_inventory_limit: gh pr view files returned at most 100 paths for larger unchanged parents; complete prior local
   source maps are reused, not replaced by this truncated field.
-external_pr_scope: '9524 and 9525 bodies and complete five-path inventories read: supplied revised-scalar action,
-  homogeneous confinement and local scalar response. Science not adopted. External candidate-law/observations changes
-  under reconnaissance.'
+external_pr_scope: PR9524/9525 have separate supplied scalar scopes; not adopted. Candidate/observations full changed-path
+  inventories contain no docs/*.md changes.
 cycle: 1
-active_route: Publish accepted finite-first-energy tails, then graph calibration sharpening; source survey ranks
-  physical-realization target.
+active_route: Publish energy-tail and graph-calibration results; then coarse common-H physical energy instrument
+  with explicit resources.
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 campaign_prs_created: 0
@@ -71,7 +70,8 @@ prior_campaign:
   checkpoint_head: c03620656c4b745351e388d8dad1e12d1a0eb324
   recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/campaign_final_recovery_20261013T164310Z.tar.gz
 energy_tail:
-  status: Accepted source assembly; publication preparation active
+  status: Analytic source accepted; publication source v1 accepted but canonical prepare failed graph delta; no
+    PR yet.
   assembly: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_source_assembly
   freeze_sha256: 8a19d7e566f1ed77a2effe2234ad4fc0e4398f28a562c151b3245e5abbcfc7cf
   root_review_sha256: 54072cf09669f21b4581abb79da64bcf9ce37fbd3de2e49f86ed8aa7a5fdac90
@@ -79,14 +79,23 @@ energy_tail:
   scope: Fixed first-energy normal state and uniformly graph-bounded finite protocol imply final-energy uniform
     integrability. Varying states require joint limsup quantifier. J=Gamma C is linear/unitary. Weak prepared-state
     law remains explicitly supplied/provisional in its corollary.
+  publication_acceptance: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_PUBLICATION_ROOT_ACCEPTANCE.json
+  failed_prepare: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_execution/20261013T221757_prepare_72458b48a14c
+  recovery: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_FAILED_INSTALL_RECOVERY.json
+  failure_scope: Canonical identity baseline and four exact byte controls passed; zero mathematical predicates.
+    New node had no edges because YAML dependencies do not create citation edges. Source-only repair adds two Markdown
+    parent citations.
 graph_calibration:
-  status: Checked epsilon=o(h) theorem; source assembly active; tail canonical parent not yet supplied
+  status: Source assembly accepted; unbound publication package prepared; actual tail PR/head required.
   acceptance: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_ACCEPTANCE.json
   acceptance_sha256: 6766afd47d73f3de5ab1a1a3437dac43f6a31ef734566ec51cf88876557660ad
   source_folder: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly
   scope: Uniform ideal G graph norms and common-H bounded perturbation/commutator errors give epsilon*b -> 0 graph
     transfer; b=O(1/h) yields epsilon=o(h). Calibration order p differs from chain length. Growing-C_G diagnostic
     applies only to propagator differences, not the full protocol theorem.
+  source_assembly_review: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GRAPH_CALIBRATION_ASSEMBLY_ROOT_REVIEW.md
+  source_assembly_freeze_sha256: 281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035
+  publication_folder: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_publication_preparation
 scoped_lean_status: CutoffUniformTail.lean bbcb658c compiled in 20.399216 seconds, exit0, standard propext/Classical.choice/Quot.sound.
   Only the scalar uniform-cutoff implication is formalized; CAR, domains, traces, kinetic limits and physical calibration
   are not.
@@ -107,13 +116,19 @@ failed_routes_and_corrections:
 - Reconnaissance agent disconnected twice; reassigned to a fresh bounded source survey without scientific acceptance.
 - Stale usable-derived-index path resolved to archive; no source authority inferred from a failed lookup.
 - Oversized startup metadata display truncated; exact live pointers and relevant argument ranges recovered separately.
+- Tail publication v1 had correct YAML dependencies but no canonical Markdown citations, yielding zero graph edges;
+  original package and failed runtime preserved. No mathematical core change.
+- Calibration source bookkeeping expected ten docstring inputs but AST found nine; source-only correction and prior
+  version preserved.
+- G0c primary modules absent from bounded reachable local paths/history/archives; joint matter/photon route remains
+  secondary.
 active_workers:
-  kinetic_correlation_review: energy-tail publication preparation only
-  threshold_protocol_fresh: graph-calibration source assembly only
-  physical_source_survey: read-only primary-source reconnaissance only
-next_action: Review the full changed energy-tail wrapper, dependency declarations, runner and publication driver;
-  run exact source/runtime checks, publish a regular stacked PR, then bind calibration publication to the actual
-  tail head. Independently finish current-source physical reconnaissance before selecting new derivations.
+  kinetic_correlation_review: Narrow source-only correction of missing canonical Markdown citations
+  threshold_protocol_fresh: Unbound calibration packet ready; waits actual tail PR/head
+  physical_source_survey: Completed reconnaissance and bounded source recovery
+next_action: Review narrowly corrected energy-tail frozen source, repeat prepare and exact staging/verify, publish
+  regular PR and attach it. Bind/review calibration packet to actual parent and publish regular PR. Then start the
+  physical energy-instrument target; no new result is yet asserted.
 lock_owner: codex-toe-native-20261013
 lock_status: held
 lock_expires_utc: '2026-10-13T23:41:58.220204+00:00'
@@ -129,3 +144,17 @@ boundaries:
 - No messages to other chats
 editable_prompt_files_changed: []
 automatic_continuation_disabled: false
+physical_realization:
+  status: Target contract only; no new physical derivation yet.
+  contract: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/PHYSICAL_REALIZATION_TARGET_CONTRACT.md
+  contract_sha256: 636c4f620a9bf590bf47ea2e60586c7a9c2b419720c620aee18779f7da55f63f
+  survey: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/physical_realization_reconnaissance/REPORT.md
+  g0c_recovery: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/g0c_primary_recovery/REPORT.md
+  first_target: "Full coarse energy L\xFCders instrument preserving within-bin coherence and reference correlations,\
+    \ finite-energy error transfer, local implementation and priced resources. Common-H continuum/lattice identification\
+    \ remains separate."
+  prior_art: Existing 3D local-even encoding and finite autonomous original-record supplier make generic encoding/pointer
+    construction duplicates. Standard phase estimation and coherent uncompute are prior art.
+  g0c_limit: Referenced external primary modules were not recovered in bounded local search; preserve referee scope,
+    do not claim global absence or rerun success.
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/recovery/renewal-20261013-failed-tail-integration.tar.gz

@@ -1,53 +1,48 @@
 # Current recovery checkpoint — renewed campaign active
 
-User explicitly renewed work for another 24 hours. Start 2026-10-13T21:37:33Z;
-fixed deadline 2026-10-14T21:37:33Z (5:37:33 p.m. America/New_York).
-New heartbeat: toe-physical-realization-renewed-24-hour-campaign. Never extend it.
-Prior campaign is archived at /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/history/renewal-1-complete-before-20261013T213733Z; its old heartbeat remains deleted.
+Fixed window: 2026-10-13T21:37:33Z to 2026-10-14T21:37:33Z. Never extend.
+Heartbeat: toe-physical-realization-renewed-24-hour-campaign. Prior campaign remains archived.
+Current checkpoint 2026-10-13T22:25:08.558614+00:00. STATE.yaml and this file are the sole operational checkpoint.
 
 Active worktree /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree, branch physics-loop/toe-energy-tail-20261013,
-HEAD/base e8d5b7b99c9faab65f71eb5ff353b60e2b609608, regular parent PR9521.
+HEAD/base e8d5b7b99c9faab65f71eb5ff353b60e2b609608, parent regular PR9521.
 Checkpoint worktree /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree, branch physics-loop/toe-nonlinear-transport-20261011.
-No new PR yet. Prior17 regular PRs remain open/non-draft at startup inventory.
-Current main583c699e859b64ff01c8bc92d1c04bdfe9994509 and ai/execution3a4b2c66
-are unchanged. Candidate-law56a60d09 and observations873795e3 advanced; source
-reconnaissance is active. Scalar PR9524/9525 bodies and five-path inventories
-show separate supplied-action scopes; their science is not adopted.
+Current main583c699e and instructions3a4b2c66 unchanged. Last remote refresh22:13UTC.
+No new PR yet. Prior17 regular PRs remain as recorded; no merge/main push/audit verdict.
 
-Current evidence root /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733. Startup sync, procedure reuse and grounding identities
-are saved there. GH's files field capped large parents at100; complete prior
-local maps, not that truncated field, remain their source evidence.
+Evidence root /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733. Tail analytic assembly8a19d7e5 remains accepted. Publication v1
+freeze dfef53f7, driver4ee0f3ef, root acceptance dcd89c58 were reviewed. Root prepare
+20261013T221757_prepare_72458b48a14c failed exact graph delta: YAML dependencies alone
+produce no graph edges. Canonical byte check passed in0.133s and four byte corruption
+controls failed for their expected reasons; these are zero-math integrity checks.
+The complete failed run and283 partial-install paths were preserved and roundtrip
+checked before root-owned files were removed and the base manifest restored.
+Recovery: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/recovery/renewal-20261013-failed-tail-integration.tar.gz; exact receipt ENERGY_TAIL_FAILED_INSTALL_RECOVERY.json.
+Worker kinetic_correlation_review prepares a narrow source-only citation correction;
+mathematical cores stay unchanged. Root must accept new identities before runtime.
 
-First publication: accepted energy-tail assembly326members/freeze8a19d7e5,
-review54072cf0. Worker kinetic_correlation_review prepares one canonical note
-with explicit graph premises. Prepared normal-state weak-law corollary retains
-its own supplied/provisional premise and full reviewed sources; the vacuum
-multitime parent does not certify it. J=Gamma C must be linear/unitary; varying
-states use lim_R limsup_joint. Failed originals and precision addenda remain.
-Lean bbcb658c proves only the scalar cutoff implication, compiled20.399216s with
-standard axioms; operator, CAR, trace and physical claims remain analytic.
+Calibration source assembly freeze281a36b1 accepted after root source review4e143d35.
+Publication folder graph_calibration_publication_preparation is UNBOUND: actual tail
+PR/head/body/maps not yet known. Wrapper1–245 read; finish relevant wrapper and complete
+changed programs after binding. Four analytic bodies unchanged. Source bookkeeping
+count repair preserved. Worker threshold_protocol_fresh waits actual tail publication.
+Uniform graph resources, common H and exact instruments remain theorem assumptions.
+Calibration order differs from chain length. Prepared normal-state weak law remains
+explicitly provisional; weak energy convergence alone does not imply mean convergence.
+Lean bbcb658c proves scalar cutoff implication only; full operator theorem is analytic.
 
-Second publication: checked graph-Dyson epsilon=o(h), final acceptance6766afd4,
-review8c604896. Worker threshold_protocol_fresh prepares the source assembly.
-Uniform C_G, common H, bounded errors and exact instruments remain assumptions.
-Calibration order p differs from chain length. Growing-C_G diagnostic is not
-the full tail/protocol theorem. Root V1 inverse error and V2 repair remain.
-Bind the publication to the actual energy-tail head only after it exists.
+Source survey is complete: physical_realization_reconnaissance/REPORT.md and
+PHYSICAL_REALIZATION_TARGET_CONTRACT.md. First target after publication is a full
+coarse common-H energy Lüders instrument with within-bin coherence, passive-reference
+control, finite-energy error transfer and priced local resources. Existing local-even
+3D encoding, original-record clocks and coherent uncompute are prior art. The 1D
+spin-chain even-algebra embedding is NOT a unitary identification of lattice and
+continuum vacuum representations; that energy bridge must be proved or left explicit.
+G0c primary modules were not recovered in bounded local searches; referee scope and
+actual failures remain preserved in g0c_primary_recovery. No new physical proof yet.
 
-Physical_source_survey reads bounded primary sources and changed branches to
-rank actual three-dimensional qubit realization, physical instrument/calibration,
-and interacting-channel selection. No new physical derivation selected yet.
-Prior reconnaissance agent disconnected twice; this is a tooling interruption,
-not scientific evidence. Existing stronger results and precise no-go escapes
-must be checked before choosing the target.
-
-Root next: full changed wrapper/code review, exact checks and regular energy-tail
-PR; then calibration PR and source-grounded physical derivation. No audit, main
-push, axiom or editable-prompt change, or messages to other chats. Same-family
-checks are not model-diverse verification. Continue useful science past local
-blockers. At deadline start no research, checkpoint, release owned lock and
-delete the new heartbeat. Lock expires 2026-10-13T23:41:58.220204+00:00; refresh by23:30UTC.
-
-Checkpoint written 2026-10-13T21:51:43.917327+00:00; original completed-campaign recovery bundle remains
-/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/campaign_final_recovery_20261013T164310Z.tar.gz. Exact prior scientific scopes and failures are preserved
-in the archived STATE.yaml. This current STATE/HANDOFF pair is authoritative.
+Next: corrected tail source review, root prepare/stage/verify, regular PR and attachment;
+then actual-parent calibration publication, followed by physical derivations. No drafts,
+axiom/prompt edits, science merges, audit verdicts or other-chat messages. Lock owner
+codex-toe-native-20261013 expires23:41:58UTC; refresh by23:30UTC. At the fixed campaign
+deadline start no new research, preserve evidence, release owned lock and delete heartbeat.

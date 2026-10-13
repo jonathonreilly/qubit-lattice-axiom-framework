@@ -6789,3 +6789,37 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R18-5a, b and c.
 
   Referee running.
+
+#### C5 referee verdicts R17-12, R17-13, R18-2, R18-4 (recorded 03:00Z; codex gpt-5.6-sol, xhigh)
+
+- **R17-12 referee: CONFIRMED WITH CORRECTIONS. Reading: both FORCED labels are recorded through their exclusion disjuncts; substantively NEITHER.**
+  - **Neither placement passes.**
+    - VU violates the necessary forward Ward value (Lemma F).
+    - VM's E_g row violates it too, and VM's one-sided placement breaks C₂ covariance.
+  - **What consistency fixes.** W1 fixes the q = 0 T₂g vertex to VM's value. Covariance replaces VM's one-sided placement with a symmetric VW-type stencil.
+  - **What stays free.** Normalized symmetric stencils differ by identically conserved superpotentials, so their O(q²) placement is free.
+  - **Scope.** This is a necessary-order, class-scoped result. Exact W1 completion and general E_g uniqueness remain open. The numerical ranges and the scope of VW uniqueness are corrected.
+- **R17-13 referee: CONFIRMED WITH CORRECTIONS. Reading ZEROED; the four-row SM problem is OPEN; SIGN-DEFINITE is false.**
+  - **Confirmed:** Forms P and I are exact under SF. Lemma S holds with the added nonzero-overlap hypothesis, giving C₄(0) < 0. D1 takes both signs.
+  - **The zero.** D1(0.916719266558, 0.55962727) at m = 0.01 has a transversal μ_T2 = 0. That costs one continuous edge-shape tuning.
+  - **Not enclosed.** The μ_E deficit (2.5–6×) is not enclosed.
+- **R18-2 referee: NOT CONFIRMED (the NEEDS-STABILIZER). Reading OPEN.**
+  - **Confirmed:** M_t,crit = 170.8776 GeV, λ_min = −0.01129, and λ_eff = 0 near 1.81e11 GeV, reproduced independently.
+  - **Why OPEN:** the recalled inputs favour SM metastability but do not establish a robust > 2σ conflict.
+  - **Stabilizers:**
+    - Ordinary Planck-suppressed terms and the two tested lattice dispersions fail.
+    - A singlet stabilizes, with one unprotected scalar-mass tuning.
+    - Chirally protected vector-like 5-plets also stabilize.
+  - **The conditional.** If (S) is stipulated, the electroweak vacuum must be global to dark-energy accuracy. None of this makes (S) axiomatic.
+- **R18-4 referee: CONFIRMED WITH CORRECTIONS. Reading EXCLUDED-CROSS.**
+  - **The class:** nontrivial two-band real-analytic Bloch Hamiltonians on T³ under the stated hypotheses.
+  - **The mechanism:**
+    - momentum eigenvalues extend continuously through conical crossings;
+    - on the orientation double cover, every nonflat branch carrying momentum has rank C ≤ 1;
+    - H-RB needs rank C = 3.
+  - **Coverage:** smooth swaps, folded bands, protected nodal crossings, mixed crossings and Weyl points.
+  - **Still OPEN:**
+    - continuous multi-shift mixing;
+    - N > 2 braiding;
+    - joint mixing with field dependence;
+    - the other excluded classes.

@@ -12,7 +12,7 @@
   "checkpoint_minutes": 30,
   "deep_block_minutes": 90,
   "cycles_completed": 0,
-  "active_route": "Weak-field v3 fully checked:2043 parent,6498 original and5076 affected independent; all science unchanged, actual survivor mutations now fail21/1,243+371 parent path identities. Parent curvature-fluid action5795/0; explicit b independent of a repairs ideal normalization by calibration, no thermal fit. Four full histories agree below4e-11; both focused checks active.",
+  "active_route": "Curvature/fluid v2 fully checked:6663 parent,103 mathematical,32831 original and19083 affected independent; actual three mutation gaps repaired with science unchanged. Thermal v1 13573/0; independent numerical values agree, one real readout survivor preserved. Parent thermal v2 29986/0 adds separate physical-clock oracle; all five scientific sections and13564 old controls unchanged; affected review pending.",
   "actual_current_surface_status": "conditional-support",
   "target_claim_type": "bounded_theorem",
   "trace_class": "frontier_discovery",
@@ -23,15 +23,16 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Personally implement the electron-pair thermal transition and test the full coupled history at fixed constants; finish curvature-fluid independent checks and package a constructive milestone.",
+  "next_exact_action": "Personally derive and test full coupled matter/scalar/metric perturbations and the lensing/growth readout; finish thermal affected review and canonical curvature/fluid milestone after actual preflight and independent source checks.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-13T11:17:41.641697+00:00",
-  "current_block": "curvature-fluid-and-thermal-transition",
+  "last_checkpoint_at": "2026-10-13T12:00:12.323895+00:00",
+  "current_block": "curvature-fluid-thermal-and-perturbations",
   "current_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
-    "Curvature-fluid handwritten and implementation checks",
+    "Thermal original/affected numerical check",
+    "Curvature canonical source/preflight/execution/gates",
     "Older combined cosmology N1-N8 packet"
   ],
   "delegated_routes": [
@@ -47,7 +48,7 @@
     "Quantum composition and causal physical realization of alternative boundary law",
     "Matter/gauge/cosmological architecture"
   ],
-  "last_pushed_commit": "4f349b09c2aff65dc9e55c9e040175c091b32b61",
+  "last_pushed_commit": "f493cc12a0c39aceb474dbece915b4634f4b55a9",
   "blocks_completed": [
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
@@ -114,7 +115,9 @@
     "Parent weak-field inverse/null-family/canonical-distance1938/0;454 independent handwritten controls pass,59 identities verified.",
     "Analytic-fluid constructive PR9514 OPEN and attached; exact32-path tree9ae2ad5a independently confirmed, final UNIT/cache and all three combined gates pass. Earlier preflight timing deviation preserved.",
     "Weak-field inverse v3 fully independently checked; two output-control gaps repaired, scientific sections unchanged.",
-    "Parent new q-independent curvature-fluid operators and independent b construction first5795/0; four full dynamical histories and ideal measured-G normalization checked."
+    "Parent new q-independent curvature-fluid operators and independent b construction first5795/0; four full dynamical histories and ideal measured-G normalization checked.",
+    "Curvature/fluid v2 fully checked with all three actual source-mutation gaps repaired; unchanged physical outputs.",
+    "Parent full thermal transition and separate physical-clock readout controls execute29986/0; no abundance fit."
   ],
   "milestone_worktree": "/private/tmp/observations-positive-response-20261012",
   "milestone_branch": "codex/observations-positive-response-20261012",
@@ -178,5 +181,9 @@
   "current_target_ref": "origin/main",
   "current_target_head": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "cosmology_milestone_worktree": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go",
-  "checked_at": "2026-10-13T11:17:41.641697+00:00"
+  "checked_at": "2026-10-13T12:00:12.323895+00:00",
+  "last_progress": "Curvature/fluid v2 fully checked:6663 parent,103 mathematical,32831 original and19083 affected independent; actual three mutation gaps repaired with science unchanged. Thermal v1 13573/0; independent numerical values agree, one real readout survivor preserved. Parent thermal v2 29986/0 adds separate physical-clock oracle; all five scientific sections and13564 old controls unchanged; affected review pending.",
+  "curvature_fluid_independent_check": "Complete:29 math,198 original numeric,321 affected parent-verified paths, full reports read.",
+  "thermal_independent_check": "Mathematical62/0 and17 identities read; numerical original values agree, original report and affected review pending.",
+  "curvature_milestone_worktree": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go"
 }

@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-10-13T11:32:21.824636+00:00",
+  "scope": "Parent read full independent report and derivation, verified all receipt identities; implementation not covered. Positive Einstein expansion root and thermal conditionality preserved.",
+  "counts": {
+    "passed": 62,
+    "failed": 0
+  },
+  "verified_unique_paths": 17,
+  "receipt_sha256": "db81229d4a7bff8c285f9e1fe6f26a5e0cacc729026059ee657fd5f876806c86",
+  "verified_paths": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/HAND_DERIVATION_v1.md",
+      "sha256": "2ee1ebdbb34462010b8c9e34fa90466f173948a1ab5fbb940231b20c701db04f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/HAND_DERIVATION_v1.md",
+      "sha256": "0bd3d91fdec1d11fd9200cce4f910c751baba08e2cf1188089e1f75d9fc5edd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/CHECK_RESULTS_v1.json",
+      "sha256": "fdf5b2f3d246733a0ebe4c14b640df70ef9cfded8f9ac4b8364c6f3ad3278f34"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/FINAL_SOURCE_IDENTITIES_v1.json",
+      "sha256": "78b387beaa1ac4a3db7e96f2152ef274930642c85b713746f35d6b2558703217"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "a83098d8ac924b6dcf97c68ef6b3b5995bb59ca867797b422fe37102efc4ed4c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/INPUT_FREEZE_v1.json",
+      "sha256": "12a78771fc76590b1bcbfa60bc9415b81b8f3e457b7ff80105f1f6d829e4758c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/PRE_EXECUTION_PLAN_v1.json",
+      "sha256": "e7cf5cc8843e6e7a570398e4801bbc0c62bb8653b6e638998cd6db412da13826"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/RECEIPT_v1.json",
+      "sha256": "db81229d4a7bff8c285f9e1fe6f26a5e0cacc729026059ee657fd5f876806c86"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/REPORT_v1.md",
+      "sha256": "14dfcb1b6839627f55dc196544fa2c2880884c49db42fa1eb9bdb1491d9846ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/RUN_v1.json",
+      "sha256": "91b5538561476111dd92bd93061c1e18559218a1dac283b2559398e702cfe4df"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/RUN_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/RUN_v1.stdout.txt",
+      "sha256": "a2ea5f91d65071ce7eecbf8d7c5cb38f9a95052509a46031580c16591f205b54"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/check_math_v1.py",
+      "sha256": "ffe8ab631a2569ad8fb07bade27c6ef0e05abb47766061f3bd281b1fa608e586"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/source_snapshot/direct_curvature_fluid_reconstruction/HAND_DERIVATION_v1.md",
+      "sha256": "2ee1ebdbb34462010b8c9e34fa90466f173948a1ab5fbb940231b20c701db04f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/source_snapshot/direct_thermal_transition/HAND_DERIVATION_v1.md",
+      "sha256": "0bd3d91fdec1d11fd9200cce4f910c751baba08e2cf1188089e1f75d9fc5edd8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/source_snapshot/origin_ai_execution__AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/independent_math_review/source_snapshot/origin_main__docs_ai_methodology_SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-10-13T11:30:18.392102+00:00",
+  "scope": "Parent read full original report, independent derivation and narrow scope confirmation; verified all receipt and disposition identities. No implementation verdict borrowed.",
+  "independent_assertions": 103,
+  "failed": 0,
+  "verified_unique_paths": 29,
+  "receipt_sha256": "000a4aaa89196fa974caf3cfc00ba1f42e9cad8c8b09a01b7412dfbc74938bdc",
+  "verified_paths": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_auxiliary_vacuum_completion/HAND_DERIVATION_v1.md",
+      "sha256": "989e6b051b67e68e188738672bb67eb08f65236c73040b8bd87b04562ccb48b4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/HAND_DERIVATION_v1.md",
+      "sha256": "2ee1ebdbb34462010b8c9e34fa90466f173948a1ab5fbb940231b20c701db04f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/SCOPE_CLARIFICATION_v2.md",
+      "sha256": "5705e9018b91c893cd183f60eb9a774443c87183414a987176ec2f2c56879666"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/CURVATURE_FLUID_MATH_REVIEW.md",
+      "sha256": "4cd0c8405cbf4ee9bf09cbc37a730d65b146aa63acfb56f37fedfb5d2f76085f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/EXECUTION_RECORD_v1.json",
+      "sha256": "902105eba3da0c786edfae9ca8c298623a291b1583a6ac8516b76e7a2c38d065"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/FINAL_RECEIPT_v1.json",
+      "sha256": "aa9af7ea8f13a48afa4b3c990700f4a3cf3107a0ca4f9bfe227429f3717d9800"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/FINAL_RECEIPT_v2.json",
+      "sha256": "000a4aaa89196fa974caf3cfc00ba1f42e9cad8c8b09a01b7412dfbc74938bdc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/FINAL_SOURCE_IDENTITY_v1.json",
+      "sha256": "04e153ec56b8cf53b69f94d35e2af375b29f8feb894576217d9f5e87d0e9c610"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/INDEPENDENT_DERIVATION.md",
+      "sha256": "d62e2fed65595e9777b47698244557a55b8be7824fd9b7afd8731e2e54f72f8b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "19e4b45d755422b25e0173891385e754fa3032b6257435905b6368b5d04c90a6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/INPUT_FREEZE_v1.json",
+      "sha256": "852a748cbfeffba50cc4909282593a9220d5b795153ac4b5ea4cdff9135174e4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/PARENT_PREMISE_PINS_v1.json",
+      "sha256": "a4c2a8bfc4962123012a8794bcde0ceea46e3bb24cd651a10cffe05b7107dfa6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/RUN_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/RUN_v1.stdout.txt",
+      "sha256": "8197de6ed727717e63e122bca05bb9f31f67261a9c5680aad3886a5cd5281a6b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "463da43be05ea786be03f16b9215dc463d6ae5d942525254aa5b050b89a3cc31"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/SOURCE_DISPOSITIONS_v2.json",
+      "sha256": "b74cb9fcca020509640f576fafe20ee3c0f1527b592e78369b04e133d41cd330"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/STREAM_DISCONNECT_v1.json",
+      "sha256": "07a9e2c76b3a2f58c30bd61c877340135e01ca11e97090794ef3b02ce7bed1e9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/affected_scope_v2/INPUT_FREEZE_v2.json",
+      "sha256": "7fb34f5310855dc90a04de1a6b205cd93f140f8af0290db78694df5fc7bddef3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/affected_scope_v2/SCOPED_CONFIRMATION.md",
+      "sha256": "ef9bdde6920382e9aab3f63ddb4d9410666c53b099bc19a1ae0e76917ca482ef"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/affected_scope_v2/SCOPE_CLARIFICATION_v2.md.snapshot",
+      "sha256": "5705e9018b91c893cd183f60eb9a774443c87183414a987176ec2f2c56879666"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/independent_action_check_v1.py",
+      "sha256": "a1afb10a496b075031de09041a084f49ddb3f3d1aa64af44e59c17c7fcd87616"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/source_snapshot/HAND_DERIVATION_v1.md",
+      "sha256": "2ee1ebdbb34462010b8c9e34fa90466f173948a1ab5fbb940231b20c701db04f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/source_snapshot/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/source_snapshot/direct_auxiliary_vacuum_completion/HAND_DERIVATION_v1.md",
+      "sha256": "989e6b051b67e68e188738672bb67eb08f65236c73040b8bd87b04562ccb48b4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/source_snapshot/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/independent_math_review/source_snapshot/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+      "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T11:53:25.907547+00:00",
+  "identical_sections": {
+    "scope": true,
+    "quadrature": true,
+    "histories": true,
+    "massless_controls": true,
+    "variations": true
+  },
+  "original_non_source_checks": 13564,
+  "all_original_non_source_checks_identical": true,
+  "counts": {
+    "passed": 29986,
+    "failed": 0,
+    "total": 29986
+  }
+}

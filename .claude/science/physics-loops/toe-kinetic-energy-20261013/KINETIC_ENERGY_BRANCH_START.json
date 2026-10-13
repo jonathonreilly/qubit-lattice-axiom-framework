@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-13T11:11:31.145363+00:00",
+  "branch": "physics-loop/toe-kinetic-energy-20261013",
+  "base": "301b06c3c2b8ce3c1b33c9333eee89a2248e4a99",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9515",
+  "command": [
+    "git",
+    "switch",
+    "-c",
+    "physics-loop/toe-kinetic-energy-20261013"
+  ],
+  "stdout": "",
+  "stderr": "Switched to a new branch 'physics-loop/toe-kinetic-energy-20261013'\n",
+  "exit_code": 0,
+  "clean": true
+}

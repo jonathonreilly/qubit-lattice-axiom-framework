@@ -1,0 +1,275 @@
+{
+  "archived_provisional_relations": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_law_source_assembly/sources/WEAK_DRIVE_KINETIC_ROOT_PROBE.md",
+      "consumer_id": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+      "graph_binding": "Identity runner declares exact archive; these history-only relations are not direct theorem edges.",
+      "input_id": "archived_root_mean484",
+      "owner_binding_scope": "Correlation note carries root484 supporting historical route; pair inputs are consumed by root484, not directly by every publication note. Correlation core displays its own kernel proof.",
+      "owner_claim_ids": [
+        "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+      ],
+      "sha256": "d3f10645348e292f88f1aef3cd30165c27cd581c3d64ac2d2b6a42b01760b58b",
+      "status": "archived supporting/provisional source at original exposure; pair792 later canonical identity separately mapped"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_law_source_assembly/archive/objects/4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c.bin",
+      "consumer_id": "archived_root_mean484",
+      "graph_binding": "Identity runner declares exact archive; these history-only relations are not direct theorem edges.",
+      "input_id": "archived_pair792",
+      "owner_binding_scope": "Correlation note carries root484 supporting historical route; pair inputs are consumed by root484, not directly by every publication note. Correlation core displays its own kernel proof.",
+      "owner_claim_ids": [
+        "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+      ],
+      "sha256": "4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c",
+      "status": "archived supporting/provisional source at original exposure; pair792 later canonical identity separately mapped"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_law_source_assembly/archive/objects/c388c16e8b3518769ea8daad47a601066f4061b0286e2165d19e877c33715440.bin",
+      "consumer_id": "archived_root_mean484",
+      "graph_binding": "Identity runner declares exact archive; these history-only relations are not direct theorem edges.",
+      "input_id": "archived_pair_root",
+      "owner_binding_scope": "Correlation note carries root484 supporting historical route; pair inputs are consumed by root484, not directly by every publication note. Correlation core displays its own kernel proof.",
+      "owner_claim_ids": [
+        "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+      ],
+      "sha256": "c388c16e8b3518769ea8daad47a601066f4061b0286e2165d19e877c33715440",
+      "status": "archived supporting/provisional source at original exposure; pair792 later canonical identity separately mapped"
+    }
+  ],
+  "boundary": "Four direct canonical mathematical parents; same-packet implications; three separately mapped archived inputs. Git ancestry and historical exposure are not mathematical edges or retention.",
+  "canonical_core_maps": {
+    "binding": "Exact core occurrences verified at current published calibrated checkpoint; no future kinetic or pair parent is inferred.",
+    "maps": [
+      {
+        "byte_end_exclusive": 66743,
+        "byte_start_inclusive": 41184,
+        "canonical_claim_id": "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+        "canonical_repo_path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+        "canonical_snapshot": "sources/canonical/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "core": "sources/ENERGY_ADAPTED_WEIGHTED_CALIBRATION_INDEPENDENT.md",
+        "core_sha256": "974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c",
+        "line_end_inclusive": 1462,
+        "line_start_inclusive": 897,
+        "source_status": "existing canonical conditional-support parent, not retained status"
+      },
+      {
+        "byte_end_exclusive": 31186,
+        "byte_start_inclusive": 4170,
+        "canonical_claim_id": "smooth_preparation_moments_bounded_theorem_note_2026-10-13",
+        "canonical_repo_path": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+        "canonical_snapshot": "sources/canonical/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "core": "sources/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+        "core_sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1",
+        "line_end_inclusive": 605,
+        "line_start_inclusive": 72,
+        "source_status": "existing canonical conditional-support parent, not retained status"
+      },
+      {
+        "byte_end_exclusive": 20416,
+        "byte_start_inclusive": 7384,
+        "canonical_claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+        "canonical_repo_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+        "canonical_snapshot": "sources/canonical/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "core": "sources/ENERGY_ADAPTED_GRAPH_TRANSFER_ROOT_PROBE.md",
+        "core_sha256": "27e2e2add858feecf52c977bd6ea8513dcbade88078a311f70128a448336aec6",
+        "line_end_inclusive": 389,
+        "line_start_inclusive": 128,
+        "source_status": "existing canonical conditional-support parent, not retained status"
+      },
+      {
+        "byte_end_exclusive": 43086,
+        "byte_start_inclusive": 20619,
+        "canonical_claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+        "canonical_repo_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+        "canonical_snapshot": "sources/canonical/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "core": "sources/ENERGY_ADAPTED_GRAPH_TRANSFER_CROSSCHECK.md",
+        "core_sha256": "93c2604ddfd1a305d64fac039f62aa90dc73ecef7ea43de45022c13c1b61102a",
+        "line_end_inclusive": 861,
+        "line_start_inclusive": 396,
+        "source_status": "existing canonical conditional-support parent, not retained status"
+      },
+      {
+        "byte_end_exclusive": 49393,
+        "byte_start_inclusive": 43289,
+        "canonical_claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+        "canonical_repo_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+        "canonical_snapshot": "sources/canonical/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "core": "sources/ENERGY_ADAPTED_WEIGHTED_TRANSFER_COMPOSITION_ROOT_V2.md",
+        "core_sha256": "884c265e010334de101a308c6e174f1f80ac2e7ae215aa73a5c6135c5db03329",
+        "line_end_inclusive": 978,
+        "line_start_inclusive": 868,
+        "source_status": "existing canonical conditional-support parent, not retained status"
+      },
+      {
+        "byte_end_exclusive": 70812,
+        "byte_start_inclusive": 49614,
+        "canonical_claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+        "canonical_repo_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+        "canonical_snapshot": "sources/canonical/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "core": "sources/ENERGY_ADAPTED_WEIGHTED_TRANSFER_INTERFACE_CHECK.md",
+        "core_sha256": "b4bfa525a0bf7a9da2f22d796e2638fd6c0786012dc1309135d0eabaf51a9843",
+        "line_end_inclusive": 1401,
+        "line_start_inclusive": 985,
+        "source_status": "existing canonical conditional-support parent, not retained status"
+      }
+    ],
+    "observed_cw_head": "a968559552de327386e3a5b74c7c72a3c17f87bc"
+  },
+  "historical_pair_canonical_map": {
+    "authority": "Later explicit root message reports attached regular PR9515 and child branch receipt. Read-only Git confirmed canonical note bytes at exact parent commit.",
+    "canonical_bytes": 45642,
+    "canonical_claim_id": "vacuum_pair_response_bounded_theorem_note_2026-10-13",
+    "canonical_lines": 919,
+    "canonical_sha256": "4d0a8c9b8a19ef46c4d7779f1a12f8149532762f39d5e607ae7c9b2edbad7f41",
+    "canonical_snapshot": "sources/canonical/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "coverage": "Byte identity/extraction only. Historical pair bodies remain opaque provenance in this assembly; no new mathematical review or retained status follows from publication.",
+    "current_child_branch": "physics-loop/toe-kinetic-energy-20261013",
+    "historical_core_maps": [
+      {
+        "byte_end_exclusive": 43999,
+        "byte_start_inclusive": 6136,
+        "historical_archive": "archive/objects/4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c.bin",
+        "historical_lines": 792,
+        "historical_sha256": "4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c",
+        "line_end_inclusive": 895,
+        "line_start_inclusive": 104,
+        "source_owned_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/weak_drive_kinetic_root_probe/sources/LOW_ENERGY_PAIR_RESPONSE_FRESH_INDEPENDENT.md",
+        "unique_occurrences": 1
+      },
+      {
+        "byte_end_exclusive": null,
+        "byte_start_inclusive": null,
+        "historical_archive": "archive/objects/c388c16e8b3518769ea8daad47a601066f4061b0286e2165d19e877c33715440.bin",
+        "historical_lines": 286,
+        "historical_sha256": "c388c16e8b3518769ea8daad47a601066f4061b0286e2165d19e877c33715440",
+        "line_end_inclusive": null,
+        "line_start_inclusive": null,
+        "source_owned_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/weak_drive_kinetic_root_probe/sources/LOW_ENERGY_PAIR_RESPONSE_ROOT_PROBE.md",
+        "unique_occurrences": 0
+      }
+    ],
+    "parent_commit": "301b06c3c2b8ce3c1b33c9333eee89a2248e4a99",
+    "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9515",
+    "receipt": "sources/KINETIC_ENERGY_BRANCH_START.json",
+    "receipt_sha256": "d9e2df0747dcb5ebe2bf0f86e56055cff62b17c4110136657e8d46808533c921",
+    "scope": "Source publication binding only; no publication preparation or execution by this worker.",
+    "utc": "2026-10-13T11:13:08.876045+00:00"
+  },
+  "history_only_relations": [
+    {
+      "owner": "kinetic_correlation_limits_bounded_theorem_note",
+      "relation": "supporting exposed proof provenance",
+      "scope": "Alternative integrable-kernel route; C2-C6 are fully displayed in the correlation core",
+      "source_owned_locator": "correlation section1 and2",
+      "target": "archived_root_mean484"
+    },
+    {
+      "owner": "archived_root_mean484",
+      "relation": "historical source exposure",
+      "scope": "Spectral formula and normalization source; root rederived normalization; no new review of pair body by assembler",
+      "source_owned_locator": "root484 section0,K20-K26 and root seal",
+      "target": "archived_pair792"
+    },
+    {
+      "owner": "archived_root_mean484",
+      "relation": "historical source exposure",
+      "scope": "Earlier root pair source bound in root484 seal; no current canonical or retained status inferred",
+      "source_owned_locator": "WEAK_DRIVE_KINETIC_ROOT_SEAL.json source_bindings",
+      "target": "archived_pair_root"
+    },
+    {
+      "owner": "one_zero_kinetic_energy_bounded_theorem_note",
+      "relation": "historical source exposure",
+      "scope": "Author had read correlation335 before one-zero proof freeze; not a proof of one-zero law",
+      "source_owned_locator": "ONE_ZERO_CONTROL_KINETIC_ROOT_SEAL.json source exposure",
+      "target": "kinetic_correlation_limits_bounded_theorem_note"
+    },
+    {
+      "owner": "archived_pair792",
+      "relation": "later exact canonical body identity",
+      "scope": "Historical792 maps byte-for-byte into published919; no new body review or retained status; separate root286 remains archived provisional",
+      "source_owned_locator": "evidence/PUBLISHED_PAIR_PARENT_BINDING.json; canonical919 lines104-895",
+      "target": "vacuum_pair_response_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "history_owner_id_scope": "History rows retain original source-assembly IDs; this exact map identifies their later canonical consumers. History does not enter direct_edges.",
+  "parents": [
+    {
+      "bytes": 35591,
+      "claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "runner": "scripts/energy_adapted_refinement_2026_10_12.py",
+      "status": "existing conditional canonical mathematical parent; no retention inferred"
+    },
+    {
+      "bytes": 68680,
+      "claim_id": "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+      "path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+      "runner": "scripts/energy_adapted_calibration_identity_2026_10_13.py",
+      "status": "existing conditional canonical mathematical parent; no retention inferred"
+    },
+    {
+      "bytes": 72986,
+      "claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "runner": "scripts/calibrated_energy_transfer_identity_2026_10_13.py",
+      "status": "existing conditional canonical mathematical parent; no retention inferred"
+    },
+    {
+      "bytes": 34185,
+      "claim_id": "smooth_preparation_moments_bounded_theorem_note_2026-10-13",
+      "path": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "runner": "scripts/smooth_preparation_moments_identity_2026_10_13.py",
+      "status": "existing conditional canonical mathematical parent; no retention inferred"
+    }
+  ],
+  "same_note_core_imports": [
+    {
+      "historical_status": "470 was frozen while301 review was pending; later exact301 and470 acceptances are wrapper history, not core edits.",
+      "input_core": "sources/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "owner_core": "sources/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "owner_note": "general_compact_control_kinetic_energy_bounded_theorem_note",
+      "relation": "Exact causal-square/forcing route extended by full-input, full-law and correlation estimates",
+      "source_owned_locator": "general470 opening source scope and G3-G13"
+    }
+  ],
+  "same_packet_parents": [
+    {
+      "claim_id": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "path": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "8cfb329c3aa15a4f7ab0ceed0ad94ed6e4f3ffc6e3f2c166b833f316fcbeaf0a"
+    },
+    {
+      "claim_id": "one_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "path": "docs/ONE_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "a827ea003ec1ba219d4ac05cb1223cfaa7e6e3468b7a1595c1fce46f6a766142"
+    },
+    {
+      "claim_id": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "path": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "9ce1a40387f373e2f5cf9d696ae61408c42145203c50d08e4a1a2e4b982808f2"
+    },
+    {
+      "claim_id": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+      "path": "docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "3a084e70500188714bccdb5a7a94542bbebca568e643751fcb93f971e87a118b"
+    }
+  ],
+  "source_assembly_claim_id_map": {
+    "general_compact_control_kinetic_energy_bounded_theorem_note": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+    "kinetic_correlation_limits_bounded_theorem_note": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13",
+    "one_zero_kinetic_energy_bounded_theorem_note": "one_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+    "two_zero_kinetic_energy_bounded_theorem_note": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13"
+  }
+}

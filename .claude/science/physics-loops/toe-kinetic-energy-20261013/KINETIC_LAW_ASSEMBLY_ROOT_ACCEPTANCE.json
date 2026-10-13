@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-13T11:20:16.778212+00:00",
+  "source_package": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_law_source_assembly",
+  "freeze_sha256": "e949acc4f46e5ffbc7f58818ca78e58610f3c21f3ee647fa0b2a8cb3b8311c26",
+  "root_review_sha256": "40bd948dab7dd7a05bfb358aa51090f7a3164f5f498a0eb0ede4b5f253f59d8c",
+  "verification_sha256": "a1248b2a9393f428cf853a2f4f400e92b4bf585deee98fe63366c14fb98ab898",
+  "accepted_scope": "Four conditional source notes, five unchanged previously reviewed cores; source preparation accepted, no retained audit.",
+  "required_repairs": [],
+  "publication_preparation_authorized": true,
+  "publication_execution_authorized_by_this_receipt": false,
+  "expected_new_claim_nodes": 4,
+  "expected_direct_mathematical_edges": 14,
+  "actual_base": "301b06c3c2b8ce3c1b33c9333eee89a2248e4a99",
+  "branch": "physics-loop/toe-kinetic-energy-20261013",
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9515",
+  "editable_prompt_files_changed": []
+}

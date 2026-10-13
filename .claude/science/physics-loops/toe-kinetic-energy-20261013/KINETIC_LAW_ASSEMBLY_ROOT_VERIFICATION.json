@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-10-13T11:19:36.879528+00:00",
+  "finished_utc": "2026-10-13T11:19:36.984282+00:00",
+  "elapsed_seconds": 0.10426008328795433,
+  "exit_code": 0,
+  "stdout_sha256": "787d5fd3eb49e5f605fd69a0eb2b925c087d9bd33a1d13c4739fb1067f4423d3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "freeze_sha256": "e949acc4f46e5ffbc7f58818ca78e58610f3c21f3ee647fa0b2a8cb3b8311c26",
+  "verified_bound_files": 403,
+  "exact_tree_files": 405,
+  "live_cores": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ONE_ZERO_CONTROL_KINETIC_ROOT_PROBE.md",
+      "sha256": "fccf1ea3387b059b1d625b985d38bb71573a5bfd48af12e251dc33489b551960",
+      "lines": 421
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "sha256": "0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498",
+      "lines": 301
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "lines": 470
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_CORRELATION_ROOT_PROBE.md",
+      "sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19",
+      "lines": 335
+    }
+  ],
+  "source_checker_sha256": "b5cc5f8bd9691ee3c07fd3ec8349b03235c6d25c983252a104d66bab0efc8c70",
+  "scope": "Source identity/reconstruction only; no scientific computation or retained audit."
+}

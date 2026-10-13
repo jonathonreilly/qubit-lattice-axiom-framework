@@ -1,0 +1,5 @@
+# Supplied premises and import ownership
+
+PARENT_BINDINGS.json distinguishes four exact canonical mathematical parents, four same-packet notes and three archived input/consumer relations. CLAIM_REGISTRY_ADDITIONS.json records14 direct edges and keeps five history relations separate. The general note has an additional internal470-to301 proof import preserved in the assembly. The correlation proof displays its kernel argument; root484 is supporting exposed provenance. Root484 consumed pair792 and the separate root286. No direct pair edge is manufactured from exposure or the Git stack.
+
+All scientific sources remain conditional. The vacuum, signed massive free carrier, polarization and fixed compact real controls are model data. Full/interaction pictures, exterior pair normalization and separate mean/weak-law arguments are preserved. Actual-cell applications retain common H0/vacuum, real finite-order compact inputs, energy-weighted resource bounds and finite-first-energy work hypotheses. No new Hamiltonian, physical selector, observation fit or empirical prediction is introduced.

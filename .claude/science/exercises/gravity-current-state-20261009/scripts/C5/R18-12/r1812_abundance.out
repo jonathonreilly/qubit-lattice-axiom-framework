@@ -1,0 +1,62 @@
+(0) lower bound E(k) >= (2/pi)|k|_T (proof input for the corner theorem)
+   G(1.4): min_k h(k)/k on (0,pi] = 0.722817  (2/pi = 0.636620)
+   photon R85: min_q d(q)/q on (0,pi] = 0.636620;  d(pi) = 2.000000
+   photon std: min_q d(q)/q on (0,pi] = 0.636620;  d(pi) = 2.000000
+   G m=0.0: min over 4e5 random k of eps/|k|_T = 0.724032
+   G m=0.3: min over 4e5 random k of eps/|k|_T = 0.728538
+   photon R85: min over 4e5 random q of omega/|q|_T = 0.637811
+   photon std: min over 4e5 random q of omega/|q|_T = 0.637811
+   D1 m=0 (control): min eps/|k|_T = 0.033074  (fails: doublers, W_pi = 0.0953 at |k|_T = pi)
+   corner photon (pi,0,0)   omega = 2.0000 = (2/pi)|K|_T = 2.0000 ; Delta diag = [-4.0, -0.0, -0.0] ; Q_D/E per axis = [-2.0, -0.0, -0.0]
+   corner photon (pi,pi,0)  omega = 2.8284 = (2/pi)|K|_T = 2.8284 ; Delta diag = [-5.6569, -5.6569, -0.0] ; Q_D/E per axis = [-2.0, -2.0, -0.0]
+   corner photon (pi,pi,pi) omega = 3.4641 = (2/pi)|K|_T = 3.4641 ; Delta diag = [-6.9282, -6.9282, -6.9282] ; Q_D/E per axis = [-2.0, -2.0, -2.0]
+
+(1) freeze-in relic abundance and T_RH,max from Omega h^2 <= 0.12
+   (a) D1 doublers (Delta = 0, W7-inert, charge of the parent species): M = 0.0953/a = 1.163e+18 GeV, pair threshold 2M
+       kappa = 1e-06 : Y_max = 3.76e-28 ; T_RH,max = 6.265e+16 GeV  (2M/T_RH,max = 37.1)
+       kappa = 0.001 : Y_max = 3.76e-28 ; T_RH,max = 5.262e+16 GeV  (2M/T_RH,max = 44.2)
+       kappa = 1     : Y_max = 3.76e-28 ; T_RH,max = 4.538e+16 GeV  (2M/T_RH,max = 51.3)
+       kappa = 100   : Y_max = 3.76e-28 ; T_RH,max = 4.158e+16 GeV  (2M/T_RH,max = 56.0)
+       T_RH = 1.0e+15 GeV: Y = 0.00e+00  Omega h^2 = 0.00e+00
+       T_RH = 6.8e+15 GeV: Y = 1.19e-153  Omega h^2 = 3.80e-127
+       T_RH = 1.0e+16 GeV: Y = 2.85e-106  Omega h^2 = 9.08e-80
+       T_RH = 3.0e+16 GeV: Y = 2.17e-39  Omega h^2 = 6.93e-13
+       T_RH = 1.0e+17 GeV: Y = 2.52e-16  Omega h^2 = 8.04e+10
+   (b) G-world corner photon (pi,0,0) (Delta_xx = -4/a, W7-carrying): M = 2/a = 2.442e+19 GeV, single-production threshold pi/a
+       kappa = 1e-06 : Y_max = 1.79e-29 ; T_RH,max = 9.832e+17 GeV  (E_th/T_RH,max = 39.0)
+       kappa = 0.001 : Y_max = 1.79e-29 ; T_RH,max = 8.308e+17 GeV  (E_th/T_RH,max = 46.2)
+       kappa = 1     : Y_max = 1.79e-29 ; T_RH,max = 7.198e+17 GeV  (E_th/T_RH,max = 53.3)
+       kappa = 100   : Y_max = 1.79e-29 ; T_RH,max = 6.611e+17 GeV  (E_th/T_RH,max = 58.0)
+       T_RH = 6.8e+15 GeV: Y = 0.00e+00  Omega h^2 = 0.00e+00
+       T_RH = 1.0e+17 GeV: Y = 1.24e-171  Omega h^2 = 8.31e-144
+       T_RH = 3.0e+17 GeV: Y = 2.70e-61  Omega h^2 = 1.81e-33
+       T_RH = 1.0e+18 GeV: Y = 3.36e-23  Omega h^2 = 2.25e+05
+       threshold bracket: any initial state with total K = (pi,0,0) has E >= (2/pi)|K|_T = 2/a = M (Theorem C' bound); E_th = M gives:
+       kappa = 1e-06 , E_th = 2/a: T_RH,max = 6.185e+17 GeV
+       kappa = 1     , E_th = 2/a: T_RH,max = 4.543e+17 GeV
+       kappa = 100   , E_th = 2/a: T_RH,max = 4.176e+17 GeV
+   (c) lightest grid-stable defect-carrying matter edge state of the D1+R85 world: M = 1.5314/a; threshold bracket [M, 2M]
+       E_th = 1 M: T_RH,max = 3.479e+17 GeV
+       E_th = 2 M: T_RH,max = 7.051e+17 GeV
+   RECALLED: r < 0.036 (BICEP/Keck 2021) gives V^1/4 < 1.6e16 GeV, so instant reheating gives T_RH <= 6.69e+15 GeV (g* = 106.75).
+       At that T_RH: doubler Boltzmann exponent 2M/T = 348 ; corner-photon E_th/T = 5735.
+
+(2) T_RH >= 1/a: class abundance frozen at its initial value Y0 (see (3)); Omega h^2 = 2.744e8 M Y0
+   Y0 = 1e-04: doublers Omega h^2 = 3.2e+22 ; corner photons Omega h^2 = 6.7e+23  (bound 0.12)
+   Y0 = 1e-02: doublers Omega h^2 = 3.2e+24 ; corner photons Omega h^2 = 6.7e+25  (bound 0.12)
+   Y0 = 1e-01: doublers Omega h^2 = 3.2e+25 ; corner photons Omega h^2 = 6.7e+26  (bound 0.12)
+   largest allowed initial abundance: Y0 < 3.8e-28 (doublers), < 1.8e-29 (corner photons)
+
+(3) Gamma/H at T <= 1/a for removal by annihilation or conversion (n_partner ~ 0.1 T^3, v ~ 1)
+   T = 1.00/a  doubler      : gauge sigma ~ alpha^2/M^2: Gamma/H = 4.0e-04 ; gravitational sigma ~ a^2: Gamma/H = 5.8e-03
+   T = 1.00/a  corner photon: gauge sigma ~ alpha^2/M^2: Gamma/H = 9.1e-07 ; gravitational sigma ~ a^2: Gamma/H = 5.8e-03
+   T = 0.10/a  doubler      : gauge sigma ~ alpha^2/M^2: Gamma/H = 4.0e-05 ; gravitational sigma ~ a^2: Gamma/H = 5.8e-04
+   T = 0.10/a  corner photon: gauge sigma ~ alpha^2/M^2: Gamma/H = 9.1e-08 ; gravitational sigma ~ a^2: Gamma/H = 5.8e-04
+   T = 0.01/a  doubler      : gauge sigma ~ alpha^2/M^2: Gamma/H = 4.0e-06 ; gravitational sigma ~ a^2: Gamma/H = 5.8e-05
+   T = 0.01/a  corner photon: gauge sigma ~ alpha^2/M^2: Gamma/H = 9.1e-09 ; gravitational sigma ~ a^2: Gamma/H = 5.8e-05
+
+(4) observables (i) and (iv)
+   (i) lab body with relic gas at the full local DM density, |Q_D/E| =    2: edge fraction f <= 1.8e-25 ; |dM/M| <= f |Q/E| V^2/2 = 2.7e-31  (MICROSCOPE-type bound ~1e-15)
+   (i) lab body with relic gas at the full local DM density, |Q_D/E| =   20: edge fraction f <= 1.8e-25 ; |dM/M| <= f |Q/E| V^2/2 = 2.7e-30  (MICROSCOPE-type bound ~1e-15)
+   (i') the relic gas itself (corner photons, along the corner axis): M(V) = M[1 - Q V^2/(2(E+Q))] with Q = -2E: dM/M = -V^2 = -1.5e-06 at V = 1.23e-03
+   (iv) open edge decays: lifetime ~ a/alpha ~ 2.2e-42 s (no BBN/CMB injection); sector ground states: no decay at all.

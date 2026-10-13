@@ -1,0 +1,30 @@
+world G  + R85 m=0.01:
+   matter edge states: 12493; grid-stable 0; defect-carrying & stable 0; lightest such eps = none at K = -
+   photon edge states: 13481; grid-stable 13481; defect-carrying & stable 13481; lightest such omega = 1.0472 at Q = [0.0, 0.0, 1.047]
+   corner classes (pi,0,0),(pi,pi,0),(pi,pi,pi): eps_f [np.float64(2.2708), np.float64(3.2114), np.float64(3.9331)] stable_f [False, False, False] | omega [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)] stable_g [True, True, True] | neutral envelope [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)]
+   [3 s]
+world D1 + R85 m=0.01:
+   matter edge states: 12493; grid-stable 11627; defect-carrying & stable 2310; lightest such eps = 1.5314 at K = [-3.142, -1.571, 0.0]
+   photon edge states: 13481; grid-stable 1854; defect-carrying & stable 1854; lightest such omega = 1.0472 at Q = [0.0, 0.0, 1.047]
+   corner classes (pi,0,0),(pi,pi,0),(pi,pi,pi): eps_f [np.float64(0.1053), np.float64(0.2005), np.float64(0.2958)] stable_f [True, True, True] | omega [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)] stable_g [False, False, False] | neutral envelope [np.float64(0.1153), np.float64(0.2105), np.float64(0.3058)]
+   [7 s]
+world G  + std m=0.01:
+   matter edge states: 12493; grid-stable 0; defect-carrying & stable 0; lightest such eps = none at K = -
+   photon edge states: 13481; grid-stable 13481; defect-carrying & stable 13481; lightest such omega = 1.0000 at Q = [0.0, 0.0, 1.047]
+   corner classes (pi,0,0),(pi,pi,0),(pi,pi,pi): eps_f [np.float64(2.2708), np.float64(3.2114), np.float64(3.9331)] stable_f [False, False, False] | omega [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)] stable_g [True, True, True] | neutral envelope [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)]
+   [10 s]
+world D1 + std m=0.01:
+   matter edge states: 12493; grid-stable 6627; defect-carrying & stable 390; lightest such eps = 1.5438 at K = [-3.142, -3.142, -1.571]
+   photon edge states: 13481; grid-stable 1854; defect-carrying & stable 1854; lightest such omega = 1.0000 at Q = [0.0, 0.0, 1.047]
+   corner classes (pi,0,0),(pi,pi,0),(pi,pi,pi): eps_f [np.float64(0.1053), np.float64(0.2005), np.float64(0.2958)] stable_f [True, True, True] | omega [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)] stable_g [False, False, False] | neutral envelope [np.float64(0.1153), np.float64(0.2105), np.float64(0.3058)]
+   [13 s]
+world S  + R85 m=0.01:
+   matter edge states: 12493; grid-stable 6111; defect-carrying & stable 0; lightest such eps = none at K = -
+   photon edge states: 13481; grid-stable 1854; defect-carrying & stable 1854; lightest such omega = 1.0472 at Q = [0.0, 0.0, 1.047]
+   corner classes (pi,0,0),(pi,pi,0),(pi,pi,pi): eps_f [np.float64(0.01), np.float64(0.01), np.float64(0.01)] stable_f [True, True, True] | omega [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)] stable_g [False, False, False] | neutral envelope [np.float64(0.02), np.float64(0.02), np.float64(0.02)]
+   [16 s]
+world G  + R85 m=0.30:
+   matter edge states: 12493; grid-stable 3143; defect-carrying & stable 3143; lightest such eps = 1.5992 at K = [-1.571, 0.0, 0.0]
+   photon edge states: 13481; grid-stable 13481; defect-carrying & stable 13481; lightest such omega = 1.0472 at Q = [0.0, 0.0, 1.047]
+   corner classes (pi,0,0),(pi,pi,0),(pi,pi,pi): eps_f [np.float64(2.2905), np.float64(3.2254), np.float64(3.9446)] stable_f [True, False, False] | omega [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)] stable_g [True, True, True] | neutral envelope [np.float64(2.0), np.float64(2.8284), np.float64(3.4641)]
+   [20 s]

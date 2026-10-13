@@ -7261,3 +7261,20 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
 ---
 
+- **R18-12 (relic edge quanta): worker reading BOUNDED** through the dark-matter density only. SELF-CLEANING is not met.
+  - **Theorem C (corner dichotomy).** Umklapp conserves crystal momentum mod 2π. So every grid law has either light corner copies or absolutely stable Planckian corner states.
+  - **Theorem C′ (which corner state is stable):**
+    - **D1 world:** the Wilson doublers (0.095n/a, charged, W7-inert).
+    - **G world:** the corner photons (2–2√3 /a, at rest, W7-active).
+  - **Unstable defect states.** Many defect-carrying edge states decay in ~1e-42 s. Nothing removes the stable ones once made (Γ/H ≤ 6e-3).
+  - **Bounds from Ωh² ≤ 0.12:**
+    - doublers: T_RH ≤ 4–6e16 GeV;
+    - corner photons: T_RH ≤ 4–10e17 GeV;
+    - T_RH ≥ 1/a is excluded (overclosure by 1e23–1e27);
+    - standard inflation (T_RH ≲ 7e15 GeV) is safe by enormous margins.
+  - **No other observable bites:** the W7 mass anomaly in the lab is ≤ 3e-30.
+  - **P-W7edge0 cannot follow from dynamics;** it is a history condition.
+  - **Lemma X.** Translation-invariant dynamics never redshift crystal momentum, so "standard expansion" is undefined at the lattice scale. A momentum-dilating law would self-clean (P-r1812c).
+  - **Prices:** P-r1812a (corner dichotomy), P-r1812b (history bound), P-r1812c.
+
+  Referee running.

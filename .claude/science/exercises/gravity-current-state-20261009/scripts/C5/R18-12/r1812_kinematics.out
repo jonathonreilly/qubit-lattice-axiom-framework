@@ -1,0 +1,103 @@
+C5 R18-12 kinematics.  b = 1.40; D1 Wilson r = 1/sqrt3, W_pi = 0.0953; grid N = 48; 580 edge samples
+
+(A) fermion/scalar edge quanta: one-photon decay f(K) -> f(k') + gamma(K - k')
+    columns: world | frac edge samples with D_A < -1e-9 (decay OPEN, explicit final state) | among defect-carrying (|Delta|>1e-6): frac open | min eps over defect-carrying samples with D_A >= 0 | min D_A
+  S   m=0.0 R85   | open 0.671 | defect: open 1.000 (n=162) | min eps closed&defect = none | min D_A = -0.1109
+  S   m=0.0 std   | open 0.995 | defect: open 1.000 (n=162) | min eps closed&defect = none | min D_A = -0.2290
+  S   m=0.0 max   | open 0.000 | defect: open 0.000 (n=162) | min eps closed&defect = 1.4208 | min D_A = -0.0000
+  S   m=0.0 min1  | open 0.710 | defect: open 1.000 (n=162) | min eps closed&defect = none | min D_A = -0.9025
+  S   m=0.3 R85   | open 0.000 | defect: open 0.000 (n=162) | min eps closed&defect = 1.4521 | min D_A = +0.0000
+  S   m=0.3 std   | open 0.093 | defect: open 0.290 (n=162) | min eps closed&defect = 1.4521 | min D_A = -0.0535
+  S   m=0.3 max   | open 0.000 | defect: open 0.000 (n=162) | min eps closed&defect = 1.4521 | min D_A = +0.0000
+  S   m=0.3 min1  | open 0.479 | defect: open 1.000 (n=162) | min eps closed&defect = none | min D_A = -0.6195
+  G   m=0.0 R85   | open 1.000 | defect: open 1.000 (n=569) | min eps closed&defect = none | min D_A = -0.5917
+  G   m=0.0 std   | open 1.000 | defect: open 1.000 (n=569) | min eps closed&defect = none | min D_A = -0.5917
+  G   m=0.0 max   | open 0.000 | defect: open 0.000 (n=569) | min eps closed&defect = 1.4988 | min D_A = -0.0000
+  G   m=0.0 min1  | open 1.000 | defect: open 1.000 (n=569) | min eps closed&defect = none | min D_A = -2.2011
+  G   m=0.3 R85   | open 0.812 | defect: open 0.828 (n=569) | min eps closed&defect = 1.5285 | min D_A = -0.3228
+  G   m=0.3 std   | open 0.938 | defect: open 0.946 (n=569) | min eps closed&defect = 1.5285 | min D_A = -0.3228
+  G   m=0.3 max   | open 0.000 | defect: open 0.000 (n=569) | min eps closed&defect = 1.5285 | min D_A = +0.0000
+  G   m=0.3 min1  | open 1.000 | defect: open 1.000 (n=569) | min eps closed&defect = none | min D_A = -1.9125
+  D1  m=0.0 R85   | open 0.072 | defect: open 0.230 (n=165) | min eps closed&defect = 1.4240 | min D_A = -0.1111
+  D1  m=0.0 std   | open 0.560 | defect: open 0.921 (n=165) | min eps closed&defect = 1.6286 | min D_A = -0.2293
+  D1  m=0.0 max   | open 0.000 | defect: open 0.000 (n=165) | min eps closed&defect = 1.4240 | min D_A = -0.0000
+  D1  m=0.0 min1  | open 0.643 | defect: open 1.000 (n=165) | min eps closed&defect = none | min D_A = -0.9086
+  D1  m=0.3 R85   | open 0.000 | defect: open 0.000 (n=169) | min eps closed&defect = 1.4416 | min D_A = +0.0000
+  D1  m=0.3 std   | open 0.022 | defect: open 0.077 (n=169) | min eps closed&defect = 1.4416 | min D_A = -0.0579
+  D1  m=0.3 max   | open 0.000 | defect: open 0.000 (n=169) | min eps closed&defect = 1.4416 | min D_A = +0.0000
+  D1  m=0.3 min1  | open 0.428 | defect: open 1.000 (n=169) | min eps closed&defect = none | min D_A = -0.6458
+  [2 s]
+
+(A2) axis line K = (k,0,0): first k (>b) where one-photon decay opens, per world (blank = closed on the whole line)
+  S   m=0.0 R85   : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  S   m=0.0 std   : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  S   m=0.0 max   : open at k = 
+  S   m=0.0 min1  : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  S   m=0.3 R85   : open at k = 
+  S   m=0.3 std   : open at k = 
+  S   m=0.3 max   : open at k = 
+  S   m=0.3 min1  : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  G   m=0.0 R85   : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  G   m=0.0 std   : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  G   m=0.0 max   : open at k = 
+  G   m=0.0 min1  : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  G   m=0.3 R85   : open at k = 1.85, 1.90, 1.94, 1.99, 2.03, 2.08 ...
+  G   m=0.3 std   : open at k = 1.63, 1.68, 1.72, 1.77, 1.81, 1.85 ...
+  G   m=0.3 max   : open at k = 
+  G   m=0.3 min1  : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  D1  m=0.0 R85   : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63
+  D1  m=0.0 std   : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  D1  m=0.0 max   : open at k = 
+  D1  m=0.0 min1  : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+  D1  m=0.3 R85   : open at k = 
+  D1  m=0.3 std   : open at k = 
+  D1  m=0.3 max   : open at k = 
+  D1  m=0.3 min1  : open at k = 1.41, 1.45, 1.50, 1.54, 1.59, 1.63 ...
+
+(B) edge photons: decay gamma(Q) -> f fbar or gamma gamma (Q random in the photon edge |q_j| > 1, 150 samples) for the R85 photon
+  world S   m=0.0 + R85: edge photons with decay closed on grid: 0.129; defect-carrying & closed: 22 of 170; lightest such omega = 1.0500
+  world S   m=0.3 + R85: edge photons with decay closed on grid: 0.182; defect-carrying & closed: 31 of 170; lightest such omega = 1.0500
+  world G   m=0.0 + R85: edge photons with decay closed on grid: 1.000; defect-carrying & closed: 170 of 170; lightest such omega = 1.0500
+  world G   m=0.3 + R85: edge photons with decay closed on grid: 1.000; defect-carrying & closed: 170 of 170; lightest such omega = 1.0500
+  world D1  m=0.0 + R85: edge photons with decay closed on grid: 0.129; defect-carrying & closed: 22 of 170; lightest such omega = 1.0500
+  world D1  m=0.3 + R85: edge photons with decay closed on grid: 0.194; defect-carrying & closed: 33 of 170; lightest such omega = 1.0500
+  [31 s]
+
+(C) corner classes: lowest states found (charge 0 and charge 1), R85 photon unless stated
+  S   m=0.0 (pi,0,0)   R85 : eps_f=0.0000 (Delta_xx=-0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.0000 pair=0.0000 gg=2.0000 | q=1 ground: f + gamma 0.0000 | q=0 ground: f fbar pair 0.0000
+  S   m=0.0 (pi,0,0)   std : eps_f=0.0000 (Delta_xx=-0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.0000 pair=0.0000 gg=2.0000 | q=1 ground: f + gamma 0.0000 | q=0 ground: f fbar pair 0.0000
+  S   m=0.0 (pi,pi,0)  R85 : eps_f=0.0000 (Delta_xx=-0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.0000 pair=0.0000 gg=2.8284 | q=1 ground: f + gamma 0.0000 | q=0 ground: f fbar pair 0.0000
+  S   m=0.0 (pi,pi,0)  std : eps_f=0.0000 (Delta_xx=-0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.0000 pair=0.0000 gg=2.8284 | q=1 ground: f + gamma 0.0000 | q=0 ground: f fbar pair 0.0000
+  S   m=0.0 (pi,pi,pi) R85 : eps_f=0.0000 (Delta_xx=-0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.0000 pair=0.0000 gg=3.4641 | q=1 ground: f + gamma 0.0000 | q=0 ground: f fbar pair 0.0000
+  S   m=0.0 (pi,pi,pi) std : eps_f=0.0000 (Delta_xx=-0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.0000 pair=0.0000 gg=3.4641 | q=1 ground: f + gamma 0.0000 | q=0 ground: f fbar pair 0.0000
+  S   m=0.3 (pi,0,0)   R85 : eps_f=0.3000 (Delta_xx=+0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.3000 pair=0.6000 gg=2.0000 | q=1 ground: f + gamma 0.3000 | q=0 ground: f fbar pair 0.6000
+  S   m=0.3 (pi,0,0)   std : eps_f=0.3000 (Delta_xx=+0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.3000 pair=0.6000 gg=2.0000 | q=1 ground: f + gamma 0.3000 | q=0 ground: f fbar pair 0.6000
+  S   m=0.3 (pi,pi,0)  R85 : eps_f=0.3000 (Delta_xx=+0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.3000 pair=0.6000 gg=2.8284 | q=1 ground: f + gamma 0.3000 | q=0 ground: f fbar pair 0.6000
+  S   m=0.3 (pi,pi,0)  std : eps_f=0.3000 (Delta_xx=+0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.3000 pair=0.6000 gg=2.8284 | q=1 ground: f + gamma 0.3000 | q=0 ground: f fbar pair 0.6000
+  S   m=0.3 (pi,pi,pi) R85 : eps_f=0.3000 (Delta_xx=+0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.3000 pair=0.6000 gg=3.4641 | q=1 ground: f + gamma 0.3000 | q=0 ground: f fbar pair 0.6000
+  S   m=0.3 (pi,pi,pi) std : eps_f=0.3000 (Delta_xx=+0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.3000 pair=0.6000 gg=3.4641 | q=1 ground: f + gamma 0.3000 | q=0 ground: f fbar pair 0.6000
+  G   m=0.0 (pi,0,0)   R85 : eps_f=2.2708 (Delta_xx=-2.271) omega=2.0000 (Delta_xx=-4.000) f+g=2.0000 pair=2.2708 gg=2.0000 | q=1 ground: f + gamma 2.0000 | q=0 ground: gamma gamma 2.0000
+  G   m=0.0 (pi,0,0)   std : eps_f=2.2708 (Delta_xx=-2.271) omega=2.0000 (Delta_xx=-4.000) f+g=2.0000 pair=2.2708 gg=2.0000 | q=1 ground: f + gamma 2.0000 | q=0 ground: gamma gamma 2.0000
+  G   m=0.0 (pi,pi,0)  R85 : eps_f=3.2114 (Delta_xx=-3.211) omega=2.8284 (Delta_xx=-5.657) f+g=2.8284 pair=3.2114 gg=2.8284 | q=1 ground: f + gamma 2.8284 | q=0 ground: gamma gamma 2.8284
+  G   m=0.0 (pi,pi,0)  std : eps_f=3.2114 (Delta_xx=-3.211) omega=2.8284 (Delta_xx=-5.657) f+g=2.8284 pair=3.2114 gg=2.8284 | q=1 ground: f + gamma 2.8284 | q=0 ground: gamma gamma 2.8284
+  G   m=0.0 (pi,pi,pi) R85 : eps_f=3.9331 (Delta_xx=-3.933) omega=3.4641 (Delta_xx=-6.928) f+g=3.4641 pair=3.9331 gg=3.4641 | q=1 ground: f + gamma 3.4641 | q=0 ground: gamma gamma 3.4641
+  G   m=0.0 (pi,pi,pi) std : eps_f=3.9331 (Delta_xx=-3.933) omega=3.4641 (Delta_xx=-6.928) f+g=3.4641 pair=3.9331 gg=3.4641 | q=1 ground: f + gamma 3.4641 | q=0 ground: gamma gamma 3.4641
+  G   m=0.3 (pi,0,0)   R85 : eps_f=2.2905 (Delta_xx=-2.291) omega=2.0000 (Delta_xx=-4.000) f+g=2.2905 pair=2.5905 gg=2.0000 | q=1 ground: f + gamma 2.2905 | q=0 ground: gamma gamma 2.0000
+  G   m=0.3 (pi,0,0)   std : eps_f=2.2905 (Delta_xx=-2.291) omega=2.0000 (Delta_xx=-4.000) f+g=2.2905 pair=2.5905 gg=2.0000 | q=1 ground: f + gamma 2.2905 | q=0 ground: gamma gamma 2.0000
+  G   m=0.3 (pi,pi,0)  R85 : eps_f=3.2254 (Delta_xx=-3.225) omega=2.8284 (Delta_xx=-5.657) f+g=3.1284 pair=3.5254 gg=2.8284 | q=1 ground: f + gamma 3.1284 | q=0 ground: gamma gamma 2.8284
+  G   m=0.3 (pi,pi,0)  std : eps_f=3.2254 (Delta_xx=-3.225) omega=2.8284 (Delta_xx=-5.657) f+g=3.1284 pair=3.5254 gg=2.8284 | q=1 ground: f + gamma 3.1284 | q=0 ground: gamma gamma 2.8284
+  G   m=0.3 (pi,pi,pi) R85 : eps_f=3.9446 (Delta_xx=-3.945) omega=3.4641 (Delta_xx=-6.928) f+g=3.7641 pair=4.2446 gg=3.4641 | q=1 ground: f + gamma 3.7641 | q=0 ground: gamma gamma 3.4641
+  G   m=0.3 (pi,pi,pi) std : eps_f=3.9446 (Delta_xx=-3.945) omega=3.4641 (Delta_xx=-6.928) f+g=3.7641 pair=4.2446 gg=3.4641 | q=1 ground: f + gamma 3.7641 | q=0 ground: gamma gamma 3.4641
+  D1  m=0.0 (pi,0,0)   R85 : eps_f=0.0953 (Delta_xx=+0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.0953 pair=0.0953 gg=2.0000 | q=1 ground: f + gamma 0.0953 | q=0 ground: f fbar pair 0.0953
+  D1  m=0.0 (pi,0,0)   std : eps_f=0.0953 (Delta_xx=+0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.0953 pair=0.0953 gg=2.0000 | q=1 ground: f + gamma 0.0953 | q=0 ground: f fbar pair 0.0953
+  D1  m=0.0 (pi,pi,0)  R85 : eps_f=0.1905 (Delta_xx=+0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.1905 pair=0.1905 gg=2.8284 | q=1 ground: f + gamma 0.1905 | q=0 ground: f fbar pair 0.1905
+  D1  m=0.0 (pi,pi,0)  std : eps_f=0.1905 (Delta_xx=+0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.1905 pair=0.1905 gg=2.8284 | q=1 ground: f + gamma 0.1905 | q=0 ground: f fbar pair 0.1905
+  D1  m=0.0 (pi,pi,pi) R85 : eps_f=0.2858 (Delta_xx=+0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.2858 pair=0.2858 gg=3.4641 | q=1 ground: f + gamma 0.2858 | q=0 ground: f fbar pair 0.2858
+  D1  m=0.0 (pi,pi,pi) std : eps_f=0.2858 (Delta_xx=+0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.2858 pair=0.2858 gg=3.4641 | q=1 ground: f + gamma 0.2858 | q=0 ground: f fbar pair 0.2858
+  D1  m=0.3 (pi,0,0)   R85 : eps_f=0.3953 (Delta_xx=-0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.3953 pair=0.6953 gg=2.0000 | q=1 ground: f + gamma 0.3953 | q=0 ground: f fbar pair 0.6953
+  D1  m=0.3 (pi,0,0)   std : eps_f=0.3953 (Delta_xx=-0.000) omega=2.0000 (Delta_xx=-4.000) f+g=0.3953 pair=0.6953 gg=2.0000 | q=1 ground: f + gamma 0.3953 | q=0 ground: f fbar pair 0.6953
+  D1  m=0.3 (pi,pi,0)  R85 : eps_f=0.4905 (Delta_xx=-0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.4905 pair=0.7905 gg=2.8284 | q=1 ground: single f 0.4905 | q=0 ground: f fbar pair 0.7905
+  D1  m=0.3 (pi,pi,0)  std : eps_f=0.4905 (Delta_xx=-0.000) omega=2.8284 (Delta_xx=-5.657) f+g=0.4905 pair=0.7905 gg=2.8284 | q=1 ground: single f 0.4905 | q=0 ground: f fbar pair 0.7905
+  D1  m=0.3 (pi,pi,pi) R85 : eps_f=0.5858 (Delta_xx=+0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.5858 pair=0.8858 gg=3.4641 | q=1 ground: f + gamma 0.5858 | q=0 ground: f fbar pair 0.8858
+  D1  m=0.3 (pi,pi,pi) std : eps_f=0.5858 (Delta_xx=+0.000) omega=3.4641 (Delta_xx=-6.928) f+g=0.5858 pair=0.8858 gg=3.4641 | q=1 ground: f + gamma 0.5858 | q=0 ground: f fbar pair 0.8858
+  [31 s]

@@ -8543,3 +8543,29 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Flag:** R19-5's U/UD exact completions should get the same placement and Fourier test.
 
   Referee running.
+
+- **Referee records, 2026-10-13 ~07:08Z.** Codex gpt-5.6-sol at xhigh.
+  - **R19-21: NOT CONFIRMED. Recorded reading: OPEN** (the worker's reading was HISTORY-SAFE).
+    - Confirmed:
+      - the NN O(λ) mechanism, within its model;
+      - the sign flip at T = 563 GeV, in the Higgs mean-field channel;
+      - today's matter channel, |m_g| ≈ 1.4e-9 eV. With GWTC-4.0's 1.92e-23 eV bound the ratio is 7.4e13 (not 1.1e14), which does not change the conclusion;
+      - the D1 enthalpy, 2.68e106 ρ_Λ.
+    - Not established:
+      - (S_loc) is shown only at O(λ) in one NN scalar model;
+      - gauge/Yukawa thermal masses of order g²T² are not excluded, so "Higgs-only, T⁶ residue" does not hold;
+      - the cone-row thermal analogues, the all-orders UV/IR definition, and the hot-frame dynamics are uncomputed;
+      - (d-i)'s C-box-E is not checked jointly with V1.
+  - **R19-23: CONFIRMED WITH CORRECTIONS. PHYSICAL is met.**
+    - E_g, T_2g and face2 are gauge-free TT pole shifts. "A_1 + E" is a typo for "4A_1 + B_1 + B_2 + 2E".
+    - face1 enters a physical pole only through the first-order A_1 Schur complement, which is uncomputed. So R18-13 and R19-12's face1 zero and payment are CONDITIONAL; face2 stands.
+    - Solid kernel: two positive-residue TT branches; the correct phase specification is m_0 = m_1 = m_4 = 0. There is no vDVZ jump at fixed q, but this is not derived for the actual vacuum.
+    - **Correction to the worker's overclaim:** a degree-2 Ward-violating speed kernel need not propagate π⁰. The π⁰ spectrum and the candidate wall stay OPEN.
+  - **R19-24: NOT CONFIRMED** (the worker's reading was COUNTERTERMS-NEEDED).
+    - Confirmed:
+      - the toy: an exact one-loop zero gets a nonzero two-loop speed row, and Z⁴ removes it. This is not a computation of the QED residual. The values at m = 0.2 are −0.3617 and −0.0908;
+      - Lemma S, within G;
+      - Lemma E is exactly algebraic, with residual kernel K − Z E_EH. It establishes 33 imposed conditions, not necessarily 33 selected numbers.
+    - Under the campaign's law-functional precedent, D1_∞ is number-free and meets DYNAMIC-CLAUSE by construction. Under law-level counting it is OPEN.
+    - D1_∞ and linear Σ are the same inverse-kernel renormalization move. Both impose Lorentz invariance; neither predicts it.
+    - No class-wide counterterm no-go is proved.

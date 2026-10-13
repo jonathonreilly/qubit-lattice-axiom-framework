@@ -7669,3 +7669,35 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - the TT and Feynman–de Donder vacuum coefficient is 1.
   - **The new a = 2 law** is past-record-adaptive and causally completed. It keeps CP and static spherical β = γ = 1, but loses R18-7's pure-scalar cancellation.
   - **Net:** this is a coherent, number-free common-source completion, but not strictly UNIFIED.
+
+### C5 Round 19, item 12 (pre-registered 04:54Z, before launch)
+
+**R19-12. The whole SM cone bill on one set of edges: the charge block on the gravity root's edges.**
+- **Plain question.**
+  - The gravity block's SM root (R18-9 and R18-13, refereed in the O(q) convention) fixes particular edges:
+    - Dirac on D1(0.909, 0.556);
+    - a nearly linear photon γG_w(2.9435, 0.198);
+    - scalars on G_w(2.526).
+  - The charge block (R16-1, R16-2, R16-10) was computed on other edges.
+  - On the gravity root's own edges, recompute:
+    - the electron–photon split Δ(0⁺) for each charge class;
+    - the photon shift Σ;
+    - the minimal number of charge tunings, counted on the counterterm basis.
+  - Does one law then carry both blocks, and what is the total bill for SM content?
+  - Does the photon window (b_γ ≈ 2.94) help or hurt the charge rows? Note that R16-10's stiffened-photon zero needed v_max 7.35, while this photon is subluminal.
+- **Setting.**
+  - R16-2's one-loop runner and R16-10's split evaluator (Theorem L), at the R18-9/13 root edges.
+  - SM charges, counted per class and per species.
+  - m → 0⁺.
+- **Prior art (count once):** R16-1, R16-2 and R16-10 with their verdicts (Lemma Q: the photon shift is independent of the internal photon symbol; Theorem L); R18-9 and R18-13 with their verdicts; R19-11 (running).
+- **Removed hypothesis:** the charge and gravity blocks on separate edges.
+- **Probes.**
+  - (a) F_s(0⁺) for D1(0.909, 0.556) and G_w(2.526) with the root photon.
+  - (b) The charge tunings needed, and whether any gravity knob can double as a charge knob.
+  - (c) The total bill on one law, with every row listed.
+  - (d) Prices.
+- **FIXED readings.**
+  - **ONE-LAW-BILL:** an explicit total count on the root's edges, with every row's payment named. Checked.
+  - **CONFLICT:** a demonstration that the charge rows cannot be paid on the root's edges without breaking a gravity row, in the stated knob class.
+  - **OPEN:** otherwise.
+- **Expectation.** ONE-LAW-BILL, with 3 charge counterterms per class. The total is about 6 + 1 + 3 + tadpole + CC, so roughly 11 + CC, or fewer if the tadpole is paid by (d-i).

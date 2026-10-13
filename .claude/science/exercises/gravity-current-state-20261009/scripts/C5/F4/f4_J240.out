@@ -1,0 +1,13 @@
+[J240] root (0.909103708, 0.555604226), grid n=8 hmax=0.25 mph=10 fracbreaks=None (240 nodes), d=0.0030, nrk=2, Ms=(1,)
+  pass t=0.0000 done (8s)
+  pass t=0.0030 done (99s)
+  pass t=0.0060 done (101s)
+  P (Psym, F1)           dm +0.041858389682  Hess_t (d) +2.42392940e-02 (2d) +2.42363604e-02  Rich +2.42402719e-02  [x4 +9.696109e-02]
+  J (Psym-J)             dm +0.041858389682  Hess_t (d) +2.43280856e-02 (2d) +2.43251271e-02  Rich +2.43290717e-02  [x4 +9.731629e-02]
+  differences from P (Rich):
+    J (Psym-J)              H - H_P = +8.879985e-05   rel +3.6633e-03
+    parts P    Hess tadpole +1.802158e-02  exchange(fam) +2.712174e-03
+    parts J    Hess tadpole +1.811038e-02  exchange(fam) +2.712174e-03
+    common exchange base part Hess +3.506513e-03
+  mixture P<->J (seagull only, exactly linear): H(lam) = +2.424027e-02 +8.879985e-05 lam ; zero at lam = -2.7298e+02
+[J240] total 207 s

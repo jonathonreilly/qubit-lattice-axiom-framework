@@ -1,0 +1,26 @@
+grid nodes 68
+t=0.000  F1 dm_sf +0.041858497271307 | F4 M=1 +0.041858497271307 diff 6.9e-18 | M=2 +0.041858497271307 | M=3 +0.041858497271307 | J +0.041858497271307  (1s)
+   Tad {"('M', 1)": '+0.018085370026', "('M', 2)": '+0.018085370026', "('M', 3)": '+0.018085370026', 'J': '+0.018085370026'}
+   E   {'(1, 1)': '+0.012693852093', '(1, 2)': '+0.012693852093', '(1, 3)': '+0.012693852093', '(2, 2)': '+0.012693852093', '(2, 3)': '+0.012693852093', '(3, 3)': '+0.012693852093'}
+t=0.050  F1 dm_sf +0.041888352672612 | F4 M=1 +0.041888352672612 diff 0.0e+00 | M=2 +0.041889238487027 | M=3 +0.041889218299698 | J +0.041888469500470  (12s)
+   Tad {"('M', 1)": '+0.018107729849', "('M', 2)": '+0.018108710925', "('M', 3)": '+0.018108551206', 'J': '+0.018107846677'}
+   E   {'(1, 1)': '+0.012697090997', '(1, 2)': '+0.012697044338', '(1, 3)': '+0.012697114805', '(2, 2)': '+0.012696995736', '(2, 3)': '+0.012697063313', '(3, 3)': '+0.012697135267'}
+Ward residual max |sum_j d_j V_j - (D_t(q) - D_t(0))| at t = 0.3, all M in (1,2,3,4), 24^3 pts: 6.66e-16
+       15.14 real        12.93 user         2.05 sys
+           475840512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               46736  page reclaims
+                  36  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 709  voluntary context switches
+                7759  involuntary context switches
+        269840304055  instructions retired
+         56945058161  cycles elapsed
+           131302288  peak memory footprint

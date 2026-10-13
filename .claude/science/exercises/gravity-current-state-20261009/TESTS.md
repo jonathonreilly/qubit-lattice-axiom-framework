@@ -9304,3 +9304,17 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - This agrees with the F1 referee's independent finding.
 
   Referee running.
+
+- **F4 (gauge-path families): worker reading PATH-SHIFTS.**
+  - All families coincide at t = 0, and the shift starts at O(t²).
+  - A change of family is a field-strength (Pauli/F²) coupling, so it is gauge-parameter independent.
+  - **The Hessian, relative to Psym +2.4240e-2:**
+    - J (local; equal to the multilinear straight line on unit-cube hops): +0.37%;
+    - S_M staircases: +2.9% to +6.9%;
+    - straight segment SL (non-local at O(t)): +6.9%.
+  - 98–111% of each shift is in the seagull, which F1's ordering probe could not see.
+  - **Zero is unreachable by convex families.** Signed mixtures reach it at λ* ≈ −273 (P↔J) or ≈ −13.5 (P↔SL). Price P-F4a, not viable at the 6e-9 precision required.
+  - The sign is the same in all families. Earth exceedance runs from 1.6e8 to 1.7e8 (conditional, as F1).
+  - P-R19-34a covers every family.
+
+  Referee running.

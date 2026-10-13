@@ -1,0 +1,28 @@
+[c68fb] root (0.909103708, 0.555604226), grid n=4 hmax=0.50 mph=2 fracbreaks=True (88 nodes), d=0.0030, nrk=2, Ms=(1, 2, 3, 4, 6)
+  pass t=0.0000 done (3s)
+  pass t=0.0030 done (59s)
+  pass t=0.0060 done (60s)
+  P (Psym, F1)           dm +0.041858190331  Hess_t (d) +2.42700883e-02 (2d) +2.42671923e-02  Rich +2.42710537e-02  [x4 +9.708421e-02]
+  J (Psym-J)             dm +0.041858190331  Hess_t (d) +2.43613512e-02 (2d) +2.43584318e-02  Rich +2.43623243e-02  [x4 +9.744930e-02]
+  S2 (staircase M=2)     dm +0.041858190331  Hess_t (d) +2.49785237e-02 (2d) +2.49756286e-02  Rich +2.49794887e-02  [x4 +9.991795e-02]
+  S3 (staircase M=3)     dm +0.041858190331  Hess_t (d) +2.49614617e-02 (2d) +2.49585676e-02  Rich +2.49624264e-02  [x4 +9.984971e-02]
+  S4 (staircase M=4)     dm +0.041858190331  Hess_t (d) +2.54030348e-02 (2d) +2.54001617e-02  Rich +2.54039925e-02  [x4 +1.016160e-01]
+  S6 (staircase M=6)     dm +0.041858190331  Hess_t (d) +2.55154195e-02 (2d) +2.55125449e-02  Rich +2.55163777e-02  [x4 +1.020655e-01]
+  differences from P (Rich):
+    J (Psym-J)              H - H_P = +9.127063e-05   rel +3.7605e-03
+    S2 (staircase M=2)      H - H_P = +7.084351e-04   rel +2.9188e-02
+    S3 (staircase M=3)      H - H_P = +6.913727e-04   rel +2.8485e-02
+    S4 (staircase M=4)      H - H_P = +1.132939e-03   rel +4.6679e-02
+    S6 (staircase M=6)      H - H_P = +1.245324e-03   rel +5.1309e-02
+    parts P    Hess tadpole +1.803685e-02  exchange(fam) +2.719920e-03
+    parts J    Hess tadpole +1.812812e-02  exchange(fam) +2.719920e-03
+    parts S2   Hess tadpole +1.882125e-02  exchange(fam) +2.643949e-03
+    parts S3   Hess tadpole +1.869141e-02  exchange(fam) +2.756730e-03
+    parts S4   Hess tadpole +1.914948e-02  exchange(fam) +2.740227e-03
+    parts S6   Hess tadpole +1.925614e-02  exchange(fam) +2.745954e-03
+    common exchange base part Hess +3.514288e-03
+  SL (M->inf, c/M^2 fit on M=4,6): Hess +2.56062859e-02  H - H_P +1.335232e-03 rel +5.5013e-02  (c = -3.237e-03)
+     (fit on M=3,4: +2.59717204e-02)
+  mixture P<->S6: H(lam) = +2.427105e-02 +1.252486e-03 lam -7.162252e-06 lam^2 ; zeros at lam = [192.47905198 -17.60579225]
+  mixture P<->J (seagull only, exactly linear): H(lam) = +2.427105e-02 +9.127063e-05 lam ; zero at lam = -2.6592e+02
+[c68fb] total 123 s

@@ -1,0 +1,74 @@
+[5] mode averages of x = w/(ck) (subtraction: none; normalised to the W1 total, i.e. to R15-2's u1)
+    strict, c tau = l                          W1  u_min=1e-03 delta=0e+00: <1> = 1.0000  <x^2> = 1.6172e+00  <x^4> = 8.6892e+03
+    strict, c tau = l                          W1  u_min=1e-04 delta=0e+00: <1> = 1.0000  <x^2> = 1.6189e+00  <x^4> = 8.7031e+04
+    strict, c tau = l                          W2  u_min=1e-04 delta=1e-02: <1> = 2.8830  <x^2> = 2.3901e+00  <x^4> = 3.5898e+00
+    strict, c tau = l                          W2  u_min=1e-04 delta=1e-04: <1> = 4.7083  <x^2> = 4.2154e+00  <x^4> = 5.4151e+00
+    tau_c, c tau/l = 10                        W1  u_min=1e-03 delta=0e+00: <1> = 1.0000  <x^2> = 1.6172e-02  <x^4> = 8.6892e-01
+    tau_c, c tau/l = 10                        W1  u_min=1e-04 delta=0e+00: <1> = 1.0000  <x^2> = 1.6189e-02  <x^4> = 8.7031e+00
+    tau_c, c tau/l = 10                        W2  u_min=1e-04 delta=1e-02: <1> = 1.0269  <x^2> = 2.8751e-02  <x^4> = 1.8349e-02
+    tau_c, c tau/l = 10                        W2  u_min=1e-04 delta=1e-04: <1> = 1.0394  <x^2> = 4.1281e-02  <x^4> = 3.0879e-02
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W1  u_min=1e-03 delta=0e+00: <1> = 1.0000  <x^2> = 1.8211e-05  <x^4> = 1.1018e-06
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W1  u_min=1e-04 delta=0e+00: <1> = 1.0000  <x^2> = 1.8230e-05  <x^4> = 1.1036e-05
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2  u_min=1e-04 delta=1e-02: <1> = 1.0000  <x^2> = 1.8797e-05  <x^4> = 7.9109e-07
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2  u_min=1e-04 delta=1e-04: <1> = 1.0000  <x^2> = 1.9321e-05  <x^4> = 1.3148e-06
+    (W1: <x^4> grows as 1/u_min -- the far-off-cone IR region. W2 = W1/max(|1-x^2|, delta): the exact rho-rho floor is log-divergent at the cone,
+     so W2 needs the cone regulator delta (R15-2:126 'bounded choice near the cone'); its <1> grows as ln(1/delta).)
+
+[6] active density at the gauge-independent insertion a = 2 (units u1; T_perp ratios q = -r <= 0 anticorrelated, R15-2:125)
+    strict, c tau = l                          W1 d=0e+00 r=0.0: (U) rho_act = -4.0000 u1 ; (P) rho_act = -2.6189 u1 - uV
+    strict, c tau = l                          W1 d=0e+00 r=0.5: (U) rho_act = -4.0000 u1 ; (P) rho_act = -3.6189 u1 - uV
+    strict, c tau = l                          W1 d=0e+00 r=1.0: (U) rho_act = -4.0000 u1 ; (P) rho_act = -4.6189 u1 - uV
+    strict, c tau = l                          W2 d=1e-02 r=0.0: (U) rho_act = -11.5320 u1 ; (P) rho_act = -5.2731 u1 - uV
+    strict, c tau = l                          W2 d=1e-02 r=0.5: (U) rho_act = -11.5320 u1 ; (P) rho_act = -8.1561 u1 - uV
+    strict, c tau = l                          W2 d=1e-02 r=1.0: (U) rho_act = -11.5320 u1 ; (P) rho_act = -11.0391 u1 - uV
+    strict, c tau = l                          W2 d=1e-04 r=0.0: (U) rho_act = -18.8333 u1 ; (P) rho_act = -8.9237 u1 - uV
+    strict, c tau = l                          W2 d=1e-04 r=0.5: (U) rho_act = -18.8333 u1 ; (P) rho_act = -13.6320 u1 - uV
+    strict, c tau = l                          W2 d=1e-04 r=1.0: (U) rho_act = -18.8333 u1 ; (P) rho_act = -18.3403 u1 - uV
+    tau_c, c tau/l = 10                        W1 d=0e+00 r=0.0: (U) rho_act = -4.0000 u1 ; (P) rho_act = -1.0162 u1 - uV
+    tau_c, c tau/l = 10                        W1 d=0e+00 r=0.5: (U) rho_act = -4.0000 u1 ; (P) rho_act = -2.0162 u1 - uV
+    tau_c, c tau/l = 10                        W1 d=0e+00 r=1.0: (U) rho_act = -4.0000 u1 ; (P) rho_act = -3.0162 u1 - uV
+    tau_c, c tau/l = 10                        W2 d=1e-02 r=0.0: (U) rho_act = -4.1075 u1 ; (P) rho_act = -1.0556 u1 - uV
+    tau_c, c tau/l = 10                        W2 d=1e-02 r=0.5: (U) rho_act = -4.1075 u1 ; (P) rho_act = -2.0825 u1 - uV
+    tau_c, c tau/l = 10                        W2 d=1e-02 r=1.0: (U) rho_act = -4.1075 u1 ; (P) rho_act = -3.1094 u1 - uV
+    tau_c, c tau/l = 10                        W2 d=1e-04 r=0.0: (U) rho_act = -4.1576 u1 ; (P) rho_act = -1.0807 u1 - uV
+    tau_c, c tau/l = 10                        W2 d=1e-04 r=0.5: (U) rho_act = -4.1576 u1 ; (P) rho_act = -2.1201 u1 - uV
+    tau_c, c tau/l = 10                        W2 d=1e-04 r=1.0: (U) rho_act = -4.1576 u1 ; (P) rho_act = -3.1595 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W1 d=0e+00 r=0.0: (U) rho_act = -4.0000 u1 ; (P) rho_act = -1.0000 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W1 d=0e+00 r=0.5: (U) rho_act = -4.0000 u1 ; (P) rho_act = -2.0000 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W1 d=0e+00 r=1.0: (U) rho_act = -4.0000 u1 ; (P) rho_act = -3.0000 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-02 r=0.0: (U) rho_act = -4.0001 u1 ; (P) rho_act = -1.0000 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-02 r=0.5: (U) rho_act = -4.0001 u1 ; (P) rho_act = -2.0001 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-02 r=1.0: (U) rho_act = -4.0001 u1 ; (P) rho_act = -3.0001 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-04 r=0.0: (U) rho_act = -4.0001 u1 ; (P) rho_act = -1.0000 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-04 r=0.5: (U) rho_act = -4.0001 u1 ; (P) rho_act = -2.0001 u1 - uV
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-04 r=1.0: (U) rho_act = -4.0001 u1 ; (P) rho_act = -3.0001 u1 - uV
+
+    zeros away from a = 2 (rho channel; u_min = 1e-4; the a != 2 x^4 terms are IR-sensitive under W1):
+    strict, c tau = l                          W1 d=0e+00: (U) a* = 2.0000 (static 4) ; residual at a = 4: +3.481e+05 u1 ; (P) a* = 2
+    strict, c tau = l                          W2 d=1e-02: (U) a* = 2.5124 (static 4) ; residual at a = 4: +3.348e+01 u1 ; (P) a* = 2.441
+    strict, c tau = l                          W2 d=1e-04: (U) a* = 2.5075 (static 4) ; residual at a = 4: +5.538e+01 u1 ; (P) a* = 2.463
+    tau_c, c tau/l = 10                        W1 d=0e+00: (U) a* = 2.2054 (static 4) ; residual at a = 4: +3.494e+01 u1 ; (P) a* = 2.058
+    tau_c, c tau/l = 10                        W2 d=1e-02: (U) a* = 3.8624 (static 4) ; residual at a = 4: +3.034e-01 u1 ; (P) a* = 13.21
+    tau_c, c tau/l = 10                        W2 d=1e-04: (U) a* = 3.8032 (static 4) ; residual at a = 4: +4.538e-01 u1 ; (P) a* = 9.488
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W1 d=0e+00: (U) a* = 3.9999 (static 4) ; residual at a = 4: +1.900e-04 u1 ; (P) a* = 1.709e+04
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-02: (U) a* = 3.9999 (static 4) ; residual at a = 4: +1.535e-04 u1 ; (P) a* = 2.553e+04
+    tau_c, c tau/l = 300 (l = 5e-6, ceiling)   W2 d=1e-04: (U) a* = 3.9999 (static 4) ; residual at a = 4: +1.598e-04 u1 ; (P) a* = 2.423e+04
+    static T_perp shift (U): a* = (4 - 2r)/(1 - r): r = 0 -> 4, 0.25 -> 4.667, 0.5 -> 6.000 (dust value 6)
+    static (P) with T_perp and V: rho_act/u1 = -1 - r(3a - 4) - uV/u1; zero only for a < 4/3 with r = (1 + uV/u1)/(4 - 3a)
+
+[7] budget: |u1| = hbar I_F/(32 pi^1.5 l^3 tau), I_F = 21/32 (vR15-2:17); window l in [4e-10, 5e-6] m (vR6-4 (i)); tau strict l/c or tau_c <= 1.49e-3 m / c
+    rho_L = 5.9404e-27 kg/m^3
+    l = 4.00e-10 m: u1/rho_L strict = 8.519e+18 ; at tau_c ceiling = 2.287e+12 ; a=2 (U) |rho_act|/rho_L >= 9.148e+12 ; a=2 (P) >= 2.287e+12
+    l = 1.00e-08 m: u1/rho_L strict = 2.181e+13 ; at tau_c ceiling = 1.464e+08 ; a=2 (U) |rho_act|/rho_L >= 5.855e+08 ; a=2 (P) >= 1.464e+08
+    l = 5.00e-08 m: u1/rho_L strict = 3.489e+10 ; at tau_c ceiling = 1.171e+06 ; a=2 (U) |rho_act|/rho_L >= 4.684e+06 ; a=2 (P) >= 1.171e+06
+    l = 1.00e-06 m: u1/rho_L strict = 2.181e+05 ; at tau_c ceiling = 1.464e+02 ; a=2 (U) |rho_act|/rho_L >= 5.855e+02 ; a=2 (P) >= 1.464e+02
+    l = 3.65e-06 m: u1/rho_L strict = 1.229e+03 ; at tau_c ceiling = 3.010e+00 ; a=2 (U) |rho_act|/rho_L >= 1.204e+01 ; a=2 (P) >= 3.010e+00
+    l = 5.00e-06 m: u1/rho_L strict = 3.489e+02 ; at tau_c ceiling = 1.171e+00 ; a=2 (U) |rho_act|/rho_L >= 4.684e+00 ; a=2 (P) >= 1.171e+00
+    minimum over the window (l = 5e-6 m, c tau_c = 1.49e-3 m): u1/rho_L = 1.1710
+    (P)+FRW attractor (suggested): rho_noise -> -tau_kk/3 = (1 + <x^2> + 2r + uV/u1) u1/3 with w = -1;
+      rho-only, tau_c ceiling: equals rho_L at l = 3.654e-06 m ; strict variant would need l = 1.64e-05 m (outside the window)
+      gamma-trade (P-r15c) needed for |rho_act| < rho_L at a = 2 (U): gamma <= rho_L/(4 u1) = 1.1e-13 (l = 4e-10, ceiling) ... 0.21 (l = 5e-6, ceiling)
+
+[7b] local test: Mercury |rho_act| < 9.286e-15 kg/m^3 (vR16-14:11) at a = 2; (U) |rho_act| = 4 u1, (P) >= (1 + <x^2>) u1 (W1: <x^2> = 1.62 strict, ~0 at the tau_c ceiling)
+    (U): Mercury fails for l < 2.73e-08 m (strict) and l < 7.21e-10 m (tau_c ceiling)
+    (P): Mercury fails for l < 2.46e-08 m (strict) and l < 4.54e-10 m (tau_c ceiling)

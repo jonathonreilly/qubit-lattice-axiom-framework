@@ -1,0 +1,19 @@
+[8] family C: Delta(tau_00+tau_kk) [P - H] = -4*pi*omega**2*rho**2*(k**2 + omega**2)*(w_ - 1)/k**6
+    family C: Delta tau_kk          [P - H] = -4*pi*omega**4*rho**2*(w_ - 1)/k**6
+      w = 0: Delta act = 4*pi*omega**2*rho**2*(k**2 + omega**2)/k**6 ; Delta kk = 4*pi*omega**4*rho**2/k**6
+      w = 1: Delta act = 0 ; Delta kk = 0
+      w = 2: Delta act = -4*pi*omega**2*rho**2*(k**2 + omega**2)/k**6 ; Delta kk = -4*pi*omega**4*rho**2/k**6
+    family C static rho-only Poisson law: (tau_00 + tau_kk)/u1 = -4*w_
+[8] family M: Delta(tau_00+tau_kk) [P - H] = 4*pi*omega**2*(4*j**2*k**4 - k**4*rho**2*w_ - 3*k**4*rho**2 + 4*k**2*omega**2*rho**2 + omega**4*rho**2*w_ - omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+    family M: Delta tau_kk          [P - H] = 4*pi*omega**2*(2*j**2*k**4 - 2*k**4*rho**2 - k**2*omega**2*rho**2*w_ + 3*k**2*omega**2*rho**2 + omega**4*rho**2*w_ - omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+      w = 0: Delta act = 4*pi*omega**2*(4*j**2*k**4 - 3*k**4*rho**2 + 4*k**2*omega**2*rho**2 - omega**4*rho**2)/(k**6*(k - omega)*(k + omega)) ; Delta kk = 4*pi*omega**2*(2*j**2*k**4 - 2*k**4*rho**2 + 3*k**2*omega**2*rho**2 - omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+      w = 1: Delta act = 16*pi*omega**2*(j**2*k**2 - k**2*rho**2 + omega**2*rho**2)/(k**4*(k - omega)*(k + omega)) ; Delta kk = 8*pi*omega**2*(j**2*k**2 - k**2*rho**2 + omega**2*rho**2)/(k**4*(k - omega)*(k + omega))
+      w = 2: Delta act = 4*pi*omega**2*(4*j**2*k**4 - 5*k**4*rho**2 + 4*k**2*omega**2*rho**2 + omega**4*rho**2)/(k**6*(k - omega)*(k + omega)) ; Delta kk = 4*pi*omega**2*(2*j**2*k**4 - 2*k**4*rho**2 + k**2*omega**2*rho**2 + omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+    family M static rho-only Poisson law: (tau_00 + tau_kk)/u1 = 4 - 4*w_
+[8] family L: Delta(tau_00+tau_kk) [P - H] = 4*pi*omega**2*(8*j**2*k**4 - k**4*rho**2*w_ - 7*k**4*rho**2 + 8*k**2*omega**2*rho**2 + omega**4*rho**2*w_ - omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+    family L: Delta tau_kk          [P - H] = 4*pi*omega**2*(4*j**2*k**4 - 4*k**4*rho**2 - k**2*omega**2*rho**2*w_ + 5*k**2*omega**2*rho**2 + omega**4*rho**2*w_ - omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+      w = 0: Delta act = 4*pi*omega**2*(8*j**2*k**4 - 7*k**4*rho**2 + 8*k**2*omega**2*rho**2 - omega**4*rho**2)/(k**6*(k - omega)*(k + omega)) ; Delta kk = 4*pi*omega**2*(4*j**2*k**4 - 4*k**4*rho**2 + 5*k**2*omega**2*rho**2 - omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+      w = 1: Delta act = 32*pi*omega**2*(j**2*k**2 - k**2*rho**2 + omega**2*rho**2)/(k**4*(k - omega)*(k + omega)) ; Delta kk = 16*pi*omega**2*(j**2*k**2 - k**2*rho**2 + omega**2*rho**2)/(k**4*(k - omega)*(k + omega))
+      w = 2: Delta act = 4*pi*omega**2*(8*j**2*k**4 - 9*k**4*rho**2 + 8*k**2*omega**2*rho**2 + omega**4*rho**2)/(k**6*(k - omega)*(k + omega)) ; Delta kk = 4*pi*omega**2*(4*j**2*k**4 - 4*k**4*rho**2 + 3*k**2*omega**2*rho**2 + omega**4*rho**2)/(k**6*(k - omega)*(k + omega))
+    family L static rho-only Poisson law: (tau_00 + tau_kk)/u1 = 8 - 4*w_
+runtime 19.0 s

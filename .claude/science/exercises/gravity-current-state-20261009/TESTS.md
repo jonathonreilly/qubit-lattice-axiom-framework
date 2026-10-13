@@ -7017,3 +7017,27 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **BOUNDED:** a stated maximum T_RH, or initial population, above which a stated observable is violated. Checked.
   - **OPEN:** otherwise.
 - **Expectation.** SELF-CLEANING. Edge quanta can scatter into box states by Peierls vertices (umklapp), so they cannot be stable. The main risk is a conserved edge number in some sector.
+- **R18-7 referee: CONFIRMED WITH CORRECTIONS. CONSTRUCTED, only in the stated weak-field harmonic static/quasi-static scope** (recorded 03:42Z).
+  - **What holds:** the retarded Π gives a causal, conserved, order-by-order records-to-metric law through O(G²). h₁ is E1. The record-conditioned instrument is CP. Static spherical β = γ = 1 after mass renormalization.
+  - **R16-14's unprojected completion is genuinely non-conserving.** The worker gave the wrong exact commutator and coefficient for it.
+  - **Limits:**
+    - the a = 4 cancellation holds only for the homogeneous static scalar channel;
+    - the canonical Π is non-local;
+    - the old Poisson-gauge kernel is not preserved;
+    - no gauge-invariant, time-dependent O(G²) noise result exists yet.
+- **R18-11 (E1+N, gauge-invariant noise): worker reading OPEN.** A NOISE-OVERSHOOT candidate is offered for 𝒜₂ (a = 2).
+  - **Theorem G:** the readout gauge is physical in set A. Only a = 2 (the record √−g T^{μν}) gives a gauge-independent mean source.
+  - **Lemma P:** the noise's mean energy density is pinned at zero for E1's zero start. This gives readings (P) and (U).
+  - **Active density at a = 2:**
+    - −4u₁ under (U);
+    - ≤ −(1 + ⟨x²⟩)u₁ under (P).
+    - It is repulsive, with |ρ_act| ≥ 1.17–4.68 ρ_Λ across R15-2's window.
+    - Mercury excludes ℓ ≲ 2.5e-8 m (strict).
+  - **Zeros need tunings:** a ≠ 2 (gauge-dependent), a tuned T_⊥ fraction, or a spectrum-tuned a*.
+  - **Consequences:**
+    - R18-7's a = 4 zero does not survive a gauge-proper treatment;
+    - R15-2's overshoot returns as a set A wall;
+    - an FRW corner window at ℓ ≳ 4.6e-6 m is suggested only.
+  - **Prices:** P-r1811a (a = 2), P-r1811b (noise energy history); P-r15c is now necessary.
+
+  Referee running.

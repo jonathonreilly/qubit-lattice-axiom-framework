@@ -1,0 +1,10 @@
+[9] (i) i p_b K^{ab} + D^a = [0, 0, 0, 0]
+    (ii) k = 0: K^{00} = -S00 ; K^{0i} = [-S01, -S02, -S03] ; K^{ij} = [0, 0, 0, 0, 0, 0]
+        => on the homogeneous mode Pi removes exactly the time-dependent part of the mean energy density S^{00}
+           (retarded 1/p^2: K^{00}(t) = -[S^{00}(t) - S^{00}(t0)]); it adds no pressure.
+    (iii) w = 0, k along z, isotropic stress S^{ij} = p delta: K^{ij} diagonal = [0, 0, -p] ; K^{00} = 0
+        => the static long-wave limit removes the longitudinal stress (direction-dependent); the exact homogeneous
+           mean of a noise switched on at t0 is the k = 0, w != 0 case (ii).
+[9b] k = 0 (homogeneous h(t)): G^(1)_00 = 0 ; G^(1)_kk = omega**2*(A11*c + A22*c + A33*c + B11*s + B22*s + B33*s)
+     => a homogeneous mean energy density has no linear response on Minkowski (must be zero, or the background is FRW);
+        a homogeneous pressure drives h_kk'' (secular growth ~ 8 pi G p t^2).

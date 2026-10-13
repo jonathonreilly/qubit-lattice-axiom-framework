@@ -1,0 +1,58 @@
+[1] Poisson gauge: Phi, Psi instantaneous (S), S_x (V), h_+ (TT); solve G^(1) = 8 pi J_low per mode
+    Phc = -4*pi*(T_perp*k**2 + k**2*rho - 2*omega**2*rho)/k**4
+    Psc = -4*pi*rho/k**2
+    Sxc = -16*pi*j/k**2
+    hpc = 16*pi*t_p/((k - omega)*(k + omega))
+    sin amplitudes: [0, 0, 0, 0] (all channels in phase)
+    residual of all 10 linear equations: 14 of 14 vanish
+    harmonic law check: G^(1)[h_H] - 8 pi J vanishes in 16 of 16 components
+
+[2] Poisson law: per-mode mean source (all channels in phase; quadratic form in rho, T_perp, j, t_p)
+    tau_00 = -pi*(T_perp*a*k**6*rho - 2*T_perp*a*k**4*omega**2*rho + T_perp*a*k**2*omega**4*rho - 2*a*k**6*rho**2 + 2*a*k**4*omega**2*rho**2 + 2*a*k**2*omega**4*rho**2 - 2*a*omega**6*rho**2 - 4*j**2*k**6 + 8*j**2*k**4*omega**2 - 4*j**2*k**2*omega**4 + 7*k**6*rho**2 - 4*k**6*t_p**2 - 11*k**4*omega**2*rho**2 - 4*k**4*omega**2*t_p**2 + k**2*omega**4*rho**2 + 3*omega**6*rho**2)/(k**4*(k - omega)**2*(k + omega)**2)
+    tau_kk = -pi*(T_perp**2*a*k**8 - 2*T_perp**2*a*k**6*omega**2 + T_perp**2*a*k**4*omega**4 - 2*T_perp**2*k**8 + 4*T_perp**2*k**6*omega**2 - 2*T_perp**2*k**4*omega**4 - 2*T_perp*a*k**8*rho + 3*T_perp*a*k**6*omega**2*rho - T_perp*a*k**2*omega**6*rho + 2*T_perp*k**8*rho - 2*T_perp*k**6*omega**2*rho - 2*T_perp*k**4*omega**4*rho + 2*T_perp*k**2*omega**6*rho - 2*a*k**6*omega**2*rho**2 + 2*a*k**4*omega**4*rho**2 + 2*a*k**2*omega**6*rho**2 - 2*a*omega**8*rho**2 + 4*j**2*k**8 - 8*j**2*k**6*omega**2 + 4*j**2*k**4*omega**4 + k**8*rho**2 - 12*k**8*t_p**2 + 3*k**6*omega**2*rho**2 + 4*k**6*omega**2*t_p**2 - 5*k**4*omega**4*rho**2 - 3*k**2*omega**6*rho**2 + 4*omega**8*rho**2)/(k**6*(k - omega)**2*(k + omega)**2)
+    tau_0i (momentum; nonzero means a mean energy flux along k) = [pi*j*(T_perp*a*k**4 - T_perp*a*k**2*omega**2 - 2*T_perp*k**4 + 2*T_perp*k**2*omega**2 - 2*a*k**4*rho + 2*a*omega**4*rho + 8*k**4*rho - 8*k**4*t_p - 4*k**2*omega**2*rho - 4*omega**4*rho)/(k**4*(k**2 - omega**2)), 0, pi*omega*(T_perp*a*k**6*rho - 2*T_perp*a*k**4*omega**2*rho + T_perp*a*k**2*omega**4*rho - 2*T_perp*k**6*rho + 4*T_perp*k**4*omega**2*rho - 2*T_perp*k**2*omega**4*rho - 2*a*k**6*rho**2 + 2*a*k**4*omega**2*rho**2 + 2*a*k**2*omega**4*rho**2 - 2*a*omega**6*rho**2 + 6*k**6*rho**2 - 8*k**6*t_p**2 - 8*k**4*omega**2*rho**2 - 2*k**2*omega**4*rho**2 + 4*omega**6*rho**2)/(k**5*(k**4 - 2*k**2*omega**2 + omega**4))]
+
+[2] harmonic law: per-mode mean source (all channels in phase; quadratic form in rho, T_perp, j, t_p)
+    tau_00 = -pi*(2*T_perp*a*k**6*rho - 2*T_perp*a*k**4*omega**2*rho - 2*T_perp*k**6*rho + 2*T_perp*k**2*omega**4*rho - 2*a*k**6*rho**2 + 4*a*k**4*omega**2*rho**2 - 2*a*k**2*omega**4*rho**2 - 4*j**2*k**6 + 8*j**2*k**4*omega**2 - 4*j**2*k**2*omega**4 + 7*k**6*rho**2 - 4*k**6*t_p**2 - 15*k**4*omega**2*rho**2 - 4*k**4*omega**2*t_p**2 + 9*k**2*omega**4*rho**2 - omega**6*rho**2)/(k**4*(k - omega)**2*(k + omega)**2)
+    tau_kk = -pi*(2*T_perp**2*a*k**6 - 2*T_perp**2*a*k**4*omega**2 - 4*T_perp**2*k**6 + 4*T_perp**2*k**4*omega**2 - 2*T_perp*a*k**6*rho + 6*T_perp*a*k**4*omega**2*rho - 4*T_perp*a*k**2*omega**4*rho + 2*T_perp*k**6*rho - 8*T_perp*k**4*omega**2*rho + 6*T_perp*k**2*omega**4*rho - 2*a*k**4*omega**2*rho**2 + 4*a*k**2*omega**4*rho**2 - 2*a*omega**6*rho**2 + 4*j**2*k**6 - 8*j**2*k**4*omega**2 + 4*j**2*k**2*omega**4 + k**6*rho**2 - 12*k**6*t_p**2 + 3*k**4*omega**2*rho**2 + 4*k**4*omega**2*t_p**2 - 9*k**2*omega**4*rho**2 + 5*omega**6*rho**2)/(k**4*(k - omega)**2*(k + omega)**2)
+    tau_0i (momentum; nonzero means a mean energy flux along k) = [2*pi*j*(T_perp*a*k**2 - 2*T_perp*k**2 - a*k**2*rho + a*omega**2*rho + 4*k**2*rho - 4*k**2*t_p - 4*omega**2*rho)/(k**2*(k**2 - omega**2)), 0, 2*pi*omega*(T_perp*a*k**4*rho - T_perp*a*k**2*omega**2*rho - 2*T_perp*k**4*rho + 2*T_perp*k**2*omega**2*rho - a*k**4*rho**2 + 2*a*k**2*omega**2*rho**2 - a*omega**4*rho**2 + 3*k**4*rho**2 - 4*k**4*t_p**2 - 6*k**2*omega**2*rho**2 + 3*omega**4*rho**2)/(k**3*(k**4 - 2*k**2*omega**2 + omega**4))]
+
+[3] static limit w -> 0, rho channel only, in units of the per-mode u1 = pi rho^2/k^2
+    Poisson law : tau_00/u1 = 2*a - 7 ; tau_kk/u1 = -1 ; (tau_00 + tau_kk)/u1 = 2*a - 8   [R18-7: 2a-7, -1, 2a-8]
+    harmonic law: tau_00/u1 = 2*a - 7 ; tau_kk/u1 = -1 ; (tau_00 + tau_kk)/u1 = 2*a - 8   [R18-7: 2a-7, -1, 2a-8]
+
+    rho channel only, general x = w/k (time-dependent), units u1:
+    Poisson law : tau_00/u1 = (2*a*k**2 + 2*a*omega**2 - 7*k**2 - 3*omega**2)/k**2
+    Poisson law : tau_kk/u1 = (k**2 + omega**2)*(2*a*omega**2 - k**2 - 4*omega**2)/k**4
+    Poisson law : d(tau_kk)/da /u1 = 2*omega**2*(k**2 + omega**2)/k**4 ; d(tau_00)/da /u1 = 2*(k**2 + omega**2)/k**2
+    harmonic law: tau_00/u1 = (2*a*k**2 - 7*k**2 + omega**2)/k**2
+    harmonic law: tau_kk/u1 = (2*a*omega**2 - k**2 - 5*omega**2)/k**2
+    harmonic law: d(tau_kk)/da /u1 = 2*omega**2/k**2 ; d(tau_00)/da /u1 = 2
+
+    law difference (Poisson - harmonic), rho channel, units u1:
+    Delta tau_00/u1 = 2*omega**2*(a - 2)/k**2
+    Delta tau_kk/u1 = 2*omega**4*(a - 2)/k**4
+
+[4] Poisson law, coefficients of the quadratic form (units: 1/k^2), as functions of x = w/k and a
+    tau_00 [rho**2] = pi*(2*a*x**2 + 2*a - 3*x**2 - 7)
+    tau_00 [T_perp*rho] = -pi*a
+    tau_00 [T_perp**2] = 0
+    tau_00 [j**2] = 4*pi
+    tau_00 [t_p**2] = 4*pi*(x**2 + 1)/((x - 1)**2*(x + 1)**2)
+    tau_00 [j*rho] = 0
+    tau_00 [T_perp*j] = 0
+    tau_00 [rho*t_p] = 0
+    tau_00 [T_perp*t_p] = 0
+    tau_00 [j*t_p] = 0
+    tau_kk [rho**2] = pi*(x**2 + 1)*(2*a*x**2 - 4*x**2 - 1)
+    tau_kk [T_perp*rho] = pi*(a*x**2 + 2*a - 2*x**2 - 2)
+    tau_kk [T_perp**2] = -pi*(a - 2)
+    tau_kk [j**2] = -4*pi
+    tau_kk [t_p**2] = -4*pi*(x**2 - 3)/((x - 1)**2*(x + 1)**2)
+    tau_kk [j*rho] = 0
+    tau_kk [T_perp*j] = 0
+    tau_kk [rho*t_p] = 0
+    tau_kk [T_perp*t_p] = 0
+    tau_kk [j*t_p] = 0
+
+runtime 12.5 s

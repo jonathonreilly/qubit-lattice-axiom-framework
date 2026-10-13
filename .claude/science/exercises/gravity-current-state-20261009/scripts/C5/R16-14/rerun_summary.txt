@@ -1,0 +1,6 @@
+R12-7/r127: rerun byte-identical
+R13-6/r136: rerun byte-identical
+R14-2/r142: rerun byte-identical
+R15-2/r152: rerun byte-identical
+R16-4/r164: rerun byte-identical
+R11-5/r115: differs only in 7 stderr warning lines captured in the archived .out (IntegrationWarning text); stdout identical

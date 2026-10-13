@@ -1,0 +1,104 @@
+[0] constants: H0 = 2.1940e-18 s^-1, rho_crit = 8.6092e-27 kg/m^3, rho_L = 5.9404e-27 kg/m^3, l_P^2 = 2.612e-70 m^2
+    bounds: alpha1 1e-05, alpha2 2e-09 (solar spin 4e-07), gamma-1 2.3e-05, beta-1 8e-05; E2 gamma <= 1.031e-19 s^-1; c tau_c <= 1.49e-03 m
+
+[1] E1 repaired gain F_t(x) = (1-4ix)(1-ix)^-4, x = omega tau (subtraction: 1)
+    series: 140*x**6 - 84*I*x**5 - 45*x**4 + 20*I*x**3 + 6*x**2 + 1
+    coefficients x^0..x^6: [1, 0, 6, 20*I, -45, -84*I, 140]
+
+[2] E1: exact mean potential of a moving Gaussian body (u along z; s = u tau/a = 0.05); subtraction: the GR (F = 1) potential
+    quadrature check, F = 1: Phi(3, 0.7) = -0.33243340 vs -erf/r = -0.33243340
+    r=2 th=0.3: dPhi = +1.0336e-03; prediction -6s^2 (u.grad)^2 Phi - 20 s^3 (u.grad)^3 Phi = +1.0837e-03 (even +9.284e-04, odd +1.553e-04); r*dPhi = +2.07e-03
+    r=4 th=0.0: dPhi = +4.1361e-04; prediction -6s^2 (u.grad)^2 Phi - 20 s^3 (u.grad)^3 Phi = +4.0869e-04 (even +4.642e-04, odd -5.552e-05); r*dPhi = +1.65e-03
+    r=4 th=1.2: dPhi = -1.1805e-04; prediction -6s^2 (u.grad)^2 Phi - 20 s^3 (u.grad)^3 Phi = -1.1758e-04 (even -1.424e-04, odd +2.483e-05); r*dPhi = -4.72e-04
+    r=8 th=0.0: dPhi = +5.5126e-05; prediction -6s^2 (u.grad)^2 Phi - 20 s^3 (u.grad)^3 Phi = +5.4932e-05 (even +5.859e-05, odd -3.662e-06); r*dPhi = +4.41e-04
+    r=8 th=0.9: dPhi = +5.7954e-06; prediction -6s^2 (u.grad)^2 Phi - 20 s^3 (u.grad)^3 Phi = +5.8795e-06 (even +4.664e-06, odd +1.216e-06); r*dPhi = +4.64e-05
+    on-axis falloff slope d ln|dPhi|/d ln r (r = 4..10): [-2.89  -2.932 -2.946]  -> 1/r^3 (quadrupole-type), no 1/r (PPN) term
+
+[3] E2-h friction: exact mean potential of a moving Gaussian body (u = 0.01 c, gamma = 1e-03 c/a); subtraction: the undamped (gamma = 0) potential
+    r=3 th=0.3: odd part = +4.24899e-06 vs frame dipole (G M gamma/2c^2) u cos th = +4.77668e-06 (ratio 0.8895); even part = +4.7427e-06
+    r=6 th=0.0: odd part = +4.86146e-06 vs frame dipole (G M gamma/2c^2) u cos th = +5.00000e-06 (ratio 0.9723); even part = +4.7426e-06
+    r=6 th=1.0: odd part = +2.62674e-06 vs frame dipole (G M gamma/2c^2) u cos th = +2.70151e-06 (ratio 0.9723); even part = +4.7426e-06
+    r=9 th=0.5: odd part = +4.33402e-06 vs frame dipole (G M gamma/2c^2) u cos th = +4.38791e-06 (ratio 0.9877); even part = +4.7425e-06
+    even part ~ constant gamma u/2 = 5.00e-06 (k -> 0 region k < gamma u/c, i.e. r > c^2/(gamma u)): a constant potential, no force;
+    in SI c^2/(gamma w) = 2.4e+30 m at gamma = 0.047 H0, beyond the Hubble radius
+
+[4] homogeneous ellipsoid a_i = 1 + eps_i (volume-preserving, eps = [ 3.3333e-05  3.3333e-05 -6.6667e-05]): A_i - 2/3 = [-2.6667e-05 -2.6667e-05  5.3335e-05]; prediction -(4/5) eps_i = [-2.6667e-05 -2.6667e-05  5.3333e-05]
+    d(A_i a_i^2)/d eps_i = 0.5333 (prediction 8/15 = 0.5333); alpha2_eff = K (c tau / R)^2 with K = 44.999 (analytic 45)
+
+[5] O(G) frame terms mapped to effective PPN parameters at each test's scale (subtraction: GR's boosted linear field)
+  gain term (both routes; repaired gain P-r13b), E1 strict tau = l/c (l = 5e-6 m):
+    solar spin (alpha2, r = R_sun)                   effective = 2.32e-27  bound 4e-07  margin 20.2 decades
+    pulsar spin (alpha2-hat, r = 12 km)              effective = 7.81e-18  bound 2e-09  margin 8.4 decades
+    PSR J1738+0333 orbit (alpha1-hat, a = 1.74e9 m)  effective = 4.25e-29  bound 1e-05  margin 23.4 decades
+    planetary/LLR (alpha1, r = 1 AU)                 effective = 8.32e-32  bound 1e-05  margin 26.1 decades
+  gain term (both routes; repaired gain P-r13b), E1/E2 tau_c ceiling (c tau_c = 1.49e-3 m):
+    solar spin (alpha2, r = R_sun)                   effective = 2.06e-22  bound 4e-07  margin 15.3 decades
+    pulsar spin (alpha2-hat, r = 12 km)              effective = 6.94e-13  bound 2e-09  margin 3.5 decades
+    PSR J1738+0333 orbit (alpha1-hat, a = 1.74e9 m)  effective = 3.77e-24  bound 1e-05  margin 18.4 decades
+    planetary/LLR (alpha1, r = 1 AU)                 effective = 7.39e-27  bound 1e-05  margin 21.1 decades
+  E2 friction (gamma = 0.047 H0 = 1.03e-19 s^-1):
+    solar spin (alpha2, r = R_sun)                   even part (gamma r/c)^2 = 5.73e-38  bound 4e-07  margin 30.8 decades
+    pulsar spin (alpha2-hat, r = 12 km)              even part (gamma r/c)^2 = 1.70e-47  bound 2e-09  margin 38.1 decades
+    PSR J1738+0333 orbit (alpha1-hat, a = 1.74e9 m)  frame dipole gamma r/(2 v) = 2.56e-16  bound 1e-05  margin 10.6 decades
+    planetary/LLR (alpha1, r = 1 AU)                 frame dipole gamma r/(2 v) = 2.59e-13  bound 1e-05  margin 7.6 decades
+  gamma_PPN (Cassini, |gamma-1| < 2.3e-05): E1 gain (6 (tau_c w/b)^2, b = R_sun) = 4.2e-29; E2 frame dipole/Shapiro log = 2.2e-21; spatial smearing exp(-b^2/2l^2) = 0
+
+[6] beta (static spherical, isotropic coords; subtraction: 2 pi). Orbit a = 1000 m, e = 0.2:
+    beta=1,gamma=1 (GR / completion N): shift = 1.966480e-02; (2+2g-b)/3 * 6 pi m/(a(1-e^2)) = 1.963495e-02
+    beta=0,gamma=1 (metric linear in records of T): shift = 2.631617e-02; ratio to GR = 1.33824 (PPN predicts 4/3 = 1.33333)
+    Mercury: GR 42.98"/cy; linear record metric gives 57.52"/cy, excess 14.54"/cy vs |anomaly| < 0.003"/cy (RECALLED): ruled out by 3.7 decades; beta-1 = -1 vs |beta-1| < 8e-5
+    1PN test-mass Lagrangian, O(eps^4) part: geodesic PPN -U**2*beta + U**2/2 + U*gamma*v**2 + U*v**2/2 + v**4/8 ; linear coupling 3*U*v**2/2 + v**4/8 -> effective [{beta: 1/2, gamma: 1}]
+    beta=1/2,gamma=1 (linear coupling): shift = 2.299131e-02; ratio to GR = 1.16916 (PPN 7/6 = 1.16667); Mercury 50.25"/cy, excess 7.27"/cy (3.4 decades over 0.003"/cy)
+
+[7] uniform medium (active density rho_act = rho + 3p) in Mercury's orbit; subtraction: 2 pi (Newtonian closed orbit)
+    check: dV = kappa r^2/2, kappa = 1e-8 GM/a^3: shift = -9.223427e-08 vs -3 pi kappa a^3 sqrt(1-e^2)/GM = -9.223428e-08
+    |dw| = 4 pi^2 rho_act a^3 sqrt(1-e^2)/M = 3.772e+03 rad/orbit per kg/m^3; bound 3.50e-11 rad/orbit -> |rho_act| < 9.29e-15 kg/m^3 = 1.56e+12 rho_L
+    in-window medium (budget: rho_n <= rho_L, radiation-like rho_act = 2 rho_n): |dw| = 4.48e-23 rad/orbit, margin 11.9 decades
+    constraint-channel |u1|/rho_L (recheck of R15-2 table) and Mercury test with |rho_act| <= 6|u1| (S+V, both signs, p = u/3):
+      l = 4e-10 m, strict        |u1| = 8.52e+18 rho_L; 6|u1| vs Mercury: FAIL (ratio 3.3e+07)
+      l = 4e-10 m, tau_c ceiling |u1| = 2.29e+12 rho_L; 6|u1| vs Mercury: FAIL (ratio 8.8e+00)
+      l = 1e-09 m, strict        |u1| = 2.18e+17 rho_L; 6|u1| vs Mercury: FAIL (ratio 8.4e+05)
+      l = 1e-09 m, tau_c ceiling |u1| = 1.46e+11 rho_L; 6|u1| vs Mercury: pass (ratio 5.6e-01)
+      l = 1e-08 m, strict        |u1| = 2.18e+13 rho_L; 6|u1| vs Mercury: FAIL (ratio 8.4e+01)
+      l = 1e-08 m, tau_c ceiling |u1| = 1.46e+08 rho_L; 6|u1| vs Mercury: pass (ratio 5.6e-04)
+      l = 3e-08 m, strict        |u1| = 2.69e+11 rho_L; 6|u1| vs Mercury: FAIL (ratio 1.0e+00)
+      l = 3e-08 m, tau_c ceiling |u1| = 5.42e+06 rho_L; 6|u1| vs Mercury: pass (ratio 2.1e-05)
+      l = 1e-07 m, strict        |u1| = 2.18e+09 rho_L; 6|u1| vs Mercury: pass (ratio 8.4e-03)
+      l = 1e-07 m, tau_c ceiling |u1| = 1.46e+05 rho_L; 6|u1| vs Mercury: pass (ratio 5.6e-07)
+      l = 1e-06 m, strict        |u1| = 2.18e+05 rho_L; 6|u1| vs Mercury: pass (ratio 8.4e-07)
+      l = 1e-06 m, tau_c ceiling |u1| = 1.46e+02 rho_L; 6|u1| vs Mercury: pass (ratio 5.6e-10)
+      l = 5e-06 m, strict        |u1| = 3.49e+02 rho_L; 6|u1| vs Mercury: pass (ratio 1.3e-09)
+      l = 5e-06 m, tau_c ceiling |u1| = 1.17e+00 rho_L; 6|u1| vs Mercury: pass (ratio 4.5e-12)
+    relic free TT data, one quantum per mode to k = 1/l (R16-4 witness; the item fixes h_TT = 0): Mercury test on rho_act = 2 hbar c/(4 pi^2 l^4)/c^2
+      l = 4e-10 m: Delta rho = 5.86e+19 rho_L; 2 Delta rho / Mercury bound = 7.5e+07 -> FAIL
+      l = 1e-08 m: Delta rho = 1.50e+14 rho_L; 2 Delta rho / Mercury bound = 1.9e+02 -> FAIL
+      l = 2e-08 m: Delta rho = 9.37e+12 rho_L; 2 Delta rho / Mercury bound = 1.2e+01 -> FAIL
+      l = 1e-07 m: Delta rho = 1.50e+10 rho_L; 2 Delta rho / Mercury bound = 1.9e-02 -> pass
+      l = 1e-06 m: Delta rho = 1.50e+06 rho_L; 2 Delta rho / Mercury bound = 1.9e-06 -> pass
+      l = 5e-06 m: Delta rho = 2.40e+03 rho_L; 2 Delta rho / Mercury bound = 3.1e-09 -> pass
+    medium alpha_eff ~ 3 rho_act/rhobar at J1738 orbit      : in-window (rho_act = 2 rho_L) 2.4e-28; worst case 6|u1|(4e-10 m, strict) 6.1e-09
+    medium alpha_eff ~ 3 rho_act/rhobar at 1 AU             : in-window (rho_act = 2 rho_L) 2.5e-22; worst case 6|u1|(4e-10 m, strict) 6.4e-03
+    medium alpha_eff ~ 3 rho_act/rhobar at Sun (solar spin) : in-window (rho_act = 2 rho_L) 2.5e-29; worst case 6|u1|(4e-10 m, strict) 6.5e-10
+    medium alpha_eff ~ 3 rho_act/rhobar at NS spin          : in-window (rho_act = 2 rho_L) 9.3e-44; worst case 6|u1|(4e-10 m, strict) 2.4e-24
+
+[8] O(<h^2>) terms with no derivative on the noise = constant-H problem: Phi(A x), A = sqrt(1 + H) (subtraction: Phi(x))
+    isotropic TT-like H: dPhi/<H_ij H_ij> = -0.0501 + 0.0003 P2(cos th)  (per 1/r)
+    anisotropic (kappa = 0.5): dPhi/<H_ij H_ij> = -0.0508 + -0.0310 P2(cos th); d c2/d kappa = -0.063
+    => alpha2_eff <= |d c2/d kappa| * kappa_max * <h^2> / (w/c)^2 with kappa_max = 10 (w/c)^2: 8.8e-50 (<h^2> <= 1.4e-49, R15-2 out [7]) vs 2e-09
+
+[9] stochastic (zero-mean) noise: timing and perihelion; subtraction: none (variances)
+    S(+V) channel Shapiro-type delay per pulse, L = 1 kpc, l = 4e-10 m, c tau = 4.0e-10 m: sigma_t = 5.9e-29 s (PTA residuals ~1e-7 s, RECALLED)
+    S(+V) channel Shapiro-type delay per pulse, L = 1 kpc, l = 4e-10 m, c tau = 1.5e-03 m: sigma_t = 1.6e-31 s (PTA residuals ~1e-7 s, RECALLED)
+    S(+V) channel Shapiro-type delay per pulse, L = 1 kpc, l = 5e-06 m, c tau = 5.0e-06 m: sigma_t = 5.3e-31 s (PTA residuals ~1e-7 s, RECALLED)
+    TT record noise at f = 1.0e-09 Hz: Omega_GW = 2.9e-84, h_c = 1.5e-51 (NANOGrav 15-yr h_c ~ 2.4e-15 at 1/yr, RECALLED)
+    TT record noise at f = 3.2e-08 Hz: Omega_GW = 3.4e-78, h_c = 4.9e-50 (NANOGrav 15-yr h_c ~ 2.4e-15 at 1/yr, RECALLED)
+    Earth    acceleration noise S_a = 6.8e-90 m^2 s^-3; 10-yr position walk 8.5e-33 m -> timing 2.8e-41 s
+    pulsar   acceleration noise S_a = 2.2e-87 m^2 s^-3; 10-yr position walk 1.5e-31 m -> timing 5.1e-40 s
+    Mercury  acceleration noise S_a = 2.2e-87 m^2 s^-3; 10-yr position walk 1.5e-31 m -> timing 5.1e-40 s
+    Mercury perihelion random walk over a century: sigma_v/v = 5.5e-44 rad (bound 1.5e-08 rad/cy)
+
+[10] E2-only: sink medium, friction on U^2, local sink deposition (subtraction: undamped GR)
+    FRW sink rho_s = (gamma/3H) rho_GW <= 0.016 rho_GW <= 0.016 rho_L in window -> Mercury margin 14.0 decades
+    solar self-drag Gamma = 8.8e-26 s^-1; power into the sink 2.4e+16 W; mass-equivalent over t_H 1.2e+17 kg (= 6.1e-14 M_sun), spread along a 1.7e+23 m path
+    friction on the O(G^2) U^2 term: relative gamma w r/(2c^2) at 1 AU = 3.2e-20 (beta shift), at R_sun 1.5e-22
+    E1 gain on the U^2 term: 6 (tau_c w / r)^2 at R_sun = 4.2e-29

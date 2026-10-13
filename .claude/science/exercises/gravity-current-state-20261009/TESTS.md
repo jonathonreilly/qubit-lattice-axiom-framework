@@ -5869,3 +5869,18 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
 ---
 
+
+#### C5 Round 16/17 worker readings (recorded as they arrive)
+
+- **R16-14 (set A PPN): worker reading OPEN for bare E1/E2; PASS for both with completion N; literal linear class EXCLUDED.** A referee is required.
+  - **α₁, α₂ and γ** are fixed at O(G): α₁ = α₂ = 0 and γ = 1 exactly in PPN form for both routes. The non-PPN terms pass by at least 3.5 decades; the tightest is the gain's α̂₂,eff = 6.9e-13 against the 2e-9 bound. E2's frame dipole exerts no α₂ torque.
+  - **Lemma L:**
+    - a metric linear in matter records, with geodesic matter, gives β = 0, so Mercury is 57.5″/cy;
+    - R13-6's literal ½hT coupling gives β = ½, so Mercury is 50.3″/cy;
+    - both fail by ≥ 3.4 decades.
+  - **Completion N** (the record source is gravity's total stress-energy) gives β = 1. It suggests the noise's field energy must gravitate, which makes premise (iii) non-optional.
+  - **Noise-fed terms** are negligible.
+  - **The tie holds:** both routes need N.
+  - **New price:** P-r16-14a (completion N). Owner choice: N, or the mean-field alternative, which conflicts with AX:82-83.
+
+  Referee running.

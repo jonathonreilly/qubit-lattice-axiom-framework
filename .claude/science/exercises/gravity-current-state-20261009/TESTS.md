@@ -5663,7 +5663,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
   Referee running.
 
-#### C5 Round 16 referee verdict, item 9 (recorded 00:10Z; codex gpt-5.6-sol, xhigh)
+#### C5 Round 16 referee verdict, item 9 (recorded 00:07Z; codex gpt-5.6-sol, xhigh)
 
 - **R16-9 referee: NOT CONFIRMED (the CONFLICT). Reading OPEN** (`agents/C5_R16-9_referee_verdict.md`, full record `agents/C5_R16-9_referee.md`).
   - **Confirmed:**
@@ -5682,7 +5682,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - The 9/13 + CC bill is conditional bookkeeping, not an established minimal bill, and μ_T2 = 0 is coupling-specific.
   - **Referee's summary:** credible search evidence for tension.
 
-### C5 Round 17 (pre-registered 00:10Z from S20 §7 (agents/C5_S20_synthesis.md), text fixed before any run; R17-1, R17-3, R17-4 launched now; R17-2 after R16-12's referee; R17-5 if time allows)
+### C5 Round 17 (pre-registered 00:07Z from S20 §7 (agents/C5_S20_synthesis.md), text fixed before any run; R17-1, R17-3, R17-4 launched now; R17-2 after R16-12's referee; R17-5 if time allows)
 
 
 **Rules (as rounds 2–16).**

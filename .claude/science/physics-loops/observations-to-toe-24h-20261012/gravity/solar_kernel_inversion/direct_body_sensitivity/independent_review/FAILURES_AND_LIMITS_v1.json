@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "kind": "parent execution failure",
+      "version": "evidence_v1",
+      "failure": "ValueError in missing direction-vector operand of scalar quadrupole einsum",
+      "status": "One-line fix exactly verified, v2 passes. Complete original bytes, stderr, freeze and execution preserved."
+    },
+    {
+      "kind": "parent primary access failure",
+      "failure": "Initial urllib certificate verification failed",
+      "status": "Ledger records ordinary-TLS curl recovery and does not claim an unavailable raw stderr capture. Exact primary recovered PDF identity verified."
+    },
+    {
+      "kind": "reviewer source display truncation",
+      "failure": "Combined output cut runner entrypoint lines337-341",
+      "status": "Complete entrypoint333-361 reread; full runner covered."
+    },
+    {
+      "kind": "reviewer targeted lookup",
+      "failure": "rg could not find direct_tensor_scalar_reconstruction/OBSERVATION_INPUTS.json",
+      "exit_code": 2,
+      "status": "Actual upstream DIRECT_RECONSTRUCTION.md and RESULTS_AND_SCOPE.md establish unchanged interval; hashes/snapshots preserved."
+    }
+  ],
+  "independent_numeric_execution_failures": [],
+  "unresolved_material_findings": [],
+  "limits": [
+    "Newtonian energy wrapper is not relativistic resummation",
+    "Positive radial energy does not establish full constrained Hessian positivity",
+    "Separately leading channels omit next correction to nonzero dipole at c^-5",
+    "Historical exposed summary, no raw likelihood, coefficient uncertainty or blind test",
+    "Free composition nuisance leaves the mean fit degenerate"
+  ]
+}

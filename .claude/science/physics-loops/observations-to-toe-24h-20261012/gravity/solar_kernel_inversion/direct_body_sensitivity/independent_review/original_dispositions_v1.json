@@ -1,0 +1,317 @@
+{
+  "root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity",
+  "created_utc": "2026-10-13T02:22:03.501814+00:00",
+  "source_count": 31,
+  "original_dispositions": [
+    {
+      "original_path": "ANGULAR_CONTRACTION_CORRECTION_v2.json",
+      "original_sha256": "d1522cf7ee5f2de979eb4f72016297a9299e6c26b7da39975da4a660b5e27c8a",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/ANGULAR_CONTRACTION_CORRECTION_v2.json",
+      "final_path": "ANGULAR_CONTRACTION_CORRECTION_v2.json",
+      "final_sha256": "d1522cf7ee5f2de979eb4f72016297a9299e6c26b7da39975da4a660b5e27c8a",
+      "bytes": 1106,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "305bc5175b4a57d042a70a743acb099d73ff84440d71a57999b79890ef59831c",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": "CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "305bc5175b4a57d042a70a743acb099d73ff84440d71a57999b79890ef59831c",
+      "bytes": 1392,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "DIRECT_BODY_SENSITIVITY.md",
+      "original_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/DIRECT_BODY_SENSITIVITY.md",
+      "final_path": "DIRECT_BODY_SENSITIVITY.md",
+      "final_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "bytes": 14101,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "DISCOVERY_STATE.json",
+      "original_sha256": "bbcd8c04d46d77413fd33870f5c839b42732dd4e489865f8b1b9c127faf270c2",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/DISCOVERY_STATE.json",
+      "final_path": "DISCOVERY_STATE.json",
+      "final_sha256": "bbcd8c04d46d77413fd33870f5c839b42732dd4e489865f8b1b9c127faf270c2",
+      "bytes": 597,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "FREEZE.json",
+      "original_sha256": "1fed55a6f62bc2d3051a603c86ce1bbb03a4153c4763e4f27f2d5cc2a299a9e4",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/FREEZE.json",
+      "final_path": "FREEZE.json",
+      "final_sha256": "1fed55a6f62bc2d3051a603c86ce1bbb03a4153c4763e4f27f2d5cc2a299a9e4",
+      "bytes": 353,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "NUMERICAL_FIXTURES.json",
+      "original_sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/NUMERICAL_FIXTURES.json",
+      "final_path": "NUMERICAL_FIXTURES.json",
+      "final_sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "bytes": 974,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "OBSERVATION_INPUTS.json",
+      "original_sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/OBSERVATION_INPUTS.json",
+      "final_path": "OBSERVATION_INPUTS.json",
+      "final_sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "bytes": 1427,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "PROTOCOL.md",
+      "original_sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/PROTOCOL.md",
+      "final_path": "PROTOCOL.md",
+      "final_sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "bytes": 4668,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "RESULTS_AND_SCOPE.md",
+      "original_sha256": "7029333aec560f6897f61af9fbb829047725edb194e095c5ce155791df1a45d5",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/RESULTS_AND_SCOPE.md",
+      "final_path": "RESULTS_AND_SCOPE.md",
+      "final_sha256": "7029333aec560f6897f61af9fbb829047725edb194e095c5ce155791df1a45d5",
+      "bytes": 3014,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "SOURCE_LEDGER.json",
+      "original_sha256": "b4145e3adefc98423da5b933da5e0a77c773ce4de69e3138b1c4ad6ecf09a52f",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/SOURCE_LEDGER.json",
+      "final_path": "SOURCE_LEDGER.json",
+      "final_sha256": "b4145e3adefc98423da5b933da5e0a77c773ce4de69e3138b1c4ad6ecf09a52f",
+      "bytes": 3360,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "TRACE_GATE.md",
+      "original_sha256": "0905f73d8466cc122445365b2d4adc763943c767f4dd415a3642c6fbe75015f9",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/TRACE_GATE.md",
+      "final_path": "TRACE_GATE.md",
+      "final_sha256": "0905f73d8466cc122445365b2d4adc763943c767f4dd415a3642c6fbe75015f9",
+      "bytes": 657,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "check_body_sensitivity.py",
+      "original_sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/check_body_sensitivity.py",
+      "final_path": "check_body_sensitivity.py",
+      "final_sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+      "bytes": 17956,
+      "coverage": "Full v2 source read; v1 complete source coverage through exact one-line diff. Author runner not imported/executed."
+    },
+    {
+      "original_path": "evidence_v1/EXECUTION.json",
+      "original_sha256": "5e22e494ae8835d7b1547a35efd27a1cec782ff83f2677979319e0e6d44f418b",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/EXECUTION.json",
+      "final_path": "evidence_v1/EXECUTION.json",
+      "final_sha256": "5e22e494ae8835d7b1547a35efd27a1cec782ff83f2677979319e0e6d44f418b",
+      "bytes": 219,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/FREEZE.json",
+      "original_sha256": "f68d654b1b40e84e6e0f14a439fe28486709d28527c8cebc391c86bfcb80639a",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/FREEZE.json",
+      "final_path": "evidence_v1/FREEZE.json",
+      "final_sha256": "f68d654b1b40e84e6e0f14a439fe28486709d28527c8cebc391c86bfcb80639a",
+      "bytes": 586,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "original_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "final_path": "evidence_v1/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "final_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "bytes": 14101,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json",
+      "original_sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json",
+      "final_path": "evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json",
+      "final_sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "bytes": 974,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "original_sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "bytes": 1427,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "original_sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/PROTOCOL.md",
+      "final_path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "final_sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "bytes": 4668,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/source_snapshot/check_body_sensitivity.py",
+      "original_sha256": "b6c1a5b041bcc6248a09c22aa3f47d2a5921be3a22ef4050780c4211a2c5ed57",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/source_snapshot/check_body_sensitivity.py",
+      "final_path": "evidence_v1/source_snapshot/check_body_sensitivity.py",
+      "final_sha256": "b6c1a5b041bcc6248a09c22aa3f47d2a5921be3a22ef4050780c4211a2c5ed57",
+      "bytes": 17948,
+      "coverage": "Full v2 source read; v1 complete source coverage through exact one-line diff. Author runner not imported/executed."
+    },
+    {
+      "original_path": "evidence_v1/stderr.txt",
+      "original_sha256": "ab376cb9ffdd095dd30e28adebcc52b00a5c89eeed3b698430173ff46503a8a8",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/stderr.txt",
+      "final_path": "evidence_v1/stderr.txt",
+      "final_sha256": "ab376cb9ffdd095dd30e28adebcc52b00a5c89eeed3b698430173ff46503a8a8",
+      "bytes": 1821,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v1/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v1/stdout.txt",
+      "final_path": "evidence_v1/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/EXECUTION.json",
+      "original_sha256": "79193c5a9ed0e962af19b46775d6e1c2a6c1d74b6c9f8315faf27cdb44405d00",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/EXECUTION.json",
+      "final_path": "evidence_v2/EXECUTION.json",
+      "final_sha256": "79193c5a9ed0e962af19b46775d6e1c2a6c1d74b6c9f8315faf27cdb44405d00",
+      "bytes": 218,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/FREEZE.json",
+      "original_sha256": "7046210a6028c3ca64518bc55be40cb814652be8fc0f86c260acca773efdedea",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/FREEZE.json",
+      "final_path": "evidence_v2/FREEZE.json",
+      "final_sha256": "7046210a6028c3ca64518bc55be40cb814652be8fc0f86c260acca773efdedea",
+      "bytes": 608,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/RESULTS.json",
+      "original_sha256": "733c8a71984314bae266210a26894cd374f7a130155b8e64dd65c900c63011c8",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/RESULTS.json",
+      "final_path": "evidence_v2/RESULTS.json",
+      "final_sha256": "733c8a71984314bae266210a26894cd374f7a130155b8e64dd65c900c63011c8",
+      "bytes": 909590,
+      "coverage": "Complete JSON parsed; all relevant result classes independently recomputed or checked; all2818 author records consumed."
+    },
+    {
+      "original_path": "evidence_v2/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "original_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "final_path": "evidence_v2/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "final_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "bytes": 14101,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/source_snapshot/NUMERICAL_FIXTURES.json",
+      "original_sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/source_snapshot/NUMERICAL_FIXTURES.json",
+      "final_path": "evidence_v2/source_snapshot/NUMERICAL_FIXTURES.json",
+      "final_sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "bytes": 974,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/source_snapshot/OBSERVATION_INPUTS.json",
+      "original_sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_path": "evidence_v2/source_snapshot/OBSERVATION_INPUTS.json",
+      "final_sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "bytes": 1427,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/source_snapshot/PROTOCOL.md",
+      "original_sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/source_snapshot/PROTOCOL.md",
+      "final_path": "evidence_v2/source_snapshot/PROTOCOL.md",
+      "final_sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "bytes": 4668,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/source_snapshot/check_body_sensitivity.py",
+      "original_sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/source_snapshot/check_body_sensitivity.py",
+      "final_path": "evidence_v2/source_snapshot/check_body_sensitivity.py",
+      "final_sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+      "bytes": 17956,
+      "coverage": "Full v2 source read; v1 complete source coverage through exact one-line diff. Author runner not imported/executed."
+    },
+    {
+      "original_path": "evidence_v2/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/stderr.txt",
+      "final_path": "evidence_v2/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    },
+    {
+      "original_path": "evidence_v2/stdout.txt",
+      "original_sha256": "e35d42f213d282537d6d707b012abbdc04289a70e00b5fd99979fc3c23efde87",
+      "disposition": "Checked; unchanged source preserved exactly",
+      "recovery": "independent_review/snapshots_v1/evidence_v2/stdout.txt",
+      "final_path": "evidence_v2/stdout.txt",
+      "final_sha256": "e35d42f213d282537d6d707b012abbdc04289a70e00b5fd99979fc3c23efde87",
+      "bytes": 1030,
+      "coverage": "Complete note, inputs, metadata or execution evidence read; relevant identities and boundaries checked."
+    }
+  ]
+}

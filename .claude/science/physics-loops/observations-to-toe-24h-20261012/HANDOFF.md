@@ -177,3 +177,37 @@ are accurate; the narrower interpretation is now explicit in delivery records.
 No conflicting retired/cancelled author process was found at this checkpoint.
 Only direct parent and focused check agents act; no new background author.
 The original fixed deadline/packaging cutoff and no-merge/audit rules remain.
+
+## Latest direct-author checkpoint — 2026-10-13 02:43 UTC
+
+Body review is complete: full report and derivation read,79 unique identities
+verified,4,095 independent checks pass. See direct_body_sensitivity/
+CHECKED_OUTCOME.md. No scientific correction. Earlier pending wording is historical.
+
+Parent personally completed cosmology/direct_expansion_reconstruction. Full
+completed-square proof gives q_J>=(1+a)/[2(1-a)] on0<a<1/3, including all scalar
+velocity directions; a=0 gives1/2. Dynamic equality and a distance-ratio ordering
+are proved. First frozen execution passes6,120 controls. Pantheon+ processed
+full covariance,405 calibration/953 reserved transfer rows: q=.5 transfer
+chi-square1468.777 versus834.121 for supplied Omega_m=.3 benchmark. Class
+contrast+.3085345+/-.0237980mag versus mean<=0; conditional source/optical/
+standardization assumptions, no global blind or raw-data significance claim.
+A free luminosity-evolution beta can absorb that single contrast. Literal CID
+counts are not physical-event counts. Focused /root/direct_field_check writes
+only this new block's independent_review/; source frozen. No array/tolerance
+or candidate retuning. Parent next derives a declared potential extension and
+local coupling/mass compatibility, preserving the massless failure.
+
+Metric source is complete atfa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9,
+treec41c2cd4729ecdd57483ed62a782ec859cd47c52. Parent read both final reports;
+all708 unique identities verified,124 original dispositions mapped. UNIT_v2
+cache/preflight passed. One combined pipeline/lint/evidence gate runs in its
+recorded disposable checkout; runtime metric_milestone/validation/COMBINED_v1.json
+contains exact process/path/step ownership. No PR yet. Fresh origin/main equals
+frozen base516cb69d; actual local main8af72f4f differs, so intended integration
+target is explicitly origin/main. Initial missing reference-path unit-build
+failure is preserved and fixed before preflight. Do not edit the frozen unit.
+
+No conflicting retired author process; no author or supervisor restart.
+Original deadline16:53Z and new-discovery cutoff16:38Z stay fixed. The same
+cooperative lock holder was refreshed at this checkpoint for two hours.

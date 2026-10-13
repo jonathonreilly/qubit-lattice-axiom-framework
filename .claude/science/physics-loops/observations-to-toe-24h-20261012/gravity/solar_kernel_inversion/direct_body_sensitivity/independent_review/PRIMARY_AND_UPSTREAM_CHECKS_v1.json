@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-13T02:22:03.504494+00:00",
+  "primary_url": "https://arxiv.org/pdf/gr-qc/0411113v2",
+  "primary_read_scope": "Primary web text through Eq3 plus exact external PDF text/pages2,3 and version identifier; pages2,3 images viewed. No full raw-data or ephemeris validation. Reference tail not needed.",
+  "verified_primary_roles": [
+    "Eq3 Earth-minus-Moon self-energy coefficient",
+    "Eq5 Earth-minus-Moon EP summary corrected for solar radiation pressure",
+    "Eqs6/7 reuse LLR plus composition laboratory input, not new independent LLR data",
+    "Cassini-derived beta not used"
+  ],
+  "external_files": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/Williams_Turyshev_Boggs_2004.pdf",
+      "sha256": "569be464a1e80ae07d6573ad846eff17a7b839e0a750838ec90854d1421c9a53",
+      "bytes": 138477,
+      "parent_hash_matches": true,
+      "copied_into_review": false
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/page_2.png",
+      "sha256": "bb7f324240763ccc5a8adec7da92434ec1cfa493b72edc594b23f90460ba3705",
+      "bytes": 170300,
+      "parent_hash_matches": true,
+      "copied_into_review": false
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/page_3.png",
+      "sha256": "c0aef99391782126ec1269563f4f1ca355760a9ad571faa9c69a44cbebcccaf3",
+      "bytes": 175744,
+      "parent_hash_matches": true,
+      "copied_into_review": false
+    }
+  ],
+  "upstream_source_checks": [
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "snapshot": "upstream_trace_snapshot/DIRECT_RECONSTRUCTION.md",
+      "read_scope": "Earlier same-session full action-block review reused; targeted working-interval and charge-map spans reread in this task. No status promotion."
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "snapshot": "upstream_trace_snapshot/RESULTS_AND_SCOPE.md",
+      "read_scope": "Earlier same-session full action-block review reused; targeted working-interval and charge-map spans reread in this task. No status promotion."
+    }
+  ],
+  "ledger_prior_repository_notes": "Ledger roles inspected; no referenced runner replay or previous formal status endorsement."
+}

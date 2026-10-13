@@ -1,0 +1,6 @@
+{
+  "scope": "Parent calculation complete; independent checker receives the current source and both execution histories.",
+  "current_execution": "evidence_v2/EXECUTION.json",
+  "first_failed_execution": "evidence_v1/EXECUTION.json",
+  "source_edits_during_independent_check": "Only narrow findings coordinated with checker; preserve original bytes."
+}

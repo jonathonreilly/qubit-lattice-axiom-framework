@@ -1,0 +1,26 @@
+{
+  "saved_at": "2026-10-13T02:37:33.596162+00:00",
+  "release_commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+  "files": {
+    "table": {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+      "raw_sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+      "raw_bytes": 579283,
+      "local_gzip": "data/Pantheon+SH0ES.dat.gz",
+      "gzip_sha256": "64ff1b5b5fe9adfaab8b4e019d11e78fd63465cfb2fa21712432165437c2e762",
+      "gzip_bytes": 215932,
+      "recovery": "gzip decompression restores byte-exact original public numeric release"
+    },
+    "covariance": {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STAT+SYS.cov",
+      "raw_sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+      "raw_bytes": 33284960,
+      "local_gzip": "data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "gzip_sha256": "b360a5ebbec61be26f458079cacb79941e4b44b8706fcd67a092570d360c0031",
+      "gzip_bytes": 10085863,
+      "recovery": "gzip decompression restores byte-exact original public numeric release"
+    }
+  },
+  "original_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology",
+  "no_array_parse_at_archive_creation": true
+}

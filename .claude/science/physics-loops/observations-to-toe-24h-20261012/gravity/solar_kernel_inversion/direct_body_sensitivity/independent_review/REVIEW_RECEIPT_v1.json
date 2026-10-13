@@ -1,0 +1,276 @@
+{
+  "created_utc": "2026-10-13T02:23:06.825754+00:00",
+  "scope": "Focused independent check; no formal audit, retained promotion or primary authorship delegation.",
+  "author_source_root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity",
+  "review_root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/independent_review",
+  "primary_author": "parent",
+  "complete_source_count": 31,
+  "source_dispositions": "original_dispositions_v1.json",
+  "source_note_sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+  "current_runner_sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+  "failed_v1_runner_sha256": "b6c1a5b041bcc6248a09c22aa3f47d2a5921be3a22ef4050780c4211a2c5ed57",
+  "successful_author_result_sha256": "733c8a71984314bae266210a26894cd374f7a130155b8e64dd65c900c63011c8",
+  "independent_checks": 4095,
+  "independent_all_passed": true,
+  "material_findings": [],
+  "unresolved_material_findings": [],
+  "parent_failure_preserved": true,
+  "correction_disposition": "Exact one-line missing angular operand correction checked; no change in formulas, inputs or tolerances.",
+  "coverage": {
+    "shape_rows": 4,
+    "equilibrium_bodies": 12,
+    "shifted_states": 72,
+    "finite_difference_triples": 36,
+    "radial_controls": 48,
+    "binary_rows": 18,
+    "parent_sphere_phase_rows": 576,
+    "author_check_records_consumed": 2818,
+    "empirical_rows": "All four predictions and both exact working intersections"
+  },
+  "limits": [
+    "Supplied Newtonian body energy and effective-action matching",
+    "Radial stability and full constrained-Hessian positivity are distinct",
+    "Separately leading channels, no complete c^-5 power with a leading dipole",
+    "Historical exposed LLR summary and separately supplied self-energy coefficient",
+    "No realistic Earth/Moon profiles, raw likelihood, compact-star or TOE claim",
+    "Free composition nuisance restores a line of mean fits"
+  ],
+  "evidence_file_count": 47,
+  "evidence": [
+    {
+      "path": "BODY_SENSITIVITY_REVIEW.md",
+      "sha256": "64b1ff8539b1775cc4611c23c12d324e827d4c43484ba5907e236e8ba74b6b73",
+      "bytes": 10346
+    },
+    {
+      "path": "FAILURES_AND_LIMITS_v1.json",
+      "sha256": "5f4d1e3c2595794d707ba18dd2967a0af4f45f99cc98da7f4b31c5e34df6b761",
+      "bytes": 1633
+    },
+    {
+      "path": "FINAL_VALIDATION_v1.json",
+      "sha256": "eafa1aff36ce952387afc2b9c8c8ce6a138421e4967e0408faaacda3e40e59fe",
+      "bytes": 5383
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "sha256": "c8fda4033b1bf68db3ad5863300e44712e9f2f0fad5a482fe5e85f3e6540ca84",
+      "bytes": 9337
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_v1.json",
+      "sha256": "063e687689ef50624b1f1a9d5171f3e32d383da204530b842fe6d587512ea008",
+      "bytes": 1212774
+    },
+    {
+      "path": "NUMERICAL_SUMMARY_v1.json",
+      "sha256": "6232f047621cbc7505c8fed88d054004da2a281b1892bacf0bd40d62c2279bce",
+      "bytes": 1719
+    },
+    {
+      "path": "PRIMARY_AND_UPSTREAM_CHECKS_v1.json",
+      "sha256": "5d13fe85f040ac0f32b334e13c68783fb27e13d10828af89928377d92c65d8f9",
+      "bytes": 3001
+    },
+    {
+      "path": "SOURCE_PINS_v1.json",
+      "sha256": "34aeff45b50e03b9f91d46d98a53444dd7452c240e5870907e96893e7a3a0001",
+      "bytes": 7477
+    },
+    {
+      "path": "execution_v1/EXECUTION.json",
+      "sha256": "1f4eaa9a0320e572816dd40def8f187b7bf962dd073a1b1b84631ecbccae67f6",
+      "bytes": 828
+    },
+    {
+      "path": "execution_v1/independent_body_checks_v1.py.snapshot",
+      "sha256": "abb57f1dd84ada0f7d145909da07ca8e14389e9ffcb0c2f3d5626c361f5ad1c1",
+      "bytes": 18088
+    },
+    {
+      "path": "execution_v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "execution_v1/stdout.txt",
+      "sha256": "d24fd5ba66f6a0b3d51f7fe2b64400241f4460d16f421c7f3f56f4f566ebe6aa",
+      "bytes": 105
+    },
+    {
+      "path": "independent_body_checks_v1.py",
+      "sha256": "abb57f1dd84ada0f7d145909da07ca8e14389e9ffcb0c2f3d5626c361f5ad1c1",
+      "bytes": 18088
+    },
+    {
+      "path": "original_dispositions_v1.json",
+      "sha256": "03391488bc51a9281c27b75d2107b231586b806162687484cfd91a559f71933c",
+      "bytes": 19187
+    },
+    {
+      "path": "snapshots_v1/ANGULAR_CONTRACTION_CORRECTION_v2.json",
+      "sha256": "d1522cf7ee5f2de979eb4f72016297a9299e6c26b7da39975da4a660b5e27c8a",
+      "bytes": 1106
+    },
+    {
+      "path": "snapshots_v1/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "305bc5175b4a57d042a70a743acb099d73ff84440d71a57999b79890ef59831c",
+      "bytes": 1392
+    },
+    {
+      "path": "snapshots_v1/DIRECT_BODY_SENSITIVITY.md",
+      "sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "bytes": 14101
+    },
+    {
+      "path": "snapshots_v1/DISCOVERY_STATE.json",
+      "sha256": "bbcd8c04d46d77413fd33870f5c839b42732dd4e489865f8b1b9c127faf270c2",
+      "bytes": 597
+    },
+    {
+      "path": "snapshots_v1/FREEZE.json",
+      "sha256": "1fed55a6f62bc2d3051a603c86ce1bbb03a4153c4763e4f27f2d5cc2a299a9e4",
+      "bytes": 353
+    },
+    {
+      "path": "snapshots_v1/NUMERICAL_FIXTURES.json",
+      "sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "bytes": 974
+    },
+    {
+      "path": "snapshots_v1/OBSERVATION_INPUTS.json",
+      "sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "bytes": 1427
+    },
+    {
+      "path": "snapshots_v1/PROTOCOL.md",
+      "sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "bytes": 4668
+    },
+    {
+      "path": "snapshots_v1/RESULTS_AND_SCOPE.md",
+      "sha256": "7029333aec560f6897f61af9fbb829047725edb194e095c5ce155791df1a45d5",
+      "bytes": 3014
+    },
+    {
+      "path": "snapshots_v1/SOURCE_LEDGER.json",
+      "sha256": "b4145e3adefc98423da5b933da5e0a77c773ce4de69e3138b1c4ad6ecf09a52f",
+      "bytes": 3360
+    },
+    {
+      "path": "snapshots_v1/TRACE_GATE.md",
+      "sha256": "0905f73d8466cc122445365b2d4adc763943c767f4dd415a3642c6fbe75015f9",
+      "bytes": 657
+    },
+    {
+      "path": "snapshots_v1/check_body_sensitivity.py",
+      "sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+      "bytes": 17956
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/EXECUTION.json",
+      "sha256": "5e22e494ae8835d7b1547a35efd27a1cec782ff83f2677979319e0e6d44f418b",
+      "bytes": 219
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/FREEZE.json",
+      "sha256": "f68d654b1b40e84e6e0f14a439fe28486709d28527c8cebc391c86bfcb80639a",
+      "bytes": 586
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "bytes": 14101
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json",
+      "sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "bytes": 974
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "bytes": 1427
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/source_snapshot/PROTOCOL.md",
+      "sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "bytes": 4668
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/source_snapshot/check_body_sensitivity.py",
+      "sha256": "b6c1a5b041bcc6248a09c22aa3f47d2a5921be3a22ef4050780c4211a2c5ed57",
+      "bytes": 17948
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/stderr.txt",
+      "sha256": "ab376cb9ffdd095dd30e28adebcc52b00a5c89eeed3b698430173ff46503a8a8",
+      "bytes": 1821
+    },
+    {
+      "path": "snapshots_v1/evidence_v1/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/EXECUTION.json",
+      "sha256": "79193c5a9ed0e962af19b46775d6e1c2a6c1d74b6c9f8315faf27cdb44405d00",
+      "bytes": 218
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/FREEZE.json",
+      "sha256": "7046210a6028c3ca64518bc55be40cb814652be8fc0f86c260acca773efdedea",
+      "bytes": 608
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/RESULTS.json",
+      "sha256": "733c8a71984314bae266210a26894cd374f7a130155b8e64dd65c900c63011c8",
+      "bytes": 909590
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "sha256": "db13193ebc99b457ccf08444ba57d878a1e8281c20d38c3e7f055569d72d7b3d",
+      "bytes": 14101
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/source_snapshot/NUMERICAL_FIXTURES.json",
+      "sha256": "a5abeabf6d839feea9b66fe43e4367512d77da013b9b59c1265c68ed95041a7d",
+      "bytes": 974
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/source_snapshot/OBSERVATION_INPUTS.json",
+      "sha256": "efda50eb1788796476011eaff863a6067e2e09946bb0b4c59bf487f5798a418c",
+      "bytes": 1427
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/source_snapshot/PROTOCOL.md",
+      "sha256": "fe12ff366c398926087296e23c6464d19cea0a670a6c044e497189e8e14c3873",
+      "bytes": 4668
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/source_snapshot/check_body_sensitivity.py",
+      "sha256": "c6a6b277d499ebefb231ad54e330752341ea198de64b216041a7eccf78e1553c",
+      "bytes": 17956
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "snapshots_v1/evidence_v2/stdout.txt",
+      "sha256": "e35d42f213d282537d6d707b012abbdc04289a70e00b5fd99979fc3c23efde87",
+      "bytes": 1030
+    },
+    {
+      "path": "upstream_trace_snapshot/DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "bytes": 12034
+    },
+    {
+      "path": "upstream_trace_snapshot/RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "bytes": 2278
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-13T02:13:25.527440+00:00",
+  "ended_utc": "2026-10-13T02:13:27.106839+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/independent_review/independent_body_checks_v1.py",
+    ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/independent_review/INDEPENDENT_RESULTS_v1.json"
+  ],
+  "exit_code": 0,
+  "script_sha256": "abb57f1dd84ada0f7d145909da07ca8e14389e9ffcb0c2f3d5626c361f5ad1c1",
+  "stdout_sha256": "d24fd5ba66f6a0b3d51f7fe2b64400241f4460d16f421c7f3f56f4f566ebe6aa",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "author_runner_imported_or_executed": false
+}

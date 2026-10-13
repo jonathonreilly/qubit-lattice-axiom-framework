@@ -1,0 +1,58 @@
+{
+  "independent_checks": 4095,
+  "passed": true,
+  "metrics": {
+    "independent profile": {
+      "comparisons": 20,
+      "max_relative_error": 3.1214201736952426e-11,
+      "worst_case": "independent profile (1.5, 'iw')"
+    },
+    "base": {
+      "comparisons": 132,
+      "max_relative_error": 1.3959803546054655e-12,
+      "worst_case": "base (1.5, 0.001) s"
+    },
+    "shift": {
+      "comparisons": 792,
+      "max_relative_error": 1.3971106661001621e-12,
+      "worst_case": "shift (1.5, 0.001, 0.00025, 'plus', 's')"
+    },
+    "derivative": {
+      "comparisons": 108,
+      "max_relative_error": 2.0381726896351296e-12,
+      "worst_case": "derivative (1.5, 1e-06, 0.00025, 'd_binding_d_zeta')"
+    },
+    "radial": {
+      "comparisons": 192,
+      "max_relative_error": 3.749227431068731e-10,
+      "worst_case": "radial (1.5, 1e-06, [0, 1], 'denominator')"
+    },
+    "DFT14 sphere": {
+      "comparisons": 1632,
+      "max_relative_error": 1.3069374046970073e-08,
+      "worst_case": "DFT14 sphere (1, 1e-05, 12, 0, 'dipole')"
+    },
+    "leading channel": {
+      "comparisons": 51,
+      "max_relative_error": 2.7735942831988855e-11,
+      "worst_case": "leading channel (2, 1e-05) dipole"
+    },
+    "channel sum": {
+      "comparisons": 18,
+      "max_relative_error": 1.654850843610051e-13,
+      "worst_case": "channel sum (4, 1e-05)"
+    }
+  },
+  "max_synthetic_tidal_fraction": 1.2500018772518782e-07,
+  "counts": {
+    "shape_rows": 4,
+    "base_bodies": 12,
+    "shifted_states": 72,
+    "finite_difference_triples": 36,
+    "radial_trials": 48,
+    "binary_rows": 18,
+    "parent_angular_rows": 576,
+    "independent_phase_evaluations": 288,
+    "author_check_records_consumed": 2818
+  }
+}

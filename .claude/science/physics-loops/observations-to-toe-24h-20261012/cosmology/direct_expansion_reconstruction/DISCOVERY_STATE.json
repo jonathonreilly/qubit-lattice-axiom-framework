@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-13T02:20:46.245432+00:00",
+  "author": "direct parent",
+  "phase": "parent math and processed comparison complete; focused independent check next",
+  "table_or_covariance_downloaded": true,
+  "numerical_execution_started": true,
+  "protocol_sha256": "28607a7bb2fb8434bde6f866715f642d617da48babc97ec1019370d4d6778969",
+  "deadline": "2026-10-13T16:53:00.057432Z",
+  "data_pin": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+  "exposed_context": "Primary abstract, release metadata and known acceleration context; no global blind claim.",
+  "updated_at": "2026-10-13T02:40:02.200321+00:00",
+  "numerical_execution_complete": true,
+  "checks": 6120,
+  "next_action": "Independent check, then derive permitted potential/kinetic reconstruction rather than fitting a hidden sector."
+}

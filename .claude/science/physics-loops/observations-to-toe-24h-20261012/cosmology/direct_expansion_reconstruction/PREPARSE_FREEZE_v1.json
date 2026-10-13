@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-13T02:31:51.986066+00:00",
+  "files": {
+    "PROTOCOL.md": "28607a7bb2fb8434bde6f866715f642d617da48babc97ec1019370d4d6778969",
+    "NUMERICAL_FIXTURES.json": "f7a702eda6931ec321a0ef5190928fa5c20e157b11615086d9eb1c5e6649544f",
+    "DIRECT_EXPANSION_DERIVATION.md": "ca89ef5b1344a1e27ab4e38ec6a1a14c3646ede46828164a1558344aebddaf8a"
+  },
+  "local_table_arrays_parsed": false,
+  "science_executed": false
+}

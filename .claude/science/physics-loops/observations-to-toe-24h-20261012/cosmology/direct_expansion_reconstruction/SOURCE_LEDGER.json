@@ -1,0 +1,84 @@
+{
+  "created_at": "2026-10-13T02:40:02.200321+00:00",
+  "primary_sources": [
+    {
+      "id": "PantheonPlus_release",
+      "commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "url": "https://github.com/PantheonPlusSH0ES/DataRelease/tree/c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "artifacts": [
+        {
+          "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/README_distances.txt",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/README",
+          "sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e",
+          "bytes": 4056,
+          "downloaded_at": "2026-10-13T02:21:07.405487+00:00"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/SN_only_official_likelihood.py",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/5_COSMOLOGY/cosmosis_likelihoods/Pantheon+_only_cosmosis_likelihood.py",
+          "sha256": "7bc222fedc11a3d496ef4c5c18b2e111842dcef4d2bb65d22e9597eb9be191a4",
+          "bytes": 4000,
+          "downloaded_at": "2026-10-13T02:21:07.584359+00:00"
+        },
+        {
+          "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/Pantheon+SH0ES.dat",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+          "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+          "bytes": 579283,
+          "started_at": "2026-10-13T02:21:35.392191+00:00",
+          "completed_at": "2026-10-13T02:21:35.584156+00:00",
+          "arrays_not_parsed": true
+        },
+        {
+          "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/Pantheon+SH0ES_STAT+SYS.cov",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STAT+SYS.cov",
+          "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+          "bytes": 33284960,
+          "started_at": "2026-10-13T02:21:35.393144+00:00",
+          "completed_at": "2026-10-13T02:21:36.825892+00:00",
+          "arrays_not_parsed": true
+        }
+      ],
+      "read_scope": "README and official SN-only likelihood read in full. Numeric table and full covariance parsed in full, selections applied by original row index. Raw bytes preserved exactly in external recovery and lossless local gzip.",
+      "role": "Processed corrected magnitudes, redshift conventions and full STAT+SYS covariance. No raw photometry or re-estimated standardization."
+    },
+    {
+      "id": "Brout_et_al_PantheonPlus_cosmology",
+      "url": "https://arxiv.org/html/2202.04077v2",
+      "read_scope": "Abstract, introduction and methodology II.1 through II.3, including magnitude standardization, likelihood and covariance construction; not full paper.",
+      "exposed_before_protocol": "Known acceleration context and public abstract Omega_m=.334 summary were already exposed. The fixed benchmark .3 and partitions were frozen before local numeric arrays.",
+      "role": "Identifies supplied source, bias correction, duplicate correlation and fiducial-model responses. It is not a second independent observation."
+    }
+  ],
+  "repository_context": [
+    {
+      "path": "docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "read_scope": "Complete note, no runner executed",
+      "role": "Context only; alternate supplied constant-density assumptions and normalization boundary not inherited as a proof premise."
+    },
+    {
+      "path": "docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "read_scope": "Complete note, no runner executed",
+      "role": "Context only; status/observational claims not adopted."
+    }
+  ],
+  "inherited_candidate": "Positive constant-K massless Einstein scalar action with universal exponential matter metric; previously personally derived and independently checked locally. Current cosmological equations and bound are personally derived here.",
+  "fresh_assumptions": [
+    "Flat homogeneous expanding geometry",
+    "Positive dust and radiation fluid closure with no constituent-sensitivity correction",
+    "No scalar potential or cosmological constant in this block",
+    "Transparency, distance duality, supplied redshift corrections and constant standardized magnitude for empirical comparison",
+    "Gaussian likelihood for released processed summaries and covariance"
+  ],
+  "data_roles": {
+    "calibration": "Only additive magnitude/H0 intercept, .0233<=zHD<.1 excluding IS_CALIBRATOR=1",
+    "reserved_transfer": ".1<=zHD<=1.5, fixed shapes, full correlated predictive distribution; model-development reservation, not global blind data",
+    "contrast": "Same exposed data; overlapping diagnostic not independent of transfer",
+    "beta_cancellation": "One-contrast nuisance calibration, not a prediction or measured source evolution"
+  },
+  "reported_covariance_convention": "Maximum original asymmetry3e-8, passes prefrozen1e-6 times maxdiag.3910331; exact raw preserved, analysis uses arithmetic symmetrization, full and predictive Cholesky pass, no jitter.",
+  "identifier_caveat": "The raw table has1543 distinct CID strings, while paper metadata describes1550 objects. CID string uniqueness is not asserted to be physical event identity. No object deduplication or independent-event count is inferred; all1701 covariance rows remain aligned.",
+  "failures": "First science execution succeeded; no source/fixture/tolerance revision after inspecting results."
+}

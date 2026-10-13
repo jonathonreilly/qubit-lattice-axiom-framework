@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/check_body_sensitivity.py", line 361, in <module>
+    main()
+  File "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/check_body_sensitivity.py", line 340, in main
+    radiation = radiation_checks(fixture,lookup)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/check_body_sensitivity.py", line 261, in radiation_checks
+    values = angular_powers(m1, m2, b1, b2, kinv, gs, r, omega, phase, grid)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_body_sensitivity/check_body_sensitivity.py", line 221, in angular_powers
+    quad_amplitude = 0.5*np.einsum("ni,ij,nj->n", points, third)[:, None]*bq
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/einsumfunc.py", line 1610, in einsum
+    return c_einsum(*operands, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: more operands provided to einstein sum function than specified in the subscripts string

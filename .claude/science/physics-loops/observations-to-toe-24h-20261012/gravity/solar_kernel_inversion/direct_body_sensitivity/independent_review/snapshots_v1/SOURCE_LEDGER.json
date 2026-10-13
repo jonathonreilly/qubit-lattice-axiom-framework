@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-10-13T02:05:05.001182+00:00",
+  "author": "direct parent",
+  "primary": {
+    "url": "https://arxiv.org/pdf/gr-qc/0411113",
+    "doi": "10.1103/PhysRevLett.93.261101",
+    "version": "gr-qc/0411113v2",
+    "local_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/Williams_Turyshev_Boggs_2004.pdf",
+    "sha256": "569be464a1e80ae07d6573ad846eff17a7b839e0a750838ec90854d1421c9a53",
+    "bytes": 138477,
+    "scope": "Full substantive text through conclusions; rendered pages2,3 inspected; last reference-page tail not needed. No normal points or ephemeris likelihood.",
+    "equations_used": [
+      3,
+      5
+    ],
+    "data_period": "March1970-April2004; historical exposed development inputs",
+    "not_independent": [
+      "SEP Eq6 and eta Eq7 reuse LLR with an external laboratory composition summary.",
+      "No independent read of that laboratory primary paper claimed.",
+      "Cassini-derived beta not used."
+    ],
+    "local_rendered_pages": [
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/page_2.png",
+        "sha256": "bb7f324240763ccc5a8adec7da92434ec1cfa493b72edc594b23f90460ba3705"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/page_3.png",
+        "sha256": "c0aef99391782126ec1269563f4f1ca355760a9ad571faa9c69a44cbebcccaf3"
+      }
+    ]
+  },
+  "repo_grounding": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_BINDING_ENERGY_FALLS_WITH_ITS_WEIGHT_ONLY_IN_THE_CURVATURE_MEMBER_PULL_BOUND_PAIRS_FALL_LIKE_ONE_BODY_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "pin": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "6c191def8273131bc332da1b9e91d5102ca879fa5cd19994d2218902d411c6cd",
+      "read_scope": "Complete note read, including initially omitted display span on velocity note. No referenced runner rerun or status endorsement.",
+      "role": "Trace context for restricted source conservation/binding; not a theorem parent of this new supplied polytropic derivation."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_PULL_CARRIES_THE_VELOCITY_TERMS_THAT_GIVE_PULL_BOUND_PAIRS_WEIGHT_ONE_ALONG_EVERY_AXIS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "pin": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "a1b29015d3a814cf9c28a5346e394c7c38bdbc8424615d1a86e9f196fe92241a",
+      "read_scope": "Complete note read, including initially omitted display span on velocity note. No referenced runner rerun or status endorsement.",
+      "role": "Trace context for restricted source conservation/binding; not a theorem parent of this new supplied polytropic derivation."
+    }
+  ],
+  "access_failure": {
+    "route": "Initial urllib PDF fetch",
+    "failure": "Local certificate verification failed",
+    "resolution": "System curl with ordinary TLS validation fetched the same primary PDF. No certificate bypass or primary substitution.",
+    "raw_failure": "Observed in parent tool response; this ledger records it without claiming a separately captured raw stderr file."
+  },
+  "framework_status": "No framework axiom adopted or registered; supplied conventional EFT and Newtonian EOS only."
+}

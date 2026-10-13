@@ -1,0 +1,208 @@
+{
+  "checked_utc": "2026-10-13T02:23:06.821934+00:00",
+  "source_count": 31,
+  "source_inventory_complete": true,
+  "source_identity_checks": [
+    {
+      "path": "ANGULAR_CONTRACTION_CORRECTION_v2.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "DIRECT_BODY_SENSITIVITY.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "DISCOVERY_STATE.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "FREEZE.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "NUMERICAL_FIXTURES.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "OBSERVATION_INPUTS.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "PROTOCOL.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "RESULTS_AND_SCOPE.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "SOURCE_LEDGER.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "check_body_sensitivity.py",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/EXECUTION.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/OBSERVATION_INPUTS.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/PROTOCOL.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/source_snapshot/check_body_sensitivity.py",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/stderr.txt",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v1/stdout.txt",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/EXECUTION.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/FREEZE.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/RESULTS.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/source_snapshot/DIRECT_BODY_SENSITIVITY.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/source_snapshot/NUMERICAL_FIXTURES.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/source_snapshot/OBSERVATION_INPUTS.json",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/source_snapshot/PROTOCOL.md",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/source_snapshot/check_body_sensitivity.py",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/stderr.txt",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    },
+    {
+      "path": "evidence_v2/stdout.txt",
+      "current_hash_matches": true,
+      "recovery_hash_matches": true
+    }
+  ],
+  "reviewer_script_and_executed_snapshot_match": true,
+  "result_script_identity_matches": true,
+  "all_independent_checks_passed": true,
+  "author_stdout_matches_result": true,
+  "new_authored_text_eof": [
+    {
+      "path": "FAILURES_AND_LIMITS_v1.json",
+      "single_newline": true
+    },
+    {
+      "path": "BODY_SENSITIVITY_REVIEW.md",
+      "single_newline": true
+    },
+    {
+      "path": "SOURCE_PINS_v1.json",
+      "single_newline": true
+    },
+    {
+      "path": "original_dispositions_v1.json",
+      "single_newline": true
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "single_newline": true
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_v1.json",
+      "single_newline": true
+    },
+    {
+      "path": "PRIMARY_AND_UPSTREAM_CHECKS_v1.json",
+      "single_newline": true
+    },
+    {
+      "path": "independent_body_checks_v1.py",
+      "single_newline": true
+    },
+    {
+      "path": "NUMERICAL_SUMMARY_v1.json",
+      "single_newline": true
+    },
+    {
+      "path": "execution_v1/EXECUTION.json",
+      "single_newline": true
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "checks": 6120,
+  "all_passed": true,
+  "counts": {
+    "all_light_curve_rows": 1701,
+    "all_distinct_CID": 1543,
+    "selected_light_curve_rows": 1358,
+    "selected_distinct_CID": 1296,
+    "calibration_light_curve_rows": 405,
+    "calibration_distinct_CID": 343,
+    "transfer_light_curve_rows": 953,
+    "transfer_distinct_CID": 953,
+    "contrast_high_light_curve_rows": 469,
+    "contrast_high_distinct_CID": 469
+  },
+  "contrast": {
+    "definition": "equal arithmetic high mean minus equal arithmetic low mean relative to q=.5 distance",
+    "class_mean_upper_bound_mag": 0,
+    "observed_mag": 0.3085345352698292,
+    "standard_error_full_covariance_mag": 0.02379802403453029,
+    "standardized_contrast": 12.964712314860845,
+    "high_rows": 469,
+    "low_rows": 405,
+    "log_luminosity_lever": 0.14999398073139536,
+    "beta_to_cancel_single_contrast_calibration_only": 2.056979445210828,
+    "frozen_beta_sensitivity": [
+      {
+        "beta": 0,
+        "corrected_contrast_mag": 0.3085345352698292,
+        "standardized_contrast": 12.964712314860845
+      },
+      {
+        "beta": 0.1,
+        "corrected_contrast_mag": 0.29353513719668967,
+        "standardized_contrast": 12.334433176921669
+      },
+      {
+        "beta": 0.3,
+        "corrected_contrast_mag": 0.2635363410504106,
+        "standardized_contrast": 11.073874901043318
+      },
+      {
+        "beta": 0.5,
+        "corrected_contrast_mag": 0.23353754490413153,
+        "standardized_contrast": 9.813316625164966
+      }
+    ]
+  },
+  "curves": {
+    "q_half": {
+      "intercept_calibration_only": 23.85329096858143,
+      "calibration_chi2": 382.0851314468948,
+      "calibration_rank": 404,
+      "conditional_transfer_chi2": 1468.777077752508,
+      "transfer_dimension": 953
+    },
+    "weak_equality": {
+      "intercept_calibration_only": 23.8533095959879,
+      "calibration_chi2": 382.0905958912587,
+      "calibration_rank": 404,
+      "conditional_transfer_chi2": 1469.3812919132945,
+      "transfer_dimension": 953
+    },
+    "supplied_LCDM_0.3": {
+      "intercept_calibration_only": 23.80497380112855,
+      "calibration_chi2": 373.7357880260017,
+      "calibration_rank": 404,
+      "conditional_transfer_chi2": 834.1212232129892,
+      "transfer_dimension": 953
+    }
+  }
+}

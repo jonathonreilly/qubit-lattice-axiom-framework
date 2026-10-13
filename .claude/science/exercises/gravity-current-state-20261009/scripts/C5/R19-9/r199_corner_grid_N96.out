@@ -1,0 +1,20 @@
+I_phi = 0.064427093778832  (phi = 1 - sstep(2x - 1); sharp-ball value would be 1/4)
+per-vector corner shift dXi_e = C_e r^4 at root (a, wd, wo) = (-0.176095005436, -1.171554, -0.195418):
+   C_T2g   = +6.670789573880e-05
+   C_Eg    = +6.670789573880e-05
+   C_xz    = +6.670789573880e-05
+   C_face1 = +2.966678192554e-04
+   C_face2 = +1.609194844443e-04
+   C_body  = +3.129885338449e-04
+   O_h relation on the shift: body - (8 face1 + 4 face2 - 3 Eg)/9 = +2.87e-18 ; C4 xz - T2g = +1.08e-19
+   at the continuum point (lam = 0, w = 0) all C_e = -0.0e+00 -0.0e+00 -0.0e+00 -0.0e+00 -0.0e+00 -0.0e+00
+   d/da: T2g -1.305566e-03 Eg -1.305566e-03 xz -1.305566e-03 face1 -8.159787e-04 face2 -6.527829e-04 body -5.802515e-04
+   d/dwd: T2g +0.000000e+00 Eg +0.000000e+00 xz +0.000000e+00 face1 -1.631957e-04 face2 +0.000000e+00 body -1.450629e-04
+   d/dwo: T2g +0.000000e+00 Eg +0.000000e+00 xz +0.000000e+00 face1 -3.263915e-04 face2 -6.527829e-04 body -5.802515e-04
+   r = 0.05: per vector T2g +4.169e-10 Eg +4.169e-10 xz +4.169e-10 face1 +1.854e-09 face2 +1.006e-09 body +1.956e-09 | x12 vectors: T2g +5.003e-09 Eg +5.003e-09 face1 +2.225e-08 face2 +1.207e-08
+   r = 0.1: per vector T2g +6.671e-09 Eg +6.671e-09 xz +6.671e-09 face1 +2.967e-08 face2 +1.609e-08 body +3.130e-08 | x12 vectors: T2g +8.005e-08 Eg +8.005e-08 face1 +3.560e-07 face2 +1.931e-07
+   r = 0.2: per vector T2g +1.067e-07 Eg +1.067e-07 xz +1.067e-07 face1 +4.747e-07 face2 +2.575e-07 body +5.008e-07 | x12 vectors: T2g +1.281e-06 Eg +1.281e-06 face1 +5.696e-06 face2 +3.090e-06
+time 2.4 s
+GRID N=96 r=0.4: | T2g: grid dXi +1.6303e-06 vs C r^4 +1.7077e-06 (Xi_VW -3.536926e-03) | Eg: grid dXi +1.6304e-06 vs C r^4 +1.7077e-06 (Xi_VW -1.269965e-04) | face1: grid dXi +6.6327e-06 vs C r^4 +7.5947e-06 (Xi_VW -7.156730e-03) | face2: grid dXi +3.5953e-06 vs C r^4 +4.1195e-06 (Xi_VW -8.429172e-03)
+GRID N=96 r=0.8: | T2g: grid dXi +2.7192e-05 vs C r^4 +2.7324e-05 (Xi_VW -3.536926e-03) | Eg: grid dXi +2.7191e-05 vs C r^4 +2.7324e-05 (Xi_VW -1.269965e-04) | face1: grid dXi +1.1968e-04 vs C r^4 +1.2152e-04 (Xi_VW -7.156730e-03) | face2: grid dXi +6.4914e-05 vs C r^4 +6.5913e-05 (Xi_VW -8.429172e-03)
+time 60 s

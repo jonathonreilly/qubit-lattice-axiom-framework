@@ -1,0 +1,4 @@
+r=0.1 uniform T3xT3               : max rel 3.58e-16, max abs 1.33e-15; piece usage {'B': 10000} [7s]
+r=0.1 log-uniform legs 1e-6..pi   : max rel 6.44e-16, max abs 2.21e-15; piece usage {'C': 5904, 'AL': 1744, 'B': 1493, 'AR': 1779} [13s]
+r=0.05 uniform T3xT3               : max rel 2.61e-16, max abs 1.66e-15; piece usage {'B': 10000} [6s]
+r=0.05 log-uniform legs 1e-6..pi   : max rel 8.38e-16, max abs 1.82e-15; piece usage {'C': 5242, 'B': 1943, 'AR': 1821, 'AL': 1880} [14s]

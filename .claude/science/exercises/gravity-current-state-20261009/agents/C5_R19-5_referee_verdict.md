@@ -1,0 +1,19 @@
+## VERDICT: CONFIRMED WITH CORRECTIONS
+
+1. **W1 versus W2:** Confirmed distinct. W1 is the first-order divergence identity; W15/T_pf addresses a second-order W2 constraint-algebra identity and does not prohibit exact W1. W15 itself remains class-scoped. `R19-5_report.md:100-107`; `C5_R16-5_report.md:50-60`; `C5_R16-5_referee_verdict.md:5-17`.
+
+2. **U completion:** Confirmed. R9-9 adapts R8-2 Construction A to the actual graviton divergence, while R13-5 P1 completes every admissible smooth massive pair kernel. Together they already provide exact W1 for U. `arch9/r99_graviton.py:93-159`; `scripts/recheck_r99_graviton.out:17-29`; `C5_R13-5_report.md:143-182`.
+
+3. **Massive TT rows:** Confirmed within the supplied one-loop vacuum, ultralocal-seagull and SF prescription. W1 fixes pair-channel time components; scattering blocks do not enter the vacuum TT loop. This is not a universal result for photons, tied geometric operators, or different seagulls. `C5_R13-5_report.md:145-160`; `R19-5_report.md:127-130`.
+
+4. **Dirac stress:** Confirmed analytically and numerically. The requested rerun reproduced the stored residuals. My independent fixed-pair contraction gave all four W1 residuals below \(5.67\times10^{-16}\). Correction: the numerical near chart divides by zero when a component of \(q\) vanishes, so its “whole torus” claim excludes coordinate planes unless the analytically removable limits are implemented. `scripts/r195_dirac_exact2.out:8-14`; `scripts/r195_dirac_exact.py:82-89`; `R19-5_referee_check.out:1-12`.
+
+5. **P-R18-13c scope:** Correction confirmed. Lemma S constrains superpotential improvements of a fixed operator; it does not constrain changing the pair kernel and recompleting the remaining blocks. The signed UD smearings provide an explicit counterexample in the general bilinear class. `C5_R18-13_report.md:211-226`; `scripts/r195_dirac_owndir.out:15-16`.
+
+6. **Photon corner:** Not confirmed as an exact VW completion. The \(O(r^4)\) power counting is plausible and the \(N=64\) results reproduce, but Gauss-law/soft-leg bookkeeping, shell gluing and a numerical W1 kernel remain absent. The quoted \(8.7\times10^{-8}\) per-vector value at \(r=0.1\) is under-resolved, not a bound; only an order-\(10^{-6}\) to few-\(10^{-6}\) total perturbation is supported. `R19-5_report.md:204-213,255-268`; `scripts/r195_corner.py:38-55`.
+
+7. **Fixed reading:** **OPEN is correct.** U and UD refute EXACT-IMPOSSIBLE; EXACT-KILLS is not established in the general class; and EXACT-SURVIVES requires a checked VW completion and re-solved all-row root, neither of which is present. `TESTS.md:7344-7348`; `R19-5_report.md:303-305`.
+
+**Strongest correct statement.** For the R9-9 linearized W1 identity, U has an exact quasi-local completion, and every admissible smooth massive Wilson–Dirac pair kernel—including UD and its signed own-direction smearings—has an exact completion in the general channel-decoupled bilinear class; under the stipulated one-loop prescription these completions leave the scalar and Dirac cone rows unchanged. Lemma S removes the placement route only in the channel-tied class. VW, however, has only a plausible soft-corner construction and an under-resolved row estimate, so neither its exact W1 completion nor survival of the full all-row SM root is established. The correct fixed reading is **OPEN**.
+
+Full artifact: [R19-5_referee_verdict.md](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-5/R19-5_referee_verdict.md:1>). Independent check: [R19-5_referee_check.py](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-5/R19-5_referee_check.py:1>).

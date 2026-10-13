@@ -1,0 +1,2 @@
+(i) continuum Maxwell kernel, W1 on the FULL 6x6 field space (no Gauss projection): max relative residual 1.00 (physical block: ~3e-15, r199_exact.out) -> exactness is on the constraint surface, as in the continuum
+(ii) reflected-transposed kernel M(-k2,-k1)^T: max relative W1 residual (physical block) over 400 pairs 6.68e-15

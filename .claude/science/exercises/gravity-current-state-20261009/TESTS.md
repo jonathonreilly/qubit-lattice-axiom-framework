@@ -7741,3 +7741,31 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **NO-LOCAL-ESCAPE:** a demonstration (refereed) that the required R exceeds a stated bound, e.g. R ≳ 1e30 a for gapless fields.
   - **OPEN:** otherwise.
 - **Expectation.** For gapped fields, R ≈ ln(1e122)/m: local for m ~ 1/a, non-local for SM masses (m·a ~ 1e-17). For gapless fields (photon, graviton), R ~ (1e122)^{1/4} ~ 1e30 a. So NO-LOCAL-ESCAPE for the photon, which makes the R19-10 injection unavoidable for massless fields.
+
+#### C5 referee verdicts R19-5, R19-8 and the R19-9 worker reading (recorded 05:22Z)
+
+- **R19-5 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **W1 and W2 are distinct.** W15/T_pf addresses W2 and does not prohibit exact W1.
+  - **Exact completions exist for the massive species.** U has an exact quasi-local completion. Every admissible smooth massive Wilson-Dirac pair kernel has one in the channel-decoupled class, including UD and its signed own-direction smearings.
+  - **The scalar and Dirac rows are unchanged** under these completions.
+  - **Lemma S** removes the placement route only in the channel-tied class.
+  - **Open for the photon:** VW had only a plausible soft-corner construction (R19-9 now addresses this).
+- **R19-8 referee: NOT CONFIRMED (the E2-CONSTRUCTED). Reading OPEN.**
+  - **What can be stipulated.** In the weak-field, finite-rational, Gaussian, real-Ohmic, off-cone scope, a causal non-local E2 + N_c records-to-metric law can be stipulated. It propagates harmonic gauge and is CP. Its static sector keeps β = γ = 1, and its per-mode noise source is exactly |R| times E1's.
+  - **Also confirmed:** Lemma S2 (the sink needs memory), and classical zero-temperature FDT does not force added noise.
+  - **Not constructed:**
+    - a physical sink action or stress with a unique homogeneous budget;
+    - a record-finite stationary cone prescription;
+    - the FRW lift.
+  - **The tie with E1** survives formally at the noise level.
+- **R19-9 (exact photon completion): worker reading PHOTON-EXACT.**
+  - **The construction:** a glued exact W1 photon stress made of three pieces:
+    - the continuum Maxwell stress on the corner ball;
+    - an inverted soft-leg block;
+    - in the hard-hard region, VW pair blocks plus R8-2's dust scattering kernel with a fibre identification.
+  - **W1** holds on the physical (Gauss-law) block to ≤ 6.5e-14.
+  - **No obstruction at a single soft leg.**
+  - **Proposition K:** the corner cost is exactly C_e r⁴.
+  - **The SM root re-solves:** all six rows ≤ 3.3e-11, with knob shifts ≤ 2.9e-6 at r = 0.1. The bill is unchanged at 6 + 1.
+
+  Referee running.

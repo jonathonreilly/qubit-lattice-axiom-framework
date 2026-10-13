@@ -1,0 +1,3 @@
+I_phi = 0.064427093778832  (phi = 1 - sstep(2x - 1); sharp-ball value would be 1/4)
+r = 0.05: start (w_d, w_o) = (-1.1715542151, -0.1954184361) direct face totals [-1.84703222e-06 -4.43741728e-07] (r199_direct_r0.05.out)
+  step dw = [9.69410297e-07 6.39134207e-08]; new (w_d, w_o) = (-1.1715532457, -0.1954183722); DIRECT N=224 face totals [-2.86114676e-12 -4.76185413e-12] [166s]

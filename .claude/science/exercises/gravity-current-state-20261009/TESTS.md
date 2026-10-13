@@ -6841,3 +6841,57 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r186a (N on the gravitating stress), P-r186b (J2), P-r186c (set A meter stress).
 
   Referee running.
+
+### C5 Round 18, items 9–10 (pre-registered 03:01Z, before launch)
+
+**R18-9. All four cone/shear rows with SM content under conserved vertices: E_g = T₂g = μ_E = μ_T2 = 0?**
+- **Plain question.**
+  - R18-5 (worker; referee running) finds a conserved-vertex SM-count root (U + UD + VW, signed stencil) that zeroes three rows and leaves μ_T2 = +0.091.
+  - R17-13 (refereed ZEROED) shows μ_T2 can be zeroed by one Dirac-edge shape tuning on D1. At SM counts the μ_E budget fought it under V0/VM.
+  - With UD's different Dirac Ξ and the signed VW stencil as an extra knob, can all four rows be zeroed at SM counts? How many knobs does that take?
+- **Setting.**
+  - The R18-5 content and vertices: 4 scalars U, 22.5 Dirac UD, 12 vectors VW with a signed stencil.
+  - One Higgs edge; all edges subluminal.
+  - m = 0.01 and 0.001.
+  - Knobs: edge shapes plus stencil, declared.
+  - Excluded: VU, VM, V0, the M vertex, pairing.
+- **Prior art (count once):** R18-5 (worker) and its referee when back, R17-13 and its verdict, R17-12 and its verdict, R16-9, R17-4 and R14-3.
+- **Removed hypothesis:** μ_T2 left unpaid.
+- **Probes.**
+  - (a) Four-row solve with 4 declared knobs (scalar edge, Dirac b, Dirac r, stencil); with 5 if needed (photon edge).
+  - (b) Transversality, subluminality and resolution checks.
+  - (c) Off-axis rows (R17-4's K₆ for scalars; face2 ≡ T₂g check for UD and VW) at the root, if time allows.
+  - (d) The bill.
+- **FIXED readings.**
+  - **FOUR-ROW-ZERO:** an explicit SM-count content with conserved vertices, all subluminal, all four rows zero at a common light mass. Checked, with the knob count.
+  - **FOUR-ROW-CONFLICT:** a demonstration (refereed if class-wide) that the four rows cannot be zeroed together in the stated families.
+  - **OPEN:** otherwise.
+- **Expectation.** FOUR-ROW-ZERO with 4 knobs. UD's smaller Dirac μ_E pull plus the signed stencil should relax R17-13's budget shortfall.
+
+**R18-10. A Z₂ ensemble with dipole-hyperuniform charges: does conserving the γ-dipole produce the pinch point that finite fugacity screens?**
+- **Plain question.**
+  - R18-1 (worker; referee running) finds that the RK Z₂ ensemble with finite charge fugacity is screened (Debye).
+  - Identity V says a pinch point needs S_γ = o(k²): the charges must be dipole-hyperuniform.
+  - If the dynamics conserves the total γ-dipole (fracton-like mobility restrictions, a local constraint not a global one), can the static readout develop a pinch point at finite fugacity?
+  - That would be a static window outside R18-1's RK family that does not need exact emergence.
+- **Setting.**
+  - N0914's slots with the mod-2 law and the shift action (P112).
+  - An RK ensemble whose move set conserves Σ x γ(x) (dipole) in addition to Gn mod 2, with weight exp(−βU Σγ²).
+  - L = 6–12.
+  - Observables as in R18-1 (ρ, ξ², S_γ/q², S_γ/q⁴).
+  - Excluded: spectra; integer lifts.
+- **Prior art (count once):**
+  - R18-1 (and its referee); R17-6 and its verdict (Identity V, Theorem Z; R18-1's Z₀);
+  - R17-1; N0914;
+  - fracton dipole conservation and pinch points (Pretko; Prem–Vijay–Chamon; RECALLED).
+- **Removed hypothesis:** charge moves without dipole conservation.
+- **Probes.**
+  - (a) Construct a local dipole-conserving move set within the mod-2 sector, and check detailed balance and ergodicity at small L.
+  - (b) Measure ξ²(βU, L) and S_γ/q², S_γ/q⁴.
+  - (c) If a pinch point appears, check the readout's helicity content: is it T₂ (tensor) and not scalar?
+  - (d) Prices: a dipole-conservation law as a new conserved structure (`AX:57-61`).
+- **FIXED readings.**
+  - **PINCH-PRESENT:** finite βU with ξ growing as L (finite-size scaling), S_γ = o(k²), and a T₂ readout. Checked.
+  - **SCREENED:** ξ finite at every finite βU tested. Checked.
+  - **OPEN:** otherwise, including non-ergodic moves.
+- **Expectation.** PINCH-PRESENT. Dipole conservation makes the charges hyperuniform (S_γ ∝ k²) at any fugacity. It costs a new conservation law, and the result is a static window only.

@@ -9377,3 +9377,18 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - The residual multiplicative channel is suppressed by m_f·a, ~1e-22 or less, so it is far below the Earth row.
   - The knock-on onto the vacuum rows is nonzero, but it is a vacuum strain response that (Σ) absorbs by stipulation.
   - Without (Σ), it moves the root. So: RULE-WORKS given (Σ), otherwise RULE-PARTIAL.
+
+- **F5 (P-R19-34a tested as a rule): worker reading RULE-PARTIAL.**
+  - **The rule itself works:**
+    - Unique: P, T and C allow only a mass structure at rest, and the implicit function theorem gives the solution, with slope z = +0.29 to +0.40.
+    - Number-free under the law-functional convention; 2 per class per order under codimension counting.
+    - Covers every F1/F3/F4 variant, which makes P-F3a and P-F4a unnecessary.
+    - Ultralocal: parity forbids O(a∂h).
+    - Its own residuals are ≥ 1e10 below the bounds. Multiplicative z″ = −4.6e-3 e², μ_ρ ~ 8e-43.
+    - Nothing observed is changed. Without the rule, a static lattice-frame strain λΦ would give an EP violation η ~ 1e7 λ²; with it, ~1e-15 λ² (suggested).
+  - **Cause 1, residual (iv):** R19-21's Higgs-sector channel is untouched by the rule. The worker sizes it as exceeding F2's Earth row by ~3e38 in μ_ρ. **The worker's "Earth ≈ 5 MeV" is flagged for the referee**; vR19-21 has 1.42e-9 eV at mean density. Only (S_loc), which is OPEN, covers it.
+  - **Cause 2, the knock-on:** Δμ_E = +1.689e-2 e_s² per Dirac field moves the R18-9 root on the bare law. (S\*) or (Σ) absorbs it. λ_nn shifts by ~+0.1.
+  - **Gap G-F5a:** F1's frame photon is singular for T₂g strain, so the registered law's T₂g coefficient is not computable. A regular stand-in gives γ′/γ = 0.31, and an E_g Hessian 2.8× smaller than the registered one.
+  - **Also found:** the fixed-critical-mass law has a linear trace term, d_t δm = −4.88e-2 e². The rule removes it.
+
+  Referee running.

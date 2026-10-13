@@ -1,0 +1,11 @@
+grid n=6 hmax=0.25 mph=6 (156 nodes), d=0.0030; R18-9 root B1 Psym; per e^2, SF units
+  m=0.0000  Sigma(P=0) +0.0418583908  Hess_t +2.4238554e-02
+  m=0.0025  Sigma(P=0) +0.0428480017  Hess_t +2.4226962e-02
+  m=0.0050  Sigma(P=0) +0.0436615959  Hess_t +2.4215464e-02
+  m=0.0100  Sigma(P=0) +0.0451123394  Hess_t +2.4191714e-02
+  m=0.0200  Sigma(P=0) +0.0476589809  Hess_t +2.4141753e-02
+  m=0.0025  z(m) = [Sigma(m)-Sigma(0)]/m = +0.395844   z'' = [Hess(m)-Hess(0)]/m = -4.636741e-03
+  m=0.0050  z(m) = [Sigma(m)-Sigma(0)]/m = +0.360641   z'' = [Hess(m)-Hess(0)]/m = -4.617917e-03
+  m=0.0100  z(m) = [Sigma(m)-Sigma(0)]/m = +0.325395   z'' = [Hess(m)-Hess(0)]/m = -4.683970e-03
+  m=0.0200  z(m) = [Sigma(m)-Sigma(0)]/m = +0.290030   z'' = [Hess(m)-Hess(0)]/m = -4.840042e-03
+time 39 s

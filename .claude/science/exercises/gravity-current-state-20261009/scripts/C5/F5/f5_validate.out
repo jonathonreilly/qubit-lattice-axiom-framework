@@ -1,0 +1,18 @@
+(1) E_g octant, 156 nodes/axis: f5 vs f1
+   t=0.000  f5 +4.1858390762983e-02  f1 +4.1858390762983e-02  diff 0.0e+00
+   t=0.003  f5 +4.1858499832088e-02  f1 +4.1858499832088e-02  diff 6.9e-18
+   t=0.006  f5 +4.1858826986752e-02  f1 +4.1858826986752e-02  diff 0.0e+00
+(2) E_g, x on [-pi,pi]:
+   t=0.000  +4.1858390762983e-02
+   t=0.003  +4.1858499832088e-02
+(3) T2g, coarse grid 80 nodes/half-axis
+   t=+0.003  dom[-pi,pi]x[0,pi]x[0,pi] +5.4990461768000e-01   dom[-pi,pi]^2x[0,pi] +5.4990461768000e-01  diff 0.0e+00
+   t=-0.003  dom[-pi,pi]x[0,pi]x[0,pi] +5.4990461768000e-01   dom[-pi,pi]^2x[0,pi] +5.4990461768000e-01  diff -1.1e-16
+   t=0: T2g-domain +4.1858631341466e-02  octant +4.1858631341466e-02  diff 6.9e-18
+(4) D1(1.4000, 0.5774) m=0.01: registered row formulas muE -2.888424e-02  muT2 -1.279919e-05
+     N=64 midpoint: e"(0) E_g -5.968917e-02   T2g +1.179975e-02
+     N=80 midpoint: e"(0) E_g -1.505315e-01   T2g -2.406193e-02
+(4) D1(0.9091, 0.5556) m=0.01: registered row formulas muE -1.711325e-02  muT2 -4.282271e-09
+     N=64 midpoint: e"(0) E_g -1.697701e-02   T2g +6.493177e-05
+     N=80 midpoint: e"(0) E_g -1.714224e-02   T2g -2.848319e-05
+time 203 s

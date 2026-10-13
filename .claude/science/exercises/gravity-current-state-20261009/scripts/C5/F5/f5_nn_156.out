@@ -1,0 +1,9 @@
+grid n=6 hmax=0.25 mph=6 (156 nodes), d=0.0030; R18-9 root B1 Psym; per e^2, SF units
+  nn = e_z e_z       dm0 +0.0418583908  d_t dm -1.6251820e-02  d2_t dm +1.8487429e-02   [95 s]
+  iso = 1            dm0 +0.0418583908  d_t dm -4.8755459e-02  d2_t dm +9.3671199e-02   [192 s]
+  E_g (check vs F1)  dm0 +0.0418583908  d_t dm +1.9274705e-16  d2_t dm +2.4238554e-02   [288 s]
+  e_m = de/dm (FD) -0.69693438 ;  -2<M/E> -0.69693438   (per Dirac field, m = 0.01)
+  e_tm along nn +3.519457e-02 ; along iso +1.055848e-01
+  row check: e_tt along E_g -1.7100298e-02 (registered mu_E per Dirac field -1.709412e-2); along nn +1.7366715e-02 (R19-35 Hess(nn) +2.164325e-2)
+  e_t along nn (one-point, per unit h_zz) -3.042112e-01
+time 532 s

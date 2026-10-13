@@ -8140,3 +8140,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R19-19a ((S\*\*₀)), b (Z) and c (nonlinear extension, non-lowest states).
 
   Referee running.
+
+### C5 Round 19, item 21 (pre-registered 06:12Z, before launch)
+
+**R19-21. The state-tied subtraction: do (S\*) and (S\*\*) survive cosmic history (the electroweak crossover, a thermal plasma), or does a mismatch in the shear and cone rows ruin the early universe?**
+- **Plain question.**
+  - (S\*) and (S\*\*) subtract the lowest state's strain response (R19-15 refereed: a stipulated source definition; R19-19 worker).
+  - The real universe was not in today's lowest state. Before the electroweak crossover the fermions were nearly massless, and the plasma was thermal.
+  - R19-19 (worker) estimates a tachyonic shear mismatch Δμ ≈ −5e-19 per cell before the crossover, |m_g| ~ 6e10 GeV, if μ acts as a canonical graviton mass.
+  - Questions:
+    - (i) Is the thermal or pre-crossover strain response's shear part, at the relevant temperatures and masses, actually of that size and sign?
+    - (ii) Does a thermal plasma's own (non-vacuum) shear response, which is physical, dominate?
+    - (iii) Is there a state-tracking version that keeps Bianchi? For example, "the instantaneous law's lowest state", or the local equilibrium state. R17-7 says a varying algebraic C needs a local carrier, and R19-17 suggests the lattice frame X could carry it.
+    - (iv) What does each version predict for primordial tensor modes and for growth before the crossover?
+- **Setting.**
+  - The SM root edges (R19-11's 0⁺ root).
+  - Thermal states at T between 1 GeV and 1e16 GeV (a·T ≪ 1).
+  - The shear rows μ_E and μ_T2 of (a) the vacuum at the pre-crossover masses and (b) the thermal state.
+  - The canonical graviton-mass reading (with vR19-11's conditional) and the alternative "μ is not a mass" readings.
+- **Prior art (count once):** R19-15 and its verdict, R19-19 (worker), R19-11 and its verdict, R17-7 (S′ variants; Bianchi and carrier), R19-17 (Lemma N; frame carrier), R18-2 (EW vacuum), solid-inflation and massive-graviton cosmology (RECALLED).
+- **Removed hypothesis:** the universe always in today's lowest state.
+- **Probes.**
+  - (a) The size and sign of Δμ_vac, and the thermal μ_th(T), on the root edges.
+  - (b) Which dominates, and the resulting graviton mass² history.
+  - (c) The state-tracking variant's Bianchi and carrier.
+  - (d) The observational consequences: tensor modes, BBN expansion rate, GW background.
+  - (e) Prices.
+- **FIXED readings.**
+  - **HISTORY-SAFE:** a stated version, either (S\*\*) or a state-tracking variant, keeps every pre-crossover effect below the stated observational bounds without a new number. Checked.
+  - **HISTORY-CONFLICT:** a refereed demonstration that every stated version yields an excluded early-universe effect (e.g. a tachyonic instability faster than H, or erased tensor modes conflicting with data), or needs a ~1e-67 tuning.
+  - **OPEN:** otherwise.
+- **Expectation.** HISTORY-CONFLICT for fixed (S\*\*) under the canonical-mass reading, since |m_g| ≫ H. A state-tracking variant could be HISTORY-SAFE if the frame field carries the drift (R19-17). The thermal μ_th is likely the dominant physical piece, and in a plasma it is a genuine, observable effect.

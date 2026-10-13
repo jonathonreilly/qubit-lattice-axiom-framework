@@ -6316,3 +6316,20 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - continuous non-analytic multi-shift mixing;
     - crossing bands;
     - joint mixing with field-dependent generators.
+- **R17-11 (E₀ principle, pressure bridge (d-i)): worker reading CONSISTENT in 𝒟.** The expectation was SIGNALS.
+  - **Class 𝒟:** R14-5's E-sector, with √h fixed per site so the spatial trace is not imposed, sites riding the normals, and C = E₀.
+  - **The bridge:**
+    - The grid vacuum's enthalpy W is absorbed by the unique exchange current Q_ν = ∇^μ(W h_μν).
+    - Generalized Lemma V: W never enters λ̇.
+    - Under (S), g′ ≡ 0 and the site frame drops out of the field equations.
+  - **Linear order:** the dust equation has no W terms, the tilt is absent at g′ = 0, and there is no instantaneous channel (Lemma S jump = F).
+  - **Observables:** nothing beyond (S). The anisotropic and TT walls are unchanged.
+  - **Other receivers excluded:**
+    - unimodular Λ(x), which drifts by about 1e123 ρ_Λ;
+    - matter;
+    - an ultralocal khronon;
+    - (d-ii) still needs W = 0.
+  - **Bill:** R17-4's LV tadpole equals P70's uniform part, which is paid by P-vac′ with no numbers, so the bill drops by one.
+  - **Prices:** P-r1711a, b and c.
+
+  Referee running.

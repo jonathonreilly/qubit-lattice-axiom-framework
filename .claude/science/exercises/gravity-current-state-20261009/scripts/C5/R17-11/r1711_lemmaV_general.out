@@ -1,0 +1,9 @@
+G1 r-component of div(E + W h) - d_r[N(lam+pE+W)]/(A^2 N): 0
+G1 N^2 t-component - (lam' + g' theta_n), g' = N(lam+pE+W): 0
+G2 Q^nu - [D^nu W + W(a^nu + theta_n n^nu)] for nu = t, r, theta, phi: [0, 0, 0, 0]
+G2 energy leg  -n_nu Q^nu = N*Q^t: (2*A(t, r)*Derivative(B(t, r), t) + B(t, r)*Derivative(A(t, r), t))*W(t, r)/(A(t, r)*B(t, r)*N(t, r))   (= W theta_n: creation at fixed density pays W per unit new volume)
+G2 momentum leg Q^r: (N(t, r)*Derivative(W(t, r), r) + W(t, r)*Derivative(N(t, r), r))/(A(t, r)**2*N(t, r))   (= [d_r W + W d_r ln N]/A^2: gradient + holding the hovering vacuum up)
+G3 (S): E + T_v + (lam0 + V) g^{-1} (all 16 components) = True
+G3 (S): g' = N(lam0 + pE + W) with pE = -lam0 - W: 0
+G3 (S): div(E_S + W h) components: [0, 0, 0, 0]
+G4 control (W = 0, R14-5 Lemma C): r-comp - d_r[N(lam+pE)]/(A^2 N) = 0

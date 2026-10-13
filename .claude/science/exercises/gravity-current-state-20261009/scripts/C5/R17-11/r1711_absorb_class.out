@@ -1,0 +1,12 @@
+C1 absorbable site-frame stresses under (S): solution [{pi00: 0, pi01: 0, pi02: 0, pi11: 0, pi12: 0, q1: 0, q2: 0, q3: 0, rho_S: 0}] ; p_S unconstrained: True
+C2(i)  dp/dN = 0  <=>  P_X = 0  ->  W = rho + p = 2 X P_X = 0
+C2(ii) rho = 0 for all X: Eq(P(X), C1*sqrt(X))  -> p = P = C1*sqrt(X) = C1/N (lapse-dependent: cuscuton g/N)
+C2(iii) rho = V for all X: Eq(P(X), C1*sqrt(X) - V) ; W = rho + p = C1*sqrt(X) ; P_X + 2X P_XX = 0 (c_s^2 = infinity)
+        conserved fluid at rest in n: rho' + theta_n W = 0 with rho' = 0  ->  theta_n * W = 0
+C4 1/l_P^4 = 8.820e+122 rho_Lambda
+C4 W = rho+p = 2.0683/a^4 per real scalar (R11-3 L m=1) = 1.82e+123 rho_Lambda
+C4 W = rho+p = 1.8492/a^4 per real scalar (R11-3 G m=1) = 1.63e+123 rho_Lambda
+C4 W = rho+p = 1.3991/a^4 per real scalar (R11-3 NN m=1) = 1.23e+123 rho_Lambda
+C4 W = rho+p = 0.6021/a^4 per real scalar (R17-4 M-zero m=0.01 (U)) = 5.31e+122 rho_Lambda
+C4 W = rho+p = 0.6107/a^4 per real scalar (R17-4 U-zero m=0.1 (U)) = 5.39e+122 rho_Lambda
+C4 W = rho+p = 0.6331/a^4 per real scalar (R17-4 U-zero m=0.1 (M)) = 5.58e+122 rho_Lambda

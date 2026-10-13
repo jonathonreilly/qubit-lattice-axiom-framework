@@ -1,0 +1,16 @@
+lattice lapse N = -epsilon*cos(k*x)*Derivative(xi(t), t) + 1   (R15-1: delta N = -xi')
+L1 (d-i): max over 16 components of |E + T_v - [-(lam(T)+V) g + (g'(T)/N) h]| at O(eps): all zero
+L1 (d-i), g' = 0:  E + T_v + (lam + V) g  = zero in all components
+     -> xi, W0, W1 and the site frame n absent from every component (incl. the 0x momentum constraint).
+(d-i)   background 00 eq:  a''/a = V/3 - gp(t)/2 + lam(t)/3 - rho_m(t)/6
+L2 (d-i): [O(eps) 00 eq] - [delta'' + 2H delta' - rho delta/2 - (1/2)((3g'' + 6Hg') xi + 3 g' xi')] = 0
+L2 (d-i): W0 / W1 dependence of the O(eps) equation: 0 0
+L2 (d-i): xi dependence at g' = 0: 0 0
+(no-exch) background 00 eq:  a''/a = V/3 - W0(t)/2 - gp(t)/2 + lam(t)/3 - rho_m(t)/6
+L3 (no-exch) contrast: W-dependent part of the O(eps) equation: -3*W1(t)/2
+L4 Q_x (momentum leg of Q = div(W h)) at O(eps): epsilon*k*(W0(t)*Derivative(xi(t), t) - W1(t))*sin(k*x)
+L4 Q_t-leg (energy) background: W0 * theta_n = 3 H W0 (r1711_lemmaV_general G2).
+L4 Lemma S jump (R15-1, kernel unchanged by W per L2): D*F/(D - 3*g_p/2) -> at g' = 0: F
+L3b (d-i): (E + T_v)_0x at O(eps) = -epsilon*k*gp(t)*xi(t)*sin(k*x)  (source of the 0x momentum constraint beyond dust)
+L3b (no-exch): (E + T_v)_0x at O(eps) = epsilon*k*(-W0(t) - gp(t))*xi(t)*sin(k*x)  (source of the 0x momentum constraint beyond dust)
+     -> without exchange the lattice tilt xi carries a Planckian momentum density -W0 k xi sin(kx) (frame visible); with (d-i) only the g' (R15-1) term remains, zero under (S).

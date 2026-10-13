@@ -1,0 +1,4 @@
+Q_t = -2*W*Derivative(B(t, r), t)/B(t, r) - W*Derivative(A(t, r), t)/A(t, r) ;  Q_r = W*Derivative(N(t, r), r)/N(t, r)
+dQ_tr = d_t Q_r - d_r Q_t = W*Derivative(N(t, r), r, t)/N(t, r) - W*Derivative(N(t, r), r)*Derivative(N(t, r), t)/N(t, r)**2 + 2*W*Derivative(B(t, r), r, t)/B(t, r) - 2*W*Derivative(B(t, r), r)*Derivative(B(t, r), t)/B(t, r)**2 + W*Derivative(A(t, r), r, t)/A(t, r) - W*Derivative(A(t, r), r)*Derivative(A(t, r), t)/A(t, r)**2
+dQ_tr on a sample inhomogeneous lapse/metric (W=1): 20*r/(r**2*t + 10)**2  at t=1,r=1: 0.165289256198347
+FRW control dQ_tr = 0 ; Q_t = -3*W*Derivative(a(t), t)/a(t) -> Lambda' = kappa*Q_t-type drift 3 H W per unit time

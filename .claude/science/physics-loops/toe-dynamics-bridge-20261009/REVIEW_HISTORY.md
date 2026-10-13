@@ -41,3 +41,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T03:30:03.760058+00:00: Regular9510 published at8c88ed44 after exact source/program/runtime review. Moment cross468 accepted with explicit eigenline repair, originals retained. Nonautonomous774 delivered/root-read pending; G/E and preparation checks active. No prompt/audit change.
 
 2026-10-13T04:07:26.438423+00:00: Root accepted preparation534 and comparison with root167, nonautonomous774/cross577, G/E585. Source-only next milestone active; independent history and BV/local composition ongoing. Seven regular renewal PRs. No prompt/audit change.
+
+2026-10-13T04:41:25.601084+00:00: Accepted history630 and BV/local613, and exact corrected-dynamics source assembly. Created clean next child branch; publication preparation and two neutral frontier derivations active. Seven regular renewal PRs. Root higher-moment candidate sealed before independent preview. No prompt/audit change.

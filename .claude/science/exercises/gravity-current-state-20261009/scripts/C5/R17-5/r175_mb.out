@@ -1,0 +1,67 @@
+=== (1) six-band signed-axis Pi_j = diag(v_j): zeroth moment, standard vs deformed ===
+  j=0: |Pi F - F Pi| for sector-diagonal F = 0.0e+00  (theta = 0 holds)
+  j=1: |Pi F - F Pi| for sector-diagonal F = 0.0e+00  (theta = 0 holds)
+  j=2: |Pi F - F Pi| for sector-diagonal F = 0.0e+00  (theta = 0 holds)
+  q=1e-01: same-label residual |theta F_aa| minimised at theta = +0.0e+00 (value at theta=q: 1.11e-01, i.e. q*|F_aa| with |F_aa| -> |c_a,x| = 1); full residual at theta=q: 5.80e-01, at theta=0: 5.53e-01
+  q=1e-02: same-label residual |theta F_aa| minimised at theta = +0.0e+00 (value at theta=q: 1.00e-02, i.e. q*|F_aa| with |F_aa| -> |c_a,x| = 1); full residual at theta=q: 3.19e-02, at theta=0: 3.17e-02
+  q=1e-03: same-label residual |theta F_aa| minimised at theta = +0.0e+00 (value at theta=q: 1.00e-03, i.e. q*|F_aa| with |F_aa| -> |c_a,x| = 1); full residual at theta=q: 3.63e-03, at theta=0: 3.63e-03
+  allowed constant theta values (differences of spec Pi_x = {-1,0,1}): {-2,-1,0,1,2}; continuous theta near 0 -> 0
+
+=== (2) Theorem MB step A: lambda_max(k+q) - lambda_max(k) must equal theta(q) for every k ===
+  random 4-band, range 1                   |q|=1e-02: spread(dlam)/|q| = 1.113e+01, mean(dlam)/|q| = +5.70e-02 ; |q|=1e-03: spread(dlam)/|q| = 1.112e+01, mean(dlam)/|q| = +5.82e-02
+  C2-exchanged 2-band (k-dep. spectrum)    |q|=1e-02: spread(dlam)/|q| = 5.664e-01, mean(dlam)/|q| = +4.48e-03 ; |q|=1e-03: spread(dlam)/|q| = 5.666e-01, mean(dlam)/|q| = +4.44e-03
+  twisted constant spectrum {1,1,-1,0}     |q|=1e-02: spread(dlam)/|q| = 8.549e-13, mean(dlam)/|q| = +3.94e-15 ; |q|=1e-03: spread(dlam)/|q| = 6.217e-12, mean(dlam)/|q| = +5.55e-15
+  six-band signed axis (Pi_x)              |q|=1e-02: spread(dlam)/|q| = 0.000e+00, mean(dlam)/|q| = +0.00e+00 ; |q|=1e-03: spread(dlam)/|q| = 0.000e+00, mean(dlam)/|q| = +0.00e+00
+  (a single theta(q) exists only if spread = 0; then theta = mean, which -> 0 at the zone level)
+
+=== (3) W1_pf forward stress F^(ij)|_E = V_i Pi_j|_E must be symmetric: v || c on every c != 0 band ===
+  G m=1.0: 3D band with label +e_x: max|v_y c_x - v_x c_y| = 0.9080  (must be 0 for symmetric T^ij)
+  G m=0.3: 3D band with label +e_x: max|v_y c_x - v_x c_y| = 0.9894  (must be 0 for symmetric T^ij)
+  NN m=1.0: 3D band with label +e_x: max|v_y c_x - v_x c_y| = 0.6162  (must be 0 for symmetric T^ij)
+  NN m=0.3: 3D band with label +e_x: max|v_y c_x - v_x c_y| = 0.8602  (must be 0 for symmetric T^ij)
+  axis-mover +x band: max|omega F^0x - D_x F^xx| over 2000 random (k,q) = 4.59e-16; Hermiticity defect = 0.00e+00
+  forward F^xx at k=0.7, m=0.3: q=1e-3 -> 0.860646-4.3e-04i, q=1e-5 -> 0.860630; v_x c_x = 0.860630
+  zeroth moment: F^{0j} = c_j * 1 on each sector, sector-diagonal -> [P_i, T(q)] = 0, theta = 0 (deformed class D only)
+
+=== (4) redshift bridge RB: isotropic-strain response R = sum_i F^ii(k,k) vs physical R_phys = p.v ===
+  (delta eps = -delta_a * R; RB requires R = p.v to leading order in p = k - k0 near the band bottom)
+  axis mover +x, m=1.0: k=+0.30: R/Rphys=+3.333e+00; k=+0.10: R/Rphys=+1.000e+01; k=+0.03: R/Rphys=+3.333e+01; k=+0.01: R/Rphys=+1.000e+02; k=-0.01: R/Rphys=-1.000e+02
+  axis mover +x, m=0.3: k=+0.30: R/Rphys=+3.333e+00; k=+0.10: R/Rphys=+1.000e+01; k=+0.03: R/Rphys=+3.333e+01; k=+0.01: R/Rphys=+1.000e+02; k=-0.01: R/Rphys=-1.000e+02
+  axis mover +x, m=0.01: k=+0.30: R/Rphys=+3.333e+00; k=+0.10: R/Rphys=+1.000e+01; k=+0.03: R/Rphys=+3.333e+01; k=+0.01: R/Rphys=+1.000e+02; k=-0.01: R/Rphys=-1.000e+02
+  axis mover +x, m=0.0: k=+0.30: R/Rphys=+3.333e+00; k=+0.10: R/Rphys=+1.000e+01; k=+0.03: R/Rphys=+3.333e+01; k=+0.01: R/Rphys=+1.000e+02; k=-0.01: R/Rphys=-1.000e+02
+  CONTROL tower (Pi = k+G, N = infinity) m=0.3 G=0.00: R/Rphys = 1.000000; delta eps/(-delta_a eps) = 0.027027 (1 = nu ~ 1/a when massless)
+  CONTROL tower (Pi = k+G, N = infinity) m=0.3 G=6.28: R/Rphys = 1.000000; delta eps/(-delta_a eps) = 0.997761 (1 = nu ~ 1/a when massless)
+  CONTROL tower (Pi = k+G, N = infinity) m=0.0 G=0.00: R/Rphys = 1.000000; delta eps/(-delta_a eps) = 1.000000 (1 = nu ~ 1/a when massless)
+  CONTROL tower (Pi = k+G, N = infinity) m=0.0 G=6.28: R/Rphys = 1.000000; delta eps/(-delta_a eps) = 1.000000 (1 = nu ~ 1/a when massless)
+  CONTROL single-band G (g = u'/2), m=0.3, k=0.3: R/Rphys = 1.000000  (passes RB on the box; fails the zeroth moment, R16-5)
+  CONTROL single-band G (g = u'/2), m=0.3, k=0.1: R/Rphys = 1.000000  (passes RB on the box; fails the zeroth moment, R16-5)
+  CONTROL single-band G (g = u'/2), m=0.3, k=0.01: R/Rphys = 1.000000  (passes RB on the box; fails the zeroth moment, R16-5)
+  CONTROL single-band G (g = u'/2), m=0.3, k=1.9: R/Rphys = 1.000000  (passes RB on the box; fails the zeroth moment, R16-5)
+  sector c = 0 band (any eps): F^ii(k,k) = V_i * 0 = 0 -> R = 0, R/Rphys = 0
+
+=== (5) rotation lemma: a unitary continuous rotation must map joint spec(P) to R(alpha) joint spec(P) ===
+  six-band, alpha=0.2618: spec(cos a Pi_x + sin a Pi_y) = [-0.9659 -0.2588 -0.      0.      0.2588  0.9659]; spec Pi_x = [-1. -0. -0.  0.  0.  1.]; max diff = 0.2588
+  six-band, alpha=0.5236: spec(cos a Pi_x + sin a Pi_y) = [-0.866 -0.5   -0.     0.     0.5    0.866]; spec Pi_x = [-1. -0. -0.  0.  0.  1.]; max diff = 0.5000
+  six-band, alpha=0.7854: spec(cos a Pi_x + sin a Pi_y) = [-0.7071 -0.7071 -0.      0.      0.7071  0.7071]; spec Pi_x = [-1. -0. -0.  0.  0.  1.]; max diff = 0.7071
+  six-band, alpha=1.5708: spec(cos a Pi_x + sin a Pi_y) = [-1. -0. -0.  0.  0.  1.]; spec Pi_x = [-1. -0. -0.  0.  0.  1.]; max diff = 0.0000
+  (equal spectra are necessary for unitary equivalence; they fail for every alpha not in (pi/2)Z)
+
+=== (6) lattice-translation test: winding of det exp(i Pi_x(k)) around the k_x cycle vs N for e^{ik_x} ===
+  random 4-band, range 1                   N=4: winding of det e^(i Pi_x) = -4.24e-16; needed for exp(iP_x) = T_x (x internal unitary): 4
+  C2-exchanged 2-band (k-dep. spectrum)    N=2: winding of det e^(i Pi_x) = +0.00e+00; needed for exp(iP_x) = T_x (x internal unitary): 2
+  twisted constant spectrum {1,1,-1,0}     N=4: winding of det e^(i Pi_x) = -1.41e-16; needed for exp(iP_x) = T_x (x internal unitary): 4
+  six-band signed axis (Pi_x)              N=6: winding of det e^(i Pi_x) = +0.00e+00; needed for exp(iP_x) = T_x (x internal unitary): 6
+
+=== (7) whole-zone v_max of the laws used ===
+  axis mover eps = sqrt(m^2 + 4 sin^2(k_x/2)), m=1.0: whole-zone v_max = 0.618034 (along its axis; 0 transverse)
+  axis mover eps = sqrt(m^2 + 4 sin^2(k_x/2)), m=0.3: whole-zone v_max = 0.861187 (along its axis; 0 transverse)
+  axis mover eps = sqrt(m^2 + 4 sin^2(k_x/2)), m=0.01: whole-zone v_max = 0.995012 (along its axis; 0 transverse)
+  axis mover eps = sqrt(m^2 + 4 sin^2(k_x/2)), m=0.0: whole-zone v_max = 1.000000 (along its axis; 0 transverse)
+  G single band (control): any-d, any-m bound 1.0000 (R16-5 block (1), rerun identical)
+
+=== (8) multiband W1 forward formula P_E F^xx(k,k) P_E = V_x Pi_x|_E (1D, twisted 2-band, with and without degeneracy) ===
+  degenerate=False: max |P_E F^xx P_E - V Pi|_E| over 13 k (q=1e-6) = 1.67e-06
+  degenerate=True: max |P_E F^xx P_E - V Pi|_E| over 13 k (q=1e-6) = 1.67e-06
+
+=== (9) size of the RB failure at a = l_P for an axis-mover optical photon (|c| = 1/a, RECALLED l_P, lambda) ===
+  k a = 2.031e-28; axis-mover strain response / physical redshift = 1/(k a) = 4.924e+27 (sign = sign of v.c: blueshift for movers against their label)

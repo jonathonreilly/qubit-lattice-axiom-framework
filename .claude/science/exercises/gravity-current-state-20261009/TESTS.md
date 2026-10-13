@@ -6045,3 +6045,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - (b) needs E₀ to include the grid zero-point exactly;
   - (c) is a real problem unless the SM is stabilized;
   - (d) needs a global quantity, though possibly a non-signalling one (a constant).
+- **R17-5 (multi-band W2_pf): worker reading EXCLUDED-MB.** A referee is required.
+  - **Theorem MB-A.** For any finite N and any degeneracy, the zeroth moment gives θ ≡ 0 and a k-independent Π spectrum. This closes the C₂-exchanged gap.
+  - **Corollary S.** Standard W2_pf fails for any nonzero momentum density.
+  - **Theorem MB-B.** W1_pf makes every band either momentum-free or an "axis mover" whose energy depends only on ĉ·k. The referee's six-band construction is six species of axis movers.
+  - **Physical momentum fails under every bridge:**
+    - standard θ;
+    - lattice translation (winding 0);
+    - redshift. By Lemma RB, the strain response tracks velocity, giving 1/k of the physical redshift and a blueshift for counter-movers.
+  - **Lemma R.** Standard rotations force Π ≡ 0.
+  - **The only finite-band local route left:** P-r175a, mixing or altered generators, which is untested. P64 (tower) and P90 (discontinuous) are unchanged.
+
+  Referee running.

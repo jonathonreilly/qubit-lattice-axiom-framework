@@ -7950,3 +7950,36 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Price:** P-r1913a.
 
   Referee running.
+
+### C5 Round 19, item 18 (pre-registered 05:47Z, before launch)
+
+**R19-18. Breaking the E1/E2 tie by observation: does E2's friction, lifted to FRW, change the expansion history or structure growth measurably?**
+- **Plain question.**
+  - E1 (start time) and E2 (leaky waves) stay observationally tied (R14-2, R16-14, R19-8 verdict: OPEN, formal tie at the noise level).
+  - R19-8 (worker) names the FRW lift of E2's friction as law data (P-r198a). If the friction also acts on the background expansion, the expansion law changes at O(γ/H) ≈ 2–5% (suggested).
+  - For the friction lifts that are consistent (stated), compute the change to:
+    - H(z) and distance measures;
+    - growth fσ8(z);
+    - the ISW effect;
+    - the GW luminosity distance (friction damps the GW amplitude: d_L^GW ≠ d_L^EM).
+  - Compare with data (RECALLED: DESI BAO, Planck, GW170817's d_L^GW / d_L^EM). Can these break the tie, or bound γ below R14-2's drag bound (0.016–0.047 H₀)?
+- **Setting.**
+  - E2 with γ in the drag-allowed range.
+  - The friction lifts: (L0) acts only on perturbations relative to the FRW background in the cosmic frame; (L1) also acts on the background (state the form).
+  - Linear perturbation theory.
+  - The GW propagation equation h'' + (2 + ν)ℋh' + k²h = 0 with ν from γ.
+- **Prior art (count once):**
+  - R12-7, R14-2, R16-14, R19-8 and their verdicts (Lu et al. 2.98 H₀ benchmark; EM-counterpart scale ~62 H₀);
+  - modified GW propagation and Ξ-parametrisation literature (Belgacem et al., RECALLED);
+  - DESI DR2 (RECALLED).
+- **Removed hypothesis:** perturbation-only friction (for L1).
+- **Probes.**
+  - (a) Background and growth under L1.
+  - (b) d_L^GW / d_L^EM under both lifts, against GW170817 and forecast LISA/ET sirens (RECALLED).
+  - (c) Bounds on γ.
+  - (d) Is the tie broken: does E2 predict a signal that E1 does not?
+- **FIXED readings.**
+  - **TIE-BROKEN:** a stated E2 lift predicts a signal E1 does not, which is either excluded or detectable by stated (RECALLED) data or forecasts. Checked.
+  - **TIE-HOLDS:** every consistent lift's signal is below current and forecast sensitivity. Checked.
+  - **OPEN:** otherwise.
+- **Expectation.** TIE-BROKEN under L1 by forecast sirens: d_L^GW/d_L^EM − 1 ≈ γ/(2H₀) × O(1) ~ 1–2% at z ~ 1, within ET/LISA reach. Under L0 the GW damping alone gives a similar siren signal, since E1 has none.

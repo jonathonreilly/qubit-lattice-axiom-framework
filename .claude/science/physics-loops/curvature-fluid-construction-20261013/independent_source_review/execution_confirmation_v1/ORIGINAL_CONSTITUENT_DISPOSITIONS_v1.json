@@ -1,0 +1,203 @@
+{
+  "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+  "delta_base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "tree": "938abda0610342e552b52ba9634e4e66dc849610",
+  "scope": "The actual 15-path original constituent remains unchanged at this execution confirmation.",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "2a02758d9715b8ef8dc88a925de1d5fbd2e5ba5898da3c9b7a5be43764eda07c",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "2a02758d9715b8ef8dc88a925de1d5fbd2e5ba5898da3c9b7a5be43764eda07c",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "original_sha256": "dc14b646a06fb8e5571b62c841de39800bd4407e3b251a62702e482107f2224d",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz",
+      "final_sha256": "dc14b646a06fb8e5571b62c841de39800bd4407e3b251a62702e482107f2224d",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/EXPLORATORY_RECOVERY_v1.tar.gz"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/GOAL.md",
+      "original_sha256": "13b6e67e49a0e3fd731c37dc7095551e68765330733cc1c3ccda12552a621ba2",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/GOAL.md",
+      "final_sha256": "13b6e67e49a0e3fd731c37dc7095551e68765330733cc1c3ccda12552a621ba2",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/GOAL.md"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/HANDOFF.md",
+      "original_sha256": "df1b4c50c114e968c25f07c81af20f77e6d37e5ed948fad56f60f80d6e0e07d1",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/HANDOFF.md",
+      "final_sha256": "df1b4c50c114e968c25f07c81af20f77e6d37e5ed948fad56f60f80d6e0e07d1",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/HANDOFF.md"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "original_sha256": "02b847a9f927ee6a6af6f4b95be87816bc1b9475df36d9d406cdc0166949ca0e",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+      "final_sha256": "02b847a9f927ee6a6af6f4b95be87816bc1b9475df36d9d406cdc0166949ca0e",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_v1.diff.gz",
+      "original_sha256": "3eed212e74d1b8b3edcda6b4872dda3f0fa150faade01db2d14274d0d466d8fb",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_v1.diff.gz",
+      "final_sha256": "3eed212e74d1b8b3edcda6b4872dda3f0fa150faade01db2d14274d0d466d8fb",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_v1.diff.gz"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/RECOVERY_v1.json",
+      "original_sha256": "b12ebd35e92ab4a746c8bb7f79e686bf369bddccf290b26950f0a69650e0269a",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/RECOVERY_v1.json",
+      "final_sha256": "b12ebd35e92ab4a746c8bb7f79e686bf369bddccf290b26950f0a69650e0269a",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/RECOVERY_v1.json"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "original_sha256": "89f6aefee8f9ed71519e24e6c8725dd35ad609e738c4e72e49e7821d6359a5f0",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/REVIEW_HISTORY.md",
+      "final_sha256": "89f6aefee8f9ed71519e24e6c8725dd35ad609e738c4e72e49e7821d6359a5f0",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/REVIEW_HISTORY.md"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/STATE.yaml",
+      "original_sha256": "b85ea9b342d6d13d656c0cff3723b504e31e0da82711e385bc7ebfc6d4ac21e8",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/STATE.yaml",
+      "final_sha256": "b85ea9b342d6d13d656c0cff3723b504e31e0da82711e385bc7ebfc6d4ac21e8",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/STATE.yaml"
+      }
+    },
+    {
+      "original_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/TRACE_GATE.md",
+      "original_sha256": "869d9915cdd5735329a7b6b0ea6a6adc8b36c8f916cae9f87469230e35e9ba79",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/TRACE_GATE.md",
+      "final_sha256": "869d9915cdd5735329a7b6b0ea6a6adc8b36c8f916cae9f87469230e35e9ba79",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": ".claude/science/physics-loops/curvature-fluid-construction-20261013/TRACE_GATE.md"
+      }
+    },
+    {
+      "original_path": "docs/CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "original_sha256": "5bc43c79d36e7eae654be140c778ce562edf6ff49a5d6bbe8492ac6dc03f853d",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": "docs/CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "5bc43c79d36e7eae654be140c778ce562edf6ff49a5d6bbe8492ac6dc03f853d",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": "docs/CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+      }
+    },
+    {
+      "original_path": "outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json",
+      "original_sha256": "c70c9f46b7a888e16e1c599c7586859be34de1f089637e4bf23109387e62cda1",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": "outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json",
+      "final_sha256": "c70c9f46b7a888e16e1c599c7586859be34de1f089637e4bf23109387e62cda1",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": "outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json"
+      }
+    },
+    {
+      "original_path": "outputs/curvature_fluid_construction_2026_10_13/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "original_sha256": "431214309e28e4ab1e67c18635d05f0b8dd7549db039aa2ca56c7a42abf8b325",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": "outputs/curvature_fluid_construction_2026_10_13/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "final_sha256": "431214309e28e4ab1e67c18635d05f0b8dd7549db039aa2ca56c7a42abf8b325",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": "outputs/curvature_fluid_construction_2026_10_13/OFF_TRAJECTORY_FIXTURES_v2.json"
+      }
+    },
+    {
+      "original_path": "outputs/curvature_fluid_construction_2026_10_13/imports.json",
+      "original_sha256": "a6daf9d98305241a7b1f696753649c2cd6b9fdee41f1519d097dbb412ed3e44e",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": "outputs/curvature_fluid_construction_2026_10_13/imports.json",
+      "final_sha256": "a6daf9d98305241a7b1f696753649c2cd6b9fdee41f1519d097dbb412ed3e44e",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": "outputs/curvature_fluid_construction_2026_10_13/imports.json"
+      }
+    },
+    {
+      "original_path": "scripts/curvature_fluid_construction_2026_10_13.py",
+      "original_sha256": "3675d6d0aab39e3898c9d96bce321a7ff8460058b458f6ca9bcf68b72cdd17bb",
+      "original_commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+      "disposition": "unchanged",
+      "final_path": "scripts/curvature_fluid_construction_2026_10_13.py",
+      "final_sha256": "3675d6d0aab39e3898c9d96bce321a7ff8460058b458f6ca9bcf68b72cdd17bb",
+      "recovery": {
+        "kind": "git-blob",
+        "commit": "a1401c38a6321540a37a7ae07b6b37b55ddcba16",
+        "path": "scripts/curvature_fluid_construction_2026_10_13.py"
+      }
+    }
+  ]
+}

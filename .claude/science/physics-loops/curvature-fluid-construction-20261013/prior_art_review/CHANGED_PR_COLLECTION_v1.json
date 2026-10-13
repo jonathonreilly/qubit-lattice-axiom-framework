@@ -1,0 +1,19 @@
+{
+  "commands": [
+    {
+      "command": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls/9512/files?per_page=100"
+      ],
+      "started_at": "2026-10-13T11:42:35.907976+00:00",
+      "ended_at": "2026-10-13T11:42:37.296771+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v1.json",
+      "sha256": "f226a3ba1c1a83c683974f8ee15dcd6b681183dcfe1c8d9de7ca99119f8f74c1",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v1.json.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-10-13T11:58:26.160105+00:00",
+  "purpose": "Recover prior complete exact-note reading for comparison; no PASS or global theorem transferred to changed curvature model.",
+  "records": [
+    {
+      "original": {
+        "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/REPORT_v1.md",
+        "sha256": "76711b1ead0101f475a10b27f9f16dac70ffd1e50d96835070b984cd918e7a54",
+        "bytes": 17674
+      },
+      "recovery": {
+        "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_canonical_review/REPORT_v1.md",
+        "sha256": "76711b1ead0101f475a10b27f9f16dac70ffd1e50d96835070b984cd918e7a54",
+        "bytes": 17674
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/RECEIPT_v1.json",
+        "sha256": "d11c89820771d38960f573c9bab8ff02cda47e94a70f293c96b12e18e4d1a86b",
+        "bytes": 60830
+      },
+      "recovery": {
+        "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_canonical_review/RECEIPT_v1.json",
+        "sha256": "d11c89820771d38960f573c9bab8ff02cda47e94a70f293c96b12e18e4d1a86b",
+        "bytes": 60830
+      }
+    },
+    {
+      "original": {
+        "path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/independent_source_review/FINAL_BINDING_v1.json",
+        "sha256": "62895b7b4298fc9b65caa5e2d670a5125ef0aba5118786e1d79a69c70efc1814",
+        "bytes": 52090
+      },
+      "recovery": {
+        "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_canonical_review/FINAL_BINDING_v1.json",
+        "sha256": "62895b7b4298fc9b65caa5e2d670a5125ef0aba5118786e1d79a69c70efc1814",
+        "bytes": 52090
+      }
+    }
+  ],
+  "unchanged_scientific_sources": [
+    {
+      "path": "docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "current_pr_head": "75d8f001c8e055acd91383e3e088ead76f1851f2",
+      "prior_source_commit": "eb22c212bd0feeff27525453cbe21fc925bb667f",
+      "sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a"
+    },
+    {
+      "path": "outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "current_pr_head": "75d8f001c8e055acd91383e3e088ead76f1851f2",
+      "prior_source_commit": "eb22c212bd0feeff27525453cbe21fc925bb667f",
+      "sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb"
+    }
+  ],
+  "recovery_limit": "These three reports/bindings are copied exactly. Their entire original supporting-evidence tree is not claimed recovered in this folder."
+}

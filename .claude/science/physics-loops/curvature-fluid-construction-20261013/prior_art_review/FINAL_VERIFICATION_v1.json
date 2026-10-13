@@ -1,0 +1,691 @@
+{
+  "created_at": "2026-10-13T11:58:26.174514+00:00",
+  "purpose": "Identity/bookkeeping verification only, not mathematical tests or a gate run.",
+  "local_ref_command": [
+    "git",
+    "rev-parse",
+    "HEAD",
+    "origin/main",
+    "origin/ai/execution"
+  ],
+  "local_ref_exit_code": 0,
+  "local_ref_stdout": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237\n516cb69d8487ff04f8a48e065d3dcbe71d7dd237\n3a4b2c66a1ead7a1c48b4359627e968f681e3c39\n",
+  "local_ref_stderr": "",
+  "checks": [
+    {
+      "name": "closing remote main is pinned baseline",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "closing inventory has no new, closed or moved head/base",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "source snapshot labels are unique",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source scripts/metric_clock_reconstruction_2026_10_13.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source scripts/local_vector_matter_readout_2026_10_12.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source scripts/positive_mediator_inverse_2026_10_12.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot reused_analytic_review/source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "unchanged local original /Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/candidate/HAND_DERIVATION_v1.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "unchanged local original /Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/HAND_DERIVATION_v1.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/candidate/SCOPE_CLARIFICATION_v2.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "unchanged local original /Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/SCOPE_CLARIFICATION_v2.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/main/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/main/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/main/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/main/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "pinned-main blob docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9512/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9512/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9512/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9512/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9513/docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9513/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9513/docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9514/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9514/outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "snapshot source_snapshot/pr_9515/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "current-head source docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "instruction blob 3a4b2c66a1ead7a1c48b4359627e968f681e3c39:AGENTS.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "instruction blob 516cb69d8487ff04f8a48e065d3dcbe71d7dd237:AGENTS.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "instruction blob 516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "instruction blob 516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "instruction blob 516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "reused canonical review report matches its original receipt",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "reused canonical final binding matches original receipt",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "PR9514 unchanged reviewed source docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "PR9514 unchanged reviewed source outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "local ref read succeeded",
+      "satisfied": true,
+      "details": null
+    },
+    {
+      "name": "local science and planning refs match assigned baseline",
+      "satisfied": true,
+      "details": [
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+        "3a4b2c66a1ead7a1c48b4359627e968f681e3c39"
+      ]
+    }
+  ],
+  "unsatisfied": []
+}

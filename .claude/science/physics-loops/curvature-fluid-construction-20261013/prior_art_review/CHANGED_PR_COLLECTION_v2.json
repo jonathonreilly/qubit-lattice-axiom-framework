@@ -1,0 +1,340 @@
+{
+  "commands": [
+    {
+      "command": [
+        "gh",
+        "api",
+        "--paginate",
+        "--slurp",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls/9512/files?per_page=100"
+      ],
+      "started_at": "2026-10-13T11:43:37.013171+00:00",
+      "ended_at": "2026-10-13T11:43:38.884227+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v2.json",
+      "sha256": "c9ee96d18ac39c3efae229d00ffea3c74f59b15f108b843d55e98134378a8df3",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v2.json.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=f6a820fd66011a50752670a454fb375b420ddbd6"
+      ],
+      "started_at": "2026-10-13T11:43:38.889247+00:00",
+      "ended_at": "2026-10-13T11:43:39.244743+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "68fc78e350bd4ca4365b39efe2af1f070b2bafce822c2051c79073af4bd0876b",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=f6a820fd66011a50752670a454fb375b420ddbd6"
+      ],
+      "started_at": "2026-10-13T11:43:39.245393+00:00",
+      "ended_at": "2026-10-13T11:43:39.572355+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "16b1411c5c336e7b294e77d45128a394bf0d6c077bd5ca1dccfd1e2172a5b621",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=f6a820fd66011a50752670a454fb375b420ddbd6"
+      ],
+      "started_at": "2026-10-13T11:43:39.572758+00:00",
+      "ended_at": "2026-10-13T11:43:39.901772+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "d6644746d0b41b93457e056739a8b7963dee377ef01314d15274ae324b1d7590",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=f6a820fd66011a50752670a454fb375b420ddbd6"
+      ],
+      "started_at": "2026-10-13T11:43:39.902135+00:00",
+      "ended_at": "2026-10-13T11:43:40.165252+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "--paginate",
+        "--slurp",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls/9513/files?per_page=100"
+      ],
+      "started_at": "2026-10-13T11:43:40.165447+00:00",
+      "ended_at": "2026-10-13T11:43:41.530800+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_FILES_v2.json",
+      "sha256": "43e18f0da84e094a92ffce909f61e723057fec13b3fe755afb04d7113d773d9f",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_FILES_v2.json.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=a968559552de327386e3a5b74c7c72a3c17f87bc"
+      ],
+      "started_at": "2026-10-13T11:43:41.534835+00:00",
+      "ended_at": "2026-10-13T11:43:41.896291+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "9d828fca451d2018187b258674f3342af571bc6d845f3a4dfce5dea1afcbddd8",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=a968559552de327386e3a5b74c7c72a3c17f87bc"
+      ],
+      "started_at": "2026-10-13T11:43:41.896905+00:00",
+      "ended_at": "2026-10-13T11:43:42.181922+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=a968559552de327386e3a5b74c7c72a3c17f87bc"
+      ],
+      "started_at": "2026-10-13T11:43:42.183051+00:00",
+      "ended_at": "2026-10-13T11:43:42.470284+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "--paginate",
+        "--slurp",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls/9514/files?per_page=100"
+      ],
+      "started_at": "2026-10-13T11:43:42.470702+00:00",
+      "ended_at": "2026-10-13T11:43:43.075136+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_FILES_v2.json",
+      "sha256": "dc8eaf5b0cb018d86ffe2d20eecd5e906fefb1b1c9dcc8881140dc7319b1c019",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_FILES_v2.json.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=75d8f001c8e055acd91383e3e088ead76f1851f2"
+      ],
+      "started_at": "2026-10-13T11:43:43.077496+00:00",
+      "ended_at": "2026-10-13T11:43:43.358850+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/outputs/analytic_fluid_cosmology_2026_10_13/imports.json?ref=75d8f001c8e055acd91383e3e088ead76f1851f2"
+      ],
+      "started_at": "2026-10-13T11:43:43.359111+00:00",
+      "ended_at": "2026-10-13T11:43:43.618473+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_imports.json",
+      "sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_imports.json.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "--paginate",
+        "--slurp",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls/9515/files?per_page=100"
+      ],
+      "started_at": "2026-10-13T11:43:43.618702+00:00",
+      "ended_at": "2026-10-13T11:43:44.503469+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_FILES_v2.json",
+      "sha256": "5d2f5941cc29354924a7516925c887fdca5e2ccde0186a41c2000438c5401e57",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_FILES_v2.json.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=301b06c3c2b8ce3c1b33c9333eee89a2248e4a99"
+      ],
+      "started_at": "2026-10-13T11:43:44.505441+00:00",
+      "ended_at": "2026-10-13T11:43:44.845213+00:00",
+      "exit_code": 0,
+      "stdout": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "4d0a8c9b8a19ef46c4d7779f1a12f8149532762f39d5e607ae7c9b2edbad7f41",
+      "stderr": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sources": [
+    {
+      "pr": 9512,
+      "head": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "path": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "68fc78e350bd4ca4365b39efe2af1f070b2bafce822c2051c79073af4bd0876b",
+      "bytes": 54972,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9512,
+      "head": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "path": "docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "16b1411c5c336e7b294e77d45128a394bf0d6c077bd5ca1dccfd1e2172a5b621",
+      "bytes": 47670,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9512,
+      "head": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "path": "docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "d6644746d0b41b93457e056739a8b7963dee377ef01314d15274ae324b1d7590",
+      "bytes": 48741,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9512,
+      "head": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "path": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "bytes": 34185,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9513,
+      "head": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+      "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "path": "docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "9d828fca451d2018187b258674f3342af571bc6d845f3a4dfce5dea1afcbddd8",
+      "bytes": 96537,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9513/docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9513,
+      "head": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+      "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "bytes": 72986,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9513/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9513,
+      "head": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+      "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+      "bytes": 68680,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9513/docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9514,
+      "head": "75d8f001c8e055acd91383e3e088ead76f1851f2",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "path": "docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a",
+      "bytes": 13309,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9514/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9514,
+      "head": "75d8f001c8e055acd91383e3e088ead76f1851f2",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "path": "outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb",
+      "bytes": 1025,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9514/outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "pr": 9515,
+      "head": "301b06c3c2b8ce3c1b33c9333eee89a2248e4a99",
+      "base": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+      "path": "docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "4d0a8c9b8a19ef46c4d7779f1a12f8149532762f39d5e607ae7c9b2edbad7f41",
+      "bytes": 45642,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9515/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "status": "added",
+      "coverage": "captured; reading scope recorded separately"
+    }
+  ]
+}

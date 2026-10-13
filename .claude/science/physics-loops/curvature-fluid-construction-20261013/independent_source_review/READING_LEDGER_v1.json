@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-13T12:13:16.723140+00:00",
+  "complete_current_scientific_source": [
+    "docs/CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json",
+    "outputs/curvature_fluid_construction_2026_10_13/OFF_TRAJECTORY_FIXTURES_v2.json",
+    "outputs/curvature_fluid_construction_2026_10_13/imports.json",
+    "scripts/curvature_fluid_construction_2026_10_13.py"
+  ],
+  "complete_metadata_read": [
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/GOAL.md",
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/HANDOFF.md",
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/PORT_FUNCTION_IDENTITY_v1.json",
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/STATE.yaml",
+    ".claude/science/physics-loops/curvature-fluid-construction-20261013/TRACE_GATE.md"
+  ],
+  "full_inventory": "All 348 recovery manifest entries and archive payloads verified, including exact original bytes/modes; full 344-file exploratory directory census.",
+  "prior_review_reuse": "Original full action/numerical review and affected v2 review in the same reviewer session reused under exact pins; no original positive rerun.",
+  "other_review_read": "Complete archived handwritten CURVATURE_FLUID_MATH_REVIEW.md and affected_scope_v2/SCOPED_CONFIRMATION.md; complete launch_check PRIOR_SOURCE_SCOPE_REPORT_v1.md, with its original source-search limits preserved.",
+  "original_dispositions": "SOURCE_DISPOSITIONS_v1.json /original_dispositions is the reviewer-owned 15-path UNIT-compatible mapping.",
+  "new_math": "Full manual canonical proof check plus exact independent two-field Euler\u2013Lagrange, expanded connection, acceleration/force and vacuum accounting controls.",
+  "unchanged_math": "Previously independent raw-action derivative, whole-grid/Hessian/normalization/inverse/ideal-species and canonical-momentum history controls reused.",
+  "no_new_primary_input": "No new empirical dataset, external theorem or primary numerical value imported. Read-only git remote baseline check only.",
+  "unrun": [
+    "canonical positive runner",
+    "UNIT checker",
+    "runner-cache capture",
+    "full graph build",
+    "combined pipeline/strict lint/changed evidence",
+    "formal audit",
+    "landing"
+  ]
+}

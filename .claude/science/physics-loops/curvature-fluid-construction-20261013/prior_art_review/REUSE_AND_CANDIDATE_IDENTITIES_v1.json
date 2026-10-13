@@ -1,0 +1,1290 @@
+{
+  "created_at": "2026-10-13T11:44:21.697077+00:00",
+  "prior_source_count": 44,
+  "all_reused_identities_valid": true,
+  "sources": [
+    {
+      "original_path": "docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "0b108531b9ac809d6d7ee58cb69d3ee1d2d926a73608906092e5ed609c6077a9",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "final_path": "docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "final_sha256": "0b108531b9ac809d6d7ee58cb69d3ee1d2d926a73608906092e5ed609c6077a9",
+      "bytes": 11562,
+      "total_lines": 397,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          397
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md"
+    },
+    {
+      "original_path": "docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "e7474cd8bfca8d7398da5c0ca6e3674481a4bdd0a13f145422a20c311aa7e79c",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "final_path": "docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "final_sha256": "e7474cd8bfca8d7398da5c0ca6e3674481a4bdd0a13f145422a20c311aa7e79c",
+      "bytes": 12081,
+      "total_lines": 263,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          263
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md"
+    },
+    {
+      "original_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "33a8da1a891c95f2bbf2212480bb7b4edb260e9b219f979329e6619b0f5a893a",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "final_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "final_sha256": "33a8da1a891c95f2bbf2212480bb7b4edb260e9b219f979329e6619b0f5a893a",
+      "bytes": 18016,
+      "total_lines": 342,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          342
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md"
+    },
+    {
+      "original_path": "docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "2549791c67c567049e6ef387ed42d7a3692441a78dbd95b72316483130d04e3f",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "final_path": "docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "final_sha256": "2549791c67c567049e6ef387ed42d7a3692441a78dbd95b72316483130d04e3f",
+      "bytes": 23774,
+      "total_lines": 399,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          399
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md"
+    },
+    {
+      "original_path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "final_path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "final_sha256": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28",
+      "bytes": 6569,
+      "total_lines": 146,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          146
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md"
+    },
+    {
+      "original_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "final_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "final_sha256": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96",
+      "bytes": 6257,
+      "total_lines": 163,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          163
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+    },
+    {
+      "original_path": "docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "0ea0828bc054507d4aa0ecab9190172620084197941189f0ed4942b1399e0fa6",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "final_path": "docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "final_sha256": "0ea0828bc054507d4aa0ecab9190172620084197941189f0ed4942b1399e0fa6",
+      "bytes": 7586,
+      "total_lines": 172,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          172
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md"
+    },
+    {
+      "original_path": "docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "af7bbdfda8831df1c86ec7ca9cf62b6cbdd920f4dca1a4cb03e7f389c73e386a",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "final_path": "docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "final_sha256": "af7bbdfda8831df1c86ec7ca9cf62b6cbdd920f4dca1a4cb03e7f389c73e386a",
+      "bytes": 23997,
+      "total_lines": 529,
+      "coverage": "source premises, statement and initial law read; not complete proof review",
+      "read_ranges": [
+        [
+          1,
+          150
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md"
+    },
+    {
+      "original_path": "docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "final_path": "docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "final_sha256": "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f",
+      "bytes": 6377,
+      "total_lines": 246,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          246
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md"
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "a08b1b7c08bf9dc8a578e93a5a3a0de2096f502c1ab90eeb54d4d375ace9c473",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "final_path": "docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "final_sha256": "a08b1b7c08bf9dc8a578e93a5a3a0de2096f502c1ab90eeb54d4d375ace9c473",
+      "bytes": 9228,
+      "total_lines": 75,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          75
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+    },
+    {
+      "original_path": "docs/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "c81c0029fb70d1cea0ecf41ee893caf357747bcda138af5d1bef5ed5848a114a",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "final_path": "docs/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "final_sha256": "c81c0029fb70d1cea0ecf41ee893caf357747bcda138af5d1bef5ed5848a114a",
+      "bytes": 15862,
+      "total_lines": 327,
+      "coverage": "source premises, statement and initial law read; not complete proof review",
+      "read_ranges": [
+        [
+          1,
+          145
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "original_path": "docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+      "original_sha256": "dd5bf5be3c3e4e5636056d18fc8c02aa14c7cab9fbc5c8ca59d36f1cd021460b",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "dd5bf5be3c3e4e5636056d18fc8c02aa14c7cab9fbc5c8ca59d36f1cd021460b",
+      "bytes": 56130,
+      "total_lines": 1077,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=8c88ed444f104bfd482c5886d28d7b09f68c6c1b"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9510",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+      "original_sha256": "b320a367c3c699afd412f6d4d56e5ff0d9105c86568e062723de2a4775e4fe0f",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "b320a367c3c699afd412f6d4d56e5ff0d9105c86568e062723de2a4775e4fe0f",
+      "bytes": 72190,
+      "total_lines": 1453,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=8c88ed444f104bfd482c5886d28d7b09f68c6c1b"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9510",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "fa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9",
+      "original_sha256": "30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5",
+      "bytes": 30422,
+      "total_lines": 599,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          599
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "fa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9:docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9509",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "scripts/metric_clock_reconstruction_2026_10_13.py",
+      "origin_commit": "fa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9",
+      "original_sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "final_path": "scripts/metric_clock_reconstruction_2026_10_13.py",
+      "final_sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "bytes": 23394,
+      "total_lines": 471,
+      "coverage": "operator and constant-K example code read, plus function/keyword outline; not executed",
+      "read_ranges": [
+        [
+          1,
+          115
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "fa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9:scripts/metric_clock_reconstruction_2026_10_13.py"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9509",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py"
+    },
+    {
+      "original_path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "d52ea0184932788d3d031e7207a6bad09114716d",
+      "original_sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "bytes": 82120,
+      "total_lines": 1581,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "d52ea0184932788d3d031e7207a6bad09114716d:docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9508",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "d52ea0184932788d3d031e7207a6bad09114716d",
+      "original_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "bytes": 75306,
+      "total_lines": 1420,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "d52ea0184932788d3d031e7207a6bad09114716d:docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9508",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+      "original_sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+      "bytes": 17317,
+      "total_lines": 345,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          345
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f:docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9507",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "scripts/local_vector_matter_readout_2026_10_12.py",
+      "origin_commit": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+      "original_sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "final_path": "scripts/local_vector_matter_readout_2026_10_12.py",
+      "final_sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+      "bytes": 16442,
+      "total_lines": 296,
+      "coverage": "captured only; no new complete runner read or execution claimed",
+      "read_ranges": [],
+      "capture_command": [
+        "git",
+        "show",
+        "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f:scripts/local_vector_matter_readout_2026_10_12.py"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9507",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py"
+    },
+    {
+      "original_path": "docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "4ff0ff1d7868b24d7854428110512daed13530f9",
+      "original_sha256": "376937859671164477c78965dbee50856f01e5c0700b35efa53594fcab1dacf4",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "376937859671164477c78965dbee50856f01e5c0700b35efa53594fcab1dacf4",
+      "bytes": 59969,
+      "total_lines": 1276,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "4ff0ff1d7868b24d7854428110512daed13530f9:docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9506",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "4ff0ff1d7868b24d7854428110512daed13530f9",
+      "original_sha256": "e048553d5826df8f8110c8e9a28e7180bf0ebf218df89b5e600d07b0d7ca9f81",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "e048553d5826df8f8110c8e9a28e7180bf0ebf218df89b5e600d07b0d7ca9f81",
+      "bytes": 37982,
+      "total_lines": 787,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "4ff0ff1d7868b24d7854428110512daed13530f9:docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9506",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "4ff0ff1d7868b24d7854428110512daed13530f9",
+      "original_sha256": "08f11b9bf7b952b53034915e8a6bcc3c53afe16b4e0939b66c9ecbca390cda17",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "08f11b9bf7b952b53034915e8a6bcc3c53afe16b4e0939b66c9ecbca390cda17",
+      "bytes": 36046,
+      "total_lines": 846,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "4ff0ff1d7868b24d7854428110512daed13530f9:docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9506",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "039198fed41d5599341bbcbc7908dcfae1215421",
+      "original_sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "bytes": 11292,
+      "total_lines": 223,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          223
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "039198fed41d5599341bbcbc7908dcfae1215421:docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9505",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "origin_commit": "039198fed41d5599341bbcbc7908dcfae1215421",
+      "original_sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "final_path": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "final_sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "bytes": 8556,
+      "total_lines": 173,
+      "coverage": "captured only; no new complete runner read or execution claimed",
+      "read_ranges": [],
+      "capture_command": [
+        "git",
+        "show",
+        "039198fed41d5599341bbcbc7908dcfae1215421:scripts/local_vector_homogeneous_response_2026_10_12.py"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9505",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py"
+    },
+    {
+      "original_path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "f055a7bee614bd614cf3d387ec60804eb9f7597b",
+      "original_sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "bytes": 63908,
+      "total_lines": 1356,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "f055a7bee614bd614cf3d387ec60804eb9f7597b:docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9504",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "f055a7bee614bd614cf3d387ec60804eb9f7597b",
+      "original_sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "bytes": 38862,
+      "total_lines": 806,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "f055a7bee614bd614cf3d387ec60804eb9f7597b:docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9504",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb",
+      "original_sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+      "bytes": 14689,
+      "total_lines": 297,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb:docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9503",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+      "original_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "bytes": 69122,
+      "total_lines": 1445,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "ba3ea535fa5ce80a3ad81b384a2063185da42756:docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9502",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+      "original_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "bytes": 61231,
+      "total_lines": 1199,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "ba3ea535fa5ce80a3ad81b384a2063185da42756:docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9502",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "3153d7b2ddceeb26b78f2e1334ffa83218a01333",
+      "original_sha256": "0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77",
+      "bytes": 14811,
+      "total_lines": 313,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          313
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "3153d7b2ddceeb26b78f2e1334ffa83218a01333:docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9501",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "scripts/positive_mediator_inverse_2026_10_12.py",
+      "origin_commit": "3153d7b2ddceeb26b78f2e1334ffa83218a01333",
+      "original_sha256": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "final_path": "scripts/positive_mediator_inverse_2026_10_12.py",
+      "final_sha256": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9",
+      "bytes": 10558,
+      "total_lines": 240,
+      "coverage": "captured only; no new complete runner read or execution claimed",
+      "read_ranges": [],
+      "capture_command": [
+        "git",
+        "show",
+        "3153d7b2ddceeb26b78f2e1334ffa83218a01333:scripts/positive_mediator_inverse_2026_10_12.py"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9501",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py"
+    },
+    {
+      "original_path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "original_sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "bytes": 53292,
+      "total_lines": 1044,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "3679df3c7901b4660f5d9e9d69023e2e82772a83:docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9500",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "original_sha256": "361e7cf37b379ceaa5958b27c53833110658956bd3d0c6f811cafe2440c6a4fe",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "361e7cf37b379ceaa5958b27c53833110658956bd3d0c6f811cafe2440c6a4fe",
+      "bytes": 8807,
+      "total_lines": 168,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "3679df3c7901b4660f5d9e9d69023e2e82772a83:docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9500",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "origin_commit": "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3",
+      "original_sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_path": "docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d",
+      "bytes": 17353,
+      "total_lines": 304,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          120
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3:docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9499",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "original_path": "scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "ddd96589d48c9b7c2c6d44afe4fc7be3aa66bbe522be4576de2f2383786b3511",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "final_path": "scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "final_sha256": "ddd96589d48c9b7c2c6d44afe4fc7be3aa66bbe522be4576de2f2383786b3511",
+      "bytes": 8688,
+      "total_lines": 241,
+      "coverage": "complete source read for scope; not executed",
+      "read_ranges": [
+        [
+          1,
+          241
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "aee05c3b33a67de1f05bc38d717ede36a8ad2d7f4db13a6f883efbea64a65de9",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "final_path": "scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "final_sha256": "aee05c3b33a67de1f05bc38d717ede36a8ad2d7f4db13a6f883efbea64a65de9",
+      "bytes": 18171,
+      "total_lines": 280,
+      "coverage": "action and primary algebra controls read; not executed",
+      "read_ranges": [
+        [
+          1,
+          160
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py"
+    },
+    {
+      "original_path": "docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "f2a91f3813a8f03609327d20c56aa40b222bceb41fbc40296727726c4d36eb59",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "final_path": "docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "final_sha256": "f2a91f3813a8f03609327d20c56aa40b222bceb41fbc40296727726c4d36eb59",
+      "bytes": 13545,
+      "total_lines": 301,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          301
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md"
+    },
+    {
+      "original_path": "docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "5a9a12c08eb9eadda495111e6d7a20665210ade5dadfae69ba8f9220c4ed963d",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "final_path": "docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "final_sha256": "5a9a12c08eb9eadda495111e6d7a20665210ade5dadfae69ba8f9220c4ed963d",
+      "bytes": 13114,
+      "total_lines": 252,
+      "coverage": "source premises, statement and initial law read; not complete proof review",
+      "read_ranges": [
+        [
+          1,
+          160
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md"
+    },
+    {
+      "original_path": "docs/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "5cbed0a436adbe043ca93f746a6cdd5a0b2825838cc356886e31c6bffcbe86e0",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "final_path": "docs/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "final_sha256": "5cbed0a436adbe043ca93f746a6cdd5a0b2825838cc356886e31c6bffcbe86e0",
+      "bytes": 7046,
+      "total_lines": 193,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+    },
+    {
+      "original_path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "original_sha256": "d23611a557a4cc8912c1c0e6fa474ed115bbfd507623c38736d6a47821e2fcba",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "d23611a557a4cc8912c1c0e6fa474ed115bbfd507623c38736d6a47821e2fcba",
+      "bytes": 52178,
+      "total_lines": 1033,
+      "coverage": "source premises, statement and initial law read; not complete proof review",
+      "read_ranges": [
+        [
+          1,
+          150
+        ]
+      ],
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged current main",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    },
+    {
+      "original_path": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "original_sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089",
+      "bytes": 53254,
+      "total_lines": 1169,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          140
+        ]
+      ],
+      "capture_command": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=bd831ffb14c7d7f12bf1b8165596a0db85f838ef"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9511",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "original_sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9",
+      "bytes": 36202,
+      "total_lines": 721,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          140
+        ]
+      ],
+      "capture_command": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=bd831ffb14c7d7f12bf1b8165596a0db85f838ef"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9511",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "origin_commit": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "original_sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_path": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "final_sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f",
+      "bytes": 40821,
+      "total_lines": 852,
+      "coverage": "source scope/model screen and full-file targeted keyword scan; not full proof review",
+      "read_ranges": [
+        [
+          1,
+          140
+        ]
+      ],
+      "capture_command": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/contents/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md?ref=bd831ffb14c7d7f12bf1b8165596a0db85f838ef"
+      ],
+      "role": "repository comparison",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "identity_valid": true,
+      "reuse_basis": "unchanged actual open PR9511",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "origin_commit": null,
+      "original_sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "disposition": "unchanged comparison source; byte-exact review snapshot preserved",
+      "recovery": "source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "final_sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "bytes": 7275,
+      "total_lines": 160,
+      "coverage": "complete note read for comparison scope; no new mathematical proof certification",
+      "read_ranges": [
+        [
+          1,
+          160
+        ]
+      ],
+      "capture_command": null,
+      "role": "candidate comparison source",
+      "reused_snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "identity_valid": true,
+      "reuse_basis": "original candidate",
+      "prior_snapshot": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/analytic-fluid-construction-20261013/prior_art_review/source_snapshot/AN_HAND_DERIVATION_v2.md"
+    }
+  ],
+  "candidate_sources": [
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/HAND_DERIVATION_v1.md",
+      "sha256": "2ee1ebdbb34462010b8c9e34fa90466f173948a1ab5fbb940231b20c701db04f",
+      "bytes": 10361,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/candidate/HAND_DERIVATION_v1.md",
+      "coverage": "Complete source read for prerequisite/model/scope comparison; not a new proof audit."
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/SCOPE_CLARIFICATION_v2.md",
+      "sha256": "5705e9018b91c893cd183f60eb9a774443c87183414a987176ec2f2c56879666",
+      "bytes": 785,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/candidate/SCOPE_CLARIFICATION_v2.md",
+      "coverage": "Complete source read for prerequisite/model/scope comparison; not a new proof audit."
+    }
+  ],
+  "new_main_sources": [
+    {
+      "path": "docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "5a9d94c23b1646544efdd343016b7d3031037eee7fabc7af578dc8af48225ca6",
+      "bytes": 6448,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md"
+      ],
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "path": "docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "a1204a14cf7b738933262d6b784530eb8284fa47dd512199310438ff46ff3448",
+      "bytes": 8141,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md",
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md"
+      ],
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "c2e52549218e0c01bbda4d4c93320acb685c4e8a6b6faf35f7ae9d3c1253415e",
+      "bytes": 6884,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md"
+      ],
+      "coverage": "captured; reading scope recorded separately"
+    },
+    {
+      "path": "docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "origin_commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "06c2e0d257f79f991985cbd8063285a765d09f4aee9896699b17a926b06ba7e2",
+      "bytes": 43046,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "capture_command": [
+        "git",
+        "show",
+        "516cb69d8487ff04f8a48e065d3dcbe71d7dd237:docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "coverage": "captured; reading scope recorded separately"
+    }
+  ]
+}

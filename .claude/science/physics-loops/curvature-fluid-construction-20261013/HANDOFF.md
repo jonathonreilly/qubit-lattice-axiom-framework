@@ -1,5 +1,18 @@
-# Curvature/fluid milestone handoff
+# Curvature/fluid canonical handoff
 
-Direct parent /root authored the action, proof, fixtures and computation. Exploratory v2 6663/0; independent math103/0, numerical32831/0 plus affected19083/0. Parent read complete reports and verified29 math,198 original numerical and321 affected identities including receipts. Three original assertion gaps and the reviewer chart-fixture failure are preserved in recovery.
+Source constituent a1401c38a6321540a37a7ae07b6b37b55ddcba16, base
+516cb69d8487ff04f8a48e065d3dcbe71d7dd237. Parent /root remains scientific
+author. The complete source review passed1157 controls and the canonical
+capture completed6651/0. The independent execution check compared120384
+typed leaves and passed112 controls, retaining the exact original science.
 
-Canonical port retains all13 non-main functions and physical calculations, changes only location/input declarations/I-O/summary. Canonical execution and final source/gates are pending; do not infer PASS from these exploratory counts. Full proof is in the new canonical note. Thermal transition is a separate developing block. All quantities remain conditional; no observed abundance or joint fit. Fixed parent campaign deadline16:53Z on2026-10-13.
+Actual preflight v1 failed its record schema; corrected v2 passed before
+execution. First science output passed but cache capture rejected a parent
+directory stat change as RESULTS.json was first created. Its available exact
+output and selected tool transcription remain preserved; exact first-run
+timing and complete raw traceback are unavailable. Second capture succeeded
+with the same source and guard; its cache is fresh. No retrospective first
+success is claimed. FINAL_REVIEW_RECOVERY_v1 preserves complete reviews and
+available failure evidence. Final package confirmation and combined gates
+remain pending. No PR, merge, formal audit, empirical validation or TOE is
+claimed at this checkpoint.

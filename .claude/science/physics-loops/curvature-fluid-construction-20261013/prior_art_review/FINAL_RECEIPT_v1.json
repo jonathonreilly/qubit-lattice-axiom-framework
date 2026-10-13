@@ -1,0 +1,863 @@
+{
+  "created_at": "2026-10-13T11:58:26.200484+00:00",
+  "reviewer": "/root/launch_check",
+  "author": "/root",
+  "kind": "Focused prior-source and constructive-scope advice",
+  "disposition": "Coherent positive conditional scope can be independently authored; final canonical scientific review and all delivery gates remain pending.",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/PRIOR_SOURCE_SCOPE_REPORT_v1.md",
+    "sha256": "6b4764e795ce77edc92f35012c74cbbc99f3d00b6c4314c43eee8cf1310174d7",
+    "bytes": 12130
+  },
+  "dispositions": {
+    "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/SOURCE_DISPOSITIONS_v1.json",
+    "sha256": "a8d042f42e56f7d2767d7638a39fcc364f21e140c807c8564d98a39384add03b",
+    "bytes": 70972
+  },
+  "final_identity_verification": {
+    "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/FINAL_VERIFICATION_v1.json",
+    "sha256": "f3f53440d0bddbd4782ba93d230bd38566582b3203122416f85a0f2f86695175",
+    "bytes": 25055
+  },
+  "remote_identity": {
+    "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/FINAL_REMOTE_IDENTITY_v1.json",
+    "sha256": "4540dde75c7a3307a29ae04491b024134bd60db9778e142640bf1e54aae69387",
+    "bytes": 7340
+  },
+  "main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "planning": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+  "scientific_source_snapshots": 60,
+  "prior_source_snapshots_reused": 44,
+  "preserved_operational_errors": 3,
+  "unresolved_identity_errors": [],
+  "evidence_paths_unique": true,
+  "evidence_count": 136,
+  "evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/CHANGED_PR_COLLECTION_v1.json",
+      "sha256": "a920e8ed83547348e9e37791a38c427b2dd7c86f95f305668a141e533337af80",
+      "bytes": 970,
+      "relative_path": "CHANGED_PR_COLLECTION_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/CHANGED_PR_COLLECTION_v2.json",
+      "sha256": "50b868c6956cff4b092223a52c97a175982e3493f62832b3948ece5f8e552a22",
+      "bytes": 22912,
+      "relative_path": "CHANGED_PR_COLLECTION_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/FINAL_REMOTE_IDENTITY_v1.json",
+      "sha256": "4540dde75c7a3307a29ae04491b024134bd60db9778e142640bf1e54aae69387",
+      "bytes": 7340,
+      "relative_path": "FINAL_REMOTE_IDENTITY_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/FINAL_VERIFICATION_v1.json",
+      "sha256": "f3f53440d0bddbd4782ba93d230bd38566582b3203122416f85a0f2f86695175",
+      "bytes": 25055,
+      "relative_path": "FINAL_VERIFICATION_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/INSTRUCTION_IDENTITIES_v1.json",
+      "sha256": "944614f3dd1e8e6b5fffec1e1f22f5795926def389719836aa42fe0ebd08686d",
+      "bytes": 3460,
+      "relative_path": "INSTRUCTION_IDENTITIES_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_REF_FINAL_v1.json",
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "bytes": 386,
+      "relative_path": "MAIN_REF_FINAL_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_REF_FINAL_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "MAIN_REF_FINAL_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_REF_INITIAL_v1.json",
+      "sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "bytes": 386,
+      "relative_path": "MAIN_REF_INITIAL_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_REF_INITIAL_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "MAIN_REF_INITIAL_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_COMMANDS_v1.json",
+      "sha256": "c08d29c04c987ef745370c1f558249c89444b0cf074ed6f8853470f3a50adb6f",
+      "bytes": 19246,
+      "relative_path": "MAIN_SEARCH_COMMANDS_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_curvature_forms_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "MAIN_SEARCH_curvature_forms_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_curvature_forms_v1.txt",
+      "sha256": "d0995a02a5c43f7e17b81843e1e8efcb28b87dd679c40255c0608f3d942222ba",
+      "bytes": 45843,
+      "relative_path": "MAIN_SEARCH_curvature_forms_v1.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_fingerprints_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "MAIN_SEARCH_fingerprints_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_fingerprints_v1.txt",
+      "sha256": "71db3c7bcec5e84d186a56b32a36192fbdb5862acfb78bef97648be4dd218bc6",
+      "bytes": 63481,
+      "relative_path": "MAIN_SEARCH_fingerprints_v1.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_normalization_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "MAIN_SEARCH_normalization_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_SEARCH_normalization_v1.txt",
+      "sha256": "646a1b6e53512d10acb52a34d4aeff6a78dfb01841f19931aedb3312f629e0a1",
+      "bytes": 15413,
+      "relative_path": "MAIN_SEARCH_normalization_v1.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/NEW_MAIN_SCREEN_EXCERPT_v1.json",
+      "sha256": "5a00c3caf4c825ff487365536a24c639b2009bce0699744d3d5e70534ee78af8",
+      "bytes": 14133,
+      "relative_path": "NEW_MAIN_SCREEN_EXCERPT_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/NEW_PR_SCREEN_EXCERPTS_v1.json",
+      "sha256": "e8b90f8d3f8b4147d9362d4d70ccfb26fb229939ad2bfaff93044691dd729e98",
+      "bytes": 68514,
+      "relative_path": "NEW_PR_SCREEN_EXCERPTS_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/OPEN_PRS_FINAL_v1.json",
+      "sha256": "18fe2edf576249641c676333d68c416135f685fa007351d3f2f4ce27abd46d4f",
+      "bytes": 397232,
+      "relative_path": "OPEN_PRS_FINAL_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/OPEN_PRS_FINAL_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "OPEN_PRS_FINAL_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/OPEN_PRS_INITIAL_v1.json",
+      "sha256": "9b257eab1f7988c0b17ebd62f30830168265285df7c174f9c953d85e6c48cdfc",
+      "bytes": 397232,
+      "relative_path": "OPEN_PRS_INITIAL_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/OPEN_PRS_INITIAL_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "OPEN_PRS_INITIAL_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/PR9514_INITIAL_v1.json",
+      "sha256": "5ab0333fca1c19583fa692d817c67b780791dbb4d8e8e65cfd2f2feac442d437",
+      "bytes": 24800,
+      "relative_path": "PR9514_INITIAL_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/PR9514_INITIAL_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "PR9514_INITIAL_v1.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/PRIOR_SOURCE_SCOPE_REPORT_v1.md",
+      "sha256": "6b4764e795ce77edc92f35012c74cbbc99f3d00b6c4314c43eee8cf1310174d7",
+      "bytes": 12130,
+      "relative_path": "PRIOR_SOURCE_SCOPE_REPORT_v1.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/READ_FAILURES_v1.json",
+      "sha256": "4dd6a40eff8ab70508a68447bce924cdaf18582dca0d26220bf14d12909518b6",
+      "bytes": 555,
+      "relative_path": "READ_FAILURES_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/READ_FAILURES_v2.json",
+      "sha256": "9b066b80a22002a61257389fff4f29cf00415aad409e8d0a81789e0f55d5e710",
+      "bytes": 1539,
+      "relative_path": "READ_FAILURES_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/READ_FAILURES_v3.json",
+      "sha256": "127207de4be3e297c1e4ef049016ad3a110a0252d2fd1335a22d2f35adc75633",
+      "bytes": 2015,
+      "relative_path": "READ_FAILURES_v3.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/REMOTE_READ_COMMANDS_v1.json",
+      "sha256": "87a1e5ffbc5775a85c87587b436fe198b1c53c97b459d04d5a873679350e2cd0",
+      "bytes": 2105,
+      "relative_path": "REMOTE_READ_COMMANDS_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/REUSED_CANONICAL_REVIEW_BINDING_v1.json",
+      "sha256": "fde075e704b84264a8b3aa3e6b6c8957d52d438324fc81d95643c87cb359f371",
+      "bytes": 3321,
+      "relative_path": "REUSED_CANONICAL_REVIEW_BINDING_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/REUSE_AND_CANDIDATE_IDENTITIES_v1.json",
+      "sha256": "94e4a55bd48bbe674d1976a93b8cf8adca0261aca754d9951607b19f58810dd8",
+      "bytes": 85342,
+      "relative_path": "REUSE_AND_CANDIDATE_IDENTITIES_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "a8d042f42e56f7d2767d7638a39fcc364f21e140c807c8564d98a39384add03b",
+      "bytes": 70972,
+      "relative_path": "SOURCE_DISPOSITIONS_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/collect_changed_pr_sources_v1.py",
+      "sha256": "dc211fb024f26ce329ee416869f8b61fe133b7cc4efe6f3a36eaa1394a09e682",
+      "bytes": 2347,
+      "relative_path": "collect_changed_pr_sources_v1.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/collect_changed_pr_sources_v2.py",
+      "sha256": "d92d8b6ec83241366e9d2d9d9955fbc0640ad15bd07ce8068dd6b537c6cd1529",
+      "bytes": 2322,
+      "relative_path": "collect_changed_pr_sources_v2.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "68fc78e350bd4ca4365b39efe2af1f070b2bafce822c2051c79073af4bd0876b",
+      "bytes": 54972,
+      "relative_path": "commands/PR9512_EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9512_EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v1.json",
+      "sha256": "f226a3ba1c1a83c683974f8ee15dcd6b681183dcfe1c8d9de7ca99119f8f74c1",
+      "bytes": 243281,
+      "relative_path": "commands/PR9512_FILES_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v1.json.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9512_FILES_v1.json.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v2.json",
+      "sha256": "c9ee96d18ac39c3efae229d00ffea3c74f59b15f108b843d55e98134378a8df3",
+      "bytes": 1120768,
+      "relative_path": "commands/PR9512_FILES_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_FILES_v2.json.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9512_FILES_v2.json.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "16b1411c5c336e7b294e77d45128a394bf0d6c077bd5ca1dccfd1e2172a5b621",
+      "bytes": 47670,
+      "relative_path": "commands/PR9512_HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9512_HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "d6644746d0b41b93457e056739a8b7963dee377ef01314d15274ae324b1d7590",
+      "bytes": 48741,
+      "relative_path": "commands/PR9512_NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9512_NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "bytes": 34185,
+      "relative_path": "commands/PR9512_SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9512_SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9512_SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "9d828fca451d2018187b258674f3342af571bc6d845f3a4dfce5dea1afcbddd8",
+      "bytes": 96537,
+      "relative_path": "commands/PR9513_ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9513_ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "bytes": 72986,
+      "relative_path": "commands/PR9513_CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9513_CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+      "bytes": 68680,
+      "relative_path": "commands/PR9513_ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9513_ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_FILES_v2.json",
+      "sha256": "43e18f0da84e094a92ffce909f61e723057fec13b3fe755afb04d7113d773d9f",
+      "bytes": 1003175,
+      "relative_path": "commands/PR9513_FILES_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9513_FILES_v2.json.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9513_FILES_v2.json.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a",
+      "bytes": 13309,
+      "relative_path": "commands/PR9514_ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9514_ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_FILES_v2.json",
+      "sha256": "dc8eaf5b0cb018d86ffe2d20eecd5e906fefb1b1c9dcc8881140dc7319b1c019",
+      "bytes": 630165,
+      "relative_path": "commands/PR9514_FILES_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_FILES_v2.json.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9514_FILES_v2.json.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_imports.json",
+      "sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb",
+      "bytes": 1025,
+      "relative_path": "commands/PR9514_imports.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9514_imports.json.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9514_imports.json.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_FILES_v2.json",
+      "sha256": "5d2f5941cc29354924a7516925c887fdca5e2ccde0186a41c2000438c5401e57",
+      "bytes": 374444,
+      "relative_path": "commands/PR9515_FILES_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_FILES_v2.json.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9515_FILES_v2.json.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "4d0a8c9b8a19ef46c4d7779f1a12f8149532762f39d5e607ae7c9b2edbad7f41",
+      "bytes": 45642,
+      "relative_path": "commands/PR9515_VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/commands/PR9515_VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "relative_path": "commands/PR9515_VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md.stderr.txt"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/finalize_scope_receipt_v1.py",
+      "sha256": "34a277d3dad216ed9be1d7545125eb8eb8debd5a9b25b7b607bf3f8671fd9f19",
+      "bytes": 7857,
+      "relative_path": "finalize_scope_receipt_v1.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/instruction_snapshot/3a4b2c66a1ead7a1c48b4359627e968f681e3c39/AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "relative_path": "instruction_snapshot/3a4b2c66a1ead7a1c48b4359627e968f681e3c39/AGENTS.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "relative_path": "instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/AGENTS.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "relative_path": "instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "relative_path": "instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/no-go-discipline/SKILL.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "cab78dd0ad2113e32d3ee26b337ac95e16366424eef106999872001c83079644",
+      "bytes": 15266,
+      "relative_path": "instruction_snapshot/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_canonical_review/FINAL_BINDING_v1.json",
+      "sha256": "62895b7b4298fc9b65caa5e2d670a5125ef0aba5118786e1d79a69c70efc1814",
+      "bytes": 52090,
+      "relative_path": "reused_analytic_canonical_review/FINAL_BINDING_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_canonical_review/RECEIPT_v1.json",
+      "sha256": "d11c89820771d38960f573c9bab8ff02cda47e94a70f293c96b12e18e4d1a86b",
+      "bytes": 60830,
+      "relative_path": "reused_analytic_canonical_review/RECEIPT_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_canonical_review/REPORT_v1.md",
+      "sha256": "76711b1ead0101f475a10b27f9f16dac70ffd1e50d96835070b984cd918e7a54",
+      "bytes": 17674,
+      "relative_path": "reused_analytic_canonical_review/REPORT_v1.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/FINAL_REMOTE_IDENTITY_v2.json",
+      "sha256": "0d6ed4aaf08fac55a5ad50a0cddd6ff563003d31f15d32f61881c1e4739505fc",
+      "bytes": 1441,
+      "relative_path": "reused_analytic_review/FINAL_REMOTE_IDENTITY_v2.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/PRIOR_ART_SOURCE_SCOPE_REVIEW.md",
+      "sha256": "dda0b7daf9cc2c16f53a2e82f3838f5ee60942dd3f888c9d587aaff22987ec05",
+      "bytes": 12470,
+      "relative_path": "reused_analytic_review/PRIOR_ART_SOURCE_SCOPE_REVIEW.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/SOURCE_DISPOSITIONS_v1.json",
+      "sha256": "5a661d95b48cfcf3814afa5f7e90e65892f39825e8856ccecad7f3f174e9a0b6",
+      "bytes": 49827,
+      "relative_path": "reused_analytic_review/SOURCE_DISPOSITIONS_v1.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/AN_HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "bytes": 7275,
+      "relative_path": "reused_analytic_review/source_snapshot/AN_HAND_DERIVATION_v2.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "a08b1b7c08bf9dc8a578e93a5a3a0de2096f502c1ab90eeb54d4d375ace9c473",
+      "bytes": 9228,
+      "relative_path": "reused_analytic_review/source_snapshot/main/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+      "sha256": "f2a91f3813a8f03609327d20c56aa40b222bceb41fbc40296727726c4d36eb59",
+      "bytes": 13545,
+      "relative_path": "reused_analytic_review/source_snapshot/main/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+      "sha256": "e7474cd8bfca8d7398da5c0ca6e3674481a4bdd0a13f145422a20c311aa7e79c",
+      "bytes": 12081,
+      "relative_path": "reused_analytic_review/source_snapshot/main/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md",
+      "sha256": "0b108531b9ac809d6d7ee58cb69d3ee1d2d926a73608906092e5ed609c6077a9",
+      "bytes": 11562,
+      "relative_path": "reused_analytic_review/source_snapshot/main/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "c81c0029fb70d1cea0ecf41ee893caf357747bcda138af5d1bef5ed5848a114a",
+      "bytes": 15862,
+      "relative_path": "reused_analytic_review/source_snapshot/main/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+      "sha256": "5a9a12c08eb9eadda495111e6d7a20665210ade5dadfae69ba8f9220c4ed963d",
+      "bytes": 13114,
+      "relative_path": "reused_analytic_review/source_snapshot/main/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md",
+      "sha256": "2549791c67c567049e6ef387ed42d7a3692441a78dbd95b72316483130d04e3f",
+      "bytes": 23774,
+      "relative_path": "reused_analytic_review/source_snapshot/main/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "sha256": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96",
+      "bytes": 6257,
+      "relative_path": "reused_analytic_review/source_snapshot/main/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "sha256": "5cbed0a436adbe043ca93f746a6cdd5a0b2825838cc356886e31c6bffcbe86e0",
+      "bytes": 7046,
+      "relative_path": "reused_analytic_review/source_snapshot/main/FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+      "sha256": "33a8da1a891c95f2bbf2212480bb7b4edb260e9b219f979329e6619b0f5a893a",
+      "bytes": 18016,
+      "relative_path": "reused_analytic_review/source_snapshot/main/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "sha256": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28",
+      "bytes": 6569,
+      "relative_path": "reused_analytic_review/source_snapshot/main/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "d23611a557a4cc8912c1c0e6fa474ed115bbfd507623c38736d6a47821e2fcba",
+      "bytes": 52178,
+      "relative_path": "reused_analytic_review/source_snapshot/main/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
+      "sha256": "af7bbdfda8831df1c86ec7ca9cf62b6cbdd920f4dca1a4cb03e7f389c73e386a",
+      "bytes": 23997,
+      "relative_path": "reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md",
+      "sha256": "c2638add3d47d14df0358acf510a0935c7aea92b4132df5c407c4df65bcfa12f",
+      "bytes": 6377,
+      "relative_path": "reused_analytic_review/source_snapshot/main/SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_NOTE.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md",
+      "sha256": "0ea0828bc054507d4aa0ecab9190172620084197941189f0ed4942b1399e0fa6",
+      "bytes": 7586,
+      "relative_path": "reused_analytic_review/source_snapshot/main/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py",
+      "sha256": "aee05c3b33a67de1f05bc38d717ede36a8ad2d7f4db13a6f883efbea64a65de9",
+      "bytes": 18171,
+      "relative_path": "reused_analytic_review/source_snapshot/main_runners/scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
+      "sha256": "ddd96589d48c9b7c2c6d44afe4fc7be3aa66bbe522be4576de2f2383786b3511",
+      "bytes": 8688,
+      "relative_path": "reused_analytic_review/source_snapshot/main_runners/scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d",
+      "bytes": 17353,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9499/docs/FINITE_ENERGY_SECTOR_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "bytes": 53292,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9500/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "361e7cf37b379ceaa5958b27c53833110658956bd3d0c6f811cafe2440c6a4fe",
+      "bytes": 8807,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9500/docs/LOW_ENERGY_PHASE_RATE_OPTIMALITY_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77",
+      "bytes": 14811,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9501/docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py",
+      "sha256": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9",
+      "bytes": 10558,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9501/scripts/positive_mediator_inverse_2026_10_12.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "bytes": 69122,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9502/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "bytes": 61231,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9502/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+      "bytes": 14689,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9503/docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "bytes": 63908,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9504/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "bytes": 38862,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9504/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "bytes": 11292,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9505/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "bytes": 8556,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9505/scripts/local_vector_homogeneous_response_2026_10_12.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "376937859671164477c78965dbee50856f01e5c0700b35efa53594fcab1dacf4",
+      "bytes": 59969,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9506/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "e048553d5826df8f8110c8e9a28e7180bf0ebf218df89b5e600d07b0d7ca9f81",
+      "bytes": 37982,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9506/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "08f11b9bf7b952b53034915e8a6bcc3c53afe16b4e0939b66c9ecbca390cda17",
+      "bytes": 36046,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9506/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+      "bytes": 17317,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9507/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py",
+      "sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+      "bytes": 16442,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9507/scripts/local_vector_matter_readout_2026_10_12.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "bytes": 82120,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9508/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "bytes": 75306,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9508/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "30696ddd743d6d0ec687e54c4b833c4daeb57f893653772e2afea707c0f43ea5",
+      "bytes": 30422,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9509/docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py",
+      "sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "bytes": 23394,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9509/scripts/metric_clock_reconstruction_2026_10_13.py"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "dd5bf5be3c3e4e5636056d18fc8c02aa14c7cab9fbc5c8ca59d36f1cd021460b",
+      "bytes": 56130,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "b320a367c3c699afd412f6d4d56e5ff0d9105c86568e062723de2a4775e4fe0f",
+      "bytes": 72190,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9510/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089",
+      "bytes": 53254,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9511/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9",
+      "bytes": 36202,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9511/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/reused_analytic_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f",
+      "bytes": 40821,
+      "relative_path": "reused_analytic_review/source_snapshot/pr_9511/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/candidate/HAND_DERIVATION_v1.md",
+      "sha256": "2ee1ebdbb34462010b8c9e34fa90466f173948a1ab5fbb940231b20c701db04f",
+      "bytes": 10361,
+      "relative_path": "source_snapshot/candidate/HAND_DERIVATION_v1.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/candidate/SCOPE_CLARIFICATION_v2.md",
+      "sha256": "5705e9018b91c893cd183f60eb9a774443c87183414a987176ec2f2c56879666",
+      "bytes": 785,
+      "relative_path": "source_snapshot/candidate/SCOPE_CLARIFICATION_v2.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "sha256": "c2e52549218e0c01bbda4d4c93320acb685c4e8a6b6faf35f7ae9d3c1253415e",
+      "bytes": 6884,
+      "relative_path": "source_snapshot/main/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "06c2e0d257f79f991985cbd8063285a765d09f4aee9896699b17a926b06ba7e2",
+      "bytes": 43046,
+      "relative_path": "source_snapshot/main/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "sha256": "5a9d94c23b1646544efdd343016b7d3031037eee7fabc7af578dc8af48225ca6",
+      "bytes": 6448,
+      "relative_path": "source_snapshot/main/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/main/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md",
+      "sha256": "a1204a14cf7b738933262d6b784530eb8284fa47dd512199310438ff46ff3448",
+      "bytes": 8141,
+      "relative_path": "source_snapshot/main/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "68fc78e350bd4ca4365b39efe2af1f070b2bafce822c2051c79073af4bd0876b",
+      "bytes": 54972,
+      "relative_path": "source_snapshot/pr_9512/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "16b1411c5c336e7b294e77d45128a394bf0d6c077bd5ca1dccfd1e2172a5b621",
+      "bytes": 47670,
+      "relative_path": "source_snapshot/pr_9512/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "d6644746d0b41b93457e056739a8b7963dee377ef01314d15274ae324b1d7590",
+      "bytes": 48741,
+      "relative_path": "source_snapshot/pr_9512/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9512/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "bytes": 34185,
+      "relative_path": "source_snapshot/pr_9512/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9513/docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "9d828fca451d2018187b258674f3342af571bc6d845f3a4dfce5dea1afcbddd8",
+      "bytes": 96537,
+      "relative_path": "source_snapshot/pr_9513/docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9513/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "bytes": 72986,
+      "relative_path": "source_snapshot/pr_9513/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9513/docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+      "bytes": 68680,
+      "relative_path": "source_snapshot/pr_9513/docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9514/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "8d883f6eb6171cdcae8fdb93c6a8ab2f61b7eb78945ea900eb94a50a8a13282a",
+      "bytes": 13309,
+      "relative_path": "source_snapshot/pr_9514/docs/ANALYTIC_FLUID_COSMOLOGY_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9514/outputs/analytic_fluid_cosmology_2026_10_13/imports.json",
+      "sha256": "5e6831ed390412bd6d84477944e14a02862f0aac0a099081f24e8a235265a2cb",
+      "bytes": 1025,
+      "relative_path": "source_snapshot/pr_9514/outputs/analytic_fluid_cosmology_2026_10_13/imports.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/source_snapshot/pr_9515/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "4d0a8c9b8a19ef46c4d7779f1a12f8149532762f39d5e607ae7c9b2edbad7f41",
+      "bytes": 45642,
+      "relative_path": "source_snapshot/pr_9515/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "scientific_execution": false,
+  "formal_audit": false,
+  "mechanical_gate_execution": false,
+  "final_source_readiness_pass": false,
+  "literature_novelty_claim": false,
+  "transferred_prior_pass": false,
+  "git_mutation": false,
+  "external_messages": false,
+  "writes_limited_to": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review",
+  "receipt_self_hash": "Excluded by design; supplied externally after creation."
+}

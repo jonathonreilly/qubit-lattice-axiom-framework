@@ -1,0 +1,162 @@
+{
+  "created_at": "2026-10-13T11:50:59.944787+00:00",
+  "main_sha": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "expected_main_sha": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "main_unchanged": true,
+  "initial_open_count": 17,
+  "final_open_count": 17,
+  "new_open_prs": [],
+  "no_longer_open_prs": [],
+  "changed_head_or_base": [],
+  "commands": [
+    {
+      "args": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/git/ref/heads/main"
+      ],
+      "started_at": "2026-10-13T11:50:58.666180+00:00",
+      "finished_at": "2026-10-13T11:50:59.479886+00:00",
+      "exit_code": 0,
+      "stdout": "MAIN_REF_FINAL_v1.json",
+      "stderr": "MAIN_REF_FINAL_v1.stderr.txt",
+      "stdout_sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "args": [
+        "gh",
+        "api",
+        "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls?state=open&per_page=100"
+      ],
+      "started_at": "2026-10-13T11:50:59.479954+00:00",
+      "finished_at": "2026-10-13T11:50:59.940815+00:00",
+      "exit_code": 0,
+      "stdout": "OPEN_PRS_FINAL_v1.json",
+      "stderr": "OPEN_PRS_FINAL_v1.stderr.txt",
+      "stdout_sha256": "18fe2edf576249641c676333d68c416135f685fa007351d3f2f4ce27abd46d4f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "final_heads": [
+    {
+      "number": 9515,
+      "head": "301b06c3c2b8ce3c1b33c9333eee89a2248e4a99",
+      "base": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+      "title": "Derive vacuum pair thresholds and calibrated weak-drive response",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9515"
+    },
+    {
+      "number": 9514,
+      "head": "75d8f001c8e055acd91383e3e088ead76f1851f2",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] analytic-fluid-construction bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9514"
+    },
+    {
+      "number": 9513,
+      "head": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+      "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "title": "Derive finite-order input calibration and weighted energy transfer",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9513"
+    },
+    {
+      "number": 9512,
+      "head": "f6a820fd66011a50752670a454fb375b420ddbd6",
+      "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "title": "[physics-loop] toe-prepared-energy bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9512"
+    },
+    {
+      "number": 9511,
+      "head": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+      "base": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+      "title": "[physics-loop] corrected-dynamics bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9511"
+    },
+    {
+      "number": 9510,
+      "head": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+      "base": "d52ea0184932788d3d031e7207a6bad09114716d",
+      "title": "[physics-loop] energy-observables bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9510"
+    },
+    {
+      "number": 9509,
+      "head": "fa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] Metric and clock reconstruction under explicit scalar assumptions",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9509"
+    },
+    {
+      "number": 9508,
+      "head": "d52ea0184932788d3d031e7207a6bad09114716d",
+      "base": "4ff0ff1d7868b24d7854428110512daed13530f9",
+      "title": "[physics-loop] energy-protocol bounded_theorem conditional-support: BV work and prepared states",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9508"
+    },
+    {
+      "number": 9507,
+      "head": "16838afb97f8a7f3d3bec9b97f640db9c1e01f9f",
+      "base": "039198fed41d5599341bbcbc7908dcfae1215421",
+      "title": "[physics-loop] local-vector-matter-readout bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9507"
+    },
+    {
+      "number": 9506,
+      "head": "4ff0ff1d7868b24d7854428110512daed13530f9",
+      "base": "f055a7bee614bd614cf3d387ec60804eb9f7597b",
+      "title": "[physics-loop] spatial-control bounded_theorem conditional-support: clustering and ground response",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9506"
+    },
+    {
+      "number": 9505,
+      "head": "039198fed41d5599341bbcbc7908dcfae1215421",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] local-vector-response bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9505"
+    },
+    {
+      "number": 9504,
+      "head": "f055a7bee614bd614cf3d387ec60804eb9f7597b",
+      "base": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+      "title": "[physics-loop] toe-response-transfer bounded_theorem conditional-support: excitation response, pulses and temporal transfer",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9504"
+    },
+    {
+      "number": 9503,
+      "head": "8148be1c698f7c9b3bee8a6a659ec352adbbbdbb",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] sphere-quantum-reflection bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9503"
+    },
+    {
+      "number": 9502,
+      "head": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+      "base": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "title": "[physics-loop] toe-bounded-interactions bounded_theorem conditional-support: interactions, ground selection and preparation",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9502"
+    },
+    {
+      "number": 9501,
+      "head": "3153d7b2ddceeb26b78f2e1334ffa83218a01333",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] positive-response bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9501"
+    },
+    {
+      "number": 9500,
+      "head": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] toe-energy-correlations: bounded_theorem / conditional-support \u2014 correlations and phase rates",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500"
+    },
+    {
+      "number": 9499,
+      "head": "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3",
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "title": "[physics-loop] finite-energy: bounded_theorem / conditional-support \u2014 sector concentration",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9499"
+    }
+  ]
+}

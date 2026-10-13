@@ -1,0 +1,3 @@
+scalar G_w(2.526104, fr=1.000) U, E1, m=0.01, per real scalar: {'Eg': '-3.621562e-04', 'T2g': '-6.277494e-04', 'face1': '-4.576449e-04', 'face2': '-6.277494e-04', 'body': '-5.650765e-04'}
+face2 - T2g = +6.41e-13 ; O_h relation residual +2.17e-19 ; K6 term -(1/128)<K6/eps^7> = face1 - (3Eg+T2g)/4 = -2.909043e-05
+x4 scalars: face1 -1.8306e-03, body -2.2603e-03

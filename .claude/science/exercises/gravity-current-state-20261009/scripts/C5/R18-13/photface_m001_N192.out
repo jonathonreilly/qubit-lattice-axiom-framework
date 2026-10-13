@@ -1,0 +1,6 @@
+N=192 shifts=(1, 2) per vector at (wd,wo)=(0,0): face1 +2.168593593e-01 face2 +1.087632797e-01 | d/dwd: +1.396964e-01 +0.000000e+00 | d/dwo: +2.892644e-01 +5.785496e-01 (142s)
+  totals at (0,0): face1 +2.626987e+00 [scal -1.8517e-03 dirac +2.6526e-02 vec +2.6023e+00]  face2 +1.351751e+00 [scal -2.5383e-03 dirac +4.9130e-02 vec +1.3052e+00]
+  Jacobian (12 vectors) [[d f1/dwd, d f1/dwo],[d f2/dwd, d f2/dwo]] = [[1.6763566964520205, 3.471172284204552], [0.0, 6.942594926884544]] det +1.1638e+01 ; solved (wd, wo) = (-1.16391414, -0.19470406)
+  DIRECT at solved (wd, wo): per vector T2g -3.590108144e-03 Eg -2.034124264e-04 face1 -2.056442662e-03 face2 -3.882730920e-03 body -3.489557371e-03 | O_h resid -3.75e-06
+  TOTALS at solved: face1 -3.030e-06 face2 -7.142e-07 body -4.810e-05 (body via direct per-vector value) | axial T2g, Eg totals at this N: -9.430e-08 +9.863e-08 (R18-9 root zeroes them at N=224)
+  time 289s

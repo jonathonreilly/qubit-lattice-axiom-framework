@@ -1,0 +1,44 @@
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=48 T2g: Xi(0,0) -3.528427896e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=48 Eg: Xi(0,0) -3.006148065e-04 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=48 xz: Xi(0,0) -3.528427896e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=48 face1: Xi(0,0) +1.728686680e-01 | dXi/dwd +1.389187237e-01 | dXi/dwo +2.867702447e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=48 face2: Xi(0,0) +7.754091976e-02 | dXi/dwd +0.000000000e+00 | dXi/dwo +5.746708977e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=48 body: Xi(0,0) +1.877889461e-01 | dXi/dwd +1.231521294e-01 | dXi/dwo +5.098756466e-01
+   N=48 per vector: face2-T2g +8.106935e-02 | face1-(3Eg+T2g)/4 +1.739762e-01
+   setting 0: O_h relation resid -4.35e-04
+   setting 1: O_h relation resid -7.66e-04
+   setting 2: O_h relation resid -8.75e-04
+   C4 control xz(q||y) - T2g(q||z) +1.62e-14
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=64 T2g: Xi(0,0) -3.626640333e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=64 Eg: Xi(0,0) -1.209188624e-04 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=64 xz: Xi(0,0) -3.626640333e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=64 face1: Xi(0,0) +2.122072880e-01 | dXi/dwd +1.396265683e-01 | dXi/dwo +2.897406815e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=64 face2: Xi(0,0) +1.171649703e-01 | dXi/dwd +0.000000000e+00 | dXi/dwo +5.802466369e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=64 body: Xi(0,0) +2.403609598e-01 | dXi/dwd +1.238362320e-01 | dXi/dwo +5.151103870e-01
+   N=64 per vector: face2-T2g +1.207916e-01 | face1-(3Eg+T2g)/4 +2.132046e-01
+   setting 0: O_h relation resid -3.81e-04
+   setting 1: O_h relation resid -6.58e-04
+   setting 2: O_h relation resid -7.06e-04
+   C4 control xz(q||y) - T2g(q||z) +6.94e-18
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=96 T2g: Xi(0,0) -3.536923490e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=96 Eg: Xi(0,0) -1.269944828e-04 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=96 xz: Xi(0,0) -3.536923490e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=96 face1: Xi(0,0) +2.129883275e-01 | dXi/dwd +1.396435285e-01 | dXi/dwo +2.893378241e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=96 face2: Xi(0,0) +1.046948216e-01 | dXi/dwd +0.000000000e+00 | dXi/dwo +5.788779230e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=96 body: Xi(0,0) +2.357933018e-01 | dXi/dwd +1.240608360e-01 | dXi/dwo +5.143840222e-01
+   N=96 per vector: face2-T2g +1.082317e-01 | face1-(3Eg+T2g)/4 +2.139678e-01
+   setting 0: O_h relation resid -1.03e-04
+   setting 1: O_h relation resid -1.70e-04
+   setting 2: O_h relation resid -1.87e-04
+   C4 control xz(q||y) - T2g(q||z) +0.00e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=128 T2g: Xi(0,0) -3.514473184e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=128 Eg: Xi(0,0) -1.330143586e-04 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=128 xz: Xi(0,0) -3.514473183e-03 | dXi/dwd +0.000000000e+00 | dXi/dwo +0.000000000e+00
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=128 face1: Xi(0,0) +2.070567020e-01 | dXi/dwd +1.396592277e-01 | dXi/dwo +2.891862205e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=128 face2: Xi(0,0) +1.031547312e-01 | dXi/dwd +0.000000000e+00 | dXi/dwo +5.784496410e-01
+gammaGw(2.943500, fw=1.000) a=-0.176095 N=128 body: Xi(0,0) +2.298994195e-01 | dXi/dwd +1.241165055e-01 | dXi/dwo +5.141111243e-01
+   N=128 per vector: face2-T2g +1.066692e-01 | face1-(3Eg+T2g)/4 +2.080351e-01
+   setting 0: O_h relation resid -4.19e-05
+   setting 1: O_h relation resid -6.69e-05
+   setting 2: O_h relation resid -7.39e-05
+   C4 control xz(q||y) - T2g(q||z) +1.23e-13

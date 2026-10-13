@@ -1,0 +1,3 @@
+N=128 shifts=(1, 3) per vector: face1 +2.039581401e-01 face2 +1.013997624e-01 (15s)
+N=128 shifts=(2, 4) per vector: face1 +1.809048849e-01 face2 +8.726306271e-02 (15s)
+N=128 shifts=(1, 2) per vector: face1 +2.070567020e-01 face2 +1.031547312e-01 (13s)

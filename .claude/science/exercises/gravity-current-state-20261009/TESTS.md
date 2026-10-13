@@ -7278,3 +7278,38 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r1812a (corner dichotomy), P-r1812b (history bound), P-r1812c.
 
   Referee running.
+
+#### C5 referee verdicts R18-9, R18-11 and the R18-13 worker reading (recorded 04:12Z)
+
+- **R18-9 referee: CONFIRMED WITH CORRECTIONS. FOUR-ROW-ZERO in the campaign's necessary-O(q) conservation convention.**
+  - **What holds:**
+    - SM content 4 + 22.5 + 12 has a transversal, independently reproduced, all-subluminal four-row axial zero at m = 0.01.
+    - It uses **five** continuous knobs: four equality tunings plus a constrained photon-edge selection.
+    - A separately retuned m = 0.001 root also exists.
+  - **Corrections:** Ξ(a) is quadratic at finite grid but affine in the continuum q² coefficient. The "a-blind combination" was restated.
+  - **Not established:**
+    - exact Ward-completed conservation;
+    - one law valid at both masses;
+    - an enclosed photon window;
+    - off-axis closure;
+    - radiative stability;
+    - the tadpole and CC rows;
+    - two loops.
+- **R18-11 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN** (neither NOISE-SAFE nor NOISE-OVERSHOOT).
+  - **Theorem G:** within the contravariant power-density family, gauge independence of the coarse-grained mean selects a = 2.
+  - **The two readings at a = 2:**
+    - (U) gives −4u₁;
+    - (P) gives −(1 + ⟨x²⟩)u₁ + 2⟨q⟩u₁ − u_V.
+  - **Why (P) does not establish an overshoot:** it overshoots only after imposing modewise q ≤ 0, u_V ≥ 0 and zero homogeneous pressure. These are not established for the strict spectrum.
+  - **Other limits:** (U) is not a closed zero-start solution, and FRW remains suggested.
+- **R18-13 (off-axis rows at the SM root): worker reading ALL-ROWS-ZERO on the letter, in the O(q) convention. It falls back to OFF-AXIS-COUNTED under exact W1.**
+  - **Exactly two extra conditions:** face1 and face2. Body is then fixed (rank 4).
+  - **Values at the root:** vectors dominate (face1 ≈ +2.65, face2 ≈ +1.36). UD Dirac breaks face2 ≡ T₂g.
+  - **Lemma O:** own-direction smearings (w_d, w_o) move only the face rows, with nonzero Jacobian.
+  - **Corollary N:** nonnegative weights cannot pay, so signed weights are needed.
+  - **Lemma S:** no exactly conserved improvement moves the face rows. So this route conserves only at O(q).
+  - **Joint root:** w_d ≈ −1.17, w_o ≈ −0.196. All axial and off-axis rows are zero to ~2e-6, at m = 0.01 and 0.001.
+  - **Bill:** the SM gravity block costs 6 equality tunings plus 1 window selection.
+  - **Prices:** P-R18-13a (signed own-direction placement), P-R18-13b (vector off-axis extension), P-R18-13c (if exact W1 is required).
+
+  Referee running.

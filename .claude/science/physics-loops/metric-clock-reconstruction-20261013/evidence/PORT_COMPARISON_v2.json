@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-13T01:38:59.139039+00:00",
+  "source_functions_exact": 17,
+  "counts": {
+    "numeric_leaves": 2431,
+    "exact_numeric": 2431,
+    "other_leaves": 306
+  },
+  "max_relative_difference": 0.0,
+  "differences": [],
+  "compared": "Every field symbolic/result class and every clock grid,static,late-time,oscillator and SI row. Timestamp and source-path wrappers intentionally distinct.",
+  "new_false_formula_controls": {
+    "omitted_field_stress_amplitude_ratio": 0.5,
+    "omitted_field_stress_power_ratio": 0.25,
+    "reversed_stress_harmonic_norm": 3.3368072301211387e-17,
+    "fixed_Gstar_instead_of_GN_detected": true,
+    "opposite_charge_norm_cancellation_detected": true,
+    "independent_bath_at_zero_separation_detected": true,
+    "scope": "Explicit comparisons with false formula alternatives, not source-mutated runner executions."
+  },
+  "canonical_families": {
+    "metric_symbol_and_scalar_stress": true,
+    "positive_scalar_norm_and_basis_changes": true,
+    "circular_tensor_scalar_flux": true,
+    "physical_wave_patterns_and_tides": true,
+    "static_lensing_integrals": true,
+    "exact_working_rectangle_and_angular_refinement": true,
+    "clock_two_center_channels": true,
+    "clock_radial_angular_refinements": true,
+    "clock_single_reference": true,
+    "static_gaussian_interaction_and_plateau": true,
+    "late_time_rows": true,
+    "finite_oscillator_visibility": true,
+    "illustrative_SI_bounds": true,
+    "sensitivity_to_false_formulas": true
+  },
+  "passed": true
+}

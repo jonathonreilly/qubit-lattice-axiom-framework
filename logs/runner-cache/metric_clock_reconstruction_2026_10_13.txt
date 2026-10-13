@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/metric_clock_reconstruction_2026_10_13.py
+runner_sha256: a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9
+input_fingerprint_sha256: 7b94e79ab2ff7ce22321a292e678df01816d56aba49389ffb9fa3d7ab27d82aa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.35
+status: ok
+----- stdout -----
+PASS common action: metric symbol, positive modes,100 patterns,20 fluxes and15 lens integrals.
+PASS scalar clock:98 pair channels,32 oscillators,static kernel,plateaus and27 illustrative SI cases.
+False alternatives are formula comparisons, not mutated-source executions.
+per_element: metric/scalar components and logical-source difference explicitly checked.
+per_site: two Gaussian clock centers; no microscopic site law supplied.
+per_mode: two physical tensor modes and finite positive scalar directions checked.
+per_block: fourteen conservative,radiative,coherence and sensitivity families checked.
+lattice_wide: checked and not executed; supplied continuum candidate only.
+TOTAL: PASS=14 FAIL=0; conditional-support, no empirical acceptance.
+
+----- stderr -----
+

@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-13T01:10:35.680790+00:00",
+  "pre_execution": true,
+  "script_sha256": "fe88c7ab3232eec329b0c053a5f7f89bb9687699f2f458455b02cb8330f75e37",
+  "source": "AUTHOR_SOURCE_FREEZE_v1.json",
+  "controls": "time-domain spatial covariance, position-space Gaussian overlaps, positive real-space static integral, high-precision SI bounds and late-time/asymptotic checks",
+  "parent_runner_imported_or_executed": false
+}

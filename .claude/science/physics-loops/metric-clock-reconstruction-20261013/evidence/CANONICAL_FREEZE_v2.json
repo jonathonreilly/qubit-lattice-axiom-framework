@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-13T01:36:47.237831+00:00",
+  "files": [
+    {
+      "path": "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "339df68e83e28d3613e78e9677ddd10a9473f1fc1042efc66785edb593f512e6",
+      "bytes": 29072
+    },
+    {
+      "path": "scripts/metric_clock_reconstruction_2026_10_13.py",
+      "sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+      "bytes": 23394
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "2e9d12800086b1413175c35335846f9cd6068e11feaf9ea05893f37786a4d254",
+      "bytes": 979
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/APPROACH_REGISTRY.md",
+      "sha256": "e58c28b1ed0b84c422c7dde5c8841ee4df3e3004caa8053e136caae4b61ed93a",
+      "bytes": 1216
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/TRACE_GATE.md",
+      "sha256": "904fda0e0106c7244de2f039f87d61bfef749efa05c09b0b5f872d2c56344a85",
+      "bytes": 606
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/GOAL.md",
+      "sha256": "18a131ac62ab9b73d4b605919148969acf502c1d629b4536f43509ffeb8a258b",
+      "bytes": 409
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/REVIEW_HISTORY.md",
+      "sha256": "fd2739917b99ac8bfa5ad231b73509297649b62bc659f7ede573984917e85b26",
+      "bytes": 686
+    },
+    {
+      "path": ".claude/science/physics-loops/metric-clock-reconstruction-20261013/HANDOFF.md",
+      "sha256": "4116057a64f1b220d5b8134b0e02a26dd0ee37701d0be15c6ff65670a0eb71fd",
+      "bytes": 1330
+    }
+  ],
+  "before_execution": true
+}

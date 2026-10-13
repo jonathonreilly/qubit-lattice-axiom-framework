@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-13T01:14:15.082298+00:00",
+  "author_execution_failures_in_provided_record": [],
+  "counts": {
+    "SI_rows": 27,
+    "finite_oscillators": 32,
+    "late_time_rows": 21,
+    "pair_channels": 98,
+    "pair_geometries": 49,
+    "plateau_static_rows": 7,
+    "refinements": 6,
+    "single_rows": 7
+  },
+  "executable": "/usr/local/bin/python3",
+  "exit_code": 0,
+  "mpmath": "1.3.0",
+  "numpy": "2.4.1",
+  "parent_runner_imported_or_executed": false,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "reviewer_execution_failures": [],
+  "scipy": "1.17.0",
+  "stderr_bytes": 0,
+  "sympy": "1.14.0"
+}

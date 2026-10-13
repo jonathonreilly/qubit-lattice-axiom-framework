@@ -1,0 +1,227 @@
+#!/usr/bin/env python3
+"""Independent canonical/position-space/time-domain scalar-clock checks.
+
+No import or execution of the author runner. Pair exponents come from real
+time-domain symmetrized covariance, not the author's radial/angular integral
+or hypergeometric F/H formula. Oscillator visibility comes from Gaussian
+wavepacket overlap after exact classical forced-oscillator flow.
+"""
+import json, math, hashlib
+from pathlib import Path
+from datetime import datetime, timezone
+from functools import lru_cache
+import numpy as np
+import mpmath as mp
+from numpy.polynomial.hermite import hermgauss
+
+HERE=Path(__file__).resolve().parent
+AUTHOR=json.loads((HERE/"source_snapshot/evidence_v1/RESULTS.json").read_text())
+mp.mp.dps=45
+
+def M(x): return mp.mpf(str(x))
+@lru_cache(maxsize=24000)
+def dawson(z):
+    z=mp.mpf(z)
+    return mp.sqrt(mp.pi)*mp.exp(-z*z)*mp.erfi(z)/2
+
+def K0(v):
+    return (1-v*dawson(v/2))/2
+
+def Kr(v,d):
+    if not d:return K0(v)
+    return (dawson((d+v)/2)+dawson((d-v)/2))/(2*d)
+
+def time_moment_integral(lo,hi,d):
+    if hi==lo:return mp.mpc(0)
+    # Resolves the light-cone region of the smeared spatial covariance.
+    pts=[lo,hi]
+    for t in [d-2,d-1,d,d+1,d+2]:
+        if lo<t<hi:pts.append(t)
+    pts=sorted(set(pts))
+    return mp.quad(lambda v:(1+1j*v)*(K0(v)-Kr(v,d)),pts)
+
+def pair_time_domain(x,d):
+    x,d=M(x),M(d)
+    if not d:return dict(ramsey=mp.mpf(0),echo=mp.mpf(0))
+    first=time_moment_integral(mp.mpf(0),x/2,d)
+    last=time_moment_integral(x/2,x,d)
+    # Autocorrelation of Ramsey y: x-v.
+    # Echo y: x-3v below x/2, and v-x above x/2.
+    ramsey=2*(x*(first.real+last.real)-first.imag-last.imag)
+    echo=2*(x*first.real-3*first.imag+last.imag-x*last.real)
+    return dict(ramsey=ramsey,echo=echo)
+
+@lru_cache(maxsize=None)
+def F_time(x):
+    x=abs(M(x))
+    return mp.quad(lambda v:dawson(v/2),[0,min(x,mp.mpf(2)),x]) if x else mp.mpf(0)
+
+@lru_cache(maxsize=None)
+def J_time(d):
+    d=abs(M(d))
+    return mp.quad(lambda v:(1-v/d)*dawson(v/2),[0,min(d,mp.mpf(2)),d]) if d else mp.mpf(0)
+
+def D_late_time(x,d):
+    # Integrating the time-covariance twice and exchanging finite integrals gives
+    # this Dawson-difference average; no F or H call and no large-time series.
+    x,d=M(x),M(d)
+    if not d:return mp.mpf(0)
+    correction=mp.quad(lambda v:(d-v)*(dawson((x+v)/2)-dawson((x-v)/2)),[0,d])/(2*d)
+    return J_time(str(d))-correction
+
+def static_real_space(d):
+    # Average 1/|X1-X2| for two unit-width Gaussian source positions.
+    # Laplace representation and convolution reduce it to a positive integral.
+    d=M(d)
+    return mp.quad(lambda s:mp.exp(-d*d*s*s/4),[0,1])/mp.sqrt(mp.pi)
+
+def e1_series(z):
+    z=mp.mpf(z)
+    total=mp.mpf(0)
+    term=-z
+    n=1
+    while True:
+        add=term/n
+        total+=add
+        if abs(add)<mp.mpf("1e-65"):break
+        n+=1
+        term*=(-z)/n
+    return -mp.euler-mp.log(z)-total
+
+def packet_visibility(omega,T,echo,common_force):
+    # The arbitrary canonical hbar and mass leave the dimensionless answer unchanged.
+    omega,T=float(omega),float(T)
+    mass,hbar=1.7,.9
+    sigma2=hbar/(2*mass*omega)
+    scale=math.sqrt(2*hbar*mass*omega)
+    g=.2
+    def propagate(q,p,force,duration):
+        a=omega*duration;co,si=math.cos(a),math.sin(a)
+        q1=q*co+p*si/(mass*omega)+force*(1-co)/(mass*omega**2)
+        p1=p*co-mass*omega*q*si+force*si/omega
+        return q1,p1
+    qp=pp=qm=pm=0.
+    segments=[(1.,T)] if not echo else [(1.,T/2),(-1.,T/2)]
+    for sign,duration in segments:
+        qp,pp=propagate(qp,pp,-common_force-sign*g*scale/2,duration)
+        qm,pm=propagate(qm,pm,-common_force+sign*g*scale/2,duration)
+    nodes,weights=hermgauss(64)
+    center=(qp+qm)/2
+    xx=center+math.sqrt(2*sigma2)*nodes
+    norm=(2*math.pi*sigma2)**(-.25)
+    def psi(q,p):
+        return norm*np.exp(-(xx-q)**2/(4*sigma2)+1j*p*(xx-q/2)/hbar)
+    plus,minus=psi(qp,pp),psi(qm,pm)
+    overlap=math.sqrt(2*sigma2)*np.sum(weights*np.exp(nodes**2)*np.conj(minus)*plus)
+    normplus=math.sqrt(2*sigma2)*np.sum(weights*np.exp(nodes**2)*abs(plus)**2)
+    normminus=math.sqrt(2*sigma2)*np.sum(weights*np.exp(nodes**2)*abs(minus)**2)
+    visibility=abs(overlap)
+    return dict(visibility=float(visibility),normplus=float(normplus),normminus=float(normminus),
+                q_difference=qp-qm,p_difference=pp-pm,
+                common_force=common_force,mass=mass,hbar=hbar,
+                conditional_packet_dynamical_phases="irrelevant to magnitude; not reconstructed")
+
+def json_real(z): return float(mp.re(z))
+
+def main():
+    result={"created_at":datetime.now(timezone.utc).isoformat(),
+        "script_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+    pair=[]
+    last_x=None
+    for row in AUTHOR["grid"]["pair_rows"]:
+        x,d=row["x"],row["d"]
+        ours=pair_time_domain(x,d)
+        values=[]
+        for a in row["channels"]:
+            exact=ours["echo" if a["echo"] else "ramsey"]
+            error=abs(exact-M(a["chi_over_kappa_closed"]))
+            values.append(dict(echo=a["echo"],time_domain_value=float(exact),
+                time_domain_decimal=str(exact),author_closed=a["chi_over_kappa_closed"],
+                author_direct=a["chi_over_kappa_direct"],absolute_error=float(error),
+                fractional_error=float(error/abs(exact)) if exact else None))
+        pair.append(dict(x=x,d=d,channels=values))
+        if x!=last_x:
+            print("Time-domain covariance controls at x="+str(x),flush=True)
+            last_x=x
+    result["pair_time_domain_controls"]=pair
+    singles=[]
+    for row in AUTHOR["grid"]["single_rows"]:
+        value=F_time(row["x"])
+        singles.append(dict(x=row["x"],time_integral_value=float(value),
+            author_closed=row["closed"],absolute_difference=float(abs(value-M(row["closed"])))))
+    result["single_time_controls"]=singles
+    plates=[]
+    for row in AUTHOR["plateau"]:
+        d=row["d"];jt=J_time(d);static=static_real_space(d)
+        late=[]
+        for a in row["late_time_rows"]:
+            x=a["x"]
+            dr=D_late_time(x,d)
+            de=4*D_late_time(x/2,d)-dr
+            late.append(dict(x=x,ramsey=float(2*dr),echo=float(2*de),
+                author_ramsey=a["ramsey"],author_echo=a["echo"],
+                ramsey_absolute_error=float(abs(2*dr-M(a["ramsey"]))),
+                echo_absolute_error=float(abs(2*de-M(a["echo"])))))
+        upper=min(M(d)**2/12,mp.mpf(1)/12+e1_series(1/M(d)**2)) if d>=1 else M(d)**2/12
+        plates.append(dict(d=d,J_positive_time_integral=float(jt),
+            J_author_closed=row["J_closed"],J_absolute_error=float(abs(jt-M(row["J_closed"]))),
+            static_positive_real_space=float(static),static_author=row["static_closed"],
+            static_absolute_error=float(abs(static-M(row["static_closed"]))),
+            J_bound=float(upper),J_below_bound=bool(jt<=upper),late_rows=late))
+    result["plateau_and_static_controls"]=plates
+    result["coincident_static_limit"]=float(static_real_space(0))
+    print("All field, single-clock, static and late-time controls completed.",flush=True)
+    oscillators=[]
+    cache={}
+    for a in AUTHOR["finite_oscillator_rows"]:
+        key=(a["omega"],a["T"],a["echo"])
+        if key not in cache:
+            cache[key]=[packet_visibility(*key,common_force=f) for f in [0.,.31]]
+        b0,b1=cache[key]
+        oscillators.append(dict(dim=a["dim"],omega=a["omega"],T=a["T"],echo=a["echo"],
+            author_matrix_visibility=a["direct_visibility"],
+            author_predicted=a["predicted"],
+            independent_zero_common=b0,independent_with_common=b1,
+            difference_from_author_matrix=abs(b0["visibility"]-a["direct_visibility"]),
+            difference_from_author_prediction=abs(b0["visibility"]-a["predicted"]),
+            common_force_visibility_difference=abs(b0["visibility"]-b1["visibility"]),
+            author_top_level_population=a["top_level_population"]))
+    result["position_wavepacket_controls"]=oscillators
+    si=[]
+    G,h,c=mp.mpf("6.67430e-11"),mp.mpf("6.62607015e-34"),mp.mpf(299792458)
+    frac=mp.mpf(1)/2500
+    for a in AUTHOR["illustrative_SI"]["rows"]:
+        nu,ell,L=M(a["nu_Hz"]),M(a["width_m"]),M(a["separation_m"])
+        kappa=G*frac*(h/(2*mp.pi))*(2*mp.pi*nu)**2/(mp.pi*c**5)
+        d=L/ell
+        upper=min(d*d/12,mp.mpf(1)/12+e1_series(1/(d*d)))
+        r,e=4*kappa*upper,16*kappa*upper
+        si.append(dict(nu_Hz=float(nu),width_m=float(ell),L_m=float(L),
+            kappa_decimal=str(kappa),J_upper_decimal=str(upper),
+            Ramsey_bound_decimal=str(r),echo_bound_decimal=str(e),
+            Ramsey_bound=float(r),echo_bound=float(e),
+            Ramsey_fractional_error=float(abs(r-M(a["all_time_Ramsey_chi_upper"]))/r),
+            echo_fractional_error=float(abs(e-M(a["all_time_echo_chi_upper"]))/e)))
+    result["SI_high_precision_controls"]=si
+    asym=[]
+    for x in [100,300,1000]:
+        f=F_time(x);j=J_time(x)
+        asym.append(dict(x=x,F_log_constant_remainder_times_x2=float((f-mp.log(x)-mp.euler/2)*x*x),
+            J_log_constant_remainder_times_x2=float((j-mp.log(x)-mp.euler/2+1)*x*x)))
+    result["asymptotic_diagnostics"]=asym
+    result["summary"]=dict(
+        pair_geometries=len(pair),pair_channels=sum(len(r["channels"]) for r in pair),
+        max_pair_absolute_difference=max(c["absolute_error"] for r in pair for c in r["channels"]),
+        max_pair_fractional_difference=max(c["fractional_error"] or 0 for r in pair for c in r["channels"]),
+        oscillator_author_rows=len(oscillators),
+        max_wavepacket_to_author_matrix_difference=max(r["difference_from_author_matrix"] for r in oscillators),
+        max_wavepacket_to_author_prediction_difference=max(r["difference_from_author_prediction"] for r in oscillators),
+        max_common_force_visibility_change=max(r["common_force_visibility_difference"] for r in oscillators),
+        max_late_time_absolute_difference=max(max(r["ramsey_absolute_error"],r["echo_absolute_error"]) for p in plates for r in p["late_rows"]),
+        max_SI_fractional_difference=max(r["Ramsey_fractional_error"] for r in si),
+        max_SI_Ramsey_bound=max(r["Ramsey_bound"] for r in si),
+        max_SI_echo_bound=max(r["echo_bound"] for r in si))
+    (HERE/"INDEPENDENT_RESULTS_v1.json").write_text(json.dumps(result,indent=2,sort_keys=True)+"\n")
+    print(json.dumps(result["summary"],indent=2),flush=True)
+
+if __name__=="__main__":main()

@@ -56,3 +56,14 @@ Conformal full report and51 source/evidence identities verified. Nonconformal fu
 ## 2026-10-13T01:08:26.524489+00:00 tensor and clock update
 
 Parent read complete tensor/scalar independent report and derivation, verified all47 original/evidence paths;175 checks and9 provenance controls pass without correction. Receipt481386eea7570fcf2edb7f063e11addfc878fb65592f52b33b7bff0807f36499. Scalar-clock parent98 channel/32 oscillator controls pass, focused check active. PR9507 final source and all three mechanical gates passed; exact copied evidence under milestones/matter_readout. No formal audit.
+
+## 2026-10-13T01:35:47.555911+00:00 checkpoint
+
+Clock full independent report read; 67 exact path identities verified, no material
+correction. Charge block completed by parent with explicit source limitations and
+fit/test separation; focused check active. Metric/clock canonical port underway;
+no premature review or package pass. Original clock reviewed EOF bytes preserved.
+
+Charge reviewer found a scalar-compensator wording overclaim. Parent corrected
+only the singlet/unbroken-Q condition; exact original/diff in the block. The
+same reviewer is confirming this change. No numeric input or code changed.

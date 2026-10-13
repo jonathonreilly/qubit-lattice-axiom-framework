@@ -1,0 +1,182 @@
+# Focused independent check: scalar clock normalization and reference geometry
+
+**Disposition: supported within the explicitly supplied linear Gaussian model. No material source correction is required.** The canonical normalization, static-source coefficient, two-centre logical source, exact dephasing formulas, limits and analytic bounds agree. The strongest physical qualification remains essential: the vacuum, factorized preparation, Gaussian source profile, linear coupling and ideal logical control/readout are additional assumptions. This is not a bound on an actual clock apparatus, all gravitational decoherence, or the nonlinear tensor/scalar theory.
+
+The parent remains the sole lead author. This check wrote only independent_review/, imported or executed no author runner, changed no parent source, and made no audit, landing or empirical decision. The original deadline is 2026-10-13T16:53Z, with no new discovery after 16:38Z.
+
+## Material read and bound to this check
+
+I read the complete protocol, main derivation, results/scope, source ledger, certificate/trace, both freezes, full runner and execution record. Every result class and row was inspected or consumed: 49 pair geometries/98 channels, seven singles, six refinements, seven static/plateau rows with 21 late-time rows, 32 finite-oscillator rows and 27 SI rows. Sixteen complete clock-block files and three upstream action/source files are preserved as exact snapshots.
+
+For the upstream block I read the complete DIRECT_RECONSTRUCTION.md, RESULTS_AND_SCOPE.md and SOURCE_LEDGER.json. The action and weak static map are the imports actually checked here; this report does not repeat or promote all of that block's tensor-wave, source-stress or observational claims.
+
+Principal source SHA-256 identities:
+
+| File | SHA-256 |
+|---|---|
+| PROTOCOL.md | 8ca2e2bacead8ad55fc72102d089895792e92323c6ff25bbc5c93f6f36ac48f8 |
+| DIRECT_SCALAR_CLOCK_LINK.md | 9aefd47dfdb9c02096ec8c268bf389c59459ba2aefc8975eb94636809937de29 |
+| check_scalar_clock_link.py | 4928b7497813a91b9ca5cbce57a43fb3cb6da347c10d9ecd73e7fd6b380cd035 |
+| evidence_v1/RESULTS.json | b9e1b1a10cbcc2dbeafec04e41850d959dff5efddad99314b4020106b97d1e5c |
+| RESULTS_AND_SCOPE.md | f7571b3903a432d557298b9b451cd6564c0c8524779d30e957e2b15043b26c9d |
+| SOURCE_LEDGER.json | 3183ea5e98caecd73b206f195e5c28c67093da5c3e9b84e223605c71e11df58e |
+| Upstream DIRECT_RECONSTRUCTION.md | fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3 |
+
+The final receipt inventories all author snapshots, upstream sources, reviewer code and evidence. The main freeze and executed source snapshots bind the same protocol/note/runner. The prior source hashes in the clock ledger agree with the actual upstream files read.
+
+## Canonical normalization, spectrum and static response
+
+The upstream scalar term is
+
+    -c³/(8pi G_*) integral d⁴x K_AB eta^(mu nu)
+       partial_mu phi^A partial_nu phi^B,
+
+with x^0=ct. Substituting d⁴x=c dt d³x and partial_0=partial_t/c gives exactly the displayed physical-time action c²/(8pi G_*) times [phi_dot K phi_dot-c² grad(phi) K grad(phi)]. Its canonical momentum is c² K phi_dot/(4pi G_*).
+
+A transparent normalization is
+
+    q = c K^(1/2) phi / sqrt(4pi G_*).
+
+Then q has the conventional action (1/2) integral [q_dot²-c²(grad q)²], and each Fourier oscillator has frequency ck. The matter scalar is
+
+    zeta = sqrt(4pi G_*)/c * alpha^T K^(-1/2) q.
+
+The squared coefficient is 4pi G_* a/c², with a=alpha^T K^-1 alpha. The vacuum two-point coefficient is therefore 4pi G_* hbar a/c² multiplying the standard 1/(2ck) Fourier measure. This also shows why extra positive uncoupled scalar directions do not supply another adjustable noise amplitude in this channel. The a=0 limit has no coupled scalar noise.
+
+The angular measure, the 2pi frequency delta function and its 1/c Jacobian give
+
+    S_0^+(omega) = 2 G_* hbar a omega/c⁵
+                   * exp[-(ell omega/c)²] theta(omega).
+
+The sign of frequency matches the convention integral dt exp(i omega t) C(t), with vacuum C(t) proportional to exp(-ickt). There is no missing two-sided-spectrum factor or factor of c. S^+ has units of time because zeta is dimensionless.
+
+The same normalized action coupled through H_I=E alpha.phi gives the static equation
+
+    Delta phi = (4pi G_*/c⁴) K^-1 alpha E delta³(x).
+
+Its solution yields zeta=-G_* a E/(c⁴r). Minimizing field energy plus the source interaction, or taking half the on-shell total source-potential sum, gives one cross interaction -G_* a E1 E2/(c⁴r); counting both source terms without the field energy would double it incorrectly. Setting E=mc² reproduces G_*a. The prior weak map G_N=G_*(1+a) therefore gives G_*a=G_N f_scalar.
+
+For the stated normalized Gaussian, the Fourier profile is exp(-ell²k²/2), so a covariance or two-source interaction contains exp(-ell²k²). An independent positive real-space convolution gives
+
+    average 1/|X1-X2|
+       = 1/(sqrt(pi) ell) integral_0^1 exp[-d²s²/4] ds
+       = erf(d/2)/L,  d=L/ell.
+
+The coincident limit is 1/(sqrt(pi)ell), not an infinite point self interaction. This verifies the width convention and static erf factor. It is a supplied profile, not an inferred atom or a constructed material body.
+
+## Logical source, common coupling and oscillator influence
+
+Universal proper-time coupling gives the supplied clock splitting hbar Omega exp(zeta). At first order its branch difference is hbar Omega zeta. For the logical pair, the branch difference is hbar Omega(zeta_1-zeta_2), so H_I,L=(hbar Omega/2)Z_L B with B=zeta_1-zeta_2. There is no extra factor of two from the two-clock logical basis.
+
+The protocol's identical spectra/profiles and symmetric stationary setting support the common coupling proportional to zeta_1+zeta_2. Its commutator with the difference is
+
+    C11(t,s)-C12(t,s)+C21(t,s)-C22(t,s)=0,
+
+using equal self commutators and reciprocal cross commutators. Equivalently, with centres chosen at +/-L/2, each real cosine/sine Fourier-mode pair puts the common source entirely in its cosine coordinate and the difference entirely in its sine coordinate. Those two coordinates commute at all times. Thus the common coupling supplies no omitted relative phase in this symmetric model.
+
+More generally, a common linear force can change a deterministic relative phase through the commutator, but it does not change Gaussian visibility. That distinction matters: dropping a phase is not itself a calculation of decoherence. The parent confines the exact phase cancellation to the symmetric setup and explicitly supplies phase compensation/readout.
+
+For a single canonical oscillator with coordinate q, mass M, frequency omega and B=bq, the two conditional force histories differ by -hbar Omega b y(t). Classical forced-oscillator flow determines their Gaussian wavepacket centres. With vacuum variance sigma_q²=hbar/(2M omega), their overlap magnitude is
+
+    exp[-(Delta q)²/(8 sigma_q²)
+        -sigma_q² (Delta p)²/(2 hbar²)]
+      = exp[-hbar Omega² b² |Y|²/(4M omega)].
+
+This independently derives the vacuum Gaussian factor. In the author's finite-mode convention H_+/-=hbar omega a†a +/- hbar g(a+a†)/2, it becomes exp[-g²|Y|²/2]. The phase-space normalization was checked with nonunit canonical mass and hbar, rather than assuming the creation-operator prefactor.
+
+For the field, the Weyl displacement norm gives
+
+    chi = Omega²/2 integral dt ds y(t)y(s) C_sym(t,s)
+        = Omega²/(4pi) integral_0^infinity S_B^+(omega)|Y|² d omega.
+
+The first expression uses C_sym=<{B(t),B(s)}> /2; the second includes both frequency signs of that symmetric covariance. For Gaussian profiles and finite switching time the displacement norm and commutator phase are finite. The result is exact for the stated linear model, not for the full exponential clock coupling or nonlinear gravity.
+
+The logical X/Y preparation and measurement are supplied mathematical operations. Equal total unperturbed energies remove the bare relative clock phase for |eg> and |ge>, and phase compensation gives p_+=(1+V)/2. An unaffected single-clock phase reference is an additional supplied reference, not a consequence of universal coupling. Neither construction supplies a complete causal optical link or trap/control apparatus.
+
+## Two-centre geometry and an independent time-domain calculation
+
+The exact spatial source difference is exp(ik.x1)-exp(ik.x2). Its angular squared average is 2[1-sinc(omega L/c)], hence the pair spectrum and its low-frequency (omega L/c)²/3 suppression. Treating the clocks as independent baths would erase that term.
+
+For an independent route, I integrated the smeared spatial covariance first. With v=c(t-s)/ell,
+
+    C_sym,zeta(t-s,L) = G_* a hbar/(pi c³ ell²) K(v,d),
+    K(v,0) = [1-v Dawson(v/2)]/2,
+    K(v,d) = [Dawson((d+v)/2)+Dawson((d-v)/2)]/(2d).
+
+Then the pair exponent is
+
+    chi_pair/kappa = 2 integral_0^x A_y(v)[K(v,0)-K(v,d)] dv,
+
+where A_R(v)=x-v, while the echo autocorrelation is x-3v for 0<=v<=x/2 and v-x for x/2<=v<=x. These are temporal overlap integrals of the actual switching history. They avoid both the author's radial/angular quadrature and its hypergeometric F/H implementation.
+
+At 45-digit working precision, these time-domain integrals reproduce all **98 channels**. Maximum absolute discrepancy from the stored rounded closed values is **1.031305390627413e-15**; maximum fractional discrepancy is **1.8537900220738107e-16**. The seven zero-separation pairs cancel identically. These comparisons are limited by the stored floating-point values and are not interval certificates.
+
+The position-space Gaussian-wavepacket calculation checks all **32 finite-matrix rows**. Maximum difference from the author's analytic visibility is **2.220446049250313e-16** and from its matrix exponential is **1.4876988529977098e-14**. Including a nonzero common force changes visibility by at most **3.3306690738754696e-16**. Packet normalization errors are at most the same size. The parent's largest recorded highest-level population is 6.509898469985751e-24; it is a useful truncation diagnostic, not a general Hilbert-space truncation proof.
+
+## F, J, D, asymptotics and limits
+
+Differentiating the defining positive integral gives F'(x)=Dawson(x/2). The cosine series gives F=x²/4-x⁴/48+O(x⁶), and integration of the Dawson expansion gives the stated large-x inverse powers. The regularized Mellin difference has cancelling 1/s poles and constant log|x|+gamma_E/2. Thus the stated hypergeometric expression, sign and asymptotic constant are consistent.
+
+Differentiating H(z)=zF(z)-z+2Dawson(z/2) gives H'=F, including negative z. Averaging F(dt) over t in [0,1] gives J(d), and the cosine product identity gives the stated finite D formula. Both d=0 limits are zero. The independent code evaluates J instead through the positive integral
+
+    J(d)=integral_0^d (1-v/d) Dawson(v/2) dv,
+
+and evaluates late-time D using a finite Dawson-difference average rather than subtracting large hypergeometric values.
+
+The seven single-reference checks agree within **1.3932225520631846e-16** absolute; J checks within **6.949375625465302e-17**; real-space static potentials within **1.3831271112602033e-16**. All **21 late-time rows**, for both Ramsey and echo, agree within **1.2680309079619132e-15** absolute.
+
+The time filters yield chi_R,1=kappa F(x) and chi_E,1=kappa[4F(x/2)-F(x)]. The pair formulas have the additional factor two and the D replacement exactly as stated. Echo need not improve broadband vacuum visibility; its limiting factor six is not inconsistent with a Ramsey factor two.
+
+For fixed finite d, the J weight is integrable at both ends: near zero it is proportional to u, and at infinity Gaussian damping applies. The Riemann-Lebesgue lemma therefore gives D(x,d)->J(d), producing 2kappa J and 6kappa J. At d=0 the operator source itself vanishes. Taking separation to infinity first at fixed finite x removes the cross covariance and gives two single-reference exponents. These limiting procedures are correctly distinguished.
+
+The small-d coefficients d²/12-d⁴/240 and the large-d constant log d+gamma_E/2-1 with +1/d² are correct. Independent asymptotic diagnostics at x=1000 give
+
+    x²[F(x)-log x-gamma_E/2] = -1.0000030000200002,
+    x²[J(x)-log x-gamma_E/2+1] = 1.000001000004,
+
+consistent with the signs and first inverse-power terms. These finite diagnostics are not substituted for the asymptotic proof or for a uniform error bound.
+
+The infrared distinction follows within this calculation: the single spectrum is proportional to omega, whereas the balanced pair adds two powers of omega at finite separation. No result for an older continuous mass spectrum is needed or endorsed to derive that distinction.
+
+## Analytic all-time and SI bounds
+
+The positive weight and 0<=1-cos<=2 give 0<=D<=2J. The echo numerator is exactly 2[1-cos(xu/2)]², between zero and eight. Consequently
+
+    chi_R,pair <= 4 kappa J,
+    chi_E,pair <= 16 kappa J.
+
+The sinc inequality follows globally by writing sinc z as integral_0^1 cos(tz)dt and applying 1-cos(tz)<=t²z²/2. It yields J<=d²/12. Splitting at u=1/d gives a lower part no greater than 1/12 and an upper part no greater than E1(1/d²). Thus the minimum bound is valid for every positive d; it does not rely on the large-d series.
+
+The parent radial truncation bound is also correct for its 98 direct checks: |Y|<=x<=30 and the angular form is at most four, so the omitted normalized integral above u=12 is at most x²exp(-144)<=900exp(-144)=2.60517628048347e-60. This bounds that tail, not the finite radial/angular quadrature errors. Those are separately tested numerically. All six reported refinements are present; their largest fractional change is 5.072533014450029e-14.
+
+The two amplitude expressions
+
+    kappa=G_N f_scalar hbar Omega²/(pi c⁵)
+         =2 G_N h f_scalar nu²/c⁵
+
+are dimensionally and numerically consistent. I recomputed all **27 SI cases** using high-precision decimal constants and an independent convergent E1 series. Maximum fractional disagreement is **4.1436320173385524e-16**. The maxima are
+
+    Ramsey bound: 3.200636595136823e-57,
+    echo bound:   1.2802546380547293e-56,
+
+at nu=1e15 Hz, ell=1 nm and L=1 km. Since 1-exp(-chi)<=chi, they also bound the visibility loss in this model.
+
+The used G_N central value and uncertainty, exact h, and exact c match the [NIST CODATA 2022 table](https://physics.nist.gov/cuu/Constants/Table/allascii.txt). The prior f_scalar<=1/2500 is an image of an exposed working rectangle under the unscreened universal static model. Neither it nor the central-value SI substitution is a new confidence bound. No empirical clock noise was fitted.
+
+## Complete positivity, classical degeneracy and remaining physical imports
+
+For a factorized initial state, conditional environment unitaries give the dephasing factors as a Gram kernel. In the present Gaussian construction the finite-time Weyl displacements are well defined, so positivity is not inferred from a selection of sampled exponents. Equivalently for the logical qubit, chi>=0 gives a valid dephasing channel. This does not imply Markovianity or complete-positive divisibility in time, neither of which is claimed.
+
+The symmetric covariance is also a positive real classical covariance: for a real test history its quadratic form is the expectation of a squared Hermitian smeared field. A real Gaussian random field with that covariance gives the same commuting longitudinal phase visibility. In the symmetric pair the common-source phase cancels; for a single reference a known deterministic phase can be treated separately. These data therefore do not distinguish quantum vacuum noise from an appropriately chosen classical Gaussian field.
+
+Canonical quantization and the chosen vacuum, not the static force coefficient alone, fix the noise covariance. Thermal/squeezed states, different preparation correlations, dressing, other fields or nonuniversal couplings need not share this result. Finite-time source-driven Gaussian displacements are included in the linear influence calculation; nonlinear field/source dynamics and a full gravitating apparatus are not.
+
+The whole Gaussian-profile free-field integral is an explicit idealization. Because the Fourier profile has noncompact support, a cutoff effective action cannot inherit the exact formulas without a remainder estimate. Likewise the all-time bounds apply to the specified linear scalar channel, not uniformly to the full exponential clock interaction or a nonlinear gravitational theory. Actual atomic profiles, supports, tensor fluctuations, source formation, causal controls and readout are still unsupplied. The source statements maintain these distinctions.
+
+## Execution and provenance record
+
+The visible author record contains one initial successful execution, exit 0 and empty stderr; source hashes are unchanged between the pre-execution freeze, copied sources and result. No failed author execution or corrective source version is present, and none was invented.
+
+The reviewer primary execution also succeeded with empty stderr and no discarded run. Complete code, raw output, numerical rows, environment record and original author/upstream files are retained. The source ledger's prior-art reference to Palma, Suominen and Ekert is explicitly abstract-only context; I checked that [primary abstract](https://arxiv.org/abs/quant-ph/9702001), imported no equation from it, and make no exhaustive novelty claim.
+
+The certificate's conditional-support, frontier_discovery and proposal_allowed:false status matches the result. The work supplies a checked conditional link between a static scalar coefficient and a reference-dependent coherence channel. It supplies neither a quantum-vacuum detection nor a completed microscopic TOE or empirical likelihood.

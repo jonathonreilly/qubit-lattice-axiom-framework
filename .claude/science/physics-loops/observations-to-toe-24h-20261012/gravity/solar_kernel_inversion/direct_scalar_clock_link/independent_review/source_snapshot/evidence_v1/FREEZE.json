@@ -1,0 +1,45 @@
+{
+  "frozen_at": "2026-10-13T01:00:00.756953+00:00",
+  "source_sha256": {
+    "PROTOCOL.md": "8ca2e2bacead8ad55fc72102d089895792e92323c6ff25bbc5c93f6f36ac48f8",
+    "DIRECT_SCALAR_CLOCK_LINK.md": "9aefd47dfdb9c02096ec8c268bf389c59459ba2aefc8975eb94636809937de29",
+    "check_scalar_clock_link.py": "4928b7497813a91b9ca5cbce57a43fb3cb6da347c10d9ecd73e7fd6b380cd035"
+  },
+  "additional_controls_selected_before_execution": {
+    "finite_oscillators": {
+      "dimensions": [
+        16,
+        24
+      ],
+      "omega": [
+        0.7,
+        1.3
+      ],
+      "T": [
+        0.1,
+        1,
+        3,
+        6
+      ],
+      "g": 0.2,
+      "Ramsey_and_echo": true
+    },
+    "late_times": [
+      100,
+      300,
+      1000
+    ],
+    "plateau_and_static_d": [
+      0.1,
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      30
+    ]
+  },
+  "prior_execution_of_this_runner": false,
+  "fit": false,
+  "independent_observation_test": false
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Two selected historical primary-source summaries, both already exposed; nominal molecular composition and reported calibration/subtraction assumptions retained. Independent Gaussian uncertainty propagation is a supplied summary approximation, not raw likelihood, blind holdout, latest-limit survey or confidence bound.",
+  "neutron": {
+    "source": "Baumann, Gaehler, Kalus, Mampe, Phys Rev D37,3107 (1988)",
+    "url": "https://doi.org/10.1103/PhysRevD.37.3107",
+    "read_scope": "Primary journal abstract: reported neutron charge and uncertainty; fulltext web opening failed, no event-level or full systematic model imported.",
+    "mean_in_1e_minus21": "-0.4",
+    "reported_uncertainty_in_1e_minus21": "1.1",
+    "role": "One-parameter calibration for the anomaly family."
+  },
+  "molecule": {
+    "source": "Bressi et al., Phys Rev A83,052101 (2011), arXiv1102.2766v2",
+    "url": "https://arxiv.org/pdf/1102.2766",
+    "read_scope": "Introduction, Eq1 source combination, measurement/calibration discussion, IVB and conclusions; pages2,3,13 rendered and inspected. Not every intermediate spherical-resonator calculation was rederived.",
+    "mean_in_1e_minus21": "-0.1",
+    "reported_uncertainty_in_1e_minus21": "1.1",
+    "Z_nominal": 70,
+    "A_nominal": 146,
+    "polarity_means_in_1e_minus21": [
+      {"mean": "9.1", "uncertainty": "1.4"},
+      {"mean": "-9.3", "uncertainty": "1.6"}
+    ],
+    "role": "Exposed development transfer comparison after calibrating from the neutron; optional joint fit separately labelled calibration.",
+    "interpretation": "Use s=(Z*x+N*y)/A. The published special interpretation x=y assumes a neutral antineutrino and is not imported into this candidate.",
+    "limits": "Nominal isotope/nucleon-mass conversion; polarity-odd subtraction and common acoustic calibration adopted. Unbounded even-polarity nuisance would be degenerate with s."
+  },
+  "source_versions_inspected_before_numeric_execution": true,
+  "raw_events_available_in_this_block": false
+}

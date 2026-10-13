@@ -5,8 +5,8 @@ stopped; no replacement author. Focused agents check only. No other-chat
 messages, model changes, credits, main pushes, merges or formal audits.
 Deadline2026-10-13T16:53:00.057432Z, packaging begins16:38Z. Never extend.
 Cancelled toe-observation-inversion campaign remains stopped. Original
-Documents checkout untouched. No conflicting owned process at00:59:35Z.
-Cooperative physics-loop lock, same holder, expires02:01:18.073854Z.
+Documents checkout untouched. No conflicting owned process at01:26:35Z.
+Cooperative physics-loop lock, same holder, expires03:30:26.230610Z.
 
 ## Current work and exact next action
 
@@ -18,22 +18,23 @@ Cooperative physics-loop lock, same holder, expires02:01:18.073854Z.
    weak adiabatic circular source are supplied. No empirical acceptance.
    See direct_tensor_scalar_reconstruction/CHECKED_OUTCOME.md.
 
-2. Parent authored and executed direct_scalar_clock_link. Same coupling fixes
-   the canonical scalar vacuum spectrum and a defined balanced two-clock
-   source/readout.98 direct field channels and32 finite oscillator controls
-   pass. Shared long wavelengths cancel, giving finite fixed-distance
-   Ramsey/echo plateaus. Conditional illustrative all-time1-V bounds peak
-   at3.20064e-57/1.28026e-56; they are not actual apparatus constraints or
-   bounds on total gravity noise. Focused independent reviewer
-   /root/direct_quantum_visibility_review is active in independent_review/.
-   Do not modify pinned parent source while it checks.
+2. Scalar clock independent check is complete. Full report read, all67 source,
+   snapshot and reviewer-evidence identities verified. No material correction.
+   See direct_scalar_clock_link/CHECKED_OUTCOME.md and PARENT_REVIEW_RECEIPT.json.
+   Vacuum/source/profile/reference assumptions and classical covariance
+   degeneracy remain essential; no actual clock or total-noise bound.
 
-3. Parent next block works backward from matter charges and neutrino structure:
-   solve anomaly/Yukawa constraints with and without neutral singlets, expose
-   residual B-L freedom, and map primary neutron/molecular neutrality data
-   without importing a neutrality assumption into its own test. Initial
-   primary reading and repo grounding underway. No new runner/output yet.
-   This chat remains sole lead author; agents only check completed sources.
+3. Parent personally completed matter/direct_charge_reconstruction. All364
+   cubic-generator traces,45 rational charge cards,512 support graphs,
+   37 global-lattice cases and4 varying primitive compact examples pass.
+   Dirac neutrinos leave Q=Q_SM+epsilon(B-L); exact zero requires additional
+   mass/global hypotheses. In measured electron units neutron charge is delta
+   and neutrino charge is -delta. Neutron-only historical calibration predicts
+   SF6 -0.208219e-21 versus exposed -0.1+/-1.1e-21, standardized residual.08727.
+   This is an exposed summary consistency check, not a blind test or signal.
+   Parent notes/code/protocol/results/source ledger are frozen. Focused
+   /root/direct_field_check is active only in that block's independent_review/.
+   Do not modify its pinned source while checked.
 
 4. PR9507 is OPEN, verified and attached, branch
    codex/local-vector-matter-readout-20261012 stacked on PR9505 exact
@@ -50,8 +51,12 @@ Cooperative physics-loop lock, same holder, expires02:01:18.073854Z.
    source identities, respectively. Conformal null paths have no bending.
    Nonconformal lambda=1 plus circular speed calibration gives e=.6
    R=1.0578991; source-body sensitivity gap explicitly narrowed and extra
-   dipole diagnostic preserved. No pulsar exclusion. These blocks and the
-   new tensor/clock relation form the next coherent reviewable milestone.
+   dipole diagnostic preserved. No pulsar exclusion. The new common tensor/clock
+   relation is being ported to a coherent milestone; alternative metric routes
+   remain preserved campaign research and are not hidden premises.
+   Worktree metric-clock-20261013, branch codex/metric-clock-reconstruction-20261013,
+   base main516cb69d. Canonical note and17 unchanged function bodies written;
+   first canonical execution/port comparison and independent review pending.
 
 ## Newly checked observation work
 

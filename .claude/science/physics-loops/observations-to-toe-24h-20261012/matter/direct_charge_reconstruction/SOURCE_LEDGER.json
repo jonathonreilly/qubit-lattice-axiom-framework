@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-10-13T01:29:04.931562+00:00",
+  "authorship": "Direct parent author; no broad research delegation. Focused independent check requested after source frozen.",
+  "scope": "Known chiral EFT hypothesis reconstructed from observed charge/mixing/neutrality patterns, not native theorem or exhaustive novelty claim.",
+  "repository_prior_art": [
+    {
+      "path": "docs/SM_HYPERCHARGE_UNIQUENESS_WITHOUT_NU_R_INPUT_THEOREM_NOTE_2026-05-02.md",
+      "revision": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "c1e76dbf27aab8f6acb495c76fb8bbd103ca330408d4a5e72eed0878132f2d6d",
+      "bytes": 13026,
+      "read_scope": "Full note read; admitted charge/readout and no-neutrino premises retained. Existing runners not rerun and formal status not endorsed."
+    },
+    {
+      "path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "revision": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "8114db0551aa419ebeff4d4b2ed52390f0b33284ff2aa496e22546e92e8348a3",
+      "bytes": 12238,
+      "read_scope": "Full note read; admitted charge/readout and no-neutrino premises retained. Existing runners not rerun and formal status not endorsed."
+    },
+    {
+      "path": "docs/HYPERCHARGE_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-07.md",
+      "revision": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "sha256": "f2b27ec8ef560535a05242d8d195be9efd5f2926c9c39e61f14f8849a14e42a3",
+      "bytes": 4165,
+      "read_scope": "Full note read; admitted charge/readout and no-neutrino premises retained. Existing runners not rerun and formal status not endorsed."
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://doi.org/10.1103/PhysRevD.37.3107",
+      "name": "Baumann et al., 1988 neutron charge",
+      "role": "Calibration summary only",
+      "read_scope": "Primary journal abstract; quoted measurement and uncertainty only",
+      "access_failure": {
+        "url": "https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevD.37.3107/fulltext",
+        "tool_result": "InternalError",
+        "consequence": "No fulltext, raw events or complete systematic model claimed."
+      }
+    },
+    {
+      "url": "https://arxiv.org/pdf/1102.2766",
+      "name": "Bressi et al., 2011, Phys Rev A83 052101, v2",
+      "role": "Exposed SF6 development comparison and measured combination",
+      "read_scope": "Introduction, Eq1, measurement/calibration discussion, IVB and conclusion; rendered pages2,3,13 inspected. Not all intervening spherical-resonator derivations rederived.",
+      "supplied_inputs": "Nominal Z70 A146; published rounded mean/uncertainty; polarization calibration and polarity subtraction."
+    },
+    {
+      "url": "https://arxiv.org/pdf/hep-ph/9209259",
+      "name": "Foot, Lew, Volkas, Electric Charge Quantization",
+      "role": "Prior art for Dirac-neutrino B-L and flavor freedom",
+      "read_scope": "Primary PDF text pages3-9 sections one-family/Dirac/three-family/Majorana; not full18 pages. Normalization translated explicitly; no numeric input."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1705.01853v2",
+      "name": "Tong, Line Operators in the Standard Model",
+      "role": "Compact global group and line-operator prior art",
+      "read_scope": "Introduction and Section3, PDF pages7-9; specified center congruence checked independently. Not full18 pages. Primitive normalization is an extra hypothesis."
+    }
+  ],
+  "local_primary_recovery": [
+    {
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011.pdf",
+      "sha256": "9b7347b92bb417e5da019a355b0d681838a31ea8a47dbf8350d0c13d27a0312f",
+      "bytes": 2443256,
+      "distribution": "Local recovery only; primary PDF/pages not included in public Git package."
+    },
+    {
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011_page_13.png",
+      "sha256": "7bc1149abf692816faaba1c4efaa1b5d82a943a5e871af7dcc0ec0f124de0717",
+      "bytes": 207369,
+      "distribution": "Local recovery only; primary PDF/pages not included in public Git package."
+    },
+    {
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011_page_2.png",
+      "sha256": "32d6aecb0ca6abc46969b69a67bb7499983cba07f13cdd26a0cdc64ca6c59c1a",
+      "bytes": 212266,
+      "distribution": "Local recovery only; primary PDF/pages not included in public Git package."
+    },
+    {
+      "local_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/charge_block/Bressi2011_page_3.png",
+      "sha256": "9b4a1ae33c276879cd23bcbcc0337c82fc37969c1ca4d89ea7c8c1a24419548c",
+      "bytes": 174168,
+      "distribution": "Local recovery only; primary PDF/pages not included in public Git package."
+    }
+  ],
+  "upstream_metric": {
+    "path": "gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md",
+    "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+    "role": "Supplied matter physical metric only; no claim anomaly cancellation fixes scalar couplings or quantum matter trace."
+  },
+  "input_roles": {
+    "scope": "Two selected historical primary-source summaries, both already exposed; nominal molecular composition and reported calibration/subtraction assumptions retained. Independent Gaussian uncertainty propagation is a supplied summary approximation, not raw likelihood, blind holdout, latest-limit survey or confidence bound.",
+    "neutron": {
+      "source": "Baumann, Gaehler, Kalus, Mampe, Phys Rev D37,3107 (1988)",
+      "url": "https://doi.org/10.1103/PhysRevD.37.3107",
+      "read_scope": "Primary journal abstract: reported neutron charge and uncertainty; fulltext web opening failed, no event-level or full systematic model imported.",
+      "mean_in_1e_minus21": "-0.4",
+      "reported_uncertainty_in_1e_minus21": "1.1",
+      "role": "One-parameter calibration for the anomaly family."
+    },
+    "molecule": {
+      "source": "Bressi et al., Phys Rev A83,052101 (2011), arXiv1102.2766v2",
+      "url": "https://arxiv.org/pdf/1102.2766",
+      "read_scope": "Introduction, Eq1 source combination, measurement/calibration discussion, IVB and conclusions; pages2,3,13 rendered and inspected. Not every intermediate spherical-resonator calculation was rederived.",
+      "mean_in_1e_minus21": "-0.1",
+      "reported_uncertainty_in_1e_minus21": "1.1",
+      "Z_nominal": 70,
+      "A_nominal": 146,
+      "polarity_means_in_1e_minus21": [
+        {
+          "mean": "9.1",
+          "uncertainty": "1.4"
+        },
+        {
+          "mean": "-9.3",
+          "uncertainty": "1.6"
+        }
+      ],
+      "role": "Exposed development transfer comparison after calibrating from the neutron; optional joint fit separately labelled calibration.",
+      "interpretation": "Use s=(Z*x+N*y)/A. The published special interpretation x=y assumes a neutral antineutrino and is not imported into this candidate.",
+      "limits": "Nominal isotope/nucleon-mass conversion; polarity-odd subtraction and common acoustic calibration adopted. Unbounded even-polarity nuisance would be degenerate with s."
+    },
+    "source_versions_inspected_before_numeric_execution": true,
+    "raw_events_available_in_this_block": false
+  },
+  "source_identity": {
+    "PROTOCOL.md": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+    "DIRECT_CHARGE_RECONSTRUCTION.md": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+    "OBSERVATION_INPUTS.json": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+    "check_charge_reconstruction.py": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057"
+  },
+  "numeric_execution": {
+    "started_at": "2026-10-13T01:21:55.626108+00:00",
+    "ended_at": "2026-10-13T01:21:56.388849+00:00",
+    "command": [
+      "/usr/local/bin/python3",
+      ".claude/science/physics-loops/observations-to-toe-24h-20261012/matter/direct_charge_reconstruction/check_charge_reconstruction.py"
+    ],
+    "returncode": 0,
+    "error": null,
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "source_unchanged": true
+  },
+  "formal_audit": false
+}

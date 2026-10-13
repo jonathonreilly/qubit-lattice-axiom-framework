@@ -1,0 +1,1 @@
+{"blind_empirical_test": false, "compact_small_charge_examples": 4, "connected_supports": 205, "cubic_generator_triples": 364, "global_grid_cases": 37, "mixing_graphs": 512, "rational_charge_cases": 45, "transfer_prediction_in_1e_minus21": -0.20821917808219179, "transfer_standardized_residual": 0.087265758595022}

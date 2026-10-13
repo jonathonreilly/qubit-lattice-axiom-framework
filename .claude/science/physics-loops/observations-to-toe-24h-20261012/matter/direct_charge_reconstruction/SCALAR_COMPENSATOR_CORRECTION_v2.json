@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-13T01:38:10.237457+00:00",
+  "finding": "Nonzero hypercharge alone does not forbid a photon-preserving scalar vev. The intended conclusion requires nonzero unbroken Q_0 charge; the compensator of the displayed singlet operators is an SU(2) singlet.",
+  "found_by": "Focused independent checker /root/direct_field_check",
+  "before_sha256": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+  "after_sha256": "bc695597af77e0d90d60a67b2765d4a49e27806a652b7da3cd6986f47094cd17",
+  "original_recovery": "evidence_v1/source_snapshot/DIRECT_CHARGE_RECONSTRUCTION.md",
+  "diff": "--- executed_note_v1\n+++ qualified_note_v2\n@@ -108,9 +108,13 @@\n A bare n^c n^c Majorana term carries hypercharge2n=4h epsilon. A Weinberg\n operator (L H)^2 carries2(l+h)=-4h epsilon. Either supplied nonzero term\n forces epsilon=0 in this family if the same electromagnetic U(1) remains\n-unbroken. A new scalar with the compensating nonzero hypercharge cannot\n-get a vev while preserving that same photon generator. Extra gauge factors\n-or a different breaking sector require a different analysis.\n+unbroken. A scalar vev must have zero charge under the unbroken generator\n+Q_0; nonzero hypercharge alone does not forbid it, as the Higgs illustrates.\n+For the displayed gauge-singlet n^c n^c or singlet (LH)^2 operator, a scalar\n+compensator is an SU(2) singlet. Its compensating nonzero hypercharge then\n+also gives nonzero Q_0 charge, so its vev cannot preserve that same photon.\n+Extra gauge factors or different weak contractions/breaking sectors require\n+a different analysis.\n \n This does not infer a Majorana mass from oscillations. A general mass matrix\n can pair opposite charges into charged Dirac states; the statement just made\n",
+  "source_code_changed": false,
+  "observation_inputs_changed": false,
+  "numerical_result_changed": false,
+  "reviewer_affected_confirmation": "Pending in same reviewer session; current source distinction explicit."
+}

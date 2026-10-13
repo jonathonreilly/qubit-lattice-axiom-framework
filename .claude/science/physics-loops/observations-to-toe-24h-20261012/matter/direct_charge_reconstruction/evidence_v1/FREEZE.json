@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T01:21:55.626108+00:00",
+  "source_sha256": {
+    "PROTOCOL.md": "b5430c1cf8a5669cfd9a608f8f2bbeecf644b533701d1172b0ae9929246d633f",
+    "DIRECT_CHARGE_RECONSTRUCTION.md": "ad480e1a92390acd2feb7152f274bb9677a176c30b2c07024db39f5051609672",
+    "OBSERVATION_INPUTS.json": "c4598e2cd07fd92479e299beafa3ae53ed794b0ddff92ab0128592284e9e0094",
+    "check_charge_reconstruction.py": "cd95bbc2647ef5f9d977ba2c569dc8e6fea2fb5e08f65de0510308ee77514057"
+  },
+  "first_execution": true,
+  "supplemental_controls_selected_before_execution": [
+    "37 rational epsilon values from-2 to4 in steps1/6 for fixed global forms, including Z2 and Z3",
+    "Wrong u-conjugate color and omitted n-conjugate anomaly counterfactuals",
+    "Published polarity half-sum/half-difference and covariance-rank controls"
+  ],
+  "data_already_exposed": true
+}

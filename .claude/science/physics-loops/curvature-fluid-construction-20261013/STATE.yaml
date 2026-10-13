@@ -1,0 +1,11 @@
+{
+  "unit": "curvature-fluid-construction-20261013",
+  "status": "source_prepared",
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "branch": "codex/curvature-fluid-construction-20261013",
+  "created_at": "2026-10-13T11:54:15.012631+00:00",
+  "author": "/root",
+  "canonical_execution": "not_run",
+  "formal_audit": "unset",
+  "next_action": "Independent full source review then actual UNIT preflight, bounded canonical execution and final integration gates."
+}

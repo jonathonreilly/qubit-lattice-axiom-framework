@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/README_distances.txt",
+    "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/README",
+    "sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e",
+    "bytes": 4056,
+    "downloaded_at": "2026-10-13T02:21:07.405487+00:00",
+    "reviewer_recovery": {
+      "type": "byte_exact_copy",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/independent_review/external_source_snapshots/README_distances.txt",
+      "sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e"
+    }
+  },
+  {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/SN_only_official_likelihood.py",
+    "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/5_COSMOLOGY/cosmosis_likelihoods/Pantheon+_only_cosmosis_likelihood.py",
+    "sha256": "7bc222fedc11a3d496ef4c5c18b2e111842dcef4d2bb65d22e9597eb9be191a4",
+    "bytes": 4000,
+    "downloaded_at": "2026-10-13T02:21:07.584359+00:00",
+    "reviewer_recovery": {
+      "type": "byte_exact_copy",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/independent_review/external_source_snapshots/SN_only_official_likelihood.py",
+      "sha256": "7bc222fedc11a3d496ef4c5c18b2e111842dcef4d2bb65d22e9597eb9be191a4"
+    }
+  },
+  {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/Pantheon+SH0ES.dat",
+    "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+    "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+    "bytes": 579283,
+    "started_at": "2026-10-13T02:21:35.392191+00:00",
+    "completed_at": "2026-10-13T02:21:35.584156+00:00",
+    "arrays_not_parsed": true,
+    "reviewer_recovery": {
+      "type": "gzip",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/independent_review/snapshots_v1/data/Pantheon+SH0ES.dat.gz",
+      "decoded_sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8"
+    }
+  },
+  {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology/Pantheon+SH0ES_STAT+SYS.cov",
+    "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STAT+SYS.cov",
+    "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+    "bytes": 33284960,
+    "started_at": "2026-10-13T02:21:35.393144+00:00",
+    "completed_at": "2026-10-13T02:21:36.825892+00:00",
+    "arrays_not_parsed": true,
+    "reviewer_recovery": {
+      "type": "gzip",
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/independent_review/snapshots_v1/data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "decoded_sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc"
+    }
+  }
+]

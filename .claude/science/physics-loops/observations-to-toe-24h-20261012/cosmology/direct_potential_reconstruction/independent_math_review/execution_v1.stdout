@@ -1,0 +1,67 @@
+{
+  "exact_zero_identities": 26,
+  "hessian_rows": 315,
+  "force_bound_rows": 756,
+  "heat_kernel_controls": 8,
+  "max_hessian_scaled_error": 7.020514237893676e-15,
+  "max_heat_absolute_difference": 2.2537527399890678e-14,
+  "eta_zero_negative_rows": 63,
+  "illustrative_SI_bounds": [
+    {
+      "a": 1e-06,
+      "radius_m": 1,
+      "q": 7.671974189557497e-27,
+      "bare_hessian_fractional_bound": 5.297316322233335e-59,
+      "fixed_number_dust_fractional_bound": 5.297317646562416e-59
+    },
+    {
+      "a": 1e-06,
+      "radius_m": 1000000,
+      "q": 7.671974189557497e-21,
+      "bare_hessian_fractional_bound": 5.297316322233335e-47,
+      "fixed_number_dust_fractional_bound": 5.297317646562417e-47
+    },
+    {
+      "a": 1e-06,
+      "radius_m": 150000000000,
+      "q": 1.1507961284336248e-15,
+      "bare_hessian_fractional_bound": 1.1918961725025009e-36,
+      "fixed_number_dust_fractional_bound": 1.191896470476544e-36
+    },
+    {
+      "a": 1e-06,
+      "radius_m": 15000000000000,
+      "q": 1.1507961284336245e-13,
+      "bare_hessian_fractional_bound": 1.1918961725025006e-32,
+      "fixed_number_dust_fractional_bound": 1.1918964704765437e-32
+    },
+    {
+      "a": 0.00040016006402561027,
+      "radius_m": 1,
+      "q": 7.671974189557497e-27,
+      "bare_hessian_fractional_bound": 2.1180831944418114e-56,
+      "fixed_number_dust_fractional_bound": 2.1182950875184866e-56
+    },
+    {
+      "a": 0.00040016006402561027,
+      "radius_m": 1000000,
+      "q": 7.671974189557497e-21,
+      "bare_hessian_fractional_bound": 2.1180831944418118e-44,
+      "fixed_number_dust_fractional_bound": 2.118295087518487e-44
+    },
+    {
+      "a": 0.00040016006402561027,
+      "radius_m": 150000000000,
+      "q": 1.1507961284336248e-15,
+      "bare_hessian_fractional_bound": 4.765687187494078e-34,
+      "fixed_number_dust_fractional_bound": 4.766163946916597e-34
+    },
+    {
+      "a": 0.00040016006402561027,
+      "radius_m": 15000000000000,
+      "q": 1.1507961284336245e-13,
+      "bare_hessian_fractional_bound": 4.7656871874940766e-30,
+      "fixed_number_dust_fractional_bound": 4.7661639469165955e-30
+    }
+  ]
+}

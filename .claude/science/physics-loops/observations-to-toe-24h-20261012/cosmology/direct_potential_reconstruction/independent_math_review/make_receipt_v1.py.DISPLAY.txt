@@ -1,0 +1,80 @@
+DISPLAY COPY ONLY. Exact original bytes are in IMMUTABLE_REVIEW_BYTES_potential_v1.json at the campaign root. Do not use this normalized display as the hashed original.
+
+#!/usr/bin/env python3
+from pathlib import Path
+import datetime,hashlib,json
+O=Path(__file__).resolve().parent
+def sha(b):return hashlib.sha256(b).hexdigest()
+def pin(p):
+ b=p.read_bytes();return {"path":str(p),"sha256":sha(b),"bytes":len(b)}
+freeze=json.loads((O/"INPUT_FREEZE_v1.json").read_text())
+for r in freeze["files"]:
+ assert pin(Path(r["path"]))["sha256"]==r["sha256"]
+ assert sha((O/r["snapshot"]).read_bytes())==r["sha256"]
+results=json.loads((O/"INDEPENDENT_RESULTS_v1.json").read_text())
+execution=json.loads((O/"EXECUTION_v1.json").read_text())
+assert execution["exit_code"]==0 and (O/"execution_v1.stderr").read_bytes()==b""
+assert sha((O/"execution_v1.stdout").read_bytes())==execution["stdout_sha256"]
+checkfreeze=json.loads((O/"CHECK_FREEZE_v1.json").read_text())
+assert pin(O/"check_independent_potential_v1.py")==checkfreeze["checker"]
+items=[pin(p) for p in sorted(O.rglob("*")) if p.is_file()]
+d={
+"schema":"focused_independent_potential_proof_review/v1",
+"at":datetime.datetime.now(datetime.timezone.utc).isoformat(),
+"reviewer_session":"/root/direct_quantum_visibility_review",
+"source_author":"parent /root",
+"disposition":"PASS for supplied action/source, one-field compatibility, constructed two-field background and local frozen quadratic diagnostic.",
+"required_material_corrections":[],
+"report":pin(O/"INDEPENDENT_DERIVATION_AND_REVIEW_v1.md"),
+"source_inputs":freeze["files"],
+"earlier_frame_action_context":checkfreeze["earlier_action_context"],
+"source_hashes_unchanged_at_completion":True,
+"input_freeze":pin(O/"INPUT_FREEZE_v1.json"),
+"checker":pin(O/"check_independent_potential_v1.py"),
+"checker_preexecution_freeze":pin(O/"CHECK_FREEZE_v1.json"),
+"execution":pin(O/"EXECUTION_v1.json"),
+"results":pin(O/"INDEPENDENT_RESULTS_v1.json"),
+"failures_and_operational_notes":pin(O/"OPERATIONAL_NOTES_v1.json"),
+"proof_dispositions":[
+{"scope":"Action, frame and inverse potential","disposition":"PASS","reason":"Rest-mass continuity, Q=A H_J, Raychaudhuri inverse, Friedmann potential and scalar gradient have consistent signs and normalizations."},
+{"scope":"One-field endpoint","disposition":"PASS","reason":"Necessary C2 compatibility follows without dividing by p; target and density produce a nonzero gradient derivative at zero field speed."},
+{"scope":"One-sided cusp","disposition":"PASS","reason":"Independent third-order potential expansion yields the stated positive 3/2-power coefficient and -4H0^2/n curvature."},
+{"scope":"Two-field background","disposition":"PASS","reason":"Independent cosmic-time sinh/coth parametrization satisfies the declared potential relation, both scalar equations, dust continuity, Friedmann and Raychaudhuri."},
+{"scope":"Potential positivity and Hessian","disposition":"PASS","reason":"Full square completion and determinant checked. Eta=0 fails curvature. Eta=3 is the minimum constant for PSD along the entire u=0 trajectory, with a zero mode at S=0; not full perturbation stability."},
+{"scope":"Local Green response","disposition":"PASS within diagnostic","reason":"Canonical Helmholtz normalization, force factor, positive residues, fixed-number dust derivative and scalar mass bound checked. Full curved-metric/density response excluded."},
+{"scope":"Data and interpretation","disposition":"Scope labels adequate","reason":"Benchmark expansion and matter normalization supplied; no new H(z) extraction or likelihood; existing LLR correlation and background tracking restrictions retained. Primary observational provenance was not rechecked here."}
+],
+"independent_control_counts":{
+"exact_symbolic_identities":len(results["exact_zero_identities"]),
+"hessian_rows":len(results["hessian_rows"]),
+"eta_zero_negative_curvature_rows":results["preserved_eta_zero_negative_curvature_rows"],
+"force_bound_rows":len(results["force_bound_rows"]),
+"matrix_heat_kernel_controls":len(results["heat_kernel_controls"]),
+"illustrative_SI_bound_rows":len(results["illustrative_SI_bounds"])},
+"max_hessian_max1_normalized_error":max(r["scaled_error"] for r in results["hessian_rows"]),
+"max_heat_kernel_absolute_difference":max(r["absolute_difference"] for r in results["heat_kernel_controls"]),
+"numerical_interval_certificate":False,
+"parent_numerical_runner_read":False,
+"parent_numerical_runner_imported":False,
+"parent_numerical_runner_executed":False,
+"parent_numerical_results_certified":False,
+"full_cosmological_perturbation_stability_checked":False,
+"global_convexity_claimed":False,
+"new_empirical_likelihood":False,
+"TOE_or_unique_reconstruction_claimed":False,
+"global_no_go_or_route_exhaustion_claimed":False,
+"formal_audit":False,
+"canonical_source_edits":0,
+"git_operations":0,
+"PR_operations":0,
+"agents_spawned":0,
+"model_or_settings_changes":0,
+"fixed_deadline_utc":"2026-10-13T16:53:00Z",
+"discovery_cutoff_utc":"2026-10-13T16:38:00Z",
+"reviewer_evidence_inventory_excludes_receipt_itself":True,
+"reviewer_evidence_inventory":items
+}
+with(O/"REVIEW_RECEIPT_v1.json").open("x") as f:json.dump(d,f,indent=2,sort_keys=True);f.write("\n")
+for name in ["INDEPENDENT_DERIVATION_AND_REVIEW_v1.md","REVIEW_RECEIPT_v1.json","INDEPENDENT_RESULTS_v1.json"]:
+ print(name,sha((O/name).read_bytes()))
+print("reviewer evidence files",len(items))

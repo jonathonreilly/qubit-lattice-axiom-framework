@@ -1,0 +1,17 @@
+{
+  "checks": 1494,
+  "all_passed": true,
+  "grid_rows": 315,
+  "eta0_negative_curvature_rows": 63,
+  "eta3_positive_curvature_rows": 63,
+  "max_tracking_error": 8.881784197001252e-15,
+  "max_refinement_error": 1.4210854715202004e-14,
+  "drift": {
+    "prediction_per_year": 0,
+    "exposed_mean_per_year": 4e-13,
+    "reported_uncertainty_per_year": 9e-13,
+    "standardized_residual": 0.4444444444444445,
+    "reported_tidal_correlation": 0.74,
+    "scope": "Historical exposed processed summary; leading homogeneous-to-local tracking assumption. No joint independent likelihood with prior LLR EP result."
+  }
+}

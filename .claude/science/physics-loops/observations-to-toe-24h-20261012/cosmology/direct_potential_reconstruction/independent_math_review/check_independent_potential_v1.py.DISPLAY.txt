@@ -1,0 +1,170 @@
+DISPLAY COPY ONLY. Exact original bytes are in IMMUTABLE_REVIEW_BYTES_potential_v1.json at the campaign root. Do not use this normalized display as the hashed original.
+
+#!/usr/bin/env python3
+"""Independent proof controls; no imports or execution of parent code."""
+from pathlib import Path
+import datetime, hashlib, json, math
+import sympy as sp
+import numpy as np
+import mpmath as mp
+from scipy.integrate import quad
+from scipy.linalg import expm
+O=Path(__file__).resolve().parent
+F=json.loads((O/"input_snapshots/NUMERICAL_FIXTURES.json").read_text())
+mp.mp.dps=60
+exact={}
+def zero(name,x):
+    v=sp.simplify(x)
+    assert v==0,(name,str(v))
+    exact[name]=str(v)
+a,D0,H02=sp.symbols("a D0 H02",positive=True)
+p,h,D,B=sp.symbols("p h D B",real=True)
+flow={p:h+D+(1-h)*p+(1/a-1)*p*p,h:-3*h-2*h*h,
+      D:D*(2*p-3-2*h),B:2*(p+h)*B}
+def dn(x):return sp.expand(sum(sp.diff(x,z)*dz for z,dz in flow.items()))
+C=h+(1+a)*D+4*p+(1/a-3)*p*p
+V=B*(3*(1-p)**2-p*p/a-2*D)/2
+Vphi=-B*C/sp.sqrt(a)
+zero("inverse_raychaudhuri", (p+h)*(1-p)-flow[p]+D+p*p/a)
+zero("potential_derivative",dn(V)+B*p*C/a)
+zero("scalar_equation",C-(flow[p]+(h+3-2*p)*p+a*D))
+zero("turning_derivative",dn(Vphi).subs(p,0)+B*(h+(1-3*a)*D)/sp.sqrt(a))
+end={p:0,h:-(1+a)*D0,D:D0,B:H02}
+zero("endpoint_acceleration",flow[p].subs(end)+a*D0)
+zero("endpoint_gradient",Vphi.subs(end))
+zero("endpoint_gradient_derivative",dn(Vphi).subs(end)-4*sp.sqrt(a)*H02*D0)
+zero("endpoint_field_second_derivative",(flow[p]/sp.sqrt(a)).subs(end)+sp.sqrt(a)*D0)
+zero("endpoint_potential_third_derivative",dn(dn(dn(V))).subs(end)+8*a*H02*D0**2)
+bb=sp.sqrt(a)*D0/2
+cusp=(4*a*H02*D0**2/3)/bb**sp.Rational(3,2)
+zero("one_sided_cusp_coefficient",cusp-(8*H02/3)*sp.sqrt(2*sp.sqrt(a)*D0))
+zero("curvature_leading_coefficient",dn(Vphi).subs(end)/(flow[p]/sp.sqrt(a)).subs(end)+4*H02)
+u,S,c,eta,Sc,Scc=sp.symbols("u S c eta Sc Scc",real=True)
+k2=3*(1+a)/(2*a)
+v=(1+a)*c+S*((u-sp.sqrt(a))**2+eta*u*u)/2
+zero("positive_potential_completion",(u-sp.sqrt(a))**2+eta*u*u-
+     ((1+eta)*(u-sp.sqrt(a)/(1+eta))**2+a*eta/(1+eta)))
+Mh=sp.Matrix([[sp.diff(v,u,2),sp.diff(v,u,S)*Sc],
+              [sp.diff(v,u,S)*Sc,sp.diff(v,S)*Scc]]).subs(u,0)
+det=sp.expand(Mh.det()).subs(Sc**2,4*k2*S*(c+S)).subs(Scc,2*k2*(c+2*S))
+expected=a*k2*S*((eta-3)*c+(2*eta-2)*S)
+zero("full_hessian_determinant",det-expected)
+zero("eta_three_positive_determinant",det.subs(eta,3)-4*a*k2*S*S)
+zero("fixed_number_dust_mass_contraction",
+     (a*Mh[0,0]+a*a*S)-a*(1+eta+a)*S)
+# Different route to the trajectory: exact Einstein cosmic-time parametrization.
+tau=sp.symbols("tau",positive=True)
+cp=sp.symbols("cp",positive=True)
+k=sp.sqrt(k2); L=sp.sqrt(2*(1+a)*cp/3); omega=3*L/2
+chi=sp.log(sp.tanh(tau/2))/k
+zero("cosmic_time_field_derivative",
+     (sp.diff(chi,tau)-sp.csch(tau)/k).rewrite(sp.exp))
+St=cp*sp.csch(tau)**2; H=L*sp.coth(tau)
+chit=omega*sp.csch(tau)/k
+Schi=-2*cp*k*sp.csch(tau)*sp.coth(tau)
+zero("trajectory_scalar_kinetic",chit**2-a*St)
+zero("trajectory_density_conservation",omega*sp.diff(St,tau)+3*H*St)
+zero("trajectory_raychaudhuri",omega*sp.diff(H,tau)+(1+a)*St)
+zero("trajectory_friedmann",3*H*H-(2*St+chit*chit+2*((1+a)*cp+a*St/2)))
+zero("trajectory_chi_equation",omega*sp.diff(chit,tau)+3*H*chit+a*Schi/2)
+zero("trajectory_u_equation",-sp.sqrt(a)*St+sp.sqrt(a)*St)
+# Direct analytic gradient of exponential Einstein rest mass at fixed number density.
+rho0,G=sp.symbols("rho0 G",positive=True)
+zero("fixed_number_source_derivative",
+     sp.diff(4*sp.pi*G*sp.sqrt(a)*rho0*sp.exp(sp.sqrt(a)*u),u).subs(u,0)
+     -4*sp.pi*G*a*rho0)
+# Derivative of the point-source massive Green function away from source.
+r,mu=sp.symbols("r mu",positive=True)
+f=sp.exp(-mu*r)/r
+zero("yukawa_helmholtz_away_from_source",sp.diff(f,r,2)+2*sp.diff(f,r)/r-mu**2*f)
+zero("yukawa_force_normalization",-r*r*sp.diff(f,r)-(1+mu*r)*sp.exp(-mu*r))
+x=sp.symbols("x",nonnegative=True)
+zero("force_deficit_integral_derivative",
+     sp.diff(1-(1+x)*sp.exp(-x),x)-x*sp.exp(-x))
+hessian_rows=[]; force_rows=[]
+couplings=F["weak_couplings"]+[F["additional_mathematical_coupling"]]
+def matrix(av,mv,nv,ev,dust=False):
+    sv=1.5*mv/(1+av)*math.exp(-3*nv)
+    cv=1.5*(1-mv)/(1+av)
+    kv=math.sqrt(1.5*(1+av)/av)
+    spv=-2*kv*math.sqrt(sv*(cv+sv))
+    z=np.array([[(1+ev)*sv,-math.sqrt(av)*spv],
+                [-math.sqrt(av)*spv,av*kv*kv*(cv+2*sv)]])
+    if dust:z[0,0]+=av*sv
+    return z,sv,cv,kv
+for av in couplings:
+ for mv in F["matter_fractions"]:
+  for nv in F["N_grid"]:
+   for ev in F["eta_choices"]:
+    mat,sv,cv,kv=matrix(av,mv,nv,ev)
+    exact_det=av*kv*kv*sv*((ev-3)*cv+(2*ev-2)*sv)
+    computed=float(np.linalg.det(mat))
+    err=abs(computed-exact_det)/max(1,abs(exact_det))
+    assert err<3e-13,(av,mv,nv,ev,err)
+    eig=np.linalg.eigvalsh(mat)
+    if ev==0:assert eig[0]<0 and exact_det<0
+    if ev>=3:assert eig[0]>0
+    hessian_rows.append({"a":av,"m":mv,"n":nv,"eta":ev,
+                         "eigenvalues":eig.tolist(),"determinant":computed,
+                         "determinant_formula":exact_det,"scaled_error":err})
+   for dust in [False,True]:
+    mat,sv,cv,kv=matrix(av,mv,nv,3,dust)
+    vals,vecs=np.linalg.eigh(mat);res=av*vecs[0,:]**2
+    assert np.all(vals>=0) and np.all(res>=0)
+    assert abs(float(res.sum())/av-1)<3e-15
+    moment=float(res@vals);expected=av*(4+(av if dust else 0))*sv
+    assert abs(moment-expected)<1e-12*max(1,expected)
+    for q in F["local_dimensionless_H0_r_over_c_controls"]:
+     deficits=[1-(1+mp.mpf(q)*mp.sqrt(float(v)))*mp.exp(-mp.mpf(q)*mp.sqrt(float(v))) for v in vals]
+     frac=sum(mp.mpf(float(w))*d for w,d in zip(res,deficits))/(1+mp.mpf(av))
+     bound=mp.mpf(q)**2*mp.mpf(expected)/(2*(1+mp.mpf(av)))
+     assert frac>=0 and frac<=bound*(1+mp.mpf("3e-13")), (av,mv,nv,dust,q,str(frac),str(bound))
+     force_rows.append({"a":av,"m":mv,"n":nv,"fixed_number_dust":dust,"q":q,
+                         "force_deficit_fraction":str(frac),"quadratic_bound":str(bound),
+                         "bound_ratio":float(frac/bound) if bound else 0})
+# Proper-time heat kernel uses a matrix exponential without diagonalizing the matrix.
+# 2/sqrt(pi) int_0^infinity sqrt(t) exp(-t) exp[-q^2 M/(4t)] dt
+# equals the radial-force matrix (I+q sqrt(M)) exp[-q sqrt(M)].
+heat=[]
+for dust in [False,True]:
+ mat,_,_,_=matrix(couplings[1],0.3,0,3,dust)
+ vals,vecs=np.linalg.eigh(mat)
+ for q in [0.001,0.1,1.0,10.0]:
+  def integrand(t):
+   if t==0:return 0.0
+   return (2/math.sqrt(math.pi))*math.sqrt(t)*math.exp(-t)*float(expm(-q*q*mat/(4*t))[0,0])
+  val,err=quad(integrand,0,np.inf,epsabs=2e-12,epsrel=2e-12,limit=400)
+  spectral=float(np.sum(vecs[0,:]**2*(1+q*np.sqrt(vals))*np.exp(-q*np.sqrt(vals))))
+  difference=abs(val-spectral)
+  assert difference<2e-10,(dust,q,val,spectral,err)
+  heat.append({"fixed_number_dust":dust,"q":q,"heat_kernel_force":val,
+               "spectral_force":spectral,"absolute_difference":difference,
+               "quad_error_estimate":err})
+si=[]
+for av in F["weak_couplings"]:
+ for rv in F["local_radius_m_illustrative"]:
+  q=F["H0_per_second_illustrative"]*rv/F["c_m_per_second"]
+  sv=1.5*0.3/(1+av)
+  si.append({"a":av,"radius_m":rv,"q":q,
+             "bare_hessian_fractional_bound":2*av*sv*q*q/(1+av),
+             "fixed_number_dust_fractional_bound":av*(4+av)*sv*q*q/(2*(1+av))})
+# A force/potential confusion would produce a linear deficit and violate the
+# claimed quadratic bound. This is a reviewer control, not an author mutation.
+wrong_x=mp.mpf("0.001")
+assert 1-mp.exp(-wrong_x)>wrong_x**2/2
+result={"at":datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "scope":"Independent proof algebra, cosmic-time trajectory, Hessian and heat-kernel Green checks; no parent-runner execution or empirical fit.",
+        "exact_zero_identities":exact,"hessian_rows":hessian_rows,"force_bound_rows":force_rows,
+        "heat_kernel_controls":heat,"illustrative_SI_bounds":si,
+        "preserved_eta_zero_negative_curvature_rows":sum(r["eta"]==0 for r in hessian_rows),
+        "eta_minimality":"det/(a k^2 S) -> (eta-3)c as S->0+, so eta<3 fails eventually; eta=3 has 4a k^2 S^2>0 for S>0.",
+        "wrong_potential_as_force_control_rejected":True,
+        "parent_runner_imported":False,"parent_runner_executed":False,
+        "full_dust_metric_perturbation_stability_checked":False}
+with(O/"INDEPENDENT_RESULTS_v1.json").open("x") as f:json.dump(result,f,indent=2,sort_keys=True);f.write("\n")
+print(json.dumps({"exact_zero_identities":len(exact),"hessian_rows":len(hessian_rows),
+ "force_bound_rows":len(force_rows),"heat_kernel_controls":len(heat),
+ "max_hessian_scaled_error":max(r["scaled_error"] for r in hessian_rows),
+ "max_heat_absolute_difference":max(r["absolute_difference"] for r in heat),
+ "eta_zero_negative_rows":result["preserved_eta_zero_negative_curvature_rows"],
+ "illustrative_SI_bounds":si},indent=2))

@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-13T03:07:05.836574+00:00",
+  "source_hashes": {
+    "PROTOCOL.md": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf",
+    "DIRECT_POTENTIAL_RECONSTRUCTION.md": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09",
+    "NUMERICAL_FIXTURES.json": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+    "check_potential_reconstruction.py": "7500db2bc416cce20ea945bfd827b3f45eaf8de2a4d5ea9407fe9e2b1eecac0b"
+  },
+  "scope": "First numerical execution; eta0 analytic negative-curvature candidate and eta3 explicit repair both frozen beforehand."
+}

@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-10-13T03:15:11.875275+00:00",
+  "files": {
+    "NUMERICAL_FIXTURES.json": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+    "PRE_EXECUTION_PLAN_v1.json": "ddf5c6cf38d94f0aafce404871e021529d20ff03bd49b0d61dd088112903f072",
+    "CLAIM_STATUS_CERTIFICATE.md": "f8bbb746066f5cc8f0b3a8d37260d01f38771face6520ab50379666f00c86f9d",
+    "SOURCE_LEDGER.json": "a0e470e386e6c461303b2881fc00962c82b387364995183d8b3a87a653202362",
+    "TRACE_GATE.md": "823c2d1c34eac9c297fa0b9dfdbb5bbdbaaa03f8c3b41d0ddc2a4c2a509254ae",
+    "RESULTS_AND_SCOPE.md": "151734896a36a826504519b338a38c3e653db494aaf9f967978eb9413ee1b722",
+    "check_potential_reconstruction.py": "7500db2bc416cce20ea945bfd827b3f45eaf8de2a4d5ea9407fe9e2b1eecac0b",
+    "DIRECT_POTENTIAL_RECONSTRUCTION.md": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09",
+    "PROTOCOL.md": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf",
+    "evidence_v1/stdout.txt": "6cb754959b05a94a96023207a4625c7013c7ff05475e4fd5be65ee82c3f72cd8",
+    "evidence_v1/RESULTS.json": "ccef4eb39354259528a0135e634232eda965fb5b54557ffd44a89ac5d3a5f9a2",
+    "evidence_v1/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence_v1/EXECUTION.json": "b043bc3b8a0fc577e6a6bf18197054e526f4c5f3956aee7b6fdebd6e3a6a1a70",
+    "evidence_v1/FREEZE.json": "8bad8f8072cd62dcdc0f9af9be9873d9986ff5a73e8d8b66f981a1d469f5eb88",
+    "evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+    "evidence_v1/source_snapshot/check_potential_reconstruction.py": "7500db2bc416cce20ea945bfd827b3f45eaf8de2a4d5ea9407fe9e2b1eecac0b",
+    "evidence_v1/source_snapshot/DIRECT_POTENTIAL_RECONSTRUCTION.md": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09",
+    "evidence_v1/source_snapshot/PROTOCOL.md": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf"
+  },
+  "scope": "Completed parent block for focused numerical independent check. Three pre-execution proof inputs remain unchanged."
+}

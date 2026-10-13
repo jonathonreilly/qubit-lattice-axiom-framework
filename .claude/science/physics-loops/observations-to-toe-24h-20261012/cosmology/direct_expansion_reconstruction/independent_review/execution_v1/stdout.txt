@@ -1,0 +1,91 @@
+{
+  "checks": 6692,
+  "failures": [
+    {
+      "name": "equality_exact_trajectory_weak_equality_-0.4",
+      "pass": false,
+      "max_absolute_error": 0.00029165567077837906,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_-0.3",
+      "pass": false,
+      "max_absolute_error": 0.00018827277144684018,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_-0.2",
+      "pass": false,
+      "max_absolute_error": 0.00010803191734898299,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_-0.1",
+      "pass": false,
+      "max_absolute_error": 4.649196659278765e-05,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_0.1",
+      "pass": false,
+      "max_absolute_error": 3.444209591874081e-05,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_0.2",
+      "pass": false,
+      "max_absolute_error": 5.928917335373818e-05,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_0.3",
+      "pass": false,
+      "max_absolute_error": 7.654599664719264e-05,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    },
+    {
+      "name": "equality_exact_trajectory_weak_equality_0.4",
+      "pass": false,
+      "max_absolute_error": 8.78449998720221e-05,
+      "tolerance": 2e-10,
+      "shape": [
+        4
+      ]
+    }
+  ],
+  "all_passed": false,
+  "elapsed_seconds": 1.315354824066162,
+  "data_counts": {
+    "all_light_curve_rows": 1701,
+    "all_distinct_CID": 1543,
+    "selected_light_curve_rows": 1358,
+    "selected_distinct_CID": 1296,
+    "calibration_light_curve_rows": 405,
+    "calibration_distinct_CID": 343,
+    "transfer_light_curve_rows": 953,
+    "transfer_distinct_CID": 953,
+    "contrast_high_light_curve_rows": 469,
+    "contrast_high_distinct_CID": 469
+  }
+}

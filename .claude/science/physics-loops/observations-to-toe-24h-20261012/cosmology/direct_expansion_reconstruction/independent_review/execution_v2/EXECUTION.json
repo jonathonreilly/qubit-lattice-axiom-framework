@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-13T02:51:20.705036+00:00",
+  "finished_utc": "2026-10-13T02:51:22.873379+00:00",
+  "elapsed_seconds": 2.1682066917419434,
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/independent_review/independent_expansion_check.py"
+  ],
+  "source_sha256": "2289954dbb91c12d68d1bd5de02d1315d3d6bbb953a6f2c99708d738c2e2a26b",
+  "source_identity_unchanged": true,
+  "returncode": 0,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "timeout_seconds": 60
+}

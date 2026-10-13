@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T03:15:01.032728+00:00",
+  "checker_executions": 1,
+  "checker_exit_code": 0,
+  "independent_assertion_failures": 0,
+  "independent_operational_failures": 0,
+  "parent_reported_prior_failure": "Pre-execution plan reports one failed patch-context lookup with no byte changes; exact plan retained.",
+  "truncated_listing": "Initial rg file inventory exceeded display budget; required earlier proof was subsequently read directly and completely. No unseen directory inventory treated as content review.",
+  "preserved_failed_candidate": "eta=0 retained, with negative determinant/eigenvalue for every S>0 and 63 independent fixture rows.",
+  "author_runner_read": false,
+  "author_runner_imported": false,
+  "author_runner_executed": false,
+  "author_source_edits": 0,
+  "git_operations": 0,
+  "new_agents": 0,
+  "model_changes": 0
+}

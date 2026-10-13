@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T03:10:56.694603+00:00",
+  "checker": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/check_independent_potential_v1.py",
+    "sha256": "e8d607b4c7cc222cfac06cf9691c871e802701c75d1c306b0749d14741bcab86",
+    "bytes": 8652
+  },
+  "input_freeze_sha256": "dc9e2e158c53175bde1ac4049c6df8b16691003cd932ff93b5205f596e62a0d4",
+  "earlier_action_context": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/DIRECT_EXPANSION_DERIVATION.md",
+    "sha256": "ca89ef5b1344a1e27ab4e38ec6a1a14c3646ede46828164a1558344aebddaf8a",
+    "bytes": 9975,
+    "reading_scope": "Complete earlier proof read for action/frame/source continuity; empirical tests are not repeated."
+  },
+  "parent_runner_imported_or_executed": false,
+  "execution_started": false
+}

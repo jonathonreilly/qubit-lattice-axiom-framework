@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-13T03:05:51.322834+00:00",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/DIRECT_POTENTIAL_RECONSTRUCTION.md",
+      "sha256": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09",
+      "bytes": 10091,
+      "snapshot": "input_snapshots/DIRECT_POTENTIAL_RECONSTRUCTION.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/PROTOCOL.md",
+      "sha256": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf",
+      "bytes": 3330,
+      "snapshot": "input_snapshots/PROTOCOL.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/NUMERICAL_FIXTURES.json",
+      "sha256": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+      "bytes": 2117,
+      "snapshot": "input_snapshots/NUMERICAL_FIXTURES.json"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/PRE_EXECUTION_PLAN_v1.json",
+      "sha256": "ddf5c6cf38d94f0aafce404871e021529d20ff03bd49b0d61dd088112903f072",
+      "bytes": 520,
+      "snapshot": "input_snapshots/PRE_EXECUTION_PLAN_v1.json"
+    }
+  ],
+  "parent_preexecution_hashes_match": true,
+  "author_runner_read_or_executed": false
+}

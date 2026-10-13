@@ -1,0 +1,219 @@
+{
+  "PR_operations": 0,
+  "TOE_or_unique_reconstruction_claimed": false,
+  "agents_spawned": 0,
+  "at": "2026-10-13T03:15:39.045804+00:00",
+  "canonical_source_edits": 0,
+  "checker": {
+    "bytes": 8652,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/check_independent_potential_v1.py",
+    "sha256": "e8d607b4c7cc222cfac06cf9691c871e802701c75d1c306b0749d14741bcab86"
+  },
+  "checker_preexecution_freeze": {
+    "bytes": 1097,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/CHECK_FREEZE_v1.json",
+    "sha256": "1b1cb7c1145f4ccfa6a7bffb46394b4ab2a9ee1096e29ee8fd516a146174eb7c"
+  },
+  "discovery_cutoff_utc": "2026-10-13T16:38:00Z",
+  "disposition": "PASS for supplied action/source, one-field compatibility, constructed two-field background and local frozen quadratic diagnostic.",
+  "earlier_frame_action_context": {
+    "bytes": 9975,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/DIRECT_EXPANSION_DERIVATION.md",
+    "reading_scope": "Complete earlier proof read for action/frame/source continuity; empirical tests are not repeated.",
+    "sha256": "ca89ef5b1344a1e27ab4e38ec6a1a14c3646ede46828164a1558344aebddaf8a"
+  },
+  "execution": {
+    "bytes": 297,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/EXECUTION_v1.json",
+    "sha256": "05efd0ea23605932e684974443deecb39570561db7be92eda17fd96ca7bbe35f"
+  },
+  "failures_and_operational_notes": {
+    "bytes": 852,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/OPERATIONAL_NOTES_v1.json",
+    "sha256": "b74d7a3f1a9b544886236c440e62bc53f4855607cab43cc77d0f7b36e98a30a1"
+  },
+  "fixed_deadline_utc": "2026-10-13T16:53:00Z",
+  "formal_audit": false,
+  "full_cosmological_perturbation_stability_checked": false,
+  "git_operations": 0,
+  "global_convexity_claimed": false,
+  "global_no_go_or_route_exhaustion_claimed": false,
+  "independent_control_counts": {
+    "eta_zero_negative_curvature_rows": 63,
+    "exact_symbolic_identities": 26,
+    "force_bound_rows": 756,
+    "hessian_rows": 315,
+    "illustrative_SI_bound_rows": 8,
+    "matrix_heat_kernel_controls": 8
+  },
+  "input_freeze": {
+    "bytes": 1799,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/INPUT_FREEZE_v1.json",
+    "sha256": "dc9e2e158c53175bde1ac4049c6df8b16691003cd932ff93b5205f596e62a0d4"
+  },
+  "max_heat_kernel_absolute_difference": 2.2537527399890678e-14,
+  "max_hessian_max1_normalized_error": 7.020514237893676e-15,
+  "model_or_settings_changes": 0,
+  "new_empirical_likelihood": false,
+  "numerical_interval_certificate": false,
+  "parent_numerical_results_certified": false,
+  "parent_numerical_runner_executed": false,
+  "parent_numerical_runner_imported": false,
+  "parent_numerical_runner_read": false,
+  "proof_dispositions": [
+    {
+      "disposition": "PASS",
+      "reason": "Rest-mass continuity, Q=A H_J, Raychaudhuri inverse, Friedmann potential and scalar gradient have consistent signs and normalizations.",
+      "scope": "Action, frame and inverse potential"
+    },
+    {
+      "disposition": "PASS",
+      "reason": "Necessary C2 compatibility follows without dividing by p; target and density produce a nonzero gradient derivative at zero field speed.",
+      "scope": "One-field endpoint"
+    },
+    {
+      "disposition": "PASS",
+      "reason": "Independent third-order potential expansion yields the stated positive 3/2-power coefficient and -4H0^2/n curvature.",
+      "scope": "One-sided cusp"
+    },
+    {
+      "disposition": "PASS",
+      "reason": "Independent cosmic-time sinh/coth parametrization satisfies the declared potential relation, both scalar equations, dust continuity, Friedmann and Raychaudhuri.",
+      "scope": "Two-field background"
+    },
+    {
+      "disposition": "PASS",
+      "reason": "Full square completion and determinant checked. Eta=0 fails curvature. Eta=3 is the minimum constant for PSD along the entire u=0 trajectory, with a zero mode at S=0; not full perturbation stability.",
+      "scope": "Potential positivity and Hessian"
+    },
+    {
+      "disposition": "PASS within diagnostic",
+      "reason": "Canonical Helmholtz normalization, force factor, positive residues, fixed-number dust derivative and scalar mass bound checked. Full curved-metric/density response excluded.",
+      "scope": "Local Green response"
+    },
+    {
+      "disposition": "Scope labels adequate",
+      "reason": "Benchmark expansion and matter normalization supplied; no new H(z) extraction or likelihood; existing LLR correlation and background tracking restrictions retained. Primary observational provenance was not rechecked here.",
+      "scope": "Data and interpretation"
+    }
+  ],
+  "report": {
+    "bytes": 11624,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/INDEPENDENT_DERIVATION_AND_REVIEW_v1.md",
+    "sha256": "af53253a224eb6e3949c8fbc647e2138cbb61d10b859b6647293969126e124a6"
+  },
+  "required_material_corrections": [],
+  "results": {
+    "bytes": 358639,
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/INDEPENDENT_RESULTS_v1.json",
+    "sha256": "70813c47627bea6e33859374655c437c8a73eb203ee19d3302e1f6cda98d0aa8"
+  },
+  "reviewer_evidence_inventory": [
+    {
+      "bytes": 1097,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/CHECK_FREEZE_v1.json",
+      "sha256": "1b1cb7c1145f4ccfa6a7bffb46394b4ab2a9ee1096e29ee8fd516a146174eb7c"
+    },
+    {
+      "bytes": 297,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/EXECUTION_v1.json",
+      "sha256": "05efd0ea23605932e684974443deecb39570561db7be92eda17fd96ca7bbe35f"
+    },
+    {
+      "bytes": 11624,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/INDEPENDENT_DERIVATION_AND_REVIEW_v1.md",
+      "sha256": "af53253a224eb6e3949c8fbc647e2138cbb61d10b859b6647293969126e124a6"
+    },
+    {
+      "bytes": 358639,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "70813c47627bea6e33859374655c437c8a73eb203ee19d3302e1f6cda98d0aa8"
+    },
+    {
+      "bytes": 1799,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/INPUT_FREEZE_v1.json",
+      "sha256": "dc9e2e158c53175bde1ac4049c6df8b16691003cd932ff93b5205f596e62a0d4"
+    },
+    {
+      "bytes": 852,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/OPERATIONAL_NOTES_v1.json",
+      "sha256": "b74d7a3f1a9b544886236c440e62bc53f4855607cab43cc77d0f7b36e98a30a1"
+    },
+    {
+      "bytes": 8652,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/check_independent_potential_v1.py",
+      "sha256": "e8d607b4c7cc222cfac06cf9691c871e802701c75d1c306b0749d14741bcab86"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/execution_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2142,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/execution_v1.stdout",
+      "sha256": "ddf68c36d9974f9f31a1983217688aad5a4191117f773d19e23272b80bb911d7"
+    },
+    {
+      "bytes": 10091,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/input_snapshots/DIRECT_POTENTIAL_RECONSTRUCTION.md",
+      "sha256": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09"
+    },
+    {
+      "bytes": 9975,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/input_snapshots/EARLIER_DIRECT_EXPANSION_DERIVATION.md",
+      "sha256": "ca89ef5b1344a1e27ab4e38ec6a1a14c3646ede46828164a1558344aebddaf8a"
+    },
+    {
+      "bytes": 2117,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/input_snapshots/NUMERICAL_FIXTURES.json",
+      "sha256": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20"
+    },
+    {
+      "bytes": 520,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/input_snapshots/PRE_EXECUTION_PLAN_v1.json",
+      "sha256": "ddf5c6cf38d94f0aafce404871e021529d20ff03bd49b0d61dd088112903f072"
+    },
+    {
+      "bytes": 3330,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/input_snapshots/PROTOCOL.md",
+      "sha256": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf"
+    },
+    {
+      "bytes": 5216,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/independent_math_review/make_receipt_v1.py",
+      "sha256": "96528649b3fff5963ce63350a488182a25d6ecff5a0f04cf3adf80d91a71eb87"
+    }
+  ],
+  "reviewer_evidence_inventory_excludes_receipt_itself": true,
+  "reviewer_session": "/root/direct_quantum_visibility_review",
+  "schema": "focused_independent_potential_proof_review/v1",
+  "source_author": "parent /root",
+  "source_hashes_unchanged_at_completion": true,
+  "source_inputs": [
+    {
+      "bytes": 10091,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/DIRECT_POTENTIAL_RECONSTRUCTION.md",
+      "sha256": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09",
+      "snapshot": "input_snapshots/DIRECT_POTENTIAL_RECONSTRUCTION.md"
+    },
+    {
+      "bytes": 3330,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/PROTOCOL.md",
+      "sha256": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf",
+      "snapshot": "input_snapshots/PROTOCOL.md"
+    },
+    {
+      "bytes": 2117,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/NUMERICAL_FIXTURES.json",
+      "sha256": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+      "snapshot": "input_snapshots/NUMERICAL_FIXTURES.json"
+    },
+    {
+      "bytes": 520,
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_potential_reconstruction/PRE_EXECUTION_PLAN_v1.json",
+      "sha256": "ddf5c6cf38d94f0aafce404871e021529d20ff03bd49b0d61dd088112903f072",
+      "snapshot": "input_snapshots/PRE_EXECUTION_PLAN_v1.json"
+    }
+  ]
+}

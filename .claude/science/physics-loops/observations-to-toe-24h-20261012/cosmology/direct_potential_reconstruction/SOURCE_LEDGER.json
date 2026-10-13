@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-13T03:15:11.870823+00:00",
+  "author": "direct parent",
+  "primary_sources": [
+    {
+      "id": "Williams_Turyshev_Boggs_2004",
+      "url": "https://arxiv.org/pdf/gr-qc/0411113v2",
+      "recovery_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/body_sensitivity/Williams_Turyshev_Boggs_2004.pdf",
+      "sha256": "569be464a1e80ae07d6573ad846eff17a7b839e0a750838ec90854d1421c9a53",
+      "read_scope": "Full pages1-3 extracted and read; Eq9 drift and associated tidal-correlation sentence. The full primary PDF is preserved in runtime recovery.",
+      "role": "Previously exposed processed LLR drift summary, not a new raw likelihood or independent dataset from prior EP comparison.",
+      "drift_mean_per_year": 4e-13,
+      "reported_uncertainty_per_year": 9e-13,
+      "reported_tidal_correlation": 0.74
+    }
+  ],
+  "internal_sources": [
+    {
+      "path": "../direct_expansion_reconstruction/DIRECT_EXPANSION_DERIVATION.md",
+      "role": "Personally derived massless bound and already exposed m=.3 comparison curve; independent check completed separately."
+    },
+    {
+      "path": "../../gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md",
+      "role": "Earlier personally checked action and weak-source massless local normalization, supplied as matching premises here."
+    }
+  ],
+  "fresh_assumptions": [
+    "One-field inverse: exact chosen continuous H(n), benchmark dust density normalized using long-range GN, zero present drift, nonzero constant coupling and C2 potential requirement.",
+    "Two canonical fields, universal exponential coupling only to u, prescribed sinh-squared potential shape and free V_Lambda scale.",
+    "Eta=3 chosen by an on-trajectory bare Hessian criterion; preserved eta=0 fails that criterion.",
+    "Particular exact homogeneous initial conditions; positive late-time conserved dust, no radiation or constituent sensitivities.",
+    "Local Green response only within an explicitly frozen flat quadratic patch; fixed-number dust mass is a separate displayed closure.",
+    "Homogeneous-to-local drift comparison requires local background tracking and weak-source matching."
+  ],
+  "data_roles": {
+    "model_development": "The m=.3 expansion is already exposed; no new supernova fit or holdout here.",
+    "calibration": "V_Lambda and background matter normalization are supplied to reproduce the chosen curve; illustrative H0 is not calibrated from supernovae.",
+    "independent_empirical_test": "None in this block. Historical LLR drift is an exposed summary consistency comparison.",
+    "mathematical_controls": "Additional m=.2,.4 and a=.01 are mathematical fixtures, not observation inferences."
+  },
+  "failures": {
+    "candidate": "Eta=0 has a negative Hessian determinant on every S>0 trajectory point; retained before eta=3 repair.",
+    "executed_science": "First numerical run exits0,1494checks pass; no numerical tuning afterward.",
+    "before_execution": "One patch context lookup failed without changing bytes. Parent corrected an extra parenthesis while writing the runner, before frozen first execution."
+  },
+  "open_limits": [
+    "No full perturbation stability or global attractor proof.",
+    "No local environment or compact-body solution.",
+    "No total H^2 r^2 force correction bound.",
+    "No extension of exact massless Minkowski clock state.",
+    "No vacuum-scale derivation, unique theory, or novelty priority claim."
+  ]
+}

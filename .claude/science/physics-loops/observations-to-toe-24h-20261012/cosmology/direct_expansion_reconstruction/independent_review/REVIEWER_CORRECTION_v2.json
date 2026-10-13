@@ -1,0 +1,7 @@
+{
+  "old_sha256": "b80db8c26588fd13f96226521078b4745910af2ac740dbfd3a3cb05b4ed23355",
+  "new_sha256": "2289954dbb91c12d68d1bd5de02d1315d3d6bbb953a6f2c99708d738c2e2a26b",
+  "finding": "Reviewer analytic equality oracle used Einstein H exponent (3-a)/2; correct exponent (3+a)/2 follows from 1+q_star. Parent physical H_J exponent was correct. No parent source defect. Eight v1 oracle comparisons failed; all other 6684 independent checks passed.",
+  "diff": "--- executed_reviewer_v1\n+++ reviewer_v2\n@@ -153,7 +153,7 @@\n             close(\"dust_first_integral_\"+fixture[\"id\"]+\"_\"+str(n), rm*math.exp(3*n)/A, state0[4], 2e-10)\n             close(\"radiation_first_integral_\"+fixture[\"id\"]+\"_\"+str(n), rr*math.exp(4*n), state0[5], 2e-10)\n             if fixture[\"id\"] in [\"uncoupled_dust\",\"weak_equality\"]:\n-                exponent = (3-av)/2\n+                exponent = (3+av)/2\n                 exact_t = math.expm1((exponent-av)*n)/(exponent-av)\n                 close(\"equality_exact_trajectory_\"+fixture[\"id\"]+\"_\"+str(n), [A,RJ,H,u[6]],\n                       [math.exp(-av*n), math.exp((1-av)*n), math.exp(-exponent*n), exact_t], 2e-10)\n@@ -355,7 +355,7 @@\n \n \n def main():\n-    destination = ROOT/\"INDEPENDENT_RESULTS_v1.json\"\n+    destination = ROOT/\"INDEPENDENT_RESULTS_v2.json\"\n     if destination.exists():\n         raise FileExistsError(destination)\n     started = time.time()\n",
+  "preserved_failure": "INDEPENDENT_RESULTS_v1.json"
+}

@@ -1,0 +1,32 @@
+{
+  "frozen_at": "2026-10-13T02:37:33.597593+00:00",
+  "source_hashes": {
+    "PROTOCOL.md": "28607a7bb2fb8434bde6f866715f642d617da48babc97ec1019370d4d6778969",
+    "DIRECT_EXPANSION_DERIVATION.md": "ca89ef5b1344a1e27ab4e38ec6a1a14c3646ede46828164a1558344aebddaf8a",
+    "NUMERICAL_FIXTURES.json": "f7a702eda6931ec321a0ef5190928fa5c20e157b11615086d9eb1c5e6649544f",
+    "PRIMARY_DATA.json": "b0c4eb0fd23ed93e933998a3d336699e498c7b807343cf8fb1056be732b1b5e1",
+    "check_expansion_reconstruction.py": "c52a8187a81ecb329b02a5517321c0be858117d199385f8c63ff156fbf6c81df"
+  },
+  "preparse_freeze_sha256": "81eb983a8ec3b9ade6f6e87868b8c227f53d4ae785d968bd1e7b7c17be2d94b4",
+  "data_hashes": {
+    "table": {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+      "raw_sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+      "raw_bytes": 579283,
+      "local_gzip": "data/Pantheon+SH0ES.dat.gz",
+      "gzip_sha256": "64ff1b5b5fe9adfaab8b4e019d11e78fd63465cfb2fa21712432165437c2e762",
+      "gzip_bytes": 215932,
+      "recovery": "gzip decompression restores byte-exact original public numeric release"
+    },
+    "covariance": {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STAT+SYS.cov",
+      "raw_sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+      "raw_bytes": 33284960,
+      "local_gzip": "data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "gzip_sha256": "b360a5ebbec61be26f458079cacb79941e4b44b8706fcd67a092570d360c0031",
+      "gzip_bytes": 10085863,
+      "recovery": "gzip decompression restores byte-exact original public numeric release"
+    }
+  },
+  "independent_review_pending": true
+}

@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-13T02:59:03.273154+00:00",
+  "command": [
+    "python3",
+    "verify_source_lineage.py"
+  ],
+  "observed_tool_exit_code": 0,
+  "script_sha256": "35fa7c1ce54c30494d8998d4a1023a088aaed8a420822b328fbb7896bcd59161",
+  "all_passed": true,
+  "checks_count": 63,
+  "timing_note": "Record of the completed foreground tool execution; no invented start/end times."
+}

@@ -1,0 +1,263 @@
+{
+  "created_utc": "2026-10-13T02:54:37.947437+00:00",
+  "checks": [
+    {
+      "name": "current_source_and_exact_recovery_CLAIM_STATUS_CERTIFICATE.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_DISCOVERY_STATE.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_FREEZE.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_PREPARSE_FREEZE_v1.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_PRIMARY_DATA.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_RESULTS_AND_SCOPE.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_SOURCE_LEDGER.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_TRACE_GATE.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_check_expansion_reconstruction.py",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_data/Pantheon+SH0ES.dat.gz",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/EXECUTION.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/FREEZE.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/source_snapshot/DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/source_snapshot/PRIMARY_DATA.json",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/source_snapshot/PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/source_snapshot/check_expansion_reconstruction.py",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/stderr.txt",
+      "pass": true
+    },
+    {
+      "name": "current_source_and_exact_recovery_evidence_v1/stdout.txt",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_PREPARSE_FREEZE_v1.json_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_PREPARSE_FREEZE_v1.json_NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_PREPARSE_FREEZE_v1.json_DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_check_expansion_reconstruction.py",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_PRIMARY_DATA.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_SOURCE_LEDGER.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_RESULTS_AND_SCOPE.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_FREEZE.json_CLAIM_STATUS_CERTIFICATE.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/FREEZE.json_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/FREEZE.json_DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/FREEZE.json_NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/FREEZE.json_PRIMARY_DATA.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/FREEZE.json_check_expansion_reconstruction.py",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/RESULTS.json_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/RESULTS.json_NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/RESULTS.json_DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/RESULTS.json_PRIMARY_DATA.json",
+      "pass": true
+    },
+    {
+      "name": "freeze_identity_evidence_v1/RESULTS.json_check_expansion_reconstruction.py",
+      "pass": true
+    },
+    {
+      "name": "top_freeze_result_identity",
+      "pass": true
+    },
+    {
+      "name": "execution_freeze_preparse_identity",
+      "pass": true
+    },
+    {
+      "name": "execution_data_manifest_identity",
+      "pass": true
+    },
+    {
+      "name": "author_execution_snapshot_PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "author_execution_snapshot_DIRECT_EXPANSION_DERIVATION.md",
+      "pass": true
+    },
+    {
+      "name": "author_execution_snapshot_NUMERICAL_FIXTURES.json",
+      "pass": true
+    },
+    {
+      "name": "author_execution_snapshot_PRIMARY_DATA.json",
+      "pass": true
+    },
+    {
+      "name": "author_execution_snapshot_check_expansion_reconstruction.py",
+      "pass": true
+    },
+    {
+      "name": "single_recorded_author_execution_succeeded",
+      "pass": true
+    },
+    {
+      "name": "recorded_freeze_precedes_execution",
+      "pass": true
+    },
+    {
+      "name": "all_stdout_summary_fields_match_full_result",
+      "pass": true
+    },
+    {
+      "name": "external_primary_identity_README_distances.txt",
+      "pass": true
+    },
+    {
+      "name": "external_primary_identity_SN_only_official_likelihood.py",
+      "pass": true
+    },
+    {
+      "name": "external_primary_identity_Pantheon+SH0ES.dat",
+      "pass": true
+    },
+    {
+      "name": "external_equals_decompressed_numeric_table",
+      "pass": true
+    },
+    {
+      "name": "external_primary_identity_Pantheon+SH0ES_STAT+SYS.cov",
+      "pass": true
+    },
+    {
+      "name": "external_equals_decompressed_numeric_covariance",
+      "pass": true
+    },
+    {
+      "name": "all_1701_relevant_observation_fields_finite",
+      "pass": true
+    }
+  ],
+  "checks_count": 63,
+  "all_passed": true,
+  "failures": [],
+  "original_paths": 24,
+  "external_primary_paths": 4,
+  "history_limit": "Hashes and recorded timestamps verify source continuity, not an independent observation of the author's prior knowledge or absence of array inspection."
+}

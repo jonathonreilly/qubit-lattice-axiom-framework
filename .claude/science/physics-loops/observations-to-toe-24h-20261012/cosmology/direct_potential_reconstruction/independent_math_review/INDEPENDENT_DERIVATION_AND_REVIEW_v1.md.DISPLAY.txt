@@ -1,0 +1,172 @@
+DISPLAY COPY ONLY. Exact original bytes are in IMMUTABLE_REVIEW_BYTES_potential_v1.json at the campaign root. Do not use this normalized display as the hashed original.
+
+# Independent potential-reconstruction proof check
+
+Disposition: PASS within the supplied action, source and local-diagnostic premises. No material correction to the frozen proof is required. The parent remains the author; this is an independent mathematical check, not a replacement construction, empirical validation, full cosmological stability result or formal audit.
+
+The complete new proof, protocol, numerical fixtures and pre-execution plan were read and snapshotted before independent execution. Their hashes match the parent's pre-execution plan. The earlier DIRECT_EXPANSION_DERIVATION.md was read completely for action, frame and source continuity. Its observation results were not repeated. No parent numerical runner was read, imported or executed for this check.
+
+## 1. Frame and inverse equation
+
+Use c=1 and set Q=A H_J. Since R_J=A R_* and dt_J=A dt_*, the physical e-fold variable obeys dn/dt_*=Q. Thus
+
+    H_*=Q(1-p),  dot phi=Q p/sqrt(a),  Q'/Q=p+h.
+
+The source transformation is consistent with conserved particle number: rho_*=A^4 rho_J and rho_J proportional to (A R_*)^-3 imply rho_* proportional to A R_*^-3. Hence dot rho_*+3H_*rho_*=dot zeta rho_*. For the action R-2(dphi)^2-4V, the scalar equation contains V_phi, with no additional factor two, and Friedmann contains 2V.
+
+Direct differentiation gives
+
+    dot H_*=Q^2[(p+h)(1-p)-p'].
+
+Inserting Einstein Raychaudhuri and D=4pi G_*rho_*/Q^2 gives exactly
+
+    p'=h+D+(1-h)p+(1/a-1)p^2.
+
+The Friedmann reconstruction is
+
+    V=Q^2[3(1-p)^2-p^2/a-2D]/2.
+
+The supplied present density and G_N=G_*(1+a) yield the displayed D. These are additional normalization/source premises; E(n) alone cannot supply them.
+
+Let C=h+(1+a)D+4p+(1/a-3)p^2. Differentiating the reconstructed V with the inverse equation and D'=D(2p-3-2h) gives
+
+    V'=-(Q^2/a)p C.
+
+Independently, the scalar acceleration and Hubble drag give
+V_phi=-Q^2 C/sqrt(a). The formulas agree where p is nonzero and have the stated continuous scalar-equation extension to a turning point. Recovering a parametric curve is not enough to ensure a single-valued potential.
+
+## 2. Endpoint obstruction and one-sided cusp
+
+Before specializing the target, differentiation at p=0 gives
+
+    (V_phi)'=-Q^2/sqrt(a)
+                 [h'+2h^2+4h+(1-3a)D].
+
+The displayed matter-plus-constant comparison satisfies
+h'=-3h-2h^2, reducing this expression to the author's equation (4). A C2 potential would instead satisfy
+(V_phi)'=V_phiphi p/sqrt(a)=0 at the turning point. The necessary compatibility condition is therefore correct and is target-dependent.
+
+At the supplied endpoint h0=-(1+a)D0, p0=0 and A0=1, one obtains
+
+    p'_0=-aD0,
+    V_phi(0)=0,
+    (V_phi)'_0=4sqrt(a)H0^2D0.
+
+For a>0 and positive dust this last quantity is strictly positive, contradicting finite continuous curvature at the endpoint. This proves the scoped C2 obstruction even for a one-sided smooth extension to the endpoint. It does not exclude a different density calibration, a different continuous expansion, nonzero drift, multiple fields or the separate a=0 limit.
+
+An independent Taylor calculation gives
+
+    phi''(0)=-sqrt(a)D0,
+    V'(0)=V''(0)=0,
+    V'''(0)=-8aH0^2D0^2.
+
+Writing b=sqrt(a)D0/2, the past branch has phi=-b n^2+O(n^3). Inverting its negative-n branch and substituting into V yields
+
+    V-V0=(8H0^2/3)sqrt(2sqrt(a)D0)(-phi)^(3/2)
+           +O(phi^2).
+
+The derivative ratio gives V_phiphi/H0^2=-4/n+O(1). It is positive and divergent as n approaches zero from below. The coefficient, sign, one-sided branch and C1-but-not-C2 interpretation in the proof are all correct. Analyticity of the local inverse ODE for a>0 and E^2>0 justifies the Taylor remainder and the half-power inversion.
+
+## 3. Independent cosmic-time construction of the two-field solution
+
+The positive-potential statement follows also by completing the square:
+
+    (u-sqrt(a))^2+eta u^2
+      =(1+eta)[u-sqrt(a)/(1+eta)]^2+a eta/(1+eta).
+
+It is nonnegative for eta>=0, so V>=V_Lambda globally. This is not itself a Hessian or perturbation-stability statement.
+
+A different parametrization verifies the complete background without numerically solving the author's n-equations. Define
+
+    L^2=2V_Lambda/3,
+    tau=(3L/2)(t_*-t_B)>0,
+    c=V_Lambda/(1+a),
+    S=c csch^2(tau),
+    H=L coth(tau),
+    chi-chi_c=(1/k) ln tanh(tau/2),
+    u=0.
+
+The identity sinh[ln tanh(tau/2)]=-csch(tau) shows that this is the declared potential's S(chi), not an unrelated function. Also
+d[ln tanh(tau/2)]/d tau=csch(tau). With
+k^2=3(1+a)/(2a), it follows that
+
+    dot chi^2=a S,   dot S=-3H S,
+    dot H=-(1+a)S,
+    3H^2=2(1+a)S+2V_Lambda.
+
+At u=0, V_u=-sqrt(a)S cancels the positive dust-source term sqrt(a)S in the scalar equation. The other derivative is
+S_chi=-2ck csch(tau)coth(tau)=-3H sqrt(S/a). Consequently the chi equation gives
+ddot chi+3H dot chi=-V_chi. Friedmann receives 2S from dust, aS from kinetic energy and 2V_Lambda+aS from potential energy; all factors agree.
+
+Thus A=1 is an exact homogeneous solution, not a field artificially frozen after variation. The second field carries positive kinetic energy while alpha dot dot(phi)=0. The eta u^2 term and its first derivatives vanish on this trajectory, explaining why the curvature repair does not alter it.
+
+Dust conservation gives S/c=[m/(1-m)]exp(-3n), directly yielding equation (9), the supplied V_Lambda and the comparison H^2. The shift chi_c fixes the field origin only. Neither the vacuum-energy scale nor the matter fraction or coupling is selected by this construction.
+
+## 4. Failed Hessian and exact scope of the repair
+
+Direct differentiation of the full two-field potential gives at u=0
+
+    H_V = [[(1+eta)S, -sqrt(a)S_chi],
+           [-sqrt(a)S_chi, (a/2)S_chichi]].
+
+Using S_chi^2=4k^2S(c+S) and S_chichi=2k^2(c+2S) produces
+
+    det H_V=a k^2 S[(eta-3)c+(2eta-2)S].
+
+For eta=0 this determinant is strictly negative for every S>0. The original positive-potential candidate therefore has a negative curvature eigenvalue; this failed candidate is retained in both the proof and the independent numerical rows.
+
+At a specified S>0, the nonnegative-curvature threshold is
+
+    eta >= (3c+2S)/(c+2S).
+
+This threshold exceeds one, so the positive upper-left entry follows as well. Its supremum over the whole future-expanding trajectory S>0 is three as S tends to zero. Eta=3 therefore is the minimum globally sufficient constant for this particular along-trajectory potential-Hessian criterion. At eta=3 the determinant is 4a k^2S^2>0. At S=0 the Hessian has eigenvalues zero and a k^2c; there is no uniform positive mass gap.
+
+This verifies the stated repair and its minimality without promoting it to global convexity, a complete dust/metric perturbation calculation or an attractor theorem. The latter qualifications are essential and present in the source.
+
+## 5. Local static diagnostic and normalization
+
+For a frozen canonical mass matrix, the weak-source scalar equation is
+
+    (nabla^2-M^2)delta phi=4pi G_* alpha m delta^3(x).
+
+The decaying scalar response is -G_*m exp(-mu_j r)/r in each eigenmode, with its projection of alpha. Combining it with the tensor response and differentiating the pair energy gives exactly the two expressions in equation (11). In particular, the force contains (1+mu_j r)exp(-mu_j r); using the potential factor alone would give the wrong leading force correction.
+
+For the orthonormal eigenbasis, a_j=(alpha dot e_j)^2>=0 and sum a_j=a. The elementary identity
+
+    1-(1+x)exp(-x)=integral_0^x t exp(-t) dt
+
+proves the stated 0-to-x^2/2 bound. A useful basis-independent form is
+
+    sum a_j mu_j^2=alpha^T M^2 alpha.
+
+For eta=3 this equals 4aS for the bare potential Hessian. At fixed Einstein proper number density and frozen Einstein metric, rho_*=m A n_*; differentiating its scalar source gives the additional positive matrix S alpha alpha^T. The contraction then is a(4+a)S. The corresponding fractional mass-correction bounds are
+
+    bare: 2aS r^2/(1+a),
+    fixed-number diagnostic: a(4+a)S r^2/[2(1+a)].
+
+These are restatements of the same local approximation. Holding physical-frame density fixed would be a different derivative; allowing matter and metric to respond requires the omitted coupled system. Adding the fixed-number matrix is not a proof that cosmological perturbations are stable.
+
+Restoring SI units replaces the dimensionless radius by H0 r/c when the matrix is normalized by H0^2. At a=1/2499, m=.3, n=0, H0=2.3e-18/s and r=1.5e13 m, the two evaluated diagnostic bounds are approximately 4.7656872e-30 and 4.7661639e-30. They bound the scalar mass effect only, not all curvature, tidal, density or local-environment corrections. They are illustrative supplied-scale evaluations, not observational limits.
+
+The leading small-distance G_N and gamma matching is correctly qualified. Homogeneous d ln[G_*A^2(1+a)]/dt_J=0 follows exactly on u=0. A measured local drift comparison needs the additional tracking, weak-source and range assumptions. The historical correlated LLR summary is not a new independent likelihood. The moving cosmological state and nonzero potential masses also do not inherit the earlier exact free massless Minkowski clock spectrum.
+
+## 6. Independent executable controls and limits
+
+The independent source was frozen before its only execution. It imports no author code and completed successfully with empty stderr:
+
+- 26 exact symbolic zero identities, including the general frame inverse, endpoint derivatives, cusp coefficient, potential Hessian, cosmic-time equations, fixed-number source derivative and massive Green normalization.
+- 315 Hessian rows across the supplied mathematical fixture grid; all 63 eta=0 rows retain a negative eigenvalue. Maximum determinant error divided by max(1, absolute exact-formula value) is 7.020514237893676e-15.
+- 756 spectral-residue and force-bound rows for the two frozen matrix choices. Force deficits were evaluated with 60-digit scalar arithmetic from floating-point eigensystems; these rows are numerical controls, not interval certificates.
+- Eight independently normalized Green-force controls using the matrix heat-kernel representation, without diagonalizing inside the integration:
+
+    (2/sqrt(pi)) integral_0^infinity sqrt(t) exp(-t)
+                  exp[-q^2 M^2/(4t)] dt.
+
+  This follows by differentiating the three-dimensional proper-time Green kernel. It is compared with the spectral force factor. The maximum absolute difference is 2.2537527399890678e-14.
+- Eight illustrative SI evaluations and a control showing that substituting the potential exponential for the force kernel violates the quadratic force bound.
+
+No author ODE execution, parent result file or empirical data comparison is certified by these controls. The supplied numerical-fixture tolerances and parameter labels are consistent with development mathematics; the independently chosen heat-kernel check uses its own stated numerical tolerance. Assertions and raw output are preserved.
+
+There was no independent assertion or execution failure. One preliminary file-listing output was truncated; the relevant earlier derivation was then read directly and completely. The parent's pre-execution plan reports a prior no-effect patch-context failure; that report remains intact in the snapshot and was not reclassified as a science result. The eta=0 failure is an intentional retained mathematical counterexample, not an erased unsuccessful candidate.
+
+All current source identities must still match this receipt for the disposition to apply. This check does not authorize canonical edits, audit status, merging, PR operations or a new deadline.

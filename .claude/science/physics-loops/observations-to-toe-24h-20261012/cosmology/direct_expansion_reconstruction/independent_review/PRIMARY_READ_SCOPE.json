@@ -1,0 +1,11 @@
+{
+  "read_utc": "2026-10-13T02:59:03.272560+00:00",
+  "web_url": "https://arxiv.org/html/2202.04077v2",
+  "read_scope": "Abstract and methodology II.1-II.3; selected redshift-convention context. Not full paper.",
+  "local_primary_read_in_full": [
+    "README_distances.txt",
+    "SN_only_official_likelihood.py"
+  ],
+  "source_boundary": "Processed numeric release and supplied covariance; no raw photometry, event identity reconstruction, nuisance retraining, simulations or full-pipeline reanalysis.",
+  "citation_support": "Methodology states model-dependent redshift uncertainty, reference flat LCDM for certain systematic redshift responses, duplicate-light-curve covariance and standardized magnitude nuisance fitting."
+}

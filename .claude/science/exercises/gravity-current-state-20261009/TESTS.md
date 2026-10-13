@@ -7742,7 +7742,7 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OPEN:** otherwise.
 - **Expectation.** For gapped fields, R ≈ ln(1e122)/m: local for m ~ 1/a, non-local for SM masses (m·a ~ 1e-17). For gapless fields (photon, graviton), R ~ (1e122)^{1/4} ~ 1e30 a. So NO-LOCAL-ESCAPE for the photon, which makes the R19-10 injection unavoidable for massless fields.
 
-#### C5 referee verdicts R19-5, R19-8 and the R19-9 worker reading (recorded 05:22Z)
+#### C5 referee verdicts R19-5, R19-8 and the R19-9 worker reading (recorded 05:19Z)
 
 - **R19-5 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
   - **W1 and W2 are distinct.** W15/T_pf addresses W2 and does not prohibit exact W1.
@@ -7769,3 +7769,42 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **The SM root re-solves:** all six rows ≤ 3.3e-11, with knob shifts ≤ 2.9e-6 at r = 0.1. The bill is unchanged at 6 + 1.
 
   Referee running.
+
+### C5 Round 19, item 14 (pre-registered 05:21Z, before launch)
+
+**R19-14. If site creation injects energy (R19-10), does any other way of growing space keep (S) number-free?**
+- **Plain question.** R19-10 (worker; referee running) finds that local site insertion leaves a standing excess energy of at least ~1e60 ρ_Λ above e₀, which tracks H. (S) plus N_red then gives Λ̃ ≠ 0. Two alternatives remain:
+  - V1, where the lattice spacing grows with a fixed number of sites (R11-3, R12-2);
+  - a grid that does not expand at all, with expansion carried by records or the metric.
+
+  Under each:
+  - (i) is e₀ constant? For example, in V1 the physical e₀ ∝ 1/a(t)⁴ is not constant.
+  - (ii) Is there a standing excitation?
+  - (iii) Can (S) + (d-i) + N_red + W1 stay number-free and non-signalling?
+- **Setting.**
+  - V1: the R11-3 fixed-site grid with a growing a(t), where a/ℓ_P drifts.
+  - V0: the grid fixed in physical units, with no growth, as in set A-like or records-carry-expansion pictures.
+  - Excluded: active compensation; site creation (R19-10's subject).
+- **Prior art (count once):**
+  - R11-3 and its verdict (two tadpoles; w ≥ 0; a/ℓ_P drift);
+  - R12-2 and its verdict (fixed-site grids cannot expand; site creation is forced at 3H);
+  - R17-7, R17-11, R18-6 and R19-6 with their verdicts;
+  - R19-10 (worker);
+  - SUMMARY §25.
+- **Removed hypothesis:** site creation as the growth mechanism.
+- **Probes.**
+  - (a) e₀ and the excitations under V1. Is the evolution adiabatic? What is the drift of e₀·a⁴?
+  - (b) Under V1, (S) with a time-dependent e₀: Bianchi, a carrier, and signalling.
+  - (c) R12-2's no-go for fixed sites: does it still bind with (S) in place?
+  - (d) V0 options.
+  - (e) Prices.
+- **FIXED readings.**
+  - **ALT-GROWTH-OK:** a stated growth mode under which (S) and the bridge stay number-free, non-signalling and consistent with observation (no a/ℓ_P drift beyond bounds). Checked.
+  - **NO-NUMBER-FREE-GROWTH:** a refereed demonstration that every growth mode in a stated class (site creation, V1, fixed grid) costs a number or a signalling channel under (S).
+  - **OPEN:** otherwise.
+- **Expectation.** NO-NUMBER-FREE-GROWTH:
+  - V1 makes e₀ time-dependent, which brings back the Bianchi carrier and signalling;
+  - a fixed grid cannot expand (R12-2);
+  - site creation injects energy (R19-10).
+
+  If so, (S) is number-free only on a static universe, and Λ goes back to a tuning or a new principle.

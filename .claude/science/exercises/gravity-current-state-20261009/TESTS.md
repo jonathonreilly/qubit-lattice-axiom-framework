@@ -6914,3 +6914,29 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r18-7a (Π), P-r18-7b (readout gauge), P-r18-7c (weight a); P88 extended.
 
   Referee running.
+
+### C5 Round 18, item 11 (pre-registered 03:10Z, before launch)
+
+**R18-11. Set A's E1 + N in Poisson gauge: does the time-dependent noise behave gauge-invariantly at O(G²), and is premise (iii) live?**
+- **Plain question.** R18-7 (worker; referee running) constructs E1 + N_c at O(G²) in harmonic gauge. Static and quasi-static: β = γ = 1, CP, well-posed. But in harmonic gauge the realised scalar/vector noise carries secularly growing pure-gauge parts. These conflict with R15-2's Poisson-gauge record (P-r15b), and the time-dependent noise-fed O(G²) terms were not computed gauge-invariantly. In Poisson gauge, or gauge-invariantly:
+  - Is the O(G²) law well-posed and CP?
+  - What is the active gravitating density of the noise for each insertion weight a?
+  - Does R15-2's constraint-energy overshoot (|u₁| up to ~1e12 ρ_Λ) return?
+- **Setting.**
+  - E1 (R13-6 repaired gain, R15-2 channels, P76, P88), with N_c's conserving projection Π.
+  - Poisson-gauge readout, or Bardeen-type gauge invariants.
+  - O(G²); the static, quasi-static, and stationary-noise sectors.
+  - Excluded: E2; strong field; FRW, unless time allows.
+- **Prior art (count once):** R18-7 (worker), R18-6 (set A part, worker), R16-14 and its verdict, R15-2 and its verdict (premise (iii), |u₁|), R16-4, R13-6.
+- **Removed hypothesis:** harmonic gauge.
+- **Probes.**
+  - (a) The construction in Poisson gauge, or a gauge-invariant reformulation, at O(G²).
+  - (b) The noise's active density, ⟨T_eff⁰⁰ + 3p⟩, as a function of a. Is it gauge-invariant? Which a makes it vanish, and is that value natural?
+  - (c) The budget against ρ_Λ over R15-2's window.
+  - (d) CP and well-posedness.
+  - (e) Prices.
+- **FIXED readings.**
+  - **NOISE-SAFE:** a gauge-invariant O(G²) result in which the noise's active density is below ρ_Λ over a stated window for a natural, stated a, with CP. Checked.
+  - **NOISE-OVERSHOOT:** a refereed demonstration that for every a in a stated class, the gauge-invariant active density exceeds ρ_Λ over the whole window.
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN. The a = 4 cancellation is a harmonic-gauge statement, and the gauge-invariant density is likely a different combination. The main risk is that no natural a works, which would revive R15-2's overshoot as a set A wall.

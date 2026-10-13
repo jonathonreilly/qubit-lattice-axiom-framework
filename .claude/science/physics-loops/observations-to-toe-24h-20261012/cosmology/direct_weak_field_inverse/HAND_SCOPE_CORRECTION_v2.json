@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-13T07:46:19.916121+00:00",
+  "reason": "Independent handwritten review identified physical gamma inverse domain and exact band-membership wording. Narrow corrections before first execution; equations unchanged.",
+  "old_sha256": "be32c0394625ed6a246a81cf2b87ed842e2edac49d0afe974dbe129af1df71c2",
+  "new_sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b",
+  "first_execution_yet": false
+}

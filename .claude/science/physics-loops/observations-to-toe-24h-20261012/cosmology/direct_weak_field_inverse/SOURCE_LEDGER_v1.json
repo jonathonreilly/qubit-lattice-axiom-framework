@@ -1,0 +1,19 @@
+{
+  "parent_checked_foundation": {
+    "path": "../direct_induced_curvature_completion/HAND_DERIVATION_v1.md",
+    "sha256": "b37f6a0bf03a9a178c638266f4d6cffedce4150ed89c03ab6416a71c21ac225e",
+    "role": "Frame transform, positive kinetic domain, local mass; parent derived, full independent handwritten and implementation reviews read. Original numerical sign aggregate corrected separately."
+  },
+  "current_handwritten_source": "HAND_DERIVATION_v2.md",
+  "original_handwritten_source": "HAND_DERIVATION_v1.md",
+  "affected_scope_record": "HAND_SCOPE_CORRECTION_v2.json",
+  "new_derivation": "NULL_CURVATURE_ADDENDUM_v1.md",
+  "published_formula_and_measurement_inputs": "OBSERVATION_INPUTS_v1.json",
+  "roles": {
+    "calibration": "Only optional algebraic G_N normalization; no numeric calibration here",
+    "model_development": "Both historical Cassini and LLR summaries are exposed, as are all synthetic inputs",
+    "independent_observation_test": "None",
+    "independent_scientific_check": "Focused handwritten review in progress before first execution; implementation review will follow"
+  },
+  "not_derived": ["PPN response machinery", "apparatus likelihood", "universal matter coupling", "light local scalar premise", "origin boundary choice", "H_v", "nu", "q or zeta selection", "quantum validity"]
+}

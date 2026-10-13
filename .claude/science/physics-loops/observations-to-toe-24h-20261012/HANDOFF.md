@@ -101,3 +101,19 @@ AUX v2 independent affected review complete: original1434 output leaves unchange
 Complete AN portable milestone gates and PR; read Ricci-operator independent reviews, repair any actual errors, and derive the next observation-facing constraint. Keep constant-vacuum multipliers and full boundary stability distinct.
 
 Constant-vacuum branch comparisons have different C values; local Hessian signs do not establish stability of one fixed-C or finite absolute-flux boundary problem. Fixed deadline16:53Z, discovery cutoff16:38Z, retired/cancelled workers stay stopped.
+
+## Direct-author continuation 2026-10-13T07:34:32.193068+00:00
+
+Induced-curvature independent v1 27092/1 exposed exact-zero classification and three output-control gaps. Parent v2 9605/0 preserves original physical numeric fields, counts31 negative origins plus1 exact zero and19 nonzero positive-Hessian rows; affected review active. Handwritten review121+5 passes,42 parent identities; numerical157 identities. AN final31-path source confirmed with72 parent identities; actual UNIT helper running, combined gates next.
+
+Finish AN UNIT/combined validation and review PR. Independently confirm curvature v2 corrections, then personally derive weak-field parameter and observation map with published PPN bridge explicit.
+
+Prior32-negative checkpoint explicitly superseded. Source and original failure untouched. Latest pushed checkpoint3ec4f811587e01a1e3a01682a671d28e030da245. Fixed deadline and no-restart instructions unchanged. Lock expires09:32:56Z.
+
+## Direct-author continuation 2026-10-13T10:42:55.904688+00:00
+
+Curvature v2 fully checked:9605 parent,21325 affected independent,3 prior survivor mutations detected578/25/69;271 affected identities. New parent weak-field inverse1938/0 after preserved finite-canonical-endpoint failure;454 independent handwritten checks,59 identities verified. PPN imports/exposed Cassini-LLR summaries explicit; implementation review active. AN exact32-path tree passed all combined gates and final76 identity controls; final UNIT_v2 executing.
+
+Deliver AN review PR with exact gate/source receipts. Finish weak-field implementation review and checkpoint endpoint/null response calculations. Reconstruct a consistent observed dust/radiation history with the induced curvature term, exposing any extra kinetic/potential assumptions and q-variation changes.
+
+Historical summaries remain exposed development comparisons, no joint likelihood. Finite local scalar distance is a property of this supplied metric, not a derived quantum cutoff. Deadline unchanged16:53Z, discovery cutoff16:38Z.

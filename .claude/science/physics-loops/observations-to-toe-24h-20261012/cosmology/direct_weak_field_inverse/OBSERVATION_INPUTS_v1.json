@@ -1,0 +1,33 @@
+{
+  "Cassini": {
+    "source": "https://www.nature.com/articles/nature01997",
+    "doi": "10.1038/nature01997",
+    "published": "2003-09-25",
+    "quantity": "gamma_minus_one",
+    "mean": "2.1e-5",
+    "reported_uncertainty": "2.3e-5",
+    "role": "Previously exposed processed measurement; development comparison, no raw Doppler likelihood.",
+    "read_scope": "Primary journal abstract verified this block; previous campaign examined apparatus scope."
+  },
+  "LLR": {
+    "source": "https://arxiv.org/abs/gr-qc/0411113v2",
+    "doi": "10.1103/PhysRevLett.93.261101",
+    "quantity": "eta_Nordtvedt",
+    "mean": "4.4e-4",
+    "reported_uncertainty": "4.5e-4",
+    "role": "Previously exposed derived summary reusing lunar EP, laboratory composition and self-energy inputs. Not independent of prior campaign lunar rows.",
+    "read_scope": "Primary abstract verified this block; prior direct_body_sensitivity read substantive paper through conclusions.",
+    "not_imported_as_extra_data": "Cassini-derived beta estimate"
+  },
+  "PPN_response_import": {
+    "source": "https://arxiv.org/pdf/gr-qc/9602056v1",
+    "authors": "Damour and Esposito-Farese",
+    "equations": ["1.1", "1.3", "1.4a", "1.4b"],
+    "read_scope": "Primary introduction, action normalization, coupling definitions and displayed 1PN bridge; relevant strong-body scope paragraphs. No claim to rederive complete PPN machinery.",
+    "role": "Explicit mathematical/physical bridge under long-range universal weak-body assumptions.",
+    "failed_optional_source": "IHES 1992 archive URL returned fetch timeout; 1996 primary paper supplies the required equations."
+  },
+  "calibration": "G_N may normalize q algebraically; no numeric G_N estimate or new calibration is used.",
+  "independent_observation_test": false,
+  "prospective_role": "Inverse map states which two future independent response parameters would identify the local a,z away from degeneracies."
+}

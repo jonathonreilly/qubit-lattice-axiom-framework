@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T07:52:43.465742+00:00",
+  "first_failure": "evidence_v1/EXECUTION.json",
+  "cause": "Requested absolute scalar displacement exceeds positive remaining canonical range for first null-family point. No physical root exists.",
+  "change": "Scale finite-coordinate steps by derived remaining distance, compare integrated distance against closed form, and check actual third/fourth-derivative leading Taylor errors. Forward/inverse/PPN/null algebra unchanged.",
+  "new_runner_sha256": "6a155c3c849c9783a3cffb8c1bc0dcdd5d3044ba193ac372e09c12530b821fc6",
+  "original_runner_sha256": "ac6c5ee62b1951f6a224f48dde3da0b21280f5be293dada048ab1d7173703507",
+  "protocol": "PROTOCOL_v2.json",
+  "not_changed": [
+    "root tolerance",
+    "algebra tolerance",
+    "fixture a,z,k,nu grids",
+    "measurement inputs",
+    "failed evidence"
+  ]
+}

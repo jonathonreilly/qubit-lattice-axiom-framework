@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-13T07:21:57.212220+00:00",
+  "v1_source_sha256": "aae87ef2cd5a0891321bdbb42c6be39f9b21affc897137cea9fc2c359c782a64",
+  "v2_source_sha256": "28a5cbdc25910f1af6351e108469c8a2a5664bf8307dcfcd276ea61518f9b01b",
+  "actual_error": "At a=1/3,nu4,s=-1/2,t0, exact origin u mass is zero; a -2.4545467e-91 differentiation residue was miscounted by strict float sign. Original32 negative-origin count is superseded; exact negative/zero classifications are now separate.",
+  "review_result_as_reported": "Independent original27092 passed,1 failed; immutable full report pending.",
+  "actual_mutation_gaps": [
+    "Einstein masses serialized as physical masses",
+    "Drop34 domain-excluded vacuum rows",
+    "Set every serialized Hessian flag true"
+  ],
+  "correction": "Exact rational origin sign from nu(1+s)+12as; off-origin sign requires margin >1e-55 or records unresolved and fails. Post-serialization full vacuum census retains excluded rows and checks scalar/tensor domain, local mass class, mass/frame/coupling/energy and count records.",
+  "scope": "Local fixed-multiplier Hessians only. Distinct positive-Hessian vacua under the same imposed ratio generally have different C; no stability theorem for one fixed-C or finite absolute-flux boundary problem.",
+  "original_science": "All equations, source premises, numerical mass/force calculations, fixtures, original tolerances and raw zero-roundoff values preserved. Add classification and serialized-record checks; compare all old data fields, except corrected count, before accepting."
+}

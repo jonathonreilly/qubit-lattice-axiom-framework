@@ -12,7 +12,7 @@
   "checkpoint_minutes": 30,
   "deep_block_minutes": 90,
   "cycles_completed": 0,
-  "active_route": "AUX v2 independent affected review complete: original1434 output leaves unchanged; four former survivors now fail11/50/58/72 mathematics checks,304 identities verified. Parent Ricci-operator derivation and first execution5195/0;248 stationary rows,19 nonzero local-positive-Hessian rows and32 origin negative-u-mass rows in positive kinetic domain; focused math/numerical reviews active. AN constructive source commit eb22c212bd preserves reviewed tree; final source review then full unit/combined gates pending.",
+  "active_route": "Curvature v2 fully checked:9605 parent,21325 affected independent,3 prior survivor mutations detected578/25/69;271 affected identities. New parent weak-field inverse1938/0 after preserved finite-canonical-endpoint failure;454 independent handwritten checks,59 identities verified. PPN imports/exposed Cassini-LLR summaries explicit; implementation review active. AN exact32-path tree passed all combined gates and final76 identity controls; final UNIT_v2 executing.",
   "actual_current_surface_status": "conditional-support",
   "target_claim_type": "bounded_theorem",
   "trace_class": "frontier_discovery",
@@ -23,16 +23,16 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Complete AN portable milestone gates and PR; read Ricci-operator independent reviews, repair any actual errors, and derive the next observation-facing constraint. Keep constant-vacuum multipliers and full boundary stability distinct.",
+  "next_exact_action": "Deliver AN review PR with exact gate/source receipts. Finish weak-field implementation review and checkpoint endpoint/null response calculations. Reconstruct a consistent observed dust/radiation history with the induced curvature term, exposing any extra kinetic/potential assumptions and q-variation changes.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-13T07:10:20.377686+00:00",
-  "current_block": "induced-curvature-and-analytic-milestone",
+  "last_checkpoint_at": "2026-10-13T10:42:55.904688+00:00",
+  "current_block": "weak-field-inverse-and-curvature-history",
   "current_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
-    "AN final source receipt and mechanical gates",
-    "Induced-curvature handwritten and numerical checks",
+    "AN final UNIT/cache and PR",
+    "Weak-field inverse implementation check",
     "Older combined cosmology N1-N8 packet"
   ],
   "delegated_routes": [
@@ -48,7 +48,7 @@
     "Quantum composition and causal physical realization of alternative boundary law",
     "Matter/gauge/cosmological architecture"
   ],
-  "last_pushed_commit": "77a890cde3b999ab7ed244bebbf7c430ff7ef9b5",
+  "last_pushed_commit": "3ec4f811587e01a1e3a01682a671d28e030da245",
   "blocks_completed": [
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
@@ -109,7 +109,10 @@
     "AUX explicit action math108/0 and35 identities; numerical4666/0 and181 identities; four v1 false-success mutations preserved; parent corrected1784/0, affected review pending.",
     "AN canonical constructive runner1497/0, declared note/fixture/import identities unchanged and cache fresh; source review pending.",
     "AUX v2 affected review complete;304 identities verified, four missed mutations fail11/50/58/72 mathematical assertions; original science unchanged.",
-    "Parent induced-curvature action/frame/flux/Hessian first run5195/0; kinetic-excluded rows retained; independent checks active."
+    "Parent induced-curvature action/frame/flux/Hessian first run5195/0; kinetic-excluded rows retained; independent checks active.",
+    "Curvature original negative-count32 superseded by exact classification31 plus1zero; parentv2 9605/0 with original science preserved, independent affected review active.",
+    "Curvature v2 fully independently checked; original mass-count error and mutation gaps preserved, all three repaired.",
+    "Parent weak-field inverse/null-family/canonical-distance1938/0;454 independent handwritten controls pass,59 identities verified."
   ],
   "milestone_worktree": "/private/tmp/observations-positive-response-20261012",
   "milestone_branch": "codex/observations-positive-response-20261012",
@@ -158,12 +161,12 @@
   "author_thread_id": "01a130f9-fd7f-7d31-9f8f-ac05cdf2c617",
   "background_author_retired_at": "2026-10-12T19:05:00.475532+00:00",
   "quantum_milestone_worktree": "/Users/jonBridger/.codex/worktrees/quantum-reflection-20261012/New Axioms Lets Go",
-  "last_science_checkpoint": "77a890cde3b999ab7ed244bebbf7c430ff7ef9b5",
+  "last_science_checkpoint": "3ec4f811587e01a1e3a01682a671d28e030da245",
   "vector_milestone_worktree": "/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go",
   "matter_milestone_worktree": "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go",
   "metric_milestone_worktree": "/Users/jonBridger/.codex/worktrees/metric-clock-20261013/New Axioms Lets Go",
   "current_target_ref": "origin/main",
   "current_target_head": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "cosmology_milestone_worktree": "/Users/jonBridger/.codex/worktrees/cosmology-reconstruction-20261013/New Axioms Lets Go",
-  "checked_at": "2026-10-13T07:10:20.377686+00:00"
+  "checked_at": "2026-10-13T10:42:55.904688+00:00"
 }

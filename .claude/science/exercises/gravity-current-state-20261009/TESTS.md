@@ -6823,3 +6823,21 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - N > 2 braiding;
     - joint mixing with field dependence;
     - the other excluded classes.
+- **R18-6 (joint bridge): worker reading JOINT-CONSISTENT in C-box-E; set A OPEN.**
+  - **The bridge (C-box-E):** λ = −κe₀[H] (that is, (S)); Q = ∇(W h) (that is, (d-i)); and N stated on the gravitating stress.
+  - **Checks in C-box-E:**
+    - Bianchi gives g = 0 on every slice that expands somewhere, so the equations reduce exactly to GR on T_m − (V − e₀)g.
+    - A static star is exactly TOV.
+    - β = γ = 1.
+    - Λ̃ = 0 under P93.
+    - There is no Lemma-S channel.
+  - **Count:** 3 sentences, 0 numbers.
+  - **J1 (wording versus conflict).** N read literally ("total stress", vacuum included) forces W = 0, so it must be stated on the gravitating stress. The referee rules whether this is a wording fix or a conflict.
+  - **J2.** The graviton must be GR's self-coupled field. If gravity is quantum, its zero-point sector lies inside H, and (S) together with (d-i) removes it with no number.
+  - **Set A:**
+    - (d-i) cannot be posed there.
+    - Matter's vacuum has W = 0 by Poincaré invariance.
+    - N's source includes the record noise (up to 1e12–1e19 ρ_Λ), which no scalar rule removes. That makes premise (iii) and R15-2's budget the live constraint.
+  - **Prices:** P-r186a (N on the gravitating stress), P-r186b (J2), P-r186c (set A meter stress).
+
+  Referee running.

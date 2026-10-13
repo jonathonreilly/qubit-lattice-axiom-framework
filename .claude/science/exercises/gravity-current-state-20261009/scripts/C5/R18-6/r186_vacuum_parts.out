@@ -1,0 +1,38 @@
+=== C1: one-point stress isotropy on the cubic lattice ===
+C1 cubic NN                           diag = [0.056637 0.056637 0.056637]  max|S - (trS/3) 1|/|trS/3| = 7.70e-13
+C1 cubic + quartic cross terms        diag = [0.138244 0.138244 0.138244]  max|S - (trS/3) 1|/|trS/3| = 1.22e-12
+C1 CONTROL tetragonal (c-axis x1.7)   diag = [0.044993 0.044993 0.112442]  max|S - (trS/3) 1|/|trS/3| = 6.66e-01
+C1 => any cubic-covariant sector's one-point stress is (rho, p) in the site frame: split -V g + W h exists; (S) takes V's
+     ground-state part (if the sector is in H), (d-i) takes W.  [proved by O_h: Sym^2(T1u) = A1g + Eg + T2g; checked]
+
+=== C2: virial per mode (ground state of a harmonic mode, frequency w) ===
+C2 <kin> = hbar*omega/4  <pot> = hbar*omega/4  equal: True  -> 2<kin> (Isaacson-type <qdot^2>) = <H> = hbar*omega/2
+
+=== A1: Lorentz-invariant symmetric tensor ===
+A1 invariant T^{mu nu} = [[T00, 0, 0, 0], [0, -T00, 0, 0], [0, 0, -T00, 0], [0, 0, 0, -T00]]
+A1 => T^{mu nu} = c eta^{mu nu}: rho = -c... check T + T00*eta == 0: True  -> W = rho + p = 0 for a Poincare-invariant vacuum (set A matter).
+
+=== A2 / A3: set-A vacuum-sourced and record-noise field energies (units of rho_Lambda) ===
+l = 4.0e-10 m:  A2 (l_P/l)^2 hbar c/l^4 =  3.8e-30   A3 |u1| strict =  8.6e+18   |u1| tau_c ceiling =  2.3e+12
+l = 3.0e-08 m:  A2 (l_P/l)^2 hbar c/l^4 =  2.1e-41   A3 |u1| strict =  2.7e+11   |u1| tau_c ceiling =  5.5e+06
+l = 5.0e-08 m:  A2 (l_P/l)^2 hbar c/l^4 =  1.0e-42   A3 |u1| strict =  3.5e+10   |u1| tau_c ceiling =  1.2e+06
+l = 2.5e-07 m:  A2 (l_P/l)^2 hbar c/l^4 =  6.4e-47   A3 |u1| strict =  5.6e+07   |u1| tau_c ceiling =  9.4e+03
+l = 1.0e-06 m:  A2 (l_P/l)^2 hbar c/l^4 =  1.6e-50   A3 |u1| strict =  2.2e+05   |u1| tau_c ceiling =  1.5e+02
+l = 5.0e-06 m:  A2 (l_P/l)^2 hbar c/l^4 =  1.0e-54   A3 |u1| strict =  3.5e+02   |u1| tau_c ceiling =  1.2e+00
+A3 reproduces R15-2's 1.2x at 5e-6 m and ~1e12x at 4e-10 m (tau_c ceiling) [C5_R15-2_report.md:26; vR15-2:17].
+
+=== A4: what a scalar subtraction can remove ===
+A4 residual (rho_n - C, p_n + C) vanishes iff C = rho_n and p_n = -rho_n: {C: rho_n, p_n: -rho_n}
+A4 TT noise p = rho/3 -> W_n = 4 rho_n/3 left over; S/V static field stress p = u/3 (R16-14:241, suggested) -> W_n = 4u/3.
+   E1 TT noise grows with age (eps ln t, R11-5/R13-6) -> not a constant at all.  (S) cannot subtract either.
+
+=== A5: static filter defect on the O(G^2) source outside a body ===
+A5 (l^2/2) lap(r^-4) / r^-4 = 6*ell**2/r**2
+A5 l = 5e-6 m at R_sun: 3.1e-28
+A5 l = 5e-6 m at Mercury orbit: 4.5e-32
+A5 l = 5e-6 m at 1 AU: 6.7e-33
+A5 dynamic part 6(tau_c w/R)^2 = 4.2e-29 on the U^2 term (R16-14 out:104; vR16-14 item 4) - not recomputed.
+
+=== A6: under N, a non-diluting noise energy in expansion ===
+A6 Bianchi under N needs d(rho_n)/dt + 3H(rho_n + p_n) = (injection in tau).  For constant rho_n, p_n = rho_n/3:
+   injection = 4 H rho_n;  at rho_n = rho_Lambda: 4.8e-27 W/m^3 must come from a conserved partner (meters) inside tau.

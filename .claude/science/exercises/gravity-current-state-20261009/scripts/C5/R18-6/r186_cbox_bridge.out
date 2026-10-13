@@ -1,0 +1,27 @@
+=== B1: Lemma C without spherical symmetry (zero shift, diagonal spatial metric, all functions of t,x,y,z) ===
+B1 time:  N^2 div^t - (lam' + g theta_n), g := N(lam+P): 0
+B1 space: div^i - h^{ii} d_i[N(lam+P)]/N  (i = x,y,z): [0, 0, 0]
+   => D_i[N(lam+P)] = 0 so N(lam+P) = g(t) (slice-global); lam' = -g theta_n pointwise.
+
+=== B2: static star, arbitrary W(r), V(r), matter (rho_m, p_m) at rest; (S) + g = 0 ===
+B2 [G - kappa(T_m+T_v) - E] - [G - kappa(T_m - (V-e0) g)] (mixed comps), should be 0: True
+B2 W appears in the reduced equations: False
+B2 H-m static Euler  minus  effective-fluid TOV Euler: 0
+B2 => exact GR (TOV) with rho_eff = rho_m + V - e0, p_eff = p_m - V + e0; the enthalpy W never enters (proved, all orders).
+
+=== B3: exterior, isotropic coordinates, PPN beta and gamma (Lambda-tilde = V_out - e0 = 0 under P93) ===
+B3 g00 to O(M^2): -2*M**2/R**2 + 2*M/R - 1  -> beta = 1
+B3 gij to O(M):   2*M/R + 1  -> gamma = 1
+B3 isotropic Schwarzschild Ricci = 0 (so it solves the reduced exterior equations with V_out = e0): True
+
+=== B4: literal N (all ten equations with T_m + T_v; the vacuum's W h gravitates) ===
+B4 static Q_r = W' + W Phi' (R17-11 G2 at static N = e^Phi). Literal N needs Q_r = 0  =>  W e^Phi = const (Tolman-like).
+B4 fixed proper spacing => local vacuum the same in proper units => W = W0 const => Q_r = W0 Phi'  != 0 in any well unless W0 = 0
+B4 expansion: energy leg -n.Q = W theta_n (R17-11 G2)  != 0 unless W = 0.  So literal N  AND  (d-i) with W != 0 cannot hold;
+   the joint bridge must read N on the gravitating stress T_m - (V - e0) g (N_red). [proved, elementary]
+
+=== B5/B6: inheritance of g = 0, and the size of the static-slice alternative ===
+B5 From B1: N(lam+P) = g(t) on each slice; (S) lam' = 0 => g(t) theta_n(x) = 0 for all x; theta_n != 0 somewhere => g(t) = 0 on the whole slice,
+   including static (theta_n = 0) regions on that slice. [proved]
+B6 |g0| = 0.05 H0^2: (g0/c^2) r^2 at 1 AU = 6.42e-32 (relative metric term; beta-type piece ~ that x U ~ 6.4e-40)
+B6 |g0| = 1.0 H0^2: (g0/c^2) r^2 at 1 AU = 1.28e-30 (relative metric term; beta-type piece ~ that x U ~ 1.3e-38)

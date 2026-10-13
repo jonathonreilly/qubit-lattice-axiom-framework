@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-13T03:51:06.001154+00:00",
+  "original_sha256": "2b13996fe19af593273c29f169253c1f8efaaa42d2b7b2f0071cb8459f025bea",
+  "revised_sha256": "cf564d0735a557c5d45cd36e6268af4b35dfbabbecde6b4d017e0ce4a23da080",
+  "changes": [
+    "R1: constraint and spatial trace do not check u acceleration.",
+    "R2: Eq16 restricted to delta sigma=0; add exact resonant dust particular solution.",
+    "Clarify log-density coordinate and fixed Einstein N comparison."
+  ],
+  "equations_and_numerical_source_changed": false,
+  "original_preserved": true,
+  "numerical_rerun_required": false
+}

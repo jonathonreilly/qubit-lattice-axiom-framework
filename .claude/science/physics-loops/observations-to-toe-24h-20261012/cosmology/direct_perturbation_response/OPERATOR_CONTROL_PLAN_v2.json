@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-13T03:56:06.210605+00:00",
+  "trigger": "Independent v1 numerical reviewer found dropped u-chi coupling passes all648 original checks. Original values/equations not shown wrong; control coverage is insufficient.",
+  "v1_source_sha256": "cd20f3f7361fcc1c2fb0b01ee15636620f102b8e6f16d2a0c9f916141da23519",
+  "v2_source_sha256": "7d2b36b69df9b4b869a58561e54fb87c9835234b088a2a33fb31d812c57daee5",
+  "new_control": "Full seven-by-seven matrix from proper-time covariant equations; potential Hessian independently complex-step differentiated at exact analytic background. No reliance on C or spatial trace.",
+  "fixtures": "Original two weak couplings plus preexisting .01 mathematical control; both original eta; five original sample sites; four original q0.30 Hessian and120 full matrix comparisons.",
+  "tolerance": "Hessian normalized error<2e-12; full operator entrywise error/max(1,abs(expected))<2e-11, declared before execution.",
+  "changes": "New check function and final family only; execution identity now names actual versioned source. Original prediction functions/checks/tolerances untouched.",
+  "first_v2_execution": "pending",
+  "empirical_data_changed": false,
+  "original_source_preserved": true
+}

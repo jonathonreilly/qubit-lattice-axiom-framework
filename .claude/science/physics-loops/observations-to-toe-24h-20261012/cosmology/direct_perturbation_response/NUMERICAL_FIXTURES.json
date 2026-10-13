@@ -1,0 +1,123 @@
+{
+  "a_weak": [
+    1e-06,
+    0.00040016006402561027
+  ],
+  "a_extra_math": 0.01,
+  "m": 0.3,
+  "eta_original": 0,
+  "eta_repaired": 3,
+  "linear_eta": [
+    0,
+    3
+  ],
+  "linear_q0": [
+    0.3,
+    3,
+    30,
+    300
+  ],
+  "linear_interval_N": [
+    -2.3978952727983707,
+    0.0
+  ],
+  "linear_sites_N": [
+    -2.3978952727983707,
+    -1.3862943611198906,
+    -0.6931471805599453,
+    -0.27763173659827955,
+    0.0
+  ],
+  "linear_seeds": "Six constraint-consistent basis columns in (d,T,fu,fchi,wu,wchi), field columns normalized by sqrt(a). They are response fixtures, not primordial modes.",
+  "linear_physical_amplitude_if_needed": 1e-06,
+  "linear_max_steps": [
+    0.025,
+    0.0125
+  ],
+  "linear_rtol": [
+    2e-10,
+    2e-11
+  ],
+  "linear_atol": [
+    2e-12,
+    2e-13
+  ],
+  "linear_refinement_rtol": 3e-07,
+  "linear_refinement_atol": 2e-08,
+  "constraint_relative_tolerance": 2e-08,
+  "high_k_q0": [
+    30,
+    100,
+    300,
+    1000
+  ],
+  "high_k_a": [
+    0,
+    1e-06,
+    0.00040016006402561027,
+    0.01
+  ],
+  "high_k_eta": 3,
+  "high_k_initial": "d=1,T=-fg+3(fg-1)Plead,fu=-sqrt(a)D/Q,fchi=0,wu=(fg-1)fu,wchi=0; P set by exact energy constraint. a=0 is a separate GR dust control with unexcited fields.",
+  "high_k_endpoint_error_bound_coefficient": 20,
+  "high_k_comparisons": [
+    "mu",
+    "Sigma",
+    "gamma"
+  ],
+  "high_k_ratio_error_note": "Check absolute endpoint coefficient error <=20/q0^2; rows also report errors. Not a general finite-k theorem or primordial amplitude prediction.",
+  "growth_initial_N": -6.90875477931522,
+  "growth_ode_initial": [
+    1.0,
+    1.0
+  ],
+  "growth_initial_note": "Dg amplitude normalized arbitrarily to1; derivative1 at z=1000 approximates regular matter mode. Independently compare integral growing solution; no radiation included.",
+  "growth_compare_tolerance": 2e-08,
+  "homogeneous_interval_N": [
+    -0.9162907318741551,
+    6.0
+  ],
+  "homogeneous_sites_N": [
+    -0.9162907318741551,
+    0.0,
+    1.0,
+    2.0,
+    4.0,
+    6.0
+  ],
+  "homogeneous_a": [
+    1e-06,
+    0.00040016006402561027
+  ],
+  "homogeneous_eta": [
+    0,
+    3
+  ],
+  "homogeneous_eps": [
+    0.001,
+    0.0003
+  ],
+  "homogeneous_seeds": "All5 axes; field displacements sqrt(a)*eps, velocity displacements sqrt(a)*Hi*eps, log(sigma) displacement eps; plus and minus each.",
+  "homogeneous_max_steps": [
+    0.03,
+    0.015
+  ],
+  "homogeneous_rtol": [
+    3e-10,
+    3e-11
+  ],
+  "homogeneous_atol": [
+    3e-12,
+    3e-13
+  ],
+  "homogeneous_variation_scaled_error_tolerance": 0.005,
+  "homogeneous_refinement_scaled_tolerance": 3e-06,
+  "H0_per_second_illustrative": 2.3e-18,
+  "seconds_per_year_supplied": 31557600,
+  "EG_z": 0.32,
+  "EG_summary": 0.392,
+  "EG_reported_uncertainty": 0.065,
+  "EG_additional_lensing_calibration_fraction": 0.05,
+  "EG_source": "arXiv1003.2185 submitted version, primary PDF page6; exposed before fixture freeze. No source catalogue or supplemental correction rerun.",
+  "EG_data_role": "Exposed published-summary diagnostic under stated estimator bridge. No fitted coupling, matter fraction or independent holdout."
+}

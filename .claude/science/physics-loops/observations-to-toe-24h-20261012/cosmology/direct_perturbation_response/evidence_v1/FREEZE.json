@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-13T03:31:05.066384+00:00",
+  "files": {
+    "PROTOCOL.md": "fdd9621b04c984cc6f1d79760dc4ae5577aa4625110076a49703bb1e58b4af5b",
+    "DIRECT_PERTURBATION_RESPONSE.md": "2b13996fe19af593273c29f169253c1f8efaaa42d2b7b2f0071cb8459f025bea",
+    "NUMERICAL_FIXTURES.json": "0d69fbbef11a6af306e9bd131528efe803339e7efd332e40b598239d735c2de5",
+    "check_perturbation_response.py": "cd20f3f7361fcc1c2fb0b01ee15636620f102b8e6f16d2a0c9f916141da23519"
+  },
+  "scope": "First full integration execution. Prior symbolic analytical scratch checks separately preserved."
+}

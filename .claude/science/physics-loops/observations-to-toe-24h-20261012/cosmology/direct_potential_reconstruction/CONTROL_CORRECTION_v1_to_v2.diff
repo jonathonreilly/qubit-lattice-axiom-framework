@@ -1,0 +1,17 @@
+--- check_potential_reconstruction.py
++++ check_potential_reconstruction_v2.py
+@@ -249,6 +249,14 @@
+                 check(f"Yukawa_force_bound_{a}_{choice}_{label}_{scale}",
+                       deficit >= 0 and deficit <= upper * (1 + 2e-12) + 1e-300,
+                       actual_mass_correction=deficit, bound=upper)
++                if scale > 0:
++                    # Positive-residue integral bound, checked relatively even at tiny radii.
++                    lower_ratio = math.exp(-float(np.max(xs)))
++                    ratio = deficit / upper
++                    check(f"Yukawa_relative_positive_lower_bound_{a}_{choice}_{label}_{scale}",
++                          deficit > 0 and ratio >= lower_ratio * (1 - 2e-12)
++                          and ratio <= 1 + 2e-12,
++                          deficit_over_upper=ratio, lower_ratio=lower_ratio)
+                 if scale >= 1e-3:
+                     closed = float(weights @ (1 - (1 + xs) * np.exp(-xs))) / (1 + a)
+                     check(f"Yukawa_integral_identity_{a}_{choice}_{scale}", abs(closed - deficit) < 1e-15)

@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-13T03:23:52.590007+00:00",
+  "candidate_constraint": "D*d + 3*D*t/q + P*(q - x**2) + 3*c*x/2 + wc*x",
+  "propagation_coefficient": "(2*s**2*x**2 - 3*s**2 + 2*x**2)/s**2",
+  "residual": "0",
+  "purpose": "Pre-execution symbolic derivation diagnostic; not final runner."
+}

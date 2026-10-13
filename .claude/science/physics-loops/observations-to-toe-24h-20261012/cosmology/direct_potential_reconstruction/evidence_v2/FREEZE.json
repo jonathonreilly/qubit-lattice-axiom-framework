@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-13T03:34:39.592379+00:00",
+  "files": {
+    "PROTOCOL.md": "323679260e8f112d479ff79808fb9ca2f420ab620853bb1fdf59b1b51936bbdf",
+    "DIRECT_POTENTIAL_RECONSTRUCTION.md": "9954b28362e3e4811e8c697f108e07885fff83bc35af1a7b562782a77e548b09",
+    "NUMERICAL_FIXTURES.json": "a94c047d2ed78dca7826dac1e52da7f420efdd34d12c9e36c218beb9195b9a20",
+    "check_potential_reconstruction_v2.py": "232b64334d6ff1bda87c2b562b879c3d585a03be2f302f3b49ac3295f4fa8335",
+    "CONTROL_CORRECTION_PLAN_v2.json": "586ee1f43ddf1bdb65c31340049fdc0d16da528d2724028aaf42d0424d26d76e"
+  },
+  "scope": "Narrow added-assertion correction; v1 inputs/results remain unchanged."
+}

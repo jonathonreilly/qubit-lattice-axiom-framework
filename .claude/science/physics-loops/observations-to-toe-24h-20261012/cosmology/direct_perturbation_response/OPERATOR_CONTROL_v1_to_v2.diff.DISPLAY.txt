@@ -1,0 +1,75 @@
+--- check_perturbation_response.py
++++ check_perturbation_response_v2.py
+@@ -275,12 +275,70 @@
+                 limitations='No raw estimator/covariance or revised geometry/nonlinear corrections. Scale-independent slowly varying matter mode and same-tracer bridges supplied.')
+
+
++def covariant_operator_controls():
++    """Check every linear row from proper-time variation and differentiated V."""
++    rows = []
++    basis = np.eye(7)
++    alpha_direction = np.array([1., 0.])
++    for a in FIX['a_weak'] + [0.01]:
++        alpha = np.sqrt(a) * alpha_direction
++        for eta in FIX['linear_eta']:
++            for N in FIX['linear_sites_N']:
++                state = homogeneous_initial(N, a)
++                phi, velocity, sigma = state[:2], state[2:4], np.exp(state[4])
++                V, gradient, explicit_hessian = potential(phi, a, eta)
++                # Differentiate the full potential gradient; do not use the
++                # simplified on-trajectory entries in linear_rhs.
++                hessian = np.column_stack([
++                    np.imag(potential(phi.astype(complex) + 1e-27j * np.eye(2)[j],
++                                      a, eta)[1]) / 1e-27
++                    for j in range(2)])
++                Hess_error = np.max(np.abs(hessian-explicit_hessian)
++                                    / np.maximum(1., np.abs(hessian)))
++                check(f'covariant_potential_Hessian_{a}_{eta}_{N}',
++                      Hess_error < 2e-12, max_normalized_error=float(Hess_error))
++                H = np.sqrt((2*sigma + velocity@velocity + 2*V)/3)
++                h = -(sigma + velocity@velocity)/(H*H)
++                for q0 in FIX['linear_q0']:
++                    K2 = (q0/np.exp(N))**2
++                    expected = np.empty((7, 7))
++                    for j in range(7):
++                        P, d, T = basis[:3, j]
++                        field = basis[3:5, j]
++                        field_dot = H*basis[5:7, j]
++                        theta = H*T
++                        P_dot = -H*P + sigma*theta/K2 + velocity@field
++                        theta_dot = -2*H*theta + K2*(P+alpha@field)
++                        field_ddot = (-3*H*field_dot - K2*field - hessian@field
++                                      - sigma*alpha*(alpha@field)
++                                      + 4*velocity*P_dot
++                                      - 2*(gradient+alpha*sigma)*P
++                                      - alpha*sigma*d)
++                        expected[:, j] = np.r_[
++                            P_dot/H, -T+3*P_dot/H,
++                            theta_dot/(H*H)-h*T, field_dot/H,
++                            field_ddot/(H*H)-h*field_dot/H]
++                    actual = linear_rhs(N, basis, a, eta, q0)
++                    errors = np.abs(actual-expected)/np.maximum(1., np.abs(expected))
++                    maximum = float(np.max(errors))
++                    check(f'covariant_full_linear_operator_{a}_{eta}_{N}_{q0}',
++                          maximum < 2e-11, maximum_normalized_error=maximum,
++                          scalar_u_chi_entry=float(actual[5, 4]),
++                          independently_differentiated_entry=float(expected[5, 4]))
++                    rows.append(dict(a=a, eta=eta, N=N, q0=q0,
++                                     maximum_normalized_error=maximum,
++                                     expected=expected.tolist(), actual=actual.tolist()))
++    return rows
++
++
++
+ def main():
+     ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);args=ap.parse_args()
+     out=dict(author='direct parent',versions=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__,sympy=sy.__version__),
+-             source_sha256={n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in ['PROTOCOL.md','DIRECT_PERTURBATION_RESPONSE.md','NUMERICAL_FIXTURES.json','check_perturbation_response.py']})
++             source_sha256={n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in ['PROTOCOL.md','DIRECT_PERTURBATION_RESPONSE.md','NUMERICAL_FIXTURES.json',Path(__file__).name]})
+     for name,fn in [('symbolic',symbolic_controls),('growth',growth_controls),('linear_basis',linear_basis_controls),
+-                    ('slow_matter',slow_matter_controls),('homogeneous',homogeneous_controls),('de_sitter',de_sitter_controls),('EG_summary',empirical_summary)]:
++                    ('slow_matter',slow_matter_controls),('homogeneous',homogeneous_controls),('de_sitter',de_sitter_controls),('EG_summary',empirical_summary),
++                    ('covariant_operator',covariant_operator_controls)]:
+         print('START',name,flush=True);out[name]=fn();print('DONE',name,flush=True)
+     out['checks']=CHECKS;out['checks_count']=len(CHECKS);out['all_passed']=all(c['passed'] for c in CHECKS)
+     Path(args.output).write_text(json.dumps(out,indent=2,allow_nan=False)+'\n')

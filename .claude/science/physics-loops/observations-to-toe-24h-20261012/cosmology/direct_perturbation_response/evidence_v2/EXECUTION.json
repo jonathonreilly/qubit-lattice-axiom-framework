@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-13T03:58:38.924742+00:00",
+  "completed_at": "2026-10-13T03:59:02.219973+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_perturbation_response/check_perturbation_response_v2.py",
+    "--output",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_perturbation_response/evidence_v2/RESULTS.json"
+  ],
+  "pid": 35914,
+  "exit_code": 0,
+  "source_sha256": "7d2b36b69df9b4b869a58561e54fb87c9835234b088a2a33fb31d812c57daee5"
+}

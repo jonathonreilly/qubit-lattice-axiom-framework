@@ -1,0 +1,14 @@
+{
+  "identical_science_sections": [
+    "symbolic",
+    "single_field_endpoint",
+    "potential_grid",
+    "two_field_evolution",
+    "local_quadratic_force",
+    "historical_drift"
+  ],
+  "v1_checks": 1494,
+  "v2_checks": 1530,
+  "new_positive_relative_checks": 36,
+  "all_existing_checks_preserved": true
+}

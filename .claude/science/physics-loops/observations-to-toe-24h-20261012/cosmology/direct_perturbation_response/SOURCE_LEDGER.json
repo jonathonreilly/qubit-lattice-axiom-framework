@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-10-13T03:33:26.861319+00:00",
+  "author": "direct parent",
+  "primary_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_perturbations/Ma_Bertschinger_1995.pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "bytes": 710665,
+      "role": "Newtonian metric and uncoupled Einstein/fluid conventions.",
+      "read_scope": "PDF page7 metric and pages10-12 Einstein/fluid equations, web extracted text; not full paper."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_perturbations/Amendola_1999.pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9906073v2",
+      "sha256": "a8dab6aa76cd1c29759540e34503b93be97ebefc5014b2591b83d10240dbd42a",
+      "bytes": 517504,
+      "role": "Context only, different coupled model and signs. No parameter bounds, observational conclusions or growth formula imported.",
+      "read_scope": "SectionIV pages6-8 extracted equations and assumptions; not full paper."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_perturbations/Reyes_et_al_2010.pdf",
+      "url": "https://arxiv.org/pdf/1003.2185",
+      "sha256": "3c0f7886c8554ca2711e86b66593281f42f32aae575e26cfca48d5f69c0a5e6a",
+      "bytes": 711590,
+      "role": "Exposed historical projected lensing/velocity summary. Not a current precision claim or blind test.",
+      "read_scope": "Submitted arXiv PDF pages1-8 read; measurements/estimator pages3-6. Accepted-paper supplement and original catalogue were not read or rerun."
+    }
+  ],
+  "operational_failures": [
+    "System Python urllib default CA store raised CERTIFICATE_VERIFY_FAILED unable to get local issuer certificate. No bytes downloaded; switched to system curl with normal TLS verification.",
+    "Reyes PDF extraction warned of invalid pointing objects but returned13 pages; relevant estimator/summary text was readable. No source bytes changed.",
+    "Publisher HTML for Amendola returned an internal web tool error; used primary arXiv PDF instead."
+  ],
+  "candidate_continuity": "Same personally constructed potential and background; no source/parameter revision to match E_G.",
+  "new_bridges": [
+    "Einstein proper particle-number contrast explicitly distinct from rest-mass and physical density.",
+    "Linear ideal dust plus canonical scalar perturbations, no anisotropic stress or radiation.",
+    "High-k slowly varying matter mode without independently large free scalar waves.",
+    "Same-tracer linear bias/velocity and lensing projection bridge for E_G; original fiducial-geometry, calibration and simulation corrections not recomputed.",
+    "Finite homogeneous initial perturbations are supplied fixtures, not inferred from a prior or data."
+  ],
+  "data_roles": {
+    "model_development": "Historical E_G summary and comparison interpretation exposed before current numerical freeze.",
+    "calibration": "None to E_G; m=.3 and both weak couplings retained from earlier blocks.",
+    "independent_empirical_test": "None; published-summary consistency only.",
+    "numerical_validation": "Frozen linear basis/refinement, full nonlinear homogeneous/variational comparison and symbolic constraints. Separate a=.01 math control and GR comparison."
+  },
+  "Reyes_summary": {
+    "EG": 0.392,
+    "reported_uncertainty": 0.065,
+    "effective_z": 0.32,
+    "averaged_projected_scale_h_inverse_Mpc": [
+      10,
+      50
+    ],
+    "additional_lensing_calibration_fraction": 0.05,
+    "original_comparison_matter_fraction": 0.2565,
+    "candidate_matter_fraction": 0.3,
+    "fiducial_geometry_and_corrections_caveat": "A fixed-matter comparison to the compressed value does not rerun the original angular/redshift conversions, HOD simulation corrections or full covariance."
+  },
+  "scope": "All full numerical families first run passed648controls. Do not promote positive principal terms or finite successful integrations to a global stability or observational acceptance theorem."
+}

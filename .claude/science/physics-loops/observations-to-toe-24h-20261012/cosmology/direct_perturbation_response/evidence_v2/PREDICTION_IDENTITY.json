@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-13T04:00:28.124455+00:00",
+  "original_result_sha256": "5b3d0d04c677b7074e0b0b51d8ce1427fc34e3b9fcd5e7506ae4cd94a37e00cd",
+  "v2_result_sha256": "3f06cbf0f03f14b4f9d30487d8d5c0b1934e5ed3e6aac8181384fdee5e2f410e",
+  "unchanged_science_sections": [
+    "symbolic",
+    "growth",
+    "linear_basis",
+    "slow_matter",
+    "homogeneous",
+    "de_sitter",
+    "EG_summary"
+  ],
+  "all_648_original_check_records_byte_value_identical": true,
+  "new_checks": 150,
+  "new_rows": 120,
+  "all_798_pass": true,
+  "max_operator_normalized_error": 1.107665544182402e-15
+}

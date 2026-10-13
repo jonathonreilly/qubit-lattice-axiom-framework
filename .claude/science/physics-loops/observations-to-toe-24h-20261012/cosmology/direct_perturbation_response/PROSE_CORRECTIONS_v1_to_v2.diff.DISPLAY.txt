@@ -1,0 +1,51 @@
+--- DIRECT_PERTURBATION_RESPONSE.md
++++ DIRECT_PERTURBATION_RESPONSE_v2.md
+@@ -87,9 +87,12 @@
+
+ Thus initially consistent data stay on the constraint surface; unscaled
+ H^2 C decays as R^-3 even for an off-constraint numerical control. This is a
+-direct algebraic test of all source and frame factors. It does not manufacture
+-an extra dynamical degree of freedom. The spatial trace equation is a second
+-useful check:
++useful algebraic cross-check of the coupled evolution. It does not test every
++u-sector coefficient: C contains neither f_u nor w_u, so changing the u
++acceleration leaves this identity unchanged. The direct covariant scalar
++variation is needed to check that equation. This identity does not manufacture
++an extra dynamical degree of freedom. The spatial trace equation is another
++useful consistency check, also insensitive to a change of the u acceleration:
+
+     P''+(4+h)P'+(3+2h)P
+        =x w_chi-x^2P+(3/2)x f_chi+D sqrt(a) f_u.   (10)
+@@ -159,10 +162,21 @@
+     H_*^2=2V_Lambda/3.                             (15)
+
+ At its u=0 member, the Hessian eigenvalues are 0 and (9/4)H_*^2. Linear
+-homogeneous scalar perturbations at this limiting vacuum satisfy
++homogeneous scalar perturbations restricted to delta sigma=0 at this limiting
++vacuum satisfy
+
+     delta u=C1+C2 exp(-3H_*t),
+     delta chi=(C3+C4 t)exp(-3H_*t/2).              (16)
++
++If dust perturbations are admitted at the exact vacuum boundary,
++delta sigma=delta sigma_0 exp(-3H_*t) additionally drives the u equation.
++Its particular solution adds
++
++    +sqrt(a)delta sigma_0 t exp(-3H_*t)/(3H_*)
++
++to delta u. Direct substitution into
++ddot(delta u)+3H_*dot(delta u)=-sqrt(a)delta sigma verifies the sign.
++This decaying resonant term leaves the neutral displacement intact.
+
+ There is a neutral u displacement; the isolated point u=0 is not an
+ asymptotically attracting equilibrium among the full vacuum family. This
+@@ -193,6 +207,9 @@
+ without silently freezing H or the coupled field. Any numeric gain or drift
+ is tied to its chosen interval, normalization and perturbation fixture; it is
+ not a prior probability, full nonlinear stability theorem or empirical bound.
++The logarithmic density coordinate covers sigma>0 and does not include the
++exact vacuum boundary. The finite-time histories are compared at fixed
++Einstein N, not automatically at equal physical redshift N_J=N+sqrt(a)u.
+
+ The principal scalar kinetic and gradient matrices remain positive identity
+ matrices and tensor waves retain the Einstein light cone. This rules out a

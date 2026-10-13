@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-13T03:34:39.591399+00:00",
+  "reason": "Independent numerical review found that substituting zero in20 positive force rows passed all1494 v1 checks, although all current nonzero values reproduce independently.",
+  "parent_read": "Complete POTENTIAL_NUMERICAL_REVIEW.md and INDEPENDENT_NUMERICAL_RECIPE.md read before authoring this correction.",
+  "v1_source_sha256": "7500db2bc416cce20ea945bfd827b3f45eaf8de2a4d5ea9407fe9e2b1eecac0b",
+  "v2_source_sha256": "232b64334d6ff1bda87c2b562b879c3d585a03be2f302f3b49ac3295f4fa8335",
+  "correction": "Only add relative positive lower-bound checks from exp(-max(mu*r))*upper <= deficit <= upper. No computed predictions, fixtures, existing assertions or tolerances altered.",
+  "new_check_tolerance": "Relative2e-12, fixed before v2 execution. No absolute floor on positive deficits.",
+  "required_sensitivity_check": "Same small-positive-radius zero-deficit mutant must fail. Reviewer will check the affected source separately.",
+  "originals_unchanged": true
+}

@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-10-13T03:33:26.870261+00:00",
+  "files": {
+    "NUMERICAL_FIXTURES.json": "0d69fbbef11a6af306e9bd131528efe803339e7efd332e40b598239d735c2de5",
+    "PRE_EXECUTION_PLAN_v1.json": "05d12794985954a8a781ef0a3bd25a3e8586c73abfc0dd3ef85a57a259dfa5d6",
+    "CLAIM_STATUS_CERTIFICATE.md": "688675e9cdfd7d34746fe932b41df600134f617321009301d92f3d8f6655567d",
+    "SOURCE_LEDGER.json": "5b6d4c7b89d92e36810788b8ce6bfa5013748af795ed8cacf082c4d81d5af689",
+    "TRACE_GATE.md": "bd7fbc36ce941b0d39bcc385eb1456c7d162707e8a81c6fa9e1fd2291b4b6be7",
+    "DIRECT_PERTURBATION_RESPONSE.md": "2b13996fe19af593273c29f169253c1f8efaaa42d2b7b2f0071cb8459f025bea",
+    "SCRATCH_CONSTRAINT_v1.json": "6149edf9402101d67a5250cd7b9fb02cb0acd159f6c7d546185cad20f50908b3",
+    "RESULTS_AND_SCOPE.md": "3385211362e626eadf187a5a86e9301e26d95ba5084bef1e2417f7ebee8d6519",
+    "SCRATCH_TRACE_v1.json": "1d16fdeac605b953e04abc298a8a41a2aecc4ba9d7640ddf30ef59372b377c18",
+    "check_perturbation_response.py": "cd20f3f7361fcc1c2fb0b01ee15636620f102b8e6f16d2a0c9f916141da23519",
+    "PROTOCOL.md": "fdd9621b04c984cc6f1d79760dc4ae5577aa4625110076a49703bb1e58b4af5b",
+    "evidence_v1/stdout.txt": "4e4884dda165370ee590be5d433f6f89c89ed65ded419fd56badb690159582ee",
+    "evidence_v1/RESULTS.json": "5b3d0d04c677b7074e0b0b51d8ce1427fc34e3b9fcd5e7506ae4cd94a37e00cd",
+    "evidence_v1/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence_v1/EXECUTION.json": "ed5e1f20e6e4fac4436e596d7d4bf0c5693bdf6bd4df5d81755155a3ce91e436",
+    "evidence_v1/FREEZE.json": "a3041b467852c976ab855a0e30609fe5ece2b08806c490a860dd26ff9ab0741b",
+    "evidence_v1/source_snapshot/NUMERICAL_FIXTURES.json": "0d69fbbef11a6af306e9bd131528efe803339e7efd332e40b598239d735c2de5",
+    "evidence_v1/source_snapshot/DIRECT_PERTURBATION_RESPONSE.md": "2b13996fe19af593273c29f169253c1f8efaaa42d2b7b2f0071cb8459f025bea",
+    "evidence_v1/source_snapshot/check_perturbation_response.py": "cd20f3f7361fcc1c2fb0b01ee15636620f102b8e6f16d2a0c9f916141da23519",
+    "evidence_v1/source_snapshot/PROTOCOL.md": "fdd9621b04c984cc6f1d79760dc4ae5577aa4625110076a49703bb1e58b4af5b"
+  },
+  "scope": "Completed direct-parent source and first execution for focused numerical check."
+}

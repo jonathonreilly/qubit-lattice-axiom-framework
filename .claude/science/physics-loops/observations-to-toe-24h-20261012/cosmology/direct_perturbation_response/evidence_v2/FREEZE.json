@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-13T03:58:38.924105+00:00",
+  "sources": {
+    "PROTOCOL.md": "fdd9621b04c984cc6f1d79760dc4ae5577aa4625110076a49703bb1e58b4af5b",
+    "DIRECT_PERTURBATION_RESPONSE.md": "2b13996fe19af593273c29f169253c1f8efaaa42d2b7b2f0071cb8459f025bea",
+    "DIRECT_PERTURBATION_RESPONSE_v2.md": "cf564d0735a557c5d45cd36e6268af4b35dfbabbecde6b4d017e0ce4a23da080",
+    "NUMERICAL_FIXTURES.json": "0d69fbbef11a6af306e9bd131528efe803339e7efd332e40b598239d735c2de5",
+    "check_perturbation_response_v2.py": "7d2b36b69df9b4b869a58561e54fb87c9835234b088a2a33fb31d812c57daee5",
+    "OPERATOR_CONTROL_PLAN_v2.json": "959b296d4f0ed818415074e13ac37ed30403f431b35dbd5baf001dfd15f10dd3"
+  },
+  "all_existing_numerical_formulas_fixtures_tolerances_unchanged": true
+}

@@ -1,0 +1,11 @@
+{
+  "base": "af2e44428a10e59cf5eb7130df4265d2949db8df",
+  "branch": "physics-loop/toe-multitime-kinetic-energy-20261013",
+  "branch_created_by_source_preparer": false,
+  "initial_state_ancestry_required": false,
+  "parent_number": 9520,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520",
+  "publication_bound": true,
+  "runtime_requirement": "Exact clean planned child at actual parent head; separate root acceptance required.",
+  "source_generation_current_branch_requirement": false
+}

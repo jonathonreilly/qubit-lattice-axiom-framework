@@ -1,0 +1,50 @@
+# Root publication-source review: finite multi-time vacuum energy
+
+Accepted for source integration at cf112049, canonical1214/b782e481,
+three unchanged accepted376/611/10-line slices. The underlying full root398,
+ind667 and comparison294/evidence208 were separately fully read and accepted;
+source assembly53f2bfac was accepted2df2022f. This review changes no mathematics.
+The actual regular parent9520/af2e4442 is bound, with five canonical owners
+and six exact contained cores. No initial-state or threshold extension is
+silently added. General/chirp, independently checked constant-carrier and
+zero-boundary scopes remain distinct. Common H0/vacuum/Lueders instrument
+and epsilon=o(h) transfer bounded histories; unmeasured means retain the
+separate epsilon=o(h^2) weighted premises. Measured means are not claimed.
+
+Read coverage: complete four new wrappers55ac64/f528cd; twelve-section
+HANDOFF and CONFORMANCE f243d0; complete assumptions, review history, trace,
+status, N1--N8 and scoped ledger caea92; remaining new packet prose, full
+parent/core maps and proposed PR text c8a37d. The complete current182-line
+identity template949e18 and193-line source checker dd5d5e were read.
+The current745-line runtime driver is fully covered by the previous full
+742-line bef3f992 read and the complete151-line exact adaptation diff a2c5d4.
+The combined94-line program is fully covered by its prior complete read
+plus the entire11-line folder-name-only diff in a2c5d4. This records actual
+unchanged-code reuse, not a new full reread of every unchanged line.
+Nine complete generator/runtime diffs are byte-reconstructed by the source
+checker; semantic full new generator reads are the author's attributed
+records, not claimed as root execution or independent science checks.
+
+Root ran the read-only source check with require-freeze:0.461234666s exit0,
+empty stderr. It checks all588frozen members,402live aliases322objects,
+176accepted-sourcefiles181originalaliases,7closures145rows,three unchanged
+cores,5parents6maps,383payload387stage and15links. The identity runner
+has zero mathematical predicates. Source indexes are mechanically checked;
+archive presence is not a fresh semantic read of historical arguments.
+
+The negative packet remains FAIL/partial-narrowing: three actual scoped
+countercontrols, no invented five-family count, N5nonexecution and bounded
+N8 history. Its publication copy removes one terminal blank only; original
+and exactdiff are archived. No broad whitespace exception or graph gate
+relaxation is introduced. The inherited chirp metadata failure and source
+AST/terminal-newline/path failures remain honestly recorded. The body label
+is now explicitly checked before graph work. Root branch creation receipts
+arrived after source freeze and remain separate execution evidence; their
+branch/base matches the frozen contract.
+
+Initial wrapper filename guesses and inventory reads failed without science
+mutation; exact remaining core introductions recovered in f528cd. No missing
+scientific coverage is inferred from those errors. Source-only acceptance
+allows root prepare, exact staging and verify, then a regular PR. Combined
+current-main validation, science merging and retained audit are not performed.
+No editable prompt files or physical axioms changed.

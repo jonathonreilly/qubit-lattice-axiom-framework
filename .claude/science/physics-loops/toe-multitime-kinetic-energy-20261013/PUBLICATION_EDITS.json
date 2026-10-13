@@ -1,0 +1,204 @@
+{
+  "additional_mathematical_body_edits": [],
+  "diff_convention": "LF-preserving difflib.diff_bytes(unified_diff); n=3; literal labels; no dates; complete raw bytes losslessly gzipped",
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_source_assembly/payload/docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "accepted_candidate_sha256": "56c5ebf8c83741b48cf2476d40d8331b3d047d45466064e623fe9525222904ae",
+      "context_lines": 3,
+      "diff": "diffs/accepted_assembly_to_publication.diff.gz",
+      "diff_bytes": 8074,
+      "diff_lines": 134,
+      "diff_sha256": "df2a5f453c7e10681c76c636a2e3fe680126361e636ffe0679b74cff83d72cd3",
+      "diff_stored_sha256": "b4e6a383bf124b1c3d07317f41201b04bdd6424cdca9e975b56d7c41382327f6",
+      "fromfile": "accepted/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "note": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 8551,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 141,
+          "lines": 141,
+          "sha256": "3d8e686cc76716da0be9930391c73ea75a4734555433642cd55ff30ecba3d35c",
+          "text": "---\ntitle: \"Finite multi-time kinetic energy observations in the supplied CAR vacuum\"\nclaim_id: multitime_kinetic_energy_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_source_of_accepted_conditional_cores\nscientific_execution: none_in_publication_source_preparation\nrunner: scripts/multitime_kinetic_identity_2026_10_13.py\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: partially_closes\nconditional_surface_status: supplied massive free CAR vacuum; fixed finite ordered observations; explicit boundary and instrument conditions\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted conditional ordered-word and fixed finite-protocol theorems with distinct exact cores\nnext_trace_action: root source review and prepare/verify; independent retained audit remains separate\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nupstream_dependencies:\n  - chirped_kinetic_energy_bounded_theorem_note_2026-10-13\n  - modulated_kinetic_energy_bounded_theorem_note_2026-10-13\n  - general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13\n  - two_zero_kinetic_energy_bounded_theorem_note_2026-10-13\n  - kinetic_correlation_limits_bounded_theorem_note_2026-10-13\n---\n\n# Finite multi-time kinetic energy observations\n\nClaim type: bounded_theorem\n\nThis is a positive conditional theorem in the supplied massive free CAR\nvacuum model. It gives every fixed ordered word of bounded energy unitaries\nand the joint probabilities of a specified finite L\u00fcders energy-measurement\nprotocol. The two conclusions have different classical interpretations.\nThe canonical mathematical cores below are unchanged source slices.\n\n    target_claim_type: bounded_theorem\n    actual_current_surface_status: conditional-support\n    trace_class: upstream_support\n    reachability_to_target: partially_closes\n    audit_required_before_effective_retained: true\n    bare_retained_allowed: false\n\nOrdinary analytic acceptance is the exact multi-time root acceptance\n`d7211e292bee2d461b4c50d65f25b10cf8ccec83ca121c2844af430a9c959638`\nand its root review `57fd843917f99b2619ea03e4be7c40a3d8bf92a12e642b10af4d6f6bace382dc`.\nThis assembly supplies no new independent derivation, retained audit,\nformal certificate, physical-model identification or empirical prediction.\nThe two derivations and later comparison share parent machinery and the\nselected model family. Their different overlap and squeeze arguments are\nidentified below; agent count is not evidence of model diversity.\n\nThe result uses fixed real compact smooth spatial slots, positive mass and\nvelocity, a fixed kinetic horizon, the free vacuum, and fixed finite lists\nof observation times, spectral parameters and bins. Real amplitude and\nfrequency profiles have the stated fixed supremum and total-variation\nbudgets; the frequency stays in a compact interval strictly above `2m`.\nFor constant frequency, the independently frozen proof below derives the\nfinite-word and lattice-bin theorem. For a chirped profile, composition uses\nthe separately accepted exact V2/850 parent estimates. That composition is\nsource-exposed use of accepted premises, not an independent new chirp check.\n\nWriting `M(du,de)=(pi/2)a(u)^2 r(varpi(u)) du delta_varpi(u)(de)`, the\nauxiliary bosonic Weyl representation gives the complete ordered-word\nformula in root T14\u2013T17. Chronological words have the marked compound-Poisson\nincrement characteristic function T18. General orders can have different\nlimits, as the explicit root late/early commutator and independent\nthree-time example show. The bosonic representation is a representation of\nthese limiting moments; the microscopic field statistics remain CAR.\n\nFor the actual specified finite L\u00fcders protocol, root T19\u2013T21 prove joint\nbin probabilities by bounded spectral calculus. Every finite boundary in\nthe root theorem avoids the point spectrum of the auxiliary total energy\n`K=dGamma(e)`. The constant-carrier proof separately permits the first\nhalf-line bin to include zero while avoiding positive lattice boundaries.\nThe comparison's gap-based zero-boundary extension is reproduced as a\ndistinct third core. None of these sufficient conditions classifies every\natomic endpoint. No bin-convergence rate or path-space theorem is claimed.\n\nFor conditional cell transfer the representations must have the **exact\nsame selfadjoint H0, vacuum and L\u00fcders projections**. The two generators are\n`H0+lambda c_h V` and `H0+lambda c_h V_ell`, with the same scalar drive, and\n`||V_ell-V|| <= d0 epsilon_ell`. With `h=|lambda|`,\n`delta_h=d0 epsilon_ell A tau_star/h`, a fixed N-factor unitary word changes\nby at most `2N delta_h`; a fixed n-observation joint history probability\nchanges by at most `4n delta_h`. Thus `epsilon_ell=o(h)` suffices for these\nbounded protocols. An energy-mean identification or an isometric embedding\nalone would not identify the measurement instrument. This statement does\nnot compare normalized states after arbitrarily rare postselection.\n\nUnmeasured single-time means and W1 remain separate inherited results.\nTheir transfer retains the common energy/vacuum, bounded control error,\nbounded commutator forms on `D(H0)`, the commutator-error estimate, and the\nresolvent work identity of the accepted parents. The stronger sufficient\nscale is `epsilon_ell=o(h^2)`. Neither that scale's necessity nor mean/W1\nafter sequential collapse is proved by the bounded history theorem.\n\nThe exact core map, full-source archive, dependency table and provenance are\nlinked in [source identities](../.claude/science/physics-loops/toe-multitime-kinetic-energy-20261013/EVIDENCE_MAP.json),\n[core map](../.claude/science/physics-loops/toe-multitime-kinetic-energy-20261013/PUBLICATION_EDITS.json),\n[dependencies](../.claude/science/physics-loops/toe-multitime-kinetic-energy-20261013/ASSUMPTIONS.md) and\n[provenance](../.claude/science/physics-loops/toe-multitime-kinetic-energy-20261013/REVIEW_HISTORY.md).\nThe [scoped boundary checklist](../.claude/science/physics-loops/toe-multitime-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md)\nhas status **FAIL / partial-narrowing**, not a universal no-go packet PASS.\nThe positive conditional theorem does not depend on meeting a route-count\nquota. Historical pending-review wording inside unchanged source cores is\nsuperseded only by the exact ordinary acceptance records, never by a source\nchecker or by this wrapper.\n\n## Publication and direct premise ownership\n\nActual regular chirp parent: [9520](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9520),\nhead `af2e44428a10e59cf5eb7130df4265d2949db8df`. The runtime requires the exact clean planned child.\nRoot owns Git, runtime integration, exact staging and regular PR creation.\nThe intended downstream physical consumer is not yet identified. This theorem\nprovides upstream support and no physical selector or closed physical blocker.\nThe five direct canonical parents retain their explicit conditional scope:\n\n- [chirped_kinetic_energy_bounded_theorem_note_2026-10-13](CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [modulated_kinetic_energy_bounded_theorem_note_2026-10-13](MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13](GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [two_zero_kinetic_energy_bounded_theorem_note_2026-10-13](TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [kinetic_correlation_limits_bounded_theorem_note_2026-10-13](KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n\nThe chirp owner contains both accepted V2/515 and independent850 premises.\nThe exact five-parent/six-core map records their complete source identities.\nHistorical initial-state snapshots remain archive-only and add no dependency.\n\n## Core A: exact general ordered-word and regular-bin argument\n\nThe following is root398 lines 8\u2013383, unchanged. Its historical provisional\nchirp pointer is now resolved by accepted root V2/850 and the phase precision\nrecord in the dependency table. Original root515 remains archived. The\nmulti-time comparison did not inspect chirp proof bodies; root's separate\nchirp assessment and acceptance are the relevant premise review.\n\n",
+          "wrapper_path": "wrappers/note_prefix.md"
+        },
+        {
+          "accepted_note_line_range": [
+            90,
+            465
+          ],
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 8551,
+          "bytes": 18447,
+          "expected_slice_sha256": "27fcecebb52a909896c70da2e6c69376c2f56ed1ea8461133ea75ab5e11f3eda",
+          "first_line": 142,
+          "id": "root_general",
+          "kind": "accepted_core_slice",
+          "last_line": 517,
+          "lines": 376,
+          "sha256": "27fcecebb52a909896c70da2e6c69376c2f56ed1ea8461133ea75ab5e11f3eda",
+          "source_line_end": 383,
+          "source_line_start": 8,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MULTITIME_KINETIC_ENERGY_ROOT_PROBE.md",
+          "source_sha256": "f691cb56257662aaab770ba4b0073c05273c24e8edfe138310ef5e8474e361c2"
+        },
+        {
+          "byte_offset": 26998,
+          "bytes": 534,
+          "first_line": 518,
+          "kind": "publication_wrapper",
+          "last_line": 528,
+          "lines": 11,
+          "sha256": "995b3967bc3e0ca95caaa8ccea444ed7da47774d3a55656ca554106191d1f86e",
+          "text": "\n## Core B: exact independent constant-carrier argument\n\nThe following is independent667 lines 11\u2013621, unchanged. It proves the\nconstant-carrier statement through controlled pair squeezes, Gaussian\nnumber moments and a small gauge removal. Its proof of the finite-bin\nprotocol and its three-distinct-time order control are retained as distinct\narguments. Its statement that it includes no chirp or cell transfer describes\nthis core's scope; Core A and its explicit accepted premises supply those\nseparate conditional implications.\n\n",
+          "wrapper_path": "wrappers/core_b_intro.md"
+        },
+        {
+          "accepted_note_line_range": [
+            477,
+            1087
+          ],
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 27532,
+          "bytes": 29967,
+          "expected_slice_sha256": "96c61dfd1dc076ba673049635eb18fc7e3a2ac1a9844643f617c2f3928e0dab8",
+          "first_line": 529,
+          "id": "independent_constant_carrier",
+          "kind": "accepted_core_slice",
+          "last_line": 1139,
+          "lines": 611,
+          "sha256": "96c61dfd1dc076ba673049635eb18fc7e3a2ac1a9844643f617c2f3928e0dab8",
+          "source_line_end": 621,
+          "source_line_start": 11,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MULTITIME_KINETIC_ENERGY_INDEPENDENT.md",
+          "source_sha256": "14a9db084020235da83ecedadbf2cde46f4d96aa60297b0fa40fc623b9083c32"
+        },
+        {
+          "byte_offset": 57499,
+          "bytes": 325,
+          "first_line": 1140,
+          "kind": "publication_wrapper",
+          "last_line": 1147,
+          "lines": 8,
+          "sha256": "6d18077447325a2c45c81ddc5315ca471ba38f2dd99a2afc9c0950a3c1e7e53e",
+          "text": "\n## Core C: the comparison's separate zero-boundary extension\n\nThe following is comparison294 lines 258\u2013267, unchanged. It uses a common\npositive spectral gap and is additional to root398's sufficient global\nnon-eigenvalue condition. It does not repair a root formula or establish a\ngeneral positive-atomic-endpoint rule.\n\n",
+          "wrapper_path": "wrappers/core_c_intro.md"
+        },
+        {
+          "accepted_note_line_range": [
+            1096,
+            1105
+          ],
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 57824,
+          "bytes": 730,
+          "expected_slice_sha256": "681f6508bb49510ba82d66dbfc028756a00f57f241957fbe78e0f847dfcfa7e9",
+          "first_line": 1148,
+          "id": "comparison_zero_boundary",
+          "kind": "accepted_core_slice",
+          "last_line": 1157,
+          "lines": 10,
+          "sha256": "681f6508bb49510ba82d66dbfc028756a00f57f241957fbe78e0f847dfcfa7e9",
+          "source_line_end": 267,
+          "source_line_start": 258,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_comparison/COMPARISON.md",
+          "source_sha256": "8aaeb9d5a4cf3213bb88ccbf50fbdab326c50d94efd0ae4740ac72c977f4d214"
+        },
+        {
+          "byte_offset": 58554,
+          "bytes": 3578,
+          "first_line": 1158,
+          "kind": "publication_wrapper",
+          "last_line": 1214,
+          "lines": 57,
+          "sha256": "5fe0bd27b6bf22fee5f9915fe73bd6908cfcec4cecb4dfc8d865c015b4c451b0",
+          "text": "\n## Evidence and remaining scope\n\nAll full original proofs, seals, comparison evidence and final-read corrections\nare archived losslessly. The three pre-correction multi-time drafts are\nreconstructed from their exact diffs and checked against their recorded\noriginal hashes; they are historical evidence, not current mathematical\npremises. The chirp original/V2 phase correction and failed digest assertion\nare preserved as well. Raw unified-diff context markers are literal syntax:\narchives retain their bytes without whitespace normalization.\n\nThe earlier finite-CAR run used directly constructed four-dimensional CAR\nmatrices and tensor-pair products. Its exact code, pre-run seal, actual\nexecution receipt and complete output are preserved. It tests complex order,\npair normalization and the nonclassical commutator control at finite sizes.\nIt proves no continuum Gram limit, operator domain statement, spectral\nprojection passage, chirp theorem or actual-cell realization. It was not\nrerun during this assembly. The comparison itself did not use that diagnostic.\n\nThe reconstruction helper is read-only and has zero mathematical predicates.\nIt checks archival identities, exact source ranges, recorded corrections,\nseal membership and the final package freeze. It does not import or execute\narchived programs. No scientific computation, Lean build, canonical runner,\ncache, pipeline, Git mutation or PR operation occurred in this source assembly.\nPublication preparation additionally uses exact read-only Git source inventories.\nEditable prompt files changed: none.\n\nThe publication wrapper binds accepted chirp V2/850 to their actual canonical\nowner once the separately recorded parent receipt is supplied. Historical\nprovisional wording inside the three unchanged cores remains immutable.\nRoot owns integration, source review, publication gates and later independent\naudit. The source-preparation acceptance does not authorize runtime by itself.\nRemaining questions include admissible positive-atomic endpoints, growing\nobservation counts, sharp/dense monitoring, arbitrary instruments, feedback,\nother initial states and path-space limits. They are open directions rather\nthan universal impossibility claims.\n\n## Publication reconstruction and limits\n\nThe complete accepted 176-file assembly and its 181 declared source aliases\nare preserved, including seven immediate closures and their 145 member rows.\nThe reconstructed historical drafts retain that label. This is exact immediate\nprovenance, not a recursive audit of every referenced upstream receipt.\nAll three scientific slices are byte-for-byte unchanged. Complete LF-preserving\nthree-context-line diffs bind every old/new wrapper and the full note; empty\ncore extraction diffs certify only copying. Raw diffs are losslessly gzipped\nwith exact raw and stored pins, preserving literal context-marker spaces.\n\nThe primary runner checks declared source identities and reconstruction only.\nIts five resolution lines explicitly state scientific nonexecution. Neither\nit nor the proposed prepare/verify or combined-validation driver was executed\nduring source preparation. A successful byte check proves no continuum limit,\ndomain statement, projection passage, apparatus realization or no-go theorem.\nRoot must review the complete source freeze/programs, provide separate execution\nacceptance, prepare, stage exactly and verify. Regular PR creation/attachment,\ncombined landing validation and independent retained audit remain later gates.\nThe negative packet stays FAIL / partial-narrowing, with unmet routes queued.\n",
+          "wrapper_path": "wrappers/note_suffix.md"
+        }
+      ],
+      "published_bytes": 62132,
+      "published_lines": 1214,
+      "published_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "stored_bytes": 3093,
+      "tofile": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "source_freeze_sha256": "53f2bfac081b7af2181a162c9b9ec839b982b7a89828b2a18107d65b274bed4a",
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_prefix.diff.gz",
+      "diff_bytes": 5200,
+      "diff_lines": 92,
+      "diff_sha256": "d7c5da304f5102d7e0ff07575b1ef825fdafe2a9795cb7bc2c7b850af9dc4c29",
+      "diff_stored_sha256": "3cb341e07fffdd57e57350d52f568fd6b419056361e2be298625d772d4873e1f",
+      "fromfile": "accepted/note_prefix.md",
+      "publication": "wrappers/note_prefix.md",
+      "publication_sha256": "3d8e686cc76716da0be9930391c73ea75a4734555433642cd55ff30ecba3d35c",
+      "source_line_range": [
+        1,
+        89
+      ],
+      "source_sha256": "c97dd8fcbf780807c01c5c345ffa7bd65312def680b054ba4d3162c6bfa498c3",
+      "stored_bytes": 1961,
+      "tofile": "publication/note_prefix.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/core_b_intro.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/core_b_intro.md",
+      "publication": "wrappers/core_b_intro.md",
+      "publication_sha256": "995b3967bc3e0ca95caaa8ccea444ed7da47774d3a55656ca554106191d1f86e",
+      "source_line_range": [
+        466,
+        476
+      ],
+      "source_sha256": "995b3967bc3e0ca95caaa8ccea444ed7da47774d3a55656ca554106191d1f86e",
+      "stored_bytes": 20,
+      "tofile": "publication/core_b_intro.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/core_c_intro.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/core_c_intro.md",
+      "publication": "wrappers/core_c_intro.md",
+      "publication_sha256": "6d18077447325a2c45c81ddc5315ca471ba38f2dd99a2afc9c0950a3c1e7e53e",
+      "source_line_range": [
+        1088,
+        1095
+      ],
+      "source_sha256": "6d18077447325a2c45c81ddc5315ca471ba38f2dd99a2afc9c0950a3c1e7e53e",
+      "stored_bytes": 20,
+      "tofile": "publication/core_c_intro.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_suffix.diff.gz",
+      "diff_bytes": 2857,
+      "diff_lines": 44,
+      "diff_sha256": "863251d5b121b949593276aebdd02be9f846441dfe0e20263958bb161ffe1cb7",
+      "diff_stored_sha256": "fce701443ebbca366ab7912e09a42e9f0043b99624637fcf13d5ce20aea9ca83",
+      "fromfile": "accepted/note_suffix.md",
+      "publication": "wrappers/note_suffix.md",
+      "publication_sha256": "5fe0bd27b6bf22fee5f9915fe73bd6908cfcec4cecb4dfc8d865c015b4c451b0",
+      "source_line_range": [
+        1106,
+        1138
+      ],
+      "source_sha256": "7fad8bcc0a4487d6d956c3bba4e318ca4ac66a65785c1f9b28378d542825552b",
+      "stored_bytes": 1383,
+      "tofile": "publication/note_suffix.md"
+    }
+  ]
+}

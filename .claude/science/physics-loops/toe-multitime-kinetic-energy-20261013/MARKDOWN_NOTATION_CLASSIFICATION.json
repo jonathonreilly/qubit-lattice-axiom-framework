@@ -1,0 +1,25 @@
+{
+  "accepted_source_classification": "LOCAL_LINK_CHECK.json in unchanged source assembly",
+  "broad_exclusion": false,
+  "exclusions": [
+    {
+      "canonical_line": 731,
+      "context": "Apply (14) with A(t)=a(h_lambda^2 t)1_[0,T_i](t) and\n",
+      "exact_line": "Apply (14) with A(t)=a(h_lambda^2 t)1_[0,T_i](t) and\n",
+      "note": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "raw_match": "](t)",
+      "reason": "Same exact accepted inline mathematical indicator; no source edit or general formula exclusion."
+    },
+    {
+      "canonical_line": 732,
+      "context": "B(t)=a(h_lambda^2 t)1_[0,T_j](t). Their zero-extension variations are at\n",
+      "exact_line": "B(t)=a(h_lambda^2 t)1_[0,T_j](t). Their zero-extension variations are at\n",
+      "note": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "raw_match": "](t)",
+      "reason": "Same exact accepted inline mathematical indicator; no source edit or general formula exclusion."
+    }
+  ],
+  "mathematical_core_edits": 0
+}

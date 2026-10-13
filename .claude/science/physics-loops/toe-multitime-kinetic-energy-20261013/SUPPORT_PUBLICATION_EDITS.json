@@ -1,0 +1,39 @@
+{
+  "convention": "Complete LF-preserving unified diff n=3; deterministic gzip mtime0; original raw bytes preserved.",
+  "files": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/support_NO_GO_DISCIPLINE_CHECKLIST.diff.gz",
+      "diff_bytes": 348,
+      "diff_lines": 7,
+      "diff_sha256": "b8201b2acb1eea28bf849963a8a4c38ba0dc957f79d829792f369b5a7f41837e",
+      "diff_stored_sha256": "0dc3e3c0b1d00b5f8121532267e9fbf434f69d6ccc1579605ea9cc95a11f3ac9",
+      "fromfile": "accepted_support/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "publication": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "publication_sha256": "7f91081bf0370d75a538ece3ae7e730be3917423fcd8652fdc141dbc1cd603f0",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_source_assembly/payload/docs/multitime_kinetic_energy_support/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "source_sha256": "8af9f4d73f328826fd5fa6d1754f05bc6017a35bce3f853015bb9a59ba4a3e53",
+      "stored_bytes": 252,
+      "tofile": "publication_support/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "transformation": "Only canonicalize terminal LF sequence to exactly one; complete archived original unchanged."
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/support_NO_GO_LEDGER.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted_support/NO_GO_LEDGER.md",
+      "publication": "NO_GO_LEDGER.md",
+      "publication_sha256": "60efcb4ff3bc643474cb69f5e9670dc5d6117e3ba3b26b9e9e7c030e278f579c",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_source_assembly/payload/docs/multitime_kinetic_energy_support/NO_GO_LEDGER.md",
+      "source_sha256": "60efcb4ff3bc643474cb69f5e9670dc5d6117e3ba3b26b9e9e7c030e278f579c",
+      "stored_bytes": 20,
+      "tofile": "publication_support/NO_GO_LEDGER.md",
+      "transformation": "Only canonicalize terminal LF sequence to exactly one; complete archived original unchanged."
+    }
+  ],
+  "original_archives_unchanged": true,
+  "scientific_text_edits": 0
+}

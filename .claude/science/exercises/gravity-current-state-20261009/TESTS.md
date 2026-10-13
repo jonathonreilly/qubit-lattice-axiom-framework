@@ -7041,3 +7041,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r1811a (a = 2), P-r1811b (noise energy history); P-r15c is now necessary.
 
   Referee running.
+- **R18-9 (four rows at SM counts): worker reading FOUR-ROW-ZERO on the letter of the clause.** A referee is required.
+  - **The root (m = 0.01):**
+    - 4 scalars on G_w(2.526151), U vertex;
+    - 22.5 Dirac fields on D1(0.909103, 0.555604), UD vertex;
+    - 12 vectors on γG_w(2.9435, 0.198093), VW vertex with signed stencil a = −0.176095.
+    - Ξ_T2g = Ξ_Eg = μ_E = μ_T2 = 0 to ≤ 7e-11 at N = 224. Every edge is subluminal. The root holds at m = 0.001.
+  - **Cost:** 4 tunings (b_s, b_f, r, a), plus a narrow photon window b_γ ≈ 2.936–2.947. The window may count as a fifth tuning.
+  - **Mechanism:**
+    - μ_T2 comes from the Dirac fields only, so the Dirac edge must sit on R17-13's zero curve.
+    - The signed stencil decouples the photon's Ξ from its μ_E.
+    - The expectation's UD-μ_E mechanism was wrong: μ_E is vertex-independent.
+  - **Off-axis:** face2 ≡ T₂g holds for scalars but fails for UD Dirac (~7e-5). VW was not computed. So the off-axis rows remain unpaid.
+  - **Still unpaid:** the off-axis rows, the LV tadpole (paid by (d-i) in 𝒟), the CC, and exact W1.
+  - **Prices:** P-R18-9a (photon window), P-R18-9b (UD off-axis).
+
+  Referee running.

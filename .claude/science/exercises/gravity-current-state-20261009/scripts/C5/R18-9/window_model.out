@@ -1,0 +1,13 @@
+nodes [2.9  2.95 3.  ]
+scalar G_w(3.10, fr=1.00) muE_s +1.5843e-02 -> b_g* 2.94876 b_f 0.96324 r 0.58565 a -0.17659 | max|rows| 1.6e-11 | r<=1/sqrt3 False
+scalar G_w(3.00, fr=1.00) muE_s +1.4812e-02 -> b_g* 2.94781 b_f 0.95280 r 0.57958 a -0.17649 | max|rows| 4.1e-10 | r<=1/sqrt3 False
+scalar G_w(2.90, fr=1.00) muE_s +1.3836e-02 -> b_g* 2.94688 b_f 0.94281 r 0.57390 a -0.17640 | max|rows| 2.6e-11 | r<=1/sqrt3 True
+scalar G_w(2.80, fr=1.00) muE_s +1.2911e-02 -> b_g* 2.94600 b_f 0.93327 r 0.56859 a -0.17631 | max|rows| 2.4e-10 | r<=1/sqrt3 True
+scalar G_w(2.60, fr=1.00) muE_s +1.1209e-02 -> b_g* 2.94434 b_f 0.91550 r 0.55898 a -0.17615 | max|rows| 1.3e-10 | r<=1/sqrt3 True
+scalar G_w(2.40, fr=1.00) muE_s +9.6900e-03 -> b_g* 2.94284 b_f 0.89942 r 0.55058 a -0.17601 | max|rows| 5.9e-11 | r<=1/sqrt3 True
+scalar G_w(2.20, fr=1.00) muE_s +8.3391e-03 -> b_g* 2.94148 b_f 0.88492 r 0.54323 a -0.17589 | max|rows| 1.4e-10 | r<=1/sqrt3 True
+scalar G_w(2.00, fr=1.00) muE_s +7.1420e-03 -> b_g* 2.94026 b_f 0.87191 r 0.53681 a -0.17578 | max|rows| 2.2e-10 | r<=1/sqrt3 True
+scalar G_w(1.50, fr=1.00) muE_s +4.7328e-03 -> b_g* 2.93781 b_f 0.84532 r 0.52418 a -0.17556 | max|rows| 2.4e-11 | r<=1/sqrt3 True
+scalar G_w(1.00, fr=1.00) muE_s +3.0034e-03 -> b_g* 2.93613 b_f 0.82590 r 0.51534 a -0.17541 | max|rows| 9.4e-11 | r<=1/sqrt3 True
+scalar G_w(1.00, fr=0.02) muE_s -5.8053e-04 -> b_g* 2.94159 b_f 0.79041 r 0.49995 a -0.17522 | max|rows| 4.8e-11 | r<=1/sqrt3 True
+scalar G_w(0.50, fr=0.02) muE_s -2.3382e-04 -> b_g* 2.94501 b_f 0.79642 r 0.50249 a -0.17532 | max|rows| 2.0e-11 | r<=1/sqrt3 True

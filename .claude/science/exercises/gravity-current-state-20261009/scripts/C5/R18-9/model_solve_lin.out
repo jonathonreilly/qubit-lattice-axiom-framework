@@ -1,0 +1,5 @@
+photon nodes b_g: [2.9 3. ]
+scalar G_w(3.0000, fr=1.000) per real: T -6.9368e-04 E -4.0158e-04 muE +1.4812e-02
+start [ 2.95   0.92   0.565 -0.173] rows [0.04481226 0.04419871 0.01505365 0.00022908]
+solution (b_g, b_f, r, a) = [ 2.94700093  0.95234311  0.57932015 -0.17648832] ier 1 The solution converged.
+rows at solution [-9.20639953e-12 -4.69098024e-12  5.23594890e-10  7.10605281e-12] r <= 1/sqrt3: False

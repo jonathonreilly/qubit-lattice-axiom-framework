@@ -1,0 +1,8 @@
+D1(0.906378, 0.554179) m=0.3 N=96 UD per field: T2g +1.520844e-03 Eg +8.085772e-05 | C4 control xz(q||y) +1.520844e-03 | face1 +6.055462e-04 face2 +1.452991e-03 | face2-T2g -6.785e-05 | face1-(3Eg+T2g)/4 +1.647e-04
+D1(0.906378, 0.554179) m=0.3 N=128 UD per field: T2g +1.521053e-03 Eg +8.108814e-05 | C4 control xz(q||y) +1.521053e-03 | face1 +6.063313e-04 face2 +1.453730e-03 | face2-T2g -6.732e-05 | face1-(3Eg+T2g)/4 +1.653e-04
+D1(0.906378, 0.554179) m=0.3 N=160 UD per field: T2g +1.521097e-03 Eg +8.113622e-05 | C4 control xz(q||y) +1.521097e-03 | face1 +6.064904e-04 face2 +1.453881e-03 | face2-T2g -6.722e-05 | face1-(3Eg+T2g)/4 +1.654e-04
+D1(0.906378, 0.554179) m=0.1 N=128 UD per field: T2g +1.835009e-03 Eg +1.057101e-04 | C4 control xz(q||y) +1.835009e-03 | face1 +9.514584e-04 face2 +1.905617e-03 | face2-T2g +7.061e-05 | face1-(3Eg+T2g)/4 +4.134e-04
+D1(0.906378, 0.554179) m=0.1 N=160 UD per field: T2g +1.835333e-03 Eg +1.060393e-04 | C4 control xz(q||y) +1.835333e-03 | face1 +9.526648e-04 face2 +1.906813e-03 | face2-T2g +7.148e-05 | face1-(3Eg+T2g)/4 +4.143e-04
+D1(0.906378, 0.554179) m=0.1 N=192 UD per field: T2g +1.835441e-03 Eg +1.061483e-04 | C4 control xz(q||y) +1.835441e-03 | face1 +9.531088e-04 face2 +1.907255e-03 | face2-T2g +7.181e-05 | face1-(3Eg+T2g)/4 +4.146e-04
+D1(1.400000, 0.300000) m=0.3 N=128 UD per field: T2g +4.323071e-03 Eg +2.075963e-03 | C4 control xz(q||y) +4.323071e-03 | face1 +3.152261e-03 face2 +4.239001e-03 | face2-T2g -8.407e-05 | face1-(3Eg+T2g)/4 +5.145e-04
+D1(1.400000, 0.300000) m=0.3 N=160 UD per field: T2g +4.324869e-03 Eg +2.079174e-03 | C4 control xz(q||y) +4.324869e-03 | face1 +3.157890e-03 face2 +4.246383e-03 | face2-T2g -7.849e-05 | face1-(3Eg+T2g)/4 +5.173e-04

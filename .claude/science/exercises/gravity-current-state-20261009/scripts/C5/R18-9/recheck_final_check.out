@@ -1,0 +1,15 @@
+photon gammaGw(b=1.271203310, w=0.259985516) [VWa, a=-0.122744585: weights (1-a, a) = (1.122745, -0.122745) at z+-1/2, z+-3/2; lam = 0.004511]
+Dirac D1(b=0.167717434, r=0.484514796) [UD]  scalar G_w(b=2.361985868, w=0.134479073) [U]  m = 0.01
+scalar per real (T2g, Eg, muE): n=2^14 [-0.00054674 -0.00038384  0.00460536] | n=2^16,nu=3000 diff [-2.04914211e-17 -1.44198889e-17 -2.93428476e-14]
+scalar edge vmax(m=0.01) = 0.999997
+per Dirac field (UD): Xi_T2g -7.883465e-04 Xi_Eg -1.050405e-03 mu_E -4.746453e-04 mu_T2 +4.049086e-03
+per vector (VWa, N=160): Xi_T2g +1.660527e-03 Xi_Eg +2.097784e-03 mu_E -6.451587e-04
+per real scalar (U): Xi_T2g -5.467399e-04 Xi_Eg -3.838417e-04 mu_E +4.605360e-03
+TOTAL (4 + 22.5 + 12): Xi_T2g +1.564e-06 Xi_Eg +3.929e-06 mu_E +1.638e-08 | mu_T2 +9.1104e-02
+contributions T2g: scal -2.1870e-03 dirac -1.7738e-02 vec +1.9926e-02
+contributions Eg : scal -1.5354e-03 dirac -2.3634e-02 vec +2.5173e-02
+contributions muE: scal +1.8421e-02 dirac -1.0680e-02 vec -7.7419e-03
+Dirac edge sampled vmax = 0.999956 (n=161); Lemma V1 bound 1 since r = 0.484515 < 1/sqrt3 = 0.577350
+photon d' range [0.000000, 1.000000] (class d' in [0,1] => |grad omega| <= 1; = 1 inside the box)
+34s
+python3 final_check.py  30.88s user 3.35s system 98% cpu 34.626 total

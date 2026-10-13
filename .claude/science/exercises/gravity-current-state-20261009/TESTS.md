@@ -9318,3 +9318,62 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - P-R19-34a covers every family.
 
   Referee running.
+
+**F5. Test the strain-covariant critical mass (P-R19-34a) as a rule: is it well defined, does it cover the hot-matter channel, what does it leave, and does it remove anything observed?** (Pre-registered 2026-10-13 17:39Z, at Jon's request: "run the strain-covariant critical mass test".)
+- **Plain question.** F1, F3 and F4 show that the root's Wilson-type fermion edges give a strain-dependent additive mass:
+  - +2.42e-2 e² (SF), and nonzero in every path family;
+  - movable to zero only by tuned dressings or mixtures.
+
+  Read canonically, this conflicts with GW170817's Earth crossing by about 1.6e8 (F2, massive sign).
+
+  P-R19-34a re-sets the critical mass, the bare mass that keeps fermions light, on every uniformly strained law. It is the same condition the root already imposes at zero strain, extended to all strains. The questions are:
+  - Is the rule well defined, local (for non-uniform strain) and number-free?
+  - Does it cover the channel in every F1/F3/F4 variant?
+  - What residual strain channels survive it, and are they within F2's bounds?
+  - Does it change anything observed, or move the root's refereed rows?
+- **Setting.**
+  - F1's law (B1, Psym), plus F3's dressing and F4's path families as branches.
+  - The rule's precise statement: the masslessness/criticality condition (the pole mass at m₀ = m_c(h) vanishes) holds at every uniform strain h, at every order.
+  - The local version for slowly varying h(x): m_c(h(x)) plus a gradient expansion.
+- **Prior art (count once):**
+  - R19-34 and its verdict;
+  - F1, F2, F3 and F4 with their verdicts or the referees running;
+  - R19-24 and its verdict (the D1∞ precedent, number-free under the law-functional convention);
+  - R19-31 (the multiplicative channel);
+  - R18-9 and R19-12 (rows);
+  - comparator: anisotropic-lattice critical-mass tuning in lattice QCD (RECALLED).
+- **Probes.**
+  - (a) **Definition.**
+    - State the rule as one clause.
+    - Show it determines m_c(h) uniquely: give the one-loop m_c(h), and check that the Hessian of the corrected δm is exactly 0 in each variant.
+    - Count its numbers under both conventions.
+    - Give the local version, and the size of its gradient terms (order a·∂h).
+  - (b) **Residual channels after the rule.** Compute or bound:
+    - (i) the multiplicative channel: m_f·∂²Z_m(h) times ⟨ψ̄ψ⟩;
+    - (ii) the strain dependence of the clover-type (Pauli) term from F3's dressing;
+    - (iii) the photon's own strain response in matter, if any (the gauge-boson mass is protected by Ward, per R19-31);
+    - (iv) Yukawa/scalar channels, by estimate.
+
+    Size each against F2's rows (Earth crossing, massive and tachyonic) and the hot era.
+  - (c) **Knock-on.**
+    - The rule's counterterm times the vacuum ⟨ψ̄ψ⟩ changes the vacuum's strain Hessian (μ_E/μ_T2 rows) and possibly λ_nn. Compute the shift at the R18-9 root.
+    - Is it absorbed by (Σ)/(S\*), or does it move the root?
+  - (d) **Observed physics.**
+    - The equivalence principle: composition-independent free fall (Eötvös/MICROSCOPE).
+    - Tests of local Lorentz invariance for matter (no anisotropic mass shifts).
+    - That the gravitational source T⁰⁰ is unchanged.
+    - In GR comparison, traceless strain does not change rest mass, so check that the rule restores, rather than removes, observed behaviour.
+- **FIXED readings.**
+  - **RULE-WORKS:** all of the following, checked:
+    - one number-free clause that uniquely fixes m_c(h);
+    - it covers the channel in every variant;
+    - every residual channel is below F2's Earth row and the hot-era rows;
+    - the knock-on is absorbed or zero;
+    - nothing observed is changed.
+  - **RULE-PARTIAL:** it covers the F1 channel, but a residual exceeds a bound, or the knock-on moves the root. Name which.
+  - **RULE-FAILS:** ill defined, non-local beyond O(a·∂h), or it changes observed physics.
+  - **OPEN:** otherwise.
+- **Expectation.** RULE-WORKS for the additive channel.
+  - The residual multiplicative channel is suppressed by m_f·a, ~1e-22 or less, so it is far below the Earth row.
+  - The knock-on onto the vacuum rows is nonzero, but it is a vacuum strain response that (Σ) absorbs by stipulation.
+  - Without (Σ), it moves the root. So: RULE-WORKS given (Σ), otherwise RULE-PARTIAL.

@@ -1,0 +1,24 @@
+(B) (S_loc)-CW residue O(g^2 T^4): T-independent ratio m_g^2/H^2 in the radiation era (g* = 106.75)
+  Higgs doublet scalar channel (2 complex x e_eff^2 = 0.237): mu_SF/(Ta)^4 = -1.0212e-02  -> m_g^2/H^2 = -1.74e-03
+  gauge-boson channel (12 bosons x ~25 charged complex dof, scalar-loop coefficient): mu_SF/(Ta)^4 ~ -1.67e-02 -> -2.84e-03
+  fermions, speed rows bracketed as scalar coefficient x 45 Weyl/2 x C_F g_s^2-weighted: mu_SF/(Ta)^4 ~ -1.93e-01 -> m_g^2/H^2 ~ -3.31e-02
+  Wilson massless soft fermions, <psibar psi>_th x dm'' (symmetric phase), 22.5 Dirac x C_F g_s^2: mu_SF/(Ta)^4 ~ -7.99e-02 -> m_g^2/H^2 ~ -1.36e-02
+  rough total (without the Wilson psibar psi term): m_g^2/H^2 ~ -3.76e-02 (|m_g|/H ~ 0.19); with it ~ -5.13e-02
+  compare R19-21 quasiparticle (T a)^6 term: m_g^2/H^2 = 2.5e-6 at 1e16 GeV, falling as (Ta)^2 (4e-36 at T_c)
+  superhorizon tensor amplitude factor over 55 e-folds of radiation era with |m_g^2/H^2| = 0.0376: exp(+-0.038*55) = 7.93 / 0.126
+  superhorizon tensor amplitude factor over 55 e-folds of radiation era with |m_g^2/H^2| = 0.05: exp(+-0.050*55) = 15.6 / 0.0639
+
+(A) CW-gap after (S_loc) (on-shell vs background-field, O(e^2 m^2) per unit Phi; m^2 -> m_th^2 ~ 0.4 T^2, Phi = T^2/12 per complex):
+  mu_SF/(Ta)^4 ~ -3.25e-04 -> m_g^2/H^2 ~ -5.55e-05  (an O(g^2 lambda_th) = O(g^4) residue, as the FIXED clause allows)
+
+(C) Wilson-type edges, broken phase: <psibar psi>_th x d2(dm)/dh2 (NOT removed by (S_loc) unless psibar psi is a background):
+  T =  150.0 GeV: mu_SF = -4.186e-54  m_g^2/H^2 = -3.139e+13 (tachyonic)
+  T =  100.0 GeV: mu_SF = -1.275e-54  m_g^2/H^2 = -4.838e+13 (tachyonic)
+  T =   50.0 GeV: mu_SF = -9.495e-56  m_g^2/H^2 = -7.137e+13 (tachyonic)
+  T =   10.0 GeV: mu_SF = -8.527e-58  m_g^2/H^2 = -4.006e+14 (tachyonic)
+  T =    1.0 GeV: mu_SF = -1.569e-60  m_g^2/H^2 = -7.369e+15 (tachyonic)
+  today (canonical, path-averaged; electrons e^2 = 0.1 at the lattice scale; nucleons: sigma-term weight ~13 light-quark units x C_F g_s^2):
+   IGM n ~ 0.25 /m^3      electrons m_g = 1.11e-25 eV (tachyonic; LVK 1.92e-23 eV; 100 Hz GW energy 4.1e-13 eV)
+   IGM n ~ 0.25 /m^3      nucleons  m_g = 7.99e-25 eV (tachyonic; LVK 1.92e-23 eV; 100 Hz GW energy 4.1e-13 eV)
+   Earth n ~ 3.3e30 /m^3  electrons m_g = 4.02e-10 eV (tachyonic; LVK 1.92e-23 eV; 100 Hz GW energy 4.1e-13 eV)
+   Earth n ~ 3.3e30 /m^3  nucleons  m_g = 2.90e-09 eV (tachyonic; LVK 1.92e-23 eV; 100 Hz GW energy 4.1e-13 eV)

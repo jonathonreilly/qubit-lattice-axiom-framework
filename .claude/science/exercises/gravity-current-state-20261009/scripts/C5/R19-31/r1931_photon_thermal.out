@@ -1,0 +1,19 @@
+(a1) Debye mass per e^2: complex NN scalar (mass m) chi = 2<beta n(1+n)>; Wilson-Dirac (r=1, m=0) chi = 4<beta nF(1-nF)>; continuum T^2/3 each
+  T=0.400  scalar m=0: m_D^2/(e^2T^2/3) = 1.22002   scalar m=0.1: 1.10312   Wilson fermion: 0.94108
+  T=0.200  scalar m=0: m_D^2/(e^2T^2/3) = 1.04891   scalar m=0.1: 0.82734   Wilson fermion: 0.96018
+  T=0.100  scalar m=0: m_D^2/(e^2T^2/3) = 1.01026   scalar m=0.1: 0.60630   Wilson fermion: 0.98516
+  T=0.050  scalar m=0: m_D^2/(e^2T^2/3) = 1.00243   scalar m=0.1: 0.33353   Wilson fermion: 0.99585
+  T=0.025  scalar m=0: m_D^2/(e^2T^2/3) = 1.00050   scalar m=0.1: 0.08568   Wilson fermion: 0.99893
+(a2) static magnetic part at k->0, thermal, per e^2: S_xx - L_xx(0) = <2 cos p_x n/eps> - <V_x^2 [n/(2 eps^3) - n'/(2 eps^2)]>  (Ward: must vanish)
+  h=0.00 m=0.00 T=0.10: S_th = +1.663779e-03   L_th(0) = +1.663812e-03   S - L = -3.32e-08   (Debye-type scale chi/2 = 1.684e-03)
+  h=0.00 m=0.10 T=0.05: S_th = +7.418548e-05   L_th(0) = +7.418548e-05   S - L = +1.36e-13   (Debye-type scale chi/2 = 1.390e-04)
+  h=0.00 m=0.50 T=0.30: S_th = +3.386439e-03   L_th(0) = +3.386439e-03   S - L = +8.04e-14   (Debye-type scale chi/2 = 7.513e-03)
+  h=0.05 m=0.00 T=0.10: S_th = +1.662607e-03   L_th(0) = +1.662530e-03   S - L = +7.67e-08   (Debye-type scale chi/2 = 1.684e-03)
+  h=0.05 m=0.10 T=0.05: S_th = +7.415151e-05   L_th(0) = +7.415151e-05   S - L = +1.79e-13   (Debye-type scale chi/2 = 1.390e-04)
+  h=0.05 m=0.50 T=0.30: S_th = +3.310815e-03   L_th(0) = +3.310815e-03   S - L = -2.49e-13   (Debye-type scale chi/2 = 7.514e-03)
+(a3) hard photon, on-shell thermal self-energy from thermal scalars of mass m_s (per e^2), transverse polarisation x, q along z:
+     Pi_th(w=Omega_q, q) = <2 cos p_x n/eps> - sum_p V_x^2/(4 eps1 eps2) [(n1+n2) A(w) + (n1-n2) B(w)],  A,B from the Matsubara sum
+  m_s=1.00 T=0.250  Debye m_D^2 2.2227e-03 | q=0.5: +2.8697e-04 (seagull +2.9958e-04) | q=1.0: +2.8763e-04 (seagull +2.9958e-04) | q=2.0: +2.8968e-04 (seagull +2.9958e-04) | q=3.0: +2.9097e-04 (seagull +2.9958e-04)
+  m_s=1.00 T=0.125  Debye m_D^2 2.0166e-05 | q=0.5: +1.9072e-06 (seagull +1.9284e-06) | q=1.0: +1.9089e-06 (seagull +1.9284e-06) | q=2.0: +1.9133e-06 (seagull +1.9284e-06) | q=3.0: +1.9156e-06 (seagull +1.9284e-06)
+  m_s=0.50 T=0.100  Debye m_D^2 1.3925e-04 | q=0.5: +2.0192e-05 (seagull +2.0363e-05) | q=1.0: +2.0218e-05 (seagull +2.0363e-05) | q=2.0: +2.0269e-05 (seagull +2.0363e-05) | q=3.0: +2.0289e-05 (seagull +2.0363e-05)
+time 2 s

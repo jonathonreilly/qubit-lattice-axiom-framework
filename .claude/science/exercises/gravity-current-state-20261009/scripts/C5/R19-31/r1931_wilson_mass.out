@@ -1,0 +1,18 @@
+r=0 check (chiral): dm = +0.00e+00
+  h=-0.040  dm/e^2 = +0.374297805
+  h=-0.020  dm/e^2 = +0.374335041
+  h=+0.000  dm/e^2 = +0.374347473
+  h=+0.020  dm/e^2 = +0.374335041
+  h=+0.040  dm/e^2 = +0.374297805
+d2(dm)/dh2 per e^2 (H-cov): -6.21578e-02 (step d), -6.20847e-02 (step 2d)
+soft-fermion scalar density <psibar psi>_th = 4<nF M_p/E_p> (lattice units), and the cross term per e^2 = <psibar psi>_th * d2(dm)/dh2:
+  m_f=0.000 T=0.100: <psibar psi>_th 5.5309e-05  (m_f T^2/6 = 0.0000e+00; massless-Wilson ~ T^4 scale 1.000e-04)  cross -3.4379e-06  cross/T^2 -3.4379e-04  cross/T^4 -3.4379e-02
+  m_f=0.000 T=0.050: <psibar psi>_th 3.5582e-06  (m_f T^2/6 = 0.0000e+00; massless-Wilson ~ T^4 scale 6.250e-06)  cross -2.2117e-07  cross/T^2 -8.8467e-05  cross/T^4 -3.5387e-02
+  m_f=0.000 T=0.025: <psibar psi>_th 2.2424e-07  (m_f T^2/6 = 0.0000e+00; massless-Wilson ~ T^4 scale 3.906e-07)  cross -1.3938e-08  cross/T^2 -2.2302e-05  cross/T^4 -3.5683e-02
+  m_f=0.010 T=0.100: <psibar psi>_th 7.0010e-05  (m_f T^2/6 = 1.6667e-05; massless-Wilson ~ T^4 scale 1.000e-04)  cross -4.3517e-06  cross/T^2 -4.3517e-04  cross/T^4 -4.3517e-02
+  m_f=0.010 T=0.050: <psibar psi>_th 7.4049e-06  (m_f T^2/6 = 4.1667e-06; massless-Wilson ~ T^4 scale 6.250e-06)  cross -4.6027e-07  cross/T^2 -1.8411e-04  cross/T^4 -7.3643e-02
+  m_f=0.010 T=0.025: <psibar psi>_th 1.1378e-06  (m_f T^2/6 = 1.0417e-06; massless-Wilson ~ T^4 scale 3.906e-07)  cross -7.0726e-08  cross/T^2 -1.1316e-04  cross/T^4 -1.8106e-01
+  m_f=0.030 T=0.100: <psibar psi>_th 9.5041e-05  (m_f T^2/6 = 5.0000e-05; massless-Wilson ~ T^4 scale 1.000e-04)  cross -5.9076e-06  cross/T^2 -5.9076e-04  cross/T^4 -5.9076e-02
+  m_f=0.030 T=0.050: <psibar psi>_th 1.2920e-05  (m_f T^2/6 = 1.2500e-05; massless-Wilson ~ T^4 scale 6.250e-06)  cross -8.0311e-07  cross/T^2 -3.2124e-04  cross/T^4 -1.2850e-01
+  m_f=0.030 T=0.025: <psibar psi>_th 1.8961e-06  (m_f T^2/6 = 3.1250e-06; massless-Wilson ~ T^4 scale 3.906e-07)  cross -1.1786e-07  cross/T^2 -1.8857e-04  cross/T^4 -3.0171e-01
+time 2 s

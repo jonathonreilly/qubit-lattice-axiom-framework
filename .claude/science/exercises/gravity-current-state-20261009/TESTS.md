@@ -8710,3 +8710,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **B-RP-FAILS:** a negative RP eigenvalue at O(κ) or O(κ²) that persists under refinement (cite it).
   - **OPEN:** otherwise.
 - **Expectation.** OPEN. The TT projector is non-local in time on Z⁴, so RP of the projected form is unclear; the bridge breaks W(B4) to a foliation.
+
+- **R19-31 (gauge/Yukawa thermal vs (S_loc)): worker reading OPEN.**
+  - **Gauge bosons:** hot gauge bosons give no g²T² cross term, because gauge invariance holds at any strain (Π(0) ≈ 2e-13). The lattice Debye mass tends to e²T²/3.
+  - **The Higgs channel:** the g²T² term lives only here.
+    - Background-field (S_loc) cancels it, leaving −0.082 e²m², which is O(g⁴). This is P-R19-31a: (S_loc)'s mass is the background-field mass.
+    - Subtracting at the Debye mass instead would leave +0.015 e²T².
+  - **The residue:** O(g²T⁴), from strain-dependent radiative speed rows (−0.086 e²T⁴ per scalar). The SM m_g²/H² is estimated at −2e-3 to −4e-2: below the |m_g| < H line, but up to 1e4 × R19-21's T⁶ estimate.
+  - **The Wilson ψ̄ψ channel:** an additive-mass strain Hessian of −0.0622 e². This gives m_g²/H² ≈ −5e13 at 100 GeV, and inside the Earth today |m_g| ≈ 3e-9 eV, unless ψ̄ψ is among the (S_loc) backgrounds or the edges are twisted (P-R19-31b).
+  - **R19-27's per-site counterterms** are strain-invariant, so they cannot help.
+  - **P-R19-31c:** D1∞ holds on every strained law.
+
+  Referee running.

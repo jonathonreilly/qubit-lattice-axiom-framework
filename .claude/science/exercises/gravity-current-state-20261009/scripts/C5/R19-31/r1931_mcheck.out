@@ -1,0 +1,4 @@
+m=0.20: d2Sigma_os(rest)/dh2 -5.348324e-01  3G_gam'' -5.315361e-01  gap -3.296e-03 (gap/m^2 -0.082) | kappa0 -0.07620  d2kappa_ii ['-0.4138', '-0.4138', '+0.0419']  sum -0.7857 -> K/T^4 (H-cov, m->0 gas) -0.0862 per e^2
+m=0.10: d2Sigma_os(rest)/dh2 -5.323592e-01  3G_gam'' -5.315361e-01  gap -8.231e-04 (gap/m^2 -0.082) | kappa0 -0.07596  d2kappa_ii ['-0.4133', '-0.4133', '+0.0418']  sum -0.7848 -> K/T^4 (H-cov, m->0 gas) -0.0861 per e^2
+m=0.05: d2Sigma_os(rest)/dh2 -5.317423e-01  3G_gam'' -5.315361e-01  gap -2.062e-04 (gap/m^2 -0.082) | kappa0 -0.07588  d2kappa_ii ['-0.4131', '-0.4131', '+0.0418']  sum -0.7845 -> K/T^4 (H-cov, m->0 gas) -0.0860 per e^2
+time 20 s

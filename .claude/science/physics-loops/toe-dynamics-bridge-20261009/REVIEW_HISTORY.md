@@ -59,3 +59,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-13T08:36:01.459048+00:00: Fresh pair792 and weighted interface417 fully read/accepted at conditional scope. Root kinetic484 frozen awaiting independent comparison; exact prior exposure disclosed. Three-note calibrated and one-note pair source assemblies active. No retained/physical/analytic Lean claim.
 
 2026-10-13T09:07:23.013534+00:00: Calibrated and pair source assemblies accepted after complete new-text review and identity checks. Separate kinetic484/847 mean proofs compared and accepted conditionally; full law fresh review active. No retained or analytic Lean claim.
+
+2026-10-13T09:36:01.737541+00:00: Fresh reviewer detected original kinetic picture defect; exact V2 correction confirmed and law accepted conditionally. Root correlation335 frozen awaiting independent check. One-zero-control candidate plan sealed, separate worker active. No retained or analytic Lean claim.

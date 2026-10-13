@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-13T04:29:48.502668+00:00",
+  "found_by": "independent_math_review/direct_field_check",
+  "original_preserved": true,
+  "wrong": "chi_prime/sqrt(a)=sqrt(3/(1+a))",
+  "correct": "chi_prime/sqrt(a)=sqrt(3/(2(1+a)))",
+  "derivation": "chi_dot^2=aS, H^2=2(1+a)S/3; divide these to obtain chi_prime^2. Both exponential slopes were already consistent.",
+  "v1_sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+  "v2_sha256": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b"
+}

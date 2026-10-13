@@ -1,0 +1,157 @@
+{
+  "receipt_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/RECEIPT.json",
+  "receipt_sha256": "f200ebecc01fb9daba787eb748adef1a38261e88adc4e3e0bc5b13e08677b39f",
+  "purpose": "Reuse exact handwritten proof only; this does not substitute for numerical implementation review.",
+  "artifact_identities": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/AFFECTED_INPUT_FREEZE_v2.json",
+      "expected_sha256": "b8d211ab405957fb8f87fdfb818984e5ab53fc22b26862bd2b0189bb13d9f617",
+      "actual_sha256": "b8d211ab405957fb8f87fdfb818984e5ab53fc22b26862bd2b0189bb13d9f617"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/AFFECTED_V2_CHECKS.json",
+      "expected_sha256": "494eb1be985ce34d3676f05bc4802c6fa3f4d88df38585dd5e52d765998d426a",
+      "actual_sha256": "494eb1be985ce34d3676f05bc4802c6fa3f4d88df38585dd5e52d765998d426a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/ANALYTIC_FLUID_MATH_REVIEW.md",
+      "expected_sha256": "2902e41d25442424b1c13498d2169c2dd703b382f5d2d7924adc86f56be8b9d2",
+      "actual_sha256": "2902e41d25442424b1c13498d2169c2dd703b382f5d2d7924adc86f56be8b9d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_CHECKS_v1.json",
+      "expected_sha256": "db78f3bc02f5c3961330afebc1b163cab3cbae7f49c6ca2c9ec36de5fdb02ba6",
+      "actual_sha256": "db78f3bc02f5c3961330afebc1b163cab3cbae7f49c6ca2c9ec36de5fdb02ba6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_CHECKS_v2.json",
+      "expected_sha256": "117c5bf23cded6a90ba42403647c327164747330fab3e103ccc9e83e92c31403",
+      "actual_sha256": "117c5bf23cded6a90ba42403647c327164747330fab3e103ccc9e83e92c31403"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_EXECUTION_v1.json",
+      "expected_sha256": "65b862b4aaf5eff57c476e0aa612f6f2eda9416657830ef5d18173790c0a50c3",
+      "actual_sha256": "65b862b4aaf5eff57c476e0aa612f6f2eda9416657830ef5d18173790c0a50c3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_EXECUTION_v2.json",
+      "expected_sha256": "80a38c521063069e9f37afee1e1a8d9f22f7befee761078ee473aa1a300e6323",
+      "actual_sha256": "80a38c521063069e9f37afee1e1a8d9f22f7befee761078ee473aa1a300e6323"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_STDERR_v1.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_STDERR_v2.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_STDOUT_v1.txt",
+      "expected_sha256": "83b0349289c59c52e4e85c3a31e7df58b4735def18e5d1bfaf5f0a5e2c098847",
+      "actual_sha256": "83b0349289c59c52e4e85c3a31e7df58b4735def18e5d1bfaf5f0a5e2c098847"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/EXACT_STDOUT_v2.txt",
+      "expected_sha256": "213e4ee07970073e70a4e7336e8eabd64c3f2f8ef5084ccc2d96592d0eaaeaa9",
+      "actual_sha256": "213e4ee07970073e70a4e7336e8eabd64c3f2f8ef5084ccc2d96592d0eaaeaa9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/INDEPENDENT_DERIVATION.md",
+      "expected_sha256": "e1dfe96e60d6031f174803a1fd0235d9ee88c9db2b3c116a3ab3a8742d2d8ba8",
+      "actual_sha256": "e1dfe96e60d6031f174803a1fd0235d9ee88c9db2b3c116a3ab3a8742d2d8ba8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/INDEPENDENT_V1_TO_V2.diff",
+      "expected_sha256": "78fd94e0e01aa9ff62e7fd8409089c7f5612bb3ab82473e1968f373e50fdcf57",
+      "actual_sha256": "78fd94e0e01aa9ff62e7fd8409089c7f5612bb3ab82473e1968f373e50fdcf57"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/INPUT_FREEZE_v1.json",
+      "expected_sha256": "1371e28839deefa835380aa4efe10dd4a23e4300b15f980df9b81c01823cf6b0",
+      "actual_sha256": "1371e28839deefa835380aa4efe10dd4a23e4300b15f980df9b81c01823cf6b0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/MOMENTA_CHECKS_v1.json",
+      "expected_sha256": "c713b86a0baedee1211e6f70a05dd0a398090339afbf417e6707ec6090cbe646",
+      "actual_sha256": "c713b86a0baedee1211e6f70a05dd0a398090339afbf417e6707ec6090cbe646"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/MOMENTA_EXECUTION_v1.json",
+      "expected_sha256": "53cd02170c5eefa2cde0b57a1724389ad7dfb4a4c5cd8fa8c8ff0a0dd3136722",
+      "actual_sha256": "53cd02170c5eefa2cde0b57a1724389ad7dfb4a4c5cd8fa8c8ff0a0dd3136722"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/MOMENTA_STDERR_v1.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/MOMENTA_STDOUT_v1.txt",
+      "expected_sha256": "87fdfca66c3c48e78bba08ef17b6104009c8e5273324d349c7cd642614feb5da",
+      "actual_sha256": "87fdfca66c3c48e78bba08ef17b6104009c8e5273324d349c7cd642614feb5da"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/REVIEWER_NORMALIZATION_v1_to_v2.diff",
+      "expected_sha256": "fa8bf1f42af304ddb6c729d8fc9444c0315362229c7a091abe16c39b74f55594",
+      "actual_sha256": "fa8bf1f42af304ddb6c729d8fc9444c0315362229c7a091abe16c39b74f55594"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/SOURCE_DISPOSITIONS.json",
+      "expected_sha256": "24afaf13db4beadcad6b94da616963366e5dc90c85dbd39631738dfe4420c8cf",
+      "actual_sha256": "24afaf13db4beadcad6b94da616963366e5dc90c85dbd39631738dfe4420c8cf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/check_analytic_fluid_v1.py",
+      "expected_sha256": "b7af14fd6e36a2c4eeac4e00a245a9b550d3cb74430b8609048a42fcb1f99dfe",
+      "actual_sha256": "b7af14fd6e36a2c4eeac4e00a245a9b550d3cb74430b8609048a42fcb1f99dfe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/check_analytic_fluid_v2.py",
+      "expected_sha256": "72042452162f3e804ad3b798196a57427c960c78359b730836f4a36b75f416f2",
+      "actual_sha256": "72042452162f3e804ad3b798196a57427c960c78359b730836f4a36b75f416f2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/check_momenta_fraction_v1.py",
+      "expected_sha256": "148c062286982a9b6b7aa84b6edab0ff8ebfe93c4646bd308973b9c3b1004cf4",
+      "actual_sha256": "148c062286982a9b6b7aa84b6edab0ff8ebfe93c4646bd308973b9c3b1004cf4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/executed_check_analytic_fluid_v1.py.snapshot",
+      "expected_sha256": "b7af14fd6e36a2c4eeac4e00a245a9b550d3cb74430b8609048a42fcb1f99dfe",
+      "actual_sha256": "b7af14fd6e36a2c4eeac4e00a245a9b550d3cb74430b8609048a42fcb1f99dfe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/executed_check_analytic_fluid_v2.py.snapshot",
+      "expected_sha256": "72042452162f3e804ad3b798196a57427c960c78359b730836f4a36b75f416f2",
+      "actual_sha256": "72042452162f3e804ad3b798196a57427c960c78359b730836f4a36b75f416f2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/executed_check_momenta_fraction_v1.py.snapshot",
+      "expected_sha256": "148c062286982a9b6b7aa84b6edab0ff8ebfe93c4646bd308973b9c3b1004cf4",
+      "actual_sha256": "148c062286982a9b6b7aa84b6edab0ff8ebfe93c4646bd308973b9c3b1004cf4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/source_snapshot/HAND_DERIVATION_v1.md",
+      "expected_sha256": "41dc33bd1b0ac810d4c3da493b9fb34b433ecc1a1f5a06bca773a1b244ff1801",
+      "actual_sha256": "41dc33bd1b0ac810d4c3da493b9fb34b433ecc1a1f5a06bca773a1b244ff1801"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/source_snapshot/HAND_DERIVATION_v2.md",
+      "expected_sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "actual_sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/source_snapshot/MODE_AND_FRAME_CORRECTION_v2.json",
+      "expected_sha256": "9ef6f8c60e4ad2b12780bd48b18630d8438eb5565eca53bd3b31991211be3cfa",
+      "actual_sha256": "9ef6f8c60e4ad2b12780bd48b18630d8438eb5565eca53bd3b31991211be3cfa"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/source_snapshot/PROTOCOL_v1.json",
+      "expected_sha256": "b7d06776617627f79177b2db64ccb25baf4b4132f5382f4f7b46a5b7e0b82dfc",
+      "actual_sha256": "b7d06776617627f79177b2db64ccb25baf4b4132f5382f4f7b46a5b7e0b82dfc"
+    }
+  ]
+}

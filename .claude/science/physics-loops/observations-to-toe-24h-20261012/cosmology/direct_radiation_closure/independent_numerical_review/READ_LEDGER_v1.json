@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-10-13T04:56:36.074201+00:00",
+  "author_complete_reads": [
+    "HAND_DERIVATION_v1.md",
+    "HAND_DERIVATION_v2.md",
+    "DUST_SPEED_CORRECTION_v2.json",
+    "PROTOCOL_v1.json",
+    "NUMERICAL_FIXTURES_v1.json",
+    "SOURCE_LEDGER_v1.json",
+    "check_radiation_closure_v1.py",
+    "evidence_v1/FREEZE.json",
+    "evidence_v1/EXECUTION.json",
+    "evidence_v1/stdout.txt",
+    "evidence_v1/stderr.txt",
+    "data/FIRAS_monopole.txt"
+  ],
+  "author_result_scope": {
+    "path": "evidence_v1/RESULTS.json",
+    "all_top_level_sections_read": true,
+    "assertion_rows_exhaustively_accounted": 1195,
+    "thermal_rows": 3,
+    "FIRAS_rows": 43,
+    "local_grid_rows": 72,
+    "old_residual_rows": 24,
+    "background_histories": 6,
+    "background_state_components": 432,
+    "canonical_coordinate_rows": 36,
+    "endpoint_rows": 20,
+    "metadata_limitation": "Solver nfev/messages and quadrature error estimates are preserved metadata, not independently reproduced numerical claims."
+  },
+  "primary_scope": [
+    {
+      "file": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/Fixsen_2009_v2.pdf",
+      "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85",
+      "read": "All six extracted text pages; Table 2/page 5 rendered and visually inspected. Other figures not visually assessed."
+    },
+    {
+      "file": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/FIRAS_product.html",
+      "sha256": "e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
+      "read": "Complete scientific description via standard-library HTML parser."
+    },
+    {
+      "file": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/FIRAS_monopole.txt",
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "read": "Complete header plus all 43 five-column rows."
+    },
+    {
+      "file": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "read": "Header and h,k_B,c,G entries only; other constants not used."
+    }
+  ],
+  "download_read_scope": "Complete download receipt and all four empty download stderr files read. Earlier invalid NIST query pages only evidenced by the preserved parent ledger; not re-executed.",
+  "independence": "No positive-evidence program imports or executes author helpers. Own coverage script imports own v2 checker. Copied author function runs only as the zero-residue negative mutation; copied full author runner runs only for forced-p-acceleration mutation. Separate math review was not read for conclusions."
+}

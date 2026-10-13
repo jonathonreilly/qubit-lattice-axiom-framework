@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-13T04:57:35.313522+00:00",
+  "finding": "Literal p acceleration zero passes all 1195 original exact-trajectory checks; actual independent mutant retained.",
+  "revision": "Add54 canonical proper-time force states,7 controls each; original scientific functions unchanged by AST.",
+  "original_function_identity": [
+    "check",
+    "close",
+    "exact",
+    "symbolic_identities",
+    "thermal_calibration",
+    "local_functions",
+    "potential",
+    "rhs",
+    "algebra_grid",
+    "old_potential_responses",
+    "exact_background_integrations",
+    "endpoint_controls"
+  ],
+  "v1_sha256": "01cf3b23ccf55fd4ee8905368beef1b13dae58cb8270a5e51da19147aba53ee7",
+  "v2_sha256": "c86d2c5442593132b484ab8a7f03288f08b791207686fa4bde4f50b962ca3192",
+  "v1_immutable": true
+}

@@ -1,0 +1,7 @@
+{
+  "all_indented_equation_lines_identical": 24,
+  "complete_text_from_dust_system_onward_identical": true,
+  "only_affected_scope": "limiting-domain paragraph",
+  "original_sha256": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d",
+  "corrected_sha256": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99"
+}

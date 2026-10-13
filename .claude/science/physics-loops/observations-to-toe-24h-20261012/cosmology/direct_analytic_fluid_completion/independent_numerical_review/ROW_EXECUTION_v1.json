@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-10-13T05:13:19.162221+00:00",
+  "ended_at": "2026-10-13T05:13:19.630437+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_numerical_review/check_rows_v1.py"
+  ],
+  "exit_code": 0,
+  "script_sha256": "d0f7359931ac1709217089d70c5462c1eaf844253d0ebea68a70b3dcea10e33a",
+  "source_unchanged": true,
+  "review_plan_sha256": "f2f837d811a309e9d48bfd4864460e433f1fde4af46796bcff31831f8e7babb7"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "primary extraction first attempt",
+    "status": "failed before writes or reads",
+    "error": "ModuleNotFoundError: No module named bs4",
+    "recovery": "stdlib HTMLParser; no environment changes"
+  }
+]

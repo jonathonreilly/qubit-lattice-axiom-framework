@@ -1,0 +1,439 @@
+{
+  "checks_passed": 1519,
+  "checks_failed": 54,
+  "Omega_gamma": 5.046740289227271e-05,
+  "failures": [
+    {
+      "name": "off trajectory canonical chi acceleration 0",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6730330109116869,
+      "error": 0.6730330109116869,
+      "tolerance": 3.3460660218233737e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 1",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.093285042440116,
+      "error": 2.093285042440116,
+      "tolerance": 6.186570084880233e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 2",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.8629625779223227,
+      "error": 0.8629625779223227,
+      "tolerance": 3.7259251558446456e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 3",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.1332965863189086,
+      "error": 2.1332965863189086,
+      "tolerance": 6.266593172637817e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 4",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.9006089407503012,
+      "error": 0.9006089407503012,
+      "tolerance": 3.8012178815006023e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 5",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.6979405213661343,
+      "error": 2.6979405213661343,
+      "tolerance": 7.395881042732269e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 6",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.5906484181140325,
+      "error": 0.5906484181140325,
+      "tolerance": 3.181296836228065e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 7",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -1.6995942158427229,
+      "error": 1.6995942158427229,
+      "tolerance": 5.399188431685446e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 8",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.7990344137118175,
+      "error": 0.7990344137118175,
+      "tolerance": 3.5980688274236355e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 9",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -1.8199365858019405,
+      "error": 1.8199365858019405,
+      "tolerance": 5.639873171603881e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 10",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.9159841240310824,
+      "error": 0.9159841240310824,
+      "tolerance": 3.831968248062165e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 11",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.3999378380284075,
+      "error": 2.3999378380284075,
+      "tolerance": 6.799875676056815e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 12",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7609033974794059,
+      "error": 0.7609033974794059,
+      "tolerance": 3.5218067949588124e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 13",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6692425574696691,
+      "error": 0.6692425574696691,
+      "tolerance": 3.338485114939338e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 14",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7464894601158831,
+      "error": 0.7464894601158831,
+      "tolerance": 3.4929789202317664e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 15",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6532330324868969,
+      "error": 0.6532330324868969,
+      "tolerance": 3.3064660649737937e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 16",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.2919899013253122,
+      "error": 0.2919899013253122,
+      "tolerance": 2.5839798026506243e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 17",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7222368081880255,
+      "error": 0.7222368081880255,
+      "tolerance": 3.4444736163760514e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 18",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6604217214542105,
+      "error": 0.6604217214542105,
+      "tolerance": 3.320843442908421e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 19",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.1084906591928894,
+      "error": 2.1084906591928894,
+      "tolerance": 6.216981318385779e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 20",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.8628044840366265,
+      "error": 0.8628044840366265,
+      "tolerance": 3.725608968073253e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 21",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.1328834576674094,
+      "error": 2.1328834576674094,
+      "tolerance": 6.265766915334819e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 22",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.9006063427974859,
+      "error": 0.9006063427974859,
+      "tolerance": 3.801212685594972e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 23",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.6979398942576998,
+      "error": 2.6979398942576998,
+      "tolerance": 7.3958797885154e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 24",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.5793415602155055,
+      "error": 0.5793415602155055,
+      "tolerance": 3.1586831204310115e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 25",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -1.7127123474374768,
+      "error": 1.7127123474374768,
+      "tolerance": 5.425424694874953e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 26",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.7988818862901603,
+      "error": 0.7988818862901603,
+      "tolerance": 3.597763772580321e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 27",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -1.8195775733694244,
+      "error": 1.8195775733694244,
+      "tolerance": 5.639155146738849e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 28",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.915981469588326,
+      "error": 0.915981469588326,
+      "tolerance": 3.831962939176652e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 29",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.399937416114263,
+      "error": 2.399937416114263,
+      "tolerance": 6.799874832228526e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 30",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7608110964939867,
+      "error": 0.7608110964939867,
+      "tolerance": 3.5216221929879736e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 31",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6689315068435947,
+      "error": 0.6689315068435947,
+      "tolerance": 3.3378630136871896e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 32",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7463721114130079,
+      "error": 0.7463721114130079,
+      "tolerance": 3.492744222826016e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 33",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6529544683015944,
+      "error": 0.6529544683015944,
+      "tolerance": 3.305908936603189e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 34",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.29198679535794825,
+      "error": 0.29198679535794825,
+      "tolerance": 2.5839735907158963e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 35",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7222351152510269,
+      "error": 0.7222351152510269,
+      "tolerance": 3.444470230502054e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 36",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.4905551000274226,
+      "error": 0.4905551000274226,
+      "tolerance": 2.9811102000548453e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 37",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.291894818713676,
+      "error": 2.291894818713676,
+      "tolerance": 6.583789637427352e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 38",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.8590155144450963,
+      "error": 0.8590155144450963,
+      "tolerance": 3.7180310288901923e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 39",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.122990551485313,
+      "error": 2.122990551485313,
+      "tolerance": 6.245981102970626e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 40",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.9005438629693867,
+      "error": 0.9005438629693867,
+      "tolerance": 3.8010877259387735e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 41",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.697924812290768,
+      "error": 2.697924812290768,
+      "tolerance": 7.395849624581536e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 42",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.4321494945292029,
+      "error": 0.4321494945292029,
+      "tolerance": 2.864298989058406e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 43",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -1.8653867581620263,
+      "error": 1.8653867581620263,
+      "tolerance": 5.730773516324053e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 44",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.7952274503316967,
+      "error": 0.7952274503316967,
+      "tolerance": 3.5904549006633935e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 45",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -1.8109762701240613,
+      "error": 1.8109762701240613,
+      "tolerance": 5.621952540248123e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 46",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.9159176311764321,
+      "error": 0.9159176311764321,
+      "tolerance": 3.831835262352864e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 47",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -2.399927268959692,
+      "error": 2.399927268959692,
+      "tolerance": 6.799854537919385e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 48",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7578750734261028,
+      "error": 0.7578750734261028,
+      "tolerance": 3.5157501468522057e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 49",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6621625574934549,
+      "error": 0.6621625574934549,
+      "tolerance": 3.32432511498691e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 50",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7435589284242371,
+      "error": 0.7435589284242371,
+      "tolerance": 3.4871178568484746e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 51",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.6463501087505626,
+      "error": 0.6463501087505626,
+      "tolerance": 3.292700217501126e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 52",
+      "passed": false,
+      "actual": 0.0,
+      "expected": 0.2919118085427639,
+      "error": 0.2919118085427639,
+      "tolerance": 2.583823617085528e-10
+    },
+    {
+      "name": "off trajectory canonical chi acceleration 53",
+      "passed": false,
+      "actual": 0.0,
+      "expected": -0.7221934497771608,
+      "error": 0.7221934497771608,
+      "tolerance": 3.444386899554322e-10
+    }
+  ]
+}

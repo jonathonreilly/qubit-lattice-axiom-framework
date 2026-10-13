@@ -1,0 +1,14 @@
+# Independent numerical review recipe
+
+Scope: the frozen two-field radiation block only. The reviewer does not replace the parent's construction, review the separate analytic radiation-field completion, certify a no-go packet, or claim an empirical likelihood. All author sources/results and primary bytes are snapshotted before controls.
+
+1. Read all author source and execution records. Account for every result/check row through exhaustive parsing and independent numerical recomputation. Preserve an honest distinction between records read, numerical leaves recomputed, and run statistics merely accounted for.
+2. Read all six pages of the downloaded Fixsen primary PDF, visually inspect Table 2 on page 5, read the complete scientific text of the NASA product page and the table header/all 43 rows, and inspect the CODATA header and relevant SI constant entries. The absolute FIRAS column is explicitly synthesized around 2.725 K; its rounding check is a provenance diagnostic, not a blackbody test.
+3. Independently compute photon densities from phase-space integration, using high precision and analytic zeta/Gamma integral values. Recompute all 43 spectral intervals, including the stationary point of Planck intensity when needed. Recompute residual summaries without claiming covariance-aware inference.
+4. Differentiate the old forced Friedmann function along the one-parameter conserved-density curve at 90+ digits. Independently evaluate each residual and whether zero is excluded by the actual assertion tolerance.
+5. Use z=S^(1/6) as an independent field coordinate. Compute canonical potential derivatives by dividing by dchi/dz, rather than copying the author's x=ln(S) formulas. Reconstruct every local-grid quantity, stable Hessian eigenvalues, and the actual global quadratic minimum.
+6. Inspect all stored history components, independently integrate canonical field velocities using a different ODE method/variables, and independently integrate the field coordinate along N. Track denominator positivity. Off-trajectory canonical force evaluations distinguish the actual equations from a forced p=-3 identity.
+7. Use a scaled, nonsingular z=S^(1/6) endpoint quadrature at high precision. Reconstruct all endpoint rows and repeated canonical derivatives, not only the final coefficient.
+8. On copied author files only, execute a real zero-residue mutation and a real forced-p-acceleration mutation. A passing mutant is evidence of a test sensitivity gap; it does not by itself falsify the independently derived background. No assertions or tolerances will be modified. Record exact source diffs, raw stdout/stderr, outcomes, and failure history.
+
+Initial operational failure: the optional BeautifulSoup import was unavailable. It failed before source reads/writes. The source extraction was recovered with the standard-library HTMLParser; no environment changes were made.

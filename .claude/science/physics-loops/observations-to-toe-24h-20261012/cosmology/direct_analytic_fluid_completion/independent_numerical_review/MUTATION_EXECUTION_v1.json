@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-13T05:14:34.405745+00:00",
+  "ended_at": "2026-10-13T05:14:37.755731+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_numerical_review/run_negative_mutations_v1.py"
+  ],
+  "exit_code": 0,
+  "script_sha256": "d47179dc2b809f63ce8dc6d1db0149b2d5685391a3cc63c5913674d3e683cc9b",
+  "source_unchanged": true
+}

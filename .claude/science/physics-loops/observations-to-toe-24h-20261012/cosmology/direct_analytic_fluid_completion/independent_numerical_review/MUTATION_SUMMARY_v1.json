@@ -1,0 +1,70 @@
+{
+  "script_sha256": "d47179dc2b809f63ce8dc6d1db0149b2d5685391a3cc63c5913674d3e683cc9b",
+  "records": [
+    {
+      "mutation": "omit_connection",
+      "started_at": "2026-10-13T05:14:34.450576+00:00",
+      "ended_at": "2026-10-13T05:14:35.172054+00:00",
+      "exit_code": 1,
+      "original_source_sha256": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+      "mutant_source_sha256": "b9ef1144cbc1230024edafc08cdeb091d5fa29d49c86f7d24807421d0d7115ed",
+      "source_unchanged": true,
+      "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+      "preserved_failure_count": 60,
+      "failure_families": {
+        "off trajectory full KG": 60
+      },
+      "max_tolerance_units": 395531519.9398807,
+      "mutation_detected_by_actual_control_failure": true
+    },
+    {
+      "mutation": "omit_dust_mass_exchange",
+      "started_at": "2026-10-13T05:14:35.178311+00:00",
+      "ended_at": "2026-10-13T05:14:36.046905+00:00",
+      "exit_code": 1,
+      "original_source_sha256": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+      "mutant_source_sha256": "4ef85917819df24aa3629b6412cdeeec9cbaf210c78718b32d7fdc495e473b7b",
+      "source_unchanged": true,
+      "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+      "preserved_failure_count": 48,
+      "failure_families": {
+        "off trajectory full conservation": 48
+      },
+      "max_tolerance_units": 2389633.397745353,
+      "mutation_detected_by_actual_control_failure": true
+    },
+    {
+      "mutation": "omit_scalar_matter_force",
+      "started_at": "2026-10-13T05:14:36.053288+00:00",
+      "ended_at": "2026-10-13T05:14:36.885380+00:00",
+      "exit_code": 1,
+      "original_source_sha256": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+      "mutant_source_sha256": "6210b014bcd609bc0a98eebd822197f670df0cd8697bc62e506b9ad6f829afec",
+      "source_unchanged": true,
+      "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+      "preserved_failure_count": 48,
+      "failure_families": {
+        "off trajectory full KG": 48
+      },
+      "max_tolerance_units": 569862633.1129011,
+      "mutation_detected_by_actual_control_failure": true
+    },
+    {
+      "mutation": "omit_u_restoring_force",
+      "started_at": "2026-10-13T05:14:36.891560+00:00",
+      "ended_at": "2026-10-13T05:14:37.743463+00:00",
+      "exit_code": 1,
+      "original_source_sha256": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+      "mutant_source_sha256": "cf2c54e4a43ce4b5665a50865bb705786ce2416855e8a86584c8839fdc4336a1",
+      "source_unchanged": true,
+      "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+      "preserved_failure_count": 60,
+      "failure_families": {
+        "off trajectory full KG": 60
+      },
+      "max_tolerance_units": 2699443590.0124364,
+      "mutation_detected_by_actual_control_failure": true
+    }
+  ],
+  "all_four_detected": true
+}

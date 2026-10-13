@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-10-13T04:44:26.307315+00:00",
+  "status": "before execution",
+  "parent_authored": true,
+  "target": "Analytic three-field positive-metric completion of observed-photon calibrated dust/radiation history; vacuum selection only in homogeneous model",
+  "new_assumptions": [
+    "additional radiation scalar",
+    "positive curved field metric K(x,y)",
+    "positive restoring nu u^2 term tied to supplied H_v",
+    "same supplied ideal fluids, universal metric coupling, thermal photon calibration"
+  ],
+  "first_decisive_checks": [
+    "covariant scalar equations independently, not only Friedmann or total energy",
+    "energy-dissipation identity off trajectory including matter source exchange",
+    "compact energy sublevel and complete invariant-set argument",
+    "canonical vacuum mass eigenvalues and exact/relative mode distinction"
+  ],
+  "prospective_parameters": {
+    "a": [
+      1e-06,
+      0.00040016006402561027,
+      0.01
+    ],
+    "nu": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "H0_km_per_s_Mpc": 70.0,
+    "m": 0.3,
+    "photon_density_input": "direct_radiation_closure/evidence_v1/RESULTS.json, pending independent numeric check",
+    "normalization": "H0=1 for target trajectories; H_v=1 for abstract finite-energy control cases"
+  },
+  "planned_checks": {
+    "symbolic": "exact identities, full metric connection and field equations",
+    "independent": "focused mathematical review first, numerical routes separately if pursued",
+    "numeric": "freeze source/fixtures/tolerances before execution; compare distinct coordinate/time formulations and preserve actual failures"
+  },
+  "not_claimed": [
+    "TOE",
+    "new independent empirical fit",
+    "full spacetime or quantum stability",
+    "selection of observed finite-time history or initial entropy"
+  ]
+}

@@ -1,0 +1,16 @@
+dust full-action limit
+radiation full-action limit
+transverse full-action limits
+missing velocity-domain counterexample
+{
+  "passed": 94,
+  "failed": 0,
+  "failures": [],
+  "counterexample": {
+    "conditions": "x=t -> infinity, y=0, y_N=t/5, r=0, a=1, U=V=0, P=-3/2, W=1",
+    "limiting_F": "75/56",
+    "limiting_P_N": "-3/100",
+    "claimed_without_velocity_condition_F": "4/3",
+    "claimed_without_velocity_condition_P_N": "0"
+  }
+}

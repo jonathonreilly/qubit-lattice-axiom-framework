@@ -20,3 +20,7 @@ require their own canonical port and review before a further milestone PR.
 They inherit neither nonlinear galaxy fits nor a relativistic detector model.
 
 The conformal/nonconformal/tensor-scalar and quantum-clock reconstruction is the next coherent milestone; clock focused review remains active. Exact PR9507 final evidence is copied under milestones/matter_readout. No science has been merged.
+
+## Updated cosmology delivery 2026-10-13T05:41:46.578275+00:00
+
+PR9509 metric/clock is OPEN and attached atfa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9; all three gates passed. Earlier PR9501,9503,9505,9507 remain attached; no merge. Combined cosmology draft in cosmology-reconstruction-20261013 remains pending actual N1-N8 five-family coverage. Complete recovery is in milestones/cosmology_pending/PENDING_COSMOLOGY_UNIT_v1.tar.gz. No canonical execution/gates or PR was invented. A distinct positive analytic construction now has complete source checks; independent scope advice is underway before any separate canonical port. Epoch and matter-vacuum are new checked/in-progress campaign source, not yet publication-ready units.

@@ -1,0 +1,30 @@
+{
+  "preserved_prior_extraction_failure": {
+    "exception": "ModuleNotFoundError: No module named bs4",
+    "raw": "primary_extraction_failure_v1.stderr.txt",
+    "recovery": "stdlib HTMLParser; no environment mutation"
+  },
+  "reviewer_v1": {
+    "passed": 3607,
+    "failed": 5,
+    "results": "RESULTS_v1.json",
+    "diagnosis": "Overstrict 32-digit U-series comparison after 70-digit subtraction and amplification by denominator down to 1e-49. Max actual coefficient discrepancy 1.414e-23.",
+    "correction": "REVIEWER_CONDITIONING_CORRECTION_v1_to_v2.diff",
+    "final": "RESULTS_v2.json"
+  },
+  "mutations": {
+    "zero_old_residual": {
+      "expected_failures": 24,
+      "passes": 0,
+      "results": "mutations/zero_old_residual/RESULTS.json"
+    },
+    "forced_p_acceleration": {
+      "unexpected_passes": 1195,
+      "failed_assertions": 0,
+      "returncode": 0,
+      "results": "mutations/forced_p_acceleration/RESULTS.json",
+      "disposition": "R1 open for frozen v1 source"
+    }
+  },
+  "author_history": "All original author evidence retained; first author complete run had no execution/assertion failures. Dust-speed v1 typo corrected before execution, with both versions pinned. Earlier NIST malformed-query failure remains author-reported."
+}

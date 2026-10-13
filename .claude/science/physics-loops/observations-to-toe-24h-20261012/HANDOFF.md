@@ -61,3 +61,19 @@ pass atfa25be8742ef3ce745cdd720fdc9f8bb7a6a9fc9; no merge. Earlier galaxy,
 quantum, matter, charge, clock and body results/limitations remain in their
 records. No TOE claimed. At16:38write FINAL_REPORT; at16:53stop owned research
 jobs, summarize honestly, pause existing heartbeat using runtime AUTOMATION.json.
+
+## Direct-author continuation 2026-10-13T05:12:28.457110+00:00
+
+Radiation v2 closes actual forced-p-acceleration test gap:1573 parent controls;1244 affected independent controls;118+84 identities verified. Analytic three-field first run1492 controls passes; full proof/34 identities checked, implementation review active. Parent now derives radiation/dust limiting dynamics and two dust scaling equilibria.
+
+Personally implement and freeze epoch-selection Jacobian/limit/integration checks; inspect analytic implementation and epoch proof review; checkpoint coherent source and preserve packet limitations.
+
+Original deadline unchanged. Latest pushed checkpoint947dacb58e82eeb9359b066787d89f380ee56cf0. No detached author/supervisor restart or cancelled campaign activity.
+
+## Direct-author continuation 2026-10-13T05:41:46.578275+00:00
+
+Analytic construction:1492 parent controls and complete independent numerical check15068+470; parent34+102 path identities. Epoch194 parent controls;73+21 mathematical checks and23 identities; implementation review active. Parent new matter-vacuum derivation and measured input ledger prepared.
+
+Personally implement/freeze matter-vacuum quantum normalization and nonlinear response checks; inspect epoch implementation and analytic delivery-scope reviews; checkpoint source and prepare permitted milestone.
+
+Deadline and ownership unchanged. Source reports in each block distinguish internal checks from observations. Retired workers remain stopped.

@@ -1,0 +1,13 @@
+{
+  "start": "2026-10-13T04:54:45.034641+00:00",
+  "end": "2026-10-13T04:54:45.074924+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/check_momenta_fraction_v1.py"
+  ],
+  "exit_code": 0,
+  "source_sha256": "148c062286982a9b6b7aa84b6edab0ff8ebfe93c4646bd308973b9c3b1004cf4",
+  "source_unchanged": true,
+  "timeout_seconds": 30,
+  "threads": 1
+}

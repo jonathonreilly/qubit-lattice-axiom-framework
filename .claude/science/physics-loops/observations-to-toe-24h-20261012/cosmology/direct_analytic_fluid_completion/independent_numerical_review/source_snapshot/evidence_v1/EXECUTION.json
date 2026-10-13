@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/check_analytic_fluid_v1.py",
+    "--output-json",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/evidence_v1/RESULTS.json"
+  ],
+  "started_at": "2026-10-13T05:04:06.676470+00:00",
+  "ended_at": "2026-10-13T05:04:44.475143+00:00",
+  "elapsed_seconds": 37.80019141593948,
+  "exit_code": 0,
+  "worker_pid": 55537,
+  "source_unchanged": {
+    "check_analytic_fluid_v1.py": true,
+    "NUMERICAL_FIXTURES_v1.json": true,
+    "HAND_DERIVATION_v1.md": true,
+    "HAND_DERIVATION_v2.md": true,
+    "MODE_AND_FRAME_CORRECTION_v2.json": true,
+    "PROTOCOL_v1.json": true,
+    "CALIBRATION_SCOPE_v1.json": true
+  }
+}

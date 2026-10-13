@@ -1,0 +1,17 @@
+begin thermal
+complete thermal
+begin grid
+complete grid
+begin old_residue
+complete old_residue
+begin histories
+complete histories
+begin endpoint
+complete endpoint
+begin author_accounting
+complete author_accounting
+{
+  "passed": 3612,
+  "failed": 0,
+  "failures": []
+}

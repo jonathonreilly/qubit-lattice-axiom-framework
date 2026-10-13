@@ -1,0 +1,4289 @@
+{
+  "method": "stdlib Fraction coordinate-momentum Euler--Lagrange equations; no Christoffels or author helpers",
+  "script_sha256": "148c062286982a9b6b7aa84b6edab0ff8ebfe93c4646bd308973b9c3b1004cf4",
+  "rows": [
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "1000001/2500001000000",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1000001/515625375000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-307000307/302000194000000",
+        "307000307/679500436500000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "37000037/7968757687500",
+        "-37000037/6375006150000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "1000001/2500001000000",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1000001/515625375000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-307000307/302000194000000",
+        "307000307/679500436500000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "1",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "37000037/7968757687500",
+        "-37000037/6375006150000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "9/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "9/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "1000001/2500001000000",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "9/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1000001/515625375000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "9/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-307000307/302000194000000",
+        "307000307/679500436500000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "9/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "37000037/7968757687500",
+        "-37000037/6375006150000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "1000001/2500001000000",
+        "0"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1000001/515625375000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-307000307/302000194000000",
+        "307000307/679500436500000"
+      ]
+    },
+    {
+      "s": "1/1000",
+      "a": "1/1000000",
+      "nu": "4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "37000037/7968757687500",
+        "-37000037/6375006150000"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "2501/15627500",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "10004/12894375"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-767807/1887985000",
+        "767807/4247966250"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "370148/199295625",
+        "-92537/39859125"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "2501/15627500",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "10004/12894375"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-767807/1887985000",
+        "767807/4247966250"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "1",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "370148/199295625",
+        "-92537/39859125"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "9/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "9/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "2501/15627500",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "9/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "10004/12894375"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "9/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-767807/1887985000",
+        "767807/4247966250"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "9/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "370148/199295625",
+        "-92537/39859125"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "2501/15627500",
+        "0"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "10004/12894375"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-767807/1887985000",
+        "767807/4247966250"
+      ]
+    },
+    {
+      "s": "1/50",
+      "a": "1/2500",
+      "nu": "4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "370148/199295625",
+        "-92537/39859125"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "101/25100",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "404/20775"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-31007/3039400",
+        "31007/6838650"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "14948/321825",
+        "-3737/64365"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "101/25100",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "404/20775"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-31007/3039400",
+        "31007/6838650"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "1",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "14948/321825",
+        "-3737/64365"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "9/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "9/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "101/25100",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "9/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "404/20775"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "9/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-31007/3039400",
+        "31007/6838650"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "9/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "14948/321825",
+        "-3737/64365"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "101/25100",
+        "0"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "404/20775"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-31007/3039400",
+        "31007/6838650"
+      ]
+    },
+    {
+      "s": "1/10",
+      "a": "1/100",
+      "nu": "4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "14948/321825",
+        "-3737/64365"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "40/13",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1280/129"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-3070/539",
+        "12280/4851"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "23680/1239",
+        "-29600/1239"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "40/13",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1280/129"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-3070/539",
+        "12280/4851"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "1",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "23680/1239",
+        "-29600/1239"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "9/4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "9/4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "40/13",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "9/4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1280/129"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "9/4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-3070/539",
+        "12280/4851"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "9/4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "23680/1239",
+        "-29600/1239"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "4",
+      "x": "0",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "4",
+      "x": "1",
+      "y": "0",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "40/13",
+        "0"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "4",
+      "x": "0",
+      "y": "2",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "0",
+        "1280/129"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "4",
+      "x": "-3/2",
+      "y": "2/3",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "-3070/539",
+        "12280/4851"
+      ]
+    },
+    {
+      "s": "2",
+      "a": "4",
+      "nu": "4",
+      "x": "4",
+      "y": "-5",
+      "EL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "omitted_metric_derivative_residual": [
+        "0",
+        "23680/1239",
+        "-29600/1239"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Euler_Lagrange_row_0_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_0_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_0_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_0",
+      "pass": true,
+      "details": {
+        "energy": "8821960547/3528000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_1_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_1_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_1_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_1",
+      "pass": true,
+      "details": "1/1000000"
+    },
+    {
+      "name": "compact_sublevel_row_1",
+      "pass": true,
+      "details": {
+        "energy": "7102652148684641/2205000882000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_2_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_2_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_2_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_2",
+      "pass": true,
+      "details": "1/187500"
+    },
+    {
+      "name": "compact_sublevel_row_2",
+      "pass": true,
+      "details": {
+        "energy": "1516276311886213/606375441000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_3_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_3_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_3_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_3",
+      "pass": true,
+      "details": "307/108000000"
+    },
+    {
+      "name": "compact_sublevel_row_3",
+      "pass": true,
+      "details": {
+        "energy": "10540111781578243/2557096042636800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_4_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_4_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_4_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_4",
+      "pass": true,
+      "details": "37/750000"
+    },
+    {
+      "name": "compact_sublevel_row_4",
+      "pass": true,
+      "details": {
+        "energy": "262960750409600423/18742518081000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_5_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_5_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_5_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_5",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_5",
+      "pass": true,
+      "details": {
+        "energy": "9298240547/3528000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_6_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_6_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_6_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_6",
+      "pass": true,
+      "details": "1/1000000"
+    },
+    {
+      "name": "compact_sublevel_row_6",
+      "pass": true,
+      "details": {
+        "energy": "7400327267754641/2205000882000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_7_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_7_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_7_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_7",
+      "pass": true,
+      "details": "1/187500"
+    },
+    {
+      "name": "compact_sublevel_row_7",
+      "pass": true,
+      "details": {
+        "energy": "1598136996421213/606375441000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_8_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_8_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_8_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_8",
+      "pass": true,
+      "details": "307/108000000"
+    },
+    {
+      "name": "compact_sublevel_row_8",
+      "pass": true,
+      "details": {
+        "energy": "10885319747334211/2557096042636800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_9_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_9_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_9_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_9",
+      "pass": true,
+      "details": "37/750000"
+    },
+    {
+      "name": "compact_sublevel_row_9",
+      "pass": true,
+      "details": {
+        "energy": "265490990350535423/18742518081000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_10_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_10_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_10_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_10",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_10",
+      "pass": true,
+      "details": {
+        "energy": "10092040547/3528000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_11_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_11_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_11_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_11",
+      "pass": true,
+      "details": "1/1000000"
+    },
+    {
+      "name": "compact_sublevel_row_11",
+      "pass": true,
+      "details": {
+        "energy": "7896452466204641/2205000882000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_12_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_12_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_12_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_12",
+      "pass": true,
+      "details": "1/187500"
+    },
+    {
+      "name": "compact_sublevel_row_12",
+      "pass": true,
+      "details": {
+        "energy": "1734571470646213/606375441000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_13_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_13_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_13_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_13",
+      "pass": true,
+      "details": "307/108000000"
+    },
+    {
+      "name": "compact_sublevel_row_13",
+      "pass": true,
+      "details": {
+        "energy": "11460666356927491/2557096042636800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_14_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_14_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_14_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_14",
+      "pass": true,
+      "details": "37/750000"
+    },
+    {
+      "name": "compact_sublevel_row_14",
+      "pass": true,
+      "details": {
+        "energy": "269708056918760423/18742518081000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_15_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_15_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_15_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_15",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_15",
+      "pass": true,
+      "details": {
+        "energy": "11203360547/3528000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_16_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_16_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_16_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_16",
+      "pass": true,
+      "details": "1/1000000"
+    },
+    {
+      "name": "compact_sublevel_row_16",
+      "pass": true,
+      "details": {
+        "energy": "8591027744034641/2205000882000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_17_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_17_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_17_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_17",
+      "pass": true,
+      "details": "1/187500"
+    },
+    {
+      "name": "compact_sublevel_row_17",
+      "pass": true,
+      "details": {
+        "energy": "1925579734561213/606375441000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_18_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_18_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_18_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_18",
+      "pass": true,
+      "details": "307/108000000"
+    },
+    {
+      "name": "compact_sublevel_row_18",
+      "pass": true,
+      "details": {
+        "energy": "12266151610358083/2557096042636800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_19_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_19_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_19_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_19",
+      "pass": true,
+      "details": "37/750000"
+    },
+    {
+      "name": "compact_sublevel_row_19",
+      "pass": true,
+      "details": {
+        "energy": "275611950114275423/18742518081000000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_20_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_20_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_20_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_20",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_20",
+      "pass": true,
+      "details": {
+        "energy": "22055447/8820000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_21_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_21_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_21_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_21",
+      "pass": true,
+      "details": "1/2500"
+    },
+    {
+      "name": "compact_sublevel_row_21",
+      "pass": true,
+      "details": {
+        "energy": "89118107077/27566910000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_22_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_22_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_22_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_22",
+      "pass": true,
+      "details": "4/1875"
+    },
+    {
+      "name": "compact_sublevel_row_22",
+      "pass": true,
+      "details": {
+        "energy": "151704922333/60655140000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_23_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_23_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_23_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_23",
+      "pass": true,
+      "details": "307/270000"
+    },
+    {
+      "name": "compact_sublevel_row_23",
+      "pass": true,
+      "details": {
+        "energy": "8288887130723/1998243324000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_24_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_24_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_24_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_24",
+      "pass": true,
+      "details": "37/1875"
+    },
+    {
+      "name": "compact_sublevel_row_24",
+      "pass": true,
+      "details": {
+        "energy": "6665103816587/468743310000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_25_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_25_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_25_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_25",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_25",
+      "pass": true,
+      "details": {
+        "energy": "23246147/8820000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_26_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_26_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_26_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_26",
+      "pass": true,
+      "details": "1/2500"
+    },
+    {
+      "name": "compact_sublevel_row_26",
+      "pass": true,
+      "details": {
+        "energy": "92839639927/27566910000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_27_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_27_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_27_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_27",
+      "pass": true,
+      "details": "4/1875"
+    },
+    {
+      "name": "compact_sublevel_row_27",
+      "pass": true,
+      "details": {
+        "energy": "159893366233/60655140000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_28_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_28_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_28_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_28",
+      "pass": true,
+      "details": "307/270000"
+    },
+    {
+      "name": "compact_sublevel_row_28",
+      "pass": true,
+      "details": {
+        "energy": "8558649979463/1998243324000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_29_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_29_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_29_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_29",
+      "pass": true,
+      "details": "37/1875"
+    },
+    {
+      "name": "compact_sublevel_row_29",
+      "pass": true,
+      "details": {
+        "energy": "6728384163437/468743310000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_30_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_30_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_30_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_30",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_30",
+      "pass": true,
+      "details": {
+        "energy": "25230647/8820000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_31_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_31_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_31_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_31",
+      "pass": true,
+      "details": "1/2500"
+    },
+    {
+      "name": "compact_sublevel_row_31",
+      "pass": true,
+      "details": {
+        "energy": "99042194677/27566910000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_32_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_32_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_32_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_32",
+      "pass": true,
+      "details": "4/1875"
+    },
+    {
+      "name": "compact_sublevel_row_32",
+      "pass": true,
+      "details": {
+        "energy": "173540772733/60655140000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_33_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_33_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_33_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_33",
+      "pass": true,
+      "details": "307/270000"
+    },
+    {
+      "name": "compact_sublevel_row_33",
+      "pass": true,
+      "details": {
+        "energy": "9008254727363/1998243324000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_34_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_34_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_34_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_34",
+      "pass": true,
+      "details": "37/1875"
+    },
+    {
+      "name": "compact_sublevel_row_34",
+      "pass": true,
+      "details": {
+        "energy": "6833851408187/468743310000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_35_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_35_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_35_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_35",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_35",
+      "pass": true,
+      "details": {
+        "energy": "28008947/8820000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_36_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_36_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_36_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_36",
+      "pass": true,
+      "details": "1/2500"
+    },
+    {
+      "name": "compact_sublevel_row_36",
+      "pass": true,
+      "details": {
+        "energy": "107725771327/27566910000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_37_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_37_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_37_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_37",
+      "pass": true,
+      "details": "4/1875"
+    },
+    {
+      "name": "compact_sublevel_row_37",
+      "pass": true,
+      "details": {
+        "energy": "192647141833/60655140000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_38_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_38_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_38_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_38",
+      "pass": true,
+      "details": "307/270000"
+    },
+    {
+      "name": "compact_sublevel_row_38",
+      "pass": true,
+      "details": {
+        "energy": "9637701374423/1998243324000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_39_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_39_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_39_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_39",
+      "pass": true,
+      "details": "37/1875"
+    },
+    {
+      "name": "compact_sublevel_row_39",
+      "pass": true,
+      "details": {
+        "energy": "6981505550837/468743310000",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_40_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_40_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_40_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_40",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_40",
+      "pass": true,
+      "details": {
+        "energy": "882743/352800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_41_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_41_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_41_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_41",
+      "pass": true,
+      "details": "1/100"
+    },
+    {
+      "name": "compact_sublevel_row_41",
+      "pass": true,
+      "details": {
+        "energy": "145513597/44276400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_42_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_42_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_42_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_42",
+      "pass": true,
+      "details": "4/75"
+    },
+    {
+      "name": "compact_sublevel_row_42",
+      "pass": true,
+      "details": {
+        "energy": "9828493/3909024",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_43_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_43_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_43_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_43",
+      "pass": true,
+      "details": "307/10800"
+    },
+    {
+      "name": "compact_sublevel_row_43",
+      "pass": true,
+      "details": {
+        "energy": "13732428947/3216900960",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_44_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_44_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_44_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_44",
+      "pass": true,
+      "details": "37/75"
+    },
+    {
+      "name": "compact_sublevel_row_44",
+      "pass": true,
+      "details": {
+        "energy": "11462941187/756932400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_45_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_45_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_45_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_45",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_45",
+      "pass": true,
+      "details": {
+        "energy": "930371/352800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_46_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_46_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_46_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_46",
+      "pass": true,
+      "details": "1/100"
+    },
+    {
+      "name": "compact_sublevel_row_46",
+      "pass": true,
+      "details": {
+        "energy": "151490911/44276400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_47_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_47_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_47_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_47",
+      "pass": true,
+      "details": "4/75"
+    },
+    {
+      "name": "compact_sublevel_row_47",
+      "pass": true,
+      "details": {
+        "energy": "258905281/97725600",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_48_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_48_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_48_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_48",
+      "pass": true,
+      "details": "307/10800"
+    },
+    {
+      "name": "compact_sublevel_row_48",
+      "pass": true,
+      "details": {
+        "energy": "70833552883/16084504800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_49_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_49_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_49_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_49",
+      "pass": true,
+      "details": "37/75"
+    },
+    {
+      "name": "compact_sublevel_row_49",
+      "pass": true,
+      "details": {
+        "energy": "11565127061/756932400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_50_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_50_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_50_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_50",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_50",
+      "pass": true,
+      "details": {
+        "energy": "1009751/352800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_51_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_51_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_51_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_51",
+      "pass": true,
+      "details": "1/100"
+    },
+    {
+      "name": "compact_sublevel_row_51",
+      "pass": true,
+      "details": {
+        "energy": "161453101/44276400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_52_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_52_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_52_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_52",
+      "pass": true,
+      "details": "4/75"
+    },
+    {
+      "name": "compact_sublevel_row_52",
+      "pass": true,
+      "details": {
+        "energy": "280893541/97725600",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_53_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_53_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_53_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_53",
+      "pass": true,
+      "details": "307/10800"
+    },
+    {
+      "name": "compact_sublevel_row_53",
+      "pass": true,
+      "details": {
+        "energy": "74452566463/16084504800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_54_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_54_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_54_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_54",
+      "pass": true,
+      "details": "37/75"
+    },
+    {
+      "name": "compact_sublevel_row_54",
+      "pass": true,
+      "details": {
+        "energy": "11735436851/756932400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_55_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_55_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_55_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_55",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_55",
+      "pass": true,
+      "details": {
+        "energy": "1120883/352800",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_56_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_56_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_56_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_56",
+      "pass": true,
+      "details": "1/100"
+    },
+    {
+      "name": "compact_sublevel_row_56",
+      "pass": true,
+      "details": {
+        "energy": "175400167/44276400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_57_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_57_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_57_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_57",
+      "pass": true,
+      "details": "4/75"
+    },
+    {
+      "name": "compact_sublevel_row_57",
+      "pass": true,
+      "details": {
+        "energy": "62335421/19545120",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_58_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_58_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_58_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_58",
+      "pass": true,
+      "details": "307/10800"
+    },
+    {
+      "name": "compact_sublevel_row_58",
+      "pass": true,
+      "details": {
+        "energy": "3180767419/643380192",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_59_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_59_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_59_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_59",
+      "pass": true,
+      "details": "37/75"
+    },
+    {
+      "name": "compact_sublevel_row_59",
+      "pass": true,
+      "details": {
+        "energy": "11973870557/756932400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_60_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_60_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_60_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_60",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_60",
+      "pass": true,
+      "details": {
+        "energy": "275249/88200",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_61_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_61_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_61_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_61",
+      "pass": true,
+      "details": "4"
+    },
+    {
+      "name": "compact_sublevel_row_61",
+      "pass": true,
+      "details": {
+        "energy": "7525909/1146600",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_62_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_62_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_62_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_62",
+      "pass": true,
+      "details": "64/3"
+    },
+    {
+      "name": "compact_sublevel_row_62",
+      "pass": true,
+      "details": {
+        "energy": "29874907/3792600",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_63_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_63_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_63_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_63",
+      "pass": true,
+      "details": "307/27"
+    },
+    {
+      "name": "compact_sublevel_row_63",
+      "pass": true,
+      "details": {
+        "energy": "1707907441/142619400",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_64_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_64_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_64_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_64",
+      "pass": true,
+      "details": "592/3"
+    },
+    {
+      "name": "compact_sublevel_row_64",
+      "pass": true,
+      "details": {
+        "energy": "3590147189/36426600",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_65_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_65_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_65_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_65",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_65",
+      "pass": true,
+      "details": {
+        "energy": "71789/22050",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_66_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_66_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_66_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_66",
+      "pass": true,
+      "details": "4"
+    },
+    {
+      "name": "compact_sublevel_row_66",
+      "pass": true,
+      "details": {
+        "energy": "76807/11466",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_67_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_67_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_67_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_67",
+      "pass": true,
+      "details": "64/3"
+    },
+    {
+      "name": "compact_sublevel_row_67",
+      "pass": true,
+      "details": {
+        "energy": "7596727/948150",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_68_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_68_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_68_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_68",
+      "pass": true,
+      "details": "307/27"
+    },
+    {
+      "name": "compact_sublevel_row_68",
+      "pass": true,
+      "details": {
+        "energy": "86358053/7130970",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_69_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_69_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_69_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_69",
+      "pass": true,
+      "details": "592/3"
+    },
+    {
+      "name": "compact_sublevel_row_69",
+      "pass": true,
+      "details": {
+        "energy": "179753239/1821330",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_70_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_70_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_70_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_70",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_70",
+      "pass": true,
+      "details": {
+        "energy": "307001/88200",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_71_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_71_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_71_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_71",
+      "pass": true,
+      "details": "4"
+    },
+    {
+      "name": "compact_sublevel_row_71",
+      "pass": true,
+      "details": {
+        "energy": "1587737/229320",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_72_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_72_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_72_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_72",
+      "pass": true,
+      "details": "64/3"
+    },
+    {
+      "name": "compact_sublevel_row_72",
+      "pass": true,
+      "details": {
+        "energy": "31240243/3792600",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_73_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_73_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_73_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_73",
+      "pass": true,
+      "details": "307/27"
+    },
+    {
+      "name": "compact_sublevel_row_73",
+      "pass": true,
+      "details": {
+        "energy": "70370017/5704776",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_74_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_74_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_74_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_74",
+      "pass": true,
+      "details": "592/3"
+    },
+    {
+      "name": "compact_sublevel_row_74",
+      "pass": true,
+      "details": {
+        "energy": "720652153/7285320",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_75_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_75_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_75_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_75",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "compact_sublevel_row_75",
+      "pass": true,
+      "details": {
+        "energy": "41848/11025",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_76_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_76_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_76_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_76",
+      "pass": true,
+      "details": "4"
+    },
+    {
+      "name": "compact_sublevel_row_76",
+      "pass": true,
+      "details": {
+        "energy": "1037483/143325",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_77_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_77_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_77_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_77",
+      "pass": true,
+      "details": "64/3"
+    },
+    {
+      "name": "compact_sublevel_row_77",
+      "pass": true,
+      "details": {
+        "energy": "4054364/474075",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_78_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_78_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_78_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_78",
+      "pass": true,
+      "details": "307/27"
+    },
+    {
+      "name": "compact_sublevel_row_78",
+      "pass": true,
+      "details": {
+        "energy": "225521942/17827425",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "Euler_Lagrange_row_79_component_0",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_79_component_1",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "Euler_Lagrange_row_79_component_2",
+      "pass": true,
+      "details": "0"
+    },
+    {
+      "name": "kinetic_row_79",
+      "pass": true,
+      "details": "592/3"
+    },
+    {
+      "name": "compact_sublevel_row_79",
+      "pass": true,
+      "details": {
+        "energy": "451841893/4553325",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "omitted_metric_derivatives_detected",
+      "pass": true,
+      "details": {
+        "detected": 64,
+        "total": 80,
+        "zero_rows": "the sixteen x=y=0 vacuum fixtures"
+      }
+    },
+    {
+      "name": "Einstein_expansion_does_not_imply_Jordan_expansion",
+      "pass": true,
+      "details": {
+        "a": 1,
+        "H_v": 1,
+        "nu": 1,
+        "u_x_y": [
+          0,
+          0,
+          0
+        ],
+        "v": [
+          -3,
+          0,
+          0
+        ],
+        "sigma_r": [
+          0,
+          0
+        ],
+        "H": 2,
+        "A": 1,
+        "H_J": -1
+      }
+    }
+  ],
+  "summary": {
+    "rows": 80,
+    "total": 402,
+    "passed": 402,
+    "failed": 0
+  }
+}

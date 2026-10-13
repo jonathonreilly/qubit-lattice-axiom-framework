@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Fixsen_2009_v2.pdf",
+    "url": "https://arxiv.org/pdf/0911.1955v2",
+    "download_started_at": "2026-10-13T04:24:53.264369+00:00",
+    "download_ended_at": "2026-10-13T04:24:53.393668+00:00",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/Fixsen_2009_v2.pdf",
+    "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85",
+    "bytes": 398676,
+    "exit_code": 0
+  },
+  {
+    "name": "FIRAS_product.html",
+    "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html",
+    "download_started_at": "2026-10-13T04:24:53.265394+00:00",
+    "download_ended_at": "2026-10-13T04:24:53.507488+00:00",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/FIRAS_product.html",
+    "sha256": "e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
+    "bytes": 11973,
+    "exit_code": 0
+  },
+  {
+    "name": "FIRAS_monopole.txt",
+    "url": "https://lambda.gsfc.nasa.gov/data/cobe/firas/monopole_spec/firas_monopole_spec_v1.txt",
+    "download_started_at": "2026-10-13T04:24:53.265658+00:00",
+    "download_ended_at": "2026-10-13T04:24:53.507533+00:00",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/FIRAS_monopole.txt",
+    "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+    "bytes": 2388,
+    "exit_code": 0
+  },
+  {
+    "name": "NIST_CODATA_2022.txt",
+    "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+    "download_started_at": "2026-10-13T04:24:53.267348+00:00",
+    "download_ended_at": "2026-10-13T04:24:53.521491+00:00",
+    "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/NIST_CODATA_2022.txt",
+    "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "bytes": 40801,
+    "exit_code": 0
+  }
+]

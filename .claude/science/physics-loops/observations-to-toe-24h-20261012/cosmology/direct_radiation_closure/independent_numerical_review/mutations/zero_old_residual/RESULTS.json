@@ -1,0 +1,418 @@
+{
+  "returncode": 0,
+  "scope": "only mutated old_potential_responses; negative sensitivity evidence, not positive recomputation",
+  "elapsed_seconds": 0.39481544494628906,
+  "source_sha256": "8a5f02667ed33fe624a55413a2854a37a671425ef7c10fc7e7fa3d75711ce622",
+  "checks": [
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": -3.7834491272334067e-13,
+      "expected": 0.0,
+      "error": 3.7834491272334067e-13,
+      "tolerance": 3.000000007566898e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 6.691157972875361e-12,
+      "expected": 0.0,
+      "error": 6.691157972875361e-12,
+      "tolerance": 3.0000001338231596e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 6.666048253381868e-11,
+      "expected": 0.0,
+      "error": 6.666048253381868e-11,
+      "tolerance": 3.00000133320965e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 9.178826135350804e-10,
+      "expected": 0.0,
+      "error": 9.178826135350804e-10,
+      "tolerance": 3.000018357652271e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 8.353337809733355e-09,
+      "expected": 0.0,
+      "error": 8.353337809733355e-09,
+      "tolerance": 3.000167066756194e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 7.813563206294003e-08,
+      "expected": 0.0,
+      "error": 7.813563206294003e-08,
+      "tolerance": 3.0015627126412587e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 3.136004310772048e-07,
+      "expected": 0.0,
+      "error": 3.136004310772048e-07,
+      "tolerance": 3.006272008621544e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 4.970448529489661e-07,
+      "expected": 0.0,
+      "error": 4.970448529489661e-07,
+      "tolerance": 3.0099408970589793e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": -1.5153391215806478e-10,
+      "expected": 0.0,
+      "error": 1.5153391215806478e-10,
+      "tolerance": 3.000003030678243e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 2.674849228004847e-09,
+      "expected": 0.0,
+      "error": 2.674849228004847e-09,
+      "tolerance": 3.00005349698456e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 2.6655505289311682e-08,
+      "expected": 0.0,
+      "error": 2.6655505289311682e-08,
+      "tolerance": 3.0005331101057863e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 3.6708014109348185e-07,
+      "expected": 0.0,
+      "error": 3.6708014109348185e-07,
+      "tolerance": 3.007341602821869e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 3.3406827346752135e-06,
+      "expected": 0.0,
+      "error": 3.3406827346752135e-06,
+      "tolerance": 3.066813654693504e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 3.1249022060976254e-05,
+      "expected": 0.0,
+      "error": 3.1249022060976254e-05,
+      "tolerance": 3.624980441219525e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 0.0001254309653258301,
+      "expected": 0.0,
+      "error": 0.0001254309653258301,
+      "tolerance": 5.508619306516602e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 0.00019881790537301194,
+      "expected": 0.0,
+      "error": 0.00019881790537301194,
+      "tolerance": 6.976358107460239e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": -3.831868969734517e-09,
+      "expected": 0.0,
+      "error": 3.831868969734517e-09,
+      "tolerance": 3.0000766373793945e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 6.525481092884037e-08,
+      "expected": 0.0,
+      "error": 6.525481092884037e-08,
+      "tolerance": 3.0013050962185766e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 6.546916757786726e-07,
+      "expected": 0.0,
+      "error": 6.546916757786726e-07,
+      "tolerance": 3.013093833515573e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 9.042637077455254e-06,
+      "expected": 0.0,
+      "error": 9.042637077455254e-06,
+      "tolerance": 3.180852741549105e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 8.230179872284737e-05,
+      "expected": 0.0,
+      "error": 8.230179872284737e-05,
+      "tolerance": 4.6460359744569474e-14
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 0.0007703712993608624,
+      "expected": 0.0,
+      "error": 0.0007703712993608624,
+      "tolerance": 1.8407425987217248e-13
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 0.00309918159494653,
+      "expected": 0.0,
+      "error": 0.00309918159494653,
+      "tolerance": 6.49836318989306e-13
+    },
+    {
+      "name": "old potential radiation residual",
+      "passed": false,
+      "actual": 0.004921095698944075,
+      "expected": 0.0,
+      "error": 0.004921095698944075,
+      "tolerance": 1.014219139788815e-12
+    }
+  ],
+  "rows": [
+    {
+      "a": 1e-06,
+      "z": 0,
+      "S": 0.44999955000045,
+      "R": 7.570102863738043e-05,
+      "H2_forced": 1.000050467359995,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": -3.7834491272334067e-13
+    },
+    {
+      "a": 1e-06,
+      "z": 0.32,
+      "S": 1.034984565015435,
+      "R": 0.0002298251253316374,
+      "H2_forced": 1.3901436167882495,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 6.691157972875361e-12
+    },
+    {
+      "a": 1e-06,
+      "z": 1,
+      "S": 3.5999964000036,
+      "R": 0.0012112164581980869,
+      "H2_forced": 3.10080747795137,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 6.666048253381868e-11
+    },
+    {
+      "a": 1e-06,
+      "z": 10,
+      "S": 598.9494010505989,
+      "R": 1.1083387602798869,
+      "H2_forced": 400.73889287565277,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 9.178826135350804e-10
+    },
+    {
+      "a": 1e-06,
+      "z": 100,
+      "S": 463634.98636501364,
+      "R": 7877.479396118291,
+      "H2_forced": 314342.6555565647,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 8.353337809733355e-09
+    },
+    {
+      "a": 1e-06,
+      "z": 1100,
+      "S": 600584384.8656151,
+      "R": 111237458.22708224,
+      "H2_forced": 474548333.5638556,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 7.813563206294003e-08
+    },
+    {
+      "a": 1e-06,
+      "z": 10000,
+      "S": 450134563365.88666,
+      "R": 757313135911.999,
+      "H2_forced": 804965685379.9183,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 3.136004310772048e-07
+    },
+    {
+      "a": 1e-06,
+      "z": 1000000.0,
+      "S": 4.5000090000045005e+17,
+      "R": 7.570133144194918e+19,
+      "H2_forced": 5.0767580428398215e+19,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 4.970448529489661e-07
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 0,
+      "S": 0.44982,
+      "R": 7.56708238966737e-05,
+      "H2_forced": 1.0000504502429457,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": -1.5153391215806478e-10
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 0.32,
+      "S": 1.03457160576,
+      "R": 0.0002297334250147,
+      "H2_forced": 1.3901435708234575,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 2.674849228004847e-09
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 1,
+      "S": 3.59856,
+      "R": 0.0012107331823467792,
+      "H2_forced": 3.1008072804531617,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 2.6655505289311682e-08
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 10,
+      "S": 598.71042,
+      "R": 1.1078965326711996,
+      "H2_forced": 400.7387451789224,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 3.6708014109348185e-07
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 100,
+      "S": 463449.99582,
+      "R": 7874.336278688248,
+      "H2_forced": 314341.6076382749,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 3.3406827346752135e-06
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 1100,
+      "S": 600344751.45582,
+      "R": 111193074.43675464,
+      "H2_forced": 474533536.0001438,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 3.1249022060976254e-05
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 10000,
+      "S": 449954959495.0498,
+      "R": 757010967667.8448,
+      "H2_forced": 804864942432.9159,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 0.0001254309653258301
+    },
+    {
+      "a": 0.00040016006402561027,
+      "z": 1000000.0,
+      "S": 4.498213494613495e+17,
+      "R": 7.567112658042331e+19,
+      "H2_forced": 5.075751012212753e+19,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 0.00019881790537301194
+    },
+    {
+      "a": 0.01,
+      "z": 0,
+      "S": 0.4455445544554455,
+      "R": 7.495158845387036e-05,
+      "H2_forced": 1.0000500420455054,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": -3.831868969734517e-09
+    },
+    {
+      "a": 0.01,
+      "z": 0.32,
+      "S": 1.024738217821782,
+      "R": 0.00022754985659085414,
+      "H2_forced": 1.3901424736135546,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 6.525481092884037e-08
+    },
+    {
+      "a": 0.01,
+      "z": 1,
+      "S": 3.564356435643564,
+      "R": 0.0011992254152619257,
+      "H2_forced": 3.100802559533009,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 6.546916757786726e-07
+    },
+    {
+      "a": 0.01,
+      "z": 10,
+      "S": 593.0198019801979,
+      "R": 1.0973662065531158,
+      "H2_forced": 400.7352107588573,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 9.042637077455254e-06
+    },
+    {
+      "a": 0.01,
+      "z": 100,
+      "S": 459044.99999999994,
+      "R": 7799.492350096719,
+      "H2_forced": 314316.53047087265,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 8.230179872284737e-05
+    },
+    {
+      "a": 0.01,
+      "z": 1100,
+      "S": 594638599.4554455,
+      "R": 110136207.3906341,
+      "H2_forced": 474179423.4799821,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 0.0007703712993608624
+    },
+    {
+      "a": 0.01,
+      "z": 10000,
+      "S": 445678231188.56433,
+      "R": 749815735866.4702,
+      "H2_forced": 802454117276.3738,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 0.00309918159494653
+    },
+    {
+      "a": 0.01,
+      "z": 1000000.0,
+      "S": 4.455458910904455e+17,
+      "R": 7.495188826067388e+19,
+      "H2_forced": 5.051652305143084e+19,
+      "residual_over_H2": 0.0,
+      "derivative_residual_over_H2": 0.004921095698944075
+    }
+  ]
+}

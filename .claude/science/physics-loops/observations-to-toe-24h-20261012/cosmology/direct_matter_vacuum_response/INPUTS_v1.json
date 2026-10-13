@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-13T05:40:13.574663+00:00",
+  "H0_km_per_s_Mpc": "70",
+  "matter_fraction": "0.3",
+  "Mpc_m": "3.085677581491367e+22",
+  "Mpc_role": "Same supplied SI conversion as pinned prior radiation fixture; no new unit inference.",
+  "Omega_gamma": "5.046740289227271e-05",
+  "Omega_role": "Exposed photons-only calibration, not independent data.",
+  "radiation_result": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v1/RESULTS.json",
+    "sha256": "8c0bb51294f924530c5068b61fda0ebfca8818870fea0cb68556381faed01fe7",
+    "pointer": "thermal.thermal_rows[1].Omega_gamma"
+  },
+  "radiation_fixture": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/NUMERICAL_FIXTURES_v1.json",
+    "sha256": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c"
+  },
+  "weak_field_bridge": "G_N=(1+a)G* imported from prior metric reconstruction; not independently validated here",
+  "a_values": [
+    "0.000001",
+    "1/2499",
+    "0.01"
+  ],
+  "nu_values": [
+    "0.25",
+    "1",
+    "2.25",
+    "4"
+  ],
+  "log_mu_over_m": [
+    "-2",
+    "-0.75",
+    "0",
+    "1"
+  ],
+  "u_values": [
+    "-2",
+    "-0.1",
+    "0",
+    "0.2",
+    "3"
+  ],
+  "residual_ratios": [
+    "0",
+    "0.00000001",
+    "0.01",
+    "1",
+    "100000000",
+    "1e20",
+    "electron_loop_at_mu_equals_m"
+  ],
+  "finite_difference_mass_uncertainty_role": "Exact endpoint propagation of measured electron uncertainty, conditional on fixed other inputs; G_N uncertainty shown separately."
+}

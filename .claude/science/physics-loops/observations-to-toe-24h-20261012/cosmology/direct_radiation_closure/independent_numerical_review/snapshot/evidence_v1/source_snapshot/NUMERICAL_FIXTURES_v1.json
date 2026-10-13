@@ -1,0 +1,104 @@
+{
+  "created_at": "2026-10-13T04:29:48.503835+00:00",
+  "temperature_K": 2.72548,
+  "temperature_sigma_K": 0.00057,
+  "baseline_temperature_K": 2.725,
+  "constants": {
+    "h_Js": 6.62607015e-34,
+    "k_J_per_K": 1.380649e-23,
+    "c_m_per_s": 299792458.0,
+    "G_N_SI": 6.6743e-11,
+    "G_N_sigma_SI": 1.5e-15,
+    "Mpc_m": 3.085677581491367e+22
+  },
+  "H0_km_per_s_Mpc": 70.0,
+  "matter_fraction": 0.3,
+  "couplings": [
+    1e-06,
+    0.00040016006402561027,
+    0.01
+  ],
+  "radiation_to_matter": [
+    0,
+    1e-06,
+    0.01,
+    1,
+    100,
+    1000000.0
+  ],
+  "vacuum_to_matter": [
+    0,
+    1e-06,
+    1,
+    1000000.0
+  ],
+  "redshifts": [
+    0,
+    0.32,
+    1,
+    10,
+    100,
+    1100,
+    10000,
+    1000000.0
+  ],
+  "future_N_sites": [
+    0,
+    1,
+    2,
+    4,
+    6
+  ],
+  "endpoint_series": {
+    "a": [
+      1e-06,
+      0.01
+    ],
+    "b": [
+      0.001,
+      1.0
+    ],
+    "L": 1.0,
+    "S": [
+      1e-06,
+      1e-12,
+      1e-18,
+      1e-24,
+      1e-30
+    ],
+    "digits": 70,
+    "last_coefficient_relative_tolerance": 2e-08
+  },
+  "old_potential_L": 1.05,
+  "new_potential_L": "1.5*(1-m-Omega_gamma), an explicit construction adjustment to keep Hbar(0)=H0",
+  "radiation_included": "photons only; no N_eff multiplier; ideal conserved radiation with no entropy injection",
+  "spectrum_controls": {
+    "rows": 43,
+    "frequency_rounding_halfwidth_cm_inverse": 0.005,
+    "intensity_rounding_halfwidth_MJy_per_sr": 0.0005,
+    "residual_rounding_halfwidth_kJy_per_sr": 0.5,
+    "comparison": "published baseline intensity lies within Bnu at rounded frequency interval plus tabulated residual and stated rounding; descriptive residuals use column3 directly; no covariance likelihood"
+  },
+  "integration": {
+    "N_start": "-log(1000001)",
+    "N_end": 6,
+    "method": "DOP853",
+    "rtol": [
+      2e-10,
+      2e-11
+    ],
+    "atol": [
+      2e-12,
+      2e-13
+    ],
+    "max_step": [
+      0.025,
+      0.0125
+    ],
+    "comparison_atol": 2e-08,
+    "comparison_rtol": 2e-07
+  },
+  "normalized_algebra_tolerance": 2e-11,
+  "data_sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+  "assumption_roles": "m/H0 and potential coefficients are supplied construction inputs; temperature is exposed calibration; internal comparisons are numerical controls"
+}

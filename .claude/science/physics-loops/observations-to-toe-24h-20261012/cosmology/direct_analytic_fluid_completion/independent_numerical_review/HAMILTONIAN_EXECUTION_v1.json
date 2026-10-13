@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-13T05:18:15.269925+00:00",
+  "ended_at": "2026-10-13T05:18:25.336798+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_numerical_review/check_hamiltonian_histories_v1.py"
+  ],
+  "exit_code": 0,
+  "script_sha256": "40277ddc0faabd28f7e8cfa0ac7c51381fd48920bfd424bc85b89a4ebf26553a",
+  "source_unchanged": true,
+  "review_plan_sha256": "f2f837d811a309e9d48bfd4864460e433f1fde4af46796bcff31831f8e7babb7",
+  "threads": 1,
+  "timeout_seconds": 360
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Frozen first implementation and evidence only; no parent edits or empirical fit.",
+  "source": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+  "static_route": "Differentiate the Hamiltonian E=sum(pi_i^2/K_i)/2+V+sigma+r at fixed canonical momenta using 70-digit mpmath; reconstruct all 72 force fixtures, energy exchange and source forces without parent helpers.",
+  "mode_route": "Evaluate the damped oscillator by its power-series recurrence at 80 digits, independent of the parent's closed forms and matrix exponential.",
+  "coverage": "Consume all 1492 check records, all 72 off-trajectory rows, 25 mode rows, 24 tracking runs at all 12 sites, and all 48 disturbed histories at all 61 sites. Check exact source/evidence identities and the exposed imported calibration value.",
+  "tracking_route": "Canonical momenta in Einstein N with conserved dust number and radiation constants, eliminating density variables analytically. Use invertible reference scales for large fields/momenta; do not project onto the exact trajectory. Radau, rtol=3e-11, atol=3e-13, max_step=.04. Compare all sites against both author refinements with the already frozen author tolerances.",
+  "disturbed_route": "Canonical Hamiltonian variables with analytically conserved number/radiation densities and an integrated proper-time quadrature. Radau, rtol=3e-11, atol=3e-14, max_step=.04. Compare all sites against both author formulations with their frozen tolerances; retain any discrepancy before investigating it.",
+  "mutations": [
+    "Remove the numerical N-equation metric connection term.",
+    "Remove the numerical dust mass-exchange term.",
+    "Remove the numerical scalar matter force.",
+    "Remove the u restoring force proportional to u(4x^2+nu), which vanishes on the exact u=0 trajectory."
+  ],
+  "mutation_scope": "Execute copies of the author's off-trajectory controls only as negative sensitivity evidence. Preserve every changed source, exact patch, fixture, raw result and execution status. Do not treat author execution as independent positive evidence.",
+  "failure_policy": "All actual failures and executed sources remain immutable; no threshold adjustment to turn a failed comparison into a pass. A corrected reviewer implementation, if needed, receives a new version.",
+  "resources": "One CPU; small foreground calculations. All writes stay in independent_numerical_review."
+}

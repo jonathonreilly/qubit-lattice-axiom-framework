@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-10-13T04:24:12.090542+00:00",
+  "mode": "direct_parent_derivation_before_execution",
+  "status": "unexecuted",
+  "observation_roles": {
+    "temperature": "exposed development input and density calibration",
+    "FIRAS_posted_spectrum": "baseline-aware processed diagnostic only; no independent validation",
+    "H0": "illustrative supplied70 km/s/Mpc, not measured here",
+    "matter_fraction": "supplied .3 benchmark inherited from prior construction",
+    "radiation_content": "photons only in empirical calibration; no silently assumed neutrino factor"
+  },
+  "first_decisive_checks": [
+    "symbolic difference of Friedmann derivative and Raychaudhuri for unchanged potential",
+    "all six background identities for new potential",
+    "positive curvature and complete-square identity",
+    "endpoint regularity series"
+  ],
+  "prospective_grid": {
+    "a": [
+      1e-06,
+      0.00040016006402561027,
+      0.01
+    ],
+    "matter_fraction": [
+      0.3
+    ],
+    "redshift": [
+      0,
+      0.32,
+      1,
+      10,
+      100,
+      1100,
+      10000,
+      1000000.0
+    ],
+    "relative_radiation": [
+      0,
+      1e-06,
+      0.01,
+      1,
+      100,
+      1000000.0
+    ],
+    "L_over_S": [
+      0,
+      1e-06,
+      1,
+      1000000.0
+    ]
+  },
+  "numeric_plan": {
+    "algebra_normalized_tolerance": 2e-11,
+    "high_precision_digits": 70,
+    "integrator": "DOP853",
+    "relative_tolerances": [
+      2e-10,
+      2e-11
+    ],
+    "absolute_tolerances": [
+      2e-12,
+      2e-13
+    ],
+    "maximum_steps": [
+      0.025,
+      0.0125
+    ],
+    "equation_normalized_tolerance": 2e-10,
+    "trajectory_comparison": "frozen2e-8 absolute plus2e-7 relative; failures preserved",
+    "uncertainty": "temperature-only propagation separate from supplied H0/m and thermodynamic assumptions"
+  },
+  "independent_check_scope": "focused exact derivations and local coordinate/endpoint claims, then independent numeric route; no replacement lead author"
+}

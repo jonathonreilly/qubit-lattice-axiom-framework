@@ -1,0 +1,7 @@
+{
+  "stage": "before final receipt",
+  "reason": "Repair one mistyped action SHA in the reviewer report table and record second parent-reported interruption. No derivation/source/results change.",
+  "incorrect_display": "322a932eef3de5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+  "correct_source_sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+  "preserved_draft": "PRE_FINAL_REPORT_DRAFT_v1.md"
+}

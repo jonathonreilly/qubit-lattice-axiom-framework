@@ -1,0 +1,3 @@
+{"failed": 2, "passed": 79, "total": 81}
+{"name": "covariant_Hessian_velocity_2", "pass": false, "residual": "2*hv**2*s**2*x**2*y*(s**2 + 1)*(2*s**2*x**2 + 2*s**2*y**2 + 2*x**2 + 2*y**2 - sqrt(4*s**4*x**4 + 8*s**4*x**2*y**2 + 4*s**4*y**4 + 8*s**2*x**4 + 16*s**2*x**2*y**2 + 12*s**2*x**2 + 8*s**2*y**4 + 12*s**2*y**2 + 4*x**4 + 8*x**2*y**2 + 12*x**2 + 4*y**4 + 12*y**2 + 9) + 3)/(2*s**2*x**2 + 2*s**2*y**2 + 2*x**2 + 2*y**2 + 3)**2"}
+{"evidence": {"displayed_pair_wronskian": "0", "missing_solution": "t*exp(-3*hv*t/2)", "nu": "9/4"}, "name": "SOURCE_FINDING_v1_u_modes_span_critical_nu", "pass": false}

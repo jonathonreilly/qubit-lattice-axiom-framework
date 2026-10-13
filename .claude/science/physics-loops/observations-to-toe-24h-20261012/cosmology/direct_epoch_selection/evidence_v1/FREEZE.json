@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-13T05:17:34.319593+00:00",
+  "source_sha256": {
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/check_epoch_selection_v1.py": "88bf2fbeae75c60102ac45855e34ae338513aeb8311fa85973581f417c015268",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/HAND_DERIVATION_v1.md": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/HAND_DERIVATION_v2.md": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/LIMIT_DOMAIN_CORRECTION_v2.json": "ce7d7ee17ef89fe284bbe0d000a73eec802dab4a1cc8a2354f39b7363f9dbf42",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/NUMERICAL_FIXTURES_v1.json": "93f49f9f8c0989761d375383ddbff3355491c3a15d3f3351b1542265c188f549",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/check_analytic_fluid_v1.py": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/NUMERICAL_FIXTURES_v1.json": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+  },
+  "first_parent_execution": true,
+  "independent_math_review": "active; original domain correction preserved"
+}

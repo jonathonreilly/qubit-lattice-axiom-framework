@@ -1,0 +1,12 @@
+[
+  {
+    "name": "forced_p_acceleration",
+    "replace": "-(3+hh)*px-z['Gamma']*px*px-vx/(z['g']*h2)",
+    "with": "0."
+  },
+  {
+    "name": "zero_old_residual",
+    "replace": "delta=2*a*r*s*((2+a)*s-l)/(3*den**2)",
+    "with": "delta=0."
+  }
+]

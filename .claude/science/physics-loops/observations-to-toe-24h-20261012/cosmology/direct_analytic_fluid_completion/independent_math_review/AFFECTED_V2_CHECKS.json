@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-10-13T04:59:34.036598+00:00",
+  "scope": "Affected prose only; original v1 source finding and failed execution preserved. No broad rerun, no author code used.",
+  "checks": [
+    {
+      "name": "unique_expected_change_0",
+      "pass": true
+    },
+    {
+      "name": "unique_expected_change_1",
+      "pass": true
+    },
+    {
+      "name": "unique_expected_change_2",
+      "pass": true
+    },
+    {
+      "name": "only_three_author_corrections",
+      "pass": true
+    },
+    {
+      "name": "current_source_equals_snapshot:HAND_DERIVATION_v1.md",
+      "pass": true,
+      "sha256": "41dc33bd1b0ac810d4c3da493b9fb34b433ecc1a1f5a06bca773a1b244ff1801"
+    },
+    {
+      "name": "current_source_equals_snapshot:PROTOCOL_v1.json",
+      "pass": true,
+      "sha256": "b7d06776617627f79177b2db64ccb25baf4b4132f5382f4f7b46a5b7e0b82dfc"
+    },
+    {
+      "name": "current_source_equals_snapshot:HAND_DERIVATION_v2.md",
+      "pass": true,
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "name": "current_source_equals_snapshot:MODE_AND_FRAME_CORRECTION_v2.json",
+      "pass": true,
+      "sha256": "9ef6f8c60e4ad2b12780bd48b18630d8438eb5565eca53bd3b31991211be3cfa"
+    },
+    {
+      "name": "correction_original_hash",
+      "pass": true
+    },
+    {
+      "name": "correction_final_hash",
+      "pass": true
+    },
+    {
+      "name": "final_note_expected_author_hash",
+      "pass": true
+    },
+    {
+      "name": "independent_exact_math:corrected_critical_u_mode",
+      "pass": true
+    },
+    {
+      "name": "independent_exact_math:corrected_critical_u_basis_W",
+      "pass": true
+    },
+    {
+      "name": "independent_exact_math:linear_dust_forced_u_particular",
+      "pass": true
+    },
+    {
+      "name": "exact_frame_counterexample_preserved",
+      "pass": true
+    },
+    {
+      "name": "executed_reviewer_bytes_preserved:check_analytic_fluid_v1.py",
+      "pass": true
+    },
+    {
+      "name": "executed_reviewer_bytes_preserved:check_analytic_fluid_v2.py",
+      "pass": true
+    },
+    {
+      "name": "executed_reviewer_bytes_preserved:check_momenta_fraction_v1.py",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 18,
+    "passed": 18,
+    "failed": 0
+  }
+}

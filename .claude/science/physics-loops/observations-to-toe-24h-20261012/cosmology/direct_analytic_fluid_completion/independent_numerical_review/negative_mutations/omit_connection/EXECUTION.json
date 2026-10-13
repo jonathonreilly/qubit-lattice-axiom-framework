@@ -1,0 +1,16 @@
+{
+  "mutation": "omit_connection",
+  "started_at": "2026-10-13T05:14:34.450576+00:00",
+  "ended_at": "2026-10-13T05:14:35.172054+00:00",
+  "exit_code": 1,
+  "original_source_sha256": "d247f6dc0143d2548a46c59abaec09cb2521c03fe3de73691a5f1f85293c41ef",
+  "mutant_source_sha256": "b9ef1144cbc1230024edafc08cdeb091d5fa29d49c86f7d24807421d0d7115ed",
+  "source_unchanged": true,
+  "fixture_sha256": "24ea85efb6725a97b10ac1618b1ebe1a4a02aef50d9799dc91d836877200a1c9",
+  "preserved_failure_count": 60,
+  "failure_families": {
+    "off trajectory full KG": 60
+  },
+  "max_tolerance_units": 395531519.9398807,
+  "mutation_detected_by_actual_control_failure": true
+}

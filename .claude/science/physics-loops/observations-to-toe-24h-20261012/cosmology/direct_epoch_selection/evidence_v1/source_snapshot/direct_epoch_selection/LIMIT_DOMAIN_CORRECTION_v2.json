@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-13T05:13:21.367936+00:00",
+  "finding": "Vanishing transverse field amplitude alone does not imply vanishing transverse kinetic energy.",
+  "correction": "Require transverse velocity ratios to vanish; state positive limiting denominator and compact-subset scope. All equations/linear classifications unchanged.",
+  "original_sha256": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d",
+  "corrected_sha256": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99",
+  "before_parent_execution": true
+}

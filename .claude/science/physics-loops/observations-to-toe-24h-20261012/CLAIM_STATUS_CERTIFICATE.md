@@ -43,3 +43,7 @@ necessary condition, not a measured correction or existence theorem.
 
 Metric/lensing, radiation, matter/gauge, cosmology and common physical
 parameters remain open. No TOE or retained/promoted proposal is asserted.
+
+## Current direct cosmology scope 2026-10-13T05:41:46.578275+00:00
+
+The parent personally derived/coded expansion, potentials, perturbations, radiation completion and a new analytic three-field action. The analytic action has checked homogeneous convergence under its hypotheses, not inhomogeneous or quantum stability. Temperature/matter fraction/H0/initial amplitudes and the small H_v scale remain exposed inputs. The new quantum-matter test explicitly separates a finite scheme-dependent loop from the total renormalized vacuum energy. Status remains conditional-support; no TOE or retained proposal.

@@ -1,0 +1,92 @@
+LAMBDA - Cosmic Background Explorer
+National Aeronautics and Space Administration
+Goddard Space Flight Center
+Sciences and Exploration
+LAMBDA ACRONYMS
+ABOUT LAMBDA
+Home
+Data
+Simulations
+Tools
+Papers
+Resources/Graphics
+News
+Data Hosted
+Experiment Tables
+CMB
+Intensity Mapping
+Space-Based
+Planck
+WMAP
+COBE
+Suborbital
+ABS
+ACT
+BICEP/Keck
+CLASS
+POLARBEAR
+QUIET
+QUIJOTE
+SPIDER
+SPT
+Astrophysical
+Diffuse Foreground
+Compact Sources
+SZ Clusters
+IRAS
+SWAS
+LSS Links
+About Products
+Overview
+Pol Convention
+Overview
+• DIRBE
+• DMR
+• FIRAS
+Products
+• DIRBE Data
+• DMR Data
+• FIRAS Data
+Documents
+Software
+Images
+Education
+Engineering
+COBE FIRAS Products
+CMB Monopole Spectrum
+Download Links:
+firas_monopole_get.html
+Fixsen et al. (1996) modeled the 
+      full FIRAS low-frequency calibrated sky spectra as a superposition of a 
+      CMB monopole, a CMB dipole and selected Galactic emission components. Table 
+      4 of their paper gives the residuals of the derived CMB monopole spectrum 
+      from a perfect blackbody. Subsequent analyses by Mather et al. (1999) and 
+      Fixsen et al. (2002) improved the FIRAS calibration accuracy and provided 
+      a best-estimate for the absolute CMB temperature of 2725 +/- 1 mK.
+The CMB monopole spectrum posted here is the sum of a 2.725 K blackbody 
+        spectrum and the residual intensity noted above. The complete contents 
+        of Table 4 are also provided, in the form of the original residuals, 1-sigma 
+        uncertainties, and the modeled Galaxy spectrum.
+More details can be found in:
+"The Spectral Results of the Far-Infrared Absolute Spectrophotometer 
+        Instrument on COBE"
+D.J. Fixsen & J.C. Mather, 2002 ApJ 581,817
+"Calibrator Design for the COBE Far-Infrared Absolute Spectrophotometer 
+        (FIRAS)"
+J.C. Mather, et al., 1999 ApJ 512, 511
+"The Cosmic Microwave Background Spectrum from the full COBE FIRAS 
+        Data Set"
+D.J. Fixsen, et al., 1996 ApJ 473, 576
+A service of the
+HEASARC
+and of the
+Astrophysics Science Division
+at NASA/GSFC
+HEASARC Director: Dr. Andrew F. Ptak
+LAMBDA Director: Dr. Thomas M. Essinger-Hileman
+NASA Official: Dr. Thomas M. Essinger-Hileman
+Web Curator: Mr. Michael R. Greason
+Comments/Feedback
+NASA Astrophysics
+Privacy Policy & Important Notices
+Accessibility

@@ -1,0 +1,20 @@
+
+             Fundamental Physical Constants --- Complete Listing
+             2022 CODATA adjustment
+
+
+  From:  http://physics.nist.gov/constants
+
+
+
+  Quantity                                                       Value                 Uncertainty           Unit
+-----------------------------------------------------------------------------------------------------------------------------
+alpha particle-electron mass ratio                          7294.299 541 71          0.000 000 17             
+Boltzmann constant                                          1.380 649 e-23           (exact)                  J K^-1
+Boltzmann constant in eV/K                                  8.617 333 262... e-5     (exact)                  eV K^-1
+Boltzmann constant in Hz/K                                  2.083 661 912... e10     (exact)                  Hz K^-1
+Boltzmann constant in inverse meter per kelvin              69.503 480 04...         (exact)                  m^-1 K^-1
+Newtonian constant of gravitation                           6.674 30 e-11            0.000 15 e-11            m^3 kg^-1 s^-2
+Planck constant                                             6.626 070 15 e-34        (exact)                  J Hz^-1
+Planck constant in eV/Hz                                    4.135 667 696... e-15    (exact)                  eV Hz^-1
+speed of light in vacuum                                    299 792 458              (exact)                  m s^-1

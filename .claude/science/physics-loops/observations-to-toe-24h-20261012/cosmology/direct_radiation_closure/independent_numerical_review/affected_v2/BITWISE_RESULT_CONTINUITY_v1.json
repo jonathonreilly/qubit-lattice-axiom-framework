@@ -1,0 +1,22 @@
+{
+  "sections": [
+    "symbolic",
+    "thermal",
+    "local_grid",
+    "old_potential",
+    "new_background",
+    "endpoint",
+    "roles",
+    "versions"
+  ],
+  "science_leaf_counts": {
+    "numeric": 2627,
+    "other": 156
+  },
+  "including_original_assertions_leaf_counts": {
+    "numeric": 6719,
+    "other": 2567
+  },
+  "comparison": "Identical Python types, ordered dict keys, list lengths and values; IEEE double hex identity for all floats (including signed zero).",
+  "mismatches": []
+}

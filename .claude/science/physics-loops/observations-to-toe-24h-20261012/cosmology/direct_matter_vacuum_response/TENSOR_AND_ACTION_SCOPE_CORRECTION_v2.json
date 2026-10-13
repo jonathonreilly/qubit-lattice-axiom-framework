@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-13T05:44:22.236930+00:00",
+  "trigger": "Focused independent handwritten reviewer found ambiguity between Jordan Ricci coefficient and inverse tensor G; requested explicit scope for the two-derivative attractor argument.",
+  "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/HAND_DERIVATION_v1.md",
+  "original_sha256": "0ee11ac89ffeda0e187de84f439a0c5e44576090318ffac24ef5a2eade69fd94",
+  "corrected_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/HAND_DERIVATION_v2.md",
+  "corrected_sha256": "0c7b3464d46e9c75e8255fff601154d8712bcc6cf0596092b5fdda514a268994",
+  "equations_changed": false,
+  "changes": [
+    "Name G_T,J/G_T,J(0)=A_v^2 and opposite Ricci coefficient scaling explicitly.",
+    "State induced derivative operators excluded from convergence theorem.",
+    "Retain Einstein-expanding condition and possible transient Jordan contraction."
+  ],
+  "timing": "Before first runner execution; v1 preserved."
+}

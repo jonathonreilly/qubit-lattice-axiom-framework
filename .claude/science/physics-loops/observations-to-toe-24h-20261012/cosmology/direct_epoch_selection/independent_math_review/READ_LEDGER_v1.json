@@ -1,0 +1,28 @@
+{
+  "scope": "handwritten mathematics only",
+  "complete_reads": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/HAND_DERIVATION_v1.md",
+      "sha256": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/HAND_DERIVATION_v2.md",
+      "sha256": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/LIMIT_DOMAIN_CORRECTION_v2.json",
+      "sha256": "ce7d7ee17ef89fe284bbe0d000a73eec802dab4a1cc8a2354f39b7363f9dbf42"
+    }
+  ],
+  "independent_route": "Action-normalized Friedmann, Raychaudhuri and covariant scalar equations; Christoffels recomputed directly from K; exact full-vector-field limits and derivatives; no parent-code imports.",
+  "not_read_or_reviewed": [
+    "Parent epoch implementation and evidence_v1/194-check run",
+    "Separate implementation or mathematical reviewer reports as positive evidence",
+    "Publication/no-go applicability contracts for this task"
+  ],
+  "math_sources": "Provided analytic-action note, with direct algebraic derivation. No new external observation or literature claim."
+}

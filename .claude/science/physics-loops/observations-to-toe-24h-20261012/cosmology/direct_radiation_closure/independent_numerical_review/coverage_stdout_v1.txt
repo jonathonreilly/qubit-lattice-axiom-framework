@@ -1,0 +1,6 @@
+{
+  "passed": 1339,
+  "failed": 0,
+  "failures": [],
+  "max_direct_determinant_relative_error": 0.0005727823623606726
+}

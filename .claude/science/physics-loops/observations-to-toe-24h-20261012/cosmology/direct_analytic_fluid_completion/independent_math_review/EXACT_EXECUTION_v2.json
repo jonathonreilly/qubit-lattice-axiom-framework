@@ -1,0 +1,13 @@
+{
+  "start": "2026-10-13T04:52:24.531639+00:00",
+  "end": "2026-10-13T04:52:25.371141+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/check_analytic_fluid_v2.py"
+  ],
+  "exit_code": 1,
+  "source_sha256": "72042452162f3e804ad3b798196a57427c960c78359b730836f4a36b75f416f2",
+  "source_unchanged": true,
+  "timeout_seconds": 60,
+  "threads": 1
+}

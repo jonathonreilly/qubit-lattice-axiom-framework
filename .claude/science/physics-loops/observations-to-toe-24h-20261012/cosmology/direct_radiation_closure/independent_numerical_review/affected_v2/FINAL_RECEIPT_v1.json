@@ -1,0 +1,577 @@
+{
+  "schema": "radiation_affected_v2_review_receipt_v1",
+  "created_at": "2026-10-13T05:09:28.948525+00:00",
+  "disposition": "R1 closed for exact pinned v2 sources; conditional numerical source check only",
+  "formal_audit": false,
+  "publication_or_combined_gate": false,
+  "sources": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/check_radiation_closure_v2.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/check_radiation_closure_v2.py",
+      "bytes": 17898,
+      "sha256": "c86d2c5442593132b484ab8a7f03288f08b791207686fa4bde4f50b962ca3192",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/off_trajectory_controls_v2.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/off_trajectory_controls_v2.py",
+      "bytes": 4883,
+      "sha256": "18ad59a63226defd35d6e37435a69313a878f7f92a4eebe9ac0e2f75cd59fffa",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "bytes": 832,
+      "sha256": "447b8f7eb338c7d24a56010502b664b8c6cdde07c371d878a9c392ed4ca65476",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/OFF_TRAJECTORY_REVISION_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "bytes": 793,
+      "sha256": "68ddcda565887d9cfd75997d4b075f3ced991feb7f872e95a1b5deda16ed4236",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/HAND_DERIVATION_v1.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/HAND_DERIVATION_v1.md",
+      "bytes": 5466,
+      "sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/HAND_DERIVATION_v2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/HAND_DERIVATION_v2.md",
+      "bytes": 5469,
+      "sha256": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/PROTOCOL_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/PROTOCOL_v1.json",
+      "bytes": 1996,
+      "sha256": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/NUMERICAL_FIXTURES_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/NUMERICAL_FIXTURES_v1.json",
+      "bytes": 2320,
+      "sha256": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/SOURCE_LEDGER_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/SOURCE_LEDGER_v1.json",
+      "bytes": 3215,
+      "sha256": "5752d548ba306bdd29fd3ffc9aa8c05191ef718e41d170f28dd19059b45868fc",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/DUST_SPEED_CORRECTION_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "bytes": 533,
+      "sha256": "ac1fc454b38531eaa137631249151c99d30e80dfe6df424f739131f237a86a68",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/data/FIRAS_monopole.txt",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/data/FIRAS_monopole.txt",
+      "bytes": 2388,
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/FREEZE.json",
+      "bytes": 1254,
+      "sha256": "3d5a76434dde132b705fda210b97376d9bb36601c6b06523edfa4c7be855313b",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/EXECUTION.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/EXECUTION.json",
+      "bytes": 1153,
+      "sha256": "a0b1cce0e5c2d57ff0aa9e69af12c7aa915f1d0401f81528157598cea24805a7",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/RESULTS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/RESULTS.json",
+      "bytes": 466162,
+      "sha256": "d502ddde0d506b8b262fc27b681ecb7a2d3c57edb566c344a1cb77c8cd5f7493",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/stdout.txt",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/stdout.txt",
+      "bytes": 108,
+      "sha256": "9f9a89822a486789ef6364aa6ff9ab36daf827f236844da1db0b4fb6ddedd52d",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/stderr.txt",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "bytes": 533,
+      "sha256": "ac1fc454b38531eaa137631249151c99d30e80dfe6df424f739131f237a86a68",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/HAND_DERIVATION_v1.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/HAND_DERIVATION_v1.md",
+      "bytes": 5466,
+      "sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/HAND_DERIVATION_v2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/HAND_DERIVATION_v2.md",
+      "bytes": 5469,
+      "sha256": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/NUMERICAL_FIXTURES_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/NUMERICAL_FIXTURES_v1.json",
+      "bytes": 2320,
+      "sha256": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "bytes": 832,
+      "sha256": "447b8f7eb338c7d24a56010502b664b8c6cdde07c371d878a9c392ed4ca65476",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "bytes": 793,
+      "sha256": "68ddcda565887d9cfd75997d4b075f3ced991feb7f872e95a1b5deda16ed4236",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/PROTOCOL_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/PROTOCOL_v1.json",
+      "bytes": 1996,
+      "sha256": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/SOURCE_LEDGER_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/SOURCE_LEDGER_v1.json",
+      "bytes": 3215,
+      "sha256": "5752d548ba306bdd29fd3ffc9aa8c05191ef718e41d170f28dd19059b45868fc",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/check_radiation_closure_v2.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/check_radiation_closure_v2.py",
+      "bytes": 17898,
+      "sha256": "c86d2c5442593132b484ab8a7f03288f08b791207686fa4bde4f50b962ca3192",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/data/FIRAS_monopole.txt",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/data/FIRAS_monopole.txt",
+      "bytes": 2388,
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v2/source_snapshot/off_trajectory_controls_v2.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/off_trajectory_controls_v2.py",
+      "bytes": 4883,
+      "sha256": "18ad59a63226defd35d6e37435a69313a878f7f92a4eebe9ac0e2f75cd59fffa",
+      "current_unchanged": true
+    }
+  ],
+  "prior_receipt": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/FINAL_RECEIPT_v1.json",
+    "sha256": "ae6463e4fa9d305d1c3c0428f3ed011fc695061e9173c33ed97d8712e99c2ad1",
+    "unchanged_prior_paths": 118
+  },
+  "scope": {
+    "original_nonmain_function_bodies_text_and_AST_identical": 12,
+    "original_result_sections_identical": [
+      "symbolic",
+      "thermal",
+      "local_grid",
+      "old_potential",
+      "new_background",
+      "endpoint",
+      "roles",
+      "versions"
+    ],
+    "original_assertions_bitwise_identical": 1195,
+    "new_rows": 54,
+    "new_assertions": 378,
+    "reviewer_checks_passed": 1244,
+    "reviewer_checks_failed": 0,
+    "mutation_passed": 1519,
+    "mutation_failed": 54,
+    "mutation_exit": 1,
+    "positive_source_exec_scope": "No author helper imports/execution; only independent derivation against stored results. Full copied author execution is negative mutation control."
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "original_status": "open for v1",
+      "current_status": "closed for v2",
+      "basis": "54 actual implementation force comparisons now fail under the previously surviving exact literal-zero coordinate acceleration mutation; independent canonical-N recomputation confirms all expected forces."
+    }
+  ],
+  "unchanged_limitations": [
+    "No empirical validation or CMB likelihood",
+    "No global stability or unique reconstruction claim",
+    "No no-go delivery certification or repository landing"
+  ],
+  "artifact_inventory": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/AFFECTED_SOURCE_REVIEW_v1.md",
+      "relative_path": "AFFECTED_SOURCE_REVIEW_v1.md",
+      "sha256": "4e39b8a00c6e0adc78991fd51cdc259cc3a2e294867784708822dc103ed3bd0f",
+      "bytes": 9480
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/BITWISE_RESULT_CONTINUITY_v1.json",
+      "relative_path": "BITWISE_RESULT_CONTINUITY_v1.json",
+      "sha256": "e0930bf55afd76d36182cffbaa29e800959935207d7f153effa85ed4d9f02484",
+      "bytes": 495
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/EXECUTION_v1.json",
+      "relative_path": "EXECUTION_v1.json",
+      "sha256": "2a0d4afa589712cc5bf02df02fab5f76b3d452a4f567aa9af76d43e871a844ca",
+      "bytes": 150
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/FORCE_RESULTS_v1.json",
+      "relative_path": "FORCE_RESULTS_v1.json",
+      "sha256": "4ef84f042ce0acb9570f596f6b286ae5eb7146b7d28245c7bdb511395d0a6072",
+      "bytes": 404498
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/INPUT_RECEIPT_v1.json",
+      "relative_path": "INPUT_RECEIPT_v1.json",
+      "sha256": "e5bf18b21d8487e5a5e2a70903efdabe4ee5a7a7e36ea8c2fad5f243475f942c",
+      "bytes": 17264
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/MUTATION_VALIDATION_v1.json",
+      "relative_path": "MUTATION_VALIDATION_v1.json",
+      "sha256": "c9c82119984c2ad622c167cfd4864e0fdb79090065ce6ed3e82b97d018d54cee",
+      "bytes": 15891
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/PRIOR_REVIEW_CONTINUITY_v1.json",
+      "relative_path": "PRIOR_REVIEW_CONTINUITY_v1.json",
+      "sha256": "5031889e449aaa529d0b57355fd985a1548de89f2462f27fb47f0301dab3fb37",
+      "bytes": 44681
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/RUNNER_v1_to_v2.diff",
+      "relative_path": "RUNNER_v1_to_v2.diff",
+      "sha256": "dd1298d0e8c0ff2ee7d37a7b7239040b449585192d21ca6a72105eca1fe74fe4",
+      "bytes": 1764
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/SOURCE_CONTINUITY_v1.json",
+      "relative_path": "SOURCE_CONTINUITY_v1.json",
+      "sha256": "b8ce68d704c8e48020751e76d60736120bd249dd33a4256aeda15660a5d1c9e5",
+      "bytes": 1645
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/independent_force_check_v1.py",
+      "relative_path": "independent_force_check_v1.py",
+      "sha256": "3284abdd6a0addaf97733b3848ca8df5dca5e9259803d6f1e801a4345ecc4c82",
+      "bytes": 4874
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/DUST_SPEED_CORRECTION_v2.json",
+      "relative_path": "mutation_forced_p_zero/DUST_SPEED_CORRECTION_v2.json",
+      "sha256": "ac1fc454b38531eaa137631249151c99d30e80dfe6df424f739131f237a86a68",
+      "bytes": 533
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/EXECUTION.json",
+      "relative_path": "mutation_forced_p_zero/EXECUTION.json",
+      "sha256": "a6c833a4a74f63b19ad5c1bdf2d0d73ee59f342524d0f92dfe3574db8ce81ae6",
+      "bytes": 252
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/HAND_DERIVATION_v1.md",
+      "relative_path": "mutation_forced_p_zero/HAND_DERIVATION_v1.md",
+      "sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+      "bytes": 5466
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/HAND_DERIVATION_v2.md",
+      "relative_path": "mutation_forced_p_zero/HAND_DERIVATION_v2.md",
+      "sha256": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b",
+      "bytes": 5469
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/NUMERICAL_FIXTURES_v1.json",
+      "relative_path": "mutation_forced_p_zero/NUMERICAL_FIXTURES_v1.json",
+      "sha256": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c",
+      "bytes": 2320
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "relative_path": "mutation_forced_p_zero/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "sha256": "447b8f7eb338c7d24a56010502b664b8c6cdde07c371d878a9c392ed4ca65476",
+      "bytes": 832
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/OFF_TRAJECTORY_REVISION_v2.json",
+      "relative_path": "mutation_forced_p_zero/OFF_TRAJECTORY_REVISION_v2.json",
+      "sha256": "68ddcda565887d9cfd75997d4b075f3ced991feb7f872e95a1b5deda16ed4236",
+      "bytes": 793
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/PROTOCOL_v1.json",
+      "relative_path": "mutation_forced_p_zero/PROTOCOL_v1.json",
+      "sha256": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+      "bytes": 1996
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/RESULTS.json",
+      "relative_path": "mutation_forced_p_zero/RESULTS.json",
+      "sha256": "468a6709bf57720c6507f7548171d0f8ed38845facfe20f51947085b88a5fb5b",
+      "bytes": 457864
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/SOURCE.diff",
+      "relative_path": "mutation_forced_p_zero/SOURCE.diff",
+      "sha256": "b785edf073d542f5a7bb569f2db39683b3f6e25c88021a776a6694a48ca08d40",
+      "bytes": 334
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/SOURCE_LEDGER_v1.json",
+      "relative_path": "mutation_forced_p_zero/SOURCE_LEDGER_v1.json",
+      "sha256": "5752d548ba306bdd29fd3ffc9aa8c05191ef718e41d170f28dd19059b45868fc",
+      "bytes": 3215
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/__pycache__/off_trajectory_controls_v2.cpython-312.pyc",
+      "relative_path": "mutation_forced_p_zero/__pycache__/off_trajectory_controls_v2.cpython-312.pyc",
+      "sha256": "1671c795a85ecf0cea1295345d75c163aa123f7acfb68e4f8d0b0ebcbe6d3832",
+      "bytes": 8239
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/check_radiation_closure_v2.py",
+      "relative_path": "mutation_forced_p_zero/check_radiation_closure_v2.py",
+      "sha256": "9977565a839b6342c259a97f04b3b6ce98663321f3dfe69e3b4ed11548096216",
+      "bytes": 17858
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/data/FIRAS_monopole.txt",
+      "relative_path": "mutation_forced_p_zero/data/FIRAS_monopole.txt",
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "bytes": 2388
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/off_trajectory_controls_v2.py",
+      "relative_path": "mutation_forced_p_zero/off_trajectory_controls_v2.py",
+      "sha256": "18ad59a63226defd35d6e37435a69313a878f7f92a4eebe9ac0e2f75cd59fffa",
+      "bytes": 4883
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/stderr.txt",
+      "relative_path": "mutation_forced_p_zero/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/mutation_forced_p_zero/stdout.txt",
+      "relative_path": "mutation_forced_p_zero/stdout.txt",
+      "sha256": "e4ed1b3abc170b48d5d45d2bfa2648db4c3e97ff333a96a8868e1c46c9633292",
+      "bytes": 12714
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "relative_path": "snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "sha256": "ac1fc454b38531eaa137631249151c99d30e80dfe6df424f739131f237a86a68",
+      "bytes": 533
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/HAND_DERIVATION_v1.md",
+      "relative_path": "snapshot/HAND_DERIVATION_v1.md",
+      "sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+      "bytes": 5466
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/HAND_DERIVATION_v2.md",
+      "relative_path": "snapshot/HAND_DERIVATION_v2.md",
+      "sha256": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b",
+      "bytes": 5469
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/NUMERICAL_FIXTURES_v1.json",
+      "relative_path": "snapshot/NUMERICAL_FIXTURES_v1.json",
+      "sha256": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c",
+      "bytes": 2320
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "relative_path": "snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "sha256": "447b8f7eb338c7d24a56010502b664b8c6cdde07c371d878a9c392ed4ca65476",
+      "bytes": 832
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "relative_path": "snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "sha256": "68ddcda565887d9cfd75997d4b075f3ced991feb7f872e95a1b5deda16ed4236",
+      "bytes": 793
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/PROTOCOL_v1.json",
+      "relative_path": "snapshot/PROTOCOL_v1.json",
+      "sha256": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+      "bytes": 1996
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/SOURCE_LEDGER_v1.json",
+      "relative_path": "snapshot/SOURCE_LEDGER_v1.json",
+      "sha256": "5752d548ba306bdd29fd3ffc9aa8c05191ef718e41d170f28dd19059b45868fc",
+      "bytes": 3215
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/check_radiation_closure_v2.py",
+      "relative_path": "snapshot/check_radiation_closure_v2.py",
+      "sha256": "c86d2c5442593132b484ab8a7f03288f08b791207686fa4bde4f50b962ca3192",
+      "bytes": 17898
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/data/FIRAS_monopole.txt",
+      "relative_path": "snapshot/data/FIRAS_monopole.txt",
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "bytes": 2388
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/EXECUTION.json",
+      "relative_path": "snapshot/evidence_v2/EXECUTION.json",
+      "sha256": "a0b1cce0e5c2d57ff0aa9e69af12c7aa915f1d0401f81528157598cea24805a7",
+      "bytes": 1153
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/FREEZE.json",
+      "relative_path": "snapshot/evidence_v2/FREEZE.json",
+      "sha256": "3d5a76434dde132b705fda210b97376d9bb36601c6b06523edfa4c7be855313b",
+      "bytes": 1254
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/RESULTS.json",
+      "relative_path": "snapshot/evidence_v2/RESULTS.json",
+      "sha256": "d502ddde0d506b8b262fc27b681ecb7a2d3c57edb566c344a1cb77c8cd5f7493",
+      "bytes": 466162
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/DUST_SPEED_CORRECTION_v2.json",
+      "sha256": "ac1fc454b38531eaa137631249151c99d30e80dfe6df424f739131f237a86a68",
+      "bytes": 533
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/HAND_DERIVATION_v1.md",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/HAND_DERIVATION_v1.md",
+      "sha256": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+      "bytes": 5466
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/HAND_DERIVATION_v2.md",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/HAND_DERIVATION_v2.md",
+      "sha256": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b",
+      "bytes": 5469
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/NUMERICAL_FIXTURES_v1.json",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/NUMERICAL_FIXTURES_v1.json",
+      "sha256": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c",
+      "bytes": 2320
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/OFF_TRAJECTORY_FIXTURES_v2.json",
+      "sha256": "447b8f7eb338c7d24a56010502b664b8c6cdde07c371d878a9c392ed4ca65476",
+      "bytes": 832
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/OFF_TRAJECTORY_REVISION_v2.json",
+      "sha256": "68ddcda565887d9cfd75997d4b075f3ced991feb7f872e95a1b5deda16ed4236",
+      "bytes": 793
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/PROTOCOL_v1.json",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/PROTOCOL_v1.json",
+      "sha256": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+      "bytes": 1996
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/SOURCE_LEDGER_v1.json",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/SOURCE_LEDGER_v1.json",
+      "sha256": "5752d548ba306bdd29fd3ffc9aa8c05191ef718e41d170f28dd19059b45868fc",
+      "bytes": 3215
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/check_radiation_closure_v2.py",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/check_radiation_closure_v2.py",
+      "sha256": "c86d2c5442593132b484ab8a7f03288f08b791207686fa4bde4f50b962ca3192",
+      "bytes": 17898
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/data/FIRAS_monopole.txt",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/data/FIRAS_monopole.txt",
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "bytes": 2388
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/source_snapshot/off_trajectory_controls_v2.py",
+      "relative_path": "snapshot/evidence_v2/source_snapshot/off_trajectory_controls_v2.py",
+      "sha256": "18ad59a63226defd35d6e37435a69313a878f7f92a4eebe9ac0e2f75cd59fffa",
+      "bytes": 4883
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/stderr.txt",
+      "relative_path": "snapshot/evidence_v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/evidence_v2/stdout.txt",
+      "relative_path": "snapshot/evidence_v2/stdout.txt",
+      "sha256": "9f9a89822a486789ef6364aa6ff9ab36daf827f236844da1db0b4fb6ddedd52d",
+      "bytes": 108
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/snapshot/off_trajectory_controls_v2.py",
+      "relative_path": "snapshot/off_trajectory_controls_v2.py",
+      "sha256": "18ad59a63226defd35d6e37435a69313a878f7f92a4eebe9ac0e2f75cd59fffa",
+      "bytes": 4883
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/stderr_v1.txt",
+      "relative_path": "stderr_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/independent_numerical_review/affected_v2/stdout_v1.txt",
+      "relative_path": "stdout_v1.txt",
+      "sha256": "b8c48fe4f014ff2993b4de1a777b14090c276bbec043f2466093299d8a82f3ea",
+      "bytes": 191
+    }
+  ],
+  "self_reference_policy": "Receipt excludes its own bytes."
+}

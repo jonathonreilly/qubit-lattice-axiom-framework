@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-13T05:40:13.570224+00:00",
+  "table_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+  "table_version": "CODATA2022",
+  "table_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/NIST_CODATA_2022.txt",
+  "table_sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+  "selected_rows": {
+    "electron mass": {
+      "line_number": 107,
+      "raw_line": "electron mass                                               9.109 383 7139 e-31      0.000 000 0028 e-31      kg\n",
+      "value": "9.1093837139e-31",
+      "uncertainty": "0.0000000028e-31",
+      "unit": "kg",
+      "role": "measured exposed calibration"
+    },
+    "electron mass energy equivalent": {
+      "line_number": 108,
+      "raw_line": "electron mass energy equivalent                             8.187 105 7880 e-14      0.000 000 0026 e-14      J\n",
+      "value": "8.1871057880e-14",
+      "uncertainty": "0.0000000026e-14",
+      "unit": "J",
+      "role": "measured exposed calibration"
+    },
+    "Newtonian constant of gravitation": {
+      "line_number": 264,
+      "raw_line": "Newtonian constant of gravitation                           6.674 30 e-11            0.000 15 e-11            m^3 kg^-1 s^-2\n",
+      "value": "6.67430e-11",
+      "uncertainty": "0.00015e-11",
+      "unit": "m^3 kg^-1 s^-2",
+      "role": "measured exposed calibration"
+    },
+    "Planck constant": {
+      "line_number": 271,
+      "raw_line": "Planck constant                                             6.626 070 15 e-34        (exact)                  J Hz^-1\n",
+      "value": "6.62607015e-34",
+      "uncertainty": "(exact)",
+      "unit": "J Hz^-1",
+      "role": "exact SI defining constant"
+    },
+    "speed of light in vacuum": {
+      "line_number": 330,
+      "raw_line": "speed of light in vacuum                                    299 792 458              (exact)                  m s^-1\n",
+      "value": "299792458",
+      "uncertainty": "(exact)",
+      "unit": "m s^-1",
+      "role": "exact SI defining constant"
+    }
+  }
+}

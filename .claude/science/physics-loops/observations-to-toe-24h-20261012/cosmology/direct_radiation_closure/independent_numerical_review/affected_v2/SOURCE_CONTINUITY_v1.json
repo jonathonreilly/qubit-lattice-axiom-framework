@@ -1,0 +1,83 @@
+{
+  "functions": [
+    {
+      "function": "check",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "close",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "exact",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "symbolic_identities",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "thermal_calibration",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "local_functions",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "potential",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "rhs",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "algebra_grid",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "old_potential_responses",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "exact_background_integrations",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "endpoint_controls",
+      "same_AST": true,
+      "same_text": true
+    },
+    {
+      "function": "main",
+      "same_AST": false,
+      "same_text": false
+    }
+  ],
+  "original_result_sections_identical": {
+    "symbolic": true,
+    "thermal": true,
+    "local_grid": true,
+    "old_potential": true,
+    "new_background": true,
+    "endpoint": true,
+    "roles": true,
+    "versions": true
+  },
+  "original_1195_assertions_exact_prefix": true,
+  "original_assertion_count": 1195,
+  "new_assertion_count": 378,
+  "off_trajectory_rows": 54
+}

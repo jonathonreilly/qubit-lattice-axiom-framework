@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-13T05:30:24.837296+00:00",
+  "origin": "parent messages, not an independently observed mathematical execution error",
+  "events": [
+    {
+      "request_id": null,
+      "report": "Parent reported stream disconnection after 73 symbolic and 21 high-precision checks and v2 confirmation; requested same-check resumption without rerun."
+    },
+    {
+      "request_id": "58f07f32-fade-4286-b884-1975dcaecb51",
+      "report": "Parent reported second report-turn disconnection; requested final report and receipt from preserved work."
+    }
+  ],
+  "effect": "Complete derivation, results and source snapshots preserved. No science rerun, implementation read or author edit.",
+  "parent_reported_new_epoch_execution": "194 pass, 0 fail; not reviewed in this mathematical scope."
+}

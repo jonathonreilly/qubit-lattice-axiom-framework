@@ -1,0 +1,55 @@
+{
+  "tracking": {
+    "comparisons": 24,
+    "max_tolerance_units": 0.001440637507862421,
+    "max_absolute_error": 3.2995162158044877e-10
+  },
+  "tracking_H2": {
+    "comparisons": 24,
+    "max_tolerance_units": 2.7525544990603586e-06,
+    "max_absolute_error": 16384.0
+  },
+  "tracking_target": {
+    "comparisons": 12,
+    "max_tolerance_units": 2.0816681711721685e-09,
+    "max_absolute_error": 6.661338147750939e-16
+  },
+  "disturbed_N": {
+    "comparisons": 48,
+    "max_tolerance_units": 9.436280278397188e-05,
+    "max_absolute_error": 1.0748624212908453e-12
+  },
+  "disturbed_proper": {
+    "comparisons": 48,
+    "max_tolerance_units": 0.0001558392582351423,
+    "max_absolute_error": 6.348865877470189e-12
+  },
+  "proper_times": {
+    "comparisons": 48,
+    "max_tolerance_units": 3.187700703823254e-05,
+    "max_absolute_error": 2.098765605751396e-12
+  },
+  "energy": {
+    "comparisons": 48,
+    "max_tolerance_units": 5.608155607608812e-06,
+    "max_absolute_error": 2.099431739566171e-12
+  },
+  "force_max_abs_over_max1": 6.661338147750939e-16,
+  "mode_max_abs": 1.3877787807814457e-16,
+  "mode_max_last_term": 1.2075407939333252e-254,
+  "max_parent_check_tolerance_units": 0.0017488919398544538,
+  "parent_disturbed_final_energy_excess_range": [
+    0.0,
+    3.430631891365721e-05
+  ],
+  "independent_disturbed_final_energy_excess_range": [
+    0.0,
+    3.430631891432334e-05
+  ],
+  "source_freeze_input_count": 20,
+  "key_hashes": {
+    "ROW_CHECKS_v1.json": "ee9b5e284bdca2d25893fa7c4d188130d11731c591438ff28cbe7351902e361b",
+    "HAMILTONIAN_HISTORIES_v1.json": "70c0f3095a84be56f3812d391a42ac1972e054a2a695fba976a2c0be454b68c5",
+    "MUTATION_SUMMARY_v1.json": "8090e68df443508524651001c038c244e56e1e0a851d9a3882629508d4eb37b8"
+  }
+}

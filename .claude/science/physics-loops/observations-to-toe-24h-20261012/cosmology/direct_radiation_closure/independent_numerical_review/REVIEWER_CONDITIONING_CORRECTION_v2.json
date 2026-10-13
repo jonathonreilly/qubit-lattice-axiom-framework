@@ -1,0 +1,5 @@
+{
+  "reason": "The v1 reviewer required 32 decimal digits from a 70-digit author evaluation subtracting order-one L and dividing by a*b*q^(8/3) as small as 1e-49. Five recorded discrepancies were 8.87e-31 through 1.41e-23, many orders below the declared 2e-8 endpoint tolerance. V2 uses a stated conditioning-based budget for exactly that cancellation-sensitive coefficient. No author bytes or numerical results were edited. All five v1 failures remain in RESULTS_v1.json.",
+  "v1_sha256": "3829a6e08c6eb9c785ac50a27e8b35b993cb1530202bef97755acf5d7d5f4d44",
+  "v2_sha256": "647d98806a4c0a1336856e342a141eb3513075a5ab0e89788d8181184c86fc70"
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "direct_matter_vacuum_response_protocol_v1",
+  "author": "parent /root direct scientific author",
+  "status": "conditional-support",
+  "scope": "Matter-only zero-derivative effective action and conditional positive residual in the analytic candidate; no observation likelihood, no derived cosmological constant.",
+  "fit_test_separation": {
+    "calibration": [
+      "NIST CODATA2022 electron mass and G_N",
+      "exact h,c",
+      "exposed Omega_gamma from prior radiation"
+    ],
+    "supplied": [
+      "H0=70 km/s/Mpc",
+      "m=0.3",
+      "G_N=(1+a)G*",
+      "analytic action and H_v"
+    ],
+    "model_development": "All these inputs and previous expansion data are exposed.",
+    "independent_empirical_tests": []
+  },
+  "assumptions": [
+    "Jordan-covariant matter measure/regulator/counterterms",
+    "Matter loops only; no internal gravitons or u/x/y",
+    "One free Dirac field and MS-bar mu_J=m_e for diagnostic",
+    "Nonlinear vacuum response only for C>=0",
+    "A counterterm is allowed; finite loop alone is not observable"
+  ],
+  "parameters": {
+    "a": [
+      0.000001,
+      0.00040016006402561027,
+      0.01
+    ],
+    "nu": [
+      0.25,
+      1,
+      2.25,
+      4
+    ],
+    "log_mu_over_m": [
+      -2,
+      -0.75,
+      0,
+      1
+    ],
+    "u": [
+      -2,
+      -0.1,
+      0,
+      0.2,
+      3
+    ],
+    "residual_ratio_R": [
+      0,
+      1e-8,
+      0.01,
+      1,
+      100000000,
+      100000000000000000000,
+      "electron_loop_at_mu_equals_m"
+    ]
+  },
+  "controls": [
+    "exact determinant derivative and running identities",
+    "all u-derivatives through n=6 and two subtraction operators",
+    "matched versus fixed frame-scale identity with finite local term",
+    "two SI density forms and observed electron uncertainty sensitivity",
+    "Lambert W versus independent monotone bisection; stationary and mass/Hubble formulas",
+    "positive residual energy/coercivity proof and no claims for negative C",
+    "induced Jordan-curvature integration-by-parts with explicit boundary"
+  ],
+  "numerics": {
+    "mpmath_digits": 80,
+    "normalized_identity_tolerance": "1e-60",
+    "root_bracket_bisection_iterations": 360,
+    "relative_root_tolerance": "1e-55",
+    "float_report_only": true
+  },
+  "no_reexecution_without_change": true,
+  "deadline_at": "2026-10-13T16:53:00.057432+00:00"
+}

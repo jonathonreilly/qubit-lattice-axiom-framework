@@ -1,0 +1,8 @@
+{
+  "passed": 1244,
+  "failed": 0,
+  "failures": [],
+  "min_abs_p_acceleration": 0.2919118085427639,
+  "max_abs_p_acceleration": 2.6979405213661343,
+  "min_denominator": 2.9736341999032074
+}

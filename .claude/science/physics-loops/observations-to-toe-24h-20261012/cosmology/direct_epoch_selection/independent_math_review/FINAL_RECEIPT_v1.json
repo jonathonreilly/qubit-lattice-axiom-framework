@@ -1,0 +1,180 @@
+{
+  "schema": "epoch_selection_independent_math_receipt_v1",
+  "created_at": "2026-10-13T05:30:24.840201+00:00",
+  "disposition": "Scoped handwritten mathematics agrees for exact v2; R1-domain corrected; implementation and finite-era history selection not reviewed",
+  "formal_audit": false,
+  "publication_or_no_go_gate": false,
+  "parent_implementation_reviewed": false,
+  "author_sources": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/HAND_DERIVATION_v1.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_epoch_selection/HAND_DERIVATION_v1.md",
+      "bytes": 4558,
+      "sha256": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "bytes": 7275,
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/HAND_DERIVATION_v2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_epoch_selection/HAND_DERIVATION_v2.md",
+      "bytes": 5055,
+      "sha256": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99",
+      "current_unchanged": true
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/LIMIT_DOMAIN_CORRECTION_v2.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_epoch_selection/LIMIT_DOMAIN_CORRECTION_v2.json",
+      "bytes": 555,
+      "sha256": "ce7d7ee17ef89fe284bbe0d000a73eec802dab4a1cc8a2354f39b7363f9dbf42",
+      "current_unchanged": true
+    }
+  ],
+  "checks": {
+    "exact_symbolic": 73,
+    "high_precision_eigenvalue": 21,
+    "passed": 94,
+    "failed": 0,
+    "no_science_restart_after_reported_stream_interruptions": true
+  },
+  "findings": [
+    {
+      "id": "R1-domain",
+      "original_source_sha256": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d",
+      "finding": "Small transverse field amplitude does not eliminate transverse kinetic energy.",
+      "counterexample": "a=1,U=V=0,P=-3/2,W=1,x=t\u2192infinity,y=0,y_N=t/5,r=0 gives F=75/56 and P_N=-3/100, not4/3 and0.",
+      "status": "closed in v2 by transverse-velocity/positive-denominator/compact-domain qualifications",
+      "corrected_source_sha256": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99"
+    }
+  ],
+  "reviewer_source_sha256": "50f34b43ec526036d06fac66ca1b8fadc47cb78af55fd7f414685e3bc0b587c6",
+  "scope_limits": [
+    "Eigenvalues concern limiting autonomous systems and Einstein N.",
+    "Radiation radial sink does not fix u or select a complete observed history.",
+    "Transverse absolute-amplitude decay differs from decay relative to the dominant field.",
+    "No global finite-era attraction or complete fixed-point enumeration.",
+    "No independent empirical test."
+  ],
+  "reviewer_artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/AFFECTED_V2_INPUT_RECEIPT_v1.json",
+      "relative_path": "AFFECTED_V2_INPUT_RECEIPT_v1.json",
+      "bytes": 1244,
+      "sha256": "313e73749105112663393bf21f76833be35cefd244b001ba965c3ac3235bab44"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/AFFECTED_V2_SCOPE_CHECK_v1.json",
+      "relative_path": "AFFECTED_V2_SCOPE_CHECK_v1.json",
+      "bytes": 342,
+      "sha256": "144409782f7c5c5827db0fcea135313e10aed17a41ad3fc63505da54bc45ed50"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/COMMUNICATION_INTERRUPTION_v1.json",
+      "relative_path": "COMMUNICATION_INTERRUPTION_v1.json",
+      "bytes": 804,
+      "sha256": "795dc8b58c9f85d1dbae2ceb416730b4e7ff95b96b3256a1656246bb47d06ab2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/DERIVATION_RESULTS_v1.json",
+      "relative_path": "DERIVATION_RESULTS_v1.json",
+      "bytes": 32868,
+      "sha256": "e5d062a33dea0bb366b46d1de41e115dfe58368afed5ad57dfda5221dab4fcce"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/DOMAIN_v1_to_v2.diff",
+      "relative_path": "DOMAIN_v1_to_v2.diff",
+      "bytes": 1349,
+      "sha256": "28cac51b98347a318d7c49c0898ceaf65a3d8a87c47c7d95415ceda21d550c5e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/EDITORIAL_PIN_CORRECTION_v1.json",
+      "relative_path": "EDITORIAL_PIN_CORRECTION_v1.json",
+      "bytes": 436,
+      "sha256": "25d1acf1c575d0b34ba56d7d20567d9401b0dee5d41417d7016f0122a9ca4eb5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/EXECUTION_v1.json",
+      "relative_path": "EXECUTION_v1.json",
+      "bytes": 149,
+      "sha256": "b4abae88ec516063d84bcf011766d67cb483a3bb8dc83303442faa7fa4adbbca"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/FAILURE_AND_FINDING_HISTORY_v1.json",
+      "relative_path": "FAILURE_AND_FINDING_HISTORY_v1.json",
+      "bytes": 827,
+      "sha256": "14651fd3a40bedca92e9d038bd1e0d84f8142bbf56afee7fac54d4be6b67d11e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/INDEPENDENT_MATH_REVIEW_v1.md",
+      "relative_path": "INDEPENDENT_MATH_REVIEW_v1.md",
+      "bytes": 13205,
+      "sha256": "cf68f8a5bf00729bf3e7211376812e6157689035d77ff4053d14f6f31093e2d1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/INPUT_RECEIPT_v1.json",
+      "relative_path": "INPUT_RECEIPT_v1.json",
+      "bytes": 1245,
+      "sha256": "ccf72121ba441e367abdc02d1329199801fb4e360c96270b4a800f969aaa2102"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/PRE_FINAL_REPORT_DRAFT_v1.md",
+      "relative_path": "PRE_FINAL_REPORT_DRAFT_v1.md",
+      "bytes": 13133,
+      "sha256": "e68c5f5d697a61b72421e671ab8dd103cbd93e67317739430eda0b3a47424cb4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/READ_LEDGER_v1.json",
+      "relative_path": "READ_LEDGER_v1.json",
+      "bytes": 1957,
+      "sha256": "245d92c218f1a9a569588b17cbd64c94f14df6385e67edeaae8de84a4a2e27e2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/derive_limits_v1.py",
+      "relative_path": "derive_limits_v1.py",
+      "bytes": 7839,
+      "sha256": "50f34b43ec526036d06fac66ca1b8fadc47cb78af55fd7f414685e3bc0b587c6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "relative_path": "snapshot/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "bytes": 7275,
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_epoch_selection/HAND_DERIVATION_v1.md",
+      "relative_path": "snapshot/direct_epoch_selection/HAND_DERIVATION_v1.md",
+      "bytes": 4558,
+      "sha256": "bafa1e27b87f79b0e1e94917127b5f27060febcf09eda73160290e9a3dda344d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_epoch_selection/HAND_DERIVATION_v2.md",
+      "relative_path": "snapshot/direct_epoch_selection/HAND_DERIVATION_v2.md",
+      "bytes": 5055,
+      "sha256": "504d273484b5596e61b931214c68bb2561ea2117ceac10bcd717efaf25ee7f99"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/snapshot/direct_epoch_selection/LIMIT_DOMAIN_CORRECTION_v2.json",
+      "relative_path": "snapshot/direct_epoch_selection/LIMIT_DOMAIN_CORRECTION_v2.json",
+      "bytes": 555,
+      "sha256": "ce7d7ee17ef89fe284bbe0d000a73eec802dab4a1cc8a2354f39b7363f9dbf42"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/stderr_v1.txt",
+      "relative_path": "stderr_v1.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_epoch_selection/independent_math_review/stdout_v1.txt",
+      "relative_path": "stdout_v1.txt",
+      "bytes": 438,
+      "sha256": "7540ed47a1fe621a504832e09c84369d2e5c4f17895d39d625c36a3b6c043599"
+    }
+  ],
+  "self_reference_policy": "Final receipt excludes its own bytes."
+}

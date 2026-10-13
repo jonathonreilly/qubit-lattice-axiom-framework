@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-13T04:58:01.450338+00:00",
+  "source_sha256": {
+    "check_radiation_closure_v2.py": "c86d2c5442593132b484ab8a7f03288f08b791207686fa4bde4f50b962ca3192",
+    "off_trajectory_controls_v2.py": "18ad59a63226defd35d6e37435a69313a878f7f92a4eebe9ac0e2f75cd59fffa",
+    "OFF_TRAJECTORY_FIXTURES_v2.json": "447b8f7eb338c7d24a56010502b664b8c6cdde07c371d878a9c392ed4ca65476",
+    "OFF_TRAJECTORY_REVISION_v2.json": "68ddcda565887d9cfd75997d4b075f3ced991feb7f872e95a1b5deda16ed4236",
+    "HAND_DERIVATION_v1.md": "b8dd9cc0e26787ba32475c93b57034a9482aba0db7559e193703ab41f47d2570",
+    "HAND_DERIVATION_v2.md": "4d62ed249c42ed532b41b87ebee1a482236e404463da891c77dfffbf9485f95b",
+    "PROTOCOL_v1.json": "bfd06bb72d44088b742c551fe2537559110c317efa26bbca53d68a52513b95a1",
+    "NUMERICAL_FIXTURES_v1.json": "1c125242e99770a9a3387f2a17358cad8b705c7c82dec9136794e4951218811c",
+    "SOURCE_LEDGER_v1.json": "5752d548ba306bdd29fd3ffc9aa8c05191ef718e41d170f28dd19059b45868fc",
+    "DUST_SPEED_CORRECTION_v2.json": "ac1fc454b38531eaa137631249151c99d30e80dfe6df424f739131f237a86a68",
+    "data/FIRAS_monopole.txt": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa"
+  },
+  "first_v2_execution": true,
+  "prediction_changes": false
+}

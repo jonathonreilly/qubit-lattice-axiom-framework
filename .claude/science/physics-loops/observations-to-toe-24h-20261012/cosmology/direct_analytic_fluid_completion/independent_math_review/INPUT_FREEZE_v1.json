@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-13T04:45:31.980297+00:00",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v1.md",
+      "sha256": "41dc33bd1b0ac810d4c3da493b9fb34b433ecc1a1f5a06bca773a1b244ff1801",
+      "bytes": 6762,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/source_snapshot/HAND_DERIVATION_v1.md"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/PROTOCOL_v1.json",
+      "sha256": "b7d06776617627f79177b2db64ccb25baf4b4132f5382f4f7b46a5b7e0b82dfc",
+      "bytes": 1818,
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/independent_math_review/source_snapshot/PROTOCOL_v1.json"
+    }
+  ],
+  "scope": "Frozen handwritten analytic three-field construction before independent checking; no author implementation imported."
+}

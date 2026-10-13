@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-10-13T05:40:13.575763+00:00",
+  "sources": [
+    {
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "role": "Selected measured/exact constants; full bytes recovered losslessly in primary_recovery.",
+      "read_scope": "Header and exact selected electron, G_N,h,c rows."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1309.4133v1",
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/Burgess_2013_v1.pdf",
+      "sha256": "ca8d47a095e275ca1e8656cfbe60c219ec28ac2adb69a7d22c777e5afe7628c1",
+      "role": "QFT/naturalness context, not a numeric prediction or independent test.",
+      "read_scope": "Abstract, sections1.3-1.4 and surrounding discussion of criteria as returned web text; full paper not claimed read.",
+      "publication_recovery": "Local original PDF remains outside branch; URL/version/hash identify it."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_radiation_closure/evidence_v1/RESULTS.json",
+      "sha256": "8c0bb51294f924530c5068b61fda0ebfca8818870fea0cb68556381faed01fe7",
+      "role": "Inherited exposed thermal calibration; no new experiment."
+    }
+  ],
+  "independent_observation_tests": [],
+  "new_prescription": "Matter-only Jordan-covariant effective action and free Dirac MS-bar benchmark; all quantum assertions conditional on it."
+}

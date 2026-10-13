@@ -1,0 +1,2 @@
+{"failed": 1, "passed": 80, "total": 81}
+{"evidence": {"displayed_pair_wronskian": "0", "missing_solution": "t*exp(-3*hv*t/2)", "nu": "9/4"}, "name": "SOURCE_FINDING_v1_u_modes_span_critical_nu", "pass": false}

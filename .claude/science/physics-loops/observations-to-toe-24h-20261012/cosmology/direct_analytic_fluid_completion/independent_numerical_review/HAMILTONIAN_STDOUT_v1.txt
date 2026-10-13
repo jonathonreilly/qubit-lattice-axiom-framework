@@ -1,0 +1,61 @@
+{"completed": "tracking", "a": 1e-06, "nu": 0.25, "success": true, "evaluations": 3474}
+{"completed": "tracking", "a": 1e-06, "nu": 1, "success": true, "evaluations": 3474}
+{"completed": "tracking", "a": 1e-06, "nu": 2.25, "success": true, "evaluations": 3474}
+{"completed": "tracking", "a": 1e-06, "nu": 4, "success": true, "evaluations": 3474}
+{"completed": "tracking", "a": 0.00040016006402561027, "nu": 0.25, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.00040016006402561027, "nu": 1, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.00040016006402561027, "nu": 2.25, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.00040016006402561027, "nu": 4, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.01, "nu": 0.25, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.01, "nu": 1, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.01, "nu": 2.25, "success": true, "evaluations": 3495}
+{"completed": "tracking", "a": 0.01, "nu": 4, "success": true, "evaluations": 3495}
+{"completed": "disturbed", "a": 1e-06, "nu": 0.25, "case_index": 0, "success": true, "evaluations": 4905}
+{"completed": "disturbed", "a": 1e-06, "nu": 0.25, "case_index": 1, "success": true, "evaluations": 7351}
+{"completed": "disturbed", "a": 1e-06, "nu": 0.25, "case_index": 2, "success": true, "evaluations": 4219}
+{"completed": "disturbed", "a": 1e-06, "nu": 0.25, "case_index": 3, "success": true, "evaluations": 6518}
+{"completed": "disturbed", "a": 1e-06, "nu": 1, "case_index": 0, "success": true, "evaluations": 4912}
+{"completed": "disturbed", "a": 1e-06, "nu": 1, "case_index": 1, "success": true, "evaluations": 7365}
+{"completed": "disturbed", "a": 1e-06, "nu": 1, "case_index": 2, "success": true, "evaluations": 4191}
+{"completed": "disturbed", "a": 1e-06, "nu": 1, "case_index": 3, "success": true, "evaluations": 6532}
+{"completed": "disturbed", "a": 1e-06, "nu": 2.25, "case_index": 0, "success": true, "evaluations": 4933}
+{"completed": "disturbed", "a": 1e-06, "nu": 2.25, "case_index": 1, "success": true, "evaluations": 7624}
+{"completed": "disturbed", "a": 1e-06, "nu": 2.25, "case_index": 2, "success": true, "evaluations": 4303}
+{"completed": "disturbed", "a": 1e-06, "nu": 2.25, "case_index": 3, "success": true, "evaluations": 6560}
+{"completed": "disturbed", "a": 1e-06, "nu": 4, "case_index": 0, "success": true, "evaluations": 5017}
+{"completed": "disturbed", "a": 1e-06, "nu": 4, "case_index": 1, "success": true, "evaluations": 7855}
+{"completed": "disturbed", "a": 1e-06, "nu": 4, "case_index": 2, "success": true, "evaluations": 4720}
+{"completed": "disturbed", "a": 1e-06, "nu": 4, "case_index": 3, "success": true, "evaluations": 6686}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 0.25, "case_index": 0, "success": true, "evaluations": 8118}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 0.25, "case_index": 1, "success": true, "evaluations": 11208}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 0.25, "case_index": 2, "success": true, "evaluations": 6970}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 0.25, "case_index": 3, "success": true, "evaluations": 9815}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 1, "case_index": 0, "success": true, "evaluations": 8041}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 1, "case_index": 1, "success": true, "evaluations": 11291}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 1, "case_index": 2, "success": true, "evaluations": 6843}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 1, "case_index": 3, "success": true, "evaluations": 9829}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 2.25, "case_index": 0, "success": true, "evaluations": 7936}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 2.25, "case_index": 1, "success": true, "evaluations": 11789}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 2.25, "case_index": 2, "success": true, "evaluations": 6991}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 2.25, "case_index": 3, "success": true, "evaluations": 9836}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 4, "case_index": 0, "success": true, "evaluations": 8153}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 4, "case_index": 1, "success": true, "evaluations": 12034}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 4, "case_index": 2, "success": true, "evaluations": 7712}
+{"completed": "disturbed", "a": 0.00040016006402561027, "nu": 4, "case_index": 3, "success": true, "evaluations": 10137}
+{"completed": "disturbed", "a": 0.01, "nu": 0.25, "case_index": 0, "success": true, "evaluations": 9881}
+{"completed": "disturbed", "a": 0.01, "nu": 0.25, "case_index": 1, "success": true, "evaluations": 13285}
+{"completed": "disturbed", "a": 0.01, "nu": 0.25, "case_index": 2, "success": true, "evaluations": 8755}
+{"completed": "disturbed", "a": 0.01, "nu": 0.25, "case_index": 3, "success": true, "evaluations": 11656}
+{"completed": "disturbed", "a": 0.01, "nu": 1, "case_index": 0, "success": true, "evaluations": 9677}
+{"completed": "disturbed", "a": 0.01, "nu": 1, "case_index": 1, "success": true, "evaluations": 13704}
+{"completed": "disturbed", "a": 0.01, "nu": 1, "case_index": 2, "success": true, "evaluations": 8834}
+{"completed": "disturbed", "a": 0.01, "nu": 1, "case_index": 3, "success": true, "evaluations": 11781}
+{"completed": "disturbed", "a": 0.01, "nu": 2.25, "case_index": 0, "success": true, "evaluations": 9419}
+{"completed": "disturbed", "a": 0.01, "nu": 2.25, "case_index": 1, "success": true, "evaluations": 14244}
+{"completed": "disturbed", "a": 0.01, "nu": 2.25, "case_index": 2, "success": true, "evaluations": 8950}
+{"completed": "disturbed", "a": 0.01, "nu": 2.25, "case_index": 3, "success": true, "evaluations": 11740}
+{"completed": "disturbed", "a": 0.01, "nu": 4, "case_index": 0, "success": true, "evaluations": 10014}
+{"completed": "disturbed", "a": 0.01, "nu": 4, "case_index": 1, "success": true, "evaluations": 14476}
+{"completed": "disturbed", "a": 0.01, "nu": 4, "case_index": 2, "success": true, "evaluations": 9831}
+{"completed": "disturbed", "a": 0.01, "nu": 4, "case_index": 3, "success": true, "evaluations": 12244}
+{"failed": 0, "passed": 470, "total": 470}

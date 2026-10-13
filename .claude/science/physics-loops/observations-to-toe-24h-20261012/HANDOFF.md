@@ -201,3 +201,7 @@ Eight PRs open, no merges. Sameholder lease expires17:59:25Z only for ownership;
 ## Final independent closures 2026-10-13T16:37:43.836896+00:00
 
 Boundary geometry and scoped report checks complete. Parent read complete reports and verified24 boundary plus32 synthesis identities. No discovery remains active. Next action is preservation and finalization only, with the original16:53Z deadline unchanged.
+
+## Packaging-only window 2026-10-13T16:41:05.305857+00:00
+
+All science and focused reviews are closed. FINAL_REPORT.md preserves the checked synthesis; no new discovery is authorized during this final window. Final recovery1275members at42fb11a3dc is ready. Original deadline16:53Z is unchanged; at that time verify workers absent, pause heartbeat, release only our owned lock, and record completion honestly without claiming a TOE.

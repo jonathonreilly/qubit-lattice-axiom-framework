@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-13T16:45:38.459742+00:00",
+  "draft_v2": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/synthesis/DRAFT_FINAL_REPORT_v2.md",
+    "sha256": "ef1fcfebb55dde5c2d05a0b2d6d7d00a159ed6e66b1b8dacbfc1d7975282741e"
+  },
+  "packaging_report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/FINAL_REPORT.md",
+    "sha256": "19770c15946c04add7547bd458387162fd4484887a675941e70ad98fa7ca6fc0"
+  },
+  "changes": "Only operational opening and recovery/access paragraphs added to checked draft v2; scientific body and observation table unchanged. Final deadline closure will be appended after the clock expires.",
+  "deadline": "2026-10-13T16:53:00.057432+00:00"
+}

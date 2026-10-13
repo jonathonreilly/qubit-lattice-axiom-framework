@@ -1,53 +1,53 @@
 # Current recovery checkpoint
 
-Updated 2026-10-13T08:36:01.459048+00:00. Sole current checkpoint. Fixed deadline 2026-10-13T16:42:30Z.
+Updated 2026-10-13T09:07:23.013534+00:00. Sole current checkpoint. Fixed deadline 2026-10-13T16:42:30Z.
 CW=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree; clean branch physics-loop/toe-calibrated-energy-20261013, HEAD/base f6a820fd66011a50752670a454fb375b420ddbd6, child of regular9512.
-Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previous checkpoint 44846d11e764873865b6739b50c6237c536e1e1d. Primary untouched.
-Nine renewal regular PRs9499/9500/9502/9504/9506/9508/9510/9511/9512, as last observed.
+Checkpoint-only W=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree; previous checkpoint 82ed33c083e1d9eed287234aa164b8f30fc4b6dc. Primary untouched.
+Nine regular renewal PRs9499/9500/9502/9504/9506/9508/9510/9511/9512 remain open.
 No merge/main push/audit verdict/physical-axiom or editable-prompt change/other-chat message.
 
-Prepared-energy9512 is complete, regular and attached atf6a820fd. Source package511,
-six cores2923lines unchanged,353paths. Prepare225.743s/verify4.516s exit0.
-Exactstage/caches/corruptions/graph checked; focused compatibility checked=[]
-and zero mathematical runtime predicates. Do not rerun completed publication.
+9512 publication complete atf6a820fd; do not rerun it. Actual prepared-energy
+prepare225.743s and verify4.516s exit0;353paths. Source511 and six2923line cores
+unchanged. Compatibility checked=[] is empty; identity runners prove no math.
 
-Unpublished accepted calibrated family: all-time768+809, expansion423,
-compactinverse360, weighted566, inversecross520, graphroot262+cross466,
-rootcompositionV2 111+interface417. All retain exact prior proof/review identities.
-Interface417/b4bfa525 now fully root-read69e2d7/09810a/272cc5, accepted829bae7e,
-review83008698, freeze480d89f2.36evidence/13sourcepairs/14bindings checked.
-No required formula repair. Earlier weighted exclusion remains historical;
-later interface exposure is explicit. Calibrated three-note source assembly active.
+Calibrated source assembly freeze5a6050c1 has296files,294bound;3notes4513lines,
+9unchangedcores4182lines and331wrapperlines. All new wrappers, registry/review and
+four procedures completely read. Root revieweefb81f6 accepted source assembly.
+Rootverification6775949e checked58sourcepairs14governing435directbindings and
+independent byte/line concatenation. Reconstruction0.124s exit0, tree unchanged.
+Three canonical note stems: ENERGY_ADAPTED_CALIBRATION, ALL_TIME_ENERGY_COMPARISON,
+CALIBRATED_ENERGY_TRANSFER, suffix _BOUNDED_THEOREM_NOTE_2026-10-13.md.
+energy_cell_expansion_fresh prepares publication package in R only; CW read-only.
+Frozen source assemblies and original science must remain unchanged.
 
-Fresh pair792/4e0de0b1 is now fully root-read9ff5f1/d6bc6f/099aa3/e8aaec/8fb780,
-acceptedbb1ade62,review4f16e858.24evidence/3sourcepairs/8procedurebytes checked.
-No formula repair. Fresh C(t)=omega(alpha_t(B)B), root286 K(t)=C(-t), explaining
-opposite phases. Checked threshold hierarchy,eta*T weak regime,threshold logarithm
-and calibrated joint limits. Pair source-only assembly active with later root286
-exposure documented; unchanged original barriers. Old compact failure preserved.
+Pair assembly freezec7cdceb9 has77files;913line note4bddc339 preserves792core
+4e0de0b1. Full rootreviewbf13995f and mechanical verification accepted.
+Publication-copy REVIEW_HISTORY must change 'human coverage' to 'author read coverage';
+preserve frozen original. Actual publication parent and weighted canonical binding
+await calibrated milestone. pair_response_fresh currently idle.
 
-Root kinetic484/d3f10645 frozen2026-10-13T08:33:40.635344Z,seal53694f70.
-Candidate proof gives |lambda|^3*T energy error uniformly inT via exact covariance,
-integrable zero-mean local kernels and time-L2 Volterra/synthesis. It would yield
-finite heating atT=tau/lambda^2, explicit positive cubic-threshold witness, and
-actual joint transfer a^(N+1)=o(lambda^2). Root saw full accepted pair792 before
-this proof; prior plan/working-note exposure chronology remains preserved.
-No independent kinetic finding or draft has been opened. Do not treat this as
-independently checked or Lean-proved until a complete comparison is performed.
+Kinetic root484/d3f10645 frozen083340/53694f70 before independent findings.
+Independent847/ba52feda frozen083754/4cb5929d;37evidence5sourcepairs verified.
+Full root source read and comparison9312f7a4 completed; conditional mean accepted
+084828. Different derivations agree on uniform |lambda|^3*T remainder, finite
+heating atT=tau/lambda^2 for componentwise zero-mean controls and actual lattice
+joint condition a^(N+1)=o(lambda^2). Root had prior pair exposure; independent
+worker excluded all pair/rootkinetic science before freeze. Same model family.
+Full Poisson energy-law result in independent847 is stronger and currently under
+fresh source-exposed review by kinetic_poisson_review, which excludes root and all
+pair sources. Do not infer completion or read unfrozen findings. Root full review
+found no defect yet; fresh decisive check still required before extensive reuse.
+Bounded Fock/BdG and quadrature diagnostics, with mutation controls, succeeded;
+they establish finite calculations only. No analytic Lean proof or retained audit.
 
-Workers: energy_cell_expansion_fresh assembles calibrated3notes; pair_response_fresh
-assembles pair1note; weak_drive_kinetic_independent derives from neutral supplied
-premises, excluding all pair/rootkinetic drafts. Historical all-time freeze-bound
-dispersion/potential snapshots may be copied opaquely by calibration assembler.
-No model/effort downgrade. Active worker outputs excluded from this checkpoint.
+Latest refresh084559: main516cb69d,instruction3a4b2c66 and18procedurebytes unchanged;
+only newPR own9512. Lock expires2026-10-13T10:00:24.999251Z, refresh before0940.
+Recovery bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_pair_kinetic_checked_recovery_20261013T090723Z.tar.gz; manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_pair_kinetic_checked_recovery_20261013T090723Z.tar.MANIFEST.json;537members.
+MAP11908aliases hash-verified. Active reviewer and publication package
+excluded. Prior exact source, runtime and failure evidence remains in cumulative MAP.
 
-Latest remote refresh073953: main516cb69d,instruction3a4b2c66; all18procedurebytes
-reverified unchanged at082320. Refresh remote before next publication. Lock expires
-2026-10-13T10:00:24.999251Z; refresh before0940UTC. Bundle /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_pair_and_kinetic_root_recovery_20261013T083601Z.tar.gz;
-manifest /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_pair_and_kinetic_root_recovery_20261013T083601Z.tar.MANIFEST.json; 86members. MAP11369aliases all hash-verified.
-Earlier source/runtime/failure evidence remains in that cumulative recovery MAP.
-
-Next complete independent kinetic comparison and publish accepted source assemblies
-after full wrapper/gate review. Checkpoint0905 or milestone. At the fixed deadline,
-start no new research; preserve work, release lock, delete heartbeat
+Next review/run calibrated publication gates, then pair publication with real
+weighted parent. Complete fresh Poisson review; fixed-probe low-energy correlation
+consequences are a separate useful route. Checkpoint0935 or milestone. At deadline
+start no new research; preserve, release lock, delete heartbeat
 toe-derivations-24-hour-campaign and report actual outcomes and verification limits.

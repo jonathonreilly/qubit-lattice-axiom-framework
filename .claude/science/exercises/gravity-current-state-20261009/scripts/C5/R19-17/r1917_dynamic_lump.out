@@ -1,0 +1,25 @@
+grid: Nz=96, NT=6; <1/Omega> = 0.45214; e0 = 1.193937
+
+=== A=0.1, w=5.0, ramp Tr=16.0, dt=0.05 (10s) ===
+  t=  4.0 (phase 0.25): r_dyn(centre) = +3.9610e-06, local formula +5.0834e-06 (ratio 0.779); max|rho-rho0| inside lump = 3.06e-02, outside cone (|z|>4w+t, 47 sites) = 1.17e-07
+  t=  8.0 (phase 0.50): r_dyn(centre) = +1.5544e-05, local formula +1.5981e-05 (ratio 0.973); max|rho-rho0| inside lump = 2.16e-01, outside cone (|z|>4w+t, 39 sites) = 1.20e-08
+     profile z: -15 -12 -9 -6 -3 +0 +3 +6 +9 +12 +15
+     r_dyn    : +1.58e-08 +1.03e-07 +7.73e-07 +4.04e-06 +1.11e-05 +1.55e-05 +1.11e-05 +4.04e-06 +7.73e-07 +1.03e-07 +1.58e-08
+     formula  : +2.18e-09 +5.53e-08 +6.78e-07 +3.99e-06 +1.13e-05 +1.60e-05 +1.13e-05 +3.99e-06 +6.78e-07 +5.53e-08 +2.18e-09
+  t= 12.0 (phase 0.75): r_dyn(centre) = +5.3124e-06, local formula +4.2715e-06 (ratio 1.244); max|rho-rho0| inside lump = 3.72e-01, outside cone (|z|>4w+t, 31 sites) = 1.59e-10
+  t= 16.0 (phase 1.00): r_dyn(centre) = -1.0880e-07, local formula +0.0000e+00 (ratio nan); max|rho-rho0| inside lump = 3.93e-01, outside cone (|z|>4w+t, 23 sites) = 6.33e-13
+  t= 24.0 (phase 1.50): r_dyn(centre) = +2.5969e-08, local formula +0.0000e+00 (ratio nan); max|rho-rho0| inside lump = 3.93e-01, outside cone (|z|>4w+t, 7 sites) = 1.08e-13
+     after ramp: max|r_dyn| (excess above final GS) = 3.486e-08
+
+=== A=0.1, w=5.0, ramp Tr=32.0, dt=0.05 (18s) ===
+  t=  8.0 (phase 0.25): r_dyn(centre) = +1.0085e-06, local formula +1.2709e-06 (ratio 0.794); max|rho-rho0| inside lump = 3.06e-02, outside cone (|z|>4w+t, 39 sites) = 1.56e-09
+  t= 16.0 (phase 0.50): r_dyn(centre) = +3.9199e-06, local formula +3.9953e-06 (ratio 0.981); max|rho-rho0| inside lump = 2.16e-01, outside cone (|z|>4w+t, 23 sites) = 3.28e-13
+     profile z: -15 -12 -9 -6 -3 +0 +3 +6 +9 +12 +15
+     r_dyn    : +6.61e-10 +1.48e-08 +1.79e-07 +1.01e-06 +2.80e-06 +3.92e-06 +2.80e-06 +1.01e-06 +1.79e-07 +1.48e-08 +6.61e-10
+     formula  : +5.44e-10 +1.38e-08 +1.70e-07 +9.96e-07 +2.83e-06 +4.00e-06 +2.83e-06 +9.96e-07 +1.70e-07 +1.38e-08 +5.44e-10
+  t= 24.0 (phase 0.75): r_dyn(centre) = +1.2730e-06, local formula +1.0679e-06 (ratio 1.192); max|rho-rho0| inside lump = 3.72e-01, outside cone (|z|>4w+t, 7 sites) = 1.19e-13
+  t= 32.0 (phase 1.00): r_dyn(centre) = +2.2669e-08, local formula +0.0000e+00 (ratio nan); max|rho-rho0| inside lump = 3.93e-01, outside cone (|z|>4w+t, 0 sites) = nan
+  t= 40.0 (phase 1.25): r_dyn(centre) = +4.6538e-09, local formula +0.0000e+00 (ratio nan); max|rho-rho0| inside lump = 3.93e-01, outside cone (|z|>4w+t, 0 sites) = nan
+     after ramp: max|r_dyn| (excess above final GS) = 4.859e-09
+
+rate^2 scaling at phase 0.5, centre: r_dyn(Tr=16)/r_dyn(Tr=32) = 3.965 (local order 2: 4)

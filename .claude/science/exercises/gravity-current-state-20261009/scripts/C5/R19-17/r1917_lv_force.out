@@ -1,0 +1,5 @@
+lattice part of the dust Lagrangian, c general, to O(l^2), series in relative velocity s:
+   l**2*m**3*s**4*(v1**4 + v2**4 + v3**4)/(24*c**6)
+  lowest power of s: 4
+cone-offset part (c != 1), series in s: m*s**2*(4*c**2*(1 - c**2) + s**2*(1 - c**4)*(v1**2 + v2**2 + v3**2))*(v1**2 + v2**2 + v3**2)/(8*c**4)
+=> with c = 1 the lattice force on cold dust is O(s^3); with c != 1 it is O(s) (first order).

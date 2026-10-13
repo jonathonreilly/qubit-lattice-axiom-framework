@@ -1,0 +1,44 @@
+
+===== mass m = 0.0 (lattice units; comoving spacing 1) =====
+  e0(a=1) = 1.19380349;  massless: rho_hom(a) = e0/a^4 (check a=1.2: rel.dev 6.66e-16)
+  gauss  A=+0.08 w= 8: max|r| = 4.4799e-05 (rho0 = 1.1938); max|r| at |z|>5w = 3.35e-09
+  gauss  A=+0.08 w=16: max|r| = 1.1265e-05 (rho0 = 1.1938); max|r| at |z|>5w = nan
+  sech2  A=-0.10 w=10: max|r| = 1.4603e-04 (rho0 = 1.1938); max|r| at |z|>5w = 2.98e-08
+  bump2  A=+0.06 w= 9: max|r| = 6.4755e-05 (rho0 = 1.1938); max|r| at |z|>5w = 1.29e-07
+  gauss  A=+0.16 w=12: max|r| = 2.9053e-05 (rho0 = 1.1938); max|r| at |z|>5w = 5.32e-09
+  width scaling (gauss A=0.08): max|r|(w=8)/max|r|(w=16) = 3.977  (local order 2: 4)
+  fit on ('gauss', 0.08, 16): alpha = +0.164234, beta = -0.049696
+     predict ('gauss', 0.08, 8)      : max|r - pred|/max|r| = 2.987e-03
+     predict ('gauss', 0.08, 16)     : max|r - pred|/max|r| = 7.649e-03
+     predict ('sech2', -0.1, 10)     : max|r - pred|/max|r| = 8.676e-03
+     predict ('bump2', 0.06, 9)      : max|r - pred|/max|r| = 6.280e-03
+     predict ('gauss', 0.16, 12)     : max|r - pred|/max|r| = 7.212e-04
+  fit on ('sech2', -0.1, 10): alpha = +0.159299, beta = -0.049379
+     predict ('gauss', 0.08, 8)      : max|r - pred|/max|r| = 4.947e-03
+     predict ('gauss', 0.08, 16)     : max|r - pred|/max|r| = 7.224e-03
+     predict ('sech2', -0.1, 10)     : max|r - pred|/max|r| = 2.253e-03
+     predict ('bump2', 0.06, 9)      : max|r - pred|/max|r| = 3.485e-03
+     predict ('gauss', 0.16, 12)     : max|r - pred|/max|r| = 7.836e-03
+  small amplitude A=0.01 w=16: r*a^4/d2 at centre = -0.049679 (-> beta + alpha d1^2/d2, d1=0 at centre)
+
+===== mass m = 0.5 (lattice units; comoving spacing 1) =====
+  e0(a=1) = 1.22163459; spline check at a=1.037: -1.51e-09
+  gauss  A=+0.08 w= 8: max|r| = 4.6989e-05 (rho0 = 1.2216); max|r| at |z|>5w = 3.42e-09
+  gauss  A=+0.08 w=16: max|r| = 1.1823e-05 (rho0 = 1.2216); max|r| at |z|>5w = nan
+  sech2  A=-0.10 w=10: max|r| = 1.5145e-04 (rho0 = 1.2216); max|r| at |z|>5w = 3.10e-08
+  bump2  A=+0.06 w= 9: max|r| = 6.7455e-05 (rho0 = 1.2216); max|r| at |z|>5w = 1.34e-07
+  gauss  A=+0.16 w=12: max|r| = 3.0592e-05 (rho0 = 1.2216); max|r| at |z|>5w = 5.59e-09
+  width scaling (gauss A=0.08): max|r|(w=8)/max|r|(w=16) = 3.974  (local order 2: 4)
+  fit on ('gauss', 0.08, 16): alpha = +0.168677, beta = -0.051917
+     predict ('gauss', 0.08, 8)      : max|r - pred|/max|r| = 2.667e-03
+     predict ('gauss', 0.08, 16)     : max|r - pred|/max|r| = 7.016e-03
+     predict ('sech2', -0.1, 10)     : max|r - pred|/max|r| = 1.601e-02
+     predict ('bump2', 0.06, 9)      : max|r - pred|/max|r| = 9.407e-03
+     predict ('gauss', 0.16, 12)     : max|r - pred|/max|r| = 8.270e-03
+  fit on ('sech2', -0.1, 10): alpha = +0.161075, beta = -0.051264
+     predict ('gauss', 0.08, 8)      : max|r - pred|/max|r| = 1.359e-02
+     predict ('gauss', 0.08, 16)     : max|r - pred|/max|r| = 1.709e-02
+     predict ('sech2', -0.1, 10)     : max|r - pred|/max|r| = 3.222e-03
+     predict ('bump2', 0.06, 9)      : max|r - pred|/max|r| = 7.717e-03
+     predict ('gauss', 0.16, 12)     : max|r - pred|/max|r| = 1.995e-02
+  small amplitude A=0.01 w=16: r*a^4/d2 at centre = -0.052474 (-> beta + alpha d1^2/d2, d1=0 at centre)

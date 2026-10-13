@@ -1,0 +1,16 @@
+grid: Nz=96, NT=6; <1/Omega> = 0.45214; e0 = 1.193937
+
+=== variant A=0.1, w=1000000000.0, Tr=16.0 ===
+  phase 0.25: r_dyn(centre) = +5.2962e-06, H^2 formula +5.0834e-06, ratio 1.0419; Hdot(centre)/a^2 = +3.554e-03; (r_dyn-pred)/(Hdot/a^2) = +5.9868e-05
+  phase 0.50: r_dyn(centre) = +1.5841e-05, H^2 formula +1.5981e-05, ratio 0.9912; Hdot(centre)/a^2 = -1.256e-08; (r_dyn-pred)/(Hdot/a^2) = +1.1193e+01
+  phase 0.75: r_dyn(centre) = +4.4708e-06, H^2 formula +4.2715e-06, ratio 1.0466; Hdot(centre)/a^2 = -2.986e-03; (r_dyn-pred)/(Hdot/a^2) = -6.6719e-05
+
+=== variant A=0.1, w=10.0, Tr=16.0 ===
+  phase 0.25: r_dyn(centre) = +4.9513e-06, H^2 formula +5.0834e-06, ratio 0.9740; Hdot(centre)/a^2 = +3.554e-03; (r_dyn-pred)/(Hdot/a^2) = -3.7169e-05
+  phase 0.50: r_dyn(centre) = +1.5768e-05, H^2 formula +1.5981e-05, ratio 0.9866; Hdot(centre)/a^2 = -1.256e-08; (r_dyn-pred)/(Hdot/a^2) = +1.7003e+01
+  phase 0.75: r_dyn(centre) = +4.6936e-06, H^2 formula +4.2715e-06, ratio 1.0988; Hdot(centre)/a^2 = -2.986e-03; (r_dyn-pred)/(Hdot/a^2) = -1.4136e-04
+
+=== variant A=0.1, w=10.0, Tr=32.0 ===
+  phase 0.25: r_dyn(centre) = +1.2062e-06, H^2 formula +1.2709e-06, ratio 0.9491; Hdot(centre)/a^2 = +8.884e-04; (r_dyn-pred)/(Hdot/a^2) = -7.2770e-05
+  phase 0.50: r_dyn(centre) = +3.9582e-06, H^2 formula +3.9953e-06, ratio 0.9907; Hdot(centre)/a^2 = -8.162e-09; (r_dyn-pred)/(Hdot/a^2) = +4.5467e+00
+  phase 0.75: r_dyn(centre) = +1.1263e-06, H^2 formula +1.0679e-06, ratio 1.0547; Hdot(centre)/a^2 = -7.466e-04; (r_dyn-pred)/(Hdot/a^2) = -7.8310e-05

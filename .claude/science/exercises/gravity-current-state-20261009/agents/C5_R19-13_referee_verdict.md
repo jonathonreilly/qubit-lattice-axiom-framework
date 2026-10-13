@@ -1,0 +1,19 @@
+# VERDICT: CONFIRMED WITH CORRECTIONS
+
+1. **Lower-bound chain:** Correct when \(F\) is squared fidelity. Local trace-preserving slab channels, including locally initialized ancillas, leave the exterior planes’ joint marginal fixed by no-signalling—not because they cannot alter “separation.” Postselection, pre-entangled ancillas, and anticipatory exterior preparation are outside scope. `R19-13_report.md:96-102`.
+
+2. **Monotonicity:** \(\Delta E_{\min}(R)\) is non-increasing because the allowed operation sets are nested. This does not by itself prove monotonicity of \(\Delta E_{\min}(R)\tau_{\rm ins}(R)\). `R19-13_report.md:103`.
+
+3. **Independent numerical check:** Direct quadrature gives
+   \[
+   LB(32)=1.2785785769\times10^{-13},
+   \]
+   0.290% below the worker’s interpolated value but still \(3.38\times10^{110}\) above the persistent threshold. An additional check gives \(LB(256)=2.2807043\times10^{-18}\). [referee_r1913_check.out:1](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-13/referee_r1913_check.out:1>). The \(2.159\times10^{-11}\) value and \(R^{-4.869}\) fit describe the optimized Gaussian construction—an upper bound, not the proved all-channel optimum. Massive \(e^{-4\kappa R}\) is a leading exponential with polynomial prefactors, not an exact fitted law. `r1913_analysis.out:5-13`.
+
+4. **Threshold:** The fixed probe registers \(\Delta E\tau_{\rm ins}<3.209\times10^{-63}\); persistent excitation instead requires \(\Delta E<3.779\times10^{-124}\). R19-10 correctly says these are different, non-axiom-selected accountings. Under the continuum asymptotic they give respectively \(R>7.91\times10^{13}a\) for \(\tau=R\), versus \(R>1.66\times10^{23}a\) for persistent excitation. `TESTS.md:7721-7723`; `C5_R19-10_referee_verdict.md:15-32`; `r1913_analysis.out:40-44`.
+
+5. **Fixed reading:** **NO-LOCAL-ESCAPE is met.** The theorem-backed, directly checked massless-scalar bound is \(R>256a\), already sufficient to exclude \(R\le10a\). The \(1.7\times10^{23}a\) result is a continuum-asymptotic evaluation, not the proved finite-lattice bound. The conclusion is not yet proved for a gauge-complete photon, point insertion, interacting laws, or arbitrary site-creation dynamics. `TESTS.md:7739-7743`; `R19-13_report.md:201-223`.
+
+**Strongest correct statement:** For the nearest-neighbour free scalar under plane insertion, with the old lattice initially in its ground state and energy measured against the completed new Hamiltonian, every deterministic CPTP operation confined to a radius-\(R\) slab obeys the stated spectral-gap/fidelity/trace-distance lower bound, and its optimal excess energy is non-increasing with \(R\). Independent evaluation gives \(\Delta E_{\min}(256)\ge2.2807043\times10^{-18}\), proving \(R>256a\) under either registered or persistent accounting and therefore excluding the fixed \(R\le10a\) escape. The Gaussian data support \(R^{-5}\)-type decay, while \(1.7\times10^{23}a\) is a credible asymptotic estimate rather than a proved bound; no universal photon, interacting-law, or arbitrary-growth no-go follows.
+
+Full referee report: [C5_R19-13_referee_verdict.md:1](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-13/C5_R19-13_referee_verdict.md:1>). Independent checker: [referee_r1913_check.py:1](</private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_R19-13/referee_r1913_check.py:1>).

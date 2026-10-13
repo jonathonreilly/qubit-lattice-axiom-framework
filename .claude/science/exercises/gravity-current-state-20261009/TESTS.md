@@ -8093,3 +8093,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **IRREDUCIBLE:** a demonstration that at least two of the clauses are logically independent, with the reason stated.
   - **OPEN:** otherwise.
 - **Expectation.** ONE-CLAUSE. The clause is "renormalize the vacuum's gravitational response to its Lorentz-invariant form through O(q²)". The grid's gravitational predictions then reduce to the residual list in (b): charge-block tunings, W7 edge anomalies, relics, O(q⁴) dispersion and set A noise. That is an honest finding the owner needs.
+
+#### C5 referee verdicts R19-12, R19-13 and the R19-17 worker reading (recorded 06:09Z)
+
+- **R19-12 referee: CONFIRMED WITH CORRECTIONS. Reading: ONE-LAW-BILL for route A.**
+  - **Charge values on the root's edges:** F_½ = −5.2444, F_0 = −1.1674, G_½ = 0.11484, Σ = 0.9187.
+  - **Neutral classes** are exactly unshifted within the QED truncation.
+  - **Charge-block cost** at minimum: 4 per class, 10 per species, or 2 q²-correlated payments.
+  - **Route A:** a checked bill of 11 equalities, plus one photon-window selection, plus the CC. Under conditional (d-i) it is 10 plus the window plus the CC.
+  - **Route B:** 11 + CC with no open selection. The numerics bracket it strongly, but it is conditional on gravity-branch continuity and on off-axis closure at the 0⁺ root.
+  - **Not covered:**
+    - exact W1;
+    - W± and the non-Abelian sectors;
+    - matter graviton-loop speeds;
+    - mixed O(Ge²);
+    - radiative stability.
+- **R19-13 referee: CONFIRMED WITH CORRECTIONS. Reading NO-LOCAL-ESCAPE.**
+  - **Scope:** the nearest-neighbour free scalar under plane insertion.
+  - **The bound holds for every deterministic CPTP slab operation**, including ones with local ancillas.
+  - **The proved radius is R > 256a.** The referee evaluated ΔE_min(256) ≥ 2.28e-18 independently. This holds under either accounting, so R ≤ 10a is excluded.
+  - **1.7e23 a is an estimate, not a bound:** a credible asymptotic estimate only.
+  - **Not established:** no universal photon, interacting-law or arbitrary-growth no-go follows.
+- **R19-17 (V1 + (S_ad) beyond homogeneity): worker reading LOCAL-OK** in class 𝒱 (V1 with comoving lattice-frame fields, H-cov).
+  - **(S_ad) is local and covariant through adiabatic order 2.**
+    - Order 0 is an elastic cubic solid.
+    - Order 2 gradient terms are fitted locally to within 1–2%.
+    - The lag formula holds pointwise with the local H.
+  - **Lemma N:** ∇T_grav = F_I∇X^I, with F_I the excitations' force on the lattice. There is no global carrier. With c = 1 for dust, F = O(ε³), so Bianchi holds at linear order and there is no Lemma-S channel. The vacuum response is causal.
+  - **Lattice-frame law:** W (weightless, an elastic test medium) or A (absent). This is new completion data.
+  - **The order-2 terms are the induced G,** so (S_ad) must subtract them and G is fully supplied.
+  - **Prices:** P-r1917a, b and c.
+  - A referee is optional.

@@ -1,0 +1,132 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_future_confinement_check.py
+runner_sha256: fc98bff69fde89e55d59e4216eb9e44ee8cfed95b3435918558e48f9ee6930fa
+input_fingerprint_sha256: 8b2089013f970f46781194472f3636ecae03af89c0299dfa7c6407e0964a5a97
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+{
+  "scope": "Exact model identities and arbitrary-state action energy balance; handwritten theorem remains essential; no empirical test or effective audit status.",
+  "checks": [
+    {
+      "name": "coordinate.definition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "coordinate.inverse",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential.barrier",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "coupling.action_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "coupling.monotonic_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "coupling.safe_upper_bound_gap",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "coordinate.s_greater_one",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock.a_less_one_third",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "convergence.nu_one_allowed",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "energy.young_completion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "energy.half_dissipation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "barrier.Phi_chain_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "barrier.integrated_work",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fluid.conformal_conservation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fluid.dust_envelope",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical_point.exact_sign_factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "critical_point.positive_remainder",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.off_orbit_energy.0",
+      "passed": true,
+      "residual": "1.34940133673e-79"
+    },
+    {
+      "name": "action.off_orbit_energy.1",
+      "passed": true,
+      "residual": "2.1003161926e-73"
+    },
+    {
+      "name": "action.off_orbit_energy.2",
+      "passed": true,
+      "residual": "2.82989971213e-73"
+    },
+    {
+      "name": "action.off_orbit_energy.3",
+      "passed": true,
+      "residual": "3.2883434655e-70"
+    },
+    {
+      "name": "action.off_orbit_energy.4",
+      "passed": true,
+      "residual": "2.90175263451e-75"
+    }
+  ],
+  "counts": {
+    "passed": 22,
+    "failed": 0
+  },
+  "max_scaled_energy_residual": "3.2883434655e-70"
+}
+
+----- stderr -----
+

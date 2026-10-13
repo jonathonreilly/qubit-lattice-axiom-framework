@@ -1,0 +1,6 @@
+NN scalar m=1 (V3 comparator; PRICE_NOTE:290-293)                           mu_E +1.9704e-03 mu_T2 +0.0000e+00 | singlet S +7.8816e-04 | anisotropy A +1.9704e-03 | |A|/bound 6.2e+94
+Dirac c1 per field at the 0+ root (R19-11 table; vR19-11 c1(muT2) confirmed) mu_E +1.0693e-02 mu_T2 +2.7393e-03 | singlet S +5.9209e-03 | anisotropy A +7.9539e-03 | |A|/bound 2.5e+95
+SM residual totals of the 0+ law (R19-11 table; vR19-11 item 4)             mu_E +4.7000e-19 mu_T2 +1.2040e-19 | singlet S +2.6024e-19 | anisotropy A +3.4960e-19 | |A|/bound 1.1e+79
+twisted-mass SM residual (R19-11 P-R19-11c; vR19-11 item 5)                 mu_E +4.3800e-36 mu_T2 -2.3000e-39 | singlet S +1.7506e-36 | anisotropy A +4.3823e-36 | |A|/bound 1.4e+62
+scalar c0 per field at 0+ root, mu_E only (R19-11 table)                    mu_E +1.1130e-02 mu_T2 +0.0000e+00 | singlet S +4.4519e-03 | anisotropy A +1.1130e-02 | |A|/bound 3.5e+95
+An isotropic clause shifts (mu_E, mu_T2) by (c, c): A is invariant; zeroing both needs A = 0 first.

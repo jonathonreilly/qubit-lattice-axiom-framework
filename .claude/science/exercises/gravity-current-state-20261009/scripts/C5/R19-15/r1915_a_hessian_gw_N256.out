@@ -1,0 +1,15 @@
+N = 256
+G_w(1.40,0.349416)     m=0.30  closed-form mu_E: A-form -2.207342541e-06  IBP +2.917834671e-09
+   e''(0) finite-diff (Richardson) +6.506286251e-06   diff vs closed 8.71e-06
+   seagull +9.801723e-03  bubble -9.795215e-03  sum +6.508584941e-06   e0 = 1.102871
+   T2g flow: e(0.05)-e(0) = +1.84e-10, e(0.2)-e(0) = +2.20e-10  (Liouville: 0)
+G_w(1.40,0.389587)     m=1.00  closed-form mu_E: A-form -5.674789706e-08  IBP +2.450309289e-09
+   e''(0) finite-diff (Richardson) -8.454348333e-08   diff vs closed -2.78e-08
+   seagull +7.033470e-03  bubble -7.033551e-03  sum -8.059604642e-08   e0 = 1.214401
+   T2g flow: e(0.05)-e(0) = -1.79e-11, e(0.2)-e(0) = -7.71e-12  (Liouville: 0)
+G_w(1.40,0.200000)     m=0.30  closed-form mu_E: A-form -2.080395724e-04  IBP -2.515037986e-04
+   e''(0) finite-diff (Richardson) -4.018091970e-04   diff vs closed -1.94e-04
+   seagull +8.916805e-03  bubble -9.318633e-03  sum -4.018282280e-04   e0 = 1.065247
+   T2g flow: e(0.05)-e(0) = -5.76e-09, e(0.2)-e(0) = -5.14e-09  (Liouville: 0)
+V3 comparator (PRICE_NOTE v6 2a): NN m=1 mu_E = +1.97038864e-3
+runtime 33.5s

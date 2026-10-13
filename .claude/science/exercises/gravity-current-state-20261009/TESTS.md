@@ -7983,3 +7983,24 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **TIE-HOLDS:** every consistent lift's signal is below current and forecast sensitivity. Checked.
   - **OPEN:** otherwise.
 - **Expectation.** TIE-BROKEN under L1 by forecast sirens: d_L^GW/d_L^EM − 1 ≈ γ/(2H₀) × O(1) ~ 1–2% at z ~ 1, within ET/LISA reach. Under L0 the GW damping alone gives a similar siren signal, since E1 has none.
+- **R19-11 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN** (recorded 05:52Z).
+  - **Confirmed:**
+    - Lemma A: Wilson-Dirac rows are analytic in m, with nonzero linear terms.
+    - Lemma B: scalar and vector rows are analytic in m².
+    - The transversal, subluminal m → 0⁺ root.
+    - SM speed residuals of 1.9e-19 to 2.4e-18, so three rows miss R16-2's comparator.
+    - Shear residuals of O(1e-19). These are catastrophic only if they are identified with a canonically normalized physical graviton mass.
+  - **Conditional:** the spectrum-tuned root follows from the implicit-function theorem only once a C¹ massive-vector completion is supplied.
+  - **Twisted mass** leaves the conditional shear about 1e62 above the 100 Hz target.
+- **R19-15 (the shear rows as a graviton mass): worker reading STRUCTURAL-ZERO on the letter, via the new clause (S\*). TUNING-ONLY content holds within the registered bridge.**
+  - **Lemma H:** μ is the full Hessian of the strained zero-point energy (checked to 8e-11). The lattice vacuum is an elastic solid with cubic shear moduli.
+  - **No bridge piece removes the anisotropy A = μ_E − μ_T2.** Every rotation-invariant clause ((S), (d-i), N_red, weight-1) shifts both rows equally, and exact W1 leaves the rows unchanged. At SM masses A ≈ 1e79 above the bound.
+  - **Radiative instability:** O(λ²) basketball diagrams give μ_T2 ≈ 4e-9λ², which no quadratic counterterm absorbs. So a tuned zero is radiatively unstable.
+  - **(S\*):** "in every uniform static background the law's lowest state contributes nothing to the gravitating source".
+    - It is number-free, non-signalling at linear order and can replace (S).
+    - It pays both shear rows at every mass and order for the lowest state.
+    - It is a definition-type clause; the referee must rule whether that is a "principle".
+  - **The matter-side version fails at two loops.**
+  - **Prices:** P-R19-15a ((S\*)), P-R19-15b (whole linear response, non-local).
+
+  Referee running.

@@ -1,0 +1,4 @@
+mu_E one loop at m_p=1: +1.970356393e-03
+lambda=0.040  fixed physical mass: mu - mu0 = -3.0281e-09 (ratio to lambda^2 -1.8926e-06)   bare m=m_p: mu - mu0 = -2.1389e-06 (/lambda -5.3472e-05)
+lambda=0.020  fixed physical mass: mu - mu0 = -7.5551e-10 (ratio to lambda^2 -1.8888e-06)   bare m=m_p: mu - mu0 = -1.0694e-06 (/lambda -5.3472e-05)
+lambda=0.010  fixed physical mass: mu - mu0 = -1.8818e-10 (ratio to lambda^2 -1.8818e-06)   bare m=m_p: mu - mu0 = -5.3472e-07 (/lambda -5.3472e-05)

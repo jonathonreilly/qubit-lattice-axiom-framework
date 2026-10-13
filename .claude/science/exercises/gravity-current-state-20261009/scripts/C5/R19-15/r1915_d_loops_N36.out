@@ -1,0 +1,19 @@
+N=36 nq=200 m=1.00
+  E: E0'' = +1.970389e-03   G = 0.20086317  G'' = -1.064865e-03   B = 3.312328e-04  B'' = -9.252459e-06
+      O(lambda) Hessian, bare-mass convention  (lambda/4) G G'' = lambda * -5.347302e-05
+      O(lambda) Hessian, physical-mass convention (G'^2 term only) = 0 at t=0 (G'(0)=0 by cubic symmetry)
+      O(lambda^2) basketball Hessian  -(1/48) B'' = lambda^2 * +1.927596e-07
+  T: E0'' = +0.000000e+00   G = 0.20086317  G'' = +0.000000e+00   B = 3.312328e-04  B'' = -1.932981e-07
+      O(lambda) Hessian, bare-mass convention  (lambda/4) G G'' = lambda * +0.000000e+00
+      O(lambda) Hessian, physical-mass convention (G'^2 term only) = 0 at t=0 (G'(0)=0 by cubic symmetry)
+      O(lambda^2) basketball Hessian  -(1/48) B'' = lambda^2 * +4.027043e-09
+N=36 nq=200 m=0.60
+  E: E0'' = +2.379222e-03   G = 0.21537377  G'' = -1.539946e-03   B = 4.726098e-04  B'' = -1.798308e-05
+      O(lambda) Hessian, bare-mass convention  (lambda/4) G G'' = lambda * -8.291599e-05
+      O(lambda) Hessian, physical-mass convention (G'^2 term only) = 0 at t=0 (G'(0)=0 by cubic symmetry)
+      O(lambda^2) basketball Hessian  -(1/48) B'' = lambda^2 * +3.746475e-07
+  T: E0'' = -1.387779e-12   G = 0.21537377  G'' = -3.550401e-12   B = 4.726098e-04  B'' = -4.936507e-07
+      O(lambda) Hessian, bare-mass convention  (lambda/4) G G'' = lambda * -1.911658e-13
+      O(lambda) Hessian, physical-mass convention (G'^2 term only) = 0 at t=0 (G'(0)=0 by cubic symmetry)
+      O(lambda^2) basketball Hessian  -(1/48) B'' = lambda^2 * +1.028439e-08
+runtime 5.4s

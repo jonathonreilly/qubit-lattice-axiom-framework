@@ -1,0 +1,27 @@
+N = 64
+NN(sin)                m=1.00  closed-form mu_E: A-form +1.970388642e-03  IBP +1.970388642e-03
+   e''(0) finite-diff (Richardson) +1.970388723e-03   diff vs closed 8.07e-11
+   seagull +4.287693e-03  bubble -2.317304e-03  sum +1.970388642e-03   e0 = 1.300034
+   T2g flow: e(0.05)-e(0) = +0.00e+00, e(0.2)-e(0) = +0.00e+00  (Liouville: 0)
+G(1.40)                m=1.00  closed-form mu_E: A-form +3.525534637e-03  IBP +3.525431673e-03
+   e''(0) finite-diff (Richardson) +3.523892992e-03   diff vs closed -1.64e-06
+   seagull +1.559770e-02  bubble -1.207380e-02  sum +3.523892946e-03   e0 = 1.455570
+   T2g flow: e(0.05)-e(0) = -1.09e-09, e(0.2)-e(0) = -1.30e-09  (Liouville: 0)
+G(1.40)                m=0.30  closed-form mu_E: A-form +4.252137630e-03  IBP +4.252012416e-03
+   e''(0) finite-diff (Richardson) +4.250350118e-03   diff vs closed -1.79e-06
+   seagull +2.026838e-02  bubble -1.601803e-02  sum +4.250350089e-03   e0 = 1.369172
+   T2g flow: e(0.05)-e(0) = -1.15e-09, e(0.2)-e(0) = -1.38e-09  (Liouville: 0)
+G_w(1.40,0.349416)     m=0.30  closed-form mu_E: A-form +1.208666627e-03  IBP +1.968610347e-05
+   e''(0) finite-diff (Richardson) -2.644516208e-03   diff vs closed -3.85e-03
+   seagull +7.054615e-03  bubble -9.699144e-03  sum -2.644529168e-03   e0 = 1.102872
+   T2g flow: e(0.05)-e(0) = -1.85e-07, e(0.2)-e(0) = -1.61e-07  (Liouville: 0)
+G_w(1.40,0.389587)     m=1.00  closed-form mu_E: A-form +2.542591712e-03  IBP +1.085466012e-05
+   e''(0) finite-diff (Richardson) -5.076209027e-03   diff vs closed -7.62e-03
+   seagull +1.913216e-03  bubble -6.989431e-03  sum -5.076214601e-03   e0 = 1.214401
+   T2g flow: e(0.05)-e(0) = +2.41e-08, e(0.2)-e(0) = +1.17e-07  (Liouville: 0)
+G_w(1.40,0.200000)     m=0.30  closed-form mu_E: A-form -2.583456018e-02  IBP -3.327842676e-04
+   e''(0) finite-diff (Richardson) +5.237663978e-02   diff vs closed 7.82e-02
+   seagull +6.192288e-02  bubble -9.546026e-03  sum +5.237685256e-02   e0 = 1.065246
+   T2g flow: e(0.05)-e(0) = +8.73e-07, e(0.2)-e(0) = +3.84e-07  (Liouville: 0)
+V3 comparator (PRICE_NOTE v6 2a): NN m=1 mu_E = +1.97038864e-3
+runtime 5.9s

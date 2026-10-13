@@ -9392,3 +9392,19 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - **Also found:** the fixed-critical-mass law has a linear trace term, d_t δm = −4.88e-2 e². The rule removes it.
 
   Referee running.
+
+- **Panel F (2026-10-13 ~18:45Z).** Five Opus lenses: lattice, GR/GW, condensed matter, phenomenology and skeptic. Same family as the supervisor; unrefereed. Statements and synthesis are in `agents/panel_F/`.
+  - **Verdict on P-R19-34a:** 5/5 "sound with conditions". It is necessary but not sufficient.
+  - **Conditions:**
+    - state it on-shell, for all strain channels (trace, E_g, T₂g);
+    - add a companion light-cone clause;
+    - (Σ) or (S\*) must absorb the knock-on;
+    - count it honestly: it imposes rather than predicts.
+  - **Power counting:** only Planck-coefficient channels reach the bounds (vacuum stiffness, Higgs mass², Wilson additive mass).
+  - **Converging proposal:** one primitive, "every zero-strain renormalization condition holds on every uniformly strained law", in place of the list of clauses.
+  - **The alternative mechanism:** staggered fermions keep U(1)_ε under SF, so δm ≡ 0 (condensed-matter lens, proved, unrefereed). The cost is tastes, and an expected taste wall against R9-1.
+  - **New rows:**
+    - clocks under the nHz GW background exceed bounds by ~2e8 without the graviton-mass bridge (suggested);
+    - the static-field question;
+    - a pulsar row for the m_f residual.
+  - **Proposed tests** (not registered): F6 (the Higgs mass² strain Hessian under SF), NF-1 (staggered control), G1 (Earth closure budget), the cone/trace test, and G-Λ (gluonic).

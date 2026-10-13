@@ -1,0 +1,23 @@
+1/a (a=l_P) = 1.2209e+19 GeV
+W(pi) = 0.355204 /a ; doubler masses n*W(pi), n=1,2,3: [0.3552, 0.7104, 1.0656] /a
+  -> 4.337e+18, 8.673e+18, 1.301e+19 GeV
+S(pi/2) = 1.3885, S(pi) = 0.00e+00  (odd, zero at pi: NN doublers)
+  delta m (QED e^2=4pi/137) = 3.838e-03/a = 4.686e+16 GeV
+  delta m (QED e^2=0.1 (packet)) = 4.186e-03/a = 5.110e+16 GeV
+  delta m (QCD C_F g^2, g^2=0.3) = 1.674e-02/a = 2.044e+17 GeV
+  delta m (QCD C_F g^2, g^2=0.25) = 1.395e-02/a = 1.703e+17 GeV
+  standard Wilson QCD one-loop |am_c| ~ 51.43*C_F/(16pi^2) g^2 = 0.434 g^2 (RECALLED)
+  m_e / (QED delta m) = 1.09e-20  (cancellation precision needed at h=0)
+  electron           reduced Compton 3.862e-13 m = 2.389e+22 a ; (lam/a)^3 = 1.4e+67 sites
+  up quark ~2.2MeV   reduced Compton 8.969e-14 m = 5.550e+21 a ; (lam/a)^3 = 1.7e+65 sites
+  down ~4.7MeV       reduced Compton 4.198e-14 m = 2.598e+21 a ; (lam/a)^3 = 1.8e+64 sites
+  muon               reduced Compton 1.868e-15 m = 1.156e+20 a ; (lam/a)^3 = 1.5e+60 sites
+  proton (Compton)   reduced Compton 2.103e-16 m = 1.301e+19 a ; (lam/a)^3 = 2.2e+57 sites
+  top                reduced Compton 1.143e-18 m = 7.069e+16 a ; (lam/a)^3 = 3.5e+50 sites
+  proton charge radius 8.409e-16 m = 5.203e+19 a ; sphere volume 5.9e+59 sites
+  hydrogen Bohr radius 5.29e-11 m = 3.27e+24 a
+F1 Earth |m_g| = 3.65e-09 eV -> cutoff freq m c^2/h = 8.826e+05 Hz ; evanescent decay length hbar c/m = 54.1 m (for omega << m)
+  100 Hz quantum hbar*omega = 4.136e-13 eV
+GR Jeans-type rate in Earth sqrt(4 pi G rho) = 2.150e-03 1/s -> 1.415e-18 eV ; mu_rho ~ 3.63e-40 eV^2 m^3/kg vs F2 bound 1.5e-29
+  per-fermion shift at strain 1e-21: 0.5*0.0242*e2*h^2/a = 1.35e-26 GeV
+  per-fermion shift at strain 1e-09: 0.5*0.0242*e2*h^2/a = 1.35e-02 GeV

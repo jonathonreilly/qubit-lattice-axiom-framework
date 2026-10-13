@@ -1,0 +1,34 @@
+W(pi) = 0.355204  (corner/doubler rest-mass increments n*W_pi, n=1..3: [np.float64(0.3552), np.float64(0.7104), np.float64(1.0656)])
+hopping amplitudes |s_n| (odd symbol, sin series) and |W_n| (even, cos series):
+  n=  1  |s_n|=1.243e+00  |W_n|=2.207e-01
+  n=  2  |s_n|=3.053e-16  |W_n|=5.152e-12
+  n=  3  |s_n|=1.137e-01  |W_n|=6.019e-02
+  n=  4  |s_n|=8.327e-17  |W_n|=1.591e-12
+  n=  6  |s_n|=3.469e-16  |W_n|=1.062e-12
+  n=  8  |s_n|=4.580e-16  |W_n|=1.288e-12
+  n= 12  |s_n|=4.649e-16  |W_n|=8.586e-13
+  n= 16  |s_n|=3.816e-17  |W_n|=3.987e-13
+  n= 24  |s_n|=2.984e-16  |W_n|=2.648e-13
+  n= 32  |s_n|=8.847e-17  |W_n|=3.219e-13
+  n= 48  |s_n|=1.388e-16  |W_n|=2.139e-13
+  n= 64  |s_n|=1.041e-17  |W_n|=9.851e-14
+free vacuum <psibar psi> per Dirac field per site (m=0, N=64): -0.6857  (lattice units)
+additive mass on root edge: 0.0419 e^2 /a = 3.838e-03 /a (QED e^2=0.0917) = 4.69e+16 GeV at a=l_P; ratio to 1/a = 3.84e-03
+  electron                       m*a = 4.19e-23 ; reduced Compton wavelength = 3.86e-13 m = 2.39e+22 sites
+  up/down (MSbar 2 GeV ~ 3.5 MeV) m*a = 2.87e-22 ; reduced Compton wavelength = 5.64e-14 m = 3.49e+21 sites
+  nucleon                        m*a = 7.68e-20 ; reduced Compton wavelength = 2.10e-16 m = 1.30e+19 sites
+  top                            m*a = 1.41e-17 ; reduced Compton wavelength = 1.14e-18 m = 7.07e+16 sites
+  critical-mass precision for the electron at h=0: m_e a / (dm) = 1.1e-20
+  proton radius 0.84 fm = 5.20e+19 sites
+  |m_g| = 3.63e-09 eV: decay length hbar c/m_g = 54.4 m
+  |m_g| = 2.34e-09 eV: decay length hbar c/m_g = 84.3 m
+  |m_g| = 2.90e-13 eV: decay length hbar c/m_g = 6.8e+05 m
+  100 Hz graviton energy: 4.14e-13 eV
+  Earth exceedance 1.62e8 at a=l_P; with G fixed to observed, exceedance ~ 1.62e8*(l_P/a): <=1 needs 1/a <= 7.5e+10 GeV
+  under the literal canonical mapping (G = a^2), exceedance ~ 1.62e8*(a/l_P): it grows with a
+        0.34 real         0.28 user         0.05 sys
+           118865920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            65749616  peak memory footprint

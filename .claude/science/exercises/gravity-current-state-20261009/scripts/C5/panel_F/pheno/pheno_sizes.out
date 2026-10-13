@@ -1,0 +1,44 @@
+== A. sizes: fermion vs grid (a = lP) ==
+hbar c / lP = 1.2211e+28 eV (repo uses 1.2209e+28)
+  electron           reduced Compton 3.862e-13 m = 2.39e+22 sites;  m*a = 4.19e-23 (lattice units)
+  u quark ~2.2 MeV   reduced Compton 8.969e-14 m = 5.55e+21 sites;  m*a = 1.80e-22 (lattice units)
+  proton             reduced Compton 2.103e-16 m = 1.30e+19 sites;  m*a = 7.69e-20 (lattice units)
+  top 172.7 GeV      reduced Compton 1.143e-18 m = 7.07e+16 sites;  m*a = 1.41e-17 (lattice units)
+  proton charge radius 0.8409 fm = 5.20e+19 sites; sites inside ~ 5.9e+59
+  electron point-like to <~1e-18..1e-20 m: still >= 6e+14 sites
+
+== B. why the grid gives mass: sizes on the root edge ==
+  additive shift electron, e^2 ~ 0.1      = 4.19e-03 /a = 5.11e+25 eV = 1.0e+20 x m_e;  fraction of E_P 4.2e-03
+  additive shift quark, C_F g_s^2 ~ 0.4   = 1.67e-02 /a = 2.04e+26 eV = 4.0e+20 x m_e;  fraction of E_P 1.7e-02
+  doublers: corner masses n*W(pi) = 0.355, 0.710, 1.066 /a = 4.34e+27 .. 1.30e+28 eV
+  fine tuning of critical mass for electron: m_e a / (0.1*dm0) = 1.0e-20
+
+== C. re-derive Earth |m_g| and the 1.6e8 ==
+  |m_g|(Earth) = 3.627e-09 eV ; mu_rho = 2.391e-21 eV^2 m^3/kg ; / 1.5e-29 = 1.59e+08
+  decay length hbar c/m_g = 54 m vs chords 9.3e6..1.13e7 m -> exponent ~ 1.8e+05
+  graviton energy at    20 Hz = 8.27e-14 eV ; m_g/omega = 4.4e+04
+  graviton energy at    30 Hz = 1.24e-13 eV ; m_g/omega = 2.9e+04
+  graviton energy at   100 Hz = 4.14e-13 eV ; m_g/omega = 8.8e+03
+  crude 'no evanescence at 20 Hz in core (rho~1.1e4)': mu_rho < 6.2e-31 (F2 1D exact: 1.5e-29)
+  gravitational-strength reference 16piG (eV^2 m^3/kg) = 1.45e-39 ; SF channel / GR-strength = 1.6e+18
+  m_g^2 / (16 pi G rho) check = 1.65e+18 (expect (w c_h/4) E_P / m_N = 1.64e+18)
+
+== D. matter side of the same term: rest-mass shift in a strain t (t = GW strain amplitude) ==
+  dm_e = 1.48e+25 eV * t^2 ; dm_N = 7.69e+26 eV * t^2 ; per-mass: e 2.90e+19, N 8.20e+17
+  strain at which dm_e = m_e: t = 1.86e-10 (Earth surface potential 7e-10, Sun at 1 AU 9.9e-9)
+  f_min = 2.0e-09 Hz: t_rms = 1.3e-14 ; d(t^2)/dt ~ 2.1e-28 /yr ; d ln(m_e)/dt ~ 6.0e-09 /yr ; d ln(mp/me)/dt ~ 5.9e-09 /yr ; / 3.6e-17 = 2e+08
+     universal strain acceleration ~ 1.1e-09 m/s^2 ; composition part (2e-3) ~ 2.1e-12 m/s^2 vs Eot-Wash space-fixed 8.8e-15 -> 2e+02
+  f_min = 1.1e-09 Hz: t_rms = 2.0e-14 ; d(t^2)/dt ~ 3.6e-28 /yr ; d ln(m_e)/dt ~ 1.0e-08 /yr ; d ln(mp/me)/dt ~ 1.0e-08 /yr ; / 3.6e-17 = 3e+08
+     universal strain acceleration ~ 1.3e-09 m/s^2 ; composition part (2e-3) ~ 2.6e-12 m/s^2 vs Eot-Wash space-fixed 8.8e-15 -> 3e+02
+  LIGO-band GW (t ~ 1e-21): dm_e/m_e = 2.9e-23 (invisible)
+
+== E. multiplicative residual (not covered by P-R19-34a), per nucleon ==
+  mult/add = 1.3e-21 ; mu_rho(mult) = 3.1e-42 eV^2 m^3/kg ; Earth row 1.5e-29 -> passes by 5e+12 ; F2 toy pulsar 2e-43 -> x16 ; vs 16piG: 2.1e-03
+
+== F. scalar (Higgs) mass^2 channel, matter side (ESTIMATE) ==
+  h units        delta m_H^2 = 1.6e+55 eV^2 * s^2 ; delta v / v ~ 5.0e+32 * s^2 ; at s^2 = 1e-28 (GWB): 5e+04 ; at 1e-42 (LIGO): 5e-10
+  t units (/4)   delta m_H^2 = 4.0e+54 eV^2 * s^2 ; delta v / v ~ 1.3e+32 * s^2 ; at s^2 = 1e-28 (GWB): 1e+04 ; at 1e-42 (LIGO): 1e-10
+
+== G. tolerances the rule must meet (fraction of F1's Hessian left over) ==
+  GW170817 Earth crossing (graviton side): 6e-09
+  vacuum knock-on: vacuum m_g < ~1.9e-23 eV -> m_g^2 a^2 < 2e-102 (absorbed only if (Sigma) holds to that level)

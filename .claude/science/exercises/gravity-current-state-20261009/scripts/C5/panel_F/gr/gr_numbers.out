@@ -1,0 +1,28 @@
+== (b) additive mass on the root edge: delta m a = 0.04186 e^2 (rR19-34:12)
+  delta m a = 3.839e-03; delta m = 4.687e+16 GeV = 0.38% of 1/a; / m_e = 9.17e+19
+== (c) sizes in Planck lengths (reduced Compton wavelength hbar/mc)
+  electron                     hbar/mc = 3.862e-13 m = 2.39e+22 sites; in BZ: k a = 4.2e-23
+  up quark (current, 2.2 MeV)  hbar/mc = 8.969e-14 m = 5.55e+21 sites; in BZ: k a = 1.8e-22
+  proton                       hbar/mc = 2.103e-16 m = 1.30e+19 sites; in BZ: k a = 7.7e-20
+  top                          hbar/mc = 1.143e-18 m = 7.07e+16 sites; in BZ: k a = 1.4e-17
+  proton charge radius 0.841 fm = 5.20e+19 sites; volume ~ 5.9e+59 sites
+== elastic-medium comparator: L = (1/64piG)(hdot^2-(grad h)^2) - mu_s h_ij h_ij/4  =>  m_g^2 = 16 pi G mu_s / c^2
+  crust 3e10 Pa    omega_g = 3.35e-08 rad/s, |m_g| = 2.20e-23 eV
+  mantle 1e11 Pa   omega_g = 6.11e-08 rad/s, |m_g| = 4.02e-23 eV
+  steel 8e10 Pa    omega_g = 5.46e-08 rad/s, |m_g| = 3.60e-23 eV
+== framework channel per nucleon (canonical: mu = n * w * Hess; F1 Hess_t = 2.424e-2 e^2 /a; w_N = 5.2 = 13 x C_F g_s^2)
+  Earth rho=5500: n a^3 = 1.39e-74; |m_g| = 3.64e-09 eV (F1 quotes 3.6e-9)
+  stiffness per nucleon: lattice channel w*Hess*M_Pl = 1.54e+27 eV  vs rock mu_shear/n = 1.90e-01 eV  ratio 8.1e+27
+== GW170817 in rock with |m_g| = 3.6e-9 eV
+  f=  30 Hz: hbar omega = 1.24e-13 eV; m_g/omega = 2.9e+04
+  f= 100 Hz: hbar omega = 4.14e-13 eV; m_g/omega = 8.7e+03
+  f= 400 Hz: hbar omega = 1.65e-12 eV; m_g/omega = 2.2e+03
+  evanescence length hbar c/m_g = 54.8 m; e-folds over 9293 km chord = 1.70e+05
+  surface near-node: |h(0)|/|h_inc| ~ 2 k/kappa at 100 Hz: 2.3e-04
+== per-fermion mass shift without the rule, delta m = 1/2 Hess h^2 (electron weight e^2; Hess_t e^2/a)
+  GW h=1e-21                                                                       delta m_e ~ 1.4e-17 eV
+  static traceless strain ~ Phi_Earth 7e-10 (only if the lattice frame carries it) delta m_e ~ 6.6e+06 eV
+  ~ Phi_Sun@1AU 1e-8                                                               delta m_e ~ 1.4e+09 eV
+  ~ Phi_Galaxy 1e-6                                                                delta m_e ~ 1.4e+13 eV
+== sensitivity to the fermion cutoff a_f (m_g^2 ~ 16 pi G n Hess/a_f): Earth row exceeded by 1.6e8 in mu
+  passes without any rule only if 1/a_f < M_Pl/1.6e8 = 7.6e+10 GeV

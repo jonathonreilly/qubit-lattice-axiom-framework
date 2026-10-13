@@ -1,0 +1,140 @@
+{
+  "at": "2026-10-13T15:29:17.604006+00:00",
+  "source_inputs": {
+    "SN": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/evidence_v2/RESULTS.json",
+      "sha256": "dfd96dde51c5bbbc5f08c4661b063659c03a21c81b23fb1a1088b0a6d79c385d"
+    },
+    "BAO": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/evidence_v2/RESULTS.json",
+      "sha256": "22cbff859bf10a3576f27199e54d29eb6a0e1725bdca53b6e69db825da58d394"
+    },
+    "PPN": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_actual_background_weak_field/evidence_v1/RESULTS.json",
+      "sha256": "d97f28dea7287e9a1a61ecf0e3609055bc75530e97cf6df8b9c31b2e32fe7cbc"
+    },
+    "PPN_qualification": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_actual_background_weak_field/READOUT_PRECISION_QUALIFICATION_v1.md",
+      "sha256": "3b32125c99b5e5a07fd7d01bc41c5f09a139c9966e43c48b8df8663f714bbfdd"
+    }
+  },
+  "scope": "Existing exposed comparisons only. Delta Q relative to supplied flat Omega_m=.3 shape; separate low-redshift calibrations. No joint score, significance, model ranking claim or acceptance decision.",
+  "SN_reference_Q": 834.1212232129865,
+  "BAO_reference_Q": 10.35700142113999,
+  "rows": [
+    {
+      "case": "split_k0.01",
+      "SN_transfer_Q": 832.9703859787134,
+      "SN_delta_Q": -1.1508372342731263,
+      "BAO_transfer_Q": 9.700154842383458,
+      "BAO_delta_Q": -0.6568465787565323,
+      "conditional_delta_gamma": -0.022349509776649713,
+      "Cassini_separate_intervals": [
+        {
+          "error_multiple": 1,
+          "inside": false
+        },
+        {
+          "error_multiple": 2,
+          "inside": false
+        }
+      ],
+      "independently_completed_full_path": false
+    },
+    {
+      "case": "equal_k0.01",
+      "SN_transfer_Q": 833.9146276375373,
+      "SN_delta_Q": -0.2065955754492279,
+      "BAO_transfer_Q": 10.503238381410394,
+      "BAO_delta_Q": 0.14623696027040367,
+      "conditional_delta_gamma": -4.891049729423867e-05,
+      "Cassini_separate_intervals": [
+        {
+          "error_multiple": 1,
+          "inside": false
+        },
+        {
+          "error_multiple": 2,
+          "inside": false
+        }
+      ],
+      "independently_completed_full_path": true
+    },
+    {
+      "case": "split_k1e-05",
+      "SN_transfer_Q": 833.9095286221034,
+      "SN_delta_Q": -0.2116945908830985,
+      "BAO_transfer_Q": 10.496358130270028,
+      "BAO_delta_Q": 0.13935670913003761,
+      "conditional_delta_gamma": -1.9999800001999954e-05,
+      "Cassini_separate_intervals": [
+        {
+          "error_multiple": 1,
+          "inside": false
+        },
+        {
+          "error_multiple": 2,
+          "inside": true
+        }
+      ],
+      "independently_completed_full_path": false
+    },
+    {
+      "case": "equal_k1e-05",
+      "SN_transfer_Q": 833.9061639287667,
+      "SN_delta_Q": -0.21505928421981935,
+      "BAO_transfer_Q": 10.504962872428823,
+      "BAO_delta_Q": 0.14796145128883254,
+      "conditional_delta_gamma": -1.8477091098855405e-08,
+      "Cassini_separate_intervals": [
+        {
+          "error_multiple": 1,
+          "inside": true
+        },
+        {
+          "error_multiple": 2,
+          "inside": true
+        }
+      ],
+      "independently_completed_full_path": false
+    },
+    {
+      "case": "split_k1e-06",
+      "SN_transfer_Q": 833.9095286164454,
+      "SN_delta_Q": -0.21169459654106504,
+      "BAO_transfer_Q": 10.496358143066661,
+      "BAO_delta_Q": 0.1393567219266707,
+      "conditional_delta_gamma": -1.999998000002e-06,
+      "Cassini_separate_intervals": [
+        {
+          "error_multiple": 1,
+          "inside": true
+        },
+        {
+          "error_multiple": 2,
+          "inside": true
+        }
+      ],
+      "independently_completed_full_path": false
+    },
+    {
+      "case": "equal_k1e-06",
+      "SN_transfer_Q": 833.9061665244108,
+      "SN_delta_Q": -0.21505668857571436,
+      "BAO_transfer_Q": 10.504957583150535,
+      "BAO_delta_Q": 0.1479561620105443,
+      "conditional_delta_gamma": -1.845646154304042e-09,
+      "Cassini_separate_intervals": [
+        {
+          "error_multiple": 1,
+          "inside": true
+        },
+        {
+          "error_multiple": 2,
+          "inside": true
+        }
+      ],
+      "independently_completed_full_path": false
+    }
+  ]
+}

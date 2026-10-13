@@ -1,0 +1,1091 @@
+{
+  "at": "2026-10-13T15:57:33.058048+00:00",
+  "scope": "Completed new exponential parent action, six histories and new physical readouts; focused reviews remain active. Includes first-correction closed review and all new frozen input bytes; no replacement of original theory failures.",
+  "archive": {
+    "path": "RECOVERY_v1.tar.gz",
+    "sha256": "e9382e7f084997370ba0addaf3693d1c64975237254f6b7267f42646814debe1",
+    "bytes": 19155209
+  },
+  "members": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/COEFFICIENT_EXECUTION_v1.json",
+      "member": "exponential/COEFFICIENT_EXECUTION_v1.json",
+      "sha256": "cf9e70b063197de40e6d051ba7fb810acf78f59d4448496ce501453f28df85f2",
+      "bytes": 421
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/COEFFICIENT_FREEZE_v1.json",
+      "member": "exponential/COEFFICIENT_FREEZE_v1.json",
+      "sha256": "0492c5ac160ada55cafb70148d2347cb4689ddbc6d3a26000b7cf61312fb566d",
+      "bytes": 11918
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/COEFFICIENT_RESULTS_v1.json",
+      "member": "exponential/COEFFICIENT_RESULTS_v1.json",
+      "sha256": "09ad2ff2958d993966f1657d7eb7c68195c666d90a3f7591d982a6f27727786e",
+      "bytes": 31912
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/COEFFICIENT_STDERR_v1.txt",
+      "member": "exponential/COEFFICIENT_STDERR_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/COEFFICIENT_STDOUT_v1.txt",
+      "member": "exponential/COEFFICIENT_STDOUT_v1.txt",
+      "sha256": "2af7b919ed34215fd0a10a6e17b69bcb210d22e44aa0870a76656bb6ff8eb07e",
+      "bytes": 29
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/DERIVATION_v1.md",
+      "member": "exponential/DERIVATION_v1.md",
+      "sha256": "caf44625b1afd2be042f791800635d2e3707a8a997aab313cc7bcb2bb5623e27",
+      "bytes": 4851
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/EXECUTION_v1.json",
+      "member": "exponential/EXECUTION_v1.json",
+      "sha256": "88952728e245e922c1b68a9b38a4f1faa62c725eaeddbcfb229a7d4e25d5eacd",
+      "bytes": 359
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/FREEZE_v1.json",
+      "member": "exponential/FREEZE_v1.json",
+      "sha256": "7dcf5fe89988db48bf2f251d1575f91a6e600e355c763c6c7ec4659d51415d50",
+      "bytes": 11582
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_CORRECTION_v2.md",
+      "member": "exponential/OBSERVATION_CORRECTION_v2.md",
+      "sha256": "04879d42d248bb59920e1811520ec8d6f28b541a0ade56a80ab1509392595bf5",
+      "bytes": 1012
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_EXECUTION_v1.json",
+      "member": "exponential/OBSERVATION_EXECUTION_v1.json",
+      "sha256": "205a568a3d413e927d35b63802b9310d4e219d753673c6021af6f6d938ecfcb5",
+      "bytes": 419
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_EXECUTION_v2.json",
+      "member": "exponential/OBSERVATION_EXECUTION_v2.json",
+      "sha256": "34da5ec99bde2fd9928cb0d501c6bffda1e5af1a2dd373406e48494d8c678fb1",
+      "bytes": 126
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_FREEZE_v1.json",
+      "member": "exponential/OBSERVATION_FREEZE_v1.json",
+      "sha256": "bf2a5aa51152fef60fd32d20cb3e1a4462b113fd80d97298b960d80f18778f0d",
+      "bytes": 28864
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_FREEZE_v2.json",
+      "member": "exponential/OBSERVATION_FREEZE_v2.json",
+      "sha256": "3aa79e073e8263df2c04acbb2bff8edc2b346976e1ebef956f9e039d957684cb",
+      "bytes": 29876
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_LINEAGE_v2.json",
+      "member": "exponential/OBSERVATION_LINEAGE_v2.json",
+      "sha256": "2dcf25b9498ccab9d5de790f0a1cb4eb2a6c9a92ed84687df31cc82f373c1128",
+      "bytes": 362
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_PROTOCOL_v1.md",
+      "member": "exponential/OBSERVATION_PROTOCOL_v1.md",
+      "sha256": "531f24137be4ee18e9a2cd7e31bdc861a3ed5b5e1625226178d9b2462550bf8a",
+      "bytes": 1762
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_RESULTS_v1.json",
+      "member": "exponential/OBSERVATION_RESULTS_v1.json",
+      "sha256": "0e8b0f0a63730b583fd91d25d469bcd12f35b113b6b182951326d240331b0760",
+      "bytes": 740028
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_RESULTS_v2.json",
+      "member": "exponential/OBSERVATION_RESULTS_v2.json",
+      "sha256": "41c12d3d5331996b4e286f4a4aaa525fefce4ea5674047a2a81c7a3be62ad0a3",
+      "bytes": 743783
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_STDERR_v1.txt",
+      "member": "exponential/OBSERVATION_STDERR_v1.txt",
+      "sha256": "4692409611dd3afb0fa5bdc22047d5bce0efe2c33ddcdcba1651e143343d8318",
+      "bytes": 796
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_STDERR_v2.txt",
+      "member": "exponential/OBSERVATION_STDERR_v2.txt",
+      "sha256": "f1d3983e3310094fac8cfb33916e6b1cd75ba7f5fc9812f23f6209fbb209895d",
+      "bytes": 796
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_STDOUT_v1.txt",
+      "member": "exponential/OBSERVATION_STDOUT_v1.txt",
+      "sha256": "8ccaad958f25ab6abb582fdf54c9b8d4231500f70d474fba53a64ea732c6034e",
+      "bytes": 3363
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/OBSERVATION_STDOUT_v2.txt",
+      "member": "exponential/OBSERVATION_STDOUT_v2.txt",
+      "sha256": "aadc0525cde0382318c6f348b53c8829919a8490a7be7563dcffbb3e14962ec3",
+      "bytes": 3363
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_CORRECTION_v2.md",
+      "member": "exponential/READOUT_CORRECTION_v2.md",
+      "sha256": "c949ba91df7b06bd7f4e1a62e4afc3de8f82bcc28b57077a735dac75ec828afb",
+      "bytes": 1394
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_EXECUTION_v2.json",
+      "member": "exponential/READOUT_EXECUTION_v2.json",
+      "sha256": "a501748569b6135ead43409a611128882e5b085a8b8e4abb98f2ced055c865ae",
+      "bytes": 1175
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_FREEZE_v2.json",
+      "member": "exponential/READOUT_FREEZE_v2.json",
+      "sha256": "125a0fc171cb7081a0d9c43c94ad031b672eb12c4b95b4848e3a24d7d72d55d8",
+      "bytes": 1055
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/READOUT_RESULTS_v2.json",
+      "member": "exponential/READOUT_RESULTS_v2.json",
+      "sha256": "b341b1212b0e0060a3044824a00dd04e278999c99dac74b01bbc2dc59162581d",
+      "bytes": 617276
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/STDERR_v1.txt",
+      "member": "exponential/STDERR_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/STDOUT_v1.txt",
+      "member": "exponential/STDOUT_v1.txt",
+      "sha256": "a3b493de847b14afb00a21192fd617c3fd2ca7e359b8a9aeac0a29092b7f2725",
+      "bytes": 808
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_coefficients_v1.py",
+      "member": "exponential/check_coefficients_v1.py",
+      "sha256": "64a6dab967e8b639fdaec5f686bb2570390bb1f4471e4f0b214a2f1325fb80e9",
+      "bytes": 2893
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_exponential_v1.py",
+      "member": "exponential/check_exponential_v1.py",
+      "sha256": "61900e3e81693fea46b4ef88e5ffe3effb7d66a19562d98c5955559de9eaa992",
+      "bytes": 9631
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_observations_v1.py",
+      "member": "exponential/check_observations_v1.py",
+      "sha256": "92c583cb38caa780e4c66cc873bc7b5f25ea0529979d67e36f8631ac29b29c12",
+      "bytes": 6525
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_observations_v2.py",
+      "member": "exponential/check_observations_v2.py",
+      "sha256": "1fab4f9b3875a070e09730c20196493762185d17b121394817b22a7cd56feacc",
+      "bytes": 7301
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/check_serialized_readout_v2.py",
+      "member": "exponential/check_serialized_readout_v2.py",
+      "sha256": "3dab61693f5c5d805ba05ce0f6d2953f6fbbdff2867a4b8e1c5fd614ff00147c",
+      "bytes": 2148
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/RESULTS.json",
+      "member": "exponential/evidence_v1/RESULTS.json",
+      "sha256": "4525898f9a23b136fc6ff13722ca85a3a22210f2034dc35eb7808e455e75fcf8",
+      "bytes": 1508026
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/exponential_k0.01.json",
+      "member": "exponential/evidence_v1/exponential_k0.01.json",
+      "sha256": "a77dc5e9acf0b6fb8714c91dcee11ac5be2aa1f1897847317fce2eaaf1ceb6f5",
+      "bytes": 164422
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/exponential_k0.01_refined.json",
+      "member": "exponential/evidence_v1/exponential_k0.01_refined.json",
+      "sha256": "151575055e024dc8e50c9cb5c09770b2a07a7da47bbd9114ce006ce277e93385",
+      "bytes": 164379
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/exponential_k1e-05.json",
+      "member": "exponential/evidence_v1/exponential_k1e-05.json",
+      "sha256": "16c32cb2d40c573aa4294760de202382974b967e73776962be0713c96e497194",
+      "bytes": 165207
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/exponential_k1e-05_refined.json",
+      "member": "exponential/evidence_v1/exponential_k1e-05_refined.json",
+      "sha256": "6f3472c937bb0dd14193b7bfc85075fa6ae838203416de0eb1d7693b40e61830",
+      "bytes": 165125
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/exponential_k1e-06.json",
+      "member": "exponential/evidence_v1/exponential_k1e-06.json",
+      "sha256": "a7c5f0e29098453fe8dda739cd4631ac875ed22e76242763cc826f275d4def32",
+      "bytes": 163190
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_exponential_completion/evidence_v1/exponential_k1e-06_refined.json",
+      "member": "exponential/evidence_v1/exponential_k1e-06_refined.json",
+      "sha256": "a614f13ecbc86da5ad1fd2adbd2c2017829420171c27da71b86ce30cde76ddeb",
+      "bytes": 163166
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/FIRST_CORRECTION_PROTOCOL_v1.md",
+      "member": "first_correction/FIRST_CORRECTION_PROTOCOL_v1.md",
+      "sha256": "1b27dcc05b5386dddaab6b3d72ed88a3623d7e9776cedd9b2799db6ee033fe1b",
+      "bytes": 1427
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/FIRST_CORRECTION_PROTOCOL_v2.md",
+      "member": "first_correction/FIRST_CORRECTION_PROTOCOL_v2.md",
+      "sha256": "c2614f2b190f580344fea6785e51c12304d01ef17c767129422555a14dcfdaf5",
+      "bytes": 1608
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/PARENT_FIRST_CORRECTION_RECEIPT_v1.json",
+      "member": "first_correction/PARENT_FIRST_CORRECTION_RECEIPT_v1.json",
+      "sha256": "3a1e458e10fac67a8daa26b1424279df680c6ac9524c530adbe6841c2d897914",
+      "bytes": 11994
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/check_first_correction_history_v1.py",
+      "member": "first_correction/check_first_correction_history_v1.py",
+      "sha256": "872944768d9eba5880b713cfe89d8120e05c6165ac4eb0177cfeb907caad31f1",
+      "bytes": 3429
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/first_correction_history_v1/FREEZE.json",
+      "member": "first_correction_history/FREEZE.json",
+      "sha256": "271733160cb61f28a4cd71f351fa904f3cc0919fd9e163d3a37498c7f9144e00",
+      "bytes": 1293
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/first_correction_history_v1/RESULTS.json",
+      "member": "first_correction_history/RESULTS.json",
+      "sha256": "6ee4e7eab26a0e1e301f47a699c9c3807508ff3c4001eeb0885856d9e748bc49",
+      "bytes": 403168
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/AFFECTED_INPUT_FREEZE_v2.json",
+      "member": "first_correction_review/AFFECTED_INPUT_FREEZE_v2.json",
+      "sha256": "ccfe2f95de8309a805e42a8f80bccb83a45e0a9b4d6368b440e7082eb7bd39bd",
+      "bytes": 728
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/EXECUTION_INPUTS_v1.json",
+      "member": "first_correction_review/EXECUTION_INPUTS_v1.json",
+      "sha256": "d8b0c136e981a0818d20ff2cce58c895fcf7ef694dcff4c78402fdcfa4e0521a",
+      "bytes": 3366
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/EXECUTION_STDERR_v1.txt",
+      "member": "first_correction_review/EXECUTION_STDERR_v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/EXECUTION_STDOUT_v1.txt",
+      "member": "first_correction_review/EXECUTION_STDOUT_v1.txt",
+      "sha256": "cb5ad8f43d061430c13556844c3e5c16298ce73365cbb8f40d4d06518e5b0794",
+      "bytes": 10622
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/EXECUTION_v1.json",
+      "member": "first_correction_review/EXECUTION_v1.json",
+      "sha256": "f7b294ab7d7d687829316d015e7de41fff5ba5e5e61c7ac3f9b6565a9b9778a5",
+      "bytes": 751
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/FINAL_RECEIPT_v1.json",
+      "member": "first_correction_review/FINAL_RECEIPT_v1.json",
+      "sha256": "018fcc646b359f7640f31910ae237d8ad2fc37a7481ab31f0f62ca6e641ed54e",
+      "bytes": 11312
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/FINAL_SOURCE_CONFIRMATION_v1.json",
+      "member": "first_correction_review/FINAL_SOURCE_CONFIRMATION_v1.json",
+      "sha256": "90b71bd751f8c05d21606131ce40a512f5c95497ff6cb61cedda27e9724e5d03",
+      "bytes": 1150
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/FIRST_CORRECTION_REVIEW_v1.md",
+      "member": "first_correction_review/FIRST_CORRECTION_REVIEW_v1.md",
+      "sha256": "4b640293c9d33793f210cfa9bd3f166435b331ba59f8282e67173404c17d55c0",
+      "bytes": 7129
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/INDEPENDENT_DERIVATION_v1.md",
+      "member": "first_correction_review/INDEPENDENT_DERIVATION_v1.md",
+      "sha256": "da67d082bf6db26b87da024717b7c7147f0fc7beca55b3abf261b59ab0934447",
+      "bytes": 5483
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/INDEPENDENT_PLAN_v1.json",
+      "member": "first_correction_review/INDEPENDENT_PLAN_v1.json",
+      "sha256": "36091193b3cd3b223ed731b210a2198ca219dff7f71ae29cdfc0c6fffc16e310",
+      "bytes": 1253
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/INDEPENDENT_RESULTS_v1.json",
+      "member": "first_correction_review/INDEPENDENT_RESULTS_v1.json",
+      "sha256": "b239a538a3c4fc0a002e991b2e7a84227b967d784dcdf9fe01e618fad0d8b57e",
+      "bytes": 1251513
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/INPUT_FREEZE_v1.json",
+      "member": "first_correction_review/INPUT_FREEZE_v1.json",
+      "sha256": "45edc056db0a3242be727729fce1c89b52394ca783cbeb4021b71302bd67892d",
+      "bytes": 4124
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/PROTOCOL_SOURCE_NORMALIZATION_CHANGE.diff",
+      "member": "first_correction_review/PROTOCOL_SOURCE_NORMALIZATION_CHANGE.diff",
+      "sha256": "fa41a8681ccdc09e6f2d1b74a916eb2264cadda78ec0008a8683c602d88f45fa",
+      "bytes": 706
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/REUSED_SOURCE_IDENTITIES_v1.json",
+      "member": "first_correction_review/REUSED_SOURCE_IDENTITIES_v1.json",
+      "sha256": "30f5f7ccbd485f47bbb1ba9b251e3555c7d0d9a018b1371be10bcf8ff0df6eb3",
+      "bytes": 3465
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/SOURCE_DISPOSITION_v1.json",
+      "member": "first_correction_review/SOURCE_DISPOSITION_v1.json",
+      "sha256": "baea8abc48e74a2e1a47ddae581d76e4a8f3b18cfdd131465feb34874d28daf2",
+      "bytes": 9536
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/independent_first_correction_v1.py",
+      "member": "first_correction_review/independent_first_correction_v1.py",
+      "sha256": "ae54c70f0468367a4010af4cba436150869f758ebc864f974b9791c459ca3f63",
+      "bytes": 13402
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/FIRST_CORRECTION_PROTOCOL_v1.md",
+      "member": "first_correction_review/source_snapshot/FIRST_CORRECTION_PROTOCOL_v1.md",
+      "sha256": "1b27dcc05b5386dddaab6b3d72ed88a3623d7e9776cedd9b2799db6ee033fe1b",
+      "bytes": 1427
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/FIRST_CORRECTION_PROTOCOL_v2.md",
+      "member": "first_correction_review/source_snapshot/FIRST_CORRECTION_PROTOCOL_v2.md",
+      "sha256": "c2614f2b190f580344fea6785e51c12304d01ef17c767129422555a14dcfdaf5",
+      "bytes": 1608
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/check_first_correction_history_v1.py",
+      "member": "first_correction_review/source_snapshot/check_first_correction_history_v1.py",
+      "sha256": "872944768d9eba5880b713cfe89d8120e05c6165ac4eb0177cfeb907caad31f1",
+      "bytes": 3429
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/evidence_v1/RESULTS.json",
+      "member": "first_correction_review/source_snapshot/evidence_v1/RESULTS.json",
+      "sha256": "b1a126405f8fd1d3424ced72b9d86768e5b16a1dd0d79240d4b33b402ee27dbe",
+      "bytes": 332953
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/external/histories/RESULTS.json",
+      "member": "first_correction_review/source_snapshot/external/histories/RESULTS.json",
+      "sha256": "719d51344ec3b1d29131bacfef477aaf90387775cdff336406c18de68eaac8a0",
+      "bytes": 4828913
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/first_correction_history_v1/FREEZE.json",
+      "member": "first_correction_review/source_snapshot/first_correction_history_v1/FREEZE.json",
+      "sha256": "271733160cb61f28a4cd71f351fa904f3cc0919fd9e163d3a37498c7f9144e00",
+      "bytes": 1293
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_split_weak_limit/independent_review/first_correction_v1/source_snapshot/first_correction_history_v1/RESULTS.json",
+      "member": "first_correction_review/source_snapshot/first_correction_history_v1/RESULTS.json",
+      "sha256": "6ee4e7eab26a0e1e301f47a699c9c3807508ff3c4001eeb0885856d9e748bc49",
+      "bytes": 403168
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_Lya_GCcomb_cov.txt",
+      "member": "pinned_inputs/02a049dbf3a1cd391189948516378a694abfd8d5b5cba1a15e97c6c5cf972357/desi_gaussian_bao_Lya_GCcomb_cov.txt",
+      "sha256": "02a049dbf3a1cd391189948516378a694abfd8d5b5cba1a15e97c6c5cf972357",
+      "bytes": 102
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/distance_file_history.json",
+      "member": "pinned_inputs/02de47cf185d742d304c818af2c76d2a9bfea15578b0c6eb0c7658f49ed1e788/distance_file_history.json",
+      "sha256": "02de47cf185d742d304c818af2c76d2a9bfea15578b0c6eb0c7658f49ed1e788",
+      "bytes": 3227
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k0.01.json",
+      "member": "pinned_inputs/0505d3141917181f25d203e60c34fa5d2cdc32a091e898db68be7b87127630bd/equal_k0.01.json",
+      "sha256": "0505d3141917181f25d203e60c34fa5d2cdc32a091e898db68be7b87127630bd",
+      "bytes": 359848
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_BGS_BRIGHT-21.35_GCcomb_cov.txt",
+      "member": "pinned_inputs/06d7260009fa0030171753fe2f8ece92c5e167da5fdf57f3a98aa2dfe9dc142f/desi_gaussian_bao_BGS_BRIGHT-21.35_GCcomb_cov.txt",
+      "sha256": "06d7260009fa0030171753fe2f8ece92c5e167da5fdf57f3a98aa2dfe9dc142f",
+      "bytes": 15
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_BGS_BRIGHT-21.35_GCcomb_mean.txt",
+      "member": "pinned_inputs/06fc72ca4f4b4a03973c514bf7568c856716ff76a8c05df02e42b93aca769d59/desi_gaussian_bao_BGS_BRIGHT-21.35_GCcomb_mean.txt",
+      "sha256": "06fc72ca4f4b4a03973c514bf7568c856716ff76a8c05df02e42b93aca769d59",
+      "bytes": 63
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k0.01.json",
+      "member": "pinned_inputs/0c03021aba87d29b61ad76d7da45cdbd6e36a327a31e96043b07f1db21e97fd8/split_k0.01.json",
+      "sha256": "0c03021aba87d29b61ad76d7da45cdbd6e36a327a31e96043b07f1db21e97fd8",
+      "bytes": 360536
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/SOURCE_LEDGER_v1.json",
+      "member": "pinned_inputs/11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443/SOURCE_LEDGER_v1.json",
+      "sha256": "11a5f16b261a481b9bad0c617f2c54941460dfcc877e6820f6992ff66c95a443",
+      "bytes": 1316
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_LRG_GCcomb_z0.6-0.8_cov.txt",
+      "member": "pinned_inputs/16fa8c323f54139ef1249a24f8f9c8663dbac7890d5a6d9c3b97e84ee89847ae/desi_gaussian_bao_LRG_GCcomb_z0.6-0.8_cov.txt",
+      "sha256": "16fa8c323f54139ef1249a24f8f9c8663dbac7890d5a6d9c3b97e84ee89847ae",
+      "bytes": 62
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_actual_background_weak_field/check_actual_background_v1.py",
+      "member": "pinned_inputs/1cb08780ec72b8a2de18559a2ed065cf7fd73fa6a1cc508952183bfb3b5a8433/check_actual_background_v1.py",
+      "sha256": "1cb08780ec72b8a2de18559a2ed065cf7fd73fa6a1cc508952183bfb3b5a8433",
+      "bytes": 6253
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v2/histories/RESULTS.json",
+      "member": "pinned_inputs/1f53af80396e448e6aed457be1d40e69fbe82598a0aa09c33cb47fa2b29ecb4f/RESULTS.json",
+      "sha256": "1f53af80396e448e6aed457be1d40e69fbe82598a0aa09c33cb47fa2b29ecb4f",
+      "bytes": 272667
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_LRG_GCcomb_z0.4-0.6_cov.txt",
+      "member": "pinned_inputs/1fc0b21fd34a0e194f3fce2601ea3d1f411b03c7c1006c5b865b9f66991b8740/desi_gaussian_bao_LRG_GCcomb_z0.4-0.6_cov.txt",
+      "sha256": "1fc0b21fd34a0e194f3fce2601ea3d1f411b03c7c1006c5b865b9f66991b8740",
+      "bytes": 62
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/evidence_v1/RESULTS.json",
+      "member": "pinned_inputs/2289ca5c6b3510196c6d4b1941c183caf41342ca17494b977628fd5ec92689b9/RESULTS.json",
+      "sha256": "2289ca5c6b3510196c6d4b1941c183caf41342ca17494b977628fd5ec92689b9",
+      "bytes": 2663261
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/evidence_v2/RESULTS.json",
+      "member": "pinned_inputs/22cbff859bf10a3576f27199e54d29eb6a0e1725bdca53b6e69db825da58d394/RESULTS.json",
+      "sha256": "22cbff859bf10a3576f27199e54d29eb6a0e1725bdca53b6e69db825da58d394",
+      "bytes": 351244
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/PROTOCOL_v1.json",
+      "member": "pinned_inputs/244321aaa03db6dfdf1ff4c5de7cf264c03116a902625b784f6bb81b9959f006/PROTOCOL_v1.json",
+      "sha256": "244321aaa03db6dfdf1ff4c5de7cf264c03116a902625b784f6bb81b9959f006",
+      "bytes": 1224
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "member": "pinned_inputs/252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+      "bytes": 2547
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/data/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "member": "pinned_inputs/252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+      "bytes": 2547
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/REUSED_HISTORY_INPUTS_v2.json",
+      "member": "pinned_inputs/28e11c3c8bdf87e770dd2c6247a61c16745e8e87fbd6f2ba4decddad6c19feaf/REUSED_HISTORY_INPUTS_v2.json",
+      "sha256": "28e11c3c8bdf87e770dd2c6247a61c16745e8e87fbd6f2ba4decddad6c19feaf",
+      "bytes": 3358
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/EXECUTION.json",
+      "member": "pinned_inputs/2eabf9a16f936a830bde8058f3803c6369a0a88c3efcafa6241f85e7aa168d68/EXECUTION.json",
+      "sha256": "2eabf9a16f936a830bde8058f3803c6369a0a88c3efcafa6241f85e7aa168d68",
+      "bytes": 2094
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/INPUTS_v1.json",
+      "member": "pinned_inputs/34e20db2d5118cb6562cebb81821e1323e335c79d796dd51ac8e321a9a4c0860/INPUTS_v1.json",
+      "sha256": "34e20db2d5118cb6562cebb81821e1323e335c79d796dd51ac8e321a9a4c0860",
+      "bytes": 415
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/RETRIEVAL_FAILURE_v1.json",
+      "member": "pinned_inputs/362acf0c347935ec945944a70477108eefcc0ee5d15fa12ab6324bb299185d5c/RETRIEVAL_FAILURE_v1.json",
+      "sha256": "362acf0c347935ec945944a70477108eefcc0ee5d15fa12ab6324bb299185d5c",
+      "bytes": 321
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/cosmology_radiation/Fixsen_2009_v2.pdf",
+      "member": "pinned_inputs/36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85/Fixsen_2009_v2.pdf",
+      "sha256": "36cbaee69b8106ca45d007f46a2e002f9f593b67c310f6d808007a5c3d998f85",
+      "bytes": 398676
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/upstream_commit.json",
+      "member": "pinned_inputs/374d103e5926cec5cf26e2cd65fbaa99ad76562268470422eae794be4e07ae90/upstream_commit.json",
+      "sha256": "374d103e5926cec5cf26e2cd65fbaa99ad76562268470422eae794be4e07ae90",
+      "bytes": 6329
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/PRIMARY_DATA_v1.json",
+      "member": "pinned_inputs/3c687f9648028503a76e4a40c89c183b184fdb2fefae172b9e6f86ee6048f263/PRIMARY_DATA_v1.json",
+      "sha256": "3c687f9648028503a76e4a40c89c183b184fdb2fefae172b9e6f86ee6048f263",
+      "bytes": 2144
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/PROTOCOL_v2.md",
+      "member": "pinned_inputs/3c775cc2e46bb4bebe0807d96558fbcf9666947e123a702b3a335488a163a694/PROTOCOL_v2.md",
+      "sha256": "3c775cc2e46bb4bebe0807d96558fbcf9666947e123a702b3a335488a163a694",
+      "bytes": 5104
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/PRE_DATA_FREEZE_v1.json",
+      "member": "pinned_inputs/3d565c63dd7b2f0f87c3d90ac38f474093623d0616a8b063a6774adbf3c70867/PRE_DATA_FREEZE_v1.json",
+      "sha256": "3d565c63dd7b2f0f87c3d90ac38f474093623d0616a8b063a6774adbf3c70867",
+      "bytes": 1873
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/directory_listing.json",
+      "member": "pinned_inputs/3e9919c48449ba2606959d3c220f024d05c35515042f8d0d397c83dbd1e69147/directory_listing.json",
+      "sha256": "3e9919c48449ba2606959d3c220f024d05c35515042f8d0d397c83dbd1e69147",
+      "bytes": 20317
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/evidence_v1/EXECUTION.json",
+      "member": "pinned_inputs/412c74e115ac235931e745cac303d9f904e418c31b462a669ffd167be303fc9e/EXECUTION.json",
+      "sha256": "412c74e115ac235931e745cac303d9f904e418c31b462a669ffd167be303fc9e",
+      "bytes": 942
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k1e-5_refined.json",
+      "member": "pinned_inputs/462a6515508a9859c6b09826649b57a8f13f4996200cd470429d4785f31121bd/equal_k1e-5_refined.json",
+      "sha256": "462a6515508a9859c6b09826649b57a8f13f4996200cd470429d4785f31121bd",
+      "bytes": 360058
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v1.py",
+      "member": "pinned_inputs/483db2fa7cd17cd707f00a46c8fb4f2deba8c93a691c77026851fd31321a6c2d/check_thermal_matter_bridge_v1.py",
+      "sha256": "483db2fa7cd17cd707f00a46c8fb4f2deba8c93a691c77026851fd31321a6c2d",
+      "bytes": 16485
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/check_thermal_transition_v2.py",
+      "member": "pinned_inputs/4ce62456ddf2e5521bab9c5985e4ba5d0cc6423c05da446238374d995258d17b/check_thermal_transition_v2.py",
+      "sha256": "4ce62456ddf2e5521bab9c5985e4ba5d0cc6423c05da446238374d995258d17b",
+      "bytes": 17042
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/evidence_v1/EXECUTION.json",
+      "member": "pinned_inputs/53366a2f1e1fc9d04926410c8a88ca423fdfbbcc5925ca3ede633001f94b55e6/EXECUTION.json",
+      "sha256": "53366a2f1e1fc9d04926410c8a88ca423fdfbbcc5925ca3ede633001f94b55e6",
+      "bytes": 968
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/check_history_distances_v2.py",
+      "member": "pinned_inputs/564b136a3f3f461527a19d1836414bd4550399554c73111d6e4358d81e4e590c/check_history_distances_v2.py",
+      "sha256": "564b136a3f3f461527a19d1836414bd4550399554c73111d6e4358d81e4e590c",
+      "bytes": 11991
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v2/EXECUTION.json",
+      "member": "pinned_inputs/56eea7be65cf2b32c21dbd38961d6c1bd3970e4e670fd16e38219c67eace27cc/EXECUTION.json",
+      "sha256": "56eea7be65cf2b32c21dbd38961d6c1bd3970e4e670fd16e38219c67eace27cc",
+      "bytes": 2090
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/FIXTURES_v2.json",
+      "member": "pinned_inputs/60fbd6ac9ffd04371dd866cd833423f22bb478b74e6e1cc971360906ba0e99f2/FIXTURES_v2.json",
+      "sha256": "60fbd6ac9ffd04371dd866cd833423f22bb478b74e6e1cc971360906ba0e99f2",
+      "bytes": 2312
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/data/Pantheon+SH0ES.dat.gz",
+      "member": "pinned_inputs/64ff1b5b5fe9adfaab8b4e019d11e78fd63465cfb2fa21712432165437c2e762/Pantheon+SH0ES.dat.gz",
+      "sha256": "64ff1b5b5fe9adfaab8b4e019d11e78fd63465cfb2fa21712432165437c2e762",
+      "bytes": 215932
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k1e-5_no_dust.json",
+      "member": "pinned_inputs/688ab5a3c63514bc335c75d6cc445f77d6f5e383aab670a935d256b7083d1d11/split_k1e-5_no_dust.json",
+      "sha256": "688ab5a3c63514bc335c75d6cc445f77d6f5e383aab670a935d256b7083d1d11",
+      "bytes": 349239
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k1e-5_ideal_gas.json",
+      "member": "pinned_inputs/693e99c3e45907f5bcef4b6d996921ddf409948033802c0cbeae4720396a3b76/split_k1e-5_ideal_gas.json",
+      "sha256": "693e99c3e45907f5bcef4b6d996921ddf409948033802c0cbeae4720396a3b76",
+      "bytes": 335211
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/ORDERING_CONTROL_CORRECTION_v2.md",
+      "member": "pinned_inputs/6bafb7def50d6cd4d6f91f63cf2984c82453c3ffb2c98bb67ad3296b6b075579/ORDERING_CONTROL_CORRECTION_v2.md",
+      "sha256": "6bafb7def50d6cd4d6f91f63cf2984c82453c3ffb2c98bb67ad3296b6b075579",
+      "bytes": 1012
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/PROTOCOL_v1.md",
+      "member": "pinned_inputs/6bcf2bf09cd4258f4bea40be72adaf719ef2d8217ec924360d1a50a3a1ff4df4/PROTOCOL_v1.md",
+      "sha256": "6bcf2bf09cd4258f4bea40be72adaf719ef2d8217ec924360d1a50a3a1ff4df4",
+      "bytes": 3409
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_LRG_GCcomb_z0.6-0.8_mean.txt",
+      "member": "pinned_inputs/6d2f38d0727b2aefcd82fdd5a1c6df5a7d34ad8459437c195d575b5ad0c6ab32/desi_gaussian_bao_LRG_GCcomb_z0.6-0.8_mean.txt",
+      "sha256": "6d2f38d0727b2aefcd82fdd5a1c6df5a7d34ad8459437c195d575b5ad0c6ab32",
+      "bytes": 98
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v3/histories/RESULTS.json",
+      "member": "pinned_inputs/719d51344ec3b1d29131bacfef477aaf90387775cdff336406c18de68eaac8a0/RESULTS.json",
+      "sha256": "719d51344ec3b1d29131bacfef477aaf90387775cdff336406c18de68eaac8a0",
+      "bytes": 4828913
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_QSO_GCcomb_cov.txt",
+      "member": "pinned_inputs/7445c6bca01e2732b15ff29e832cc7b682c27d096f3b3ae8a171b63b20e8f6da/desi_gaussian_bao_QSO_GCcomb_cov.txt",
+      "sha256": "7445c6bca01e2732b15ff29e832cc7b682c27d096f3b3ae8a171b63b20e8f6da",
+      "bytes": 62
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_ELG_LOPnotqso_GCcomb_z1.1-1.6_mean.txt",
+      "member": "pinned_inputs/75d2dd246d2f17145f202fccf80da0bd723a67270a76f83b5be204161e204794/desi_gaussian_bao_ELG_LOPnotqso_GCcomb_z1.1-1.6_mean.txt",
+      "sha256": "75d2dd246d2f17145f202fccf80da0bd723a67270a76f83b5be204161e204794",
+      "bytes": 98
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/DESI_DR2_II_v3.html",
+      "member": "pinned_inputs/76f38cd82d06e5432f7f3dd2bfbd1a182d682b88430ec5b2af80fd6fae6a0f4b/DESI_DR2_II_v3.html",
+      "sha256": "76f38cd82d06e5432f7f3dd2bfbd1a182d682b88430ec5b2af80fd6fae6a0f4b",
+      "bytes": 1170519
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_actual_background_weak_field/DERIVATION_v1.md",
+      "member": "pinned_inputs/7712775eed344dc9e48c4d5b78e6cfc116cd9b08cd3795512ffeae4d39881568/DERIVATION_v1.md",
+      "sha256": "7712775eed344dc9e48c4d5b78e6cfc116cd9b08cd3795512ffeae4d39881568",
+      "bytes": 3252
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/NIST_CODATA_2022.txt",
+      "member": "pinned_inputs/77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "bytes": 40801
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/check_curvature_fluid_v2.py",
+      "member": "pinned_inputs/78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8/check_curvature_fluid_v2.py",
+      "sha256": "78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8",
+      "bytes": 19519
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v2.py",
+      "member": "pinned_inputs/7b36bd13a67affbbe100a5aa2e5004c10ae058bbe86cdd52f1b18e58d2a50624/check_thermal_matter_bridge_v2.py",
+      "sha256": "7b36bd13a67affbbe100a5aa2e5004c10ae058bbe86cdd52f1b18e58d2a50624",
+      "bytes": 21126
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/JACOBIAN_REFERENCE_v3.json",
+      "member": "pinned_inputs/7d476132afaf03d84b0d71a86ca2211c7c5d866f25ab0f78a02fb47c15d9aecc/JACOBIAN_REFERENCE_v3.json",
+      "sha256": "7d476132afaf03d84b0d71a86ca2211c7c5d866f25ab0f78a02fb47c15d9aecc",
+      "bytes": 780
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_LRG_GCcomb_z0.4-0.6_mean.txt",
+      "member": "pinned_inputs/86336445497058eee24ecf255e8a7486d8b46d709daa7a919566a58818dbed0c/desi_gaussian_bao_LRG_GCcomb_z0.4-0.6_mean.txt",
+      "sha256": "86336445497058eee24ecf255e8a7486d8b46d709daa7a919566a58818dbed0c",
+      "bytes": 98
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/upstream_README.md",
+      "member": "pinned_inputs/87444c7e5303c4fb8c4a8d1026c8f5e3bfaf9a8b54af512b9e81a7231ddca2ae/upstream_README.md",
+      "sha256": "87444c7e5303c4fb8c4a8d1026c8f5e3bfaf9a8b54af512b9e81a7231ddca2ae",
+      "bytes": 630
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/OBSERVATION_INPUTS_v1.json",
+      "member": "pinned_inputs/89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a/OBSERVATION_INPUTS_v1.json",
+      "sha256": "89e68185159b8a4bc0920c8441a1bdc7986a10473c19d71b30b891d80ab4005a",
+      "bytes": 1934
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/check_thermal_matter_bridge_v3.py",
+      "member": "pinned_inputs/8bba891dc94846cd3a68b430f068aad97eaddb8c555daa5579bb92cc3d89592a/check_thermal_matter_bridge_v3.py",
+      "sha256": "8bba891dc94846cd3a68b430f068aad97eaddb8c555daa5579bb92cc3d89592a",
+      "bytes": 23140
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_LRG+ELG_LOPnotqso_GCcomb_cov.txt",
+      "member": "pinned_inputs/8c8f5270dc3db24cbecd9aee1e463819a93e4fbfb0805fdf18357c39e5a8e95a/desi_gaussian_bao_LRG+ELG_LOPnotqso_GCcomb_cov.txt",
+      "sha256": "8c8f5270dc3db24cbecd9aee1e463819a93e4fbfb0805fdf18357c39e5a8e95a",
+      "bytes": 62
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_ELG_LOPnotqso_GCcomb_z1.1-1.6_cov.txt",
+      "member": "pinned_inputs/8d1afedca817a80f44c9dd492101d6653f1f353a59da6f24a6bcb0f0d80ad6bc/desi_gaussian_bao_ELG_LOPnotqso_GCcomb_z1.1-1.6_cov.txt",
+      "sha256": "8d1afedca817a80f44c9dd492101d6653f1f353a59da6f24a6bcb0f0d80ad6bc",
+      "bytes": 62
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/thermal_matter_bridge/PDG2024_neutrino_mixing.pdf",
+      "member": "pinned_inputs/8f010a5e4ae805227a15d977badb8e2d4ddc03fd4865b0c4085665b4f35bd1d8/PDG2024_neutrino_mixing.pdf",
+      "sha256": "8f010a5e4ae805227a15d977badb8e2d4ddc03fd4865b0c4085665b4f35bd1d8",
+      "bytes": 2027417
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k1e-05.json",
+      "member": "pinned_inputs/9114fa2a3947a4d96401329a2366e698432d3c91c023a89207978c28a0151942/equal_k1e-05.json",
+      "sha256": "9114fa2a3947a4d96401329a2366e698432d3c91c023a89207978c28a0151942",
+      "bytes": 360036
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/HAND_DERIVATION_v3.md",
+      "member": "pinned_inputs/91c7d14902c8297662cfafe6e3f0961db02d9866cd6f7317b016a0f45b8ce8b1/HAND_DERIVATION_v3.md",
+      "sha256": "91c7d14902c8297662cfafe6e3f0961db02d9866cd6f7317b016a0f45b8ce8b1",
+      "bytes": 9514
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/check_bao_v1.py",
+      "member": "pinned_inputs/98c62dd82912774115f4d284224b4ab1a5f247eab59907fee970570f1242f666/check_bao_v1.py",
+      "sha256": "98c62dd82912774115f4d284224b4ab1a5f247eab59907fee970570f1242f666",
+      "bytes": 9632
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "member": "pinned_inputs/9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+      "bytes": 472
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/data/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "member": "pinned_inputs/9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+      "bytes": 472
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_Lya_GCcomb_mean.txt",
+      "member": "pinned_inputs/9b4ab92080d038d0a0a5d76b9abead4e3919d7227e343d1e7feab7103e1f30cb/desi_gaussian_bao_Lya_GCcomb_mean.txt",
+      "sha256": "9b4ab92080d038d0a0a5d76b9abead4e3919d7227e343d1e7feab7103e1f30cb",
+      "bytes": 99
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_QSO_GCcomb_mean.txt",
+      "member": "pinned_inputs/9bffdd0bf27615ab5225e5232fcdf53e16318bf9d06b031a2756d6e89368dadd/desi_gaussian_bao_QSO_GCcomb_mean.txt",
+      "sha256": "9bffdd0bf27615ab5225e5232fcdf53e16318bf9d06b031a2756d6e89368dadd",
+      "bytes": 98
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_transition/QUADRATURE_NODES_v1.json",
+      "member": "pinned_inputs/a2af70a228633c13e9477f198b2a520cf4205ee57d6e8c48f632237fb056a549/QUADRATURE_NODES_v1.json",
+      "sha256": "a2af70a228633c13e9477f198b2a520cf4205ee57d6e8c48f632237fb056a549",
+      "bytes": 26438
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/RETRIEVAL_v2.json",
+      "member": "pinned_inputs/a3475ab2108a4d708ff95bd9d5d6d178e3e8d4a2d5633065fb7b27965ff795c6/RETRIEVAL_v2.json",
+      "sha256": "a3475ab2108a4d708ff95bd9d5d6d178e3e8d4a2d5633065fb7b27965ff795c6",
+      "bytes": 6924
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/evidence_v1/RESULTS.json",
+      "member": "pinned_inputs/ac1b7037b2ba08f1d6f45c45a47e80772d2fc3eb362a397f7a0a2de1b5cb6242/RESULTS.json",
+      "sha256": "ac1b7037b2ba08f1d6f45c45a47e80772d2fc3eb362a397f7a0a2de1b5cb6242",
+      "bytes": 880371
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/PROTOCOL_v1.md",
+      "member": "pinned_inputs/ad3ddc1eaf4378a5bc24cd2208d2f77dfbc7ef6879bf1a8bda7995141d1c9fd0/PROTOCOL_v1.md",
+      "sha256": "ad3ddc1eaf4378a5bc24cd2208d2f77dfbc7ef6879bf1a8bda7995141d1c9fd0",
+      "bytes": 3991
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/PRIMARY_DATA.json",
+      "member": "pinned_inputs/b0c4eb0fd23ed93e933998a3d336699e498c7b807343cf8fb1056be732b1b5e1/PRIMARY_DATA.json",
+      "sha256": "b0c4eb0fd23ed93e933998a3d336699e498c7b807343cf8fb1056be732b1b5e1",
+      "bytes": 1481
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/data/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "member": "pinned_inputs/b360a5ebbec61be26f458079cacb79941e4b44b8706fcd67a092570d360c0031/Pantheon+SH0ES_STAT+SYS.cov.gz",
+      "sha256": "b360a5ebbec61be26f458079cacb79941e4b44b8706fcd67a092570d360c0031",
+      "bytes": 10085863
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/RESULTS.json",
+      "member": "pinned_inputs/b4aa2b0e5a627c071c6677f56d3119ef38a2e6b47674d8a0c0de93d285697b0b/RESULTS.json",
+      "sha256": "b4aa2b0e5a627c071c6677f56d3119ef38a2e6b47674d8a0c0de93d285697b0b",
+      "bytes": 3901260
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v3/EXECUTION.json",
+      "member": "pinned_inputs/bd673152af4b3e8dd63c9d8508cba02a7f8d16132daa82e76ce55b8137c22bd6/EXECUTION.json",
+      "sha256": "bd673152af4b3e8dd63c9d8508cba02a7f8d16132daa82e76ce55b8137c22bd6",
+      "bytes": 2093
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/equal_k1e-06.json",
+      "member": "pinned_inputs/bdde970765f7855b16ce1d4cff3c5cd7fd43c84ddd5802fbca75d54e7b53bf5e/equal_k1e-06.json",
+      "sha256": "bdde970765f7855b16ce1d4cff3c5cd7fd43c84ddd5802fbca75d54e7b53bf5e",
+      "bytes": 359857
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/FIXTURES_v1.json",
+      "member": "pinned_inputs/be342bccdcb1e2dac97cd7b12c1547b9f11bf25a24d30bc5f9ccb288f8897679/FIXTURES_v1.json",
+      "sha256": "be342bccdcb1e2dac97cd7b12c1547b9f11bf25a24d30bc5f9ccb288f8897679",
+      "bytes": 1943
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/SOURCE_LEDGER_v1.json",
+      "member": "pinned_inputs/c0ccc046b24d613cf1a8cc85746eea0c5c781bd3bc601951c55f5d2d05542ca5/SOURCE_LEDGER_v1.json",
+      "sha256": "c0ccc046b24d613cf1a8cc85746eea0c5c781bd3bc601951c55f5d2d05542ca5",
+      "bytes": 4706
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/evidence_v1/RESULTS.json",
+      "member": "pinned_inputs/c307d4e0c170dea3a90fcb1380545ba44733201c4bdb0e4d99c0bdc11f043a31/RESULTS.json",
+      "sha256": "c307d4e0c170dea3a90fcb1380545ba44733201c4bdb0e4d99c0bdc11f043a31",
+      "bytes": 335184
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/desi_gaussian_bao_LRG+ELG_LOPnotqso_GCcomb_mean.txt",
+      "member": "pinned_inputs/c34585b9afdb683e68c2522e9715950fd24b63435ceb8a94ae52acd5d2626f4a/desi_gaussian_bao_LRG+ELG_LOPnotqso_GCcomb_mean.txt",
+      "sha256": "c34585b9afdb683e68c2522e9715950fd24b63435ceb8a94ae52acd5d2626f4a",
+      "bytes": 98
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/check_expansion_reconstruction.py",
+      "member": "pinned_inputs/c52a8187a81ecb329b02a5517321c0be858117d199385f8c63ff156fbf6c81df/check_expansion_reconstruction.py",
+      "sha256": "c52a8187a81ecb329b02a5517321c0be858117d199385f8c63ff156fbf6c81df",
+      "bytes": 17194
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/check_bao_v2.py",
+      "member": "pinned_inputs/c74fb116d5eb2de2178b266c9b1b94985d8298d3349e9a3938b16d1269d57472/check_bao_v2.py",
+      "sha256": "c74fb116d5eb2de2178b266c9b1b94985d8298d3349e9a3938b16d1269d57472",
+      "bytes": 11387
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_weak_field_inverse/HAND_DERIVATION_v2.md",
+      "member": "pinned_inputs/d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b/HAND_DERIVATION_v2.md",
+      "sha256": "d7a2c1a8d8a955037d2324b77a94fbe7a974f646696765de6ae4ad190519b65b",
+      "bytes": 7637
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/check_history_distances_v1.py",
+      "member": "pinned_inputs/d97ed8ce1965a770d532d85e3850e373c1f8514e8d260a358e1fa65849f0d158/check_history_distances_v1.py",
+      "sha256": "d97ed8ce1965a770d532d85e3850e373c1f8514e8d260a358e1fa65849f0d158",
+      "bytes": 10875
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/RECOVERY_ROUTE_v2.json",
+      "member": "pinned_inputs/dac6a58e8629962a7b39fa1da656b381d862bd0fde9f7660345fb08ae7c0432e/RECOVERY_ROUTE_v2.json",
+      "sha256": "dac6a58e8629962a7b39fa1da656b381d862bd0fde9f7660345fb08ae7c0432e",
+      "bytes": 1197
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_bao_distance_comparison/RELEASE_SCOPE_v1.md",
+      "member": "pinned_inputs/df1d19e51e83c140531c5a1ca71a534c3cedf9e568ef24b96033db4eda42bb77/RELEASE_SCOPE_v1.md",
+      "sha256": "df1d19e51e83c140531c5a1ca71a534c3cedf9e568ef24b96033db4eda42bb77",
+      "bytes": 1981
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_history_distance_comparison/evidence_v2/RESULTS.json",
+      "member": "pinned_inputs/dfd96dde51c5bbbc5f08c4661b063659c03a21c81b23fb1a1088b0a6d79c385d/RESULTS.json",
+      "sha256": "dfd96dde51c5bbbc5f08c4661b063659c03a21c81b23fb1a1088b0a6d79c385d",
+      "bytes": 1564068
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/ENERGY_DIFFERENCE_DIAGNOSIS_v1.json",
+      "member": "pinned_inputs/e3d0fdf2cbde1e14e78fbfbe7255dc5c54b074262c4e49f0103e07f0ee2f290d/ENERGY_DIFFERENCE_DIAGNOSIS_v1.json",
+      "sha256": "e3d0fdf2cbde1e14e78fbfbe7255dc5c54b074262c4e49f0103e07f0ee2f290d",
+      "bytes": 19405
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/DESI_DR2_II_v2.html",
+      "member": "pinned_inputs/ed7dbd809e316e61bc49b02a82188f461054f9fc97946cc730842d1c1a6c2c1d/DESI_DR2_II_v2.html",
+      "sha256": "ed7dbd809e316e61bc49b02a82188f461054f9fc97946cc730842d1c1a6c2c1d",
+      "bytes": 1155718
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/desi_dr2_bao/RETRIEVAL_v1.json",
+      "member": "pinned_inputs/ef1c7cd25573508ff2ef01cc95ce02f64391e4f268462126c9607390ecf4a488/RETRIEVAL_v1.json",
+      "sha256": "ef1c7cd25573508ff2ef01cc95ce02f64391e4f268462126c9607390ecf4a488",
+      "bytes": 1349
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_thermal_matter_bridge/evidence_v1/histories/split_k1e-06.json",
+      "member": "pinned_inputs/f357ba855560d36cc16e64a65db9e284bee35e162c96d8a512cfb8d0b6281c45/split_k1e-06.json",
+      "sha256": "f357ba855560d36cc16e64a65db9e284bee35e162c96d8a512cfb8d0b6281c45",
+      "bytes": 355357
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_expansion_reconstruction/NUMERICAL_FIXTURES.json",
+      "member": "pinned_inputs/f7a702eda6931ec321a0ef5190928fa5c20e157b11615086d9eb1c5e6649544f/NUMERICAL_FIXTURES.json",
+      "sha256": "f7a702eda6931ec321a0ef5190928fa5c20e157b11615086d9eb1c5e6649544f",
+      "bytes": 2296
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/synthesis/CROSS_DOMAIN_CAPTION_v1.md",
+      "member": "synthesis/CROSS_DOMAIN_CAPTION_v1.md",
+      "sha256": "0b6c4c55c03f1a86e83f0b799b69b1891e826b2872a786c487158366fe87d7cb",
+      "bytes": 1432
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/synthesis/CROSS_DOMAIN_v1.json",
+      "member": "synthesis/CROSS_DOMAIN_v1.json",
+      "sha256": "c9729b11595da57e4cbea2b88b34017b8f4fdbc17cbaeae5ed52046c50dc5dd8",
+      "bytes": 4870
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/synthesis/CROSS_DOMAIN_v1.png",
+      "member": "synthesis/CROSS_DOMAIN_v1.png",
+      "sha256": "dcc559735db6d68e606707f322e9ab47205accbfff6c62d42fe55a84a13bff21",
+      "bytes": 127963
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/synthesis/CROSS_DOMAIN_v1.svg",
+      "member": "synthesis/CROSS_DOMAIN_v1.svg",
+      "sha256": "8f2a55556aa13430ef5a986bb63923a87c2999fa51b4a6254d016280e59373eb",
+      "bytes": 106006
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/create_cross_domain_figure_v1.py",
+      "member": "synthesis/create_cross_domain_figure_v1.py",
+      "sha256": "eb37b2fcb37f0274aaec8e18b457d2b7e7f447734ba8838baec123b1a76d200e",
+      "bytes": 6205
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/CANONICAL_CAPTURE_RECOVERY_v2.json",
+      "member": "weak_limit_runtime/CANONICAL_CAPTURE_RECOVERY_v2.json",
+      "sha256": "c2a65bb2e5e60750072eedc845b1321bcec17d44f584ca1eca8c60e682f5621f",
+      "bytes": 1349
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/CANONICAL_EXECUTION_v1.json",
+      "member": "weak_limit_runtime/CANONICAL_EXECUTION_v1.json",
+      "sha256": "91970426e51da28834e75fe30e52bd390fa878ee9973fc446d1482b681cc3780",
+      "bytes": 621
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/FINAL_SOURCE_UNIT_v1.json",
+      "member": "weak_limit_runtime/FINAL_SOURCE_UNIT_v1.json",
+      "sha256": "b946f4733b31262bb98296d5318b382aa4fd116f9ad6a09ec3f52c3d65e6af6f",
+      "bytes": 4474
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/GRAPH_DISCOVERY_v1.json",
+      "member": "weak_limit_runtime/GRAPH_DISCOVERY_v1.json",
+      "sha256": "03e874a49049ffbb64f19c29169a3cfd4d6c2b57b282d85955727d00204a3600",
+      "bytes": 376
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/GRAPH_FORMAT_CORRECTION_v2.json",
+      "member": "weak_limit_runtime/GRAPH_FORMAT_CORRECTION_v2.json",
+      "sha256": "e33c8a08fed12b1739f17bfb8a1d3e2daa5139aa82c41432ec976a371ba4f2d6",
+      "bytes": 275
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/MAIN_SOURCE_SEARCH_v1.json",
+      "member": "weak_limit_runtime/MAIN_SOURCE_SEARCH_v1.json",
+      "sha256": "fb05072c4495665424a0e7bd489200c11d915a1cafec22cbdf31bd5667b8e5a2",
+      "bytes": 2005
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/OPEN_PR_SNAPSHOT_v1.json",
+      "member": "weak_limit_runtime/OPEN_PR_SNAPSHOT_v1.json",
+      "sha256": "2e35e13d5ba451dd0ab96f6ac670542f1c9cf3368416c5dd994970b5a6da01ba",
+      "bytes": 7531
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/PARENT_RECEIPT_PARSER_FAILURE_v1.json",
+      "member": "weak_limit_runtime/PARENT_RECEIPT_PARSER_FAILURE_v1.json",
+      "sha256": "a4a4b9d4a940389517896c6fb4646293213333e46cfdb0db591555da9174bf9a",
+      "bytes": 357
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/PARENT_SOURCE_RECEIPT_v1.json",
+      "member": "weak_limit_runtime/PARENT_SOURCE_RECEIPT_v1.json",
+      "sha256": "71c44f0579aac0be7d5d28627a33cadf896262ef7c6bb0274ad34201d24d4747",
+      "bytes": 38205
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/PR_SOURCE_FRESHNESS_v1.json",
+      "member": "weak_limit_runtime/PR_SOURCE_FRESHNESS_v1.json",
+      "sha256": "7a5b3afee38d659af2be4f2e847e5f7923819915e6a3fe0361fde0ce23c15040",
+      "bytes": 2416
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/RUNNER_DISCOVERY_FAILURE_v1.json",
+      "member": "weak_limit_runtime/RUNNER_DISCOVERY_FAILURE_v1.json",
+      "sha256": "c871dd8e73162ca27cf3b7016b781d71a8588138c6507e715925809418d566ce",
+      "bytes": 533
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/RUNNER_DISCOVERY_v2.json",
+      "member": "weak_limit_runtime/RUNNER_DISCOVERY_v2.json",
+      "sha256": "62dfb9d2c2ca6491d4b4193e300488b9d7dfb26cdb905c958dd287e7680a7776",
+      "bytes": 234
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/SOURCE_UNIT_v1.json",
+      "member": "weak_limit_runtime/SOURCE_UNIT_v1.json",
+      "sha256": "34565c4ffa669dbef3a812e367901a8be86574f9c69b1e926457cfa99b18e165",
+      "bytes": 2407
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/SOURCE_UNIT_v2.json",
+      "member": "weak_limit_runtime/SOURCE_UNIT_v2.json",
+      "sha256": "914e6f1c6d43c13b661ae20c7449309a3e22fd34b536290b52f285ac732cd346",
+      "bytes": 2407
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/SOURCE_UNIT_v3.json",
+      "member": "weak_limit_runtime/SOURCE_UNIT_v3.json",
+      "sha256": "5058e055d4011de9a9f1c34fde81d58d24b0caaf90dd3215ae895834899eb3ef",
+      "bytes": 2321
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/UNIT_PREFLIGHT_v1.json",
+      "member": "weak_limit_runtime/UNIT_PREFLIGHT_v1.json",
+      "sha256": "9cca8f592e8c9e107c44a2aca3c215cc3eac307e3856b742ff28f19e370a5712",
+      "bytes": 474
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/UNIT_PREFLIGHT_v1.stderr",
+      "member": "weak_limit_runtime/UNIT_PREFLIGHT_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/UNIT_PREFLIGHT_v1.stdout",
+      "member": "weak_limit_runtime/UNIT_PREFLIGHT_v1.stdout",
+      "sha256": "5778a59e6a088f88389e22e566b8d3700edbdfb06ae90e0be5281f57fe609568",
+      "bytes": 1131
+    },
+    {
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/UNIT_v1.json",
+      "member": "weak_limit_runtime/UNIT_v1.json",
+      "sha256": "569091275f6c90bf4d8d2294185e85018a873fc331927b291186e8aae86a030d",
+      "bytes": 7892
+    }
+  ]
+}

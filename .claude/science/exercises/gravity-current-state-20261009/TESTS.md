@@ -8489,3 +8489,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R19-24a (D1∞, which is P73 restated), P-R19-24b ((Σ_γ) = κ_γ).
 
   Referee running.
+- **R19-27 (V1 enthalpy gap): worker reading V1-RECEIVER, in class 𝒱_ct.**
+  - **Why the mismatch arose.** It assumed Higgs-sector counterterms fixed in physical units, which is inadmissible on V1: the vev would drift by ~1e51 per e-fold.
+  - **The receiver: per-site counterterms.** These are lattice-unit counterterms on a line of constant physics. Each carries exactly the opposite pressure to the piece of the sea it cancels (Lemma E: W_k = ((4−k)/3)ρ_k). So the mismatch is cancelled to O(φ⁵ℓ) (Theorem R).
+  - **The lattice frame cannot take the energy leg** (Lemma X0).
+  - **Checked** on D1 root edges (residual ~5e-7 relative, scaling as m^{3.2}, CW-log) and in the NN thermal channel.
+  - **No lattice force and no signalling.**
+  - **Price:** P-R19-27a (per-site Higgs-sector counterterms plus the LCP; no new numbers).
+  - **Suggested:** R19-21's C-box-E enthalpy claims also depend on the counterterm scheme.
+  - **Archive fix (07:05Z):** `scripts/C5/R19-21/r1921_enthalpy.py` imported from the non-archived `../arch/R18-5`. It now uses `../R18-5`, and its rerun output is identical. (Reported by R19-27.)
+
+  Referee running.

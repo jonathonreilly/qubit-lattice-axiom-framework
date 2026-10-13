@@ -6,7 +6,7 @@ Isotropic dilation at fixed law data (H-cov dilation = same law at new spacing; 
 Uses R18-5's D1 class (dirac.py + sublum.py, unmodified copies in ../arch/R18-5). Units: lattice, a = l_P, M_P = 1.22089e19 GeV.
 rho_Lambda a^4 = 1.134e-123 (as rR19-14:7, RECALLED)."""
 import sys, os, numpy as np
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'arch', 'R18-5'))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'R18-5'))
 from dirac import D1, kgrid
 MP = 1.22089e19; rhoL = 1.134e-123; v = 246.22; mH = 125.25
 def sea(law_S, law_W, N, m, kind):

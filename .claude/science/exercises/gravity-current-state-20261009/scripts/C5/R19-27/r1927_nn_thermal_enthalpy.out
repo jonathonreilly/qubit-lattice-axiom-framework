@@ -1,0 +1,10 @@
+NN scalar, N = 96: g_vac(0) = <1/(2 Omega)> = 0.227665 (lattice units)
+T l0 = 0.10, lambda = 1, n0 = 1; W_x = d f_x / d ln n:
+  m l0 = 0.40: G_th = 2.6014e-05 | LI: f_x +0.000e+00 W_x +9.8245e-07 (pred (lam/6) G_th g_vac(0) = +9.8708e-07) | per-site: f_x -4.127e-08 W_x -3.999e-09 | ratio -4.07e-03
+  m l0 = 0.20: G_th = 1.5057e-04 | LI: f_x +0.000e+00 W_x +5.7070e-06 (pred (lam/6) G_th g_vac(0) = +5.7133e-06) | per-site: f_x -7.322e-08 W_x -5.625e-09 | ratio -9.86e-04
+  m l0 = 0.10: G_th = 3.5259e-04 | LI: f_x +0.000e+00 W_x +1.3375e-05 (pred (lam/6) G_th g_vac(0) = +1.3379e-05) | per-site: f_x -5.024e-08 W_x -2.999e-09 | ratio -2.24e-04
+  m l0 = 0.05: G_th = 5.3603e-04 | LI: f_x +0.000e+00 W_x +2.0338e-05 (pred (lam/6) G_th g_vac(0) = +2.0339e-05) | per-site: f_x -2.140e-08 W_x -5.661e-10 | ratio -2.78e-05
+  log-log slope of |W_site/W_LI| vs m l: 2.37  (expected ~2, times a log)
+  (the per-site residual is the log running of the mass, (lambda/2)(g_vac(m l) - g_vac(0))/l^2 ~ lambda m^2 log(m l): EW-scale, LI-type;
+   zero under the full line of constant physics. Scale at l = l_P, T = T_c: LI W_x ~ (lambda/6)(T^2/12) g_vac(0) M_P^2.)
+  LI scheme at T_c (lambda = 1, l = l_P, massless G_th = T^2/12): W_x = 1.20e+40 GeV^4 = 5.3e+29 rho_rad(T_c)

@@ -1,0 +1,8 @@
+E1  max|T_num - (-F g + n F_n h)| = 2.50e-09   (scale 1.78e+01)
+E2  |u^mu d_mu X^I| = [2.8e-17 0.0e+00 0.0e+00] ;  |h_{mu nu} u^nu| = 1.7e-16 ;  |h g^-1 h - h| = 1.2e-15 ;  h = g + u u: 7.8e-16
+E1  rho = 8.295671909 vs F = 8.295671909 ;  p = 3.705799095 vs nF_n - F = 3.705799095 ;  W = 12.001471005 vs nF_n = 12.001471005
+E3  rho_dot + 3H W - F_phi phi_dot = 0
+E4  LCP form F0(n)+DV(phi):            E_1|xi=0 = 0
+E4  LI-counterterm form F0+c1 n m+Vct: E_1|xi=0 = c1*Derivative(m(phi(x)), phi(x))*Derivative(phi(x), x)
+E4  d/dx[W_state] (LI form, n=1) = c1*Derivative(m(phi(x)), phi(x))*Derivative(phi(x), x)   -> E_1 = d/dx W_state: True
+E5  reading A (F_1 = 0), F0 = A n^(4/3), LI form: delta n = [-9*c1*delta_m*nbar**(2/3)/(4*A)]  [first order in delta m]

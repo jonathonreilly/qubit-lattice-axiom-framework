@@ -1,10 +1,10 @@
 ---
-title: A conditional weak-scalar expansion with a persistent fast mode
+title: A conditional weak-scalar expansion and fast curvature coefficient
 claim_id: weak-scalar-limit-bounded-theorem-note-2026-10-13
 date: 2026-10-13
 ---
 
-# A conditional weak-scalar expansion with a persistent fast mode
+# A conditional weak-scalar expansion and fast curvature coefficient
 
 Status: proposed_retained
 

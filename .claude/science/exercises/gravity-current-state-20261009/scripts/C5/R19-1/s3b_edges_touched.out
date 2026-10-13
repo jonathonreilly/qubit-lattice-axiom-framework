@@ -1,0 +1,5 @@
+cube: slots 6, edges touched (any column) 12, edges with nonzero all-ones lift 6
+mu8a: slots 8, edges touched (any column) 12, edges with nonzero all-ones lift 4
+mu8b: slots 8, edges touched (any column) 12, edges with nonzero all-ones lift 4
+mu8c: slots 8, edges touched (any column) 12, edges with nonzero all-ones lift 4
+empirical max |Delta sum gamma^2| per move type over 200 uniform configs x 5 translates: [8. 8. 8. 8.]

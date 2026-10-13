@@ -7380,3 +7380,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - P-r193b: the lattice cubic vertex.
 
   Referee running.
+- **R19-1 (Z₂ graviton at the RK point): worker reading NEITHER.** RK-Z2 and LIGHT-LIKE-SMA are both unmet. The method is pre-stated in `agents/C5_R19-1_method.md`.
+  - **Lemma 1:** the RK Hamiltonian is the Markov generator, so its spectral measures equal the classical relaxation measures.
+  - **Lemma 2:** at βU = 0 there are flat gapped bands.
+  - **Lemma 3:** at every finite βU, the f-sum is k⁰ (bounded below uniformly), so the SMA gives a flat gap, never a cone.
+  - **Proposition 4:** a linear SMA needs an odd-power S_TT matched to the f-class. Neither screened nor pinch-point ensembles supply one.
+  - **Theorem 5:** under exponential clustering, every finite-mode Rayleigh–Ritz branch is gapped or O(k²), because relaxation rates have even-order zeros.
+  - **Theorem 6:** in a bounded class, no isolated light-like T₂ branch.
+  - **Conclusion:** a light-like branch would need a phase transition away from the RK point (P96 restated dynamically). Under P143 the T₂ mode is at best diffusive (z = 2).
+  - **Prices:** P-r19-1a (RK tuning v = t); P96 sharpened.
+
+  Referee running.

@@ -1,0 +1,32 @@
+L=8 bU=1.0 nsweep=40000 seed=1 ; E/edge=0.18359 ; time unit = 1 sweep (each move proposed once on average)
+rate Gamma = -d ln C/dtau fitted on tau in [1,6] ; C(1)/C(0) ; C(5)/C(0)
+  axis m=1 S1  S=0.2813  Gamma=nan  C1/C0=0.1617  C5/C0=0.0010  C10/C0=-0.0024
+  axis m=1 TT1 S=0.3044  Gamma=nan  C1/C0=0.1900  C5/C0=0.0002  C10/C0=-0.0006
+  axis m=1 TT2 S=0.8086  Gamma=nan  C1/C0=0.0998  C5/C0=-0.0025  C10/C0=-0.0004
+  axis m=1 V1  S=0.6853  Gamma=nan  C1/C0=0.0769  C5/C0=0.0001  C10/C0=0.0011
+  axis m=1 V2  S=0.6914  Gamma=nan  C1/C0=0.0742  C5/C0=-0.0014  C10/C0=0.0022
+  axis m=2 S1  S=0.2436  Gamma=nan  C1/C0=0.1262  C5/C0=0.0022  C10/C0=0.0015
+  axis m=2 TT1 S=0.3036  Gamma=nan  C1/C0=0.1856  C5/C0=0.0003  C10/C0=-0.0009
+  axis m=2 TT2 S=0.8047  Gamma=nan  C1/C0=0.1024  C5/C0=-0.0033  C10/C0=0.0006
+  axis m=2 V1  S=0.5064  Gamma=nan  C1/C0=0.0424  C5/C0=-0.0005  C10/C0=-0.0022
+  axis m=2 V2  S=0.5056  Gamma=nan  C1/C0=0.0427  C5/C0=0.0019  C10/C0=0.0009
+  body m=1 S1  S=0.4993  Gamma=nan  C1/C0=0.0464  C5/C0=-0.0011  C10/C0=0.0001
+  body m=1 TT1 S=0.6114  Gamma=nan  C1/C0=0.1213  C5/C0=-0.0007  C10/C0=-0.0023
+  body m=1 TT2 S=0.6096  Gamma=nan  C1/C0=0.1193  C5/C0=0.0016  C10/C0=-0.0027
+  body m=1 V1  S=0.3619  Gamma=nan  C1/C0=0.0856  C5/C0=0.0010  C10/C0=-0.0000
+  body m=1 V2  S=0.3625  Gamma=nan  C1/C0=0.0838  C5/C0=0.0009  C10/C0=-0.0022
+  body m=2 S1  S=0.3043  Gamma=nan  C1/C0=0.0536  C5/C0=0.0017  C10/C0=0.0018
+  body m=2 TT1 S=0.5788  Gamma=nan  C1/C0=0.1241  C5/C0=-0.0003  C10/C0=0.0016
+  body m=2 TT2 S=0.5775  Gamma=nan  C1/C0=0.1263  C5/C0=-0.0019  C10/C0=0.0037
+  body m=2 V1  S=0.2321  Gamma=nan  C1/C0=0.0312  C5/C0=-0.0019  C10/C0=0.0005
+  body m=2 V2  S=0.2320  Gamma=nan  C1/C0=0.0292  C5/C0=-0.0017  C10/C0=0.0017
+  face m=1 S1  S=0.5001  Gamma=nan  C1/C0=0.0682  C5/C0=0.0001  C10/C0=-0.0012
+  face m=1 TT1 S=0.4130  Gamma=nan  C1/C0=0.1499  C5/C0=0.0024  C10/C0=-0.0024
+  face m=1 TT2 S=0.8096  Gamma=nan  C1/C0=0.1087  C5/C0=0.0022  C10/C0=0.0000
+  face m=1 V1  S=0.4888  Gamma=nan  C1/C0=0.0681  C5/C0=0.0027  C10/C0=0.0016
+  face m=1 V2  S=0.3790  Gamma=nan  C1/C0=0.0980  C5/C0=0.0014  C10/C0=0.0024
+  face m=2 S1  S=0.3350  Gamma=nan  C1/C0=0.0589  C5/C0=-0.0016  C10/C0=-0.0005
+  face m=2 TT1 S=0.3956  Gamma=nan  C1/C0=0.1493  C5/C0=-0.0021  C10/C0=-0.0001
+  face m=2 TT2 S=0.8083  Gamma=nan  C1/C0=0.1176  C5/C0=0.0005  C10/C0=0.0005
+  face m=2 V1  S=0.3165  Gamma=nan  C1/C0=0.0293  C5/C0=-0.0017  C10/C0=-0.0027
+  face m=2 V2  S=0.2652  Gamma=nan  C1/C0=0.0489  C5/C0=-0.0003  C10/C0=-0.0012

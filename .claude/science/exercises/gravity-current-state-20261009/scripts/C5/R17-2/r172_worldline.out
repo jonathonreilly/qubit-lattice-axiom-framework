@@ -1,0 +1,13 @@
+z, rho, numeric G, asinh(z/rho)/(2 pi), rel diff  (L = 1e7)
+     0.00   1.00  +0.0000000000  +0.0000000000  0.0e+00
+     1.00   1.00  +0.1402749472  +0.1402749631  1.1e-07
+    10.00   1.00  +0.4771818439  +0.4771820030  3.3e-07
+    -3.00   0.10  -0.6516793193  -0.6516793671  7.3e-08
+   100.00   0.01  +1.5761874067  +1.5761889982  1.0e-06
+     5.00  20.00  +0.0393854310  +0.0393855106  2.0e-06
+gradient magnitude r*|grad G| along rays at angle theta from the world-line (r = 100): grows like cot(theta)
+  theta =  1.00: r|grad G| = 1.8914e-01; cot(theta)/(2 pi) = 1.0219e-01
+  theta =  0.30: r|grad G| = 5.3856e-01; cot(theta)/(2 pi) = 5.1450e-01
+  theta =  0.10: r|grad G| = 1.5942e+00; cot(theta)/(2 pi) = 1.5862e+00
+  theta =  0.03: r|grad G| = 5.3060e+00; cot(theta)/(2 pi) = 5.3036e+00
+  theta =  0.01: r|grad G| = 1.5916e+01; cot(theta)/(2 pi) = 1.5915e+01

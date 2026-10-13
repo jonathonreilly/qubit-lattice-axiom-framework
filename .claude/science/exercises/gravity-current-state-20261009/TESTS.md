@@ -5984,3 +5984,13 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **OBSTRUCTED:** a refereed no-go for a stated Z₂ class, e.g. "no natural-action Z₂ model has a T₂ gapless branch".
   - **OPEN:** otherwise.
 - **Expectation.** OPEN. Most likely a representation obstruction for the natural action, plus an unresolved shift-action class. A CANDIDATE would be a major result and needs the most careful check.
+- **R17-2 (W7 boost bracket): worker reading OPEN.**
+  - **Lemma D (proved and checked; bulk, leading order).** R16-12's generator W is exactly GR's own dressing (ratio −1 to 6.4e-8). So the W7 tail is an edge quantum's own GR field, moved by a lattice momentum that is not a true translation.
+  - **Lemma H (proved and checked).** {W, H₀} = −H_int plus constraint terms. So the undressed H′ ≈ H₀ is non-local only through gauge multipliers, which is the Coulomb-gauge pattern. This corrects R16-12's "non-local H′".
+  - **B3's world-line kernel** can be traded for non-local multipliers (suggested).
+  - **Escape 2:** a 1/r world-line kernel. Any Jacobi failure is confined to the q·v = 0 shell, which was not evaluated.
+  - **The dressed curvature O_F** is bulk-invariant. R13-4's criterion also flags GR's own dressed operators, so it is not a valid gravity control.
+  - **Direction (suggested):** removable from the bulk physics, with what is lattice-specific relocated to the global (boundary) Poincaré charges.
+  - **Prices:** P-W7mult, P-W7bdy, P-W7ro.
+
+  Referee running.

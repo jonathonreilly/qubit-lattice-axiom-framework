@@ -1,0 +1,36 @@
+C5 R17-2 r172_dressing.py; m = 0.3
+
+(A) dressing identity. For each defect mode and random qhat (|q| = 1e-3), Xi = Phi_c/delta_c from R16-12's T3 solve.
+    A1 Hamiltonian: {C_s^(1)[N], W} = i N s.Xi_E f  ->  need s.Xi_E = -i eps  (so the bracket is N eps f = T00[N])
+    A2 momentum:    {C_j^(1)[xi], W} = -2 xi.(q.Xi_h) f -> need q.Xi_h = P/2 = eps v/2 (bracket = P^m[xi], sign as A1)
+    A3 TT cloud: the GR comoving field of the W1 stress at frequency omega=q.v solves hdot=2E, Edot=-(q^2/2)h - sigma0 f:
+       h_TT = 2 sigma0_TT f/(omega^2-q^2), E_TT = -i omega sigma0_TT f/(omega^2-q^2). Dressing shifts: dh = -i Xi_E f, dE = +i Xi_h f.
+       Report ratios dh_T/h^GR_T, dh_TT/h^GR_TT, dE_TT/E^GR_TT (GR Newtonian h^GR_T: s.h = eps f -> coeff on (I-qq) = -eps/(2q^2)).
+  S(1.4) k=[1.6 1.6 0. ] |v|=0.3351: A1 max rel err 8.2e-16; A2 max rel err 2.1e-10; A3 ratios (Newton, h_TT, E_TT): max|r+1| = 6.4e-08 over 400 samples
+  G(1.4) k=[2.  0.3 0.2] |v|=0.7970: A1 max rel err 6.6e-16; A2 max rel err 5.0e-10; A3 ratios (Newton, h_TT, E_TT): max|r+1| = 1.7e-08 over 200 samples
+  G(1.4) k=[ 2.6  0.1 -0.4] |v|=0.2284: A1 max rel err 7.7e-16; A2 max rel err 1.5e-10; A3 ratios (Newton, h_TT, E_TT): max|r+1| = 7.3e-09 over 200 samples
+  G(1.4) k=[1.6 1.6 0. ] |v|=0.9908: A1 max rel err 7.8e-16; A2 max rel err 1.8e-10; A3 ratios (Newton, h_TT, E_TT): max|r+1| = 4.3e-09 over 400 samples
+  G(1.4) k=[ 2.3 -1.9  0.7] |v|=0.7001: A1 max rel err 9.0e-16; A2 max rel err 1.9e-10; A3 ratios (Newton, h_TT, E_TT): max|r+1| = 3.3e-09 over 400 samples
+
+(B) T3 equations = dressing equations: {W, H0} = -i[E.(-i om Xi_E + G Xi_h) + h.(-i om Xi_h - K Xi_E)] f.
+    Claim: E-part has only L components (qq, vL) and h-part equals -sigma0 f up to T component (transverse trace).
+    => e^{-W}: H = H0 + h.sigma0 f  ->  H0 + {E_L, h_T}-proportional terms (weakly H0). Show components:
+  S(1.4) k=[ 2.6  0.1 -0.4] c=0: max non-constraint residual of {W,H0}+h.sigma0 f: 2.8e-14; max constraint-proportional (E_L, h_T) part: 4.61e+00 (nonzero: the weak residual)
+  G(1.4) k=[ 2.6  0.1 -0.4] c=0: max non-constraint residual of {W,H0}+h.sigma0 f: 8.6e-14; max constraint-proportional (E_L, h_T) part: 2.85e+01 (nonzero: the weak residual)
+  Constraint-proportional coefficients near qhat.v -> 0 (|q| = 1), G(1.4) k=(2.6,0.1,-0.4):
+    qhat.v = 2.3e-02: |E_L coeff| = 7.429e-01, |h_T coeff| = 8.596e-01  (Xi_T = 1.635e+00, bounded: Xi is regular in qhat; the weak residual is bounded too)
+    qhat.v = 2.3e-03: |E_L coeff| = 7.466e-01, |h_T coeff| = 8.600e-01  (Xi_T = 1.635e+00, bounded: Xi is regular in qhat; the weak residual is bounded too)
+    qhat.v = 2.3e-04: |E_L coeff| = 7.467e-01, |h_T coeff| = 8.600e-01  (Xi_T = 1.635e+00, bounded: Xi is regular in qhat; the weak residual is bounded too)
+    qhat.v = 2.3e-05: |E_L coeff| = 7.467e-01, |h_T coeff| = 8.600e-01  (Xi_T = 1.635e+00, bounded: Xi is regular in qhat; the weak residual is bounded too)
+
+(C) kernel of the weak boost operator L(X,Y) = (-i om X + G Y on T,TT ; -i om Y - K X on qq,vL,TT), unknowns X(6),Y(6)
+  omega = 0.37     : rank 8, null dim 4; null directions involve: ['X_qq', 'X_vL1', 'X_vL2', 'Y_T']; smallest kept sv 9.1e-02
+  omega = 1e-06    : rank 7, null dim 5; null directions involve: ['X_qq', 'X_vL1', 'X_vL2', 'X_T', 'Y_T']; smallest kept sv 1.0e-06
+  omega = 0.0      : rank 5, null dim 7; null directions involve: ['X_qq', 'X_vL1', 'X_vL2', 'X_T', 'Y_vL1', 'Y_vL2', 'Y_T']; smallest kept sv 5.0e-01
+  omega = 0.999999 : rank 8, null dim 4; null directions involve: ['X_qq', 'X_vL1', 'X_vL2', 'Y_T']; smallest kept sv 8.0e-07
+  omega = 1.0      : rank 6, null dim 6; null directions involve: ['X_qq', 'X_vL1', 'X_vL2', 'X_TT1', 'X_TT2', 'Y_T', 'Y_TT1', 'Y_TT2']; smallest kept sv 5.2e-01
+  (X_qq, X_vL multiply E_L, Y_T multiplies h_T: constraint-proportional = weakly zero.)
+
+(D) boost factorisation: the forced helicity-0 boost pieces (X_T, Y_qq) / delta_b are b-independent
+  S(1.4) k=[1.6 1.6 0. ]: defect directions b = [0, 1]; spread of X_T/delta_b 0.0e+00, of Y_qq/delta_b 2.2e-16; X_T/delta_b vs -eps/(|q|^2 omega): 0.0e+00
+  G(1.4) k=[ 2.3 -1.9  0.7]: defect directions b = [0, 1]; spread of X_T/delta_b 2.8e-14, of Y_qq/delta_b 0.0e+00; X_T/delta_b vs -eps/(|q|^2 omega): 1.6e-16

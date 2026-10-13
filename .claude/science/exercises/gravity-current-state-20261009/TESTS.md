@@ -6202,3 +6202,49 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r17-6a to P-r17-6d.
 
   Referee running.
+
+### C5 Round 17, items 10–11 (pre-registered 01:12Z, before launch)
+
+**R17-10. Certify or break the graviton-cone/K₆ conflict on one subluminal scalar edge (U vertex, E1).**
+- **Plain question.** R17-4 (refereed COUNTED-ROWS for U+E1) leaves one new off-axis condition, a weighted sixth cumulant K₆. Searches strongly but non-certifiably suggest it conflicts with the axis zeros (E_g = T₂g = 0). R16-9's shear conflict (μ_E) is likewise uncertified (`vR16-9:9`). Can a certified enclosure settle either conflict for the local U vertex?
+- **Setting.**
+  - R16-9/R17-4's relaxation: per-level moments of the occupation measure, with Lemma R_U's necessary inequalities.
+  - U vertex, E1 extension, m ∈ [0.01, 0.1], subluminal separable 𝒮.
+  - Method stated in advance: interval branch-and-bound with outward rounding, or a verified moment-SOS relaxation with rational certificates. Exactness and tolerance stated.
+  - Excluded: the M vertex (non-local, Lemma M), fermion loops.
+- **Prior art (count once):** R16-9 and `vR16-9:5-11`, R17-4 and its verdict, R16-3 (Z1, IBP), R14-3.
+- **Removed hypothesis:** sampling (certification).
+- **Probes.**
+  - (a) Formulate the K₆ and μ_E joint problems as polynomial optimization over the relaxation.
+  - (b) Run the certified method on the smallest problem first: U, K₆ with the axis zeros, m = 0.01.
+  - (c) Report certified bounds, or a feasible point.
+  - (d) Prices and the bill update.
+- **FIXED readings.**
+  - **CERTIFIED-CONFLICT** (per condition): a certified proof that the stated condition cannot hold together with the axis zeros on the relaxation superset, refereed.
+  - **JOINT:** an explicit subluminal law meeting it, checked.
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - CERTIFIED-CONFLICT for K₆ at m = 0.01, if the margins (≈ 1e-4) beat the relaxation gap.
+  - OPEN for μ_E on U, whose margin is thin (1.3e-4).
+
+**R17-11. The E₀ principle's pressure residual: is bridge (d-i) — vacuum exchanging energy and momentum with the expansion sector — consistent and covariant?**
+- **Plain question.** R17-7 (worker; referee running) finds that under C = E₀[H] the grid zero-point's energy cancels, but its pressure ρ₀+p₀ ≈ 1e123 ρ_Λ per scalar remains. It is invisible only under bridge (d-i), where the vacuum has no separate conservation law and exchanges with the sector that drives expansion. Otherwise pairing, or one tuning per order, is needed.
+  - Is (d-i) consistent with local covariance and Bianchi beyond homogeneity?
+  - Does it reintroduce R15-1's signalling (a g ≠ 0 channel) or a new instantaneous channel?
+  - What does it predict?
+- **Setting.**
+  - R14-5/R15-1's E-sector equations, linear perturbations, with C = E₀ and the grid zero-point stress of R11-3.
+  - Bridge (d-i) written as a covariant exchange current Q^μ.
+  - Excluded: active compensation of vacuum changes (R15-1 FAIL).
+- **Prior art (count once):** R17-7, R17-3, R15-1 (Lemmas S, V) and its verdict (`vR15-1:15`), R14-5, R11-3, R13-3 (Lemma G′), and interacting-vacuum (Q-coupled) literature (RECALLED).
+- **Removed hypothesis:** separate vacuum conservation.
+- **Probes.**
+  - (a) A covariant form of (d-i). Which Q^μ absorbs ρ₀+p₀ exactly at all times?
+  - (b) Bianchi and causality at linear order: is there an instantaneous response (Lemma S test)?
+  - (c) Observable consequences, e.g. a coupling of the vacuum to matter flows.
+  - (d) Prices.
+- **FIXED readings.**
+  - **CONSISTENT:** a covariant, non-signalling (d-i) that absorbs the pressure exactly, checked at linear order.
+  - **SIGNALS / INCONSISTENT:** a refereed demonstration that every (d-i) form in a stated class signals or breaks Bianchi.
+  - **OPEN:** otherwise.
+- **Expectation.** SIGNALS. Absorbing a uniform pressure exactly at all times is the CMC/g ≠ 0 pattern again, unless the pressure residual is itself constant, in which case (d-i) may be trivial.

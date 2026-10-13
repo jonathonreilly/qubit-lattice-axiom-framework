@@ -1,0 +1,32 @@
+C1  Lambda_late before/after the shift: kappa*rho_vlate + lambda  ->  kappa*rho_vlate + lambda ; difference = 0
+    IE: R = rho_tot - C ; under rho_tot -> rho_tot + c at fixed reader datum: Lambda_late = R - (rho_tot - rho_vlate) -> -C + c + rho_vlate
+    i.e. the shift moves the datum C -> C + c (free translation); no value of C is a fixed point.
+C2/U checks on random Hermitian H (dim 6):
+   trial 0 E0       ref=-3.5164 : weight>=0 on all states: True  ; some state weightless: True
+   trial 0 Tr/dim   ref=+0.1743 : weight>=0 on all states: False ; some state weightless: False
+   trial 0 midpoint ref=-0.5265 : weight>=0 on all states: False ; some state weightless: False
+   trial 0: spectrum reflection-symmetric about its midpoint? False (random H: generically no)
+   trial 1 E0       ref=-3.5046 : weight>=0 on all states: True  ; some state weightless: True
+   trial 1 Tr/dim   ref=-0.2934 : weight>=0 on all states: False ; some state weightless: False
+   trial 1 midpoint ref=-0.5433 : weight>=0 on all states: False ; some state weightless: False
+   trial 1: spectrum reflection-symmetric about its midpoint? False (random H: generically no)
+   trial 2 E0       ref=-3.9433 : weight>=0 on all states: True  ; some state weightless: True
+   trial 2 Tr/dim   ref=+0.3291 : weight>=0 on all states: False ; some state weightless: False
+   trial 2 midpoint ref=-0.2532 : weight>=0 on all states: False ; some state weightless: False
+   trial 2: spectrum reflection-symmetric about its midpoint? False (random H: generically no)
+   KS sea (r173_recordmap_vacuum.out item 3): the chiral reflection fixes the trace zero; the sea sits at -1.1938 per site below it.
+D1  One-loop vacuum terms ~ n m^4/(64 pi^2) in units of rho_Lambda (RECALLED masses/dof; a re-tune is needed for each):
+   electron: 4.32e-16 GeV^4 = 1.7e+31 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 1.5e-32
+   muon    : 7.89e-07 GeV^4 = 3.1e+40 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 8.0e-42
+   b quark : 5.80e+00 GeV^4 = 2.3e+47 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 1.1e-48
+   W       : 3.97e+05 GeV^4 = 1.6e+52 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 1.6e-53
+   Z       : 3.28e+05 GeV^4 = 1.3e+52 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 1.9e-53
+   Higgs   : 3.88e+05 GeV^4 = 1.5e+52 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 1.6e-53
+   top     : 1.69e+07 GeV^4 = 6.7e+53 rho_Lambda ; fractional mass change that shifts it by rho_Lambda: 3.7e-55
+   EW tree step m_h^2 v^2/8 = 1.186e+08 GeV^4 = 4.71e+54 rho_Lambda (R5-3, counted once)
+D2  (S) with a tilted double well V = l (phi^2 - v^2)^2 + eps phi, universe in the + well (l = v = 1):
+   eps=-0.020: V_+ = -0.02002, E0 = -0.02002, Lambda_late under (S) = V_+ - E0 = +0.00000 (2|eps|v = 0.040 when eps > 0)
+   eps=-0.005: V_+ = -0.00500, E0 = -0.00500, Lambda_late under (S) = V_+ - E0 = +0.00000 (2|eps|v = 0.010 when eps > 0)
+   eps=+0.000: V_+ = +0.00000, E0 = +0.00000, Lambda_late under (S) = V_+ - E0 = +0.00000 (2|eps|v = 0.000 when eps > 0)
+   eps=+0.005: V_+ = +0.00500, E0 = -0.00500, Lambda_late under (S) = V_+ - E0 = +0.01000 (2|eps|v = 0.010 when eps > 0)
+   eps=+0.020: V_+ = +0.01997, E0 = -0.02002, Lambda_late under (S) = V_+ - E0 = +0.04000 (2|eps|v = 0.040 when eps > 0)

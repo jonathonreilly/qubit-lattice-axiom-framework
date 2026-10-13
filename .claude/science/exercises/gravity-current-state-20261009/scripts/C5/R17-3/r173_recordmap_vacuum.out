@@ -1,0 +1,27 @@
+1. Exact diagonalization vs the note (T2):
+   L= 8 m=0.3: r_v mean=-0.021413851317 spread=4.0e-16  note=-0.021413851000  |{M,Gamma}|max=0e+00
+   L= 8 m=1.0: r_v mean=-0.201703227917 spread=1.8e-15  note=-0.201703228000  |{M,Gamma}|max=0e+00
+   L= 8 m=2.0: r_v mean=-0.648782512263 spread=4.9e-15  note=-0.648782512000  |{M,Gamma}|max=0e+00
+   L= 8 m=6.0: r_v mean=-2.781026669919 spread=1.7e-14  note=-2.781026670000  |{M,Gamma}|max=0e+00
+   L=12 m=1.0: r_v mean=-0.200917464424 spread=3.7e-15  note=-0.200917464424  |{M,Gamma}|max=0e+00
+2. Bloch form (same quantities): 
+   L=8 m=1.0: -(m^2/2)<(m^2+M^2)^-1/2> = -0.201703227917
+   L=12 m=1.0: -(m^2/2)<(m^2+M^2)^-1/2> = -0.200917464424
+   L=8 m=0.3: -(m^2/2)<(m^2+M^2)^-1/2> = -0.021413851317
+   L~64: <(m^2+M^2)^-1/2> at m = 1e-2, 3e-3, 1e-3: 0.455301 0.455313 0.455314
+   L~128: <(m^2+M^2)^-1/2> at m = 1e-2, 3e-3, 1e-3: 0.455322 0.455335 0.455336
+   L~256: <(m^2+M^2)^-1/2> at m = 1e-2, 3e-3, 1e-3: 0.455326 0.455341 0.455342
+   c0 ~= 0.4553 (lattice units; finite in 3D since the integrand ~ 1/|q| near the cones)
+   small-m law: r_v ~= -(c0/2) m^2 ; recorded vacuum energy moves with every mass threshold.
+3. Sea energy relative to the trace zero (chiral/particle-hole symmetric point):
+   m=0: E0/V = -(1/2)<|eps|> = -1.193801 per site
+   m=0.001: E0/V = -(1/2)<|eps|> = -1.193801 per site
+   m=0.3: E0/V = -(1/2)<|eps|> = -1.203952 per site
+   m=1: E0/V = -(1/2)<|eps|> = -1.300034 per site
+4. Physical sizes with a = l_P (scale bridge AX:189-190 is OPEN; inputs RECALLED):  rho_Lambda = 2.520e-47 GeV^4
+   electron: recorded-vacuum shift (c0/2) m^2 M_P^2 = 8.861e+30 GeV^4 = 3.52e+77 rho_Lambda (per staggered field)
+   muon    : recorded-vacuum shift (c0/2) m^2 M_P^2 = 3.789e+35 GeV^4 = 1.50e+82 rho_Lambda (per staggered field)
+   b quark : recorded-vacuum shift (c0/2) m^2 M_P^2 = 5.929e+38 GeV^4 = 2.35e+85 rho_Lambda (per staggered field)
+   W       : recorded-vacuum shift (c0/2) m^2 M_P^2 = 2.193e+41 GeV^4 = 8.70e+87 rho_Lambda (per staggered field)
+   top     : recorded-vacuum shift (c0/2) m^2 M_P^2 = 1.012e+42 GeV^4 = 4.02e+88 rho_Lambda (per staggered field)
+   trace-zero sea: |E0| M_P^4 = 2.652e+76 GeV^4 = 1.05e+123 rho_Lambda (negative)

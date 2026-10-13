@@ -1,0 +1,6 @@
+REC-vac phi0=   16: N_total=  8.41 N_accel=  7.08 (phi0/sqrt6 =  6.53) | g/H^2 median in early-mid run = -1.534e+00, range [-1.03e+02, +2.05e+01]
+REC-vac phi0=   50: N_total= 22.74 N_accel= 21.14 (phi0/sqrt6 = 20.41) | g/H^2 median in early-mid run = -1.247e+00, range [-1.83e+02, +2.05e+01]
+REC-vac phi0=  100: N_total= 43.53 N_accel= 41.64 (phi0/sqrt6 = 40.82) | g/H^2 median in early-mid run = -6.361e-01, range [-1.24e+02, +2.05e+01]
+REC-vac phi0=  150: N_total= 64.19 N_accel= 62.11 (phi0/sqrt6 = 61.24) | g/H^2 median in early-mid run = -6.093e-01, range [-6.88e+01, +2.05e+01]
+Reading: an unrecorded plateau can drive many accelerating e-folds for large phi0, but only through g != 0 at every
+instant (energy leaking from the unrecorded plateau into recorded kinetic energy): R15-1 signalling, excluded by H-g0.

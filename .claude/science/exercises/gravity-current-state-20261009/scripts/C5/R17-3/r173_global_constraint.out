@@ -1,0 +1,44 @@
+B1  Early-time expansion on the two branches (C = V_late on each):
+   u=0.0: 3H^2(no decay) = 1.000000  3H^2(decay later) = 1.020000  difference = 0.020000 (= Delta V = 0.020) ; relative 2.000e-02
+   u=1.0: 3H^2(no decay) = 0.018316  3H^2(decay later) = 0.038316  difference = 0.020000 (= Delta V = 0.020) ; relative 1.092e+00
+   u=1.9: 3H^2(no decay) = 0.000500  3H^2(decay later) = 0.020500  difference = 0.020000 (= Delta V = 0.020) ; relative 3.996e+01
+B2  Final-state rule C = V_late with a decay trigger at u1 = 2.0:
+   trigger type 1 (decay iff H^2(u1) < Hs^2); H^2(u1) = 0.00011 if C=V_hi, 0.00678 if C=V_lo:
+      Hs^2=0.0000: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0025: consistent histories: 0 []
+      Hs^2=0.0050: consistent histories: 0 []
+      Hs^2=0.0075: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0100: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0125: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0150: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0175: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0200: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0225: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0250: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0275: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0300: consistent histories: 1 ['C=V_lo']
+   trigger type 2 (decay iff H^2(u1) > Hs^2); H^2(u1) = 0.00011 if C=V_hi, 0.00678 if C=V_lo:
+      Hs^2=0.0000: consistent histories: 1 ['C=V_lo']
+      Hs^2=0.0025: consistent histories: 2 ['C=V_hi', 'C=V_lo']
+      Hs^2=0.0050: consistent histories: 2 ['C=V_hi', 'C=V_lo']
+      Hs^2=0.0075: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0100: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0125: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0150: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0175: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0200: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0225: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0250: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0275: consistent histories: 1 ['C=V_hi']
+      Hs^2=0.0300: consistent histories: 1 ['C=V_hi']
+B3  Causal running 4-volume average (vacuum part granted), matter era a ~ t^(2/3) after a step at t_tr = 1:
+   T=2e+00: C - V_late = 2.500e-03 (Delta V (t_tr/T)^3 = 2.500e-03) ; g = C'/3 = -3.750e-03 ; g/H^2 = -3.375e-02
+   T=1e+01: C - V_late = 2.000e-05 (Delta V (t_tr/T)^3 = 2.000e-05) ; g = C'/3 = -3.000e-05 ; g/H^2 = -6.750e-03
+   T=1e+02: C - V_late = 2.000e-08 (Delta V (t_tr/T)^3 = 2.000e-08) ; g = C'/3 = -3.000e-08 ; g/H^2 = -6.750e-04
+   T=1e+04: C - V_late = 2.000e-14 (Delta V (t_tr/T)^3 = 2.000e-14) ; g = C'/3 = -3.000e-14 ; g/H^2 = -6.750e-06
+   T=1e+06: C - V_late = 2.000e-20 (Delta V (t_tr/T)^3 = 2.000e-20) ; g = C'/3 = -3.000e-20 ; g/H^2 = -6.750e-08
+   -> g != 0 at every finite time after the step (signalling, R15-1); C -> V_late only as T -> infinity (final state).
+B3' Order-of-magnitude residual of the causal running average today (RECALLED a, t; 4-volume fraction ~ (a_i/a0)^3 (t_i/t0)):
+   EW       : 4-volume fraction ~ 2.3e-74 ; residual ~ 1.1e-19 rho_Lambda
+   QCD      : 4-volume fraction ~ 2.3e-59 ; residual ~ 2.3e-15 rho_Lambda
+   inflation: 4-volume fraction ~ 2.3e-138 ; residual ~ 6.0e-27 rho_Lambda

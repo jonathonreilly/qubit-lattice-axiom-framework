@@ -1,0 +1,4 @@
+AVG4 phi0=16: t_end=400.0 | N_total=4.01 N_accel=1.27 | g/H^2 in [-5.16e+03, -2.24e+01] | C/V0 end = 1.557e-06 | min R/rho_nc = 0.00102
+AVG4 phi0=12: t_end=400.0 | N_total=3.94 N_accel=1.23 | g/H^2 in [-2.89e+03, -2.08e+01] | C/V0 end = 1.630e-06 | min R/rho_nc = 0.00183
+Reading: the a^3-weighted running average relaxes C onto the plateau within ~1/(3H), so the plateau is cancelled
+(no 60 e-folds) and C' != 0 (g != 0: R15-1 signalling).  Only a reader told which w = -1 stress is the LATE one avoids this.

@@ -5904,3 +5904,19 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - The full degree-3 and boost brackets are unbuilt.
     - Strict subluminality is not necessary at the luminal boundary.
     - There is no bounded Dirac observable with an instantaneous distant response.
+- **R17-3 (Λ enforced or tuning?): worker reading TUNING.** The referee must decide whether (S) counts as an "independent exact number"; if it does not, the reading is OPEN.
+  - **Theorem T (trichotomy), in 𝒦** (g ≡ 0, Λ̃_late = 0, H-blind, H-an). C = ρ_v,late needs exactly one of:
+    - **(A)** final-state input;
+    - **(N)** an independent exact number, which is radiatively unstable (one-loop terms 1.7e31 to 6.7e53 ρ_Λ);
+    - **(S)** the number-free rule "the law's lowest state weighs nothing" (= P92). It is stipulated, and stable except when the ordering of minima flips.
+  - **Lemma U:** (S) is exactly the shift-covariant, nonnegative-weight reference.
+  - **Nothing in the four texts enforces (S):** they name no Hamiltonian, energy or ground state.
+  - **Record sourcing ("records are mass", tested as a hypothesis):**
+    - the literal form makes inflation-then-reheating impossible at g ≡ 0;
+    - Lemma M: fixed nonnegative record weights give w_eff ≤ 0, so there is no radiation era;
+    - the record map on file records the vacuum.
+  - **Global constraint:** a final-state rule is ill-posed when the vacuum pick is gravity-sensitive, and a causal average signals.
+  - **Vacuum-shift symmetry** leaves C a free modulus. Reflections fix the midpoint, not the bottom.
+  - **Prices:** P-r173a (= P92), P-r173b, P-r173c, P-r173d.
+
+  Referee running.

@@ -1,0 +1,11 @@
+REC-S    phi0=16 | N_total=68.15 N_accel=65.21 | R/rho_nc end=1 | rho_r/rho_nc end=1.000 | g/H^2 in [+0.00e+00, +0.00e+00]
+REC-vac  phi0=16 | N_total=9.37 N_accel=7.17 | R/rho_nc end=1 | rho_r/rho_nc end=1.000 | g/H^2 in [-2.29e+01, +1.73e+00]
+REC-mass phi0=16 | N_total=68.68 N_accel=64.88 | R/rho_nc end=12.71 | rho_r/rho_nc end=1.000 | g/H^2 in [-2.86e-01, +4.17e-01]
+   Lemma M check: min over steps of d(a^3 R) / max|a^3 R| = -4.63e-16 (>= -round-off means non-decreasing)
+   last 3 e-folds: w of the recorded (gravitating) source = 0.0000 ; w of the true content = 0.3333
+   R/rho_nc at 1 e-folds before end: 4.705
+   R/rho_nc at 2 e-folds before end: 2.285
+   R/rho_nc at 3 e-folds before end: 1.835
+Reading: REC-vac reproduces R16-6 sec 4.2 (an unrecorded plateau does not inflate);
+REC-mass inflates (records form on new sites) but cannot follow reheating: its source stays dust-like (w_R ~ 0)
+while the true content is radiation (w = 1/3); a^3 R never falls, so no w > 0 era exists for it (Lemma M).

@@ -6014,3 +6014,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - vacuum-shift symmetry does not select the zero.
   - **The number-free rule C = E₀[H]** tracks radiative corrections by definition. It is an added source/action principle, not forced by the four axioms, and not "an independent exact number". So the result is OPEN, not TUNING.
   - **Consequence for owner Q1:** "the lowest state of the law weighs nothing" is a genuine, consistent, number-free principle that would have to be added. It is not a disguised tuning (this narrows vR16-6). It is still unforced by the axiom texts.
+
+### C5 Round 17, item 7 (pre-registered 00:49Z, before launch)
+
+**R17-7. If "the law's lowest state weighs nothing" (C = E₀[H]) is added as a principle, what does it predict, and does it survive?**
+- **Plain question.** R17-3's referee rules that C = E₀[H] is a consistent, number-free source/action principle. It tracks radiative shifts by definition. It is not forced by the four axiom texts, and it is not a disguised tuning. If Jon were to add it:
+  - What does it predict for today's acceleration? Under it, a constant Λ is zero, so the observed acceleration must be content above the ground state.
+  - Does it survive the grid's own zero-point (P70: w ≥ 0 on the fixed grid; R11-3)?
+  - Does it survive SM vacuum metastability (P93)?
+  - Does it survive the record/permanence structure (AX:79-83)?
+  - Is it covariant beyond homogeneity (R13-3, R15-1)?
+- **Setting.**
+  - R16-6/R17-3's homogeneous equations, plus linear perturbations.
+  - The grid zero-point per R11-3.
+  - The SM effective potential (RECALLED, labelled).
+  - DESI DR2 (fetched, untrusted, or RECALLED).
+  - Excluded: active compensation (R15-1 FAIL); 𝓡⁺ readers.
+- **Prior art (count once):** R17-3 and its verdict, R16-6 and its verdict (Theorem Z, NA), R11-3, R13-3, R15-1, R15-4 (DESI phantom), Lemma PT, and the owner's records-are-mass thought (as a hypothesis only).
+- **Probes.**
+  - (a) Late universe. If E₀ weighs nothing, what must the dark energy be (w(z), and whether it is phantom)? Compare with DESI DR2. Name any prediction that distinguishes this from ΛCDM.
+  - (b) Grid zero-point. Does E₀ include the lattice zero-point (w ≥ 0 per R11-3)? If so, is the residual exactly zero, or w ≥ 0 matter-like?
+  - (c) Metastability. If our vacuum is not E₀, what is Λ̃ = κ(V_EW − E₀)? Is there a version, "lowest state of the current sector", that avoids it without branching (P94) or acausality?
+  - (d) Inhomogeneous and covariant form. Write C = E₀ as a local covariant statement, or show it requires a global quantity. Then check it against R15-1's signalling criterion.
+  - (e) Prices.
+- **FIXED readings.**
+  - **VIABLE-PRINCIPLE:** (a)–(d) are all consistent with observation, with a covariant, non-signalling form, checked.
+  - **EXCLUDED-PRINCIPLE:** a refereed demonstration that the principle contradicts an observation, or forces signalling or acausality in every covariant form.
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN, leaning towards three conditions:
+  - (b) needs E₀ to include the grid zero-point exactly;
+  - (c) is a real problem unless the SM is stabilized;
+  - (d) needs a global quantity, though possibly a non-signalling one (a constant).

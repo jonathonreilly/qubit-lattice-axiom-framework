@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-13T06:17:35.796394+00:00",
+  "original_source_sha256": "92f7f5873e6697a7b87804550947adcc07fd444b8acee7993b86c332fe2d8fc2",
+  "corrected_source_sha256": "c34e2237062f95310232050f2a5926b088a6ca080287a55e97887d05c8facab6",
+  "demonstrated_findings": [
+    "Source-check basename collision",
+    "Stored old-origin 24aR changed to12aR passes all1406 old assertions",
+    "Stored tensor-G ratio inverted passes all1406 old assertions"
+  ],
+  "correction": [
+    "Full paths and explicit unique-name assertion",
+    "Direct derivative of physical loop energy in canonical SI energy field verifies stored calibrated mass",
+    "Independent action Weyl coefficient and reciprocity verify stored tensor-G and Ricci values"
+  ],
+  "scientific_equations_and_output_expressions": "Unchanged; new assertions only. Original run/reviewer failures/mutants retained.",
+  "new_controls_expected": 256,
+  "empirical_role": "No new observation, fit or constraint."
+}

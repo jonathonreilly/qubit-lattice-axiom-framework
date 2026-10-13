@@ -1,0 +1,187 @@
+{
+  "checked_at": "2026-10-13T06:10:51.314592+00:00",
+  "parent": "/root",
+  "review_receipt": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/FINAL_RECEIPT_v1.json",
+  "review_receipt_sha256": "4b03df14449628896d83dd4b25d353865caeeb07bfed3b84eaa07f55fca18f84",
+  "full_report_and_implementation_read": true,
+  "scope": "Handwritten claims only; implementation review separate and active. SI independent illustration has its own exposed rounded inputs.",
+  "counts": {
+    "pass": 831,
+    "fail": 0,
+    "rerun": false
+  },
+  "verified_path_count": 34,
+  "verified_paths": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/HAND_DERIVATION_v1.md",
+      "sha256": "0ee11ac89ffeda0e187de84f439a0c5e44576090318ffac24ef5a2eade69fd94",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/matter_vacuum_HAND_DERIVATION_v1.md",
+      "sha256": "0ee11ac89ffeda0e187de84f439a0c5e44576090318ffac24ef5a2eade69fd94",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/PROTOCOL_v1.json",
+      "sha256": "d034e6c6e5a7e0ae5ae5bc1fbb44a9c44077b1842b4deb95174b83b25218d461",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/matter_vacuum_PROTOCOL_v1.json",
+      "sha256": "d034e6c6e5a7e0ae5ae5bc1fbb44a9c44077b1842b4deb95174b83b25218d461",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/analytic_HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/Burgess_2013_v1.pdf",
+      "sha256": "ca8d47a095e275ca1e8656cfbe60c219ec28ac2adb69a7d22c777e5afe7628c1",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/Burgess_2013_v1.pdf",
+      "sha256": "ca8d47a095e275ca1e8656cfbe60c219ec28ac2adb69a7d22c777e5afe7628c1",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/NIST_CODATA_2022.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/SOURCE_RECOVERY_v1.json",
+      "sha256": "6ee5fc51620c80a12a136b42107434cc391e6297f94a9a49f9f4102db543b6f2",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/matter_primary_SOURCE_RECOVERY_v1.json",
+      "sha256": "6ee5fc51620c80a12a136b42107434cc391e6297f94a9a49f9f4102db543b6f2",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/Burgess_download_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/Burgess_download_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/HAND_DERIVATION_v2.md",
+      "sha256": "0c7b3464d46e9c75e8255fff601154d8712bcc6cf0596092b5fdda514a268994",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/matter_vacuum_HAND_DERIVATION_v2.md",
+      "sha256": "0c7b3464d46e9c75e8255fff601154d8712bcc6cf0596092b5fdda514a268994",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/TENSOR_AND_ACTION_SCOPE_CORRECTION_v2.json",
+      "sha256": "e37dc793c6add525eb95a70a44aa9d01f9e13a2cd8a4836beb5b9be4758e5d56",
+      "role": "frozen_original_or_current_source"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/snapshots/matter_vacuum_TENSOR_AND_ACTION_SCOPE_CORRECTION_v2.json",
+      "sha256": "e37dc793c6add525eb95a70a44aa9d01f9e13a2cd8a4836beb5b9be4758e5d56",
+      "role": "exact_recovery_snapshot"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/AFFECTED_SOURCE_FREEZE_v2.json",
+      "sha256": "d696a9fb036a2d907423c9be88590d2608d1d9cce734f773471f9c9af9e12f6d",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/COMMUNICATION_INTERRUPTION_v1.json",
+      "sha256": "67b83727ec484d3ea6eb7d0f4233fe52251e3b83d64bf80df98455aa9ec74365",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/EDITORIAL_CORRECTION_v1.json",
+      "sha256": "328a74533a556030da683c25ded51453eb003784a249ac7408035262577ea567",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/EXECUTION_v1.json",
+      "sha256": "2cdc077652132692d08e30b5bfa587ecbe1b558311e55770342837e4f5e7fe3c",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/FINDINGS_AND_SCOPE_v1.json",
+      "sha256": "e1c1d8b697c3b647e7f24bbcf5c550e0123c1ee4be2ee6edbd8c5ba33bfd595d",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/INDEPENDENT_CONTROLS_v1.json",
+      "sha256": "f6c34076a4d11db4e620540ee59e0692cdffd1e6080e085b95c7364ca26c9125",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/INDEPENDENT_MATH_REVIEW_v1.md",
+      "sha256": "a0ffba7591327de8a796232cbaa72da108239434a4f392aa43317c83779f4e79",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/LOCAL_ONLY_PRIMARY_RECOVERY_v1.json",
+      "sha256": "c5309ac3b419aa66a4cd805ce35809ea9c1ff73bb0a7430be4f1bd0422c9eb8b",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/PRE_EXECUTION_PLAN_v1.json",
+      "sha256": "f1d1ae98e2576f3f67ccef84efa07e040eefa268e81dd0e921899fc5dd56ee6d",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/PRE_FINAL_REPORT_DRAFT_v1.md",
+      "sha256": "4561f7c5a385379b6aab937ebf4f5dbc3cd0290bba9e76bdf1a76f5288ba0592",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/READING_LEDGER_v1.json",
+      "sha256": "59b99a6eb418d969aadef62533dd22bbc23cab5f5a0e186da59eb25f1d8bedd1",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/REVIEWED_v1_to_v2.diff",
+      "sha256": "f3af7c2a855982e93e2f3e5a42ee8a9422c84c3cf834eb9d8a8777027184e674",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/SOURCE_FREEZE_v1.json",
+      "sha256": "5865f07909cf0522c0d749ffe61aa2ff34f9d7f86d24e10d2a5b9e517dc55080",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/derive_matter_vacuum_v1.py",
+      "sha256": "b3bbf23247c04dacbe232a9ca6f603e60d35943ed406dc0c97fe63cf137a44e0",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/execution_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "reviewer_artifact"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/independent_math_review/execution_v1.stdout.txt",
+      "sha256": "1266a42cb394b11b9723e21f34c40698c2bb537e7b735d08516af6c0728c90bc",
+      "role": "reviewer_artifact"
+    }
+  ],
+  "disposition": "Qualified v2 handwritten claims accepted as independently checked; no audit or empirical acceptance."
+}

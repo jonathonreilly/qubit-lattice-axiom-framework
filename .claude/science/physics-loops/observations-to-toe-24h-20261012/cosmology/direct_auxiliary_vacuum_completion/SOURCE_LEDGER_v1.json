@@ -1,0 +1,34 @@
+{
+  "primary": [
+    {
+      "title": "A Manifestly Local Theory of Vacuum Energy Sequestering",
+      "authors": "Kaloper, Padilla, Stefanyszyn, Zahariade",
+      "version": "arXiv:1505.01492v2",
+      "url": "https://arxiv.org/abs/1505.01492",
+      "pdf_url": "https://arxiv.org/pdf/1505.01492v2",
+      "local_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/matter_vacuum/Kaloper_et_al_2016_v2.pdf",
+      "sha256": "4a4f9dfab05e8fa89df3b441b273e1199e53aff55ec2f042e6364ec1df396540",
+      "bytes": 128906,
+      "read_scope": "Parent read main paper pages0-7 including Eq.7-10, footnote4 and subsequent radiative/boundary discussion. Independent handwritten checker read same primary.",
+      "role": "Motivation/context only; current action and narrower solution-map claim independently derived.",
+      "publication_policy": "Full copyrighted PDF remains local recovery only; cite URL/version/hash."
+    }
+  ],
+  "inherited_derivations": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_analytic_fluid_completion/HAND_DERIVATION_v2.md",
+      "sha256": "322a932eef3ede5de4d963aae2c623693d12a5942828f971335cc7a6c03ef7d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_matter_vacuum_response/HAND_DERIVATION_v2.md",
+      "sha256": "0c7b3464d46e9c75e8255fff601154d8712bcc6cf0596092b5fdda514a268994"
+    }
+  ],
+  "known_imports": [
+    "Positive analytic K,V,A and positive a,nu,H_v",
+    "Empirically supplied Planck coefficient q",
+    "Exposed dimensionless cosmological benchmark",
+    "New noncompact forms, fixed flux sector and regulated future boundary ratio"
+  ],
+  "independent_observation_tests": []
+}

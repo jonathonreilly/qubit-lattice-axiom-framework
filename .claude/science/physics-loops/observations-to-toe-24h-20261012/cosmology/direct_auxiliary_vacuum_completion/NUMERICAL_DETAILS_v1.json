@@ -1,0 +1,15 @@
+{
+  "mpmath_digits": 90,
+  "symbolic": "SymPy exact action/trace/stationarity/physical-clock identities",
+  "quadrature": "Gauss-Legendre in N versus tanh-sinh in z=exp(N-N_end), segmented every two e-folds, independently transformed volume/dust/radiation kernels; coefficients factored for all a rows.",
+  "quadrature_relative_tolerance": "1e-60",
+  "root": "360-step bisection on monotonic intervals; independent two-variable scalar-force/curvature-flux Newton solve at neighboring ratios.",
+  "root_and_Hessian_tolerance": "1e-65",
+  "shift_tolerance": "1e-48 for cancellation of input shifts through 1e40 at90 digits",
+  "default_normalized_tolerance": "1e-55",
+  "normalization": "abs(actual-expected)/max(1,abs(expected)); quadrature comparison uses ratio to preserve tiny integrals.",
+  "finite_epsilon_tolerance": "2*abs(epsilon) for secant slope compared with derivative at zero, separately exact symbolic and high-precision derivative controls.",
+  "late_limit_at_N20": "0 < B/H_v^2 - 3 < 1e-22",
+  "negative_controls": "Fixed-Lambda shift changes potential; nonconstant shift violates form equation; finite flux exceeds future ratio; additional constant vacua retained with Hessian signature. Independent implementation mutations requested after first run.",
+  "frozen_before_execution": true
+}

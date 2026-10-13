@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-13T06:47:53.213226+00:00",
+  "source_v1_sha256": "bed27c87d143cd4c24cdb7477b2cc3e6abde23b3499e5a226810aa5acfbf163b",
+  "source_v2_sha256": "aaeafe7c00dc221896a41c75b2fe56c8fc643e5401dd5d8ea09a1d6b5ff6ee17",
+  "reason": "Independent R1 root completeness and R2 serialized-output integrity: four actual source mutations passed v1. All original numerical outputs were correct.",
+  "scope": "Only add post-serialization controls, source hash identity, and result schema version. Preserve all original science routines, inputs, tolerances, outputs, and failed mutations.",
+  "census_proof": "For t>1, L=3(expm1(4t))/(t(t-1)); derivative sign is g=4t^2-6t+1+(2t-1)exp(-4t). g prime=(8t-6)(1-exp(-4t))>0, g(1)<0. Therefore one minimum, 0/2 nonzero roots below/above its value. Frozen grid excludes the double-root threshold; explicit guard verifies this.",
+  "output_controls": "Read final records; scalar force, full potential/Friedmann and physical clock, tensor coefficient, canonical Hessian, finite integrated trace, tiny standalone flux excess, and constant-shift residual.",
+  "tolerances": "Reuse 1e-65 equation, 1e-55 relative, 1e-48 extreme-shift tolerances; no original tolerance changed.",
+  "requested_affected_review": "Freshly frozen four v1 surviving source mutations only, exact unchanged scientific output verification; reuse valid original independent positive calculation."
+}

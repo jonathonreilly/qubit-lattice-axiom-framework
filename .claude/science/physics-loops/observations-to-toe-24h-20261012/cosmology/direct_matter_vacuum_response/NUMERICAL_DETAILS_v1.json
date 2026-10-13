@@ -1,0 +1,20 @@
+{
+  "created_before_first_execution": true,
+  "source_preservation": "Hand v1 and reviewed wording correction v2 remain separate; no scientific equation changed.",
+  "numerical_notes": [
+    "CODATA electron mass-energy value is a correlated rounding cross-check with absolute allowance 5e-25 J; not independent data.",
+    "G_N uncertainty endpoints rescale exposed Omega_gamma by G/G0 at fixed photons; do not treat those inputs as independent.",
+    "All other normalized identities use 80 digits and 1e-60 tolerance; root cross-check 1e-55.",
+    "Eigenmasses refer to scalar Hessian over K in Einstein proper-time normalization. Tensor G ratio is distinct from Ricci coefficient and Cavendish response.",
+    "No induced-curvature numerical coefficient or higher-derivative dynamics is supplied."
+  ],
+  "expected_families": [
+    "source identity and exact recovery",
+    "symbolic determinant/normalization/vacuum/energy/curvature",
+    "SI calibration scale",
+    "scheme and whole-operator comparison",
+    "84 positive-residual vacuum rows",
+    "explicit curvature boundary"
+  ],
+  "independent_empirical_tests": []
+}

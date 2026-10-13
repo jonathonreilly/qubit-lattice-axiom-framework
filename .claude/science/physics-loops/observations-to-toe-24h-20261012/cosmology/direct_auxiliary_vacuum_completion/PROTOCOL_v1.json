@@ -1,0 +1,61 @@
+{
+  "schema": "direct_auxiliary_vacuum_completion_protocol_v1",
+  "author": "parent /root",
+  "status": "conditional-support",
+  "trace_class": "frontier_discovery",
+  "new_assumptions": [
+    "Real noncompact auxiliary three-forms",
+    "q>0 and quadratic q topological coupling, linear Lambda coupling",
+    "Fixed flux sector with Lambda not independently fixed at boundary",
+    "Matter-only Jordan-covariant constant vacuum operator; induced derivatives excluded",
+    "Regulated FLRW future flux ratio supplied as a boundary condition"
+  ],
+  "imported_inputs": [
+    "Analytic K,V,A and supplied H_v/Planck scale",
+    "Earlier exposed m,H0,Omega used only for illustrative finite-slab quadrature"
+  ],
+  "tests": [
+    "symbolic auxiliary equations, action shift and trace/flux relation",
+    "tracking L0 from full curvature and scalar energy",
+    "two independent finite-volume quadratures and late ratio convergence",
+    "vacuum root equation and positive-Hessian uniqueness, preserving nonzero roots when they exist",
+    "first-order physical Hubble and tensor-G flux sensitivity with independent root calculations",
+    "nonconstant delta(x) control and fixed-Lambda control remain distinct from constant-shift map"
+  ],
+  "parameter_grid": {
+    "a": [
+      "1e-6",
+      "1/2499",
+      "0.01",
+      "1"
+    ],
+    "nu": [
+      "0.25",
+      "1",
+      "4"
+    ],
+    "future_N": [
+      0,
+      2,
+      4,
+      8,
+      12,
+      20
+    ],
+    "epsilon": [
+      "-0.001",
+      "-0.00001",
+      "0.00001",
+      "0.001"
+    ],
+    "vacuum_shifts": [
+      "-1e40",
+      "-1",
+      "0",
+      "1",
+      "1e40"
+    ]
+  },
+  "independent_observation_tests": [],
+  "deadline_at": "2026-10-13T16:53:00.057432+00:00"
+}

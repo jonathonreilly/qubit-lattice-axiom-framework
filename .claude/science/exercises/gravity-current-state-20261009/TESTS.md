@@ -8057,3 +8057,39 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Correction to R19-8:** the 2–5% was the sink's density parameter, not the change in H.
   - **Prices:** P-r1918a (lift L0), P-r1918b (L1-H).
   - Not a no-go; a referee is optional.
+
+### C5 Round 19, item 20 (pre-registered 06:07Z, before launch)
+
+**R19-20. Audit: do the source clauses — (S) or (S\*), (d-i) or (S_ad), N_red, W1, (S\*\*) — reduce to one statement, "the vacuum gravitates only through its Lorentz-invariant renormalized form"? If so, is the grid then predicting anything about gravity, or only stipulating GR?**
+- **Plain question.** C5's source-side results move each grid defect of the vacuum into a number-free clause about what gravitates:
+  - the constant (S);
+  - the enthalpy ((d-i), or (S_ad) on V1);
+  - the gauge-dependent zero point (W1);
+  - the shear (S\*);
+  - possibly the O(q²) rows (S\*\*, R19-19, running).
+
+  Is there one clause that implies them all? A candidate: "the gravitating source is ⟨T⟩ minus the lowest state's response through O(q²), replaced by its Lorentz-invariant form."
+
+  If so:
+  - (i) Is that clause stating that the vacuum's gravitational effect is exactly GR's, i.e. imposing relativity at the source rather than deriving it?
+  - (ii) What observable content, if any, distinguishes "grid + clause" from "GR + SM with a Lorentz-invariant regulator"? Candidates: O(q⁴) dispersion, the charge-block counterterms, the W7 anomaly, relic corner states, the E1/E2 noise.
+  - (iii) What is the minimal honest statement for the owner?
+- **Setting.**
+  - The refereed and worker records from R16 to R19.
+  - S26 §4 and the price ledger.
+  - The axiom texts (AX:85-90, 116-130, 182-190).
+- **Prior art (count once):**
+  - all R17-3 … R19-19 source-side items and their verdicts;
+  - SUMMARY §17 (the root obstruction);
+  - C4 V3 (tautology precedent);
+  - R16-6 / Lemma PT (counterterm precedent).
+- **Removed hypothesis:** clauses judged one at a time.
+- **Probes.**
+  - (a) Write the single clause, and prove or disprove that it implies each existing clause.
+  - (b) List every observable the grid still predicts beyond GR + SM with the clause, with sizes at a = ℓ_P.
+  - (c) The owner-facing statement.
+- **FIXED readings.**
+  - **ONE-CLAUSE:** a single stated clause implies all the listed source clauses, checked. Report its remaining predictions.
+  - **IRREDUCIBLE:** a demonstration that at least two of the clauses are logically independent, with the reason stated.
+  - **OPEN:** otherwise.
+- **Expectation.** ONE-CLAUSE. The clause is "renormalize the vacuum's gravitational response to its Lorentz-invariant form through O(q²)". The grid's gravitational predictions then reduce to the residual list in (b): charge-block tunings, W7 edge anomalies, relics, O(q⁴) dispersion and set A noise. That is an honest finding the owner needs.

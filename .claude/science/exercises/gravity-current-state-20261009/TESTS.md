@@ -6388,3 +6388,191 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **P-K6′:** any shape solution of the K₆ row needs a finite fraction of slow-slope structure.
 
   Referee running.
+
+### C5 Round 18 (pre-registered 01:52Z from S23 §7 (agents/C5_S23_synthesis.md), text fixed before any run; R18-1, R18-2 launched now; R18-3 after R17-12's worker reading (dropped if FORCED-VM); R18-4 if time allows)
+
+
+**Rules (as rounds 2–17, `TESTS:5688-5706`).**
+- Probes on Opus 5.5 at xhigh. Every FAIL, EXCLUDED, OBSTRUCTED or no-go goes to codex gpt-5.6-sol (xhigh) before it is recorded.
+- Prices are named, never adopted. Prior art is grepped first and counted once. Hypotheses come before titles. Numbers from memory are labelled RECALLED.
+- Every law states its whole-zone v_max, gauge fields included.
+- Every count states its counterterm basis.
+- Every Λ mechanism says what is enforced and what is stipulated.
+- Controls must measure the same observable. Every finite-slot claim names its readout bridge. Forks list their exclusions. Memory claims say generic-GR or model-specific. Expectations name the removed hypothesis.
+- **New (from round-17 verdicts):**
+  - **Locality of vertices.** Every TT or stress vertex states whether it satisfies the C₂-covariance zero of Lemma M (`vR17-4:7`), or is labelled non-local.
+  - **Number-free ≠ forced.** A Λ result distinguishes "no number" from "forced by the four texts" (`vR17-3:17`).
+  - **Bounded classes for spectra.** "Gapped" means a uniform spectral gap, multiparticle continua included (`vR17-6:13`).
+  - **Certificates.** Any CONFLICT claimed from a relaxation states its enclosure method in advance, as R17-10 did (`SP/R17-10/METHOD.md`).
+
+**Timing.** Each item is sized for about 75 minutes of worker time. The campaign starts no new probes after 09:57Z and ends at 10:57Z.
+
+**Overlap check.**
+- R17-9 covers the vector TT vertex and the SM-count solve.
+- R17-12 covers the vector placement (VU vs VM), including vector Lemma-M covariance.
+- R17-13 covers the Wilson-Dirac μ_T2 row.
+- **No R18 item drafts R17-12's or R17-13's questions.**
+- R18-3 covers only two things those items leave out: the Dirac TT vertex's own locality (a Lemma-M test for V0), and a certificate for R17-9's VU conflict. It launches only if R17-12 does not return FORCED-VM.
+- R17-10 covers the K₆ and μ_E certificates for scalars on U; no R18 item repeats them.
+- R17-11 covers bridge (d-i). R18-2 covers P93 (vacuum stability), a different condition of (S).
+- R17-6 covers representation theory and Theorems G/Z. R18-1 covers the static pinch-point test and Theorem Z's k⁰ gap, both left open by `vR17-6:19`.
+
+**Priority.**
+1. R18-1 (graviton) and R18-2 (Λ), in parallel.
+2. R18-3 (SM content on one cone), after R17-12's worker reading.
+3. R18-4 (W15) only if time allows, after nothing else is pending.
+
+---
+
+**R18-1. The Z₂ window's signature: does any local Z₂ tensor ensemble with suppressed γ-charges show a pinch point, and does Theorem Z's k⁰ gap close?**
+
+- **Plain question.**
+  - R17-1 (refereed WINDOW): reading the qubit as a Z₂ clock escapes the k⁴ f-sum bound.
+  - R17-6 (refereed OPEN; OBSTRUCTED in two bounded classes): two gapless helicity-±2 branches with strict V/S gaps need a pinch point in the readout's static response, unless the f-sum is in the k⁰ finite-response gap.
+  - Identity V says the pinch point needs the mod-2 law's even γ-charges (Gn = 2γ) suppressed at long wavelength faster than k². Lemma R says states uniform over the full coset have white-noise labels (`vR17-6:15`).
+  - Two questions:
+    1. Does any local, cubic-covariant Z₂ ensemble that penalizes γ-charges have a pinch point at nonzero γ-density, or only in the exact integer-law limit (which R16-7/R16-11 already cap)?
+    2. Can Theorem Z be extended to a k⁰ f-sum with a finite TT response?
+- **Setting.**
+  - N0914's slots, mod-2 law.
+  - Rokhsar–Kivelson-type states with amplitude ∝ exp(−βU Σ_x |γ(x)|²/2). Their equal-time correlations equal a classical ensemble. This is an RK identity, stated as the readout bridge for "static response" here, not a general one.
+  - Moves: R17-1's minimal Z₂-invariant cube patterns, which preserve Gn mod 2. Metropolis on L = 6–12 periodic, plus L = 16 if time allows.
+  - Observables: the E⊕T₂ structure factors S_TT, S_V, S_S, and the γ structure factor, along the axis, face and body directions.
+  - βU ∈ {0, 0.5, 1, 2, 4} plus the βU = ∞ sector (Gn = 0, 0/1 occupations).
+  - Excluded: spectra and dynamics; integer-law lifts; non-local moves; degenerate or symmetry-broken grounds (`vR17-6:19`).
+- **Prior art (count once):**
+  - R17-6 and vR17-6 (Theorems G, Z, Z′ corrected; Identity V; Lemma R narrowed);
+  - R17-1 and vR17-1;
+  - R16-11 and vR16-11 (the dressing cap);
+  - R16-7; N0914's stencil;
+  - classical Coulomb-phase pinch points with charge fugacity (Henley; Castelnovo–Moessner–Sondhi; comparators, RECALLED);
+  - rank-2 U(1) four-fold pinch points (Prem–Vijay–Chamon; Pretko; comparators, RECALLED).
+- **Removed hypothesis.** Lemma R's uniform (full-coset) weight. Kept: locality, finite fugacity, the mod-2 law.
+- **Probes.**
+  - (a) Build the cube-flip MC. Check detailed balance, and ergodicity within the mod-2 sector, by exact enumeration at L = 2–3 where feasible.
+  - (b) At each βU, measure the three readout structure factors and S_γ.
+    - A pinch point means the k → 0 limit depends on direction, with the width set by finite size.
+    - Report the fitted width ξ⁻¹(βU) and its scaling with L.
+  - (c) Is ξ(βU) finite at every finite βU (screening by γ-charges), or is there a βU_c beyond which ξ = ∞ at nonzero γ-density?
+  - (d) Analytic. Extend Theorem Z to the k⁰ f-sum class with a finite TT response (e.g. through m₃ or the Goldstone counting), or exhibit the obstruction to extension.
+  - (e) Prices.
+- **FIXED readings.**
+  - For (a)–(c):
+    - **PINCH-PRESENT:** a finite-βU ensemble with nonzero γ-density whose readout has a pinch point, consistent with ξ = ∞ under finite-size scaling to the largest L run. Checked. This is evidence for the window at the static level, not production.
+    - **SCREENED:** at every finite βU tested, ξ(βU) is finite and fitted; only βU = ∞ is sharp. Checked. This is evidence that the static window needs exact emergence, which is P96 at a phase boundary.
+    - **OPEN:** otherwise.
+  - For (d):
+    - **GAP-CLOSED:** a refereed extension of Theorem Z to the stated k⁰ finite-response class;
+    - **OPEN:** otherwise.
+- **Expectation.** SCREENED, and (d) OPEN.
+  - Classical charge fugacity screens Coulomb-phase pinch points into Lorentzians of width ~ (γ-density)^{1/2} (comparator, RECALLED).
+  - The removed hypothesis is uniform weighting, but finite fugacity keeps charges at nonzero density.
+  - If SCREENED holds, the Z₂ window narrows to an exact-emergence critical point or a first-order boundary.
+  - The likeliest failure is an MC ergodicity problem in the βU = ∞ sector.
+
+---
+
+**R18-2. (S)'s sharpest prediction: must the electroweak vacuum be the true minimum, and is that consistent with the measured inputs?**
+
+- **Plain question.**
+  - vR17-3 rules that (S), "the law's lowest state weighs nothing", is a consistent number-free principle.
+  - vR17-7 finds it conditionally viable, but only with P93: our vacuum must be the global minimum. SM-only extrapolation would leave 1e112–3e120 ρ_Λ (`vR17-7:37-40`). That turns (S) into a test of particle physics.
+  - Within the SM, with measured m_t, m_h and α_s (RECALLED, labelled), is the electroweak vacuum absolutely stable within stated uncertainties?
+  - If not, can the lattice at a = ℓ_P stabilize it?
+  - If not, what minimal content stabilizes it, and is that a tuning under rule `TESTS:5700` or a content choice?
+- **Setting.**
+  - Two-loop SM RGEs for λ, y_t and g₁₋₃ (three-loop results as RECALLED comparators). MS-bar matching at m_t with stated threshold corrections (RECALLED, labelled).
+  - Effective potential at the stated loop order; instability scale and λ_min.
+  - Lattice terms: Planck-suppressed φ⁶/Λ² with Λ = 1/a = M_P, and the box law's dispersion near k ~ 1/a.
+  - One stabilizer family: a real singlet with a Higgs portal (tree-level threshold mechanism; RECALLED).
+  - (S′-start) as the comparison.
+  - Excluded: anthropic selection; landscape branching (P94); active compensation.
+- **Prior art (count once):**
+  - R17-7 and vR17-7; R17-3 and vR17-3; P93 and P125;
+  - Buttazzo et al. 2013 and Degrassi et al. 2012 (comparators, RECALLED; cited in `vR17-7:40`);
+  - the singlet-threshold stabilization literature (comparator, RECALLED).
+- **Removed hypothesis.** R17-7's SM-only content.
+- **Probes.**
+  - (a) Reproduce λ(μ), the instability scale and the absolute-stability bound on m_t at the stated order. Compare with the RECALLED published bounds.
+  - (b) With the RECALLED m_t average and uncertainty, including a labelled pole-mass ambiguity, state the tension in σ.
+  - (c) Can φ⁶/M_P² or the lattice's own dispersion make the electroweak vacuum the global minimum? State the field values involved, against the instability scale.
+  - (d) The minimal singlet window (m_S, λ_HS, λ_S) that gives absolute stability up to 1/a, while keeping (S)'s Λ̃ ≥ 0 and no deeper minimum. Say whether any parameter must be held to better than O(1) (a tuning) or not (a content choice).
+  - (e) Prices and counting convention.
+- **FIXED readings.**
+  - **SM-STABLE:** SM-only absolute stability within 2σ of the stated inputs. Checked. (S) then adds no particle-physics price.
+  - **NEEDS-STABILIZER:** SM-only metastability beyond 2σ, plus an explicit stabilizer, content stated, that makes the electroweak vacuum the global minimum below 1/a. Checked.
+  - **LATTICE-STABILIZES:** a lattice-scale term at a = ℓ_P alone suffices. Checked.
+  - **OPEN:** otherwise. An EXCLUDED-for-(S) reading would need a refereed proof that no stabilizer in a stated class works.
+- **Expectation.** NEEDS-STABILIZER.
+  - SM-only metastability is a 2–3σ tension (RECALLED).
+  - Lattice-scale operators cannot act at the 1e10–1e11 GeV instability scale.
+  - A singlet threshold stabilizes over an O(1) window, so it is content, not a tuning.
+  - The likeliest failure is that RECALLED inputs make (b) inconclusive at 2σ, which gives OPEN.
+
+---
+
+**R18-3. SM content on one cone under the local placement: is the Dirac TT vertex local, and can R17-9's VU conflict be certified?** *(Launch after R17-12's worker reading, and only if it is not FORCED-VM. The readings are fixed now.)*
+
+- **Plain question.**
+  - R17-9 [worker] finds the outcome turns on the vector placement. At R9-9's placement (VU), two conditions are incompatible on every sampled law:
+    - the T₂g row needs Ξ_γ,T2g ≤ 6e-4 per vector;
+    - offsetting the Dirac birefringence (≥ +2.6e-3 per field, `rR16-13:200`) needs Ξ_γ,Eg − Ξ_γ,T2g ≥ 4.46e-3 (`TESTS:6270-6272`).
+  - R17-12 asks whether consistency forces VU. If it does, or if the placement is free, the in-setting answer at VU rests on samples. Two questions are left that neither R17-12 nor R17-13 asks:
+    1. Is R16-13's V0 Dirac TT amplitude itself local in Lemma M's sense? Every Dirac number since R16-13 uses it.
+    2. Can the VU conflict be certified by class bounds — a lower bound B_min on the Dirac birefringence over subluminal Wilson-Dirac edges, and an upper bound on the VU vector's Ξ_γ,Eg − Ξ_γ,T2g over subluminal photon edges — so that 22.5·B_min exceeds what 12 vectors and one Higgs edge can supply?
+- **Setting.**
+  - Dirac: separable Wilson-Dirac edges with Lemma V1 subluminality, the V0 vertex, SF strain and an ultralocal seagull.
+  - Vectors: R17-9's VU vertex (P126) on subluminal photon edges in R17-9's family, with stated regularity.
+  - Scalars: one Higgs edge on the U vertex (R17-4's class).
+  - Axial q, m ≤ 0.01, one loop, the supplied zero-point vacuum. SM counts: 4 + 22.5 + 12.
+  - Excluded: VM (R17-12's subject); μ_T2 (R17-13's subject); the M vertex; pairing; superluminal edges.
+- **Prior art (count once):**
+  - R17-9 (worker; its referee, when back);
+  - R16-13 and vR16-13 (Theorem DT, Lemma V1, V0 as a stipulation);
+  - R17-4's Lemma M and `vR17-4:7`;
+  - R16-3's IBP identity;
+  - R17-10's certification method (`SP/R17-10/METHOD.md`), as the template for any enclosure.
+- **Removed hypothesis.** Sampling: class bounds replace sampled laws. Kept: the VU placement, V0, SF.
+- **Probes.**
+  - (a) The Lemma-M test for V0. Does the Dirac T₂g pair amplitude vanish where proper C₂ᵧ covariance and periodicity require it on doubler-free Wilson edges? A proof either way.
+  - (b) A closed form for the Dirac birefringence B through Theorem DT's IBP, and a lower bound B_min on the class, or a law with B ≤ B_crit (the value that would let VU close).
+  - (c) An upper bound on the VU vector's Ξ_γ,Eg − Ξ_γ,T2g over the stated photon class, with the T₂g row's constraint imposed.
+  - (d) The certified inequality at SM counts, or an explicit point that breaks it.
+  - (e) Prices.
+- **FIXED readings.**
+  - **V0-NONLOCAL:** a proof that V0 violates the covariance zero, so the local Dirac class needs a different vertex. Checked, then refereed.
+  - **VU-CERTIFIED-CONFLICT:** a refereed certificate, with the method stated in advance, that no content in the stated class meets Ξ_Eg = Ξ_T2g = μ_E = 0 at SM counts under VU.
+  - **VU-ZERO:** an explicit SM-count law under VU, all edges subluminal and local, with Ξ_Eg = Ξ_T2g = μ_E = 0 at a common light mass. Checked.
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - (a) Undecided, with a lean to V0-NONLOCAL.
+    - The Wilson part enters through W′, which vanishes at k = π for (1 − cos k)-type terms.
+    - The kinetic part's derivative s′ need not vanish there: for sin-type edges s′(π) = −1.
+    - Whether V0's T₂g amplitude obeys the covariance zero depends on how V0 combines them. A second Lemma M is a live outcome.
+  - (b)–(d) OPEN or VU-CERTIFIED-CONFLICT for the birefringence row. The sign mechanism (H_xy = W′_xW′_y, `vR16-13:17`) is fixed, but a certified vector bound over a continuous photon family may not fit in 75 minutes.
+  - Removed hypothesis: sampling only. Kept: the vertex stipulations, which (a) tests.
+
+---
+
+**R18-4. W15's last free finite-band holes: crossing bands and merely continuous multi-shift mixing.** *(Launch only if time allows.)*
+
+- **Plain question.** vR17-8 confirms scoped no-gos for finite mixing (analytic symbols), canonical altered generators, and regular linear field-dependent generators on isolated analytic bands. It names its steelman as "an analytic crossing-band or joint mixing/field-dependent completion" (`vR17-8:35`). Does a symmetry-protected band crossing let a field-dependent generator carry rank-3 C, so that the Reeb rank bound ≤ 1 fails?
+- **Setting.**
+  - Two-band analytic Bloch Hamiltonians on T³ with a symmetry-protected crossing surface or line.
+  - Free quadratic matter, symmetric stress, projectable lapse, R9-9's N-type graviton.
+  - Field-dependent canonical generators as in R17-8, with H-RB as the redshift bridge.
+  - Excluded: interactions; non-symmetric couplings; non-projectable lapse; P64; P90.
+- **Prior art (count once):** R17-8 and vR17-8 (Lemma N, MIX-1/2, FD, Theorem W repaired); R17-5 and vR17-5; R16-5; the tame Reeb-graph facts as cited in `vR17-8:29`.
+- **Removed hypothesis.** Isolated bands.
+- **Probes.**
+  - (a) The equal-energy identity across a crossing: does the analytic-continuation step of `vR17-8:25-29` survive along the crossing branches?
+  - (b) Construct the best crossing-band candidate and test rank C, then the redshift test.
+  - (c) Prices.
+- **FIXED readings.**
+  - **ESCAPE:** an explicit crossing-band law with W2_pf, nonzero physical momentum and correct redshift. Checked.
+  - **EXCLUDED-CROSS:** a refereed no-go for the stated crossing-band class.
+  - **OPEN:** otherwise.
+- **Expectation.** EXCLUDED-CROSS for symmetry-protected crossings. The union of analytic branches still lives on T³, and the winding obstruction is topological. The main alternative is OPEN, if the branch continuation fails at the crossing set.
+
+---
+

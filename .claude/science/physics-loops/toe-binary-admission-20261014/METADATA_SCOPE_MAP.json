@@ -1,0 +1,266 @@
+{
+  "all_imported_role_locations": [
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/2/coverage_and_role",
+      "pointer": "/context_and_attribution/0/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_reconnaissance"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/3/coverage_and_role",
+      "pointer": "/context_and_attribution/1/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_reconnaissance_index"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/4/coverage_and_role",
+      "pointer": "/context_and_attribution/2/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_provisional_proof"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/7/coverage_and_role",
+      "pointer": "/context_and_attribution/3/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle279"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/8/coverage_and_role",
+      "pointer": "/context_and_attribution/4/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle240"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/9/coverage_and_role",
+      "pointer": "/context_and_attribution/5/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle244"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/10/coverage_and_role",
+      "pointer": "/context_and_attribution/6/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle870"
+    },
+    {
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/11/coverage_and_role",
+      "pointer": "/context_and_attribution/7/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle883"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/0/coverage_and_role",
+      "pointer": "/external_source_bindings/0/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "joint_author"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/1/coverage_and_role",
+      "pointer": "/external_source_bindings/1/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "joint_canonical"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/2/coverage_and_role",
+      "pointer": "/external_source_bindings/2/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_reconnaissance"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/3/coverage_and_role",
+      "pointer": "/external_source_bindings/3/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_reconnaissance_index"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/4/coverage_and_role",
+      "pointer": "/external_source_bindings/4/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_provisional_proof"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/5/coverage_and_role",
+      "pointer": "/external_source_bindings/5/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_compiler"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/6/coverage_and_role",
+      "pointer": "/external_source_bindings/6/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_checker"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/7/coverage_and_role",
+      "pointer": "/external_source_bindings/7/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle279"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/8/coverage_and_role",
+      "pointer": "/external_source_bindings/8/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle240"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/9/coverage_and_role",
+      "pointer": "/external_source_bindings/9/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle244"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/10/coverage_and_role",
+      "pointer": "/external_source_bindings/10/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle870"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/11/coverage_and_role",
+      "pointer": "/external_source_bindings/11/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle883"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/0/coverage_and_role",
+      "pointer": "/members/90/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "joint_author"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/1/coverage_and_role",
+      "pointer": "/members/91/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "joint_canonical"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/2/coverage_and_role",
+      "pointer": "/members/92/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_reconnaissance"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/3/coverage_and_role",
+      "pointer": "/members/93/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_reconnaissance_index"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/4/coverage_and_role",
+      "pointer": "/members/94/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_provisional_proof"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/5/coverage_and_role",
+      "pointer": "/members/95/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_compiler"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/6/coverage_and_role",
+      "pointer": "/members/96/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_checker"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/7/coverage_and_role",
+      "pointer": "/members/97/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle279"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/8/coverage_and_role",
+      "pointer": "/members/98/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle240"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/9/coverage_and_role",
+      "pointer": "/members/99/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle244"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/10/coverage_and_role",
+      "pointer": "/members/100/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle870"
+    },
+    {
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/11/coverage_and_role",
+      "pointer": "/members/101/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "Cycle883"
+    }
+  ],
+  "binary_author_freeze_sha256": "4b8ba76040b0d43668d1d9c9706d404a32e54ea8cde4978326571809fc68df97",
+  "binary_sealed_utc": "2026-10-14T09:59:20.361761+00:00",
+  "historical_exposure_created_utc": "2026-10-14T09:46:49.661350+00:00",
+  "historical_exposure_sha256": "48396cb732e2a0883d3c86a5e1e489b0c95916d4454dd91f08552dc9114b2f2a",
+  "neutral_acceptance_sha256": "6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe",
+  "neutral_accepted_at": "2026-10-14T09:52:23.409500+00:00",
+  "required_current_publication_metadata": "Label imported text historical_source_exposure_role with source hash/time; put actual current acceptance and nondependency in a separate current_status field. Do not export historical pending/current-read phrases as unqualified present status. Preserve original archive and stable identifiers.",
+  "scope": "Historical role quotations only; no proof/program/circuit changes or new mathematical dependency.",
+  "three_ambiguous_fields": [
+    {
+      "current_neutral_status": "Conditionally accepted at 2026-10-14T09:52:23.409500Z under 6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe. Its theorem is not a binary K-admission premise; literal helper reuse retains its separate exact scope.",
+      "file": "DEPENDENCIES.json",
+      "historical_source_pointer": "/sources/4/coverage_and_role",
+      "original_value": "Own source, prior complete writing/review; separate independent review pending. No preparation theorem needed by current proof.",
+      "pointer": "/context_and_attribution/2/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_provisional_proof"
+    },
+    {
+      "current_neutral_status": "Conditionally accepted at 2026-10-14T09:52:23.409500Z under 6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe. Its theorem is not a binary K-admission premise; literal helper reuse retains its separate exact scope.",
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/4/coverage_and_role",
+      "original_value": "Own source, prior complete writing/review; separate independent review pending. No preparation theorem needed by current proof.",
+      "pointer": "/external_source_bindings/4/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_provisional_proof"
+    },
+    {
+      "current_neutral_status": "Conditionally accepted at 2026-10-14T09:52:23.409500Z under 6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe. Its theorem is not a binary K-admission premise; literal helper reuse retains its separate exact scope.",
+      "file": "SOURCE_ARCHIVE.json",
+      "historical_source_pointer": "/sources/4/coverage_and_role",
+      "original_value": "Own source, prior complete writing/review; separate independent review pending. No preparation theorem needed by current proof.",
+      "pointer": "/members/94/role",
+      "role_scope": "Historical quotation from author SOURCE_EXPOSURE at its recorded created_utc; not current publication-stage coverage/status.",
+      "source_id": "preparation_provisional_proof"
+    }
+  ],
+  "zero_mathematical_predicates": true
+}

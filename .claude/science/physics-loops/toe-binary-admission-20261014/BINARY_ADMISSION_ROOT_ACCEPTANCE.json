@@ -1,0 +1,66 @@
+{
+  "accepted_utc": "2026-10-14T10:34:17.843934+00:00",
+  "disposition": "conditional_scientific_source_accepted_with_explicit_current_status_correction",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission/DERIVATION.md",
+    "sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3",
+    "bytes": 34075
+  },
+  "freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission/FINAL_FREEZE.json",
+    "sha256": "4b8ba76040b0d43668d1d9c9706d404a32e54ea8cde4978326571809fc68df97",
+    "bytes": 11650
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/REPORT.md",
+    "sha256": "75298722578dbd860f75097631e44dca6c91929880540154d755b71564deefe7",
+    "bytes": 27101
+  },
+  "review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/REVIEW_SEAL.json",
+    "sha256": "9efe378ad083ac07c4238acb01f27e1dca08d2e13083ee4578fcc478ddeecb62",
+    "bytes": 7728
+  },
+  "root_disposition": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/ROOT_DISPOSITION.md",
+    "sha256": "41fd2d45835d2da02ebb46ed0bbf6933bd838f695cb33ff836d8a7c4f124462c",
+    "bytes": 6902
+  },
+  "root_author_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/ROOT_SOURCE_REVIEW.md",
+    "sha256": "aaa052000ebaf9335e8c5ee40efc9d8f59b09eb0c1c52f33b856d2561da5ecd5",
+    "bytes": 8458
+  },
+  "root_author_source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/SOURCE_BINDING.json",
+    "sha256": "33373a7651a4a34232d806f0a054b53dff8619ddf858a7928656d17e9be691ae",
+    "bytes": 10670
+  },
+  "root_separate_review_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/SEPARATE_REVIEW_BINDING.json",
+    "sha256": "92e2f5ca730f322dd833af7d3425d6189ca39a4c202ea457e5e494bfcb1311f2",
+    "bytes": 1789
+  },
+  "preexposure_obligations": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/PREEXPOSURE_OBLIGATIONS.md",
+    "sha256": "63d7fc4d1a61ce9e3e0de24777c4dcd093d3a970e97acf1a2917fedb4297de16",
+    "bytes": 13662
+  },
+  "preexposure_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/PREEXPOSURE_SEAL.json",
+    "sha256": "0290c8108bbbc18a724a779a2cbdb8436d18217c3cc9b2d6e50b1e25dec5558b",
+    "bytes": 3849
+  },
+  "scope": "Literal L4 full P_K binary unnormalized reference-complete instrument under supplied clean inputs, addressed NN controls, drift removal and flag readout. No retained/native/all-volume/continuum status.",
+  "required_publication_status_correction": "Preserve frozen original; prominently correct neutral preparation status in current wrapper/README: accepted09:52:23.409500Z under6e1e1bf0 before binary seal09:59:20.361761Z. No preparation theorem imported.",
+  "mathematical_body_edits": 0,
+  "root_mathematical_reruns": 0,
+  "separate_new_runs_reviewed": 2,
+  "all_author_source_and_actual_streams_read": true,
+  "all_new_review_programs_and_actual_streams_read": true,
+  "blind_or_model_diverse_review": false,
+  "future_source_assembly_accepted": false,
+  "future_publication_driver_accepted": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": []
+}

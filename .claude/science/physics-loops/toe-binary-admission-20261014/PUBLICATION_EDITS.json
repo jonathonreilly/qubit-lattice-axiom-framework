@@ -1,0 +1,76 @@
+{
+  "frontmatter": "---\ntitle: Coherent binary K-admission with returned nearest-neighbor workspace\nclaim_id: coherent_binary_k_admission_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed literal L4 binary projector instrument, arbitrary active input and reference, supplied clean work, addressed gates after drift removal and final flag readout\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: complete emitted coherent binary instrument with both outcome coherences and returned dirty transit under supplied controls; identity runner evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\", \"openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02\", \"recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03\"]\nrunner: scripts/coherent_binary_k_admission_identity_2026_10_14.py\nnext_trace_action: separate root review and guarded integration of this publication package, then regular PR and independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "f1241efd76a28b3478caf20445a6dc0517f7ce7137bf5b30e30bb05afc21a401",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 49095,
+          "byte_start_inclusive": 15020,
+          "bytes": 34075,
+          "id": "BINARY_ADMISSION",
+          "line_end_inclusive": 393,
+          "line_start_inclusive": 108,
+          "sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_assembly/cores/BINARY_ADMISSION_DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 9126,
+      "diff_sha256": "2c3648842d4b2c2f6e2c342c196258faa9f3ef9f8e59fbbc4faadcf8ee2d8bb6",
+      "diff_stored_sha256": "f9dd48ab950b88fc3c539e3650963b4062af740103ef955432fb5411994e247a",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_assembly/cores/BINARY_ADMISSION_DERIVATION.md",
+          "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+        }
+      ],
+      "pieces_scope": "Whitespace source-identity projection only; complete reconstruction uses frontmatter, rendered wrapper and unchanged accepted remainder.",
+      "published_bytes": 49095,
+      "published_lines": 393,
+      "published_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "stored_bytes": 3391,
+      "tofile": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "5815cd123c304825285cf7c9754c888119db46c297e2e68e87ea764bda446b59",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 7430,
+    "diff_sha256": "65c0aed5a430a3f23c2bb8f1427b58127430ddb82651f8e4663a26263ba55906",
+    "diff_stored_sha256": "c5650f5235a37edcf95e58a3a426ffc55f28dba8a23b354b86e175fd6fc76ac6",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 2764,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "The new wrapper and assembly await their own root substantive review.",
+      "rendered": "The source assembly and its separate metadata-scope addendum were conditionally accepted under `f6b9c4a0a60c1938fd31b399aed49f759b05b2be6797cef175c0425ba0bfd613`, after complete root review `f6798ab14a5457f5130386fe288aa920de55d20a8daebf4ecf2467cbbec17a85`. This publication rendering and driver require separate root review.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Earlier provisional exposure records retain their actual dates.",
+      "rendered": "Earlier provisional exposure records retain their actual dates. Imported role strings, including the old pending-review and current-read phrases, are historical quotations from author exposure `48396cb732e2a0883d3c86a5e1e489b0c95916d4454dd91f08552dc9114b2f2a` at 09:46:49Z. The accepted addendum `2ab5a79a0f03046bad7053e6f1e739b021740b53fd28a8707aa6bcc2b437c581` binds all 32 copies and requires present acceptance to be recorded separately.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The sole mathematical parent is the joint interface canonical",
+      "rendered": "The sole mathematical parent is the [joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md) canonical",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Generic reversible predicates, coarse pointer dilation, copy/uncompute and returned routing are existing machinery.",
+      "rendered": "Generic reversible predicates, coarse pointer dilation, copy/uncompute and returned routing are existing machinery. The canonical [Cycle 870 returned routing](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md) and [Cycle 883 inverse and return](RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md) citations provide mechanism attribution only at their original limited exposure; their other theorem conclusions and fixture counts are not imported.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

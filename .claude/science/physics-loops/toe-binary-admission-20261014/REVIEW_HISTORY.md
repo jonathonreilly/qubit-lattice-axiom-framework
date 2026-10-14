@@ -1,0 +1,7 @@
+# Review and exposure history
+
+Complete proof 8abf93c7 was accepted under 75c3a290 after separate report 75298722 and root disposition 41fd2d45. The complete author package, separate 16-file review and all exact source/control/exposure/failure records remain. The separate review distinguishes its pre-exposure generic phase/channel control from later source-exposed literal proof and selected-stream coverage. No blind or model-diverse full-word validation is claimed.
+
+Assembly 5815cd12 was reviewed completely, and the sole current/historical role ambiguity was resolved by separately sealed addendum 2ab5a79a. Both were accepted together under f6b9c4a0 after root review f6798ab1. The accepted neutral publication pattern 886a0c67/driver 2e2d857f and acceptance 097a9a74 are procedural reuse only; they supply no binary execution authorization or science premise.
+
+The author phase-mutant assertion failure and later exact verifier repair are distinct from the assembly accepted_utc/accepted_at field failure. All raw available streams, failed source copies, 124 partial files and empty failed output are retained. Original pending and erroneous status prose remains historical. Current publication metadata labels imported role strings with their source hash/time and separates actual acceptance. New source-only attempts and any failures are frozen separately, without rewriting historical science.

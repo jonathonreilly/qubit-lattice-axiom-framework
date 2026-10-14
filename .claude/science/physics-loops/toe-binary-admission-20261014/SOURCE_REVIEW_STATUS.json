@@ -1,0 +1,143 @@
+{
+  "Jc_net_gate_cap_and_unpriced_compensation_distinguished": true,
+  "both_unnormalized_outcome_coherences_and_dirty_reference_return": true,
+  "fixed_L4_full_binary_instrument_only": true,
+  "historical_failures_and_source_exposure_preserved": true,
+  "historical_imported_roles_separated_from_current_status": true,
+  "mathematical_bodies_accepted": true,
+  "mathematical_core_edits": 0,
+  "native_measurement_photon_exports": false,
+  "new_independent_mathematical_review": false,
+  "new_publication_rendering_and_driver_review_required": true,
+  "no_go_packet_pass": false,
+  "prior_acceptances": [
+    {
+      "file": "BINARY_ADMISSION_ROOT_ACCEPTANCE.json",
+      "sha256": "75c3a29049f6d914b67b485b6fc672a5d6c1588a7fd4fa5c54fe326562065c4d",
+      "verbatim": {
+        "accepted_utc": "2026-10-14T10:34:17.843934+00:00",
+        "all_author_source_and_actual_streams_read": true,
+        "all_new_review_programs_and_actual_streams_read": true,
+        "blind_or_model_diverse_review": false,
+        "disposition": "conditional_scientific_source_accepted_with_explicit_current_status_correction",
+        "editable_prompt_files_changed": [],
+        "freeze": {
+          "bytes": 11650,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission/FINAL_FREEZE.json",
+          "sha256": "4b8ba76040b0d43668d1d9c9706d404a32e54ea8cde4978326571809fc68df97"
+        },
+        "future_publication_driver_accepted": false,
+        "future_source_assembly_accepted": false,
+        "mathematical_body_edits": 0,
+        "preexposure_obligations": {
+          "bytes": 13662,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/PREEXPOSURE_OBLIGATIONS.md",
+          "sha256": "63d7fc4d1a61ce9e3e0de24777c4dcd093d3a970e97acf1a2917fedb4297de16"
+        },
+        "preexposure_seal": {
+          "bytes": 3849,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/PREEXPOSURE_SEAL.json",
+          "sha256": "0290c8108bbbc18a724a779a2cbdb8436d18217c3cc9b2d6e50b1e25dec5558b"
+        },
+        "required_publication_status_correction": "Preserve frozen original; prominently correct neutral preparation status in current wrapper/README: accepted09:52:23.409500Z under6e1e1bf0 before binary seal09:59:20.361761Z. No preparation theorem imported.",
+        "retained_audit_status": false,
+        "review_seal": {
+          "bytes": 7728,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/REVIEW_SEAL.json",
+          "sha256": "9efe378ad083ac07c4238acb01f27e1dca08d2e13083ee4578fcc478ddeecb62"
+        },
+        "root_author_source_binding": {
+          "bytes": 10670,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/SOURCE_BINDING.json",
+          "sha256": "33373a7651a4a34232d806f0a054b53dff8619ddf858a7928656d17e9be691ae"
+        },
+        "root_author_source_review": {
+          "bytes": 8458,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/ROOT_SOURCE_REVIEW.md",
+          "sha256": "aaa052000ebaf9335e8c5ee40efc9d8f59b09eb0c1c52f33b856d2561da5ecd5"
+        },
+        "root_disposition": {
+          "bytes": 6902,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/ROOT_DISPOSITION.md",
+          "sha256": "41fd2d45835d2da02ebb46ed0bbf6933bd838f695cb33ff836d8a7c4f124462c"
+        },
+        "root_mathematical_reruns": 0,
+        "root_separate_review_binding": {
+          "bytes": 1789,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_root_review/SEPARATE_REVIEW_BINDING.json",
+          "sha256": "92e2f5ca730f322dd833af7d3425d6189ca39a4c202ea457e5e494bfcb1311f2"
+        },
+        "scope": "Literal L4 full P_K binary unnormalized reference-complete instrument under supplied clean inputs, addressed NN controls, drift removal and flag readout. No retained/native/all-volume/continuum status.",
+        "separate_new_runs_reviewed": 2,
+        "separate_review": {
+          "bytes": 27101,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_review/REPORT.md",
+          "sha256": "75298722578dbd860f75097631e44dca6c91929880540154d755b71564deefe7"
+        },
+        "source": {
+          "bytes": 34075,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission/DERIVATION.md",
+          "sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+        }
+      }
+    },
+    {
+      "file": "BINARY_ADMISSION_ASSEMBLY_ROOT_ACCEPTANCE.json",
+      "sha256": "f6b9c4a0a60c1938fd31b399aed49f759b05b2be6797cef175c0425ba0bfd613",
+      "verbatim": {
+        "accepted_utc": "2026-10-14T11:12:27.945841+00:00",
+        "candidate": {
+          "bytes": 46416,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_assembly/CANDIDATE.md",
+          "sha256": "f1241efd76a28b3478caf20445a6dc0517f7ce7137bf5b30e30bb05afc21a401"
+        },
+        "disposition": "conditional_source_assembly_accepted",
+        "editable_prompt_files_changed": [],
+        "future_publication_driver_accepted": false,
+        "mathematical_body_edits": 0,
+        "metadata_addendum": {
+          "bytes": 2791,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_metadata_addendum/FINAL_SEAL.json",
+          "sha256": "2ab5a79a0f03046bad7053e6f1e739b021740b53fd28a8707aa6bcc2b437c581"
+        },
+        "metadata_addendum_binding": {
+          "bytes": 1130,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_assembly_root_review/ADDENDUM_BINDING.json",
+          "sha256": "3ad91b2a3dc9e330c7083dfb1ecfa3ed1796927b95673137175a130983cd5de0"
+        },
+        "new_mathematical_predicates": 0,
+        "prior_scientific_acceptance": {
+          "bytes": 3989,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/BINARY_ADMISSION_ROOT_ACCEPTANCE.json",
+          "sha256": "75c3a29049f6d914b67b485b6fc672a5d6c1588a7fd4fa5c54fe326562065c4d"
+        },
+        "required_publication_qualification": "Imported original role strings are historical source-exposure quotations; bind original hash/time and separate current acceptance status. Neutral theorem not imported. Preserve exact archive.",
+        "retained_audit_status": false,
+        "root_review": {
+          "bytes": 7525,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/BINARY_ADMISSION_ASSEMBLY_ROOT_REVIEW.md",
+          "sha256": "f6798ab14a5457f5130386fe288aa920de55d20a8daebf4ecf2467cbbec17a85"
+        },
+        "root_source_binding": {
+          "bytes": 4561,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_assembly_root_review/SOURCE_BINDING.json",
+          "sha256": "244511536325e65ecf74ed44078e704e0a5275a4405c4f2411e294bee8de983a"
+        },
+        "scientific_reruns": 0,
+        "source_freeze": {
+          "bytes": 60360,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_assembly/FINAL_FREEZE.json",
+          "sha256": "5815cd123c304825285cf7c9754c888119db46c297e2e68e87ea764bda446b59"
+        },
+        "wrapper": {
+          "bytes": 12014,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_binary_admission_source_assembly/THEOREM_WRAPPER.md",
+          "sha256": "ad34c839ee69d32607596e80832ebb93187d7e7c2a358a6c04d6391d8565f9df"
+        }
+      }
+    }
+  ],
+  "retained_audit_status": false,
+  "supplied_clean_work_controls_clock_precision_flag_readout_required": true,
+  "unchanged_complete_core_coverage_reused": true
+}

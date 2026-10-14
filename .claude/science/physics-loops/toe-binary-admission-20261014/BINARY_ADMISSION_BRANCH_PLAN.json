@@ -1,0 +1,7 @@
+{
+  "base": "5c563c986f93c301c4a3b0e6f350ad15c5048813",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-binary-admission-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9542"
+}

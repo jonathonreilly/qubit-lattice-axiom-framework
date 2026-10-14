@@ -1,6 +1,6 @@
 {
- "edge_count": 16055,
- "node_count": 7116,
+ "edge_count": 16057,
+ "node_count": 7117,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8765,6 +8765,10 @@
   "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
    "deps_hash": "7b79e2bc121e",
    "out_degree": 3
+  },
+  "heralded_auxiliary_vacuum_preparation_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "399fae0391b6",
+   "out_degree": 2
   },
   "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
    "deps_hash": "df15e3194fcf",

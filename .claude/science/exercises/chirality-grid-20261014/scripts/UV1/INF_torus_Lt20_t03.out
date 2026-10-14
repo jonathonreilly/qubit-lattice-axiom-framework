@@ -1,0 +1,21 @@
+# UV-1 F1-a torus Lt=20 t0=3: witness slices 3..8 (6 slices); K=16 seed=9003
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+start k=8: lam_min +8.833e-07 min/max +1.130e-07 [0s]
+step 1: k=9 lam_min -7.131e-09 min/max -8.108e-10 [1s]
+step 2: k=10 lam_min -9.180e-09 min/max -9.398e-10 [2s]
+step 3: k=11 lam_min -4.034e-08 min/max -3.748e-09 [2s]
+step 4: k=12 lam_min -6.600e-08 min/max -5.613e-09 [3s]
+step 5: k=13 lam_min -8.674e-08 min/max -6.801e-09 [4s]
+step 6: k=14 lam_min -1.094e-07 min/max -8.029e-09 [5s]
+step 7: k=15 lam_min -1.345e-07 min/max -9.200e-09 [6s]
+step 8: k=16 lam_min -2.208e-07 min/max -1.416e-08 [7s]
+# witnesses: max|W(slice t0)| 0.0e+00, max|W(slice T+1-t0) - common| 4.4e-16; max witness bulk |plaq| 0.5406; buffer plaquettes exactly 0 by construction
+FINAL torus Lt=20 t0=3 O: k=16 lam_min -2.2081e-07 min/max -1.4156e-08 q 1.3e-14 q3 1.4e-14 E 3.2e-13 -> INF-NEG | lowest [-2.208e-07 -2.132e-08 -6.951e-09] max 15.598 | min|H| 0.782 [12s]
+FINAL torus Lt=20 t0=3 W: k=16 lam_min +5.6770e-14 min/max +3.6185e-15 q 1.4e-14 q3 1.4e-14 E 3.3e-13 -> INF-PSD(within 10E) | lowest [5.677e-14 9.158e-13 3.528e-12] max 15.689 | min|H| inf [13s]
+done [13s]
+watchdog peak RSS 113584 KB

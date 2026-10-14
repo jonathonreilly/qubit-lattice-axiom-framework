@@ -1,0 +1,65 @@
+# UV-1 Stage B open Lt=12 mode=sel ['12,16,17,19,9,10'] k=6; depth-2 = slices 1..5 of each witness placed on 2..6
+# W-match at depth-2 slice: max|W2| 0.0e+00; max bulk |plaq| depth1 0.5398
+# nodes level lo (n=2): 8064 per entry; sum base w 1.368360
+# nodes level hi (n=3): 61236 per entry; sum base w 1.368576
+# nodes level third (n=4): 258048 per entry; sum base w 1.368576
+# hi-level determinant evaluations per op: 1.29e+06 (cap 4e6)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+# V-B0 lib-path check: log det via entry_d2 (beta=0 tri, weight-stripped) vs direct: 3.6e-15
+# V-B0 pair (0, 1) node 5409: |D_nodes - D_direct| 0.0e+00; buffer plaq (+) [np.float64(-0.0), np.float64(0.0)], (-) [np.float64(0.0), np.float64(-0.0)] [mirror gap (-1|0) plaquette = -q-, reflection orientation]; crossing 1.7e-16, 4.4e-16
+# V-B0 lib-path check: log det via entry_d2 (beta=0 tri, weight-stripped) vs direct: 0.0e+00
+# V-B0 pair (1, 0) node 6491: |D_nodes - D_direct| 0.0e+00; buffer plaq (+) [np.float64(-0.0), np.float64(-0.0)], (-) [np.float64(-0.0), np.float64(0.0)] [mirror gap (-1|0) plaquette = -q-, reflection orientation]; crossing -1.1e-16, -4.4e-16
+[depth-1 reference O done, min|H| 0.847, 2s]
+[depth-1 reference W done, min|H| inf, 2s]
+[O lo done 66s]
+[O hi done 570s]
+[O third done 1743s; min|H| lo 0.821 hi 0.806 third 0.799]
+FINAL depth2 O  arm=tri  beta=  0: lam_min -2.0112e-05 min/max -3.3521e-06 q 4.6e-08 q3 1.2e-09 E 2.8e-07 -> NEG(conv) | lowest [-2.011e-05 -1.575e-08 -2.320e-09] max 6.000
+FINAL depth2 O  arm=tri  beta=  1: lam_min -2.0138e-05 min/max -3.3564e-06 q 6.0e-08 q3 2.1e-09 E 3.6e-07 -> NEG(conv) | lowest [-2.014e-05 -1.574e-08 -1.927e-09] max 6.000
+FINAL depth2 O  arm=tri  beta=  4: lam_min -2.0207e-05 min/max -3.3678e-06 q 9.0e-08 q3 4.7e-09 E 5.4e-07 -> NEG(conv) | lowest [-2.021e-05 -1.556e-08 -6.245e-10] max 6.000
+FINAL depth2 O  arm=tri  beta=  8: lam_min -2.0281e-05 min/max -3.3801e-06 q 1.0e-07 q3 6.8e-09 E 6.3e-07 -> NEG(conv) | lowest [-2.028e-05 -1.467e-08  7.673e-10] max 6.000
+FINAL depth2 O  arm=hard beta=  0: lam_min -1.9459e-05 min/max -3.2432e-06 q 4.0e-09 q3 8.5e-11 E 2.4e-08 -> NEG(conv) | lowest [-1.946e-05 -1.542e-08 -2.730e-09] max 6.000
+FINAL depth2 O  arm=hard beta=  1: lam_min -1.9520e-05 min/max -3.2534e-06 q 3.3e-09 q3 3.7e-11 E 2.0e-08 -> NEG(conv) | lowest [-1.952e-05 -1.546e-08 -2.732e-09] max 6.000
+FINAL depth2 O  arm=hard beta=  4: lam_min -1.9690e-05 min/max -3.2817e-06 q 1.3e-08 q3 8.1e-10 E 7.8e-08 -> NEG(conv) | lowest [-1.969e-05 -1.557e-08 -2.445e-09] max 6.000
+FINAL depth2 O  arm=hard beta=  8: lam_min -1.9882e-05 min/max -3.3137e-06 q 5.6e-08 q3 4.2e-09 E 3.4e-07 -> NEG(conv) | lowest [-1.988e-05 -1.577e-08 -1.131e-09] max 6.000
+
+[W lo done 16s]
+[W hi done 148s]
+[W third done 417s; min|H| lo inf hi inf third inf]
+FINAL depth2 W  arm=tri  beta=  0: lam_min +5.8826e-11 min/max +9.8043e-12 q 3.8e-08 q3 1.2e-09 E 2.3e-07 -> PSD-within-10E | lowest [5.883e-11 2.540e-10 1.122e-08] max 6.000
+FINAL depth2 W  arm=tri  beta=  1: lam_min +8.0123e-11 min/max +1.3354e-11 q 4.9e-08 q3 1.9e-09 E 2.9e-07 -> PSD-within-10E | lowest [8.012e-11 3.962e-10 1.230e-08] max 6.000
+FINAL depth2 W  arm=tri  beta=  4: lam_min +8.6971e-11 min/max +1.4495e-11 q 7.3e-08 q3 4.2e-09 E 4.4e-07 -> PSD-within-10E | lowest [8.697e-11 8.341e-10 1.579e-08] max 6.000
+FINAL depth2 W  arm=tri  beta=  8: lam_min +2.8936e-11 min/max +4.8227e-12 q 8.8e-08 q3 6.5e-09 E 5.3e-07 -> PSD-within-10E | lowest [2.894e-11 1.250e-09 1.929e-08] max 6.000
+FINAL depth2 W  arm=hard beta=  0: lam_min -1.6125e-11 min/max -2.6875e-12 q 4.5e-09 q3 7.2e-11 E 2.7e-08 -> PSD-within-10E | lowest [-1.612e-11 -5.137e-12  9.185e-09] max 6.000
+FINAL depth2 W  arm=hard beta=  1: lam_min -5.0811e-12 min/max -8.4685e-13 q 3.3e-09 q3 1.9e-11 E 2.0e-08 -> PSD-within-10E | lowest [-5.081e-12 -1.977e-12  9.272e-09] max 6.000
+FINAL depth2 W  arm=hard beta=  4: lam_min +4.2551e-11 min/max +7.0918e-12 q 1.1e-08 q3 7.3e-10 E 6.5e-08 -> PSD-within-10E | lowest [4.255e-11 1.545e-10 1.040e-08] max 6.000
+FINAL depth2 W  arm=hard beta=  8: lam_min +9.5267e-11 min/max +1.5878e-11 q 4.5e-08 q3 3.5e-09 E 2.7e-07 -> PSD-within-10E | lowest [9.527e-11 6.946e-10 1.459e-08] max 6.000
+
+[PG lo done 0s]
+[PG hi done 1s]
+[PG third done 2s; min|H| lo inf hi inf third inf]
+FINAL depth2 PG arm=tri  beta=  0: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=tri  beta=  1: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=tri  beta=  4: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=tri  beta=  8: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=hard beta=  0: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=hard beta=  1: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=hard beta=  4: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+FINAL depth2 PG arm=hard beta=  8: lam_min -1.1311e-15 min/max -1.8851e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-1.131e-15  0.000e+00  0.000e+00] max 6.000
+
+SUMMARY Stage B (depth-1 reference O | depth-2 O | ratio of min/max | label | controls depth 2):
+  tri  beta=  0: d1 -1.150e-03 (-1.92e-04, E 1e-13) | d2 -2.011e-05 (-3.35e-06, E 2.8e-07) | rho +1.75e-02 | PROXY-NEG(2) | W +5.9e-11 psd PG -1.1e-15 psd  (d1 W +9.0e-16)
+  tri  beta=  1: d1 -1.150e-03 (-1.92e-04, E 1e-13) | d2 -2.014e-05 (-3.36e-06, E 3.6e-07) | rho +1.75e-02 | PROXY-NEG(2) | W +8.0e-11 psd PG -1.1e-15 psd  (d1 W +2.1e-15)
+  tri  beta=  4: d1 -1.149e-03 (-1.91e-04, E 1e-13) | d2 -2.021e-05 (-3.37e-06, E 5.4e-07) | rho +1.76e-02 | PROXY-NEG(2) | W +8.7e-11 psd PG -1.1e-15 psd  (d1 W +2.3e-15)
+  tri  beta=  8: d1 -1.148e-03 (-1.91e-04, E 2e-13) | d2 -2.028e-05 (-3.38e-06, E 6.3e-07) | rho +1.77e-02 | PROXY-NEG(2) | W +2.9e-11 psd PG -1.1e-15 psd  (d1 W +4.4e-15)
+  hard beta=  0: d1 -1.162e-03 (-1.94e-04, E 1e-13) | d2 -1.946e-05 (-3.24e-06, E 2.4e-08) | rho +1.67e-02 | PROXY-NEG(2) | W -1.6e-11 psd PG -1.1e-15 psd  (d1 W -2.0e-16)
+  hard beta=  1: d1 -1.161e-03 (-1.93e-04, E 1e-13) | d2 -1.952e-05 (-3.25e-06, E 2.0e-08) | rho +1.68e-02 | PROXY-NEG(2) | W -5.1e-12 psd PG -1.1e-15 psd  (d1 W -5.8e-16)
+  hard beta=  4: d1 -1.157e-03 (-1.93e-04, E 1e-13) | d2 -1.969e-05 (-3.28e-06, E 7.8e-08) | rho +1.70e-02 | PROXY-NEG(2) | W +4.3e-11 psd PG -1.1e-15 psd  (d1 W +1.3e-16)
+  hard beta=  8: d1 -1.153e-03 (-1.92e-04, E 2e-13) | d2 -1.988e-05 (-3.31e-06, E 3.4e-07) | rho +1.72e-02 | PROXY-NEG(2) | W +9.5e-11 psd PG -1.1e-15 psd  (d1 W +1.3e-15)
+done [2164s]
+watchdog peak RSS 272000 KB

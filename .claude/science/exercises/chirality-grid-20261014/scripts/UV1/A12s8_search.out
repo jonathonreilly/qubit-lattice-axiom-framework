@@ -1,0 +1,18 @@
+# UV-1 search torus Lt=12 K=16 seed=8812 objective arm=tri beta=8.0 lo=(n 4, nw 4)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+start k=8: lam_min +3.507e-05 min/max +5.097e-06 min|H| 0.801 [3s]
+step 1: k=9 added pert0.02 lam_min +2.848e-06 min/max +3.770e-07 min|H| 0.801 [10s]
+step 2: k=10 added pert0.05 lam_min -3.597e-07 min/max -4.212e-08 min|H| 0.801 [17s]
+step 3: k=11 added rand     lam_min -2.470e-06 min/max -2.640e-07 min|H| 0.799 [25s]
+step 4: k=12 added rand     lam_min -8.507e-06 min/max -8.517e-07 min|H| 0.799 [33s]
+step 5: k=13 added rand     lam_min -1.294e-05 min/max -1.215e-06 min|H| 0.799 [42s]
+step 6: k=14 added pert0.2  lam_min -1.836e-05 min/max -1.577e-06 min|H| 0.799 [52s]
+step 7: k=15 added rand     lam_min -2.883e-05 min/max -2.344e-06 min|H| 0.799 [63s]
+step 8: k=16 added rand     lam_min -3.132e-05 min/max -2.408e-06 min|H| 0.799 [74s]
+pool saved: pool_UV1_search_tri_b8_torus_Lt12_seed8812.npz; W-match max|W1| 0.0e+00 max|W_T-W_T0| 4.4e-16; done [74s]
+watchdog peak RSS 108560 KB

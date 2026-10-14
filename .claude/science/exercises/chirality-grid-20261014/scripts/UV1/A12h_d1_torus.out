@@ -1,0 +1,51 @@
+# UV-1 depth-1 pool pool_K2c_wgsearch_hard_O_torus_Lt12_seed4412.npz subset - torus Lx=2 Lt=12 k=24 delta=0.6 betas=(0.0, 1.0, 4.0, 8.0) levels={'lo': (4, 4), 'hi': (6, 6), 'third': (8, 8)}
+# W-match: max|W1| 0.0e+00 max|W_T - W_T(0)| 4.4e-16; max bulk |plaq| 0.5475
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+[O levels done 171s; min|H| lo 0.762 hi 0.761 third 0.761]
+FINAL O  arm=tri  beta=  0: lam_min -1.4407e-04 min/max -6.1952e-06 q 1.9e-10 q3 3.6e-15 E 4.6e-09 -> NEG(conv) | lowest [-1.441e-04 -2.675e-05 -1.046e-05] max 23.255
+FINAL O  arm=tri  beta=  1: lam_min -1.4399e-04 min/max -6.1916e-06 q 6.7e-09 q3 6.9e-14 E 1.6e-07 -> NEG(conv) | lowest [-1.440e-04 -2.674e-05 -1.044e-05] max 23.255
+FINAL O  arm=tri  beta=  4: lam_min -1.4378e-04 min/max -6.1827e-06 q 4.4e-08 q3 9.7e-11 E 1.1e-06 -> NEG(conv) | lowest [-1.438e-04 -2.670e-05 -1.037e-05] max 23.255
+FINAL O  arm=tri  beta=  8: lam_min -1.4358e-04 min/max -6.1741e-06 q 5.5e-07 q3 1.4e-09 E 1.3e-05 -> NEG(conv) | lowest [-1.436e-04 -2.667e-05 -1.031e-05] max 23.255
+FINAL O  arm=hard beta=  0: lam_min -1.4728e-04 min/max -6.3323e-06 q 2.1e-12 q3 7.1e-15 E 5.0e-11 -> NEG(conv) | lowest [-1.473e-04 -2.728e-05 -1.149e-05] max 23.259
+   eigvec |v| order (largest first): 7,18,14,15,20,11,21,2,17,22,3,16,0,6,8,23,4,19,1,5,9,12,13,10; |v| [0.406 0.377 0.372 0.314 0.287 0.282 0.245 0.236 0.218 0.206 0.144 0.124
+ 0.12  0.118 0.089 0.075 0.061 0.054 0.039 0.034 0.032 0.019 0.018 0.002]
+FINAL O  arm=hard beta=  1: lam_min -1.4686e-04 min/max -6.3144e-06 q 7.1e-12 q3 1.0e-14 E 1.7e-10 -> NEG(conv) | lowest [-1.469e-04 -2.721e-05 -1.136e-05] max 23.258
+FINAL O  arm=hard beta=  4: lam_min -1.4580e-04 min/max -6.2693e-06 q 3.3e-08 q3 1.4e-11 E 8.0e-07 -> NEG(conv) | lowest [-1.458e-04 -2.704e-05 -1.102e-05] max 23.257
+FINAL O  arm=hard beta=  8: lam_min -1.4484e-04 min/max -6.2282e-06 q 2.1e-07 q3 5.1e-11 E 5.0e-06 -> NEG(conv) | lowest [-1.448e-04 -2.688e-05 -1.071e-05] max 23.256
+
+[W levels done 203s; min|H| lo inf hi inf third inf]
+FINAL W  arm=tri  beta=  0: lam_min +1.4321e-15 min/max +6.1303e-17 q 1.7e-10 q3 7.1e-15 E 4.1e-09 -> PSD-within-10E | lowest [1.432e-15 2.665e-12 4.160e-11] max 23.360
+FINAL W  arm=tri  beta=  1: lam_min +2.7652e-15 min/max +1.1837e-16 q 2.1e-08 q3 1.3e-13 E 5.0e-07 -> PSD-within-10E | lowest [2.765e-15 2.668e-12 4.160e-11] max 23.360
+FINAL W  arm=tri  beta=  4: lam_min +3.1026e-15 min/max +1.3282e-16 q 1.4e-07 q3 3.2e-10 E 3.3e-06 -> PSD-within-10E | lowest [3.103e-15 2.672e-12 4.160e-11] max 23.360
+FINAL W  arm=tri  beta=  8: lam_min +2.0429e-15 min/max +8.7456e-17 q 1.5e-06 q3 4.1e-09 E 3.5e-05 -> PSD-within-10E | lowest [2.043e-15 2.678e-12 4.160e-11] max 23.359
+FINAL W  arm=hard beta=  0: lam_min +1.2514e-14 min/max +5.3552e-16 q 3.7e-13 q3 7.1e-15 E 8.9e-12 -> PSD-within-10E | lowest [1.251e-14 2.582e-12 4.162e-11] max 23.368
+FINAL W  arm=hard beta=  1: lam_min +2.0981e-15 min/max +8.9787e-17 q 1.9e-10 q3 5.9e-14 E 4.4e-09 -> PSD-within-10E | lowest [2.098e-15 2.592e-12 4.161e-11] max 23.367
+FINAL W  arm=hard beta=  4: lam_min +2.5819e-15 min/max +1.1050e-16 q 9.6e-08 q3 4.7e-11 E 2.3e-06 -> PSD-within-10E | lowest [2.582e-15 2.622e-12 4.162e-11] max 23.365
+FINAL W  arm=hard beta=  8: lam_min +6.8249e-15 min/max +2.9213e-16 q 5.4e-07 q3 1.1e-10 E 1.3e-05 -> PSD-within-10E | lowest [6.825e-15 2.643e-12 4.161e-11] max 23.362
+
+[PG levels done 228s; min|H| lo inf hi inf third inf]
+FINAL PG arm=tri  beta=  0: lam_min -2.9366e-15 min/max -1.2236e-16 q 2.2e-16 q3 4.4e-16 E 1.1e-13 -> PSD-within-10E | lowest [-2.937e-15 -2.865e-15 -1.459e-15] max 24.000
+FINAL PG arm=tri  beta=  1: lam_min -3.5543e-15 min/max -1.4810e-16 q 4.4e-16 q3 3.3e-16 E 1.1e-13 -> PSD-within-10E | lowest [-3.554e-15 -2.701e-15 -1.522e-15] max 24.000
+FINAL PG arm=tri  beta=  4: lam_min -2.8666e-15 min/max -1.1944e-16 q 5.6e-16 q3 7.8e-16 E 1.2e-13 -> PSD-within-10E | lowest [-2.867e-15 -2.510e-15 -1.239e-15] max 24.000
+FINAL PG arm=tri  beta=  8: lam_min -3.7661e-15 min/max -1.5692e-16 q 5.6e-16 q3 1.3e-15 E 1.3e-13 -> PSD-within-10E | lowest [-3.766e-15 -3.302e-15 -1.854e-15] max 24.000
+FINAL PG arm=hard beta=  0: lam_min -2.8306e-15 min/max -1.1794e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-2.831e-15 -2.590e-15 -1.231e-15] max 24.000
+FINAL PG arm=hard beta=  1: lam_min -5.0882e-15 min/max -2.1201e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 -> PSD-within-10E | lowest [-5.088e-15 -2.038e-15 -1.380e-15] max 24.000
+FINAL PG arm=hard beta=  4: lam_min -5.0833e-15 min/max -2.1180e-16 q 2.2e-16 q3 0.0e+00 E 1.1e-13 -> PSD-within-10E | lowest [-5.083e-15 -1.885e-15 -1.383e-15] max 24.000
+FINAL PG arm=hard beta=  8: lam_min -3.5211e-15 min/max -1.4671e-16 q 4.4e-16 q3 6.7e-16 E 1.2e-13 -> PSD-within-10E | lowest [-3.521e-15 -2.121e-15 -1.804e-15] max 24.000
+
+SUMMARY (O lam_min/max | E | W lam_min | PG lam_min):
+  tri  beta=  0: O -1.4407e-04 (-6.195e-06) E 4.6e-09 NEG | W +1.43e-15 (E 4e-09) psd | PG -2.94e-15 psd
+  tri  beta=  1: O -1.4399e-04 (-6.192e-06) E 1.6e-07 NEG | W +2.77e-15 (E 5e-07) psd | PG -3.55e-15 psd
+  tri  beta=  4: O -1.4378e-04 (-6.183e-06) E 1.1e-06 NEG | W +3.10e-15 (E 3e-06) psd | PG -2.87e-15 psd
+  tri  beta=  8: O -1.4358e-04 (-6.174e-06) E 1.3e-05 NEG | W +2.04e-15 (E 3e-05) psd | PG -3.77e-15 psd
+  hard beta=  0: O -1.4728e-04 (-6.332e-06) E 5.0e-11 NEG | W +1.25e-14 (E 9e-12) psd | PG -2.83e-15 psd
+  hard beta=  1: O -1.4686e-04 (-6.314e-06) E 1.7e-10 NEG | W +2.10e-15 (E 4e-09) psd | PG -5.09e-15 psd
+  hard beta=  4: O -1.4580e-04 (-6.269e-06) E 8.0e-07 NEG | W +2.58e-15 (E 2e-06) psd | PG -5.08e-15 psd
+  hard beta=  8: O -1.4484e-04 (-6.228e-06) E 5.0e-06 NEG | W +6.82e-15 (E 1e-05) psd | PG -3.52e-15 psd
+done [228s]
+watchdog peak RSS 122352 KB

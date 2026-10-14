@@ -230,3 +230,17 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - One-mode-per-site elementary quadratic colour charges cannot give a Gauss generator at every translation-related point.
   - But one-qubit sites can collectively carry exact, finite-range, one-step-translation-covariant SU(3) through gated many-body representations, with a commuting Gauss law and gauge-invariant local dynamics.
   - The construction is kinematic, state-controlled, anisotropic in Z³ and sector-crystalline.
+
+**UV-1 result (22:49Z; same family; referee launched): OPEN for both arms (headline OPEN).**
+- **Why OPEN:** registered in advance as forced by budget. At finite β_g on a torus, t₀ ≥ 2 is an 11–19-dimensional integral.
+- **Supplementary (checked):**
+  - **t₀ = 1 (torus):** negative at every β_g = 0–8 in both arms, changing by less than 2% across β_g.
+  - **t₀ = 2 (open proxy, finite β_g):** negative in all 8 cells, at about 1/57 of the depth-1 value.
+  - **β = ∞ (flat field near the plane):** negative to t₀ = 4 at Lt = 20 (−7.8e-6, −5.9e-7, −1.4e-8, −9.5e-11), confirmed by a second seed and reproduced by K2c's independent builder.
+- **Reading:**
+  - the violation lives in the overlap determinant, not in gauge fluctuations;
+  - its decay length is lattice-scale (0.2–0.4 spacings) and independent of β_g;
+  - it never reaches zero at finite depth, which leans to PERSISTS at fixed lattice depth;
+  - a continuity lemma (worker's; unrefereed) gives non-PSD at finite depth for all β above some β₀, but β₀ is not computed.
+- **For set B:** exact OS reconstruction fails at every depth in this proxy. An approximate transfer matrix with e^{−κt₀} errors is plausible but not shown.
+- **Additions after registration:** the β = ∞ comparator and the continuity lemma.

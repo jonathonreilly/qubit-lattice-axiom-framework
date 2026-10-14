@@ -1,0 +1,34 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "balanced_critical_mediator_coupling_bounded_theorem_note_2026-10-14",
+      "to": "critical_mediator_clock_data_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 1,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "balanced_critical_mediator_coupling_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "critical_mediator_clock_data_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/BALANCED_CRITICAL_MEDIATOR_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/balanced_critical_mediator_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "CRITICAL_MEDIATOR",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Unexecuted proposal. One direct theorem edge, no branch-ancestry dependency."
+}

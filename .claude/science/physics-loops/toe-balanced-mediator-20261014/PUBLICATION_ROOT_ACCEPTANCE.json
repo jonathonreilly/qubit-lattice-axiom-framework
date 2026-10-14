@@ -1,0 +1,37 @@
+{
+  "actual_clean_child_and_direct_main_receipts_bound": true,
+  "base": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "base_kind": "observed_origin_main",
+  "branch": "physics-loop/toe-balanced-mediator-main-20261014",
+  "complete_balanced_proof_and_current_scope_read": true,
+  "complete_driver_helper_and_source_checker_read": true,
+  "disposition": "accepted_for_source_integration",
+  "full_norm_N12_penalty_N11_ports_N6_limits_read": true,
+  "mathematical_predicates": 0,
+  "new_publication_wrapper_and_all_deltas_read": true,
+  "no_go_packet_pass": false,
+  "old_graph_objects_and_exact_staged_scope_preservation_read": true,
+  "placeholder_only": false,
+  "publication_program_sha256": "1b46ccc17571c9e0f490a938b70691485039bf90870528d839c0ffee29a52a38",
+  "publication_source_freeze_sha256": "2497958e78d72d5ee52c2a3be7365aaa213c82a2a0c051d9daa945c2692e5dd2",
+  "root_authorizes_execution": true,
+  "root_execution_acceptance": true,
+  "sole_critical_parent_complete_canonical_extraction_bound": true,
+  "source_and_actual_run_closure_verified": true,
+  "source_assembly_freeze_sha256": "782c971f1d4334877f8af2bc2cad1145c05c9c659e6bbcec7c03dee8ba80f1c6",
+  "prior_acceptance_sha256s": [
+    "f578d0581792dc507bb6b46a725bf3f14c026141c5a0ed4d6c6784fe37f9abef",
+    "007ee1f03da877738e17de29a7005ac8d5080bfe03fa3b20152db69d06236a95"
+  ],
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/BALANCED_MEDIATOR_MAIN_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_sha256": "60451b9de7346cf20dd04dc32bf687d763ab25417910f7dde181f88d06035663",
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/balanced_main_root_review/SOURCE_BINDING.json",
+    "bytes": 4869,
+    "sha256": "301c56b8d4aa777fd69459ef7946bdf545cb1bc00a38fcdf77947508d84801a4"
+  },
+  "created_utc": "2026-10-14T20:43:57.999911+00:00",
+  "new_scientific_execution_count": 0,
+  "editable_prompt_files_changed": []
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 16048,
- "node_count": 7111,
+ "edge_count": 16049,
+ "node_count": 7112,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2297,6 +2297,10 @@
   "bae_u1b_six_ray_dirac_measure_note_2026-05-17": {
    "deps_hash": "0d278fe7903f",
    "out_degree": 7
+  },
+  "balanced_critical_mediator_coupling_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "0564142f80cc",
+   "out_degree": 1
   },
   "barrier_identification_tested_cycle893_bounded_theorem_note_2026-07-28": {
    "deps_hash": "100cedca9ec7",

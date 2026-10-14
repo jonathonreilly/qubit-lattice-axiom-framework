@@ -1,0 +1,67 @@
+{
+  "actual_parent_head": "92574ffe95192cc0724a27e1acad28e42d325115",
+  "actual_parent_pr": null,
+  "actual_parent_tree": "5a0e4070deecabeb0c30f92468c558dc49c5f0b6",
+  "all_markdown_note_targets": [
+    "CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "base_kind": "observed_origin_main",
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "actual_use": "Full-auxiliary gap and exact response, two-correction residual, unchanged H and full-reference bare-vacuum preparation, signed scalar/covariance/energy/precision budgets; substitute a legal pre-Delta coupling and finite constants. Inherited waveform and apparatus hypotheses remain conditions, not new direct imports.",
+      "body_edits": [],
+      "byte_end_exclusive": 32009,
+      "byte_start_inclusive": 6571,
+      "canonical_path": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "line_end_inclusive": 325,
+      "line_start_inclusive": 48,
+      "source_bytes": 25438,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path/DERIVATION.md",
+      "source_sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9",
+      "whole_source_preserved": true
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "actual_use": "Full-auxiliary gap and exact response, two-correction residual, unchanged H and full-reference bare-vacuum preparation, signed scalar/covariance/energy/precision budgets; substitute a legal pre-Delta coupling and finite constants. Inherited waveform and apparatus hypotheses remain conditions, not new direct imports.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 32370,
+      "canonical_core_map": {
+        "actual_use": "Full-auxiliary gap and exact response, two-correction residual, unchanged H and full-reference bare-vacuum preparation, signed scalar/covariance/energy/precision budgets; substitute a legal pre-Delta coupling and finite constants. Inherited waveform and apparatus hypotheses remain conditions, not new direct imports.",
+        "body_edits": [],
+        "byte_end_exclusive": 32009,
+        "byte_start_inclusive": 6571,
+        "canonical_path": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "line_end_inclusive": 325,
+        "line_start_inclusive": 48,
+        "source_bytes": 25438,
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path/DERIVATION.md",
+        "source_sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9",
+        "whole_source_preserved": true
+      },
+      "claim_id": "critical_mediator_clock_data_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": true,
+      "key": "CRITICAL_MEDIATOR",
+      "markdown": "[critical mediator theorem](CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "131168af9a6acf1ab15c1dd0c079ef299a8c97957fff9927c9ae81e5a15a3ba5",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "source_sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "CRITICAL_MEDIATOR",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "One actual direct critical theorem citation; inherited open-path premise is not a second direct import. Direct edge verified as a source proposal only; graph execution remains root-owned."
+}

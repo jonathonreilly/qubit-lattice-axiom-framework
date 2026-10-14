@@ -1,0 +1,63 @@
+{
+  "frontmatter": "---\ntitle: Balanced coupling for a finite critical mediator\nclaim_id: balanced_critical_mediator_coupling_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed finite supplied apparatus, prepared one-clock and bare auxiliary domain, balanced sufficient finite-time resource corollary\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nstatus: proposed_retained\ncanonical_parent_binding_complete: true\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nupstream_dependencies: [critical_mediator_clock_data_bounded_theorem_note_2026-10-14]\nrunner: scripts/balanced_critical_mediator_identity_2026_10_14.py\nclaim_type_reason: conditional sufficient N^11 penalty, N^6 ports and N^12 full norm at fixed displayed parameters; no optimality, native, common-cap or all-NN claim\nnext_trace_action: separate direct-main source/program review and root execution; exact observed main and clean child are receipt-bound\n---\n\nClaim type: bounded_theorem\n\n",
+  "historical_suffix_and_proof_preserved": true,
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 25711,
+          "byte_start_inclusive": 7414,
+          "bytes": 18297,
+          "id": "BALANCED_MEDIATOR",
+          "line_end_inclusive": 334,
+          "line_start_inclusive": 113,
+          "sha256": "dc4ae71e40ca0f325dfa19bb2e2c7c7d6b8d4335094b34bbfb5ca98b407fb475",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_balanced_coupling/DERIVATION.md"
+        }
+      ],
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_sha256": "4bf8e14aa364bbce5000a9eb348d1240de73b039c085b07ea930706cc0c077cd",
+      "diff_stored_sha256": "4186424265a5f82a13cd40a7486faaf02a2378c08620ac381d5cd568abbf37cb",
+      "fromfile": "CANDIDATE_NOTE.md",
+      "note": "docs/BALANCED_CRITICAL_MEDIATOR_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_balanced_coupling/DERIVATION.md",
+          "source_sha256": "dc4ae71e40ca0f325dfa19bb2e2c7c7d6b8d4335094b34bbfb5ca98b407fb475"
+        }
+      ],
+      "published_bytes": 26307,
+      "published_lines": 346,
+      "published_sha256": "c0613f586f0eae5f27c73bfa2b3525e413c0e724a4508f27eb064b30870dac6f",
+      "tofile": "docs/BALANCED_CRITICAL_MEDIATOR_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "782c971f1d4334877f8af2bc2cad1145c05c9c659e6bbcec7c03dee8ba80f1c6",
+  "wrapper_diff": {
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_sha256": "875ca62c92e0d5ffa77fbf82226f9e1479a525be055fabafcb4783f407a143aa",
+    "diff_stored_sha256": "ccf2350e0afd09a514ce7ba4638878b5bd2d8b667c1255c72194ddd6f5428a1e",
+    "fromfile": "wrappers/note_prefix.md",
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This new source assembly requires its own root review; it supplies no canonical\nintegration, retained audit or physical realization authority.",
+      "rendered": "Current recovery binding: the clean child `physics-loop/toe-balanced-mediator-main-20261014` starts directly at observed `origin/main` `92574ffe95192cc0724a27e1acad28e42d325115`, tree `5a0e4070deecabeb0c30f92468c558dc49c5f0b6`. PR9570 was observed CLOSED; it is historical and is not the publication parent. The critical canonical note is now SHA256 `131168af9a6acf1ab15c1dd0c079ef299a8c97957fff9927c9ae81e5a15a3ba5`; the full `b53e6164` proof remains exact once, and the complete parent delta is only a review-loop metadata insertion. Earlier PR9570, `c1208dca`, `7c8503ca`, and pending source-stage statements below are historical. The prior prepare succeeded, while verify stopped at the changed-parent guard before focused compatibility. The preserved candidate commit is a recovery copy, not verification. A new exact direct-main root source/program acceptance is required.\n\nRoot accepted this source assembly under BALANCED_MEDIATOR_ASSEMBLY_ROOT_ACCEPTANCE.json\n007ee1f0. The actual canonical parent and clean child are now receipt-bound.\nThis publication source still requires separate root review and execution acceptance; no retained status is supplied.",
+      "scope": "publication metadata/current source status or proposed parent link only"
+    },
+    {
+      "original": "[critical mediator proof](../joint_critical_mediator_path/DERIVATION.md)",
+      "rendered": "[critical mediator theorem](CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata/current source status or proposed parent link only"
+    },
+    {
+      "original": "Actual future\ncritical canonical and regular-PR bindings remain pending.",
+      "rendered": "The current canonical note is bound at SHA-256\n`131168af9a6acf1ab15c1dd0c079ef299a8c97957fff9927c9ae81e5a15a3ba5` on observed main `92574ffe95192cc0724a27e1acad28e42d325115`.\nThe clean child is `physics-loop/toe-balanced-mediator-main-20261014`, tree `5a0e4070deecabeb0c30f92468c558dc49c5f0b6`.\nThe complete critical proof is unchanged; there is no OPEN-PR parent requirement in this direct-main derivative.",
+      "scope": "publication metadata/current source status or proposed parent link only"
+    }
+  ]
+}

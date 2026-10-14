@@ -1,0 +1,88 @@
+{
+  "schema": "independent_readout_input_manifest_v1",
+  "created_utc": "2026-10-12T23:18:43.338277+00:00",
+  "primary_inputs": [
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/PROTOCOL.md",
+      "snapshot_path": "snapshots/PROTOCOL.md",
+      "bytes": 2602,
+      "sha256": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2",
+      "coverage": "complete source/record read"
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/DIRECT_READOUT.md",
+      "snapshot_path": "snapshots/DIRECT_READOUT.md",
+      "bytes": 6107,
+      "sha256": "6c33aa974f21ff0934a8c825c5b77ba8354b68bc7e27a802d13531fb6b5ca290",
+      "coverage": "complete source/record read"
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/SOURCE_LEDGER.md",
+      "snapshot_path": "snapshots/SOURCE_LEDGER.md",
+      "bytes": 1224,
+      "sha256": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30",
+      "coverage": "complete source/record read"
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/direct_readout_check.py",
+      "snapshot_path": "snapshots/direct_readout_check.py",
+      "bytes": 7713,
+      "sha256": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714",
+      "coverage": "complete source/record read"
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/evidence_v1/RESULTS.json",
+      "snapshot_path": "snapshots/evidence_v1/RESULTS.json",
+      "bytes": 11474,
+      "sha256": "38211e20ff4a0d9cac2602994dbc34955ffbd9fa9f07178639cca01db534e9f6",
+      "coverage": "complete source/record read"
+    }
+  ],
+  "original_executed_inputs": [
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/evidence_v1/source_snapshot/PROTOCOL.md",
+      "snapshot_path": "snapshots/original_executed/PROTOCOL.md",
+      "sha256": "e7739cca78bc8f71dd72c256fb2987aa12dba5586f98443c5da74f0cca9c56a2",
+      "bytes": 2602
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/evidence_v1/source_snapshot/DIRECT_READOUT.md",
+      "snapshot_path": "snapshots/original_executed/DIRECT_READOUT.md",
+      "sha256": "392e8d068c9f07c1e3584a8f5f93cc014afcf09a02f67f43eeafa646b19b7f8c",
+      "bytes": 5906
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/evidence_v1/source_snapshot/SOURCE_LEDGER.md",
+      "snapshot_path": "snapshots/original_executed/SOURCE_LEDGER.md",
+      "sha256": "14259802a4f032fb600216ab911dfd147baa76d9d2ab6937037977c433f23e30",
+      "bytes": 1224
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_readout/evidence_v1/source_snapshot/direct_readout_check.py",
+      "snapshot_path": "snapshots/original_executed/direct_readout_check.py",
+      "sha256": "408b67d69a0df25fdcad80c4c4588397f8f7fec942991deecc5ea0711fecc714",
+      "bytes": 7713
+    }
+  ],
+  "prior_context": [
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/DIRECT_MATTER_RADIATION.md",
+      "snapshot_path": "snapshots/prior_matter/DIRECT_MATTER_RADIATION.md",
+      "sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f",
+      "bytes": 6488,
+      "coverage": "targeted scalar force premise and illustrative power-calibration ratio only; no full prior-packet review claimed"
+    },
+    {
+      "source_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/evidence_v1/RESULTS.json",
+      "snapshot_path": "snapshots/prior_matter/evidence_v1/RESULTS.json",
+      "sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f",
+      "bytes": 11468,
+      "coverage": "targeted scalar force premise and illustrative power-calibration ratio only; no full prior-packet review claimed"
+    }
+  ],
+  "source_identity_finding": "RESULTS v1 pins the original note. The current note changes only two network-rank qualifications; exact original source bytes and the reviewer diff are preserved. Runner, protocol, ledger and numerical result unchanged.",
+  "network_diff": {
+    "path": "network_wording_correction.diff",
+    "sha256": "826261910e86baf8866012ad7c21ae04fe7beca6dd67accbe0fb656d27f67b05"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "domain": "Author equal-antipodal controls: q>=1, total mass1, G=alpha=Omega=D=1, epsilon_T<=2/25.",
+  "coefficient_bound": "For real z=n epsilon sin(theta)/2, absolute Bessel series, n!>=(n/e)^n, e<3 and exp(y)<=1/(1-y) give |J_n(z)| <= b^n, b=(3 epsilon/4)/(1-epsilon^2/16).",
+  "odd_harmonics": "Exactly zero; after truncating at16 the first omitted harmonic is18.",
+  "sum_bound": "S=sum_{n>=18} n^2 b^(2n); includes odd n as a harmless upper bound.",
+  "power_bound": "P_tail <=2 (q^(3/2)+1) S; P_leading >=(2/35) epsilon^4 q^(3/2); hence P_tail/P_leading <=70 S/epsilon^4.",
+  "monotonicity": "For n>=18, b(epsilon)^(2n)/epsilon^4 grows with epsilon; use epsilon=2/25.",
+  "epsilon": "2/25",
+  "b": "50/833",
+  "relative_upper_exact": "1904722171758521653828211128711700439453125000000000000000000000000000000000000/327417254111518964509020207889249422850235566396824281843693425942992230490780787733325105784703402217936303939987",
+  "relative_upper_decimal_diagnostic": 5.8174153861475164e-36,
+  "exact_rational_less_than_1e_minus35": true,
+  "scope": "Analytic harmonic truncation only; angular/Bessel numerical quadrature is not an interval certificate."
+}

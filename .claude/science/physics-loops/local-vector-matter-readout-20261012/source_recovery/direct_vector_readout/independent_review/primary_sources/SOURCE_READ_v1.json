@@ -1,0 +1,12 @@
+{
+  "url": "https://dcc.ligo.org/public/0145/P170814/015/LIGO-P170814.pdf",
+  "official_record": "https://dcc.ligo.org/LIGO-P170814/public",
+  "doi": "10.1103/PhysRevLett.119.141101",
+  "local_pdf_sha256": "6f629844c3ef3bce9357ff858995f6fb3f99b3522c669cda9951031275725a1d",
+  "bytes": 1425897,
+  "read_scope": "Sections V and VII read through web tool; exact official version PDF subsequently saved with TLS-verified curl.",
+  "source_summary": "The paper uses coherent Bayesian source inference and tests pure tensor/vector/scalar antenna responses while retaining GR waveform phasing. Mixtures are outside that simplified polarization comparison. Those hypotheses do not supply this candidate's photon/metric readout, emission or two-speed propagation model. Its reported preferences are not a candidate likelihood.",
+  "empirical_arrays_downloaded": false,
+  "citation_only": true,
+  "network_failure_history": "../operational_failures_v1.json"
+}

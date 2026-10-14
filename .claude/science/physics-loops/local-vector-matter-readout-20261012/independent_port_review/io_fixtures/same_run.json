@@ -1,0 +1,811 @@
+{
+  "input_identities": {
+    "scripts/local_vector_matter_readout_2026_10_12.py": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+    "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d",
+    "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+  },
+  "environment": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "radiation": {
+    "symbolic": {
+      "equatorial_frequency": "G*(D + N)*(m1 + m2)/(2*a**3)",
+      "vertical_frequency": "G*(3*D - N)*(m1 + m2)/(2*a**3)",
+      "angular_integrals": [
+        "64*pi/35",
+        "32*pi/105"
+      ],
+      "ratio": "(6*q**(7/2) + 1)/(21*q + 21)",
+      "ratio_derivative": "(15*q**(7/2) + 21*q**(5/2) - 1)/(21*(q + 1)**2)",
+      "isotropic_ratio": "1/6"
+    },
+    "controls": [
+      {
+        "q": 1.0,
+        "a_Omega_over_cT": 0.08,
+        "angular_tensor_power": [
+          2.3405714285714184e-06,
+          3.9009523809523664e-07
+        ],
+        "leading_power": [
+          2.3405714285714285e-06,
+          3.900952380952381e-07
+        ],
+        "exact_source_harmonic_power": [
+          2.3383875118234486e-06,
+          3.898213675551299e-07
+        ],
+        "relative_to_leading_minus_one": -0.0009000685869462455,
+        "harmonics_14_to_16_fraction": 1.6865254346521166e-24,
+        "max_odd_density_coefficient": 9.272255196210977e-17,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.0,
+        "a_Omega_over_cT": 0.04,
+        "angular_tensor_power": [
+          1.4628571428571365e-07,
+          2.438095238095229e-08
+        ],
+        "leading_power": [
+          1.4628571428571428e-07,
+          2.4380952380952383e-08
+        ],
+        "exact_source_harmonic_power": [
+          1.4625117724906894e-07,
+          2.437663180031742e-08
+        ],
+        "relative_to_leading_minus_one": -0.0002276813512517295,
+        "harmonics_14_to_16_fraction": 3.1475882312818165e-23,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.0,
+        "a_Omega_over_cT": 0.02,
+        "angular_tensor_power": [
+          9.142857142857103e-09,
+          1.5238095238095181e-09
+        ],
+        "leading_power": [
+          9.142857142857143e-09,
+          1.523809523809524e-09
+        ],
+        "exact_source_harmonic_power": [
+          9.142315883600568e-09,
+          1.523741852913373e-09
+        ],
+        "relative_to_leading_minus_one": -5.708720181785143e-05,
+        "harmonics_14_to_16_fraction": 5.363793937569738e-22,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.0,
+        "a_Omega_over_cT": 0.01,
+        "angular_tensor_power": [
+          5.714285714285689e-10,
+          9.523809523809488e-11
+        ],
+        "leading_power": [
+          5.714285714285714e-10,
+          9.523809523809525e-11
+        ],
+        "exact_source_harmonic_power": [
+          5.714201079317383e-10,
+          9.523703724895801e-11
+        ],
+        "relative_to_leading_minus_one": -1.42822289554978e-05,
+        "harmonics_14_to_16_fraction": 8.423616547237577e-21,
+        "max_odd_density_coefficient": 9.936498493193006e-17,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.5,
+        "a_Omega_over_cT": 0.08,
+        "angular_tensor_power": [
+          4.299904279902793e-06,
+          1.7337566137566074e-07
+        ],
+        "leading_power": [
+          4.299904279902811e-06,
+          1.7337566137566149e-07
+        ],
+        "exact_source_harmonic_power": [
+          4.2958921686478584e-06,
+          1.7329416629982413e-07
+        ],
+        "relative_to_leading_minus_one": -0.000915124111284582,
+        "harmonics_14_to_16_fraction": 1.5941245557506161e-24,
+        "max_odd_density_coefficient": 1.2412670766236366e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.5,
+        "a_Omega_over_cT": 0.04,
+        "angular_tensor_power": [
+          2.687440174939246e-07,
+          1.0835978835978797e-08
+        ],
+        "leading_power": [
+          2.687440174939257e-07,
+          1.0835978835978843e-08
+        ],
+        "exact_source_harmonic_power": [
+          2.68680568906169e-07,
+          1.083469730034231e-08
+        ],
+        "relative_to_leading_minus_one": -0.00023152630461020784,
+        "harmonics_14_to_16_fraction": 3.017051133053786e-23,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.5,
+        "a_Omega_over_cT": 0.02,
+        "angular_tensor_power": [
+          1.6796501093370286e-08,
+          6.772486772486748e-10
+        ],
+        "leading_power": [
+          1.6796501093370355e-08,
+          6.772486772486777e-10
+        ],
+        "exact_source_harmonic_power": [
+          1.6795506736622482e-08,
+          6.772286212844378e-10
+        ],
+        "relative_to_leading_minus_one": -5.805352173560152e-05,
+        "harmonics_14_to_16_fraction": 5.087487488878271e-22,
+        "max_odd_density_coefficient": 1.2412670766236366e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 1.5,
+        "a_Omega_over_cT": 0.01,
+        "angular_tensor_power": [
+          1.0497813183356429e-09,
+          4.2328042328042174e-11
+        ],
+        "leading_power": [
+          1.0497813183356472e-09,
+          4.2328042328042355e-11
+        ],
+        "exact_source_harmonic_power": [
+          1.0497657698991367e-09,
+          4.23277288292913e-11
+        ],
+        "relative_to_leading_minus_one": -1.4524127191717362e-05,
+        "harmonics_14_to_16_fraction": 8.026333571447539e-21,
+        "max_odd_density_coefficient": 1.1102230246251565e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 2.0,
+        "a_Omega_over_cT": 0.08,
+        "angular_tensor_power": [
+          6.620135715977341e-06,
+          9.752380952380911e-08
+        ],
+        "leading_power": [
+          6.620135715977368e-06,
+          9.752380952380949e-08
+        ],
+        "exact_source_harmonic_power": [
+          6.613958666609196e-06,
+          9.748935525982836e-08
+        ],
+        "relative_to_leading_minus_one": -0.0009246529402946457,
+        "harmonics_14_to_16_fraction": 1.509313580681393e-24,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 2.0,
+        "a_Omega_over_cT": 0.04,
+        "angular_tensor_power": [
+          4.137584822485838e-07,
+          6.095238095238069e-09
+        ],
+        "leading_power": [
+          4.137584822485855e-07,
+          6.095238095238093e-09
+        ],
+        "exact_source_harmonic_power": [
+          4.136607967573295e-07,
+          6.094697159692073e-09
+        ],
+        "relative_to_leading_minus_one": -0.00023395392738578824,
+        "harmonics_14_to_16_fraction": 2.831828841041844e-23,
+        "max_odd_density_coefficient": 1.2412670766236366e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 2.0,
+        "a_Omega_over_cT": 0.02,
+        "angular_tensor_power": [
+          2.5859905140536488e-08,
+          3.8095238095237933e-10
+        ],
+        "leading_power": [
+          2.5859905140536594e-08,
+          3.8095238095238083e-10
+        ],
+        "exact_source_harmonic_power": [
+          2.5858374228173787e-08,
+          3.8094391871908246e-10
+        ],
+        "relative_to_leading_minus_one": -5.866327328829524e-05,
+        "harmonics_14_to_16_fraction": 4.841383062377893e-22,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 2.0,
+        "a_Omega_over_cT": 0.01,
+        "angular_tensor_power": [
+          1.6162440712835305e-09,
+          2.3809523809523708e-11
+        ],
+        "leading_power": [
+          1.6162440712835371e-09,
+          2.3809523809523802e-11
+        ],
+        "exact_source_harmonic_power": [
+          1.6162201328995247e-09,
+          2.3809391547927427e-11
+        ],
+        "relative_to_leading_minus_one": -1.4676743297137307e-05,
+        "harmonics_14_to_16_fraction": 7.536815809686777e-21,
+        "max_odd_density_coefficient": 9.936498493193006e-17,
+        "equatorial_orbit_vertically_stable": true
+      },
+      {
+        "q": 5.0,
+        "a_Omega_over_cT": 0.08,
+        "angular_tensor_power": [
+          2.616838410239743e-05,
+          1.560380952380946e-08
+        ],
+        "leading_power": [
+          2.616838410239755e-05,
+          1.560380952380953e-08
+        ],
+        "exact_source_harmonic_power": [
+          2.6143967170869126e-05,
+          1.5601595972833274e-08
+        ],
+        "relative_to_leading_minus_one": -0.0009325983941614879,
+        "harmonics_14_to_16_fraction": 1.328043450298966e-24,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": false
+      },
+      {
+        "q": 5.0,
+        "a_Omega_over_cT": 0.04,
+        "angular_tensor_power": [
+          1.6355240063998395e-06,
+          9.752380952380912e-10
+        ],
+        "leading_power": [
+          1.6355240063998469e-06,
+          9.752380952380956e-10
+        ],
+        "exact_source_harmonic_power": [
+          1.6351378705914678e-06,
+          9.752034422145233e-10
+        ],
+        "relative_to_leading_minus_one": -0.00023597350423576469,
+        "harmonics_14_to_16_fraction": 2.568265254645009e-23,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": false
+      },
+      {
+        "q": 5.0,
+        "a_Omega_over_cT": 0.02,
+        "angular_tensor_power": [
+          1.0222025039998997e-07,
+          6.09523809523807e-11
+        ],
+        "leading_power": [
+          1.0222025039999043e-07,
+          6.095238095238097e-11
+        ],
+        "exact_source_harmonic_power": [
+          1.0221419893753465e-07,
+          6.09518392406145e-11
+        ],
+        "relative_to_leading_minus_one": -5.917024832513551e-05,
+        "harmonics_14_to_16_fraction": 4.349917985841094e-22,
+        "max_odd_density_coefficient": 1.0152208857194486e-16,
+        "equatorial_orbit_vertically_stable": false
+      },
+      {
+        "q": 5.0,
+        "a_Omega_over_cT": 0.01,
+        "angular_tensor_power": [
+          6.388765649999373e-09,
+          3.809523809523794e-12
+        ],
+        "leading_power": [
+          6.388765649999402e-09,
+          3.809523809523811e-12
+        ],
+        "exact_source_harmonic_power": [
+          6.3886710252281694e-09,
+          3.809515344475555e-12
+        ],
+        "relative_to_leading_minus_one": -1.4803617275904735e-05,
+        "harmonics_14_to_16_fraction": 6.850843649240031e-21,
+        "max_odd_density_coefficient": 1.0007415106216804e-16,
+        "equatorial_orbit_vertically_stable": false
+      }
+    ],
+    "calibration_example": {
+      "sqrt_q_bracket": [
+        "695857853623/500000000000",
+        "1391715707247/1000000000000"
+      ],
+      "q_bracket": [
+        "484218152448808494226129/250000000000000000000000",
+        "1936872609798017408319009/1000000000000000000000000"
+      ],
+      "q_approx": 1.9368726097956006,
+      "transverse_to_longitudinal_speed": 0.7185375538936453,
+      "polar_to_equatorial_static_potential": 1.3190034891778315,
+      "vertical_squared_frequency_to_orbital": 0.361993021644337,
+      "scope": "Exact polynomial sign bracket; equality to a supplied GR comparator with c_L=c_EM, not a measurement fit."
+    },
+    "mutations": [
+      {
+        "name": "omit_source_Taylor_half",
+        "detected": true
+      },
+      {
+        "name": "drop_longitudinal_power",
+        "detected": true
+      },
+      {
+        "name": "replace_cT_power7_by5",
+        "detected": true
+      }
+    ],
+    "elapsed_sec": 0.21471633296459913,
+    "scope": "Leading weak-source circular radiation and conservative mechanics only; no empirical test or relativistic matter model."
+  },
+  "readout": {
+    "schema": "vector_mechanical_readout_controls_v1",
+    "pass_count": 5,
+    "fail_count": 0,
+    "families": [
+      {
+        "family": "symbolic_plane_tide",
+        "rank_at_most_one": true,
+        "transverse_projection_exactly_zero": true
+      },
+      {
+        "family": "endpoint_acceleration_integral",
+        "cases": [
+          {
+            "case": 0,
+            "dimensionless_time": 0.3,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.05,
+            "mu": 0.36492630924322556,
+            "relative_error": 5.301821510890874e-15
+          },
+          {
+            "case": 0,
+            "dimensionless_time": 1.9,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.05,
+            "mu": 0.36492630924322556,
+            "relative_error": 4.705327439136877e-15
+          },
+          {
+            "case": 0,
+            "dimensionless_time": 4.5,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.05,
+            "mu": 0.36492630924322556,
+            "relative_error": 5.779373258061417e-15
+          },
+          {
+            "case": 1,
+            "dimensionless_time": 0.3,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.05,
+            "mu": 0.61840350412774,
+            "relative_error": 3.2984117328669173e-15
+          },
+          {
+            "case": 1,
+            "dimensionless_time": 1.9,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.05,
+            "mu": 0.61840350412774,
+            "relative_error": 5.962215344683895e-15
+          },
+          {
+            "case": 1,
+            "dimensionless_time": 4.5,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.05,
+            "mu": 0.61840350412774,
+            "relative_error": 5.1036320581068286e-15
+          },
+          {
+            "case": 2,
+            "dimensionless_time": 0.3,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.05,
+            "mu": 0.7537284922362251,
+            "relative_error": 5.90118260619616e-16
+          },
+          {
+            "case": 2,
+            "dimensionless_time": 1.9,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.05,
+            "mu": 0.7537284922362251,
+            "relative_error": 8.849557939494478e-16
+          },
+          {
+            "case": 2,
+            "dimensionless_time": 4.5,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.05,
+            "mu": 0.7537284922362251,
+            "relative_error": 6.891332932451839e-16
+          },
+          {
+            "case": 3,
+            "dimensionless_time": 0.3,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.6,
+            "mu": 0.31526912884974045,
+            "relative_error": 1.5441481732719832e-15
+          },
+          {
+            "case": 3,
+            "dimensionless_time": 1.9,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.6,
+            "mu": 0.31526912884974045,
+            "relative_error": 3.5526603094649196e-16
+          },
+          {
+            "case": 3,
+            "dimensionless_time": 4.5,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.6,
+            "mu": 0.31526912884974045,
+            "relative_error": 1.765200721139213e-16
+          },
+          {
+            "case": 4,
+            "dimensionless_time": 0.3,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.6,
+            "mu": 0.5688226055482324,
+            "relative_error": 1.5862298865989652e-15
+          },
+          {
+            "case": 4,
+            "dimensionless_time": 1.9,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.6,
+            "mu": 0.5688226055482324,
+            "relative_error": 6.514230618606325e-16
+          },
+          {
+            "case": 4,
+            "dimensionless_time": 4.5,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.6,
+            "mu": 0.5688226055482324,
+            "relative_error": 6.764684233392842e-16
+          },
+          {
+            "case": 5,
+            "dimensionless_time": 0.3,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.6,
+            "mu": -0.5163079144358012,
+            "relative_error": 2.3262096295228907e-15
+          },
+          {
+            "case": 5,
+            "dimensionless_time": 1.9,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.6,
+            "mu": -0.5163079144358012,
+            "relative_error": 1.2400532617572893e-15
+          },
+          {
+            "case": 5,
+            "dimensionless_time": 4.5,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.6,
+            "mu": -0.5163079144358012,
+            "relative_error": 1.2721997477652705e-15
+          },
+          {
+            "case": 6,
+            "dimensionless_time": 0.3,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 2.5,
+            "mu": -0.37620710722097406,
+            "relative_error": 1.0789266430466254e-15
+          },
+          {
+            "case": 6,
+            "dimensionless_time": 1.9,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 2.5,
+            "mu": -0.37620710722097406,
+            "relative_error": 4.038410846171509e-16
+          },
+          {
+            "case": 6,
+            "dimensionless_time": 4.5,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 2.5,
+            "mu": -0.37620710722097406,
+            "relative_error": 4.233808029351569e-16
+          },
+          {
+            "case": 7,
+            "dimensionless_time": 0.3,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 2.5,
+            "mu": 0.23278909679999504,
+            "relative_error": 1.1481741111261478e-15
+          },
+          {
+            "case": 7,
+            "dimensionless_time": 1.9,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 2.5,
+            "mu": 0.23278909679999504,
+            "relative_error": 2.0221867959034512e-16
+          },
+          {
+            "case": 7,
+            "dimensionless_time": 4.5,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 2.5,
+            "mu": 0.23278909679999504,
+            "relative_error": 2.351961714887337e-16
+          },
+          {
+            "case": 8,
+            "dimensionless_time": 0.3,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 2.5,
+            "mu": 0.7553342261122755,
+            "relative_error": 8.929088043810958e-16
+          },
+          {
+            "case": 8,
+            "dimensionless_time": 1.9,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 2.5,
+            "mu": 0.7553342261122755,
+            "relative_error": 4.646106350281439e-16
+          },
+          {
+            "case": 8,
+            "dimensionless_time": 4.5,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 2.5,
+            "mu": 0.7553342261122755,
+            "relative_error": 4.329694827512241e-16
+          },
+          {
+            "case": 9,
+            "dimensionless_time": 0.3,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.05,
+            "mu": 0.042544875585807496,
+            "relative_error": 1.1939533040521858e-13
+          },
+          {
+            "case": 9,
+            "dimensionless_time": 1.9,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.05,
+            "mu": 0.042544875585807496,
+            "relative_error": 1.0379687944409415e-13
+          },
+          {
+            "case": 9,
+            "dimensionless_time": 4.5,
+            "omega": 0.4,
+            "speed": 0.7,
+            "length": 0.05,
+            "mu": 0.042544875585807496,
+            "relative_error": 8.31438212689573e-14
+          },
+          {
+            "case": 10,
+            "dimensionless_time": 0.3,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.05,
+            "mu": -0.9830227112816756,
+            "relative_error": 4.597146673060752e-15
+          },
+          {
+            "case": 10,
+            "dimensionless_time": 1.9,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.05,
+            "mu": -0.9830227112816756,
+            "relative_error": 4.0027922207782556e-15
+          },
+          {
+            "case": 10,
+            "dimensionless_time": 4.5,
+            "omega": 1.0,
+            "speed": 1.0,
+            "length": 0.05,
+            "mu": -0.9830227112816756,
+            "relative_error": 4.07117002522278e-15
+          },
+          {
+            "case": 11,
+            "dimensionless_time": 0.3,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.05,
+            "mu": 0.8534846536616014,
+            "relative_error": 3.820304079224474e-15
+          },
+          {
+            "case": 11,
+            "dimensionless_time": 1.9,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.05,
+            "mu": 0.8534846536616014,
+            "relative_error": 4.87703785523613e-15
+          },
+          {
+            "case": 11,
+            "dimensionless_time": 4.5,
+            "omega": 2.2,
+            "speed": 1.8,
+            "length": 0.05,
+            "mu": 0.8534846536616014,
+            "relative_error": 4.407564169414746e-15
+          }
+        ],
+        "max_relative_error": 1.1939533040521858e-13,
+        "max_quad_diagnostic": 1.123769318843087e-14
+      },
+      {
+        "family": "angular_pattern_and_finite_arm",
+        "longitudinal_F": -0.2142857142857143,
+        "breathing_pattern": 0.2142857142857144,
+        "small_phase_values": [
+          0.08,
+          0.04,
+          0.02,
+          0.01
+        ],
+        "errors": [
+          0.005344946414084413,
+          0.0026725776155947616,
+          0.0013363018591050313,
+          0.0006681525609734277
+        ],
+        "halving_ratios": [
+          1.9999218667761447,
+          1.999980466527736,
+          1.9999951166215402
+        ],
+        "finite_exact_pattern_re_im": [
+          -0.15688647438003187,
+          -0.12910322483020525
+        ],
+        "finite_constant_pattern_relative_error": 0.6593442718210004,
+        "boundary": "mechanical endpoints only; no finite-frequency breathing/optical model compared"
+      },
+      {
+        "family": "two_speed_network",
+        "orientation_factors": [
+          0.5,
+          -0.3333333333333333,
+          0.4,
+          -0.42857142857142855
+        ],
+        "projected_baselines": [
+          0.0,
+          0.8,
+          1.7,
+          3.1
+        ],
+        "omega": 1.1,
+        "speeds": [
+          0.7,
+          1.0
+        ],
+        "two_speed_singular_values": [
+          1.8609186392448593,
+          0.4208868525251535
+        ],
+        "equal_speed_singular_values": [
+          1.187252778896614,
+          7.72682523912663e-17
+        ],
+        "single_alignment_constant_fit_error": 2.0895103284415337,
+        "meaning": "arbitrary synthetic orientation factors realizable by equal orthogonal arms"
+      },
+      {
+        "family": "negative_controls",
+        "wrong_sign_detected": true,
+        "transverse_force_detected": 1.414213562373095,
+        "single_speed_rank_reuse_detected": true,
+        "type": "explicit false-alternative comparisons, not mutated-source executions"
+      }
+    ],
+    "elapsed_seconds": 0.3631450831890106,
+    "empirical_data_used": false,
+    "limits": [
+      "linear prescribed plane waves",
+      "simultaneous mechanical length only",
+      "no optical or strain likelihood",
+      "finite-arm synthetic controls only"
+    ]
+  },
+  "check_families": {
+    "conservative_symbolic_frequencies_and_angular_integrals": true,
+    "angular_tensor_quadrature": true,
+    "finite_source_harmonics_and_odd_symmetry": true,
+    "slow_source_convergence": true,
+    "exact_comparator_root_bracket": true,
+    "radiation_false_alternatives": true,
+    "symbolic_plane_tide": true,
+    "endpoint_acceleration_integral": true,
+    "angular_pattern_and_finite_arm": true,
+    "two_speed_network": true,
+    "negative_controls": true
+  },
+  "checks_passed": 11,
+  "checks_failed": 0,
+  "scope": "Conditional weak matter/radiation and linear mechanical readout. No empirical fit, optical response or TOE."
+}

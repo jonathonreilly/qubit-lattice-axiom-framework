@@ -1,0 +1,168 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "campaign_context": [
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/PROTOCOL.md",
+      "sha256": "66c7ddb452e4385e64dec9d749b1fd76c28cdde131a446099d38293d564b678b",
+      "snapshot": "snapshots/campaign/PROTOCOL.md.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/DIRECT_VECTOR_COMPLETION.md",
+      "sha256": "0fb24c2072b5fcac16b991d8a29b6999531edfb6bc1041b73afb1cd377685ca8",
+      "snapshot": "snapshots/campaign/DIRECT_VECTOR_COMPLETION.md.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/direct_vector_check.py",
+      "sha256": "6205aa512256262fc1d10e6b854773d2a20f177825a82459fb1b2bde63189ce1",
+      "snapshot": "snapshots/campaign/direct_vector_check.py.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/evidence_v1/RESULTS.json",
+      "sha256": "d3210caf5904bcdf4997b04156645745444b413590b3264d5bccd5cd68cd123c",
+      "snapshot": "snapshots/campaign/evidence_v1/RESULTS.json.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/VECTOR_COMPLETION_REVIEW.md",
+      "sha256": "8fc03fa3df92265b086c4688eaddcd49b37cbf9dd5b9e9eef9eeb6e02c2bb2ae",
+      "snapshot": "snapshots/campaign/independent_review/VECTOR_COMPLETION_REVIEW.md.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/check_vector_independent.py",
+      "sha256": "4f2270ca212dae6c57fda050cd7c3a415244f258bcbbd32a977c348c63426ee3",
+      "snapshot": "snapshots/campaign/independent_review/check_vector_independent.py.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/check_vector_mutations.py",
+      "sha256": "704adbb3253d66e56e62e09f3aa6b908a8ee1054629849958aa56deb1bd19bce",
+      "snapshot": "snapshots/campaign/independent_review/check_vector_mutations.py.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/independent_vector_checks_v1.json",
+      "sha256": "2d2931966eba251929bc3aeefcb28d24b898ac582b91412e345bafd7da6ecc0d",
+      "snapshot": "snapshots/campaign/independent_review/independent_vector_checks_v1.json.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/independent_mutations_v1.json",
+      "sha256": "47004c9af55ba0194bf8e346b896f1044e3a591d2a972abe5b4be123720041c5",
+      "snapshot": "snapshots/campaign/independent_review/independent_mutations_v1.json.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/final_review_receipt_v1.json",
+      "sha256": "a3beabe3e5750b7d182c99294712029be9f2b05d270548d3ba5131ada38650ba",
+      "snapshot": "snapshots/campaign/independent_review/final_review_receipt_v1.json.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/independent_review/snapshot_manifest_v1.json",
+      "sha256": "b767c878366a44fc6e55aa2fc62fc8bd2b8c1a4166489734f322311b6cb49cae",
+      "snapshot": "snapshots/campaign/independent_review/snapshot_manifest_v1.json.snapshot"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/DIRECT_DYNAMICS.md",
+      "sha256": "6fbaf6b91561d3ce5a51b154a364e98d1fafedd1b94119f725df8df4219648d8",
+      "snapshot": "snapshots/campaign/prior_DIRECT_DYNAMICS.md.snapshot"
+    }
+  ],
+  "canonical": [
+    {
+      "base_state": "absent",
+      "bytes": 1630,
+      "git_blob": "c93c337dc5851f7317458605e895f1f4c6c40cb2",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/APPROACH_REGISTRY.md",
+      "sha256": "6aa059c106e62996794063063d15562d5af428f43d4c8c81ce2f7a19a4257625",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/APPROACH_REGISTRY.md.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 1084,
+      "git_blob": "90be9b6eb2b6840d34a39bf28ea3dabd976e0323",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "2beb375d1a2a61bb7b99e3f1f0b86eae9e80e975683040baace9d15221bc783a",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 1174,
+      "git_blob": "506cfdb5d29d6a9ec5086ea03da50def90d1ec3a",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/GOAL.md",
+      "sha256": "77a6c2ea2c8ad10daf0894aeeab91f9693c7df0470984272f5bd60ab6d44b136",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/GOAL.md.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 1051,
+      "git_blob": "3104a8d7007dd7a91b406e67ce7cf3773a74a76d",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md",
+      "sha256": "f91bdc6aec2c445660f1c2a09af02596bc33f60877cc50d45ea1832bee6c4ec7",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 676,
+      "git_blob": "e8fccf6b539053a0eff3b79fcf08969a8c435eda",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/TRACE_GATE.md",
+      "sha256": "a2c0fab6445ce8198b56e0b1bca292f5674bc5c1951f5445cbc43a592993a4dd",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/TRACE_GATE.md.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 150,
+      "git_blob": "9b65f82c7d47ff9f2e86eafc9124a447af943b11",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/IO_CONTROLS_v1.json",
+      "sha256": "8db68df4f2e2728f45d0c1f08c0649729cc9b70a2350cdd272d93c81f13c011b",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/IO_CONTROLS_v1.json.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 1226,
+      "git_blob": "aed008eec77f20b82c94a12a48b5950ff1fe0c06",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/RUN_RAW_v1.json",
+      "sha256": "9c9ef1b002aa9e1cec855588a653f2828bc432d0e5f98b5e8c8344f310d85c35",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/RUN_RAW_v1.json.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 19263,
+      "git_blob": "8067c7ddac3589f2e54fd583890b7a8e9da8fcf5",
+      "mode": "100644",
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json",
+      "sha256": "c5005b7d213deb29239b6e10ec69bf66176a9ae61a267ae9a72d82dc45a6a5ca",
+      "snapshot": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 11292,
+      "git_blob": "f49c9219c358f154ab1dd550e744a2a0ba1445a8",
+      "mode": "100644",
+      "path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "snapshot": "snapshots/canonical/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 1132,
+      "git_blob": "daeded81dca6103d40a7f8f80a8bdd26a90d977c",
+      "mode": "100644",
+      "path": "logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt",
+      "sha256": "ef4205dbb09df913916fded90ae8c3abf343fb4eaa8933796c054463385d0518",
+      "snapshot": "snapshots/canonical/logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt.snapshot"
+    },
+    {
+      "base_state": "absent",
+      "bytes": 8556,
+      "git_blob": "4772b4702c9c315f9785f7f6673b4245ea45a5a4",
+      "mode": "100644",
+      "path": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "snapshot": "snapshots/canonical/scripts/local_vector_homogeneous_response_2026_10_12.py.snapshot"
+    }
+  ],
+  "head": "68a7fa78907c2737e9f850679ba5a1c8db0df819",
+  "tree": "884e265476be4febb1744735dbb49cc2968d2736"
+}

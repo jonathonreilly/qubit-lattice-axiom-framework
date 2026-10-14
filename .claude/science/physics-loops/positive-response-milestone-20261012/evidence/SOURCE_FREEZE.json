@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-10-12T18:43:43.274098+00:00",
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "files": {
+    "docs/POSITIVE_MEDIATOR_FORCE_NOISE_AND_SOURCE_INVERSION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77",
+    "scripts/positive_mediator_inverse_2026_10_12.py": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9",
+    "scripts/data/positive_mediator_inverse_2026_10_12.json": "a359f8300f84e297d1a838e6e20a85d2267f0f14f50da74f73123a9a484b05db"
+  },
+  "author_checks": "10 families passed; all 10 intended mutation families failed",
+  "post_review_hygiene": "Explicit source shape=1 guard; all10 mutation families repeated and invalid-shape input rejected.",
+  "previous_freeze_sha256": "67f470e1c93a659085d34e22ea94886d1f9edf20140299098aa02291b9613222",
+  "final_metadata_change": "Date, Claim type and Status split into separate lines so the existing graph parser reads the intended classification; mathematical body unchanged."
+}

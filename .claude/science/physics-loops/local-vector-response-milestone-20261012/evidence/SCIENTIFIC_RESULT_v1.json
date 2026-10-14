@@ -1,0 +1,800 @@
+{
+  "identities": {
+    "scripts/local_vector_homogeneous_response_2026_10_12.py": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+    "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+  },
+  "environment": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "symbolic": {
+    "tensor_inverse": true,
+    "positive_branch_eigenvalues": true,
+    "dynamic_inverse": true,
+    "static_point_source": true,
+    "retarded_time_integral": true,
+    "spherical_Bessel_identity": true,
+    "source_sign": "u=-4*pi*G*G_ret*(rho*e); isotropic phi=-G*m*N/r"
+  },
+  "numerical": {
+    "real_to_Fourier_rows": [
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.0,
+        "real_integral": 0.4,
+        "spectral": 0.4,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.3,
+        "real_integral": 0.4,
+        "spectral": 0.4,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.8,
+        "real_integral": 0.4,
+        "spectral": 0.4,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 1.0,
+        "real_integral": 0.4,
+        "spectral": 0.4,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.0,
+        "real_integral": 1.9734397970509823,
+        "spectral": 1.9734397970509823,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.3,
+        "real_integral": 1.9710684693552867,
+        "spectral": 1.9710684693552865,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.8,
+        "real_integral": 1.956577022326035,
+        "spectral": 1.9565770223260353,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 1.0,
+        "real_integral": 1.9470917115432522,
+        "spectral": 1.9470917115432524,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.0,
+        "real_integral": 0.8007893213273053,
+        "spectral": 0.8007893213273054,
+        "absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.3,
+        "real_integral": 0.7924625545588112,
+        "spectral": 0.7924625545588111,
+        "absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.8,
+        "real_integral": 0.7415767576402351,
+        "spectral": 0.7415767576402351,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 1.0,
+        "real_integral": 0.708269690566258,
+        "spectral": 0.7082696905662581,
+        "absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.0,
+        "real_integral": -0.010714164129295444,
+        "spectral": -0.010714164129295442,
+        "absolute_error": 1.734723475976807e-18
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.3,
+        "real_integral": -0.003169570937626525,
+        "spectral": -0.0031695709376265337,
+        "absolute_error": 8.673617379884035e-18
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.8,
+        "real_integral": 0.04293627634479459,
+        "spectral": 0.042936276344794584,
+        "absolute_error": 6.938893903907228e-18
+      },
+      {
+        "N": 2.0,
+        "D": 1.0,
+        "alpha": 1.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 1.0,
+        "real_integral": 0.07311464911147021,
+        "spectral": 0.07311464911147021,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.0,
+        "real_integral": 0.5714285714285715,
+        "spectral": 0.5714285714285715,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.3,
+        "real_integral": 0.5714285714285715,
+        "spectral": 0.5714285714285715,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.8,
+        "real_integral": 0.5714285714285715,
+        "spectral": 0.5714285714285715,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 1.0,
+        "real_integral": 0.5714285714285715,
+        "spectral": 0.5714285714285715,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.0,
+        "real_integral": 2.8354238525825823,
+        "spectral": 2.8354238525825823,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.3,
+        "real_integral": 2.7911228426329124,
+        "spectral": 2.7911228426329124,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.8,
+        "real_integral": 2.5203944484960408,
+        "spectral": 2.520394448496041,
+        "absolute_error": 4.440892098500626e-16
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 1.0,
+        "real_integral": 2.343190408697361,
+        "spectral": 2.3431904086973616,
+        "absolute_error": 4.440892098500626e-16
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.0,
+        "real_integral": 1.2035278701766283,
+        "spectral": 1.203527870176628,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.3,
+        "real_integral": 1.095751958157709,
+        "spectral": 1.0957519581577093,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.8,
+        "real_integral": 0.43712138470875955,
+        "spectral": 0.4371213847087598,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 1.0,
+        "real_integral": 0.006017736633083803,
+        "spectral": 0.006017736633084039,
+        "absolute_error": 2.3592239273284576e-16
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.0,
+        "real_integral": -0.3340642238072142,
+        "spectral": -0.33406422380721423,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.3,
+        "real_integral": -0.3100062745640013,
+        "spectral": -0.31000627456400137,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.8,
+        "real_integral": -0.16298547363325597,
+        "spectral": -0.16298547363325594,
+        "absolute_error": 2.7755575615628914e-17
+      },
+      {
+        "N": 5.0,
+        "D": 0.2,
+        "alpha": 0.7,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 1.0,
+        "real_integral": -0.0667536766604045,
+        "spectral": -0.06675367666040445,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.0,
+        "real_integral": 0.2,
+        "spectral": 0.2,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.3,
+        "real_integral": 0.2,
+        "spectral": 0.2,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.8,
+        "real_integral": 0.2,
+        "spectral": 0.2,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 1.0,
+        "real_integral": 0.2,
+        "spectral": 0.2,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.0,
+        "real_integral": 0.9905033643682998,
+        "spectral": 0.9905033643682998,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.3,
+        "real_integral": 0.9905033643682998,
+        "spectral": 0.9905033643682999,
+        "absolute_error": 1.1102230246251565e-16
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.8,
+        "real_integral": 0.9905033643682998,
+        "spectral": 0.9905033643682998,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 1.0,
+        "real_integral": 0.9905033643682998,
+        "spectral": 0.9905033643682998,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.0,
+        "real_integral": 0.4142189837585806,
+        "spectral": 0.41421898375858063,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.3,
+        "real_integral": 0.4142189837585806,
+        "spectral": 0.41421898375858063,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.8,
+        "real_integral": 0.4142189837585806,
+        "spectral": 0.41421898375858063,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 1.0,
+        "real_integral": 0.4142189837585806,
+        "spectral": 0.41421898375858063,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.0,
+        "real_integral": -0.08934357160830213,
+        "spectral": -0.08934357160830213,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.3,
+        "real_integral": -0.08934357160830211,
+        "spectral": -0.08934357160830214,
+        "absolute_error": 2.7755575615628914e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.8,
+        "real_integral": -0.08934357160830211,
+        "spectral": -0.08934357160830213,
+        "absolute_error": 1.3877787807814457e-17
+      },
+      {
+        "N": 1.4,
+        "D": 1.4,
+        "alpha": 2.0,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 1.0,
+        "real_integral": -0.08934357160830213,
+        "spectral": -0.08934357160830213,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.0,
+        "real_integral": 1.3333333333333335,
+        "spectral": 1.3333333333333335,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.3,
+        "real_integral": 1.3333333333333335,
+        "spectral": 1.3333333333333335,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 0.8,
+        "real_integral": 1.3333333333333335,
+        "spectral": 1.3333333333333335,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.0,
+        "t": 0.4,
+        "cos_theta": 1.0,
+        "real_integral": 1.3333333333333335,
+        "spectral": 1.3333333333333335,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.0,
+        "real_integral": 6.470884218610065,
+        "spectral": 6.470884218610066,
+        "absolute_error": 8.881784197001252e-16
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.3,
+        "real_integral": 6.470282206576289,
+        "spectral": 6.47028220657629,
+        "absolute_error": 1.7763568394002505e-15
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 0.8,
+        "real_integral": 6.466603244147661,
+        "spectral": 6.466603244147661,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 0.2,
+        "t": 2.0,
+        "cos_theta": 1.0,
+        "real_integral": 6.464195196012558,
+        "spectral": 6.46419519601256,
+        "absolute_error": 1.7763568394002505e-15
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.0,
+        "real_integral": 2.295285174893485,
+        "spectral": 2.2952851748934844,
+        "absolute_error": 4.440892098500626e-16
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.3,
+        "real_integral": 2.2932705617474394,
+        "spectral": 2.2932705617474394,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 0.8,
+        "real_integral": 2.280959036966054,
+        "spectral": 2.2809590369660535,
+        "absolute_error": 4.440892098500626e-16
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 1.3,
+        "t": 0.9,
+        "cos_theta": 1.0,
+        "real_integral": 2.272900584381874,
+        "spectral": 2.272900584381874,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.0,
+        "real_integral": 0.05858727872633615,
+        "spectral": 0.05858727872633615,
+        "absolute_error": 0.0
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.3,
+        "real_integral": 0.05297121614083625,
+        "spectral": 0.052971216140836254,
+        "absolute_error": 6.938893903907228e-18
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 0.8,
+        "real_integral": 0.018650833673892413,
+        "spectral": 0.01865083367389241,
+        "absolute_error": 3.469446951953614e-18
+      },
+      {
+        "N": 3.0,
+        "D": 2.9,
+        "alpha": 0.3,
+        "k": 8.0,
+        "t": 1.1,
+        "cos_theta": 1.0,
+        "real_integral": -0.0038134166681071924,
+        "spectral": -0.0038134166681071807,
+        "absolute_error": 1.1709383462843448e-17
+      }
+    ],
+    "max_transform_error": 1.7763568394002505e-15,
+    "flux_samples": 120,
+    "max_flux_bound_ratio": 0.7984626971143164,
+    "off_cone_samples": [
+      {
+        "r": 0.2,
+        "t": 0.18000000000000002,
+        "outside_front": true
+      },
+      {
+        "r": 1.0,
+        "t": 0.9,
+        "outside_front": true
+      },
+      {
+        "r": 4.0,
+        "t": 3.6,
+        "outside_front": true
+      },
+      {
+        "r": 0.2,
+        "t": 0.06734983296193095,
+        "outside_front": true
+      },
+      {
+        "r": 1.0,
+        "t": 0.33674916480965467,
+        "outside_front": true
+      },
+      {
+        "r": 4.0,
+        "t": 1.3469966592386187,
+        "outside_front": true
+      },
+      {
+        "r": 0.2,
+        "t": 0.30119760955226726,
+        "outside_front": true
+      },
+      {
+        "r": 1.0,
+        "t": 1.505988047761336,
+        "outside_front": true
+      },
+      {
+        "r": 4.0,
+        "t": 6.023952191045344,
+        "outside_front": true
+      }
+    ],
+    "missing_intervening_term_mutation": {
+      "detected": true,
+      "difference": 0.5598960738067742
+    },
+    "scope": "Numerical controls supplement complete analytic energy and support proofs."
+  },
+  "check_families": {
+    "tensor_inverse": true,
+    "positive_branch_eigenvalues": true,
+    "dynamic_inverse": true,
+    "static_point_source": true,
+    "retarded_time_integral": true,
+    "spherical_Bessel_identity": true,
+    "real_to_Fourier_transform": true,
+    "energy_flux_diagnostics": true,
+    "off_cone_diagnostics": true,
+    "missing_intervening_term_rejected": true
+  },
+  "checks_passed": 10,
+  "checks_failed": 0,
+  "claim": "Conditional local vector construction matches homogeneous linear static response.",
+  "limits": "No nonlinear galaxy operator, tensor-wave identification, empirical acceptance or TOE."
+}

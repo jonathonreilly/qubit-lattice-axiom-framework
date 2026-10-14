@@ -1,0 +1,103 @@
+{
+  "scope": "independent finite diagnostic checks; no author helpers; no empirical fit",
+  "utc": "2026-10-12T18:41:57.078185+00:00",
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0"
+  },
+  "mpmath_decimal_precision": 60,
+  "checks": [
+    {
+      "name": "direct_angular_force_normalization",
+      "passed": true,
+      "evidence": {
+        "samples": 24,
+        "max_absolute_error": "7.7787690973264271339e-62"
+      }
+    },
+    {
+      "name": "ordered_discrete_profiles_and_degeneracies",
+      "passed": true,
+      "evidence": {
+        "determinant": "-0.025714173693943950728",
+        "ratios": [
+          "0.90682838241817469269",
+          "0.97156391263415614475"
+        ],
+        "degenerate_determinants": {
+          "one_mass": "0",
+          "equal_profile": "0",
+          "coincident_radius": "0"
+        }
+      }
+    },
+    {
+      "name": "source_charge_inverse_direct_force",
+      "passed": true,
+      "evidence": {
+        "lu_error": "5.1290862710288756616e-62",
+        "cramer_to_lu_error": "6.9575425931586274702e-61"
+      }
+    },
+    {
+      "name": "symbolic_small_mass_determinant",
+      "passed": true,
+      "evidence": {
+        "coefficient_epsilon4": "(c2 - m2)*(r1 - r2)*(r1 + r2)*(v2**2 - v4)/12",
+        "gamma_variance_numerator": "2*s*(s + 1)*(2*s + 3)"
+      }
+    },
+    {
+      "name": "force_remainder_absolute_not_one_sided",
+      "passed": true,
+      "evidence": {
+        "orders_symbolically_checked": 5,
+        "force_errors_at_0p1_and_10": [
+          -0.0035856226494731525,
+          0.17305431978087712
+        ]
+      }
+    },
+    {
+      "name": "massless_gaussian_vacuum_normalization",
+      "passed": true,
+      "evidence": {
+        "momentum_integral": 0.09251386380783216,
+        "analytic": 0.09251386380783216,
+        "quadrature_error_estimate": 4.341729627775145e-14
+      }
+    },
+    {
+      "name": "atomic_bin_boundary_and_threshold_controls",
+      "passed": true,
+      "evidence": {
+        "max_error_divided_by_bound": {
+          "Y": 0.30326684763887135,
+          "H": 0.4164913587679937,
+          "j": 0.12269821586543501
+        },
+        "mass_at_cap_and_zero": true,
+        "tail_atom": 5.0
+      }
+    },
+    {
+      "name": "infinite_first_moment_bin_construction",
+      "passed": true,
+      "evidence": {
+        "measure": "density (1+mu)^-2, mu>=0",
+        "tail_mass": 0.2,
+        "max_error_divided_by_bound": {
+          "Y": 0.051034341069932224,
+          "H": 0.11454455169668697,
+          "j": 0.0027449888135248177
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 1.6685592911671847,
+  "pass": 8,
+  "fail": 0
+}

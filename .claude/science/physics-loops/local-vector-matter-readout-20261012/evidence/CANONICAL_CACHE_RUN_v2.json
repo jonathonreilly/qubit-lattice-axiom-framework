@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/local_vector_matter_readout_2026_10_12.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS conservative frequencies, leading radiation,16 prescribed-source harmonic controls and exact calibration bracket\nPASS plane tide,36 endpoint integrations, finite-arm and two-speed network controls\nFalse alternatives are formula comparisons, not mutated-source executions.\nper_element: vector/tidal components and endpoint arms explicitly checked.\nper_site: four synthetic network sites; no physical discrete-site model supplied.\nper_mode: transverse/longitudinal radiative branches and mechanical projection checked.\nper_block: six matter/radiation and five readout families checked.\nlattice_wide: checked and not executed; continuum homogeneous candidate only.\nTOTAL: PASS=11 FAIL=0; conditional-support, no empirical acceptance.\n",
+  "stderr": "",
+  "elapsed_sec": 1.22963285446167,
+  "timeout_sec": 120,
+  "live_log": "/Users/jonBridger/.codex/worktrees/vector-matter-readout-20261012/New Axioms Lets Go/logs/runner-cache/.in-progress/local_vector_matter_readout_2026_10_12.txt"
+}

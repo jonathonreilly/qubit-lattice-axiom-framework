@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-12T22:37:55.084147+00:00",
+  "files": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/PROTOCOL.md",
+      "snapshot": "snapshots/PROTOCOL.md",
+      "sha256": "66c7ddb452e4385e64dec9d749b1fd76c28cdde131a446099d38293d564b678b",
+      "bytes": 2933
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/DIRECT_VECTOR_COMPLETION.md",
+      "snapshot": "snapshots/DIRECT_VECTOR_COMPLETION.md",
+      "sha256": "0fb24c2072b5fcac16b991d8a29b6999531edfb6bc1041b73afb1cd377685ca8",
+      "bytes": 7926
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/direct_vector_check.py",
+      "snapshot": "snapshots/direct_vector_check.py",
+      "sha256": "6205aa512256262fc1d10e6b854773d2a20f177825a82459fb1b2bde63189ce1",
+      "bytes": 6714
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/evidence_v1/RESULTS.json",
+      "snapshot": "snapshots/RESULTS.json",
+      "sha256": "d3210caf5904bcdf4997b04156645745444b413590b3264d5bccd5cd68cd123c",
+      "bytes": 18832
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/DIRECT_DYNAMICS.md",
+      "snapshot": "snapshots/prior_DIRECT_DYNAMICS.md",
+      "sha256": "6fbaf6b91561d3ce5a51b154a364e98d1fafedd1b94119f725df8df4219648d8",
+      "bytes": 16234
+    }
+  ]
+}

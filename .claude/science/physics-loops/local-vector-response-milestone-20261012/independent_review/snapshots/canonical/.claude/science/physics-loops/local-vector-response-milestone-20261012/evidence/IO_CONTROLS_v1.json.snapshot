@@ -1,0 +1,6 @@
+{
+  "synthetic_fixture_only": true,
+  "repeatable_default_publish": true,
+  "json_roundtrip": true,
+  "exclusive_sidecar_collision_preserved": true
+}

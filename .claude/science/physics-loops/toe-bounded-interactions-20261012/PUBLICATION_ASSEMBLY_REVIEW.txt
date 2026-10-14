@@ -1,0 +1,11 @@
+# Root review of exact publication repair
+
+Accepted for source integration. The complete prior review remains in INTERACTING_PUBLICATION_ASSEMBLY_ROOT_REVIEW.md at SHA292121d113afc588639ba4540698dc4283ddbc53f109143cfd0af80856c4e30d. Its full mathematical, procedure and scope coverage is reused at unchanged original bytes.
+
+The first staged verification stopped at the unchanged whitespace gate: eleven publication documents ended with extra blank lines. The failed run and complete streams remain in interacting_publication_execution/20261012T202630_verify_79b0ae168876. No ledger/audit check had run. Root copied the frozen package, removed only one final newline from nine packet documents and two final newlines from each canonical note, then updated exactly the two final wrapper strings, publication hashes and two identity-tool metadata anchors. Every original argument, archive and integration driver is unchanged. The complete root repair script was authored and inspected; literal reconstruction still matches both publications with the same six approved citation/link edits.
+
+New freeze: 5d1b45c784602c98b85e366b25a330b8999139c09210d2f87afbd5ab1b8e1855; all 173 members checked. Canonical interaction8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2 and preparationdd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca supersede their old publication hashes only. The old author records and generation scripts remain historical v1 records; ROOT_EOF_REPAIR.json and ROOT_EOF_REPAIR_SCRIPT.py define the explicit additional transformation. No science, gate, premise, review obligation or audit status changed.
+
+The first repair-copy attempt inherited read-only modes and stopped at the first write. That entire copy and script are preserved separately; the second copy was made writable before this narrow repair. Original source freeze remains intact.
+
+Root authorizes fresh source integration and unchanged prepare/stage/verify gates. The old installed 142 files must be pinned and archived before removal; only the root-owned new files and staged entries may be removed, and the one old graph manifest restored to the exact base. No reset of unrelated work is authorized. This is publication maintenance and reused source review, not new mathematical evidence or an independent audit.

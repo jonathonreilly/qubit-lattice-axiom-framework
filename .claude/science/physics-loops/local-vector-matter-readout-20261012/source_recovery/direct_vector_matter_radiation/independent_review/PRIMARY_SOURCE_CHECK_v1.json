@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-12T23:06:36.231107+00:00",
+  "observational_source": {
+    "url": "https://arxiv.org/html/1606.02744v1",
+    "abstract_url": "https://arxiv.org/abs/1606.02744",
+    "supported_context": "Abstract and sections II-IV: timing data preparation, relativistic delay model, fitted parameters and Galactic correction. Reported corrected ratio 0.9983 +/- 0.0016 agrees with the ledger. This is contextual motivation, not vector-model validation.",
+    "data_or_likelihood_downloaded": false
+  },
+  "GR_comparator_source": {
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.131.435",
+    "abstract_read": true,
+    "abstract_scope": "Two-body radiation in the slow-orbital-velocity approximation.",
+    "full_pdf_attempt": "https://journals.aps.org/pr/pdf/10.1103/PhysRev.131.435",
+    "full_pdf_result": "Internal Error",
+    "proof_use": "GR quadrupole formula is expressly supplied; circular tensor contraction independently checked. No unread PDF content is claimed."
+  },
+  "Zenodo": "The arXiv paper links companion timing files at DOI10.5281/zenodo.54764; none was downloaded or fitted.",
+  "empirical_fit_or_exclusion": false
+}

@@ -1,0 +1,9 @@
+PASS conservative frequencies, leading radiation,16 prescribed-source harmonic controls and exact calibration bracket
+PASS plane tide,36 endpoint integrations, finite-arm and two-speed network controls
+False alternatives are formula comparisons, not mutated-source executions.
+per_element: vector/tidal components and endpoint arms explicitly checked.
+per_site: four synthetic network sites; no physical discrete-site model supplied.
+per_mode: transverse/longitudinal radiative branches and mechanical projection checked.
+per_block: six matter/radiation and five readout families checked.
+lattice_wide: checked and not executed; continuum homogeneous candidate only.
+TOTAL: PASS=11 FAIL=0; conditional-support, no empirical acceptance.

@@ -1,0 +1,113 @@
+{
+  "at": "2026-10-12T21:11:35.364488+00:00",
+  "reviewer_session": "/root/direct_quantum_visibility_review",
+  "checker_sha256": "a505b6072083ef1a06216006e4f91baa4b038ba62c127e97a7c3e87df08c45f0",
+  "reviewed_sources": {
+    "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+    "scripts/sphere_quantum_visibility_reflection_2026_10_12.py": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc",
+    "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt": "6d824ece1241b706f1d62941e7593cad8fead772b08c2c78240525a3ddfecd6a"
+  },
+  "source_freeze_sha256": "24889d899e7fb73c0a45e72212644b5000f47d2b418551b48bcc06467260f8d1",
+  "runner_imports": [
+    "import os",
+    "import argparse",
+    "import json",
+    "import math",
+    "from decimal import Decimal, localcontext",
+    "from fractions import Fraction as F",
+    "import mpmath as mp",
+    "import numpy as np",
+    "from scipy.special import roots_legendre"
+  ],
+  "runtime_file_IO": [],
+  "literal_metadata": {
+    "AUDIT_TIMEOUT_SEC": 120,
+    "AUDIT_INPUT_PATHS": [
+      "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    ]
+  },
+  "cache_status": "fresh",
+  "input_fingerprint_sha256": "2fdfe9fb317e3036e24e4c3aa7b10887c2c587fb4be7369a20c9fec101008ac4",
+  "local_link_targets": [
+    "scripts/sphere_quantum_visibility_reflection_2026_10_12.py",
+    "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt"
+  ],
+  "old_helper_AST_identity": [
+    "atan_fraction_interval",
+    "pi_interval",
+    "IV",
+    "polynomial",
+    "sincos_interval",
+    "exp_interval"
+  ],
+  "mutation_evidence": [
+    {
+      "family": "outward_rational_arithmetic",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "transcendental_numerical_controls",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "harmonic_projection_reflection",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "reflection_diagonal_and_multiplicity",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "signed_polynomial_trace_norm",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "one_state_signed_clifford_sectors",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "degree_three_exact_enclosure",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "sampling_density_and_weight",
+      "exit": 1,
+      "intended_failure_present": true
+    },
+    {
+      "family": "witness_and_conditional_error_bound",
+      "exit": 1,
+      "intended_failure_present": true
+    }
+  ],
+  "JSON_execution_pass_count": 9,
+  "JSON_execution_fail_count": 0,
+  "canonical_cache_unchanged_by_execution": true,
+  "rational_certificate_exactly_matches_prior_reviewed_source": true,
+  "independent_interval_still_nested": true,
+  "reused_independent_exact_check_sha256": "c6406ef447693ef2d986292220a4708c99a62a36fa869bc60d74e082a3121ff5",
+  "new_exact_reflection_controls": [
+    "1",
+    "-1",
+    "9/8",
+    "15/16"
+  ],
+  "calibration_identity_error": "0.0",
+  "no_go_detector": {
+    "source_is_no_go_artifact": false,
+    "negative_boundary_assertion": false,
+    "requires_in_forensic_mode_0": false,
+    "requires_in_forensic_mode_1": false
+  },
+  "no_go_semantic_disposition": "Not a route-exhaustion or framework-wall claim; no N1-N8 packet required for this algebraic criterion and prospective bounded statistic.",
+  "elapsed_seconds": 0.6205968856811523,
+  "combined_pipeline_executed": false,
+  "limits": "Source readiness only; no integration/landing, retained status, original all-sphere classification, apparatus or empirical claim."
+}

@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+"""Source bytes and publication reconstruction only; zero mathematical predicates."""
+from pathlib import Path, PurePosixPath
+import gzip
+import hashlib
+import json
+import sys
+
+AUDIT_TIMEOUT_SEC = 60
+AUDIT_INPUT_PATHS = ['.claude/science/physics-loops/toe-bounded-interactions-20261012/EVIDENCE_MAP.json', '.claude/science/physics-loops/toe-bounded-interactions-20261012/PARENT_BINDINGS.json', '.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json', '.claude/science/physics-loops/toe-bounded-interactions-20261012/SOURCE_REVIEW_STATUS.json', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/009043c543e809e4a19483bdc3d2932e61ff92170f1f76428cf8e851e3c48e57.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/0128fec96c3aab589b3fdfc0d7ef0f1c109d3a4f202202564326872157cc77e1.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/0928721e04b389e86571d48950fc71a10f75ce8e690ba25dd9a58944eb5b7504.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/10624298cb6b5ebb7a2878d69c1ca3cd71f82c8f77e6bb7db22126d7db52e96b.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/13d0cda191d566c70b40117a9166c87e0755892dc4fbd655d6b9f4f0f3cd2daf.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/14921ad5398725feebcf293f66a02db85da39ff802d53d31c6896ceb59d90f69.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/165b520fdf69841e7800574ecf04f47103c3247648e2c4ab41450b5910509361.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/16a2181518e1880d6fbdea40ed1e67d9247ecb10f94a5f4ce0c8c5ac6025b8b0.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/16e4362b00b97019d1e1ca774dde591c07963089b63166efa8500a8175fbff1a.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/1a5c001f6e316aa5eadcbf7e93cdddbcbcd8436c3fed7b9df20a83a5ceb01527.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/1cc3d7b9cc5ba31416f6e950001f575551d804a12aa43a543dcac550ebd820ba.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/1e01eb761cf021d9d5369c5a35af22af43972d91e447f090887ae1996b0acd7d.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/1f2b92363c1de1c9255066f9520a6a95db7a244763097a1c8bf2bffa48df23c6.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/20ceededeabb0a81a182e4ce73809d0ce2db790fb4d51ac204d315a44a4b359a.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/21da3239222dda128a8c269d8a34d722bd83dc645b68d88100427a6711d8835f.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/261680f1a4a1f971266dfc6632a139b029e457ffae28701ba61334363c1503c4.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/26da3c9928f52bf6ac1add053472d3386c47f6bbe1493d1d51f239c2c887bab2.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/2826a59d563928eca32c12aabd65d0a84bc8a0a2cb47a15c3ef83483a6097651.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/2be6574ab6230b66759d4516b1acb0c4502ff12d1364b5c7a2f36295013908d3.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/2c4f538536d40825d07ae2762dfbb79b51ac1f3ded17a15fba4f3be9970e60a6.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/3248093cfe4ea554ada8dbc83f719a603eada1d0a353a7742713cc534f87d5d6.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/3574ae27f6ab03ac371587c7f34eea56fc4bf93d617c3a19f693dffa471f2b99.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/36b88a3704e2bd4d0063257a2a04160cb1d6ea846ac2af0ee4d893d9f6075e06.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/39f35bad206416027133676b362b99b924dfba9a1507784eb60ef2830a4be515.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/3ac5a798d0c48822eb2495deed89bfd4bcf5aef4ffa60019dded169aee230eec.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/3afcf9f0020b453e8f6a04d0c7e3e9c8fa877818c70ab41afd8f56ceb6a48a28.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/3c42fc40b57123d2875ea234c9363380319d4ccddb511c11426732476d713629.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/3ed59d80631e340176e325ff848240f370c007f881d11c974a43c2534be462cb.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/40b8b24b22a001a71ad5ef5181c9c4e29341c5feff3534cdd8ad7e8547e3afe1.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/426734d0e01dee8ec4189a8278c4104f611c91a828d03778893e854e6ea7a510.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/46cd3a579db898e36f282a36c19c223bb9b0876484c5e4de25b117b6fde19609.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/47995ff099e6985fa0f73fa4cccf46faa99779aaec1bae9b226dc7b546d8226e.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/47e7c1babb9b51c4772813cb83f34c088f8df950a3d5fac678d8781f6e01e695.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/4993b7d0688f568860b2549073877707eb49d7a569d48ef23f6a4f3ee87575f8.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/4d573b5f9f0fd13ec43145a71dc1be88304ed7c725cb1b7ab3f6743dc1610b8e.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5170b58d5593e5e4b361c0426939116aaba32b889af86338bea13ea3f29f8ac2.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/520ea3470fbf52168ba4bcadef5332e4ac34019e77c224eb6939236b849146ed.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/52ba5f7fed613c0ecf744750ebc6ae281d4400ff73e686d2e99579cf6c8017af.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5643c66e635dc5a52fef0582393505fc0a182d9d3f667086ec37a69ea3bf1426.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/56d0fb646ce186059bd01a006f6f980fd1e2c7c61afefde34982fa3bd931e0e9.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/58e1ee8c3a75b7999dbaf36bfb2043af72a489ef382a7c53cef9baf39d66a7b1.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/591f792c5a9359d04ec815f7fe6de96bf55f983e748099fdcb956508fb26981c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5ba536c715eb6c3069c4e2937f288eee2ce0cbbce87621065055804318cb65cb.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5c05a9a8bc926c9a59f4098f009476fc259d55e90eb9b596f34dcdce4ceb69f6.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5cafc3807bb1c6757944fdcb8d7e6e6e8a93dc3568d26e55409dcc799dd50b51.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5cb275ecd82ea246a18af156e8192baa65dc54d2909aa69c6a79eeee28a11937.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5eb3fad4cc6651a33f10a3b23e2b02038cb74eee9bf75a496c77e6961fdbc736.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/5f6589a2712e6cc06ed380ee4cc3db64152814abe06ece9eb258d1981d9b9b73.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/6099b53dc0fed4a8d9457b7d48e14254c4fc56130bebcac36c46a69a74c0b96d.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/6415d14a70c6c9a6187115426dce87e88770654b7107ee1e0cbe78ee1cc86ddd.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/66356c203e8df633f303c2dfa552e6390aabbe1a1b9decdf00d00853259470f6.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/67297c66ee882b39cdb97baa6a2d9905ba75374eeb6c2634b1d69b1a248b3eeb.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/67a4e96574811244a8c983401df43c3f0eeb1db4e2655849c75d729252433ca5.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/6bb2cf06dfc2fd7b4cd762f737a956371c1907a359ba9463fef0a2a7a53c2c63.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/6d82cfece7f56a333c3583fa7e97b1b2e38edd5c414893ba128e70a74c60ba7c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/7155de782fc43b7235d8823de8ffbceaf987040cc3b04688cd9e59d4f0d93233.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/74c09b82beeb7118a3adf866c434f1bf6aabd3bce0c4f330d92ee24679020703.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/799ce006d7d5eb5e690df1acd2e274280c3944f4be26df85be1666cb129b86de.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/79b8354319aee9cbf789679253f323a403c6a8d2c24cf5a0bce16a45f73c1746.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/79caa4047103759248ed9487c4a9d3b66df69a21ea19551cf75b3809073ca89c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/7d9509a4d2c4b3fb956fd8e0379c39c3b24b245c271b239bed3ea49e1f50a22c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/7e1bd511c836a18633b844ca3f274129439b3e9016405c97b784e1d903630c41.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/86c799a1f5822068cfe1752cf09073b2baca6eaecedfd6bf66076253ee13e9f2.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/8742efa3575cdb60c57d2fd562ed24031e1a32f265824d333968b9aa239a5c1e.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/8db4ed94f2888d8080412d411beca49c36823251eafe72414e612b4223b99e54.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/92fb4dcbbd817a200446a0f11396507bf6979136ff38c5eacc6147238edc9ee9.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/94c6cd779b7308187ddb6ed6958ed71a3e936c56ef48af2c9037822a0cbc4ef0.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/9716960392a6fa3b9465c2600bb8bb4a722fcbb8d1b1e7603bb8c8e35c28574f.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/97db30532fcaa9faef344835370a3fc111b1fdb11d2a7cad4984d70b16b21a8b.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/981875c839b6d38dbe33887c3f19235852381eed1bf0fd53c98db0a9821da239.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/9c96dc6d3cbdcc8f70c832afdff73eac1b64a44aafa884c97ad9163b83e1a3db.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/9f13038005c49cf9428664b3a8e5d94be858c5739b7a8e1c1cf19ed093b75d5c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/9f5339805d51c6a06f755c7cfcf39be21b39e30ae07c9cceb01d94652d164b20.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/a13abe131e70572b5ddecc5500b4c88ad821f34d97786a5920c818b7b1395432.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/a165d971d908a6c9769d94eb83c463d550af62b9869b4c33f4ada2d18fdfbc4e.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/a323115d3f638c0b0010715afbea153b980426e685cdf4f111f3a1ea1d5606e7.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/a8a34cf8d1f26adad5c9b3d202f538dfd65a50ab46e85b76bfdc4f1078c11a29.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/ac2a97e8dc142657319c698a8d83186f5d4220649615f13e51671572fcc1f463.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/af0cf7d6e9ea98fc92ac86df651c136cb2766f40571b814b69f3850304ebfe53.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/b0be7e4d910ddcd52399379ed491efbbed265515c2fc7cd65019837b1cc9452f.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/b46bbf58db9ca90ce1679ee86c90e079bd83c231f4649b9e2f2dcd9311d42ec8.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/b5add35d8f8bfd5994eade66b90a4f8275650b2c986bd96a20d3cc123bda9033.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/b9dba13035dcf7ed2e4f704364a8704ebd9e86c1cd48eef748dae65fdc939508.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/bbaf2cb729e9dc696316d5dcb45cde7c6945160fa01c43e6a9602a383e14549d.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/beff44ab9f6bb88fcc0acf38a36be508bfbf03bd8790a005b91ae9135d4e1a54.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/bf6c16c32fc19030628c421bec46f89288eb85b029f8e22199a68a4acf041ef2.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/c30bf9c4e6437f251d1e4cc3290c83a5e418751c6b8074c0be5b8f24a31be284.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/c4bbd5bb1c4a4baac591191ab3142d2fcac1dbf1fd5f5a59efcf4b89099e4fb7.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/cf4ca7f23e6fd9d78ad9fafb99994a19263e135cb4e572153da5086a0ef218c3.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/d039ec76627896ff2cb3937a307586d3ec0fa0ae06621a1d9ca9ae4ff6669671.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/d1d89ac2584bbeb402c263d8ec7fcf321838dbc755fcb5b5525f9fa691cfa6cb.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/d63214a0d6365e1ae339f63caad67526bdd942130f76b064b13c2b7b2365b49c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/d79a0f88d069d48f72a752dac98e054de9324b50b0548e4eb19bfff29aa96691.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/dc6d560f3ecc06d6d965449859f68f1205fb85f9020065a3df01ae8c838d0b59.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/debe3fe1b5519ce4119bb8f987e1ef562f5ac8834e3655ffe0a5dd2e92b07363.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/df44cdf789e659feb0812e649c0c2683dfd1d692e84f1178836447574838db6c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/e2dfa0c2d85e4011f525833af91b616974fafa28639fa5923b7a0d08889d2749.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/e66e7741331052b3b9d3bcbb04f4a0c03a594e36fff3e2d6339c4257c4b7d465.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/e9d0f0e028f889bda8f1390c3db1deda902e4ace0d18e971217731e692f9e369.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/e9e3e8736df7c258f4c0cfe1fb21fd22759d572dc6bdd075d975bb3fc62b8432.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/eb2c297e7f0a7b4eb3bee4756cac0a8861fcf382bf4f34e65b6e05c8431f2b1a.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/f12c6c6ebb8ef253cdc5c83a2f39c510638012de2bc2dffce7eafbac3ab301d6.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/f1418ccd094a67060f018aa152576dcfaa2c5dda101a7213f6040ca515533703.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/f303712b2eebabecfff3116dcb304066cf3a06190fbcec147a56dfe5f65198f5.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/f322d9262724208ce26eea6f181e81eefef73cbbf162fdf3eb1af278ec71895b.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/f500d3b07273824b5f3c2bedc5618ba4c69c6843c0525b24b4d08ce57c1456b4.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/fc5f07b51640ae40ff4b2b1fbf8f8257bca6f571b743e6416eb2c95ecf632278.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/fd7869b5a41da4dadfc1bdd025e2f5d0c83d2ede2f6bd17264af57ef1854148c.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/fe3862a6f975ea2e0a5bb4852c620bd6a066002a51b04fb62cf4fdcb25138ac1.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/fe3aa3cde43c557609b66b589ac49d16c3f9f8207f0d75ff0ff3a1cf3d692245.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/fe42f8f2f83310619f94133c63a313393fe7da3705a54472b1428170f92d8702.gz', '.claude/science/physics-loops/toe-bounded-interactions-20261012/objects/ff740497d1d0ded1f332c2c3fc2a69fe985c488ba6a4ae76cbcd049d21bf5f4c.gz', 'docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md']
+PACKET = '.claude/science/physics-loops/toe-bounded-interactions-20261012'
+CLAIM = 'bounded_interaction_ground_bounded_theorem_note_2026-10-12'
+MAP_SHA = '39b9ac3b713fe7cd026be963f23dafbdc495090fc2b15eeea278f6b445b64e5f'
+EDITS_SHA = '48aa415fa344e2161dc3906dcb4e4bbc2248099e8d686e13516b7b7c2eb41b54'
+PARENTS_SHA = '8fbbd8cd3a408226bcb82172d7e7a8e29d899e4f21f22dd8d9de5412a35f1103'
+STATUS_SHA = '92f90f4eab2b19d65ea54659515924ede0737171ee158832276787c3db5ec240'
+
+
+def need(ok, message):
+    if not ok:
+        raise ValueError(message)
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def verify(root):
+    reads = []
+    def read(name):
+        relative = PurePosixPath(name)
+        need(not relative.is_absolute() and '..' not in relative.parts, 'Unsafe declared input')
+        path = root.joinpath(*relative.parts)
+        need(path.is_file() and not path.is_symlink() and path.resolve().is_relative_to(root),
+             'Declared input missing or outside repository')
+        reads.append(name)
+        return path.read_bytes()
+    raw_map = read(PACKET + '/EVIDENCE_MAP.json')
+    need(sha(raw_map) == MAP_SHA, 'Archive map changed')
+    evidence = json.loads(raw_map)
+    objects = evidence['objects']
+    need(len({o['sha256'] for o in objects}) == len(objects) and
+         len({o['path'] for o in objects}) == len(objects), 'Duplicate archive object')
+    contents, origins = {}, {}
+    for obj in objects:
+        stored = read(PACKET + '/' + obj['path'])
+        need(sha(stored) == obj['stored_sha256'], 'Compressed archive changed')
+        data = gzip.decompress(stored)
+        need(sha(data) == obj['sha256'] and len(data) == obj['bytes'], 'Archived source changed')
+        contents[obj['sha256']] = data
+        for origin in obj['origins']:
+            need(origin['path'] not in origins, 'Duplicate original alias')
+            origins[origin['path']] = obj['sha256']
+    for contract in evidence['contracts']:
+        manifest = json.loads(contents[contract['manifest_sha256']])
+        members = []
+        for row in manifest['files']:
+            original = Path(row['path'])
+            if not original.is_absolute():
+                original = Path(contract['manifest_path']).parent / original
+            data = contents[row['sha256']]
+            need(origins.get(str(original)) == row['sha256'], 'Manifest source alias missing')
+            if 'bytes' in row:
+                need(len(data) == row['bytes'], 'Manifest source byte count differs')
+            members.append(dict(path=str(original), sha256=row['sha256'], bytes=len(data)))
+        need(members == contract['members'], 'Exact archived manifest inventory differs')
+    raw_edits = read(PACKET + '/PUBLICATION_EDITS.json')
+    need(sha(raw_edits) == EDITS_SHA, 'Publication transformation changed')
+    edits = json.loads(raw_edits)['notes']
+    need(len(edits) == 2 and {r['key'] for r in edits} == {'interaction', 'preparation'}, 'Publication membership differs')
+    for row in edits:
+        original = contents[row['source_sha256']]
+        removed = row['removed_metadata'].encode()
+        need(original.startswith(removed) and len(original) == row['source_bytes'], 'Original source differs')
+        body = original[len(removed):]
+        need(sha(body) == row['body_sha256'] and len(body) == row['body_bytes'] and
+             row['mathematical_body_edits'] == [], 'Original body contract differs')
+        for edit in row['citation_relocations']:
+            old, new = edit['old'].encode(), edit['new'].encode()
+            need(body.count(old) == 1, 'Exact citation source count differs')
+            body = body.replace(old, new, 1)
+        need(sha(body) == row['published_body_sha256'], 'Citation-only body differs')
+        later = contents[row['later_source_sha256']] if row['later_source_sha256'] else b''
+        need(len(later) == row['later_source_bytes'], 'Later companion source differs')
+        published = read(row['note'])
+        reconstructed = (row['header'].encode() + body + row['appendix'].encode() +
+                         later + row['ending'].encode())
+        need(published == reconstructed and sha(published) == row['published_sha256'],
+             'Published source does not reconstruct')
+    raw_parents = read(PACKET + '/PARENT_BINDINGS.json')
+    need(sha(raw_parents) == PARENTS_SHA, 'Parent bindings changed')
+    parents = json.loads(raw_parents)['parents']
+    need(len(parents) == 4, 'Live parent membership differs')
+    for row in parents:
+        need(sha(read(row['path'])) == row['published_sha256'], 'Canonical parent bytes changed')
+    raw_status = read(PACKET + '/SOURCE_REVIEW_STATUS.json')
+    need(sha(raw_status) == STATUS_SHA, 'Review scope changed')
+    status = json.loads(raw_status)
+    need(status['no_go_packet_pass'] is False and status['N1'] == status['N5'] == 'pending',
+         'Formal packet status changed')
+    need(set(reads) == set(AUDIT_INPUT_PATHS) and len(reads) == len(set(reads)), 'Declared read closure differs')
+    return {'result': 'source_identities_and_reconstruction_match', 'claim_id': CLAIM,
+        'meaning': 'Integrity only; no mathematical calculation, proof or audit was executed.',
+        'mathematical_operations_executed': False, 'mathematical_predicates_executed': 0,
+        'scientific_mutations_executed': 0, 'independent_review_supplied_by_tool': False,
+        'no_go_packet_pass_supplied_by_tool': False,
+        'external_scientific_input_reads': [p['path'] for p in parents],
+        'package_local_integrity_reads': sorted(set(reads) - {p['path'] for p in parents})}
+
+
+def main():
+    print(json.dumps(verify(Path(__file__).resolve().parents[1]), sort_keys=True))
+    print('per_element: checked and not executed — source integrity only; no interaction, energy or adiabatic inequality was computed.')
+    print('per_site: checked and not executed — source integrity only; no spin or ordinary physical-cell correlation was computed.')
+    print('per_mode: checked and not executed — source integrity only; no gap, resolvent bound or sharpness asymptotic was computed.')
+    print('per_block: checked and not executed — source integrity only; no CAR commutator, formal theorem or scientific mutation was computed.')
+    print('lattice_wide: checked and not executed — source integrity only; no unbounded-domain, ground-limit or preparation proof was executed.')
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception as error:
+        print(json.dumps({'result': 'identity_verification_incomplete', 'error': str(error),
+                          'mathematical_operations_executed': False}), file=sys.stderr)
+        raise SystemExit(1)

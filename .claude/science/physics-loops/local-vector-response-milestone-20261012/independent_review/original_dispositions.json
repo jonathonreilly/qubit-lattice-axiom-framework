@@ -1,0 +1,168 @@
+{
+  "reviewer_session": "/root/direct_field_check",
+  "scope": "Focused same-session scientific/source review, not audit or landing authority.",
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "head": "68a7fa78907c2737e9f850679ba5a1c8db0df819",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/APPROACH_REGISTRY.md",
+      "original_sha256": "6aa059c106e62996794063063d15562d5af428f43d4c8c81ce2f7a19a4257625",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/APPROACH_REGISTRY.md",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/APPROACH_REGISTRY.md.snapshot",
+        "mode": "100644",
+        "git_blob": "c93c337dc5851f7317458605e895f1f4c6c40cb2"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/APPROACH_REGISTRY.md",
+      "final_sha256": "6aa059c106e62996794063063d15562d5af428f43d4c8c81ce2f7a19a4257625",
+      "review_scope": "Reviewed all proof rows and proof graph. Correctly separates complete conditional linear argument from unexplored nonlinear completion."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "2beb375d1a2a61bb7b99e3f1f0b86eae9e80e975683040baace9d15221bc783a",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md.snapshot",
+        "mode": "100644",
+        "git_blob": "90be9b6eb2b6840d34a39bf28ea3dabd976e0323"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "2beb375d1a2a61bb7b99e3f1f0b86eae9e80e975683040baace9d15221bc783a",
+      "review_scope": "Reviewed complete metadata and authority boundary. Conditional supplied model only; no audit or retained-grade claim."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/GOAL.md",
+      "original_sha256": "77a6c2ea2c8ad10daf0894aeeab91f9693c7df0470984272f5bd60ab6d44b136",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/GOAL.md",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/GOAL.md.snapshot",
+        "mode": "100644",
+        "git_blob": "506cfdb5d29d6a9ec5086ea03da50def90d1ec3a"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/GOAL.md",
+      "final_sha256": "77a6c2ea2c8ad10daf0894aeeab91f9693c7df0470984272f5bd60ab6d44b136",
+      "review_scope": "Reviewed complete target, boundary cases, frozen base/instruction identities and unchanged campaign clock."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md",
+      "original_sha256": "f91bdc6aec2c445660f1c2a09af02596bc33f60877cc50d45ea1832bee6c4ec7",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md.snapshot",
+        "mode": "100644",
+        "git_blob": "3104a8d7007dd7a91b406e67ce7cf3773a74a76d"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md",
+      "final_sha256": "f91bdc6aec2c445660f1c2a09af02596bc33f60877cc50d45ea1832bee6c4ec7",
+      "review_scope": "Reviewed runner/input/timeout/sidecar and source-recovery claims. Execution evidence and scientific proof remain distinct."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/TRACE_GATE.md",
+      "original_sha256": "a2c0fab6445ce8198b56e0b1bca292f5674bc5c1951f5445cbc43a592993a4dd",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/TRACE_GATE.md",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/TRACE_GATE.md.snapshot",
+        "mode": "100644",
+        "git_blob": "e8fccf6b539053a0eff3b79fcf08969a8c435eda"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/TRACE_GATE.md",
+      "final_sha256": "a2c0fab6445ce8198b56e0b1bca292f5674bc5c1951f5445cbc43a592993a4dd",
+      "review_scope": "Reviewed full trace metadata and physical interpretation. No empirical acceptance or physical-species identification."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/IO_CONTROLS_v1.json",
+      "original_sha256": "8db68df4f2e2728f45d0c1f08c0649729cc9b70a2350cdd272d93c81f13c011b",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/IO_CONTROLS_v1.json",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/IO_CONTROLS_v1.json.snapshot",
+        "mode": "100644",
+        "git_blob": "9b65f82c7d47ff9f2e86eafc9124a447af943b11"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/IO_CONTROLS_v1.json",
+      "final_sha256": "8db68df4f2e2728f45d0c1f08c0649729cc9b70a2350cdd272d93c81f13c011b",
+      "review_scope": "Reviewed all fixture flags and independently exercised repeat default output, JSON, unrelated working directory and exclusive sidecar collision."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/RUN_RAW_v1.json",
+      "original_sha256": "9c9ef1b002aa9e1cec855588a653f2828bc432d0e5f98b5e8c8344f310d85c35",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/RUN_RAW_v1.json",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/RUN_RAW_v1.json.snapshot",
+        "mode": "100644",
+        "git_blob": "aed008eec77f20b82c94a12a48b5950ff1fe0c06"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/RUN_RAW_v1.json",
+      "final_sha256": "9c9ef1b002aa9e1cec855588a653f2828bc432d0e5f98b5e8c8344f310d85c35",
+      "review_scope": "Reviewed complete invocation and raw return. Status/exit/timeout/stdout/stderr agree with canonical cache and sidecar."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json",
+      "original_sha256": "c5005b7d213deb29239b6e10ec69bf66176a9ae61a267ae9a72d82dc45a6a5ca",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json",
+        "snapshot_relative_to_review": "snapshots/canonical/.claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json.snapshot",
+        "mode": "100644",
+        "git_blob": "8067c7ddac3589f2e54fd583890b7a8e9da8fcf5"
+      },
+      "final_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json",
+      "final_sha256": "c5005b7d213deb29239b6e10ec69bf66176a9ae61a267ae9a72d82dc45a6a5ca",
+      "review_scope": "Read complete payload and all 64 rows. Scientific portion equals exact previously independently checked result; ten aggregation families are correctly derived."
+    },
+    {
+      "original_path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "original_sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "snapshot_relative_to_review": "snapshots/canonical/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md.snapshot",
+        "mode": "100644",
+        "git_blob": "f49c9219c358f154ab1dd550e744a2a0ba1445a8"
+      },
+      "final_path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "review_scope": "Complete proof read and independently checked. Added G>0 explicitness and removed empirical/undefined-speed imports preserve the bounded mathematical target."
+    },
+    {
+      "original_path": "logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt",
+      "original_sha256": "ef4205dbb09df913916fded90ae8c3abf343fb4eaa8933796c054463385d0518",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt",
+        "snapshot_relative_to_review": "snapshots/canonical/logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt.snapshot",
+        "mode": "100644",
+        "git_blob": "daeded81dca6103d40a7f8f80a8bdd26a90d977c"
+      },
+      "final_path": "logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt",
+      "final_sha256": "ef4205dbb09df913916fded90ae8c3abf343fb4eaa8933796c054463385d0518",
+      "review_scope": "Complete cache read. Source hash, declared-note input fingerprint, timeout, return status and exact captured streams verified against source and raw result."
+    },
+    {
+      "original_path": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "original_sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "disposition": "accepted unchanged",
+      "recovery": {
+        "git": "68a7fa78907c2737e9f850679ba5a1c8db0df819:scripts/local_vector_homogeneous_response_2026_10_12.py",
+        "snapshot_relative_to_review": "snapshots/canonical/scripts/local_vector_homogeneous_response_2026_10_12.py.snapshot",
+        "mode": "100644",
+        "git_blob": "4772b4702c9c315f9785f7f6673b4245ea45a5a4"
+      },
+      "final_path": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "final_sha256": "03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b",
+      "review_scope": "Complete source read. Scientific function ASTs unchanged; source-bound independent proof controls, seven in-memory formula mutations, eight aggregation rejection fixtures and isolated IO controls pass."
+    }
+  ],
+  "current_main_source_loss_check": {
+    "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "main_ref_at_review": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "delta_all_additions": true,
+    "preexisting_paths_modified_or_deleted": []
+  }
+}

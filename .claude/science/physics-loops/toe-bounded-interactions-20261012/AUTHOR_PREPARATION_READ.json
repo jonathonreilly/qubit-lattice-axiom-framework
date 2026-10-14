@@ -1,0 +1,110 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "author_disposition": "Source-only package ready for root exact wrapper/program review; no mathematical repair beyond authorized citation references, no new proof result. Runtime execution remains unverified.",
+  "changed_publication_coverage": "All new wrapper fragments, complete six-relocation diffs, packet/conformance/N-gate/formal-scope/PR/handoff prose read. Full unchanged original proof bodies reused at exact hashes; full source reconstruction confirms the only changes.",
+  "checkpoint_files_changed": [],
+  "editable_prompt_files_changed": [],
+  "git_commands_executed": false,
+  "governing_instruction_coverage": "Previously complete applicable AGENTS, SCIENCE_WORKFLOW, physics-loop/workhorse/no-go and required references at unchanged exact pins reused; procedure identities rechecked. PR conformance spec refreshed completely after a truncated combined return.",
+  "governing_source_revision": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "integration_driver_executed": false,
+  "lean_rerun": false,
+  "mathematical_predicates_executed": 0,
+  "new_program_sources": [
+    {
+      "bytes": 17569,
+      "lines": 251,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/BUILD_PACKAGE.py",
+      "sha256": "e6b122f4e674c34c3553d42e7210d08ec84676d9028b1ce57397bce36f103421"
+    },
+    {
+      "bytes": 9744,
+      "lines": 138,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/GENERATE_PROGRAMS.py",
+      "sha256": "bb8cd07b9245936cfabfacaee3e425d717c3ec2ec756f09adce3ff8aa492b5c8"
+    },
+    {
+      "bytes": 6696,
+      "lines": 126,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/IDENTITY_TOOL.template.py",
+      "sha256": "b32ade946f2b727d426d37fb584d3ed6aed396f3e912bb4dd48f1070676aa5e2"
+    },
+    {
+      "bytes": 10243,
+      "lines": 156,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/check_preparation_sources.py",
+      "sha256": "14ca7da6b5a7a857cd3a1d1ac29fb275428e3f11a1c4ebe0f776d49cbe0ad666"
+    },
+    {
+      "bytes": 32294,
+      "lines": 532,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/prepare_verify_interactions.py",
+      "sha256": "2d28dbb7ef177e11cd200e9af8b95865945635776ba0631aba7eda45d5e50e16"
+    }
+  ],
+  "new_publication_sources": [
+    {
+      "bytes": 61233,
+      "lines": 1201,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/payload/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "6babbed7f8fafb5a623d6f36b57d05377e23fa7326c398ebe0b4a1a3c4ef6249"
+    },
+    {
+      "bytes": 69124,
+      "lines": 1447,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/payload/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "2b9c1904c93b903765f0af1830d6a04d4d0728d39f551ccc03f14c91e1d5c2bc"
+    }
+  ],
+  "not_an_independent_scientific_review": true,
+  "original_inputs_changed": false,
+  "original_mathematical_coverage": [
+    {
+      "coverage": "Reused complete 1057-line author read; underlying original cores/comparisons fully read during assembly; exact bytes rechecked.",
+      "path": "BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+      "sha256": "b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9"
+    },
+    {
+      "coverage": "Reused complete 307-line source-exposed review read at identical bytes.",
+      "path": "BOUNDED_INTERACTION_GROUND_SYNTHESIS_REVIEW.md",
+      "sha256": "af0cf7d6e9ea98fc92ac86df651c136cb2766f40571b814b69f3850304ebfe53"
+    },
+    {
+      "coverage": "Reused complete 888-line author read and complete initial/quadratic energy inputs; exact bytes rechecked.",
+      "path": "ADIABATIC_PREPARATION_SYNTHESIS.md",
+      "sha256": "6d82cfece7f56a333c3583fa7e97b1b2e38edd5c414893ba128e70a74c60ba7c"
+    },
+    {
+      "coverage": "All 285 lines newly read after sealed identity and root acceptance supplied; complete acceptance JSON also read.",
+      "path": "ADIABATIC_PREPARATION_SYNTHESIS_REVIEW.md",
+      "sha256": "fe3aa3cde43c557609b66b589ac49d16c3f9f8207f0d75ff0ff3a1cf3d692245"
+    },
+    {
+      "coverage": "All 427 lines newly read in this packaging task, with full 151-line root core and 259-line a323115d crosscheck; all appended proof bytes unchanged.",
+      "path": "ADIABATIC_ENERGY_SHARPNESS_INDEPENDENT.md",
+      "sha256": "36b88a3704e2bd4d0063257a2a04160cb1d6ea846ac2af0ee4d893d9f6075e06"
+    },
+    {
+      "coverage": "All 217 lines read, plus root acceptance and incomplete stub. Complete 41-line compressed Lean source, 88-line Clifford source and complete FalseControls source read. Historical execution scope comes from the complete reviews and saved evidence; no new execution or blanket fresh semantic review of every raw runtime record.",
+      "path": "COMPRESSED_RESOLVENT_FORMAL_SCOPE_REVIEW.md",
+      "sha256": "5ba536c715eb6c3069c4e2937f288eee2ce0cbbce87621065055804318cb65cb"
+    }
+  ],
+  "prior_publication_package_changed": false,
+  "program_coverage": "Complete prior 510-line driver read in full. Full new source diff and new staged-index function read; all unchanged functions therefore covered. Complete new builder, generator, identity template and author source checker read. Both expanded tools are identical except claim id; literal declared input lists checked against all 129 file paths. Final AST verifies actual NUL/tab byte delimiters. No tool or integration driver executed.",
+  "recorded_utc": "2026-10-12T20:09:32.680021+00:00",
+  "remaining_root_actions": [
+    "read exact wrapper/program/packet and final review",
+    "create separate acceptance with exact hashes",
+    "prepare execution, inspect full outputs and graph",
+    "explicit root staging",
+    "verify exact staged bytes and include-worktree compatibility",
+    "one regular stacked PR; any later cumulative landing validation and audits separately"
+  ],
+  "repository_validators_executed": false,
+  "role": "source-exposed coauthor/package author; inherited selected model and reasoning effort unchanged",
+  "root_wrapper_program_acceptance": "pending",
+  "scientific_mutations_executed": 0,
+  "worktree_installation": false
+}

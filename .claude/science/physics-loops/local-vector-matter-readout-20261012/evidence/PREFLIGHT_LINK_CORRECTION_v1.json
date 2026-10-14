@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-13T00:19:07.220582+00:00",
+  "preflight_v1": "Unresolved Markdown citation into non-discovered .claude recovery path",
+  "fix": "Display exact recovery location as code path instead of a scientific Markdown citation; same target and all source remain available.",
+  "previous_head": "81209c6aea3cbd55486a1f383129e387db4ef266",
+  "old_note_sha256": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d",
+  "new_note_sha256": "28eac494a95aa90c6191517bc81f1bf01446c40a830d2776e8dd31c1c5cfad3d",
+  "runner_unchanged": true,
+  "topology_unchanged": "Earlier API did not discover .claude link; only the field theorem remains a dependency.",
+  "cache_reexecuted_with_actual_new_input": ".claude/science/physics-loops/local-vector-matter-readout-20261012/evidence/CANONICAL_CACHE_RUN_v3.json",
+  "old_note_and_cache_recovery": "81209c6aea3cbd55486a1f383129e387db4ef266 Git objects, reviewer snapshots and original cache archive."
+}

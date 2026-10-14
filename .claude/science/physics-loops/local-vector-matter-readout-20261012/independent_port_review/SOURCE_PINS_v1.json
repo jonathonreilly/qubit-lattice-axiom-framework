@@ -1,0 +1,80 @@
+{
+  "schema": "canonical_port_initial_source_pins_v1",
+  "declared_base": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "base_independently_queried": false,
+  "reason": "No Git operations authorized; exact final head/tree confirmation pending parent handoff.",
+  "rows": [
+    {
+      "path": "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d",
+      "bytes": 17318,
+      "snapshot": "snapshots_v1/docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "scripts/local_vector_matter_readout_2026_10_12.py",
+      "sha256": "50ecd93115f657d878aaa40afcb4b522d4f6c780816fadb9ffbdd22273d2284e",
+      "bytes": 16442,
+      "snapshot": "snapshots_v1/scripts/local_vector_matter_readout_2026_10_12.py"
+    },
+    {
+      "path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "bytes": 11292,
+      "snapshot": "snapshots_v1/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "logs/runner-cache/local_vector_matter_readout_2026_10_12.txt",
+      "sha256": "d48905568a01f4351a450c6861265bc64f309ef95a87bbf0d915e5c33eeca220",
+      "bytes": 1092,
+      "snapshot": "snapshots_v1/logs/runner-cache/local_vector_matter_readout_2026_10_12.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/APPROACH_REGISTRY.md",
+      "sha256": "5725b78f26b12922f156dc6e0c195d73b7f14f398b987f32ba5fdf0d42c3bc3b",
+      "bytes": 773,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "dcb1dcd0ece5a4de66fd1c3f1446f01dcc854943b7d022cc45d2a139f4986f58",
+      "bytes": 925,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/GOAL.md",
+      "sha256": "414a0160a278b84544d432082405433faf5250456c5e55630f67bf82c3cc5fc0",
+      "bytes": 337,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md",
+      "sha256": "1f2b3931f17fc6915bd19738250735f942f0773883d058061fbec25b7333e142",
+      "bytes": 1886,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/PORT_MAP_v1.json",
+      "sha256": "c644b4f198df621c1308356356488bdd600640bdd1050fca373d31e899a8f130",
+      "bytes": 627,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/PORT_MAP_v1.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/REVIEW_HISTORY.md",
+      "sha256": "2047014591e7b0c3eb0bf1977c929d99dc2aceac56c3cdce3d3be9086ac83b0c",
+      "bytes": 544,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/SOURCE_DISPOSITION_v1.json",
+      "sha256": "67bc99522a4471fda00749db3bb687ff3cde20b37d9ba30767591f427460aa59",
+      "bytes": 40356,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/SOURCE_DISPOSITION_v1.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-matter-readout-20261012/TRACE_GATE.md",
+      "sha256": "7423e7e2a2ca187767e3e1675837322ab35fc817328389ce12ac296db734afdb",
+      "bytes": 529,
+      "snapshot": "snapshots_v1/.claude/science/physics-loops/local-vector-matter-readout-20261012/TRACE_GATE.md"
+    }
+  ]
+}

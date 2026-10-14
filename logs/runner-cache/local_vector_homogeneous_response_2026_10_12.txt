@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/local_vector_homogeneous_response_2026_10_12.py
+runner_sha256: 03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b
+input_fingerprint_sha256: 282714dce24892a4b1102fa5950b1b66843fb552b4d999a0abbb9259ae6b1c68
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.25
+status: ok
+----- stdout -----
+PASS symbolic tensor inverse, stable poles, static Green and retarded time integral
+PASS 64 real-space/Fourier transforms; 120 flux diagnostics; 9 off-cone points
+PASS missing-intervening-term mutation detected
+per_element: all three field components are in the symbolic tensor inverse.
+per_site: checked and not executed - no physical discrete-site model is supplied.
+per_mode: both transverse modes and the longitudinal branch are analytically checked.
+per_block: retarded/static tensor identities and finite numerical controls are checked.
+lattice_wide: checked and not executed - this is a continuum homogeneous construction.
+The continuum domain of dependence follows from the local energy proof.
+TOTAL: PASS=10 FAIL=0; conditional construction, no empirical claim.
+
+----- stderr -----
+

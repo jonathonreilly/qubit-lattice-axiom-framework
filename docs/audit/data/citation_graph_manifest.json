@@ -1,6 +1,6 @@
 {
- "edge_count": 15813,
- "node_count": 7026,
+ "edge_count": 15819,
+ "node_count": 7032,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -317,6 +317,10 @@
   "adaptive_coevolving_geometry_no_go": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "16729d75e99a",
+   "out_degree": 1
   },
   "adjacency_rank_qubit_clifford_bound_narrow_theorem_note_2026-06-10": {
    "deps_hash": "017358056d9e",
@@ -2545,6 +2549,10 @@
   "bounded_block_diagonal_compensation_target_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c4303103ee6b",
    "out_degree": 2
+  },
+  "bounded_interaction_ground_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "5e0d3e94d797",
+   "out_degree": 4
   },
   "bounded_two_star_bksf_cycle789_target_chart_bridge_cycle869_bounded_theorem_note_2026-08-02": {
    "deps_hash": "00d57df89f58",
@@ -14158,6 +14166,14 @@
    "deps_hash": "4fb4f7ea0100",
    "out_degree": 4
   },
+  "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "local_vector_matter_radiation_readout_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "650185753e03",
+   "out_degree": 1
+  },
   "local_volume_dynamics_with_commuting_electric_terms_bounded_theorem_note_2026-09-24": {
    "deps_hash": "93cec19a3712",
    "out_degree": 3
@@ -17138,6 +17154,10 @@
    "deps_hash": "f0a2bcb0bbbf",
    "out_degree": 4
   },
+  "positive_mediator_force_noise_and_source_inversion_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",
    "out_degree": 1
@@ -19709,6 +19729,10 @@
   "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16": {
    "deps_hash": "7d003ba955a9",
    "out_degree": 3
+  },
+  "sphere_quantum_visibility_reflection_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16": {
    "deps_hash": "7d1b88cde191",

@@ -1,0 +1,9 @@
+{
+  "attempt": 1,
+  "source_sha256": "17b491d65302c438c2972258468b988e87421a5e83f46915ae1895c7baee91c9",
+  "exit_code": 1,
+  "failure": "reviewer cache stdout equality assertion",
+  "cause": "Reviewer omitted the extra newline inserted by scripts/runner_cache.py write_cache for both stdout and stderr. Canonical cache matches that format. No author-source defect.",
+  "checked_cache_source_lines": "598-609",
+  "scientific_execution_occurred": false
+}

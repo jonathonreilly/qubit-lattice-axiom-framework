@@ -1,0 +1,15 @@
+# Quantum visibility/reflection milestone handoff
+
+Direct parent-authored source proposes a conditional sphere-realization criterion and an exact degree-three correlation statistic. It preserves one state and setting family across all directions and makes the trial-memory assumptions explicit. The exact candidate interval gives B(.95)>1.0512346868899072 against the mathematical bound 1; no real experiment is assessed.
+
+Source: docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md.
+Runner: scripts/sphere_quantum_visibility_reflection_2026_10_12.py.
+Reproduce from repository root with python3 followed by the runner path. It has no external scientific data or campaign runtime dependency. Current author result: nine families pass, nine formula mutations detected. Cache and source freeze bind the exact bytes. Independent affected-source review passes for the four scientific paths at 0a2ce9ac6d0d1647c24b54bcb95e23136ff6c0f6. The report and immutable receipt are in independent_review/. It confirms the full argument, original source dispositions, nine test families, all nine mutation detections, and the exact interval; it grants no audit status.
+
+Included: complete harmonic criterion, countable signed Clifford construction, reflection bound, rational quadrature proof, proposed sampling statistic, conditional concentration. Deferred intact in campaign commit 28e1edd109c96910227cfcda8c8a3221d0d6ea0d: resource obstruction, finite 300-setting numerical witness, original all-order parameter classification. None is a premise here. No current-main scientific source is removed or modified.
+
+The final scope-wording correction is confirmed by the same independent reviewer; the scientific files remain unchanged at the frozen constituent. The citation manifest adds exactly one intended zero-dependency node. Pipeline, strict lint and changed-evidence checks all passed on that scientific commit in a disposable copy; raw logs and exact scope are preserved in evidence/validation_science_v1/. This report distinguishes that tested scientific tree from the later evidence-package tree. A canonical unit receipt and final evidence-package mechanical results are kept under the campaign runtime quantum/milestone_validation directory and reported in the PR. No scientific audit, retention or landing follows. Science landing and main pushes remain outside this campaign's authorization.
+
+Future physical work: direction calibration and resolution, common branch-independent observables, randomness/source independence, detection and included-trial definition, and actual held-out observations. Mathematical realizability does not supply a microscopic dynamics or an economical resource model.
+
+Procedure discrepancy: conformance section 3 requests proposed_retained/proposed_promoted Status, while its controlling current physics-loop status rule requires the honest current conditional/support state. This packet follows the latter. No review or pipeline result ratifies retention.

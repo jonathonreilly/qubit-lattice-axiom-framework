@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-12T22:45:01.646337+00:00",
+  "scope": "Focused independent check of the supplied constant-coefficient vector construction; no formal audit or retained verdict.",
+  "disposition": "No source equation correction needed within G>0, alpha>0, 0<D<=N, constant unit e and full-vector compact-data premises.",
+  "full_source_read": true,
+  "source_and_snapshot_hashes_unchanged_at_finish": true,
+  "inputs": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/PROTOCOL.md",
+      "snapshot": "snapshots/PROTOCOL.md",
+      "sha256": "66c7ddb452e4385e64dec9d749b1fd76c28cdde131a446099d38293d564b678b",
+      "bytes": 2933
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/DIRECT_VECTOR_COMPLETION.md",
+      "snapshot": "snapshots/DIRECT_VECTOR_COMPLETION.md",
+      "sha256": "0fb24c2072b5fcac16b991d8a29b6999531edfb6bc1041b73afb1cd377685ca8",
+      "bytes": 7926
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/direct_vector_check.py",
+      "snapshot": "snapshots/direct_vector_check.py",
+      "sha256": "6205aa512256262fc1d10e6b854773d2a20f177825a82459fb1b2bde63189ce1",
+      "bytes": 6714
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_response_completion/evidence_v1/RESULTS.json",
+      "snapshot": "snapshots/RESULTS.json",
+      "sha256": "d3210caf5904bcdf4997b04156645745444b413590b3264d5bccd5cd68cd123c",
+      "bytes": 18832
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_constrained_dynamics/DIRECT_DYNAMICS.md",
+      "snapshot": "snapshots/prior_DIRECT_DYNAMICS.md",
+      "sha256": "6fbaf6b91561d3ce5a51b154a364e98d1fafedd1b94119f725df8df4219648d8",
+      "bytes": 16234
+    }
+  ],
+  "independent_checks": {
+    "scalar_receipt_cases": 64,
+    "unique_full_tensor_parameter_cases": 16,
+    "additional_full_tensor_cases": 3,
+    "moment_parameter_cases": 4,
+    "tensor_second_moment_components_per_case": 81,
+    "sharp_flux_fixtures": 4,
+    "deliberate_formula_mutations": 7,
+    "maximum_tensor_transform_error": 8.344019919448442e-15,
+    "maximum_parent_receipt_discrepancy": 8.50795128792825e-15,
+    "missing_middle_error": 0.5598960738067768
+  },
+  "commands": [
+    {
+      "command": "python3 check_vector_independent.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 check_vector_mutations.py",
+      "exit_code": 0
+    }
+  ],
+  "author_runner_imported_or_replayed": false,
+  "empirical_arrays_read": false,
+  "author_files_modified": false,
+  "port_review_scope": "Canonical milestone port has not yet been frozen or reviewed in this receipt.",
+  "stop_markers": [],
+  "discovery_deadline_epoch": 1791909480.0574322,
+  "review_artifacts_sha256": {
+    "VECTOR_COMPLETION_REVIEW.md": "8fc03fa3df92265b086c4688eaddcd49b37cbf9dd5b9e9eef9eeb6e02c2bb2ae",
+    "check_vector_independent.py": "4f2270ca212dae6c57fda050cd7c3a415244f258bcbbd32a977c348c63426ee3",
+    "check_vector_mutations.py": "704adbb3253d66e56e62e09f3aa6b908a8ee1054629849958aa56deb1bd19bce",
+    "independent_mutations_v1.json": "47004c9af55ba0194bf8e346b896f1044e3a591d2a972abe5b4be123720041c5",
+    "independent_vector_checks_v1.json": "2d2931966eba251929bc3aeefcb28d24b898ac582b91412e345bafd7da6ecc0d",
+    "snapshot_manifest_v1.json": "b767c878366a44fc6e55aa2fc62fc8bd2b8c1a4166489734f322311b6cb49cae"
+  }
+}

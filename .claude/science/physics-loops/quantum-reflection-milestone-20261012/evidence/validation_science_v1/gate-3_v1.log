@@ -1,0 +1,21 @@
+{
+  "base": "origin/main",
+  "changed_path_count": 220,
+  "checked": [
+    {
+      "changed_surfaces": [
+        "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "scripts/sphere_quantum_visibility_reflection_2026_10_12.py"
+      ],
+      "claim_id": "sphere_quantum_visibility_reflection_bounded_theorem_note_2026-10-12",
+      "forensic_evidence_ready": true,
+      "helper_runner_paths": [],
+      "issue": null,
+      "runner_path": "scripts/sphere_quantum_visibility_reflection_2026_10_12.py"
+    }
+  ],
+  "control_failures": [],
+  "diff_scope": "committed_and_worktree",
+  "failures": [],
+  "schema": "changed_audit_evidence_readiness_v1"
+}

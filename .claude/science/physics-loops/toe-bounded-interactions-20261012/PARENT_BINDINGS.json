@@ -1,0 +1,44 @@
+{
+  "base": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+  "current_status": "open_gate",
+  "main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "main_parent_bytes_unchanged": true,
+  "parents": [
+    {
+      "base": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "claim_id": "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+      "path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "7b349351f655f2606845ef3055d8f483d89db613f9df497ec313858a7f888098",
+      "role": "Full-CAR normal finite-energy subsequence dependency; reviewed conditional source on main, no retained or audit authority.",
+      "original_published_sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843"
+    },
+    {
+      "base": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "role": "Actual branches, chosen embeddings and ordinary-cell C21/C25 norm convergence; open_gate."
+    },
+    {
+      "base": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "role": "Supplied full spin-GNS Fock representation, positive Hamiltonian, vacuum and mass gap."
+    },
+    {
+      "base": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "role": "Real CAR, physical-cell averaging and sections 3/6 even-spin support identification."
+    }
+  ],
+  "stack": {
+    "authority": "provisional OPEN proposal; not main or retained authority",
+    "branch": "physics-loop/toe-energy-correlations-20261012",
+    "head": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+    "pr": 9500
+  },
+  "integration_main": "0505465593ce8c69143d94ea6f04b44d7651fcc7"
+}

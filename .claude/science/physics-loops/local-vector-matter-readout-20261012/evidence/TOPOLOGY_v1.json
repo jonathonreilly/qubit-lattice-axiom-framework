@@ -1,0 +1,29 @@
+{
+  "base": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "added_nodes": [
+    "local_vector_matter_radiation_readout_bounded_theorem_note_2026-10-12"
+  ],
+  "removed_nodes": [],
+  "changed_old_nodes": [],
+  "new_node": {
+    "claim_id": "local_vector_matter_radiation_readout_bounded_theorem_note_2026-10-12",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "5f31b076f07a43997fd0ee187ce0441c0615fa1c754e9846f9118c6e3005a08d",
+    "path": "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "runner_path": "scripts/local_vector_matter_readout_2026_10_12.py",
+    "title": "Reciprocal matter, radiation and mechanical readout of a local vector model"
+  },
+  "added_edges": [
+    {
+      "from": "local_vector_matter_radiation_readout_bounded_theorem_note_2026-10-12",
+      "to": "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12"
+    }
+  ],
+  "manifest_sha256": "d727b2b7a64dd07e913f670f415c4f4355d2671a1199b252fc3ff6ec10ef7361"
+}

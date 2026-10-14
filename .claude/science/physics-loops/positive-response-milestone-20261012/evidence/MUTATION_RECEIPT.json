@@ -1,0 +1,93 @@
+{
+  "generated_utc": "2026-10-12T18:29:45.911492+00:00",
+  "runner_sha256": "8ca06b17acada71896f816825c80b3e2769c039d2cf9f5dfe5026e6c85f1feb9",
+  "mutations": [
+    {
+      "family": "local_action_positive_measure",
+      "old": "return nodes,raw/gamma(shape)",
+      "new": "return nodes,1.01*raw/gamma(shape)",
+      "mutated_sha256": "793a96f23e0015eaa61951a74954182c48bbe77ba37eb4c69c582b1640b01ccb",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "local_action_resolvent",
+      "old": "(J@J)/ell**2+z*np.eye(n)",
+      "new": "J/ell**2+z*np.eye(n)",
+      "mutated_sha256": "2affb6c0ba59fc1b427b3652a9dbd543988ff03a4939accb7e35132d762d7095",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "laguerre_moments_and_static_bounds",
+      "old": "return b,(2*order-1)*b",
+      "new": "return .001*b,.001*(2*order-1)*b",
+      "mutated_sha256": "28383c94c5344af47f7af24fbf59a0370baea0e79bc5565264e2e04dcf10736f",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "noise_normalization",
+      "old": "return float(np.dot(weights,k*np.exp(-width*width*k*k)))/(4*math.pi**2)",
+      "new": "return float(np.dot(weights,k*np.exp(-width*width*k*k)))/(8*math.pi**2)",
+      "mutated_sha256": "860e9fdc88e82c3850f47ef03e3e47e932e6ace69489a3108c7074f782587080",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "explicit_response_pair",
+      "old": "k=np.sqrt(np.maximum(omega*omega-nodes*nodes,0))",
+      "new": "k=np.full_like(nodes,omega)",
+      "mutated_sha256": "ea64a7a448921927ef01d0969d5322645acfa19ccda2803a51c5334f242e84fa",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "positive_bins_joint_bounds",
+      "old": "np.r_[np.diff(gammainc(shape,edges)),tail]",
+      "new": "np.r_[np.diff(gammainc(shape,edges)),0.0]",
+      "mutated_sha256": "a601036165c943dcff9ee301a79062d24fc64291f6883c2c912893d96e2b3a86",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "source_kernel_independent_paths",
+      "old": "(r/(ell+r))/(1-v*v)",
+      "new": "(r/(ell+r))/(1+v*v)",
+      "mutated_sha256": "85c0ad086a9c4061b509e74eb02924f8283c6c2f200b7cfc567b3751014d9f22",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "source_inverse",
+      "old": "(observed[0]*vals[1][1]-observed[1]*vals[0][1])/(fc*d)",
+      "new": "(observed[0]*vals[1][1]-observed[1]*vals[0][1])/(fm*d)",
+      "mutated_sha256": "6b6a0e74cd1efe0abaad50d90e7c5a4ce06055b57c038f312dfd7e7a26ee4d79",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "source_conditioning",
+      "old": "12*(fc*fc+fm*fm)*ell**4",
+      "new": "12*(fc*fc+fm*fm)*ell**3",
+      "mutated_sha256": "c04cddd70f22190fb21cb2ca5f8fc9ca84ff45dc08704ee4c03d35cc136f744d",
+      "exit_code": 1,
+      "intended_check_failed": true
+    },
+    {
+      "family": "source_covariance_and_single_mass_control",
+      "old": "ss=[-r*mu*mu/(1+r*mu)",
+      "new": "ss=[r*mu*mu/(1+r*mu)",
+      "mutated_sha256": "42d9803843b2463309edf891f53adf192f3c20ce8739369d56945a0ada946aa4",
+      "exit_code": 1,
+      "intended_check_failed": true
+    }
+  ],
+  "all_intended_families_failed": true,
+  "production_source_unchanged": true,
+  "input_shape_guard": {
+    "mutation": "source_geometry.shape:1 ->2 in isolated scratch contract",
+    "exit_code": 1,
+    "rejected_with_explicit_error": true
+  }
+}

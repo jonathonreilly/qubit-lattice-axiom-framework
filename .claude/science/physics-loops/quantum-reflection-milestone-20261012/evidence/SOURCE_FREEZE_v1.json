@@ -1,0 +1,9 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "paths": {
+    "scripts/sphere_quantum_visibility_reflection_2026_10_12.py": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc",
+    "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "0c031968a47390c0c511dc5921a1761584d7ee5e969318161a264ccd8e471021"
+  },
+  "mutation_source_sha256": "259275bbdd6dbb82e2055e9dedd934f407546ef76d59fc20ff1755ee4eb2f735",
+  "mutation_to_frozen_change": "Removed one blank line at EOF only; full semantic source is identical."
+}

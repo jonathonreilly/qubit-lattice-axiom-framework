@@ -1,0 +1,9 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "paths": {
+    "docs/SPHERE_QUANTUM_VISIBILITY_REFLECTION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "cd2f4f552f3f95b3e91e0ab046f0bf3da2a29f52383f7e920b316afd99d1a3ef",
+    "scripts/sphere_quantum_visibility_reflection_2026_10_12.py": "cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc",
+    "logs/runner-cache/sphere_quantum_visibility_reflection_2026_10_12.txt": "6d824ece1241b706f1d62941e7593cad8fead772b08c2c78240525a3ddfecd6a"
+  },
+  "change": "Positive statement of absolute-tail requirement, following independent source reviewer; no mathematical change."
+}

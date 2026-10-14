@@ -1,0 +1,29 @@
+--- check_readout_independent.py
++++ check_readout_independent_v2.py
+@@ -208,7 +208,7 @@
+     F = mua**2 - mub**2
+     angular_author = families["angular_pattern_and_finite_arm"]
+     pattern = lambda s: mua**2 * transfer(s*mua) - mub**2 * transfer(s*mub)
+-    errors = [abs(pattern(mp.mpf(s)) - F) / abs(F)
++    errors = [abs(pattern(mp.mpf(s)) - F)
+               for s in angular_author["small_phase_values"]]
+     finite = pattern(mp.mpf('2.2'))
+     agreement = max(abs(float(x)-y) for x, y in zip(errors, angular_author["errors"]))
+@@ -284,7 +284,7 @@
+     for path, digest in pinned.items():
+         assert sha(Path(path)) == digest, path
+     result = {
+-        "schema": "independent_vector_mechanical_readout_checks_v1",
++        "schema": "independent_vector_mechanical_readout_checks_v2",
+         "created_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+         "review_script_sha256": sha(Path(__file__)),
+         "source_manifest_sha256": sha(ROOT/'source_manifest_v1.json'),
+@@ -299,7 +299,7 @@
+         "endpoint_independent_geometries": extra_rows,
+         "elapsed_seconds": time.monotonic()-started,
+     }
+-    output = ROOT/'INDEPENDENT_CALCULATIONS_v1.json'
++    output = ROOT/'INDEPENDENT_CALCULATIONS_v2.json'
+     with output.open('x') as stream:
+         json.dump(result, stream, indent=2)
+         stream.write('\n')

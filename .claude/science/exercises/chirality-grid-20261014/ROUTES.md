@@ -140,3 +140,29 @@ Report: `kills/K2/KILL_REPORT.md`. Same-family agent; **codex referee running si
 - R10-2's box symbols don't cover the analytic overlap symbol (proved: ω² > 0).
 - R19-28 never claimed the overlap works.
 - R19-33 is consistent.
+
+## Referee records (codex gpt-5.6-sol at xhigh, 2026-10-14 ~17:35Z)
+
+### F2-R: CONFIRMED WITH CORRECTIONS
+- **Lemma R is confirmed.** It needs a principal open set, Zariski density, a projective module, localization so that CH^{>0}(U) = 0, and Fulton 19.1.2.
+  - "Regular on T^d" must mean "admits a common Laurent denominator nonzero on T^d".
+- **Lemma 0** holds algebraically. It does not hold as an equivalence of physically constrained realizations.
+- **Theorem (a)** is confirmed with explicit hypotheses. "Always carries a doubler" should read "the sum of local chiral indices vanishes", so a rational class has no lone simple chiral zero.
+- **(b)**, the general-R index formula, is **not established**.
+- **Corollaries:**
+  - confirmed: leaving the rational class is required, and M₂→M₄ does not help within that class;
+  - **not confirmed: the three-way price list is not exhaustive.** "Privileges a state" does not follow, since a projector can be a pure operator construction.
+- **Tests** reproduce. T3 measures ‖1−r‖, so the GW defect ‖1−r²‖ is about 2× larger; the pole counts survive.
+- **F2-T:** the Stokes balance holds per charge sector, but **"continuous time collapses onto SMG" is not confirmed**. Extra dimensions, non-compact symmetry, non-locality, enlarged sites and other routes are not reduced to SMG.
+
+### K2: CONFIRMED WITH CORRECTIONS
+- **The negative eigenvalue is real for the stated finite, open-time, Fejér-weighted model.** The sign is secure and reproduced (−7.4055e-6 relative). The reflection convention is correct.
+- **Amendment A1 changes the scope.** With the hard-admissibility indicator (X3's specified measure), the corresponding overlap matrices are **positive**, including +1.35e-3 on the Fejér-negative set.
+  - So the counterexample is valid for the Fejér-weighted measure. **It does not establish failure for X3's hard-support measure**, the torus or infinite time, 4D, or the anomaly-free chiral measure.
+  - Open-ended sign(H_W) is not a restriction of the infinite-lattice overlap.
+- **Physical torus / infinite-time RP:** OPEN.
+- **X3-A** is confirmed, with a minor correction (a flat valley at M = 2−√2). **X3-B** is confirmed for free fields. **X3-C is not an equivalence:** the two costs co-occur for the overlap.
+- X3's earlier test was inconclusive (boundary zero modes; quadrature). "Not local" and "independent of the gauge field" are overstated.
+
+### Consequence for K2b (same family; not refereed)
+K2b's searches used K2's Fejér-weighted measure. Its open-lattice negatives and the Pauli–Villars domain-wall negatives therefore carry the same scope limit until rerun with the hard-support measure. The bare-5D reflection-positivity control is a proved Osterwalder–Seiler case.

@@ -1,0 +1,1301 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_curved_response_check.py
+runner_sha256: 8a5ce4ebd580e8baea82ae7a5b67bd1ef4a9101f090b8dfdfdbf59c4cf6e6821
+input_fingerprint_sha256: 82aefbf5fa2d65c255bc06f2f466ae7e3ae1a4dc663e118624b2825c017051b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.53
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional static vacuum and exterior-energy mathematics; no observed data, fitted parameters or cosmological state selection.",
+  "response": {
+    "checks": [
+      {
+        "name": "radial_operator_to_Legendre",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "B2_elementary_solution",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "massless_Coulomb_flux",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "massless_Coulomb_is_horizon_singular",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "massless_regular_solution_has_zero_source",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "horizon_recurrence",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "center_recurrence_power_0",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "center_recurrence_power_1",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "center_recurrence_power_2",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "scalar_gradient_series",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "center_regular_V_series",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "physical_areal_lapse",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "physical_areal_radial_metric",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "proper_holding_acceleration_same_physical_R",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "circular_frequency",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "holding_excess_center_series",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "Einstein_tt_vacuum",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "Einstein_angular_vacuum",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "weighted_Wronskian_constant",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "damage_missing_curvature_2_detected",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "damage_holding_equals_scalar_gradient_detected",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "damage_missing_areal_radius_shift_detected",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "damage_flat_body_kernel_detected",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_0_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_0_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_0_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_0_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_0_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_0_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_0_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_0_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_0_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_0_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_0_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_0_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_0_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_0_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_0_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_0_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_1_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_1_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_1_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_1_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_1_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_1_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_1_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_1_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_1_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_1_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_1_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_1_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_1_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_1_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_1_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_1_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_2_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_2_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_2_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_2_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_2_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_2_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_2_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_2_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_2_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_2_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_2_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_2_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_2_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_2_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_2_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_2_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_3_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_3_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_3_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_3_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_3_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_3_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_3_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_3_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_3_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_3_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_3_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_3_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_3_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_3_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_3_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_3_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_4_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_4_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_4_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_4_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_4_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_4_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_4_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_4_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_4_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_4_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_4_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_4_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_4_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_4_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_4_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_4_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_5_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_5_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_5_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_5_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_5_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_5_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_5_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_5_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_5_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_5_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_5_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_5_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_5_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_5_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_5_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_5_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_6_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_6_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_6_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_6_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_6_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_6_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_6_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_6_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_6_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_6_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_6_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_6_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_6_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_6_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_6_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_6_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_7_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_7_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_7_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_7_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_7_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_7_holding_relative_tensor",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_7_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_7_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_7_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_7_D_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_order_7_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "exact_interval_width_7_holding_relative_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_7_psi",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_7_D",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_7_holding",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "special_function_inside_rational_certificate_7_flat",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "ODE_horizon_to_center_16",
+        "pass": true,
+        "value": {
+          "max_relative_error": 3.5999745041244597e-12,
+          "nfev": 830
+        }
+      },
+      {
+        "name": "ODE_horizon_to_center_64",
+        "pass": true,
+        "value": {
+          "max_relative_error": 1.8537638165270943e-11,
+          "nfev": 1178
+        }
+      },
+      {
+        "name": "ODE_horizon_to_center_256",
+        "pass": true,
+        "value": {
+          "max_relative_error": 1.349736190717852e-11,
+          "nfev": 1895
+        }
+      },
+      {
+        "name": "ODE_horizon_to_center_1600",
+        "pass": true,
+        "value": {
+          "max_relative_error": 1.7282681843907123e-11,
+          "nfev": 4163
+        }
+      },
+      {
+        "name": "flux_normalization_2.0",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_2.0_0.1",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_2.0_0.3",
+        "pass": true,
+        "value": "-1.42873423910284372776972943538167619931488749e-101"
+      },
+      {
+        "name": "Wronskian_2.0_0.7",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "body_charge_bounds_2.0",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "flux_normalization_16.0",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_16.0_0.1",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_16.0_0.3",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_16.0_0.7",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "body_charge_bounds_16.0",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "flux_normalization_64.0",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_64.0_0.1",
+        "pass": true,
+        "value": "0.0"
+      },
+      {
+        "name": "Wronskian_64.0_0.3",
+        "pass": true,
+        "value": "-1.42873423910284372776972943538167619931488749e-101"
+      },
+      {
+        "name": "Wronskian_64.0_0.7",
+        "pass": true,
+        "value": "-1.42873423910284372776972943538167619931488749e-101"
+      },
+      {
+        "name": "body_charge_bounds_64.0",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "full_metric_linear_coefficient_0.1",
+        "pass": true,
+        "value": [
+          "0.000000000953976272372370451446720073150556034723391757",
+          "0.00000000000953976270931050804518343912307537205203803779",
+          "0.0000000000000953976270916637608073209589795561208942572077"
+        ]
+      },
+      {
+        "name": "full_metric_linear_coefficient_0.25",
+        "pass": true,
+        "value": [
+          "0.000000000395646676106524183843118035693707723822035415",
+          "0.0000000000039564667585665631167801927672308836267575904",
+          "0.0000000000000395646675854157632958132289476513836907588867"
+        ]
+      },
+      {
+        "name": "full_metric_linear_coefficient_0.5",
+        "pass": true,
+        "value": [
+          "0.000000000194455570917177696057215902220721943324620094",
+          "0.00000000000194455570848128101531698587643433229237321277",
+          "0.0000000000000194455570847437605586731467977098950411483006"
+        ]
+      },
+      {
+        "name": "action_vacuum_stationary",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "action_vacuum_coupling",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "action_vacuum_mass",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "action_mass_above_twelve",
+        "pass": true,
+        "value": "0"
+      }
+    ],
+    "details": {
+      "comparison_points": [
+        {
+          "B": "16",
+          "x": "1/100",
+          "psi": "0.963963512714153185476696934395165172202117443",
+          "D": "0.999319242658865105312851445399500713314496135",
+          "flat": "0.999221016718416137816779118976175721469090977",
+          "holding_relative_tensor": "0.999126431026823420068890221663358249733998467",
+          "D_relative_flat": "0.0000983025164658320015311538058181704354748763475",
+          "holding_relative_flat": "-0.0000946594297059029090633574636435965066472779226"
+        },
+        {
+          "B": "16",
+          "x": "1/10",
+          "psi": "0.693989451398992406670505184886861683316650662",
+          "D": "0.946537969575947265889832383652257160912434472",
+          "flat": "0.938448064449895021042206095206956500711773295",
+          "holding_relative_tensor": "0.932542320304638741230491495957478261134975181",
+          "D_relative_flat": "0.00862051447758532357666880648038668589658234914",
+          "holding_relative_flat": "-0.00629309640988832288748507726703143094314935452"
+        },
+        {
+          "B": "16",
+          "x": "1/4",
+          "psi": "0.402016732098914629923330496472208435580174906",
+          "D": "0.76921450389278621381764320699418780887375761",
+          "flat": "0.735758882342884643191047540322921734891622262",
+          "holding_relative_tensor": "0.717012253039332788309582482960061587025044822",
+          "D_relative_flat": "0.0454709040594501391457164231109741019777143114",
+          "holding_relative_flat": "-0.0254793108903514269204202913366753943399274452"
+        },
+        {
+          "B": "16",
+          "x": "1/2",
+          "psi": "0.157744544311286250988251800083785424127038185",
+          "D": "0.463739126940653493077569125071408281856674358",
+          "flat": "0.406005849709838075681998484917453210222894638",
+          "holding_relative_tensor": "0.38368004153585971009754494063202207097760024",
+          "D_relative_flat": "0.142198141411203566997590716292200887258315233",
+          "holding_relative_flat": "-0.0549888830171635351973652320356844258906334291"
+        },
+        {
+          "B": "64",
+          "x": "1/8",
+          "psi": "0.37573784484820362783627885396770918451470274",
+          "D": "0.743962108319437339796838812724686207792594289",
+          "flat": "0.735758882342884643191047540322921734891622262",
+          "holding_relative_tensor": "0.732123715127047616158882518460277341808326483",
+          "D_relative_flat": "0.0111493400534032005335199759890150426721083599",
+          "holding_relative_flat": "-0.00494070449310992529062342971313426576590462697"
+        },
+        {
+          "B": "256",
+          "x": "1/16",
+          "psi": "0.369807332335133614899845950331028866068742824",
+          "D": "0.737798475454373456035721969001822566938884452",
+          "flat": "0.735758882342884643191047540322921734891622262",
+          "holding_relative_tensor": "0.734903640495776647107360355464510898508855714",
+          "D_relative_flat": "0.00277209444620514174043704459550969190262790352",
+          "holding_relative_flat": "-0.00116239418596570740138884944609985661811519612"
+        },
+        {
+          "B": "1600",
+          "x": "1/40",
+          "psi": "0.368186308821477764463601430236044826898894773",
+          "D": "0.73608470657176758229922788912617864923186922",
+          "flat": "0.735758882342884643191047540322921734891622262",
+          "holding_relative_tensor": "0.735624329570354356547922835251242799254319027",
+          "D_relative_flat": "0.000442841040322087088415410628264910688969966271",
+          "holding_relative_flat": "-0.000182876178268930785385775794546628264797352288"
+        },
+        {
+          "B": "1600012/99997",
+          "x": "1/4",
+          "psi": "0.402008414228088106707110650712440211081561711",
+          "D": "0.769207104009253288298339929597702678552347573",
+          "flat": "0.735751984461093664619930494240377833983646121",
+          "holding_relative_tensor": "0.71700597125451454713931274101516721486941871",
+          "D_relative_flat": "0.0454706480644616188078450061315938057521125183",
+          "holding_relative_flat": "-0.0254787123956040118708418612032847938084594417"
+        }
+      ],
+      "ODE": [
+        {
+          "B": 16,
+          "success": true,
+          "nfev": 830,
+          "max_relative_error": 3.5999745041244597e-12,
+          "message": "The solver successfully reached the end of the integration interval."
+        },
+        {
+          "B": 64,
+          "success": true,
+          "nfev": 1178,
+          "max_relative_error": 1.8537638165270943e-11,
+          "message": "The solver successfully reached the end of the integration interval."
+        },
+        {
+          "B": 256,
+          "success": true,
+          "nfev": 1895,
+          "max_relative_error": 1.349736190717852e-11,
+          "message": "The solver successfully reached the end of the integration interval."
+        },
+        {
+          "B": 1600,
+          "success": true,
+          "nfev": 4163,
+          "max_relative_error": 1.7282681843907123e-11,
+          "message": "The solver successfully reached the end of the integration interval."
+        }
+      ],
+      "flux": [
+        {
+          "B": "2.0",
+          "residual": "0.0"
+        },
+        {
+          "B": "16.0",
+          "residual": "0.0"
+        },
+        {
+          "B": "64.0",
+          "residual": "0.0"
+        }
+      ],
+      "Wronskian": [
+        {
+          "B": "2.0",
+          "x": "0.1",
+          "residual": "0.0"
+        },
+        {
+          "B": "2.0",
+          "x": "0.3",
+          "residual": "-1.42873423910284372776972943538167619931488749e-101"
+        },
+        {
+          "B": "2.0",
+          "x": "0.7",
+          "residual": "0.0"
+        },
+        {
+          "B": "16.0",
+          "x": "0.1",
+          "residual": "0.0"
+        },
+        {
+          "B": "16.0",
+          "x": "0.3",
+          "residual": "0.0"
+        },
+        {
+          "B": "16.0",
+          "x": "0.7",
+          "residual": "0.0"
+        },
+        {
+          "B": "64.0",
+          "x": "0.1",
+          "residual": "0.0"
+        },
+        {
+          "B": "64.0",
+          "x": "0.3",
+          "residual": "-1.42873423910284372776972943538167619931488749e-101"
+        },
+        {
+          "B": "64.0",
+          "x": "0.7",
+          "residual": "-1.42873423910284372776972943538167619931488749e-101"
+        }
+      ],
+      "body": [
+        {
+          "B": "2.0",
+          "radius_x": "0.2",
+          "uniform_charge": "1.00814027026520562197881960820857770852086189",
+          "upper_bound": "1.01366277027041095494503278866087284142997606"
+        },
+        {
+          "B": "16.0",
+          "radius_x": "0.2",
+          "uniform_charge": "1.06645716682356776552178136651365785868377437",
+          "upper_bound": "1.11245515922406941116944242272888163306203033"
+        },
+        {
+          "B": "64.0",
+          "radius_x": "0.2",
+          "uniform_charge": "1.2850108958183535807909569521398876672276092",
+          "upper_bound": "1.49572998691128975326376343407495424317923441"
+        }
+      ],
+      "full_metric_linear_checks": [
+        {
+          "x": "0.1",
+          "relative_errors": [
+            "0.000000000953976272372370451446720073150556034723391757",
+            "0.00000000000953976270931050804518343912307537205203803779",
+            "0.0000000000000953976270916637608073209589795561208942572077"
+          ]
+        },
+        {
+          "x": "0.25",
+          "relative_errors": [
+            "0.000000000395646676106524183843118035693707723822035415",
+            "0.0000000000039564667585665631167801927672308836267575904",
+            "0.0000000000000395646675854157632958132289476513836907588867"
+          ]
+        },
+        {
+          "x": "0.5",
+          "relative_errors": [
+            "0.000000000194455570917177696057215902220721943324620094",
+            "0.00000000000194455570848128101531698587643433229237321277",
+            "0.0000000000000194455570847437605586731467977098950411483006"
+          ]
+        }
+      ]
+    },
+    "rational_certificates_sha256": "d0f865a309dec7cbd5695a1fe3102cdd5787d1b143443d896703c9394f961586",
+    "rational_certificates_bytes": 256496
+  },
+  "energy": {
+    "checks": [
+      {
+        "name": "full_radial_KG_to_tortoise_wave",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "tortoise_coordinate",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "potential_positive_factorization",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "Killing_energy_density_from_stress",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "energy_boundary_term",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "wave_local_energy_identity",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "reduction_of_order_solution",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "static_energy_as_boundary_term",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "log_branch_energy_coefficient",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "damage_extra_lapse_factor_detected",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "negative_potential_growing_mode",
+        "pass": true,
+        "value": "0"
+      },
+      {
+        "name": "negative_potential_mode_regular_and_decaying",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "finite_energy_pulse_nonstatic",
+        "pass": true,
+        "value": "-(2 + 14/cosh(1)**2)*exp(-1)"
+      },
+      {
+        "name": "finite_energy_pulse_regular_decay",
+        "pass": true,
+        "value": null
+      },
+      {
+        "name": "logarithmic_divergence_coefficient_numeric",
+        "pass": true,
+        "value": "0.2499999998984158597665702873261976359116"
+      },
+      {
+        "name": "logarithmic_integrated_slope_numeric",
+        "pass": true,
+        "value": "0.2500000169456764699889781027121352688258"
+      },
+      {
+        "name": "regular_branch_finite_energy_numeric",
+        "pass": true,
+        "value": "-2.935761517631440559094159737654952853358e-14"
+      },
+      {
+        "name": "finite_energy_nonstatic_pulse_numeric",
+        "pass": true,
+        "value": "0.8676514306062774025591039739066407798242"
+      }
+    ],
+    "details": {
+      "cutoff_energy": [
+        {
+          "epsilon": "0.01",
+          "log_branch_energy": "0.352859406622044126726033394368115803683",
+          "regular_energy": "272.4125018701962647422966963035767006636",
+          "regular_limit": "272.5016985215599088226200479364085195909",
+          "log_gradient_coefficient": "0.1589901743496237467264182318935926887642"
+        },
+        {
+          "epsilon": "0.0001",
+          "log_branch_energy": "1.525707536090539068230817726228964626921",
+          "regular_energy": "272.5008976411731440497243125869681445105",
+          "regular_limit": "272.5016985215599088226200479364085195909",
+          "log_gradient_coefficient": "0.2472162351489506874282934552534750457334",
+          "energy_log_slope": "0.2546807353693590164857857999355386317413"
+        },
+        {
+          "epsilon": "0.000001",
+          "log_branch_energy": "2.683966440931421129466791512515896565014",
+          "regular_energy": "272.5016905214719084359524003791191838558",
+          "regular_limit": "272.5016985215599088226200479364085195909",
+          "log_gradient_coefficient": "0.2499536798278920024291679093790265271446",
+          "energy_log_slope": "0.2515127254938493675287045943412908606062"
+        },
+        {
+          "epsilon": "0.00000001",
+          "log_branch_energy": "3.835481498455911355919995910487905078023",
+          "regular_energy": "272.5016984415599000226196612697320440352",
+          "regular_limit": "272.5016985215599088226200479364085195909",
+          "log_gradient_coefficient": "0.2499993525726017947636698008475108705288",
+          "energy_log_slope": "0.2500483176556958539819287618068925629375"
+        },
+        {
+          "epsilon": "0.0000000001",
+          "log_branch_energy": "4.986778639468894521806681476670194508452",
+          "regular_energy": "272.5016985207599088217400479360218529241",
+          "regular_limit": "272.5016985215599088226200479364085195909",
+          "log_gradient_coefficient": "0.2499999916836541154631224642318364852747",
+          "energy_log_slope": "0.2500009976864642925399957754311416578242"
+        },
+        {
+          "epsilon": "0.000000000001",
+          "log_branch_energy": "6.138071264003641424808843086766744648979",
+          "regular_energy": "272.5016985215519088226199599364085192042",
+          "regular_limit": "272.5016985215599088226200479364085195909",
+          "log_gradient_coefficient": "0.2499999998984158597665702873261976359116",
+          "energy_log_slope": "0.2500000169456764699889781027121352688258"
+        }
+      ],
+      "pulse_energy": "0.8676514306062774025591039739066407798242"
+    }
+  },
+  "counts": {
+    "passed": 195,
+    "failed": 0
+  }
+}
+
+----- stderr -----
+

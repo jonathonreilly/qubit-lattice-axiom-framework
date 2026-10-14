@@ -1,6 +1,6 @@
 {
- "edge_count": 16054,
- "node_count": 7115,
+ "edge_count": 16055,
+ "node_count": 7116,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2832,6 +2832,10 @@
   },
   "centre_regularity_to_geometric_bounded_theorem_note_2026-10-12": {
    "deps_hash": "55bddc03b38d",
+   "out_degree": 1
+  },
+  "chain_preparation_moment_scaling_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "a0ec83520a6b",
    "out_degree": 1
   },
   "channel_surface_cn_grounding_peripheral_unitary_summand_bounded_theorem_note_2026-06-11": {

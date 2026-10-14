@@ -1,0 +1,38 @@
+{
+  "framing_only_relocation": true,
+  "links": [
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz"
+    },
+    {
+      "resolved": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "target": "MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    },
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/ACTUAL_BINDING.json",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/ACTUAL_BINDING.json"
+    },
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259.gz",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259.gz"
+    },
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87.gz",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87.gz"
+    },
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c.gz",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c.gz"
+    },
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/BODY_MAP.json",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/BODY_MAP.json"
+    },
+    {
+      "resolved": ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_MAP.json.gz",
+      "target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_MAP.json.gz"
+    }
+  ],
+  "raw_math_links_edited": false
+}

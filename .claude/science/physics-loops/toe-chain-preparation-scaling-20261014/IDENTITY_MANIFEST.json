@@ -1,0 +1,2024 @@
+{
+  "mathematical_predicates": 0,
+  "members": {
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/ACTUAL_BINDING.json": {
+      "bytes": 3445,
+      "sha256": "c46f0c80c2465731047569c2eb7c072b59658d9de4b945492c6f3b759335df84"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/ACTUAL_BINDING_INPUT.json.gz": {
+      "bytes": 862,
+      "sha256": "7900767d95d28a37dd84f6d8a3a04488dde12a19650f93a451d8dd8bd2c0fc0a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/ARCHIVE_MAP.json": {
+      "bytes": 281497,
+      "sha256": "72f4bf1ee7b35312c8b83aeb4af840d365807e759c4204f08ab9f44ef9af44e5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/BODY_MAP.json": {
+      "bytes": 6761,
+      "sha256": "5eb3aa32b6785ce12b2027ad5b49ab4feb2f0b01c76161924c5b6d0d251ca202"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/COMPONENT_ROOT_ACCEPTANCE.json.gz": {
+      "bytes": 2394,
+      "sha256": "1614a0f483e9dfb89b4d74939c25cc61aa10cd9c154e4f3b02a3c42282d96586"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/DEPENDENCIES.json": {
+      "bytes": 891,
+      "sha256": "70f65b906ae92b65bb53e124ae225cdb632652f3c082177bb2fd54de1a138529"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/LINK_MAP.json": {
+      "bytes": 2491,
+      "sha256": "13c2399e096feb4962ae0a59a6a2b919ffdd463466de621ce1d14eb03eb9edd5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/PRE_STORAGE_NOTE.md.gz": {
+      "bytes": 11434,
+      "sha256": "544ea8f23ca346c871c2afa6fd52b98722ec8479f79c2f1568f9cf6eea60775b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/PUBLICATION.diff.gz": {
+      "bytes": 4349,
+      "sha256": "a9fba0df141c5d241795d8a398c0a9e09d3dff526022c37425f896a6e9f9c31e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/PUBLICATION_RENDERING.json": {
+      "bytes": 10075,
+      "sha256": "320ecf5b74b5d51b3a9f33fe25429739e91256fa6a6b245892f75bdf1fcf0922"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/SOURCE_REVIEW_STATUS.json": {
+      "bytes": 429,
+      "sha256": "4dc31d2bed9e67afbe8aa97b3bbae206b7c8bff96228796e91c010e4e3513827"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/STORAGE_RENDERING.diff.gz": {
+      "bytes": 3340,
+      "sha256": "17a03d7cbd709f6f9bc8d0f4e442fca1fe7fa0b1fff1f8c1d524c2de161ab54b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_evidence/00.json.gz": {
+      "bytes": 965,
+      "sha256": "501054921aba4add8ad4016a21b7be3a493a4415a5cd0df82b31109a8bd27d7e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/BINDING_INPUT.template.json.gz": {
+      "bytes": 273,
+      "sha256": "b038894d2e2a5fa40a134a2746d4e898aaee7f0eebc04b384e1d462aaf3d0b99"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/FINAL_FREEZE.json.gz": {
+      "bytes": 1822,
+      "sha256": "48555b4c0a53b59f7ce1597e11b8431de399a80e88d2419dc6b4df72448ef20a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/READ_GUIDE.md.gz": {
+      "bytes": 2489,
+      "sha256": "1e51b1cc16efc6ae4cd9298e386bf1ec708c523dbc0565e6cc1f9a779c8d9f60"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/REPAIR_EVIDENCE_MAP.json.gz": {
+      "bytes": 1474,
+      "sha256": "b06e60a87930baee2d18f18ecf088386b8c7e8d7d8c412eec6aebedf73ce5a8f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/SOURCE_MAP.json.gz": {
+      "bytes": 2913,
+      "sha256": "218eb25411b59c110d577574d8462e816c849e4c910de38129d26566b6fe0222"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/V2_TO_V3.diff.gz": {
+      "bytes": 1075,
+      "sha256": "8fa606617c685091c1b6621513916a699d49a3ce015607ba9ca5381879964060"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/build_bound_source.py.gz": {
+      "bytes": 7840,
+      "sha256": "c24c8d3c20ec01b4e702ea962a13ea83e76f79b69299df41093ffce123be5d9c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/identity_runner.template.py.gz": {
+      "bytes": 4689,
+      "sha256": "5b3fa34b665acc5596bbf56a2b6037343f1dbe971dd29261aae79c7523e7496b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/metadata_history/CORRECTION.json.gz": {
+      "bytes": 460,
+      "sha256": "5613b5665aad0f3517e7e5ab8c772a7034af2a4be68cd43fe7bace338a58245c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/metadata_history/FREEZE.before_line_pointer_correction.json.gz": {
+      "bytes": 1597,
+      "sha256": "11dd89f289c05e7b02457984930ba17114c1ed01b75b23b0fa358687a4140814"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/metadata_history/SOURCE_MAP.before_line_pointer_correction.json.gz": {
+      "bytes": 2913,
+      "sha256": "20b00d52b68a09b645c06f8f385bd0f785340f130600b9c7287ddfc1766729c2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/BINDING_SOURCE_ROOT_ACCEPTANCE.json.gz": {
+      "bytes": 809,
+      "sha256": "99826c2938b761d42a4fde9571e9c67215ae9f980194546e55d1481e0bdaa441"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/failed_v2_run/EXECUTION.json.gz": {
+      "bytes": 681,
+      "sha256": "a42ba95a9294355938cc60476043ab33d0efd4071b19f203220e06b9a48739c9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/failed_v2_run/executed_source.py.gz": {
+      "bytes": 7845,
+      "sha256": "34867a49e3cfbb2fdd21ab61f0e73da64ff18dc6c4a4ad5bd6d6169724990878"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/failed_v2_run/stderr.gz": {
+      "bytes": 456,
+      "sha256": "bb4a808868fe891e903eb7e878e81688bdffaef8ffcd450335da3bb1a89a4e63"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/failed_v2_run/stdout.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/recorder/run.py.gz": {
+      "bytes": 688,
+      "sha256": "875b7f42ca707edfd4304cdf8d0ca1e0a7d44ab682909812f5b119390ed0fc86"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/BINDING_INPUT.template.json.gz": {
+      "bytes": 273,
+      "sha256": "b038894d2e2a5fa40a134a2746d4e898aaee7f0eebc04b384e1d462aaf3d0b99"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/EXPOSURE_AND_LIMITS.md.gz": {
+      "bytes": 1819,
+      "sha256": "c6d603925c91e996a5d2677a56370a6d2c6e681fc28fe26bf5f039fb46f06592"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/FINAL_FREEZE.json.gz": {
+      "bytes": 951,
+      "sha256": "f9678694479859bdb21694dabc18e7b97be59d402cda7d0dfd6c3173260cf067"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/READ_GUIDE.md.gz": {
+      "bytes": 5393,
+      "sha256": "eb19dd2c5653b9164d6f87a0759f5211b0a1cbb23075b7b0d87c2103d9a9f8a4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/SOURCE_MAP.json.gz": {
+      "bytes": 3512,
+      "sha256": "8f9160b0bea516900f50184f00597bc6867b48bbff0c14013f49f4b75775408a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/V1_TO_V2.diff.gz": {
+      "bytes": 12510,
+      "sha256": "1d50a194ef0b9de5bc572e839e0667c71a53f8a896b46654f7fed6e156f460c1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/build_bound_source.py.gz": {
+      "bytes": 7845,
+      "sha256": "34867a49e3cfbb2fdd21ab61f0e73da64ff18dc6c4a4ad5bd6d6169724990878"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/binding_source/repair_evidence/v2_source/identity_runner.template.py.gz": {
+      "bytes": 4669,
+      "sha256": "3b26096305695d012761dd9e4aa4406f6b8b370cb791a78b73275ce6ae0427f5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/observed_parent.md.gz": {
+      "bytes": 22412,
+      "sha256": "85a82af9076c73d5ccce94184c5051af38872795fb3b9ec43d89ffed7ca887c8"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/BINDING_INPUT.template.json.gz": {
+      "bytes": 273,
+      "sha256": "b038894d2e2a5fa40a134a2746d4e898aaee7f0eebc04b384e1d462aaf3d0b99"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/EXPOSURE_AND_LIMITS.md.gz": {
+      "bytes": 1233,
+      "sha256": "fbd647c601c31ff0642d589b8de3600836ae4c92775b219e9a1d0e1ebe0e1ab5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/FINAL_FREEZE.json.gz": {
+      "bytes": 758,
+      "sha256": "8d59bd59055c6ef5d91d1d8addc443144447e01eca071f080c3d00fc60916ae2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/READ_GUIDE.md.gz": {
+      "bytes": 4027,
+      "sha256": "1b4a42b0f7618c0aef99cd6805b99099eca99151d30c36e9e20c6fbff8aafd28"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/SOURCE_MAP.json.gz": {
+      "bytes": 2957,
+      "sha256": "6e622eb6765bdb50f81ee02655ed3584afd30e51e22c6a334a50fc0940fb9d01"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/build_bound_source.py.gz": {
+      "bytes": 6971,
+      "sha256": "734396284a3bae29c3411ffef1f157ddd8872b52fc8a5eddcecb5cde8e861489"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/prior_binding_source/identity_runner.template.py.gz": {
+      "bytes": 3775,
+      "sha256": "13ea27bb4ecab365993f14dfaa42713dccdcc4916e22d431f6fb7e1ae2469fb5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/rendered_framing/BEFORE_CONSTANTS.md.gz": {
+      "bytes": 420,
+      "sha256": "7936556d9a7ab966cb7ae1e903185b4a27aede46952b9476a7fd789bbceb1039"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/rendered_framing/BEFORE_INDEPENDENT.md.gz": {
+      "bytes": 256,
+      "sha256": "6f1a980754eef0f3e0e087d240338abf30469049163d42cb4cc830ceb37901c7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/rendered_framing/PREFIX.md.gz": {
+      "bytes": 2337,
+      "sha256": "e012259d7a7dfb441a5e83397ed7c8e1afa0927d76a31904da5f1e0ed68275a0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/rendered_framing/SUFFIX.md.gz": {
+      "bytes": 914,
+      "sha256": "3b1a8b641d46795fc326c006925a688294a5b1bd79acf2df58c04cd74dd2c0f0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/ACTUAL_EXECUTION_INDEX.before_map.json.gz": {
+      "bytes": 1598,
+      "sha256": "8c62925374d68785f1e5ca242a1a2d637423e1f038c99bcf5aa208529c8014a5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/ACTUAL_EXECUTION_INDEX.json.gz": {
+      "bytes": 1941,
+      "sha256": "b8960f77b0bf1dd3105d2891f5a480e026ad85603992deee633798e2f95e5cd6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/ASSEMBLY_REPORT.md.gz": {
+      "bytes": 2023,
+      "sha256": "b04172f458a526e9a2ad5fe26d54c985c3658377eac10e0e905f11194a23ea52"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/CAPTURE_RECEIPT.json.gz": {
+      "bytes": 838,
+      "sha256": "c277949a30c263463d8c3c7eafa03a1680bfbf88f25b1327a7462e6a073ff21d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/EVIDENCE_ROLES.json.gz": {
+      "bytes": 606,
+      "sha256": "74f66f696ee3f596a33bdc9233afc860db2a03c4777cbd6c9d15fed9ef48aa7e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/FINAL_FREEZE.json.gz": {
+      "bytes": 21785,
+      "sha256": "cfb8f1f01fef036eab345608e93282d3eef2afff62ab793c08549bd0a82b4dd2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/FRAMING_BINDING_MAP.json.gz": {
+      "bytes": 1023,
+      "sha256": "dac15606a9e1ae7e029913bc89195a9af1838a600d1aefac8eadbf1e7be71706"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/FRAMING_MAP.json.gz": {
+      "bytes": 741,
+      "sha256": "d459990ade04c1527f5ba68d8558b9a8e35fb3198782a2bdf69d26ef68534ab6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/INPUT_PLAN.json.gz": {
+      "bytes": 1820,
+      "sha256": "bf29d3cad541220dd71ed090ae2814c2a2a50ac54ac995b8fb4a4f4515a25120"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/INSTRUCTION_PINS.json.gz": {
+      "bytes": 686,
+      "sha256": "1a0881e1985105727e88cc52e014084433c8d2549debee40565bebce47c9c124"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/PRE_FREEZE_CHECK.json.gz": {
+      "bytes": 1699,
+      "sha256": "1fca55b9814a34237dc72035b10e743670a65ae1999b13ceee74f264f0f0ecd5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/PROGRAM_MAP.json.gz": {
+      "bytes": 14847,
+      "sha256": "345e644458fea7d03e628653afa748b339fb2598acd9ea3a650dab64a2b58d1c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/ROOT_REPRODUCTION.md.gz": {
+      "bytes": 1640,
+      "sha256": "2d801855ffa5622f7f40d52b12d74dcddbf55479224c7dd757cf79be1d6d9542"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_EXPOSURE.md.gz": {
+      "bytes": 1766,
+      "sha256": "6d0d6f5594a677d91d26c987fb4bbe18614e47665de915448663d35abd42c352"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_MAP.json.gz": {
+      "bytes": 48479,
+      "sha256": "7cb484d7b4478ccbdecc21f909d9bcc5f43ce6f07b7d505101691b35149861f1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_REPAIRS.json.gz": {
+      "bytes": 558,
+      "sha256": "5660b5ae5c4d28d01227524959938057769be8203ce6bb8110f0570fe2232063"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/TASK_CONTRACT.md.gz": {
+      "bytes": 1319,
+      "sha256": "7c2b33d36706c807e3ed3c46329599dd385f32d93d2c6b5d5ee89f52ea2e0d39"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0093507160d18bf262109ec41e2ea330e0c6ea63d2376c598c23b8e3f80d9168.gz": {
+      "bytes": 562,
+      "sha256": "61d4728bf95d498b774d2d5cfa6cedccb481f5cf95d400af9664aeac4ac27777"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/021b3f5383548c64368d2c3c49e2154c08adf158a60830574a852b59888a6947.gz": {
+      "bytes": 6111,
+      "sha256": "9e766fe17f24b66d82cb1dfeeab12cd0c97943cc17d98b3236d4143006848826"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/04034dacb4a622c4d51b103b7918ef952b12ba79e3a62ce1b08461331cbe40ee.gz": {
+      "bytes": 2152,
+      "sha256": "5e7c6e86ae15fb0f45f75dac1db14bd04c4c6a0e4329f66f4754e2274ae395a9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/05238c3e2e03d50756dd3cf515445f1dd5e3addf48d71c83d526c0ac4b2c58b6.gz": {
+      "bytes": 857,
+      "sha256": "746147c2aca4df5aeec1281bc2cc932c6ec5bd33f74305942b5ccc8c0d15e03a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/054851cb1f20fe1303244d60edfac3b79d4055b088791ace4f1bdec7c5e5d438.gz": {
+      "bytes": 409,
+      "sha256": "b794fa35f9d5a8f418787d89b9c4a8da69c52b75a773cc54d6cf32f09024e971"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/05cab306dd8d00f6b2183851a0d809d2c517ce0cfa7ed034ff56daf16f45a7ae.gz": {
+      "bytes": 19825,
+      "sha256": "9124e041665febd05e594a8ab327495b20523a393b431abeba6de7cbac3d499f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz": {
+      "bytes": 6353,
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/061cfa43e65a41253b28fd87e435738014bd953c7e3d370cc3faf7e43008c08c.gz": {
+      "bytes": 874,
+      "sha256": "7b9546f3a6b77ec82dcc1446c201c54aeab5c3c7f299a412158f5eb91b1918b6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/06ec0b4c67a16736637457eab83fb4d563a3d10025085e8ebfc7ce950d323f0d.gz": {
+      "bytes": 1028,
+      "sha256": "d7aaa74287bafd55410f5ed1d4b2cfdac330df4317bcc9f176492c73783682d6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/09c5a9c32844f805e016e194822e33446ad5fa5534d4525599a22c5f34c01045.gz": {
+      "bytes": 506,
+      "sha256": "42a57651c7cd4b268e6b407a2ba302a700e02ec42f5885d72176f5280e87836d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0a1b3ae9c4f8336355016d71802bf4c996464353d62b7c822a60a5274553cb05.gz": {
+      "bytes": 4592,
+      "sha256": "2d0bdb373c8829ada11f2d3f891321401ffff3697b6591d6026ad43e95be0060"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0b3c5d92c2366c341e53fbab7e3b4983b8dbbab0bd351e87e4c76f96aaf41696.gz": {
+      "bytes": 628,
+      "sha256": "0a4a6647adf142371c69a4489bc1935da9421a51d6bfedf4d89c3c65bba820a0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0b5c21ca98bd4d2dea566e31255aeb5b681a94ec08237ab5629cf219b951e57c.gz": {
+      "bytes": 1680,
+      "sha256": "7dd7eec2998f7785d74a44b99da9ded0f2ac481ea282ef7b82a9873ee482e3c1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0c2db4d2f240c06efbe02622546136b879eefb47644ca665e6ae029da62fa3d6.gz": {
+      "bytes": 191,
+      "sha256": "356194c35e7fcdd1cb8e550cc6a4b39d5653b694c28bdc7cea9579dca344eda9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0c71be4791ada7ff51d9d8c662f67b035fda61bbb5927be67d2dbcbb63bfd8f2.gz": {
+      "bytes": 3780,
+      "sha256": "67cb6c9aa50c8d0eb9c96a828f1c4b74d9dff195080dbc8e2a81da6db3b790fa"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0cc12bb2ceec4e8c213d619befcf4676f9bf9ca7409b785c02f00031b9715676.gz": {
+      "bytes": 443,
+      "sha256": "f70e9a13a5b14f3fe50e0aa9ddcc307f7031e5a4028cf2d98ffa940a3b75473d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0d7b23f1f44b73612c927f68134c41024a83e285573dca326da267b70db0ae1b.gz": {
+      "bytes": 850,
+      "sha256": "858cf172bfc6af7d7dbe48899c3594ee8cd326897a481e1a6813342e0a49d3fd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0d8ac99a45b504adad57e2994fbc480caa9c7ceed5737cabd9457a8e6e3d5117.gz": {
+      "bytes": 629,
+      "sha256": "afa77deefd053beeacbc0d1d60d2ac8d17fe1a37c4adfa405f06119f1b3d53bd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0f402e0daa601b5549c38d18fa762c838a9c90ce1a1bb991c154950063b0f6b3.gz": {
+      "bytes": 278,
+      "sha256": "d32ed9a68d7b86ac0fe720d893b3d7f5f417d489a4f957af15f30a98e2d69c60"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696.gz": {
+      "bytes": 757,
+      "sha256": "45b29196762f6bb07d3312abb0e5b79b23b6725d6eaa3f89c1a5e0f9a59e091d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/0f585f6f72fe75399bdcbe81608c586b1ec0b35216fcc935403a2d900dd8a46e.gz": {
+      "bytes": 712,
+      "sha256": "032365958d0e3c1dff35e00354a70443126da3846ff658b4bd9a2d37ca7e0f53"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/10033711a76640425aecf42064a081f5888cce9418e97369ba80489375c3723b.gz": {
+      "bytes": 737,
+      "sha256": "fc34ee1d5de642661dc89b8c54f3d52c4b1d55e769c13f2fe33271afaf617025"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1024b955f413274832d4531423ea72496be034f59c44dca930dc243cc06eac80.gz": {
+      "bytes": 1347,
+      "sha256": "5bf2d56b1ce22f9fb76b44f27216072741ad0e1d9494517c0f2fe91c97e3b605"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/11d025c74f3996dbf958b5d9ce4d60e68b1530fbbad286a76ec4cd41cebd309d.gz": {
+      "bytes": 162,
+      "sha256": "b9b38ee5bfeae23b3d0b3b3319945bfd18bf2130c8b0a23a69d76bde027957ba"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1228715fedc75647255999a91c352af605db1f3bc5ea3a4b00bce76112f025ff.gz": {
+      "bytes": 985,
+      "sha256": "340641b5e6639a7fa3fb060941e7057a02dddc8d65fd466c28342195340cd6a8"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/15980985b28f5ed306fab21dd3c9cbec160ab79e29a51de728e5449cf8db2e7a.gz": {
+      "bytes": 3558,
+      "sha256": "39f1709f1794bdf3987a3087ef98f36da17de0e191efc7023dafcb87b54d12ac"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/169db509b0167c662f54ee73347ba02937287b4ba117272b7e68d86dfd6560a4.gz": {
+      "bytes": 628,
+      "sha256": "c08ce9c5a0f175a1fcbfdceeb5a0031b04bc78d5a362b418c993245659e9704a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/16df277f204d725e1431328e1e5c90f169ad30239a07704f2e401662a8b916a7.gz": {
+      "bytes": 622,
+      "sha256": "2a1bc7df9c986415f524012ecfc6e6a3496d0ee1a9d8a791c05a9575cc0fa28d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/17a055d20883bad73c27a91c334808c077c2109959e9b0a48a7bcf10244c85c5.gz": {
+      "bytes": 705,
+      "sha256": "71f75e53998656c6596e2ac78069fd4646989aab864aad3b53947124cd96eca7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1a909240f9abb92249604ea7dd1fd5985e957630103c004ebdc14822868dc057.gz": {
+      "bytes": 2039,
+      "sha256": "90d3fe5be36fdc8cfa4700fa1825ebe2dec32327ad76e6796f4cc03e76f1ca3f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1ae17513f3fc388f941319617f13b999cb944d691991abb4354f1cf9b90e9c0c.gz": {
+      "bytes": 636,
+      "sha256": "cabe34616d54313ccd45e95a62c75261f8ee12b7f610056583f69a1dd7cc932d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1b25c5e0b2bcff495c3eb2d03f817cd633e691b6bdd1dbb152d29cbafccaa1ee.gz": {
+      "bytes": 627,
+      "sha256": "133d7ad3bdd1b2b95727d67c63f40e34e90a199862c04591f55cf2cea5c203d0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1cbf81cf13cf0251efcc464411ecb551f0b6f85bccb842e533d47df99069394d.gz": {
+      "bytes": 740,
+      "sha256": "a85559b234df8d2ff4c338f967402706c674ac0d6f667c872b57f2c92cbcf189"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1e5e45183b844d7706d64c63ae52be2cb38d1662d6100853ba1ff8fada50388d.gz": {
+      "bytes": 1311,
+      "sha256": "8daf997ac9ca3caf430997901a0f098c2049f692fb2ca6425d82fa8ebd868cf1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1e6334800d89a0ddf3f14c9acbdd1e9a7e4daf783ed8ab5510fb4a1534942c7b.gz": {
+      "bytes": 1229,
+      "sha256": "0b06e855a951a176d1a7edb2b99dd875afdd43e15523b333e026636abc6820f1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1e68e17b9a4d7e11d3c93eb356bfc570b107b6ca7d0846a360498a7fb32c937d.gz": {
+      "bytes": 6728,
+      "sha256": "457ad4d9f4bb1d5aeb194716e72fcb24cc9ed5e437945d0a4c079a1dfe957b3d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1e8190e1a5d46de5f71f5c10b1108482d00fd28b670f2b601fcf83847cafd59d.gz": {
+      "bytes": 620,
+      "sha256": "405f226cff48787a412c06d2a4f17d2412c54c8cc6bb87f7227986e220661ffc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/1f36474e820163a86d4c1c0a14f2ae55ff6d218cb62ff4c3756ea07d030b3f4b.gz": {
+      "bytes": 578,
+      "sha256": "3fe14f00af520225adb7c9a8eab57b4ce8824fe291829bf054960c516108dff1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/202d53c398eb9a8b0da4112739fac633a4fc204cea3a0bdcc796125f762fc05a.gz": {
+      "bytes": 444,
+      "sha256": "2d6869585509084ee1965f6da7f73ae06a9c9135f3153fcd6e30b9ec8605ad96"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2096232756c966fb5ec0503356de560fb40ebe65830921a7bbb987ce556e96eb.gz": {
+      "bytes": 6155,
+      "sha256": "0eb9360f0e9735cfe02749cb3a41244438a06ff4898b861c6d28a5cef819fca5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/20c818f860d12cde5ff2d31d052bfcf19481dd861c1b3c2d3141c0e3dc28e009.gz": {
+      "bytes": 531,
+      "sha256": "a7764ae7db09aeb13c39fb7ff6d59c88340de32d3a6cddb6fa73494425d1c523"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2124cf3a946f7ebd23cb1ee7b92545296b8e8023449b4b6ea1e7d912cd03a68f.gz": {
+      "bytes": 629,
+      "sha256": "d7db351dec325b05ddf8f1112ba37195ca5284bfe17b8afe526997ae49991953"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/21f9476a2b6cda7190248b376307d951abc76dac365f8529c66422e9755083f0.gz": {
+      "bytes": 840,
+      "sha256": "d161ca082329900e0bc66f3d8bfc4e7c7a47d1d462c863368a6d394f18310ba1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/22ccc49e71c5b4d98ac5a60ad7f83db41784c22c7494206eaaffe6eb24e32073.gz": {
+      "bytes": 1792,
+      "sha256": "79b1c300ab934ce491c4dc4da93641ebf95387c83a4cc410d08e2a73fe20e5f9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2372fada1224d83c236a876a2c1c9c72176711956729cb5c6cf568efe9e14ff2.gz": {
+      "bytes": 673,
+      "sha256": "bc22d7ef152d19a9a86afe84ecb3c2af6cb66a2ccc6b169084d9cf4aedd3e824"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/247a86284fbd67a45cfbe75be0458382edb8603d33c1251a6457c0f4d7584e2c.gz": {
+      "bytes": 6255,
+      "sha256": "9ff125564f80bebe415f41105471b8f9092c4ea6851ea8c031d48e9fdd16aafe"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/24964eab59d98e6e00bbacb62b38a6d4e9419665ae33c14e21d99083918d4653.gz": {
+      "bytes": 1901,
+      "sha256": "ea7e24d9b41ffb1a63c072648acfd8c58b0d21b1ddfcd2763cc8422e53865acf"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/260b11fd49bfbfd56331596fef7860cc8bc6f5dd4ede3774f9d2c8931b04e8df.gz": {
+      "bytes": 633,
+      "sha256": "d89dca63c52c178a601b79518c7da0e2f8b25fec8bfa48908a69f5472cfe4322"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2661f7b39a796e5d6f229ae2d2a4a1cbcfde7a42a8d9dacd0c4d9b4a4cbf984a.gz": {
+      "bytes": 8812,
+      "sha256": "6bcf7b54a50a55e1491aca5511e165034df6a90ff31619f2ca04c3b1d2f1c55b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/268de71fa073bab40b6420bc85292cc4e74f7401256cc643b62effbaf91a29fa.gz": {
+      "bytes": 935,
+      "sha256": "543db8b6d8afd01729a5bf27a8ee16e1960a3e0347c6f939b5869fbe5e0734f7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2733c3dbd422906beb4b9cb2faa14f1c83de7f4c314b72c5c1879307e01d9028.gz": {
+      "bytes": 2698,
+      "sha256": "2a8622412b2665c70fb2181358f2fee5ad7d4c3c94200b23f8e02f42f1686e3b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/29a2080856b1f9154134c37135bf39b77dace4876c5feee5b03c1d939c10117b.gz": {
+      "bytes": 2538,
+      "sha256": "659e783a34858517502a455bf5570a02e3cff6960a3db4827d2e577852257964"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2a621093d54f9bc6841d1154fa0bdb3606aaaec971d0332f94d4aa6af24a8e7e.gz": {
+      "bytes": 692,
+      "sha256": "32238a279334ac021e85693eaf91eafef4b6302cfc260956a9a978702a687dab"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c.gz": {
+      "bytes": 4729,
+      "sha256": "bdc4375cd573c8d18f5dbbd0d6e0d087064fe11676c09988f9ab8ab4b46d200f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2d1faac02757d8d3e0fadaa7b2be958b0cd060515ce2677368c8ea25cfb71ec1.gz": {
+      "bytes": 4848,
+      "sha256": "b8dcedc7b244661320eb02ca1b68623ae696905786898870f56f87aca1fc4255"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2dcd9bec7446ebd09211815ec8f9657a356fec08d040e3fb90e45e54ffe58da6.gz": {
+      "bytes": 432,
+      "sha256": "3f465e0ae7fad1aa4905655d5a120c4ea8ecb18156e19b50e63108f27fd6e2c4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ef111fec02dcbc51bd220989aba204a61feeafea5c8e1856c5cefcf098fe8ff.gz": {
+      "bytes": 6304,
+      "sha256": "70dc6b15f5a64ab135a6dedd5aeb9bf1373742432d5dd0f42a57159705f92215"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2f2de29a4722863a276fc3b6752757184a09f2d5228082ae41b67cb795dacbb2.gz": {
+      "bytes": 2555,
+      "sha256": "cadf3501660547e149d14485118a6e47650da6bf8fb0555a00180373af742b38"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2fac0c0ab4d5e664b969aeefdc0c5134b7c9f9095fea237ff06a4cf8f2b92f98.gz": {
+      "bytes": 1279,
+      "sha256": "9f57b647138e353b7c71580d630fec1e87492857647e9eadf1ae5bf753ff2e96"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3033794d7e37a8aa55b6c6843c6ac3db8c4326c10ec813fe5dbb742f85833786.gz": {
+      "bytes": 6122,
+      "sha256": "363969ab8bc73da98ad5efbd1aa39773f942fc90d378509fdcb46befbb99bc62"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/30ed4ce88adb01c79ad01415df595602e13323044c563996044657e07c860761.gz": {
+      "bytes": 3308,
+      "sha256": "f3b493cec091c0a8c8211ac19319d4968842e27d15468b2de424d8f511c4f94e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/31b62b4c003534eb2b8c525c166b159edf0a96c0103a32a5ce054fd68c97d24c.gz": {
+      "bytes": 1837,
+      "sha256": "0c1d6807644ada0eba89bf86846b1f442cf6d5ea5cf25591f60c6e0a6398d77c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3228f7c7c0d2c9286ca4ac28dbea69ab5402c81aff59901437c20a3cec1d0557.gz": {
+      "bytes": 471,
+      "sha256": "87748e8456f96efadb141fae2a3219829b1aa8fb257149a367696c5f6fd8f674"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3448d6d7b08726c43dd0bd0894fc523af598b9ede1ddf78fd0effe1dfea404cd.gz": {
+      "bytes": 433,
+      "sha256": "c79046864f1ae1b120048c2f3104d2af3b6a684b86bbfa0bedf2e67bbf5530c8"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/357ef3762706430317936cccda63c97c30e20b9eb4dcef5f51c345663802412b.gz": {
+      "bytes": 980,
+      "sha256": "8c5903280b2f33641f1a38a0fdf363ff1fb6631eb5014e95f375813121fb5eda"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/35d97011ad15d410bc8ee607c685ea338c1c7d0f6cea158a552790c2ec6bfc1b.gz": {
+      "bytes": 9256,
+      "sha256": "5339ce92683f634fb8185b2bb2f1e9e1442bcf0d1cd2c2912da554fc2abec19b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/35e22f87b1ec2a05c92ac2d9859f912d828a42ff0d08b224f6d6a2cb67dad56f.gz": {
+      "bytes": 1321,
+      "sha256": "0f761d51dd77269190f76f2d899511375c127807601b029df76c4ae2286e3fcf"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/36a022454ff8520c5bc3e1a5e63249061a88e59147c401bf142367537ad20ce8.gz": {
+      "bytes": 3122,
+      "sha256": "bf09083a7f3b47e24b9554ab8765dce46d7cba85004cef9e9de23c4236f7698f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259.gz": {
+      "bytes": 1066,
+      "sha256": "76beb820df36516bbb8ec0de5c11c92270f08654f02e2e23a446a44b3afbd465"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/382f567f0aae6793cf2ab61a4ac0f2337b73ee8cac7f2effdfec451d5baf54e7.gz": {
+      "bytes": 2808,
+      "sha256": "5db9e7d4ade5c5f575275a27a6adf9990adfdc8a00466788067ac6deb9fdc10a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/383fca32b0153167b460c0197dab455f65258aeead2ad067647d6ec744f659e4.gz": {
+      "bytes": 4550,
+      "sha256": "a054d6bfab6c94702b6b78a3ea9f533a0a017128492449de90dc54b097038979"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/38771e071eb54cb84e9686838c0d450069daae2edeb19b6e0482e88455986cf1.gz": {
+      "bytes": 302,
+      "sha256": "62ef1753e08e3091b898a2a2fcb5b3f49bb98f00a2387e55effe959f11b7f9aa"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/38ef2605ea796820c4a3d2777576ec7526e5209f24b45acc89ef562420bf28d8.gz": {
+      "bytes": 1646,
+      "sha256": "dfd71e93dc9f577c27e32e369b611baa54d5009860ba1279e8a772d2698b40ad"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/396d8a5dd928c2ef8cce3d2d3fb55136662c811b4067b42fbef741ad33a9b137.gz": {
+      "bytes": 8261,
+      "sha256": "d81595f30d12711d02eac297fcd5f124f2fce9bd8d598683c3af3b7c1aa9d69a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3acd6579312c1315810b4a4ed5124200a34e5573511613513f501a4590dbbeb1.gz": {
+      "bytes": 1053,
+      "sha256": "086fb7914a668ec0a52d2425a21d1aed22ec993e690ef2cc56886f93900cd713"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3b7d09689bc78a71509ed0fe8dd14326a25b2bdf4c8211af38fbe7c0cbeef494.gz": {
+      "bytes": 74,
+      "sha256": "6674d7429194bcc70e393d078379fa684e505b4bc122a27da390a85fd7840a82"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3b99b3df834f71c7d69d0ed4feb7e9e0a1e3f3fabdacf73d4fcc64f95b07d7a6.gz": {
+      "bytes": 925,
+      "sha256": "82413357fbad32f127991804c30bfa5b04bd3423c9f3663a61dcfe4e0c67807d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3caaecbc2c53e0b4c3ab858fd1dce570889d28b30221e8b7d39c64c391acba66.gz": {
+      "bytes": 1303,
+      "sha256": "6dd834e3871f0b0d2a2d59ba4e40b3a07b1e8c55e7bf4cba3ec082ac88a3c273"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3ccb51e047855aa40c224169ec8a227a85249c5c45d112b8ee6bfe929c181061.gz": {
+      "bytes": 851,
+      "sha256": "19eea8a358d91207b305a7678cf09fc2f0c777bfb9ff7d85c7c78d8919dbb70e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.gz": {
+      "bytes": 1068,
+      "sha256": "3bde432f56514aeeea547c4474c7cf5157f711eaf44e4645e9b5eda9b76bb2c3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3d9beb772403498c5708fbb797583f72eb66da7b5e9d3f36eaaf28b7ad5f74a3.gz": {
+      "bytes": 252,
+      "sha256": "4e6660671135fae8b22e973f3ec1fd88256cd146be768885105a92a6a5c2d7cc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3db428b65639fa831a0d6d7039cbe33a9785c154025ea995cd5e80747ef2c58d.gz": {
+      "bytes": 2578,
+      "sha256": "7d385bbbf1705e882a61bc89d45cedea7838c3f2bc08b83b64a58e4bd884b1ee"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3de73f254ff80fc554e7e07cfd4971ebd27ae0904ce8ac469355cee3bc74bef0.gz": {
+      "bytes": 1019,
+      "sha256": "b2644f2e746c916a78431d7d71a6519497de22708452e69f1b0d4407e983e6cb"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3e555045105726f1e206e163772253a782cfb88fca11ffc4693592ac1766b865.gz": {
+      "bytes": 4952,
+      "sha256": "b2396234a117702f1a06c00e85d3e4983df80e8ae4d9c0ca4d92295ff353df38"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3f500775d35cfc31d03e2c45d23e711d7b62bbe3a7253a533a6b5140f39ca542.gz": {
+      "bytes": 3741,
+      "sha256": "f277fd34c4d83b49f9925413fab63f390ac1dd66a1caa1f7bc26bcbae5fb9864"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/40138fed9feda0cc2f41187017ae6b03ef198bc70fd79c5ea28d9242b12f28b5.gz": {
+      "bytes": 484,
+      "sha256": "a242bca7656960152bafe405a58ff4836e2443372866fcbea254503657670cd5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/40441ce8fdd0600b3c26543f67ac81ad31137b30cc6376fef1b8fd750444ce17.gz": {
+      "bytes": 636,
+      "sha256": "3244766c8777aae932cb8fad1c16c6a4348bc6b9fede09dcc976e868bcdf94e3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4075dc321db657bba440a75f46476aeb2294a3a48dc3c14c16e2b7efaf7d281f.gz": {
+      "bytes": 291,
+      "sha256": "4b0d6914d80a35aab1aa36e270de75f57a826f9bb7459088f5467a60787ea212"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/40b66a204a2117d20ab29b2ca646014bf15e245f526a4c2af2bbe96bbd6b1115.gz": {
+      "bytes": 4400,
+      "sha256": "fa51d19a7a8317f3b148e16857a71c39e5ec50dce190aaad6bcf18fd0aefe414"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/41c2cb72b9f87cfa6f7c5938782d03f55c78186392ebf71530a8f99be2b8eb03.gz": {
+      "bytes": 8264,
+      "sha256": "efbe487ca6dbe190406399aa91eb6a32c8aab99db0bf725a20423213dce1216d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/41f270be81eacf98302c50ebbb20d6a4513b8cead6a146596004d88787943775.gz": {
+      "bytes": 1801,
+      "sha256": "e5b77e4069d43e68fad318679d12d644e1ec61e4f02912306c525493ce53f0b3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/420bba92330c43620366714ade4ff589dc3ebc2b939442aa9aa2ff0445a3ef33.gz": {
+      "bytes": 2531,
+      "sha256": "dbcc5428d723b955a490bb714382da4fa40ecdbeecb18e61ce57b760ac6670ae"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4687b99e63c4ecc098d4be7d6a93bdcb282d0daff8d8658886315125b9cd90d3.gz": {
+      "bytes": 8390,
+      "sha256": "ecf2a9085d559fdc34901fbd8f2d3a4de9c7c426567248f0a262f6d26af75987"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/46f121d0e1c918ec0ee4f9f25136f0b186bf455019c74290b82bde1164390042.gz": {
+      "bytes": 1052,
+      "sha256": "1e470078ded243765a249bf657e3e41b9c750d34f6ede2a5d01fffc56f336aac"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4771175f7540f80e6efa2e0f4989696bc51c1ddcd677f56f14805c71116c316e.gz": {
+      "bytes": 2727,
+      "sha256": "fcaa1bef1c39729fd7a309851b4ec811613a5cb38dab0eca329f788396fe1f7a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/47cb978251daa284da2590873f0b839a7ad147b037bcf8422b419f4b5a4438f0.gz": {
+      "bytes": 2295,
+      "sha256": "2f452cf9399179630841062438179d1c36c0ee70ecaa2501f2e2526f6d772595"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/485a60fdfd274a8b801f7415e1bba3207f31bcefc9d3747945d7e4d979611808.gz": {
+      "bytes": 1956,
+      "sha256": "a8b0ab1d7f75dce58fa96479954035ef9264bc7a7c90a0d72ca91040f6cb5adc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/487c2afd79a492a3f0d934a650e9ac9a6f6fa94230114a19e6f648c00bd74820.gz": {
+      "bytes": 244,
+      "sha256": "e9e96dcabf153ab5438247eb15c07a2101313f9dcf914b117d862eb55b1fa3db"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4926c6c0666f6842de4b7ddab38d2c3fc75c685c60b1d7217dc0ae08bf3c0410.gz": {
+      "bytes": 4996,
+      "sha256": "9a56548fa0a00134d89b009005e87715a1520f9d7d862af55139f7badcef7e6e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4b6ff14bc3d1a02a392ca68b99fc208721aad1cc86634dd4df238c2e47388b6b.gz": {
+      "bytes": 165,
+      "sha256": "e1c84ac934a8f3f989325d2a0a1c656e773f8079d6f0957d03270f0c660e8311"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4b89d97f355f1eb4e0bb4ac54751c7425334b3b104b6b6db23ec5032d5f72bdc.gz": {
+      "bytes": 1885,
+      "sha256": "e5855c7db5ee3126c375ff6bb2555148c4f8bc801221e48a109b8470ccd5c46e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4bceb0ee210435be852dddacdf6bccc0262759c67998f0f8bc53f5a757553edd.gz": {
+      "bytes": 227,
+      "sha256": "18c075f3d6c523540350feb7fd7de3556d444d2f19266ddf5825e52be007000e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4bff8eeb98b242c342376204343ac9b303696339076d419043095acf0c1cf1fd.gz": {
+      "bytes": 2878,
+      "sha256": "72bf32ecbb98dd223e9741515d74af463c5277036dada58ec65a1a2e6747b200"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4c4a6a86f3d908576596b1f8d17163f924982eae9f17b6ac3c1870aecd036dfa.gz": {
+      "bytes": 223,
+      "sha256": "6a338f543fe355c86cc00b46a8f728b0418160a6ba43e24b6c76da033da7fb05"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4c6ad2b4399a37da88112a93c5d8cece6fa9505a83ac907239bd782bd3b6e8ad.gz": {
+      "bytes": 2536,
+      "sha256": "371351ad848a8f7b9bd8b5514fd2eb463a04c7133b1b8f75557aeb9ea020d67e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4d09dee799ec1ee86a602032f1a60223ed7802c6317dcda82b5dd40d8fd5f57e.gz": {
+      "bytes": 614,
+      "sha256": "eb8c5f94311ee9b5e009a5cfa356460b79ea3d4b2306c6cb14bcb7e8fb2ff012"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4dd28f1f940cc376ff474c6562dda4b8265380f7ffbe3b6ff185308eeeee7e82.gz": {
+      "bytes": 1275,
+      "sha256": "5565e06c16f0d8c6bb4cf4546b569efcaac23056c6a7a9084bf654e278cbdf47"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4e9ea581f63a8942bf52c68f3d7ea576775f433a7bc579486dd8c54b19e35c2f.gz": {
+      "bytes": 5755,
+      "sha256": "e6371bfad811d33f087897681b76c20623a189686a0916e9df75854db598cd8f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4ecc790200cf14402eb2f2b0ab5f35f6f8e33c46edf41f6058ef06a712004ad7.gz": {
+      "bytes": 1473,
+      "sha256": "d41425b23442abe9aa4703f2a7284b7ffed3aef946a22fb82996e05cc3491079"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/4fd6190046c3d3ad55616aebd79a231eeed34c8f2ceb891924426dc412ecfc3f.gz": {
+      "bytes": 161,
+      "sha256": "decc25887960a908f12f0c2000da458effae38388c1ac7d31b2ab7c32ab1037f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/50024fe8ac0b9749af5ee468d45f669105406eacca3c0c7177acbad106039a18.gz": {
+      "bytes": 1593,
+      "sha256": "26240074e250d457df911d0ecaecb2bc38d66f675d68b9c91f829d6c95c5feb6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/50252569ca4afd31ca9f2cc61969986e264f948a0a36606f5baa22b34677ce55.gz": {
+      "bytes": 1360,
+      "sha256": "3837e2ac81c19b3e345f0242b31653805ecaa4c0cbf94c3da21ce53bad45e0dd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/51033f227a6041697584b0b0b0274ecf282f634663d7cd1b858bd5ea6c98e21f.gz": {
+      "bytes": 242,
+      "sha256": "3aad16b1c82e21871978dcbdeb6292225e2fb3cd464693e01cbd6eb363fee8d5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/51b37f9c21cb7a94a4883b9b7bc05f369f3a58400c9642613afd964e13c7aa74.gz": {
+      "bytes": 3932,
+      "sha256": "7720fb9d3c9a07fb92a9c1b0195e9bc2af247548487953452a689d1e44c5dfd7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/51cb2799af2171d51b3af9e1f8950fb35ab574d13964a2a3f5cbb814350cc366.gz": {
+      "bytes": 20584,
+      "sha256": "2964628114a33026a5d167881e74410fa2981440ac0f7cf635d7266a869334df"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/527935e7d4bcf4dc0a0f64f54823be055434de61b3e5c0ffb29bbf38ff96b27a.gz": {
+      "bytes": 2009,
+      "sha256": "d279476d5eef6357ca70273de4023aa97b7cd9889e4321aaa7a859509d25bb8d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5388d5c52c4b78661c31d0393722c171cb8477533cbd7b1f3ae5dea549deeca3.gz": {
+      "bytes": 636,
+      "sha256": "2092fd45c32237c69c930bfb6d01a205d533ba88e89a1499064da037839e97e7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/539cc8616a0a9a27017da008bfb1cea2c6706132380140e4be0f859c2518a9ff.gz": {
+      "bytes": 2304,
+      "sha256": "9a191f3ce8612f724426fc5c2073388dc627104248d0553668cf1015f3413caf"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/54073b61788b8800aaefe2a8eeb7137476f39a90781672756a5290f1f3cec307.gz": {
+      "bytes": 2732,
+      "sha256": "b52531ef35ee47beeabc5c219f957d74a460edaac20876824212548f1c4da020"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/54d58924085f615869635e968906603043a47a292e173f0845c9fa10804e87d3.gz": {
+      "bytes": 199,
+      "sha256": "cace135f8f2c8eabbeca553769547f4e1e7a83252f56af5ef85871094e1ba219"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/551b36b77778e0ac54fa3fa1968fad734272a49683aac71bc5ea9eae86973420.gz": {
+      "bytes": 235,
+      "sha256": "211736390411fa2639787efa5128d4054a7ff9bcfd12adafb37b751b043da481"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5698983217ac0f74cc19730fc6d564bd99f85d3764dbe36c687ede8259c21c67.gz": {
+      "bytes": 3213,
+      "sha256": "9fdebeb6b96c3cd3e06ffbe1d05ebf8f2189dee51cc332c241a692ad7074be8d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5750b8f48d1f60982a6c482bb35f0a351a31761434d6886e83b418fd18614971.gz": {
+      "bytes": 2827,
+      "sha256": "9fabff3a9fd0d34e38f00e85083ba3d4fe610fbc267bb120ce99e0c4d2ea4600"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/57b510a0f61bef6b242b132f6d3fffab262bacd134b95ff4a994cd40ce633f19.gz": {
+      "bytes": 1679,
+      "sha256": "f72e4c3f32b5f1f03b157d2aa859ad7b10a2a4cda78af6fe2b38a804d49a9251"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/582ebb512fe9d8d83f71d5595fba3c45f1d6ebca490e00e55aee0a445ab327ff.gz": {
+      "bytes": 626,
+      "sha256": "6fec087383b8e2266f333741f6be49d170f9b368e675add3217bff76a4bcc6c2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/597b29a92838e59d9b6cca56e3d97faca40d775cf77799e24190d2b0e1d4d3fb.gz": {
+      "bytes": 615,
+      "sha256": "698d813b04f1ddc86037a1145c8913a6a75598a1be9f7fdcfdcaca0451089511"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5a9b7729ecc7b4aa23caa1dd1dcd5dfee3573250da22ae49eb1c9a29439bb640.gz": {
+      "bytes": 1214,
+      "sha256": "e55bbf5662fa12e87057b12c33084f7b98f44124aa841d8534ced5d8b6bcd8e8"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5acabf6954acd8fb181734722fe43774be91219941044a6bffb302df0aba259a.gz": {
+      "bytes": 270,
+      "sha256": "c5834b98d47f5bdb773a848400fe8a01c68f43c62fe859c04ececa92060b3011"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5b0b88f002550360b1b64f6afba8ceefac7cd783b6e8f02ce317439f800bc6f6.gz": {
+      "bytes": 1292,
+      "sha256": "c084fbe3eae87dfebf759850dec4db8a47912ec6fc4ba5e5fee66d71a1b35923"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5b1bc141c37a74c671676d23559e078af90ef081d8c22aebb9c8f1fcf647bf0f.gz": {
+      "bytes": 10889,
+      "sha256": "2c83fe8ed80e64ab06f23943a5a5a03c26b6c39c50a8f12ce34542c9b2e7decf"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5be8d0ea17e6829266f2fbcc2521f5e74a4a5faf3c553079e8cb1b3bf993ff67.gz": {
+      "bytes": 235,
+      "sha256": "34f26d0fd7e766b608dba9b4c776cf85145d8c0b2a000c5a15679aed0efc734a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5c938082c2b2830342b2c3d76dad1ef26922d2b1d27fe16868f01a6ef739b569.gz": {
+      "bytes": 4689,
+      "sha256": "7fa618d471b240d1bfd1f099c77acae96ed39afe03368ed6661adbc1775e78c5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5e7706ba6e45f48473385eff832fe85f6ff95e4e158da43f602ac3d014b8763d.gz": {
+      "bytes": 6369,
+      "sha256": "143a1ae2cb1b103862467fc26f40fc1dcf93deec906869f839bf3524513c7663"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5ed0d476cd032342a67438576a972f08719c7d0f4beb14f1c021272be7ab3904.gz": {
+      "bytes": 929,
+      "sha256": "8a427b39e31c4cbfa1dedc8c800c6830d5da8f13d32e4b170eaff4b62c64eb5c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5f3c95d637af6b9108818f0abe8e8a90412548610b09286e3f491d611f1f3c35.gz": {
+      "bytes": 647,
+      "sha256": "b95266f6950aefba19041a7fe383b8154dcf2cd8ae3940c2296855883db2140b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5f448f6bd361be63e95ae7340e9ae571a9935b1f48f990814d8ee2b2b600b691.gz": {
+      "bytes": 19818,
+      "sha256": "3782bcdcc1338b2bbbdb48cb0e938b3b436afb26cfd5ce4a9d3f9272e8a23a69"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5f8b328ca6d21a8026878db3bdf0ffa5a690cc0033871a80c171a3e17492ae0f.gz": {
+      "bytes": 1946,
+      "sha256": "bc695d5630cba6c2c20d0e556fafc26d7a8a55030adb72310decc431b31ce927"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/5fa8c12a732eb0305d11cf8204d5c1c67837ce538c18d232d315927ec153f29d.gz": {
+      "bytes": 256,
+      "sha256": "df82396e5336f60364009fc822ff532b0a6c4f236ebb56d38888794aaf6ec07d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6083c9b9284a6a239a3863e206fcb391941ad1fd41ac7b44b769c1be1a0cf078.gz": {
+      "bytes": 413,
+      "sha256": "ff196d50b6634a01ae5f99640c45c59bcd46d509d483db947d9c6a1a06c51773"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/61d6a7414b8af6d791ba19077501f08ae1ba200fdec1a49f3465c468e99ac90d.gz": {
+      "bytes": 860,
+      "sha256": "36ad5a6c71eeb9d6294929c4ecb36deaaff92009f667d963f89bd7b1c609784e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/63a2887733f64b65b3af46c9717e80faf583b4797bfcefac1f26a2ddd13a2e29.gz": {
+      "bytes": 999,
+      "sha256": "4775dac8ee4010b5d890d05061ec6db82b61d8526adbc30daab8ebbf2fe93148"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/63ca696285cf0cc2d5bf1e29b9fc46934f54a13bce1e8013f2f9e860940398d1.gz": {
+      "bytes": 8805,
+      "sha256": "5c3e39558a5b71d389b590b02bf6c34077a67f1f45021fc5d5790e89e42210d2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6459aa09b336e7574b92387a78895403ffb0ae70798ba2860ad5f1a9b93e3eb3.gz": {
+      "bytes": 818,
+      "sha256": "58a5e647d4f49e83d156bf8c836a807d8676d0c822fe0b6ac2f1ea3a8ecf6af0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6537be4ee2bb685aeace4a2591b5c62a7da85fc1ca30a5c6d2d2af182998b87b.gz": {
+      "bytes": 160,
+      "sha256": "b9d59ed07f8c7f4389d1399814205d6f5a6543ea9bffec600526fd4989dd33d8"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6594ffbed5c14a1f58d0de8364ffd0387b2f8289c4d6e1711a7a56eefe8d4532.gz": {
+      "bytes": 161,
+      "sha256": "66d4676ec28a1a21a061ee3a6c7004f803839e7e2bf47c6bc9f61b2ce89a82fd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6595a6855bf3879b86e591e7feac61d6742b4726142cf602e3d0ec15651d2d00.gz": {
+      "bytes": 1396,
+      "sha256": "2f1fd6d025e0b59464ed5101039b58650c358c669038a3adfb1b5ab995a7ab08"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/65cbb6bb5d4210567dd64dba2230999d7c8e0f6572cd741714f663ee61ff8c86.gz": {
+      "bytes": 725,
+      "sha256": "70b8303d9e8eb4718ec713f0243a0d6a7cd8511d898b46006fdb747694f748c6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/65f674a671bc6f634441d03a6513284f6c4259e47c02bd82d7b05bea3b113136.gz": {
+      "bytes": 4174,
+      "sha256": "89c6441c0709495e0d8c48ee92f5ad32b83362746210f623cf4428c376ad426b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/68f61b17cfc3b05d0c6086e1ca1d8458d6f87896049eea38023f272f2890029c.gz": {
+      "bytes": 644,
+      "sha256": "b8b8d086fd2b0cb04fa2f12f1f39c1489919461ac50350722d5ffa3826cbfbd6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6952c9beaf62643e52b82315f0e82b492f468331ca49022c44ea0a52e64215c0.gz": {
+      "bytes": 5931,
+      "sha256": "2fb4b61ae4f1fe047f064605b09aa31e78a217000ce5800b70531a50e5d6b247"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6b9e87d2239c840b160da43a4b499882a7572d398ac1f598232470c855c7ff1f.gz": {
+      "bytes": 1888,
+      "sha256": "9caf11e87ba37a1ed72e1c0e073e43172c6af77cacb235e2a617ace144fcce7e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6c2a6ac6ab953bec679dfc7cfc6a1fb9cb8a06356a94a789e2158c5ff13fb467.gz": {
+      "bytes": 1491,
+      "sha256": "c56debea8401b5dfa197405a8a7d47e66881688751da188c44a43543fdd9b489"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/6e570746c8d010bc4c81711d17ce8e4d05af1acbec4553ccaaa8ee485f0d1bdd.gz": {
+      "bytes": 6861,
+      "sha256": "5e43fc839d5948a7fadf45a29cf285a372412a52950e3fa8520c01a140996261"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/70096ad84ae1289060f5cbf9a9c597bea7fee97433fa4c8efdc747d66f6fb1c5.gz": {
+      "bytes": 2038,
+      "sha256": "d6f6625194cbabaef4b1011fd5847d5ed10a55c27a3d1add00a495ff8ff54b4e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/705ed6b9d5d02af8c006696675587ccbf661ee76e63753fd0d0570cc447ee39a.gz": {
+      "bytes": 2475,
+      "sha256": "413f9848ca9c93f106b32db0f63322a071894a81ee711dca8ef6ed8bcdcd32d7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/72484571373fe450298b11763f71680097a53543368a7136e588e5ae181da7e6.gz": {
+      "bytes": 1103,
+      "sha256": "8b3b1d6f3fde573f6b0a040f73a0647e913bb75ad79fa09b4c66c82e4bb74eba"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/730781d78f1cb8cc59bff9ce3cc8803179d46ee8043a3721ec48b8a39c86a573.gz": {
+      "bytes": 2377,
+      "sha256": "4a0f76528be247a566226b8006508450ca6f0c85dc7c6841c156b0efc9853a93"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/74693b9bd40f534cc5663e1eb78d9d82124a86ed84b5aca34996f323133bebff.gz": {
+      "bytes": 609,
+      "sha256": "6f708ac8d214eec14befdc508ac2fcbbfb83b45c69812ce818ec33d1acde736d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/751116b9699dc25dfbcfd84f98e6018b7d35391ac961e3db57f353d81f5491c7.gz": {
+      "bytes": 553,
+      "sha256": "bec2445eb846abc1be854fffef67dc7dae59077f4912e61e32c7e521fdbfbb25"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/78fc0de7133d19196561cfaca2ac2d60abdf346e601dc51d2bf7fff769ff49b6.gz": {
+      "bytes": 824,
+      "sha256": "f2bb1e78909c3bc2c334895c28c720445bc857e876a73a86ea58d21bf20f1b17"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7983f07405ef85dca51905b21e0098a2c4c06482e1f8ad697fbc297a3485f35f.gz": {
+      "bytes": 790,
+      "sha256": "0a4454e84a83770fb035428d5d0c449bb5f96b066416d0a36f774d5aba3222d1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz": {
+      "bytes": 8806,
+      "sha256": "5578306f2e4b4620a3869d6addc9c0e556640c378b3e3cd22260afb58a7c6fda"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7b1067fab8ec6d3f46962737c1d8ecae68192fa83379dfcc1decbf3cd326f455.gz": {
+      "bytes": 1056,
+      "sha256": "41972e40c34c84b956804abdd7dfb1cdb0b6762daedf124ea2ebf32d121c6be0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7b69366b4c57aa14c783c642085544a7046c24422741f5ccf2321081984c1539.gz": {
+      "bytes": 620,
+      "sha256": "584c14fcd791de873aaa89565857f05af9067a373d4cd5a4d91034e7973a7589"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7b79c1d0db70b7f4c4e85966e1fad1d0124dab3653489ffb5901f0184b997349.gz": {
+      "bytes": 12236,
+      "sha256": "539fb0fead34829ad7719842c705a54fdf6a775ec0b63987acebac002d2ddae9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7bab7306b640ac5d3ee62ce4c85b70942d5bfea499c91b74afed174ce67e62c7.gz": {
+      "bytes": 3155,
+      "sha256": "390e285af2996b2f54cd2192e5f81bbfc7b9c4cefa5c32d83d27d3a2c955b3aa"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7c10e79a587d0f155e29dea6e7f53ccda72c917778dac13a6ef0c2f8ba85bb6d.gz": {
+      "bytes": 561,
+      "sha256": "dff3ba6128763aa4f6d01eb05c76bd6b71a3fb792cc055b9e43ab2cc80eb4124"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7c18205569f5d8c18a514f234787b3afc99fc118f8d0fe0818559c4a75a80b52.gz": {
+      "bytes": 4591,
+      "sha256": "2d0be457e382b89946e465c355b4571aa8d3485a24b3c9f7604595bc7271e581"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7c95931125d27b0644ba3c288097a46e893b71fe7eb749db2df9d9b1cec77b29.gz": {
+      "bytes": 419,
+      "sha256": "435357ee63c062f8f9070dc465a893252f0d6b90f709b46a81d5e575f49e0afd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7d48dc056550a1af9e1b83cb2a16ecc9c8a4c217b9a4f8441153d434f4e8f349.gz": {
+      "bytes": 4173,
+      "sha256": "8be3e8a3a1ff1212297a3633645b4afaf7122a26a829b1f5d180c6a8893dff64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7db2c34d8933ec035d3d91e37857a64513416ae84c6431034c05a962166a68dc.gz": {
+      "bytes": 7855,
+      "sha256": "604e21b47fac404659e7069e4fccb71e4d4c23d87d012f5cf99064296b8704fd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7df4c52fda606b9e201a564365e69f42794e45993fe2d08b880924f6af717759.gz": {
+      "bytes": 546,
+      "sha256": "269b302c516ef2ef46122e8b12e8f71a1d720a83988d2448703f51571396c317"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7f62ccf697bc55374d3806e9fce0b463a83efb48880b1b9b9cbce974fa38bdb8.gz": {
+      "bytes": 6994,
+      "sha256": "858fe72ad20f8fadc622ad03ceafe5c88dbb27b423f35c498148ae05a49f1d2b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7fa161ee6d2330f67a6482f728749cf4ad1d46c4a118a4737d7fa2a6c59801db.gz": {
+      "bytes": 384,
+      "sha256": "d544ae931fe5c7e5cb19fa6a8ffdb5607b21fad7d25d0001f82f0b91d070291a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/7fd7ab42d2f3999a1e9578cde4ba84d60471f238e225b3e3172f47b84a73bea7.gz": {
+      "bytes": 460,
+      "sha256": "0a9d23e48d365bc24b775b6666b6ac35e50e339f3089903aa0ce40c93627fec6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/810dc330eb7dc04d4dcfff6440fb1d6e835292541bffe809beb8d8794b5da899.gz": {
+      "bytes": 2152,
+      "sha256": "430c3b5d3b7da3f7aee314c2753dcbd109534174bed7271f31554740f0eafd7c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/825da3a22167a7f0a90639311135cfb3795f8e203d3d687d0a00bb1e73f4118e.gz": {
+      "bytes": 1001,
+      "sha256": "4c2c768d46dc7644e1c74a87b2455b43812a4dfcd718ddc383305d89f5e736b1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/825ddf3f248d761101028d8b1069209c4fa01a83fdbe633b8c8b4149ab583399.gz": {
+      "bytes": 424,
+      "sha256": "7dc5536b8646537f2c8fc6e376bd98aa74335438c16404b717a1381ba9a3fc03"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/85a9ac0653f5375cddc280cbe02bfba2d2066f4741936c974d9ee511625c4b99.gz": {
+      "bytes": 624,
+      "sha256": "186a6099ac331518da221ae3e5ae8230496aa0afc6cd61a7c7647b97df8131ec"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87.gz": {
+      "bytes": 1620,
+      "sha256": "17713c7de14fa0d4d8bb386ff0b148a1d0a70ae105abaac7fcb1e5344f3efcc5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/86cbf7598b9b5caf0c942762b1f81a45eb36ed52dbd9de92593d47796ee4dadd.gz": {
+      "bytes": 638,
+      "sha256": "1f884e25e5252bddc011bb1783f05fee5c5dd017106b18b26371c02d35018cac"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8776c7281b03e72f1a75975f1d58ebe5764e8eb5330c07097d3637b822486bbb.gz": {
+      "bytes": 4993,
+      "sha256": "919f0f9079f4f6fd7e94938c5ee8c1834122c21dccdde49183c5d1e85d406e74"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/87f26a901ee3ae00c48039d30f19b53f3ab8d931861d4a2ebc7bf351d9d5f7ad.gz": {
+      "bytes": 409,
+      "sha256": "c1436ce0a4a5262f1fceba79e963fdc34d4f524c5cbd7824e188feed8077c062"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/88f9eafc6bd208709c0faee2a429a5b0f0ecffe6520f2e76ac02106872908e2f.gz": {
+      "bytes": 2410,
+      "sha256": "286ab9475236ce64b092f7fc6a1f208eaadff1302102b54668692818fc647122"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8b330f07d99ea3b458db33dcb7393aabbb4829e22b5629dd45e6c4140d69d285.gz": {
+      "bytes": 1661,
+      "sha256": "1e4db4338634af88dd148e8d6fb2998a4c7f4d98570a29ed161d02370262a6e6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8b83bccd953e24272b7a3e50150cda76858987f8669ab320f2e94d1543d95d3b.gz": {
+      "bytes": 2038,
+      "sha256": "3403625317034d5ffc5df0bef1ba75bafbb20d79879a7d20246fccaf4913b7d2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8bd47c50930b4b943da14cb6feddd0082496f028357f9444c9fc1383e03126ee.gz": {
+      "bytes": 452,
+      "sha256": "6634cab23fe48208307914549309ae00ca1cd39f7fd03a96b5e3cdd78d54471d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8c6ca02bea68687a2f9e91122cc0fcdde3e0130f199e2f6d68bf409aa6b90667.gz": {
+      "bytes": 6302,
+      "sha256": "18df56854b5cbab1614dd7655d4bb3384599b9fbee9369d66dd678f135b8ffbb"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8d3de83e97874aeab1ada0fc53af5b3a7c371c6080d8c411917ec1c59744fdbb.gz": {
+      "bytes": 972,
+      "sha256": "8024f866d5c0781793323209b8e964e4bdf484aa15ea2c956d6a70ffc4ff4d3f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8df7261aa78f7d732b5bc56d47bbb292d4d073055badc82d9ab35aff57a8f857.gz": {
+      "bytes": 2517,
+      "sha256": "09fe69ddb76c400f9fea9d4ef3e01282cc6d03cc0a2abed771c53a1a73fbe01a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8dfc838ace55e0b4f8ac4c1a94f95ea609ed9e2edc8294462ac3fbe89920b9c4.gz": {
+      "bytes": 402,
+      "sha256": "a69137a68dd08eac6c2f8a8998179542984ee121cf68ed11d5507b0d8ce75a22"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8e226d66352513db0fd33a20329e292be47e0ccfa85f30a1f714f4bfed0bfddb.gz": {
+      "bytes": 615,
+      "sha256": "b5732b286d2cd1888b2299a6e98b28c0b12a4cba493738fe767d08c5e19a5521"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8f363dfb52b46b2ed5440f4b4e937aacdb44f6d608cc80d1d0e53d2afd63607b.gz": {
+      "bytes": 529,
+      "sha256": "a84b1370bb5f9739a47117abf8c82b7ce41dd51945a82eac1c961bc182aab7d3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8f4fb6f7e5ff0ffcccad06cabe7b01651361d4f8ae05f7bf6813c29e89468842.gz": {
+      "bytes": 698,
+      "sha256": "514de9efe946c7a1df0560c45c16783630ba4b6eaae46c621a0be4d6db692231"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8f8a958d022860f6785beb27315964d2f5f53381dde5230f175ffc76d6d079e0.gz": {
+      "bytes": 870,
+      "sha256": "4e07cdb0ee8efd23933737ebff9ec392c5b99ca524d001949d1638ab0949393e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8fca71ddd873c20fee08f7a5375cd2786560069a280d248a75f0fcab1fac005a.gz": {
+      "bytes": 499,
+      "sha256": "d1d73781793af92751045262e0554032c9d76ef664a756652a238c3f50fdba9d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8fe7e9842bae395258418f642d76ba1f2b44f6d67f01032120af1fe953cdce06.gz": {
+      "bytes": 971,
+      "sha256": "b0098b7ac98aac33a745f66f0a80c7e6dea93d48fce3a1176d7bd8cbae6fabb2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/90c70a6105e13bd1c2f7fe123a85e905c990e3749924c08299ce8dca29d3967b.gz": {
+      "bytes": 558,
+      "sha256": "e3838010aae851104d44755c3d1f0965203bb8d87064b6cbf1570bb42a069a8e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/918de00ee721bd09c21f98e024c06a1f91f2ed032173de3218cfd3e01635480f.gz": {
+      "bytes": 1185,
+      "sha256": "2710ca0ad4561f5d31187f52c41dd87590830cbb9167af8adb82e66690449ab4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9246e95541da001e6a52e6a0c52f938f4a96cfd2f4809f77643bf9ebd6fb1d0d.gz": {
+      "bytes": 326,
+      "sha256": "ab8892cf813633cb1091bbf37166e86b2ea403bd266f45efcfe9b55b897e5620"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/93af8d718e4d726815e837b241985908fbb5fae355a322dec662a7a706d8b773.gz": {
+      "bytes": 4845,
+      "sha256": "d05858c9f58cbe57df52b98f3918c70cab1d8a68093ac9be46665ea4708e0466"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/93b91993d57f59aa10b539f9b25447354552b7d9df8fa9fc0de6c29ef95ea1aa.gz": {
+      "bytes": 4404,
+      "sha256": "ed0d13c447d2d4a820f6219cda776321dfe5c163383c4ac032aab5a10b01e1f9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/93c2f0f86a5084578f473e5d8e467de795193cc349e666e1ab33d783b91a05cf.gz": {
+      "bytes": 618,
+      "sha256": "9b4a3ca25e7a19e46d58b02d4b097bb3a6bd0c202e65d8b800655bfde50385d9"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/94e9244f202dbf3adf18e4fe07c4659e08a4982dafc1a4a51b1ca0d974152633.gz": {
+      "bytes": 2085,
+      "sha256": "2d087728b87df16713e7c9dca057c2d3d1d557b5339aa259d9a8d766a20a0bd8"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/94edb30da044235a890e345f4ebb2d9ff0ad5f67e85fe01f52dac99be092b033.gz": {
+      "bytes": 6153,
+      "sha256": "849069188149911f64c93ccfc484a0f9f351793516c0e310b5e28b5c1ea86961"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/95dbe35c9af3ad451637b96470095f243df8ba0d6cae6a16ed08fb5001dd5721.gz": {
+      "bytes": 635,
+      "sha256": "92114e05cc7a9b8962f6208a212ba45b32c3f5d6cbb2aafce0993a6bbb423910"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9650cb2e8ceadd91f970bf3a4d56a52f4f60d092c4c6beadebe01c10d7a6ebdb.gz": {
+      "bytes": 885,
+      "sha256": "d7e350b124597a629b5e4d2774b7cd0241e189e161de3640cb22ff015607f91c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/97281fde070f7d7e264f220e4557e238932f3091d6001657ddd485f8a02c02f6.gz": {
+      "bytes": 2597,
+      "sha256": "454b4b9584bd2cb5017d66bf9965ff3546301814f77d94eee5d325c1b566eb1b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/97f400513ebe52658db2b52006f5900339d8b6d6569841607963749ebfaf78fb.gz": {
+      "bytes": 654,
+      "sha256": "5fbc2462b9f0738fae6433ea5a7ea810c398f6504c88fcb249e592d1ff5f4ac4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.gz": {
+      "bytes": 6019,
+      "sha256": "e15b35db04ab3450d10ad261d2134083a37114ab123a7cb48ca8222591b0ba7c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/997f1dff8f5cd5d3ef214b53df85d58f589256f2bb6a361b1fcc9e9862c8da93.gz": {
+      "bytes": 2738,
+      "sha256": "ad0bf65ed1f0f4e380589cea1dd2a3be606f418a7fdc8badf1fcd8c6575fcf1a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9a08cd920cc903509ed08cccfdb8cebc8a5f2f19c6605e6e2b951c80aab94a98.gz": {
+      "bytes": 8310,
+      "sha256": "e2b91bf1e1eb3fabb5688d9becfe1488724daaa5867ea5c69088d4d6133a0e02"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9a5669cdf081ccf3b13ab92c249812fc0243a7f8ca370242e3ba3a056fca2a0b.gz": {
+      "bytes": 488,
+      "sha256": "5665d1942e19d7bf0b92ae2890dd9a256e68c94d47f3ec00817a8cd59970a14e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9bd0fc356ed6d97f7a0ac435df43eef353bb4ecb4eccceab105b8f09b07dd2ca.gz": {
+      "bytes": 598,
+      "sha256": "76b8c1032e44c182856ad72c17263e823be3f09cb58e85e043c388568166fe7e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9c9221b7324ee925f9916032d9393cf99d7e82cd4ab281eb2cc3bed758635fbd.gz": {
+      "bytes": 404,
+      "sha256": "f7ab02ae1eeed3ea6077c7098116982b02621ffb7bae2d917b09fbfa2efa1c43"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9d18487eaedc214f4ad794a53bb44e0276714dfe34b857201fa0956f5142c1ea.gz": {
+      "bytes": 272,
+      "sha256": "47b9b097aa7e285dca6a5921da68b634e6236676bf5739dd1c718ed2065cde29"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz": {
+      "bytes": 6269,
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9d98ddb8d6dde55397bfff011b605ebc7104aac37ae292a1f174057d09f7d669.gz": {
+      "bytes": 7350,
+      "sha256": "90b9049c8c7474da60b094932de5f6141bf8ae4fe8644bb57be6661b4e375422"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9da2ebc26a480d7f198e0dd807e54b472cf8cc2eb7b30c7989f264b91c34a519.gz": {
+      "bytes": 1401,
+      "sha256": "2e82df9b571944528018718ce9f255eb97b81321f4c7c1f625cdc11ce0a903b3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9df08197fb0325b59e06dc06ebe182f82c9a7d9bc4bd9029aa3a170d0b2a5f16.gz": {
+      "bytes": 4089,
+      "sha256": "0813269786e86428371660f12cab7a5d6b400008d27ce669d9d69bab5851d53c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9e81323cb20b4d06184f9de4abf5720ff35c2550f454bfad740c62e4e5119507.gz": {
+      "bytes": 5542,
+      "sha256": "6e3abfd6424e6245d9f80ef91f1ffaf9d0762f0b1d89dcbda8deddf97b0d9113"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/9ee2877cfebcc3651a4405a64479bcfe0555853a0937ebdde69cc00b211c65e0.gz": {
+      "bytes": 1736,
+      "sha256": "4177da8d95b422821f341990404cc9624006a8f9aec3faa24835a80afeece03c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a0252825b4268281cbf20a1ce108adaabaad5842117010040694ec0f7e1b8ce1.gz": {
+      "bytes": 1064,
+      "sha256": "3340f15a0bec2c7b0182c6ff180fffd367809e08de292dff1c69bf29c86a61ce"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a36b46b911a272783fd0c0e21eda332abc9e6b90befdea3c9955703f09f0e3fb.gz": {
+      "bytes": 620,
+      "sha256": "3bd837c34196fa3ea2fc066a1c24a4084e908a3cf93f1b91146d37b8fce96c4b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a42fa366e95d4a8f86df73a30667503ab22bf2a951621170e7a152b5ae48c666.gz": {
+      "bytes": 314,
+      "sha256": "4961ffeba1da40e43ae9329f8963fc009b3ebaa26be8a6f16a695b972e3a76d3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a472374661dc5979e56120fee8430a99506e162f64a7f531e63734d28153f1ca.gz": {
+      "bytes": 2042,
+      "sha256": "10c6a1a5c0ac63fd492a10856b8d7cdb58d2957b7ec5a6ddd3f77fb775988142"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a4966bbce9020c75891e5f10c1d7117648e70882ac69d1c2fd8122052adade94.gz": {
+      "bytes": 166,
+      "sha256": "8cf59d503308d7eb454c42eff7009e3edbee68f7b3f476dc150300da2dce7e8e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a5e173725a40ed1966cb537d47aeab90f254e0739f4373071bebdc8f8a0f3d8c.gz": {
+      "bytes": 6996,
+      "sha256": "a211b60be548e99da937ecfa3f689f0c9c5cbbaeb63da52aafaaa2cc0bd2075a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a689e457eb3fb0d437fc9089ceac40fec3a2846de0f26b88307cd4c7f87c9007.gz": {
+      "bytes": 287,
+      "sha256": "061815a7cd2a9e8fdd96daa75cf2024c7dae7da25054f5c05458aea491f62aeb"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a821634e2bba1a80a2269877c456d44b9cd2dea48389361a7928eb96fec8f737.gz": {
+      "bytes": 1764,
+      "sha256": "8117f770eb4fb4b5bbe36a35dbab81271b7735e4d7409653ba7c6aa3f37f49c5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a87489f7b7a7d273a953c0d8beac433e77ebbfb0af024fed139b6be5057fddfb.gz": {
+      "bytes": 8648,
+      "sha256": "6888405223d83ccb32dfd79045daf19ed89e3bf70823674bb1a71730be976b63"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/a9e4a38d0d26e41bd2cb0f4657464e128d445ca89741060a89b83ca8037cc5ab.gz": {
+      "bytes": 1588,
+      "sha256": "3fecd41b9864e8943446d349bb1a54877a8ec7d86fcd194af0ba26bb7439bf14"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/aa351988c1d87f0ef8e0913693fb937fd807c385e098f4e75ba914cdbaa83732.gz": {
+      "bytes": 8456,
+      "sha256": "ccb021c3f59a90c4c606a8d09d67d06f6d7a4f014afc0b310eb2c0524a314c35"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ad4567f42c935b6e173b6d2455d591e06f6a3b2e5d8b2d5d0c8f6eeb62243ff7.gz": {
+      "bytes": 318,
+      "sha256": "ce3d97a032d89c6ea2fe5d7857b4ab17a40de1c66d76cf6a456d329cd6eb909a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ae10723e758f13d8d7ac2c90cb52c7e62ddf4f8d39be4b7c3b24fac168cf9f3e.gz": {
+      "bytes": 5532,
+      "sha256": "349df6722f55929c8ad47ffb07449dcc80ffa8a7bbac4b7afa4a1ce9f30f0be1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/af77011442d217319485438ceba03d77a1d14badc28252ccbf76c50063dd4a3c.gz": {
+      "bytes": 301,
+      "sha256": "db5a8604b23bc02f4544a78f5f58a3dadb5e7d55191690f67f4ad3705dd7f7a5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/af7860d43e11eed8859d88bcada004d98e8b56521dadc86d46a19ecb468ef9ff.gz": {
+      "bytes": 305,
+      "sha256": "2bab390dafc36a35713d91070c46843ccd6a79c5556a52e884de9b7b0ab27013"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b02f38b656abc4e6ac08cd16999d33d388cceaa369d8318d06593984e648e644.gz": {
+      "bytes": 1513,
+      "sha256": "4ed673eae86e2c820d684d80261f02f19dbdb48394813fe31b3731cf1952e998"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b05ac65d8292f2a059292998fc580719be850d5870ea2deb456637282b0c4224.gz": {
+      "bytes": 1520,
+      "sha256": "540b6fe0d0a1ce647342868602846193f3405506016be9dd7e9535274aa6d4e7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b0e91afdf26d9cc990a2ef826fbc6c53c3e5f388a47f057dacd9a280113f9c7c.gz": {
+      "bytes": 944,
+      "sha256": "1d47f971765c1af6247cec0f84bde421181d6fd4fe5598ddcea4b2ae17a149f4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b104daaf89ec4a0fd4bc7e59a483bfb35e2e934f1d90cb39a26818173152f3ea.gz": {
+      "bytes": 851,
+      "sha256": "e5cc87d36366a6073a060a696986eef7dfdbde37aab188297f82afb785fdeaeb"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b204641ceddf51c98c52461c0dc0e2d05d3a0928782967460eb0f2cf9156b89a.gz": {
+      "bytes": 1325,
+      "sha256": "f2b91db11e783593a2ea9ac38a4da545bd33037bf19faf13114fefebbb7b81d2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b20782a8761c538dce1db2abbc45610fcc4cd7a247deb5c435fa11ec816c348d.gz": {
+      "bytes": 612,
+      "sha256": "9c6b5dbf42fe797d3167df713117cf60f962ad1dacae3c88e5c5bbfea103bcea"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz": {
+      "bytes": 1138,
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b7bcce6dd457d465e661a3753011134cbe3f34f85812a6b435ebf477eadd6ff2.gz": {
+      "bytes": 1224,
+      "sha256": "c53249a08a2c8140545e9b4d085fb1274910edc6b20f5c625f56baf795048b21"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b7edaf7e31e4ed3b4eb08fc5d2c83fd805dda456a049ab35430e1f6e7c031882.gz": {
+      "bytes": 1406,
+      "sha256": "e23c1b0479ac9df9f273e7af15328edcdf67458b6f6c221448b474667064468e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/b986b5bc2a41674494642132536170eabf6fca4a0cad585d9ac514750686951b.gz": {
+      "bytes": 547,
+      "sha256": "a3e245276237133b18e87733e68d7ca6982d94e4fa67daf3b4808303ead64259"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ba495e928aa18af3104be000f1d33541e8d4f2effe7fbfd0a6f2db8ca0d72975.gz": {
+      "bytes": 2340,
+      "sha256": "b762a75eed83c8c9929790d08d852a8bde6b709a75537527b186f45dac666442"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/bb4ab113f12ddd0045f7ab631956aa80bb7de8b3d6c1e503465747a51c7ec1c7.gz": {
+      "bytes": 19867,
+      "sha256": "570ec5fbd209e71ca9c98f74135b8dfe4cd66cc5b1406a589fd6dedba921e381"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/bc519758f19f575e24c5a74c9a3d761acdf8f787f2443e1714eadec7a0707586.gz": {
+      "bytes": 283,
+      "sha256": "f11c558ec39c4377f6257ad6b2347c9b5899e4ec6667ef5cbed34ff97cb30170"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/bceefac1491f36798eac1787a7133ab24a48e85ad20fb59bb5a5f54a70ab0afb.gz": {
+      "bytes": 9596,
+      "sha256": "cabe2d3e97a2e435a9e0e242687693ae28ceea8dcf599089027536b3dbdfe823"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/be3624376c21b118abb9088606c85e5e72a855cc0c2a7692a196bce694cb9718.gz": {
+      "bytes": 850,
+      "sha256": "c38c6bf41b966323696c77d0dd937ff7ed9e3cf94ed39700998bcfb841549435"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz": {
+      "bytes": 2265,
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc.gz": {
+      "bytes": 9902,
+      "sha256": "ce16ef085eb230fe3722e34182eb4a3c59597d58143b0563f9a10b89aef0c53d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c060c31663d5299eae6b5a2fa9376b5ae0eb287d371550e17fc003b7e59e84ee.gz": {
+      "bytes": 574,
+      "sha256": "ac8b3fc7263feae447c67821ec932071e481cffeffcadfafa920dddec559f774"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c068e3a5acf470f100c9f5989121985886bd81d3066271ee5549a52928426f28.gz": {
+      "bytes": 3802,
+      "sha256": "46768a5329050874c0410eefbcd1c473b26df71fa737874cbd94734faa79187b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c1b5d7a780124b91b3060bdf569867baa6dd546f8472ae04f81e2d33bd0620a8.gz": {
+      "bytes": 2139,
+      "sha256": "427965ba2451b43cd6eec57dfdb4e838e94b54209f4e7bc192d4aa508e5ea0c0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c2946cee4c304f7c1ce594a382bd1e10a8ce5e35be38053d7ed7db81082cb12b.gz": {
+      "bytes": 894,
+      "sha256": "aa47293a9cd84c86d47c169c34b71f839b8fbb26ecac4fcc7b559d3eb5a1a182"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c3c9d4c00e80e7a0235c32c9e74ccfb45432a70aa495c442c9cb198646c9a77d.gz": {
+      "bytes": 2365,
+      "sha256": "cc06364bcd4baef2498efbdd1e84e861b95bd8acbf8d92502760b6897d2b8c9b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c3f1bf678944d534f221b954d43b5419538ec2d70d288ce7ffb89793e91cfcc2.gz": {
+      "bytes": 1053,
+      "sha256": "ad1c478fc4822726856a4c6de33ea50517dd9bd1447199ed72729dde06862017"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c42052fe7fac1e2927c6c29a303707d0a91963405085a03c73727bac611f0578.gz": {
+      "bytes": 1359,
+      "sha256": "1cee0b87a4d848a14423e8c54fb7f42038ed423f9b5e801cc026875b5c064f3e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c54ecdf69baac2bf9f14dd3d8ad3e71e4211c3e89d90b33cae3f53b645875804.gz": {
+      "bytes": 4113,
+      "sha256": "f4a1d437110d0b370b025cf44dcfdb073730b1287a6b7ac25aaad6819f35982b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c5c45f53dc07befc4f68683d29c62063ba10b1a55b13cd68a4e6a16eaf85143d.gz": {
+      "bytes": 1283,
+      "sha256": "201216136f4f1e8da752515d17b027d4d42e2c7e256f9d784a6d80bcf4156447"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c808a48845e4568965f866bed511e587a5597d87d448c5645b7284c668201d10.gz": {
+      "bytes": 691,
+      "sha256": "bb453505e0431c7188d914a3c8ea77b4f0ebe581edec466719cd57ad67d7ea04"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c92ac3916ea82233b2ba2c1d79764a9c5756e321ad3ad4bf6382722bc936abfa.gz": {
+      "bytes": 5052,
+      "sha256": "b9124efaf3d351cfabefc18656265211441f51f1e4300af6856447b2220b88a4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c93de734fa4de99742f601521b879da59bffcf49496249893bf8d832a09cba1f.gz": {
+      "bytes": 1173,
+      "sha256": "839dccfcc6fd819112e4f9ccd60701b94fa7691e82bb48497db31ddf4752d883"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/c9fe04d18afe14a26b39a21992a475d53cbc3022a2fec9acc1feaeeda6e33f7f.gz": {
+      "bytes": 526,
+      "sha256": "7f31399860291cf354094eeb776a561e3ecdedf224ae66df521cb0c4a3c67c59"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ca21618cb878e800c702986f3ec62e268bc21144e970eb94c76ad5964727efb5.gz": {
+      "bytes": 147,
+      "sha256": "4b720c7ded5453934996b2c9f128fade55a68f8788f1331b68ba4ac7a70fa75a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.gz": {
+      "bytes": 1661,
+      "sha256": "634119820fdadf1a90a26044dc18d81cb4a042d4c1d3ace92d2ea8a14e7f19ca"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/caf33feb14cc24d6b73932ffcae1d70cd8c2adaf5df354e02918c966baea18cc.gz": {
+      "bytes": 413,
+      "sha256": "95ee267ea1987cf34a6ba005cc956742749d32030bb9b05da3b2e8c73bbbd9a7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/cbdeaa45139366d3df2a7f1199541d65a57f0edfd888bb4eb5445faefe62e23c.gz": {
+      "bytes": 1159,
+      "sha256": "e67bbd8815f9d3f7d2f0827a3b999deed9f7fc84e995909448bceb50636969c3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/cdfc4175f6efbecde315921fa11081a7500a04c653c73a58b3c44a16a95ca890.gz": {
+      "bytes": 974,
+      "sha256": "41ed1abe9af16aadb858363223f528ebfd5f29ae21ff181f324f22d8d9cea9f4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/cf443333a0caa3a277208c0971f81126219a533fd515cbc6413e3d79ec11d763.gz": {
+      "bytes": 1771,
+      "sha256": "b18ae1eb3c1e35b2020f30b56db9d7733c8637dfd35153501622da9851834a39"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d1110d8b3004c3c62d4b569506c39452fb157bf312bb8678da6fa644771deef1.gz": {
+      "bytes": 3944,
+      "sha256": "344a9b9e19c57b649c63f4909e5e77c27d9d57503a3931baf479088ce7babc8b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d1124dbddcf5097a1434f833175261b26cb5fe1fd169366a4e91348b3c75ab96.gz": {
+      "bytes": 4675,
+      "sha256": "f805932e5157ee8bd6ce84b906840885bb34feefbeae2d09814ba6a5ad42a16a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d21489ee8208f02eb4a7084649197e77625da70bdeb68c1f00f7bf5db490d0dd.gz": {
+      "bytes": 2332,
+      "sha256": "342b4a37066e1cea11405b3fc707ec45a0535bf0f256eee9ac58059fec34aa45"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d27786c8170c6d071d77a0223c7c79134846c47a48418028689276c25b8a7587.gz": {
+      "bytes": 251,
+      "sha256": "038f3cc73f8e8d4cb1e09cb7fcffce04b24a4dd9091bfb2e1690a94f46107344"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d2cffd5d161af22ca7da887df98a03ed8e5c102069323bda03a733bc5f797308.gz": {
+      "bytes": 5411,
+      "sha256": "b83078c8f97a2aaa424c2aed71f152c920bb6c1c9f48d421e7f49d24b5768302"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d2d880cd6e696c612abfa120c5e12deab1a13acdb7bb48922be4cc841f944f34.gz": {
+      "bytes": 1566,
+      "sha256": "8822423fa1ef8270dd365f41ddcf2420c4ec59f1bc4fcf79a2a9c1259b8a64f2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d33469fbc0f1a4a098bb2c78703e3d606bb23504d4caecde5757cde74f483791.gz": {
+      "bytes": 478,
+      "sha256": "679283dbcdc5dc81709ae0b9d0a8dc715b4d870f34e696beaf2bcd6f35613614"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d72236c2488600c52b8cf98cffbe16fe1139ff047f5ab9d76a830b5946f5575c.gz": {
+      "bytes": 3006,
+      "sha256": "d5a166f57765462ff335f3f07b933bfb7d0cab2a354c8883ed7bfccfea4661ef"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d7af3611f86121f7b94117dcb1f50096283585394de9df9a90b3e5959f11f4aa.gz": {
+      "bytes": 172,
+      "sha256": "0796192d9520e43bb9f6c01f5634a552155bd60f236573855d8109293421b307"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d7df55a4c9acdffb3e45c22da6adc29d41c41443001cc8ad8093c7c39ae48dbc.gz": {
+      "bytes": 427,
+      "sha256": "2e05cca4b99f653e4105a17c72c4ce9f2b379ec3528b57f2674ba31ad9ed4c36"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/d7fa3588ccac72db8317984adab6c4e70e69c583fe404705e3659d70931c9daa.gz": {
+      "bytes": 777,
+      "sha256": "95e428f8b6a0389c0f150dd41d22dda1706138cc972f4fa79617d3b7871fe2d0"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee.gz": {
+      "bytes": 512,
+      "sha256": "a07ecac975f08cb9b006ff204224347f8320433500f73644fd68f323abf9e352"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/db2c11550ab955841f3bc497cc90b6d16fd370f6595e7e141216119ddbc42420.gz": {
+      "bytes": 275,
+      "sha256": "d181e0db019accf3220f8c2fd7f79d2d23cd0bb50c0e15a5211c04baaf36139c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/dc8c8831b777ea5ddfec2c928abf20dc12e209f2e2e83c4388fb1c81799f78cb.gz": {
+      "bytes": 1851,
+      "sha256": "d22676411a31fdee2c32cbaf0dab52c2e765ad2220bbd6ba17a119d8be245a90"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976.gz": {
+      "bytes": 6753,
+      "sha256": "83e138c69a9e116ef439a27336b327115fd036273007d9eddab4f7b669d45105"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/defa770cd08bfab45061ad708153dfd3939cf4d699f3b3ef15a6b3288433e526.gz": {
+      "bytes": 550,
+      "sha256": "62f00403a1e2f8b029e552dcdb1f025753302402ca232c7743525096a650aa47"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e102fc7930211d28c08d23804b3dcc7fd14fe0a5208642e14520a375f7c4e773.gz": {
+      "bytes": 749,
+      "sha256": "20670f3c7a760e8b6de5f1a1575c6793a2f85b4b43286a29b770ee72920c9516"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e1fac7d7c160203be1f052f3149ca3df421ce898bf646a834e0b923103087ffd.gz": {
+      "bytes": 488,
+      "sha256": "8e8d28e09c761bb89b2ce2bfd5ef05cfcd5a246a6c3d1b0e379c08b3cbf110b2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e29856474825bd1dcc4822427ec84db93ec5f24959ffe58e51bd64eb8ee64fa0.gz": {
+      "bytes": 617,
+      "sha256": "9052de09d39aafcbbda6d39a0af6ddc1f054c14597d6d6dd5fa004cb2dc25509"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e2da3f5a3abd12ca4525f87dcec29d79c1dc1617e688562bd21a2c5bd91c329b.gz": {
+      "bytes": 3417,
+      "sha256": "da42f180328c155602644534d3329f876b3176270176afb8f0fbac64997c67eb"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e3d987622e07a20e5b6fbf5c55e6cf003666cddd56dd93302be48ae7037708ea.gz": {
+      "bytes": 543,
+      "sha256": "2810a14081279abbe49141963889861cf3667c1e97d63dbde470916d5d64c870"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e4029503c2eaf8dcb7d8b30a62bcb8dd9233c5b4d7c05361cc762565b4852bbd.gz": {
+      "bytes": 805,
+      "sha256": "43e851c6d11c57606dfd027365408359f46f772cbb862de17c158a2cc4bb5c51"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e4d975d15bc2853f543c57932c5a48132f8de4cc2b7dc674ea7d5cdbcfd280c5.gz": {
+      "bytes": 192,
+      "sha256": "8a1df8f51b5e6905042bfce89d21d0ab3d1d5285c3f91a0b6de60fbc0a5ad262"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e54d807d5db9f1930926b28a363f6d7972f123102e48a1815670df3386a15b60.gz": {
+      "bytes": 1793,
+      "sha256": "7dccf91cb2a4d1bebef4ad04825fec0d5ec380fb43f7f4f5ad29381c66df7d9a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e56777fa16ab9d62705a37de2a1515e6a08995327f885ef01964998899d16556.gz": {
+      "bytes": 4668,
+      "sha256": "3eb9b56837936a9cffbb7b8fdc0f2c4fc2808f724b5b87f3acf375a571693a6b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e652ea47ac510f254a1985339d78fcd0caec474b248f95fad7f37693cbe4e246.gz": {
+      "bytes": 730,
+      "sha256": "0e286771d793928085b3de79e02bec5ce364d7eac7e810e11b7c2eff0e5e65dc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e734f3f4d1ef21b77dea5db767355f8abdd5caa44b54118b7ab053caa03c9c55.gz": {
+      "bytes": 6371,
+      "sha256": "1d54c03d499528029143a0b1e6562d41d5ecb6bce488eb0f986606a4ca3b3fe1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e8cfd83b3ad488921d026aff564b7ac55d1a1df483a10aa0aa6b0a15e6d7e25b.gz": {
+      "bytes": 12381,
+      "sha256": "616a69371fd8b384e6ddc10156a65882f63e99adbd469b71cdfbb42447d1f3b1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e8dd1683c885929f047a5f725d27817df8cee15bedbf229e13d1da235e5a4e54.gz": {
+      "bytes": 6581,
+      "sha256": "ffca6e5de193484916438bfa1fa351d441a387c764fa3819fa613062a389ad9f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e8e4c27cb386ac6e4bf7fef35e6f8a02c4a7955a5be9041bc20e9fbbdb1e6bf5.gz": {
+      "bytes": 644,
+      "sha256": "d629144ce903109331a878b7e59400e5618e5d804599605e28dc1d48925f5b68"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e94339ebe1787aac242d0340fddd6c2616f3e8d22bc837bdb8f0746def664e3f.gz": {
+      "bytes": 2139,
+      "sha256": "4f6e4698b96b01558172c8e01e19bbda9c097f0ec55e71796e8dcc3a437ce3ad"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/e9cd35d2272e7ccb00a66373f3879306a94ec826e68c11ee1a70a1fd81e199a0.gz": {
+      "bytes": 1850,
+      "sha256": "e5cff5d55b4fbd760ad08d5e29e7ff787719c43fc010997f20732afc018a34df"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/eae5c13aef134b518bf5ac14ed168a90c0161461a7733ce80fd029212443ad19.gz": {
+      "bytes": 3224,
+      "sha256": "86f7236fd24627dad9776e7a266cf21141248a533ad5d7ee8e25a052aa1b156d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ebaf9600f03e5441897e940720d1b32b41ae0082a35c387e5c79f1d29489426e.gz": {
+      "bytes": 503,
+      "sha256": "330ec591971fcf64d8fc92caef5a47da0d2321a8c7c4cf68260e721a866692d2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ec1cd0da487d318548754ffe85c7a3e76c249f695ca0284d225d0a6fc0a3662b.gz": {
+      "bytes": 1507,
+      "sha256": "29c45cea82e8f0b534113a6b43363a09b3a431fece4bb99ad272d268ce89c10d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ed56aff3e879ccefd12d348f2361bdc4abdd5c92afad15ba69495bd8b5096de4.gz": {
+      "bytes": 616,
+      "sha256": "6fc8bf23c1671fcbc4b067cdaecb615289337cd6ecfc2a67cef6a2c7e941b3bc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/eddb61c1483a0fc95f17c2bc8faee9713d6b5ed976de9792d17371096462c861.gz": {
+      "bytes": 2625,
+      "sha256": "e11883ac663ca54cb07fcbb53abbe3dee4cb9bdcca76452b45b2ee06f9e8a14e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f03fe80d0191348acf91bffc81a8690e5dd8e15ecf706b6d77a31f3a02c2ee4b.gz": {
+      "bytes": 852,
+      "sha256": "d1d56d8334d9848505643755fb393a5e2e89c683b07c9800ea660963c583ed27"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f051a41848626278ccd5a9a7e7a5681553d4c1c6bc40585cb0cb3a1a23956556.gz": {
+      "bytes": 420,
+      "sha256": "1582bda25efabf7836f0e35cb6993ed2d6d6d74dc240a2c8a78362b2c0485c9e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f1f779e9121a9b72c0216b70acb4c4418c005b5760572fedad95374436ea9def.gz": {
+      "bytes": 5462,
+      "sha256": "fc8847891a2acaa915376948c6a33c7a20c4866cac2a43ba3f8db49fa483cf09"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f26297ac35a954d8f0d770d36c750dd3b94ea1b72662a131aee91e6b164e0410.gz": {
+      "bytes": 736,
+      "sha256": "d874e4003230e616e76c61c332eb5cd16a0601a517fe3afe91cec0ca87c5f10e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f28018f21e0878340107b87d559cd8eeb51d6219dab6147a1ca19d264c5f2b0c.gz": {
+      "bytes": 196,
+      "sha256": "a8475847311c19b093f3dce772e73abb247073c1775db93e19218af5a007d7cc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f297b726f63c22692a6cc9f3c590958614dcddd5854d785adf38d44f0a79b2ff.gz": {
+      "bytes": 1952,
+      "sha256": "963f5744fbfd02bfc19bb9fa929fe97fb87e611913c78a45c3dd6671a6e48c91"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f2f74744b37e936134bce511e4d0f915755c3f93855f00bb308bdce5c271f75b.gz": {
+      "bytes": 610,
+      "sha256": "cf0710e3c1258709172978d8f9ec796395037896939d7bffd88f8b8806c2662d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f57121f52a4c049422d92ab846852cfd285d08331e77d38c47b182e5e4d0eb20.gz": {
+      "bytes": 288,
+      "sha256": "05d77f8a795e44871ada749723f74d2fc425d53fd77f13a7a448f512e14fa666"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f827075375b777b28e77762bdae251ca4e59611434e0bc6411827db8a2b05dbe.gz": {
+      "bytes": 1349,
+      "sha256": "a42acda8bf6261640d94210d8546809de96e4b59fb612d0790929fefa6fb10f5"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f8d545b44f1a18d7e22605ad80f60b4bde2252967b80cd92dfe43d96b1795734.gz": {
+      "bytes": 630,
+      "sha256": "60e893b4c841c7f814eb3c20ecb5ee79b1b7efc11a1a061c1b3c6753c90b4bdc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/f8da8ddba351be2d4ea0e99180f5906f2e5264084bb8a6fe519c0912be45df52.gz": {
+      "bytes": 1077,
+      "sha256": "067ac4e95a81d627bded822e6b15ef95e170e1477c746c263b418210dcfe2bff"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/fc229082e68b38361528460821264a217ab946ab6ca40496322c2941df450bfa.gz": {
+      "bytes": 440,
+      "sha256": "31c24807a2f2f51331a57f6b2a030c195d403347e1ef19ec6d7ca9e888e56cd6"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/fd4b615fc212f11d7bbc067958bbde78a75d3e797f572230d0295cc87913abad.gz": {
+      "bytes": 1334,
+      "sha256": "6e4f19e1c58698a9fec45bfd15b975f459eb8b4b6dc4b6eb82eafbe0f677e0f2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/fd952e20513ff2813599b5ae75587576936a379708944bc18134c625520ee2d2.gz": {
+      "bytes": 620,
+      "sha256": "c991b4071b38b6aa505a4275a7eb0b452ad2cac3142d678ce5b0861158cad72c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/fe7520103956e5a9bfb579426ffcbd92c880c1f0296d2f82f3d145cff6ab9ffa.gz": {
+      "bytes": 1932,
+      "sha256": "dfb92f9df39e158bd666efd8b7aa7989819712b8af5620134b18f4cf1c10ae11"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/fe827c0b165604c57dab810e9416cde405e01cf0cf285e509cac0f8be9339388.gz": {
+      "bytes": 516,
+      "sha256": "a5bd63d2147a07f222e456de49e8af5c4dabd428de6525d9e47512de6f31f56b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/fe982ed4948233a204ad0d6696325761a6fadf0f5351a1d840f5237714151d2f.gz": {
+      "bytes": 2646,
+      "sha256": "ae41e9e74d979009d74e005ec78305cadedd8a4a0ff15d0f3b3af32ee636b01f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/ffaa54fcc5cbc1564d604f19390a18eac557b8488c0dd41f914e5d0c9599a468.gz": {
+      "bytes": 15918,
+      "sha256": "d515c724c1c3300ce50beb4a195762cd6137b72e87d5099c818ae62acef265fa"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/build_components.py.gz": {
+      "bytes": 2830,
+      "sha256": "123d7f88cc1f1442296525f1d136e22f5e0376291c0213c5169cd0e3ac95d446"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/capture_sources.py.gz": {
+      "bytes": 3294,
+      "sha256": "7a078b464812566a38d359cc4fd94b16b935a995701a049aeee3536915c1a1ff"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/check_identity.py.gz": {
+      "bytes": 2022,
+      "sha256": "21290ccd2755a55e24527c6dd3b56fee06e24e0a948505594943fa98f270dd23"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/finalize_components.py.gz": {
+      "bytes": 1861,
+      "sha256": "b4c4191e3a64fa23123eefecaae317372508dfb69541ddd126b297689635f358"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/EXPECTED_REJECTIONS.json.gz": {
+      "bytes": 163,
+      "sha256": "8d4eedcb51884a2d3732c8d5e45218994cf0faba7b407f6392d68b8a2e80298e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/BODY_MAP.json.gz": {
+      "bytes": 1002,
+      "sha256": "7ee5fb61c8e108a876a12b68473924047d31d33151f55a7fd3ee4c6f721f0609"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/CANDIDATE_NOTE.md.gz": {
+      "bytes": 10667,
+      "sha256": "aa001c8087a888eb0cad8900ad14d81e03bee80629a8972bd16a2f3b13b393a4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/CLAIM_STATUS.json.gz": {
+      "bytes": 411,
+      "sha256": "4cf0de755f97f5c4e0fe8dd789295fe7cb2e9be29cf27a5d551fd49abefca82d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/CONFORMANCE.json.gz": {
+      "bytes": 405,
+      "sha256": "53ff9c24d4e4bdff2aa462872afecd85d6d420a0c7ec34fe1af6d545a97b0dbd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/DEPENDENCIES.json.gz": {
+      "bytes": 973,
+      "sha256": "2f781742bc166a4686775a190618bc6500935aeb129a1ff3a78ee9baad9f7526"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/PAYLOAD_MANIFEST.json.gz": {
+      "bytes": 546,
+      "sha256": "692a48b7e1ccfc18825e3c99a1f4d0ecc457b7eefd6feaca3f65d34b7896f421"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/invented_parent_binding/PUBLICATION_BINDINGS.json.gz": {
+      "bytes": 165,
+      "sha256": "5cdbac1e7ede0d526c90b61ae25d866e7ab093f892ffdf5325135d2db55d7f1c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/BODY_MAP.json.gz": {
+      "bytes": 1002,
+      "sha256": "7ee5fb61c8e108a876a12b68473924047d31d33151f55a7fd3ee4c6f721f0609"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/CANDIDATE_NOTE.md.gz": {
+      "bytes": 10667,
+      "sha256": "0c2692e4760c6205ddd7277dd4f3ee77be03bc5cc017c1b984835222bdfb1cf1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/CLAIM_STATUS.json.gz": {
+      "bytes": 411,
+      "sha256": "4cf0de755f97f5c4e0fe8dd789295fe7cb2e9be29cf27a5d551fd49abefca82d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/CONFORMANCE.json.gz": {
+      "bytes": 405,
+      "sha256": "53ff9c24d4e4bdff2aa462872afecd85d6d420a0c7ec34fe1af6d545a97b0dbd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/DEPENDENCIES.json.gz": {
+      "bytes": 938,
+      "sha256": "522eed8f18164ca38abb511559c0ebf87e080d120a272d3a3c767d64e102b52d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/PAYLOAD_MANIFEST.json.gz": {
+      "bytes": 546,
+      "sha256": "378c8ef4e8814c75584568cab2f812f0594b4566c44161523776d16f67bcf347"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/fixtures/note_byte_corruption/PUBLICATION_BINDINGS.json.gz": {
+      "bytes": 165,
+      "sha256": "5cdbac1e7ede0d526c90b61ae25d866e7ab093f892ffdf5325135d2db55d7f1c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/framing/BEFORE_CONSTANTS.md.gz": {
+      "bytes": 366,
+      "sha256": "5d60cf710f835607a05e2bec5159a9c9ecee00d0f97d23eedbd37a847c228734"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/framing/BEFORE_INDEPENDENT.md.gz": {
+      "bytes": 256,
+      "sha256": "6f1a980754eef0f3e0e087d240338abf30469049163d42cb4cc830ceb37901c7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/framing/PREFIX.md.gz": {
+      "bytes": 1943,
+      "sha256": "c47f974af6743ec819fc92176e319456d1702c822c01d346b8a37a566617b341"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/framing/SUFFIX.md.gz": {
+      "bytes": 834,
+      "sha256": "302fee414351d7f9de61092f6d882f0f6fa02924e52a14ca50e91f9788993914"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/history/map_attempt01/finalize_components.py.gz": {
+      "bytes": 1829,
+      "sha256": "ec07088cc3c8e10acd5e66bf227933415cd223ee2bee88aad001bf58d08cdf53"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/history/map_attempt01/map_and_verify.py.gz": {
+      "bytes": 3543,
+      "sha256": "6dfe57a6af8dbaa1f398097d760a6ec4f704f5e56a787193fa27d3939ea137ba"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/history/map_attempt01/partial_readable_diffs/build_components.py.diff.gz": {
+      "bytes": 2884,
+      "sha256": "390a933948903bf932342dbfa7b1a38ee5710f627757e5801a9bbe65a3c6eead"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/map_and_verify.py.gz": {
+      "bytes": 4113,
+      "sha256": "55e683451f8f584ebd03e3522f49fa4ce5d486593ad61f95b08391303ea95988"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/BODY_MAP.json.gz": {
+      "bytes": 1002,
+      "sha256": "7ee5fb61c8e108a876a12b68473924047d31d33151f55a7fd3ee4c6f721f0609"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/CANDIDATE_NOTE.md.gz": {
+      "bytes": 10667,
+      "sha256": "aa001c8087a888eb0cad8900ad14d81e03bee80629a8972bd16a2f3b13b393a4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/CLAIM_STATUS.json.gz": {
+      "bytes": 411,
+      "sha256": "4cf0de755f97f5c4e0fe8dd789295fe7cb2e9be29cf27a5d551fd49abefca82d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/CONFORMANCE.json.gz": {
+      "bytes": 405,
+      "sha256": "53ff9c24d4e4bdff2aa462872afecd85d6d420a0c7ec34fe1af6d545a97b0dbd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/DEPENDENCIES.json.gz": {
+      "bytes": 938,
+      "sha256": "522eed8f18164ca38abb511559c0ebf87e080d120a272d3a3c767d64e102b52d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/PAYLOAD_MANIFEST.json.gz": {
+      "bytes": 546,
+      "sha256": "378c8ef4e8814c75584568cab2f812f0594b4566c44161523776d16f67bcf347"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/payload/PUBLICATION_BINDINGS.json.gz": {
+      "bytes": 165,
+      "sha256": "5cdbac1e7ede0d526c90b61ae25d866e7ab093f892ffdf5325135d2db55d7f1c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/prepare_identity_fixtures.py.gz": {
+      "bytes": 738,
+      "sha256": "3a8e384040e42ffc9112cbf1e2cbe7df8de25a7f295019b2636adc812bf0fd0c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/ASSEMBLY_REPORT.md.diff.gz": {
+      "bytes": 2079,
+      "sha256": "a95aae76c4d540cad3bf3a078cb6e2d654e5a73375ca889b7127264c777fcab7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/BEFORE_CONSTANTS.md.diff.gz": {
+      "bytes": 420,
+      "sha256": "10955495751aca2802f22ee95ea18b4d21c1deff7bf03797f0852197a4b7f759"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/BEFORE_INDEPENDENT.md.diff.gz": {
+      "bytes": 313,
+      "sha256": "4751ed387c9e7e98468e28c30246680e93df8999ed8ba96e1ac89a900e6b32f2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/PREFIX.md.diff.gz": {
+      "bytes": 1987,
+      "sha256": "641966097ce185dee50be8aec4857d59c0396f854e2f336323bff68c84125bfe"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/ROOT_REPRODUCTION.md.diff.gz": {
+      "bytes": 1697,
+      "sha256": "37ed2b21708d75a23d60830ba4e154a253c1033e10293d5d1af540653e42ba30"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/SOURCE_EXPOSURE.md.diff.gz": {
+      "bytes": 1825,
+      "sha256": "ddd1514d3205e446c8c25ae60ba9d3365e38b52ff7855f7e883cd0b261f632eb"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/SUFFIX.md.diff.gz": {
+      "bytes": 877,
+      "sha256": "03de19244fda306203736fa03043f0414a693d0bdd207592d593d88c56409100"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/TASK_CONTRACT.md.diff.gz": {
+      "bytes": 1374,
+      "sha256": "d9f1d2cb6c8fcabb632d14de88165131a8ae68e0b58b6e09b9ae645c12fc575d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/accepted_independent_derivation.body.diff.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/accepted_root_corollary.body.diff.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/build_components.py.diff.gz": {
+      "bytes": 2884,
+      "sha256": "390a933948903bf932342dbfa7b1a38ee5710f627757e5801a9bbe65a3c6eead"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/capture_sources.py.diff.gz": {
+      "bytes": 3354,
+      "sha256": "88b3c9a8f87bd70e996a49da438e9d94063d2339359e6fc705e567599e9d678b"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/check_identity.py.diff.gz": {
+      "bytes": 2073,
+      "sha256": "95d8676219a34d52609067b38b01919b562254e5019750865ace72c059bd3a51"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/finalize_components.py.diff.gz": {
+      "bytes": 1911,
+      "sha256": "ee3532448b5c4b3a953bcc523acf0009a3bc323d99d098fb4248f8feaeff49a1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/finalize_components.py.repair.diff.gz": {
+      "bytes": 1527,
+      "sha256": "89abc63495523d950498f95c1065ea8f471ddeecf85cfaf385de2d2e9f49a7b1"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/map_and_verify.py.diff.gz": {
+      "bytes": 4164,
+      "sha256": "dcec322f0926c0f293e7d8b1e3a1f00fd4af63ed13f24ed55df59bb1a7a573c2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/map_and_verify.py.repair.diff.gz": {
+      "bytes": 2153,
+      "sha256": "5cb6bfd8b6ce5e3354c9e51ec962883f08f0643f962dc1c4856aaf87e2a09960"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/prepare_identity_fixtures.py.diff.gz": {
+      "bytes": 788,
+      "sha256": "c38831157766c7255e5e5f1ea84c98a8b1bb20815f35a544db2c48626c8689b7"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/readable_diffs/record_run.py.diff.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/BODY_MAP.json.gz": {
+      "bytes": 1002,
+      "sha256": "7ee5fb61c8e108a876a12b68473924047d31d33151f55a7fd3ee4c6f721f0609"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/CANDIDATE_NOTE.md.gz": {
+      "bytes": 10667,
+      "sha256": "aa001c8087a888eb0cad8900ad14d81e03bee80629a8972bd16a2f3b13b393a4"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/CLAIM_STATUS.json.gz": {
+      "bytes": 411,
+      "sha256": "4cf0de755f97f5c4e0fe8dd789295fe7cb2e9be29cf27a5d551fd49abefca82d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/CONFORMANCE.json.gz": {
+      "bytes": 405,
+      "sha256": "53ff9c24d4e4bdff2aa462872afecd85d6d420a0c7ec34fe1af6d545a97b0dbd"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/DEPENDENCIES.json.gz": {
+      "bytes": 938,
+      "sha256": "522eed8f18164ca38abb511559c0ebf87e080d120a272d3a3c767d64e102b52d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/PAYLOAD_MANIFEST.json.gz": {
+      "bytes": 546,
+      "sha256": "378c8ef4e8814c75584568cab2f812f0594b4566c44161523776d16f67bcf347"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/reconstruction_payload/PUBLICATION_BINDINGS.json.gz": {
+      "bytes": 165,
+      "sha256": "5cdbac1e7ede0d526c90b61ae25d866e7ab093f892ffdf5325135d2db55d7f1c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/record_run.py.gz": {
+      "bytes": 757,
+      "sha256": "45b29196762f6bb07d3312abb0e5b79b23b6725d6eaa3f89c1a5e0f9a59e091d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/01_capture/RECEIPT.json.gz": {
+      "bytes": 609,
+      "sha256": "d2ccc42624b0b9bd765fbff87fb96cb4ca11775b28410387d590983051c171af"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/01_capture/executed_source.py.gz": {
+      "bytes": 3294,
+      "sha256": "7a078b464812566a38d359cc4fd94b16b935a995701a049aeee3536915c1a1ff"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/01_capture/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/01_capture/stdout.txt.gz": {
+      "bytes": 124,
+      "sha256": "bc2ddeadb35be6612fd339cfdf1ff65f128dbefd0004ed18722f9bf8446f931f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/02_build/RECEIPT.json.gz": {
+      "bytes": 605,
+      "sha256": "87506d39840c00100cf615847ad13e247e31364bada2433f657247ed8e3c85aa"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/02_build/executed_source.py.gz": {
+      "bytes": 2830,
+      "sha256": "123d7f88cc1f1442296525f1d136e22f5e0376291c0213c5169cd0e3ac95d446"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/02_build/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/02_build/stdout.txt.gz": {
+      "bytes": 165,
+      "sha256": "b203cc6017d43e1cf4f9c02fbcdc7eb40863c65ab2fa1f2e91d1c4cea67bbebc"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/03_identity/RECEIPT.json.gz": {
+      "bytes": 619,
+      "sha256": "1333aa891f780848ff4c06f6ce306d260407149484893cb0ab29b714d81e5b80"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/03_identity/executed_source.py.gz": {
+      "bytes": 2022,
+      "sha256": "21290ccd2755a55e24527c6dd3b56fee06e24e0a948505594943fa98f270dd23"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/03_identity/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/03_identity/stdout.txt.gz": {
+      "bytes": 263,
+      "sha256": "03f03bcc708fd120a48f54c637368385b2e5c874f64b99bbadfbfd68aaad24e3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/04_fixture_setup/RECEIPT.json.gz": {
+      "bytes": 620,
+      "sha256": "32e2fb940ae4e5a5f7687fc88fb320752a449066045fdd24de17355a37ae4b8a"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/04_fixture_setup/executed_source.py.gz": {
+      "bytes": 738,
+      "sha256": "3a8e384040e42ffc9112cbf1e2cbe7df8de25a7f295019b2636adc812bf0fd0c"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/04_fixture_setup/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/04_fixture_setup/stdout.txt.gz": {
+      "bytes": 211,
+      "sha256": "d744b51cb1cc610203bf12c2d48a9164b7ca767a626dae63e6e1c9e3343ce870"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/05_corrupt_note/RECEIPT.json.gz": {
+      "bytes": 638,
+      "sha256": "6aae6a929be681476892e522ebb63737a5b4c14e1b9e6a208d63299684a1408e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/05_corrupt_note/executed_source.py.gz": {
+      "bytes": 2022,
+      "sha256": "21290ccd2755a55e24527c6dd3b56fee06e24e0a948505594943fa98f270dd23"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/05_corrupt_note/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/05_corrupt_note/stdout.txt.gz": {
+      "bytes": 116,
+      "sha256": "5877d6e23fbabd25d78f9d043932a3a888d4bdce75f23dfe42621c36852bdd5d"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/06_invent_parent/RECEIPT.json.gz": {
+      "bytes": 646,
+      "sha256": "4b2619ab559644fb95e9a343d38e9418204b3822129f2bcaffc8d7c1d501852e"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/06_invent_parent/executed_source.py.gz": {
+      "bytes": 2022,
+      "sha256": "21290ccd2755a55e24527c6dd3b56fee06e24e0a948505594943fa98f270dd23"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/06_invent_parent/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/06_invent_parent/stdout.txt.gz": {
+      "bytes": 113,
+      "sha256": "1b8f867b8ff93e42cddbf690da3c2e8bce611528143a9bb8ac0533fa6b25c697"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/07_reconstruction/RECEIPT.json.gz": {
+      "bytes": 629,
+      "sha256": "d5730693d618264edcbca8aecc401e4a96bd0a099f7e819063f4a24c76cdc163"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/07_reconstruction/executed_source.py.gz": {
+      "bytes": 2830,
+      "sha256": "123d7f88cc1f1442296525f1d136e22f5e0376291c0213c5169cd0e3ac95d446"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/07_reconstruction/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/07_reconstruction/stdout.txt.gz": {
+      "bytes": 175,
+      "sha256": "3c64a2de4830d4791f0f8e51512ad5e22e176b81d5c2e9a87bea9c4d2fe9f90f"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/08_reconstruction_identity/RECEIPT.json.gz": {
+      "bytes": 641,
+      "sha256": "6558a06c388d04ace851a0d1960a573c26e3e89a6fb85707b77b479d551c9ed2"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/08_reconstruction_identity/executed_source.py.gz": {
+      "bytes": 2022,
+      "sha256": "21290ccd2755a55e24527c6dd3b56fee06e24e0a948505594943fa98f270dd23"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/08_reconstruction_identity/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/08_reconstruction_identity/stdout.txt.gz": {
+      "bytes": 261,
+      "sha256": "83cf77823f0463922e9908f1b4d04df38c09d65cc47060b25099a29549744b29"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/09_maps/RECEIPT.json.gz": {
+      "bytes": 611,
+      "sha256": "68eb51c074cf12895f6c492c35a2bf988ef043f053aa3ea67658acef2813b073"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/09_maps/executed_source.py.gz": {
+      "bytes": 3543,
+      "sha256": "6dfe57a6af8dbaa1f398097d760a6ec4f704f5e56a787193fa27d3939ea137ba"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/09_maps/stderr.txt.gz": {
+      "bytes": 264,
+      "sha256": "005c218d8916dd13ddd1e33331a496a86d333e663057a1fa4b847fb0ab6b35de"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/09_maps/stdout.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/10_maps_repaired/RECEIPT.json.gz": {
+      "bytes": 619,
+      "sha256": "19031745f6d9eda958a265815be68ac47c5ad4401d3769ebb5941791eea701ed"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/10_maps_repaired/executed_source.py.gz": {
+      "bytes": 4113,
+      "sha256": "55e683451f8f584ebd03e3522f49fa4ce5d486593ad61f95b08391303ea95988"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/10_maps_repaired/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/10_maps_repaired/stdout.txt.gz": {
+      "bytes": 170,
+      "sha256": "deb29ca544b48aec39c63c785d3ae8da9c2dd7ebfb59100d677cbf6a79592047"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/11_pre_freeze/RECEIPT.json.gz": {
+      "bytes": 611,
+      "sha256": "624afa72a40439a47d8d9c198401fc499b59a573466863b6aa7927a6eed1e1e3"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/11_pre_freeze/executed_source.py.gz": {
+      "bytes": 1861,
+      "sha256": "b4c4191e3a64fa23123eefecaae317372508dfb69541ddd126b297689635f358"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/11_pre_freeze/stderr.txt.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/runs/11_pre_freeze/stdout.txt.gz": {
+      "bytes": 126,
+      "sha256": "1c9568c2cf06f4725616fbf83616ff14b2ea2a4001e067b5499bde083f479b67"
+    },
+    "docs/CHAIN_PREPARATION_MOMENT_SCALING_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 30252,
+      "sha256": "883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b"
+    },
+    "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "bytes": 60202,
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    }
+  },
+  "schema": 1,
+  "source_acceptance_sha256": "a2d2310ca5ff409cbbaf7ea01df2e73e8957d0c2e4347879dcb538df24e24aaa",
+  "source_freeze_sha256": "659b6e517f8fff8939447a25b7539f97f6cefbeb8d7b41acfcbff5e4c941776f"
+}

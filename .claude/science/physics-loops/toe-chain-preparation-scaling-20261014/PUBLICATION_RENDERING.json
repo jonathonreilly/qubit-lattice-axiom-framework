@@ -1,0 +1,131 @@
+{
+  "actual_source_acceptance_sha256": "a2d2310ca5ff409cbbaf7ea01df2e73e8957d0c2e4347879dcb538df24e24aaa",
+  "created_utc": "2026-10-14T22:36:42.573511+00:00",
+  "framing_edits": [
+    {
+      "changes": [
+        {
+          "after": "**Conditional support; the mathematical sources and source components have separate recorded acceptances.**",
+          "before": "**Accepted conditional analytic sources; publication components awaiting source review and actual parent binding.**"
+        },
+        {
+          "after": "It requires a supplied certificate for the complete old-system/reference marginal, and its auxiliary data are actual local excitation probabilities. This full marginal error epsilon is distinct from the additional epsilon_R cost for reference-valued records.",
+          "before": "Its reference marginal is the complete old-system/reference marginal, and its auxiliary data are actual local excitation probabilities."
+        },
+        {
+          "after": "It does not assume independent cell errors. In the root corollary, nu bounds one auxiliary excitation probability and eta<=4M nu bounds their sum. The separately supplied [sigma,P]=0 condition removes P-Q cross terms while retaining Q-Q coherences. The centered second reference-valued record still pays Delta*kappa*epsilon_R, with the chain upper bound D*k*M^7*epsilon_R; scalar moment tolerances do not remove that term.",
+          "before": "It does not assume independent cell errors."
+        },
+        {
+          "after": "full-space norm bound as M^7",
+          "before": "full norm/scalar bound as M^7"
+        },
+        {
+          "after": "The sole imported canonical theorem source is the [preparation-moment theorem and restricted-chain prerequisite](MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md). Its complete de7 and 79d clauses match the frozen premises exactly. The be8 simultaneous operator result is transitive; no additional theorem edge follows from branch ancestry. Parent PR 9575 was observed regular OPEN at 2026-10-14T22:24:45.407505+00:00 at head `84d28d386cf8d8dbbdd4506387ad18296161fe53`. The clean child `physics-loop/toe-chain-preparation-scaling-20261014` was observed at that head at 2026-10-14T22:24:45.843690+00:00. These are dated observations, not claims about future PR state. The [binding record](../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/ACTUAL_BINDING.json) preserves the exact receipts and complete parent-body extractions.",
+          "before": "The sharper [de7 moment theorem](../archive/objects/de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976) and the 79d application clause are intended to be supplied by one preparation-moment canonical parent. That parent has not yet been published or bound in this packet. [DEPENDENCIES.json](DEPENDENCIES.json) therefore keeps its actual path, hash, PR and head null. The accepted be8 simultaneous multi-port theorem is the disclosed transitive operator premise. Branch ancestry, the procedural template and an identity runner do not add theorem imports."
+        },
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259",
+          "before_target": "../archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259",
+          "occurrences": 1
+        },
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+          "before_target": "../archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+          "occurrences": 1
+        },
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87",
+          "before_target": "../archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87",
+          "occurrences": 1
+        }
+      ],
+      "label": "PREFIX.md",
+      "original_sha256": "1004c207236d2e6feb9bf77fd1d1efbdc61c66c865dd83ad8292fc8144b551e1",
+      "pre_storage_sha256": "4cb9721154636ca8426bc6fca5f10ebea632c269aa2a448fdb2ead1d13a044f4",
+      "rendered_sha256": "95794ba5fbe68843bc380a016aa3c25d1990d7fdda435a38f9a27e4eb91dc7fd",
+      "storage_changes": [
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259.gz",
+          "before_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/3787850cc78f5653bf5ed918e2ab7072b0cfaa4a8ff044d3e4cf09152ba91259",
+          "occurrences": 1
+        },
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff.gz",
+          "before_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+          "occurrences": 1
+        },
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87.gz",
+          "before_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/8682e1b71d250dfb7b0d41e99f4bbfdf5d7d93610e31fa33fd0732f9a7fdfa87",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "changes": [],
+      "label": "BEFORE_INDEPENDENT.md",
+      "original_sha256": "f87381f1d68b1fa68a86a4a1e8a67f4b2455d3eb9d8a42c5d7c35af4a30db44a",
+      "pre_storage_sha256": "f87381f1d68b1fa68a86a4a1e8a67f4b2455d3eb9d8a42c5d7c35af4a30db44a",
+      "rendered_sha256": "f87381f1d68b1fa68a86a4a1e8a67f4b2455d3eb9d8a42c5d7c35af4a30db44a",
+      "storage_changes": []
+    },
+    {
+      "changes": [
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c",
+          "before_target": "../archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c",
+          "occurrences": 1
+        }
+      ],
+      "label": "BEFORE_CONSTANTS.md",
+      "original_sha256": "6fa508db67e43f704a82213c7065abdf727fb118e05e6ee848ffcbed764e5561",
+      "pre_storage_sha256": "f392b033251bb1d82b973b5f0c8c04bf67698f3469248411c5ee788eb360dc6f",
+      "rendered_sha256": "a6b6c9c1ba735d4ac43f8002713e20471088593aa9cb3431d0bd6f921993e321",
+      "storage_changes": [
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c.gz",
+          "before_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/archive/objects/2ace6b191f80514c24dec8a46b2e113beddf9db1036f47e70163c1dad240c68c",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "changes": [
+        {
+          "after": "The preserved [source map](../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_MAP.json)",
+          "before": "SOURCE_MAP.json at the component root"
+        },
+        {
+          "after": "The mathematical sources were accepted under 3787850c and the complete unbound source components under a2d2310c at 2026-10-14T22:02:40.263776+00:00. This publication rendering was constructed at 2026-10-14T22:36:42.573511+00:00 from the dated parent/child evidence above. The original unbound note and all historical pending status text remain preserved byte for byte. Canonical integration, cache/graph checks, staging and publication have separate root-owned records. This note and its identity runner confer no retained audit status or apparatus supply.",
+          "before": "Before canonical use, root must review this complete current package, supply and check the actual preparation-parent canonical bytes containing the exact de7 and 79d clauses, and bind the actual child/base/branch facts. A later publication derivative must preserve this unbound source freeze and expose every link, metadata or code change. No canonical installation, runner-cache regeneration, dependency-graph mutation, staging, commit, push, PR or merge is performed by these components.\n"
+        },
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/BODY_MAP.json",
+          "before_target": "BODY_MAP.json",
+          "occurrences": 1
+        }
+      ],
+      "label": "SUFFIX.md",
+      "original_sha256": "b1264a6b02a2b4ccf43286e7486c8ef453cc6319c72bc5f1e5df18643e4d6eb6",
+      "pre_storage_sha256": "ca5ad75e68de131750f1f8be8abbad0222bd3e2e2531b72f6eb3a30d0bed2fb5",
+      "rendered_sha256": "afea9429e1a7598a687ee832a90be92a527df9bcc4ec10f8f5ff85d3998dd79c",
+      "storage_changes": [
+        {
+          "after_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_MAP.json.gz",
+          "before_target": "../.claude/science/physics-loops/toe-chain-preparation-scaling-20261014/source/SOURCE_MAP.json",
+          "occurrences": 1
+        },
+        {
+          "ending_after": "\n",
+          "ending_before": ""
+        }
+      ]
+    }
+  ],
+  "pre_storage_note_sha256": "dede7f2057bcc067b3c14408b66675282743b32c633a487b5c07269c943364b9",
+  "proof_edits": [],
+  "published_note_sha256": "883e0c0ad7d31fc039de0d895fb586818c2562150acef528fb4c79c784f9441b",
+  "source_note_sha256": "34dedc8f91767a0ff65e2078fc234e4ed5b99a02125775a0953b040ae86976f7",
+  "storage_wrapper_delta": "gzip link targets and final wrapper LF only"
+}

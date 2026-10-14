@@ -1,0 +1,27 @@
+{
+  "preserved_source_whitespace": [
+    {
+      "canonical_line": 702,
+      "context": "\\[\n \\boxed{\\ \n \\sup_{|t|\\le T}\n",
+      "context_sha256": "4e76289dd42c10b6460503108bb4983ad175c82e8f4d3be6000fe4e2575bbe57",
+      "exact_line": " \\boxed{\\ \n",
+      "line_sha256": "84b534d3aa9c38ebb727a439e3b194157aaf672bc0f4d4e511c25c8ff8e6b36c",
+      "note": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "reason": "Exact original LaTeX escaped space; preserve accepted mathematical bytes.",
+      "source_line": 635,
+      "source_sha256": "402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d"
+    },
+    {
+      "canonical_line": 788,
+      "context": "\\[\n \\boxed{\\ \n \\sup_{|t|\\le T}\\|\\rho_c(t)-[U_J(t)\\tau_cU_J(t)^*]\\otimes\n",
+      "context_sha256": "800ca001d62a774fb0d8a96225dcd97d3925a7a33192f3c5f778e8ab4c79dbb4",
+      "exact_line": " \\boxed{\\ \n",
+      "line_sha256": "84b534d3aa9c38ebb727a439e3b194157aaf672bc0f4d4e511c25c8ff8e6b36c",
+      "note": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "reason": "Exact original LaTeX escaped space; preserve accepted mathematical bytes.",
+      "source_line": 721,
+      "source_sha256": "402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d"
+    }
+  ],
+  "scope": "Exactly two source-bound LaTeX escaped spaces; preserve actual nonzero Git diagnostics."
+}

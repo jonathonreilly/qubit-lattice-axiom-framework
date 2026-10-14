@@ -1,0 +1,14 @@
+{
+  "exclusions": [
+    {
+      "canonical_line": 293,
+      "context": "Assume A,B>0, and first restrict the right vector by the spectral cutoff\nE_L=1_[1,L](S). For unit vectors u,v in the output/input spaces, respectively,\nf(z)=<u,T S^(-nz) E_L v> is analytic in the strip 0<Re z<1 and continuous\n",
+      "exact_line": "E_L=1_[1,L](S). For unit vectors u,v in the output/input spaces, respectively,\n",
+      "note": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "](S)",
+      "reason": "Spectral projector notation E_L=1_[1,L](S), not a Markdown link.",
+      "source_sha256": "8361667a12e01be16c40b01a3fc6aff14512fb1fed6f29ccdd9cac2e4c408c09"
+    }
+  ],
+  "scope": "Exactly one source-bound spectral-projector string; no general formula exemption."
+}

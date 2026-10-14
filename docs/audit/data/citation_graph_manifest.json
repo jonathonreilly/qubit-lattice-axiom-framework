@@ -1,6 +1,6 @@
 {
- "edge_count": 15858,
- "node_count": 7040,
+ "edge_count": 15874,
+ "node_count": 7046,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1923,6 +1923,10 @@
    "out_degree": 0
   },
   "alternative_coupled_field_probe_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "analytic_fluid_cosmology_construction_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -4146,6 +4150,10 @@
    "deps_hash": "311d6b921eb1",
    "out_degree": 3
   },
+  "corrected_dispersion_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "d9669c5e9542",
+   "out_degree": 3
+  },
   "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
@@ -6062,6 +6070,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "energy_distribution_limit_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "6fd581fea5c4",
+   "out_degree": 7
+  },
   "energy_filters_and_actual_repeated_formation_bounded_theorem_note_2026-09-24": {
    "deps_hash": "f9183bd2dcb8",
    "out_degree": 3
@@ -6072,6 +6084,10 @@
   },
   "energy_transfer_correlation_bounded_theorem_note_2026-10-12": {
    "deps_hash": "a6a07e3c4279",
+   "out_degree": 3
+  },
+  "energy_weighted_current_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "3859db2a49c2",
    "out_degree": 3
   },
   "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {
@@ -6321,6 +6337,10 @@
   "experiment_backmatch_query_pack_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "explicit_effective_potential_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "907b971d78de",
+   "out_degree": 2
   },
   "exponent_derivation": {
    "deps_hash": "5861e51d4c5d",
@@ -14613,6 +14633,10 @@
   "modulus_three_triple_complement_bounded_theorem_note_2026-10-10": {
    "deps_hash": "5859f1e27606",
    "out_degree": 3
+  },
+  "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "40f6445cf358",
+   "out_degree": 1
   },
   "momentum_charge_commute_theorem_note_2026-05-02": {
    "deps_hash": "ec6690abc5b2",

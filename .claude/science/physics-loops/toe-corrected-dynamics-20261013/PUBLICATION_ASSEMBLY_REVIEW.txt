@@ -1,0 +1,74 @@
+# Root review of the repaired corrected-dynamics publication
+
+The separately frozen V2 package3165fc3aa379f9e2f9582a18d2c930106907c798deee1950b98064b2f81f5c19
+is accepted for canonical prepare/verify. The actual V1 failure is preserved
+and remains a failed publication check. No source theorem was repaired and
+no mathematical predicate was executed by the tooling revision.
+
+V1 root source review622bfbe3 and acceptance4971ea44 remain historical.
+The exact 749-line driver a3156a9c is unchanged; its complete earlier root
+read is reused, as are all 2380 accepted core lines, all six wrappers,
+publication byte maps/full-context diffs and existing graph/dependency scope.
+V2 changes only three existing payload runner paths and adds 31 explicit
+repair-evidence files. Canonical note hashes remain8e01914f/42f5cc24/0da8c652.
+No new full manual read of the final canonical bodies or three generated
+runner copies is claimed. Exact common-template generation and all 232
+declared inputs were checked mechanically at their unchanged identities.
+
+New coverage: complete handoff and 16-member diff index3cba1a; all changed
+template/checker/freezer hunksc400ef; complete new evidence packager112 and
+scratch regression135, driver-compatibility reasoning, repair report,
+README/checkpoint and reproduction diff5bc85b. These are combined with the
+exact prior full reads of the unchanged program portions. Root outer/check
+wrappers were fully refreshed2c6cd1 and their complete V2 diffs read4d5a28.
+The new runner logic is exactly the reviewed template change; no separate
+claim is made about a manual read of repeated generated input arrays.
+
+The actual bug was the reconstruction convention, not a proof or source
+checksum mismatch. The accepted source assembly uses context-three diffs
+with original/source-body and canonical-note labels. V1 incorrectly reused
+the full-context publication helper with baseline/candidate labels. V2
+restores the original convention in a distinct helper, requires the actual
+single source-body order, and additionally checks the original proposed
+new-file diff. Publication and wrapper diffs retain their own full-context
+format. No comparison is weakened or normalized away.
+
+The scratch program copies exactly the declared inputs and three runners
+to a temporary noncanonical root. It checks the old runner's exact failure
+and exit1, restores the new bytes, then checks all three exit0 outcomes,
+complete stream identities, unchanged input set and absence of mutations.
+Root inspected the saved outcome and then parsed all full streams in e68a56:
+three external and229 package inputs match the232 declared paths, the
+identity outputs explicitly execute zero mathematical predicates, and all
+stderr streams are empty. Earlier raw stream display99a058 was truncated;
+it supplies no full raw-list coverage claim. The complete files remain on
+disk, and the compact parsed checks repaired the required result inspection.
+
+Root replayed the complete revised static checker once in092cd2, exit0,
+0.420116750s. Only its output writer was redirected outside the frozen
+package. Generated JSON was compared with the frozen metadata, ignoring
+only its actual timestamp. All581 frozen members were verified before and
+after. This now reconstructs all six historical source diffs in addition
+to the unchanged publication and wrapper transformations. Complete logs
+are in corrected_dynamics_publication_repair_v2_root_source_check.
+
+V2 has276 payload files,278 exclusive install files with the two external
+root records, and282 future stage paths including three fresh caches and
+the generated graph manifest. The six runtime pins remain deferred to the
+actual successful prepare receipt. The unchanged driver derives these sets
+from the freeze and manifest, so no clean-state guard or fixed-file-count
+constraint was bypassed. Its package path resolves correctly from V2.
+
+Canonical execution still must establish fresh caches, exact-reason
+corruption controls, graph delta, exact staging and compatibility checks.
+Scratch success does not establish those outcomes or science correctness.
+The exact248-file partial V1 install is preserved in the05:45 checkpoint
+bundle and hash manifest; only that self-created untracked set may be moved
+to recovery before V2. Tracked tree and index must remain at the9510 base.
+
+Current/Local/ground premises, three proposed nodes/six direct edges,
+four provisional supports, seven archival exclusions, N1/N5 pending status,
+two accepted LaTeX whitespace lines and the spectral-notation link exception
+are unchanged. Original false/pending/exposure fields remain historical.
+This revision supplies no formal analytic, model-diverse or retained audit
+status. No editable prompt or physical axiom changed.

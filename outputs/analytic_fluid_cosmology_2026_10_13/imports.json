@@ -1,0 +1,26 @@
+{
+  "theorem_inputs": [
+    "Fixed a>0,nu>0,H_v>0",
+    "Displayed three-field action, universal conformal dust, classical Einstein gravity, flat homogeneity, ideal nonnegative dust/radiation"
+  ],
+  "numerical_benchmark": {
+    "H0": 1,
+    "m": 0.3,
+    "Omega": 5.046740289227271e-05,
+    "role": "Supplied previously exposed dimensionless amplitudes; no calibration or independent data test in this unit.",
+    "history": "Exploratory calibration chain preserved in the recovery archive. The positive theorem accepts arbitrary supplied amplitudes and does not require that chain."
+  },
+  "new_candidate_assumptions": [
+    "Third scalar",
+    "Curved positive K",
+    "Free restoring nu",
+    "Supplied positive vacuum scale"
+  ],
+  "open_physical_work": [
+    "Matter and initial-state identification",
+    "Inhomogeneous perturbations",
+    "Quantum action and scale origin"
+  ],
+  "runtime_scientific_input": "Only fixtures.json; note and this record are package integrity inputs.",
+  "formal_audit": "Not applied."
+}

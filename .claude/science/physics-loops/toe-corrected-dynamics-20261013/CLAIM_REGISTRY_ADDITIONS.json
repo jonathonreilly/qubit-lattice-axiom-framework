@@ -1,0 +1,104 @@
+{
+  "direct_edges": [
+    {
+      "from": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "to": "bounded_interaction_ground_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13",
+      "to": "corrected_dispersion_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "existing_claim_status_changes": [],
+  "external_provisional_support_relations": [
+    {
+      "archive": "source_archive/sha256/c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd/SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "name": "SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "role": "Fixed smooth high-tail/off-block decay resource in corrected windows.",
+      "sha256": "c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd",
+      "status": "explicit archived provisional support"
+    },
+    {
+      "archive": "source_archive/sha256/10aa75b19058e8cc635a7c2a35a31552fbdb7976851c6bb0ec3c432ad9a061e3/LOW_BLOCK_EFFECTIVE_DYNAMICS_CROSSCHECK.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "name": "LOW_BLOCK_EFFECTIVE_DYNAMICS_CROSSCHECK.md",
+      "role": "Separated high-block graph/Sylvester mechanism reconstructed in the corrected proof; window classes remain distinct.",
+      "sha256": "10aa75b19058e8cc635a7c2a35a31552fbdb7976851c6bb0ec3c432ad9a061e3",
+      "status": "explicit archived provisional support"
+    },
+    {
+      "archive": "source_archive/sha256/c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd/SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "name": "SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "role": "Actual high-tail and high-vacuum compression conventions.",
+      "sha256": "c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd",
+      "status": "explicit archived provisional support"
+    },
+    {
+      "archive": "source_archive/sha256/1a10d9c613bf7760f0e9d6e55f9f690b495c4225a101bf69af2711ab245a6f58/SMOOTH_HIGH_BAND_DECOUPLING_CROSSCHECK.md",
+      "canonical_node_proposed": false,
+      "claim_id": null,
+      "dependent": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "name": "SMOOTH_HIGH_BAND_DECOUPLING_CROSSCHECK.md",
+      "role": "Unital full-low placement, support and selfadjointness precision.",
+      "sha256": "1a10d9c613bf7760f0e9d6e55f9f690b495c4225a101bf69af2711ab245a6f58",
+      "status": "explicit archived provisional support"
+    }
+  ],
+  "nodes": [
+    {
+      "claim_id": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12"
+      ],
+      "key": "dispersion",
+      "path": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/corrected_dispersion_identity_2026_10_13.py"
+    },
+    {
+      "claim_id": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ],
+      "key": "potential",
+      "path": "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/explicit_effective_potential_identity_2026_10_13.py"
+    },
+    {
+      "claim_id": "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "corrected_dispersion_bounded_theorem_note_2026-10-13"
+      ],
+      "key": "moment",
+      "path": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/moment_sensitive_corrected_dynamics_identity_2026_10_13.py"
+    }
+  ],
+  "scope": "Six proposed direct canonical edges and four explicit archived provisional relations. This does not claim the canonical graph alone is a complete transitive proof graph."
+}

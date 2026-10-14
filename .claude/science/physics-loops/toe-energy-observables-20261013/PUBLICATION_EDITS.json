@@ -1,0 +1,364 @@
+{
+  "additional_mathematical_body_edits": [],
+  "exact_wrapper_substitutions": [
+    {
+      "mathematical_body_edits": [],
+      "new_bytes_are_wrapper_only": true,
+      "substitutions": [
+        {
+          "new": "assembly_status: accepted_source_with_reviewable_publication_wrapper\nrunner: scripts/energy_distribution_limit_identity_2026_10_13.py",
+          "old": "assembly_status: source_only_exact_root_review_pending"
+        },
+        {
+          "new": "next_trace_action: root publication review and integration; current-main landing checks and independent retained audit remain separate",
+          "old": "next_trace_action: root review of exact source assembly before any separate publication-execution preparation"
+        },
+        {
+          "new": "This publication candidate carries the root-accepted conditional source assembly.\nIts mathematical body is",
+          "old": "This is a source-only assembly for exact root review. Its mathematical body is"
+        },
+        {
+          "new": "into this body. Root accepted the exact source assembly at 02:27:42 UTC,\nreusing complete body coverage and reading the new wrappers and three wording\nchanges. The new publication wrappers remain subject to exact root review.",
+          "old": "into this body. This new assembly itself remains pending exact root review."
+        }
+      ],
+      "wrapper": "wrappers/distribution_header.md"
+    },
+    {
+      "mathematical_body_edits": [],
+      "new_bytes_are_wrapper_only": true,
+      "substitutions": [
+        {
+          "new": "Its one accepted wording change is",
+          "old": "Its one proposed wording change is"
+        },
+        {
+          "new": "packet's ACCEPTED_PARENT_SOURCE_BINDINGS.json and ACCEPTED_DEPENDENCY_MAP.json.",
+          "old": "packet's PARENT_SOURCE_BINDINGS.json and DEPENDENCY_MAP.json."
+        },
+        {
+          "new": "The source assembly has root acceptance with honest limits on fresh reading.\nNew publication integration and registration require the separately reviewed\nroot procedure and its actual execution receipts.",
+          "old": "New candidate registration, root review and any subsequent publication\nexecution remain separate, unperformed steps of this source-only packet."
+        },
+        {
+          "append": "\nThe [publication packet](../.claude/science/physics-loops/toe-energy-observables-20261013/README.md) binds exact archives,\ncomplete publication diffs, parent identities, review chronology and pending\nobligations. The [identity-only runner](../scripts/energy_distribution_limit_identity_2026_10_13.py) verifies bytes and\nreconstruction only; it supplies no mathematical proof, independent audit or\nretained status. Original pending/exposure statements within the body remain\nhistorical. The exact source acceptance retains its false fresh-full-note and\nfresh-full-context-diff read fields.\n"
+        }
+      ],
+      "wrapper": "wrappers/distribution_appendix.md"
+    },
+    {
+      "mathematical_body_edits": [],
+      "new_bytes_are_wrapper_only": true,
+      "substitutions": [
+        {
+          "new": "assembly_status: accepted_source_with_reviewable_publication_wrapper\nrunner: scripts/energy_weighted_current_identity_2026_10_13.py",
+          "old": "assembly_status: source_only_exact_root_review_pending"
+        },
+        {
+          "new": "next_trace_action: root publication review and integration; current-main landing checks and independent retained audit remain separate",
+          "old": "next_trace_action: root review of exact source assembly before any separate publication-execution preparation"
+        },
+        {
+          "new": "This publication candidate carries three complete root-accepted conditional bodies:",
+          "old": "This source-only note assembles three complete bodies for exact root review:"
+        },
+        {
+          "new": "source assembly was accepted by root at 02:27:42 UTC with explicit reuse of\ncomplete body coverage. The new publication wrappers remain subject to exact\nroot review. No model-diverse, formal, transitive",
+          "old": "assembly remains pending root review. No model-diverse, formal, transitive"
+        }
+      ],
+      "wrapper": "wrappers/weighted_header.md"
+    },
+    {
+      "mathematical_body_edits": [],
+      "new_bytes_are_wrapper_only": true,
+      "substitutions": [],
+      "wrapper": "wrappers/weighted_native_between.md"
+    },
+    {
+      "mathematical_body_edits": [],
+      "new_bytes_are_wrapper_only": true,
+      "substitutions": [],
+      "wrapper": "wrappers/weighted_current_between.md"
+    },
+    {
+      "mathematical_body_edits": [],
+      "new_bytes_are_wrapper_only": true,
+      "substitutions": [
+        {
+          "new": "The two accepted topology-wording edits",
+          "old": "The two proposed topology-wording edits"
+        },
+        {
+          "new": "this source assembly. The new canonical identity-only runner sources remain\nunexecuted by the preparation worker. Their later root-owned execution checks\nsource bytes and reconstruction, with zero mathematical predicates.",
+          "old": "this assembly. Identity-only procedure drafts, if supplied, remain unexecuted\nsources for root review and later publication preparation."
+        },
+        {
+          "append": "\nThe [publication packet](../.claude/science/physics-loops/toe-energy-observables-20261013/README.md) binds exact archives,\ncomplete publication diffs, parent identities, review chronology and pending\nobligations. The [identity-only runner](../scripts/energy_weighted_current_identity_2026_10_13.py) verifies bytes and\nreconstruction only; it supplies no mathematical proof, independent audit or\nretained status. Original pending/exposure statements within the body remain\nhistorical. The exact source acceptance retains its false fresh-full-note and\nfresh-full-context-diff read fields.\n"
+        }
+      ],
+      "wrapper": "wrappers/weighted_appendix.md"
+    }
+  ],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/candidate/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "7fbe15c5037fe15a79d84ded88217812683f6fc787b1da66f861b7e6a3a38eef",
+      "additional_mathematical_body_edits": [],
+      "diff": "publication_diffs/distribution.complete-publication.diff.gz",
+      "diff_sha256": "bbfbc75f7e0a227e91d820b1e9f59ce1fdb2934f3d7d2df9e9c4c87392adab25",
+      "diff_stored_sha256": "46b788aad39ca6269f0830307f2e32efc3e31fd765016fbd6a20c32a139c4603",
+      "note": "docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 4771,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 85,
+          "sha256": "12ecf248e13983c3588a7f75407a2d987592e8ebe5df80148511bce48eb23583",
+          "text": "---\nclaim_id: energy_distribution_limit_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Conditional one-time free-energy distribution bounds on the supplied actual Fock carriers, with separate moment, protocol, normalization and target-tail hypotheses for the stated endpoints.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: accepted_source_with_reviewable_publication_wrapper\nrunner: scripts/energy_distribution_limit_identity_2026_10_13.py\nscientific_execution: none_in_this_assembly\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: supplied-model conditional arguments with explicit provisional dependencies\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: complete conditional proof body preserved with one accepted tail-hypothesis wording precision\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: root publication review and integration; current-main landing checks and independent retained audit remain separate\nupstream_dependencies:\n  - bv_graph_energy_protocol_bounded_theorem_note_2026-10-13\n  - prepared_driven_state_bounded_theorem_note_2026-10-13\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n  - adiabatic_ground_preparation_bounded_theorem_note_2026-10-12\n  - time_averaged_energy_transfer_bounded_theorem_note_2026-10-12\n---\n\n# Energy-distribution limits with explicit endpoint resources\n\n**Type:** bounded_theorem\n\nThis publication candidate carries the root-accepted conditional source assembly.\nIts mathematical body is\nthe complete 944-line independent derivation, originally frozen with SHA-256\n`4ab02757ff0be403b15d41779a04ca596436bc62240dbc027c01ac6d0fb78abc`.\nOne accepted wording precision qualifies the moving-target tail hypothesis;\nall formulas and equation labels are preserved. The wrapper adds chronology,\nscope and source bindings, not a new theorem or another scientific check.\n\nThe body concerns one-time spectral laws of the actual nonnegative free\nHamiltonians. Its subquadratic transport estimates use the actual commuting\nenergy bridge, trace comparison and second-moment bounds. Its quadratic\ntransport endpoints use the additional moment or graph-vector, preparation,\nbounded-work, commutator, probability and target-tail resources stated at\neach application. A second-moment cap alone does not establish the endpoint.\nThe compact-BV protocol and gap assumptions belong to those applications;\nthey are not universal assumptions of every abstract density estimate.\n\nThe uniform or varying-target tail hypothesis is sufficient for the displayed\nclipping argument, not necessary for every comparison of moving laws. An\narbitrary noncontractive insertion yields a nonnegative weight; a probability\ninterpretation requires the contraction or common fixed rescaling already\nspecified in the body. Positive normalization and its actual denominators\nremain required. The all-hold, vanishing-budget target is the interacting\nground's free-energy law, which need not be a point mass at zero.\n\n## Chronology and notation of the preserved body\n\nThe independent proof froze on 2026-10-13 at 00:05:53 UTC, before its new root\ncomparison. The complete 514-line source-exposed comparison froze at 00:21:23\nUTC with SHA-256\n`92a80fb57297812f544adef693caa19a8c28c3d6e008b7093af82526301cba86`.\nRoot's 00:28:59 acceptance record and the accepted postcomparison precision\nrecord preserve conditional acceptance and distinguish the original proof's\nendpoint results from the root's sharper first-transport/CDF constants.\nThose sharper formulas are comparison evidence, not silently substituted\ninto this body. Root accepted the exact source assembly at 02:27:42 UTC,\nreusing complete body coverage and reading the new wrappers and three wording\nchanges. The new publication wrappers remain subject to exact root review.\n\nThe original title, local notation, equation labels, source names, exposure\nstatements and then-outstanding review statements below are historical text.\nThey describe the original freeze, not the exposure or review status of this\nlater assembly. The exact original and comparison remain unchanged in the\ncontent-addressed source archive. Same-family separate-context derivation\nand later source exposure do not establish model diversity, formal analytic\nverification, transitive audit or retained status. Current remains open_gate.\n\n## Preserved distribution derivation\n\n",
+          "wrapper_path": "wrappers/distribution_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 4771,
+          "bytes": 47512,
+          "first_line": 86,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 1029,
+          "sha256": "602a583852990b5c8fbe8ef2ff4e8c9c80e935499f1e4731e169a7d4e9a0e917",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/body_copies/ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+          "source_sha256": "602a583852990b5c8fbe8ef2ff4e8c9c80e935499f1e4731e169a7d4e9a0e917"
+        },
+        {
+          "byte_offset": 52283,
+          "bytes": 4462,
+          "first_line": 1030,
+          "kind": "publication_wrapper",
+          "last_line": 1082,
+          "sha256": "e357a91b8a461cbd6c0bceeb65322388160d7c422fb6b15ab4ec8be110d2d517",
+          "text": "\n## Assembly source and dependency crosswalk\n\nThe complete source body above comes from\nENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md. Its one accepted wording change is\nthe sufficient-tail qualification authorized by\nENERGY_DISTRIBUTION_POSTCOMPARISON_PRECISIONS.md\n(`54d600e491a46d3c84d9d4b3ae849d4d3019f18f5aa6e0736f3f1b606c9fdd62`).\nExact old/new text, body and full-assembly diffs, and byte/line maps accompany\nthis source packet. No displayed formula or counterexample is repaired away.\n\nThe named canonical parents have distinct roles:\n\n| Parent | Used role and limit |\n|---|---|\n| [BV and graph energy protocol](BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md) | Actual commuting energy bridge, graph preparation/work resources and regular insertion hypotheses/constructions. Its BV and Graph bodies retain their separate premises. |\n| [Prepared and driven state](PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md) | Prepared-pulse and driven-state trace comparison for the stated protocol targets and windows. It does not give arbitrary growing-time control. |\n| [Current refinement](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md) | Actual branch dispersion, placement and normalization conventions; its claim remains open_gate. |\n| [Local even continuum](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md) | Supplied continuum CAR/Fock carrier and bounded even observable conventions. |\n| [Bounded-interaction ground](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md) | Supplied ground/gap and static comparison resources used in the protocol specialization. |\n| [Adiabatic preparation](ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md) | The specified ramp resource; no unsupported parity-sector enlargement is imported. |\n| [Time-averaged energy transfer](TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md) | Named regularization input inherited through the graph source; abstract insertion results still require their explicit domain and commutator hypotheses. |\n\nCanonical hashes, the exact BV/Graph and Prepared/Driven body placements,\ntransitive inherited roles and actual reading coverage are bound in the\npacket's ACCEPTED_PARENT_SOURCE_BINDINGS.json and ACCEPTED_DEPENDENCY_MAP.json. Their byte\nchecks are bookkeeping. They are not a fresh proof of every upstream claim.\nThe already supplied model, state, measurement and protocol choices remain\ninputs. No physical detector selection, microscopic derivation of these\nchoices, total-variation endpoint, general rare-outcome limit, or automatic\ngrowing-time theorem is added by this assembly.\n\nThe negative controls keep their literal state/protocol classes. Existing\nscoped stress checks are preserved; N1/N5 global-packet obligations remain\npending, and no completed no-go packet or packet PASS is assigned.\n\nThe evidence archive retains the independent freeze, full comparison,\nread-coverage records and root acceptance chronology. No scientific/formal\nrunner, publication driver or audit was executed in assembling this note.\nThe source assembly has root acceptance with honest limits on fresh reading.\nNew publication integration and registration require the separately reviewed\nroot procedure and its actual execution receipts.\n\nThe [publication packet](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/8c88ed444f104bfd482c5886d28d7b09f68c6c1b/.claude/science/physics-loops/toe-energy-observables-20261013/README.md) binds exact archives,\ncomplete publication diffs, parent identities, review chronology and pending\nobligations. The [identity-only runner](../scripts/energy_distribution_limit_identity_2026_10_13.py) verifies bytes and\nreconstruction only; it supplies no mathematical proof, independent audit or\nretained status. Original pending/exposure statements within the body remain\nhistorical. The exact source acceptance retains its false fresh-full-note and\nfresh-full-context-diff read fields.\n\n\nReview-loop integration note: dependencies are integrated through main 160abf2a01435d2afcc3561d25a592da0c0eb4a2 and this reviewed energy/dynamics batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/distribution_appendix.md"
+        }
+      ],
+      "published_bytes": 56745,
+      "published_sha256": "e528ab0a0aed5974486690d401efee803f870f12319e35e015f9cdf99f8602b0"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/candidate/docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "9b8bb0b657386dffd6f2290d17c2f5a8da299238087a317e2edd7235516a9b63",
+      "additional_mathematical_body_edits": [],
+      "diff": "publication_diffs/weighted_current.complete-publication.diff.gz",
+      "diff_sha256": "aae0a88f1e18a3db963293ab39a69b25405fb4871e849d0cb367646b604926b4",
+      "diff_stored_sha256": "a89e49f733cb29266507f974e6edcd160f562d414c5578a40639e878e829fd45",
+      "note": "docs/ENERGY_WEIGHTED_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 5568,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 97,
+          "sha256": "dea3eaa83c214e28ab9ccc51a3817faeb4c67017cad2ff26ae0475f4bca1a496",
+          "text": "---\nclaim_id: energy_weighted_current_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Conditional energy-weighted trace-ideal bounds, actual placed weighted-density transfer, and normalized-current mean comparison, with separate common-carrier, moment, placement, coefficient and hold-generator hypotheses.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: accepted_source_with_reviewable_publication_wrapper\nrunner: scripts/energy_weighted_current_identity_2026_10_13.py\nscientific_execution: none_in_this_assembly\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: supplied-model conditional arguments with explicit provisional dependencies\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: complete separately scoped proof bodies preserved with accepted topology wording precisions\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: root publication review and integration; current-main landing checks and independent retained audit remain separate\nupstream_dependencies:\n  - energy_distribution_limit_bounded_theorem_note_2026-10-13\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n---\n\n# Energy-weighted densities and normalized-current means\n\n**Type:** bounded_theorem\n\nThis publication candidate carries three complete root-accepted conditional bodies:\nthe 632-line weighted-trace independent derivation, the 155-line native\nweighted-density addendum, and the 502-line normalized-current composition\ncheck. The first two have narrowly recorded topology-wording precisions;\nthe complete current body is byte-exact. Their local notation, equation\nlabels and distinct hypotheses are preserved. These wrappers add scope,\nchronology and provenance, not another proof or an independent check.\n\nThe first body treats positive normal states with one common nonnegative\nHamiltonian and spectral second moments, defining weighted products through\nHilbert--Schmidt factors and closures. The native body instead compares\nactual energy-weighted positive operators under the specified Fock placement\nand the actual commuting energy bridge. These operators need not have unit\ntrace. Form readouts require specified bounded coefficient operators and\ntheir stated comparison; physical detector/current identification is extra.\n\nThe current body compares the supplied normalized current using low-density\ntrace error and actual free-energy second moments. Its later free-hold result\nrequires strong commutation with each true hold generator. The same body\ngives a bounded even CAR interaction for which the current changes, so an\ninteracting hold does not acquire conservation from free conservation alone.\nIt retains the unscaled-current countercontrol as a state-class result,\nwithout claiming realization by a fixed preparation and pulse.\n\nNative half-energy weighted trace convergence and scalar Wasserstein\nquadratic convergence have no unconditional ordering by strength. Scalar\nenergy laws miss coherences; weighted convergence alone does not supply\nthe separate second-moment/graph resources used for the scalar endpoint.\nThe continuum two-particle witness and the fixed-spacing growing-number\neven witness are distinct. A compressed position example uses a specified\nbounded one-particle map; it is an effect when that map is a contraction.\nNo particular physical embedding follows merely from writing a compression.\n\n## Chronology and local notation\n\nThe independent weighted proof froze at 00:42:40 UTC on 2026-10-13, SHA-256\n`7c9df64640d1296f2dc8a6d1a522652d0f766fdad769b14ec303f38dd8b6ff23`.\nThe full 584-line source-exposed comparison froze at 00:59:09 UTC, SHA-256\n`202b44242e9f9b1d8ba8e93302745e3c91425aa4a63b6b599850cb8f12de02e7`,\nand included all 155 native lines. Root's 01:01:28 acceptance and the\nweighted precision record document conditional acceptance with scope\nqualifications, not a second independent native derivation. The complete\n502-line current check subsequently froze at 01:16:51 UTC, SHA-256\n`3ed69527ba6177ae17a66eeabe45f98591cf60a1d2f9367bfacd95306fca52f6`,\nand root's 01:24:32 record accepts its formulas, domain interpretation,\nfree-hold consequence and interacting countercontrol conditionally.\n\nThus older statements that a root was unexposed, an addendum unreviewed,\nor the current check still active are preserved history, superseded for\nreview chronology by the later exact records just identified. This new\nsource assembly was accepted by root at 02:27:42 UTC with explicit reuse of\ncomplete body coverage. The new publication wrappers remain subject to exact\nroot review. No model-diverse, formal, transitive\naudit or retained-status conclusion follows. Current remains open_gate.\n\nEquation prefixes W, N and C remain local to their bodies. J labels refer\nto the historical 133-line current root, archived as evidence; the complete\ncurrent proof is the 502-line body below. The first body's energy scale,\nthe native body's unit convention, full placed trace error and reduced\nlow-density trace error must not be silently identified. Context-specific\nsymbols such as the interaction bound and current operator keep their\noriginal meanings. The accompanying byte/line map identifies every piece.\n\n## Preserved weighted-trace independent derivation\n\n",
+          "wrapper_path": "wrappers/weighted_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 5568,
+          "bytes": 31820,
+          "first_line": 98,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 730,
+          "sha256": "4c6451db5b1cbed0009fb97a54041f34a7ff74ddbf3ca857c9a15fafb988e289",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/body_copies/ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+          "source_sha256": "4c6451db5b1cbed0009fb97a54041f34a7ff74ddbf3ca857c9a15fafb988e289"
+        },
+        {
+          "byte_offset": 37388,
+          "bytes": 467,
+          "first_line": 731,
+          "kind": "publication_wrapper",
+          "last_line": 740,
+          "sha256": "0d0db3e7dfd45bc1a17738812d12cc977ce57ef4e3ebf4325294addf7e433c89",
+          "text": "\n## Preserved native weighted-density composition\n\nThe following is the complete 155-line root addendum, originally SHA-256\n`62d98c8f61c8bb842daa3713e6fc46b08c795224073656295d517e7aa280a004`.\nIts opening review status is historical. Its later source-exposed comparison\nuses the separately frozen weighted derivation and the energy-law bridge.\nOnly its scalar-W2 comparison wording is qualified; N1--N8 are untouched.\nNo second independent native theorem is claimed.\n\n",
+          "wrapper_path": "wrappers/weighted_native_between.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 37855,
+          "bytes": 7133,
+          "first_line": 741,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 896,
+          "sha256": "5e1e1f4965ad9721707270783de3574aa8bea2df66adeb8e58c9dbbd4aa10e07",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/body_copies/NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+          "source_sha256": "5e1e1f4965ad9721707270783de3574aa8bea2df66adeb8e58c9dbbd4aa10e07"
+        },
+        {
+          "byte_offset": 44988,
+          "bytes": 369,
+          "first_line": 897,
+          "kind": "publication_wrapper",
+          "last_line": 904,
+          "sha256": "b8f43c47e04fa47cc3a3c24a2c9642fc55d862d8da240e81ff129e527010830f",
+          "text": "\n## Preserved complete normalized-current proof and composition check\n\nThe following complete 502-line body is byte-exact. It contains the actual\nlow/high estimates, bounded spectral-ratio interpretation, the free-hold\nconsequence, and the interacting countercontrol. The older 133-line root\nand matching seal are historical evidence, not a replacement for this body.\n\n",
+          "wrapper_path": "wrappers/weighted_current_between.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 45357,
+          "bytes": 23235,
+          "first_line": 905,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_corrected_body",
+          "last_line": 1406,
+          "sha256": "3ed69527ba6177ae17a66eeabe45f98591cf60a1d2f9367bfacd95306fca52f6",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/body_copies/NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md",
+          "source_sha256": "3ed69527ba6177ae17a66eeabe45f98591cf60a1d2f9367bfacd95306fca52f6"
+        },
+        {
+          "byte_offset": 68592,
+          "bytes": 4213,
+          "first_line": 1407,
+          "kind": "publication_wrapper",
+          "last_line": 1458,
+          "sha256": "55dd7894d31ed5bf0abed64063b74edbe37e9eb5c983bfecc8a073a42fc11cef",
+          "text": "\n## Assembly source and dependency crosswalk\n\nThe original weighted, native and current bodies and all matching selected\ncomparison/evidence records are preserved in the content-addressed archive.\nThe two accepted topology-wording edits are authorized by\nENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md\n(`12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c`).\nEvery original formula, domain argument and counterexample is retained.\nExact before/after edits, complete diffs and source/assembled byte maps\nare separate packet records, not new scientific validation.\n\n| Parent or earlier body | Used role and limit |\n|---|---|\n| [Energy-distribution limit](ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md) | Original E3 actual commuting-energy bridge and actual carrier/moment conventions; protocol applications inherit their distinct resources. Its scalar endpoint is not inferred from weighted trace convergence. |\n| [Current refinement](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md) | Actual dispersion/current normalization, branch coordinates and the high-coordinate reflection convention. It remains open_gate. |\n| [Local even continuum](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md) | Supplied positive free-Fock Hamiltonian, bounded fields and continuum CAR carrier used for actual state/control constructions. |\n| Weighted body above | Common-Hamiltonian interpolation and homogeneous half-energy estimate used in the later compositions; no extra independent vote is created by reuse. |\n| Native and current bodies above | Distinct source-exposed compositions with full placed versus reduced low-density trace hypotheses and their specified observables. |\n\nThe source archive retains the 584-line comparison and its three accepted\nscope qualifications. The old precision record's statement that the current\ncheck was still active is a historical timestamp, superseded by the later\n502-line freeze and root acceptance. Parent canonical hashes, exact roles,\nread coverage and evidence chronology are separately bound. This assembly\ndoes not recertify their transitive premises or promote their status.\n\nCommon-carrier coefficient convergence, the actual density/moment resources\nat a preparation stage, fixed-protocol realization of counterexamples, and\nthe true generators of subsequent holds remain application obligations.\nNo unscaled-current limit, arbitrary interacting-hold conservation,\ngrowing-time density comparison or detector realization is added here.\n\nThe negative controls keep their literal state/protocol classes. Existing\nscoped stress checks are preserved; N1/N5 global-packet obligations remain\npending, and no completed no-go packet or packet PASS is assigned.\n\nNo scientific/formal runner, publication driver or audit was executed for\nthis source assembly. The new canonical identity-only runner sources remain\nunexecuted by the preparation worker. Their later root-owned execution checks\nsource bytes and reconstruction, with zero mathematical predicates.\n\nThe [publication packet](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/8c88ed444f104bfd482c5886d28d7b09f68c6c1b/.claude/science/physics-loops/toe-energy-observables-20261013/README.md) binds exact archives,\ncomplete publication diffs, parent identities, review chronology and pending\nobligations. The [identity-only runner](../scripts/energy_weighted_current_identity_2026_10_13.py) verifies bytes and\nreconstruction only; it supplies no mathematical proof, independent audit or\nretained status. Original pending/exposure statements within the body remain\nhistorical. The exact source acceptance retains its false fresh-full-note and\nfresh-full-context-diff read fields.\n\n\nReview-loop integration note: dependencies are integrated through main 160abf2a01435d2afcc3561d25a592da0c0eb4a2 and this reviewed energy/dynamics batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/weighted_appendix.md"
+        }
+      ],
+      "published_bytes": 72805,
+      "published_sha256": "95d984f792d9fc77ab594d8dd99ccd96a5f5bf2cd5c5bcf469bb2feaaa5475df"
+    }
+  ],
+  "source_freeze_sha256": "94d6cae80356b347201074fdd0abb016b75e6b2ef4c52944ec2a01170f8f4e2f",
+  "source_stage_authorized_body_edits": {
+    "edits": [
+      {
+        "authority": "ENERGY_DISTRIBUTION_POSTCOMPARISON_PRECISIONS.md",
+        "authority_item": 2,
+        "authority_sha256": "54d600e491a46d3c84d9d4b3ae849d4d3019f18f5aa6e0736f3f1b606c9fdd62",
+        "id": "D-tail-sufficiency",
+        "new": "The uniform or varying-target endpoint\nstatements proved here assume uniform integrability of the conditional\ntarget's squared energy. On fixed compact time windows",
+        "new_sha256": "0476795bb801e8de2fb1cc7ad96824e6184abfcc553fee55197636f6e6fd0273",
+        "old": "Uniform or varying-target\nstatements require the conditional target's squared-energy tails to be\nuniformly integrable; on fixed compact time windows",
+        "old_sha256": "8f8501337b383b4bca31b3a408b71dbf6c2c9029bfef079f850481dad5332a28",
+        "original_sha256": "4ab02757ff0be403b15d41779a04ca596436bc62240dbc027c01ac6d0fb78abc",
+        "reason": "State the displayed proof's sufficient tail assumption, not a necessity for all moving-law comparisons.",
+        "source": "ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+        "source_byte_range": [
+          28528,
+          28676
+        ],
+        "source_line_range": [
+          591,
+          593
+        ]
+      },
+      {
+        "authority": "ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+        "authority_item": 3,
+        "authority_sha256": "12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c",
+        "id": "W-topology-scope",
+        "new": "The principal conclusion controls energy-relative forms and coherences\nnot determined by scalar energy laws. No unconditional ordering with scalar\nWasserstein W2 convergence is asserted.",
+        "new_sha256": "1d480a8a9f1e547cca5b82c616a32aeea9f980d07f1566d33c487ad1a53f7804",
+        "old": "The principal conclusion is stronger than convergence of scalar energy\nlaws.",
+        "old_sha256": "77343496aac591290dfe0a15d48030f35cd61db0fa36be5a0cf4aab36c0143cc",
+        "original_sha256": "7c9df64640d1296f2dc8a6d1a522652d0f766fdad769b14ec303f38dd8b6ff23",
+        "reason": "Qualify the opening strength comparison under the accepted no-unconditional-ordering precision.",
+        "source": "ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+        "source_byte_range": [
+          425,
+          501
+        ],
+        "source_line_range": [
+          9,
+          10
+        ]
+      },
+      {
+        "authority": "ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+        "authority_item": 3,
+        "authority_sha256": "12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c",
+        "id": "N-topology-scope",
+        "new": "The W2 endpoint for scalar energy\nlaws is a separately justified conclusion under the stated moment/graph\nresources. There is no unconditional strength ordering between these\ntopologies. N6 is consistent with the known counterexamples to that endpoint.",
+        "new_sha256": "7846033cb50288c93203a63ac2a536b8def67e20732401b857dde6a2ccdcf9c0",
+        "old": "The W2 endpoint for scalar energy\nlaws remains a stronger, separately justified conclusion under graph-vector\ncomparison. N6 is consistent with the known counterexamples to that endpoint.",
+        "old_sha256": "b7e7f0ab48cb102c88a272b7cd65c5cd803af2abcc8a9cdbaa0857ac1fc2d32d",
+        "original_sha256": "62d98c8f61c8bb842daa3713e6fc46b08c795224073656295d517e7aa280a004",
+        "reason": "Remove the unconditional stronger phrasing while retaining the stated endpoint resources and counterexamples.",
+        "source": "NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+        "source_byte_range": [
+          3856,
+          4043
+        ],
+        "source_line_range": [
+          90,
+          92
+        ]
+      }
+    ],
+    "scope": "Exactly three proposed accepted-precision wording edits; no original modified, no formula edit"
+  },
+  "wrapper_changes": [
+    {
+      "diff": "publication_diffs/distribution_header.diff.gz",
+      "diff_sha256": "3bb99079509e4c2eff98efa51cf9c846fcfc92f15f6c4625736d667fb6cd5194",
+      "diff_stored_sha256": "5f1979a8448d9ddcb09634db26b90afab11a65bf4bd2f4e5835421a6f698efd7",
+      "publication": "wrappers/distribution_header.md",
+      "publication_sha256": "12ecf248e13983c3588a7f75407a2d987592e8ebe5df80148511bce48eb23583",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/wrappers/distribution_header.md",
+      "source_sha256": "7d4bc5d6ca3cc4fb64ba1951c089d8d1089f3459da3120eb274cb1b093f35fe5"
+    },
+    {
+      "diff": "publication_diffs/distribution_appendix.diff.gz",
+      "diff_sha256": "0ff0c9cea5b8c88f6180c9576967d462e07fae7d16c7cb95aef3be05dfa1f52b",
+      "diff_stored_sha256": "16e7aaadac74c63e17147e0e33e9621c34efab405e778a2c7c8d21611de57839",
+      "publication": "wrappers/distribution_appendix.md",
+      "publication_sha256": "e357a91b8a461cbd6c0bceeb65322388160d7c422fb6b15ab4ec8be110d2d517",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/wrappers/distribution_appendix.md",
+      "source_sha256": "1136039ff011a4af20a092ee18d56ad069274d10330b1adb0914192aa7f4a217"
+    },
+    {
+      "diff": "publication_diffs/weighted_header.diff.gz",
+      "diff_sha256": "3a68281fc7ba6ac6d5197b37639da2655f2b4cbba1643f1a6a289dcae3abd30f",
+      "diff_stored_sha256": "e0fe124f15b750cf368cdcd39bb06ac2c8c4f777770003659988f247729e4922",
+      "publication": "wrappers/weighted_header.md",
+      "publication_sha256": "dea3eaa83c214e28ab9ccc51a3817faeb4c67017cad2ff26ae0475f4bca1a496",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/wrappers/weighted_header.md",
+      "source_sha256": "0420757086df43de2f3b9257ba20e7ac89eff8d087f356f3fbbf0eb56e139a1a"
+    },
+    {
+      "diff": "publication_diffs/weighted_native_between.diff.gz",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "publication": "wrappers/weighted_native_between.md",
+      "publication_sha256": "0d0db3e7dfd45bc1a17738812d12cc977ce57ef4e3ebf4325294addf7e433c89",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/wrappers/weighted_native_between.md",
+      "source_sha256": "0d0db3e7dfd45bc1a17738812d12cc977ce57ef4e3ebf4325294addf7e433c89"
+    },
+    {
+      "diff": "publication_diffs/weighted_current_between.diff.gz",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "publication": "wrappers/weighted_current_between.md",
+      "publication_sha256": "b8f43c47e04fa47cc3a3c24a2c9642fc55d862d8da240e81ff129e527010830f",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/wrappers/weighted_current_between.md",
+      "source_sha256": "b8f43c47e04fa47cc3a3c24a2c9642fc55d862d8da240e81ff129e527010830f"
+    },
+    {
+      "diff": "publication_diffs/weighted_appendix.diff.gz",
+      "diff_sha256": "18cfc521617b3a20ab7339612c8450138bb92b708e7013e001fcbad436283082",
+      "diff_stored_sha256": "c4653685bed2329fd1e0dc9aba9f2c03d44e19d67b9bb3cf86339cfc53177c27",
+      "publication": "wrappers/weighted_appendix.md",
+      "publication_sha256": "55dd7894d31ed5bf0abed64063b74edbe37e9eb5c983bfecc8a073a42fc11cef",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_observables_source_preparation/wrappers/weighted_appendix.md",
+      "source_sha256": "e63f2b0e34d2465a0207d50cf300b20c8aaf75a7173a9d914982625b7c49e44e"
+    }
+  ]
+}

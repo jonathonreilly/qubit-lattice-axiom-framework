@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-13T04:39:32.178423+00:00",
+  "branch": "physics-loop/toe-corrected-dynamics-20261013",
+  "head": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "physics-loop/toe-energy-observables-20261013\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref",
+        "--verify",
+        "--quiet",
+        "refs/heads/physics-loop/toe-corrected-dynamics-20261013"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "switch",
+        "-c",
+        "physics-loop/toe-corrected-dynamics-20261013",
+        "8c88ed444f104bfd482c5886d28d7b09f68c6c1b"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Switched to a new branch 'physics-loop/toe-corrected-dynamics-20261013'\n"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "physics-loop/toe-corrected-dynamics-20261013\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "science_changed": false
+}

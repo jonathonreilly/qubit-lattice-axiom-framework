@@ -1,0 +1,53 @@
+{
+  "body_composition": [
+    {
+      "body": "ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+      "new_math_in_assembly": false,
+      "output_claim": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "role": "Independent conditional derivation and all stated endpoint/protocol/counterexample resources"
+    },
+    {
+      "body": "ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+      "new_math_in_assembly": false,
+      "output_claim": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "role": "Common-H weighted interpolation; actual even-Fock boundary controls use Current/Local"
+    },
+    {
+      "body": "NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+      "new_math_in_assembly": false,
+      "output_claim": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "role": "Source-exposed composition of separately frozen weighted theorem and distribution E3, under full placed trace comparison"
+    },
+    {
+      "body": "NORMALIZED_CURRENT_TRANSFER_COMPOSITION_CHECK.md",
+      "new_math_in_assembly": false,
+      "output_claim": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+      "role": "Complete current composition proof, low-density trace comparison, actual current normalization, free-hold result and interacting countercontrol"
+    }
+  ],
+  "comparison_roles": {
+    "ENERGY_DISTRIBUTION_LIMIT_CROSSCHECK.md": "Complete comparison evidence; sharper W1/CDF refinements are not substituted into the original body",
+    "ENERGY_WEIGHTED_TRACE_CROSSCHECK.md": "Complete source-exposed weighted and native comparison; not a second native derivation",
+    "NORMALIZED_CURRENT_TRANSFER_ROOT_ADDENDUM.md": "Historical 133-line evidence only; current full proof is the 502-line composition body"
+  },
+  "direct_dependencies": {
+    "energy_distribution_limit_bounded_theorem_note_2026-10-13": [
+      "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+      "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+      "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12"
+    ],
+    "energy_weighted_current_bounded_theorem_note_2026-10-13": [
+      "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+      "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "local_even_continuum_bounded_theorem_note_2026-10-12"
+    ]
+  },
+  "inherited_provisional_dependencies": "The prior 9508 canonical nodes retain their exact upstream dependencies, including their named archived noncanonical finite-energy-pulse sources. Those are neither replaced by similarly named sector notes nor newly validated here.",
+  "out_of_scope": "No new kinetic, effective-potential, Q, spatial-decay or fourth-moment candidate is assembled or made a dependency.",
+  "same_family_limit": "No model-diverse independence, formal analytic verification or transitive audit is supplied by assembly or repeated source reuse.",
+  "schema": "source-only-claim-dependency-map-v1"
+}

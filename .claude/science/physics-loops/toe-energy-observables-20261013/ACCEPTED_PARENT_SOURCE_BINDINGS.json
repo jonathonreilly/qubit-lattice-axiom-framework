@@ -1,0 +1,259 @@
+{
+  "canonical_body_lineage": [
+    {
+      "authorized_prior_wording_replacements": [],
+      "body_unique_and_byte_exact_in_canonical": true,
+      "canonical_byte_range": [
+        3839,
+        30763
+      ],
+      "canonical_line_range": [
+        69,
+        613
+      ],
+      "canonical_path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "historical_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BV_PULSE_WORK_INDEPENDENT.md",
+      "prior_piece_count": 1,
+      "scope": "mechanical lineage only; no new read or mathematical verification of these upstream bodies",
+      "transformed_body_bytes": 26924,
+      "transformed_body_sha256": "0af3a48b0604b6dfd530dfc901d81e789a89ef65b89d43391ed351f6f0ac95d9"
+    },
+    {
+      "authorized_prior_wording_replacements": [
+        {
+          "authority": "GRAPH_NATIVE_POSTCOMPARISON_CORRECTIONS.md",
+          "bytes": 203,
+          "kind": "authorized wording replacement",
+          "output_byte_end_exclusive": 44830,
+          "output_byte_start": 44627,
+          "output_lines": [
+            895,
+            897
+          ],
+          "piece_sha256": "b5b298409cedaec37666eba64cce0934fb87ffa19b5bfdd1f0d2a24b84b2852d",
+          "replaced_sha256": "857900b6e7f048a0e8a08d5562ae9de741bd83ff53e9c6a7e9180ef020d3a195",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+          "source_byte_end_exclusive": 14065,
+          "source_byte_start": 13975,
+          "source_lines": [
+            278,
+            279
+          ]
+        }
+      ],
+      "body_unique_and_byte_exact_in_canonical": true,
+      "canonical_byte_range": [
+        31172,
+        77228
+      ],
+      "canonical_line_range": [
+        624,
+        1511
+      ],
+      "canonical_path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "historical_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+      "prior_piece_count": 3,
+      "scope": "mechanical lineage only; no new read or mathematical verification of these upstream bodies",
+      "transformed_body_bytes": 46056,
+      "transformed_body_sha256": "b0dbfbfa6c9020bb9c88d5b8f16c968863da99835592b0f9638335eec938a795"
+    },
+    {
+      "authorized_prior_wording_replacements": [],
+      "body_unique_and_byte_exact_in_canonical": true,
+      "canonical_byte_range": [
+        3780,
+        36489
+      ],
+      "canonical_line_range": [
+        68,
+        715
+      ],
+      "canonical_path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "historical_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md",
+      "prior_piece_count": 1,
+      "scope": "mechanical lineage only; no new read or mathematical verification of these upstream bodies",
+      "transformed_body_bytes": 32709,
+      "transformed_body_sha256": "0096ba164586386693fe506863da477224d1327febe6afbe861bd70417a4ea68"
+    },
+    {
+      "authorized_prior_wording_replacements": [
+        {
+          "authority": "DRIVEN_STATE_POSTCOMPARISON_CLARIFICATION.md",
+          "bytes": 65,
+          "kind": "authorized wording replacement",
+          "output_byte_end_exclusive": 38059,
+          "output_byte_start": 37994,
+          "output_lines": [
+            747,
+            747
+          ],
+          "piece_sha256": "111856f7b7feaad9167ea29d7569bb0b8a82ae30f87b1a3a4b8c4e1fd0828216",
+          "replaced_sha256": "dabc16b7f9230c9e5f6e1cf410d9fa1b6b1295fdc71574558e0d4be97e4a5375",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "source_byte_end_exclusive": 1644,
+          "source_byte_start": 1608,
+          "source_lines": [
+            28,
+            28
+          ]
+        }
+      ],
+      "body_unique_and_byte_exact_in_canonical": true,
+      "canonical_byte_range": [
+        36903,
+        70422
+      ],
+      "canonical_line_range": [
+        726,
+        1349
+      ],
+      "canonical_path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "historical_source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+      "prior_piece_count": 3,
+      "scope": "mechanical lineage only; no new read or mathematical verification of these upstream bodies",
+      "transformed_body_bytes": 33519,
+      "transformed_body_sha256": "f14e80f2628aeb5fce225abb13a2fedf04a82d43db36c670f480d70c2cf12a4d"
+    }
+  ],
+  "canonical_parents": [
+    {
+      "bytes": 82120,
+      "canonical_path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "claim_id": "bv_graph_energy_protocol_bounded_theorem_note_2026-10-13",
+      "lines": 1581,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Direct distribution parent: actual commuting bridge, graph preparation and bounded BV work; regular-insertion constructions retain distinct hypotheses.",
+      "sha256": "32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342",
+      "status_changed": false
+    },
+    {
+      "bytes": 75306,
+      "canonical_path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "claim_id": "prepared_driven_state_bounded_theorem_note_2026-10-13",
+      "lines": 1420,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Direct distribution application parent: prepared-pulse/driven-state density and target comparison; fixed protocol and stated windows, not arbitrary growing time.",
+      "sha256": "c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9",
+      "status_changed": false
+    },
+    {
+      "bytes": 31832,
+      "canonical_path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "lines": 601,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+        "energy_weighted_current_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "prior complete same-agent read reused at exact unchanged identity",
+      "role": "Direct actual-carrier/current-normalization parent for both notes; all existing open_gate limitations remain.",
+      "sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "status_changed": false
+    },
+    {
+      "bytes": 36376,
+      "canonical_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "lines": 731,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+        "energy_weighted_current_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "prior complete same-agent read reused at exact unchanged identity",
+      "role": "Direct supplied continuum CAR/Fock carrier and bounded even field conventions for both notes.",
+      "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "status_changed": false
+    },
+    {
+      "bytes": 61231,
+      "canonical_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+      "lines": 1199,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "prior complete same-agent read reused at exact unchanged identity",
+      "role": "Distribution static ground/gap and interacting orbit resources; not required for the abstract common-Hamiltonian interpolation theorem.",
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "status_changed": false
+    },
+    {
+      "bytes": 69122,
+      "canonical_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+      "lines": 1445,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Distribution specified preparation/ramp constants, also inherited through the protocol note; no stronger sector assumption imported.",
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "status_changed": false
+    },
+    {
+      "bytes": 38862,
+      "canonical_path": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12",
+      "lines": 806,
+      "new_direct_dependents": [
+        "energy_distribution_limit_bounded_theorem_note_2026-10-13"
+      ],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Distribution named regularization construction through the graph parent; abstract insertion theorems still assume their stated domain and commutator bounds.",
+      "sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "status_changed": false
+    },
+    {
+      "bytes": 51903,
+      "canonical_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "lines": 962,
+      "new_direct_dependents": [],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Inherited through prior canonical protocol/carrier parents only; no new direct derivation or revalidation.",
+      "sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "status_changed": false
+    },
+    {
+      "bytes": 63908,
+      "canonical_path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "excitation_pulse_response_bounded_theorem_note_2026-10-12",
+      "lines": 1356,
+      "new_direct_dependents": [],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Inherited response baseline through BV/prepared/driven parents only; not silently used as a density-comparison theorem.",
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "status_changed": false
+    },
+    {
+      "bytes": 53292,
+      "canonical_path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+      "lines": 1044,
+      "new_direct_dependents": [],
+      "read_coverage": "canonical identity/frontmatter and prior source-assembly lineage only; no fresh complete mathematical read in this task",
+      "role": "Inherited correlation parent through BV/Graph lineage only; no replacement for actual density and graph resources.",
+      "sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "status_changed": false
+    }
+  ],
+  "same_packet_parent": {
+    "candidate_path": "candidate/docs/ENERGY_DISTRIBUTION_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "dependent": "energy_weighted_current_bounded_theorem_note_2026-10-13",
+    "parent": "energy_distribution_limit_bounded_theorem_note_2026-10-13",
+    "role": "Actual commuting-energy bridge E3 and actual moment/carrier conventions; native full-trace and current low-trace assumptions remain different.",
+    "sha256": "7fbe15c5037fe15a79d84ded88217812683f6fc787b1da66f861b7e6a3a38eef"
+  },
+  "schema": "source-only-parent-bindings-v1",
+  "scope": "Exact current canonical pins and mechanical prior-body placement, not full transitive proof validation. Current remains open_gate."
+}

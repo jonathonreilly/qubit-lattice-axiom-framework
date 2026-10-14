@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-10-13T06:48:32.726113+00:00",
+  "ended_at": "2026-10-13T06:48:53.109322+00:00",
+  "source_unit_sha256": "7a91d2c2453495f648365d49d1393a536574f9e28bd651ce908aab064b195e86",
+  "runner_sha256": "f25b2174668c6c8e2e26f6e55bdb9dfa76aa8a1cd08c896235986c5871a3de39",
+  "cache_path": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/logs/runner-cache/analytic_fluid_cosmology_2026_10_13.txt",
+  "cache_sha256": "5cf14bd0b8f22432f142778c183705823530ddc16cc8c132db3ca4ce75a4b7aa",
+  "cache_status": "fresh",
+  "result": {
+    "runner": "scripts/analytic_fluid_cosmology_2026_10_13.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "full off-orbit cases: 72\nfree-mode rows: 25\ntracking families: 12\ndisturbed histories: 48\nInterpretation: conditional classical construction; finite checks supplement the written proof; no independent empirical test.\nFrame witness: H_E=2, H_J=-1, E=6 for a=nu=H_v=1 and u_dot=-3 at zero fields and fluids.\nTOTAL: PASS=1497 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 20.360294103622437,
+    "timeout_sec": 180,
+    "live_log": "/Users/jonBridger/.codex/worktrees/analytic-fluid-construction-20261013/New Axioms Lets Go/logs/runner-cache/.in-progress/analytic_fluid_cosmology_2026_10_13.txt"
+  }
+}

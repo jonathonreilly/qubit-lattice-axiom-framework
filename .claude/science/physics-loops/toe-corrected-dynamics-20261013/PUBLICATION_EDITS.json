@@ -1,0 +1,223 @@
+{
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/candidate/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "04057047b9b8082d1ffe5be371125a1a9f14f5e9c474f48350777d73f07b16dc",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/dispersion.publication.diff.gz",
+      "diff_sha256": "eb8b10c5b3ae2ca3c0cf58cc7105f95f3a7663f6330d914685b05611931a8a62",
+      "diff_stored_sha256": "084cfab790889798cd39a470f31efdd9ee01fe3d7b82dd0ac456a7ccd371d59f",
+      "key": "dispersion",
+      "note": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3912,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 67,
+          "sha256": "b6cafb9bc2e0d51de7475616c2a10c0432258521f992fa3748ec1c599aea6b35",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/dispersion_header.md",
+          "source_sha256": "551708f6dc8f07b21ae038bc7e8217d057a23f064617720d9a2dc9da70918f37",
+          "text": "---\nclaim_id: corrected_dispersion_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Supplied massive one-dimensional chain: fixed finite positive kinetic corrections, uniform smooth-cell commutators and domains, and full placed-density comparison with the exact compressed potential on stated growing time windows.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: publication_prepared_exact_root_review_pending\nrunner: scripts/corrected_dispersion_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied model, polarization, ordinary cells and fixed finite smooth interaction; named provisional parents remain conditional and Current remains open_gate.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Accepted ordinary conditional proof assembled without a mathematical-body edit; source assembly accepted; new publication wrappers await root review.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers, identity tools and driver before any runtime or publication action.\"\nupstream_dependencies:\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n---\n\n# Corrected dispersion: publication wrapper\n\nClaim type: bounded_theorem\n\nThis projection preserves the accepted 1049-line proof apart from two explicit LaTeX whitespace repairs; the original archived proof has\nSHA-256 `402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d`.\nOnly this wrapper and the closing source/status appendix are new. The exact\nsource assembly was accepted by ordinary root review. These publication\nwrappers and the identity-only tool remain subject to separate exact review;\nno scientific execution or retained-status decision occurs in preparation.\n\nThe theorem fixes positive mass and velocity, the supplied one-dimensional\ncarrier, ordinary one-sided cells, and a fixed finite selfadjoint even CAR\npolynomial in fixed smooth compact real inputs. Each kinetic order is chosen\nbefore the spacing limit. The comparison is between the entire placed actual\ndensity and low evolution of its unconditional high partial trace with high\nvacuum appended. The effective potential is the exact finite-spacing\ncompression, including its high contractions. The physical-band operator\ndomains and the different full-low effective domain keep their stated roles.\n\nThe first kinetic correction is the displayed quadratic-in-spacing term in\nthe original proof. For every fixed order J, its sufficient growing window\nhas T_c c^(2J+2) tending to zero. The proof's first interacting-mean argument\nretains its older valid power 1/(4J+7). The companion\nmoment-sensitive note\nlater obtains 1/(4J+6) under its explicit moment and commutator resources.\nThe older proof is not rewritten to contain that later argument.\n\nThis proof was recovered after a transport failure; the recovery worker saw\nthe predecessor's draft. Its exclusion of the new root candidates and its\ndisclosed earlier smooth-high exposure remain separate facts. Later complete\ncomparison and ordinary root acceptances are bound in the appendix. None\nestablishes model diversity, a fresh proof by this assembly worker, formal\nanalytic verification or a transitive audit.\n\nOriginal titles, exposure disclosures, failed routes, and statements that\nreview or potential identification was pending remain historical statements\nat their original freeze. The full accepted body begins immediately below.\n\n",
+          "wrapper_path": "wrappers/dispersion_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 3912,
+          "bytes": 45684,
+          "first_line": 68,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 1116,
+          "sha256": "f3f27dd2f50b882a1e36e28c4ebb19e08b516950810fe2e8f90c406dee349917",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/body_copies/CORRECTED_DISPERSION_INDEPENDENT.md",
+          "source_sha256": "402cbc03585ac1cf0fc32facfc18b889de09a2fc9b3bb1449dfda47beb813c0d",
+          "formatting_edits": [
+            {
+              "old": " \\boxed{\\ \n",
+              "new": " \\boxed{\n",
+              "count": 2,
+              "reason": "Remove trailing LaTeX space escapes; mathematical expression unchanged."
+            }
+          ]
+        },
+        {
+          "byte_offset": 49596,
+          "bytes": 4309,
+          "first_line": 1117,
+          "kind": "publication_wrapper",
+          "last_line": 1172,
+          "sha256": "e3d4d0e18681f615d50bd6e43e932488298779e349ddb544a53280c5a97569df",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/dispersion_appendix.md",
+          "source_sha256": "e5dbdffeba5514cad47ebc02b04531025ad4aa32445f6295cd9754afacc01043",
+          "text": "\n## Later source binding and current publication scope\n\nThe accepted 449-line source-exposed comparison has SHA-256\n`a89c8915a2f1207aaee8fbef7273494126445d4e26fbda625d418f0557a83cb6`.\nIts addendum preserves the root's sharper orthogonal-column constant, the\nextra trace-norm premise for replacing the moving initial state, and the\nlimited formal scope. Exact ordinary root acceptances are\n`CORRECTED_DISPERSION_ROOT_READ_ACCEPTANCE.json`\n(`5169f32898d6f1c1a32f7ebf297215b73e75ef5c68e20a9bc09b32b0d1e34965`)\nand `CORRECTED_DISPERSION_COMPARISON_ROOT_ACCEPTANCE.json`\n(`b045c5a86bf619ae54cffc10288a1c7db6bd3c9bcc72a50c8d1b07fb5a1d4fba`).\nThose later records do not alter any field in the older records or proof.\n\n| Direct source | Role and boundary |\n|---|---|\n| [Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md), `763082a6\u2026` | Actual symbols, current-coordinate placement and physical bands; its canonical claim remains `open_gate`. |\n| [Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md), `b5a8394a\u2026` | Real CAR normalization, free coefficient flow and even-spin interpretation. |\n| [Ground](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md), `8454f1c8\u2026` | Actual two-branch Fock carrier and rough-domain counterexample; no small-interaction ground-selection premise is imposed here. |\n| Smooth-high independent, `c69d638e\u2026` | Archived provisional smooth high-tail/off-block estimate; no invented canonical claim ID. |\n| Low-block comparison, `10aa75b1\u2026` | Archived provisional separated-block/domain mechanism; its distinct window classes and wording repairs remain explicit. |\n\nThe source packet records full hashes and exact archived bytes for every\nlisted input. The first three rows produce canonical dependency edges; the\nlast two are explicit archived provisional premises. The planned publication\nparent PR9510 is branch lineage, not a mathematical premise of this theorem.\n\nThe companion explicit-potential note addresses the separate bounded\npotential-identification obligation. Its use requires its own fixed-order\nnorm estimate and the same-kinetic Duhamel cost. It is not substituted into\nthe unchanged exact-compression theorem above. There is no order-uniform,\nexponential-time, fixed uncorrected generator, fixed-preparation sharpness,\ntime-dependent interaction or physical model-selection conclusion.\n\nHistorical scalar and positive-series Lean executions certify only their\ndisplayed ordered-field inequalities and nonnegative summable-series leaf.\nThe failed first import, successful later attempts, sources and axiom-output\nlogs remain archived. Neither those leaves nor the eight-order symbolic\ndiagnostic proves the analytic coefficient identification, domains, CAR\nconstruction or dynamics. No scientific program was executed in this assembly.\n\nThe publication packet is\n`.claude/science/physics-loops/toe-corrected-dynamics-20261013`.\nIts [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/bd831ffb14c7d7f12bf1b8165596a0db85f838ef/.claude/science/physics-loops/toe-corrected-dynamics-20261013/SOURCE_RECOVERY.md)\nbinds the accepted source freeze, exact comparisons and root records.\nThe [identity-only runner](../scripts/corrected_dispersion_identity_2026_10_13.py) checks source bytes and\nreconstruction only; it proves no coefficient, domain, commutator or\ndynamical estimate. It has not been executed during publication preparation.\nRoot accepted the exact source assembly; the new publication wrappers,\ntools and driver require separate review and actual execution receipts.\nOriginal pending/false fields remain historical and unchanged. Current\nstays `open_gate`; N1/N5 and broader no-go obligations remain pending.\nNo formal analytic, model-diverse, audit or retained status is conferred.\n\n\nReview-loop integration note: dependencies are integrated through main 160abf2a01435d2afcc3561d25a592da0c0eb4a2 and this reviewed energy/dynamics batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/dispersion_appendix.md"
+        }
+      ],
+      "published_bytes": 53905,
+      "published_sha256": "e5c68e039758eb272e4207ef80f4b2e4cacaae13e165df2335d3f7dd5e604778"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/candidate/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "a23a58d74dcb6093815003e122ed7ffdefc31b17070362ea352dc12b9b0fba59",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/potential.publication.diff.gz",
+      "diff_sha256": "864ca7fa32c003548fea43baec759b98d2cb9e8a9fc9093f528bf9749ffde82e",
+      "diff_stored_sha256": "a0a18a011b8c56917a9155e7062bd4663ac9503f068b2b3ff790c598048701da",
+      "key": "potential",
+      "note": "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3821,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 64,
+          "sha256": "e4d4e22e832679faab70b64dd14cde3b1d9eb340586816ff1615b777263c7100",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/potential_header.md",
+          "source_sha256": "aa25baeebfa5af0a598a9def9397f2d168ac2b3e4a95e83d9124ce95031f7037",
+          "text": "---\nclaim_id: explicit_effective_potential_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Supplied ordinary-cell interaction: every fixed finite explicit coefficient order has a global coefficient remainder and a bounded even selfadjoint full-low potential norm remainder; later comparison records the conditional same-kinetic replacement consequence.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: publication_prepared_exact_root_review_pending\nrunner: scripts/explicit_effective_potential_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Fixed positive mass and velocity, fixed real smooth compact inputs and finite polynomial complexity; exact supplied cells, frame, polarization and CAR conventions.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Accepted ordinary coefficient and potential theorem with later conditional comparison evidence; exact core is unchanged and source assembly is accepted and new publication wrappers await review.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers, identity tools and driver before any runtime or publication action.\"\nupstream_dependencies:\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n---\n\n# Explicit effective potential: publication wrapper\n\nClaim type: bounded_theorem\n\nAll 600 lines of the accepted core follow without alteration, SHA-256\n`8f1e13d1ca4c42bbf4e5483c4035cacf28fd2bc82ee4b470776409e7753323be`.\nThe new wrapper and appendix describe source integration and later review\nchronology. Root accepted the exact source assembly; this publication\nwrapper and identity-only tool await separate exact review. No scientific\nrerun or retained-status action occurs in publication preparation.\n\nThe order and all input smearings are fixed before the spacing limit. The\nremainder constants depend on the chosen order, positive mass and velocity,\nfinitely many weighted Sobolev norms, and the fixed polynomial prescription.\nThe maps retain the actual one-sided cell phase, half-density, frame and\narcsine argument transport. The real CAR field norm, grading and two-point\nnormalization are literal; high-vacuum contractions are included in the exact\ncompression even when they are beyond every fixed power for these inputs.\n\nThe coefficients give bounded even selfadjoint operators on the full unital\nlow Fock representation. Compact physical support of the original input does\nnot by itself make every effective coefficient exactly local. No new spatial\nclassification or propagation result is included in this milestone.\n\nThe core establishes the coefficient/potential remainder. Its original\nreservation about growing-time dynamics is preserved. The later accepted\ncomparison separately identifies the bounded same-kinetic replacement cost;\nthe appendix states that boundary without importing a kinetic domain proof\ninto this unchanged body. The companion corrected-dispersion and moment\ntheorems retain their own carrier, regularity, state and time assumptions.\n\nThe derivation excluded the then-new root candidates but was exposed to the\nearlier first-order coefficient through its allowed smooth-high sources.\nThe later comparison is source-exposed. This assembly reuses exact accepted\nsource coverage and makes no fresh independent mathematical-review claim.\nAll original pending-review statements and failure records remain historical.\n\n",
+          "wrapper_path": "wrappers/potential_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 3821,
+          "bytes": 28677,
+          "first_line": 65,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 664,
+          "sha256": "8f1e13d1ca4c42bbf4e5483c4035cacf28fd2bc82ee4b470776409e7753323be",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/body_copies/EFFECTIVE_POTENTIAL_INDEPENDENT.md",
+          "source_sha256": "8f1e13d1ca4c42bbf4e5483c4035cacf28fd2bc82ee4b470776409e7753323be",
+          "formatting_edits": []
+        },
+        {
+          "byte_offset": 32498,
+          "bytes": 4292,
+          "first_line": 665,
+          "kind": "publication_wrapper",
+          "last_line": 724,
+          "sha256": "9ed398838368c2c2acc0a109483999857e2c48c576c3d6781945b2259acfb10e",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/potential_appendix.md",
+          "source_sha256": "fb2eec57cd20915ab51ff3eb02282cd7f764fc50244effc09028ce1700532775",
+          "text": "\n## Later source binding and current publication scope\n\nThe complete 496-line comparison is fixed at\n`47d94f2b67f97b1180d2b32a1445d2afda9b3ce8322ec5a278c47d486d872160`.\nIts addendum preserves the actual arcsine band and zero extension used for\nthe coefficient map, the strict R > -K tail-cutoff condition, the\nsubnormalized-corner convention, common-observable qualification, and the\nroot diagnostic's execution after the original root seal. Its historical\nkinetic-review reservation is not edited retrospectively.\n\nExact ordinary acceptances are `EFFECTIVE_POTENTIAL_ROOT_READ_ACCEPTANCE.json`\n(`7668fdb282a1b4063b73bf9d300b81df37d6aa830ed153127a1714ffcaef91ee`)\nand `EFFECTIVE_POTENTIAL_COMPARISON_ROOT_ACCEPTANCE.json`\n(`85d4a9cc39efa47700e06034c0e76eca96c1fbe6c736b2ccdb5df3ac6c06c6a3`).\nThey accept the supplied-model analytic result and the stated conditional\ncomparison, not a transitive audit or a formal analytic certificate.\n\n| Direct source | Role and boundary |\n|---|---|\n| [Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md), `763082a6\u2026` | Exact symbols, cells, low/high branches and frame; canonical `open_gate` is unchanged. |\n| [Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md), `b5a8394a\u2026` | Literal real CAR field normalization, covariance, Fock representation and even-spin interpretation. |\n| Smooth-high independent, `c69d638e\u2026` | Archived provisional high-tail and exact graded compression support. |\n| Smooth-high comparison, `1a10d9c6\u2026` | Archived source-exposed clarification of unital extensions, support and formal selfadjointness. |\n\nOnly the first two rows have canonical direct dependency edges. The last\ntwo remain explicitly archived support rather than invented claim nodes.\nThe corrected kinetic theorem is a separate compositional resource; this\npotential theorem does not depend on it or on the publication parent PR9510.\n\nFor the full-low norm remainder at potential order N, the later comparison\nuses the same selfadjoint kinetic operator in both generators. Bounded\nDuhamel then adds at most 2 T_c C_N c^(N+1) to a normalized-density comparison.\nThis is a separate finite-resource cost; it must vanish, or satisfy the\ndesired rate, on the chosen time window. It supplies no kinetic graph domain,\nenergy-readout bound, causal support or fixed uncorrected continuum target.\nNo uniformity as N grows is asserted.\n\nThe archived finite diagnostics preserve their actual scope and failures:\nthird-order scalar coefficients, explicit covariance checks and literal\nfinite Pauli compression at the reported degrees. The first unsimplified\nmatrix assertion failed; its source and traceback precede the repaired\nsuccessful records. These controls do not prove the all-order analytic\nremainder and were not rerun in this assembly.\n\nThe publication packet is\n`.claude/science/physics-loops/toe-corrected-dynamics-20261013`.\nIts [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/bd831ffb14c7d7f12bf1b8165596a0db85f838ef/.claude/science/physics-loops/toe-corrected-dynamics-20261013/SOURCE_RECOVERY.md)\nbinds the accepted source freeze, exact comparisons and root records.\nThe [identity-only runner](../scripts/explicit_effective_potential_identity_2026_10_13.py) checks source bytes and\nreconstruction only; it proves no coefficient, domain, commutator or\ndynamical estimate. It has not been executed during publication preparation.\nRoot accepted the exact source assembly; the new publication wrappers,\ntools and driver require separate review and actual execution receipts.\nOriginal pending/false fields remain historical and unchanged. Current\nstays `open_gate`; N1/N5 and broader no-go obligations remain pending.\nNo formal analytic, model-diverse, audit or retained status is conferred.\n\n\nReview-loop integration note: dependencies are integrated through main 160abf2a01435d2afcc3561d25a592da0c0eb4a2 and this reviewed energy/dynamics batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/potential_appendix.md"
+        }
+      ],
+      "published_bytes": 36790,
+      "published_sha256": "c555498d690499aaf26b0f5eedbea6c2c573d30adef7e99afdb5e064ef22e568"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/candidate/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "a729d424ad16223df5951b508ffdaa0711afc79691c8639ec44dccffa87d97ca",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/moment.publication.diff.gz",
+      "diff_sha256": "ed107fbee2707f6255380f73defe5ed7480135f3aa49159137e57b5e96076876",
+      "diff_stored_sha256": "a6f249229fa38c7304248b441a60668f1f36dfedff862a56bb67a1735a2599d3",
+      "key": "moment",
+      "note": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3974,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 67,
+          "sha256": "6ae7668f23ee0a13640d8274d6e97c52e6aed6745fad5cfb55bc8aa66410a085",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/moment_header.md",
+          "source_sha256": "1acc5fb9ef00088f3e781d59d52529ed91b066954f4dd1e74c7fbba4568f13ad",
+          "text": "---\nclaim_id: moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13\nclaim_type: bounded_theorem\nclaim_scope: \"Supplied stationary smooth finite interaction: shifted interacting-moment control gives weighted corrected-dynamics density bounds with the exact compressed potential, fixed finite kinetic order, and explicitly limited free phase and high-discard controls.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\nassembly_status: publication_prepared_exact_root_review_pending\nrunner: scripts/moment_sensitive_corrected_dynamics_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied actual physical carrier and fixed stationary smooth CAR polynomial; uniform named spectral moments and finite commutator resources; Current remains open_gate through the corrected-dispersion parent.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Accepted ordinary moment theorem copied exactly; subsequent source-exposed comparison and phase-placement precision remain separate evidence.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers, identity tools and driver before any runtime or publication action.\"\nupstream_dependencies:\n  - corrected_dispersion_bounded_theorem_note_2026-10-13\n---\n\n# Moment-sensitive corrected dynamics: publication wrapper\n\nClaim type: bounded_theorem\n\nThe following 731-line core is byte-identical to\n`8361667a12e01be16c40b01a3fc6aff14512fb1fed6f29ccdd9cac2e4c408c09`.\nThe source assembly added scope and chronology prose and was accepted\nby ordinary root review. Its new publication wrappers and identity-only tool\nawait separate exact review; no scientific execution or retained decision\noccurs in this publication preparation.\n\nThe stationary theorem keeps the interacting spectral weight through a\nglobal integer graph comparison and bounded right-weight interpolation.\nThe independent spectral exponent and the root Hilbert--Schmidt exponent\nobey s_independent = 2 s_root. The square of the root's Hilbert--Schmidt\nmoment norm is the spectral moment Tr(rho B^(2 s_root)). The hypotheses require uniform named moment and\ncommutator resources at a fixed kinetic order, not just boundedness of an\narbitrary potential or compact support of a rough input.\n\nFor a first interacting mean, the kinetic error power is 1/(4J+6). This\nimproves the older valid normalized-window power 1/(4J+7) in the companion\ncorrected-dispersion body without altering that proof. The general theorem\nalso keeps its separate high-discard term, saturation of the kinetic power,\nand sufficient window T_c c^(2J+2) tending to zero. The target uses the exact\ncompressed W_c and the moving initial low partial density. Every actual\nspectral/moment assertion stays on the physical carrier; the full-low\neffective extension has its own maximal free domain.\n\nThe independent core was frozen before exposure to the then-new moment root\nand its phase control. Its shared earlier sources and same-family exposure\nare disclosed in the body. The later accepted comparison found that the\nseparate root control's constant physical-spinor wording is false; an\nexplicit momentum-dependent positive eigenline fixes its placement. The\n731-line core already uses a valid positive eigenline and requires no edit.\nThe original root control is archived unchanged with the exact precision\naddendum. No repaired projection of that control is inserted into this note.\n\nThe following historical pending-review statements remain unchanged. This\nassembly is integration of accepted sources, not a new independent proof or\nfresh mathematical checking established by copying and hashing.\n\n",
+          "wrapper_path": "wrappers/moment_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 3974,
+          "bytes": 33369,
+          "first_line": 68,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 798,
+          "sha256": "8361667a12e01be16c40b01a3fc6aff14512fb1fed6f29ccdd9cac2e4c408c09",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/body_copies/MOMENT_SENSITIVE_DYNAMICS_INDEPENDENT.md",
+          "source_sha256": "8361667a12e01be16c40b01a3fc6aff14512fb1fed6f29ccdd9cac2e4c408c09",
+          "formatting_edits": []
+        },
+        {
+          "byte_offset": 37343,
+          "bytes": 4066,
+          "first_line": 799,
+          "kind": "publication_wrapper",
+          "last_line": 855,
+          "sha256": "9209b3f1ff9b23ea544463e0ec35ec66a1db88334a2fc1563a16cd6d84e98978",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/moment_appendix.md",
+          "source_sha256": "82278315e0a69dd69073bbb8057ae64bd52b32f1f11853a9c0a20d8e67240c5d",
+          "text": "\n## Later source binding and current publication scope\n\nThe complete 468-line comparison is fixed at\n`a10c7c59eec9e49a597f678202b4a1f4e1f5436db879633b4b12edc5003676a2`.\nIts 63-line precision addendum is fixed at\n`8210a7e2f04f2a6fee7944b0e56c73d4433e2a9f562a5b081095712967be7a79`.\nExact ordinary acceptances are `MOMENT_SENSITIVE_DYNAMICS_ROOT_ACCEPTANCE.json`\n(`b2b572b7235b4e08f4b0de11915dbd09261074e3c339a65d0661bd915f405fbf`)\nand `MOMENT_SENSITIVE_DYNAMICS_CROSSCHECK_ROOT_ACCEPTANCE.json`\n(`306e8a7709dd40fd93188823f6e0175f6fac1961c660b40280b728fe906d88a9`).\nThe latter requires the explicit phase-placement precision; it reports no\nrepair to the displayed root M1--M13 formulas. All original records and their\nfalse/manual-read/status fields are preserved exactly in the archive.\n\nThe direct theorem parent is the [companion corrected-dispersion note](CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md),\nwhose selected core has SHA-256 `402cbc03\u2026`. Its exact 449-line comparison\n(`a89c8915\u2026`) is also archived as source and comparison evidence. The actual\ncarrier, smooth-cell norm-flow commutators, physical-band kinetic remainder\nand domain statements are inherited through that parent. Current, Local,\nGround, smooth-high and low-block are named support ancestry, not duplicated\ndirect canonical edges. No ground-state uniqueness or K < m/2 assumption is\nadded, and this moment proof's high estimate only needs its stated beta_c <= K.\n\nThe companion potential note can supply a separately budgeted same-kinetic\nbounded replacement, as the accepted comparison explains. It is not a premise\nof the exact-W_c theorem selected here, so it is a related composition rather\nthan another direct edge. No energy-observables branch ancestor, spatial,\ngraph, endpoint, preparation, BV or history result is used as a prerequisite.\n\nThe preserved comparison has a broader readout discussion. Its explicit\nsecond-moment, observable and vanishing-density-error hypotheses remain\nthere, but that discussion is not an energy-readout or endpoint theorem of\nthis canonical projection. Its unselected transitive input bodies are\nidentified in the archive's closure-limit record and are not recopied here.\n\nThe free controls concern a varying moment-bounded state class and a fixed\nfinite approximation. They do not establish realization by a fixed local\npreparation, optimality of the full joint estimate, failure of higher\ncorrections, arbitrary-generator impossibility, a time-dependent extension,\nor a selected interacting state. The older nonoptimal rate remains valid.\n\nThe publication packet is\n`.claude/science/physics-loops/toe-corrected-dynamics-20261013`.\nIts [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/bd831ffb14c7d7f12bf1b8165596a0db85f838ef/.claude/science/physics-loops/toe-corrected-dynamics-20261013/SOURCE_RECOVERY.md)\nbinds the accepted source freeze, exact comparisons and root records.\nThe [identity-only runner](../scripts/moment_sensitive_corrected_dynamics_identity_2026_10_13.py) checks source bytes and\nreconstruction only; it proves no coefficient, domain, commutator or\ndynamical estimate. It has not been executed during publication preparation.\nRoot accepted the exact source assembly; the new publication wrappers,\ntools and driver require separate review and actual execution receipts.\nOriginal pending/false fields remain historical and unchanged. Current\nstays `open_gate`; N1/N5 and broader no-go obligations remain pending.\nNo formal analytic, model-diverse, audit or retained status is conferred.\n\n\nReview-loop integration note: dependencies are integrated through main 160abf2a01435d2afcc3561d25a592da0c0eb4a2 and this reviewed energy/dynamics batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/moment_appendix.md"
+        }
+      ],
+      "published_bytes": 41409,
+      "published_sha256": "d248efdbd41f55994bb91463bee2a52c0b8b79ecf79833630daf3006cecc6229"
+    }
+  ],
+  "scope": "Original analytic content and archives preserved, with explicitly counted formatting-only LaTeX space repairs, wrapper link/provenance repairs and refreshed parent bindings. No mathematical edit or audit authority.",
+  "source_freeze_sha256": "1397b1c6397ce7db4c84716cde94a529aa51422f19942ffec3ec43db7eb46c48",
+  "wrapper_changes": [
+    {
+      "diff": "diffs/dispersion_header.diff.gz",
+      "diff_sha256": "916d72b1b61042b66afee075067a93a69e9bbd6b6a04aead65c54e1d26010e6a",
+      "diff_stored_sha256": "ff2a0bc931edd514b9df975016ff57cd2a7b88ab4186d2f8eb2b5e29a1962979",
+      "publication": "wrappers/dispersion_header.md",
+      "publication_sha256": "b6cafb9bc2e0d51de7475616c2a10c0432258521f992fa3748ec1c599aea6b35",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/dispersion_header.md",
+      "source_sha256": "551708f6dc8f07b21ae038bc7e8217d057a23f064617720d9a2dc9da70918f37"
+    },
+    {
+      "diff": "diffs/dispersion_appendix.diff.gz",
+      "diff_sha256": "50dffe16698fbbdb74837be9b39dc707e1c0a526564d424d8c2c960102e688a3",
+      "diff_stored_sha256": "2ad2216b73e43545f7a28ac904bead58a9160d592a2c132db28a1c04a49b4139",
+      "publication": "wrappers/dispersion_appendix.md",
+      "publication_sha256": "e3d4d0e18681f615d50bd6e43e932488298779e349ddb544a53280c5a97569df",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/dispersion_appendix.md",
+      "source_sha256": "e5dbdffeba5514cad47ebc02b04531025ad4aa32445f6295cd9754afacc01043"
+    },
+    {
+      "diff": "diffs/potential_header.diff.gz",
+      "diff_sha256": "b6affc6fd154d9c2e426f7458c3dc4ca591a11588aae52b33155a92a201372ee",
+      "diff_stored_sha256": "ad784e9c098188ecd6e0ca9ecb1da9a03ff7d5bf2a349ca0f88a61acb44723fc",
+      "publication": "wrappers/potential_header.md",
+      "publication_sha256": "e4d4e22e832679faab70b64dd14cde3b1d9eb340586816ff1615b777263c7100",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/potential_header.md",
+      "source_sha256": "aa25baeebfa5af0a598a9def9397f2d168ac2b3e4a95e83d9124ce95031f7037"
+    },
+    {
+      "diff": "diffs/potential_appendix.diff.gz",
+      "diff_sha256": "93e2ecf3b98b387589352db4142483be4cc97f11a827807c21e213f2c1287430",
+      "diff_stored_sha256": "27d2949f50fb3244ac44565c4a6d9f477be2221ebf418b697f9d94e094850836",
+      "publication": "wrappers/potential_appendix.md",
+      "publication_sha256": "9ed398838368c2c2acc0a109483999857e2c48c576c3d6781945b2259acfb10e",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/potential_appendix.md",
+      "source_sha256": "fb2eec57cd20915ab51ff3eb02282cd7f764fc50244effc09028ce1700532775"
+    },
+    {
+      "diff": "diffs/moment_header.diff.gz",
+      "diff_sha256": "3a6048f4ac4baad9beb89a42f55012eee7dd058329727b16d63d0943dadbc620",
+      "diff_stored_sha256": "05b702b8d4c957ac3851d6b29341b58d0c84f8791105d9f1ce3ba05118761d1a",
+      "publication": "wrappers/moment_header.md",
+      "publication_sha256": "6ae7668f23ee0a13640d8274d6e97c52e6aed6745fad5cfb55bc8aa66410a085",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/moment_header.md",
+      "source_sha256": "1acc5fb9ef00088f3e781d59d52529ed91b066954f4dd1e74c7fbba4568f13ad"
+    },
+    {
+      "diff": "diffs/moment_appendix.diff.gz",
+      "diff_sha256": "5e75fe39567904e70714ae3e948f4b96d5c90b70a87272c29c83ccaaa7fda3fc",
+      "diff_stored_sha256": "da3e44be206eb41b74784e22955f40b92633445c72980c2edc6f2bf01934b2a6",
+      "publication": "wrappers/moment_appendix.md",
+      "publication_sha256": "9209b3f1ff9b23ea544463e0ec35ec66a1db88334a2fc1563a16cd6d84e98978",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_source_assembly/wrappers/moment_appendix.md",
+      "source_sha256": "82278315e0a69dd69073bbb8057ae64bd52b32f1f11853a9c0a20d8e67240c5d"
+    }
+  ]
+}

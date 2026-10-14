@@ -1,0 +1,319 @@
+{
+  "archived_files": [
+    {
+      "bytes": 129766,
+      "path": "SCRATCH_INPUTS.json.gz",
+      "sha256": "e26d80707ed4054626e4c4cc143bdb8381f2829fff9645b599fd2fa8c9e1547b",
+      "source": "repair_history/scratch_smoke/SCRATCH_INPUTS.json",
+      "stored_bytes": 21458,
+      "stored_sha256": "690a85de2dbcabaea3b6c6b67d71d4908466f896d2a6fb2366fced6fd09cc8e4"
+    },
+    {
+      "bytes": 7461,
+      "path": "SCRATCH_SMOKE_PROGRAM.py.gz",
+      "sha256": "c6af86d88e546f67684db02b7f833d7fcef983c92c978d0604b04639fbca571c",
+      "source": "SCRATCH_IDENTITY_SMOKE.py",
+      "stored_bytes": 2829,
+      "stored_sha256": "be6722abc4b470f96ec426341e6d007d791ce4aa3db2cb4105b654e6b6b6f8ef"
+    },
+    {
+      "bytes": 1968,
+      "path": "SCRATCH_SMOKE_RESULT.json.gz",
+      "sha256": "4481e2b859cb9df259b237c888b2330500c57a23b1becc4c4afb5e1add9f00e8",
+      "source": "repair_history/scratch_smoke/RESULT.json",
+      "stored_bytes": 829,
+      "stored_sha256": "7ae24e4bf47eff522f9e0aa2af556dc2b04fc0c07bff05d9597849125091537a"
+    },
+    {
+      "bytes": 528,
+      "path": "V1_CANONICAL_CHILD_INVOCATION.json.gz",
+      "sha256": "8bcebf6ba50644c2467f3f63e878639f3a3f2832244a835d9f9fe1e96a96e46d",
+      "source": "repair_history/failed_prepare/canonical_dispersion/CHILD_INVOCATION.json",
+      "stored_bytes": 325,
+      "stored_sha256": "c9808a633f2d463c3388b0536d17faf9534c0efac9ffd55ac0011bc01e07a60a"
+    },
+    {
+      "bytes": 0,
+      "path": "V1_CANONICAL_STDERR.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/failed_prepare/canonical_dispersion/canonical.stderr",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 217,
+      "path": "V1_CANONICAL_STDOUT.txt.gz",
+      "sha256": "477c6516ceae24982916378006738c0778f8bce40eb93bf27a817692000efa8d",
+      "source": "repair_history/failed_prepare/canonical_dispersion/canonical.stdout",
+      "stored_bytes": 152,
+      "stored_sha256": "25f8b654819e08aafb8e4b8199f3c18c9c8ed0722453d296640315475b23a7c5"
+    },
+    {
+      "bytes": 47616,
+      "path": "V1_FAILED_RUNNER.py.gz",
+      "sha256": "d8ba6bc53a8fd2b1dfc7247302e11ec56b2689f35468037bcf00a086b016b277",
+      "source": "repair_history/v1_sources/corrected_dispersion_identity_2026_10_13.py",
+      "stored_bytes": 14119,
+      "stored_sha256": "9f5fb91525d068b135ab8145954009c559ab7f35c2ffd54c054d0c64307d10b5"
+    },
+    {
+      "bytes": 1800,
+      "path": "V1_FAILURE.json.gz",
+      "sha256": "f7879eff90463b74f697ce3613aaa7e7a421bf036d45846915e1f9faa018425b",
+      "source": "repair_history/failed_prepare/FAILURE.json",
+      "stored_bytes": 565,
+      "stored_sha256": "26d54138653d2b4ac343f9c129da3a0fd33588a3a5e3f1dc80a0cdcd3c00f6ce"
+    },
+    {
+      "bytes": 14836,
+      "path": "V1_IDENTITY_TOOL.template.py.gz",
+      "sha256": "9640279b14a938f850944214007102e49c8cf875fe3182be3c5e8895d197d2f0",
+      "source": "repair_history/v1_sources/IDENTITY_TOOL.template.py",
+      "stored_bytes": 4462,
+      "stored_sha256": "a47d54ba76ac0a28a46fc359735cbc6eb11080e545cb1bf408693844686b7492"
+    },
+    {
+      "bytes": 1657,
+      "path": "V1_OUTER_EXECUTION.json.gz",
+      "sha256": "511b0bd59046611e2893e5cd963581f2f0a72dc2b37f733242c8107b0e22fd32",
+      "source": "repair_history/failed_prepare_outer/EXECUTION.json",
+      "stored_bytes": 833,
+      "stored_sha256": "9d293fb4b36b4dbf63bda1809a10c8c46486f11d4cb197aa53eee6e1ad989c56"
+    },
+    {
+      "bytes": 1797,
+      "path": "V1_OUTER_STDERR.txt.gz",
+      "sha256": "c5e5bdb812a512137d9eb7d8478e98c2ba49f80ad70512cc6dd8e0f83603e293",
+      "source": "repair_history/failed_prepare_outer/stderr",
+      "stored_bytes": 492,
+      "stored_sha256": "bcd6c7b35d81042ad283964e96eae3ee327170f33c3edce102051bcda6c2fc86"
+    },
+    {
+      "bytes": 0,
+      "path": "V1_OUTER_STDOUT.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/failed_prepare_outer/stdout",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 95792,
+      "path": "V1_SOURCE_FREEZE.json.gz",
+      "sha256": "33d614ce74d9faff7e83b6569df0316f5d6deeae0d8b81423650d504ffe214dd",
+      "source": "repair_history/v1_sources/SOURCE_FREEZE.json",
+      "stored_bytes": 28602,
+      "stored_sha256": "722d61b20361c8f86e138e89957037c4696fc4d5a9f2b742b6d18546203128a4"
+    },
+    {
+      "bytes": 953,
+      "path": "scratch_outer_execution.json.gz",
+      "sha256": "8dafb7830ed63ba56900110698e5afcffcfc08a1d4b296cb8d05ab44cf05c4c7",
+      "source": "repair_history/smoke_outer/execution.json",
+      "stored_bytes": 551,
+      "stored_sha256": "7dc61bf7a2a5f42d11d12d7bd39be96e9dbb058fdcf0e994b123a2110de9d4df"
+    },
+    {
+      "bytes": 0,
+      "path": "scratch_outer_stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/smoke_outer/stderr",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 1968,
+      "path": "scratch_outer_stdout.gz",
+      "sha256": "4481e2b859cb9df259b237c888b2330500c57a23b1becc4c4afb5e1add9f00e8",
+      "source": "repair_history/smoke_outer/stdout",
+      "stored_bytes": 829,
+      "stored_sha256": "7ae24e4bf47eff522f9e0aa2af556dc2b04fc0c07bff05d9597849125091537a"
+    },
+    {
+      "bytes": 1285,
+      "path": "scratch_v1_regression_execution.json.gz",
+      "sha256": "d54032bf17a09a42823928bfdbb4b94fd8053a8e5fe7a8ae55f7067e4b7d1e2c",
+      "source": "repair_history/scratch_smoke/v1_regression/execution.json",
+      "stored_bytes": 650,
+      "stored_sha256": "6c7ab1c1912b3b1268a7320e73aa52dd1058616d575297963d1b67de4b453c2d"
+    },
+    {
+      "bytes": 217,
+      "path": "scratch_v1_regression_stderr.gz",
+      "sha256": "477c6516ceae24982916378006738c0778f8bce40eb93bf27a817692000efa8d",
+      "source": "repair_history/scratch_smoke/v1_regression/stderr",
+      "stored_bytes": 152,
+      "stored_sha256": "25f8b654819e08aafb8e4b8199f3c18c9c8ed0722453d296640315475b23a7c5"
+    },
+    {
+      "bytes": 0,
+      "path": "scratch_v1_regression_stdout.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/scratch_smoke/v1_regression/stdout",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 1287,
+      "path": "scratch_v2_dispersion_execution.json.gz",
+      "sha256": "2e33ca24cb8d0c251663c871a4b74e436c1e2511adb017e02c3eb382c221c455",
+      "source": "repair_history/scratch_smoke/v2_dispersion/execution.json",
+      "stored_bytes": 652,
+      "stored_sha256": "77d4dd79b26c67fe76e9d295e40b8f04ba15acbe910e0f360be9bcd6ed0955a3"
+    },
+    {
+      "bytes": 0,
+      "path": "scratch_v2_dispersion_stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/scratch_smoke/v2_dispersion/stderr",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 32680,
+      "path": "scratch_v2_dispersion_stdout.gz",
+      "sha256": "910c58afc408d6e614d2b1b7f5d2a889663fe72d5554ddd608fca7cd7432f13e",
+      "source": "repair_history/scratch_smoke/v2_dispersion/stdout",
+      "stored_bytes": 9626,
+      "stored_sha256": "b663944040074ed9972a2280b5d5cb93265a2c75cad7c24e23d5b8d164d0bed9"
+    },
+    {
+      "bytes": 1302,
+      "path": "scratch_v2_moment_execution.json.gz",
+      "sha256": "913c0f8388cfd85fd8de0eee4a4291f39b0204c99b91b708ac47927312b9d0d5",
+      "source": "repair_history/scratch_smoke/v2_moment/execution.json",
+      "stored_bytes": 656,
+      "stored_sha256": "b05c25af164a61a5277c1ccf935fd59ddf0cef7d69eab981d5a27c9fd8e228ff"
+    },
+    {
+      "bytes": 0,
+      "path": "scratch_v2_moment_stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/scratch_smoke/v2_moment/stderr",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 32695,
+      "path": "scratch_v2_moment_stdout.gz",
+      "sha256": "2e98707860c303668fdf596c79d6a07a4c3f6a26a3bb9988c4521b43e464ae64",
+      "source": "repair_history/scratch_smoke/v2_moment/stdout",
+      "stored_bytes": 9638,
+      "stored_sha256": "7fd444ca0bfb32593e1880a9c372f838dfd597c494d750bae5cc17499a8d1cff"
+    },
+    {
+      "bytes": 1295,
+      "path": "scratch_v2_potential_execution.json.gz",
+      "sha256": "84ab86d3b1d457524825a4aee58481308c22a441b5bd990d6fd1e919c0bd03fd",
+      "source": "repair_history/scratch_smoke/v2_potential/execution.json",
+      "stored_bytes": 657,
+      "stored_sha256": "7fd29222274590dcd1e537700e7ac2b5df841923ec2c718b853270a6962dd14d"
+    },
+    {
+      "bytes": 0,
+      "path": "scratch_v2_potential_stderr.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "repair_history/scratch_smoke/v2_potential/stderr",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 32688,
+      "path": "scratch_v2_potential_stdout.gz",
+      "sha256": "5420e9a3a9491ccb9f149cbffb7090073fb520defee5467042ab3ace272dd133",
+      "source": "repair_history/scratch_smoke/v2_potential/stdout",
+      "stored_bytes": 9631,
+      "stored_sha256": "7f4e9ea7f257ff6ad05bc37e82046097d627f03cea8a2610c533f5154e687785"
+    },
+    {
+      "bytes": 1872,
+      "path": "V2_IDENTITY_TOOL.template.diff.gz",
+      "sha256": "16bb18bbe6f0644468bf98c6461d16a6c0c17bca225c5a811b7b5396e29f810e",
+      "source": "Exact V1-to-V2 template diff",
+      "stored_bytes": 707,
+      "stored_sha256": "8cbfc57a1997cf1d760094bfa86fe4497c165d58aa7a17143e76402516916822"
+    }
+  ],
+  "audit_verdict": false,
+  "canonical_execution_in_repair": false,
+  "driver_sha256": "a3156a9c622301d9c37b1ac38c78ba8e72d698d86c6420c17c1974a5cb8015af",
+  "driver_unchanged": true,
+  "editable_prompt_files_changed": [],
+  "graph_scope_changed": false,
+  "historical_status_scope": "Unchanged SOURCE_REVIEW_STATUS.json and source/wrapper statements describe V1 preparation. V1 actual failure and later V2 scratch execution are separate records; old pending/false fields are not rewritten.",
+  "mathematical_core_or_wrapper_changes": [],
+  "mathematical_predicates_executed": 0,
+  "original_convention_sources": [
+    {
+      "bytes": 11170,
+      "path": "CHECK_SOURCE_INTEGRITY.py",
+      "sha256": "954b69fb01dccbd675f89c93fb511e0606614065bee05eb46f86c3331fbdcbf9"
+    },
+    {
+      "bytes": 13247,
+      "path": "ASSEMBLE_SOURCE_NOTES.py",
+      "sha256": "6afad8a650d6faf56eea661399aec7e1010051d788744786064567f170ff3166"
+    },
+    {
+      "bytes": 4649,
+      "path": "REPAIR_WRAPPER_ASSEMBLY.py",
+      "sha256": "95c03770fbb7a1e40cc8fd4993df19dbef5c211fdb50a5dccfa8c9369879bf1e"
+    }
+  ],
+  "publication_and_wrapper_diff_convention": "Unchanged full context and original publication-specific labels.",
+  "repair": "Restore accepted-source assembly diff labels original/<source_body_order[0]> to canonical_path with n=3; also verify exact /dev/null to canonical_path proposed-new-file diff with n=3.",
+  "schema": "corrected-dynamics-tooling-repair-v2",
+  "scratch_smoke": {
+    "audit_verdict": false,
+    "cache_api_calls": 0,
+    "canonical_identity_processes_executed": 0,
+    "canonical_writes": 0,
+    "git_commands": 0,
+    "mathematical_predicates_executed": 0,
+    "prepare_verify_executed": false,
+    "root_canonical_runtime": "pending",
+    "root_source_review": "pending",
+    "scientific_programs_executed": 0,
+    "scope": "Scratch source-integrity smoke only; no canonical prepare, verify, cache, graph or Git execution.",
+    "scratch_identity_processes_executed": 4,
+    "scratch_inputs_unchanged": true,
+    "successful_v2_identity_processes": 3,
+    "utc": "2026-10-13T05:47:59.185214+00:00",
+    "v1_regression_error": "Complete accepted assembly diff differs",
+    "v1_regression_exit_code": 1,
+    "v2_successes": [
+      {
+        "exit_code": 0,
+        "key": "dispersion",
+        "runner": "scripts/corrected_dispersion_identity_2026_10_13.py",
+        "runner_sha256": "6c628a1b5e1376b3765452273d1ec00912dc79c53b78802e7fa1f558372de360",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "910c58afc408d6e614d2b1b7f5d2a889663fe72d5554ddd608fca7cd7432f13e"
+      },
+      {
+        "exit_code": 0,
+        "key": "potential",
+        "runner": "scripts/explicit_effective_potential_identity_2026_10_13.py",
+        "runner_sha256": "4fda0de2c5d8271339eb30da8ed33e0d27a757c414c37b4e4cde1c3ab3beddd3",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "5420e9a3a9491ccb9f149cbffb7090073fb520defee5467042ab3ace272dd133"
+      },
+      {
+        "exit_code": 0,
+        "key": "moment",
+        "runner": "scripts/moment_sensitive_corrected_dynamics_identity_2026_10_13.py",
+        "runner_sha256": "fce41c5952017671f2f926e334a3ab85e52289a083ae0b1687d829b33b5c5b5f",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "2e98707860c303668fdf596c79d6a07a4c3f6a26a3bb9988c4521b43e464ae64"
+      }
+    ]
+  },
+  "source_review_and_canonical_runtime": "root_owned_pending",
+  "template_after_sha256": "2d7f62f4b92d559392e1da3f6411261a15d8ecf2dbab6f1a4ce7b907dea759cb",
+  "template_before_sha256": "9640279b14a938f850944214007102e49c8cf875fe3182be3c5e8895d197d2f0",
+  "utc": "2026-10-13T05:51:30.505265+00:00",
+  "v1_actual_failure": "Complete accepted assembly diff differs",
+  "v1_actual_prepare_exit_code": 1,
+  "v1_error_stream_scope": "Canonical cache API merged child stderr into recorded canonical stdout; outer stderr is separately complete.",
+  "v1_failed_run": "20261013T053010_prepare_9c14ed338a5e",
+  "v1_freeze_sha256": "33d614ce74d9faff7e83b6569df0316f5d6deeae0d8b81423650d504ffe214dd"
+}

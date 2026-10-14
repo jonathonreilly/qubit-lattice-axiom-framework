@@ -1,0 +1,68 @@
+{
+  "edits": [
+    {
+      "authority": "ENERGY_DISTRIBUTION_POSTCOMPARISON_PRECISIONS.md",
+      "authority_item": 2,
+      "authority_sha256": "54d600e491a46d3c84d9d4b3ae849d4d3019f18f5aa6e0736f3f1b606c9fdd62",
+      "id": "D-tail-sufficiency",
+      "new": "The uniform or varying-target endpoint\nstatements proved here assume uniform integrability of the conditional\ntarget's squared energy. On fixed compact time windows",
+      "new_sha256": "0476795bb801e8de2fb1cc7ad96824e6184abfcc553fee55197636f6e6fd0273",
+      "old": "Uniform or varying-target\nstatements require the conditional target's squared-energy tails to be\nuniformly integrable; on fixed compact time windows",
+      "old_sha256": "8f8501337b383b4bca31b3a408b71dbf6c2c9029bfef079f850481dad5332a28",
+      "original_sha256": "4ab02757ff0be403b15d41779a04ca596436bc62240dbc027c01ac6d0fb78abc",
+      "reason": "State the displayed proof's sufficient tail assumption, not a necessity for all moving-law comparisons.",
+      "source": "ENERGY_DISTRIBUTION_LIMIT_INDEPENDENT.md",
+      "source_byte_range": [
+        28528,
+        28676
+      ],
+      "source_line_range": [
+        591,
+        593
+      ]
+    },
+    {
+      "authority": "ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+      "authority_item": 3,
+      "authority_sha256": "12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c",
+      "id": "W-topology-scope",
+      "new": "The principal conclusion controls energy-relative forms and coherences\nnot determined by scalar energy laws. No unconditional ordering with scalar\nWasserstein W2 convergence is asserted.",
+      "new_sha256": "1d480a8a9f1e547cca5b82c616a32aeea9f980d07f1566d33c487ad1a53f7804",
+      "old": "The principal conclusion is stronger than convergence of scalar energy\nlaws.",
+      "old_sha256": "77343496aac591290dfe0a15d48030f35cd61db0fa36be5a0cf4aab36c0143cc",
+      "original_sha256": "7c9df64640d1296f2dc8a6d1a522652d0f766fdad769b14ec303f38dd8b6ff23",
+      "reason": "Qualify the opening strength comparison under the accepted no-unconditional-ordering precision.",
+      "source": "ENERGY_WEIGHTED_TRACE_INDEPENDENT.md",
+      "source_byte_range": [
+        425,
+        501
+      ],
+      "source_line_range": [
+        9,
+        10
+      ]
+    },
+    {
+      "authority": "ENERGY_WEIGHTED_POSTCOMPARISON_PRECISIONS.md",
+      "authority_item": 3,
+      "authority_sha256": "12d9aa4e7acd40c2a62fa5b7595234f6221b726078051c818869538acd28a64c",
+      "id": "N-topology-scope",
+      "new": "The W2 endpoint for scalar energy\nlaws is a separately justified conclusion under the stated moment/graph\nresources. There is no unconditional strength ordering between these\ntopologies. N6 is consistent with the known counterexamples to that endpoint.",
+      "new_sha256": "7846033cb50288c93203a63ac2a536b8def67e20732401b857dde6a2ccdcf9c0",
+      "old": "The W2 endpoint for scalar energy\nlaws remains a stronger, separately justified conclusion under graph-vector\ncomparison. N6 is consistent with the known counterexamples to that endpoint.",
+      "old_sha256": "b7e7f0ab48cb102c88a272b7cd65c5cd803af2abcc8a9cdbaa0857ac1fc2d32d",
+      "original_sha256": "62d98c8f61c8bb842daa3713e6fc46b08c795224073656295d517e7aa280a004",
+      "reason": "Remove the unconditional stronger phrasing while retaining the stated endpoint resources and counterexamples.",
+      "source": "NATIVE_ENERGY_WEIGHTED_TRANSFER_ROOT_ADDENDUM.md",
+      "source_byte_range": [
+        3856,
+        4043
+      ],
+      "source_line_range": [
+        90,
+        92
+      ]
+    }
+  ],
+  "scope": "Exactly three proposed accepted-precision wording edits; no original modified, no formula edit"
+}

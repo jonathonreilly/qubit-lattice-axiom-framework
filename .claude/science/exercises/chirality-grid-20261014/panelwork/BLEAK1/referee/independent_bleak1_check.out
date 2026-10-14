@@ -1,0 +1,25 @@
+Vertex/O(p^2) extraction:
+U^a_mm=(1/2-delta_am) sin(k_a)
+U^a_mn=-[delta_am shat(k_n)c_m+delta_an shat(k_m)c_n]/2 (m!=n)
+finite-difference error (K2 and D2) = 8.34e-14
+max spatial-TT projection of U = 2.22e-16
+off-shell Ward-identity error = 8.88e-16
+D2 starts quadratically in the external momentum, so its first derivative U is unchanged.
+
+Exact algebra after the k4 average:
+d(q) = 1/(16Q) + sum_i(shat(q_i)^4)/(32Q^2) - 1/6 + Q/sqrt(Q(Q+4))/6
+IBP: <tau/Q^2> = 1 - 2 W3; hypercubic symmetry: <Q R> = 3/4
+Therefore <d> = W3/16 + (1-2W3)/32 - 1/6 + (3/4)/6
+              = 1/32 - 1/24 = -1/96
+M= 32  <d>=-0.010552669807  W3=0.250557639776  <QR>=0.750000011686  <tau/Q^2>=0.494532557635
+M= 64  <d>=-0.010484594939  W3=0.251644494256  <QR>=0.750000000729  <tau/Q^2>=0.494537302868
+M=128  <d>=-0.010450621594  W3=0.252187773226  <QR>=0.750000000046  <tau/Q^2>=0.494537895619
+M=256  <d>=-0.010433642976  W3=0.252459394188  <QR>=0.750000000003  <tau/Q^2>=0.494537969700
+Richardson <d> = -0.010416666693; exact -1/96 = -0.010416666667
+-16*pi*<d> = 0.523598776904; exact pi/6 = 0.523598775598
+
+Static normalization:
+V(r) = -2 lambda M1 M2/(4 pi r), so G_N = lambda/(2 pi)
+lambda=kappa_R^2/4 gives kappa_R^2=8 pi G_N
+kappa_can=2 kappa_R (coupling -kappa_can h.T/2), hence kappa_can^2=32 pi G_N
+S_int=-kappa_R^2 D/2=-4 pi G_N D; 8 exchange contractions give -32 pi G_N D

@@ -107,8 +107,8 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Worker's interpretation: OPEN.** The triggers are light-adjacent softening forced by the filter's zero (proof skeleton). The pre-registered light-attribution metric misfires for the self-conjugate sector.
 - **Holds either way (checked):**
   - a unique SU(4)-singlet ground state everywhere;
-  - no static order growth beyond the control;
-  - the mirror corner stays gapped;
+  - no static order growth beyond the control [referee: too strong; read "no static-LRO threshold violation"];
+  - the mirror corner stays gapped [referee: not established];
   - the cube gap is 1.31/1.65 against 1.0 on-site.
 - **Next:** T-G1′ (2+1D at finite W), gated on SIGN-1.
 - Memory overrun of ~1.1 GB for ~10 s, recorded.
@@ -119,7 +119,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - converged negative on the open 2×2 block (smooth test functions).
 - **Mechanism:** the cusp coefficient becomes a flux kernel with a negative direction in 3D.
 - **Fix:** a positive-type profile with the same support restores pure-gauge RP. That is law data, not an axiom change, but it does not rescue the overlap.
-- **Correction owed:** K2c and its referee's "3D/4D suggested" → "3D not RP".
+- **Correction owed:** K2c and its referee's "3D/4D suggested" → "3D not RP" [referee: for the stated finite geometries; 4D still suggested].
 - **Memory incidents:** a 5.2 GB run was killed by the supervisor; later watchdog kills were recorded.
 
 **UV-1 amendment (2026-10-14 ~21:21Z, written before any UV-1 run).**
@@ -145,7 +145,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - Branch B′ gives ×2–93.
   - Lemmas: staggered reflection makes on-site terms flavour-blind; circulant sectors are strain-blind.
 - **R2: Z4-EXACT** (conditions: no ν^cν^c term; symmetric mirror phase). In fact X2 has an exact U(1)_{B−L}: Dirac neutrinos, zero 0νββ, no n–n̄ oscillation. The named breaking operator is ν^cν^c.
-- **R3: PDK-SAFE-AT-PLANCK.** The floor is 1/a ≳ 2e16 GeV in the worst case. The skeptic's rate formula overstates by about 4800×.
+- **R3: PDK-SAFE-AT-PLANCK.** The floor is 1/a ≳ 2e16 GeV in the worst case. The skeptic's rate formula overstates by about 4800× [referee: 580–8100× across the packet's ranges].
 - **Biggest open hazard:** the flavour-pattern Lorentz-violation anisotropy from corner-selective Yukawas (suggested, not computed), which needs a lattice Yukawa loop.
 
 **COL-1 result (21:57Z; same family; referee launched).**
@@ -170,3 +170,34 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Not covered:** the gauged model (no G_SM-invariant 2-plane in the 10).
 - **Scope:** sign-freeness does not decide symmetric gapping; the sign-free region is the GPR-risk region.
 - **Memory:** cap breach recorded (586 MiB resident).
+
+**Referee verdicts on NT-2, NT-3, BLEAK-1 and OBS-1 (codex gpt-5.6-sol, xhigh; recorded 22:10Z; each returned 21:22–21:55Z). All four: CONFIRMED WITH CORRECTIONS.**
+- **NT-2 → PG3-NEG confirmed.**
+  - The referee independently reproduced T22 (exact inertia (5,1), vector value −27/12500·(2π)⁻³, every 0 < δ < π/4) and O12 (inertia (15,1), δ < π/3).
+  - O22 is confirmed as quadrature-converged (λ_min −1.6082e-3), not as a certified analytic bound.
+  - **Correction (scope):** pure compact U(1), β_g = 0, flat hard indicator, link reflection, and the stated finite geometries. This disproves universal finite-lattice RP. It does not prove non-RP for every geometry, the infinite-volume state, or 4D.
+  - The K2c admissible-boundary residual is closed for finite 3D; 4D stays suggested.
+  - **Record:** the runner's final-message output overwrote the referee's own 168-line record. It was recovered verbatim from the run log as REFEREE_RECORD_FULL.md, and the runner was fixed (v2).
+- **NT-3 → literal TG1-BROKEN confirmed; the worker's OPEN does not follow the fixed wording.**
+  - The referee's independent block solver reproduced Δ₆, S₆ and the cube gaps 1.312 / 1.648.
+  - **Corrections:**
+    - "no static growth beyond the control" is too strong: the mirror ratios 1.346 and 1.323 exceed C1's 1.219, though they stay under the 1.4 threshold;
+    - "87–99.95% near-light" covers only F★ and F_hi; F_lo is at 59–67%;
+    - "**the mirror corner stays gapped**" is **not established**: the resolved levels capture 0–0.1% of the spectral weight.
+  - A filter zero gives an exactly free mode in the unrestricted space. That is not a proof of a vanishing restricted gap for every filter; the softening is observed and naturally explained only for these three 1D filters.
+  - **Consequence:** NT-3 neither kills nor defuses GPR. G1 and G2 stay open (K1:202).
+- **BLEAK-1 → LEAK-PLANCK confirmed.**
+  - The referee independently reproduced I_s − I₄ = −1/96 and δc = (π/6)G/a², and confirmed that K2 gives the same row for the stated off-shell reason.
+  - **Corrections:**
+    - "a seagull would cancel it" is not proved: a seagull can change or be tuned to cancel the row;
+    - the deleted zero mode is a stated prescription, so another prescription can add an anisotropic O(p²) term;
+    - the result is a bare, prescription-dependent exchange coefficient, not a gauge-complete observable;
+    - at a = ℓ_P it is formal (G/a² = 1);
+    - the Wilson comparator (0.8497) is diagnostic only.
+- **OBS-1 → R1 numerics, R2 and R3 confirmed with narrowed scope.**
+  - **R1:** fresh N = 40 runs reproduce L₀, the leak and K, and the clock slopes and bounds check against Lange et al. and NANOGrav 15-yr. **Corrections:**
+    - FLAV-NEAR holds only for the registered E_g, U(1), bilinear-proxy completion; the complete X2/SM reading stays OPEN (T₂g, the non-abelian chiral loop and the mirror self-energy are uncomputed);
+    - the staggered-reflection lemma fails once the non-on-site mirror proxy is inserted;
+    - the circulant lemma does not suppress the CKM-broken down sector.
+  - **R2:** confirmed conditionally. **Correction:** the protection is the manifest cutoff symmetry [H_X2, Q_X] = 0, not anomaly freedom; electroweak breaking leaves U(1)_{B−L} (X + 4Y), not bare X.
+  - **R3:** arithmetic confirmed (Γ formula, Super-K 2.4e34 yr, 1/a ≳ 1.95e16 GeV at c_eff = 10). **Corrections:** the "4800×" holds only at the representative point (580–8100× across ranges); PDK-SAFE is conditional on the assumed c_eff ≤ 10, and X2's leakage coefficient is not derived.

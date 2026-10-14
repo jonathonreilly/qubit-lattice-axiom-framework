@@ -1,0 +1,23 @@
+{
+  "broad_formula_exclusions": false,
+  "exclusions": [
+    {
+      "canonical_line": 370,
+      "context": "is a bounded operator, uniformly in L and R. Take Q_K=1_[0,K](H) and\n",
+      "exact_line": "is a bounded operator, uniformly in L and R. Take Q_K=1_[0,K](H) and\n",
+      "note": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+      "raw_match": "](H)",
+      "reason": "Exact unchanged accepted inline spectral-indicator notation; classify only this pinned occurrence, without editing source or broadly skipping formulas."
+    },
+    {
+      "canonical_line": 745,
+      "context": "Let F_L=1_[0,L](H). For fixed finite-energy rho,\n",
+      "exact_line": "Let F_L=1_[0,L](H). For fixed finite-energy rho,\n",
+      "note": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+      "raw_match": "](H)",
+      "reason": "Exact unchanged accepted inline spectral-indicator notation; classify only this pinned occurrence, without editing source or broadly skipping formulas."
+    }
+  ]
+}

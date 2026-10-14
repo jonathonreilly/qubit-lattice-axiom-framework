@@ -1,0 +1,32 @@
+{
+  "programs": [
+    {
+      "convention": "unified diff n=3 splitlines(True) no normalization",
+      "diff_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/program_diffs/INTEGRITY_CORE.diff",
+      "diff_raw_sha256": "f06b6242dadd583ad73fbab09fb685883f0bd0edb2a54297533debfccdc58ce5",
+      "new": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/INTEGRITY_CORE.py",
+      "new_sha256": "db287be3df6d37cf1161a5843175dcadfeeeecf0cee55202571ae56bc12ec9c1",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/procedural_template/IDENTITY_TOOL.template.py",
+      "template_sha256": "4ee636aaac338bace7ac33f5bebd214859e474af89e455e4c1ae1763085cb8fd"
+    },
+    {
+      "convention": "unified diff n=3 splitlines(True) no normalization",
+      "diff_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/program_diffs/prepare_verify_energy_tail.diff",
+      "diff_raw_sha256": "de581871d876434ec59347831c092ba73887c7532d7583e083859b79a7d356e9",
+      "new": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/prepare_verify_energy_tail.py",
+      "new_sha256": "4ee0f3efbf893e1a4c86e90ed8471e5ad6ea8ec8429a9c43ef47c708f15802f9",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/procedural_template/prepare_verify_multitime_kinetic_energy.py",
+      "template_sha256": "8fb447232dc949022fea3cfb665ff056352a7672d9ffbfa89c921c132d3edbae"
+    },
+    {
+      "convention": "unified diff n=3 splitlines(True) no normalization",
+      "diff_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/program_diffs/CHECK_PREPARATION_SOURCES.diff",
+      "diff_raw_sha256": "f8c6c5e809176b2520eae1d948cf20942d972b72a709bb6a24cc712ffaab19b6",
+      "new": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/CHECK_PREPARATION_SOURCES.py",
+      "new_sha256": "a07e7b475cd0773a29ba01b77bb856afb476d2d024845ed1184a641e49c61199",
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/energy_tail_publication_preparation_v2/procedural_template/CHECK_PREPARATION_SOURCES.py",
+      "template_sha256": "6065a5cf1e9f8d2fe4a29f9cc649ff5828ff9e5ac35ceeef7af2f04138122649"
+    }
+  ],
+  "scope": "Proposed root program and pure identity-core source archived; all runtime pending. Full old/new identities and raw diff bytes."
+}

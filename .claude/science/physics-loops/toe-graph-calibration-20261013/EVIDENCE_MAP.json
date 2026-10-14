@@ -1,0 +1,2728 @@
+{
+  "accepted_source_package": {
+    "additional_files": [
+      {
+        "bytes": 30215,
+        "path": "FINAL_FREEZE.json",
+        "sha256": "281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035"
+      }
+    ],
+    "complete_file_count": 113,
+    "freeze_sha256": "281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035",
+    "member_count": 112,
+    "members": [
+      {
+        "bytes": 79893,
+        "lines": 1408,
+        "path": "ARCHIVE_MANIFEST.json",
+        "sha256": "8cbe9d1aff088fe913a285cebd0377c06dd6457fa60cdec24a426fdc4c7e3a0e"
+      },
+      {
+        "bytes": 1996,
+        "lines": 34,
+        "path": "CHECKPOINT.md",
+        "sha256": "378732608024a4ca95cc363e648f417ff83291e91288918e6f3cf4d8cb675c10"
+      },
+      {
+        "bytes": 56189,
+        "lines": 1134,
+        "path": "CURRENT_CANDIDATE.md",
+        "sha256": "1e75e8f37995f7ba00a1b7b630d3957d61b1d12ad265da55acd2f7969ae11a89"
+      },
+      {
+        "bytes": 11393,
+        "lines": 223,
+        "path": "CURRENT_WRAPPER.md",
+        "sha256": "9142b08d248873a5a080b63db861cc0c120abbc20a1ca929cb4ce7058e785017"
+      },
+      {
+        "bytes": 1549,
+        "lines": 31,
+        "path": "DEPENDENCIES.json",
+        "sha256": "bba061329d70df8132db966a9b4c0c60a26e14a98cc65d6f4d2971115dd21249"
+      },
+      {
+        "bytes": 2770,
+        "lines": 67,
+        "path": "EXTRACTION_MANIFEST.json",
+        "sha256": "d66b4519385ef1f1a27f9ad33194c347f565edb0a61cd00f1d40f288b680518b"
+      },
+      {
+        "bytes": 4236,
+        "lines": 75,
+        "path": "PLAN.md",
+        "sha256": "b90a2ac20d6e40b3786db4d747b2e4ecaba361e77c5972239178aab988010d2f"
+      },
+      {
+        "bytes": 272,
+        "lines": 8,
+        "path": "PLAN_SEAL.json",
+        "sha256": "eaa70ffb5097b258ea5f3adb8f078e030da1c1554e42e65c08dbf06f8e878142"
+      },
+      {
+        "bytes": 3281,
+        "lines": 53,
+        "path": "PROVENANCE.md",
+        "sha256": "cc2cec1c07c52f91debbd75d8fcb0beb224f66a4add99aab6fbf3c40e9ff70c5"
+      },
+      {
+        "bytes": 2446,
+        "lines": 45,
+        "path": "README.md",
+        "sha256": "70b4d5d4687d305abfb464ac371cae0c95da5b1d960d0d45e1cf31c46b6b2f8f"
+      },
+      {
+        "bytes": 8283,
+        "lines": 219,
+        "path": "READ_COVERAGE.json",
+        "sha256": "aa79859129d379dbc063a88894d9af269c95f95dc93a873695ab081b24471f84"
+      },
+      {
+        "bytes": 1610,
+        "lines": 28,
+        "path": "RECOVERY_RECORD.md",
+        "sha256": "87d65a22302a5ce7d62d3f2661239a3201e90728d03c61eadd9872fc29b224ba"
+      },
+      {
+        "bytes": 716,
+        "lines": 27,
+        "path": "SOURCE_CHECK_REPORT.json",
+        "sha256": "9659c7e98a9b0adb2adebf4f664d1247b1b9a20fe8939e7cda966e9c988a4752"
+      },
+      {
+        "bytes": 3173,
+        "lines": 92,
+        "path": "archive/renewal_20261013_213733/PRIOR_PROCEDURE_REUSE_CHECK.json",
+        "sha256": "6cedbb7f78df540dcb3ad0783d0a4ccf0d7ea3dc35ced63e63d8f2b047ca88ef"
+      },
+      {
+        "bytes": 1105,
+        "lines": 19,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_ACCEPTANCE.json",
+        "sha256": "6766afd47d73f3de5ab1a1a3437dac43f6a31ef734566ec51cf88876557660ad"
+      },
+      {
+        "bytes": 3921,
+        "lines": 59,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_REVIEW.md",
+        "sha256": "8c604896ad341e03ce6e41b032ea5e0de49406f50a2b980d0a55ceb8e0647bc3"
+      },
+      {
+        "bytes": 310,
+        "lines": 8,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_COMPARISON_READ.json",
+        "sha256": "792aa57e12713e9a495013377712e4e19a6baf3b0ecba8964afead4d0a936eb1"
+      },
+      {
+        "bytes": 604,
+        "lines": 14,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_INDEPENDENT_READ.json",
+        "sha256": "be11ebdafedda61c15d7c4b824f93345129228f0e49fa64b2c5449b4fa977d66"
+      },
+      {
+        "bytes": 2088,
+        "lines": 31,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+        "sha256": "ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e"
+      },
+      {
+        "bytes": 361,
+        "lines": 8,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+        "sha256": "b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb"
+      },
+      {
+        "bytes": 10370,
+        "lines": 190,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+        "sha256": "9dc7b9ee2b5b97ed8029feaf605252628f55b62adfa0aaf4b683589a0d03be35"
+      },
+      {
+        "bytes": 10503,
+        "lines": 192,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+        "sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd"
+      },
+      {
+        "bytes": 4272,
+        "lines": 56,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+        "sha256": "f4033168aff259b221ffeb5fbb494497fe963a76d47b920392a45f84d5b47cad"
+      },
+      {
+        "bytes": 995,
+        "lines": 17,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+        "sha256": "33c2e05a1ef7399788aa39c62a6f0e1a8ebee9025e95968d7511740149937257"
+      },
+      {
+        "bytes": 646,
+        "lines": 8,
+        "path": "archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+        "sha256": "ee6c954a70896a42331922e5c09e61ee2bfe4e93ad7e79082425f44ad928ee1e"
+      },
+      {
+        "bytes": 931,
+        "lines": 15,
+        "path": "archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+        "sha256": "08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717"
+      },
+      {
+        "bytes": 2526,
+        "lines": 41,
+        "path": "archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+        "sha256": "aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc"
+      },
+      {
+        "bytes": 1452,
+        "lines": 21,
+        "path": "archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+        "sha256": "59f1556ca167c1dddf79100db146688197021016612efb6d146ca96a79b63eb8"
+      },
+      {
+        "bytes": 15357,
+        "lines": 306,
+        "path": "archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+        "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639"
+      },
+      {
+        "bytes": 1472,
+        "lines": 26,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/CHECKPOINT.md",
+        "sha256": "12186c204d8e681589cf2ab8a09a1cb73d083af4b9c0458d8e58c5d541355a0c"
+      },
+      {
+        "bytes": 9881,
+        "lines": 194,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/COMPARISON.md",
+        "sha256": "bd6c964690749aa4b8e77d60933b433dc60b94438773d31008ea94136718f96e"
+      },
+      {
+        "bytes": 4440,
+        "lines": 131,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/FINAL_FREEZE.json",
+        "sha256": "bac0408f35b9cf594a25cf7b4665bcaf665dec904cb7ec8547875f8f278ee7c1"
+      },
+      {
+        "bytes": 1831,
+        "lines": 32,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/PLAN.md",
+        "sha256": "0cef2d198030f1bc03c6c2e68bcbe347afc32e349b9fa0d02f056b0e75e1acb5"
+      },
+      {
+        "bytes": 197,
+        "lines": 6,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/PLAN_SEAL.json",
+        "sha256": "ec220eb1ea7534b0c3a47d1341a61ef56470f2d30b5954b100246cb0a911de2c"
+      },
+      {
+        "bytes": 4715,
+        "lines": 94,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/SOURCE_INVENTORY.json",
+        "sha256": "eb2f567128361d7df35d857e459de2f4241e9d8d24bdc038139da3e8936566c6"
+      },
+      {
+        "bytes": 2088,
+        "lines": 31,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+        "sha256": "ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e"
+      },
+      {
+        "bytes": 361,
+        "lines": 8,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+        "sha256": "b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb"
+      },
+      {
+        "bytes": 10370,
+        "lines": 190,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+        "sha256": "9dc7b9ee2b5b97ed8029feaf605252628f55b62adfa0aaf4b683589a0d03be35"
+      },
+      {
+        "bytes": 10503,
+        "lines": 192,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+        "sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd"
+      },
+      {
+        "bytes": 4272,
+        "lines": 56,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+        "sha256": "f4033168aff259b221ffeb5fbb494497fe963a76d47b920392a45f84d5b47cad"
+      },
+      {
+        "bytes": 995,
+        "lines": 17,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+        "sha256": "33c2e05a1ef7399788aa39c62a6f0e1a8ebee9025e95968d7511740149937257"
+      },
+      {
+        "bytes": 646,
+        "lines": 8,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+        "sha256": "ee6c954a70896a42331922e5c09e61ee2bfe4e93ad7e79082425f44ad928ee1e"
+      },
+      {
+        "bytes": 13152,
+        "lines": 289,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/DERIVATION.md",
+        "sha256": "c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3"
+      },
+      {
+        "bytes": 4585,
+        "lines": 125,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/FINAL_FREEZE.json",
+        "sha256": "63d08b56c307655ca7efa7bdbaa1ce939cb9f276cdad9db9244959833e99e11f"
+      },
+      {
+        "bytes": 3470,
+        "lines": 63,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/PLAN_SEAL.json",
+        "sha256": "cf468b13b94f5d018d45a413021bce821679d24d2f79b17fb6eb3afcb09d61b5"
+      },
+      {
+        "bytes": 4063,
+        "lines": 66,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/SOURCE_INVENTORY.json",
+        "sha256": "716ca09f94be328a3d4737429f5fdfafb1067cb3ee2b1e15d31cd05ab01354bd"
+      },
+      {
+        "bytes": 8556,
+        "lines": 192,
+        "path": "archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+        "sha256": "5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b"
+      },
+      {
+        "bytes": 733,
+        "lines": 17,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/CHECKPOINT.json",
+        "sha256": "20c8a80a81bce8ec837fcad692dfe684e31de20e5702da36239c54431ff042e4"
+      },
+      {
+        "bytes": 7539,
+        "lines": 218,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/FINAL_FREEZE.json",
+        "sha256": "d04087d5917a309b420b62cb65ae3e3ff498dbab561699041096f24fd49c87d6"
+      },
+      {
+        "bytes": 315,
+        "lines": 11,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/IDENTITY_RECEIPT.json",
+        "sha256": "d6389a7cfdcde7b421aee74199b495e07f820ae1a98282c81c3f90196f692650"
+      },
+      {
+        "bytes": 1844,
+        "lines": 28,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/PLAN.json",
+        "sha256": "07de4ab36c60a7c1ec72f31c894776887f2d635729dabaab6810abb98757da3c"
+      },
+      {
+        "bytes": 186,
+        "lines": 6,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/PLAN_SEAL.json",
+        "sha256": "5943f162c0fdb5b3324e05673f45e470c696358cfe9f3529038d2de748bd2365"
+      },
+      {
+        "bytes": 1746,
+        "lines": 27,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/READ_COVERAGE.json",
+        "sha256": "dc75e20491d5946143d72a588aa8dfbf98eb96f6b64545f87c642052fab43bcf"
+      },
+      {
+        "bytes": 6711,
+        "lines": 108,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/REVIEW.md",
+        "sha256": "336ac3f2db70f783d5666e178570cbf527caf6da66244ad17cc9539daa1ab1b8"
+      },
+      {
+        "bytes": 9040,
+        "lines": 169,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/SOURCE_MANIFEST.json",
+        "sha256": "caf5feab721596a1ac5033a6cbd248437be281d5b207f3d281cd42245493519c"
+      },
+      {
+        "bytes": 11335,
+        "lines": 206,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/evidence/ANALYTIC_EVIDENCE.md",
+        "sha256": "24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020"
+      },
+      {
+        "bytes": 2088,
+        "lines": 31,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+        "sha256": "ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e"
+      },
+      {
+        "bytes": 361,
+        "lines": 8,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+        "sha256": "b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb"
+      },
+      {
+        "bytes": 10370,
+        "lines": 190,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+        "sha256": "9dc7b9ee2b5b97ed8029feaf605252628f55b62adfa0aaf4b683589a0d03be35"
+      },
+      {
+        "bytes": 10503,
+        "lines": 192,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+        "sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd"
+      },
+      {
+        "bytes": 4272,
+        "lines": 56,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+        "sha256": "f4033168aff259b221ffeb5fbb494497fe963a76d47b920392a45f84d5b47cad"
+      },
+      {
+        "bytes": 995,
+        "lines": 17,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+        "sha256": "33c2e05a1ef7399788aa39c62a6f0e1a8ebee9025e95968d7511740149937257"
+      },
+      {
+        "bytes": 646,
+        "lines": 8,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+        "sha256": "ee6c954a70896a42331922e5c09e61ee2bfe4e93ad7e79082425f44ad928ee1e"
+      },
+      {
+        "bytes": 931,
+        "lines": 15,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+        "sha256": "08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717"
+      },
+      {
+        "bytes": 2526,
+        "lines": 41,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+        "sha256": "aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc"
+      },
+      {
+        "bytes": 1452,
+        "lines": 21,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+        "sha256": "59f1556ca167c1dddf79100db146688197021016612efb6d146ca96a79b63eb8"
+      },
+      {
+        "bytes": 15357,
+        "lines": 306,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+        "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639"
+      },
+      {
+        "bytes": 15357,
+        "lines": 306,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/0_POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+        "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639"
+      },
+      {
+        "bytes": 2526,
+        "lines": 41,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/1_POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+        "sha256": "aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc"
+      },
+      {
+        "bytes": 1452,
+        "lines": 21,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/2_POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+        "sha256": "59f1556ca167c1dddf79100db146688197021016612efb6d146ca96a79b63eb8"
+      },
+      {
+        "bytes": 931,
+        "lines": 15,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/3_POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+        "sha256": "08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717"
+      },
+      {
+        "bytes": 18174,
+        "lines": 390,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/4_DERIVATION.md",
+        "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96"
+      },
+      {
+        "bytes": 14394,
+        "lines": 239,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/5_COMPARISON.md",
+        "sha256": "7cad04708bee61868948400ef781aeb9c9cfbb6289b2cc4403fc7bd38dbb3905"
+      },
+      {
+        "bytes": 19343,
+        "lines": 412,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/6_DECISIVE_ANALYTIC_EVIDENCE.md",
+        "sha256": "28a3ebd6283a051a1ac4a8df2cf10c1e94bf4a682ff1e1d84be2e119b453f8fd"
+      },
+      {
+        "bytes": 2088,
+        "lines": 31,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/7_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+        "sha256": "ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e"
+      },
+      {
+        "bytes": 361,
+        "lines": 8,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/8_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+        "sha256": "b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb"
+      },
+      {
+        "bytes": 14394,
+        "lines": 239,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_comparison/COMPARISON.md",
+        "sha256": "7cad04708bee61868948400ef781aeb9c9cfbb6289b2cc4403fc7bd38dbb3905"
+      },
+      {
+        "bytes": 19343,
+        "lines": 412,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+        "sha256": "28a3ebd6283a051a1ac4a8df2cf10c1e94bf4a682ff1e1d84be2e119b453f8fd"
+      },
+      {
+        "bytes": 18174,
+        "lines": 390,
+        "path": "archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_independent/DERIVATION.md",
+        "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96"
+      },
+      {
+        "bytes": 1863,
+        "lines": 32,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/CHECKPOINT.md",
+        "sha256": "a409cc81ff8cc51e20a38a1c5c8963d98c1e43ae2eb43c0327cb4ca8b88854c5"
+      },
+      {
+        "bytes": 13152,
+        "lines": 289,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/DERIVATION.md",
+        "sha256": "c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3"
+      },
+      {
+        "bytes": 4585,
+        "lines": 125,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/FINAL_FREEZE.json",
+        "sha256": "63d08b56c307655ca7efa7bdbaa1ce939cb9f276cdad9db9244959833e99e11f"
+      },
+      {
+        "bytes": 3400,
+        "lines": 59,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/PLAN.md",
+        "sha256": "5123f69db72250d6f31802c9cf5726ca5626e92d6575109d394a3241d01693ab"
+      },
+      {
+        "bytes": 3470,
+        "lines": 63,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/PLAN_SEAL.json",
+        "sha256": "cf468b13b94f5d018d45a413021bce821679d24d2f79b17fb6eb3afcb09d61b5"
+      },
+      {
+        "bytes": 4063,
+        "lines": 66,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/SOURCE_INVENTORY.json",
+        "sha256": "716ca09f94be328a3d4737429f5fdfafb1067cb3ee2b1e15d31cd05ab01354bd"
+      },
+      {
+        "bytes": 8556,
+        "lines": 192,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+        "sha256": "5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b"
+      },
+      {
+        "bytes": 931,
+        "lines": 15,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+        "sha256": "08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717"
+      },
+      {
+        "bytes": 2526,
+        "lines": 41,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+        "sha256": "aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc"
+      },
+      {
+        "bytes": 15357,
+        "lines": 306,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/postmeasurement_energy_ui_comparison/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+        "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639"
+      },
+      {
+        "bytes": 18174,
+        "lines": 390,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/postmeasurement_energy_ui_independent/DERIVATION.md",
+        "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96"
+      },
+      {
+        "bytes": 21357,
+        "lines": 356,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_comparison/COMPARISON.md",
+        "sha256": "bffd2dae09faddf59620b99f3570d7c5fccecb57aa7254ffa91d9834dfd3bbe1"
+      },
+      {
+        "bytes": 15037,
+        "lines": 309,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+        "sha256": "6f2709624acb8a40f9878af1c0826fa4a0330c1caf760e43e4f74b42594d2b21"
+      },
+      {
+        "bytes": 10867,
+        "lines": 223,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_fresh_independent/ANALYTIC_EVIDENCE.md",
+        "sha256": "bd2f45c3e7d1098e704d9de776bd9a2d5eafd8194f7da49befcf5154868ace4d"
+      },
+      {
+        "bytes": 36169,
+        "lines": 702,
+        "path": "archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_fresh_independent/DERIVATION.md",
+        "sha256": "2c29d9731c8f43c2441dc52f158042a321ccc0dabd85136fd3855449e157032f"
+      },
+      {
+        "bytes": 15357,
+        "lines": 306,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/0_POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+        "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639"
+      },
+      {
+        "bytes": 2526,
+        "lines": 41,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/1_POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+        "sha256": "aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc"
+      },
+      {
+        "bytes": 1452,
+        "lines": 21,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/2_POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+        "sha256": "59f1556ca167c1dddf79100db146688197021016612efb6d146ca96a79b63eb8"
+      },
+      {
+        "bytes": 931,
+        "lines": 15,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/3_POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+        "sha256": "08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717"
+      },
+      {
+        "bytes": 18174,
+        "lines": 390,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/4_DERIVATION.md",
+        "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96"
+      },
+      {
+        "bytes": 14394,
+        "lines": 239,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/5_COMPARISON.md",
+        "sha256": "7cad04708bee61868948400ef781aeb9c9cfbb6289b2cc4403fc7bd38dbb3905"
+      },
+      {
+        "bytes": 19343,
+        "lines": 412,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/6_DECISIVE_ANALYTIC_EVIDENCE.md",
+        "sha256": "28a3ebd6283a051a1ac4a8df2cf10c1e94bf4a682ff1e1d84be2e119b453f8fd"
+      },
+      {
+        "bytes": 2088,
+        "lines": 31,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/7_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+        "sha256": "ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e"
+      },
+      {
+        "bytes": 361,
+        "lines": 8,
+        "path": "archive/resume_20261012/energy_graph_perturbation_root_probe/8_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+        "sha256": "b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb"
+      },
+      {
+        "bytes": 14394,
+        "lines": 239,
+        "path": "archive/resume_20261012/postmeasurement_energy_ui_comparison/COMPARISON.md",
+        "sha256": "7cad04708bee61868948400ef781aeb9c9cfbb6289b2cc4403fc7bd38dbb3905"
+      },
+      {
+        "bytes": 19343,
+        "lines": 412,
+        "path": "archive/resume_20261012/postmeasurement_energy_ui_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+        "sha256": "28a3ebd6283a051a1ac4a8df2cf10c1e94bf4a682ff1e1d84be2e119b453f8fd"
+      },
+      {
+        "bytes": 15357,
+        "lines": 306,
+        "path": "archive/resume_20261012/postmeasurement_energy_ui_comparison/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+        "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639"
+      },
+      {
+        "bytes": 18174,
+        "lines": 390,
+        "path": "archive/resume_20261012/postmeasurement_energy_ui_independent/DERIVATION.md",
+        "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96"
+      },
+      {
+        "bytes": 21357,
+        "lines": 356,
+        "path": "archive/resume_20261012/threshold_protocol_comparison/COMPARISON.md",
+        "sha256": "bffd2dae09faddf59620b99f3570d7c5fccecb57aa7254ffa91d9834dfd3bbe1"
+      },
+      {
+        "bytes": 15037,
+        "lines": 309,
+        "path": "archive/resume_20261012/threshold_protocol_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+        "sha256": "6f2709624acb8a40f9878af1c0826fa4a0330c1caf760e43e4f74b42594d2b21"
+      },
+      {
+        "bytes": 10867,
+        "lines": 223,
+        "path": "archive/resume_20261012/threshold_protocol_fresh_independent/ANALYTIC_EVIDENCE.md",
+        "sha256": "bd2f45c3e7d1098e704d9de776bd9a2d5eafd8194f7da49befcf5154868ace4d"
+      },
+      {
+        "bytes": 36169,
+        "lines": 702,
+        "path": "archive/resume_20261012/threshold_protocol_fresh_independent/DERIVATION.md",
+        "sha256": "2c29d9731c8f43c2441dc52f158042a321ccc0dabd85136fd3855449e157032f"
+      },
+      {
+        "bytes": 7305,
+        "lines": 162,
+        "path": "source_check.py",
+        "sha256": "b2c0f3eac01bd89aa481aa078fb66e35a441d84db3abbc1d926319dcc8115ab3"
+      }
+    ],
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly"
+  },
+  "actual_parent_scope": "Complete canonical note plus six selected source/status records and actual PR receipt; no claim to reproduce or audit the whole parent packet.",
+  "actual_parent_source_selection": [
+    {
+      "bytes": 47782,
+      "lines": 964,
+      "role": "Complete actual direct canonical parent; full964-line source read",
+      "sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "bytes": 3681,
+      "lines": 64,
+      "role": "Complete selected parent provenance record read; not a recursive parent archive or audit",
+      "sha256": "eb6a1deea9dbc2eb68a243bcf405d3d7fa0506cd1b852fe0d3c927d5a42465f6",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/IMPORTS.json"
+    },
+    {
+      "bytes": 7606,
+      "lines": 143,
+      "role": "Complete selected parent provenance record read; not a recursive parent archive or audit",
+      "sha256": "e24bd1a9865b01a0f46d948be98316a21afa587c82076474ed0e166c1150ce6a",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/PARENT_BINDINGS.json"
+    },
+    {
+      "bytes": 3570,
+      "lines": 59,
+      "role": "Complete selected parent provenance record read; not a recursive parent archive or audit",
+      "sha256": "9f7cc514a120c48fc179588892a8c1df5a8decfc0f295ef813d255bca938114f",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/J_PRECISION.md"
+    },
+    {
+      "bytes": 2181,
+      "lines": 35,
+      "role": "Complete selected parent provenance record read; not a recursive parent archive or audit",
+      "sha256": "abe6b2d12e09a9e99ba60686508dcd7bced057054eb237c3e6c4359618a65a27",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/SOURCE_REVIEW_STATUS.json"
+    },
+    {
+      "bytes": 2672,
+      "lines": 42,
+      "role": "Complete selected parent provenance record read; not a recursive parent archive or audit",
+      "sha256": "3e0a367006aa1a178a72f53b679ecfe42abf64f6448f96f3ef12dbf9e5388ece",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/PUBLICATION_ROOT_ACCEPTANCE.json"
+    },
+    {
+      "bytes": 3752,
+      "lines": 56,
+      "role": "Complete selected parent provenance record read; not a recursive parent archive or audit",
+      "sha256": "f5e817850659e997a00926113aaeb270657cb247042ec5f7d7f412b186b79283",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/PUBLICATION_ASSEMBLY_REVIEW.txt"
+    },
+    {
+      "bytes": 1002,
+      "lines": 18,
+      "role": "Actual regular open parent PR creation/verification receipt",
+      "sha256": "03cc7b7b11b50fc6a84b151f51c9ac9266654855e7e627ae26d3fcebf79868e1",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_PR_CREATED.json"
+    }
+  ],
+  "objects": [
+    {
+      "bytes": 79893,
+      "lines": 1408,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/ARCHIVE_MANIFEST.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/8cbe9d1aff088fe913a285cebd0377c06dd6457fa60cdec24a426fdc4c7e3a0e.gz",
+      "sha256": "8cbe9d1aff088fe913a285cebd0377c06dd6457fa60cdec24a426fdc4c7e3a0e",
+      "stored_bytes": 5320,
+      "stored_sha256": "e1bfcff1bb1d1efd570191e77aff91ed198d512b8717b8559ac37c97d189ea2f"
+    },
+    {
+      "bytes": 1996,
+      "lines": 34,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/CHECKPOINT.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/378732608024a4ca95cc363e648f417ff83291e91288918e6f3cf4d8cb675c10.gz",
+      "sha256": "378732608024a4ca95cc363e648f417ff83291e91288918e6f3cf4d8cb675c10",
+      "stored_bytes": 1105,
+      "stored_sha256": "840487fdcc5d1a2d9cf5fc4d91684fa6d3fb3f9e4661ccc478d6f1da55384354"
+    },
+    {
+      "bytes": 56189,
+      "lines": 1134,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/CURRENT_CANDIDATE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/1e75e8f37995f7ba00a1b7b630d3957d61b1d12ad265da55acd2f7969ae11a89.gz",
+      "sha256": "1e75e8f37995f7ba00a1b7b630d3957d61b1d12ad265da55acd2f7969ae11a89",
+      "stored_bytes": 20302,
+      "stored_sha256": "f2ad780b5a65ca227d824a80ea8550d40c78450a160f30631670316e7bffc12e"
+    },
+    {
+      "bytes": 11393,
+      "lines": 223,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/CURRENT_WRAPPER.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/9142b08d248873a5a080b63db861cc0c120abbc20a1ca929cb4ce7058e785017.gz",
+      "sha256": "9142b08d248873a5a080b63db861cc0c120abbc20a1ca929cb4ce7058e785017",
+      "stored_bytes": 4771,
+      "stored_sha256": "9248b7129b01f68f5f307387e8a5f5173543577b3d88f1c64779288416953684"
+    },
+    {
+      "bytes": 1549,
+      "lines": 31,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/DEPENDENCIES.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/bba061329d70df8132db966a9b4c0c60a26e14a98cc65d6f4d2971115dd21249.gz",
+      "sha256": "bba061329d70df8132db966a9b4c0c60a26e14a98cc65d6f4d2971115dd21249",
+      "stored_bytes": 792,
+      "stored_sha256": "5ce2b88d233a2b32dad3235ae1ff310cdef0f71114a3977100e61285bd680892"
+    },
+    {
+      "bytes": 2770,
+      "lines": 67,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/EXTRACTION_MANIFEST.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/d66b4519385ef1f1a27f9ad33194c347f565edb0a61cd00f1d40f288b680518b.gz",
+      "sha256": "d66b4519385ef1f1a27f9ad33194c347f565edb0a61cd00f1d40f288b680518b",
+      "stored_bytes": 893,
+      "stored_sha256": "e8486efc1b2423465732a83eba87c05eda46b86141cc0d14dabed069d1a8e7fe"
+    },
+    {
+      "bytes": 30215,
+      "lines": 763,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/FINAL_FREEZE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035.gz",
+      "sha256": "281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035",
+      "stored_bytes": 4911,
+      "stored_sha256": "d7a9d970fbc306d8aea500a7188f8c13ba9dad7c39da470e27e0fd16a8d9e3ab"
+    },
+    {
+      "bytes": 4236,
+      "lines": 75,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/b90a2ac20d6e40b3786db4d747b2e4ecaba361e77c5972239178aab988010d2f.gz",
+      "sha256": "b90a2ac20d6e40b3786db4d747b2e4ecaba361e77c5972239178aab988010d2f",
+      "stored_bytes": 2051,
+      "stored_sha256": "11a2672f1f7c9a052a0876d2842be3475dcd69623eae48587f6bf8a9cdebb528"
+    },
+    {
+      "bytes": 272,
+      "lines": 8,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/eaa70ffb5097b258ea5f3adb8f078e030da1c1554e42e65c08dbf06f8e878142.gz",
+      "sha256": "eaa70ffb5097b258ea5f3adb8f078e030da1c1554e42e65c08dbf06f8e878142",
+      "stored_bytes": 210,
+      "stored_sha256": "85920cc053534d0c5d4c9b3e78005bf847e308ba1d7aebb00012cfacec7af68b"
+    },
+    {
+      "bytes": 3281,
+      "lines": 53,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/PROVENANCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/cc2cec1c07c52f91debbd75d8fcb0beb224f66a4add99aab6fbf3c40e9ff70c5.gz",
+      "sha256": "cc2cec1c07c52f91debbd75d8fcb0beb224f66a4add99aab6fbf3c40e9ff70c5",
+      "stored_bytes": 1684,
+      "stored_sha256": "501b14230feca3eab3a22547359c732f6b80842b941a1453cb5611dc6a6698f8"
+    },
+    {
+      "bytes": 2446,
+      "lines": 45,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/README.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/70b4d5d4687d305abfb464ac371cae0c95da5b1d960d0d45e1cf31c46b6b2f8f.gz",
+      "sha256": "70b4d5d4687d305abfb464ac371cae0c95da5b1d960d0d45e1cf31c46b6b2f8f",
+      "stored_bytes": 1276,
+      "stored_sha256": "555fd2b0ce8c6ba4635ac6a20eed3fe16905a81c6848f177fe619cacf0ef87bc"
+    },
+    {
+      "bytes": 8283,
+      "lines": 219,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/READ_COVERAGE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/aa79859129d379dbc063a88894d9af269c95f95dc93a873695ab081b24471f84.gz",
+      "sha256": "aa79859129d379dbc063a88894d9af269c95f95dc93a873695ab081b24471f84",
+      "stored_bytes": 2897,
+      "stored_sha256": "1801d831e7cd3e67eafae39cb8f377805ac2c2af2b112e5ced7777fe08a681ca"
+    },
+    {
+      "bytes": 1610,
+      "lines": 28,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/RECOVERY_RECORD.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/87d65a22302a5ce7d62d3f2661239a3201e90728d03c61eadd9872fc29b224ba.gz",
+      "sha256": "87d65a22302a5ce7d62d3f2661239a3201e90728d03c61eadd9872fc29b224ba",
+      "stored_bytes": 910,
+      "stored_sha256": "c80232aee9b23a6e02eae8d5ffec07ac904b398f121c025d1e25a74df240d764"
+    },
+    {
+      "bytes": 716,
+      "lines": 27,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/SOURCE_CHECK_REPORT.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/9659c7e98a9b0adb2adebf4f664d1247b1b9a20fe8939e7cda966e9c988a4752.gz",
+      "sha256": "9659c7e98a9b0adb2adebf4f664d1247b1b9a20fe8939e7cda966e9c988a4752",
+      "stored_bytes": 382,
+      "stored_sha256": "d03ff279de245c053ba6fb78d3311f4666ffe0265714a57efbb2efbf5bc1f7c1"
+    },
+    {
+      "bytes": 3173,
+      "lines": 92,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/renewal_20261013_213733/PRIOR_PROCEDURE_REUSE_CHECK.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/PRIOR_PROCEDURE_REUSE_CHECK.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/6cedbb7f78df540dcb3ad0783d0a4ccf0d7ea3dc35ced63e63d8f2b047ca88ef.gz",
+      "sha256": "6cedbb7f78df540dcb3ad0783d0a4ccf0d7ea3dc35ced63e63d8f2b047ca88ef",
+      "stored_bytes": 1181,
+      "stored_sha256": "e4989d188693dfbd997e2a52fd6826cb15bec88a4f9a9cc2b8493eab5677f02a"
+    },
+    {
+      "bytes": 1105,
+      "lines": 19,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/6766afd47d73f3de5ab1a1a3437dac43f6a31ef734566ec51cf88876557660ad.gz",
+      "sha256": "6766afd47d73f3de5ab1a1a3437dac43f6a31ef734566ec51cf88876557660ad",
+      "stored_bytes": 684,
+      "stored_sha256": "830b6a7d20689f1cff17930052b14c34f1f9e5650912dd89798ff1f9ac40b28e"
+    },
+    {
+      "bytes": 3921,
+      "lines": 59,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_REVIEW.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_FINAL_ROOT_REVIEW.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/8c604896ad341e03ce6e41b032ea5e0de49406f50a2b980d0a55ceb8e0647bc3.gz",
+      "sha256": "8c604896ad341e03ce6e41b032ea5e0de49406f50a2b980d0a55ceb8e0647bc3",
+      "stored_bytes": 2049,
+      "stored_sha256": "835679bb097229b4079f008d8c58cf35078bf6827e2da674c8c3939273354579"
+    },
+    {
+      "bytes": 310,
+      "lines": 8,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_COMPARISON_READ.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_COMPARISON_READ.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/792aa57e12713e9a495013377712e4e19a6baf3b0ecba8964afead4d0a936eb1.gz",
+      "sha256": "792aa57e12713e9a495013377712e4e19a6baf3b0ecba8964afead4d0a936eb1",
+      "stored_bytes": 240,
+      "stored_sha256": "c6400287c0cbb87ce334044adb42f8b7737cfd28627d12980ce5bccafb8436e5"
+    },
+    {
+      "bytes": 604,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_INDEPENDENT_READ.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_INDEPENDENT_READ.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/be11ebdafedda61c15d7c4b824f93345129228f0e49fa64b2c5449b4fa977d66.gz",
+      "sha256": "be11ebdafedda61c15d7c4b824f93345129228f0e49fa64b2c5449b4fa977d66",
+      "stored_bytes": 410,
+      "stored_sha256": "bac2d1e12de3048c22c9e22e435a86eb7a165af844074d39ed47ae6573749d5b"
+    },
+    {
+      "bytes": 2088,
+      "lines": 31,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/7_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/7_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/7_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/7_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e.gz",
+      "sha256": "ac0ad0edf0b1003c81d0a86817ffbb1c8e4f8aaf7787e1d1d47c087a49eed76e",
+      "stored_bytes": 1161,
+      "stored_sha256": "a9084374ef318e68655cc628d1e35b9fb0869e560554071449e95563d60d7104"
+    },
+    {
+      "bytes": 361,
+      "lines": 8,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/8_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/8_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/8_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/8_ENERGY_GRAPH_PERTURBATION_ROOT_PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb.gz",
+      "sha256": "b89c5a7a9eba58c6ff5e4175febd5adb53daf3c4bb69961f6940b0a7fdf08ffb",
+      "stored_bytes": 296,
+      "stored_sha256": "d7b63a1c487a2da42f10c271f3b5091b768dc9220536a9a41802c6cb75be10f8"
+    },
+    {
+      "bytes": 10370,
+      "lines": 190,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/9dc7b9ee2b5b97ed8029feaf605252628f55b62adfa0aaf4b683589a0d03be35.gz",
+      "sha256": "9dc7b9ee2b5b97ed8029feaf605252628f55b62adfa0aaf4b683589a0d03be35",
+      "stored_bytes": 4482,
+      "stored_sha256": "0428fb07e54908831d70b395792445eec464d0383e1bace99499cebac28dd680"
+    },
+    {
+      "bytes": 10503,
+      "lines": 192,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd.gz",
+      "sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd",
+      "stored_bytes": 4535,
+      "stored_sha256": "c6a8c08cb0fb5fa245610c8082a636bde4d018ec44dd364e686c3c6b0d0996b8"
+    },
+    {
+      "bytes": 4272,
+      "lines": 56,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/f4033168aff259b221ffeb5fbb494497fe963a76d47b920392a45f84d5b47cad.gz",
+      "sha256": "f4033168aff259b221ffeb5fbb494497fe963a76d47b920392a45f84d5b47cad",
+      "stored_bytes": 1021,
+      "stored_sha256": "b31023eb0c2ccd033088d55302d4717296566686e74847d7064649daf17e13bf"
+    },
+    {
+      "bytes": 995,
+      "lines": 17,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2.diff",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/33c2e05a1ef7399788aa39c62a6f0e1a8ebee9025e95968d7511740149937257.gz",
+      "sha256": "33c2e05a1ef7399788aa39c62a6f0e1a8ebee9025e95968d7511740149937257",
+      "stored_bytes": 540,
+      "stored_sha256": "414d8e9b002f1899dcff62367bcba6fc2ed953a97265d32449fabe6e282ba275"
+    },
+    {
+      "bytes": 646,
+      "lines": 8,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/ENERGY_GRAPH_PERTURBATION_ROOT_V2_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/ee6c954a70896a42331922e5c09e61ee2bfe4e93ad7e79082425f44ad928ee1e.gz",
+      "sha256": "ee6c954a70896a42331922e5c09e61ee2bfe4e93ad7e79082425f44ad928ee1e",
+      "stored_bytes": 443,
+      "stored_sha256": "48b2ae552064d74b7def763189130591131d1cadab13ca655502900228d49f61"
+    },
+    {
+      "bytes": 931,
+      "lines": 15,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/3_POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/3_POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/3_POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/3_POSTMEASUREMENT_ENERGY_UI_PRECISION_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717.gz",
+      "sha256": "08cfed6c81cbb08f09162cb6f8753307377a9728ff9a33c080f84174d02e7717",
+      "stored_bytes": 599,
+      "stored_sha256": "22479f4d0c947f281a52c1e9314a43e6c1419664c549cdb9e44a7e7eed5d2f8b"
+    },
+    {
+      "bytes": 2526,
+      "lines": 41,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/1_POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/1_POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/1_POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/1_POSTMEASUREMENT_ENERGY_UI_PRECISION_ADDENDUM.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc.gz",
+      "sha256": "aff1db27ec3abef5f0407801f40ad54ecaae4ae156e9e6303575762babb28ccc",
+      "stored_bytes": 1343,
+      "stored_sha256": "15a9f76768f063f768af559f8c92ea712fc7eb78f74ad176add6a85470611b7a"
+    },
+    {
+      "bytes": 1452,
+      "lines": 21,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/2_POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/2_POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/2_POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/2_POSTMEASUREMENT_ENERGY_UI_ROOT_ACCEPTANCE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/59f1556ca167c1dddf79100db146688197021016612efb6d146ca96a79b63eb8.gz",
+      "sha256": "59f1556ca167c1dddf79100db146688197021016612efb6d146ca96a79b63eb8",
+      "stored_bytes": 817,
+      "stored_sha256": "a84b77262ca5639118bd6e2e8b52171a6c377f8ba18d3f75a7ddad49a9245b4a"
+    },
+    {
+      "bytes": 15357,
+      "lines": 306,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/0_POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/postmeasurement_energy_ui_comparison/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/0_POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/postmeasurement_energy_ui_comparison/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/0_POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/postmeasurement_energy_ui_comparison/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/0_POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_comparison/sources/POSTMEASUREMENT_ENERGY_UI_ROOT_PROBE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639.gz",
+      "sha256": "1dfe0c91716ade6e0cfc81ac4e185fa8e0783098963e2fea2460077ba768f639",
+      "stored_bytes": 6613,
+      "stored_sha256": "bac62de859d6876ce61b631abe27c3cb9dc3a655df0183f91ff59ea59379fe59"
+    },
+    {
+      "bytes": 1472,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/CHECKPOINT.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/CHECKPOINT.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/12186c204d8e681589cf2ab8a09a1cb73d083af4b9c0458d8e58c5d541355a0c.gz",
+      "sha256": "12186c204d8e681589cf2ab8a09a1cb73d083af4b9c0458d8e58c5d541355a0c",
+      "stored_bytes": 859,
+      "stored_sha256": "2c46cba215d938f2bbcaccaf78f85f0858069f35e03a6a42d2a120e6c74dd000"
+    },
+    {
+      "bytes": 9881,
+      "lines": 194,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/bd6c964690749aa4b8e77d60933b433dc60b94438773d31008ea94136718f96e.gz",
+      "sha256": "bd6c964690749aa4b8e77d60933b433dc60b94438773d31008ea94136718f96e",
+      "stored_bytes": 4487,
+      "stored_sha256": "5c9522d1b07bb96411a48ca80d24954050e0192514e7817867bd913d3d3f0f5e"
+    },
+    {
+      "bytes": 4440,
+      "lines": 131,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/FINAL_FREEZE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/FINAL_FREEZE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/bac0408f35b9cf594a25cf7b4665bcaf665dec904cb7ec8547875f8f278ee7c1.gz",
+      "sha256": "bac0408f35b9cf594a25cf7b4665bcaf665dec904cb7ec8547875f8f278ee7c1",
+      "stored_bytes": 1660,
+      "stored_sha256": "cf782288aac11f467b1dd450a6f605c1c5ce67c88406599b549c48fa8f0d5a1d"
+    },
+    {
+      "bytes": 1831,
+      "lines": 32,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/0cef2d198030f1bc03c6c2e68bcbe347afc32e349b9fa0d02f056b0e75e1acb5.gz",
+      "sha256": "0cef2d198030f1bc03c6c2e68bcbe347afc32e349b9fa0d02f056b0e75e1acb5",
+      "stored_bytes": 1050,
+      "stored_sha256": "667ab8afd4208a89ba9ebc709da5853e8eab864cd399fd2273b1297481e33ef3"
+    },
+    {
+      "bytes": 197,
+      "lines": 6,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/ec220eb1ea7534b0c3a47d1341a61ef56470f2d30b5954b100246cb0a911de2c.gz",
+      "sha256": "ec220eb1ea7534b0c3a47d1341a61ef56470f2d30b5954b100246cb0a911de2c",
+      "stored_bytes": 169,
+      "stored_sha256": "61d58ea4c4e876d241f8e38f184b8b54cac13e7f0b3f12e2cc19706ed396bad2"
+    },
+    {
+      "bytes": 4715,
+      "lines": 94,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/SOURCE_INVENTORY.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/SOURCE_INVENTORY.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/eb2f567128361d7df35d857e459de2f4241e9d8d24bdc038139da3e8936566c6.gz",
+      "sha256": "eb2f567128361d7df35d857e459de2f4241e9d8d24bdc038139da3e8936566c6",
+      "stored_bytes": 1490,
+      "stored_sha256": "ee8d8cba487c010c86f0aa0323c8f924c23a438db1eea57b6af8ad3521330491"
+    },
+    {
+      "bytes": 13152,
+      "lines": 289,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3.gz",
+      "sha256": "c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3",
+      "stored_bytes": 5410,
+      "stored_sha256": "8f6ca821848ca768b80242deee2091aaa12f40fcba8c8363111f5d66b85cc7e3"
+    },
+    {
+      "bytes": 4585,
+      "lines": 125,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/FINAL_FREEZE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/FINAL_FREEZE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/FINAL_FREEZE.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/FINAL_FREEZE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/63d08b56c307655ca7efa7bdbaa1ce939cb9f276cdad9db9244959833e99e11f.gz",
+      "sha256": "63d08b56c307655ca7efa7bdbaa1ce939cb9f276cdad9db9244959833e99e11f",
+      "stored_bytes": 1864,
+      "stored_sha256": "5c645da4da4ff34328f436c44cc891d97b511a872f3f828bb70d1efe5f340d84"
+    },
+    {
+      "bytes": 3470,
+      "lines": 63,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/cf468b13b94f5d018d45a413021bce821679d24d2f79b17fb6eb3afcb09d61b5.gz",
+      "sha256": "cf468b13b94f5d018d45a413021bce821679d24d2f79b17fb6eb3afcb09d61b5",
+      "stored_bytes": 916,
+      "stored_sha256": "b7d74cba75ecb98b61d9c3ebe7297f852f4479749132c59d3b348bc32f7adae8"
+    },
+    {
+      "bytes": 4063,
+      "lines": 66,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/SOURCE_INVENTORY.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/SOURCE_INVENTORY.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/SOURCE_INVENTORY.json",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/SOURCE_INVENTORY.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/716ca09f94be328a3d4737429f5fdfafb1067cb3ee2b1e15d31cd05ab01354bd.gz",
+      "sha256": "716ca09f94be328a3d4737429f5fdfafb1067cb3ee2b1e15d31cd05ab01354bd",
+      "stored_bytes": 1228,
+      "stored_sha256": "34a6966e1310135194d5da2a501456d3a8e973fa1d688a189110cbcb33af2b0f"
+    },
+    {
+      "bytes": 8556,
+      "lines": 192,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_comparison/sources/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b.gz",
+      "sha256": "5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b",
+      "stored_bytes": 3827,
+      "stored_sha256": "1d67b008e4694192e70b9f737481c561b5746999c35d6c849890888f75ecd5fd"
+    },
+    {
+      "bytes": 733,
+      "lines": 17,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/CHECKPOINT.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/CHECKPOINT.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/20c8a80a81bce8ec837fcad692dfe684e31de20e5702da36239c54431ff042e4.gz",
+      "sha256": "20c8a80a81bce8ec837fcad692dfe684e31de20e5702da36239c54431ff042e4",
+      "stored_bytes": 461,
+      "stored_sha256": "3c6194824d8ac3d282b077c220b7a4378de6dfead8c84b210eaedde22c7e2984"
+    },
+    {
+      "bytes": 7539,
+      "lines": 218,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/FINAL_FREEZE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/FINAL_FREEZE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/d04087d5917a309b420b62cb65ae3e3ff498dbab561699041096f24fd49c87d6.gz",
+      "sha256": "d04087d5917a309b420b62cb65ae3e3ff498dbab561699041096f24fd49c87d6",
+      "stored_bytes": 2051,
+      "stored_sha256": "95799476e0d5ff2fe77b7579fe9512267f139d8283e9333a4eaa9ff8864a17a0"
+    },
+    {
+      "bytes": 315,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/IDENTITY_RECEIPT.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/IDENTITY_RECEIPT.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/d6389a7cfdcde7b421aee74199b495e07f820ae1a98282c81c3f90196f692650.gz",
+      "sha256": "d6389a7cfdcde7b421aee74199b495e07f820ae1a98282c81c3f90196f692650",
+      "stored_bytes": 215,
+      "stored_sha256": "022e75aa58090ce7226adb6795bb7b77c64dd706ace6e782b000c8a10215075b"
+    },
+    {
+      "bytes": 1844,
+      "lines": 28,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/PLAN.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/PLAN.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/07de4ab36c60a7c1ec72f31c894776887f2d635729dabaab6810abb98757da3c.gz",
+      "sha256": "07de4ab36c60a7c1ec72f31c894776887f2d635729dabaab6810abb98757da3c",
+      "stored_bytes": 1033,
+      "stored_sha256": "9574c1840bf40d10bf151750e27fcfc38d0cf25c1551d3b2de455aae91174ffc"
+    },
+    {
+      "bytes": 186,
+      "lines": 6,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/PLAN_SEAL.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/PLAN_SEAL.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/5943f162c0fdb5b3324e05673f45e470c696358cfe9f3529038d2de748bd2365.gz",
+      "sha256": "5943f162c0fdb5b3324e05673f45e470c696358cfe9f3529038d2de748bd2365",
+      "stored_bytes": 171,
+      "stored_sha256": "2df4819ebf056bb861408ad87bdcc35c74ba529e7d5b589115e1cc13d0a53578"
+    },
+    {
+      "bytes": 1746,
+      "lines": 27,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/READ_COVERAGE.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/READ_COVERAGE.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/dc75e20491d5946143d72a588aa8dfbf98eb96f6b64545f87c642052fab43bcf.gz",
+      "sha256": "dc75e20491d5946143d72a588aa8dfbf98eb96f6b64545f87c642052fab43bcf",
+      "stored_bytes": 1029,
+      "stored_sha256": "a505b58a0b575b77a3f6a6f809b00acf5e7388e209c402b75a66863109fd0ef9"
+    },
+    {
+      "bytes": 6711,
+      "lines": 108,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/REVIEW.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/REVIEW.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/336ac3f2db70f783d5666e178570cbf527caf6da66244ad17cc9539daa1ab1b8.gz",
+      "sha256": "336ac3f2db70f783d5666e178570cbf527caf6da66244ad17cc9539daa1ab1b8",
+      "stored_bytes": 3325,
+      "stored_sha256": "fe4a3e8e24a60ff878e146ef0dbfc872044caf229fb8573a6cf35c6be65fa2af"
+    },
+    {
+      "bytes": 9040,
+      "lines": 169,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/SOURCE_MANIFEST.json",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/SOURCE_MANIFEST.json",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/caf5feab721596a1ac5033a6cbd248437be281d5b207f3d281cd42245493519c.gz",
+      "sha256": "caf5feab721596a1ac5033a6cbd248437be281d5b207f3d281cd42245493519c",
+      "stored_bytes": 1438,
+      "stored_sha256": "ae313e0b741c9928c48824906fd848485c7331922fbc0df7836b673236c2b470"
+    },
+    {
+      "bytes": 11335,
+      "lines": 206,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/evidence/ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/evidence/ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020.gz",
+      "sha256": "24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020",
+      "stored_bytes": 5099,
+      "stored_sha256": "2ee5fe8074a8b1aea8d46ad1814138104086d9222cbe89b4df3bf78816727eac"
+    },
+    {
+      "bytes": 18174,
+      "lines": 390,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/4_DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/4_DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/4_DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/4_DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96.gz",
+      "sha256": "9597693aa9fc6aebb93de7419d4e4dbb74a6156531179fef27e6107e75cf7c96",
+      "stored_bytes": 7824,
+      "stored_sha256": "aa923ddc94bf0205c53a97b28d44eef2b9b8bfb411133833739c57f99df143c2"
+    },
+    {
+      "bytes": 14394,
+      "lines": 239,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/5_COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_comparison/COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/5_COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/postmeasurement_energy_ui_comparison/COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/5_COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_comparison/COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/5_COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_comparison/COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/7cad04708bee61868948400ef781aeb9c9cfbb6289b2cc4403fc7bd38dbb3905.gz",
+      "sha256": "7cad04708bee61868948400ef781aeb9c9cfbb6289b2cc4403fc7bd38dbb3905",
+      "stored_bytes": 6614,
+      "stored_sha256": "c1fa3189414dfc23193bcb271f422bb3616a6dc8943732e77e1b61dc689b005c"
+    },
+    {
+      "bytes": 19343,
+      "lines": 412,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/6_DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_root_probe/6_DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/postmeasurement_energy_ui_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/energy_graph_perturbation_root_probe/6_DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_exposed_review/sources/postmeasurement_energy_ui_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_root_probe/6_DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/postmeasurement_energy_ui_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/28a3ebd6283a051a1ac4a8df2cf10c1e94bf4a682ff1e1d84be2e119b453f8fd.gz",
+      "sha256": "28a3ebd6283a051a1ac4a8df2cf10c1e94bf4a682ff1e1d84be2e119b453f8fd",
+      "stored_bytes": 8391,
+      "stored_sha256": "9e1a1aaa523794ee3c97a88828593a78d6f9dbf6c20975f3302a7f29975b593e"
+    },
+    {
+      "bytes": 1863,
+      "lines": 32,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/CHECKPOINT.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/CHECKPOINT.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/a409cc81ff8cc51e20a38a1c5c8963d98c1e43ae2eb43c0327cb4ca8b88854c5.gz",
+      "sha256": "a409cc81ff8cc51e20a38a1c5c8963d98c1e43ae2eb43c0327cb4ca8b88854c5",
+      "stored_bytes": 1054,
+      "stored_sha256": "db90c98256e4fa44c16f6efdb79a7a5640cbfdae981ac0b4ed62a83905a83187"
+    },
+    {
+      "bytes": 3400,
+      "lines": 59,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/PLAN.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/PLAN.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/5123f69db72250d6f31802c9cf5726ca5626e92d6575109d394a3241d01693ab.gz",
+      "sha256": "5123f69db72250d6f31802c9cf5726ca5626e92d6575109d394a3241d01693ab",
+      "stored_bytes": 1744,
+      "stored_sha256": "d15edab01ccb1d06268acc94fe3fd644789737898fe61776a40b7ebc2d53f9bd"
+    },
+    {
+      "bytes": 21357,
+      "lines": 356,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_comparison/COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/threshold_protocol_comparison/COMPARISON.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_comparison/COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_protocol_comparison/COMPARISON.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/bffd2dae09faddf59620b99f3570d7c5fccecb57aa7254ffa91d9834dfd3bbe1.gz",
+      "sha256": "bffd2dae09faddf59620b99f3570d7c5fccecb57aa7254ffa91d9834dfd3bbe1",
+      "stored_bytes": 9067,
+      "stored_sha256": "42e185f1b46a0ea0996ab79b6fab0ff0b54889026837640cc4a1b1305c0d799e"
+    },
+    {
+      "bytes": 15037,
+      "lines": 309,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/threshold_protocol_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_protocol_comparison/evidence/DECISIVE_ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/6f2709624acb8a40f9878af1c0826fa4a0330c1caf760e43e4f74b42594d2b21.gz",
+      "sha256": "6f2709624acb8a40f9878af1c0826fa4a0330c1caf760e43e4f74b42594d2b21",
+      "stored_bytes": 6618,
+      "stored_sha256": "a3b55767c78e07bf0698145a1c5985ff9a6a4ad59035262de83ed2e3c5fe35f1"
+    },
+    {
+      "bytes": 10867,
+      "lines": 223,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_fresh_independent/ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/threshold_protocol_fresh_independent/ANALYTIC_EVIDENCE.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_fresh_independent/ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_protocol_fresh_independent/ANALYTIC_EVIDENCE.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/bd2f45c3e7d1098e704d9de776bd9a2d5eafd8194f7da49befcf5154868ace4d.gz",
+      "sha256": "bd2f45c3e7d1098e704d9de776bd9a2d5eafd8194f7da49befcf5154868ace4d",
+      "stored_bytes": 5034,
+      "stored_sha256": "bae5e42fa9f0c218018f4b5ce97621fd15d62a50e2c820782893c14772e9d699"
+    },
+    {
+      "bytes": 36169,
+      "lines": 702,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_fresh_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/threshold_protocol_fresh_independent/DERIVATION.md",
+          "role": "complete accepted assembly, including its immutable archive"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/energy_graph_perturbation_independent/sources/threshold_protocol_fresh_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_protocol_fresh_independent/DERIVATION.md",
+          "role": "original alias already pinned in accepted assembly"
+        }
+      ],
+      "path": "objects/2c29d9731c8f43c2441dc52f158042a321ccc0dabd85136fd3855449e157032f.gz",
+      "sha256": "2c29d9731c8f43c2441dc52f158042a321ccc0dabd85136fd3855449e157032f",
+      "stored_bytes": 14728,
+      "stored_sha256": "e8ec67e91d8f3e49103a779516988f7ed044f94342881453ab29810373b72ac3"
+    },
+    {
+      "bytes": 7305,
+      "lines": 162,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/source_check.py",
+          "role": "complete accepted assembly, including its immutable archive"
+        }
+      ],
+      "path": "objects/b2c0f3eac01bd89aa481aa078fb66e35a441d84db3abbc1d926319dcc8115ab3.gz",
+      "sha256": "b2c0f3eac01bd89aa481aa078fb66e35a441d84db3abbc1d926319dcc8115ab3",
+      "stored_bytes": 2430,
+      "stored_sha256": "8f9e4173f39b1c6c5639b1edaf4f8ea7e67a3acfa4ebd086a832edbef2c92eeb"
+    },
+    {
+      "bytes": 1077,
+      "lines": 20,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/README.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/e6a8b64bb1bb7dfe23a678902915d0260dde3e6a596bd056fbbb3b739fa20251.gz",
+      "sha256": "e6a8b64bb1bb7dfe23a678902915d0260dde3e6a596bd056fbbb3b739fa20251",
+      "stored_bytes": 686,
+      "stored_sha256": "86bbabcb91c74fd7fe51cd7d7d353f8c908f16b8e8ab679acdad111218a49f8c"
+    },
+    {
+      "bytes": 1512,
+      "lines": 35,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/SPECIFICATIONS.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/8cf184ff623eb5d5cbeb45fa85971aa7b0f88e88c53104679460ced97ed16087.gz",
+      "sha256": "8cf184ff623eb5d5cbeb45fa85971aa7b0f88e88c53104679460ced97ed16087",
+      "stored_bytes": 703,
+      "stored_sha256": "d3d5e89d10bbce7eb5f76f291a1c806f3ec3f18b8efce432049cb1029c536e39"
+    },
+    {
+      "bytes": 1773,
+      "lines": 36,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/PARENT_PUBLICATION_BINDING.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/c3d0f862c6afecfe61368f1be3647db6e5c2a14eaa399c0bff8fa0c28bee6a36.gz",
+      "sha256": "c3d0f862c6afecfe61368f1be3647db6e5c2a14eaa399c0bff8fa0c28bee6a36",
+      "stored_bytes": 888,
+      "stored_sha256": "9e06c477bcc9b5ffff952f3bfc5e3a25b5ce8b7d16097abfe596ac2c5ff99cab"
+    },
+    {
+      "bytes": 3589,
+      "lines": 60,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/ROOT_REPRODUCTION.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/4c7bfafd9caf1e855db8e4087fd35a1d8a5f2275d557ccefbb5e4127ba625ecc.gz",
+      "sha256": "4c7bfafd9caf1e855db8e4087fd35a1d8a5f2275d557ccefbb5e4127ba625ecc",
+      "stored_bytes": 1679,
+      "stored_sha256": "d88df986698df1d2a2edb26949d9ace98871f61845293d030d932feb13921989"
+    },
+    {
+      "bytes": 412,
+      "lines": 16,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/SOURCE_ONLY_EXECUTION_POLICY.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/7b0ab6aed4bbfebf3c62642d9e8b44d9c5fb417896606442c70531ee7891f554.gz",
+      "sha256": "7b0ab6aed4bbfebf3c62642d9e8b44d9c5fb417896606442c70531ee7891f554",
+      "stored_bytes": 262,
+      "stored_sha256": "f189a33641449adc7fb9606dd86fa9ef7997e4b5c9ab5bf030e3ff4d4c8f21c4"
+    },
+    {
+      "bytes": 644,
+      "lines": 28,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/COMBINED_VALIDATION_PLAN.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/a529c8e1d653dbd093e6c966ad3b5d2483e39683585206702488732618c8ec1b.gz",
+      "sha256": "a529c8e1d653dbd093e6c966ad3b5d2483e39683585206702488732618c8ec1b",
+      "stored_bytes": 359,
+      "stored_sha256": "59b0d3e9ff96636fc500df4a1c58daf1e00813c1a1d1010559d2897c17b1d25e"
+    },
+    {
+      "bytes": 14754,
+      "lines": 152,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/BUILD_SOURCE_ONLY.py",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/498dc16017605334e7ada6c965567f10edf3c98b5eac4865961ae81400efb5df.gz",
+      "sha256": "498dc16017605334e7ada6c965567f10edf3c98b5eac4865961ae81400efb5df",
+      "stored_bytes": 5842,
+      "stored_sha256": "950caf38e88ad4fa16ac14e4311ceb6dca0fd98360aaa076e5b0d72c5451b5fe"
+    },
+    {
+      "bytes": 12279,
+      "lines": 144,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/IDENTITY_TOOL.template.py",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/c844f7f52ad053a6783719c9922370f38bc05a8168ee94552a14ba322d1d8941.gz",
+      "sha256": "c844f7f52ad053a6783719c9922370f38bc05a8168ee94552a14ba322d1d8941",
+      "stored_bytes": 4200,
+      "stored_sha256": "b3c959b12f2b08948bfc2e9fc5d439b80b44a98d3b00ef239f08737cd977a6aa"
+    },
+    {
+      "bytes": 49746,
+      "lines": 747,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/prepare_verify_threshold_crossing_chirp.py",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/fd5b8f70a75af35390ef85c1942ecd94442e8d63acc90082ffc6aa05c677172d.gz",
+      "sha256": "fd5b8f70a75af35390ef85c1942ecd94442e8d63acc90082ffc6aa05c677172d",
+      "stored_bytes": 15121,
+      "stored_sha256": "70e99d1d3e635cc7c16f20590241631c61f74d078cde16516237fd049025698b"
+    },
+    {
+      "bytes": 8279,
+      "lines": 99,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/CHECK_PREPARATION_SOURCES.py",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/8b3995ede26812b4c578e23b469f5d8c9620428bffc5b4b40c046f679a390423.gz",
+      "sha256": "8b3995ede26812b4c578e23b469f5d8c9620428bffc5b4b40c046f679a390423",
+      "stored_bytes": 3195,
+      "stored_sha256": "e4a2670b9dafdf3303a6fbd182de1e5b22982d68e9377ce0ceeb68948921343b"
+    },
+    {
+      "bytes": 6106,
+      "lines": 47,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/FINALIZE_SOURCE_ONLY.py",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/5a133dc62463a340a2c382242413006c43ee42da66ff95a2024aec17997c9700.gz",
+      "sha256": "5a133dc62463a340a2c382242413006c43ee42da66ff95a2024aec17997c9700",
+      "stored_bytes": 2546,
+      "stored_sha256": "723ce22d8257f220ef11c6f8c8aa87326d27466e5a42ca7ca447b86e327642d8"
+    },
+    {
+      "bytes": 1890,
+      "lines": 35,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/ROOT_ACCEPTANCE.template.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/de00a5767e1e6ee19708174a6ffd38a322a8ffd9ff51bf8a7682dbdd9665c3cb.gz",
+      "sha256": "de00a5767e1e6ee19708174a6ffd38a322a8ffd9ff51bf8a7682dbdd9665c3cb",
+      "stored_bytes": 888,
+      "stored_sha256": "9128db2c738e00aa3ab401d726132e4f474a0a433db1cd581c35696752dbaeed"
+    },
+    {
+      "bytes": 8700,
+      "lines": 94,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/run_combined_validation.py",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/ce77eaf0a09e1f9ab59c9516b840fc8377457e2b12cfbea7e9535c1f940c1219.gz",
+      "sha256": "ce77eaf0a09e1f9ab59c9516b840fc8377457e2b12cfbea7e9535c1f940c1219",
+      "stored_bytes": 3403,
+      "stored_sha256": "974a4914be247b4188153177d7a8d0059d553b1964e10f67a941be7740942571"
+    },
+    {
+      "bytes": 2101,
+      "lines": 33,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/README.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/93964d51c4c4eb37a492f2215201c3a362c6006a216a361bdc809f009cbc3c1d.gz",
+      "sha256": "93964d51c4c4eb37a492f2215201c3a362c6006a216a361bdc809f009cbc3c1d",
+      "stored_bytes": 1190,
+      "stored_sha256": "028bcbb97776fa79b4bf71f7e8fd61abcd58c59d8d2c0c3c874fee516a7a9751"
+    },
+    {
+      "bytes": 2784,
+      "lines": 58,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/SPECIFICATIONS.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/96e3563742c1f0331f39a9ecb8eadc45a63c007c766405ee283d390f8dad1333.gz",
+      "sha256": "96e3563742c1f0331f39a9ecb8eadc45a63c007c766405ee283d390f8dad1333",
+      "stored_bytes": 968,
+      "stored_sha256": "c17792e2350b75841e824f4c9d6befe9b3a41a2b2e2896d26db11d5ab037952b"
+    },
+    {
+      "bytes": 1288,
+      "lines": 27,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/PARENT_PUBLICATION.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/b1e7157e9efab97d6d99a33ac6dc00846b046186619e6dab30d22f6c75ed959d.gz",
+      "sha256": "b1e7157e9efab97d6d99a33ac6dc00846b046186619e6dab30d22f6c75ed959d",
+      "stored_bytes": 756,
+      "stored_sha256": "58209963611cb1701e5d06db236ee2ed1fb8ac90356ec36ef6b6e2ec5a5e7c54"
+    },
+    {
+      "bytes": 4533,
+      "lines": 82,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/ROOT_REPRODUCTION.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/74ebaf67d792fc753ebd38239c7c3d6aff3938cdc1ba3a4b1cd7c4e241894f3c.gz",
+      "sha256": "74ebaf67d792fc753ebd38239c7c3d6aff3938cdc1ba3a4b1cd7c4e241894f3c",
+      "stored_bytes": 2178,
+      "stored_sha256": "3170cdd69bb3967eb41688b9cce721b0928dcb5779ed76db30676330609138e5"
+    },
+    {
+      "bytes": 577,
+      "lines": 16,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/SOURCE_ONLY_EXECUTION_POLICY.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/96938ea3b7547f97b7e33927a97d1a05c60c30a2c54a3b0fc5342da33e47f121.gz",
+      "sha256": "96938ea3b7547f97b7e33927a97d1a05c60c30a2c54a3b0fc5342da33e47f121",
+      "stored_bytes": 362,
+      "stored_sha256": "41839b99a518de2997ff473ecaf66b90e2dc42ffb3cbed6ec0d1376b88cef674"
+    },
+    {
+      "bytes": 438,
+      "lines": 6,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/SOURCE_CHECK_PROTOCOL.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/e091337959b17302aad594163f860092be1730c47250ce5a4006e0068557dda4.gz",
+      "sha256": "e091337959b17302aad594163f860092be1730c47250ce5a4006e0068557dda4",
+      "stored_bytes": 312,
+      "stored_sha256": "b1561e82c1e20f7592771614b83af254d81c882c4964af326cd5008d237da5c7"
+    },
+    {
+      "bytes": 3611,
+      "lines": 96,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/multitime_kinetic_energy_publication_preparation/PROCEDURE_REUSE.json",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/e716e2c36835d5c4fcb7ef31370df6bd5a291c9480b7adc1df1d9b2eb86aa93a.gz",
+      "sha256": "e716e2c36835d5c4fcb7ef31370df6bd5a291c9480b7adc1df1d9b2eb86aa93a",
+      "stored_bytes": 1478,
+      "stored_sha256": "1a9716aecc5baf79c5c9302071fd28520864a577338b08a48533e3785a5531d9"
+    },
+    {
+      "bytes": 3820,
+      "lines": 72,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/HANDOFF.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/92d88b1f612a3d9311814994ccc33dc4935716d032037a0985133e81116e02c0.gz",
+      "sha256": "92d88b1f612a3d9311814994ccc33dc4935716d032037a0985133e81116e02c0",
+      "stored_bytes": 1938,
+      "stored_sha256": "8f8d7310ea14b53cb7935565c77878da0b9b8ad8adef98d4e7ffeee66fdac345"
+    },
+    {
+      "bytes": 1935,
+      "lines": 33,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/REVIEW_HISTORY.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/b0c62b471593edeb3de8429ea46001728b2c48b31e763bda7ce5b28171d3a5db.gz",
+      "sha256": "b0c62b471593edeb3de8429ea46001728b2c48b31e763bda7ce5b28171d3a5db",
+      "stored_bytes": 1060,
+      "stored_sha256": "627c399ce9f02463303f952912de1515dae1d7b249567cae382d47c2edc422d7"
+    },
+    {
+      "bytes": 3061,
+      "lines": 62,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/CONFORMANCE.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/9b4f7d237c53e05a1b33152d7aa54fbf63e9845c86e2a8cbcbfcc32178a3f2cc.gz",
+      "sha256": "9b4f7d237c53e05a1b33152d7aa54fbf63e9845c86e2a8cbcbfcc32178a3f2cc",
+      "stored_bytes": 1520,
+      "stored_sha256": "006145e3f048556f84aaf3e029fb9ddbd75ac1803e63d8146186ba349a7429af"
+    },
+    {
+      "bytes": 533,
+      "lines": 10,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/TRACE_GATE.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/4857ae57e0ca822b8c53768e69371260a456267c791d8d41d2ef76cb834cfd87.gz",
+      "sha256": "4857ae57e0ca822b8c53768e69371260a456267c791d8d41d2ef76cb834cfd87",
+      "stored_bytes": 353,
+      "stored_sha256": "bea35c6c6b9002c850415fd30501357e32610a3851208d734327bddf2914b5b1"
+    },
+    {
+      "bytes": 1073,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/CLAIM_STATUS_CERTIFICATE.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/f9f0ce63a3f45894c3b2eb6bed15a718581211d621f4655fd048b17dc473b904.gz",
+      "sha256": "f9f0ce63a3f45894c3b2eb6bed15a718581211d621f4655fd048b17dc473b904",
+      "stored_bytes": 561,
+      "stored_sha256": "ed8240e991110ea76444f0defed28fcedf0d3789fdff867568fb97ac317445a5"
+    },
+    {
+      "bytes": 1695,
+      "lines": 29,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/ASSUMPTIONS_AND_IMPORTS.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/97eebcb41c9341d012506154a4cecb06e1d690f56b120cc706033aaa21474833.gz",
+      "sha256": "97eebcb41c9341d012506154a4cecb06e1d690f56b120cc706033aaa21474833",
+      "stored_bytes": 936,
+      "stored_sha256": "d27c1ebe8e154ad20439df4f8ddd4a9bd882418c2b950ec9b6b5d21d2c84e7d5"
+    },
+    {
+      "bytes": 617,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/NO_GO_DISCIPLINE_CHECKLIST.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/37d3455630fde318f3ad24c4e836999cb0f0b0acfe8d2a633f7fb9ec08795b1c.gz",
+      "sha256": "37d3455630fde318f3ad24c4e836999cb0f0b0acfe8d2a633f7fb9ec08795b1c",
+      "stored_bytes": 400,
+      "stored_sha256": "697bfae04157ce363bb8683cf3faf1e28bb97ec959874263ffd44265d01ab75e"
+    },
+    {
+      "bytes": 391,
+      "lines": 7,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_publication_preparation/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/NO_GO_LEDGER.md",
+          "role": "procedural template; no mathematical dependency"
+        }
+      ],
+      "path": "objects/a8e5673589df6789254abd98d9fa47a89cd795f56676ca6696f83de54d1efcfb.gz",
+      "sha256": "a8e5673589df6789254abd98d9fa47a89cd795f56676ca6696f83de54d1efcfb",
+      "stored_bytes": 264,
+      "stored_sha256": "d8885f289121d230d8d0d5be678af7d0090814ed4e056ca4e2c695cb5b614e01"
+    },
+    {
+      "bytes": 914,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GRAPH_CALIBRATION_ASSEMBLY_ROOT_ACCEPTANCE.json",
+          "role": "actual root source acceptance or procedure identity receipt"
+        }
+      ],
+      "path": "objects/2e0df031116fd55e577de4e3c8fafbc98be9894d303fe466d17022e51fba7fa7.gz",
+      "sha256": "2e0df031116fd55e577de4e3c8fafbc98be9894d303fe466d17022e51fba7fa7",
+      "stored_bytes": 588,
+      "stored_sha256": "f8b1585b24e559598131541eca43f1580e6fcb709bbdc6df60f00f51c9442ae4"
+    },
+    {
+      "bytes": 2141,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GRAPH_CALIBRATION_ASSEMBLY_ROOT_REVIEW.md",
+          "role": "actual root source acceptance or procedure identity receipt"
+        }
+      ],
+      "path": "objects/4e143d35bc7d8e25f735891b934c820a6c88c648026ac077524649ec88684e66.gz",
+      "sha256": "4e143d35bc7d8e25f735891b934c820a6c88c648026ac077524649ec88684e66",
+      "stored_bytes": 1145,
+      "stored_sha256": "b1fa9da2f9cb84de3785cd615dd892a5b9c5cf78b53d9e61ab075125a07833cb"
+    },
+    {
+      "bytes": 47782,
+      "lines": 964,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "role": "Complete actual direct canonical parent; full964-line source read"
+        }
+      ],
+      "path": "objects/dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592.gz",
+      "sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+      "stored_bytes": 18441,
+      "stored_sha256": "49592543e0f6d4621477503d86456cefac1521cc7e51ea7465700ecb267158d4"
+    },
+    {
+      "bytes": 3681,
+      "lines": 64,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/IMPORTS.json",
+          "role": "Complete selected parent provenance record read; not a recursive parent archive or audit"
+        }
+      ],
+      "path": "objects/eb6a1deea9dbc2eb68a243bcf405d3d7fa0506cd1b852fe0d3c927d5a42465f6.gz",
+      "sha256": "eb6a1deea9dbc2eb68a243bcf405d3d7fa0506cd1b852fe0d3c927d5a42465f6",
+      "stored_bytes": 1333,
+      "stored_sha256": "b8eb874cc68e7b0ebaca38c8b09007f74ed54bc82a4f13da4e6573324f206a2f"
+    },
+    {
+      "bytes": 7606,
+      "lines": 143,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/PARENT_BINDINGS.json",
+          "role": "Complete selected parent provenance record read; not a recursive parent archive or audit"
+        }
+      ],
+      "path": "objects/e24bd1a9865b01a0f46d948be98316a21afa587c82076474ed0e166c1150ce6a.gz",
+      "sha256": "e24bd1a9865b01a0f46d948be98316a21afa587c82076474ed0e166c1150ce6a",
+      "stored_bytes": 1958,
+      "stored_sha256": "890d015f24cd0fc8ddc786367e4dabc0de6c24ac59eb305d9bd196160fcc9c6a"
+    },
+    {
+      "bytes": 3570,
+      "lines": 59,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/J_PRECISION.md",
+          "role": "Complete selected parent provenance record read; not a recursive parent archive or audit"
+        }
+      ],
+      "path": "objects/9f7cc514a120c48fc179588892a8c1df5a8decfc0f295ef813d255bca938114f.gz",
+      "sha256": "9f7cc514a120c48fc179588892a8c1df5a8decfc0f295ef813d255bca938114f",
+      "stored_bytes": 1831,
+      "stored_sha256": "4843ac4716084fd415d808cf0c4e847aa9c479a01fef18e9c5000f67380d7cfb"
+    },
+    {
+      "bytes": 2181,
+      "lines": 35,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/SOURCE_REVIEW_STATUS.json",
+          "role": "Complete selected parent provenance record read; not a recursive parent archive or audit"
+        }
+      ],
+      "path": "objects/abe6b2d12e09a9e99ba60686508dcd7bced057054eb237c3e6c4359618a65a27.gz",
+      "sha256": "abe6b2d12e09a9e99ba60686508dcd7bced057054eb237c3e6c4359618a65a27",
+      "stored_bytes": 1112,
+      "stored_sha256": "cf61fc3d81f57bb8b7ed702ba07df3e0f224d30e273c4928d5559cdd86c3e67e"
+    },
+    {
+      "bytes": 2672,
+      "lines": 42,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/PUBLICATION_ROOT_ACCEPTANCE.json",
+          "role": "Complete selected parent provenance record read; not a recursive parent archive or audit"
+        }
+      ],
+      "path": "objects/3e0a367006aa1a178a72f53b679ecfe42abf64f6448f96f3ef12dbf9e5388ece.gz",
+      "sha256": "3e0a367006aa1a178a72f53b679ecfe42abf64f6448f96f3ef12dbf9e5388ece",
+      "stored_bytes": 1271,
+      "stored_sha256": "debdab8ef0c3a5c305a16c166bcbd3c6e353992e605321429de7c01f41a720e6"
+    },
+    {
+      "bytes": 3752,
+      "lines": 56,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/.claude/science/physics-loops/toe-energy-tail-20261013/PUBLICATION_ASSEMBLY_REVIEW.txt",
+          "role": "Complete selected parent provenance record read; not a recursive parent archive or audit"
+        }
+      ],
+      "path": "objects/f5e817850659e997a00926113aaeb270657cb247042ec5f7d7f412b186b79283.gz",
+      "sha256": "f5e817850659e997a00926113aaeb270657cb247042ec5f7d7f412b186b79283",
+      "stored_bytes": 2106,
+      "stored_sha256": "c6c5a636f35297ec7159ab6a1ebfdab539e8ea14af9040b9f67829fc8fb6215e"
+    },
+    {
+      "bytes": 1002,
+      "lines": 18,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_PR_CREATED.json",
+          "role": "Actual regular open parent PR creation/verification receipt"
+        }
+      ],
+      "path": "objects/03cc7b7b11b50fc6a84b151f51c9ac9266654855e7e627ae26d3fcebf79868e1.gz",
+      "sha256": "03cc7b7b11b50fc6a84b151f51c9ac9266654855e7e627ae26d3fcebf79868e1",
+      "stored_bytes": 607,
+      "stored_sha256": "a0229c60895bf51847b2275ccd393db8c3f2d5c277b40d4529aec41bcd6aadc7"
+    }
+  ],
+  "original_source_selection_count": 98,
+  "scope": "Complete accepted assembly, its selected original aliases and explicit procedural templates. Historical freezes have only their recorded scopes; no recursive scientific audit."
+}

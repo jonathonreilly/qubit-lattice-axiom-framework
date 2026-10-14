@@ -1,0 +1,3 @@
+# Upstream-support trace
+
+This conditional theorem gives one finite physical chain and finite coarse readout circuits for a fixed supplied energy history on a finite input carrier, with complete weighted error at most E_vol+E_comp. It resolves the stated finite-volume and readout-composition obligation under explicit data/access premises. Physical selection, native realization and kinetic joint limits remain outside this implication. The next action is root review of the exact publication package and driver, followed by root-owned regular PR preparation within existing authorization. Independent retained audit stays separate.

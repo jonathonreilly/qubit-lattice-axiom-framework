@@ -1,0 +1,119 @@
+{
+  "actual_integration_parent": {
+    "number": 9527,
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9527"
+  },
+  "dependency_count": 5,
+  "direct_scientific_dependencies": [
+    {
+      "actual_claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "canonical_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          248,
+          321
+        ],
+        [
+          367,
+          453
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Supplied gapped chain, compatible even JW, full-spin positive-energy representation"
+    },
+    {
+      "actual_claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "canonical_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          102,
+          183
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Field normalization and signs, positive polarization, finite even words"
+    },
+    {
+      "actual_claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "canonical_path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          199
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Existing exact infinite-chain common-energy/Fock embedding"
+    },
+    {
+      "actual_claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          1262,
+          1300
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Actual Fock-domain/PVM and supplied-input comparison interface"
+    },
+    {
+      "actual_claim_id": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          393,
+          421
+        ],
+        [
+          448,
+          473
+        ],
+        [
+          1018,
+          1045
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Specified coarse-instrument/common-energy protocol conventions only; no imported kinetic limit"
+    }
+  ],
+  "integration_parent_is_scientific_dependency": false,
+  "kinetic_law_imported": false
+}

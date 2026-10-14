@@ -1,0 +1,8 @@
+{
+  "base": "e8d5b7b99c9faab65f71eb5ff353b60e2b609608",
+  "branch": "physics-loop/toe-energy-tail-20261013",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9521",
+  "root_owned_execution": true,
+  "source_generation_current_branch_requirement": false
+}

@@ -1,0 +1,56 @@
+# Root review — energy-tail publication v2
+
+Disposition: accepted_for_source_integration. This accepts the corrected source
+package for the explicit root integration driver, not the theorem as independently
+retained or the still-unexecuted v2 graph run as successful.
+
+Reviewed freeze c92f7441e466d4ac8ed5f71d0cb79a4f04afe9c3f31b5450e69e009a51a3d8b2;
+canonical note dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592;
+runner da5e375f6ed0817fed3ab658db845af06516d5df4d1940a618162159a58e61de.
+Driver4ee0f3efbf893e1a4c86e90ed8471e5ad6ea8ec8429a9c43ef47c708f15802f9 and
+identity algorithm db287be3 are unchanged from the completed full v1 review
+ce41250ba43b0e14a07b532a0dd8c575b6391314b9ee53c61bd592335d6e787b.
+The earlier root acceptance dcd89c58 remains historical and does not authorize v2.
+
+The complete note difference adds exactly two descriptive Markdown citations to
+the already-declared chirp and vacuum multitime parents. No mathematical core,
+provisional prepared-state premise, quantifier, source role or claim scope changed.
+I read the complete citation guard, complete source-checker change, full new
+citation-repair provenance, changed sidecar prose and extractor change, root
+reproduction contract, current-vs-historical scope index, README and final report.
+Builder resolve_link_target/extract_citations was checked against the actual source;
+the guard pins its exact bytes and mirrors its regex/resolve/self/dedup behavior.
+The changed-file inventory was machine-read in full; a bulk display truncated,
+so no full visual read of that inventory is asserted. Literal source maps and
+archive identities were checked deterministically, not treated as new arguments.
+
+The runner AST comparison proves only AUDIT_INPUT_PATHS and CONFIG literal
+assignments changed; all executable AST is unchanged. Root source check at
+22:35:29.885559–22:35:30.591202 UTC exited0 in0.705359 seconds. It verified all763
+frozen members,655 inputs,326 accepted assembly members,294 original aliases,
+three exact cores and five parent slices. It resolved the two canonical links,
+rejected the old note and each single-link omission without hash guards, and
+rejected four corrupt byte inputs for the exact expected errors. Full receipt:
+energy_tail_publication_v2_root_source_check/RECEIPT.json; stdoutcd1f1265.
+Those checks execute zero mathematical predicates; no independent proof or
+formal operator-domain verification is inferred.
+
+The original failed prepare is preserved in full and in the v2 source archive.
+Root's separate recovery roundtrip preserved359 members including283 installed
+paths, then removed only its own partial-install files and restored the base
+manifest. CW is clean at e8d5b7b99c9faab65f71eb5ff353b60e2b609608. Recovery archive
+471043b15ec692b3837177df9da75228bb389d5942baa6572b5a8d4d5daf6d0f is committed
+on the checkpoint branch. Original failure is not relabeled a pass.
+
+The v2 payload has654 paths; prepare must validate the exact one-node/two-edge
+delta and preserve every old full graph node and edge. Root must inspect actual
+PREPARED receipts, stage the exact658 paths, then verify index blobs before and
+after the focused existing-ledger check. A regular stacked PR follows successful
+integration; current-main combined landing and independent audit remain separate.
+The selected check may have checked[] empty, which supplies no new science.
+
+Earlier full analytic coverage and scoped scalar Lean evidence retain their
+precise boundaries. Uniform common-H graph assumptions, fixed first energy,
+joint varying-state tails, linear J precision and supplied prepared weak-law
+premise remain visible. No physical realization, axiom, prompt, audit verdict,
+main push or science merge is authorized by this review.

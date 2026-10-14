@@ -1,0 +1,102 @@
+# Recovered calibration publication: root source-integration review
+
+Disposition: accepted_for_source_integration. This permits reversible source
+installation and validation on the named child branch, not publication before
+the remaining focused review, landing, audit status or physical identification.
+
+Target: graph_calibration_publication_preparation, parent PR9526 at
+ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989; main
+583c699e859b64ff01c8bc92d1c04bdfe9994509. The parent is open and regular,
+has no review/comment findings, and its head and the instructions revision
+3a4b2c66a1ead7a1c48b4359627e968f681e3c39 were refreshed before acceptance.
+The source freeze and exact driver are bound by the accompanying acceptance.
+
+The replacement root read the complete 284-line publication wrapper, 761-line
+prepare/verify driver, 153-line identity template and 206-line source checker,
+the parent binding/core maps, specifications, root execution contract, all nine
+authored packet texts, proposed PR text, and prior source acceptance/review.
+The complete central root V2 proof (192 lines) was read again and checked.
+The other three unchanged bodies retain their prior exact mathematical review
+coverage; their full reading is not newly claimed by this replacement root.
+The parallel source-exposed reviewer is separately reading all four bodies and
+the complete parent; that review remains pending at this integration acceptance.
+
+For the central claim, the graph generator is bounded by
+C_G^2(d_0+d_1) epsilon |f|, so its vectorwise Dyson series has the exponential
+norm bound. Hilbert-space uniqueness identifies this solution with the actual
+relative propagator on D(H). The reverse series and the TR commutator equation
+give the inverse, without equating unequal weighted adjoint norms. Interpolation
+of the bounded full-graph and Hilbert operators gives the half-graph difference.
+Finite telescoping counts 2n+1 unitary factors. The Hilbert-Schmidt squared-norm
+difference transfers first-energy means without a second moment; weighted
+trace convergence handles moving inputs. Uniform C_G and fixed protocol/resources
+are essential stated hypotheses for these conclusions. The sufficient small
+quantity is epsilon*b; b=O(1/h) gives epsilon=o(h). No necessity is inferred for
+the fixed-slot continuum model.
+
+The parent roles were checked against its current abstract graph/tail theorem
+and conditional law statement. Its exact full-body root306/independent390 maps
+are preserved and deterministically reconstructed. The ideal normal-state weak
+law stays an additional provisional application assumption, and the supplied
+common H, instrument and calibration estimates remain explicit. The current
+primitive registry and realized-state source do not supply those hypotheses.
+Historical root G6 wording is governed by the explicit uniform-graph, calibration
+order p, and assumed-common-H precisions; frozen mathematical bytes stay exact.
+
+The source check executed with --verify-originals --require-bound --require-freeze
+and exited zero with empty stderr. It reconstructed all four immutable bodies,
+the complete accepted 113-file source assembly and 249 live original aliases,
+matched the actual Markdown parent and rejected citation omission for the exact
+reason. The separate recovery check matched all 298 frozen preparation members.
+These are provenance/reconstruction checks with zero mathematical predicates,
+not replacement proof evidence. Receipt: calibration_integration/source_check.
+
+The driver is restricted to the clean child at its accepted parent; verifies
+package, original assembly, current parent and procedural identities; preserves
+all command streams and failures; installs the exact payload and two root records;
+requires one node and one direct parent edge with all existing graph objects
+unchanged; and never stages, commits, pushes, retries or applies a verdict.
+Four intended byte-corruption probes distinguish exact expected rejection
+reasons. Verify binds actual regular stage-zero blobs before and after the
+include-worktree checker. An empty checked list grants no scientific coverage.
+The identity template reads its declared parent and package inputs, decompresses
+and reconstructs complete sources and exact diffs, and openly computes no theorem.
+The source checker proves its template rendering and complete declared closure.
+
+Conformance dispositions, using the current owning procedures:
+
+1. Complete source/evidence closure is packaged; the direct source parent is in
+   the stacked base. Cumulative parent review is a later landing obligation.
+2. Canonical identity runtime/cache is still pending and will run through the
+   pinned cache API at its declared 60-second timeout. No raw log is called a cache.
+3. All current surfaces use bounded_theorem and conditional-support. The spec's
+   older proposed_retained-only sentence conflicts with the owning current claim
+   status skill; conditional-support is the applicable author status.
+4. The three concrete analytic controls retain their narrow witness scopes.
+   The resonant member witnesses failure of ideal convergence in that supplied
+   abstract example; no universal apparatus impossibility, physical necessity,
+   exhausted route family or N1-N8 PASS is asserted. Broader negative export is
+   not authorized by this review. No five-route certificate is fabricated.
+5. Domains, strong graph evolution, separate inverse, fixed chains, weighted
+   inputs, tail quantifiers and positive-success normalization are explicit.
+6. Prior unchanged analytic proof checks are reused at their identities. New
+   runtime corruption checks concern bytes only and are pending.
+7. No helper registry change is made. The identity runner declares the complete
+   archived evidence and exact canonical parent; no new scientific helper is hidden.
+8. Exactly one descriptive parent link, one graph node and one edge are intended.
+   The deterministic manifest will be read before staging. Provenance creates no
+   additional edges; the two source-pinned formula-shaped matches are notation.
+9. Claim/trace/import fields and review history are explicit. Historical pending
+   source sentences are distinguished from current review and do not grant status.
+10. No audit verdict or other generated authority surface is part of the source
+    footprint; only the topology manifest is eligible for inclusion.
+11. Source counts and maps are reconstructed from exact current inputs. Old
+    author read claims remain attributed to their original context.
+12. Focused syntax, vocabulary, links, graph, staged-blob and changed-evidence
+    checks remain runtime requirements. Shared current-main pipeline/strict lint,
+    cumulative review, science-loss checks and independent audit are not run here
+    and remain later landing/retention obligations.
+
+No science merge/main push, axiom change, editable prompt change, model/effort
+change or audit verdict is authorized. The original campaign deadline remains
+2026-10-14T21:37:33Z. Recovered controls and failed attempts are preserved.

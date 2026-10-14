@@ -1,0 +1,7 @@
+{
+  "base": "ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-graph-calibration-20261013",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9526"
+}

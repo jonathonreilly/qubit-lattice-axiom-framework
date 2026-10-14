@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-13T22:43:53.397223+00:00",
+  "pr": {
+    "baseRefName": "physics-loop/toe-multitime-kinetic-energy-20261013",
+    "headRefName": "physics-loop/toe-energy-tail-20261013",
+    "headRefOid": "ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989",
+    "isDraft": false,
+    "number": 9526,
+    "state": "OPEN",
+    "title": "[physics-loop] toe-energy-tail-20261013 bounded_theorem conditional-support: Finite-energy postmeasurement tails",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9526"
+  },
+  "head": "ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989",
+  "body_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ENERGY_TAIL_FINAL_PR_BODY.md",
+  "body_sha256": "8e961ce9a4cbecb6a79088c3e2ef2d847296d6fdbbc95fb1d22878701f36ec33",
+  "verify_receipt_sha256": "915e3fbfa1d5f4dedcdd21873fb37a92ef7848515460238a2d7f5f3b1e06d22e",
+  "canonical_note_sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592"
+}

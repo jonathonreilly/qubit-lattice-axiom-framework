@@ -1,0 +1,29 @@
+{
+  "direct_edges": [
+    {
+      "from": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13",
+      "to": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13",
+      "to": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 2,
+    "nodes": 1
+  },
+  "nodes": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "claim_id": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "multitime_kinetic_energy_bounded_theorem_note_2026-10-13"
+      ],
+      "path": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/energy_tail_identity_2026_10_13.py"
+    }
+  ]
+}

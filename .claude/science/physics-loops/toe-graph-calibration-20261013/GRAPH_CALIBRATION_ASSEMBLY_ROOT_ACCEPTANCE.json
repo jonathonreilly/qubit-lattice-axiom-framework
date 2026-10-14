@@ -1,0 +1,14 @@
+{
+  "accepted_utc": "2026-10-13T21:56:52.168980+00:00",
+  "disposition": "accept source assembly; later actual-parent publication integration still required",
+  "freeze_sha256": "281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035",
+  "candidate_sha256": "1e75e8f37995f7ba00a1b7b630d3957d61b1d12ad265da55acd2f7969ae11a89",
+  "wrapper_sha256": "9142b08d248873a5a080b63db861cc0c120abbc20a1ca929cb4ce7058e785017",
+  "root_review_sha256": "4e143d35bc7d8e25f735891b934c820a6c88c648026ac077524649ec88684e66",
+  "prior_mathematical_acceptance_sha256": "6766afd47d73f3de5ab1a1a3437dac43f6a31ef734566ec51cf88876557660ad",
+  "execution": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_assembly_root_check/EXECUTION.json",
+  "new_mathematical_predicates": 0,
+  "required_repairs": [],
+  "canonical_tail_parent": null,
+  "formal_audit_verdict": null
+}

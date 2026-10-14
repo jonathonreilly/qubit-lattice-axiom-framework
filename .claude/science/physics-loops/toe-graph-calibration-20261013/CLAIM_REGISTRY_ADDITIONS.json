@@ -1,0 +1,25 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "graph_calibration_bounded_theorem_note_2026-10-13",
+      "to": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 1,
+    "nodes": 1
+  },
+  "nodes": [
+    {
+      "claim_id": "graph_calibration_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13"
+      ],
+      "path": "docs/GRAPH_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/graph_calibration_identity_2026_10_13.py"
+    }
+  ],
+  "publication_ancestry_is_not_additional_dependency": true
+}

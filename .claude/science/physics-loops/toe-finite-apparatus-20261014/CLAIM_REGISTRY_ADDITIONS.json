@@ -1,0 +1,43 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "to": "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "to": "energy_adapted_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "to": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "to": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 5,
+    "nodes": 1
+  },
+  "nodes": [
+    {
+      "claim_id": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+        "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+        "multitime_kinetic_energy_bounded_theorem_note_2026-10-13"
+      ],
+      "path": "docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/finite_chain_energy_history_identity_2026_10_14.py"
+    }
+  ]
+}

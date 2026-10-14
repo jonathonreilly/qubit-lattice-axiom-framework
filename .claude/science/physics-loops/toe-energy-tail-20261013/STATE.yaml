@@ -1,0 +1,17 @@
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+conditional_surface_status: Supplied ideal graph bounds and provisional prepared-state weak law.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: Positive conditional analytic theorem; no retained audit status.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_trace_action: Root review and regular energy-tail PR; physical consumer not yet named.
+block_slug: toe-energy-tail-20261013
+state: source_only_publication_preparation

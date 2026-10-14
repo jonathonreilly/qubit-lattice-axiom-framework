@@ -1,0 +1,9 @@
+# Supplied premises and exact imports
+
+The model is the supplied one-dimensional chain g>J>0 with interior field g and independent endpoint fields in [g/2,g]. Its actual shifted finite spin energy, compatible even Jordan–Wigner representation, positive full Fock representation and selected state are explicit model data. The prior exact energy-adapted infinite-chain embedding is already available; it does not prove finite-volume locality.
+
+Fix the graph exponent, finite input coordinate/particle carrier and weighted mass bound, finite ordered protocol, finite positive bin boundaries and matched bounded even local controls with integrable scalar coefficients. Actual finite preparation and the controls remain supplied physical resources. All estimates retain unnormalized quantum/classical blocks and every passive reference. Approximate initialization needs its own effective eventual error bound.
+
+The computable volume prescription requires effective model bounds, a certified positive gap, effective bin data and positive margins, and certified finite-support coefficient, duration and integrated drive-budget data. Computing or synthesizing general driven outputs additionally requires effective waveforms. The readout compiler separately requires algebraic finite spectral/bin data with order tests, or certified finite separation/threshold data; fresh pure registers; signed controlled local terms, controlled ground-energy phase, ancillary gates, routing, schedules and final coarse dephasing/discard. These are not native apparatus conclusions.
+
+PARENT_BINDINGS.json pins five complete canonical bodies and records their distinct model, field-sign/polarization, existing embedding, Fock-domain/PVM and specified coarse-instrument roles. The finite-history theorem imports no upstream weak kinetic-law theorem. PR9527 is an integration ancestor and supplies no extra mathematical edge. No axioms or empirical parameters are added.

@@ -1,0 +1,7 @@
+{
+  "base": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-finite-apparatus-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9527"
+}

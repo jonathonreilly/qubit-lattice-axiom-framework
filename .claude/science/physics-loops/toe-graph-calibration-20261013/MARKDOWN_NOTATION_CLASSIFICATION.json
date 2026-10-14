@@ -1,0 +1,25 @@
+{
+  "classification": "Two exact spectral-projection factors in immutable evidence are mathematical notation, not local Markdown links.",
+  "exclusions": [
+    {
+      "canonical_line": 1090,
+      "context": "For interpolation, let P_L=1_[1,L](G). D_L=P_L D P_L has operator norm\n",
+      "exact_line": "For interpolation, let P_L=1_[1,L](G). D_L=P_L D P_L has operator norm\n",
+      "note": "docs/GRAPH_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "27ec24af8607f5aea48d58958348058e2de18813596294b94f929ad3ea5d4d28",
+      "raw_match": "](G)",
+      "reason": "Exact immutable analytic-evidence spectral projection notation; no source edit or broad formula exemption."
+    },
+    {
+      "canonical_line": 1137,
+      "context": "uniformly. Put P_K=1_[0,K](H). Splitting rho^(1/2) at this initial\n",
+      "exact_line": "uniformly. Put P_K=1_[0,K](H). Splitting rho^(1/2) at this initial\n",
+      "note": "docs/GRAPH_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "27ec24af8607f5aea48d58958348058e2de18813596294b94f929ad3ea5d4d28",
+      "raw_match": "](H)",
+      "reason": "Exact immutable analytic-evidence spectral projection notation; no source edit or broad formula exemption."
+    }
+  ],
+  "note": "docs/GRAPH_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+  "note_sha256": "27ec24af8607f5aea48d58958348058e2de18813596294b94f929ad3ea5d4d28"
+}

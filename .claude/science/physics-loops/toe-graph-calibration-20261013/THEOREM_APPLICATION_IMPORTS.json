@@ -1,0 +1,75 @@
+{
+  "abstract_theorem": {
+    "canonical_edges_implied_by_hypotheses": [],
+    "import_mode": "explicit hypotheses"
+  },
+  "application": {
+    "actual_canonical_imports": [
+      {
+        "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "bytes": 47782,
+        "claim_id": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13",
+        "lines": 964,
+        "path": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "present_at_base": "ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989",
+        "published_commit": "ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989",
+        "published_sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+        "regular_pr": 9526
+      }
+    ],
+    "regular_ideal_normal_state_weak_law": "Explicit application assumption; published parent preserves prepared340/512 and initial407 as supplied provisional sources, not canonically proved normal-state laws.",
+    "required_roles": [
+      {
+        "actual_claim_id": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13",
+        "body_locations": [
+          [
+            49,
+            57
+          ],
+          [
+            187,
+            210
+          ],
+          [
+            226,
+            349
+          ],
+          [
+            503,
+            727
+          ]
+        ],
+        "canonical_path": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+        "role": "ideal_uniform_forward_and_inverse_graph_bounds",
+        "scope": "Supplied massive strict-gap smooth-slot model and its fixed resources; U6/U9 and T11/T19. Abstract theorem still states these assumptions.",
+        "verified_against_complete_body": true
+      },
+      {
+        "actual_claim_id": "postmeasurement_energy_tail_bounded_theorem_note_2026-10-13",
+        "body_locations": [
+          [
+            59,
+            113
+          ],
+          [
+            351,
+            419
+          ],
+          [
+            729,
+            851
+          ]
+        ],
+        "canonical_path": "docs/POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "canonical_sha256": "dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592",
+        "discharges_normal_state_weak_law_assumption": false,
+        "role": "regular_ideal_first_energy_tails_and_conditional_law_upgrade",
+        "scope": "Finite-first-energy tails and conditional law upgrade. Regular normal-state weak law remains an additional supplied provisional premise, not a consequence of graph bounds or the canonical vacuum parent.",
+        "verified_against_complete_body": true
+      }
+    ]
+  },
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "unresolved": false
+}

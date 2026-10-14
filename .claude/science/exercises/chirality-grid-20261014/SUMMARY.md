@@ -13,7 +13,7 @@ Jon's request: "run the exercise on chirality and the grid … what new approach
 
 ---
 
-**Review-loop corrections (2026-10-14 ~21:10Z).** PR #9562 was closed at 19:24Z as a research transfer into J tasks; the branch is retained. The review found that this summary exceeded its referee qualifications. Sections 2 and 5 were rewritten to the referees' scopes: Lemma R's class, F3/F5 scope, K2c's measure and error-estimate scope, and the ν_R condition. The axiom paraphrase in WALL.md that supplied probabilities was corrected. K2c's saved pools were added.
+**Review-loop corrections (2026-10-14 ~20:47Z).** PR #9562 was closed at 19:24Z as a research transfer into J tasks; the branch is retained. The review found that this summary exceeded its referee qualifications. Sections 2 and 5 were rewritten to the referees' scopes: Lemma R's class, F3/F5 scope, K2c's measure and error-estimate scope, and the ν_R condition. The axiom paraphrase in WALL.md that supplied probabilities was corrected. K2c's saved pools were added.
 
 ## 1. The wall, in plain words
 

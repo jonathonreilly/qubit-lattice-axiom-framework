@@ -1,0 +1,7 @@
+{
+  "base": "5a862618a90a87b8a344765b6b3d4a600ce65d13",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-always-on-control-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9546"
+}

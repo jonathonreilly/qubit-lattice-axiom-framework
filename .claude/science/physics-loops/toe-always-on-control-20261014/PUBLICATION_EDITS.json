@@ -1,0 +1,62 @@
+{
+  "frontmatter": "---\ntitle: Supplied weak-background control for the literal L4 model\nclaim_id: literal_l4_always_on_control_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 finite-horizon control with a chosen persistent many-body background and supplied ordinary-NN pulses, clean resources, clock, calibration and readout\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional Duhamel and complete-channel comparison with all elapsed-time and scalar costs; identity helper evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\", \"finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\", \"fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14\", \"coherent_binary_k_admission_bounded_theorem_note_2026-10-14\", \"uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/literal_l4_always_on_control_identity_2026_10_14.py\nnext_trace_action: separate exact publication source and driver review, guarded root integration, regular PR and later independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_framing_repair/CANDIDATE_NOTE.md",
+      "accepted_candidate_sha256": "a0c9f3c918a969cea3bb1d110e845a69a469b63e5fe85c7a886b04dcecff3419",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 52098,
+          "byte_start_inclusive": 10970,
+          "bytes": 41128,
+          "id": "ALWAYS_ON_CONTROL",
+          "line_end_inclusive": 418,
+          "line_start_inclusive": 75,
+          "sha256": "e853de3776a74c8ddb2cccb9d0967ac1d9974c5d45fbec473837ae19c9204972",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/cores/DERIVATION_V2.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 3749,
+      "diff_sha256": "69fcc840e293ef0911ae32d9f479c8d432b0e53d2ac86f67a77ddaebf36152db",
+      "diff_stored_sha256": "5c59a3c5a28d5708ab0858e62df014316321ad4e31f46b4d73915c5493e9b38d",
+      "fromfile": "CORRECTED_CANDIDATE_NOTE.md",
+      "note": "docs/LITERAL_L4_ALWAYS_ON_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/cores/DERIVATION_V2.md",
+          "source_sha256": "e853de3776a74c8ddb2cccb9d0967ac1d9974c5d45fbec473837ae19c9204972"
+        }
+      ],
+      "pieces_scope": "Whitespace identity projection; full reconstruction uses corrected candidate and one current-status rendering.",
+      "published_bytes": 52148,
+      "published_lines": 420,
+      "published_sha256": "d227c8d1c42d79e7d29b26be2e199f35ebf335d7f950a36b91be1c8a3062ed5d",
+      "stored_bytes": 1621,
+      "tofile": "docs/LITERAL_L4_ALWAYS_ON_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_framing_overlay_seal_sha256": "42f2565585bd157680cd7378eeb036d2ca5a04e873beb9fffa0829d400b19bbf",
+  "source_freeze_sha256": "4dd350e9efb626ed887a7a2fcf29643764c954651372d7f6b32bb6ca12fbbca6",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 2076,
+    "diff_sha256": "62aa3d241f164bdaf4d6c19db3e45060781305212b6f55d84f61d8afd220848f",
+    "diff_stored_sha256": "87dc3c9ecaaccffb73410586cac3389c70ab6c099d93b866015f119fda1b505f",
+    "fromfile": "CORRECTED_WRAPPER.md",
+    "stored_bytes": 930,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This assembly itself awaits root composition review.",
+      "rendered": "Root accepted the original assembly only in composition with the exact one-phrase framing overlay under ALWAYS_ON_CONTROL_ASSEMBLY_ROOT_ACCEPTANCE.json, SHA256 89891b291ae71a9982449a180b0c4338f4097f76238cc2bf35e42e7d8c95711d, following complete root composition review 82f8927a35c516bc9a651b955bb19c8eb14890cb7a5599daae852a41c5198520. This new publication rendering and driver require their own exact root acceptance. The original uncorrected wrapper and candidate are historical only.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

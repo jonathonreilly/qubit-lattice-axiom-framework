@@ -1,0 +1,47 @@
+{
+  "NN_and_geometric_theorems_imported": false,
+  "ancestry_is_not_import": true,
+  "attribution_only": [],
+  "canonical_citation_count": 5,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "e853de3776a74c8ddb2cccb9d0967ac1d9974c5d45fbec473837ae19c9204972",
+  "historical_role_strings_are_quotations": true,
+  "imported_complete_body_count": 6,
+  "mathematical_parent_count": 5,
+  "mathematical_parents": [
+    "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+    "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+    "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+    "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+    "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14"
+  ],
+  "optional_envelope_domination_imported": false,
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Current authoritative imports; original role/status/exposure records remain historical"
+}

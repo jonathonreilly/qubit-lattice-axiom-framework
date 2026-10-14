@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/literal_l4_always_on_control_identity_2026_10_14.py
+runner_sha256: 873e280744c87c4e63e9cf586eb8bbfe0f5736aca6fcebbe5f17222996082adc
+input_fingerprint_sha256: c9e6473c9d21d9f4d08bd44f49e3a9a2bd09a54ec6df81a69806dba7425c8363
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{"attribution_reads": [], "claim_id": "literal_l4_always_on_control_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": ["docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no weak-background or trace estimate was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

@@ -1,0 +1,45 @@
+{
+  "accepted_utc": "2026-10-14T12:10:32.138884+00:00",
+  "disposition": "conditional source acceptance after full root/separate review and exact narrow scope repair",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_scope_repair/DERIVATION_V2.md",
+    "sha256": "e853de3776a74c8ddb2cccb9d0967ac1d9974c5d45fbec473837ae19c9204972",
+    "bytes": 41128
+  },
+  "repair_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_scope_repair/SOURCE_SEAL.json",
+    "sha256": "f4e24329b6913263a91d8be93abe404d173eb6d653190eddef2c77f8f6c94d28",
+    "bytes": 1163
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ALWAYS_ON_CONTROL_ROOT_REVIEW.md",
+    "sha256": "3eac2b847c93d8651a89b1289ec0d124a76a6c9cc169c5c1705aec521b198414",
+    "bytes": 4677
+  },
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/always_on_root_review/SOURCE_BINDING.json",
+    "sha256": "1012846c4997130707e2ffd4762978852c6ee81ae282c24aa6229d97991351bd",
+    "bytes": 2708
+  },
+  "separate_review_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/always_on_root_review/SEPARATE_REVIEW_BINDING.json",
+    "sha256": "99e179081d4062f3299cd51b43f95b32b5553ab65dbdb4dd3d2f8208082f3d9d",
+    "bytes": 3162
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_review/REPORT.md",
+    "sha256": "344dff5cc96e3af7213e86f2db3f0b0d47ef6a84d4533947c41b6469667ce951",
+    "bytes": 21110
+  },
+  "delta_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_delta_review/REPORT.md",
+    "sha256": "ef32380c00e7f276324675155350e11d7f7f6ba0dbe50e8782d0fa36c27067dc",
+    "bytes": 2528
+  },
+  "mathematical_source_changes": "Only complete-output history/error scope paragraphs248/313; global21 versus terminal-local23. All formulas unchanged.",
+  "scientific_reruns": 0,
+  "retained_audit": false,
+  "publication_driver_approved": false,
+  "model_effort_preserved": true,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,159 @@
+{
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/CURRENT_CANDIDATE.md",
+      "accepted_candidate_sha256": "1e75e8f37995f7ba00a1b7b630d3957d61b1d12ad265da55acd2f7969ae11a89",
+      "context_lines": 3,
+      "diff": "diffs/accepted_assembly_to_publication.diff.gz",
+      "diff_bytes": 7417,
+      "diff_sha256": "8b0263163e0b056e664b4012118039d0d72fad1aca153d85ce1646512e9fde03",
+      "diff_stored_sha256": "5e5b0257eb78efc88f47e11f0909b8afe1c02533f9f4c2bb9a84a64c67e0a2e4",
+      "fromfile": "accepted_assembly/CURRENT_CANDIDATE.md",
+      "note": "docs/GRAPH_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 14891,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 284,
+          "sha256": "e22d54e56d6ac7ecc5a79639357e9ddc57671fbcabeb09529fbdf0b60c63a2e7",
+          "text": "---\ntitle: \"Conditional calibration stability for finite energy measurements\"\nclaim_id: graph_calibration_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: parent_bound_source_ready_for_root_review\ncanonical_parent_binding_complete: true\nscientific_execution: none_in_publication_source_preparation\nrunner: scripts/graph_calibration_identity_2026_10_13.py\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: assumed common H and spectral instrument; uniform ideal graph bounds; bounded control and first-commutator calibration errors; regular ideal history law for application; fixed resources\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional positive graph perturbation theorem with explicit common-model hypotheses and preserved analytic checks\nnext_trace_action: obtain separate root source-integration acceptance of the bound publication package\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nupstream_dependencies:\n  - postmeasurement_energy_tail_bounded_theorem_note_2026-10-13\n---\n\nClaim type: bounded_theorem\n\nThe canonical parent is bound to its actual regular PR and exact published\nsource. Separate root acceptance of this publication package is still required\nbefore installation or runtime. Source checks establish byte identities only.\n\n<!-- BEGIN CANONICAL PARENT BINDING -->\nThe direct parent is [Finite-first-energy tails and ideal forward/inverse graph bounds](POSTMEASUREMENT_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-10-13.md),\npublished in regular open PR9526 at commit\n`ccbeddd0c04b70ee2b6c5f1cffeeeefa23df2989`. Its complete964-line source has SHA-256\n`dc6510563d6fcf2e9db38590b2004f3e5e24677b4fd8b0e0d6ffb83cef9eb592`.\n\nThe parent supplies ideal full and half graph bounds for both evolution\ndirections in its supplied massive strict-gap smooth-slot setting, together\nwith fixed-protocol finite-first-energy tails. Its regular normal-state\nweak-law corollary explicitly assumes the archived prepared-state theorem;\nthat law remains a supplied provisional scientific dependency here. The\ncanonical vacuum multi-time parent does not establish the normal-state law.\nThe abstract result below continues to state graph regularity and the ideal\nregular history law as assumptions when applied outside that supplied setting.\n\nOne new claim node and one direct canonical edge are proposed. Historical\nsource aliases, the tail parent's ancestors and sibling PR9518 do not create\nadditional direct edges. Exact complete-core containment and premise-role\nlocations are recorded in PARENT_BINDINGS.json. The original J sentence is\nread with the required linear/unitary J=Gamma C precision. The parent's\nepsilon=o(h^2) comparison remains valid; this note proves the stated sharper\nsufficient calibration scale under the uniform ideal graph hypotheses.\n<!-- END CANONICAL PARENT BINDING -->\n\n# Conditional calibration stability for finite energy measurements\n\nThis publication candidate packages a checked conditional perturbation theorem.\nUniform ideal energy-graph bounds improve the sufficient calibration scale\nfrom the earlier \\(\\epsilon=o(h^2)\\) to \\(\\epsilon=o(h)\\) on a kinetic\nwindow with integrated drive budget \\(b_h=O(h^{-1})\\). The more precise\ncondition is \\(\\epsilon b_h\\to0\\). The earlier sufficient bound remains\nvalid. Necessity for the fixed-slot continuum model is not established.\n\nThe mathematical result received ordinary conditional source acceptance on\n2026-10-13. This publication preparation adds no independent mathematical review, retained\naudit status, physical realization or empirical prediction. The complete\nunchanged proofs and analytic checks follow this wrapper. Their historical\nstatus sentences and notation remain visible; the current scope is fixed\nby this wrapper and the archived final acceptance/review.\n\n<!-- CURRENT-SCOPE: uniform_C_G_for_full_theorem -->\n<!-- CURRENT-SCOPE: calibration_order_p_plus_one_separate_from_2n_plus_one -->\n<!-- CURRENT-SCOPE: assumed_common_H_not_retained_status -->\n<!-- CURRENT-SCOPE: ideal_regular_law_is_an_application_assumption -->\n<!-- CURRENT-SCOPE: growing_C_G_single_propagator_only -->\n<!-- CURRENT-SCOPE: abstract_controls_do_not_prove_continuum_necessity -->\n\n## Conditional theorem\n\nLet \\(H\\ge0\\) be the exact common self-adjoint free energy on the identified\nHilbert space, \\(G=1+H\\), and \\(S=G^{1/2}\\). Let \\(h>0\\),\n\\(\\epsilon\\ge0\\), and all error constants be nonnegative. The ideal and\nactual interactions differ by the real drive \\(f_h(t)\\Delta V\\), where\n\\(\\Delta V\\) is bounded self-adjoint and\n\n\\[\n b_h=\\int_0^{T_h}|f_h(t)|\\,dt<\\infty,\\qquad\n \\|\\Delta V\\|\\le d_0\\epsilon,\\qquad\n \\|[H,\\Delta V]\\|\\le d_1\\epsilon.\n\\]\n\nThe ideal Hilbert-space interaction-picture unitary starts at identity.\nAssume the ideal and perturbed Hilbert evolutions satisfy the bounded\ninteraction integral equations used in Appendix A. Actual graph-domain\ninvariance is proved by the construction, rather than included here as an\nassumption.\n\nThe last commutator is a genuine bounded graph-domain extension. The\nperturbation preserves \\(D(H)\\); equivalently, the bounded commutator-form\ncriterion supplies that invariance. The free observable, embedding and\nspectral instrument are common by assumption. Their physical realization\nand the two error bounds are not derived in this packet.\n\nFor every prefix time, assume genuine ideal forward and inverse graph maps\nwith one constant \\(C_G\\ge1\\), uniform over the parameter family:\n\n\\[\n \\|G Y_h(t)G^{-1}\\|,\\quad\n \\|G Y_h(t)^*G^{-1}\\|\\le C_G.\n\\]\n\nAssume the stated strong graph evolution regularity. In the bounded-control\nsource setting, strong graph continuity follows at each fixed parameter\nfrom its bounded first commutator. A uniform time modulus or operator-norm\nBochner measurability is not required. Mere norm inequalities are not used\nas a replacement for an existing graph-space evolution.\n\nPut \\(d_G=d_0+d_1\\) and \\(x_h=C_G^2d_G\\epsilon b_h\\). Then the actual\nevolution and its inverse preserve the graph domain and satisfy\n\n\\[\n \\|G Y_{{\\rm act},h}^{(*)}(t)G^{-1}\\|\\le C_G e^{x_h},\n \\qquad\n \\delta_G\\le C_G(e^{x_h}-1),\n\\]\n\nwhere \\(\\delta_G\\) bounds both forward and adjoint full-graph differences\nuniformly in prefix time. With \\(D\\) either propagator difference,\n\n\\[\n \\|D\\|\\le d_0\\epsilon b_h,\\qquad\n \\delta_S:=\\sup\\|SDS^{-1}\\|\n \\le\\sqrt{d_0\\epsilon b_h\\,C_G(e^{x_h}-1)}.\n\\]\n\nThese are consequences of a graph-space Dyson construction in the ideal\ninteraction frame. A separate inverse construction gives the adjoint graph\nbound; it is not inferred by equating oppositely weighted adjoint norms.\nVectorwise integrals have an integrable norm majorant, and their ordered\nseries converges in graph-operator norm.\n\nThus \\(\\epsilon b_h\\to0\\) gives uniform full and half graph differences\nof order \\(\\epsilon b_h\\). If \\(\\epsilon b_h\\) is merely bounded, actual\ngraph norms remain uniformly bounded, but ideal-law convergence does not\nfollow from that fact alone. The case of zero perturbation or zero drive\nhas exactly zero difference.\n\nFor fixed kinetic resources \\(b_h\\le C/h\\), the sufficient requirement is\n\\(\\epsilon=o(h)\\). Write the calibration order as \\(p\\ge0\\), fixed, with\n\\(\\epsilon=O(a^{p+1})\\). Then\n\n\\[\n                         a=o\\!\\left(h^{1/(p+1)}\\right)\n\\]\n\nis sufficient. The symbol \\(p\\) denotes calibration order only. It is\ndistinct from the number \\(2n+1\\) of unitary factors in an \\(n\\)-record\nmeasurement chain. No optimality is claimed for this physical calibration\nscale.\n\n## Fixed finite measurement chains and first energies\n\nFor fixed times and common Borel bins, put\n\\(P_j=Y_h(t_j)^*1_{B_j}(H)Y_h(t_j)\\) and\n\\(Q_h=Y_h(t_f)P_n\\cdots P_1\\); use the same construction for the actual\nevolution. Common spectral projections contract both graph spaces. If\n\\(L_A\\ge1\\) bounds every ideal and actual unitary factor on the graph of\n\\(A=G\\) or \\(S\\), finite telescoping gives\n\n\\[\n \\|A(Q_{{\\rm act},h}-Q_h)A^{-1}\\|\n \\le(2n+1)L_A^{2n}\\delta_A.\n\\]\n\nThe comparison allows arbitrary common Borel bins because these exact\nprojections are unchanged between the models. It does not remove boundary\nregularity assumptions from an ideal weak-limit theorem. The number of\nrecords and the resource constants remain fixed.\n\nFor a fixed normalized state with finite first energy,\n\\(M=\\operatorname{Tr}(G\\rho)<\\infty\\), let \\(L_{\\rm act},L_{\\rm id}\\)\nbound the two history half-graph norms, and let \\(d\\) bound their difference.\nThe unnormalized final-energy means obey\n\n\\[\n |m_{{\\rm act},h}-m_h|\n \\le (L_{\\rm act}+L_{\\rm id})dM.\n\\]\n\nThis follows from the bounded factorization of\n\\(H^{1/2}Q_h\\rho^{1/2}\\). It requires neither a second initial energy\nmoment nor quasifreeness. For moving normalized states with\n\\(d_E=\\|S(\\rho_{\\rm act}-\\rho)S\\|_1\\to0\\), the extra mean error is at\nmost \\(L_{\\rm act}^2d_E\\). Bounded history comparisons require only ordinary\ntrace convergence; any fixed normal initial state is allowed for them.\n\nUniform full and half graph bounds also give uniform first-energy tails\nfor each fixed finite-energy state. For moving states, the precise assertion\nis \\(\\lim_{R\\to\\infty}\\limsup_{\\rm joint}\\) of the tail equal to zero.\nA convergent sequence or a weighted-trace-compact family has a genuine\nuniform tail modulus. Convergence at a missing limit point alone does not\ngive uniformity over every arbitrary punctured continuum neighborhood.\n\nFor a limiting-law application, assume the ideal finite-history weak law\nat its regular bins or separately justified common zero-gap convention.\nTogether with the graph tail argument, the comparison transfers branch\nmasses and unnormalized first means. For a selected history whose limiting\nprobability is positive, conditional weak convergence and first-moment\nconvergence yield conditional \\(W_1\\) convergence on nonnegative energies.\nZero-probability normalization is not covered. Finite unions of recorded\nhistories sum positive branch measures, rather than chain amplitudes.\n\n## Scope of the analytic controls\n\nThe two-level resonant calculation shows failure of a generic ideal-law\nconvergence guarantee at \\(\\epsilon=kh\\) within the abstract assumptions.\nIt does not prove necessity for the nonzero fixed-slot continuum model.\nThe bounded-commutator measurability example shows why vectorwise graph\nintegrals are used; it is not a physical obstruction. The escaping-energy\nrotation shows why the growing-\\(C_G\\) comment cannot replace uniform\ngraph bounds in the full protocol and tail theorem.\n\nIn particular, formulas involving growing \\(C_G\\) diagnose the\nsingle-propagator difference only. Finite products carry additional graph\npowers, and uniform tails need separately justified bounds. No theorem for\ngrowing resources, growing record count, arbitrary energy-ball families,\nunspecified instruments, massless or zero-frequency limits, or physical\ncontinuum realization is exported here.\n\n## Exact dependencies and publication boundary\n\n| Claim or application | Premise and current status |\n|---|---|\n| Abstract graph stability | Exact common \\(H\\), graph regularity, uniform two-way ideal graph bounds and the two error bounds are explicit assumptions; the unchanged root V2 proves the implication. |\n| Fixed finite deterministic instrument comparison | Requires the same spectral instrument and fixed record count; proved in the included argument. |\n| Weak-law, mean and conditional \\(W_1\\) application | Assumes an established regular ideal finite-history weak law and finite first initial energy for unbounded conclusions; graph tails and transfer are supplied here. |\n| Supplied model's ideal graph theorem | The exact published tail parent supplies U6/U9 and T11/T19 in its strict-gap fixed-resource model, with the required \\(J=\\Gamma C\\) precision. No retained status is inferred. |\n| Canonical tail application | Regular PR9526 supplies finite-first-energy tails and a conditional limiting-law upgrade. Its prepared normal-state weak law remains a supplied provisional assumption; the vacuum canonical parent does not establish it. |\n| Physical realization and calibration | Remain assumptions; no realization family, detector model or empirical validation is supplied. |\n\nThe abstract implication is complete without a newly published tail parent.\nThe application is now bound to the exact published tail parent. Its prepared\nnormal-state weak-law premise remains conditional; no scientific hypothesis\nis discharged solely by Git ancestry or source-identity checks.\nA root-owned publication driver is proposed as reviewable source. It has not\nbeen executed. This preparation creates no branch, PR or audit verdict.\n\n## Preserved proofs, correction and exposure history\n\nAppendices A--D contain exact immutable bodies: root V2/192 lines,\nindependent derivation/289, independent evidence/192, and separate analytic\nreview evidence/206. Extraction records bind every body to its original\nhash. Full comparison/194 and separate review/108, plans, seals, read\nreceipts and final acceptance/review are archived with their source closures.\n\nRoot V1 incorrectly asserted that the \\(TR\\) derivative directly vanishes.\nV2 uses its commutator equation and uniqueness. The exact V1, V2 and diff\nremain archived. V1 was sealed before the independent preliminary route\nmessage; V2 followed that message and preceded the complete independent\nproof. The separate exposed reviewer did not read the independent target.\nAll used the same selected model family and shared graph premises.\n\nHistorical pending/status sentences in the appended sources are preserved\nas history. The final review requires uniform \\(C_G\\), the calibration\nnotation used above, and reading historical \u201cretained common-H\u201d as assumed\ncommon-H, not audit retention. These are wrapper precisions, not silent\nchanges to frozen bodies.\n\nThe root's read-only wrong-filename attempt and subsequent complete recovery\nare preserved in its independent-read receipt. Source checks execute zero\nmathematical predicates. They validate bytes, extraction boundaries and\ndeclared archive identities, not the correctness of the theorem. The read\ncoverage record distinguishes full new wrapper/review reads from reused\nunchanged proof coverage and metadata-only archive checks.\n\nNo editable prompt, physical axiom, audit status or original scientific\nsource is changed by this preparation. The accepted assembly received root\nsource acceptance at 21:56:52 UTC on 2026-10-13. The present publication\nwrapper and programs require their own exact root acceptance. Actual parent\nbinding is complete; publication integration and retained audit remain open.\n",
+          "wrapper_path": "wrappers/note_prefix.md"
+        },
+        {
+          "byte_offset": 14891,
+          "bytes": 283,
+          "first_line": 285,
+          "kind": "publication_wrapper",
+          "last_line": 291,
+          "sha256": "e2bc5db42c7f91061245656a2ca3456a2583d940fa1ef1293d4fbc523555ce23",
+          "text": "\n## Appendix A \u2014 Accepted root V2 proof\n\nThe following body is an unchanged historical source. The current wrapper\nand archived final review govern export scope and current status.\n\n<!-- BEGIN IMMUTABLE A sha256=0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd -->\n",
+          "wrapper_path": "wrappers/before_A.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 15174,
+          "bytes": 10503,
+          "expected_slice_sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd",
+          "first_line": 292,
+          "kind": "accepted_core_slice",
+          "last_line": 483,
+          "sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd",
+          "source_line_end": 192,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/ENERGY_GRAPH_PERTURBATION_ROOT_PROBE_V2.md",
+          "source_sha256": "0906b06197d7664b5b7ee9c7bfe6b453e2949135225ee647feaeb6f93b1eb5dd"
+        },
+        {
+          "byte_offset": 25677,
+          "bytes": 308,
+          "first_line": 484,
+          "kind": "publication_wrapper",
+          "last_line": 491,
+          "sha256": "9197e1607a406a42cffa2853175af682885b0dda4dd1b37638adbb4ccdff0822",
+          "text": "<!-- END IMMUTABLE A -->\n\n## Appendix B \u2014 Independent derivation\n\nThe following body is an unchanged historical source. The current wrapper\nand archived final review govern export scope and current status.\n\n<!-- BEGIN IMMUTABLE B sha256=c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3 -->\n",
+          "wrapper_path": "wrappers/before_B.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 25985,
+          "bytes": 13152,
+          "expected_slice_sha256": "c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3",
+          "first_line": 492,
+          "kind": "accepted_core_slice",
+          "last_line": 780,
+          "sha256": "c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3",
+          "source_line_end": 289,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/DERIVATION.md",
+          "source_sha256": "c2f208d2b05d43167f6beb18b2f30cedc01e3ff6b430ed8f39ed24ff57a2c5b3"
+        },
+        {
+          "byte_offset": 39137,
+          "bytes": 315,
+          "first_line": 781,
+          "kind": "publication_wrapper",
+          "last_line": 788,
+          "sha256": "0735fdf03f2d474aa796cf64a21f22de3601a5b176552baa0bf0551d8cfd09d7",
+          "text": "<!-- END IMMUTABLE B -->\n\n## Appendix C \u2014 Independent analytic evidence\n\nThe following body is an unchanged historical source. The current wrapper\nand archived final review govern export scope and current status.\n\n<!-- BEGIN IMMUTABLE C sha256=5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b -->\n",
+          "wrapper_path": "wrappers/before_C.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 39452,
+          "bytes": 8556,
+          "expected_slice_sha256": "5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b",
+          "first_line": 789,
+          "kind": "accepted_core_slice",
+          "last_line": 980,
+          "sha256": "5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b",
+          "source_line_end": 192,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_independent/evidence/ANALYTIC_EVIDENCE.md",
+          "source_sha256": "5c59ba4d4f587d547283c21cbd5afb6466d98732df86b76ba7eb50630a89cf5b"
+        },
+        {
+          "byte_offset": 48008,
+          "bytes": 319,
+          "first_line": 981,
+          "kind": "publication_wrapper",
+          "last_line": 988,
+          "sha256": "77ec56e85b1bce9f51d541608904d1d7b050c532861aa354a933013359ca420e",
+          "text": "<!-- END IMMUTABLE C -->\n\n## Appendix D \u2014 Separate review analytic evidence\n\nThe following body is an unchanged historical source. The current wrapper\nand archived final review govern export scope and current status.\n\n<!-- BEGIN IMMUTABLE D sha256=24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020 -->\n",
+          "wrapper_path": "wrappers/before_D.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 48327,
+          "bytes": 11335,
+          "expected_slice_sha256": "24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020",
+          "first_line": 989,
+          "kind": "accepted_core_slice",
+          "last_line": 1194,
+          "sha256": "24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020",
+          "source_line_end": 206,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/graph_calibration_source_assembly/archive/resume_20261012/energy_graph_perturbation_exposed_review/evidence/ANALYTIC_EVIDENCE.md",
+          "source_sha256": "24cb231fcaa5ca8fffbba28d3bd40578d5c6a3ea06a4f0fa5f727e6c4a8c9020"
+        },
+        {
+          "byte_offset": 59662,
+          "bytes": 25,
+          "first_line": 1195,
+          "kind": "publication_wrapper",
+          "last_line": 1195,
+          "sha256": "9711a8c6b120124c3e64a89735bc6066f9621d56afe2d2c8d2a0db6758d5c884",
+          "text": "<!-- END IMMUTABLE D -->\n",
+          "wrapper_path": "wrappers/note_suffix.md"
+        }
+      ],
+      "published_bytes": 59687,
+      "published_lines": 1195,
+      "published_sha256": "27ec24af8607f5aea48d58958348058e2de18813596294b94f929ad3ea5d4d28",
+      "stored_bytes": 3106,
+      "tofile": "docs/GRAPH_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "source_freeze_sha256": "281a36b1dc50d9eb2c052ce5b16bf8fbdcfc96998abaf775705c5879a6fdd035",
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/current_wrapper_to_publication.diff.gz",
+      "diff_bytes": 7334,
+      "diff_sha256": "2e90f68013e1d27c693f8e56c9f4b34db17f8605eacaf6343473081842c36ff0",
+      "diff_stored_sha256": "4a0aa057b88fc888f580a9362b5c1cc50dc7e055e1e45b06bb5ad78a8a00999f",
+      "fromfile": "accepted_assembly/CURRENT_WRAPPER.md",
+      "publication": "wrappers/note_prefix.md",
+      "publication_sha256": "e22d54e56d6ac7ecc5a79639357e9ddc57671fbcabeb09529fbdf0b60c63a2e7",
+      "source_line_range": [
+        1,
+        223
+      ],
+      "source_sha256": "9142b08d248873a5a080b63db861cc0c120abbc20a1ca929cb4ce7058e785017",
+      "stored_bytes": 3068,
+      "tofile": "wrappers/note_prefix.md"
+    }
+  ]
+}

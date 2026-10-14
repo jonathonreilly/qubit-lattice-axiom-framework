@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "bytes": 14924,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/prepare_verify_graph_calibration.py.gz",
+      "raw_bytes": 50169,
+      "raw_sha256": "6c7edad2050053417baad5075ffff6f8b008929b018972d7f8f0bf42a6596302",
+      "sha256": "2db4d71bcc909c786c64d57272b6191c8f0a9d3937af0b7c54b77a0d951f46ae"
+    },
+    {
+      "bytes": 3396,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/run_combined_validation.py.gz",
+      "raw_bytes": 8693,
+      "raw_sha256": "4162bd8120fe49243a9efa120bd804b0e1ef42fe0dfd966e7e87bfe7bc83d89f",
+      "sha256": "7411a08c7c160cee459b799cf361123376acfe96ec02fa7221c7f6e1aeb6c4cd"
+    },
+    {
+      "bytes": 4724,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/IDENTITY_TOOL.template.py.gz",
+      "raw_bytes": 13666,
+      "raw_sha256": "a7cdfae55eb404ad72fb0c720515fd79bb8ba1f0d901b8f1f7ca8f1f6051712d",
+      "sha256": "b3ba63a8dfedcd6344e0ad72d8821c661f14c68a881b18e5e595775dc719d771"
+    },
+    {
+      "bytes": 6561,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/BUILD_SOURCE_ONLY.py.gz",
+      "raw_bytes": 18538,
+      "raw_sha256": "b18b7440774ac0d17f1def36a9b03d13c24ecf91691626ca042f8b7dc9db98d9",
+      "sha256": "c24150f3ec64d7475bf5e1bf220d19941a7472176bd7f8fa828f114ae2bab35d"
+    },
+    {
+      "bytes": 5981,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/BIND_PUBLICATION_SOURCE_ONLY.py.gz",
+      "raw_bytes": 15161,
+      "raw_sha256": "9326fbfac38a782b0140bc60442148b2aa3d5ebb894151c4cc872ede62f421a7",
+      "sha256": "8d93d80173b195733567e0bca2c9979160044bc5ded0723fc86695348eca7354"
+    },
+    {
+      "bytes": 4383,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/ADAPT_PROGRAMS_SOURCE_ONLY.py.gz",
+      "raw_bytes": 12891,
+      "raw_sha256": "261c39262d232e9182b7a42f3056d9370da23815e5e76d611d614c0416ec6736",
+      "sha256": "06f04beab5e8c133bda2cc42de25073eec97d5bbcf543f968b9538c5f42cf3d0"
+    },
+    {
+      "bytes": 6447,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/WRITE_PACKET_SOURCE_ONLY.py.gz",
+      "raw_bytes": 15989,
+      "raw_sha256": "48833c2d2d7280620aab56ee9914f844ed70071df1441879daac48b5d808f9f2",
+      "sha256": "231e3ff9cb2f5fe120ebee1c085191886a1ab6fad235d1d75df38d61997327a1"
+    },
+    {
+      "bytes": 5948,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/CHECK_PREPARATION_SOURCES.py.gz",
+      "raw_bytes": 17242,
+      "raw_sha256": "1cdfa59df5ab87947e0ceccadd2a573c1ab43d18a98712741c0107c47c85085f",
+      "sha256": "105e55c718f718efb189aaa75d82b5abac46123517669b9580d2d995170bd991"
+    },
+    {
+      "bytes": 3187,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/FINALIZE_SOURCE_ONLY.py.gz",
+      "raw_bytes": 7958,
+      "raw_sha256": "7fa21c9c47d7541d5845076ede525b1096f1acb793012bf96ac895f5e68e0057",
+      "sha256": "f1b5cc0b5afac952b87ecbb2a00faaa780bba863675064bc47ad3f82df83e271"
+    },
+    {
+      "bytes": 905,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/RUN_SOURCE_CHECKS.py.gz",
+      "raw_bytes": 1910,
+      "raw_sha256": "0a887fb21cec329a39eb22ac250a8d3235b21b2fa2cca6eef3566fc4db45577d",
+      "sha256": "fe9d2f08cdd98b17da20d4359d9266824e07ff0f8b42a67f432f5671eb2c3d48"
+    },
+    {
+      "bytes": 924,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/programs/FREEZE_PACKAGE.py.gz",
+      "raw_bytes": 1843,
+      "raw_sha256": "28d86a1176ddfa1cf605210d556e1688f0d874d62e28ea9f5ca362bbfa761915",
+      "sha256": "9ccc0b9e049744b412fb0db49a73f930259eeaff048fb0ddefb0c59220c68851"
+    },
+    {
+      "bytes": 6201,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/program_diffs/prepare_verify_graph_calibration.py.diff.gz",
+      "raw_bytes": 20270,
+      "raw_sha256": "03ad2994ca70605471d0b4c2598c4ac1c3c9cd26e53b875dac9235fb27241957",
+      "sha256": "5d409d099178b8a99409915fdbeb59ac90a5b304466a71f6393906776bc03e24"
+    },
+    {
+      "bytes": 695,
+      "path": ".claude/science/physics-loops/toe-graph-calibration-20261013/program_diffs/run_combined_validation.py.diff.gz",
+      "raw_bytes": 1307,
+      "raw_sha256": "f92eb4baee67efa95976bf86aa0f4bcd89e6a54732fd3f89ac9b4a2a9899dd15",
+      "sha256": "c331edaab4e59b9956fb4afcbd9c2662340599a941b9797e3e7072d27f978b3a"
+    }
+  ],
+  "scope": "Exact program source and producer-exact diffs; no proposed program executed."
+}

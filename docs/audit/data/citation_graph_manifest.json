@@ -1,6 +1,6 @@
 {
- "edge_count": 15927,
- "node_count": 7055,
+ "edge_count": 15928,
+ "node_count": 7056,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8281,6 +8281,10 @@
   "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "graph_calibration_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "f0ebc44cde56",
+   "out_degree": 1
   },
   "graph_dirac_requirements_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,4 @@
+{
+  "policy": "Exact gzip archives preserve raw bytes; no broad text exemption.",
+  "preserved_source_whitespace": []
+}

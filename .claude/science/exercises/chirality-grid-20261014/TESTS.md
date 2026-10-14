@@ -137,3 +137,13 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Pass scales:** 1/a ≤ 5e11 GeV (10⁻¹⁵) or ≤ 5e8 GeV (10⁻²¹); otherwise one tuned counterterm per species per order.
 - **Reading:** R19-28's "charge block = 0 by W(B4) at all orders" does not survive RP gravity.
 - **Memory:** one run peaked at 443 MB (rerun at 245 MB, identical results).
+
+**OBS-1 result (21:46Z; same family; referee launched).**
+- **R1: FLAV-NEAR.** One loop, U(1) stand-in, SF strain.
+  - Branch B (circulant up quarks and charged leptons, CKM in the down sector) gives an m_p/m_e drift of ×0.12–2.5 the clock bound.
+  - Branch A (corner-aligned generations) gives ×80–360.
+  - Branch B′ gives ×2–93.
+  - Lemmas: staggered reflection makes on-site terms flavour-blind; circulant sectors are strain-blind.
+- **R2: Z4-EXACT** (conditions: no ν^cν^c term; symmetric mirror phase). In fact X2 has an exact U(1)_{B−L}: Dirac neutrinos, zero 0νββ, no n–n̄ oscillation. The named breaking operator is ν^cν^c.
+- **R3: PDK-SAFE-AT-PLANCK.** The floor is 1/a ≳ 2e16 GeV in the worst case. The skeptic's rate formula overstates by about 4800×.
+- **Biggest open hazard:** the flavour-pattern Lorentz-violation anisotropy from corner-selective Yukawas (suggested, not computed), which needs a lattice Yukawa loop.

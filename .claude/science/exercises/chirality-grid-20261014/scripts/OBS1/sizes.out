@@ -1,0 +1,78 @@
+one-loop inputs per e^2: C_par -5.5954e-02 C_perp -5.7464e-02 | own (incl c) par -2.6220e-03 perp -1.4791e-02 | leak t -7.6739e-03 s -1.6967e-02 o -8.6864e-03 | off in 2.0105e-02 normal 2.0713e-02
+checks: |V_us| 0.2256 |V_cb| 0.0415 |V_ub| 0.00351 unitary 2.2e-16; DFT unitary 2.2e-16
+T-aligned (circulant) sector, both splits: max |kappa| = 4.440892098500626e-16
+   NANOGrav one-component slope: f_min 1/16 yr, T_obs 10.0 yr: LS 1.502e-15 /yr, rms hdot 2.814e-15 /yr
+   NANOGrav one-component slope: f_min 1/16 yr, T_obs  5.0 yr: LS 3.422e-15 /yr, rms hdot 5.016e-15 /yr
+   NANOGrav one-component slope: f_min 1/30 yr, T_obs 10.0 yr: LS 2.626e-15 /yr, rms hdot 3.906e-15 /yr
+   NANOGrav one-component slope: f_min 1/30 yr, T_obs  5.0 yr: LS 4.274e-15 /yr, rms hdot 5.702e-15 /yr
+   S1 range 1.502e-15 .. 5.702e-15 /yr; clock bound 3.6e-17 /yr (Lange 2021, 1 sigma)
+
+R1: traceless first-order coefficients and the clock row (couplings: e^2 = 0.1 leptons, C_F g_s^2 = 0.4 quarks; bracket x0.5..x2)
+ A  corner-aligned (U_u = 1, U_d = V, U_e = 1) [trace]
+    per-e^2 |kappa| (Frobenius, traceless): u 4.801e+02, c 8.208e-01, t 4.219e-03; d 5.036e+00, s 2.547e-01, b 4.172e-03; e 1.993e+01
+    d ln m_e: 1.993e+00   d ln m_p: 3.902e+00   d ln(m_p/m_e): 1.911e+00 per unit strain (E_g components only: lower bound)
+    clock: rate 2.87e-15 .. 1.09e-14 /yr = x79.8 .. x303 of the bound;  coupling bracket x39.9 .. x605
+ A  corner-aligned (U_u = 1, U_d = V, U_e = 1) [selective]
+    per-e^2 |kappa| (Frobenius, traceless): u 5.751e+02, c 9.862e-01, t 9.967e-03; d 6.406e+00, s 3.257e-01, b 9.995e-03; e 2.464e+01
+    d ln m_e: 2.464e+00   d ln m_p: 4.708e+00   d ln(m_p/m_e): 2.251e+00 per unit strain (E_g components only: lower bound)
+    clock: rate 3.38e-15 .. 1.28e-14 /yr = x93.9 .. x357 of the bound;  coupling bracket x47 .. x713
+ B  minimal: u and e T-aligned, CKM in d, PMNS in nu (U_u = F, U_d = F V, U_e = F) [trace]
+    per-e^2 |kappa| (Frobenius, traceless): u 0.000e+00, c 0.000e+00, t 8.674e-19; d 2.421e-01, s 5.266e-03, b 5.210e-05; e 1.421e-14
+    d ln m_e: 1.421e-15   d ln m_p: 2.822e-03   d ln(m_p/m_e): 2.822e-03 per unit strain (E_g components only: lower bound)
+    clock: rate 4.24e-18 .. 1.61e-17 /yr = x0.118 .. x0.447 of the bound;  coupling bracket x0.0589 .. x0.894
+ B  minimal: u and e T-aligned, CKM in d, PMNS in nu (U_u = F, U_d = F V, U_e = F) [selective]
+    per-e^2 |kappa| (Frobenius, traceless): u 0.000e+00, c 4.441e-16, t 1.987e-18; d 1.359e+00, s 4.989e-02, b 1.986e-04; e 0.000e+00
+    d ln m_e: 0.000e+00   d ln m_p: 1.550e-02   d ln(m_p/m_e): 1.550e-02 per unit strain (E_g components only: lower bound)
+    clock: rate 2.33e-17 .. 8.84e-17 /yr = x0.647 .. x2.46 of the bound;  coupling bracket x0.323 .. x4.91
+ B' u and nu T-aligned, CKM in d, PMNS in e (U_u = F, U_d = F V, U_e = F U^dag) [trace]
+    per-e^2 |kappa| (Frobenius, traceless): u 0.000e+00, c 0.000e+00, t 8.674e-19; d 2.421e-01, s 5.266e-03, b 5.210e-05; e 5.023e-01
+    d ln m_e: 5.023e-02   d ln m_p: 2.822e-03   d ln(m_p/m_e): 5.230e-02 per unit strain (E_g components only: lower bound)
+    clock: rate 7.86e-17 .. 2.98e-16 /yr = x2.18 .. x8.28 of the bound;  coupling bracket x1.09 .. x16.6
+ B' u and nu T-aligned, CKM in d, PMNS in e (U_u = F, U_d = F V, U_e = F U^dag) [selective]
+    per-e^2 |kappa| (Frobenius, traceless): u 0.000e+00, c 4.441e-16, t 1.987e-18; d 1.359e+00, s 4.989e-02, b 1.986e-04; e 5.740e+00
+    d ln m_e: 5.740e-01   d ln m_p: 1.550e-02   d ln(m_p/m_e): 5.894e-01 per unit strain (E_g components only: lower bound)
+    clock: rate 8.85e-16 .. 3.36e-15 /yr = x24.6 .. x93.4 of the bound;  coupling bracket x12.3 .. x187
+
+R1 summary (ratio to the clock bound, central couplings):
+   branch A  [trace    ]: x79.8 .. x303
+   branch A  [selective]: x93.9 .. x357
+   branch B  [trace    ]: x0.118 .. x0.447
+   branch B  [selective]: x0.647 .. x2.46
+   branch B' [trace    ]: x2.18 .. x8.28
+   branch B' [selective]: x24.6 .. x93.4
+
+SME/LPI mapping:
+  untuned static corner velocity anisotropy per e^2: K_v = 6.204e-03 (Delta 0.5), 0 (Delta 0; staggered reflection).
+  -> electron c_jk ~ e^2 K_v ||n n - 1/3|| = 5.1e-04 vs ~1e-21 (x5e+17); quark (C_F g_s^2) 2.0e-03 vs neutron-sector 1e-29 (x2e+26) -- generation-blind, removed by one cubic counterterm per field type (set C price)
+  suggested flavour-pattern residual: registered formula y_tau^2/(16 pi^2) x K_v = 4.1e-09; corrected (K_v already contains the loop measure) y_tau^2 x K_v = 6.5e-07
+  suggested flavour-pattern residual: registered formula y_b^2/(16 pi^2) x K_v = 2.3e-08; corrected (K_v already contains the loop measure) y_b^2 x K_v = 3.6e-06
+  suggested flavour-pattern residual: registered formula y_t^2/(16 pi^2) x K_v = 3.9e-05; corrected (K_v already contains the loop measure) y_t^2 x K_v = 6.1e-03
+  LPI (conditional: static traceless strain ~ Delta Phi_sun/c^2 = 3.3e-10): |d ln mu| ~ 6.3e-10 vs 7(45)e-8 x dPhi = 1.5e-16: x4.2e+06   [A]
+  LPI (conditional: static traceless strain ~ Delta Phi_sun/c^2 = 3.3e-10): |d ln mu| ~ 9.3e-13 vs 7(45)e-8 x dPhi = 1.5e-16: x6.3e+03   [B]
+  LPI (conditional: static traceless strain ~ Delta Phi_sun/c^2 = 3.3e-10): |d ln mu| ~ 1.7e-11 vs 7(45)e-8 x dPhi = 1.5e-16: x1.2e+05   [B']
+
+R2: Z4 audit (exact rationals). X = 5(B-L) - 4Y; Z4 phase of a gauge-invariant operator = i^(X) = i^(B-L) (Y-sum 0)
+  X charges: {'Q': '1', 'uc': '1', 'dc': '-3', 'L': '-3', 'ec': '1', 'nc': '5', 'H': '-2'} ; X mod 4 on fermions: {'Q': 1, 'uc': 1, 'dc': 1, 'L': 1, 'ec': 1, 'nc': 1}
+  sum X^3, sum X, sum X Y^2 ... over the 16 (multiplicities 6,3,3,2,1,1): ['0', '0', '0']
+  enumerated 1003 candidate gauge-invariant monomials (<= 6 legs): identity X = (B-L) = F_Z4 mod 4 violated in 0; counts by (B-L) mod 4: {0: 563, 2: 440}
+   nu^c nu^c                      Y-sum     0  B-L   2  Z4 FORBIDDEN
+   L L H H                        Y-sum     0  B-L  -2  Z4 FORBIDDEN
+   Q Q Q L                        Y-sum     0  B-L   0  Z4 allowed
+   uc uc dc ec                    Y-sum     0  B-L   0  Z4 allowed
+   (uc dc dc)^2                   Y-sum     0  B-L  -2  Z4 FORBIDDEN
+   dc dc dc L H^dag (dim 7, B-L violating) Y-sum     0  B-L  -2  Z4 FORBIDDEN
+   nu^c^4 (Delta L = 4)           Y-sum     0  B-L   4  Z4 allowed
+   Q u^c H^dag-type Yukawa        Y-sum     0  B-L   0  Z4 allowed
+
+R3: p -> e+ pi0 floor on 1/a.  Gamma = (m_p/32 pi)(1 - m_pi^2/m_p^2)^2 |C W0 A_R|^2, C = c_eff a^2
+  W0 0.1 GeV^2, A_R 1.0: |C| < 9.85e-32 GeV^-2  (unit-coefficient Lambda > 3.19e+15 GeV)
+  W0 0.1 GeV^2, A_R 2.5: |C| < 3.94e-32 GeV^-2  (unit-coefficient Lambda > 5.04e+15 GeV)
+  W0 0.15 GeV^2, A_R 1.0: |C| < 6.57e-32 GeV^-2  (unit-coefficient Lambda > 3.90e+15 GeV)
+  W0 0.15 GeV^2, A_R 2.5: |C| < 2.63e-32 GeV^-2  (unit-coefficient Lambda > 6.17e+15 GeV)
+  (i) link-pair conversion W eps^2, eps 0.02..0.13, W 1..10: c_eff 4.0e-04..1.7e-01 -> floor 1/a > 6.4e+13 .. 2.5e+15 GeV;  at a = l_P lifetime margin >= 5.4e+14
+  (ii) loop filter offset W df^4, df ~ 0.1 e^2 (checked toy: 0.094 e^2 per unit Delta), e^2 0.1..0.4: c_eff 7.8e-09..2.1e-05 -> floor 1/a > 2.8e+11 .. 2.8e+13 GeV;  at a = l_P lifetime margin >= 3.5e+22
+  (iii) worst case allowed with light corners light: c_eff = W <= 10: c_eff 1.0e+00..1.0e+01 -> floor 1/a > 3.2e+15 .. 2.0e+16 GeV;  at a = l_P lifetime margin >= 1.5e+11
+  (iv) direct filtered quartic: 4 light legs x f ~ (qa)^2/4 each -> dimension-14; negligible at any a with 1/a > 1e3 GeV
+  skeptic recheck: Gamma = m_p^5/Lambda^4 overstates the rate by m_p^4/((1/32pi)(0.96) W0^2) = 4807 (W0 = 0.13)
+  unit coefficient, Lambda 1.00e+16 GeV, W0 0.13, A_R 1: tau = 1.4e+36 yr (bound 2.4e34): margin 5.7e+01
+  unit coefficient, Lambda 1.22e+19 GeV, W0 0.13, A_R 1: tau = 3.1e+48 yr (bound 2.4e34): margin 1.3e+14

@@ -1,0 +1,15 @@
+max |p11 + p00+p10+p01| (should be 0 mod 2pi): 2.6645352591003757e-15
+max |plaquette|: 0.5463240454944991
+closed vs indep: max |diff| = 6.288372600415926e-18  max K = 0.0046442209583807265  nonzero frac 0.1225
+near-matched pool: closed vs indep max |diff| = 7.806255641895632e-18  max K = 0.0046442209583807265  nonzero frac 0.905
+pair 0,1: closed 1.713778e-03  indep 1.713778e-03  MC 1.724250e-03 +- 2.1e-05  (z = +0.50)
+pair 2,3: closed 1.020480e-03  indep 1.020480e-03  MC 1.020250e-03 +- 1.6e-05  (z = -0.01)
+pair 4,5: closed 3.005179e-04  indep 3.005179e-04  MC 3.005000e-04 +- 8.7e-06  (z = -0.00)
+pair 0,0: closed 4.644221e-03  indep 4.644221e-03  MC 4.633250e-03 +- 3.4e-05  (z = -0.32)
+pair 6,9: closed 1.608805e-04  indep 1.608805e-04  MC 1.530000e-04 +- 6.2e-06  (z = -1.27)
+pair 10,11: closed 1.748999e-03  indep 1.748999e-03  MC 1.763750e-03 +- 2.1e-05  (z = +0.70)
+pair 12,20: closed 1.332704e-03  indep 1.332704e-03  MC 1.345750e-03 +- 1.8e-05  (z = +0.71)
+generic pair 0,1: closed 1.772952e-03 indep 1.772952e-03 MC 1.793250e-03 +- 2.1e-05
+generic pair 2,3: closed 0.000000e+00 indep 0.000000e+00 MC 0.000000e+00 +- 0.0e+00
+generic pair 4,5: closed 0.000000e+00 indep 0.000000e+00 MC 0.000000e+00 +- 0.0e+00
+time 3.7 s; peak RSS MB 310.21875

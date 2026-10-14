@@ -1,0 +1,2 @@
+RESULT O22 unres N=16 (R1 power reference, rho=0.1): lam_min -1.4359e+00 at k=(np.int64(13), np.int64(3), np.int64(1), np.int64(15)) lam_max 3.7492e+02 rel -3.830e-03 | E 1.1e-07 | neg-converged True | 10.0s RSS 85MB
+watchdog peak RSS 85232 KB

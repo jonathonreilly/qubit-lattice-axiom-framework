@@ -112,3 +112,12 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - the cube gap is 1.31/1.65 against 1.0 on-site.
 - **Next:** T-G1′ (2+1D at finite W), gated on SIGN-1.
 - Memory overrun of ~1.1 GB for ~10 s, recorded.
+
+**NT-2 result (21:19Z; same family; referee launched): PG3-NEG.**
+- The hard plaquette bound is not RP in 3D pure U(1):
+  - proved exactly on the 2×2 periodic slice (rational inertia (5,1), every δ < π/4) and on the 1×2 open strip (inertia (15,1), every δ < π/3);
+  - converged negative on the open 2×2 block (smooth test functions).
+- **Mechanism:** the cusp coefficient becomes a flux kernel with a negative direction in 3D.
+- **Fix:** a positive-type profile with the same support restores pure-gauge RP. That is law data, not an axiom change, but it does not rescue the overlap.
+- **Correction owed:** K2c and its referee's "3D/4D suggested" → "3D not RP".
+- **Memory incidents:** a 5.2 GB run was killed by the supervisor; later watchdog kills were recorded.

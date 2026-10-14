@@ -1,0 +1,2 @@
+RESULT O12 mode=unres n=16 (256 pts) delta=0.6: lam_min -7.2540e-02 lam_max 2.3235e+01 rel -3.122e-03 | simpson lam_min -7.2540e-02 | E 4.5e-11 | neg-converged True | max|phi| 3.142 | 0.3s RSS 34MB
+watchdog peak RSS 30448 KB

@@ -1,0 +1,19 @@
+line (1, 0) npts 5: rel +7.358e-04
+line (1, 0) npts 9: rel +3.293e-05
+line (1, 0) npts 17: rel +1.915e-06
+line (1, 1) npts 5: rel +2.520e-03
+line (1, 1) npts 9: rel +8.526e-05
+line (1, 1) npts 17: rel +4.767e-06
+line (1, -1) npts 5: rel +1.578e-03
+line (1, -1) npts 9: rel +7.092e-05
+line (1, -1) npts 17: rel +4.102e-06
+line (1, -0.5) npts 5: rel +8.116e-04
+line (1, -0.5) npts 9: rel +3.687e-05
+line (1, -0.5) npts 17: rel +2.149e-06
+line (1, 0.5) npts 5: rel +1.006e-03
+line (1, 0.5) npts 9: rel +4.196e-05
+line (1, 0.5) npts 17: rel +2.346e-06
+grid 3x3: rel +1.049e-03  lam_min +5.861e-03
+grid 4x4: rel -9.171e-06  lam_min -9.926e-05
+grid 5x5: rel -6.910e-06  lam_min -1.221e-04
+watchdog peak RSS 29120 KB

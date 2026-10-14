@@ -1,0 +1,2 @@
+RESULT V4 W0-matched oct grid h=0.15: 575 configs, max|plaq| 0.5250, max|X0|,|Y0| 8.9e-16,8.9e-16 | indep lam_min -2.13158e-04 closed -2.13158e-04 rel -1.707e-04 | E 7.3e-13 | neg-converged True | #neg 171 | 23.0s RSS 120MB
+watchdog peak RSS 117376 KB

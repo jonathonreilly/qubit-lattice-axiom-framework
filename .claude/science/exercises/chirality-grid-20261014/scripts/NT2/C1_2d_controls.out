@@ -1,0 +1,4 @@
+Lx=2: lam_min/lam_max +1.3817e-03  (#neg 0)
+Lx=3: lam_min/lam_max -8.9487e-03  (#neg 28)
+Lx=4: lam_min/lam_max +3.3165e-07  (#neg 0)
+watchdog peak RSS 480 KB

@@ -1,0 +1,5 @@
+R set [-1.1, 1.1] -> smallest negative: None
+R set [-1.1, 0, 1.1] -> smallest negative: (np.float64(-4.462502531082249e-05), 6, 0.05, 2)
+R set [0, 1.1] -> smallest negative: None
+R set [-0.55, 0.55] -> smallest negative: None
+watchdog peak RSS 704 KB

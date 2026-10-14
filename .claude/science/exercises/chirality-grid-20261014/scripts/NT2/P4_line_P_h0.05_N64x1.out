@@ -1,0 +1,11 @@
+memory estimate ~1 MB (Kst x3)
+grid line_P h=0.05 M=44 ring 64x1 delta=0.6 | max|plaquette| 0.5500 (admissible margin: True)
+overall lam_max 1.1908e+00; most negative blocks (lam_min, jx, jy):
+   lam_min -3.3825e-03 (rel -2.841e-03) at (jx, jy) = (5, 0), herm defect 8.9e-18
+   lam_min -1.7549e-03 (rel -1.474e-03) at (jx, jy) = (7, 0), herm defect 8.0e-18
+   lam_min -1.5664e-03 (rel -1.315e-03) at (jx, jy) = (6, 0), herm defect 8.4e-18
+   lam_min -9.9976e-04 (rel -8.396e-04) at (jx, jy) = (4, 0), herm defect 8.7e-18
+   lam_min -2.2499e-04 (rel -1.889e-04) at (jx, jy) = (10, 0), herm defect 9.3e-18
+   lam_min -1.7434e-04 (rel -1.464e-04) at (jx, jy) = (11, 0), herm defect 7.8e-18
+RESULT grid=line_P h=0.05 M=44 ring=64x1 delta=0.6: lam_min -3.3825e-03 rel -2.841e-03 at j=(5,0) | floor E 3.4e-11 | neg-converged True | admissible True | 0.0s RSS 31MB
+watchdog peak RSS 1728 KB

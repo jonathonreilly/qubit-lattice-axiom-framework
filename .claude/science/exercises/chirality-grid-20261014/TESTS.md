@@ -41,3 +41,36 @@ Memory: ≤ 0.4 GB per run for NT-1 and NT-2, ≤ 1 GB for NT-3, one process at 
 - **TG1-SYMMETRIC:** at strong coupling, the filtered model has a unique, symmetric, gapped ground state with no order-parameter growth with size.
 - **TG1-BROKEN:** degeneracy or order that grows with size (an SSB precursor), or a gapless sector.
 - **OPEN:** otherwise.
+
+## Panel D work items (pre-registered 2026-10-14 ~21:12Z, at Jon's request: "do the recommended work then")
+
+Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one process at a time per agent. Each agent writes its detailed PREREG.md before running. These readings are fixed now.
+
+**OBS-1. X2 observational sheet** (strategy panelist). Does the corner package survive data before any compute is spent?
+- **R1, flavour–strain (X2-L8).** Compute the first-order strain coefficient that nontrivial CKM forces on the hw1 generation corners (at least one branch; state all branches tried). Map it to the m_p/m_e drift under the measured nHz GW background (clock bound ~4e-17/yr) and to matter-sector Lorentz-violation bounds.
+  - **FLAV-KILL:** more than 10× over a bound on every allowed branch.
+  - **FLAV-NEAR:** within 10× on some branch.
+  - **FLAV-SAFE:** below 1e-2 of all bounds on every branch.
+  - **OPEN:** otherwise.
+- **R2, Z₄^F on the light sector.** Is Z₄^F exact on the light sector of the full X2 law, including leakage operators and electroweak breaking?
+  - **Z4-EXACT:** implies Dirac neutrinos and no 0νββ, stated as a prediction.
+  - **Z4-BROKEN:** name the breaking operator.
+  - **OPEN.**
+- **R3, proton decay.** From X2's leakage, the floor on 1/a set by Super-K's proton lifetime.
+  - **PDK-SAFE-AT-PLANCK:** passes at a = ℓ_P; state the floor.
+  - **PDK-FAIL-AT-PLANCK.**
+  - **OPEN.**
+
+**UV-1. Is the RP failure a grid-scale effect?** (qinfo panelist). Reuse K2c's code (2D U(1), vector-like overlap, hard support). Use gauge coupling β_g > 0 (at least 3 values, e.g. 1, 4, 8) and W-matched witnesses restricted to test functions supported at distance ≥ t₀ from the reflection plane (t₀ = 1, 2, 3, 4), on tori Lt = 12–20.
+- **UV-ONLY:** at every β_g, the negativity vanishes (PSD at power) for t₀ ≥ t\* with t\* ≤ 3 lattice spacings.
+- **PERSISTS:** a quadrature-converged negative eigenvalue at t₀ ≥ 3 for some β_g.
+- **OPEN:** otherwise.
+
+**BLEAK-1. Set B's RP-safe gravity bridge and the matter light cone** (gravity panelist).
+- **Setup.** On Euclidean Z⁴, couple a free scalar, then a Wilson fermion, to the spatial-TT graviton plus R19-33's D2 bridge (the only site-RP realization on record). Compute at one graviton loop the matter time–space speed row allowed by the residual W(B3)×Z₂ᵀ symmetry.
+- **Control.** The same loop with K2's exactly conserved stress, where W(B4) forces the row to zero.
+- **Readings** (|δc| at a = ℓ_P with the canonical coupling):
+  - **LEAK-ZERO:** zero by an identity.
+  - **LEAK-SMALL:** below 1e-15.
+  - **LEAK-PLANCK:** |δc| ≥ 1e-6.
+  - **OPEN:** otherwise.

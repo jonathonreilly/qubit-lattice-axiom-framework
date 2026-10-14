@@ -1,0 +1,128 @@
+{
+  "actual_parent_head": "ae799f501e2819256584699097153f27f0b20583",
+  "actual_parent_pr": {
+    "isDraft": false,
+    "number": 9543,
+    "status": "OPEN as supplied by root",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9543"
+  },
+  "all_markdown_note_targets": [
+    "UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+    "MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binary_theorem_imported": false,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 25712,
+      "byte_start_inclusive": 12811,
+      "canonical_path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "role": "repaired direct frame and matrix-chain bound",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_root_preexposure/DERIVATION_V2.md",
+      "source_sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 53754,
+      "byte_start_inclusive": 26092,
+      "canonical_path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "role": "literal geometry and reducing physical target interface",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_penalty_uniformity/DERIVATION.md",
+      "source_sha256": "ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 65390,
+      "byte_start_inclusive": 54120,
+      "canonical_path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "role": "nonempty even-volume subcode only",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/all_volume_code_root/DERIVATION_V2.md",
+      "source_sha256": "2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 93340,
+      "byte_start_inclusive": 65846,
+      "canonical_path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "role": "full whole-term physical control budget",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/DERIVATION.md",
+      "source_sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 93370,
+      "claim_id": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Original analytic/root recorded coverage; source preparation preserves full/partial exposure distinction",
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "markdown": "[local-uniformity theorem](UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "read_coverage": "Complete canonical parent and four exact complete component proofs, earlier accepted coverage reused",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+      "bytes": 33479,
+      "claim_id": "microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Original analytic/root recorded coverage; source preparation preserves full/partial exposure distinction",
+      "imported_theorem_result": false,
+      "key": "LR_WALK_ATTRIBUTION",
+      "markdown": "[finite-volume LR walk-expansion context](MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md)",
+      "path": "docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+      "published_sha256": "66ae1faa267c8140c06ed1fe52671f4e6e98478181ef1e11ee512b4cd26e89b0",
+      "read_coverage": "historical attribution/overlap source: complete source read, initially truncated middle recovered lines220-345; context only, no theorem import",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+      "bytes": 8842,
+      "claim_id": "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Original analytic/root recorded coverage; source preparation preserves full/partial exposure distinction",
+      "imported_theorem_result": false,
+      "key": "WEIGHTED_LR_ATTRIBUTION",
+      "markdown": "[weighted quasilocal LR context](MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md)",
+      "path": "docs/MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+      "published_sha256": "4149c80ba6fb3cf905763fa853f853dd7633ea3e1539165ff8c4c75993dd1df3",
+      "read_coverage": "historical attribution/overlap source: lines1-120 only; attribution, not premise",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "LR_WALK_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "WEIGHTED_LR_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "verification_scope": "Actual source citations/roles and existing manifest-node identities inspected; no graph program executed"
+}

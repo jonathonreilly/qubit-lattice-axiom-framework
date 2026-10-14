@@ -1,0 +1,71 @@
+{
+  "frontmatter": "---\ntitle: Geometric-time refinement of local Gauss-penalty recovery\nclaim_id: geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: finite even volumes, local physical output and arbitrary passive reference, supplied initial K state and static controls, horizon-dependent sufficient slowdown\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted local geometric estimate and horizon-specific sufficient control-time bound; identity runner evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\", \"microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18\", \"microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18\"]\nrunner: scripts/geometric_time_local_gauss_penalty_recovery_identity_2026_10_14.py\nnext_trace_action: separate root review and guarded integration of this publication package, then regular PR and independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "914ee9a23eea7dd55e277d9eb782ff086c3020f9ac6822c7fb3aef9efd55dd43",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 29559,
+          "byte_start_inclusive": 14406,
+          "bytes": 15153,
+          "id": "GEOMETRIC_TIME",
+          "line_end_inclusive": 275,
+          "line_start_inclusive": 120,
+          "sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/cores/GEOMETRIC_TIME_DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 7996,
+      "diff_sha256": "d0aafd4052d8b590d3394e10e373f7907989ec33b425d073a715b56fe1a36e07",
+      "diff_stored_sha256": "b546c7eeb87697a0c2eb3197b74bae86d1086207ba8e01ee3f1930cf41e3d1f8",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/GEOMETRIC_TIME_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/cores/GEOMETRIC_TIME_DERIVATION.md",
+          "source_sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0"
+        }
+      ],
+      "pieces_scope": "Whitespace source-identity projection only; complete reconstruction uses frontmatter, rendered wrapper and unchanged accepted remainder.",
+      "published_bytes": 29559,
+      "published_lines": 275,
+      "published_sha256": "73810438b22ff522167e09b8445122cbec58dba788de7049241357e9511c555d",
+      "stored_bytes": 3060,
+      "tofile": "docs/GEOMETRIC_TIME_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "635d9eb9f88c542b20dfec8bf093d416c224dbfb6662665a7dfd568401936871",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 6280,
+    "diff_sha256": "62ed82a7530edd5b56fa5f7764da6f993dbfd971c30c3096c5f9620d6b30d1d5",
+    "diff_stored_sha256": "f0343a0072e27a9c6442f3ed9dce670e35572b7f9091d1565f97ac87fe364977",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 2509,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "The new wrapper and assembly await their own substantive root review.",
+      "rendered": "The exact wrapper and assembly were accepted under `7f45dd068ac8fdb2b5cef5f3cf3c65e4807fe5e385570efb32352c0f401cbb13`, following root review `58bf88196e0123317dd0de42e432b0848c3efc7e9b68afd482b12f44b9242dea`. This publication rendering and driver require separate root review.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "canonical `docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md`",
+      "rendered": "canonical [local-uniformity theorem](UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Lieb\u2013Robinson propagation, weighted matrix bounds, light-cone volume estimates and local perturbation comparisons are existing machinery.",
+      "rendered": "Lieb\u2013Robinson propagation, weighted matrix bounds, light-cone volume estimates and local perturbation comparisons are existing machinery. The canonical [finite-volume LR walk-expansion context](MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md) and [weighted quasilocal LR context](MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md) are attribution-only citations: the analytic source records a complete first-source read with its truncated middle recovered, and lines 1\u2013120 only of the second. Their theorem constants and other conclusions are not imported.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

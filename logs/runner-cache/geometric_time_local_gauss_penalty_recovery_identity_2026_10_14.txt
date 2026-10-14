@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/geometric_time_local_gauss_penalty_recovery_identity_2026_10_14.py
+runner_sha256: fee42b977a412eaf216eed4b186eeaef1a9399713548525184afa3bbf90110e2
+input_fingerprint_sha256: e83c24fa1f4033c13f59392d4ff5a7fa7ade32f0869d7f3166c858ab1f2531f5
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"attribution_reads": ["docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md", "docs/MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md"], "claim_id": "geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": ["docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no local trace estimate or time-cost theorem was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

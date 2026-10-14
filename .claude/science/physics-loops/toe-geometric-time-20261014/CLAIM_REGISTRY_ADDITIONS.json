@@ -1,0 +1,54 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18"
+    },
+    {
+      "from": "geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18"
+    }
+  ],
+  "expected_delta": {
+    "edges": 3,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+        "microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18",
+        "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18"
+      ],
+      "path": "docs/GEOMETRIC_TIME_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/geometric_time_local_gauss_penalty_recovery_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "LR_WALK_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "WEIGHTED_LR_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "scope": "Derived from three preserved canonical Markdown citations; attribution edge is not a theorem import. Actual graph remains root-owned and may reveal a discrepancy requiring review."
+}

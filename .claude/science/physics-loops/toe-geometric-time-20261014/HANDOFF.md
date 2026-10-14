@@ -1,0 +1,7 @@
+# Root integration handoff
+
+Review the complete current wrapper/frontmatter, exact unchanged proof extraction, four canonical parent-component maps, every changed function/global and all packet records. Reuse earlier complete source coverage only at its exact identity. Source assembly acceptance does not authorize this publication driver.
+
+Actual parent/head/regular PR bindings must be complete before source freeze. A new external root acceptance and exact review must bind the final frozen package and driver. The placeholder remains false. Prepare installs only frozen allowlisted payload and the two exact external root records, then runs the canonical identity baseline, four exact-reason corruption controls and actual citation-graph comparison. Root stages explicitly from the emitted NUL allowlist. Verify checks the exact staged blobs and worktree both before and after focused existing-ledger compatibility.
+
+Preserve all actual outer/inner streams, failed directories and corruption fixtures. Argument parsing may fail before the driver's run directory; an outer recorder is required. The existing canonical cache API merges child stderr into stdout; preserve that actual merged stream without inventing separated streams. Parent science is not rerun. Empty checked[]/CI is not an audit. The source preparation is not the operational checkpoint; recovery stays with the sole root-owned STATE/HANDOFF.

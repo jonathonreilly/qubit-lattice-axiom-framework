@@ -186,3 +186,19 @@ Report: `kills/K2c/K2c_REPORT.md`. Same-family agent; **codex referee running si
   - this overturns the K2 referee's hard-measure correction;
   - L3g fails for X3's exact measure and on the torus, in the 2D U(1) vector-like proxy;
   - the X3 contingency is triggered: the real-time branch needs Π-W, or 5D fermions without PV fields (F2-R's finite-n price).
+
+### K2c: codex referee verdict (2026-10-14 ~20:40Z), CONFIRMED WITH CORRECTIONS
+
+- **The W-matched construction is legitimate.** It selects gauge-orbit centres. By continuity and margins, the negative matrix gives smooth gauge-invariant bump-function witnesses.
+- **Torus negatives reproduced independently** (new explicit-link SVD builder):
+  - Lt = 12: −1.4728e-4, relative −6.33e-6;
+  - Lt = 16: −7.266e-5, relative −5.13e-6;
+  - Wilson controls PSD;
+  - Shamir and PV-DWF L_s = 4/8 negatives also reproduced on the torus.
+- **Pure gauge:**
+  - Lx = 2 is positive type (Schur product);
+  - Lx = 3 is negative (−8.95e-3 relative, rigorous tail bound);
+  - 3D/4D stays *suggested*.
+- **Masking** is strongly supported, but as an empirical diagnosis, not a factorization theorem.
+- **"Certified negative" is overstated.** It should read "numerically secure, quadrature-converged negative".
+- **Scope:** this establishes non-RP of X3's hard-support rule for the finite 2D U(1) vector-like overlap proxy (Lx = 2; tori Lt = 12/16; M = 1, m = 0.05, β_g = 0). It does **not** establish non-RP in infinite volume, in 4D, for non-abelian groups, or for X3's chiral measure. **The finite-torus escape is closed for this proxy.**

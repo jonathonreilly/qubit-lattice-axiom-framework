@@ -1,0 +1,9 @@
+{
+  "cache_evidence_scope": "Freshness and successful byte identity do not constitute a mathematical proof or audit.",
+  "complete_actual_read_closure": "Literal AUDIT_INPUT_PATHS, checked against the runtime read set; the runner itself is separately fingerprinted by canonical cache.",
+  "helper_runner_paths": [],
+  "historical_science_controls": "Archived with actual prior streams; not registered as rerun helpers and not executed by the primary.",
+  "mathematical_predicates": 0,
+  "primary_runner": "scripts/onsite_energy_autonomous_controller_identity_2026_10_14.py",
+  "primary_scope": "source identity only"
+}

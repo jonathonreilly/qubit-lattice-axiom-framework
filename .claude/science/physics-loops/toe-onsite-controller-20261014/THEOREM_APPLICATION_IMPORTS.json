@@ -1,0 +1,66 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "context_only": [
+    {
+      "archive_path": "archive/context/next_physical_interface_REPORT.md",
+      "name": "next_physical_interface survey",
+      "role": "historical motivation and author exposure only",
+      "sha256": "ee6082a2abe873c9c832bdd15caed3ac2569850a38a60210154ef38ecd60ca4a"
+    },
+    {
+      "name": "finite-chain energy-history publication ancestry",
+      "role": "possible Git-stack context only; no theorem imported and no scientific dependency edge"
+    },
+    {
+      "name": "kinetic-history/common-energy/interacting-chain results",
+      "role": "not used as premises for this conditional onsite construction"
+    }
+  ],
+  "external_canonical_mathematical_dependencies": [],
+  "finite_controls_role": "selected floating witnesses and wrong-model controls, not universal proof",
+  "intended_canonical_graph_policy": "After inlining the self-contained proof, zero external canonical scientific edges are requested. A new note still requires graph topology integration; not performed here.",
+  "literature": [
+    {
+      "role": "prior-art attribution for engineered perfect transfer; needed identity proved here",
+      "url": "https://arxiv.org/abs/quant-ph/0309131"
+    },
+    {
+      "role": "prior-art attribution and fixed-strength/time context; no black-box theorem dependency",
+      "url": "https://arxiv.org/abs/quant-ph/0411020"
+    },
+    {
+      "role": "prior-art attribution for Hamiltonian computation and pulse-clock initialization; no universal-computation theorem imported",
+      "url": "https://arxiv.org/abs/0908.4219"
+    }
+  ],
+  "mathematical_tools_proved_in_body": [
+    "exchange-channel second derivative bound and complete telescope",
+    "routing-vacuum prefix invariant",
+    "full-clock positive-link decomposition",
+    "spin representation and exact endpoint transfer",
+    "row-sum/Duhamel and isometry precision bounds",
+    "actual energy moment and covariance identities"
+  ],
+  "new_framework_axioms_or_primitives": [],
+  "parallel_root_records_role": "corroboration and historical alternative constants, not extra theorem hypotheses",
+  "review_records_role": "source-exposed mathematical verification and correction provenance, not audit status",
+  "self_contained_proof_bodies": [
+    {
+      "path": "cores/CORRECTED_DERIVATION.md",
+      "role": "central complete onsite theorem and structured precision; no external theorem needed",
+      "sha256": "9db03ad2582a76131ad3d419a037988ec440636371cb8b58444ef4d4902dcd1b"
+    },
+    {
+      "path": "cores/ENDPOINT_COVARIANCE_CLARIFICATION.md",
+      "role": "explicit endpoint covariance expansion; root robust-clock variant remains distinct",
+      "sha256": "06151c0ecb5f5b56c279e8a873f9972e6f42378db324f6bd7929684e52748843"
+    }
+  ],
+  "supplied_model_inputs": [
+    "finite tensor-product qubit quantum model and unitary Hamiltonian evolution",
+    "common exactly specified onsite gap",
+    "engineered static finite-range three/four-qubit matrices",
+    "coherent fuel, routing vacuum and initialized one-head clock independent of source/reference",
+    "specified structured errors and one declared observation time"
+  ]
+}

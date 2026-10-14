@@ -1,0 +1,3 @@
+# Trace gate
+
+The surface is upstream_support for constructing an autonomous controller on the same physical source in a supplied onsite model. No downstream scientific consumer is asserted. Its contribution is an explicit positive full-clock construction, arbitrary-reference channel error, bounded local geometry/strength and actual structured-error energy ledger. An interacting/native model, physical initialization and actual stopping/read apparatus remain separate targets. The positive conditional theorem is complete under its stated premises; these additional targets are not silently assumed proved.

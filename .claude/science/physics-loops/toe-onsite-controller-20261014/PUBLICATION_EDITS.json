@@ -1,0 +1,117 @@
+{
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "583fdff66f44d190a76419dc47b8c313493b4fdb54fc1c5ede7e112efa5eb987",
+      "context_lines": 3,
+      "diff": "diffs/complete_publication.diff.gz",
+      "diff_bytes": 5355,
+      "diff_sha256": "963676c1e3840a947b84c94b19711d6cc753ff9d5ff09e276677d0136c0e7c98",
+      "diff_stored_sha256": "5b7e52c4fbfe080e9777c22adfd26edaaab48c64e5975e9eb0acb90ef55c5622",
+      "fromfile": "accepted/CANDIDATE.md",
+      "note": "docs/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 2824,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 32,
+          "sha256": "e0c8d9afdf728d0d9539a2e4dc55fd13078a4c50776ff17ab20a78088099dff5",
+          "text": "---\ntitle: \"Autonomous onsite-energy source-qubit rotations with bounded local interactions\"\nclaim_id: onsite_energy_autonomous_controller_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nstatus: proposed_retained\nupstream_dependencies: []\nrunner: scripts/onsite_energy_autonomous_controller_identity_2026_10_14.py\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: \"Construct a bounded-resource autonomous controller on the same physical source factor in a supplied onsite-energy model.\"\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: null\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Self-contained conditional finite-qubit construction with supplied engineering, preparation, symmetry and read-time premises.\"\nnext_trace_action: \"Root source-integration review, followed by distinct current-main landing and independent retained-audit gates.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\nClaim type: bounded_theorem\n\nPublication status: conditional-support; proposed_retained is a target, not an audit outcome. The accepted assembly and its complete mathematical cores were substantively reviewed by root at acceptance `9e5a065a63d0bc6b73c9f5a990b792f05226f7f636e841963bbc82a1703d9021`. The following assembly text retains its historical status language. Its root assembly review is complete; a separate driver-bound integration acceptance, canonical execution and later landing/audit gates remain distinct. Only the expressly required preparation-guarantee sentence has changed in that text, with an exact preserved diff. Both full proof bodies are byte-identical to the accepted sources.\n\nThis note has no external canonical mathematical dependencies. The finite-apparatus branch and PR9529 are Git ancestry only. Perfect transfer and Hamiltonian computation are attributed prior art. The theorem concerns a supplied onsite Hamiltonian, original-source/reference channel, local strength and structured precision at one declared read time. It does not derive native preparation, stopping or an interacting-chain controller.\n\nThe primary script `scripts/onsite_energy_autonomous_controller_identity_2026_10_14.py` checks source identities, extraction and publication reconstruction only: zero mathematical predicates. Historical mathematical reviews and selected numerical streams remain separate evidence. The publication packet is `.claude/science/physics-loops/toe-onsite-controller-20261014`; its EVIDENCE_MAP and PUBLICATION_EDITS identify every archived original and every canonical piece. No scientific control was rerun for publication.\n\n",
+          "wrapper_path": "wrappers/PUBLICATION_FRONT.md"
+        },
+        {
+          "byte_offset": 2824,
+          "bytes": 15072,
+          "first_line": 33,
+          "kind": "accepted_wrapper_with_required_clarification",
+          "last_line": 167,
+          "original_bytes": 15043,
+          "sha256": "0428bdd79b0262677c6cc1f196a4c681c169b89cc45d28e85815857d42e54260",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/THEOREM_WRAPPER.md",
+          "source_sha256": "46e53f829b1730dafd381154ad03c3b123f0be2ba8623a03048a69c7f94af79a"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 17896,
+          "bytes": 314,
+          "expected_slice_sha256": "5f9c12ce717726a5cece97657d32acfa9730beb163b7ab9908e50a4b6c080648",
+          "first_line": 168,
+          "kind": "accepted_framing",
+          "last_line": 174,
+          "sha256": "5f9c12ce717726a5cece97657d32acfa9730beb163b7ab9908e50a4b6c080648",
+          "source_line_end": 7,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/framing/PART_I.md",
+          "source_sha256": "5f9c12ce717726a5cece97657d32acfa9730beb163b7ab9908e50a4b6c080648"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 18210,
+          "bytes": 27308,
+          "expected_slice_sha256": "9db03ad2582a76131ad3d419a037988ec440636371cb8b58444ef4d4902dcd1b",
+          "first_line": 175,
+          "kind": "accepted_core_slice",
+          "last_line": 446,
+          "sha256": "9db03ad2582a76131ad3d419a037988ec440636371cb8b58444ef4d4902dcd1b",
+          "source_line_end": 272,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/cores/CORRECTED_DERIVATION.md",
+          "source_sha256": "9db03ad2582a76131ad3d419a037988ec440636371cb8b58444ef4d4902dcd1b"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 45518,
+          "bytes": 317,
+          "expected_slice_sha256": "6d45e956fb7100483a46d5add326c8bd0957c84b79058453665e7cada97cfe12",
+          "first_line": 447,
+          "kind": "accepted_framing",
+          "last_line": 453,
+          "sha256": "6d45e956fb7100483a46d5add326c8bd0957c84b79058453665e7cada97cfe12",
+          "source_line_end": 7,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/framing/PART_II.md",
+          "source_sha256": "6d45e956fb7100483a46d5add326c8bd0957c84b79058453665e7cada97cfe12"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 45835,
+          "bytes": 2559,
+          "expected_slice_sha256": "06151c0ecb5f5b56c279e8a873f9972e6f42378db324f6bd7929684e52748843",
+          "first_line": 454,
+          "kind": "accepted_core_slice",
+          "last_line": 471,
+          "sha256": "06151c0ecb5f5b56c279e8a873f9972e6f42378db324f6bd7929684e52748843",
+          "source_line_end": 18,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/cores/ENDPOINT_COVARIANCE_CLARIFICATION.md",
+          "source_sha256": "06151c0ecb5f5b56c279e8a873f9972e6f42378db324f6bd7929684e52748843"
+        }
+      ],
+      "published_bytes": 48394,
+      "published_lines": 471,
+      "published_sha256": "2e8ec4a860739a5edfc1cae9817a1bef5e074a7059794bfb78a203b5aa343576",
+      "stored_bytes": 2241,
+      "tofile": "docs/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "4064eb90748b1584b18d62c08de27d71283ed62daab1cd4493692292797d4fee",
+  "wrapper_clarification": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_clarification.diff.gz",
+    "diff_bytes": 1861,
+    "diff_sha256": "4eed37b85b8d80f52e2128a9d985b42e84bf589f0292b8b6ac040a1fe804e055",
+    "diff_stored_sha256": "67fb4e237d5a10adfd30aa58d17dc4cb4a78eb9d41f6f3cab8f8689d8620ef6c",
+    "exact_occurrences": 1,
+    "fromfile": "accepted/THEOREM_WRAPPER.md",
+    "original": "Fixed per-qubit preparation error is not an accuracy-independent resource as the apparatus grows.",
+    "rendered": "This sufficient joint-preparation guarantee does not follow from a fixed nonzero per-qubit error bound as the apparatus grows.",
+    "rendered_sha256": "0428bdd79b0262677c6cc1f196a4c681c169b89cc45d28e85815857d42e54260",
+    "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly/THEOREM_WRAPPER.md",
+    "source_sha256": "46e53f829b1730dafd381154ad03c3b123f0be2ba8623a03048a69c7f94af79a",
+    "stored_bytes": 757,
+    "tofile": "publication/THEOREM_WRAPPER.md"
+  }
+}

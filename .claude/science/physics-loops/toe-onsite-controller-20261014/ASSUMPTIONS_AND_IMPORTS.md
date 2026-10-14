@@ -1,0 +1,7 @@
+# Supplied premises and mathematical scope
+
+The finite qubit tensor product, exact common onsite gap, static engineered grouped three/four-qubit operators, coherent fuel, blank routing register, initialized one-head clock independent of source/reference, and one declared read time are premises. Native fabrication, preparation work, duration and control implementation are not derived. Structured robustness retains exact swaps, final phase, equal onsite gaps and excitation-preserving unitary gate blocks; arbitrary local matrix noise is outside it.
+
+The two complete in-note proof bodies supply every mathematical step used here. There are zero external canonical scientific dependencies. The finite-chain parent branch is Git ancestry only. Christandl perfect transfer and Nagaj Hamiltonian computation are attributed prior art; the needed transfer identity is proved in the body. Parallel root constants and floating controls are distinct corroborating evidence, not imported hypotheses or universal proofs. No new framework axiom, primitive, empirical prediction, or native interacting model is adopted.
+
+The fixed onsite gap does not give a uniform many-body gap. Preparation is a joint-resource trace-distance premise; the stated sufficient guarantee does not follow from a fixed nonzero per-qubit bound as resource size grows. Final source/fuel covariance remains in total variance. No stopping, stable record, reset or read-cost theorem is claimed.

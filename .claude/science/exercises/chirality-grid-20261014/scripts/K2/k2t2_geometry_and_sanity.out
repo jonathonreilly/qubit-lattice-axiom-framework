@@ -1,0 +1,24 @@
+== K2-T2: free min|eig H_W| (M = 1) ==
+  X3 geometry: Lx=4 PERIODIC x, open t in -3..4                min|H_W| = 2.382e-16
+  Lx=4 ANTIPERIODIC x, open t (K2 G2)                          min|H_W| = 7.071e-01
+  Lx=2 periodic x, open t                                      min|H_W| = 1.345e-21
+  Lx=2 antiperiodic x, open t (K2 G1)                          min|H_W| = 1.017e+00
+  Lx=2 antiperiodic x, open t in -5..6 (K2 G1')                min|H_W| = 1.008e+00
+  Lx=8 periodic x, open t                                      min|H_W| = 2.918e-17
+  torus Lx=2 periodic x, antiperiodic t (K2 G3)                min|H_W| = 1.000e+00
+  torus Lx=4 periodic x, antiperiodic t                        min|H_W| = 1.000e+00
+  torus Lx=8 periodic x (X3 T-X3b/c geometry)                  min|H_W| = 1.000e+00
+  X3-geometry near-zero mode E = -2.06e-16; weight per time slice t=-3..4: [1. 0. 0. 0. 0. 0. 0. 0.]
+  X3-geometry near-zero mode E = -7.89e-16; weight per time slice t=-3..4: [0. 0. 0. 0. 0. 0. 0. 1.]
+  X3 geometry, Wilson line 0.01 on the t=4 slice only (all plaquettes in the bulk ~0): min|H_W| = 2.811e-16
+  X3 geometry, Wilson line 0.05 on the t=4 slice only (all plaquettes in the bulk ~0): min|H_W| = 2.864e-15
+  X3 geometry, Wilson line 0.2 on the t=4 slice only (all plaquettes in the bulk ~0): min|H_W| = 1.189e-15
+== sanity ==
+  Lx=2 T=4 torus=False: logdet overlap 17.7234685564-0.0000000000j; const-gauge shift diff 2.2e-17; local gauge diff 3.3e-17; Wilson diff 5.4e-18; min|H_W| 1.006
+  Lx=4 T=4 torus=False: logdet overlap 32.4047170705+0.0000000000j; const-gauge shift diff 7.1e-15; local gauge diff 7.1e-15; Wilson diff 6.4e-18; min|H_W| 0.670
+  Lx=2 T=4 torus=True: logdet overlap 12.2432938528+0.0000000000j; const-gauge shift diff 3.6e-15; local gauge diff 1.8e-15; Wilson diff 1.4e-17; min|H_W| 0.925
+  gauge-FIXED kernel Lx=2 T=4 torus=False xbc=-1: Wilson min/max -1.10e-15 | overlap min/max -2.67e-03 (herm last 1.8e-14)
+  gauge-FIXED kernel Lx=4 T=4 torus=False xbc=-1: Wilson min/max +1.16e-05 | overlap min/max -1.03e-02 (herm last 3.6e-14)
+  gauge-FIXED kernel Lx=2 T=4 torus=True xbc=1: Wilson min/max +1.51e-04 | overlap min/max -2.54e-02 (herm last 1.2e-14)
+  gauge-FIXED kernel Lx=4 T=4 torus=False xbc=1: Wilson min/max +1.94e-05 | overlap min/max -1.83e-02 (herm last 2.8e-14)
+done

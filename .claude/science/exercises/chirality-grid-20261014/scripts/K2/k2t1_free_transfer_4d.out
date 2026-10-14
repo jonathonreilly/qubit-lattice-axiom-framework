@@ -1,0 +1,81 @@
+calibration (Wilson r=1, m=0.5) H0 min/max: {'+g4': '-6.90e-17', '-g4': '-1.00e+00'}
+Gamma chosen: +g4
+control NEG1 naive r=0: H0 min/max -3.80e-16, H1 min/max -1.00e+00, GEVP lam [ 0.4887  0.4887 -0.4887 -0.4887]
+control POS Wilson: rank 2, lam [0.503 0.503]
+X~X scalar check: off-scalar norm 1.1e-16
+
+=== M = 0.5 ===
+  corner 0: beta +0.50, pole True, top lam 0.999000, e^-E1(+) 0.500000, E1(+) 0.6931, E1(-) inf, rank 22, H0 -1.5e-04, H1 -1.8e-04
+  corner 1: beta +2.50, pole False, top lam 0.380421, e^-E1(+) 0.400000, E1(+) 0.9163, E1(-) inf, rank 24, H0 +4.5e-11, H1 +2.3e-11
+  corner 2: beta +2.50, pole False, top lam 0.380421, e^-E1(+) 0.400000, E1(+) 0.9163, E1(-) inf, rank 24, H0 +4.5e-11, H1 +2.3e-11
+  corner 3: beta +2.50, pole False, top lam 0.380421, e^-E1(+) 0.400000, E1(+) 0.9163, E1(-) inf, rank 24, H0 +4.5e-11, H1 +2.3e-11
+  corner 4: beta +4.50, pole False, top lam 0.207625, e^-E1(+) 0.222222, E1(+) 1.5041, E1(-) inf, rank 20, H0 +2.1e-13, H1 +1.2e-13
+  corner 5: beta +4.50, pole False, top lam 0.207625, e^-E1(+) 0.222222, E1(+) 1.5041, E1(-) inf, rank 20, H0 +2.1e-13, H1 +1.2e-13
+  corner 6: beta +4.50, pole False, top lam 0.207625, e^-E1(+) 0.222222, E1(+) 1.5041, E1(-) inf, rank 20, H0 +2.1e-13, H1 +1.2e-13
+  corner 7: beta +6.50, pole False, top lam 0.139310, e^-E1(+) 0.153846, E1(+) 1.8718, E1(-) inf, rank 16, H0 +6.1e-15, H1 +2.9e-15
+  MISMATCH p=[-0.1225 -0.2843  1.0492]: inOmega True has_pole False top 0.43869242858994933 lam_pole 0.43900645173390723 above-cut [0.4387 0.4387]
+  M=0.5: momenta 58, mismatches 1, worst H0 min/max -1.47e-04, worst H1 min/max -1.75e-04, poles at nonzero corners []
+  negative-lambda momenta: 0; all with beta<0: True; examples []
+
+=== M = 1.0 ===
+  corner 0: beta +0.00, pole True, top lam 0.999001, e^-E1(+) 0.000000, E1(+) 14.5087, E1(-) inf, rank 2, H0 -2.8e-04, H1 -2.8e-04
+  corner 1: beta +2.00, pole False, top lam 0.475717, e^-E1(+) 0.500000, E1(+) 0.6931, E1(-) inf, rank 24, H0 +3.0e-10, H1 +1.5e-10
+  corner 2: beta +2.00, pole False, top lam 0.475717, e^-E1(+) 0.500000, E1(+) 0.6931, E1(-) inf, rank 24, H0 +3.0e-10, H1 +1.5e-10
+  corner 3: beta +2.00, pole False, top lam 0.475717, e^-E1(+) 0.500000, E1(+) 0.6931, E1(-) inf, rank 24, H0 +3.0e-10, H1 +1.5e-10
+  corner 4: beta +4.00, pole False, top lam 0.233649, e^-E1(+) 0.250000, E1(+) 1.3863, E1(-) inf, rank 20, H0 +6.4e-13, H1 +3.5e-13
+  corner 5: beta +4.00, pole False, top lam 0.233649, e^-E1(+) 0.250000, E1(+) 1.3863, E1(-) inf, rank 20, H0 +6.4e-13, H1 +3.5e-13
+  corner 6: beta +4.00, pole False, top lam 0.233649, e^-E1(+) 0.250000, E1(+) 1.3863, E1(-) inf, rank 20, H0 +6.4e-13, H1 +3.5e-13
+  corner 7: beta +6.00, pole False, top lam 0.150949, e^-E1(+) 0.166667, E1(+) 1.7918, E1(-) inf, rank 16, H0 +1.3e-14, H1 +7.3e-15
+  MISMATCH p=[ 0.0444  0.0401 -1.6575]: inOmega True has_pole False top 0.41448394678004863 lam_pole 0.41478979305864144 above-cut [0.4145 0.4145]
+  MISMATCH p=[-0.751   1.3399  0.707 ]: inOmega True has_pole False top 0.3285536534786653 lam_pole 0.3291123842583571 above-cut [0.3286 0.3286]
+  M=1.0: momenta 58, mismatches 2, worst H0 min/max -2.80e-04, worst H1 min/max -2.81e-04, poles at nonzero corners []
+  negative-lambda momenta: 0; all with beta<0: True; examples []
+
+=== M = 1.5 ===
+  corner 0: beta -0.50, pole True, top lam 0.999001, e^-E1(+) 0.000000, E1(+) inf, E1(-) 0.6931, rank 22, H0 -2.5e-04, H1 -1.0e-03
+  corner 1: beta +1.50, pole False, top lam 0.634991, e^-E1(+) 0.666667, E1(+) 0.4055, E1(-) inf, rank 24, H0 +3.0e-09, H1 +1.3e-09
+  corner 2: beta +1.50, pole False, top lam 0.634991, e^-E1(+) 0.666667, E1(+) 0.4055, E1(-) inf, rank 24, H0 +3.0e-09, H1 +1.3e-09
+  corner 3: beta +1.50, pole False, top lam 0.634991, e^-E1(+) 0.666667, E1(+) 0.4055, E1(-) inf, rank 24, H0 +3.0e-09, H1 +1.3e-09
+  corner 4: beta +3.50, pole False, top lam 0.267138, e^-E1(+) 0.285714, E1(+) 1.2528, E1(-) inf, rank 20, H0 +2.2e-12, H1 +1.2e-12
+  corner 5: beta +3.50, pole False, top lam 0.267138, e^-E1(+) 0.285714, E1(+) 1.2528, E1(-) inf, rank 20, H0 +2.2e-12, H1 +1.2e-12
+  corner 6: beta +3.50, pole False, top lam 0.267138, e^-E1(+) 0.285714, E1(+) 1.2528, E1(-) inf, rank 20, H0 +2.2e-12, H1 +1.2e-12
+  corner 7: beta +5.50, pole False, top lam 0.169805, e^-E1(+) 0.181818, E1(+) 1.7047, E1(-) inf, rank 20, H0 +3.1e-14, H1 +1.7e-14
+  MISMATCH p=[ 2.1629 -0.676  -0.0438]: inOmega True has_pole False top 0.40091897704500956 lam_pole 0.4027241909828465 above-cut [0.4009 0.4009]
+  MISMATCH p=[-0.3979 -1.8645 -1.0999]: inOmega True has_pole False top 0.325824568749547 lam_pole 0.32729759381007606 above-cut [0.3258 0.3258]
+  MISMATCH p=[ 1.2473 -0.3233  1.8783]: inOmega True has_pole False top 0.32108848243478727 lam_pole 0.3239637727177757 above-cut []
+  MISMATCH p=[ 1.1574 -0.2273 -1.7474]: inOmega True has_pole False top 0.32681056209681353 lam_pole 0.3274401989733118 above-cut [0.3268 0.3268]
+  MISMATCH p=[ 0.8507 -0.7759  1.8757]: inOmega True has_pole False top 0.31876774830132437 lam_pole 0.32010204763932415 above-cut [0.3188 0.3188]
+  MISMATCH p=[-0.751   1.3399  0.707 ]: inOmega True has_pole False top 0.3291110990345974 lam_pole 0.3291123842583571 above-cut [0.3291 0.3291]
+  MISMATCH p=[ 2.1842 -0.6206  0.3346]: inOmega True has_pole False top 0.39613449050893434 lam_pole 0.39841410580577286 above-cut [0.3961 0.3961]
+  M=1.5: momenta 58, mismatches 7, worst H0 min/max -2.47e-04, worst H1 min/max -3.54e-03, poles at nonzero corners []
+  negative-lambda momenta: 11; all with beta<0: True; examples [(np.float64(-0.5), np.float64(-0.47155070906896884), np.float64(-0.4999988333358934)), (np.float64(-0.443), np.float64(-0.366634885532961), np.float64(-0.390733266702829)), (np.float64(-0.475), np.float64(-0.41849439762535645), np.float64(-0.4458934974590038))]
+
+=== M = 1.9 ===
+  corner 0: beta -0.90, pole True, top lam 0.999000, e^-E1(+) 0.000000, E1(+) inf, E1(-) 0.1054, rank 22, H0 -2.4e-04, H1 -8.0e-03
+  corner 1: beta +1.10, pole False, top lam 0.869976, e^-E1(+) 0.909091, E1(+) 0.0953, E1(-) inf, rank 24, H0 +2.6e-08, H1 +9.1e-09
+  corner 2: beta +1.10, pole False, top lam 0.869976, e^-E1(+) 0.909091, E1(+) 0.0953, E1(-) inf, rank 24, H0 +2.6e-08, H1 +9.1e-09
+  corner 3: beta +1.10, pole False, top lam 0.869976, e^-E1(+) 0.909091, E1(+) 0.0953, E1(-) inf, rank 24, H0 +2.6e-08, H1 +9.1e-09
+  corner 4: beta +3.10, pole False, top lam 0.301742, e^-E1(+) 0.322581, E1(+) 1.1314, E1(-) inf, rank 20, H0 +6.7e-12, H1 +3.5e-12
+  corner 5: beta +3.10, pole False, top lam 0.301742, e^-E1(+) 0.322581, E1(+) 1.1314, E1(-) inf, rank 20, H0 +6.7e-12, H1 +3.5e-12
+  corner 6: beta +3.10, pole False, top lam 0.301742, e^-E1(+) 0.322581, E1(+) 1.1314, E1(-) inf, rank 20, H0 +6.7e-12, H1 +3.5e-12
+  corner 7: beta +5.10, pole False, top lam 0.183148, e^-E1(+) 0.196078, E1(+) 1.6292, E1(-) inf, rank 20, H0 +6.4e-14, H1 +3.6e-14
+  MISMATCH p=[ 2.1629 -0.676  -0.0438]: inOmega True has_pole False top 0.40268759841591506 lam_pole 0.4027241909828465 above-cut [0.4027 0.4027]
+  MISMATCH p=[-0.3979 -1.8645 -1.0999]: inOmega True has_pole False top 0.32726357846764 lam_pole 0.32729759381007606 above-cut [0.3273 0.3273]
+  MISMATCH p=[ 1.2473 -0.3233  1.8783]: inOmega True has_pole False top 0.32383945154892796 lam_pole 0.3239637727177757 above-cut [0.3238 0.3238]
+  MISMATCH p=[-1.6328  1.5169  1.0957]: inOmega True has_pole False top 0.2752063457913006 lam_pole 0.2767165172262821 above-cut [0.2752 0.2752]
+  MISMATCH p=[ 1.1574 -0.2273 -1.7474]: inOmega True has_pole False top 0.32743263610718454 lam_pole 0.3274401989733118 above-cut [0.3274 0.3274]
+  MISMATCH p=[ 0.8507 -0.7759  1.8757]: inOmega True has_pole False top 0.3200700092151659 lam_pole 0.32010204763932415 above-cut [0.3201 0.3201]
+  MISMATCH p=[ 2.1842 -0.6206  0.3346]: inOmega True has_pole False top 0.398398452225028 lam_pole 0.39841410580577286 above-cut [0.3984 0.3984]
+  MISMATCH p=[-0.0517  0.3343 -2.4739]: inOmega True has_pole False top 0.5192675970407878 lam_pole 0.5195396655791716 above-cut [0.5193 0.5193]
+  M=1.9: momenta 58, mismatches 8, worst H0 min/max -2.41e-04, worst H1 min/max -2.92e-02, poles at nonzero corners []
+  negative-lambda momenta: 12; all with beta<0: True; examples [(np.float64(-0.9), np.float64(-0.8545496458315984), np.float64(-0.8999947633157893)), (np.float64(-0.351), np.float64(-0.16757743586921475), np.float64(-0.1841664564134946)), (np.float64(-0.843), np.float64(-0.6454572764779192), np.float64(-0.6711099474823784))]
+
+=== global threshold minimum (numeric branch point, grid 24^3 + Nelder-Mead 200 starts) ===
+  M=0.5000: E1min(+) 0.693147 at [0. 0. 0.] | E1min(-) 50.000000 at [-3.1416 -3.1416 -3.1416] | X3 corner formula 0.693147
+  M=0.5858: E1min(+) 0.881374 at [-2.9394  0.      0.    ] | E1min(-) 50.000000 at [-3.1416 -3.1416 -3.1416] | X3 corner formula 0.881374
+  M=1.0000: E1min(+) 0.693147 at [-3.1416 -0.      0.    ] | E1min(-) 50.000000 at [-3.1416 -3.1416 -3.1416] | X3 corner formula 0.693147
+  M=1.5000: E1min(+) 0.405465 at [-3.1416 -0.     -0.    ] | E1min(-) 0.693147 at [-0.  0. -0.] | X3 corner formula 0.405465
+  M=1.9000: E1min(+) 0.095310 at [-3.1416  0.      0.    ] | E1min(-) 0.105361 at [0. 0. 0.] | X3 corner formula 0.095310
+
+Hankel numerical rank n=2..8 at p=[ 0.7 -0.4  1.2]: overlap [8, 12, 16, 20, 20, 20, 22]; Wilson r=1 [2, 2, 2, 2, 2, 2, 2]
+done

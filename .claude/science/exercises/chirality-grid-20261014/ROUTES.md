@@ -114,3 +114,29 @@ No mixed or cyclic anomaly forbids symmetric gapping of the 5-corner mirror at 1
 **Correction:** X2:248 is wrong that GPR relied on large-N alone; it used a strong-coupling hopping expansion plus large N.
 
 **Next test (not run):** T-G1, exact diagonalisation of a filtered star quartic on 4–6 sites.
+
+## Kill round K2 (15:00–16:13Z): the set-B / overlap package
+
+Report: `kills/K2/KILL_REPORT.md`. Same-family agent; **codex referee running since 16:15Z**.
+
+**Verdicts**
+
+| Item | Verdict | Basis |
+|---|---|---|
+| **X3-A** (free spectrum) | **survives** | Independently rebuilt in 4D. Poles at 58/58 momenta to 3.6e-9. Thresholds reproduce. |
+| **X3-B** (F3-A doesn't reach the Euclidean route) | **survives, free fields only** | — |
+| **X3-C** (two prices are one) | **wounded** | The infinite real-time fibre is checked (Hankel rank grows), but the 5D identity is the same formula written twice. "One price" is shown only one way, for the overlap. |
+| **L3g** (gauged RP) | **dead as a general property; open on the torus** | **Pre-registered FAIL line met.** See below. |
+| **X3-E** | **split** | "Gauge-fixed RP fails" survives. "No violation on gauge-invariant observables" is dead: X3's runs had boundary zero modes of H_W on open time ends and a quadrature error 1000× the effect. |
+| **Set-B package** | **wounded** | The named gap is L3g. X3's contingency (Π-W for matter, finite-L_s domain wall, or an infinite-time RP proof) becomes the likely branch. This also hits vector-like overlap matter. |
+| **F2-H** | **wounded** (L3) | — |
+
+**L3g evidence.**
+- Gauge-invariant RP of the overlap measure in 2D U(1), Lx = 2, open-time Lt = 12, all plaquettes admissible, exact gauge average (error ~1e-14). The negative eigenvalue is −7.4e-6 relative, reproduced by a second code to 0.07%.
+- It persists across β = 0–10 and M = 0.6/1.0, and does not fade at Lt = 20. The Wilson control is positive.
+- On the torus, no violation was found, but the test was underpowered.
+
+**No contradictions with landed results:**
+- R10-2's box symbols don't cover the analytic overlap symbol (proved: ω² > 0).
+- R19-28 never claimed the overlap works.
+- R19-33 is consistent.

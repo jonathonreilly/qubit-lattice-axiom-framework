@@ -1,0 +1,11 @@
+# G1p: Lx=2 Lt=12 torus=False xbc=-1 delta=0.3 s=0.12 weight=tri n=(16,32) nw=(None,None) k=8 seed=232
+set 0: OVERLAP min/max n_lo +2.068e-05 n_hi +2.068e-05 q 4.1e-15 min|H_W| 0.953 imag 1.2e-17 nonzero 64/64 | WILSON min/max n_lo +2.224e-05 n_hi +2.224e-05 q 1.0e-14 | gauge-fixed diag: W -7.28e-16 O -4.97e-04 | clean True | 2s
+   overlap eigenvalues (n_hi): [1.246e-04 2.991e-04 2.858e-03 5.816e-03 2.465e-02 2.673e-01 1.674e+00
+ 6.024e+00]
+set 1: OVERLAP min/max n_lo +2.336e-05 n_hi +2.336e-05 q 5.6e-15 min|H_W| 0.956 imag 1.6e-17 nonzero 64/64 | WILSON min/max n_lo +2.680e-05 n_hi +2.680e-05 q 6.0e-15 | gauge-fixed diag: W -2.45e-15 O -6.34e-04 | clean True | 2s
+   overlap eigenvalues (n_hi): [1.371e-04 8.711e-04 3.712e-03 8.146e-03 4.885e-02 6.382e-01 1.429e+00
+ 5.871e+00]
+set 2: OVERLAP min/max n_lo +7.487e-05 n_hi +7.487e-05 q 5.4e-15 min|H_W| 0.955 imag 1.2e-17 nonzero 64/64 | WILSON min/max n_lo +7.618e-05 n_hi +7.618e-05 q 6.1e-15 | gauge-fixed diag: W -1.00e-15 O -9.26e-04 | clean True | 2s
+   overlap eigenvalues (n_hi): [3.459e-04 1.635e-03 4.847e-03 1.134e-02 9.704e-02 7.526e-01 2.512e+00
+ 4.620e+00]
+done

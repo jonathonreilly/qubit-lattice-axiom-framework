@@ -1,0 +1,11 @@
+V1a set 1 op O: full-matrix min/max -7.4055e-06, symmetry defect 4.2e-15, min|H_W| 0.861
+V1a set 1 op W: full-matrix min/max +1.0804e-05, symmetry defect 9.9e-15, min|H_W| inf
+V1a set 2 op O: full-matrix min/max -5.1388e-07, symmetry defect 3.1e-15, min|H_W| 0.869
+V1a set 2 op W: full-matrix min/max +1.4061e-06, symmetry defect 4.1e-15, min|H_W| inf
+V1b set 1 grid 20000: overlap min/max -7.3872e-06 (sym defect 2.2e-15) | Wilson min/max +1.0823e-05 | 70s
+V1b set 1 grid 40000: overlap min/max -7.4005e-06 (sym defect 2.6e-15) | Wilson min/max +1.0809e-05 | 140s
+   grid change overlap max|dZ| 1.4e-07
+V1b set 2 grid 20000: overlap min/max -4.9425e-07 (sym defect 1.2e-15) | Wilson min/max +1.4261e-06 | 76s
+V1b set 2 grid 40000: overlap min/max -5.1095e-07 (sym defect 1.1e-15) | Wilson min/max +1.4092e-06 | 149s
+   grid change overlap max|dZ| 1.5e-07
+done

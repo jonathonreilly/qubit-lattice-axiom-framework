@@ -1,0 +1,22 @@
+Lt=12 set 0: overlap min/max -1.752e-06 | Wilson +3.825e-06 | q 8.7e-15 | min|H_W| 0.894 | FAIL-line True
+Lt=12 set 1: overlap min/max +1.372e-05 | Wilson +3.737e-05 | q 1.1e-14 | min|H_W| 0.880 | FAIL-line False
+Lt=12 set 2: overlap min/max -2.793e-06 | Wilson +6.414e-06 | q 5.8e-15 | min|H_W| 0.868 | FAIL-line True
+Lt=12 set 3: overlap min/max -1.892e-06 | Wilson +2.977e-06 | q 8.7e-15 | min|H_W| 0.827 | FAIL-line True
+Lt=12 set 4: overlap min/max +2.955e-07 | Wilson +1.709e-06 | q 6.3e-15 | min|H_W| 0.887 | FAIL-line False
+Lt=12 set 5: overlap min/max +3.182e-06 | Wilson +5.905e-06 | q 1.2e-14 | min|H_W| 0.887 | FAIL-line False
+Lt=12 summary: FAIL-line sets 3/6, most negative overlap -2.793e-06, Wilson min +1.709e-06, 10s
+Lt=16 set 0: overlap min/max +3.791e-06 | Wilson +9.779e-06 | q 9.8e-15 | min|H_W| 0.866 | FAIL-line False
+Lt=16 set 1: overlap min/max +1.013e-05 | Wilson +1.248e-05 | q 1.5e-14 | min|H_W| 0.890 | FAIL-line False
+Lt=16 set 2: overlap min/max +3.192e-05 | Wilson +6.057e-05 | q 1.0e-14 | min|H_W| 0.828 | FAIL-line False
+Lt=16 set 3: overlap min/max +9.412e-05 | Wilson +1.145e-04 | q 9.7e-15 | min|H_W| 0.836 | FAIL-line False
+Lt=16 set 4: overlap min/max +3.016e-06 | Wilson +9.816e-06 | q 1.1e-14 | min|H_W| 0.893 | FAIL-line False
+Lt=16 set 5: overlap min/max +1.088e-04 | Wilson +1.080e-04 | q 8.5e-15 | min|H_W| 0.878 | FAIL-line False
+Lt=16 summary: FAIL-line sets 0/6, most negative overlap +3.016e-06, Wilson min +9.779e-06, 17s
+Lt=20 set 0: overlap min/max +1.148e-05 | Wilson +2.832e-05 | q 1.6e-14 | min|H_W| 0.879 | FAIL-line False
+Lt=20 set 1: overlap min/max -3.343e-05 | Wilson +3.592e-05 | q 1.5e-14 | min|H_W| 0.858 | FAIL-line True
+Lt=20 set 2: overlap min/max -4.095e-06 | Wilson +5.245e-06 | q 1.9e-14 | min|H_W| 0.889 | FAIL-line True
+Lt=20 set 3: overlap min/max +1.726e-05 | Wilson +2.421e-05 | q 1.1e-14 | min|H_W| 0.869 | FAIL-line False
+Lt=20 set 4: overlap min/max +6.862e-06 | Wilson +7.720e-06 | q 1.5e-14 | min|H_W| 0.850 | FAIL-line False
+Lt=20 set 5: overlap min/max +7.241e-06 | Wilson +1.522e-05 | q 1.2e-14 | min|H_W| 0.892 | FAIL-line False
+Lt=20 summary: FAIL-line sets 2/6, most negative overlap -3.343e-05, Wilson min +5.245e-06, 29s
+done

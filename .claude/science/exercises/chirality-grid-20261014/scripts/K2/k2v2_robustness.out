@@ -1,0 +1,14 @@
+V2a: beta_g robustness (overlap M=1, m=0.05)
+  beta=  0.0 | set0: O +1.419e-05 (q 8e-15) W +4.137e-05 | set1: O -7.405e-06 (q 5e-15) W +1.080e-05 | set2: O -5.139e-07 (q 4e-15) W +1.406e-06
+  beta=  1.0 | set0: O +1.331e-05 (q 8e-15) W +4.076e-05 | set1: O -7.761e-06 (q 5e-15) W +1.068e-05 | set2: O -5.355e-07 (q 5e-15) W +1.381e-06
+  beta=  4.0 | set0: O +1.288e-05 (q 8e-15) W +4.133e-05 | set1: O -8.354e-06 (q 5e-15) W +1.077e-05 | set2: O -5.694e-07 (q 5e-15) W +1.373e-06
+  beta= 10.0 | set0: O +1.628e-05 (q 9e-15) W +4.706e-05 | set1: O -8.526e-06 (q 4e-15) W +1.190e-05 | set2: O -5.717e-07 (q 6e-15) W +1.494e-06
+V2b: (M, m) dependence on set 1 (beta = 0)
+  M=1.0 m=0.05: overlap min/max -7.405e-06 q 5e-15
+  M=1.0 m=0.3: overlap min/max -4.716e-06 q 5e-15
+  M=0.6 m=0.05: overlap min/max -2.049e-05 q 4e-15
+  M=1.4 m=0.05: overlap min/max +6.243e-06 q 7e-15
+V2c: wrong-Theta negative control (Lambda- temporal links unconjugated), gauge-fixed kernels
+  correct Theta: Wilson gauge-fixed min/max -2.87e-15 (herm defect 2.8e-14) | overlap -5.54e-03 (herm 2.9e-14)
+  WRONG Theta: Wilson gauge-fixed min/max -3.37e-04 (herm defect 1.2e-01) | overlap -4.83e-03 (herm 1.5e-01)
+done

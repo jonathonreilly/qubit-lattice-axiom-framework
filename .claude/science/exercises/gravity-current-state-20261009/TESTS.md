@@ -9534,3 +9534,42 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - P-F6b: a tuning, dominated.
 
   Referee running.
+
+**E1. The emergent-coarseness toy: can the neighbour rules make the grid scale stretch with the field, and does that keep masses fixed?** (Pre-registered 2026-10-13. Jon: "run the toy test"; his thought "maybe grid coarseness is a feature of the neighborhood influence rules". Owner thoughts are tested as hypotheses, not imposed.)
+- **Plain question.**
+  - With only nearest-neighbour rules, the scale matter sees is the correlation length ξ, which can be ≫ a near a critical point.
+  - If the stretch field changes the couplings along one axis, does ξ change with it, so that long-distance physics is isotropic after relabelling axes (a covariant emergent cutoff)?
+  - And does a mass (gap) stay put under uniform stretch?
+    - (i) when masslessness is a **tuned** critical point (Ising/φ⁴, like the Higgs and the Wilson fermion);
+    - (ii) when it is **symmetry-protected** (sublattice/chiral, like staggered/graphene; or Goldstone).
+- **Setting (small exact or one-loop models only; ≤ 500 MB, one process at a time).**
+  - (A) **2D Ising, exact (Onsager):**
+    - the critical curve sinh 2K_x sinh 2K_y = 1;
+    - the exact anisotropic correlation lengths;
+    - traceless stretch K_x = K(1+t), K_y = K(1−t).
+  - (B) **3D lattice φ⁴, one loop (mean field):** the critical-mass shift δm_c²(t) for anisotropic hopping J_j = J(1 + t_j). Also a "composite" version, where the coarse field is a block average of a finer lattice: is the shift set by the fine scale or by ξ?
+  - (C) **Protected:**
+    - honeycomb tight-binding (graphene) under uniform strain: is the gap exactly 0 until Dirac-point merging, and do the velocities track the strain?
+    - one-loop/mean-field Hubbard-type interaction: does sublattice symmetry forbid a mass?
+    - 3D: the staggered result from NF-1, counted once.
+  - (C′) **Goldstone:** XY/O(2) ordered phase under anisotropic couplings. Do spin waves stay gapless, with anisotropic stiffness acting as a metric?
+  - (D) **The fabric's own uniform-stretch mode:** in (A) and (C), does a uniform traceless stretch at criticality cost free energy at O(t²)? That is, does the fabric have a preferred shape?
+- **Prior art (count once):**
+  - F1, F5, F6 and NF-1 with their verdicts;
+  - panel F (condensed-matter lens: protected vs unprotected zeros under strain);
+  - comparators, RECALLED: Onsager; anisotropic scaling at criticality; graphene strain and Dirac-point merging; Collins et al. 2004 on emergent Lorentz invariance and fine-tuning.
+- **Probes.**
+  - (a) Covariant cutoff: ξ_j against stretch; the long-distance correlations, isotropic after rescaling; the leak against r/a.
+  - (b) Tuned gap under stretch: its scaling ∝ |t|^{2ν}, and whether the coefficient is set by the fine lattice.
+  - (c) Protected gap under stretch: exactly 0, with or without interaction.
+  - (d) The fabric's stretch stiffness at criticality.
+  - (e) Implications for the Higgs (tuned scalar) and the fermions; a pseudo-Goldstone (composite) Higgs as the protected analogue, as comparator.
+- **FIXED readings.**
+  - **MECHANISM-SPLIT:**
+    - (a) the cutoff is covariant, with leak ≤ O((a/r)²), checked;
+    - (b) tuned gaps open under stretch with a fine-scale coefficient;
+    - (c) protected gaps stay exactly 0.
+  - **MECHANISM-FULL:** (a), and tuned gaps are also suppressed by (a/ξ)^p, p > 0, so emergent coarseness alone protects them.
+  - **MECHANISM-NONE:** the cutoff is not covariant (ξ_j fails to track the stretch), checked.
+  - **OPEN:** otherwise.
+- **Expectation.** MECHANISM-SPLIT. Emergent coarseness gives a covariant cutoff, but a tuned critical point moves under stretch (Onsager's curve), so the Higgs still needs protection or a rule. A pseudo-Goldstone/composite Higgs is the protected-route candidate.

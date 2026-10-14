@@ -1,0 +1,133 @@
+{
+  "accepted_wrapper_edit_scope": "publication metadata, attribution links or current source-status pointers only; full original/current diff",
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "6ddde3c397339a6c19f0a39a1c925f59693fee0d77bf9735bcccee776c7a0646",
+      "context_lines": 3,
+      "diff": "diffs/complete_publication.diff.gz",
+      "diff_bytes": 10684,
+      "diff_sha256": "5a045203dcef5bfb1b7faa99eba339e72652576066bab8179717cfffe53c114f",
+      "diff_stored_sha256": "bc52fbdaf11bc6b3e3b1ef3f42ddad5b5d59624177644f77bd75e50b6b28cdb3",
+      "fromfile": "accepted/CANDIDATE.md",
+      "note": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "byte_end_exclusive": 10650,
+          "byte_offset": 0,
+          "bytes": 10650,
+          "first_line": 1,
+          "kind": "rendered_wrapper",
+          "last_line": 67,
+          "replacements": [
+            {
+              "original": "\ntitle: Joint even-matter and finite-link interface on a periodic qubit lattice\nclaim_id: joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nsource_assembly_only: true\ncanonical_execution_authorized: false\nretained_audit_status: false\n",
+              "rendered": "\ntitle: Joint even-matter and finite-link interface on a periodic qubit lattice\nclaim_id: joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 supplied periodic even-code and hard-cut-link model with declared preparation and Wilson character\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted conditional finite theorem with complete unchanged proof and source-exposed checks\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03\", \"the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03\"]\nrunner: scripts/joint_even_matter_finite_link_interface_identity_2026_10_14.py\nnext_trace_action: root reviews this publication framing and driver before separately authorized source integration\n",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "**Current status: accepted conditional finite source, assembled for a separate publication review.** The [root acceptance](archive/acceptance/JOINT_INTERFACE_ROOT_ACCEPTANCE.json) accepts the unchanged 39,236-byte derivation `34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca` for source assembly. It grants neither canonical execution authority nor retained/audit status. The proposed future canonical location is `docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md`; no file has been installed there by this assembly.\n",
+              "rendered": "**Current status: accepted conditional finite source; proposed_retained is a target, not retained/audit status.** The [root mathematical acceptance](../.claude/science/physics-loops/toe-joint-matter-link-20261014/JOINT_INTERFACE_ROOT_ACCEPTANCE.json) controls the unchanged 39,236-byte derivation `34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca`. The later [source-assembly review](../.claude/science/physics-loops/toe-joint-matter-link-20261014/ROOT_SOURCE_REVIEW.md) accepts the exact source wrapper and evidence closure for publication preparation. This publication framing, identity tool and integration driver require separate root review and acceptance; the earlier acceptances do not authorize their execution.\n",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "archive/root_check/ROOT_FINAL_REVIEW.md",
+              "rendered": "../.claude/science/physics-loops/toe-joint-matter-link-20261014/ROOT_FINAL_REVIEW.txt",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "archive/full_review/REPORT.md",
+              "rendered": "../.claude/science/physics-loops/toe-joint-matter-link-20261014/FULL_SOURCE_REVIEW.txt",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "archive/definitions/C235_NOTE.md",
+              "rendered": "../archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "archive/definitions/C235_PROGRAM.py",
+              "rendered": "../scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "archive/definitions/QL_CUT.md",
+              "rendered": "U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "archive/definitions/QL_ENCODED.md",
+              "rendered": "THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "`DEPENDENCY_ROLES.json` records these distinct roles and the precise historical sources. This source assembly sets no citation-graph node, edge or root count; publication links and their graph consequences require a separate review of actual cited bodies, not branch ancestry.",
+              "rendered": "`PARENT_BINDINGS.json` records the four literal definition roles and actual current source identities. The two U(1) notes are current canonical Markdown citations; the Cycle235 archive note and Python source retain their direct attribution links. Under the current graph builder these links imply one new note, two citation edges and no new root. This is a source-derived expectation for root to verify, not a graph run or an import of those notes\u2019 stronger theorems. The history-PR publication ancestry adds no history-theorem premise.",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "`SOURCE_MAP.json` gives the unique complete body extraction and exact byte/line ranges; `CANDIDATE_FROM_DERIVATION.diff` gives the entire original-to-assembled difference. The archived original, all mathematical proof bodies and historical evidence remain byte-identical. `EVIDENCE_MANIFEST.json` and `EVIDENCE_CLOSURE.md` identify the bounded archive and reading limits. A separate root review is required for this new wrapper and any later executable publication changes. Operational recovery remains solely with the campaign STATE/HANDOFF; this assembly is a frozen scientific source record.\n",
+              "rendered": "`PUBLICATION_EDITS.json` gives the unique complete proof extraction, exact byte/line ranges and full original-to-publication diffs. The accepted assembly\u2019s `SOURCE_MAP.json` and all 100 frozen files are preserved unchanged in the content-addressed archive. `EVIDENCE_MAP.json` and `SOURCE_ASSEMBLY_SNAPSHOT.json` distinguish those historical source-preparation records from current `PARENT_BINDINGS.json`; no earlier false/null publication field is presented as a current binding. The primary identity tool `scripts/joint_even_matter_finite_link_interface_identity_2026_10_14.py` checks source reconstruction only and evaluates zero mathematical predicates. Root owns separate integration acceptance, execution and publication. Operational recovery remains solely with the campaign STATE/HANDOFF.\n",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            }
+          ],
+          "sha256": "195cf2120888e1a7d68a81400428af34398cf72bce45c6794d07410acc0ae465",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/WRAPPER.md",
+          "source_sha256": "e50cb6c7e4459b01407547bb35c7f16ce9b60b88bd39ccec8490034e86e7337e"
+        },
+        {
+          "byte_end_exclusive": 10651,
+          "byte_offset": 10650,
+          "bytes": 1,
+          "first_line": 68,
+          "kind": "literal_framing",
+          "last_line": 68,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 49887,
+          "byte_offset": 10651,
+          "bytes": 39236,
+          "expected_slice_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca",
+          "first_line": 69,
+          "kind": "accepted_core_slice",
+          "last_line": 378,
+          "sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca",
+          "source_line_end": 310,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/DERIVATION.md",
+          "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+        },
+        {
+          "byte_end_exclusive": 49944,
+          "byte_offset": 49887,
+          "bytes": 57,
+          "first_line": 379,
+          "kind": "literal_framing",
+          "last_line": 380,
+          "sha256": "5550385e7411468ec86cdba966ebab13d8c469633c01b4a32c242eda9a20602a",
+          "text": "\n<!-- End complete unchanged accepted author source. -->\n"
+        }
+      ],
+      "published_bytes": 49944,
+      "published_lines": 380,
+      "published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "stored_bytes": 3903,
+      "tofile": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "8bb80c1adbc231ef0596b6d024ac639cefc6e3a0d566543519da18eb8e211ed1",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper.diff.gz",
+    "diff_bytes": 10625,
+    "diff_sha256": "f018ecec7550bd5ce30b6b5f9fa6dd6ab3c0b9fe9c9699d9ec1f51cc0acea7d2",
+    "diff_stored_sha256": "4c2e8a2565ee2cb3b69dab9674ed9e9d0066163a24c45af544582936eafaebba",
+    "fromfile": "accepted/WRAPPER.md",
+    "stored_bytes": 3907,
+    "tofile": "wrappers/WRAPPER.rendered.md"
+  }
+}

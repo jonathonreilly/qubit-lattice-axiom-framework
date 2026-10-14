@@ -1,0 +1,9 @@
+{
+  "ancestry_is_mathematical_import": false,
+  "base": "88cf249ecaa2bfb24b7b3c91ba7a98982a49b77a",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-joint-matter-link-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9534",
+  "source_preparer_observed_existing_clean_branch": true
+}

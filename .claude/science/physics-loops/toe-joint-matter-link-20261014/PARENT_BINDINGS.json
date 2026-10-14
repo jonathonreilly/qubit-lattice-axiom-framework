@@ -1,0 +1,262 @@
+{
+  "actual_parent_head": "88cf249ecaa2bfb24b7b3c91ba7a98982a49b77a",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-interacting-controller-20261014",
+    "headRefName": "physics-loop/toe-interacting-history-20261014",
+    "headRefOid": "88cf249ecaa2bfb24b7b3c91ba7a98982a49b77a",
+    "isDraft": false,
+    "number": 9534,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9534"
+  },
+  "all_markdown_note_targets": [
+    "../.claude/science/physics-loops/toe-joint-matter-link-20261014/ROOT_SOURCE_REVIEW.md",
+    "../archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+    "U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+  ],
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 23623,
+      "byte_start_inclusive": 0,
+      "canonical_path": "docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "canonical_sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9",
+      "complete_direct_body": true,
+      "first_line": 1,
+      "key": "QL_CUT",
+      "last_line": 640,
+      "occurrences": 1,
+      "role": "complete literal definition-source identity, not import of every theorem in the document",
+      "source_bytes": 23623,
+      "source_lines": 640,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "source_sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 34645,
+      "byte_start_inclusive": 0,
+      "canonical_path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "canonical_sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd",
+      "complete_direct_body": true,
+      "first_line": 1,
+      "key": "QL_ENCODED",
+      "last_line": 301,
+      "occurrences": 1,
+      "role": "complete literal definition-source identity, not import of every theorem in the document",
+      "source_bytes": 34645,
+      "source_lines": 301,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "source_sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd"
+    }
+  ],
+  "definitions": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+      "bytes": 21919,
+      "claim_id": null,
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "C235_NOTE",
+      "label": "Cycle235 note",
+      "lines": 481,
+      "markdown": "[Cycle235 note](../archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md)",
+      "path": "archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+      "published_sha256": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+      "registered_graph_note": false,
+      "relied_role": "Historical graph/even-code/placement and attribution provenance; finite conclusions are proved in the accepted body",
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance",
+      "target": "../archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+      "bytes": 31826,
+      "claim_id": null,
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "C235_PROGRAM",
+      "label": "literal historical program",
+      "lines": 831,
+      "markdown": "[literal historical program](../scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py)",
+      "path": "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+      "published_sha256": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "registered_graph_note": false,
+      "relied_role": "Literal graph/edge and port orders, signed A/B, normalized local/Wilson paths, framing and placement constructors; not old runner outcomes",
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance",
+      "target": "../scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "bytes": 23623,
+      "claim_id": "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "QL_CUT",
+      "label": "hard-cut link note",
+      "lines": 640,
+      "markdown": "[hard-cut link note](U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md)",
+      "path": "docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "published_sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9",
+      "registered_graph_note": true,
+      "relied_role": "Finite nonunitary hard-cut link definition and sign provenance; stronger backreaction/Floquet claims are not imported",
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance",
+      "target": "U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "bytes": 34645,
+      "claim_id": "the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "QL_ENCODED",
+      "label": "encoded U(1) note",
+      "lines": 301,
+      "markdown": "[encoded U(1) note](THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md)",
+      "path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "published_sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd",
+      "registered_graph_note": true,
+      "relied_role": "T/K/directed-hop definition, explicit charge/Gauss and record-scope provenance; no old cube census is imported",
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance",
+      "target": "THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    }
+  ],
+  "direct_edges_verified": true,
+  "graph_consequences": {
+    "ancestry_edge_added": false,
+    "basis": "Actual direct attribution links. Current graph scans Markdown notes inside docs only; Cycle235 archive Markdown and Python link are outside that domain.",
+    "builder_executed": false,
+    "expected_delta": {
+      "edges": 2,
+      "nodes": 1,
+      "roots": 0
+    }
+  },
+  "history_theorem_imported": false,
+  "markdown_citations": [
+    {
+      "claim_id": null,
+      "key": "C235_NOTE",
+      "label": "Cycle235 note",
+      "markdown": "[Cycle235 note](../archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md)",
+      "parent_path": "archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+      "target": "../archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md"
+    },
+    {
+      "claim_id": null,
+      "key": "C235_PROGRAM",
+      "label": "literal historical program",
+      "markdown": "[literal historical program](../scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py)",
+      "parent_path": "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+      "target": "../scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py"
+    },
+    {
+      "claim_id": "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03",
+      "key": "QL_CUT",
+      "label": "hard-cut link note",
+      "markdown": "[hard-cut link note](U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md)",
+      "parent_path": "docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "target": "U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    },
+    {
+      "claim_id": "the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03",
+      "key": "QL_ENCODED",
+      "label": "encoded U(1) note",
+      "markdown": "[encoded U(1) note](THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md)",
+      "parent_path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "target": "THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    }
+  ],
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "bytes": 23623,
+      "claim_id": "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "QL_CUT",
+      "label": "hard-cut link note",
+      "lines": 640,
+      "markdown": "[hard-cut link note](U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md)",
+      "path": "docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "published_sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9",
+      "registered_graph_note": true,
+      "relied_role": "Finite nonunitary hard-cut link definition and sign provenance; stronger backreaction/Floquet claims are not imported",
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance",
+      "target": "U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "bytes": 34645,
+      "claim_id": "the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "QL_ENCODED",
+      "label": "encoded U(1) note",
+      "lines": 301,
+      "markdown": "[encoded U(1) note](THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md)",
+      "path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "published_sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd",
+      "registered_graph_note": true,
+      "relied_role": "T/K/directed-hop definition, explicit charge/Gauss and record-scope provenance; no old cube census is imported",
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance",
+      "target": "THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "actual_claim_id": null,
+      "canonical_path": "archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+      "canonical_sha256": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "C235_NOTE",
+      "registered_graph_note": false,
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance"
+    },
+    {
+      "actual_claim_id": null,
+      "canonical_path": "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+      "canonical_sha256": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "C235_PROGRAM",
+      "registered_graph_note": false,
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance"
+    },
+    {
+      "actual_claim_id": "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03",
+      "canonical_path": "docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "canonical_sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "QL_CUT",
+      "registered_graph_note": true,
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance"
+    },
+    {
+      "actual_claim_id": "the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03",
+      "canonical_path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "canonical_sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "QL_ENCODED",
+      "registered_graph_note": true,
+      "relied_role_checked": true,
+      "role_class": "literal_historical_definition_and_provenance"
+    }
+  ],
+  "verification_scope": "Source-selected literal citations and current existing node identities; graph builder not executed. Root must compare actual rebuilt graph."
+}

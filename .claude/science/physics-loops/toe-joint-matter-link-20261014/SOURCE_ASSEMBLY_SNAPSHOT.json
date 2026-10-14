@@ -1,0 +1,14 @@
+{
+  "accepted_source_freeze_sha256": "8bb80c1adbc231ef0596b6d024ac639cefc6e3a0d566543519da18eb8e211ed1",
+  "archive_index": "EVIDENCE_MAP.json",
+  "current_authoritative_parent_binding": "PARENT_BINDINGS.json",
+  "historical_bytes_overwritten": false,
+  "preserved_members": 100,
+  "record_scope": "explicitly_historical_accepted_source_preparation_snapshot",
+  "source_fields_not_current_publication_status": [
+    "new_wrapper_status",
+    "canonical_parent_commit_or_PR_bound",
+    "canonical_citations_finalized",
+    "canonical_execution_authorized"
+  ]
+}

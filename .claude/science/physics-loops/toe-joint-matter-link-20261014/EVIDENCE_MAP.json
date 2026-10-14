@@ -1,0 +1,2297 @@
+{
+  "accepted_source_package": {
+    "additional_files": [
+      {
+        "bytes": 21365,
+        "path": "FINAL_FREEZE.json",
+        "sha256": "8bb80c1adbc231ef0596b6d024ac639cefc6e3a0d566543519da18eb8e211ed1"
+      }
+    ],
+    "complete_file_count": 100,
+    "freeze_sha256": "8bb80c1adbc231ef0596b6d024ac639cefc6e3a0d566543519da18eb8e211ed1",
+    "historical_status_scope": "Every preserved preparation field is historical. PARENT_BINDINGS.json is current; source-only acceptance is not execution authority.",
+    "member_count": 99,
+    "members": [
+      {
+        "bytes": 3959,
+        "lines": 118,
+        "path": "ASSEMBLY_IDENTITY_RECEIPT.json",
+        "sha256": "f0321b9738a3ce1b5fb2f1542c1d2021a45cdd07ffaad0caf15272ebbcaa1be6"
+      },
+      {
+        "bytes": 3353,
+        "lines": 15,
+        "path": "ASSEMBLY_REPORT.md",
+        "sha256": "587d05c84fe86776d7e057924e33f4d889df7ffc3bb06ff3866def555c499b95"
+      },
+      {
+        "bytes": 47920,
+        "lines": 366,
+        "path": "CANDIDATE.md",
+        "sha256": "6ddde3c397339a6c19f0a39a1c925f59693fee0d77bf9735bcccee776c7a0646"
+      },
+      {
+        "bytes": 10777,
+        "lines": 66,
+        "path": "CANDIDATE_FROM_DERIVATION.diff",
+        "sha256": "74a7587ca414497f354424b66feef0751fc11e1c8120a00d21cf3de56f16b996"
+      },
+      {
+        "bytes": 2477,
+        "lines": 56,
+        "path": "CLAIM_STATUS.json",
+        "sha256": "5f422e8e3c6f351dbcd9a20d40c48d747aca5b420f7e7bf90e33840e2d93af6d"
+      },
+      {
+        "bytes": 14027,
+        "lines": 350,
+        "path": "CONTROL_EVIDENCE.json",
+        "sha256": "aa2bbda45f5570093262dee3af96fd4e508e179cafaf8a764d479a462d22bbf1"
+      },
+      {
+        "bytes": 6657,
+        "lines": 119,
+        "path": "DEPENDENCY_ROLES.json",
+        "sha256": "60c3de98a51415dc7f94bec7d904b6f8b661a6398c6be6925c9d734837aae37c"
+      },
+      {
+        "bytes": 6508,
+        "lines": 25,
+        "path": "EVIDENCE_CLOSURE.md",
+        "sha256": "79158a9d79c7b1e1df70b46d293a94b6bb10887ee89b2be16346ad7e23572abe"
+      },
+      {
+        "bytes": 50548,
+        "lines": 887,
+        "path": "EVIDENCE_MANIFEST.json",
+        "sha256": "a6e35492426ba96338cbdcfb88882c93352872dbde95f71ff9bae131bb115640"
+      },
+      {
+        "bytes": 1221,
+        "lines": 7,
+        "path": "README.md",
+        "sha256": "85420126d1af0cb2b85ae24906d4fcba4dfaaea2b4665ed52ddb231d828fdfe8"
+      },
+      {
+        "bytes": 6917,
+        "lines": 144,
+        "path": "SOURCE_EXPOSURE.json",
+        "sha256": "16fd40ce1428a2002ba80d991f6befadb1eb10d90de096be224ab25f9b85732a"
+      },
+      {
+        "bytes": 7779,
+        "lines": 189,
+        "path": "SOURCE_MAP.json",
+        "sha256": "b54d5016acf6530072cb732f6ca96e07d0bf2b7339c58d94935e2d809311ffa1"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "UNCHANGED_CORE.diff",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 8626,
+        "lines": 53,
+        "path": "WRAPPER.md",
+        "sha256": "e50cb6c7e4459b01407547bb35c7f16ce9b60b88bd39ccec8490034e86e7337e"
+      },
+      {
+        "bytes": 8733,
+        "lines": 56,
+        "path": "WRAPPER_FULL.diff",
+        "sha256": "4213357bf41060676fe9a2421537cca817569560f6448fe4368b7f3b1127799a"
+      },
+      {
+        "bytes": 3294,
+        "lines": 56,
+        "path": "archive/acceptance/JOINT_INTERFACE_ROOT_ACCEPTANCE.json",
+        "sha256": "e092776db0cdb85565ff9092911782c6736867a19287bb0a704d0521f8d6c849"
+      },
+      {
+        "bytes": 39236,
+        "lines": 310,
+        "path": "archive/author/DERIVATION.md",
+        "sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+      },
+      {
+        "bytes": 1494,
+        "lines": 9,
+        "path": "archive/author/DRAFT_INITIAL.md",
+        "sha256": "b3f42bcc86937a28fc7350b2cbe575303dba90de7cefa10eb0f915661818e94e"
+      },
+      {
+        "bytes": 8368,
+        "lines": 198,
+        "path": "archive/author/SEAL.json",
+        "sha256": "81cfcd86447b1f740cfb83579837af9f2729b09910191d3ca322d4d16d74575e"
+      },
+      {
+        "bytes": 6443,
+        "lines": 95,
+        "path": "archive/author/SOURCE_EXPOSURE.json",
+        "sha256": "e19e99c8755e1b3bc482bc370031f5b86ae2c489622976040dc2e00cc225712c"
+      },
+      {
+        "bytes": 9201,
+        "lines": 192,
+        "path": "archive/author/SOURCE_IDENTITY_CHECK.json",
+        "sha256": "d9ee1efb3430cfbaa51c3ff130aac91be00ebfacb7a98805af51c766173a9f88"
+      },
+      {
+        "bytes": 30274,
+        "lines": 588,
+        "path": "archive/author/check_interface.py",
+        "sha256": "d8b2543eaf232d2eff7212e035b597b113a6f991c130527c540170b4fb4036ce"
+      },
+      {
+        "bytes": 1014,
+        "lines": 24,
+        "path": "archive/author/run01_seam/RECEIPT.json",
+        "sha256": "b18a29f577aa04972acf399ca61adf9af01e65ba57b1d45abdccfb5152d4d140"
+      },
+      {
+        "bytes": 11264,
+        "lines": 250,
+        "path": "archive/author/run01_seam/check_interface.executed.py",
+        "sha256": "3d87df259fa706405089bc20040bca881d959420dc673910c761e8cad8002505"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/author/run01_seam/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 3775,
+        "lines": 4,
+        "path": "archive/author/run01_seam/stdout.jsonl",
+        "sha256": "951297ea13b62fb2211b2a13dea3347078fba7c3740b5a513baad76fadfc7de8"
+      },
+      {
+        "bytes": 1014,
+        "lines": 24,
+        "path": "archive/author/run02_core/RECEIPT.json",
+        "sha256": "1436b48b4a724ce8e69093801e21aef54969031243a81a28b52d241d9268c94d"
+      },
+      {
+        "bytes": 24922,
+        "lines": 500,
+        "path": "archive/author/run02_core/check_interface.executed.py",
+        "sha256": "d253ae38078577f53d0e5cf5e4dbe03cf8a3f78c88d4567b1dbe7432e9ee7afe"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/author/run02_core/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 8462,
+        "lines": 3,
+        "path": "archive/author/run02_core/stdout.jsonl",
+        "sha256": "c1c8d311279ebccef1f805efcb98ce8012d08a1331dd41d6486d6dfee6ff8e36"
+      },
+      {
+        "bytes": 1022,
+        "lines": 24,
+        "path": "archive/author/run03_rotation/RECEIPT.json",
+        "sha256": "bf6b01cd01b725f8721ce8d0acd07b2d693c8d96e6ff883cc7430079bb6cd820"
+      },
+      {
+        "bytes": 24922,
+        "lines": 500,
+        "path": "archive/author/run03_rotation/check_interface.executed.py",
+        "sha256": "d253ae38078577f53d0e5cf5e4dbe03cf8a3f78c88d4567b1dbe7432e9ee7afe"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/author/run03_rotation/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 14726,
+        "lines": 3,
+        "path": "archive/author/run03_rotation/stdout.jsonl",
+        "sha256": "e7dad1b0436540192779f55539f29ae1b535ccd6bafbfa6eb1b1a68dcaca2ad6"
+      },
+      {
+        "bytes": 1039,
+        "lines": 24,
+        "path": "archive/author/run04_complete/RECEIPT.json",
+        "sha256": "60a218d91c6ec2ee0b84e364bc88dc8d8510d363d1a807366a8fe2aed8fa6344"
+      },
+      {
+        "bytes": 30213,
+        "lines": 587,
+        "path": "archive/author/run04_complete/check_interface.executed.py",
+        "sha256": "467df84b0c5adc9012283aa88d818f76199e2d6b6080dc6fc26bb92bc2963509"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/author/run04_complete/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 28743,
+        "lines": 11,
+        "path": "archive/author/run04_complete/stdout.jsonl",
+        "sha256": "ea0dc80624bf5f35a1c5bc5ae19da5746456ff30c74cabb10d27e29e8169ca51"
+      },
+      {
+        "bytes": 1200,
+        "lines": 26,
+        "path": "archive/author/run05_final/RECEIPT.json",
+        "sha256": "b158a453cd16c2209342294e1c69a27701f6fd3c920490b23f5bba655c9b1a5d"
+      },
+      {
+        "bytes": 981,
+        "lines": 14,
+        "path": "archive/author/run05_final/SOURCE_COMMENT_ONLY.diff",
+        "sha256": "b7fb058ce8590e1a56c31d1975b6a8d0874eb8db7766b2eb4b837338001fe5bd"
+      },
+      {
+        "bytes": 30274,
+        "lines": 588,
+        "path": "archive/author/run05_final/check_interface.executed.py",
+        "sha256": "d8b2543eaf232d2eff7212e035b597b113a6f991c130527c540170b4fb4036ce"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/author/run05_final/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 28743,
+        "lines": 11,
+        "path": "archive/author/run05_final/stdout.jsonl",
+        "sha256": "ea0dc80624bf5f35a1c5bc5ae19da5746456ff30c74cabb10d27e29e8169ca51"
+      },
+      {
+        "bytes": 24390,
+        "lines": 150,
+        "path": "archive/contract/SOURCE-CONTRACT.md",
+        "sha256": "bccc2e837cfc925d91e88331581b0057e322cfb44da19271fcfc393b52a90938"
+      },
+      {
+        "bytes": 21919,
+        "lines": 481,
+        "path": "archive/definitions/C235_NOTE.md",
+        "sha256": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2"
+      },
+      {
+        "bytes": 31826,
+        "lines": 831,
+        "path": "archive/definitions/C235_PROGRAM.py",
+        "sha256": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34"
+      },
+      {
+        "bytes": 23623,
+        "lines": 640,
+        "path": "archive/definitions/QL_CUT.md",
+        "sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9"
+      },
+      {
+        "bytes": 34645,
+        "lines": 301,
+        "path": "archive/definitions/QL_ENCODED.md",
+        "sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd"
+      },
+      {
+        "bytes": 452,
+        "lines": 22,
+        "path": "archive/full_review/AUTHOR_GLOBAL_ALIGNMENT.json",
+        "sha256": "4e4693ad93a9a5a4382ad8398f90cac407ce068e5d5852d7f053294651596704"
+      },
+      {
+        "bytes": 7849,
+        "lines": 393,
+        "path": "archive/full_review/AUTHOR_SOURCE_VERSION_MAP.json",
+        "sha256": "ec8d8560bfd53f720eea0df3420f401bb66b56a4d6f29f70a8e8d37716cc33b7"
+      },
+      {
+        "bytes": 9752,
+        "lines": 312,
+        "path": "archive/full_review/HISTORICAL_STREAM_COVERAGE.json",
+        "sha256": "de72cfa077d6ea7fdd3c291382807343889663800880dc1f4a6225ee1068b2a5"
+      },
+      {
+        "bytes": 2866,
+        "lines": 11,
+        "path": "archive/full_review/PRELIMINARY_ASSESSMENT.md",
+        "sha256": "d4d56f9f6a8bd8b4c0ed0ba4b85a8c35f4ff5f387ff38887ced5c8030d869db7"
+      },
+      {
+        "bytes": 281,
+        "lines": 8,
+        "path": "archive/full_review/PRELIMINARY_SEAL.json",
+        "sha256": "2a8fa44ae417596be95c5b140b431f62aba7429b1485dfd9869c7bfdc2eab9aa"
+      },
+      {
+        "bytes": 27549,
+        "lines": 129,
+        "path": "archive/full_review/REPORT.md",
+        "sha256": "65850322f6d46872dbec4c121122c9503f7c2f6c7047bb5d889ed38a3a79f3e0"
+      },
+      {
+        "bytes": 5045,
+        "lines": 136,
+        "path": "archive/full_review/SEAL.json",
+        "sha256": "f5decd77922d61fc5412472fd2a7e43ccc11a8f368b7de5686706e38d236d62a"
+      },
+      {
+        "bytes": 20862,
+        "lines": 443,
+        "path": "archive/full_review/SOURCE_EXPOSURE.json",
+        "sha256": "1cda3e6579ec5ae39c96dd254a5f80bf54a5c36f548b4fbcf3c7f95011a09c12"
+      },
+      {
+        "bytes": 1193,
+        "lines": 19,
+        "path": "archive/full_review/independent_run01/RECEIPT.json",
+        "sha256": "03a031879d671fb717239f803279d5c08b97ba5f6a26fec8e9044bb01b5229eb"
+      },
+      {
+        "bytes": 8939,
+        "lines": 204,
+        "path": "archive/full_review/independent_run01/executed_source.py",
+        "sha256": "8f26d44f7b28fa25757152fb224570ceb34ce96db7981141025672ddb623ad9a"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/full_review/independent_run01/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 2638,
+        "lines": 5,
+        "path": "archive/full_review/independent_run01/stdout.jsonl",
+        "sha256": "ed69137fe35b57cc26808676dbef47dd93d5aa6b6666f1e4dbe5489b7c212c6c"
+      },
+      {
+        "bytes": 8939,
+        "lines": 204,
+        "path": "archive/full_review/independent_signed_check.py",
+        "sha256": "8f26d44f7b28fa25757152fb224570ceb34ce96db7981141025672ddb623ad9a"
+      },
+      {
+        "bytes": 20292,
+        "lines": 357,
+        "path": "archive/full_review/run01_seam_TO_FINAL.diff",
+        "sha256": "942631b3678d38c4d7ef7673eee0f79e2d7a7bff31fa51d67f3ed3048a6fa1cd"
+      },
+      {
+        "bytes": 9961,
+        "lines": 164,
+        "path": "archive/full_review/run02_core_TO_FINAL.diff",
+        "sha256": "c516257c249304266ee8dba6cbf218f57353fc4d396f2d94c7478e34324a030b"
+      },
+      {
+        "bytes": 26218,
+        "lines": 726,
+        "path": "archive/review_context/DIRECTION_ORDER_C210.py",
+        "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+      },
+      {
+        "bytes": 11333,
+        "lines": 233,
+        "path": "archive/review_context/MINIMAL_AXIOMS_CONTEXT.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "bytes": 8955,
+        "lines": 51,
+        "path": "archive/root_check/ANALYTIC_CHECK.md",
+        "sha256": "5955b0b88d76a52db083d8d67e0b8811a9de92e3fe5fe6a6cfe69461859c68f2"
+      },
+      {
+        "bytes": 1424,
+        "lines": 28,
+        "path": "archive/root_check/ANALYTIC_SEAL.json",
+        "sha256": "b91ee4bddf99c680271b7d33e2be52d01f9e0913474e722875c49cf21f204087"
+      },
+      {
+        "bytes": 608,
+        "lines": 21,
+        "path": "archive/root_check/AUTHOR_EVIDENCE_IDENTITY_CHECK.json",
+        "sha256": "e12209f8eaa71f95b1fd9a4e8c74c5fb52c0930c7400a89bd10a6833d7113bc9"
+      },
+      {
+        "bytes": 2029,
+        "lines": 37,
+        "path": "archive/root_check/CHECK_FREEZE.json",
+        "sha256": "d9ff3e2496279a29894ecbb62adc815fb74aa4296ee2a367c2630311007578d9"
+      },
+      {
+        "bytes": 440,
+        "lines": 10,
+        "path": "archive/root_check/CYCLE_SPAN_RECEIPT.json",
+        "sha256": "47f8afea3865c18a0fd8ce93bad8d88a5ddb6cfbe85cb8d2a5cc6b9ee780ecbd"
+      },
+      {
+        "bytes": 18073,
+        "lines": 318,
+        "path": "archive/root_check/FINAL_REVIEW_IDENTITY_CHECK.json",
+        "sha256": "dea318e93e4b4473d0d889860fcc3ed470d0c28b19afd2ec21384a93c4a1c606"
+      },
+      {
+        "bytes": 6105,
+        "lines": 23,
+        "path": "archive/root_check/FULL_CYCLE_SECTOR_LEMMA.md",
+        "sha256": "301177980761d60533c3f5617c252c543cb81d1eb49ef1558d9a8cb39754e8dc"
+      },
+      {
+        "bytes": 3821,
+        "lines": 14,
+        "path": "archive/root_check/FULL_CYCLE_SECTOR_LEMMA_V2.diff",
+        "sha256": "726870adf16ae14174562549bd2274911276ab42239060ab34728d16f30824f7"
+      },
+      {
+        "bytes": 6868,
+        "lines": 23,
+        "path": "archive/root_check/FULL_CYCLE_SECTOR_LEMMA_V2.md",
+        "sha256": "3b7d2be02a2baf31a74348048ed03bc595958c04c37958ffecd12a86930fd0d6"
+      },
+      {
+        "bytes": 674,
+        "lines": 13,
+        "path": "archive/root_check/FULL_CYCLE_SECTOR_LEMMA_V2_SEAL.json",
+        "sha256": "d6138cbf0988234631d58bbcfe529559231bc33fef64d33c1d4d625b0150bccc"
+      },
+      {
+        "bytes": 460,
+        "lines": 7,
+        "path": "archive/root_check/FULL_CYCLE_SECTOR_SEAL.json",
+        "sha256": "038434530f5e4fab3672125ba65c09f33d39384d106cde367fce6cb31cddd577"
+      },
+      {
+        "bytes": 651,
+        "lines": 14,
+        "path": "archive/root_check/LOCAL_CHECK_RECEIPT.json",
+        "sha256": "e11975e59358569a1b44e28a52364dfe5611d40c6fcfc6b5da40ff950ba3b0f9"
+      },
+      {
+        "bytes": 7238,
+        "lines": 21,
+        "path": "archive/root_check/ROOT_FINAL_REVIEW.md",
+        "sha256": "2f19f7db1a8a7a609699a724a2a3b2e46d37266936a176b35d33ebcf73cfe0d4"
+      },
+      {
+        "bytes": 6214,
+        "lines": 93,
+        "path": "archive/root_check/ROOT_ROTATION_ACCEPTANCE.json",
+        "sha256": "4639fec24e8a414b7c2b2d1a902120a29ade7cde46143d209d54eeed277482af"
+      },
+      {
+        "bytes": 1659,
+        "lines": 20,
+        "path": "archive/root_check/ROOT_SECTOR_ACCEPTANCE.json",
+        "sha256": "d250ac7c1ee72a5ae7248a69e4c8258b8341b30237930bfc47e1c551af98fc75"
+      },
+      {
+        "bytes": 4224,
+        "lines": 13,
+        "path": "archive/root_check/ROTATION_AUTHOR_BINDING.md",
+        "sha256": "36fe340b319d866be7f60072761142e55131cbca86a9278c88e39f699f198f85"
+      },
+      {
+        "bytes": 500,
+        "lines": 12,
+        "path": "archive/root_check/ROTATION_GEOMETRY_RECEIPT.json",
+        "sha256": "042d94837e54a488c960307663a2157e0bb3277e26917b9c6d61942bae94ec15"
+      },
+      {
+        "bytes": 6233,
+        "lines": 19,
+        "path": "archive/root_check/ROTATION_LIFT_LEMMA.md",
+        "sha256": "27c587b0190a93198bc1a56a6c7b2a69dc48ebe1d489c7eea0cc3f8c1effde3d"
+      },
+      {
+        "bytes": 380,
+        "lines": 8,
+        "path": "archive/root_check/ROTATION_LIFT_SEAL.json",
+        "sha256": "4577fe7f2d4958b90507b759f9edc31d78e9499943d4d02ff6afd8df72a9e71d"
+      },
+      {
+        "bytes": 2927,
+        "lines": 69,
+        "path": "archive/root_check/cycle_span_check.py",
+        "sha256": "20566307fe3f8f0584bbf38038bb88e0d65a1af81191584e0cb5ca5112e2a5c7"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/root_check/cycle_span_check.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 488,
+        "lines": 22,
+        "path": "archive/root_check/cycle_span_check.stdout",
+        "sha256": "255856f0e5851b61236a41f16674f4e67743ea5a3c11cd7a4bbfce8e9ee7f24c"
+      },
+      {
+        "bytes": 5222,
+        "lines": 113,
+        "path": "archive/root_check/local_exact_check.py",
+        "sha256": "6d213eee178fef83f978778f7e3107fdae0bd628cf4975fa09277d292682598c"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/root_check/local_exact_check.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 1337,
+        "lines": 56,
+        "path": "archive/root_check/local_exact_check.stdout",
+        "sha256": "b7d99f2d269129164435d0a4e9f6790d440a84e4e42db31e9c8af83e33ac9308"
+      },
+      {
+        "bytes": 5989,
+        "lines": 116,
+        "path": "archive/root_check/rotation_geometry_check.py",
+        "sha256": "5cdbe1c7fe22659b2a86e7814398c4e44a901ddd6a125d2e40671b884c5cb168"
+      },
+      {
+        "bytes": 0,
+        "lines": 0,
+        "path": "archive/root_check/rotation_geometry_check.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 10938,
+        "lines": 521,
+        "path": "archive/root_check/rotation_geometry_check.stdout",
+        "sha256": "739264693eee5a06d233b1ba2831522f0e52000488d128be99cb3b8cb8ac89dd"
+      },
+      {
+        "bytes": 7820,
+        "lines": 151,
+        "path": "archive/root_rotation_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+        "sha256": "16bcd68ee4c3498abb22d4740d35e82aaf29cb94d5e87f8ca2e001ae879d85a3"
+      },
+      {
+        "bytes": 12716,
+        "lines": 96,
+        "path": "archive/root_rotation_review/REPORT.md",
+        "sha256": "d6c4aa488e43bccb5f645b3ed9cb529f994cbae2cbf558d090c42b3292e3d69f"
+      },
+      {
+        "bytes": 7687,
+        "lines": 141,
+        "path": "archive/root_sector_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+        "sha256": "5192486ca3011f2bc7102460e5f9419d04c32ab9d3fbff64c41d26fd6139ca76"
+      },
+      {
+        "bytes": 9095,
+        "lines": 35,
+        "path": "archive/root_sector_review/REPORT.md",
+        "sha256": "c4f52c58a044b03de4f92bed5b060d38a7b2028e5d696352fd649679435474d8"
+      },
+      {
+        "bytes": 6831,
+        "lines": 136,
+        "path": "archive/root_sector_review/V2_AND_CYCLE_SPAN_IDENTITY_SEAL.json",
+        "sha256": "0b397cc7af2b6fe7d4dbdbc320c08f3ec300ea9ff21bef7c439c88a47fd4b49d"
+      },
+      {
+        "bytes": 6885,
+        "lines": 26,
+        "path": "archive/root_sector_review/V2_AND_CYCLE_SPAN_REVIEW.md",
+        "sha256": "727401855bb3e6f050e0cd1b6fd633e6c6f6428fe936793e87b3f81148368bfd"
+      }
+    ],
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly"
+  },
+  "objects": [
+    {
+      "bytes": 3959,
+      "lines": 118,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/ASSEMBLY_IDENTITY_RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/f0321b9738a3ce1b5fb2f1542c1d2021a45cdd07ffaad0caf15272ebbcaa1be6.gz",
+      "sha256": "f0321b9738a3ce1b5fb2f1542c1d2021a45cdd07ffaad0caf15272ebbcaa1be6",
+      "stored_bytes": 1713,
+      "stored_sha256": "bd4e491680b5341bac5725f5118fc01168099eebab195ca9506bdc5ba89684c9"
+    },
+    {
+      "bytes": 3353,
+      "lines": 15,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/ASSEMBLY_REPORT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/587d05c84fe86776d7e057924e33f4d889df7ffc3bb06ff3866def555c499b95.gz",
+      "sha256": "587d05c84fe86776d7e057924e33f4d889df7ffc3bb06ff3866def555c499b95",
+      "stored_bytes": 1851,
+      "stored_sha256": "66ad29f280fd5b8cd47d3a80589d27d3f9471abf842f73796d98c2af9fee6f26"
+    },
+    {
+      "bytes": 47920,
+      "lines": 366,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/CANDIDATE.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/6ddde3c397339a6c19f0a39a1c925f59693fee0d77bf9735bcccee776c7a0646.gz",
+      "sha256": "6ddde3c397339a6c19f0a39a1c925f59693fee0d77bf9735bcccee776c7a0646",
+      "stored_bytes": 19310,
+      "stored_sha256": "2cee035d93bce29952d2c0632ca2397454bcef57d1a640bf25ac52c1fd58a6bd"
+    },
+    {
+      "bytes": 10777,
+      "lines": 66,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/CANDIDATE_FROM_DERIVATION.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/74a7587ca414497f354424b66feef0751fc11e1c8120a00d21cf3de56f16b996.gz",
+      "sha256": "74a7587ca414497f354424b66feef0751fc11e1c8120a00d21cf3de56f16b996",
+      "stored_bytes": 4761,
+      "stored_sha256": "7714a5c1797be4699c89160a618cf7cd299dd71cfa5d0b77422434a16c08624f"
+    },
+    {
+      "bytes": 2477,
+      "lines": 56,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/CLAIM_STATUS.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/5f422e8e3c6f351dbcd9a20d40c48d747aca5b420f7e7bf90e33840e2d93af6d.gz",
+      "sha256": "5f422e8e3c6f351dbcd9a20d40c48d747aca5b420f7e7bf90e33840e2d93af6d",
+      "stored_bytes": 1292,
+      "stored_sha256": "2c5d520d02dfebdb7a8a452f5269a5062689983260f5321c41330996259d6092"
+    },
+    {
+      "bytes": 14027,
+      "lines": 350,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/CONTROL_EVIDENCE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/aa2bbda45f5570093262dee3af96fd4e508e179cafaf8a764d479a462d22bbf1.gz",
+      "sha256": "aa2bbda45f5570093262dee3af96fd4e508e179cafaf8a764d479a462d22bbf1",
+      "stored_bytes": 2609,
+      "stored_sha256": "69ca0f15647bbfa70c2bf6e1aa2a8b07ea9d2359aa93933ae292370e4a805185"
+    },
+    {
+      "bytes": 6657,
+      "lines": 119,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/DEPENDENCY_ROLES.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/60c3de98a51415dc7f94bec7d904b6f8b661a6398c6be6925c9d734837aae37c.gz",
+      "sha256": "60c3de98a51415dc7f94bec7d904b6f8b661a6398c6be6925c9d734837aae37c",
+      "stored_bytes": 2365,
+      "stored_sha256": "8ddc9e5af41a75c0bcff8046303e71765ba8dfe829aa98d26d856fc2ff6a8a06"
+    },
+    {
+      "bytes": 6508,
+      "lines": 25,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/EVIDENCE_CLOSURE.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/79158a9d79c7b1e1df70b46d293a94b6bb10887ee89b2be16346ad7e23572abe.gz",
+      "sha256": "79158a9d79c7b1e1df70b46d293a94b6bb10887ee89b2be16346ad7e23572abe",
+      "stored_bytes": 2808,
+      "stored_sha256": "cc025183da0bd666cb77489530035dc268aaed062e52c67e47c150fa1c50d82c"
+    },
+    {
+      "bytes": 50548,
+      "lines": 887,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/EVIDENCE_MANIFEST.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/a6e35492426ba96338cbdcfb88882c93352872dbde95f71ff9bae131bb115640.gz",
+      "sha256": "a6e35492426ba96338cbdcfb88882c93352872dbde95f71ff9bae131bb115640",
+      "stored_bytes": 6553,
+      "stored_sha256": "e97018eb70c32417696598cb35da94b8124ce6df1827b5dfd81c3e2c9ea19eef"
+    },
+    {
+      "bytes": 21365,
+      "lines": 653,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/FINAL_FREEZE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/8bb80c1adbc231ef0596b6d024ac639cefc6e3a0d566543519da18eb8e211ed1.gz",
+      "sha256": "8bb80c1adbc231ef0596b6d024ac639cefc6e3a0d566543519da18eb8e211ed1",
+      "stored_bytes": 6154,
+      "stored_sha256": "a659f359d659faf0af1b27ec92c0b14d4ab41d01003d7c7b8d0cb5590e2a7fb9"
+    },
+    {
+      "bytes": 1221,
+      "lines": 7,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/README.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/85420126d1af0cb2b85ae24906d4fcba4dfaaea2b4665ed52ddb231d828fdfe8.gz",
+      "sha256": "85420126d1af0cb2b85ae24906d4fcba4dfaaea2b4665ed52ddb231d828fdfe8",
+      "stored_bytes": 706,
+      "stored_sha256": "865d0de55168ca9077062e297d5e4fb6911cc78b6485c9bbea1362f860dc8035"
+    },
+    {
+      "bytes": 6917,
+      "lines": 144,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/SOURCE_EXPOSURE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/16fd40ce1428a2002ba80d991f6befadb1eb10d90de096be224ab25f9b85732a.gz",
+      "sha256": "16fd40ce1428a2002ba80d991f6befadb1eb10d90de096be224ab25f9b85732a",
+      "stored_bytes": 2903,
+      "stored_sha256": "ce576bec8ff3d164576dcb153abf7fdcd8879dcffbb43fd9691555c3cf98a128"
+    },
+    {
+      "bytes": 7779,
+      "lines": 189,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/SOURCE_MAP.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/b54d5016acf6530072cb732f6ca96e07d0bf2b7339c58d94935e2d809311ffa1.gz",
+      "sha256": "b54d5016acf6530072cb732f6ca96e07d0bf2b7339c58d94935e2d809311ffa1",
+      "stored_bytes": 1743,
+      "stored_sha256": "b90c9b424fcdeea68ba849b9a8ad3909fac968a6aa2070fc9c314b8838e61725"
+    },
+    {
+      "bytes": 0,
+      "lines": 0,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/UNCHANGED_CORE.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run01_seam/stderr.txt",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run02_core/stderr.txt",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run03_rotation/stderr.txt",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run04_complete/stderr.txt",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run05_final/stderr.txt",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/independent_run01/stderr.txt",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/cycle_span_check.stderr",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/local_exact_check.stderr",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/rotation_geometry_check.stderr",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run01_seam/stderr.txt",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run02_core/stderr.txt",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run03_rotation/stderr.txt",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run04_complete/stderr.txt",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run05_final/stderr.txt",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/independent_run01/stderr.txt",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/cycle_span_check.stderr",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/local_exact_check.stderr",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/rotation_geometry_check.stderr",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_publication_preparation/source_review/branch.stdout",
+          "role": "later source-only assembly acceptance/review evidence; no mathematical execution"
+        }
+      ],
+      "path": "objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 8626,
+      "lines": 53,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/WRAPPER.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/e50cb6c7e4459b01407547bb35c7f16ce9b60b88bd39ccec8490034e86e7337e.gz",
+      "sha256": "e50cb6c7e4459b01407547bb35c7f16ce9b60b88bd39ccec8490034e86e7337e",
+      "stored_bytes": 3927,
+      "stored_sha256": "ae9106bf7d80c04d9cd133945fa1d93117f294cc0c44290abe41d8f30a642f27"
+    },
+    {
+      "bytes": 8733,
+      "lines": 56,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/WRAPPER_FULL.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        }
+      ],
+      "path": "objects/4213357bf41060676fe9a2421537cca817569560f6448fe4368b7f3b1127799a.gz",
+      "sha256": "4213357bf41060676fe9a2421537cca817569560f6448fe4368b7f3b1127799a",
+      "stored_bytes": 3982,
+      "stored_sha256": "5fa812fc5164da8fbb9cf2998b7c1706ea6e711fbc56d20bbe3cdae7abac5dc6"
+    },
+    {
+      "bytes": 3294,
+      "lines": 56,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/acceptance/JOINT_INTERFACE_ROOT_ACCEPTANCE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/JOINT_INTERFACE_ROOT_ACCEPTANCE.json",
+          "role": "current controlling source-assembly acceptance"
+        }
+      ],
+      "path": "objects/e092776db0cdb85565ff9092911782c6736867a19287bb0a704d0521f8d6c849.gz",
+      "sha256": "e092776db0cdb85565ff9092911782c6736867a19287bb0a704d0521f8d6c849",
+      "stored_bytes": 1234,
+      "stored_sha256": "f524c95d1cc4f700e4739812535931664dd75a2ba95a71b54d4d76c13d763593"
+    },
+    {
+      "bytes": 39236,
+      "lines": 310,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/DERIVATION.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/DERIVATION.md",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca.gz",
+      "sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca",
+      "stored_bytes": 16373,
+      "stored_sha256": "a2e61c9b3a7c030a84d5a514d32f1c4fe33ece8a4fbcfb670a624d8295e2fa99"
+    },
+    {
+      "bytes": 1494,
+      "lines": 9,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/DRAFT_INITIAL.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/DRAFT_INITIAL.md",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/b3f42bcc86937a28fc7350b2cbe575303dba90de7cefa10eb0f915661818e94e.gz",
+      "sha256": "b3f42bcc86937a28fc7350b2cbe575303dba90de7cefa10eb0f915661818e94e",
+      "stored_bytes": 931,
+      "stored_sha256": "14a32073f2d728487f583b11ba8b2f54e9defd1c22052d4afd038d3c1c8e4d62"
+    },
+    {
+      "bytes": 8368,
+      "lines": 198,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/SEAL.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/81cfcd86447b1f740cfb83579837af9f2729b09910191d3ca322d4d16d74575e.gz",
+      "sha256": "81cfcd86447b1f740cfb83579837af9f2729b09910191d3ca322d4d16d74575e",
+      "stored_bytes": 3072,
+      "stored_sha256": "612eac7c256235a912f4d89a46b61a1f45be2e842808c671ffd9443c0d82a0d2"
+    },
+    {
+      "bytes": 6443,
+      "lines": 95,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/SOURCE_EXPOSURE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/SOURCE_EXPOSURE.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/e19e99c8755e1b3bc482bc370031f5b86ae2c489622976040dc2e00cc225712c.gz",
+      "sha256": "e19e99c8755e1b3bc482bc370031f5b86ae2c489622976040dc2e00cc225712c",
+      "stored_bytes": 2422,
+      "stored_sha256": "eae6e0bb31f9e11a32ef8b65619c34b1299dd5f8f01786965106507129a5524d"
+    },
+    {
+      "bytes": 9201,
+      "lines": 192,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/SOURCE_IDENTITY_CHECK.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/SOURCE_IDENTITY_CHECK.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/d9ee1efb3430cfbaa51c3ff130aac91be00ebfacb7a98805af51c766173a9f88.gz",
+      "sha256": "d9ee1efb3430cfbaa51c3ff130aac91be00ebfacb7a98805af51c766173a9f88",
+      "stored_bytes": 2078,
+      "stored_sha256": "fd2b9e56455040e22ecf483bf6e2db504322b3b34d53391bc288140b7de2e95b"
+    },
+    {
+      "bytes": 30274,
+      "lines": 588,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/check_interface.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run05_final/check_interface.executed.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/check_interface.py",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run05_final/check_interface.executed.py",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/d8b2543eaf232d2eff7212e035b597b113a6f991c130527c540170b4fb4036ce.gz",
+      "sha256": "d8b2543eaf232d2eff7212e035b597b113a6f991c130527c540170b4fb4036ce",
+      "stored_bytes": 9737,
+      "stored_sha256": "2354414b3e04a74f969a1318cbad1d8ceb15f6b93fa3b2199d7601aa5eac7ded"
+    },
+    {
+      "bytes": 1014,
+      "lines": 24,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run01_seam/RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run01_seam/RECEIPT.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/b18a29f577aa04972acf399ca61adf9af01e65ba57b1d45abdccfb5152d4d140.gz",
+      "sha256": "b18a29f577aa04972acf399ca61adf9af01e65ba57b1d45abdccfb5152d4d140",
+      "stored_bytes": 565,
+      "stored_sha256": "32f78c861ca0889f5fb4ea7cb3c919298faeb6e662cf2efb7172ed64b7c37d34"
+    },
+    {
+      "bytes": 11264,
+      "lines": 250,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run01_seam/check_interface.executed.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run01_seam/check_interface.executed.py",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/3d87df259fa706405089bc20040bca881d959420dc673910c761e8cad8002505.gz",
+      "sha256": "3d87df259fa706405089bc20040bca881d959420dc673910c761e8cad8002505",
+      "stored_bytes": 4080,
+      "stored_sha256": "a87ba10a0352af2c844db18075b3a8a4da5ee7234a0409e37e31d1e786408951"
+    },
+    {
+      "bytes": 3775,
+      "lines": 4,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run01_seam/stdout.jsonl",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run01_seam/stdout.jsonl",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/951297ea13b62fb2211b2a13dea3347078fba7c3740b5a513baad76fadfc7de8.gz",
+      "sha256": "951297ea13b62fb2211b2a13dea3347078fba7c3740b5a513baad76fadfc7de8",
+      "stored_bytes": 818,
+      "stored_sha256": "12406e6f030855bb3771e47361fe3c614067ed041a1f4cfe8583a4e6779c6d47"
+    },
+    {
+      "bytes": 1014,
+      "lines": 24,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run02_core/RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run02_core/RECEIPT.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/1436b48b4a724ce8e69093801e21aef54969031243a81a28b52d241d9268c94d.gz",
+      "sha256": "1436b48b4a724ce8e69093801e21aef54969031243a81a28b52d241d9268c94d",
+      "stored_bytes": 567,
+      "stored_sha256": "e82f6b3ffc8591e04a436fe9746efd051eddcb981510fb7ceb207e069991bf9d"
+    },
+    {
+      "bytes": 24922,
+      "lines": 500,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run02_core/check_interface.executed.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run03_rotation/check_interface.executed.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run02_core/check_interface.executed.py",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run03_rotation/check_interface.executed.py",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/d253ae38078577f53d0e5cf5e4dbe03cf8a3f78c88d4567b1dbe7432e9ee7afe.gz",
+      "sha256": "d253ae38078577f53d0e5cf5e4dbe03cf8a3f78c88d4567b1dbe7432e9ee7afe",
+      "stored_bytes": 8344,
+      "stored_sha256": "0fc28619f4c7a2ea937ca1abc7fc611009ec2b853991c8fee59fd7046edb7ed5"
+    },
+    {
+      "bytes": 8462,
+      "lines": 3,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run02_core/stdout.jsonl",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run02_core/stdout.jsonl",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/c1c8d311279ebccef1f805efcb98ce8012d08a1331dd41d6486d6dfee6ff8e36.gz",
+      "sha256": "c1c8d311279ebccef1f805efcb98ce8012d08a1331dd41d6486d6dfee6ff8e36",
+      "stored_bytes": 2336,
+      "stored_sha256": "358ebbd2ed9ac7a0bd4fb55ea111a62c8b41a6c3860277a4fe80c6e86240ba3e"
+    },
+    {
+      "bytes": 1022,
+      "lines": 24,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run03_rotation/RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run03_rotation/RECEIPT.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/bf6b01cd01b725f8721ce8d0acd07b2d693c8d96e6ff883cc7430079bb6cd820.gz",
+      "sha256": "bf6b01cd01b725f8721ce8d0acd07b2d693c8d96e6ff883cc7430079bb6cd820",
+      "stored_bytes": 569,
+      "stored_sha256": "e6f0acc8b5f4a69c614c76df9b345e4b7119ab642e046b56dacbdc705a104fba"
+    },
+    {
+      "bytes": 14726,
+      "lines": 3,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run03_rotation/stdout.jsonl",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run03_rotation/stdout.jsonl",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/e7dad1b0436540192779f55539f29ae1b535ccd6bafbfa6eb1b1a68dcaca2ad6.gz",
+      "sha256": "e7dad1b0436540192779f55539f29ae1b535ccd6bafbfa6eb1b1a68dcaca2ad6",
+      "stored_bytes": 964,
+      "stored_sha256": "e37547f7550ef3037035ecc66bc7f242b770c853be95952c3e4986efdcf4d304"
+    },
+    {
+      "bytes": 1039,
+      "lines": 24,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run04_complete/RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run04_complete/RECEIPT.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/60a218d91c6ec2ee0b84e364bc88dc8d8510d363d1a807366a8fe2aed8fa6344.gz",
+      "sha256": "60a218d91c6ec2ee0b84e364bc88dc8d8510d363d1a807366a8fe2aed8fa6344",
+      "stored_bytes": 585,
+      "stored_sha256": "0185796858f0a511cf5ef6bd5f519770d315d87632d19b6a53c02aeca042cdd7"
+    },
+    {
+      "bytes": 30213,
+      "lines": 587,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run04_complete/check_interface.executed.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run04_complete/check_interface.executed.py",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/467df84b0c5adc9012283aa88d818f76199e2d6b6080dc6fc26bb92bc2963509.gz",
+      "sha256": "467df84b0c5adc9012283aa88d818f76199e2d6b6080dc6fc26bb92bc2963509",
+      "stored_bytes": 9728,
+      "stored_sha256": "3e4d604b925bef6b09cd2e24b42e65b386ff7378bcce76d73062a1011ed63625"
+    },
+    {
+      "bytes": 28743,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run04_complete/stdout.jsonl",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run05_final/stdout.jsonl",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run04_complete/stdout.jsonl",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run05_final/stdout.jsonl",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/ea0dc80624bf5f35a1c5bc5ae19da5746456ff30c74cabb10d27e29e8169ca51.gz",
+      "sha256": "ea0dc80624bf5f35a1c5bc5ae19da5746456ff30c74cabb10d27e29e8169ca51",
+      "stored_bytes": 3855,
+      "stored_sha256": "32d88589902ea6f6e4f6002bbbae4aac497406608d3585fff22393e6cc0d6090"
+    },
+    {
+      "bytes": 1200,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run05_final/RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run05_final/RECEIPT.json",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/b158a453cd16c2209342294e1c69a27701f6fd3c920490b23f5bba655c9b1a5d.gz",
+      "sha256": "b158a453cd16c2209342294e1c69a27701f6fd3c920490b23f5bba655c9b1a5d",
+      "stored_bytes": 676,
+      "stored_sha256": "d967209805b60705f61634c40a55abfa6987e467597a1d4e2ea9872017d5aac7"
+    },
+    {
+      "bytes": 981,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/author/run05_final/SOURCE_COMMENT_ONLY.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/run05_final/SOURCE_COMMENT_ONLY.diff",
+          "role": "complete accepted author source, five actual runs, historical drafts, failures and exposure"
+        }
+      ],
+      "path": "objects/b7fb058ce8590e1a56c31d1975b6a8d0874eb8db7766b2eb4b837338001fe5bd.gz",
+      "sha256": "b7fb058ce8590e1a56c31d1975b6a8d0874eb8db7766b2eb4b837338001fe5bd",
+      "stored_bytes": 542,
+      "stored_sha256": "bac8810b2c1910743f12a7fbde23c313213115f5cd7bae2c87cc216cc0f32ceb"
+    },
+    {
+      "bytes": 24390,
+      "lines": 150,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/contract/SOURCE-CONTRACT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_alternative/SOURCE-CONTRACT.md",
+          "role": "historical supplied target/route/exposure contract, not theorem acceptance"
+        }
+      ],
+      "path": "objects/bccc2e837cfc925d91e88331581b0057e322cfb44da19271fcfc393b52a90938.gz",
+      "sha256": "bccc2e837cfc925d91e88331581b0057e322cfb44da19271fcfc393b52a90938",
+      "stored_bytes": 10510,
+      "stored_sha256": "1c973cc221450cdeed674413f299e69d31cd176f05b0cf980e0b7daeb2d64b31"
+    },
+    {
+      "bytes": 21919,
+      "lines": 481,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/definitions/C235_NOTE.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/archive/notes/docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+          "role": "literal historical graph/code/placement definition and provenance"
+        }
+      ],
+      "path": "objects/295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2.gz",
+      "sha256": "295edee5608d3141fc3e3212bc51753265d953dadd68a8b44a66ed1e0e16e0d2",
+      "stored_bytes": 8683,
+      "stored_sha256": "64a44e8804ac09086c90cedec70ac01e70e63f7bd4d67023a8f88daa4ae6f914"
+    },
+    {
+      "bytes": 31826,
+      "lines": 831,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/definitions/C235_PROGRAM.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+          "role": "literal historical operators/order/paths/framing/placement only; not executed or numerical-result import"
+        }
+      ],
+      "path": "objects/dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34.gz",
+      "sha256": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "stored_bytes": 8820,
+      "stored_sha256": "f56a522c3e671d609374de93e7d0e341c6ec109a5811ec73a5fb12430f9e6475"
+    },
+    {
+      "bytes": 23623,
+      "lines": 640,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/definitions/QL_CUT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "role": "finite hard-cut definition and sign provenance; no broader theorem import"
+        }
+      ],
+      "path": "objects/0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9.gz",
+      "sha256": "0f8e216e95b99d9fb504d4abb0e9f3dfeea7f1b56c82d173b5ce2b27019ad2d9",
+      "stored_bytes": 8989,
+      "stored_sha256": "e3f8643de7e369e94c6c3ad1c230e5918374416b23e3749e730cc628f412a82c"
+    },
+    {
+      "bytes": 34645,
+      "lines": 301,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/definitions/QL_ENCODED.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "role": "directed T/K/F and Gauss/record-definition provenance; no historical census import"
+        }
+      ],
+      "path": "objects/3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd.gz",
+      "sha256": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd",
+      "stored_bytes": 12540,
+      "stored_sha256": "6033299b3aca3e5c5b3653ae95476e2b6e6925d48b296c075137dec9c08ae15a"
+    },
+    {
+      "bytes": 452,
+      "lines": 22,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/AUTHOR_GLOBAL_ALIGNMENT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/AUTHOR_GLOBAL_ALIGNMENT.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/4e4693ad93a9a5a4382ad8398f90cac407ce068e5d5852d7f053294651596704.gz",
+      "sha256": "4e4693ad93a9a5a4382ad8398f90cac407ce068e5d5852d7f053294651596704",
+      "stored_bytes": 138,
+      "stored_sha256": "afaa173361cfb8ec7e27b0fc65fc32c68be3afab354f8233b4da147ddf5e916f"
+    },
+    {
+      "bytes": 7849,
+      "lines": 393,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/AUTHOR_SOURCE_VERSION_MAP.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/AUTHOR_SOURCE_VERSION_MAP.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/ec8d8560bfd53f720eea0df3420f401bb66b56a4d6f29f70a8e8d37716cc33b7.gz",
+      "sha256": "ec8d8560bfd53f720eea0df3420f401bb66b56a4d6f29f70a8e8d37716cc33b7",
+      "stored_bytes": 893,
+      "stored_sha256": "964f6e736d81b16941237fc0819a93f815d11faef1c0cd249328abe366f70aa2"
+    },
+    {
+      "bytes": 9752,
+      "lines": 312,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/HISTORICAL_STREAM_COVERAGE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/HISTORICAL_STREAM_COVERAGE.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/de72cfa077d6ea7fdd3c291382807343889663800880dc1f4a6225ee1068b2a5.gz",
+      "sha256": "de72cfa077d6ea7fdd3c291382807343889663800880dc1f4a6225ee1068b2a5",
+      "stored_bytes": 1380,
+      "stored_sha256": "d6524191f134dfb6be7ab36dbcbce4f39e14c908fbe9b022e04c537261501038"
+    },
+    {
+      "bytes": 2866,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/PRELIMINARY_ASSESSMENT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/PRELIMINARY_ASSESSMENT.md",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/d4d56f9f6a8bd8b4c0ed0ba4b85a8c35f4ff5f387ff38887ced5c8030d869db7.gz",
+      "sha256": "d4d56f9f6a8bd8b4c0ed0ba4b85a8c35f4ff5f387ff38887ced5c8030d869db7",
+      "stored_bytes": 1498,
+      "stored_sha256": "d11c3d49f999e6c2ad706bdb98c466d244409bbc67db111381ca8f0ae05c2e2a"
+    },
+    {
+      "bytes": 281,
+      "lines": 8,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/PRELIMINARY_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/PRELIMINARY_SEAL.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/2a8fa44ae417596be95c5b140b431f62aba7429b1485dfd9869c7bfdc2eab9aa.gz",
+      "sha256": "2a8fa44ae417596be95c5b140b431f62aba7429b1485dfd9869c7bfdc2eab9aa",
+      "stored_bytes": 235,
+      "stored_sha256": "abb3c65eafc796ab93d3e383b459beb3ff345f3336cd3b9c0e925607abac772e"
+    },
+    {
+      "bytes": 27549,
+      "lines": 129,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/REPORT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/REPORT.md",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/65850322f6d46872dbec4c121122c9503f7c2f6c7047bb5d889ed38a3a79f3e0.gz",
+      "sha256": "65850322f6d46872dbec4c121122c9503f7c2f6c7047bb5d889ed38a3a79f3e0",
+      "stored_bytes": 11969,
+      "stored_sha256": "1dc66fef47267e756d0253896be49a7f6be9d1ed0675c2f29bf4a294a8ed81b8"
+    },
+    {
+      "bytes": 5045,
+      "lines": 136,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/SEAL.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/f5decd77922d61fc5412472fd2a7e43ccc11a8f368b7de5686706e38d236d62a.gz",
+      "sha256": "f5decd77922d61fc5412472fd2a7e43ccc11a8f368b7de5686706e38d236d62a",
+      "stored_bytes": 2068,
+      "stored_sha256": "a0164fa5802b8cac41c7c08b97764d975b25b23aebeca45a6510c1a4a8beb2ff"
+    },
+    {
+      "bytes": 20862,
+      "lines": 443,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/SOURCE_EXPOSURE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/SOURCE_EXPOSURE.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/1cda3e6579ec5ae39c96dd254a5f80bf54a5c36f548b4fbcf3c7f95011a09c12.gz",
+      "sha256": "1cda3e6579ec5ae39c96dd254a5f80bf54a5c36f548b4fbcf3c7f95011a09c12",
+      "stored_bytes": 4724,
+      "stored_sha256": "a06f45d906bb1bfb8c3e8a821900032736210e480e5a473df9dcf45f7b569bd0"
+    },
+    {
+      "bytes": 1193,
+      "lines": 19,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/independent_run01/RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/independent_run01/RECEIPT.json",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/03a031879d671fb717239f803279d5c08b97ba5f6a26fec8e9044bb01b5229eb.gz",
+      "sha256": "03a031879d671fb717239f803279d5c08b97ba5f6a26fec8e9044bb01b5229eb",
+      "stored_bytes": 658,
+      "stored_sha256": "24c075f240524b534c5cd8da6ffc6436a05e6e677197fdec1a3a5649656f919e"
+    },
+    {
+      "bytes": 8939,
+      "lines": 204,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/independent_run01/executed_source.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/independent_signed_check.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/independent_run01/executed_source.py",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/independent_signed_check.py",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/8f26d44f7b28fa25757152fb224570ceb34ce96db7981141025672ddb623ad9a.gz",
+      "sha256": "8f26d44f7b28fa25757152fb224570ceb34ce96db7981141025672ddb623ad9a",
+      "stored_bytes": 3360,
+      "stored_sha256": "78b335d88a94991e821237908ff4585d08cf515b122dd0acfb237fee94796c58"
+    },
+    {
+      "bytes": 2638,
+      "lines": 5,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/independent_run01/stdout.jsonl",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/independent_run01/stdout.jsonl",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/ed69137fe35b57cc26808676dbef47dd93d5aa6b6666f1e4dbe5489b7c212c6c.gz",
+      "sha256": "ed69137fe35b57cc26808676dbef47dd93d5aa6b6666f1e4dbe5489b7c212c6c",
+      "stored_bytes": 679,
+      "stored_sha256": "3085d7bcc988355dc5f0dabab0f0c09206b108ed82cf5b798fbcc72fd9c81fa2"
+    },
+    {
+      "bytes": 20292,
+      "lines": 357,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/run01_seam_TO_FINAL.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/run01_seam_TO_FINAL.diff",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/942631b3678d38c4d7ef7673eee0f79e2d7a7bff31fa51d67f3ed3048a6fa1cd.gz",
+      "sha256": "942631b3678d38c4d7ef7673eee0f79e2d7a7bff31fa51d67f3ed3048a6fa1cd",
+      "stored_bytes": 6633,
+      "stored_sha256": "9253bc11f7afeb1d56067e25ba0e3f711ebb63ca9d241d626f671b22ba2ad3d2"
+    },
+    {
+      "bytes": 9961,
+      "lines": 164,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/full_review/run02_core_TO_FINAL.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/run02_core_TO_FINAL.diff",
+          "role": "complete source-exposed review with selective disjoint implementation and actual run"
+        }
+      ],
+      "path": "objects/c516257c249304266ee8dba6cbf218f57353fc4d396f2d94c7478e34324a030b.gz",
+      "sha256": "c516257c249304266ee8dba6cbf218f57353fc4d396f2d94c7478e34324a030b",
+      "stored_bytes": 3759,
+      "stored_sha256": "f926c8769b4e2a13145c6edbe9d83434df7bbdae29348d0984925a44cd180ead"
+    },
+    {
+      "bytes": 26218,
+      "lines": 726,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/review_context/DIRECTION_ORDER_C210.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+          "role": "reviewer direction-order lookup only, whole source archived without importing its theorem or runner"
+        }
+      ],
+      "path": "objects/c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b.gz",
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "stored_bytes": 7317,
+      "stored_sha256": "50ba613547a49b515ea999d5bce6d61721da6498d6643ce3347f560aeb7af3f8"
+    },
+    {
+      "bytes": 11333,
+      "lines": 233,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/review_context/MINIMAL_AXIOMS_CONTEXT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "role": "unchanged reviewer comparison context only; no axiom edit or added scientific premise"
+        }
+      ],
+      "path": "objects/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753.gz",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "stored_bytes": 4357,
+      "stored_sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631"
+    },
+    {
+      "bytes": 8955,
+      "lines": 51,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ANALYTIC_CHECK.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ANALYTIC_CHECK.md",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/5955b0b88d76a52db083d8d67e0b8811a9de92e3fe5fe6a6cfe69461859c68f2.gz",
+      "sha256": "5955b0b88d76a52db083d8d67e0b8811a9de92e3fe5fe6a6cfe69461859c68f2",
+      "stored_bytes": 4177,
+      "stored_sha256": "6ccb8d926bcd0e7fb01b843439913defd6c40efb83689228f42e045fad22d42a"
+    },
+    {
+      "bytes": 1424,
+      "lines": 28,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ANALYTIC_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ANALYTIC_SEAL.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/b91ee4bddf99c680271b7d33e2be52d01f9e0913474e722875c49cf21f204087.gz",
+      "sha256": "b91ee4bddf99c680271b7d33e2be52d01f9e0913474e722875c49cf21f204087",
+      "stored_bytes": 725,
+      "stored_sha256": "4dceae74f8d5cdfd60e5e54a4c738f3cc4f19f7986315f5fe7372fac134a0dc8"
+    },
+    {
+      "bytes": 608,
+      "lines": 21,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/AUTHOR_EVIDENCE_IDENTITY_CHECK.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/AUTHOR_EVIDENCE_IDENTITY_CHECK.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/e12209f8eaa71f95b1fd9a4e8c74c5fb52c0930c7400a89bd10a6833d7113bc9.gz",
+      "sha256": "e12209f8eaa71f95b1fd9a4e8c74c5fb52c0930c7400a89bd10a6833d7113bc9",
+      "stored_bytes": 365,
+      "stored_sha256": "1429412e527cbe1c1acc119c7f820dd625806f1fdcb4593c6248ad57797b04ab"
+    },
+    {
+      "bytes": 2029,
+      "lines": 37,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/CHECK_FREEZE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/CHECK_FREEZE.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/d9ff3e2496279a29894ecbb62adc815fb74aa4296ee2a367c2630311007578d9.gz",
+      "sha256": "d9ff3e2496279a29894ecbb62adc815fb74aa4296ee2a367c2630311007578d9",
+      "stored_bytes": 686,
+      "stored_sha256": "848dffee210ef96c28f7ef71ecf32b5beacf01e015de98f3d52f4a09e79d1979"
+    },
+    {
+      "bytes": 440,
+      "lines": 10,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/CYCLE_SPAN_RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/CYCLE_SPAN_RECEIPT.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/47f8afea3865c18a0fd8ce93bad8d88a5ddb6cfbe85cb8d2a5cc6b9ee780ecbd.gz",
+      "sha256": "47f8afea3865c18a0fd8ce93bad8d88a5ddb6cfbe85cb8d2a5cc6b9ee780ecbd",
+      "stored_bytes": 302,
+      "stored_sha256": "5d07dfe40c4d162e7aa3d6d52e21d4806d3dbb7d1a3aef861158b4ed7ff2bf76"
+    },
+    {
+      "bytes": 18073,
+      "lines": 318,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/FINAL_REVIEW_IDENTITY_CHECK.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FINAL_REVIEW_IDENTITY_CHECK.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/dea318e93e4b4473d0d889860fcc3ed470d0c28b19afd2ec21384a93c4a1c606.gz",
+      "sha256": "dea318e93e4b4473d0d889860fcc3ed470d0c28b19afd2ec21384a93c4a1c606",
+      "stored_bytes": 3636,
+      "stored_sha256": "b73c14a0b22f6bc36156cf93f22ec7d0d9da0bb0047d638c062f3eade421877f"
+    },
+    {
+      "bytes": 6105,
+      "lines": 23,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/FULL_CYCLE_SECTOR_LEMMA.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FULL_CYCLE_SECTOR_LEMMA.md",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/301177980761d60533c3f5617c252c543cb81d1eb49ef1558d9a8cb39754e8dc.gz",
+      "sha256": "301177980761d60533c3f5617c252c543cb81d1eb49ef1558d9a8cb39754e8dc",
+      "stored_bytes": 2819,
+      "stored_sha256": "575f47216ae7c85326e14bb47177dadd9a33db01cc681fac746a9e244e5978cc"
+    },
+    {
+      "bytes": 3821,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/FULL_CYCLE_SECTOR_LEMMA_V2.diff",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FULL_CYCLE_SECTOR_LEMMA_V2.diff",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/726870adf16ae14174562549bd2274911276ab42239060ab34728d16f30824f7.gz",
+      "sha256": "726870adf16ae14174562549bd2274911276ab42239060ab34728d16f30824f7",
+      "stored_bytes": 1550,
+      "stored_sha256": "f3fa34acbd3e43dd84387a4e4361ae498619bd829246591cdcbc1297e6156984"
+    },
+    {
+      "bytes": 6868,
+      "lines": 23,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/FULL_CYCLE_SECTOR_LEMMA_V2.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FULL_CYCLE_SECTOR_LEMMA_V2.md",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/3b7d2be02a2baf31a74348048ed03bc595958c04c37958ffecd12a86930fd0d6.gz",
+      "sha256": "3b7d2be02a2baf31a74348048ed03bc595958c04c37958ffecd12a86930fd0d6",
+      "stored_bytes": 3130,
+      "stored_sha256": "8ff71e104435e4e7c2c535e5df75e4c8e2b9833e33781e08f40bcc82595288d1"
+    },
+    {
+      "bytes": 674,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/FULL_CYCLE_SECTOR_LEMMA_V2_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FULL_CYCLE_SECTOR_LEMMA_V2_SEAL.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/d6138cbf0988234631d58bbcfe529559231bc33fef64d33c1d4d625b0150bccc.gz",
+      "sha256": "d6138cbf0988234631d58bbcfe529559231bc33fef64d33c1d4d625b0150bccc",
+      "stored_bytes": 460,
+      "stored_sha256": "5642dcedbce37bc86a898d07cd2a95bdd57ca37402dc2ccc7406740554dae02a"
+    },
+    {
+      "bytes": 460,
+      "lines": 7,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/FULL_CYCLE_SECTOR_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FULL_CYCLE_SECTOR_SEAL.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/038434530f5e4fab3672125ba65c09f33d39384d106cde367fce6cb31cddd577.gz",
+      "sha256": "038434530f5e4fab3672125ba65c09f33d39384d106cde367fce6cb31cddd577",
+      "stored_bytes": 352,
+      "stored_sha256": "8be5872e3fa0af18e386f3ebd66669eca5d264f0d0d98cba2a1cd7346dbe0e23"
+    },
+    {
+      "bytes": 651,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/LOCAL_CHECK_RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/LOCAL_CHECK_RECEIPT.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/e11975e59358569a1b44e28a52364dfe5611d40c6fcfc6b5da40ff950ba3b0f9.gz",
+      "sha256": "e11975e59358569a1b44e28a52364dfe5611d40c6fcfc6b5da40ff950ba3b0f9",
+      "stored_bytes": 442,
+      "stored_sha256": "a98ad233bd342978fb7ff88bc3ac9bcf633cf967aa6ab2b4ea54388e564d4312"
+    },
+    {
+      "bytes": 7238,
+      "lines": 21,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROOT_FINAL_REVIEW.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROOT_FINAL_REVIEW.md",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/2f19f7db1a8a7a609699a724a2a3b2e46d37266936a176b35d33ebcf73cfe0d4.gz",
+      "sha256": "2f19f7db1a8a7a609699a724a2a3b2e46d37266936a176b35d33ebcf73cfe0d4",
+      "stored_bytes": 3501,
+      "stored_sha256": "6828019e5f8928a87f11d7f0e78bc37fc7bed812b1669f54f85b689abb9dc220"
+    },
+    {
+      "bytes": 6214,
+      "lines": 93,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROOT_ROTATION_ACCEPTANCE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROOT_ROTATION_ACCEPTANCE.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/4639fec24e8a414b7c2b2d1a902120a29ade7cde46143d209d54eeed277482af.gz",
+      "sha256": "4639fec24e8a414b7c2b2d1a902120a29ade7cde46143d209d54eeed277482af",
+      "stored_bytes": 1663,
+      "stored_sha256": "53410338a726442d32718b602df1fa6ec144078c551c1d885bffaff7ee0a0dc8"
+    },
+    {
+      "bytes": 1659,
+      "lines": 20,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROOT_SECTOR_ACCEPTANCE.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROOT_SECTOR_ACCEPTANCE.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/d250ac7c1ee72a5ae7248a69e4c8258b8341b30237930bfc47e1c551af98fc75.gz",
+      "sha256": "d250ac7c1ee72a5ae7248a69e4c8258b8341b30237930bfc47e1c551af98fc75",
+      "stored_bytes": 985,
+      "stored_sha256": "0cbddecc46e988f4f582a903a154c90d01b85bab8fe100f1590a7ccdfd1e945e"
+    },
+    {
+      "bytes": 4224,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROTATION_AUTHOR_BINDING.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROTATION_AUTHOR_BINDING.md",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/36fe340b319d866be7f60072761142e55131cbca86a9278c88e39f699f198f85.gz",
+      "sha256": "36fe340b319d866be7f60072761142e55131cbca86a9278c88e39f699f198f85",
+      "stored_bytes": 2136,
+      "stored_sha256": "80434894fd6585f8bd5b3486403040ee568f001a9601e57388719bd99fd2ba7d"
+    },
+    {
+      "bytes": 500,
+      "lines": 12,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROTATION_GEOMETRY_RECEIPT.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROTATION_GEOMETRY_RECEIPT.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/042d94837e54a488c960307663a2157e0bb3277e26917b9c6d61942bae94ec15.gz",
+      "sha256": "042d94837e54a488c960307663a2157e0bb3277e26917b9c6d61942bae94ec15",
+      "stored_bytes": 309,
+      "stored_sha256": "98ed25ee9923a5e033968bae7c450fc432a64927bd3eba34b79b42ea6096af7a"
+    },
+    {
+      "bytes": 6233,
+      "lines": 19,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROTATION_LIFT_LEMMA.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROTATION_LIFT_LEMMA.md",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/27c587b0190a93198bc1a56a6c7b2a69dc48ebe1d489c7eea0cc3f8c1effde3d.gz",
+      "sha256": "27c587b0190a93198bc1a56a6c7b2a69dc48ebe1d489c7eea0cc3f8c1effde3d",
+      "stored_bytes": 2922,
+      "stored_sha256": "445998fc8657eb3d655b9eec1df096762d9a9cfbf0bb1367c5f80e9a8354a97d"
+    },
+    {
+      "bytes": 380,
+      "lines": 8,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/ROTATION_LIFT_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROTATION_LIFT_SEAL.json",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/4577fe7f2d4958b90507b759f9edc31d78e9499943d4d02ff6afd8df72a9e71d.gz",
+      "sha256": "4577fe7f2d4958b90507b759f9edc31d78e9499943d4d02ff6afd8df72a9e71d",
+      "stored_bytes": 283,
+      "stored_sha256": "cb5f3c14f99b2fa2cefcabe9bab7f4ab2c5ff30eb0ba27bbd078a7bd9cb035ae"
+    },
+    {
+      "bytes": 2927,
+      "lines": 69,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/cycle_span_check.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/cycle_span_check.py",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/20566307fe3f8f0584bbf38038bb88e0d65a1af81191584e0cb5ca5112e2a5c7.gz",
+      "sha256": "20566307fe3f8f0584bbf38038bb88e0d65a1af81191584e0cb5ca5112e2a5c7",
+      "stored_bytes": 1330,
+      "stored_sha256": "10d4dd01d0212fe6aeb2664aebb6ce4e116cc3069a54efca60d57bca84c5f84d"
+    },
+    {
+      "bytes": 488,
+      "lines": 22,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/cycle_span_check.stdout",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/cycle_span_check.stdout",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/255856f0e5851b61236a41f16674f4e67743ea5a3c11cd7a4bbfce8e9ee7f24c.gz",
+      "sha256": "255856f0e5851b61236a41f16674f4e67743ea5a3c11cd7a4bbfce8e9ee7f24c",
+      "stored_bytes": 303,
+      "stored_sha256": "7c1a473283331caea4bece3534ca32f964bca32e53e1d550103b57a0c68aab2e"
+    },
+    {
+      "bytes": 5222,
+      "lines": 113,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/local_exact_check.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/local_exact_check.py",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/6d213eee178fef83f978778f7e3107fdae0bd628cf4975fa09277d292682598c.gz",
+      "sha256": "6d213eee178fef83f978778f7e3107fdae0bd628cf4975fa09277d292682598c",
+      "stored_bytes": 2247,
+      "stored_sha256": "1aeefb22a7247aa97de8aa99bd3cab1a7ba61303cfb3bdaa13dbf6951189a9c1"
+    },
+    {
+      "bytes": 1337,
+      "lines": 56,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/local_exact_check.stdout",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/local_exact_check.stdout",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/b7d99f2d269129164435d0a4e9f6790d440a84e4e42db31e9c8af83e33ac9308.gz",
+      "sha256": "b7d99f2d269129164435d0a4e9f6790d440a84e4e42db31e9c8af83e33ac9308",
+      "stored_bytes": 484,
+      "stored_sha256": "7e49a36b3a287cac133442edafac4a4440c4c3c04194e397e42b05a97481849d"
+    },
+    {
+      "bytes": 5989,
+      "lines": 116,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/rotation_geometry_check.py",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/rotation_geometry_check.py",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/5cdbe1c7fe22659b2a86e7814398c4e44a901ddd6a125d2e40671b884c5cb168.gz",
+      "sha256": "5cdbe1c7fe22659b2a86e7814398c4e44a901ddd6a125d2e40671b884c5cb168",
+      "stored_bytes": 2268,
+      "stored_sha256": "ed9ef7506f4a6cd5926216ac8ba20f60e4445a11014339884a5923a8ecca4b67"
+    },
+    {
+      "bytes": 10938,
+      "lines": 521,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_check/rotation_geometry_check.stdout",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/rotation_geometry_check.stdout",
+          "role": "complete root analytic proofs, three actual selective controls, original/repair and later source binding"
+        }
+      ],
+      "path": "objects/739264693eee5a06d233b1ba2831522f0e52000488d128be99cb3b8cb8ac89dd.gz",
+      "sha256": "739264693eee5a06d233b1ba2831522f0e52000488d128be99cb3b8cb8ac89dd",
+      "stored_bytes": 982,
+      "stored_sha256": "ee723a0380647abe56609141b097a28c08338f8882761826397024a906a295a0"
+    },
+    {
+      "bytes": 7820,
+      "lines": 151,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_rotation_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_rotation_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+          "role": "complete separate root rotation review and exposure seal"
+        }
+      ],
+      "path": "objects/16bcd68ee4c3498abb22d4740d35e82aaf29cb94d5e87f8ca2e001ae879d85a3.gz",
+      "sha256": "16bcd68ee4c3498abb22d4740d35e82aaf29cb94d5e87f8ca2e001ae879d85a3",
+      "stored_bytes": 2425,
+      "stored_sha256": "5f69297aaea44541f49c1da193ec022d695b0c5c783f12ad0f8117ff146f8baa"
+    },
+    {
+      "bytes": 12716,
+      "lines": 96,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_rotation_review/REPORT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_rotation_review/REPORT.md",
+          "role": "complete separate root rotation review and exposure seal"
+        }
+      ],
+      "path": "objects/d6c4aa488e43bccb5f645b3ed9cb529f994cbae2cbf558d090c42b3292e3d69f.gz",
+      "sha256": "d6c4aa488e43bccb5f645b3ed9cb529f994cbae2cbf558d090c42b3292e3d69f",
+      "stored_bytes": 5823,
+      "stored_sha256": "8f5a72bce7eb3b284102cd1b85771fcd4897f03990c894cf2a6072f064a45a3b"
+    },
+    {
+      "bytes": 7687,
+      "lines": 141,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_sector_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_proof_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+          "role": "complete separate original/V2 root sector reviews and exposure seals"
+        }
+      ],
+      "path": "objects/5192486ca3011f2bc7102460e5f9419d04c32ab9d3fbff64c41d26fd6139ca76.gz",
+      "sha256": "5192486ca3011f2bc7102460e5f9419d04c32ab9d3fbff64c41d26fd6139ca76",
+      "stored_bytes": 2274,
+      "stored_sha256": "00d545a4c3d96c65e572f3b2febef5cbdf9dcd103dbc766018d1c63a898e1221"
+    },
+    {
+      "bytes": 9095,
+      "lines": 35,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_sector_review/REPORT.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_proof_review/REPORT.md",
+          "role": "complete separate original/V2 root sector reviews and exposure seals"
+        }
+      ],
+      "path": "objects/c4f52c58a044b03de4f92bed5b060d38a7b2028e5d696352fd649679435474d8.gz",
+      "sha256": "c4f52c58a044b03de4f92bed5b060d38a7b2028e5d696352fd649679435474d8",
+      "stored_bytes": 4327,
+      "stored_sha256": "03707379ccd96a6c3e57afb1bc5d472edd5cf423b4a84ceb7940b00ac7a8dee1"
+    },
+    {
+      "bytes": 6831,
+      "lines": 136,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_sector_review/V2_AND_CYCLE_SPAN_IDENTITY_SEAL.json",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_proof_review/V2_AND_CYCLE_SPAN_IDENTITY_SEAL.json",
+          "role": "complete separate original/V2 root sector reviews and exposure seals"
+        }
+      ],
+      "path": "objects/0b397cc7af2b6fe7d4dbdbc320c08f3ec300ea9ff21bef7c439c88a47fd4b49d.gz",
+      "sha256": "0b397cc7af2b6fe7d4dbdbc320c08f3ec300ea9ff21bef7c439c88a47fd4b49d",
+      "stored_bytes": 2086,
+      "stored_sha256": "6294e9b1fde6603ef1499aba67a405a0120d81ac77808f7280b290e9e928256e"
+    },
+    {
+      "bytes": 6885,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_source_assembly/archive/root_sector_review/V2_AND_CYCLE_SPAN_REVIEW.md",
+          "role": "complete accepted source-assembly snapshot; original status fields are historical"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_proof_review/V2_AND_CYCLE_SPAN_REVIEW.md",
+          "role": "complete separate original/V2 root sector reviews and exposure seals"
+        }
+      ],
+      "path": "objects/727401855bb3e6f050e0cd1b6fd633e6c6f6428fe936793e87b3f81148368bfd.gz",
+      "sha256": "727401855bb3e6f050e0cd1b6fd633e6c6f6428fe936793e87b3f81148368bfd",
+      "stored_bytes": 3375,
+      "stored_sha256": "e59513455b66ef995d29f5f4339392bab77b4fc096ab0f4a59f8b6b796c5d047"
+    },
+    {
+      "bytes": 429,
+      "lines": 16,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_publication_preparation/source_review/IDENTITY_CHECK.json",
+          "role": "later source-only assembly acceptance/review evidence; no mathematical execution"
+        }
+      ],
+      "path": "objects/6afbec786c903afb93a7571b2dad6a3d24b46cba4fbb757db497bf1d0bf38699.gz",
+      "sha256": "6afbec786c903afb93a7571b2dad6a3d24b46cba4fbb757db497bf1d0bf38699",
+      "stored_bytes": 298,
+      "stored_sha256": "7b868053cb1fbf96ecb41d79e639c8ec276d20bcce35e69891da71b46f02ed0a"
+    },
+    {
+      "bytes": 1742,
+      "lines": 34,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_publication_preparation/source_review/JOINT_SOURCE_ASSEMBLY_ACCEPTANCE.json",
+          "role": "later source-only assembly acceptance/review evidence; no mathematical execution"
+        }
+      ],
+      "path": "objects/3d92b6099121d3166516fad381ffdcb76927be6b399fe5cb6d29e4746a6b4f3b.gz",
+      "sha256": "3d92b6099121d3166516fad381ffdcb76927be6b399fe5cb6d29e4746a6b4f3b",
+      "stored_bytes": 735,
+      "stored_sha256": "46abf20411a94f2a182c923d036bdc62b28a165d64a6b549ef41f07a7c0deb06"
+    },
+    {
+      "bytes": 4944,
+      "lines": 17,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_publication_preparation/source_review/ROOT_SOURCE_REVIEW.md",
+          "role": "later source-only assembly acceptance/review evidence; no mathematical execution"
+        }
+      ],
+      "path": "objects/3a2fb11ba448882ef504eb0d262a2ff490f90352395f0cf3c2944fe398b0aeed.gz",
+      "sha256": "3a2fb11ba448882ef504eb0d262a2ff490f90352395f0cf3c2944fe398b0aeed",
+      "stored_bytes": 2515,
+      "stored_sha256": "872bbc48b43a97a8cecb49c1165b9c4460f9f66c0a39f4fa54063458fc57a397"
+    },
+    {
+      "bytes": 71,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_publication_preparation/source_review/branch.stderr",
+          "role": "later source-only assembly acceptance/review evidence; no mathematical execution"
+        }
+      ],
+      "path": "objects/fbcf6097a1b2d74981aa0581d86a9a0ceb6976effeb2b8738ee18cfa2b875f23.gz",
+      "sha256": "fbcf6097a1b2d74981aa0581d86a9a0ceb6976effeb2b8738ee18cfa2b875f23",
+      "stored_bytes": 90,
+      "stored_sha256": "bedb4db0584be25028aebc5f91125656e19ae9106db465261a704cf582b6b7da"
+    },
+    {
+      "bytes": 3194,
+      "lines": 37,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_link_publication_preparation/source_review/verify_assembly.py",
+          "role": "later source-only assembly acceptance/review evidence; no mathematical execution"
+        }
+      ],
+      "path": "objects/24f37ae5ea6b126f5ed341494682da1a2a3012bc3ed73730632616ae2dae420d.gz",
+      "sha256": "24f37ae5ea6b126f5ed341494682da1a2a3012bc3ed73730632616ae2dae420d",
+      "stored_bytes": 1468,
+      "stored_sha256": "6ae55299d1c0b63194b910ea16e902771baee9e8c95bea5779f364a883aab8b6"
+    }
+  ],
+  "original_control_record_count": 9,
+  "original_source_selection_count": 84,
+  "scope": "Complete unchanged proof/evidence/failed-control bytes; gzip objects are data, not executable imports."
+}

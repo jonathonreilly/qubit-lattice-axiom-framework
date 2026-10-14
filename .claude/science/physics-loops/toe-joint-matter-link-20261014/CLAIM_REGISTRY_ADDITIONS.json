@@ -1,0 +1,32 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "to": "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03"
+    },
+    {
+      "from": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "to": "the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03"
+    }
+  ],
+  "expected_delta": {
+    "edges": 2,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "u1_quantum_link_exact_local_backreaction_and_colored_floquet_energy_fork_bounded_theorem_note_2026-09-03",
+        "the_fermions_u1_coupled_to_quantum_links_gauss_law_as_a_support_condition_among_records_bounded_theorem_note_2026-09-03"
+      ],
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/joint_even_matter_finite_link_interface_identity_2026_10_14.py"
+    }
+  ],
+  "semantic_roles": "Definition/provenance citations, not black-box adoption of stronger theorem results."
+}

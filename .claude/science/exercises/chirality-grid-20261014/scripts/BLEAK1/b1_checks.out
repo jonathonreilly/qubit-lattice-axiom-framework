@@ -1,0 +1,46 @@
+== (i) K2 Ward identity: shat_mu(p1+p2) V_mn(p1,p2) = -1/2[G^-1(p1) s_n(p2) c_n(p1) + G^-1(p2) s_n(p1) c_n(p2)] ==
+  m2=0.0 K2: max |lhs-rhs| = 3.55e-15   (max|lhs| = 13.17)
+  m2=0.0 D2: max |lhs-rhs| = 4.13e+00   (max|lhs| = 12.32)
+  m2=0.3 K2: max |lhs-rhs| = 5.33e-15   (max|lhs| = 12.03)
+  m2=0.3 D2: max |lhs-rhs| = 4.12e+00   (max|lhs| = 12.03)
+  -> K2 exact off shell (Ward residual ~1e-15); D2 violates it by O(1) at lattice momenta (the dim-6 term).
+
+== (ii) D_fol = W_TT + W_inst equals D_GR on lattice-conserved sources (R19-33's 1.8e-12) ==
+  bilinear, both conserved: max rel |WTT+Winst-WGR| = 3.64e-16
+  one conserved, one generic: max |WTT+Winst-WGR| / max|WGR| = 6.17e-01   (not an identity)
+
+== (iii) U^alpha = d/dp1_alpha V(p1,k)|_{p1=0} (m=0) vs central finite difference; D2 extra term has zero derivative ==
+  alpha=0 K2: max |U - FD| = 8.34e-14
+  alpha=0 D2: max |U - FD| = 8.34e-14
+  alpha=1 K2: max |U - FD| = 8.35e-14
+  alpha=1 D2: max |U - FD| = 8.35e-14
+  alpha=2 K2: max |U - FD| = 8.34e-14
+  alpha=2 D2: max |U - FD| = 8.34e-14
+  alpha=3 K2: max |U - FD| = 8.35e-14
+  alpha=3 D2: max |U - FD| = 8.35e-14
+  V(0,k) at m=0: max |V| = 0.0e+00 (K2), 0.0e+00 (D2)
+  U^alpha(-k) = -U^alpha(k): max dev 0.0e+00
+  divergence of U^alpha: shat_mu U^a_mn = -1/2 G^-1(k) delta_an c_n(k)? max dev 1.8e-15
+
+== (iv) symmetry of the integrands f_alpha(k) = D_k(U^a,U^a)/shat^2 ==
+  GR : reflection k_mu->-k_mu max rel dev ['0e+00', '0e+00', '0e+00', '0e+00'] ; 1<->4 swap (f_4(Pk) vs f_1(k)) 1.6e-16 ; 2<->3 swap 2.5e-16
+  fol: reflection k_mu->-k_mu max rel dev ['0e+00', '0e+00', '0e+00', '0e+00'] ; 1<->4 swap (f_4(Pk) vs f_1(k)) 1.1e+00 ; 2<->3 swap 5.4e-17
+  -> integrands even in each k_mu (so [0,pi]^4 suffices); D_GR integrand W(B4)-covariant; D_fol only W(B3)xZ2^T.
+        0.08 real         0.07 user         0.01 sys
+            33701888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3602  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  27  involuntary context switches
+          1078655999  instructions retired
+           306613952  cycles elapsed
+            20251200  peak memory footprint

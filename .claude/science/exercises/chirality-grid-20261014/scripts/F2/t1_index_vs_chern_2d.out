@@ -1,0 +1,19 @@
+plaquette check: uniform flux 2*pi*n/L^2 on all plaquettes, OK
+r=1.0 m=-0.50 c1(free eps band)=+0.0000  L8n1:-0(gap 5.49e-01)  L8n2:-0(gap 5.96e-01)  L8n3:-0(gap 6.42e-01)  L10n1:-0(gap 5.31e-01)  L10n2:-0(gap 5.62e-01)  L10n3:-0(gap 5.92e-01)
+r=1.0 m= 0.50 c1(free eps band)=+1.0000  L8n1:-1(gap 4.51e-01)  L8n2:-2(gap 4.04e-01)  L8n3:-3(gap 3.57e-01)  L10n1:-1(gap 4.69e-01)  L10n2:-2(gap 4.38e-01)  L10n3:-3(gap 4.08e-01)
+r=1.0 m= 1.00 c1(free eps band)=+1.0000  L8n1:-1(gap 9.51e-01)  L8n2:-2(gap 9.00e-01)  L8n3:-3(gap 8.49e-01)  L10n1:-1(gap 9.68e-01)  L10n2:-2(gap 9.37e-01)  L10n3:-3(gap 9.04e-01)
+r=1.0 m= 1.50 c1(free eps band)=+1.0000  L8n1:-1(gap 4.87e-01)  L8n2:-2(gap 4.73e-01)  L8n3:-3(gap 4.59e-01)  L10n1:-1(gap 4.92e-01)  L10n2:-2(gap 4.83e-01)  L10n3:-3(gap 4.74e-01)
+r=1.0 m= 2.50 c1(free eps band)=-1.0000  L8n1:+1(gap 4.87e-01)  L8n2:+2(gap 4.73e-01)  L8n3:+3(gap 4.59e-01)  L10n1:+1(gap 4.92e-01)  L10n2:+2(gap 4.83e-01)  L10n3:+3(gap 4.74e-01)
+r=1.0 m= 3.00 c1(free eps band)=-1.0000  L8n1:+1(gap 9.51e-01)  L8n2:+2(gap 9.00e-01)  L8n3:+3(gap 8.49e-01)  L10n1:+1(gap 9.68e-01)  L10n2:+2(gap 9.37e-01)  L10n3:+3(gap 9.04e-01)
+r=1.0 m= 3.50 c1(free eps band)=-1.0000  L8n1:+1(gap 4.51e-01)  L8n2:+2(gap 4.04e-01)  L8n3:+3(gap 3.57e-01)  L10n1:+1(gap 4.69e-01)  L10n2:+2(gap 4.38e-01)  L10n3:+3(gap 4.08e-01)
+r=1.0 m= 4.50 c1(free eps band)=-0.0000  L8n1:-0(gap 5.49e-01)  L8n2:-0(gap 5.96e-01)  L8n3:-0(gap 6.42e-01)  L10n1:-0(gap 5.31e-01)  L10n2:-0(gap 5.62e-01)  L10n3:-0(gap 5.92e-01)
+r=0.6 m=-0.50 c1(free eps band)=-0.0000  L8n1:-0(gap 5.29e-01)  L8n2:-0(gap 5.58e-01)  L8n3:-0(gap 5.85e-01)  L10n1:-0(gap 5.19e-01)  L10n2:-0(gap 5.37e-01)  L10n3:-0(gap 5.55e-01)
+r=0.6 m= 0.50 c1(free eps band)=+1.0000  L8n1:-1(gap 4.71e-01)  L8n2:-2(gap 4.42e-01)  L8n3:-3(gap 4.14e-01)  L10n1:-1(gap 4.81e-01)  L10n2:-2(gap 4.63e-01)  L10n3:-3(gap 4.45e-01)
+r=0.6 m= 1.00 c1(free eps band)=+1.0000  L8n1:-1(gap 1.98e-01)  L8n2:-2(gap 1.96e-01)  L8n3:-3(gap 1.93e-01)  L10n1:-1(gap 1.99e-01)  L10n2:-2(gap 1.98e-01)  L10n3:-3(gap 1.96e-01)
+r=0.6 m= 1.50 c1(free eps band)=-1.0000  L8n1:+1(gap 2.97e-01)  L8n2:+2(gap 2.94e-01)  L8n3:+3(gap 2.90e-01)  L10n1:+1(gap 2.98e-01)  L10n2:+2(gap 2.96e-01)  L10n3:+3(gap 2.94e-01)
+r=0.6 m= 2.50 c1(free eps band)=-0.0000  L8n1:-0(gap 1.29e-01)  L8n2:-0(gap 1.58e-01)  L8n3:-0(gap 1.86e-01)  L10n1:-0(gap 1.19e-01)  L10n2:-0(gap 1.37e-01)  L10n3:-0(gap 1.55e-01)
+r=0.6 m= 3.00 c1(free eps band)=-0.0000  L8n1:-0(gap 6.29e-01)  L8n2:-0(gap 6.58e-01)  L8n3:-0(gap 6.85e-01)  L10n1:-0(gap 6.19e-01)  L10n2:-0(gap 6.37e-01)  L10n3:-0(gap 6.55e-01)
+r=0.6 m= 3.50 c1(free eps band)=-0.0000  L8n1:-0(gap 1.13e+00)  L8n2:-0(gap 1.16e+00)  L8n3:-0(gap 1.19e+00)  L10n1:-0(gap 1.12e+00)  L10n2:-0(gap 1.14e+00)  L10n3:-0(gap 1.16e+00)
+r=0.6 m= 4.50 c1(free eps band)=+0.0000  L8n1:-0(gap 2.13e+00)  L8n2:-0(gap 2.16e+00)  L8n3:-0(gap 2.19e+00)  L10n1:-0(gap 2.12e+00)  L10n2:-0(gap 2.14e+00)  L10n3:-0(gap 2.16e+00)
+global signs seen: {-1.0}
+T1 verdict: PASS

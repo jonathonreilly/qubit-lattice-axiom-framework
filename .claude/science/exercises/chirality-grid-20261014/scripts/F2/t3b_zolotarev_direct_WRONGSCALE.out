@@ -1,0 +1,30 @@
+M=0.5  k=0.0667
+   n=  4  max error = 1e  -0.20
+   n=  8  max error = 1e  -0.38   local rate/pole = 0.102
+   n= 12  max error = 1e  -0.56   local rate/pole = 0.102
+   n= 16  max error = 1e  -0.73   local rate/pole = 0.102
+   n= 20  max error = 1e  -0.91   local rate/pole = 0.102
+   n= 24  max error = 1e  -1.09   local rate/pole = 0.102
+   n= 28  max error = 1e  -1.27   local rate/pole = 0.102
+   n= 32  max error = 1e  -1.44   local rate/pole = 0.102
+   n= 40  max error = 1e  -1.80   local rate/pole = 0.102
+M=1.0  k=0.1429
+   n=  4  max error = 1e  -0.53
+   n=  8  max error = 1e  -0.99   local rate/pole = 0.269
+   n= 12  max error = 1e  -1.46   local rate/pole = 0.269
+   n= 16  max error = 1e  -1.93   local rate/pole = 0.269
+   n= 20  max error = 1e  -2.40   local rate/pole = 0.269
+   n= 24  max error = 1e  -2.87   local rate/pole = 0.269
+   n= 28  max error = 1e  -3.33   local rate/pole = 0.269
+   n= 32  max error = 1e  -3.80   local rate/pole = 0.269
+   n= 40  max error = 1e  -4.74   local rate/pole = 0.269
+M=1.5  k=0.0769
+   n=  4  max error = 1e  -0.24
+   n=  8  max error = 1e  -0.45   local rate/pole = 0.122
+   n= 12  max error = 1e  -0.66   local rate/pole = 0.122
+   n= 16  max error = 1e  -0.88   local rate/pole = 0.122
+   n= 20  max error = 1e  -1.09   local rate/pole = 0.122
+   n= 24  max error = 1e  -1.30   local rate/pole = 0.122
+   n= 28  max error = 1e  -1.51   local rate/pole = 0.122
+   n= 32  max error = 1e  -1.73   local rate/pole = 0.122
+   n= 40  max error = 1e  -2.15   local rate/pole = 0.122

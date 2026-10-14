@@ -1,0 +1,5 @@
+M=1 k=1/7 n=27 max error = 1e-34.83
+M=1 k=1/7 n=28 max error = 1e-36.12
+M=1 k=1/7 n=66 max error = 1e-85.07
+M=1 k=1/7 n=68 max error = 1e-87.65
+M=1 k=1/7 n=70 max error = 1e-90.22

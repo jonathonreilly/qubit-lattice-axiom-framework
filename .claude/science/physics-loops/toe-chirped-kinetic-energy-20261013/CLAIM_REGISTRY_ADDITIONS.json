@@ -1,0 +1,41 @@
+{
+  "authority_surface_exception": "Only generated citation_graph_manifest.json planned as tracked integration authority change.",
+  "direct_edges": [
+    {
+      "from": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "modulated_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "to": "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 4,
+    "nodes": 1
+  },
+  "nodes": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "claim_id": "chirped_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "modulated_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13",
+        "kinetic_correlation_limits_bounded_theorem_note_2026-10-13"
+      ],
+      "note": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/chirped_kinetic_identity_2026_10_13.py"
+    }
+  ],
+  "status": "proposal only; graph/cache untouched by source author"
+}

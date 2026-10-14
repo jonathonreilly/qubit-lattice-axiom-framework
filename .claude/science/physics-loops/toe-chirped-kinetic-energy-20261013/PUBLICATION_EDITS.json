@@ -1,0 +1,161 @@
+{
+  "additional_mathematical_body_edits": [],
+  "diff_convention": "LF-preserving difflib.diff_bytes(unified_diff); n=3; literal file labels; no timestamps; complete raw bytes losslessly gzipped",
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "accepted_candidate_sha256": "e13eed319732f25ad62bf4460bafd241c7bdb069bd310d61fc1d1d82ae719e90",
+      "context_lines": 3,
+      "diff": "diffs/accepted_assembly_to_publication.diff.gz",
+      "diff_bytes": 8628,
+      "diff_lines": 141,
+      "diff_sha256": "1445607fc11fed584bab78e7c7d96669c7ce62c1e9638c8fe527fe264b135010",
+      "diff_stored_sha256": "0ae5ff94b9040fbacc9d5ba04a063505241aad3ccfc74fd751dc265bc0e3e7e3",
+      "fromfile": "accepted/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "note": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 10467,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 185,
+          "lines": 183,
+          "sha256": "47653a34230a689bb0d7d4ad3dfa499db7c9bc2ff02d3f75d57b210f28cd9753",
+          "text": "---\ntitle: \"Chirped kinetic energy in the supplied massive free CAR vacuum\"\nclaim_id: chirped_kinetic_energy_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_source_of_accepted_conditional_cores\nscientific_execution: none_in_publication_source_preparation\nrunner: scripts/chirped_kinetic_identity_2026_10_13.py\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: partially_closes\nconditional_surface_status: supplied massive free CAR model and vacuum; fixed compact smooth slots; bounded BV resources and strict frequency gap; conditional cell premises\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: two distinct accepted conditional derivations with their original hypotheses and exposure history\nnext_trace_action: root publication-source review and exact prepare/verify contract; effective retained audit remains separate\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nupstream_dependencies:\n  - modulated_kinetic_energy_bounded_theorem_note_2026-10-13\n  - general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13\n  - two_zero_kinetic_energy_bounded_theorem_note_2026-10-13\n  - kinetic_correlation_limits_bounded_theorem_note_2026-10-13\n---\n\n# Chirped one-time vacuum energy laws\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nStatus: conditional-support; bounded theorem publication source. The root V2\n515-line proof and the independent 850-line proof below are distinct,\nunchanged cores accepted for assembly by the ordinary root review of\n2026-10-13. Historical pending-review wording inside them remains verbatim.\nThis current wrapper records the later disposition and adds no mathematics.\nThis publication wrapper binds the dated claim identifier, note and identity\nrunner to the accepted assembly. Source preparation does not execute that\nrunner or insert the claim in the graph. Root owns the subsequent integration\nand regular PR. Effective retained status still requires independent audit.\nThe intended physical downstream consumer is not yet known; this upstream\nsupport result supplies no physical selector or closed physical blocker.\n\n## Common hypotheses and marginal conclusion\n\nThe supplied massive free CAR model, its specified vacuum and fixed positive\nm,v are premises. The two real compact smooth control slots are fixed and\ngeneral; componentwise zero integrals are not imposed. On a fixed finite\nslow-time interval [0,tau_star], a and Omega are real BV functions with fixed\nfinite bounds on amplitude, frequency and total variation, and with a fixed\nstrict lower gap ess inf Omega >= 2m+kappa for kappa>0. All spatial and model\nresources stay fixed. The drive is\n\n    lambda a(h^2 t) cos(phi_h(t)) V,   h=|lambda|,\n    phi_h(t)=phi0+h^(-2) integral_0^(h^2 t) Omega(u)du,\n    T=tau/h^2.\n\nThe phase is the integral of the BV frequency. Frequency jumps do not reset\nthe phase; isolated representative values do not change the dynamics.\nAmplitude jumps, frequency jumps, amplitude sign and an arbitrary fixed\ninitial phase are allowed within the stated resources. Closing the gap,\ndiverging BV resources, varying control slots or the massless limit is outside\nthe common theorem.\n\nLet r be the exact pair-energy density of the fixed control and supplied\nvacuum, with the normalization in each core. The limiting one-time jump\nmeasure and its energy law are\n\n    Lambda_tau(de)=(pi/2) integral_0^tau\n                      a(u)^2 r(Omega(u)) delta_(Omega(u))(de)du,\n    characteristic function = exp integral (exp(i s e)-1)Lambda_tau(de),\n    limiting mean = integral e Lambda_tau(de).\n\nThis is a family of one-time compound-Poisson probability laws for the free\nenergy. The exact mean is controlled separately with energy-weighted norms;\nWasserstein-one convergence uses that mean and positive-tail truncation.\nThese statements do not define a measured multi-time process, independent\nemissions, a Markov approximation or a kinetic equation for every observable.\n\nFor constant Omega=omega the law is omega times a Poisson variable with\nintensity nu_omega J_tau, where nu_omega=(pi/2)r(omega) and\nJ_tau=integral_0^tau a(u)^2 du. J_tau alone is not the Poisson intensity.\nPiecewise constant profiles give the corresponding finite sum of jump\nmeasures. Zero control, zero amplitude, or vanishing sampled density can\ngive Lambda_tau=0 and the point mass at zero. No positive response for every\nallowed pair of slots or profile is asserted.\n\n## Distinct strengths of the two proofs\n\nRoot V2 proves the marginal law, separate mean and W1 limit uniformly in\ntau on the fixed kinetic interval for each fixed pair of BV profiles. Its\nsecular limiting argument is qualitative at that scope. It also explicitly\nproves the full signed-input weighted Born remainder and the all-fixed-q\nweighted full-operator estimate for Z-I with the stated square-root/logarithm\nbound. An unbounded output weight is controlled in its graph norm before\ntaking estimates; it is not attached to an unweighted inequality afterwards.\n\nIndependent850 proves an O(h) secular estimate uniformly over the stated\nbounded BV resource class. Together with its full-input Born comparison it\ngives the fixed-characteristic-function and mean error at\neta_h=sqrt(h log(2+h^(-2))), and a qualitative W1 comparison uniform over\nthat profile class and the kinetic interval. No W1 rate is claimed. The\nresource-uniform assertions, including comparison of h-dependent profiles\nwith their own Lambda_tau,h, belong to Independent850. Convergence to one\nfixed law still needs convergence of that measure family. Root's subsequent\nreview separately checked these stronger arguments; they are not silently\nattributed to root V2's fixed-profile secular proof.\n\nBoth proofs preserve the general-control threshold behavior and its time\nmoment limitation. The faster special zero-component-integral route keeps\nits own hypotheses. The independent fixed-partition check recovers the\nnormalization and controls cross-block contributions; approximating a BV\nfrequency to fixed accuracy is not a proof of the full result, because the\nphase error can accumulate as delta/h^2. This failed shortcut is preserved.\n\n## Conditional application to actual cells\n\nCell transfer is conditional on the exact real energy embedding, unital band\nFock identification, exterior vacuum and common free energy, with the stated\nfinite-order control and commutator-form error bounds and fixed resources.\nThe one-particle control comparison is retained where the field comparison\nneeds it. A calibration label alone supplies none of these premises.\nThe common sufficient joint scale for the displayed mean and W1 transfer is\nepsilon_ell=o(h^2); epsilon_ell=o(h) only supplies the weaker unweighted\nstate/law comparison at this level. For the stated finite order, the error\nis O(ell^(N+1)). These are sufficient conditions, not optimality or necessity\nclaims and not a new construction of actual-cell calibration.\n\n## Exact revisions, later review and publication parent\n\nThe root original515, SHA-256\n03d2e4cd8c36b1ec5c5d04fb4efdaaefeae6b0346d58ad4885b1a292cb7a0d48,\nwas sealed at 12:04:15 UTC before the independent findings. Root V2 changes\nexactly line247 to state the wavefunction of V|0> as i Delta/sqrt(2).\nThe creation commutator supplies this i and the Born Dyson coefficient -i\ncancels it. The density and all response coefficients are unchanged.\nIndependent850 gives the phase correctly; its archived ANALYTIC_CHECKS\nline72 is phase-suppressed shorthand, clarified by the precision record.\nNo frozen original has been edited. The complete eleven-line n=3 phase diff\nis preserved alongside the original root and accepted V2.\n\nThe independent proof was frozen at 12:22:52 UTC with root chirp science\nexcluded. Its recorded preliminary heuristic exposure before its plan is\npreserved. Comparison344 was frozen at 12:45:57 UTC after reading root515.\nIts review of the independent author's own proof is an author self-check.\nRoot's later complete read and separate assessment are recorded in\nCHIRPED_KINETIC_LAW_ROOT_REVIEW.md and acceptance9918f46b. Both derivations\nuse the same selected model family and shared parent machinery; this is not\nmodel-diverse verification or a fresh independent review by the assembler.\n\nThe failed 62-character digest assertion, its corrected seal-bound identity,\nand the later source-reading chronology remain archived. The earlier\noriginal847 picture defect and missed root check remain historical evidence;\ncorrected859 and its review/repair confirmation are the accepted machinery.\nThe harmless phase precision here does not erase that earlier distinct error.\n\nThe modulated parent is now regular, OPEN, attached PR9517 at recorded head\nc5eaa6bf752a0893c83c0509c7c349dab53bff14, as bound by the supplied creation\nand attachment receipts. Its canonical note contains unchanged modulated464.\nThe earlier provisional statements in frozen sources remain historical.\nThe other three direct mathematical parents have exact canonical/core maps.\nInitial-state publication, later branch ancestry and unrelated work create\nno initial-state mathematical dependency for this vacuum theorem. This\npublication preparation proposes branch physics-loop/toe-chirped-kinetic-energy-20261013\nfrom that exact PR9517 head. Root creates/selects the child separately; the\nsource generator does not require CW to select it. The runtime contract\nrequires that exact clean branch and base before installation. This source\nwrapper makes no new remote-status or current-main audit claim.\n\nThe four direct canonical proof parents are the\n[modulated-drive theorem](MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md),\n[general compact-control theorem](GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md),\n[corrected two-zero theorem](TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md), and\n[correlation limits theorem](KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md).\nThe general parent also contains historical mean301; that containment does\nnot add a fifth dependency. Canonical parents retain their conditional scope.\n\n## Unchanged root V2 core: fixed-profile law and weighted full-operator bound\n\n\n",
+          "wrapper_path": "wrappers/note_prefix.md"
+        },
+        {
+          "accepted_note_byte_range": [
+            9154,
+            35719
+          ],
+          "accepted_note_line_range": [
+            166,
+            680
+          ],
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 10467,
+          "bytes": 26565,
+          "expected_slice_sha256": "87011c662344ed684a7251f5067bb8193d156837a50a23e71fa29ccff38e92f6",
+          "first_line": 186,
+          "kind": "accepted_core_slice",
+          "last_line": 700,
+          "lines": 515,
+          "sha256": "87011c662344ed684a7251f5067bb8193d156837a50a23e71fa29ccff38e92f6",
+          "source_line_end": 515,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/CHIRPED_KINETIC_LAW_ROOT_PROBE_V2.md",
+          "source_sha256": "87011c662344ed684a7251f5067bb8193d156837a50a23e71fa29ccff38e92f6"
+        },
+        {
+          "byte_offset": 37032,
+          "bytes": 432,
+          "first_line": 701,
+          "kind": "publication_wrapper",
+          "last_line": 710,
+          "lines": 10,
+          "sha256": "a361312a7121ae3106d89d4a11a6ca25e4a91b7b4e73358d9e4059e148ac6101",
+          "text": "\n## Unchanged independent core: resource-uniform strengthening\n\nThe following separately frozen 850-line proof is reproduced in full, with\nits original notation and historical author-status sentences. Its stronger\nuniform rate and profile-W1 conclusions have the separate root assessment\ndescribed above. The assembler is this core's author, so the assembly and\ncomparison add no additional independent author check of this core.\n\n\n",
+          "wrapper_path": "wrappers/between_cores.md"
+        },
+        {
+          "accepted_note_byte_range": [
+            36151,
+            78349
+          ],
+          "accepted_note_line_range": [
+            691,
+            1540
+          ],
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 37464,
+          "bytes": 42198,
+          "expected_slice_sha256": "279a96bc07b495a59b829cac70586ae8e115f0ddefca0d405bb15f0a7de6e95c",
+          "first_line": 711,
+          "kind": "accepted_core_slice",
+          "last_line": 1560,
+          "lines": 850,
+          "sha256": "279a96bc07b495a59b829cac70586ae8e115f0ddefca0d405bb15f0a7de6e95c",
+          "source_line_end": 850,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/CHIRPED_KINETIC_LAW_INDEPENDENT.md",
+          "source_sha256": "279a96bc07b495a59b829cac70586ae8e115f0ddefca0d405bb15f0a7de6e95c"
+        },
+        {
+          "byte_offset": 79662,
+          "bytes": 2566,
+          "first_line": 1561,
+          "kind": "publication_wrapper",
+          "last_line": 1598,
+          "lines": 35,
+          "sha256": "6487f946318402ee59bcaa593b3ea9befeb3df6b487cd5e9ddfab67ec8ab6674",
+          "text": "\n## Publication reconstruction, provenance and verification limits\n\nThe source packet preserves the complete 162-file accepted source assembly,\nincluding its earlier wrapper and raw diffs, with all 106 selected source\naliases and the exact immediate root, independent and comparison closures.\nNested receipts are preserved at their documented scope. This is not a\nrecursive upstream audit or a closure of every cited proof obligation.\n\nBoth mathematical cores above are byte-for-byte unchanged. Exact byte and\nline maps bind each to the accepted assembly and to this publication note.\nComplete n=3 diffs bind the earlier note and each old wrapper piece to the\npublication wrappers; the historical one-line phase correction is archived.\nThe convention is LF-preserving difflib.diff_bytes(unified_diff), three\ncontext lines, literal labels and no timestamps. Raw diff bytes are stored\nin lossless gzip archives with exact raw and stored pins. Context-marker\nspaces are preserved, with no broad whitespace exemption.\n\nThe accompanying identity runner has zero mathematical predicates. It reads\nthe declared compressed archive, reconstructs this exact note, checks the\nfour canonical parents and five contained-core maps, and checks the pinned\nscope metadata. It performs no scientific calculation, simulation, proof or\nformal audit. Its five resolution statements explicitly record scientific\nnonexecution. An identity match is not mathematical verification.\n\nDuring publication source preparation, neither that runner, its canonical\ncache, graph builder, prepare/verify driver nor combined validation program\nwas executed. Source-only reconstruction and syntax checks have separately\nretained actual logs. Root must review the exact source freeze and complete\ndriver before installation, then run the prescribed canonical cache and\ngraph integration, stage the exact path list, and verify index/worktree\nidentity before the changed-evidence checker. Current-main combined landing\nvalidation, strict audit lint and effective retained review remain separate\nobligations. Earlier accepted author/source reviews are not converted into\nnew independent scientific reviews by this packaging.\n\n\nReview-loop integration note: current main 82fdc12d51e3e47bf8ac1f74601c9600115942d6 plus this kinetic-energy batch supplies the reviewed live dependencies. Original proof bodies and archives are unchanged. Live parent hashes and consumed-core coordinates are refreshed, with original bindings preserved. Historical pending and review labels remain provenance, not audit authority.\n",
+          "wrapper_path": "wrappers/note_suffix.md"
+        }
+      ],
+      "published_bytes": 82228,
+      "published_lines": 1598,
+      "published_sha256": "39c7c606b62a233dceea9dc376ef84d49ae38e7fd1210725114bf84b97089e27",
+      "stored_bytes": 3426,
+      "tofile": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "source_freeze_sha256": "fdb082263fabac60eb6f19bce3a60b98c5bf5eb23fc0e0933dc9addae4978f38",
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_prefix.diff.gz",
+      "diff_bytes": 4018,
+      "diff_lines": 74,
+      "diff_sha256": "bce307fc9b9723c7b0b293d25dc0022a18bb7475df3f5172132a8b381af934fe",
+      "diff_stored_sha256": "2990d68155ad9ecfaeeea27e3bd96103d981f8d25e675f6480d011a498b805c0",
+      "fromfile": "accepted/note_prefix.md",
+      "publication": "wrappers/note_prefix.md",
+      "publication_sha256": "47653a34230a689bb0d7d4ad3dfa499db7c9bc2ff02d3f75d57b210f28cd9753",
+      "source_line_range": [
+        1,
+        165
+      ],
+      "source_sha256": "b6d849b0c4f9ba666c0af28c6aa5f4beae42fa477b4bd799ca65a38b5954cf79",
+      "stored_bytes": 1712,
+      "tofile": "publication/note_prefix.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/between_cores.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "fromfile": "accepted/between_cores.md",
+      "publication": "wrappers/between_cores.md",
+      "publication_sha256": "a361312a7121ae3106d89d4a11a6ca25e4a91b7b4e73358d9e4059e148ac6101",
+      "source_line_range": [
+        681,
+        690
+      ],
+      "source_sha256": "a361312a7121ae3106d89d4a11a6ca25e4a91b7b4e73358d9e4059e148ac6101",
+      "stored_bytes": 20,
+      "tofile": "publication/between_cores.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_suffix.diff.gz",
+      "diff_bytes": 4514,
+      "diff_lines": 64,
+      "diff_sha256": "a4fef27e14483668b232f43782aaf7246b0874e1cb7127e781b75aeca5bc021e",
+      "diff_stored_sha256": "89a42bec3b212de0f687c93c69e1c29237e8142bc8bae513c574b29ca7983adb",
+      "fromfile": "accepted/note_suffix.md",
+      "publication": "wrappers/note_suffix.md",
+      "publication_sha256": "6487f946318402ee59bcaa593b3ea9befeb3df6b487cd5e9ddfab67ec8ab6674",
+      "source_line_range": [
+        1541,
+        1572
+      ],
+      "source_sha256": "b546f4ce8f2dee75be7d3b4db19568b3099ed1e698d27911830868b82de94719",
+      "stored_bytes": 1971,
+      "tofile": "publication/note_suffix.md"
+    }
+  ]
+}

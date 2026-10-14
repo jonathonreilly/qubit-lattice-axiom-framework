@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-13T14:09:08.479754+00:00",
+  "branch": "physics-loop/toe-chirped-kinetic-energy-20261013",
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "previous_branch": "physics-loop/toe-initial-state-kinetic-energy-20261013",
+  "previous_head": "348eb635eadcee888715471de104ef207dd012a3",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Switched to a new branch 'physics-loop/toe-chirped-kinetic-energy-20261013'\n"
+}

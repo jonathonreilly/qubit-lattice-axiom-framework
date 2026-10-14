@@ -1,0 +1,11 @@
+# Modulated kinetic publication handoff
+
+This is source preparation only. The actual clean child is physics-loop/toe-modulated-kinetic-energy-20261013 at 0ce6e5ba7483d8ca14513b809009c7169c171a97, on attached regular parent PR 9516. Root owns complete review, execution, staging, commit, push and any new regular PR.
+
+The original 175-file assembly is immutable. Its root disposition authorized preparation but required a real publication-wrapper correction: the slow-time integral is J, whereas Poisson intensity is nu_omega J. This publication copy makes that correction; the exact 464-line scientific core is unchanged. Both a correction-only diff and complete wrapper/whole-note diffs are preserved. Historical pending text, preseal precision, original 847-line picture defect, missed root check, exact V2 repair and exposure history remain archived.
+
+There are three direct mathematical parent nodes: published general compact controls (containing mean301 and general470), corrected two-zero dynamics (corrected859), and correlation limits (correlation335). Four exact canonical core maps bind those inputs. M23 is a supplied-hypothesis implication, including the one-particle bound; prior embedding/calibration/domain context and Git ancestry do not create additional theorem edges.
+
+Root must read this packet, the new wrapper diffs, changed source logic and complete adapted driver, then create separate external acceptance/review records. Prepare installs only the frozen payload, runs the one canonical identity-only cache and four byte-corruption controls, checks the one-node/three-edge graph delta and emits the exact NUL staging list. Root inspects and explicitly stages that list. Verify checks exact index blob identities and absence of unstaged drift before the focused existing-ledger compatibility checker. An empty checked list proves no scientific claim.
+
+The driver never stages, commits, pushes, creates a PR or applies an audit. Failure preserves logs and partial state, with no automatic cleanup or retry. Combined-current-main validation is separate and remains false here. Root owns candidate selection, generated-output allowance and recovery. No canonical runner, cache, graph builder, pipeline or mathematical predicate ran during preparation.

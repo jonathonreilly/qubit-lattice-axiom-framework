@@ -1,0 +1,85 @@
+{
+  "programs": [
+    {
+      "archive": "programs/prepare_verify_chirped_kinetic_energy.py.gz",
+      "bytes": 48180,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 742,
+      "sha256": "bef3f99296adf545d0bd24ea721dab8880dfc4b3454417df3f4273c2c80767a0",
+      "source": "prepare_verify_chirped_kinetic_energy.py",
+      "stored_bytes": 14582,
+      "stored_sha256": "8ac3c973e150aa999b7859170bd06efee1c9d05b2a9852b4fbd64d8134c9ad9b"
+    },
+    {
+      "archive": "programs/IDENTITY_TOOL.template.py.gz",
+      "bytes": 12020,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 136,
+      "sha256": "a817e57d4a6ebb392f00928ccf144e97ae208572c6aa181a473b507fd1673e2c",
+      "source": "IDENTITY_TOOL.template.py",
+      "stored_bytes": 4145,
+      "stored_sha256": "5531affc6cb8fcad0ef80fc050a5625521c4793b77f056f46b01f220d3dd3772"
+    },
+    {
+      "archive": "programs/run_combined_validation.py.gz",
+      "bytes": 8698,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 94,
+      "sha256": "537b98824b1cd27fdb9519f3eaba43305c137ce0a9d22281216b0affef514ff6",
+      "source": "run_combined_validation.py",
+      "stored_bytes": 3400,
+      "stored_sha256": "c2bc1c6fd6e706d6710b0f4b9c26d94967835e520b52f50e0416c0d67cbe7151"
+    },
+    {
+      "archive": "programs/CHECK_PREPARATION_SOURCES.py.gz",
+      "bytes": 16005,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 129,
+      "sha256": "f5dfabf8ff228c1998be1700b1d00b4b6e0d4e43e1204b5dbd784bdbca66121b",
+      "source": "CHECK_PREPARATION_SOURCES.py",
+      "stored_bytes": 5465,
+      "stored_sha256": "e095f41138b8fcf9c64b5e2a753587e99dcc7641dfe4bb4f4abc5a45b69afc4c"
+    },
+    {
+      "archive": "programs/BUILD_SOURCE_ONLY.py.gz",
+      "bytes": 18604,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 158,
+      "sha256": "0fa4a1a8ddc91981007df11a03a7f82981053d9b48d1306a260b4c4a7d4cf144",
+      "source": "BUILD_SOURCE_ONLY.py",
+      "stored_bytes": 7032,
+      "stored_sha256": "c3eebf8506bba60de6d32f7b1c93314f248f9d2a5ce3dfc045b10f4fdc865240"
+    },
+    {
+      "archive": "programs/ADAPT_PROGRAMS.py.gz",
+      "bytes": 7549,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 85,
+      "sha256": "ad62f5ffa09c0856d42e2e4e52bc7e5c1f446549cfb954ee8db7629d0ef740e6",
+      "source": "ADAPT_PROGRAMS.py",
+      "stored_bytes": 2764,
+      "stored_sha256": "c122a278b4731cecae4d8c500a58a3891cc5526b6ebe9d8d5382d5ef22abc90a"
+    },
+    {
+      "archive": "programs/FINALIZE_SOURCE_ONLY.py.gz",
+      "bytes": 20716,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 228,
+      "sha256": "3b1691b3707685393793297cbbc392c357706f84f19b1a47be4082dc5a86aade",
+      "source": "FINALIZE_SOURCE_ONLY.py",
+      "stored_bytes": 7985,
+      "stored_sha256": "abffcb94df40e622a5fdf23420707611c4589ff297206b4397cc1cdcc7560870"
+    },
+    {
+      "archive": "programs/RUN_SOURCE_ONLY.py.gz",
+      "bytes": 2027,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 21,
+      "sha256": "89fa5d8bd972a27a4de5718e111ac69ea1c4161fb48484d7795f4e4a53d77a35",
+      "source": "RUN_SOURCE_ONLY.py",
+      "stored_bytes": 1047,
+      "stored_sha256": "e87edf2bf88221e88102599b58634fc791eb93a6e8c967c329ef8af49e43ac16"
+    }
+  ],
+  "scientific_predicates": 0
+}

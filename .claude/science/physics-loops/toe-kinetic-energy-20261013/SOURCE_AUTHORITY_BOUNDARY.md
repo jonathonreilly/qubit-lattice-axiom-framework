@@ -1,0 +1,9 @@
+# Source authority and tamper boundary
+
+Root supplies independent command-line hashes for the preparation freeze and complete driver, plus a separate reviewed acceptance and review outside this package. The driver checks exact membership, every frozen byte, original403 members plus receipt/sidecar, accepted source-review records, procedure pins and live canonical parents before installation. It rejects drift and symlinks. Installed payload bytes remain pinned through prepare and verify.
+
+The identity program embeds the accepted assembly freeze and pins its archive map, publication edits, parent registry, graph proposal, review status and all other declared packet inputs. Compressed and decompressed identities are both checked. It reconstructs source notes, publication notes, exact core order, complete n=3 diffs and the historical847-to-V2 repair. Every actual read is declared. Generated runners differ only in claim attribution and are frozen by the external driver authority.
+
+The runner does not independently authenticate a simultaneous replacement of itself and all embedded anchors. Root's external program/package acceptance supplies that boundary. Four future corruption controls test archive, published note, transformation metadata and canonical parent separately, after successful canonical baselines. They are byte-integrity tests, never mathematical mutation tests. Future root acceptance/review copies are guarded by the driver and excluded from circular self-pins in the identity tools.
+
+No archived program is imported or executed by the identity program. Historical numerical/Lean/log records are opaque evidence bytes unless the assembly separately records a mathematical read. The one-hop closure is not a recursive audit. Prepared source authority cannot create an audit verdict or certify a proof.

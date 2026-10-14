@@ -1,0 +1,76 @@
+# Root kinetic publication review
+
+2026-10-13. Accepted for source integration at the exact preparation freeze
+cd72bf6ac6a38143ed154148b514f37d26efe106a31d5bc6d3048b428e6fddd6,
+driver af4405eab6b0acb9755de25f0eba9afbde1f77c63816d8b1172d1fbdcbdaa7de.
+Actual branch physics-loop/toe-kinetic-energy-20261013 starts at
+301b06c3c2b8ce3c1b33c9333eee89a2248e4a99, regular pair PR9515.
+This decision permits the specified source-integration execution. It is
+not an audit verdict, retained promotion, mathematical computer proof or
+permission to merge the scientific stack.
+
+The accepted source assembly is e949acc4,403 bound members/405 total files.
+All five previously read and reviewed cores remain exact: corrected859,
+one-zero421, mean301, general full-law470 and correlation335. Root reuses
+their exact accepted mathematical coverage and earlier source-wrapper read.
+All new publication wrapper changes were read through complete n=3 diffs,
+and reconstruction verifies their exact placement in the four current notes.
+The metadata does not enlarge control classes, windows, domains, detector
+resources or actual-cell hypotheses. Mean301 is still a mean result;470
+supplies the separate full-law proof. Original847, the initial root miss,
+the exact V2 correction and review/exposure history remain recoverable.
+
+Root read the full current141-line identity logic and98-line source checker,
+every prepare-driver change against the previously fully read770-line
+calibrated driver, and the single changed line of the previously read94-line
+combined-validation driver. All three complete source diffs were regenerated
+and matched, including exact prior source hashes. This supplies complete
+argument coverage through unchanged-source reuse plus all changes; it is
+not described as a new fresh read of generated literal arrays. The four
+generated runners were exactly reconstructed and differ only in claim ID.
+Their predicates are byte identity/reconstruction, not mathematical claims.
+Historical source-authoring programs were not rerun or newly audited.
+
+Root read all new block prose, the full parent bindings, graph additions,
+source-review status, execution contract, proposed PR text and twelve-section
+conformance record. Four direct canonical mathematical parents are distinct
+from same-packet implications. The fourteen proposed direct edges preserve
+the accepted dependency classification. Five history relations remain out of
+the graph delta. The three archived source/consumer relations expose root484
+and its pair inputs; pair ancestry does not manufacture a theorem edge.
+The canonical pair792 identity and distinct archived provisional286 remain
+separate. Existing conditional support is not called retained.
+
+The root static check verified all434 frozen members and exact435-file tree,
+all409 live archive aliases/317 compressed objects, five exact cores totaling
+2386 lines, all wrapper/core byte maps, complete publication and program
+diffs, canonical parents, literal runner generation and366 stage-contract
+paths. It exited zero in0.245031 seconds with empty stderr and changed no
+frozen byte. Complete logs and original result are in
+KINETIC_PUBLICATION_ROOT_STATIC_VERIFICATION.json and
+kinetic_publication_root_static/. A prior oversized aggregated display was
+truncated; every affected changed argument and metadata source was recovered
+in bounded subsequent complete reads. No coverage is inferred from truncation.
+
+The exact three Markdown-looking mathematical factors were reviewed as
+mathematical notation; no broad link or formula exception is authorized.
+Two accepted general-wrapper pieces retain exact triple-newline boundaries.
+There is no trailing-whitespace exception or scientific text normalization.
+The reviewed driver verifies literal EOF and notation contracts; runtime
+vocabulary/link/graph/staged checks remain required.
+
+The execution boundary is narrow: prepare installs359 frozen payload files,
+four future identity caches, the citation manifest and two external root
+records; it stages nothing. Root then reviews the actual logs, exact graph
+delta and NUL path list, stages exactly that list and runs verification.
+The only previously tracked installation target is the citation manifest.
+Runtime gates must report their actual results, including an empty existing
+claim-check list if that is what occurs. Four byte-corruption controls are
+integrity tests; none may be called mathematical mutation testing.
+
+No combined current-main candidate or pipeline is approved here. That gate
+remains false, with separately reviewed candidate/procedure/generated-output
+authority required. Retained audit and cumulative landing remain separate.
+No physical axiom, editable prompt, status ledger or other-chat message changed.
+N1/N5 remain pending for a broadened negative interpretation; this milestone
+adds no new no-go theorem. No source repair is required before integration.

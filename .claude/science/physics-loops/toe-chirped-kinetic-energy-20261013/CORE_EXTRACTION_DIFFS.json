@@ -1,0 +1,33 @@
+{
+  "diffs": [
+    {
+      "byte_offset": 10440,
+      "bytes": 26565,
+      "context_lines": 3,
+      "diff": "diffs/core_1_extraction.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/core_1",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/CHIRPED_KINETIC_LAW_ROOT_PROBE_V2.md",
+      "stored_bytes": 20,
+      "tofile": "publication/core_1"
+    },
+    {
+      "byte_offset": 37437,
+      "bytes": 42198,
+      "context_lines": 3,
+      "diff": "diffs/core_2_extraction.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/core_2",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-chirped-kinetic-law-20261013/sources/run/CHIRPED_KINETIC_LAW_INDEPENDENT.md",
+      "stored_bytes": 20,
+      "tofile": "publication/core_2"
+    }
+  ],
+  "mathematical_core_edits": 0
+}

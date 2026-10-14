@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-13T13:41:10.540946+00:00",
+  "status": "accepted_for_source_only_publication_preparation",
+  "review": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CHIRPED_SOURCE_ASSEMBLY_ROOT_REVIEW.md",
+  "review_sha256": "3a79681c561a73831e7222167d823755ab89ed8de03df8d7b629a32d631aa134",
+  "source_freeze_sha256": "fdb082263fabac60eb6f19bce3a60b98c5bf5eb23fc0e0933dc9addae4978f38",
+  "source_check_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/chirped_kinetic_law_root_source_check/RECEIPT.json",
+  "source_check_receipt_sha256": "54e1a9ed337b13dff991570377ce3264b4df50e320efbaf6a469a49f776b614c",
+  "core_mathematical_acceptance_sha256": "9918f46bbf900e35241aae0ad51f92ba6164df21081ec6f75f97ff8576cc895c",
+  "publication_parent": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "publication_parent_pr": 9517,
+  "planned_branch": "physics-loop/toe-chirped-kinetic-energy-20261013",
+  "branch_exists_or_selected": false,
+  "required_repairs": [],
+  "publication_execution_authorized_by_this_receipt": false,
+  "scientific_predicates": 0,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,154 @@
+{
+  "additional_mathematical_body_edits": [],
+  "diff_convention": "difflib.diff_bytes(unified_diff), n=3, original LF bytes, fixed labels, no timestamps; gzip mtime=0",
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/payload/FINITE_INITIAL_ENERGY_KINETIC_NOTE.md",
+      "accepted_candidate_sha256": "fc180e9c470526087afa22d3180ae1faf43c4215fe177215d07311c2b8dec184",
+      "context_lines": 3,
+      "diff": "diffs/initial_state.publication.diff.gz",
+      "diff_bytes": 19083,
+      "diff_sha256": "75fbfba7faf721deeafe293a8b680624296ef05885448f4f3db6b1c4c3f3e17f",
+      "diff_stored_sha256": "009f297db6d1c0a4a9230fc5fcd56bc5bfa0953b11064d28e8fb916757b5ff14",
+      "fromfile": "accepted/payload/FINITE_INITIAL_ENERGY_KINETIC_NOTE.md",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "key": "initial_state",
+      "note": "docs/FINITE_INITIAL_ENERGY_KINETIC_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 9709,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 78,
+          "old_line_range": [
+            1,
+            34
+          ],
+          "sha256": "b7c63266374176bb428caf8c0f46b8a9374d9c9d82929e162575de89f11697e4",
+          "text": "---\ntitle: \"Single-time kinetic energy laws for fixed normal initial states\"\nclaim_id: finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nrunner: scripts/initial_state_kinetic_identity_2026_10_13.py\nupstream_dependencies:\n  - modulated_kinetic_energy_bounded_theorem_note_2026-10-13\n  - general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13\n  - two_zero_kinetic_energy_bounded_theorem_note_2026-10-13\n  - kinetic_correlation_limits_bounded_theorem_note_2026-10-13\nassembly_status: publication_prepared_root_review_and_runtime_pending\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: \"Supplied massive free CAR model, fixed normal input, fixed smooth real controls and carrier above threshold, bounded kinetic and BV resources; finite input energy separately for mean/W1; explicit actual-cell premises.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Unchanged conditional analytic cores, separately derived and source-exposed checked; source identity is not a mathematical certificate.\"\nnext_trace_action: \"Root reviews and executes exact source integration; cumulative current-main validation and independent retained audit remain separate. Downstream consumer not yet selected.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ndependency_resolution: exact_published_parent_core_maps\n---\n\n# Single-time kinetic energy laws for fixed normal initial states\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support. This note preserves two accepted analytic cores with their exact hypotheses. It adds publication metadata, an explicit notation dictionary and exact source/dependency maps. It supplies no retained-audit, formal Lean, model-diverse or empirical verdict.\n\n## Target and quantifiers\n\nFor each fixed normal initial density matrix in the supplied massive free CAR/Fock model, the single-time free-energy law approaches its initial law convolved with the vacuum kinetic Poisson comparison; finite initial free energy separately yields additive mean convergence and W1 convergence.\n\nFix m,v>0, real compact smooth spatial slots, carrier omega>2m, and finite bounds on kinetic horizon, envelope supremum and total variation. The real BV envelope and terminal time may vary with h=|lambda|. With J_h=lambda^2 integral_0^T A(t)^2dt, the comparison law is the initial energy law convolved with omega times Poisson(nu_omega J_h). Weak convergence to a single limiting law is asserted along convergent J_h; the characteristic-function comparison and finite-energy W1 comparison retain the current J_h. Drive uniformity is for each fixed rho, which is independent of coupling, terminal time and envelope. No W1 rate or multi-time process follows.\n\nThe weak-law theorem needs normality but no energy moment. The mean/W1 theorem needs finite initial free energy, treats arbitrary nonquasifree states and keeps anomalous covariance. The separate zero-anomalous subclass has the stated uniform mean control. The explicit inverse-vacuum and two-particle families vary with the drive and delimit uniform extensions over energy-bounded input classes at positive production; they do not contradict any fixed-state theorem.\n\nZero envelope, zero pair-production rate and bounded kinetic windows including T=0 remain included. The positive-production hypothesis belongs to the uniformity counterexamples. The proof does not establish threshold, massless, high-variation, changing spatial-slot, physical state-selection or trajectory limits.\n\n## Proof obligations, imports and notation\n\nThe obligation graph is explicit: modulated464 supplies the vacuum law/mean and weighted full-input remainder; general470 supplies signed Born/pair-density machinery; corrected859 supplies the CAR pictures, skew graph and energy-domain conventions; correlation335 supplies the older fixed-test topology machinery. The new cores prove the weighted full operator estimate, arbitrary-state covariance/energy identity, echo argument, compact-test extensions and conditional initial-state transfer. These are ordinary conditional analytic results, not cited retained authorities. All four directly used canonical parents and five exact core maps are in the [parent bindings](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PARENT_BINDINGS.json). Mean301 is transitive support under the general-control owner. No chirp theorem is imported.\n\nPart A is root407 lines9-383; Part B is independent224 lines20-216. Full originals and omitted historical status sections remain recoverable from the [source archive](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/SOURCE_RECOVERY.md). Full-source digests are different from extracted-core digests. The [publication map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PUBLICATION_EDITS.json) identifies both.\n\nPart B's U is Part A's Y, and its H is H0. Its field F is b in Part A. The generalized densities obey Q=I-C, n_B=N_A and kappa_B=-kappa_A; this accounts for the opposite anomalous-term signs. The bare C in Part B's pair graph is the scalar-band conjugation from corrected859, distinct from C_rho. J_real=Gamma C is distinct from J_h.\n\nPart A's exact trace-distance identity applies only to pure initial states. Part B adds an asymptotic result for each fixed normal mixed state, not an exact finite-coupling mixed-state identity or a state-uniform limit. Its full-picture compact statement uses the additional uniform freely rotated creator-word lemma, not an illicit moving compact test in Part A. Finite-mode statements are for finite-rank detectors with their stated rank dependence; a continuum spatial region or energy band is not automatically finite rank. A vacuum-based necessary detector-rank bound is retained only for initially empty modes.\n\n## Explicit actual-cell hypotheses\n\nThe actual-cell application assumes an exact common free energy and embedding, all required M23 calibration bounds, and weighted trace convergence ||(H+I)^(1/2)(rho_a-rho)(H+I)^(1/2)||_1 -> 0 to one fixed finite-energy rho. M23 supplies bounds ||V_a-V||<=d0 epsilon_a, ||[H,V_a-V]||<=d1 epsilon_a and the stated uniform individual commutator bound; the parent also states its one-particle-generator comparison. With fixed resources, epsilon_a=o(h^2) is sufficient for the mean/law/W1 transfer. The weaker unweighted scale alone supplies no mean conclusion. An energy cap or convergence of initial energy distributions does not supply weighted trace convergence.\n\nNo missing theorem lemma is asserted within the supplied model and stated hypotheses. The strongest open physical-application obligation is to establish the actual common-energy/calibration and weighted preparation hypotheses for the desired realization; this package proves no preparation rate or model selection. They remain assumptions rather than new scientific parent claims.\n\n## Review record and negative scope\n\nThe root derivation froze before its author opened the independent findings. The later focused comparison resolves the covariance dictionary, weighted domains, exact pure versus asymptotic mixed distance, and two-particle (one-pair) counterexample. It is source-exposed and same-family; the comparison author also wrote Part B. Root's separate proof and complete later checking are distinguished from that self-check. The unchanged original review's phrase \"two-pair sector\" is a transcription error corrected by its preserved precision note; no formula or acceptance scope changed.\n\nThe [N1-N8 checklist](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_DISCIPLINE_CHECKLIST.md) and [ledger](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/NO_GO_LEDGER.md) preserve exact uniformity witnesses and the procedural FAIL/partial-narrowing classification. Only the real families are counted; N1's five-family minimum is unmet. The bounded historical N8 search is recorded with its actual coverage. The proposed identity runner emits honest N5 nonexecution statements, not a mathematical certificate. No packet PASS, exhaustive impossibility or independent-wall count is claimed. Narrowed positive publication is allowed with these missed routes and limitations queued.\n\nThe actual regular parent is PR9517 at c5eaa6bf752a0893c83c0509c7c349dab53bff14. The former provisional wrapper remains archived. No prior source is rewritten. All new source integration, staging and publication remain root-owned; later combined validation and independent retained audit remain separate.\n\n## Part A \u2014 unchanged root mathematical core\n\nThis complete selected core preserves I23's pure-state scope and section8's conditional application.\n\n<!-- BEGIN EXACT CORE root407:9-383 -->\n",
+          "wrapper_path": "wrappers/initial_state.0.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 9709,
+          "bytes": 17769,
+          "expected_slice_sha256": "17e33786ddb4fe51ea94292bcba21ab0c7dc35959ec43dfd4b979709d144cee6",
+          "first_line": 79,
+          "kind": "accepted_core_slice",
+          "last_line": 453,
+          "sha256": "17e33786ddb4fe51ea94292bcba21ab0c7dc35959ec43dfd4b979709d144cee6",
+          "source_line_end": 383,
+          "source_line_start": 9,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/FINITE_INITIAL_ENERGY_KINETIC_ROOT_PROBE.md",
+          "source_sha256": "20c9f7cba4ea75cfad431e067f676aae54b15e031005a04dd9b4c63d37423086"
+        },
+        {
+          "byte_offset": 27478,
+          "bytes": 619,
+          "first_line": 454,
+          "kind": "publication_wrapper",
+          "last_line": 460,
+          "old_line_range": [
+            410,
+            416
+          ],
+          "sha256": "4293ae84a3d8b7d8bf35f92c2bfedfa7ae0c356f687dd9568a617d2e4d00fcf7",
+          "text": "<!-- END EXACT CORE root407:9-383 -->\n\n## Part B \u2014 unchanged independent mathematical core and extensions\n\nThis companion core supplies alternative proofs and the additional topology/finite-mode results at their own stated scope. Its definition of fixed rho excludes dependence on coupling, terminal time or envelope. Its inverse-vacuum and normalized two-particle constructions deliberately vary with the drive; they do not contradict the fixed-state positive theorem. Its claims (1)-(2) denote weighted estimates and are distinct from Part A's I-numbered equations.\n\n<!-- BEGIN EXACT CORE independent224:20-216 -->\n",
+          "wrapper_path": "wrappers/initial_state.2.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 28097,
+          "bytes": 17435,
+          "expected_slice_sha256": "5434448a79ec72c182e938139abf4360146e17120b6d4b08b370fd52ef33d2dc",
+          "first_line": 461,
+          "kind": "accepted_core_slice",
+          "last_line": 657,
+          "sha256": "5434448a79ec72c182e938139abf4360146e17120b6d4b08b370fd52ef33d2dc",
+          "source_line_end": 216,
+          "source_line_start": 20,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/finite_initial_energy_kinetic_source_assembly/support/sources/FINITE_INITIAL_ENERGY_KINETIC_INDEPENDENT.md",
+          "source_sha256": "f293eea378fd902ae9b35b71121377c9caa57d76dfb9785a28fa2178be216ee0"
+        },
+        {
+          "byte_offset": 45532,
+          "bytes": 2137,
+          "first_line": 658,
+          "kind": "publication_wrapper",
+          "last_line": 674,
+          "old_line_range": [
+            614,
+            620
+          ],
+          "sha256": "f26d9432f7180f5a2de3de37dbab6f2b9c28e086b13dd28b94b7d8c5360328d4",
+          "text": "<!-- END EXACT CORE independent224:20-216 -->\n\n## Source verification and direct imports\n\nThe [review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/REVIEW_HISTORY.md), [handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/348eb635eadcee888715471de104ef207dd012a3/.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/HANDOFF.md) and source map distinguish prior complete analytic reading from current identity checks. The two selected mathematical slices are unchanged. Full original sources, precision, direct frozen evidence and acceptance remain archived. Nested historical receipts are preserved as provenance, not recursively audited.\n\nThe primary identity runner checks archive bytes, exact core reconstruction and canonical parent maps only. It executes zero mathematical predicates, no numerical science and no Lean build. No canonical runner/cache/graph/pipeline ran during publication preparation. Its cached output, if later created by root through the canonical envelope, is source-integrity evidence only.\n\nDirect scientific imports:\n\n- [modulated_kinetic_energy_bounded_theorem_note_2026-10-13](MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13](GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [two_zero_kinetic_energy_bounded_theorem_note_2026-10-13](TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [kinetic_correlation_limits_bounded_theorem_note_2026-10-13](KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n\n\nReview-loop integration note: current main 82fdc12d51e3e47bf8ac1f74601c9600115942d6 plus this kinetic-energy batch supplies the reviewed live dependencies. Original proof bodies and archives are unchanged. Live parent hashes and consumed-core coordinates are refreshed, with original bindings preserved. Historical pending and review labels remain provenance, not audit authority.\n",
+          "wrapper_path": "wrappers/initial_state.4.md"
+        }
+      ],
+      "published_bytes": 47669,
+      "published_lines": 674,
+      "published_sha256": "0c80ad99a3488e8bdd7d315d7739abb58d9204cd7ecc76dc8d78b41608010c46",
+      "stored_bytes": 7003,
+      "tofile": "docs/FINITE_INITIAL_ENERGY_KINETIC_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "raw_diff_policy": "Only gzip forms enter payload. Readable raw diffs remain source-preparation evidence. No context-marker normalization and no broad whitespace skipping.",
+  "source_freeze_sha256": "8ce9cbb235c6696f760e867192942bb2d0e85867bb333bb75671d890fa59a819",
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.0.diff.gz",
+      "diff_bytes": 15713,
+      "diff_sha256": "e0d93e34ac2b54305844e39618d1bc108fae2b59fce814d2c92accb0814243e1",
+      "diff_stored_sha256": "f6963162c208e51ad2005b8c99427e8d5a9a73d1451b39aa2d076952155a9f87",
+      "fromfile": "accepted/wrapper_lines_1_34",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "publication": "wrappers/initial_state.0.md",
+      "publication_sha256": "b7c63266374176bb428caf8c0f46b8a9374d9c9d82929e162575de89f11697e4",
+      "source_line_range": [
+        1,
+        34
+      ],
+      "source_sha256": "8be95e5bc261553e431118e35145038bffc8c109df85a2cff3a313b643330da1",
+      "stored_bytes": 6033,
+      "tofile": "wrappers/initial_state.0.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.2.diff.gz",
+      "diff_bytes": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "fromfile": "accepted/wrapper_lines_410_416",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "publication": "wrappers/initial_state.2.md",
+      "publication_sha256": "4293ae84a3d8b7d8bf35f92c2bfedfa7ae0c356f687dd9568a617d2e4d00fcf7",
+      "source_line_range": [
+        410,
+        416
+      ],
+      "source_sha256": "4293ae84a3d8b7d8bf35f92c2bfedfa7ae0c356f687dd9568a617d2e4d00fcf7",
+      "stored_bytes": 20,
+      "tofile": "wrappers/initial_state.2.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/initial_state.4.diff.gz",
+      "diff_bytes": 3109,
+      "diff_sha256": "a8682a1fb1d81c26a0df2d5831356405c72bd41454f55e56496a22d2b50930c2",
+      "diff_stored_sha256": "c48ec1cf0f6e5d64997334e1ac88e6c52875fbb325a5d0fc46c82abdd37f5efa",
+      "fromfile": "accepted/wrapper_lines_614_620",
+      "handling": "raw unified diff archived losslessly; space-only context markers are literal syntax",
+      "publication": "wrappers/initial_state.4.md",
+      "publication_sha256": "f26d9432f7180f5a2de3de37dbab6f2b9c28e086b13dd28b94b7d8c5360328d4",
+      "source_line_range": [
+        614,
+        620
+      ],
+      "source_sha256": "053f70297cf210151c1be0af8e78519e0a77ee0f5247a73a1bafe9ab6c842ee9",
+      "stored_bytes": 1502,
+      "tofile": "wrappers/initial_state.4.md"
+    }
+  ]
+}

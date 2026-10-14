@@ -1,0 +1,54 @@
+{
+  "hits": [
+    {
+      "classification": "source/provenance context or explicit premise statement; no retained authority inferred",
+      "exact_line": "The obligation graph is explicit: modulated464 supplies the vacuum law/mean and weighted full-input remainder; general470 supplies signed Born/pair-density machinery; corrected859 supplies the CAR pictures, skew graph and energy-domain conventions; correlation335 supplies the older fixed-test topology machinery. The new cores prove the weighted full operator estimate, arbitrary-state covariance/energy identity, echo argument, compact-test extensions and conditional initial-state transfer. These are ordinary conditional analytic results, not cited retained authorities. All four directly used canonical parents and five exact core maps are in the [parent bindings](../.claude/science/physics-loops/toe-initial-state-kinetic-energy-20261013/PARENT_BINDINGS.json). Mean301 is transitive support under the general-control owner. No chirp theorem is imported.",
+      "line": 50
+    },
+    {
+      "classification": "explicit conditional hypothesis, repeated in target/application scope; no independence assertion",
+      "exact_line": "The actual-cell application assumes an exact common free energy and embedding, all required M23 calibration bounds, and weighted trace convergence ||(H+I)^(1/2)(rho_a-rho)(H+I)^(1/2)||_1 -> 0 to one fixed finite-energy rho. M23 supplies bounds ||V_a-V||<=d0 epsilon_a, ||[H,V_a-V]||<=d1 epsilon_a and the stated uniform individual commutator bound; the parent also states its one-particle-generator comparison. With fixed resources, epsilon_a=o(h^2) is sufficient for the mean/law/W1 transfer. The weaker unweighted scale alone supplies no mean conclusion. An energy cap or convergence of initial energy distributions does not supply weighted trace convergence.",
+      "line": 60
+    },
+    {
+      "classification": "explicit conditional hypothesis, repeated in target/application scope; no independence assertion",
+      "exact_line": "No missing theorem lemma is asserted within the supplied model and stated hypotheses. The strongest open physical-application obligation is to establish the actual common-energy/calibration and weighted preparation hypotheses for the desired realization; this package proves no preparation rate or model selection. They remain assumptions rather than new scientific parent claims.",
+      "line": 62
+    },
+    {
+      "classification": "proof qualification or negated shortcut; no hidden imported assumption",
+      "exact_line": "To justify it without assuming finiteness of the left side, first observe",
+      "line": 294
+    },
+    {
+      "classification": "proof qualification or negated shortcut; no hidden imported assumption",
+      "exact_line": "quasifree or gauge-invariant assumption. No universal quantitative rate",
+      "line": 325
+    },
+    {
+      "classification": "proof qualification or negated shortcut; no hidden imported assumption",
+      "exact_line": "No initial moment or quasifree assumption has entered. The finite-polynomial proof makes the remainder in (4) uniform even over s when c_h(s) is kept exact, because the extra free rotations preserve every approximation norm. The vacuum-to-Poisson approximation is used only at fixed s; no uniform-all-s Poisson claim follows.",
+      "line": 523
+    },
+    {
+      "classification": "explicit conditional hypothesis, repeated in target/application scope; no independence assertion",
+      "exact_line": "Assume E_rho<infinity, hence Tr(n)<=E_rho/m. Define",
+      "line": 545
+    },
+    {
+      "classification": "proof qualification or negated shortcut; no hidden imported assumption",
+      "exact_line": "Using (1)--(2) on the right proves `||E^(q/2)(beta'+beta)||_HS=O(eta_h)` without assuming a weighted bound on beta' in advance. The inverse-vacuum state therefore has finite energy tending to omega mu.",
+      "line": 634
+    },
+    {
+      "classification": "source/provenance context or explicit premise statement; no retained authority inferred",
+      "exact_line": "The primary identity runner checks archive bytes, exact core reconstruction and canonical parent maps only. It executes zero mathematical predicates, no numerical science and no Lean build. No canonical runner/cache/graph/pipeline ran during publication preparation. Its cached output, if later created by root through the canonical envelope, is source-integrity evidence only.",
+      "line": 662
+    }
+  ],
+  "mathematical_predicates_executed": 0,
+  "note": "docs/FINITE_INITIAL_ENERGY_KINETIC_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+  "note_sha256": "adbe6074da8f9ff5bfb64a7b57e6783218deedce700de988cc8207ff657df528",
+  "pattern": "we assume|by construction|as is standard|the framework provides|bridge context|background|naturally|obviously|standard QFT|registered|canonical|assum",
+  "scope": "complete text location scan; classifications manually inspected before freeze"
+}

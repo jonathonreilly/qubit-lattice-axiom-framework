@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-13T13:03:34.090425+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "base": "c5eaa6bf752a0893c83c0509c7c349dab53bff14",
+  "branch": "physics-loop/toe-initial-state-kinetic-energy-20261013",
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9517",
+  "git_status": ""
+}

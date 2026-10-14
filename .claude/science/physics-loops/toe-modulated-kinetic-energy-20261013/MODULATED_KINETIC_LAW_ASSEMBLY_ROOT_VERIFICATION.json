@@ -1,0 +1,901 @@
+{
+  "utc": "2026-10-13T11:46:02.222322+00:00",
+  "source_assembly": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly",
+  "frozen_checker": {
+    "started_utc": "2026-10-13T11:46:02.066689+00:00",
+    "completed_utc": "2026-10-13T11:46:02.171792+00:00",
+    "argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/tools/source_tools.py",
+      "--frozen"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly",
+    "elapsed_seconds": 0.10428099986165762,
+    "exit_code": 0,
+    "stdout_sha256": "19120bdd1e1bc84735af7f0f858c5ced9268e0831ac4f1de8c9e51367026b512",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "script_sha256": "9719cdc68a9f27577484d8c1a1f6103188a2481b8acfd523ad983b851df1958d",
+    "freeze_sha256": "c32a537caaa2be0dd08cb45c3a1f9b07f0e1956db116e73b78b214f2ee330b92"
+  },
+  "checker_result": {
+    "closures": [
+      {
+        "members": 32,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_ROOT_SEAL.json"
+      },
+      {
+        "members": 14,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/FINAL_FREEZE.json"
+      },
+      {
+        "members": 57,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/SOURCE_REFRESH.json"
+      },
+      {
+        "members": 14,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/FINAL_FREEZE.json"
+      },
+      {
+        "members": 29,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/FINAL_FREEZE.json"
+      },
+      {
+        "members": 23,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/FINAL_FREEZE.json"
+      },
+      {
+        "members": 7,
+        "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/FINAL_FREEZE.json"
+      }
+    ],
+    "complete_diffs": [
+      {
+        "forward_reconstruction": true,
+        "hunks": 2,
+        "path": "payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/diffs/primary464_to_note.diff",
+        "reverse_reconstruction": true,
+        "sha256": "4b97a24d758ba464202d6771024342805e8934ffb36b20e0100830a9d413afd7"
+      },
+      {
+        "forward_reconstruction": true,
+        "hunks": 2,
+        "path": "payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/sources/run/WEAK_DRIVE_KINETIC_PICTURE_V2.diff",
+        "reverse_reconstruction": true,
+        "sha256": "0e38bc3ccd32186e75db5d3f09a30388db9cb46c011f233ae141c1fd204a46ae"
+      }
+    ],
+    "core_sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+    "exact_piece_reconstruction": true,
+    "frozen_members_verified": 174,
+    "live_sources_refreshed": 0,
+    "new_formal_builds": 0,
+    "new_numeric_science_runs": 0,
+    "note": {
+      "bytes": 30639,
+      "lines": 605,
+      "path": "payload/docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "sha256": "04bc6d0a558cd3be87e972be92915a6484583f1973e31b850a6386fe57f02e16"
+    },
+    "recursive_upstream_audit": false,
+    "scientific_predicates": 0,
+    "scope": "Source bytes, declared immediate closure, maps and diffs only.",
+    "sources": 135,
+    "utc": "2026-10-13T11:46:02.142139+00:00"
+  },
+  "live_sources_refreshed": [
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419,
+      "lines": 239
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "bytes": 35591,
+      "lines": 568
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_ADAPTED_WEIGHTED_CALIBRATION_INDEPENDENT.md",
+      "sha256": "974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c",
+      "bytes": 25559,
+      "lines": 566
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_LAW_FRESH_REVIEW.md",
+      "sha256": "750f15023c5e8b7ae62ca84e0d9a677c70dfb3782befd0042cba8b697e030942",
+      "bytes": 15807,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_LAW_ROOT_ACCEPTANCE.json",
+      "sha256": "a55573418998e6b496f985f3066835326ea8e74ef1fbb27c54a42bbc37ce422e",
+      "bytes": 2574,
+      "lines": 28
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "bytes": 22058,
+      "lines": 470
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_LAW_ROOT_SEAL.json",
+      "sha256": "b658ae7c4ecc76d40e1ed9abe7567a06d36e0c5053d4c9c09b0802bd6f5a0eef",
+      "bytes": 7813,
+      "lines": 124
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_MEAN_FRESH_REVIEW.md",
+      "sha256": "a20a5d24574d9564de355c96d5e4d6a2ea3dc579c3d9ff0027ef1cec1f1e70bd",
+      "bytes": 18539,
+      "lines": 164
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GENERAL_KINETIC_MEAN_ROOT_ACCEPTANCE.json",
+      "sha256": "c390310ca7db4b912df349d24b95187659575e067dab175806399e2e61ec0b16",
+      "bytes": 2443,
+      "lines": 47
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_CORRELATION_FRESH_REVIEW.md",
+      "sha256": "2c218e91f763fbf5c9e087b39a9a9a81caba757bf0eff4b4c18cc0ef948cd2d9",
+      "bytes": 15811,
+      "lines": 128
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_CORRELATION_ROOT_PROBE.md",
+      "sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19",
+      "bytes": 16411,
+      "lines": 335
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "sha256": "0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498",
+      "bytes": 20535,
+      "lines": 301
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_POISSON_LAW_FRESH_REVIEW.md",
+      "sha256": "39a689492e3710536a4ad7707887fb81124485ba268666cbedaef0868dff7fd0",
+      "bytes": 26386,
+      "lines": 244
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/KINETIC_POISSON_PICTURE_V2_CONFIRMATION.md",
+      "sha256": "c2aa65ec0dcb1150e28c9a17afd0b48e14a458083503d558f9df5069d3b8b8ae",
+      "bytes": 8025,
+      "lines": 73
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_AUTHOR_PRECISION.diff",
+      "sha256": "b1b6544a43e93459e54969800f7c07225acb9ff20cf860e7f6c6679be60427fe",
+      "bytes": 853,
+      "lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_FRESH_REVIEW.md",
+      "sha256": "63bbc78529748758531d7b36d8f8ec52ed85fffd226907d894735eeb4991bfd1",
+      "bytes": 15252,
+      "lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_FRESH_ROOT_VERIFICATION.json",
+      "sha256": "6a771ce17bbc5eb44f59a85c6a8cf6373d79c7c1b1ff7b7d283a531b45cbd918",
+      "bytes": 3950,
+      "lines": 66
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_ROOT_ACCEPTANCE.json",
+      "sha256": "d73401de7f2bbdd9a1dc6e07a84fe5d2586b2467d81bc40d38fc37164193528b",
+      "bytes": 2535,
+      "lines": 29
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_ROOT_PLAN.md",
+      "sha256": "c29e889f7d45e67ab7f4dd05a78f9ddfcbadcac9624d986735a525608fdc6dc1",
+      "bytes": 2877,
+      "lines": 43
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_ROOT_PLAN_SEAL.json",
+      "sha256": "22641ffdd54b4b4406969c7a26bebfd9b5a29fbf063014c698bc11b30c0d8a16",
+      "bytes": 345,
+      "lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+      "bytes": 22597,
+      "lines": 464
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MODULATED_KINETIC_LAW_ROOT_SEAL.json",
+      "sha256": "6bf8c39eeeab64f4610329b89e5f58e8d29fb8de744e8dccd1a76448f0a4c170",
+      "bytes": 7845,
+      "lines": 125
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+      "sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1",
+      "bytes": 27016,
+      "lines": 534
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/WEAK_DRIVE_KINETIC_PICTURE_V2.diff",
+      "sha256": "0e38bc3ccd32186e75db5d3f09a30388db9cb46c011f233ae141c1fd204a46ae",
+      "bytes": 2717,
+      "lines": 60
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/WEAK_DRIVE_KINETIC_PICTURE_V2_REPAIR.json",
+      "sha256": "902f21d5e6d800c88f40f5d07c46c6a62c0f988de22c278aa35d1de93696c43f",
+      "bytes": 1489,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT.md",
+      "sha256": "ba52feda6f44d4651f9aff465f7e3f3e3ede5943f647f87b7a429466393c6f67",
+      "bytes": 40102,
+      "lines": 847
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "bytes": 40634,
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/ANALYTIC_EVIDENCE.md",
+      "sha256": "ca02f29fe50826129d5999eeb73a48e6401db98fe6a1db7b1e178711a9df8079",
+      "bytes": 16638,
+      "lines": 133
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/CHECKPOINT.md",
+      "sha256": "81a009e6454194c9d2c200667c6091b490d55ac825b7bccb09a8ebbef3e76e05",
+      "bytes": 2011,
+      "lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/FINAL_FREEZE.json",
+      "sha256": "7d077850d6a8d9edbdaf7bcdbad92107f12d7947b27b657f73195696158f2113",
+      "bytes": 5611,
+      "lines": 111
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/PLAN.md",
+      "sha256": "8e259f68ddadf738a9ed70c0e45bcb689dc867021f7ad30fee586f7ccc09d392",
+      "bytes": 4632,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/PLAN_FREEZE.json",
+      "sha256": "71d0bb07028c8af23143a5973b2ad8f4f39ebe4cc8e6ca9c1dcd6c18d97ae71e",
+      "bytes": 284,
+      "lines": 5
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/PRIOR_COVERAGE.json",
+      "sha256": "526f442d6df264c5b02424835735f90513e5227a6cfce90cd9c692c782919fa1",
+      "bytes": 435,
+      "lines": 5
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/READ_COVERAGE.json",
+      "sha256": "04552fe2396b9ff394c131f8198ec3f672ba8c6a90d671d86b8a8796655abf69",
+      "bytes": 9011,
+      "lines": 160
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/SELF_READ.json",
+      "sha256": "0ed542a3228607b3762f6f1c5c8295fc958a1ebd6620fffcbb2f23d54d87f08a",
+      "bytes": 2565,
+      "lines": 66
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/SOURCE_MANIFEST.json",
+      "sha256": "693976789006e300d6159398972dcde8f7e122f009f18e4327a5a4a37e7f1946",
+      "bytes": 1082,
+      "lines": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/SOURCE_REFRESH.json",
+      "sha256": "22710f0af4cbfb084da0b15a959f150e750f09f157dd7489014bd805b8eb4fba",
+      "bytes": 4695,
+      "lines": 97
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/review_snapshot.md",
+      "sha256": "750f15023c5e8b7ae62ca84e0d9a677c70dfb3782befd0042cba8b697e030942",
+      "bytes": 15807,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/sources/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "bytes": 22058,
+      "lines": 470
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/sources/GENERAL_KINETIC_LAW_ROOT_SEAL.json",
+      "sha256": "b658ae7c4ecc76d40e1ed9abe7567a06d36e0c5053d4c9c09b0802bd6f5a0eef",
+      "bytes": 7813,
+      "lines": 124
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/general_kinetic_law_fresh_review/sources/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "sha256": "0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498",
+      "bytes": 20535,
+      "lines": 301
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/ANALYTIC_EVIDENCE.md",
+      "sha256": "5a93e8eff77a34fae5dc54debe43c85b923ef25e447c3a486e0f65f4f8c8c8e4",
+      "bytes": 14506,
+      "lines": 112
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/CHECKPOINT.md",
+      "sha256": "c2babe48fb44edb295948ea88f49aa5dc3094f947e31ef745324ae820226cb6a",
+      "bytes": 2034,
+      "lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/FINAL_FREEZE.json",
+      "sha256": "0b6c2435be2112a196bcc64f3736ef3356710cfeb7253062445218e539ef4381",
+      "bytes": 10094,
+      "lines": 193
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/PLAN.md",
+      "sha256": "c7467f0e5d70e764c02e68f7b0d15d7a0b7d183716df0d7df9838a21a3f5cba3",
+      "bytes": 3830,
+      "lines": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/PLAN_FREEZE.json",
+      "sha256": "6bf90945b4cfa48fc656822e208ae4ebe304803d924b0d212671d98b327a75a8",
+      "bytes": 249,
+      "lines": 5
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/READ_COVERAGE.json",
+      "sha256": "fa94d5404c32b6c71fbbf2fe0704b75cf4b2fc80a52514532ca94f80957bf28a",
+      "bytes": 2620,
+      "lines": 72
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/SELF_READ.json",
+      "sha256": "2fc825965d0303de2b244d3dac2c704d1e2c37be92b9433fc47a7f9d809fd0fe",
+      "bytes": 926,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/SOURCE_MANIFEST.json",
+      "sha256": "5b0699a94d06fdda853e52b39450e65aa497d06e80f210d9061bc3899fe4a473",
+      "bytes": 1908,
+      "lines": 33
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/SOURCE_REFRESH.json",
+      "sha256": "9065c89665f2de14f2229c4b3847a534d3ae4bf48c59ba98e0bba92c696452ee",
+      "bytes": 1671,
+      "lines": 35
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/governance_manifest.json",
+      "sha256": "6ce2f66b5c660a0137665a3f597507394e70706861f10d006b56d52a4e6cefbd",
+      "bytes": 5973,
+      "lines": 148
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/ai/AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "lines": 183
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/instructions/main/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419,
+      "lines": 239
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/review_snapshot.md",
+      "sha256": "2c218e91f763fbf5c9e087b39a9a9a81caba757bf0eff4b4c18cc0ef948cd2d9",
+      "bytes": 15811,
+      "lines": 128
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/sources/KINETIC_CORRELATION_ROOT_PROBE.md",
+      "sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19",
+      "bytes": 16411,
+      "lines": 335
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/sources/KINETIC_CORRELATION_ROOT_SEAL.json",
+      "sha256": "ba209bcec3d7138e0e5667d2bcdd89abe0c9187324f551daa17d4b56bd54df44",
+      "bytes": 5642,
+      "lines": 92
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/sources/KINETIC_POISSON_LAW_FRESH_REVIEW.md",
+      "sha256": "39a689492e3710536a4ad7707887fb81124485ba268666cbedaef0868dff7fd0",
+      "bytes": 26386,
+      "lines": 244
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/sources/KINETIC_POISSON_PICTURE_V2_CONFIRMATION.md",
+      "sha256": "c2aa65ec0dcb1150e28c9a17afd0b48e14a458083503d558f9df5069d3b8b8ae",
+      "bytes": 8025,
+      "lines": 73
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_correlation_fresh_review/sources/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "bytes": 40634,
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/ANALYTIC_ROUTE_SEAL.json",
+      "sha256": "c88198e8f493b312c0f2c0c4bb09c6b2fe54a52f4f01c66d93881597bdfe2878",
+      "bytes": 557,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/CURRENT_CHECKPOINT.md",
+      "sha256": "d19a79cb97199d9ab4df34e03d627fcb969d15cf9c27e82441577bcb633c7c26",
+      "bytes": 926,
+      "lines": 3
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/FINAL_FREEZE.json",
+      "sha256": "91b52e0736eed466f97ab0103588d6e49719e6f4f6ea46a1cce718ef1bbfe70a",
+      "bytes": 5380,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/SEALED_ANALYTIC_ROUTE.md",
+      "sha256": "55ce027955d0e95beb42014bec0169fa2afd97058717917332b20281f7a6debe",
+      "bytes": 4944,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/execution_receipt.json",
+      "sha256": "c0f433a2b68517adae3929cd56d354de0f9da7a731a784e64c142da1994a08eb",
+      "bytes": 1065,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/final_source_refresh.json",
+      "sha256": "467fc3fdb898d426608a957e3dbd3b9875e2adbfb13d4480138ad7bd892a2252",
+      "bytes": 1262,
+      "lines": 30
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/finite_car_check.py",
+      "sha256": "990e2862c7c6d4867d127c740387a47cacc61e7d34dd5da652e87a80315b0799",
+      "bytes": 8512,
+      "lines": 223
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/finite_car_results.json",
+      "sha256": "05aa46d5699f2aa516f83a330019fa71386e5e26c874e50926cc76840e56bab1",
+      "bytes": 3024,
+      "lines": 120
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/finite_car_stdout.json",
+      "sha256": "05aa46d5699f2aa516f83a330019fa71386e5e26c874e50926cc76840e56bab1",
+      "bytes": 3024,
+      "lines": 120
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/freeze_history/pre_release_freeze.json",
+      "sha256": "c70bff5be604ac3b18608317dfe97467f21df8bf8285846266d0c65cee5f97d9",
+      "bytes": 4896,
+      "lines": 121
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/freeze_history/pre_release_read_coverage.json",
+      "sha256": "ff948157cffafd4565782da436cbe42bd52faf2b86c300e3007140cc55a6285d",
+      "bytes": 1764,
+      "lines": 50
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/frozen_review.md",
+      "sha256": "39a689492e3710536a4ad7707887fb81124485ba268666cbedaef0868dff7fd0",
+      "bytes": 26386,
+      "lines": 244
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instruction_manifest.json",
+      "sha256": "a507cd3476c3e381701e698bae67128d3168e947f76e5d05ac9917ef99d53c1b",
+      "bytes": 3649,
+      "lines": 58
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/3a4b2c66a1ead7a1c48b4359627e968f681e3c39/AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "lines": 183
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/instructions/516cb69d8487ff04f8a48e065d3dcbe71d7dd237/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419,
+      "lines": 239
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/read_coverage.json",
+      "sha256": "8c8cbe20f81349542d196bc523db9fc52f8762e721c95dadf611d11efbc04037",
+      "bytes": 1976,
+      "lines": 51
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/source_FINAL_FREEZE.json",
+      "sha256": "4cb5929d7dcebe436889d3053692e8f57b0290f55b360e55914c0814795d22d8",
+      "bytes": 9643,
+      "lines": 230
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_law_fresh_review/source_snapshot.md",
+      "sha256": "ba52feda6f44d4651f9aff465f7e3f3e3ede5943f647f87b7a429466393c6f67",
+      "bytes": 40102,
+      "lines": 847
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/CURRENT_CHECKPOINT.md",
+      "sha256": "e4e7acf45979838f356c04b7ec3095bb7b74e57a755db4c56726686e2186153a",
+      "bytes": 738,
+      "lines": 3
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/FINAL_FREEZE.json",
+      "sha256": "c01f1feebf3e61de4593a74f076653b92d6b17b8a4b940f66c0ffc09fb3b4795",
+      "bytes": 1962,
+      "lines": 51
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/frozen_confirmation.md",
+      "sha256": "c2aa65ec0dcb1150e28c9a17afd0b48e14a458083503d558f9df5069d3b8b8ae",
+      "bytes": 8025,
+      "lines": 73
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/read_coverage.json",
+      "sha256": "33718c87bccb71041d1800e5137c2ed0eb6b0b13a7365258a63df15c2e51236b",
+      "bytes": 896,
+      "lines": 28
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/repair.diff",
+      "sha256": "0e38bc3ccd32186e75db5d3f09a30388db9cb46c011f233ae141c1fd204a46ae",
+      "bytes": 2717,
+      "lines": 60
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/repair_manifest.json",
+      "sha256": "902f21d5e6d800c88f40f5d07c46c6a62c0f988de22c278aa35d1de93696c43f",
+      "bytes": 1489,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/source_scope_check.json",
+      "sha256": "8b68b83cb4d809b03ab890cd7883b7db9af22ecf3c557b5ef1df8d6683259ef0",
+      "bytes": 2230,
+      "lines": 59
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/kinetic_poisson_picture_v2_confirmation/source_v2.md",
+      "sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "bytes": 40634,
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/ANALYTIC_EVIDENCE.md",
+      "sha256": "51d938226022b0cf102f4888903fd34cb7766a823a605bafbdddc43ce79c47f0",
+      "bytes": 17779,
+      "lines": 113
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/CHECKPOINT.md",
+      "sha256": "fb26601111ee17fb0a859e4f54cc30c58a1514da54127fc6bda61cfabc36fca5",
+      "bytes": 1832,
+      "lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/FINAL_FREEZE.json",
+      "sha256": "ffb6c644b70d9c9d23950d18157f5d6fd22d1a87f5fbf9dc5d4ee441d4ed5d8f",
+      "bytes": 5416,
+      "lines": 106
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/PLAN.md",
+      "sha256": "7218e6147b02748df11a38d7d87320a4766a83e8d2bf9d8cb068fb3f23804552",
+      "bytes": 4933,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/PLAN_FREEZE.json",
+      "sha256": "32ef87bbc88eb684e7be08250ca9c0462039688b9a4e13a37fb15f771aa6ec16",
+      "bytes": 345,
+      "lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/PRIOR_COVERAGE.json",
+      "sha256": "18413835314fde6b6238d59a9c8d4601ef3efdc1aadd5204dc1a77bac8370b92",
+      "bytes": 15059,
+      "lines": 284
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/READ_COVERAGE.json",
+      "sha256": "c5827f56924217b66bb50497d63af0c6da0cdaeb58f27f81f4661ab0cad69cb3",
+      "bytes": 1441,
+      "lines": 47
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/SELF_READ.json",
+      "sha256": "6bbadb246c5237c07aa65a5cdb5bd12c18afdb41b25ff71232a6d243bdde7a3c",
+      "bytes": 2620,
+      "lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/SOURCE_MANIFEST.json",
+      "sha256": "dd56520304f1dc5c791bd9b945e8ddc0f3daeee1260d650e5e1934b8cfb8a48a",
+      "bytes": 1539,
+      "lines": 29
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/SOURCE_REFRESH.json",
+      "sha256": "0425eec26273c83b10d8a0f5b630d1170b47fec69f60208b1474957186602559",
+      "bytes": 24073,
+      "lines": 469
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/review_snapshot.md",
+      "sha256": "63bbc78529748758531d7b36d8f8ec52ed85fffd226907d894735eeb4991bfd1",
+      "bytes": 15252,
+      "lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/sources/GENERAL_KINETIC_LAW_ROOT_ACCEPTANCE.json",
+      "sha256": "a55573418998e6b496f985f3066835326ea8e74ef1fbb27c54a42bbc37ce422e",
+      "bytes": 2574,
+      "lines": 28
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/sources/MODULATED_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+      "bytes": 22597,
+      "lines": 464
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_fresh_review/sources/MODULATED_KINETIC_LAW_ROOT_SEAL.json",
+      "sha256": "6bf8c39eeeab64f4610329b89e5f58e8d29fb8de744e8dccd1a76448f0a4c170",
+      "bytes": 7845,
+      "lines": 125
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/MODULATED_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+      "bytes": 22597,
+      "lines": 464
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/GENERAL_KINETIC_LAW_FRESH_REVIEW.md",
+      "sha256": "750f15023c5e8b7ae62ca84e0d9a677c70dfb3782befd0042cba8b697e030942",
+      "bytes": 15807,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/GENERAL_KINETIC_LAW_ROOT_ACCEPTANCE.json",
+      "sha256": "a55573418998e6b496f985f3066835326ea8e74ef1fbb27c54a42bbc37ce422e",
+      "bytes": 2574,
+      "lines": 28
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/GENERAL_KINETIC_LAW_ROOT_PROBE.md",
+      "sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b",
+      "bytes": 22058,
+      "lines": 470
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/GENERAL_KINETIC_LAW_ROOT_SEAL.json",
+      "sha256": "b658ae7c4ecc76d40e1ed9abe7567a06d36e0c5053d4c9c09b0802bd6f5a0eef",
+      "bytes": 7813,
+      "lines": 124
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/GENERAL_KINETIC_MEAN_FRESH_REVIEW.md",
+      "sha256": "a20a5d24574d9564de355c96d5e4d6a2ea3dc579c3d9ff0027ef1cec1f1e70bd",
+      "bytes": 18539,
+      "lines": 164
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/GENERAL_KINETIC_MEAN_ROOT_ACCEPTANCE.json",
+      "sha256": "c390310ca7db4b912df349d24b95187659575e067dab175806399e2e61ec0b16",
+      "bytes": 2443,
+      "lines": 47
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/KINETIC_CORRELATION_FRESH_REVIEW.md",
+      "sha256": "2c218e91f763fbf5c9e087b39a9a9a81caba757bf0eff4b4c18cc0ef948cd2d9",
+      "bytes": 15811,
+      "lines": 128
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/KINETIC_CORRELATION_ROOT_PROBE.md",
+      "sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19",
+      "bytes": 16411,
+      "lines": 335
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/KINETIC_MEAN_RELAXED_CONTROLS_DERIVATION.md",
+      "sha256": "0991b928e681892c5c3d3d514cd781c8fd0bf779f4cca07a2d525dd69bad4498",
+      "bytes": 20535,
+      "lines": 301
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/KINETIC_POISSON_LAW_FRESH_REVIEW.md",
+      "sha256": "39a689492e3710536a4ad7707887fb81124485ba268666cbedaef0868dff7fd0",
+      "bytes": 26386,
+      "lines": 244
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/KINETIC_POISSON_PICTURE_V2_CONFIRMATION.md",
+      "sha256": "c2aa65ec0dcb1150e28c9a17afd0b48e14a458083503d558f9df5069d3b8b8ae",
+      "bytes": 8025,
+      "lines": 73
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/MODULATED_KINETIC_AUTHOR_PRECISION.diff",
+      "sha256": "b1b6544a43e93459e54969800f7c07225acb9ff20cf860e7f6c6679be60427fe",
+      "bytes": 853,
+      "lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/MODULATED_KINETIC_LAW_ROOT_PLAN.md",
+      "sha256": "c29e889f7d45e67ab7f4dd05a78f9ddfcbadcac9624d986735a525608fdc6dc1",
+      "bytes": 2877,
+      "lines": 43
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/MODULATED_KINETIC_LAW_ROOT_PLAN_SEAL.json",
+      "sha256": "22641ffdd54b4b4406969c7a26bebfd9b5a29fbf063014c698bc11b30c0d8a16",
+      "bytes": 345,
+      "lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_root_probe/sources/WEAK_DRIVE_KINETIC_RESPONSE_INDEPENDENT_V2.md",
+      "sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b",
+      "bytes": 40634,
+      "lines": 859
+    }
+  ],
+  "live_source_count": 135,
+  "zero_scientific_predicates": true,
+  "scope": "Exact source identity, declared closure and reconstruction; review of new wrappers separately recorded."
+}

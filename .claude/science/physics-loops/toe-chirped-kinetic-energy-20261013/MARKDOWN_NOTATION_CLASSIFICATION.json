@@ -1,0 +1,16 @@
+{
+  "broad_formula_exclusion": false,
+  "exclusions": [
+    {
+      "canonical_line": 383,
+      "canonical_source_sha256": "1a25e8eb4e4586d3bcba2073f31145d3bf2dcc7cb94cc7eee04b9112c7e597f6",
+      "classification": "The literal factor 1_[0,t](s) is the indicator of a time interval in the unchanged mathematical core, not a Markdown link. Only the exact matching context is excluded from link scanning; the source byte remains unchanged.",
+      "context": "For each alpha,sigma, apply temporal Plancherel to\n1_[0,t](s) q0(t-s)A_h(s)exp(i sigma Phi_h(s)-i alpha s).\nIts squared L2 norm is at most A_star^2 log(1+t). The transform may be\n",
+      "exact_line": "1_[0,t](s) q0(t-s)A_h(s)exp(i sigma Phi_h(s)-i alpha s).\n",
+      "note": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note_sha256": "b0df91a85971695996ac32233c112dbe6718223ad733d1a28424666c9bde3874",
+      "raw_match": "](s)"
+    }
+  ],
+  "source_edits": 0
+}

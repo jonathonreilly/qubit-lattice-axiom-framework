@@ -1,0 +1,24 @@
+{
+  "programs": [
+    {
+      "archive": "repair_programs/REPAIR_SOURCE.py.gz",
+      "bytes": 7628,
+      "lines": 87,
+      "sha256": "bb30ccffacb03f4366698162dd9fc785c89e5ea360e2f802c955b30bf83309de",
+      "source": "REPAIR_SOURCE.py",
+      "stored_bytes": 3195,
+      "stored_sha256": "1d0f71399a1890406a9fa13bb14c0324a47e8c0061ee0378f018dc3a441713fb"
+    },
+    {
+      "archive": "repair_programs/CHECK_V2_REPAIR.py.gz",
+      "bytes": 3021,
+      "lines": 32,
+      "sha256": "ef0ae0120f72c85c4f336a3e762a0228aa33f35fcb7f98159bac0982f5ff9bab",
+      "source": "CHECK_V2_REPAIR.py",
+      "stored_bytes": 1565,
+      "stored_sha256": "0b2d384c5f0f73d37d37a2107e18868c7c469e3fb0d408f7853b0d9dca01e7c3"
+    }
+  ],
+  "scientific_predicates": 0,
+  "scope": "Source bookkeeping only, never imported by primary identity runner."
+}

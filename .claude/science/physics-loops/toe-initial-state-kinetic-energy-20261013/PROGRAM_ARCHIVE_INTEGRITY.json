@@ -1,0 +1,125 @@
+{
+  "files": [
+    {
+      "archive_path": "program_sources/ADAPT_PROGRAMS.py.gz",
+      "bytes": 11564,
+      "sha256": "0169047e7b2a6f61a64fda290e047c6bf45e7b856b526de97f06969b0b0c1253",
+      "source_path": "ADAPT_PROGRAMS.py",
+      "stored_bytes": 4148,
+      "stored_sha256": "364cfa3c40955651e6487eabdf0bf124bb31ae3f94ced90dc01227be179e161e"
+    },
+    {
+      "archive_path": "program_sources/BUILD_SOURCE_ONLY.py.gz",
+      "bytes": 48745,
+      "sha256": "7de5d5a5ecf4d5eb1efdc41315072d3fb1ca3b67843f2d2cedeefc6a03e8d883",
+      "source_path": "BUILD_SOURCE_ONLY.py",
+      "stored_bytes": 17026,
+      "stored_sha256": "1591911742486ebd2d9e950f8ef9e92527a7370fd35ba22d19b4210a2122e228"
+    },
+    {
+      "archive_path": "program_sources/CHECK_PREPARATION_SOURCES.py.gz",
+      "bytes": 12588,
+      "sha256": "380e9bdce4fc2590d7c2988652e33be692631d18f8ba44494fcda49d761aef51",
+      "source_path": "CHECK_PREPARATION_SOURCES.py",
+      "stored_bytes": 4566,
+      "stored_sha256": "f01d927e04e23e133132209cd889f900fc48c0217dd3d99653f74579e8bdfdc9"
+    },
+    {
+      "archive_path": "program_sources/COMBINED_ROOT_ACCEPTANCE.template.json.gz",
+      "bytes": 621,
+      "sha256": "6768fab182e5f9e1cdedbb990e6e2a4ec85c6e9eaa85f618d38ddbb0785a751e",
+      "source_path": "COMBINED_ROOT_ACCEPTANCE.template.json",
+      "stored_bytes": 352,
+      "stored_sha256": "176c9acf562a44720c74e9062d4157568f4ed3572c46109a3be5636d500f7a5f"
+    },
+    {
+      "archive_path": "program_sources/FINALIZE_SOURCE_ONLY.py.gz",
+      "bytes": 15687,
+      "sha256": "57654e40d7586f4a2d328c506459788a7f06a49b594c811aaee8e33d71705755",
+      "source_path": "FINALIZE_SOURCE_ONLY.py",
+      "stored_bytes": 6161,
+      "stored_sha256": "3af9c57f4c89dcada20a5bc0dd17d25603c0b1b185b69e79005b1041df77bb78"
+    },
+    {
+      "archive_path": "program_sources/IDENTITY_TOOL.template.py.gz",
+      "bytes": 11991,
+      "sha256": "81cd741addeb057d0fe6ee1dee0594925092fbfa588eb06388fd2fc2d4940817",
+      "source_path": "IDENTITY_TOOL.template.py",
+      "stored_bytes": 4134,
+      "stored_sha256": "d61943cf41e7a93523625cc862c98314905ac40a80bbfb6ed4c69383b0704a1d"
+    },
+    {
+      "archive_path": "program_sources/ROOT_ACCEPTANCE.template.json.gz",
+      "bytes": 2347,
+      "sha256": "83ebde92c5c1def1d75760ee576909f2d401d57d5c4d3f2fcb9a09e31827e7e6",
+      "source_path": "ROOT_ACCEPTANCE.template.json",
+      "stored_bytes": 1121,
+      "stored_sha256": "f4cc4e09560ff919e6faba2bd82d833be5caf53bc7f52893abca55ff0250ec38"
+    },
+    {
+      "archive_path": "program_sources/prepare_verify_initial_state_kinetic_energy.py.gz",
+      "bytes": 48187,
+      "sha256": "1213c7a2081ab7f07bbcff65c2b36ccd2c6de14d0933af690fe85ce06605b297",
+      "source_path": "prepare_verify_initial_state_kinetic_energy.py",
+      "stored_bytes": 14600,
+      "stored_sha256": "e7712aab2255d7a57e969f39ca7cd938c06e46ef5f95fe890820a368adb6d63f"
+    },
+    {
+      "archive_path": "program_sources/procedural_template__CHECK_PREPARATION_SOURCES.py.gz",
+      "bytes": 10867,
+      "sha256": "ef28bc5d2d917e233c7462bd5199d05fe9b658d1fe6752692d19f9d232caa522",
+      "source_path": "procedural_template/CHECK_PREPARATION_SOURCES.py",
+      "stored_bytes": 4116,
+      "stored_sha256": "89bae4dc57af0e37953d3be347af483c8eb24824b000db5fc30aa77893152d6e"
+    },
+    {
+      "archive_path": "program_sources/procedural_template__COMBINED_ROOT_ACCEPTANCE.template.json.gz",
+      "bytes": 621,
+      "sha256": "68487be2a4b090462e12c255f4b069c65ac191a19ec0d85050bc51360725fcf3",
+      "source_path": "procedural_template/COMBINED_ROOT_ACCEPTANCE.template.json",
+      "stored_bytes": 353,
+      "stored_sha256": "e6e913b3af574214d422d152d05553da8e0f43cd417a7ed39821beb91e8a9e80"
+    },
+    {
+      "archive_path": "program_sources/procedural_template__IDENTITY_TOOL.template.py.gz",
+      "bytes": 15330,
+      "sha256": "e2a10c73b8f06b022ceda6e79fe9fc3e86589449fe1cb452b833d37b232dce5d",
+      "source_path": "procedural_template/IDENTITY_TOOL.template.py",
+      "stored_bytes": 4937,
+      "stored_sha256": "7ba3d6c0674dbcf8438531496d7789afa00c84df03545967481cd4b389322e32"
+    },
+    {
+      "archive_path": "program_sources/procedural_template__ROOT_ACCEPTANCE.template.json.gz",
+      "bytes": 2054,
+      "sha256": "0117363d2a3aa6d1c3efef67e544879273ea6c2d62cf3c39738300e03a31a821",
+      "source_path": "procedural_template/ROOT_ACCEPTANCE.template.json",
+      "stored_bytes": 974,
+      "stored_sha256": "32b3619d8d6f4428a1530b2f76534b6fb7fa98ed7ca2eb96eb7f59a64659e9da"
+    },
+    {
+      "archive_path": "program_sources/procedural_template__prepare_verify_modulated_kinetic_energy.py.gz",
+      "bytes": 50392,
+      "sha256": "99acf05a1e097c3ef0edb0f67881b0644a0dd6b7bb5506a96666129a95bf63ff",
+      "source_path": "procedural_template/prepare_verify_modulated_kinetic_energy.py",
+      "stored_bytes": 14952,
+      "stored_sha256": "f015ea20c9fcd311b4ff1281e716542b8bf142b19c7003a67bbec36a481f5fa2"
+    },
+    {
+      "archive_path": "program_sources/procedural_template__run_combined_validation.py.gz",
+      "bytes": 8700,
+      "sha256": "7745d5a5711bc1afbb0bbceba86e94f4e1ab3fd10d1593c9fb1efcbb5c3f4283",
+      "source_path": "procedural_template/run_combined_validation.py",
+      "stored_bytes": 3401,
+      "stored_sha256": "6204c4c599539ea621d203cdd505336953c1f80afdd4a2284e135c3111287373"
+    },
+    {
+      "archive_path": "program_sources/run_combined_validation.py.gz",
+      "bytes": 8705,
+      "sha256": "3ac30326baf9300084bc893ac89392e136331b68f42a7b4e01ebbaa23eee79ee",
+      "source_path": "run_combined_validation.py",
+      "stored_bytes": 3400,
+      "stored_sha256": "4442fc2ddd5a908755024d0ebbbcc607b1bf9df513d299868398b6faf9b47e2a"
+    }
+  ],
+  "scope": "Raw program/template bytes preserved; archived scripts are provenance and not executed by runner."
+}

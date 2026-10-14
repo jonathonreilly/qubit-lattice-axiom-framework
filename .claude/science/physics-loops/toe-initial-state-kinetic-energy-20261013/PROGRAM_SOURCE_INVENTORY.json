@@ -1,0 +1,83 @@
+{
+  "pairs": [
+    {
+      "archive_sha256": "35c161fd574db8dbfcd260f664de2dbcd69b4ecf77cf388e953a764f3b10dd70",
+      "context_lines": 3,
+      "diff": "program_diffs/prepare_verify.n3.diff",
+      "fromfile": "modulated_template/prepare_verify_modulated_kinetic_energy.py",
+      "payload_archive": "program_diffs/prepare_verify.n3.diff.gz",
+      "program": "prepare_verify_initial_state_kinetic_energy.py",
+      "program_sha256": "1213c7a2081ab7f07bbcff65c2b36ccd2c6de14d0933af690fe85ce06605b297",
+      "raw_diff_sha256": "19ebf18f5e54cdb3f1ee6045cc286c2f07b9378d833db5871d5d4b8f4fea75ef",
+      "template": "procedural_template/prepare_verify_modulated_kinetic_energy.py",
+      "template_sha256": "99acf05a1e097c3ef0edb0f67881b0644a0dd6b7bb5506a96666129a95bf63ff",
+      "tofile": "initial_state/prepare_verify_initial_state_kinetic_energy.py"
+    },
+    {
+      "archive_sha256": "47906bd256920db94f66de9c21ade99c7fdbe312bfb3d1646ad356485daf6587",
+      "context_lines": 3,
+      "diff": "program_diffs/identity.n3.diff",
+      "fromfile": "modulated_template/IDENTITY_TOOL.template.py",
+      "payload_archive": "program_diffs/identity.n3.diff.gz",
+      "program": "IDENTITY_TOOL.template.py",
+      "program_sha256": "81cd741addeb057d0fe6ee1dee0594925092fbfa588eb06388fd2fc2d4940817",
+      "raw_diff_sha256": "0ace542c2761808f067c8f0ff47c773c14e619752cff9378912f17949d3db9af",
+      "template": "procedural_template/IDENTITY_TOOL.template.py",
+      "template_sha256": "e2a10c73b8f06b022ceda6e79fe9fc3e86589449fe1cb452b833d37b232dce5d",
+      "tofile": "initial_state/IDENTITY_TOOL.template.py"
+    },
+    {
+      "archive_sha256": "4ea3baae449b352a2933e9f13b53b549ecc6b6188c2ce2f8be4e3ab66e618fd5",
+      "context_lines": 3,
+      "diff": "program_diffs/source_checker.n3.diff",
+      "fromfile": "modulated_template/CHECK_PREPARATION_SOURCES.py",
+      "payload_archive": "program_diffs/source_checker.n3.diff.gz",
+      "program": "CHECK_PREPARATION_SOURCES.py",
+      "program_sha256": "380e9bdce4fc2590d7c2988652e33be692631d18f8ba44494fcda49d761aef51",
+      "raw_diff_sha256": "766e765fa9132c4390e3d5d47a43ff3dcfcb61c86826f3362cea564af750361a",
+      "template": "procedural_template/CHECK_PREPARATION_SOURCES.py",
+      "template_sha256": "ef28bc5d2d917e233c7462bd5199d05fe9b658d1fe6752692d19f9d232caa522",
+      "tofile": "initial_state/CHECK_PREPARATION_SOURCES.py"
+    },
+    {
+      "archive_sha256": "531d68b6ae4e82b3f15544c95c6261881d12f10fc6afc6131112f35c3799ce11",
+      "context_lines": 3,
+      "diff": "program_diffs/combined.n3.diff",
+      "fromfile": "modulated_template/run_combined_validation.py",
+      "payload_archive": "program_diffs/combined.n3.diff.gz",
+      "program": "run_combined_validation.py",
+      "program_sha256": "3ac30326baf9300084bc893ac89392e136331b68f42a7b4e01ebbaa23eee79ee",
+      "raw_diff_sha256": "753bfe64f2385642a647eccaa5227cdabf2359fea971abdc88f567e70256fd4d",
+      "template": "procedural_template/run_combined_validation.py",
+      "template_sha256": "7745d5a5711bc1afbb0bbceba86e94f4e1ab3fd10d1593c9fb1efcbb5c3f4283",
+      "tofile": "initial_state/run_combined_validation.py"
+    },
+    {
+      "archive_sha256": "43237c562f0821723e7d87aaf159cabf1ac4d21d7e420a725a8b19d0e4972146",
+      "context_lines": 3,
+      "diff": "program_diffs/root_acceptance.n3.diff",
+      "fromfile": "modulated_template/ROOT_ACCEPTANCE.template.json",
+      "payload_archive": "program_diffs/root_acceptance.n3.diff.gz",
+      "program": "ROOT_ACCEPTANCE.template.json",
+      "program_sha256": "83ebde92c5c1def1d75760ee576909f2d401d57d5c4d3f2fcb9a09e31827e7e6",
+      "raw_diff_sha256": "51ae15e7ab8cb9acd6e30a1941581f810288b4190bef38f59d2dc29362d4d0b7",
+      "template": "procedural_template/ROOT_ACCEPTANCE.template.json",
+      "template_sha256": "0117363d2a3aa6d1c3efef67e544879273ea6c2d62cf3c39738300e03a31a821",
+      "tofile": "initial_state/ROOT_ACCEPTANCE.template.json"
+    },
+    {
+      "archive_sha256": "2cd158807e7f859477ca41bd530a1374f42ddd2dd80feabeba8e8faea78a4687",
+      "context_lines": 3,
+      "diff": "program_diffs/combined_acceptance.n3.diff",
+      "fromfile": "modulated_template/COMBINED_ROOT_ACCEPTANCE.template.json",
+      "payload_archive": "program_diffs/combined_acceptance.n3.diff.gz",
+      "program": "COMBINED_ROOT_ACCEPTANCE.template.json",
+      "program_sha256": "6768fab182e5f9e1cdedbb990e6e2a4ec85c6e9eaa85f618d38ddbb0785a751e",
+      "raw_diff_sha256": "e0f4aaf2d5a66873d6f57e240909c6f6abc462d80fc3d677da25b3dda586742d",
+      "template": "procedural_template/COMBINED_ROOT_ACCEPTANCE.template.json",
+      "template_sha256": "68487be2a4b090462e12c255f4b069c65ac191a19ec0d85050bc51360725fcf3",
+      "tofile": "initial_state/COMBINED_ROOT_ACCEPTANCE.template.json"
+    }
+  ],
+  "scope": "Paths denote frozen external preparation source files; exact originals and programs also archived below. No program executed by source archiving."
+}

@@ -1,0 +1,4 @@
+{
+  "exclusions": [],
+  "policy": "No broad formula exclusion; any observed notation false-positive needs an exact pinned classification before execution."
+}

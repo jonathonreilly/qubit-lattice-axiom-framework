@@ -1,0 +1,50 @@
+{
+  "broad_whitespace_exemptions": false,
+  "convention": "Complete LF-preserving n=3 unified diff bytes, literal labels, no timestamps, deterministic gzip mtime0",
+  "diffs": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/accepted_assembly_to_publication.diff.gz",
+      "diff_bytes": 8213,
+      "diff_lines": 141,
+      "diff_sha256": "33eded50b72f4e8c19fc4805e4ba48cf8380965ed7f6c92644b574b02bdf8995",
+      "diff_stored_sha256": "741dd7ea6226c71c2e43190ebf3cb31345b71fc7d9b9ccd1365863e4440ed7c1",
+      "fromfile": "accepted/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "stored_bytes": 3250,
+      "tofile": "docs/CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_prefix.diff.gz",
+      "diff_bytes": 3989,
+      "diff_lines": 74,
+      "diff_sha256": "bfa1874a7e59153cfc973da3030ff2f9bec24711c1fb59378d435e3e55c6ebf2",
+      "diff_stored_sha256": "0b002089b4c630cb6a344ea655db36a6cc86a9078f2f5f22d4d52a8571b594e9",
+      "fromfile": "accepted/note_prefix.md",
+      "stored_bytes": 1694,
+      "tofile": "publication/note_prefix.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/between_cores.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/between_cores.md",
+      "stored_bytes": 20,
+      "tofile": "publication/between_cores.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_suffix.diff.gz",
+      "diff_bytes": 4128,
+      "diff_lines": 64,
+      "diff_sha256": "70beba75e1f06f41f139ab09441ab809c40c648d4d1aa35ce7cf3923c20c5e76",
+      "diff_stored_sha256": "b23eacc87b21c3b99c9e1ab2ac3bb8db5accf526d0e5b5b3ff81f760da390f5d",
+      "fromfile": "accepted/note_suffix.md",
+      "stored_bytes": 1787,
+      "tofile": "publication/note_suffix.md"
+    }
+  ]
+}

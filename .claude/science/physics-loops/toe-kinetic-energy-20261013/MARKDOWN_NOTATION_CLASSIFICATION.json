@@ -1,0 +1,32 @@
+{
+  "broad_formula_exclusion": false,
+  "exclusions": [
+    {
+      "canonical_line": 483,
+      "classification": "Exact immutable mathematical factor, to be manually reviewed before freeze; no broad formula exemption",
+      "context": "    A_q=s_q,+ ||k|| M0.                                 (25)\n\nThe second bound uses the synthesis map on c(t)k[X-X0](t). On\neach finite time interval its energy-weighted Bochner integral is defined\nbecause the two channel vectors belong to every fixed E graph domain;\n",
+      "exact_line": "The second bound uses the synthesis map on c(t)k[X-X0](t). On\n",
+      "note": "docs/TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "](t)",
+      "source_sha256": "c9e8f391a8218f5859662114039bf64edd7a7b02de2ca285db2a1ddf04ddff9b"
+    },
+    {
+      "canonical_line": 843,
+      "classification": "Exact immutable mathematical factor, to be manually reviewed before freeze; no broad formula exemption",
+      "context": "A bounded continuum energy band is infinite rank.\n\nThe gap gives 1_[0,a0](H0)=P_Omega for0<a0<m. Weak energy-law convergence\ntherefore gives vacuum weight exp(-tau nu_omega). Since the global states\nare pure, their trace distance to vacuum tends to\n",
+      "exact_line": "The gap gives 1_[0,a0](H0)=P_Omega for0<a0<m. Weak energy-law convergence\n",
+      "note": "docs/GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "](H0)",
+      "source_sha256": "6bbcf624e47e4d91f2a6fbd8982698d788923bba63612f90d5930d04920ca49b"
+    },
+    {
+      "canonical_line": 311,
+      "classification": "Exact immutable mathematical factor, to be manually reviewed before freeze; no broad formula exemption",
+      "context": "\nThe free gap gives ker H0=span{Omega} and H0>=m(I-P_Omega). Thus for any\nenergy cutoff a0 with 0<a0<m, 1_[0,a0](H0)=P_Omega. In the positive-rate\ncase omega>2m>a0, the limiting probability law has no mass at a0. Applying\nweak convergence to (-infinity,a0] proves\n",
+      "exact_line": "energy cutoff a0 with 0<a0<m, 1_[0,a0](H0)=P_Omega. In the positive-rate\n",
+      "note": "docs/KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "](H0)",
+      "source_sha256": "40bebe4fa79afe383d50aae1941598f10007e79594464cfc7969c6cfd658dc19"
+    }
+  ]
+}

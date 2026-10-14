@@ -1,0 +1,4 @@
+{
+  "preserved_source_whitespace": [],
+  "raw_diff_policy": "All payload diffs are gzip archived with declared compressed and raw hashes. Literal space-only context markers are retained, never normalized or broadly skipped. Text payload has no trailing whitespace allowance."
+}

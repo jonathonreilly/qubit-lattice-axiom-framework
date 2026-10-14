@@ -1,0 +1,96 @@
+{
+  "additional_mathematical_body_edits": [],
+  "diff_convention": "difflib.diff_bytes(unified_diff), n=3, preserved LF endings, literal filename labels, no timestamps; gzip mtime=0",
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "accepted_candidate_sha256": "04bc6d0a558cd3be87e972be92915a6484583f1973e31b850a6386fe57f02e16",
+      "additional_mathematical_body_edits": [],
+      "context_lines": 3,
+      "diff": "diffs/modulated.publication.diff.gz",
+      "diff_sha256": "6081014e6971981a807e094e955c74a15208a84b76c6b7ac1ce523e5e0fdc42a",
+      "diff_stored_sha256": "00f1e7562cb6fb49a0517547d5dc5737f8a8fa054b618ae261757a0024bad83d",
+      "fromfile": "payload/docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "key": "modulated",
+      "note": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 7521,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 130,
+          "sha256": "c35d3272aa8b81fbc59caaf77a33b31adf30e4149ce5729c34b8415ecccd6b14",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/pieces/note_prefix.md",
+          "source_sha256": "210149d49b55ec31d7659ee2b98f5d3f2b35e99ea8419b0ea2882d6b3cd08f74",
+          "text": "---\ntitle: \"Kinetic energy marginals under bounded-variation amplitude modulation\"\nclaim_id: modulated_kinetic_energy_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nrunner: scripts/modulated_kinetic_identity_2026_10_13.py\nupstream_dependencies:\n  - general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13\n  - two_zero_kinetic_energy_bounded_theorem_note_2026-10-13\n  - kinetic_correlation_limits_bounded_theorem_note_2026-10-13\nassembly_status: publication_prepared_root_review_and_runtime_pending\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied massive free CAR vacuum, fixed compact smooth real spatial slots, fixed carrier above the pair threshold, uniformly bounded envelope amplitude and total variation, bounded kinetic windows, and explicit actual-cell embedding/calibration premises.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Exact conditional source accepted after an ordinary same-family analytic check; this assembly adds no scientific or retained verdict.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ndependency_resolution: exact_published_kinetic_parents_bound\nnext_trace_action: \"Root reviews this exact publication copy and prepared integration; combined-current-main validation and retained audit remain separate.\"\nsource_assembly: modulated_kinetic_law_source_assembly\n---\n\n# Kinetic energy marginals under bounded-variation amplitude modulation\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support. The exact 464-line source has ordinary\nanalytic acceptance under its stated premises. This source-only assembly\npreserves that source and its review evidence. It is not a publication,\nformal proof certificate, independent audit verdict or retained promotion.\n\n## Current scope\n\nFix the supplied massive free CAR model with m,v>0, two real compact smooth\nspatial slots f,g, a carrier omega>2m, and finite resources tau_star, A_star\nand V_star. For h=|lambda|>0, allow every 0<=T<=tau_star/h^2 and real BV\nenvelope A on [0,T] satisfying ||A||_infinity<=A_star and Var(A)<=V_star.\nThe envelope may depend on lambda and T. A fixed one-sided representative\nhandles jumps; changing isolated values has no dynamical effect.\n\nFor the drive lambda A(t)cos(omega t)V, write\nJ=lambda^2 integral_0^T A(t)^2 dt and nu_omega=(pi/2)r(omega), using the\nexact pair-density normalization in M17 below. The result controls the\nfree-energy characteristic function and mean uniformly over these fixed\nresources, with error O(sqrt(h log(2+h^-2))) for each fixed characteristic\ntest parameter. The comparison law is omega times Poisson(nu_omega J).\nIt also gives uniform W1 convergence to this parameter-dependent comparison\nfamily without a claimed W1 rate. When J converges, the laws converge to the\ncorresponding single limiting law; the stated zero-rate cases remain included.\n\nFor slow-time modulation A(t)=a(lambda^2 t), T=tau/lambda^2,\nJ=integral_0^tau a(s)^2 ds and the Poisson intensity is nu_omega J.\nThese are one-time marginal laws. No joint\nmulti-time law, independent increments, inhomogeneous Poisson process,\ntrajectory convergence or repeated-measurement theorem is asserted.\n\nThe body also supplies the weighted full-input remainder, one-particle\noperator estimate, finite-degree CAR bounds, necessary finite-mode rank\nbound, and the distinct CAR, compact-Fock and global-state conclusions.\nThe rank bound is necessary, not an optimal detector construction. A finite\nenergy band or continuum spatial region is not automatically finite rank.\n\nZero envelopes, sign reversals, BV jumps and zero pair rates remain allowed.\nNo positivity for all nonzero controls is imposed. The strict carrier gap,\nfixed positive mass, fixed spatial slots and fixed BV resources are material\npremises. High-variation families, threshold/massless limits, optimal rates\nand physical model selection remain outside the result.\n\n## Actual-cell premise boundary and dependency status\n\nThe actual-cell conclusion assumes the real energy embedding, common free\nenergy and vacuum, and all M23 estimates: control-norm error, commutator\nerror, uniform commutator bound, and the explicit one-particle-generator\nerror. For epsilon_a=O(a^(N+1)) at fixed N, epsilon_a=o(h^2) is a sufficient\njoint scale for the law, mean and W1 conclusion on bounded kinetic windows.\nThe weaker epsilon_a=o(h) suffices for the unweighted state/law comparison\nonly. The package constructs no new embedding, alias estimate or calibration.\n\nThe exact general470 and mean301 are bound to the published general compact-control\nnote; corrected859 is bound to the published two-zero note, and correlation335\nto the published correlation note. Their four exact core maps give three direct\nscientific parent nodes. These canonical notes are conditional-support, not retained.\nThe actual Git parent is regular PR 9516 at 0ce6e5ba7483d8ca14513b809009c7169c171a97. The [imports record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/c5eaa6bf752a0893c83c0509c7c349dab53bff14/.claude/science/physics-loops/toe-modulated-kinetic-energy-20261013/ASSUMPTIONS_AND_IMPORTS.md)\ndistinguishes these dependencies from review evidence and archived context.\nM23 remains an explicit supplied-hypothesis transfer statement; source exposure\nand Git ancestry do not create additional mathematical edges.\n\n## Review and historical wording\n\nThe root plan was sealed at 10:22:14 UTC and primary464 at 10:53:33 UTC on\n2026-10-13. The fresh review froze its plan before opening that new body and\nits complete report/evidence at 11:11:33 UTC. Root acceptance followed at\n11:14:22 UTC. The reviewer was already exposed to corrected859, correlation335,\ngeneral470 and their prior checks. Its distinct analytic BV calculations\nare a source-exposed same-family check at the inherited model and effort,\nnot blinded or model-diverse verification. No new numeric or formal run\nwas used for this extension. This later packaging task is source-exposed.\n\nThe earlier 847-line kinetic source contained a genuine mixed-picture field\nidentity, missed by an earlier root consistency check. Fresh review found\nit; the exact V2 correction and same-session confirmation closed it for V2.\nThe defective original, complete correction diff, review and root-miss\nreceipt remain archived. Historical pending wording in the proof and older\nreceipts remains unchanged; the current status is given by this wrapper\nand the exact acceptance record, not by rewriting history.\n\nThe Fourier convention in the secular argument is\nC_b(t)=integral b(e)exp(iet) de. Opposite correlation ordering reverses the\ntime argument; negative-phase correlation conventions cannot be substituted\nsilently into that argument. The full/interaction distinction is explicit\nin M1--M2 and inherited from corrected859.\n\n## Exact accepted scientific body begins\n\nThe complete original title through the marked end below is byte-identical\nto MODULATED_KINETIC_LAW_ROOT_PROBE.md, 464 lines, 22,597 bytes, SHA-256\n422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a.\nThe body's pending status and source-exposure account are historical.\n\n",
+          "wrapper_path": "wrappers/modulated.0.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 7521,
+          "bytes": 22597,
+          "first_line": 131,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 594,
+          "sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/sources/run/MODULATED_KINETIC_LAW_ROOT_PROBE.md",
+          "source_sha256": "422a92a8a24daa8fa240251ccae041fcca737af0335a486f33f3b20de0fb665a"
+        },
+        {
+          "byte_offset": 30118,
+          "bytes": 2102,
+          "first_line": 595,
+          "kind": "publication_wrapper",
+          "last_line": 624,
+          "sha256": "a0ea0082b0e49429d5f33f01801a38642d409ef52db1d2811c5af0ca713b6529",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/pieces/note_suffix.md",
+          "source_sha256": "c195fdca3eb9ff7ba7be9fd271d7e1d5ab6ed432fef54253c9efb130e2d904be",
+          "text": "\n## Exact accepted scientific body ends\n\nThe current ordinary acceptance is MODULATED_KINETIC_LAW_ROOT_ACCEPTANCE.json\nat SHA-256 d73401de7f2bbdd9a1dc6e07a84fe5d2586b2467d81bc40d38fc37164193528b.\nIts fresh review is the exact126 source at\n63bbc78529748758531d7b36d8f8ec52ed85fffd226907d894735eeb4991bfd1,\nwith the complete immediate14-file freeze and its container preserved.\n\nThe support packet contains raw source copies, selected immediate receipt\nclosures, exact piece maps and complete three-context-line source diffs.\nIts reconstruction helper checks bytes and declared membership only.\nHistorical numeric scripts/results are archived as provenance and were not\nexecuted or newly certified by this assembly. No recursive upstream audit\nis claimed. Source read coverage and its limits are recorded separately.\n\nThe source assembly remains immutable. Its root review required a publication-copy\ncorrection: the slow-time integral is J, while Poisson intensity is nu_omega J.\nThis copy makes that correction and binds actual canonical parents; complete\nn=3 wrapper and whole-note diffs preserve the original statement. The scientific\nbody remains unchanged. Root publication review and integration execution are\npending; no new PR, runner/cache outcome, pipeline or audit verdict is asserted.\n\nDirect canonical imports:\n- [general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13](GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [two_zero_kinetic_energy_bounded_theorem_note_2026-10-13](TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n- [kinetic_correlation_limits_bounded_theorem_note_2026-10-13](KINETIC_CORRELATION_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-13.md)\n\n\nReview-loop integration note: current main 82fdc12d51e3e47bf8ac1f74601c9600115942d6 plus this kinetic-energy batch supplies the reviewed live dependencies. Original proof bodies and archives are unchanged. Live parent hashes and consumed-core coordinates are refreshed, with original bindings preserved. Historical pending and review labels remain provenance, not audit authority.\n",
+          "wrapper_path": "wrappers/modulated.2.md"
+        }
+      ],
+      "published_bytes": 32220,
+      "published_lines": 624,
+      "published_sha256": "5ad1ae099eb19656aca65d6f1b7596259f8db25d9ad7999bd972aaf285edca4e",
+      "tofile": "docs/MODULATED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "required_wrapper_correction": {
+    "diff_sha256": "78699bae8aec2227d2a4c86c5729171d192860a47f054ac2208ca7dbf4c3c531",
+    "new_exact": "For slow-time modulation A(t)=a(lambda^2 t), T=tau/lambda^2,\nJ=integral_0^tau a(s)^2 ds and the Poisson intensity is nu_omega J.\nThese are one-time marginal laws.",
+    "old_exact": "For slow-time modulation A(t)=a(lambda^2 t), T=tau/lambda^2, the intensity\nis integral_0^tau a(s)^2 ds. These are one-time marginal laws.",
+    "scope": "Required new-wrapper normalization correction only; exact accepted core unchanged",
+    "standalone_diff": "diffs/required_normalization_correction.diff.gz",
+    "original_standalone_diff": "diffs/required_normalization_correction.diff",
+    "storage": "lossless gzip; literal unified-diff context spaces preserved"
+  },
+  "source_freeze_sha256": "c32a537caaa2be0dd08cb45c3a1f9b07f0e1956db116e73b78b214f2ee330b92",
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/modulated.wrapper0.diff.gz",
+      "diff_sha256": "6524ff764cea1e2410af7710e4c815c68fcd4569742311272cb7f807cf3c93b8",
+      "diff_stored_sha256": "7c93ab426b7db95b78a1652eb251e1da4f14ed9f2967f620dff524ddce02d9b1",
+      "fromfile": "accepted/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/pieces/note_prefix.md",
+      "publication": "wrappers/modulated.0.md",
+      "publication_sha256": "c35d3272aa8b81fbc59caaf77a33b31adf30e4149ce5729c34b8415ecccd6b14",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/pieces/note_prefix.md",
+      "source_sha256": "210149d49b55ec31d7659ee2b98f5d3f2b35e99ea8419b0ea2882d6b3cd08f74",
+      "tofile": "publication/wrappers/modulated.0.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/modulated.wrapper2.diff.gz",
+      "diff_sha256": "8c2e28ec825c81610b4020462f8c945e269e4b2c3d09f43067a0e120f29757a2",
+      "diff_stored_sha256": "03b65fffafc230da3dc029f9c25008c9ed22af33f7391af8603bc61b05170f80",
+      "fromfile": "accepted/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/pieces/note_suffix.md",
+      "publication": "wrappers/modulated.2.md",
+      "publication_sha256": "a0ea0082b0e49429d5f33f01801a38642d409ef52db1d2811c5af0ca713b6529",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/modulated_kinetic_law_source_assembly/payload/.claude/science/physics-loops/toe-modulated-kinetic-law-20261013/pieces/note_suffix.md",
+      "source_sha256": "c195fdca3eb9ff7ba7be9fd271d7e1d5ab6ed432fef54253c9efb130e2d904be",
+      "tofile": "publication/wrappers/modulated.2.md"
+    }
+  ]
+}

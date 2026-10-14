@@ -1,6 +1,6 @@
 {
- "edge_count": 15903,
- "node_count": 7055,
+ "edge_count": 15928,
+ "node_count": 7062,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3276,6 +3276,10 @@
   },
   "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08": {
    "deps_hash": "a4bb0c06fb4f",
+   "out_degree": 4
+  },
+  "chirped_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "87bc9b727d16",
    "out_degree": 4
   },
   "chronology_protection_note_2026-05-17": {
@@ -6554,6 +6558,10 @@
    "deps_hash": "dcddb9da6de9",
    "out_degree": 4
   },
+  "finite_initial_energy_kinetic_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "87bc9b727d16",
+   "out_degree": 4
+  },
   "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13": {
    "deps_hash": "9c83fb5042d9",
    "out_degree": 3
@@ -8133,6 +8141,10 @@
   "gellmann_completeness_theorem_note_2026-05-02": {
    "deps_hash": "5e93d700a831",
    "out_degree": 1
+  },
+  "general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "7914534acd19",
+   "out_degree": 4
   },
   "general_microscopic_birth_energy_and_cube_power_bounded_theorem_note_2026-09-24": {
    "deps_hash": "e66572aa6763",
@@ -12486,6 +12498,10 @@
    "deps_hash": "9e6d73d5bd5d",
    "out_degree": 3
   },
+  "kinetic_correlation_limits_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "42b738f143d1",
+   "out_degree": 3
+  },
   "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": {
    "deps_hash": "b4d9febcd879",
    "out_degree": 5
@@ -14650,6 +14666,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "modulated_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "a98c9250ef31",
+   "out_degree": 3
+  },
   "modulus_three_complement_mixture_bounded_theorem_note_2026-10-10": {
    "deps_hash": "9ac295ff0640",
    "out_degree": 4
@@ -15952,6 +15972,10 @@
   },
   "one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_open_gate_note_2026-06-17": {
    "deps_hash": "6b456ae72212",
+   "out_degree": 3
+  },
+  "one_zero_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "42b738f143d1",
    "out_degree": 3
   },
   "only_81_of_the_support_tables_are_distinguishable_by_complete_records_formation_histories_distinguish_nearly_all_bounded_theorem_note_2026-09-03": {
@@ -21301,6 +21325,10 @@
   "two_site_swap_corner_hosts_m3_with_unit_p_bounded_theorem_note_2026-08-13": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "two_zero_kinetic_energy_bounded_theorem_note_2026-10-13": {
+   "deps_hash": "020a59809747",
+   "out_degree": 4
   },
   "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",

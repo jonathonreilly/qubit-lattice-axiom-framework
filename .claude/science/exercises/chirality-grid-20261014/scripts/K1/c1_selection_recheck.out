@@ -1,0 +1,3 @@
+light*mirror^3 allowed label sets: 6 e.g. [((0, 0, 1), (0, 0, 0), (1, 1, 0), (1, 1, 1)), ((0, 0, 1), (0, 1, 1), (1, 0, 1), (1, 1, 1))]
+light^3*mirror allowed label sets: 1 e.g. [((0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1))]
+C1 verdict: X2-L3 PASS (F1:108 rule false for the walker 3-light split)

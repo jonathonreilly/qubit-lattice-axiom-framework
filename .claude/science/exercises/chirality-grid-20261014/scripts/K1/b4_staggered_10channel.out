@@ -1,0 +1,8 @@
+B4: grid N = 40 (midpoint), chi normalised to chi_control(Q=0) = 0.91005
+  control f=1: chi(Q)/chi_control(0) = {(0, 0, 0): np.float64(1.0), (0, 0, 1): np.float64(0.6667), (0, 1, 0): np.float64(0.6667), (0, 1, 1): np.float64(0.3333), (1, 0, 0): np.float64(0.6667), (1, 0, 1): np.float64(0.3333), (1, 1, 0): np.float64(0.3333), (1, 1, 1): np.float64(-0.0)}
+     argmax Q = (0, 0, 0) (hw0), max ratio = 1.0000
+  X2 f_F1: chi(Q)/chi_control(0) = {(0, 0, 0): np.float64(0.3081), (0, 0, 1): np.float64(0.1229), (0, 1, 0): np.float64(0.1229), (0, 1, 1): np.float64(0.0723), (1, 0, 0): np.float64(0.1229), (1, 0, 1): np.float64(0.0723), (1, 1, 0): np.float64(0.0723), (1, 1, 1): np.float64(-0.0)}
+     argmax Q = (0, 0, 0) (hw0), max ratio = 0.3081
+  X2 f_NN: chi(Q)/chi_control(0) = {(0, 0, 0): np.float64(1.1445), (0, 0, 1): np.float64(0.3078), (0, 1, 0): np.float64(0.3078), (0, 1, 1): np.float64(0.0745), (1, 0, 0): np.float64(0.3078), (1, 0, 1): np.float64(0.0745), (1, 1, 0): np.float64(0.0745), (1, 1, 1): np.float64(-0.0)}
+     argmax Q = (0, 0, 0) (hw0), max ratio = 1.1445
+  consistency: chi_F1(0)/chi_ctl(0) = 0.3081 (B1: 0.3083); chi_NN(0)/chi_ctl(0) = 1.1445 (B1: 1.1455)

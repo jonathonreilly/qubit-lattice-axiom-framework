@@ -79,3 +79,38 @@ Three Opus 5.5 agents at xhigh, same family. Each crossed cores from different f
   - **E4 is wounded.** It assumes the target is realized with an exact on-site symmetry, but the contract also admits emergent, non-on-site, Euclidean and tick realizations.
   - So S\* is target-equivalent only to the on-site version. **F1-R3's "stronger than T" grading stands.** Blocked-equivalent status is unchanged.
 - **F5:** Lemmas B and D survive.
+
+## Kill round K1 (15:00–15:30Z): corner package anomalies and GPR
+
+Report: `kills/K1/KILL_REPORT.md`. Same-family agent; not refereed.
+
+### Test A: the anomaly kill failed
+No mixed or cyclic anomaly forbids symmetric gapping of the 5-corner mirror at 16 per corner.
+
+- **Absorption lemma (proved).** Lattice symmetries act on each corner Weyl by ±1, which is absorbable into fermion parity. Every class therefore reduces to α₁₆, and α₁₆ = 0 (Wang–Wen; García-Etxebarria–Montero).
+- **Checks A1–A4 and A3′:**
+  - 344 cyclic pairs;
+  - 8404 bundles for the mixed translation × Spin(10) class;
+  - the controls reproduce F6-tC and F1-C1.
+- **Consequences:**
+  - Mirror gapping is purely dynamical.
+  - No anomaly protects the light generations; their lightness rests on the filter zero, so it is natural rather than topological.
+- **Framing correction.** Only lattice-symmetry (non-emanant) classes forbid gapping in general (Cheng–Seiberg; Seiberg–Shao). F1:83's "ν_R forced" binds only node-preserving gappings, which narrows its scope.
+
+### Test B: GPR is sharpened, not defused
+- Any 10-vector condensate breaks G_SM (proved).
+- In mean field, f_NN keeps the condensation channel (1.14× the unfiltered control) and f_F1 suppresses it only partially (0.31×).
+- Neither filter has an independent-site limit (aggregate overlap 1.22 / 0.63), so a symmetric strong-coupling phase is an **unproven precondition** (G1).
+- The recent 4D literature finds intermediate broken phases generically.
+
+### Verdicts
+| Item | Verdict |
+|---|---|
+| X2 | **wounded** (G1, G2) |
+| F1-R1 walker branch | **wounded** |
+| F6-tC | **survives**; its residual is closed |
+| X2-L3 | survives |
+
+**Correction:** X2:248 is wrong that GPR relied on large-N alone; it used a strong-coupling hopping expansion plus large N.
+
+**Next test (not run):** T-G1, exact diagonalisation of a filtered star quartic on 4–6 sites.

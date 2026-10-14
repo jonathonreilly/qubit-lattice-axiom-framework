@@ -1,0 +1,67 @@
+{
+  "actual_citations_and_complete_graph_object_preservation_reviewed": true,
+  "base": "03836ecd8c9921aa1a3f12c2e1dbfcd21e7b021e",
+  "block_handoff_and_review_history_read": true,
+  "branch": "physics-loop/toe-local-clock-data-20261014",
+  "complete203_file_assembly_and_unique_unchanged_proof_reviewed": true,
+  "complete_driver_read": true,
+  "disposition": "accepted_for_source_integration",
+  "exact_source_diff_producer_conventions_reviewed": true,
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/LOCAL_CLOCK_DATA_MAIN_REFRESH_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_read": true,
+  "final_assembly_review_sha256": "ac0d06dd268511933a6b584721f2c2e28cb4242937fea2c753f9f1825e0406e7",
+  "full_auxiliary_gap_response_counterterms_and_finite_time_residual_reviewed": true,
+  "full_runtime_original_H_fixed_inventory_geometry_and_actual_covariance_scope_reviewed": true,
+  "historical_eof_acceptance_sha256": "a175b34baee13917e1f7c856613f4cfdff192c0a0d666df2ee6d016e62d2108e",
+  "identity_tools_and_archive_map_read": true,
+  "main_refresh_root_binding_sha256": "f3d70026b4853ae03816c6b21907642f17d457eb40afaa67a892035a0ae6a881",
+  "mathematical_predicates": 0,
+  "new_publication_wrappers_read": true,
+  "no_go_packet_pass": false,
+  "observed_main_ref": "d99a04c554ba7134e4a6142fbbd022534b0171ea",
+  "packet_and_dependency_delta_read": true,
+  "placeholder_only": false,
+  "pre_and_post_checker_index_equality_and_existing_ledger_scope_reviewed": true,
+  "prepared_clock_full_reference_dirty_transit_and_binary_outcome_scope_reviewed": true,
+  "prior_acceptance_sha256s": [
+    "d43e7e796d9b879e272e3682e6b17ec4cbc26e38122f242c201b1aba7b5a7de2",
+    "1b26b769ed96b8eda46007d46141c855e7f4d3c04b6776c182eca6ea0556eb84"
+  ],
+  "publication_byte_maps_and_diffs_verified": true,
+  "publication_program_sha256": "b91b199670ece1a9649702563ee1b9f8bde07c8cfb7da99f547c8f8bf3e69a8e",
+  "publication_source_freeze_sha256": "359ecc887755a1e74bd5b717509221c350adf2fcfd28e4fa7097b8f8b559328d",
+  "root_authorizes_execution": true,
+  "root_execution_acceptance": true,
+  "source_assembly_freeze_sha256": "b107cca7a45c16fe64f5839f88e231a299f2dcabc2a7ab0f9463bb6cc4cd0682",
+  "source_checker_and_recording_wrapper_read": true,
+  "three_actual_mathematical_roles_and_generic_mediator_credit_reviewed": true,
+  "twelve_section_conformance_reviewed": true,
+  "unchanged_source_coverage_reused": true,
+  "whitespace_and_link_policy_reviewed": true,
+  "whole_root_assembly_and_actual_outer_streams_missing_child_pin_limits_reviewed": true,
+  "recorded_utc": "2026-10-14T19:24:46.055729+00:00",
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_clock_data_main_refresh_root_review/SOURCE_BINDING.json",
+    "bytes": 8847,
+    "sha256": "325b86a9ae40a3f4991518ceea4fdbe08c1f3cae9f3ef7f3d808c8cdaa43996c"
+  },
+  "actual_streams": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_clock_data_main_refresh_root_review/ACTUAL_STREAMS.json",
+    "bytes": 4451,
+    "sha256": "09c1bde2e12721c3af2dbdfd5e45881a35639512f036247169f1306982aea183"
+  },
+  "source_checker_executions": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_clock_data_main_refresh_root_review/CHECKER_EXECUTIONS.json",
+    "bytes": 3647,
+    "sha256": "bfd9f56a1be5a33f63230dfdc5957184da53d0742cc0b17aa14d4820a21e5b57"
+  },
+  "acceptance_writer": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_clock_data_main_refresh_root_review/accept.py",
+    "bytes": 5326,
+    "sha256": "ed16199bcde30dfdaaba5577b3c7bd6dc751213fb1a666fa257258b417a4c08c"
+  },
+  "new_independent_mathematical_review": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": []
+}

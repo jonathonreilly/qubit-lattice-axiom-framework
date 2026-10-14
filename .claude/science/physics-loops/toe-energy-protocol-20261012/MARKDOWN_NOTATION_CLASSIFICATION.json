@@ -1,0 +1,18 @@
+{
+  "exclusions": [
+    {
+      "canonical_line": 968,
+      "classification": "Literal spectral-projector functional-calculus notation, not a Markdown link; source bytes unchanged.",
+      "context": "For any nonnegative selfadjoint H and normal density of second moment S^2,\nlet E_R=1_[0,R](H), R>0. Spectral calculus gives\n",
+      "context_sha256": "169595df4530a5701b276cb4372518ce3cbed5dfa58779cbf395f197cbdfd218",
+      "exact_line": "let E_R=1_[0,R](H), R>0. Spectral calculus gives\n",
+      "line_sha256": "6bdba2c2597cb2c955956593a6308cc3a4419a85c1cbb3ab822f1e6962e16aa5",
+      "note": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "](H)",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+      "source_line": 344,
+      "source_sha256": "5c147e2f079f12eb6a4d2f75264ffa51757729c8d444634b203542706fb53967"
+    }
+  ],
+  "scope": "One exact preserved spectral-projector expression; no broad formula exclusion. New root review is required."
+}

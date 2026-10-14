@@ -1,0 +1,76 @@
+# Exact spatial publication review
+
+Disposition: accepted_for_source_integration. Root review on 2026-10-12,
+before execution, on child physics-loop/toe-spatial-control-20261012 at
+f055a7bee614bd614cf3d387ec60804eb9f7597b. This is source integration acceptance,
+not a retained audit or a report of commands that have not yet run.
+
+The immutable package seal is
+7f8d4d9ada0b88e134a4b661e466c1383658e3eeb26b2236a363d0a6202f1799.
+The 678-line driver is
+fddc51722155fbd40fa1b294144a9ce973418c76ded77d6881f9d9dd12ec0e78.
+Root completely read the full driver, 354-line adaptation diff, 154-line
+identity template and template diff, all seven final wrappers, all new packet
+prose/status/scope records, specifications, acceptance template and reproduction
+instructions. The truncated first adaptation display was completed by its
+210--354 reread. Generated instances are reconstructed from that exact template.
+
+The earlier complete mathematical reads and exact source-exposed comparisons
+remain valid at the identities in SPATIAL_SOURCE_ROOT_ASSEMBLY_REVIEW.md
+(5ba55c1d3afdde70ab04cded92e325d4461e78fb87c7d7d770c17447e2d1ba8e).
+No proof was accepted from a package count or identity output. Root independently
+reconstructed all 204 package members, 119 compressed objects, 211 aliases,
+116 accepted source members, 91 original/copy relations, four literal bodies,
+three final notes, seven wrapper diffs and three canonical publication diffs.
+Offsets and line boundaries match exactly. Final wrappers were read completely;
+every change is within them, with no literal-body alteration. The reconstruction
+receipt is SPATIAL_PUBLICATION_ROOT_IDENTITY_2330.json. Six current canonical
+parents, eighteen procedures and prior procedural-template copies match their
+pins. Three generated programs each declare the same 132 inputs. The planned
+147-path set consists of 141 payload files, two root records, three cache text
+files and the existing graph manifest.
+
+The three notes preserve native finite even interval-algebra unit-ball bounds,
+continuum clustering/distant ground response, and near-ground correlation
+control. Whole-defect distances, total bounded even interaction, supplied
+representation, exact ground and actual excess energy remain explicit. The
+older native protocol substitution retains its earlier polynomial resources;
+it is not silently upgraded using the later whole-unit-ball theorem. The
+coherent-family control is not selected-ramp sharpness. Current remains
+open_gate. N1/N5 remain pending and no_go_packet_pass is false. No physical
+selection, route exhaustion, new no-go, analytic formal verification or audit
+verdict is implied. Historical pending labels in literal sources and the frozen
+preparation packet retain their chronology; this separate record supplies the
+later publication acceptance.
+
+The preserved Lean leaf checks eight finite Ring identities only. It does not
+formalize the analytic spatial estimates. Three same-template identity tools
+check zero mathematical predicates and are not independent proof checks.
+Four planned corruption probes check byte rejection only. An empty selected
+ledger checked[] provides no new-claim science verification. The only expected
+graph change is three nodes and sixteen direct edges with every old complete
+object/root/manifest row unchanged. Both notation and whitespace exception
+lists are empty; actual Git diff-check must return zero with empty diagnostics.
+
+The driver checks clean branch/base, independent root acceptance and exact pins
+before exclusive installation; preserves complete command streams and actual
+codes, enforces deadlines and has no Git mutation or retry. Root staging is
+separate. Verify compares every regular stage-0 blob before and after the
+selected-ledger checker. Author-only package builders were not executed. Two
+root reconstruction mistakes are preserved separately: an unchanged-wrapper
+marker was incorrectly expected to be empty, and separate cache metadata files
+were incorrectly anticipated. Both were corrected in the root checker after
+reading the actual format; no source/package/science bytes changed.
+
+Fetch at approximately 23:25 UTC leaves origin/main at
+516cb69d8487ff04f8a48e065d3dcbe71d7dd237 and the four campaign PR heads unchanged.
+New PR9505 at039198fed41d5599341bbcbc7908dcfae1215421 has a completely read
+223-line local vector-response note. It is a distinct supplied classical action
+construction and is not adopted or duplicated here. An earlier PR metadata/file
+listing was truncated, so it is not claimed as complete content review.
+
+Root authorizes the reviewed prepare/stage/verify sequence and subsequent
+regular milestone PR if actual outputs pass. Cumulative stack review, combined
+current-main landing validation and independent retained audit remain later
+obligations. No merge, main push, axiom edit or audit verdict is authorized.
+Editable prompt files changed: none.

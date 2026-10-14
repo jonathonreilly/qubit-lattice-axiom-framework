@@ -1,0 +1,70 @@
+# Energy-protocol publication review
+
+Disposition: accepted_for_source_integration. This is the root supervisor's
+review of publication source and executable integration behavior, not a new
+independent mathematical audit or retained verdict.
+
+Package freeze: 4b00550c111f28bacb6019cfe35583cdf88a4e13d60c32fea5455f4de1ad77fc.
+Driver: a5f27437088f436a487028eb26e6d2d3118a9bfb102469b90b8596fce1eb252a.
+Notes: BV/Graph 32392510c8eab4addd3f94643bd5db2820065ce7880bcf69fe44bbdf5b954342;
+Prepared/Driven c33f686237cac49aa7923c71e2ff88123ccdc2b7700c98f3d3cb752658ff6ac9.
+
+The four accepted bodies, their independent derivations and later complete
+source-exposed comparisons retain the scientific reading recorded in source
+review 8e78711a6a61189b513d95950eb85a35e05b545bfd6fead7274281e8a0ca9366.
+Those exact identities were reverified. I reuse that coverage; I did not
+redundantly read every unchanged assembled line or every full-context diff.
+The earlier false coverage flags remain false. The source-stage two wording
+corrections were already read in their surrounding arguments. This stage adds
+no mathematical body edit, formula, constant or scientific composition.
+
+I read all six publication wrappers, the complete 718-line driver, the complete
+205-line identity template, every changed runtime hunk, ROOT_REPRODUCTION,
+the proposed PR description, specifications, all packet Markdown, source and
+publication acceptance scopes, dependency proposal and parent-binding roles.
+Full driver reads: tool outputs 006546, 531d6d, 8fb776. Wrappers and procedure:
+82aeda, 960dd4. Identity template was completely visible before the later diff
+truncation in 2db22c; all changed driver/template hunks were separately read
+completely in 82422e. Packet and specifications: 6af4db. Inventory-heavy
+outputs were truncated and are not credited as complete manual reads.
+
+Root-authored verify_energy_publication_root.py reconstructs both complete
+notes from the accepted body bytes and inspected wrappers; verifies all eight
+complete publication diffs, both complete runtime adaptation diffs and all
+character substitutions; checks every frozen file and all 398 original aliases
+against 329 lossless archive objects; checks the generated identity instances'
+complete executable ASTs against the read template and all declared constants;
+and checks thirteen canonical parents and eighteen procedures. It also checks
+the unchanged accepted dependency map. Its first attempt expected different
+diff header labels and failed before acceptance; that source and the failure
+are preserved. The corrected check exited zero, output 995d9f. These checks
+execute zero mathematical predicates and do not run worker program bodies.
+
+The dependency graph is exactly two added nodes and fifteen direct edges.
+Prepared/Driven imports the BV body of the paired note, not an unproved
+composition with Graph or time averaging. The finite-energy pulse source
+remains explicitly provisional and noncanonical; it is not replaced by the
+different sector-selection lemma. Current remains open_gate. Historical
+Ground/Preparation wrapper identities remain documented. All supplied model,
+representation, actual gap, even-sector support, finite-form state, control
+and convergence assumptions remain. Same-family separate-context derivations
+and later exposed comparisons are not model-diverse or analytic Lean checks.
+
+The program's exclusive installation, exact base/branch and parent guards,
+complete-stream command recording, successful baselines preceding exact-error
+corruption controls, full old graph-object preservation, staging separation,
+index-blob checks before and after compatibility, and hard campaign deadline
+are appropriate. The only notation exception is the unchanged spectral
+projector 1_[0,R](H), with exact source/context fingerprints. The whitespace
+exception set is empty. Identity caches have zero mathematical predicates;
+an empty ledger checked[] checks no science. No Git mutation, merge, main push,
+pipeline, retained verdict or axiom change is delegated to the program.
+
+I authorize root execution of this exact prepare/verify package and subsequent
+regular PR publication after successful observed results and current source
+refresh. Actual runtime results are not predeclared. No further human approval
+is required for the already authorized milestone. Cumulative stack landing
+validation and independent retained audit remain distinct later obligations.
+N1/N5 remain pending and no no-go packet PASS is assigned. Separate pending
+weighted, dispersion and other science is outside this milestone. No editable
+prompt file changed.

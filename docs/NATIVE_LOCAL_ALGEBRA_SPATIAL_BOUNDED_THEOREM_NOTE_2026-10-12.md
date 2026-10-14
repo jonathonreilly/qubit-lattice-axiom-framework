@@ -1,0 +1,792 @@
+---
+claim_id: native_local_algebra_spatial_bounded_theorem_note_2026-10-12
+claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+assembly_status: publication_candidate_exact_root_review_pending
+scientific_execution: none_in_this_assembly
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: theorem
+conditional_surface_status: bounded consequences of the explicitly supplied model and representation
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: conditional spatial estimates with literal hypotheses and controls
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_trace_action: preserve conditional spatial control for later model-selection research; no existing blocker is closed
+runner: scripts/native_local_algebra_spatial_identity_2026_10_12.py
+upstream_dependencies:
+  - concrete_gapped_chain_bounded_theorem_note_2026-10-12
+  - current_preserving_refinement_bounded_theorem_note_2026-10-12
+  - local_even_continuum_bounded_theorem_note_2026-10-12
+  - bounded_interaction_ground_bounded_theorem_note_2026-10-12
+  - continuum_local_ground_spatial_bounded_theorem_note_2026-10-12
+---
+
+# Native local-algebra spatial control
+
+**Type:** bounded_theorem
+
+This note preserves the complete frozen independent native interval-algebra
+proof. It estimates correlations and distant ground response on entire even
+norm unit balls of finite native intervals, with no polynomial-resource or
+physical probe-length bound. Its interval geometry, supplied actual dynamics,
+fixed upper spacing and small total bounded even interaction remain hypotheses.
+The constants are the sufficient constants of A5-A7; they are not optimized.
+
+The signed native coefficient generator and even-spin realization are supplied
+by the exact [Concrete](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md),
+[Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md)
+and [Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md)
+parents. The actual common-domain ground premise comes from
+[bounded interaction and ground selection](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md).
+The [continuum/local-ground companion](CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md)
+preserves the earlier local-ground parent and its controls. The native proof
+reconstructs the propagation, ground differentiation and finite-measure filters;
+it does not infer them from favorable review labels.
+
+Current remains an open_gate with conditional-support surface status. All
+these parent uses remain conditional and provisional; no transitive audit or
+retained authority is supplied. The following original body, including its
+historical status and exposure wording, is unchanged.
+
+<!-- BEGIN LITERAL SOURCE: NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md -->
+
+# Native interval-algebra unit balls: an independent bounded derivation
+
+Status: proposed conditional analytic theorem, separately derived from the
+four pinned allowed spatial parents. This core is to be frozen before
+reporting its mathematical outcome or opening any root native-local-algebra
+candidate. It is not an audit, formal proof, retained claim, physical axiom
+or model-diverse independent check.
+
+The polynomial-resource restriction can be removed for the native even CAR
+algebras of finite site intervals. The new ingredient is an explicit finite
+Clifford averaging estimate. Applied to site Majoranas individually, its
+sum is a geometric boundary sum rather than a word count or interval volume.
+A spacing-dependent spatial weight is legitimate at each fixed spacing;
+balancing its propagation growth with the fixed physical gap gives uniform
+physical-distance bounds. The proof below includes that balance.
+
+The result covers the requested uniformly bounded physical interval lengths.
+In fact, no probe-length bound is needed for the stated finite-interval
+estimates. Connected interval geometry, evenness, a fixed upper spacing,
+the supplied nearest-neighbor chain, and a bounded total defect norm remain
+substantive assumptions. Correlation decay in the ordinary two-probe
+separation still needs control of the defect's diameter or the more precise
+safe distance defined below.
+
+## 1. Model, algebras and quantitative statements
+
+Fix m,v,c_0>0 and 0<=K<m/2. At each allowed 0<c<c_0 use the actual
+supplied full-spin/Fock representation and free Hamiltonian H_c. Its
+vacuum is simple with energy zero, its full gap is m and its free even
+excited threshold is 2m. No auxiliary outside-band zero modes are added.
+The real coefficient space is ell^2(Z;R^2). With gamma_c(f) the real
+Majorana map, use
+
+    {gamma_c(f),gamma_c(g)}=2(f,g)_R I,
+    gamma_c(f)^*=gamma_c(f),    ||gamma_c(f)||=||f||.
+
+For a finite nonempty integer interval S, let C_c(S) be the unital finite
+CAR algebra generated by its 2|S| site Majoranas, and C_c^+(S) its even
+subalgebra. At fixed c it is finite dimensional. No chosen expansion,
+coefficient sum, degree or complexity bound is imposed on its elements.
+Every A in C_c^+(S) has a finite expression at fixed c, but none of the
+constants below uses resources from that expression.
+
+The exact signed coefficient generator and physical clock are
+
+    (D_cf)_(n,1)= 2i(g_c f_(n,2)-J_c f_(n-1,2)),
+    (D_cf)_(n,2)=-2i(g_c f_(n,1)-J_c f_(n+1,1)),
+    sigma_c=sqrt(m^2/4+v^2/c^2),
+    g_c=sigma_c/2+m/4,    J_c=sigma_c/2-m/4,
+    U_c(t)=exp(itD_c),
+    alpha_c,t(gamma_c(f))=gamma_c(U_c(t)f).             (A1)
+
+D_c is bounded selfadjoint at each fixed c, U_c preserves realness, and
+2J_c<=v/c. The growing onsite block is kept exact in the propagation
+proof. The positive one-particle spectrum, both actual branches and the
+full many-particle domain are those of the pinned parents. In particular
+D(H_c)=D(N) at fixed c; H_c is not a bounded many-particle operator.
+
+Let Gamma_c be another finite nonempty integer interval, and take any
+
+    V_c=V_c^* in C_c^+(Gamma_c),    ||V_c||<=K,
+    G_c,s=H_c+sV_c on D(H_c),    0<=s<=1.              (A2)
+
+Write omega_c,s for its selected normalized ground-vector state, omega_c
+for omega_c,1, and omega_c,free for omega_c,0. The ground is simple and
+even. The full gap is at least delta=m-2K>0; the even complement has
+gap at least
+
+    gamma=2m-2K>0.                                    (A3)
+
+The proof uses the even gap only on even spectral vectors. The full
+representation is retained, including its odd sector.
+
+For intervals S,T put dist_c(S,T)=c min{|n-j|:n in S,j in T}. For
+A in C_c^+(S), B in C_c^+(T), set
+
+    a=||A||, b=||B||, P=ab,
+    r=dist_c(S,T),
+    r_A=dist_c(S,Gamma_c), r_B=dist_c(T,Gamma_c),
+    d=min{r,max(r_A,r_B)}.                            (A4)
+
+All algebra elements may be complex; selfadjointness of the probes is
+not required. For scalars choose any containing nonempty interval.
+
+Choose a dimensionless parameter mu>0 and define
+
+    s_mu=1-exp(-mu),
+    w=v(exp(mu)-1),
+    b_mu=4/s_mu,
+    kappa=gamma mu/(gamma c_0+2w),
+    C_corr=max{exp(1),
+               1+1/pi+(b_mu/pi)(1/s_mu+2K c_0/w)},
+    C_stab=K[(b_mu c_0/w)(1+K c_0/w)+4/gamma].        (A5)
+
+All denominators are positive. w is a velocity and kappa an inverse
+physical length. These sufficient constants are not optimized.
+
+The native interval-algebra correlation estimate is
+
+    |omega_c(AB)-omega_c(A)omega_c(B)|
+        <=||A||||B|| C_corr exp(-kappa d).             (A6)
+
+The local-ground stability estimate is
+
+    |omega_c(A)-omega_c,free(A)|
+       <=||A|| min{2K/gamma,
+                    C_stab exp(-kappa dist_c(S,Gamma_c))}. (A7)
+
+Consequently (A6) is uniform over both complete norm unit balls, and
+(A7) gives the norm of the state-functional difference restricted to
+C_c^+(S). These constants are independent of c, interval translations,
+probe site count, probe physical length, polynomial expressions, and
+the internal complexity of V_c. The interaction enters only through its
+total norm and the support geometry. No convergence of V_c is assumed.
+
+If ell_c=diam_c(Gamma_c), interval geometry gives
+
+    d >= (1/2)[r-ell_c]_+.                            (A8)
+
+Thus a uniform upper bound ell_c<=ell_* yields ordinary separation decay
+with exponent kappa/2 and offset ell_*. Without that diameter bound,
+(A6) retains its stated safe distance rather than replacing d by r.
+The stability estimate (A7) needs no defect-diameter bound when distance
+is taken to the entire defect interval.
+
+## 2. A finite Clifford averaging lemma
+
+Work first in the represented full CAR algebra. Let S be any finite site
+set and let e_j, 1<=j<=2|S|, be its real orthonormal site-component basis.
+For a real orthogonal coefficient map U set Gamma_j=gamma(Ue_j). These
+are selfadjoint unitaries with Gamma_i Gamma_j=-Gamma_j Gamma_i for i!=j.
+Define contractions on the bounded represented algebra by
+
+    E_j(X)=(X+Gamma_j X Gamma_j)/2,    E=product_j E_j. (A9)
+
+The adjoint actions of distinct Gamma_j commute, because their products
+differ only by the scalar -1. Therefore the E_j commute. Their product
+has image commuting with every Gamma_j, and hence with the whole algebra
+generated by them. This algebra contains alpha(A) whenever A belongs to
+C_c(S) and alpha is the Bogoliubov map associated with U.
+
+For an even B in C_c^+(T), graded CAR locality gives
+
+    [Gamma_j,B]=[gamma(P_T Ue_j),B],
+    ||[Gamma_j,B]||<=2||B||||P_T Ue_j||.              (A10)
+
+Indeed the complementary real coefficient is orthogonal to every
+coefficient supported in T, so its Majorana commutes with every even
+word there, and hence every element of that finite even algebra.
+No odd bilateral quasilocal spin observable is asserted by this step.
+
+Telescoping the product of contractions, with no expansion of B, gives
+
+    ||B-E(B)||
+      <=sum_j ||(I-E_j)B||
+       =(1/2)sum_j ||[B,Gamma_j]||
+      <=||B|| sum_j ||P_T Ue_j||.                   (A11)
+
+The equality uses multiplication by the unitary Gamma_j. Since E(B)
+commutes with alpha(A), for every A in C_c(S),
+
+    ||[alpha(A),B]||
+       <=2||A||||B|| sum_(j=1)^(2|S|) ||P_T Ue_j||. (A12)
+
+There is no factor equal to the matrix-algebra dimension and no norm
+of a polynomial expansion. A crude replacement of every summand by
+one common bound would retain a site count; the next section instead
+sums its actual spatial decay. Evenness of B is essential to (A10).
+Both probes in the theorem are even because of the physical spin
+identification and the subsequent even-gap argument.
+
+The construction takes place in full Fock: the auxiliary odd Gamma_j
+are legitimate bounded CAR operators there. We do not first restrict
+the representation to an even Hilbert space and then pretend those
+odd implementers act inside it. On even inputs E_j preserves parity.
+The given isometric even-CAR/spin identification transfers the resulting
+commutator norm bound to actual local even spin observables.
+
+## 3. Sitewise propagation and the geometric boundary sum
+
+At a fixed c define
+
+    u_c=w/c,    lambda_c=mu/c.                       (A13)
+
+Their dependence on c is deliberate. We do not insert them into a
+previous theorem whose proof parameters had been fixed uniformly;
+we reconstruct the one-particle estimate at this c and then control
+the final physical constants.
+
+Fix a source site n and a target set T at integer distance h>=1.
+Choose a finite M>=h and let
+
+    phi_k=min{|k-n|,M},    (Wf)_k=exp(mu phi_k)f_k.
+
+W and W^(-1) are bounded at this fixed M. Scalar site weights commute
+with the onsite matrix in (A1), and neighboring phi values differ by
+at most one. The two changed off-diagonal shift blocks have norms at
+most 2J_c(exp(mu)-1). The norm of a zero-diagonal two-by-two operator
+block is the maximum of its two off-diagonal block norms. Therefore
+
+    ||W D_c W^(-1)-D_c||<=2J_c(exp(mu)-1)<=u_c.       (A14)
+
+No onsite 2g_c enters this estimate. Bounded perturbation of the actual
+unitary group gives, for either sign of time,
+
+    ||W U_c(t)W^(-1)||<=exp(u_c|t|),
+    ||W U_c(t)W^(-1)-U_c(t)||<=exp(u_c|t|)-1.        (A15)
+
+The similarity identity follows from the exponential series because D_c
+is bounded at fixed c. On the source site W=I; on T, W>=exp(mu h).
+Thus for either component basis vector e_(n,alpha),
+
+    ||P_T U_c(t)e_(n,alpha)||<=exp(-mu h+u_c|t|),
+    ||P_T U_c(t)e_(n,alpha)||
+        <=[exp(u_c|t|)-1]/[exp(mu h)-1].             (A16)
+
+For the second estimate apply P_T(W-I) to U_c(t)e_(n,alpha).
+No limit of an unbounded weight is taken. Its possibly large norm
+does not enter the right-hand sides.
+
+Now let S,T be disjoint nonempty integer intervals. They are ordered
+on the line. If h=dist_Z(S,T)>=1, then the distances from the sites
+of S to T are h,h+1,...,h+|S|-1. In particular
+
+    sum_(n in S) exp[-mu dist_Z(n,T)]
+       <=exp(-mu h)/s_mu.                           (A17)
+
+For every integer distance l>=1,
+
+    1/[exp(mu l)-1]<=exp(-mu l)/s_mu.
+
+There are exactly two real component basis vectors per site. Combining
+(A12), (A16) and (A17) gives, with r=ch>0,
+
+    ||[alpha_c,t(A),B]||
+       <=b_mu ||A||||B|| exp(-lambda_c r+u_c|t|),    (A18)
+    ||[alpha_c,t(A),B]||
+       <=(b_mu/s_mu)||A||||B|| exp(-lambda_c r)
+                                      [exp(u_c|t|)-1]. (A19)
+
+The trivial bound 2||A||||B|| also holds. At r=0, (A18) remains a
+sufficient bound by that trivial estimate, since b_mu>4 and exp(u_c|t|)>=1.
+Equation (A19) is asserted only for disjoint intervals: at zero distance
+the equal-time commutator need not vanish.
+
+The boundary sum, not the physical length, is the reason these bounds
+control all interval-algebra elements. The integer separation h>=1 is
+also what bounds the second geometric denominator uniformly. Translation
+of either interval and any common shift of the grid origin change none
+of the estimates.
+
+## 4. Bounded interval perturbation and the two commutator bounds
+
+For beta_c,s,t generated by G_c,s=H_c+sV_c, bounded perturbation gives
+
+    beta_c,s,t(A)-alpha_c,t(A)
+      =i s integral_0^t beta_c,s,z([V_c,alpha_c,t-z(A)])dz. (A20)
+
+At fixed c every finite interval algebra element is a finite expression
+in fields with bounded one-particle generator, so its free orbit is
+norm differentiable. Differentiation of the composed flows gives (A20).
+Equivalently the bounded cocycle proves it by norm approximation.
+No uniform bound on that derivative and no free-domain preservation
+by V_c is required. Negative time has the same norm estimate by reversing
+the flows. Actual H_c and G_c,s remain unbounded on D(H_c).
+
+For r_A=dist_c(S,Gamma_c), including r_A=0, (A18) gives
+
+    ||beta_c,s,t(A)-alpha_c,t(A)||
+       <=(sK b_mu ||A||/u_c) exp(-lambda_c r_A)
+                                      [exp(u_c|t|)-1]. (A21)
+
+The derivative observable in ground stability is V_c, while the
+background perturbation is sV_c; these roles should not be conflated.
+Combining (A18) for A,V_c with twice K times (A21) gives
+
+    ||[beta_c,s,t(A),V_c]||
+       <=M_s,c exp(-lambda_c r_A+u_c|t|),
+    M_s,c=b_mu K||A||(1+2sK/u_c).                  (A22)
+
+Also the commutator is at most 2K||A||. The bound in (A22) need not
+vanish at time zero; the reciprocal filter below is integrable there.
+
+For ground covariance at s=1 and d from (A4), assume d>0. If r_A>=r_B,
+combine (A19) for A,B with twice ||B|| times (A21). Both spatial
+distances are at least d. If r_B>r_A, apply the same calculation to B
+and use [beta_t(A),B]=beta_t([A,beta_-t(B)]). Thus
+
+    ||[beta_c,1,t(A),B]||
+       <=M_c exp(-lambda_c d)[exp(u_c|t|)-1],
+    M_c=b_mu P(1/s_mu+2K/u_c).                      (A23)
+
+The same bound applies to [A,beta_c,1,t(B)] by time reversal and
+invariance. The trivial bound is 2P. Equation (A23) supplies the
+near-zero time factor needed by the covariance filter; discarding it
+before dividing by t would be an invalid shortcut.
+
+## 5. Actual grounds, domains and the covariance filter
+
+The ground premises used above follow by the pinned bounded-perturbation
+argument on the actual Hilbert space. For H_c+sV_c, the circle |z|=m/2
+remains in the resolvent because ||sV_c(H_c-z)^(-1)||<1. Its Riesz
+projection is norm continuous from the rank-one vacuum projection.
+Subdividing the s interval into distances less than one between
+projections preserves its rank. The perturbed spectrum is contained in
+[-sK,sK] union [m-sK,infinity), so that line is the ground with energy
+E_c,s in [-sK,sK]. No compact-resolvent premise is used.
+
+Parity commutes with the bounded even perturbation. The odd sector has
+energy at least m-sK>sK; hence the ground is even. On the even sector
+the same argument, using the free threshold 2m, leaves its excited
+spectrum at least 2m-sK. Subtracting E_c,s gives the uniform even gap
+gamma in (A3), while the full gap remains delta. All assertions are
+within the supplied representation, not uniqueness across inequivalent
+algebraic ground representations.
+
+At s=1 suppress c and set L=G-E_g>=0, Q=I-|Omega><Omega|. For complex
+even A,B define finite complex measures on [gamma,infinity) by
+
+    mu(E)=<Q A*Omega,1_E(L)Q B Omega>,
+    nu(E)=<Q B*Omega,1_E(L)Q A Omega>.
+
+The inner product is antilinear in its first entry. Spectral-partition
+Cauchy-Schwarz gives ||mu||_TV,||nu||_TV<=P. With
+
+    C=omega(AB)-omega(A)omega(B)=integral dmu,
+    h(t)=omega([A,beta_t(B)]),
+
+stationarity gives
+
+    h(t)=integral exp(itE)dmu(E)-integral exp(-itE)dnu(E). (A24)
+
+Only bounded vectors and finite measures are used, not a uniform first
+or higher energy moment.
+
+For eta,epsilon>0 use the regularized Gaussian filter
+
+    I_(eta,epsilon)
+       =(1/(2pi i)) integral_R exp(-eta t^2)h(t)/(t-i epsilon) dt.
+
+The identity 1/(t-i epsilon)=i integral_0^infinity exp(-epsilon z)exp(-itz)dz
+gives the frequency multiplier
+
+    F_(eta,epsilon)(E)
+       =[1/(2sqrt(pi eta))]
+          integral_0^infinity exp(-epsilon z)exp[-(E-z)^2/(4eta)]dz.
+
+For positive epsilon the interchanges are absolutely integrable and the
+multiplier lies between zero and one. As epsilon decreases to zero it
+converges to (1+erf(E/(2sqrt(eta))))/2. Dominated convergence in the
+finite variation measures and the Gaussian tail bound give
+
+    |C-I_eta|<=P exp[-gamma^2/(4eta)].                (A25)
+
+For d>0, (A23) bounds |h(t)|/|t| near zero by a constant at each fixed
+c; the Gaussian and |h(t)|<=2P handle large time. Since
+|t-i epsilon|>=|t|, this also proves the ordinary absolutely convergent
+time representation
+
+    I_eta=(1/(2pi i)) integral_R exp(-eta t^2)h(t)dt/t. (A26)
+
+This time-side argument is first made at fixed c. Its near-zero majorant
+need not be uniform as c decreases: the following evaluated estimate
+is uniform. No interchange of that limit with an uncontrolled majorant
+is made.
+
+For any T>0, (A23) and (exp(u t)-1)/t<=u exp(u t) give
+
+    |I_eta|
+      <=(M_c/pi)exp(-lambda_c d)[exp(u_c T)-1]
+          +[P/(pi eta T^2)]exp(-eta T^2).            (A27)
+
+For the second term use the trivial commutator bound and
+integral_T^infinity exp(-eta t^2)dt/t<=exp(-eta T^2)/(2eta T^2).
+For d>0 choose
+
+    T_c=2lambda_c d/(gamma+2u_c)
+        =2mu d/(gamma c+2w),
+    eta_c=gamma/(2T_c),
+    kappa_c=gamma mu/(gamma c+2w),
+    x_c=gamma T_c/2=kappa_c d.                      (A28)
+
+Then lambda_c d-u_cT_c=eta_cT_c^2=gamma^2/(4eta_c)=x_c.
+Equations (A25)-(A27) yield
+
+    |C|<=[M_c/pi+P(1+1/(pi x_c))]exp(-x_c).         (A29)
+
+If x_c>=1, use
+M_c<=b_mu P(1/s_mu+2K c_0/w). If 0<x_c<1, the trivial covariance
+bound |C|<=P gives |C|<=exp(1)P exp(-x_c). Thus both ranges are
+bounded by P C_corr exp(-x_c). Since kappa_c>=kappa, (A6) follows.
+At d=0 its trivial bound suffices. Zero-norm probes also cause no
+division by P: every preceding inequality then vanishes.
+
+This proves a uniform entire-unit-ball estimate despite u_c growing
+like 1/c. The spatial weight grows at the matching rate lambda_c;
+the split time in (A28) is a physical time, and the final decay exponent
+has a positive c-independent lower bound. Taking a supremum of u_c
+before performing this balance would lose the conclusion.
+
+## 6. Ground differentiation and the reciprocal filter
+
+Fix c and the path G_s=H_c+sV_c. Its resolvents are analytic in s locally
+in operator norm, and also as maps into the fixed graph space D(H_c):
+
+    H_c(G_s-z)^(-1)=I+(z-sV_c)(G_s-z)^(-1).
+
+The ground projection has the same graph regularity. Locally choose
+normalized ground vectors in horizontal gauge and join the gauges
+along [0,1]. With F_s=G_s-E_s, Q_s=I-P_s and R_s the inverse of F_s on
+the ground complement, extended by zero on the ground, differentiation
+of the eigenvalue equation gives
+
+    E_s'=omega_s(V_c),
+    Omega_s'=-R_s Q_s V_c Omega_s.                  (A30)
+
+R_s maps the Hilbert space into D(H_c), since
+F_sR_s=Q_s and H_cR_s=Q_s+(E_s-sV_c)R_s are bounded. Its full norm is
+at most 1/delta; on even vectors it is at most 1/gamma.
+No assumption that V_c or A preserves an unbounded domain enters (A30).
+
+For any bounded even A and f(s)=omega_s(A),
+
+    f'(s)=-<Q_s A*Omega_s,R_s Q_s V_c Omega_s>
+           -<Q_s V_c Omega_s,R_s Q_s A Omega_s>,
+    |f'(s)|<=2K||A||/gamma.                         (A31)
+
+The sign corresponds to the plus path H_c+sV_c. Integrating this
+last bound gives the global part of (A7). It applies directly to complex
+probes without an extra real/imaginary-part factor.
+
+Define finite complex measures mu_s,nu_s by the two vector pairs in
+(A31) and spectral projections of F_s. They have variation at most
+K||A|| each and support in [gamma,infinity). For
+h_s(t)=omega_s([beta_c,s,t(A),V_c]),
+
+    h_s(t)=integral exp(-itE)dmu_s(E)-integral exp(itE)dnu_s(E),
+    f'(s)=-integral E^(-1)(dmu_s+dnu_s).             (A32)
+
+For q>0 let w_q(t)=erfc(t/(2sqrt(q))) on t>=0. It is integrable,
+w_q(t)<=exp(-t^2/(4q)), and direct Gaussian integration by parts gives
+
+    integral_0^infinity w_q(t)sin(Et)dt
+       =(1-exp(-qE^2))/E,    E>0.
+
+Consequently the absolutely convergent integral
+
+    I_s,q=(i/2) integral_R sign(t)w_q(|t|)h_s(t)dt
+
+satisfies, by Fubini against finite variation measures,
+
+    |f'(s)+I_s,q|<=(2K||A||/gamma)exp(-q gamma^2).    (A33)
+
+There is no 1/t in this filter. Also
+
+    integral_T^infinity w_q(t)dt
+       <=(2q/T)exp[-T^2/(4q)].                      (A34)
+
+For r_A>0 use (A22) on [0,T] and 2K||A|| afterwards. Put T equal to
+(A28) with d replaced by r_A, and q=T/(2gamma). The short-time
+contribution is at most
+
+    (M_s,c/u_c)exp(-lambda_c r_A)[exp(u_cT)-1].
+
+The long-time contribution from (A34) and the spectral error in (A33)
+are each at most (2K||A||/gamma)exp(-kappa_c r_A). Thus
+
+    |f'(s)|<=[M_s,c/u_c+4K||A||/gamma]
+                                      exp(-kappa_c r_A). (A35)
+
+Integrating s from zero to one preserves the factor
+integral_0^1 2s ds=1. It gives
+
+    |omega_c(A)-omega_c,free(A)|
+      <=||A|| K[(b_mu/u_c)(1+K/u_c)+4/gamma]
+                                      exp(-kappa_c r_A). (A36)
+
+Since 1/u_c<=c_0/w and kappa_c>=kappa, this proves the exponential
+part of (A7). At r_A=0 the global estimate applies and is no larger
+than ||A|| C_stab. For K=0 both sides of (A7) are exactly zero.
+Combining the two independent estimates proves the stated minimum.
+
+All unbounded-operator input has been isolated in graph-valid ground
+differentiation and finite spectral measures with a gap. These estimates
+do not imply a uniform energy moment for arbitrary interval-algebra
+unit-ball elements.
+
+## 7. Physical length, translations and limiting scope
+
+For actual native intervals, (A8) follows from
+r<=r_A+diam_c(Gamma_c)+r_B. For example choose in each probe interval
+a site closest to Gamma_c; their distance is at most the displayed
+sum and at least the distance r between the two probes. Taking
+max(r_A,r_B)>=(r-ell_c)/2 and then the minimum with r proves (A8).
+
+Suppose the physical site hulls of S,T are contained in the closed
+c-neighborhoods of finite real intervals X+x,Y+y, and that of Gamma_c
+in the closed c-neighborhood of W. Put r_phys=dist(X+x,Y+y) and
+ell=diam(W). Then
+
+    r>=[r_phys-2c]_+,    ell_c<=ell+2c,
+    d>=(1/2)[r_phys-ell-4c_0]_+.
+
+Thus, uniformly over the complete native even norm unit balls,
+
+    |Cov_(omega_c)(A,B)|
+       <=C_corr exp[-(kappa/2)[r_phys-ell-4c_0]_+],  (A37)
+    |(omega_c-omega_c,free)(A)|
+       <=C_stab exp[-kappa[dist(X+x,W)-2c_0]_+].    (A38)
+
+The second estimate can also retain the minimum with 2K/gamma.
+These cell-enlargement constants are sufficient rather than optimized.
+No coefficient sampling norm estimate is needed for an arbitrary
+native unit-ball element: its operator norm and containing interval
+are the hypotheses. Ordinary physical-cell polynomials are included.
+
+All integer translations, arbitrary real placements relative to the grid,
+and arbitrary common grid origins are permitted. The estimates depend
+only on actual distances and support containments, not on a comparison
+of translated coefficient functions or translation invariance of the
+perturbed ground. In particular their supremum over 0<c<c_0 and all such
+positions decays as the required physical separation tends to infinity.
+Joint small-spacing and large-distance limits follow without choosing
+a subsequence and without a continuum limit of V_c.
+
+The requested bounded-physical-length condition on probe intervals is
+therefore sufficient but unnecessary for these finite-interval statements.
+The finite CAR matrix dimension can diverge exponentially in c^(-1);
+neither it nor the probe site count enters the constants. The proof does
+use the interval order in (A17). No theorem for arbitrary support geometry,
+unbounded-support algebra elements or higher-dimensional regions is
+claimed without a replacement for that boundary sum.
+
+These scalar native estimates do not manufacture a common continuum
+operator for an arbitrary choice of a unit-ball element at each c.
+For example, alternating the sign of the identity along spacings gives
+an allowed bounded local family with no convergent ground expectation,
+while both (A6) and (A7) remain true. A continuum comparison still needs
+specified observable, interaction and ground identifications. Fixed
+physical profiles and their checked comparison hypotheses remain a
+sufficient route. The already established continuum even-local-algebra
+stability result is compatible with (A7); it is not used to prove it.
+
+The permitted parent's current-carrier counterexample also remains:
+for translations ell_c with ell_c c^2->s_0!=0, its low-branch phase
+discrepancy tends to exp(-i s_0 p^3/6), with nonzero coefficient-norm
+error on any nonzero fixed L2 profile. That does not contradict
+translation-uniform native scalar estimates. No band is discarded and
+no band-limited carrier image is treated as an exactly local field.
+
+## 8. Countercontrols and the exact scope of the improvement
+
+The old word-resource bound does not already prove this result. On N
+sites, let Gamma_1,...,Gamma_(2N) be their orthonormal Majoranas and take
+
+    A_N=i^N Gamma_1 Gamma_2 ... Gamma_(2N).
+
+It is selfadjoint, even, squares to I and has norm one. Its displayed
+word resource is F_A=2N, which diverges for N of order c^(-1) even at
+bounded physical length. This is a failure of that resource estimate,
+not a correlation counterexample. The averaging and geometric sum
+prove the new estimates for this element as well.
+
+There is an intrinsic version of this resource control. Let tau_N be
+the normalized matrix trace on the finite CAR algebra of these N sites,
+used only as an auxiliary bounded functional. For a word of degree
+less than 2N, tau_N(A_N^* word)=0: expanding in the orthonormal Clifford
+monomials leaves no top-degree component. Nonempty basis monomials
+have zero trace by conjugation with a Majorana that anticommutes with
+them: choose one inside an even-degree monomial, or one outside an
+odd-degree monomial. An odd degree cannot fill all 2N generators.
+Products of distinct basis monomials are nonempty up to a phase,
+which also proves the asserted trace orthogonality. For every other word, its
+absolute pairing is at most the product of its input norms. Thus any
+polynomial B supported on these sites, with the parent's expression
+resource F_B, obeys
+
+    F_B>=2N |tau_N(A_N^* B)|.
+
+In particular ||B-A_N||<=eta<1 implies F_B>=2N(1-eta).
+The parent's sufficient uniform approximation by bounded-resource
+polynomials therefore cannot cover this whole growing unit ball.
+The new proof is not an appeal to that approximation condition.
+This finite-algebra trace calculation makes no trace-compactness or
+physical-ground-state premise.
+
+The space-weight choice is essential to this proof. Keeping a fixed
+physical weight lambda while summing the individual site tails would
+produce (1-exp(-lambda c))^(-1), which diverges as c decreases. Replacing
+all site tails by a single block norm would instead retain |S|. Neither
+loss is a no-go theorem. Choosing the fixed dimensionless per-site mu,
+retaining u_c=w/c until the time-filter balance, removes both losses
+for the stated interval geometry.
+
+The native theorem remains a tail estimate, not an exact causal cone.
+The parent's internally bilocal even potential provides the explicit
+control: V=i k gamma_2 gamma_3, A=i gamma_1 gamma_2 and
+B=i gamma_3 gamma_4 obey i[[V,A],B]=-4k gamma_1 gamma_4. With the pairs
+at separated sites inside Gamma_c, the appropriate free first double
+commutator vanishes while this defect contribution does not. The safe
+distance is then zero. This is a propagation counterexample; it is not
+being relabelled a scalar ground-covariance counterexample.
+
+Similarly, distance from an origin or a defect center cannot replace
+distance from its whole support. Translating an interacting probe
+and its defect together preserves their expectation difference under
+the free translation symmetry while their origin distances grow.
+The already checked parent's nonzero diagonal static-response example
+makes that control explicit. For (A6), allowing the defect interval
+to grow can keep d small even at large two-probe separation. The
+present theorem does not eliminate that geometric resource or claim
+a new scalar counterexample for every growing-diameter family.
+
+The total K<m/2 condition is not a per-term bound for an extensive
+interaction. Odd probes are not assigned the even spectral gap, and
+odd bilateral spin observables are not obtained by an invalid local
+Jordan-Wigner identification. The finite Clifford averaging uses odd
+CAR coordinates only as auxiliary full-representation operators.
+Identity probes have zero true connected correlation and response,
+even when the norm-only upper bounds are nonzero.
+
+Only exact ground-vector states are compared. A fixed mean-energy cap
+on a different state does not meet that hypothesis. Coupling parameter
+s in (A30) is not physical preparation time; t in (A1), (A20) and the
+filters is the supplied real Heisenberg clock. No autonomous relaxation,
+local implementation of the ground transport, optimal exponent, new
+physical interaction selector or empirical force law is inferred.
+
+## 9. Exact sources, actual coverage and independence
+
+The neutral plan was sealed at 2026-10-12 21:29:31 UTC, with SHA-256
+a1ed1a8202f12727842d80633cad5315bea6da421f03cf98f999f7abf09e1acf.
+It followed initial route planning and input hash checks, before renewed
+parent-body inspection and before a completed derivation. It is not a
+claim that no preliminary mathematical possibility had been considered.
+Its fixed input record has SHA-256
+f9e325b2ff13a6de5d5ecab841050ddb77471dc0092c42a15382e8527c8e45bc.
+
+The only task scientific sources are:
+
+| Source | SHA-256 | Actual coverage |
+|---|---|---|
+| NATIVE_LATTICE_CLUSTERING_INDEPENDENT.md | 7ec62ba1e2b3df609bb39c430653e2ca198da28ca1a5355e616ffc469db866e8 | Prior full 604-line read; complete new 604-line reread for this task |
+| NATIVE_LATTICE_CLUSTERING_CROSSCHECK.md | 034ac8597df673ebc884a57f04627f196458b1945d689ec70c3f849c94ff6946 | Prior full 336-line read; complete new 336-line reread |
+| LOCAL_GROUND_STABILITY_INDEPENDENT.md | 5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e | Prior full 589-line read reused; new focused 220-410 refresh after a truncated full-output attempt, which is not counted as complete new coverage |
+| LOCAL_GROUND_STABILITY_CROSSCHECK.md | df8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805 | Prior full 411-line read; complete new reread in ranges 1-240 and 241-411 |
+
+The exact actual generator, CAR/spin convention, ground-gap premises and
+both finite-measure filters are present in these sources and were
+reconstructed above. No additional scientific parent was required.
+Historical pending labels in the original independent parents remain
+unchanged; their authorized completed comparisons supply the current
+coverage record without creating formal or transitive audit status.
+
+Those comparisons expose earlier root native-clustering and local-ground
+arguments. That parent exposure is disclosed and retained. The new
+finite-algebra norm step and the spacing-dependent boundary/filter
+balance here are separately produced reasoning in the same model family,
+not model-diverse or fresh independent reconstruction of every parent.
+No root native-local-algebra candidate or precision note, its formal
+directory, checkpoint/queue, new pulse/filter/spatial candidate, other
+chat or unlisted new science was read before this core freeze.
+
+Governing instruction coverage and the selected model/effort are retained
+at unchanged scope. The completed response/pulse review is preserved and
+is not a new premise. Only this proof and native_local_algebra_independent
+evidence are written. Source/hash/time bookkeeping is distinguished from
+mathematical execution: no numerical, symbolic or formal runner, script,
+installation, Git/PR/publication/audit action, delegation, external message,
+editable-prompt change, physical-axiom change or checkpoint update occurred.
+The complete source receives an exact SHA/time freeze before its outcome
+is reported or any root candidate is requested for comparison.
+
+<!-- END LITERAL SOURCE: NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md -->
+
+## Assembly relationship and exact review scope
+
+The literal body has SHA-256
+d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d.
+Its complete [source-exposed comparison](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517.gz),
+SHA-256 0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517,
+records no required repair. The comparison is a same-family analytic check
+with shared premises and disclosed prior exposure, not model-diverse or
+formal analytic verification. The source assembly was accepted by root for publication preparation only.
+This publication wrapper still requires a separate exact root review.
+
+The whole-unit-ball scope belongs to the independent Clifford-averaging and
+geometric boundary-sum argument. The original
+[root alternative](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/29af13602f055120f50294e43be3e8dc24b2e79506dc14a059ccbb27cfa7ee3d.gz)
+and its [precision note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/025d4cd4eb9ba8ddfd0386ad7763cd61dd2eea681257a8cd26f6e53f0018f87d.gz)
+remain valid with their physical probe-length resources. The precision note
+distinguishes the small-leakage unitary construction from the zero approximant
+used when a leakage upper bound is at least one. Nothing in this assembly
+retroactively attributes the stronger boundary-sum result to that route.
+
+The earlier polynomial-resource estimates in the continuum/local-ground
+companion and near-ground comparison remain true at their stated hypotheses.
+They are distinct from this later proof. The parity-string resource lower
+bound diagnoses an approximation route; it is not a clustering counterexample.
+Fixed physical weights and common-tail replacements likewise describe failed
+estimates. The bilocal-defect example concerns an asserted strict propagation
+window, while the moving-carrier example concerns coefficient identification.
+Neither is relabelled a scalar correlation counterexample.
+
+The finite Lean source and recorded execution are retained in the lossless
+source archive with their original formal-path aliases. They prove exactly eight Ring product/commutator
+identities used for signs in the root alternative. They prove no exponential
+action, unitarity, polar geometry, norm estimate, Clifford averaging,
+propagation, gap, clustering or ground stability theorem. The independent
+boundary-sum argument receives no formal status from that leaf.
+
+Ordinary two-probe separation still needs control of the whole defect diameter
+or of the stated safe distance. Distant response measures distance to the whole
+defect. Arbitrary microscopic unit-ball choices receive no canonical continuum
+observable, and no theorem for general support geometry or infinite supports
+is added. The original historical pending labels describe their original
+chronology; the completed comparison above does not alter the supplied model,
+state-selection or representation premises.
+
+## Publication evidence and review record
+
+The [source map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/EVIDENCE_MAP.json) preserves exact
+proofs, completed comparisons, original exposure records and finite Ring
+source/log/receipt. Its compressed objects decode to their named original
+bytes. The [transformation map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/PUBLICATION_EDITS.json)
+records every wrapper change and all literal body boundaries.
+The registered primary tool checks source identity and reconstruction only;
+it executes zero mathematical predicates and supplies no proof or audit.
+The [N-gate record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/NO_GO_DISCIPLINE_CHECKLIST.md)
+retains N1/N5 pending. No new mathematical body edit or status promotion
+is introduced by publication preparation.
+
+
+Review-loop integration note: dependencies are integrated through main d5c0ccd2e578839f19362c9705986e1e585496e5 and the accompanying reviewed spatial/energy batch. Original analytic bodies and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority.

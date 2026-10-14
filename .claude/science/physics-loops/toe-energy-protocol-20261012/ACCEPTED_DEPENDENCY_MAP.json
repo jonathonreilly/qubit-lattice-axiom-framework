@@ -1,0 +1,286 @@
+{
+  "Current_status": "claim_type open_gate and literal Status open_gate; actual_current_surface_status conditional-support; not promoted",
+  "body_dependencies": {
+    "BV_PULSE_WORK_INDEPENDENT.md": {
+      "direct_sources": [
+        "FINITE_ENERGY_PULSE_LOCALITY_INDEPENDENT.md",
+        "FINITE_ENERGY_PULSE_LOCALITY_CROSSCHECK.md",
+        "SMOOTH_PULSE_ENERGY_INDEPENDENT.md",
+        "SMOOTH_PULSE_ENERGY_CROSSCHECK.md",
+        "BOUNDED_INTERACTION_GROUND_SYNTHESIS.md"
+      ],
+      "needed_roles": "Actual full-Fock Hamiltonian and ground; bounded response/correlation and static filtered spectrum; optional normal-CAR subsequence route inherits energy-transfer source. Sections 1-6 separately prove abstract bounded-pulse domain/work consequences."
+    },
+    "DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md": {
+      "direct_sources": [
+        "BV_PULSE_WORK_INDEPENDENT.md",
+        "BV_PULSE_WORK_CROSSCHECK.md",
+        "ADIABATIC_PREPARATION_SYNTHESIS.md",
+        "ADIABATIC_PREPARATION_SYNTHESIS_REVIEW.md",
+        "PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md",
+        "PREPARED_PULSE_ROBUSTNESS_CROSSCHECK.md",
+        "PREPARED_PULSE_ROBUSTNESS_ROOT_PROBE.md"
+      ],
+      "needed_roles": "Actual carrier, ground density/energy and specified orbit comparisons; bounded pulse implementer and work. The complete finite-protocol claim needs free-orbit inputs P39/P43 beyond the root D1 alone.",
+      "not_a_mathematical_dependency": [
+        "GRAPH_ENERGY_INDEPENDENT.md",
+        "TIME_SMEARED_TRANSFER_INDEPENDENT.md"
+      ]
+    },
+    "GRAPH_ENERGY_INDEPENDENT.md": {
+      "direct_sources": [
+        "BV_PULSE_WORK_INDEPENDENT.md",
+        "BV_PULSE_WORK_CROSSCHECK.md",
+        "ADIABATIC_PREPARATION_SYNTHESIS.md",
+        "ADIABATIC_PREPARATION_SYNTHESIS_REVIEW.md",
+        "TIME_SMEARED_TRANSFER_INDEPENDENT.md",
+        "TIME_SMEARED_TRANSFER_CROSSCHECK.md"
+      ],
+      "needed_roles": "BV graph identity; ramp common-domain and graph-integral argument; actual commuting free multipliers; time-average weak adjoint-domain commutator. General state and continuum extensions retain their separate hypotheses."
+    },
+    "PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md": {
+      "direct_sources": [
+        "BV_PULSE_WORK_INDEPENDENT.md",
+        "BV_PULSE_WORK_CROSSCHECK.md",
+        "ADIABATIC_PREPARATION_SYNTHESIS.md",
+        "ADIABATIC_PREPARATION_SYNTHESIS_REVIEW.md"
+      ],
+      "needed_roles": "Bounded work form, actual ground/gap, ramp excess, static/orbit limits; Local L18 and sections 3/6 L23-L24 supply actual ordinary-field normalization/support. No graph-energy improvement is imported."
+    }
+  },
+  "canonical_nodes": [
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 51903,
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 962,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "upstream_dependencies": [
+        "weighted_current_closure_bounded_theorem_note_2026-10-12",
+        "gapped_boost_invariance_bounded_theorem_note_2026-10-12",
+        "microscopic_boost_flow_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 31832,
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "claim_type": "open_gate",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 601,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "upstream_dependencies": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 36376,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 731,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "upstream_dependencies": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 61231,
+      "claim_id": "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 1199,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "upstream_dependencies": [
+        "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 69122,
+      "claim_id": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 1445,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "upstream_dependencies": [
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 63908,
+      "claim_id": "excitation_pulse_response_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 1356,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "upstream_dependencies": [
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+        "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 53292,
+      "claim_id": "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 1044,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "upstream_dependencies": [
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 38862,
+      "claim_id": "time_averaged_energy_transfer_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 806,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "earlier exact publication binding",
+      "relative_path": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "upstream_dependencies": [
+        "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+        "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 35981,
+      "claim_id": "weighted_current_closure_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 702,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "relative_path": "docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "c4d35e7b922959fcc74efe015e18f6c36db030af3fd3280b446b861e7cf14aa3",
+      "upstream_dependencies": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12",
+        "microscopic_joint_flow_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 44691,
+      "claim_id": "gapped_boost_invariance_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 853,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "relative_path": "docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "209e8bae9db47468ee4e9c00a91f19e382a313b69e38a6c1e8d3fa99d64f180c",
+      "upstream_dependencies": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 44845,
+      "claim_id": "microscopic_boost_flow_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 836,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "relative_path": "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "fdc67ccbf68ddc1448f8ba7cf452602777c3fd7caec8cc175bd58cb8c57480d7",
+      "upstream_dependencies": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12"
+      ]
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 38590,
+      "claim_id": "microscopic_current_implementation_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 440,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "relative_path": "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "3b59c6aebd78eca1ad72c69b9b73cfede0abd1a7a315389cf0c6c7eebeb20485",
+      "upstream_dependencies": []
+    },
+    {
+      "actual_current_surface_status": "conditional-support",
+      "bytes": 35738,
+      "claim_id": "microscopic_joint_flow_bounded_theorem_note_2026-10-12",
+      "claim_type": "bounded_theorem",
+      "effective_audit_status": "not inspected or promoted by this assembly",
+      "full_argument_reaudited_here": false,
+      "lines": 361,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pin_basis": "metadata-only transitive identity observed in supplied checkout",
+      "relative_path": "docs/MICROSCOPIC_JOINT_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "0179b4fd8f5c46b4da912f172754c40c4fb3c64ce34bf95ce1ff07c645e509c4",
+      "upstream_dependencies": [
+        "microscopic_current_implementation_bounded_theorem_note_2026-10-12"
+      ]
+    }
+  ],
+  "inherited_obligations": [
+    "supplied one-dimensional massive chain, Fock representation, state and parameters",
+    "bounded total selfadjoint interactions and even support wherever the larger gap is used",
+    "actual-space gaps and distinct unital observable versus isometric density/zero-resolvent placements",
+    "specified preparation vacuum and external protocol/control/readout prescriptions",
+    "static state/ground and appropriate fixed-window or explicitly growing-window orbit moduli",
+    "all provisional source dependencies and later independent retained audit"
+  ],
+  "schema": "energy-protocol-source-dependencies-v1",
+  "scope_limit": "Front-matter traversal records declared edges and exact bytes. It does not check every proof or every body citation, and does not convert metadata closure into scientific closure.",
+  "transitive_metadata_closure_complete": true,
+  "transitive_proof_audit_complete": false
+}

@@ -1,0 +1,259 @@
+{
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/candidates/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "accepted_candidate_sha256": "c2153751865f9bd9742d98596d7a58f741a631543ed327f6ac63bd946610e214",
+      "claim_id": "native_local_algebra_spatial_bounded_theorem_note_2026-10-12",
+      "key": "native",
+      "literal_citation_relocations": [],
+      "literal_metadata_removals": [],
+      "mathematical_body_edits": [],
+      "note": "docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3002,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 57,
+          "sha256": "42c07ba2d5b2c1e77107ee231630b888657b599d0b44c0ebbdbc2e3a0eeef724",
+          "source_wrapper_sha256": "b6f1694e01ad7fb447fb0d9ce2ecb7b67264205437797db58f26ad0fa4a7f1d7",
+          "text": "---\nclaim_id: native_local_algebra_spatial_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nassembly_status: publication_candidate_exact_root_review_pending\nscientific_execution: none_in_this_assembly\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nartifact_role: theorem\nconditional_surface_status: bounded consequences of the explicitly supplied model and representation\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional spatial estimates with literal hypotheses and controls\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: preserve conditional spatial control for later model-selection research; no existing blocker is closed\nrunner: scripts/native_local_algebra_spatial_identity_2026_10_12.py\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n  - continuum_local_ground_spatial_bounded_theorem_note_2026-10-12\n---\n\n# Native local-algebra spatial control\n\n**Type:** bounded_theorem\n\nThis note preserves the complete frozen independent native interval-algebra\nproof. It estimates correlations and distant ground response on entire even\nnorm unit balls of finite native intervals, with no polynomial-resource or\nphysical probe-length bound. Its interval geometry, supplied actual dynamics,\nfixed upper spacing and small total bounded even interaction remain hypotheses.\nThe constants are the sufficient constants of A5-A7; they are not optimized.\n\nThe signed native coefficient generator and even-spin realization are supplied\nby the exact [Concrete](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nand [Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nparents. The actual common-domain ground premise comes from\n[bounded interaction and ground selection](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md).\nThe [continuum/local-ground companion](CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md)\npreserves the earlier local-ground parent and its controls. The native proof\nreconstructs the propagation, ground differentiation and finite-measure filters;\nit does not infer them from favorable review labels.\n\nCurrent remains an open_gate with conditional-support surface status. All\nthese parent uses remain conditional and provisional; no transitive audit or\nretained authority is supplied. The following original body, including its\nhistorical status and exposure wording, is unchanged.\n\n<!-- BEGIN LITERAL SOURCE: NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md -->\n",
+          "wrapper_path": "wrappers/native_header.md"
+        },
+        {
+          "byte_offset": 3002,
+          "bytes": 1,
+          "first_line": 58,
+          "kind": "separator",
+          "last_line": 58,
+          "literal": "\n",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "byte_offset": 3003,
+          "bytes": 31037,
+          "first_line": 59,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "literal_source",
+          "last_line": 730,
+          "mathematical_body_edits": [],
+          "sha256": "d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md",
+          "source_sha256": "d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d"
+        },
+        {
+          "byte_offset": 34040,
+          "bytes": 5016,
+          "first_line": 731,
+          "kind": "publication_wrapper",
+          "last_line": 792,
+          "sha256": "f2544e515a13254869f5d1818c05ffe3c5d04df7620f5f8d21f7b90719d37ab4",
+          "source_wrapper_sha256": "ec7b6abae6b69a35cde008d337814281e156be92abadec04877c8c33eaa65754",
+          "text": "\n<!-- END LITERAL SOURCE: NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md -->\n\n## Assembly relationship and exact review scope\n\nThe literal body has SHA-256\nd8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d.\nIts complete [source-exposed comparison](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517.gz),\nSHA-256 0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517,\nrecords no required repair. The comparison is a same-family analytic check\nwith shared premises and disclosed prior exposure, not model-diverse or\nformal analytic verification. The source assembly was accepted by root for publication preparation only.\nThis publication wrapper still requires a separate exact root review.\n\nThe whole-unit-ball scope belongs to the independent Clifford-averaging and\ngeometric boundary-sum argument. The original\n[root alternative](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/29af13602f055120f50294e43be3e8dc24b2e79506dc14a059ccbb27cfa7ee3d.gz)\nand its [precision note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/025d4cd4eb9ba8ddfd0386ad7763cd61dd2eea681257a8cd26f6e53f0018f87d.gz)\nremain valid with their physical probe-length resources. The precision note\ndistinguishes the small-leakage unitary construction from the zero approximant\nused when a leakage upper bound is at least one. Nothing in this assembly\nretroactively attributes the stronger boundary-sum result to that route.\n\nThe earlier polynomial-resource estimates in the continuum/local-ground\ncompanion and near-ground comparison remain true at their stated hypotheses.\nThey are distinct from this later proof. The parity-string resource lower\nbound diagnoses an approximation route; it is not a clustering counterexample.\nFixed physical weights and common-tail replacements likewise describe failed\nestimates. The bilocal-defect example concerns an asserted strict propagation\nwindow, while the moving-carrier example concerns coefficient identification.\nNeither is relabelled a scalar correlation counterexample.\n\nThe finite Lean source and recorded execution are retained in the lossless\nsource archive with their original formal-path aliases. They prove exactly eight Ring product/commutator\nidentities used for signs in the root alternative. They prove no exponential\naction, unitarity, polar geometry, norm estimate, Clifford averaging,\npropagation, gap, clustering or ground stability theorem. The independent\nboundary-sum argument receives no formal status from that leaf.\n\nOrdinary two-probe separation still needs control of the whole defect diameter\nor of the stated safe distance. Distant response measures distance to the whole\ndefect. Arbitrary microscopic unit-ball choices receive no canonical continuum\nobservable, and no theorem for general support geometry or infinite supports\nis added. The original historical pending labels describe their original\nchronology; the completed comparison above does not alter the supplied model,\nstate-selection or representation premises.\n\n## Publication evidence and review record\n\nThe [source map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/EVIDENCE_MAP.json) preserves exact\nproofs, completed comparisons, original exposure records and finite Ring\nsource/log/receipt. Its compressed objects decode to their named original\nbytes. The [transformation map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/PUBLICATION_EDITS.json)\nrecords every wrapper change and all literal body boundaries.\nThe registered primary tool checks source identity and reconstruction only;\nit executes zero mathematical predicates and supplies no proof or audit.\nThe [N-gate record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/NO_GO_DISCIPLINE_CHECKLIST.md)\nretains N1/N5 pending. No new mathematical body edit or status promotion\nis introduced by publication preparation.\n\n\nReview-loop integration note: dependencies are integrated through main d5c0ccd2e578839f19362c9705986e1e585496e5 and the accompanying reviewed spatial/energy batch. Original analytic bodies and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority.\n",
+          "wrapper_path": "wrappers/native_appendix.md"
+        }
+      ],
+      "published_bytes": 39056,
+      "published_sha256": "b149acbe86bcafb47b0cb5e883c93795db4a926aeb009d0c9febd17b067cf718"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/candidates/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "accepted_candidate_sha256": "04ed66bc7b814ac855a935477db7883e656dbd9547874f458a446124634fad7b",
+      "claim_id": "continuum_local_ground_spatial_bounded_theorem_note_2026-10-12",
+      "key": "continuum",
+      "literal_citation_relocations": [],
+      "literal_metadata_removals": [],
+      "mathematical_body_edits": [],
+      "note": "docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 2847,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 56,
+          "sha256": "236a67d1e9638fb82fa3e3d7ba80eef080e41fd8dcf56142e3c12e66e62ab1b1",
+          "source_wrapper_sha256": "e71ed20836992d1d88ce0a36d7280178bcc5cf60a0403ad5d250f23bf3a6faa6",
+          "text": "---\nclaim_id: continuum_local_ground_spatial_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nassembly_status: publication_candidate_exact_root_review_pending\nscientific_execution: none_in_this_assembly\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nartifact_role: theorem\nconditional_surface_status: bounded consequences of the explicitly supplied model and representation\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional spatial estimates with literal hypotheses and controls\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: preserve conditional spatial control for later model-selection research; no existing blocker is closed\nrunner: scripts/continuum_local_ground_spatial_identity_2026_10_12.py\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n---\n\n# Continuum clustering and distant ground response\n\n**Type:** bounded_theorem\n\nThis note places two complete frozen arguments side by side. The first\nproves continuum ground clustering using the distance that permits passage\ninside the bounded defect interval. The second proves distant ground response,\nincluding a norm-unit-ball continuum local-algebra bound and the older\npolynomial-resource native bound. The G and L equation labels refer to their\nrespective unchanged source parts.\n\nThe exact physical model and coefficient support conventions are supplied by\n[Concrete](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nand [Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md).\nThe common-domain bounded perturbation and ground selection are supplied by\nthe [bounded-ground parent](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md).\nCurrent remains an open_gate; these sources remain conditional-support\npremises. No full-Fock statement is assigned the even-complement gap, and\nno local type-I tensor factor or trace compactness is presumed.\n\nBoth proofs use finite complex spectral measures for bounded even probes,\nincluding rough compact L2 fields and norm-closed local-algebra elements.\nThey require no positive excitation moment of the inserted vectors.\nCoupling interpolation is not physical preparation time. All source status,\nreview and exposure text below is preserved literally.\n\n<!-- BEGIN LITERAL SOURCE: GAPPED_LOCAL_CORRELATION_INDEPENDENT.md -->\n",
+          "wrapper_path": "wrappers/continuum_header.md"
+        },
+        {
+          "byte_offset": 2847,
+          "bytes": 1,
+          "first_line": 57,
+          "kind": "separator",
+          "last_line": 57,
+          "literal": "\n",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "byte_offset": 2848,
+          "bytes": 24755,
+          "first_line": 58,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "literal_source",
+          "last_line": 623,
+          "mathematical_body_edits": [],
+          "sha256": "22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/GAPPED_LOCAL_CORRELATION_INDEPENDENT.md",
+          "source_sha256": "22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e"
+        },
+        {
+          "byte_offset": 27603,
+          "bytes": 560,
+          "first_line": 624,
+          "kind": "publication_wrapper",
+          "last_line": 635,
+          "sha256": "2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e",
+          "source_wrapper_sha256": "2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e",
+          "text": "\n<!-- END LITERAL SOURCE: GAPPED_LOCAL_CORRELATION_INDEPENDENT.md -->\n\n## Second preserved source: distant ground response\n\nThe preceding source's fixed-defect correlation geometry is distinct from\nthe following distance to the entire interaction support. The native part\nbelow keeps its original observable expression resources. The sibling native\nlocal-algebra candidate supplies a later separate whole-unit-ball proof;\nthat later result is not substituted into this historical argument.\n\n<!-- BEGIN LITERAL SOURCE: LOCAL_GROUND_STABILITY_INDEPENDENT.md -->\n",
+          "wrapper_path": "wrappers/continuum_between.md"
+        },
+        {
+          "byte_offset": 28163,
+          "bytes": 28557,
+          "first_line": 636,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "literal_source",
+          "last_line": 1224,
+          "mathematical_body_edits": [],
+          "sha256": "5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/LOCAL_GROUND_STABILITY_INDEPENDENT.md",
+          "source_sha256": "5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e"
+        },
+        {
+          "byte_offset": 56720,
+          "bytes": 4216,
+          "first_line": 1225,
+          "kind": "publication_wrapper",
+          "last_line": 1281,
+          "sha256": "05a1042c2d209b78597f4b8495cf9f3fa072fa0c7b9fe9d0bac60faa408448a8",
+          "source_wrapper_sha256": "f1bfb9df80e15cea5e0cd8b340750d2bbc360e062c1ae6d83269e15e5f5d8338",
+          "text": "\n<!-- END LITERAL SOURCE: LOCAL_GROUND_STABILITY_INDEPENDENT.md -->\n\n## Assembly relationship and exact review scope\n\nThe first source has SHA-256\n22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e.\nIts complete [comparison](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/79f2c951b7c9319865e09a10950c73e235cbefa08de73791595f5ac940568378.gz)\nhas SHA-256\n79f2c951b7c9319865e09a10950c73e235cbefa08de73791595f5ac940568378.\nThe second source has SHA-256\n5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e.\nIts complete [comparison](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/df8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805.gz)\nhas SHA-256\ndf8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805.\nBoth comparisons record no required repair at their precise conditional\nscopes. They retain the distinct sufficient constants and complex-probe\ntreatments of the independent and root routes.\n\nThe earlier native parent's pending comparison labels are historical.\nThe completed native-lattice comparison and the later native local-algebra\ncomparison are carried as separate records. They do not rewrite the L2-L5\npolynomial-resource proof or make its older missing stronger estimate a\nglobal no-go. The subsequent whole-unit-ball result has its own independent\nsource, boundary-sum mechanism and scope.\n\nThe source controls distinguish internally bilocal propagation, distance from\nan arbitrary origin, and failure of a particular uniform moving-carrier\nidentification. Scalar native response remains uniform at its stated resources\nand whole-support distance, even where that carrier comparison fails.\nContinuum limits still need the specified potential, observable and ground\nidentifications; no sampling theorem for an entire varying native unit ball\nis inferred. Actual high branches, isometric state embeddings and unital\nobservable extensions retain their distinct roles.\n\nThe fixed support interval, bounded total norm, selected exact ground and\nsupplied full representation remain assumptions. These are equal-time\ntwo-block/static response conclusions, not unrestricted relative-time,\nextensive-interaction, physical-selection or empirical claims. This literal\nassembly adds no theorem. Root accepted the source assembly for publication\npreparation only; this publication wrapper requires separate exact review.\n\n## Publication evidence and review record\n\nThe [source map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/EVIDENCE_MAP.json) preserves exact\nproofs, completed comparisons, original exposure records and finite Ring\nsource/log/receipt. Its compressed objects decode to their named original\nbytes. The [transformation map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/PUBLICATION_EDITS.json)\nrecords every wrapper change and all literal body boundaries.\nThe registered primary tool checks source identity and reconstruction only;\nit executes zero mathematical predicates and supplies no proof or audit.\nThe [N-gate record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/NO_GO_DISCIPLINE_CHECKLIST.md)\nretains N1/N5 pending. No new mathematical body edit or status promotion\nis introduced by publication preparation.\n\n\nReview-loop integration note: dependencies are integrated through main d5c0ccd2e578839f19362c9705986e1e585496e5 and the accompanying reviewed spatial/energy batch. Original analytic bodies and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority.\n",
+          "wrapper_path": "wrappers/continuum_appendix.md"
+        }
+      ],
+      "published_bytes": 60936,
+      "published_sha256": "b524399f744a6bb427a9c9b4976fd5cbfa70fbc2ad258962aabb0254f4233fff"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/candidates/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "accepted_candidate_sha256": "d1a990891510fb52f80c7eaf8b005082b03f9b9f82cfc2dc86588acf4d139719",
+      "claim_id": "near_ground_spatial_correlation_bounded_theorem_note_2026-10-12",
+      "key": "near",
+      "literal_citation_relocations": [],
+      "literal_metadata_removals": [],
+      "mathematical_body_edits": [],
+      "note": "docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 3386,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 62,
+          "sha256": "3de13ac9f016401ca998fde5d79d16be50591a924bab64843c43f9cb90c44ee2",
+          "source_wrapper_sha256": "8c54958ebc57d721b56c12b947656e20652127385fc55d5eafac92aed73c191b",
+          "text": "---\nclaim_id: near_ground_spatial_correlation_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nassembly_status: publication_candidate_exact_root_review_pending\nscientific_execution: none_in_this_assembly\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nartifact_role: theorem\nconditional_surface_status: bounded consequences of the explicitly supplied model and representation\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional spatial estimates with literal hypotheses and controls\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: preserve conditional spatial control for later model-selection research; no existing blocker is closed\nrunner: scripts/near_ground_spatial_correlation_identity_2026_10_12.py\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - bounded_interaction_ground_bounded_theorem_note_2026-10-12\n  - continuum_local_ground_spatial_bounded_theorem_note_2026-10-12\n  - adiabatic_ground_preparation_bounded_theorem_note_2026-10-12\n  - excitation_pulse_response_bounded_theorem_note_2026-10-12\n---\n\n# Near-ground spatial correlation control\n\n**Type:** bounded_theorem\n\nThe complete frozen argument below controls connected correlations by actual\nexcess form energy above the selected gapped ground. It includes the explicit\ncoherent four-particle free-continuum family that prevents the stated uniform\nimprovement beyond square-root dependence, the linear alternative under ground-block diagonality,\nand clustering for each fixed normal free state with fixed translated probes.\nThese are different quantifiers, retained without alteration.\n\nThe exact [Concrete](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Current](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[Local](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nand [bounded-ground](BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nparents retain their supplied model and representation status; Current is\nstill an open_gate. The [continuum spatial companion](CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md)\ncontains the exact ground-clustering input. The archived comparison's\nspecified protocol substitutions have the separately conditional\n[preparation](ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nand [response/pulse](EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nparents. Those protocol inputs are not required for the general state-energy\ninequality or its coherent state-family counterexample.\n\nEven support of a density, parity invariance and evenness of a probe are\ndistinct conditions. The stronger even gap in the state error requires\neven-sector support. Arbitrary autonomous holds preserve the actual excess;\nthis does not supply an unrestricted long-time continuum operator comparison.\nThe following entire body retains its original hypotheses and exposure record.\n\n<!-- BEGIN LITERAL SOURCE: NEAR_GROUND_CLUSTERING_INDEPENDENT.md -->\n",
+          "wrapper_path": "wrappers/near_header.md"
+        },
+        {
+          "byte_offset": 3386,
+          "bytes": 1,
+          "first_line": 63,
+          "kind": "separator",
+          "last_line": 63,
+          "literal": "\n",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "byte_offset": 3387,
+          "bytes": 29346,
+          "first_line": 64,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "literal_source",
+          "last_line": 794,
+          "mathematical_body_edits": [],
+          "sha256": "3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NEAR_GROUND_CLUSTERING_INDEPENDENT.md",
+          "source_sha256": "3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b"
+        },
+        {
+          "byte_offset": 32733,
+          "bytes": 4173,
+          "first_line": 795,
+          "kind": "publication_wrapper",
+          "last_line": 851,
+          "sha256": "81cefdf2b5657144451ed540cc47c1807840ab7f012a587ef0bb084be2ffda3f",
+          "source_wrapper_sha256": "4b040fd09ecfebabf807c9ff83c2ac665eeb3c34f668f4e29950f17cf2281727",
+          "text": "\n<!-- END LITERAL SOURCE: NEAR_GROUND_CLUSTERING_INDEPENDENT.md -->\n\n## Assembly relationship and exact review scope\n\nThe literal core has SHA-256\n3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b.\nIts complete [source-exposed comparison](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/objects/b316b084ec3a9c106af5026d53783dabf401d23a33cb634f090a67d37143d225.gz)\nhas SHA-256\nb316b084ec3a9c106af5026d53783dabf401d23a33cb634f090a67d37143d225\nand records no required repair. It preserves the independent profile choice,\nstronger D(H) witness, all normalization constants, fixed-state positive result\nand pre-exposure provenance. The root alternative and its original seal are\ncarried separately; no alternative-source independence is invented here.\n\nThe square-root control is sharp in the stated uniform family of admissible\nfree-continuum states and distant fixed-profile probes. It is not a claim that\na chosen ramp or pulse realizes those states, nor a rate-optimality theorem for\nthat restricted protocol. Each fixed normal free state still has the precise\nfixed-probe clustering conclusion proved in N36-N37.\n\nThe comparison's native preparation consequence uses the earlier finite\npolynomial-resource theorem, with its defect geometry and temporal resources.\nIt remains valid at that scope. This assembly does not replace that premise\nwith the later whole-unit-ball theorem or assert a new protocol composition.\nIn particular no newer BV/prepared-pulse, propagation-limit, graph-energy or\nspatial-escape result is incorporated. The named preparation and pulse\nparents are provenance for the already checked conditional substitutions only.\n\nActual finite-spacing bounds use the stated unital observable convergence\nand isometric ground-density embedding. Full-Fock, even-ground and high-band\nprojections remain distinct. Fixed-profile/compact-parameter convergence does\nnot imply arbitrary moving-profile or growing relative-time convergence.\nThe bound uses actual interacting excess, not a free-energy ceiling alone.\n\nAll source reviews are ordinary same-family checks on shared exact premises.\nN1/N5 remain pending; the literal uniform-family obstruction is not an\nexhaustive no-go claim. No analytic Lean certificate, audit verdict, retained\npromotion, new state selector or new physical axiom is supplied. Root accepted the exact\nsource assembly for publication preparation only. The publication wrapper\nrequires separate exact root review.\n\n## Publication evidence and review record\n\nThe [source map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/EVIDENCE_MAP.json) preserves exact\nproofs, completed comparisons, original exposure records and finite Ring\nsource/log/receipt. Its compressed objects decode to their named original\nbytes. The [transformation map](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/PUBLICATION_EDITS.json)\nrecords every wrapper change and all literal body boundaries.\nThe registered primary tool checks source identity and reconstruction only;\nit executes zero mathematical predicates and supplies no proof or audit.\nThe [N-gate record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/4ff0ff1d7868b24d7854428110512daed13530f9/.claude/science/physics-loops/toe-spatial-control-20261012/NO_GO_DISCIPLINE_CHECKLIST.md)\nretains N1/N5 pending. No new mathematical body edit or status promotion\nis introduced by publication preparation.\n\n\nReview-loop integration note: dependencies are integrated through main d5c0ccd2e578839f19362c9705986e1e585496e5 and the accompanying reviewed spatial/energy batch. Original analytic bodies and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority.\n",
+          "wrapper_path": "wrappers/near_appendix.md"
+        }
+      ],
+      "published_bytes": 36906,
+      "published_sha256": "0ad01ee10ed0b23f9f19a09f8322df3095fb5fa8161f012da280c9a52f32c974"
+    }
+  ],
+  "original_body_edits": [],
+  "schema": "spatial-literal-publication-v1",
+  "source_freeze_sha256": "64e32c7f8382aeb375135c78f558baec64ff205316dcab62d2e310ea695c7269",
+  "wrapper_changes": [
+    {
+      "changed": true,
+      "diff": "diffs/continuum_appendix.diff",
+      "publication": "wrappers/continuum_appendix.md",
+      "publication_sha256": "05a1042c2d209b78597f4b8495cf9f3fa072fa0c7b9fe9d0bac60faa408448a8",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/continuum_appendix.md",
+      "source_sha256": "f1bfb9df80e15cea5e0cd8b340750d2bbc360e062c1ae6d83269e15e5f5d8338"
+    },
+    {
+      "changed": false,
+      "diff": "diffs/continuum_between.diff",
+      "publication": "wrappers/continuum_between.md",
+      "publication_sha256": "2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/continuum_between.md",
+      "source_sha256": "2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e"
+    },
+    {
+      "changed": true,
+      "diff": "diffs/continuum_header.diff",
+      "publication": "wrappers/continuum_header.md",
+      "publication_sha256": "236a67d1e9638fb82fa3e3d7ba80eef080e41fd8dcf56142e3c12e66e62ab1b1",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/continuum_header.md",
+      "source_sha256": "e71ed20836992d1d88ce0a36d7280178bcc5cf60a0403ad5d250f23bf3a6faa6"
+    },
+    {
+      "changed": true,
+      "diff": "diffs/native_appendix.diff",
+      "publication": "wrappers/native_appendix.md",
+      "publication_sha256": "f2544e515a13254869f5d1818c05ffe3c5d04df7620f5f8d21f7b90719d37ab4",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/native_appendix.md",
+      "source_sha256": "ec7b6abae6b69a35cde008d337814281e156be92abadec04877c8c33eaa65754"
+    },
+    {
+      "changed": true,
+      "diff": "diffs/native_header.diff",
+      "publication": "wrappers/native_header.md",
+      "publication_sha256": "42c07ba2d5b2c1e77107ee231630b888657b599d0b44c0ebbdbc2e3a0eeef724",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/native_header.md",
+      "source_sha256": "b6f1694e01ad7fb447fb0d9ce2ecb7b67264205437797db58f26ad0fa4a7f1d7"
+    },
+    {
+      "changed": true,
+      "diff": "diffs/near_appendix.diff",
+      "publication": "wrappers/near_appendix.md",
+      "publication_sha256": "81cefdf2b5657144451ed540cc47c1807840ab7f012a587ef0bb084be2ffda3f",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/near_appendix.md",
+      "source_sha256": "4b040fd09ecfebabf807c9ff83c2ac665eeb3c34f668f4e29950f17cf2281727"
+    },
+    {
+      "changed": true,
+      "diff": "diffs/near_header.diff",
+      "publication": "wrappers/near_header.md",
+      "publication_sha256": "3de13ac9f016401ca998fde5d79d16be50591a924bab64843c43f9cb90c44ee2",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/near_header.md",
+      "source_sha256": "8c54958ebc57d721b56c12b947656e20652127385fc55d5eafac92aed73c191b"
+    }
+  ]
+}

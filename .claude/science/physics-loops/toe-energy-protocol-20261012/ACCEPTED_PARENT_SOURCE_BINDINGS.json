@@ -1,0 +1,131 @@
+{
+  "finite_energy_pulse_parent": "The finite-energy pulse core 2ee875... and comparison dac8b4... are explicit archived provisional source dependencies. No matching canonical finite-energy-pulse note is asserted or substituted. The unrelated sector-selection note is not its canonical replacement.",
+  "git_verification_performed": false,
+  "historical_publication_identity_differences": [
+    {
+      "canonical_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "disposition": "Explicit historical publication-wrapper revision; selected live parent matches later frozen map and prior parent pins. No scientific source was refreshed or changed here.",
+      "matching_later_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map_published_sha256": "6babbed7f8fafb5a623d6f36b57d05377e23fa7326c398ebe0b4a1a3c4ef6249",
+      "selected_current_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2"
+    },
+    {
+      "canonical_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "disposition": "Explicit historical publication-wrapper revision; selected live parent matches later frozen map and prior parent pins. No scientific source was refreshed or changed here.",
+      "matching_later_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "older_map_published_sha256": "2b9c1904c93b903765f0af1830d6a04d4d0728d39f551ccc03f14c91e1d5c2bc",
+      "selected_current_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca"
+    }
+  ],
+  "live_main_reported_by_root": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "selected_canonical_pins": {
+    "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+    "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+    "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+    "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+    "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+    "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+    "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+    "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1"
+  },
+  "selected_checkout_base_reported_by_root": "4ff0ff1d7868b24d7854428110512daed13530f9",
+  "source_to_canonical_body_bindings": [
+    {
+      "binding_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "canonical_body_byte_end_exclusive": 56004,
+      "canonical_body_byte_start": 3100,
+      "canonical_path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "original": {
+        "bytes": 53058,
+        "lines": 1057,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+        "sha256": "b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9"
+      },
+      "source_transformations": [
+        {
+          "kind": "Markdown target-only relocation; labels and mathematics unchanged",
+          "new": "CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "old": "bounded_interaction_ground_synthesis/inputs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+        },
+        {
+          "kind": "Markdown target-only relocation; labels and mathematics unchanged",
+          "new": "CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "old": "bounded_interaction_ground_synthesis/inputs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+        },
+        {
+          "kind": "Markdown target-only relocation; labels and mathematics unchanged",
+          "new": "LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "old": "bounded_interaction_ground_synthesis/inputs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+        },
+        {
+          "kind": "Markdown target-only relocation; labels and mathematics unchanged",
+          "new": "ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "old": "bounded_interaction_ground_synthesis/inputs/ENERGY_TRANSFER_CORRELATION_SYNTHESIS.md"
+        }
+      ],
+      "transformed_body_sha256": "ba21be865a85a36da02d44aa134e2b435163e49833421e0ead7c13e67469fd1d"
+    },
+    {
+      "binding_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair/payload/.claude/science/physics-loops/toe-bounded-interactions-20261012/PUBLICATION_EDITS.json",
+      "canonical_body_byte_end_exclusive": 47220,
+      "canonical_body_byte_start": 3329,
+      "canonical_path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "original": {
+        "bytes": 43818,
+        "lines": 888,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ADIABATIC_PREPARATION_SYNTHESIS.md",
+        "sha256": "6d82cfece7f56a333c3583fa7e97b1b2e38edd5c414893ba128e70a74c60ba7c"
+      },
+      "source_transformations": [
+        {
+          "kind": "citation-only; no theorem premise change",
+          "new": "The actual ordinary-cell class supplied by Local sections 3 and 6 and\nCurrent C21/C25 satisfies (P39).",
+          "old": "The actual ordinary-cell class supplied by Local L10 and Current C21/C25\nsatisfies (P39).",
+          "original_lines": "744-745"
+        },
+        {
+          "kind": "citation-only; no theorem premise change",
+          "new": "Local section 6, especially L23-L24, supplies the even-spin representative\nin the finite physical cell hull of the compact supports; the cell averaging\nin section 3 gives at most one-cell endpoint enlargement.",
+          "old": "Local L10 supplies\nthe even-spin representative in the finite physical cell hull of the compact\nsupports, with at most one-cell endpoint enlargement.",
+          "original_lines": "763-765"
+        }
+      ],
+      "transformed_body_sha256": "6a8884c08bd6963ad1535a8a4ddf8aa26d2aa85863a13046848fe9a2a3c1efba"
+    },
+    {
+      "binding_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/response_transfer_publication_preparation/payload/.claude/science/physics-loops/toe-response-transfer-20261012/PUBLICATION_EDITS.json",
+      "canonical_body_byte_end_exclusive": 60514,
+      "canonical_body_byte_start": 3324,
+      "canonical_path": "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "original": {
+        "bytes": 57190,
+        "lines": 1247,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/EXCITATION_RESPONSE_PULSE_SYNTHESIS.md",
+        "sha256": "694e3962b6513089f7422e4c7f7f0a886488b2f2af81f2d8e04be9fea31247ce"
+      },
+      "source_transformations": [],
+      "transformed_body_sha256": "694e3962b6513089f7422e4c7f7f0a886488b2f2af81f2d8e04be9fea31247ce"
+    },
+    {
+      "binding_record": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/response_transfer_publication_preparation/payload/.claude/science/physics-loops/toe-response-transfer-20261012/PUBLICATION_EDITS.json",
+      "canonical_body_byte_end_exclusive": 35420,
+      "canonical_body_byte_start": 3382,
+      "canonical_path": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1",
+      "original": {
+        "bytes": 32038,
+        "lines": 696,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/TIME_SMEARED_TRANSFER_INDEPENDENT.md",
+        "sha256": "04eef4960b18d6b0e4a7f81852ddceea7fc081c855360bf613aaf9124e141984"
+      },
+      "source_transformations": [],
+      "transformed_body_sha256": "04eef4960b18d6b0e4a7f81852ddceea7fc081c855360bf613aaf9124e141984"
+    }
+  ],
+  "unresolved_expected_parent_hash_mismatches": []
+}

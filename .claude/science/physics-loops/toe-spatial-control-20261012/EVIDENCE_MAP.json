@@ -1,0 +1,3334 @@
+{
+  "accepted_source_package": {
+    "freeze_sha256": "64e32c7f8382aeb375135c78f558baec64ff205316dcab62d2e310ea695c7269",
+    "members": [
+      {
+        "bytes": 4672,
+        "path": "AUTHOR_COMPLETE_READ.json",
+        "sha256": "0baff703e54032d4d9aeb248d526df5e44815f7fee442fbb947fa389492b1541"
+      },
+      {
+        "bytes": 13471,
+        "path": "AUTHOR_SOURCE_BOOKKEEPING.json",
+        "sha256": "e9fd773c5eecc2e20b6d5d43cc197280ee8b0a0e9502c1e9c8f495f40d91df13"
+      },
+      {
+        "bytes": 11046,
+        "path": "CLAIM_DEPENDENCY_MAP.json",
+        "sha256": "876ef78f41752c3be2b9d2a49aafc215b815ac1dc911ef93318d6c38da4994d1"
+      },
+      {
+        "bytes": 2714,
+        "path": "FORMAL_LEAF_SCOPE.md",
+        "sha256": "187a92ac17ed9afd70e6a90b8e08a6d1cf6a25e93b416c9c3de20f3e45a8fb7d"
+      },
+      {
+        "bytes": 51659,
+        "path": "INPUT_SOURCE_MANIFEST.json",
+        "sha256": "4de1d92d287731b1753b4d27189d7f58f34676acd4fff6a2ebad000532f6e984"
+      },
+      {
+        "bytes": 5999,
+        "path": "LITERAL_SEGMENTS.json",
+        "sha256": "88a065965ac148e6173b931095937f917be6705267605a4ef1bd033f22a406ae"
+      },
+      {
+        "bytes": 4203,
+        "path": "NEUTRAL_PLAN.json",
+        "sha256": "5806e54f98639830abfbf1f269ccb205ecec86a14dff850960fef0dc1352645b"
+      },
+      {
+        "bytes": 3807,
+        "path": "PARENT_IDENTITIES.json",
+        "sha256": "3160cb7d2571e3bdbf5e9467c2d23521d31d624106fac1e440c0a8732ac017b9"
+      },
+      {
+        "bytes": 5040,
+        "path": "PROCEDURE_IDENTITY_REUSE.json",
+        "sha256": "63a05c0e93e920705dc409e9b703a1a2f85412cbbf17532bd059a7f20102785b"
+      },
+      {
+        "bytes": 3551,
+        "path": "README.md",
+        "sha256": "46c9f80a78925e57a2d5234b7baa64f87886d54929f474165af11c4e2d15006f"
+      },
+      {
+        "bytes": 6113,
+        "path": "READ_PROGRESS.json",
+        "sha256": "3cbfd959a174462949090b01357f68fc550c654d6fd25a87f8369e86733da165"
+      },
+      {
+        "bytes": 3708,
+        "path": "SCOPE_AND_REPAIR_REPORT.md",
+        "sha256": "fbd7cba6978428409a88e2063440491917c314d67d776d61ccb01cf4902a9b5a"
+      },
+      {
+        "bytes": 58233,
+        "path": "candidates/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "04ed66bc7b814ac855a935477db7883e656dbd9547874f458a446124634fad7b"
+      },
+      {
+        "bytes": 36118,
+        "path": "candidates/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "c2153751865f9bd9742d98596d7a58f741a631543ed327f6ac63bd946610e214"
+      },
+      {
+        "bytes": 34420,
+        "path": "candidates/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "d1a990891510fb52f80c7eaf8b005082b03f9b9f82cfc2dc86588acf4d139719"
+      },
+      {
+        "bytes": 5991,
+        "path": "diffs/continuum.diff",
+        "sha256": "1609311a6ac4baedae4a339b89498a013072021b94a66cbce01bda5e79995625"
+      },
+      {
+        "bytes": 5727,
+        "path": "diffs/native.diff",
+        "sha256": "5ad4b69afb27fd1eea6d84d82dea1b11b35056185451031db250572f9b28e83f"
+      },
+      {
+        "bytes": 5672,
+        "path": "diffs/near.diff",
+        "sha256": "729b719e680fc6eb641ab4ffe3f2218a1ee624b3dfdae5227cc59019f39afbc8"
+      },
+      {
+        "bytes": 69122,
+        "path": "parents/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca"
+      },
+      {
+        "bytes": 61231,
+        "path": "parents/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2"
+      },
+      {
+        "bytes": 51903,
+        "path": "parents/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05"
+      },
+      {
+        "bytes": 31832,
+        "path": "parents/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff"
+      },
+      {
+        "bytes": 63908,
+        "path": "parents/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef"
+      },
+      {
+        "bytes": 36376,
+        "path": "parents/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa"
+      },
+      {
+        "bytes": 1265,
+        "path": "procedures/AGENTS.md",
+        "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+      },
+      {
+        "bytes": 34639,
+        "path": "procedures/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      {
+        "bytes": 15435,
+        "path": "procedures/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      {
+        "bytes": 6427,
+        "path": "procedures/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "bytes": 2180,
+        "path": "procedures/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      {
+        "bytes": 16941,
+        "path": "procedures/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      },
+      {
+        "bytes": 9276,
+        "path": "procedures/docs/ai_methodology/skills/physics-loop/SKILL.md",
+        "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+      },
+      {
+        "bytes": 16755,
+        "path": "procedures/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      {
+        "bytes": 16454,
+        "path": "procedures/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      {
+        "bytes": 30709,
+        "path": "procedures/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+        "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+      },
+      {
+        "bytes": 7554,
+        "path": "procedures/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+      },
+      {
+        "bytes": 13419,
+        "path": "procedures/docs/ai_methodology/skills/workhorse/SKILL.md",
+        "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+      },
+      {
+        "bytes": 82110,
+        "path": "procedures/docs/audit/scripts/build_citation_graph.py",
+        "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae"
+      },
+      {
+        "bytes": 7903,
+        "path": "procedures/docs/audit/scripts/check_changed_audit_evidence.py",
+        "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a"
+      },
+      {
+        "bytes": 6826,
+        "path": "procedures/docs/audit/scripts/run_citation_graph_build.py",
+        "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+      },
+      {
+        "bytes": 2049,
+        "path": "procedures/docs/audit/scripts/write_citation_graph_manifest.py",
+        "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+      },
+      {
+        "bytes": 24941,
+        "path": "procedures/scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "bytes": 14183,
+        "path": "procedures/scripts/vocab_lint.py",
+        "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+      },
+      {
+        "bytes": 2012,
+        "path": "sources/formal/CliffordRotation.lean",
+        "sha256": "4e1868e2d52f2c11a2bcb2c5fcfb7a9702560a6a1ac8ae50bc699a2c30dd344a"
+      },
+      {
+        "bytes": 1484,
+        "path": "sources/formal/logs/attempt01/execution.json",
+        "sha256": "5bd208bbaed5a62dfd73515988fe15dfafd2f4de157acde269258f7be784c76f"
+      },
+      {
+        "bytes": 2012,
+        "path": "sources/formal/logs/attempt01/source.lean",
+        "sha256": "4e1868e2d52f2c11a2bcb2c5fcfb7a9702560a6a1ac8ae50bc699a2c30dd344a"
+      },
+      {
+        "bytes": 0,
+        "path": "sources/formal/logs/attempt01/stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 531,
+        "path": "sources/formal/logs/attempt01/stdout",
+        "sha256": "e4e0f0bdc67f535c0ad4debdbcbe2a96c2d650c4d64a543536c52bcdd86189c7"
+      },
+      {
+        "bytes": 53058,
+        "path": "sources/math/BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+        "sha256": "b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9"
+      },
+      {
+        "bytes": 19764,
+        "path": "sources/math/BOUNDED_INTERACTION_GROUND_SYNTHESIS_REVIEW.md",
+        "sha256": "af0cf7d6e9ea98fc92ac86df651c136cb2766f40571b814b69f3850304ebfe53"
+      },
+      {
+        "bytes": 16898,
+        "path": "sources/math/GAPPED_LOCAL_CORRELATION_CROSSCHECK.md",
+        "sha256": "79f2c951b7c9319865e09a10950c73e235cbefa08de73791595f5ac940568378"
+      },
+      {
+        "bytes": 24755,
+        "path": "sources/math/GAPPED_LOCAL_CORRELATION_INDEPENDENT.md",
+        "sha256": "22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e"
+      },
+      {
+        "bytes": 8992,
+        "path": "sources/math/GAPPED_LOCAL_CORRELATION_ROOT_PROBE.md",
+        "sha256": "606c7b92e73d86b2e72714e0b108818af42f6b5a6a7c1f8dc111204a1a6768aa"
+      },
+      {
+        "bytes": 23613,
+        "path": "sources/math/GROUND_SPECTRAL_RESPONSE_CROSSCHECK.md",
+        "sha256": "10c2bdb8e6e2ee65c0f85184cabc01f101f77b5b8ad1dcd3825e212fa9a9b185"
+      },
+      {
+        "bytes": 34230,
+        "path": "sources/math/GROUND_SPECTRAL_RESPONSE_INDEPENDENT.md",
+        "sha256": "e4a0f999ffc4cffd6ca53476a047acfd08de284444f02de8698f754cfa8a4d8d"
+      },
+      {
+        "bytes": 20689,
+        "path": "sources/math/LOCAL_GROUND_STABILITY_CROSSCHECK.md",
+        "sha256": "df8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805"
+      },
+      {
+        "bytes": 28557,
+        "path": "sources/math/LOCAL_GROUND_STABILITY_INDEPENDENT.md",
+        "sha256": "5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e"
+      },
+      {
+        "bytes": 9569,
+        "path": "sources/math/LOCAL_GROUND_STABILITY_ROOT_PROBE.md",
+        "sha256": "211679c882c33aebce693893328df3e597df8a130e1a68812db51172845beebd"
+      },
+      {
+        "bytes": 15548,
+        "path": "sources/math/NATIVE_LATTICE_CLUSTERING_CROSSCHECK.md",
+        "sha256": "034ac8597df673ebc884a57f04627f196458b1945d689ec70c3f849c94ff6946"
+      },
+      {
+        "bytes": 27945,
+        "path": "sources/math/NATIVE_LATTICE_CLUSTERING_INDEPENDENT.md",
+        "sha256": "7ec62ba1e2b3df609bb39c430653e2ca198da28ca1a5355e616ffc469db866e8"
+      },
+      {
+        "bytes": 23107,
+        "path": "sources/math/NATIVE_LOCAL_ALGEBRA_CROSSCHECK.md",
+        "sha256": "0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517"
+      },
+      {
+        "bytes": 31037,
+        "path": "sources/math/NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md",
+        "sha256": "d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d"
+      },
+      {
+        "bytes": 933,
+        "path": "sources/math/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION.md",
+        "sha256": "025d4cd4eb9ba8ddfd0386ad7763cd61dd2eea681257a8cd26f6e53f0018f87d"
+      },
+      {
+        "bytes": 11926,
+        "path": "sources/math/NATIVE_LOCAL_ALGEBRA_ROOT_PROBE.md",
+        "sha256": "29af13602f055120f50294e43be3e8dc24b2e79506dc14a059ccbb27cfa7ee3d"
+      },
+      {
+        "bytes": 21852,
+        "path": "sources/math/NEAR_GROUND_CLUSTERING_CROSSCHECK.md",
+        "sha256": "b316b084ec3a9c106af5026d53783dabf401d23a33cb634f090a67d37143d225"
+      },
+      {
+        "bytes": 29346,
+        "path": "sources/math/NEAR_GROUND_CLUSTERING_INDEPENDENT.md",
+        "sha256": "3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b"
+      },
+      {
+        "bytes": 7356,
+        "path": "sources/math/NEAR_GROUND_CLUSTERING_ROOT_PROBE.md",
+        "sha256": "9200dbdcc460848d6d3c359a0cf8c04b755caf391d607bb7a561ce2307c3e79d"
+      },
+      {
+        "bytes": 364,
+        "path": "sources/provenance/GAPPED_LOCAL_CORRELATION_ROOT_SEAL.json",
+        "sha256": "afe4cee20ea88109fa3e89ab05325f30a0403f8fa2ad30773fb90c30ec3479e6"
+      },
+      {
+        "bytes": 404,
+        "path": "sources/provenance/LOCAL_GROUND_STABILITY_ROOT_SEAL.json",
+        "sha256": "0f34e11f5eb78f8ade42bfb53e1196a3dc863acee053426130d78a14aa3b8ac1"
+      },
+      {
+        "bytes": 1011,
+        "path": "sources/provenance/NATIVE_LOCAL_ALGEBRA_LEAN_ROOT_READ.json",
+        "sha256": "8938b93e4fd5cffa9919556cd68988a1ee44cbc98066c897977e5bba1db253ad"
+      },
+      {
+        "bytes": 810,
+        "path": "sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_COMPARISON_READ.json",
+        "sha256": "a20d805ad31393dd1fc5aa67cea330f330bd71eab7d4c04aa61171b4c9b2f665"
+      },
+      {
+        "bytes": 430,
+        "path": "sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION_SEAL.json",
+        "sha256": "93553c410da517f665486bcdbd233f5a6841a5ce5c5ac60a402890875eec05e9"
+      },
+      {
+        "bytes": 411,
+        "path": "sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_SEAL.json",
+        "sha256": "777a267401ac0a77891bacac0e2d10767d6cb97f17ebca6d9c90922394c10f33"
+      },
+      {
+        "bytes": 353,
+        "path": "sources/provenance/NEAR_GROUND_CLUSTERING_ROOT_SEAL.json",
+        "sha256": "b6724a8fb761a891ec10571ee9b549b3f2db26e300a99ba8c153181dbb363ad7"
+      },
+      {
+        "bytes": 2869,
+        "path": "sources/provenance/SPATIAL_CONTROL_MILESTONE_CLUSTER_EVALUATION.md",
+        "sha256": "d6872270a49203644ab9f57d0e86a54d1ef3218df2a5b63f1571f965973e449d"
+      },
+      {
+        "bytes": 2258,
+        "path": "sources/provenance/gapped_local_correlation_independent/CORE_SEAL.json",
+        "sha256": "136973352433c96e29b0b72562f12580ac8cd18a2f6cf84f9320dfa219d0ec34"
+      },
+      {
+        "bytes": 648,
+        "path": "sources/provenance/gapped_local_correlation_independent/CROSSCHECK_FIRST_EXPOSURE.json",
+        "sha256": "02170e730a59c4b2a90918e3b3242f2b25f19af7e99e9b3cdb99bfc3d17c9616"
+      },
+      {
+        "bytes": 3648,
+        "path": "sources/provenance/gapped_local_correlation_independent/CROSSCHECK_INPUT_MANIFEST.json",
+        "sha256": "e21fc0184877fbe1c607d0dffd51803286621fde3f0bd54f4201ac1f98c5d319"
+      },
+      {
+        "bytes": 2087,
+        "path": "sources/provenance/gapped_local_correlation_independent/CROSSCHECK_SEAL.json",
+        "sha256": "83f067508692a2c5e9ea9311ad14f4affd66122425f936a6ea8c27d40419bbad"
+      },
+      {
+        "bytes": 2786,
+        "path": "sources/provenance/gapped_local_correlation_independent/FINAL_EXPOSURE.json",
+        "sha256": "24046331fa3dd3a57ed5c574bdc36c41c4d2496dbbc850dc3b8193bdefee88b5"
+      },
+      {
+        "bytes": 344,
+        "path": "sources/provenance/gapped_local_correlation_independent/INITIAL_EXPOSURE.json",
+        "sha256": "1fbc1686e4758d8322a3d2c8bcaee5edfccd149644561dea2425220600f4cdcf"
+      },
+      {
+        "bytes": 2700,
+        "path": "sources/provenance/gapped_local_correlation_independent/INPUT_MANIFEST.json",
+        "sha256": "86a39b4f7758a81900c95c450582c2c7cbc2e012f12bd05004b4fbe9db452ed8"
+      },
+      {
+        "bytes": 2616,
+        "path": "sources/provenance/gapped_local_correlation_independent/NEUTRAL_PLAN.md",
+        "sha256": "ee9598de29d55b3ec7e26c38095410d1577ec1e3d8364b71fa8c20b6bda5dcb9"
+      },
+      {
+        "bytes": 1835,
+        "path": "sources/provenance/local_ground_stability_independent/CORE_FREEZE.json",
+        "sha256": "17944ad6520cab6e76f471c60dcc71cf662a4f44bd0867842789afee3befed1b"
+      },
+      {
+        "bytes": 1769,
+        "path": "sources/provenance/local_ground_stability_independent/CROSSCHECK_FREEZE.json",
+        "sha256": "667d2c11f903ff92e0f3ecd06ce0fe07d3746c7206afc14c500c4fe5b07f6f01"
+      },
+      {
+        "bytes": 1729,
+        "path": "sources/provenance/local_ground_stability_independent/CROSSCHECK_INITIAL_EXPOSURE.json",
+        "sha256": "f4b4c87a0be81f8b803d3bb2de0541ca006bd5b34aabcbeafc7e8d1c339b70e8"
+      },
+      {
+        "bytes": 9171,
+        "path": "sources/provenance/local_ground_stability_independent/EXPOSURE_MANIFEST.json",
+        "sha256": "aec4843a8585e1e9c08989e92b25d2d98e395af3b641a75abb13dc3e3d0b0854"
+      },
+      {
+        "bytes": 1604,
+        "path": "sources/provenance/local_ground_stability_independent/INPUT_IDENTITIES.json",
+        "sha256": "d380b1eb915aac41da20bf690225987312b0d89e602b985dc254bd3f8e6b7f48"
+      },
+      {
+        "bytes": 1982,
+        "path": "sources/provenance/local_ground_stability_independent/NEUTRAL_PLAN.md",
+        "sha256": "d017465a571bf6e17678d533a276a527dad21aee5332b1a4296fabdba6b771bc"
+      },
+      {
+        "bytes": 3136,
+        "path": "sources/provenance/local_ground_stability_independent/PLAN_SEAL.json",
+        "sha256": "8b3ccd28f6fd0149df2877e7ef34f164d122304de56a3482e8826d516158a6ac"
+      },
+      {
+        "bytes": 4410,
+        "path": "sources/provenance/native_local_algebra_crosscheck/EXPOSURE_MANIFEST.json",
+        "sha256": "1d7bc9535d9d343fdf1b4e4b316102e3c5fe0649b20c4bddd339835ce070afe7"
+      },
+      {
+        "bytes": 5951,
+        "path": "sources/provenance/native_local_algebra_crosscheck/FINAL_INPUT_RECHECK.json",
+        "sha256": "ec957c9afc62192a4c6b9be46775a04f7a42b02cebb7c9a7ebfc89491be67d84"
+      },
+      {
+        "bytes": 2564,
+        "path": "sources/provenance/native_local_algebra_crosscheck/FREEZE.json",
+        "sha256": "97b751b759eed816be489c0d1b993b2abfa4124843edb2c08fac79572be43793"
+      },
+      {
+        "bytes": 16659,
+        "path": "sources/provenance/native_local_algebra_crosscheck/INPUT_MANIFEST.json",
+        "sha256": "5629d0dc77809ec65e74a1c419f8542ee0f5b261560bc29a19107d1f932508c3"
+      },
+      {
+        "bytes": 12770,
+        "path": "sources/provenance/native_local_algebra_crosscheck/READ_COVERAGE.json",
+        "sha256": "cb66c34f21d197bd04bfd791647fa38c300f24d55af5e9f1d6bd712b55402fbc"
+      },
+      {
+        "bytes": 1903,
+        "path": "sources/provenance/native_local_algebra_independent/CORE_FREEZE.json",
+        "sha256": "e6b5eed3fba068589aed878b6eb4aa02176a666e62621a7a319aa0534c212d45"
+      },
+      {
+        "bytes": 7750,
+        "path": "sources/provenance/native_local_algebra_independent/EXPOSURE_MANIFEST.json",
+        "sha256": "2091a39b31196b0cfbe3dcc5cd21b6872cec16538d979f6e1bcaee7b43fc7899"
+      },
+      {
+        "bytes": 926,
+        "path": "sources/provenance/native_local_algebra_independent/INPUT_IDENTITIES.md",
+        "sha256": "f9e325b2ff13a6de5d5ecab841050ddb77471dc0092c42a15382e8527c8e45bc"
+      },
+      {
+        "bytes": 2382,
+        "path": "sources/provenance/native_local_algebra_independent/NEUTRAL_PLAN.md",
+        "sha256": "a1ed1a8202f12727842d80633cad5315bea6da421f03cf98f999f7abf09e1acf"
+      },
+      {
+        "bytes": 670,
+        "path": "sources/provenance/native_local_algebra_independent/PLAN_SEAL.json",
+        "sha256": "b11498c9589c5bea2aa57b4d4b79c11f5ba296c540f612ee270184013e96eee3"
+      },
+      {
+        "bytes": 2123,
+        "path": "sources/provenance/near_ground_clustering_crosscheck/COMPLETE_READ_RECORD.json",
+        "sha256": "863fe5ab95757ec1e24fbb8e8d70ac4a71384e9f663ea1a7ccf1129708baff43"
+      },
+      {
+        "bytes": 2034,
+        "path": "sources/provenance/near_ground_clustering_crosscheck/FIRST_EXPOSURE.json",
+        "sha256": "7eafe7c9837af5574dd729ce7acbda924c9c43d4a007bc805ea7f55c3a599ee8"
+      },
+      {
+        "bytes": 8935,
+        "path": "sources/provenance/near_ground_clustering_crosscheck/INPUT_MANIFEST.json",
+        "sha256": "f7ba2eb41d45a74a095cdc5d3e3a847bf496b4b687984048f75b83f4ca20edd2"
+      },
+      {
+        "bytes": 2218,
+        "path": "sources/provenance/near_ground_clustering_crosscheck/NEUTRAL_PLAN.json",
+        "sha256": "edb9b78838be7d57e653e54def1c59d7c6cb85383f600533f9c188a70c76ef6b"
+      },
+      {
+        "bytes": 1113,
+        "path": "sources/provenance/near_ground_clustering_crosscheck/REVIEW_SEAL.json",
+        "sha256": "2412f37eff2cf2b8aed7b320709f50d5d95d159bd6436007286c084bfbef1d56"
+      },
+      {
+        "bytes": 5030,
+        "path": "sources/provenance/near_ground_clustering_independent/AUTHOR_COMPLETE_READ.json",
+        "sha256": "85f80a3a7c9689af83e485acfbdd11ae9fb98babbdbf38518b1240f0be6db30e"
+      },
+      {
+        "bytes": 1091,
+        "path": "sources/provenance/near_ground_clustering_independent/CORE_SEAL.json",
+        "sha256": "437f4cc151e2437a898edf03763344637820d71b8c9bd10568b0f4374346a6f5"
+      },
+      {
+        "bytes": 2016,
+        "path": "sources/provenance/near_ground_clustering_independent/EXPOSURE_RECORD.json",
+        "sha256": "f7d28a845311c6a87570ce20439378abe80e957563a1e8a9bf29fe0d46ab78d7"
+      },
+      {
+        "bytes": 2991,
+        "path": "sources/provenance/near_ground_clustering_independent/INPUT_MANIFEST.json",
+        "sha256": "54d4cdbbb3659737f19d9e7877c0e4db68d12e7f02a21de2c9fbf4ae0d6d31b5"
+      },
+      {
+        "bytes": 3754,
+        "path": "sources/provenance/near_ground_clustering_independent/NEUTRAL_PLAN.json",
+        "sha256": "63f23b76814e6faada8506d42407d2b8be1ed027230959e624213b32c86e675b"
+      },
+      {
+        "bytes": 2180,
+        "path": "wrappers/continuum_appendix.md",
+        "sha256": "f1bfb9df80e15cea5e0cd8b340750d2bbc360e062c1ae6d83269e15e5f5d8338"
+      },
+      {
+        "bytes": 560,
+        "path": "wrappers/continuum_between.md",
+        "sha256": "2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e"
+      },
+      {
+        "bytes": 2180,
+        "path": "wrappers/continuum_header.md",
+        "sha256": "e71ed20836992d1d88ce0a36d7280178bcc5cf60a0403ad5d250f23bf3a6faa6"
+      },
+      {
+        "bytes": 2743,
+        "path": "wrappers/native_appendix.md",
+        "sha256": "ec7b6abae6b69a35cde008d337814281e156be92abadec04877c8c33eaa65754"
+      },
+      {
+        "bytes": 2337,
+        "path": "wrappers/native_header.md",
+        "sha256": "b6f1694e01ad7fb447fb0d9ce2ecb7b67264205437797db58f26ad0fa4a7f1d7"
+      },
+      {
+        "bytes": 2322,
+        "path": "wrappers/near_appendix.md",
+        "sha256": "4b040fd09ecfebabf807c9ff83c2ac665eeb3c34f668f4e29950f17cf2281727"
+      },
+      {
+        "bytes": 2751,
+        "path": "wrappers/near_header.md",
+        "sha256": "8c54958ebc57d721b56c12b947656e20652127385fc55d5eafac92aed73c191b"
+      }
+    ],
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation"
+  },
+  "mathematical_predicates_executed": 0,
+  "objects": [
+    {
+      "bytes": 648,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/CROSSCHECK_FIRST_EXPOSURE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CROSSCHECK_FIRST_EXPOSURE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/02170e730a59c4b2a90918e3b3242f2b25f19af7e99e9b3cdb99bfc3d17c9616.gz",
+      "sha256": "02170e730a59c4b2a90918e3b3242f2b25f19af7e99e9b3cdb99bfc3d17c9616",
+      "stored_bytes": 421,
+      "stored_sha256": "9590550e9e27125730fee3cf12baf907bbbe83521af9cf4c6b15d4f97def3a8b"
+    },
+    {
+      "bytes": 933,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/025d4cd4eb9ba8ddfd0386ad7763cd61dd2eea681257a8cd26f6e53f0018f87d.gz",
+      "sha256": "025d4cd4eb9ba8ddfd0386ad7763cd61dd2eea681257a8cd26f6e53f0018f87d",
+      "stored_bytes": 545,
+      "stored_sha256": "96b65787faa6b3f44d655760df14cac06918cef8edb611238af02e70ba80349f"
+    },
+    {
+      "bytes": 15548,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LATTICE_CLUSTERING_CROSSCHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_CROSSCHECK.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/034ac8597df673ebc884a57f04627f196458b1945d689ec70c3f849c94ff6946.gz",
+      "sha256": "034ac8597df673ebc884a57f04627f196458b1945d689ec70c3f849c94ff6946",
+      "stored_bytes": 7052,
+      "stored_sha256": "6b309a83befbd14f95b9e3451f39fc672915db1e5aa36403a8a00b3188fb2feb"
+    },
+    {
+      "bytes": 58233,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/candidates/docs/CONTINUUM_LOCAL_GROUND_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/04ed66bc7b814ac855a935477db7883e656dbd9547874f458a446124634fad7b.gz",
+      "sha256": "04ed66bc7b814ac855a935477db7883e656dbd9547874f458a446124634fad7b",
+      "stored_bytes": 22126,
+      "stored_sha256": "7c330fb619046e6e5cb5cb031822269886341e2b294250c6a774aca276770c2e"
+    },
+    {
+      "bytes": 15435,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "stored_bytes": 6353,
+      "stored_sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a"
+    },
+    {
+      "bytes": 23107,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LOCAL_ALGEBRA_CROSSCHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_CROSSCHECK.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517.gz",
+      "sha256": "0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517",
+      "stored_bytes": 10353,
+      "stored_sha256": "ee333c5b4054b500e57a2c37246ea7b820ef224ec3daaed2568f83715591d791"
+    },
+    {
+      "bytes": 4672,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/AUTHOR_COMPLETE_READ.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/0baff703e54032d4d9aeb248d526df5e44815f7fee442fbb947fa389492b1541.gz",
+      "sha256": "0baff703e54032d4d9aeb248d526df5e44815f7fee442fbb947fa389492b1541",
+      "stored_bytes": 2106,
+      "stored_sha256": "79eb0ad9789e359bb393c1f08211d58ba9be4885d11298c9493fe76dd28b9dcb"
+    },
+    {
+      "bytes": 404,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/LOCAL_GROUND_STABILITY_ROOT_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_ROOT_SEAL.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/0f34e11f5eb78f8ade42bfb53e1196a3dc863acee053426130d78a14aa3b8ac1.gz",
+      "sha256": "0f34e11f5eb78f8ade42bfb53e1196a3dc863acee053426130d78a14aa3b8ac1",
+      "stored_bytes": 325,
+      "stored_sha256": "e276358fcc8c30b63f7ea648c8d1853a63573098f27fd38015bf91d0b7a35c30"
+    },
+    {
+      "bytes": 23613,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/GROUND_SPECTRAL_RESPONSE_CROSSCHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GROUND_SPECTRAL_RESPONSE_CROSSCHECK.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/10c2bdb8e6e2ee65c0f85184cabc01f101f77b5b8ad1dcd3825e212fa9a9b185.gz",
+      "sha256": "10c2bdb8e6e2ee65c0f85184cabc01f101f77b5b8ad1dcd3825e212fa9a9b185",
+      "stored_bytes": 9983,
+      "stored_sha256": "592dbf474aec1457c2b4c6d33e7c23ced51d206e46a2d17eee91a8480f546eaf"
+    },
+    {
+      "bytes": 2258,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/CORE_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CORE_SEAL.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/136973352433c96e29b0b72562f12580ac8cd18a2f6cf84f9320dfa219d0ec34.gz",
+      "sha256": "136973352433c96e29b0b72562f12580ac8cd18a2f6cf84f9320dfa219d0ec34",
+      "stored_bytes": 1006,
+      "stored_sha256": "2a3a84d10e675fa0fe8d0259fa37355dac8a940ef718f1c3ecd71681da2175b8"
+    },
+    {
+      "bytes": 5991,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/diffs/continuum.diff",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/1609311a6ac4baedae4a339b89498a013072021b94a66cbce01bda5e79995625.gz",
+      "sha256": "1609311a6ac4baedae4a339b89498a013072021b94a66cbce01bda5e79995625",
+      "stored_bytes": 2657,
+      "stored_sha256": "94f4748fc6c5d6e9472eea2d8351b9284987d52182701c3d8b0c2103b3a70d30"
+    },
+    {
+      "bytes": 1835,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/CORE_FREEZE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/CORE_FREEZE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/17944ad6520cab6e76f471c60dcc71cf662a4f44bd0867842789afee3befed1b.gz",
+      "sha256": "17944ad6520cab6e76f471c60dcc71cf662a4f44bd0867842789afee3befed1b",
+      "stored_bytes": 762,
+      "stored_sha256": "d749db5edc6aa29e23d45938e07e3dbbaaf17608ade154b9353b583b88f19ae7"
+    },
+    {
+      "bytes": 2714,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/FORMAL_LEAF_SCOPE.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/187a92ac17ed9afd70e6a90b8e08a6d1cf6a25e93b416c9c3de20f3e45a8fb7d.gz",
+      "sha256": "187a92ac17ed9afd70e6a90b8e08a6d1cf6a25e93b416c9c3de20f3e45a8fb7d",
+      "stored_bytes": 1378,
+      "stored_sha256": "512458e672d5748d5824a986de4ebc7f25341f8f659958a8df94cc8b2647a252"
+    },
+    {
+      "bytes": 4410,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_crosscheck/EXPOSURE_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/EXPOSURE_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/1d7bc9535d9d343fdf1b4e4b316102e3c5fe0649b20c4bddd339835ce070afe7.gz",
+      "sha256": "1d7bc9535d9d343fdf1b4e4b316102e3c5fe0649b20c4bddd339835ce070afe7",
+      "stored_bytes": 1820,
+      "stored_sha256": "be85fac4b0d86f0ffdd9cf2c9d4b862531052f20a3e46d615912d570ab09c5d7"
+    },
+    {
+      "bytes": 24941,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/scripts/runner_cache.py",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/runner_cache.py",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.gz",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "stored_bytes": 7467,
+      "stored_sha256": "1bb30c060ca8c4b6068e4c171c4587a53f4d397ac2d83f66b23326489f4444e7"
+    },
+    {
+      "bytes": 344,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/INITIAL_EXPOSURE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/INITIAL_EXPOSURE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/1fbc1686e4758d8322a3d2c8bcaee5edfccd149644561dea2425220600f4cdcf.gz",
+      "sha256": "1fbc1686e4758d8322a3d2c8bcaee5edfccd149644561dea2425220600f4cdcf",
+      "stored_bytes": 263,
+      "stored_sha256": "ee75f34cacfe865ae8b97c5a8f38987662f910f3ebf4eb5cbc6e6a31e53f96bd"
+    },
+    {
+      "bytes": 7750,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_independent/EXPOSURE_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/EXPOSURE_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/2091a39b31196b0cfbe3dcc5cd21b6872cec16538d979f6e1bcaee7b43fc7899.gz",
+      "sha256": "2091a39b31196b0cfbe3dcc5cd21b6872cec16538d979f6e1bcaee7b43fc7899",
+      "stored_bytes": 3607,
+      "stored_sha256": "24b58e2b8cd115cc4fb47c5aa401699f2750653ff18e7eb803da9d79827cd296"
+    },
+    {
+      "bytes": 9569,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/LOCAL_GROUND_STABILITY_ROOT_PROBE.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_ROOT_PROBE.md",
+          "role": "historical_comparison_input"
+        }
+      ],
+      "path": "objects/211679c882c33aebce693893328df3e597df8a130e1a68812db51172845beebd.gz",
+      "sha256": "211679c882c33aebce693893328df3e597df8a130e1a68812db51172845beebd",
+      "stored_bytes": 4265,
+      "stored_sha256": "fb739161b1e5c9c764ef7b08af332c1121d8d0d4397ed3012efdd3efa465bd92"
+    },
+    {
+      "bytes": 24755,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/GAPPED_LOCAL_CORRELATION_INDEPENDENT.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_INDEPENDENT.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e.gz",
+      "sha256": "22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e",
+      "stored_bytes": 10225,
+      "stored_sha256": "91e808aa4370eab05a6ca2604823527118c5a8d17786748cc04a1769943e833b"
+    },
+    {
+      "bytes": 51903,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/parents/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "canonical_conditional_parent"
+        }
+      ],
+      "path": "objects/2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05.gz",
+      "sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "stored_bytes": 21033,
+      "stored_sha256": "eef38f1b3c4444711571c8be3aa362cca28e7fee53d8c35270ca7407c1198f22"
+    },
+    {
+      "bytes": 2786,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/FINAL_EXPOSURE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/FINAL_EXPOSURE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/24046331fa3dd3a57ed5c574bdc36c41c4d2496dbbc850dc3b8193bdefee88b5.gz",
+      "sha256": "24046331fa3dd3a57ed5c574bdc36c41c4d2496dbbc850dc3b8193bdefee88b5",
+      "stored_bytes": 1030,
+      "stored_sha256": "6b18c6071087c4d0cf3c8d4515b0ca78ca18d750bb3ff9c74e626b698271f9d3"
+    },
+    {
+      "bytes": 1113,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_crosscheck/REVIEW_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/REVIEW_SEAL.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/2412f37eff2cf2b8aed7b320709f50d5d95d159bd6436007286c084bfbef1d56.gz",
+      "sha256": "2412f37eff2cf2b8aed7b320709f50d5d95d159bd6436007286c084bfbef1d56",
+      "stored_bytes": 662,
+      "stored_sha256": "8c0ecc4f0b1e08db441897a28fc6e3d43d44e59e058b03a865edaf83c687ab11"
+    },
+    {
+      "bytes": 11926,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LOCAL_ALGEBRA_ROOT_PROBE.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_PROBE.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/29af13602f055120f50294e43be3e8dc24b2e79506dc14a059ccbb27cfa7ee3d.gz",
+      "sha256": "29af13602f055120f50294e43be3e8dc24b2e79506dc14a059ccbb27cfa7ee3d",
+      "stored_bytes": 5382,
+      "stored_sha256": "b89f1032b7808f79a1a5db5f170dd47161b47ac3575a139c4515b59790ca227c"
+    },
+    {
+      "bytes": 560,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/continuum_between.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e.gz",
+      "sha256": "2a0254507a0b284df93dc62509a38cd61c8a09c4415fbd4a5338050fb5c1b91e",
+      "stored_bytes": 382,
+      "stored_sha256": "78ad094fdf18a2d06d7ead392c64bfe392fae31b34243476873fb8e8752e65b5"
+    },
+    {
+      "bytes": 34639,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "stored_bytes": 13238,
+      "stored_sha256": "f8dd35ca9c0a3ece0796ea04634d5fa56133cc7936ca3e406607aa773f7b2564"
+    },
+    {
+      "bytes": 3807,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/PARENT_IDENTITIES.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/3160cb7d2571e3bdbf5e9467c2d23521d31d624106fac1e440c0a8732ac017b9.gz",
+      "sha256": "3160cb7d2571e3bdbf5e9467c2d23521d31d624106fac1e440c0a8732ac017b9",
+      "stored_bytes": 1042,
+      "stored_sha256": "dba7b26ed7af9e57dc1498193e13a579f647b2415d1d7b9824e491233f8b7e6c"
+    },
+    {
+      "bytes": 6113,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/READ_PROGRESS.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/3cbfd959a174462949090b01357f68fc550c654d6fd25a87f8369e86733da165.gz",
+      "sha256": "3cbfd959a174462949090b01357f68fc550c654d6fd25a87f8369e86733da165",
+      "stored_bytes": 2011,
+      "stored_sha256": "776eea5f1793be609a8dd22da1d88848a8a9f407814845bfdb8d488241344523"
+    },
+    {
+      "bytes": 29346,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NEAR_GROUND_CLUSTERING_INDEPENDENT.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_INDEPENDENT.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b.gz",
+      "sha256": "3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b",
+      "stored_bytes": 11762,
+      "stored_sha256": "a519ee964a1085cf62010a1c0acc7c4f76e13fb6a448fc944ae2c9f1263c1079"
+    },
+    {
+      "bytes": 1091,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_independent/CORE_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/CORE_SEAL.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/437f4cc151e2437a898edf03763344637820d71b8c9bd10568b0f4374346a6f5.gz",
+      "sha256": "437f4cc151e2437a898edf03763344637820d71b8c9bd10568b0f4374346a6f5",
+      "stored_bytes": 644,
+      "stored_sha256": "5cf2753206872f137f6d634081cdc10fad74d97fa8ac535dacc67e47edcb3fa9"
+    },
+    {
+      "bytes": 3551,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/README.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/46c9f80a78925e57a2d5234b7baa64f87886d54929f474165af11c4e2d15006f.gz",
+      "sha256": "46c9f80a78925e57a2d5234b7baa64f87886d54929f474165af11c4e2d15006f",
+      "stored_bytes": 1792,
+      "stored_sha256": "9ee4ffb5e817c07b2653f689425649589ea1e27dacfe94feea1ed130c26df3ce"
+    },
+    {
+      "bytes": 2322,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/near_appendix.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/4b040fd09ecfebabf807c9ff83c2ac665eeb3c34f668f4e29950f17cf2281727.gz",
+      "sha256": "4b040fd09ecfebabf807c9ff83c2ac665eeb3c34f668f4e29950f17cf2281727",
+      "stored_bytes": 1312,
+      "stored_sha256": "c368c532c546759af477fdf6d0c459256d0edb74597464827f773333b7eb343f"
+    },
+    {
+      "bytes": 51659,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/INPUT_SOURCE_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/4de1d92d287731b1753b4d27189d7f58f34676acd4fff6a2ebad000532f6e984.gz",
+      "sha256": "4de1d92d287731b1753b4d27189d7f58f34676acd4fff6a2ebad000532f6e984",
+      "stored_bytes": 7482,
+      "stored_sha256": "47b6caa2f800d1ab0215778c50b14d5d5777b2632783b3b64aa2477df67adcc7"
+    },
+    {
+      "bytes": 2012,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/formal/CliffordRotation.lean",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/formal/logs/attempt01/source.lean",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/CliffordRotation.lean",
+          "role": "finite_ring_leaf_or_recorded_execution"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/source.lean",
+          "role": "finite_ring_leaf_or_recorded_execution"
+        }
+      ],
+      "path": "objects/4e1868e2d52f2c11a2bcb2c5fcfb7a9702560a6a1ac8ae50bc699a2c30dd344a.gz",
+      "sha256": "4e1868e2d52f2c11a2bcb2c5fcfb7a9702560a6a1ac8ae50bc699a2c30dd344a",
+      "stored_bytes": 534,
+      "stored_sha256": "a36dcd0761bf51e17c343d768b4ccbf5e45fffebb27daa27b943cdd08872bb95"
+    },
+    {
+      "bytes": 2991,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_independent/INPUT_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/INPUT_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/54d4cdbbb3659737f19d9e7877c0e4db68d12e7f02a21de2c9fbf4ae0d6d31b5.gz",
+      "sha256": "54d4cdbbb3659737f19d9e7877c0e4db68d12e7f02a21de2c9fbf4ae0d6d31b5",
+      "stored_bytes": 1029,
+      "stored_sha256": "450605ea8e4123a618232b63d133525a44afd56b82895d336a51d479b21af64a"
+    },
+    {
+      "bytes": 16659,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_crosscheck/INPUT_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/INPUT_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/5629d0dc77809ec65e74a1c419f8542ee0f5b261560bc29a19107d1f932508c3.gz",
+      "sha256": "5629d0dc77809ec65e74a1c419f8542ee0f5b261560bc29a19107d1f932508c3",
+      "stored_bytes": 2750,
+      "stored_sha256": "2dedf8faf9438f77d00102c4dc1861dfdd188130a90790424a45cd20562ae143"
+    },
+    {
+      "bytes": 4203,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/NEUTRAL_PLAN.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/5806e54f98639830abfbf1f269ccb205ecec86a14dff850960fef0dc1352645b.gz",
+      "sha256": "5806e54f98639830abfbf1f269ccb205ecec86a14dff850960fef0dc1352645b",
+      "stored_bytes": 1705,
+      "stored_sha256": "b9b898e744aa154c76a90b719de65d6b568c31383593abea58f0971905216487"
+    },
+    {
+      "bytes": 5727,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/diffs/native.diff",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/5ad4b69afb27fd1eea6d84d82dea1b11b35056185451031db250572f9b28e83f.gz",
+      "sha256": "5ad4b69afb27fd1eea6d84d82dea1b11b35056185451031db250572f9b28e83f",
+      "stored_bytes": 2549,
+      "stored_sha256": "b33670929f63bd0a70d992b12a3a51f0ebaa8212646c30ac5dc5db69c18b6aef"
+    },
+    {
+      "bytes": 4037,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SPATIAL_SOURCE_ROOT_ASSEMBLY_REVIEW.md",
+          "role": "root_source_assembly_acceptance_or_freshness"
+        }
+      ],
+      "path": "objects/5ba55c1d3afdde70ab04cded92e325d4461e78fb87c7d7d770c17447e2d1ba8e.gz",
+      "sha256": "5ba55c1d3afdde70ab04cded92e325d4461e78fb87c7d7d770c17447e2d1ba8e",
+      "stored_bytes": 2079,
+      "stored_sha256": "8f18ab9cf9cc1dfb41a286736a4d75bce22eb2138cf9974df1d36ea7d71daa0b"
+    },
+    {
+      "bytes": 1484,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/formal/logs/attempt01/execution.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/execution.json",
+          "role": "finite_ring_leaf_or_recorded_execution"
+        }
+      ],
+      "path": "objects/5bd208bbaed5a62dfd73515988fe15dfafd2f4de157acde269258f7be784c76f.gz",
+      "sha256": "5bd208bbaed5a62dfd73515988fe15dfafd2f4de157acde269258f7be784c76f",
+      "stored_bytes": 674,
+      "stored_sha256": "1e1a43751a4138f0c3d6d3863b6b6909f5fef2d4c3f5ce2b082409c777cb9245"
+    },
+    {
+      "bytes": 28557,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/LOCAL_GROUND_STABILITY_INDEPENDENT.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_INDEPENDENT.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e.gz",
+      "sha256": "5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e",
+      "stored_bytes": 11702,
+      "stored_sha256": "d802da6c8f33f357f84bfc38c62ec14187547e3fb6fc7b881419f393ff1f0e68"
+    },
+    {
+      "bytes": 8992,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/GAPPED_LOCAL_CORRELATION_ROOT_PROBE.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_ROOT_PROBE.md",
+          "role": "historical_comparison_input"
+        }
+      ],
+      "path": "objects/606c7b92e73d86b2e72714e0b108818af42f6b5a6a7c1f8dc111204a1a6768aa.gz",
+      "sha256": "606c7b92e73d86b2e72714e0b108818af42f6b5a6a7c1f8dc111204a1a6768aa",
+      "stored_bytes": 4106,
+      "stored_sha256": "a64619772a731c2a166cc850608e43706b744a73998dd4d0f7ecbb24674858fe"
+    },
+    {
+      "bytes": 5040,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/PROCEDURE_IDENTITY_REUSE.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/63a05c0e93e920705dc409e9b703a1a2f85412cbbf17532bd059a7f20102785b.gz",
+      "sha256": "63a05c0e93e920705dc409e9b703a1a2f85412cbbf17532bd059a7f20102785b",
+      "stored_bytes": 1476,
+      "stored_sha256": "de4751c55fb5722e10ceabadc42721d2a5f0b9b6a3552b04643d669035352e48"
+    },
+    {
+      "bytes": 3754,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_independent/NEUTRAL_PLAN.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/NEUTRAL_PLAN.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/63f23b76814e6faada8506d42407d2b8be1ed027230959e624213b32c86e675b.gz",
+      "sha256": "63f23b76814e6faada8506d42407d2b8be1ed027230959e624213b32c86e675b",
+      "stored_bytes": 1643,
+      "stored_sha256": "16a6b5c35c7d607c25f040179c291224852dbce1ca8aba2398b5f31e194d67db"
+    },
+    {
+      "bytes": 25408,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/SOURCE_FREEZE.json",
+          "role": "accepted_spatial_source_freeze"
+        }
+      ],
+      "path": "objects/64e32c7f8382aeb375135c78f558baec64ff205316dcab62d2e310ea695c7269.gz",
+      "sha256": "64e32c7f8382aeb375135c78f558baec64ff205316dcab62d2e310ea695c7269",
+      "stored_bytes": 7933,
+      "stored_sha256": "287b2aff2d7cb6a50842290c77982d285fa2bf267117f287f052117fcc4466ef"
+    },
+    {
+      "bytes": 1769,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/CROSSCHECK_FREEZE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/CROSSCHECK_FREEZE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/667d2c11f903ff92e0f3ecd06ce0fe07d3746c7206afc14c500c4fe5b07f6f01.gz",
+      "sha256": "667d2c11f903ff92e0f3ecd06ce0fe07d3746c7206afc14c500c4fe5b07f6f01",
+      "stored_bytes": 803,
+      "stored_sha256": "62c25674ba189d614c7b3a8c9d6aac9acde125bfc1d20771b78968b3fbb75dca"
+    },
+    {
+      "bytes": 63908,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/parents/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "canonical_conditional_parent"
+        }
+      ],
+      "path": "objects/6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef.gz",
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+      "stored_bytes": 24048,
+      "stored_sha256": "59cb722f7364f74c44fbf2ff0f2ec8677d4932af25c7ef642a21159cdc1d695d"
+    },
+    {
+      "bytes": 5672,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/diffs/near.diff",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/729b719e680fc6eb641ab4ffe3f2218a1ee624b3dfdae5227cc59019f39afbc8.gz",
+      "sha256": "729b719e680fc6eb641ab4ffe3f2218a1ee624b3dfdae5227cc59019f39afbc8",
+      "stored_bytes": 2528,
+      "stored_sha256": "69ad33d54ebf418da197dee5b042085754d2f3d1e08e8b65877acdb30b65c1d4"
+    },
+    {
+      "bytes": 31832,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/parents/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "canonical_conditional_parent"
+        }
+      ],
+      "path": "objects/763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff.gz",
+      "sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "stored_bytes": 13094,
+      "stored_sha256": "b60c6f98e54104458abccadf9274d433fcc4d923edaa2f1c6f6d85ae66ce49f1"
+    },
+    {
+      "bytes": 411,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_SEAL.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/777a267401ac0a77891bacac0e2d10767d6cb97f17ebca6d9c90922394c10f33.gz",
+      "sha256": "777a267401ac0a77891bacac0e2d10767d6cb97f17ebca6d9c90922394c10f33",
+      "stored_bytes": 326,
+      "stored_sha256": "b82c138a9a6de65f0215101fa90fcecdac9a3a94b278d1df6ed4f24058ae1b7c"
+    },
+    {
+      "bytes": 16898,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/GAPPED_LOCAL_CORRELATION_CROSSCHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_CROSSCHECK.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/79f2c951b7c9319865e09a10950c73e235cbefa08de73791595f5ac940568378.gz",
+      "sha256": "79f2c951b7c9319865e09a10950c73e235cbefa08de73791595f5ac940568378",
+      "stored_bytes": 7462,
+      "stored_sha256": "767fbb6ad8ea2692ef01f80b4759ec24b762ef3defd060dc515e95f1743b6310"
+    },
+    {
+      "bytes": 9276,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/physics-loop/SKILL.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/SKILL.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "stored_bytes": 4064,
+      "stored_sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d"
+    },
+    {
+      "bytes": 2034,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_crosscheck/FIRST_EXPOSURE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/FIRST_EXPOSURE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/7eafe7c9837af5574dd729ce7acbda924c9c43d4a007bc805ea7f55c3a599ee8.gz",
+      "sha256": "7eafe7c9837af5574dd729ce7acbda924c9c43d4a007bc805ea7f55c3a599ee8",
+      "stored_bytes": 856,
+      "stored_sha256": "d54554c849b4b74cb1d3575782925d6b5142138ca7b444b675e9a303759d73a8"
+    },
+    {
+      "bytes": 27945,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LATTICE_CLUSTERING_INDEPENDENT.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_INDEPENDENT.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/7ec62ba1e2b3df609bb39c430653e2ca198da28ca1a5355e616ffc469db866e8.gz",
+      "sha256": "7ec62ba1e2b3df609bb39c430653e2ca198da28ca1a5355e616ffc469db866e8",
+      "stored_bytes": 11656,
+      "stored_sha256": "7ff004c68b0038a104cfd8ef9c3e3ce61f9b8f7d5dce5244fe4caecb39319201"
+    },
+    {
+      "bytes": 30709,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "stored_bytes": 12552,
+      "stored_sha256": "4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4"
+    },
+    {
+      "bytes": 2829,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SPATIAL_SOURCE_REFRESH_2254.json",
+          "role": "root_source_assembly_acceptance_or_freshness"
+        }
+      ],
+      "path": "objects/80408b062fef6767239736c1b255dfbc3c4cf37f0ab6e5cc978cd9a34766f8ba.gz",
+      "sha256": "80408b062fef6767239736c1b255dfbc3c4cf37f0ab6e5cc978cd9a34766f8ba",
+      "stored_bytes": 1108,
+      "stored_sha256": "e53a8cad6351026ea161daf8a2ce64bbf73d53eae74654804c9ad13a11553324"
+    },
+    {
+      "bytes": 2087,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/CROSSCHECK_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CROSSCHECK_SEAL.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/83f067508692a2c5e9ea9311ad14f4affd66122425f936a6ea8c27d40419bbad.gz",
+      "sha256": "83f067508692a2c5e9ea9311ad14f4affd66122425f936a6ea8c27d40419bbad",
+      "stored_bytes": 886,
+      "stored_sha256": "31b3c42facb05bd965a46217ecbe21fdd9b7fd1841ff8ad09be17f71e7c32347"
+    },
+    {
+      "bytes": 61231,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/parents/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "canonical_conditional_parent"
+        }
+      ],
+      "path": "objects/8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2.gz",
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "stored_bytes": 22785,
+      "stored_sha256": "3c1ed4b8e79caa1c22e58ef7c4d8bfc417790e7db5d42ec63cead43e2787eea0"
+    },
+    {
+      "bytes": 5030,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_independent/AUTHOR_COMPLETE_READ.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/AUTHOR_COMPLETE_READ.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/85f80a3a7c9689af83e485acfbdd11ae9fb98babbdbf38518b1240f0be6db30e.gz",
+      "sha256": "85f80a3a7c9689af83e485acfbdd11ae9fb98babbdbf38518b1240f0be6db30e",
+      "stored_bytes": 2045,
+      "stored_sha256": "905df035e53a7177fc30aeae57e5cf0314b64826909786845de4be8ccb107127"
+    },
+    {
+      "bytes": 2123,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_crosscheck/COMPLETE_READ_RECORD.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/COMPLETE_READ_RECORD.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/863fe5ab95757ec1e24fbb8e8d70ac4a71384e9f663ea1a7ccf1129708baff43.gz",
+      "sha256": "863fe5ab95757ec1e24fbb8e8d70ac4a71384e9f663ea1a7ccf1129708baff43",
+      "stored_bytes": 1181,
+      "stored_sha256": "2d99c56c11ecf1d9431756649469c54ea7c6ff62785724aff20163cefe428775"
+    },
+    {
+      "bytes": 2700,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/INPUT_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/INPUT_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/86a39b4f7758a81900c95c450582c2c7cbc2e012f12bd05004b4fbe9db452ed8.gz",
+      "sha256": "86a39b4f7758a81900c95c450582c2c7cbc2e012f12bd05004b4fbe9db452ed8",
+      "stored_bytes": 978,
+      "stored_sha256": "32a757928ce634e18b1c0e8291ae526d3a903a796eee4be0dadb67df2fd12bc1"
+    },
+    {
+      "bytes": 11046,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/CLAIM_DEPENDENCY_MAP.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/876ef78f41752c3be2b9d2a49aafc215b815ac1dc911ef93318d6c38da4994d1.gz",
+      "sha256": "876ef78f41752c3be2b9d2a49aafc215b815ac1dc911ef93318d6c38da4994d1",
+      "stored_bytes": 2537,
+      "stored_sha256": "729a78874eada905b8e09c61e88de2e142206fc0f189bd067362fa16d1f906fc"
+    },
+    {
+      "bytes": 5999,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/LITERAL_SEGMENTS.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/88a065965ac148e6173b931095937f917be6705267605a4ef1bd033f22a406ae.gz",
+      "sha256": "88a065965ac148e6173b931095937f917be6705267605a4ef1bd033f22a406ae",
+      "stored_bytes": 1598,
+      "stored_sha256": "f2e219306ea2530b89fb57e42f515c3c613e5e0ab795cde0e1cef362bfb5818e"
+    },
+    {
+      "bytes": 1011,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/NATIVE_LOCAL_ALGEBRA_LEAN_ROOT_READ.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_LEAN_ROOT_READ.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/8938b93e4fd5cffa9919556cd68988a1ee44cbc98066c897977e5bba1db253ad.gz",
+      "sha256": "8938b93e4fd5cffa9919556cd68988a1ee44cbc98066c897977e5bba1db253ad",
+      "stored_bytes": 638,
+      "stored_sha256": "3e3ed271ed82421f778ffd3913179396188af1f53a33851e4ae977779290c617"
+    },
+    {
+      "bytes": 3136,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/PLAN_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/PLAN_SEAL.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/8b3ccd28f6fd0149df2877e7ef34f164d122304de56a3482e8826d516158a6ac.gz",
+      "sha256": "8b3ccd28f6fd0149df2877e7ef34f164d122304de56a3482e8826d516158a6ac",
+      "stored_bytes": 1234,
+      "stored_sha256": "2528787a9fe6d4798030c6e085c244b6852faa8d6f11e71cb3d5a75874aba25b"
+    },
+    {
+      "bytes": 2751,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/near_header.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/8c54958ebc57d721b56c12b947656e20652127385fc55d5eafac92aed73c191b.gz",
+      "sha256": "8c54958ebc57d721b56c12b947656e20652127385fc55d5eafac92aed73c191b",
+      "stored_bytes": 1266,
+      "stored_sha256": "f56096deb8f392304c4bca7fba28c0840da951864d5371f6aa701dc3f3d2fd7a"
+    },
+    {
+      "bytes": 7554,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.gz",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "stored_bytes": 3630,
+      "stored_sha256": "2b810691ebd17a412f702422ec88f33c9a9cdbb6fea77743f1dc7cebc398a065"
+    },
+    {
+      "bytes": 16941,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc.gz",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "stored_bytes": 6897,
+      "stored_sha256": "f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934"
+    },
+    {
+      "bytes": 7356,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NEAR_GROUND_CLUSTERING_ROOT_PROBE.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_ROOT_PROBE.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/9200dbdcc460848d6d3c359a0cf8c04b755caf391d607bb7a561ce2307c3e79d.gz",
+      "sha256": "9200dbdcc460848d6d3c359a0cf8c04b755caf391d607bb7a561ce2307c3e79d",
+      "stored_bytes": 3442,
+      "stored_sha256": "60361390ad92715deb927625c9c64b85f6dcc2c5321262312450660f4904b483"
+    },
+    {
+      "bytes": 430,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION_SEAL.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/93553c410da517f665486bcdbd233f5a6841a5ce5c5ac60a402890875eec05e9.gz",
+      "sha256": "93553c410da517f665486bcdbd233f5a6841a5ce5c5ac60a402890875eec05e9",
+      "stored_bytes": 340,
+      "stored_sha256": "a0642a249f94f7b49d363db9dc1fee15a6af65dd9787c503728f3a3491df15a2"
+    },
+    {
+      "bytes": 7903,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/audit/scripts/check_changed_audit_evidence.py",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/check_changed_audit_evidence.py",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz",
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "stored_bytes": 2676,
+      "stored_sha256": "c57bd51ce4e75af515fbf5e7904620229cc4943c2796499393885dc06c30bd4b"
+    },
+    {
+      "bytes": 2564,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_crosscheck/FREEZE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/FREEZE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/97b751b759eed816be489c0d1b993b2abfa4124843edb2c08fac79572be43793.gz",
+      "sha256": "97b751b759eed816be489c0d1b993b2abfa4124843edb2c08fac79572be43793",
+      "stored_bytes": 988,
+      "stored_sha256": "41164e082d8df27a5bc8cdc794a8b17c3f66eb4480f1c84a59b6e8149f6190a1"
+    },
+    {
+      "bytes": 13419,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/workhorse/SKILL.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/workhorse/SKILL.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb.gz",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "stored_bytes": 6019,
+      "stored_sha256": "e15b35db04ab3450d10ad261d2134083a37114ab123a7cb48ca8222591b0ba7c"
+    },
+    {
+      "bytes": 2382,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_independent/NEUTRAL_PLAN.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/NEUTRAL_PLAN.md",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/a1ed1a8202f12727842d80633cad5315bea6da421f03cf98f999f7abf09e1acf.gz",
+      "sha256": "a1ed1a8202f12727842d80633cad5315bea6da421f03cf98f999f7abf09e1acf",
+      "stored_bytes": 1254,
+      "stored_sha256": "802c112db2b83f16c3c19ae4c45bc7f644d3224d1a7ad5db35e98996ae494787"
+    },
+    {
+      "bytes": 810,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_COMPARISON_READ.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_COMPARISON_READ.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/a20d805ad31393dd1fc5aa67cea330f330bd71eab7d4c04aa61171b4c9b2f665.gz",
+      "sha256": "a20d805ad31393dd1fc5aa67cea330f330bd71eab7d4c04aa61171b4c9b2f665",
+      "stored_bytes": 515,
+      "stored_sha256": "d4bcd868fa495bfc32cdb4514941843c3ed9f6c2bcac2a2b3833536088832e41"
+    },
+    {
+      "bytes": 1643,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SPATIAL_SOURCE_ROOT_IDENTITY_2300.json",
+          "role": "root_source_assembly_acceptance_or_freshness"
+        }
+      ],
+      "path": "objects/a8c6146e75f1acb88666dd045aed75f0f70d34f405fefe457ea8f58994bcb615.gz",
+      "sha256": "a8c6146e75f1acb88666dd045aed75f0f70d34f405fefe457ea8f58994bcb615",
+      "stored_bytes": 873,
+      "stored_sha256": "9753e633d06a7b92e74c94edbb8b27bccf471ff420f80aec0725fff25497eae7"
+    },
+    {
+      "bytes": 9171,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/EXPOSURE_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/EXPOSURE_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/aec4843a8585e1e9c08989e92b25d2d98e395af3b641a75abb13dc3e3d0b0854.gz",
+      "sha256": "aec4843a8585e1e9c08989e92b25d2d98e395af3b641a75abb13dc3e3d0b0854",
+      "stored_bytes": 3263,
+      "stored_sha256": "4a005223c77150547b8c2376469f31ab0106d1a4de1984156d1934db184568a4"
+    },
+    {
+      "bytes": 19764,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/BOUNDED_INTERACTION_GROUND_SYNTHESIS_REVIEW.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_INTERACTION_GROUND_SYNTHESIS_REVIEW.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/af0cf7d6e9ea98fc92ac86df651c136cb2766f40571b814b69f3850304ebfe53.gz",
+      "sha256": "af0cf7d6e9ea98fc92ac86df651c136cb2766f40571b814b69f3850304ebfe53",
+      "stored_bytes": 8627,
+      "stored_sha256": "dbe95ee9f29ab3394e1481ee84edf4bd7f53756bf34534a0f3238421665bac5d"
+    },
+    {
+      "bytes": 364,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/GAPPED_LOCAL_CORRELATION_ROOT_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_ROOT_SEAL.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/afe4cee20ea88109fa3e89ab05325f30a0403f8fa2ad30773fb90c30ec3479e6.gz",
+      "sha256": "afe4cee20ea88109fa3e89ab05325f30a0403f8fa2ad30773fb90c30ec3479e6",
+      "stored_bytes": 299,
+      "stored_sha256": "1fe708c356271a18d56558c4f3de077aa61885755c2555734e632f778dcef817"
+    },
+    {
+      "bytes": 670,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_independent/PLAN_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/PLAN_SEAL.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/b11498c9589c5bea2aa57b4d4b79c11f5ba296c540f612ee270184013e96eee3.gz",
+      "sha256": "b11498c9589c5bea2aa57b4d4b79c11f5ba296c540f612ee270184013e96eee3",
+      "stored_bytes": 447,
+      "stored_sha256": "dcfe56ec42236c0bbc39ab24dac14142a61fb23c08f8e53fa4aabb7c0b6646ef"
+    },
+    {
+      "bytes": 2180,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "stored_bytes": 1138,
+      "stored_sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3"
+    },
+    {
+      "bytes": 2049,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/audit/scripts/write_citation_graph_manifest.py",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "stored_bytes": 1057,
+      "stored_sha256": "a30d8b2734d82ba86592593d7083416dea4deee7ea0fb7a130d721145d6a6ae6"
+    },
+    {
+      "bytes": 21852,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NEAR_GROUND_CLUSTERING_CROSSCHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_CROSSCHECK.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/b316b084ec3a9c106af5026d53783dabf401d23a33cb634f090a67d37143d225.gz",
+      "sha256": "b316b084ec3a9c106af5026d53783dabf401d23a33cb634f090a67d37143d225",
+      "stored_bytes": 9498,
+      "stored_sha256": "92840620158f023372734a499786bbd23e2144d955429fa9e6c89a813457cf46"
+    },
+    {
+      "bytes": 36376,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/parents/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "canonical_conditional_parent"
+        }
+      ],
+      "path": "objects/b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa.gz",
+      "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "stored_bytes": 15252,
+      "stored_sha256": "0b6c338e029062a49e8ecb2c527edfb4765ed739d1c59dd08e7f98bfe8804b22"
+    },
+    {
+      "bytes": 353,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/NEAR_GROUND_CLUSTERING_ROOT_SEAL.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_ROOT_SEAL.json",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/b6724a8fb761a891ec10571ee9b549b3f2db26e300a99ba8c153181dbb363ad7.gz",
+      "sha256": "b6724a8fb761a891ec10571ee9b549b3f2db26e300a99ba8c153181dbb363ad7",
+      "stored_bytes": 288,
+      "stored_sha256": "16a7d5991c420877ddbd5c58c71fe0f85ce6205d34367da610ee0064f9a176d1"
+    },
+    {
+      "bytes": 2337,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/native_header.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/b6f1694e01ad7fb447fb0d9ce2ecb7b67264205437797db58f26ad0fa4a7f1d7.gz",
+      "sha256": "b6f1694e01ad7fb447fb0d9ce2ecb7b67264205437797db58f26ad0fa4a7f1d7",
+      "stored_bytes": 1114,
+      "stored_sha256": "fdea70c510f8eb916a34823d450eb46de33f77ed51014bc43b07637e2fbb267d"
+    },
+    {
+      "bytes": 53058,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9.gz",
+      "sha256": "b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9",
+      "stored_bytes": 19749,
+      "stored_sha256": "e49da76f451f56853d74876c891d17046b84efc9579ab0686c657bffe80e66df"
+    },
+    {
+      "bytes": 16755,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "stored_bytes": 6504,
+      "stored_sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5"
+    },
+    {
+      "bytes": 36118,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/candidates/docs/NATIVE_LOCAL_ALGEBRA_SPATIAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/c2153751865f9bd9742d98596d7a58f741a631543ed327f6ac63bd946610e214.gz",
+      "sha256": "c2153751865f9bd9742d98596d7a58f741a631543ed327f6ac63bd946610e214",
+      "stored_bytes": 14226,
+      "stored_sha256": "7c5f129d3a98062372f1a0785b1fba2a8ba782c1093b35cea9704e401dfeaa67"
+    },
+    {
+      "bytes": 12770,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_crosscheck/READ_COVERAGE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/READ_COVERAGE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/cb66c34f21d197bd04bfd791647fa38c300f24d55af5e9f1d6bd712b55402fbc.gz",
+      "sha256": "cb66c34f21d197bd04bfd791647fa38c300f24d55af5e9f1d6bd712b55402fbc",
+      "stored_bytes": 3308,
+      "stored_sha256": "5a4568832485b846299053526d0e02c721924cb2d679be3946c406b40a659cc7"
+    },
+    {
+      "bytes": 1982,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/NEUTRAL_PLAN.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/NEUTRAL_PLAN.md",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/d017465a571bf6e17678d533a276a527dad21aee5332b1a4296fabdba6b771bc.gz",
+      "sha256": "d017465a571bf6e17678d533a276a527dad21aee5332b1a4296fabdba6b771bc",
+      "stored_bytes": 1062,
+      "stored_sha256": "55f9488684d5230ba8dc6bd05af9ad7463a0e8e9cd6341dcc2cd60aaaea10c6e"
+    },
+    {
+      "bytes": 34420,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/candidates/docs/NEAR_GROUND_SPATIAL_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/d1a990891510fb52f80c7eaf8b005082b03f9b9f82cfc2dc86588acf4d139719.gz",
+      "sha256": "d1a990891510fb52f80c7eaf8b005082b03f9b9f82cfc2dc86588acf4d139719",
+      "stored_bytes": 13473,
+      "stored_sha256": "c92636b15f2a412bfaf841898de8bffaeb2c3047042259a9393371ab2eac1a86"
+    },
+    {
+      "bytes": 1604,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/INPUT_IDENTITIES.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/INPUT_IDENTITIES.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/d380b1eb915aac41da20bf690225987312b0d89e602b985dc254bd3f8e6b7f48.gz",
+      "sha256": "d380b1eb915aac41da20bf690225987312b0d89e602b985dc254bd3f8e6b7f48",
+      "stored_bytes": 593,
+      "stored_sha256": "cbfc863de059b48ca6419fd74341cb6dfd5e6766c12ebfe22f1095b47ae726e6"
+    },
+    {
+      "bytes": 2869,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/SPATIAL_CONTROL_MILESTONE_CLUSTER_EVALUATION.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SPATIAL_CONTROL_MILESTONE_CLUSTER_EVALUATION.md",
+          "role": "scope_or_original_chronology"
+        }
+      ],
+      "path": "objects/d6872270a49203644ab9f57d0e86a54d1ef3218df2a5b63f1571f965973e449d.gz",
+      "sha256": "d6872270a49203644ab9f57d0e86a54d1ef3218df2a5b63f1571f965973e449d",
+      "stored_bytes": 1517,
+      "stored_sha256": "8fea6e98cec7f4f1256388ff66c989aa47f2250a59f282560f9835158c8a7042"
+    },
+    {
+      "bytes": 31037,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d.gz",
+      "sha256": "d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d",
+      "stored_bytes": 12504,
+      "stored_sha256": "951563bb31189f6278fc9e1562c4d36f1c7c7ba69e59e9c34b6b73dbea51aef5"
+    },
+    {
+      "bytes": 14183,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/scripts/vocab_lint.py",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/vocab_lint.py",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "stored_bytes": 4601,
+      "stored_sha256": "fbfa023afecaf284a743b1c41200f3d32881107e48640f96836bc9487a2a5cf9"
+    },
+    {
+      "bytes": 69122,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/parents/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "role": "canonical_conditional_parent"
+        }
+      ],
+      "path": "objects/dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca.gz",
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "stored_bytes": 25636,
+      "stored_sha256": "54576a206bc9fd5df6b45d6d1f12fd9f28713a7d1fc24ce3fdd84dd4c8dc3cbb"
+    },
+    {
+      "bytes": 82110,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/audit/scripts/build_citation_graph.py",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/build_citation_graph.py",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae.gz",
+      "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae",
+      "stored_bytes": 20141,
+      "stored_sha256": "48637539f6c5d391e18a79a6686577a666451fcdc3fe32699c562d1195465798"
+    },
+    {
+      "bytes": 20689,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/LOCAL_GROUND_STABILITY_CROSSCHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_CROSSCHECK.md",
+          "role": "primary_frozen_proof_or_exact_source_comparison"
+        }
+      ],
+      "path": "objects/df8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805.gz",
+      "sha256": "df8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805",
+      "stored_bytes": 8874,
+      "stored_sha256": "6447ad437804a1a270d5852803ccc8c101c11c00ae80a096b373a5421e2c38ec"
+    },
+    {
+      "bytes": 3648,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/CROSSCHECK_INPUT_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CROSSCHECK_INPUT_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/e21fc0184877fbe1c607d0dffd51803286621fde3f0bd54f4201ac1f98c5d319.gz",
+      "sha256": "e21fc0184877fbe1c607d0dffd51803286621fde3f0bd54f4201ac1f98c5d319",
+      "stored_bytes": 1172,
+      "stored_sha256": "c4c6efc10fae150ab10604b00cc8d21130772c91dedfc691ae325e8de3002f35"
+    },
+    {
+      "bytes": 16454,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "stored_bytes": 6972,
+      "stored_sha256": "50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0"
+    },
+    {
+      "bytes": 0,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/formal/logs/attempt01/stderr",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/stderr",
+          "role": "finite_ring_leaf_or_recorded_execution"
+        }
+      ],
+      "path": "objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 34230,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/math/GROUND_SPECTRAL_RESPONSE_INDEPENDENT.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GROUND_SPECTRAL_RESPONSE_INDEPENDENT.md",
+          "role": "supplied_analytic_parent_or_reviewed_alternative"
+        }
+      ],
+      "path": "objects/e4a0f999ffc4cffd6ca53476a047acfd08de284444f02de8698f754cfa8a4d8d.gz",
+      "sha256": "e4a0f999ffc4cffd6ca53476a047acfd08de284444f02de8698f754cfa8a4d8d",
+      "stored_bytes": 13478,
+      "stored_sha256": "026861ae9590a8198472ef44c6eafd9328be11ac9caa6e002f486ea533e10809"
+    },
+    {
+      "bytes": 531,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/formal/logs/attempt01/stdout",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/stdout",
+          "role": "finite_ring_leaf_or_recorded_execution"
+        }
+      ],
+      "path": "objects/e4e0f0bdc67f535c0ad4debdbcbe2a96c2d650c4d64a543536c52bcdd86189c7.gz",
+      "sha256": "e4e0f0bdc67f535c0ad4debdbcbe2a96c2d650c4d64a543536c52bcdd86189c7",
+      "stored_bytes": 140,
+      "stored_sha256": "3193002cef2e03742a8e6c0198559a2c9dac59c0b40ddc1c908a7bbae373e4c5"
+    },
+    {
+      "bytes": 1903,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_independent/CORE_FREEZE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/CORE_FREEZE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/e6b5eed3fba068589aed878b6eb4aa02176a666e62621a7a319aa0534c212d45.gz",
+      "sha256": "e6b5eed3fba068589aed878b6eb4aa02176a666e62621a7a319aa0534c212d45",
+      "stored_bytes": 952,
+      "stored_sha256": "83a0c21c2ba0430966c085a490236309cb518ba8615e8ce7a3f3fc85eccd73a5"
+    },
+    {
+      "bytes": 2180,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/continuum_header.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/e71ed20836992d1d88ce0a36d7280178bcc5cf60a0403ad5d250f23bf3a6faa6.gz",
+      "sha256": "e71ed20836992d1d88ce0a36d7280178bcc5cf60a0403ad5d250f23bf3a6faa6",
+      "stored_bytes": 1080,
+      "stored_sha256": "e5d3d5704cd7b3a7a46e8a0b1b5f796192583b6e50c8147c639a419ebfcc9dea"
+    },
+    {
+      "bytes": 6826,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/audit/scripts/run_citation_graph_build.py",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/run_citation_graph_build.py",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.gz",
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "stored_bytes": 2509,
+      "stored_sha256": "bde06cd28ea6b1f7ed4468687b99b794b7d04f458f8e10eaa18f13eb57d7bda0"
+    },
+    {
+      "bytes": 13471,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/AUTHOR_SOURCE_BOOKKEEPING.json",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/e9fd773c5eecc2e20b6d5d43cc197280ee8b0a0e9502c1e9c8f495f40d91df13.gz",
+      "sha256": "e9fd773c5eecc2e20b6d5d43cc197280ee8b0a0e9502c1e9c8f495f40d91df13",
+      "stored_bytes": 2727,
+      "stored_sha256": "a0ac6af8a8b087960bcaeb8d3b7866dbb3b155ab30b0bb17ed81fd44743b5861"
+    },
+    {
+      "bytes": 2743,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/native_appendix.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/ec7b6abae6b69a35cde008d337814281e156be92abadec04877c8c33eaa65754.gz",
+      "sha256": "ec7b6abae6b69a35cde008d337814281e156be92abadec04877c8c33eaa65754",
+      "stored_bytes": 1444,
+      "stored_sha256": "36c58fd393db7d101ed92c863d0bc11a796b2c431922ee8e2cf77efabb79f27a"
+    },
+    {
+      "bytes": 5951,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_crosscheck/FINAL_INPUT_RECHECK.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/FINAL_INPUT_RECHECK.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/ec957c9afc62192a4c6b9be46775a04f7a42b02cebb7c9a7ebfc89491be67d84.gz",
+      "sha256": "ec957c9afc62192a4c6b9be46775a04f7a42b02cebb7c9a7ebfc89491be67d84",
+      "stored_bytes": 1509,
+      "stored_sha256": "6a8dbd42d111cc5a719a48fe206be420d88e33fbefa02277e35c2eab9b15a671"
+    },
+    {
+      "bytes": 2218,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_crosscheck/NEUTRAL_PLAN.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/NEUTRAL_PLAN.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/edb9b78838be7d57e653e54def1c59d7c6cb85383f600533f9c188a70c76ef6b.gz",
+      "sha256": "edb9b78838be7d57e653e54def1c59d7c6cb85383f600533f9c188a70c76ef6b",
+      "stored_bytes": 1108,
+      "stored_sha256": "21b39f5a84130b19d98447484b370ce6cccec5cac6d57d519c5d5ae9a7795008"
+    },
+    {
+      "bytes": 2616,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/gapped_local_correlation_independent/NEUTRAL_PLAN.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/NEUTRAL_PLAN.md",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/ee9598de29d55b3ec7e26c38095410d1577ec1e3d8364b71fa8c20b6bda5dcb9.gz",
+      "sha256": "ee9598de29d55b3ec7e26c38095410d1577ec1e3d8364b71fa8c20b6bda5dcb9",
+      "stored_bytes": 1376,
+      "stored_sha256": "53891f83d659243219d62fb81cd26b8b48dc8cb690cf832c667f03220ce802a4"
+    },
+    {
+      "bytes": 2180,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/wrappers/continuum_appendix.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/f1bfb9df80e15cea5e0cd8b340750d2bbc360e062c1ae6d83269e15e5f5d8338.gz",
+      "sha256": "f1bfb9df80e15cea5e0cd8b340750d2bbc360e062c1ae6d83269e15e5f5d8338",
+      "stored_bytes": 1232,
+      "stored_sha256": "83918918c23e3327140581d24dd7eca5d3708fb3630944a6658cb287c0e35559"
+    },
+    {
+      "bytes": 6427,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.gz",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "stored_bytes": 2513,
+      "stored_sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6"
+    },
+    {
+      "bytes": 1729,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/local_ground_stability_independent/CROSSCHECK_INITIAL_EXPOSURE.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/CROSSCHECK_INITIAL_EXPOSURE.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/f4b4c87a0be81f8b803d3bb2de0541ca006bd5b34aabcbeafc7e8d1c339b70e8.gz",
+      "sha256": "f4b4c87a0be81f8b803d3bb2de0541ca006bd5b34aabcbeafc7e8d1c339b70e8",
+      "stored_bytes": 839,
+      "stored_sha256": "18b5f0c92e176dcb6dfafa328f8ce8a391752eef5d99c9156a2a9beb1b0d6c1c"
+    },
+    {
+      "bytes": 8935,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_crosscheck/INPUT_MANIFEST.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/INPUT_MANIFEST.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/f7ba2eb41d45a74a095cdc5d3e3a847bf496b4b687984048f75b83f4ca20edd2.gz",
+      "sha256": "f7ba2eb41d45a74a095cdc5d3e3a847bf496b4b687984048f75b83f4ca20edd2",
+      "stored_bytes": 2123,
+      "stored_sha256": "6911caceb746059140615605633e8d042c4b4f0405cc73c8ec978421e5198860"
+    },
+    {
+      "bytes": 2016,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/near_ground_clustering_independent/EXPOSURE_RECORD.json",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/EXPOSURE_RECORD.json",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/f7d28a845311c6a87570ce20439378abe80e957563a1e8a9bf29fe0d46ab78d7.gz",
+      "sha256": "f7d28a845311c6a87570ce20439378abe80e957563a1e8a9bf29fe0d46ab78d7",
+      "stored_bytes": 888,
+      "stored_sha256": "73327376cfb04c5b0e70e8d29b97c0982e70bc711552b35cedb10fda7f900a37"
+    },
+    {
+      "bytes": 1265,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/procedures/AGENTS.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+          "role": "governing_instruction_or_unchanged_procedure"
+        }
+      ],
+      "path": "objects/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "stored_bytes": 724,
+      "stored_sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf"
+    },
+    {
+      "bytes": 926,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/sources/provenance/native_local_algebra_independent/INPUT_IDENTITIES.md",
+          "role": "accepted_spatial_source_member"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/INPUT_IDENTITIES.md",
+          "role": "historical_plan_exposure_or_seal"
+        }
+      ],
+      "path": "objects/f9e325b2ff13a6de5d5ecab841050ddb77471dc0092c42a15382e8527c8e45bc.gz",
+      "sha256": "f9e325b2ff13a6de5d5ecab841050ddb77471dc0092c42a15382e8527c8e45bc",
+      "stored_bytes": 620,
+      "stored_sha256": "f2dbe1a07eb080496af8938cd2d2eae2bff218d38ea5a23475009f0769f4db00"
+    },
+    {
+      "bytes": 3708,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/spatial_control_source_preparation/SCOPE_AND_REPAIR_REPORT.md",
+          "role": "accepted_spatial_source_member"
+        }
+      ],
+      "path": "objects/fbd7cba6978428409a88e2063440491917c314d67d776d61ccb01cf4902a9b5a.gz",
+      "sha256": "fbd7cba6978428409a88e2063440491917c314d67d776d61ccb01cf4902a9b5a",
+      "stored_bytes": 1779,
+      "stored_sha256": "5328b8889ea6c88400b78d3f3837eb1c7db3e51adfdc7a80a8a79f38a61a7b22"
+    }
+  ],
+  "root_source_records": {
+    "SPATIAL_SOURCE_REFRESH_2254.json": "80408b062fef6767239736c1b255dfbc3c4cf37f0ab6e5cc978cd9a34766f8ba",
+    "SPATIAL_SOURCE_ROOT_ASSEMBLY_REVIEW.md": "5ba55c1d3afdde70ab04cded92e325d4461e78fb87c7d7d770c17447e2d1ba8e",
+    "SPATIAL_SOURCE_ROOT_IDENTITY_2300.json": "a8c6146e75f1acb88666dd045aed75f0f70d34f405fefe457ea8f58994bcb615"
+  },
+  "schema": "spatial-publication-archive-v1",
+  "scope": "Lossless source/provenance archive. Absolute original aliases are never runtime reads. Historical nested records retain their original scope and do not certify an entire old package.",
+  "source_copy_pairs": [
+    {
+      "bytes": 69122,
+      "copy": "parents/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "coverage": "Prior complete unchanged coverage reused; exact source freshness checked without Git",
+      "lines": 1445,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "role": "canonical_conditional_parent",
+      "sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca"
+    },
+    {
+      "bytes": 61231,
+      "copy": "parents/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "coverage": "Prior complete unchanged coverage reused; exact source freshness checked without Git",
+      "lines": 1199,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "role": "canonical_conditional_parent",
+      "sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2"
+    },
+    {
+      "bytes": 51903,
+      "copy": "parents/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "coverage": "Prior complete unchanged coverage reused; exact source freshness checked without Git",
+      "lines": 962,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "role": "canonical_conditional_parent",
+      "sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05"
+    },
+    {
+      "bytes": 31832,
+      "copy": "parents/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "coverage": "Prior complete unchanged coverage reused; exact source freshness checked without Git",
+      "lines": 601,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "role": "canonical_conditional_parent",
+      "sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff"
+    },
+    {
+      "bytes": 63908,
+      "copy": "parents/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "coverage": "Prior complete unchanged coverage reused; exact source freshness checked without Git",
+      "lines": 1356,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "role": "canonical_conditional_parent",
+      "sha256": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef"
+    },
+    {
+      "bytes": 36376,
+      "copy": "parents/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "coverage": "Prior complete unchanged coverage reused; exact source freshness checked without Git",
+      "lines": 731,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "role": "canonical_conditional_parent",
+      "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa"
+    },
+    {
+      "bytes": 1265,
+      "copy": "procedures/AGENTS.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 27,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "bytes": 34639,
+      "copy": "procedures/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 536,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "bytes": 15435,
+      "copy": "procedures/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 245,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "bytes": 6427,
+      "copy": "procedures/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 130,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "bytes": 2180,
+      "copy": "procedures/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 35,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 16941,
+      "copy": "procedures/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 354,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "bytes": 9276,
+      "copy": "procedures/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 140,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "bytes": 16755,
+      "copy": "procedures/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 336,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "bytes": 16454,
+      "copy": "procedures/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 309,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "bytes": 30709,
+      "copy": "procedures/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 434,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "bytes": 7554,
+      "copy": "procedures/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 140,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "bytes": 13419,
+      "copy": "procedures/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 239,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/skills/workhorse/SKILL.md",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "bytes": 82110,
+      "copy": "procedures/docs/audit/scripts/build_citation_graph.py",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 1441,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/build_citation_graph.py",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "df4e1a20357554d15f630faf5bab3c37f758097fe7c66e93572ac3b9b792ccae"
+    },
+    {
+      "bytes": 7903,
+      "copy": "procedures/docs/audit/scripts/check_changed_audit_evidence.py",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 214,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/check_changed_audit_evidence.py",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a"
+    },
+    {
+      "bytes": 6826,
+      "copy": "procedures/docs/audit/scripts/run_citation_graph_build.py",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 205,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/run_citation_graph_build.py",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42"
+    },
+    {
+      "bytes": 2049,
+      "copy": "procedures/docs/audit/scripts/write_citation_graph_manifest.py",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 57,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    {
+      "bytes": 24941,
+      "copy": "procedures/scripts/runner_cache.py",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 673,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/runner_cache.py",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "bytes": 14183,
+      "copy": "procedures/scripts/vocab_lint.py",
+      "coverage": "Prior complete applicable coverage reused; identity copied only; no procedure execution",
+      "lines": 392,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/vocab_lint.py",
+      "role": "governing_instruction_or_unchanged_procedure",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+    },
+    {
+      "bytes": 2012,
+      "copy": "sources/formal/CliffordRotation.lean",
+      "coverage": "Complete source/log/receipt read; empty stderr checked; no rerun; compiled object intentionally not needed or copied",
+      "lines": 68,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/CliffordRotation.lean",
+      "role": "finite_ring_leaf_or_recorded_execution",
+      "sha256": "4e1868e2d52f2c11a2bcb2c5fcfb7a9702560a6a1ac8ae50bc699a2c30dd344a"
+    },
+    {
+      "bytes": 1484,
+      "copy": "sources/formal/logs/attempt01/execution.json",
+      "coverage": "Complete source/log/receipt read; empty stderr checked; no rerun; compiled object intentionally not needed or copied",
+      "lines": 27,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/execution.json",
+      "role": "finite_ring_leaf_or_recorded_execution",
+      "sha256": "5bd208bbaed5a62dfd73515988fe15dfafd2f4de157acde269258f7be784c76f"
+    },
+    {
+      "bytes": 2012,
+      "copy": "sources/formal/logs/attempt01/source.lean",
+      "coverage": "Complete source/log/receipt read; empty stderr checked; no rerun; compiled object intentionally not needed or copied",
+      "lines": 68,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/source.lean",
+      "role": "finite_ring_leaf_or_recorded_execution",
+      "sha256": "4e1868e2d52f2c11a2bcb2c5fcfb7a9702560a6a1ac8ae50bc699a2c30dd344a"
+    },
+    {
+      "bytes": 0,
+      "copy": "sources/formal/logs/attempt01/stderr",
+      "coverage": "Complete source/log/receipt read; empty stderr checked; no rerun; compiled object intentionally not needed or copied",
+      "lines": 0,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/stderr",
+      "role": "finite_ring_leaf_or_recorded_execution",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 531,
+      "copy": "sources/formal/logs/attempt01/stdout",
+      "coverage": "Complete source/log/receipt read; empty stderr checked; no rerun; compiled object intentionally not needed or copied",
+      "lines": 8,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_lean/logs/attempt01/stdout",
+      "role": "finite_ring_leaf_or_recorded_execution",
+      "sha256": "e4e0f0bdc67f535c0ad4debdbcbe2a96c2d650c4d64a543536c52bcdd86189c7"
+    },
+    {
+      "bytes": 53058,
+      "copy": "sources/math/BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 1057,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_INTERACTION_GROUND_SYNTHESIS.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "b8bcba769100bf819885937d850a7bff8543e4233c1df3cf65f68372552160e9"
+    },
+    {
+      "bytes": 19764,
+      "copy": "sources/math/BOUNDED_INTERACTION_GROUND_SYNTHESIS_REVIEW.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 307,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_INTERACTION_GROUND_SYNTHESIS_REVIEW.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "af0cf7d6e9ea98fc92ac86df651c136cb2766f40571b814b69f3850304ebfe53"
+    },
+    {
+      "bytes": 16898,
+      "copy": "sources/math/GAPPED_LOCAL_CORRELATION_CROSSCHECK.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 325,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_CROSSCHECK.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "79f2c951b7c9319865e09a10950c73e235cbefa08de73791595f5ac940568378"
+    },
+    {
+      "bytes": 24755,
+      "copy": "sources/math/GAPPED_LOCAL_CORRELATION_INDEPENDENT.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 566,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_INDEPENDENT.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "22b57614cc79fe7db0fec7d5861363da64b1bda205a93f153acf274c28c5910e"
+    },
+    {
+      "bytes": 8992,
+      "copy": "sources/math/GAPPED_LOCAL_CORRELATION_ROOT_PROBE.md",
+      "coverage": "Complete new source read after archival copy, as a historical compared alternative; not a new primary candidate premise",
+      "lines": 180,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_ROOT_PROBE.md",
+      "role": "historical_comparison_input",
+      "sha256": "606c7b92e73d86b2e72714e0b108818af42f6b5a6a7c1f8dc111204a1a6768aa"
+    },
+    {
+      "bytes": 23613,
+      "copy": "sources/math/GROUND_SPECTRAL_RESPONSE_CROSSCHECK.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 433,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GROUND_SPECTRAL_RESPONSE_CROSSCHECK.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "10c2bdb8e6e2ee65c0f85184cabc01f101f77b5b8ad1dcd3825e212fa9a9b185"
+    },
+    {
+      "bytes": 34230,
+      "copy": "sources/math/GROUND_SPECTRAL_RESPONSE_INDEPENDENT.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 717,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GROUND_SPECTRAL_RESPONSE_INDEPENDENT.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "e4a0f999ffc4cffd6ca53476a047acfd08de284444f02de8698f754cfa8a4d8d"
+    },
+    {
+      "bytes": 20689,
+      "copy": "sources/math/LOCAL_GROUND_STABILITY_CROSSCHECK.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 411,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_CROSSCHECK.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "df8d5785933c0fcca37aa36b8ad537a17ec0e2ab59bac258a67b705bf8703805"
+    },
+    {
+      "bytes": 28557,
+      "copy": "sources/math/LOCAL_GROUND_STABILITY_INDEPENDENT.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 589,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_INDEPENDENT.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "5bf44abe2d7d4896bd239f23c8abafb740c2a89d974fc75bfb02bdf2d6cbf36e"
+    },
+    {
+      "bytes": 9569,
+      "copy": "sources/math/LOCAL_GROUND_STABILITY_ROOT_PROBE.md",
+      "coverage": "Complete new source read after archival copy, as a historical compared alternative; not a new primary candidate premise",
+      "lines": 209,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_ROOT_PROBE.md",
+      "role": "historical_comparison_input",
+      "sha256": "211679c882c33aebce693893328df3e597df8a130e1a68812db51172845beebd"
+    },
+    {
+      "bytes": 15548,
+      "copy": "sources/math/NATIVE_LATTICE_CLUSTERING_CROSSCHECK.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 336,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_CROSSCHECK.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "034ac8597df673ebc884a57f04627f196458b1945d689ec70c3f849c94ff6946"
+    },
+    {
+      "bytes": 27945,
+      "copy": "sources/math/NATIVE_LATTICE_CLUSTERING_INDEPENDENT.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 604,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_INDEPENDENT.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "7ec62ba1e2b3df609bb39c430653e2ca198da28ca1a5355e616ffc469db866e8"
+    },
+    {
+      "bytes": 23107,
+      "copy": "sources/math/NATIVE_LOCAL_ALGEBRA_CROSSCHECK.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 428,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_CROSSCHECK.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "0a5e693a1cc00b53019fa2bf5f0878ff65eb77d5d2b144e1bd1e21c4715cc517"
+    },
+    {
+      "bytes": 31037,
+      "copy": "sources/math/NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 672,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_INDEPENDENT.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "d8caaf1056853a1f6917b8d30f0400a1e0a25347a02ac6f2309b381c0356d73d"
+    },
+    {
+      "bytes": 933,
+      "copy": "sources/math/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 5,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "025d4cd4eb9ba8ddfd0386ad7763cd61dd2eea681257a8cd26f6e53f0018f87d"
+    },
+    {
+      "bytes": 11926,
+      "copy": "sources/math/NATIVE_LOCAL_ALGEBRA_ROOT_PROBE.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 268,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_PROBE.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "29af13602f055120f50294e43be3e8dc24b2e79506dc14a059ccbb27cfa7ee3d"
+    },
+    {
+      "bytes": 21852,
+      "copy": "sources/math/NEAR_GROUND_CLUSTERING_CROSSCHECK.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 426,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_CROSSCHECK.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "b316b084ec3a9c106af5026d53783dabf401d23a33cb634f090a67d37143d225"
+    },
+    {
+      "bytes": 29346,
+      "copy": "sources/math/NEAR_GROUND_CLUSTERING_INDEPENDENT.md",
+      "coverage": "New or reused complete read at exact identity; see READ_PROGRESS.json",
+      "lines": 731,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_INDEPENDENT.md",
+      "role": "primary_frozen_proof_or_exact_source_comparison",
+      "sha256": "3ccc98a7a03d1617476bd14d25e3a64f20b33c12c0ffd16e9aec06fe0e88a76b"
+    },
+    {
+      "bytes": 7356,
+      "copy": "sources/math/NEAR_GROUND_CLUSTERING_ROOT_PROBE.md",
+      "coverage": "Complete coverage newly read or reused at unchanged identity; not a new primary candidate segment",
+      "lines": 156,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_ROOT_PROBE.md",
+      "role": "supplied_analytic_parent_or_reviewed_alternative",
+      "sha256": "9200dbdcc460848d6d3c359a0cf8c04b755caf391d607bb7a561ce2307c3e79d"
+    },
+    {
+      "bytes": 364,
+      "copy": "sources/provenance/GAPPED_LOCAL_CORRELATION_ROOT_SEAL.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 7,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_ROOT_SEAL.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "afe4cee20ea88109fa3e89ab05325f30a0403f8fa2ad30773fb90c30ec3479e6"
+    },
+    {
+      "bytes": 404,
+      "copy": "sources/provenance/LOCAL_GROUND_STABILITY_ROOT_SEAL.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 8,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOCAL_GROUND_STABILITY_ROOT_SEAL.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "0f34e11f5eb78f8ade42bfb53e1196a3dc863acee053426130d78a14aa3b8ac1"
+    },
+    {
+      "bytes": 1011,
+      "copy": "sources/provenance/NATIVE_LOCAL_ALGEBRA_LEAN_ROOT_READ.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 17,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_LEAN_ROOT_READ.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "8938b93e4fd5cffa9919556cd68988a1ee44cbc98066c897977e5bba1db253ad"
+    },
+    {
+      "bytes": 810,
+      "copy": "sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_COMPARISON_READ.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 20,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_COMPARISON_READ.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "a20d805ad31393dd1fc5aa67cea330f330bd71eab7d4c04aa61171b4c9b2f665"
+    },
+    {
+      "bytes": 430,
+      "copy": "sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION_SEAL.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 7,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_PRECISION_SEAL.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "93553c410da517f665486bcdbd233f5a6841a5ce5c5ac60a402890875eec05e9"
+    },
+    {
+      "bytes": 411,
+      "copy": "sources/provenance/NATIVE_LOCAL_ALGEBRA_ROOT_SEAL.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 8,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LOCAL_ALGEBRA_ROOT_SEAL.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "777a267401ac0a77891bacac0e2d10767d6cb97f17ebca6d9c90922394c10f33"
+    },
+    {
+      "bytes": 353,
+      "copy": "sources/provenance/NEAR_GROUND_CLUSTERING_ROOT_SEAL.json",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 8,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NEAR_GROUND_CLUSTERING_ROOT_SEAL.json",
+      "role": "scope_or_original_chronology",
+      "sha256": "b6724a8fb761a891ec10571ee9b549b3f2db26e300a99ba8c153181dbb363ad7"
+    },
+    {
+      "bytes": 2869,
+      "copy": "sources/provenance/SPATIAL_CONTROL_MILESTONE_CLUSTER_EVALUATION.md",
+      "coverage": "Metadata provenance; no independent scientific verification is inferred from it",
+      "lines": 46,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SPATIAL_CONTROL_MILESTONE_CLUSTER_EVALUATION.md",
+      "role": "scope_or_original_chronology",
+      "sha256": "d6872270a49203644ab9f57d0e86a54d1ef3218df2a5b63f1571f965973e449d"
+    },
+    {
+      "bytes": 2258,
+      "copy": "sources/provenance/gapped_local_correlation_independent/CORE_SEAL.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 38,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CORE_SEAL.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "136973352433c96e29b0b72562f12580ac8cd18a2f6cf84f9320dfa219d0ec34"
+    },
+    {
+      "bytes": 648,
+      "copy": "sources/provenance/gapped_local_correlation_independent/CROSSCHECK_FIRST_EXPOSURE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 9,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CROSSCHECK_FIRST_EXPOSURE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "02170e730a59c4b2a90918e3b3242f2b25f19af7e99e9b3cdb99bfc3d17c9616"
+    },
+    {
+      "bytes": 3648,
+      "copy": "sources/provenance/gapped_local_correlation_independent/CROSSCHECK_INPUT_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 64,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CROSSCHECK_INPUT_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "e21fc0184877fbe1c607d0dffd51803286621fde3f0bd54f4201ac1f98c5d319"
+    },
+    {
+      "bytes": 2087,
+      "copy": "sources/provenance/gapped_local_correlation_independent/CROSSCHECK_SEAL.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 39,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/CROSSCHECK_SEAL.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "83f067508692a2c5e9ea9311ad14f4affd66122425f936a6ea8c27d40419bbad"
+    },
+    {
+      "bytes": 2786,
+      "copy": "sources/provenance/gapped_local_correlation_independent/FINAL_EXPOSURE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 43,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/FINAL_EXPOSURE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "24046331fa3dd3a57ed5c574bdc36c41c4d2496dbbc850dc3b8193bdefee88b5"
+    },
+    {
+      "bytes": 344,
+      "copy": "sources/provenance/gapped_local_correlation_independent/INITIAL_EXPOSURE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 7,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/INITIAL_EXPOSURE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "1fbc1686e4758d8322a3d2c8bcaee5edfccd149644561dea2425220600f4cdcf"
+    },
+    {
+      "bytes": 2700,
+      "copy": "sources/provenance/gapped_local_correlation_independent/INPUT_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 37,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/INPUT_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "86a39b4f7758a81900c95c450582c2c7cbc2e012f12bd05004b4fbe9db452ed8"
+    },
+    {
+      "bytes": 2616,
+      "copy": "sources/provenance/gapped_local_correlation_independent/NEUTRAL_PLAN.md",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 21,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/gapped_local_correlation_independent/NEUTRAL_PLAN.md",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "ee9598de29d55b3ec7e26c38095410d1577ec1e3d8364b71fa8c20b6bda5dcb9"
+    },
+    {
+      "bytes": 1835,
+      "copy": "sources/provenance/local_ground_stability_independent/CORE_FREEZE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 36,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/CORE_FREEZE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "17944ad6520cab6e76f471c60dcc71cf662a4f44bd0867842789afee3befed1b"
+    },
+    {
+      "bytes": 1769,
+      "copy": "sources/provenance/local_ground_stability_independent/CROSSCHECK_FREEZE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 33,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/CROSSCHECK_FREEZE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "667d2c11f903ff92e0f3ecd06ce0fe07d3746c7206afc14c500c4fe5b07f6f01"
+    },
+    {
+      "bytes": 1729,
+      "copy": "sources/provenance/local_ground_stability_independent/CROSSCHECK_INITIAL_EXPOSURE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 33,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/CROSSCHECK_INITIAL_EXPOSURE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "f4b4c87a0be81f8b803d3bb2de0541ca006bd5b34aabcbeafc7e8d1c339b70e8"
+    },
+    {
+      "bytes": 9171,
+      "copy": "sources/provenance/local_ground_stability_independent/EXPOSURE_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 140,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/EXPOSURE_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "aec4843a8585e1e9c08989e92b25d2d98e395af3b641a75abb13dc3e3d0b0854"
+    },
+    {
+      "bytes": 1604,
+      "copy": "sources/provenance/local_ground_stability_independent/INPUT_IDENTITIES.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 37,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/INPUT_IDENTITIES.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "d380b1eb915aac41da20bf690225987312b0d89e602b985dc254bd3f8e6b7f48"
+    },
+    {
+      "bytes": 1982,
+      "copy": "sources/provenance/local_ground_stability_independent/NEUTRAL_PLAN.md",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 33,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/NEUTRAL_PLAN.md",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "d017465a571bf6e17678d533a276a527dad21aee5332b1a4296fabdba6b771bc"
+    },
+    {
+      "bytes": 3136,
+      "copy": "sources/provenance/local_ground_stability_independent/PLAN_SEAL.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 61,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/local_ground_stability_independent/PLAN_SEAL.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "8b3ccd28f6fd0149df2877e7ef34f164d122304de56a3482e8826d516158a6ac"
+    },
+    {
+      "bytes": 4410,
+      "copy": "sources/provenance/native_local_algebra_crosscheck/EXPOSURE_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 76,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/EXPOSURE_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "1d7bc9535d9d343fdf1b4e4b316102e3c5fe0649b20c4bddd339835ce070afe7"
+    },
+    {
+      "bytes": 5951,
+      "copy": "sources/provenance/native_local_algebra_crosscheck/FINAL_INPUT_RECHECK.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 115,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/FINAL_INPUT_RECHECK.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "ec957c9afc62192a4c6b9be46775a04f7a42b02cebb7c9a7ebfc89491be67d84"
+    },
+    {
+      "bytes": 2564,
+      "copy": "sources/provenance/native_local_algebra_crosscheck/FREEZE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 60,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/FREEZE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "97b751b759eed816be489c0d1b993b2abfa4124843edb2c08fac79572be43793"
+    },
+    {
+      "bytes": 16659,
+      "copy": "sources/provenance/native_local_algebra_crosscheck/INPUT_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 257,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/INPUT_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "5629d0dc77809ec65e74a1c419f8542ee0f5b261560bc29a19107d1f932508c3"
+    },
+    {
+      "bytes": 12770,
+      "copy": "sources/provenance/native_local_algebra_crosscheck/READ_COVERAGE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 315,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_crosscheck/READ_COVERAGE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "cb66c34f21d197bd04bfd791647fa38c300f24d55af5e9f1d6bd712b55402fbc"
+    },
+    {
+      "bytes": 1903,
+      "copy": "sources/provenance/native_local_algebra_independent/CORE_FREEZE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 30,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/CORE_FREEZE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "e6b5eed3fba068589aed878b6eb4aa02176a666e62621a7a319aa0534c212d45"
+    },
+    {
+      "bytes": 7750,
+      "copy": "sources/provenance/native_local_algebra_independent/EXPOSURE_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 111,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/EXPOSURE_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "2091a39b31196b0cfbe3dcc5cd21b6872cec16538d979f6e1bcaee7b43fc7899"
+    },
+    {
+      "bytes": 926,
+      "copy": "sources/provenance/native_local_algebra_independent/INPUT_IDENTITIES.md",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 18,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/INPUT_IDENTITIES.md",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "f9e325b2ff13a6de5d5ecab841050ddb77471dc0092c42a15382e8527c8e45bc"
+    },
+    {
+      "bytes": 2382,
+      "copy": "sources/provenance/native_local_algebra_independent/NEUTRAL_PLAN.md",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 41,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/NEUTRAL_PLAN.md",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "a1ed1a8202f12727842d80633cad5315bea6da421f03cf98f999f7abf09e1acf"
+    },
+    {
+      "bytes": 670,
+      "copy": "sources/provenance/native_local_algebra_independent/PLAN_SEAL.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 15,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/native_local_algebra_independent/PLAN_SEAL.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "b11498c9589c5bea2aa57b4d4b79c11f5ba296c540f612ee270184013e96eee3"
+    },
+    {
+      "bytes": 2123,
+      "copy": "sources/provenance/near_ground_clustering_crosscheck/COMPLETE_READ_RECORD.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 25,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/COMPLETE_READ_RECORD.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "863fe5ab95757ec1e24fbb8e8d70ac4a71384e9f663ea1a7ccf1129708baff43"
+    },
+    {
+      "bytes": 2034,
+      "copy": "sources/provenance/near_ground_clustering_crosscheck/FIRST_EXPOSURE.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 41,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/FIRST_EXPOSURE.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "7eafe7c9837af5574dd729ce7acbda924c9c43d4a007bc805ea7f55c3a599ee8"
+    },
+    {
+      "bytes": 8935,
+      "copy": "sources/provenance/near_ground_clustering_crosscheck/INPUT_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 150,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/INPUT_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "f7ba2eb41d45a74a095cdc5d3e3a847bf496b4b687984048f75b83f4ca20edd2"
+    },
+    {
+      "bytes": 2218,
+      "copy": "sources/provenance/near_ground_clustering_crosscheck/NEUTRAL_PLAN.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 38,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/NEUTRAL_PLAN.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "edb9b78838be7d57e653e54def1c59d7c6cb85383f600533f9c188a70c76ef6b"
+    },
+    {
+      "bytes": 1113,
+      "copy": "sources/provenance/near_ground_clustering_crosscheck/REVIEW_SEAL.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 15,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_crosscheck/REVIEW_SEAL.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "2412f37eff2cf2b8aed7b320709f50d5d95d159bd6436007286c084bfbef1d56"
+    },
+    {
+      "bytes": 5030,
+      "copy": "sources/provenance/near_ground_clustering_independent/AUTHOR_COMPLETE_READ.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 71,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/AUTHOR_COMPLETE_READ.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "85f80a3a7c9689af83e485acfbdd11ae9fb98babbdbf38518b1240f0be6db30e"
+    },
+    {
+      "bytes": 1091,
+      "copy": "sources/provenance/near_ground_clustering_independent/CORE_SEAL.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 15,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/CORE_SEAL.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "437f4cc151e2437a898edf03763344637820d71b8c9bd10568b0f4374346a6f5"
+    },
+    {
+      "bytes": 2016,
+      "copy": "sources/provenance/near_ground_clustering_independent/EXPOSURE_RECORD.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 55,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/EXPOSURE_RECORD.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "f7d28a845311c6a87570ce20439378abe80e957563a1e8a9bf29fe0d46ab78d7"
+    },
+    {
+      "bytes": 2991,
+      "copy": "sources/provenance/near_ground_clustering_independent/INPUT_MANIFEST.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 57,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/INPUT_MANIFEST.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "54d4cdbbb3659737f19d9e7877c0e4db68d12e7f02a21de2c9fbf4ae0d6d31b5"
+    },
+    {
+      "bytes": 3754,
+      "copy": "sources/provenance/near_ground_clustering_independent/NEUTRAL_PLAN.json",
+      "coverage": "Preserved source-history record; nested path references describe its original evidence context, not an assertion that the entire old evidence tree is reproduced",
+      "lines": 64,
+      "origin": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/near_ground_clustering_independent/NEUTRAL_PLAN.json",
+      "role": "historical_plan_exposure_or_seal",
+      "sha256": "63f23b76814e6faada8506d42407d2b8be1ed027230959e624213b32c86e675b"
+    }
+  ]
+}

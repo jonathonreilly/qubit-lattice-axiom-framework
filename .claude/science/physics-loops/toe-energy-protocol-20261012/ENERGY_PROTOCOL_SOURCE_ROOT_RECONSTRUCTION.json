@@ -1,0 +1,273 @@
+{
+  "schema": "root-independent-source-reconstruction-v1",
+  "utc": "2026-10-13T00:22:56.257759+00:00",
+  "source_freeze_sha256": "706f533560196f4411f94100111e9c4720aefc66ee631d334a88518c56dd254e",
+  "inventoried_files": 184,
+  "original_paths_verified": 211,
+  "archive_objects": 145,
+  "exact_diff_reconstructions": 12,
+  "final_notes": [
+    {
+      "bytes": 80498,
+      "canonical_path": "docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "lines": 1564,
+      "payload_path": "payload/docs/BV_GRAPH_ENERGY_PROTOCOL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "bytes": 3319,
+          "kind": "wrapper",
+          "output_byte_end_exclusive": 3319,
+          "output_byte_start": 0,
+          "output_lines": [
+            1,
+            62
+          ],
+          "piece_sha256": "c27cd2b0854d7b00b03e25afac145a71188fab22d0828560a75bf9c38718c100",
+          "source": "wrappers/bv_graph_header.md"
+        },
+        {
+          "bytes": 26924,
+          "kind": "byte-identical original body",
+          "output_byte_end_exclusive": 30243,
+          "output_byte_start": 3319,
+          "output_lines": [
+            63,
+            607
+          ],
+          "piece_sha256": "0af3a48b0604b6dfd530dfc901d81e789a89ef65b89d43391ed351f6f0ac95d9",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BV_PULSE_WORK_INDEPENDENT.md",
+          "source_byte_end_exclusive": 26924,
+          "source_byte_start": 0,
+          "source_lines": [
+            1,
+            545
+          ]
+        },
+        {
+          "bytes": 409,
+          "kind": "wrapper",
+          "output_byte_end_exclusive": 30652,
+          "output_byte_start": 30243,
+          "output_lines": [
+            608,
+            617
+          ],
+          "piece_sha256": "4689e058aa9d2cdb1ec53fd9be590a90d47877c8386a0b0fb632efa2f7263a93",
+          "source": "wrappers/bv_graph_between.md"
+        },
+        {
+          "bytes": 13975,
+          "kind": "byte-identical original body segment",
+          "output_byte_end_exclusive": 44627,
+          "output_byte_start": 30652,
+          "output_lines": [
+            618,
+            895
+          ],
+          "piece_sha256": "147682707f8da9dfc576f7107ee2fe05d131fe4ad62e63ea0b990b13cd752f98",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+          "source_byte_end_exclusive": 13975,
+          "source_byte_start": 0,
+          "source_lines": [
+            1,
+            278
+          ]
+        },
+        {
+          "authority": "GRAPH_NATIVE_POSTCOMPARISON_CORRECTIONS.md",
+          "bytes": 203,
+          "kind": "authorized wording replacement",
+          "output_byte_end_exclusive": 44830,
+          "output_byte_start": 44627,
+          "output_lines": [
+            895,
+            897
+          ],
+          "piece_sha256": "b5b298409cedaec37666eba64cce0934fb87ffa19b5bfdd1f0d2a24b84b2852d",
+          "replaced_sha256": "857900b6e7f048a0e8a08d5562ae9de741bd83ff53e9c6a7e9180ef020d3a195",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+          "source_byte_end_exclusive": 14065,
+          "source_byte_start": 13975,
+          "source_lines": [
+            278,
+            279
+          ]
+        },
+        {
+          "bytes": 31878,
+          "kind": "byte-identical original body segment",
+          "output_byte_end_exclusive": 76708,
+          "output_byte_start": 44830,
+          "output_lines": [
+            897,
+            1505
+          ],
+          "piece_sha256": "2d326e843682fbf06179e552505946672a445fd8e9412997a6ee5a90e43826fb",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GRAPH_ENERGY_INDEPENDENT.md",
+          "source_byte_end_exclusive": 45943,
+          "source_byte_start": 14065,
+          "source_lines": [
+            279,
+            887
+          ]
+        },
+        {
+          "bytes": 3790,
+          "kind": "wrapper",
+          "output_byte_end_exclusive": 80498,
+          "output_byte_start": 76708,
+          "output_lines": [
+            1506,
+            1564
+          ],
+          "piece_sha256": "f3720197ab0e05f834f9d519748d7491bbbf675852f04845bdbbe0d50ecab2d3",
+          "source": "wrappers/bv_graph_appendix.md"
+        }
+      ],
+      "sha256": "7498861523ce2fc66ca6277110b8b11a7ac672494e1701753d0017be33e1e320",
+      "source_order": [
+        "BV_PULSE_WORK_INDEPENDENT.md",
+        "GRAPH_ENERGY_INDEPENDENT.md"
+      ]
+    },
+    {
+      "bytes": 73690,
+      "canonical_path": "docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "lines": 1403,
+      "payload_path": "payload/docs/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "bytes": 3263,
+          "kind": "wrapper",
+          "output_byte_end_exclusive": 3263,
+          "output_byte_start": 0,
+          "output_lines": [
+            1,
+            61
+          ],
+          "piece_sha256": "c9cc5fd6827f057faa1d7772fcafed0de6f0dbbba772848255e7710e1c13b361",
+          "source": "wrappers/prepared_driven_header.md"
+        },
+        {
+          "bytes": 32709,
+          "kind": "byte-identical original body",
+          "output_byte_end_exclusive": 35972,
+          "output_byte_start": 3263,
+          "output_lines": [
+            62,
+            709
+          ],
+          "piece_sha256": "0096ba164586386693fe506863da477224d1327febe6afbe861bd70417a4ea68",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md",
+          "source_byte_end_exclusive": 32709,
+          "source_byte_start": 0,
+          "source_lines": [
+            1,
+            648
+          ]
+        },
+        {
+          "bytes": 414,
+          "kind": "wrapper",
+          "output_byte_end_exclusive": 36386,
+          "output_byte_start": 35972,
+          "output_lines": [
+            710,
+            719
+          ],
+          "piece_sha256": "2ab2fbc7726c08dd5b534f887be57ed012d3ee7856973c3648d4b7ce7a1c0e78",
+          "source": "wrappers/prepared_driven_between.md"
+        },
+        {
+          "bytes": 1608,
+          "kind": "byte-identical original body segment",
+          "output_byte_end_exclusive": 37994,
+          "output_byte_start": 36386,
+          "output_lines": [
+            720,
+            747
+          ],
+          "piece_sha256": "8e29b3b829a18f0d6a591c5869ac7a329ffa49bfd602da658c8db82e07a16f88",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "source_byte_end_exclusive": 1608,
+          "source_byte_start": 0,
+          "source_lines": [
+            1,
+            28
+          ]
+        },
+        {
+          "authority": "DRIVEN_STATE_POSTCOMPARISON_CLARIFICATION.md",
+          "bytes": 65,
+          "kind": "authorized wording replacement",
+          "output_byte_end_exclusive": 38059,
+          "output_byte_start": 37994,
+          "output_lines": [
+            747,
+            747
+          ],
+          "piece_sha256": "111856f7b7feaad9167ea29d7569bb0b8a82ae30f87b1a3a4b8c4e1fd0828216",
+          "replaced_sha256": "dabc16b7f9230c9e5f6e1cf410d9fa1b6b1295fdc71574558e0d4be97e4a5375",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "source_byte_end_exclusive": 1644,
+          "source_byte_start": 1608,
+          "source_lines": [
+            28,
+            28
+          ]
+        },
+        {
+          "bytes": 31846,
+          "kind": "byte-identical original body segment",
+          "output_byte_end_exclusive": 69905,
+          "output_byte_start": 38059,
+          "output_lines": [
+            747,
+            1343
+          ],
+          "piece_sha256": "8d012048a899d57e99a7def38d63bb52b349c8ea31208c2eecd012ba11c0ea1c",
+          "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+          "source_byte_end_exclusive": 33490,
+          "source_byte_start": 1644,
+          "source_lines": [
+            28,
+            624
+          ]
+        },
+        {
+          "bytes": 3785,
+          "kind": "wrapper",
+          "output_byte_end_exclusive": 73690,
+          "output_byte_start": 69905,
+          "output_lines": [
+            1344,
+            1403
+          ],
+          "piece_sha256": "5474b805afae4f3702b763fe83f370ca607d36ae32a758720192e4f98cf1f917",
+          "source": "wrappers/prepared_driven_appendix.md"
+        }
+      ],
+      "sha256": "9ce82268fc8acdbff86d1e9c6ca7b2218fb3088c06486e959429fa5a0ea71eda",
+      "source_order": [
+        "PREPARED_PULSE_ROBUSTNESS_INDEPENDENT.md",
+        "DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md"
+      ]
+    }
+  ],
+  "canonical_parent_bindings_verified": 4,
+  "canonical_pins": {
+    "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+    "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+    "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+    "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+    "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+    "docs/EXCITATION_PULSE_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md": "6d8908844934ba219c37216a137a7b8181b01e2f1414144c972e5e1cfeb701ef",
+    "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+    "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md": "f323740eeb73d5f362a0c26b34e91ebaa8d44e229d042648dc4b4963e211d8a1"
+  },
+  "branch": "physics-loop/toe-energy-protocol-20261012",
+  "head": "4ff0ff1d7868b24d7854428110512daed13530f9",
+  "clean": true,
+  "mathematical_predicates_executed": 0,
+  "scope": "Byte identity, copy integrity, exact piece coverage and complete-diff application only; mathematical root read/acceptance is separate."
+}

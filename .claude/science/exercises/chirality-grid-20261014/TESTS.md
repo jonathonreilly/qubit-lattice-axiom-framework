@@ -130,7 +130,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
     - **(secondary)** the hard support, as originally registered.
   - The readings UV-ONLY / PERSISTS / OPEN are unchanged and are applied to each arm separately. The primary arm decides the headline.
 
-**BLEAK-1 result (~21:55Z; same family; referee launched): LEAK-PLANCK.**
+**BLEAK-1 result (21:44Z; same family; referee launched): LEAK-PLANCK.**
 - **Result:** one graviton loop through R19-33's RP-safe foliated gravity (spatial-TT plus instantaneous bridge) gives δc = (π/6)(ℓ_P/a)² exactly for a massless scalar (proved closed form; checked four ways).
 - **Control premise refuted:** K2's conserved stress gives the same π/6 through the TT + bridge loop. Only the covariant (non-RP) graviton gives zero. The off-shell internal line defeats the on-shell identity.
 - **Comparator:** a Wilson fermion gives about 0.85 (stress-dependent), so the shift is species-dependent.

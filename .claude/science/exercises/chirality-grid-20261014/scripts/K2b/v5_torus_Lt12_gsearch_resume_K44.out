@@ -1,0 +1,23 @@
+# K2b-T1 gsearch op=O torus Lx=2 Lt=12 K=44 seed=5212 start=pool_V4_final_torus_Lt12_k36.npz delta=0.6 quad lo=(4, 4) hi=(6, 6)
+start k=36: lam_min +5.158e-05 min/max +2.393e-06 min|H_W| 0.710 [136s]
+step 1: k=37 added rand     objective +2.400e-02 lam_min +4.383e-05 min/max +1.950e-06 min|H_W| 0.710 [182s]
+step 2: k=38 added pert0.02 objective +2.257e-02 lam_min +4.004e-05 min/max +1.732e-06 min|H_W| 0.710 [231s]
+step 3: k=39 added rand     objective +2.086e-02 lam_min +3.996e-05 min/max +1.684e-06 min|H_W| 0.710 [291s]
+step 4: k=40 added rand     objective +2.058e-02 lam_min +3.990e-05 min/max +1.672e-06 min|H_W| 0.710 [348s]
+step 5: k=41 added pert0.02 objective +2.025e-02 lam_min +3.974e-05 min/max +1.613e-06 min|H_W| 0.710 [408s]
+step 6: k=42 added rand     objective +1.341e-02 lam_min +3.929e-05 min/max +1.549e-06 min|H_W| 0.710 [472s]
+step 7: k=43 added pert0.1  objective +1.326e-02 lam_min +3.893e-05 min/max +1.501e-06 min|H_W| 0.710 [529s]
+step 8: k=44 added pert0.05 objective +1.296e-02 lam_min +3.891e-05 min/max +1.466e-06 min|H_W| 0.710 [589s]
+   (V4: q estimated on 121 entries incl. diagonal; eigenvalues below are LOW-quadrature)
+FINAL k=44: OVERLAP lam_min +3.8910e-05 min/max +1.4660e-06 q 3.1e-10 E 1.4e-08 | WILSON lam_min +3.9090e-05 min/max +1.4504e-06 q 5.9e-10 E 2.6e-08 | min|H_W| 0.710 | clean True | certified-negative False | Wilson PSD True | K2-line(min/max<-1e-6) False
+   overlap eigenvalues: [3.891e-05 1.421e-04 1.527e-04 1.719e-04 2.741e-04 3.714e-04] ... max 26.542
+   Wilson  eigenvalues: [3.909e-05 7.764e-05 1.372e-04 1.934e-04 3.631e-04 4.764e-04] ... max 26.951
+   diagnostic gen-ratio min (overlap vs Wilson, Wilson range > 1e-8): +1.296e-02
+   most-negative-direction weights |v_a|: [1.24e-02 5.95e-04 5.10e-02 6.59e-03 2.49e-02 8.51e-03 2.47e-04 8.38e-04
+ 4.89e-02 5.93e-01 2.50e-02 1.61e-03 2.85e-02 1.64e-02 6.96e-03 2.07e-02
+ 2.32e-02 5.08e-03 2.53e-03 1.97e-03 3.39e-04 1.09e-01 3.46e-03 1.71e-01
+ 2.52e-03 3.52e-02 8.05e-02 2.41e-02 1.32e-01 3.51e-02 1.04e-02 6.35e-03
+ 7.39e-01 2.82e-02 1.17e-02 8.22e-03 9.38e-02 1.22e-01 8.45e-04 4.28e-04
+ 2.14e-02 1.27e-02 1.03e-02 2.19e-03]
+done [660s]
+           146030592  maximum resident set size

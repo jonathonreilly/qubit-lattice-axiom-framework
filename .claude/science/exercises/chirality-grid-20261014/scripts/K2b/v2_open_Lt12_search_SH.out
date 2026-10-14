@@ -1,0 +1,23 @@
+# K2b-T1 search op=SH open Lx=2 Lt=12 K=20 seed=1201 start=random delta=0.6 quad lo=(16, None) hi=(32, None)
+start k=8: lam_min +2.043e-04 min/max +3.914e-05 min|H_W| 0.390 [1s]
+step 1: k=9 added pert0.1  objective +2.807e-06 lam_min +2.807e-06 min/max +4.739e-07 min|H_W| 0.390 [2s]
+step 2: k=10 added pert0.1  objective +1.096e-06 lam_min +1.096e-06 min/max +1.633e-07 min|H_W| 0.390 [3s]
+step 3: k=11 added hol      objective +1.039e-06 lam_min +1.039e-06 min/max +1.359e-07 min|H_W| 0.373 [4s]
+step 4: k=12 added pert0.02 objective +7.160e-07 lam_min +7.160e-07 min/max +8.388e-08 min|H_W| 0.373 [6s]
+step 5: k=13 added pert0.1  objective +3.506e-07 lam_min +3.506e-07 min/max +3.698e-08 min|H_W| 0.373 [8s]
+step 6: k=14 added rand     objective +2.684e-07 lam_min +2.684e-07 min/max +2.569e-08 min|H_W| 0.373 [9s]
+step 7: k=15 added pert0.1  objective +4.152e-08 lam_min +4.152e-08 min/max +3.648e-09 min|H_W| 0.373 [11s]
+step 8: k=16 added rand     objective -1.138e-07 lam_min -1.138e-07 min/max -9.215e-09 min|H_W| 0.373 [13s]
+step 9: k=17 added pert0.05 objective -1.384e-07 lam_min -1.384e-07 min/max -1.042e-08 min|H_W| 0.370 [16s]
+step 10: k=18 added hol      objective -1.513e-07 lam_min -1.513e-07 min/max -1.073e-08 min|H_W| 0.370 [18s]
+step 11: k=19 added pert0.1  objective -2.694e-07 lam_min -2.694e-07 min/max -1.785e-08 min|H_W| 0.370 [20s]
+step 12: k=20 added rand     objective -1.052e-06 lam_min -1.052e-06 min/max -6.544e-08 min|H_W| 0.370 [23s]
+FINAL k=20: OVERLAP lam_min -1.0519e-06 min/max -6.5440e-08 q 4.9e-15 E 2.0e-13 | WILSON lam_min +8.9462e-08 min/max +5.5662e-09 q 2.1e-14 E 5.2e-13 | min|H_W| 0.370 | clean True | certified-negative True | Wilson PSD True | K2-line(min/max<-1e-6) False
+   overlap eigenvalues: [-1.052e-06 -2.615e-07  1.705e-07  2.056e-06  1.179e-05  1.442e-05] ... max 16.073
+   Wilson  eigenvalues: [8.946e-08 3.662e-07 5.101e-07 2.219e-06 1.309e-05 1.525e-05] ... max 16.072
+   diagnostic gen-ratio min (overlap vs Wilson, Wilson range > 1e-8): -8.916e-01
+   most-negative-direction weights |v_a|: [6.10e-05 3.22e-04 9.19e-05 9.29e-02 3.05e-01 9.99e-05 1.69e-03 3.71e-04
+ 6.87e-02 2.88e-02 9.14e-02 1.15e-01 1.40e-01 8.00e-02 1.15e-01 3.20e-01
+ 7.71e-04 6.71e-04 6.57e-01 5.46e-01]
+done [32s]
+           136986624  maximum resident set size

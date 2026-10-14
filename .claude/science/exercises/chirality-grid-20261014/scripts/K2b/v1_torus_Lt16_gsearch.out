@@ -1,0 +1,18 @@
+# K2b-T1 gsearch op=O torus Lx=2 Lt=16 K=16 seed=4216 start=random delta=0.6 quad lo=(4, 4) hi=(6, 6)
+start k=8: lam_min +1.078e-02 min/max +2.117e-03 min|H_W| 0.789 [13s]
+step 1: k=9 added pert0.1  objective +7.766e-01 lam_min +1.046e-02 min/max +1.797e-03 min|H_W| 0.789 [35s]
+step 2: k=10 added pert0.02 objective +5.453e-01 lam_min +8.198e-05 min/max +1.214e-05 min|H_W| 0.789 [62s]
+step 3: k=11 added rand     objective +3.570e-01 lam_min +8.193e-05 min/max +1.115e-05 min|H_W| 0.765 [90s]
+step 4: k=12 added rand     objective +3.443e-01 lam_min +7.928e-05 min/max +9.654e-06 min|H_W| 0.765 [125s]
+step 5: k=13 added hol      objective +3.069e-01 lam_min +7.580e-05 min/max +8.385e-06 min|H_W| 0.765 [165s]
+step 6: k=14 added pert0.02 objective +2.582e-01 lam_min +1.297e-05 min/max +1.303e-06 min|H_W| 0.765 [207s]
+step 7: k=15 added hol      objective +2.291e-01 lam_min +1.278e-05 min/max +1.216e-06 min|H_W| 0.765 [253s]
+step 8: k=16 added pert0.1  objective +2.221e-01 lam_min +1.278e-05 min/max +1.137e-06 min|H_W| 0.765 [304s]
+FINAL k=16: OVERLAP lam_min +1.2776e-05 min/max +1.1371e-06 q 2.1e-10 E 3.4e-09 | WILSON lam_min +1.2790e-05 min/max +1.0930e-06 q 6.7e-10 E 1.1e-08 | min|H_W| 0.765 | clean True | certified-negative False | Wilson PSD True | K2-line(min/max<-1e-6) False
+   overlap eigenvalues: [1.278e-05 7.785e-05 1.428e-03 4.468e-03 1.038e-02 1.274e-02] ... max 11.235
+   Wilson  eigenvalues: [1.279e-05 7.843e-05 1.211e-03 3.450e-03 4.544e-03 8.001e-03] ... max 11.702
+   diagnostic gen-ratio min (overlap vs Wilson, Wilson range > 1e-8): +2.221e-01
+   most-negative-direction weights |v_a|: [1.26e-01 1.50e-03 2.71e-03 3.78e-04 4.29e-03 1.92e-02 8.95e-03 1.15e-02
+ 1.99e-02 1.67e-01 1.43e-02 6.76e-01 8.23e-03 7.06e-01 2.75e-03 2.92e-04]
+done [494s]
+           184729600  maximum resident set size

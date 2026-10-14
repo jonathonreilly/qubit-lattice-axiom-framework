@@ -1,0 +1,11 @@
+# K2b-T2 pool pool_search_open_Lt12_seed1201.npz: Lx=2 Lt=12 torus=False k=20 quad lo=(16, None) hi=(32, None)
+min|eig H| over all points (Neuberger H_W and Shamir H_T): 0.371  [123s]
+W     : lam_min +7.8897e-07 min/max +4.8872e-08 q 1.4e-14 E 3.8e-13 certified-negative False PSD-within-error True | lowest eigs [7.890e-07 1.666e-06 2.448e-06]
+O     : lam_min -3.4514e-04 min/max -2.1371e-05 q 7.1e-15 E 2.4e-13 certified-negative True PSD-within-error False | lowest eigs [-3.451e-04 -1.689e-05  1.008e-06]
+SH    : lam_min -2.5190e-07 min/max -1.5602e-08 q 4.9e-15 E 2.0e-13 certified-negative True PSD-within-error False | lowest eigs [-2.519e-07  1.569e-06  1.669e-06]
+D5_4  : lam_min +1.1775e-06 min/max +7.3051e-08 q 8.5e-14 E 1.8e-12 certified-negative False PSD-within-error True | lowest eigs [1.177e-06 2.151e-06 4.127e-06]
+DWF_4 : lam_min +3.0639e-07 min/max +1.8980e-08 q 6.3e-14 E 1.4e-12 certified-negative False PSD-within-error True | lowest eigs [3.064e-07 5.794e-07 1.707e-06]
+D5_8  : lam_min +1.3645e-06 min/max +8.4801e-08 q 2.3e-13 E 4.6e-12 certified-negative False PSD-within-error True | lowest eigs [1.365e-06 2.349e-06 4.840e-06]
+DWF_8 : lam_min -2.9323e-07 min/max -1.8162e-08 q 1.3e-13 E 2.6e-12 certified-negative True PSD-within-error False | lowest eigs [-2.932e-07  1.136e-06  1.569e-06]
+done [123s]
+           165855232  maximum resident set size

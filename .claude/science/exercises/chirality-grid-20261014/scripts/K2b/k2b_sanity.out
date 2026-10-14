@@ -1,0 +1,5 @@
+reproduce K2 G1p d0.6 set1 overlap: lam_min -4.4603e-05 min/max -7.4055e-06 (K2: -7.4055e-6) min|H_W| 0.861 0.9s
+Ls=8: logdet D5PV - logdet SH = 1.25e-02  (0.01s for 2 points)  min|H_T| 0.382
+Ls=16: logdet D5PV - logdet SH = 9.81e-06  (0.04s for 2 points)  min|H_T| 0.382
+Ls=24: logdet D5PV - logdet SH = 1.11e-08  (0.13s for 2 points)  min|H_T| 0.382
+Ls=40: logdet D5PV - logdet SH = 4.88e-13  (0.53s for 2 points)  min|H_T| 0.382

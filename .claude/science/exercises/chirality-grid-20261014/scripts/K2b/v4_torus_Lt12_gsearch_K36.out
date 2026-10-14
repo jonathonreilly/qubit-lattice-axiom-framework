@@ -1,0 +1,42 @@
+# K2b-T1 gsearch op=O torus Lx=2 Lt=12 K=36 seed=4212 start=random delta=0.6 quad lo=(4, 4) hi=(6, 6)
+start k=8: lam_min +7.396e-02 min/max +2.004e-02 min|H_W| 0.738 [6s]
+step 1: k=9 added pert0.1  objective +8.562e-01 lam_min +4.186e-02 min/max +9.584e-03 min|H_W| 0.738 [18s]
+step 2: k=10 added pert0.1  objective +8.141e-01 lam_min +5.453e-03 min/max +1.041e-03 min|H_W| 0.738 [31s]
+step 3: k=11 added pert0.1  objective +6.777e-01 lam_min +5.453e-03 min/max +8.888e-04 min|H_W| 0.738 [49s]
+step 4: k=12 added pert0.05 objective +6.613e-01 lam_min +4.926e-03 min/max +7.156e-04 min|H_W| 0.738 [64s]
+step 5: k=13 added rand     objective +6.272e-01 lam_min +4.819e-03 min/max +6.705e-04 min|H_W| 0.738 [84s]
+step 6: k=14 added pert0.02 objective +5.403e-01 lam_min +9.209e-04 min/max +1.167e-04 min|H_W| 0.738 [103s]
+step 7: k=15 added hol      objective +3.979e-01 lam_min +9.188e-04 min/max +1.081e-04 min|H_W| 0.738 [124s]
+step 8: k=16 added pert0.1  objective +3.512e-01 lam_min +8.062e-04 min/max +8.691e-05 min|H_W| 0.738 [147s]
+step 9: k=17 added pert0.05 objective +3.284e-01 lam_min +7.992e-04 min/max +8.262e-05 min|H_W| 0.738 [171s]
+step 10: k=18 added pert0.1  objective +3.074e-01 lam_min +7.726e-04 min/max +7.735e-05 min|H_W| 0.738 [196s]
+step 11: k=19 added pert0.05 objective +2.654e-01 lam_min +7.615e-04 min/max +7.136e-05 min|H_W| 0.738 [226s]
+step 12: k=20 added rand     objective +2.132e-01 lam_min +7.473e-04 min/max +6.728e-05 min|H_W| 0.738 [256s]
+step 13: k=21 added rand     objective +2.052e-01 lam_min +7.440e-04 min/max +6.655e-05 min|H_W| 0.738 [281s]
+step 14: k=22 added pert0.1  objective +1.878e-01 lam_min +7.078e-04 min/max +6.023e-05 min|H_W| 0.738 [306s]
+step 15: k=23 added pert0.05 objective +1.821e-01 lam_min +5.504e-04 min/max +4.457e-05 min|H_W| 0.738 [337s]
+step 16: k=24 added pert0.05 objective +1.576e-01 lam_min +4.702e-04 min/max +3.560e-05 min|H_W| 0.738 [368s]
+step 17: k=25 added hol      objective +1.496e-01 lam_min +4.689e-04 min/max +3.432e-05 min|H_W| 0.710 [402s]
+step 18: k=26 added pert0.05 objective +1.427e-01 lam_min +4.688e-04 min/max +3.249e-05 min|H_W| 0.710 [442s]
+step 19: k=27 added pert0.05 objective +1.138e-01 lam_min +4.632e-04 min/max +3.030e-05 min|H_W| 0.710 [485s]
+step 20: k=28 added pert0.02 objective +8.885e-02 lam_min +2.588e-04 min/max +1.599e-05 min|H_W| 0.710 [527s]
+step 21: k=29 added pert0.1  objective +7.692e-02 lam_min +2.201e-04 min/max +1.293e-05 min|H_W| 0.710 [571s]
+step 22: k=30 added rand     objective +6.457e-02 lam_min +2.198e-04 min/max +1.239e-05 min|H_W| 0.710 [619s]
+step 23: k=31 added pert0.05 objective +5.946e-02 lam_min +2.197e-04 min/max +1.214e-05 min|H_W| 0.710 [664s]
+step 24: k=32 added rand     objective +5.915e-02 lam_min +2.035e-04 min/max +1.107e-05 min|H_W| 0.710 [714s]
+step 25: k=33 added pert0.02 objective +5.219e-02 lam_min +6.693e-05 min/max +3.476e-06 min|H_W| 0.710 [769s]
+step 26: k=34 added rand     objective +4.203e-02 lam_min +5.640e-05 min/max +2.805e-06 min|H_W| 0.710 [820s]
+step 27: k=35 added rand     objective +3.935e-02 lam_min +5.335e-05 min/max +2.564e-06 min|H_W| 0.710 [873s]
+step 28: k=36 added pert0.05 objective +3.199e-02 lam_min +5.158e-05 min/max +2.393e-06 min|H_W| 0.710 [926s]
+   (V4: q estimated on 112 entries incl. diagonal; eigenvalues below are LOW-quadrature)
+FINAL k=36: OVERLAP lam_min +5.1585e-05 min/max +2.3925e-06 q 1.3e-10 E 4.8e-09 | WILSON lam_min +4.9410e-05 min/max +2.2597e-06 q 6.5e-10 E 2.3e-08 | min|H_W| 0.710 | clean True | certified-negative False | Wilson PSD True | K2-line(min/max<-1e-6) False
+   overlap eigenvalues: [5.158e-05 2.024e-04 4.033e-04 5.212e-04 5.615e-04 6.567e-04] ... max 21.561
+   Wilson  eigenvalues: [4.941e-05 2.130e-04 4.691e-04 5.245e-04 6.207e-04 6.393e-04] ... max 21.865
+   diagnostic gen-ratio min (overlap vs Wilson, Wilson range > 1e-8): +3.199e-02
+   most-negative-direction weights |v_a|: [2.18e-02 4.22e-03 5.70e-02 5.59e-03 1.48e-02 1.45e-05 2.40e-04 1.50e-03
+ 2.59e-02 6.57e-01 3.00e-02 5.24e-02 2.71e-02 1.77e-02 5.86e-03 1.50e-02
+ 2.28e-02 6.22e-03 1.41e-02 2.13e-04 2.15e-04 5.43e-03 1.17e-03 7.50e-02
+ 2.39e-03 1.91e-02 6.50e-02 1.19e-02 9.33e-02 2.05e-02 3.76e-03 5.46e-03
+ 7.31e-01 3.67e-02 1.77e-02 5.03e-02]
+done [994s]
+           144310272  maximum resident set size

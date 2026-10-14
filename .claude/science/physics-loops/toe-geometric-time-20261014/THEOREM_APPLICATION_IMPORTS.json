@@ -1,0 +1,27 @@
+{
+  "ancestry_is_not_import": true,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0",
+  "current_binding": "PARENT_BINDINGS.json",
+  "local_reference_static_initial_K_even_volumes": true,
+  "prior_mechanism_attribution_is_not_import": true,
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "LR_WALK_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "WEIGHTED_LR_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "scope": "Current authoritative publication roles; full original source dependency/status records remain immutable historical archive members",
+  "source_dependency_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/DEPENDENCIES.json"
+}

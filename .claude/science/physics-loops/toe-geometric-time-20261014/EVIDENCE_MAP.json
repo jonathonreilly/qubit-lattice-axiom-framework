@@ -1,0 +1,2690 @@
+{
+  "archive_scope": "complete accepted bounded source assembly plus57 original aliases, root acceptance/review and actual evidence; historical metadata unchanged",
+  "external_root_review_directories": [
+    {
+      "complete_members": [
+        {
+          "bytes": 3539,
+          "lines": 77,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_assembly_root_review/SOURCE_BINDING.json",
+          "relative_path": "SOURCE_BINDING.json",
+          "sha256": "12ab2fac5d2538f555b6ccdb9d7cc4fddf50ea878b3d78ceb30dff49ce924b64"
+        },
+        {
+          "bytes": 3521,
+          "lines": 36,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_assembly_root_review/bind.py",
+          "relative_path": "bind.py",
+          "sha256": "70ceb0ee11c295fb43510352e3754db8ed31145f163a618047ba5ea499c76a4a"
+        }
+      ],
+      "original_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_assembly_root_review"
+    },
+    {
+      "complete_members": [
+        {
+          "bytes": 611,
+          "lines": 13,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/EXECUTION.json",
+          "relative_path": "EXECUTION.json",
+          "sha256": "66ad43217953ea75e6d8c6cf94c15db255b7ccc1b0eb761550c102c346a49942"
+        },
+        {
+          "bytes": 0,
+          "lines": 0,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/stderr",
+          "relative_path": "stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 1001,
+          "lines": 28,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/stdout",
+          "relative_path": "stdout",
+          "sha256": "22d5bc2dee3db774867c474bb1b6ab2fa28f72a8a8ed9b49055ae58895f49dfe"
+        }
+      ],
+      "original_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck"
+    },
+    {
+      "complete_members": [
+        {
+          "bytes": 619,
+          "lines": 13,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding/EXECUTION.json",
+          "relative_path": "EXECUTION.json",
+          "sha256": "3e9de2bb5ee28404840f2c853b5c27c8a56d5150738d60835498cb99ddeab19f"
+        },
+        {
+          "bytes": 0,
+          "lines": 0,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding/stderr",
+          "relative_path": "stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 312,
+          "lines": 1,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding/stdout",
+          "relative_path": "stdout",
+          "sha256": "e38073e77ff4280322dc85d8beecae8ee469bf9373a7240b60439b5f18d07b5f"
+        }
+      ],
+      "original_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding"
+    },
+    {
+      "complete_members": [
+        {
+          "bytes": 974,
+          "lines": 24,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr/EXECUTION.json",
+          "relative_path": "EXECUTION.json",
+          "sha256": "2dbd270ad04d8437d342eedab39dd02093490abf857e3c5ffa93c5c353202c55"
+        },
+        {
+          "bytes": 0,
+          "lines": 0,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr/stderr",
+          "relative_path": "stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 74,
+          "lines": 1,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr/stdout",
+          "relative_path": "stdout",
+          "sha256": "e805f0a092917c16a3e7b4924d07e29dcaba3e9da01d71e0e9ca5ed1ed2673a4"
+        }
+      ],
+      "original_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr"
+    },
+    {
+      "complete_members": [
+        {
+          "bytes": 671,
+          "lines": 19,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view/EXECUTION.json",
+          "relative_path": "EXECUTION.json",
+          "sha256": "097673966cf28a057f8de835b7c9de2e7235ebedad68d84d8fb4e71ef32f7341"
+        },
+        {
+          "bytes": 0,
+          "lines": 0,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view/stderr",
+          "relative_path": "stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 1837,
+          "lines": 1,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view/stdout",
+          "relative_path": "stdout",
+          "sha256": "c362163bd83cb68c51ad88a0615b7836a90a84a19335c80a5665aa7d3faa12df"
+        }
+      ],
+      "original_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view"
+    },
+    {
+      "complete_members": [
+        {
+          "bytes": 581,
+          "lines": 16,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch/EXECUTION.json",
+          "relative_path": "EXECUTION.json",
+          "sha256": "3a32695421d0bb797b18a91345e8e2f4600b42d8ddea3413fa2740bf13d10faf"
+        },
+        {
+          "bytes": 206,
+          "lines": 2,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch/stderr",
+          "relative_path": "stderr",
+          "sha256": "aacc63ddb7a21c07dfd8173b80c3e108d97e12a4d2008c54dd439c28b192b425"
+        },
+        {
+          "bytes": 0,
+          "lines": 0,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch/stdout",
+          "relative_path": "stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "original_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch"
+    }
+  ],
+  "external_source_records": [
+    {
+      "bytes": 980,
+      "lines": 13,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/run.py",
+      "sha256": "da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee"
+    },
+    {
+      "bytes": 956,
+      "lines": 9,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/checkpoint_1125/SYNC_ASSESSMENT.json",
+      "sha256": "4e3f4771dacb5e86cab7fc2eb4901d79e5a5bd925243577c1fba28ca018cf808"
+    },
+    {
+      "bytes": 482,
+      "lines": 11,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/checkpoint_1125/main.diff",
+      "sha256": "24fa8be55fbae148c815f653b5ee0bb44c90d37097789abaf878a98e2ec1d417"
+    },
+    {
+      "bytes": 4938,
+      "lines": 67,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/BINARY_ADMISSION_PR_CREATED.json",
+      "sha256": "fba27834d5049027d6d4edc0c752dc79ff1075aacb646457f9a0a8f286324b18"
+    },
+    {
+      "bytes": 291,
+      "lines": 9,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_integration/GEOMETRIC_BRANCH_CREATION.json",
+      "sha256": "a9b28867045b443b23712354e63fc1c5384274c16c1360c049fabe6b9b3b8601"
+    },
+    {
+      "bytes": 2563,
+      "lines": 113,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_integration/GEOMETRIC_BRANCH_CREATION_EXECUTIONS.json",
+      "sha256": "ac19c3a884d1b28f63bb463e65f839a907f685de0fedb9dac28a00907c4be077"
+    },
+    {
+      "bytes": 980,
+      "lines": 13,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/run.py",
+      "sha256": "da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee"
+    }
+  ],
+  "mathematical_predicates_executed": 0,
+  "objects": [
+    {
+      "bytes": 1025,
+      "lines": 17,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run01_crossing_support/RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run01_crossing_support/RECEIPT.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/042b55d1a744c7f8ad326e0d0b2416bf2bac4f9e40ef179a536d4ba4aad7e62b.gz",
+      "sha256": "042b55d1a744c7f8ad326e0d0b2416bf2bac4f9e40ef179a536d4ba4aad7e62b",
+      "stored_bytes": 590,
+      "stored_sha256": "2ab16f2e81a772780bde396c4ec33b769a0d513b1c160cf33a665ac75322b85e"
+    },
+    {
+      "bytes": 15435,
+      "lines": 245,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/procedures/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "stored_bytes": 6353,
+      "stored_sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a"
+    },
+    {
+      "bytes": 671,
+      "lines": 19,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view/EXECUTION.json",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/097673966cf28a057f8de835b7c9de2e7235ebedad68d84d8fb4e71ef32f7341.gz",
+      "sha256": "097673966cf28a057f8de835b7c9de2e7235ebedad68d84d8fb4e71ef32f7341",
+      "stored_bytes": 430,
+      "stored_sha256": "a5280d528172d9dba2739db59288c4850d2185b92cfb6136ce6cb4b8ea63445f"
+    },
+    {
+      "bytes": 2688,
+      "lines": 53,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/PREMISE_IDENTITIES.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/PREMISE_IDENTITIES.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/0a3e1826266455ed7479f3353262bd75f50a808d06ea26bf3c69dd2071339ec1.gz",
+      "sha256": "0a3e1826266455ed7479f3353262bd75f50a808d06ea26bf3c69dd2071339ec1",
+      "stored_bytes": 860,
+      "stored_sha256": "5b8c99cf8d6bafff73b949a389e3e2e156c8a3838c27c60164df81c3d8ce1a9e"
+    },
+    {
+      "bytes": 4199,
+      "lines": 67,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_proposal/SOURCE_EXPOSURE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/reviewed_root_sources/SOURCE_EXPOSURE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/SOURCE_EXPOSURE.json",
+          "role": "unchanged complete six-file accepted analytic source package; original status retained original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/reviewed_root_sources/SOURCE_EXPOSURE.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/0b2e8a5d1992ad73b5abe8cfef1b40b710f3156220657067f3d9ae3f84708546.gz",
+      "sha256": "0b2e8a5d1992ad73b5abe8cfef1b40b710f3156220657067f3d9ae3f84708546",
+      "stored_bytes": 1790,
+      "stored_sha256": "707bff70da5d8ea383c3823fa1e747e59c8703518a8f47f862b6c5d21f3f11b5"
+    },
+    {
+      "bytes": 693,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/ASSEMBLY_BINDING.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/0c1d55df179eb67b00070252ac6ddc59bb2ec447ebddf53702173cea9a93fd3d.gz",
+      "sha256": "0c1d55df179eb67b00070252ac6ddc59bb2ec447ebddf53702173cea9a93fd3d",
+      "stored_bytes": 442,
+      "stored_sha256": "e39d9e7f5aeae54f71d4f238fd1b28dbf9b824b16a27790f8ebfd6f7198bb113"
+    },
+    {
+      "bytes": 2485,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/PROOF_OBLIGATIONS.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/0d6b6e83ead3e41fbe873c25c03778cc7f70b3677ef1d2d1408456af70889b49.gz",
+      "sha256": "0d6b6e83ead3e41fbe873c25c03778cc7f70b3677ef1d2d1408456af70889b49",
+      "stored_bytes": 1308,
+      "stored_sha256": "1c92a615cd85d967e0784211135f5593ee78414b43642f435ce2d81e82191ed9"
+    },
+    {
+      "bytes": 7718,
+      "lines": 138,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/SOURCE_COVERAGE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/SOURCE_COVERAGE.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/0ee7c1aa9fd04efa7b7242808bdf2870dd6faa83d4d963ba382f76b4f5e273a8.gz",
+      "sha256": "0ee7c1aa9fd04efa7b7242808bdf2870dd6faa83d4d963ba382f76b4f5e273a8",
+      "stored_bytes": 2687,
+      "stored_sha256": "f3b1170dcdb0a3dc024402bda85f1ebff56ab84c614ca3fca7e2c794607f3081"
+    },
+    {
+      "bytes": 4474,
+      "lines": 22,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/BUILD_CHECKER_MAP.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run02_checker_map/executed_source.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/0f2b76be11c720a2436ffbdc5801c4e397a14e82d0867b9f4a5f300b22ddce42.gz",
+      "sha256": "0f2b76be11c720a2436ffbdc5801c4e397a14e82d0867b9f4a5f300b22ddce42",
+      "stored_bytes": 2097,
+      "stored_sha256": "e7ac900e3d3f54c1613a863f805166ee128be491ce547d99e1056189ca0a0fe3"
+    },
+    {
+      "bytes": 1531,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/record_run.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696.gz",
+      "sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696",
+      "stored_bytes": 757,
+      "stored_sha256": "45b29196762f6bb07d3312abb0e5b79b23b6725d6eaa3f89c1a5e0f9a59e091d"
+    },
+    {
+      "bytes": 1640,
+      "lines": 30,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/DISPOSITION.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/DISPOSITION.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/118faf048544fa213229bfe02e1487ed343e7fcfb2c0fcb08e941a1309012c9d.gz",
+      "sha256": "118faf048544fa213229bfe02e1487ed343e7fcfb2c0fcb08e941a1309012c9d",
+      "stored_bytes": 915,
+      "stored_sha256": "50718378daebc6cc7ec3e4f4622886804dac3004eb55e117c1b7f9471898e26a"
+    },
+    {
+      "bytes": 1427,
+      "lines": 9,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/bookkeeping_failure_01/EXECUTED_STDIN.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/bookkeeping_failure_01/EXECUTED_STDIN.py",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/11bae2c0119f51305596556d9bae86cdc0c61f2bb7f46dbaa0f47dc78cedfb33.gz",
+      "sha256": "11bae2c0119f51305596556d9bae86cdc0c61f2bb7f46dbaa0f47dc78cedfb33",
+      "stored_bytes": 840,
+      "stored_sha256": "3a6e06560c77ed15f715a0a87386a5ead943da4eef5ffdaacc9a40f3b023ed6a"
+    },
+    {
+      "bytes": 3539,
+      "lines": 77,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_assembly_root_review/SOURCE_BINDING.json",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/12ab2fac5d2538f555b6ccdb9d7cc4fddf50ea878b3d78ceb30dff49ce924b64.gz",
+      "sha256": "12ab2fac5d2538f555b6ccdb9d7cc4fddf50ea878b3d78ceb30dff49ce924b64",
+      "stored_bytes": 1286,
+      "stored_sha256": "c2250ed50b64914bab0831a5f03f9534fc293c946581274e0f1bfdc47f282c5f"
+    },
+    {
+      "bytes": 631,
+      "lines": 12,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/PRE_EXPOSURE_SEAL.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/PRE_EXPOSURE_SEAL.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/19399f90e9a8065c0f9fb026266a67aceb1a956c25007c049ee3157b8f65dede.gz",
+      "sha256": "19399f90e9a8065c0f9fb026266a67aceb1a956c25007c049ee3157b8f65dede",
+      "stored_bytes": 422,
+      "stored_sha256": "a20054cbc86048179b701bdc2ae1316e9853a847e787d9975fd350b763b31fb9"
+    },
+    {
+      "bytes": 3560,
+      "lines": 54,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/acceptance/GEOMETRIC_TIME_ROOT_ACCEPTANCE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GEOMETRIC_TIME_ROOT_ACCEPTANCE.json",
+          "role": "unchanged current conditional analytic acceptance original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/1cecae561962c855f1704363fda4fc43e1758965ccb1ef6676d8ddbecb09cb3a.gz",
+      "sha256": "1cecae561962c855f1704363fda4fc43e1758965ccb1ef6676d8ddbecb09cb3a",
+      "stored_bytes": 1512,
+      "stored_sha256": "9e03cbd9ed34b0281fdd94b5ea3acc08caf44a9d8eee272eb91f852e98fe9b54"
+    },
+    {
+      "bytes": 808,
+      "lines": 18,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/ROOT_EXPOSURE_START.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/ROOT_EXPOSURE_START.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/1e2abd20fecf5efdd66c60b85312a338777946ae2a2d95195b0d9050cdb50603.gz",
+      "sha256": "1e2abd20fecf5efdd66c60b85312a338777946ae2a2d95195b0d9050cdb50603",
+      "stored_bytes": 444,
+      "stored_sha256": "ca6d7e7bfaa0ed89779c0934054e3f5fc1b5b0db22d464490af9dc18e46585fb"
+    },
+    {
+      "bytes": 1567,
+      "lines": 43,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/SOURCE_MAP.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/1ef29b38201aad1ce564769563b37d97713ed2284d7cb1175ef452cd313bf241.gz",
+      "sha256": "1ef29b38201aad1ce564769563b37d97713ed2284d7cb1175ef452cd313bf241",
+      "stored_bytes": 638,
+      "stored_sha256": "1d23d073759e99c2b77a83732083a51e0489ab90ddd312d90ced90deb47d4cde"
+    },
+    {
+      "bytes": 1001,
+      "lines": 28,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run03_source_check/stdout.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/stdout",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/22d5bc2dee3db774867c474bb1b6ab2fa28f72a8a8ed9b49055ae58895f49dfe.gz",
+      "sha256": "22d5bc2dee3db774867c474bb1b6ab2fa28f72a8a8ed9b49055ae58895f49dfe",
+      "stored_bytes": 551,
+      "stored_sha256": "b463a46449e7d80d3250b983b6db0736e691d0cbd1b741aceb695cd9550fb25b"
+    },
+    {
+      "bytes": 2682,
+      "lines": 51,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_outer_execution/stdout",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_review/SOURCE_BINDING.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_time_root_review/SOURCE_BINDING.json",
+          "role": "unchanged actual root disposition and source-binding records original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_publication_root_review/geometric_binding/stdout",
+          "role": "unchanged actual outer source-binding execution record and raw streams original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/233d2b30817514e55ed4c2935efe2fbae2b28f9a2da3efad1bf7644e6742fbf4.gz",
+      "sha256": "233d2b30817514e55ed4c2935efe2fbae2b28f9a2da3efad1bf7644e6742fbf4",
+      "stored_bytes": 912,
+      "stored_sha256": "76e119cefce1e25a50251f7033ec4aecc8d97777be2a9853f51444f02f05d838"
+    },
+    {
+      "bytes": 482,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/checkpoint_1125/main.diff",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        }
+      ],
+      "path": "objects/24fa8be55fbae148c815f653b5ee0bb44c90d37097789abaf878a98e2ec1d417.gz",
+      "sha256": "24fa8be55fbae148c815f653b5ee0bb44c90d37097789abaf878a98e2ec1d417",
+      "stored_bytes": 254,
+      "stored_sha256": "b040327bdb8b4422c5589c913419c3552e129f1b500fe2beb27ef0c22b418f43"
+    },
+    {
+      "bytes": 1284,
+      "lines": 27,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run04_finalize_prepare/RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/27eb96f9d590840a1c44fa8c1ce3ebd41f8a649eed9b0cfb2205fa7eb4b41370.gz",
+      "sha256": "27eb96f9d590840a1c44fa8c1ce3ebd41f8a649eed9b0cfb2205fa7eb4b41370",
+      "stored_bytes": 634,
+      "stored_sha256": "fe27e69f678f8367acbcc4bf3a7ade05e84185004cc5482ae56598975c9a10c2"
+    },
+    {
+      "bytes": 13749,
+      "lines": 107,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/ASSEMBLE_SOURCE_ONLY.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/2adbb617690730ec5aa187f70852c28b41d279acd3285d34ddc28a6998ec9b8c.gz",
+      "sha256": "2adbb617690730ec5aa187f70852c28b41d279acd3285d34ddc28a6998ec9b8c",
+      "stored_bytes": 5465,
+      "stored_sha256": "6a1b6b42f1bfebbc8dc32a6e2a3185a750f09245d0937b039ea9255607abd010"
+    },
+    {
+      "bytes": 974,
+      "lines": 24,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr/EXECUTION.json",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/2dbd270ad04d8437d342eedab39dd02093490abf857e3c5ffa93c5c353202c55.gz",
+      "sha256": "2dbd270ad04d8437d342eedab39dd02093490abf857e3c5ffa93c5c353202c55",
+      "stored_bytes": 579,
+      "stored_sha256": "39879c744d9d5bad3914f5039d8a5a29a83e882017de0ec7069c2b6dc3469704"
+    },
+    {
+      "bytes": 11270,
+      "lines": 74,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/02_2ddbcafc82ea.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/all_volume_code_root/DERIVATION_V2.md",
+          "role": "unchanged nonempty even-volume subcode only original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a.gz",
+      "sha256": "2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a",
+      "stored_bytes": 4751,
+      "stored_sha256": "005b5cd0ddc9ab02a96be99e533d7bdd69f59f9da73f119979fe1c7022d74562"
+    },
+    {
+      "bytes": 34639,
+      "lines": 536,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/procedures/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "stored_bytes": 13238,
+      "stored_sha256": "f8dd35ca9c0a3ece0796ea04634d5fa56133cc7936ca3e406607aa773f7b2564"
+    },
+    {
+      "bytes": 420736,
+      "lines": 4859,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_proposal/OVERLAP_SEARCH.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/reviewed_root_sources/OVERLAP_SEARCH.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/OVERLAP_SEARCH.json",
+          "role": "unchanged complete six-file accepted analytic source package; original status retained original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/reviewed_root_sources/OVERLAP_SEARCH.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/2f2fc746d5f5b47eb179cae166ba46d21e79a321ee45b44e78bdfa252dee31c8.gz",
+      "sha256": "2f2fc746d5f5b47eb179cae166ba46d21e79a321ee45b44e78bdfa252dee31c8",
+      "stored_bytes": 85177,
+      "stored_sha256": "bd4952f94c47e9c7e463aad4e6c6517936ab063d565d7f677e0c784cb113f0e1"
+    },
+    {
+      "bytes": 4918,
+      "lines": 184,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/FINALIZER_PROGRAM_REUSE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/2f5a145e23ac8b637715b005cb624e5841f9bbe9fc19882a1462d6b05777236e.gz",
+      "sha256": "2f5a145e23ac8b637715b005cb624e5841f9bbe9fc19882a1462d6b05777236e",
+      "stored_bytes": 1459,
+      "stored_sha256": "c3860ff4c648444c444839d7614b189f936e07f4fe71fa65ab9534e829cd295a"
+    },
+    {
+      "bytes": 6876,
+      "lines": 132,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/07_312f15b8f1cc.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNIFORM_CONTROL_BUDGET_ROOT_ACCEPTANCE.json",
+          "role": "unchanged whole-term budget acceptance original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/312f15b8f1ccee7654302e3ab25dd59e8f4211b5fba7538e243d0bc633315e0c.gz",
+      "sha256": "312f15b8f1ccee7654302e3ab25dd59e8f4211b5fba7538e243d0bc633315e0c",
+      "stored_bytes": 2072,
+      "stored_sha256": "fb43ba303119161acf25027fe9c40a208c120e29c8996875e67c9c7411c6d80d"
+    },
+    {
+      "bytes": 3295,
+      "lines": 43,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/check_crossing_support.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run01_crossing_support/EXECUTED_SOURCE.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/check_crossing_support.py",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run01_crossing_support/EXECUTED_SOURCE.py",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/320fff6cb3e2ce9644f31f40070d1554105e00278bf402049fef1dd8b69bfde5.gz",
+      "sha256": "320fff6cb3e2ce9644f31f40070d1554105e00278bf402049fef1dd8b69bfde5",
+      "stored_bytes": 1555,
+      "stored_sha256": "7f0ba627b9cee2fc415f0d42a5ba92d78873b2ef17379088b87ac0fe72486394"
+    },
+    {
+      "bytes": 25783,
+      "lines": 185,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/ASSEMBLER_REUSE.diff",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/32d214396b43016247e74f43e7cfd4d0f4ad7338402fb5cae0f92a22ede05c62.gz",
+      "sha256": "32d214396b43016247e74f43e7cfd4d0f4ad7338402fb5cae0f92a22ede05c62",
+      "stored_bytes": 8973,
+      "stored_sha256": "17ece76c85a4dfd87b2b61afb9708824a8572a64fcbad6a753ddf94bcd6f07da"
+    },
+    {
+      "bytes": 3459,
+      "lines": 16,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/CONFORMANCE.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/3466dcbdb725018063b68847648026e4dad6706a88bf5835694d9892ad96afd9.gz",
+      "sha256": "3466dcbdb725018063b68847648026e4dad6706a88bf5835694d9892ad96afd9",
+      "stored_bytes": 1669,
+      "stored_sha256": "fa397e9e9adfefab54b017151397016c17b48d8032f6f5d8b69d1dc64f242ceb"
+    },
+    {
+      "bytes": 581,
+      "lines": 16,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch/EXECUTION.json",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/3a32695421d0bb797b18a91345e8e2f4600b42d8ddea3413fa2740bf13d10faf.gz",
+      "sha256": "3a32695421d0bb797b18a91345e8e2f4600b42d8ddea3413fa2740bf13d10faf",
+      "stored_bytes": 386,
+      "stored_sha256": "5d1a27c33b5cdc16854cbb1651b6eadef790644fd58504036148f10ba4b69d37"
+    },
+    {
+      "bytes": 1958,
+      "lines": 60,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/procedures/docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b.gz",
+      "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b",
+      "stored_bytes": 1068,
+      "stored_sha256": "3bde432f56514aeeea547c4474c7cf5157f711eaf44e4645e9b5eda9b76bb2c3"
+    },
+    {
+      "bytes": 619,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding/EXECUTION.json",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/3e9de2bb5ee28404840f2c853b5c27c8a56d5150738d60835498cb99ddeab19f.gz",
+      "sha256": "3e9de2bb5ee28404840f2c853b5c27c8a56d5150738d60835498cb99ddeab19f",
+      "stored_bytes": 413,
+      "stored_sha256": "cbff36f70acec53a1bcef5130bed49ea38c6a56d03c6bbfd0778881a92f1495e"
+    },
+    {
+      "bytes": 8842,
+      "lines": 181,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/context/4149c80ba6fb_MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+          "role": "unchanged historical attribution/overlap source: lines1-120 only; attribution, not premise original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/4149c80ba6fb3cf905763fa853f853dd7633ea3e1539165ff8c4c75993dd1df3.gz",
+      "sha256": "4149c80ba6fb3cf905763fa853f853dd7633ea3e1539165ff8c4c75993dd1df3",
+      "stored_bytes": 3758,
+      "stored_sha256": "e02013a691e2827fddc6409cccb33e0b91607c34363e461b647cc9af99239fc8"
+    },
+    {
+      "bytes": 3532,
+      "lines": 129,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/CHECKER_PROGRAM_REUSE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/419babe097fcc032742b3dabf52c809dfd702078ca3648dc22e1f7335bd5f9a7.gz",
+      "sha256": "419babe097fcc032742b3dabf52c809dfd702078ca3648dc22e1f7335bd5f9a7",
+      "stored_bytes": 1119,
+      "stored_sha256": "881ade44e13e0fba41e730c1762d3fad177757dc6b0fdc98f341b4ed9b5daf47"
+    },
+    {
+      "bytes": 25640,
+      "lines": 54,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_proposal/overlap_search.stdout.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/reviewed_root_sources/overlap_search.stdout.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/overlap_search.stdout.txt",
+          "role": "unchanged complete six-file accepted analytic source package; original status retained original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/reviewed_root_sources/overlap_search.stdout.txt",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/4529aa06927ac81dbf9ba662b6aa20619a5261ae5c628d09baf66e679c88b84b.gz",
+      "sha256": "4529aa06927ac81dbf9ba662b6aa20619a5261ae5c628d09baf66e679c88b84b",
+      "stored_bytes": 9564,
+      "stored_sha256": "0ee07575a7033963d0cbb7edf2f36e661b59fdd37fbb8220038dc158bae30961"
+    },
+    {
+      "bytes": 27494,
+      "lines": 200,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/03_45ea7ab89699.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/DERIVATION.md",
+          "role": "unchanged full whole-term physical control budget original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779.gz",
+      "sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779",
+      "stored_bytes": 11212,
+      "stored_sha256": "928e325f68634752aa1f8468d42f10506336ae100d20fee9bafa234eed3e980e"
+    },
+    {
+      "bytes": 7156,
+      "lines": 88,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/PRE_EXPOSURE_ASSESSMENT.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/PRE_EXPOSURE_ASSESSMENT.md",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/46f80049bffa74e4eea3a14065d42ffa893a6bb16f3631438e6bcf0f76eff85d.gz",
+      "sha256": "46f80049bffa74e4eea3a14065d42ffa893a6bb16f3631438e6bcf0f76eff85d",
+      "stored_bytes": 3327,
+      "stored_sha256": "7a14465851c731443658930fe68ace04cb4d8bff280db0ea16f72ea36e25c5a5"
+    },
+    {
+      "bytes": 6355,
+      "lines": 24,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_review/ROOT_DISPOSITION.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_time_root_review/ROOT_DISPOSITION.md",
+          "role": "unchanged actual root disposition and source-binding records original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/483342ca3b64d1cc58c5437a83df1a4a44e9ac9442cb37e9134122e030ade104.gz",
+      "sha256": "483342ca3b64d1cc58c5437a83df1a4a44e9ac9442cb37e9134122e030ade104",
+      "stored_bytes": 3088,
+      "stored_sha256": "3c45fadd1de0566f5f1b786c45c3832cf06b4e4f2d4a80e7dbca1598fa506332"
+    },
+    {
+      "bytes": 7293,
+      "lines": 35,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/BUILD_REVIEW_RECORDS.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run02_source_records/EXECUTED_SOURCE.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/BUILD_REVIEW_RECORDS.py",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run02_source_records/EXECUTED_SOURCE.py",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/4d72566cd8ffe64b0b09faefc95da1e8f31fe2a8a1099616db91467008f95844.gz",
+      "sha256": "4d72566cd8ffe64b0b09faefc95da1e8f31fe2a8a1099616db91467008f95844",
+      "stored_bytes": 3356,
+      "stored_sha256": "ad266e6fad830c938f3b871b48591853a469b311211727f76e1b6cce53dca925"
+    },
+    {
+      "bytes": 15623,
+      "lines": 101,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/REPORT.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/REPORT.md",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/4d97142d98631805f717e606417979d8689f9281315ca5872d9306bf99e76208.gz",
+      "sha256": "4d97142d98631805f717e606417979d8689f9281315ca5872d9306bf99e76208",
+      "stored_bytes": 6987,
+      "stored_sha256": "c72c7b4eaac8ca869703161c56053c62b43bbef8e3bbd776edeb7bcd8232c5fc"
+    },
+    {
+      "bytes": 956,
+      "lines": 9,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/checkpoint_1125/SYNC_ASSESSMENT.json",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        }
+      ],
+      "path": "objects/4e3f4771dacb5e86cab7fc2eb4901d79e5a5bd925243577c1fba28ca018cf808.gz",
+      "sha256": "4e3f4771dacb5e86cab7fc2eb4901d79e5a5bd925243577c1fba28ca018cf808",
+      "stored_bytes": 599,
+      "stored_sha256": "d977b1b3810e0d2a2413878d69577d6156d85ba22d3467e48b430051eac6a415"
+    },
+    {
+      "bytes": 3827,
+      "lines": 141,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/PROGRAM_REUSE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/4e52a0b601ef30cf700a16780342640002561398a0268e7048fba7354c1da138.gz",
+      "sha256": "4e52a0b601ef30cf700a16780342640002561398a0268e7048fba7354c1da138",
+      "stored_bytes": 1214,
+      "stored_sha256": "c86758131aa79710e995fee48656f823bbc6c24297443758c9567aaa25e7ba5e"
+    },
+    {
+      "bytes": 93370,
+      "lines": 755,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/parent/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "role": "unchanged sole canonical mathematical parent; complete four exact premise bodies original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573.gz",
+      "sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "stored_bytes": 35335,
+      "stored_sha256": "4bc82c155cbbb16e27004ad37f53b7109aff2a69e67fde82800f9859c05c11eb"
+    },
+    {
+      "bytes": 814,
+      "lines": 14,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run02_source_records/RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run02_source_records/RECEIPT.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/53871af829849b5b0df4e8df676e9a3961bf2f224666c6bdc21b41a5e2ce0c98.gz",
+      "sha256": "53871af829849b5b0df4e8df676e9a3961bf2f224666c6bdc21b41a5e2ce0c98",
+      "stored_bytes": 480,
+      "stored_sha256": "ca28dd721200301e3c3a7c7aa2f2d7be22e907ad5f7a44d922171afe4e55462d"
+    },
+    {
+      "bytes": 1230,
+      "lines": 4,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/bookkeeping_failure_01/TOOL_OUTPUT.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/bookkeeping_failure_01/TOOL_OUTPUT.txt",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/558ccd3d250043d2d68cf7957eebcb9dd7280bc4ff9c768c7f599ed23b869366.gz",
+      "sha256": "558ccd3d250043d2d68cf7957eebcb9dd7280bc4ff9c768c7f599ed23b869366",
+      "stored_bytes": 441,
+      "stored_sha256": "b3d81a64326d7cfbec9acfec8db0a058af3c5f098f1dc6ed541443472ac78383"
+    },
+    {
+      "bytes": 4212,
+      "lines": 15,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GEOMETRIC_TIME_ASSEMBLY_ROOT_REVIEW.md",
+          "role": "complete accepted composition root review"
+        }
+      ],
+      "path": "objects/58bf88196e0123317dd0de42e432b0848c3efc7e9b68afd482b12f44b9242dea.gz",
+      "sha256": "58bf88196e0123317dd0de42e432b0848c3efc7e9b68afd482b12f44b9242dea",
+      "stored_bytes": 2124,
+      "stored_sha256": "476f7d32dffa88a435d2421050a50b753926f43ff75ab18964eedab9c63f1dc3"
+    },
+    {
+      "bytes": 12042,
+      "lines": 106,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/FINALIZE_ASSEMBLY.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/5a713e98b92c28ba67170afa39ab8a89043283fabbe45ecf7bc5d054b03709df.gz",
+      "sha256": "5a713e98b92c28ba67170afa39ab8a89043283fabbe45ecf7bc5d054b03709df",
+      "stored_bytes": 4822,
+      "stored_sha256": "077e010ed17696ed0ed0e4b4150165fd39631d69fc67cdd74313b647056c254e"
+    },
+    {
+      "bytes": 12706,
+      "lines": 108,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/ASSEMBLE_SOURCE_ONLY.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run01_assemble/executed_source.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/5b2c89a562b332738ef43b1fb754f7536864d28bc664cd6bde7e79c9800ae6d9.gz",
+      "sha256": "5b2c89a562b332738ef43b1fb754f7536864d28bc664cd6bde7e79c9800ae6d9",
+      "stored_bytes": 5124,
+      "stored_sha256": "95d351c562405a6ae4feb4f40e40e609d614f8897cab100c4a459790f69fe450"
+    },
+    {
+      "bytes": 19828,
+      "lines": 106,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/FINALIZER_REUSE.diff",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/61fc9745e63059a4b1aa6efd0b790089066cfbc59ca5472884142327d1900bcc.gz",
+      "sha256": "61fc9745e63059a4b1aa6efd0b790089066cfbc59ca5472884142327d1900bcc",
+      "stored_bytes": 6279,
+      "stored_sha256": "b82692b43d5f161d5247fcde36cff7bbd8efa56cfb8d21142a57a0da1fcef99b"
+    },
+    {
+      "bytes": 11699,
+      "lines": 99,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/FINALIZE_ASSEMBLY.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run04_finalize_prepare/executed_source.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/633a50aa17b434c211b31dca7e2b2ac4528ad972669704eae0b9e991dce42192.gz",
+      "sha256": "633a50aa17b434c211b31dca7e2b2ac4528ad972669704eae0b9e991dce42192",
+      "stored_bytes": 4604,
+      "stored_sha256": "fc42eccb9f580161962230241f835f36b1681e05da355214a2f17e28d0390e8c"
+    },
+    {
+      "bytes": 23324,
+      "lines": 649,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/FINAL_FREEZE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/635d9eb9f88c542b20dfec8bf093d416c224dbfb6662665a7dfd568401936871.gz",
+      "sha256": "635d9eb9f88c542b20dfec8bf093d416c224dbfb6662665a7dfd568401936871",
+      "stored_bytes": 6510,
+      "stored_sha256": "09076c3240146b72e17a65efba86b736f8663f3be7085200bc83de014a048a71"
+    },
+    {
+      "bytes": 2073,
+      "lines": 11,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/CONFORMANCE.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/6440156aee465789f90173e338a417559870543aab14988570b53d31b59ba696.gz",
+      "sha256": "6440156aee465789f90173e338a417559870543aab14988570b53d31b59ba696",
+      "stored_bytes": 1020,
+      "stored_sha256": "a9eaa2ae1efe65cc9ad5cc65c3813fe01cd4089446d4eb5b18363196cd268521"
+    },
+    {
+      "bytes": 733,
+      "lines": 22,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run01_assemble/stdout.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/655b3e5ad2ba16b975af33d5975cd1a2e66a60f3189184889c6828ae46a15d70.gz",
+      "sha256": "655b3e5ad2ba16b975af33d5975cd1a2e66a60f3189184889c6828ae46a15d70",
+      "stored_bytes": 436,
+      "stored_sha256": "8d4909bd5772b646b304821fa1f1b0da9f950a2b91e70174d248aea5bf895184"
+    },
+    {
+      "bytes": 1293,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run02_checker_map/RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/658f39e065a20bfdcea10b0f0f9979c5263253022756484559e0975077a9e410.gz",
+      "sha256": "658f39e065a20bfdcea10b0f0f9979c5263253022756484559e0975077a9e410",
+      "stored_bytes": 636,
+      "stored_sha256": "8c7d88d14e95388bc717d4ef6c8fb2c0de3d7ceb914fdccb4ed8d20bb0d75c16"
+    },
+    {
+      "bytes": 3123,
+      "lines": 50,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/06_65de49faf2c0.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ALL_VOLUME_CODE_ROOT_ACCEPTANCE.json",
+          "role": "unchanged nonempty-subcode acceptance original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/65de49faf2c0d14f167db3b625bff2284f723fd8a2326b5af67cd18d1dd1472f.gz",
+      "sha256": "65de49faf2c0d14f167db3b625bff2284f723fd8a2326b5af67cd18d1dd1472f",
+      "stored_bytes": 1400,
+      "stored_sha256": "e33eef3923dadd621ef1a6f2097903e8834740d970f3a324e1a0dc43df61c1de"
+    },
+    {
+      "bytes": 611,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/EXECUTION.json",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/66ad43217953ea75e6d8c6cf94c15db255b7ccc1b0eb761550c102c346a49942.gz",
+      "sha256": "66ad43217953ea75e6d8c6cf94c15db255b7ccc1b0eb761550c102c346a49942",
+      "stored_bytes": 422,
+      "stored_sha256": "af62a0db092b8775d4d630bf195fd2ee9b624976da792ec83ea9950c921d9dc1"
+    },
+    {
+      "bytes": 33479,
+      "lines": 501,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/context/66ae1faa267c_MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+          "role": "unchanged historical attribution/overlap source: complete source read, initially truncated middle recovered lines220-345; context only, no theorem import original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/66ae1faa267c8140c06ed1fe52671f4e6e98478181ef1e11ee512b4cd26e89b0.gz",
+      "sha256": "66ae1faa267c8140c06ed1fe52671f4e6e98478181ef1e11ee512b4cd26e89b0",
+      "stored_bytes": 12235,
+      "stored_sha256": "fb7637d4c913992a5751ee3f2d8507aa5058f4af6a621deb66b28a636b7029ae"
+    },
+    {
+      "bytes": 2810,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/EVIDENCE_AND_REVIEW.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/66e1f2d17426231d222af666115c5bf50d110639a789be9f3c2949f819b514ec.gz",
+      "sha256": "66e1f2d17426231d222af666115c5bf50d110639a789be9f3c2949f819b514ec",
+      "stored_bytes": 1502,
+      "stored_sha256": "9be06ea0a5cd85d8e442607ea9e1599f2469b4b51a090c41e7f2a84429f67dc6"
+    },
+    {
+      "bytes": 2461,
+      "lines": 66,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/COLD_READ_RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/699ca6a4fd6e17ba7d8857f9910e1ac011b95eb2da949793c31ffa29f02a8e85.gz",
+      "sha256": "699ca6a4fd6e17ba7d8857f9910e1ac011b95eb2da949793c31ffa29f02a8e85",
+      "stored_bytes": 1238,
+      "stored_sha256": "48b9354503ad5b7ca226a8007a4b6a393fb511351ae5616d78e0ae46e830bb5b"
+    },
+    {
+      "bytes": 311,
+      "lines": 4,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/framing/COMPLETE_PROOF.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/6fe38c0746478910e9cdd401d4a5b44765b7f22eb4b8c857f0bb0bce43f5692d.gz",
+      "sha256": "6fe38c0746478910e9cdd401d4a5b44765b7f22eb4b8c857f0bb0bce43f5692d",
+      "stored_bytes": 236,
+      "stored_sha256": "e1566a3674979a1a741614f2e5d66fd7484f20e1817512017f774daf4118dcd9"
+    },
+    {
+      "bytes": 3521,
+      "lines": 36,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_assembly_root_review/bind.py",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/70ceb0ee11c295fb43510352e3754db8ed31145f163a618047ba5ea499c76a4a.gz",
+      "sha256": "70ceb0ee11c295fb43510352e3754db8ed31145f163a618047ba5ea499c76a4a",
+      "stored_bytes": 1571,
+      "stored_sha256": "74afab317b11f8409a26fee0ce32a81e011ef9633d07c21df0758c00f4b490b0"
+    },
+    {
+      "bytes": 11788,
+      "lines": 88,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/THEOREM_WRAPPER.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/72779a74a78b191251f256a2d327259ff72c97f22d216fb59ca959dc22703070.gz",
+      "sha256": "72779a74a78b191251f256a2d327259ff72c97f22d216fb59ca959dc22703070",
+      "stored_bytes": 5482,
+      "stored_sha256": "5f69532e9c80eb64169705aea136a3b2d5f2d0637b76ad067ce235261a5d6d3b"
+    },
+    {
+      "bytes": 1752,
+      "lines": 34,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_proposal/PRE_REVIEW_SEAL.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/reviewed_root_sources/PRE_REVIEW_SEAL.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/PRE_REVIEW_SEAL.json",
+          "role": "unchanged complete six-file accepted analytic source package; original status retained original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/reviewed_root_sources/PRE_REVIEW_SEAL.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/76933c1fe63d7f7f588247f3fb95e82aab1a3977ceb69fb44772ae6aec0a59a3.gz",
+      "sha256": "76933c1fe63d7f7f588247f3fb95e82aab1a3977ceb69fb44772ae6aec0a59a3",
+      "stored_bytes": 662,
+      "stored_sha256": "93e0d25a20ce6b0258a50a43a8b5a7018395ced0868fc979eeb29996a0a4a0fa"
+    },
+    {
+      "bytes": 8576,
+      "lines": 89,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/CHECK_SOURCE_ONLY.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/779f9c50161c39d8eb6bbfb87a77d553903ddffe3e86b3865ffef1bf0d805f3c.gz",
+      "sha256": "779f9c50161c39d8eb6bbfb87a77d553903ddffe3e86b3865ffef1bf0d805f3c",
+      "stored_bytes": 3217,
+      "stored_sha256": "964ca152ae3565d8868a3512efc7199648acf281cc70f71b5351dac26350c42f"
+    },
+    {
+      "bytes": 2505,
+      "lines": 46,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GEOMETRIC_TIME_ASSEMBLY_ROOT_ACCEPTANCE.json",
+          "role": "actual conditional source acceptance, not publication execution authority"
+        }
+      ],
+      "path": "objects/7f45dd068ac8fdb2b5cef5f3cf3c65e4807fe5e385570efb32352c0f401cbb13.gz",
+      "sha256": "7f45dd068ac8fdb2b5cef5f3cf3c65e4807fe5e385570efb32352c0f401cbb13",
+      "stored_bytes": 995,
+      "stored_sha256": "fc0cc43e70c6410537b174c77317d6a68d6b71f84a5245c8c574364377978d39"
+    },
+    {
+      "bytes": 522,
+      "lines": 19,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run04_finalize_prepare/stdout.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/82a9efa07b2105b5060901999fb901af06bbd2622a67204c8d118a720c9d1a07.gz",
+      "sha256": "82a9efa07b2105b5060901999fb901af06bbd2622a67204c8d118a720c9d1a07",
+      "stored_bytes": 324,
+      "stored_sha256": "f87e1dcf396b04e3ca1b665aa4d399b18ee1187ebb2209be690509b776ac6392"
+    },
+    {
+      "bytes": 15153,
+      "lines": 156,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_proposal/DERIVATION.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/reviewed_root_sources/DERIVATION.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/cores/GEOMETRIC_TIME_DERIVATION.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/DERIVATION.md",
+          "role": "unchanged complete six-file accepted analytic source package; original status retained original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/reviewed_root_sources/DERIVATION.md",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0.gz",
+      "sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0",
+      "stored_bytes": 6471,
+      "stored_sha256": "c4ecef6b23093000e68e4da051cb8c565d0ad53c5d745b65009451e0ac3c3bda"
+    },
+    {
+      "bytes": 8862,
+      "lines": 154,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/04_910939c967c7.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/LOCAL_UNIFORMITY_DIRECT_ROOT_ACCEPTANCE.json",
+          "role": "unchanged direct frame acceptance original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/910939c967c71489dcc50b08893f0228ac808f3b92305c4e1dced4e220b78e86.gz",
+      "sha256": "910939c967c71489dcc50b08893f0228ac808f3b92305c4e1dced4e220b78e86",
+      "stored_bytes": 2862,
+      "stored_sha256": "c6aa1b69e1b065b9ec32c940110a8ae52274a6bb14e81fe46ffd034d9bbfe94a"
+    },
+    {
+      "bytes": 27252,
+      "lines": 248,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/CANDIDATE.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/914ee9a23eea7dd55e277d9eb782ff086c3020f9ac6822c7fb3aef9efd55dd43.gz",
+      "sha256": "914ee9a23eea7dd55e277d9eb782ff086c3020f9ac6822c7fb3aef9efd55dd43",
+      "stored_bytes": 10795,
+      "stored_sha256": "226426d032ecb6bff0abb148f086cf16e6ccd287c60ae9103526899526d40102"
+    },
+    {
+      "bytes": 2870,
+      "lines": 57,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/PARENT_BODY_MAP.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/945e39f91dae8d52b757c6a2ba369c7075f612dc6b1159126acf75639d14da74.gz",
+      "sha256": "945e39f91dae8d52b757c6a2ba369c7075f612dc6b1159126acf75639d14da74",
+      "stored_bytes": 953,
+      "stored_sha256": "a8887fdf1fa46534d217eee93bc065f00ee4e2d59b76b2784f86b55b7767f201"
+    },
+    {
+      "bytes": 569,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run02_source_records/stdout.jsonl",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run02_source_records/stdout.jsonl",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/953cd7404396177831719d8c5291337cbd3c39ca0050f8c747129d1894a7af84.gz",
+      "sha256": "953cd7404396177831719d8c5291337cbd3c39ca0050f8c747129d1894a7af84",
+      "stored_bytes": 399,
+      "stored_sha256": "284b80dbd8473bb1132f212d1be36ca53dad23085293fbbb865fe8782ce3a3a3"
+    },
+    {
+      "bytes": 675,
+      "lines": 12,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/FAILURE_LEDGER.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/FAILURE_LEDGER.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/9b5614c7d4bdba9e1e1b6a9f616add7e3650268df68cf7bee69e11b2bd9521ad.gz",
+      "sha256": "9b5614c7d4bdba9e1e1b6a9f616add7e3650268df68cf7bee69e11b2bd9521ad",
+      "stored_bytes": 421,
+      "stored_sha256": "e5b20ab907f98f78852784a7c8d1db8c5c2ae7e17cbd5d59ac2419bc75769cdd"
+    },
+    {
+      "bytes": 477,
+      "lines": 10,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/crossing_support_input.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run01_crossing_support/INPUT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/crossing_support_input.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run01_crossing_support/INPUT.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/9e2b4258195257a26a2e8c05eaeb177763713be17d405315fca4ff2678297829.gz",
+      "sha256": "9e2b4258195257a26a2e8c05eaeb177763713be17d405315fca4ff2678297829",
+      "stored_bytes": 310,
+      "stored_sha256": "7e61f42ce04ca3e4720ad15c3e3e43edd9e7737d40cea5a8443c4f27768c9bdd"
+    },
+    {
+      "bytes": 499,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_outer_execution/EXECUTION.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_publication_root_review/geometric_binding/EXECUTION.json",
+          "role": "unchanged actual outer source-binding execution record and raw streams original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/9e46608acc91c8f42cfd5c2832e5d0b4292a143382fe545c205f4e093ac8f20d.gz",
+      "sha256": "9e46608acc91c8f42cfd5c2832e5d0b4292a143382fe545c205f4e093ac8f20d",
+      "stored_bytes": 330,
+      "stored_sha256": "a2b7f367d6cc6e67891f2dd4858efc0f9d5a5bbf060d60cd579d367aea53a501"
+    },
+    {
+      "bytes": 1262,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run03_source_check/RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/9e93674b16cd00aaacca4a9577448144e3c7416d2dee9b2b0190b92284b34a86.gz",
+      "sha256": "9e93674b16cd00aaacca4a9577448144e3c7416d2dee9b2b0190b92284b34a86",
+      "stored_bytes": 626,
+      "stored_sha256": "f50cf1881cd839b9c57708a603b5126cf3f60914de68d5a7c3a8cbb0ecbc1f13"
+    },
+    {
+      "bytes": 1511,
+      "lines": 26,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run01_assemble/RECEIPT.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/a499845e85c1dfffb2c679afda77fbe9a572a739dd2a9097e9847abc6d47fc14.gz",
+      "sha256": "a499845e85c1dfffb2c679afda77fbe9a572a739dd2a9097e9847abc6d47fc14",
+      "stored_bytes": 627,
+      "stored_sha256": "771503becfeed1536bb0037b922c5196e3e44f2cc1eb1ff04b5c0b21f2f3bbcd"
+    },
+    {
+      "bytes": 1468,
+      "lines": 39,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/FINAL_IDENTITY_READBACK.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/a609054214947a41c098fc7a0e85029624d3ca7edff342b83d6c6e14fc702419.gz",
+      "sha256": "a609054214947a41c098fc7a0e85029624d3ca7edff342b83d6c6e14fc702419",
+      "stored_bytes": 766,
+      "stored_sha256": "a1314771a30750a0451f2b0118ba047c8b6588cdfc8de4a5df92e37d54a97a72"
+    },
+    {
+      "bytes": 2832,
+      "lines": 17,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/README.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/a90ab7bacf72cfc81507e164afbe5f0e7bade60f20da537c22f9510aac7944e5.gz",
+      "sha256": "a90ab7bacf72cfc81507e164afbe5f0e7bade60f20da537c22f9510aac7944e5",
+      "stored_bytes": 1546,
+      "stored_sha256": "dffc2b3781b00c1f32526cb54c724083a4ea0183f518885e479766082338fed5"
+    },
+    {
+      "bytes": 291,
+      "lines": 9,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_integration/GEOMETRIC_BRANCH_CREATION.json",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        }
+      ],
+      "path": "objects/a9b28867045b443b23712354e63fc1c5384274c16c1360c049fabe6b9b3b8601.gz",
+      "sha256": "a9b28867045b443b23712354e63fc1c5384274c16c1360c049fabe6b9b3b8601",
+      "stored_bytes": 223,
+      "stored_sha256": "e2dd17542768b68d40dcdfec0572c38a270567aaf8eaf99d353982cd5d0b23fd"
+    },
+    {
+      "bytes": 3681,
+      "lines": 36,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_review/bind.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_time_root_review/bind.py",
+          "role": "unchanged actual root disposition and source-binding records original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/a9cc66553605a8d3369ff3567b1124feb85ac9012975548a5ed958b25bc5597f.gz",
+      "sha256": "a9cc66553605a8d3369ff3567b1124feb85ac9012975548a5ed958b25bc5597f",
+      "stored_bytes": 1588,
+      "stored_sha256": "7b5599fe6188719231fb1053df0f424f0c65a2edf0478d1f9791f38ddc84b61c"
+    },
+    {
+      "bytes": 206,
+      "lines": 2,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch/stderr",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/aacc63ddb7a21c07dfd8173b80c3e108d97e12a4d2008c54dd439c28b192b425.gz",
+      "sha256": "aacc63ddb7a21c07dfd8173b80c3e108d97e12a4d2008c54dd439c28b192b425",
+      "stored_bytes": 149,
+      "stored_sha256": "a0e2991e9682faa1788197b1fcb801d8b89e23382f3f1d30a6a5ece7e333d370"
+    },
+    {
+      "bytes": 2563,
+      "lines": 113,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_integration/GEOMETRIC_BRANCH_CREATION_EXECUTIONS.json",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        }
+      ],
+      "path": "objects/ac19c3a884d1b28f63bb463e65f839a907f685de0fedb9dac28a00907c4be077.gz",
+      "sha256": "ac19c3a884d1b28f63bb463e65f839a907f685de0fedb9dac28a00907c4be077",
+      "stored_bytes": 493,
+      "stored_sha256": "41a7a3bd071d77cc1e35728a2833249bad69ccad3b2e751dbd43c178bf8d36a1"
+    },
+    {
+      "bytes": 27662,
+      "lines": 252,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/01_ac224bb87235.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_penalty_uniformity/DERIVATION.md",
+          "role": "unchanged literal geometry and reducing physical target interface original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777.gz",
+      "sha256": "ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777",
+      "stored_bytes": 11754,
+      "stored_sha256": "a95d1a50a87e36ca06af6ee612ba287944ddb93037d2265088c20574277dbb9c"
+    },
+    {
+      "bytes": 2180,
+      "lines": 35,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/procedures/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "stored_bytes": 1138,
+      "stored_sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3"
+    },
+    {
+      "bytes": 40564,
+      "lines": 1039,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/FINAL_FREEZE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/b3bdb1d92ed7bc57c35a6a6f55a1fc589767b66bcf270f00afb87576eed1d3ab.gz",
+      "sha256": "b3bdb1d92ed7bc57c35a6a6f55a1fc589767b66bcf270f00afb87576eed1d3ab",
+      "stored_bytes": 8138,
+      "stored_sha256": "74b26b4d2dc799b15153925648cc6f184ab8ffa108c0757131da354ab5915eb0"
+    },
+    {
+      "bytes": 1039,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run01_crossing_support/stdout.jsonl",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run01_crossing_support/stdout.jsonl",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/b5c38d25fc2fa74a360dca7cc34a40aeb330571c5d251e882551db652cb12582.gz",
+      "sha256": "b5c38d25fc2fa74a360dca7cc34a40aeb330571c5d251e882551db652cb12582",
+      "stored_bytes": 540,
+      "stored_sha256": "7de7ad2157cbaddbd8ad8e9ce96634f7d4dcdca5a9b28cc47ad2b00c60464e09"
+    },
+    {
+      "bytes": 17255,
+      "lines": 152,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/CHECKER_REUSE.diff",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/b8872b720a730fca5c9ce60ad90f22bd144335035a8a47cc9793cc24bf470d65.gz",
+      "sha256": "b8872b720a730fca5c9ce60ad90f22bd144335035a8a47cc9793cc24bf470d65",
+      "stored_bytes": 5501,
+      "stored_sha256": "a74fb0dce3a8488bdbf042f0d51d2594c5eb666c47a4776bcddde26ed40cd6f4"
+    },
+    {
+      "bytes": 3049,
+      "lines": 54,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/ROOT_ACCEPTANCE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/b901fd0b1c26861a39458f8693e30c0d8b3956d92f0da4d6e20f2de7130c9d00.gz",
+      "sha256": "b901fd0b1c26861a39458f8693e30c0d8b3956d92f0da4d6e20f2de7130c9d00",
+      "stored_bytes": 1178,
+      "stored_sha256": "45d82228a46d3ff17956dbc73a6f0cc2c00772075127d5f154117830d2470a2e"
+    },
+    {
+      "bytes": 2263,
+      "lines": 38,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/READ_COVERAGE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/b9c1c38a9a314899ae8ebc6d36dca5ac8d8a54fdfe0d73011541cfb22794b2e6.gz",
+      "sha256": "b9c1c38a9a314899ae8ebc6d36dca5ac8d8a54fdfe0d73011541cfb22794b2e6",
+      "stored_bytes": 1149,
+      "stored_sha256": "66f4fc48ffb71b20a61bf99f1f2632e61bc1a7be0c38f3f0656519da1991b5e1"
+    },
+    {
+      "bytes": 16755,
+      "lines": 336,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/procedures/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "stored_bytes": 6504,
+      "stored_sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5"
+    },
+    {
+      "bytes": 1837,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view/stdout",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/c362163bd83cb68c51ad88a0615b7836a90a84a19335c80a5665aa7d3faa12df.gz",
+      "sha256": "c362163bd83cb68c51ad88a0615b7836a90a84a19335c80a5665aa7d3faa12df",
+      "stored_bytes": 1059,
+      "stored_sha256": "077901a0ce695647d9ddfa7ff70066c1b022ff56e855b4286c5035c281147d1e"
+    },
+    {
+      "bytes": 14302,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/context/c6712c3c3fc0_open_prs.stdout",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/checkpoint_0945/open_prs.stdout",
+          "role": "unchanged historical attribution/overlap source: all39 exact titles/head identities inspected; existing outside scope screens reused; no new absence/global science claim original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/c6712c3c3fc09b3163d5a8c2c6f039c2a52b5bf5e008f25e5762cc7882a4e5b2.gz",
+      "sha256": "c6712c3c3fc09b3163d5a8c2c6f039c2a52b5bf5e008f25e5762cc7882a4e5b2",
+      "stored_bytes": 2927,
+      "stored_sha256": "6a5861ee2860571c27e25d7de570aecee230bb8bd1f152ac354b84299085c290"
+    },
+    {
+      "bytes": 5755,
+      "lines": 169,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/REVIEW_SEAL.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/REVIEW_SEAL.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/c6b24677395bb9542e8e17a061401c29adfd1e0a0ff671916ec330a3efef1a93.gz",
+      "sha256": "c6b24677395bb9542e8e17a061401c29adfd1e0a0ff671916ec330a3efef1a93",
+      "stored_bytes": 1964,
+      "stored_sha256": "84bd8736f8f9f28880b4f8105a925b2a7eac5d13df00a09e961bcc96463c3cfc"
+    },
+    {
+      "bytes": 3253,
+      "lines": 67,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/procedures/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9.gz",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "stored_bytes": 1661,
+      "stored_sha256": "634119820fdadf1a90a26044dc18d81cb4a042d4c1d3ace92d2ea8a14e7f19ca"
+    },
+    {
+      "bytes": 2080,
+      "lines": 37,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/ROOT_SOURCE_RECHECK.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/ROOT_SOURCE_RECHECK.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/cf99a57789dbc38148aaa69e2c8ba701e82ebf83a5da8db87654167f847b06e5.gz",
+      "sha256": "cf99a57789dbc38148aaa69e2c8ba701e82ebf83a5da8db87654167f847b06e5",
+      "stored_bytes": 711,
+      "stored_sha256": "00af77f8a8b187f1359afcf9874f907cff03a3186be36ef2679ea1bfbe980ce0"
+    },
+    {
+      "bytes": 10446,
+      "lines": 101,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/CHECK_SOURCE_ONLY.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run03_source_check/executed_source.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/d0496b563a893625d617ced5035d7cd1791f4b6ae6336ce18832c418154c417e.gz",
+      "sha256": "d0496b563a893625d617ced5035d7cd1791f4b6ae6336ce18832c418154c417e",
+      "stored_bytes": 4035,
+      "stored_sha256": "8c0271167525da420e065e595495821036b21c6842161c0993c0c1ce7986ebb5"
+    },
+    {
+      "bytes": 4397,
+      "lines": 21,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/ASSEMBLY_REPORT.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/d26fb3d200b77f44370aa7947b4c646f3a73b79b235b799430ea7e01c3eb8d9b.gz",
+      "sha256": "d26fb3d200b77f44370aa7947b4c646f3a73b79b235b799430ea7e01c3eb8d9b",
+      "stored_bytes": 2188,
+      "stored_sha256": "8bb9643f2e5ec4aa243ae48e6845d5b88e6f814840077130eddad929898c9920"
+    },
+    {
+      "bytes": 980,
+      "lines": 13,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_outer_execution/recorder.py",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_publication_root_review/run.py",
+          "role": "unchanged actual outer recorder source identified by its receipt; not executed here original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/run.py",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/run.py",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        }
+      ],
+      "path": "objects/da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee.gz",
+      "sha256": "da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee",
+      "stored_bytes": 512,
+      "stored_sha256": "a07ecac975f08cb9b006ff204224347f8320433500f73644fd68f323abf9e352"
+    },
+    {
+      "bytes": 5516,
+      "lines": 92,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/DEPENDENCIES.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/dbc459651fd63363475f878fbddce2356fc7b315c04cd8fba621947f92830507.gz",
+      "sha256": "dbc459651fd63363475f878fbddce2356fc7b315c04cd8fba621947f92830507",
+      "stored_bytes": 1753,
+      "stored_sha256": "ff69bd01a963645cba67acb28abaa4dfe919a3a067dc6848a3aca261894cf896"
+    },
+    {
+      "bytes": 951,
+      "lines": 16,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/bookkeeping_failure_01/FAILURE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/bookkeeping_failure_01/FAILURE.json",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/dd8670dfec58ceebd92444b603fbc18f3479851aa8091996c5cc07f7338e3e80.gz",
+      "sha256": "dd8670dfec58ceebd92444b603fbc18f3479851aa8091996c5cc07f7338e3e80",
+      "stored_bytes": 573,
+      "stored_sha256": "52dd34df66706581407648989752d800efeb50107c76b52a7c0cab82af006a08"
+    },
+    {
+      "bytes": 312,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding/stdout",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/e38073e77ff4280322dc85d8beecae8ee469bf9373a7240b60439b5f18d07b5f.gz",
+      "sha256": "e38073e77ff4280322dc85d8beecae8ee469bf9373a7240b60439b5f18d07b5f",
+      "stored_bytes": 261,
+      "stored_sha256": "1f906acb18afbc31cdc70c1a0db5614359d2dd9802118dd6ded46be117ac6e36"
+    },
+    {
+      "bytes": 0,
+      "lines": 0,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_outer_execution/stderr",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/root_proposal/overlap_search.stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/reviewed_root_sources/overlap_search.stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run01_crossing_support/stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/separate_review/run02_source_records/stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run01_assemble/stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run02_checker_map/stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run03_source_check/stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run04_finalize_prepare/stderr.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/overlap_search.stderr.txt",
+          "role": "unchanged complete six-file accepted analytic source package; original status retained original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/reviewed_root_sources/overlap_search.stderr.txt",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run01_crossing_support/stderr.txt",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/run02_source_records/stderr.txt",
+          "role": "unchanged complete31-file separate review, pre-exposure assessment, actual run streams and failure original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_publication_root_review/geometric_binding/stderr",
+          "role": "unchanged actual outer source-binding execution record and raw streams original; original coverage/status retained"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/stderr",
+          "role": "complete actual root source-review execution/evidence"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_binding/stderr",
+          "role": "complete actual root source-review execution/evidence"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr/stderr",
+          "role": "complete actual root source-review execution/evidence"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/pr9543_view/stderr",
+          "role": "complete actual root source-review execution/evidence"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/refresh_fetch/stdout",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 74,
+      "lines": 1,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/create_pr/stdout",
+          "role": "complete actual root source-review execution/evidence"
+        }
+      ],
+      "path": "objects/e805f0a092917c16a3e7b4924d07e29dcaba3e9da01d71e0e9ca5ed1ed2673a4.gz",
+      "sha256": "e805f0a092917c16a3e7b4924d07e29dcaba3e9da01d71e0e9ca5ed1ed2673a4",
+      "stored_bytes": 89,
+      "stored_sha256": "60247b90fd4e183360a4b2eaae65c523ca3e438880cd423c33922f82c1f721c0"
+    },
+    {
+      "bytes": 43297,
+      "lines": 646,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/SOURCE_ARCHIVE.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/ec54b7166d3d72d1c3b90d3fff22d752c7dd6ae99ce56370c77d3eabc4fca379.gz",
+      "sha256": "ec54b7166d3d72d1c3b90d3fff22d752c7dd6ae99ce56370c77d3eabc4fca379",
+      "stored_bytes": 5851,
+      "stored_sha256": "1d9c44c65237bf8a27f4941e01d52979aede1cd60d8064692b28b9830ed56dda"
+    },
+    {
+      "bytes": 1644,
+      "lines": 30,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/05_f9dad5ced674.json",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/LOCAL_UNIFORMITY_CUTOFF_ROOT_REVIEW.json",
+          "role": "unchanged cutoff/geometry acceptance original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/f9dad5ced67475fdd0c2701460a5f0d3304aadfb93b67544121f2e9fa90e09be.gz",
+      "sha256": "f9dad5ced67475fdd0c2701460a5f0d3304aadfb93b67544121f2e9fa90e09be",
+      "stored_bytes": 762,
+      "stored_sha256": "b87e48b0537ce6c669de15d0ae77d601aaef1a13d44da97ac6747601217518bd"
+    },
+    {
+      "bytes": 4938,
+      "lines": 67,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/BINARY_ADMISSION_PR_CREATED.json",
+          "role": "Actual root source, recorder, sync or publication-ancestry evidence; no science import"
+        }
+      ],
+      "path": "objects/fba27834d5049027d6d4edc0c752dc79ff1075aacb646457f9a0a8f286324b18.gz",
+      "sha256": "fba27834d5049027d6d4edc0c752dc79ff1075aacb646457f9a0a8f286324b18",
+      "stored_bytes": 2058,
+      "stored_sha256": "ff1da89917680e15c5c89a9b610f6f1aeb9017bc343cc93411501c5e43c84fb7"
+    },
+    {
+      "bytes": 314,
+      "lines": 19,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_runs/run02_checker_map/stdout.txt",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/fbe145640c3bc48cf1f03e552a14e44d77fabd19c3ccd821031c6d1e09049936.gz",
+      "sha256": "fbe145640c3bc48cf1f03e552a14e44d77fabd19c3ccd821031c6d1e09049936",
+      "stored_bytes": 201,
+      "stored_sha256": "0ff71f3d19d53c060a6fe984c2621510ca63aa2dc2e96da0d25a211ee2224ada"
+    },
+    {
+      "bytes": 12901,
+      "lines": 102,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/archive/premises/00_fca3350c6572.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_root_preexposure/DERIVATION_V2.md",
+          "role": "unchanged repaired direct frame and matrix-chain bound original; original coverage/status retained"
+        }
+      ],
+      "path": "objects/fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad.gz",
+      "sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad",
+      "stored_bytes": 5517,
+      "stored_sha256": "6b3e14f6cb06945725c089cc3355490a5bd824290c6bca711f35110125316466"
+    },
+    {
+      "bytes": 4565,
+      "lines": 17,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/assembly_history/pattern/ROOT_REVIEW.md",
+          "role": "complete unchanged frozen source assembly; historical records retain their original status"
+        }
+      ],
+      "path": "objects/fe51280207166f58b57cbc8141517b9330fe551e5e3f7c2dc5c833cf87cec6c5.gz",
+      "sha256": "fe51280207166f58b57cbc8141517b9330fe551e5e3f7c2dc5c833cf87cec6c5",
+      "stored_bytes": 2354,
+      "stored_sha256": "2345a604a80eb920fc24020a5aebe3cd82a257a0b21dcc2e585f91b6783f1cfc"
+    }
+  ],
+  "original_aliases": 57,
+  "source_package": {
+    "additional_files": [
+      {
+        "bytes": 23324,
+        "lines": 649,
+        "path": "FINAL_FREEZE.json",
+        "sha256": "635d9eb9f88c542b20dfec8bf093d416c224dbfb6662665a7dfd568401936871"
+      }
+    ],
+    "complete_file_count": 115,
+    "freeze_sha256": "635d9eb9f88c542b20dfec8bf093d416c224dbfb6662665a7dfd568401936871",
+    "member_count": 114,
+    "members": [
+      {
+        "bytes": 12706,
+        "path": "ASSEMBLE_SOURCE_ONLY.py",
+        "sha256": "5b2c89a562b332738ef43b1fb754f7536864d28bc664cd6bde7e79c9800ae6d9"
+      },
+      {
+        "bytes": 693,
+        "path": "ASSEMBLY_BINDING.json",
+        "sha256": "0c1d55df179eb67b00070252ac6ddc59bb2ec447ebddf53702173cea9a93fd3d"
+      },
+      {
+        "bytes": 4397,
+        "path": "ASSEMBLY_REPORT.md",
+        "sha256": "d26fb3d200b77f44370aa7947b4c646f3a73b79b235b799430ea7e01c3eb8d9b"
+      },
+      {
+        "bytes": 27252,
+        "path": "CANDIDATE.md",
+        "sha256": "914ee9a23eea7dd55e277d9eb782ff086c3020f9ac6822c7fb3aef9efd55dd43"
+      },
+      {
+        "bytes": 10446,
+        "path": "CHECK_SOURCE_ONLY.py",
+        "sha256": "d0496b563a893625d617ced5035d7cd1791f4b6ae6336ce18832c418154c417e"
+      },
+      {
+        "bytes": 2461,
+        "path": "COLD_READ_RECEIPT.json",
+        "sha256": "699ca6a4fd6e17ba7d8857f9910e1ac011b95eb2da949793c31ffa29f02a8e85"
+      },
+      {
+        "bytes": 2073,
+        "path": "CONFORMANCE.md",
+        "sha256": "6440156aee465789f90173e338a417559870543aab14988570b53d31b59ba696"
+      },
+      {
+        "bytes": 5516,
+        "path": "DEPENDENCIES.json",
+        "sha256": "dbc459651fd63363475f878fbddce2356fc7b315c04cd8fba621947f92830507"
+      },
+      {
+        "bytes": 2810,
+        "path": "EVIDENCE_AND_REVIEW.md",
+        "sha256": "66e1f2d17426231d222af666115c5bf50d110639a789be9f3c2949f819b514ec"
+      },
+      {
+        "bytes": 11699,
+        "path": "FINALIZE_ASSEMBLY.py",
+        "sha256": "633a50aa17b434c211b31dca7e2b2ac4528ad972669704eae0b9e991dce42192"
+      },
+      {
+        "bytes": 1468,
+        "path": "FINAL_IDENTITY_READBACK.json",
+        "sha256": "a609054214947a41c098fc7a0e85029624d3ca7edff342b83d6c6e14fc702419"
+      },
+      {
+        "bytes": 2870,
+        "path": "PARENT_BODY_MAP.json",
+        "sha256": "945e39f91dae8d52b757c6a2ba369c7075f612dc6b1159126acf75639d14da74"
+      },
+      {
+        "bytes": 2485,
+        "path": "PROOF_OBLIGATIONS.md",
+        "sha256": "0d6b6e83ead3e41fbe873c25c03778cc7f70b3677ef1d2d1408456af70889b49"
+      },
+      {
+        "bytes": 2832,
+        "path": "README.md",
+        "sha256": "a90ab7bacf72cfc81507e164afbe5f0e7bade60f20da537c22f9510aac7944e5"
+      },
+      {
+        "bytes": 2263,
+        "path": "READ_COVERAGE.json",
+        "sha256": "b9c1c38a9a314899ae8ebc6d36dca5ac8d8a54fdfe0d73011541cfb22794b2e6"
+      },
+      {
+        "bytes": 43297,
+        "path": "SOURCE_ARCHIVE.json",
+        "sha256": "ec54b7166d3d72d1c3b90d3fff22d752c7dd6ae99ce56370c77d3eabc4fca379"
+      },
+      {
+        "bytes": 1567,
+        "path": "SOURCE_MAP.json",
+        "sha256": "1ef29b38201aad1ce564769563b37d97713ed2284d7cb1175ef452cd313bf241"
+      },
+      {
+        "bytes": 11788,
+        "path": "THEOREM_WRAPPER.md",
+        "sha256": "72779a74a78b191251f256a2d327259ff72c97f22d216fb59ca959dc22703070"
+      },
+      {
+        "bytes": 3560,
+        "path": "archive/acceptance/GEOMETRIC_TIME_ROOT_ACCEPTANCE.json",
+        "sha256": "1cecae561962c855f1704363fda4fc43e1758965ccb1ef6676d8ddbecb09cb3a"
+      },
+      {
+        "bytes": 8842,
+        "path": "archive/context/4149c80ba6fb_MICROCAUSALITY_WEIGHTED_QUASILOCAL_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+        "sha256": "4149c80ba6fb3cf905763fa853f853dd7633ea3e1539165ff8c4c75993dd1df3"
+      },
+      {
+        "bytes": 33479,
+        "path": "archive/context/66ae1faa267c_MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md",
+        "sha256": "66ae1faa267c8140c06ed1fe52671f4e6e98478181ef1e11ee512b4cd26e89b0"
+      },
+      {
+        "bytes": 14302,
+        "path": "archive/context/c6712c3c3fc0_open_prs.stdout",
+        "sha256": "c6712c3c3fc09b3163d5a8c2c6f039c2a52b5bf5e008f25e5762cc7882a4e5b2"
+      },
+      {
+        "bytes": 93370,
+        "path": "archive/parent/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573"
+      },
+      {
+        "bytes": 12901,
+        "path": "archive/premises/00_fca3350c6572.md",
+        "sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad"
+      },
+      {
+        "bytes": 27662,
+        "path": "archive/premises/01_ac224bb87235.md",
+        "sha256": "ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777"
+      },
+      {
+        "bytes": 11270,
+        "path": "archive/premises/02_2ddbcafc82ea.md",
+        "sha256": "2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a"
+      },
+      {
+        "bytes": 27494,
+        "path": "archive/premises/03_45ea7ab89699.md",
+        "sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779"
+      },
+      {
+        "bytes": 8862,
+        "path": "archive/premises/04_910939c967c7.json",
+        "sha256": "910939c967c71489dcc50b08893f0228ac808f3b92305c4e1dced4e220b78e86"
+      },
+      {
+        "bytes": 1644,
+        "path": "archive/premises/05_f9dad5ced674.json",
+        "sha256": "f9dad5ced67475fdd0c2701460a5f0d3304aadfb93b67544121f2e9fa90e09be"
+      },
+      {
+        "bytes": 3123,
+        "path": "archive/premises/06_65de49faf2c0.json",
+        "sha256": "65de49faf2c0d14f167db3b625bff2284f723fd8a2326b5af67cd18d1dd1472f"
+      },
+      {
+        "bytes": 6876,
+        "path": "archive/premises/07_312f15b8f1cc.json",
+        "sha256": "312f15b8f1ccee7654302e3ab25dd59e8f4211b5fba7538e243d0bc633315e0c"
+      },
+      {
+        "bytes": 499,
+        "path": "archive/root_outer_execution/EXECUTION.json",
+        "sha256": "9e46608acc91c8f42cfd5c2832e5d0b4292a143382fe545c205f4e093ac8f20d"
+      },
+      {
+        "bytes": 980,
+        "path": "archive/root_outer_execution/recorder.py",
+        "sha256": "da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee"
+      },
+      {
+        "bytes": 0,
+        "path": "archive/root_outer_execution/stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 2682,
+        "path": "archive/root_outer_execution/stdout",
+        "sha256": "233d2b30817514e55ed4c2935efe2fbae2b28f9a2da3efad1bf7644e6742fbf4"
+      },
+      {
+        "bytes": 15153,
+        "path": "archive/root_proposal/DERIVATION.md",
+        "sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0"
+      },
+      {
+        "bytes": 420736,
+        "path": "archive/root_proposal/OVERLAP_SEARCH.json",
+        "sha256": "2f2fc746d5f5b47eb179cae166ba46d21e79a321ee45b44e78bdfa252dee31c8"
+      },
+      {
+        "bytes": 1752,
+        "path": "archive/root_proposal/PRE_REVIEW_SEAL.json",
+        "sha256": "76933c1fe63d7f7f588247f3fb95e82aab1a3977ceb69fb44772ae6aec0a59a3"
+      },
+      {
+        "bytes": 4199,
+        "path": "archive/root_proposal/SOURCE_EXPOSURE.json",
+        "sha256": "0b2e8a5d1992ad73b5abe8cfef1b40b710f3156220657067f3d9ae3f84708546"
+      },
+      {
+        "bytes": 0,
+        "path": "archive/root_proposal/overlap_search.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 25640,
+        "path": "archive/root_proposal/overlap_search.stdout.txt",
+        "sha256": "4529aa06927ac81dbf9ba662b6aa20619a5261ae5c628d09baf66e679c88b84b"
+      },
+      {
+        "bytes": 6355,
+        "path": "archive/root_review/ROOT_DISPOSITION.md",
+        "sha256": "483342ca3b64d1cc58c5437a83df1a4a44e9ac9442cb37e9134122e030ade104"
+      },
+      {
+        "bytes": 2682,
+        "path": "archive/root_review/SOURCE_BINDING.json",
+        "sha256": "233d2b30817514e55ed4c2935efe2fbae2b28f9a2da3efad1bf7644e6742fbf4"
+      },
+      {
+        "bytes": 3681,
+        "path": "archive/root_review/bind.py",
+        "sha256": "a9cc66553605a8d3369ff3567b1124feb85ac9012975548a5ed958b25bc5597f"
+      },
+      {
+        "bytes": 7293,
+        "path": "archive/separate_review/BUILD_REVIEW_RECORDS.py",
+        "sha256": "4d72566cd8ffe64b0b09faefc95da1e8f31fe2a8a1099616db91467008f95844"
+      },
+      {
+        "bytes": 1640,
+        "path": "archive/separate_review/DISPOSITION.json",
+        "sha256": "118faf048544fa213229bfe02e1487ed343e7fcfb2c0fcb08e941a1309012c9d"
+      },
+      {
+        "bytes": 675,
+        "path": "archive/separate_review/FAILURE_LEDGER.json",
+        "sha256": "9b5614c7d4bdba9e1e1b6a9f616add7e3650268df68cf7bee69e11b2bd9521ad"
+      },
+      {
+        "bytes": 2688,
+        "path": "archive/separate_review/PREMISE_IDENTITIES.json",
+        "sha256": "0a3e1826266455ed7479f3353262bd75f50a808d06ea26bf3c69dd2071339ec1"
+      },
+      {
+        "bytes": 7156,
+        "path": "archive/separate_review/PRE_EXPOSURE_ASSESSMENT.md",
+        "sha256": "46f80049bffa74e4eea3a14065d42ffa893a6bb16f3631438e6bcf0f76eff85d"
+      },
+      {
+        "bytes": 631,
+        "path": "archive/separate_review/PRE_EXPOSURE_SEAL.json",
+        "sha256": "19399f90e9a8065c0f9fb026266a67aceb1a956c25007c049ee3157b8f65dede"
+      },
+      {
+        "bytes": 15623,
+        "path": "archive/separate_review/REPORT.md",
+        "sha256": "4d97142d98631805f717e606417979d8689f9281315ca5872d9306bf99e76208"
+      },
+      {
+        "bytes": 5755,
+        "path": "archive/separate_review/REVIEW_SEAL.json",
+        "sha256": "c6b24677395bb9542e8e17a061401c29adfd1e0a0ff671916ec330a3efef1a93"
+      },
+      {
+        "bytes": 808,
+        "path": "archive/separate_review/ROOT_EXPOSURE_START.json",
+        "sha256": "1e2abd20fecf5efdd66c60b85312a338777946ae2a2d95195b0d9050cdb50603"
+      },
+      {
+        "bytes": 2080,
+        "path": "archive/separate_review/ROOT_SOURCE_RECHECK.json",
+        "sha256": "cf99a57789dbc38148aaa69e2c8ba701e82ebf83a5da8db87654167f847b06e5"
+      },
+      {
+        "bytes": 7718,
+        "path": "archive/separate_review/SOURCE_COVERAGE.json",
+        "sha256": "0ee7c1aa9fd04efa7b7242808bdf2870dd6faa83d4d963ba382f76b4f5e273a8"
+      },
+      {
+        "bytes": 1427,
+        "path": "archive/separate_review/bookkeeping_failure_01/EXECUTED_STDIN.py",
+        "sha256": "11bae2c0119f51305596556d9bae86cdc0c61f2bb7f46dbaa0f47dc78cedfb33"
+      },
+      {
+        "bytes": 951,
+        "path": "archive/separate_review/bookkeeping_failure_01/FAILURE.json",
+        "sha256": "dd8670dfec58ceebd92444b603fbc18f3479851aa8091996c5cc07f7338e3e80"
+      },
+      {
+        "bytes": 1230,
+        "path": "archive/separate_review/bookkeeping_failure_01/TOOL_OUTPUT.txt",
+        "sha256": "558ccd3d250043d2d68cf7957eebcb9dd7280bc4ff9c768c7f599ed23b869366"
+      },
+      {
+        "bytes": 3295,
+        "path": "archive/separate_review/check_crossing_support.py",
+        "sha256": "320fff6cb3e2ce9644f31f40070d1554105e00278bf402049fef1dd8b69bfde5"
+      },
+      {
+        "bytes": 477,
+        "path": "archive/separate_review/crossing_support_input.json",
+        "sha256": "9e2b4258195257a26a2e8c05eaeb177763713be17d405315fca4ff2678297829"
+      },
+      {
+        "bytes": 15153,
+        "path": "archive/separate_review/reviewed_root_sources/DERIVATION.md",
+        "sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0"
+      },
+      {
+        "bytes": 420736,
+        "path": "archive/separate_review/reviewed_root_sources/OVERLAP_SEARCH.json",
+        "sha256": "2f2fc746d5f5b47eb179cae166ba46d21e79a321ee45b44e78bdfa252dee31c8"
+      },
+      {
+        "bytes": 1752,
+        "path": "archive/separate_review/reviewed_root_sources/PRE_REVIEW_SEAL.json",
+        "sha256": "76933c1fe63d7f7f588247f3fb95e82aab1a3977ceb69fb44772ae6aec0a59a3"
+      },
+      {
+        "bytes": 4199,
+        "path": "archive/separate_review/reviewed_root_sources/SOURCE_EXPOSURE.json",
+        "sha256": "0b2e8a5d1992ad73b5abe8cfef1b40b710f3156220657067f3d9ae3f84708546"
+      },
+      {
+        "bytes": 0,
+        "path": "archive/separate_review/reviewed_root_sources/overlap_search.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 25640,
+        "path": "archive/separate_review/reviewed_root_sources/overlap_search.stdout.txt",
+        "sha256": "4529aa06927ac81dbf9ba662b6aa20619a5261ae5c628d09baf66e679c88b84b"
+      },
+      {
+        "bytes": 3295,
+        "path": "archive/separate_review/run01_crossing_support/EXECUTED_SOURCE.py",
+        "sha256": "320fff6cb3e2ce9644f31f40070d1554105e00278bf402049fef1dd8b69bfde5"
+      },
+      {
+        "bytes": 477,
+        "path": "archive/separate_review/run01_crossing_support/INPUT.json",
+        "sha256": "9e2b4258195257a26a2e8c05eaeb177763713be17d405315fca4ff2678297829"
+      },
+      {
+        "bytes": 1025,
+        "path": "archive/separate_review/run01_crossing_support/RECEIPT.json",
+        "sha256": "042b55d1a744c7f8ad326e0d0b2416bf2bac4f9e40ef179a536d4ba4aad7e62b"
+      },
+      {
+        "bytes": 0,
+        "path": "archive/separate_review/run01_crossing_support/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 1039,
+        "path": "archive/separate_review/run01_crossing_support/stdout.jsonl",
+        "sha256": "b5c38d25fc2fa74a360dca7cc34a40aeb330571c5d251e882551db652cb12582"
+      },
+      {
+        "bytes": 7293,
+        "path": "archive/separate_review/run02_source_records/EXECUTED_SOURCE.py",
+        "sha256": "4d72566cd8ffe64b0b09faefc95da1e8f31fe2a8a1099616db91467008f95844"
+      },
+      {
+        "bytes": 814,
+        "path": "archive/separate_review/run02_source_records/RECEIPT.json",
+        "sha256": "53871af829849b5b0df4e8df676e9a3961bf2f224666c6bdc21b41a5e2ce0c98"
+      },
+      {
+        "bytes": 0,
+        "path": "archive/separate_review/run02_source_records/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 569,
+        "path": "archive/separate_review/run02_source_records/stdout.jsonl",
+        "sha256": "953cd7404396177831719d8c5291337cbd3c39ca0050f8c747129d1894a7af84"
+      },
+      {
+        "bytes": 25783,
+        "path": "assembly_history/ASSEMBLER_REUSE.diff",
+        "sha256": "32d214396b43016247e74f43e7cfd4d0f4ad7338402fb5cae0f92a22ede05c62"
+      },
+      {
+        "bytes": 4474,
+        "path": "assembly_history/BUILD_CHECKER_MAP.py",
+        "sha256": "0f2b76be11c720a2436ffbdc5801c4e397a14e82d0867b9f4a5f300b22ddce42"
+      },
+      {
+        "bytes": 3532,
+        "path": "assembly_history/CHECKER_PROGRAM_REUSE.json",
+        "sha256": "419babe097fcc032742b3dabf52c809dfd702078ca3648dc22e1f7335bd5f9a7"
+      },
+      {
+        "bytes": 17255,
+        "path": "assembly_history/CHECKER_REUSE.diff",
+        "sha256": "b8872b720a730fca5c9ce60ad90f22bd144335035a8a47cc9793cc24bf470d65"
+      },
+      {
+        "bytes": 4918,
+        "path": "assembly_history/FINALIZER_PROGRAM_REUSE.json",
+        "sha256": "2f5a145e23ac8b637715b005cb624e5841f9bbe9fc19882a1462d6b05777236e"
+      },
+      {
+        "bytes": 19828,
+        "path": "assembly_history/FINALIZER_REUSE.diff",
+        "sha256": "61fc9745e63059a4b1aa6efd0b790089066cfbc59ca5472884142327d1900bcc"
+      },
+      {
+        "bytes": 3827,
+        "path": "assembly_history/PROGRAM_REUSE.json",
+        "sha256": "4e52a0b601ef30cf700a16780342640002561398a0268e7048fba7354c1da138"
+      },
+      {
+        "bytes": 13749,
+        "path": "assembly_history/pattern/ASSEMBLE_SOURCE_ONLY.py",
+        "sha256": "2adbb617690730ec5aa187f70852c28b41d279acd3285d34ddc28a6998ec9b8c"
+      },
+      {
+        "bytes": 8576,
+        "path": "assembly_history/pattern/CHECK_SOURCE_ONLY.py",
+        "sha256": "779f9c50161c39d8eb6bbfb87a77d553903ddffe3e86b3865ffef1bf0d805f3c"
+      },
+      {
+        "bytes": 3459,
+        "path": "assembly_history/pattern/CONFORMANCE.md",
+        "sha256": "3466dcbdb725018063b68847648026e4dad6706a88bf5835694d9892ad96afd9"
+      },
+      {
+        "bytes": 12042,
+        "path": "assembly_history/pattern/FINALIZE_ASSEMBLY.py",
+        "sha256": "5a713e98b92c28ba67170afa39ab8a89043283fabbe45ecf7bc5d054b03709df"
+      },
+      {
+        "bytes": 40564,
+        "path": "assembly_history/pattern/FINAL_FREEZE.json",
+        "sha256": "b3bdb1d92ed7bc57c35a6a6f55a1fc589767b66bcf270f00afb87576eed1d3ab"
+      },
+      {
+        "bytes": 3049,
+        "path": "assembly_history/pattern/ROOT_ACCEPTANCE.json",
+        "sha256": "b901fd0b1c26861a39458f8693e30c0d8b3956d92f0da4d6e20f2de7130c9d00"
+      },
+      {
+        "bytes": 4565,
+        "path": "assembly_history/pattern/ROOT_REVIEW.md",
+        "sha256": "fe51280207166f58b57cbc8141517b9330fe551e5e3f7c2dc5c833cf87cec6c5"
+      },
+      {
+        "bytes": 1511,
+        "path": "assembly_runs/run01_assemble/RECEIPT.json",
+        "sha256": "a499845e85c1dfffb2c679afda77fbe9a572a739dd2a9097e9847abc6d47fc14"
+      },
+      {
+        "bytes": 12706,
+        "path": "assembly_runs/run01_assemble/executed_source.py",
+        "sha256": "5b2c89a562b332738ef43b1fb754f7536864d28bc664cd6bde7e79c9800ae6d9"
+      },
+      {
+        "bytes": 0,
+        "path": "assembly_runs/run01_assemble/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 733,
+        "path": "assembly_runs/run01_assemble/stdout.txt",
+        "sha256": "655b3e5ad2ba16b975af33d5975cd1a2e66a60f3189184889c6828ae46a15d70"
+      },
+      {
+        "bytes": 1293,
+        "path": "assembly_runs/run02_checker_map/RECEIPT.json",
+        "sha256": "658f39e065a20bfdcea10b0f0f9979c5263253022756484559e0975077a9e410"
+      },
+      {
+        "bytes": 4474,
+        "path": "assembly_runs/run02_checker_map/executed_source.py",
+        "sha256": "0f2b76be11c720a2436ffbdc5801c4e397a14e82d0867b9f4a5f300b22ddce42"
+      },
+      {
+        "bytes": 0,
+        "path": "assembly_runs/run02_checker_map/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 314,
+        "path": "assembly_runs/run02_checker_map/stdout.txt",
+        "sha256": "fbe145640c3bc48cf1f03e552a14e44d77fabd19c3ccd821031c6d1e09049936"
+      },
+      {
+        "bytes": 1262,
+        "path": "assembly_runs/run03_source_check/RECEIPT.json",
+        "sha256": "9e93674b16cd00aaacca4a9577448144e3c7416d2dee9b2b0190b92284b34a86"
+      },
+      {
+        "bytes": 10446,
+        "path": "assembly_runs/run03_source_check/executed_source.py",
+        "sha256": "d0496b563a893625d617ced5035d7cd1791f4b6ae6336ce18832c418154c417e"
+      },
+      {
+        "bytes": 0,
+        "path": "assembly_runs/run03_source_check/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 1001,
+        "path": "assembly_runs/run03_source_check/stdout.txt",
+        "sha256": "22d5bc2dee3db774867c474bb1b6ab2fa28f72a8a8ed9b49055ae58895f49dfe"
+      },
+      {
+        "bytes": 1284,
+        "path": "assembly_runs/run04_finalize_prepare/RECEIPT.json",
+        "sha256": "27eb96f9d590840a1c44fa8c1ce3ebd41f8a649eed9b0cfb2205fa7eb4b41370"
+      },
+      {
+        "bytes": 11699,
+        "path": "assembly_runs/run04_finalize_prepare/executed_source.py",
+        "sha256": "633a50aa17b434c211b31dca7e2b2ac4528ad972669704eae0b9e991dce42192"
+      },
+      {
+        "bytes": 0,
+        "path": "assembly_runs/run04_finalize_prepare/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 522,
+        "path": "assembly_runs/run04_finalize_prepare/stdout.txt",
+        "sha256": "82a9efa07b2105b5060901999fb901af06bbd2622a67204c8d118a720c9d1a07"
+      },
+      {
+        "bytes": 15153,
+        "path": "cores/GEOMETRIC_TIME_DERIVATION.md",
+        "sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0"
+      },
+      {
+        "bytes": 311,
+        "path": "framing/COMPLETE_PROOF.md",
+        "sha256": "6fe38c0746478910e9cdd401d4a5b44765b7f22eb4b8c857f0bb0bce43f5692d"
+      },
+      {
+        "bytes": 1958,
+        "path": "procedures/docs/WRITING_VOICE_GUIDE_2026-04-25.md",
+        "sha256": "3d123055d2dc54a288bea3fcf1d694fa8a56e0f969f4c48246e90f650440ed4b"
+      },
+      {
+        "bytes": 34639,
+        "path": "procedures/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      {
+        "bytes": 15435,
+        "path": "procedures/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+      },
+      {
+        "bytes": 2180,
+        "path": "procedures/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      {
+        "bytes": 3253,
+        "path": "procedures/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+        "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+      },
+      {
+        "bytes": 16755,
+        "path": "procedures/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      {
+        "bytes": 1531,
+        "path": "record_run.py",
+        "sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696"
+      }
+    ],
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly"
+  }
+}

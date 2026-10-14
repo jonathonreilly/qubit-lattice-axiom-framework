@@ -1,0 +1,250 @@
+{
+  "actual_parent_head": "5a862618a90a87b8a344765b6b3d4a600ce65d13",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-geometric-time-20261014",
+    "createdAt": "2026-10-14T12:52:44Z",
+    "headRefName": "physics-loop/toe-nn-dynamics-20261014",
+    "headRefOid": "5a862618a90a87b8a344765b6b3d4a600ce65d13",
+    "isDraft": false,
+    "number": 9546,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "Add conditional literal L4 nearest-neighbor dynamics synthesis",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9546"
+  },
+  "all_markdown_note_targets": [
+    "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "actual_use": "Literal L4 operators, coefficient family, code and geometry.",
+      "body_edits": [],
+      "byte_end_exclusive": 50408,
+      "byte_start_inclusive": 11172,
+      "canonical_path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/archive/objects/34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca.bin",
+      "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+    },
+    {
+      "actual_use": "Full penalty/raw coupling, whole-term bounds and global initial-K comparison.",
+      "body_edits": [],
+      "byte_end_exclusive": 44669,
+      "byte_start_inclusive": 13657,
+      "canonical_path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "4aa290266c12241130cd805271e935f973e614e09c783051e4e99ea7974dd47a",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/archive/objects/bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14.bin",
+      "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+    },
+    {
+      "actual_use": "Accepted exact ideal preparation word, phase/dirty-return semantics and clean-input ledger.",
+      "body_edits": [],
+      "byte_end_exclusive": 44806,
+      "byte_start_inclusive": 12726,
+      "canonical_path": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "2722b030adb8b4b4acd061ec252ba9de819e7b26b055070bf1ef1ba14e14a403",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/archive/objects/0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124.bin",
+      "source_sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+    },
+    {
+      "actual_use": "Accepted full binary ideal instrument and word; both unnormalized branches and resource contracts.",
+      "body_edits": [],
+      "byte_end_exclusive": 49402,
+      "byte_start_inclusive": 15327,
+      "canonical_path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/archive/objects/8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3.bin",
+      "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+    },
+    {
+      "actual_use": "Repaired terminal local/reference estimate only.",
+      "body_edits": [],
+      "byte_end_exclusive": 26019,
+      "byte_start_inclusive": 13118,
+      "canonical_path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "6db223f1784c41893f35c8a9d5b25acf505c9f7fe0af75d1775f5462d15134fa",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/archive/objects/fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad.bin",
+      "source_sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad"
+    },
+    {
+      "actual_use": "Whole-term budget and constants restricted here to L4; no extra all-volume premise imported.",
+      "body_edits": [],
+      "byte_end_exclusive": 93647,
+      "byte_start_inclusive": 66153,
+      "canonical_path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "6db223f1784c41893f35c8a9d5b25acf505c9f7fe0af75d1775f5462d15134fa",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_always_on_control_source_assembly/archive/objects/45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779.bin",
+      "source_sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Literal L4 operators, coefficient family, code and geometry.",
+          "source_alias": "parent_bodies/joint_0.md",
+          "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+        }
+      ],
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 50465,
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior full premise/scientific source coverage reused; no new independent scientific review",
+      "historical_role_status": "Exact original role; current import is restricted to the following complete bodies",
+      "historical_source_exposure_role": "mathematical theorem/definition import",
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "markdown": "[Joint even-matter and finite-link interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "original_bytes": 49944
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Full penalty/raw coupling, whole-term bounds and global initial-K comparison.",
+          "source_alias": "parent_bodies/penalty_0.md",
+          "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+        }
+      ],
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 110444,
+      "claim_id": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior full premise/scientific source coverage reused; no new independent scientific review",
+      "historical_role_status": "Exact original role; current import is restricted to the following complete bodies",
+      "historical_source_exposure_role": "mathematical theorem/definition import",
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "markdown": "[Finite Gauss-penalty recovery](FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "4aa290266c12241130cd805271e935f973e614e09c783051e4e99ea7974dd47a",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "original_bytes": 110137
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Accepted exact ideal preparation word, phase/dirty-return semantics and clean-input ledger.",
+          "source_alias": "parent_bodies/neutral_0.md",
+          "source_sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+        }
+      ],
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44806,
+      "claim_id": "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior full premise/scientific source coverage reused; no new independent scientific review",
+      "historical_role_status": "Exact original role; current import is restricted to the following complete bodies",
+      "historical_source_exposure_role": "mathematical theorem/definition import",
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "markdown": "[Fixed neutral-ray preparation](FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "2722b030adb8b4b4acd061ec252ba9de819e7b26b055070bf1ef1ba14e14a403",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "e0ea48d319165e3d310a928c437fb546f2c5ffb7de744f59609daf734ac74ec5",
+      "original_bytes": 44499
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Accepted full binary ideal instrument and word; both unnormalized branches and resource contracts.",
+          "source_alias": "parent_bodies/binary_0.md",
+          "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+        }
+      ],
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49402,
+      "claim_id": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior full premise/scientific source coverage reused; no new independent scientific review",
+      "historical_role_status": "Exact original role; current import is restricted to the following complete bodies",
+      "historical_source_exposure_role": "mathematical theorem/definition import",
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "markdown": "[Coherent binary K admission](COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "fe105be37bacc2d0e6a7f7c28d520a507c86b9e384005fafffb26f133bc2109e",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "original_bytes": 49095
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Repaired terminal local/reference estimate only.",
+          "source_alias": "parent_bodies/local_0.md",
+          "source_sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad"
+        },
+        {
+          "actual_use": "Whole-term budget and constants restricted here to L4; no extra all-volume premise imported.",
+          "source_alias": "parent_bodies/local_1.md",
+          "source_sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779"
+        }
+      ],
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 93677,
+      "claim_id": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Prior full premise/scientific source coverage reused; no new independent scientific review",
+      "historical_role_status": "Exact original role; current import is restricted to the following complete bodies",
+      "historical_source_exposure_role": "mathematical theorem/definition import",
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "markdown": "[Uniform local Gauss-penalty recovery](UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "6db223f1784c41893f35c8a9d5b25acf505c9f7fe0af75d1775f5462d15134fa",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "original_bytes": 93370
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "LOCAL_UNIFORMITY",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "verification_scope": "Actual citation roles and existing canonical graph-node identities only; no graph program executed"
+}

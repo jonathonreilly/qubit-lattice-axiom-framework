@@ -1,0 +1,54 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "to": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "to": "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02"
+    },
+    {
+      "from": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "to": "recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03"
+    }
+  ],
+  "expected_delta": {
+    "edges": 3,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+        "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02",
+        "recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03"
+      ],
+      "path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/coherent_binary_k_admission_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "ROUTING_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "RETURN_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "scope": "Derived from three preserved canonical Markdown citations; attribution edge is not a theorem import. Actual graph remains root-owned and may reveal a discrepancy requiring review."
+}

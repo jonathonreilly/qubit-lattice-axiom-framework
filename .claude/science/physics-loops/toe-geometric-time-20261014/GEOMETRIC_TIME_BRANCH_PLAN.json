@@ -1,0 +1,7 @@
+{
+  "base": "ae799f501e2819256584699097153f27f0b20583",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-geometric-time-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9543"
+}

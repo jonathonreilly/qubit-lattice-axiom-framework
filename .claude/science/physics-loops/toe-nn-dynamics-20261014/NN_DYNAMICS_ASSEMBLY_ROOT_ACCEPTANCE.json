@@ -1,0 +1,49 @@
+{
+  "accepted_utc": "2026-10-14T12:00:13.504904+00:00",
+  "disposition": "conditional_source_assembly_accepted",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/FINAL_FREEZE.json",
+    "sha256": "21abdfcc9933206371386b9398fbc6a59d105ba0cc998924b9931529427d4bda",
+    "bytes": 40579
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/CANDIDATE.md",
+    "sha256": "c1bf9e1829b880f14f6a425a00f1b7224713e209104179cf4a99f43b89749d70",
+    "bytes": 51413
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/THEOREM_WRAPPER.md",
+    "sha256": "e5e838457512ed9795542db39e9f3b4681c7fb642085ba081f9cd0db3441513b",
+    "bytes": 11134
+  },
+  "prior_scientific_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NN_DYNAMICS_ROOT_ACCEPTANCE.json",
+    "sha256": "7c5a3348519d3153d8ab2e6ddf4863c8bb9c04627685f631375a235cd6a24af9",
+    "bytes": 3609
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NN_DYNAMICS_ASSEMBLY_ROOT_REVIEW.md",
+    "sha256": "6bc5bfdbbbab83d43ddc7f164cc3403f0f05d1f92f2c40ca63a3e3ff29a438dd",
+    "bytes": 4743
+  },
+  "root_source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/nn_dynamics_assembly_root_review/SOURCE_BINDING.json",
+    "sha256": "3e0fcdfedb8b9a364c317bf25cf412ab283232b99cf35f8d9569714727354fa7",
+    "bytes": 6554
+  },
+  "actual_source_check": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/nn_assembly_source_check/EXECUTION.json",
+    "sha256": "c7761037d352a77fde991f7759ed02ae5eb75c08ad91c1317789434d3d1deecb",
+    "bytes": 752
+  },
+  "mathematical_parents": [
+    "canonical joint212a94bb/core34cbe355",
+    "canonical finite-penalty437f2f4e/corebb2817d3"
+  ],
+  "mathematical_body_edits": 0,
+  "new_mathematical_predicates": 0,
+  "scientific_reruns": 0,
+  "future_publication_driver_accepted": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": []
+}

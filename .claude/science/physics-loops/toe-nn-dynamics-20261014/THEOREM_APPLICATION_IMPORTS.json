@@ -1,0 +1,40 @@
+{
+  "ancestry_is_not_import": true,
+  "attribution_only": [
+    "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02",
+    "recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03"
+  ],
+  "canonical_citation_count": 4,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "12cba56f7e62e4e9d8b55682d1110fb8764754a49ffb51365423174e28a61255",
+  "historical_role_strings_are_quotations": true,
+  "mathematical_parent_count": 2,
+  "mathematical_parents": [
+    "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+    "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14"
+  ],
+  "neutral_binary_geometric_always_on_theorems_imported": false,
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "ROUTING_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "RETURN_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "scope": "Current authoritative roles; original historical source/procedure records remain unchanged"
+}

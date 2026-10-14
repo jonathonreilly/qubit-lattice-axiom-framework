@@ -1,0 +1,136 @@
+{
+  "Jc_net_gate_cap_and_unpriced_compensation_distinguished": true,
+  "arbitrary_active_transit_reference_scope": true,
+  "emitted_ledger_vs_unexpanded_schedule_distinguished": true,
+  "fixed_L4_full_hamiltonian_synthesis_only": true,
+  "historical_failures_and_source_exposure_preserved": true,
+  "historical_imported_roles_separated_from_current_status": true,
+  "lambda1_fixture_not_recovery": true,
+  "mathematical_bodies_accepted": true,
+  "mathematical_core_edits": 0,
+  "native_measurement_photon_exports": false,
+  "new_independent_mathematical_review": false,
+  "new_publication_rendering_and_driver_review_required": true,
+  "no_go_packet_pass": false,
+  "prior_acceptances": [
+    {
+      "file": "NN_DYNAMICS_ROOT_ACCEPTANCE.json",
+      "sha256": "7c5a3348519d3153d8ab2e6ddf4863c8bb9c04627685f631375a235cd6a24af9",
+      "verbatim": {
+        "accepted_at": "2026-10-14T11:29:04.661633+00:00",
+        "actual_original_and_review_streams_read": true,
+        "editable_prompt_files_changed": [],
+        "expanded_fixture_schedule_executed": false,
+        "formal_retained_audit_status": false,
+        "future_assembly_or_publication_driver_approved": false,
+        "identity_checks_establish_mathematics": false,
+        "independence": "Separate same-family worker, pre-exposure obligations then source-exposed manually implemented selected seam/Gauss/phase checks; no model diversity or independent whole-census claim.",
+        "mathematical_repair_required": false,
+        "native_physical_realization_established": false,
+        "new_root_scientific_executions": 0,
+        "pins": {
+          "root_disposition": {
+            "bytes": 4840,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/nn_dynamics_root_review/ROOT_DISPOSITION.md",
+            "sha256": "ae6e019eb4e4848f5128283096cb6aa11d0dcfef6582523ebd3f8611385020e3"
+          },
+          "root_initial_review": {
+            "bytes": 4418,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/nn_dynamics_root_review/ROOT_SOURCE_REVIEW.md",
+            "sha256": "d7a0b9b7cb09bac19255ec2f840116e3ab5b73fe835733a767c120f6012af923"
+          },
+          "separate_review": {
+            "bytes": 25202,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_review/REPORT.md",
+            "sha256": "68e8a27b904d9a3caa3d892757626e234eef2fc68607d2597fdc7095efc791c1"
+          },
+          "separate_review_binding": {
+            "bytes": 2578,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/nn_dynamics_root_review/SEPARATE_REVIEW_BINDING.json",
+            "sha256": "278f55784381ca53e776ae73989eab61af6fabc2e8688aad955707f6ce755916"
+          },
+          "separate_review_seal": {
+            "bytes": 10143,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_review/REVIEW_SEAL.json",
+            "sha256": "b8ec49fc04670229bedb30d70700763ac6fe2828e88e2a85f0a2257d11982956"
+          },
+          "source": {
+            "bytes": 39937,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics/DERIVATION.md",
+            "sha256": "12cba56f7e62e4e9d8b55682d1110fb8764754a49ffb51365423174e28a61255"
+          },
+          "source_binding": {
+            "bytes": 2856,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/nn_dynamics_root_review/SOURCE_BINDING.json",
+            "sha256": "126407c50a38052ec308dac4a52b3fb545e0b5ef7349cb634bf7417b9d93d193"
+          },
+          "source_freeze": {
+            "bytes": 7101,
+            "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics/FINAL_FREEZE.json",
+            "sha256": "8f8c891e3013db7c2fbec3a7d07c52d759fa368b19453ca82c00bb976d09a35b"
+          }
+        },
+        "root_complete_argument_and_program_review": true,
+        "root_complete_separate_report_and_new_check_review": true,
+        "scope": "Literal full1344-factor Hamiltonian synthesis with scalar/raw-stream/unused-level terms, returned NN routing, all-input reference-safe error and finite-data/time accounting; supplied scheduled-control premises retained. Initial-K finite-penalty comparison is separately conditional.",
+        "status": "conditional scientific source accepted for bounded assembly and regular milestone publication"
+      }
+    },
+    {
+      "file": "NN_DYNAMICS_ASSEMBLY_ROOT_ACCEPTANCE.json",
+      "sha256": "83dcb1b758e96a507ed392243072a5869e7dc66e58b97be5d61542ead274d6e2",
+      "verbatim": {
+        "accepted_utc": "2026-10-14T12:00:13.504904+00:00",
+        "actual_source_check": {
+          "bytes": 752,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/nn_assembly_source_check/EXECUTION.json",
+          "sha256": "c7761037d352a77fde991f7759ed02ae5eb75c08ad91c1317789434d3d1deecb"
+        },
+        "candidate": {
+          "bytes": 51413,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/CANDIDATE.md",
+          "sha256": "c1bf9e1829b880f14f6a425a00f1b7224713e209104179cf4a99f43b89749d70"
+        },
+        "disposition": "conditional_source_assembly_accepted",
+        "editable_prompt_files_changed": [],
+        "future_publication_driver_accepted": false,
+        "mathematical_body_edits": 0,
+        "mathematical_parents": [
+          "canonical joint212a94bb/core34cbe355",
+          "canonical finite-penalty437f2f4e/corebb2817d3"
+        ],
+        "new_mathematical_predicates": 0,
+        "prior_scientific_acceptance": {
+          "bytes": 3609,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NN_DYNAMICS_ROOT_ACCEPTANCE.json",
+          "sha256": "7c5a3348519d3153d8ab2e6ddf4863c8bb9c04627685f631375a235cd6a24af9"
+        },
+        "retained_audit_status": false,
+        "root_review": {
+          "bytes": 4743,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NN_DYNAMICS_ASSEMBLY_ROOT_REVIEW.md",
+          "sha256": "6bc5bfdbbbab83d43ddc7f164cc3403f0f05d1f92f2c40ca63a3e3ff29a438dd"
+        },
+        "root_source_binding": {
+          "bytes": 6554,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/nn_dynamics_assembly_root_review/SOURCE_BINDING.json",
+          "sha256": "3e0fcdfedb8b9a364c317bf25cf412ab283232b99cf35f8d9569714727354fa7"
+        },
+        "scientific_reruns": 0,
+        "source_freeze": {
+          "bytes": 40579,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/FINAL_FREEZE.json",
+          "sha256": "21abdfcc9933206371386b9398fbc6a59d105ba0cc998924b9931529427d4bda"
+        },
+        "wrapper": {
+          "bytes": 11134,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/THEOREM_WRAPPER.md",
+          "sha256": "e5e838457512ed9795542db39e9f3b4681c7fb642085ba081f9cd0db3441513b"
+        }
+      }
+    }
+  ],
+  "retained_audit_status": false,
+  "supplied_controls_clock_precision_drift_contract_required": true,
+  "unchanged_complete_core_coverage_reused": true
+}

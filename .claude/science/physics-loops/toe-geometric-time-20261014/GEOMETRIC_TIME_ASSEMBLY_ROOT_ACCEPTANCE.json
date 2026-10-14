@@ -1,0 +1,46 @@
+{
+  "accepted_utc": "2026-10-14T11:19:40.604413+00:00",
+  "disposition": "conditional_source_assembly_accepted",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/FINAL_FREEZE.json",
+    "sha256": "635d9eb9f88c542b20dfec8bf093d416c224dbfb6662665a7dfd568401936871",
+    "bytes": 23324
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/CANDIDATE.md",
+    "sha256": "914ee9a23eea7dd55e277d9eb782ff086c3020f9ac6822c7fb3aef9efd55dd43",
+    "bytes": 27252
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_source_assembly/THEOREM_WRAPPER.md",
+    "sha256": "72779a74a78b191251f256a2d327259ff72c97f22d216fb59ca959dc22703070",
+    "bytes": 11788
+  },
+  "prior_scientific_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GEOMETRIC_TIME_ROOT_ACCEPTANCE.json",
+    "sha256": "1cecae561962c855f1704363fda4fc43e1758965ccb1ef6676d8ddbecb09cb3a",
+    "bytes": 3560
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GEOMETRIC_TIME_ASSEMBLY_ROOT_REVIEW.md",
+    "sha256": "58bf88196e0123317dd0de42e432b0848c3efc7e9b68afd482b12f44b9242dea",
+    "bytes": 4212
+  },
+  "root_source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_assembly_root_review/SOURCE_BINDING.json",
+    "sha256": "12ab2fac5d2538f555b6ccdb9d7cc4fddf50ea878b3d78ceb30dff49ce924b64",
+    "bytes": 3539
+  },
+  "actual_source_check": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_publication_root_review/geometric_assembly_sourcecheck/EXECUTION.json",
+    "sha256": "66ad43217953ea75e6d8c6cf94c15db255b7ccc1b0eb761550c102c346a49942",
+    "bytes": 611
+  },
+  "mathematical_parent": "canonical local-uniformity52525335; four exact accepted components, no ancestry premise",
+  "mathematical_body_edits": 0,
+  "new_mathematical_predicates": 0,
+  "scientific_reruns": 0,
+  "future_publication_driver_accepted": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": []
+}

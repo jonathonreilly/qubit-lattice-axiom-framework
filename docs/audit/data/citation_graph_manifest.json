@@ -1,6 +1,6 @@
 {
- "edge_count": 15977,
- "node_count": 7091,
+ "edge_count": 15992,
+ "node_count": 7095,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3729,6 +3729,10 @@
   "coarse_grained_exterior_law_helper_note_2026-04-14": {
    "deps_hash": "0ed79feda7a5",
    "out_degree": 2
+  },
+  "coherent_binary_k_admission_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "bf48862e7dcb",
+   "out_degree": 3
   },
   "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06": {
    "deps_hash": "57580a0f4742",
@@ -8293,6 +8297,10 @@
   "genesis_word_self_verification_cycle732_bounded_theorem_note_2026-07-28": {
    "deps_hash": "423f1f549b6b",
    "out_degree": 4
+  },
+  "geometric_time_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "0fb192a50699",
+   "out_degree": 3
   },
   "geometry_lane_head_to_head_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14205,6 +14213,14 @@
   "link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "literal_l4_always_on_control_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "ea431c5a27de",
+   "out_degree": 5
+  },
+  "literal_l4_nearest_neighbor_dynamics_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "6c59c27e295a",
+   "out_degree": 4
   },
   "literal_patchgraph_z3_m2_placement_and_fixed_controller_cycle707_bounded_theorem_note_2026-07-26": {
    "deps_hash": "0276771db334",

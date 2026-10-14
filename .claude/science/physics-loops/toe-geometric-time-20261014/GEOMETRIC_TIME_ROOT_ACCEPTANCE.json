@@ -1,0 +1,54 @@
+{
+  "accepted_utc": "2026-10-14T10:51:16.230119+00:00",
+  "status": "conditional analytic source accepted; no retained or audit status",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/DERIVATION.md",
+    "sha256": "841e5f7416c58afed64c40e01aca9976bcd8efbe7c36fe6b628afb32f8fd5ad0",
+    "bytes": 15153
+  },
+  "pre_review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_local_time_root/PRE_REVIEW_SEAL.json",
+    "sha256": "76933c1fe63d7f7f588247f3fb95e82aab1a3977ceb69fb44772ae6aec0a59a3",
+    "bytes": 1752
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/REPORT.md",
+    "sha256": "4d97142d98631805f717e606417979d8689f9281315ca5872d9306bf99e76208",
+    "bytes": 15623
+  },
+  "separate_review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_geometric_time_review/REVIEW_SEAL.json",
+    "sha256": "c6b24677395bb9542e8e17a061401c29adfd1e0a0ff671916ec330a3efef1a93",
+    "bytes": 5755
+  },
+  "root_disposition": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_time_root_review/ROOT_DISPOSITION.md",
+    "sha256": "483342ca3b64d1cc58c5437a83df1a4a44e9ac9442cb37e9134122e030ade104",
+    "bytes": 6355
+  },
+  "root_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/geometric_time_root_review/SOURCE_BINDING.json",
+    "sha256": "233d2b30817514e55ed4c2935efe2fbae2b28f9a2da3efad1bf7644e6742fbf4",
+    "bytes": 2682
+  },
+  "actual_root_binding_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_publication_root_review/geometric_binding/EXECUTION.json",
+    "sha256": "9e46608acc91c8f42cfd5c2832e5d0b4292a143382fe545c205f4e093ac8f20d",
+    "bytes": 499
+  },
+  "result": "Degree-four effective-time polynomial for finite physical local/reference Gauss averaging; sufficient horizon-dependent O(tau_star^5) supplied physical time at fixed positive whole-term cap and other stated constants.",
+  "scientific_parent": "PR9540 canonical uniform local Gauss-penalty recovery note; exact four underlying accepted source identities retained",
+  "required_framing": "Original pending-review sentences are historical. Preserve unchanged proof with current acceptance and exposure/failed-attempt records in the publication wrapper.",
+  "independence_limit": "Reviewer shared target and prior machinery; own clipped-profile assessment sealed before new root proof exposure. Detailed review and single control source-exposed, same family.",
+  "remaining_premises": [
+    "static supplied multi-qubit controls and integer penalty",
+    "normalized initial K states",
+    "effective coefficient data, certified parameter choice, precision and external timing",
+    "physical energy/time, photon/continuum and native autonomous apparatus identifications remain open"
+  ],
+  "author_science_reruns_by_root": 0,
+  "new_root_math_program_runs": 0,
+  "source_assembly_authorized": true,
+  "proposed_publication_execution_authorized": false,
+  "editable_prompt_files_changed": []
+}

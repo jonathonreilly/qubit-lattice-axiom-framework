@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/coherent_binary_k_admission_identity_2026_10_14.py
+runner_sha256: 7ffb747cce759d02051ee91a02611723a8a82e798eba98bc706fcffce0d2846f
+input_fingerprint_sha256: aa0a0257645ad178402dbd54038e55ddcee84dabf5497c337d86ae4f0d7c6241
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+{"attribution_reads": ["docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md", "docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md"], "claim_id": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": ["docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no admission instrument or trace estimate was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

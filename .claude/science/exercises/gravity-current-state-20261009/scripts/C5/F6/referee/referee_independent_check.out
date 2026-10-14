@@ -1,0 +1,11 @@
+Independent analytic-flow Hessians (one process; z-slab integration)
+U1 n=6 hmax=0.25 mph=6 nodes=174: Sigma0=+0.5659636957 Hess=+2.434440927e-03; Gs0=+0.1908429058 Gs_Hess=-2.674842756e-03
+U1 n=7 hmax=0.2 mph=8 nodes=238: Sigma0=+0.5659636956 Hess=+2.434540057e-03; Gs0=+0.1908429058 Gs_Hess=-2.674820288e-03
+Yukawa B1 n=6 hmax=0.25 nodes=126: Y0=-0.5618342082 Hess=+6.625562823e-03; C0=-0.6857373648 C_Hess=-1.612449785e-02
+Yukawa B1 n=7 hmax=0.2 nodes=161: Y0=-0.5618342076 Hess=+6.624741855e-03; C0=-0.6857373636 C_Hess=-1.612780589e-02
+main c_H from independent finest-grid pieces: +3.681022818e-03
+NANOGrav per-Eg-component variance: fmin=1/16 6.965921335e-29; fmin=1/30 1.610695521e-28
+NANOGrav 10-yr LS slope rms: fmin=1/16 7.669798941e-30/yr; fmin=1/30 2.309992507e-29/yr
+main |delta v/v| coefficient=1.753016782e+31; conservative clock rate=9.411700379e+01/yr; exceedance=2.614361216e+18
+B1 tadpole |delta v/v| coefficient at y_t=0.38: 3.069918238e+48
+peak_rss_raw=167149568

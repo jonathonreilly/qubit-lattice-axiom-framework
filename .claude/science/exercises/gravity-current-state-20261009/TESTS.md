@@ -9573,3 +9573,19 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - **MECHANISM-NONE:** the cutoff is not covariant (ξ_j fails to track the stretch), checked.
   - **OPEN:** otherwise.
 - **Expectation.** MECHANISM-SPLIT. Emergent coarseness gives a covariant cutoff, but a tuned critical point moves under stretch (Onsager's curve), so the Higgs still needs protection or a rule. A pseudo-Goldstone/composite Higgs is the protected-route candidate.
+
+- **Referee records, 2026-10-14 ~01:31Z.** Codex gpt-5.6-sol at xhigh.
+  - **NF-1: NOT CONFIRMED. Recorded reading: OPEN** (literal: the FIXED item names U(1)_ε, which is not exact).
+    - The physics is confirmed:
+      - Θ and P_stag force all 64 entries of Σ(0, 0) = 0. The constraint rank is 64, and the independent integrals are ≤ 2.7e-17.
+      - P_stag needs an inversion-covariant link lift.
+      - The flow compatibility, the controls, z″ and the Earth ratio are confirmed.
+    - The taste count obstruction (22.5/2) is correct. R9-1's 36σ is conditional on an identical Z coupling.
+    - T2 is untested, and its taste splitting breaks Θ.
+    - **Correction to the re-solve:** the fermion rows were divided by 4 twice. With that fixed, the N = 48 roots survive for N_s = 11.25 and 16; the N_s = 22.5 root was not reproduced; "only at the small-box photon edge" is not established.
+  - **F6: CONFIRMED WITH CORRECTIONS. SCALAR-HAZARD is met.**
+    - Independent: c_H = 3.68102e-3.
+    - Correction: −2.675e-3 is G_s″; the quartic self-energy is 6λG_s″.
+    - δv/v = −1.753e31 Q_E is confirmed. The formal clock exceedance is 2.61e18, but since |δv/v| ~ 1e3, the real implication is loss of the observed EW vacuum.
+    - The Earth row (1e21) and the tadpole (3.07e48 Q_E) are conditional.
+    - No registered clause covers it.

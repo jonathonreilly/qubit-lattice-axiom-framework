@@ -1,0 +1,72 @@
+{
+  "acceptance_writer": {
+    "bytes": 2517,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_publication_root_review/accept.py",
+    "sha256": "5daf3f543609307bcfba369815e911a278c2b94cefb08f24d169518dd7817586"
+  },
+  "actual_citations_and_complete_graph_object_preservation_reviewed": true,
+  "actual_streams": {
+    "bytes": 8894,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_publication_root_review/ACTUAL_STREAMS.txt",
+    "sha256": "8334f922e6e7fcaabff48402196186e0950e1b991201dd9ff4f26513fcc3fd04"
+  },
+  "base": "c57c1fed9aa585d6ec4d28607c8221f933608d8a",
+  "block_handoff_and_review_history_read": true,
+  "branch": "physics-loop/toe-autonomous-clock-20261014",
+  "canonical_integration_executed": false,
+  "complete150_file_assembly_and_unique_unchanged_proof_reviewed": true,
+  "complete_driver_read": true,
+  "disposition": "accepted_for_source_integration",
+  "editable_prompt_files_changed": [],
+  "exact_source_diff_producer_conventions_reviewed": true,
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/AUTONOMOUS_CLOCK_BRIDGE_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_read": true,
+  "final_assembly_review_sha256": "63b69e60abc14abbca9be473e61f14edb2808deb7172400d8081df8c7a30f2d5",
+  "full_duration_background_signed_program_positive_clock_and_paid_total_reserve_reviewed": true,
+  "full_root_binder_failure_repair_outer_streams_and_missing_child_pin_limits_reviewed": true,
+  "historical_missing_child_source_pins_invented": false,
+  "identity_tools_and_archive_map_read": true,
+  "later_obligations": [
+    "actual guarded prepare and exact root staging",
+    "actual guarded verify and root evidence read",
+    "regular PR only after successful integration",
+    "cumulative/current-main validation",
+    "independent retained audit"
+  ],
+  "mathematical_predicates": 0,
+  "new_mathematical_review": false,
+  "new_publication_wrappers_read": true,
+  "no_go_packet_pass": false,
+  "packet_and_dependency_delta_read": true,
+  "placeholder_only": false,
+  "pre_and_post_checker_index_equality_and_existing_ledger_scope_reviewed": true,
+  "prepared_clock_full_input_reference_dirty_transit_and_binary_readout_scope_reviewed": true,
+  "prior_acceptance_sha256s": [
+    "2392d12e1f58b03985d6b7f8ab7007dedde836de9bd816f590db5470af76e61f",
+    "4d40967284c6f647fe7aba600d1ba2783423d49624eedf274589cee402e882d5"
+  ],
+  "publication_byte_maps_and_diffs_verified": true,
+  "publication_program_sha256": "aecd8cbd2c49312dbdf3a2b0c20dc1213a61a73a42cc1f26c8f9c0d9aa4bb2d1",
+  "publication_source_freeze_sha256": "5c4ee8ba6fbeebeab232e5df9d1c1c06e0381ee5a1aa8ca158f9b75f4b072999",
+  "root_authorizes_execution": true,
+  "root_checker_execution": {
+    "bytes": 1866,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_publication_root_review/CHECKER_EXECUTION.json",
+    "sha256": "90a09922342f684f4a6a830f224bce9a34688a939d77d9186309f4a29d97015c"
+  },
+  "root_execution_acceptance": true,
+  "six_actual_mathematical_roles_and_generic_clock_credit_reviewed": true,
+  "source_assembly_freeze_sha256": "e79c1291bf85437561cdb4e2e9aaf3db7cee3b8c2481b55f1b479107ad5a775c",
+  "source_binding": {
+    "bytes": 28217,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_publication_root_review/SOURCE_BINDING.json",
+    "sha256": "c00b89e8ad5b5a95379b72cdfec97cf18e0ad53a2177a42a1412afbc4dfe81d3"
+  },
+  "source_checker_and_recording_wrapper_read": true,
+  "twelve_section_conformance_reviewed": true,
+  "unchanged_source_coverage_reused": true,
+  "utc": "2026-10-14T15:15:58.062455+00:00",
+  "whitespace_and_link_policy_reviewed": true,
+  "whole_clock_register_couplings_separate_clock_site_cap_and_native_limits_reviewed": true
+}

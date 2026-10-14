@@ -1,0 +1,84 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "to": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "to": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "to": "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "to": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "to": "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30"
+    },
+    {
+      "from": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "to": "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 6,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+        "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+        "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+        "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+        "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+        "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/literal_l4_autonomous_clock_bridge_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FOURIER_CLOCK_SUPPLIER",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Six actual mathematical roles; generic mechanism credit is the supplier role, not a new generic clock claim. No ancestry-only imports."
+}

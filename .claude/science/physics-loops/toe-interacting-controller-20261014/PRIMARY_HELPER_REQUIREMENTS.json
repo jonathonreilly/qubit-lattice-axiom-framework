@@ -1,0 +1,10 @@
+{
+  "cache_evidence_scope": "Successful identity and freshness are not a mathematical proof or audit.",
+  "complete_actual_read_closure": "Literal AUDIT_INPUT_PATHS checked against the actual runtime read set; runner itself separately fingerprinted by canonical cache.",
+  "helper_runner_paths": [],
+  "historical_science_controls": "Three archived actual executions with original streams; not registered as rerun helpers and not executed by the primary.",
+  "history_application_included": false,
+  "mathematical_predicates": 0,
+  "primary_runner": "scripts/interacting_copy_autonomous_controller_identity_2026_10_14.py",
+  "primary_scope": "source identity only"
+}

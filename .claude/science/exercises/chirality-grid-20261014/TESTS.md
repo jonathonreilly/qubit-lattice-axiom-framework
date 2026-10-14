@@ -93,3 +93,11 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **COLOUR-EMERGENT-ONLY:** exact local SU(3) is impossible with spread components, but an emergent or approximate version is not excluded (state what would be needed).
   - **OPEN:** otherwise.
 - **Expectation.** COLOUR-BLOCK-FORCED for exact local SU(3). Overlapping cluster generators fail to commute, and a translation-twisted assignment only relabels the block lattice. Emergent colour remains open.
+
+**SIGN-1. Is the X2 corner-package Hamiltonian sign-free for QMC?** This is the lattice lens's gate 2. (Pre-registered 2026-10-14 ~21:15Z.)
+- **Question.** Does X2's Hamiltonian, or a faithful reduced version of it (walker kinetic term, the cubic-invariant filtered Spin(10)/SO(10) 10-channel quartic, or a Spin(6)/SU(4) toy), meet a known sign-free criterion? Candidates: Majorana reflection positivity (Li–Jiang–Yao), Kramers positivity (Wu–Zhang), Majorana-time-reversal classes (Li–Jiang–Yao 2016), split orthogonal group (Wei et al.).
+- **Readings.**
+  - **SIGN-FREE:** an explicit criterion proved to hold for the faithful model (or a stated faithful reduction), with the decomposition written out.
+  - **SIGN-PROBLEM:** proof that the known criteria fail for every decomposition considered, or explicit negative or complex weights on a small cluster in a natural decomposition, with the decompositions tried listed.
+  - **OPEN:** otherwise.
+- **Memory:** ≤ 0.2 GB.

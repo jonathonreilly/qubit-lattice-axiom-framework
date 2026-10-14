@@ -1,0 +1,13 @@
+triangle weight support max |theta| with f>0: 0.5985 (delta = 0.6)
+hard: min c_n = -3.964e-02  (# negative coefficients in |n|<=50: 46)
+   Lx=1: lambda_min/lambda_max = -2.215e-01
+   Lx=2: lambda_min/lambda_max = +1.382e-03
+   Lx=3: lambda_min/lambda_max = -8.949e-03
+   Lx=4: lambda_min/lambda_max = +3.316e-07
+   Lx=5: lambda_min/lambda_max = -3.850e-04
+triangle: min c_n = +1.476e-20  (# negative coefficients in |n|<=50: 0)
+   Lx=1: lambda_min/lambda_max = +2.921e-03
+   Lx=2: lambda_min/lambda_max = +6.633e-07
+   Lx=3: lambda_min/lambda_max = +1.823e-10
+   Lx=4: lambda_min/lambda_max = +5.293e-14
+   Lx=5: lambda_min/lambda_max = +1.583e-17

@@ -42,3 +42,17 @@ These are drafts only. Sending any message on Jon's behalf needs his explicit ap
 - **H. Fukaya:** is our "Lemma R" (rational idempotents on Tᵈ have vanishing Chern classes, via localization of Chow groups) known beyond Read 2017?
 - **S. Sen:** compare our slab gauge-penalty 1/L scaling (F4-B) with Dang–Karur–Sen (arXiv:2606.05306).
 - **R. Thorngren / J. Preskill / L. Fidkowski:** can their disentanglers run on finite-dimensional sites (qubits) instead of rotors? This is our D1. It is also COL-1's question of gauging a non-on-site colour symmetry.
+
+---
+
+## 0. Golterman and Shamir: two-page pre-registered X2 packet (the lattice lens's first choice; send after SIGN-1)
+
+**Contents:**
+- the X2 Hamiltonian (`combos/X2/COMBO_REPORT.md:55-70`);
+- the exact light-corner decoupling, [H, ψ(hw1)] = 0;
+- K1's mean-field numbers for the 10-vector channel;
+- F4-L2's lemma ("a working wall implies a protected zero").
+
+**Questions:**
+1. Does arXiv:2505.20436's conditional theorem apply to X2 as written? If not, which hypothesis fails?
+2. Which single finite-volume diagnostic would you accept as deciding whether X2's mirror zeros are kinematical?

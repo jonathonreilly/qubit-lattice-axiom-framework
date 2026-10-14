@@ -1,0 +1,22 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/ref_E1/scripts/e1_onN.py:20: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  val, err = quad(f, 0, np.pi, points=pts, limit=2000, epsabs=1e-15, epsrel=1e-13)
+        0.36 real         0.32 user         0.03 sys
+            75399168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11479  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                  15  involuntary context switches
+          6384736908  instructions retired
+          1486372814  cycles elapsed
+            52560496  peak memory footprint

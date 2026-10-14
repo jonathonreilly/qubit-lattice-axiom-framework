@@ -1,0 +1,8 @@
+2D O(N), N=inf: stretch response of the transmuted gap
+  xi0        1/g^2      dln m/t^2 (lin,t=1e-2)  (lin,t=5e-3)   dln m/t^2 (vol-pres)   dm/t^2 (lin)     Ising-like dm/t^2 would be const
+     1e+01  0.641560   +1.501034             +1.501017       -0.249372             +1.5011e-01
+     1e+02  1.008718   +2.668620             +2.668580       -0.249990             +2.6690e-02
+     1e+03  1.375198   +3.820386             +3.820323       -0.249996             +3.8211e-03
+     1e+04  1.741666   +4.971717             +4.971636       -0.250004             +4.9730e-04
+     1e+05  2.108134   +6.122332             +6.119110       -0.251280             +6.1242e-05
+  continuum expectation (lin): dln m/t^2 = pi/g^2 * (1/ (2pi))*... i.e. ~ (1/2) ln(xi) + const; vol-pres: const

@@ -1,0 +1,35 @@
+SF B1 R18-9 root                   Hess_t +2.4240e-02  c_h +9.6960e-02  mu_rho 2.424e-21  computed-sign branch M (massive)  |m_g|(5500 kg/m^3) = 3.65e-09 eV
+      Earth crossing GW170817 (row 1, checked, both signs) bound 1.5e-29 : ratio 1.62e+08 EXCEEDS
+      detector on ground (row 2, ~1e-29)               bound 1.0e-29 : ratio 2.42e+08 EXCEEDS
+      binary pulsar (row 8, suggested, M)              bound 2.0e-43 : ratio 1.21e+22 EXCEEDS
+      PTA Local Bubble (row 7, suggested, M)           bound 8.0e-24 : ratio 3.03e+02 EXCEEDS
+      Galaxy+IGM LVK column (row 5, checked arith.)    bound 2.7e-19 : ratio 8.98e-03 passes
+      hot era: branch M -> no observational bound (F2 row 10); branch T: N ~ 2.0e9*sqrt(|c|/0.040475) = 3.1e+09 e-folds vs N_max 66-95 (F2 row 9)
+SF B2 (flow at m=0)                Hess_t +2.4261e-02  c_h +9.7044e-02  mu_rho 2.426e-21  computed-sign branch M (massive)  |m_g|(5500 kg/m^3) = 3.65e-09 eV
+      Earth crossing GW170817 (row 1, checked, both signs) bound 1.5e-29 : ratio 1.62e+08 EXCEEDS
+      detector on ground (row 2, ~1e-29)               bound 1.0e-29 : ratio 2.43e+08 EXCEEDS
+      binary pulsar (row 8, suggested, M)              bound 2.0e-43 : ratio 1.21e+22 EXCEEDS
+      PTA Local Bubble (row 7, suggested, M)           bound 8.0e-24 : ratio 3.03e+02 EXCEEDS
+      Galaxy+IGM LVK column (row 5, checked arith.)    bound 2.7e-19 : ratio 8.99e-03 passes
+      hot era: branch M -> no observational bound (F2 row 10); branch T: N ~ 2.0e9*sqrt(|c|/0.040475) = 3.1e+09 e-folds vs N_max 66-95 (F2 row 9)
+SF B1 0+ root                      Hess_t +2.4535e-02  c_h +9.8140e-02  mu_rho 2.454e-21  computed-sign branch M (massive)  |m_g|(5500 kg/m^3) = 3.67e-09 eV
+      Earth crossing GW170817 (row 1, checked, both signs) bound 1.5e-29 : ratio 1.64e+08 EXCEEDS
+      detector on ground (row 2, ~1e-29)               bound 1.0e-29 : ratio 2.45e+08 EXCEEDS
+      binary pulsar (row 8, suggested, M)              bound 2.0e-43 : ratio 1.23e+22 EXCEEDS
+      PTA Local Bubble (row 7, suggested, M)           bound 8.0e-24 : ratio 3.07e+02 EXCEEDS
+      Galaxy+IGM LVK column (row 5, checked arith.)    bound 2.7e-19 : ratio 9.09e-03 passes
+      hot era: branch M -> no observational bound (F2 row 10); branch T: N ~ 2.0e9*sqrt(|c|/0.040475) = 3.1e+09 e-folds vs N_max 66-95 (F2 row 9)
+K1 control (both on photon flow)   Hess_t -2.2676e-03  c_h -9.0705e-03  mu_rho 2.268e-22  computed-sign branch T (tachyonic)  |m_g|(5500 kg/m^3) = 1.12e-09 eV
+      Earth crossing GW170817 (row 1, checked, both signs) bound 1.5e-29 : ratio 1.51e+07 EXCEEDS
+      detector on ground (row 2, ~1e-29)               bound 1.0e-29 : ratio 2.27e+07 EXCEEDS
+      binary pulsar (row 8, suggested, M)              bound 2.0e-43 : ratio 1.13e+21 EXCEEDS
+      PTA Local Bubble (row 7, suggested, M)           bound 8.0e-24 : ratio 2.83e+01 EXCEEDS
+      Galaxy+IGM LVK column (row 5, checked arith.)    bound 2.7e-19 : ratio 8.40e-04 passes
+      hot era: branch M -> no observational bound (F2 row 10); branch T: N ~ 2.0e9*sqrt(|c|/0.040475) = 9.5e+08 e-folds vs N_max 66-95 (F2 row 9)
+H-cov R19-34 (control)             Hess_t -1.0119e-02  c_h -4.0475e-02  mu_rho 1.012e-21  computed-sign branch T (tachyonic)  |m_g|(5500 kg/m^3) = 2.36e-09 eV
+      Earth crossing GW170817 (row 1, checked, both signs) bound 1.5e-29 : ratio 6.75e+07 EXCEEDS
+      detector on ground (row 2, ~1e-29)               bound 1.0e-29 : ratio 1.01e+08 EXCEEDS
+      binary pulsar (row 8, suggested, M)              bound 2.0e-43 : ratio 5.06e+21 EXCEEDS
+      PTA Local Bubble (row 7, suggested, M)           bound 8.0e-24 : ratio 1.26e+02 EXCEEDS
+      Galaxy+IGM LVK column (row 5, checked arith.)    bound 2.7e-19 : ratio 3.75e-03 passes
+      hot era: branch M -> no observational bound (F2 row 10); branch T: N ~ 2.0e9*sqrt(|c|/0.040475) = 2.0e+09 e-folds vs N_max 66-95 (F2 row 9)

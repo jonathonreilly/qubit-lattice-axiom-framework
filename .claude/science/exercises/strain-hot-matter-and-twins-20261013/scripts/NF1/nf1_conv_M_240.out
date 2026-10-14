@@ -1,0 +1,11 @@
+NF-1 part M; grid n=8 hmax=0.25 mph=10 (240 nodes), d=0.0030; staggered edge s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  m=0.0000  Sigma_eps(P=0) +0.0000000000  Hess_t +0.0000000e+00
+  m=0.0025  Sigma_eps(P=0) +0.0010345384  Hess_t +2.8436717e-05
+  m=0.0050  Sigma_eps(P=0) +0.0018934453  Hess_t +5.6974468e-05
+  m=0.0100  Sigma_eps(P=0) +0.0034356473  Hess_t +1.1392892e-04
+  m=0.0200  Sigma_eps(P=0) +0.0061685042  Hess_t +2.2728815e-04
+  m=0.0025  z(m) = +0.413815   z'' = [Hess(m)-Hess(0)]/m = +1.137469e-02
+  m=0.0050  z(m) = +0.378689   z'' = [Hess(m)-Hess(0)]/m = +1.139489e-02
+  m=0.0100  z(m) = +0.343565   z'' = [Hess(m)-Hess(0)]/m = +1.139289e-02
+  m=0.0200  z(m) = +0.308425   z'' = [Hess(m)-Hess(0)]/m = +1.136441e-02
+time 101 s

@@ -1,0 +1,6 @@
+NF-1 part B; grid n=6 hmax=0.25 mph=6 (156 nodes), d=0.0030; staggered edge s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  G1 dressing on the staggered law: L (eps=1e-3) -8.8330654e-01 (2e-3) -8.8330369e-01 Rich -8.8330750e-01 ; undressed dm +0.0e+00
+     -> Hess_t = 2 a L: a = 1 gives -1.7666e+00 ; a = 0.0141 (F3 a*) gives -2.4909e-02 ; |Hess| >= 1e-3 e^2 for |a| >= 5.66e-04
+  G2 dressing on the staggered law: L (eps=1e-3) -1.4962557e+00 (2e-3) -1.4962473e+00 Rich -1.4962585e+00 ; undressed dm +0.0e+00
+     -> Hess_t = 2 a L: a = 1 gives -2.9925e+00 ; a = 0.0141 (F3 a*) gives -4.2194e-02 ; |Hess| >= 1e-3 e^2 for |a| >= 3.34e-04
+time 23 s

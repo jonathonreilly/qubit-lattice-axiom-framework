@@ -1,0 +1,6 @@
+grid n=8 hmax=0.25 mph=10 (240 nodes), d=0.0030
+B1 main (mflow 0.01, Psym)           : dm +0.041858390  Hess_t +2.4240272e-02   [x4 +9.696109e-02]
+   parts: tadpole dm +0.018085 Hess +1.802158e-02 ; exchange dm +0.023773 Hess +6.218687e-03
+B2 (Dirac flow at m = 0, Psym)       : dm +0.041858390  Hess_t +2.4261092e-02   [x4 +9.704437e-02]
+R19-11 0+ root, B1                    : dm +0.042294398  Hess_t +2.4534992e-02   [x4 +9.813997e-02]
+time 138 s

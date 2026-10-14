@@ -1,0 +1,66 @@
+0. gammas real: True ; symmetric: max|G - G^T| = 0.0e+00
+1. real commutant of (G1,G2,G3,Geps): dim 4
+   antisymmetric part of the commutant: dim 3; J^2 = -1: [0.0, 0.0, 0.0]
+   shifts commute with h (L = 8, t = 0): [0.0, 0.0, 0.0]
+   convention: |h(K) + s(K_j) Gamma_j| at K = 2pi/L e_1 : 3.2e-15  (s = 0.785398; h|k> = -s(k)|k> in this plane-wave convention, an overall sign)
+   convention: |h(K) + s(K_j) Gamma_j| at K = 2pi/L e_2 : 2.9e-15  (s = 0.785398; h|k> = -s(k)|k> in this plane-wave convention, an overall sign)
+   convention: |h(K) + s(K_j) Gamma_j| at K = 2pi/L e_3 : 3.0e-15  (s = 0.785398; h|k> = -s(k)|k> in this plane-wave convention, an overall sign)
+   eps at K = 0 equals Geps: 1.6e-15
+   Z_j = S_j at K = 0: real 1.1e-15 ; [Z_j, G_i] max 1.1e-15 ; {Z_j, Geps} max 2.1e-15 ; Z_j^2 = 1: 2.2e-16
+   {Z_i, Z_j} (i != j) max 2.5e-17
+   J_12 = Z_1 Z_2: J^2 + 1 4.4e-16 ; antisym 5.1e-17 ; commutes with G1..3, Geps: 5.1e-17 ; in commutant span: resid 1.5e-29
+   J_23 = Z_2 Z_3: J^2 + 1 4.4e-16 ; antisym 2.1e-18 ; commutes with G1..3, Geps: 5.1e-17 ; in commutant span: resid 1.5e-29
+   J_13 = Z_1 Z_3: J^2 + 1 4.4e-16 ; antisym 5.1e-17 ; commutes with G1..3, Geps: 5.1e-17 ; in commutant span: resid 2.2e-29
+   J12 J23 = + J13 (sign) ; resid 2.2e-16
+   Majorana-legal constant bilinears: 28; Theta_M-allowed 16 ; P_stag-allowed (K=0) 12 ; both 0
+   gap-opening (anticommute with G1,G2,G3) Majorana-legal: dim 6 ; (the i Geps J_a anticommute with G_j: resid 5.1e-17; the other 3 are i G5 J_a, next line)
+   G5 := Geps G1 G2 G3: symmetric 0.0e+00 ; {G5, G_j} 0.0e+00 ; {G5, Geps} 0.0e+00
+   gap-opening Majorana masses = span{i Geps J_a} (+) span{i G5 J_a}: rank 6 ; Majorana-legal (antisym) 5.1e-17
+     i Geps J_a: [., Geps] = 0 -> excluded by Theta_M (allowed by P_stag) ; i G5 J_a: {., Geps} = 0 -> excluded by P_stag (allowed by Theta_M): 1.4e-30 1.4e-30
+   Geps symmetric (=> m eps xi xi = const for a Majorana field): |Geps - Geps^T| = 0.0e+00 ; [Geps J, Geps] = 1.4e-30 (so Theta_M forbids every Majorana mass)
+   Wilson M_W = sum_mu [1 - (T_mu + T_mu^dag)/2]: real symmetric, |M_W - M_W^T| = 0.0e+00 -> its Majorana form (i/2) xi^T (i M_W) xi is a constant
+2. Fock identity, h = iB (B real antisym): |sum chi^dag h chi - (i/2)(xi1 B xi1 + xi2 B xi2)| (mod const) = 4.4e-16
+   control, complex h (real symmetric part 0.3): residual 6.74e-01 ; [H, copy-1 Hamiltonian] = 2.67e+00 (real case 2.2e-16)
+3. L=8 t=0.0, U = 1: max|Re h| = 0.0e+00 ; B = -i h antisymmetric: 0.0e+00
+3. L=8 t=0.3, U = 1: max|Re h| = 1.6e-16 ; B = -i h antisymmetric: 0.0e+00
+   SO(3) links, t=0.0: herm 2.8e-17 ; max|Re h[O]| 0.0e+00 (h = iB, B real) ; B antisym 2.8e-17 ; Theta_M |eps B eps + B| 0.0e+00
+                       P_stag |P h[O] P^T - h[O^P]| = 0.0e+00
+   SO(3) links, t=0.3: herm 4.2e-17 ; max|Re h[O]| 1.6e-16 (h = iB, B real) ; B antisym 4.2e-17 ; Theta_M |eps B eps + B| 0.0e+00
+                       P_stag |P h[O] P^T - h[O^P]| = 3.1e-16
+   SU(2) links, t=0.3: herm 4.3e-17 ; max|Re h[U]| 6.68e-01 (not purely imaginary) ; |(i s2) h* (i s2)^dag + h| = 4.0e-16 ; ((i s2)K)^2 = -1
+   SU(2) doublet, realified R^4:      real commutant dim 4 ; symmetric part dim 1 ; distinct eigenvalues of a random symmetric commutant element: 1 (only multiples of 1: no gauge-covariant halving)
+   SO(3) triplet, realified R^6:      real commutant dim 4 ; symmetric part dim 3 ; distinct eigenvalues of a random symmetric commutant element: 2 (projector exists: halving)
+   U(1) charge 1, realified R^2:      real commutant dim 2 ; symmetric part dim 1 ; distinct eigenvalues of a random symmetric commutant element: 1 (only multiples of 1: no gauge-covariant halving)
+   SU(3) triplet, realified R^6:      real commutant dim 2 ; symmetric part dim 1 ; distinct eigenvalues of a random symmetric commutant element: 1 (only multiples of 1: no gauge-covariant halving)
+   SU(2) doublet x flavour 2, R^8:    real commutant dim 16 ; symmetric part dim 6 ; distinct eigenvalues of a random symmetric commutant element: 2 (projector exists: halving)
+4. R_12 = (S1 S2 - (S1 S2)^T)/2: real antisym 0.0e+00 ; commutes with eps 0.0e+00 ; anticommutes with h? |{R12,h}| 6.2e-01, |[R12,h]| 0.0e+00
+   K = [0. 0. 0.] : |R12(K) - f(K) J12| best f = cos(K1+K2), resid 6.1e-16 ; |R12(K)| 1.000
+   K = [0.25 0.   0.  ] : |R12(K) - f(K) J12| best f = cos(K1+K2), resid 3.8e-15 ; |R12(K)| 0.707
+   K = [0.25 0.25 0.  ] : |R12(K) - f(K) J12| best f = cos(K1+K2), resid 6.1e-17 ; |R12(K)| 0.000
+   K = [ 0.25 -0.25  0.25] : |R12(K) - f(K) J12| best f = cos(K1+K2), resid 6.9e-16 ; |R12(K)| 1.000
+   K = [0.5  0.25 0.  ] : |R12(K) - f(K) J12| best f = cos(K1+K2), resid 3.9e-15 ; |R12(K)| 0.707
+   M = i eps R12: hermitian 0.0e+00 ; antisymmetric 0.0e+00 ; {M, h} = 0.0e+00 (gap-opening) ; M at K=0 vs i Geps J12: 1.1e-15
+   S_1 M S_1^T = + M
+   S_2 M S_2^T = + M
+   S_3 M S_3^T = - M
+   Theta_M (xi -> eps xi, K): M -> eps M* eps = - M
+5. Rz: |O h O^T - h| = 0.0e+00 (L = 8, root symbol) ; rho Geps rho^T = Geps: 2.2e-16 ; rho Gamma_j rho^T -> [[0, 1, 0], [-1, 0, 0], [0, 0, 1]]
+   action on (J23, J13, J12):
+[[-0. -1.  0.]
+ [ 1. -0. -0.]
+ [-0.  0.  1.]]
+5. Rx: |O h O^T - h| = 0.0e+00 (L = 8, root symbol) ; rho Geps rho^T = Geps: 2.2e-16 ; rho Gamma_j rho^T -> [[1, 0, 0], [0, 0, 1], [0, -1, 0]]
+   action on (J23, J13, J12):
+[[ 1. -0. -0.]
+ [-0. -0. -1.]
+ [ 0.  1. -0.]]
+5. Ry: |O h O^T - h| = 0.0e+00 (L = 8, root symbol) ; rho Geps rho^T = Geps: 2.2e-16 ; rho Gamma_j rho^T -> [[0, 0, -1], [0, 1, 0], [1, 0, 0]]
+   action on (J23, J13, J12):
+[[-0.  0. -1.]
+ [ 0.  1.  0.]
+ [ 1. -0. -0.]]
+   cubic-invariant combinations of the J-triplet (=> of the Majorana masses i Geps J and i G5 J): dim 0
+   cubic-invariant Majorana-legal constant bilinears (of 28): dim 2
+     invariant: anticommutes with all G_j (gap-opening) False ; commutes with all G_j False ; Theta_M-allowed True ; P_stag-allowed False ; = i G1G2G3 ? 6.2e-02
+     invariant: anticommutes with all G_j (gap-opening) False ; commutes with all G_j False ; Theta_M-allowed True ; P_stag-allowed False ; = i G1G2G3 ? 1.0e+00
+done

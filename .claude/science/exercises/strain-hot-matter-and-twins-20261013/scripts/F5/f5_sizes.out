@@ -1,0 +1,21 @@
+F1 channel: Hess_t +2.4240e-02 e^2, mu_rho 2.424e-21, Earth row ratio 1.62e+08
+
+(b) residual channels after the rule (ratio R to F1 channel, mu_rho = R x 2.424e-21; Earth row 1.5e-29):
+  (i) multiplicative m_f z'' <psibar psi>: z''_t = -4.63e-03 e^2 (SF, off-shell estimate); sum_q m_q<qbar q>_N = 0.275 GeV
+      nucleons R = 3.30e-22 -> mu_rho 8.0e-43 (Earth row ratio 5.3e-14);  electrons R = 7.99e-24
+  (i') matter speed rows, kappa''_t = 0.01 e^2 (bracket, not computed): R = 7.8e-22 -> mu_rho 1.9e-42 (Earth ratio 1.3e-13)
+  (i') matter speed rows, kappa''_t = 0.10 e^2 (bracket, not computed): R = 7.8e-21 -> mu_rho 1.9e-41 (Earth ratio 1.3e-12)
+  (i') matter speed rows, kappa''_t = 1.00 e^2 (bracket, not computed): R = 7.8e-20 -> mu_rho 1.9e-40 (Earth ratio 1.3e-11)
+  (ii) Pauli term, dressing |a| = 0.0141, fully polarized electrons in 50 uT: R <= 4.6e-58
+  (ii) Pauli term, dressing |a| = 1.0000, fully polarized electrons in 50 uT: R <= 3.3e-56
+  (iii) photon kinetic strain response x nuclear Coulomb energy, kappa_g'' = 1e-03: R = 1.4e-24 -> mu_rho 3.5e-45
+  (iii) photon kinetic strain response x nuclear Coulomb energy, kappa_g'' = 1e-01: R = 1.4e-22 -> mu_rho 3.5e-43
+  (iv) IGM, Wilson c1 (vR19-21 item 4, arithmetic confirmed) |m_g| 1.42e-09 eV -> mu_rho 4.8e+09 : Earth row x3.2e+38, Galaxy/IGM row x1.8e+28
+  (iv) Earth, Wilson c1 (rR19-21:211, suggested)            |m_g| 5.00e+06 eV -> mu_rho 4.5e+09 : Earth row x3.0e+38, Galaxy/IGM row x1.7e+28
+  (iv) Earth, even part (rR19-21:211, suggested)            |m_g| 2.00e-02 eV -> mu_rho 7.3e-08 : Earth row x4.8e+21, Galaxy/IGM row x2.7e+11
+
+  hot era (F1 mapping; quarks t, b, c; C_F g_s^2):
+    T =   150 GeV: F1 channel m_g^2/H^2 +4.90e+13 ; multiplicative residual -1.26e-04
+    T =   100 GeV: F1 channel m_g^2/H^2 +7.55e+13 ; multiplicative residual -1.90e-04
+    T =    10 GeV: F1 channel m_g^2/H^2 +6.26e+14 ; multiplicative residual -3.38e-05
+    T =     1 GeV: F1 channel m_g^2/H^2 +1.15e+16 ; multiplicative residual -3.51e-04

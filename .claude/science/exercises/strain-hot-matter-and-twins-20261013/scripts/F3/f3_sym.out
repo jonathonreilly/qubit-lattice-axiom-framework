@@ -1,0 +1,44 @@
+symmetry checks of the undressed root H(k) at 40 random k:
+  cubic rot90 axis 0: max|H(Rk) - S H S^dag| = 5.6e-16
+  cubic rot90 axis 1: max|H(Rk) - S H S^dag| = 6.7e-16
+  cubic rot90 axis 2: max|H(Rk) - S H S^dag| = 5.0e-16
+  P: max|H(-k) - beta H beta| = 5.0e-16
+  T: max|U_T H^* U_T^dag - H(-k)| = 5.0e-16
+  C: max|U_C H^* U_C^dag + H(-k)| = 5.0e-16
+  U_T U_T^* = (-1+0j) ; U_C U_C^* = (1+0j) (x identity)
+
+[S19] stencil half-size 9 -> 304 real basis functions x matrices (rank 304)
+  cubic-covariant hermitian generators: dim 20 (nontrivial, i.e. rank of G -> [G,H]: 17)
+    P+1 T+1 C+1 : dim  2, nontrivial  2 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P+1 T+1 C-1 : dim  0, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P+1 T-1 C+1 : dim  5, nontrivial  5 ; of which [G,beta]=0 (literal branch) nontrivial  3
+    P+1 T-1 C-1 : dim  3, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T+1 C+1 : dim  3, nontrivial  3 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T+1 C-1 : dim  0, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T-1 C+1 : dim  5, nontrivial  5 ; of which [G,beta]=0 (literal branch) nontrivial  2
+    P-1 T-1 C-1 : dim  2, nontrivial  2 ; of which [G,beta]=0 (literal branch) nontrivial  2
+  fully symmetric nontrivial sector: dim 2 ; candidates ['G1', 'G2'] (i beta alpha_j f_j = -gamma_j f_j) span rank 2 ; joint rank 2
+
+[S27] stencil half-size 13 -> 432 real basis functions x matrices (rank 432)
+  cubic-covariant hermitian generators: dim 28 (nontrivial, i.e. rank of G -> [G,H]: 24)
+    P+1 T+1 C+1 : dim  3, nontrivial  3 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P+1 T+1 C-1 : dim  0, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P+1 T-1 C+1 : dim  7, nontrivial  7 ; of which [G,beta]=0 (literal branch) nontrivial  4
+    P+1 T-1 C-1 : dim  4, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T+1 C+1 : dim  4, nontrivial  4 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T+1 C-1 : dim  0, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T-1 C+1 : dim  7, nontrivial  7 ; of which [G,beta]=0 (literal branch) nontrivial  3
+    P-1 T-1 C-1 : dim  3, nontrivial  3 ; of which [G,beta]=0 (literal branch) nontrivial  3
+  fully symmetric nontrivial sector: dim 3 ; candidates ['G1', 'G2', 'G3'] (i beta alpha_j f_j = -gamma_j f_j) span rank 3 ; joint rank 3
+
+[S33] stencil half-size 16 -> 528 real basis functions x matrices (rank 528)
+  cubic-covariant hermitian generators: dim 36 (nontrivial, i.e. rank of G -> [G,H]: 31)
+    P+1 T+1 C+1 : dim  4, nontrivial  4 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P+1 T+1 C-1 : dim  0, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P+1 T-1 C+1 : dim  9, nontrivial  9 ; of which [G,beta]=0 (literal branch) nontrivial  5
+    P+1 T-1 C-1 : dim  5, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T+1 C+1 : dim  5, nontrivial  5 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T+1 C-1 : dim  0, nontrivial  0 ; of which [G,beta]=0 (literal branch) nontrivial  0
+    P-1 T-1 C+1 : dim  9, nontrivial  9 ; of which [G,beta]=0 (literal branch) nontrivial  4
+    P-1 T-1 C-1 : dim  4, nontrivial  4 ; of which [G,beta]=0 (literal branch) nontrivial  4
+  fully symmetric nontrivial sector: dim 4 ; candidates ['G1', 'G2', 'G3', 'G4'] (i beta alpha_j f_j = -gamma_j f_j) span rank 4 ; joint rank 4

@@ -1,0 +1,8 @@
+TW-2 part L; grid n=10 hmax=0.20 mph=12 (340 nodes), d=0.0030, RK4 steps 4; staggered s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  Eg light block: sigma=0.0100 m_l=0.0000 (m=0.0100): Sigma_light +0.0023033038  Hess +1.2374342e-03  dSigma/dt +0.0000e+00 ; per sigma: +0.230330, +1.237434e-01, +0.000000e+00
+  Eg light block: sigma=0.0100 m_l=0.0005 (m=0.0105): Sigma_light +0.0025510097  Hess +1.2429173e-03  dSigma/dt +0.0000e+00 ; per sigma: +0.255101, +1.242917e-01, +0.000000e+00
+  Eg light block: sigma=0.0050 m_l=0.0000 (m=0.0050): Sigma_light +0.0011517909  Hess +6.1898587e-04  dSigma/dt +0.0000e+00 ; per sigma: +0.230358, +1.237972e-01, +0.000000e+00
+  tet light block: sigma=0.0100 m_l=0.0000 (m=0.0100): Sigma_light +0.0023033038  Hess +3.8000493e-04  dSigma/dt +4.5410e-04 ; per sigma: +0.230330, +3.800049e-02, +4.541037e-02
+  tet light block: sigma=0.0100 m_l=0.0005 (m=0.0105): Sigma_light +0.0025510097  Hess +3.8551677e-04  dSigma/dt +4.5410e-04 ; per sigma: +0.255101, +3.855168e-02, +4.540994e-02
+  tet light block: sigma=0.0050 m_l=0.0000 (m=0.0050): Sigma_light +0.0011517909  Hess +1.9012855e-04  dSigma/dt +2.2707e-04 ; per sigma: +0.230358, +3.802571e-02, +4.541478e-02
+time 105 s

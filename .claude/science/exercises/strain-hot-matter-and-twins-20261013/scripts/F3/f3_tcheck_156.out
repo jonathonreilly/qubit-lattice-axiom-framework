@@ -1,0 +1,6 @@
+F1 branch B1 + dressing G1, grid n=6 hmax=0.25 mph=6 (156 nodes), d = 0.0030; L_G1 = -8.5858297300e-01 (t = 0 response, same grid)
+   evenness at a = 0: dm(+d) - dm(-d) = 0.0e+00
+   a = +0.00000000: Hess_t (d) +2.4237579e-02 (2d) +2.4234654e-02 Rich +2.4238554e-02 ; predicted Hess(0) + 2 a L = +2.4238554e-02 ; diff 0.0e+00  (43s)
+   a = +0.01411544: Hess_t (d) -9.7672487e-07 (2d) -3.9068960e-06 Rich -1.1564823e-12 ; predicted Hess(0) + 2 a L = +0.0000000e+00 ; diff -1.2e-12  (29s)
+   a = -0.05000000: Hess_t (d) +1.1009587e-01 (2d) +1.1009293e-01 Rich +1.1009685e-01 ; predicted Hess(0) + 2 a L = +1.1009685e-01 ; diff 6.9e-12  (29s)
+time 104 s

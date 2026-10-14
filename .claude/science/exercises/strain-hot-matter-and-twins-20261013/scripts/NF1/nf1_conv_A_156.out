@@ -1,0 +1,10 @@
+NF-1 part A; grid n=6 hmax=0.25 mph=6 (156 nodes), d=0.0030; staggered edge s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  staggered t=+0.0000: dm +0.000e+00 (tadpole +0.0e+00, exchange +0.0e+00)
+  staggered t=+0.0030: dm +0.000e+00 (tadpole +0.0e+00, exchange +0.0e+00)
+  staggered t=+0.0060: dm +0.000e+00 (tadpole +0.0e+00, exchange +0.0e+00)
+  staggered t=-0.0030: dm +0.000e+00 (tadpole +0.0e+00, exchange +0.0e+00)
+  staggered t=+0.0500: dm +0.000e+00 (tadpole +0.0e+00, exchange +0.0e+00)
+  staggered t=+0.2000: dm +0.000e+00 (tadpole +0.0e+00, exchange +0.0e+00)
+  staggered Hess_t: (d) +0.000e+00 (2d) +0.000e+00 Rich +0.000e+00   [reference: F1 Wilson root +2.42401e-2]
+  check: Wilson root D1(0.909103708, 0.555604226) on this grid: dm +0.041858391 Hess_t Rich +2.4238554e-02 (F1 B1: +0.041858390, +2.4240e-2)
+time 27 s

@@ -1,0 +1,5 @@
+NANOGrav 15-yr: A = 2.40e-15, gamma = 4.3333. per-component variance sigma^2, <Q_E> = 2 sigma^2/2 = sigma^2
+  f_min = 1/(16 yr), T_obs =  5.0 yr: sigma_a = 8.346e-15 (rms h_ij h_ij = 1.866e-14); LS slope rms of Q_E = 2.074e-29 /yr; rms dQ/dt (f < 1/T_obs) = 5.920e-29 /yr
+  f_min = 1/(16 yr), T_obs = 10.0 yr: sigma_a = 8.346e-15 (rms h_ij h_ij = 1.866e-14); LS slope rms of Q_E = 7.670e-30 /yr; rms dQ/dt (f < 1/T_obs) = 3.321e-29 /yr
+  f_min = 1/(30 yr), T_obs =  5.0 yr: sigma_a = 1.269e-14 (rms h_ij h_ij = 2.838e-14); LS slope rms of Q_E = 5.608e-29 /yr; rms dQ/dt (f < 1/T_obs) = 1.023e-28 /yr
+  f_min = 1/(30 yr), T_obs = 10.0 yr: sigma_a = 1.269e-14 (rms h_ij h_ij = 2.838e-14); LS slope rms of Q_E = 2.310e-29 /yr; rms dQ/dt (f < 1/T_obs) = 7.010e-29 /yr

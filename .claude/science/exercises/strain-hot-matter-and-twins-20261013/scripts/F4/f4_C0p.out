@@ -1,0 +1,21 @@
+[C0p] root (0.915438682, 0.568280847), grid n=4 hmax=0.25 mph=6 fracbreaks=(1, 2, 4) (116 nodes), d=0.0030, nrk=2, Ms=(1, 2, 4)
+  pass t=0.0000 done (4s)
+  pass t=0.0030 done (66s)
+  pass t=0.0060 done (66s)
+  P (Psym, F1)           dm +0.042294397521  Hess_t (d) +2.45363465e-02 (2d) +2.45334094e-02  Rich +2.45373255e-02  [x4 +9.814930e-02]
+  J (Psym-J)             dm +0.042294397521  Hess_t (d) +2.46383156e-02 (2d) +2.46353479e-02  Rich +2.46393048e-02  [x4 +9.855722e-02]
+  S2 (staircase M=2)     dm +0.042294397521  Hess_t (d) +2.52914438e-02 (2d) +2.52885026e-02  Rich +2.52924243e-02  [x4 +1.011697e-01]
+  S4 (staircase M=4)     dm +0.042294397521  Hess_t (d) +2.57383899e-02 (2d) +2.57354718e-02  Rich +2.57393626e-02  [x4 +1.029575e-01]
+  differences from P (Rich):
+    J (Psym-J)              H - H_P = +1.019793e-04   rel +4.1561e-03
+    S2 (staircase M=2)      H - H_P = +7.550988e-04   rel +3.0773e-02
+    S4 (staircase M=4)      H - H_P = +1.202037e-03   rel +4.8988e-02
+    parts P    Hess tadpole +1.827172e-02  exchange(fam) +2.715947e-03
+    parts J    Hess tadpole +1.837370e-02  exchange(fam) +2.715947e-03
+    parts S2   Hess tadpole +1.910931e-02  exchange(fam) +2.633461e-03
+    parts S4   Hess tadpole +1.945354e-02  exchange(fam) +2.736164e-03
+    common exchange base part Hess +3.549656e-03
+  SL (M->inf, c/M^2 fit on M=2,4): Hess +2.58883420e-02  H - H_P +1.351017e-03 rel +5.5060e-02  (c = -2.384e-03)
+  mixture P<->S4: H(lam) = +2.453733e-02 +1.206561e-03 lam -4.524135e-06 lam^2 ; zeros at lam = [285.67946078 -18.98509125]
+  mixture P<->J (seagull only, exactly linear): H(lam) = +2.453733e-02 +1.019793e-04 lam ; zero at lam = -2.4061e+02
+[C0p] total 136 s

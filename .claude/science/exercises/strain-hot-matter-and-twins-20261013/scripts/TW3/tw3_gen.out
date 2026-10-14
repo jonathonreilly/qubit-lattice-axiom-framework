@@ -1,0 +1,5 @@
+H_K1          : Theta residual 0.00e+00   P_stag residual 0.00e+00
+H_K0          : Theta residual 0.00e+00   P_stag residual 2.00e+00
+I (onsite)    : Theta residual 2.00e+00   P_stag residual 0.00e+00
+M_W           : Theta residual 6.00e+00   P_stag residual 1.00e+00
+H_K1+0.1 M_W  : Theta residual 6.00e-01   P_stag residual 1.00e-01

@@ -1,0 +1,14 @@
+(iii) explicit 4x4 Euclidean gamma matrices, Q0 by quadrature, vs the reduced mass formula (t = 0.3, Psym vertex)
+   point 0: gamma-matrix +1.727498416742e-02  reduced +1.727498416742e-02  diff 0.0e+00   |a_off| = 2.34e-03
+   point 1: gamma-matrix +1.434057240776e-02  reduced +1.434057240776e-02  diff 0.0e+00   |a_off| = 0.00e+00
+   point 2: gamma-matrix +4.809230036223e-04  reduced +4.809230036223e-04  diff 0.0e+00   |a_off| = 0.00e+00
+   point 3: gamma-matrix +1.377718214652e-02  reduced +1.377718214652e-02  diff 1.7e-18   |a_off| = 3.40e-03
+   point 4: gamma-matrix +8.380875387140e-04  reduced +8.380875387140e-04  diff 1.1e-19   |a_off| = 0.00e+00
+(iv') photon Gph(2.9435), reg 1e-3, per vector: e''(0) of <omega o Phi^g_t>  (archived +2.8508917e-2, Laplace 1D-moment form)
+   n=8 hmax=0.15 (232 nodes) d=0.004: (d) +2.861508269e-02  (2d) +2.878288165e-02  Rich +2.855914971e-02
+   n=8 hmax=0.15 (232 nodes) d=0.001: (d) +2.858737647e-02  (2d) +2.859145964e-02  Rich +2.858601541e-02
+   n=8 hmax=0.08 (360 nodes) d=0.004: (d) +2.857878942e-02  (2d) +2.880028747e-02  Rich +2.850495674e-02
+   n=8 hmax=0.08 (360 nodes) d=0.001: (d) +2.850213443e-02  (2d) +2.851802461e-02  Rich +2.849683770e-02
+   n=10 hmax=0.05 (690 nodes) d=0.004: (d) +2.858177614e-02  (2d) +2.879902663e-02  Rich +2.850935931e-02
+   n=10 hmax=0.05 (690 nodes) d=0.001: (d) +2.851335035e-02  (2d) +2.852709102e-02  Rich +2.850877012e-02
+time 60 s

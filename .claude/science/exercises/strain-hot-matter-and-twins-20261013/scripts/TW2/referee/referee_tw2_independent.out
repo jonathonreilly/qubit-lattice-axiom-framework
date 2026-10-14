@@ -1,0 +1,10 @@
+command: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /usr/bin/time -l python3 referee_tw2_independent.py 8 10
+order=8 nodes=160 sumw=1.0000000000000000 A'=-7.574007779e-09 B'=-4.541612114e-02 leak'=+4.541611357e-02 A''=+1.151068337e-02 B''tet=-2.672429641e-02 leak''tet=+3.823497978e-02 B''Eg=-1.126074275e-01 leak''Eg=+1.241181108e-01 B'long=-2.636085698e-03 leak'long=+2.636078124e-03 B''long=+4.022906591e-03 leak''long=+7.487776781e-03
+order=10 nodes=200 sumw=1.0000000000000000 A'=+3.774651887e-09 B'=-4.541593639e-02 leak'=+4.541594017e-02 A''=+1.139152089e-02 B''tet=-2.662078978e-02 leak''tet=+3.801231066e-02 B''Eg=-1.123902138e-01 leak''Eg=+1.237817347e-01 B'long=-2.635794877e-03 leak'long=+2.635798652e-03 B''long=+4.160576902e-03 leak''long=+7.230943983e-03
+sizes sigma_e/Mp=4.306244e-21 W_N=15.918997 GeV
+sizes hessian mu_rho=1.241511e-39 Earth_ratio=8.276740e-11 clock_ratios=4.630253e-14,6.175683e-13
+sizes dln_e/dt=+0.467264 dln_p/dt=+0.308207 net=-0.159057
+sizes clock ratios for supplied slope endpoints=4.693,17.814
+sizes component ratios at conservative slope: electron=13.785 proton=9.093
+sizes long-symbol clock ratios=0.272,1.034
+elapsed=13.73 s; maximum resident set size=186990592 bytes; peak memory footprint=66470704 bytes

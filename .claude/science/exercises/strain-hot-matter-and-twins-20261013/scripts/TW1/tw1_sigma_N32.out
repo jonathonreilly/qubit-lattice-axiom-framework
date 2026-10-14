@@ -1,0 +1,41 @@
+J check: J^2 = -1 0.0e+00 ; commute with G4 0.0e+00 ; (cf. tw1_alg.out: same Z_j from position space)
+control B: folding |H(k+pi m) - P_m H(k) P_m| 1.3e-15 ; Majorana-legal |H(-k) + H(k)^T| 4.4e-16 ; {M, Geps} 2.0e+00 ; [M, Geps] 0.0e+00 ; {M, G_j} 0.0e+00
+control C: folding |H(k+pi m) - P_m H(k) P_m| 3.1e-15 ; Majorana-legal |H(-k) + H(k)^T| 4.4e-16 ; {M, Geps} 0.0e+00 ; [M, Geps] 2.0e+00 ; {M, G_j} 0.0e+00
+reduced law, strained t=0.3: Majorana-legal |H(-k) + H(k)^T| 4.4e-16
+TW-1 one-loop Sigma(P = 0) of the reduced staggered field, full-BZ midpoint N = 32; per e^2 C_F
+ A: reduced law under SF strain (E_g)
+  A t=+0.00              max|Sigma| 4.28e-18 | Majorana-legal (antisym) 3.25e-19 | illegal (sym) 3.96e-18 | top mass comps: iGeJ23 +0.000000e+00, iGeJ13 +0.000000e+00
+  A t=+0.10              max|Sigma| 6.21e-18 | Majorana-legal (antisym) 5.42e-18 | illegal (sym) 5.12e-18 | top mass comps: iGeJ23 +0.000000e+00, iGeJ13 +0.000000e+00
+  A t=-0.10              max|Sigma| 3.52e-18 | Majorana-legal (antisym) 1.30e-18 | illegal (sym) 3.52e-18 | top mass comps: iGeJ23 +0.000000e+00, iGeJ13 +0.000000e+00
+  A t=+0.20              max|Sigma| 2.01e-18 | Majorana-legal (antisym) 3.79e-19 | illegal (sym) 2.01e-18 | top mass comps: iGeJ23 +0.000000e+00, iGeJ13 +0.000000e+00
+ B: control (Theta_M-breaking, P_stag-keeping)
+  B rc=0.1 t=+0.00       max|Sigma| 2.36e-02 | Majorana-legal (antisym) 2.36e-02 | illegal (sym) 4.96e-18 | top mass comps: iGeJ12 +2.355763e-02, iGeJ13 -1.129343e-19
+  B rc=0.1 t=+0.05       max|Sigma| 2.36e-02 | Majorana-legal (antisym) 2.36e-02 | illegal (sym) 5.75e-18 | top mass comps: iGeJ12 +2.355503e-02, iGeJ13 +2.070795e-19
+  B rc=0.1 t=-0.05       max|Sigma| 2.36e-02 | Majorana-legal (antisym) 2.36e-02 | illegal (sym) 2.24e-18 | top mass comps: iGeJ12 +2.355503e-02, iGeJ13 +2.964402e-19
+  B rc=0.1 t=+0.10       max|Sigma| 2.35e-02 | Majorana-legal (antisym) 2.35e-02 | illegal (sym) 4.36e-18 | top mass comps: iGeJ12 +2.354496e-02, iGeJ13 +8.769672e-20
+  B rc=0.1 t=-0.10       max|Sigma| 2.35e-02 | Majorana-legal (antisym) 2.35e-02 | illegal (sym) 3.37e-18 | top mass comps: iGeJ12 +2.354496e-02, iGeJ13 +3.397995e-19
+  B rc=0.1 t=+0.20       max|Sigma| 2.35e-02 | Majorana-legal (antisym) 2.35e-02 | illegal (sym) 6.80e-18 | top mass comps: iGeJ12 +2.350051e-02, iGeJ23 +5.159001e-20
+   B rc=0.1: dm(0) = +2.355763e-02 ; Hess_t central d=0.05 -2.0815e-03, d=0.1 -2.5342e-03, Richardson -1.9306e-03 ; odd part (t=+-0.1) -1.4e-17
+  B rc=0.3 t=+0.00       max|Sigma| 7.05e-02 | Majorana-legal (antisym) 7.05e-02 | illegal (sym) 2.07e-18 | top mass comps: iGeJ12 +7.049269e-02, iGeJ13 -3.909365e-19
+  B rc=0.3 t=+0.05       max|Sigma| 7.05e-02 | Majorana-legal (antisym) 7.05e-02 | illegal (sym) 2.95e-18 | top mass comps: iGeJ12 +7.048479e-02, iGeJ13 -1.618420e-19
+  B rc=0.3 t=-0.05       max|Sigma| 7.05e-02 | Majorana-legal (antisym) 7.05e-02 | illegal (sym) 3.36e-18 | top mass comps: iGeJ12 +7.048479e-02, iG5J12 -7.154219e-20
+  B rc=0.3 t=+0.10       max|Sigma| 7.05e-02 | Majorana-legal (antisym) 7.05e-02 | illegal (sym) 6.18e-18 | top mass comps: iGeJ12 +7.045425e-02, iG5J13 -1.888943e-20
+  B rc=0.3 t=-0.10       max|Sigma| 7.05e-02 | Majorana-legal (antisym) 7.05e-02 | illegal (sym) 3.63e-18 | top mass comps: iGeJ12 +7.045425e-02, iGeJ13 -8.304708e-20
+  B rc=0.3 t=+0.20       max|Sigma| 7.03e-02 | Majorana-legal (antisym) 7.03e-02 | illegal (sym) 6.64e-18 | top mass comps: iGeJ12 +7.031947e-02, iG5J12 +1.081564e-19
+   B rc=0.3: dm(0) = +7.049269e-02 ; Hess_t central d=0.05 -6.3204e-03, d=0.1 -7.6891e-03, Richardson -5.8641e-03 ; odd part (t=+-0.1) +2.8e-17
+ C: control (Theta_M-keeping, P_stag-breaking)
+  C rc=0.1 t=+0.00       max|Sigma| 2.88e-02 | Majorana-legal (antisym) 2.88e-02 | illegal (sym) 2.87e-18 | top mass comps: iG5J12 +2.883109e-02, iG5J13 -1.518519e-19
+  C rc=0.1 t=+0.05       max|Sigma| 2.88e-02 | Majorana-legal (antisym) 2.88e-02 | illegal (sym) 6.17e-18 | top mass comps: iG5J12 +2.883004e-02, iGeJ23 -1.797279e-19
+  C rc=0.1 t=-0.05       max|Sigma| 2.88e-02 | Majorana-legal (antisym) 2.88e-02 | illegal (sym) 5.22e-18 | top mass comps: iG5J12 +2.883004e-02, iG5J13 +6.981628e-20
+  C rc=0.1 t=+0.10       max|Sigma| 2.88e-02 | Majorana-legal (antisym) 2.88e-02 | illegal (sym) 4.25e-18 | top mass comps: iG5J12 +2.882361e-02, iG5J13 +1.507574e-19
+  C rc=0.1 t=-0.10       max|Sigma| 2.88e-02 | Majorana-legal (antisym) 2.88e-02 | illegal (sym) 5.38e-18 | top mass comps: iG5J12 +2.882361e-02, iGeJ13 +8.084904e-20
+  C rc=0.1 t=+0.20       max|Sigma| 2.88e-02 | Majorana-legal (antisym) 2.88e-02 | illegal (sym) 5.64e-18 | top mass comps: iG5J12 +2.879363e-02, iG5J23 +6.764299e-20
+   C rc=0.1: dm(0) = +2.883109e-02 ; Hess_t central d=0.05 -8.4403e-04, d=0.1 -1.4964e-03, Richardson -6.2657e-04 ; odd part (t=+-0.1) +3.5e-18
+  C rc=0.3 t=+0.00       max|Sigma| 8.61e-02 | Majorana-legal (antisym) 8.61e-02 | illegal (sym) 6.94e-18 | top mass comps: iG5J12 +8.611867e-02, iGeJ13 +4.685406e-20
+  C rc=0.3 t=+0.05       max|Sigma| 8.61e-02 | Majorana-legal (antisym) 8.61e-02 | illegal (sym) 5.75e-18 | top mass comps: iG5J12 +8.611396e-02, iGeJ23 -1.662205e-19
+  C rc=0.3 t=-0.05       max|Sigma| 8.61e-02 | Majorana-legal (antisym) 8.61e-02 | illegal (sym) 6.98e-18 | top mass comps: iG5J12 +8.611396e-02, iGeJ12 -9.161756e-20
+  C rc=0.3 t=+0.10       max|Sigma| 8.61e-02 | Majorana-legal (antisym) 8.61e-02 | illegal (sym) 6.94e-18 | top mass comps: iG5J12 +8.609010e-02, iG5J13 -6.619144e-19
+  C rc=0.3 t=-0.10       max|Sigma| 8.61e-02 | Majorana-legal (antisym) 8.61e-02 | illegal (sym) 4.65e-18 | top mass comps: iG5J12 +8.609010e-02, iG5J13 -1.398580e-19
+  C rc=0.3 t=+0.20       max|Sigma| 8.60e-02 | Majorana-legal (antisym) 8.60e-02 | illegal (sym) 4.12e-18 | top mass comps: iG5J12 +8.598192e-02, iGeJ23 +1.468370e-19
+   C rc=0.3: dm(0) = +8.611867e-02 ; Hess_t central d=0.05 -3.7660e-03, d=0.1 -5.7139e-03, Richardson -3.1168e-03 ; odd part (t=+-0.1) -2.8e-17
+time 9 s

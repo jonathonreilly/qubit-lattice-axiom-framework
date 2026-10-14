@@ -1,0 +1,18 @@
+(i) t = 0: dm/e^2 (R19-34: +0.041858390 at n=8; +0.041858396 at n=6)
+   Psym: +0.041858396
+   order xyz: +0.041858396
+   order zxy: +0.041858396
+(ii) Ward identity / evenness at t = 0.3 on random points
+   max |sum_j d_j V_j - (D(q) - D(0))| = 4.44e-16  (scale 1.39e+00)
+   oddness of c and evenness of M under q -> -q: max dev 8.88e-16
+   off-diagonal vertex size: max |a_xy| = 4.481e-03, max |a_xx - s-separable| shows non-separability
+(iii) explicit gamma-matrix check of the reduced formula (general vertex), 5 random points
+   point 0: gamma-matrix +2.054632246706e-02  reduced +2.054632246706e-02  diff 0.0e+00
+   point 1: gamma-matrix +2.381554659639e-02  reduced +2.381554659639e-02  diff 3.5e-18
+   point 2: gamma-matrix +5.649591574573e-02  reduced +5.649591574573e-02  diff -1.4e-17
+   point 3: gamma-matrix +3.802895158302e-02  reduced +3.802895158302e-02  diff 0.0e+00
+   point 4: gamma-matrix +6.649550337311e-03  reduced +6.649550337311e-03  diff 8.7e-19
+(iv) free-band SF Hessians by integrating the flow (Lemma H), against the archived shear rows
+   Dirac D1 root, m = 0.01: e''(0) = -1.7102395e-02 (d) -1.7094063e-02 (Rich)   archived mu_E = -1.709412e-2 (dfam / rR19-35 3.1)
+   photon Gph(2.9435), reg 1e-3: e''(0) = +3.0268872e-02 (d) +2.8697661e-02 (Rich)   archived +2.8508917e-2 (rR19-35 3.1)
+time 284 s

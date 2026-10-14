@@ -1,0 +1,10 @@
+2. odd-harmonic: max|s(k+pi) + s(k)| = 7.8e-15
+   t=+0.1 sgn=+1: max|phi(k+pi) - phi(k) - pi| = 3.1e-15 ; max|phi(-k) + phi(k)| = 8.9e-16 ; max|s_t(k+pi) + s_t(k)| = 9.3e-15
+   t=+0.1 sgn=-1: max|phi(k+pi) - phi(k) - pi| = 3.1e-15 ; max|phi(-k) + phi(k)| = 6.7e-16 ; max|s_t(k+pi) + s_t(k)| = 8.9e-15
+   t=+0.3 sgn=+1: max|phi(k+pi) - phi(k) - pi| = 3.1e-15 ; max|phi(-k) + phi(k)| = 1.3e-15 ; max|s_t(k+pi) + s_t(k)| = 9.8e-15
+   t=+0.3 sgn=-1: max|phi(k+pi) - phi(k) - pi| = 3.1e-15 ; max|phi(-k) + phi(k)| = 1.1e-15 ; max|s_t(k+pi) + s_t(k)| = 8.7e-15
+   t=-0.3 sgn=+1: max|phi(k+pi) - phi(k) - pi| = 3.1e-15 ; max|phi(-k) + phi(k)| = 1.1e-15 ; max|s_t(k+pi) + s_t(k)| = 8.7e-15
+   t=-0.3 sgn=-1: max|phi(k+pi) - phi(k) - pi| = 3.1e-15 ; max|phi(-k) + phi(k)| = 1.3e-15 ; max|s_t(k+pi) + s_t(k)| = 9.8e-15
+L=8 t=+0.0 links=False: |P h[A] P^-1 - h[A^P]| = 0.0e+00 ; |{eps, h}| = 0.0e+00
+L=8 t=+0.3 links=False: |P h[A] P^-1 - h[A^P]| = 4.1e-15 ; |{eps, h}| = 4.1e-15
+L=8 t=+0.3 links=True: |P h[A] P^-1 - h[A^P]| = 4.1e-15 ; |{eps, h}| = 4.1e-15

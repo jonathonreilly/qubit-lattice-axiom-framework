@@ -1,0 +1,18 @@
+(C') 3D XY: harmonic W_j and stiffness under stretch J = (1+t, 1-t, 1); grids N = 64, 96
+  t=0.00: W(N96) = 0.333333 0.333333 0.333333  (N64 0.333333 0.333333);  sum_j J_j W_j = 1.000000000000
+  t=0.05: W(N96) = 0.329456 0.337525 0.333422  (N64 0.329456 0.337525);  sum_j J_j W_j = 1.000000000000
+  t=0.10: W(N96) = 0.325868 0.342061 0.333690  (N64 0.325869 0.342060);  sum_j J_j W_j = 1.000000000000
+  t=0.20: W(N96) = 0.319483 0.352309 0.334773  (N64 0.319484 0.352308);  sum_j J_j W_j = 1.000000000000
+  self-consistent harmonic stiffness at T = 0.5 (isotropic 3D XY T_c ~ 2.2, RECALLED):
+  t=0.00: rho = 0.912744 0.912744 0.912744;  ln(rho_x/rho_y) = +0.000000 vs ln(J_x/J_y) = +0.000000;  quadratic form at q=0: 0.0 (identically 0)
+  t=0.05: rho = 0.959422 0.866089 0.912720;  ln(rho_x/rho_y) = +0.102344 vs ln(J_x/J_y) = +0.100083;  quadratic form at q=0: 0.0 (identically 0)
+  t=0.10: rho = 1.006117 0.819461 0.912649;  ln(rho_x/rho_y) = +0.205206 vs ln(J_x/J_y) = +0.200671;  quadratic form at q=0: 0.0 (identically 0)
+  t=0.20: rho = 1.099538 0.726315 0.912359;  ln(rho_x/rho_y) = +0.414663 vs ln(J_x/J_y) = +0.405465;  quadratic form at q=0: 0.0 (identically 0)
+  metric seen by this Goldstone under coupling stretch (1+t,1-t): ln(v_x/v_y) = (1/2) ln(rho_x/rho_y) ~ t at T->0
+  compare 2D Ising at Kc, same coupling stretch K(1+t),K(1-t): ln(xi_x/xi_y) ~ 2Kc coth(2Kc) t = 1.246450 t
+
+(D) honeycomb band energy E(u) = -2<|f|> per cell, d2E/du2 at u=0 (bond strain (1+2u,1-u,1-u))
+  E(0) = -3.149194475104  (comparator: -2 x 1.5746 = -3.1492 per cell, RECALLED)
+  h=0.02: d2E/du2 = -6.689806   (E(+h)-E(-h))/2h = -8.140e-04
+  h=0.01: d2E/du2 = -6.688714   (E(+h)-E(-h))/2h = -2.035e-04
+  h=0.005: d2E/du2 = -6.688442   (E(+h)-E(-h))/2h = -5.086e-05

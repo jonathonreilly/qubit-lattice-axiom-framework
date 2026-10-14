@@ -1,0 +1,10 @@
+(i) max |V^sigma(q,0) - V^{sigma rev}(0,q)| over M=1,2,3, all sigma, j, 400 pts: 8.09e-15
+(ii) staircase -> straight line (max over 400 pts, j, components):
+     ward residual of SL vertex: 1.69e-09
+     M= 1  max|V_M - V_SL| 2.340e-03   max|N_M - N_SL| 1.686e-02
+     M= 2  max|V_M - V_SL| 2.337e-03   max|N_M - N_SL| 1.407e-02   ratios 1.00 1.20
+     M= 4  max|V_M - V_SL| 1.441e-03   max|N_M - N_SL| 9.693e-03   ratios 1.62 1.45
+     M= 8  max|V_M - V_SL| 3.383e-04   max|N_M - N_SL| 2.831e-03   ratios 4.26 3.42
+     M=16  max|V_M - V_SL| 9.993e-05   max|N_M - N_SL| 7.636e-04   ratios 3.39 3.71
+     M=32  max|V_M - V_SL| 2.546e-05   max|N_M - N_SL| 1.950e-04   ratios 3.93 3.92
+     typical sizes: max|V_SL| 1.000  max|N_SL| 0.372 ; non-separable part of V (max|V_SL - V_1|) 2.340e-03

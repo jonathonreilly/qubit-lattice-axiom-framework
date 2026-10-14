@@ -1,0 +1,25 @@
+[SL88] root (0.909103708, 0.555604226), grid n=4 hmax=0.50 mph=2 fracbreaks=(1, 8) (88 nodes), d=0.0030, nrk=2, Ms=(1, 8, 16, 32)
+  pass t=0.0000 done (13s)
+  pass t=0.0030 done (220s)
+  pass t=0.0060 done (232s)
+  P (Psym, F1)           dm +0.041858200732  Hess_t (d) +2.42614446e-02 (2d) +2.42585804e-02  Rich +2.42623994e-02  [x4 +9.704960e-02]
+  J (Psym-J)             dm +0.041858200732  Hess_t (d) +2.43530382e-02 (2d) +2.43501528e-02  Rich +2.43540000e-02  [x4 +9.741600e-02]
+  S8 (staircase M=8)     dm +0.041858200732  Hess_t (d) +2.56303046e-02 (2d) +2.56274570e-02  Rich +2.56312538e-02  [x4 +1.025250e-01]
+  S16 (staircase M=16)   dm +0.041858200732  Hess_t (d) +2.58793505e-02 (2d) +2.58764864e-02  Rich +2.58803051e-02  [x4 +1.035212e-01]
+  S32 (staircase M=32)   dm +0.041858200733  Hess_t (d) +2.59233522e-02 (2d) +2.59204984e-02  Rich +2.59243035e-02  [x4 +1.036972e-01]
+  differences from P (Rich):
+    J (Psym-J)              H - H_P = +9.160064e-05   rel +3.7754e-03
+    S8 (staircase M=8)      H - H_P = +1.368854e-03   rel +5.6419e-02
+    S16 (staircase M=16)    H - H_P = +1.617906e-03   rel +6.6684e-02
+    S32 (staircase M=32)    H - H_P = +1.661904e-03   rel +6.8497e-02
+    parts P    Hess tadpole +1.802955e-02  exchange(fam) +2.719508e-03
+    parts J    Hess tadpole +1.812115e-02  exchange(fam) +2.719508e-03
+    parts S8   Hess tadpole +1.936574e-02  exchange(fam) +2.752172e-03
+    parts S16  Hess tadpole +1.960816e-02  exchange(fam) +2.758796e-03
+    parts S32  Hess tadpole +1.965105e-02  exchange(fam) +2.759911e-03
+    common exchange base part Hess +3.513346e-03
+  SL (M->inf, c/M^2 fit on M=16,32): Hess +2.59389696e-02  H - H_P +1.676570e-03 rel +6.9102e-02  (c = -1.502e-02)
+     (fit on M=8,16: +2.59633223e-02)
+  mixture P<->S32: H(lam) = +2.426240e-02 +1.671583e-03 lam -9.679008e-06 lam^2 ; zeros at lam = [186.16673512 -13.46482857]
+  mixture P<->J (seagull only, exactly linear): H(lam) = +2.426240e-02 +9.160064e-05 lam ; zero at lam = -2.6487e+02
+[SL88] total 465 s

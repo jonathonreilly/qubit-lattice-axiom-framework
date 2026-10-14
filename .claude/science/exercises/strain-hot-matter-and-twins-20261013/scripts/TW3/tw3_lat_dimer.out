@@ -1,0 +1,58 @@
+cluster dimer: sites 2, eps [1, -1], bonds [(0, 1, 'x', 1)], light Majoranas/site 0, qubits 8, dim 256
+  u=0.0: one-flavor single-particle levels of iA: [-1.  1.]
+  u=0.1: one-flavor single-particle levels of iA: [-1.1  1.1]
+
+ W      u      E0_even      deg   gap_even    gap_odd(1-fermion)   
+ 0.01   +0.00  -8.0007216149  1   3.9402716402   2.0003663010   Theta-res nan
+ 0.01   +0.02  -8.1607070382  1   4.0202658856   2.0403587946   Theta-res nan
+ 0.01   -0.02  -7.8407368053  1   3.8602776485   1.9603741280   Theta-res nan
+ 0.01   +0.05  -8.4006862448  1   4.1402576953   2.1003480944   Theta-res nan
+ 0.03   +0.00  -8.0069194928  1   3.8228715410   2.0036224863   Theta-res nan
+ 0.03   +0.02  -8.1667708410  1   3.9028021829   2.0435414088   Theta-res nan
+ 0.03   -0.02  -7.8470748142  1   3.7429443373   1.9637073463   Theta-res nan
+ 0.03   +0.05  -8.4065594589  1   4.0227040855   2.1034263515   Theta-res nan
+ 0.1    +0.00  -8.0988685982  1   3.4541189149   2.0579384914   Theta-res nan
+ 0.1    +0.02  -8.2561856714  1   3.5323040048   2.0961856714   Theta-res nan
+ 0.1    -0.02  -7.9417031823  1   3.3760506509   2.0197989600   Theta-res nan
+ 0.1    +0.05  -8.4924203829  1   3.6497796958   2.1537393032   Theta-res 0.0e+00
+ 0.3    +0.00  -10.0000000000  1   3.8136575601   3.4870680067   Theta-res nan
+ 0.3    +0.02  -10.0889714039  1   3.8295544017   3.4707705472   Theta-res nan
+ 0.3    -0.02  -9.9139846769  1   3.8004710279   3.5055134198   Theta-res nan
+ 0.3    +0.05  -10.2278700083  1   3.8584061447   3.4503710943   Theta-res nan
+ 1.0    +0.00  -28.3011205311  1   15.0900179802   12.9874120321   Theta-res nan
+ 1.0    +0.02  -28.3139533764  1   15.0581694766   12.9694727119   Theta-res nan
+ 1.0    -0.02  -28.2885934865  1   15.1215578371   13.0055334049   Theta-res nan
+ 1.0    +0.05  -28.3337833556  1   15.0098499862   12.9429174178   Theta-res nan
+ 3.0    +0.00  -84.0957934216  1   47.6567045070   40.9664734891   Theta-res nan
+ 3.0    +0.02  -84.0996869017  1   47.6430783292   40.9454522186   Theta-res nan
+ 3.0    -0.02  -84.0919788116  1   47.6700788010   40.9874928567   Theta-res nan
+ 3.0    +0.05  -84.1056752429  1   47.6221690820   40.9139182456   Theta-res nan
+ 10.0   +0.00  -280.0285863750  1   159.8954008615   138.9864284068   Theta-res nan
+ 10.0   +0.02  -280.0297418929  1   159.8911818836   138.9659128596   Theta-res nan
+ 10.0   -0.02  -280.0274537859  1   159.8995368088   139.0069355904   Theta-res nan
+ 10.0   +0.05  -280.0315181680  1   159.8846978032   138.9351240154   Theta-res 0.0e+00
+
+ strain response at u=0 (finite difference, h=0.02 symmetric; check with 0.05 one-sided):
+ W       Delta_odd(0)   d2_u Delta_odd   d2_u ln Delta_odd   d2_u Delta_even  d2_u ln Delta_even
+ 0.01    2.00036630    +8.015861e-04    +4.007196e-04      +6.341028e-04   +1.609287e-04
+ 0.03    2.00362249    +9.456358e-03    +4.719631e-03      +8.595339e-03   +2.248399e-03
+ 0.1     2.05793849    +2.691216e-01    +1.307724e-01      +2.920644e-01   +8.455541e-02
+ 0.3     3.48706801    +5.369884e+00    +1.539942e+00      +6.775773e+00   +1.776713e+00
+ 1.0     12.98741203    +4.551313e-01    +3.504403e-02      -7.716165e-01   -5.113424e-02
+ 3.0     40.96647349    -4.757107e-03    -1.161220e-04      -6.297096e-01   -1.321345e-02
+ 10.0    138.98642841    -2.090931e-02    -1.504414e-04      -2.075763e-01   -1.298200e-03
+
+ mass channel G(i w=0): max |same-sublattice entries| (Theta forces 0), max |A-B entries|
+  W=0.1   u=+0.00: same-sublattice max|G(0)| = 2.43e-16;  A-B max|G(0)| = 9.597e-01;  max onsite |<i g_a g_b>| = 2.7e-16
+  W=0.1   u=+0.05: same-sublattice max|G(0)| = 5.65e-16;  A-B max|G(0)| = 9.186e-01;  max onsite |<i g_a g_b>| = 6.5e-16
+  W=1.0   u=+0.00: same-sublattice max|G(0)| = 7.05e-17;  A-B max|G(0)| = 2.382e-03;  max onsite |<i g_a g_b>| = 6.7e-16
+  W=1.0   u=+0.05: same-sublattice max|G(0)| = 4.23e-17;  A-B max|G(0)| = 2.772e-03;  max onsite |<i g_a g_b>| = 2.4e-16
+  W=10.0  u=+0.00: same-sublattice max|G(0)| = 1.30e-17;  A-B max|G(0)| = 2.261e-07;  max onsite |<i g_a g_b>| = 9.1e-16
+  W=10.0  u=+0.05: same-sublattice max|G(0)| = 1.36e-17;  A-B max|G(0)| = 2.617e-07;  max onsite |<i g_a g_b>| = 9.5e-16
+
+ control: + m * i gamma_0(0) gamma_1(0) (Theta- and Spin(7)-breaking), W=1:
+  u=+0.00 m=1e-03: same-sublattice max|G(0)| = 2.8369e-05 at Majoranas (np.int64(2), np.int64(3))
+  u=+0.00 m=1e-02: same-sublattice max|G(0)| = 2.8369e-04 at Majoranas (np.int64(6), np.int64(7))
+  u=+0.05 m=1e-03: same-sublattice max|G(0)| = 2.8392e-05 at Majoranas (np.int64(2), np.int64(3))
+  u=+0.05 m=1e-02: same-sublattice max|G(0)| = 2.8392e-04 at Majoranas (np.int64(4), np.int64(5))
+time 0.1s

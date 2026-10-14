@@ -1,0 +1,23 @@
+W(pi) = 0.355204 /a  -> corner (doubler) masses m + n*W(pi), n=1..3: [0.3552, 0.7104, 1.0656]
+hop range r=   1: |s_r| = 6.217e-01   |W_r| = 1.103e-01
+hop range r=   2: |s_r| = 1.433e-16   |W_r| = 2.576e-12
+hop range r=   4: |s_r| = 5.675e-17   |W_r| = 7.954e-13
+hop range r=   8: |s_r| = 2.280e-16   |W_r| = 6.439e-13
+hop range r=  16: |s_r| = 3.544e-17   |W_r| = 1.994e-13
+hop range r=  32: |s_r| = 4.445e-17   |W_r| = 1.610e-13
+hop range r=  64: |s_r| = 1.090e-17   |W_r| = 4.918e-14
+hop range r= 128: |s_r| = 5.833e-18   |W_r| = 3.947e-14
+1/a = 1.221e+19 GeV
+QED additive mass on root edge: 0.04186 e^2/a = 3.838e-03/a = 4.69e+16 GeV = 9.2e+19 m_e
+electron          : reduced Compton 3.86e-13 m = 2.4e+22 sites; m*a = 4.2e-23
+u quark (2.2 MeV) : reduced Compton 8.97e-14 m = 5.5e+21 sites; m*a = 1.8e-22
+nucleon           : reduced Compton 2.10e-16 m = 1.3e+19 sites; m*a = 7.7e-20
+top               : reduced Compton 1.14e-18 m = 7.1e+16 sites; m*a = 1.4e-17
+proton charge radius 0.84 fm = 5.2e+19 sites
+uncancelled per-fermion mass shift at strain 1e-21: 1.36e-17 eV
+uncancelled per-fermion mass shift at strain 1e-09: 1.36e+07 eV
+m_g=3.6e-9 eV: cutoff frequency 8.70e+05 Hz; decay length 54.8 m; amplitude after 9.3e6 m: exp(-1.70e+05)
+GR medium scale sqrt(4 pi G rho) for rho=5.5e3: 2.15e-03 1/s = 1.4e-18 eV; F2 bound in rock ~2.9e-13 eV
+ratio F1 mu_rho / (4 pi G)-scale per mass: 6.7e+18
+        0.32 real         0.27 user         0.04 sys
+           104775680  maximum resident set size

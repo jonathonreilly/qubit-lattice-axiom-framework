@@ -1,0 +1,43 @@
+1. P_111 == Gamma_eps: True
+1b. dictionary images of the offset permutations P_m (= multiplication by (-1)^{m.x}):
+   m=000: {'1(x)1': (1+0j)}
+   m=100: {'a2.a3.b(x)t1': 0.59922j, 'a2.a3.b(x)t2': (-0-0.338169j), 'a2.a3.b(x)t3': (-0-0.725656j)}
+   m=010: {'a1.a3.b(x)t1': -0.450243j, 'a1.a3.b(x)t2': 0.607133j, 'a1.a3.b(x)t3': (-0-0.654729j)}
+   m=110: {'a1.a2(x)t1': -0.661979j, 'a1.a2(x)t2': (-0-0.719048j), 'a1.a2(x)t3': (-0-0.211548j)}
+   m=001: {'a1.a2.b(x)t1': -0.661979j, 'a1.a2.b(x)t2': (-0-0.719048j), 'a1.a2.b(x)t3': (-0-0.211548j)}
+   m=101: {'a1.a3(x)t1': -0.450243j, 'a1.a3(x)t2': 0.607133j, 'a1.a3(x)t3': -0.654729j}
+   m=011: {'a2.a3(x)t1': 0.59922j, 'a2.a3(x)t2': -0.338169j, 'a2.a3(x)t3': (-0-0.725656j)}
+   m=111: {'b(x)1': (1-0j)}
+2. taste-split MASS family ({M, Gamma_j} = 0, [M, Geps] = 0) by folding class c (symbol sign (-1)^{c.m}):
+   c=000: dim 1 ; M^2 = 1: True ; hermitian True ; dictionary image {'b(x)1': np.complex128(-1+0j)} (resid 2.2e-16)
+   c=100: dim 0
+   c=010: dim 0
+   c=110: dim 1 ; M^2 = 1: True ; hermitian True ; dictionary image {'b(x)t1': np.complex128(0.661979+0j), 'b(x)t2': np.complex128(0.719048+0j), 'b(x)t3': np.complex128(0.211548+0j)} (resid 2.5e-16)
+   c=001: dim 0
+   c=101: dim 1 ; M^2 = 1: True ; hermitian True ; dictionary image {'b(x)t1': np.complex128(0.450243+0j), 'b(x)t2': np.complex128(-0.607133+0j), 'b(x)t3': np.complex128(0.654729-0j)} (resid 1.2e-16)
+   c=011: dim 1 ; M^2 = 1: True ; hermitian True ; dictionary image {'b(x)t1': np.complex128(0.59922+0j), 'b(x)t2': np.complex128(-0.338169-0j), 'b(x)t3': np.complex128(-0.725656-0j)} (resid 1.6e-16)
+   c=111: dim 0
+   minimal symbols: c=000 -> 1 (on-site eps: the singlet mass); c=110 -> cos k1 cos k2; c=011 -> cos k2 cos k3; c=101 -> cos k1 cos k3
+3. twisted (eps-odd) family ({M, Gamma_j} = 0, {M, Geps} = 0):
+   c=000: dim 0
+   c=100: dim 1 ; dictionary image {'a1.a2.a3.b(x)t1': np.complex128(0.59922-0j), 'a1.a2.a3.b(x)t2': np.complex128(-0.338169-0j), 'a1.a2.a3.b(x)t3': np.complex128(-0.725656-0j)}
+   c=010: dim 1 ; dictionary image {'a1.a2.a3.b(x)t1': np.complex128(-0.450243+0j), 'a1.a2.a3.b(x)t2': np.complex128(0.607133+0j), 'a1.a2.a3.b(x)t3': np.complex128(-0.654729+0j)}
+   c=110: dim 0
+   c=001: dim 1 ; dictionary image {'a1.a2.a3.b(x)t1': np.complex128(-0.661979+0j), 'a1.a2.a3.b(x)t2': np.complex128(-0.719048+0j), 'a1.a2.a3.b(x)t3': np.complex128(-0.211548+0j)}
+   c=101: dim 0
+   c=011: dim 0
+   c=111: dim 1 ; dictionary image {'a1.a2.a3.b(x)1': np.complex128(-1+0j)}
+   minimal symbols: c=001 -> cos k3 (NN hop along 3); c=111 -> cos k1 cos k2 cos k3 (body diagonal)
+4. position space L=8: shifts commute with h: 0.0e+00 0.0e+00 0.0e+00
+   O_12: hermitian 5.6e-17 ; hop vectors [(np.int64(-1), np.int64(-1), np.int64(0)), (np.int64(-1), np.int64(1), np.int64(0)), (np.int64(1), np.int64(-1), np.int64(0)), (np.int64(1), np.int64(1), np.int64(0))] ; opposite-sublattice weight 2.2e-17 ; [T_j^2, O] 0.0e+00 ; commutes(0)/anticommutes(-1) with S1,S2,S3: ['+0', '+0', '-1'] ; [eps,O] 4.4e-17 ; {h,O} 5.6e-17
+   O_23: hermitian 5.6e-16 ; hop vectors [(np.int64(0), np.int64(-1), np.int64(-1)), (np.int64(0), np.int64(-1), np.int64(1)), (np.int64(0), np.int64(1), np.int64(-1)), (np.int64(0), np.int64(1), np.int64(1))] ; opposite-sublattice weight 2.2e-17 ; [T_j^2, O] 0.0e+00 ; commutes(0)/anticommutes(-1) with S1,S2,S3: ['-1', '+0', '+0'] ; [eps,O] 4.4e-17 ; {h,O} 7.2e-16
+   O_31: hermitian 2.9e-17 ; hop vectors [(np.int64(-1), np.int64(0), np.int64(-1)), (np.int64(-1), np.int64(0), np.int64(1)), (np.int64(1), np.int64(0), np.int64(-1)), (np.int64(1), np.int64(0), np.int64(1))] ; opposite-sublattice weight 2.2e-17 ; [T_j^2, O] 0.0e+00 ; commutes(0)/anticommutes(-1) with S1,S2,S3: ['+0', '-1', '+0'] ; [eps,O] 4.4e-17 ; {h,O} 2.8e-17
+   h + 0.05 eps + 0.03 O_12: lowest |E| = [0.02     0.02     0.02     0.02     0.08     0.08     0.08     0.08
+ 0.785653 0.785653]  (expect |m - sigma| x4, |m + sigma| x4 at the corners)
+   h + 0.05 eps + 0.05 O_12: lowest |E| = [0.       0.       0.       0.       0.1      0.1      0.1      0.1
+ 0.785398 0.785398]  (expect |m - sigma| x4, |m + sigma| x4 at the corners)
+5. cubic rotations (L = 4), Q: chi(x) -> f(x) chi(R^-1 x), f 2-periodic sign field; Q h Q^dag = h:
+   C4[001]: 1 sign fields found; action: O_12 -> ['+O_12']; O_23 -> ['+O_31']; O_31 -> ['-O_23']; eps -> +eps
+   C2[100]: 1 sign fields found; action: O_12 -> ['-O_12']; O_23 -> ['+O_23']; O_31 -> ['-O_31']; eps -> +eps
+   C2[110]: 1 sign fields found; action: O_12 -> ['-O_12']; O_23 -> ['+O_31']; O_31 -> ['+O_23']; eps -> +eps
+   C3[111]: 1 sign fields found; action: O_12 -> ['-O_23']; O_23 -> ['+O_31']; O_31 -> ['-O_12']; eps -> +eps

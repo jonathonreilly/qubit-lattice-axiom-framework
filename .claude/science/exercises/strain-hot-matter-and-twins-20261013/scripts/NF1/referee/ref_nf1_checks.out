@@ -1,0 +1,9 @@
+Clifford residual: 0.000e+00
+continuous U(1)_eps commutator ratio: 2.000000000000
+combined 64-entry constraint: rank=64, nullity=0
+generic-flow oddness residual: 0.000e+00
+generic-flow pi-shift residual: 8.882e-16
+direct Sigma Eg: max64=2.701e-18, Theta-residual=0.000e+00, P-residual=2.079e-17
+direct Sigma T2g: max64=9.567e-18, Theta-residual=3.056e-17, P-residual=2.731e-17
+direct Sigma A1: max64=2.602e-17, Theta-residual=0.000e+00, P-residual=1.481e-16
+arbitrary c-number opposite-sublattice hopping: Theta residual=0.000e+00, fixed-law P_stag residual=4.088e+00

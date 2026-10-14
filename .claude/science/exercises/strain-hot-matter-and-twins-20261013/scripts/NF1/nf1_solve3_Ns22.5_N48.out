@@ -1,0 +1,8 @@
+photon gammaG_w(0.600, fw=0.50) N=48 per vector: T2g(a) = +1.10334e-02 +1.03528e-01 a -1.52e-05 a^2 ; Eg(a) = +2.55496e-02 +2.38291e-01 a -3.83e-05 a^2 ; mu_E +1.84288e-04  (2s)
+N_s = 22.50 (w_F = 5.6250), scalar fr = 1.00: knobs b_s = 1.770570  b_f = 0.727728  a = -0.106220   (nfev 8)
+  per real scalar   : T2g -5.18142e-04 Eg -2.91265e-04 muE +5.94025e-03
+  per staggered fld : T2g +2.90676e-04 Eg -3.00084e-04 muE -4.61732e-03  muT2 0 (separable band; R18-9 (S1))
+  per vector        : T2g +3.64598e-05 Eg +2.37753e-04 muE +1.84288e-04
+  contributions T2g -2.0726e-03/+1.6351e-03/+4.3752e-04  Eg -1.1651e-03/-1.6880e-03/+2.8530e-03  muE +2.3761e-02/-2.5972e-02/+2.2115e-03
+  TOTAL rows: T2g -1.14e-17  Eg -1.39e-17  muE +8.33e-17  muT2 0 ; Jacobian singular values [3.118e+00 2.785e-02 1.976e-03] ; det +1.715e-04
+time 24 s

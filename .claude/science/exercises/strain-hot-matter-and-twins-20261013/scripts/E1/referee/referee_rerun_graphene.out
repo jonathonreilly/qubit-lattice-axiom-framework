@@ -1,0 +1,33 @@
+(i) gap and Dirac point under uniaxial bond strain t = (1+2u, 1-u, 1-u) (traceless), merging at u = 1/4
+  u=+0.000: 2 min|f| (numeric) = 6.661e-16;  exact gap = 0.000e+00;  |f(K_D)| = 1.12e-15
+  u=+0.050: 2 min|f| (numeric) = 7.022e-16;  exact gap = 0.000e+00;  |f(K_D)| = 2.48e-16
+  u=+0.100: 2 min|f| (numeric) = 1.777e-15;  exact gap = 0.000e+00;  |f(K_D)| = 1.11e-15
+  u=+0.200: 2 min|f| (numeric) = 9.872e-16;  exact gap = 0.000e+00;  |f(K_D)| = 2.22e-16
+  u=+0.240: 2 min|f| (numeric) = 8.951e-16;  exact gap = 0.000e+00;  |f(K_D)| = 0.00e+00
+  u=+0.249: 2 min|f| (numeric) = 7.448e-16;  exact gap = 0.000e+00;  |f(K_D)| = 0.00e+00
+  u=+0.260: 2 min|f| (numeric) = 8.000e-02;  exact gap = 8.000e-02;  |f(K_D)| = nan
+  u=+0.300: 2 min|f| (numeric) = 4.000e-01;  exact gap = 4.000e-01;  |f(K_D)| = nan
+  u=-0.200: 2 min|f| (numeric) = 1.617e-15;  exact gap = 0.000e+00;  |f(K_D)| = 2.22e-16
+  u=-0.400: 2 min|f| (numeric) = 4.965e-16;  exact gap = 0.000e+00;  |f(K_D)| = 1.67e-16
+  200 random traceless strains |s|<=0.3: 200 satisfy the triangle rule; max |f(K_D)| = 1.62e-15
+
+(ii) cone velocities (eigen-velocities of M) vs u; isotropic value 3/2
+  u=0.000: v = 1.500000, 1.500000;  ln(v_max/v_min)/u = nan;  det-velocity v1*v2 = 2.250000;  K_D = (-2.41840,-0.00000)
+  u=0.010: v = 1.469694, 1.530000;  ln(v_max/v_min)/u = 4.02136;  det-velocity v1*v2 = 2.248632;  K_D = (-2.43871,-0.00000)
+  u=0.020: v = 1.438749, 1.560000;  ln(v_max/v_min)/u = 4.04558;  det-velocity v1*v2 = 2.244449;  K_D = (-2.45965,-0.00000)
+  u=0.050: v = 1.341641, 1.650000;  ln(v_max/v_min)/u = 4.13764;  det-velocity v1*v2 = 2.213707;  K_D = (-2.52675,-0.00000)
+  u=0.100: v = 1.161895, 1.800000;  ln(v_max/v_min)/u = 4.37734;  det-velocity v1*v2 = 2.091411;  K_D = (-2.65642,-0.00000)
+  u=0.200: v = 0.670820, 2.100000;  ln(v_max/v_min)/u = 5.70596;  det-velocity v1*v2 = 1.408723;  K_D = (-3.04406,-0.00000)
+  u=0.240: v = 0.300000, 2.220000;  ln(v_max/v_min)/u = 8.33950;  det-velocity v1*v2 = 0.666000;  K_D = (-3.36211,-0.00000)
+
+(iii) mean-field AF threshold U_c(u): elliptic-K inner integral + adaptive outer (midpoint grid N=1200 shown for reference)
+  inner-integral check at th1=1.3: closed form 0.676425662786  brute 0.676425662786
+  u=+0.000: 1/U_c = 0.44822039  ->  U_c = 2.23105 t   (grid N=1200: 0.44803)
+  u=+0.050: 1/U_c = 0.44889858  ->  U_c = 2.22767 t   (grid N=1200: 0.44868)
+  u=+0.100: 1/U_c = 0.45087834  ->  U_c = 2.21789 t   (grid N=1200: 0.45106)
+  u=+0.150: 1/U_c = 0.45411533  ->  U_c = 2.20208 t   (grid N=1200: 0.45406)
+  u=+0.200: 1/U_c = 0.45860944  ->  U_c = 2.18050 t   (grid N=1200: 0.46813)
+  u=+0.240: 1/U_c = 0.46313580  ->  U_c = 2.15919 t   (grid N=1200: 0.46333)
+  u=+0.249: 1/U_c = 0.46427230  ->  U_c = 2.15391 t   (grid N=1200: 0.46766)
+  u=-0.200: 1/U_c = 0.46174287  ->  U_c = 2.16571 t   (grid N=1200: 0.46144)
+  u=-0.400: 1/U_c = 0.53664268  ->  U_c = 1.86344 t   (grid N=1200: 0.53599)

@@ -1,0 +1,4 @@
+TW-2 part EV; grid n=6 hmax=0.25 mph=8 (168 nodes), d=0.0030, RK4 steps 4; staggered s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  Eg evenness, sigma = 0.01 block +1: dm(+0.01) +0.00113217389547 dm(-0.01) +0.00113217389547 diff 0.0e+00
+  Eg evenness, sigma = 0.01 block -1: dm(+0.01) -0.00113217389547 dm(-0.01) -0.00113217389547 diff 0.0e+00
+time 3 s

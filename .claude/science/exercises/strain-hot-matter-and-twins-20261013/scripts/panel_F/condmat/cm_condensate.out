@@ -1,0 +1,3 @@
+N=48: <M/E> = 0.342869;  <psibar psi>_vac per field per cell = -0.685738 /a^3
+N=96: <M/E> = 0.342869;  <psibar psi>_vac per field per cell = -0.685737 /a^3
+knock-on curvature of vacuum energy per field per cell (SF units): -Hess*e2*<psibar psi> = +1.524e-03 /a^4 (QED charge 1; quarks scale by Q^2 or C_F g_s^2/e^2)

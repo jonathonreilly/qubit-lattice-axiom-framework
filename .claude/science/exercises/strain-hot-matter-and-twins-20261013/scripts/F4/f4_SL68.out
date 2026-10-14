@@ -1,0 +1,25 @@
+[SL68] root (0.909103708, 0.555604226), grid n=4 hmax=0.50 mph=2 fracbreaks=None (68 nodes), d=0.0030, nrk=2, Ms=(1, 8, 16, 32)
+  pass t=0.0000 done (6s)
+  pass t=0.0030 done (103s)
+  pass t=0.0060 done (104s)
+  P (Psym, F1)           dm +0.041858497271  Hess_t (d) +2.39882294e-02 (2d) +2.40191208e-02  Rich +2.39779323e-02  [x4 +9.591173e-02]
+  J (Psym-J)             dm +0.041858497271  Hess_t (d) +2.40841274e-02 (2d) +2.41149863e-02  Rich +2.40738410e-02  [x4 +9.629536e-02]
+  S8 (staircase M=8)     dm +0.041858497271  Hess_t (d) +2.53621113e-02 (2d) +2.53930136e-02  Rich +2.53518106e-02  [x4 +1.014072e-01]
+  S16 (staircase M=16)   dm +0.041858497271  Hess_t (d) +2.56086638e-02 (2d) +2.56394842e-02  Rich +2.55983903e-02  [x4 +1.023936e-01]
+  S32 (staircase M=32)   dm +0.041858497272  Hess_t (d) +2.56523744e-02 (2d) +2.56832123e-02  Rich +2.56420951e-02  [x4 +1.025684e-01]
+  differences from P (Rich):
+    J (Psym-J)              H - H_P = +9.590870e-05   rel +3.9999e-03
+    S8 (staircase M=8)      H - H_P = +1.373878e-03   rel +5.7298e-02
+    S16 (staircase M=16)    H - H_P = +1.620458e-03   rel +6.7581e-02
+    S32 (staircase M=32)    H - H_P = +1.664163e-03   rel +6.9404e-02
+    parts P    Hess tadpole +1.793133e-02  exchange(fam) +2.618597e-03
+    parts J    Hess tadpole +1.802724e-02  exchange(fam) +2.618597e-03
+    parts S8   Hess tadpole +1.927558e-02  exchange(fam) +2.648223e-03
+    parts S16  Hess tadpole +1.951407e-02  exchange(fam) +2.656317e-03
+    parts S32  Hess tadpole +1.955678e-02  exchange(fam) +2.657308e-03
+    common exchange base part Hess +3.428006e-03
+  SL (M->inf, c/M^2 fit on M=16,32): Hess +2.56566634e-02  H - H_P +1.678731e-03 rel +7.0012e-02  (c = -1.492e-02)
+     (fit on M=8,16: +2.56805836e-02)
+  mixture P<->S32: H(lam) = +2.397793e-02 +1.673825e-03 lam -9.661738e-06 lam^2 ; zeros at lam = [186.54621808 -13.30362587]
+  mixture P<->J (seagull only, exactly linear): H(lam) = +2.397793e-02 +9.590870e-05 lam ; zero at lam = -2.5001e+02
+[SL68] total 213 s

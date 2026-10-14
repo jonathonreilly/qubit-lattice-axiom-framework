@@ -1,0 +1,7 @@
+grid n=8 hmax=0.25 mph=10 (240 nodes), d=0.0030
+photon unstrained (F own)               : dm +0.041858390  Hess_t +1.2559472e-02
+fermion unstrained (photon own)         : dm +0.041858390  Hess_t +2.5387457e-02
+K1 both on photon flow (separable)      : dm +0.041858390  Hess_t -2.2676313e-03
+K2 both on fermion flow (non-separable) : dm +0.041858390  Hess_t +2.0766441e-03
+K1 via Jacobian formula <F_0 j''>     : Hess_t -2.2675913e-03
+time 99 s

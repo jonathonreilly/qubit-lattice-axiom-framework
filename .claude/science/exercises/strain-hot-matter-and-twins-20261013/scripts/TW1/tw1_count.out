@@ -1,0 +1,51 @@
+(b) reality type per factor (FS indicator: +1 real, -1 pseudo-real, 0 complex), LH Weyl frame
+  field  SU3   SU2   Y        | SU3      SU2      U1_Y     | G_SM
+  Q      3     2     1/6      | complex  pseudo   complex  | complex
+  u^c    3b    1     -2/3     | complex  real     complex  | complex
+  d^c    3b    1     1/3      | complex  real     complex  | complex
+  L      1     2     -1/2     | real     pseudo   complex  | complex
+  e^c    1     1     1        | real     real     complex  | complex
+  nu^c   1     1     0        | real     real     real     | real
+  embeddings (comparator, Slansky 1981): SU(5) 5bar, 10 complex; SO(10) 16 complex (Spin(10) spinor, 10 = 2 mod 8); Pati-Salam (4,2,1), (4bar,1,2) complex (SU(4) 4 complex); 16 + 16bar real.
+
+(d) exact staggered-count matching (no surplus), per gauge group and content
+  G_SM       1 gen, no nu_R   : fails: (3,2,1/6) complex: mult(R)=1, mult(Rbar)=0; (3b,1,-2/3) complex: mult(R)=1, mult(Rbar)=0; (3b,1,1/3) complex: mult(R)=1, mult(Rbar)=0
+  G_SM       1 gen + nu_R     : fails: (3,2,1/6) complex: mult(R)=1, mult(Rbar)=0; (3b,1,-2/3) complex: mult(R)=1, mult(Rbar)=0; (3b,1,1/3) complex: mult(R)=1, mult(Rbar)=0
+  G_SM       3 gen, no nu_R   : fails: (3,2,1/6) complex: mult(R)=3, mult(Rbar)=0; (3b,1,-2/3) complex: mult(R)=3, mult(Rbar)=0; (3b,1,1/3) complex: mult(R)=3, mult(Rbar)=0
+  G_SM       3 gen + 3 nu_R   : fails: (3,2,1/6) complex: mult(R)=3, mult(Rbar)=0; (3b,1,-2/3) complex: mult(R)=3, mult(Rbar)=0; (3b,1,1/3) complex: mult(R)=3, mult(Rbar)=0
+  G_SM       2 gen + 2 nu_R   : fails: (3,2,1/6) complex: mult(R)=2, mult(Rbar)=0; (3b,1,-2/3) complex: mult(R)=2, mult(Rbar)=0; (3b,1,1/3) complex: mult(R)=2, mult(Rbar)=0
+  G_SM       4 gen + 4 nu_R   : fails: (3,2,1/6) complex: mult(R)=4, mult(Rbar)=0; (3b,1,-2/3) complex: mult(R)=4, mult(Rbar)=0; (3b,1,1/3) complex: mult(R)=4, mult(Rbar)=0
+  SU3 x SU2  1 gen, no nu_R   : fails: (3,2,0) complex: mult(R)=1, mult(Rbar)=0; (3b,1,0) complex: mult(R)=2, mult(Rbar)=0; (1,2,0) pseudo-real: mult 1 not = 0 mod 4
+  SU3 x SU2  1 gen + nu_R     : fails: (3,2,0) complex: mult(R)=1, mult(Rbar)=0; (3b,1,0) complex: mult(R)=2, mult(Rbar)=0; (1,2,0) pseudo-real: mult 1 not = 0 mod 4
+  SU3 x SU2  3 gen, no nu_R   : fails: (3,2,0) complex: mult(R)=3, mult(Rbar)=0; (3b,1,0) complex: mult(R)=6, mult(Rbar)=0; (1,2,0) pseudo-real: mult 3 not = 0 mod 4
+  SU3 x SU2  3 gen + 3 nu_R   : fails: (3,2,0) complex: mult(R)=3, mult(Rbar)=0; (3b,1,0) complex: mult(R)=6, mult(Rbar)=0; (1,2,0) pseudo-real: mult 3 not = 0 mod 4
+  SU3 x SU2  2 gen + 2 nu_R   : fails: (3,2,0) complex: mult(R)=2, mult(Rbar)=0; (3b,1,0) complex: mult(R)=4, mult(Rbar)=0; (1,2,0) pseudo-real: mult 2 not = 0 mod 4
+  SU3 x SU2  4 gen + 4 nu_R   : fails: (3,2,0) complex: mult(R)=4, mult(Rbar)=0; (3b,1,0) complex: mult(R)=8, mult(Rbar)=0
+  SU3 only   1 gen, no nu_R   : fails: (1,1,0) real: mult 3 odd
+  SU3 only   1 gen + nu_R     : MATCH
+  SU3 only   3 gen, no nu_R   : fails: (1,1,0) real: mult 9 odd
+  SU3 only   3 gen + 3 nu_R   : MATCH
+  SU3 only   2 gen + 2 nu_R   : MATCH
+  SU3 only   4 gen + 4 nu_R   : MATCH
+  SU2 only   1 gen, no nu_R   : fails: (1,1,0) real: mult 7 odd
+  SU2 only   1 gen + nu_R     : MATCH
+  SU2 only   3 gen, no nu_R   : fails: (1,1,0) real: mult 21 odd
+  SU2 only   3 gen + 3 nu_R   : MATCH
+  SU2 only   2 gen + 2 nu_R   : MATCH
+  SU2 only   4 gen + 4 nu_R   : MATCH
+  U1_Y only  1 gen, no nu_R   : fails: (1,1,1/6) complex: mult(R)=6, mult(Rbar)=0; (1,1,-2/3) complex: mult(R)=3, mult(Rbar)=0; (1,1,1/3) complex: mult(R)=3, mult(Rbar)=0
+  U1_Y only  1 gen + nu_R     : fails: (1,1,1/6) complex: mult(R)=6, mult(Rbar)=0; (1,1,-2/3) complex: mult(R)=3, mult(Rbar)=0; (1,1,1/3) complex: mult(R)=3, mult(Rbar)=0
+  U1_Y only  3 gen, no nu_R   : fails: (1,1,1/6) complex: mult(R)=18, mult(Rbar)=0; (1,1,-2/3) complex: mult(R)=9, mult(Rbar)=0; (1,1,1/3) complex: mult(R)=9, mult(Rbar)=0
+  U1_Y only  3 gen + 3 nu_R   : fails: (1,1,1/6) complex: mult(R)=18, mult(Rbar)=0; (1,1,-2/3) complex: mult(R)=9, mult(Rbar)=0; (1,1,1/3) complex: mult(R)=9, mult(Rbar)=0
+  U1_Y only  2 gen + 2 nu_R   : fails: (1,1,1/6) complex: mult(R)=12, mult(Rbar)=0; (1,1,-2/3) complex: mult(R)=6, mult(Rbar)=0; (1,1,1/3) complex: mult(R)=6, mult(Rbar)=0
+  U1_Y only  4 gen + 4 nu_R   : fails: (1,1,1/6) complex: mult(R)=24, mult(Rbar)=0; (1,1,-2/3) complex: mult(R)=12, mult(Rbar)=0; (1,1,1/3) complex: mult(R)=12, mult(Rbar)=0
+  G_SM       1 gen + nu_R + 1 mirror gen: fails: (3,2,1/6) complex: mult(R)=1, mult(Rbar)=1; (3b,1,-2/3) complex: mult(R)=1, mult(Rbar)=1
+  G_SM       2 gen + nu_R + 2 mirror gen: MATCH
+  G_SM       3 gen + nu_R + 3 mirror gen: fails: (3,2,1/6) complex: mult(R)=3, mult(Rbar)=3; (3b,1,-2/3) complex: mult(R)=3, mult(Rbar)=3
+
+  unbroken SU(3)_c x U(1)_em (the gauge content the C5 root actually builds: vector U(1) + colour C_F)
+  1 gen, no nu_R   : fails: (3,1,2/3) complex: mult(R)=1, mult(Rbar)=1; (3,1,-1/3) complex: mult(R)=1, mult(Rbar)=1 ; neutral Weyl (nu_L, nu^c) = 1 -> reduced fields 0.5 (odd)
+  1 gen + nu_R     : fails: (3,1,2/3) complex: mult(R)=1, mult(Rbar)=1; (3,1,-1/3) complex: mult(R)=1, mult(Rbar)=1 ; neutral Weyl (nu_L, nu^c) = 2 -> reduced fields 1
+  2 gen + 2 nu_R   : MATCH ; neutral Weyl (nu_L, nu^c) = 4 -> reduced fields 2
+  3 gen + 3 nu_R   : fails: (3,1,2/3) complex: mult(R)=3, mult(Rbar)=3; (3,1,-1/3) complex: mult(R)=3, mult(Rbar)=3 ; neutral Weyl (nu_L, nu^c) = 6 -> reduced fields 3
+  3 gen, no nu_R   : fails: (3,1,2/3) complex: mult(R)=3, mult(Rbar)=3; (3,1,-1/3) complex: mult(R)=3, mult(Rbar)=3 ; neutral Weyl (nu_L, nu^c) = 3 -> reduced fields 1.5 (odd)

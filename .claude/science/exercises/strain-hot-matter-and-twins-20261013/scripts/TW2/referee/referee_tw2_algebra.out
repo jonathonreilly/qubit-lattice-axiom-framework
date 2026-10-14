@@ -1,0 +1,10 @@
+command: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /usr/bin/time -l python3 referee_tw2_algebra.py
+mass-family complex nullities by folding class: {'000': 1, '100': 0, '010': 0, '110': 1, '001': 0, '101': 1, '011': 1, '111': 0}
+nearest-neighbour nullities: {'100': 0, '010': 0, '001': 0}
+block projectors ranks=4,4 idempotence=1.179e-16 orthogonality=1.179e-16
+projector commutators max: kinetic=3.140e-16 singlet-mass=2.220e-16 split-mass=2.220e-16
+M110 folding-character error=6.661e-16
+triplet characters (C4axis,C2axis,C2edge,C3body)=(1.0,-1.0,-1.0,0.0) determinants=(1.0,1.0,1.0,1.0)
+common invariant-vector dimension=0 (T1 vector triplet has none)
+Hamming tree gap is 2*lambda/a; e-mu calibration would give lambda=4.306244e-21, whereas lambda=0.1 is a supplied grid-scale sample
+elapsed=0.15 s; maximum resident set size=34504704 bytes; peak memory footprint=24363824 bytes

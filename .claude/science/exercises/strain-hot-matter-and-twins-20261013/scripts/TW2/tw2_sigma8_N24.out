@@ -1,0 +1,24 @@
+TW-2 direct 8x8 checks, full-BZ midpoint N = 24 (13824 points); per e^2
+(i) folding P_m H(k) P_m = H(k + pi m), split law with tet strain t = 0.13: max err 5.0e-15
+(ii) split law (face-diagonal sigma O_12), m = 0, sigma = 0.01:  8x8 beta x 1 / beta x n3.tau coefficients vs two-block dm_gen
+   Eg  t=+0.00: beta x 1 +1.186e-20 ; beta x n3.tau -2.566675729248e-04 ; two-block (S+ - S-)/2 -2.566675729248e-04 ; (S+ + S-)/2 +0.0e+00 ; max other 7.0e-18
+   Eg  t=+0.10: beta x 1 +1.694e-20 ; beta x n3.tau -2.662611725520e-04 ; two-block (S+ - S-)/2 -2.662611725520e-04 ; (S+ + S-)/2 +0.0e+00 ; max other 3.0e-18
+   tet t=+0.00: beta x 1 +1.186e-20 ; beta x n3.tau -2.566675729248e-04 ; two-block (S+ - S-)/2 -2.566675729248e-04 ; (S+ + S-)/2 +0.0e+00 ; max other 7.0e-18
+   tet t=+0.10: beta x 1 +3.049e-20 ; beta x n3.tau -3.073226585092e-04 ; two-block (S+ - S-)/2 -3.073226585092e-04 ; (S+ + S-)/2 +0.0e+00 ; max other 2.8e-18
+   tet t=-0.10: beta x 1 +3.049e-20 ; beta x n3.tau -2.154569353832e-04 ; two-block (S+ - S-)/2 -2.154569353832e-04 ; (S+ + S-)/2 +0.0e+00 ; max other 2.8e-18
+(iii) body-diagonal splitting sigma (O_12 + O_23 + O_31)/sqrt3, m = 0, sigma = 0.01: taste-split coefficient and E_g linear terms
+   Eg  t=+0.00: |beta x vec.tau| +2.5666671698e-04 (vec [-0.988102  0.130628 -0.081188]) ; beta x 1 +6.7e-20 ; max other 6.2e-18
+   Eg  t=+0.10: |beta x vec.tau| +2.6551265462e-04 (vec [-0.994365  0.099448  0.036706]) ; beta x 1 +1.9e-19 ; max other 4.5e-18
+   Eg  t=-0.10: |beta x vec.tau| +2.6551265462e-04 (vec [-0.968733  0.145726 -0.200801]) ; beta x 1 -1.2e-19 ; max other 4.0e-18
+   Eg  odd part |v(+0.1) - v(-0.1)| = 6.46e-05
+   tet t=+0.00: |beta x vec.tau| +2.5666671698e-04 (vec [-0.988102  0.130628 -0.081188]) ; beta x 1 +6.7e-20 ; max other 6.2e-18
+   tet t=+0.10: |beta x vec.tau| +2.6577542193e-04 (vec [-0.994433  0.017622 -0.10389 ]) ; beta x 1 -4.6e-20 ; max other 3.1e-18
+   tet t=-0.10: |beta x vec.tau| +2.6575500140e-04 (vec [-0.965627  0.254112 -0.054702]) ; beta x 1 +6.8e-21 ; max other 6.1e-18
+   tet odd part |v(+0.1) - v(-0.1)| = 6.47e-05
+(iv) hw = 1 alternative: H = h_stag + lam M_W (FB1 flow), photon as above; corner-level tree energies 2 lam hw
+   M_W(k=0) = diag(2 hw) in the spin x taste dictionary: 1(x)1 +3.000-0.000i; a1(x)1 -1.000-0.000i; a3.b(x)t1 -0.000-0.599i; a3.b(x)t2 -0.000+0.338i; a3.b(x)t3 +0.000+0.726i; a1.a2.a3(x)t1 +0.000+0.662i; a1.a2.a3(x)t2 -0.000+0.719i; a1.a2.a3(x)t3 +0.000+0.212i
+   [M_W(0), beta x 1] = 6.0e+00 ; [M_W(0), alpha_j x 1] = ['0.0e+00', '2.0e+00', '4.0e+00']
+   lam=0.10 Eg t=+0.00: tree diag(H(0)) on hw=1 [0.2 0.2 0.2] ; one-loop hw=1 block diag [0.01617   0.0088336 0.0089169] ; offdiag max 4.8e-18 ; eig [0.0088336 0.0089169 0.01617  ] ; Sigma(000) +2.0818e-02 ; ||Sigma - its hw-diagonal|| 4.8e-18
+   lam=0.10 Eg t=+0.05: tree diag(H(0)) on hw=1 [0.2 0.2 0.2] ; one-loop hw=1 block diag [0.0165116 0.0084951 0.0088928] ; offdiag max 2.6e-18 ; eig [0.0084951 0.0088928 0.0165116] ; Sigma(000) +2.0817e-02 ; ||Sigma - its hw-diagonal|| 6.1e-18
+   lam=0.10 Eg t=-0.05: tree diag(H(0)) on hw=1 [0.2 0.2 0.2] ; one-loop hw=1 block diag [0.0158169 0.0091879 0.0089902] ; offdiag max 3.4e-18 ; eig [0.0089902 0.0091879 0.0158169] ; Sigma(000) +2.0873e-02 ; ||Sigma - its hw-diagonal|| 7.2e-18
+time 3 s

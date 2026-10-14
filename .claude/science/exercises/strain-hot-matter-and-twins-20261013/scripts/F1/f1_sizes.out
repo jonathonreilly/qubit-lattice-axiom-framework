@@ -1,0 +1,60 @@
+H-cov R19-34 root (control): Hess_t = -1.011875e-02 e^2  (c_h = 4 Hess_t = -4.047500e-02)
+   T =  150.0 GeV: mu_SF = -2.728e-54  m_g^2/H^2 = -2.046e+13
+   T =  100.0 GeV: mu_SF = -8.307e-55  m_g^2/H^2 = -3.153e+13
+   T =   50.0 GeV: mu_SF = -6.189e-56  m_g^2/H^2 = -4.652e+13
+   T =   10.0 GeV: mu_SF = -5.558e-58  m_g^2/H^2 = -2.611e+14
+   T =    1.0 GeV: mu_SF = -1.022e-60  m_g^2/H^2 = -4.803e+15
+   today IGM n ~ 0.25 /m^3          electrons |m_g| = 8.94e-26 eV
+   today IGM n ~ 0.25 /m^3          nucleons  |m_g| = 6.45e-25 eV
+   today Sun mean n ~ 8.4e29 /m^3   electrons |m_g| = 1.64e-10 eV
+   today Sun mean n ~ 8.4e29 /m^3   nucleons  |m_g| = 1.18e-09 eV
+   today Earth n ~ 3.3e30 /m^3      electrons |m_g| = 3.25e-10 eV
+   today Earth n ~ 3.3e30 /m^3      nucleons  |m_g| = 2.34e-09 eV
+   today Sun core n ~ 9e31 /m^3     electrons |m_g| = 1.70e-09 eV
+   today Sun core n ~ 9e31 /m^3     nucleons  |m_g| = 1.22e-08 eV
+   tuning to the lines: history 2.1e-16 ; Earth (vs 4.1e-13 eV) 3.1e-08
+SF B1 root D1(0.909103708,0.555604226): Hess_t = +2.424010e-02 e^2  (c_h = 4 Hess_t = +9.696040e-02)
+   T =  150.0 GeV: mu_SF = +6.536e-54  m_g^2/H^2 = +4.901e+13
+   T =  100.0 GeV: mu_SF = +1.990e-54  m_g^2/H^2 = +7.554e+13
+   T =   50.0 GeV: mu_SF = +1.483e-55  m_g^2/H^2 = +1.114e+14
+   T =   10.0 GeV: mu_SF = +1.331e-57  m_g^2/H^2 = +6.255e+14
+   T =    1.0 GeV: mu_SF = +2.449e-60  m_g^2/H^2 = +1.151e+16
+   today IGM n ~ 0.25 /m^3          electrons |m_g| = 1.38e-25 eV
+   today IGM n ~ 0.25 /m^3          nucleons  |m_g| = 9.98e-25 eV
+   today Sun mean n ~ 8.4e29 /m^3   electrons |m_g| = 2.54e-10 eV
+   today Sun mean n ~ 8.4e29 /m^3   nucleons  |m_g| = 1.83e-09 eV
+   today Earth n ~ 3.3e30 /m^3      electrons |m_g| = 5.03e-10 eV
+   today Earth n ~ 3.3e30 /m^3      nucleons  |m_g| = 3.63e-09 eV
+   today Sun core n ~ 9e31 /m^3     electrons |m_g| = 2.63e-09 eV
+   today Sun core n ~ 9e31 /m^3     nucleons  |m_g| = 1.89e-08 eV
+   tuning to the lines: history 8.7e-17 ; Earth (vs 4.1e-13 eV) 1.3e-08
+SF B2 root (flow at m=0): Hess_t = +2.426109e-02 e^2  (c_h = 4 Hess_t = +9.704437e-02)
+   T =  150.0 GeV: mu_SF = +6.542e-54  m_g^2/H^2 = +4.905e+13
+   T =  100.0 GeV: mu_SF = +1.992e-54  m_g^2/H^2 = +7.560e+13
+   T =   50.0 GeV: mu_SF = +1.484e-55  m_g^2/H^2 = +1.115e+14
+   T =   10.0 GeV: mu_SF = +1.333e-57  m_g^2/H^2 = +6.261e+14
+   T =    1.0 GeV: mu_SF = +2.451e-60  m_g^2/H^2 = +1.152e+16
+   today IGM n ~ 0.25 /m^3          electrons |m_g| = 1.38e-25 eV
+   today IGM n ~ 0.25 /m^3          nucleons  |m_g| = 9.99e-25 eV
+   today Sun mean n ~ 8.4e29 /m^3   electrons |m_g| = 2.54e-10 eV
+   today Sun mean n ~ 8.4e29 /m^3   nucleons  |m_g| = 1.83e-09 eV
+   today Earth n ~ 3.3e30 /m^3      electrons |m_g| = 5.03e-10 eV
+   today Earth n ~ 3.3e30 /m^3      nucleons  |m_g| = 3.63e-09 eV
+   today Sun core n ~ 9e31 /m^3     electrons |m_g| = 2.63e-09 eV
+   today Sun core n ~ 9e31 /m^3     nucleons  |m_g| = 1.89e-08 eV
+   tuning to the lines: history 8.7e-17 ; Earth (vs 4.1e-13 eV) 1.3e-08
+SF B1 0+ root D1(0.915438682,0.568280847): Hess_t = +2.453499e-02 e^2  (c_h = 4 Hess_t = +9.813997e-02)
+   T =  150.0 GeV: mu_SF = +6.616e-54  m_g^2/H^2 = +4.960e+13
+   T =  100.0 GeV: mu_SF = +2.014e-54  m_g^2/H^2 = +7.646e+13
+   T =   50.0 GeV: mu_SF = +1.501e-55  m_g^2/H^2 = +1.128e+14
+   T =   10.0 GeV: mu_SF = +1.348e-57  m_g^2/H^2 = +6.331e+14
+   T =    1.0 GeV: mu_SF = +2.479e-60  m_g^2/H^2 = +1.165e+16
+   today IGM n ~ 0.25 /m^3          electrons |m_g| = 1.39e-25 eV
+   today IGM n ~ 0.25 /m^3          nucleons  |m_g| = 1.00e-24 eV
+   today Sun mean n ~ 8.4e29 /m^3   electrons |m_g| = 2.55e-10 eV
+   today Sun mean n ~ 8.4e29 /m^3   nucleons  |m_g| = 1.84e-09 eV
+   today Earth n ~ 3.3e30 /m^3      electrons |m_g| = 5.06e-10 eV
+   today Earth n ~ 3.3e30 /m^3      nucleons  |m_g| = 3.65e-09 eV
+   today Sun core n ~ 9e31 /m^3     electrons |m_g| = 2.64e-09 eV
+   today Sun core n ~ 9e31 /m^3     nucleons  |m_g| = 1.91e-08 eV
+   tuning to the lines: history 8.6e-17 ; Earth (vs 4.1e-13 eV) 1.3e-08

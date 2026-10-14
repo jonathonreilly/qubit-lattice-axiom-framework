@@ -1,0 +1,11 @@
+(D2) dlnZ/dKx at Kc (per site) = 0.70710674   (<s s>_nn at Tc = 1/sqrt2 = 0.70710678, RECALLED)
+  k=0.000000: d2lnZ/dt2 = +0.106310 (h=.02) +0.106181 (h=.01);  (Ky*-Kx)/t^2 at t=1e-3 = +0.274818
+  k=0.311613: d2lnZ/dt2 = +0.494544 (h=.02) +0.494540 (h=.01);  (Ky*-Kx)/t^2 at t=1e-3 = -0.000000
+  predicted from linear value: d2lnZ/dt2(k) = 0.10618 + 4 Kc k <ss> ; k_stiff (zero stiffness) = -0.085186; k_gap = +0.311613
+  -> with nearest-neighbour couplings only, keeping the gap and freeing the stretch need different k: two conditions per order
+
+(a4) diagonal decay rate of the D-propagator (support function along (1,1), per diagonal step) vs -ln(sinh2Kx sinh2Ky)
+  Kx=0.4 Ky=0.3: support (1,1) = 0.5701937922   -ln(sx*sy) = 0.5701937922
+  Kx=0.42 Ky=0.4: support (1,1) = 0.1780658229   -ln(sx*sy) = 0.1780658229
+  Kx=0.55 Ky=0.3: support (1,1) = 0.1621134278   -ln(sx*sy) = 0.1621134278
+  Kx=0.3 Ky=0.3: support (1,1) = 0.9030591968   -ln(sx*sy) = 0.9030591968

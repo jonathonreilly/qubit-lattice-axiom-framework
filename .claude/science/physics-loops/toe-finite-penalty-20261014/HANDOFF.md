@@ -1,0 +1,5 @@
+# Static publication handoff
+
+This is a publication source record, not the campaign's current recovery checkpoint. The sole root-owned STATE/HANDOFF remains authoritative. The accepted resolved V2 assembly is bound to the supplied clean child physics-loop/toe-finite-penalty-20261014 at34158f1325055acecbd9dea11f2ee83c4d3338df, whose regular stack parent is PR9536. The only scientific import is the actual joint-interface canonical note212a94bb/core34cbe355. SOURCE_ASSEMBLY_SNAPSHOT.json scopes all archived historical fields; PARENT_BINDINGS.json is current.
+
+Root reviews the complete new wrapper/helper/driver and all changed function bodies, supplies separate external execution acceptance, and owns prepare, explicit staging, verify, cumulative/current-main validation and regular PR publication. No science merge, main push, audit verdict, axiom or editable-prompt change is authorized by this preparation. The driver preserves every attempt and exact staging allowlist and performs no automatic retry/cleanup/Git mutation.

@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-14T08:32:46.188864+00:00",
+  "status": "accepted_conditional_finite_Pauli_resolution_and_fixed_budget_refinement_for_source_assembly",
+  "gauss_author": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/gauss_penalty_pauli_resolution/DERIVATION.md",
+    "sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903",
+    "bytes": 25782
+  },
+  "independent_complete_report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/gauss_penalty_pauli_independent/REPORT.md",
+    "sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166",
+    "bytes": 20854
+  },
+  "resolved_corollary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/gauss_pauli_root_review/RESOLVED_FIXED_BUDGET_COROLLARY.md",
+    "sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a",
+    "bytes": 3183
+  },
+  "root_final_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/gauss_pauli_root_review/ROOT_FINAL_REVIEW.md",
+    "sha256": "69bda496a52bf4846a56c56988d6474e11e83e4f39b62fba5b39d9c71da5ab46",
+    "bytes": 4470
+  },
+  "selective_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/gauss_pauli_full_resolution_review/REPORT.md",
+    "sha256": "d3b29858630aa434ae824450eea326f65a1eaef949ed2a43a3d776fdc58e2a8a",
+    "bytes": 19342
+  },
+  "selective_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/gauss_pauli_full_resolution_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+    "sha256": "24e925f1eac90136b2cd8d2fffd502bd426d9ade9094af952369f956c78ec252",
+    "bytes": 2123
+  },
+  "binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/gauss_pauli_root_review/SELECTIVE_EVIDENCE_BINDING.json",
+    "sha256": "5a90298ffbbe64db34ee5bbaae0cb1492289eb57df28bc4be51c418f9a6e0654",
+    "bytes": 10822
+  },
+  "shared_prior_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/GAUSS_PAULI_SHARED_ROOT_ACCEPTANCE.json",
+    "sha256": "04af952109a0ca11716ed84a6b39ab3dbc4288d7edb11e04e1822037c49860bc",
+    "bytes": 1471
+  },
+  "accepted_scope": "Exact Gauss norm5184; full scalar688I,10688words,43lambda/2 per-site maximum, arity28, periodic diameter32, global upper bound5984lambda; sufficient lambda=Jcap/43 full signed-Pauli budget with unchanged conditional first-order error premises. Complete original bodies and all history remain unchanged.",
+  "native_or_preparation_claim": false,
+  "retained": false,
+  "canonical_execution_authorized": false
+}

@@ -1,0 +1,63 @@
+{
+  "actual_parent_head": "34158f1325055acecbd9dea11f2ee83c4d3338df",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-interacting-history-20261014",
+    "headRefName": "physics-loop/toe-joint-matter-link-20261014",
+    "headRefOid": "34158f1325055acecbd9dea11f2ee83c4d3338df",
+    "isDraft": false,
+    "number": 9536,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "Add a conditional joint matter-link interface on qubits",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9536"
+  },
+  "all_markdown_note_targets": [
+    "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 49887,
+      "byte_start_inclusive": 10651,
+      "canonical_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "first_line": 69,
+      "key": "JOINT_INTERFACE",
+      "last_line": 378,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/parents/JOINT_INTERFACE_CORE.md",
+      "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "last_root_governance_refresh_utc": "2026-10-14T08:03:00Z",
+  "markdown_citations_verified": true,
+  "metadata_source": "Root supplied clean child and preserved actual PR9536 receipt; current canonical parent byte match only, no new Git/network query",
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49944,
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "label": "joint even-matter and finite-link interface",
+      "markdown": "[joint even-matter and finite-link interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "relied_role": "Literal finite architecture, encoded even-CAR/link/Gauss algebra, reducing sectors and original nonstream family",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "target": "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "source_byte_comparison_utc": "2026-10-14T08:57:01.481554+00:00"
+}

@@ -1,0 +1,3 @@
+# Scoped failures and repairs retained
+
+The complete baseline preserves the original root lemma, its negative-lambda counterexample, positive-lambda correction, prior budget comparison drafts and spectator-state sign reconciliation. The complete refinement preserves the electric-sign, scalar and BB-cross-sign mutations, physical-witness checks and wrong same-link merge control. Original failed expectations, source/read limits and actual streams remain byte exact. Conservative whole-term prices are valid bounds, not false lower bounds. No universal impossibility, native construction, preparation theorem or audit PASS is inferred.

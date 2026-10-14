@@ -1,0 +1,316 @@
+{
+  "accepted_wrapper_edit_scope": "publication metadata, attribution links or current source-status pointers only; full original/current diff",
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/CANDIDATE.md",
+      "accepted_candidate_sha256": "6bb0a2b9dbdfbb6588a031cac41f9f6dfa66e5604398b0113e38966df9497e3c",
+      "context_lines": 3,
+      "diff": "diffs/CANDIDATE_TO_PUBLICATION.diff.gz",
+      "diff_bytes": 6524,
+      "diff_sha256": "c95a5ce37b4bd4c93650b31760a88db3dd829244e73a30f08c2e3f4cc60ec041",
+      "diff_stored_sha256": "301f41fbb9bafe386d3286dd05f020aea7fd8ee22ce02f8372fd2cadbd31d056",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "byte_end_exclusive": 13053,
+          "byte_offset": 0,
+          "bytes": 13053,
+          "first_line": 1,
+          "kind": "rendered_wrapper",
+          "last_line": 88,
+          "replacements": [
+            {
+              "original": "---\ntitle: Finite-penalty recovery of a literal charged-link coupling with exact Pauli resource accounting\nclaim_type: bounded_theorem\nactual_current_scientific_status: accepted_conditional_source\nassembly_status: proposed_resolved_revision_for_root_review\nartifact_role: theorem_source_assembly\nretained_audit_status: false\ncanonical_execution_authorized: false\npauli_resolution_included: true\n---\n",
+              "rendered": "---\ntitle: Finite-penalty recovery of a literal charged-link coupling with exact Pauli resource accounting\nclaim_id: finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 supplied static architecture, K inputs and positive penalty with full physical resource accounting\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted conditional finite penalty theorem and exact unchanged Pauli refinement; identity runner checks no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/finite_gauss_penalty_recovery_identity_2026_10_14.py\nnext_trace_action: root reviews exact source composition and publication program before separately authorized integration\n---\n\nClaim type: bounded_theorem\n",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "](baseline_v1/parents/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+              "rendered": "](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "The new wrapper, composition and publication machinery remain subject to root review; neither earlier acceptance grants execution or retained status.",
+              "rendered": "The resolved V2 source composition is accepted under `4ad8537f76997f704628ecf7872defd08a63dda0f81e745ebb49a29640f0648b`; the publication rendering and driver require separate root review. No source acceptance grants execution or retained status.",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            }
+          ],
+          "sha256": "624cf3607cf8d947794c87a60174e82d1bbe31a8cbd7f69966053dbb0b9f1eca",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/WRAPPER.md",
+          "source_sha256": "7a03516123bd33473f7951ede49060c19e257e4ffb62fb4c8eed11ba99098e39"
+        },
+        {
+          "byte_end_exclusive": 13350,
+          "byte_offset": 13053,
+          "bytes": 297,
+          "first_line": 89,
+          "kind": "literal_framing",
+          "last_line": 96,
+          "sha256": "b4e5c4ec49932d1127b270a8de891b6b136a13d05daf1600b30502fe6af9ca1f",
+          "text": "\n---\n\n## Complete unchanged body A: Primary author derivation\n\nOriginal source SHA256 `bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY A -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 44362,
+          "byte_offset": 13350,
+          "bytes": 31012,
+          "expected_slice_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14",
+          "first_line": 97,
+          "kind": "accepted_core_slice",
+          "label": "A",
+          "last_line": 375,
+          "sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14",
+          "source_line_end": 279,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/joint_penalty_recovery/DERIVATION.md",
+          "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+        },
+        {
+          "byte_end_exclusive": 44388,
+          "byte_offset": 44362,
+          "bytes": 26,
+          "first_line": 376,
+          "kind": "literal_framing",
+          "last_line": 377,
+          "sha256": "1597311fda418467bb7a67beaccf4dfc813e885da6eae0d9d652224edac48509",
+          "text": "\n<!-- END FULL BODY A -->\n"
+        },
+        {
+          "byte_end_exclusive": 44693,
+          "byte_offset": 44388,
+          "bytes": 305,
+          "first_line": 378,
+          "kind": "literal_framing",
+          "last_line": 385,
+          "sha256": "3092da34dfcdb6f4e025e523e43b17ef0b5d9748855c3bed77fa8b9d17fee614",
+          "text": "\n---\n\n## Complete unchanged body B: Corrected root finite-block lemma\n\nOriginal source SHA256 `78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY B -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 51870,
+          "byte_offset": 44693,
+          "bytes": 7177,
+          "expected_slice_sha256": "78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae",
+          "first_line": 386,
+          "kind": "accepted_core_slice",
+          "label": "B",
+          "last_line": 430,
+          "sha256": "78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae",
+          "source_line_end": 45,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/continuation_20261014_023239/joint_penalty_root_check/FINITE_BLOCK_LEMMA_V2.md",
+          "source_sha256": "78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae"
+        },
+        {
+          "byte_end_exclusive": 51896,
+          "byte_offset": 51870,
+          "bytes": 26,
+          "first_line": 431,
+          "kind": "literal_framing",
+          "last_line": 432,
+          "sha256": "57590d0355ab805ad20149d42d88185100b0c2941894328aa8e0e4ad1b27cded",
+          "text": "\n<!-- END FULL BODY B -->\n"
+        },
+        {
+          "byte_end_exclusive": 52201,
+          "byte_offset": 51896,
+          "bytes": 305,
+          "first_line": 433,
+          "kind": "literal_framing",
+          "last_line": 440,
+          "sha256": "b935cd7940b30c1979075ffeb15240f16bb55cc5e850bb360002ea4cf76b274b",
+          "text": "\n---\n\n## Complete unchanged body C: Gauss-only fixed-budget corollary\n\nOriginal source SHA256 `9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY C -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 55626,
+          "byte_offset": 52201,
+          "bytes": 3425,
+          "expected_slice_sha256": "9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e",
+          "first_line": 441,
+          "kind": "accepted_core_slice",
+          "label": "C",
+          "last_line": 461,
+          "sha256": "9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e",
+          "source_line_end": 21,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/continuation_20261014_023239/joint_penalty_root_check/FIXED_LOCAL_BUDGET_COROLLARY_V2.md",
+          "source_sha256": "9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e"
+        },
+        {
+          "byte_end_exclusive": 55652,
+          "byte_offset": 55626,
+          "bytes": 26,
+          "first_line": 462,
+          "kind": "literal_framing",
+          "last_line": 463,
+          "sha256": "81b1777fa105799748f91a71f2afe5d714734a3aa3a263ededdd31a66a2b4d33",
+          "text": "\n<!-- END FULL BODY C -->\n"
+        },
+        {
+          "byte_end_exclusive": 55959,
+          "byte_offset": 55652,
+          "bytes": 307,
+          "first_line": 464,
+          "kind": "literal_framing",
+          "last_line": 471,
+          "sha256": "4ee52f71c8a86702439abc69f4eae50ccf1316b4bccd438f82e36a51574970b3",
+          "text": "\n---\n\n## Complete unchanged body D: Full-penalty fixed-budget corollary\n\nOriginal source SHA256 `486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY D -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 59259,
+          "byte_offset": 55959,
+          "bytes": 3300,
+          "expected_slice_sha256": "486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1",
+          "first_line": 472,
+          "kind": "accepted_core_slice",
+          "label": "D",
+          "last_line": 486,
+          "sha256": "486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1",
+          "source_line_end": 15,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/continuation_20261014_023239/joint_penalty_root_check/FULL_PENALTY_FIXED_BUDGET_COROLLARY.md",
+          "source_sha256": "486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1"
+        },
+        {
+          "byte_end_exclusive": 59285,
+          "byte_offset": 59259,
+          "bytes": 26,
+          "first_line": 487,
+          "kind": "literal_framing",
+          "last_line": 488,
+          "sha256": "18588d164f13649a62ef28ff1259ec10806d0e71f7189133856d70883e3decfb",
+          "text": "\n<!-- END FULL BODY D -->\n"
+        },
+        {
+          "byte_end_exclusive": 59592,
+          "byte_offset": 59285,
+          "bytes": 307,
+          "first_line": 489,
+          "kind": "literal_framing",
+          "last_line": 496,
+          "sha256": "c695bb4e302f0609490987d20888a298a17d7a5a2537518c2d5c602b59a35f9e",
+          "text": "\n---\n\n## Complete unchanged body E: Author exact Gauss Pauli resolution\n\nOriginal source SHA256 `e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY E -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 85374,
+          "byte_offset": 59592,
+          "bytes": 25782,
+          "expected_slice_sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903",
+          "first_line": 497,
+          "kind": "accepted_core_slice",
+          "label": "E",
+          "last_line": 761,
+          "sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903",
+          "source_line_end": 265,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/refinement/author/DERIVATION.md",
+          "source_sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903"
+        },
+        {
+          "byte_end_exclusive": 85400,
+          "byte_offset": 85374,
+          "bytes": 26,
+          "first_line": 762,
+          "kind": "literal_framing",
+          "last_line": 763,
+          "sha256": "a675af269d90515bc745927322a865d5eb784953399faa8d4262c056a60367de",
+          "text": "\n<!-- END FULL BODY E -->\n"
+        },
+        {
+          "byte_end_exclusive": 85732,
+          "byte_offset": 85400,
+          "bytes": 332,
+          "first_line": 764,
+          "kind": "literal_framing",
+          "last_line": 771,
+          "sha256": "ae65d94a382864b62b521a4aa704c67dd8c93fa34cb23f48e013fd5636aff3f0",
+          "text": "\n---\n\n## Complete unchanged body F: Independent complete Pauli resolution and exact norm witness\n\nOriginal source SHA256 `12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY F -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 106586,
+          "byte_offset": 85732,
+          "bytes": 20854,
+          "expected_slice_sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166",
+          "first_line": 772,
+          "kind": "accepted_core_slice",
+          "label": "F",
+          "last_line": 967,
+          "sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166",
+          "source_line_end": 196,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/refinement/independent/REPORT.md",
+          "source_sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166"
+        },
+        {
+          "byte_end_exclusive": 106612,
+          "byte_offset": 106586,
+          "bytes": 26,
+          "first_line": 968,
+          "kind": "literal_framing",
+          "last_line": 969,
+          "sha256": "b7dfb7b4b9a35569e95921c86098dea7fee5c0ea7f399eb0ccbf1c463bceff84",
+          "text": "\n<!-- END FULL BODY F -->\n"
+        },
+        {
+          "byte_end_exclusive": 106928,
+          "byte_offset": 106612,
+          "bytes": 316,
+          "first_line": 970,
+          "kind": "literal_framing",
+          "last_line": 977,
+          "sha256": "25607f12373cd650f8b6079e19c590f1fdc82096edd208eb71e5a559a9adee30",
+          "text": "\n---\n\n## Complete unchanged body G: Resolved full-penalty fixed-budget corollary\n\nOriginal source SHA256 `a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY G -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 110111,
+          "byte_offset": 106928,
+          "bytes": 3183,
+          "expected_slice_sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a",
+          "first_line": 978,
+          "kind": "accepted_core_slice",
+          "label": "G",
+          "last_line": 996,
+          "sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a",
+          "source_line_end": 19,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/refinement/root_review/RESOLVED_FIXED_BUDGET_COROLLARY.md",
+          "source_sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a"
+        },
+        {
+          "byte_end_exclusive": 110137,
+          "byte_offset": 110111,
+          "bytes": 26,
+          "first_line": 997,
+          "kind": "literal_framing",
+          "last_line": 998,
+          "sha256": "0e5d6e99fb3ae2571dab3e3b016df74cb3ae0cf542f2b9b6946ea46b5a73a591",
+          "text": "\n<!-- END FULL BODY G -->\n"
+        }
+      ],
+      "published_bytes": 110137,
+      "published_lines": 998,
+      "published_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "stored_bytes": 2439,
+      "tofile": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_assembly_status_at_preparation": "Resolved V2 source composition accepted4ad8537f; publication rendering/program require separate external root acceptance",
+  "source_freeze_sha256": "9a50b0b116cdb2a9151116fd95329b2fc831057cb084aa8108399e6ce490fa9a",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/WRAPPER_TO_PUBLICATION.diff.gz",
+    "diff_bytes": 6472,
+    "diff_sha256": "fcfba878a0f6fd846a4cb6da21c725ec66f8f42b4ece8bfe81ffb25857d5ab2f",
+    "diff_stored_sha256": "e85c41305844036166b755013e436113bf844c6d2dfefb183174204d6c978e3b",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 2412,
+    "tofile": "WRAPPER.rendered.md"
+  }
+}

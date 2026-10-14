@@ -1,0 +1,8 @@
+{
+  "base": "34158f1325055acecbd9dea11f2ee83c4d3338df",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-finite-penalty-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9536",
+  "root_owns_all_git_and_publication": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "complete_prior_payload_reconstructed",
+  "files": 411,
+  "new_raw_proof_copies": 0,
+  "mathematical_predicates": 0,
+  "science_or_primary_executed": false
+}

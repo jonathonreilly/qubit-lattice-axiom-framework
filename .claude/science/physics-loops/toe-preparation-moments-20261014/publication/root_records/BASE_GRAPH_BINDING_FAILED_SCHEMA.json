@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-14T21:57:26.415383+00:00",
+  "kind": "preserved actual tool-output transcription, not a new execution",
+  "tool_chunk_id": "9ba1b2",
+  "exit_code": 1,
+  "stdout_stderr": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\nKeyError: 'note_hash'\n",
+  "failed_operation": "Compared m[\"nodes\"][k][\"note_hash\"] to graph node note_hash without first inspecting the manifest schema.",
+  "effects": "Copied full base graph and tracked manifest before the failure; no science file or source changed.",
+  "repair_scope": "Read actual manifest schema and compare its complete semantic fields."
+}

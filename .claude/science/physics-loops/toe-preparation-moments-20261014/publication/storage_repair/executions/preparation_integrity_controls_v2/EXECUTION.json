@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "python3",
+    "renewal_20261014_214309/publication_integration/check_preparation_mutations_v2.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009",
+  "start_utc": "2026-10-14T22:21:18.682109+00:00",
+  "end_utc": "2026-10-14T22:21:20.457605+00:00",
+  "elapsed_seconds": 1.7749480418860912,
+  "exit_code": 0,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/preparation_integrity_controls_v2/stdout",
+    "bytes": 335,
+    "sha256": "f117893f2d5ebc5c18b26ec1033d430c5296c7920ec2962b1659e753ebf38f08"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/runs/preparation_integrity_controls_v2/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "child_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/check_preparation_mutations_v2.py",
+    "bytes": 4979,
+    "sha256": "b3dbf690f54778d98c8194f75a1a18ba145e3ff9691535c87e9e7e335f159180"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/run.py",
+    "bytes": 1342,
+    "sha256": "d125f804ab1451c3b4ba51c4d4ab21a7d078329395dcb333aebe823b6342de95"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-14T22:13:20.573680+00:00",
+  "approved_for_root_execution": true,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/prepare_preparation.py",
+    "bytes": 6970,
+    "sha256": "8d6fd17f5503e6c31924d8a88c43e4d7b9396c498fd3523d8a49798b4b417d98"
+  },
+  "common": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+    "bytes": 3127,
+    "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+  },
+  "component_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/COMPONENT_ROOT_ACCEPTANCE.json",
+    "bytes": 5613,
+    "sha256": "14921cdc8b87530804597a36231e2c812dc2b0ec444b1ac0f45dc42481aaf0f6"
+  },
+  "review": "Complete root source read. Exact clean branch/HEAD/ref/actual-parent and source membership guards, unique local bound payload, five explicit metadata/helper changes, byte-identical note/proofs, exact fresh-path-only installation. No staging, cache, graph, PR or science execution by this driver."
+}

@@ -1,0 +1,24 @@
+{
+  "archive_records": 616,
+  "archived_science_executed": false,
+  "declared_primary_inputs": 411,
+  "inner_alias_counts": {
+    "chain": 212,
+    "generic": 151,
+    "sharper": 119
+  },
+  "live_origins_compared": 616,
+  "mathematical_predicates": 0,
+  "note_sha256": "8d55f8dba3a1c7b6a8e1c00a7aca9f902b67896613c214cf24f4e2d196cb1565",
+  "payload_files": 411,
+  "primary_runner_executed": false,
+  "primary_runner_sha256": "6a0d4fdaf0592f8d7a84bd2322e3b9e411af5e35553eaf621cd10f2a22561543",
+  "source_group_counts": {
+    "chain": 158,
+    "generic": 141,
+    "sharper": 252
+  },
+  "status": "source_components_verified",
+  "unique_objects": 395,
+  "whole_primary_source_reproduced_and_ast_parsed": true
+}

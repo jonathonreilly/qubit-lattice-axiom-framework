@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "start_utc": "2026-10-14T22:17:42.517105+00:00",
+  "end_utc": "2026-10-14T22:17:42.610069+00:00",
+  "elapsed_seconds": 0.09283187473192811,
+  "exit_code": 0,
+  "expected_exit_codes": [
+    0
+  ],
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/write_graph_manifest/stdout",
+    "bytes": 77,
+    "sha256": "435a8a48d3a61b0a4142606613cf83f0af0afb36337ff9b5dac46b498306dc39"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/write_graph_manifest/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "python_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+    "bytes": 2049,
+    "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+    "bytes": 3127,
+    "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+  }
+}

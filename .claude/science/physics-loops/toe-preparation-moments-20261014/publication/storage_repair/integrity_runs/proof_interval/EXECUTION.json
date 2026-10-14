@@ -1,0 +1,38 @@
+{
+  "argv": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/run_identity_fixture.py",
+    "--runner",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/proof_interval/scripts/preparation_moment_source_identity_2026_10_14.py",
+    "--repo",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/proof_interval"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "start_utc": "2026-10-14T22:21:19.345256+00:00",
+  "end_utc": "2026-10-14T22:21:19.420206+00:00",
+  "elapsed_seconds": 0.07494941726326942,
+  "exit_code": 1,
+  "expected_exit_codes": [
+    1
+  ],
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/proof_interval/stdout",
+    "bytes": 81,
+    "sha256": "0d604cb65a09bbd1e246ea66fc48de68806a8cfe6757f7fe33aa2680be04f824"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/proof_interval/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "python_source_at_launch": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/run_identity_fixture.py",
+    "bytes": 487,
+    "sha256": "4926677f1a85a455e5e2d922430fabc093370ca6d8c0491a88e794a49b4d0e1c"
+  },
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/common.py",
+    "bytes": 3127,
+    "sha256": "b1aadd18a918dd866f515a77483b9e96c8352d2ed2f4daa93c2c89e206ccb20b"
+  }
+}

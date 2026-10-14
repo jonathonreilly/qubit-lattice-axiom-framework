@@ -1,0 +1,8 @@
+{
+  "program_comparisons": 9,
+  "framing_comparisons": 3,
+  "payload_files": 411,
+  "raw_proof_changes": 0,
+  "mathematical_predicates": 0,
+  "source_executed_for_mapping": false
+}

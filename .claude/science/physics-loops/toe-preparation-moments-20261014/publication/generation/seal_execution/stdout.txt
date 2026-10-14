@@ -1,0 +1,9 @@
+{
+  "completed_before_seal_write": true,
+  "recorded_source_attempts": 7,
+  "recorded_child_nonzero_exits": 0,
+  "pre_child_or_lookup_failures_preserved": 2,
+  "mathematical_predicates": 0,
+  "primary_helper_executed": false,
+  "scientific_programs_replayed": 0
+}

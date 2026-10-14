@@ -1,0 +1,59 @@
+{
+  "changed_files": {
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/BODY_MAP.json": {
+      "after": {
+        "bytes": 3786,
+        "sha256": "b4686570947cedae161895bfca69ccf8c3d7b79cc643868cd45429bfd390b146"
+      },
+      "before": {
+        "bytes": 3786,
+        "sha256": "b2ffe0462c3d209a0c1d610c555f22673608fbf737f6d1921e9729b1baa90329"
+      }
+    },
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json": {
+      "after": {
+        "bytes": 165017,
+        "sha256": "4c7d2a395df4138085319bc34c8c337b4ed090503b36b1d5b33adeefd6b7a448"
+      },
+      "before": {
+        "bytes": 165017,
+        "sha256": "3f80d0b3bcf74300701cc28760e1755a9fafbce16680e7f4b76575b1678351e6"
+      }
+    },
+    ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_header.md": {
+      "after": {
+        "bytes": 10238,
+        "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32"
+      },
+      "before": {
+        "bytes": 10232,
+        "sha256": "3418b53f883a06757dff53dd275e49efce2ede6eb7add0b9e17a98e784b1ed89"
+      }
+    },
+    "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md": {
+      "after": {
+        "bytes": 60202,
+        "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+      },
+      "before": {
+        "bytes": 60196,
+        "sha256": "8d55f8dba3a1c7b6a8e1c00a7aca9f902b67896613c214cf24f4e2d196cb1565"
+      }
+    },
+    "scripts/preparation_moment_source_identity_2026_10_14.py": {
+      "after": {
+        "bytes": 63761,
+        "sha256": "49e8398ba1dd8708685ee0e337c412f5bf3cf120c606050f971620618a11baeb"
+      },
+      "before": {
+        "bytes": 63761,
+        "sha256": "6a0d4fdaf0592f8d7a84bd2322e3b9e411af5e35553eaf621cd10f2a22561543"
+      }
+    }
+  },
+  "mathematical_changes": 0,
+  "mathematical_predicates": 0,
+  "previous_payload_files_preserved": 411,
+  "primary_helper_executed": false,
+  "raw_bodies_changed": 0
+}

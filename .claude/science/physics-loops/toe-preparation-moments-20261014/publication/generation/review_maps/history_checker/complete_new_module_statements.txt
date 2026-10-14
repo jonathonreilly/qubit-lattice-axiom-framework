@@ -1,0 +1,19 @@
+
+# module statement 0
+"""Verify exact complete pre-repair payload recovery without copying its unchanged content."""
+
+# module statement 1
+import hashlib
+
+# module statement 2
+import json
+
+# module statement 3
+from pathlib import Path
+
+# module statement 4
+ROOT = Path(__file__).resolve().parent
+
+# module statement 6
+if __name__ == '__main__':
+    run()

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/preparation_moment_source_identity_2026_10_14.py
+runner_sha256: 72e9f007f4093ec2de21a3f19b1a81abf08979dce317f477ccc11ac4eae42537
+input_fingerprint_sha256: 7ec0694efc41d8fade156007fabc9ce00b741218c8a76e8c73494074dc5343cf
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+{
+  "archive_records_checked": 616,
+  "declared_inputs_checked": 413,
+  "external_scientific_reads": [
+    "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "inner_aliases_checked": 482,
+  "mathematical_predicates": 0,
+  "not_established": [
+    "mathematical correctness",
+    "physical preparation",
+    "independent audit",
+    "canonical landing approval"
+  ],
+  "package_integrity_read_count": 412,
+  "proof_bodies_checked": 3,
+  "scientific_programs_executed": 0,
+  "status": "source_identity_verified"
+}
+per_element: checked and not executed — source bytes only; no operator algebra or numerical identity is evaluated.
+per_site: checked and not executed — source bytes only; no local preparation or geometry measurement is performed.
+per_mode: checked and not executed — source bytes only; no mode, continuum or native dynamics theorem is tested.
+per_block: checked and not executed — exact argument reconstruction only; no moment inequality is proved by this runner.
+lattice_wide: checked and not executed — preservation only; no all-volume preparation, common cap or physical realization is established.
+
+----- stderr -----
+

@@ -1,0 +1,34 @@
+{
+  "archive_objects": 395,
+  "archive_records": 616,
+  "archived_science_executed": false,
+  "core_occurrences_in_note": {
+    "chain": 1,
+    "generic": 1,
+    "sharper": 1
+  },
+  "external_math_parents": 1,
+  "helper": {
+    "bytes": 63761,
+    "sha256": "49e8398ba1dd8708685ee0e337c412f5bf3cf120c606050f971620618a11baeb"
+  },
+  "inner_aliases_checked": 482,
+  "manifest": {
+    "bytes": 165017,
+    "sha256": "4c7d2a395df4138085319bc34c8c337b4ed090503b36b1d5b33adeefd6b7a448"
+  },
+  "mathematical_predicates": 0,
+  "mode": "read_only_reproduction",
+  "note": {
+    "bytes": 60202,
+    "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+  },
+  "output": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/payload",
+  "proposed_helper_executed": false,
+  "schema": "preparation-moment-components-v1",
+  "source_group_counts": {
+    "chain": 158,
+    "generic": 141,
+    "sharper": 252
+  }
+}

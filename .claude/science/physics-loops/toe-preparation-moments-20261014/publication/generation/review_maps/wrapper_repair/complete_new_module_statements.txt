@@ -1,0 +1,22 @@
+
+# module statement 0
+"""Apply the sole root-requested notation repair; preserve all prior payload bytes by recipe."""
+
+# module statement 1
+import copy
+
+# module statement 2
+import hashlib
+
+# module statement 3
+import json
+
+# module statement 4
+from pathlib import Path
+
+# module statement 5
+ROOT = Path(__file__).resolve().parent
+
+# module statement 9
+if __name__ == '__main__':
+    run()

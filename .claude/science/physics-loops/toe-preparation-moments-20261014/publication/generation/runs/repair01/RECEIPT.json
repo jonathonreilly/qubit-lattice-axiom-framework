@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/REPAIR_WRAPPER.py"
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-10-14T22:05:20.593442+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/REPAIR_WRAPPER.py",
+  "source_sha256_after": "b33c2bf6baa484d539f23dc8945aa6b3f2dad28df79a3276ba21e0fba90dde73",
+  "source_sha256_before": "b33c2bf6baa484d539f23dc8945aa6b3f2dad28df79a3276ba21e0fba90dde73",
+  "source_unchanged": true,
+  "started_utc": "2026-10-14T22:05:20.319621+00:00",
+  "stderr": {
+    "bytes": 0,
+    "path": "runs/repair01/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 2007,
+    "path": "runs/repair01/stdout.txt",
+    "sha256": "6307b8ff9c7023b249cd268aa06d49f390bc3516cf8142875a8e1b08dc44eaa7"
+  },
+  "wall_seconds": 0.26926329219713807
+}

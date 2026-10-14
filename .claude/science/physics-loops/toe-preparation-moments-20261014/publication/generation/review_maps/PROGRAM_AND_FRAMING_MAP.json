@@ -1,0 +1,4834 @@
+{
+  "body_map": {
+    "bodies": [
+      {
+        "byte_end_exclusive": 22609,
+        "byte_start_0": 10238,
+        "bytes": 12371,
+        "id": "generic",
+        "line_end_1": 235,
+        "line_start_1": 76,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_candidate/DERIVATION.md",
+        "role": "complete primary generic moment proof",
+        "sha256": "be12650621104a57f7e914a8f3bcba518d2a1f6abd7181022bb37cf5089794f2",
+        "source_lines": 160,
+        "terminal_lf_count": 1,
+        "transformation": "none"
+      },
+      {
+        "byte_end_exclusive": 38776,
+        "byte_start_0": 22794,
+        "bytes": 15982,
+        "id": "sharper",
+        "line_end_1": 439,
+        "line_start_1": 241,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_independent/DERIVATION.md",
+        "role": "complete primary sharper moment proof",
+        "sha256": "de7e79161faf1c35941285c9670e9cc421f798c51204da139575c36870ab9976",
+        "source_lines": 199,
+        "terminal_lf_count": 1,
+        "transformation": "none"
+      },
+      {
+        "byte_end_exclusive": 59953,
+        "byte_start_0": 39056,
+        "bytes": 20897,
+        "id": "chain",
+        "line_end_1": 662,
+        "line_start_1": 445,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_chain_placement/DERIVATION.md",
+        "role": "complete prerequisite appendix; not separately retained",
+        "sha256": "79d2388a7f6e2ce36d8b1055bd2ad80149a9e5375ff7f23248391d72bf5692ff",
+        "source_lines": 218,
+        "terminal_lf_count": 1,
+        "transformation": "none"
+      }
+    ],
+    "fragments": [
+      {
+        "bytes": 10238,
+        "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_header.md",
+        "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32"
+      },
+      {
+        "bytes": 185,
+        "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_generic_sharper.md",
+        "sha256": "d2279ac4d50dfa051f8d22a27b3499338ffc95898a875f0715f1471e14aca5a2"
+      },
+      {
+        "bytes": 280,
+        "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/between_sharper_chain.md",
+        "sha256": "5f681e7482c0bb55f642c54453ba7b3689ef967165f9446af6b9032bd4a84956"
+      },
+      {
+        "bytes": 249,
+        "path": ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_footer.md",
+        "sha256": "7a3f17d49ad1308661e0882d1892031435c44457e2597a1b91d6699c04e21e29"
+      }
+    ],
+    "note": {
+      "bytes": 60202,
+      "path": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "9cfc7b475f26975e61de5c52d5c616098e0d5e34f86507a95cccffc9f47df21f"
+    },
+    "parent": {
+      "byte_end_exclusive": 32138,
+      "byte_start_0": 8389,
+      "bytes": 32493,
+      "claim_id": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14",
+      "commit": "463fa381d9fe9403b6b6f3e3ce19505aa947edf2",
+      "line_end_1": 319,
+      "line_start_1": 50,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "raw_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_three_body_multi_port_extension/DERIVATION.md",
+      "raw_sha256": "be8f8d49362f5d9e363bd1df8b70b6e46b475beaa52e9ee5e18e0bece4293ddc",
+      "repo_path": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "sha256": "f02e80d2c69be61819c9fc43a8a3125cc1432f895c01b93a5e7081ec2b4d8755"
+    },
+    "schema": "preparation-moment-components-v1"
+  },
+  "framing": [
+    {
+      "current": {
+        "bytes": 10238,
+        "path": "templates/note_header.md",
+        "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32"
+      },
+      "diff": {
+        "bytes": 15119,
+        "path": "review_maps/framing/generic_wrapper_to_current.diff",
+        "sha256": "2130b9fb151dab838f1b57b2ae42ba927703c81f2ab138caebc7a2764f387172"
+      },
+      "prior": {
+        "bytes": 4594,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_preparation_moment_block_source_assembly/wrappers/note_prefix.md",
+        "sha256": "9dbbf4d849350a94ce9e1aa6b3988577439756a119b1a1c3761dc3a876397d07"
+      },
+      "raw_proof_change": false
+    },
+    {
+      "current": {
+        "bytes": 10238,
+        "path": "templates/note_header.md",
+        "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32"
+      },
+      "diff": {
+        "bytes": 15236,
+        "path": "review_maps/framing/sharper_wrapper_to_current.diff",
+        "sha256": "b451a9b446797321361a06746d947c7acd61a48cd770c4729d1bebe469442458"
+      },
+      "prior": {
+        "bytes": 4710,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_sharper_preparation_moment_source_assembly/wrappers/note_prefix.md",
+        "sha256": "ba495e928aa18af3104be000f1d33541e8d4f2effe7fbfd0a6f2db8ca0d72975"
+      },
+      "raw_proof_change": false
+    },
+    {
+      "current": {
+        "bytes": 10238,
+        "path": "templates/note_header.md",
+        "sha256": "691a774c65b8e7bc538e748dcfc9799712f36e4d18eb95662752c907eebe5f32"
+      },
+      "diff": {
+        "bytes": 16376,
+        "path": "review_maps/framing/chain_wrapper_to_current.diff",
+        "sha256": "0495588b244eac79f52d5f79f3a96c370d2d7a4e611d7c879fab4de7f3bff1ad"
+      },
+      "prior": {
+        "bytes": 5850,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_multi_port_chain_placement_source_assembly/wrappers/note_prefix.md",
+        "sha256": "4bff8eeb98b242c342376204343ac9b303696339076d419043095acf0c1cf1fd"
+      },
+      "raw_proof_change": false
+    }
+  ],
+  "new_current_sidecars": [
+    "packet_text/ASSUMPTION_LEDGER.md",
+    "packet_text/CLAIM_STATUS.md",
+    "packet_text/CONFORMANCE.md",
+    "packet_text/EVIDENCE_SCOPE.md",
+    "packet_text/INTEGRITY_CONTROL_PLAN.md"
+  ],
+  "new_math_predicates": 0,
+  "programs": [
+    {
+      "complete_diff": "review_maps/builder/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 28479,
+        "sha256": "933aaacbde996f2165c6196dd236baa8b7847496839c059a6f786936e9c7ae41"
+      },
+      "current": {
+        "bytes": 12265,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/BUILD_COMPONENTS.py",
+        "sha256": "f501ce76662aebbf6a3bb96c5816cc055338c562f40e7793f17d16b02042e9cf"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 101,
+          "byte_start_0": 23,
+          "bytes": 78,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8f4812299ad2ef805abdb63a1439f5e12b938a891c6f2987c20c8ba8cf60da67",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 117,
+          "byte_start_0": 101,
+          "bytes": 16,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "b53e5a5286172fb0a4772843ba3ed62331687bcb9939ec9c49e9066d4ee4272d",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 129,
+          "byte_start_0": 117,
+          "bytes": 12,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "27fe0461ff4b26894ab6a6739662ba03e2fa5fc02c6fb22f144eb902c6d1099d",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 144,
+          "byte_start_0": 129,
+          "bytes": 15,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 156,
+          "byte_start_0": 144,
+          "bytes": 12,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 196,
+          "byte_start_0": 156,
+          "bytes": 40,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "08066edf143b296e22c8807be565d4803e718167c288716bf8f2dad1a28abaee",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 236,
+          "byte_start_0": 197,
+          "bytes": 39,
+          "end_line_1": 9,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 280,
+          "byte_start_0": 236,
+          "bytes": 44,
+          "end_line_1": 10,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "SCHEMA"
+          ],
+          "sha256": "0476deacfeec0d8b3a1606209ce09e6c489abc28916d46501dce4bc2286d109c",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 400,
+          "byte_start_0": 280,
+          "bytes": 120,
+          "end_line_1": 12,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "FRAGMENTS"
+          ],
+          "sha256": "1fe0dc39f5563ea8bfdc0d9f2fa6f1941ee983533e26ebe323582012c077ba9d",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 424,
+          "byte_start_0": 400,
+          "bytes": 24,
+          "end_line_1": 13,
+          "index": 9,
+          "kind": "Assign",
+          "names": [
+            "VERIFY_EXISTING"
+          ],
+          "sha256": "ba242929facc2cfc3b45ca080bdca6b44dc164c02f19435da8c7284cca9802b5",
+          "start_line_1": 13
+        },
+        {
+          "byte_end_exclusive": 440,
+          "byte_start_0": 424,
+          "bytes": 16,
+          "end_line_1": 14,
+          "index": 10,
+          "kind": "Assign",
+          "names": [
+            "WRITTEN"
+          ],
+          "sha256": "2295611d20735074245676c3656df2eb5b931dbcb3001cf78adc99fa8a3108c1",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 12265,
+          "byte_start_0": 11837,
+          "bytes": 428,
+          "end_line_1": 252,
+          "index": 20,
+          "kind": "If",
+          "names": [],
+          "sha256": "1a210dd85749cdbc63cf198eb4e8fdaa2794bf599e4144eaf4a9ad9f0852bc50",
+          "start_line_1": 245
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "a1df4c27d9212b43c282d92523cc028c47f3b451697f9cbe6a914f47e96681b3",
+          "byte_end_exclusive": 501,
+          "byte_start_0": 442,
+          "bytes": 59,
+          "comparison": "changed",
+          "end_line_1": 18,
+          "name": "sha",
+          "previous": {
+            "ast_sha256": "ad04fb537e29bd8d0578d7470d18f7656b1b7982324bbff203a7c2b1ff9bfffb",
+            "byte_end_exclusive": 863,
+            "byte_start_0": 815,
+            "bytes": 48,
+            "end_line_1": 13,
+            "name": "sha",
+            "sha256": "7bda3ea1286496b59ee518feabe590d664e6e31da0fa9ad819660386faa1d061",
+            "start_line_1": 13
+          },
+          "sha256": "4e627faf4b903521e935f7c6f3ae93545856f821d0e2565ba7ea6cf97d3d0e6c",
+          "start_line_1": 17
+        },
+        {
+          "ast_sha256": "f3338bac012a48c74423d94698cc2c409cfd058a26835a382a0c688e73a5fe93",
+          "byte_end_exclusive": 572,
+          "byte_start_0": 503,
+          "bytes": 69,
+          "comparison": "new",
+          "end_line_1": 22,
+          "name": "info",
+          "previous": null,
+          "sha256": "66958c57b2e83d759ca387e7f01f6aee46082c66a32bb7d249aa5300f5242c4a",
+          "start_line_1": 21
+        },
+        {
+          "ast_sha256": "3b218d97634fd91fd6595535193a2eb525911ab34ffd45793deaba58332ca99e",
+          "byte_end_exclusive": 663,
+          "byte_start_0": 574,
+          "bytes": 89,
+          "comparison": "new",
+          "end_line_1": 27,
+          "name": "require",
+          "previous": null,
+          "sha256": "771470ca6047ea7b84814e6cc23c2357b927e95ad29ed2fbd7b34f2969c68de4",
+          "start_line_1": 25
+        },
+        {
+          "ast_sha256": "efa865b87335bb8564d59c3f0db861301b197c64c497fbc21ba55ad158df1de0",
+          "byte_end_exclusive": 846,
+          "byte_start_0": 665,
+          "bytes": 181,
+          "comparison": "new",
+          "end_line_1": 34,
+          "name": "safe",
+          "previous": null,
+          "sha256": "b755b2166fb4faadbec58c91c04c6a89c6a587fb0278fb241163ea930ff9e269",
+          "start_line_1": 30
+        },
+        {
+          "ast_sha256": "1e1c548a54c3bb2ad3bf9ebc3c6c5c8aef0579c5bc1d90a208408d5f56eca702",
+          "byte_end_exclusive": 1195,
+          "byte_start_0": 848,
+          "bytes": 347,
+          "comparison": "new",
+          "end_line_1": 44,
+          "name": "read_pin",
+          "previous": null,
+          "sha256": "e13487b0673eb047bf54d9864e8ca00f4cc8aa6cfdc2c10c9dec39c850fdcd7b",
+          "start_line_1": 37
+        },
+        {
+          "ast_sha256": "68d5b21eef7da7311f283c9bd3419c4370b00646804b1dc70af60114816097d0",
+          "byte_end_exclusive": 1294,
+          "byte_start_0": 1197,
+          "bytes": 97,
+          "comparison": "new",
+          "end_line_1": 48,
+          "name": "encode_json",
+          "previous": null,
+          "sha256": "d1e5bdd51a382d1180bfb022149c7dfba743803ccc3039bf669abe8c92f71142",
+          "start_line_1": 47
+        },
+        {
+          "ast_sha256": "a5fbcc4b82df7f1b9cc539470e75326a520ddd28a9b397a708f05061084bf1dc",
+          "byte_end_exclusive": 1764,
+          "byte_start_0": 1296,
+          "bytes": 468,
+          "comparison": "changed",
+          "end_line_1": 61,
+          "name": "write",
+          "previous": {
+            "ast_sha256": "f1509b9c21537aa5207186dea31417c0830fb3a0cfd13e7933b6f3491c6fd1f1",
+            "byte_end_exclusive": 1110,
+            "byte_start_0": 991,
+            "bytes": 119,
+            "end_line_1": 18,
+            "name": "write",
+            "sha256": "17a950a2d22dd6dd94235b080e3cf8cbcc61f4ae5f35e10f338b9dd579b41e34",
+            "start_line_1": 17
+          },
+          "sha256": "2d23e6f39eb8d1e517df01070b2b4894c780ddff1f2a909d70c8e83ba57fc98f",
+          "start_line_1": 51
+        },
+        {
+          "ast_sha256": "37e670c901e789d264ee8778a0dbca9367a5ba16a5d0a660271fcf807a6cffc1",
+          "byte_end_exclusive": 2593,
+          "byte_start_0": 1766,
+          "bytes": 827,
+          "comparison": "new",
+          "end_line_1": 81,
+          "name": "checked_group",
+          "previous": null,
+          "sha256": "c7f9869450a04e519644ff61a05bbd9ad5050ccf50d36d234e0528808af28a16",
+          "start_line_1": 64
+        },
+        {
+          "ast_sha256": "08c7f2839245efc41256f8718ad0b2c6835b77e6f93618fb16810755eb1d88f2",
+          "byte_end_exclusive": 11835,
+          "byte_start_0": 2595,
+          "bytes": 9240,
+          "comparison": "new",
+          "end_line_1": 242,
+          "name": "build",
+          "previous": null,
+          "sha256": "a115d696b6a4317c826999d084717cb986480c1eff76fc19d385365c3c540a4f",
+          "start_line_1": 84
+        },
+        {
+          "ast_sha256": "b7959dcc3ce28dad174da69de182307455367b712bf274d3500f7898087e845b",
+          "byte_end_exclusive": 4464,
+          "byte_start_0": 4099,
+          "bytes": 365,
+          "comparison": "new",
+          "end_line_1": 124,
+          "name": "build.object_part",
+          "previous": null,
+          "sha256": "18919648783397b45d24f411dc44115804fa2d708567f2664bdb28599d8ff2aa",
+          "start_line_1": 117
+        },
+        {
+          "ast_sha256": "144d449e2d85d585d7dd56f0fc90a63fdb3c7cb838365888066106734f9767e4",
+          "byte_end_exclusive": 5325,
+          "byte_start_0": 4465,
+          "bytes": 860,
+          "comparison": "new",
+          "end_line_1": 145,
+          "name": "build.add_record",
+          "previous": null,
+          "sha256": "6b1923fe36ce3185135a322d284312de0b9a3ddc4a2431cded694469e644134e",
+          "start_line_1": 126
+        }
+      ],
+      "label": "builder",
+      "previous": {
+        "bytes": 15549,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_sharper_preparation_moment_source_assembly/ASSEMBLE_SOURCE_ONLY.py",
+        "sha256": "3033794d7e37a8aa55b6c6843c6ac3db8c4326c10ec813fe5dbb742f85833786"
+      },
+      "previous_module_statements": [
+        {
+          "byte_end_exclusive": 100,
+          "byte_start_0": 23,
+          "bytes": 77,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "faf815dc725748043eaeac0a1588ca072b2558cfecfe4d970fb557bf6a0d14d0",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 125,
+          "byte_start_0": 100,
+          "bytes": 25,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 162,
+          "byte_start_0": 125,
+          "bytes": 37,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "c4a79b30cee9f824718241bb50606bbb5bba0b1005678ec6881d4b58d44d386b",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 242,
+          "byte_start_0": 162,
+          "bytes": 80,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Assign",
+          "names": [
+            "P"
+          ],
+          "sha256": "524e27f519c03ea856e5b62f43912521c7e6260c4b5ece063047dd3e238b4d59",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 242,
+          "byte_start_0": 162,
+          "bytes": 80,
+          "end_line_1": 5,
+          "index": 4,
+          "kind": "Assign",
+          "names": [
+            "Z"
+          ],
+          "sha256": "524e27f519c03ea856e5b62f43912521c7e6260c4b5ece063047dd3e238b4d59",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 242,
+          "byte_start_0": 162,
+          "bytes": 80,
+          "end_line_1": 5,
+          "index": 5,
+          "kind": "Assign",
+          "names": [
+            "Q"
+          ],
+          "sha256": "524e27f519c03ea856e5b62f43912521c7e6260c4b5ece063047dd3e238b4d59",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 335,
+          "byte_start_0": 242,
+          "bytes": 93,
+          "end_line_1": 6,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "A"
+          ],
+          "sha256": "dd1f7c91a9e56d79860d1c0db60aef069d6076fc524075a06dc9aa5072d7dd28",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 335,
+          "byte_start_0": 242,
+          "bytes": 93,
+          "end_line_1": 6,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "R"
+          ],
+          "sha256": "dd1f7c91a9e56d79860d1c0db60aef069d6076fc524075a06dc9aa5072d7dd28",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 402,
+          "byte_start_0": 335,
+          "bytes": 67,
+          "end_line_1": 7,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "POST"
+          ],
+          "sha256": "ab9095fe134c884909d7ba37aa21d000e517545d9c00f4ff66b3314ca81bc591",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 559,
+          "byte_start_0": 402,
+          "bytes": 157,
+          "end_line_1": 8,
+          "index": 9,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "c3cd97d0f0fd644163e0032b02b86af0f8fad4646049a1b7276bfba7220af8e5",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 559,
+          "byte_start_0": 402,
+          "bytes": 157,
+          "end_line_1": 8,
+          "index": 10,
+          "kind": "Assign",
+          "names": [
+            "OUTER"
+          ],
+          "sha256": "c3cd97d0f0fd644163e0032b02b86af0f8fad4646049a1b7276bfba7220af8e5",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 559,
+          "byte_start_0": 402,
+          "bytes": 157,
+          "end_line_1": 8,
+          "index": 11,
+          "kind": "Assign",
+          "names": [
+            "BASE"
+          ],
+          "sha256": "c3cd97d0f0fd644163e0032b02b86af0f8fad4646049a1b7276bfba7220af8e5",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 632,
+          "byte_start_0": 559,
+          "bytes": 73,
+          "end_line_1": 9,
+          "index": 12,
+          "kind": "Assign",
+          "names": [
+            "PROOF"
+          ],
+          "sha256": "36dbfd5815551e101e4d873b97abcaeb76170ba5c433102c618f1e34e7362f1f",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 706,
+          "byte_start_0": 632,
+          "bytes": 74,
+          "end_line_1": 10,
+          "index": 13,
+          "kind": "Assign",
+          "names": [
+            "ACCEPT"
+          ],
+          "sha256": "78cf20b8d109266d482f8f9655c5afebad102f3340984bcbb59fbc241685bbf1",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 785,
+          "byte_start_0": 706,
+          "bytes": 79,
+          "end_line_1": 11,
+          "index": 14,
+          "kind": "Assign",
+          "names": [
+            "BASE_FREEZE"
+          ],
+          "sha256": "8dd5a4d6f26307a670a539b459f3b7a666b6a10a119a592937eaca066a28acb3",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 815,
+          "byte_start_0": 785,
+          "bytes": 30,
+          "end_line_1": 12,
+          "index": 15,
+          "kind": "Assign",
+          "names": [
+            "aliases"
+          ],
+          "sha256": "98575a641ca6c5ddeb020bf4c9e8baa6d944dbec63bf161f179d96a907c752e8",
+          "start_line_1": 12
+        },
+        {
+          "byte_end_exclusive": 815,
+          "byte_start_0": 785,
+          "bytes": 30,
+          "end_line_1": 12,
+          "index": 16,
+          "kind": "Assign",
+          "names": [
+            "groups"
+          ],
+          "sha256": "98575a641ca6c5ddeb020bf4c9e8baa6d944dbec63bf161f179d96a907c752e8",
+          "start_line_1": 12
+        },
+        {
+          "byte_end_exclusive": 815,
+          "byte_start_0": 785,
+          "bytes": 30,
+          "end_line_1": 12,
+          "index": 17,
+          "kind": "Assign",
+          "names": [
+            "pairs"
+          ],
+          "sha256": "98575a641ca6c5ddeb020bf4c9e8baa6d944dbec63bf161f179d96a907c752e8",
+          "start_line_1": 12
+        },
+        {
+          "byte_end_exclusive": 2864,
+          "byte_start_0": 2758,
+          "bytes": 106,
+          "end_line_1": 46,
+          "index": 25,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "1a670ed3632c1b7b19962416cf8b1902c25b74e1ffc742f135f23f2383d8e16f",
+          "start_line_1": 46
+        },
+        {
+          "byte_end_exclusive": 2864,
+          "byte_start_0": 2758,
+          "bytes": 106,
+          "end_line_1": 46,
+          "index": 26,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "1a670ed3632c1b7b19962416cf8b1902c25b74e1ffc742f135f23f2383d8e16f",
+          "start_line_1": 46
+        },
+        {
+          "byte_end_exclusive": 2864,
+          "byte_start_0": 2758,
+          "bytes": 106,
+          "end_line_1": 46,
+          "index": 27,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "1a670ed3632c1b7b19962416cf8b1902c25b74e1ffc742f135f23f2383d8e16f",
+          "start_line_1": 46
+        },
+        {
+          "byte_end_exclusive": 2979,
+          "byte_start_0": 2864,
+          "bytes": 115,
+          "end_line_1": 47,
+          "index": 28,
+          "kind": "Assign",
+          "names": [
+            "body"
+          ],
+          "sha256": "0c16254980cd8615278d590d1c13ba10224c16330b7d5ea600cbd8c4f4e8d5d3",
+          "start_line_1": 47
+        },
+        {
+          "byte_end_exclusive": 2979,
+          "byte_start_0": 2864,
+          "bytes": 115,
+          "end_line_1": 47,
+          "index": 29,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "0c16254980cd8615278d590d1c13ba10224c16330b7d5ea600cbd8c4f4e8d5d3",
+          "start_line_1": 47
+        },
+        {
+          "byte_end_exclusive": 3038,
+          "byte_start_0": 2979,
+          "bytes": 59,
+          "end_line_1": 48,
+          "index": 30,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "5cbfbe4f4d82d364426f4ca394c4db66de1479330761f1bc3e87c8f67a52047f",
+          "start_line_1": 48
+        },
+        {
+          "byte_end_exclusive": 3153,
+          "byte_start_0": 3038,
+          "bytes": 115,
+          "end_line_1": 49,
+          "index": 31,
+          "kind": "Assign",
+          "names": [
+            "prefix"
+          ],
+          "sha256": "51180c27442f973a498d6a31d92ab7866a0982e90def329c8d6ccf305fcdaef0",
+          "start_line_1": 49
+        },
+        {
+          "byte_end_exclusive": 3153,
+          "byte_start_0": 3038,
+          "bytes": 115,
+          "end_line_1": 49,
+          "index": 32,
+          "kind": "Assign",
+          "names": [
+            "suffix"
+          ],
+          "sha256": "51180c27442f973a498d6a31d92ab7866a0982e90def329c8d6ccf305fcdaef0",
+          "start_line_1": 49
+        },
+        {
+          "byte_end_exclusive": 3153,
+          "byte_start_0": 3038,
+          "bytes": 115,
+          "end_line_1": 49,
+          "index": 33,
+          "kind": "Assign",
+          "names": [
+            "leading"
+          ],
+          "sha256": "51180c27442f973a498d6a31d92ab7866a0982e90def329c8d6ccf305fcdaef0",
+          "start_line_1": 49
+        },
+        {
+          "byte_end_exclusive": 3210,
+          "byte_start_0": 3153,
+          "bytes": 57,
+          "end_line_1": 50,
+          "index": 34,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "78c0f0d2d5a0d1b7a22c1b2a5e5eb742531597a9eef48b41c1f4df18d370b9e6",
+          "start_line_1": 50
+        },
+        {
+          "byte_end_exclusive": 3210,
+          "byte_start_0": 3153,
+          "bytes": 57,
+          "end_line_1": 50,
+          "index": 35,
+          "kind": "Assign",
+          "names": [
+            "note"
+          ],
+          "sha256": "78c0f0d2d5a0d1b7a22c1b2a5e5eb742531597a9eef48b41c1f4df18d370b9e6",
+          "start_line_1": 50
+        },
+        {
+          "byte_end_exclusive": 3335,
+          "byte_start_0": 3210,
+          "bytes": 125,
+          "end_line_1": 51,
+          "index": 36,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "8ca5708f5e41556b3b316ea16381e4af8a812f036717de7985d5190444c08c9b",
+          "start_line_1": 51
+        },
+        {
+          "byte_end_exclusive": 3335,
+          "byte_start_0": 3210,
+          "bytes": 125,
+          "end_line_1": 51,
+          "index": 37,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8ca5708f5e41556b3b316ea16381e4af8a812f036717de7985d5190444c08c9b",
+          "start_line_1": 51
+        },
+        {
+          "byte_end_exclusive": 4113,
+          "byte_start_0": 3335,
+          "bytes": 778,
+          "end_line_1": 52,
+          "index": 38,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "5880eb46b82de920b656bd124bd0495ba94ac2411faa1d57198935bcc3e8678c",
+          "start_line_1": 52
+        },
+        {
+          "byte_end_exclusive": 4221,
+          "byte_start_0": 4113,
+          "bytes": 108,
+          "end_line_1": 53,
+          "index": 39,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "eaf07ac37361bc70ef73214c30bf27b9be5b23fe9ac80dc1df93ec064481962f",
+          "start_line_1": 53
+        },
+        {
+          "byte_end_exclusive": 4329,
+          "byte_start_0": 4221,
+          "bytes": 108,
+          "end_line_1": 54,
+          "index": 40,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f6f0b46e004827ad60c0770ab0e497d70d07759aa69e032ef81f4bd9b86160c5",
+          "start_line_1": 54
+        },
+        {
+          "byte_end_exclusive": 4448,
+          "byte_start_0": 4329,
+          "bytes": 119,
+          "end_line_1": 55,
+          "index": 41,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "03da5af752b738b1adcdb1f713f8f9def88ab1d1cab7b720b43bdb32829c384e",
+          "start_line_1": 55
+        },
+        {
+          "byte_end_exclusive": 4478,
+          "byte_start_0": 4448,
+          "bytes": 30,
+          "end_line_1": 56,
+          "index": 42,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "fc9e1b858ba9b0d256627a939ccb0e9e514224d133740c8f166ce6c41ca697ff",
+          "start_line_1": 56
+        },
+        {
+          "byte_end_exclusive": 4700,
+          "byte_start_0": 4478,
+          "bytes": 222,
+          "end_line_1": 57,
+          "index": 43,
+          "kind": "For",
+          "names": [],
+          "sha256": "ec37bbb59b475e837670e45b3f7db81b11eb1a50ed9a4fa1b00c59dd6c52e90e",
+          "start_line_1": 57
+        },
+        {
+          "byte_end_exclusive": 4995,
+          "byte_start_0": 4700,
+          "bytes": 295,
+          "end_line_1": 59,
+          "index": 44,
+          "kind": "For",
+          "names": [],
+          "sha256": "a199bca458162d3eb2dce26e4b664a92acf156a38f1735745b9890c1696b7082",
+          "start_line_1": 58
+        },
+        {
+          "byte_end_exclusive": 5199,
+          "byte_start_0": 4995,
+          "bytes": 204,
+          "end_line_1": 61,
+          "index": 45,
+          "kind": "For",
+          "names": [],
+          "sha256": "7981bbb01f62ff75607d400b0ad9931cca2632ab73466ca1f15d3880b939cbeb",
+          "start_line_1": 60
+        },
+        {
+          "byte_end_exclusive": 5221,
+          "byte_start_0": 5199,
+          "bytes": 22,
+          "end_line_1": 62,
+          "index": 46,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "7f3473d451a6f7c329663ec0cf59f85f0c1940bfb061be39cea721ae95e739ec",
+          "start_line_1": 62
+        },
+        {
+          "byte_end_exclusive": 5276,
+          "byte_start_0": 5221,
+          "bytes": 55,
+          "end_line_1": 63,
+          "index": 47,
+          "kind": "Assign",
+          "names": [
+            "AID"
+          ],
+          "sha256": "5e50b3b3fc7e14a0dc4f0f5d50b864029340cbcfbf2087f3a554c4cc9ecebc2b",
+          "start_line_1": 63
+        },
+        {
+          "byte_end_exclusive": 5387,
+          "byte_start_0": 5276,
+          "bytes": 111,
+          "end_line_1": 64,
+          "index": 48,
+          "kind": "For",
+          "names": [],
+          "sha256": "cc66e0b44e8a535b1ac083219a0e61515fb431afce53ed29948abe66d23b613d",
+          "start_line_1": 64
+        },
+        {
+          "byte_end_exclusive": 5520,
+          "byte_start_0": 5387,
+          "bytes": 133,
+          "end_line_1": 65,
+          "index": 49,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "98b5bb26e339212d7831a5bccd1b42376744a9ac18ba23b8be491296edc74413",
+          "start_line_1": 65
+        },
+        {
+          "byte_end_exclusive": 5656,
+          "byte_start_0": 5520,
+          "bytes": 136,
+          "end_line_1": 66,
+          "index": 50,
+          "kind": "Assert",
+          "names": [],
+          "sha256": "8fb8483adfb8392e25f706cf0a09c3ab83f1c97ce1142279ccea613836fa0b18",
+          "start_line_1": 66
+        },
+        {
+          "byte_end_exclusive": 5656,
+          "byte_start_0": 5520,
+          "bytes": 136,
+          "end_line_1": 66,
+          "index": 51,
+          "kind": "Assign",
+          "names": [
+            "base_members"
+          ],
+          "sha256": "8fb8483adfb8392e25f706cf0a09c3ab83f1c97ce1142279ccea613836fa0b18",
+          "start_line_1": 66
+        },
+        {
+          "byte_end_exclusive": 6124,
+          "byte_start_0": 5656,
+          "bytes": 468,
+          "end_line_1": 67,
+          "index": 52,
+          "kind": "Assign",
+          "names": [
+            "baseline_names"
+          ],
+          "sha256": "ec4afd383ae10f57f56e0a0775ca21fb98e41557dc132b49baf084d6641c1a0c",
+          "start_line_1": 67
+        },
+        {
+          "byte_end_exclusive": 6269,
+          "byte_start_0": 6124,
+          "bytes": 145,
+          "end_line_1": 68,
+          "index": 53,
+          "kind": "For",
+          "names": [],
+          "sha256": "711ca6fa93c16f6df821df4b8e7ec2d9d30512edba5609135629f194d673bac3",
+          "start_line_1": 68
+        },
+        {
+          "byte_end_exclusive": 6434,
+          "byte_start_0": 6269,
+          "bytes": 165,
+          "end_line_1": 69,
+          "index": 54,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "876a3a5b118405a924904ef0dc2aa4386ec121f80aecba21d97e85046ce89b59",
+          "start_line_1": 69
+        },
+        {
+          "byte_end_exclusive": 6587,
+          "byte_start_0": 6434,
+          "bytes": 153,
+          "end_line_1": 70,
+          "index": 55,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "5dc07da9ff89638d6a0ccd1feabbf2eb804d934aae32551e81eda82ce11fceb6",
+          "start_line_1": 70
+        },
+        {
+          "byte_end_exclusive": 6667,
+          "byte_start_0": 6587,
+          "bytes": 80,
+          "end_line_1": 71,
+          "index": 56,
+          "kind": "Assign",
+          "names": [
+            "base_aliases"
+          ],
+          "sha256": "5e21c05d6f6d3c20403c3d092e33e75aadaae72f24cf90564889fbebe4ff70cf",
+          "start_line_1": 71
+        },
+        {
+          "byte_end_exclusive": 6888,
+          "byte_start_0": 6667,
+          "bytes": 221,
+          "end_line_1": 73,
+          "index": 57,
+          "kind": "For",
+          "names": [],
+          "sha256": "b1347cca7d23ee3ddbdfd106ae216e9628c1016dd16a19c07fcff019f5c1b7a4",
+          "start_line_1": 72
+        },
+        {
+          "byte_end_exclusive": 7244,
+          "byte_start_0": 6888,
+          "bytes": 356,
+          "end_line_1": 74,
+          "index": 58,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c5cf89cdb66e92e618e186d77a87cf512220cd797795b9bf5280429e959972c1",
+          "start_line_1": 74
+        },
+        {
+          "byte_end_exclusive": 7664,
+          "byte_start_0": 7244,
+          "bytes": 420,
+          "end_line_1": 75,
+          "index": 59,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "6cc665e2e3a579ee90822d765f3b1d81dcbbc360083bccbe6291b22ab51bd64d",
+          "start_line_1": 75
+        },
+        {
+          "byte_end_exclusive": 7679,
+          "byte_start_0": 7664,
+          "bytes": 15,
+          "end_line_1": 76,
+          "index": 60,
+          "kind": "Assign",
+          "names": [
+            "source_rows"
+          ],
+          "sha256": "cec18ec14465150ed05d16f27e25a020d2debf1a54de3337c270ca74b66d43c6",
+          "start_line_1": 76
+        },
+        {
+          "byte_end_exclusive": 8539,
+          "byte_start_0": 7679,
+          "bytes": 860,
+          "end_line_1": 81,
+          "index": 61,
+          "kind": "For",
+          "names": [],
+          "sha256": "caacc758e97c7815a224c658e2895f4f459ee04b36401d24900a72347c144179",
+          "start_line_1": 77
+        },
+        {
+          "byte_end_exclusive": 8702,
+          "byte_start_0": 8539,
+          "bytes": 163,
+          "end_line_1": 82,
+          "index": 62,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "81880224497f18fccc167601dca6028eb235f9ca1213c4fae3c60c960cda1de5",
+          "start_line_1": 82
+        },
+        {
+          "byte_end_exclusive": 9724,
+          "byte_start_0": 8702,
+          "bytes": 1022,
+          "end_line_1": 83,
+          "index": 63,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "2a59f9b3342616c9b134b584d438933de6aa7c4d5b485f09c6599902d9b9ca6f",
+          "start_line_1": 83
+        },
+        {
+          "byte_end_exclusive": 10023,
+          "byte_start_0": 9724,
+          "bytes": 299,
+          "end_line_1": 84,
+          "index": 64,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "a39fcdb6652878f2d1da7323e3cffbda5a0a5fc987b240b84d35d0f2c245414a",
+          "start_line_1": 84
+        },
+        {
+          "byte_end_exclusive": 10068,
+          "byte_start_0": 10023,
+          "bytes": 45,
+          "end_line_1": 85,
+          "index": 65,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c098aa7fe9c58378e0affb37efb9c13c1bc982562ffa434504ca9ef81cdd92a0",
+          "start_line_1": 85
+        },
+        {
+          "byte_end_exclusive": 10272,
+          "byte_start_0": 10068,
+          "bytes": 204,
+          "end_line_1": 86,
+          "index": 66,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "53075fa0afb56390a36e8fc36ffe97fc5bfd7689de71a153816cc60de171c4e4",
+          "start_line_1": 86
+        },
+        {
+          "byte_end_exclusive": 10948,
+          "byte_start_0": 10272,
+          "bytes": 676,
+          "end_line_1": 87,
+          "index": 67,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8cefce5b182ccdfec42c63ab519fe04a1659e8fad16f768341f3da2bda30e4fa",
+          "start_line_1": 87
+        },
+        {
+          "byte_end_exclusive": 10959,
+          "byte_start_0": 10948,
+          "bytes": 11,
+          "end_line_1": 88,
+          "index": 68,
+          "kind": "Assign",
+          "names": [
+            "history"
+          ],
+          "sha256": "913d87e4afa9c0bc86783c6b47f28cae452f3f0b7f5fd18fd7b17971b7d1565b",
+          "start_line_1": 88
+        },
+        {
+          "byte_end_exclusive": 11322,
+          "byte_start_0": 10959,
+          "bytes": 363,
+          "end_line_1": 90,
+          "index": 69,
+          "kind": "For",
+          "names": [],
+          "sha256": "d226ec621469465935db1620006a1a4e617ec65b2fa5ec4ec6b0ed8d15337dba",
+          "start_line_1": 89
+        },
+        {
+          "byte_end_exclusive": 12111,
+          "byte_start_0": 11322,
+          "bytes": 789,
+          "end_line_1": 91,
+          "index": 70,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "72e15941c44db23438257e8460221d166be3de21ee552d291f6ff58b8d46d157",
+          "start_line_1": 91
+        },
+        {
+          "byte_end_exclusive": 12643,
+          "byte_start_0": 12111,
+          "bytes": 532,
+          "end_line_1": 92,
+          "index": 71,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0b9241fad430d5d0d8fe63b8c0754ecc3bf77c81e53723c6f5e6809c974afaf4",
+          "start_line_1": 92
+        },
+        {
+          "byte_end_exclusive": 12882,
+          "byte_start_0": 12643,
+          "bytes": 239,
+          "end_line_1": 93,
+          "index": 72,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "89fdc02ef4c9c5c7c55b733f8968ca914c76f8974ba968b0a4d2848b0bf5fcbf",
+          "start_line_1": 93
+        },
+        {
+          "byte_end_exclusive": 14187,
+          "byte_start_0": 12882,
+          "bytes": 1305,
+          "end_line_1": 94,
+          "index": 73,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "dbdf0f040746321dbc983a553c49544d38f6dc8fed0e25f06eba9d976cd63d73",
+          "start_line_1": 94
+        },
+        {
+          "byte_end_exclusive": 14930,
+          "byte_start_0": 14187,
+          "bytes": 743,
+          "end_line_1": 95,
+          "index": 74,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "b7d234c01be2c18a300c0e331c4328fa6599f98254d1fe5cfff669537f4bec45",
+          "start_line_1": 95
+        },
+        {
+          "byte_end_exclusive": 15458,
+          "byte_start_0": 14930,
+          "bytes": 528,
+          "end_line_1": 96,
+          "index": 75,
+          "kind": "Assign",
+          "names": [
+            "summary"
+          ],
+          "sha256": "6f6fa5baf0a0e726b11759d418a526f9bce5914e8005b6ae257c8b333c98b3b9",
+          "start_line_1": 96
+        },
+        {
+          "byte_end_exclusive": 15549,
+          "byte_start_0": 15458,
+          "bytes": 91,
+          "end_line_1": 97,
+          "index": 76,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0cad790cd29815e6ba9205e420ac7af6f9b01430b8dbb0278590f0bdf7115d59",
+          "start_line_1": 97
+        },
+        {
+          "byte_end_exclusive": 15549,
+          "byte_start_0": 15458,
+          "bytes": 91,
+          "end_line_1": 97,
+          "index": 77,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0cad790cd29815e6ba9205e420ac7af6f9b01430b8dbb0278590f0bdf7115d59",
+          "start_line_1": 97
+        }
+      ],
+      "removed_functions": [
+        {
+          "ast_sha256": "c38283fb8356ce9e05e1764660e730dbeb4b5aa4fcebf77bd4d1b792a9b805c9",
+          "byte_end_exclusive": 907,
+          "byte_start_0": 863,
+          "bytes": 44,
+          "end_line_1": 14,
+          "name": "js",
+          "sha256": "26cde7e40031b225732a9add7a922ea300fe559d9aa84a438d09243a95061fd1",
+          "start_line_1": 14
+        },
+        {
+          "ast_sha256": "9f35ab6928e9725c476e216a664392c68a4cb4f6f076942dffbfea31c3b89f30",
+          "byte_end_exclusive": 991,
+          "byte_start_0": 907,
+          "bytes": 84,
+          "end_line_1": 16,
+          "name": "pin",
+          "sha256": "01392e535dbc6239033596201121db980ddadec0dd2bc06bd7d4b7641d963ce3",
+          "start_line_1": 15
+        },
+        {
+          "ast_sha256": "8ea575341ddf012a50b77a795d23fd0e83a51d31156a8e3f58b8c5e8bca0f55a",
+          "byte_end_exclusive": 1708,
+          "byte_start_0": 1110,
+          "bytes": 598,
+          "end_line_1": 31,
+          "name": "add",
+          "sha256": "10eaf2ce11fb0ce851dce98fc9e613a83ce1311ce826c02aa23fa583a1512cca",
+          "start_line_1": 19
+        },
+        {
+          "ast_sha256": "b393d2a2471a34aece8488c928d8aa6b69e5b55d1b6b5a322de8d712c6b1dbaa",
+          "byte_end_exclusive": 2490,
+          "byte_start_0": 1708,
+          "bytes": 782,
+          "end_line_1": 41,
+          "name": "group",
+          "sha256": "b07760faab5190d6f00beff0e6f957bd44d37b098652d15fd69d29e173a92574",
+          "start_line_1": 32
+        },
+        {
+          "ast_sha256": "38fec32daab2831b84b42c6b93de24c41f28c0e40c89ab19ce134a11c91cef1a",
+          "byte_end_exclusive": 2757,
+          "byte_start_0": 2490,
+          "bytes": 267,
+          "end_line_1": 44,
+          "name": "source_pair",
+          "sha256": "0c8b9c13721dfbd22595c93fb0b6005c72d9cb89502ea03fca65d929b826a181",
+          "start_line_1": 42
+        }
+      ],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/source_checker/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 22806,
+        "sha256": "fd30d2d43e94cf3c1a94b0c48b117a54b99d5982428222d5c61e678154499a38"
+      },
+      "current": {
+        "bytes": 8807,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/CHECK_COMPONENTS.py",
+        "sha256": "b2eb7274c6814e57c496e16cff5adf4d43f4097d2646c4e198a9b405dd44788c"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 109,
+          "byte_start_0": 23,
+          "bytes": 86,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c6c905d044c3b9e4751f247e2572133a84a587a7c7400e957c53d97172427916",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 125,
+          "byte_start_0": 109,
+          "bytes": 16,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "b53e5a5286172fb0a4772843ba3ed62331687bcb9939ec9c49e9066d4ee4272d",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 136,
+          "byte_start_0": 125,
+          "bytes": 11,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "1a530f5446ff47d775c4933dc8424c2adc96fa80b8c854a2b93b2636126eeb65",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 148,
+          "byte_start_0": 136,
+          "bytes": 12,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "27fe0461ff4b26894ab6a6739662ba03e2fa5fc02c6fb22f144eb902c6d1099d",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 163,
+          "byte_start_0": 148,
+          "bytes": 15,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 175,
+          "byte_start_0": 163,
+          "bytes": 12,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 200,
+          "byte_start_0": 175,
+          "bytes": 25,
+          "end_line_1": 8,
+          "index": 6,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 240,
+          "byte_start_0": 201,
+          "bytes": 39,
+          "end_line_1": 10,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 8807,
+          "byte_start_0": 8412,
+          "bytes": 395,
+          "end_line_1": 170,
+          "index": 12,
+          "kind": "If",
+          "names": [],
+          "sha256": "1806c2186c095bf0763abf4a36491da312e55247ca0170a5d2d30d2e89991ede",
+          "start_line_1": 165
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "670b938c11987758820335a8d67478fd45b86df7010f1e248a3699e922030816",
+          "byte_end_exclusive": 304,
+          "byte_start_0": 242,
+          "bytes": 62,
+          "comparison": "new",
+          "end_line_1": 14,
+          "name": "digest",
+          "previous": null,
+          "sha256": "50b76bfffc27cbd7a792c95d031f6fd8e49777b6241b96ed8c4c4773edc356cb",
+          "start_line_1": 13
+        },
+        {
+          "ast_sha256": "b96b1ec58ec05a430d6688659b6bd00a5a3ebab566b93007aae3f5d65227b788",
+          "byte_end_exclusive": 397,
+          "byte_start_0": 306,
+          "bytes": 91,
+          "comparison": "new",
+          "end_line_1": 19,
+          "name": "check",
+          "previous": null,
+          "sha256": "04ea93922d2f53d31a9692d21299b06ccdb27c2621e3c9650c1125a2b42f3be4",
+          "start_line_1": 17
+        },
+        {
+          "ast_sha256": "233a858a642956b9c2f96f49f88135b5410fd76a5f8994bf973e453c21cd4472",
+          "byte_end_exclusive": 542,
+          "byte_start_0": 399,
+          "bytes": 143,
+          "comparison": "new",
+          "end_line_1": 24,
+          "name": "pin",
+          "previous": null,
+          "sha256": "ee414e22fa84d255ebc88646b0d8fda6c67089446d644c57b2bf41d70c1be50d",
+          "start_line_1": 22
+        },
+        {
+          "ast_sha256": "10d6712221fe8ff2298f9b14a2b55ffd2458ea199cacdab6d9b5bb2561eefef7",
+          "byte_end_exclusive": 8410,
+          "byte_start_0": 544,
+          "bytes": 7866,
+          "comparison": "new",
+          "end_line_1": 162,
+          "name": "inspect",
+          "previous": null,
+          "sha256": "53c0114273f260e9b3412dc9fadbc65a907fa3e4aa607952d76e25c1dd92a9ac",
+          "start_line_1": 27
+        }
+      ],
+      "label": "source_checker",
+      "previous": {
+        "bytes": 13411,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_sharper_preparation_moment_source_assembly/CHECK_SOURCE_ONLY.py",
+        "sha256": "3e555045105726f1e206e163772253a782cfb88fca11ffc4693592ac1766b865"
+      },
+      "previous_module_statements": [
+        {
+          "byte_end_exclusive": 106,
+          "byte_start_0": 23,
+          "bytes": 83,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "89e6c9871b5ad000a2eec43b4155353d347f7113d997a94eedb6c0311ee3423c",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 131,
+          "byte_start_0": 106,
+          "bytes": 25,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 172,
+          "byte_start_0": 131,
+          "bytes": 41,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "a6f38f8fa389958baf200b3bcc502b11ba25090ef1892d7c0837753b7d37d835",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 206,
+          "byte_start_0": 172,
+          "bytes": 34,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Assign",
+          "names": [
+            "P"
+          ],
+          "sha256": "fbb87dde7947f5ee1b8da358615a46dfe99a85451504a92231d2bf1028c607b9",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 1214,
+          "byte_start_0": 1093,
+          "bytes": 121,
+          "end_line_1": 21,
+          "index": 11,
+          "kind": "Assign",
+          "names": [
+            "parser"
+          ],
+          "sha256": "557511447edfbd344e7891087e68ed6920b501ddc6070438e0c2f43b95175680",
+          "start_line_1": 21
+        },
+        {
+          "byte_end_exclusive": 1214,
+          "byte_start_0": 1093,
+          "bytes": 121,
+          "end_line_1": 21,
+          "index": 12,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "557511447edfbd344e7891087e68ed6920b501ddc6070438e0c2f43b95175680",
+          "start_line_1": 21
+        },
+        {
+          "byte_end_exclusive": 1214,
+          "byte_start_0": 1093,
+          "bytes": 121,
+          "end_line_1": 21,
+          "index": 13,
+          "kind": "Assign",
+          "names": [
+            "args"
+          ],
+          "sha256": "557511447edfbd344e7891087e68ed6920b501ddc6070438e0c2f43b95175680",
+          "start_line_1": 21
+        },
+        {
+          "byte_end_exclusive": 1310,
+          "byte_start_0": 1214,
+          "bytes": 96,
+          "end_line_1": 22,
+          "index": 14,
+          "kind": "Assign",
+          "names": [
+            "catalog"
+          ],
+          "sha256": "34aebcfdd5bf231adb60c773d36580f405a00969db562f437acbf22dde256470",
+          "start_line_1": 22
+        },
+        {
+          "byte_end_exclusive": 1310,
+          "byte_start_0": 1214,
+          "bytes": 96,
+          "end_line_1": 22,
+          "index": 15,
+          "kind": "Assign",
+          "names": [
+            "rows"
+          ],
+          "sha256": "34aebcfdd5bf231adb60c773d36580f405a00969db562f437acbf22dde256470",
+          "start_line_1": 22
+        },
+        {
+          "byte_end_exclusive": 1310,
+          "byte_start_0": 1214,
+          "bytes": 96,
+          "end_line_1": 22,
+          "index": 16,
+          "kind": "Assign",
+          "names": [
+            "aliases"
+          ],
+          "sha256": "34aebcfdd5bf231adb60c773d36580f405a00969db562f437acbf22dde256470",
+          "start_line_1": 22
+        },
+        {
+          "byte_end_exclusive": 1384,
+          "byte_start_0": 1310,
+          "bytes": 74,
+          "end_line_1": 23,
+          "index": 17,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "fde738144a9bf8d31a08ca4eef0f8ecb1c09500c7872e0f0945901daa1cd9d00",
+          "start_line_1": 23
+        },
+        {
+          "byte_end_exclusive": 2083,
+          "byte_start_0": 1788,
+          "bytes": 295,
+          "end_line_1": 33,
+          "index": 21,
+          "kind": "For",
+          "names": [],
+          "sha256": "d004ceffad3f31f3355910b1ed44a5e98b0f7dfa42497c05900d0f563cf96ac0",
+          "start_line_1": 30
+        },
+        {
+          "byte_end_exclusive": 2143,
+          "byte_start_0": 2083,
+          "bytes": 60,
+          "end_line_1": 34,
+          "index": 22,
+          "kind": "Assign",
+          "names": [
+            "objects"
+          ],
+          "sha256": "0534524015d6bd8b1ca3f9cc53c9499ee224e2bef1290d63fc1de24a5fbd2a7f",
+          "start_line_1": 34
+        },
+        {
+          "byte_end_exclusive": 2212,
+          "byte_start_0": 2143,
+          "bytes": 69,
+          "end_line_1": 35,
+          "index": 23,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "7c20c48016ecc8d1d38fe5e38f2cf2fd0c0e0f50c8325fa943f0d76d38547742",
+          "start_line_1": 35
+        },
+        {
+          "byte_end_exclusive": 2341,
+          "byte_start_0": 2212,
+          "bytes": 129,
+          "end_line_1": 36,
+          "index": 24,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "614b8c6c925834c4086ef9bab1c9fdd0b23d50206968db72d15bf4f64278b489",
+          "start_line_1": 36
+        },
+        {
+          "byte_end_exclusive": 2420,
+          "byte_start_0": 2341,
+          "bytes": 79,
+          "end_line_1": 37,
+          "index": 25,
+          "kind": "Assign",
+          "names": [
+            "g"
+          ],
+          "sha256": "9fe273905472704e3ea62dddff73d738573755a9f74bfe824683fceb3b8d0aa8",
+          "start_line_1": 37
+        },
+        {
+          "byte_end_exclusive": 2420,
+          "byte_start_0": 2341,
+          "bytes": 79,
+          "end_line_1": 37,
+          "index": 26,
+          "kind": "Assign",
+          "names": [
+            "counts"
+          ],
+          "sha256": "9fe273905472704e3ea62dddff73d738573755a9f74bfe824683fceb3b8d0aa8",
+          "start_line_1": 37
+        },
+        {
+          "byte_end_exclusive": 2529,
+          "byte_start_0": 2420,
+          "bytes": 109,
+          "end_line_1": 38,
+          "index": 27,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "786441a58ea6c29c7c0ee0c3a6f88b82f874d720c7a4dbc8dff78e72730656ba",
+          "start_line_1": 38
+        },
+        {
+          "byte_end_exclusive": 2983,
+          "byte_start_0": 2529,
+          "bytes": 454,
+          "end_line_1": 44,
+          "index": 28,
+          "kind": "For",
+          "names": [],
+          "sha256": "45c970a37b83463e317074819920d29ec7cca9611426229cef8cc3ed7ae933a4",
+          "start_line_1": 39
+        },
+        {
+          "byte_end_exclusive": 3091,
+          "byte_start_0": 2983,
+          "bytes": 108,
+          "end_line_1": 45,
+          "index": 29,
+          "kind": "For",
+          "names": [],
+          "sha256": "12411ee2c47ffc2abdd888435b30e42abd6a7c6315b369b2151f62662c2679ed",
+          "start_line_1": 45
+        },
+        {
+          "byte_end_exclusive": 3146,
+          "byte_start_0": 3091,
+          "bytes": 55,
+          "end_line_1": 46,
+          "index": 30,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "a7b220b51dd2b3934505ae39ecf5dbe4bde50f438a8e323944c7833e2ba6e73c",
+          "start_line_1": 46
+        },
+        {
+          "byte_end_exclusive": 3255,
+          "byte_start_0": 3146,
+          "bytes": 109,
+          "end_line_1": 47,
+          "index": 31,
+          "kind": "Assign",
+          "names": [
+            "bm"
+          ],
+          "sha256": "43e7ae9c70dce1c470f95d280505079055dc1bf8fbb2a8f9b8af2c2512580c03",
+          "start_line_1": 47
+        },
+        {
+          "byte_end_exclusive": 3255,
+          "byte_start_0": 3146,
+          "bytes": 109,
+          "end_line_1": 47,
+          "index": 32,
+          "kind": "Assign",
+          "names": [
+            "note"
+          ],
+          "sha256": "43e7ae9c70dce1c470f95d280505079055dc1bf8fbb2a8f9b8af2c2512580c03",
+          "start_line_1": 47
+        },
+        {
+          "byte_end_exclusive": 3255,
+          "byte_start_0": 3146,
+          "bytes": 109,
+          "end_line_1": 47,
+          "index": 33,
+          "kind": "Assign",
+          "names": [
+            "body"
+          ],
+          "sha256": "43e7ae9c70dce1c470f95d280505079055dc1bf8fbb2a8f9b8af2c2512580c03",
+          "start_line_1": 47
+        },
+        {
+          "byte_end_exclusive": 3420,
+          "byte_start_0": 3255,
+          "bytes": 165,
+          "end_line_1": 48,
+          "index": 34,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8cc0a0d1295bc02e7f4acf6134412b4d6b85986a5f1f7763d4e36d9cec872f3f",
+          "start_line_1": 48
+        },
+        {
+          "byte_end_exclusive": 3555,
+          "byte_start_0": 3420,
+          "bytes": 135,
+          "end_line_1": 49,
+          "index": 35,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "de8b065c64ca99dceb0e67c371a410840ca3d5f845730ae51a515fcf65001d69",
+          "start_line_1": 49
+        },
+        {
+          "byte_end_exclusive": 3717,
+          "byte_start_0": 3555,
+          "bytes": 162,
+          "end_line_1": 50,
+          "index": 36,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "43de91b8b7ced7f15cca021122c0311011615513004ebdd3d58bf5f7112ae761",
+          "start_line_1": 50
+        },
+        {
+          "byte_end_exclusive": 3847,
+          "byte_start_0": 3717,
+          "bytes": 130,
+          "end_line_1": 51,
+          "index": 37,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8e72f78c2490f57c74d72fd609e6d40b46d6261a9bd469741e597ddf0510af7c",
+          "start_line_1": 51
+        },
+        {
+          "byte_end_exclusive": 3991,
+          "byte_start_0": 3847,
+          "bytes": 144,
+          "end_line_1": 52,
+          "index": 38,
+          "kind": "Assign",
+          "names": [
+            "occurrences"
+          ],
+          "sha256": "edc4fc2538f45530d6f4f230933d5c968a2d9175e3051dfebec8c75de8f46504",
+          "start_line_1": 52
+        },
+        {
+          "byte_end_exclusive": 3991,
+          "byte_start_0": 3847,
+          "bytes": 144,
+          "end_line_1": 52,
+          "index": 39,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "edc4fc2538f45530d6f4f230933d5c968a2d9175e3051dfebec8c75de8f46504",
+          "start_line_1": 52
+        },
+        {
+          "byte_end_exclusive": 4173,
+          "byte_start_0": 3991,
+          "bytes": 182,
+          "end_line_1": 53,
+          "index": 40,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "91df215e881fe78bcbf6f6bc4e3dbdd2151a805579c6de450fabe0dfbbb0b14b",
+          "start_line_1": 53
+        },
+        {
+          "byte_end_exclusive": 4524,
+          "byte_start_0": 4173,
+          "bytes": 351,
+          "end_line_1": 57,
+          "index": 41,
+          "kind": "For",
+          "names": [],
+          "sha256": "3825843fe191f51a58e6dfd52c4a925f049700dd9b7a74be925a34b7d2f8ebd3",
+          "start_line_1": 54
+        },
+        {
+          "byte_end_exclusive": 4744,
+          "byte_start_0": 4524,
+          "bytes": 220,
+          "end_line_1": 58,
+          "index": 42,
+          "kind": "Assign",
+          "names": [
+            "pre"
+          ],
+          "sha256": "e04858fcf50f4a1837a4390152af4da806817c65011609169f7f278e2cde7253",
+          "start_line_1": 58
+        },
+        {
+          "byte_end_exclusive": 4744,
+          "byte_start_0": 4524,
+          "bytes": 220,
+          "end_line_1": 58,
+          "index": 43,
+          "kind": "Assign",
+          "names": [
+            "run"
+          ],
+          "sha256": "e04858fcf50f4a1837a4390152af4da806817c65011609169f7f278e2cde7253",
+          "start_line_1": 58
+        },
+        {
+          "byte_end_exclusive": 4744,
+          "byte_start_0": 4524,
+          "bytes": 220,
+          "end_line_1": 58,
+          "index": 44,
+          "kind": "Assign",
+          "names": [
+            "done"
+          ],
+          "sha256": "e04858fcf50f4a1837a4390152af4da806817c65011609169f7f278e2cde7253",
+          "start_line_1": 58
+        },
+        {
+          "byte_end_exclusive": 4744,
+          "byte_start_0": 4524,
+          "bytes": 220,
+          "end_line_1": 58,
+          "index": 45,
+          "kind": "Assign",
+          "names": [
+            "reviewpre"
+          ],
+          "sha256": "e04858fcf50f4a1837a4390152af4da806817c65011609169f7f278e2cde7253",
+          "start_line_1": 58
+        },
+        {
+          "byte_end_exclusive": 4744,
+          "byte_start_0": 4524,
+          "bytes": 220,
+          "end_line_1": 58,
+          "index": 46,
+          "kind": "Assign",
+          "names": [
+            "reviewrun"
+          ],
+          "sha256": "e04858fcf50f4a1837a4390152af4da806817c65011609169f7f278e2cde7253",
+          "start_line_1": 58
+        },
+        {
+          "byte_end_exclusive": 4934,
+          "byte_start_0": 4744,
+          "bytes": 190,
+          "end_line_1": 59,
+          "index": 47,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "b475632a182168c3580407403694a9cee002090a41098cc813034430cd347894",
+          "start_line_1": 59
+        },
+        {
+          "byte_end_exclusive": 5024,
+          "byte_start_0": 4934,
+          "bytes": 90,
+          "end_line_1": 60,
+          "index": 48,
+          "kind": "For",
+          "names": [],
+          "sha256": "9e2ce420c95f9fb8b303c5a74410a5286794eab48f40b0249459d131e6c0ce57",
+          "start_line_1": 60
+        },
+        {
+          "byte_end_exclusive": 5118,
+          "byte_start_0": 5024,
+          "bytes": 94,
+          "end_line_1": 61,
+          "index": 49,
+          "kind": "For",
+          "names": [],
+          "sha256": "28870141740f06b4a605185de601d4e0acbf53b2c6308b6ef079d1f273b2aa57",
+          "start_line_1": 61
+        },
+        {
+          "byte_end_exclusive": 5161,
+          "byte_start_0": 5118,
+          "bytes": 43,
+          "end_line_1": 62,
+          "index": 50,
+          "kind": "Assign",
+          "names": [
+            "coverage"
+          ],
+          "sha256": "e77749849a1f7ad570585ef091c81c6b0023204f979f13ca891878a839da2376",
+          "start_line_1": 62
+        },
+        {
+          "byte_end_exclusive": 5429,
+          "byte_start_0": 5161,
+          "bytes": 268,
+          "end_line_1": 63,
+          "index": 51,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "99b0f39cf586146b99dac1c980e4e19c19f3eca21ea3898c69ece336fab36e3c",
+          "start_line_1": 63
+        },
+        {
+          "byte_end_exclusive": 5545,
+          "byte_start_0": 5429,
+          "bytes": 116,
+          "end_line_1": 64,
+          "index": 52,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "84b506dc4a931de50441abc349bcbec9c2927f3081cc1f360570611de89a41c8",
+          "start_line_1": 64
+        },
+        {
+          "byte_end_exclusive": 5680,
+          "byte_start_0": 5545,
+          "bytes": 135,
+          "end_line_1": 65,
+          "index": 53,
+          "kind": "For",
+          "names": [],
+          "sha256": "d6e20a42023390fc5ff48f088bffa1366a48b924252481a91f50f7562b1763fe",
+          "start_line_1": 65
+        },
+        {
+          "byte_end_exclusive": 5821,
+          "byte_start_0": 5680,
+          "bytes": 141,
+          "end_line_1": 66,
+          "index": 54,
+          "kind": "Assign",
+          "names": [
+            "history"
+          ],
+          "sha256": "fee63e09639bd66972ef66a64ea74b62642f9267761a6fc903ac5b29ab26d59e",
+          "start_line_1": 66
+        },
+        {
+          "byte_end_exclusive": 5821,
+          "byte_start_0": 5680,
+          "bytes": 141,
+          "end_line_1": 66,
+          "index": 55,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "fee63e09639bd66972ef66a64ea74b62642f9267761a6fc903ac5b29ab26d59e",
+          "start_line_1": 66
+        },
+        {
+          "byte_end_exclusive": 5831,
+          "byte_start_0": 5821,
+          "bytes": 10,
+          "end_line_1": 67,
+          "index": 56,
+          "kind": "Assign",
+          "names": [
+            "science"
+          ],
+          "sha256": "49ef3d5c94f055cf0b510b0a6f9b12810c9089fb4d86614036fadb5afdcbb936",
+          "start_line_1": 67
+        },
+        {
+          "byte_end_exclusive": 6406,
+          "byte_start_0": 5831,
+          "bytes": 575,
+          "end_line_1": 73,
+          "index": 57,
+          "kind": "For",
+          "names": [],
+          "sha256": "03ca8abe55f1bc79098de3f42e9e2637bfb81028bff05b60f3aed8b93f6071c9",
+          "start_line_1": 68
+        },
+        {
+          "byte_end_exclusive": 6476,
+          "byte_start_0": 6406,
+          "bytes": 70,
+          "end_line_1": 74,
+          "index": 58,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "38b69dac833fa07add28c37e84fffbc57592ff7de577216a9ff38ca024573c4e",
+          "start_line_1": 74
+        },
+        {
+          "byte_end_exclusive": 6656,
+          "byte_start_0": 6476,
+          "bytes": 180,
+          "end_line_1": 75,
+          "index": 59,
+          "kind": "Assign",
+          "names": [
+            "failed"
+          ],
+          "sha256": "483ff00f4ec41cccedec7b6f36d5d154d78d0873677a6bcd25fc86310692b7e9",
+          "start_line_1": 75
+        },
+        {
+          "byte_end_exclusive": 6656,
+          "byte_start_0": 6476,
+          "bytes": 180,
+          "end_line_1": 75,
+          "index": 60,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "483ff00f4ec41cccedec7b6f36d5d154d78d0873677a6bcd25fc86310692b7e9",
+          "start_line_1": 75
+        },
+        {
+          "byte_end_exclusive": 6893,
+          "byte_start_0": 6656,
+          "bytes": 237,
+          "end_line_1": 76,
+          "index": 61,
+          "kind": "Assign",
+          "names": [
+            "old"
+          ],
+          "sha256": "ca76083c94f60a0c66a5ae39c2256f01322602d1c26cfba9626b43767d1380d8",
+          "start_line_1": 76
+        },
+        {
+          "byte_end_exclusive": 6893,
+          "byte_start_0": 6656,
+          "bytes": 237,
+          "end_line_1": 76,
+          "index": 62,
+          "kind": "Assign",
+          "names": [
+            "new"
+          ],
+          "sha256": "ca76083c94f60a0c66a5ae39c2256f01322602d1c26cfba9626b43767d1380d8",
+          "start_line_1": 76
+        },
+        {
+          "byte_end_exclusive": 6893,
+          "byte_start_0": 6656,
+          "bytes": 237,
+          "end_line_1": 76,
+          "index": 63,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "ca76083c94f60a0c66a5ae39c2256f01322602d1c26cfba9626b43767d1380d8",
+          "start_line_1": 76
+        },
+        {
+          "byte_end_exclusive": 6966,
+          "byte_start_0": 6893,
+          "bytes": 73,
+          "end_line_1": 77,
+          "index": 64,
+          "kind": "Assign",
+          "names": [
+            "accept"
+          ],
+          "sha256": "e38d8559753d328e821caaca34baad21f9365d56e1a42b53d012f6779bb91202",
+          "start_line_1": 77
+        },
+        {
+          "byte_end_exclusive": 7145,
+          "byte_start_0": 6966,
+          "bytes": 179,
+          "end_line_1": 78,
+          "index": 65,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "2e2a5ae2253fe1dd1fde4fe4eff1d32b89421b70318b74479df3ab684454d9e2",
+          "start_line_1": 78
+        },
+        {
+          "byte_end_exclusive": 7466,
+          "byte_start_0": 7145,
+          "bytes": 321,
+          "end_line_1": 79,
+          "index": 66,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8b58eb460502e79228537cf9a74e5b32a76a553553db61baa2b3809e87d58172",
+          "start_line_1": 79
+        },
+        {
+          "byte_end_exclusive": 7560,
+          "byte_start_0": 7466,
+          "bytes": 94,
+          "end_line_1": 80,
+          "index": 67,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "70ecc22d606d0cce184ebd0d30136262a22ca82eb2c87ae63818d8b34d84bc07",
+          "start_line_1": 80
+        },
+        {
+          "byte_end_exclusive": 7990,
+          "byte_start_0": 7560,
+          "bytes": 430,
+          "end_line_1": 88,
+          "index": 68,
+          "kind": "For",
+          "names": [],
+          "sha256": "e3c4ace15010c04ef26791830f88ce652a53f6d4c6ddc7345a5c7708ddb2dde4",
+          "start_line_1": 81
+        },
+        {
+          "byte_end_exclusive": 8134,
+          "byte_start_0": 7990,
+          "bytes": 144,
+          "end_line_1": 89,
+          "index": 69,
+          "kind": "Assign",
+          "names": [
+            "deps"
+          ],
+          "sha256": "84c2ae3203d03ae182facf6ce93fcaeb2c123268f528e068bc21e061a4711598",
+          "start_line_1": 89
+        },
+        {
+          "byte_end_exclusive": 8134,
+          "byte_start_0": 7990,
+          "bytes": 144,
+          "end_line_1": 89,
+          "index": 70,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "84c2ae3203d03ae182facf6ce93fcaeb2c123268f528e068bc21e061a4711598",
+          "start_line_1": 89
+        },
+        {
+          "byte_end_exclusive": 8247,
+          "byte_start_0": 8134,
+          "bytes": 113,
+          "end_line_1": 90,
+          "index": 71,
+          "kind": "For",
+          "names": [],
+          "sha256": "c9a208480083100b32a13c7ed115e12ff8f4bfae99e971a0ff90d36f2cc2ee35",
+          "start_line_1": 90
+        },
+        {
+          "byte_end_exclusive": 8404,
+          "byte_start_0": 8247,
+          "bytes": 157,
+          "end_line_1": 91,
+          "index": 72,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "2b2b723c0377da7ba515b24922ad9075dfd01dfe9f90549156791cbf7378637a",
+          "start_line_1": 91
+        },
+        {
+          "byte_end_exclusive": 8464,
+          "byte_start_0": 8404,
+          "bytes": 60,
+          "end_line_1": 92,
+          "index": 73,
+          "kind": "Assign",
+          "names": [
+            "repair"
+          ],
+          "sha256": "34b2f340c8130d24630aaaad5df86fa90f48e5b590f4c8543b9522e36e2209fc",
+          "start_line_1": 92
+        },
+        {
+          "byte_end_exclusive": 8584,
+          "byte_start_0": 8464,
+          "bytes": 120,
+          "end_line_1": 93,
+          "index": 74,
+          "kind": "Assign",
+          "names": [
+            "previous"
+          ],
+          "sha256": "c5d694a2c357d034ca46c7a19874093f42f0a5c6a9ef72f877b63cb1368c0e7b",
+          "start_line_1": 93
+        },
+        {
+          "byte_end_exclusive": 8675,
+          "byte_start_0": 8584,
+          "bytes": 91,
+          "end_line_1": 94,
+          "index": 75,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "4d7d6c2ccc14508d88f628ca958019a48e9fe096173e2478a984b141d77b664c",
+          "start_line_1": 94
+        },
+        {
+          "byte_end_exclusive": 8831,
+          "byte_start_0": 8675,
+          "bytes": 156,
+          "end_line_1": 95,
+          "index": 76,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "295e986124572de72eddb8476af5b8a782d525f67d98e3ba54acafa46736c955",
+          "start_line_1": 95
+        },
+        {
+          "byte_end_exclusive": 8998,
+          "byte_start_0": 8831,
+          "bytes": 167,
+          "end_line_1": 96,
+          "index": 77,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0ad8ba9c59630a5f69ca333f9ea203e7a268dd1f1458391c003e9579a854b062",
+          "start_line_1": 96
+        },
+        {
+          "byte_end_exclusive": 9144,
+          "byte_start_0": 8998,
+          "bytes": 146,
+          "end_line_1": 97,
+          "index": 78,
+          "kind": "Assign",
+          "names": [
+            "schema"
+          ],
+          "sha256": "4fc7cf6f3aa0dcc68ef6c0121a2b764a74042ff461b83a2b0ace5995298c5d40",
+          "start_line_1": 97
+        },
+        {
+          "byte_end_exclusive": 9144,
+          "byte_start_0": 8998,
+          "bytes": 146,
+          "end_line_1": 97,
+          "index": 79,
+          "kind": "Assign",
+          "names": [
+            "before"
+          ],
+          "sha256": "4fc7cf6f3aa0dcc68ef6c0121a2b764a74042ff461b83a2b0ace5995298c5d40",
+          "start_line_1": 97
+        },
+        {
+          "byte_end_exclusive": 9144,
+          "byte_start_0": 8998,
+          "bytes": 146,
+          "end_line_1": 97,
+          "index": 80,
+          "kind": "Assign",
+          "names": [
+            "after"
+          ],
+          "sha256": "4fc7cf6f3aa0dcc68ef6c0121a2b764a74042ff461b83a2b0ace5995298c5d40",
+          "start_line_1": 97
+        },
+        {
+          "byte_end_exclusive": 9279,
+          "byte_start_0": 9144,
+          "bytes": 135,
+          "end_line_1": 98,
+          "index": 81,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "45e8d72bd85eb0ce9d2c375651147b56dd2378be4f23d18f7aebf369e2915aaf",
+          "start_line_1": 98
+        },
+        {
+          "byte_end_exclusive": 9431,
+          "byte_start_0": 9279,
+          "bytes": 152,
+          "end_line_1": 99,
+          "index": 82,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0eb84068251b79f86e6f1cb4aa4158985ebe14139b9d188820cb82b43f18ca94",
+          "start_line_1": 99
+        },
+        {
+          "byte_end_exclusive": 9593,
+          "byte_start_0": 9431,
+          "bytes": 162,
+          "end_line_1": 100,
+          "index": 83,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0c6408084fcc5c6d65c02711ffed49bf467db7faa23b133571560cb96dc212e6",
+          "start_line_1": 100
+        },
+        {
+          "byte_end_exclusive": 9884,
+          "byte_start_0": 9593,
+          "bytes": 291,
+          "end_line_1": 101,
+          "index": 84,
+          "kind": "Assign",
+          "names": [
+            "bindings"
+          ],
+          "sha256": "7dd49535c58661a27e414f4617568d5fb3a73a3ed6fb04539f8d0a3ebcda7cf5",
+          "start_line_1": 101
+        },
+        {
+          "byte_end_exclusive": 9884,
+          "byte_start_0": 9593,
+          "bytes": 291,
+          "end_line_1": 101,
+          "index": 85,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "7dd49535c58661a27e414f4617568d5fb3a73a3ed6fb04539f8d0a3ebcda7cf5",
+          "start_line_1": 101
+        },
+        {
+          "byte_end_exclusive": 9985,
+          "byte_start_0": 9884,
+          "bytes": 101,
+          "end_line_1": 102,
+          "index": 86,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "34f77026d0b0a13ed8b20da947a6b225efd99626049406eb1d16c99965b44ebd",
+          "start_line_1": 102
+        },
+        {
+          "byte_end_exclusive": 10879,
+          "byte_start_0": 9985,
+          "bytes": 894,
+          "end_line_1": 112,
+          "index": 87,
+          "kind": "For",
+          "names": [],
+          "sha256": "5237abd540a9695d4117779d2fe71d85ef2f6bc5f1b955e0b4a02ddae09dad5b",
+          "start_line_1": 103
+        },
+        {
+          "byte_end_exclusive": 10972,
+          "byte_start_0": 10879,
+          "bytes": 93,
+          "end_line_1": 113,
+          "index": 88,
+          "kind": "For",
+          "names": [],
+          "sha256": "812a14693f215b973f4292cfd25012dd4a4dba8cb3676a21e3732f01139fa033",
+          "start_line_1": 113
+        },
+        {
+          "byte_end_exclusive": 11161,
+          "byte_start_0": 10972,
+          "bytes": 189,
+          "end_line_1": 114,
+          "index": 89,
+          "kind": "For",
+          "names": [],
+          "sha256": "cc9912fc8fa02c6fc9789076578ccf1058ef40c2a2574f7206802562f345363d",
+          "start_line_1": 114
+        },
+        {
+          "byte_end_exclusive": 11252,
+          "byte_start_0": 11161,
+          "bytes": 91,
+          "end_line_1": 115,
+          "index": 90,
+          "kind": "Assign",
+          "names": [
+            "completed"
+          ],
+          "sha256": "73c8d3db1ba8e68fb47c0db2f081c4a43aa6b558a5de04533747ee2e27247409",
+          "start_line_1": 115
+        },
+        {
+          "byte_end_exclusive": 11252,
+          "byte_start_0": 11161,
+          "bytes": 91,
+          "end_line_1": 115,
+          "index": 91,
+          "kind": "Assign",
+          "names": [
+            "revisions"
+          ],
+          "sha256": "73c8d3db1ba8e68fb47c0db2f081c4a43aa6b558a5de04533747ee2e27247409",
+          "start_line_1": 115
+        },
+        {
+          "byte_end_exclusive": 11999,
+          "byte_start_0": 11252,
+          "bytes": 747,
+          "end_line_1": 122,
+          "index": 92,
+          "kind": "For",
+          "names": [],
+          "sha256": "6e30ecadc379cd340f37ab5218aa4cc06c5f8c51925dfa7f260add06d66444de",
+          "start_line_1": 116
+        },
+        {
+          "byte_end_exclusive": 12122,
+          "byte_start_0": 11999,
+          "bytes": 123,
+          "end_line_1": 123,
+          "index": 93,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8032c3840be5efa537f03ac26c1ca10740a6cf91cf84d16175198cdbd6a36a4e",
+          "start_line_1": 123
+        },
+        {
+          "byte_end_exclusive": 12144,
+          "byte_start_0": 12122,
+          "bytes": 22,
+          "end_line_1": 124,
+          "index": 94,
+          "kind": "Assign",
+          "names": [
+            "freeze_verified"
+          ],
+          "sha256": "88ba8afd74f74d8bacd61f92884114b8dceec0f31e3c19c9ffab9b6f68d1abab",
+          "start_line_1": 124
+        },
+        {
+          "byte_end_exclusive": 12457,
+          "byte_start_0": 12144,
+          "bytes": 313,
+          "end_line_1": 128,
+          "index": 95,
+          "kind": "If",
+          "names": [],
+          "sha256": "87a5eadbe04b726319d50fdefd1672862b95128779f56942a7fe35de7c852c7a",
+          "start_line_1": 125
+        },
+        {
+          "byte_end_exclusive": 12526,
+          "byte_start_0": 12457,
+          "bytes": 69,
+          "end_line_1": 129,
+          "index": 96,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "263fe3ee721719eb02454d4928283ef215cf40a326739d256e558e395978e562",
+          "start_line_1": 129
+        },
+        {
+          "byte_end_exclusive": 13411,
+          "byte_start_0": 12526,
+          "bytes": 885,
+          "end_line_1": 130,
+          "index": 97,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "d82ea93b581b9faa10acba8ed7389bec757c9643f1bc57d2e814fe6c65e2880b",
+          "start_line_1": 130
+        }
+      ],
+      "removed_functions": [
+        {
+          "ast_sha256": "e0010b6c22d6b29b37eccd9aaa370fc3982cc64cbb4c8b3ec5a013d0b9e666f4",
+          "byte_end_exclusive": 262,
+          "byte_start_0": 206,
+          "bytes": 56,
+          "end_line_1": 7,
+          "name": "require",
+          "sha256": "c74e565d4f960c0580fc62161d28f640d8df00e1a9405b156816fd776dd2adb9",
+          "start_line_1": 6
+        },
+        {
+          "ast_sha256": "ad04fb537e29bd8d0578d7470d18f7656b1b7982324bbff203a7c2b1ff9bfffb",
+          "byte_end_exclusive": 310,
+          "byte_start_0": 262,
+          "bytes": 48,
+          "end_line_1": 8,
+          "name": "sha",
+          "sha256": "7bda3ea1286496b59ee518feabe590d664e6e31da0fa9ad819660386faa1d061",
+          "start_line_1": 8
+        },
+        {
+          "ast_sha256": "2b55b8c073a8e4174f1f1a7255436a5f5128255a30cd6ae4b56e8363bb63c8a1",
+          "byte_end_exclusive": 348,
+          "byte_start_0": 310,
+          "bytes": 38,
+          "end_line_1": 9,
+          "name": "read",
+          "sha256": "4f5ac27554717c3e44f7d03ff7b66d4b158f3d803494a76193e1c028b00be3da",
+          "start_line_1": 9
+        },
+        {
+          "ast_sha256": "593e0856274cb2d6c0eadcf3ce7dc2c15f9732892315d11535e23b76461e8d8a",
+          "byte_end_exclusive": 385,
+          "byte_start_0": 348,
+          "bytes": 37,
+          "end_line_1": 10,
+          "name": "js",
+          "sha256": "dd888e34a2ccba9962e04b7cc1e9f66d118cbde7a92370ae443f98ab3d081550",
+          "start_line_1": 10
+        },
+        {
+          "ast_sha256": "9cbae1b4aca9b35dcf7a8b91381f82a86c039fc671484ccd10936a0d8cfdad8f",
+          "byte_end_exclusive": 467,
+          "byte_start_0": 385,
+          "bytes": 82,
+          "end_line_1": 11,
+          "name": "identity",
+          "sha256": "eef59f8e14e56797149e7d1ddd694c54ddee6f73319d5fbd9dc574382b53a99e",
+          "start_line_1": 11
+        },
+        {
+          "ast_sha256": "6e030cae749dd093b7f7ccbbe2f6a2aefaa932802258b108900145108b696756",
+          "byte_end_exclusive": 617,
+          "byte_start_0": 467,
+          "bytes": 150,
+          "end_line_1": 12,
+          "name": "delta",
+          "sha256": "328c543cd2d85448d613031898e9fca202c5860d1eef4b199a30fe3f1c0ccdd0",
+          "start_line_1": 12
+        },
+        {
+          "ast_sha256": "6e3e17d6000286d1e689fed24d5b6ff2a1dc6acc1aacbd0f9374805419067ef7",
+          "byte_end_exclusive": 1093,
+          "byte_start_0": 617,
+          "bytes": 476,
+          "end_line_1": 20,
+          "name": "statements",
+          "sha256": "bb828804b6175b0a6d5cc8e57a7907eb0af723e2cd31720437f85cbcd64c02a1",
+          "start_line_1": 13
+        },
+        {
+          "ast_sha256": "a44c7a1f7bf2ac790de00e27629e1f40d1d25cd7245e067bb521d588b9535f9f",
+          "byte_end_exclusive": 1525,
+          "byte_start_0": 1384,
+          "bytes": 141,
+          "end_line_1": 25,
+          "name": "ab",
+          "sha256": "e76e5fc7109dca17f6399b78f13600ffdcb8575b2d73f9cd7089b5577915a47f",
+          "start_line_1": 24
+        },
+        {
+          "ast_sha256": "bad10f47f012bb8231e1bb6ea6570b1f7712154542277e54fe93b839e7e710d7",
+          "byte_end_exclusive": 1560,
+          "byte_start_0": 1525,
+          "bytes": 35,
+          "end_line_1": 26,
+          "name": "aj",
+          "sha256": "f0029ba5a0988ebbbda65e86073c63622926ac74966fff44196cd14f8d65eee6",
+          "start_line_1": 26
+        },
+        {
+          "ast_sha256": "66830c020df00d5927132e01edc45dc5712a294bedf1a05ff49c043adad7a43a",
+          "byte_end_exclusive": 1788,
+          "byte_start_0": 1560,
+          "bytes": 228,
+          "end_line_1": 29,
+          "name": "original_bytes",
+          "sha256": "c74e08b70b5a7a3c0620ebe4e043f8ae0a03e6eef388ddd5086d77b2ce80b4ad",
+          "start_line_1": 27
+        }
+      ],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/primary_helper/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 104855,
+        "sha256": "d4b6646c0dfe3a191441c382a7565b0f89a6cb8036d9cb62f0311beeff55e3c2"
+      },
+      "current": {
+        "bytes": 63761,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/payload/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "sha256": "49e8398ba1dd8708685ee0e337c412f5bf3cf120c606050f971620618a11baeb"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 106,
+          "byte_start_0": 23,
+          "bytes": 83,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "22ab556d5284d8cf37379cafbd2f5a3c53df81054263b7adf58a54f050ef0591",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 118,
+          "byte_start_0": 106,
+          "bytes": 12,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "27fe0461ff4b26894ab6a6739662ba03e2fa5fc02c6fb22f144eb902c6d1099d",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 133,
+          "byte_start_0": 118,
+          "bytes": 15,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 145,
+          "byte_start_0": 133,
+          "bytes": 12,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 185,
+          "byte_start_0": 145,
+          "bytes": 40,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "08066edf143b296e22c8807be565d4803e718167c288716bf8f2dad1a28abaee",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 209,
+          "byte_start_0": 186,
+          "bytes": 23,
+          "end_line_1": 8,
+          "index": 5,
+          "kind": "Assign",
+          "names": [
+            "AUDIT_TIMEOUT_SEC"
+          ],
+          "sha256": "8638512a0925a70afe46bab56e29b82d2cef9f598fb4ba9f2a8cf8a68309c151",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 57715,
+          "byte_start_0": 209,
+          "bytes": 57506,
+          "end_line_1": 9,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "AUDIT_INPUT_PATHS"
+          ],
+          "sha256": "e72531f88111ae3a37b91c84cec1e4d71c98645f653dde588d0ac91b859114ff",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 57817,
+          "byte_start_0": 57715,
+          "bytes": 102,
+          "end_line_1": 10,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "MANIFEST_PATH"
+          ],
+          "sha256": "884f1fe389a04a2c4c319c9fed0cf83d6bafeb8cacbb4f514bc26f75308bc185",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 57902,
+          "byte_start_0": 57817,
+          "bytes": 85,
+          "end_line_1": 11,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "MANIFEST_SHA256"
+          ],
+          "sha256": "2f20750b38a881724baa31675998d36cb2adf9b42509f879b1ba2db13fdb0805",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 63761,
+          "byte_start_0": 63641,
+          "bytes": 120,
+          "end_line_1": 139,
+          "index": 14,
+          "kind": "If",
+          "names": [],
+          "sha256": "677f9cef5ecd0c3c09bb9ade6425aa7e27881dc5ac9191add34388e9b3a4ac07",
+          "start_line_1": 138
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "3b218d97634fd91fd6595535193a2eb525911ab34ffd45793deaba58332ca99e",
+          "byte_end_exclusive": 57993,
+          "byte_start_0": 57904,
+          "bytes": 89,
+          "comparison": "new",
+          "end_line_1": 16,
+          "name": "require",
+          "previous": null,
+          "sha256": "771470ca6047ea7b84814e6cc23c2357b927e95ad29ed2fbd7b34f2969c68de4",
+          "start_line_1": 14
+        },
+        {
+          "ast_sha256": "a1df4c27d9212b43c282d92523cc028c47f3b451697f9cbe6a914f47e96681b3",
+          "byte_end_exclusive": 58054,
+          "byte_start_0": 57995,
+          "bytes": 59,
+          "comparison": "changed",
+          "end_line_1": 20,
+          "name": "sha",
+          "previous": {
+            "ast_sha256": "ad04fb537e29bd8d0578d7470d18f7656b1b7982324bbff203a7c2b1ff9bfffb",
+            "byte_end_exclusive": 31019,
+            "byte_start_0": 30971,
+            "bytes": 48,
+            "end_line_1": 19,
+            "name": "sha",
+            "sha256": "7bda3ea1286496b59ee518feabe590d664e6e31da0fa9ad819660386faa1d061",
+            "start_line_1": 19
+          },
+          "sha256": "4e627faf4b903521e935f7c6f3ae93545856f821d0e2565ba7ea6cf97d3d0e6c",
+          "start_line_1": 19
+        },
+        {
+          "ast_sha256": "122517e8be2ee36fadda77ebd89dc181c2cc8419751eba137d7e431cd673fe27",
+          "byte_end_exclusive": 58180,
+          "byte_start_0": 58056,
+          "bytes": 124,
+          "comparison": "new",
+          "end_line_1": 24,
+          "name": "identity",
+          "previous": null,
+          "sha256": "04d2d89f3e1b79e3a448c21af0e76b82659faabcfbe6e0ae0fde123885daedae",
+          "start_line_1": 23
+        },
+        {
+          "ast_sha256": "7c4e5984c90d66f71ef25ac426b5b03c8a54a72e79c7823566911d2c1f0ab42a",
+          "byte_end_exclusive": 58380,
+          "byte_start_0": 58182,
+          "bytes": 198,
+          "comparison": "new",
+          "end_line_1": 31,
+          "name": "safe",
+          "previous": null,
+          "sha256": "82d7e19e15f68000aa195b78911bd0cd0fb7ff0ac560b52abc045055c151b169",
+          "start_line_1": 27
+        },
+        {
+          "ast_sha256": "d990deedb3d0e9855d2cccfd18745fe3e674ee8dd01efd22dd229ebe8dd767cf",
+          "byte_end_exclusive": 63639,
+          "byte_start_0": 58382,
+          "bytes": 5257,
+          "comparison": "changed",
+          "end_line_1": 135,
+          "name": "verify",
+          "previous": {
+            "ast_sha256": "5939210fbe53473a52d82bda7db9d497852c28d06ccd05569187e89dc3659535",
+            "byte_end_exclusive": 39491,
+            "byte_start_0": 31188,
+            "bytes": 8303,
+            "end_line_1": 102,
+            "name": "verify",
+            "sha256": "f30a9d37cd11a2568b8c71c49d5e066d6b4bac93b168a5c2fa433c52e242924e",
+            "start_line_1": 22
+          },
+          "sha256": "b660f4285dee6c83cf0770c252a3de7c18f7fd0e381c399e4e244dda545d6dcd",
+          "start_line_1": 34
+        },
+        {
+          "ast_sha256": "f0b78eaab783089fd5d6f43fceb583053798e79b7900fb6170d2963ba48e609d",
+          "byte_end_exclusive": 58906,
+          "byte_start_0": 58541,
+          "bytes": 365,
+          "comparison": "changed",
+          "end_line_1": 46,
+          "name": "verify.read",
+          "previous": {
+            "ast_sha256": "aa8a83cbffe36429f7f79521cf5735b1c3bbc235dd2429a90fa2a85d97dd31a0",
+            "byte_end_exclusive": 31628,
+            "byte_start_0": 31239,
+            "bytes": 389,
+            "end_line_1": 29,
+            "name": "verify.read",
+            "sha256": "4d010aad59ca64ae2952c1474a4bb16b688f188833ff6ea4cd810a8937d61e80",
+            "start_line_1": 24
+          },
+          "sha256": "ca06d0c5d6f4c16a871902319a0d634dd3fadc0e0981a4d1764f69f0bf254fee",
+          "start_line_1": 39
+        }
+      ],
+      "label": "primary_helper",
+      "previous": {
+        "bytes": 40523,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/scripts/simultaneous_multi_port_identity_2026_10_14.py",
+        "sha256": "8213f5fdd9d9b955b13be8da19b29d11122001c77464d388954b7f62341d3995"
+      },
+      "previous_module_statements": [
+        {
+          "byte_end_exclusive": 94,
+          "byte_start_0": 23,
+          "bytes": 71,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "89d6d6981535166e11c21273b0064fbe73e1c31258b6d86ac61b157ca02689e6",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 133,
+          "byte_start_0": 94,
+          "bytes": 39,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "f4a037134ce4bd31c62bff9069362915a938ad469826da71173ccec7e471f70b",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 173,
+          "byte_start_0": 133,
+          "bytes": 40,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "83812857a7d164b3bed0fb7cef7a7fd779b51e73a68621cc73e2a258aed6f8ae",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 196,
+          "byte_start_0": 173,
+          "bytes": 23,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Assign",
+          "names": [
+            "AUDIT_TIMEOUT_SEC"
+          ],
+          "sha256": "8638512a0925a70afe46bab56e29b82d2cef9f598fb4ba9f2a8cf8a68309c151",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 27890,
+          "byte_start_0": 196,
+          "bytes": 27694,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Assign",
+          "names": [
+            "AUDIT_INPUT_PATHS"
+          ],
+          "sha256": "f0dc53054f8d0ef45e21c15e14bda5758298a046812619f39c91191ff216cb57",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 30202,
+          "byte_start_0": 27890,
+          "bytes": 2312,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "Assign",
+          "names": [
+            "EXTRA_PINS"
+          ],
+          "sha256": "8b0319ac59dac98f6943905e0354878ee1c4e9b92dae17ddc3e9320c6a7b4679",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 30280,
+          "byte_start_0": 30202,
+          "bytes": 78,
+          "end_line_1": 8,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "CLAIM"
+          ],
+          "sha256": "af8dc03e62ea888d7b1303086e7c1a0ea5618181cd47b3e21fb855957ca3ca97",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 30345,
+          "byte_start_0": 30280,
+          "bytes": 65,
+          "end_line_1": 9,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "PACKET"
+          ],
+          "sha256": "aff6ba97bfcbc4c5c29b8be95f74e69f2e78ace8cc67b2ebb17e9cd1ea13fff0",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 30422,
+          "byte_start_0": 30345,
+          "bytes": 77,
+          "end_line_1": 10,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "MAP_SHA"
+          ],
+          "sha256": "0c92e23a93c38ed9a22fe66255f909852a3072cbea0bcf9a165060f2e97c41a3",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 30501,
+          "byte_start_0": 30422,
+          "bytes": 79,
+          "end_line_1": 11,
+          "index": 9,
+          "kind": "Assign",
+          "names": [
+            "EDITS_SHA"
+          ],
+          "sha256": "c5ef76fb7a8cfa41ebbe4f9e34f43525d6f9b98ca5c5df3870c04ab868bd4a17",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 30582,
+          "byte_start_0": 30501,
+          "bytes": 81,
+          "end_line_1": 12,
+          "index": 10,
+          "kind": "Assign",
+          "names": [
+            "PARENTS_SHA"
+          ],
+          "sha256": "54045537b1d45e6cf4dafbd3ea000d7dd7b0df97e4e8ef8a463d234b8e99e446",
+          "start_line_1": 12
+        },
+        {
+          "byte_end_exclusive": 30661,
+          "byte_start_0": 30582,
+          "bytes": 79,
+          "end_line_1": 13,
+          "index": 11,
+          "kind": "Assign",
+          "names": [
+            "GRAPH_SHA"
+          ],
+          "sha256": "c6be9b68b1b4deff7f8236d17ea99ffc21062995b3d1994453b430dab9383310",
+          "start_line_1": 13
+        },
+        {
+          "byte_end_exclusive": 30741,
+          "byte_start_0": 30661,
+          "bytes": 80,
+          "end_line_1": 14,
+          "index": 12,
+          "kind": "Assign",
+          "names": [
+            "STATUS_SHA"
+          ],
+          "sha256": "b3acfa1fcffe67858ce246085c23fec62c4253ee9f3bb137464d682a394490b7",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 30828,
+          "byte_start_0": 30741,
+          "bytes": 87,
+          "end_line_1": 15,
+          "index": 13,
+          "kind": "Assign",
+          "names": [
+            "SOURCE_FREEZE_SHA"
+          ],
+          "sha256": "f0e56c2c3485b16f6305d41fb524ea7218faf1d507931d32c9e3ba14cd23b91b",
+          "start_line_1": 15
+        },
+        {
+          "byte_end_exclusive": 30909,
+          "byte_start_0": 30828,
+          "bytes": 81,
+          "end_line_1": 16,
+          "index": 14,
+          "kind": "Assign",
+          "names": [
+            "CORE_SHAS"
+          ],
+          "sha256": "c99dd56eb5b1b7b828b75d87e8da682d668b00590632b147068d0724d9457c2b",
+          "start_line_1": 16
+        },
+        {
+          "byte_end_exclusive": 40523,
+          "byte_start_0": 40191,
+          "bytes": 332,
+          "end_line_1": 115,
+          "index": 20,
+          "kind": "If",
+          "names": [],
+          "sha256": "3e572dffc6ef0ae792552f110af8d2d042189ea282e194e29f66476e9317f3d8",
+          "start_line_1": 110
+        }
+      ],
+      "removed_functions": [
+        {
+          "ast_sha256": "a06f923ac6223241a70d80105c35b555016a9dccf5d416b0bf2596566ce088dd",
+          "byte_end_exclusive": 30971,
+          "byte_start_0": 30909,
+          "bytes": 62,
+          "end_line_1": 18,
+          "name": "need",
+          "sha256": "88a702e4c7c7629f4c6a212862aaf78ae29573333a7044a20260f0039f1cb1ac",
+          "start_line_1": 17
+        },
+        {
+          "ast_sha256": "d17890aad8fb4c4fec141c4d0b70923e1068088fd9ca7620798023c1f2c47c45",
+          "byte_end_exclusive": 31188,
+          "byte_start_0": 31019,
+          "bytes": 169,
+          "end_line_1": 21,
+          "name": "diff",
+          "sha256": "e34159888d985427a1079a1e30a8da96ff180aa09a56023ebb1d9f9a053a5285",
+          "start_line_1": 20
+        },
+        {
+          "ast_sha256": "99040c3ec625b505fd15f2531b504e578294d8be175ecf37648c7828b6705824",
+          "byte_end_exclusive": 31747,
+          "byte_start_0": 31628,
+          "bytes": 119,
+          "end_line_1": 31,
+          "name": "verify.pinned",
+          "sha256": "27ac5c3ab002250669af94a6dfbf89064b1603583177057a75374ef62dcc5931",
+          "start_line_1": 30
+        },
+        {
+          "ast_sha256": "01f9d4c3ca2d08a8201a6c3ef7a8c86a4059f0c3e4df9f394367ff84c910d6b7",
+          "byte_end_exclusive": 32422,
+          "byte_start_0": 32368,
+          "bytes": 54,
+          "end_line_1": 39,
+          "name": "verify.archived",
+          "sha256": "32c899527d6b9699d2201dfd8fe6d11539f1669ea3b5614d4ee3c90a260979dc",
+          "start_line_1": 39
+        },
+        {
+          "ast_sha256": "28de47a975256879a6ec8b64fbfc52702032c8c236d27a4970d1fdd23b7a1245",
+          "byte_end_exclusive": 32540,
+          "byte_start_0": 32490,
+          "bytes": 50,
+          "end_line_1": 41,
+          "name": "verify.source",
+          "sha256": "4afdf0cf96c0bda77f05e4d7dbcea64daf8366d68c62d886ed019c7b3860cfd4",
+          "start_line_1": 41
+        },
+        {
+          "ast_sha256": "cc7e1a04007ddab0377fd0ee88292bc309bb1244e349a8196558ff246d47c337",
+          "byte_end_exclusive": 40191,
+          "byte_start_0": 39491,
+          "bytes": 700,
+          "end_line_1": 109,
+          "name": "main",
+          "sha256": "e2f4cd87628fbf2fcb304761e97749de3f39f9d1fdf5b07ef5bfef33773ee7f0",
+          "start_line_1": 103
+        }
+      ],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/recorder/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "current": {
+        "bytes": 1531,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/record_run.py",
+        "sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 102,
+          "byte_start_0": 23,
+          "bytes": 79,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c3277b151672f9a477972e3f4bf629f39055a4c34d103eb96862b7cb0ca85c48",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 179,
+          "byte_start_0": 102,
+          "bytes": 77,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "4a25dfad28ca4f8d12b31ae7ef8298e48b6a090590aeb2c020fc4e617390b3c6",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 204,
+          "byte_start_0": 179,
+          "bytes": 25,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Assign",
+          "names": [
+            "p"
+          ],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 4,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 5,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 6,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "a"
+          ],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "r"
+          ],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 9,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 10,
+          "kind": "Assign",
+          "names": [
+            "source"
+          ],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 11,
+          "kind": "Assign",
+          "names": [
+            "before"
+          ],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 12,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 584,
+          "byte_start_0": 504,
+          "bytes": 80,
+          "end_line_1": 7,
+          "index": 13,
+          "kind": "Assign",
+          "names": [
+            "cmd"
+          ],
+          "sha256": "1e5fa68040fae12d47495997224eff6328f136b051a75056c86ae3d5e3ce3055",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 669,
+          "byte_start_0": 584,
+          "bytes": 85,
+          "end_line_1": 8,
+          "index": 14,
+          "kind": "Assign",
+          "names": [
+            "start"
+          ],
+          "sha256": "76584b9582a4137b8c08ce02f5ac9f5028073c1a28f6368209a878c6d7331c1b",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 669,
+          "byte_start_0": 584,
+          "bytes": 85,
+          "end_line_1": 8,
+          "index": 15,
+          "kind": "Assign",
+          "names": [
+            "tick"
+          ],
+          "sha256": "76584b9582a4137b8c08ce02f5ac9f5028073c1a28f6368209a878c6d7331c1b",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 832,
+          "byte_start_0": 669,
+          "bytes": 163,
+          "end_line_1": 10,
+          "index": 16,
+          "kind": "With",
+          "names": [],
+          "sha256": "ea97c896d50f260c831825e73aa6b03bb7e9d6796dc9690293dbea6d41c28cfe",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 919,
+          "byte_start_0": 832,
+          "bytes": 87,
+          "end_line_1": 11,
+          "index": 17,
+          "kind": "Assign",
+          "names": [
+            "end"
+          ],
+          "sha256": "b5fbdb002b801e33673ada8919495b9f12127e7676ed5235250abf6f48afc583",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 919,
+          "byte_start_0": 832,
+          "bytes": 87,
+          "end_line_1": 11,
+          "index": 18,
+          "kind": "Assign",
+          "names": [
+            "after"
+          ],
+          "sha256": "b5fbdb002b801e33673ada8919495b9f12127e7676ed5235250abf6f48afc583",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 1414,
+          "byte_start_0": 1025,
+          "bytes": 389,
+          "end_line_1": 13,
+          "index": 20,
+          "kind": "Assign",
+          "names": [
+            "d"
+          ],
+          "sha256": "403d0e4a454e0182b07508d86629917e5d8f3f4c8a80c77cbc2932a1c7fdde4f",
+          "start_line_1": 13
+        },
+        {
+          "byte_end_exclusive": 1531,
+          "byte_start_0": 1414,
+          "bytes": 117,
+          "end_line_1": 14,
+          "index": 21,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0573dd97a12a620802d099b1ad8ecaceb3094442780d18871b1d210f95063d93",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 1531,
+          "byte_start_0": 1414,
+          "bytes": 117,
+          "end_line_1": 14,
+          "index": 22,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0573dd97a12a620802d099b1ad8ecaceb3094442780d18871b1d210f95063d93",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 1531,
+          "byte_start_0": 1414,
+          "bytes": 117,
+          "end_line_1": 14,
+          "index": 23,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0573dd97a12a620802d099b1ad8ecaceb3094442780d18871b1d210f95063d93",
+          "start_line_1": 14
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "1485f73154fd4a871dd9599e520803ab67fc5f253dc438dedc3e83ecad213fc8",
+          "byte_end_exclusive": 1025,
+          "byte_start_0": 919,
+          "bytes": 106,
+          "comparison": "byte_identical",
+          "end_line_1": 12,
+          "name": "info",
+          "previous": {
+            "ast_sha256": "1485f73154fd4a871dd9599e520803ab67fc5f253dc438dedc3e83ecad213fc8",
+            "byte_end_exclusive": 1025,
+            "byte_start_0": 919,
+            "bytes": 106,
+            "end_line_1": 12,
+            "name": "info",
+            "sha256": "72bc659caa5cb1f437b304f6e0ff18e1a96fbbcb4b80c140727b3df6a82d1a5d",
+            "start_line_1": 12
+          },
+          "sha256": "72bc659caa5cb1f437b304f6e0ff18e1a96fbbcb4b80c140727b3df6a82d1a5d",
+          "start_line_1": 12
+        }
+      ],
+      "label": "recorder",
+      "previous": {
+        "bytes": 1531,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_sharper_preparation_moment_source_assembly/record_run.py",
+        "sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696"
+      },
+      "previous_module_statements": [
+        {
+          "byte_end_exclusive": 102,
+          "byte_start_0": 23,
+          "bytes": 79,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c3277b151672f9a477972e3f4bf629f39055a4c34d103eb96862b7cb0ca85c48",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 179,
+          "byte_start_0": 102,
+          "bytes": 77,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "4a25dfad28ca4f8d12b31ae7ef8298e48b6a090590aeb2c020fc4e617390b3c6",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 204,
+          "byte_start_0": 179,
+          "bytes": 25,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Assign",
+          "names": [
+            "p"
+          ],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 4,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 5,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 6,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 376,
+          "byte_start_0": 204,
+          "bytes": 172,
+          "end_line_1": 5,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "a"
+          ],
+          "sha256": "f18d3689f25a39699194e66ec21fabdc028f895823275c4a58ec7251e38ed169",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "r"
+          ],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 9,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 10,
+          "kind": "Assign",
+          "names": [
+            "source"
+          ],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 11,
+          "kind": "Assign",
+          "names": [
+            "before"
+          ],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 504,
+          "byte_start_0": 376,
+          "bytes": 128,
+          "end_line_1": 6,
+          "index": 12,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c0f90bdd41dee8964dd1351cb583360a37bb91cd0af14c481f817d7eee5cf42a",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 584,
+          "byte_start_0": 504,
+          "bytes": 80,
+          "end_line_1": 7,
+          "index": 13,
+          "kind": "Assign",
+          "names": [
+            "cmd"
+          ],
+          "sha256": "1e5fa68040fae12d47495997224eff6328f136b051a75056c86ae3d5e3ce3055",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 669,
+          "byte_start_0": 584,
+          "bytes": 85,
+          "end_line_1": 8,
+          "index": 14,
+          "kind": "Assign",
+          "names": [
+            "start"
+          ],
+          "sha256": "76584b9582a4137b8c08ce02f5ac9f5028073c1a28f6368209a878c6d7331c1b",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 669,
+          "byte_start_0": 584,
+          "bytes": 85,
+          "end_line_1": 8,
+          "index": 15,
+          "kind": "Assign",
+          "names": [
+            "tick"
+          ],
+          "sha256": "76584b9582a4137b8c08ce02f5ac9f5028073c1a28f6368209a878c6d7331c1b",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 832,
+          "byte_start_0": 669,
+          "bytes": 163,
+          "end_line_1": 10,
+          "index": 16,
+          "kind": "With",
+          "names": [],
+          "sha256": "ea97c896d50f260c831825e73aa6b03bb7e9d6796dc9690293dbea6d41c28cfe",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 919,
+          "byte_start_0": 832,
+          "bytes": 87,
+          "end_line_1": 11,
+          "index": 17,
+          "kind": "Assign",
+          "names": [
+            "end"
+          ],
+          "sha256": "b5fbdb002b801e33673ada8919495b9f12127e7676ed5235250abf6f48afc583",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 919,
+          "byte_start_0": 832,
+          "bytes": 87,
+          "end_line_1": 11,
+          "index": 18,
+          "kind": "Assign",
+          "names": [
+            "after"
+          ],
+          "sha256": "b5fbdb002b801e33673ada8919495b9f12127e7676ed5235250abf6f48afc583",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 1414,
+          "byte_start_0": 1025,
+          "bytes": 389,
+          "end_line_1": 13,
+          "index": 20,
+          "kind": "Assign",
+          "names": [
+            "d"
+          ],
+          "sha256": "403d0e4a454e0182b07508d86629917e5d8f3f4c8a80c77cbc2932a1c7fdde4f",
+          "start_line_1": 13
+        },
+        {
+          "byte_end_exclusive": 1531,
+          "byte_start_0": 1414,
+          "bytes": 117,
+          "end_line_1": 14,
+          "index": 21,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0573dd97a12a620802d099b1ad8ecaceb3094442780d18871b1d210f95063d93",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 1531,
+          "byte_start_0": 1414,
+          "bytes": 117,
+          "end_line_1": 14,
+          "index": 22,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0573dd97a12a620802d099b1ad8ecaceb3094442780d18871b1d210f95063d93",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 1531,
+          "byte_start_0": 1414,
+          "bytes": 117,
+          "end_line_1": 14,
+          "index": 23,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "0573dd97a12a620802d099b1ad8ecaceb3094442780d18871b1d210f95063d93",
+          "start_line_1": 14
+        }
+      ],
+      "removed_functions": [],
+      "whole_file_byte_identical": true
+    },
+    {
+      "complete_diff": "review_maps/builder_current_delta/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 4267,
+        "sha256": "5ac3aadf7d81844a12ff1fb03515779d3ec2f73380893bf60895750fcd776d5b"
+      },
+      "current": {
+        "bytes": 12265,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/BUILD_COMPONENTS.py",
+        "sha256": "f501ce76662aebbf6a3bb96c5816cc055338c562f40e7793f17d16b02042e9cf"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 101,
+          "byte_start_0": 23,
+          "bytes": 78,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8f4812299ad2ef805abdb63a1439f5e12b938a891c6f2987c20c8ba8cf60da67",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 117,
+          "byte_start_0": 101,
+          "bytes": 16,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "b53e5a5286172fb0a4772843ba3ed62331687bcb9939ec9c49e9066d4ee4272d",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 129,
+          "byte_start_0": 117,
+          "bytes": 12,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "27fe0461ff4b26894ab6a6739662ba03e2fa5fc02c6fb22f144eb902c6d1099d",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 144,
+          "byte_start_0": 129,
+          "bytes": 15,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 156,
+          "byte_start_0": 144,
+          "bytes": 12,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 196,
+          "byte_start_0": 156,
+          "bytes": 40,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "08066edf143b296e22c8807be565d4803e718167c288716bf8f2dad1a28abaee",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 236,
+          "byte_start_0": 197,
+          "bytes": 39,
+          "end_line_1": 9,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 280,
+          "byte_start_0": 236,
+          "bytes": 44,
+          "end_line_1": 10,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "SCHEMA"
+          ],
+          "sha256": "0476deacfeec0d8b3a1606209ce09e6c489abc28916d46501dce4bc2286d109c",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 400,
+          "byte_start_0": 280,
+          "bytes": 120,
+          "end_line_1": 12,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "FRAGMENTS"
+          ],
+          "sha256": "1fe0dc39f5563ea8bfdc0d9f2fa6f1941ee983533e26ebe323582012c077ba9d",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 424,
+          "byte_start_0": 400,
+          "bytes": 24,
+          "end_line_1": 13,
+          "index": 9,
+          "kind": "Assign",
+          "names": [
+            "VERIFY_EXISTING"
+          ],
+          "sha256": "ba242929facc2cfc3b45ca080bdca6b44dc164c02f19435da8c7284cca9802b5",
+          "start_line_1": 13
+        },
+        {
+          "byte_end_exclusive": 440,
+          "byte_start_0": 424,
+          "bytes": 16,
+          "end_line_1": 14,
+          "index": 10,
+          "kind": "Assign",
+          "names": [
+            "WRITTEN"
+          ],
+          "sha256": "2295611d20735074245676c3656df2eb5b931dbcb3001cf78adc99fa8a3108c1",
+          "start_line_1": 14
+        },
+        {
+          "byte_end_exclusive": 12265,
+          "byte_start_0": 11837,
+          "bytes": 428,
+          "end_line_1": 252,
+          "index": 20,
+          "kind": "If",
+          "names": [],
+          "sha256": "1a210dd85749cdbc63cf198eb4e8fdaa2794bf599e4144eaf4a9ad9f0852bc50",
+          "start_line_1": 245
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "a1df4c27d9212b43c282d92523cc028c47f3b451697f9cbe6a914f47e96681b3",
+          "byte_end_exclusive": 501,
+          "byte_start_0": 442,
+          "bytes": 59,
+          "comparison": "byte_identical",
+          "end_line_1": 18,
+          "name": "sha",
+          "previous": {
+            "ast_sha256": "a1df4c27d9212b43c282d92523cc028c47f3b451697f9cbe6a914f47e96681b3",
+            "byte_end_exclusive": 461,
+            "byte_start_0": 402,
+            "bytes": 59,
+            "end_line_1": 16,
+            "name": "sha",
+            "sha256": "4e627faf4b903521e935f7c6f3ae93545856f821d0e2565ba7ea6cf97d3d0e6c",
+            "start_line_1": 15
+          },
+          "sha256": "4e627faf4b903521e935f7c6f3ae93545856f821d0e2565ba7ea6cf97d3d0e6c",
+          "start_line_1": 17
+        },
+        {
+          "ast_sha256": "f3338bac012a48c74423d94698cc2c409cfd058a26835a382a0c688e73a5fe93",
+          "byte_end_exclusive": 572,
+          "byte_start_0": 503,
+          "bytes": 69,
+          "comparison": "byte_identical",
+          "end_line_1": 22,
+          "name": "info",
+          "previous": {
+            "ast_sha256": "f3338bac012a48c74423d94698cc2c409cfd058a26835a382a0c688e73a5fe93",
+            "byte_end_exclusive": 532,
+            "byte_start_0": 463,
+            "bytes": 69,
+            "end_line_1": 20,
+            "name": "info",
+            "sha256": "66958c57b2e83d759ca387e7f01f6aee46082c66a32bb7d249aa5300f5242c4a",
+            "start_line_1": 19
+          },
+          "sha256": "66958c57b2e83d759ca387e7f01f6aee46082c66a32bb7d249aa5300f5242c4a",
+          "start_line_1": 21
+        },
+        {
+          "ast_sha256": "3b218d97634fd91fd6595535193a2eb525911ab34ffd45793deaba58332ca99e",
+          "byte_end_exclusive": 663,
+          "byte_start_0": 574,
+          "bytes": 89,
+          "comparison": "byte_identical",
+          "end_line_1": 27,
+          "name": "require",
+          "previous": {
+            "ast_sha256": "3b218d97634fd91fd6595535193a2eb525911ab34ffd45793deaba58332ca99e",
+            "byte_end_exclusive": 623,
+            "byte_start_0": 534,
+            "bytes": 89,
+            "end_line_1": 25,
+            "name": "require",
+            "sha256": "771470ca6047ea7b84814e6cc23c2357b927e95ad29ed2fbd7b34f2969c68de4",
+            "start_line_1": 23
+          },
+          "sha256": "771470ca6047ea7b84814e6cc23c2357b927e95ad29ed2fbd7b34f2969c68de4",
+          "start_line_1": 25
+        },
+        {
+          "ast_sha256": "efa865b87335bb8564d59c3f0db861301b197c64c497fbc21ba55ad158df1de0",
+          "byte_end_exclusive": 846,
+          "byte_start_0": 665,
+          "bytes": 181,
+          "comparison": "byte_identical",
+          "end_line_1": 34,
+          "name": "safe",
+          "previous": {
+            "ast_sha256": "efa865b87335bb8564d59c3f0db861301b197c64c497fbc21ba55ad158df1de0",
+            "byte_end_exclusive": 806,
+            "byte_start_0": 625,
+            "bytes": 181,
+            "end_line_1": 32,
+            "name": "safe",
+            "sha256": "b755b2166fb4faadbec58c91c04c6a89c6a587fb0278fb241163ea930ff9e269",
+            "start_line_1": 28
+          },
+          "sha256": "b755b2166fb4faadbec58c91c04c6a89c6a587fb0278fb241163ea930ff9e269",
+          "start_line_1": 30
+        },
+        {
+          "ast_sha256": "1e1c548a54c3bb2ad3bf9ebc3c6c5c8aef0579c5bc1d90a208408d5f56eca702",
+          "byte_end_exclusive": 1195,
+          "byte_start_0": 848,
+          "bytes": 347,
+          "comparison": "byte_identical",
+          "end_line_1": 44,
+          "name": "read_pin",
+          "previous": {
+            "ast_sha256": "1e1c548a54c3bb2ad3bf9ebc3c6c5c8aef0579c5bc1d90a208408d5f56eca702",
+            "byte_end_exclusive": 1155,
+            "byte_start_0": 808,
+            "bytes": 347,
+            "end_line_1": 42,
+            "name": "read_pin",
+            "sha256": "e13487b0673eb047bf54d9864e8ca00f4cc8aa6cfdc2c10c9dec39c850fdcd7b",
+            "start_line_1": 35
+          },
+          "sha256": "e13487b0673eb047bf54d9864e8ca00f4cc8aa6cfdc2c10c9dec39c850fdcd7b",
+          "start_line_1": 37
+        },
+        {
+          "ast_sha256": "68d5b21eef7da7311f283c9bd3419c4370b00646804b1dc70af60114816097d0",
+          "byte_end_exclusive": 1294,
+          "byte_start_0": 1197,
+          "bytes": 97,
+          "comparison": "byte_identical",
+          "end_line_1": 48,
+          "name": "encode_json",
+          "previous": {
+            "ast_sha256": "68d5b21eef7da7311f283c9bd3419c4370b00646804b1dc70af60114816097d0",
+            "byte_end_exclusive": 1254,
+            "byte_start_0": 1157,
+            "bytes": 97,
+            "end_line_1": 46,
+            "name": "encode_json",
+            "sha256": "d1e5bdd51a382d1180bfb022149c7dfba743803ccc3039bf669abe8c92f71142",
+            "start_line_1": 45
+          },
+          "sha256": "d1e5bdd51a382d1180bfb022149c7dfba743803ccc3039bf669abe8c92f71142",
+          "start_line_1": 47
+        },
+        {
+          "ast_sha256": "a5fbcc4b82df7f1b9cc539470e75326a520ddd28a9b397a708f05061084bf1dc",
+          "byte_end_exclusive": 1764,
+          "byte_start_0": 1296,
+          "bytes": 468,
+          "comparison": "changed",
+          "end_line_1": 61,
+          "name": "write",
+          "previous": {
+            "ast_sha256": "89dcaf2bccc2ca8aa1f10579a9b790f65d3391a4db7134f217ffc75154f307b2",
+            "byte_end_exclusive": 1448,
+            "byte_start_0": 1256,
+            "bytes": 192,
+            "end_line_1": 53,
+            "name": "write",
+            "sha256": "21b09d325d06a1826c9f44cb5e9ce5a44d85034ca3d0b8ea13a984f2fe1606c3",
+            "start_line_1": 49
+          },
+          "sha256": "2d23e6f39eb8d1e517df01070b2b4894c780ddff1f2a909d70c8e83ba57fc98f",
+          "start_line_1": 51
+        },
+        {
+          "ast_sha256": "37e670c901e789d264ee8778a0dbca9367a5ba16a5d0a660271fcf807a6cffc1",
+          "byte_end_exclusive": 2593,
+          "byte_start_0": 1766,
+          "bytes": 827,
+          "comparison": "byte_identical",
+          "end_line_1": 81,
+          "name": "checked_group",
+          "previous": {
+            "ast_sha256": "37e670c901e789d264ee8778a0dbca9367a5ba16a5d0a660271fcf807a6cffc1",
+            "byte_end_exclusive": 2277,
+            "byte_start_0": 1450,
+            "bytes": 827,
+            "end_line_1": 73,
+            "name": "checked_group",
+            "sha256": "c7f9869450a04e519644ff61a05bbd9ad5050ccf50d36d234e0528808af28a16",
+            "start_line_1": 56
+          },
+          "sha256": "c7f9869450a04e519644ff61a05bbd9ad5050ccf50d36d234e0528808af28a16",
+          "start_line_1": 64
+        },
+        {
+          "ast_sha256": "08c7f2839245efc41256f8718ad0b2c6835b77e6f93618fb16810755eb1d88f2",
+          "byte_end_exclusive": 11835,
+          "byte_start_0": 2595,
+          "bytes": 9240,
+          "comparison": "changed",
+          "end_line_1": 242,
+          "name": "build",
+          "previous": {
+            "ast_sha256": "2190b0bd036fdd18908b9c708736d2e9070b0449e64cb8f168315ab5d34fd104",
+            "byte_end_exclusive": 11276,
+            "byte_start_0": 2279,
+            "bytes": 8997,
+            "end_line_1": 230,
+            "name": "build",
+            "sha256": "7f42e76f0d9e227e983675df1dffcba148697fa6b188bd3e818ec424fa54c7c1",
+            "start_line_1": 76
+          },
+          "sha256": "a115d696b6a4317c826999d084717cb986480c1eff76fc19d385365c3c540a4f",
+          "start_line_1": 84
+        },
+        {
+          "ast_sha256": "b7959dcc3ce28dad174da69de182307455367b712bf274d3500f7898087e845b",
+          "byte_end_exclusive": 4464,
+          "byte_start_0": 4099,
+          "bytes": 365,
+          "comparison": "byte_identical",
+          "end_line_1": 124,
+          "name": "build.object_part",
+          "previous": {
+            "ast_sha256": "b7959dcc3ce28dad174da69de182307455367b712bf274d3500f7898087e845b",
+            "byte_end_exclusive": 4033,
+            "byte_start_0": 3668,
+            "bytes": 365,
+            "end_line_1": 113,
+            "name": "build.object_part",
+            "sha256": "18919648783397b45d24f411dc44115804fa2d708567f2664bdb28599d8ff2aa",
+            "start_line_1": 106
+          },
+          "sha256": "18919648783397b45d24f411dc44115804fa2d708567f2664bdb28599d8ff2aa",
+          "start_line_1": 117
+        },
+        {
+          "ast_sha256": "144d449e2d85d585d7dd56f0fc90a63fdb3c7cb838365888066106734f9767e4",
+          "byte_end_exclusive": 5325,
+          "byte_start_0": 4465,
+          "bytes": 860,
+          "comparison": "byte_identical",
+          "end_line_1": 145,
+          "name": "build.add_record",
+          "previous": {
+            "ast_sha256": "144d449e2d85d585d7dd56f0fc90a63fdb3c7cb838365888066106734f9767e4",
+            "byte_end_exclusive": 4894,
+            "byte_start_0": 4034,
+            "bytes": 860,
+            "end_line_1": 134,
+            "name": "build.add_record",
+            "sha256": "6b1923fe36ce3185135a322d284312de0b9a3ddc4a2431cded694469e644134e",
+            "start_line_1": 115
+          },
+          "sha256": "6b1923fe36ce3185135a322d284312de0b9a3ddc4a2431cded694469e644134e",
+          "start_line_1": 126
+        }
+      ],
+      "label": "builder_current_delta",
+      "previous": {
+        "bytes": 11500,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/history/wrapper_v1/BUILD_COMPONENTS.py",
+        "sha256": "dad6a3d5f66e7edb58205a79bd492fe68ff738625c76ffe226cab80a38924d7e"
+      },
+      "previous_module_statements": [
+        {
+          "byte_end_exclusive": 101,
+          "byte_start_0": 23,
+          "bytes": 78,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "8f4812299ad2ef805abdb63a1439f5e12b938a891c6f2987c20c8ba8cf60da67",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 117,
+          "byte_start_0": 101,
+          "bytes": 16,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "b53e5a5286172fb0a4772843ba3ed62331687bcb9939ec9c49e9066d4ee4272d",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 129,
+          "byte_start_0": 117,
+          "bytes": 12,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "27fe0461ff4b26894ab6a6739662ba03e2fa5fc02c6fb22f144eb902c6d1099d",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 144,
+          "byte_start_0": 129,
+          "bytes": 15,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 156,
+          "byte_start_0": 144,
+          "bytes": 12,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 196,
+          "byte_start_0": 156,
+          "bytes": 40,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "08066edf143b296e22c8807be565d4803e718167c288716bf8f2dad1a28abaee",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 236,
+          "byte_start_0": 197,
+          "bytes": 39,
+          "end_line_1": 9,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 280,
+          "byte_start_0": 236,
+          "bytes": 44,
+          "end_line_1": 10,
+          "index": 7,
+          "kind": "Assign",
+          "names": [
+            "SCHEMA"
+          ],
+          "sha256": "0476deacfeec0d8b3a1606209ce09e6c489abc28916d46501dce4bc2286d109c",
+          "start_line_1": 10
+        },
+        {
+          "byte_end_exclusive": 400,
+          "byte_start_0": 280,
+          "bytes": 120,
+          "end_line_1": 12,
+          "index": 8,
+          "kind": "Assign",
+          "names": [
+            "FRAGMENTS"
+          ],
+          "sha256": "1fe0dc39f5563ea8bfdc0d9f2fa6f1941ee983533e26ebe323582012c077ba9d",
+          "start_line_1": 11
+        },
+        {
+          "byte_end_exclusive": 11500,
+          "byte_start_0": 11278,
+          "bytes": 222,
+          "end_line_1": 237,
+          "index": 18,
+          "kind": "If",
+          "names": [],
+          "sha256": "8e2997955637b26853f1a66e3a42789fae052094c4e1eff9011c114db014fd35",
+          "start_line_1": 233
+        }
+      ],
+      "removed_functions": [],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/wrapper_repair/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 4805,
+        "sha256": "b56e499a33aa345bfe2d49c7ed8016c49cfea856320d95a735e65cbf86eebcaf"
+      },
+      "current": {
+        "bytes": 4523,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/REPAIR_WRAPPER.py",
+        "sha256": "b33c2bf6baa484d539f23dc8945aa6b3f2dad28df79a3276ba21e0fba90dde73"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 120,
+          "byte_start_0": 23,
+          "bytes": 97,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "cb045898f640480792be1f8086c07bf8643ea98c79880f9f05944fd16faeb608",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 132,
+          "byte_start_0": 120,
+          "bytes": 12,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "01185d20d26568a358ea5c862ad992fbed2b4c0a68684d42477f0920b7be3e7f",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 147,
+          "byte_start_0": 132,
+          "bytes": 15,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 159,
+          "byte_start_0": 147,
+          "bytes": 12,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 184,
+          "byte_start_0": 159,
+          "bytes": 25,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 224,
+          "byte_start_0": 185,
+          "bytes": 39,
+          "end_line_1": 8,
+          "index": 5,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 8
+        },
+        {
+          "byte_end_exclusive": 4523,
+          "byte_start_0": 4486,
+          "bytes": 37,
+          "end_line_1": 98,
+          "index": 9,
+          "kind": "If",
+          "names": [],
+          "sha256": "b9025fdbc48c17b4102eb49c117523e6cfd702cf7d5b9efbbf7a544505e4fcce",
+          "start_line_1": 97
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "78e63729bfee65e03a03069facab7f7cb07b57718aba737b40651301b9fca267",
+          "byte_end_exclusive": 309,
+          "byte_start_0": 226,
+          "bytes": 83,
+          "comparison": "new",
+          "end_line_1": 12,
+          "name": "meta",
+          "previous": null,
+          "sha256": "dab43eb4d7b4a10472b7af451b67a8ad9090d6e92e1703311bf616bee59f7a31",
+          "start_line_1": 11
+        },
+        {
+          "ast_sha256": "cb3ca9f1ca6bab395d8d80668e48be9d4719a6099588ba14dd20b1856b4c5517",
+          "byte_end_exclusive": 401,
+          "byte_start_0": 311,
+          "bytes": 90,
+          "comparison": "new",
+          "end_line_1": 16,
+          "name": "dump",
+          "previous": null,
+          "sha256": "03f1a78a544fa2e3396b846a674ee2174528acda2db3e447540ef08d6f2fb403",
+          "start_line_1": 15
+        },
+        {
+          "ast_sha256": "716514c92b354c2b89eadbebf2cea056c2643d3f0da070c93f3ed1f5c08a11bd",
+          "byte_end_exclusive": 4484,
+          "byte_start_0": 403,
+          "bytes": 4081,
+          "comparison": "new",
+          "end_line_1": 94,
+          "name": "run",
+          "previous": null,
+          "sha256": "257b6f882934c2b21d42114cecd8ef544672a92e69ce4fee96e89f70f192928a",
+          "start_line_1": 19
+        }
+      ],
+      "label": "wrapper_repair",
+      "previous": null,
+      "previous_module_statements": [],
+      "removed_functions": [],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/history_checker/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 2105,
+        "sha256": "d7a2967ff899a3ba207e5ecfd6e191b9f756ced074d5c5ff59507fd5cd7016d7"
+      },
+      "current": {
+        "bytes": 1880,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/CHECK_HISTORY.py",
+        "sha256": "769960c2d1ba51d9180b0c7475fb4a86227a5105d74a6fce6d6cd3809552d0f0"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 118,
+          "byte_start_0": 23,
+          "bytes": 95,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "c4584d8bf3494634536d09304b4a8ff46e9576055e761637eaae0a2919d072d5",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 133,
+          "byte_start_0": 118,
+          "bytes": 15,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 145,
+          "byte_start_0": 133,
+          "bytes": 12,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 170,
+          "byte_start_0": 145,
+          "bytes": 25,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 210,
+          "byte_start_0": 171,
+          "bytes": 39,
+          "end_line_1": 7,
+          "index": 4,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 1880,
+          "byte_start_0": 1843,
+          "bytes": 37,
+          "end_line_1": 42,
+          "index": 6,
+          "kind": "If",
+          "names": [],
+          "sha256": "b9025fdbc48c17b4102eb49c117523e6cfd702cf7d5b9efbbf7a544505e4fcce",
+          "start_line_1": 41
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "6302c7faa742dcb408818abb7023c634375bc4a1350a607d10532e986e09a7e7",
+          "byte_end_exclusive": 1841,
+          "byte_start_0": 212,
+          "bytes": 1629,
+          "comparison": "new",
+          "end_line_1": 38,
+          "name": "run",
+          "previous": null,
+          "sha256": "d64a2bd8578e5e120df6d28ce8adc380578e8ddbcb96c3969d04cb54c9bfd540",
+          "start_line_1": 10
+        }
+      ],
+      "label": "history_checker",
+      "previous": null,
+      "previous_module_statements": [],
+      "removed_functions": [],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/review_mapper/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 8002,
+        "sha256": "cf7cce873dde72032e8c938d1d98434f66656c6ffc077c3d48acfbfeada87534"
+      },
+      "current": {
+        "bytes": 7678,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/MAKE_REVIEW_MAPS.py",
+        "sha256": "3ad724c366e925ffc77c2c603a3af8e478098be1bad8fa718d647f2e1b8cb32e"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 107,
+          "byte_start_0": 23,
+          "bytes": 84,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "92a83ba6e14df1f133e41c1174dcd39050e02a9dbcac215a57433a7ade9e2108",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 118,
+          "byte_start_0": 107,
+          "bytes": 11,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "1a530f5446ff47d775c4933dc8424c2adc96fa80b8c854a2b93b2636126eeb65",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 133,
+          "byte_start_0": 118,
+          "bytes": 15,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "6f32a18263c4dfed97fbe6860a5fafe8e56fc56048fafb1fce7f1c2043222e16",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 148,
+          "byte_start_0": 133,
+          "bytes": 15,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 160,
+          "byte_start_0": 148,
+          "bytes": 12,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 185,
+          "byte_start_0": 160,
+          "bytes": 25,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 225,
+          "byte_start_0": 186,
+          "bytes": 39,
+          "end_line_1": 9,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 7678,
+          "byte_start_0": 7641,
+          "bytes": 37,
+          "end_line_1": 137,
+          "index": 11,
+          "kind": "If",
+          "names": [],
+          "sha256": "b9025fdbc48c17b4102eb49c117523e6cfd702cf7d5b9efbbf7a544505e4fcce",
+          "start_line_1": 136
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "6a5bfa21525aab732b94ef0b10d399fc39c29ac3205d5b9a7a3b904726fa8299",
+          "byte_end_exclusive": 323,
+          "byte_start_0": 227,
+          "bytes": 96,
+          "comparison": "new",
+          "end_line_1": 13,
+          "name": "identity",
+          "previous": null,
+          "sha256": "8a383acaa183923b9c382b91cc2c9c45e3ae80eaecc94c372e1e3d063f77fad8",
+          "start_line_1": 12
+        },
+        {
+          "ast_sha256": "fccb69b7548612c22f8df3d6f7409e314b787648bf0f012a614478959c75d954",
+          "byte_end_exclusive": 2124,
+          "byte_start_0": 325,
+          "bytes": 1799,
+          "comparison": "new",
+          "end_line_1": 50,
+          "name": "units",
+          "previous": null,
+          "sha256": "0a07472a576dabce848cb2980eeba12ede4c774c362fad66e2140ca7140ccfe3",
+          "start_line_1": 16
+        },
+        {
+          "ast_sha256": "35d5a80cf394e4ffe64d65989a1407a762d2922f1f5ce04de4750570d1254a5e",
+          "byte_end_exclusive": 1409,
+          "byte_start_0": 516,
+          "bytes": 893,
+          "comparison": "new",
+          "end_line_1": 36,
+          "name": "units.walk",
+          "previous": null,
+          "sha256": "27fc85df4280fe5b0cabc0a9d6aa47aa67d7b3957353618409cd1a90d8962af3",
+          "start_line_1": 24
+        },
+        {
+          "ast_sha256": "36a35b284a26d0aa22fdb6107c1c9382183d611663e0b017404926af52ee8abd",
+          "byte_end_exclusive": 2358,
+          "byte_start_0": 2126,
+          "bytes": 232,
+          "comparison": "new",
+          "end_line_1": 58,
+          "name": "save",
+          "previous": null,
+          "sha256": "d94fe6d6a4ef17b31115b659678123c654da53b49eb7e5dedb3e59c0f399a331",
+          "start_line_1": 53
+        },
+        {
+          "ast_sha256": "0654c9e29d3832e27c14a3268d8bfd47fdd31d1d0277ef94f851fae2ba6545ee",
+          "byte_end_exclusive": 7639,
+          "byte_start_0": 2360,
+          "bytes": 5279,
+          "comparison": "new",
+          "end_line_1": 133,
+          "name": "run",
+          "previous": null,
+          "sha256": "263146b256558625c99c11312c3d26083d83a77b6313a91fbd31d174cf3added",
+          "start_line_1": 61
+        }
+      ],
+      "label": "review_mapper",
+      "previous": null,
+      "previous_module_statements": [],
+      "removed_functions": [],
+      "whole_file_byte_identical": false
+    },
+    {
+      "complete_diff": "review_maps/freezer/complete.diff",
+      "complete_diff_identity": {
+        "bytes": 4428,
+        "sha256": "30c04b3455d85cabb172dd830911831bdfe7adcd9fb27df151c9ec9bd340c393"
+      },
+      "current": {
+        "bytes": 4169,
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/FREEZE_COMPONENTS.py",
+        "sha256": "590b2caadf061895ae15bfba45cb42f47c8bd551f975c6ee3dcc692b8b375392"
+      },
+      "current_module_statements": [
+        {
+          "byte_end_exclusive": 119,
+          "byte_start_0": 23,
+          "bytes": 96,
+          "end_line_1": 2,
+          "index": 0,
+          "kind": "Expr",
+          "names": [],
+          "sha256": "11588012bb2759942febd9afd2742020d7c9851fb3be9a5df328831c9b972091",
+          "start_line_1": 2
+        },
+        {
+          "byte_end_exclusive": 135,
+          "byte_start_0": 119,
+          "bytes": 16,
+          "end_line_1": 3,
+          "index": 1,
+          "kind": "Import",
+          "names": [],
+          "sha256": "a47bc67d7a652367f6b2cfb2786dcd9067ea20f42e786a52f48bf676c0815782",
+          "start_line_1": 3
+        },
+        {
+          "byte_end_exclusive": 150,
+          "byte_start_0": 135,
+          "bytes": 15,
+          "end_line_1": 4,
+          "index": 2,
+          "kind": "Import",
+          "names": [],
+          "sha256": "3b3ea3cdc7068a9e97cfcddbcd9d8e0c54fe4d068347b80b158fdd8b14676e3b",
+          "start_line_1": 4
+        },
+        {
+          "byte_end_exclusive": 162,
+          "byte_start_0": 150,
+          "bytes": 12,
+          "end_line_1": 5,
+          "index": 3,
+          "kind": "Import",
+          "names": [],
+          "sha256": "261a9112a2918e2aba03e19a2f221a027ab4b6f9e946a6c39814f54e18e07dfc",
+          "start_line_1": 5
+        },
+        {
+          "byte_end_exclusive": 173,
+          "byte_start_0": 162,
+          "bytes": 11,
+          "end_line_1": 6,
+          "index": 4,
+          "kind": "Import",
+          "names": [],
+          "sha256": "c517577851c489e45abae2591256c40404a05c6d19cd4d5ae7fd22b0084cec6c",
+          "start_line_1": 6
+        },
+        {
+          "byte_end_exclusive": 198,
+          "byte_start_0": 173,
+          "bytes": 25,
+          "end_line_1": 7,
+          "index": 5,
+          "kind": "ImportFrom",
+          "names": [],
+          "sha256": "3cb9ffccba5146b2dd177a30c3057a4395ebd5c745d0789d2ed95d0cf4afe271",
+          "start_line_1": 7
+        },
+        {
+          "byte_end_exclusive": 238,
+          "byte_start_0": 199,
+          "bytes": 39,
+          "end_line_1": 9,
+          "index": 6,
+          "kind": "Assign",
+          "names": [
+            "ROOT"
+          ],
+          "sha256": "7ef47abfb88e62077105319b5162d8964b8deb81632dd58942b8b98454e5ee11",
+          "start_line_1": 9
+        },
+        {
+          "byte_end_exclusive": 4169,
+          "byte_start_0": 4132,
+          "bytes": 37,
+          "end_line_1": 72,
+          "index": 9,
+          "kind": "If",
+          "names": [],
+          "sha256": "b9025fdbc48c17b4102eb49c117523e6cfd702cf7d5b9efbbf7a544505e4fcce",
+          "start_line_1": 71
+        }
+      ],
+      "functions": [
+        {
+          "ast_sha256": "f666c86e37f2124ab3299a54bcb6a8676bb1a3ef0eb67b582a1b49194ac60739",
+          "byte_end_exclusive": 414,
+          "byte_start_0": 240,
+          "bytes": 174,
+          "comparison": "new",
+          "end_line_1": 15,
+          "name": "identity",
+          "previous": null,
+          "sha256": "35c472448d8e3387a2f88d594c9c6636f79860a3a99ea0b253be774a65ace32d",
+          "start_line_1": 12
+        },
+        {
+          "ast_sha256": "0ffd15e7ad329e71db2340c3b12a8f2aed97113362a9225ee13d1a043d723f23",
+          "byte_end_exclusive": 4130,
+          "byte_start_0": 416,
+          "bytes": 3714,
+          "comparison": "new",
+          "end_line_1": 68,
+          "name": "run",
+          "previous": null,
+          "sha256": "07f756181cf804f8f9c17f4d725ea64e51804a1c7a02e56bc8f7388fd13ab1b0",
+          "start_line_1": 18
+        }
+      ],
+      "label": "freezer",
+      "previous": null,
+      "previous_module_statements": [],
+      "removed_functions": [],
+      "whole_file_byte_identical": false
+    }
+  ],
+  "scope": "source maps only; maps do not authorize integration or establish mathematics"
+}

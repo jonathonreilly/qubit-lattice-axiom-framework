@@ -1,0 +1,20 @@
+{
+  "context_only_no_edge": [
+    "archived local-defect comparison c163",
+    "parent method attribution",
+    "Git ancestry"
+  ],
+  "existing_graph_objects": "all complete nodes and edges must be preserved during root integration",
+  "external_edges": [
+    {
+      "citation": "SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "from": "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14",
+      "role": "mathematical theorem import",
+      "to": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "graph_executed": false,
+  "internal_prerequisite": "complete chain79d appendix",
+  "new_claim": "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14",
+  "new_note": "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+}

@@ -1,0 +1,25 @@
+
+# module statement 0
+"""Emit exact whole-source, function/global and framing maps. No code execution."""
+
+# module statement 1
+import ast
+
+# module statement 2
+import difflib
+
+# module statement 3
+import hashlib
+
+# module statement 4
+import json
+
+# module statement 5
+from pathlib import Path
+
+# module statement 6
+ROOT = Path(__file__).resolve().parent
+
+# module statement 11
+if __name__ == '__main__':
+    run()

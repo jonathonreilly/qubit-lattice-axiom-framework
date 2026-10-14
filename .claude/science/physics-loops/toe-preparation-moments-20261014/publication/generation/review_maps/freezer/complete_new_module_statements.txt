@@ -1,0 +1,25 @@
+
+# module statement 0
+"""Seal the completed component inventory; stdout/stderr are redirected into seal_execution."""
+
+# module statement 1
+import datetime
+
+# module statement 2
+import hashlib
+
+# module statement 3
+import json
+
+# module statement 4
+import sys
+
+# module statement 5
+from pathlib import Path
+
+# module statement 6
+ROOT = Path(__file__).resolve().parent
+
+# module statement 9
+if __name__ == '__main__':
+    run()

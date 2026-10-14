@@ -1,0 +1,252 @@
+{
+  "utc": "2026-10-14T22:21:20.452048+00:00",
+  "scope": "Nine independent scratch byte/structure integrity mutations; zero mathematical or physical controls.",
+  "results": [
+    {
+      "case": "manifest_anchor",
+      "expected_reason": "manifest identity",
+      "actual": {
+        "reason": "manifest identity",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/manifest_anchor/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "72e9f007f4093ec2de21a3f19b1a81abf08979dce317f477ccc11ac4eae42537"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/manifest_anchor/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165665,
+        "sha256": "26acccdfa9c103fd90b31fb4f441c255e41079d281f97cb54dbe93491707f059"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/manifest_anchor/EXECUTION.json",
+        "bytes": 2090,
+        "sha256": "ddd02bd00b5d11b640578df41194e2d5d01679bda3b1b7832c1628b7c07f0ae0"
+      }
+    },
+    {
+      "case": "note_byte",
+      "expected_reason": "identity: docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "actual": {
+        "reason": "identity: docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        "docs/MULTI_PORT_PREPARATION_ENERGY_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/note_byte/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "72e9f007f4093ec2de21a3f19b1a81abf08979dce317f477ccc11ac4eae42537"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/note_byte/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "1be386390ea0bbf80fdf2fffb0f7c0fd77bbcb17b3d30986dbfd641415343700"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/note_byte/EXECUTION.json",
+        "bytes": 2067,
+        "sha256": "bacf05b68ad5c81c755843c0e43c2ff97184c7b2b5c43952f392bd0158fc8f24"
+      }
+    },
+    {
+      "case": "proof_interval",
+      "expected_reason": "identity: body generic",
+      "actual": {
+        "reason": "identity: body generic",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/BODY_MAP.json"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/proof_interval/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "3f61faf9fb956fa176025d70a7c8f4f6059c7a466e0ae87761cb58899b209224"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/proof_interval/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "3304abbfa6771b22d1986869ea1dbef6299e97e0f7cabece7b48f7dce589b7ec"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/proof_interval/EXECUTION.json",
+        "bytes": 2086,
+        "sha256": "16e318b6a2442dc62f714e74643d3b2eb7813b01bb452cc8cafb52f36478b15f"
+      }
+    },
+    {
+      "case": "object_content",
+      "expected_reason": "identity: uncompressed object",
+      "actual": {
+        "reason": "identity: uncompressed object",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/SOURCE_ARCHIVE.json",
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/objects/0093507160d18bf262109ec41e2ea330e0c6ea63d2376c598c23b8e3f80d9168.gz"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/object_content/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "d66af551d05d024cfe123ff8f780467aaab5f3cea96281de3a3e711159c4a292"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/object_content/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "4ca3636dbbe85f0ec4aa6510b14e55707fdfdf8564e440c6873503cf26ff051c"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/object_content/EXECUTION.json",
+        "bytes": 2086,
+        "sha256": "ee7dd860ca3e490cc2872db067acddd30d2c0df7991f5e4ae76a5105a6e3c418"
+      }
+    },
+    {
+      "case": "archive_recipe",
+      "expected_reason": "identity: archive assemblies/generic/ASSEMBLE_SOURCE_ONLY.py",
+      "actual": {
+        "reason": "identity: archive assemblies/generic/ASSEMBLE_SOURCE_ONLY.py",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/SOURCE_ARCHIVE.json"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/archive_recipe/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "08a959d1b9c17916c01e7e8697141dd8ebdededd1c9eee267556089fb9f7028c"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/archive_recipe/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "7f75bf4994bff64b8f4ca5c278395aeec2b738eb330c3bad2f75166cf601b3fc"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/archive_recipe/EXECUTION.json",
+        "bytes": 2087,
+        "sha256": "3900d03eeb3fc5677050cf70fbb6407b842dd4bc0243c1d4fe0c76b0928d3e11"
+      }
+    },
+    {
+      "case": "group_membership",
+      "expected_reason": "complete group closure",
+      "actual": {
+        "reason": "complete group closure",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/SOURCE_ARCHIVE.json"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/group_membership/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "e39e3b2679186e7ff7d19905036b38347fa3b412ad1a68a3f385955e478840de"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/group_membership/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "e32748086aa66b92ce78dc9b96c07d8339b8ebf5cb1527f930c95b3b6b059e5f"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/group_membership/EXECUTION.json",
+        "bytes": 2094,
+        "sha256": "f9bdde846a46055bc262805e8bdb2ccaa6af6005a8cc784f6b977c71ffe0d1e7"
+      }
+    },
+    {
+      "case": "canonical_parent",
+      "expected_reason": "live canonical parent drift",
+      "actual": {
+        "reason": "live canonical parent drift",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/canonical_parent/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "ea184b951759b441f8fc7d2970a744f13a0214d475ed8ca1b6c03192bdf29f23"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/canonical_parent/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "c1f7047816dd49ed12132f5f1fe7874abbab0f9f2eeddc2213f5a3c64d0cbd19"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/canonical_parent/EXECUTION.json",
+        "bytes": 2093,
+        "sha256": "84d00634276a644e3df73fc78a180663c2145884607dcc545e97a011f44aab33"
+      }
+    },
+    {
+      "case": "declared_read",
+      "expected_reason": "undeclared read: .claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+      "actual": {
+        "reason": "undeclared read: .claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        "scripts/preparation_moment_source_identity_2026_10_14.py"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/declared_read/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64745,
+        "sha256": "629439701b443e661e5eef0b9267848034ee4cbc56f5609f8035a2155cdbde2d"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/declared_read/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "1be386390ea0bbf80fdf2fffb0f7c0fd77bbcb17b3d30986dbfd641415343700"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/declared_read/EXECUTION.json",
+        "bytes": 2083,
+        "sha256": "533a496b4a22fdf54d47ca2a729ef01043d7436510e14527322de314db1279dc"
+      }
+    },
+    {
+      "case": "fragment_content",
+      "expected_reason": "identity: framing fragment",
+      "actual": {
+        "reason": "identity: framing fragment",
+        "status": "rejected",
+        "type": "ValueError"
+      },
+      "changed_targets": [
+        ".claude/science/physics-loops/toe-preparation-moments-20261014/framing/note_header.md.gz"
+      ],
+      "mutant_helper": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/fragment_content/scripts/preparation_moment_source_identity_2026_10_14.py",
+        "bytes": 64832,
+        "sha256": "96c41fe2f76b3a30accf0994bdadf15ecb3cf844435726bc6600a6eb9d6b9b5b"
+      },
+      "mutant_manifest": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_fixtures/fragment_content/.claude/science/physics-loops/toe-preparation-moments-20261014/IDENTITY_INPUTS.json",
+        "bytes": 165664,
+        "sha256": "b4daca27dd07cda94e50862bc0346c8b4274a21665ea22c7166466ba63d935af"
+      },
+      "actual_receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/publication_integration/preparation/storage_repair/integrity_runs/fragment_content/EXECUTION.json",
+        "bytes": 2094,
+        "sha256": "90881bf9bc08c25c39ee06bbf82a88bcfa1e8bb2e2b332e77945240772186258"
+      }
+    }
+  ],
+  "canonical_source_unchanged": true,
+  "new_mathematical_executions": 0
+}

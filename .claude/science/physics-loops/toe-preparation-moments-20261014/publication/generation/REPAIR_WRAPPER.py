@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+"""Apply the sole root-requested notation repair; preserve all prior payload bytes by recipe."""
+import copy
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+
+def meta(b):
+    return {'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+
+def dump(value):
+    return (json.dumps(value, indent=2, sort_keys=True) + '\n').encode()
+
+
+def run():
+    spec = json.loads((ROOT / 'INPUTS.json').read_text())
+    out = ROOT / 'payload'
+    history = ROOT / 'history/wrapper_v1'
+    target = history / 'generated'
+    if target.exists():
+        raise ValueError('repair already attempted; preserve it and use a new revision')
+    target.mkdir()
+    old = {str(p.relative_to(out)): p.read_bytes() for p in out.rglob('*') if p.is_file()}
+    packet = spec['packet']
+    bmap_path = packet + '/BODY_MAP.json'
+    manifest_path = packet + '/IDENTITY_INPUTS.json'
+    oldmap = json.loads(old[bmap_path])
+    cores = {r['id']: old[spec['note']][r['byte_start_0']:r['byte_end_exclusive']]
+             for r in oldmap['bodies']}
+    fragments = [old[r['path']] for r in oldmap['fragments']]
+    before = b'    kappa_vac = J*V^2J = (209/16) sum_i |lambda_i| times I.'
+    after = b'    J*V^2J = kappa_vac I,  kappa_vac = (209/16) sum_i |lambda_i|.'
+    header = (ROOT / 'templates/note_header.md').read_bytes()
+    assert fragments[0].count(before) == 1
+    assert header == fragments[0].replace(before, after)
+    updated = {}
+    updated[oldmap['fragments'][0]['path']] = header
+    newmap = copy.deepcopy(oldmap)
+    note = header
+    for i, row in enumerate(newmap['bodies']):
+        start = len(note)
+        note += cores[row['id']]
+        row.update(byte_start_0=start, byte_end_exclusive=len(note),
+                   line_start_1=note[:start].count(b'\n') + 1,
+                   line_end_1=note.count(b'\n'))
+        note += fragments[i + 1]
+    assert old[spec['note']].replace(before, after) == note
+    updated[spec['note']] = note
+    newmap['note'].update(meta(note))
+    newmap['fragments'][0].update(meta(header))
+    updated[bmap_path] = dump(newmap)
+    manifest = json.loads(old[manifest_path])
+    for relative, b in updated.items():
+        manifest['files'][relative] = meta(b)
+    updated[manifest_path] = dump(manifest)
+    inputs = sorted(list(manifest['files']) + [manifest_path])
+    template = (ROOT / 'templates/identity_runner.py.in').read_text()
+    updated[spec['helper']] = template.replace('@AUDIT_INPUT_PATHS@', repr(inputs)).replace(
+        '@MANIFEST_PATH@', repr(manifest_path)).replace(
+        '@MANIFEST_SHA256@', repr(meta(updated[manifest_path])['sha256'])).encode()
+    assert len(updated) == 5 and all(old[k] != v for k, v in updated.items())
+    recipes = []
+    for relative in sorted(old):
+        row = dict(meta(old[relative]), path=relative)
+        if relative == spec['note']:
+            row['recipe'] = {'kind': 'old_framing_current_cores',
+                             'header': 'history/wrapper_v1/note_header.md',
+                             'body_ids': ['generic', 'sharper', 'chain'],
+                             'tail_fragments': [r['path'] for r in oldmap['fragments'][1:]]}
+        elif relative in updated:
+            name = str(len(recipes)) + '_' + Path(relative).name
+            (target / name).write_bytes(old[relative])
+            row['recipe'] = {'kind': 'historical_file',
+                             'path': str((target / name).relative_to(ROOT))}
+        else:
+            row['recipe'] = {'kind': 'current_payload', 'path': relative}
+        recipes.append(row)
+    reconstruction = {'scope': 'complete exact build02 payload, before scalar notation repair',
+                      'mathematical_change': False, 'changed_files': sorted(updated),
+                      'previous_files': recipes, 'previous_body_map': oldmap}
+    (history / 'PAYLOAD_RECONSTRUCTION.json').write_bytes(dump(reconstruction))
+    for relative, b in updated.items():
+        (out / relative).write_bytes(b)
+    result = {'mathematical_predicates': 0, 'mathematical_changes': 0,
+              'raw_bodies_changed': 0, 'previous_payload_files_preserved': len(old),
+              'changed_files': {p: {'before': meta(old[p]), 'after': meta(b)}
+                                for p, b in updated.items()},
+              'primary_helper_executed': False}
+    (history / 'REPAIR_RESULT.json').write_bytes(dump(result))
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+if __name__ == '__main__':
+    run()

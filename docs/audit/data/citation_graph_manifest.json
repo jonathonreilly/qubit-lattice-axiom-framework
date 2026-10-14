@@ -1,6 +1,6 @@
 {
- "edge_count": 16053,
- "node_count": 7114,
+ "edge_count": 16054,
+ "node_count": 7115,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14893,6 +14893,10 @@
   "moving_source_retarded_portability_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "multi_port_preparation_energy_moments_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "a2e5c22fb92f",
+   "out_degree": 1
   },
   "multifactor_connes_lott_purchases_not_derives_koide_multiplicity_narrow_obstruction_note_2026-06-04": {
    "deps_hash": "ecc26c550a95",

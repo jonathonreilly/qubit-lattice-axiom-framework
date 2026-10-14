@@ -1,0 +1,44 @@
+
+# module statement 0
+"""Build source-only components; never import or execute archived science."""
+
+# module statement 1
+import argparse
+
+# module statement 2
+import gzip
+
+# module statement 3
+import hashlib
+
+# module statement 4
+import json
+
+# module statement 5
+from pathlib import Path, PurePosixPath
+
+# module statement 6
+ROOT = Path(__file__).resolve().parent
+
+# module statement 7
+SCHEMA = 'preparation-moment-components-v1'
+
+# module statement 8
+FRAGMENTS = ['note_header.md', 'between_generic_sharper.md',
+             'between_sharper_chain.md', 'note_footer.md']
+
+# module statement 9
+VERIFY_EXISTING = False
+
+# module statement 10
+WRITTEN = set()
+
+# module statement 20
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', default=str(ROOT / 'payload'))
+    parser.add_argument('--verify-existing', action='store_true',
+                        help='recompute expected bytes and compare without writing the payload')
+    args = parser.parse_args()
+    VERIFY_EXISTING = args.verify_existing
+    build(Path(args.output).resolve())

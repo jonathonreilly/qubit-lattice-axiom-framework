@@ -1,0 +1,14 @@
+{
+  "cause": "Caller did not create the runs parent before using the unchanged recorder. Child builder never launched.",
+  "combined_actual_output": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components/record_run.py\", line 6, in <module>\n    r=Path(a.run);r.mkdir();source=Path(a.source).resolve();before=source.read_bytes();(r/'executed_source.py').write_bytes(before)\n                  ~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/pathlib/_local.py\", line 722, in mkdir\n    os.mkdir(self, mode)\n    ~~~~~~~~^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'runs/build01'\n",
+  "command": "python3 record_run.py --run runs/build01 --source BUILD_COMPONENTS.py",
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/preparation_moment_publication_components",
+  "exit_code": 1,
+  "observed_utc": "2026-10-14T22:02:47.181127+00:00",
+  "persistent_child_receipt_exists": false,
+  "recorder_current_sha256": "0f4de989012cdd6ba51728bdefa6ef9a63b1c3802f719ef4d710e3a4d3911696",
+  "repair": "Create runs parent; retry in a new uniquely named run; preserve this actual tool output.",
+  "separate_stdout_stderr_available": false,
+  "tool_chunk_id": "4de2c6",
+  "wall_seconds_from_tool": 0.647308167
+}

@@ -1,0 +1,437 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_physical_clock_check.py
+runner_sha256: b224dd7fe83fee401345446090a8ae04ec2ad032d01e3bc7b49af9c19de20631
+input_fingerprint_sha256: 8889142acdfa4afccce42aa448ed55ecc97cac1da19c368a5451c87cb5b3dd7c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional flat physical-clock mathematics and published-input normalization; no fitted age or verified environment.",
+  "passed": 69,
+  "failed": 0,
+  "units": {
+    "clock": {
+      "passed": 57,
+      "failed": 0
+    },
+    "observed_normalization": {
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "clock::joint_Friedmann_coupling_square",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::positive_transverse_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::positive_joint_coefficients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::local_square_minimizer",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::local_minimizer_bath_density",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::Phi_physical_time_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::constant_duration_integrand",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::physical_endpoint_density_conversion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::positive_gravity_calibration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::same_background_upper_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::zero_coupling_radiation_normalization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::candidate_uniform_domain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::separate_envelope_integral",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::sharp_vs_separate_squared_denominators",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::weighted_clock_ratio_square",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::weighted_clock_optimal_log_slope",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::candidate_qmax_1/100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_clock_sign_1/100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::sharp_improves_separate_1/100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/100, 1, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/100, 1, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/100, 3/2, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/100, 3/2, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_qmax_1/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_clock_sign_1/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::sharp_improves_separate_1/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/10, 1, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/10, 1, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/10, 3/2, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/10, 3/2, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_qmax_1/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_clock_sign_1/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::sharp_improves_separate_1/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/5, 1, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/5, 1, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/5, 3/2, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(1/5, 3/2, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_qmax_3/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::candidate_clock_sign_3/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::sharp_improves_separate_3/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(3/10, 1, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(3/10, 1, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(3/10, 3/2, -2/3)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::positive_local_constraint_(3/10, 3/2, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::origin_radiation_vacuum_Friedmann",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::origin_radiation_continuity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::origin_Phi_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::origin_duration_below_floor_free_bound_1/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::origin_duration_below_floor_free_bound_1/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::origin_duration_below_floor_free_bound_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::sinh_gap_at_zero",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::sinh_gap_positive_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::sinh_gap_derivative_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::deSitter_nonconserved_positive_bath_charge",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock::deSitter_charge_bound_fails_in_past",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::large_q_kinematic_sign_counterexample",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock::large_q_outside_candidate_domain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "observed_normalization::blackbody_stefan_boltzmann_route",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::SI_mass_energy_conversion",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::time_temperature_scaling",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::time_gravity_scaling",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::monotone_rectangle_upper",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::monotone_rectangle_lower",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::energy_density_dimensions",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::mass_density_dimensions",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::clock_dimensions",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::q_envelope_0.25",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::q_envelope_0.3",
+      "passed": true
+    },
+    {
+      "name": "observed_normalization::q_envelope_0.333333333333",
+      "passed": true
+    }
+  ],
+  "substantive_outputs": {
+    "clock": {
+      "candidate_envelopes": [
+        {
+          "k": "1/100",
+          "qmax": "10197/40000",
+          "sharp_coefficient": "0.55596538789547668415",
+          "separate_coefficient": "0.88850517377582843249"
+        },
+        {
+          "k": "1/10",
+          "qmax": "117/400",
+          "sharp_coefficient": "0.56591183497429277296",
+          "separate_coefficient": "0.94051231377414242782"
+        },
+        {
+          "k": "1/5",
+          "qmax": "8/25",
+          "sharp_coefficient": "0.57353933467640441477",
+          "separate_coefficient": "0.98019601878726027608"
+        },
+        {
+          "k": "3/10",
+          "qmax": "133/400",
+          "sharp_coefficient": "0.57710985682476124179",
+          "separate_coefficient": "0.99875078027374153065"
+        }
+      ]
+    },
+    "observed_normalization": {
+      "central": {
+        "T": "2.72548",
+        "G": "6.6743e-11",
+        "energy_density_J_m3": "4.174678380800375443325836512904895e-14",
+        "mass_density_kg_m3": "4.644956134403366771447101471178197e-31",
+        "tau_reference_s": "41367165909985858511.352059335052302",
+        "tau_reference_Gyr": "1310.8463859731366932641284297618419"
+      },
+      "reported_uncertainty_rectangle": [
+        {
+          "T": "2.72491",
+          "G": "6.67415e-11",
+          "energy_density_J_m3": "4.1711871494630891215481395828801816e-14",
+          "mass_density_kg_m3": "4.6410716156602389962824506183856195e-31",
+          "tau_reference_s": "41384939239300216160.620435838380651",
+          "tau_reference_Gyr": "1311.4095887931977134072437650005276"
+        },
+        {
+          "T": "2.72491",
+          "G": "6.67445e-11",
+          "energy_density_J_m3": "4.1711871494630891215481395828801816e-14",
+          "mass_density_kg_m3": "4.6410716156602389962824506183856195e-31",
+          "tau_reference_s": "41384009153578829679.529805993283436",
+          "tau_reference_Gyr": "1311.3801161551838441304093465055466"
+        },
+        {
+          "T": "2.72605",
+          "G": "6.67415e-11",
+          "energy_density_J_m3": "4.1781718032668516874530088703924436e-14",
+          "mass_density_kg_m3": "4.6488430911065105344334436644281062e-31",
+          "tau_reference_s": "41350333149217891061.787541872972191",
+          "tau_reference_Gyr": "1310.3129879717687993316203346570142"
+        },
+        {
+          "T": "2.72605",
+          "G": "6.67445e-11",
+          "energy_density_J_m3": "4.1781718032668516874530088703924436e-14",
+          "mass_density_kg_m3": "4.6488430911065105344334436644281062e-31",
+          "tau_reference_s": "41349403841234272237.478342231116864",
+          "tau_reference_Gyr": "1310.2835399787776078497205817653074"
+        }
+      ]
+    }
+  },
+  "checker_sha256": "b224dd7fe83fee401345446090a8ae04ec2ad032d01e3bc7b49af9c19de20631"
+}
+
+----- stderr -----
+

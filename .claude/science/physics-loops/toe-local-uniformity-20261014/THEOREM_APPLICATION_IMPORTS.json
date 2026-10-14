@@ -1,0 +1,32 @@
+{
+  "C_separately_discharges_D_nonempty_premise": true,
+  "L4_resolved_price_not_generalized": true,
+  "ancestry_is_not_import": true,
+  "canonical_parent_binding_complete": true,
+  "current_binding": "PARENT_BINDINGS.json",
+  "four_body_composition": [
+    "A direct estimate",
+    "B alternative cutoff and literal family",
+    "C nonempty subcode only",
+    "D all-even-L whole-term budget"
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": false,
+      "key": "GRAPH_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Current authoritative publication roles; full original source dependency/status records remain immutable historical archive members",
+  "source_dependency_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/DEPENDENCIES.json"
+}

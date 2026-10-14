@@ -1,0 +1,106 @@
+{
+  "actual_parent_head": "eac18cba5c0699ef1c025fc77549bb682e35715e",
+  "actual_parent_pr": {
+    "isDraft": false,
+    "number": 9537,
+    "status": "OPEN as supplied by root",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9537"
+  },
+  "all_markdown_note_targets": [
+    "LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+    "FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 44669,
+      "byte_start_inclusive": 13657,
+      "canonical_path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "4aa290266c12241130cd805271e935f973e614e09c783051e4e99ea7974dd47a",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/premises/PENALTY_CORE.md",
+      "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 50408,
+      "byte_start_inclusive": 11172,
+      "canonical_path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/premises/JOINT_CORE.md",
+      "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "bytes": 41090,
+      "claim_id": "local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "GRAPH_ATTRIBUTION",
+      "markdown": "[connected-graph encoding note](LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md)",
+      "path": "docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "published_sha256": "240f0f508a02c343b4c239a43d2d6b005b65ac25d17b1f2991f8caf341fceb64",
+      "read_coverage": "lines130-185 and390-435 only; generic graph attribution",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 110444,
+      "claim_id": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "markdown": "[finite-penalty note](FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "4aa290266c12241130cd805271e935f973e614e09c783051e4e99ea7974dd47a",
+      "read_coverage": "complete unchanged original relied core and canonical body coverage reused",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "original_bytes": 110137
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 50465,
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "markdown": "[joint-interface note](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48",
+      "read_coverage": "complete unchanged original relied core and canonical body coverage reused",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "original_bytes": 49944
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": false,
+      "key": "GRAPH_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "verification_scope": "actual source citations/roles and existing manifest-node identities inspected; no graph program executed"
+}

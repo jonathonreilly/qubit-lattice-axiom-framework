@@ -1,0 +1,143 @@
+{
+  "Jc_net_gate_cap_and_unpriced_compensation_distinguished": true,
+  "fixed_L4_one_neutral_ray_only": true,
+  "historical_failures_and_source_exposure_preserved": true,
+  "mathematical_bodies_accepted": true,
+  "mathematical_core_edits": 0,
+  "native_preparation_photon_exports": false,
+  "new_independent_mathematical_review": false,
+  "new_publication_rendering_and_driver_review_required": true,
+  "no_go_packet_pass": false,
+  "prior_acceptances": [
+    {
+      "file": "NEUTRAL_PREPARATION_ROOT_ACCEPTANCE.json",
+      "sha256": "6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe",
+      "verbatim": {
+        "accepted_at": "2026-10-14T09:52:23.409500+00:00",
+        "accepted_counts": {
+          "all_active_inputs": 1344,
+          "idle_transit_factors": 21747,
+          "logical_gates": 14017,
+          "physical_primitives": 871249,
+          "rank": 1344,
+          "signed_rows": 1475
+        },
+        "actual_independent_receipt": {
+          "bytes": 2201,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_review/run01_review_controls/RECEIPT.json",
+          "sha256": "d3f8b368b1ecd44aa70664fd3175ba46a9dbaf0ae2bc37425caff4aad2d443c1"
+        },
+        "canonical_or_git_changes_by_acceptance": false,
+        "editable_prompt_files_changed": [],
+        "error_scope": "Unitary primitive operator errors and joint initialization trace error, including arbitrary idle/passive-reference correlations.",
+        "native_or_autonomous_claim": false,
+        "required_export_qualification": "Jc prices scheduled gate generators after drift removal. It does not bound or price a separate arbitrary drift compensator or its apparatus.",
+        "retained_or_audit_verdict": false,
+        "review_exposure": "Source-exposed same selected model/effort; distinct direct-loop, raw-word certificate and exact-route checks, not model-diverse or blind.",
+        "review_seal": {
+          "bytes": 4090,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_review/REVIEW_SEAL.json",
+          "sha256": "ee4a1e992f9c80b18a71f3d05bb1142c8a15fac446eae2d0e64452d7712ff907"
+        },
+        "root_disposition": {
+          "bytes": 4217,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_root_review/ROOT_DISPOSITION.md",
+          "sha256": "cf772a99d047f341fa8d82ab334e65afbd53fad7cabe48e234a8c76830214100"
+        },
+        "root_review_binding": {
+          "bytes": 301,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_root_review/REVIEW_BINDING.json",
+          "sha256": "30dd18a65fafcf0a0da6f59ed14e866e606959709032704ef248e804518b6ce2"
+        },
+        "root_source_review": {
+          "bytes": 4022,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_root_review/ROOT_SOURCE_REVIEW.json",
+          "sha256": "0bdfc2683796ab86edf92f6093f51483edafa963b2b6cc30b4719200bb8d70a4"
+        },
+        "schema": "conditional-science-root-acceptance-v1",
+        "scientific_executions": {
+          "author": 2,
+          "root_reruns": 0,
+          "separate_reviewer": 1
+        },
+        "separate_review": {
+          "bytes": 24931,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_review/REPORT.md",
+          "sha256": "44c9768da5256b1e5f0fb2d16d76eca731d51fe88aacdf707924a26d94847a3f"
+        },
+        "source": {
+          "bytes": 32080,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation/DERIVATION.md",
+          "sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+        },
+        "source_freeze": {
+          "bytes": 11065,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation/FINAL_FREEZE.json",
+          "sha256": "21c3e2569249635e1223f53ef29adcedc6684e562ce4dbbadf3213b7a5a3764f"
+        },
+        "status": "accepted conditional fixed-neutral-ray L4 preparation with explicit supplied-control and drift-cost qualifications"
+      }
+    },
+    {
+      "file": "NEUTRAL_PREPARATION_ASSEMBLY_ROOT_ACCEPTANCE.json",
+      "sha256": "b901fd0b1c26861a39458f8693e30c0d8b3956d92f0da4d6e20f2de7130c9d00",
+      "verbatim": {
+        "accepted_original_proof": {
+          "bytes": 32080,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/cores/NEUTRAL_PREPARATION_DERIVATION.md",
+          "sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+        },
+        "accepted_utc": "2026-10-14T10:39:05.912458+00:00",
+        "actual_root_source_check_receipt": {
+          "bytes": 767,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_assembly_root_review/source_check/EXECUTION.json",
+          "sha256": "268e7639f4b3bb27e964993ccd173925ef9de09130f5be174e12b6bc8c5188a0"
+        },
+        "all200_assembly_files_bound": true,
+        "candidate": {
+          "bytes": 42462,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/CANDIDATE.md",
+          "sha256": "984cd3a61e6f8ccd0c4baf5dedbdd73d6cb3f589550038f0796b86d6e23d43b3"
+        },
+        "disposition": "conditional_source_assembly_accepted",
+        "editable_prompt_files_changed": [],
+        "exact_unchanged_prior_proof_coverage_reused": true,
+        "future_publication_driver_accepted": false,
+        "mathematical_body_edits": 0,
+        "new_mathematical_predicates": 0,
+        "new_prose_and_complete_changed_programs_read": true,
+        "prior_scientific_acceptance": {
+          "bytes": 3550,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NEUTRAL_PREPARATION_ROOT_ACCEPTANCE.json",
+          "sha256": "6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe"
+        },
+        "retained_audit_status": false,
+        "root_review": {
+          "bytes": 4565,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NEUTRAL_PREPARATION_ASSEMBLY_ROOT_REVIEW.md",
+          "sha256": "fe51280207166f58b57cbc8141517b9330fe551e5e3f7c2dc5c833cf87cec6c5"
+        },
+        "root_source_binding": {
+          "bytes": 3769,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_assembly_root_review/SOURCE_BINDING.json",
+          "sha256": "3adf15634b121659611dd2a454715883ac9c1bc9edb05ba7efbbfd333312a270"
+        },
+        "scientific_reruns": 0,
+        "scope": "One fixed L4 neutral ray via supplied addressed returned NN circuit, scheduled gate cap after drift removal; arbitrary compensator cost excluded.",
+        "source_freeze": {
+          "bytes": 40564,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/FINAL_FREEZE.json",
+          "sha256": "b3bdb1d92ed7bc57c35a6a6f55a1fc589767b66bcf270f00afb87576eed1d3ab"
+        },
+        "wrapper": {
+          "bytes": 10069,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/THEOREM_WRAPPER.md",
+          "sha256": "31de08e6db1805823d0b342142f0f9e295971f81fd3d8cb852361ada963d172c"
+        }
+      }
+    }
+  ],
+  "retained_audit_status": false,
+  "supplied_product_controls_clock_precision_readout_required": true,
+  "unchanged_complete_core_coverage_reused": true
+}

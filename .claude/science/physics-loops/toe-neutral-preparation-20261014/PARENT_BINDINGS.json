@@ -1,0 +1,98 @@
+{
+  "actual_parent_head": "84fdb15d24c567cefd6c843cc5ddfc6e990f2205",
+  "actual_parent_pr": {
+    "isDraft": false,
+    "number": 9540,
+    "status": "OPEN as supplied by root",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9540"
+  },
+  "all_markdown_note_targets": [
+    "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+    "RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 50408,
+      "byte_start_inclusive": 11172,
+      "canonical_path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/archive/author/sources/JOINT_DERIVATION.md",
+      "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 50465,
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "original author/root recorded coverage; current source preparer does not upgrade partial exposure",
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "markdown": "[joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48",
+      "read_coverage": "lines 1-85 complete; unchanged accepted proof coverage reused separately",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "original_bytes": 49944
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+      "bytes": 31413,
+      "claim_id": "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "original author/root recorded coverage; current source preparer does not upgrade partial exposure",
+      "imported_theorem_result": false,
+      "key": "ROUTING_ATTRIBUTION",
+      "markdown": "[Cycle 870 returned routing](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md)",
+      "path": "docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+      "published_sha256": "74beb1de39ea0e579b8c709fdb294602f8cb959f1283b7556eb4c62335fd2e2b",
+      "read_coverage": "lines 1-185 and 200-350 complete; remainder not read this task",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+      "bytes": 9759,
+      "claim_id": "recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "original author/root recorded coverage; current source preparer does not upgrade partial exposure",
+      "imported_theorem_result": false,
+      "key": "RETURN_ATTRIBUTION",
+      "markdown": "[Cycle 883 inverse and return](RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md)",
+      "path": "docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+      "published_sha256": "f25441ace48d2b850aa6ac5b03601d4e71de4821775ee21c7dc6dc8414169fbd",
+      "read_coverage": "complete 130 lines; separately reread after aggregate truncation",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "ROUTING_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "RETURN_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "verification_scope": "actual source citations/roles and existing manifest-node identities inspected; no graph program executed"
+}

@@ -1,0 +1,8 @@
+{
+  "current_authoritative_binding": "PARENT_BINDINGS.json",
+  "current_root_execution_gate": "Externally supplied root acceptance and final assembly review checked by the guarded driver",
+  "original_source_freeze_sha256": "9a50b0b116cdb2a9151116fd95329b2fc831057cb084aa8108399e6ce490fa9a",
+  "original_source_metadata_edited": false,
+  "role": "Explicitly historical source preparation snapshot",
+  "scope": "All source manifests/freezes, pending flags, paths and statuses embedded in the content-addressed archive retain their original revision meaning. Baseline/V1 records are historical. The V2 repair is current source revision; mathematical bodies remain unchanged."
+}

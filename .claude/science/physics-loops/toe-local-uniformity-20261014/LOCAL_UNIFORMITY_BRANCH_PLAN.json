@@ -1,0 +1,7 @@
+{
+  "base": "eac18cba5c0699ef1c025fc77549bb682e35715e",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-local-uniformity-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9537"
+}

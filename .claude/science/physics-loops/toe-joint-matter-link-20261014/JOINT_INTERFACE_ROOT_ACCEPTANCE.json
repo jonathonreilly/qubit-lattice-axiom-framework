@@ -1,0 +1,56 @@
+{
+  "author_seal": {
+    "bytes": 8368,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/SEAL.json",
+    "sha256": "81cfcd86447b1f740cfb83579837af9f2729b09910191d3ca322d4d16d74575e"
+  },
+  "canonical_execution_authorized": false,
+  "complete_author_argument_and_implementation_read": true,
+  "complete_final_actual_outputs_and_historical_differences_read": true,
+  "complete_separate_review_and_selective_program_outputs_read": true,
+  "conditional_support": true,
+  "created_utc": "2026-10-14T06:57:03.031916+00:00",
+  "derivation": {
+    "bytes": 39236,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/DERIVATION.md",
+    "sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+  },
+  "disposition": "accepted_conditional_fixed_L4_bounded_theorem_for_source_assembly",
+  "editable_prompt_files_changed": [],
+  "hamiltonian_positivity_guaranteed": false,
+  "identity_check": {
+    "bytes": 18073,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/FINAL_REVIEW_IDENTITY_CHECK.json",
+    "sha256": "dea318e93e4b4473d0d889860fcc3ed470d0c28b19afd2ec21384a93c4a1c606"
+  },
+  "limits": "Supplied finite periodic L4/background3/S1 architecture and even code. No native law, physical preparation/readout/energy/time, odd/full-Fock or continuum/photon promotion.",
+  "mathematical_body_edits_required": [],
+  "native_or_photon_realization_proved": false,
+  "retained_audit_status": false,
+  "root_final_review": {
+    "bytes": 7238,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROOT_FINAL_REVIEW.md",
+    "sha256": "2f19f7db1a8a7a609699a724a2a3b2e46d37266936a176b35d33ebcf73cfe0d4"
+  },
+  "root_rotation_acceptance": {
+    "bytes": 6214,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROOT_ROTATION_ACCEPTANCE.json",
+    "sha256": "4639fec24e8a414b7c2b2d1a902120a29ade7cde46143d209d54eeed277482af"
+  },
+  "root_sector_acceptance": {
+    "bytes": 1659,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_root_check/ROOT_SECTOR_ACCEPTANCE.json",
+    "sha256": "d250ac7c1ee72a5ae7248a69e4c8258b8341b30237930bfc47e1c551af98fc75"
+  },
+  "separate_full_review": {
+    "bytes": 27549,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/REPORT.md",
+    "sha256": "65850322f6d46872dbec4c121122c9503f7c2f6c7047bb5d889ed38a3a79f3e0"
+  },
+  "separate_review_seal": {
+    "bytes": 5045,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_interface_full_review/SEAL.json",
+    "sha256": "f5decd77922d61fc5412472fd2a7e43ccc11a8f368b7de5686706e38d236d62a"
+  },
+  "source_assembly_preserve_full_body": true
+}

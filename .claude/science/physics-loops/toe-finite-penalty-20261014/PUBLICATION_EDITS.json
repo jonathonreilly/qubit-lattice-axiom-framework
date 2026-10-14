@@ -1,0 +1,321 @@
+{
+  "accepted_wrapper_edit_scope": "publication metadata, attribution links or current source-status pointers only; full original/current diff",
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/CANDIDATE.md",
+      "accepted_candidate_sha256": "6bb0a2b9dbdfbb6588a031cac41f9f6dfa66e5604398b0113e38966df9497e3c",
+      "context_lines": 3,
+      "diff": "diffs/CANDIDATE_TO_PUBLICATION.diff.gz",
+      "diff_bytes": 8018,
+      "diff_sha256": "949834b91457b4eeb5979452465fa4e6e0d9785fb8e2508b1497b52c1c82ba89",
+      "diff_stored_sha256": "8600cd9ea07d8a8e0f270dae5d8118d80873ff3043ef4be39283d4ce7ac0d96f",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "byte_end_exclusive": 13360,
+          "byte_offset": 0,
+          "bytes": 13360,
+          "first_line": 1,
+          "kind": "rendered_wrapper",
+          "last_line": 90,
+          "replacements": [
+            {
+              "original": "---\ntitle: Finite-penalty recovery of a literal charged-link coupling with exact Pauli resource accounting\nclaim_type: bounded_theorem\nactual_current_scientific_status: accepted_conditional_source\nassembly_status: proposed_resolved_revision_for_root_review\nartifact_role: theorem_source_assembly\nretained_audit_status: false\ncanonical_execution_authorized: false\npauli_resolution_included: true\n---\n",
+              "rendered": "---\ntitle: Finite-penalty recovery of a literal charged-link coupling with exact Pauli resource accounting\nclaim_id: finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 supplied static architecture, K inputs and positive penalty with full physical resource accounting\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted conditional finite penalty theorem and exact unchanged Pauli refinement; identity runner checks no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/finite_gauss_penalty_recovery_identity_2026_10_14.py\nnext_trace_action: root reviews exact source composition and publication program before separately authorized integration\n---\n\nClaim type: bounded_theorem\n",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "](baseline_v1/parents/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+              "rendered": "](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "The new wrapper, composition and publication machinery remain subject to root review; neither earlier acceptance grants execution or retained status.",
+              "rendered": "The resolved V2 source composition is accepted under `4ad8537f76997f704628ecf7872defd08a63dda0f81e745ebb49a29640f0648b`; the publication rendering and driver require separate root review. No source acceptance grants execution or retained status.",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            },
+            {
+              "original": "---\ntitle: Finite-penalty recovery of a literal charged-link coupling with exact Pauli resource accounting\nclaim_id: finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 supplied static architecture, K inputs and positive penalty with full physical resource accounting\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted conditional finite penalty theorem and exact unchanged Pauli refinement; identity runner checks no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/finite_gauss_penalty_recovery_identity_2026_10_14.py\nnext_trace_action: root reviews exact source composition and publication program before separately authorized integration\n---\n\nClaim type: bounded_theorem\n\n# Finite-penalty recovery of a literal charged-link coupling\n\nThis new source revision combines seven complete, unchanged mathematical bodies into one conditional finite theorem. Bodies A\u2013D are the accepted baseline, preserved with its entire frozen package under `baseline_v1/`. Bodies E\u2013G are the later accepted exact Pauli resolution and its fixed-budget corollary. The baseline source acceptance is `11d07d2afa5db19642f553a5528ff44617a1413023866f040aba588b316ea27a`; the refinement acceptance is `a77c9a210d0de91a481e7c5c6a78b968250e90ff84ae908fc09349e249262168`. Both complete acceptance records and their complete reviews are archived. The resolved V2 source composition is accepted under `4ad8537f76997f704628ecf7872defd08a63dda0f81e745ebb49a29640f0648b`; the publication rendering and driver require separate root review. No source acceptance grants execution or retained status.\n\nEvery original pending-review, provisional, source-exposure and independence paragraph inside the seven literal bodies is a **historical statement at that source revision**. The later acceptances govern current scientific disposition. This includes the baseline's former exclusion of the then-provisional Pauli investigation, the independent report's pending full-resolution clause, and the root corollary's pre-acceptance wording. None is silently edited. The unqualified root lemma, its negative-lambda counterexample, exact positive-lambda repair, prior comparison drafts, spectator-state sign reconciliation and failed sign/scalar controls remain archived.\n\n## Direct scientific premise and finite setting\n\nThe sole direct scientific parent is the [joint even-matter and finite-link interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md), canonical path `docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md`, SHA `212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef`, containing the full unchanged core `34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca`. It supplies the literal architecture, phase-sensitive even-CAR encoding, link/Gauss algebra, reducing sectors and nonstream term family. Earlier clock/virtual-pair references in Body A are methodological context for its self-contained finite-matrix proof, not additional imported results. Branch ancestry supplies no history/controller theorem. Source-derived graph expectation is one node, one direct edge and no new root; no graph has been run by this assembly.\n\nThe supplied model is exactly the parent's L4 coarse torus and period-64 physical qubit torus with 1,344 active factors, total-even matter, three-state hard-cutoff links, background charge 3, fixed macro-origin and supplied +++ Wilson character. All coefficients and the static architecture are supplied. Bare-stream coefficients are real and static; the nonstream terms obey the parent's budgets. The dynamics statements start in the common zero-code K, including arbitrary passive references, and compare the **full output**, including escaped amplitude. The larger reducing precode R0 is not itself a sufficient initial-state hypothesis for comparison to K dynamics.\n\n## Exact interaction and finite-time theorem\n\nFor `C=U+|-1><+1|+|11><11|`, `V_e=iA_e(C_e-C_e\u2020)` is Hermitian, has norm sqrt(3), annihilates the unused link level and preserves the matter cycle/Wilson and link-code sectors. Its exact Gauss-zero compression is the parent's directed hard-cutoff stream. Off K, cyclic wraps and pair branches remain. Their actual one-step G-squared denominators are 2, 4, 8, 10 and 18; neither positive spectral gap replaces those denominators.\n\nThe complete second-order operator retains nonconstant same-bond shifts and neighboring-bond quartic returns. Opposite signed matrix elements in two seam examples use different spectator states and are compatible. The author's proof pays both bare-state dressing ends and full escaped output; its simplified second-order bound has the separate hypothesis `alpha=b/(lambda g_pen)<=1/4`. The corrected root lemma instead assumes **lambda>0**, positive separation `Delta=lambda g_pen-b_Q-a`, and, for its simplified trace bound, `Delta>=4v`. Neither condition is silently inferred from the other. All trace estimates use the full trace norm, without an extra factor one half.\n\n| Complete body | Contribution and scope |\n| --- | --- |\n| A: `bb2817d3` | Original physical penalty, exact compression, full second-order operator, two-conjugation finite-time proof and original whole-term ledger. |\n| B: `78ae1c66` | Separate corrected finite-block first-order comparison to PBP, with positive lambda. |\n| C: `9379c66f` | Gauss-only fixed-budget comparison on the supplied reducing precode; original sufficient allocation `lambda=Jcap/324`. |\n| D: `486e6337` | Full physical penalty with reducing-space comparison but all physical costs charged; original sufficient allocation `lambda=Jcap/332`. |\n| E: `e735f240` | Exact physical Pauli resolution of G-squared, scalar and site incidence, and hybrid full resource ledger. |\n| F: `12721535` | Separately sealed complete signed Pauli aggregation, actual physical norm witness, overlap accounting and full resolved ledger. |\n| G: `a1a09526` | Substitution of the full resolved ledger into the unchanged positive-penalty comparison, with `lambda=Jcap/43`. |\n\n## Same operator, distinct listed-term resource ledgers\n\nLet `N_G=sum_x G_x^2` and let `N_full` additionally include 704 local-cycle projectors and 192 unused-link projectors. Wilson character remains separately supplied. `N_full` has full-carrier positive gap 1 and kernel K within the supplied Wilson space. On R0 its extra cycle/link terms vanish and `N_G` has positive gap 2 off K. Since B preserves R0, a K-input comparison for the full Hamiltonian may use gap 2 on this reducing subspace while charging the entire physical penalty. Gauss-only use assumes R0; it does not enforce or prepare that precode.\n\n| Literal term presentation | Maximum penalty norm sum incident on a physical site | Maximum arity / periodic L1 diameter | Scalar-inclusive global norm bound |\n| --- | --- | --- | --- |\n| Original whole G-squared terms, on supplied precode | `162lambda` | 30 / 20 | `5184lambda` |\n| Exact Gauss Pauli terms, on supplied precode | `17lambda` | 10 / 20 | `5184lambda` (the Gauss operator norm is exactly this) |\n| Original full whole-term penalty | `166lambda` | 30 / 32 | `6080lambda` |\n| Gauss Pauli terms, whole cycle/link projectors | `27lambda` | 28 / 32 | `6080lambda` |\n| Fully resolved full Pauli penalty | `43lambda/2` | 28 / 32 | `5984lambda` (upper bound only) |\n\nThe exact identity is `2G_x=sum_six B_v + signed sum_twelve link-Z`. Squaring gives `9I/2` and 153 signed half-coefficient products per cell. Globally the scalar is `288I`, with 9,600 distinct nonidentity words. Only same-link ZZ pairs repeat between cells and add to coefficient \u22121. The full resolution adds 704 distinct cycle words with nonzero X masks and the unused-link expansions `(I-Z_p-Z_q+Z_p Z_q)/4`. The latter change each same-link coefficient **\u22121 to \u22123/4** and add single-site \u2212Z/4 terms. Thus the full scalar is **688I**, with **10,688** nonidentity words and coefficient absolute sum **5,296**. Internal, stream and link maximum site totals are respectively **43/2, 19, 17**. These include all overlaps and phases. The exact Gauss norm 5,184 uses a physical checkerboard occupation/flux witness with compatible global even parity; it is not a preparation claim or an assertion of the full penalty's exact norm.\n\nThe identity has empty physical support and no per-site contribution, but **remains explicitly in the Hamiltonian and literal energy ledger**. Signed Pauli pieces need not be individually positive; their exact sum is the same positive penalty. No zero, dynamics, compression, virtual effect or reference-complete estimate changes. The original conservative bounds remain valid in their original term lists. For Gauss-only plus bare B, maximum arity is 11; for the full resolved Hamiltonian it is 28 and periodic diameter 32. No arity-two or unrestricted physical-positivity conclusion follows.\n\n## Fixed-budget consequence with its actual hypotheses\n\nSet `B=kappa B0`, `J0>0`, `beta0=(1728+192sqrt(3))J0`, `z0=(9+2sqrt(3))J0`, and take the supplied block bounds `a0<=beta0`, `v0<=beta0`. For positive `Jcap`, target interval `tau_*`, and positive tolerance `epsilon_*`, Body G uses `lambda=Jcap/43` and positive kappa bounded by all four quantities\n\n`Jcap/(2z0)`, `lambda/(beta0+a0)`, `lambda/(4v0)`, and `epsilon_*lambda/[4(v0+tau_*v0^2)]`.\n\nZero denominators impose no constraint; the stationary `J0=0` case is separate. The full resolved penalty and bare terms then obey `(43/2)lambda+kappa z0<=Jcap`, with global norm bound `5984lambda+kappa beta0`. For K inputs and `0<=tau<=tau_*`, at the supplied physical time `t=tau/kappa`, the first-order reference-complete trace error is at most `min(2,epsilon_*)`. The proof uses only the reducing-space gap 2 and the complete physical budget. It does not eliminate finite-lambda virtual terms. The displayed alpha condition is still separately needed for the author's simplified second-order estimate. The denominator 43 is sufficient, not optimal or necessary; smaller target error uses a longer supplied interval, with no clock or efficiency theorem.\n\n## Evidence and status limits\n\nThe complete frozen baseline is preserved, including seven earlier source/evidence directories, all original revisions, raw exact and floating controls and root reconciliations. The full author refinement, separately sealed implementation/report, subsequent selective review and root refinement review directories are added with actual scripts, commands, inputs, outputs, receipts, exposure records and failures. The later source-only coefficient reconciliation is distinguished from the original scientific executions. Complete large saved term tables were parsed and hash-bound; they were not manually read row by row. This assembly executes only source bookkeeping and no proof program.\n\nThe earlier two refinement constructions share the accepted architecture and model family; the author also received the 18-summand route candidate. Their pre-exposure seals support limited independent derivation and implementation from shared premises, not premise blindness or model diversity. The later selected cycle-phase, same-link merge and physical-witness review is source-exposed and is not a third full census. Root's complete readings and exact acceptance histories are preserved without upgrading their coverage.\n\n`BODY_MAP.json` provides seven unique complete byte/line extractions. `EVIDENCE_MANIFEST.json` fixes all copied directory members and original aliases; `diffs/BASELINE_WRAPPER_TO_RESOLVED.diff` and `diffs/BASELINE_CANDIDATE_TO_RESOLVED.diff` expose every addition. Every body-extraction diff is empty. Archived baseline preparation fields and earlier pending statements are historical; current source binding is in `PARENT_BINDING.json`, and any later publication package must provide its own explicit current record.\n\nThis remains a finite, static, supplied-architecture theorem. It does not supply code/Wilson preparation, an efficient encoder, cooling, physical clocks/stopping/readout, native two-site realization, an odd/full-Fock loader, arbitrary-drive robustness, volume-uniform or infinite-time agreement, positive unrestricted physical H, continuum photons or a native matter/photon construction. No no-go PASS, audit verdict or retained status is supplied. Root owns subsequent acceptance and integration; recovery remains with the campaign's sole STATE/HANDOFF. The following seven bodies are literal attributed sources, not rewritten proofs.\n",
+              "rendered": "---\ntitle: Finite-penalty recovery of a literal charged-link coupling with exact Pauli resource accounting\nclaim_id: finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 supplied static architecture, K inputs and positive penalty with full physical resource accounting\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: accepted conditional finite penalty theorem and exact unchanged Pauli refinement; identity runner checks no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/finite_gauss_penalty_recovery_identity_2026_10_14.py\nnext_trace_action: root reviews exact source composition and publication program before separately authorized integration\n---\n\nClaim type: bounded_theorem\n\n# Finite-penalty recovery of a literal charged-link coupling\n\nThis new source revision combines seven complete, unchanged mathematical bodies into one conditional finite theorem. Bodies A\u2013D are the accepted baseline, preserved with its entire frozen package under `baseline_v1/`. Bodies E\u2013G are the later accepted exact Pauli resolution and its fixed-budget corollary. The baseline source acceptance is `11d07d2afa5db19642f553a5528ff44617a1413023866f040aba588b316ea27a`; the refinement acceptance is `a77c9a210d0de91a481e7c5c6a78b968250e90ff84ae908fc09349e249262168`. Both complete acceptance records and their complete reviews are archived. The resolved V2 source composition is accepted under `4ad8537f76997f704628ecf7872defd08a63dda0f81e745ebb49a29640f0648b`; the publication rendering and driver require separate root review. No source acceptance grants execution or retained status.\n\nEvery original pending-review, provisional, source-exposure and independence paragraph inside the seven literal bodies is a **historical statement at that source revision**. The later acceptances govern current scientific disposition. This includes the baseline's former exclusion of the then-provisional Pauli investigation, the independent report's pending full-resolution clause, and the root corollary's pre-acceptance wording. None is silently edited. The unqualified root lemma, its negative-lambda counterexample, exact positive-lambda repair, prior comparison drafts, spectator-state sign reconciliation and failed sign/scalar controls remain archived.\n\n## Direct scientific premise and finite setting\n\nThe sole direct scientific parent is the [joint even-matter and finite-link interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md), canonical path `docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md`, SHA `c903cfd91b76fe69cf492272af00bfe014cb04f5d85f721214638aa5f977fe48`, containing the full unchanged core `34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca`. It supplies the literal architecture, phase-sensitive even-CAR encoding, link/Gauss algebra, reducing sectors and nonstream term family. Earlier clock/virtual-pair references in Body A are methodological context for its self-contained finite-matrix proof, not additional imported results. Branch ancestry supplies no history/controller theorem. Source-derived graph expectation is one node, one direct edge and no new root; no graph has been run by this assembly.\n\nThe supplied model is exactly the parent's L4 coarse torus and period-64 physical qubit torus with 1,344 active factors, total-even matter, three-state hard-cutoff links, background charge 3, fixed macro-origin and supplied +++ Wilson character. All coefficients and the static architecture are supplied. Bare-stream coefficients are real and static; the nonstream terms obey the parent's budgets. The dynamics statements start in the common zero-code K, including arbitrary passive references, and compare the **full output**, including escaped amplitude. The larger reducing precode R0 is not itself a sufficient initial-state hypothesis for comparison to K dynamics.\n\n## Exact interaction and finite-time theorem\n\nFor `C=U+|-1><+1|+|11><11|`, `V_e=iA_e(C_e-C_e\u2020)` is Hermitian, has norm sqrt(3), annihilates the unused link level and preserves the matter cycle/Wilson and link-code sectors. Its exact Gauss-zero compression is the parent's directed hard-cutoff stream. Off K, cyclic wraps and pair branches remain. Their actual one-step G-squared denominators are 2, 4, 8, 10 and 18; neither positive spectral gap replaces those denominators.\n\nThe complete second-order operator retains nonconstant same-bond shifts and neighboring-bond quartic returns. Opposite signed matrix elements in two seam examples use different spectator states and are compatible. The author's proof pays both bare-state dressing ends and full escaped output; its simplified second-order bound has the separate hypothesis `alpha=b/(lambda g_pen)<=1/4`. The corrected root lemma instead assumes **lambda>0**, positive separation `Delta=lambda g_pen-b_Q-a`, and, for its simplified trace bound, `Delta>=4v`. Neither condition is silently inferred from the other. All trace estimates use the full trace norm, without an extra factor one half.\n\n| Complete body | Contribution and scope |\n| --- | --- |\n| A: `bb2817d3` | Original physical penalty, exact compression, full second-order operator, two-conjugation finite-time proof and original whole-term ledger. |\n| B: `78ae1c66` | Separate corrected finite-block first-order comparison to PBP, with positive lambda. |\n| C: `9379c66f` | Gauss-only fixed-budget comparison on the supplied reducing precode; original sufficient allocation `lambda=Jcap/324`. |\n| D: `486e6337` | Full physical penalty with reducing-space comparison but all physical costs charged; original sufficient allocation `lambda=Jcap/332`. |\n| E: `e735f240` | Exact physical Pauli resolution of G-squared, scalar and site incidence, and hybrid full resource ledger. |\n| F: `12721535` | Separately sealed complete signed Pauli aggregation, actual physical norm witness, overlap accounting and full resolved ledger. |\n| G: `a1a09526` | Substitution of the full resolved ledger into the unchanged positive-penalty comparison, with `lambda=Jcap/43`. |\n\n## Same operator, distinct listed-term resource ledgers\n\nLet `N_G=sum_x G_x^2` and let `N_full` additionally include 704 local-cycle projectors and 192 unused-link projectors. Wilson character remains separately supplied. `N_full` has full-carrier positive gap 1 and kernel K within the supplied Wilson space. On R0 its extra cycle/link terms vanish and `N_G` has positive gap 2 off K. Since B preserves R0, a K-input comparison for the full Hamiltonian may use gap 2 on this reducing subspace while charging the entire physical penalty. Gauss-only use assumes R0; it does not enforce or prepare that precode.\n\n| Literal term presentation | Maximum penalty norm sum incident on a physical site | Maximum arity / periodic L1 diameter | Scalar-inclusive global norm bound |\n| --- | --- | --- | --- |\n| Original whole G-squared terms, on supplied precode | `162lambda` | 30 / 20 | `5184lambda` |\n| Exact Gauss Pauli terms, on supplied precode | `17lambda` | 10 / 20 | `5184lambda` (the Gauss operator norm is exactly this) |\n| Original full whole-term penalty | `166lambda` | 30 / 32 | `6080lambda` |\n| Gauss Pauli terms, whole cycle/link projectors | `27lambda` | 28 / 32 | `6080lambda` |\n| Fully resolved full Pauli penalty | `43lambda/2` | 28 / 32 | `5984lambda` (upper bound only) |\n\nThe exact identity is `2G_x=sum_six B_v + signed sum_twelve link-Z`. Squaring gives `9I/2` and 153 signed half-coefficient products per cell. Globally the scalar is `288I`, with 9,600 distinct nonidentity words. Only same-link ZZ pairs repeat between cells and add to coefficient \u22121. The full resolution adds 704 distinct cycle words with nonzero X masks and the unused-link expansions `(I-Z_p-Z_q+Z_p Z_q)/4`. The latter change each same-link coefficient **\u22121 to \u22123/4** and add single-site \u2212Z/4 terms. Thus the full scalar is **688I**, with **10,688** nonidentity words and coefficient absolute sum **5,296**. Internal, stream and link maximum site totals are respectively **43/2, 19, 17**. These include all overlaps and phases. The exact Gauss norm 5,184 uses a physical checkerboard occupation/flux witness with compatible global even parity; it is not a preparation claim or an assertion of the full penalty's exact norm.\n\nThe identity has empty physical support and no per-site contribution, but **remains explicitly in the Hamiltonian and literal energy ledger**. Signed Pauli pieces need not be individually positive; their exact sum is the same positive penalty. No zero, dynamics, compression, virtual effect or reference-complete estimate changes. The original conservative bounds remain valid in their original term lists. For Gauss-only plus bare B, maximum arity is 11; for the full resolved Hamiltonian it is 28 and periodic diameter 32. No arity-two or unrestricted physical-positivity conclusion follows.\n\n## Fixed-budget consequence with its actual hypotheses\n\nSet `B=kappa B0`, `J0>0`, `beta0=(1728+192sqrt(3))J0`, `z0=(9+2sqrt(3))J0`, and take the supplied block bounds `a0<=beta0`, `v0<=beta0`. For positive `Jcap`, target interval `tau_*`, and positive tolerance `epsilon_*`, Body G uses `lambda=Jcap/43` and positive kappa bounded by all four quantities\n\n`Jcap/(2z0)`, `lambda/(beta0+a0)`, `lambda/(4v0)`, and `epsilon_*lambda/[4(v0+tau_*v0^2)]`.\n\nZero denominators impose no constraint; the stationary `J0=0` case is separate. The full resolved penalty and bare terms then obey `(43/2)lambda+kappa z0<=Jcap`, with global norm bound `5984lambda+kappa beta0`. For K inputs and `0<=tau<=tau_*`, at the supplied physical time `t=tau/kappa`, the first-order reference-complete trace error is at most `min(2,epsilon_*)`. The proof uses only the reducing-space gap 2 and the complete physical budget. It does not eliminate finite-lambda virtual terms. The displayed alpha condition is still separately needed for the author's simplified second-order estimate. The denominator 43 is sufficient, not optimal or necessary; smaller target error uses a longer supplied interval, with no clock or efficiency theorem.\n\n## Evidence and status limits\n\nThe complete frozen baseline is preserved, including seven earlier source/evidence directories, all original revisions, raw exact and floating controls and root reconciliations. The full author refinement, separately sealed implementation/report, subsequent selective review and root refinement review directories are added with actual scripts, commands, inputs, outputs, receipts, exposure records and failures. The later source-only coefficient reconciliation is distinguished from the original scientific executions. Complete large saved term tables were parsed and hash-bound; they were not manually read row by row. This assembly executes only source bookkeeping and no proof program.\n\nThe earlier two refinement constructions share the accepted architecture and model family; the author also received the 18-summand route candidate. Their pre-exposure seals support limited independent derivation and implementation from shared premises, not premise blindness or model diversity. The later selected cycle-phase, same-link merge and physical-witness review is source-exposed and is not a third full census. Root's complete readings and exact acceptance histories are preserved without upgrading their coverage.\n\n`BODY_MAP.json` provides seven unique complete byte/line extractions. `EVIDENCE_MANIFEST.json` fixes all copied directory members and original aliases; `diffs/BASELINE_WRAPPER_TO_RESOLVED.diff` and `diffs/BASELINE_CANDIDATE_TO_RESOLVED.diff` expose every addition. Every body-extraction diff is empty. Archived baseline preparation fields and earlier pending statements are historical; current source binding is in `PARENT_BINDING.json`, and any later publication package must provide its own explicit current record.\n\nThis remains a finite, static, supplied-architecture theorem. It does not supply code/Wilson preparation, an efficient encoder, cooling, physical clocks/stopping/readout, native two-site realization, an odd/full-Fock loader, arbitrary-drive robustness, volume-uniform or infinite-time agreement, positive unrestricted physical H, continuum photons or a native matter/photon construction. No no-go PASS, audit verdict or retained status is supplied. Root owns subsequent acceptance and integration; recovery remains with the campaign's sole STATE/HANDOFF. The following seven bodies are literal attributed sources, not rewritten proofs.\n\nReview-loop integration: current parent wrapper identities are rebound in PARENT_BINDINGS.json. Historical full-note hashes inside unchanged proof bodies identify original source versions; the relied mathematical bodies remain byte-identical. Historical review records are provenance, not audit authority.\n",
+              "scope": "publication metadata, attribution links or current source-status pointers only"
+            }
+          ],
+          "sha256": "4055cadcac81c002d92824fc8629ff5b799160519ca6dd6be73b94b0b63e2077",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/WRAPPER.md",
+          "source_sha256": "7a03516123bd33473f7951ede49060c19e257e4ffb62fb4c8eed11ba99098e39"
+        },
+        {
+          "byte_end_exclusive": 13657,
+          "byte_offset": 13360,
+          "bytes": 297,
+          "first_line": 91,
+          "kind": "literal_framing",
+          "last_line": 98,
+          "sha256": "b4e5c4ec49932d1127b270a8de891b6b136a13d05daf1600b30502fe6af9ca1f",
+          "text": "\n---\n\n## Complete unchanged body A: Primary author derivation\n\nOriginal source SHA256 `bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY A -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 44669,
+          "byte_offset": 13657,
+          "bytes": 31012,
+          "expected_slice_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14",
+          "first_line": 99,
+          "kind": "accepted_core_slice",
+          "label": "A",
+          "last_line": 377,
+          "sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14",
+          "source_line_end": 279,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/joint_penalty_recovery/DERIVATION.md",
+          "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+        },
+        {
+          "byte_end_exclusive": 44695,
+          "byte_offset": 44669,
+          "bytes": 26,
+          "first_line": 378,
+          "kind": "literal_framing",
+          "last_line": 379,
+          "sha256": "1597311fda418467bb7a67beaccf4dfc813e885da6eae0d9d652224edac48509",
+          "text": "\n<!-- END FULL BODY A -->\n"
+        },
+        {
+          "byte_end_exclusive": 45000,
+          "byte_offset": 44695,
+          "bytes": 305,
+          "first_line": 380,
+          "kind": "literal_framing",
+          "last_line": 387,
+          "sha256": "3092da34dfcdb6f4e025e523e43b17ef0b5d9748855c3bed77fa8b9d17fee614",
+          "text": "\n---\n\n## Complete unchanged body B: Corrected root finite-block lemma\n\nOriginal source SHA256 `78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY B -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 52177,
+          "byte_offset": 45000,
+          "bytes": 7177,
+          "expected_slice_sha256": "78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae",
+          "first_line": 388,
+          "kind": "accepted_core_slice",
+          "label": "B",
+          "last_line": 432,
+          "sha256": "78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae",
+          "source_line_end": 45,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/continuation_20261014_023239/joint_penalty_root_check/FINITE_BLOCK_LEMMA_V2.md",
+          "source_sha256": "78ae1c667064f359cdb22caa4c6b744d120f1463a5caf17ab30f366a93f40cae"
+        },
+        {
+          "byte_end_exclusive": 52203,
+          "byte_offset": 52177,
+          "bytes": 26,
+          "first_line": 433,
+          "kind": "literal_framing",
+          "last_line": 434,
+          "sha256": "57590d0355ab805ad20149d42d88185100b0c2941894328aa8e0e4ad1b27cded",
+          "text": "\n<!-- END FULL BODY B -->\n"
+        },
+        {
+          "byte_end_exclusive": 52508,
+          "byte_offset": 52203,
+          "bytes": 305,
+          "first_line": 435,
+          "kind": "literal_framing",
+          "last_line": 442,
+          "sha256": "b935cd7940b30c1979075ffeb15240f16bb55cc5e850bb360002ea4cf76b274b",
+          "text": "\n---\n\n## Complete unchanged body C: Gauss-only fixed-budget corollary\n\nOriginal source SHA256 `9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY C -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 55933,
+          "byte_offset": 52508,
+          "bytes": 3425,
+          "expected_slice_sha256": "9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e",
+          "first_line": 443,
+          "kind": "accepted_core_slice",
+          "label": "C",
+          "last_line": 463,
+          "sha256": "9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e",
+          "source_line_end": 21,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/continuation_20261014_023239/joint_penalty_root_check/FIXED_LOCAL_BUDGET_COROLLARY_V2.md",
+          "source_sha256": "9379c66f38308292d3260bc4d11c2ffdc4afb2dcbde4002cceae9b06c52df42e"
+        },
+        {
+          "byte_end_exclusive": 55959,
+          "byte_offset": 55933,
+          "bytes": 26,
+          "first_line": 464,
+          "kind": "literal_framing",
+          "last_line": 465,
+          "sha256": "81b1777fa105799748f91a71f2afe5d714734a3aa3a263ededdd31a66a2b4d33",
+          "text": "\n<!-- END FULL BODY C -->\n"
+        },
+        {
+          "byte_end_exclusive": 56266,
+          "byte_offset": 55959,
+          "bytes": 307,
+          "first_line": 466,
+          "kind": "literal_framing",
+          "last_line": 473,
+          "sha256": "4ee52f71c8a86702439abc69f4eae50ccf1316b4bccd438f82e36a51574970b3",
+          "text": "\n---\n\n## Complete unchanged body D: Full-penalty fixed-budget corollary\n\nOriginal source SHA256 `486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY D -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 59566,
+          "byte_offset": 56266,
+          "bytes": 3300,
+          "expected_slice_sha256": "486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1",
+          "first_line": 474,
+          "kind": "accepted_core_slice",
+          "label": "D",
+          "last_line": 488,
+          "sha256": "486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1",
+          "source_line_end": 15,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/baseline_v1/evidence/continuation_20261014_023239/joint_penalty_root_check/FULL_PENALTY_FIXED_BUDGET_COROLLARY.md",
+          "source_sha256": "486e63376d0e1fa53fa840e7dc63b40596e6f0b50c9f6981518c8798dec354b1"
+        },
+        {
+          "byte_end_exclusive": 59592,
+          "byte_offset": 59566,
+          "bytes": 26,
+          "first_line": 489,
+          "kind": "literal_framing",
+          "last_line": 490,
+          "sha256": "18588d164f13649a62ef28ff1259ec10806d0e71f7189133856d70883e3decfb",
+          "text": "\n<!-- END FULL BODY D -->\n"
+        },
+        {
+          "byte_end_exclusive": 59899,
+          "byte_offset": 59592,
+          "bytes": 307,
+          "first_line": 491,
+          "kind": "literal_framing",
+          "last_line": 498,
+          "sha256": "c695bb4e302f0609490987d20888a298a17d7a5a2537518c2d5c602b59a35f9e",
+          "text": "\n---\n\n## Complete unchanged body E: Author exact Gauss Pauli resolution\n\nOriginal source SHA256 `e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY E -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 85681,
+          "byte_offset": 59899,
+          "bytes": 25782,
+          "expected_slice_sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903",
+          "first_line": 499,
+          "kind": "accepted_core_slice",
+          "label": "E",
+          "last_line": 763,
+          "sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903",
+          "source_line_end": 265,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/refinement/author/DERIVATION.md",
+          "source_sha256": "e735f2402d3c515f6ebe98b20118e96e773b307a3f261a8f64fb1cd9e647a903"
+        },
+        {
+          "byte_end_exclusive": 85707,
+          "byte_offset": 85681,
+          "bytes": 26,
+          "first_line": 764,
+          "kind": "literal_framing",
+          "last_line": 765,
+          "sha256": "a675af269d90515bc745927322a865d5eb784953399faa8d4262c056a60367de",
+          "text": "\n<!-- END FULL BODY E -->\n"
+        },
+        {
+          "byte_end_exclusive": 86039,
+          "byte_offset": 85707,
+          "bytes": 332,
+          "first_line": 766,
+          "kind": "literal_framing",
+          "last_line": 773,
+          "sha256": "ae65d94a382864b62b521a4aa704c67dd8c93fa34cb23f48e013fd5636aff3f0",
+          "text": "\n---\n\n## Complete unchanged body F: Independent complete Pauli resolution and exact norm witness\n\nOriginal source SHA256 `12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY F -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 106893,
+          "byte_offset": 86039,
+          "bytes": 20854,
+          "expected_slice_sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166",
+          "first_line": 774,
+          "kind": "accepted_core_slice",
+          "label": "F",
+          "last_line": 969,
+          "sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166",
+          "source_line_end": 196,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/refinement/independent/REPORT.md",
+          "source_sha256": "12721535f8339ca9b1c28bba39c38f62a49650b91ebd83332d6d0b01a10f7166"
+        },
+        {
+          "byte_end_exclusive": 106919,
+          "byte_offset": 106893,
+          "bytes": 26,
+          "first_line": 970,
+          "kind": "literal_framing",
+          "last_line": 971,
+          "sha256": "b7dfb7b4b9a35569e95921c86098dea7fee5c0ea7f399eb0ccbf1c463bceff84",
+          "text": "\n<!-- END FULL BODY F -->\n"
+        },
+        {
+          "byte_end_exclusive": 107235,
+          "byte_offset": 106919,
+          "bytes": 316,
+          "first_line": 972,
+          "kind": "literal_framing",
+          "last_line": 979,
+          "sha256": "25607f12373cd650f8b6079e19c590f1fdc82096edd208eb71e5a559a9adee30",
+          "text": "\n---\n\n## Complete unchanged body G: Resolved full-penalty fixed-budget corollary\n\nOriginal source SHA256 `a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a`; complete historical source follows verbatim. Its historical status paragraphs are governed by the current wrapper.\n\n<!-- BEGIN FULL BODY G -->\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_end_exclusive": 110418,
+          "byte_offset": 107235,
+          "bytes": 3183,
+          "expected_slice_sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a",
+          "first_line": 980,
+          "kind": "accepted_core_slice",
+          "label": "G",
+          "last_line": 998,
+          "sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a",
+          "source_line_end": 19,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/refinement/root_review/RESOLVED_FIXED_BUDGET_COROLLARY.md",
+          "source_sha256": "a1a095264c26eef408b823317aeccf212bc4efb5d0cbc903ecff0e9f54f0da1a"
+        },
+        {
+          "byte_end_exclusive": 110444,
+          "byte_offset": 110418,
+          "bytes": 26,
+          "first_line": 999,
+          "kind": "literal_framing",
+          "last_line": 1000,
+          "sha256": "0e5d6e99fb3ae2571dab3e3b016df74cb3ae0cf542f2b9b6946ea46b5a73a591",
+          "text": "\n<!-- END FULL BODY G -->\n"
+        }
+      ],
+      "published_bytes": 110444,
+      "published_lines": 1000,
+      "published_sha256": "4aa290266c12241130cd805271e935f973e614e09c783051e4e99ea7974dd47a",
+      "stored_bytes": 3159,
+      "tofile": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_assembly_status_at_preparation": "Resolved V2 source composition accepted4ad8537f; publication rendering/program require separate external root acceptance",
+  "source_freeze_sha256": "9a50b0b116cdb2a9151116fd95329b2fc831057cb084aa8108399e6ce490fa9a",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/WRAPPER_TO_PUBLICATION.diff.gz",
+    "diff_bytes": 7957,
+    "diff_sha256": "38d6261bdaef84cb0702821e7fbf4e727738fd5b525fa010ff9acb09187c87ad",
+    "diff_stored_sha256": "903f96f4fb9764840dc8e360e02747c57cc00c517d83f4a5966cb2d4d4369af7",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 3132,
+    "tofile": "WRAPPER.rendered.md"
+  }
+}

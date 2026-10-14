@@ -1,0 +1,54 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14"
+    },
+    {
+      "from": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 3,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14",
+        "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+        "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/uniform_local_gauss_penalty_recovery_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": false,
+      "key": "GRAPH_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Derived from three preserved canonical Markdown citations; attribution edge is not a theorem import. Actual graph remains root-owned and may reveal a discrepancy requiring review."
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-14T08:56:37.945929+00:00",
+  "status": "root_review_supports_conditional_cutoff_bound",
+  "derivation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_penalty_uniformity/DERIVATION.md",
+    "sha256": "ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777",
+    "bytes": 27662
+  },
+  "seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_penalty_uniformity/DERIVATION_SEAL.json",
+    "sha256": "0e8b44c3a1c9edc211a48cd94136e032a58a8851bf67c86530f0cbf62716a50a",
+    "bytes": 5616
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_evidence_review/ROOT_ALTERNATE_REVIEW.md",
+    "sha256": "e836aa7b020929cb22e3fb32f12c19ea19ac0d0ff016484fedf1f45e89d931f9",
+    "bytes": 5115
+  },
+  "source_identity_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_evidence_review/BINDING.json",
+    "sha256": "4545ce4c6d3c475753790224ca6acfadb1a34d46b6130b0ec6ee4328d7ec953e",
+    "bytes": 9308
+  },
+  "reference_scope": "Selected physical output region plus arbitrary passive reference; full leaked output retained.",
+  "larger_volume_nonempty_code": "supplied premise at this revision",
+  "direct_rate_root_v2_status": "separate full review pending",
+  "retained_audit_status": false,
+  "new_science_runs_by_root": 0,
+  "editable_prompt_files_changed": []
+}

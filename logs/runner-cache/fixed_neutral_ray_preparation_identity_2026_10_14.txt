@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/fixed_neutral_ray_preparation_identity_2026_10_14.py
+runner_sha256: 59e3256125de1717554f61d4f225b0439c400408503ec3f86c9bf4fe9d25bdcd
+input_fingerprint_sha256: db8619b7f91887bf54017eaf4398825824c5df16d039515f645b487d0eae6c98
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.11
+status: ok
+----- stdout -----
+{"attribution_reads": ["docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md", "docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md"], "claim_id": "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": ["docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no preparation or trace estimate was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

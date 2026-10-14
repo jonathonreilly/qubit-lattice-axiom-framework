@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-14T08:49:15.517980+00:00",
+  "status": "accepted_conditional_source_assembly_for_publication_preparation",
+  "assembly": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/SOURCE_FREEZE.json",
+    "sha256": "9a50b0b116cdb2a9151116fd95329b2fc831057cb084aa8108399e6ce490fa9a",
+    "bytes": 45967
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/CANDIDATE.md",
+    "sha256": "6bb0a2b9dbdfbb6588a031cac41f9f6dfa66e5604398b0113e38966df9497e3c",
+    "bytes": 109185
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_resolved_source_assembly_v2/WRAPPER.md",
+    "sha256": "7a03516123bd33473f7951ede49060c19e257e4ffb62fb4c8eed11ba99098e39",
+    "bytes": 12101
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_penalty_resolved_root_review/ROOT_SOURCE_REVIEW.md",
+    "sha256": "c9d2a49310776e052ee9d9924caf458d5000e1417cea7e37c8b95248bedc98eb",
+    "bytes": 4095
+  },
+  "binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_penalty_resolved_root_review/BINDING.json",
+    "sha256": "22702d2df6f4512a2e3c5e901c2365a4fb2893bf0ceae8d3a69fd3a876ffb4d4",
+    "bytes": 2654
+  },
+  "validation_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/joint_penalty_resolved_root_review/VALIDATION_RECEIPT.json",
+    "sha256": "bc23edba35f27121731c5082ad2412d10782676b572b96e1da396da69c735dee",
+    "bytes": 663
+  },
+  "mathematical_body_edits": [],
+  "fresh_science_runs": 0,
+  "canonical_execution_authorized": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": [],
+  "next_gate": "Root review of exact publication payload and driver before integration."
+}

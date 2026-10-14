@@ -1,0 +1,28 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "to": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expectation_source": "Actual sole direct scientific citation; root must compare built full objects",
+  "expected_delta": {
+    "edges": 1,
+    "nodes": 1,
+    "roots": 0
+  },
+  "graph_executed": false,
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/finite_gauss_penalty_recovery_identity_2026_10_14.py"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 15949,
- "node_count": 7079,
+ "edge_count": 15959,
+ "node_count": 7083,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6374,6 +6374,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "exponential_scalar_curvature_loophole_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "ddd091f59a72",
+   "out_degree": 2
+  },
   "exponential_scalar_curved_response_bounded_theorem_note_2026-10-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -6394,6 +6398,14 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "exponential_scalar_physical_clock_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "9ac700bc4526",
+   "out_degree": 3
+  },
+  "exponential_scalar_physical_past_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "48a70dbdcfe7",
+   "out_degree": 3
+  },
   "exponential_scalar_radiation_past_bound_bounded_theorem_note_2026-10-14": {
    "deps_hash": "a85ffba2af8c",
    "out_degree": 1
@@ -6401,6 +6413,10 @@
   "exponential_scalar_radiation_selection_bounded_theorem_note_2026-10-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "exponential_scalar_thermal_bounce_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "4e89ff5967e5",
+   "out_degree": 2
   },
   "extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16": {
    "deps_hash": "37c38db4f955",

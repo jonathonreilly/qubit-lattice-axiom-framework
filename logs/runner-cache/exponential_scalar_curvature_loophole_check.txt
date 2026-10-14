@@ -1,0 +1,459 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_curvature_loophole_check.py
+runner_sha256: c886153bb98ba00f7b2772ab8b44f7dbdfa55bfe4dda8d3b197160a1020449bd
+input_fingerprint_sha256: 7e95cb4eb370f29599fc61a81e8b74addd88a8cded9e86dca1864d37a30745b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.63
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional exact classical FLRW reconstruction; synthetic algebra only, no observational likelihood or selected geometry/state.",
+  "checks": [
+    {
+      "name": "large_Friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "large_Raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "large_radiation_conservation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "large_scale_acceleration",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "large_Ricci",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "large_Kretschmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "root_sum",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "root_product",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "bounce_radius",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "bounce_H",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "bounce_Hdot",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "large_radiation_vacuum_max",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_Friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_Raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_radiation_conservation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_scale_acceleration",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_Ricci",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_Kretschmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "small_boundary_at_finite_time",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_upper_Friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_upper_Raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_upper_radiation_conservation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_upper_scale_acceleration",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_upper_Ricci",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_upper_Kretschmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_static_Friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_static_acceleration",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_past_limit",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_positive_H",
+      "passed": true,
+      "detail": "2*B*h**3*exp(2*h*t)/(2*B*h**2*exp(2*h*t) + K)"
+    },
+    {
+      "name": "critical_unstable_scale_operator",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_Friedmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_Raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_radiation_conservation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_scale_acceleration",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_Ricci",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_Kretschmann",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "negative_discriminant_finite_start",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "excluded_zero_radiation_deSitter",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "dimensionless_discriminant",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fraction_boundary",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fraction_stable_evaluation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fraction_small_curvature",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fraction_monotone",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "illustrative_bound_value",
+      "passed": true,
+      "detail": "0.00000224327520666366184635570"
+    },
+    {
+      "name": "sample_strict_discriminant_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_regular_branch_not_radiation_dominated_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_positive_completeness_bounds_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(3, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(3, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_branch_(3, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_bound_(3, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(3, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_branch_(3, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_bound_(3, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_strict_discriminant_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_regular_branch_not_radiation_dominated_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_positive_completeness_bounds_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(7, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(7, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_branch_(7, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_bound_(7, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(7, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_branch_(7, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_bound_(7, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_strict_discriminant_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_regular_branch_not_radiation_dominated_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_positive_completeness_bounds_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(2, 0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(2, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_branch_(2, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_bound_(2, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_radius_lower_(2, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_branch_(2, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sample_fraction_bound_(2, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "action_origin_C",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "action_origin_U",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "action_origin_dU_u",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "action_origin_dU_x",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "action_origin_dU_y",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "massless_trace",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical_event_fractions_exist",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 81,
+  "failed": 0,
+  "illustrative_d_limit": "0.003",
+  "illustrative_r_limit": "0.00000224327520666366184635570",
+  "synthetic_examples": [
+    {
+      "h": "1",
+      "Kc": "3",
+      "D": "1",
+      "Delta": "5",
+      "minimum_a_squared": "sqrt(5)/2 + 3/2",
+      "max_radiation_vacuum_ratio": "(sqrt(5)/2 + 3/2)**(-2)"
+    },
+    {
+      "h": "2",
+      "Kc": "7",
+      "D": "1",
+      "Delta": "33",
+      "minimum_a_squared": "sqrt(33)/8 + 7/8",
+      "max_radiation_vacuum_ratio": "1/(4*(sqrt(33)/8 + 7/8)**2)"
+    },
+    {
+      "h": "1/2",
+      "Kc": "2",
+      "D": "1",
+      "Delta": "3",
+      "minimum_a_squared": "2*sqrt(3) + 4",
+      "max_radiation_vacuum_ratio": "4/(2*sqrt(3) + 4)**2"
+    }
+  ],
+  "checker_sha256": "c886153bb98ba00f7b2772ab8b44f7dbdfa55bfe4dda8d3b197160a1020449bd",
+  "limits": [
+    "Completeness proof relies on complete spatial S3, all-real cosmic time and positive global radius bound.",
+    "Perturbative, nonlinear, quantum and matter stability not established.",
+    "Only radiation plus constant-origin vacuum; observed dust omitted.",
+    "Planck curvature posterior not transferred."
+  ]
+}
+
+----- stderr -----
+

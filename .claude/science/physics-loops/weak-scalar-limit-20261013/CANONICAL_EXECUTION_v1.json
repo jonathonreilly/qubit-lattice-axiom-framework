@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-10-13T15:52:24.169115+00:00",
+  "runner": "scripts/weak_scalar_limit_2026_10_13.py",
+  "scope": "First unchanged positive canonical execution after actual UNIT preflight; output placeholder explicitly non-evidence.",
+  "finished_at": "2026-10-13T15:52:24.572032+00:00",
+  "elapsed_seconds": 0.4029131671413779,
+  "error": "AttributeError(\"module 'runner_cache' has no attribute 'check_cache_evidence_status'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAttributeError: module 'runner_cache' has no attribute 'check_cache_evidence_status'\n"
+}

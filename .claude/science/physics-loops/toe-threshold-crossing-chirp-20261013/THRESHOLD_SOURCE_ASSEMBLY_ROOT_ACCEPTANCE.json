@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-13T15:21:36.884834+00:00",
+  "status": "accepted_for_source_integration",
+  "source_assembly_freeze_sha256": "75a56964dd6cd3e83789f0da0638e4ad5101650f710d5c382fa7487573536d72",
+  "review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/THRESHOLD_SOURCE_ASSEMBLY_ROOT_REVIEW.md",
+  "review_sha256": "debdefb510071e12a35ffc2569261bbaa3ccbab638afeeac6e7b986fbcf9eed5",
+  "note_sha256": "30ef4a8ee822a4decf4df25471456b058e9775d5f5c4f7892f1d1d55448a737d",
+  "complete_new_source_review": true,
+  "unchanged_analytic_coverage_reused": true,
+  "source_check_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_root_source_check/RECEIPT.json",
+  "actual_chirp_binding_pending": true,
+  "scientific_predicates": 0,
+  "editable_prompt_files_changed": []
+}

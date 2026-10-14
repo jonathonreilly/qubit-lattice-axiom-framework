@@ -1,0 +1,135 @@
+{
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/docs/THRESHOLD_CROSSING_CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "30ef4a8ee822a4decf4df25471456b058e9775d5f5c4f7892f1d1d55448a737d",
+      "context_lines": 3,
+      "diff": "diffs/accepted_assembly_to_publication.diff.gz",
+      "diff_bytes": 9451,
+      "diff_sha256": "e33cc024b19d9e6a657eabb951e25d5f0e58fb0843d7cfdd6cfee578d14e31f7",
+      "diff_stored_sha256": "ae26707d5a6b9c6404ab8c6703ed8740f6f518bc24e368a383181c703acc96d6",
+      "fromfile": "accepted_assembly/payload/docs/THRESHOLD_CROSSING_CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note": "docs/THRESHOLD_CROSSING_CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 13281,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 226,
+          "sha256": "b01573949bc2e0be35759cbe961082c69637422eac90ffa0ce467a9cd8cef63f",
+          "text": "---\ntitle: \"Kinetic energy marginals through the pair threshold in the supplied massive free CAR vacuum\"\nclaim_id: threshold_crossing_chirped_kinetic_energy_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_source_of_accepted_conditional_cores\nscientific_execution: none_in_publication_source_preparation\nrunner: scripts/threshold_crossing_chirp_identity_2026_10_13.py\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: supplied massive free CAR model and vacuum; fixed real compact smooth slots; fixed positive lower frequency and BV resources; separate conditional cell premises\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: bounded positive analytic theorem with explicit supplied dynamics and resource hypotheses, preserved derivations and separate source-exposed checks\nnext_trace_action: root review of exact publication source and two-phase integration; effective retained audit remains separate\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nupstream_dependencies:\n  - chirped_kinetic_energy_bounded_theorem_note_2026-10-13\n  - general_compact_control_kinetic_energy_bounded_theorem_note_2026-10-13\n  - two_zero_kinetic_energy_bounded_theorem_note_2026-10-13\n---\n\n# Kinetic energy marginals through the pair threshold\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nCurrent surface: conditional-support. The exact 275-line root and 788-line\nindependent proof cores below received ordinary conditional analytic\nacceptance at 15:01:34 UTC on 2026-10-13. The publication wrapper assembles those cores;\nit adds no new theorem or audit verdict. Historical pending-review sentences\ninside the cores remain verbatim and are superseded only as review history\nby this dated wrapper. Publication and effective retained status are separate.\n\n## Precise bounded conclusion\n\nIn the supplied two-component massive free CAR vacuum, arbitrary fixed real\ncompact smooth control slots admit the displayed kinetic energy marginal law,\nseparate mean and Wasserstein-one limit for resource-bounded real BV chirps\nwith fixed positive lower frequency, including equality with or crossings of\nthe pair threshold 2m.\n\nThe supplied dynamics are D(p)=-vp sigma_x-m sigma_y, with fixed m,v>0,\nE(p)=sqrt(m^2+v^2p^2), the real structure Gamma k(p)=overline(k(-p)), the\nspecified positive-band Fock vacuum and free energy H0=dGamma(E). Fix real\nf,g in C_c^infinity(R;R^2), F=(f,g), and M=2i[[0,1],[-1,0]]. The drive uses\nthe centered quadratic V and B=FMF* with their exact normalizations below.\nNo componentwise zero-integral condition on the slots is imposed.\n\nFix a finite slow-time interval [0,tau_star], a finite amplitude bound A,\nfinite variation bounds V_a,V_Omega and frequencies 0<omega0<=W<infinity.\nReal BV profiles obey ||a||_infinity<=A, Var(a)<=V_a,\nomega0<=Omega<=W a.e. and Var(Omega)<=V_Omega. With h=|lambda|,\n\n    c_h(t)=a(h^2 t) cos(phi_h(t)),\n    phi_h(t)=phi0+h^(-2) integral_0^(h^2 t) Omega(u)du,\n    T=tau/h^2, 0<=tau<=tau_star.\n\nThe integrated phase is continuous even at frequency jumps. Monotonicity,\ntransversality, a finite crossing count and exclusion of a plateau at 2m are\nnot hypotheses. Representative changes on null sets do not change the\ndynamics. Constants may depend on the fixed spatial/model data and resource\nbounds; they do not depend on the particular bounded profile or on h.\n\nLet r be the exact pair-energy pushforward density with the factor 1/2 in\nthe cores. Its extension by zero below 2m is continuous with r(2m)=0. Then\n\n    Lambda_tau(de)=(pi/2) integral_0^tau\n                        a(u)^2 r(Omega(u)) delta_(Omega(u))(de)du,\n    chi_Pi_tau(s)=exp integral (exp(i s e)-1)Lambda_tau(de).\n\nThe exact one-time H0 law converges to Pi_tau, its mean converges to\nintegral e Lambda_tau(de), and convergence holds in Wasserstein one.\nFor each fixed real s the characteristic-function error and mean error are\nO(eta_h), eta_h=sqrt(h log(2+h^(-2))). The W1 statement is qualitative,\nuniform over the fixed resource class and tau; no W1 rate is stated.\nAn h-dependent family of profiles is compared to its own Lambda_tau,h.\nA limit to one fixed law requires convergence of that measure family.\n\nThe full signed one-particle interaction propagator Z_h, rather than only a\npair block, satisfies for every fixed q>=0 on the same kinetic horizon\n\n    ||E^(q/2)(Z_h-I)|| <= C_q eta_h,\n    ||E^(q/2)(Z_h-I-K1_h)||_HS <= C_q eta_h,\n    K1_h=-i lambda integral_0^T c_h(t)F_t M F_t*dt.\n\nThese mean bounded extensions established in the graph norm of the weight.\nThe vacuum energy mean is separately obtained by nonnegative energy cutoffs\nand the q=1 bound. It is not inferred by differentiating characteristic\nfunctions. The small full operator and weighted Hilbert--Schmidt remainder\nalso support the graph determinant argument, with all CAR normalizations\nkept in the cores.\n\nThe jump measure gives zero weight to frequencies at or below 2m. A profile\nentirely in that region has limiting energy law delta_0 and mean zero.\nThe direct threshold-plateau check gives Born energy O(h^2 log(2+T)), compatible\nwith the exact estimates. Zero slots, linearly dependent controls, zero\namplitude or vanishing sampled density are allowed and can yield delta_0.\nThe law constructs individual marginals; it asserts no measured multi-time\ncounting process, Markov dynamics, or independent quantum increments.\n\n## Obligation graph and mathematical imports\n\nThe load-bearing new identity is Fhat(0) M Fhat(0)^T=(det Fhat(0))M for real\nFhat(0), together with proportionality of M and D(0). Opposite signed\nthreshold coefficients therefore vanish before norms are taken. This has\nthree distinct operator uses, each proved in both cores.\n\n| Obligation | Status and location in the unchanged cores |\n| --- | --- |\n| Real threshold matrix identity and both band orientations | Root section 2; independent section 3: direct finite algebra |\n| Causal square and kinetic-time resolvent | Root section 3; independent section 4: crossed coefficients vanish, same-band phases use omega0 |\n| Full signed input, including the opposite threshold row | Root section 4; independent section 4: row vanishes before energy-density and Plancherel bounds |\n| Weighted full Born operator and graph domains | Root sections 4--5; independent sections 5--6: exact threshold decomposition, all fixed q |\n| Threshold density and BV secular estimate | Root section 6 composes the checked parent estimate; independent section 7 provides its threshold-continuous resource-uniform form |\n| Pair normalization, graph law, mean and uniform W1 | Root section 6; independent sections 8--10: distinct weighted mean and compact-target tail argument |\n| Degenerate controls and invalid-hypothesis witnesses | Independent section 11 and the frozen comparison: concrete analytic controls |\n| Optional actual-cell implication | Both cores retain exact common-energy/control/commutator premises; no new embedding is constructed |\n\nThe direct source parents are the\n[strict-gap chirp theorem](CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md),\n[general compact-control theorem](GENERAL_COMPACT_CONTROL_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md), and\n[corrected weak-drive theorem](TWO_ZERO_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md).\nThese canonical links have exact source and published-byte bindings. The chirp\nowner contains both unchanged 515/850 cores; the other two contain unchanged\n470/859 respectively. The parents supply stationary phase, corrected CAR\npictures, energy/graph machinery and the conditional cell comparison.\nTheir use here is ordinary conditional source dependence, not a claim that\nthis assembly has established their retained audit status.\n\nPARENT_BINDINGS.json gives four byte-containment maps in three canonical\nparents, with full hashes and line ranges. The actual strict-gap chirp\nparent is regular OPEN PR9520 at af2e44428a10e59cf5eb7130df4265d2949db8df,\nas recorded by its creation and attachment receipts. Its canonical1593 has\nSHA-256 b0df91a85971695996ac32233c112dbe6718223ad733d1a28424666c9bde3874.\nThe intended threshold branch is physics-loop/toe-threshold-crossing-chirp-20261013,\ndirectly based on that head. Source preparation creates no branch or PR.\nModulated, correlation and initial-state ancestry does not itself add a\ndirect mathematical dependency to this theorem.\n\n## Boundaries and failed shortcuts preserved\n\nAll fixed resources and supplied structures are hypotheses. The current\nproof makes no claim for a vanishing omega0, a massless limit, moving slots,\ndiverging BV/amplitude bounds, arbitrary complex slots or a changed control\nmatrix. These exclusions are scope boundaries, not impossibility theorems.\n\nThe two invalid-hypothesis controls are explicit matrices: complex\nFhat(0)=diag(1,i) with the original M, or real Fhat(0)=I with M replaced by\nsigma_z, have a nonzero crossed threshold coefficient. They check the\ndependence of this algebra on its hypotheses; they do not assert failure\nof every possible kinetic limit for those different models.\n\nSetting the old denominator omega_min-2m to zero does not justify the old\nestimates. Pair-density vanishing alone does not prove full operator\ncancellation. Discarding the signed input or attaching an unbounded output\nweight after an unweighted estimate also leaves the needed obligation open.\nThe new cores explicitly replace those shortcuts. The general pair kernel\nhas O(t^-2) decay; no finite absolute first-time moment is silently assumed.\nA fixed-accuracy step approximation to Omega has a phase error that can grow\nas h^-2 and is not used as the uniform BV proof. These are records about\nspecific attempted estimates, not a no-go claim or a fabricated N-gate PASS.\n\nActual-cell transfer is a separate conditional implication under the exact\nreal energy embedding, common H0, unital band-Fock identification, exterior\nvacuum and stated control/commutator errors. The displayed joint sufficient\nscale is epsilon=o(h^2) for the mean/law/W1 conclusion. Necessity and a new\nphysical realization are not proved. The strongest unresolved application\nobligation is verifying those concrete embedding and error hypotheses for a\nspecified cell family; it is not hidden as a lemma of the supplied-model\ntheorem. There is no identified open analytic lemma inside the accepted\nconditional theorem. Ordinary source review and retained audit remain\ndistinct from that assessment.\n\n## Source exposure, checks and finite algebra history\n\nThe root plan followed disclosed preliminary reasoning from shared parents,\nand its proof was frozen at 14:20:53 UTC, before receiving independent target\nfindings. The fresh independent plan froze at 14:25:58 UTC; its proof froze\nat 14:48:48 UTC with root target science, the aborted earlier worker's partial\nfindings and Lean excluded. Shared strict-gap parents were allowed from the\nstart. The fresh author later read the full root275 and froze comparison312\nat 14:59:26 UTC. That comparison assesses root and self-checks the author's\nown788; it is not a fresh independent verdict on its own derivation.\n\nRoot then read the full independent788, author checks and comparison312 and\nissued acceptance1067eaa3 with reviewece4f214. No formula repair was requested.\nThe two Born decompositions differ: root uses smooth band-preserving frames;\nindependent uses auxiliary threshold-constant columns that need not remain\nin the moving bands. Each exactly factors the actual kernel. The comparison\npreserves this distinction and checks every cancellation use and normalization.\nThe derivations share a model family and parent arguments; model-diverse\nverification is not claimed. Publication preparation is source exposed and adds only\nan author packaging check.\n\nOptional Lean corroboration was opened by this assembler only after both\nindependent and comparison freezes. It verifies three finite matrix identities\nover a commutative ring: the alternating 2 by 2 transpose identity and two\nopposite-band zero products with u^2=-1. The real-Fourier transpose/adjoint\nidentification, physical normalization, stationary phase, domains, BV\nbounds, continuum CAR construction, and limiting laws remain analytic work.\n\nActual attempt01 exited 1 after a missing Fin.sum_univ_two import; its\nunsolved goals and compiler-generated sorryAx diagnostics are preserved as\nfailed output. A single targeted import produced attempt02 source\nd8ee4d04487b66c4a6e7794f477e3c56b4886916f9b5c76e163335df8a978ec4.\nActual attempt02 exited 0, printed only propext, Classical.choice and\nQuot.sound for all three theorems, and retained three tactic-linter warnings.\nThe exact source snapshots, diff, seals, compiler streams, execution records,\noriginal bounded runners and resulting olean are archived. This assembly did\nnot rerun them. That certificate verifies finite algebra only.\n\n## Unchanged root core\n\nThe following 275 lines have SHA-256\n6a5fba2249be73609673ccacc05369af478d4c2adf5feb0d2752a683629183b4.\n\n\n",
+          "wrapper_path": "wrappers/note_prefix.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 13281,
+          "bytes": 12922,
+          "expected_slice_sha256": "6a5fba2249be73609673ccacc05369af478d4c2adf5feb0d2752a683629183b4",
+          "first_line": 227,
+          "kind": "accepted_core_slice",
+          "last_line": 501,
+          "sha256": "6a5fba2249be73609673ccacc05369af478d4c2adf5feb0d2752a683629183b4",
+          "source_line_end": 275,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/THRESHOLD_CROSSING_CHIRP_ROOT_PROBE.md",
+          "source_sha256": "6a5fba2249be73609673ccacc05369af478d4c2adf5feb0d2752a683629183b4"
+        },
+        {
+          "byte_offset": 26203,
+          "bytes": 211,
+          "first_line": 502,
+          "kind": "publication_wrapper",
+          "last_line": 509,
+          "sha256": "97fc53fa1dc48dd3e647ed88681403fc5e0c7306e6f6d7481cc38a6d0fa9476d",
+          "text": "\n## Unchanged independent core\n\nThe following 788 lines have SHA-256\n0406c0e397b82a95159a77e47d093771e19f316c46f80c996ec2969ca082cea4.\nThey are the fresh derivation frozen before root target or Lean exposure.\n\n\n",
+          "wrapper_path": "wrappers/between_cores.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 26414,
+          "bytes": 38728,
+          "expected_slice_sha256": "0406c0e397b82a95159a77e47d093771e19f316c46f80c996ec2969ca082cea4",
+          "first_line": 510,
+          "kind": "accepted_core_slice",
+          "last_line": 1297,
+          "sha256": "0406c0e397b82a95159a77e47d093771e19f316c46f80c996ec2969ca082cea4",
+          "source_line_end": 788,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/threshold_crossing_chirp_source_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/sources/run/threshold_crossing_chirp_fresh_independent/frozen/THRESHOLD_CROSSING_CHIRP_FRESH_INDEPENDENT.md",
+          "source_sha256": "0406c0e397b82a95159a77e47d093771e19f316c46f80c996ec2969ca082cea4"
+        },
+        {
+          "byte_offset": 65142,
+          "bytes": 2434,
+          "first_line": 1298,
+          "kind": "publication_wrapper",
+          "last_line": 1333,
+          "sha256": "57adbc2233a758d238c83e594045c5dc7c0d6457bc8ad8d3cdd27e22d68bd3fb",
+          "text": "\n## Publication source and verification boundary\n\nThe full accepted root and independent cores remain byte for byte unchanged.\nPUBLICATION_EDITS.json records all five source pieces, exact byte/line maps,\ncomplete three-context-line raw diffs and the wrapper changes. No mathematical\nbody edit was made. The standalone body claim-type line is explicit.\n\nThe packet is .claude/science/physics-loops/toe-threshold-crossing-chirp-20261013.\nIts HANDOFF, REVIEW_HISTORY and CONFORMANCE expose all twelve handoff topics.\nSOURCE_REVIEW_STATUS preserves the ordinary analytic/source acceptances and\ntheir limits. The new publication wrappers remain subject to root's exact\nreview and acceptance. No retained verdict is supplied by this source package.\n\nEVIDENCE_MAP archives the entire 110-file accepted assembly and its selected\noriginal aliases. The accepted seal has 104 direct records; six additional\nfiles are separately and exactly bound, including four nested freeze/log\nfiles already bound by its frozen SOURCE_SELECTION. This records the actual\nscope without changing any frozen byte. Both Lean attempts remain finite\nalgebra history only. The archive is not a recursive audit or whole toolchain.\n\nThe declared identity tool checks source bytes, exact reconstruction, parent\nbindings and scoped archive closure. It performs zero mathematical predicates.\nIts resolution statements report scientific nonexecution and supply no no-go\npacket PASS. The proposed tool, cache, graph and prepare/verify programs were\nnot executed by the source preparer. Deterministic source generation, hashing,\ndiffing, AST parsing and source-only reconstruction have their own records.\n\nRoot owns the separate prepare/verify execution, exact staging, graph delta\nof one node and three edges, regular PR publication and attachment. The driver\nrequires separate acceptance of the exact source freeze and program; it does\nnot stage, commit or publish. A later combined current-main gate and formal\nretained audit remain separate. No physical axiom or editable prompt changed.\n\n\nReview-loop integration note: current main 3ba0669dba5911b76939c62f452f1fba3ec277a4 plus this kinetic-energy batch supplies the reviewed live dependencies. Original proof bodies and archives are unchanged. Live parent hashes and consumed-core coordinates are refreshed, with original bindings preserved. Historical pending and review labels remain provenance, not audit authority.\n",
+          "wrapper_path": "wrappers/note_suffix.md"
+        }
+      ],
+      "published_bytes": 67576,
+      "published_lines": 1333,
+      "published_sha256": "35c34e85de92ea059873222e17885fbf107fdc844ab418e033be4f2b3f3f573a",
+      "stored_bytes": 3872,
+      "tofile": "docs/THRESHOLD_CROSSING_CHIRPED_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "source_freeze_sha256": "75a56964dd6cd3e83789f0da0638e4ad5101650f710d5c382fa7487573536d72",
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_prefix.diff.gz",
+      "diff_bytes": 5134,
+      "diff_sha256": "be98b5f57ea25adb8b2f689c2e2d641df54f20e25e40ffb81e6e3fa1c16e40a9",
+      "diff_stored_sha256": "5079d653704cd7648d3180e6f4b4b9bc13cd493238df433bdb2cfef2a0780a8e",
+      "fromfile": "accepted_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/pieces/note_prefix.md",
+      "publication": "wrappers/note_prefix.md",
+      "publication_sha256": "b01573949bc2e0be35759cbe961082c69637422eac90ffa0ce467a9cd8cef63f",
+      "source_line_range": [
+        1,
+        222
+      ],
+      "source_sha256": "b589b4ca8107689ba6c0116213d13407b06601b0b44587b5b8c396acd11014a8",
+      "stored_bytes": 2120,
+      "tofile": "wrappers/note_prefix.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/between_cores.diff.gz",
+      "diff_bytes": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "fromfile": "accepted_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/pieces/between_cores.md",
+      "publication": "wrappers/between_cores.md",
+      "publication_sha256": "97fc53fa1dc48dd3e647ed88681403fc5e0c7306e6f6d7481cc38a6d0fa9476d",
+      "source_line_range": [
+        498,
+        505
+      ],
+      "source_sha256": "97fc53fa1dc48dd3e647ed88681403fc5e0c7306e6f6d7481cc38a6d0fa9476d",
+      "stored_bytes": 20,
+      "tofile": "wrappers/between_cores.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_suffix.diff.gz",
+      "diff_bytes": 4246,
+      "diff_sha256": "4d6c1d3a6e85f50630f3b761ec83c2d2f66d3617a05df741126197fc2da5e49c",
+      "diff_stored_sha256": "888a4cbf27f98fdf388e1d371883afd507305622820abaf22a64e93425b0b1de",
+      "fromfile": "accepted_assembly/payload/.claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/pieces/note_suffix.md",
+      "publication": "wrappers/note_suffix.md",
+      "publication_sha256": "57adbc2233a758d238c83e594045c5dc7c0d6457bc8ad8d3cdd27e22d68bd3fb",
+      "source_line_range": [
+        1294,
+        1322
+      ],
+      "source_sha256": "ea3d0738dd33f42358c48f56649b419187762e4668d59417af7cc272e5b517e4",
+      "stored_bytes": 2038,
+      "tofile": "wrappers/note_suffix.md"
+    }
+  ]
+}

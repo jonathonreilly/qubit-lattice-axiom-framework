@@ -1,0 +1,61 @@
+{
+  "broad_whitespace_exemptions": false,
+  "convention": "Complete n=3 raw unified diff; deterministic gzip mtime0; no normalization",
+  "diffs": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/accepted_assembly_to_publication.diff.gz",
+      "diff_bytes": 8074,
+      "diff_lines": 134,
+      "diff_sha256": "df2a5f453c7e10681c76c636a2e3fe680126361e636ffe0679b74cff83d72cd3",
+      "diff_stored_sha256": "b4e6a383bf124b1c3d07317f41201b04bdd6424cdca9e975b56d7c41382327f6",
+      "fromfile": "accepted/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE.md",
+      "stored_bytes": 3093,
+      "tofile": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_prefix.diff.gz",
+      "diff_bytes": 5200,
+      "diff_lines": 92,
+      "diff_sha256": "d7c5da304f5102d7e0ff07575b1ef825fdafe2a9795cb7bc2c7b850af9dc4c29",
+      "diff_stored_sha256": "3cb341e07fffdd57e57350d52f568fd6b419056361e2be298625d772d4873e1f",
+      "fromfile": "accepted/note_prefix.md",
+      "stored_bytes": 1961,
+      "tofile": "publication/note_prefix.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/core_b_intro.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/core_b_intro.md",
+      "stored_bytes": 20,
+      "tofile": "publication/core_b_intro.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/core_c_intro.diff.gz",
+      "diff_bytes": 0,
+      "diff_lines": 0,
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "fromfile": "accepted/core_c_intro.md",
+      "stored_bytes": 20,
+      "tofile": "publication/core_c_intro.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/note_suffix.diff.gz",
+      "diff_bytes": 2857,
+      "diff_lines": 44,
+      "diff_sha256": "863251d5b121b949593276aebdd02be9f846441dfe0e20263958bb161ffe1cb7",
+      "diff_stored_sha256": "fce701443ebbca366ab7912e09a42e9f0043b99624637fcf13d5ce20aea9ca83",
+      "fromfile": "accepted/note_suffix.md",
+      "stored_bytes": 1383,
+      "tofile": "publication/note_suffix.md"
+    }
+  ]
+}

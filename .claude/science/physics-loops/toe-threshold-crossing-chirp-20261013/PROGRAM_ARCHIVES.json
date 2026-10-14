@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "bytes": 15121,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/prepare_verify_threshold_crossing_chirp.py.gz",
+      "raw_bytes": 49746,
+      "raw_sha256": "fd5b8f70a75af35390ef85c1942ecd94442e8d63acc90082ffc6aa05c677172d",
+      "sha256": "70e99d1d3e635cc7c16f20590241631c61f74d078cde16516237fd049025698b"
+    },
+    {
+      "bytes": 3403,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/run_combined_validation.py.gz",
+      "raw_bytes": 8700,
+      "raw_sha256": "ce77eaf0a09e1f9ab59c9516b840fc8377457e2b12cfbea7e9535c1f940c1219",
+      "sha256": "974a4914be247b4188153177d7a8d0059d553b1964e10f67a941be7740942571"
+    },
+    {
+      "bytes": 4200,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/IDENTITY_TOOL.template.py.gz",
+      "raw_bytes": 12279,
+      "raw_sha256": "c844f7f52ad053a6783719c9922370f38bc05a8168ee94552a14ba322d1d8941",
+      "sha256": "b3c959b12f2b08948bfc2e9fc5d439b80b44a98d3b00ef239f08737cd977a6aa"
+    },
+    {
+      "bytes": 3341,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/ADAPT_SOURCE_ONLY.py.gz",
+      "raw_bytes": 8292,
+      "raw_sha256": "f2fe3dc31a64dd90f33e28ac22b842505c3e67aff0f3df24b62ea8cab79d6416",
+      "sha256": "0d020466fccc77e91a4765e6f101defce4df32b6f67fb2f9ee892e7e7798ce11"
+    },
+    {
+      "bytes": 5842,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/BUILD_SOURCE_ONLY.py.gz",
+      "raw_bytes": 14754,
+      "raw_sha256": "498dc16017605334e7ada6c965567f10edf3c98b5eac4865961ae81400efb5df",
+      "sha256": "950caf38e88ad4fa16ac14e4311ceb6dca0fd98360aaa076e5b0d72c5451b5fe"
+    },
+    {
+      "bytes": 3195,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/CHECK_PREPARATION_SOURCES.py.gz",
+      "raw_bytes": 8279,
+      "raw_sha256": "8b3995ede26812b4c578e23b469f5d8c9620428bffc5b4b40c046f679a390423",
+      "sha256": "e4a2670b9dafdf3303a6fbd182de1e5b22982d68e9377ce0ceeb68948921343b"
+    },
+    {
+      "bytes": 2546,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/programs/FINALIZE_SOURCE_ONLY.py.gz",
+      "raw_bytes": 6106,
+      "raw_sha256": "5a133dc62463a340a2c382242413006c43ee42da66ff95a2024aec17997c9700",
+      "sha256": "723ce22d8257f220ef11c6f8c8aa87326d27466e5a42ca7ca447b86e327642d8"
+    },
+    {
+      "bytes": 3158,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/program_diffs/IDENTITY_TOOL.template.py.diff.gz",
+      "raw_bytes": 9205,
+      "raw_sha256": "e63ec027c1cfd0b546e484084a303d6e20c4f872dd1390c1aeb8bb9eeeec8a46",
+      "sha256": "eee805bde35ed019d64996a97b376cdfa5271d27cae11346c357be6e924d085b"
+    },
+    {
+      "bytes": 4188,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/program_diffs/prepare_verify_threshold_crossing_chirp.py.diff.gz",
+      "raw_bytes": 11610,
+      "raw_sha256": "fbe43cb8746431d093d310a16145967719b2be2c5f64ca303e5ae01ded9f6a60",
+      "sha256": "0adc31665ba5c0d0d4df86890cace32ce96a2e8efd531024e83fa8c7329413b9"
+    },
+    {
+      "bytes": 503,
+      "path": ".claude/science/physics-loops/toe-threshold-crossing-chirp-20261013/program_diffs/run_combined_validation.py.diff.gz",
+      "raw_bytes": 925,
+      "raw_sha256": "c2b3845eb664f0da959dec3641d352501191645ccee9e9fc26bd75234da0b820",
+      "sha256": "f89b92c3bd3618b92e8022277abef1ef23836d69416696463899d0851b5510c9"
+    }
+  ],
+  "scope": "exact source only; no proposed program executed"
+}

@@ -1,0 +1,95 @@
+{
+  "programs": [
+    {
+      "archive": "programs/prepare_verify_multitime_kinetic_energy.py.gz",
+      "bytes": 48669,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 745,
+      "sha256": "8fb447232dc949022fea3cfb665ff056352a7672d9ffbfa89c921c132d3edbae",
+      "source": "prepare_verify_multitime_kinetic_energy.py",
+      "stored_bytes": 14753,
+      "stored_sha256": "c2a74b249551819171cf6fe90ddfc3d7e051f314dd50d53a05e7facfd3dcf93e"
+    },
+    {
+      "archive": "programs/IDENTITY_TOOL.template.py.gz",
+      "bytes": 16494,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 182,
+      "sha256": "4ee636aaac338bace7ac33f5bebd214859e474af89e455e4c1ae1763085cb8fd",
+      "source": "IDENTITY_TOOL.template.py",
+      "stored_bytes": 5652,
+      "stored_sha256": "23605a9fea6acb34a8db92abbdd1e78de57a80b9a719a798f6a5646e49db2a98"
+    },
+    {
+      "archive": "programs/run_combined_validation.py.gz",
+      "bytes": 8700,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 94,
+      "sha256": "a351f97efc9e9e6dd80b8699c0560d7c2f06d86542d2d998ffb3f1b523b952be",
+      "source": "run_combined_validation.py",
+      "stored_bytes": 3401,
+      "stored_sha256": "6fd106eed1a8bf4cae93c97d07df0f15fa3bf05e795b29831c8193416e653b16"
+    },
+    {
+      "archive": "programs/CHECK_PREPARATION_SOURCES.py.gz",
+      "bytes": 21902,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 193,
+      "sha256": "6065a5cf1e9f8d2fe4a29f9cc649ff5828ff9e5ac35ceeef7af2f04138122649",
+      "source": "CHECK_PREPARATION_SOURCES.py",
+      "stored_bytes": 7500,
+      "stored_sha256": "4e705344ba0e241a3e8cec682b6136a383c853bf1f914a39c9329e6265467fb7"
+    },
+    {
+      "archive": "programs/BUILD_SOURCE_ONLY.py.gz",
+      "bytes": 24069,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 226,
+      "sha256": "86e0b2be742a3cab2310963a6252efda63c5cde5a1ebf6aafebffea320f58aff",
+      "source": "BUILD_SOURCE_ONLY.py",
+      "stored_bytes": 8703,
+      "stored_sha256": "853366128d22ae81cebc5593873611276a21c4ba2dee7d862e7d17e8790e6152"
+    },
+    {
+      "archive": "programs/ADAPT_PROGRAMS.py.gz",
+      "bytes": 17183,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 135,
+      "sha256": "8d47dc33849fb4dc6afe8aa798d6389df42704310bdcceebd04f0b343bdf08ff",
+      "source": "ADAPT_PROGRAMS.py",
+      "stored_bytes": 5810,
+      "stored_sha256": "d42deb1b53fa05a5a9ff229a7f3ce73dc4a8091796ef12b586d850b6716ff0f5"
+    },
+    {
+      "archive": "programs/FINALIZE_SOURCE_ONLY.py.gz",
+      "bytes": 11515,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 81,
+      "sha256": "78cd37d8cbf5247be5e1e360aef80c98e9eac4833cbbc6fa9927de26cfe767a1",
+      "source": "FINALIZE_SOURCE_ONLY.py",
+      "stored_bytes": 4302,
+      "stored_sha256": "37e870f7de4e4fb2d77f47fea2a2de38830965667108e91bbe401977e1b7e2e1"
+    },
+    {
+      "archive": "programs/RUN_SOURCE_ONLY.py.gz",
+      "bytes": 1987,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 21,
+      "sha256": "bba65f79405fe0e2ddb0e68b8797a5b402588b27752518a266835bb5d5c5ba8c",
+      "source": "RUN_SOURCE_ONLY.py",
+      "stored_bytes": 1033,
+      "stored_sha256": "f8ff65dcd2717022cddaeb3179ebfadf4af51abcfcb169cad5746873a41b3926"
+    },
+    {
+      "archive": "programs/FREEZE_PACKAGE.py.gz",
+      "bytes": 5782,
+      "execution_scope": "Source archive only; canonical identity never imports or executes it.",
+      "lines": 103,
+      "sha256": "999827b574a204a8c7739d0603079480bd4ab34eabe00fc5ca1a13ded80d25a7",
+      "source": "FREEZE_PACKAGE.py",
+      "stored_bytes": 2247,
+      "stored_sha256": "a3b502474c75826a75befaf1e92c99edf3e94c19cbbfb4e3ba55070e5fc1e0a6"
+    }
+  ],
+  "scientific_predicates": 0
+}

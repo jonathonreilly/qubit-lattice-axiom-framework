@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-13T15:52:50.703150+00:00",
+  "scope": "Recover actual completed run and cache after caller AttributeError in status read; no runner replay. The runner execution guard and cache write returned normally before the nonexistent convenience method was accessed.",
+  "original_driver_record": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/weak_limit_milestone/CANONICAL_EXECUTION_v1.json",
+  "cache": {
+    "path": "/Users/jonBridger/.codex/worktrees/weak-scalar-limit-20261013/New Axioms Lets Go/logs/runner-cache/weak_scalar_limit_2026_10_13.txt",
+    "sha256": "78f5c39409522c5196123f035c58ee29fc1ed4e846c1b451cfe67a039c37a9ab",
+    "header": {
+      "runner_path": "scripts/weak_scalar_limit_2026_10_13.py",
+      "runner_sha256": "b127b20aa44a2eb1a2dfd1f08c2e01d06389bf05f017d60023df1ce94efa92e6",
+      "input_fingerprint_sha256": "3b94055747bca7d2cad8ffe297eba6bd70c6d1623ac05bd0ac594ea0fc56cbd0",
+      "status": "ok",
+      "exit_code": "0"
+    },
+    "status": "fresh"
+  },
+  "result": {
+    "path": "/Users/jonBridger/.codex/worktrees/weak-scalar-limit-20261013/New Axioms Lets Go/outputs/weak_scalar_limit_2026_10_13/RESULTS.json",
+    "sha256": "4b8585421014578f70fd0b37051edbcee0f9cdbdcfe5896c25cd10f0919e56c2",
+    "counts": {
+      "passed": 510,
+      "failed": 0,
+      "total": 510
+    }
+  }
+}

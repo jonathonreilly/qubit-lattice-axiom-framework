@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-13T14:13:36.321787+00:00",
+  "disposition": "source assembly accepted for separate publication preparation; actual chirp publication parent still required",
+  "source_freeze_sha256": "53f2bfac081b7af2181a162c9b9ec839b982b7a89828b2a18107d65b274bed4a",
+  "canonical_note_sha256": "56c5ebf8c83741b48cf2476d40d8331b3d047d45466064e623fe9525222904ae",
+  "review_sha256": "6f62765f8bbd09f87e62cb76688d0532846b4788039898f26303411616eef450",
+  "root_source_check_receipt_sha256": "3121f64edae208c8ff62a5b096ca61f3f656887b05713f5f6387a9a4fe831d25",
+  "ordinary_math_acceptance_sha256": "d7211e292bee2d461b4c50d65f25b10cf8ccec83ca121c2844af430a9c959638",
+  "mathematical_repairs_required": [],
+  "retained_audit": false,
+  "new_independent_derivation": false,
+  "editable_prompt_files_changed": []
+}

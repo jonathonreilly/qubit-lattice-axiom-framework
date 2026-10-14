@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-13T15:20:10.451121+00:00",
+  "status": "source-review-active",
+  "source_commit": "a7536ad7adf51510ba63f811f6ddae3826fc1dc7",
+  "base": "583c699e859b64ff01c8bc92d1c04bdfe9994509",
+  "actual_current_surface_status": "conditional-support",
+  "target_claim_type": "bounded_theorem",
+  "deadline": "2026-10-13T16:53:00.057432Z",
+  "next_action": "Complete source review, actual preflight, canonical execution and mechanical gates."
+}

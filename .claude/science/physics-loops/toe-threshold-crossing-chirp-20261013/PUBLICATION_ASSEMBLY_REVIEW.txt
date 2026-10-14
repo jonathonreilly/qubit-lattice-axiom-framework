@@ -1,0 +1,56 @@
+# Root publication-source review: threshold-crossing chirp
+
+Disposition: accepted_for_source_integration.
+
+The accepted source assembly75a56964 and analytic acceptance1067eaa3 are unchanged.
+The canonical1328/ea8e2ea5 consists of the full275/788 proof cores and fully read
+publication wrappers224/8/33. Root reused its complete earlier analytic coverage
+at exact unchanged hashes. This review adds no mathematical theorem or retained
+verdict. The physical cell result retains its supplied embedding/common-energy
+and control/commutator premises. One-time law, separately proved mean and
+qualitative uniform W1 do not imply a measured multi-time process.
+
+Read coverage: full new identity template144, source checker99, generators
+110/152/47, all new wrappers and the complete accepted-note and wrapper deltas;
+complete HANDOFF/CONFORMANCE, review/assumptions/status/trace/negative records,
+exact parent maps, specifications, correction/disposition and reproduction files.
+For the747-line prepare/verify driver, the previous complete742-line body
+bef3f992 plus the complete130-line exact diff provide full changed-code coverage;
+source checking reconstructed that delta exactly. The combined driver reuses
+its complete earlier body plus its full11-line path-only diff. Identity rendering
+is reconstructed exactly from the fully read template and all pinned inputs;
+130 actual read sites,25 additional pins and exact archived payloads are machine
+checked. This does not count hash inventories as independent analytic review.
+
+The complete196-member source freeze19141299 and exact membership were verified.
+Root's independent source-only reconstruction completed2026-10-13T15:50:59Z,
+exit0 in0.140701875s with empty stderr. It checks90 compressed archive objects,
+208 live original aliases,110 accepted assembly files,52 immediate bindings,
+three parents/four exact contained cores, all program/diff producer identities,
+rendering, syntax, terminal whitespace and actual empty notation exclusions.
+These are zero-mathematical-predicate source checks. One initial read-only
+inspection addressed a nonexistent ASSUMPTIONS.md; ASSUMPTIONS_AND_IMPORTS.md
+was subsequently read fully. A read-only freeze check used records instead of
+files and stopped before the checker; the corrected complete196-file check
+is the recorded successful root execution. Truncated unrelated broad inventories
+supply no review coverage; relevant exact changed content was read separately.
+
+Actual parent is regular attached PR9520/af2e4442. The assembly's historical
+pending-binding receipt remains verbatim, and the publication separately binds
+the actual created/attached receipts. The104-record assembly freeze remains
+immutable; all six other files are explicitly bound, including four nested
+freeze/log files already bound in its source selection. No source is omitted
+or repaired to fit an incorrect membership count.
+
+The graph contract is exactly one node/three edges; there is no initial-state,
+modulated or correlation edge solely from ancestry. The body claim-type label
+is explicit. Four future corruption probes and canonical cache are identity
+checks, not proof tests. The graph, exact132 staging footprint and actual
+focused checker still require root execution. The driver's complete source
+has no staging, commit, push, PR or audit operation. Original failures and
+both Lean attempts remain archived. Successful Lean scope is only three finite
+matrix identities; no analytic law/domain theorem is claimed formalized.
+
+No broad impossibility claim is shipped and no N1--N8 PASS is manufactured.
+Physical realization and retained audit remain separate. No editable prompt,
+physical axiom, main branch or audit verdict changed.

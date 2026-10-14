@@ -1,0 +1,366 @@
+{
+  "actual_parent_head": "d27a82210281103c92760ffb219bf78e31340e9c",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-fixed-background-control-20261014",
+    "createdAt": "2026-10-14T15:23:40Z",
+    "headRefName": "physics-loop/toe-autonomous-clock-20261014",
+    "headRefOid": "d27a82210281103c92760ffb219bf78e31340e9c",
+    "isDraft": false,
+    "number": 9555,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "Supply a prepared autonomous clock for literal L4 control waveforms",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9555"
+  },
+  "all_markdown_note_targets": [
+    "LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "actual_use": "Inherited full-phase arbitrary-H waveform, prepared output, physical ledger and old sufficient prescription. Raw source and actual canonical publication are now bound.",
+      "body_edits": [],
+      "byte_end_exclusive": 44025,
+      "byte_start_inclusive": 8642,
+      "canonical_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+      "line_end_inclusive": 459,
+      "line_start_inclusive": 61,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening/sources/BRIDGE_DERIVATION.md",
+      "source_sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+    },
+    {
+      "actual_use": "Characteristic/Fourier/BV/Dyson comparison and existing stronger Fejer first moment; needed estimates rederived. No rotor law/collisions/volume theorem.",
+      "body_edits": [],
+      "byte_end_exclusive": 47653,
+      "byte_start_inclusive": 0,
+      "canonical_path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "canonical_sha256": "29602b548895fe0fd7dcfb256aadaee35dbbaf8f226147d9d4c847b2a068c4b3",
+      "line_end_inclusive": 866,
+      "line_start_inclusive": 1,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening/sources/GENERIC_ROTOR_PARENT.md",
+      "source_sha256": "29602b548895fe0fd7dcfb256aadaee35dbbaf8f226147d9d4c847b2a068c4b3"
+    },
+    {
+      "actual_use": "Literal L4 physical operator definitions and supplied architecture.",
+      "body_edits": [],
+      "byte_end_exclusive": 49887,
+      "byte_start_inclusive": 10651,
+      "canonical_path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "line_end_inclusive": 378,
+      "line_start_inclusive": 69,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/joint.md",
+      "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+    },
+    {
+      "actual_use": "Full-space whole-term norms, scalar and coefficient sensitivity; not long-time recovery.",
+      "body_edits": [],
+      "byte_end_exclusive": 44362,
+      "byte_start_inclusive": 13350,
+      "canonical_path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "line_end_inclusive": 375,
+      "line_start_inclusive": 97,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/penalty.md",
+      "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+    },
+    {
+      "actual_use": "Exact supplied clean-active finite word and dirty/reference return.",
+      "body_edits": [],
+      "byte_end_exclusive": 44499,
+      "byte_start_inclusive": 12419,
+      "canonical_path": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "e0ea48d319165e3d310a928c437fb546f2c5ffb7de744f59609daf734ac74ec5",
+      "line_end_inclusive": 370,
+      "line_start_inclusive": 92,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/neutral.md",
+      "source_sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+    },
+    {
+      "actual_use": "Clean work/flag word and both unnormalized output blocks.",
+      "body_edits": [],
+      "byte_end_exclusive": 49095,
+      "byte_start_inclusive": 15020,
+      "canonical_path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "line_end_inclusive": 393,
+      "line_start_inclusive": 108,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/binary.md",
+      "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+    },
+    {
+      "actual_use": "Additional supplied full-H finite waveform certificate, effective coefficients and full recurrence runtime; no new certificate executed.",
+      "body_edits": [],
+      "byte_end_exclusive": 42304,
+      "byte_start_inclusive": 11554,
+      "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "line_end_inclusive": 341,
+      "line_start_inclusive": 65,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/fixed_background.md",
+      "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Inherited full-phase arbitrary-H waveform, prepared output, physical ledger and old sufficient prescription. Raw source and actual canonical publication are now bound.",
+          "body_edits": [],
+          "byte_end_exclusive": 44025,
+          "byte_start_inclusive": 8642,
+          "canonical_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+          "line_end_inclusive": 459,
+          "line_start_inclusive": 61,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening/sources/BRIDGE_DERIVATION.md",
+          "source_sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+        }
+      ],
+      "actual_use": "Inherited full-phase arbitrary-H waveform, prepared output, physical ledger and old sufficient prescription. Raw source and actual canonical publication are now bound.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44503,
+      "claim_id": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "direct accepted raw apparatus/waveform parent",
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "markdown": "[Autonomous apparatus and waveform](LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Characteristic/Fourier/BV/Dyson comparison and existing stronger Fejer first moment; needed estimates rederived. No rotor law/collisions/volume theorem.",
+          "body_edits": [],
+          "byte_end_exclusive": 47653,
+          "byte_start_inclusive": 0,
+          "canonical_path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+          "canonical_sha256": "29602b548895fe0fd7dcfb256aadaee35dbbaf8f226147d9d4c847b2a068c4b3",
+          "line_end_inclusive": 866,
+          "line_start_inclusive": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening/sources/GENERIC_ROTOR_PARENT.md",
+          "source_sha256": "29602b548895fe0fd7dcfb256aadaee35dbbaf8f226147d9d4c847b2a068c4b3"
+        }
+      ],
+      "actual_use": "Characteristic/Fourier/BV/Dyson comparison and existing stronger Fejer first moment; needed estimates rederived. No rotor law/collisions/volume theorem.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "bytes": 47653,
+      "claim_id": "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "direct generic mathematical predecessor",
+      "imported_theorem_result": true,
+      "key": "FOURIER_CLOCK_SUPPLIER",
+      "markdown": "[Generic Fourier-clock supplier](AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md)",
+      "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "published_sha256": "29602b548895fe0fd7dcfb256aadaee35dbbaf8f226147d9d4c847b2a068c4b3",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Literal L4 physical operator definitions and supplied architecture.",
+          "body_edits": [],
+          "byte_end_exclusive": 49887,
+          "byte_start_inclusive": 10651,
+          "canonical_path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+          "line_end_inclusive": 378,
+          "line_start_inclusive": 69,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/joint.md",
+          "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+        }
+      ],
+      "actual_use": "Literal L4 physical operator definitions and supplied architecture.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49944,
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited literal-application condition via accepted bridge",
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "markdown": "[Literal joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Full-space whole-term norms, scalar and coefficient sensitivity; not long-time recovery.",
+          "body_edits": [],
+          "byte_end_exclusive": 44362,
+          "byte_start_inclusive": 13350,
+          "canonical_path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+          "line_end_inclusive": 375,
+          "line_start_inclusive": 97,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/penalty.md",
+          "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+        }
+      ],
+      "actual_use": "Full-space whole-term norms, scalar and coefficient sensitivity; not long-time recovery.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 110137,
+      "claim_id": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited literal-application condition via accepted bridge",
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "markdown": "[Full finite penalty](FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Exact supplied clean-active finite word and dirty/reference return.",
+          "body_edits": [],
+          "byte_end_exclusive": 44499,
+          "byte_start_inclusive": 12419,
+          "canonical_path": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "e0ea48d319165e3d310a928c437fb546f2c5ffb7de744f59609daf734ac74ec5",
+          "line_end_inclusive": 370,
+          "line_start_inclusive": 92,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/neutral.md",
+          "source_sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+        }
+      ],
+      "actual_use": "Exact supplied clean-active finite word and dirty/reference return.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44499,
+      "claim_id": "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited literal-application condition via accepted bridge",
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "markdown": "[Neutral preparation word](FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "e0ea48d319165e3d310a928c437fb546f2c5ffb7de744f59609daf734ac74ec5",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Clean work/flag word and both unnormalized output blocks.",
+          "body_edits": [],
+          "byte_end_exclusive": 49095,
+          "byte_start_inclusive": 15020,
+          "canonical_path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+          "line_end_inclusive": 393,
+          "line_start_inclusive": 108,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/binary.md",
+          "source_sha256": "8abf93c718c691f2140ae9df990bdf0b49f5ddd4a013277f36b04d3dac1887d3"
+        }
+      ],
+      "actual_use": "Clean work/flag word and both unnormalized output blocks.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49095,
+      "claim_id": "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited literal-application condition via accepted bridge",
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "markdown": "[Coherent binary admission word](COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "25dfca56ca924e4ee8c42a69a755d2d073c47f720a0558276059f9d58f865281",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Additional supplied full-H finite waveform certificate, effective coefficients and full recurrence runtime; no new certificate executed.",
+          "body_edits": [],
+          "byte_end_exclusive": 42304,
+          "byte_start_inclusive": 11554,
+          "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+          "line_end_inclusive": 341,
+          "line_start_inclusive": 65,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/source_inputs/fixed_background.md",
+          "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+        }
+      ],
+      "actual_use": "Additional supplied full-H finite waveform certificate, effective coefficients and full recurrence runtime; no new certificate executed.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42304,
+      "claim_id": "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited literal-application condition via accepted bridge",
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "markdown": "[Fixed-background waveform](LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FOURIER_CLOCK_SUPPLIER",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "verification_scope": "Actual source citation roles and canonical body identities; no graph execution"
+}

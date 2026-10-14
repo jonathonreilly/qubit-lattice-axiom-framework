@@ -1,0 +1,7 @@
+random V lam=3: k=0 sphere rho=0.2: Chern=-1.0 min|E|=0.0943
+random V lam=3: k=0 sphere rho=0.5: Chern=None min|E|=0.00194
+random V lam=3: k=0 sphere rho=0.8: Chern=None min|E|=0.0063
+random V lam=3: k=0 sphere rho=1.1: Chern=None min|E|=0.00297
+min |E| on grid |k_i|<=0.8: (np.float64(2.5507540320756628e-17), (np.float64(0.0), np.float64(0.0), np.float64(0.0)))
+[random lam=3] corner spheres rho=0.35: (0, 0, 0):-1.0 (min|E| 0.0179); (0, 0, 1):0.0 (min|E| 0.3665); (0, 1, 0):0.0 (min|E| 0.3885); (0, 1, 1):-0.0 (min|E| 1.8782); (1, 0, 0):0.0 (min|E| 0.4102); (1, 0, 1):-0.0 (min|E| 1.8883); (1, 1, 0):-0.0 (min|E| 1.9294); (1, 1, 1):0.0 (min|E| 3.7797)
+[random lam=3] total over corners = -1.000

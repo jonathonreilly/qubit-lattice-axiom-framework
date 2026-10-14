@@ -161,3 +161,12 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
     - QCD universality is open.
 - **Class Q (elementary quadratic charges): COLOUR-BLOCK-FORCED.** Proved: N ≥ 3|I| and translations force |I| ≥ N.
 - **Memory:** the cap was breached three times (up to 1.61 GB), and reruns within the cap reproduced every result.
+
+**SIGN-1 result (22:06Z; same family; referee pending).**
+- **SIGN-FREE** for the ungauged X2 with global Spin(10) wherever λ1 ≤ 0 and |λ2|/|λ1| ≳ 0.15–0.18. This includes the pure BB + h.c. symmetric-gapping term.
+- **Mechanism:** particle–hole swap one 8 of the Spin(8)×Spin(2) split. This gives a Kramers pair T1, T2 (both squaring to −1, anticommuting) with U(1)_c, i.e. Wu–Zhang / Li–Jiang–Yao Kramers class.
+- **Evidence:** an explicit decomposition (an exact Fierz identity at λ1 = 0) and positive cluster weights (phase ≤ 4e-13; ≤ 4e-7 at W = 8). The natural 10-channel decomposition has a phase problem.
+- **OPEN:** λ1 > 0.
+- **Not covered:** the gauged model (no G_SM-invariant 2-plane in the 10).
+- **Scope:** sign-freeness does not decide symmetric gapping; the sign-free region is the GPR-risk region.
+- **Memory:** cap breach recorded (586 MiB resident).

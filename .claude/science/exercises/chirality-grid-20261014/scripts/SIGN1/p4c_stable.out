@@ -1,0 +1,39 @@
+T1^2 = -1: True; T2^2 = -1: True; T1 T2 = -T2 T1: True
+  dens:sing:1:s              dim    1  parity ['T1even', 'even']  commutes with U: {True}
+  dens:sing:1:c              dim    1  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:1:s              dim    3  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:trip:1:c              dim    3  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:28:s             dim   28  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:28:c             dim   28  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:trip:28:s             dim   84  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:28:c             dim   84  parity ['T1even', 'even']  commutes with U: {True}
+  dens:sing:35:s             dim   35  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:35:s             dim  105  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:35:c             dim   35  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:35:c             dim  105  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:sing:8v:Re            dim    8  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:8v:Im            dim    8  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:8v:Re            dim   24  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:8v:Im            dim   24  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:56v:Re           dim   56  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:56v:Im           dim   56  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:56v:Re           dim  168  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:56v:Im           dim  168  parity ['T1even', 'even']  commutes with U: {True}
+total channel dimension 1024 (expected 1024)
+orthonormal across families: max |Gram - 1| = 7.8e-16
+filter on ring: f(k) = [-1.0, -0.5, 0.0, -0.5] (zero at k = pi: the hw1 corner (pi,0,0))
+walker: T2-invariant True, commutes with U(1)_c True
+filter commutes with T2 and U(1)_c: True
+  Kramers th=200 W=0.5 beta=0.4: phase of w (d-frame, stabilised): max |phase| = 3.7e-14; Re log w range 154.1..161.8
+  natural th=200 W=0.5: |phase of det(1+M)| median 1.08e+00 max 2.74e+00
+  Kramers th=200 W=2.0 beta=1.0: phase of w (d-frame, stabilised): max |phase| = 1.8e-13; Re log w range 1129.1..1169.7
+  natural th=200 W=2.0: |phase of det(1+M)| median 1.13e+00 max 2.58e+00
+  Kramers th=200 W=8.0 beta=1.0: phase of w (d-frame, stabilised): max |phase| = 4.1e-07; Re log w range 4300.0..4384.9
+  natural th=200 W=8.0: |phase of det(1+M)| median 9.08e-02 max 2.00e-01
+  Kramers th=250 W=0.5 beta=0.4: phase of w (d-frame, stabilised): max |phase| = 2.5e-14; Re log w range 118.7..124.0
+  natural th=250 W=0.5: |phase of det(1+M)| median 3.89e-03 max 1.12e-02
+  Kramers th=250 W=2.0 beta=1.0: phase of w (d-frame, stabilised): max |phase| = 2.6e-13; Re log w range 676.5..706.6
+  natural th=250 W=2.0: |phase of det(1+M)| median 3.76e-02 max 1.36e-01
+  Kramers th=250 W=8.0 beta=1.0: phase of w (d-frame, stabilised): max |phase| = 1.7e-10; Re log w range 2238.9..2342.9
+  natural th=250 W=8.0: |phase of det(1+M)| median 5.53e-02 max 1.45e-01
+total 59s, peak RSS 386 MB

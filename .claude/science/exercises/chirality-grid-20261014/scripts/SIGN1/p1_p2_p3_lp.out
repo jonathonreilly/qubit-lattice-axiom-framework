@@ -1,0 +1,285 @@
+=== P1(a): filter parity (f(k+Pi) relates hw1 to hw2) ===
+  f_NN: f(hw1)=+0.000, f(hw1+Pi)=f(hw2)=+1.000 -> even-offset part at hw1 +0.500, odd-offset part -0.500 (both nonzero)
+  f_F1: f(hw1)=+0.000, f(hw1+Pi)=f(hw2)=+1.000 -> even-offset part at hw1 +0.500, odd-offset part -0.500 (both nonzero)
+=== P1(b): uniform MTRs of the walker (flavour 4x4 problem on (tau, sigma)) ===
+  W_x (tau,sigma) symmetric? True
+  W_y (tau,sigma) symmetric? True
+  W_z (tau,sigma) symmetric? True
+  O anticommuting (uniform Theta): solution dimension 2; each solution {'anticommutes with J'}
+  O commuting (staggered Theta): solution dimension 2; each solution {'commutes with J'}
+  -> uniform MTR anticommutes with the complex structure J: Theta is number-conserving (psi -> M psi);
+     staggered MTR commutes with J: particle-hole type; excluded by the filter's even+odd offsets (P1(a)).
+=== P1(c): Theta_V = (i sigma_y x V) K, V^T N^a* V = s_a N^a ===
+  k=1: V symmetric, Theta^2 = -1, parities s_a = [1, 1, 1, 1, 1, 1, 1, 1, 1, -1] (#(-1) = 1)
+  k=5: V symmetric, Theta^2 = -1, parities s_a = [-1, -1, -1, -1, 1, 1, 1, 1, 1, -1] (#(-1) = 5)
+  k=3: V antisymmetric, Theta^2 = +1, parities s_a = [-1, -1, 1, 1, 1, 1, 1, 1, 1, -1] (#(-1) = 3)
+  16 vs 16bar: tr g = 2.2045-11.5677j, tr g* = 2.2045+11.5677j (unequal -> no antiunitary commutes with Spin(10))
+
+samples: 6000 quadruples; |q1|_1 = 8.500, |q2|_1 = 24.000
+
+=== P2 k=1: 20 joint eigenspaces of (Casimirs, Z4, Theta) on Lambda^2; dims [1, 1, 1, 3, 9, 9, 9, 27, 36, 84, 108, 108, 108, 126, 126, 126, 252, 252, 252, 378]; total 2016
+  Theta-even irreps (attractive/real field allowed): 10  dims [126, 252, 108, 9, 1, 126, 252, 108, 9, 1]
+  Theta-odd  irreps (repulsive/imag field allowed):  10  dims [378, 84, 36, 27, 3, 126, 252, 108, 9, 1]
+  rank of the 4-form images on the sample: 7
+  unconstrained fit of q1 (sum B^dag B): relative residual 8.63e-15
+  unconstrained fit of q2 (sum BB + h.c.): relative residual 9.23e-15
+  angle(deg) lam1 lam2  min L1 residual / |q|_1   (0 => an on-site Theta-compatible decomposition exists)
+       0  +1.000 +0.000   0.000e+00   FEASIBLE
+       5  +0.996 +0.087   0.000e+00   FEASIBLE
+      10  +0.985 +0.174   0.000e+00   FEASIBLE
+      15  +0.966 +0.259   0.000e+00   FEASIBLE
+      20  +0.940 +0.342   0.000e+00   FEASIBLE
+      25  +0.906 +0.423   0.000e+00   FEASIBLE
+      30  +0.866 +0.500   0.000e+00   FEASIBLE
+      35  +0.819 +0.574   0.000e+00   FEASIBLE
+      40  +0.766 +0.643   0.000e+00   FEASIBLE
+      45  +0.707 +0.707   0.000e+00   FEASIBLE
+      50  +0.643 +0.766   0.000e+00   FEASIBLE
+      55  +0.574 +0.819   0.000e+00   FEASIBLE
+      60  +0.500 +0.866   0.000e+00   FEASIBLE
+      65  +0.423 +0.906   0.000e+00   FEASIBLE
+      70  +0.342 +0.940   0.000e+00   FEASIBLE
+      75  +0.259 +0.966   0.000e+00   FEASIBLE
+      80  +0.174 +0.985   0.000e+00   FEASIBLE
+      85  +0.087 +0.996   0.000e+00   FEASIBLE
+      90  +0.000 +1.000   0.000e+00   FEASIBLE
+      95  -0.087 +0.996   0.000e+00   FEASIBLE
+     100  -0.174 +0.985   0.000e+00   FEASIBLE
+     105  -0.259 +0.966   0.000e+00   FEASIBLE
+     110  -0.342 +0.940   0.000e+00   FEASIBLE
+     115  -0.423 +0.906   0.000e+00   FEASIBLE
+     120  -0.500 +0.866   0.000e+00   FEASIBLE
+     125  -0.574 +0.819   0.000e+00   FEASIBLE
+     130  -0.643 +0.766   0.000e+00   FEASIBLE
+     135  -0.707 +0.707   0.000e+00   FEASIBLE
+     140  -0.766 +0.643   0.000e+00   FEASIBLE
+     145  -0.819 +0.574   0.000e+00   FEASIBLE
+     150  -0.866 +0.500   0.000e+00   FEASIBLE
+     155  -0.906 +0.423   0.000e+00   FEASIBLE
+     160  -0.940 +0.342   0.000e+00   FEASIBLE
+     165  -0.966 +0.259   0.000e+00   FEASIBLE
+     170  -0.985 +0.174   0.000e+00   FEASIBLE
+     175  -0.996 +0.087   0.000e+00   FEASIBLE
+     180  -1.000 +0.000   0.000e+00   FEASIBLE
+     185  -0.996 -0.087   0.000e+00   FEASIBLE
+     190  -0.985 -0.174   0.000e+00   FEASIBLE
+     195  -0.966 -0.259   0.000e+00   FEASIBLE
+     200  -0.940 -0.342   0.000e+00   FEASIBLE
+     205  -0.906 -0.423   0.000e+00   FEASIBLE
+     210  -0.866 -0.500   0.000e+00   FEASIBLE
+     215  -0.819 -0.574   0.000e+00   FEASIBLE
+     220  -0.766 -0.643   0.000e+00   FEASIBLE
+     225  -0.707 -0.707   0.000e+00   FEASIBLE
+     230  -0.643 -0.766   0.000e+00   FEASIBLE
+     235  -0.574 -0.819   0.000e+00   FEASIBLE
+     240  -0.500 -0.866   0.000e+00   FEASIBLE
+     245  -0.423 -0.906   0.000e+00   FEASIBLE
+     250  -0.342 -0.940   0.000e+00   FEASIBLE
+     255  -0.259 -0.966   0.000e+00   FEASIBLE
+     260  -0.174 -0.985   0.000e+00   FEASIBLE
+     265  -0.087 -0.996   0.000e+00   FEASIBLE
+     270  -0.000 -1.000   0.000e+00   FEASIBLE
+     275  +0.087 -0.996   0.000e+00   FEASIBLE
+     280  +0.174 -0.985   0.000e+00   FEASIBLE
+     285  +0.259 -0.966   0.000e+00   FEASIBLE
+     290  +0.342 -0.940   0.000e+00   FEASIBLE
+     295  +0.423 -0.906   0.000e+00   FEASIBLE
+     300  +0.500 -0.866   0.000e+00   FEASIBLE
+     305  +0.574 -0.819   0.000e+00   FEASIBLE
+     310  +0.643 -0.766   0.000e+00   FEASIBLE
+     315  +0.707 -0.707   0.000e+00   FEASIBLE
+     320  +0.766 -0.643   0.000e+00   FEASIBLE
+     325  +0.819 -0.574   0.000e+00   FEASIBLE
+     330  +0.866 -0.500   0.000e+00   FEASIBLE
+     335  +0.906 -0.423   0.000e+00   FEASIBLE
+     340  +0.940 -0.342   0.000e+00   FEASIBLE
+     345  +0.966 -0.259   0.000e+00   FEASIBLE
+     350  +0.985 -0.174   0.000e+00   FEASIBLE
+     355  +0.996 -0.087   0.000e+00   FEASIBLE
+  feasible angles: [np.float64(0.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(20.0), np.float64(25.0), np.float64(30.0), np.float64(35.0), np.float64(40.0), np.float64(45.0), np.float64(50.0), np.float64(55.0), np.float64(60.0), np.float64(65.0), np.float64(70.0), np.float64(75.0), np.float64(80.0), np.float64(85.0), np.float64(90.0), np.float64(95.0), np.float64(100.0), np.float64(105.0), np.float64(110.0), np.float64(115.0), np.float64(120.0), np.float64(125.0), np.float64(130.0), np.float64(135.0), np.float64(140.0), np.float64(145.0), np.float64(150.0), np.float64(155.0), np.float64(160.0), np.float64(165.0), np.float64(170.0), np.float64(175.0), np.float64(180.0), np.float64(185.0), np.float64(190.0), np.float64(195.0), np.float64(200.0), np.float64(205.0), np.float64(210.0), np.float64(215.0), np.float64(220.0), np.float64(225.0), np.float64(230.0), np.float64(235.0), np.float64(240.0), np.float64(245.0), np.float64(250.0), np.float64(255.0), np.float64(260.0), np.float64(265.0), np.float64(270.0), np.float64(275.0), np.float64(280.0), np.float64(285.0), np.float64(290.0), np.float64(295.0), np.float64(300.0), np.float64(305.0), np.float64(310.0), np.float64(315.0), np.float64(320.0), np.float64(325.0), np.float64(330.0), np.float64(335.0), np.float64(340.0), np.float64(345.0), np.float64(350.0), np.float64(355.0)]
+  Farkas LP at 45 deg: status 2 (no certificate => feasible)
+  Farkas LP at 135 deg: status 2 (no certificate => feasible)
+  Farkas LP at 90 deg: status 2 (no certificate => feasible)
+  Farkas LP at 270 deg: status 2 (no certificate => feasible)
+  P3 sanity: |D_spin10 q1| = 2.2e-15, |D_spin10 q2| = 9.0e-15, |D_n q1| = 7.4e-16, |D_n q2| = 3.00e+00
+  P3: max |r.(D_n q)| over Spin(10)-invariant sign-cone elements (|g|<=1): 3.96e-01; same functional on the X2 BB term (|g|<=1, sign cone ignored): 7.34e-01
+  k=1 done in 18s, peak RSS 402 MB
+
+=== P2 k=5: 36 joint eigenspaces of (Casimirs, Z4, Theta) on Lambda^2; dims [1, 1, 1, 3, 5, 5, 5, 5, 5, 5, 10, 10, 15, 15, 25, 25, 25, 30, 30, 30, 30, 30, 30, 50, 50, 75, 100, 100, 100, 150, 150, 150, 150, 150, 150, 300]; total 2016
+  Theta-even irreps (attractive/real field allowed): 18  dims [100, 150, 150, 25, 30, 30, 5, 5, 1, 100, 150, 150, 25, 30, 30, 5, 5, 1]
+  Theta-odd  irreps (repulsive/imag field allowed):  18  dims [300, 50, 50, 75, 10, 10, 15, 15, 3, 100, 150, 150, 25, 30, 30, 5, 5, 1]
+  rank of the 4-form images on the sample: 12
+  unconstrained fit of q1 (sum B^dag B): relative residual 5.86e-15
+  unconstrained fit of q2 (sum BB + h.c.): relative residual 2.50e-14
+  angle(deg) lam1 lam2  min L1 residual / |q|_1   (0 => an on-site Theta-compatible decomposition exists)
+       0  +1.000 +0.000   0.000e+00   FEASIBLE
+       5  +0.996 +0.087   0.000e+00   FEASIBLE
+      10  +0.985 +0.174   0.000e+00   FEASIBLE
+      15  +0.966 +0.259   0.000e+00   FEASIBLE
+      20  +0.940 +0.342   0.000e+00   FEASIBLE
+      25  +0.906 +0.423   0.000e+00   FEASIBLE
+      30  +0.866 +0.500   0.000e+00   FEASIBLE
+      35  +0.819 +0.574   0.000e+00   FEASIBLE
+      40  +0.766 +0.643   0.000e+00   FEASIBLE
+      45  +0.707 +0.707   0.000e+00   FEASIBLE
+      50  +0.643 +0.766   0.000e+00   FEASIBLE
+      55  +0.574 +0.819   0.000e+00   FEASIBLE
+      60  +0.500 +0.866   0.000e+00   FEASIBLE
+      65  +0.423 +0.906   0.000e+00   FEASIBLE
+      70  +0.342 +0.940   0.000e+00   FEASIBLE
+      75  +0.259 +0.966   0.000e+00   FEASIBLE
+      80  +0.174 +0.985   0.000e+00   FEASIBLE
+      85  +0.087 +0.996   0.000e+00   FEASIBLE
+      90  +0.000 +1.000   0.000e+00   FEASIBLE
+      95  -0.087 +0.996   0.000e+00   FEASIBLE
+     100  -0.174 +0.985   0.000e+00   FEASIBLE
+     105  -0.259 +0.966   0.000e+00   FEASIBLE
+     110  -0.342 +0.940   0.000e+00   FEASIBLE
+     115  -0.423 +0.906   0.000e+00   FEASIBLE
+     120  -0.500 +0.866   0.000e+00   FEASIBLE
+     125  -0.574 +0.819   0.000e+00   FEASIBLE
+     130  -0.643 +0.766   0.000e+00   FEASIBLE
+     135  -0.707 +0.707   0.000e+00   FEASIBLE
+     140  -0.766 +0.643   0.000e+00   FEASIBLE
+     145  -0.819 +0.574   0.000e+00   FEASIBLE
+     150  -0.866 +0.500   0.000e+00   FEASIBLE
+     155  -0.906 +0.423   0.000e+00   FEASIBLE
+     160  -0.940 +0.342   0.000e+00   FEASIBLE
+     165  -0.966 +0.259   0.000e+00   FEASIBLE
+     170  -0.985 +0.174   0.000e+00   FEASIBLE
+     175  -0.996 +0.087   0.000e+00   FEASIBLE
+     180  -1.000 +0.000   0.000e+00   FEASIBLE
+     185  -0.996 -0.087   0.000e+00   FEASIBLE
+     190  -0.985 -0.174   0.000e+00   FEASIBLE
+     195  -0.966 -0.259   0.000e+00   FEASIBLE
+     200  -0.940 -0.342   0.000e+00   FEASIBLE
+     205  -0.906 -0.423   0.000e+00   FEASIBLE
+     210  -0.866 -0.500   0.000e+00   FEASIBLE
+     215  -0.819 -0.574   0.000e+00   FEASIBLE
+     220  -0.766 -0.643   0.000e+00   FEASIBLE
+     225  -0.707 -0.707   0.000e+00   FEASIBLE
+     230  -0.643 -0.766   0.000e+00   FEASIBLE
+     235  -0.574 -0.819   0.000e+00   FEASIBLE
+     240  -0.500 -0.866   0.000e+00   FEASIBLE
+     245  -0.423 -0.906   0.000e+00   FEASIBLE
+     250  -0.342 -0.940   0.000e+00   FEASIBLE
+     255  -0.259 -0.966   0.000e+00   FEASIBLE
+     260  -0.174 -0.985   0.000e+00   FEASIBLE
+     265  -0.087 -0.996   0.000e+00   FEASIBLE
+     270  -0.000 -1.000   0.000e+00   FEASIBLE
+     275  +0.087 -0.996   0.000e+00   FEASIBLE
+     280  +0.174 -0.985   0.000e+00   FEASIBLE
+     285  +0.259 -0.966   0.000e+00   FEASIBLE
+     290  +0.342 -0.940   0.000e+00   FEASIBLE
+     295  +0.423 -0.906   0.000e+00   FEASIBLE
+     300  +0.500 -0.866   0.000e+00   FEASIBLE
+     305  +0.574 -0.819   0.000e+00   FEASIBLE
+     310  +0.643 -0.766   0.000e+00   FEASIBLE
+     315  +0.707 -0.707   0.000e+00   FEASIBLE
+     320  +0.766 -0.643   0.000e+00   FEASIBLE
+     325  +0.819 -0.574   0.000e+00   FEASIBLE
+     330  +0.866 -0.500   0.000e+00   FEASIBLE
+     335  +0.906 -0.423   0.000e+00   FEASIBLE
+     340  +0.940 -0.342   0.000e+00   FEASIBLE
+     345  +0.966 -0.259   0.000e+00   FEASIBLE
+     350  +0.985 -0.174   0.000e+00   FEASIBLE
+     355  +0.996 -0.087   0.000e+00   FEASIBLE
+  feasible angles: [np.float64(0.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(20.0), np.float64(25.0), np.float64(30.0), np.float64(35.0), np.float64(40.0), np.float64(45.0), np.float64(50.0), np.float64(55.0), np.float64(60.0), np.float64(65.0), np.float64(70.0), np.float64(75.0), np.float64(80.0), np.float64(85.0), np.float64(90.0), np.float64(95.0), np.float64(100.0), np.float64(105.0), np.float64(110.0), np.float64(115.0), np.float64(120.0), np.float64(125.0), np.float64(130.0), np.float64(135.0), np.float64(140.0), np.float64(145.0), np.float64(150.0), np.float64(155.0), np.float64(160.0), np.float64(165.0), np.float64(170.0), np.float64(175.0), np.float64(180.0), np.float64(185.0), np.float64(190.0), np.float64(195.0), np.float64(200.0), np.float64(205.0), np.float64(210.0), np.float64(215.0), np.float64(220.0), np.float64(225.0), np.float64(230.0), np.float64(235.0), np.float64(240.0), np.float64(245.0), np.float64(250.0), np.float64(255.0), np.float64(260.0), np.float64(265.0), np.float64(270.0), np.float64(275.0), np.float64(280.0), np.float64(285.0), np.float64(290.0), np.float64(295.0), np.float64(300.0), np.float64(305.0), np.float64(310.0), np.float64(315.0), np.float64(320.0), np.float64(325.0), np.float64(330.0), np.float64(335.0), np.float64(340.0), np.float64(345.0), np.float64(350.0), np.float64(355.0)]
+  Farkas LP at 45 deg: status 2 (no certificate => feasible)
+  Farkas LP at 135 deg: status 2 (no certificate => feasible)
+  Farkas LP at 90 deg: status 2 (no certificate => feasible)
+  Farkas LP at 270 deg: status 2 (no certificate => feasible)
+  P3 sanity: |D_spin10 q1| = 3.3e-15, |D_spin10 q2| = 2.9e-14, |D_n q1| = 1.6e-15, |D_n q2| = 3.00e+00
+  P3: max |r.(D_n q)| over Spin(10)-invariant sign-cone elements (|g|<=1): 2.38e-01; same functional on the X2 BB term (|g|<=1, sign cone ignored): 1.18e+00
+  k=5 done in 21s, peak RSS 586 MB
+
+=== P2 k=3: 32 joint eigenspaces of (Casimirs, Z4, Theta) on Lambda^2; dims [1, 3, 3, 3, 3, 3, 3, 7, 7, 7, 9, 21, 21, 21, 21, 21, 35, 63, 63, 63, 63, 63, 105, 105, 105, 105, 105, 105, 189, 189, 189, 315]; total 2016
+  Theta-even irreps (attractive/real field allowed): 16  dims [315, 63, 35, 63, 21, 21, 9, 1, 105, 189, 105, 21, 63, 7, 3, 3]
+  Theta-odd  irreps (repulsive/imag field allowed):  16  dims [105, 189, 105, 21, 63, 7, 3, 3, 105, 189, 105, 21, 63, 7, 3, 3]
+  rank of the 4-form images on the sample: 11
+  unconstrained fit of q1 (sum B^dag B): relative residual 5.43e-15
+  unconstrained fit of q2 (sum BB + h.c.): relative residual 1.53e-14
+  angle(deg) lam1 lam2  min L1 residual / |q|_1   (0 => an on-site Theta-compatible decomposition exists)
+       0  +1.000 +0.000   0.000e+00   FEASIBLE
+       5  +0.996 +0.087   0.000e+00   FEASIBLE
+      10  +0.985 +0.174   0.000e+00   FEASIBLE
+      15  +0.966 +0.259   0.000e+00   FEASIBLE
+      20  +0.940 +0.342   0.000e+00   FEASIBLE
+      25  +0.906 +0.423   0.000e+00   FEASIBLE
+      30  +0.866 +0.500   0.000e+00   FEASIBLE
+      35  +0.819 +0.574   0.000e+00   FEASIBLE
+      40  +0.766 +0.643   0.000e+00   FEASIBLE
+      45  +0.707 +0.707   0.000e+00   FEASIBLE
+      50  +0.643 +0.766   0.000e+00   FEASIBLE
+      55  +0.574 +0.819   0.000e+00   FEASIBLE
+      60  +0.500 +0.866   0.000e+00   FEASIBLE
+      65  +0.423 +0.906   0.000e+00   FEASIBLE
+      70  +0.342 +0.940   0.000e+00   FEASIBLE
+      75  +0.259 +0.966   0.000e+00   FEASIBLE
+      80  +0.174 +0.985   0.000e+00   FEASIBLE
+      85  +0.087 +0.996   0.000e+00   FEASIBLE
+      90  +0.000 +1.000   0.000e+00   FEASIBLE
+      95  -0.087 +0.996   0.000e+00   FEASIBLE
+     100  -0.174 +0.985   0.000e+00   FEASIBLE
+     105  -0.259 +0.966   0.000e+00   FEASIBLE
+     110  -0.342 +0.940   0.000e+00   FEASIBLE
+     115  -0.423 +0.906   0.000e+00   FEASIBLE
+     120  -0.500 +0.866   0.000e+00   FEASIBLE
+     125  -0.574 +0.819   0.000e+00   FEASIBLE
+     130  -0.643 +0.766   0.000e+00   FEASIBLE
+     135  -0.707 +0.707   0.000e+00   FEASIBLE
+     140  -0.766 +0.643   0.000e+00   FEASIBLE
+     145  -0.819 +0.574   0.000e+00   FEASIBLE
+     150  -0.866 +0.500   0.000e+00   FEASIBLE
+     155  -0.906 +0.423   0.000e+00   FEASIBLE
+     160  -0.940 +0.342   0.000e+00   FEASIBLE
+     165  -0.966 +0.259   0.000e+00   FEASIBLE
+     170  -0.985 +0.174   0.000e+00   FEASIBLE
+     175  -0.996 +0.087   0.000e+00   FEASIBLE
+     180  -1.000 +0.000   0.000e+00   FEASIBLE
+     185  -0.996 -0.087   0.000e+00   FEASIBLE
+     190  -0.985 -0.174   0.000e+00   FEASIBLE
+     195  -0.966 -0.259   0.000e+00   FEASIBLE
+     200  -0.940 -0.342   0.000e+00   FEASIBLE
+     205  -0.906 -0.423   0.000e+00   FEASIBLE
+     210  -0.866 -0.500   0.000e+00   FEASIBLE
+     215  -0.819 -0.574   0.000e+00   FEASIBLE
+     220  -0.766 -0.643   0.000e+00   FEASIBLE
+     225  -0.707 -0.707   0.000e+00   FEASIBLE
+     230  -0.643 -0.766   0.000e+00   FEASIBLE
+     235  -0.574 -0.819   0.000e+00   FEASIBLE
+     240  -0.500 -0.866   0.000e+00   FEASIBLE
+     245  -0.423 -0.906   0.000e+00   FEASIBLE
+     250  -0.342 -0.940   0.000e+00   FEASIBLE
+     255  -0.259 -0.966   0.000e+00   FEASIBLE
+     260  -0.174 -0.985   0.000e+00   FEASIBLE
+     265  -0.087 -0.996   0.000e+00   FEASIBLE
+     270  -0.000 -1.000   0.000e+00   FEASIBLE
+     275  +0.087 -0.996   0.000e+00   FEASIBLE
+     280  +0.174 -0.985   0.000e+00   FEASIBLE
+     285  +0.259 -0.966   0.000e+00   FEASIBLE
+     290  +0.342 -0.940   0.000e+00   FEASIBLE
+     295  +0.423 -0.906   0.000e+00   FEASIBLE
+     300  +0.500 -0.866   0.000e+00   FEASIBLE
+     305  +0.574 -0.819   0.000e+00   FEASIBLE
+     310  +0.643 -0.766   0.000e+00   FEASIBLE
+     315  +0.707 -0.707   0.000e+00   FEASIBLE
+     320  +0.766 -0.643   0.000e+00   FEASIBLE
+     325  +0.819 -0.574   0.000e+00   FEASIBLE
+     330  +0.866 -0.500   0.000e+00   FEASIBLE
+     335  +0.906 -0.423   0.000e+00   FEASIBLE
+     340  +0.940 -0.342   0.000e+00   FEASIBLE
+     345  +0.966 -0.259   0.000e+00   FEASIBLE
+     350  +0.985 -0.174   0.000e+00   FEASIBLE
+     355  +0.996 -0.087   0.000e+00   FEASIBLE
+  feasible angles: [np.float64(0.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(20.0), np.float64(25.0), np.float64(30.0), np.float64(35.0), np.float64(40.0), np.float64(45.0), np.float64(50.0), np.float64(55.0), np.float64(60.0), np.float64(65.0), np.float64(70.0), np.float64(75.0), np.float64(80.0), np.float64(85.0), np.float64(90.0), np.float64(95.0), np.float64(100.0), np.float64(105.0), np.float64(110.0), np.float64(115.0), np.float64(120.0), np.float64(125.0), np.float64(130.0), np.float64(135.0), np.float64(140.0), np.float64(145.0), np.float64(150.0), np.float64(155.0), np.float64(160.0), np.float64(165.0), np.float64(170.0), np.float64(175.0), np.float64(180.0), np.float64(185.0), np.float64(190.0), np.float64(195.0), np.float64(200.0), np.float64(205.0), np.float64(210.0), np.float64(215.0), np.float64(220.0), np.float64(225.0), np.float64(230.0), np.float64(235.0), np.float64(240.0), np.float64(245.0), np.float64(250.0), np.float64(255.0), np.float64(260.0), np.float64(265.0), np.float64(270.0), np.float64(275.0), np.float64(280.0), np.float64(285.0), np.float64(290.0), np.float64(295.0), np.float64(300.0), np.float64(305.0), np.float64(310.0), np.float64(315.0), np.float64(320.0), np.float64(325.0), np.float64(330.0), np.float64(335.0), np.float64(340.0), np.float64(345.0), np.float64(350.0), np.float64(355.0)]
+  Farkas LP at 45 deg: status 2 (no certificate => feasible)
+  Farkas LP at 135 deg: status 2 (no certificate => feasible)
+  Farkas LP at 90 deg: status 2 (no certificate => feasible)
+  Farkas LP at 270 deg: status 2 (no certificate => feasible)
+  P3 sanity: |D_spin10 q1| = 3.6e-15, |D_spin10 q2| = 2.4e-14, |D_n q1| = 6.2e-16, |D_n q2| = 3.00e+00
+  P3: max |r.(D_n q)| over Spin(10)-invariant sign-cone elements (|g|<=1): 8.57e-01; same functional on the X2 BB term (|g|<=1, sign cone ignored): 1.31e+00
+  k=3 done in 21s, peak RSS 586 MB
+
+SUMMARY {1: (20, [np.float64(0.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(20.0), np.float64(25.0), np.float64(30.0), np.float64(35.0), np.float64(40.0), np.float64(45.0), np.float64(50.0), np.float64(55.0), np.float64(60.0), np.float64(65.0), np.float64(70.0), np.float64(75.0), np.float64(80.0), np.float64(85.0), np.float64(90.0), np.float64(95.0), np.float64(100.0), np.float64(105.0), np.float64(110.0), np.float64(115.0), np.float64(120.0), np.float64(125.0), np.float64(130.0), np.float64(135.0), np.float64(140.0), np.float64(145.0), np.float64(150.0), np.float64(155.0), np.float64(160.0), np.float64(165.0), np.float64(170.0), np.float64(175.0), np.float64(180.0), np.float64(185.0), np.float64(190.0), np.float64(195.0), np.float64(200.0), np.float64(205.0), np.float64(210.0), np.float64(215.0), np.float64(220.0), np.float64(225.0), np.float64(230.0), np.float64(235.0), np.float64(240.0), np.float64(245.0), np.float64(250.0), np.float64(255.0), np.float64(260.0), np.float64(265.0), np.float64(270.0), np.float64(275.0), np.float64(280.0), np.float64(285.0), np.float64(290.0), np.float64(295.0), np.float64(300.0), np.float64(305.0), np.float64(310.0), np.float64(315.0), np.float64(320.0), np.float64(325.0), np.float64(330.0), np.float64(335.0), np.float64(340.0), np.float64(345.0), np.float64(350.0), np.float64(355.0)], '4.0e-01'), 5: (36, [np.float64(0.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(20.0), np.float64(25.0), np.float64(30.0), np.float64(35.0), np.float64(40.0), np.float64(45.0), np.float64(50.0), np.float64(55.0), np.float64(60.0), np.float64(65.0), np.float64(70.0), np.float64(75.0), np.float64(80.0), np.float64(85.0), np.float64(90.0), np.float64(95.0), np.float64(100.0), np.float64(105.0), np.float64(110.0), np.float64(115.0), np.float64(120.0), np.float64(125.0), np.float64(130.0), np.float64(135.0), np.float64(140.0), np.float64(145.0), np.float64(150.0), np.float64(155.0), np.float64(160.0), np.float64(165.0), np.float64(170.0), np.float64(175.0), np.float64(180.0), np.float64(185.0), np.float64(190.0), np.float64(195.0), np.float64(200.0), np.float64(205.0), np.float64(210.0), np.float64(215.0), np.float64(220.0), np.float64(225.0), np.float64(230.0), np.float64(235.0), np.float64(240.0), np.float64(245.0), np.float64(250.0), np.float64(255.0), np.float64(260.0), np.float64(265.0), np.float64(270.0), np.float64(275.0), np.float64(280.0), np.float64(285.0), np.float64(290.0), np.float64(295.0), np.float64(300.0), np.float64(305.0), np.float64(310.0), np.float64(315.0), np.float64(320.0), np.float64(325.0), np.float64(330.0), np.float64(335.0), np.float64(340.0), np.float64(345.0), np.float64(350.0), np.float64(355.0)], '2.4e-01'), 3: (32, [np.float64(0.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(20.0), np.float64(25.0), np.float64(30.0), np.float64(35.0), np.float64(40.0), np.float64(45.0), np.float64(50.0), np.float64(55.0), np.float64(60.0), np.float64(65.0), np.float64(70.0), np.float64(75.0), np.float64(80.0), np.float64(85.0), np.float64(90.0), np.float64(95.0), np.float64(100.0), np.float64(105.0), np.float64(110.0), np.float64(115.0), np.float64(120.0), np.float64(125.0), np.float64(130.0), np.float64(135.0), np.float64(140.0), np.float64(145.0), np.float64(150.0), np.float64(155.0), np.float64(160.0), np.float64(165.0), np.float64(170.0), np.float64(175.0), np.float64(180.0), np.float64(185.0), np.float64(190.0), np.float64(195.0), np.float64(200.0), np.float64(205.0), np.float64(210.0), np.float64(215.0), np.float64(220.0), np.float64(225.0), np.float64(230.0), np.float64(235.0), np.float64(240.0), np.float64(245.0), np.float64(250.0), np.float64(255.0), np.float64(260.0), np.float64(265.0), np.float64(270.0), np.float64(275.0), np.float64(280.0), np.float64(285.0), np.float64(290.0), np.float64(295.0), np.float64(300.0), np.float64(305.0), np.float64(310.0), np.float64(315.0), np.float64(320.0), np.float64(325.0), np.float64(330.0), np.float64(335.0), np.float64(340.0), np.float64(345.0), np.float64(350.0), np.float64(355.0)], '8.6e-01')}
+total 60s, peak RSS 586 MB

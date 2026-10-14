@@ -1,0 +1,153 @@
+T1^2 = -1: True; T2^2 = -1: True; T1 T2 = -T2 T1: True
+  dens:sing:1:s              dim    1  parity ['T1even', 'even']  commutes with U: {True}
+  dens:sing:1:c              dim    1  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:1:s              dim    3  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:trip:1:c              dim    3  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:28:s             dim   28  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:28:c             dim   28  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:trip:28:s             dim   84  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:28:c             dim   84  parity ['T1even', 'even']  commutes with U: {True}
+  dens:sing:35:s             dim   35  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:35:s             dim  105  parity ['T1odd', 'odd']  commutes with U: {True}
+  dens:sing:35:c             dim   35  parity ['T1even', 'even']  commutes with U: {True}
+  dens:trip:35:c             dim  105  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:sing:8v:Re            dim    8  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:8v:Im            dim    8  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:8v:Re            dim   24  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:8v:Im            dim   24  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:56v:Re           dim   56  parity ['T1even', 'even']  commutes with U: {True}
+  pair:sing:56v:Im           dim   56  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:56v:Re           dim  168  parity ['T1odd', 'odd']  commutes with U: {True}
+  pair:trip:56v:Im           dim  168  parity ['T1even', 'even']  commutes with U: {True}
+total channel dimension 1024 (expected 1024)
+orthonormal across families: max |Gram - 1| = 7.8e-16
+Q invariant under T1: True
+Q invariant under U: True
+unconstrained fit of q1: relative residual 2.24e-15
+unconstrained fit of q2: relative residual 9.93e-16
+rank of channel 4-forms on sample: 11
+
+angle  lam1   lam2   min L1 residual/|q|_1 (Kramers class with U(1)_c)   status
+     0 +1.000 +0.000   6.923e-01   optimal
+    10 +0.985 +0.174   7.163e-01   optimal
+    20 +0.940 +0.342   6.653e-01   optimal
+    30 +0.866 +0.500   6.586e-01   optimal
+    40 +0.766 +0.643   6.929e-01   optimal
+    50 +0.643 +0.766   7.172e-01   optimal
+    60 +0.500 +0.866   7.364e-01   optimal
+    70 +0.342 +0.940   7.528e-01   optimal
+    80 +0.174 +0.985   7.679e-01   optimal
+    90 +0.000 +1.000   7.826e-01   optimal
+   100 -0.174 +0.985   7.856e-01   optimal
+   110 -0.342 +0.940   7.889e-01   optimal
+   120 -0.500 +0.866   7.926e-01   optimal
+   130 -0.643 +0.766   7.971e-01   optimal
+   140 -0.766 +0.643   8.034e-01   optimal
+   150 -0.866 +0.500   8.132e-01   optimal
+   160 -0.940 +0.342   6.796e-01   optimal
+   170 -0.985 +0.174   4.088e-01   optimal
+   176 -0.998 +0.070   3.046e-01   optimal
+   178 -0.999 +0.035   2.690e-01   optimal
+   180 -1.000 +0.000   2.308e-01   optimal
+   182 -0.999 -0.035   1.722e-01   optimal
+   184 -0.998 -0.070   1.198e-01   optimal
+   186 -0.995 -0.105   7.237e-02   optimal
+   188 -0.990 -0.139   2.922e-02   optimal
+   190 -0.985 -0.174   4.726e-10   optimal   FEASIBLE
+   192 -0.978 -0.208   1.705e-10   optimal   FEASIBLE
+   200 -0.940 -0.342   3.383e-09   optimal   FEASIBLE
+   210 -0.866 -0.500   6.535e-10   optimal   FEASIBLE
+   220 -0.766 -0.643   2.398e-09   optimal   FEASIBLE
+   230 -0.643 -0.766   7.652e-11   optimal   FEASIBLE
+   240 -0.500 -0.866   1.716e-09   optimal   FEASIBLE
+   250 -0.342 -0.940   3.897e-10   optimal   FEASIBLE
+   260 -0.174 -0.985   1.360e-09   optimal   FEASIBLE
+   262 -0.139 -0.990   1.155e-09   optimal   FEASIBLE
+   264 -0.105 -0.995   2.146e-09   optimal   FEASIBLE
+   266 -0.070 -0.998   1.565e-09   optimal   FEASIBLE
+   268 -0.035 -0.999   4.819e-09   optimal   FEASIBLE
+   270 -0.000 -1.000   2.624e-08   optimal   FEASIBLE
+   272 +0.035 -0.999   3.419e-03   optimal
+   274 +0.070 -0.998   6.851e-03   optimal
+   276 +0.105 -0.995   1.031e-02   optimal
+   278 +0.139 -0.990   1.379e-02   optimal
+   280 +0.174 -0.985   1.732e-02   optimal
+   282 +0.208 -0.978   2.089e-02   optimal
+   284 +0.242 -0.970   2.452e-02   optimal
+   286 +0.276 -0.961   2.823e-02   optimal
+   288 +0.309 -0.951   3.201e-02   optimal
+   290 +0.342 -0.940   3.589e-02   optimal
+   300 +0.500 -0.866   5.720e-02   optimal
+   310 +0.643 -0.766   8.361e-02   optimal
+   320 +0.766 -0.643   1.197e-01   optimal
+   330 +0.866 -0.500   1.761e-01   optimal
+   340 +0.940 -0.342   2.334e-01   optimal
+   350 +0.985 -0.174   3.752e-01   optimal
+feasible angles: [np.float64(190.0), np.float64(192.0), np.float64(200.0), np.float64(210.0), np.float64(220.0), np.float64(230.0), np.float64(240.0), np.float64(250.0), np.float64(260.0), np.float64(262.0), np.float64(264.0), np.float64(266.0), np.float64(268.0), np.float64(270.0)]
+  decomposition at 190 deg (nonzero coefficients):
+     dens:sing:35:s             -0.07629  (even)
+     dens:trip:35:s             0.01659  (odd)
+     dens:sing:35:c             -0.07629  (even)
+     dens:trip:35:c             0.01659  (odd)
+     pair:sing:8v:Re            -15.75717  (even)
+     pair:sing:8v:Im            0.04528  (odd)
+     pair:trip:8v:Re            2.52229  (odd)
+     pair:trip:8v:Im            -1.57435  (even)
+     pair:sing:56v:Re           -0.07112  (even)
+     pair:sing:56v:Im           0.56057  (odd)
+     pair:trip:56v:Re           0.02377  (odd)
+     pair:trip:56v:Im           -0.01557  (even)
+     dens:sing:1                [[-6.39955, -5.56103], [-5.56103, -6.39955]]  (even)
+     dens:sing:28               [[2.30866, 2.26647], [2.26647, 2.30866]]  (odd)
+     dens:trip:1                [[8.0773, 4.55569], [4.55569, 8.0773]]  (odd)
+     dens:trip:28               [[-1.81458, -1.7966], [-1.7966, -1.81458]]  (even)
+  decomposition at 192 deg (nonzero coefficients):
+     dens:sing:35:s             -0.17129  (even)
+     dens:trip:35:s             0.31846  (odd)
+     dens:sing:35:c             -0.17129  (even)
+     dens:trip:35:c             0.31846  (odd)
+     pair:sing:8v:Re            -17.9728  (even)
+     pair:sing:8v:Im            0.12453  (odd)
+     pair:trip:8v:Re            2.04091  (odd)
+     pair:trip:8v:Im            -1.95137  (even)
+     pair:sing:56v:Re           -0.1914  (even)
+     pair:sing:56v:Im           0.75922  (odd)
+     pair:trip:56v:Re           0.03309  (odd)
+     pair:trip:56v:Im           -0.11884  (even)
+     dens:sing:1                [[-4.81418, -3.97375], [-3.97375, -4.81418]]  (even)
+     dens:sing:28               [[1.79649, 1.67632], [1.67632, 1.79649]]  (odd)
+     dens:trip:1                [[6.19995, 4.48447], [4.48447, 6.19995]]  (odd)
+     dens:trip:28               [[-1.63401, -1.58867], [-1.58867, -1.63401]]  (even)
+  decomposition at 200 deg (nonzero coefficients):
+     dens:sing:35:s             -0.6942  (even)
+     dens:trip:35:s             1.00536  (odd)
+     dens:sing:35:c             -0.6942  (even)
+     dens:trip:35:c             1.00536  (odd)
+     pair:sing:8v:Re            -24.45034  (even)
+     pair:sing:8v:Im            0.28481  (odd)
+     pair:trip:8v:Re            0.63667  (odd)
+     pair:trip:8v:Im            -1.40877  (even)
+     pair:sing:56v:Re           -1.25399  (even)
+     pair:sing:56v:Im           0.58905  (odd)
+     pair:trip:56v:Re           0.55516  (odd)
+     pair:trip:56v:Im           -0.48747  (even)
+     dens:sing:1                [[-0.78211, -0.0888], [-0.0888, -0.78211]]  (even)
+     dens:sing:28               [[0.72072, 0.50627], [0.50627, 0.72072]]  (odd)
+     dens:trip:1                [[1.10539, 0.38709], [0.38709, 1.10539]]  (odd)
+     dens:trip:28               [[-1.02885, -0.92617], [-0.92617, -1.02885]]  (even)
+    190 deg: cleaned solution residual: sample 4.73e-10, fresh 20000-sample 4.51e-10
+    192 deg: cleaned solution residual: sample 1.71e-10, fresh 20000-sample 2.03e-10
+    200 deg: cleaned solution residual: sample 3.38e-09, fresh 20000-sample 4.17e-09
+    210 deg: cleaned solution residual: sample 6.53e-10, fresh 20000-sample 7.86e-10
+    220 deg: cleaned solution residual: sample 2.40e-09, fresh 20000-sample 3.41e-09
+    230 deg: cleaned solution residual: sample 7.65e-11, fresh 20000-sample 8.99e-11
+    240 deg: cleaned solution residual: sample 1.72e-09, fresh 20000-sample 1.82e-09
+    250 deg: cleaned solution residual: sample 3.90e-10, fresh 20000-sample 4.96e-10
+    260 deg: cleaned solution residual: sample 1.36e-09, fresh 20000-sample 1.86e-09
+    262 deg: cleaned solution residual: sample 1.16e-09, fresh 20000-sample 1.54e-09
+    264 deg: cleaned solution residual: sample 2.15e-09, fresh 20000-sample 2.89e-09
+    266 deg: cleaned solution residual: sample 1.56e-09, fresh 20000-sample 1.81e-09
+    268 deg: cleaned solution residual: sample 4.82e-09, fresh 20000-sample 6.55e-09
+    270 deg: cleaned solution residual: sample 2.62e-08, fresh 20000-sample 3.93e-08
+saved cleaned solutions for ['th190', 'th200', 'th230', 'th250', 'th270']
+total 4s, peak RSS 267 MB

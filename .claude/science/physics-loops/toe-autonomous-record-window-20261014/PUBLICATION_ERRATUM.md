@@ -1,0 +1,5 @@
+# Publication erratum for the frozen record-window packet
+
+The frozen author README.md at SHA256 ad8546bd037c95558e2137c562bf3bad862825869247804a8711b99624249f00, line13, names RUN_INDEX.json. The actual file is ACTUAL_EXECUTION_INDEX.json, SHA256876660cbc2aef6e3344695ba5483faa52c554652583fb05ed6c97118116de702. A future publication rendering must use the actual identifier and include this erratum or the exact reviewer diff. The original frozen README and all other evidence stay unchanged. This changes navigation only; the mathematical body and scientific calculations require no repair or rerun.
+
+The ideal stored label has time-independent populations. The actual implemented pointer is uniformly close under the stated error budget; exact time independence is not asserted for program tails or disturbances. Both the global coherent record and its reduced two-block channel retain their explicitly different scopes. This clarifies export language without changing a theorem premise or source byte.

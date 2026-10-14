@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/autonomous_finite_record_window_identity_2026_10_14.py
+runner_sha256: 64af639168bbd2230f91a2142894385b862b8c8c429a34684da75bf7594a7141
+input_fingerprint_sha256: 8f3fce18698d2e6af74ca00bf037b37eef027d41589b5e1480fe3cdc88b91528
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+{"attribution_reads": [], "claim_id": "autonomous_finite_record_window_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": ["docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no synthesis or trace estimate was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

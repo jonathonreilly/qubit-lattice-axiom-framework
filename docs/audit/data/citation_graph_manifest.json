@@ -1,6 +1,6 @@
 {
- "edge_count": 16049,
- "node_count": 7112,
+ "edge_count": 16052,
+ "node_count": 7113,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2104,6 +2104,10 @@
   },
   "autonomous_finite_clock_for_the_original_reduced_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "afd5814d8cef",
+   "out_degree": 3
+  },
+  "autonomous_finite_record_window_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "47c9ce544854",
    "out_degree": 3
   },
   "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30": {

@@ -1,0 +1,18 @@
+(B1) critical point (m=0): Q(0) and block-zone shares; Richardson in h = 1/N (error ~ c1 h + c2 h^2)
+  N=128: Q=0.0535089405  I(0)=0.2516444943  Q_b2=2.396973e-02  Q_b4=1.130196e-02  Q_b8=5.227263e-03  Q_b16=2.223197e-03  Q_b32=7.272835e-04
+  N=256: Q=0.0538974931  I(0)=0.2521877732  Q_b2=2.435804e-02  Q_b4=1.168987e-02  Q_b8=5.614472e-03  Q_b16=2.609111e-03  Q_b32=1.111061e-03
+  N=512: Q=0.0540917466  I(0)=0.2524593942  Q_b2=2.455223e-02  Q_b4=1.188396e-02  Q_b8=5.808387e-03  Q_b16=2.802684e-03  Q_b32=1.303991e-03
+  extrapolated: Q(0) = 0.05428598   I(0) = 0.25273100  (Watson W = I(0)/... comparator: <1/E> = 0.252731 RECALLED)
+  block-zone share of Q (fine modes carry the rest):  b, Q_block (extrap), share, b*Q_block
+   b= 2: 2.474645e-02   share=4.5585e-01   b*Q_block=0.049493
+   b= 4: 1.207815e-02   share=2.2249e-01   b*Q_block=0.048313
+   b= 8: 6.002509e-03   share=1.1057e-01   b*Q_block=0.048020
+   b=16: 2.996668e-03   share=5.5201e-02   b*Q_block=0.047947
+   b=32: 1.497615e-03   share=2.7588e-02   b*Q_block=0.047924
+  delta r_c(t) = -(lam/2) Q(0) t^2 = -0.027143 lam t^2 (lattice units a=1, J=1)
+
+(B2) off-critical start m0 = 1/xi0: delta m^2 at fixed bare r = (lam/2) Q(m0) t^2;  N=256 and 512
+   xi0=    3.3: Q(m0) N256 0.04220746  N512 0.04220746   (Q(0)-Q(m0))/m0 = 0.04026   relative shift dm^2/(m0^2 t^2) = (lam/2)*4.6897e-01
+   xi0=   10.0: Q(m0) N256 0.05026849  N512 0.05026849   (Q(0)-Q(m0))/m0 = 0.04017   relative shift dm^2/(m0^2 t^2) = (lam/2)*5.0268e+00
+   xi0=   33.3: Q(m0) N256 0.05308408  N512 0.05308812   (Q(0)-Q(m0))/m0 = 0.03993   relative shift dm^2/(m0^2 t^2) = (lam/2)*5.8987e+01
+   xi0=  100.0: Q(m0) N256 0.05377137  N512 0.05387525   (Q(0)-Q(m0))/m0 = 0.04107   relative shift dm^2/(m0^2 t^2) = (lam/2)*5.3875e+02

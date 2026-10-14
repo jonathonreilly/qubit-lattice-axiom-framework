@@ -1,0 +1,19 @@
+[1] Ising exact constants and independent dense transfer matrix
+Kc=0.440686793509772  2sqrt(2)Kc^2=0.549294265424
+L=8 K=(0.30,0.25) top-log error=8.882e-16 gap error=6.661e-16
+L=8 K=(0.50,0.42) top-log error=0.000e+00 gap error=4.718e-16
+[2] Ising correlation-length/metric leak
+xi=(106.441416,93.948394) h45/haxis-1=2.099581143e-06 coefficient=0.020996
+[3] phi4 one-loop coefficient by analytic qz integration
+Q N=200,400,800: 0.053510013 0.053897538 0.054091647
+linear extrapolation Q=0.05428576 I0=0.25273070
+continuum block C=0.04792270; share coefficient C/Q=0.88279
+[4] graphene/Hubbard
+direct BZ extrapolation 1/Uc=0.44822047 Uc=2.231045
+u=0.249 triangle gap=0.000000
+u=0.260 triangle gap=0.080000
+[5] Ising free-energy curvature
+h=0.020 d2logZ=0.10630843 d2(beta*f)=-0.10630843
+h=0.010 d2logZ=0.10617592 d2(beta*f)=-0.10617592
+h=0.005 d2logZ=0.10613654 d2(beta*f)=-0.10613654
+[6] large-N O(N) response and composite arithmetic

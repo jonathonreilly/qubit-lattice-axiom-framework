@@ -9733,3 +9733,11 @@ Shared setting for all three:
     - Θ alone does not forbid twisted taste masses (that needs P_stag or the shift).
     - The strong-coupling values are asymptotic only.
     - Spontaneous shift breaking remains an escape from "onsite cannot select the twins".
+
+- **E1 referee record** (codex gpt-5.6-sol at xhigh; the verdict was written 2026-10-13 ~22:01Z but recorded late, on 2026-10-14 ~20:55Z): **CONFIRMED WITH CORRECTIONS. MECHANISM-SPLIT is met** for these toys and response laws; MECHANISM-FULL is excluded.
+  - All eight runners reproduce byte-for-byte.
+  - Ising: K_c, m = 0.54929 t², and the 0.020996 (a/ξ)² leak are confirmed. The critical r⁻² test uses the free-fermion kernel, not the spin correlator.
+  - The tuned-gap coefficient is only asymptotically independent of ξ₀. The fine-scale dominance (0.88279/b) is confirmed independently.
+  - Graphene, mean-field Hubbard (U_c = 2.231045 t) and XY are confirmed within their phases.
+  - "Free-energy maximum" applies only to the spin/electronic contribution along the chosen path.
+  - **The composite-Higgs margin 5.6e11 holds only under an extra coefficient-transfer ansatz.** The toy's own log response gives about 5.9e7, still large but model-dependent.

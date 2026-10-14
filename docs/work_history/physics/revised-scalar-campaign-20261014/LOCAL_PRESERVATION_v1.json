@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-14T17:37:21.322641+00:00",
+  "archive": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/final_preservation_v1/primary_research_v1.tar.gz",
+  "archive_sha256": "103e3004e613829dec2c5095dd2eba99f895f3896147e2b206e79185995919b5",
+  "archive_bytes": 111750404,
+  "artifact_count": 7321,
+  "source_bytes": 170874325,
+  "all_member_hashes_sizes_safety_and_original_source_bytes_verified_before_size_gate": true,
+  "publication_status": "Local preservation only; not a PR artifact. Canonical milestone archives remain their separately checked published evidence. Final report will link this localarchive and explicit unfinished extension inventory.",
+  "repair": "Preserved original size-gate failure and unchanged111750404bytearchive; moved local generated archive out of publication directory. No originalresearchfilealtered.",
+  "not_new_science": true,
+  "not_completion_record": true
+}

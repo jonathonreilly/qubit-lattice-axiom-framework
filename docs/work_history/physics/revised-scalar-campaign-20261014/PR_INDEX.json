@@ -1,0 +1,1510 @@
+{
+  "campaign_id": "revised-scalar-derivation-24h-20261013",
+  "checked_at": "2026-10-14T18:11:30.741533+00:00",
+  "reconciled_at": "2026-10-14T18:12:34.439686+00:00",
+  "count": 23,
+  "state_counts": {
+    "CLOSED": 4,
+    "OPEN": 19
+  },
+  "pull_requests": [
+    {
+      "number": 9524,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9524",
+      "title": "Derive a future trapping region for the revised scalar theory",
+      "state": "CLOSED",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": "2026-10-14T17:56:54Z",
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-derivation-24h-20261013",
+      "headRefOid": "8c4da47fb2f2f808379ebd1d98d578154c7781c6",
+      "baseRefName": "main",
+      "baseRefOid": "583c699e859b64ff01c8bc92d1c04bdfe9994509",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 241,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt",
+          "additions": 57,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_future_confinement_check.txt",
+          "additions": 132,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_future_confinement_check.py",
+          "additions": 137,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "583c699e859b64ff01c8bc92d1c04bdfe9994509",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt",
+        "docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_future_confinement_check.txt",
+        "scripts/exponential_scalar_future_confinement_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "main",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9525,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9525",
+      "title": "Derive local scalar coupling and its suppression energy cost",
+      "state": "CLOSED",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": "2026-10-14T17:57:04Z",
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-local-response-20261013",
+      "headRefOid": "12028b64d8a4bc9716d2803d1a563fe90bd268e3",
+      "baseRefName": "main",
+      "baseRefOid": "a3ccb945b1543e31361f1c6fefd2cc7ab7d31d5f",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 241,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 262,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt",
+          "additions": 57,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/README.txt",
+          "additions": 73,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/evidence_v2.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_future_confinement_check.txt",
+          "additions": 132,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_local_response_check.txt",
+          "additions": 1318,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_future_confinement_check.py",
+          "additions": 137,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_local_response_check.py",
+          "additions": 180,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "8c4da47fb2f2f808379ebd1d98d578154c7781c6",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "docs/work_history/physics/revised-scalar-local-response-20261013/README.txt",
+        "docs/work_history/physics/revised-scalar-local-response-20261013/evidence_v2.tar.gz",
+        "logs/runner-cache/exponential_scalar_local_response_check.txt",
+        "scripts/exponential_scalar_local_response_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-derivation-24h-20261013",
+      "publication_base_changed": true,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9528,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9528",
+      "title": "Derive curved scalar response and its finite-energy boundary",
+      "state": "CLOSED",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": "2026-10-14T17:57:15Z",
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-curved-response-20261014",
+      "headRefOid": "be7f38e710d86080687f4f91e2a936529bbbfa5f",
+      "baseRefName": "main",
+      "baseRefOid": "a3ccb945b1543e31361f1c6fefd2cc7ab7d31d5f",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CURVED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 376,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 241,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 262,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curved-response-20261014/README.txt",
+          "additions": 62,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curved-response-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt",
+          "additions": 57,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/README.txt",
+          "additions": 73,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/evidence_v2.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_curved_response_check.txt",
+          "additions": 1301,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_future_confinement_check.txt",
+          "additions": 132,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_local_response_check.txt",
+          "additions": 1318,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_curved_response_check.py",
+          "additions": 370,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_future_confinement_check.py",
+          "additions": 137,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_local_response_check.py",
+          "additions": 180,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "12028b64d8a4bc9716d2803d1a563fe90bd268e3",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_CURVED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-curved-response-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-curved-response-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_curved_response_check.txt",
+        "scripts/exponential_scalar_curved_response_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-local-response-20261013",
+      "publication_base_changed": true,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9530,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9530",
+      "title": "Derive radiation saddle and limits of scalar state selection",
+      "state": "CLOSED",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": "2026-10-14T17:58:29Z",
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-radiation-selection-20261014",
+      "headRefOid": "57314d55ab6fa8e6f5a87036a4c142deb73f61bd",
+      "baseRefName": "main",
+      "baseRefOid": "a3ccb945b1543e31361f1c6fefd2cc7ab7d31d5f",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CURVED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 376,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 241,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 262,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_RADIATION_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 308,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curved-response-20261014/README.txt",
+          "additions": 62,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curved-response-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt",
+          "additions": 57,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/README.txt",
+          "additions": 73,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/evidence_v2.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-radiation-selection-20261014/README.txt",
+          "additions": 72,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-radiation-selection-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_curved_response_check.txt",
+          "additions": 1301,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_future_confinement_check.txt",
+          "additions": 132,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_local_response_check.txt",
+          "additions": 1318,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_radiation_selection_check.txt",
+          "additions": 879,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_curved_response_check.py",
+          "additions": 370,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_future_confinement_check.py",
+          "additions": 137,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_local_response_check.py",
+          "additions": 180,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_radiation_selection_check.py",
+          "additions": 247,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "be7f38e710d86080687f4f91e2a936529bbbfa5f",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_RADIATION_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-radiation-selection-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-radiation-selection-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_radiation_selection_check.txt",
+        "scripts/exponential_scalar_radiation_selection_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-curved-response-20261014",
+      "publication_base_changed": true,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9532,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9532",
+      "title": "Derive stable alternative radiation branch and conditional expansion",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-alternative-radiation-20261014",
+      "headRefOid": "494fd01a2b2873db6795d48f34f42d5988a02e85",
+      "baseRefName": "main",
+      "baseRefOid": "a3ccb945b1543e31361f1c6fefd2cc7ab7d31d5f",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_ALTERNATIVE_RADIATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 225,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CURVED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 376,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FUTURE_CONFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 241,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_LOCAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+          "additions": 262,
+          "deletions": 0
+        },
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_RADIATION_SELECTION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 308,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-alternative-radiation-20261014/README.txt",
+          "additions": 76,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-alternative-radiation-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curved-response-20261014/README.txt",
+          "additions": 62,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curved-response-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/README.txt",
+          "additions": 57,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-future-confinement-20261013/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/README.txt",
+          "additions": 73,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-local-response-20261013/evidence_v2.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-radiation-selection-20261014/README.txt",
+          "additions": 72,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-radiation-selection-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_alternative_radiation_check.txt",
+          "additions": 598,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_curved_response_check.txt",
+          "additions": 1301,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_future_confinement_check.txt",
+          "additions": 132,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_local_response_check.txt",
+          "additions": 1318,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_radiation_selection_check.txt",
+          "additions": 879,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_alternative_radiation_check.py",
+          "additions": 220,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_curved_response_check.py",
+          "additions": 370,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_future_confinement_check.py",
+          "additions": 137,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_local_response_check.py",
+          "additions": 180,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_radiation_selection_check.py",
+          "additions": 247,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "57314d55ab6fa8e6f5a87036a4c142deb73f61bd",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_ALTERNATIVE_RADIATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-alternative-radiation-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-alternative-radiation-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_alternative_radiation_check.txt",
+        "scripts/exponential_scalar_alternative_radiation_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-radiation-selection-20261014",
+      "publication_base_changed": true,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9535,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9535",
+      "title": "Derive finite scalar past history and its curvature boundary",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-finite-history-20261014",
+      "headRefOid": "3fff9887cc92ca82991a85622153f9afaea60d12",
+      "baseRefName": "codex/revised-scalar-alternative-radiation-20261014",
+      "baseRefOid": "494fd01a2b2873db6795d48f34f42d5988a02e85",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FINITE_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 207,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-finite-history-20261014/README.txt",
+          "additions": 66,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-finite-history-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_finite_history_check.txt",
+          "additions": 910,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_finite_history_check.py",
+          "additions": 235,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "494fd01a2b2873db6795d48f34f42d5988a02e85",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_FINITE_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-finite-history-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-finite-history-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_finite_history_check.txt",
+        "scripts/exponential_scalar_finite_history_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-alternative-radiation-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9538,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9538",
+      "title": "Derive a finite-mode scalar inverse without prescribed wave preparation",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-finite-mode-inverse-20261014",
+      "headRefOid": "767981764f3852c28866f20be3aba5bce0293719",
+      "baseRefName": "codex/revised-scalar-finite-history-20261014",
+      "baseRefOid": "3fff9887cc92ca82991a85622153f9afaea60d12",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 177,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-finite-mode-inverse-20261014/README.txt",
+          "additions": 50,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-finite-mode-inverse-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_finite_mode_inverse_check.txt",
+          "additions": 1751,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_finite_mode_inverse_check.py",
+          "additions": 174,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "3fff9887cc92ca82991a85622153f9afaea60d12",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_FINITE_MODE_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-finite-mode-inverse-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-finite-mode-inverse-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_finite_mode_inverse_check.txt",
+        "scripts/exponential_scalar_finite_mode_inverse_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-finite-history-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9539,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9539",
+      "title": "Bound scalar past duration from positive radiation without selected initial data",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-radiation-past-bound-20261014",
+      "headRefOid": "2aa333ef7a28b5f1e3ecfc6b0e8c855e3f51edbe",
+      "baseRefName": "codex/revised-scalar-finite-mode-inverse-20261014",
+      "baseRefOid": "767981764f3852c28866f20be3aba5bce0293719",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_RADIATION_PAST_BOUND_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 165,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-radiation-past-bound-20261014/README.txt",
+          "additions": 51,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-radiation-past-bound-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_radiation_past_bound_check.txt",
+          "additions": 676,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_radiation_past_bound_check.py",
+          "additions": 81,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "767981764f3852c28866f20be3aba5bce0293719",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_RADIATION_PAST_BOUND_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-radiation-past-bound-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-radiation-past-bound-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_radiation_past_bound_check.txt",
+        "scripts/exponential_scalar_radiation_past_bound_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-finite-mode-inverse-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9541,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9541",
+      "title": "Derive regular curved scalar histories and their radiation limits",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-curvature-loophole-20261014",
+      "headRefOid": "a10cce09865a95be7aca361d20da038998be41e3",
+      "baseRefName": "codex/revised-scalar-radiation-past-bound-20261014",
+      "baseRefOid": "2aa333ef7a28b5f1e3ecfc6b0e8c855e3f51edbe",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CURVATURE_LOOPHOLE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 169,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curvature-loophole-20261014/README.txt",
+          "additions": 51,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-curvature-loophole-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_curvature_loophole_check.txt",
+          "additions": 459,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_curvature_loophole_check.py",
+          "additions": 108,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "2aa333ef7a28b5f1e3ecfc6b0e8c855e3f51edbe",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_CURVATURE_LOOPHOLE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-curvature-loophole-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-curvature-loophole-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_curvature_loophole_check.txt",
+        "scripts/exponential_scalar_curvature_loophole_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-radiation-past-bound-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9544,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9544",
+      "title": "Derive physical past obstructions and measured-gravity limits",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-physical-past-20261014",
+      "headRefOid": "0bdc17fe91ba5d87912d90f5d0550a107080a19f",
+      "baseRefName": "codex/revised-scalar-curvature-loophole-20261014",
+      "baseRefOid": "a10cce09865a95be7aca361d20da038998be41e3",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_PHYSICAL_PAST_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 452,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-physical-past-20261014/README.txt",
+          "additions": 58,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-physical-past-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_physical_past_check.txt",
+          "additions": 824,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_physical_past_check.py",
+          "additions": 209,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "a10cce09865a95be7aca361d20da038998be41e3",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_PHYSICAL_PAST_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-physical-past-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-physical-past-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_physical_past_check.txt",
+        "scripts/exponential_scalar_physical_past_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-curvature-loophole-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9547,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9547",
+      "title": "Derive joint thermal entropy bounds for revised scalar bounces",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-thermal-bounce-20261014",
+      "headRefOid": "baa3ec691a065d82eef86dcce913afeb1c8ac329",
+      "baseRefName": "codex/revised-scalar-physical-past-20261014",
+      "baseRefOid": "0bdc17fe91ba5d87912d90f5d0550a107080a19f",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_THERMAL_BOUNCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 517,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-thermal-bounce-20261014/README.txt",
+          "additions": 73,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-thermal-bounce-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_thermal_bounce_check.txt",
+          "additions": 4293,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_thermal_bounce_check.py",
+          "additions": 328,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "0bdc17fe91ba5d87912d90f5d0550a107080a19f",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_THERMAL_BOUNCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-thermal-bounce-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-thermal-bounce-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_thermal_bounce_check.txt",
+        "scripts/exponential_scalar_thermal_bounce_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-physical-past-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9548,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9548",
+      "title": "Derive a physical-clock bound without a global conformal cap",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-physical-clock-20261014",
+      "headRefOid": "c1f1a167e26f6d2da9e6c144958f82fcba02f29a",
+      "baseRefName": "codex/revised-scalar-thermal-bounce-20261014",
+      "baseRefOid": "baa3ec691a065d82eef86dcce913afeb1c8ac329",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_PHYSICAL_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 232,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-physical-clock-20261014/README.txt",
+          "additions": 51,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-physical-clock-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_physical_clock_check.txt",
+          "additions": 437,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_physical_clock_check.py",
+          "additions": 147,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "baa3ec691a065d82eef86dcce913afeb1c8ac329",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_PHYSICAL_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-physical-clock-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-physical-clock-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_physical_clock_check.txt",
+        "scripts/exponential_scalar_physical_clock_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-thermal-bounce-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9550,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9550",
+      "title": "Derive finite-body calibration and stationary scalar-density stability",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-environment-bridge-20261014",
+      "headRefOid": "35a1f46c1429e751b763b8da2a0e1d1d711df8e7",
+      "baseRefName": "codex/revised-scalar-physical-clock-20261014",
+      "baseRefOid": "c1f1a167e26f6d2da9e6c144958f82fcba02f29a",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_ENVIRONMENT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 306,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-environment-bridge-20261014/README.txt",
+          "additions": 52,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-environment-bridge-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_environment_bridge_check.txt",
+          "additions": 3259,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_environment_bridge_check.py",
+          "additions": 264,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "c1f1a167e26f6d2da9e6c144958f82fcba02f29a",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_ENVIRONMENT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-environment-bridge-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-environment-bridge-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_environment_bridge_check.txt",
+        "scripts/exponential_scalar_environment_bridge_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-physical-clock-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9551,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9551",
+      "title": "Derive scalar action reconstruction and scale limits",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-action-scale-20261014",
+      "headRefOid": "3da5629f33b542cf2e6b3fa59a7e8c7a5710a412",
+      "baseRefName": "codex/revised-scalar-environment-bridge-20261014",
+      "baseRefOid": "35a1f46c1429e751b763b8da2a0e1d1d711df8e7",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 448,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-action-scale-20261014/README.txt",
+          "additions": 56,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-action-scale-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_action_scale_check.txt",
+          "additions": 700,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_action_scale_check.py",
+          "additions": 202,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "35a1f46c1429e751b763b8da2a0e1d1d711df8e7",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_ACTION_SCALE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-action-scale-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-action-scale-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_action_scale_check.txt",
+        "scripts/exponential_scalar_action_scale_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-environment-bridge-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9553,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9553",
+      "title": "Reconstruct scalar action from density response with explicit source limits",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-density-inverse-20261014",
+      "headRefOid": "5b7af9d5050e2656ed681a94fa15128ff2f4a124",
+      "baseRefName": "codex/revised-scalar-action-scale-20261014",
+      "baseRefOid": "3da5629f33b542cf2e6b3fa59a7e8c7a5710a412",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 229,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-density-inverse-20261014/README.txt",
+          "additions": 56,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-density-inverse-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_density_inverse_check.txt",
+          "additions": 1760,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_density_inverse_check.py",
+          "additions": 419,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "3da5629f33b542cf2e6b3fa59a7e8c7a5710a412",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_DENSITY_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-density-inverse-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-density-inverse-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_density_inverse_check.txt",
+        "scripts/exponential_scalar_density_inverse_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-action-scale-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9554,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9554",
+      "title": "Derive finite covariance ambiguity and bounded homogeneous state witnesses",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-state-covariance-20261014",
+      "headRefOid": "98ca0b65bbbb301d2891ddb24ddbdb912341bff4",
+      "baseRefName": "codex/revised-scalar-density-inverse-20261014",
+      "baseRefOid": "5b7af9d5050e2656ed681a94fa15128ff2f4a124",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 245,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-state-covariance-20261014/README.txt",
+          "additions": 57,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-state-covariance-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_state_covariance_check.txt",
+          "additions": 580,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_state_covariance_check.py",
+          "additions": 100,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "5b7af9d5050e2656ed681a94fa15128ff2f4a124",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_STATE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-state-covariance-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-state-covariance-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_state_covariance_check.txt",
+        "scripts/exponential_scalar_state_covariance_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-density-inverse-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9557,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9557",
+      "title": "[physics-loop] revised-scalar dynamical inverse \u2014 conditional-support",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-dynamical-inverse-20261014",
+      "headRefOid": "36f8839d54453690d20e2891e6cd4b4f3307c097",
+      "baseRefName": "codex/revised-scalar-state-covariance-20261014",
+      "baseRefOid": "98ca0b65bbbb301d2891ddb24ddbdb912341bff4",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 314,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-dynamical-inverse-20261014/README.txt",
+          "additions": 51,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-dynamical-inverse-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_dynamical_inverse_check.txt",
+          "additions": 1945,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_dynamical_inverse_check.py",
+          "additions": 363,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "98ca0b65bbbb301d2891ddb24ddbdb912341bff4",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_DYNAMICAL_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-dynamical-inverse-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-dynamical-inverse-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_dynamical_inverse_check.txt",
+        "scripts/exponential_scalar_dynamical_inverse_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-state-covariance-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9558,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9558",
+      "title": "Derive scalar calibration response and negative-branch bounds",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-calibration-branch-20261014",
+      "headRefOid": "125c244fcfa5aeb50bedcf2d6edf5eb3a7825ab2",
+      "baseRefName": "codex/revised-scalar-dynamical-inverse-20261014",
+      "baseRefOid": "36f8839d54453690d20e2891e6cd4b4f3307c097",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CALIBRATION_BRANCH_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 183,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-calibration-branch-20261014/README.txt",
+          "additions": 54,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-calibration-branch-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_calibration_branch_check.txt",
+          "additions": 1231,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_calibration_branch_check.py",
+          "additions": 211,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "36f8839d54453690d20e2891e6cd4b4f3307c097",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_CALIBRATION_BRANCH_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-calibration-branch-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-calibration-branch-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_calibration_branch_check.txt",
+        "scripts/exponential_scalar_calibration_branch_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-dynamical-inverse-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9560,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9560",
+      "title": "Derive finite-body scalar force and uniqueness bounds",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-finite-body-20261014",
+      "headRefOid": "225f42050e7b66e50c86d9bbb11c63383b5ffe37",
+      "baseRefName": "codex/revised-scalar-calibration-branch-20261014",
+      "baseRefOid": "125c244fcfa5aeb50bedcf2d6edf5eb3a7825ab2",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 445,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-finite-body-20261014/README.txt",
+          "additions": 60,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-finite-body-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_finite_body_check.txt",
+          "additions": 4132,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_finite_body_check.py",
+          "additions": 437,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "125c244fcfa5aeb50bedcf2d6edf5eb3a7825ab2",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_FINITE_BODY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-finite-body-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-finite-body-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_finite_body_check.txt",
+        "scripts/exponential_scalar_finite_body_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-calibration-branch-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9561,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9561",
+      "title": "Derive canonical scalar curvature and finite-body stability envelope",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-canonical-envelope-20261014",
+      "headRefOid": "607aa2ce4d42f05e935a59e441cedeebcb32eb1e",
+      "baseRefName": "codex/revised-scalar-finite-body-20261014",
+      "baseRefOid": "225f42050e7b66e50c86d9bbb11c63383b5ffe37",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CANONICAL_ENVELOPE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 157,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-canonical-envelope-20261014/README.txt",
+          "additions": 65,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-canonical-envelope-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_canonical_envelope_check.txt",
+          "additions": 4392,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_canonical_envelope_check.py",
+          "additions": 450,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "225f42050e7b66e50c86d9bbb11c63383b5ffe37",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_CANONICAL_ENVELOPE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-canonical-envelope-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-canonical-envelope-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_canonical_envelope_check.txt",
+        "scripts/exponential_scalar_canonical_envelope_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-finite-body-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9563,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9563",
+      "title": "Derive complete-body scalar charge and finite-window source bounds",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-composite-charge-20261014",
+      "headRefOid": "e490b14dba22afec9a71c042202cca0e3840b35a",
+      "baseRefName": "codex/revised-scalar-canonical-envelope-20261014",
+      "baseRefOid": "607aa2ce4d42f05e935a59e441cedeebcb32eb1e",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_COMPOSITE_CHARGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 349,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-composite-charge-20261014/README.txt",
+          "additions": 56,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-composite-charge-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_composite_charge_check.txt",
+          "additions": 1827,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_composite_charge_check.py",
+          "additions": 218,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "607aa2ce4d42f05e935a59e441cedeebcb32eb1e",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_COMPOSITE_CHARGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-composite-charge-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-composite-charge-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_composite_charge_check.txt",
+        "scripts/exponential_scalar_composite_charge_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-canonical-envelope-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9565,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9565",
+      "title": "Derive the force-calibration turning point and inverse limits",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-calibrated-gravity-turning-20261014",
+      "headRefOid": "9f9089ddbc35fc2733f7c14540e8034628594a65",
+      "baseRefName": "codex/revised-scalar-composite-charge-20261014",
+      "baseRefOid": "e490b14dba22afec9a71c042202cca0e3840b35a",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_CALIBRATED_GRAVITY_TURNING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 184,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-calibrated-gravity-turning-20261014/README.txt",
+          "additions": 48,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-calibrated-gravity-turning-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_calibrated_gravity_turning_check.txt",
+          "additions": 1006,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_calibrated_gravity_turning_check.py",
+          "additions": 148,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "e490b14dba22afec9a71c042202cca0e3840b35a",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_CALIBRATED_GRAVITY_TURNING_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-calibrated-gravity-turning-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-calibrated-gravity-turning-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_calibrated_gravity_turning_check.txt",
+        "scripts/exponential_scalar_calibrated_gravity_turning_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-composite-charge-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    },
+    {
+      "number": 9566,
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9566",
+      "title": "Derive finite-error certificates for paired gravity readouts",
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "closedAt": null,
+      "isDraft": false,
+      "headRefName": "codex/revised-scalar-paired-gravity-certificate-20261014",
+      "headRefOid": "7144cf367de7dba96632280088c07fac060216de",
+      "baseRefName": "codex/revised-scalar-calibrated-gravity-turning-20261014",
+      "baseRefOid": "9f9089ddbc35fc2733f7c14540e8034628594a65",
+      "files": [
+        {
+          "path": "docs/EXPONENTIAL_SCALAR_PAIRED_GRAVITY_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "additions": 154,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-paired-gravity-certificate-20261014/README.txt",
+          "additions": 59,
+          "deletions": 0
+        },
+        {
+          "path": "docs/work_history/physics/revised-scalar-paired-gravity-certificate-20261014/evidence_v1.tar.gz",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "path": "logs/runner-cache/exponential_scalar_paired_gravity_certificate_check.txt",
+          "additions": 25,
+          "deletions": 0
+        },
+        {
+          "path": "scripts/exponential_scalar_paired_gravity_certificate_check.py",
+          "additions": 184,
+          "deletions": 0
+        }
+      ],
+      "original_delivery_base": "9f9089ddbc35fc2733f7c14540e8034628594a65",
+      "original_delivery_paths": [
+        "docs/EXPONENTIAL_SCALAR_PAIRED_GRAVITY_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "docs/work_history/physics/revised-scalar-paired-gravity-certificate-20261014/README.txt",
+        "docs/work_history/physics/revised-scalar-paired-gravity-certificate-20261014/evidence_v1.tar.gz",
+        "logs/runner-cache/exponential_scalar_paired_gravity_certificate_check.txt",
+        "scripts/exponential_scalar_paired_gravity_certificate_check.py"
+      ],
+      "original_head_matches": true,
+      "attached_to_chat": true,
+      "recorded_publication_base": "codex/revised-scalar-calibrated-gravity-turning-20261014",
+      "publication_base_changed": false,
+      "verified_at": "2026-10-14T18:11:30.741533+00:00"
+    }
+  ],
+  "source_evidence": "/Users/jonBridger/.codex/campaigns/revised-scalar-derivation-24h-20261013/FINAL_PR_CHECK_v2_20261014_181130.json",
+  "scope": "Original five-path delivery bases follow the recorded ordered stack from original main583c699e. Immediate commit parents are not assumed to be full milestone bases. All original heads remain exact. Current PR closure/retargeting is reported, not undone. No combined scientific acceptance or formal audit.",
+  "failures_preserved": [
+    "First current-state check exposed four closures and changed bases.",
+    "v2 incorrectly assumed immediate HEAD parent equals original milestone base; first milestone has a later README commit. Original failed code/output and actual read-only API response retained."
+  ]
+}

@@ -1,216 +1,99 @@
 # Lattice-Qubit-Admissibility-Record Framework
 
-This repository contains the public scientific package for a four-axiom
-discrete-physics program:
+This repository is the public working record of a four-axiom discrete-physics
+program. A note that has landed on `main` is a working record. Ratification
+is a separate step. The generated status snapshot, not this README, is the
+authority for audit counts.
 
-1. **Lattice** — physical sites are the points of the cubic lattice `Z^3`,
-   with nearest-neighbor adjacency, standard translations, and proper cubic
-   rotations about each site. No site is privileged.
-2. **Qubit** — each site has a domain of local possibilities whose full
-   one-site algebraic presentation is `M_2(C)` (equivalently, real
-   `Cl(3,0)`). No possibility is privileged.
-3. **Admissibility** — one fixed nearest-neighbor rule, covariant under the
-   lattice motions, determines the available possibilities at each site;
-   availability varies with the nearest-neighbor conditions.
-4. **Record** — records form. When present, a record locks exactly one
-   admissible local possibility; a site never carries more than one record;
-   records are permanent. Only records are readable. A readout value is
-   determined by record content alone. A site with no record cannot be
-   read.
-
-The canonical axiom memo is
+The four axioms are **Lattice**, **Qubit**, **Admissibility**, and **Record**.
+Their statements live only in
 [`docs/MINIMAL_AXIOMS_2026-06-29.md`](docs/MINIMAL_AXIOMS_2026-06-29.md).
-It is edited in place only under explicit owner approvals, each recorded in
+That memo is edited in place under explicit owner approvals, recorded in
 [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](docs/audit/AXIOM_MINIMALITY_POLICY.md)
 section 6. The earlier three-axiom base (Lattice, Quantum, Record), the
-`Quantum` axiom name, and the still older `A1`/`A2`/`A3` numbering are
-historical; new repo surfaces use the four names above unless quoting an
-older document.
+`Quantum` axiom name, and the older `A1`/`A2`/`A3` numbering are historical.
 
-Beyond the axioms, the complete foundation surface is deliberately small:
+## What is supplied
 
-- **Approved primitives (3):** the scale reference `a^{-1}` (units only),
-  kinetic isotropy `c_t = c_s` (regulator graining), and the realized-state
-  interface (a slot for one law-admissible realized state, never a state
-  selection). Registered in
-  [`docs/audit/data/axiom_premise_nodes.json`](docs/audit/data/axiom_premise_nodes.json).
-- **Open derivation obligations (3):** the AC occupancy statistical grain,
-  R-eta h-class/h-unit readout, and theta's independent quark-determinant
-  cross-sector readout. They carry zero premise weight and are tracked
-  in [`docs/audit/data/derivation_obligations.json`](docs/audit/data/derivation_obligations.json).
-  Superseded admission-era decisions are non-authoritative provenance in
-  [`docs/audit/data/premise_decision_history.json`](docs/audit/data/premise_decision_history.json).
-  There is no admission registry or third supplied-premise class.
-- **Scope condition (not a premise):** the past-hypothesis low-entropy
-  magnitude; results that need it are explicit conditionals.
+The supplied foundation is the axiom set plus three approved primitives:
 
-Everything else — probability and Born weights, measurement and readout
-contexts, record-formation rules (which admissible possibility a new record
-locks, at which site, with what weight, at what rate), dynamics and time
-metric, kinetic branch selection, source/action structure,
-physical-observable identification — is downstream content that must be
-derived through retained-grade work or added through explicit axiom/approved-
-primitive review before it can bear load. That discipline is what the audit
-ledger enforces.
+- the scale reference `a^{-1}` (units only),
+- kinetic isotropy `c_t = c_s` (regulator graining),
+- the realized-state interface (a slot for one law-admissible realized state;
+  it selects no state).
 
-## Read First
+They are registered in
+[`docs/audit/data/axiom_premise_nodes.json`](docs/audit/data/axiom_premise_nodes.json).
 
-Use these entrypoints in order:
+Three open derivation obligations carry zero premise weight. They are the AC
+occupancy statistical grain, the R-eta h-class/h-unit readout, and theta's
+independent quark-determinant cross-sector readout, tracked in
+[`docs/audit/data/derivation_obligations.json`](docs/audit/data/derivation_obligations.json).
+Superseded admission-era decisions are provenance in
+[`docs/audit/data/premise_decision_history.json`](docs/audit/data/premise_decision_history.json).
 
-1. [State of the theory (plain language)](docs/repo/STATE_OF_THE_THEORY_2026-07-16.md)
-   — what is audit-ratified, what has landed but still awaits audit, what is
-   open, and the orientation map
-2. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md)
-3. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
-4. [Retained backbone — every audit-ratified row](docs/repo/RETAINED_BACKBONE.md)
-5. [Key science — the front-of-house index](docs/KEY_SCIENCE.md)
-6. [Open science lanes](docs/lanes/open_science/README.md)
-7. Full audit ledger: tracked shards under `docs/audit/data/ledger/`, summarized in
-    [`effective_status_summary.json`](docs/audit/data/effective_status_summary.json)
+The past-hypothesis low-entropy magnitude is a scope condition, not a premise.
+Results that use it say so.
 
-The former flagship paper package (package README, falsifiable-predictions
-catalog, manuscript claims and quantitative tables with audit badges,
-divergence report, external-reviewer and reproduce guides, science map) was
-deferred end-to-end by owner decision 2026-09-03 and lives whole, as the
-snapshot at deferral, at `archive/publication/ci3_z3/` on the archive tier
-(record, not a claim surface — see `archive/README.md`).
+Born weights, measurement and readout contexts, record-formation rules
+(which admissible possibility a new record locks, at which site, with what
+weight, at what rate), dynamics and the time metric, kinetic-branch
+selection, source and action structure, and physical-observable identification
+are downstream. They bear load only through retained-grade work, or through an
+explicit axiom or approved-primitive review. The audit ledger is that record.
+The words `retained` and `promoted` inside a source note are not a ledger grade.
+Retained-grade `effective_status` values are `retained`, `retained_no_go`, and
+`retained_bounded`.
 
-## Current Status
+## Read this first
 
-The repo remains in an audit-transition state. The 2026-06-29 foundation
-reset from the three-axiom base to the four-axiom base invalidated every audit
-that rested directly on the old axiom text; the premise-hash guard enforced
-that reset. Some direct `minimal_axioms` dependents have since received
-post-reset audits, while many remain unaudited or in progress. A much larger
-legacy cohort still predates the reset, but those rows are not automatically
-axiom-dependent: their scoped ledger entries and citation edges determine
-whether re-audit is required. The generated
-[`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) always has
-the current counts, refreshed by `bash docs/audit/scripts/run_pipeline.sh`.
+1. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
+2. [Start here](docs/START_HERE.md)
+3. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md).
+   This is a pipeline count, not a physics claim. Read the file for the
+   current counts. The refresh command is
+   `bash docs/audit/scripts/run_pipeline.sh`.
+4. [Key science index](docs/KEY_SCIENCE.md). A listing there grants no status.
 
-Source notes and publication tables still contain legacy `retained` /
-`promoted` wording, but the publication-facing authority is the audit-derived
-`effective_status` in the tracked sharded audit ledger
-(`docs/audit/data/ledger/`, one JSON shard per claim,
-summarized in
-[`docs/audit/data/effective_status_summary.json`](docs/audit/data/effective_status_summary.json)).
-The monolithic `docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized
-cache (gitignored, absent from fresh clones; rebuild with
-`python3 docs/audit/scripts/render_audit_ledger.py`). Retained-grade
-`effective_status` values are `retained`, `retained_no_go`, and
-`retained_bounded`; boxed `decoration_under_*` rows are decorations under a
-retained parent, not independent retained rows. `promoted` is
-publication-capture language, not an audit `effective_status`. Treat any
-source-note or manuscript wording as proposed unless the effective-status
-view marks the cited authority retained-grade.
+The generated retained-row list is
+[`docs/repo/RETAINED_BACKBONE.md`](docs/repo/RETAINED_BACKBONE.md). Read it
+with the current status snapshot. Ledger shards live
+under `docs/audit/data/ledger/`, summarized in
+[`docs/audit/data/effective_status_summary.json`](docs/audit/data/effective_status_summary.json).
 
-Older notes that state or cite the three-axiom base are being brought current
-under a staged narrative scrub
-([`docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md`](docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md));
-until that completes, read pre-2026-06-29 axiom descriptions as historical.
+[State of the theory, 2026-07-16](docs/repo/STATE_OF_THE_THEORY_2026-07-16.md)
+is historical orientation. Its counts are the 2026-07-17 ledger.
 
-## Falsifiable Forecasts
+## Archived forecasts and numbers
 
-The sharp forecast catalog at deferral is
-`archive/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md` (archive
-tier; snapshot of the deferred package). It highlights three near-term
-tests:
+The flagship paper package was deferred on 2026-09-03. The snapshot from that
+date is `archive/publication/ci3_z3/`. The tier rules are in
+[`archive/README.md`](archive/README.md). That tree is a record, not a claim
+surface. Forecast numbers and reusable-value tables stay in the snapshot,
+with the catalog's own conditionality note. Reuse a number when the ledger
+shard for that claim shows a retained-grade `effective_status`.
 
-- PMNS `delta_CP` in the third quadrant near maximal,
-  `delta_CP in [251.86 deg, 270.00 deg]`;
-- PMNS `theta_23` in the upper octant, with certified
-  `s_23^2 > 0.5277` on the stated comparison rectangle; and
-- absolute Higgs-vacuum stability as the framework-side discriminator against
-  SM metastability.
+## If you opened the file list
 
-Those forecasts are explicitly conditional and currently not unconditional
-closures. The catalog predates the 2026-06-29 reset and carries a dated
-currency note saying exactly what stands (falsifier thresholds, named external
-comparison bands) and what does not (its 2026-06-08 status words); quote it
-with its stated conditionality rather than copying a number bare.
+[`docs/repo/ROOT_FILE_GUIDE.md`](docs/repo/ROOT_FILE_GUIDE.md) says what the
+root files are. `AUTOPILOT_*`, `SCALING_*`, and `toy_event_physics.py` are
+legacy. [`AGENTS.md`](AGENTS.md) and [`CLAUDE.md`](CLAUDE.md) send agents to
+the `ai/execution` branch, which does not merge into `main`.
 
-## Reusable Numbers
+Leave these directories until a specific note sends you there: `archive/`,
+`archive_unlanded/`, `docs/work_history/`, `docs/audit/data/ledger/`,
+`logs/`, `outputs/`, and `.claude/`.
 
-For numeric reuse, start from the audit ledger itself (tracked shards under
-`docs/audit/data/ledger/`); the last audit-badged generated views of the
-deferred package are archived at
-`archive/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md`
-and `archive/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md`
-(snapshot at deferral; statuses there are frozen, the live statuses are the
-ledger's).
-
-Important current values include the electroweak scale `v`, the canonical
-plaquette/coupling package, CKM atlas quantities, the YT/top and Higgs
-identification-conditioned rows, neutrino observable bounds, and the
-cosmology/DM structural support rows. Each value must carry the claim class
-and qualifier shown in those generated tables.
-
-## Lane State
-
-The active science is organized in
-[`docs/KEY_SCIENCE.md`](docs/KEY_SCIENCE.md) and by work lane in
-[`docs/lanes`](docs/lanes/README.md); the deferred package's domain map is
-archived at `archive/publication/ci3_z3/SCIENCE_MAP.md`.
-
-High-level state:
-
-- **Framework baseline:** Lattice, Qubit, Admissibility, and Record are the
-  named axiom surface. Admissibility constrains which possibilities are
-  available at each site; it supplies no dynamics, probabilities, kinetic
-  branch, or observable identification. Record names formation at occurrence
-  strength ("records form") but remains deliberately narrow: it supplies no
-  formation rule, Born weights, measurement dynamics, physical persistence
-  dynamics, source/action identification, or downstream selectors by itself.
-- **Ratified backbone:** the audit ledger contains retained-grade positive,
-  bounded, and boxed-decoration rows; `retained_no_go` is a supported grade
-  with zero rows at present. Use
-  [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) for the
-  current generated counts and
-  [`docs/repo/RETAINED_BACKBONE.md`](docs/repo/RETAINED_BACKBONE.md) for the
-  full generated row list.
-- **Publication package:** manuscript and quantitative surfaces exist, but the
-  effective-status mirrors show which cited authorities are audit-retained and
-  which remain unaudited, conditional, renaming-only, numerical-match, or open.
-- **Open flagship work:** charged-lepton mass retention remains open, including
-  Koide `Q = 2/3`, `delta = 2/9`, and the absolute lepton scale. CKM-side
-  Koide support is package-captured but does not close charged-lepton Koide.
-- **Critical open science lanes:** hadron masses, atomic scales, non-top quark
-  masses, neutrino quantitative closure, Hubble constant closure, and
-  charged-lepton mass retention are tracked in
-  [`docs/lanes/open_science/README.md`](docs/lanes/open_science/README.md).
-- **Bounded companions:** Higgs/vacuum, down-type mass ratios, neutrino
-  observable bounds, proton lifetime, neutron EDM continuation, taste-scalar,
-  gravitational decoherence, compact-object/cosmology, and related rows remain
-  useful only with their stated bounded or conditional qualifiers.
-- **Historical/comparison programs:** mirror, ordered-lattice, generated
-  geometry, action-law, coin-walk, controls, and moonshot lanes remain in
-  [`docs/lanes`](docs/lanes/README.md) for provenance and comparison.
-
-## Validation
-
-For per-claim validation, use the audit ledger and each note's paired
-runner; the deferred package's validation path (REPRODUCE guide,
-derivation/validation map, results index) is archived whole under
-`archive/publication/ci3_z3/` (snapshot at deferral).
-
-For audit status, run:
-
-```bash
-bash docs/audit/scripts/run_pipeline.sh
-```
-
-That refreshes the ledger, queue, and front-door status snapshot (the
-publication effective-status views and divergence report are skipped while
-the package is deferred).
+Lane maps under [`docs/lanes`](docs/lanes/README.md) are historical
+navigation. The April 2026 active-lane list is not the current work queue.
 
 ## Boundaries
 
-This repository does not claim that every publication-captured row is already
-audit-retained. It also does not claim that the four axioms derive
-probability, measurement, arrow of time, selector weights, kinetic branch
-selection, or physical observable identification. The explicit non-claims and
-qualifiers live in:
-
-- `archive/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md` (archived snapshot)
-- `archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md` (archived snapshot)
-- `archive/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md` (archived snapshot)
+A landed note, and a row captured in the archived paper package, is not
+thereby audit-retained. Measurement, an arrow of time, selector weights, a
+kinetic branch, and a physical observable identification are not supplied by
+the axiom names in this README. What each axiom supplies is the axiom memo.
+The archived non-claim notes are
+[`archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md`](archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+and
+[`archive/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md`](archive/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md).

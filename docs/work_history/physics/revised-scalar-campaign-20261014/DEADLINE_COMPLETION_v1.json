@@ -1,0 +1,13 @@
+{
+  "fixed_deadline": "2026-10-14T18:13:22+00:00",
+  "research_inspection_at": "2026-10-14T18:13:33.568816+00:00",
+  "no_owned_research_process_found": true,
+  "cooperative_lock": "released",
+  "automation_id": "revised-scalar-theory-derive-the-assumptions",
+  "automation_status": "PAUSED",
+  "automation_paused_at": "2026-10-14T18:13:52.358811+00:00",
+  "report_finalized_at": "2026-10-14T18:13:52.420220+00:00",
+  "prior_campaigns": "Remain stopped; raw status/automation snapshots in runtime DEADLINE_STOP_v1.json.",
+  "research_outcome": "Conditional mathematics and reconstruction; no selected complete action/state/scales or independent empirical holdout.",
+  "administrative_publication_may_follow_deadline": true
+}

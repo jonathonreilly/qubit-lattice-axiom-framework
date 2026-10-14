@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-14T18:13:52.420220+00:00",
+  "scientific_summary_baseline": {
+    "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/FINAL_REPORT_DRAFT_v5.md",
+    "sha256": "916461bf82ff2cb9fa6d4d6e32ee55a3a1c3589b542d9fd2c77750a99e918f50"
+  },
+  "final_report_sha256": "48de92e8bf6f982d8a343eedd71a97a97bccbce57a0d46983dcec1c9e3deab63",
+  "diff_sha256": "58e8c6830c6da9f44557ff706a54b8f96d6052d7d667edf4bea3e65969677a10",
+  "scope": "Final changes are readability, evidence-role explanation, already checked figure, actual GitHub status and actual deadline/automation closure. No new scientific calculation after discovery cutoff.",
+  "independent_consistency_report_sha256": "061e5bcef313c64a589af4b0a8acd3788ed5f67dd762df96f3a1fd24673edc63",
+  "summary_archive": {
+    "at": "2026-10-14T18:03:15.529395+00:00",
+    "archive": "docs/work_history/physics/revised-scalar-campaign-20261014/summary_checks_v1.tar.gz",
+    "sha256": "78d9da119f505c2588a24032907de4621ff99e07c9bc96cd29c8beed6130e016",
+    "bytes": 470431,
+    "payload_count": 59,
+    "manifest_sha256": "47ee44794cc39f671c58cc47d5c0b42a25608ff569e17aa0bd366be7a8e558aa",
+    "all_payload_hashes_sizes_and_original_bytes_verified": true,
+    "scope": "Preservation only; no new discovery or full-report scientific endorsement."
+  },
+  "scientific_milestone_index_sha256": "91fb07c1adadbd3cf0d2b3d457a934a6d1a0de2fa92a5f79453bd1321b85ccb8",
+  "final_readability_at": "2026-10-14T18:14:53.826975+00:00"
+}

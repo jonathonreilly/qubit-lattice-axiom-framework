@@ -1,8 +1,8 @@
 # Key science — the front-of-house index
 
-This file is the canonical entry point to the primary (audited) track.
+This file is the canonical entry point to the source-note track.
 It is an index only: it names where the key science lives and grants no
-status by listing. The repo runs two tracks — this primary track
+status by listing. The repo runs two tracks — this source-note track
 (`docs/` + the audit lane), and the archive track (`archive/`, record
 without authority; start at `archive/README.md` → `archive/SCIENCE.md`).
 

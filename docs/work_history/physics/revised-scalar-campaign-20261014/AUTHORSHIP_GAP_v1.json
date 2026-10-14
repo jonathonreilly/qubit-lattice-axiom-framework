@@ -1,0 +1,12 @@
+{
+  "noticed_at": "2026-10-14T02:55:38.575623+00:00",
+  "last_previous_checkpoint": "2026-10-13T20:38:49.001231+00:00",
+  "primary_finished_at": "2026-10-13T20:42:12.921220+00:00",
+  "independent_finished_at": "2026-10-13T21:00:56.085690+00:00",
+  "resumed_at": "2026-10-14T02:52:49+00:00",
+  "cause": "Not established from available evidence; heartbeat messages accumulated without further recorded parent tool work. Do not claim continuous authorship during this gap.",
+  "conflicting_processes_seen": false,
+  "old_lock_expired": true,
+  "lock_reacquired_same_holder": true,
+  "deadline_extended": false
+}

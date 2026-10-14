@@ -1,5 +1,8 @@
 # Lane Manifests
 
+> The lane lists on this page are historical navigation. The April 26, 2026
+> active-lane file is not the current work queue.
+
 These manifests organize the whole repo by major research lane.
 
 ## Current Mainline

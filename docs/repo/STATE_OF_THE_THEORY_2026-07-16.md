@@ -53,6 +53,10 @@ Two consequences of that discipline shape everything below:
 - Counts for all of these, refreshed nightly, live in
   [`FRONT_DOOR_STATUS.md`](FRONT_DOOR_STATUS.md).
 
+> **Counts below are frozen.** The figures in the next paragraph are the
+> 2026-07-17 ledger. [`FRONT_DOOR_STATUS.md`](FRONT_DOOR_STATUS.md) supersedes
+> every number in this file. This banner adds no audit grade.
+
 As of the 2026-07-17 nightly ledger state, the ledger holds **3,767 rows**, of
 which **392 are retained-grade** (76 retained positive rows, 302 retained
 bounded rows, 0 retained no-go rows, 14 boxed decorations) and **~2,960 are

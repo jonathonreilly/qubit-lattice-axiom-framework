@@ -1,0 +1,24 @@
+Weyl per generation: SM 15 ; with nu_R 16
+  1 gen: SM 15 (mod 16 = 15); +nu_R 16 (mod 16 = 0)
+  3 gen: SM 45 (mod 16 = 13); +nu_R 48 (mod 16 = 0)
+
+Staggered fields per site and the onsite Z8 (Majoranas/site = 2 x fields):
+  1 field(s): 2 Majoranas/site, mod 8 = 2; Dirac tastes 2; Weyl 4; onsite symmetric gapping impossible
+  2 field(s): 4 Majoranas/site, mod 8 = 4; Dirac tastes 4; Weyl 8; onsite symmetric gapping impossible
+  3 field(s): 6 Majoranas/site, mod 8 = 6; Dirac tastes 6; Weyl 12; onsite symmetric gapping impossible
+  4 field(s): 8 Majoranas/site, mod 8 = 0; Dirac tastes 8; Weyl 16; onsite symmetric gapping possible
+  5 field(s): 10 Majoranas/site, mod 8 = 2; Dirac tastes 10; Weyl 20; onsite symmetric gapping impossible
+  6 field(s): 12 Majoranas/site, mod 8 = 4; Dirac tastes 12; Weyl 24; onsite symmetric gapping impossible
+  7 field(s): 14 Majoranas/site, mod 8 = 6; Dirac tastes 14; Weyl 28; onsite symmetric gapping impossible
+  8 field(s): 16 Majoranas/site, mod 8 = 0; Dirac tastes 16; Weyl 32; onsite symmetric gapping possible
+
+One generation, one staggered field per component of the 16 (16 fields):
+  Weyl content: 2 tastes x (16 + 16bar) = 64; light wanted 16; to gap 48 = 3 x 16
+  Majoranas/site = 32 = 4 x 8
+  NF-1 counting (22.5 Dirac fields / 2 tastes): 45/4 ; with 3 nu_R: 12
+  T1 (one staggered field per SM Dirac field, twin unwanted), with nu_R: twins = 24 Dirac = 48 Weyl = 3 x 16 -> True
+
+First-order strong-coupling single-fermion gap, 3D staggered band, traceless strain t_j = t(1+u_j):
+  E_g (1,-1,0): d2/du2 sqrt(sum t_j^2)/t = 1.154701 (analytic |u|^2/sqrt3 = 1.154701); so d2_u Delta_f = -smax * that * t, independent of W
+  E_g (1,1,-2)/sqrt3: d2/du2 sqrt(sum t_j^2)/t = 1.154701 (analytic |u|^2/sqrt3 = 1.154701); so d2_u Delta_f = -smax * that * t, independent of W
+  2D cluster analogue (L3, plaqpi): d2_u sqrt(t_x^2+t_y^2) = sqrt2 = 1.4142135623730951

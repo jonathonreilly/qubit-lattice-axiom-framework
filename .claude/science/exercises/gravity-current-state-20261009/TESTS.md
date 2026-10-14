@@ -9656,3 +9656,28 @@ Shared setting for all three:
   - **SMG-LEAKS:** strain induces a symmetry-allowed additive mass in the light sector (name it).
   - **OPEN:** otherwise.
 - **Expectation.** SMG-PROTECTS in the toy. The open part is whether the 3+1D staggered mirror content admits it; that goes to the chirality exercise.
+
+- **TW-3 (symmetric mass generation toy): worker reading OPEN.**
+  - **Protection holds; the multiplicative clause fails at strong coupling.**
+  - **The 8-Majorana cluster (Spin(7) quartic):**
+    - unique ground state, gap 14W, no invariant bilinear;
+    - the Z8 count is confirmed;
+    - Spin(7) is not needed: any T-symmetric quartic works.
+  - **On dimer, L3 and π-plaquette clusters (≤ 2^16) under bond strain:**
+    - Θ alone forbids every same-sublattice mass: G(0) ≤ 1e-14;
+    - a light zero-mode pair stays unsplit to 3e-12 with all symmetric light–mirror couplings;
+    - Θ-odd controls are nonzero.
+  - **The gap's strain response:**
+    - multiplicative on protected zero modes (∂²lnΔ = 8);
+    - additive at the hopping scale at strong coupling (∂²Δ ≈ −√2 t);
+    - near the 3D threshold it is tuned (suggested).
+    - The additive piece sits in the mirror's vacuum energy (P-TW3b, absorbed only by (Σ)/(S\*)).
+  - **The count:**
+    - onsite gapping needs 4 staggered fields = 16 Weyl;
+    - one generation with ν_R = 16, so the count works only with ν_R.
+  - **The key negative (proved):** onsite translation-invariant gapping is shift-invariant, the shift swaps the tastes, so it cannot select the twins. A twin-selective law must be spread over the 2³ cube (P-TW3a). Its existence without doublers returning is the open chirality problem.
+  - **Side findings:**
+    - light–mirror couplings change the light species' strain anisotropy (a per-species metric, panel F C3);
+    - the generation lane's λ > 0 hw=1 branch breaks Θ and P_stag.
+
+  Referee running.

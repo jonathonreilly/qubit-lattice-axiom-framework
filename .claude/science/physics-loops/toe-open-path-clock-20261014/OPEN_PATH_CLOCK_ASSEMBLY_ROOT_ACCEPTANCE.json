@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-14T16:16:10.250179+00:00",
+  "status": "accepted for publication source preparation; underlying conditional analytic status unchanged",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_assembly_root_review/accept.py",
+    "bytes": 2017,
+    "sha256": "5f3b8811392147bc5eca7345257f73d0117983f498fa90efbdf0e8d7c356955e"
+  },
+  "assembly_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_source_assembly/FINAL_FREEZE.json",
+    "bytes": 53416,
+    "sha256": "dc606d7d058714a39cb3cca1dd64dc86f3312a2fa9dae27fa986fcd708cd153c"
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_source_assembly/CANDIDATE_NOTE.md",
+    "bytes": 34853,
+    "sha256": "a450b446078100266805edece82e0ccc99ab2c45c95e85482ab98e7f40eb92e6"
+  },
+  "analytic_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/OPEN_PATH_CLOCK_ROOT_ACCEPTANCE.json",
+    "bytes": 4064,
+    "sha256": "b2e9ff7716317dfc5b69bb31735c936b79005fba0100e307282399893eb71b8f"
+  },
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_assembly_root_review/SOURCE_BINDING.json",
+    "bytes": 14318,
+    "sha256": "cd86ad9ed5af4e1a254cf2152c56f59d6acb655f9ac43085f07e381eac159fe6"
+  },
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/OPEN_PATH_CLOCK_ASSEMBLY_ROOT_REVIEW.md",
+    "bytes": 5284,
+    "sha256": "d96c9b7c9a0b48a58419f641cf8a0c31dbfcee7b9a529cb5473124ae1f74e2b3"
+  },
+  "body_map": {
+    "byte_end_exclusive": 34269,
+    "byte_start_0": 6715,
+    "complete_body_occurrences_in_packet": 1,
+    "line_end_1": 349,
+    "line_start_1": 31,
+    "note_path": "CANDIDATE_NOTE.md",
+    "note_sha256": "a450b446078100266805edece82e0ccc99ab2c45c95e85482ab98e7f40eb92e6",
+    "prefix_path": "wrappers/note_prefix.md",
+    "prefix_sha256": "e452a3869ab8fcba02a89552673055766e351c623683b457a3a52573796e6f3a",
+    "source_alias": "author/DERIVATION_CURRENT.md",
+    "source_bytes": 27554,
+    "source_lines": 319,
+    "source_original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency/DERIVATION_CURRENT.md",
+    "source_sha256": "a59c38c7352931da0a5df51c2bca63ddbbe37fd302a18d5a36347235083c967b",
+    "suffix_path": "wrappers/note_suffix.md",
+    "suffix_sha256": "eb17a9367cb19e026d54b7d80b273e399fd1be8232f926f6d4778d54747a7f5f",
+    "transformation": "none; entire original bytes including historical status"
+  },
+  "canonical_execution_authorized": false,
+  "retained_or_audit": false,
+  "scientific_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "next_action": "Source-only publication preparation on a root-created clean child after actual preceding regular PR; preserve full root folder and actual outer execution records, and request root source review before canonical execution."
+}

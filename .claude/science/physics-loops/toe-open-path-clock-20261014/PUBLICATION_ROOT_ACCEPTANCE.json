@@ -1,0 +1,70 @@
+{
+  "acceptance_writer": {
+    "bytes": 2315,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_main_refresh_root_review/accept.py",
+    "sha256": "3da908ae25725b9325448d58dbb21e63a3fa7ce56cb6e1a16f8ae0a9e8a9812b"
+  },
+  "actual_citations_and_complete_graph_object_preservation_reviewed": true,
+  "base": "d83ac7eabd6fffa7bf2a941c3dffd070796a53db",
+  "block_handoff_and_review_history_read": true,
+  "branch": "physics-loop/toe-open-path-clock-20261014",
+  "canonical_integration_executed": false,
+  "compact_packet_sampled_normalization_actual_free_clock_and_two_residual_bounds_reviewed": true,
+  "complete241_file_assembly_and_unique_unchanged_proof_reviewed": true,
+  "complete_driver_read": true,
+  "disposition": "accepted_for_source_integration",
+  "editable_prompt_files_changed": [],
+  "exact_source_diff_producer_conventions_reviewed": true,
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/OPEN_PATH_CLOCK_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_read": true,
+  "final_assembly_review_sha256": "931945812b476ae240dc615d070c13d60de0df9e5a3b16125ed3f4135264761b",
+  "full_runtime_scalar_background_open_path_geometry_and_actual_covariance_scope_reviewed": true,
+  "historical_missing_child_source_pins_invented": false,
+  "identity_tools_and_archive_map_read": true,
+  "later_obligations": [
+    "actual guarded prepare and exact root staging",
+    "actual guarded verify and root evidence read",
+    "regular PR after successful integration",
+    "cumulative/current-main validation",
+    "independent retained audit"
+  ],
+  "main_sync_root_binding": {
+    "bytes": 174251,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/sync_1700_root_review/SYNC_ROOT_BINDING.json",
+    "sha256": "03862b3ff126e387679c4bf13bf79dc57484e7c0ba3e617b8600e6bd72866a29"
+  },
+  "mathematical_predicates": 0,
+  "new_mathematical_review": false,
+  "new_publication_wrappers_read": true,
+  "no_go_packet_pass": false,
+  "original_preparation_freeze_sha256": "3c8b604dbdbb6c50f4fd96d0b7dbd641e1d8f4c2c207f652f9f907e52edf8566",
+  "packet_and_dependency_delta_read": true,
+  "placeholder_only": false,
+  "pre_and_post_checker_index_equality_and_existing_ledger_scope_reviewed": true,
+  "prepared_clock_full_reference_dirty_transit_and_binary_outcome_scope_reviewed": true,
+  "prior_acceptance_sha256s": [
+    "b2e9ff7716317dfc5b69bb31735c936b79005fba0100e307282399893eb71b8f",
+    "3bc01c3773cc26669c4c26c60172bd1504566f64f450768f0b63c4424bd430fc"
+  ],
+  "publication_byte_maps_and_diffs_verified": true,
+  "publication_program_sha256": "2a336f60f9dfee66e79cd9f5b97e06912e3caa15ad79d3ce4a999fa43023e44f",
+  "publication_source_freeze_sha256": "54f169e423c325d1d38364927b098483d4cc00241e0803158155b809593c64e5",
+  "reviewed_remote_main": "544cd8b2a7e7760837c1c2a70f96486d42380c26",
+  "reviewed_remote_main_refresh_without_merge_or_science_adoption": true,
+  "root_authorizes_execution": true,
+  "root_execution_acceptance": true,
+  "seven_actual_mathematical_roles_and_generic_clock_credit_reviewed": true,
+  "source_assembly_freeze_sha256": "dc606d7d058714a39cb3cca1dd64dc86f3312a2fa9dae27fa986fcd708cd153c",
+  "source_binding": {
+    "bytes": 10743,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_main_refresh_root_review/SOURCE_BINDING.json",
+    "sha256": "05515e0af7c1f2ce868c8fc96685f406c392e297aeb2cb9e68a8cb6dfcf4f902"
+  },
+  "source_checker_and_recording_wrapper_read": true,
+  "twelve_section_conformance_reviewed": true,
+  "unchanged_source_coverage_reused": true,
+  "utc": "2026-10-14T17:33:54.969319+00:00",
+  "whitespace_and_link_policy_reviewed": true,
+  "whole_root_assembly_and_actual_outer_streams_missing_child_pin_limits_reviewed": true
+}

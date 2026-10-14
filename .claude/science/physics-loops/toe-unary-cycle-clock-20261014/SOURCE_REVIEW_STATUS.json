@@ -1,0 +1,159 @@
+{
+  "all_input_operator_reference_and_dirty_transit_scope": true,
+  "full_elapsed_time_calibration_and_scalar_charged": true,
+  "historical_failures_and_source_exposure_preserved": true,
+  "historical_imported_roles_separated_from_current_status": true,
+  "mathematical_bodies_accepted": true,
+  "mathematical_core_edits": 0,
+  "native_measurement_photon_exports": false,
+  "new_independent_mathematical_review": false,
+  "new_publication_rendering_and_driver_review_required": true,
+  "no_go_packet_pass": false,
+  "positive_NN_cycle_bonds_long_range_program_and_growing_strength_explicit": true,
+  "positive_unary_cycle_clock_only": true,
+  "prior_acceptances": [
+    {
+      "file": "UNARY_CYCLE_CLOCK_ROOT_ACCEPTANCE.json",
+      "sha256": "4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07",
+      "verbatim": {
+        "actual_author_and_reviewer_streams_read": true,
+        "actual_review_streams": {
+          "bytes": 27557,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_root_review/REVIEW_ACTUAL_STREAMS.txt",
+          "sha256": "8268655748ddafdee6482cd753b47347249cc954fbdee6d6a2c3a0048741d583"
+        },
+        "all_new_science_and_bookkeeping_programs_read_or_exact_delta_reconstructed": true,
+        "author_binding": {
+          "bytes": 9775,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_root_review/AUTHOR_BINDING.json",
+          "sha256": "05d91dcae6adb786326dd15059534ac806f57d49492fadfcc886b9a071141f79"
+        },
+        "author_scientific_runs": 1,
+        "blind_or_model_diverse_validation": false,
+        "candidate": {
+          "bytes": 33019,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock/DERIVATION.md",
+          "sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135"
+        },
+        "candidate_freeze": {
+          "bytes": 22986,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock/FINAL_FREEZE.json",
+          "sha256": "9a10b6161af081d29614cd3f523abf162863cc7ea4bfa143c67bf15975b7db46"
+        },
+        "canonical_integration_authorized": false,
+        "complete_current_argument_read": true,
+        "control_preselected_executed_and_sealed_before_candidate_body": true,
+        "disposition": "accepted_conditional_analytic_source",
+        "editable_prompt_files_changed": [],
+        "identity_tools_prove_math": false,
+        "independent_review": {
+          "bytes": 29118,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_review/REPORT.md",
+          "sha256": "8d76345b8a28d7d9a80675dda5ee8b1d3f9964994375bae852f02ea084a9a7b3"
+        },
+        "merge_main_push_audit_axiom_prompt_authority": false,
+        "required_parent_coverage_reused_only_at_exact_unchanged_scope": true,
+        "retained_audit": false,
+        "review_binding": {
+          "bytes": 20746,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_root_review/REVIEW_BINDING.json",
+          "sha256": "db88778cbfdd57885d07bc8752a8146095f6b9c2628882d14fd9c6de7f8893e4"
+        },
+        "review_seal": {
+          "bytes": 50939,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_review/REVIEW_SEAL.json",
+          "sha256": "dc7ddc00cc6b24111a674b1913c31345ad11578588e742a190fd71ab93f2586a"
+        },
+        "reviewer_scientific_runs": 1,
+        "root_analytic_read": {
+          "bytes": 5084,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_root_review/ANALYTIC_READ.md",
+          "sha256": "b25de12210f16834be94436977a3d5c3f3a218d96475f2211f57073622e03e6a"
+        },
+        "root_review": {
+          "bytes": 9731,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_ROOT_REVIEW.md",
+          "sha256": "76f5a326c25f8408d7034d55d76bbe5b1cd5240df80f9da7491be26ca54b704e"
+        },
+        "root_scientific_reruns": 0,
+        "scientific_body_repairs_requested": [],
+        "scope": "Positive unary-cycle prepared clock with arbitrary fixed finite H and full inherited data/reference input; supplied couplings/packet/calibration and explicit resource costs.",
+        "shared_route_and_prior_same_family_exposure": true,
+        "source_assembly_authorized": true,
+        "utc": "2026-10-14T15:41:46.792063+00:00",
+        "writer": {
+          "bytes": 2428,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_root_review/accept.py",
+          "sha256": "870f8e5f9c4f09d079657190965846905acac7ef4398f07ad969214101b651e2"
+        }
+      }
+    },
+    {
+      "file": "UNARY_CYCLE_CLOCK_ASSEMBLY_ROOT_ACCEPTANCE.json",
+      "sha256": "7d5c9129de3453b6c478e3f974bb6846d7328bac55578ed2483c86fccf103670",
+      "verbatim": {
+        "accepted_utc": "2026-10-14T16:05:00.159449+00:00",
+        "aliases": 521,
+        "candidate": {
+          "bytes": 39515,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_source_assembly/CANDIDATE_NOTE.md",
+          "sha256": "698e2d037cebb9bd7bcb85c5418e9a68ac170696878f0b222a4df4cf51f199a7"
+        },
+        "canonical_execution_authorized": false,
+        "checker_execution": {
+          "bytes": 1295,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_assembly_root_review/CHECKER_EXECUTION.json",
+          "sha256": "a797e7a1acd3fc8ac60ff060971d8c5183932ac39cdc3092df9fe2e7aac9f212"
+        },
+        "complete_programs_read": 4,
+        "disposition_writer": {
+          "bytes": 2312,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_assembly_root_review/accept.py",
+          "sha256": "7af015ecff142c3640c30139f6f0d69b0e4936ac5e409065cde40438d99bdafa"
+        },
+        "editable_prompt_files_changed": [],
+        "files": 264,
+        "mathematical_repair": false,
+        "mathematical_replays": 0,
+        "new_prose_bodies_read": 6,
+        "objects": 215,
+        "pending": [
+          "Actual clean child and regular stack-parent binding; seven mathematical parent bindings already complete",
+          "Preserve whole root assembly review directory, this acceptance/review, actual outer binding/disposition runs and common recorder",
+          "Root review of publication source and guarded integration before a regular PR"
+        ],
+        "proof_bytes": 33019,
+        "proof_sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135",
+        "proof_stored_once": true,
+        "publication_source_preparation_authorized": true,
+        "retained_or_audit_status": false,
+        "root_review": {
+          "bytes": 5885,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_ASSEMBLY_ROOT_REVIEW.md",
+          "sha256": "2e628762619b4838857b574ca9197fa95e1434479aeb5c3dff4ea0550b96ac6a"
+        },
+        "source_binding": {
+          "bytes": 14339,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_assembly_root_review/SOURCE_BINDING.json",
+          "sha256": "a06eddafd118a65368482d4d245811d3cf7570ea278752ba038d8526190a6f94"
+        },
+        "source_freeze": {
+          "bytes": 58256,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_source_assembly/FINAL_FREEZE.json",
+          "sha256": "e8edba3cd869bec3cb12bdb8529a0356e852414c11dff00d6f275267dd159945"
+        },
+        "status": "Source assembly accepted without repair for later publication preparation; underlying conditional mathematics acceptance unchanged.",
+        "underlying_acceptance": {
+          "bytes": 3975,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_ROOT_ACCEPTANCE.json",
+          "sha256": "4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07"
+        }
+      }
+    }
+  ],
+  "retained_audit_status": false,
+  "special_packet_covariance_scope_and_actual_squared_coupling_retained": true,
+  "strict_alias_guard_two_Dyson_and_actual_free_clock_distinguished": true,
+  "supplied_controls_clock_clean_resources_and_readout_contract_required": true,
+  "unchanged_complete_core_coverage_reused": true
+}

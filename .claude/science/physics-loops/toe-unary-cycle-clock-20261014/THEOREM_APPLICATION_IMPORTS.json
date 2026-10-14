@@ -1,0 +1,58 @@
+{
+  "ancestry_is_not_import": true,
+  "canonical_citation_count": 7,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135",
+  "generic_clock_or_positive_kernel_novelty_claim": false,
+  "imported_complete_body_count": 7,
+  "mathematical_parent_count": 7,
+  "mathematical_parents": [
+    "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+    "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+    "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+    "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+    "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14",
+    "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+    "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14"
+  ],
+  "native_or_common_cap_or_whole_apparatus_NN": false,
+  "other_controller_or_history_theorem_imported": false,
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FOURIER_CLOCK_SUPPLIER",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "sharpening_or_open_path_theorem_imported": false
+}

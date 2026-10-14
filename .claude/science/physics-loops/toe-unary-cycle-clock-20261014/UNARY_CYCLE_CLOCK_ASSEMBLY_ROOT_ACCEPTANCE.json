@@ -1,0 +1,58 @@
+{
+  "accepted_utc": "2026-10-14T16:05:00.159449+00:00",
+  "status": "Source assembly accepted without repair for later publication preparation; underlying conditional mathematics acceptance unchanged.",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_source_assembly/FINAL_FREEZE.json",
+    "bytes": 58256,
+    "sha256": "e8edba3cd869bec3cb12bdb8529a0356e852414c11dff00d6f275267dd159945"
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_source_assembly/CANDIDATE_NOTE.md",
+    "bytes": 39515,
+    "sha256": "698e2d037cebb9bd7bcb85c5418e9a68ac170696878f0b222a4df4cf51f199a7"
+  },
+  "proof_sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135",
+  "underlying_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_ROOT_ACCEPTANCE.json",
+    "bytes": 3975,
+    "sha256": "4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_ASSEMBLY_ROOT_REVIEW.md",
+    "bytes": 5885,
+    "sha256": "2e628762619b4838857b574ca9197fa95e1434479aeb5c3dff4ea0550b96ac6a"
+  },
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_assembly_root_review/SOURCE_BINDING.json",
+    "bytes": 14339,
+    "sha256": "a06eddafd118a65368482d4d245811d3cf7570ea278752ba038d8526190a6f94"
+  },
+  "checker_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_assembly_root_review/CHECKER_EXECUTION.json",
+    "bytes": 1295,
+    "sha256": "a797e7a1acd3fc8ac60ff060971d8c5183932ac39cdc3092df9fe2e7aac9f212"
+  },
+  "disposition_writer": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_assembly_root_review/accept.py",
+    "bytes": 2312,
+    "sha256": "7af015ecff142c3640c30139f6f0d69b0e4936ac5e409065cde40438d99bdafa"
+  },
+  "files": 264,
+  "aliases": 521,
+  "objects": 215,
+  "proof_bytes": 33019,
+  "proof_stored_once": true,
+  "complete_programs_read": 4,
+  "new_prose_bodies_read": 6,
+  "mathematical_replays": 0,
+  "mathematical_repair": false,
+  "canonical_execution_authorized": false,
+  "publication_source_preparation_authorized": true,
+  "pending": [
+    "Actual clean child and regular stack-parent binding; seven mathematical parent bindings already complete",
+    "Preserve whole root assembly review directory, this acceptance/review, actual outer binding/disposition runs and common recorder",
+    "Root review of publication source and guarded integration before a regular PR"
+  ],
+  "retained_or_audit_status": false,
+  "editable_prompt_files_changed": []
+}

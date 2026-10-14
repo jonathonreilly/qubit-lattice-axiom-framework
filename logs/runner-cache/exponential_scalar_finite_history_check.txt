@@ -1,0 +1,910 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_finite_history_check.py
+runner_sha256: 74c6175934d68248493324454c157182f1e0e8c8ac3d6210973120210f64d042
+input_fingerprint_sha256: cd3a156466d75fe942059a7ed4a947e7518ac78d67f4386313dd6888632fd722
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+{
+  "scope": "Supplied action, ideal radiation and selected local past limit. Conditional finite history and singular physical past; no observations fitted.",
+  "checks": [
+    {
+      "name": "original.metric_x_transform",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric.theta_derivative_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "connection.ell_ell_ell",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "connection.theta_ell_ell",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "original.branch_B",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "original.branch_Btheta",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "original.branch_clock",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential.physical_ell_force",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.lowered_theta",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.lowered_ell",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.clock_binding",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.eta_binding",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.constraint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric.normal_pullback_00",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric.normal_pullback_01",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric.normal_pullback_10",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric.normal_pullback_11",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "metric.extension_determinant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.fixed_p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full_flow.fixed_q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "forcing.Hbar_log_slope",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "forcing.p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "forcing.q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "eta.chain_rule",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "eta.new_eigenvalue",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "eta.lower_left",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature.full_contraction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature.radiation_leading",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "time.finite_past_integrand",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.coefficient_binding.0.0001_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.0001_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.0001_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.0001_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.0001_0.1",
+      "passed": true,
+      "error": "5.84073750555005875e-70"
+    },
+    {
+      "name": "numeric.block.0.0001_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.0001_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.0001_0.1",
+      "passed": true,
+      "scaled": [
+        "18.5722918846223245359964",
+        "18.57291556017091537301413",
+        "18.57297793022499726846312"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.0001_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.0001_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.0001_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.0001_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.0001_1",
+      "passed": true,
+      "error": "1.4507186578808973266e-69"
+    },
+    {
+      "name": "numeric.block.0.0001_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.0001_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.0001_1",
+      "passed": true,
+      "scaled": [
+        "54.46368861381906528167665",
+        "54.46528856761800417961811",
+        "54.46544856748043852547542"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.0001_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.0001_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.0001_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.0001_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.0001_10",
+      "passed": true,
+      "error": "4.6370736337612454172e-69"
+    },
+    {
+      "name": "numeric.block.0.0001_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.0001_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.0001_10",
+      "passed": true,
+      "scaled": [
+        "1529.463239852435856209618",
+        "1529.505836581437573172714",
+        "1529.510096338133838222911"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.01_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.01_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.01_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.01_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.01_0.1",
+      "passed": true,
+      "error": "3.2398582404286728568e-70"
+    },
+    {
+      "name": "numeric.block.0.01_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.01_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.01_0.1",
+      "passed": true,
+      "scaled": [
+        "18.0477760225356556291775",
+        "18.04837406444941185624663",
+        "18.04843387104655720874953"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.01_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.01_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.01_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.01_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.01_1",
+      "passed": true,
+      "error": "3.2398582404286728568e-70"
+    },
+    {
+      "name": "numeric.block.0.01_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.01_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.01_1",
+      "passed": true,
+      "scaled": [
+        "53.38921376795308869936665",
+        "53.39073547450738732862266",
+        "53.39088764950268399074064"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.01_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.01_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.01_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.01_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.01_10",
+      "passed": true,
+      "error": "2.3193855278419557711e-69"
+    },
+    {
+      "name": "numeric.block.0.01_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.01_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.01_10",
+      "passed": true,
+      "scaled": [
+        "1511.576548853048104200807",
+        "1511.616692210452329890286",
+        "1511.620706630676870976366"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.1_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.1_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.1_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.1_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.1_0.1",
+      "passed": true,
+      "error": "2.8978173052245479576e-70"
+    },
+    {
+      "name": "numeric.block.0.1_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.1_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.1_0.1",
+      "passed": true,
+      "scaled": [
+        "15.02528514422472742273117",
+        "15.02578148070516593372159",
+        "15.02583111652744802825158"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.1_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.1_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.1_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.1_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.1_1",
+      "passed": true,
+      "error": "2.920368752775029375e-70"
+    },
+    {
+      "name": "numeric.block.0.1_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.1_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.1_1",
+      "passed": true,
+      "scaled": [
+        "49.32150306003947662577325",
+        "49.32296413954329199079746",
+        "49.32311025408136322417105"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.1_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.1_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.1_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.1_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.1_10",
+      "passed": true,
+      "error": "2.4288134874784745007e-69"
+    },
+    {
+      "name": "numeric.block.0.1_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.1_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.1_10",
+      "passed": true,
+      "scaled": [
+        "1547.838584321083332662606",
+        "1547.889574130762550652779",
+        "1547.894673368120463734492"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.17_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.17_0.1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.17_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.17_0.1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.17_0.1",
+      "passed": true,
+      "error": "5.9326794014153470107e-70"
+    },
+    {
+      "name": "numeric.block.0.17_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.17_0.1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.17_0.1",
+      "passed": true,
+      "scaled": [
+        "12.12534422648508366205005",
+        "12.12570018018207762974531",
+        "12.12573577664548266620971"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.17_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.17_1_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.17_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.17_1_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.17_1",
+      "passed": true,
+      "error": "6.3260254430728864376e-70"
+    },
+    {
+      "name": "numeric.block.0.17_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.17_1",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.17_1",
+      "passed": true,
+      "scaled": [
+        "37.77190931015598727777491",
+        "37.77385438649226733132353",
+        "37.77404890895481632280066"
+      ]
+    },
+    {
+      "name": "action.coefficient_binding.0.17_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.17_10_0.0",
+      "passed": true
+    },
+    {
+      "name": "action.coefficient_binding.0.17_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "action.U0_gradient_binding.0.17_10_0.07",
+      "passed": true
+    },
+    {
+      "name": "numeric.forcing.0.17_10",
+      "passed": true,
+      "error": "1.3957736461168966125e-68"
+    },
+    {
+      "name": "numeric.block.0.17_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.tangent_linear.0.17_10",
+      "passed": true
+    },
+    {
+      "name": "numeric.quadratic_residual.0.17_10",
+      "passed": true,
+      "scaled": [
+        "1411.90661967650985829625",
+        "1412.017180762025535488763",
+        "1412.028237881083096713612"
+      ]
+    },
+    {
+      "name": "clock.exact_conversion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "clock.physical_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density.symbol_translation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "curvature.proper_time_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "tangent.characteristic_evaluation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "tangent.uniform_algebraic_lower_margin",
+      "passed": true
+    },
+    {
+      "name": "weak.formal_log_density_contrast",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "counts": {
+    "passed": 132,
+    "failed": 0
+  },
+  "numeric_cases": [
+    {
+      "k": "0.0001",
+      "nu": "0.1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "17.52557408209541984538622756111036970057",
+        "-6.331378858917809929969586123893618884144"
+      ],
+      "tangent": [
+        "0.2724737323532336042955994747172553331952",
+        "-0.3318640317528934971146217147801292186601",
+        "1.089894929412934417182397898869021332781",
+        "-1.327782997429272559212415399927935355496"
+      ],
+      "quadratic_residual_scaled": [
+        "18.5722918846223245359964044423",
+        "18.5729155601709153730141253408",
+        "18.5729779302249972684631190533"
+      ]
+    },
+    {
+      "k": "0.0001",
+      "nu": "1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "28.5943383887984225150235160609354490039",
+        "-6.330509518913067488625632464033196513564"
+      ],
+      "tangent": [
+        "0.6045864865853552113641029838957352446125",
+        "-0.4147591628398262173348067094548406168883",
+        "2.41834594634142084545641193558294097845",
+        "-1.659761937557347882688858871789846204725"
+      ],
+      "quadratic_residual_scaled": [
+        "54.4636886138190652816766476417",
+        "54.4652885676180041796181147979",
+        "54.4654485674804385254754207214"
+      ]
+    },
+    {
+      "k": "0.0001",
+      "nu": "10",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "139.2819814558284492113964010591862420372",
+        "-6.321816118865643075186095865428972807758"
+      ],
+      "tangent": [
+        "3.925714028906571282049138075680534358786",
+        "-1.24371047370915341953665665620195459917",
+        "15.70285611562628512819655230272213743514",
+        "-4.979551338838101117453293590408954697021"
+      ],
+      "quadratic_residual_scaled": [
+        "1529.46323985243585620961766979",
+        "1529.50583658143757317271444027",
+        "1529.51009633813383822291099561"
+      ]
+    },
+    {
+      "k": "0.01",
+      "nu": "0.1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "17.49878095478009715513946761157345135645",
+        "-6.136409125095225525223383265737072506818"
+      ],
+      "tangent": [
+        "0.2754737332943648220811903945354322742645",
+        "-0.3185243838441258981249376176325323414502",
+        "1.101894933177459288324761578141729097058",
+        "-1.306191562556429591188821196107072931735"
+      ],
+      "quadratic_residual_scaled": [
+        "18.0477760225356556291774984574",
+        "18.0483740644494118562466285529",
+        "18.0484338710465572087495280804"
+      ]
+    },
+    {
+      "k": "0.01",
+      "nu": "1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "28.77894406696286282360083310894330102236",
+        "-6.046000681346633861323985900392336177944"
+      ],
+      "tangent": [
+        "0.6190124872798589028489105849189833550943",
+        "-0.3909367361168544801717236531716848550213",
+        "2.476049949119435611395642339675933420377",
+        "-1.635864904150508278300359923551086995436"
+      ],
+      "quadratic_residual_scaled": [
+        "53.3892137679530886993666526619",
+        "53.3907354745073873286226604833",
+        "53.3908876495026839907406431962"
+      ]
+    },
+    {
+      "k": "0.01",
+      "nu": "10",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "141.5805751887905195082144880826417976815",
+        "-5.141916243860717222330012246944972889207"
+      ],
+      "tangent": [
+        "4.054400027134799710526112488754494163392",
+        "-1.115060258844140300639584008563209990733",
+        "16.21760010853919884210444995501797665357",
+        "-4.932598320091295149415747197991227632452"
+      ],
+      "quadratic_residual_scaled": [
+        "1511.5765488530481042008071569",
+        "1511.61669221045232989028642912",
+        "1511.62070663067687097636617606"
+      ]
+    },
+    {
+      "k": "0.1",
+      "nu": "0.1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "18.17203860726815263942703207770210768425",
+        "-4.101254320463839550219025049477172588452"
+      ],
+      "tangent": [
+        "0.3188603463000575945164392715194454988336",
+        "-0.1989723358196441851467510158869214560281",
+        "1.275441385200230378065757086077781995335",
+        "-1.09022197063247605860217877571948166919"
+      ],
+      "quadratic_residual_scaled": [
+        "15.0252851442247274227311702338",
+        "15.0257814807051659337215866785",
+        "15.0258311165274480282515771379"
+      ]
+    },
+    {
+      "k": "0.1",
+      "nu": "1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "31.87531094413501082259132367830478563337",
+        "-2.684431008534209336623015086164428005183"
+      ],
+      "tangent": [
+        "0.8142707314938816088215816156733355243317",
+        "-0.1561504195106059638462665887011969352769",
+        "3.257082925975526435286326462693342097327",
+        "-1.376236199421391494297295538503251302029"
+      ],
+      "quadratic_residual_scaled": [
+        "49.3215030600394766257732536319",
+        "49.3229641395432919907974605023",
+        "49.3231102540813632241710475525"
+      ]
+    },
+    {
+      "k": "0.1",
+      "nu": "10",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "168.9080343128035926542342396843315651246",
+        "11.48380211076209279933708454696301782751"
+      ],
+      "tangent": [
+        "5.768374583432121751873005057212235779312",
+        "0.272068743579776249158577683156048272235",
+        "23.07349833372848700749202022884894311725",
+        "-4.236378487310545851248463166340947630425"
+      ],
+      "quadratic_residual_scaled": [
+        "1547.83858432108333266260620258",
+        "1547.8895741307625506527785007",
+        "1547.89467336812046373449160206"
+      ]
+    },
+    {
+      "k": "0.17",
+      "nu": "0.1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "20.01529407007798933181685930264795909915",
+        "-1.641836536069565141667277965250283207703"
+      ],
+      "tangent": [
+        "0.3977226568512665734030860110693198025498",
+        "-0.07798092238235362412622004661784518515754",
+        "1.590890627405066293612344044277279210199",
+        "-0.8492443650105958274600427444723161030153"
+      ],
+      "quadratic_residual_scaled": [
+        "12.1253442264850836620500514493",
+        "12.1257001801820776297453110893",
+        "12.1257357766454826662097073068"
+      ]
+    },
+    {
+      "k": "0.17",
+      "nu": "1",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "30.79434450220780444726418103218289312224",
+        "2.436181147742228533303542110783676615346"
+      ],
+      "tangent": [
+        "1.145288083718296811099950116183931473007",
+        "0.1325381647119200863924730912103895321192",
+        "4.581152334873187244399800464735725892027",
+        "-1.017123957566442498565139580201634060221"
+      ],
+      "quadratic_residual_scaled": [
+        "37.7719093101559872777749057317",
+        "37.7738543864922673313235279416",
+        "37.774048908954816322800656287"
+      ]
+    },
+    {
+      "k": "0.17",
+      "nu": "10",
+      "forcing": [
+        "0.0",
+        "0.0",
+        "138.5848488235059556017373983275322333531",
+        "43.21635798586016528301174287112327484584"
+      ],
+      "tangent": [
+        "8.620942352388599188068591167330048177576",
+        "2.237729035654657191579404469492736704887",
+        "34.48376940955439675227436466932019271031",
+        "-2.695919883124909209616107937494813632277"
+      ],
+      "quadratic_residual_scaled": [
+        "1411.90661967650985829625037042",
+        "1412.01718076202553548876270185",
+        "1412.02823788108309671361199939"
+      ]
+    }
+  ]
+}
+
+----- stderr -----
+

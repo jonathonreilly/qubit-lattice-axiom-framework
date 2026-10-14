@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-14T09:21:29.028290+00:00",
+  "disposition": "accepted conditional nonempty-sector corollary for source assembly; no retained audit verdict",
+  "proof": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/all_volume_code_root/DERIVATION_V2.md",
+    "sha256": "2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a",
+    "bytes": 11270
+  },
+  "root_disposition": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/all_volume_code_root/ROOT_DISPOSITION.md",
+    "sha256": "f54dd0b77de7e098a0534781831454b88c88e68a324f04effa887ad9402d0cac",
+    "bytes": 2995
+  },
+  "separate_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_all_volume_code_review/REPORT.md",
+    "sha256": "58a8f166ced1a25194c79efe87f48de97b28487b57dcc57629edc1949b253e93",
+    "bytes": 16759
+  },
+  "review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_all_volume_code_review/EXPOSURE_AND_IDENTITY_SEAL.json",
+    "sha256": "2590a3597f88f6ca6f0d80ee5870a57691ef764f24fbae8176879ffc2827fca6",
+    "bytes": 4889
+  },
+  "source_exposure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_all_volume_code_review/SOURCE_EXPOSURE.json",
+    "sha256": "bd1d3ac7456f48774c5026e1cd4badda1698b977f54cb24a75fb61b0f4d63e63",
+    "bytes": 9596
+  },
+  "selected_run": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_all_volume_code_review/run01_selected_graph/RECEIPT.json",
+    "sha256": "1d1bda2be82ead4ee4ef400d32c198228f9b4cf10cf7496321cb3a7daf1b481f",
+    "bytes": 1213
+  },
+  "checked_complete_review_members": 22,
+  "checked_full_source_byte_pins": 13,
+  "checked_exact_excerpts": 5,
+  "scope": "For the exact declared even L>=4 periodic qubit family, the actual K_L contains an orthogonal neutral subspace of dimension at least20^(L^3). This discharges only nonemptiness in the separately reviewed local-output proof.",
+  "remaining": [
+    "No equality of displayed-cycle code with full-cycle code at all L",
+    "No all-volume CAR/cubic equivalence, preparation or compatible infinite-volume state",
+    "No alteration of the physical target or replacement of local penalties by long cycles",
+    "No native controls, photon/continuum or retained status"
+  ],
+  "preserved_corrections": "Original chord wording omitted four incidences; exact V2 correction precedes reviewer exposure. Original/diff retained. Odd eta and one flipped cycle-character controls retained.",
+  "independence_limits": "Same-family source-exposed review by original L4 source author, fresh selected control with predicted outcomes; no blind/model-diverse claim.",
+  "scientific_executions_by_root": 0,
+  "selected_reviewer_scientific_runs": 1,
+  "identity_checks_are_proof": false,
+  "editable_prompt_files_changed": []
+}

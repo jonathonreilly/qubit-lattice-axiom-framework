@@ -1,0 +1,132 @@
+{
+  "schema": "conditional-science-root-acceptance-v1",
+  "accepted_at": "2026-10-14T09:40:02.673412+00:00",
+  "status": "accepted conditional whole-term budget and fixed-effective-time local/reference corollary",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/DERIVATION.md",
+    "sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779",
+    "bytes": 27494
+  },
+  "seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/DERIVATION_SEAL.json",
+    "sha256": "f054679309745edb81ca3751764976e64a99f4f9c7192d49df3a707c22bc0740",
+    "bytes": 7904
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/uniform_budget_root_review/ROOT_DISPOSITION.md",
+    "sha256": "a20f3d2fb339df202dc38393b21a05dded9fb9c4e4f2e1ac48f8040d80877729",
+    "bytes": 3783
+  },
+  "complete_read_coverage": "Complete unchanged proof, selected-control program, two actual output rows, receipt, exposure and seal; prior checked parents reused at exact identities.",
+  "artifacts_rebound": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/DERIVATION.md",
+      "sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779",
+      "bytes": 27494
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/SOURCE_EXPOSURE.json",
+      "sha256": "7dfc2cae6b50e4266b4281589b9cf6c3526baa0c30ac208480b34aa839dba4b3",
+      "bytes": 7048
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/check_selected_supports.py",
+      "sha256": "64ed19e8b6fc68dc788bf04597179edf6a67cd467178131111b7ebaef1cd0647",
+      "bytes": 7351
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/run01_selected_supports/EXECUTED_check_selected_supports.py",
+      "sha256": "64ed19e8b6fc68dc788bf04597179edf6a67cd467178131111b7ebaef1cd0647",
+      "bytes": 7351
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/run01_selected_supports/RECEIPT.json",
+      "sha256": "4880fab451d1cff818ae4467e42b6d56c4d1cbc09a9f53c01d2c7846efbc7239",
+      "bytes": 2040
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/run01_selected_supports/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/run01_selected_supports/stdout.jsonl",
+      "sha256": "6aeb48e48849258abb05421a237ab7bba1a97a2522cbb3fa92c56cc110121d96",
+      "bytes": 2278
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/DERIVATION_SEAL.json",
+      "sha256": "f054679309745edb81ca3751764976e64a99f4f9c7192d49df3a707c22bc0740",
+      "bytes": 7904
+    }
+  ],
+  "source_pins_rebound": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_matter_photon_interface/DERIVATION.md",
+      "sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca",
+      "bytes": 39236
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_penalty_recovery/DERIVATION.md",
+      "sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14",
+      "bytes": 31012
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/local_uniformity_root_preexposure/DERIVATION_V2.md",
+      "sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad",
+      "bytes": 12901
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_penalty_uniformity_root_comparison/REPORT.md",
+      "sha256": "76ecfbd249cdb5b5b3c6efb07548647da4538ed13999005288bd408fa6339dce",
+      "bytes": 24128
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/workhorse/SKILL.md",
+      "sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb",
+      "bytes": 13419
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    }
+  ],
+  "scientific_run_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_uniform_control_budget/run01_selected_supports/RECEIPT.json",
+    "sha256": "4880fab451d1cff818ae4467e42b6d56c4d1cbc09a9f53c01d2c7846efbc7239",
+    "bytes": 2040
+  },
+  "scientific_execution_count_in_packet": 1,
+  "scientific_runs_by_root_for_this_acceptance": 0,
+  "selected_sizes_are_all_volume_proof": false,
+  "identity_checks_are_proof": false,
+  "review_exposure": "Root source-exposed review; same selected model family. Direct theorem separately reviewed and selected support control author-executed.",
+  "conditional_constants": {
+    "whole_penalty": 166,
+    "static_drive": "9+2sqrt(3)",
+    "rotating_frame_drive": "10+11sqrt(3)",
+    "arity": 32,
+    "periodic_diameter": 48,
+    "balanced_lambda": "Lambda/332"
+  },
+  "separate_nonempty_subcode_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/ALL_VOLUME_CODE_ROOT_ACCEPTANCE.json",
+    "sha256": "65de49faf2c0d14f167db3b625bff2284f723fd8a2326b5af67cd18d1dd1472f",
+    "bytes": 3123
+  },
+  "retained_audit": false,
+  "native_controls_or_photon_identification": false,
+  "editable_prompt_files_changed": [],
+  "science_merged_or_main_pushed": false
+}

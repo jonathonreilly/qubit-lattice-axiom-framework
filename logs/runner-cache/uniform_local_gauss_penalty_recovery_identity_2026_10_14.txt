@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/uniform_local_gauss_penalty_recovery_identity_2026_10_14.py
+runner_sha256: 40109f7de221ca3914e5c774027a8c95ea9cd64cd38c3260bad0287f4abdc5be
+input_fingerprint_sha256: 9937d0bb1e746df5fb4656363dce77c22f1219923f54b1ac5fb502ea3a07529c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{"attribution_reads": ["docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md"], "claim_id": "uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": ["docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md", "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no averaging or trace estimate was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

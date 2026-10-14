@@ -1,0 +1,109 @@
+{
+  "frontmatter": "---\ntitle: Uniform local Gauss-penalty recovery under a supplied finite control budget\nclaim_id: uniform_local_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: declared even finite tori, exact static controls, supplied K inputs, finite effective time and local output with passive reference\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: four accepted conditional analytic bodies with explicit nonempty-subcode and full whole-term resource composition; identity runner evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14\", \"finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\", \"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/uniform_local_gauss_penalty_recovery_identity_2026_10_14.py\nnext_trace_action: separate root review and guarded integration of this publication package, then regular PR and independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "0fb6d8f286a0c3c0eef39755245d1ecedc4f8ea5762191e2f5ed8a28daf8d243",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 25712,
+          "byte_start_inclusive": 12811,
+          "bytes": 12901,
+          "id": "A",
+          "line_end_inclusive": 201,
+          "line_start_inclusive": 100,
+          "sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/A.md"
+        },
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 53754,
+          "byte_start_inclusive": 26092,
+          "bytes": 27662,
+          "id": "B",
+          "line_end_inclusive": 462,
+          "line_start_inclusive": 211,
+          "sha256": "ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/B.md"
+        },
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 65390,
+          "byte_start_inclusive": 54120,
+          "bytes": 11270,
+          "id": "C",
+          "line_end_inclusive": 545,
+          "line_start_inclusive": 472,
+          "sha256": "2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/C.md"
+        },
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 93340,
+          "byte_start_inclusive": 65846,
+          "bytes": 27494,
+          "id": "D",
+          "line_end_inclusive": 754,
+          "line_start_inclusive": 555,
+          "sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/D.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 4250,
+      "diff_sha256": "aa32f867247dd5823144d7a5ae66531b11e1ecf3a4d657a1a184bd7b1b8a0a1f",
+      "diff_stored_sha256": "1bd809c9fb15dd3ff53729bbf45f88f016dea557083d9e69048ee478da2f8952",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/A.md",
+          "source_sha256": "fca3350c6572e7a60305974f5aba733910d0347847f859c7ea784d990d35f5ad"
+        },
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/B.md",
+          "source_sha256": "ac224bb872353875eb8bf996f10c403747d9800d0929e387755219467d77e777"
+        },
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/C.md",
+          "source_sha256": "2ddbcafc82ea479a04cceed7130003d61d60f82decbe3a5569f72226369d2a4a"
+        },
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_uniformity_source_assembly/proofs/D.md",
+          "source_sha256": "45ea7ab896996ea0d94ce43f8280776a2658a662ab9124a85d3e7292b24dd779"
+        }
+      ],
+      "pieces_scope": "Whitespace source-identity projection only; complete reconstruction uses frontmatter, rendered wrapper and unchanged accepted remainder.",
+      "published_bytes": 93370,
+      "published_lines": 755,
+      "published_sha256": "52525335689adb5938a2e306b22c9a3752f0328e2cc21ac17ba727e41d36a573",
+      "stored_bytes": 1824,
+      "tofile": "docs/UNIFORM_LOCAL_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "652750db266404799dd406f548dd0a173b77eebcddf645035001a342a56a600e",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 2636,
+    "diff_sha256": "7c692170d620fae51c2c52c269224f79f975777df4d5b76806145c019aa755da",
+    "diff_stored_sha256": "d55dfc15bfde81cdb032e1b6dc4669786b2ae97bb1110de3324bb9173dd4db6a",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 1153,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This frozen source composition remains subject to root review; it is not retained audit status or publication acceptance.",
+      "rendered": "This exact source composition is conditionally accepted under `01df29d92380b1e5a45d0c287a8b9044b7a588ac44612400793a768fa08322c7`; the publication rendering and driver require separate root review. This is not retained audit status.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

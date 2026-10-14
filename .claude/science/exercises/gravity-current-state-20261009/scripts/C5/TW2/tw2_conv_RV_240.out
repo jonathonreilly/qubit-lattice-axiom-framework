@@ -1,0 +1,14 @@
+TW-2 part RV; grid n=8 hmax=0.25 mph=10 (240 nodes), d=0.0030, RK4 steps 4; staggered s = SymS(0.909103708), photon Gph(2.9435); per e^2, SF units
+  symbol c1c2        Eg : C = +0.148327  C'' = -1.124153e-01  C' = +6.023345e-16   (sigma = 0.0050)
+  symbol c1c2        tet: C = +0.148327  C'' = -2.663663e-02  C' = -4.541594e-02   (sigma = 0.0050)
+  symbol c1c2_c2k3   Eg : C = -0.061679  C'' = -9.334506e-02  C' = -8.432684e-15   (sigma = 0.0050)
+  symbol c1c2_c2k3   tet: C = -0.061679  C'' = +4.142443e-03  C' = -2.635797e-03   (sigma = 0.0050)
+  symbol c1c2_c2k12  Eg : C = +0.017419  C'' = -9.096819e-02  C' = +1.204669e-15   (sigma = 0.0050)
+  symbol c1c2_c2k12  tet: C = +0.017419  C'' = -1.931916e-02  C' = -5.479805e-02   (sigma = 0.0050)
+  symbol one         Eg : C = +0.378689  C'' = +1.139489e-02  C' = -1.204669e-15   (sigma = 0.0050)
+  symbol one         tet: C = +0.378689  C'' = +1.139489e-02  C' = +8.611987e-10   (sigma = 0.0050)
+  symbol c1c2c3      Eg : C = +0.062736  C'' = -9.968434e-02  C' = -1.927471e-14   (sigma = 0.0050)
+  symbol c1c2c3      tet: C = +0.062736  C'' = -9.968420e-02  C' = -1.375123e-09   (sigma = 0.0050)
+  symbol c3          Eg : C = +0.245864  C'' = +1.319276e-02  C' = +1.204669e-15   (sigma = 0.0050)
+  symbol c3          tet: C = +0.245864  C'' = -8.310079e-02  C' = +5.041713e-02   (sigma = 0.0050)
+time 173 s

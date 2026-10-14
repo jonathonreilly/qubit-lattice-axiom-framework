@@ -9699,3 +9699,19 @@ Shared setting for all three:
     - P-TW1b: halved fields for real-representation content only.
 
   Referee running.
+
+- **TW-2 (twins as generations, taste splitting): worker reading SPLIT-SAFE (literal, on the pre-registered Hessian).** A first-order hazard is flagged for the referee.
+  - **The shortest legal taste-split mass:** a face-diagonal hop, cos k_i cos k_j·β⊗(n_l·τ). No nearest-neighbour version exists.
+  - **The splitting is direction-fixed:** the three versions form a T₁ triplet, so no cubic-invariant splitting exists (proved). This breaks covariance (P-TW2a) unless it arises spontaneously.
+  - **Exact reduction:** 2 × 4×4 blocks.
+  - **Needed σ ~ 4e-21 (e–μ) to 6e-17 (b–b′) in grid units.**
+  - **Second-order leak:** +0.124 σ e², i.e. Earth ×8e-11 and clocks ×1e-12. SAFE.
+  - **First-order leak:** the splitting's D4 stabilizer allows a tetragonal-strain-linear mass, +0.0454 σ e² per t.
+    - Under NANOGrav: an m_p/m_e drift of ×4.7 to ×17.8 the clock bound (minimal term, conditional).
+    - With the cos 2k₃ variant: ×0.3 to ×1. A tuned mixture zeroes it (P-TW2b).
+  - **Third generation:** a fourth family is needed. With the minimal term there is no m_b′ window against LHC (conditional).
+  - **Hamming (hw = 1) reading:**
+    - no fourth family, but the splitting is grid-scale (λM_W), with an F1/Wilson-size leak;
+    - the hw = 1 levels already differ at one loop, and strain splits them linearly at Planck strength (coarse, suggested).
+
+  Referee running.

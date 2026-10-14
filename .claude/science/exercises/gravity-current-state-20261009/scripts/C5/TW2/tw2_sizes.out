@@ -1,0 +1,46 @@
+(c) needed taste splittings sigma = (m_heavy - m_light)/2 (RECALLED PDG masses, GeV), and sigma a = sigma/M_P:
+   (e, mu)        m_l 0.000511  m_h 0.1057  sigma 0.05257 GeV  sigma a 4.31e-21  sigma/m_l 103
+   (nu_e, nu_mu)  m_l 0  m_h 0  sigma 0 GeV  sigma a 0.00e+00  sigma/m_l -
+   (u, c)         m_l 0.00216  m_h 1.27  sigma 0.6339 GeV  sigma a 5.19e-20  sigma/m_l 293
+   (d, s)         m_l 0.00467  m_h 0.0934  sigma 0.04437 GeV  sigma a 3.63e-21  sigma/m_l 9.5
+   (tau, tau')    m_l 1.777  m_h 1000  sigma 499.1 GeV  sigma a 4.09e-17  sigma/m_l 281
+   (t, t')        m_l 172.7  m_h 1500  sigma 663.7 GeV  sigma a 5.44e-17  sigma/m_l 3.84
+   (b, b')        m_l 4.18  m_h 1500  sigma 747.9 GeV  sigma a 6.13e-17  sigma/m_l 179
+   (nu_tau, nu')  m_l 0  m_h 50  sigma 25 GeV  sigma a 2.05e-18  sigma/m_l -
+   (third-family partners: vector-like quark 1.5 TeV, lepton 1.0 TeV, nu' 50 GeV > M_Z/2 as placeholders; LHC/LEP limits RECALLED)
+   nucleon leak weight W_N (m_VLq = 1000 GeV) = 12.049 GeV: (u, c) +4.152, (d, s) +0.274, (t, t') +0.125, (b, b') +7.498
+   nucleon leak weight W_N (m_VLq = 1500 GeV) = 15.919 GeV: (u, c) +4.152, (d, s) +0.274, (t, t') +0.215, (b, b') +11.278
+   nucleon leak weight W_N (m_VLq = 3000 GeV) = 27.533 GeV: (u, c) +4.152, (d, s) +0.274, (t, t') +0.488, (b, b') +22.619
+   compare: NF-1 multiplicative weight sum_q m_q<qbar q>_N = 0.275 GeV (x z''); F1 additive weight 13 x M_P
+
+(d) Hessian leak on F2's rows (nucleons; R = (W_N/M_P) Lpp/(13 Hess_F1)):
+   Eg  (B1 under D4[001]): Lpp = +1.2374e-01 e^2 -> R 5.12e-19, mu_rho 1.24e-39 eV^2 m^3/kg (massive sign)
+      Earth crossing (row 1) x8.3e-11 ; detector ground (row 2) x1.2e-10 ; PTA (row 7, suggested) x1.6e-16 ; Galaxy+IGM (row 5) x4.6e-21 ; binary pulsar (row 8, toy forecast) x6.2e+03
+   tet (A1 under D4[001]): Lpp = +3.8000e-02 e^2 -> R 1.57e-19, mu_rho 3.81e-40 eV^2 m^3/kg (massive sign)
+      Earth crossing (row 1) x2.5e-11 ; detector ground (row 2) x3.8e-11 ; PTA (row 7, suggested) x4.8e-17 ; Galaxy+IGM (row 5) x1.4e-21 ; binary pulsar (row 8, toy forecast) x1.9e+03
+   electrons (pair (e, mu), F1 electron weight e^2 at n_e = n_N, f1_sizes.out): mu_rho 1.03e-42 (Earth row x6.9e-14)
+   hot era (F1 mapping, quark pairs (u,c),(d,s),(b,b'),(t,t'); light +sigma, heavy -sigma):
+      T =   150 GeV: m_g^2/H^2 +1.34e-02
+      T =   100 GeV: m_g^2/H^2 +2.08e-02
+      T =    10 GeV: m_g^2/H^2 +1.47e-01
+      T =     1 GeV: m_g^2/H^2 +8.39e-01
+
+(d) clock row (F6 estimator; bound 3.6e-17 /yr):
+   Hessian (Eg): d ln m_e/dQ_E +6.371e-01 (leak + NF-1 multiplicative), d ln m_p/dQ_E +4.199e-01 -> d ln(m_p/m_e)/dQ_E -2.173e-01
+      rate 1.7e-30 .. 2.2e-29 /yr -> x4.6e-14 .. x6.2e-13 of the clock row
+   linear (tet, along the splitting axis), m_VLq = 1000 GeV: d ln m_e/dt +0.467, d ln m_p/dt +0.233 -> d ln(m_p/m_e)/dt_tet -0.234
+   linear (tet, along the splitting axis), m_VLq = 1500 GeV: d ln m_e/dt +0.467, d ln m_p/dt +0.308 -> d ln(m_p/m_e)/dt_tet -0.159
+   linear (tet, along the splitting axis), m_VLq = 3000 GeV: d ln m_e/dt +0.467, d ln m_p/dt +0.533 -> d ln(m_p/m_e)/dt_tet +0.066
+      f_min 1/(16 yr), T_obs 10.0 yr: sigma_a 8.346e-15, LS slope of one component 1.502e-15 /yr, rms hdot(f<1/T) 2.814e-15 /yr -> rate 1.7e-16 .. 3.2e-16 /yr = x4.7 .. x8.8 of the clock row (m_VLq 1.5 TeV)
+      f_min 1/(16 yr), T_obs  5.0 yr: sigma_a 8.346e-15, LS slope of one component 3.422e-15 /yr, rms hdot(f<1/T) 5.016e-15 /yr -> rate 3.8e-16 .. 5.6e-16 /yr = x10.7 .. x15.7 of the clock row (m_VLq 1.5 TeV)
+      f_min 1/(30 yr), T_obs 10.0 yr: sigma_a 1.269e-14, LS slope of one component 2.626e-15 /yr, rms hdot(f<1/T) 3.906e-15 /yr -> rate 3.0e-16 .. 4.4e-16 /yr = x8.2 .. x12.2 of the clock row (m_VLq 1.5 TeV)
+      f_min 1/(30 yr), T_obs  5.0 yr: sigma_a 1.269e-14, LS slope of one component 4.274e-15 /yr, rms hdot(f<1/T) 5.702e-15 /yr -> rate 4.8e-16 .. 6.4e-16 /yr = x13.4 .. x17.8 of the clock row (m_VLq 1.5 TeV)
+      electron side alone: x13.8 of the clock row (f_min 1/16 yr, T_obs 10 yr, LS slope)
+      proton side alone (1.5 TeV): x9.1 of the clock row (f_min 1/16 yr, T_obs 10 yr, LS slope)
+
+(e) a grid-scale third-family twin (no light 4th family): m_b' a = s, sigma = s M_P/2; Earth row via <bbar b>_N:
+   m_b' a = 1e-08 (m_b' = 1.2e+11 GeV): Earth row x4.8e-03 ; clock (Hessian) x5.2e-06 ; clock (linear, b only) x5.3e+08
+   m_b' a = 1e-06 (m_b' = 1.2e+13 GeV): Earth row x4.8e-01 ; clock (Hessian) x5.2e-04 ; clock (linear, b only) x5.3e+10
+   m_b' a = 1e-04 (m_b' = 1.2e+15 GeV): Earth row x4.8e+01 ; clock (Hessian) x5.2e-02 ; clock (linear, b only) x5.3e+12
+   m_b' a = 1e-02 (m_b' = 1.2e+17 GeV): Earth row x4.8e+03 ; clock (Hessian) x5.2e+00 ; clock (linear, b only) x5.3e+14
+   m_b' a = 3e-01 (m_b' = 3.7e+18 GeV): Earth row x1.4e+05 ; clock (Hessian) x1.6e+02 ; clock (linear, b only) x1.6e+16

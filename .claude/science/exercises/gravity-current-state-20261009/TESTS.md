@@ -9535,7 +9535,7 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
 
   Referee running.
 
-**E1. The emergent-coarseness toy: can the neighbour rules make the grid scale stretch with the field, and does that keep masses fixed?** (Pre-registered 2026-10-13. Jon: "run the toy test"; his thought "maybe grid coarseness is a feature of the neighborhood influence rules". Owner thoughts are tested as hypotheses, not imposed.)
+**E1. The emergent-coarseness toy: can the neighbour rules make the grid scale stretch with the field, and does that keep masses fixed?** (Pre-registered 2026-10-14 01:29Z. Jon: "run the toy test"; his thought "maybe grid coarseness is a feature of the neighborhood influence rules". Owner thoughts are tested as hypotheses, not imposed.)
 - **Plain question.**
   - With only nearest-neighbour rules, the scale matter sees is the correlation length ξ, which can be ≫ a near a critical point.
   - If the stretch field changes the couplings along one axis, does ξ change with it, so that long-distance physics is isotropic after relabelling axes (a covariant emergent cutoff)?

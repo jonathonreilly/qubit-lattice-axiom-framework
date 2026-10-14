@@ -1,0 +1,13 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "disposition": "conditional_bounded_theorem_with_partial_narrowing_limits",
+  "no_go_packet_pass": false,
+  "parent_receipt_sha256": "03e769ea4fa24e3e06298814ad9188f2e69276328be886938ee46d4cff4af225",
+  "review_receipt_sha256": "70c6eea076e39f442d7043d0d2b50a9a7ecadef8920b2fe4df04c161ead46976",
+  "review_sha256": "c1d01c472f0d5520fa575ea639e096ddd2884d97876e876bacdb3afee934f287",
+  "root_coverage_sha256": "3ac765cd07f6984a1fc39830563d72e3316fa409ccf24395e72aaf10307e8704",
+  "root_execution_acceptance": false,
+  "source_sha256": "648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c"
+}

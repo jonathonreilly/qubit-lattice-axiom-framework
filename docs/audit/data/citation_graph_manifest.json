@@ -1,6 +1,6 @@
 {
- "edge_count": 15805,
- "node_count": 7023,
+ "edge_count": 15813,
+ "node_count": 7026,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6054,6 +6054,10 @@
    "deps_hash": "5f88f42e7358",
    "out_degree": 2
   },
+  "energy_transfer_correlation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "a6a07e3c4279",
+   "out_degree": 3
+  },
   "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {
    "deps_hash": "423f1f549b6b",
    "out_degree": 4
@@ -6473,6 +6477,10 @@
   "finite_edge_qubit_parity_dictionary_occupation_zeros_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_energy_sector_selection_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "a6a07e3c4279",
+   "out_degree": 3
   },
   "finite_energy_supply_for_marked_collision_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "8916706121e0",
@@ -14197,6 +14205,10 @@
   "lorentz_violation_derived_note": {
    "deps_hash": "7c11d8d637c4",
    "out_degree": 1
+  },
+  "low_energy_phase_rate_optimality_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "b79065af3c13",
+   "out_degree": 2
   },
   "lower_height_transverse_crosses_outside_the_modulus_three_kernel_bounded_theorem_note_2026-10-10": {
    "deps_hash": "d211c1597417",

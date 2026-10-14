@@ -1,0 +1,76 @@
+# Root publication assembly review
+
+Disposition: accepted_for_source_integration. This is the supervising coauthor's
+exact-source packaging/program review, not an independent mathematical audit.
+
+The frozen preparation SOURCE_FREEZE.json has SHA-256
+58e1ee8c3a75b7999dbaf36bfb2043af72a489ef382a7c53cef9baf39d66a7b1.
+The entire 510-line driver has SHA-256
+20ceededeabb0a81a182e4ce73809d0ce2db790fb4d51ac204d315a44a4b359a.
+The target is the clean correlation_worktree at main
+516cb69d8487ff04f8a48e065d3dcbe71d7dd237 on branch
+physics-loop/toe-energy-correlations-20261012.
+
+Root read both complete original-to-publication diffs, every new mathematical
+wrapper paragraph, the complete new driver, the complete driver change from the
+previous reviewed pattern, the identity implementation and declared inputs, and
+the claim/status/conformance/trace/review/no-go/validation/handoff packet. One
+batched return truncated the identity/packet region and one long diff return
+truncated its middle. Narrow follow-up reads covered the omitted material;
+neither truncated output was accepted as a completed read.
+
+The complete 957-line synthesis and its 343-line review, and the complete phase
+source and its 205-line review, were already read at their exact frozen hashes.
+Those mathematical bodies are reused unchanged. Root's own deterministic byte
+check now reconstructed both canonical notes from the archived originals and
+explicit headers/appendices. It checked all 67 frozen members, 46 payload files,
+30 decompressed archive objects and 45 unique original aliases. All source and
+current procedure identities matched. The two identity programs are exactly
+equal after replacing their individual claim identifiers. This byte evidence
+is CORRELATION_PACKAGE_ROOT_BYTE_REVIEW.json and establishes no mathematics.
+
+The correlation wrapper preserves conditional supplied-model, full-Fock and
+ordinary-cell/state hypotheses. Its low partial trace and normalized sector
+compression remain distinct. The companion restricts sharpness to the uniform
+weighted/vector/matched-scalar quantities with spacing-dependent packets;
+positive width, positive energy budget, absolute scalar magnitude and the joint
+spectral multiplier convention are explicit. It does not imply a sharp total
+correlation or fixed smooth-cell rate. Current remains open_gate. There is no
+dependency on PR9499 landing: that source is archived provenance and the needed
+estimates are repeated in the theorem. New interaction, ground-selection and
+smooth-cell-rate work is absent from these two notes.
+
+The two raw projection expressions in the preserved mathematical prose are
+exactly 1_[0,R](H_c) and 1_[0,R](e). The link checker inventories exactly one
+occurrence of each with line/context, classifies only those as notation, and
+checks every other intended local link. A Markdown renderer may display those
+two expressions as links; this minor formatting limitation is accepted without
+silently changing the reviewed proof body. No general formula-link exemption
+or new graph dependency is allowed.
+
+The driver guards source, acceptance, procedures, branch, base, clean state and
+payload membership before installation. It performs no Git mutation. Prepare
+generates an exact footprint and requires root to stage it explicitly. Verify
+checks those exact staged bytes and no unstaged drift before the focused
+include-worktree checker, and rechecks them afterwards. All old complete graph
+nodes and edges must remain unchanged; the only permitted addition is two nodes
+and five edges: correlation to Current/Concrete/Local, phase to correlation and
+Current. Root must inspect the actual generated edges before staging.
+
+Both primary programs check only source identities and exact reconstruction.
+Their canonical caches, the four scratch byte-tamper cases and graph/metadata
+checks execute zero mathematical predicates. Tamper failures are integrity
+controls, not scientific counterexamples. Parent cache status is diagnostic;
+the driver does not rerun parents. The focused gate concerns existing selected
+ledger compatibility and supplies no audit of either new theorem. Complete
+available canonical merged output and raw inner/outer returns are retained;
+the cache API does not expose separate original child stderr.
+
+No material source-integration blocker was found. Actual execution has not yet
+occurred at this acceptance. Root authorizes the bounded prepare and verify
+runs, followed by a regular PR if the exact checks succeed. On failure preserve
+all streams and partial files and diagnose before recovery; do not silently
+change sources or thresholds. Full combined current-main landing checks, strict
+audit lint and formal retained audit are separate later obligations. N1/N5
+readiness remains pending, with no no-go packet PASS or retained promotion.
+No editable prompt file or platform-supplied instruction was modified.

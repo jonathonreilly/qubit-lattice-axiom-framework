@@ -1,0 +1,37 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "compact_patch_note": {
+    "path": "docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "role": "prior generic spectral-ceiling mechanism; section 3 read; no scattering premise used",
+    "sha256": "e0932643275551a7b67d74cf3d42f5b0cb12bdb690ed24c5967232228b965133"
+  },
+  "finite_energy_proposal": {
+    "archived_sha256": "f554bf91ca35673a30ca840c7b358ae8d19407c92a289e454cb43ac720dbcd8d",
+    "live_main_dependency": false,
+    "proposal_head": "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3",
+    "proposal_pr": 9499
+  },
+  "parents": [
+    {
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "role": "Chosen-state current embedding, actual branch dispersions and C25 ordinary-cell norm convergence; conditional open_gate parent."
+    },
+    {
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "role": "C20-C22 actual positive full spin-GNS Fock Hamiltonian."
+    },
+    {
+      "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "role": "Real CAR normalization, physical cell convention, domain facts and even-spin identification."
+    }
+  ]
+}

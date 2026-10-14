@@ -1,0 +1,426 @@
+{
+  "objects": [
+    {
+      "bytes": 278,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/FINITE_ENERGY_CLEAN_CHILD.json",
+          "role": "root_clean_child_receipt"
+        }
+      ],
+      "path": "objects/03e769ea4fa24e3e06298814ad9188f2e69276328be886938ee46d4cff4af225.gz",
+      "sha256": "03e769ea4fa24e3e06298814ad9188f2e69276328be886938ee46d4cff4af225",
+      "stored_sha256": "4ccfbf25821478933e4ffb4199b766c18b20e2ed3398e2cae7b69c2b0bf59170"
+    },
+    {
+      "bytes": 47990,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/CONCRETE_GAPPED_CHAIN_PROBE.md",
+          "role": "author"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/sources/CONCRETE_GAPPED_CHAIN_PROBE.md",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd.gz",
+      "sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "stored_sha256": "bf0aee512f04e3a908f7c9daf07348b20667d35c2493d98cc87c61598fe7a2c6"
+    },
+    {
+      "bytes": 28290,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/CURRENT_PRESERVING_REFINEMENT_PROBE.md",
+          "role": "author"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/sources/CURRENT_PRESERVING_REFINEMENT_PROBE.md",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d.gz",
+      "sha256": "1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d",
+      "stored_sha256": "99b3680d57e086a3b3798871dd1b002ab3855d8b61b5a24c521459211e85b907"
+    },
+    {
+      "bytes": 919,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MAIN_PARENT_COMPARISON.json",
+          "role": "main_parent_refresh"
+        }
+      ],
+      "path": "objects/14c5800674e390b259390417f4c47604e0061ab1040cdee5efb049aaaea9b3ea.gz",
+      "sha256": "14c5800674e390b259390417f4c47604e0061ab1040cdee5efb049aaaea9b3ea",
+      "stored_sha256": "109fc68f6b94dca7d0a076f37ff382fe8d0705f76f99644e42731476b421af68"
+    },
+    {
+      "bytes": 2002,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/PLAN.md",
+          "role": "author"
+        }
+      ],
+      "path": "objects/1e66533611bbb5da2c2d88ad1350b93e9af9613a3c737cf2d9092a8c9d1433c2.gz",
+      "sha256": "1e66533611bbb5da2c2d88ad1350b93e9af9613a3c737cf2d9092a8c9d1433c2",
+      "stored_sha256": "8fc2fe26e34ea9ffd16abd29e74d75975f8ed709fe755b6462a69c3f27b7be98"
+    },
+    {
+      "bytes": 4679,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/FINITE_ENERGY_SECTOR_ROOT_RECONSTRUCTION.md",
+          "role": "author"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINITE_ENERGY_SECTOR_ROOT_RECONSTRUCTION.md",
+          "role": "root_coauthor_or_source_coverage"
+        }
+      ],
+      "path": "objects/25e48e92474605ef3c67c6a9c90334bb192bd3a2f385951fca5c76578c783bf1.gz",
+      "sha256": "25e48e92474605ef3c67c6a9c90334bb192bd3a2f385951fca5c76578c783bf1",
+      "stored_sha256": "356cee744d7460e6ea2d6a4885b15fb32a77508bf4b3e12c2c2f76444503509f"
+    },
+    {
+      "bytes": 1237,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/Finite_energy_sector_root_review_coverage.json",
+          "role": "root_coauthor_or_source_coverage"
+        }
+      ],
+      "path": "objects/3ac765cd07f6984a1fc39830563d72e3316fa409ccf24395e72aaf10307e8704.gz",
+      "sha256": "3ac765cd07f6984a1fc39830563d72e3316fa409ccf24395e72aaf10307e8704",
+      "stored_sha256": "4410e47659e58b27089bf15e599dad5eccceaba77cb5ac7b5468fecd04d9926f"
+    },
+    {
+      "bytes": 397,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/CORE_FREEZE.json",
+          "role": "author"
+        }
+      ],
+      "path": "objects/3b7591ce0d50c8a930fe8bf655491d5f9f8df4d832159ccd4300c9ab7479392e.gz",
+      "sha256": "3b7591ce0d50c8a930fe8bf655491d5f9f8df4d832159ccd4300c9ab7479392e",
+      "stored_sha256": "7efbdd23125bafe7f8d8087e27cc19d8414ea7046b14bd377510a759f0c02568"
+    },
+    {
+      "bytes": 1302,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/source_manifest.json",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/4359b7ab209fb8dceb2587fb973ae0e6e7fc2816180603c305c72caaa015fe70.gz",
+      "sha256": "4359b7ab209fb8dceb2587fb973ae0e6e7fc2816180603c305c72caaa015fe70",
+      "stored_sha256": "5feb3937c86274e7b98e729517d02eae5942ff30c03990d645b1761d116873d4"
+    },
+    {
+      "bytes": 360,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/query_0.json",
+          "role": "root_context_only_search"
+        }
+      ],
+      "path": "objects/44272ea30d9a012b95719a5ecd03389f88a4088c1d6a8c4cbcdd820aeb197b71.gz",
+      "sha256": "44272ea30d9a012b95719a5ecd03389f88a4088c1d6a8c4cbcdd820aeb197b71",
+      "stored_sha256": "bea73b28bb3758bbd353a27b2e28dc814fcae7a4faacdb93d692fb038203e060"
+    },
+    {
+      "bytes": 10406,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/frozen/FINITE_ENERGY_SECTOR_SELECTION_PROBE.md",
+          "role": "author"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/sources/FINITE_ENERGY_SECTOR_SELECTION_PROBE.md",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/50587a7c76b476c5e358873e1ab957923f6b27e7553bfcffec8e50c1c106142f.gz",
+      "sha256": "50587a7c76b476c5e358873e1ab957923f6b27e7553bfcffec8e50c1c106142f",
+      "stored_sha256": "3c95a577cf4debd15b58ab7a175e364502d750d72c284a0d1d6f6c64fa8f42e8"
+    },
+    {
+      "bytes": 17673,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/query_0.stdout",
+          "role": "root_context_only_search"
+        }
+      ],
+      "path": "objects/5450b7d602dc63a66c5a4fe1487df68f92839cbf69c9b46dc7c7b2e97f291b0e.gz",
+      "sha256": "5450b7d602dc63a66c5a4fe1487df68f92839cbf69c9b46dc7c7b2e97f291b0e",
+      "stored_sha256": "60996b4e4e6e1e470a5c82bd738956704aff0842de9fdfeff0ba567723c070ab"
+    },
+    {
+      "bytes": 2747,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/FINAL_SOURCE.diff",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/59cf9e89cf82ea9238644f56a8ca1139e98459a47068274cf8e68087e50394a4.gz",
+      "sha256": "59cf9e89cf82ea9238644f56a8ca1139e98459a47068274cf8e68087e50394a4",
+      "stored_sha256": "776d98656c22267b8075893ef3d88ad6c022627a0101759ff945992f56c2c1d9"
+    },
+    {
+      "bytes": 2897,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/FINAL_IDENTITY_CHECK.json",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/62bcb307335cec8e5ad8fde3c9b97fc83e188dc5f33e8208774607a5bb2d086c.gz",
+      "sha256": "62bcb307335cec8e5ad8fde3c9b97fc83e188dc5f33e8208774607a5bb2d086c",
+      "stored_sha256": "ed4c228465b771def686df7b7454da9f24523eef3fbee92998a07271670b58a2"
+    },
+    {
+      "bytes": 12836,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINITE_ENERGY_SECTOR_SELECTION_PROBE.md",
+          "role": "author"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/FINAL_SOURCE.md",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c.gz",
+      "sha256": "648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c",
+      "stored_sha256": "e33601476b3fe20449cd4e33827e6544ff4e39e5aa016e30c460dc83d6582894"
+    },
+    {
+      "bytes": 2877,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/main_parent_refresh/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md.diff",
+          "role": "main_parent_diff"
+        }
+      ],
+      "path": "objects/6dd065ae1cebc65bca579fe5e1330015afe46920012dc3f79a677356eadbd05c.gz",
+      "sha256": "6dd065ae1cebc65bca579fe5e1330015afe46920012dc3f79a677356eadbd05c",
+      "stored_sha256": "36bc184f9d4a3233ea5153fd23349915d1ac7b2bd9f5099ea8646accba82bdb7"
+    },
+    {
+      "bytes": 1912,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/RECOVERY.md",
+          "role": "author"
+        }
+      ],
+      "path": "objects/6ed5e5ac2a0de15f0f3b025814502630de9da7b1b32e303ebdc1af227f5b2a7e.gz",
+      "sha256": "6ed5e5ac2a0de15f0f3b025814502630de9da7b1b32e303ebdc1af227f5b2a7e",
+      "stored_sha256": "25c4420c2158aab642fe5c8809e17c2aca4d6be142e8412afffc6a34560de636"
+    },
+    {
+      "bytes": 495,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/FINAL_REVIEW_RECEIPT.json",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/70c6eea076e39f442d7043d0d2b50a9a7ecadef8920b2fe4df04c161ead46976.gz",
+      "sha256": "70c6eea076e39f442d7043d0d2b50a9a7ecadef8920b2fe4df04c161ead46976",
+      "stored_sha256": "616382fdc9bb3145031f4a9b2ca31ea42049e1c5b76f0f675c658e5dce876044"
+    },
+    {
+      "bytes": 32508,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/sources/LOCAL_EVEN_CONTINUUM_PROBE.md",
+          "role": "author"
+        }
+      ],
+      "path": "objects/7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b.gz",
+      "sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "stored_sha256": "d867d8c8bec4ba8a4cc43a2185ff8e5cc9d19207a7c800191231ec109a4a6f16"
+    },
+    {
+      "bytes": 272,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/FINAL_RECEIPT.json",
+          "role": "author_receipt"
+        }
+      ],
+      "path": "objects/7d0c75f18fd7715c994c4d1f4b009e80abf02311bd77157ba43cd0bc873fa8ea.gz",
+      "sha256": "7d0c75f18fd7715c994c4d1f4b009e80abf02311bd77157ba43cd0bc873fa8ea",
+      "stored_sha256": "972f2451c7336b76deaa0cfa952e73a5f7d550b75919d3e70fc2b082e3d7103a"
+    },
+    {
+      "bytes": 403,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINITE_ENERGY_SECTOR_ROOT_SEAL.json",
+          "role": "root_coauthor_or_source_coverage"
+        }
+      ],
+      "path": "objects/82d059783d2143fc970b408343364546c06409d80a341d2a6667842a11296b65.gz",
+      "sha256": "82d059783d2143fc970b408343364546c06409d80a341d2a6667842a11296b65",
+      "stored_sha256": "bc6553242b6efcd0b41760f130d85ba1732fb7bc4b29637329a692afe8664af0"
+    },
+    {
+      "bytes": 4136,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/final_manifest.json",
+          "role": "author_manifest"
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection_review/final_author_manifest.json",
+          "role": "review_support"
+        }
+      ],
+      "path": "objects/848732c8688ff3099bc0ae7ad9beddf78665ce35530af8077dee7a680eebcac8.gz",
+      "sha256": "848732c8688ff3099bc0ae7ad9beddf78665ce35530af8077dee7a680eebcac8",
+      "stored_sha256": "71b743214ffd81e90b9e0a75934ac0610a8f30ac2c158905b86ad522ae7064a9"
+    },
+    {
+      "bytes": 3639,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/novelty_extra_0.txt",
+          "role": "root_context_only_search"
+        }
+      ],
+      "path": "objects/952d2615771eb67686da634b4343128ac37ed9700e7a358a6910b238ce1f4f86.gz",
+      "sha256": "952d2615771eb67686da634b4343128ac37ed9700e7a358a6910b238ce1f4f86",
+      "stored_sha256": "3c8fc3f5834f258d815e0bb2c67d939f19383242dde5e3b970a2db01f830b97f"
+    },
+    {
+      "bytes": 2054,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/main_parent_refresh/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md.diff",
+          "role": "main_parent_diff"
+        }
+      ],
+      "path": "objects/9a7b1aa114de6e8ee595ac7c7bf873bc2e50cfc383fc26328aa58699041f7330.gz",
+      "sha256": "9a7b1aa114de6e8ee595ac7c7bf873bc2e50cfc383fc26328aa58699041f7330",
+      "stored_sha256": "65dbe6e47cab4cf436098d14dcde3255860f098482296247579313263eedc405"
+    },
+    {
+      "bytes": 361,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/novelty_extra_0.json",
+          "role": "root_context_only_search"
+        }
+      ],
+      "path": "objects/9fd655666ee11d05617ed41b5a7a6285eee496be6993a0f250ae7eebb8beb778.gz",
+      "sha256": "9fd655666ee11d05617ed41b5a7a6285eee496be6993a0f250ae7eebb8beb778",
+      "stored_sha256": "66043d72b38f996c860da038743ee7594f2d2beb6059366c5c3ab0387bbed18f"
+    },
+    {
+      "bytes": 2009,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/FINAL_IDENTITY_CHECK.json",
+          "role": "author"
+        }
+      ],
+      "path": "objects/ab05958fa919e0d4165581b6b88a18706fd8b45bc72921c372ef33f02b21755c.gz",
+      "sha256": "ab05958fa919e0d4165581b6b88a18706fd8b45bc72921c372ef33f02b21755c",
+      "stored_sha256": "d8ad00b68aee30a49a829df72854d786848eb519c3c19de351f672f2d1453034"
+    },
+    {
+      "bytes": 2748,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/FINAL_APPENDIX.diff",
+          "role": "author"
+        }
+      ],
+      "path": "objects/bd82196b02fc9f634313ce2f3e68dfd0b58315679e4bd5a69dc73de89c6a85c6.gz",
+      "sha256": "bd82196b02fc9f634313ce2f3e68dfd0b58315679e4bd5a69dc73de89c6a85c6",
+      "stored_sha256": "c2d3784ef2f9f155fe98f130573e94cca42c3ecb91f50c5258694fdcb093aba4"
+    },
+    {
+      "bytes": 292,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/PLAN_FREEZE.json",
+          "role": "author"
+        }
+      ],
+      "path": "objects/bf105d4689ab6c9551de9e80543d0b4b28be08e5a7f9fea302b4a14d9181ac50.gz",
+      "sha256": "bf105d4689ab6c9551de9e80543d0b4b28be08e5a7f9fea302b4a14d9181ac50",
+      "stored_sha256": "7cc36875c42464348656ceffec66e39a53eeeb89a1ceded928a6f547b9e762fa"
+    },
+    {
+      "bytes": 5613,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINITE_ENERGY_SECTOR_SELECTION_REVIEW.md",
+          "role": "final_review"
+        }
+      ],
+      "path": "objects/c1d01c472f0d5520fa575ea639e096ddd2884d97876e876bacdb3afee934f287.gz",
+      "sha256": "c1d01c472f0d5520fa575ea639e096ddd2884d97876e876bacdb3afee934f287",
+      "stored_sha256": "90c02a09cc66d93115faf42f198cc3720e6aa61452034903a9a08fc8ba1097c6"
+    },
+    {
+      "bytes": 528,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/ROOT_EXPOSURE.json",
+          "role": "author"
+        }
+      ],
+      "path": "objects/c1f4ec238082615307a8c3a0f2aabcf2ff1fa3b228765bbce24332ce25f51ab5.gz",
+      "sha256": "c1f4ec238082615307a8c3a0f2aabcf2ff1fa3b228765bbce24332ce25f51ab5",
+      "stored_sha256": "79dc101596c9068c711d2e271f23d03cf6b85b16c0fd17f82fb70b424496b17e"
+    },
+    {
+      "bytes": 0,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/query_0.stderr",
+          "role": "root_context_only_search"
+        }
+      ],
+      "path": "objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "bytes": 3672,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/main_parent_refresh/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md.diff",
+          "role": "main_parent_diff"
+        }
+      ],
+      "path": "objects/f4205553595de8e9f81e3fd49a0617ceafc162d01493b8ac9526c394faa0818f.gz",
+      "sha256": "f4205553595de8e9f81e3fd49a0617ceafc162d01493b8ac9526c394faa0818f",
+      "stored_sha256": "8d19f312f5c797f453532fc56e57fcfc79e76a79d7b9718c9f6cfb6b1092ff4f"
+    },
+    {
+      "bytes": 1227,
+      "origins": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finite_energy_sector_selection/source_inventory.json",
+          "role": "author"
+        }
+      ],
+      "path": "objects/f9909a91e370d3d21772d13cf0707dadbbd999c5fd7fa7ce8b5dbe5dff293f4f.gz",
+      "sha256": "f9909a91e370d3d21772d13cf0707dadbbd999c5fd7fa7ce8b5dbe5dff293f4f",
+      "stored_sha256": "564991970250b89478b947d3b71231b1d1a7ee0df8bbbec0e567e08e0ee7fecc"
+    }
+  ],
+  "schema": "deduplicated_exact_source_archive_v1",
+  "scope": "Complete author/review/root source provenance and main-parent refresh; no scientific execution or proof verdict."
+}

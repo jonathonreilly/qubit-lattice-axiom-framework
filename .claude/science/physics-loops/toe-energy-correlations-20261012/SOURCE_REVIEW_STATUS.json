@@ -1,0 +1,22 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "audit_verdict_applied": false,
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "branch": "physics-loop/toe-energy-correlations-20261012",
+  "current_parent_status": "open_gate",
+  "disposition": "conditional_bounded_theorems_with_partial_narrowing_limits",
+  "final_assembly_review": "pending",
+  "final_assembly_review_source": null,
+  "mathematical_predicates_executed": 0,
+  "no_go_packet_pass": false,
+  "phase_review_sha256": "a78dea4566d2046c3cf1da57e2cff5e111d46e14bbed00edd01453e50935e610",
+  "phase_source_sha256": "255d378681114973fb0c2bed0ddcfbcab668a256ff091f801f3d800989250042",
+  "review_scope": "Shared-model ordinary source-exposed checks; no blinded, model-diverse or audit independence.",
+  "root_is_coauthor": true,
+  "root_synthesis_review_acceptance_sha256": "f322d9262724208ce26eea6f181e81eefef73cbbf162fdf3eb1af278ec71895b",
+  "scientific_mutations_executed": 0,
+  "source_sha256": "d63214a0d6365e1ae339f63caad67526bdd942130f76b064b13c2b7b2365b49c",
+  "synthesis_exact_source_review": "complete_no_required_repair",
+  "synthesis_exact_source_review_sha256": "009043c543e809e4a19483bdc3d2932e61ff92170f1f76428cf8e851e3c48e57"
+}

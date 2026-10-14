@@ -1,0 +1,81 @@
+{
+  "frontmatter": "---\ntitle: Critical Dirichlet mediator paths for a supplied finite clock program\nclaim_id: critical_mediator_clock_data_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: critical Dirichlet mediator on a fixed finite data inventory; full auxiliary gap, prepared-vacuum reference bound and fixed-g sufficient polynomial penalty with full counterterm/scalar/energy/precision prices\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional explicit critical-path finite-time estimate for unchanged finite H with fixed-g sufficient N^14 penalty; no balanced-coupling, native, whole-apparatus ordinary-NN, end-to-end efficiency or common-cap theorem\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"positive_open_path_clock_bounded_theorem_note_2026-10-14\", \"finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/critical_mediator_clock_data_identity_2026_10_14.py\nnext_trace_action: separate publication-source review, root integration and regular PR, then independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "literal_assembly_footer_preserved_as_history": true,
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_source_assembly/CANDIDATE_NOTE.md",
+      "accepted_candidate_sha256": "d974dd9a655718707c25eb16dd9d1cb883164405d735859147c239277e2cddc4",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 31702,
+          "byte_start_inclusive": 6264,
+          "bytes": 25438,
+          "id": "CRITICAL_MEDIATOR",
+          "line_end_inclusive": 323,
+          "line_start_inclusive": 46,
+          "sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path/DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 7903,
+      "diff_sha256": "1fd07c929788b7177987e04185f8bbd99018e03c5ce3cd74995cdf1670213356",
+      "diff_stored_sha256": "999d4c4573cfdbc8ab6472ee6f598485162d0a169aa2c6f0cc1f45ed71e19730",
+      "fromfile": "CANDIDATE_NOTE.md",
+      "note": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path/DERIVATION.md",
+          "source_sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9"
+        }
+      ],
+      "published_bytes": 32063,
+      "published_lines": 327,
+      "published_sha256": "7c8503ca162de431ce2fec1e8189a37b877a25920cce7bdcf9e7419a3f66854b",
+      "stored_bytes": 3124,
+      "tofile": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "3f5e450c9542db15361561176d5940cd688f16d1384c6d221eb57afb0ef3b6f0",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 6335,
+    "diff_sha256": "9c897f55788318dfede69d5853c43d32ee68ba33d01df764ab33a6be10d34497",
+    "diff_stored_sha256": "652e143c64fd2dcbf90ce9631ef4a709f1c8b47f7901e45694caebf865cd867e",
+    "fromfile": "wrappers/note_prefix.md",
+    "stored_bytes": 2593,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This new assembly remains pending root review. It carries no retained/audit status or canonical execution authority.",
+      "rendered": "Root accepted source assembly3f5e450c under CRITICAL_MEDIATOR_ASSEMBLY_ROOT_ACCEPTANCE.json0eb42090 and review55724844. This publication source and driver require separate exact root acceptance. It carries no retained/audit status or canonical execution authority.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "[accepted open-path source](../joint_open_path_clock_consistency/DERIVATION_CURRENT.md)",
+      "rendered": "[Accepted open-path waveform](POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "[earlier mediator source](../joint_local_clock_data_bridge/DERIVATION.md)",
+      "rendered": "[Earlier mediator construction](FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Actual future canonical and stack-parent bindings remain pending.",
+      "rendered": "Actual regular stack parent PR9569 at f51da3b003aa1854e7c1ed4ce8bea753e80aeef1 on physics-loop/toe-local-clock-data-20261014 is bound from root receipts. PARENT_BINDINGS.json separately records the canonical waveform import and rederived predecessor attribution; ancestry supplies no theorem. The graph proposal follows these actual citations and has not been executed.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The later balanced-coupling corollary is a separate unadopted result and is not part of this note.",
+      "rendered": "The later balanced-coupling corollary is separate and is not adopted by this note, irrespective of its own later acceptance status.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

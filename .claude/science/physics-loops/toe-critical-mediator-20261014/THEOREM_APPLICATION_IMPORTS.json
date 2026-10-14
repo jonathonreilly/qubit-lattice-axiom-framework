@@ -1,0 +1,31 @@
+{
+  "ancestry_is_not_import": true,
+  "attributed_complete_body_count": 1,
+  "attribution_sources": [
+    "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14"
+  ],
+  "balanced_or_record_window_theorem_imported": false,
+  "canonical_citation_count": 2,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9",
+  "generic_mediator_gadget_novelty_claim": false,
+  "imported_complete_body_count": 1,
+  "mathematical_parent_count": 1,
+  "mathematical_parents": [
+    "positive_open_path_clock_bounded_theorem_note_2026-10-14"
+  ],
+  "native_or_common_cap_or_whole_apparatus_NN": false,
+  "other_controller_or_history_theorem_imported": false,
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "OPEN_PATH_CLOCK",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "EARLIER_MEDIATOR",
+      "role_class": "attributed_predecessor_rederived"
+    }
+  ]
+}

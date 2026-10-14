@@ -1,0 +1,2 @@
+# NT-1 kernel pool=pool_K2c_wgsearch_hard_O_open_Lt12_seed4401.npz Lt=12 k=20 model=11112 delta=0.6 s_k=-1 transport=Richardson R(N)=(4W(2N)-W(N))/3
+G2 (R8): max |d ln rho| under gauge transformations 1.57e-08 -> PASS; G3: Theta phase c -2.20474246 spread 1.03e-13, |Re| 4.3e-14 -> PASS; min|H| 0.502 [0s]

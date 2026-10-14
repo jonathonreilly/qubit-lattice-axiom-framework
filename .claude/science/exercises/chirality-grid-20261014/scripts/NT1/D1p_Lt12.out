@@ -1,0 +1,10 @@
+# D1' pool=pool_K2c_wsearch_hard_O_open_Lt12_seed1401.npz Lt=12 flux insertion between slices t=2 and t=3 (slice index 7|8); K(s) = current through slice boundary s -> s+1
+[11112] sum_L e^2 - sum_R e^2 = 0; min|H| 0.455; mean dK(s), s = 0..Lt-1:
+   -1.33e-09 -6.40e-09 -3.43e-08 -1.57e-07 -8.72e-07 -7.10e-07 +8.24e-06 -3.30e-04 -5.08e-04 -9.06e-04 -2.25e-03 -2.78e-15
+   prediction for a pure (coef/2pi) F/2 flux term on the far side: -0.000e+00
+[L1] sum_L e^2 - sum_R e^2 = 1; min|H| 0.885; mean dK(s), s = 0..Lt-1:
+   +1.26e-09 +9.77e-09 +7.19e-08 +5.30e-07 +4.00e-06 +3.07e-05 +2.50e-04 +2.30e-03 +4.35e-03 +4.63e-03 +4.66e-03 -9.29e-16
+   prediction for a pure (coef/2pi) F/2 flux term on the far side: -7.958e-03
+[345] sum_L e^2 - sum_R e^2 = 0; min|H| 0.003; mean dK(s), s = 0..Lt-1:
+   -3.37e-07 -1.13e-06 -4.87e-06 -1.16e-05 -5.04e-05 -8.33e-05 +1.61e-04 -9.95e-03 -1.44e-02 -1.84e-02 -3.82e-02 +8.68e-02
+   prediction for a pure (coef/2pi) F/2 flux term on the far side: -0.000e+00

@@ -201,3 +201,13 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
     - the circulant lemma does not suppress the CKM-broken down sector.
   - **R2:** confirmed conditionally. **Correction:** the protection is the manifest cutoff symmetry [H_X2, Q_X] = 0, not anomaly freedom; electroweak breaking leaves U(1)_{B−L} (X + 4Y), not bare X.
   - **R3:** arithmetic confirmed (Γ formula, Super-K 2.4e34 yr, 1/a ≳ 1.95e16 GeV at c_eff = 10). **Corrections:** the "4800×" holds only at the representative point (580–8100× across ranges); PDK-SAFE is conditional on the assumed c_eff ≤ 10, and X2's leakage coefficient is not derived.
+
+**NT-1 result (22:16Z; same family; referee launched): CHI-RP-FAIL.**
+- **Setup:** a genuinely chiral, anomaly-free 2D U(1) measure ("11112": four left-handed charge-1 Weyl fermions plus one right-handed charge-2). Overlap Weyl determinants; Lüscher's abelian phase (straight-path transport plus a gauge-restoring current).
+- **Checks:** exactly gauge invariant (1e-7 to 1e-8); reflection condition ρ(θU) = conj ρ(U) to 1e-13, so the kernel is Hermitian.
+- **Result:** the kernel has a certified negative eigenvalue on 4/4 W-matched pools (open time, Lt = 12 and 20), at 4,600–13,600 × the error estimate. The Wilson and pure-gauge controls are PSD.
+- **Power reference:** the vector-like K2c values are reproduced to every printed digit. The chiral violation is 4.4–4.7× larger.
+- **Mechanism:** the phase plays no role on these witnesses. The kernel equals the modulus kernel, and |ρ_χ| = |det D(1)|²|det D(2)|^{1/2}. So the failure is the overlap's own non-positivity, carried over to the chiral theory.
+- **Not tested:** anomaly cancellation (at Lx = 2 even an anomalous single Weyl fermion is gauge invariant), the torus, Lx ≥ 4, 4D, non-abelian groups, 3-4-5-0.
+- **Consequence:** the chiral measure is no escape from K2c's failure, so the X3 contingency stays triggered.
+- **Deviations:** registered gate G4 failed and was replaced by Richardson extrapolation before any kernel was computed; a sign bug was fixed (either sign gives FAIL).

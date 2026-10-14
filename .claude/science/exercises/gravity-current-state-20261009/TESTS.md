@@ -9607,3 +9607,52 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
   - **(e) A transmuted scale (2D O(N), N = ∞) shifts only in proportion to itself.** A composite Higgs at Λ ~ 10 TeV would pass F6's clock row by ~5.6e11 (suggested; conditional). It does not cover F1's fermion channel or the Wilson tadpole.
 
   Referee running.
+
+**TW-1, TW-2, TW-3. Twins: halving, generations, symmetric gapping.** (Pre-registered 2026-10-14 12:58Z. Jon: "run it all", after asking "could twin particles be matter and antimatter?")
+
+Shared setting for all three:
+- The staggered (one-mode-per-site) edge of NF-1: the root's odd box symbol s at b_f = 0.909103708, r = 0, continuous time.
+- The SF strain and Psym links as in F1/NF-1.
+- NF-1's referee: Θ and P_stag force Σ(0, 0) = 0, but U(1)_ε is not exact. The taste count gives 2 Dirac tastes per staggered field, and taste splitting breaks Θ.
+- Memory: ≤ 0.5 GB per run, one process at a time.
+
+**TW-1. Twin = antiparticle (Majorana/reduced-staggered halving), field by field.**
+- **Plain question.** Can the second taste be identified with the charge conjugate of the first, halving the count? For which SM fields is that gauge-invariant (the reduction needs the representation to be real or pseudo-real)? And do Θ/P_stag, and so the strain zero, survive the halving?
+- **Probes.**
+  - (a) Construct the reduced field for 3D Hamiltonian staggered fermions with continuous time, and state its count (Weyl/Majorana per reduced field).
+  - (b) Classify each SM field per gauge factor (SU(3), SU(2), U(1)_Y; also SO(10) and Pati–Salam embeddings): real, pseudo-real or complex.
+  - (c) Does the reduced law keep a symmetry forcing Σ(0, 0) = 0 under strain? Check it, with a control.
+  - (d) Can any grouping of one SM generation (with or without ν_R), or of SM + mirror, be written in reduced form with all gauge charges exact?
+- **FIXED readings.**
+  - **HALVE-WORKS:** a reduced, gauge-invariant form exists for the full SM content, with the strain zero kept.
+  - **HALVE-PARTIAL:** it works for some factors only (name which), or it needs an embedding/extra content (name it).
+  - **HALVE-FAILS:** no SM field admits it, or the reduction destroys the strain zero.
+  - **OPEN:** otherwise.
+- **Expectation.** HALVE-PARTIAL: SU(2) doublets yes; U(1)_Y and colour triplets no, unless the content is paired with its mirror.
+
+**TW-2. Twins as generations with realistic taste splitting: how much strain leak comes back?**
+- **Plain question.** NF-1's twins are degenerate; observed generations are not (m_μ/m_e ≈ 207, m_τ/m_μ ≈ 17). Splitting the twins needs Θ-breaking terms. Compute the additive-mass strain Hessian that splitting reopens, and size it against the clock and Earth rows (F6/F2 estimators).
+- **Probes.**
+  - (a) A minimal taste-splitting term family (taste-non-singlet mass, or an ε-odd hop) with strength σ.
+  - (b) The Hessian against σ, at one loop under SF, converged.
+  - (c) The σ needed for the observed splittings.
+  - (d) The sizes against the rows.
+  - (e) The third-generation count: is an extra vector-like family needed?
+- **FIXED readings.**
+  - **SPLIT-SAFE:** the leak at the needed σ is below every row.
+  - **SPLIT-HAZARD:** the leak exceeds a row (name it).
+  - **OPEN:** otherwise.
+- **Expectation.** SPLIT-HAZARD. A Θ-breaking splitting needed at grid-scale size reopens the channel, ∝ σ.
+
+**TW-3. Symmetric mass generation toy: can interactions gap the mirror twins without breaking the protecting symmetry, keeping the strain zero?**
+- **Plain question.** Interactions that respect the symmetry can gap special counts of fermions without any bilinear mass (Fidkowski–Kitaev: 8 Majoranas in 0+1D; 16 Weyl in 3+1D; recalled).
+- **Probes.**
+  - (a) Exact diagonalization of a minimal symmetric-gapping cluster (8 Majoranas, SO(7)-invariant quartic). Check: no bilinear mass is allowed, the spectrum is gapped, and the ground state is unique.
+  - (b) A chain or small-lattice version under anisotropic (strained) hopping. Is the gap symmetric, and is a bilinear (strain-dependent) mass still forbidden?
+  - (c) What sets the gap's strain dependence: multiplicative (∝ the gap itself) or additive?
+  - (d) The count: does one SM generation with ν_R (16 Weyl) match the required multiple? What would the twins/mirrors on our staggered edge need?
+- **FIXED readings.**
+  - **SMG-PROTECTS:** the gap opens symmetrically, the bilinear stays forbidden under strain, and the gap's strain response is multiplicative, all checked.
+  - **SMG-LEAKS:** strain induces a symmetry-allowed additive mass in the light sector (name it).
+  - **OPEN:** otherwise.
+- **Expectation.** SMG-PROTECTS in the toy. The open part is whether the 3+1D staggered mirror content admits it; that goes to the chirality exercise.

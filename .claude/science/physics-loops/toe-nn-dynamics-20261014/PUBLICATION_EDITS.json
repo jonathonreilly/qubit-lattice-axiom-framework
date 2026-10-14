@@ -1,0 +1,76 @@
+{
+  "frontmatter": "---\ntitle: Literal L4 nearest-neighbor dynamics with returned dirty transit\nclaim_id: literal_l4_nearest_neighbor_dynamics_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed literal L4 full-Hamiltonian synthesis on arbitrary active/transit/reference input; supplied scheduled NN controls after drift removal or with charged residual\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: finite supplied-control synthesis with emitted Pauli ledger and selected macro, full schedule prescribed not expanded; identity runner evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\", \"finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\", \"openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02\", \"recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03\"]\nrunner: scripts/literal_l4_nearest_neighbor_dynamics_identity_2026_10_14.py\nnext_trace_action: separate root review and guarded integration of this publication package, then regular PR and independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "c1bf9e1829b880f14f6a425a00f1b7224713e209104179cf4a99f43b89749d70",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 53901,
+          "byte_start_inclusive": 13964,
+          "bytes": 39937,
+          "id": "NN_DYNAMICS",
+          "line_end_inclusive": 460,
+          "line_start_inclusive": 88,
+          "sha256": "12cba56f7e62e4e9d8b55682d1110fb8764754a49ffb51365423174e28a61255",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/cores/NN_DYNAMICS_DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 9603,
+      "diff_sha256": "0da03745250b14db9145cdee4d8ddda0e6cedbed86757648aae1530595f41d7e",
+      "diff_stored_sha256": "ea7848b61c6c1bac79cf0f97878afeccf4f609884c0b4ec13307e96cbeb4f092",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/LITERAL_L4_NEAREST_NEIGHBOR_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/cores/NN_DYNAMICS_DERIVATION.md",
+          "source_sha256": "12cba56f7e62e4e9d8b55682d1110fb8764754a49ffb51365423174e28a61255"
+        }
+      ],
+      "pieces_scope": "Whitespace source-identity projection only; complete reconstruction uses frontmatter, rendered wrapper and unchanged accepted remainder.",
+      "published_bytes": 53901,
+      "published_lines": 460,
+      "published_sha256": "622b5e56ceb2b5ba9bf6ed22b5e9d53a5d98c21bb6b25ae7ff484489ef1483c7",
+      "stored_bytes": 3774,
+      "tofile": "docs/LITERAL_L4_NEAREST_NEIGHBOR_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "21abdfcc9933206371386b9398fbc6a59d105ba0cc998924b9931529427d4bda",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 7763,
+    "diff_sha256": "e723ccbfca3d8c681c4fda71c4ce3aef04489e9a54e3421ea85223a142a571d8",
+    "diff_stored_sha256": "9ff09d34a0da27c502b283cfbc51224f678b6ac2d85f0636f3b6b1f61c7708b6",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 3094,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This new wrapper, extraction and evidence assembly await their own substantive root review.",
+      "rendered": "This wrapper, extraction and complete evidence assembly were conditionally accepted under 83dcb1b758e96a507ed392243072a5869e7dc66e58b97be5d61542ead274d6e2 after root review 6bc5bfdbbbab83d43ddc7f164cc3403f0f05d1f92f2c40ca63a3e3ff29a438dd. This new publication rendering and driver require separate exact root acceptance.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "There are exactly two direct scientific parents, with these current complete canonical bodies:",
+      "rendered": "There are exactly two direct scientific parents, the [joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md) and [finite penalty](FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md), with these current complete canonical bodies:",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Cycle870/883 and the bounded next-route screen supply declared overlap/provenance context.",
+      "rendered": "[Cycle 870 returned routing](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md) and [Cycle 883 return](RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md), with the bounded next-route screen, supply limited overlap/provenance attribution. These two attribution citations are graph edges but not mathematical theorem imports; the publication has four actual canonical citations and exactly two mathematical parents.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Current source assembly, later canonical publication and independent retained audit remain distinct actions owned by root.",
+      "rendered": "Source assembly acceptance, review and execution of this new canonical publication package, and independent retained audit remain distinct actions owned by root.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

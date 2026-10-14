@@ -1,0 +1,136 @@
+{
+  "actual_parent_head": "151ba56ee62482404de144d90bf25d3a401d96f7",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-binary-admission-20261014",
+    "createdAt": "2026-10-14T12:23:39Z",
+    "headRefName": "physics-loop/toe-geometric-time-20261014",
+    "headRefOid": "151ba56ee62482404de144d90bf25d3a401d96f7",
+    "isDraft": false,
+    "number": 9545,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "Refine local Gauss-penalty recovery with a geometric time bound",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9545"
+  },
+  "all_markdown_note_targets": [
+    "JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+    "RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 49887,
+      "byte_start_inclusive": 10651,
+      "canonical_path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/archive/inputs/00_34cbe355c3cd_DERIVATION.md",
+      "source_sha256": "34cbe355c3cd643e3eb3233560fa53259b5803fa1114e4c8eedabbb40475dbca"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 44362,
+      "byte_start_inclusive": 13350,
+      "canonical_path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_nn_dynamics_source_assembly/archive/inputs/01_bb2817d3ac9a_DERIVATION.md",
+      "source_sha256": "bb2817d3ac9a2f986dd1abcd423331214195f4f627601949f74ca75af669bc14"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 49944,
+      "claim_id": "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Accepted author/separate/root coverage at exact pins; no new scientific review",
+      "historical_role_status": "Quotation from accepted assembly source map; not a fresh preparer read claim",
+      "historical_source_exposure_role": "canonical mathematical parent; exact complete relevant primary body",
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "markdown": "[joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "212a94bb9cbd2a5d53a227d7d8103b7eca5cc018ec8bb5ca2c86c0ca660c8aef",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 110137,
+      "claim_id": "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Accepted author/separate/root coverage at exact pins; no new scientific review",
+      "historical_role_status": "Quotation from accepted assembly source map; not a fresh preparer read claim",
+      "historical_source_exposure_role": "canonical mathematical parent; exact complete relevant primary body",
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "markdown": "[finite penalty](FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "437f2f4e94aa93038173cd138c5f6b9ad4ebdc4fbc7416428cfa13192c9e4ff4",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+      "bytes": 31413,
+      "claim_id": "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Accepted author/separate/root coverage at exact pins; no new scientific review",
+      "historical_role_status": "Quotation from accepted assembly source map; not a fresh preparer read claim",
+      "historical_source_exposure_role": "Complete 574 lines read in ranges 1-200,201-420,421-574. Exact Pauli rotations, returned routes, supplied graph/control/genesis and prior-art boundary inspected. Its different compiler theorem/parameters/retained status are not imported.",
+      "imported_theorem_result": false,
+      "key": "ROUTING_ATTRIBUTION",
+      "markdown": "[Cycle 870 returned routing](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md)",
+      "path": "docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md",
+      "published_sha256": "74beb1de39ea0e579b8c709fdb294602f8cb959f1283b7556eb4c62335fd2e2b",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+      "bytes": 9759,
+      "claim_id": "recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Accepted author/separate/root coverage at exact pins; no new scientific review",
+      "historical_role_status": "Quotation from accepted assembly source map; not a fresh preparer read claim",
+      "historical_source_exposure_role": "Complete 130 lines read; overlap for all-vector recurrence, phases and arbitrary transit return. No change to its supplied-state/time/topology limits.",
+      "imported_theorem_result": false,
+      "key": "RETURN_ATTRIBUTION",
+      "markdown": "[Cycle 883 return](RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md)",
+      "path": "docs/RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md",
+      "published_sha256": "f25441ace48d2b850aa6ac5b03601d4e71de4821775ee21c7dc6dc8414169fbd",
+      "relied_role_checked": true,
+      "role_class": "attribution_only"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "ROUTING_ATTRIBUTION",
+      "role_class": "attribution_only"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "RETURN_ATTRIBUTION",
+      "role_class": "attribution_only"
+    }
+  ],
+  "verification_scope": "actual source citations/roles and existing manifest-node identities inspected; no graph program executed"
+}

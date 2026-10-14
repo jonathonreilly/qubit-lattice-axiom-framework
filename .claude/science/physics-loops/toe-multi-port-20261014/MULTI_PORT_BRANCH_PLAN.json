@@ -1,0 +1,14 @@
+{
+  "actual_child_receipt": {
+    "bytes": 706,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/multi_port_actual_parent_child/CHILD.json",
+    "sha256": "715fd1a543103462d7b99ef134fe67d230f4bb692f47bae89f8d5c9bfd707ec4"
+  },
+  "base": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-multi-port-global-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9573",
+  "stack_parent": "physics-loop/toe-autonomous-record-window-20261014",
+  "tree": "7bc88206b59a5b55dbd777f42b25688140f7e357"
+}

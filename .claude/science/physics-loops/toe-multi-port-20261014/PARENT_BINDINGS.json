@@ -1,0 +1,72 @@
+{
+  "actual_parent_head": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-balanced-mediator-main-20261014",
+    "headRefName": "physics-loop/toe-autonomous-record-window-20261014",
+    "headRefOid": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+    "isDraft": false,
+    "number": 9573,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9573"
+  },
+  "all_markdown_note_targets": [
+    "FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "attribution_citation_count": 1,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 35421,
+      "byte_start_inclusive": 7032,
+      "canonical_path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "line_end_inclusive": 380,
+      "line_start_inclusive": 108,
+      "role": "Method attribution only; global multi-port proof rederived",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_clock_data_bridge/DERIVATION.md",
+      "source_sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "mathematical_global_import_count": 0,
+  "parents": [
+    {
+      "actual_use": "Method attribution only; all global penalty/kernel/inverse/response/residual hypotheses rederived. No clock application or auxiliary-only lemma imported.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 37090,
+      "canonical_core_map": {
+        "body_edits": [],
+        "byte_end_exclusive": 35421,
+        "byte_start_inclusive": 7032,
+        "canonical_path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+        "line_end_inclusive": 380,
+        "line_start_inclusive": 108,
+        "role": "Method attribution only; global multi-port proof rederived",
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_clock_data_bridge/DERIVATION.md",
+        "source_sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6"
+      },
+      "claim_id": "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "imported_theorem_result": false,
+      "key": "MEDIATOR_METHOD",
+      "markdown": "[finite-range mediator construction](FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "observation_scope": "Actual supplied parent checkout binding, rechecked file bytes; root runtime freshness remains required",
+      "path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4",
+      "relied_role_checked": true,
+      "role_class": "methodological_attribution",
+      "source_sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": false,
+      "key": "MEDIATOR_METHOD",
+      "role_class": "methodological_attribution"
+    }
+  ],
+  "scope": "One observed canonical methodological attribution. No published four-cell theorem or imported global theorem; later root must bind actual checkout and citation edge."
+}

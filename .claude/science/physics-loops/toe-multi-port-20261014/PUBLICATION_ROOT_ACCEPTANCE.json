@@ -1,0 +1,31 @@
+{
+  "actual_clean_child_and_regular_parent_receipts_bound": true,
+  "base": "103cb68b6541e5f9419463d68ac41d311e3c404d",
+  "branch": "physics-loop/toe-multi-port-global-20261014",
+  "complete_driver_helper_and_source_checker_read": true,
+  "complete_multi_port_proof_and_current_scope_read": true,
+  "disposition": "accepted_for_source_integration",
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/MULTI_PORT_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_sha256": "7857fecb8566ffada9d711168782dd9f28720c571df41c20ed9d9167546235f2",
+  "mathematical_predicates": 0,
+  "mixed_inverse_full_space_resources_and_timing_scope_read": true,
+  "new_publication_wrapper_and_all_deltas_read": true,
+  "no_go_packet_pass": false,
+  "observed_canonical_attribution_rebound_to_actual_checkout": true,
+  "old_graph_objects_and_exact_staged_scope_preservation_read": true,
+  "placeholder_only": false,
+  "prior_acceptance_sha256s": [
+    "72484571373fe450298b11763f71680097a53543368a7136e588e5ae181da7e6",
+    "7b1067fab8ec6d3f46962737c1d8ecae68192fa83379dfcc1decbf3cd326f455"
+  ],
+  "publication_program_sha256": "9fcc8680027e68caed5716d05b5db78499ad5fe613bf56dee14b340718eda5ba",
+  "publication_source_freeze_sha256": "18a2dcf257fef2d494fae0f44ef501eebe31726344bd3e74138f80d46598318d",
+  "root_authorizes_execution": true,
+  "root_execution_acceptance": true,
+  "source_and_actual_run_closure_verified": true,
+  "source_assembly_freeze_sha256": "aa351988c1d87f0ef8e0913693fb937fd807c385e098f4e75ba914cdbaa83732",
+  "zero_imported_global_theorems_one_attribution_edge_read": true,
+  "utc": "2026-10-14T21:20:51.766383+00:00",
+  "editable_prompt_files_changed": []
+}

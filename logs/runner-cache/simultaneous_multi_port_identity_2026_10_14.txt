@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/simultaneous_multi_port_identity_2026_10_14.py
+runner_sha256: 8213f5fdd9d9b955b13be8da19b29d11122001c77464d388954b7f62341d3995
+input_fingerprint_sha256: 804258f31cc31825710e49dfe1dc7db9b4afb2ee7d3a8204f8d24f9f41bc334b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+{"attribution_reads": ["docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"], "claim_id": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14", "external_scientific_parent_reads": [], "independent_review_supplied_by_tool": false, "mathematical_operations_executed": false, "mathematical_predicates_executed": 0, "meaning": "Byte integrity only; no mathematical calculation, proof or audit executed.", "no_go_packet_pass_supplied_by_tool": false, "result": "source_identities_and_reconstruction_match", "scientific_mutations_executed": 0}
+per_element: checked and not executed — source integrity only; no operator algebra was evaluated.
+per_site: checked and not executed — source integrity only; no local norm or support count was computed.
+per_mode: checked and not executed — source integrity only; no code existence or parity theorem was evaluated.
+per_block: checked and not executed — source integrity only; no synthesis or trace estimate was evaluated.
+lattice_wide: checked and not executed — source integrity only; no all-volume or native theorem was verified.
+
+----- stderr -----
+

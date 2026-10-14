@@ -1,0 +1,35 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14",
+      "to": "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 1,
+    "nodes": 1,
+    "roots": 0
+  },
+  "mathematical_global_import_count": 0,
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "simultaneous_multi_port_three_pauli_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/SIMULTANEOUS_MULTI_PORT_THREE_PAULI_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/simultaneous_multi_port_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": false,
+      "key": "MEDIATOR_METHOD",
+      "role_class": "methodological_attribution"
+    }
+  ],
+  "scope": "Unexecuted citation-graph proposal: one attribution edge. Graph non-root status is not an imported mathematical theorem."
+}

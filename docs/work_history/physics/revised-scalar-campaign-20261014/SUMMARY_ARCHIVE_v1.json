@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-14T18:03:15.529395+00:00",
+  "archive": "docs/work_history/physics/revised-scalar-campaign-20261014/summary_checks_v1.tar.gz",
+  "sha256": "78d9da119f505c2588a24032907de4621ff99e07c9bc96cd29c8beed6130e016",
+  "bytes": 470431,
+  "payload_count": 59,
+  "manifest_sha256": "47ee44794cc39f671c58cc47d5c0b42a25608ff569e17aa0bd366be7a8e558aa",
+  "all_payload_hashes_sizes_and_original_bytes_verified": true,
+  "scope": "Preservation only; no new discovery or full-report scientific endorsement."
+}

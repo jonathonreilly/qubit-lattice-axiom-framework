@@ -1,0 +1,369 @@
+{
+  "at": "2026-10-14T17:48:41.956797+00:00",
+  "scope": "Index of selected checked extensions without separate canonical milestone. Earlier finalized PRs may cite parts; no claim that every file is unpublished or independently validated by this inventory.",
+  "entries": [
+    {
+      "root": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1",
+      "label": "Kinetic radiation hierarchy and anisotropic-stress/readout correction",
+      "status": "Checked extension in pack; no separate canonical milestone.",
+      "source_and_review_candidates": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/DERIVATION_v1.md",
+          "sha256": "27fdaffd3d5133cb8cd4dd52b2e242ae415b85107d2eddafbdac77fcff53be10",
+          "bytes": 5595
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/DERIVATION_v2.md",
+          "sha256": "d45daa3515ead1ea75a1d15d9b0d3a43c4071e715640c75d93738cc2d56f6f14",
+          "bytes": 5743
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/DERIVATION_v2_v3.diff",
+          "sha256": "9e3944e6f4a1df67eb9a911446c51ebcd26cc81bc934c5c21991462e24b3b666",
+          "bytes": 792
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/DERIVATION_v3.md",
+          "sha256": "4fec305653d9e51a4cf1ccbffb2914574c55c41732f6a46624b16535ed23102a",
+          "bytes": 5970
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/PROTOCOL_v1.json",
+          "sha256": "fa736c15bccaf6d05d7e6247b2ef4160729ddcece96e1c7da9907cadd801cea9",
+          "bytes": 892
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/HAND_DERIVATION_v1.md",
+          "sha256": "522666925744355eebb4e422fbdba8f29284aefd158d81aede3cdd9df3b9519d",
+          "bytes": 8242
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/MANIFEST_v1.json",
+          "sha256": "7b2f6fa508efedc433a8194b1c78a15b01426fa88258d5cb31994b6a62f02a06",
+          "bytes": 20534
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/RECEIPT_v1.json",
+          "sha256": "280592db2fee7442b6c7aaab70dde46b1bf95bc4295f0434d3250deab80210ec",
+          "bytes": 18686
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/REPORT_v1.txt",
+          "sha256": "fc6d1278ca0805d9e4571e9419f537b953fcb6b2ca9d50d3c602e3aff0dd4a28",
+          "bytes": 16088
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/sources_v1/DERIVATION_v1.md",
+          "sha256": "27fdaffd3d5133cb8cd4dd52b2e242ae415b85107d2eddafbdac77fcff53be10",
+          "bytes": 5595
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/sources_v1/PROTOCOL_v1.json",
+          "sha256": "fa736c15bccaf6d05d7e6247b2ef4160729ddcece96e1c7da9907cadd801cea9",
+          "bytes": 892
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/v2_correspondence/DERIVATION_v2.md",
+          "sha256": "d45daa3515ead1ea75a1d15d9b0d3a43c4071e715640c75d93738cc2d56f6f14",
+          "bytes": 5743
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/v3_correspondence/DERIVATION_v2_v3.diff",
+          "sha256": "9e3944e6f4a1df67eb9a911446c51ebcd26cc81bc934c5c21991462e24b3b666",
+          "bytes": 792
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/kinetic_radiation_v1/independent_v1/v3_correspondence/DERIVATION_v3.md",
+          "sha256": "4fec305653d9e51a4cf1ccbffb2914574c55c41732f6a46624b16535ed23102a",
+          "bytes": 5970
+        }
+      ],
+      "role": "Preservation index; does not newly assert every recursive draft or snapshot is current scientific authority."
+    },
+    {
+      "root": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1",
+      "label": "Observable cross-ratio and covariance/transfer limits",
+      "status": "Checked synthetic bridge; no survey likelihood or separate canonical milestone.",
+      "source_and_review_candidates": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/DERIVATION_v1.md",
+          "sha256": "7725d5644b9c16e291bc3fbfd5a3519306a3a4e4586060c8c3d53bdfd20f9de9",
+          "bytes": 5935
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/DERIVATION_v1_v2.diff",
+          "sha256": "7b232fd30d1a3a27ad1a5e73ff6d1c2230ef231205b3b03eba111b1b08f6f5ba",
+          "bytes": 1551
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/DERIVATION_v2.md",
+          "sha256": "6fe7152ee4b082a577e597f9aea829824e63cf2d9540cd69cba3edaf9ae51729",
+          "bytes": 6172
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/HAND_DERIVATION_v1.md",
+          "sha256": "403774b7737b759f46eb63baa9a5f3bdd4dd448ac81f1bedd44f8f60d9696048",
+          "bytes": 7752
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/MANIFEST_v1.json",
+          "sha256": "cbae2306d5b4f5980edc04125915d8cfe5a322785c94ed4e2ebaf02f90f4a4ea",
+          "bytes": 15779
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/PROTOCOL_v1.json",
+          "sha256": "6c1e1c67c25a4a0b630b4ad3ada61766d3db6d816b6137392dbcc1c54479bc49",
+          "bytes": 2874
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/RECEIPT_v1.json",
+          "sha256": "3c227d384fc40fa65a044263ff5297bf90f47950907f893286f9787750146e8f",
+          "bytes": 8095
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/REPORT_v1.md",
+          "sha256": "324c7fd62c9a19297ec8e1ed98a5e7fba150b3b9f0fd0c53aa4242233fdec597",
+          "bytes": 18283
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/sources/DERIVATION_v1.md",
+          "sha256": "7725d5644b9c16e291bc3fbfd5a3519306a3a4e4586060c8c3d53bdfd20f9de9",
+          "bytes": 5935
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/observable_bridge_v1/independent_v1/sources/DERIVATION_v2.md",
+          "sha256": "6fe7152ee4b082a577e597f9aea829824e63cf2d9540cd69cba3edaf9ae51729",
+          "bytes": 6172
+        }
+      ],
+      "role": "Preservation index; does not newly assert every recursive draft or snapshot is current scientific authority."
+    },
+    {
+      "root": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1",
+      "label": "Dust transfer and finite-wave dynamical controls",
+      "status": "Checked extension in pack; no separate canonical milestone.",
+      "source_and_review_candidates": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1/DERIVATION_v1.md",
+          "sha256": "8a5fe80fda784bde4d541ee494fb9f8105d911d822a94bac9095ef9df2584fc0",
+          "bytes": 5619
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1/independent_v1/HAND_DERIVATION_v1.md",
+          "sha256": "5f52f3fdd5782ff79dce2e651c87da6662b167bc3e057a0dd5232de5a2ab1344",
+          "bytes": 6809
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1/independent_v1/MANIFEST_v1.json",
+          "sha256": "29f4f4ae65e1c71d951a33520e032669e40e9cf71419cb2c971434cb00f7d03a",
+          "bytes": 11631
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1/independent_v1/RECEIPT_v1.json",
+          "sha256": "c7a229aaaeb6d9b092aea76c4c52ae29285523d957f345eedb5c13cda12cbe63",
+          "bytes": 10891
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1/independent_v1/REPORT_v1.txt",
+          "sha256": "468cf720bb3b26143ab873fdf5b8d3862d357db59cdeabaa472c93c2bacecdda",
+          "bytes": 10986
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/dust_transfer_v1/independent_v1/sources_v1/DERIVATION_v1.md",
+          "sha256": "8a5fe80fda784bde4d541ee494fb9f8105d911d822a94bac9095ef9df2584fc0",
+          "bytes": 5619
+        }
+      ],
+      "role": "Preservation index; does not newly assert every recursive draft or snapshot is current scientific authority."
+    },
+    {
+      "root": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1",
+      "label": "Radiation/dust mixture transfer",
+      "status": "Twelve original Radau profiles remain unrecovered; independentreplays distinct from originals.",
+      "source_and_review_candidates": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/DERIVATION_v1.md",
+          "sha256": "c1bf7ac4045e3196f4aa23b3fdb051194ad90bd7b8ae555eb7660ed4e42e9e12",
+          "bytes": 4017
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/PROTOCOL_v1.json",
+          "sha256": "21a6d96ddf0b85de9647560a84dcdfe710d8c08463696aecdcb87a0e0103d8c7",
+          "bytes": 702
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/independent_v1/HAND_DERIVATION_v1.md",
+          "sha256": "58bb7ed6bb870750e94ee16e3168a08424f21f328cc0a650eb57ac1d1d4b6184",
+          "bytes": 7182
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/independent_v1/MANIFEST_v1.json",
+          "sha256": "7ed3c7eed714303f3fd565ee73c6f5e4bb2195adb987ed55da5d93c227a73db8",
+          "bytes": 11648
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/independent_v1/PROTOCOL_v1.json",
+          "sha256": "02d896f915ff03f8ebf2711bd40202937f9674f0fa1a6228a38bfa28cc00eadc",
+          "bytes": 3218
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/independent_v1/RECEIPT_v1.json",
+          "sha256": "14ceec5ab97e508d0883d1ea3ff43f4ecf38c6fedbdae07f1c2c867e21f42127",
+          "bytes": 11822
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/radiation_dust_transfer_v1/independent_v1/REPORT_v1.md",
+          "sha256": "ec7782b491893ddf928e58bf7346b5c0cdf39bb53852f28dab109250e0ef6bb3",
+          "bytes": 13982
+        }
+      ],
+      "role": "Preservation index; does not newly assert every recursive draft or snapshot is current scientific authority."
+    },
+    {
+      "root": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse",
+      "label": "Finite-clock inverse extensions",
+      "status": "Checked local identifiability/conditioning controls; no selected global history.",
+      "source_and_review_candidates": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/DERIVATION_v1.md",
+          "sha256": "25200b424cd261480262d1383b13748ddd5de20f45d3bb74dcc235ed31f0feb3",
+          "bytes": 4856
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/DERIVATION_v2.md",
+          "sha256": "945638662b731934e2fb502d1c50a706e581831d3fdd898799ceca2b224dc10e",
+          "bytes": 6337
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/canonical_correspondence_v2/MANIFEST_v2.json",
+          "sha256": "3b8ba3bc399958ae22795af622e66fcb91e4ee476e13feb7d879b6372a1d29a3",
+          "bytes": 2108
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/canonical_correspondence_v2/RECEIPT_v2.json",
+          "sha256": "9315d198a1713031b4fcebb60d322a208444b0f56f18f895afe38385695b83f5",
+          "bytes": 2347
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/canonical_correspondence_v2/RECEIPT_v2.sha256",
+          "sha256": "7f062f2193d5f921df521ea713e7a0d068ea3fa0a219a86165b68b6e3428291f",
+          "bytes": 82
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/canonical_correspondence_v2/REPORT_v2.md",
+          "sha256": "6c5a28508c71cf92ff67bc6f8b4311a5370ecd764527fce5f80e42805a066f76",
+          "bytes": 3279
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/independent_v1/HAND_DERIVATION_v1.md",
+          "sha256": "a4463b3fde27dd2bc09f286b19722cf5cbeb5f923735dae840b927ef0bfd4857",
+          "bytes": 9848
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/independent_v1/MANIFEST_v1.json",
+          "sha256": "33b9f45a36630e0ee1e5ff0b1aee6446299fb0db53348e2c0e759d5cc8e6e734",
+          "bytes": 5663
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/independent_v1/RECEIPT_v1.json",
+          "sha256": "52ab3ad98e426f6194951dcc11979ad9c4ceed029102de4fbf29c565caebb77a",
+          "bytes": 5773
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/independent_v1/RECEIPT_v1.sha256",
+          "sha256": "6fc8820885af4d513b1cedfac5ca505c886ea7bcbcf29ff0316bf4d721177e71",
+          "bytes": 82
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_inverse/independent_v1/REPORT_v1.md",
+          "sha256": "5def30b16ece4e066c2e300f679ea91bd8997de0b4185a6ed22233f52fcffeef",
+          "bytes": 10892
+        }
+      ],
+      "role": "Preservation index; does not newly assert every recursive draft or snapshot is current scientific authority."
+    },
+    {
+      "root": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile",
+      "label": "Continuous clock-profile inverse extensions",
+      "status": "Checked reconstruction within chosen model; no observed profile fit.",
+      "source_and_review_candidates": [
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/DERIVATION_v1.md",
+          "sha256": "70069160fea86ebd873b78c7956817ad641b6ea2aa1b8f975d335e28b13974a8",
+          "bytes": 6304
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/DERIVATION_v2.md",
+          "sha256": "546c3a6379d7536316c9c4dbaf6378111dd5a9c7c48abd925bd217bfae4cb5f7",
+          "bytes": 7338
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/PROTOCOL_v1.json",
+          "sha256": "eb9d2865d8e9d72ce95e206986f5b0141abde9e788843b97e87901d02a23db1e",
+          "bytes": 508
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/MANIFEST_v1.json",
+          "sha256": "1d4cc77847a0650929db432ef9578fadfb10d2a2e7276fed5b80bbb1773352d6",
+          "bytes": 3578
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/PROTOCOL_v1.json",
+          "sha256": "23b10a26e5f8bf3ad99051672e51d126fba2dfb138581759a242e0f0b58893ec",
+          "bytes": 3921
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/RECEIPT_v1.json",
+          "sha256": "de0391706262abae9f4ef3cc76f656790b1d41fa9bd9ab17d2f502cd168706e7",
+          "bytes": 6712
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/REPORT_v1.txt",
+          "sha256": "3c525300a03ff3895b7d59143214c0a5ec2017d30e8f9a5302a38cea45c7355e",
+          "bytes": 14464
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/source_v2_confirmation_v1/MANIFEST_v1.json",
+          "sha256": "a4537de4f2d370cc1332c0b5bf025482779334c0b86b29e525394420d14fb1ac",
+          "bytes": 2578
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/source_v2_confirmation_v1/PROTOCOL_v1.json",
+          "sha256": "c5f5d12c0264645c7eb1b8c5dd5b1f7ea962e5b1ae0adbd6546e8d0ca76b6d20",
+          "bytes": 1534
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/source_v2_confirmation_v1/RECEIPT_v1.json",
+          "sha256": "d08ffcce7690ada3dc9450d6c0ee66d04a9e8604cd702b0934005dd9a29cdbb4",
+          "bytes": 5602
+        },
+        {
+          "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/clock_profile/independent_v1/source_v2_confirmation_v1/REPORT_v1.txt",
+          "sha256": "198e2460383763bf8140ff94e81abaa8ff5fde476c301f811841254dbb201ee0",
+          "bytes": 6312
+        }
+      ],
+      "role": "Preservation index; does not newly assert every recursive draft or snapshot is current scientific authority."
+    }
+  ],
+  "rolling_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/DERIVATION_v2.md",
+      "sha256": "a02ac032fe36f59bc7194d7d9dd23db7d109d14c7c339374534080e86de96c1e",
+      "role": "Earlier rolling inverse/readout context; pairedfiniteerror23reusesaffinerelation,notnewactionselector."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/TWO_EPOCH_DERIVATION_v1.md",
+      "sha256": "9a7714cbde74f979b850b32465d46de436d38454d6788cf78356a3531c8e9316",
+      "role": "Earlier rolling inverse/readout context; pairedfiniteerror23reusesaffinerelation,notnewactionselector."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/LLR_MEASUREMENT_MAPPING_v1.md",
+      "sha256": "be81758a9c72af8a833398743ee063a26855d1db35dd2e1770468f0062ddf8f3",
+      "role": "Earlier rolling inverse/readout context; pairedfiniteerror23reusesaffinerelation,notnewactionselector."
+    }
+  ],
+  "preservation_archive": "primary_research_v1.tar.gz",
+  "known_gap": "Twelve original Radau mixture profiles not recovered; no invented originals.",
+  "paired_certificate_exclusion": "Pairedfiniteerrorblockisoutsideprimaryarchiveandhasitsownsource/stage/deliveryunit."
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-14T17:38:42.193365+00:00",
+  "viewed_png": true,
+  "qa": "Both panels/axes/legends/caption readable. Shows suppliedk=0.1 idealweakcommonbackgroundlongrangeformula, explicitlynoorbitalfit. Notnewvalidation.",
+  "copies": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/calibrated_gravity_turning_v1/CALIBRATED_GRAVITY_TURNING_v1.png",
+      "destination": "docs/work_history/physics/revised-scalar-campaign-20261014/CALIBRATED_GRAVITY_TURNING_v1.png",
+      "sha256": "fc4bf152a39f708366bb1f2cf3961f84ef880a00176bcf2a6bea787c99a979a7",
+      "bytes": 151658
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/revised-scalar-derivation-24h-20261013/New Axioms Lets Go/.claude/science/physics-loops/revised-scalar-derivation-24h-20261013/rolling_local_response/calibrated_gravity_turning_v1/CALIBRATED_GRAVITY_TURNING_v1.pdf",
+      "destination": "docs/work_history/physics/revised-scalar-campaign-20261014/CALIBRATED_GRAVITY_TURNING_v1.pdf",
+      "sha256": "b81e002fde1e1cd613f1286ef0ae25e71010b952dab16f4726fc080a9515df14",
+      "bytes": 21674
+    }
+  ],
+  "scientific_source_unchanged": true
+}

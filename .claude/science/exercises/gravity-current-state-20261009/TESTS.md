@@ -9589,3 +9589,21 @@ Jon's request: "run the strain law test on hot matter … the root's own strain 
     - δv/v = −1.753e31 Q_E is confirmed. The formal clock exceedance is 2.61e18, but since |δv/v| ~ 1e3, the real implication is loss of the observed EW vacuum.
     - The Earth row (1e21) and the tadpole (3.07e48 Q_E) are conditional.
     - No registered clause covers it.
+
+- **E1 (emergent-coarseness toy): worker reading MECHANISM-SPLIT.**
+  - **(a) Covariant cutoff (checked, 2D Ising exact):**
+    - ξ_x/ξ_y tracks the stretch;
+    - the residual anisotropy is ~0.02 (a/ξ)², and ∝ (a/r)² at criticality;
+    - the transfer matrix verifies the exact formulas to 3.6e-15.
+  - **(b) Tuned gaps open with a fine-scale coefficient (p = 0):**
+    - Ising: m = 0.549 t², independent of ξ₀, so the relative shift grows ∝ ξ₀;
+    - 3D φ⁴ one loop: δr_c = −0.027 λ t², dominated by r ~ a;
+    - staying critical needs a tuned response (the Onsager-curve flow, one number per order), the Ising image of P-R19-34a.
+  - **(c) Protected gaps stay exactly 0:** graphene below merging; mean-field Hubbard below U_c = 2.2311 t; XY Goldstone; staggered (NF-1, counted once). The velocities and stiffness track the stretch like a metric.
+  - **(d) The fabric's own stretch:**
+    - it costs free energy at O(t²), with a lattice-sized coefficient (the isotropic point is a maximum under the tested response laws);
+    - "gap closed" and "stretch free" need different numbers per order: the toy images of P-R19-34a and (Σ)/(S\*), counted once with F5;
+    - the metric is per species (Ising 1.2465 t vs XY ~t), as in panel F's C3.
+  - **(e) A transmuted scale (2D O(N), N = ∞) shifts only in proportion to itself.** A composite Higgs at Λ ~ 10 TeV would pass F6's clock row by ~5.6e11 (suggested; conditional). It does not cover F1's fermion channel or the Wilson tadpole.
+
+  Referee running.

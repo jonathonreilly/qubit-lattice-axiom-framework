@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-13T00:45:53.424729+00:00",
+  "prior_art": [
+    {
+      "title": "Tensor-Multi-Scalar Theories of Gravitation",
+      "authors": "Thibault Damour and Gilles Esposito-Farese",
+      "url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+      "sha256": "b4d991c7e00be033bb26ac2413abf2a17fe0a1b1dab86ae7807e6e174d657fda",
+      "bytes": 8134643,
+      "local_recovery": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/Damour_EspositoFarese_P_91_93.pdf",
+      "reading": "PDF pages2-10 text read; formulas on pages8-9 inspected as rendered images. Page23 and27 images read; pages24-26 and28 text read (OCR omits some formulas). Remaining pages not claimed read.",
+      "use": "Known action and scalar/tensor source-wave framework; parent derivation is explicit rather than an imported proof."
+    }
+  ],
+  "observation_context": [
+    {
+      "url": "https://arxiv.org/html/0904.3992v1",
+      "reading": "Already exposed primary VLBA paper and SectionsII-V in preceding campaign block.",
+      "use": "Published gamma=.9998+/-.0003 motivates frozen two-uncertainty working rectangle; no confidence/likelihood transfer."
+    },
+    {
+      "url": "https://dcc.ligo.org/public/0145/P170814/015/LIGO-P170814.pdf",
+      "reading": "Primary abstract and SectionsV-VII (printed pages5-7) reread via web; prior exact PDF preserved in campaign recovery.",
+      "use": "The published pure-polarization comparison replaces antenna functions while assuming a GR phase model and excludes mixed modes from that exercise. Architecture motivation only."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1710.05834v2",
+      "reading": "Abstract and Section4.1, PDF page6, read via primary web PDF text.",
+      "use": "Lag1.74+/-.05seconds; reported speed bound uses26Mpc lower GW-distance edge and intrinsic delays0 to10seconds, with wider alternatives explicitly discussed. Model-dependent context, no independent candidate likelihood."
+    }
+  ],
+  "repository_grounding": [
+    {
+      "path": "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "revision": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+      "reading": "Complete source text read in consecutive parts; no runner replay or native theorem adopted.",
+      "use": "Avoid confusing a physical TT mode with full source Ward, microscopic phase or exact lattice cone closure."
+    }
+  ],
+  "access_failures": [
+    {
+      "route": "web open IHES PDF",
+      "result": "400 Timeout fetching; no scientific conclusion"
+    },
+    {
+      "route": "Python urllib.request default certificate verification",
+      "result": "CERTIFICATE_VERIFY_FAILED: self-signed certificate in certificate chain; no scientific conclusion"
+    },
+    {
+      "route": "curl --fail --location --max-time25 same official PDF",
+      "result": "Success with ordinary certificate validation; exact PDF retained outside public Git."
+    }
+  ],
+  "full_primary_text_committed": false
+}

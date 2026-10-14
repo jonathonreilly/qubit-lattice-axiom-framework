@@ -1,0 +1,26 @@
+{
+  "known_theory": {
+    "url": "https://repo-archives.ihes.fr/FONDS_IHES/I_Prepublications/DAMOUR/1988-1993/P_91_93/P_91_93_web.pdf",
+    "local_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/external_primary_recovery/Damour_EspositoFarese_P_91_93.pdf",
+    "sha256": "b4d991c7e00be033bb26ac2413abf2a17fe0a1b1dab86ae7807e6e174d657fda",
+    "bytes": 8134643,
+    "pages_total": 97,
+    "read_scope": "PDF pages8,9,27 rendered and inspected completely; page23 extracted text read. Relevant action/field equations and flux normalizations inspected; no claim to have read the whole work.",
+    "web_access_failure": "Official PDF web open returned Internal Error; exact existing local recovery successfully read."
+  },
+  "observation_reads": [
+    {
+      "url": "https://arxiv.org/html/0904.3992v1",
+      "read_scope": "Abstract and SectionsIV-V checked; published gamma0.9998+/-0.0003 and reported68percent confidence origin confirmed. No raw-data refit or new confidence interval."
+    },
+    {
+      "url": "https://dcc.ligo.org/public/0145/P170814/015/LIGO-P170814.pdf",
+      "read_scope": "SectionVII pages6-7 ofPDF text, pure-polarization scope and assumed GR phase confirmed. Prior same-session primary readout check reused; no Bayes factors transferred."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1710.05834v2",
+      "read_scope": "Section4.1 PDFpage6 text checked: lag1.74+/-0.05s,26Mpc distance edge and source-lag assumptions0to10s with wider alternatives. No candidate likelihood imported."
+    }
+  ],
+  "scope": "These are source-role checks, not empirical validation. Independent derivations and controls carry the mathematical review."
+}

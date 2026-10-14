@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-13T01:36:47.113617+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "scripts/metric_clock_reconstruction_2026_10_13.py",
+    "--output-json",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/metric-canonical-first-run.json"
+  ],
+  "returncode": 1,
+  "source_sha256": "618cb057779213a878d63d0f185d8c1b42a541473dbe862b55f79a7f791429ce",
+  "tool_session_id": 38963,
+  "failure": "TypeError: Object of type bool is not JSON serializable",
+  "failure_site": "json.dumps(out,indent=2,allow_nan=False) after all scientific assertions and family-count assertions passed. One family value is numpy.bool_, which JSON encoder does not accept.",
+  "artifact_output_created": false,
+  "first_run_preexecution_freeze": false,
+  "source_preservation": "Exact first-run runner snapshot retained after exit, before any edit. Original scientific block freezes/results untouched."
+}

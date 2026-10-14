@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-13T00:55:44.148888+00:00",
+  "checks": {
+    "pattern_complete_unique_cartesian": true,
+    "flux_complete_unique_cartesian": true,
+    "lens_complete_unique_cartesian": true,
+    "all_reported_pattern_errors_recomputed": true,
+    "all_reported_flux_errors_recomputed": true,
+    "all_reported_lens_errors_recomputed": true,
+    "summary_equals_rows_and_stdout": true,
+    "execution_logs_pinned": true,
+    "protocol_freeze_precedes_execution": true
+  },
+  "recomputed_summary": {
+    "pattern_rows": 100,
+    "flux_rows": 20,
+    "lens_rows": 15,
+    "max_pattern_normalized_error": 4.440892098500626e-16,
+    "max_tensor_flux_fractional_error": 3.6637359812630166e-15,
+    "max_scalar_flux_fractional_error": 1.7763568394002505e-15,
+    "max_lens_fractional_error": 2.220446049250313e-16
+  },
+  "checked_output_rows": {
+    "field": 5,
+    "patterns": 100,
+    "flux": 20,
+    "lenses": 15
+  }
+}

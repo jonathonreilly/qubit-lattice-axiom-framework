@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-13T01:45:52.971539+00:00",
+  "intended_delta": "Add the single canonical metric_clock_reconstruction_bounded_theorem_note_2026-10-13 node, with no repository theorem edges. Primary runner/cache links do not add premise edges.",
+  "manifest_sha256": "852afdfc5de0836eba784eccb11ac6de10a7edc7862dbd922822eeda0979e60a",
+  "builder_execution": {
+    "started_at": "2026-10-13T01:42:51.664830+00:00",
+    "finished_at": "2026-10-13T01:44:27.409221+00:00",
+    "command": [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/run_citation_graph_build.py"
+    ],
+    "exit": 0,
+    "exception": null
+  },
+  "manifest_execution": {
+    "started_at": "2026-10-13T01:44:27.409641+00:00",
+    "finished_at": "2026-10-13T01:44:27.491012+00:00",
+    "command": [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/write_citation_graph_manifest.py"
+    ],
+    "exit": 0,
+    "exception": null
+  },
+  "first_timeout_preserved": "evidence/TOPOLOGY_TIMEOUT_v1.json",
+  "formal_audit": false
+}

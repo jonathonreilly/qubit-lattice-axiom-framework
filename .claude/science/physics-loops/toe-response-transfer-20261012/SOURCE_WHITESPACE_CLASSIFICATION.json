@@ -1,0 +1,15 @@
+{
+  "preserved_source_whitespace": [
+    {
+      "canonical_line": 332,
+      "classification": "Exact original TeX control-space command; body bytes preserved. Every other trailing-whitespace line is rejected.",
+      "context": "The resulting two-sided actual free-energy estimate is\n\\[\n \\boxed{\\ \n \\|F^{1/2}A_k(t)F^{-1/2}\\|,\\quad\n \\|F^{1/2}A_k(t)^*F^{-1/2}\\|\n \\le \\kappa_k(\\mu):=\n",
+      "exact_line": " \\boxed{\\ \n",
+      "note": "docs/TIME_AVERAGED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "original_line": 275,
+      "root_acceptance_flag": "preserved_tex_control_space_reviewed",
+      "source_sha256": "04eef4960b18d6b0e4a7f81852ddceea7fc081c855360bf613aaf9124e141984"
+    }
+  ],
+  "scope": "Unexecuted source-integration exception proposal, requiring explicit root review flag. No Git or mathematical-body edit."
+}

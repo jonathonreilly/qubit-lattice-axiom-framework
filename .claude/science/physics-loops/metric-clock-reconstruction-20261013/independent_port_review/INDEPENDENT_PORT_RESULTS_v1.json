@@ -1,0 +1,255 @@
+{
+  "started_at": "2026-10-13T01:53:18.958091+00:00",
+  "inventory": {
+    "initial_port_paths": 124,
+    "original_constituent_paths": 98,
+    "derived_original_tree_display_files": 2,
+    "tree": "3dde95713fafb4d48c72bcfc673d2d121018cdc5",
+    "runtime_freeze_paths": 122
+  },
+  "transfer": {
+    "functions": [
+      {
+        "name": "symbolic_operator",
+        "sha256": "69af7cbfb25783d441580c9e9ce04bcbc8232c2ea8e560c2585f628873b281ae",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "field_examples",
+        "sha256": "f272a4dbc904abce8baede8632ceb541b24c1126046c4aa6ec06206436ae63cb",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "moment",
+        "sha256": "635e1d733c64ddab174f60c916ad4b69c8566bbfc95721dada0ec504122d515d",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "tt",
+        "sha256": "032f189fed116a43298130ec3f96ae0f414572d8640e3bcc37b201aae8aff388",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "sphere_flux",
+        "sha256": "14abe5f45f748a072738b445a123a769f7f0bef32a07dca69c6d0620d613cec0",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "numerical_checks",
+        "sha256": "0a59ec3b4ddadb89c03c31379248fc1dd60200b675f97637676bd76eb06c3178",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "F",
+        "sha256": "05d6cad6ee7e6e26b4aa8c5281c0f2da06f27fddd59e886f3d74fae20c066cbb",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "dawson",
+        "sha256": "8673a5d142f947fe8dec85789c2ac9f1efa7bdbb8f53244b88e90819cb027483",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "H",
+        "sha256": "a4a082a53ebab82ad7503a8cf2e0cd02ab3efefc643e4e5e0eb493c964a5f310",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "J",
+        "sha256": "130d2dc6fa27a1de625556dce708b24d83d89ede730f7bb6c7dcd9815409dca4",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "D",
+        "sha256": "43ef5f26a4ca00c0d2a8f011a8b84979b12ccd2ebf47e1f9afe581e869c5e9a2",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "temporal",
+        "sha256": "04e5b3e571a15a24a7bdee1c01448efb769e638677325afcda1304eecff70f28",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "direct_channel",
+        "sha256": "ed39b5e2df113d56a4015eae16dec069ba90662fa1abec08c31ed712ddf503e6",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "numerical_grid",
+        "sha256": "a0d17430b9291d08bf7e9dac7509301eb8a33a54d2910878b7841866c4c8163b",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "plateau_and_static",
+        "sha256": "8c45b0f6fffd7a37c05b255c066ba569f4cb96ef32950a6c537e99f164c7e26e",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "finite_oscillators",
+        "sha256": "1c34582505b4bc4b943489ca6f580c4619f035a5350b4fbefd5506fcf44c355f",
+        "text_identical_including_decorators": true
+      },
+      {
+        "name": "si_grid",
+        "sha256": "f4e397f7b258070cabea4e8bda00d0d6dbdd36858cd2f95ddc5b95065a03a89a",
+        "text_identical_including_decorators": true
+      }
+    ],
+    "complete_proofs": [
+      {
+        "original": "/Users/jonBridger/.codex/worktrees/metric-clock-20261013/New Axioms Lets Go/.claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_tensor_scalar_reconstruction/DIRECT_RECONSTRUCTION.md",
+        "heading": "A common tensor/scalar action reconstructed from three observable channels",
+        "canonical_start_line": 44,
+        "canonical_end_line": 286,
+        "complete_proof_exact_except_heading_depth": true
+      },
+      {
+        "original": "/Users/jonBridger/.codex/worktrees/metric-clock-20261013/New Axioms Lets Go/.claude/science/physics-loops/metric-clock-reconstruction-20261013/source_recovery/direct_scalar_clock_link/DIRECT_SCALAR_CLOCK_LINK.md",
+        "heading": "One scalar coupling: static force, clock phase and reference geometry",
+        "canonical_start_line": 288,
+        "canonical_end_line": 502,
+        "complete_proof_exact_except_heading_depth": true
+      }
+    ],
+    "imports": [
+      "__future__",
+      "os",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "sys",
+      "functools",
+      "pathlib",
+      "mpmath",
+      "numpy",
+      "scipy",
+      "scipy.integrate",
+      "scipy.linalg",
+      "scipy.special",
+      "sympy"
+    ],
+    "failed_v1_to_current_v2_change": "one built-in-bool normalization line only",
+    "read_closure": [
+      "docs/METRIC_CLOCK_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "scripts/metric_clock_reconstruction_2026_10_13.py"
+    ],
+    "historical_runner_imports": false
+  },
+  "result_comparison": {
+    "scientific_result_leaf_counts": {
+      "numeric": 2573,
+      "booleans_in_numeric_count": 142,
+      "other": 164
+    },
+    "all_original_sections_exact": true,
+    "canonical_families": {
+      "metric_symbol_and_scalar_stress": true,
+      "positive_scalar_norm_and_basis_changes": true,
+      "circular_tensor_scalar_flux": true,
+      "physical_wave_patterns_and_tides": true,
+      "static_lensing_integrals": true,
+      "exact_working_rectangle_and_angular_refinement": true,
+      "clock_two_center_channels": true,
+      "clock_radial_angular_refinements": true,
+      "clock_single_reference": true,
+      "static_gaussian_interaction_and_plateau": true,
+      "late_time_rows": true,
+      "finite_oscillator_visibility": true,
+      "illustrative_SI_bounds": true,
+      "sensitivity_to_false_formulas": true
+    },
+    "wrapper_scope_preserved": true
+  },
+  "independent_math": {
+    "omitted_stress_amplitude_ratio": "1/2",
+    "omitted_stress_power_ratio": "1/4",
+    "reversed_stress_second_harmonic": "zero exactly",
+    "Green_crossstress": "-G m1 m2 r_i r_j/r^3",
+    "exact_TT_sphere_average_over_S_squared": "2/5",
+    "exact_scalar_sphere_average_over_S_squared": "2/15",
+    "fixed_GN_circular_a1": "7/12",
+    "incorrect_fixed_Gstar_a1": "7/6",
+    "mixed_basis_invariant": "1458/6125",
+    "opposite_components_positive_norm": "2",
+    "clock_spectrum": "2 G_N f_scalar hbar omega/c^5 before Gaussian profile",
+    "same_coefficient_Gstar_a_equals_GN_f": true,
+    "zero_separation_difference": "zero exactly",
+    "false_independent_bath_chi_over_kappa_at_x1": 0.46096867284703424,
+    "positive_integral_quadrature_estimate": 5.1167979290251275e-15
+  },
+  "cache": {
+    "runner_sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+    "note_sha256": "339df68e83e28d3613e78e9677ddd10a9473f1fc1042efc66785edb593f512e6",
+    "declared_input_fingerprint": "7b94e79ab2ff7ce22321a292e678df01816d56aba49389ffb9fa3d7ab27d82aa",
+    "fresh_against_exact_frozen_input": true,
+    "cache_stdout_matches_executed_stdout": true
+  },
+  "cli": {
+    "executions": [
+      {
+        "label": "default_1",
+        "arguments": [],
+        "exit": 0,
+        "expected_exit": 0,
+        "elapsed_seconds": 3.4659260408952832,
+        "stdout_sha256": "f68b6b09a232d495f376108f230d1c1561492b986228ce7462b4bf0d3fb6621e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "default_2",
+        "arguments": [],
+        "exit": 0,
+        "expected_exit": 0,
+        "elapsed_seconds": 2.9390792078338563,
+        "stdout_sha256": "f68b6b09a232d495f376108f230d1c1561492b986228ce7462b4bf0d3fb6621e",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "json_and_exclusive_output",
+        "arguments": [
+          "--json",
+          "--output-json",
+          "fresh_result.json"
+        ],
+        "exit": 0,
+        "expected_exit": 0,
+        "elapsed_seconds": 2.80413524992764,
+        "stdout_sha256": "7348f8f813ee889a47df2c543d8f42e6f519e37347ce5cd544a269979e37b789",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "existing_file_refused",
+        "arguments": [
+          "--output-json",
+          "fresh_result.json"
+        ],
+        "exit": 1,
+        "expected_exit": 1,
+        "elapsed_seconds": 2.6530013331212103,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "e675e8eef96ccaf2ac4f4b8058549242ada417e3564894ba0b352e6b5a1221cf"
+      },
+      {
+        "label": "changed_note_fingerprint",
+        "arguments": [
+          "--json"
+        ],
+        "exit": 0,
+        "expected_exit": 0,
+        "elapsed_seconds": 2.831061374861747,
+        "stdout_sha256": "55dce4aadd7ea630d9c8e7057694e79f802e5edd4a0f9a52e46bf9ab65771f66",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "repeatable_default": true,
+    "json_matches_file_from_same_run": true,
+    "all_current_result_fields_reproduced": true,
+    "existing_result_byte_preserving_refusal": true,
+    "copied_note_change_updates_input_hash": true,
+    "scientific_body_or_canonical_source_mutated": false,
+    "expected_nonzero_exit_is_guard_test_not_science_failure": true
+  },
+  "status": "PASS scoped source port",
+  "finished_at": "2026-10-13T01:53:35.911807+00:00"
+}

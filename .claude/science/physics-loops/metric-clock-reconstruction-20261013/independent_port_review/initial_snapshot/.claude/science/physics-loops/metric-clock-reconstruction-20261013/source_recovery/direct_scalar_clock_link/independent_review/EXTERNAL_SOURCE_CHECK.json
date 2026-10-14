@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-13T01:19:25.736226+00:00",
+  "sources": [
+    {
+      "role": "SI conversion only, no confidence or empirical inference",
+      "title": "NIST CODATA 2022 complete constants table",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "verified_entries": {
+        "G_N": 6.6743e-11,
+        "G_N_standard_uncertainty": 1.5e-15,
+        "c_exact": 299792458,
+        "h_exact": 6.62607015e-34
+      }
+    },
+    {
+      "read_scope": "primary abstract only",
+      "role": "prior-art context; no imported equation or exhaustive novelty claim",
+      "title": "Quantum Computers and Dissipation",
+      "url": "https://arxiv.org/abs/quant-ph/9702001"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scientific_failure_before_check": false,
+  "read_only_tool_issues": [
+    {
+      "operation": "Initial batched source display",
+      "issue": "Combined display truncated despite adequate per-command caps",
+      "resolution": "Read canonical note lines241-650 separately and workflow remainder; no missing source treated as read."
+    },
+    {
+      "operation": "Broad rg for cache identity declarations",
+      "issue": "Many unrelated matches; display truncated",
+      "resolution": "Narrowed to discovered scripts/runner_cache.py; read fingerprint implementation."
+    },
+    {
+      "operation": "rg guessed docs/audit/scripts/runner_cache.py",
+      "exit": 2,
+      "stderr": "No such file or directory (os error 2)",
+      "resolution": "rg --files found scripts/runner_cache.py, read successfully."
+    }
+  ]
+}

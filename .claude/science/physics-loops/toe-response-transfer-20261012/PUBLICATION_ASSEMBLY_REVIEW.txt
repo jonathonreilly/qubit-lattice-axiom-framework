@@ -1,0 +1,71 @@
+# Exact response-transfer publication review
+
+Disposition: accepted_for_source_integration. This is root's final source,
+program and packaging review, not an independent scientific audit or a claim
+that integration has already executed successfully.
+
+The source package SOURCE_FREEZE.json is pinned at
+ e4c84cbdf11b119f4d3ed3e39569c9c012158b1604543a3a96a1e289af4977d5.
+Its 601-line driver is
+93b0cfbe393739dcc2bf920343beb5c2969fdba7186df3e1730cc9ec8c5a92ab.
+Root read the complete original driver, complete final adaptation diff and
+new whitespace guard. All unchanged implementation coverage is reused at
+verified identities. The template, builder and generator were read completely;
+the paired generated tools were verified as exact template instances with the
+same declared 94-input closure and only claim attribution differing.
+
+Root previously read the complete 1247-line response assembly694e3962 and
+491-line exact reviewc50b1ac2, plus the 696-line temporal-transfer proof04eef496
+and410-line comparison46533eb1. Required premises and checked parent arguments
+retain their existing exact-source coverage. Both publication headers,
+appendices and complete original-to-publication diffs were read. Mathematical
+bodies, including original source ledgers and historical statuses, reconstruct
+literally; no new mathematical premise, lemma, relocation or body edit enters.
+The complete packet Markdown and metadata were read, including all final
+whitespace passages. Late author checker255lines, final reproduction111lines,
+outer README57lines, conformance31lines, transformation35lines, author failure
+records and final coverage/handoff records were read completely. An aggregate
+metadata output truncated; the affected transformation text was reread and
+large generated path inventories were subsequently checked structurally in
+full. Truncated output was not used as completed proof coverage.
+
+Root's separately authored response_root_source_check.py verified every139
+frozen member, all83 archive objects/117 source aliases and all90 rows of the
+four complete current source/review manifests; the receipt is
+RESPONSE_TRANSFER_ROOT_IDENTITY_CHECK.json. It checked both literal canonical
+bodies, all five live canonical parents and18 current procedure identities,
+exact template instantiations and syntax. These are deterministic identity
+checks executing zero mathematical predicates. They do not substitute for the
+analytic proof reads, establish model-family independence or confer retention.
+
+The response theorem retains its exact ground, actual supplied full-Fock
+Hamiltonian, small total interaction, domain-valid finite-AC/jump source class,
+static versus norm-orbit hypotheses and finite versus weak/impulsive limits.
+Time averaging retains its autonomous bounded interaction, compact whole-line
+BV kernel, both operator/adjoint form estimates and sufficient joint-window
+condition. No later general-state, all-BV source, graph-energy, spatial,
+prepared-state, native-algebra or corrected-cell candidate enters this pair.
+Current remains open_gate. PR9502 and inheritedPR9500 science are conditional
+provisional dependencies; cumulative review/current-main landing remains due.
+
+The original response equation28 factor at line399/canonical457 is correctly
+classified as mathematical notation, with exact hash/context guard. All real
+links and the complete expected two-node/eight-edge graph delta remain checked.
+The original averaging line275/canonical332 contains a TeX backslash-space
+command. Preserving its exact bytes is accepted. The guard scans all staged
+text, allows only that exact source-context line and preserves the actual Git
+exit code/diagnostic; every other whitespace issue fails. If Git returns2,
+this must remain reported as the one classified diagnostic, never a zero-exit
+whitespace check. No scientific bytes or Git configuration are changed.
+
+Root authorizes the frozen prepare phase on the exact clean child at
+ba3ea535fa5ce80a3ad81b384a2063185da42756, then explicit exact staging and verify.
+Prepare and verify have bounded recorded execution and no automatic failure
+retry or Git mutation. The source package acceptance does not predeclare graph,
+cache, staged blob or compatibility outcomes. Root must inspect complete actual
+outputs and any failure before publication. Four byte-corruption probes are
+integrity controls only. The selected-ledger checker is not an audit of these
+new claims; strict/current-main landing checks and any retained audit remain
+later obligations. N1/N5 remain pending, no no-go PASS or analytic Lean claim.
+
+No editable prompt, physical axiom, audit verdict or main branch changed.

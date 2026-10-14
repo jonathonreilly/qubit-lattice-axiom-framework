@@ -1,0 +1,45 @@
+{
+  "base": "ba3ea535fa5ce80a3ad81b384a2063185da42756",
+  "canonical_formal_appendices_not_new_analytic_premises": true,
+  "main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "parents": [
+    {
+      "claim_id": "bounded_interaction_ground_bounded_theorem_note_2026-10-12",
+      "path": "docs/BOUNDED_INTERACTION_GROUND_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "648dafa1fc82db020e62b62ab1343557917b6922b44f3e8568c6465d24458480",
+      "role": "bounded interaction, full-Fock ground and domain premises; conditional PR9502",
+      "original_published_sha256": "8454f1c88d5d6c05910b5d7fd1ec34d454118c4b41ad3d930a339c77c97c45b2",
+      "integration_scope": "Reviewed conditional source on main. Original mathematical argument preserved; publication links, support citation corrections and provenance only; no retained or audit authority."
+    },
+    {
+      "claim_id": "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12",
+      "path": "docs/ADIABATIC_GROUND_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "bd41d24749c7c9271260835eca04aea3f5d00354acd29622a75702c79ce1354c",
+      "role": "common-domain proof source, not an approximate-ground pulse composition; conditional PR9502",
+      "original_published_sha256": "dd2862222f8501620d97adbac6ff2c2f38751a24043e09c34acc8bc6c162dfca",
+      "integration_scope": "Reviewed conditional source on main. Original mathematical argument preserved; publication links, support citation corrections and provenance only; no retained or audit authority."
+    },
+    {
+      "claim_id": "energy_transfer_correlation_bounded_theorem_note_2026-10-12",
+      "path": "docs/ENERGY_TRANSFER_CORRELATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "7b349351f655f2606845ef3055d8f483d89db613f9df497ec313858a7f888098",
+      "role": "actual high-band transfer and explicit state-limit routes; conditional PR9500",
+      "original_published_sha256": "60be3444c7e9e60090617944733f6c84dbd9184e3ca043d90bc71203ac2e1843",
+      "integration_scope": "Reviewed conditional source on main. Original mathematical argument preserved; publication links, support citation corrections and provenance only; no retained or audit authority."
+    },
+    {
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+      "role": "supplied physical two-branch symbol, embeddings and ordinary-cell comparison; open_gate"
+    },
+    {
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "role": "ordinary-cell CAR, even-spin interpretation and graph consistency"
+    }
+  ],
+  "status": "conditional sources; no retained authority; Current open_gate",
+  "integration_main": "9a96afddaf66d0921dc0e2656460025498d312bc"
+}

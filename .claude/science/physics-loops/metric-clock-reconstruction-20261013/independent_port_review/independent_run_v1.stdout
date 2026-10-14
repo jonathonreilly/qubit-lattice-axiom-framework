@@ -1,0 +1,36 @@
+{
+  "started_at": "2026-10-13T01:53:18.958091+00:00",
+  "inventory": {
+    "initial_port_paths": 124,
+    "original_constituent_paths": 98,
+    "derived_original_tree_display_files": 2,
+    "tree": "3dde95713fafb4d48c72bcfc673d2d121018cdc5",
+    "runtime_freeze_paths": 122
+  },
+  "independent_math": {
+    "omitted_stress_amplitude_ratio": "1/2",
+    "omitted_stress_power_ratio": "1/4",
+    "reversed_stress_second_harmonic": "zero exactly",
+    "Green_crossstress": "-G m1 m2 r_i r_j/r^3",
+    "exact_TT_sphere_average_over_S_squared": "2/5",
+    "exact_scalar_sphere_average_over_S_squared": "2/15",
+    "fixed_GN_circular_a1": "7/12",
+    "incorrect_fixed_Gstar_a1": "7/6",
+    "mixed_basis_invariant": "1458/6125",
+    "opposite_components_positive_norm": "2",
+    "clock_spectrum": "2 G_N f_scalar hbar omega/c^5 before Gaussian profile",
+    "same_coefficient_Gstar_a_equals_GN_f": true,
+    "zero_separation_difference": "zero exactly",
+    "false_independent_bath_chi_over_kappa_at_x1": 0.46096867284703424,
+    "positive_integral_quadrature_estimate": 5.1167979290251275e-15
+  },
+  "cache": {
+    "runner_sha256": "a8096fffb13f66fc4656825901890e9fb01ab3043b62c04a4f629d85d84b06d9",
+    "note_sha256": "339df68e83e28d3613e78e9677ddd10a9473f1fc1042efc66785edb593f512e6",
+    "declared_input_fingerprint": "7b94e79ab2ff7ce22321a292e678df01816d56aba49389ffb9fa3d7ab27d82aa",
+    "fresh_against_exact_frozen_input": true,
+    "cache_stdout_matches_executed_stdout": true
+  },
+  "status": "PASS scoped source port",
+  "finished_at": "2026-10-13T01:53:35.911807+00:00"
+}

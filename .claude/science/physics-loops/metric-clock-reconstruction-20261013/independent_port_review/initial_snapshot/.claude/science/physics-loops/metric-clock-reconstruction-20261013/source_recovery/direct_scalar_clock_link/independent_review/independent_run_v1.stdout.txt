@@ -1,0 +1,22 @@
+Time-domain covariance controls at x=0.1
+Time-domain covariance controls at x=0.5
+Time-domain covariance controls at x=1.0
+Time-domain covariance controls at x=2.0
+Time-domain covariance controls at x=5.0
+Time-domain covariance controls at x=10.0
+Time-domain covariance controls at x=30.0
+All field, single-clock, static and late-time controls completed.
+{
+  "pair_geometries": 49,
+  "pair_channels": 98,
+  "max_pair_absolute_difference": 1.031305390627413e-15,
+  "max_pair_fractional_difference": 1.8537900220738107e-16,
+  "oscillator_author_rows": 32,
+  "max_wavepacket_to_author_matrix_difference": 1.4876988529977098e-14,
+  "max_wavepacket_to_author_prediction_difference": 2.220446049250313e-16,
+  "max_common_force_visibility_change": 3.3306690738754696e-16,
+  "max_late_time_absolute_difference": 1.2680309079619132e-15,
+  "max_SI_fractional_difference": 4.1436320173385524e-16,
+  "max_SI_Ramsey_bound": 3.200636595136823e-57,
+  "max_SI_echo_bound": 1.2802546380547293e-56
+}

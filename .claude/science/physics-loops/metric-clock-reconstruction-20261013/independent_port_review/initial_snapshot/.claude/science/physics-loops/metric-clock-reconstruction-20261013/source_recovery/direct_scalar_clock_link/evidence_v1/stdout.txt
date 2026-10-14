@@ -1,0 +1,1 @@
+{"channels": 98, "finite_oscillator_controls": 32, "max_illustrative_Ramsey_bound": 3.200636595136823e-57, "max_illustrative_echo_bound": 1.2802546380547293e-56, "max_oscillator_visibility_error": 1.4988010832439613e-14, "max_pair_absolute_error": 4.725109192804666e-13, "max_pair_fractional_error": 4.589434632121666e-14, "pair_geometries": 49}

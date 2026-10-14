@@ -1,0 +1,9 @@
+PASS common action: metric symbol, positive modes,100 patterns,20 fluxes and15 lens integrals.
+PASS scalar clock:98 pair channels,32 oscillators,static kernel,plateaus and27 illustrative SI cases.
+False alternatives are formula comparisons, not mutated-source executions.
+per_element: metric/scalar components and logical-source difference explicitly checked.
+per_site: two Gaussian clock centers; no microscopic site law supplied.
+per_mode: two physical tensor modes and finite positive scalar directions checked.
+per_block: fourteen conservative,radiative,coherence and sensitivity families checked.
+lattice_wide: checked and not executed; supplied continuum candidate only.
+TOTAL: PASS=14 FAIL=0; conditional-support, no empirical acceptance.

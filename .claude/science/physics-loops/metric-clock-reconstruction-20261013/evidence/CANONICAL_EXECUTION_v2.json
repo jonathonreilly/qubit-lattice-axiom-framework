@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-13T01:36:47.237831+00:00",
+  "finished_at": "2026-10-13T01:36:49.898172+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    "/Users/jonBridger/.codex/worktrees/metric-clock-20261013/New Axioms Lets Go/scripts/metric_clock_reconstruction_2026_10_13.py",
+    "--output-json",
+    "/Users/jonBridger/.codex/worktrees/metric-clock-20261013/New Axioms Lets Go/.claude/science/physics-loops/metric-clock-reconstruction-20261013/evidence/CANONICAL_RESULT_v2.json"
+  ],
+  "exit": 0,
+  "source_unchanged": true,
+  "first_failure_preserved": "CANONICAL_FAILURE_v1.json"
+}

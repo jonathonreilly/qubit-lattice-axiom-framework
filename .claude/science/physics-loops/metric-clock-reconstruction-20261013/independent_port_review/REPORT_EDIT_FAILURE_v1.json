@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-13T02:01:35.924424+00:00",
+  "operation": "apply_patch to unfinished reviewer report",
+  "error": "Expected historical result. context line not found",
+  "effect": "No file changed",
+  "recovery": "Applied the actual empirical confirmations. context and normalized the not-yet-frozen report to one terminal newline. No author source or executed checker changed."
+}

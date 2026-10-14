@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-13T00:46:51.282157+00:00",
+  "root": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_tensor_scalar_reconstruction",
+  "sources": [
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "aa26c0746776187342f01c6b5dc6f5165b039fa7fd266fbf2a572d8ec7c41ece",
+      "bytes": 914,
+      "snapshot": "snapshots_v1/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": "DIRECT_RECONSTRUCTION.md",
+      "sha256": "fac07945fb9d7ab1341a3b93c6a2c67637764fe30345848a34a41846833deda3",
+      "bytes": 12034,
+      "snapshot": "snapshots_v1/DIRECT_RECONSTRUCTION.md"
+    },
+    {
+      "path": "FREEZE.json",
+      "sha256": "8dc2d73161d991595d93b19e4107bb66e3d75850a34c527e76ad76d8626e2ccc",
+      "bytes": 357,
+      "snapshot": "snapshots_v1/FREEZE.json"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "c53b53b2b000313cf9287cd39bfc5fc05b7f67aafd3f541bb8fb135fef4c6cf5",
+      "bytes": 3436,
+      "snapshot": "snapshots_v1/PROTOCOL.md"
+    },
+    {
+      "path": "RESULTS_AND_SCOPE.md",
+      "sha256": "171bfce88cdc9be5dd9f0cbcd5ac018742c77adb01ab5d1c532bca4487dedeee",
+      "bytes": 2278,
+      "snapshot": "snapshots_v1/RESULTS_AND_SCOPE.md"
+    },
+    {
+      "path": "SOURCE_LEDGER.json",
+      "sha256": "c663cf812d14e09801c8b30f8c6c97eb2cc484863fff9bae81927c43860edece",
+      "bytes": 3110,
+      "snapshot": "snapshots_v1/SOURCE_LEDGER.json"
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "4681ecddce4ee66ba204ea4a64ee80e17b9a8725152f40f36638da4f63ed1356",
+      "bytes": 532,
+      "snapshot": "snapshots_v1/TRACE_GATE.md"
+    },
+    {
+      "path": "check_reconstruction.py",
+      "sha256": "1625124b0fd8df1b3432cccdc97ff9a07270d7aff8919d3617f3d97d463aad43",
+      "bytes": 12496,
+      "snapshot": "snapshots_v1/check_reconstruction.py"
+    },
+    {
+      "path": "evidence_v1/EXECUTION.json",
+      "sha256": "9a8d384f19beb118aa1a344a3a04079e2f71618f5da58bf4da71a509e532f4fc",
+      "bytes": 277,
+      "snapshot": "snapshots_v1/evidence_v1/EXECUTION.json"
+    },
+    {
+      "path": "evidence_v1/FREEZE.json",
+      "sha256": "96b112f50ed80f1c284bfb64f94e65439b4f7750fb931270b8ff0a80712f73c3",
+      "bytes": 1016,
+      "snapshot": "snapshots_v1/evidence_v1/FREEZE.json"
+    },
+    {
+      "path": "evidence_v1/RESULTS.json",
+      "sha256": "b9cde6ce9ebb1b2dc6fa31ab104bcb602605baf31ec03491cd2b97b9062b2860",
+      "bytes": 50167,
+      "snapshot": "snapshots_v1/evidence_v1/RESULTS.json"
+    },
+    {
+      "path": "evidence_v1/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "snapshot": "snapshots_v1/evidence_v1/run.stderr.txt"
+    },
+    {
+      "path": "evidence_v1/run.stdout.txt",
+      "sha256": "536d5b0aee9c626d73f848b0422b69a2274227704f9a84beb46e3ba88a9cd425",
+      "bytes": 283,
+      "snapshot": "snapshots_v1/evidence_v1/run.stdout.txt"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-13T01:57:03.393569+00:00",
+  "kind": "Reviewer-owned line range metadata correction before final report",
+  "reason": "Initial manually entered line ranges overran the final source in two rows; derive all boundaries from actual heading locations and actual574-line length. No scientific assertion or author source changed.",
+  "old_sha256": "6f040636752027ce46c69ed7bc40107ad2a26a13ec3b0924a3481ebfad405fc6",
+  "new_sha256": "80083602fbd45dc6299fcc0afcb6a35b197a5e7d37c86b44ced7701e3ac8f2b7",
+  "changes": [
+    {
+      "id": "action_modes_exchange",
+      "old_range": "52-122",
+      "new_range": "52-123"
+    },
+    {
+      "id": "weak_static_bending_invariant",
+      "old_range": "124-165",
+      "new_range": "124-166"
+    },
+    {
+      "id": "leading_circular_radiation",
+      "old_range": "167-286",
+      "new_range": "167-287"
+    },
+    {
+      "id": "canonical_clock_source_and_state",
+      "old_range": "288-394",
+      "new_range": "288-395"
+    },
+    {
+      "id": "exact_clock_functions_and_bounds",
+      "old_range": "396-509",
+      "new_range": "396-503"
+    },
+    {
+      "id": "port_supplements_and_reporting",
+      "old_range": "511-593",
+      "new_range": "504-574"
+    }
+  ],
+  "original_v1_preserved": true,
+  "scientific_rerun_required": false
+}

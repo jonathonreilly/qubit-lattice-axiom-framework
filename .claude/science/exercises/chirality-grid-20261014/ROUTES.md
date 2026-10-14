@@ -57,3 +57,25 @@ Three Opus 5.5 agents at xhigh, same family. Each crossed cores from different f
    - **The framework's own walker gives a clean, cubic-invariant three-generation chiral package** (X2), whose failure mode is precisely known: GPR intermediate SSB, or a GS composite.
    - **New cross-lane theorem:** nontrivial CKM forces a first-order flavour-strain channel (X2-L8).
 3. **Gravity × chirality.** Set B (Euclidean Z⁴) now carries the best gravity bill (R19-28, refereed) **and** the only chirality route whose free real-time spectrum is clean (X3). Its shared obligations are gauged RP plus the RP of matter + spatial-TT gravity with a time-non-local overlap stress (L3grav).
+
+## Kill round K3 (15:00–15:23Z): price theorems and reframings
+
+`kills/K3/KILL_REPORT.md`. Same-family agent; not refereed. Dated corrections follow; the original rows above are left as written.
+
+- **F3-A:**
+  - A1/A2 **survive**.
+  - **A3 dichotomy wounded.** Branch (b), a conserved local E′, is empty for any gauge-coupled tick (proved, first order). The vacuum is therefore not stationary.
+  - For the repo's U_g, emission/absorption = 1.000000 exactly, so gain = loss (K3-T1, checked). For the single-light-Weyl tick (M = −2) it is 17.0008, a net amplifier (K3-T1F, checked).
+  - The price conclusion ("tails-tick exit closed without the range decision") **survives, strengthened**: a nonzero W3 forbids a nearby local log of U (proved).
+- **F6:**
+  - The index lemma survives, but its application to "the 11-item list was guaranteed" is wounded. F3's M = −2 tick is a counterexample to "free ticks fail by the lemma".
+  - **T_d is wounded:** it is a translation with T_d² ≠ 1, so it gives no chirality projectors (NO_PER_SITE N3).
+  - #2 not being a price **survives**.
+  - **"#4 not a price" is wounded.** The γ5 motivation is not a price, but site-algebra size is (every surviving route needs 16 to ~10³ modes per site). The literal wake text of #4 (DEFERRED_DECISIONS.md:139-142) fires. **This is an owner decision.**
+  - The S/gg→h exclusion survives.
+  - "8 vs 48 is a category error" is wounded: T25 already priced the matter count, and F6 conditionally lowers it to 16.
+- **F4-L2:** the lemma survives; the **"iff" is reduced to "⇒"** (a working slab implies GS fails; the converse is not shown).
+- **X1:**
+  - **E4 is wounded.** It assumes the target is realized with an exact on-site symmetry, but the contract also admits emergent, non-on-site, Euclidean and tick realizations.
+  - So S\* is target-equivalent only to the on-site version. **F1-R3's "stronger than T" grading stands.** Blocked-equivalent status is unchanged.
+- **F5:** Lemmas B and D survive.

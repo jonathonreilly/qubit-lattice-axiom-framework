@@ -1,0 +1,19 @@
+corner a values (+1: eps=0 node, -1: eps=pi node): [ 1. -1. -1.  1. -1.  1.  1. -1.]
+
+     w   A_abs(light)       A_em(pi)  A_em/A_abs  net/A_abs  pi-abs at +w  dE'(light) dE'(pi)
+  0.20   2.021704e-03   2.021704e-03    1.000000   1.09e-12     0.000e+00  1.9967e-01 1.9967e-01   root-ok frac min 1.0000
+  0.10   5.063105e-04   5.063105e-04    1.000000  -4.07e-13     0.000e+00  9.9958e-02 9.9958e-02   root-ok frac min 1.0000
+  0.05   1.266330e-04   1.266330e-04    1.000000  -2.18e-12     0.000e+00  4.9995e-02 4.9995e-02   root-ok frac min 1.0000
+  0.02   2.026376e-05   2.026376e-05    1.000000  -5.10e-12     0.000e+00  2.0000e-02 2.0000e-02   root-ok frac min 1.0000
+  0.01   5.066030e-06   5.066030e-06    1.000000   5.42e-12     0.000e+00  1.0000e-02 1.0000e-02   root-ok frac min 1.0000
+
+w= 0.20: A_abs/ref = 0.997671   A_em/ref = 0.997671
+w= 0.10: A_abs/ref = 0.999417   A_em/ref = 0.999417
+w= 0.05: A_abs/ref = 0.999854   A_em/ref = 0.999854
+w= 0.02: A_abs/ref = 0.999977   A_em/ref = 0.999977
+w= 0.01: A_abs/ref = 0.999994   A_em/ref = 0.999994
+
+full-BZ grid N=72: outside corner balls (r>0.25): min 2eps+ = 0.5151, max 2eps+ = 5.7681 (2pi = 6.2832)
+no weight at |2eps+| < 0.2 or 2eps+ > 2pi-0.2 outside the shells: True
+
+Pre-registered verdict: KILL-(b)-READING

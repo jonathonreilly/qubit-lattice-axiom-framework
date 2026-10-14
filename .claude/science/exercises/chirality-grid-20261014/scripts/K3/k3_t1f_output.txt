@@ -1,0 +1,19 @@
+corner a values (+1: eps=0 node, -1: eps=pi node): [-1. -1. -1. -1. -1. -1. -1.  1.]
+
+     w   A_abs(light)       A_em(pi)  A_em/A_abs  net/A_abs  pi-abs at +w  dE'(light) dE'(pi)
+  0.20   5.039205e-04   8.754172e-03   17.372128  -1.64e+01     0.000e+00  1.9967e-01 1.9967e-01   root-ok frac min 1.0000
+  0.10   1.264829e-04   2.161099e-03   17.086101  -1.61e+01     0.000e+00  9.9958e-02 9.9958e-02   root-ok frac min 1.0000
+  0.05   3.165232e-05   5.387582e-04   17.021129  -1.60e+01     0.000e+00  4.9995e-02 4.9995e-02   root-ok frac min 1.0000
+  0.02   5.065789e-06   8.613545e-05   17.003363  -1.60e+01     0.000e+00  2.0000e-02 2.0000e-02   root-ok frac min 1.0000
+  0.01   1.266498e-06   2.153153e-05   17.000840  -1.60e+01     0.000e+00  1.0000e-02 1.0000e-02   root-ok frac min 1.0000
+
+w= 0.20: A_em/A_abs = 17.372128  (desk prediction 17)
+w= 0.10: A_em/A_abs = 17.086101  (desk prediction 17)
+w= 0.05: A_em/A_abs = 17.021129  (desk prediction 17)
+w= 0.02: A_em/A_abs = 17.003363  (desk prediction 17)
+w= 0.01: A_em/A_abs = 17.000840  (desk prediction 17)
+
+full-BZ grid N=72: outside corner balls (r>0.25): min 2eps+ = 0.5186, max 2eps+ = 6.1800 (2pi = 6.2832)
+no weight at |2eps+| < 0.2 or 2eps+ > 2pi-0.2 outside the shells: False
+
+Pre-registered verdict: NET-GAIN

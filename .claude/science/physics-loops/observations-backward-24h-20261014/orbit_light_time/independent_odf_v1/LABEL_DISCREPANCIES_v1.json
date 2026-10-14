@@ -1,0 +1,140 @@
+{
+  "scope": "Separate diagnosis of format/documentation differences; initial failed coverage check preserved unchanged",
+  "input_sha256": {
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_odf_c32easc2002_169_0000xmmmv0.lbl": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_development/c32easc2002_169_0000xmmmv0.odf": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/AUTHOR_PDS_ODF_INVENTORY_v1.py": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/INDEPENDENT_RESULTS_v1.json": "f773df8659a1e39210cbb0054878d588e88690b72626ee6c8127e003b8673dc4"
+  },
+  "primary_context": {
+    "path": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/receiver_bridge/trk218_2000.pdf",
+    "sha256": "59c45204b231d5c08e8918038a4c605348d9722487664cf73325050843c77c46",
+    "url": "https://pds-geosciences.wustl.edu/radiosciencedocs/urn-nasa-pds-radiosci_documentation/DSN_TRK-2-18/dsn_trk-2-18.2000-06-15.pdf",
+    "role": "Separately consulted primary table 3-3b (pages 3-4 through 3-6), 3-4b (3-7), and signed-pack convention (3-2); no wholesale replacement of product label"
+  },
+  "padding_label_disagreement": {
+    "eof_header_record_one_based": 91952,
+    "label_padding_first_record": 91953,
+    "label_padding_rows": 111,
+    "label_last_covered_record": 92063,
+    "physical_file_records": 92064,
+    "unlisted_trailing_bytes_hex": "000000000000000000000000000000000000000000000000000000000000000000000000",
+    "file_is_8064_byte_block_multiple": true,
+    "orbit_data_effect": "None: all orbit and following group boundaries agree; omitted record is after EOF."
+  },
+  "network_item15_item20": [
+    {
+      "type": 11,
+      "network": 0,
+      "item15_unsigned": 2,
+      "item20_unsigned": 0,
+      "count": 649
+    },
+    {
+      "type": 12,
+      "network": 0,
+      "item15_unsigned": 2,
+      "item20_unsigned": 0,
+      "count": 61459
+    },
+    {
+      "type": 13,
+      "network": 0,
+      "item15_unsigned": 2,
+      "item20_unsigned": 0,
+      "count": 29556
+    },
+    {
+      "type": 37,
+      "network": 0,
+      "item15_unsigned": 19,
+      "item20_unsigned": 0,
+      "count": 198
+    },
+    {
+      "type": 37,
+      "network": 0,
+      "item15_unsigned": 19,
+      "item20_unsigned": 23586,
+      "count": 1
+    }
+  ],
+  "reference_nonzero": [
+    {
+      "type": 11,
+      "network": 0,
+      "nonzero": true,
+      "count": 649
+    },
+    {
+      "type": 12,
+      "network": 0,
+      "nonzero": true,
+      "count": 61459
+    },
+    {
+      "type": 13,
+      "network": 0,
+      "nonzero": true,
+      "count": 29556
+    },
+    {
+      "type": 37,
+      "network": 0,
+      "nonzero": true,
+      "count": 199
+    }
+  ],
+  "item20_sign_bit_counts": [
+    {
+      "type": 11,
+      "sign_bit_set": false,
+      "count": 649
+    },
+    {
+      "type": 12,
+      "sign_bit_set": false,
+      "count": 61459
+    },
+    {
+      "type": 13,
+      "sign_bit_set": false,
+      "count": 29556
+    },
+    {
+      "type": 37,
+      "sign_bit_set": false,
+      "count": 199
+    }
+  ],
+  "item20_signed_boundary_witness": {
+    "record_hex": "00000000000000000000000000000000000000000000000000000000fffff00000000000",
+    "label_unsigned_payload": 1048575,
+    "specification_S20_value": -1,
+    "effect_on_actual_file": "None: all actual item20 values have sign bit zero."
+  },
+  "doppler_item15_counts": {
+    "2": 91664
+  },
+  "doppler_summary_channel_values": [
+    2
+  ],
+  "signed_fraction_count": 1943,
+  "unsigned_fraction_mutation_witness": {
+    "record": 3313,
+    "signed_fraction": -790844652,
+    "wrong_unsigned_fraction": 3504122644,
+    "observable_error_if_unsigned_units": 4.294967296
+  },
+  "file_creation_date_raw": 1020712,
+  "file_creation_date_scope": "1020712 does not fit the literal two-digit YYMMDD description. No alternative year convention is silently adopted. Orbit epoch comes from the separate 19500101 reference-date field.",
+  "interpretive_boundaries": [
+    "Item15=2 is consistent with the 2000 Doppler-channel description and with this file's summary channel; the product label's otherwise-zero sentence is incomplete.",
+    "The label says unsigned item20, whereas the separate 2000 primary table says S20. Keep raw bits and apply any version-qualified signed interpretation explicitly.",
+    "All actual network codes are zero. Network3/NSP zero-reference behavior is not exercised and has not been validated.",
+    "The 2000 table explicitly calls the reference I46, supporting high*2^24+low millihertz; its physical role remains data-type/ramp dependent.",
+    "The measured-file checks do not validate later Doppler formulas, band conversions, clock scales, ramp assignments, calibration or gravity fits."
+  ],
+  "all_diagnostic_assertions_completed": true,
+  "script_sha256": "b23bcd812fa04f779f21488d60bfca196ef3a1c2c16c5de2d8e0bb164878487f"
+}

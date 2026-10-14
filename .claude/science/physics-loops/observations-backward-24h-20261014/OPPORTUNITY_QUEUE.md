@@ -1,8 +1,8 @@
-# Ranked opportunities
+# Ranked opportunities after count reconstruction
 
-1. **Orbit versus radio delay:** derive a finite-range, finite-source calibration map, test it numerically, and determine exactly what public Cassini information can constrain. High value: current main explicitly lacks this bridge.
-2. **Radial scale reconstruction:** combine multiple dynamical radii with light normalization; derive identifiability, parameter-domain and finite-error certificates from measurements, without assuming a vacuum mass or choosing a potential.
-3. **Environmental/history supplier:** solve or bound the relevant weak solar boundary problem from measured compactness and actual source trace; determine whether the small-perturbation premise can be derived on the candidate branch.
-4. **Action selection:** attempt a mechanism beyond chosen potential and initial state using independent cosmological observables and symmetry/positivity constraints. Keep supplied premises separate and demand a distinct discriminator.
+1. **Retarded physical measurement map:** determine transmitted-phase coverage and bound station/electronics, media and trajectory terms for the development track. The archive conversion is now reconstructed, but its tiny consistency residual is not a gravity residual. Prefer a reusable physical bound or joint-model discriminator over further parser details.
+2. **Environment and source history:** derive a controlled response/boundary approximation from the revised candidate and observed source scales; use the finite-source inverse only in that proven domain. This attacks the supplied ambient/stationary-state assumption directly.
+3. **Radial/spectral reconstruction:** compare single-range and multi-range force responses with independent dynamical and light coefficients, carrying finite errors and source-charge uncertainty.
+4. **Action/state selection:** seek an observationally discriminating construction beyond a chosen potential/initial state; revisit relevant cosmological data if the solar bridge ceases to yield physical progress.
 
-Evidence-value gate: each block must reduce a named open obligation or produce a new decisive test. No PR quota; no corollary churn. Formal audit deferred.
+Calibration and reserved within-experiment validation stay separate. A new instrument consistency check is not an independent experiment. Each block must reduce a named physical obligation; no PR quota or corollary churn. Formal audit is deferred.

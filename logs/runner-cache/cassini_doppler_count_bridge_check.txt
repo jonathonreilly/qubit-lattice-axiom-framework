@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/cassini_doppler_count_bridge_check.py
+runner_sha256: a82b64943f216202aa1cb5db899a36c92a96d75136f728d19e3a6d78a71d279b
+input_fingerprint_sha256: 38224820bdffb9c052e3b307cecfc7386b2986048be00caab817a69cb8f78252
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 10.57
+status: ok
+----- stdout -----
+{
+  "status": "conditional-support",
+  "role": "instrument reconstruction and conditional phase mathematics",
+  "source_manifest_sha256": "7e383c50247c91d0086e8c308e11613bb386b0f93cf282e2e4128f5a320b0392",
+  "tests": {
+    "all_registered_doppler_rows_accounted": true,
+    "all_rows_in_declared_conversion_domain": true,
+    "comparison_with_processed_data": true,
+    "wrong_label_scale_discriminated": true,
+    "omitted_rollovers_discriminated": true,
+    "wrong_bias_discriminated": true,
+    "reverse_count_discriminated": true,
+    "oneway_reference_discriminated": true,
+    "finite_count_endpoint_controls": true,
+    "ramp_controls": true,
+    "count_controls": true
+  },
+  "passed": 11,
+  "failed": 0,
+  "processed_doppler_records": 91664,
+  "measured_gravity_tests": 0,
+  "fitted_parameters": 0,
+  "endpoint_synthetic_checks": 526,
+  "ramp_synthetic_checks": 16,
+  "count_synthetic_checks": 10,
+  "reconstruction_counters": {
+    "rollovers": 21,
+    "value_equivalent_duplicate_endpoint_intervals": 1,
+    "mismatches": 0,
+    "wrong_label_scale_mismatches": 999,
+    "omitted_rollover_mismatches": 21,
+    "wrong_bias_mismatches": 91664,
+    "reverse_count_mismatches": 91664,
+    "omitted_oneway_reference_mismatches": 649
+  },
+  "endpoint_occurrences_with_nonzero_slip_diagnostic": 18393,
+  "endpoint_occurrences": 183329,
+  "maximum_reconstruction_difference_hz": 7.60550527903469e-07,
+  "ramp_records": 69,
+  "ramp_gaps": 2,
+  "nonzero_contiguous_frequency_jumps": 17,
+  "source_rows_sha256": "6973b8b57b7ecb9fc4f3ea87efbfa1e15dfe4e12349f3ad6aadd054790597f77",
+  "product_sha256": {
+    "odf_inventory.json": "d5f35150bdf7d5ae6234e25ff811dcbf0452332fe30d0f76ad343e39d735950a",
+    "atdf_inventory.json": "269a1075f7f7f9a76ed45a5e113f649a268b4ef3afcc4a99dda3aaaa731c9d62",
+    "ramp_integration.json": "1c34fdb5ce4353631fcbc9c511dc6b39a8b922ebedad03eb28a65fe7a5a4edfd",
+    "endpoint_controls.json": "e9132974747752ab5b01f82210aaa4ee6edb0a1c490b738546d6aa555ca66d3b",
+    "reconciliation.json": "52300ef640fc9b3d643c8fce268c2b40318c1c1c6726e4c2de1c7d9734f8dbab"
+  },
+  "scope": [
+    "Same-track precursor comparison is development reconstruction, not an independent experiment.",
+    "Forward modulo lift retains a bounded increment/no-reset condition; multiple full wraps share endpoint bytes.",
+    "Count differences at microhertz level do not establish instrumental accuracy.",
+    "No scalar action, state, scale, source profile, trajectory, clock precision, or plasma correction is fitted or derived."
+  ]
+}
+
+----- stderr -----
+

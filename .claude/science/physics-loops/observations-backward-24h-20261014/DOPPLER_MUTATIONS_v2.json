@@ -1,0 +1,254 @@
+{
+  "role": "focused source mutations, one replacement per implementation family; not formal audit",
+  "attempted": 19,
+  "rejected": 19,
+  "records": [
+    {
+      "name": "odf_cross_boundary",
+      "module": "cassini_odf_decode",
+      "original_sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+      "mutant_sha256": "57fee71bee690ac9cf7a1326f1be13793af932a8eb59d39087caf36ded7fd4d3",
+      "replacement": {
+        "old": "rx=bitfield(b,4,7)",
+        "new": "rx=bitfield(b,5,7)"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-ra2h5ozh/cassini_odf_decode.py\", line 61, in self_check\n    assert all(d[k]==v for k,v in wanted.items()),(d,wanted)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ({'time_seconds': 1234567890, 'time_milliseconds': 789, 'downlink_delay_ns': 123456, 'observable_integer': -234, 'observable_fraction_billionths': -567890123, 'format': 2, 'rx': 50, 'tx': 54, 'network': 0, 'type': 13, 'down_band': 3, 'up_band': 2, 'exciter_band': 2, 'bad': 1, 'item15': 0, 'spacecraft': 82, 'independent_receiver': 1, 'reference_frequency_high_mHz': 1048579, 'reference_frequency_low_mHz': 8388613, 'item20': 0, 'compression_centiseconds': 6000, 'uplink_delay_ns': 1234}, {'format': 2, 'rx': 25, 'tx': 54, 'type': 13, 'down_band': 3, 'up_band': 2, 'exciter_band': 2, 'bad': 1, 'spacecraft': 82, 'independent_receiver': 1, 'compression_centiseconds': 6000, 'uplink_delay_ns': 1234, 'time_milliseconds': 789, 'observable_integer': -234, 'observable_fraction_billionths': -567890123, 'reference_frequency_high_mHz': 1048579, 'reference_frequency_low_mHz': 8388613})\n"
+    },
+    {
+      "name": "odf_signed_words",
+      "module": "cassini_odf_decode",
+      "original_sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+      "mutant_sha256": "73d078b2cc7a72d757490f48baaa4ffa92ad4341adc0a1a105b711b4a4681d93",
+      "replacement": {
+        "old": "struct.unpack('>IIii', row[:16])",
+        "new": "struct.unpack('>IIII', row[:16])"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-jl729x0s/cassini_odf_decode.py\", line 61, in self_check\n    assert all(d[k]==v for k,v in wanted.items()),(d,wanted)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ({'time_seconds': 1234567890, 'time_milliseconds': 789, 'downlink_delay_ns': 123456, 'observable_integer': 4294967062, 'observable_fraction_billionths': 3727077173, 'format': 2, 'rx': 25, 'tx': 54, 'network': 0, 'type': 13, 'down_band': 3, 'up_band': 2, 'exciter_band': 2, 'bad': 1, 'item15': 0, 'spacecraft': 82, 'independent_receiver': 1, 'reference_frequency_high_mHz': 1048579, 'reference_frequency_low_mHz': 8388613, 'item20': 0, 'compression_centiseconds': 6000, 'uplink_delay_ns': 1234}, {'format': 2, 'rx': 25, 'tx': 54, 'type': 13, 'down_band': 3, 'up_band': 2, 'exciter_band': 2, 'bad': 1, 'spacecraft': 82, 'independent_receiver': 1, 'compression_centiseconds': 6000, 'uplink_delay_ns': 1234, 'time_milliseconds': 789, 'observable_integer': -234, 'observable_fraction_billionths': -567890123, 'reference_frequency_high_mHz': 1048579, 'reference_frequency_low_mHz': 8388613})\n"
+    },
+    {
+      "name": "atdf_signed_field",
+      "module": "cassini_atdf_decode",
+      "original_sha256": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c",
+      "mutant_sha256": "88b37db6aa243729e4d38b6fd923edb916f8659d97fa37bb2e8eed8c351b461d",
+      "replacement": {
+        "old": "return v-(1 << self.width) if",
+        "new": "return v+(1 << self.width) if"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-zmmqc0zo/cassini_atdf_decode.py\", line 84, in check_schema\n    if decode(int(bits,2).to_bytes(288,'big'),[f])[f.item]!=v:raise AssertionError((f,v))\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (Field(item=20, name='DOPPLER BIAS', first_bit_zero_based=217, width=18, signed=True), -1)\n"
+    },
+    {
+      "name": "atdf_epoch",
+      "module": "cassini_atdf_decode",
+      "original_sha256": "2ac6212a6ef7da1a95baa8f0b0a9fad99b74bed4de0a7e819d7d6b930b53196c",
+      "mutant_sha256": "de6ccc344333b26b25623ac4dd71cd65706cadc37a21a5337bd82025d263c163",
+      "replacement": {
+        "old": "datetime.datetime(1950,1,1)",
+        "new": "datetime.datetime(1951,1,1)"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\nAssertionError: epoch control\n"
+    },
+    {
+      "name": "ramp_slope_integral",
+      "module": "cassini_ramp_phase",
+      "original_sha256": "f6f20d30a557e03359ca1b28fc466805700122ca280819338da733eee80ca296",
+      "mutant_sha256": "1fe04742e3f0b769458430b94aa84bf2768e1f76393c71d81456f173c89ef41e",
+      "replacement": {
+        "old": "2*NS**3",
+        "new": "3*NS**3"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-qqdx6sy0/cassini_ramp_phase.py\", line 112, in self_checks\n    check('single_affine_integral', a.integral(0, 2*NS) == 26)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-qqdx6sy0/cassini_ramp_phase.py\", line 103, in check\n    raise AssertionError(name)\nAssertionError: single_affine_integral\n"
+    },
+    {
+      "name": "ramp_overlap_rejection",
+      "module": "cassini_ramp_phase",
+      "original_sha256": "f6f20d30a557e03359ca1b28fc466805700122ca280819338da733eee80ca296",
+      "mutant_sha256": "83a0efb4c923584db29c973ea8caebe28437181601af2ee5f15787e19733c0ee",
+      "replacement": {
+        "old": "raise ValueError('overlapping or unsorted ramps')",
+        "new": "pass"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-3_09wq7e/cassini_ramp_phase.py\", line 135, in self_checks\n    check(name, False)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-3_09wq7e/cassini_ramp_phase.py\", line 103, in check\n    raise AssertionError(name)\nAssertionError: overlap_rejected\n"
+    },
+    {
+      "name": "ramp_mixed_level",
+      "module": "cassini_ramp_phase",
+      "original_sha256": "f6f20d30a557e03359ca1b28fc466805700122ca280819338da733eee80ca296",
+      "mutant_sha256": "84a5b5f7e6e7303516c1b0f0880de83bc149d49e2251da7f5d5a8a53fcb5d934",
+      "replacement": {
+        "old": "len({r.sky_level for r in ramps}) > 1",
+        "new": "len({r.sky_level for r in ramps}) > 10"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-q5o0o9y6/cassini_ramp_phase.py\", line 135, in self_checks\n    check(name, False)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-q5o0o9y6/cassini_ramp_phase.py\", line 103, in check\n    raise AssertionError(name)\nAssertionError: mixed_level_rejected\n"
+    },
+    {
+      "name": "station_clock_chain",
+      "module": "cassini_finite_count_endpoint_check",
+      "original_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+      "mutant_sha256": "bdb76765e8ed363858ef9dbd7c1110fb02d3b034606c7b62bf7ecfe2cb508d29",
+      "replacement": {
+        "old": "f_received=sp.diff(phase,t)/sp.diff(s3,t)",
+        "new": "f_received=sp.diff(phase,t)/sp.diff(s3,t)*sp.diff(s1,t)/sp.diff(s3,t)"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-lweq9bss/cassini_finite_count_endpoint_check.py\", line 37, in main\n    check('station_clock_chain_symbolic',sp.simplify(f_received-clock_chain)==0)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-lweq9bss/cassini_finite_count_endpoint_check.py\", line 22, in check\n    if not ok: raise AssertionError(name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: station_clock_chain_symbolic\n"
+    },
+    {
+      "name": "endpoint_sign",
+      "module": "cassini_finite_count_endpoint_check",
+      "original_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+      "mutant_sha256": "2377629e2e61d654f10449f5ab19163bd70ba276be18472c35d6cffc9bc32ad8",
+      "replacement": {
+        "old": "linear=kval*(fb*de-fa*ds)/T",
+        "new": "linear=kval*(fb*de+fa*ds)/T"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-4u58vn7i/cassini_finite_count_endpoint_check.py\", line 57, in main\n    check(f'affine_endpoint_exact_{n}',actual==linear+remainder)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-4u58vn7i/cassini_finite_count_endpoint_check.py\", line 22, in check\n    if not ok: raise AssertionError(name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: affine_endpoint_exact_0\n"
+    },
+    {
+      "name": "quadratic_bound",
+      "module": "cassini_finite_count_endpoint_check",
+      "original_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+      "mutant_sha256": "e7cc10d16eb79a5beab8b900d8a79371b8e4e50d605594f27e8b417d3e908252",
+      "replacement": {
+        "old": "bound=abs(kval*r)*(de**2+ds**2)/(2*T)",
+        "new": "bound=abs(kval*r)*(de**2+ds**2)/(8*T)"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-ixmhni67/cassini_finite_count_endpoint_check.py\", line 58, in main\n    check(f'quadratic_bound_{n}',abs(actual-linear)<=bound)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-ixmhni67/cassini_finite_count_endpoint_check.py\", line 22, in check\n    if not ok: raise AssertionError(name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: quadratic_bound_0\n"
+    },
+    {
+      "name": "endpoint_common_differential",
+      "module": "cassini_finite_count_endpoint_check",
+      "original_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+      "mutant_sha256": "39b4b536dfcffe577c6f8a59eceb6686fa0f692a02fef10a1872a8b0f674b55f",
+      "replacement": {
+        "old": "common,differential=(de+ds)/2,de-ds",
+        "new": "common,differential=(de-ds)/2,de+ds"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-f17yljot/cassini_finite_count_endpoint_check.py\", line 60, in main\n    check(f'common_differential_decomposition_{n}',linear==kval*((fb-fa)*common+(fb+fa)*differential/2)/T)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-f17yljot/cassini_finite_count_endpoint_check.py\", line 22, in check\n    if not ok: raise AssertionError(name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: common_differential_decomposition_0\n"
+    },
+    {
+      "name": "reference_cancellation",
+      "module": "cassini_finite_count_endpoint_check",
+      "original_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+      "mutant_sha256": "29dbb3011a123f06c8e73e0e6cc316be37d5a8299cc2e48f7c9e3ba475390191",
+      "replacement": {
+        "old": "ref+10**9,T,kval)-D([rr],a,b,ref+10**9,T,kval)",
+        "new": "ref+10**9,T,kval)-D([rr],a,b,ref,T,kval)"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-8tlsogja/cassini_finite_count_endpoint_check.py\", line 63, in main\n    check(f'shared_reference_cancellation_{n}',shifted==actual)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-8tlsogja/cassini_finite_count_endpoint_check.py\", line 22, in check\n    if not ok: raise AssertionError(name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: shared_reference_cancellation_0\n"
+    },
+    {
+      "name": "receive_denominator",
+      "module": "cassini_finite_count_endpoint_check",
+      "original_sha256": "8d6c1ef43ff738cc85c8fcb0406a30d19afd1ef0be4c5c7c8b32786d28840003",
+      "mutant_sha256": "09a53a399dcd91272468de8a653ef88f89f896e2b477468bbd3fb18b9cf36c3e",
+      "replacement": {
+        "old": "return (R-k*P(rs,a,b))/T",
+        "new": "return (R-k*P(rs,a,b))/(b-a)"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-hh43jxct/cassini_finite_count_endpoint_check.py\", line 57, in main\n    check(f'affine_endpoint_exact_{n}',actual==linear+remainder)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-hh43jxct/cassini_finite_count_endpoint_check.py\", line 22, in check\n    if not ok: raise AssertionError(name)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: affine_endpoint_exact_0\n"
+    },
+    {
+      "name": "count_highpart",
+      "module": "cassini_atdf_odf_reconcile",
+      "original_sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225",
+      "mutant_sha256": "44a723e9f5b3df5d05efdb7170fce9046d8680644ab179a4415f76e75dd7a32d",
+      "replacement": {
+        "old": "return d[30]*10**14",
+        "new": "return d[30]*10**12"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-ogzocypt/cassini_atdf_odf_reconcile.py\", line 73, in controls\n    check('published_pds_count_example',\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-ogzocypt/cassini_atdf_odf_reconcile.py\", line 72, in check\n    raise AssertionError(name)\nAssertionError: published_pds_count_example\n"
+    },
+    {
+      "name": "count_rollover",
+      "module": "cassini_atdf_odf_reconcile",
+      "original_sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225",
+      "mutant_sha256": "9e6bdfef6cfb9a78f6d29a3a5dc6336c4ddd8a24a8b09ee0cda72de1528c46d6",
+      "replacement": {
+        "old": "wraps = int(b < a)",
+        "new": "wraps = 0"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-jkkqs90_/cassini_atdf_odf_reconcile.py\", line 78, in controls\n    check('rollover_lift', forward_lift(MODULUS_MICROCYCLES-11, 37) == (48, 1))\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-jkkqs90_/cassini_atdf_odf_reconcile.py\", line 72, in check\n    raise AssertionError(name)\nAssertionError: rollover_lift\n"
+    },
+    {
+      "name": "count_range_domain",
+      "module": "cassini_atdf_odf_reconcile",
+      "original_sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225",
+      "mutant_sha256": "1ee8b4ef1d5ed0ca03b083ae54a8f47536e3ef59c3258034c357453ce0efd733",
+      "replacement": {
+        "old": "raise ValueError('counter outside unsigned 32-cycle-bit domain')",
+        "new": "pass"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-w4qurwp1/cassini_atdf_odf_reconcile.py\", line 88, in controls\n    check(name, False)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-w4qurwp1/cassini_atdf_odf_reconcile.py\", line 72, in check\n    raise AssertionError(name)\nAssertionError: negative_counter\n"
+    },
+    {
+      "name": "count_bias",
+      "module": "cassini_atdf_odf_reconcile",
+      "original_sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225",
+      "mutant_sha256": "cf75251ec3e19bb47b0b0294c98548e2bff5c6c64e7f9c669ff2929965d78027",
+      "replacement": {
+        "old": "value = cycles/duration - 10**6",
+        "new": "value = cycles/duration - 1000"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-sh2lpp4v/cassini_atdf_odf_reconcile.py\", line 89, in controls\n    check('coherent_known_count', reconstruct(Q(3000007,2),Q(3,2),12,0,0)==Q(7,3))\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-sh2lpp4v/cassini_atdf_odf_reconcile.py\", line 72, in check\n    raise AssertionError(name)\nAssertionError: coherent_known_count\n"
+    },
+    {
+      "name": "count_reference_sign",
+      "module": "cassini_atdf_odf_reconcile",
+      "original_sha256": "adbeaf5c78b9eedf0b3d94b1d27efca84fc2ad03002686a8114c912e1f8cd225",
+      "mutant_sha256": "9bc6f4caeca33bd203ead1d2e418b61341223a7e58e695632f2224b95a740ca7",
+      "replacement": {
+        "old": "value -= Q(880, 221)*receiver_reference",
+        "new": "value += Q(880, 221)*receiver_reference"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 6, in <module>\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-p2wn0riz/cassini_atdf_odf_reconcile.py\", line 90, in controls\n    check('oneway_reference_sign', reconstruct(Q(10**6),Q(1),11,Q(221),Q(3))==-869)\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/cassini-mutation-p2wn0riz/cassini_atdf_odf_reconcile.py\", line 72, in check\n    raise AssertionError(name)\nAssertionError: oneway_reference_sign\n"
+    },
+    {
+      "name": "input_hash_integrity",
+      "module": "cassini_doppler_count_bridge_check",
+      "original_sha256": "a82b64943f216202aa1cb5db899a36c92a96d75136f728d19e3a6d78a71d279b",
+      "mutant_sha256": "355bf79ad8c249a8049138bc05e77669252bb246c588ab9183350b3ba62887b9",
+      "replacement": {
+        "old": "hashlib.sha256(blob).hexdigest()==entry['sha256']",
+        "new": "True"
+      },
+      "exit_code": 1,
+      "rejected_by_assertion": true,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 9, in <module>\nAssertionError: tampered public input accepted\n"
+    }
+  ]
+}

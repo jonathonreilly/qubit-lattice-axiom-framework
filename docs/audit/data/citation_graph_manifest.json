@@ -1,6 +1,6 @@
 {
  "edge_count": 16050,
- "node_count": 7112,
+ "node_count": 7113,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2727,6 +2727,10 @@
    "out_degree": 4
   },
   "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "cassini_doppler_count_station_time_bounded_theorem_note_2026-10-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

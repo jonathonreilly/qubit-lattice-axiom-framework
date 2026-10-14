@@ -15,25 +15,27 @@
   "mode": "direct_scientific_authorship",
   "worktree": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go",
   "pack": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014",
-  "branch": "codex/observations-backward-24h-20261014",
+  "branch": "codex/observations-backward-doppler-20261014",
   "baseline": "92574ffe95192cc0724a27e1acad28e42d325115",
   "lock_owner": "direct-author-observations-backward",
   "detached_author_allowed": false,
   "previous_campaigns": "remain stopped",
   "worker_pid": null,
   "supervisor_pid": null,
-  "updated_at": "2026-10-14T22:27:40.832966+00:00",
-  "phase": "milestone_packaging",
+  "updated_at": "2026-10-14T23:12:50.314319+00:00",
+  "phase": "active_research",
   "actual_current_surface_status": "open",
   "delivery": "milestone",
   "checkpoint_interval_minutes": 30,
   "cycle": 1,
-  "active_route": "finite_source_orbit_light_time_and_coherent_phase",
-  "next_milestone": "calibrated finite-range gravitational observable with explicit source/error domain",
-  "next_action": "Publish the checked orbit/light-time milestone. Then independently verify the preregistered development ODF decoder and derive receiver/ramp/bias, station-time and propagation conversion before any physical fit.",
-  "last_checkpoint_at": "2026-10-14T22:27:40.832966+00:00",
+  "active_route": "archived_doppler_receiver_ramp_clock_bridge",
+  "next_milestone": "reviewable count reconstruction and finite station-clock response",
+  "next_action": "Finish source-bound focused checks and publish a stacked count/clock reconstruction milestone. Then address candidate-consistent emission coverage and clock/media/trajectory error budgets before calibration.",
+  "last_checkpoint_at": "2026-10-14T23:12:50.314319+00:00",
   "independent_empirical_holdouts": [],
-  "open_prs": [],
+  "open_prs": [
+    "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9576"
+  ],
   "open_imports": [
     "candidate action and potential",
     "initial state/history",
@@ -47,14 +49,28 @@
     "coherent_phase": "Retarded phase Jacobians, proper-clock factors and exact finite-compression count derived under stated transfer/bounce premises.",
     "canonical_controls": "251 PASS, 0 FAIL; final source-bound cache independently confirmed.",
     "mutation_controls": "19 of 19 deliberately wrong variants rejected. Earlier 1 of 18 survivor and its fixture repair preserved.",
-    "raw_data": "NASA PDS Cassini June 18 development ODF inventoried: 91863 orbit records; parser remains exploratory and unreviewed; no physical gravity fit.",
-    "new_assumptions_retired": "No action, state or absolute-scale premise retired. Source-profile selection cancels in the ideal single-mode range inverse; mission conversion and source/environment assumptions remain open."
+    "raw_data": "Independent extraction of all 91863 ODF records agrees. Same-track ATDF added by pre-access protocol v2: 160870 tracking rows. Other registered products remain unopened.",
+    "new_assumptions_retired": "No action/state/absolute scale retired. Instrument-convention reconstruction is in development, not gravity calibration or independent physical validation.",
+    "next_measurement_derivation": "Exact algebraic inversion of the archived count subtraction is recorded; the receiver beat-sign and proper-time identification are explicit unverified instrument hypotheses, not retired imports.",
+    "finite_count": "526 author controls and 2417 focused independent endpoint/clock checks; exact ramp integration independently checked.",
+    "measurement_failure": "Preserved literal-label failure: 999 large errors and one duplicate endpoint. PDS documented scale repair plus conditional rollover handling recovers all91664 rows; first duplicate values are equal and all quality variants retained.",
+    "measurement_reconstruction": "All91664 raw precursor-to-ODF comparisons inside storage-quantum scale; max7.60550527903469e-7Hz, no fitted constants,21rollovers. Independent exact reimplementation agrees on all numerical rows. This is dependent-product consistency, not independent gravity evidence.",
+    "history_diagnostic": "Independent reviewer found nonzero item87 slip diagnostics. Canonical rows retain all183329 endpoint occurrences,18393 nonzero. Physical slip/history calibration remains open.",
+    "canonical_execution": "Initial240second-declared envelope exits0;11aggregate checks,526endpoint,16ramp and10count controls pass. Note wording subsequently narrowed; final envelope refresh pending.",
+    "mutation_controls_doppler": "19 final assertion-rejected variants. Earlier18assertions plus1range-guard rejection preserved; replaced last with valid-field mathematical mutation."
   },
   "current_science_files": [
-    "docs/EXPONENTIAL_SCALAR_ORBIT_LIGHT_TIME_BOUNDED_THEOREM_NOTE_2026-10-14.md",
-    "scripts/exponential_scalar_orbit_light_time_check.py"
+    "docs/CASSINI_DOPPLER_COUNT_STATION_TIME_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "scripts/cassini_doppler_count_bridge_check.py",
+    "scripts/cassini_atdf_odf_reconcile.py"
   ],
   "independent_check": "orbit_light_time/independent_v1/CANONICAL_SOURCE_CONFIRMATION.md",
   "owned_processes": [],
-  "milestone_surface_status": "conditional-support"
+  "milestone_surface_status": "conditional-support",
+  "published_milestone_head": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+  "latest_pr_context": {
+    "metadata_snapshot": "PR_9577_v1.json",
+    "new_background_pr": 9577,
+    "scope": "PR9577 body and671-path inventory read; conditional preparation scaling, no theorem imported. Remote main unchanged92574ffe; PR9576 unchanged."
+  }
 }

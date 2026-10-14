@@ -1,0 +1,2253 @@
+{
+  "scope": "Only exposed 2002-169 ODE V2.0 format-2 development file; format check, no calibration or gravity inference",
+  "inputs": {
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_metadata/sce1_169_odf_c32easc2002_169_0000xmmmv0.lbl": {
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903
+    },
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/sources/pds_development/c32easc2002_169_0000xmmmv0.odf": {
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/orbit_light_time/independent_odf_v1/AUTHOR_PDS_ODF_INVENTORY_v1.py": {
+      "sha256": "2dfc9339ca5a962ade99df5a3270e95cff3e97501ce32f198ce51681fcb2d9c8",
+      "bytes": 7622
+    }
+  },
+  "checker_sha256": "342ae730577555fccf830fa3e2330a290d5e312cd3c125d610ae514ae5926fa8",
+  "label_software": "ODE V2.0",
+  "file_label": {
+    "SYSTEM ID": "AXP2300 ",
+    "PROGRAM ID": "ODE V2.0",
+    "SPACECRAFT ID": 82,
+    "FILE CREATION DATE": 1020712,
+    "FILE CREATION TIME": 211702,
+    "FILE REFERENCE DATE": 19500101,
+    "FILE REFERENCE TIME": 0
+  },
+  "layout": [
+    {
+      "table": "ODF1A_TABLE",
+      "first_record_one_based": 1,
+      "rows": 1
+    },
+    {
+      "table": "ODF1B_TABLE",
+      "first_record_one_based": 2,
+      "rows": 1
+    },
+    {
+      "table": "ODF2A_TABLE",
+      "first_record_one_based": 3,
+      "rows": 1
+    },
+    {
+      "table": "ODF2B_TABLE",
+      "first_record_one_based": 4,
+      "rows": 1
+    },
+    {
+      "table": "ODF3A_TABLE",
+      "first_record_one_based": 5,
+      "rows": 1
+    },
+    {
+      "table": "ODF3C_TABLE",
+      "first_record_one_based": 6,
+      "rows": 91863
+    },
+    {
+      "table": "ODF4A25_TABLE",
+      "first_record_one_based": 91869,
+      "rows": 1
+    },
+    {
+      "table": "ODF4B25_TABLE",
+      "first_record_one_based": 91870,
+      "rows": 23
+    },
+    {
+      "table": "ODF4A45_TABLE",
+      "first_record_one_based": 91893,
+      "rows": 1
+    },
+    {
+      "table": "ODF4B45_TABLE",
+      "first_record_one_based": 91894,
+      "rows": 26
+    },
+    {
+      "table": "ODF4A54_TABLE",
+      "first_record_one_based": 91920,
+      "rows": 1
+    },
+    {
+      "table": "ODF4B54_TABLE",
+      "first_record_one_based": 91921,
+      "rows": 20
+    },
+    {
+      "table": "ODF7A_TABLE",
+      "first_record_one_based": 91941,
+      "rows": 1
+    },
+    {
+      "table": "ODF7B_TABLE",
+      "first_record_one_based": 91942,
+      "rows": 10
+    },
+    {
+      "table": "ODF8A_TABLE",
+      "first_record_one_based": 91952,
+      "rows": 1
+    },
+    {
+      "table": "ODF8B_TABLE",
+      "first_record_one_based": 91953,
+      "rows": 111
+    }
+  ],
+  "headers": {
+    "ODF1A_TABLE": {
+      "PRIMARY KEY": 101,
+      "SECONDARY KEY": 0,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 0
+    },
+    "ODF2A_TABLE": {
+      "PRIMARY KEY": 107,
+      "SECONDARY KEY": 0,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 2
+    },
+    "ODF3A_TABLE": {
+      "PRIMARY KEY": 109,
+      "SECONDARY KEY": 0,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 4
+    },
+    "ODF4A25_TABLE": {
+      "PRIMARY KEY": 2030,
+      "SECONDARY KEY": 25,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 91868
+    },
+    "ODF4A45_TABLE": {
+      "PRIMARY KEY": 2030,
+      "SECONDARY KEY": 45,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 91892
+    },
+    "ODF4A54_TABLE": {
+      "PRIMARY KEY": 2030,
+      "SECONDARY KEY": 54,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 91919
+    },
+    "ODF7A_TABLE": {
+      "PRIMARY KEY": 105,
+      "SECONDARY KEY": 0,
+      "LOGICAL RECORD LENGTH": 1,
+      "GROUP START PACKET NUMBER": 91940
+    },
+    "ODF8A_TABLE": {
+      "PRIMARY KEY": -1,
+      "SECONDARY KEY": 0,
+      "LOGICAL RECORD LENGTH": 0,
+      "GROUP START PACKET NUMBER": 91951
+    }
+  },
+  "orbit_records_checked": 91863,
+  "fields_per_record": 22,
+  "field_comparisons": 2020986,
+  "type_counts": {
+    "13": 29556,
+    "12": 61459,
+    "37": 199,
+    "11": 649
+  },
+  "validity_counts": {
+    "0": 91863
+  },
+  "type_validity_counts": [
+    {
+      "type": 11,
+      "bad": 0,
+      "count": 649
+    },
+    {
+      "type": 12,
+      "bad": 0,
+      "count": 61459
+    },
+    {
+      "type": 13,
+      "bad": 0,
+      "count": 29556
+    },
+    {
+      "type": 37,
+      "bad": 0,
+      "count": 199
+    }
+  ],
+  "signed_parts_cases": [
+    {
+      "integer": "negative",
+      "fraction": "negative",
+      "count": 1935
+    },
+    {
+      "integer": "negative",
+      "fraction": "zero",
+      "count": 1
+    },
+    {
+      "integer": "positive",
+      "fraction": "positive",
+      "count": 89831
+    },
+    {
+      "integer": "positive",
+      "fraction": "zero",
+      "count": 82
+    },
+    {
+      "integer": "zero",
+      "fraction": "negative",
+      "count": 8
+    },
+    {
+      "integer": "zero",
+      "fraction": "positive",
+      "count": 6
+    }
+  ],
+  "doppler_compression_centiseconds": {
+    "13": {
+      "100": 29556
+    },
+    "12": {
+      "100": 61459
+    },
+    "11": {
+      "100": 649
+    }
+  },
+  "range_item21_distinct": [
+    400000,
+    400240
+  ],
+  "reference_frequency_groups": [
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        11,
+        54,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 1,
+      "min_millihertz": 2298333214000,
+      "max_millihertz": 2298333214000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        12,
+        25,
+        25,
+        2,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 1,
+      "min_millihertz": 2117016768000,
+      "max_millihertz": 2117016768000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        12,
+        45,
+        45,
+        2,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 1,
+      "min_millihertz": 2117064000000,
+      "max_millihertz": 2117064000000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        12,
+        54,
+        54,
+        2,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 2,
+      "min_millihertz": 2117015424000,
+      "max_millihertz": 2117064000000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        13,
+        25,
+        54,
+        2,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 1,
+      "min_millihertz": 2117064000000,
+      "max_millihertz": 2117064000000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        13,
+        45,
+        25,
+        2,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 1,
+      "min_millihertz": 2117064000000,
+      "max_millihertz": 2117064000000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        13,
+        54,
+        45,
+        2,
+        2,
+        1,
+        1
+      ],
+      "unique_count": 1,
+      "min_millihertz": 2117064000000,
+      "max_millihertz": 2117064000000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        37,
+        25,
+        25,
+        2,
+        2,
+        2,
+        0
+      ],
+      "unique_count": 2,
+      "min_millihertz": 7205561056000,
+      "max_millihertz": 7205574336000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        37,
+        25,
+        54,
+        2,
+        2,
+        2,
+        0
+      ],
+      "unique_count": 1,
+      "min_millihertz": 7205561056000,
+      "max_millihertz": 7205561056000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        37,
+        45,
+        45,
+        2,
+        2,
+        2,
+        0
+      ],
+      "unique_count": 1,
+      "min_millihertz": 7205721120000,
+      "max_millihertz": 7205721120000
+    },
+    {
+      "key_type_rx_tx_up_down_exciter_independent": [
+        37,
+        54,
+        54,
+        2,
+        2,
+        2,
+        0
+      ],
+      "unique_count": 3,
+      "min_millihertz": 7203813600000,
+      "max_millihertz": 7205688000000
+    }
+  ],
+  "observable_samples": [
+    {
+      "record": 6,
+      "type": 13,
+      "integer": 214005,
+      "signed_fraction_billionths": 646999836,
+      "exact_observable_nano_units": 214005646999836
+    },
+    {
+      "record": 7,
+      "type": 13,
+      "integer": 214002,
+      "signed_fraction_billionths": 428999901,
+      "exact_observable_nano_units": 214002428999901
+    },
+    {
+      "record": 8,
+      "type": 13,
+      "integer": 214001,
+      "signed_fraction_billionths": 229000092,
+      "exact_observable_nano_units": 214001229000092
+    },
+    {
+      "record": 9,
+      "type": 13,
+      "integer": 214002,
+      "signed_fraction_billionths": 217999935,
+      "exact_observable_nano_units": 214002217999935
+    },
+    {
+      "record": 10,
+      "type": 13,
+      "integer": 213953,
+      "signed_fraction_billionths": 693000317,
+      "exact_observable_nano_units": 213953693000317
+    },
+    {
+      "record": 11,
+      "type": 13,
+      "integer": 213812,
+      "signed_fraction_billionths": 149999619,
+      "exact_observable_nano_units": 213812149999619
+    },
+    {
+      "record": 3313,
+      "type": 11,
+      "integer": -2912330,
+      "signed_fraction_billionths": -790844652,
+      "exact_observable_nano_units": -2912330790844652
+    }
+  ],
+  "reference_samples": [
+    {
+      "record": 6,
+      "key": [
+        13,
+        45,
+        25,
+        2,
+        2,
+        1,
+        1
+      ],
+      "high": 126186,
+      "low": 14221824,
+      "assembled_millihertz": 2117064000000
+    },
+    {
+      "record": 12,
+      "key": [
+        12,
+        45,
+        45,
+        2,
+        2,
+        1,
+        1
+      ],
+      "high": 126186,
+      "low": 14221824,
+      "assembled_millihertz": 2117064000000
+    },
+    {
+      "record": 412,
+      "key": [
+        37,
+        45,
+        45,
+        2,
+        2,
+        2,
+        0
+      ],
+      "high": 429494,
+      "low": 7511296,
+      "assembled_millihertz": 7205721120000
+    },
+    {
+      "record": 3313,
+      "key": [
+        11,
+        54,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "high": 136991,
+      "low": 5616944,
+      "assembled_millihertz": 2298333214000
+    },
+    {
+      "record": 5513,
+      "key": [
+        13,
+        54,
+        45,
+        2,
+        2,
+        1,
+        1
+      ],
+      "high": 126186,
+      "low": 14221824,
+      "assembled_millihertz": 2117064000000
+    },
+    {
+      "record": 16256,
+      "key": [
+        12,
+        54,
+        54,
+        2,
+        2,
+        1,
+        1
+      ],
+      "high": 126186,
+      "low": 14221824,
+      "assembled_millihertz": 2117064000000
+    },
+    {
+      "record": 16622,
+      "key": [
+        37,
+        54,
+        54,
+        2,
+        2,
+        2,
+        0
+      ],
+      "high": 429380,
+      "low": 12593920,
+      "assembled_millihertz": 7203813600000
+    },
+    {
+      "record": 31345,
+      "key": [
+        37,
+        25,
+        54,
+        2,
+        2,
+        2,
+        0
+      ],
+      "high": 429484,
+      "low": 15219456,
+      "assembled_millihertz": 7205561056000
+    }
+  ],
+  "item15_by_type": {
+    "13": [
+      2
+    ],
+    "12": [
+      2
+    ],
+    "37": [
+      19
+    ],
+    "11": [
+      2
+    ]
+  },
+  "ramp_rows": [
+    {
+      "record": 91870,
+      "station": 25,
+      "start_nanoseconds": 1655517848000000000,
+      "end_nanoseconds": 1655517887000000000,
+      "start_frequency_nanohertz": 7175200560000000000,
+      "rate_nanohertz_per_second": 149567056000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517848,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 149,
+        "RAMP RATE - FRACTIONAL PART": 567056000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175200560,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655517887,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91871,
+      "station": 25,
+      "start_nanoseconds": 1655517887000000000,
+      "end_nanoseconds": 1655517902000000000,
+      "start_frequency_nanohertz": 7175206393115488000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517887,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175206393,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 115488000,
+        "RAMP END TIME - INTEGER PART": 1655517902,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91872,
+      "station": 25,
+      "start_nanoseconds": 1655517902000000000,
+      "end_nanoseconds": 1655517907000000000,
+      "start_frequency_nanohertz": 7175206393115488000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517902,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175206393,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 115488000,
+        "RAMP END TIME - INTEGER PART": 1655517907,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91873,
+      "station": 25,
+      "start_nanoseconds": 1655517907000000000,
+      "end_nanoseconds": 1655517946000000000,
+      "start_frequency_nanohertz": 7175206393115488000,
+      "rate_nanohertz_per_second": -149567056000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517907,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -149,
+        "RAMP RATE - FRACTIONAL PART": -567056000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175206393,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 115488000,
+        "RAMP END TIME - INTEGER PART": 1655517946,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91874,
+      "station": 25,
+      "start_nanoseconds": 1655517946000000000,
+      "end_nanoseconds": 1655518701000000000,
+      "start_frequency_nanohertz": 7175200560000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517946,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175200560,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655518701,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91875,
+      "station": 25,
+      "start_nanoseconds": 1655550455000000000,
+      "end_nanoseconds": 1655550459000000000,
+      "start_frequency_nanohertz": 7175025223000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655550455,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175025223,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655550459,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91876,
+      "station": 25,
+      "start_nanoseconds": 1655550459000000000,
+      "end_nanoseconds": 1655550466000000000,
+      "start_frequency_nanohertz": 7175025223000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655550459,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175025223,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655550466,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91877,
+      "station": 25,
+      "start_nanoseconds": 1655550466000000000,
+      "end_nanoseconds": 1655559166000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655550466,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655559166,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91878,
+      "station": 25,
+      "start_nanoseconds": 1655559166000000000,
+      "end_nanoseconds": 1655559170000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655559166,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655559170,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91879,
+      "station": 25,
+      "start_nanoseconds": 1655559170000000000,
+      "end_nanoseconds": 1655559176000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655559170,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655559176,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91880,
+      "station": 25,
+      "start_nanoseconds": 1655559176000000000,
+      "end_nanoseconds": 1655560146000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655559176,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655560146,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91881,
+      "station": 25,
+      "start_nanoseconds": 1655560146000000000,
+      "end_nanoseconds": 1655560185000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": -148262736000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560146,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -148,
+        "RAMP RATE - FRACTIONAL PART": -262736000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655560185,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91882,
+      "station": 25,
+      "start_nanoseconds": 1655560185000000000,
+      "end_nanoseconds": 1655560200000000000,
+      "start_frequency_nanohertz": 7175184809753424000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560185,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175184809,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 753424000,
+        "RAMP END TIME - INTEGER PART": 1655560200,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91883,
+      "station": 25,
+      "start_nanoseconds": 1655560200000000000,
+      "end_nanoseconds": 1655560205000000000,
+      "start_frequency_nanohertz": 7175184809753424000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560200,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175184809,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 753424000,
+        "RAMP END TIME - INTEGER PART": 1655560205,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91884,
+      "station": 25,
+      "start_nanoseconds": 1655560205000000000,
+      "end_nanoseconds": 1655560244000000000,
+      "start_frequency_nanohertz": 7175184809753424000,
+      "rate_nanohertz_per_second": 148262736000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560205,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 148,
+        "RAMP RATE - FRACTIONAL PART": 262736000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175184809,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 753424000,
+        "RAMP END TIME - INTEGER PART": 1655560244,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91885,
+      "station": 25,
+      "start_nanoseconds": 1655560244000000000,
+      "end_nanoseconds": 1655597748000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560244,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655597748,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91886,
+      "station": 25,
+      "start_nanoseconds": 1655597748000000000,
+      "end_nanoseconds": 1655597752000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655597748,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655597752,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91887,
+      "station": 25,
+      "start_nanoseconds": 1655597752000000000,
+      "end_nanoseconds": 1655603946000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655597752,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655603946,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91888,
+      "station": 25,
+      "start_nanoseconds": 1655603946000000000,
+      "end_nanoseconds": 1655603985000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 149697872000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655603946,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 149,
+        "RAMP RATE - FRACTIONAL PART": 697872000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655603985,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91889,
+      "station": 25,
+      "start_nanoseconds": 1655603985000000000,
+      "end_nanoseconds": 1655604000000000000,
+      "start_frequency_nanohertz": 7175196430217280000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655603985,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175196430,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 217280000,
+        "RAMP END TIME - INTEGER PART": 1655604000,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91890,
+      "station": 25,
+      "start_nanoseconds": 1655604000000000000,
+      "end_nanoseconds": 1655604005000000000,
+      "start_frequency_nanohertz": 7175196430217280000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655604000,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175196430,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 217280000,
+        "RAMP END TIME - INTEGER PART": 1655604005,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91891,
+      "station": 25,
+      "start_nanoseconds": 1655604005000000000,
+      "end_nanoseconds": 1655604044000000000,
+      "start_frequency_nanohertz": 7175196430217280000,
+      "rate_nanohertz_per_second": -149697872000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655604005,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -149,
+        "RAMP RATE - FRACTIONAL PART": -697872000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175196430,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 217280000,
+        "RAMP END TIME - INTEGER PART": 1655604044,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91892,
+      "station": 25,
+      "start_nanoseconds": 1655604044000000000,
+      "end_nanoseconds": 1655604711000000000,
+      "start_frequency_nanohertz": 7175190592000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655604044,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 25,
+        "RAMP START FREQUENCY - INTEGER PART": 175190592,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655604711,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91894,
+      "station": 45,
+      "start_nanoseconds": 1655515088000000000,
+      "end_nanoseconds": 1655515092000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655515088,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655515092,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91895,
+      "station": 45,
+      "start_nanoseconds": 1655515092000000000,
+      "end_nanoseconds": 1655515098000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655515092,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655515098,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91896,
+      "station": 45,
+      "start_nanoseconds": 1655515098000000000,
+      "end_nanoseconds": 1655517882000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655515098,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655517882,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91897,
+      "station": 45,
+      "start_nanoseconds": 1655517882000000000,
+      "end_nanoseconds": 1655517885000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": -123084096000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517882,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -123,
+        "RAMP RATE - FRACTIONAL PART": -84096000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655517885,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91898,
+      "station": 45,
+      "start_nanoseconds": 1655517885000000000,
+      "end_nanoseconds": 1655517900000000000,
+      "start_frequency_nanohertz": 7175197582747712000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517885,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197582,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 747712000,
+        "RAMP END TIME - INTEGER PART": 1655517900,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91899,
+      "station": 45,
+      "start_nanoseconds": 1655517900000000000,
+      "end_nanoseconds": 1655517905000000000,
+      "start_frequency_nanohertz": 7175197582747712000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517900,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197582,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 747712000,
+        "RAMP END TIME - INTEGER PART": 1655517905,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91900,
+      "station": 45,
+      "start_nanoseconds": 1655517905000000000,
+      "end_nanoseconds": 1655517908000000000,
+      "start_frequency_nanohertz": 7175197582747712000,
+      "rate_nanohertz_per_second": 123084096000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517905,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 123,
+        "RAMP RATE - FRACTIONAL PART": 84096000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197582,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 747712000,
+        "RAMP END TIME - INTEGER PART": 1655517908,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91901,
+      "station": 45,
+      "start_nanoseconds": 1655517908000000000,
+      "end_nanoseconds": 1655531210000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655517908,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655531210,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91902,
+      "station": 45,
+      "start_nanoseconds": 1655531210000000000,
+      "end_nanoseconds": 1655531214000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655531210,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655531214,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91903,
+      "station": 45,
+      "start_nanoseconds": 1655531214000000000,
+      "end_nanoseconds": 1655532245000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655531214,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655532245,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91904,
+      "station": 45,
+      "start_nanoseconds": 1655532245000000000,
+      "end_nanoseconds": 1655532282000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 146626288000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532245,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 146,
+        "RAMP RATE - FRACTIONAL PART": 626288000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655532282,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91905,
+      "station": 45,
+      "start_nanoseconds": 1655532282000000000,
+      "end_nanoseconds": 1655532297000000000,
+      "start_frequency_nanohertz": 7175203377172832000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532282,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175203377,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 172832000,
+        "RAMP END TIME - INTEGER PART": 1655532297,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91906,
+      "station": 45,
+      "start_nanoseconds": 1655532297000000000,
+      "end_nanoseconds": 1655532302000000000,
+      "start_frequency_nanohertz": 7175203377172832000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532297,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175203377,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 172832000,
+        "RAMP END TIME - INTEGER PART": 1655532302,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91907,
+      "station": 45,
+      "start_nanoseconds": 1655532302000000000,
+      "end_nanoseconds": 1655532339000000000,
+      "start_frequency_nanohertz": 7175203377172832000,
+      "rate_nanohertz_per_second": -146626288000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532302,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -146,
+        "RAMP RATE - FRACTIONAL PART": -626288000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175203377,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 172832000,
+        "RAMP END TIME - INTEGER PART": 1655532339,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91908,
+      "station": 45,
+      "start_nanoseconds": 1655532339000000000,
+      "end_nanoseconds": 1655532440000000000,
+      "start_frequency_nanohertz": 7175197952000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532339,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175197952,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655532440,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91909,
+      "station": 45,
+      "start_nanoseconds": 1655601088000000000,
+      "end_nanoseconds": 1655601092000000000,
+      "start_frequency_nanohertz": 7175025223000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655601088,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175025223,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655601092,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91910,
+      "station": 45,
+      "start_nanoseconds": 1655601092000000000,
+      "end_nanoseconds": 1655601099000000000,
+      "start_frequency_nanohertz": 7175025223000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655601092,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175025223,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655601099,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91911,
+      "station": 45,
+      "start_nanoseconds": 1655601099000000000,
+      "end_nanoseconds": 1655602179000000000,
+      "start_frequency_nanohertz": 7175187984000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655601099,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187984,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655602179,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91912,
+      "station": 45,
+      "start_nanoseconds": 1655602179000000000,
+      "end_nanoseconds": 1655602183000000000,
+      "start_frequency_nanohertz": 7175187984000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655602179,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187984,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655602183,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91913,
+      "station": 45,
+      "start_nanoseconds": 1655602183000000000,
+      "end_nanoseconds": 1655602189000000000,
+      "start_frequency_nanohertz": 7175187984000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655602183,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187984,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655602189,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91914,
+      "station": 45,
+      "start_nanoseconds": 1655602189000000000,
+      "end_nanoseconds": 1655603982000000000,
+      "start_frequency_nanohertz": 7175187984000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655602189,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187984,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655603982,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91915,
+      "station": 45,
+      "start_nanoseconds": 1655603982000000000,
+      "end_nanoseconds": 1655603985000000000,
+      "start_frequency_nanohertz": 7175187984000000000,
+      "rate_nanohertz_per_second": -140525968000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655603982,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -140,
+        "RAMP RATE - FRACTIONAL PART": -525968000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187984,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655603985,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91916,
+      "station": 45,
+      "start_nanoseconds": 1655603985000000000,
+      "end_nanoseconds": 1655604000000000000,
+      "start_frequency_nanohertz": 7175187562422112000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655603985,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187562,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 422112000,
+        "RAMP END TIME - INTEGER PART": 1655604000,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91917,
+      "station": 45,
+      "start_nanoseconds": 1655604000000000000,
+      "end_nanoseconds": 1655604005000000000,
+      "start_frequency_nanohertz": 7175187562422112000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655604000,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187562,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 422112000,
+        "RAMP END TIME - INTEGER PART": 1655604005,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91918,
+      "station": 45,
+      "start_nanoseconds": 1655604005000000000,
+      "end_nanoseconds": 1655604008000000000,
+      "start_frequency_nanohertz": 7175187562422112000,
+      "rate_nanohertz_per_second": 140525968000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655604005,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 140,
+        "RAMP RATE - FRACTIONAL PART": 525968000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187562,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 422112000,
+        "RAMP END TIME - INTEGER PART": 1655604008,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91919,
+      "station": 45,
+      "start_nanoseconds": 1655604008000000000,
+      "end_nanoseconds": 1655612421000000000,
+      "start_frequency_nanohertz": 7175187984000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655604008,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 45,
+        "RAMP START FREQUENCY - INTEGER PART": 175187984,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655612421,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91921,
+      "station": 54,
+      "start_nanoseconds": 1655528239000000000,
+      "end_nanoseconds": 1655528243000000000,
+      "start_frequency_nanohertz": 7175025223000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655528239,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175025223,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655528243,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91922,
+      "station": 54,
+      "start_nanoseconds": 1655528243000000000,
+      "end_nanoseconds": 1655528249000000000,
+      "start_frequency_nanohertz": 7175025223000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655528243,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175025223,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655528249,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91923,
+      "station": 54,
+      "start_nanoseconds": 1655528249000000000,
+      "end_nanoseconds": 1655530598000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655528249,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655530598,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91924,
+      "station": 54,
+      "start_nanoseconds": 1655530598000000000,
+      "end_nanoseconds": 1655530781000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655530598,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655530781,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91925,
+      "station": 54,
+      "start_nanoseconds": 1655530781000000000,
+      "end_nanoseconds": 1655530785000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655530781,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655530785,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91926,
+      "station": 54,
+      "start_nanoseconds": 1655530785000000000,
+      "end_nanoseconds": 1655530791000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655530785,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655530791,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91927,
+      "station": 54,
+      "start_nanoseconds": 1655530791000000000,
+      "end_nanoseconds": 1655532246000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655530791,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655532246,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91928,
+      "station": 54,
+      "start_nanoseconds": 1655532246000000000,
+      "end_nanoseconds": 1655532280000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": -149495456000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532246,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -149,
+        "RAMP RATE - FRACTIONAL PART": -495456000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655532280,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91929,
+      "station": 54,
+      "start_nanoseconds": 1655532280000000000,
+      "end_nanoseconds": 1655532295000000000,
+      "start_frequency_nanohertz": 7175188613154640000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532280,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175188613,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 154640000,
+        "RAMP END TIME - INTEGER PART": 1655532295,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91930,
+      "station": 54,
+      "start_nanoseconds": 1655532295000000000,
+      "end_nanoseconds": 1655532300000000000,
+      "start_frequency_nanohertz": 7175188613154640000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532295,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175188613,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 154640000,
+        "RAMP END TIME - INTEGER PART": 1655532300,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91931,
+      "station": 54,
+      "start_nanoseconds": 1655532300000000000,
+      "end_nanoseconds": 1655532334000000000,
+      "start_frequency_nanohertz": 7175188613154640000,
+      "rate_nanohertz_per_second": 149495456000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532300,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 149,
+        "RAMP RATE - FRACTIONAL PART": 495456000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175188613,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 154640000,
+        "RAMP END TIME - INTEGER PART": 1655532334,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91932,
+      "station": 54,
+      "start_nanoseconds": 1655532334000000000,
+      "end_nanoseconds": 1655559301000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655532334,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655559301,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91933,
+      "station": 54,
+      "start_nanoseconds": 1655559301000000000,
+      "end_nanoseconds": 1655559305000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655559301,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655559305,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91934,
+      "station": 54,
+      "start_nanoseconds": 1655559305000000000,
+      "end_nanoseconds": 1655560170000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655559305,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655560170,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91935,
+      "station": 54,
+      "start_nanoseconds": 1655560170000000000,
+      "end_nanoseconds": 1655560185000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 143060544000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560170,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 143,
+        "RAMP RATE - FRACTIONAL PART": 60544000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655560185,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91936,
+      "station": 54,
+      "start_nanoseconds": 1655560185000000000,
+      "end_nanoseconds": 1655560200000000000,
+      "start_frequency_nanohertz": 7175195841908224000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560185,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175195841,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 908224000,
+        "RAMP END TIME - INTEGER PART": 1655560200,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91937,
+      "station": 54,
+      "start_nanoseconds": 1655560200000000000,
+      "end_nanoseconds": 1655560205000000000,
+      "start_frequency_nanohertz": 7175195841908224000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560200,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175195841,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 908224000,
+        "RAMP END TIME - INTEGER PART": 1655560205,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91938,
+      "station": 54,
+      "start_nanoseconds": 1655560205000000000,
+      "end_nanoseconds": 1655560220000000000,
+      "start_frequency_nanohertz": 7175195841908224000,
+      "rate_nanohertz_per_second": -143060544000,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560205,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": -143,
+        "RAMP RATE - FRACTIONAL PART": -60544000,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175195841,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 908224000,
+        "RAMP END TIME - INTEGER PART": 1655560220,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91939,
+      "station": 54,
+      "start_nanoseconds": 1655560220000000000,
+      "end_nanoseconds": 1655560676000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560220,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655560676,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    },
+    {
+      "record": 91940,
+      "station": 54,
+      "start_nanoseconds": 1655560676000000000,
+      "end_nanoseconds": 1655560718000000000,
+      "start_frequency_nanohertz": 7175193696000000000,
+      "rate_nanohertz_per_second": 0,
+      "integer_ghz_field": 7,
+      "sky_level_explicitly_flagged": true,
+      "raw_fields": {
+        "RAMP START TIME - INTEGER PART": 1655560676,
+        "RAMP START TIME - FRACTIONAL PART": 0,
+        "RAMP RATE - INTEGER PART": 0,
+        "RAMP RATE - FRACTIONAL PART": 0,
+        "RAMP START FREQUENCY - GHZ": 7,
+        "STATION ID": 54,
+        "RAMP START FREQUENCY - INTEGER PART": 175193696,
+        "RAMP START FREQUENCY - FRACTIONAL PART": 0,
+        "RAMP END TIME - INTEGER PART": 1655560718,
+        "RAMP END TIME - FRACTIONAL PART": 0
+      }
+    }
+  ],
+  "summary_rows": [
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655568662,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 25,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 12,
+      "NUMBER OF SAMPLES": 36007,
+      "LAST SAMPLE TIME - INTEGER PART": 1655604681,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655558667,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 25,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 13,
+      "NUMBER OF SAMPLES": 9910,
+      "LAST SAMPLE TIME - INTEGER PART": 1655568580,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655556312,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 25,
+      "NETWORK OR DOPPLER ID": 0,
+      "BAND ID": 2,
+      "DATA TYPE ID": 37,
+      "NUMBER OF SAMPLES": 117,
+      "LAST SAMPLE TIME - INTEGER PART": 1655603530,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655526327,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 45,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 12,
+      "NUMBER OF SAMPLES": 6094,
+      "LAST SAMPLE TIME - INTEGER PART": 1655612420,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655526309,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 45,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 13,
+      "NUMBER OF SAMPLES": 10160,
+      "LAST SAMPLE TIME - INTEGER PART": 1655612410,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655526727,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 45,
+      "NETWORK OR DOPPLER ID": 0,
+      "BAND ID": 2,
+      "DATA TYPE ID": 37,
+      "NUMBER OF SAMPLES": 18,
+      "LAST SAMPLE TIME - INTEGER PART": 1655531827,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655529617,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 54,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 11,
+      "NUMBER OF SAMPLES": 649,
+      "LAST SAMPLE TIME - INTEGER PART": 1655530266,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655540771,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 54,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 12,
+      "NUMBER OF SAMPLES": 19358,
+      "LAST SAMPLE TIME - INTEGER PART": 1655560637,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655531163,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 54,
+      "NETWORK OR DOPPLER ID": 2,
+      "BAND ID": 2,
+      "DATA TYPE ID": 13,
+      "NUMBER OF SAMPLES": 9486,
+      "LAST SAMPLE TIME - INTEGER PART": 1655540655,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    },
+    {
+      "FIRST SAMPLE TIME - INTEGER PART": 1655541137,
+      "FIRST SAMPLE TIME - FRACTIONAL PART": 0,
+      "STATION ID": 54,
+      "NETWORK OR DOPPLER ID": 0,
+      "BAND ID": 2,
+      "DATA TYPE ID": 37,
+      "NUMBER OF SAMPLES": 64,
+      "LAST SAMPLE TIME - INTEGER PART": 1655560337,
+      "LAST SAMPLE TIME - FRACTIONAL PART": 0
+    }
+  ],
+  "checks_passed_by_family": {
+    "contiguous_label_table": 16,
+    "physical_row_size": 16,
+    "header_primary_key": 8,
+    "header_zero_based_pointer": 8,
+    "header_record_length": 8,
+    "header_suffix_zero": 8,
+    "header_ramp_station": 3,
+    "author_nominal_epoch_matches_file": 1,
+    "all_22_fields": 91863,
+    "reference_split_vs_contiguous": 91863,
+    "doppler_compression_positive": 91664,
+    "orbit_end_meets_next_header": 1,
+    "all_times_nondecreasing": 1,
+    "one_hot_record_bit": 288,
+    "signed_word_boundary": 49,
+    "author_wrong_length_rejection": 4,
+    "ramp_station_matches_group": 69,
+    "ramp_interval_nonnegative": 69,
+    "ramp_fraction_ranges": 69,
+    "ramp_time_order": 3,
+    "summary_sample_count": 1,
+    "summary_station_band_type_counts": 1
+  },
+  "failed_checks": [
+    {
+      "name": "complete_label_coverage",
+      "evidence": 92064
+    }
+  ],
+  "semantic_limits": [
+    "Reference high/low concatenation checks binary payload identity; it does not identify a reference as sky/transponder/receiver/transmitter frequency or supply a ramp policy.",
+    "Item 21 is not a compression duration for range records; the author currently uses compression summaries only for Doppler groups.",
+    "The label midpoint, bias, transponder and reference-frequency definitions must control later observation conversion; later ODF specifications are not applied.",
+    "Nominal label-epoch arithmetic is not a station time-scale or relativistic clock conversion.",
+    "Ramp frequency uses GHz + Hz modulo 1e9 + nanohertz; it is not the orbit-record 46-bit millihertz field."
+  ]
+}

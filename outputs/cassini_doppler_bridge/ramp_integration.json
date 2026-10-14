@@ -1,0 +1,2266 @@
+{
+  "role": "exposed development data; instrument reconstruction only; no gravity fit",
+  "sources": {
+    "odf_sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+    "label_sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+    "bytes": 3314304,
+    "specification": "TRK-2-18 2000-06-15 tables 3-3b and 3-4b; Moyer 2000 13.3.2.2.2"
+  },
+  "self_checks": {
+    "signed_rate": true,
+    "cross_word_station_and_ghz": true,
+    "nanosecond_epochs": true,
+    "single_affine_integral": true,
+    "piecewise_integral": true,
+    "clipped_piecewise_integral": true,
+    "half_nanosecond_exact": true,
+    "partition_additivity": true,
+    "epoch_shift_invariance": true,
+    "frequency_jump_preserved": true,
+    "gap_rejected": true,
+    "overlap_rejected": true,
+    "extrapolation_rejected": true,
+    "mixed_level_rejected": true,
+    "truncated_record_rejected": true,
+    "midpoint_across_jump_counterexample": true
+  },
+  "ramp_stations": [
+    {
+      "station": 25,
+      "records": 23,
+      "start_ns": 1655517848000000000,
+      "end_ns": 1655604711000000000,
+      "all_sky_level": true,
+      "boundaries": [
+        {
+          "left_record": 91870,
+          "right_record": 91871,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 19,
+            "denominator": 62500,
+            "approximate": 0.000304
+          }
+        },
+        {
+          "left_record": 91871,
+          "right_record": 91872,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91872,
+          "right_record": 91873,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91873,
+          "right_record": 91874,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -19,
+            "denominator": 62500,
+            "approximate": -0.000304
+          }
+        },
+        {
+          "left_record": 91874,
+          "right_record": 91875,
+          "gap_ns": 31754000000000,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -175337,
+            "denominator": 1,
+            "approximate": -175337.0
+          }
+        },
+        {
+          "left_record": 91875,
+          "right_record": 91876,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91876,
+          "right_record": 91877,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 165369,
+            "denominator": 1,
+            "approximate": 165369.0
+          }
+        },
+        {
+          "left_record": 91877,
+          "right_record": 91878,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91878,
+          "right_record": 91879,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91879,
+          "right_record": 91880,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91880,
+          "right_record": 91881,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91881,
+          "right_record": 91882,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 2,
+            "denominator": 15625,
+            "approximate": 0.000128
+          }
+        },
+        {
+          "left_record": 91882,
+          "right_record": 91883,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91883,
+          "right_record": 91884,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91884,
+          "right_record": 91885,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -2,
+            "denominator": 15625,
+            "approximate": -0.000128
+          }
+        },
+        {
+          "left_record": 91885,
+          "right_record": 91886,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91886,
+          "right_record": 91887,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91887,
+          "right_record": 91888,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91888,
+          "right_record": 91889,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 17,
+            "denominator": 62500,
+            "approximate": 0.000272
+          }
+        },
+        {
+          "left_record": 91889,
+          "right_record": 91890,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91890,
+          "right_record": 91891,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91891,
+          "right_record": 91892,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -17,
+            "denominator": 62500,
+            "approximate": -0.000272
+          }
+        }
+      ],
+      "whole_segment_integrals": [
+        {
+          "record": 91870,
+          "cycles": {
+            "numerator": 34979116948218261,
+            "denominator": 125000,
+            "approximate": 279832935585.7461
+          }
+        },
+        {
+          "record": 91871,
+          "cycles": {
+            "numerator": 672675599354577,
+            "denominator": 6250,
+            "approximate": 107628095896.73232
+          }
+        },
+        {
+          "record": 91872,
+          "cycles": {
+            "numerator": 224225199784859,
+            "denominator": 6250,
+            "approximate": 35876031965.57744
+          }
+        },
+        {
+          "record": 91873,
+          "cycles": {
+            "numerator": 34979116948219743,
+            "denominator": 125000,
+            "approximate": 279832935585.75793
+          }
+        },
+        {
+          "record": 91874,
+          "cycles": {
+            "numerator": 5417276422800,
+            "denominator": 1,
+            "approximate": 5417276422800.0
+          }
+        },
+        {
+          "record": 91875,
+          "cycles": {
+            "numerator": 28700100892,
+            "denominator": 1,
+            "approximate": 28700100892.0
+          }
+        },
+        {
+          "record": 91876,
+          "cycles": {
+            "numerator": 50225176561,
+            "denominator": 1,
+            "approximate": 50225176561.0
+          }
+        },
+        {
+          "record": 91877,
+          "cycles": {
+            "numerator": 62424158150400,
+            "denominator": 1,
+            "approximate": 62424158150400.0
+          }
+        },
+        {
+          "record": 91878,
+          "cycles": {
+            "numerator": 28700762368,
+            "denominator": 1,
+            "approximate": 28700762368.0
+          }
+        },
+        {
+          "record": 91879,
+          "cycles": {
+            "numerator": 43051143552,
+            "denominator": 1,
+            "approximate": 43051143552.0
+          }
+        },
+        {
+          "record": 91880,
+          "cycles": {
+            "numerator": 6959934874240,
+            "denominator": 1,
+            "approximate": 6959934874240.0
+          }
+        },
+        {
+          "record": 91881,
+          "cycles": {
+            "numerator": 34979040041773659,
+            "denominator": 125000,
+            "approximate": 279832320334.1893
+          }
+        },
+        {
+          "record": 91882,
+          "cycles": {
+            "numerator": 1345347151828767,
+            "denominator": 12500,
+            "approximate": 107627772146.30136
+          }
+        },
+        {
+          "record": 91883,
+          "cycles": {
+            "numerator": 448449050609589,
+            "denominator": 12500,
+            "approximate": 35875924048.76712
+          }
+        },
+        {
+          "record": 91884,
+          "cycles": {
+            "numerator": 34979040041774283,
+            "denominator": 125000,
+            "approximate": 279832320334.1943
+          }
+        },
+        {
+          "record": 91885,
+          "cycles": {
+            "numerator": 269098347962368,
+            "denominator": 1,
+            "approximate": 269098347962368.0
+          }
+        },
+        {
+          "record": 91886,
+          "cycles": {
+            "numerator": 28700762368,
+            "denominator": 1,
+            "approximate": 28700762368.0
+          }
+        },
+        {
+          "record": 91887,
+          "cycles": {
+            "numerator": 44443130526848,
+            "denominator": 1,
+            "approximate": 44443130526848.0
+          }
+        },
+        {
+          "record": 91888,
+          "cycles": {
+            "numerator": 34979068366653957,
+            "denominator": 125000,
+            "approximate": 279832546933.2316
+          }
+        },
+        {
+          "record": 91889,
+          "cycles": {
+            "numerator": 67267466533287,
+            "denominator": 625,
+            "approximate": 107627946453.2592
+          }
+        },
+        {
+          "record": 91890,
+          "cycles": {
+            "numerator": 22422488844429,
+            "denominator": 625,
+            "approximate": 35875982151.0864
+          }
+        },
+        {
+          "record": 91891,
+          "cycles": {
+            "numerator": 34979068366655283,
+            "denominator": 125000,
+            "approximate": 279832546933.24225
+          }
+        },
+        {
+          "record": 91892,
+          "cycles": {
+            "numerator": 4785852124864,
+            "denominator": 1,
+            "approximate": 4785852124864.0
+          }
+        }
+      ],
+      "ramps": [
+        {
+          "station": 25,
+          "start_ns": 1655517848000000000,
+          "end_ns": 1655517887000000000,
+          "frequency_nhz": 7175200560000000000,
+          "rate_nhz_per_second": 149567056000,
+          "sky_level": true,
+          "record_one_based": 91870
+        },
+        {
+          "station": 25,
+          "start_ns": 1655517887000000000,
+          "end_ns": 1655517902000000000,
+          "frequency_nhz": 7175206393115488000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91871
+        },
+        {
+          "station": 25,
+          "start_ns": 1655517902000000000,
+          "end_ns": 1655517907000000000,
+          "frequency_nhz": 7175206393115488000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91872
+        },
+        {
+          "station": 25,
+          "start_ns": 1655517907000000000,
+          "end_ns": 1655517946000000000,
+          "frequency_nhz": 7175206393115488000,
+          "rate_nhz_per_second": -149567056000,
+          "sky_level": true,
+          "record_one_based": 91873
+        },
+        {
+          "station": 25,
+          "start_ns": 1655517946000000000,
+          "end_ns": 1655518701000000000,
+          "frequency_nhz": 7175200560000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91874
+        },
+        {
+          "station": 25,
+          "start_ns": 1655550455000000000,
+          "end_ns": 1655550459000000000,
+          "frequency_nhz": 7175025223000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91875
+        },
+        {
+          "station": 25,
+          "start_ns": 1655550459000000000,
+          "end_ns": 1655550466000000000,
+          "frequency_nhz": 7175025223000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91876
+        },
+        {
+          "station": 25,
+          "start_ns": 1655550466000000000,
+          "end_ns": 1655559166000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91877
+        },
+        {
+          "station": 25,
+          "start_ns": 1655559166000000000,
+          "end_ns": 1655559170000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91878
+        },
+        {
+          "station": 25,
+          "start_ns": 1655559170000000000,
+          "end_ns": 1655559176000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91879
+        },
+        {
+          "station": 25,
+          "start_ns": 1655559176000000000,
+          "end_ns": 1655560146000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91880
+        },
+        {
+          "station": 25,
+          "start_ns": 1655560146000000000,
+          "end_ns": 1655560185000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": -148262736000,
+          "sky_level": true,
+          "record_one_based": 91881
+        },
+        {
+          "station": 25,
+          "start_ns": 1655560185000000000,
+          "end_ns": 1655560200000000000,
+          "frequency_nhz": 7175184809753424000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91882
+        },
+        {
+          "station": 25,
+          "start_ns": 1655560200000000000,
+          "end_ns": 1655560205000000000,
+          "frequency_nhz": 7175184809753424000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91883
+        },
+        {
+          "station": 25,
+          "start_ns": 1655560205000000000,
+          "end_ns": 1655560244000000000,
+          "frequency_nhz": 7175184809753424000,
+          "rate_nhz_per_second": 148262736000,
+          "sky_level": true,
+          "record_one_based": 91884
+        },
+        {
+          "station": 25,
+          "start_ns": 1655560244000000000,
+          "end_ns": 1655597748000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91885
+        },
+        {
+          "station": 25,
+          "start_ns": 1655597748000000000,
+          "end_ns": 1655597752000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91886
+        },
+        {
+          "station": 25,
+          "start_ns": 1655597752000000000,
+          "end_ns": 1655603946000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91887
+        },
+        {
+          "station": 25,
+          "start_ns": 1655603946000000000,
+          "end_ns": 1655603985000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 149697872000,
+          "sky_level": true,
+          "record_one_based": 91888
+        },
+        {
+          "station": 25,
+          "start_ns": 1655603985000000000,
+          "end_ns": 1655604000000000000,
+          "frequency_nhz": 7175196430217280000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91889
+        },
+        {
+          "station": 25,
+          "start_ns": 1655604000000000000,
+          "end_ns": 1655604005000000000,
+          "frequency_nhz": 7175196430217280000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91890
+        },
+        {
+          "station": 25,
+          "start_ns": 1655604005000000000,
+          "end_ns": 1655604044000000000,
+          "frequency_nhz": 7175196430217280000,
+          "rate_nhz_per_second": -149697872000,
+          "sky_level": true,
+          "record_one_based": 91891
+        },
+        {
+          "station": 25,
+          "start_ns": 1655604044000000000,
+          "end_ns": 1655604711000000000,
+          "frequency_nhz": 7175190592000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91892
+        }
+      ]
+    },
+    {
+      "station": 45,
+      "records": 26,
+      "start_ns": 1655515088000000000,
+      "end_ns": 1655612421000000000,
+      "all_sky_level": true,
+      "boundaries": [
+        {
+          "left_record": 91894,
+          "right_record": 91895,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91895,
+          "right_record": 91896,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91896,
+          "right_record": 91897,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91897,
+          "right_record": 91898,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91898,
+          "right_record": 91899,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91899,
+          "right_record": 91900,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91900,
+          "right_record": 91901,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91901,
+          "right_record": 91902,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91902,
+          "right_record": 91903,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91903,
+          "right_record": 91904,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91904,
+          "right_record": 91905,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 11,
+            "denominator": 62500,
+            "approximate": 0.000176
+          }
+        },
+        {
+          "left_record": 91905,
+          "right_record": 91906,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91906,
+          "right_record": 91907,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91907,
+          "right_record": 91908,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -11,
+            "denominator": 62500,
+            "approximate": -0.000176
+          }
+        },
+        {
+          "left_record": 91908,
+          "right_record": 91909,
+          "gap_ns": 68648000000000,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -172729,
+            "denominator": 1,
+            "approximate": -172729.0
+          }
+        },
+        {
+          "left_record": 91909,
+          "right_record": 91910,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91910,
+          "right_record": 91911,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 162761,
+            "denominator": 1,
+            "approximate": 162761.0
+          }
+        },
+        {
+          "left_record": 91911,
+          "right_record": 91912,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91912,
+          "right_record": 91913,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91913,
+          "right_record": 91914,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91914,
+          "right_record": 91915,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91915,
+          "right_record": 91916,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 1,
+            "denominator": 62500,
+            "approximate": 1.6e-05
+          }
+        },
+        {
+          "left_record": 91916,
+          "right_record": 91917,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91917,
+          "right_record": 91918,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91918,
+          "right_record": 91919,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -1,
+            "denominator": 62500,
+            "approximate": -1.6e-05
+          }
+        }
+      ],
+      "whole_segment_integrals": [
+        {
+          "record": 91894,
+          "cycles": {
+            "numerator": 28700791808,
+            "denominator": 1,
+            "approximate": 28700791808.0
+          }
+        },
+        {
+          "record": 91895,
+          "cycles": {
+            "numerator": 43051187712,
+            "denominator": 1,
+            "approximate": 43051187712.0
+          }
+        },
+        {
+          "record": 91896,
+          "cycles": {
+            "numerator": 19975751098368,
+            "denominator": 1,
+            "approximate": 19975751098368.0
+          }
+        },
+        {
+          "record": 91897,
+          "cycles": {
+            "numerator": 672674790691299,
+            "denominator": 31250,
+            "approximate": 21525593302.121567
+          }
+        },
+        {
+          "record": 91898,
+          "cycles": {
+            "numerator": 336337386691299,
+            "denominator": 3125,
+            "approximate": 107627963741.21568
+          }
+        },
+        {
+          "record": 91899,
+          "cycles": {
+            "numerator": 112112462230433,
+            "denominator": 3125,
+            "approximate": 35875987913.73856
+          }
+        },
+        {
+          "record": 91900,
+          "cycles": {
+            "numerator": 672674790691299,
+            "denominator": 31250,
+            "approximate": 21525593302.121567
+          }
+        },
+        {
+          "record": 91901,
+          "cycles": {
+            "numerator": 95444483157504,
+            "denominator": 1,
+            "approximate": 95444483157504.0
+          }
+        },
+        {
+          "record": 91902,
+          "cycles": {
+            "numerator": 28700791808,
+            "denominator": 1,
+            "approximate": 28700791808.0
+          }
+        },
+        {
+          "record": 91903,
+          "cycles": {
+            "numerator": 7397629088512,
+            "denominator": 1,
+            "approximate": 7397629088512.0
+          }
+        },
+        {
+          "record": 91904,
+          "cycles": {
+            "numerator": 33185303073711767,
+            "denominator": 125000,
+            "approximate": 265482424589.69412
+          }
+        },
+        {
+          "record": 91905,
+          "cycles": {
+            "numerator": 672675316609953,
+            "denominator": 6250,
+            "approximate": 107628050657.59248
+          }
+        },
+        {
+          "record": 91906,
+          "cycles": {
+            "numerator": 224225105536651,
+            "denominator": 6250,
+            "approximate": 35876016885.86416
+          }
+        },
+        {
+          "record": 91907,
+          "cycles": {
+            "numerator": 33185303073712581,
+            "denominator": 125000,
+            "approximate": 265482424589.70065
+          }
+        },
+        {
+          "record": 91908,
+          "cycles": {
+            "numerator": 724694993152,
+            "denominator": 1,
+            "approximate": 724694993152.0
+          }
+        },
+        {
+          "record": 91909,
+          "cycles": {
+            "numerator": 28700100892,
+            "denominator": 1,
+            "approximate": 28700100892.0
+          }
+        },
+        {
+          "record": 91910,
+          "cycles": {
+            "numerator": 50225176561,
+            "denominator": 1,
+            "approximate": 50225176561.0
+          }
+        },
+        {
+          "record": 91911,
+          "cycles": {
+            "numerator": 7749203022720,
+            "denominator": 1,
+            "approximate": 7749203022720.0
+          }
+        },
+        {
+          "record": 91912,
+          "cycles": {
+            "numerator": 28700751936,
+            "denominator": 1,
+            "approximate": 28700751936.0
+          }
+        },
+        {
+          "record": 91913,
+          "cycles": {
+            "numerator": 43051127904,
+            "denominator": 1,
+            "approximate": 43051127904.0
+          }
+        },
+        {
+          "record": 91914,
+          "cycles": {
+            "numerator": 12865112055312,
+            "denominator": 1,
+            "approximate": 12865112055312.0
+          }
+        },
+        {
+          "record": 91915,
+          "cycles": {
+            "numerator": 2690695414954143,
+            "denominator": 125000,
+            "approximate": 21525563319.633144
+          }
+        },
+        {
+          "record": 91916,
+          "cycles": {
+            "numerator": 672673833977073,
+            "denominator": 6250,
+            "approximate": 107627813436.33168
+          }
+        },
+        {
+          "record": 91917,
+          "cycles": {
+            "numerator": 224224611325691,
+            "denominator": 6250,
+            "approximate": 35875937812.11056
+          }
+        },
+        {
+          "record": 91918,
+          "cycles": {
+            "numerator": 2690695414954149,
+            "denominator": 125000,
+            "approximate": 21525563319.63319
+          }
+        },
+        {
+          "record": 91919,
+          "cycles": {
+            "numerator": 60364856509392,
+            "denominator": 1,
+            "approximate": 60364856509392.0
+          }
+        }
+      ],
+      "ramps": [
+        {
+          "station": 45,
+          "start_ns": 1655515088000000000,
+          "end_ns": 1655515092000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91894
+        },
+        {
+          "station": 45,
+          "start_ns": 1655515092000000000,
+          "end_ns": 1655515098000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91895
+        },
+        {
+          "station": 45,
+          "start_ns": 1655515098000000000,
+          "end_ns": 1655517882000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91896
+        },
+        {
+          "station": 45,
+          "start_ns": 1655517882000000000,
+          "end_ns": 1655517885000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": -123084096000,
+          "sky_level": true,
+          "record_one_based": 91897
+        },
+        {
+          "station": 45,
+          "start_ns": 1655517885000000000,
+          "end_ns": 1655517900000000000,
+          "frequency_nhz": 7175197582747712000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91898
+        },
+        {
+          "station": 45,
+          "start_ns": 1655517900000000000,
+          "end_ns": 1655517905000000000,
+          "frequency_nhz": 7175197582747712000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91899
+        },
+        {
+          "station": 45,
+          "start_ns": 1655517905000000000,
+          "end_ns": 1655517908000000000,
+          "frequency_nhz": 7175197582747712000,
+          "rate_nhz_per_second": 123084096000,
+          "sky_level": true,
+          "record_one_based": 91900
+        },
+        {
+          "station": 45,
+          "start_ns": 1655517908000000000,
+          "end_ns": 1655531210000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91901
+        },
+        {
+          "station": 45,
+          "start_ns": 1655531210000000000,
+          "end_ns": 1655531214000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91902
+        },
+        {
+          "station": 45,
+          "start_ns": 1655531214000000000,
+          "end_ns": 1655532245000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91903
+        },
+        {
+          "station": 45,
+          "start_ns": 1655532245000000000,
+          "end_ns": 1655532282000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 146626288000,
+          "sky_level": true,
+          "record_one_based": 91904
+        },
+        {
+          "station": 45,
+          "start_ns": 1655532282000000000,
+          "end_ns": 1655532297000000000,
+          "frequency_nhz": 7175203377172832000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91905
+        },
+        {
+          "station": 45,
+          "start_ns": 1655532297000000000,
+          "end_ns": 1655532302000000000,
+          "frequency_nhz": 7175203377172832000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91906
+        },
+        {
+          "station": 45,
+          "start_ns": 1655532302000000000,
+          "end_ns": 1655532339000000000,
+          "frequency_nhz": 7175203377172832000,
+          "rate_nhz_per_second": -146626288000,
+          "sky_level": true,
+          "record_one_based": 91907
+        },
+        {
+          "station": 45,
+          "start_ns": 1655532339000000000,
+          "end_ns": 1655532440000000000,
+          "frequency_nhz": 7175197952000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91908
+        },
+        {
+          "station": 45,
+          "start_ns": 1655601088000000000,
+          "end_ns": 1655601092000000000,
+          "frequency_nhz": 7175025223000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91909
+        },
+        {
+          "station": 45,
+          "start_ns": 1655601092000000000,
+          "end_ns": 1655601099000000000,
+          "frequency_nhz": 7175025223000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91910
+        },
+        {
+          "station": 45,
+          "start_ns": 1655601099000000000,
+          "end_ns": 1655602179000000000,
+          "frequency_nhz": 7175187984000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91911
+        },
+        {
+          "station": 45,
+          "start_ns": 1655602179000000000,
+          "end_ns": 1655602183000000000,
+          "frequency_nhz": 7175187984000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91912
+        },
+        {
+          "station": 45,
+          "start_ns": 1655602183000000000,
+          "end_ns": 1655602189000000000,
+          "frequency_nhz": 7175187984000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91913
+        },
+        {
+          "station": 45,
+          "start_ns": 1655602189000000000,
+          "end_ns": 1655603982000000000,
+          "frequency_nhz": 7175187984000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91914
+        },
+        {
+          "station": 45,
+          "start_ns": 1655603982000000000,
+          "end_ns": 1655603985000000000,
+          "frequency_nhz": 7175187984000000000,
+          "rate_nhz_per_second": -140525968000,
+          "sky_level": true,
+          "record_one_based": 91915
+        },
+        {
+          "station": 45,
+          "start_ns": 1655603985000000000,
+          "end_ns": 1655604000000000000,
+          "frequency_nhz": 7175187562422112000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91916
+        },
+        {
+          "station": 45,
+          "start_ns": 1655604000000000000,
+          "end_ns": 1655604005000000000,
+          "frequency_nhz": 7175187562422112000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91917
+        },
+        {
+          "station": 45,
+          "start_ns": 1655604005000000000,
+          "end_ns": 1655604008000000000,
+          "frequency_nhz": 7175187562422112000,
+          "rate_nhz_per_second": 140525968000,
+          "sky_level": true,
+          "record_one_based": 91918
+        },
+        {
+          "station": 45,
+          "start_ns": 1655604008000000000,
+          "end_ns": 1655612421000000000,
+          "frequency_nhz": 7175187984000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91919
+        }
+      ]
+    },
+    {
+      "station": 54,
+      "records": 20,
+      "start_ns": 1655528239000000000,
+      "end_ns": 1655560718000000000,
+      "all_sky_level": true,
+      "boundaries": [
+        {
+          "left_record": 91921,
+          "right_record": 91922,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91922,
+          "right_record": 91923,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 168473,
+            "denominator": 1,
+            "approximate": 168473.0
+          }
+        },
+        {
+          "left_record": 91923,
+          "right_record": 91924,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91924,
+          "right_record": 91925,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91925,
+          "right_record": 91926,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91926,
+          "right_record": 91927,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91927,
+          "right_record": 91928,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91928,
+          "right_record": 91929,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 9,
+            "denominator": 62500,
+            "approximate": 0.000144
+          }
+        },
+        {
+          "left_record": 91929,
+          "right_record": 91930,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91930,
+          "right_record": 91931,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91931,
+          "right_record": 91932,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -9,
+            "denominator": 62500,
+            "approximate": -0.000144
+          }
+        },
+        {
+          "left_record": 91932,
+          "right_record": 91933,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91933,
+          "right_record": 91934,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91934,
+          "right_record": 91935,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91935,
+          "right_record": 91936,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 1,
+            "denominator": 15625,
+            "approximate": 6.4e-05
+          }
+        },
+        {
+          "left_record": 91936,
+          "right_record": 91937,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91937,
+          "right_record": 91938,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        },
+        {
+          "left_record": 91938,
+          "right_record": 91939,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": -1,
+            "denominator": 15625,
+            "approximate": -6.4e-05
+          }
+        },
+        {
+          "left_record": 91939,
+          "right_record": 91940,
+          "gap_ns": 0,
+          "endpoint_frequency_difference_hz": {
+            "numerator": 0,
+            "denominator": 1,
+            "approximate": 0.0
+          }
+        }
+      ],
+      "whole_segment_integrals": [
+        {
+          "record": 91921,
+          "cycles": {
+            "numerator": 28700100892,
+            "denominator": 1,
+            "approximate": 28700100892.0
+          }
+        },
+        {
+          "record": 91922,
+          "cycles": {
+            "numerator": 43050151338,
+            "denominator": 1,
+            "approximate": 43050151338.0
+          }
+        },
+        {
+          "record": 91923,
+          "cycles": {
+            "numerator": 16854529991904,
+            "denominator": 1,
+            "approximate": 16854529991904.0
+          }
+        },
+        {
+          "record": 91924,
+          "cycles": {
+            "numerator": 1313060446368,
+            "denominator": 1,
+            "approximate": 1313060446368.0
+          }
+        },
+        {
+          "record": 91925,
+          "cycles": {
+            "numerator": 28700774784,
+            "denominator": 1,
+            "approximate": 28700774784.0
+          }
+        },
+        {
+          "record": 91926,
+          "cycles": {
+            "numerator": 43051162176,
+            "denominator": 1,
+            "approximate": 43051162176.0
+          }
+        },
+        {
+          "record": 91927,
+          "cycles": {
+            "numerator": 10439906827680,
+            "denominator": 1,
+            "approximate": 10439906827680.0
+          }
+        },
+        {
+          "record": 91928,
+          "cycles": {
+            "numerator": 3811820300869163,
+            "denominator": 15625,
+            "approximate": 243956499255.62643
+          }
+        },
+        {
+          "record": 91929,
+          "cycles": {
+            "numerator": 269069572993299,
+            "denominator": 2500,
+            "approximate": 107627829197.3196
+          }
+        },
+        {
+          "record": 91930,
+          "cycles": {
+            "numerator": 89689857664433,
+            "denominator": 2500,
+            "approximate": 35875943065.7732
+          }
+        },
+        {
+          "record": 91931,
+          "cycles": {
+            "numerator": 7623640601738479,
+            "denominator": 31250,
+            "approximate": 243956499255.63132
+          }
+        },
+        {
+          "record": 91932,
+          "cycles": {
+            "numerator": 193493448400032,
+            "denominator": 1,
+            "approximate": 193493448400032.0
+          }
+        },
+        {
+          "record": 91933,
+          "cycles": {
+            "numerator": 28700774784,
+            "denominator": 1,
+            "approximate": 28700774784.0
+          }
+        },
+        {
+          "record": 91934,
+          "cycles": {
+            "numerator": 6206542547040,
+            "denominator": 1,
+            "approximate": 6206542547040.0
+          }
+        },
+        {
+          "record": 91935,
+          "cycles": {
+            "numerator": 134534901917889,
+            "denominator": 1250,
+            "approximate": 107627921534.3112
+          }
+        },
+        {
+          "record": 91936,
+          "cycles": {
+            "numerator": 336337305089448,
+            "denominator": 3125,
+            "approximate": 107627937628.62337
+          }
+        },
+        {
+          "record": 91937,
+          "cycles": {
+            "numerator": 112112435029816,
+            "denominator": 3125,
+            "approximate": 35875979209.54112
+          }
+        },
+        {
+          "record": 91938,
+          "cycles": {
+            "numerator": 672674509589451,
+            "denominator": 6250,
+            "approximate": 107627921534.31216
+          }
+        },
+        {
+          "record": 91939,
+          "cycles": {
+            "numerator": 3271888325376,
+            "denominator": 1,
+            "approximate": 3271888325376.0
+          }
+        },
+        {
+          "record": 91940,
+          "cycles": {
+            "numerator": 301358135232,
+            "denominator": 1,
+            "approximate": 301358135232.0
+          }
+        }
+      ],
+      "ramps": [
+        {
+          "station": 54,
+          "start_ns": 1655528239000000000,
+          "end_ns": 1655528243000000000,
+          "frequency_nhz": 7175025223000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91921
+        },
+        {
+          "station": 54,
+          "start_ns": 1655528243000000000,
+          "end_ns": 1655528249000000000,
+          "frequency_nhz": 7175025223000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91922
+        },
+        {
+          "station": 54,
+          "start_ns": 1655528249000000000,
+          "end_ns": 1655530598000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91923
+        },
+        {
+          "station": 54,
+          "start_ns": 1655530598000000000,
+          "end_ns": 1655530781000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91924
+        },
+        {
+          "station": 54,
+          "start_ns": 1655530781000000000,
+          "end_ns": 1655530785000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91925
+        },
+        {
+          "station": 54,
+          "start_ns": 1655530785000000000,
+          "end_ns": 1655530791000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91926
+        },
+        {
+          "station": 54,
+          "start_ns": 1655530791000000000,
+          "end_ns": 1655532246000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91927
+        },
+        {
+          "station": 54,
+          "start_ns": 1655532246000000000,
+          "end_ns": 1655532280000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": -149495456000,
+          "sky_level": true,
+          "record_one_based": 91928
+        },
+        {
+          "station": 54,
+          "start_ns": 1655532280000000000,
+          "end_ns": 1655532295000000000,
+          "frequency_nhz": 7175188613154640000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91929
+        },
+        {
+          "station": 54,
+          "start_ns": 1655532295000000000,
+          "end_ns": 1655532300000000000,
+          "frequency_nhz": 7175188613154640000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91930
+        },
+        {
+          "station": 54,
+          "start_ns": 1655532300000000000,
+          "end_ns": 1655532334000000000,
+          "frequency_nhz": 7175188613154640000,
+          "rate_nhz_per_second": 149495456000,
+          "sky_level": true,
+          "record_one_based": 91931
+        },
+        {
+          "station": 54,
+          "start_ns": 1655532334000000000,
+          "end_ns": 1655559301000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91932
+        },
+        {
+          "station": 54,
+          "start_ns": 1655559301000000000,
+          "end_ns": 1655559305000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91933
+        },
+        {
+          "station": 54,
+          "start_ns": 1655559305000000000,
+          "end_ns": 1655560170000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91934
+        },
+        {
+          "station": 54,
+          "start_ns": 1655560170000000000,
+          "end_ns": 1655560185000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 143060544000,
+          "sky_level": true,
+          "record_one_based": 91935
+        },
+        {
+          "station": 54,
+          "start_ns": 1655560185000000000,
+          "end_ns": 1655560200000000000,
+          "frequency_nhz": 7175195841908224000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91936
+        },
+        {
+          "station": 54,
+          "start_ns": 1655560200000000000,
+          "end_ns": 1655560205000000000,
+          "frequency_nhz": 7175195841908224000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91937
+        },
+        {
+          "station": 54,
+          "start_ns": 1655560205000000000,
+          "end_ns": 1655560220000000000,
+          "frequency_nhz": 7175195841908224000,
+          "rate_nhz_per_second": -143060544000,
+          "sky_level": true,
+          "record_one_based": 91938
+        },
+        {
+          "station": 54,
+          "start_ns": 1655560220000000000,
+          "end_ns": 1655560676000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91939
+        },
+        {
+          "station": 54,
+          "start_ns": 1655560676000000000,
+          "end_ns": 1655560718000000000,
+          "frequency_nhz": 7175193696000000000,
+          "rate_nhz_per_second": 0,
+          "sky_level": true,
+          "record_one_based": 91940
+        }
+      ]
+    }
+  ],
+  "doppler_groups": [
+    {
+      "fields": {
+        "type": 11,
+        "rx": 54,
+        "tx": 0,
+        "network": 0,
+        "up_band": 0,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 649,
+      "reference_frequency_mHz": [
+        {
+          "value": 2298333214000,
+          "records": 649
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 649
+      },
+      "integration_examples": [
+        {
+          "record": 3313,
+          "midpoint_ns": 1655529617500000000,
+          "segments": [
+            91923
+          ],
+          "cycles": {
+            "numerator": 7175193696,
+            "denominator": 1,
+            "approximate": 7175193696.0
+          }
+        },
+        {
+          "record": 3315,
+          "midpoint_ns": 1655529618500000000,
+          "segments": [
+            91923
+          ],
+          "cycles": {
+            "numerator": 7175193696,
+            "denominator": 1,
+            "approximate": 7175193696.0
+          }
+        }
+      ]
+    },
+    {
+      "fields": {
+        "type": 12,
+        "rx": 25,
+        "tx": 25,
+        "network": 0,
+        "up_band": 2,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 36007,
+      "reference_frequency_mHz": [
+        {
+          "value": 2117016768000,
+          "records": 36007
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 36007
+      },
+      "integration_examples": [
+        {
+          "record": 45589,
+          "midpoint_ns": 1655568662500000000,
+          "segments": [
+            91885
+          ],
+          "cycles": {
+            "numerator": 7175190592,
+            "denominator": 1,
+            "approximate": 7175190592.0
+          }
+        },
+        {
+          "record": 45590,
+          "midpoint_ns": 1655568663500000000,
+          "segments": [
+            91885
+          ],
+          "cycles": {
+            "numerator": 7175190592,
+            "denominator": 1,
+            "approximate": 7175190592.0
+          }
+        }
+      ]
+    },
+    {
+      "fields": {
+        "type": 12,
+        "rx": 45,
+        "tx": 45,
+        "network": 0,
+        "up_band": 2,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 6094,
+      "reference_frequency_mHz": [
+        {
+          "value": 2117064000000,
+          "records": 6094
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 6094
+      },
+      "integration_examples": [
+        {
+          "record": 12,
+          "midpoint_ns": 1655526327500000000,
+          "segments": [
+            91901
+          ],
+          "cycles": {
+            "numerator": 7175197952,
+            "denominator": 1,
+            "approximate": 7175197952.0
+          }
+        },
+        {
+          "record": 13,
+          "midpoint_ns": 1655526328500000000,
+          "segments": [
+            91901
+          ],
+          "cycles": {
+            "numerator": 7175197952,
+            "denominator": 1,
+            "approximate": 7175197952.0
+          }
+        }
+      ]
+    },
+    {
+      "fields": {
+        "type": 12,
+        "rx": 54,
+        "tx": 54,
+        "network": 0,
+        "up_band": 2,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 19358,
+      "reference_frequency_mHz": [
+        {
+          "value": 2117015424000,
+          "records": 15312
+        },
+        {
+          "value": 2117064000000,
+          "records": 4046
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 19358
+      },
+      "integration_examples": [
+        {
+          "record": 16256,
+          "midpoint_ns": 1655540771500000000,
+          "segments": [
+            91932
+          ],
+          "cycles": {
+            "numerator": 7175193696,
+            "denominator": 1,
+            "approximate": 7175193696.0
+          }
+        },
+        {
+          "record": 16257,
+          "midpoint_ns": 1655540772500000000,
+          "segments": [
+            91932
+          ],
+          "cycles": {
+            "numerator": 7175193696,
+            "denominator": 1,
+            "approximate": 7175193696.0
+          }
+        }
+      ]
+    },
+    {
+      "fields": {
+        "type": 13,
+        "rx": 25,
+        "tx": 54,
+        "network": 0,
+        "up_band": 2,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 9910,
+      "reference_frequency_mHz": [
+        {
+          "value": 2117064000000,
+          "records": 9910
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 9910
+      },
+      "integration_examples": [
+        {
+          "record": 33702,
+          "midpoint_ns": 1655558667500000000,
+          "segments": [
+            91877
+          ],
+          "cycles": {
+            "numerator": 7175190592,
+            "denominator": 1,
+            "approximate": 7175190592.0
+          }
+        },
+        {
+          "record": 33704,
+          "midpoint_ns": 1655558668500000000,
+          "segments": [
+            91877
+          ],
+          "cycles": {
+            "numerator": 7175190592,
+            "denominator": 1,
+            "approximate": 7175190592.0
+          }
+        }
+      ]
+    },
+    {
+      "fields": {
+        "type": 13,
+        "rx": 45,
+        "tx": 25,
+        "network": 0,
+        "up_band": 2,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 10160,
+      "reference_frequency_mHz": [
+        {
+          "value": 2117064000000,
+          "records": 10160
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 10160
+      },
+      "integration_examples": [
+        {
+          "record": 6,
+          "midpoint_ns": 1655526309500000000,
+          "segments": [
+            91901
+          ],
+          "cycles": {
+            "numerator": 7175197952,
+            "denominator": 1,
+            "approximate": 7175197952.0
+          }
+        },
+        {
+          "record": 7,
+          "midpoint_ns": 1655526310500000000,
+          "segments": [
+            91901
+          ],
+          "cycles": {
+            "numerator": 7175197952,
+            "denominator": 1,
+            "approximate": 7175197952.0
+          }
+        }
+      ]
+    },
+    {
+      "fields": {
+        "type": 13,
+        "rx": 54,
+        "tx": 45,
+        "network": 0,
+        "up_band": 2,
+        "down_band": 2,
+        "exciter_band": 1,
+        "bad": 0,
+        "channel_raw": 2,
+        "independent_receiver": 1
+      },
+      "records": 9486,
+      "reference_frequency_mHz": [
+        {
+          "value": 2117064000000,
+          "records": 9486
+        }
+      ],
+      "nominal_receiver_ramp_coverage": {
+        "nominal_receive_interval_covered": 9486
+      },
+      "integration_examples": [
+        {
+          "record": 5513,
+          "midpoint_ns": 1655531163500000000,
+          "segments": [
+            91927
+          ],
+          "cycles": {
+            "numerator": 7175193696,
+            "denominator": 1,
+            "approximate": 7175193696.0
+          }
+        },
+        {
+          "record": 5515,
+          "midpoint_ns": 1655531164500000000,
+          "segments": [
+            91927
+          ],
+          "cycles": {
+            "numerator": 7175193696,
+            "denominator": 1,
+            "approximate": 7175193696.0
+          }
+        }
+      ]
+    }
+  ],
+  "clock_offset_table_present": false,
+  "scope": [
+    "Times are exact label-coordinate nanoseconds, not a validated station/UTC/proper-time bridge.",
+    "Coverage at nominal reception time is diagnostic only: does not establish emission-time coverage.",
+    "Receiver/exciter flag is preserved; a receiver ramp is not assumed to define the archived reference.",
+    "Sky-level status follows the nonzero-GHz indicator in each ramp record.",
+    "No absence of a clock table is interpreted as zero clock error.",
+    "All Doppler groups and validity flags retained; no values select a theory or fit."
+  ]
+}

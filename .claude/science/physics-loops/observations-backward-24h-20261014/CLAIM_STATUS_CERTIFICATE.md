@@ -5,3 +5,5 @@ The first milestone targets a bounded_theorem with actual_current_surface_status
 Source-profile selection cancels from the ideal range ratio. That is a mathematical reduction of the inverse input, not a physical derivation of the real Sun or a potential selector. A known source charge is still needed for the fundamental coupling.
 
 Synthetic controls, independent mathematical checks, exposed measurement development, calibration, and reserved within-experiment validation are distinct. No independent empirical holdout has been analyzed and no raw-data gravity likelihood has been fitted.
+
+The second milestone also proposes bounded_theorem / conditional-support: one product count reconstruction and a finite station-time phase/error operator. All91664 Doppler rows are accounted for; no scalar parameter fit or independent empirical test occurs. The1MHz bias, band-reference factors and corrected count scale are sourced instrument definitions corroborated by dependent-product consistency. A no-reset bounded counter history remains explicit. Nonzero slipped-cycle diagnostics prevent treating numerical reconstruction as a slip-free physical phase certificate.

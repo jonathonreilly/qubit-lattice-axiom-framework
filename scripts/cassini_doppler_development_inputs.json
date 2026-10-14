@@ -1,0 +1,55 @@
+{
+  "role": "registered exposed development reconstruction; no physical calibration or independent experiment",
+  "raw_data_protocols": [
+    ".claude/science/physics-loops/observations-backward-24h-20261014/RAW_DATA_PROTOCOL_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/RAW_DATA_PROTOCOL_v2_ATDF.json"
+  ],
+  "inputs": {
+    "odf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.odf",
+      "sha256": "39a658fd74044783b598c947f54dc97dee755c8499a58d7f371831e3f2792e5f",
+      "bytes": 3314304,
+      "filename": "c32easc2002_169_0000xmmmv0.odf"
+    },
+    "tdf": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.tdf",
+      "sha256": "215c2de473fd00b278267ab3ff0431ab4d00e9c3baaa17e949105b964644f4f3",
+      "bytes": 46335744,
+      "filename": "c32easc2002_169_0000xmmmv0.tdf"
+    },
+    "odf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/odf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "37beef944cfbab3711ba49b415535e2ca29113c3cd892ffe3f25160b1badf04e",
+      "bytes": 63903,
+      "filename": "odf_c32easc2002_169_0000xmmmv0.lbl"
+    },
+    "tdf_label": {
+      "url": "https://atmos.nmsu.edu/pdsd/archive/data/co-ss-rss-1-sce1-v10/cors_0024/sce1_169/tdf/c32easc2002_169_0000xmmmv0.lbl",
+      "sha256": "5c62b58cd56585b8ab2b518ca915e3ec7b8ccdc887de36b07ebabd09d496b5d6",
+      "bytes": 90858,
+      "filename": "tdf_c32easc2002_169_0000xmmmv0.lbl"
+    }
+  },
+  "interpretation_sources": [
+    {
+      "url": "https://descanso.jpl.nasa.gov/monograph/series2/Descanso2_all.pdf",
+      "sha256": "23b302fd2b47b6adfadac4c2b01301396ebc54bcefb269cf7126270a3d5d87ce",
+      "bytes": 3137761
+    },
+    {
+      "url": "https://pds-geosciences.wustl.edu/radiosciencedocs/urn-nasa-pds-radiosci_documentation/DSN_TRK-2-18/dsn_trk-2-18.2000-06-15.pdf",
+      "sha256": "59c45204b231d5c08e8918038a4c605348d9722487664cf73325050843c77c46",
+      "bytes": 274301
+    },
+    {
+      "url": "https://pds-geosciences.wustl.edu/radiosciencedocs/urn-nasa-pds-radiosci_documentation/DSN_TRK-2-25/tdf_unpack.pdf",
+      "sha256": "2a826779dfa96bfe39658711e936eb156e324ce2c1c41cd526c4b93588bcc33a",
+      "bytes": 3973132
+    },
+    {
+      "url": "https://tda.jpl.nasa.gov/progress_report/42-120/120B.pdf",
+      "sha256": "73d5f703f31903206df81906c9f953f6933d93f6bb5ec54bc1a14d0c5f738ddc",
+      "bytes": 640798
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# K2c-C pool pool_K2c_gsearch_hard_O_open_Lt12_seed4201.npz: Lx=2 Lt=12 torus=False k=20 weight=hard quad lo=(16, None) hi=(32, None) third=(48, None); max bulk |plaquette| 0.5487 (margin limit 0.55)
+formula vs dense D5PV (L_s=4,8): max|d logdet| 2.6e-13; formula(inf) vs direct SH 0.0e+00
+min|eig H| over all points (H_W and H_T): 0.390  [30s]
+PG    : lam_min +7.7790e-05 min/max +4.8910e-06 q 4.4e-16 q3 3.3e-16 E 1.1e-13 certified-negative False PSD-within-error True | lowest eigs [7.779e-05 7.902e-04 1.994e-03]
+W     : lam_min +1.6521e-04 min/max +1.0378e-05 q 1.9e-14 q3 7.1e-15 E 4.9e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.001 0.002]
+O     : lam_min +1.2960e-04 min/max +8.1546e-06 q 1.2e-14 q3 5.9e-15 E 3.4e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.001 0.002]
+SH    : lam_min +1.7944e-04 min/max +1.1285e-05 q 6.2e-15 q3 2.7e-15 E 2.2e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.001 0.002]
+DWF_4 : lam_min +2.3262e-04 min/max +1.4620e-05 q 5.4e-15 q3 3.2e-15 E 2.1e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.001 0.002]
+DWF_8 : lam_min +1.8660e-04 min/max +1.1734e-05 q 5.1e-15 q3 3.3e-15 E 2.0e-13 certified-negative False PSD-within-error True | lowest eigs [0.    0.001 0.002]
+D5_4  : lam_min +3.3910e-04 min/max +2.1236e-05 q 8.5e-14 q3 3.8e-14 E 1.8e-12 certified-negative False PSD-within-error True | lowest eigs [0.    0.001 0.002]
+D5_8  : lam_min +4.1304e-04 min/max +2.5762e-05 q 1.8e-13 q3 1.1e-13 E 3.6e-12 certified-negative False PSD-within-error True | lowest eigs [0.    0.002 0.002]
+done [30s]
+           177995776  maximum resident set size

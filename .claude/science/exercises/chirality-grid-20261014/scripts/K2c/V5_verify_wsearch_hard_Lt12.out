@@ -1,0 +1,14 @@
+# V5a pool pool_K2c_wsearch_hard_O_open_Lt12_seed1401.npz: k=20 Lt=12; explicit max bulk |plaquette| 0.5490 (<= 0.55); admissible-set length vs dense scan max diff 5.9e-06
+V5a O n=32: lam_min -2.42150e-03 min/max -1.2107e-04 symmetry defect 7.1e-15 min|eig H_W| 0.840 [10s]
+V5a O n=64: lam_min -2.42150e-03 min/max -1.2107e-04 symmetry defect 3.6e-15 min|eig H_W| 0.840 [31s]
+V5a O: n32 -> n64 max entry change 1.1e-14
+V5a W n=32: lam_min -2.23961e-14 min/max -1.1200e-15 symmetry defect 1.4e-14 [35s]
+V5a W n=64: lam_min -2.07987e-14 min/max -1.0401e-15 symmetry defect 1.4e-14 [44s]
+V5a W: n32 -> n64 max entry change 1.4e-14
+V5b eps=0.0001: O lam_min -2.351e-03 (E 3e-13) | W lam_min +4.883e-07 (E 5e-13) | PG lam_min +2.630e-07 (E 1e-13) [48s]
+V5b eps=0.001: O lam_min -2.013e-03 (E 3e-13) | W lam_min +3.613e-06 (E 4e-13) | PG lam_min +2.630e-06 (E 1e-13) [52s]
+V5b eps=0.01: O lam_min -1.300e-03 (E 3e-13) | W lam_min +2.996e-05 (E 4e-13) | PG lam_min +2.630e-05 (E 1e-13) [56s]
+V5b eps=0.03: O lam_min -8.568e-04 (E 3e-13) | W lam_min +8.473e-05 (E 5e-13) | PG lam_min +7.889e-05 (E 1e-13) [61s]
+V5b eps=0.1: O lam_min -1.792e-04 (E 3e-13) | W lam_min +2.693e-04 (E 5e-13) | PG lam_min +2.630e-04 (E 1e-13) [65s]
+done
+           125698048  maximum resident set size

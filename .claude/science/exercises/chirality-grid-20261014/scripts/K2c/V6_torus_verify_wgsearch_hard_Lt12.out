@@ -1,0 +1,7 @@
+# V6 pool pool_K2c_wgsearch_hard_O_torus_Lt12_seed4412.npz: k=24 Lt=12; explicit max bulk |plaquette| 0.5475; domain length vs scan (step 2pi/2000) max diff 3.1e-03
+V6 O (6,6,4): lam_min -1.47281e-04 min/max -6.3323e-06 imag-diag max 7.9e-16 min|eig H_W| 0.762 [29s]
+V6 O: (6,6,4) -> (8,8,6) max change on 10 entries 1.1e-12 -> E = k x change = 2.6e-11 [37s]
+V6 W (6,6,4): lam_min +8.76549e-15 min/max +3.7510e-16 imag-diag max 1.5e-16 [47s]
+V6 W: (6,6,4) -> (8,8,6) max change on 10 entries 1.0e-14 -> E = k x change = 2.4e-13 [50s]
+done
+            42418176  maximum resident set size

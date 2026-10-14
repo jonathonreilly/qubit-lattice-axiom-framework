@@ -1,0 +1,10 @@
+# K2c search op=O weight=hard open Lx=2 Lt=12 K=9 seed=777 delta=0.6 margin(bulk<= 0.55) quad lo=(16, None) hi=(32, None) third=(48, None)
+start k=8: lam_min +1.858e-02 min/max +3.204e-03 min|H| 0.885 [0s]
+step 1: k=9 added pert0.02 objective +4.978e-04 lam_min +4.978e-04 min/max +7.494e-05 min|H| 0.885 [1s]
+pool saved: pool_K2c_search_hard_O_open_Lt12_seed777.npz; max bulk |plaquette| over pool 0.5500 (margin limit 0.55)
+FINAL O   k=9: lam_min +4.9776e-04 min/max +7.4939e-05 q 3.6e-15 q3 3.4e-15 E 1.3e-13 | certified-negative False | PSD-within-error True | min|H| 0.885 | lowest [0.    0.019 0.041 0.054] max 6.642 [1s]
+FINAL W   k=9: lam_min +4.8849e-04 min/max +7.3425e-05 q 9.4e-15 q3 7.1e-15 E 1.8e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [0.    0.018 0.04  0.053] max 6.653 [2s]
+FINAL PG  k=9: lam_min +4.9271e-04 min/max +7.4128e-05 q 2.2e-16 q3 3.3e-16 E 1.0e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [0.    0.018 0.04  0.053] max 6.647 [2s]
+   gen-ratio min (O vs W, W range > 1e-8): +9.978e-01
+SUMMARY open Lt=12 search weight=hard op=O seed=777: clean True | O lam_min +4.978e-04 (E 1.3e-13) cert-neg False | W lam_min +4.885e-04 cert-neg False | PG lam_min +4.927e-04 cert-neg False
+done [2s]

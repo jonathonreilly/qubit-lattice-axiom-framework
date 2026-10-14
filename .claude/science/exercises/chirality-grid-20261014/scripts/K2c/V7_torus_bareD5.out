@@ -1,0 +1,4 @@
+V7 D5_4 (torus, hard, (6,4)): lam_min +4.6846e-08 min/max +2.0172e-09 | subset change to (8,6) 5.6e-14 -> E 1.4e-12 | certified-negative False PSD-within-error True | lowest [4.685e-08 6.825e-08 7.337e-07] [20s]
+V7 D5_8 (torus, hard, (6,4)): lam_min +9.3985e-08 min/max +4.0508e-09 | subset change to (8,6) 2.8e-12 -> E 6.8e-11 | certified-negative False PSD-within-error True | lowest [9.398e-08 1.064e-07 1.201e-06] [106s]
+done
+           153288704  maximum resident set size

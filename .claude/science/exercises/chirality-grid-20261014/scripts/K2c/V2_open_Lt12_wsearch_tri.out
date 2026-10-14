@@ -1,0 +1,23 @@
+# K2c wsearch op=O weight=tri open Lx=2 Lt=12 K=20 seed=1401 delta=0.6 margin(bulk<= 0.55) quad lo=(16, None) hi=(32, None) third=(48, None)
+start k=8: lam_min -3.814e-04 min/max -4.768e-05 min|H| 0.865 [0s]
+step 1: k=9 added pert0.2  objective -5.266e-04 lam_min -5.266e-04 min/max -5.851e-05 min|H| 0.854 [1s]
+step 2: k=10 added rand     objective -7.216e-04 lam_min -7.216e-04 min/max -7.215e-05 min|H| 0.854 [2s]
+step 3: k=11 added pert0.02 objective -8.400e-04 lam_min -8.400e-04 min/max -7.636e-05 min|H| 0.854 [3s]
+step 4: k=12 added pert0.02 objective -9.675e-04 lam_min -9.675e-04 min/max -8.062e-05 min|H| 0.854 [4s]
+step 5: k=13 added rand     objective -1.279e-03 lam_min -1.279e-03 min/max -9.835e-05 min|H| 0.841 [5s]
+step 6: k=14 added pert0.1  objective -1.353e-03 lam_min -1.353e-03 min/max -9.665e-05 min|H| 0.841 [6s]
+step 7: k=15 added pert0.1  objective -1.492e-03 lam_min -1.492e-03 min/max -9.945e-05 min|H| 0.841 [7s]
+step 8: k=16 added pert0.05 objective -1.565e-03 lam_min -1.565e-03 min/max -9.779e-05 min|H| 0.841 [9s]
+step 9: k=17 added rand     objective -1.822e-03 lam_min -1.822e-03 min/max -1.072e-04 min|H| 0.841 [10s]
+step 10: k=18 added pert0.1  objective -2.004e-03 lam_min -2.004e-03 min/max -1.113e-04 min|H| 0.841 [11s]
+step 11: k=19 added rand     objective -2.184e-03 lam_min -2.184e-03 min/max -1.150e-04 min|H| 0.841 [13s]
+step 12: k=20 added pert0.1  objective -2.395e-03 lam_min -2.395e-03 min/max -1.197e-04 min|H| 0.841 [15s]
+W-match check: max|W1| 0.0e+00
+pool saved: pool_K2c_wsearch_tri_O_open_Lt12_seed1401.npz; max bulk |plaquette| over pool 0.5490 (margin limit 0.55)
+FINAL O   k=20: lam_min -2.3950e-03 min/max -1.1974e-04 q 1.1e-14 q3 7.1e-15 E 3.1e-13 | certified-negative True | PSD-within-error False | min|H| 0.840 | lowest [-2.395e-03 -1.763e-05 -1.326e-05 -2.908e-06] max 20.002 [20s]
+FINAL W   k=20: lam_min -2.7586e-14 min/max -1.3795e-15 q 1.4e-14 q3 1.4e-14 E 3.8e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [-2.759e-14 -1.935e-14 -1.381e-14 -1.140e-14] max 19.996 [22s]
+FINAL PG  k=20: lam_min -8.6485e-15 min/max -4.3243e-16 q 0.0e+00 q3 0.0e+00 E 1.0e-13 | certified-negative False | PSD-within-error True | min|H| inf | lowest [-8.649e-15 -6.623e-16 -1.319e-16 -3.241e-17] max 20.000 [22s]
+   gen-ratio min (O vs W, W range > 1e-8): -1.095e+00
+SUMMARY open Lt=12 wsearch weight=tri op=O seed=1401: clean True | O lam_min -2.395e-03 (E 3.1e-13) cert-neg True | W lam_min -2.759e-14 cert-neg False | PG lam_min -8.649e-15 cert-neg False
+done [22s]
+           122748928  maximum resident set size

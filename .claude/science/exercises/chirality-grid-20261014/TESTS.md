@@ -42,7 +42,7 @@ Memory: ≤ 0.4 GB per run for NT-1 and NT-2, ≤ 1 GB for NT-3, one process at 
 - **TG1-BROKEN:** degeneracy or order that grows with size (an SSB precursor), or a gapless sector.
 - **OPEN:** otherwise.
 
-## Panel D work items (pre-registered 2026-10-14 ~21:12Z, at Jon's request: "do the recommended work then")
+## Panel D work items (pre-registered 2026-10-14 ~21:10Z, at Jon's request: "do the recommended work then")
 
 Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one process at a time per agent. Each agent writes its detailed PREREG.md before running. These readings are fixed now.
 

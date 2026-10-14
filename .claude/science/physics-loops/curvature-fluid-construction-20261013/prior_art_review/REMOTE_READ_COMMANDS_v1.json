@@ -1,0 +1,44 @@
+[
+  {
+    "name": "MAIN_REF_INITIAL_v1",
+    "command": [
+      "gh",
+      "api",
+      "repos/jonathonreilly/qubit-lattice-axiom-framework/git/ref/heads/main"
+    ],
+    "started_at": "2026-10-13T11:40:45.341498+00:00",
+    "finished_at": "2026-10-13T11:40:45.642647+00:00",
+    "exit_code": 0,
+    "stdout_path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/MAIN_REF_INITIAL_v1.json",
+    "stdout_sha256": "b9af46dfd4487d45bd9171c150d47244afa31606650f8194a97675b00f636232",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "OPEN_PRS_INITIAL_v1",
+    "command": [
+      "gh",
+      "api",
+      "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls?state=open&per_page=100"
+    ],
+    "started_at": "2026-10-13T11:40:45.642827+00:00",
+    "finished_at": "2026-10-13T11:40:46.130584+00:00",
+    "exit_code": 0,
+    "stdout_path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/OPEN_PRS_INITIAL_v1.json",
+    "stdout_sha256": "9b257eab1f7988c0b17ebd62f30830168265285df7c174f9c953d85e6c48cdfc",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "PR9514_INITIAL_v1",
+    "command": [
+      "gh",
+      "api",
+      "repos/jonathonreilly/qubit-lattice-axiom-framework/pulls/9514"
+    ],
+    "started_at": "2026-10-13T11:40:46.134931+00:00",
+    "finished_at": "2026-10-13T11:40:46.773854+00:00",
+    "exit_code": 0,
+    "stdout_path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/PR9514_INITIAL_v1.json",
+    "stdout_sha256": "5ab0333fca1c19583fa692d817c67b780791dbb4d8e8e65cfd2f2feac442d437",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

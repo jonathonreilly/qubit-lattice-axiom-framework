@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/curvature_fluid_construction_2026_10_13.py
+runner_sha256: 3675d6d0aab39e3898c9d96bce321a7ff8460058b458f6ca9bcf68b72cdd17bb
+input_fingerprint_sha256: b8e8af48b91f3fcb029a30213be6ead9ce8f3270835acb8422d2c68dc4363a8e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.62
+status: ok
+----- stdout -----
+Conditional action: 360 ideal-orbit rows, 72 local Hessians, 72 full off-trajectory equation states, four integrated histories.
+Measured-G normalization and supplied PPN/ideal-species diagnostics are conditional bridges; b=k is calibration, not a prediction.
+TOTAL: PASS=6651 FAIL=0
+
+----- stderr -----
+

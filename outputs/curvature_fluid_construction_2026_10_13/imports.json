@@ -1,0 +1,23 @@
+{
+  "candidate_assumptions": [
+    "Explicit three-field metric and V0,V1 potentials",
+    "Independent a,b,nu,H_v,q,zeta before variation",
+    "Real noncompact auxiliary four-forms and fixed constant sector",
+    "Classical universally conformal matter with ideal nonnegative dust/radiation",
+    "Light weak-body scalar exchange for the local Newton normalization"
+  ],
+  "calibration": "b=S_target_squared*(1+k)-1; S_target=1 is a supplied reference, not measured here.",
+  "supplied_diagnostic_PPN": [
+    "delta_gamma=-2k/(1+k)",
+    "delta_beta=beta_D*k/(2*(1+k)^2)",
+    "eta=4*delta_beta-delta_gamma"
+  ],
+  "thermal_diagnostic": "Ideal pre/post species energy densities only, N_base=3. No thermal evolution, particle transport or abundance likelihood in this canonical unit.",
+  "runtime_scientific_inputs": [
+    "NUMERICAL_FIXTURES_v1.json",
+    "OFF_TRAJECTORY_FIXTURES_v2.json"
+  ],
+  "scale_origin": "H_v,nu and 2a/b are supplied. No quantum or naturalness result.",
+  "source_dependencies": "The action and proof are restated in full. No repository result is an unstated premise.",
+  "status": "Conditional support; formal audit not applied."
+}

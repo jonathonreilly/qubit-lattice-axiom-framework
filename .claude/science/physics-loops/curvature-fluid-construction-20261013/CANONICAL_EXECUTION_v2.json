@@ -1,0 +1,20 @@
+{
+  "result": {
+    "runner": "scripts/curvature_fluid_construction_2026_10_13.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "Conditional action: 360 ideal-orbit rows, 72 local Hessians, 72 full off-trajectory equation states, four integrated histories.\nMeasured-G normalization and supplied PPN/ideal-species diagnostics are conditional bridges; b=k is calibration, not a prediction.\nTOTAL: PASS=6651 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 3.255305051803589,
+    "timeout_sec": 120,
+    "live_log": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/logs/runner-cache/.in-progress/curvature_fluid_construction_2026_10_13.txt"
+  },
+  "cache_path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/logs/runner-cache/curvature_fluid_construction_2026_10_13.txt",
+  "cache_sha256": "4bd7405ff7da50230db862021c5fdc421d1b6a6da412e6390f4a423bfdb846d1",
+  "capture_exception": null,
+  "started_at": "2026-10-13T12:26:14.014240+00:00",
+  "finished_at": "2026-10-13T12:26:17.315767+00:00",
+  "elapsed_seconds": 3.301484332885593,
+  "prior_successful_preflight": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/UNIT_PREFLIGHT_v2.json",
+  "preserved_first_failure": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/first_capture_guard_failure_v1/FAILURE.json"
+}

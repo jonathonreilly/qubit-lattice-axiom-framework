@@ -1,0 +1,28 @@
+{
+  "reviewer_event": {
+    "tool_chunk": "cc642d",
+    "exit_code": 1,
+    "error": "FileNotFoundError",
+    "attempted_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/curvature_milestone/CANONICAL_EXECUTION_v2.json",
+    "cause": "Reviewer initially interpreted the execution-receipt location as runtime; the receipt was in the canonical packet.",
+    "resolution": "Targeted rg listing and packet glob located the existing receipt; subsequent full read and identity/output checks passed.",
+    "evidence_kind": "Contemporaneous transcription of reviewer tool result, not a separately recovered raw tool-output file.",
+    "science_executed": false,
+    "author_files_changed": false
+  },
+  "parent_failures": [
+    {
+      "event": "UNIT_v1 schema preflight",
+      "disposition": "Preserved actual failure, invalid schema key source.base_commit; corrected record passed before capture."
+    },
+    {
+      "event": "First capture guard rejection",
+      "disposition": "Retained successful scientific JSON; no captured cache. Selected exception transcription is labelled, full raw log and exact first-run timings are unavailable."
+    }
+  ],
+  "completed_reviewer_check": {
+    "passed": 112,
+    "failed": 0,
+    "author_science_rerun": false
+  }
+}

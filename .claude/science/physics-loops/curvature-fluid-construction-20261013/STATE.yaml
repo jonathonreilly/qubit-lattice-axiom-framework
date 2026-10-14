@@ -1,0 +1,21 @@
+{
+  "unit": "curvature-fluid-construction-20261013",
+  "status": "reviewed-source-and-canonical-execution",
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "branch": "codex/curvature-fluid-construction-20261013",
+  "created_at": "2026-10-13T11:54:15.012631+00:00",
+  "author": "/root",
+  "canonical_execution": "completed6651/0; second capture fresh after preserved first guard rejection",
+  "formal_audit": "unset",
+  "next_action": "Complete final package identity confirmation and actual combined mechanical gates, then create review PR.",
+  "canonical_counts": {
+    "passed": 6651,
+    "failed": 0
+  },
+  "execution_review": "112 checks;120384 typed leaves;93 parent path identities",
+  "remaining": [
+    "final package confirmation",
+    "combined integration gate",
+    "PR"
+  ]
+}

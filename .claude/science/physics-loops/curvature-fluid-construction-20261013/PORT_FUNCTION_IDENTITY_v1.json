@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-13T11:46:49.340849+00:00",
+  "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/cosmology/direct_curvature_fluid_reconstruction/check_curvature_fluid_v2.py",
+  "original_sha256": "78a801465c3cdb7f580d144ac2b7df33dc92431a1232cf5fe2b1259962108fd8",
+  "canonical": "scripts/curvature_fluid_construction_2026_10_13.py",
+  "canonical_sha256": "3675d6d0aab39e3898c9d96bce321a7ff8460058b458f6ca9bcf68b72cdd17bb",
+  "identical_non_main_functions": [
+    "rat",
+    "val",
+    "fmt",
+    "check",
+    "near",
+    "exact",
+    "symbolic",
+    "metric_potential",
+    "rational_response",
+    "inverse_b",
+    "full_einstein_functions",
+    "full_n_rhs",
+    "additional_general_equation_controls"
+  ],
+  "role": "Direct parent port; only location, input cache declarations, command line/output handling and summary changed. Canonical execution pending.",
+  "port_diff": "PORT_v1.diff.gz",
+  "port_diff_content_sha256": "68129a8c42ea721bc3f4ecefbcf6ece7d81d2647dcc8a7fef1fe86a87176f237",
+  "preparation_whitespace": "Canonical EOF blank lines trimmed; original fixture JSON content and every function AST unchanged. Raw unified diff compressed losslessly to avoid context-line whitespace lint. Initial source copies and actual failure are preserved in campaign runtime curvature_milestone/preparation_v1."
+}

@@ -1,0 +1,95 @@
+{
+  "exclusions": [
+    {
+      "canonical_line": 149,
+      "context": "\nThe actual finite polynomial V^[N](c) has a fixed finite collection of\ninputs T_j f and coefficients equal to fixed weights times c^j, 0<=j<=N.\n",
+      "exact_line": "The actual finite polynomial V^[N](c) has a fixed finite collection of\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "4282b72723f572ca518742fca1eb5918c8ac39d02dc7178e18802ef34d5e9389"
+    },
+    {
+      "canonical_line": 176,
+      "context": "also contracts the L2 norm and preserves reality. Applying G3 to the\nalready checked local polynomial V_R^[N](c) proves uniform K_* and L_*\nfor this entire smooth-cutoff family. Its finite evenness, formal\n",
+      "exact_line": "already checked local polynomial V_R^[N](c) proves uniform K_* and L_*\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V_R^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "4282b72723f572ca518742fca1eb5918c8ac39d02dc7178e18802ef34d5e9389"
+    },
+    {
+      "canonical_line": 310,
+      "context": "Bounded Duhamel compares the same corrected kinetic generator plus W_c\nwith that generator plus V_R^[N](c), at density cost at most twice time\ntimes the displayed potential norm. Its two costs are O(epsilon_c).\n",
+      "exact_line": "with that generator plus V_R^[N](c), at density cost at most twice time\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V_R^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "7ab78b9db65646dacd073622f183857af82cb979231dce25b122e5e2c5a3246b"
+    },
+    {
+      "canonical_line": 327,
+      "context": "The explicit graph-regularity root composition proves, conditionally on\nits checked coefficient premises, that V_R^[N](c) has a uniformly bounded\nfirst commutator with F_c^[J] even for the radii E4. It retains momentum\n",
+      "exact_line": "its checked coefficient premises, that V_R^[N](c) has a uniformly bounded\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V_R^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "7ab78b9db65646dacd073622f183857af82cb979231dce25b122e5e2c5a3246b"
+    },
+    {
+      "canonical_line": 345,
+      "context": "formula follows from its own source inequality. The named energies remain\nH_c and H0; the effective generator is F_c^[J]+V_R^[N](c).\n\n",
+      "exact_line": "H_c and H0; the effective generator is F_c^[J]+V_R^[N](c).\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V_R^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "7ab78b9db65646dacd073622f183857af82cb979231dce25b122e5e2c5a3246b"
+    },
+    {
+      "canonical_line": 547,
+      "context": "words have zero differentiated sum. No division by a slot norm is involved,\nso zero slots cause no exception. For the actual V^[N](c), the h's are the\nfixed finite collection T_j f and the scalar weights are fixed numbers\n",
+      "exact_line": "so zero slots cause no exception. For the actual V^[N](c), the h's are the\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "41fdd517ab0e3a492acf04688f9633eb5f873f4265ea591bf88b3a46bbf0227a"
+    },
+    {
+      "canonical_line": 600,
+      "context": "Apply this cutoff after T_j, preserving each original word order and formal\nadjoint partner, in every coefficient of V^[N](c). The resulting V_R^[N](c)\nis bounded, selfadjoint and even, belongs to A_even(I_(R+w0)), and satisfies\n",
+      "exact_line": "adjoint partner, in every coefficient of V^[N](c). The resulting V_R^[N](c)\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V^[N](c). The resulting V_R^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "41fdd517ab0e3a492acf04688f9633eb5f873f4265ea591bf88b3a46bbf0227a"
+    },
+    {
+      "canonical_line": 766,
+      "context": "\nCompare on full low Fock space F_c^[J]+W_c and F_c^[J]+V_R^[N](c), using\nthe identical selfadjoint kinetic operator and domain in both. Bounded\n",
+      "exact_line": "Compare on full low Fock space F_c^[J]+W_c and F_c^[J]+V_R^[N](c), using\n",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "V_R^[N](c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "41fdd517ab0e3a492acf04688f9633eb5f873f4265ea591bf88b3a46bbf0227a"
+    },
+    {
+      "canonical_line": 468,
+      "context": "\nFor 0<R<Lambda_c put E_R=1_[0,R](H_c) and rho_R=E_R rho_c E_R. This is\nan unnormalized corner. Since every occupied high mode costs at least\n",
+      "exact_line": "For 0<R<Lambda_c put E_R=1_[0,R](H_c) and rho_R=E_R rho_c E_R. This is\n",
+      "note": "docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "1_[0,R](H_c)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "3110071920ca8ed270aae90a4588157da1de23e9a262da15da19bf00a2af6fce"
+    },
+    {
+      "canonical_line": 228,
+      "context": "merely its previously used first commutator: each actual T_j f is Schwartz;\nfor fixed J, e_c^[J](p)<=C<p>^(2J+1). A fixed-width smooth chi_R has all\nfixed derivative suprema bounded independently of R. Hence, for every\n",
+      "exact_line": "for fixed J, e_c^[J](p)<=C<p>^(2J+1). A fixed-width smooth chi_R has all\n",
+      "note": "docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "e_c^[J](p)",
+      "reason": "Exact finite-order potential, dispersion or spectral-projector notation; not a Markdown link. Only the named factor is excluded from lexical link scanning.",
+      "source_sha256": "d5a218cd25aa3a4479681cac8e18e12ba4ae9f6a92f7819d970195fa83eeebb0"
+    }
+  ],
+  "scope": "Ten source-bound contexts, with eleven mathematical target-shaped factors. No broad formula or broken-link exemption."
+}

@@ -1,0 +1,177 @@
+{
+  "actual_publication_lineage": {
+    "base": "bd831ffb14c7d7f12bf1b8165596a0db85f838ef",
+    "branch": "physics-loop/toe-prepared-energy-20261013",
+    "branch_receipt_sha256": "28f41b3d7ca74e5cbd86153eb9c4d3e18700155a6cbbd30ee38d8b92764e6af2",
+    "instruction_ref": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+    "parent_branch": "physics-loop/toe-corrected-dynamics-20261013",
+    "parent_completion_final_paths": 284,
+    "parent_completion_original_prepare_paths": 282,
+    "parent_completion_sha256": "2feab61d42727f6b7bcfa4b40fc55bc3312ff5e2d57775005fdc8963711eeb07",
+    "parent_pr": 9511,
+    "parent_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9511",
+    "root_reported_refresh_utc": "2026-10-13T06:28:53Z",
+    "scope": "Root supplied actual lineage; driver must enforce fresh local exact branch/base/main guards before any install.",
+    "utc": "2026-10-13T06:39:15.519318+00:00",
+    "worker_git_verification_performed": false
+  },
+  "archived_provisional_relations": [
+    {
+      "archive": "source_archive/sha256/622273759a10a8d69eb05d01363dddca23fcdfb4f0aa9ab7c994e98c45ae76fe/EFFECTIVE_POTENTIAL_SPATIAL_INDEPENDENT.md",
+      "from_key": "graph",
+      "relation": "provisional mathematical support; no new canonical parent node",
+      "sha256": "622273759a10a8d69eb05d01363dddca23fcdfb4f0aa9ab7c994e98c45ae76fe",
+      "source": "EFFECTIVE_POTENTIAL_SPATIAL_INDEPENDENT.md",
+      "use": "Fixed-input coefficient tails and explicit smooth local even-CAR approximation; exact comparison328 is archived."
+    },
+    {
+      "archive": "source_archive/sha256/34bf78f52b8928dacece75750ad8a881f4fe1b59f49dc943ced7bd9ed5b6dd38/FOURTH_MOMENT_ENDPOINT_INDEPENDENT.md",
+      "from_key": "graph",
+      "relation": "provisional mathematical support; no new canonical parent node",
+      "sha256": "34bf78f52b8928dacece75750ad8a881f4fe1b59f49dc943ced7bd9ed5b6dd38",
+      "source": "FOURTH_MOMENT_ENDPOINT_INDEPENDENT.md",
+      "use": "Stationary output fourth-moment conversion and endpoint transfer; exact comparison505 is archived."
+    },
+    {
+      "archive": "source_archive/sha256/c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd/SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "from_key": "nonautonomous",
+      "relation": "provisional mathematical support; no new canonical parent node",
+      "sha256": "c69d638eb4519d81e51dd39fd920b7323d320d5aea9c427ff109736bdcda75dd",
+      "source": "SMOOTH_HIGH_BAND_DECOUPLING_INDEPENDENT.md",
+      "use": "Fixed free high-vacuum and smooth input high-tail bounds; original scoped source coverage is preserved."
+    },
+    {
+      "archive": "source_archive/sha256/c650d117e910cf6fad171a83c4ef2fca7e83c3e98103ef80b167e8751e84bb67/LOW_BLOCK_EFFECTIVE_DYNAMICS_INDEPENDENT.md",
+      "from_key": "nonautonomous",
+      "relation": "provisional mathematical support; no new canonical parent node",
+      "sha256": "c650d117e910cf6fad171a83c4ef2fca7e83c3e98103ef80b167e8751e84bb67",
+      "source": "LOW_BLOCK_EFFECTIVE_DYNAMICS_INDEPENDENT.md",
+      "use": "Exact low compression and full-low unital extension; no stationary quadratic gap estimate imported to BV."
+    },
+    {
+      "archive": "source_archive/sha256/039d114bbfc9c90510975ac1383264a06b3aae467ad7e6c90ce6a059d3bd0dc2/BV_LOCAL_ENERGY_ENDPOINT_CROSSCHECK.md",
+      "from_key": "higher",
+      "relation": "provisional mathematical support; no new canonical parent node",
+      "sha256": "039d114bbfc9c90510975ac1383264a06b3aae467ad7e6c90ce6a059d3bd0dc2",
+      "source": "BV_LOCAL_ENERGY_ENDPOINT_CROSSCHECK.md",
+      "use": "Actual smoothly localized BV target and output moment/norm comparison; separate precision and acceptance archived."
+    }
+  ],
+  "branch_lineage_is_mathematical_edge": false,
+  "historical_publication_lineage_verbatim": {
+    "is_mathematical_edge": false,
+    "known_prior_base": "8c88ed444f104bfd482c5886d28d7b09f68c6c1b",
+    "known_prior_regular_pr": 9510,
+    "new_milestone_base_head_branch_pr": null,
+    "pending_parent_branch": "physics-loop/toe-corrected-dynamics-20261013"
+  },
+  "parents": [
+    {
+      "bytes": 31832,
+      "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+      "historical_binding_verbatim": {
+        "claim_id": "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff",
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "status": "existing canonical source; status not promoted"
+      },
+      "key": "current",
+      "path": "docs/CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "763082a6faa8bea3f6be74ddc7ee81bf288c00740085804e62f701a1576283ff"
+    },
+    {
+      "bytes": 53905,
+      "claim_id": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+      "historical_binding_verbatim": {
+        "claim_id": "corrected_dispersion_bounded_theorem_note_2026-10-13",
+        "path": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089",
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_publication_preparation/payload/docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "status": "frozen publication projection; installation and PR pending root execution; no future head/PR asserted"
+      },
+      "key": "kinetic",
+      "path": "docs/CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "e5c68e039758eb272e4207ef80f4b2e4cacaae13e165df2335d3f7dd5e604778",
+      "original_published_sha256": "8e01914fc50ae90775b7336cfac3fba60e36ddb77948e681b2165498c65e3089",
+      "original_bytes": 53254,
+      "integration_scope": "Original analytic content preserved; reviewed publication link/citation/formatting and provenance repairs. No audit authority."
+    },
+    {
+      "bytes": 36376,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "historical_binding_verbatim": {
+        "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "status": "existing canonical source; status not promoted"
+      },
+      "key": "local",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa"
+    },
+    {
+      "bytes": 41409,
+      "claim_id": "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13",
+      "historical_binding_verbatim": {
+        "claim_id": "moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13",
+        "path": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f",
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_publication_preparation/payload/docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "status": "frozen publication projection; installation and PR pending root execution; no future head/PR asserted"
+      },
+      "key": "moment",
+      "path": "docs/MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "d248efdbd41f55994bb91463bee2a52c0b8b79ecf79833630daf3006cecc6229",
+      "original_published_sha256": "0da8c65272573b53248e47ab572e06e03f317c71dd70dd72f4d5ccbf62aed42f",
+      "original_bytes": 40821,
+      "integration_scope": "Original analytic content preserved; reviewed publication link/citation/formatting and provenance repairs. No audit authority."
+    },
+    {
+      "bytes": 36790,
+      "claim_id": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+      "historical_binding_verbatim": {
+        "claim_id": "explicit_effective_potential_bounded_theorem_note_2026-10-13",
+        "path": "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9",
+        "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/corrected_dynamics_publication_preparation/payload/docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+        "status": "frozen publication projection; installation and PR pending root execution; no future head/PR asserted"
+      },
+      "key": "potential",
+      "path": "docs/EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "c555498d690499aaf26b0f5eedbea6c2c573d30adef7e99afdb5e064ef22e568",
+      "original_published_sha256": "42f5cc241c9ee6f110f1c1970204f767319132088b6c05c59f66aa65eef1e1a9",
+      "original_bytes": 36202,
+      "integration_scope": "Original analytic content preserved; reviewed publication link/citation/formatting and provenance repairs. No audit authority."
+    }
+  ],
+  "same_packet_parents": [
+    {
+      "dependent": "higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13",
+      "parent": "smooth_preparation_moments_bounded_theorem_note_2026-10-13",
+      "path": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "5b59bbe7cd1a29c5555bd3fe1b17346ffd8c55acb2f591f3b1b03d5470d6b719",
+      "original_published_sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "integration_scope": "Original analytic content preserved; reviewed publication link/citation/formatting and provenance repairs. No audit authority."
+    },
+    {
+      "dependent": "higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13",
+      "parent": "nonautonomous_corrected_dynamics_bounded_theorem_note_2026-10-13",
+      "path": "docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "d84efa4c1b614d4f417da4ab59e295ec330f555e79331586b10bc0a4915bca06",
+      "original_published_sha256": "d6644746d0b41b93457e056739a8b7963dee377ef01314d15274ae324b1d7590",
+      "integration_scope": "Original analytic content preserved; reviewed publication link/citation/formatting and provenance repairs. No audit authority."
+    },
+    {
+      "dependent": "higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13",
+      "parent": "effective_potential_graph_local_endpoint_bounded_theorem_note_2026-10-13",
+      "path": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "1ec14f30c500d40f3ceda47d9cabb35444cb366741ad5e7764fa69ff43807ed2",
+      "original_published_sha256": "68fc78e350bd4ca4365b39efe2af1f070b2bafce822c2051c79073af4bd0876b",
+      "integration_scope": "Original analytic content preserved; reviewed publication link/citation/formatting and provenance repairs. No audit authority."
+    }
+  ],
+  "integration_main": "544cd8b2a7e7760837c1c2a70f96486d42380c26"
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "Actual extracted CLI and output statements with synthetic results only. Repeated default output and explicit --out overwrite are intentional; no exclusive-sidecar claim is made.",
+  "rows": [
+    {
+      "iteration": 0,
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/io_controls/RESULTS.json",
+      "exit_code": 0,
+      "stdout": "Conditional action: 360 ideal-orbit rows, 72 local Hessians, 72 full off-trajectory equation states, four integrated histories.\nMeasured-G normalization and supplied PPN/ideal-species diagnostics are conditional bridges; b=k is calibration, not a prediction.\nTOTAL: PASS=1 FAIL=0\n",
+      "result": {
+        "counts": {
+          "passed": 1,
+          "failed": 0
+        },
+        "synthetic_fixture_only": 0
+      }
+    },
+    {
+      "iteration": 1,
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/io_controls/RESULTS.json",
+      "exit_code": 0,
+      "stdout": "Conditional action: 360 ideal-orbit rows, 72 local Hessians, 72 full off-trajectory equation states, four integrated histories.\nMeasured-G normalization and supplied PPN/ideal-species diagnostics are conditional bridges; b=k is calibration, not a prediction.\nTOTAL: PASS=2 FAIL=0\n",
+      "result": {
+        "counts": {
+          "passed": 2,
+          "failed": 0
+        },
+        "synthetic_fixture_only": 1
+      }
+    },
+    {
+      "iteration": 2,
+      "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/independent_source_review/io_controls/CUSTOM.json",
+      "exit_code": 1,
+      "stdout": "Conditional action: 360 ideal-orbit rows, 72 local Hessians, 72 full off-trajectory equation states, four integrated histories.\nMeasured-G normalization and supplied PPN/ideal-species diagnostics are conditional bridges; b=k is calibration, not a prediction.\nTOTAL: PASS=0 FAIL=1\n",
+      "result": {
+        "counts": {
+          "passed": 0,
+          "failed": 1
+        },
+        "synthetic_fixture_only": 2
+      }
+    }
+  ]
+}

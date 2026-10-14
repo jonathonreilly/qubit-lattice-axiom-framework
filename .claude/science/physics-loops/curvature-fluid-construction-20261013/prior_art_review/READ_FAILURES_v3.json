@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-13T11:58:26.160610+00:00",
+  "previous_record": {
+    "path": "/Users/jonBridger/.codex/worktrees/curvature-fluid-construction-20261013/New Axioms Lets Go/.claude/science/physics-loops/curvature-fluid-construction-20261013/prior_art_review/READ_FAILURES_v2.json",
+    "sha256": "9b066b80a22002a61257389fff4f29cf00415aad409e8d0a81789e0f55d5e710",
+    "bytes": 1539
+  },
+  "attempts": [
+    {
+      "script": "collect_changed_pr_sources_v1.py",
+      "exit_code": 1,
+      "actual_error": "RuntimeError: Pagination needed; preserve this partial file inventory.",
+      "preserved_partial": "commands/PR9512_FILES_v1.json",
+      "preserved_receipt": "CHANGED_PR_COLLECTION_v1.json",
+      "resolution": "New v2 collector uses gh api --paginate --slurp and retains the original partial attempt. No old file overwritten.",
+      "scientific_test_failure": false
+    },
+    {
+      "command_type": "Inline Python read using an incorrectly reconstructed snapshot path",
+      "time_observed_utc": "2026-10-13 11:49:15 UTC",
+      "exit_code": 1,
+      "actual_error": "FileNotFoundError: source_snapshot/main/docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "resolution": "Located and completely read requested ranges and full-file keyword hits from source_snapshot/main/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md; exact source SHA unchanged.",
+      "scientific_test_failure": false
+    },
+    {
+      "command_type": "Inline Python inspection of prior canonical review evidence",
+      "exit_code": 1,
+      "actual_error": "FileNotFoundError: independent_source_review/FINAL_RECEIPT_v1.json",
+      "resolution": "Directory inventory supplied the correct RECEIPT_v1.json name. It and FINAL_BINDING_v1.json were read, the full original report re-read, and their exact receipt bindings verified.",
+      "scientific_test_failure": false
+    }
+  ],
+  "all_read_errors_resolved": true,
+  "no_scientific_execution": true
+}

@@ -1,0 +1,347 @@
+{
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/proposed/docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "64b53e49285ed5c32602629756fd4975fae477892ae8e301e52fcbe7579fdd53",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/preparation.publication.diff.gz",
+      "diff_sha256": "bedfdd02133a25a490ba8120eb47d144fc6da392eba4200591c5b04663e31726",
+      "diff_stored_sha256": "84b643f3211544f9686b37582a2982eadf6d8a63bf4f900538100dd59a1453f3",
+      "key": "preparation",
+      "note": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 4197,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 73,
+          "sha256": "de3cf0a5dbba6b4b47d69f37c2e1a4f16daad8c9be565bf1cfff2692cf8e9845",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/preparation_header.md",
+          "source_sha256": "d44f11b0f004c81ed500e19eb7b8009c890bfdc7a873a47e8c16b36a29071559",
+          "text": "---\ntitle: \"Smooth preparation moments with explicit resources\"\nclaim_id: smooth_preparation_moments_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_prepared_root_review_and_runtime_pending\nrunner: scripts/smooth_preparation_moments_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied one-dimensional carrier, smooth finite inputs and the exact moment, commutator, variation and state hypotheses of the preserved cores; all provisional parents remain conditional.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Ordinarily accepted conditional source argument, preserved without core edits; source integrity is not analytic verification.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers and tooling, followed by separately recorded prepare and verify; cumulative review and independent retained audit remain later obligations.\"\nsource_assembly: prepared_energy_source_assembly\nupstream_dependencies:\n  - corrected_dispersion_bounded_theorem_note_2026-10-13\n  - moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n---\n\n# Smooth preparation moments with explicit resources\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support; source assembly accepted, publication review and runtime pending.\n\n## Source integration and scope\n\nThe selected source proves fixed finite free-energy moments for actual smooth\ncell-CAR preparation under explicit spatial commutator and temporal integral\nresources. Its stationary output application uses the prepared state's actual\nlow marginal. It does not establish a continuing BV output theorem or selection\nof one fixed continuum density. Uniform moment bounds require uniform resources;\nfiniteness and smoothness separately at each spacing are insufficient.\n\nThe original proof and its root comparison are ordinarily accepted at the exact\nidentities below. The original plan timing and prior source exposure stay in\nforce: preliminary outgoing previews preceded the written seal, as recorded in\nAUTHOR_READ_AND_CHECK.md. This assembly is source integration after that work,\nnot another independent preparation derivation.\n\n## Direct proposed dependencies\n\n- [corrected_dispersion_bounded_theorem_note_2026-10-13](CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md): positive corrected kinetic construction and actual field-commutator resources.\n- [moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13](MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md): stationary moment-sensitive density comparison used in the output application.\n- [current_preserving_refinement_bounded_theorem_note_2026-10-12](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md): actual real cell-to-band placement used in the protocol and countercontrol.\n- [local_even_continuum_bounded_theorem_note_2026-10-12](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md): literal real-CAR creation and even observable conventions.\n\nThese direct support edges propose no retained-status change. The three\ncorrected-dynamics parent notes are installed on the exact parent head\nbd831ffb14c7d7f12bf1b8165596a0db85f838ef, regular PR 9511.\nThe publication driver must recheck those bytes before installation.\nSame-packet premises are carried below; existing carrier parents retain\ntheir status. Branch lineage is separate from mathematical dependence.\n\n## Exact historical core begins\n\nAll text through the marked end is copied byte-for-byte from the selected\nsource body; its original historical status is not the status of this assembly.\n\n",
+          "wrapper_path": "wrappers/preparation_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 4197,
+          "bytes": 27016,
+          "first_line": 74,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 607,
+          "sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/body_copies/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+          "source_sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1"
+        },
+        {
+          "byte_offset": 31213,
+          "bytes": 3804,
+          "first_line": 608,
+          "kind": "publication_wrapper",
+          "last_line": 658,
+          "sha256": "167179da838711dbc873b40abf316bbed4af324310bcb515e2f227e6c3ecdaf3",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/preparation_appendix.md",
+          "source_sha256": "4af8cc6b639c0adf185c2b16fbe59e25bde41953a7c73fce96473cdd822fbbf1",
+          "text": "\n\n## End of exact historical core; assembly evidence\n\nThe selected source bytes, original freezes, complete accepted comparisons,\nprecisions, exposure records and failure records are preserved in the bounded\nsource archive. `SOURCE_IDENTITIES.json` resolves every selected source alias\nto its exact content-addressed archive path. `BODY_COPY_MANIFEST.json` and\n`LINE_PIECE_MAP.json` give byte intervals and line ranges; complete assembly\nand new-file diffs are separate from the empty core-change diffs.\n\nSelected core identities:\n\n- `SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md`: `390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1`.\n\nExact ordinary acceptance/comparison/precision records:\n\n- `SMOOTH_PREPARATION_MOMENTS_ROOT_COMPARISON.md`: `25a10184baddd2e077b38985d469d606b567c0d024639b6e9e4a4e5e9b430bc1`.\n- `SMOOTH_PREPARATION_MOMENTS_ROOT_ACCEPTANCE.json`: `fab7308a45eea59fb727475fc2d2eae65947a13b434384e2d5906eda1c5c68a3`.\n\nThis new wrapper neither repairs an original mathematical body nor relabels\na historical source-exposed comparison as independent work. Historical pending,\nfalse and limited-coverage fields stay unchanged in their original files.\nThe later exact acceptance is recorded alongside them, never inserted into\nthose files. All scopes and precisions remain attached to their exact sources.\n\n`DEPENDENCY_REGISTRY.json` distinguishes direct canonical or same-packet\nsupport, archived provisional premises, method/context ancestry and mere branch\nlineage. `PROVENANCE_CLOSURE.json` closes the member lists of seven named freezes;\nreferences inside those lists do not imply recursive proof or archive closure.\nNo finite-history, observable687 or new all-time result belongs to this note.\n\nRoot accepted the exact source assembly at its separate source review.\nThis publication projection changes wrappers only; the original package\nand all its pending, false, failure and exposure records remain literal\narchived bytes. The [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/SOURCE_RECOVERY.md)\nbinds every immediate member of the accepted source freeze.\nThe [identity-only runner](../scripts/smooth_preparation_moments_identity_2026_10_13.py) verifies source bytes,\nmaps and reconstruction. It executes zero mathematical predicates and\nsupplies no analytic, formal, model-diverse, retained-audit or no-go status.\nPublication preparation may test it only in a temporary noncanonical\nroot. Such scratch results are separate from later canonical execution.\nThe [block handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/HANDOFF.md) and\n[review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/REVIEW_HISTORY.md) distinguish\nsource preparation from root-owned installation, caches, graph and\nstaged compatibility checks. New publication review and those checks\nremain pending in this frozen source projection. N1/N5 remain pending\nwhere applicable. Editable prompt files changed: none.\n\n\nReview-loop integration note: dependencies are integrated through main 544cd8b2a7e7760837c1c2a70f96486d42380c26 and this reviewed preparation/energy batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/preparation_appendix.md"
+        }
+      ],
+      "published_bytes": 35017,
+      "published_sha256": "5b59bbe7cd1a29c5555bd3fe1b17346ffd8c55acb2f591f3b1b03d5470d6b719"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/proposed/docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "17629db1ccf576fe1e6b677cfb3f177ce1e6e801132ed0ba1e90edf8d8046217",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/graph.publication.diff.gz",
+      "diff_sha256": "54655ba833b9ce4d1f07f768bf4dbdb3237e923eac142fccc8cfceae2f0d3c78",
+      "diff_stored_sha256": "9a8de14b3b2612604c3ef81372cb9472a0d4cdda8f588417f6169ea799012f3f",
+      "key": "graph",
+      "note": "docs/EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 4933,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 82,
+          "sha256": "32f7fa3a4c858bae91654c287de77a9f9d9fd2c92b8b12c7894b48fde9b33440",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_header.md",
+          "source_sha256": "8f27b1f66b00e96a4c6481ff8830111d921e2d5e17cf559156ecb070832e5292",
+          "text": "---\ntitle: \"Actual potential graph regularity and localized endpoint applicability\"\nclaim_id: effective_potential_graph_local_endpoint_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_prepared_root_review_and_runtime_pending\nrunner: scripts/effective_potential_graph_local_endpoint_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied one-dimensional carrier, smooth finite inputs and the exact moment, commutator, variation and state hypotheses of the preserved cores; all provisional parents remain conditional.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Ordinarily accepted conditional source argument, preserved without core edits; source integrity is not analytic verification.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers and tooling, followed by separately recorded prepare and verify; cumulative review and independent retained audit remain later obligations.\"\nsource_assembly: prepared_energy_source_assembly\nupstream_dependencies:\n  - explicit_effective_potential_bounded_theorem_note_2026-10-13\n  - corrected_dispersion_bounded_theorem_note_2026-10-13\n  - moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n---\n\n# Actual potential graph regularity and localized endpoint applicability\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support; source assembly accepted, publication review and runtime pending.\n\n## Source integration and scope\n\nThis candidate collects two original root compositions and the complete\nsource-exposed check that tested them. The three bodies are reproduced in their\noriginal order of role: graph regularity, localized stationary endpoints, then\nadversarial checking. Their titles, historical pending fields and exposure claims\nremain literal source text. The collected note is not a new independent proof.\n\nThe conditional scope is the actual fixed finite effective-potential coefficients,\nreal even-CAR domains and commutators, uniform smooth-cutoff estimates, and the\nlocalized endpoint application on the supplied physical/full-low carriers.\nConstants retain fixed-order and fixed-input dependence. Exact local support is\nasserted for the cut-off potential; the original coefficients have the stated\ntails. The same-kinetic potential comparison does not establish finite-speed\npropagation of the kinetic dynamics or exact locality of its full evolution.\n\nThe separate accepted precision reads G5's integer k as a nonnegative integer.\nThe N=0 tail is valid but cannot meet the displayed endpoint choice when a>=2;\nthe N=1 choice is available for J=0. These are the archived check's precisions,\nnot edits to either original composition.\n\n## Direct proposed dependencies\n\n- [explicit_effective_potential_bounded_theorem_note_2026-10-13](EXPLICIT_EFFECTIVE_POTENTIAL_BOUNDED_THEOREM_NOTE_2026-10-13.md): actual finite-order coefficient construction and compression conventions.\n- [corrected_dispersion_bounded_theorem_note_2026-10-13](CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md): global corrected kinetic multiplication domains and growth.\n- [moment_sensitive_corrected_dynamics_bounded_theorem_note_2026-10-13](MOMENT_SENSITIVE_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md): stationary initial-moment/density comparison in the endpoint composition.\n- [current_preserving_refinement_bounded_theorem_note_2026-10-12](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md): actual carrier and real-field normalization.\n- [local_even_continuum_bounded_theorem_note_2026-10-12](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md): even-CAR normalization and local algebra conventions.\n\nThese direct support edges propose no retained-status change. The three\ncorrected-dynamics parent notes are installed on the exact parent head\nbd831ffb14c7d7f12bf1b8165596a0db85f838ef, regular PR 9511.\nThe publication driver must recheck those bytes before installation.\nSame-packet premises are carried below; existing carrier parents retain\ntheir status. Branch lineage is separate from mathematical dependence.\n\n## Exact historical core begins\n\nEach mapped core segment below is copied byte-for-byte from its selected\nsource. The two labeled interludes are new wrappers, not part of those cores.\nOriginal historical statuses are not the status of this assembly.\n\n",
+          "wrapper_path": "wrappers/graph_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 4933,
+          "bytes": 8089,
+          "first_line": 83,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 236,
+          "sha256": "4282b72723f572ca518742fca1eb5918c8ac39d02dc7178e18802ef34d5e9389",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/body_copies/EFFECTIVE_POTENTIAL_GRAPH_REGULARITY_ROOT_COMPOSITION.md",
+          "source_sha256": "4282b72723f572ca518742fca1eb5918c8ac39d02dc7178e18802ef34d5e9389"
+        },
+        {
+          "byte_offset": 13022,
+          "bytes": 202,
+          "first_line": 237,
+          "kind": "publication_wrapper",
+          "last_line": 243,
+          "sha256": "cd268e66e306b243230ef750db43bee0eb494efa44f4221e752e1866abbb19ee",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_between_1.md",
+          "source_sha256": "cd268e66e306b243230ef750db43bee0eb494efa44f4221e752e1866abbb19ee",
+          "text": "\n\n## Second exact historical core: localized endpoint root\n\nThe first composition ends above. The following separate endpoint composition\nis reproduced without mathematical or historical-status edits.\n\n",
+          "wrapper_path": "wrappers/graph_between_1.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 13224,
+          "bytes": 6292,
+          "first_line": 244,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 369,
+          "sha256": "7ab78b9db65646dacd073622f183857af82cb979231dce25b122e5e2c5a3246b",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/body_copies/MOMENT_LOCAL_ENDPOINT_ROOT_COMPOSITION.md",
+          "source_sha256": "7ab78b9db65646dacd073622f183857af82cb979231dce25b122e5e2c5a3246b"
+        },
+        {
+          "byte_offset": 19516,
+          "bytes": 212,
+          "first_line": 370,
+          "kind": "publication_wrapper",
+          "last_line": 376,
+          "sha256": "f22a85900549aed7ecf637357413c235b121deb5c34e0df6e409980dde2701c8",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_between_2.md",
+          "source_sha256": "f22a85900549aed7ecf637357413c235b121deb5c34e0df6e409980dde2701c8",
+          "text": "\n\n## Third exact historical core: source-exposed crosscheck\n\nThe second composition ends above. The following complete check examined both\nroots after exposure. It is not an independent pre-exposure derivation.\n\n",
+          "wrapper_path": "wrappers/graph_between_2.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 19728,
+          "bytes": 31976,
+          "first_line": 377,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 961,
+          "sha256": "41fdd517ab0e3a492acf04688f9633eb5f873f4265ea591bf88b3a46bbf0227a",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/body_copies/EFFECTIVE_POTENTIAL_GRAPH_ENDPOINT_CROSSCHECK.md",
+          "source_sha256": "41fdd517ab0e3a492acf04688f9633eb5f873f4265ea591bf88b3a46bbf0227a"
+        },
+        {
+          "byte_offset": 51704,
+          "bytes": 4100,
+          "first_line": 962,
+          "kind": "publication_wrapper",
+          "last_line": 1014,
+          "sha256": "385813f24d036bf4d5b575396151895f43d038ab0aeb74b822873ce5a4e3202a",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_appendix.md",
+          "source_sha256": "cc43fc44133dd1c42db5a35938fcf35dbb5882d37bdc06d7e556dbdf97df7e81",
+          "text": "\n\n## End of exact historical core; assembly evidence\n\nThe selected source bytes, original freezes, complete accepted comparisons,\nprecisions, exposure records and failure records are preserved in the bounded\nsource archive. `SOURCE_IDENTITIES.json` resolves every selected source alias\nto its exact content-addressed archive path. `BODY_COPY_MANIFEST.json` and\n`LINE_PIECE_MAP.json` give byte intervals and line ranges; complete assembly\nand new-file diffs are separate from the empty core-change diffs.\n\nSelected core identities:\n\n- `EFFECTIVE_POTENTIAL_GRAPH_REGULARITY_ROOT_COMPOSITION.md`: `4282b72723f572ca518742fca1eb5918c8ac39d02dc7178e18802ef34d5e9389`.\n- `MOMENT_LOCAL_ENDPOINT_ROOT_COMPOSITION.md`: `7ab78b9db65646dacd073622f183857af82cb979231dce25b122e5e2c5a3246b`.\n- `EFFECTIVE_POTENTIAL_GRAPH_ENDPOINT_CROSSCHECK.md`: `41fdd517ab0e3a492acf04688f9633eb5f873f4265ea591bf88b3a46bbf0227a`.\n\nExact ordinary acceptance/comparison/precision records:\n\n- `EFFECTIVE_POTENTIAL_GRAPH_ENDPOINT_ROOT_ACCEPTANCE.json`: `91e59c40a122d16d3d5175c2eef225084f029a1ad4bdd9732e07da487263843b`.\n- `effective_potential_graph_endpoint_crosscheck/PRECISION_RECORD.json`: `77c78b18dd8bcc1eed1d4de01e48764a0f8ec84d5a3dbada4005eff40b0278b8`.\n\nThis new wrapper neither repairs an original mathematical body nor relabels\na historical source-exposed comparison as independent work. Historical pending,\nfalse and limited-coverage fields stay unchanged in their original files.\nThe later exact acceptance is recorded alongside them, never inserted into\nthose files. All scopes and precisions remain attached to their exact sources.\n\n`DEPENDENCY_REGISTRY.json` distinguishes direct canonical or same-packet\nsupport, archived provisional premises, method/context ancestry and mere branch\nlineage. `PROVENANCE_CLOSURE.json` closes the member lists of seven named freezes;\nreferences inside those lists do not imply recursive proof or archive closure.\nNo finite-history, observable687 or new all-time result belongs to this note.\n\nRoot accepted the exact source assembly at its separate source review.\nThis publication projection changes wrappers only; the original package\nand all its pending, false, failure and exposure records remain literal\narchived bytes. The [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/SOURCE_RECOVERY.md)\nbinds every immediate member of the accepted source freeze.\nThe [identity-only runner](../scripts/effective_potential_graph_local_endpoint_identity_2026_10_13.py) verifies source bytes,\nmaps and reconstruction. It executes zero mathematical predicates and\nsupplies no analytic, formal, model-diverse, retained-audit or no-go status.\nPublication preparation may test it only in a temporary noncanonical\nroot. Such scratch results are separate from later canonical execution.\nThe [block handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/HANDOFF.md) and\n[review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/REVIEW_HISTORY.md) distinguish\nsource preparation from root-owned installation, caches, graph and\nstaged compatibility checks. New publication review and those checks\nremain pending in this frozen source projection. N1/N5 remain pending\nwhere applicable. Editable prompt files changed: none.\n\n\nReview-loop integration note: dependencies are integrated through main 544cd8b2a7e7760837c1c2a70f96486d42380c26 and this reviewed preparation/energy batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/graph_appendix.md"
+        }
+      ],
+      "published_bytes": 55804,
+      "published_sha256": "1ec14f30c500d40f3ceda47d9cabb35444cb366741ad5e7764fa69ff43807ed2"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/proposed/docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "2e42e051c902345872bab13a1abdcb975e89017097c9ec5a2a72b9b264a64ee0",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/nonautonomous.publication.diff.gz",
+      "diff_sha256": "eead85654cc9a7b9112fb05bf123cca12bda7c8a35ee575a7550d6b852a112ba",
+      "diff_stored_sha256": "4db68033ef4e3e076474c5c39440c0446110a8e3bef659d138c380c06a58dd70",
+      "key": "nonautonomous",
+      "note": "docs/NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 4194,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 77,
+          "sha256": "9ff1d06330ff2a4908b419598477ecd581393e3c715f7220ddb027746344f850",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/nonautonomous_header.md",
+          "source_sha256": "72106da9b7294792f05e8a34e70965edfd4167be234901840d05f7c552e3b7d4",
+          "text": "---\ntitle: \"Nonautonomous finite-order corrected dynamics\"\nclaim_id: nonautonomous_corrected_dynamics_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_prepared_root_review_and_runtime_pending\nrunner: scripts/nonautonomous_corrected_dynamics_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied one-dimensional carrier, smooth finite inputs and the exact moment, commutator, variation and state hypotheses of the preserved cores; all provisional parents remain conditional.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Ordinarily accepted conditional source argument, preserved without core edits; source integrity is not analytic verification.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers and tooling, followed by separately recorded prepare and verify; cumulative review and independent retained audit remain later obligations.\"\nsource_assembly: prepared_energy_source_assembly\nupstream_dependencies:\n  - corrected_dispersion_bounded_theorem_note_2026-10-13\n  - current_preserving_refinement_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n---\n\n# Nonautonomous finite-order corrected dynamics\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support; source assembly accepted, publication review and runtime pending.\n\n## Source integration and scope\n\nThe selected source supplies a conditional BV-control theorem on the actual\nphysical-band carrier and a distinct full-low corrected target. It uses the\nfixed free high-vacuum projection, explicit graph/commutator resources and the\nexact unital compressed potential, including high-vacuum contractions.\n\nIts variation dependence is polynomial at each fixed graph order. The older\nroot exponential bounds remain valid. The nonautonomous high-block estimate\nis linear in the integrated off-diagonal norm; a stationary quadratic high-gap\nimprovement is not asserted for arbitrary BV controls. Initial moments, actual\nspectral-cutoff admissibility, variation, amplitudes and time resources remain\nexplicit. State-family countercontrols do not establish preparation by one\nfixed smooth protocol.\n\nThe source's bounded-potential replacement statement requires an independently\nsupplied integrable norm error; it transfers no graph bounds by itself. The\nactual localized-potential application is supplied separately by the graph and\nBV/local sources named in the registry. The accepted comparison's original\nexclusion of explicit-potential/spatial bodies is preserved.\n\n## Direct proposed dependencies\n\n- [corrected_dispersion_bounded_theorem_note_2026-10-13](CORRECTED_DISPERSION_BOUNDED_THEOREM_NOTE_2026-10-13.md): positive corrected kinetic bound, domains and field commutators.\n- [current_preserving_refinement_bounded_theorem_note_2026-10-12](CURRENT_PRESERVING_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md): explicitly supplied physical-band Fock placement.\n- [local_even_continuum_bounded_theorem_note_2026-10-12](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md): explicitly supplied real-field normalization and grading.\n\nThese direct support edges propose no retained-status change. The three\ncorrected-dynamics parent notes are installed on the exact parent head\nbd831ffb14c7d7f12bf1b8165596a0db85f838ef, regular PR 9511.\nThe publication driver must recheck those bytes before installation.\nSame-packet premises are carried below; existing carrier parents retain\ntheir status. Branch lineage is separate from mathematical dependence.\n\n## Exact historical core begins\n\nAll text through the marked end is copied byte-for-byte from the selected\nsource body; its original historical status is not the status of this assembly.\n\n",
+          "wrapper_path": "wrappers/nonautonomous_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 4194,
+          "bytes": 41287,
+          "first_line": 78,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 851,
+          "sha256": "3110071920ca8ed270aae90a4588157da1de23e9a262da15da19bf00a2af6fce",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/body_copies/NONAUTONOMOUS_CORRECTED_DYNAMICS_INDEPENDENT.md",
+          "source_sha256": "3110071920ca8ed270aae90a4588157da1de23e9a262da15da19bf00a2af6fce"
+        },
+        {
+          "byte_offset": 45481,
+          "bytes": 4092,
+          "first_line": 852,
+          "kind": "publication_wrapper",
+          "last_line": 904,
+          "sha256": "8a89da586ed852c455d8aab342967d368604761d13bc2d8fdc38c6bf3b0e07bc",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/nonautonomous_appendix.md",
+          "source_sha256": "6c6141b79605102354484ffb94e7ddf1233758a080d28df4bf75092cc97f2720",
+          "text": "\n\n## End of exact historical core; assembly evidence\n\nThe selected source bytes, original freezes, complete accepted comparisons,\nprecisions, exposure records and failure records are preserved in the bounded\nsource archive. `SOURCE_IDENTITIES.json` resolves every selected source alias\nto its exact content-addressed archive path. `BODY_COPY_MANIFEST.json` and\n`LINE_PIECE_MAP.json` give byte intervals and line ranges; complete assembly\nand new-file diffs are separate from the empty core-change diffs.\n\nSelected core identities:\n\n- `NONAUTONOMOUS_CORRECTED_DYNAMICS_INDEPENDENT.md`: `3110071920ca8ed270aae90a4588157da1de23e9a262da15da19bf00a2af6fce`.\n\nExact ordinary acceptance/comparison/precision records:\n\n- `NONAUTONOMOUS_CORRECTED_DYNAMICS_ROOT_ACCEPTANCE.json`: `50c0c6b5ade51c0abdf12a69852cff15897add19942cfa2fcd62bb01b06edbe6`.\n- `NONAUTONOMOUS_CORRECTED_DYNAMICS_CROSSCHECK.md`: `8c92f6c7e2f14cceee320db7ee23c7d21a62815364f5d428f080b747072a75bc`.\n- `NONAUTONOMOUS_CORRECTED_DYNAMICS_CROSSCHECK_ROOT_ACCEPTANCE.json`: `f4a30fa92ec2f9bcd3aa114c85aeefdda6160640f0fe4ac2dd50e77f991a4fd2`.\n- `nonautonomous_corrected_dynamics_crosscheck/PRECISIONS.md`: `e183a2ac78bafc4094774fdb04865d50bd14f23961f7e892056a3c0cde95b1b9`.\n\nThis new wrapper neither repairs an original mathematical body nor relabels\na historical source-exposed comparison as independent work. Historical pending,\nfalse and limited-coverage fields stay unchanged in their original files.\nThe later exact acceptance is recorded alongside them, never inserted into\nthose files. All scopes and precisions remain attached to their exact sources.\n\n`DEPENDENCY_REGISTRY.json` distinguishes direct canonical or same-packet\nsupport, archived provisional premises, method/context ancestry and mere branch\nlineage. `PROVENANCE_CLOSURE.json` closes the member lists of seven named freezes;\nreferences inside those lists do not imply recursive proof or archive closure.\nNo finite-history, observable687 or new all-time result belongs to this note.\n\nRoot accepted the exact source assembly at its separate source review.\nThis publication projection changes wrappers only; the original package\nand all its pending, false, failure and exposure records remain literal\narchived bytes. The [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/SOURCE_RECOVERY.md)\nbinds every immediate member of the accepted source freeze.\nThe [identity-only runner](../scripts/nonautonomous_corrected_dynamics_identity_2026_10_13.py) verifies source bytes,\nmaps and reconstruction. It executes zero mathematical predicates and\nsupplies no analytic, formal, model-diverse, retained-audit or no-go status.\nPublication preparation may test it only in a temporary noncanonical\nroot. Such scratch results are separate from later canonical execution.\nThe [block handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/HANDOFF.md) and\n[review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/REVIEW_HISTORY.md) distinguish\nsource preparation from root-owned installation, caches, graph and\nstaged compatibility checks. New publication review and those checks\nremain pending in this frozen source projection. N1/N5 remain pending\nwhere applicable. Editable prompt files changed: none.\n\n\nReview-loop integration note: dependencies are integrated through main 544cd8b2a7e7760837c1c2a70f96486d42380c26 and this reviewed preparation/energy batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/nonautonomous_appendix.md"
+        }
+      ],
+      "published_bytes": 49573,
+      "published_sha256": "d84efa4c1b614d4f417da4ab59e295ec330f555e79331586b10bc0a4915bca06"
+    },
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/proposed/docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "947e62ddd7be640eca2cfc98a0e093a5fd83fade9f641432779849064878aa3d",
+      "additional_mathematical_body_edits": [],
+      "diff": "diffs/higher.publication.diff.gz",
+      "diff_sha256": "5e004ea00d5ed5cf4ba159621047eee993ff2f80a117ecfccd091a6dae697f09",
+      "diff_stored_sha256": "cd361661808631c66afda6e6774edd252b096b703ee817660be7e6b650e904f8",
+      "key": "higher",
+      "note": "docs/HIGHER_MOMENT_ENERGY_ENDPOINTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 4330,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 77,
+          "sha256": "bd3d69a712393c2948230cc90142ebab0ad7bdb6934264973a1153cc0a697863",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/higher_header.md",
+          "source_sha256": "1034f0ef3c2b2f63d61e0b6920fa70125e6ca28835b5f8b3e19fc5c0eee774c6",
+          "text": "---\ntitle: \"Higher-moment physical-energy endpoints\"\nclaim_id: higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nassembly_status: publication_prepared_root_review_and_runtime_pending\nrunner: scripts/higher_moment_energy_endpoints_identity_2026_10_13.py\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied one-dimensional carrier, smooth finite inputs and the exact moment, commutator, variation and state hypotheses of the preserved cores; all provisional parents remain conditional.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Ordinarily accepted conditional source argument, preserved without core edits; source integrity is not analytic verification.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root review of the exact publication wrappers and tooling, followed by separately recorded prepare and verify; cumulative review and independent retained audit remain later obligations.\"\nsource_assembly: prepared_energy_source_assembly\nupstream_dependencies:\n  - smooth_preparation_moments_bounded_theorem_note_2026-10-13\n  - nonautonomous_corrected_dynamics_bounded_theorem_note_2026-10-13\n  - effective_potential_graph_local_endpoint_bounded_theorem_note_2026-10-13\n---\n\n# Higher-moment physical-energy endpoints\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support; source assembly accepted, publication review and runtime pending.\n\n## Source integration and scope\n\nThe selected source composes preparation resources and continuing BV dynamics\nwith fixed finite physical-energy endpoint estimates. It treats scalar energy\nlaws, scalar moments and full energy-weighted trace operators separately. The\nnative free-energy bridge and the common-energy trace term have different\nhypotheses; fixed-order constants are not uniform over all orders.\n\nThe exact-compression and localized targets retain their separate assumptions.\nThe localized application uses the older accepted BV/local check as an archived\nprovisional premise. This is not a fifth new canonical claim. Unconditional low\nmarginals, physical-band versus full-low domains, closed moment columns and\nnormal-state coherences remain as in the original proof. State-family sharpness\nis not a fixed-protocol realization or measurement-selection theorem.\n\nThe 614-line comparison is ordinary source-exposed checking. Its accepted\nprecisions keep the older, looser root inequalities valid: the shifted constant\nrecovery wording needs the separate native-column refinement, and a uniform\nspacing-rate specialization needs a uniform variation resource. The comparison's\npost-exposure packaging is not retroactively part of the 750-line derivation.\n\n## Direct proposed dependencies\n\n- [smooth_preparation_moments_bounded_theorem_note_2026-10-13](SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md): actual initial preparation moment resource.\n- [nonautonomous_corrected_dynamics_bounded_theorem_note_2026-10-13](NONAUTONOMOUS_CORRECTED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-10-13.md): continuing BV graph propagation and density comparison.\n- [effective_potential_graph_local_endpoint_bounded_theorem_note_2026-10-13](EFFECTIVE_POTENTIAL_GRAPH_LOCAL_ENDPOINT_BOUNDED_THEOREM_NOTE_2026-10-13.md): actual finite-order coefficient and smooth-local-cutoff regularity.\n\nThese direct support edges propose no retained-status change. The three\ncorrected-dynamics parent notes are installed on the exact parent head\nbd831ffb14c7d7f12bf1b8165596a0db85f838ef, regular PR 9511.\nThe publication driver must recheck those bytes before installation.\nSame-packet premises are carried below; existing carrier parents retain\ntheir status. Branch lineage is separate from mathematical dependence.\n\n## Exact historical core begins\n\nAll text through the marked end is copied byte-for-byte from the selected\nsource body; its original historical status is not the status of this assembly.\n\n",
+          "wrapper_path": "wrappers/higher_header.md"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 4330,
+          "bytes": 39601,
+          "first_line": 78,
+          "historical_status_and_exposure_bytes_preserved": true,
+          "kind": "accepted_complete_core",
+          "last_line": 827,
+          "sha256": "d5a218cd25aa3a4479681cac8e18e12ba4ae9f6a92f7819d970195fa83eeebb0",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/body_copies/HIGHER_MOMENT_ENERGY_ENDPOINTS_INDEPENDENT.md",
+          "source_sha256": "d5a218cd25aa3a4479681cac8e18e12ba4ae9f6a92f7819d970195fa83eeebb0"
+        },
+        {
+          "byte_offset": 43931,
+          "bytes": 4571,
+          "first_line": 828,
+          "kind": "publication_wrapper",
+          "last_line": 884,
+          "sha256": "5732a663af10495223a13773a415a93c02c72e8e9eba087e270ab3988ee343ee",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/higher_appendix.md",
+          "source_sha256": "312273c11bd06072d026d3bfdff09c42270e2b905fbc4f5f597af039bcda7346",
+          "text": "\n\n## End of exact historical core; assembly evidence\n\nThe selected source bytes, original freezes, complete accepted comparisons,\nprecisions, exposure records and failure records are preserved in the bounded\nsource archive. `SOURCE_IDENTITIES.json` resolves every selected source alias\nto its exact content-addressed archive path. `BODY_COPY_MANIFEST.json` and\n`LINE_PIECE_MAP.json` give byte intervals and line ranges; complete assembly\nand new-file diffs are separate from the empty core-change diffs.\n\nSelected core identities:\n\n- `HIGHER_MOMENT_ENERGY_ENDPOINTS_INDEPENDENT.md`: `d5a218cd25aa3a4479681cac8e18e12ba4ae9f6a92f7819d970195fa83eeebb0`.\n\nExact ordinary acceptance/comparison/precision records:\n\n- `HIGHER_MOMENT_ENERGY_ENDPOINTS_ROOT_ACCEPTANCE.json`: `8c5ff6af2c6de7291863124668f3b0fd6bd703644eb72a05f13873b30edb6d08`.\n- `HIGHER_MOMENT_ENERGY_ENDPOINTS_ROOT_REVIEW.md`: `f1d1fcec5a20b16c3fbf32c3142e41e4adbec733429f91792fc4c1341686f48a`.\n- `HIGHER_MOMENT_ENERGY_ENDPOINTS_CROSSCHECK.md`: `04711a120c4854f9420f7b2a8f80672d5950d53c65481010452aaeceb53173dc`.\n- `HIGHER_MOMENT_ENERGY_ENDPOINTS_CROSSCHECK_ROOT_REVIEW.md`: `34ef7165a170ff9ad3488d404828ec2cf25d6459dc70381bf9902a22be50ffd7`.\n- `HIGHER_MOMENT_ENERGY_ENDPOINTS_CROSSCHECK_ROOT_ACCEPTANCE.json`: `8f63e8060be7540312c0084100b2d63b369680f58d3ce185a50b87ac9e5b6671`.\n- `higher_moment_energy_endpoints_crosscheck/PRECISIONS.md`: `8a60ee0f26bb41d25319311c10a9f8afedc990a16abb8aafb67043338b493d47`.\n- `BV_LOCAL_ENERGY_ENDPOINT_ROOT_ACCEPTANCE.json`: `aadbcb1343d80754565c20386658726573224fa88fc252228f7a6d071a0468de`.\n- `bv_local_energy_endpoint_crosscheck/PRECISIONS.md`: `1ccd7af6dbe10d299f1fc2fb5477bfac8ea6df9bb792fa6747d58a4ba263b0e3`.\n\nThis new wrapper neither repairs an original mathematical body nor relabels\na historical source-exposed comparison as independent work. Historical pending,\nfalse and limited-coverage fields stay unchanged in their original files.\nThe later exact acceptance is recorded alongside them, never inserted into\nthose files. All scopes and precisions remain attached to their exact sources.\n\n`DEPENDENCY_REGISTRY.json` distinguishes direct canonical or same-packet\nsupport, archived provisional premises, method/context ancestry and mere branch\nlineage. `PROVENANCE_CLOSURE.json` closes the member lists of seven named freezes;\nreferences inside those lists do not imply recursive proof or archive closure.\nNo finite-history, observable687 or new all-time result belongs to this note.\n\nRoot accepted the exact source assembly at its separate source review.\nThis publication projection changes wrappers only; the original package\nand all its pending, false, failure and exposure records remain literal\narchived bytes. The [source recovery and scope](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/SOURCE_RECOVERY.md)\nbinds every immediate member of the accepted source freeze.\nThe [identity-only runner](../scripts/higher_moment_energy_endpoints_identity_2026_10_13.py) verifies source bytes,\nmaps and reconstruction. It executes zero mathematical predicates and\nsupplies no analytic, formal, model-diverse, retained-audit or no-go status.\nPublication preparation may test it only in a temporary noncanonical\nroot. Such scratch results are separate from later canonical execution.\nThe [block handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/HANDOFF.md) and\n[review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/f6a820fd66011a50752670a454fb375b420ddbd6/.claude/science/physics-loops/toe-prepared-energy-20261013/REVIEW_HISTORY.md) distinguish\nsource preparation from root-owned installation, caches, graph and\nstaged compatibility checks. New publication review and those checks\nremain pending in this frozen source projection. N1/N5 remain pending\nwhere applicable. Editable prompt files changed: none.\n\n\nReview-loop integration note: dependencies are integrated through main 544cd8b2a7e7760837c1c2a70f96486d42380c26 and this reviewed preparation/energy batch. Original analytic arguments and historical evidence remain preserved. Live canonical parent hashes are refreshed with original bindings retained; earlier pending/main labels describe publication-time provenance and confer no audit authority. Any formatting-only transformations are explicitly recorded in the publication map.\n",
+          "wrapper_path": "wrappers/higher_appendix.md"
+        }
+      ],
+      "published_bytes": 48502,
+      "published_sha256": "2d9b7c2a92019a3a20245c06f6fd056e4f80b3fdb802df3aec1569518cbbd24f"
+    }
+  ],
+  "scope": "Eight outer wrappers change; two graph interludes and six complete core bodies remain exact.",
+  "source_freeze_sha256": "32238b64fbcd6aed9a43557af422e0b9cb8da7cd070ce84f6d73028c1105b0fe",
+  "wrapper_changes": [
+    {
+      "diff": "diffs/preparation_header.diff.gz",
+      "diff_sha256": "1ff971b7dcecf9883dc479f6d8aea1ba12605de2da0f36d214e9c553f88c349e",
+      "diff_stored_sha256": "2531d77156b30749331ee87c1ce0f7b697e0467996ab2666be65d0105c9057bb",
+      "publication": "wrappers/preparation_header.md",
+      "publication_sha256": "de3cf0a5dbba6b4b47d69f37c2e1a4f16daad8c9be565bf1cfff2692cf8e9845",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/preparation_header.md",
+      "source_sha256": "d44f11b0f004c81ed500e19eb7b8009c890bfdc7a873a47e8c16b36a29071559"
+    },
+    {
+      "diff": "diffs/preparation_appendix.diff.gz",
+      "diff_sha256": "83e7a6b619595bcb5d868545ab0d60df79e6750d68c2a07a4cbf3f97ea0ed31e",
+      "diff_stored_sha256": "533b85e7249b271c42f25fde88682db91d7bb60924e6776d684f00cc52f140e4",
+      "publication": "wrappers/preparation_appendix.md",
+      "publication_sha256": "167179da838711dbc873b40abf316bbed4af324310bcb515e2f227e6c3ecdaf3",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/preparation_appendix.md",
+      "source_sha256": "4af8cc6b639c0adf185c2b16fbe59e25bde41953a7c73fce96473cdd822fbbf1"
+    },
+    {
+      "diff": "diffs/graph_header.diff.gz",
+      "diff_sha256": "e4b2670fcf430746a125d3bbc1956efb166ea6304841656de0e4549aa885ce8e",
+      "diff_stored_sha256": "978786bd6c80cb19ca213fcc643b30a2bfba2fbedc292228619431d2c11d152e",
+      "publication": "wrappers/graph_header.md",
+      "publication_sha256": "32f7fa3a4c858bae91654c287de77a9f9d9fd2c92b8b12c7894b48fde9b33440",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_header.md",
+      "source_sha256": "8f27b1f66b00e96a4c6481ff8830111d921e2d5e17cf559156ecb070832e5292"
+    },
+    {
+      "diff": "diffs/graph_between_1.diff.gz",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "publication": "wrappers/graph_between_1.md",
+      "publication_sha256": "cd268e66e306b243230ef750db43bee0eb494efa44f4221e752e1866abbb19ee",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_between_1.md",
+      "source_sha256": "cd268e66e306b243230ef750db43bee0eb494efa44f4221e752e1866abbb19ee"
+    },
+    {
+      "diff": "diffs/graph_between_2.diff.gz",
+      "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diff_stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "publication": "wrappers/graph_between_2.md",
+      "publication_sha256": "f22a85900549aed7ecf637357413c235b121deb5c34e0df6e409980dde2701c8",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_between_2.md",
+      "source_sha256": "f22a85900549aed7ecf637357413c235b121deb5c34e0df6e409980dde2701c8"
+    },
+    {
+      "diff": "diffs/graph_appendix.diff.gz",
+      "diff_sha256": "c7dd30d0c00a3466fb143dad7821f58857e865e06539ebd45b1739292c0d71d5",
+      "diff_stored_sha256": "39ae82af9636eb7460f5b1cd40997ddb2cefc39a15e1e3866216752ee38cb473",
+      "publication": "wrappers/graph_appendix.md",
+      "publication_sha256": "385813f24d036bf4d5b575396151895f43d038ab0aeb74b822873ce5a4e3202a",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/graph_appendix.md",
+      "source_sha256": "cc43fc44133dd1c42db5a35938fcf35dbb5882d37bdc06d7e556dbdf97df7e81"
+    },
+    {
+      "diff": "diffs/nonautonomous_header.diff.gz",
+      "diff_sha256": "a8bbbef924136b5ebd63982f8e60a6f744066822dccdd9d7ad4098d18a7edf06",
+      "diff_stored_sha256": "84925e703df1ebb2065bdf98ff753ca269835a38a4afa24486fe30f8703e4d3d",
+      "publication": "wrappers/nonautonomous_header.md",
+      "publication_sha256": "9ff1d06330ff2a4908b419598477ecd581393e3c715f7220ddb027746344f850",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/nonautonomous_header.md",
+      "source_sha256": "72106da9b7294792f05e8a34e70965edfd4167be234901840d05f7c552e3b7d4"
+    },
+    {
+      "diff": "diffs/nonautonomous_appendix.diff.gz",
+      "diff_sha256": "807a9e45139902b25d99e656d6e82b4970b87a76b29096eca5728ce2b360b6d9",
+      "diff_stored_sha256": "fe445b0aabe75fd7a355aa66cfb37c7cfde086caa371076f9294b6c7340a87c9",
+      "publication": "wrappers/nonautonomous_appendix.md",
+      "publication_sha256": "8a89da586ed852c455d8aab342967d368604761d13bc2d8fdc38c6bf3b0e07bc",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/nonautonomous_appendix.md",
+      "source_sha256": "6c6141b79605102354484ffb94e7ddf1233758a080d28df4bf75092cc97f2720"
+    },
+    {
+      "diff": "diffs/higher_header.diff.gz",
+      "diff_sha256": "1c70e2b5af5927a4f866182114ab9bf9ad20f325699c681c9202606d76e9d521",
+      "diff_stored_sha256": "beac4deb95230058cd81e7c84cf9161b53a9213a8c01b666f239ca4ee2a9f6b7",
+      "publication": "wrappers/higher_header.md",
+      "publication_sha256": "bd3d69a712393c2948230cc90142ebab0ad7bdb6934264973a1153cc0a697863",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/higher_header.md",
+      "source_sha256": "1034f0ef3c2b2f63d61e0b6920fa70125e6ca28835b5f8b3e19fc5c0eee774c6"
+    },
+    {
+      "diff": "diffs/higher_appendix.diff.gz",
+      "diff_sha256": "ff9a69742ca7c5b9d953b5b2c1cc7fae2b33c16d4fbe2bb5f2b0dc4864d1fb0b",
+      "diff_stored_sha256": "09b5ac77aebb6d4f605d4c0fa6e8a3be1b72662756df44ff314b47003be48818",
+      "publication": "wrappers/higher_appendix.md",
+      "publication_sha256": "5732a663af10495223a13773a415a93c02c72e8e9eba087e270ab3988ee343ee",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/prepared_energy_source_assembly/wrappers/higher_appendix.md",
+      "source_sha256": "312273c11bd06072d026d3bfdff09c42270e2b905fbc4f5f597af039bcda7346"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "claim_id": "curvature_fluid_construction_bounded_theorem_note_2026-10-13",
+  "declared_claim_id": "curvature-fluid-construction-bounded-theorem-note-2026-10-13",
+  "claim_type": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "primary": "scripts/curvature_fluid_construction_2026_10_13.py",
+  "helpers": [],
+  "packet_helpers": [],
+  "citations": [],
+  "runtime_inputs": [
+    "docs/CURVATURE_FLUID_CONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "outputs/curvature_fluid_construction_2026_10_13/NUMERICAL_FIXTURES_v1.json",
+    "outputs/curvature_fluid_construction_2026_10_13/OFF_TRAJECTORY_FIXTURES_v2.json",
+    "outputs/curvature_fluid_construction_2026_10_13/imports.json"
+  ],
+  "declared_timeout_seconds": 120,
+  "input_fingerprint": "b8e8af48b91f3fcb029a30213be6ead9ce8f3270835acb8422d2c68dc4363a8e",
+  "repository_dependencies": [],
+  "rationale": "Full supplied action, local equations and algebraic proof are present in the canonical note; no archived theorem is an implicit premise."
+}

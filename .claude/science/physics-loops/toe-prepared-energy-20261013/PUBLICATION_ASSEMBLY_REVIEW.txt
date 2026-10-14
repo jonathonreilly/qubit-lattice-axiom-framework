@@ -1,0 +1,85 @@
+# Prepared-energy publication source review
+
+Disposition: accepted_for_source_integration. Canonical execution is pending.
+This accepts the exact publication assembly and its bounded execution plan; it
+is not a new mathematical, formal, model-diverse or retained audit verdict.
+
+The source-only freeze is f53bdbbb0b14a531c442b6eabe15b50f1f08eb1d2fc06bf4ee854c2f31812344.
+The 769-line driver is f6daa31678a1c9caffcf74fb21076ddaabbf9e7fa64636bafd8b67929f116b63.
+Root rehashed all 511 package members before and after source replay. Accepted
+assembly 32238b64fbcd6aed9a43557af422e0b9cb8da7cd070ce84f6d73028c1105b0fe,
+acceptance 7a1131289ced1fa30796dc1e8ffaadad3b2cd48e878e3546211cace4ccc8fc96
+and review 301dc365eef769c9111f53d20725c1ad8e0b7bb9ce69ae25f753d5511073681e
+remain exact. Its six fully covered cores, 2,923 lines, receive no mathematical
+edit. Earlier exposure, pending obligations, counterexamples and failure
+records remain literal bytes. Their prior complete coverage is reused; a new
+full manual read of repeated proofs or generated arrays is not claimed.
+
+Root read all new wrappers and all new program logic. Driver coverage combines
+the previously fully read and executed 749-line V2 driver a3156a9c with the
+complete 207-line changed-content diff c994a9. Three compact diffs were exactly
+reconstructed at 0944dc, and all eleven full-context source diffs at dfb41e.
+The identity template was fully read at 921395. Assembly, renderer, source
+checker, recorder, packet writer, freezer, scratch controls and diff-index
+producer were covered at bc6a79/fdd466/f98cc8/20828d/125797/2dd48c. Repaired
+display gaps are recorded below. No publication program was assumed correct
+because an older version succeeded.
+
+All ten wrapper segments, five external canonical parents, three same-packet
+relations, five archived provisional supports and four-node/fifteen-edge
+proposal were read. The graph collection remains source-exposed. Finite order,
+moments, domains, commutators, control variation, fixed-target and supplied-state
+assumptions survive. N1 and N5 remain pending where applicable and
+no_go_packet_pass remains false. Branch ancestry supplies no mathematical edge.
+
+Complete packet text, including HANDOFF, REVIEW_HISTORY and all twelve
+conformance sections, was read in WRITE_PACKET.py at 20828d; dfb41e verifies
+all twelve literal output files exactly equal those fully read strings.
+The later PUBLICATION_RESUMPTION record was separately read at 0a6b9b, and the
+full handoff at 98c419/3fe6df. Its historical refresh wording is explicitly
+qualified by the later record. Original source diffs use context three and
+baseline/proposed labels; publication/program full-context diffs are separate.
+No exact-source formatting convention was substituted for another.
+
+Root replay dfb41e exited 0 in 0.408 seconds, with empty stderr. It reconstructed
+all four source manifests, 258 archive objects/316 aliases, 309 accepted source
+members, four note bodies, exact runner substitutions and all 288 declared
+inputs. All 47 author coverage source pins match; author read claims are not
+adopted as fresh root reads. Full scratch streams were mechanically parsed:
+four successful baselines and six exact-reason failures, including both wrong
+diff conventions. These and the replay execute zero mathematical predicates.
+No claim is made to have manually read every repeated raw input array.
+
+The source replay's first two attempts failed in root bookkeeping: an in-memory
+tuple/list comparison before JSON serialization (c7fa6f, diagnosed e227f8),
+then a missing tamper_ folder-to-case translation (923e76). Original programs,
+partial external receipts and exact narrow v2/v3 diffs remain preserved.
+No frozen source or canonical file changed. Final v3 compares the declared
+JSON serialization, with only its timestamp normalized for comparison; the
+actual replay timestamp is retained. These failures do not evidence a theorem
+failure or successful canonical execution.
+
+Outer-display truncations were resolved by bounded reads: handoff 98c419,
+wrapper pair 34b15e, adapter 2721f6, remaining specification f8f12f and full
+87-line diff producer 2dd48c. The long author coverage JSON at 0a6b9b was
+not fully displayed; its exact scalar/coverage projections were read at
+cbf7c8/86b200 and every saved-source row mechanically verified at dfb41e.
+No truncated display is asserted to be a complete manual read.
+
+The ten exact LaTeX notation contexts were inspected; no whitespace exception
+is approved. Local links and twelve-section delivery records are complete.
+Expected installation is 346 frozen files plus two external root records;
+four fresh caches and one generated graph manifest yield 353 staged paths.
+Prepare must exclusively install, preserve vocabulary bytes, compile outside
+the worktree, run four identity tools and four corruptions, and preserve every
+old complete graph node/edge/root. Verify must check exact regular stage-zero
+blobs and unchanged bytes before and after focused compatibility. A report
+selecting zero ledger rows verifies no scientific claim.
+
+Execution is authorized on physics-loop/toe-prepared-energy-20261013 at
+bd831ffb14c7d7f12bf1b8165596a0db85f838ef, child of regular PR 9511, with
+fixed source guards and full bounded execution records. No automatic overwrite,
+retry or repair is authorized by this acceptance. Combined current-main
+pipeline/strict lint, cumulative stack review and independent retained audit
+remain later obligations. No prompt, physical axiom, audit authority, merge,
+main push or other-chat message is included.

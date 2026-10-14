@@ -1,0 +1,3259 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_environment_bridge_check.py
+runner_sha256: cfff062268624def956d92e737349524153932cbc33195e6f415f8719aa5305d
+input_fingerprint_sha256: 6848a06d4f96e97976e61aa264da7e6a312a53a07a17a657d18fb1919ce3f316
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+CHECK mass_slope_identity
+CHECK density_slope_definition
+CHECK stationary_log_susceptibility
+CHECK weighted_density_decomposition
+CHECK weighted_density_strict_derivative
+CHECK slope_above_two_identity
+CHECK near_vacuum_density_derivative
+CHECK small_A_density_leading_decomposition
+{
+  "scope": "Conditional finite-body and stationary-density mathematics; no actual apparatus fit or state selection.",
+  "passed": 340,
+  "failed": 0,
+  "units": {
+    "finite_body": {
+      "passed": 208,
+      "failed": 0
+    },
+    "density_environment": {
+      "passed": 96,
+      "failed": 0
+    },
+    "susceptibility": {
+      "passed": 36,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "finite_body::force_from_Yukawa_potential",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::pair_force_monotone",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::pair_force_at_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::pair_force_nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_radial_primitive",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::sphere_formfactor_integral",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::sphere_massless_limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::stable_sphere_factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::signed_kernel_difference",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::signed_kernel_total_variation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::signed_upper_normalization",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::signed_lower_normalization",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::universal_geometry_calibration_cap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::joint_thermal_geometry_product",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::positive_geometry_recovers_same_background",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::unit_geometry_threshold",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_body::threshold_contains_positive_geometry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::implemented_pair_force_0.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::implemented_pair_force_1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::implemented_pair_force_10.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::signed_readout_exceeds_point_source_cap",
+      "passed": true,
+      "detail": {
+        "ratio": 7.3530942303823625,
+        "gamma": 1.7353094230382364,
+        "kappa": 19.000000000000004
+      }
+    },
+    {
+      "name": "finite_body::signed_readout_obeys_decomposition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::signed_geometry_not_positive_geometry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.9999995003332083
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.9953211598395556
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.4060058497098381
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.0, 10.0)",
+      "passed": true,
+      "detail": 0.0004993992273873334
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.9998225546992396
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.9933906237264145
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.4006355295510764
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.02, 10.0)",
+      "passed": true,
+      "detail": 0.000490420095453308
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.8859260534157938
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.8491228177031068
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.26105992853270094
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 0.7, 10.0)",
+      "passed": true,
+      "detail": 0.000276929038131831
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.4463129055211425
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.4142472143608019
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.09067080566161183
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 3.0, 10.0)",
+      "passed": true,
+      "detail": 7.097222239632526e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.049896134464705456
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.045337381518146154
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 30.0, 2.0)",
+      "passed": true,
+      "detail": 0.007195325892079909
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0, 30.0, 10.0)",
+      "passed": true,
+      "detail": 2.9989175826441387e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.9999993964434832
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.9953121083892055
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.40597878373584606
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.0, 10.0)",
+      "passed": true,
+      "detail": 0.0004993538299998611
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.9998204944638335
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.9933799773464977
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.40060873315243706
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.02, 10.0)",
+      "passed": true,
+      "detail": 0.0004903755062142502
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.8858895435782195
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.8490850792886535
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.2610408790743568
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 0.7, 10.0)",
+      "passed": true,
+      "detail": 0.00027690371356769685
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.446279430826792
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.4142158947050345
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.09066325015403175
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 3.0, 10.0)",
+      "passed": true,
+      "detail": 7.096563249365432e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.049891306084608976
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.045332993816791275
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 30.0, 2.0)",
+      "passed": true,
+      "detail": 0.007194628204498323
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.0001, 30.0, 10.0)",
+      "passed": true,
+      "detail": 2.998625022580309e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.9999499412770284
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.9943858339735618
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.4033099438266144
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.0, 10.0)",
+      "passed": true,
+      "detail": 0.0004948845527921423
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.9995792933138551
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.9922974503314277
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.39796652681218164
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.02, 10.0)",
+      "passed": true,
+      "detail": 0.00048598579301161664
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.8822762075308132
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.8453527685534812
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.2591634773222193
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 0.7, 10.0)",
+      "passed": true,
+      "detail": 0.00027441062861733256
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.4429808516351468
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.41112980279936867
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.08991912961681622
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 3.0, 10.0)",
+      "passed": true,
+      "detail": 7.031693017548955e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.04941608864926448
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.04490114892655688
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 30.0, 2.0)",
+      "passed": true,
+      "detail": 0.007125961168803562
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.01, 30.0, 10.0)",
+      "passed": true,
+      "detail": 2.969831717580799e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.9715346530746861
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.9469212902847184
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.3338414590509461
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.0, 10.0)",
+      "passed": true,
+      "detail": 0.0003834854741403765
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.9669751176398492
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.9414682358307032
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.32922734192222486
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.02, 10.0)",
+      "passed": true,
+      "detail": 0.00037657231098193377
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.7790324394911421
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.7405128425307778
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.21096663499801335
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 0.7, 10.0)",
+      "passed": true,
+      "detail": 0.00021231426532855078
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.358637443379557
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.3323102293250557
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.07116591990189693
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 3.0, 10.0)",
+      "passed": true,
+      "detail": 5.4189070326297966e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.037658646302025395
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.034216925671954904
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 30.0, 2.0)",
+      "passed": true,
+      "detail": 0.005427452811540399
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(0.3, 30.0, 10.0)",
+      "passed": true,
+      "detail": 2.2581148101176446e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.8116056936376003
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.7714754979937861
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.2197876666648102
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.0, 10.0)",
+      "passed": true,
+      "detail": 0.0002211916447198156
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.8035183366140315
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.7634316938153906
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.21652141780441375
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.02, 10.0)",
+      "passed": true,
+      "detail": 0.00021718179667722218
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.5711498080084871
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.5362759595037628
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.13463830624670586
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 0.7, 10.0)",
+      "passed": true,
+      "detail": 0.00012204462220835352
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.22649574053070062
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.2092079610995375
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.04294835707927137
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 3.0, 10.0)",
+      "passed": true,
+      "detail": 3.087336156408818e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.02091158921263834
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.01899911484345012
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 30.0, 2.0)",
+      "passed": true,
+      "detail": 0.0030098699907153176
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(1.0, 30.0, 10.0)",
+      "passed": true,
+      "detail": 1.2472751077256268e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.28777969240822254
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.264954438141584
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.05197228782917479
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.0, 10.0)",
+      "passed": true,
+      "detail": 3.486952050656142e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.2830327079436774
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.2605699128840932
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.05107256834802444
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.02, 10.0)",
+      "passed": true,
+      "detail": 3.422315045236632e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.16753424381307178
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.15398475657512584
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.02946650008438143
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 0.7, 10.0)",
+      "passed": true,
+      "detail": 1.8974481556519106e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.04819838285724087
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.044135489132808056
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.007979574269385368
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 3.0, 10.0)",
+      "passed": true,
+      "detail": 4.623648193188577e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.002781484053447249
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.0025262368059237143
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 30.0, 2.0)",
+      "passed": true,
+      "detail": 0.0003977323693593793
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(5.0, 30.0, 10.0)",
+      "passed": true,
+      "detail": 1.6151368179080879e-07
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.07474128383306494
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.06801549766699044
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.011089034770199954
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.0, 10.0)",
+      "passed": true,
+      "detail": 5.013854743144421e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.0733340098906075
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.066734562972478
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.010879344034460876
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.02, 10.0)",
+      "passed": true,
+      "detail": 4.917941172724659e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.04026500710078775
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.0366361115721486
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.005957193538088277
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 0.7, 10.0)",
+      "passed": true,
+      "detail": 2.6729865331218248e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.009537951365104614
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.00867456399950355
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.0013997305624011327
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 3.0, 10.0)",
+      "passed": true,
+      "detail": 6.140364598396355e-07
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 30.0, 0.001)",
+      "passed": true,
+      "detail": 0.0002924319114072202
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 30.0, 0.1)",
+      "passed": true,
+      "detail": 0.0002653822169371067
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 30.0, 2.0)",
+      "passed": true,
+      "detail": 4.116871121207084e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(20.0, 30.0, 10.0)",
+      "passed": true,
+      "detail": 1.5895177492154986e-08
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.0, 0.001)",
+      "passed": true,
+      "detail": 0.01498365734832503
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.0, 0.1)",
+      "passed": true,
+      "detail": 0.01358464085007025
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.0, 2.0)",
+      "passed": true,
+      "detail": 0.0020700208247456096
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.0, 10.0)",
+      "passed": true,
+      "detail": 7.483497422399191e-07
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.02, 0.001)",
+      "passed": true,
+      "detail": 0.014690456937603688
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.02, 0.1)",
+      "passed": true,
+      "detail": 0.013318813831138906
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.02, 2.0)",
+      "passed": true,
+      "detail": 0.0020295068310500924
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.02, 10.0)",
+      "passed": true,
+      "detail": 7.336929393001929e-07
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.7, 0.001)",
+      "passed": true,
+      "detail": 0.007865835088435148
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.7, 0.1)",
+      "passed": true,
+      "detail": 0.007131357984479562
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.7, 2.0)",
+      "passed": true,
+      "detail": 0.0010865349503899706
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 0.7, 10.0)",
+      "passed": true,
+      "detail": 3.926108182529765e-07
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 3.0, 0.001)",
+      "passed": true,
+      "detail": 0.0017227999975843447
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 3.0, 0.1)",
+      "passed": true,
+      "detail": 0.0015618989145662246
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 3.0, 2.0)",
+      "passed": true,
+      "detail": 0.00023787485865323866
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 3.0, 10.0)",
+      "passed": true,
+      "detail": 8.582062521052787e-08
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 30.0, 0.001)",
+      "passed": true,
+      "detail": 3.1310662926522125e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 30.0, 0.1)",
+      "passed": true,
+      "detail": 2.838083638195521e-05
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 30.0, 2.0)",
+      "passed": true,
+      "detail": 4.3064025464098256e-06
+    },
+    {
+      "name": "finite_body::nonoverlap_sphere_cap_(100.0, 30.0, 10.0)",
+      "passed": true,
+      "detail": 1.5315325805901048e-09
+    },
+    {
+      "name": "finite_body::sphere_source_radial_quadrature_0.01",
+      "passed": true,
+      "detail": {
+        "integral": 0.9900597342828648,
+        "closed": 0.9900597342828646,
+        "error": 1.099187112755101e-14
+      }
+    },
+    {
+      "name": "finite_body::sphere_source_radial_quadrature_0.1",
+      "passed": true,
+      "detail": {
+        "integral": 0.9057425786700669,
+        "closed": 0.9057425786700668,
+        "error": 1.0055762652228705e-14
+      }
+    },
+    {
+      "name": "finite_body::sphere_source_radial_quadrature_1.0",
+      "passed": true,
+      "detail": {
+        "integral": 0.4060058497098381,
+        "closed": 0.4060058497098381,
+        "error": 4.507570424803632e-15
+      }
+    },
+    {
+      "name": "finite_body::sphere_source_radial_quadrature_5.0",
+      "passed": true,
+      "detail": {
+        "integral": 0.048003268794942905,
+        "closed": 0.0480032687949429,
+        "error": 5.329433427341591e-16
+      }
+    },
+    {
+      "name": "finite_body::sphere_source_radial_quadrature_20.0",
+      "passed": true,
+      "detail": {
+        "integral": 0.003562500000000001,
+        "closed": 0.0035625,
+        "error": 2.5632417471138126e-16
+      }
+    },
+    {
+      "name": "finite_body::sphere_volume_Newton_normalization_(0.0, 0.4, 0.3, 1.0)",
+      "passed": true,
+      "detail": 1.0000000000000009
+    },
+    {
+      "name": "finite_body::sphere_volume_Yukawa_formula_(0.0, 0.4, 0.3, 1.0)",
+      "passed": true,
+      "detail": {
+        "volume": 1.0000000000000009,
+        "formula": 1.0
+      }
+    },
+    {
+      "name": "finite_body::sphere_volume_resolution_(0.0, 0.4, 0.3, 1.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_positive_kernel_(0.0, 0.4, 0.3, 1.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_Newton_normalization_(1.0, 0.3, 0.2, 1.0)",
+      "passed": true,
+      "detail": 1.0000000000000009
+    },
+    {
+      "name": "finite_body::sphere_volume_Yukawa_formula_(1.0, 0.3, 0.2, 1.0)",
+      "passed": true,
+      "detail": {
+        "volume": 0.745375885817937,
+        "formula": 0.7453758858179365
+      }
+    },
+    {
+      "name": "finite_body::sphere_volume_resolution_(1.0, 0.3, 0.2, 1.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_positive_kernel_(1.0, 0.3, 0.2, 1.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_Newton_normalization_(1.0, 1.2, 0.5, 2.0)",
+      "passed": true,
+      "detail": 1.0000000000000009
+    },
+    {
+      "name": "finite_body::sphere_volume_Yukawa_formula_(1.0, 1.2, 0.5, 2.0)",
+      "passed": true,
+      "detail": {
+        "volume": 0.47935278688835187,
+        "formula": 0.4793527868883516
+      }
+    },
+    {
+      "name": "finite_body::sphere_volume_resolution_(1.0, 1.2, 0.5, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_positive_kernel_(1.0, 1.2, 0.5, 2.0)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_Newton_normalization_(1.0, 2.0, 3.0, 5.5)",
+      "passed": true,
+      "detail": 1.0000000000000018
+    },
+    {
+      "name": "finite_body::sphere_volume_Yukawa_formula_(1.0, 2.0, 3.0, 5.5)",
+      "passed": true,
+      "detail": {
+        "volume": 0.08707694482627545,
+        "formula": 0.08707694482627482
+      }
+    },
+    {
+      "name": "finite_body::sphere_volume_resolution_(1.0, 2.0, 3.0, 5.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_positive_kernel_(1.0, 2.0, 3.0, 5.5)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_Newton_normalization_(2.0, 0.1, 0.9, 1.1)",
+      "passed": true,
+      "detail": 1.000000000000004
+    },
+    {
+      "name": "finite_body::sphere_volume_Yukawa_formula_(2.0, 0.1, 0.9, 1.1)",
+      "passed": true,
+      "detail": {
+        "volume": 0.4855089258257971,
+        "formula": 0.4855089258257939
+      }
+    },
+    {
+      "name": "finite_body::sphere_volume_resolution_(2.0, 0.1, 0.9, 1.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_body::sphere_volume_positive_kernel_(2.0, 0.1, 0.9, 1.1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "density_environment::source_from_actual_particle_and_scalar_energy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::closed_negative_potential_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::physical_density_A_cubed",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::fixed_particle_stationarity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::physical_density_force_from_trace",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::fixed_particle_hessian",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::density_map_derivative_hessian",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::log_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::D_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::first_monotone_term_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::first_product_monotonic_decomposition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::second_product_monotonic_decomposition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::full_physical_density_monotonic_decomposition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::endpoint_dstar_one",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::endpoint_dj_one",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::candidate_a",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::candidate_s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::bracket_log_argument",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::exp_one_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "density_environment::exp_eight_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "density_environment::dstar_tenth_less_than_twenty",
+      "passed": true,
+      "exact_upper": "229441903/23955750",
+      "upper": 9.57773824655876
+    },
+    {
+      "name": "density_environment::dstar_half_greater_than_twenty",
+      "passed": true,
+      "exact_lower": "495/14"
+    },
+    {
+      "name": "density_environment::physical_mass_frame_conversion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::stationary_coordinate_hessian_mass",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_0.0001_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_0.0001_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_0.0001_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_0.0001_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_0.0001_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_0.0001_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_1_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_1_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_1_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_1_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_1_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_1_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_100_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_100_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_100_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_100_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_100_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.01_100_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_0.0001_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_0.0001_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_0.0001_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_0.0001_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_0.0001_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_0.0001_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_1_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_1_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_1_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_1_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_1_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_1_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_100_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_100_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_100_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_100_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_100_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.1_100_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_0.0001_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_0.0001_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_0.0001_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_0.0001_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_0.0001_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_0.0001_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_1_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_1_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_1_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_1_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_1_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_1_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_100_0.00001",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_100_0.01",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_100_0.1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_100_0.5",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_100_0.9",
+      "passed": true
+    },
+    {
+      "name": "density_environment::density_positive_and_decreasing_0.3_100_0.999",
+      "passed": true
+    },
+    {
+      "name": "density_environment::root_stationarity_0",
+      "passed": true,
+      "residual": "-5.6623205e-66"
+    },
+    {
+      "name": "density_environment::root_local_hessian_sign_0",
+      "passed": true
+    },
+    {
+      "name": "density_environment::independent_bracket_solver_0",
+      "passed": true
+    },
+    {
+      "name": "density_environment::root_observed_density_map_0",
+      "passed": true
+    },
+    {
+      "name": "density_environment::original_u_mass_0",
+      "passed": true
+    },
+    {
+      "name": "density_environment::root_stationarity_1",
+      "passed": true,
+      "residual": "2.315915e-66"
+    },
+    {
+      "name": "density_environment::root_local_hessian_sign_1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::independent_bracket_solver_1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::root_observed_density_map_1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::original_u_mass_1",
+      "passed": true
+    },
+    {
+      "name": "density_environment::root_stationarity_2",
+      "passed": true,
+      "residual": "-6.0139009e-67"
+    },
+    {
+      "name": "density_environment::root_local_hessian_sign_2",
+      "passed": true
+    },
+    {
+      "name": "density_environment::independent_bracket_solver_2",
+      "passed": true
+    },
+    {
+      "name": "density_environment::root_observed_density_map_2",
+      "passed": true
+    },
+    {
+      "name": "density_environment::original_u_mass_2",
+      "passed": true
+    },
+    {
+      "name": "density_environment::distinct_physical_densities",
+      "passed": true
+    },
+    {
+      "name": "density_environment::two_positive_one_negative_local_masses",
+      "passed": true
+    },
+    {
+      "name": "density_environment::stability_not_implied_by_monotone_density",
+      "passed": true
+    },
+    {
+      "name": "susceptibility::mass_slope_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::density_slope_definition",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::stationary_log_susceptibility",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::weighted_density_decomposition",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::weighted_density_strict_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::slope_above_two_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::near_vacuum_density_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::small_A_density_leading_decomposition",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "susceptibility::elementary_log_power_limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::elementary_inverse_log_power_limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::constant_density_leading_D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_mass_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_susceptibility_range_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_stability_equivalence_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_mass_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_susceptibility_range_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_stability_equivalence_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_mass_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_susceptibility_range_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::saved_root_stability_equivalence_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_slope_bound_0.0001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_density_exact_remainder_0.0001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_slope_bound_0.000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_density_exact_remainder_0.000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_slope_bound_0.000000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_density_exact_remainder_0.000000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_slope_bound_0.000000000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_density_exact_remainder_0.000000000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::near_vacuum_positive_mass_slope_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::near_vacuum_first_order_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::near_vacuum_positive_mass_slope_0.00001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::near_vacuum_first_order_0.00001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::near_vacuum_positive_mass_slope_0.0000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::near_vacuum_first_order_0.0000001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_slope_approaches_four",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "susceptibility::small_A_density_relative_error_contracts",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "substantive_outputs": {
+    "finite_body": {
+      "sphere_grid": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.001,
+          "factor": 0.9999995003332083
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.1,
+          "factor": 0.9953211598395556
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 2.0,
+          "factor": 0.4060058497098381
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 10.0,
+          "factor": 0.0004993992273873334
+        },
+        {
+          "x": 0.0,
+          "y": 0.02,
+          "z": 0.021,
+          "factor": 0.9998225546992396
+        },
+        {
+          "x": 0.0,
+          "y": 0.02,
+          "z": 0.12000000000000001,
+          "factor": 0.9933906237264145
+        },
+        {
+          "x": 0.0,
+          "y": 0.02,
+          "z": 2.02,
+          "factor": 0.4006355295510764
+        },
+        {
+          "x": 0.0,
+          "y": 0.02,
+          "z": 10.02,
+          "factor": 0.000490420095453308
+        },
+        {
+          "x": 0.0,
+          "y": 0.7,
+          "z": 0.701,
+          "factor": 0.8859260534157938
+        },
+        {
+          "x": 0.0,
+          "y": 0.7,
+          "z": 0.7999999999999999,
+          "factor": 0.8491228177031068
+        },
+        {
+          "x": 0.0,
+          "y": 0.7,
+          "z": 2.7,
+          "factor": 0.26105992853270094
+        },
+        {
+          "x": 0.0,
+          "y": 0.7,
+          "z": 10.7,
+          "factor": 0.000276929038131831
+        },
+        {
+          "x": 0.0,
+          "y": 3.0,
+          "z": 3.001,
+          "factor": 0.4463129055211425
+        },
+        {
+          "x": 0.0,
+          "y": 3.0,
+          "z": 3.1,
+          "factor": 0.4142472143608019
+        },
+        {
+          "x": 0.0,
+          "y": 3.0,
+          "z": 5.0,
+          "factor": 0.09067080566161183
+        },
+        {
+          "x": 0.0,
+          "y": 3.0,
+          "z": 13.0,
+          "factor": 7.097222239632526e-05
+        },
+        {
+          "x": 0.0,
+          "y": 30.0,
+          "z": 30.001,
+          "factor": 0.049896134464705456
+        },
+        {
+          "x": 0.0,
+          "y": 30.0,
+          "z": 30.1,
+          "factor": 0.045337381518146154
+        },
+        {
+          "x": 0.0,
+          "y": 30.0,
+          "z": 32.0,
+          "factor": 0.007195325892079909
+        },
+        {
+          "x": 0.0,
+          "y": 30.0,
+          "z": 40.0,
+          "factor": 2.9989175826441387e-06
+        },
+        {
+          "x": 0.0001,
+          "y": 0.0,
+          "z": 0.0011,
+          "factor": 0.9999993964434832
+        },
+        {
+          "x": 0.0001,
+          "y": 0.0,
+          "z": 0.10010000000000001,
+          "factor": 0.9953121083892055
+        },
+        {
+          "x": 0.0001,
+          "y": 0.0,
+          "z": 2.0001,
+          "factor": 0.40597878373584606
+        },
+        {
+          "x": 0.0001,
+          "y": 0.0,
+          "z": 10.0001,
+          "factor": 0.0004993538299998611
+        },
+        {
+          "x": 0.0001,
+          "y": 0.02,
+          "z": 0.0211,
+          "factor": 0.9998204944638335
+        },
+        {
+          "x": 0.0001,
+          "y": 0.02,
+          "z": 0.12010000000000001,
+          "factor": 0.9933799773464977
+        },
+        {
+          "x": 0.0001,
+          "y": 0.02,
+          "z": 2.0201,
+          "factor": 0.40060873315243706
+        },
+        {
+          "x": 0.0001,
+          "y": 0.02,
+          "z": 10.0201,
+          "factor": 0.0004903755062142502
+        },
+        {
+          "x": 0.0001,
+          "y": 0.7,
+          "z": 0.7011,
+          "factor": 0.8858895435782195
+        },
+        {
+          "x": 0.0001,
+          "y": 0.7,
+          "z": 0.8000999999999999,
+          "factor": 0.8490850792886535
+        },
+        {
+          "x": 0.0001,
+          "y": 0.7,
+          "z": 2.7001,
+          "factor": 0.2610408790743568
+        },
+        {
+          "x": 0.0001,
+          "y": 0.7,
+          "z": 10.700099999999999,
+          "factor": 0.00027690371356769685
+        },
+        {
+          "x": 0.0001,
+          "y": 3.0,
+          "z": 3.0011,
+          "factor": 0.446279430826792
+        },
+        {
+          "x": 0.0001,
+          "y": 3.0,
+          "z": 3.1001000000000003,
+          "factor": 0.4142158947050345
+        },
+        {
+          "x": 0.0001,
+          "y": 3.0,
+          "z": 5.0001,
+          "factor": 0.09066325015403175
+        },
+        {
+          "x": 0.0001,
+          "y": 3.0,
+          "z": 13.0001,
+          "factor": 7.096563249365432e-05
+        },
+        {
+          "x": 0.0001,
+          "y": 30.0,
+          "z": 30.0011,
+          "factor": 0.049891306084608976
+        },
+        {
+          "x": 0.0001,
+          "y": 30.0,
+          "z": 30.1001,
+          "factor": 0.045332993816791275
+        },
+        {
+          "x": 0.0001,
+          "y": 30.0,
+          "z": 32.0001,
+          "factor": 0.007194628204498323
+        },
+        {
+          "x": 0.0001,
+          "y": 30.0,
+          "z": 40.0001,
+          "factor": 2.998625022580309e-06
+        },
+        {
+          "x": 0.01,
+          "y": 0.0,
+          "z": 0.011,
+          "factor": 0.9999499412770284
+        },
+        {
+          "x": 0.01,
+          "y": 0.0,
+          "z": 0.11,
+          "factor": 0.9943858339735618
+        },
+        {
+          "x": 0.01,
+          "y": 0.0,
+          "z": 2.01,
+          "factor": 0.4033099438266144
+        },
+        {
+          "x": 0.01,
+          "y": 0.0,
+          "z": 10.01,
+          "factor": 0.0004948845527921423
+        },
+        {
+          "x": 0.01,
+          "y": 0.02,
+          "z": 0.031,
+          "factor": 0.9995792933138551
+        },
+        {
+          "x": 0.01,
+          "y": 0.02,
+          "z": 0.13,
+          "factor": 0.9922974503314277
+        },
+        {
+          "x": 0.01,
+          "y": 0.02,
+          "z": 2.03,
+          "factor": 0.39796652681218164
+        },
+        {
+          "x": 0.01,
+          "y": 0.02,
+          "z": 10.03,
+          "factor": 0.00048598579301161664
+        },
+        {
+          "x": 0.01,
+          "y": 0.7,
+          "z": 0.711,
+          "factor": 0.8822762075308132
+        },
+        {
+          "x": 0.01,
+          "y": 0.7,
+          "z": 0.8099999999999999,
+          "factor": 0.8453527685534812
+        },
+        {
+          "x": 0.01,
+          "y": 0.7,
+          "z": 2.71,
+          "factor": 0.2591634773222193
+        },
+        {
+          "x": 0.01,
+          "y": 0.7,
+          "z": 10.71,
+          "factor": 0.00027441062861733256
+        },
+        {
+          "x": 0.01,
+          "y": 3.0,
+          "z": 3.0109999999999997,
+          "factor": 0.4429808516351468
+        },
+        {
+          "x": 0.01,
+          "y": 3.0,
+          "z": 3.11,
+          "factor": 0.41112980279936867
+        },
+        {
+          "x": 0.01,
+          "y": 3.0,
+          "z": 5.01,
+          "factor": 0.08991912961681622
+        },
+        {
+          "x": 0.01,
+          "y": 3.0,
+          "z": 13.01,
+          "factor": 7.031693017548955e-05
+        },
+        {
+          "x": 0.01,
+          "y": 30.0,
+          "z": 30.011000000000003,
+          "factor": 0.04941608864926448
+        },
+        {
+          "x": 0.01,
+          "y": 30.0,
+          "z": 30.110000000000003,
+          "factor": 0.04490114892655688
+        },
+        {
+          "x": 0.01,
+          "y": 30.0,
+          "z": 32.010000000000005,
+          "factor": 0.007125961168803562
+        },
+        {
+          "x": 0.01,
+          "y": 30.0,
+          "z": 40.010000000000005,
+          "factor": 2.969831717580799e-06
+        },
+        {
+          "x": 0.3,
+          "y": 0.0,
+          "z": 0.301,
+          "factor": 0.9715346530746861
+        },
+        {
+          "x": 0.3,
+          "y": 0.0,
+          "z": 0.4,
+          "factor": 0.9469212902847184
+        },
+        {
+          "x": 0.3,
+          "y": 0.0,
+          "z": 2.3,
+          "factor": 0.3338414590509461
+        },
+        {
+          "x": 0.3,
+          "y": 0.0,
+          "z": 10.3,
+          "factor": 0.0003834854741403765
+        },
+        {
+          "x": 0.3,
+          "y": 0.02,
+          "z": 0.321,
+          "factor": 0.9669751176398492
+        },
+        {
+          "x": 0.3,
+          "y": 0.02,
+          "z": 0.42000000000000004,
+          "factor": 0.9414682358307032
+        },
+        {
+          "x": 0.3,
+          "y": 0.02,
+          "z": 2.32,
+          "factor": 0.32922734192222486
+        },
+        {
+          "x": 0.3,
+          "y": 0.02,
+          "z": 10.32,
+          "factor": 0.00037657231098193377
+        },
+        {
+          "x": 0.3,
+          "y": 0.7,
+          "z": 1.001,
+          "factor": 0.7790324394911421
+        },
+        {
+          "x": 0.3,
+          "y": 0.7,
+          "z": 1.1,
+          "factor": 0.7405128425307778
+        },
+        {
+          "x": 0.3,
+          "y": 0.7,
+          "z": 3.0,
+          "factor": 0.21096663499801335
+        },
+        {
+          "x": 0.3,
+          "y": 0.7,
+          "z": 11.0,
+          "factor": 0.00021231426532855078
+        },
+        {
+          "x": 0.3,
+          "y": 3.0,
+          "z": 3.3009999999999997,
+          "factor": 0.358637443379557
+        },
+        {
+          "x": 0.3,
+          "y": 3.0,
+          "z": 3.4,
+          "factor": 0.3323102293250557
+        },
+        {
+          "x": 0.3,
+          "y": 3.0,
+          "z": 5.3,
+          "factor": 0.07116591990189693
+        },
+        {
+          "x": 0.3,
+          "y": 3.0,
+          "z": 13.3,
+          "factor": 5.4189070326297966e-05
+        },
+        {
+          "x": 0.3,
+          "y": 30.0,
+          "z": 30.301000000000002,
+          "factor": 0.037658646302025395
+        },
+        {
+          "x": 0.3,
+          "y": 30.0,
+          "z": 30.400000000000002,
+          "factor": 0.034216925671954904
+        },
+        {
+          "x": 0.3,
+          "y": 30.0,
+          "z": 32.3,
+          "factor": 0.005427452811540399
+        },
+        {
+          "x": 0.3,
+          "y": 30.0,
+          "z": 40.3,
+          "factor": 2.2581148101176446e-06
+        },
+        {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 1.001,
+          "factor": 0.8116056936376003
+        },
+        {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 1.1,
+          "factor": 0.7714754979937861
+        },
+        {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 3.0,
+          "factor": 0.2197876666648102
+        },
+        {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 11.0,
+          "factor": 0.0002211916447198156
+        },
+        {
+          "x": 1.0,
+          "y": 0.02,
+          "z": 1.021,
+          "factor": 0.8035183366140315
+        },
+        {
+          "x": 1.0,
+          "y": 0.02,
+          "z": 1.12,
+          "factor": 0.7634316938153906
+        },
+        {
+          "x": 1.0,
+          "y": 0.02,
+          "z": 3.02,
+          "factor": 0.21652141780441375
+        },
+        {
+          "x": 1.0,
+          "y": 0.02,
+          "z": 11.02,
+          "factor": 0.00021718179667722218
+        },
+        {
+          "x": 1.0,
+          "y": 0.7,
+          "z": 1.7009999999999998,
+          "factor": 0.5711498080084871
+        },
+        {
+          "x": 1.0,
+          "y": 0.7,
+          "z": 1.8,
+          "factor": 0.5362759595037628
+        },
+        {
+          "x": 1.0,
+          "y": 0.7,
+          "z": 3.7,
+          "factor": 0.13463830624670586
+        },
+        {
+          "x": 1.0,
+          "y": 0.7,
+          "z": 11.7,
+          "factor": 0.00012204462220835352
+        },
+        {
+          "x": 1.0,
+          "y": 3.0,
+          "z": 4.001,
+          "factor": 0.22649574053070062
+        },
+        {
+          "x": 1.0,
+          "y": 3.0,
+          "z": 4.1,
+          "factor": 0.2092079610995375
+        },
+        {
+          "x": 1.0,
+          "y": 3.0,
+          "z": 6.0,
+          "factor": 0.04294835707927137
+        },
+        {
+          "x": 1.0,
+          "y": 3.0,
+          "z": 14.0,
+          "factor": 3.087336156408818e-05
+        },
+        {
+          "x": 1.0,
+          "y": 30.0,
+          "z": 31.001,
+          "factor": 0.02091158921263834
+        },
+        {
+          "x": 1.0,
+          "y": 30.0,
+          "z": 31.1,
+          "factor": 0.01899911484345012
+        },
+        {
+          "x": 1.0,
+          "y": 30.0,
+          "z": 33.0,
+          "factor": 0.0030098699907153176
+        },
+        {
+          "x": 1.0,
+          "y": 30.0,
+          "z": 41.0,
+          "factor": 1.2472751077256268e-06
+        },
+        {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 5.001,
+          "factor": 0.28777969240822254
+        },
+        {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 5.1,
+          "factor": 0.264954438141584
+        },
+        {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 7.0,
+          "factor": 0.05197228782917479
+        },
+        {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 15.0,
+          "factor": 3.486952050656142e-05
+        },
+        {
+          "x": 5.0,
+          "y": 0.02,
+          "z": 5.021,
+          "factor": 0.2830327079436774
+        },
+        {
+          "x": 5.0,
+          "y": 0.02,
+          "z": 5.119999999999999,
+          "factor": 0.2605699128840932
+        },
+        {
+          "x": 5.0,
+          "y": 0.02,
+          "z": 7.02,
+          "factor": 0.05107256834802444
+        },
+        {
+          "x": 5.0,
+          "y": 0.02,
+          "z": 15.02,
+          "factor": 3.422315045236632e-05
+        },
+        {
+          "x": 5.0,
+          "y": 0.7,
+          "z": 5.7010000000000005,
+          "factor": 0.16753424381307178
+        },
+        {
+          "x": 5.0,
+          "y": 0.7,
+          "z": 5.8,
+          "factor": 0.15398475657512584
+        },
+        {
+          "x": 5.0,
+          "y": 0.7,
+          "z": 7.7,
+          "factor": 0.02946650008438143
+        },
+        {
+          "x": 5.0,
+          "y": 0.7,
+          "z": 15.7,
+          "factor": 1.8974481556519106e-05
+        },
+        {
+          "x": 5.0,
+          "y": 3.0,
+          "z": 8.001,
+          "factor": 0.04819838285724087
+        },
+        {
+          "x": 5.0,
+          "y": 3.0,
+          "z": 8.1,
+          "factor": 0.044135489132808056
+        },
+        {
+          "x": 5.0,
+          "y": 3.0,
+          "z": 10.0,
+          "factor": 0.007979574269385368
+        },
+        {
+          "x": 5.0,
+          "y": 3.0,
+          "z": 18.0,
+          "factor": 4.623648193188577e-06
+        },
+        {
+          "x": 5.0,
+          "y": 30.0,
+          "z": 35.001,
+          "factor": 0.002781484053447249
+        },
+        {
+          "x": 5.0,
+          "y": 30.0,
+          "z": 35.1,
+          "factor": 0.0025262368059237143
+        },
+        {
+          "x": 5.0,
+          "y": 30.0,
+          "z": 37.0,
+          "factor": 0.0003977323693593793
+        },
+        {
+          "x": 5.0,
+          "y": 30.0,
+          "z": 45.0,
+          "factor": 1.6151368179080879e-07
+        },
+        {
+          "x": 20.0,
+          "y": 0.0,
+          "z": 20.001,
+          "factor": 0.07474128383306494
+        },
+        {
+          "x": 20.0,
+          "y": 0.0,
+          "z": 20.1,
+          "factor": 0.06801549766699044
+        },
+        {
+          "x": 20.0,
+          "y": 0.0,
+          "z": 22.0,
+          "factor": 0.011089034770199954
+        },
+        {
+          "x": 20.0,
+          "y": 0.0,
+          "z": 30.0,
+          "factor": 5.013854743144421e-06
+        },
+        {
+          "x": 20.0,
+          "y": 0.02,
+          "z": 20.021,
+          "factor": 0.0733340098906075
+        },
+        {
+          "x": 20.0,
+          "y": 0.02,
+          "z": 20.12,
+          "factor": 0.066734562972478
+        },
+        {
+          "x": 20.0,
+          "y": 0.02,
+          "z": 22.02,
+          "factor": 0.010879344034460876
+        },
+        {
+          "x": 20.0,
+          "y": 0.02,
+          "z": 30.02,
+          "factor": 4.917941172724659e-06
+        },
+        {
+          "x": 20.0,
+          "y": 0.7,
+          "z": 20.701,
+          "factor": 0.04026500710078775
+        },
+        {
+          "x": 20.0,
+          "y": 0.7,
+          "z": 20.8,
+          "factor": 0.0366361115721486
+        },
+        {
+          "x": 20.0,
+          "y": 0.7,
+          "z": 22.7,
+          "factor": 0.005957193538088277
+        },
+        {
+          "x": 20.0,
+          "y": 0.7,
+          "z": 30.7,
+          "factor": 2.6729865331218248e-06
+        },
+        {
+          "x": 20.0,
+          "y": 3.0,
+          "z": 23.001,
+          "factor": 0.009537951365104614
+        },
+        {
+          "x": 20.0,
+          "y": 3.0,
+          "z": 23.1,
+          "factor": 0.00867456399950355
+        },
+        {
+          "x": 20.0,
+          "y": 3.0,
+          "z": 25.0,
+          "factor": 0.0013997305624011327
+        },
+        {
+          "x": 20.0,
+          "y": 3.0,
+          "z": 33.0,
+          "factor": 6.140364598396355e-07
+        },
+        {
+          "x": 20.0,
+          "y": 30.0,
+          "z": 50.001,
+          "factor": 0.0002924319114072202
+        },
+        {
+          "x": 20.0,
+          "y": 30.0,
+          "z": 50.1,
+          "factor": 0.0002653822169371067
+        },
+        {
+          "x": 20.0,
+          "y": 30.0,
+          "z": 52.0,
+          "factor": 4.116871121207084e-05
+        },
+        {
+          "x": 20.0,
+          "y": 30.0,
+          "z": 60.0,
+          "factor": 1.5895177492154986e-08
+        },
+        {
+          "x": 100.0,
+          "y": 0.0,
+          "z": 100.001,
+          "factor": 0.01498365734832503
+        },
+        {
+          "x": 100.0,
+          "y": 0.0,
+          "z": 100.1,
+          "factor": 0.01358464085007025
+        },
+        {
+          "x": 100.0,
+          "y": 0.0,
+          "z": 102.0,
+          "factor": 0.0020700208247456096
+        },
+        {
+          "x": 100.0,
+          "y": 0.0,
+          "z": 110.0,
+          "factor": 7.483497422399191e-07
+        },
+        {
+          "x": 100.0,
+          "y": 0.02,
+          "z": 100.021,
+          "factor": 0.014690456937603688
+        },
+        {
+          "x": 100.0,
+          "y": 0.02,
+          "z": 100.11999999999999,
+          "factor": 0.013318813831138906
+        },
+        {
+          "x": 100.0,
+          "y": 0.02,
+          "z": 102.02,
+          "factor": 0.0020295068310500924
+        },
+        {
+          "x": 100.0,
+          "y": 0.02,
+          "z": 110.02,
+          "factor": 7.336929393001929e-07
+        },
+        {
+          "x": 100.0,
+          "y": 0.7,
+          "z": 100.70100000000001,
+          "factor": 0.007865835088435148
+        },
+        {
+          "x": 100.0,
+          "y": 0.7,
+          "z": 100.8,
+          "factor": 0.007131357984479562
+        },
+        {
+          "x": 100.0,
+          "y": 0.7,
+          "z": 102.7,
+          "factor": 0.0010865349503899706
+        },
+        {
+          "x": 100.0,
+          "y": 0.7,
+          "z": 110.7,
+          "factor": 3.926108182529765e-07
+        },
+        {
+          "x": 100.0,
+          "y": 3.0,
+          "z": 103.001,
+          "factor": 0.0017227999975843447
+        },
+        {
+          "x": 100.0,
+          "y": 3.0,
+          "z": 103.1,
+          "factor": 0.0015618989145662246
+        },
+        {
+          "x": 100.0,
+          "y": 3.0,
+          "z": 105.0,
+          "factor": 0.00023787485865323866
+        },
+        {
+          "x": 100.0,
+          "y": 3.0,
+          "z": 113.0,
+          "factor": 8.582062521052787e-08
+        },
+        {
+          "x": 100.0,
+          "y": 30.0,
+          "z": 130.001,
+          "factor": 3.1310662926522125e-05
+        },
+        {
+          "x": 100.0,
+          "y": 30.0,
+          "z": 130.1,
+          "factor": 2.838083638195521e-05
+        },
+        {
+          "x": 100.0,
+          "y": 30.0,
+          "z": 132.0,
+          "factor": 4.3064025464098256e-06
+        },
+        {
+          "x": 100.0,
+          "y": 30.0,
+          "z": 140.0,
+          "factor": 1.5315325805901048e-09
+        }
+      ],
+      "test_volume_quadratures": [
+        {
+          "case": [
+            0.0,
+            0.4,
+            0.3,
+            1.0
+          ],
+          "n80": [
+            1.0000000000000009,
+            1.0000000000000009,
+            4.892504680695551e-14
+          ],
+          "n160": [
+            1.0000000000000029,
+            1.0000000000000029,
+            1.9602128967768987e-16
+          ],
+          "expected": 1.0
+        },
+        {
+          "case": [
+            1.0,
+            0.3,
+            0.2,
+            1.0
+          ],
+          "n80": [
+            1.0000000000000009,
+            0.745375885817937,
+            4.892722868493162e-14
+          ],
+          "n160": [
+            1.0000000000000024,
+            0.7453758858179382,
+            1.960234897066406e-16
+          ],
+          "expected": 0.7453758858179365
+        },
+        {
+          "case": [
+            1.0,
+            1.2,
+            0.5,
+            2.0
+          ],
+          "n80": [
+            1.0000000000000009,
+            0.47935278688835187,
+            4.8926137727707664e-14
+          ],
+          "n160": [
+            1.0000000000000027,
+            0.4793527868883529,
+            1.9602238968753593e-16
+          ],
+          "expected": 0.4793527868883516
+        },
+        {
+          "case": [
+            1.0,
+            2.0,
+            3.0,
+            5.5
+          ],
+          "n80": [
+            1.0000000000000018,
+            0.08707694482627545,
+            4.8919691906746266e-14
+          ],
+          "n160": [
+            1.0000000000000058,
+            0.08707694482627709,
+            1.9601588976363497e-16
+          ],
+          "expected": 0.08707694482627482
+        },
+        {
+          "case": [
+            2.0,
+            0.1,
+            0.9,
+            1.1
+          ],
+          "n80": [
+            1.000000000000004,
+            0.4855089258257971,
+            4.891374304820137e-14
+          ],
+          "n160": [
+            1.000000000000026,
+            0.4855089258258176,
+            1.9600989012079403e-16
+          ],
+          "expected": 0.4855089258257939
+        }
+      ],
+      "signed_control": {
+        "ratio": 7.3530942303823625,
+        "gamma": 1.7353094230382364,
+        "kappa": 19.000000000000004
+      },
+      "thermal_geometry_threshold": "1.565190266043298048062800"
+    },
+    "density_environment": {
+      "exact_upper_at_tenth": "229441903/23955750",
+      "grid": [
+        {
+          "k": "0.01",
+          "nu": "0.0001",
+          "z": "0.00001",
+          "dj": "57074210088361457258.24270687900187957253",
+          "dj_prime": "-23242053891975708111382721.72767007367844"
+        },
+        {
+          "k": "0.01",
+          "nu": "0.0001",
+          "z": "0.01",
+          "dj": "34871634.92613786309737204550005613961719",
+          "dj_prime": "-13105638639.22625386235951250732470983737"
+        },
+        {
+          "k": "0.01",
+          "nu": "0.0001",
+          "z": "0.1",
+          "dj": "63910.90431587544303171748050586589769663",
+          "dj_prime": "-1333772.708385416011142339536357522321507"
+        },
+        {
+          "k": "0.01",
+          "nu": "0.0001",
+          "z": "0.5",
+          "dj": "1877.692675393556419466654718290537012099",
+          "dj_prime": "-10025.09997365432002743487276496208568257"
+        },
+        {
+          "k": "0.01",
+          "nu": "0.0001",
+          "z": "0.9",
+          "dj": "146.6171286120626218758019740275489558101",
+          "dj_prime": "-1715.265352761992335782111595602760265128"
+        },
+        {
+          "k": "0.01",
+          "nu": "0.0001",
+          "z": "0.999",
+          "dj": "1.251415313508278022878559743417323988703",
+          "dj_prime": "-1253.307105921416856948057837365703840265"
+        },
+        {
+          "k": "0.01",
+          "nu": "1",
+          "z": "0.00001",
+          "dj": "570742038415635197385926.0378621837441789",
+          "dj_prime": "-232420526426161204825167423462.2677470937"
+        },
+        {
+          "k": "0.01",
+          "nu": "1",
+          "z": "0.01",
+          "dj": "286254616677.8734763345451972686026332853",
+          "dj_prime": "-118562790515973.8788297806920835563767242"
+        },
+        {
+          "k": "0.01",
+          "nu": "1",
+          "z": "0.1",
+          "dj": "20676047.28246577052336037206896825531678",
+          "dj_prime": "-844131207.565500317608962373884501565584"
+        },
+        {
+          "k": "0.01",
+          "nu": "1",
+          "z": "0.5",
+          "dj": "36532.93950257450394489769836928764676029",
+          "dj_prime": "-302232.7262339219238332637320950836298073"
+        },
+        {
+          "k": "0.01",
+          "nu": "1",
+          "z": "0.9",
+          "dj": "873.0043336846380020059945710222041492661",
+          "dj_prime": "-14661.92777265340745838208813909558751372"
+        },
+        {
+          "k": "0.01",
+          "nu": "1",
+          "z": "0.999",
+          "dj": "1.791846516420611994105468538058871516774",
+          "dj_prime": "-1919.308597759647510592414075464817554073"
+        },
+        {
+          "k": "0.01",
+          "nu": "100",
+          "z": "0.00001",
+          "dj": "57074203840945024893293628.528486415655",
+          "dj_prime": "-23242052642492421513444577397773.16646194"
+        },
+        {
+          "k": "0.01",
+          "nu": "100",
+          "z": "0.01",
+          "dj": "28624843234791.47134479472591242727363781",
+          "dj_prime": "-11856155352628315.71802961560010821499201"
+        },
+        {
+          "k": "0.01",
+          "nu": "100",
+          "z": "0.1",
+          "dj": "2061481629.277504887387583598649402851266",
+          "dj_prime": "-84289421787.47786681244262914102747614603"
+        },
+        {
+          "k": "0.01",
+          "nu": "100",
+          "z": "0.5",
+          "dj": "3467745.496649202971809357465794744057472",
+          "dj_prime": "-29233680.87081487279569750723012691968176"
+        },
+        {
+          "k": "0.01",
+          "nu": "100",
+          "z": "0.9",
+          "dj": "72792.52958839507167826268734277024310531",
+          "dj_prime": "-1296509.692118338073062340161752246800246"
+        },
+        {
+          "k": "0.01",
+          "nu": "100",
+          "z": "0.999",
+          "dj": "55.29988640873090617498752741345961687037",
+          "dj_prime": "-67860.05036392109836646926933280280902018"
+        },
+        {
+          "k": "0.1",
+          "nu": "0.0001",
+          "z": "0.00001",
+          "dj": "7383462307412942078.256503960198414738068",
+          "dj_prime": "-3010527588365336070133134.072023757541426"
+        },
+        {
+          "k": "0.1",
+          "nu": "0.0001",
+          "z": "0.01",
+          "dj": "4382470.430156957703163614551914093160419",
+          "dj_prime": "-1621014246.588533507076271077928022925822"
+        },
+        {
+          "k": "0.1",
+          "nu": "0.0001",
+          "z": "0.1",
+          "dj": "9558.684382441471104958316181936512318511",
+          "dj_prime": "-197948.6673897133750796711841133624481551"
+        },
+        {
+          "k": "0.1",
+          "nu": "0.0001",
+          "z": "0.5",
+          "dj": "283.1219799723001473452597951981863298394",
+          "dj_prime": "-1511.027713306491178437179331760175778381"
+        },
+        {
+          "k": "0.1",
+          "nu": "0.0001",
+          "z": "0.9",
+          "dj": "22.12006470192729529536255355891702817424",
+          "dj_prime": "-258.7423415251905999348905582761483207707"
+        },
+        {
+          "k": "0.1",
+          "nu": "0.0001",
+          "z": "0.999",
+          "dj": "0.1888606727117049365108450173102467320255",
+          "dj_prime": "-189.1445806457305715460347328863095009994"
+        },
+        {
+          "k": "0.1",
+          "nu": "1",
+          "z": "0.00001",
+          "dj": "73834613646500850296756.46817341271880925",
+          "dj_prime": "-30105273998127646415617055005.95186112854"
+        },
+        {
+          "k": "0.1",
+          "nu": "1",
+          "z": "0.01",
+          "dj": "34398018492.99814846020757409056950303276",
+          "dj_prime": "-14324616751599.6207850484250649945149725"
+        },
+        {
+          "k": "0.1",
+          "nu": "1",
+          "z": "0.1",
+          "dj": "2253320.967271853906726018962222266042253",
+          "dj_prime": "-93960959.61141946508242612684791019583677"
+        },
+        {
+          "k": "0.1",
+          "nu": "1",
+          "z": "0.5",
+          "dj": "2931.228294430044881169380553291869822957",
+          "dj_prime": "-26071.41877919749865750760331604349809137"
+        },
+        {
+          "k": "0.1",
+          "nu": "1",
+          "z": "0.9",
+          "dj": "58.74225736819104886363082726551983762017",
+          "dj_prime": "-968.388796879544322450556306456752680466"
+        },
+        {
+          "k": "0.1",
+          "nu": "1",
+          "z": "0.999",
+          "dj": "0.2489484890004667892815836636076111254252",
+          "dj_prime": "-252.1829908688951290920220917316414931461"
+        },
+        {
+          "k": "0.1",
+          "nu": "100",
+          "z": "0.00001",
+          "dj": "7383461364556742172542123.960198414738068",
+          "dj_prime": "-3010527399794096070133134072023.757541426"
+        },
+        {
+          "k": "0.1",
+          "nu": "100",
+          "z": "0.01",
+          "dj": "3439708515776.957703163614551914093160419",
+          "dj_prime": "-1432443006588533.507076271077928022925822"
+        },
+        {
+          "k": "0.1",
+          "nu": "100",
+          "z": "0.1",
+          "dj": "224408002.441471104958316181936512318511",
+          "dj_prime": "-9377427389.713375079671184113362448155106"
+        },
+        {
+          "k": "0.1",
+          "nu": "100",
+          "z": "0.5",
+          "dj": "265119.9723001473452597951981863298394386",
+          "dj_prime": "-2457793.306491178437179331760175778380565"
+        },
+        {
+          "k": "0.1",
+          "nu": "100",
+          "z": "0.9",
+          "dj": "3684.701927295295362553558917028174238207",
+          "dj_prime": "-71230.41407948882377944716503720965958099"
+        },
+        {
+          "k": "0.1",
+          "nu": "100",
+          "z": "0.999",
+          "dj": "6.198237230462036370542835772257551065988",
+          "dj_prime": "-6493.609745637663202952156630873422893812"
+        },
+        {
+          "k": "0.3",
+          "nu": "0.0001",
+          "z": "0.00001",
+          "dj": "17878394491380781487.53151966844226102556",
+          "dj_prime": "-7284690601561342018143990.757001426253535"
+        },
+        {
+          "k": "0.3",
+          "nu": "0.0001",
+          "z": "0.01",
+          "dj": "11277893.86999769157325262976225296871639",
+          "dj_prime": "-4122900483.046026489775288158403411504812"
+        },
+        {
+          "k": "0.3",
+          "nu": "0.0001",
+          "z": "0.1",
+          "dj": "26339.06332703740306527256097857705755339",
+          "dj_prime": "-544724.9506860935532043420372131252331872"
+        },
+        {
+          "k": "0.3",
+          "nu": "0.0001",
+          "z": "0.5",
+          "dj": "780.867253891386881820614123646530637428",
+          "dj_prime": "-4167.617900136677054259356799358741733845"
+        },
+        {
+          "k": "0.3",
+          "nu": "0.0001",
+          "z": "0.9",
+          "dj": "61.00272679725254510460734169437561647469",
+          "dj_prime": "-713.5877549445144681847183522410707922043"
+        },
+        {
+          "k": "0.3",
+          "nu": "0.0001",
+          "z": "0.999",
+          "dj": "0.5207961569716233571011200532123909817467",
+          "dj_prime": "-521.5800121856749951287644009241623106076"
+        },
+        {
+          "k": "0.3",
+          "nu": "1",
+          "z": "0.00001",
+          "dj": "178783918916407817475055.1966844226102556",
+          "dj_prime": "-72846900816133420181439907570.01426253535"
+        },
+        {
+          "k": "0.3",
+          "nu": "1",
+          "z": "0.01",
+          "dj": "86784138439.97691573252629762252968716392",
+          "dj_prime": "-36029524830460.26489775288158403411504812"
+        },
+        {
+          "k": "0.3",
+          "nu": "1",
+          "z": "0.1",
+          "dj": "6016373.270374030652725609785770575533883",
+          "dj_prime": "-247769506.8609355320434203721312523318721"
+        },
+        {
+          "k": "0.3",
+          "nu": "1",
+          "z": "0.5",
+          "dj": "9452.538913868818206141236465306374279902",
+          "dj_prime": "-80339.00136677054259356799358741733844725"
+        },
+        {
+          "k": "0.3",
+          "nu": "1",
+          "z": "0.9",
+          "dj": "211.7124169698954905178613882006091913941",
+          "dj_prime": "-3531.870432799002834837843398362243030608"
+        },
+        {
+          "k": "0.3",
+          "nu": "1",
+          "z": "0.999",
+          "dj": "0.6719377419169120098568460955391044111652",
+          "dj_prime": "-690.432903848416434788466326651392937033"
+        },
+        {
+          "k": "0.3",
+          "nu": "100",
+          "z": "0.00001",
+          "dj": "17878391891383381747531259.66844226102556",
+          "dj_prime": "-7284690081561862018143990757001.426253535"
+        },
+        {
+          "k": "0.3",
+          "nu": "100",
+          "z": "0.01",
+          "dj": "8678156469737.691573252629762252968716392",
+          "dj_prime": "-3602901003046026.489775288158403411504812"
+        },
+        {
+          "k": "0.3",
+          "nu": "100",
+          "z": "0.1",
+          "dj": "599089067.0374030652725609785770575533883",
+          "dj_prime": "-24725470686.09355320434203721312523318721"
+        },
+        {
+          "k": "0.3",
+          "nu": "100",
+          "z": "0.5",
+          "dj": "868033.8913868818206141236465306374279902",
+          "dj_prime": "-7622060.136677054259356799358741733844725"
+        },
+        {
+          "k": "0.3",
+          "nu": "100",
+          "z": "0.9",
+          "dj": "15133.46391921177127400836104228314136164",
+          "dj_prime": "-282569.7593292829995331670558856070191102"
+        },
+        {
+          "k": "0.3",
+          "nu": "100",
+          "z": "0.999",
+          "dj": "15.63645110283658059953269187046122613578",
+          "dj_prime": "-17408.5409892683609555510332303375935732"
+        }
+      ],
+      "roots": [
+        {
+          "index": 0,
+          "z": "0.00217625615049303492785857371453100520859874331268343877727836",
+          "u": "-13.93828263007376571563753631458044185351",
+          "delta_j": "1940438849.739479233068641697935990484055",
+          "Uzz": "10207.08741244826508248836175447604145531",
+          "mE2_over_Hv2": "0.01413993752515234089042631074030821354791",
+          "mJ2_over_Hv2": "2985.571439623967451211061473664201399717",
+          "W": "25.27708797304131699754281645287184756235",
+          "q": "0.2924998404523166815124039112195682055323",
+          "principal_G_over_vacuum": "0.000005564906041318073609692640860111371830166"
+        },
+        {
+          "index": 1,
+          "z": "0.222128105372474766582057827787198927509071858582975543877201",
+          "u": "-5.341547012424780922084840106430245747879",
+          "delta_j": "1824.817590283439791516007207285028076354",
+          "Uzz": "-79.87850060998195325243584416371866163167",
+          "mE2_over_Hv2": "-1.145994379711363246642206152861732402675",
+          "mJ2_over_Hv2": "-23.22605569174561868964409830127390521449",
+          "W": "27.2669888705505459576626514883275946064",
+          "q": "0.2907672967617420841526317859537717374894",
+          "principal_G_over_vacuum": "0.05789783082946982120094833487503812315832"
+        },
+        {
+          "index": 2,
+          "z": "0.869542440354723726801497038664592705103599197569057784555774",
+          "u": "-1.714921628011489484987253607847724669835",
+          "delta_j": "30.41989035598308475319371021785240968175",
+          "Uzz": "119.6336684093623053503512024144686664242",
+          "mE2_over_Hv2": "20.33402242795199318209274562407790341739",
+          "mJ2_over_Hv2": "26.89315349909934331397807605740557205544",
+          "W": "20.29320616403167018330844552329459428645",
+          "q": "0.2247958610370150266281931122026454947958",
+          "principal_G_over_vacuum": "0.8418846525320860866227136244971772291345"
+        }
+      ]
+    },
+    "susceptibility": {
+      "root_diagnostics": [
+        {
+          "index": 0,
+          "S_env": "4.110661837998028702431907039603647351305",
+          "stationary_log_susceptibility": "-0.2432698284145453360985380050560478255404"
+        },
+        {
+          "index": 1,
+          "S_env": "2.112836999975531938510502372398467186159",
+          "stationary_log_susceptibility": "-0.4732972775522109215665758040141424303877"
+        },
+        {
+          "index": 2,
+          "S_env": "8.201327598863235927373648029846150597595",
+          "stationary_log_susceptibility": "-0.1219314785253313529519060116229219975146"
+        }
+      ],
+      "small_A_controls": [
+        {
+          "A": "0.0001",
+          "S_env": "4.09414260456091622655015003036869549037",
+          "density_over_leading": "1.000015729220234650555293847050109018708"
+        },
+        {
+          "A": "0.000001",
+          "S_env": "4.06568729975971861248948677197118700167",
+          "density_over_leading": "1.00000000111152596538875338962708975076"
+        },
+        {
+          "A": "0.000000001",
+          "S_env": "4.045184674380175477056152017161506617898",
+          "density_over_leading": "1.000000000000000786221550354630208987989"
+        },
+        {
+          "A": "0.000000000001",
+          "S_env": "4.034436266088648274003704391464328627628",
+          "density_over_leading": "1.000000000000000000000621861755094627712"
+        }
+      ],
+      "near_vacuum_controls": [
+        {
+          "one_minus_A": "0.001",
+          "S_env": "1000.501763294704347180564151625714753511",
+          "density_over_linear": "1.001503521849288321244746463116062486121"
+        },
+        {
+          "one_minus_A": "0.00001",
+          "S_env": "100000.5015218722364927865752854423014605",
+          "density_over_linear": "1.000015015394340007769968559578411619846"
+        },
+        {
+          "one_minus_A": "0.0000001",
+          "S_env": "10000000.50151945885353688864668008780102",
+          "density_over_linear": "1.000000150151963446880097731996219378805"
+        }
+      ]
+    }
+  },
+  "checker_sha256": "cfff062268624def956d92e737349524153932cbc33195e6f415f8719aa5305d"
+}
+
+----- stderr -----
+

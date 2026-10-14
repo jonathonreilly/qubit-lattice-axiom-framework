@@ -1,0 +1,85 @@
+calibration: H=+sigma.k occupied-band Chern on sphere = +1.000  (define chirality R=+1 for H=+sigma.k)
+
+L=2 class=none Delta=0.0: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, 'B2': 0.5}
+
+L=2 class=a Delta=0.3: zero points on 16^3 grid = 8; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 1.0}
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.005, 'A2': 0.022, 'chi': 0.973}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.005, 'A2': 0.022, 'chi': 0.973}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A2': 0.006, 'chi': 0.994}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.005, 'A2': 0.022, 'chi': 0.973}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A2': 0.006, 'chi': 0.994}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A2': 0.006, 'chi': 0.994}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A2': 0.002, 'chi': 0.997}
+
+L=2 class=a Delta=1.0: zero points on 16^3 grid = 8; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 1.0}
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.048, 'A2': 0.19, 'chi': 0.762}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.048, 'A2': 0.19, 'chi': 0.762}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.004, 'A2': 0.059, 'chi': 0.938}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.048, 'A2': 0.19, 'chi': 0.762}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.004, 'A2': 0.059, 'chi': 0.938}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.004, 'A2': 0.059, 'chi': 0.938}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A2': 0.027, 'chi': 0.972}
+
+L=2 class=a Delta=3.0: zero points on 16^3 grid = 8; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 1.0}
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.148, 'A2': 0.59, 'chi': 0.262}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.148, 'A2': 0.59, 'chi': 0.262}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.022, 'A2': 0.352, 'chi': 0.626}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.148, 'A2': 0.59, 'chi': 0.262}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.022, 'A2': 0.352, 'chi': 0.626}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.022, 'A2': 0.352, 'chi': 0.626}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.006, 'A2': 0.199, 'chi': 0.796}
+
+L=2 class=b Delta=0.3: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, "chi'": 0.5}
+
+L=2 class=b Delta=1.0: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, "chi'": 0.5}
+
+L=2 class=b Delta=3.0: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, "chi'": 0.5}
+
+L=3 class=none Delta=0.0: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, 'B3': 0.5}
+
+L=3 class=a Delta=0.3: zero points on 16^3 grid = 8; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 1.0}
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.001, 'A2': 0.005, 'A3': 0.022, 'chi': 0.971}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.001, 'A2': 0.005, 'A3': 0.022, 'chi': 0.971}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A3': 0.006, 'chi': 0.994}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.001, 'A2': 0.005, 'A3': 0.022, 'chi': 0.971}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A3': 0.006, 'chi': 0.994}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A3': 0.006, 'chi': 0.994}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A3': 0.002, 'chi': 0.997}
+
+L=3 class=a Delta=1.0: zero points on 16^3 grid = 8; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 1.0}
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.012, 'A2': 0.047, 'A3': 0.188, 'chi': 0.753}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.012, 'A2': 0.047, 'A3': 0.188, 'chi': 0.753}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A2': 0.004, 'A3': 0.059, 'chi': 0.938}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.012, 'A2': 0.047, 'A3': 0.188, 'chi': 0.753}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A2': 0.004, 'A3': 0.059, 'chi': 0.938}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A2': 0.004, 'A3': 0.059, 'chi': 0.938}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A3': 0.027, 'chi': 0.972}
+
+L=3 class=a Delta=3.0: zero points on 16^3 grid = 8; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 1.0}
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.036, 'A2': 0.142, 'A3': 0.569, 'chi': 0.253}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.036, 'A2': 0.142, 'A3': 0.569, 'chi': 0.253}
+   p/pi=(np.float64(0.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.001, 'A2': 0.022, 'A3': 0.352, 'chi': 0.625}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(0.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A1': 0.036, 'A2': 0.142, 'A3': 0.569, 'chi': 0.253}
+   p/pi=(np.float64(1.0), np.float64(0.0), np.float64(1.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.001, 'A2': 0.022, 'A3': 0.352, 'chi': 0.625}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(0.0))  #Weyl~1  chirality(sum)=+1  zero-mode weights={'A1': 0.001, 'A2': 0.022, 'A3': 0.352, 'chi': 0.625}
+   p/pi=(np.float64(1.0), np.float64(1.0), np.float64(1.0))  #Weyl~1  chirality(sum)=-1  zero-mode weights={'A2': 0.006, 'A3': 0.199, 'chi': 0.795}
+
+L=3 class=b Delta=0.3: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, "chi'": 0.5}
+
+L=3 class=b Delta=1.0: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, "chi'": 0.5}
+
+L=3 class=b Delta=3.0: zero points on 16^3 grid = 1; next-smallest |E| on grid = 0.383; NET chirality = +0
+   p/pi=(np.float64(0.0), np.float64(0.0), np.float64(0.0))  #Weyl~2  chirality(sum)=+0  zero-mode weights={'A1': 0.5, "chi'": 0.5}

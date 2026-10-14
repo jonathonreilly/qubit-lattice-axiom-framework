@@ -1,0 +1,7 @@
+{
+  "base": "03836ecd8c9921aa1a3f12c2e1dbfcd21e7b021e",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-local-clock-data-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9564"
+}

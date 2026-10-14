@@ -1,0 +1,44 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "critical_mediator_clock_data_bounded_theorem_note_2026-10-14",
+      "to": "positive_open_path_clock_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "critical_mediator_clock_data_bounded_theorem_note_2026-10-14",
+      "to": "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 2,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "critical_mediator_clock_data_bounded_theorem_note_2026-10-14",
+      "claim_type": "bounded_theorem",
+      "deps": [
+        "positive_open_path_clock_bounded_theorem_note_2026-10-14",
+        "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/CRITICAL_MEDIATOR_CLOCK_DATA_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/critical_mediator_clock_data_identity_2026_10_14.py"
+    }
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "OPEN_PATH_CLOCK",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "EARLIER_MEDIATOR",
+      "role_class": "attributed_predecessor_rederived"
+    }
+  ],
+  "scope": "One open-path theorem import and one predecessor construction attribution, rederived here. No balanced, record-window or ancestry-only theorem import."
+}

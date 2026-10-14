@@ -1,0 +1,64 @@
+{
+  "actual_citations_and_complete_graph_object_preservation_reviewed": true,
+  "base": "f51da3b003aa1854e7c1ed4ce8bea753e80aeef1",
+  "block_handoff_and_review_history_read": true,
+  "branch": "physics-loop/toe-critical-mediator-20261014",
+  "complete148_file_assembly_and_unique_unchanged_proof_reviewed": true,
+  "complete_driver_read": true,
+  "disposition": "accepted_for_source_integration",
+  "exact_source_diff_producer_conventions_reviewed": true,
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/CRITICAL_MEDIATOR_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_read": true,
+  "final_assembly_review_sha256": "e77d23fb39406f7ea4c37798bf92fcd412bc12a8a694bc88485459b9232ec6a4",
+  "full_auxiliary_gap_response_counterterms_and_finite_time_residual_reviewed": true,
+  "full_runtime_original_H_fixed_inventory_geometry_and_actual_covariance_scope_reviewed": true,
+  "identity_tools_and_archive_map_read": true,
+  "mathematical_predicates": 0,
+  "new_publication_wrappers_read": true,
+  "no_go_packet_pass": false,
+  "packet_and_dependency_delta_read": true,
+  "placeholder_only": false,
+  "pre_and_post_checker_index_equality_and_existing_ledger_scope_reviewed": true,
+  "prepared_clock_full_reference_dirty_transit_and_binary_outcome_scope_reviewed": true,
+  "prior_acceptance_sha256s": [
+    "9b92b644f7f64dfe6da13f849b36d97cc0bbd8ef47d7485094dd494626f28346",
+    "0eb420908d9f30e9a59fbe5c55f673cc556d76676b9315b57a29f91553e4169e"
+  ],
+  "publication_byte_maps_and_diffs_verified": true,
+  "publication_program_sha256": "87e83201c12eef969ab198e88684541cf90c8e9345406423fa93a6c3489afd95",
+  "publication_source_freeze_sha256": "206799d351ad7707820fd77d96f35903a69093fba68f88abe27f053672a08432",
+  "root_authorizes_execution": true,
+  "root_execution_acceptance": true,
+  "source_assembly_freeze_sha256": "3f5e450c9542db15361561176d5940cd688f16d1384c6d221eb57afb0ef3b6f0",
+  "source_checker_and_recording_wrapper_read": true,
+  "twelve_section_conformance_reviewed": true,
+  "unchanged_source_coverage_reused": true,
+  "waveform_import_and_rederived_predecessor_attribution_reviewed": true,
+  "whitespace_and_link_policy_reviewed": true,
+  "whole_root_assembly_and_actual_outer_streams_missing_child_pin_limits_reviewed": true,
+  "recorded_utc": "2026-10-14T19:50:08.012915+00:00",
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_publication_final_root_review/SOURCE_BINDING.json",
+    "bytes": 6023,
+    "sha256": "79555a5238220b9f980fb60d151c9e55293a9c473cb0747751f01d2157fb6e95"
+  },
+  "actual_streams": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_publication_final_root_review/ACTUAL_STREAMS.json",
+    "bytes": 19282,
+    "sha256": "837904c55d932d022ea54dfa58e6b36de07115acb9a8e175370b4514fa8d7d2a"
+  },
+  "source_checker_executions": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_publication_final_root_review/CHECKER_EXECUTIONS.json",
+    "bytes": 1902,
+    "sha256": "5816449b6b4447fde2b3bc9a284a39c148db6b8d8c30537c11ceab3320764920"
+  },
+  "acceptance_writer": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_publication_final_root_review/accept.py",
+    "bytes": 5648,
+    "sha256": "6eb9ae5046f964c145c460ff0d058acffa4b0d0b8802bea0ec63dd4d5a13049d"
+  },
+  "new_independent_mathematical_review": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": []
+}

@@ -1,0 +1,7 @@
+{
+  "base": "f51da3b003aa1854e7c1ed4ce8bea753e80aeef1",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-critical-mediator-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9569"
+}

@@ -1,0 +1,181 @@
+{
+  "actual_parent_head": "03836ecd8c9921aa1a3f12c2e1dbfcd21e7b021e",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-unary-cycle-clock-20261014",
+    "baseRefOid": "d83ac7eabd6fffa7bf2a941c3dffd070796a53db",
+    "createdAt": "2026-10-14T17:46:48Z",
+    "headRefName": "physics-loop/toe-open-path-clock-20261014",
+    "headRefOid": "03836ecd8c9921aa1a3f12c2e1dbfcd21e7b021e",
+    "isDraft": false,
+    "number": 9564,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "Realize a prepared positive open-path clock with unchanged background",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9564"
+  },
+  "all_markdown_note_targets": [
+    "POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "actual_use": "Actual positive open-path K_C, compact chi, signed samples V_j, actual free-clock retained comparator and finite E_path. Actual published open-path body is now bound; original source pending language remains historical.",
+      "body_edits": [],
+      "byte_end_exclusive": 37108,
+      "byte_start_inclusive": 9554,
+      "canonical_path": "docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "f25798a93f9426965e018c2276c2a6a4b43ceba088532e73734bac9867709e8d",
+      "line_end_inclusive": 376,
+      "line_start_inclusive": 58,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_clock_data_bridge/sources/joint_open_path_clock_consistency_DERIVATION_CURRENT.md",
+      "source_sha256": "a59c38c7352931da0a5df51c2bca63ddbbe37fd302a18d5a36347235083c967b"
+    },
+    {
+      "actual_use": "Original arbitrary finite H, full signed finite waveform including scalar phase and waits, and supplied full-word certificate. No initial-K recovery or native controllability theorem.",
+      "body_edits": [],
+      "byte_end_exclusive": 42611,
+      "byte_start_inclusive": 11861,
+      "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "line_end_inclusive": 341,
+      "line_start_inclusive": 65,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control/DERIVATION.md",
+      "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+    },
+    {
+      "actual_use": "Finite smoothing and full-reference prepared comparison inherited by open-path source; no rotor law, native measurement or independent new clock theorem.",
+      "body_edits": [],
+      "byte_end_exclusive": 44273,
+      "byte_start_inclusive": 8890,
+      "canonical_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "line_end_inclusive": 459,
+      "line_start_inclusive": 61,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge/DERIVATION.md",
+      "source_sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Actual positive open-path K_C, compact chi, signed samples V_j, actual free-clock retained comparator and finite E_path. Actual published open-path body is now bound; original source pending language remains historical.",
+          "body_edits": [],
+          "byte_end_exclusive": 36801,
+          "byte_start_inclusive": 9247,
+          "canonical_path": "docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "8df4957000adecc64ae2edb87edbe269e59e2c0a485bf976f332a02832402fc4",
+          "line_end_inclusive": 376,
+          "line_start_inclusive": 58,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_clock_data_bridge/sources/joint_open_path_clock_consistency_DERIVATION_CURRENT.md",
+          "source_sha256": "a59c38c7352931da0a5df51c2bca63ddbbe37fd302a18d5a36347235083c967b"
+        }
+      ],
+      "actual_use": "Actual positive open-path K_C, compact chi, signed samples V_j, actual free-clock retained comparator and finite E_path. Actual published open-path body is now bound; original source pending language remains historical.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 37692,
+      "claim_id": "positive_open_path_clock_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "direct prepared-map composition parent",
+      "imported_theorem_result": true,
+      "key": "OPEN_PATH_CLOCK",
+      "markdown": "[Positive prepared open-path clock](POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "f25798a93f9426965e018c2276c2a6a4b43ceba088532e73734bac9867709e8d",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "8df4957000adecc64ae2edb87edbe269e59e2c0a485bf976f332a02832402fc4",
+      "original_bytes": 37385
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Original arbitrary finite H, full signed finite waveform including scalar phase and waits, and supplied full-word certificate. No initial-K recovery or native controllability theorem.",
+          "body_edits": [],
+          "byte_end_exclusive": 42304,
+          "byte_start_inclusive": 11554,
+          "canonical_path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+          "line_end_inclusive": 341,
+          "line_start_inclusive": 65,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control/DERIVATION.md",
+          "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+        }
+      ],
+      "actual_use": "Original arbitrary finite H, full signed finite waveform including scalar phase and waits, and supplied full-word certificate. No initial-K recovery or native controllability theorem.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 42611,
+      "claim_id": "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited literal application interface",
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "markdown": "[Fixed-background control](LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "08cd7aa0e9e0dbe0112b09d3b3a90d695aee715c93c57ffacf56ccc821bc77b0",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "original_bytes": 42304
+    },
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Finite smoothing and full-reference prepared comparison inherited by open-path source; no rotor law, native measurement or independent new clock theorem.",
+          "body_edits": [],
+          "byte_end_exclusive": 44025,
+          "byte_start_inclusive": 8642,
+          "canonical_path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+          "line_end_inclusive": 459,
+          "line_start_inclusive": 61,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge/DERIVATION.md",
+          "source_sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+        }
+      ],
+      "actual_use": "Finite smoothing and full-reference prepared comparison inherited by open-path source; no rotor law, native measurement or independent new clock theorem.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 44751,
+      "claim_id": "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root source coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "inherited waveform/prepared-output interface",
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "markdown": "[Autonomous waveform interface](LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/LITERAL_L4_AUTONOMOUS_CLOCK_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "bd2b0e294624e9dd9b445e4431f1b1463da8b0e597977bfe4ce03c893c3d74b5",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "8749f0bbd3b8e38946478d5e03f1c9d9abc8d86762ec850e58057bf5b3db8763",
+      "original_bytes": 44503
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "OPEN_PATH_CLOCK",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "verification_scope": "Actual source citation roles and canonical body identities; no graph execution"
+}

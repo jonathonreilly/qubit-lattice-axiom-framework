@@ -1,0 +1,135 @@
+{
+  "actual_parent_head": "f51da3b003aa1854e7c1ed4ce8bea753e80aeef1",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-open-path-clock-20261014",
+    "createdAt": "2026-10-14T19:31:54Z",
+    "headRefName": "physics-loop/toe-local-clock-data-20261014",
+    "headRefOid": "f51da3b003aa1854e7c1ed4ce8bea753e80aeef1",
+    "isDraft": false,
+    "number": 9569,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9569"
+  },
+  "all_markdown_note_targets": [
+    "POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+    "FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+  ],
+  "attribution_edge_is_not_theorem_import": true,
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "actual_use": "Equation(4) only, retaining finite horizon, prepared compact packet/normalization, actual free-clock comparator and fixed-width localization floor.",
+      "body_edits": [],
+      "byte_end_exclusive": 37108,
+      "byte_start_inclusive": 9554,
+      "canonical_path": "docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "f25798a93f9426965e018c2276c2a6a4b43ceba088532e73734bac9867709e8d",
+      "imported_theorem_result": true,
+      "line_end_inclusive": 376,
+      "line_start_inclusive": 58,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency/DERIVATION_CURRENT.md",
+      "source_sha256": "a59c38c7352931da0a5df51c2bca63ddbbe37fd302a18d5a36347235083c967b"
+    },
+    {
+      "actual_use": "Prior quarter-hopping response architecture and residual context; critical inverse/gap/response and two-correction comparison proved explicitly in the accepted body.",
+      "body_edits": [],
+      "byte_end_exclusive": 35421,
+      "byte_start_inclusive": 7032,
+      "canonical_path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4",
+      "imported_theorem_result": false,
+      "line_end_inclusive": 378,
+      "line_start_inclusive": 106,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_clock_data_bridge/DERIVATION.md",
+      "source_sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6"
+    }
+  ],
+  "direct_edges_verified": true,
+  "history_theorem_imported": false,
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "actual_imported_bodies": [
+        {
+          "actual_use": "Equation(4) only, retaining finite horizon, prepared compact packet/normalization, actual free-clock comparator and fixed-width localization floor.",
+          "body_edits": [],
+          "byte_end_exclusive": 36801,
+          "byte_start_inclusive": 9247,
+          "canonical_path": "docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "8df4957000adecc64ae2edb87edbe269e59e2c0a485bf976f332a02832402fc4",
+          "imported_theorem_result": true,
+          "line_end_inclusive": 376,
+          "line_start_inclusive": 58,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency/DERIVATION_CURRENT.md",
+          "source_sha256": "a59c38c7352931da0a5df51c2bca63ddbbe37fd302a18d5a36347235083c967b"
+        }
+      ],
+      "actual_use": "Equation(4) only, retaining finite horizon, prepared compact packet/normalization, actual free-clock comparator and fixed-width localization floor.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "attributed_complete_bodies": [],
+      "bytes": 37692,
+      "claim_id": "positive_open_path_clock_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "imported conditional waveform theorem",
+      "imported_theorem_result": true,
+      "key": "OPEN_PATH_CLOCK",
+      "markdown": "[Accepted open-path waveform](POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/POSITIVE_OPEN_PATH_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "f25798a93f9426965e018c2276c2a6a4b43ceba088532e73734bac9867709e8d",
+      "relied_role_checked": true,
+      "role_class": "direct_scientific_premise",
+      "original_published_sha256": "8df4957000adecc64ae2edb87edbe269e59e2c0a485bf976f332a02832402fc4",
+      "original_bytes": 37385
+    },
+    {
+      "actual_imported_bodies": [],
+      "actual_use": "Prior quarter-hopping response architecture and residual context; critical inverse/gap/response and two-correction comparison proved explicitly in the accepted body.",
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "attributed_complete_bodies": [
+        {
+          "actual_use": "Prior quarter-hopping response architecture and residual context; critical inverse/gap/response and two-correction comparison proved explicitly in the accepted body.",
+          "body_edits": [],
+          "byte_end_exclusive": 35114,
+          "byte_start_inclusive": 6725,
+          "canonical_path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+          "canonical_sha256": "485464e96d8df6dec87a36b9fc17cd72db74568f3e65a1cfa9c9bb1f3c17aeb0",
+          "imported_theorem_result": false,
+          "line_end_inclusive": 378,
+          "line_start_inclusive": 106,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_local_clock_data_bridge/DERIVATION.md",
+          "source_sha256": "8831f7bf0398f59780ca965539d9c9be70ec9137add5c3d6d219c895c3fb79b6"
+        }
+      ],
+      "bytes": 37090,
+      "claim_id": "finite_range_clock_data_bridge_bounded_theorem_note_2026-10-14",
+      "complete_body_identity_verified": true,
+      "coverage_owner": "Exact completed author/separate/root coverage reused; publication identity checking is not another mathematical review",
+      "historical_source_exposure_role": "attributed predecessor construction and residual route, rederived here",
+      "imported_theorem_result": false,
+      "key": "EARLIER_MEDIATOR",
+      "markdown": "[Earlier mediator construction](FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "path": "docs/FINITE_RANGE_CLOCK_DATA_BRIDGE_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "published_sha256": "919131c6a496fa4349fee090f454da0c582142ba8736bc4c01497792433430d4",
+      "relied_role_checked": true,
+      "role_class": "attributed_predecessor_rederived",
+      "original_published_sha256": "485464e96d8df6dec87a36b9fc17cd72db74568f3e65a1cfa9c9bb1f3c17aeb0",
+      "original_bytes": 36783
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "OPEN_PATH_CLOCK",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": false,
+      "key": "EARLIER_MEDIATOR",
+      "role_class": "attributed_predecessor_rederived"
+    }
+  ],
+  "verification_scope": "Actual source citation roles and canonical body identities; no graph execution"
+}

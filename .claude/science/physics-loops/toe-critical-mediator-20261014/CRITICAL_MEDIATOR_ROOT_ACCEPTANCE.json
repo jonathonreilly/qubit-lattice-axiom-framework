@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-14T17:36:09.152641+00:00",
+  "disposition": "accepted_conditional_analytic_source",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path/DERIVATION.md",
+    "bytes": 25438,
+    "sha256": "b53e61646d2275e47128b3333928263ff84fbfb2fff5a5f7b2434a2f6795ddc9"
+  },
+  "author_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path/FINAL_FREEZE.json",
+    "bytes": 7099,
+    "sha256": "ac901d44874bbd795405f5929f5c1fb641fd82c74a02fd22e5c7b14139028aa0"
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path_review/REPORT.md",
+    "bytes": 21233,
+    "sha256": "4d112545111a2152dd41970d3607ea6beb6baf34de60bbb2c733fac0a58a9956"
+  },
+  "separate_review_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_critical_mediator_path_review/FINAL_REVIEW_FREEZE.json",
+    "bytes": 19234,
+    "sha256": "50470ec98739fa7cbdaf078c07494a8ab6b45012530a8cf24a0f9020fd3fce07"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/CRITICAL_MEDIATOR_ROOT_REVIEW.md",
+    "bytes": 7928,
+    "sha256": "d203bb5d26f0e6dff1607d0cc2bdb0a81c52875eda564ed610f02fe85cbac482"
+  },
+  "root_analytic_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/ANALYTIC_READ.md",
+    "bytes": 10338,
+    "sha256": "fec69eba11abaafe31da299efc0230fd3fa5da7b3abc6762668fde6ccafd5e83"
+  },
+  "root_preassessment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/PREASSESSMENT.md",
+    "bytes": 3498,
+    "sha256": "036f2064cc181f61c060eb326a105f4f41bf25decda973c11c452d51e527e99c"
+  },
+  "root_exposure_start": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/AUTHOR_EXPOSURE_START.json",
+    "bytes": 311,
+    "sha256": "e117f6b6aefab45e7f9d3fe77e3c497922329e52ba665e548d903c530fedfb55"
+  },
+  "author_source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/AUTHOR_BINDING.json",
+    "bytes": 6524,
+    "sha256": "28ae17bc564f26cf7dab819743c97666def6b76e0c177cd33bcf100d5315e565"
+  },
+  "review_source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/REVIEW_BINDING.json",
+    "bytes": 9811,
+    "sha256": "14056033eee58db603f1fb5fc19cced26f8e1d1fea8b08ab3ab3588c371feea8"
+  },
+  "review_actual_streams": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/REVIEW_ACTUAL_STREAMS.txt",
+    "bytes": 10191,
+    "sha256": "8600003700a44f932ac889aa77ed0116b43be9cb6d2b610de5df5559300307a6"
+  },
+  "writer": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/critical_mediator_root_review/accept.py",
+    "bytes": 2477,
+    "sha256": "a9c3eb945aa8a2e761eeca2a3d5f003a84805d551bdfe9b14a127d7f725d2367"
+  },
+  "required_mathematical_repairs": [],
+  "source_assembly_authorized": true,
+  "canonical_integration_authorized": false,
+  "retained_or_audit_status": false,
+  "physical_axiom_or_native_energy_identification": false,
+  "new_root_scientific_executions": 0,
+  "identity_predicates_are_mathematical_proof": false,
+  "independence": "Distinct pre-exposure full-matrix fixture and argument; same selected model, shared Dirichlet route/parent context. Bell moments do not discriminate signed root/covariance terms.",
+  "balanced_coupling_followup_accepted": false,
+  "editable_prompt_files_changed": [],
+  "campaign_deadline_utc": "2026-10-14T21:37:33Z"
+}

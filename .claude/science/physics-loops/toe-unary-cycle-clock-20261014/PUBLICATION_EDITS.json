@@ -1,0 +1,66 @@
+{
+  "frontmatter": "---\ntitle: Positive unary-cycle clock for an unchanged finite data background\nclaim_id: positive_unary_cycle_clock_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: positive ordinary-NN cycle clock bonds for a supplied waveform and arbitrary unchanged finite background, prepared-clock full-reference estimate, growing program range/strength and explicit scalar/energy/precision costs\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional prepared unary-cycle clock with strict alias guard, two Dyson comparisons and actual free-clock dispersion; no native, whole-apparatus ordinary-NN, common-cap or arbitrary-clock-input theorem\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\", \"finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\", \"fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14\", \"coherent_binary_k_admission_bounded_theorem_note_2026-10-14\", \"literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14\", \"autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30\", \"literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/positive_unary_cycle_clock_identity_2026_10_14.py\nnext_trace_action: separate publication-source review, root integration and regular PR, then independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "literal_assembly_footer_preserved_as_history": true,
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock_source_assembly/CANDIDATE_NOTE.md",
+      "accepted_candidate_sha256": "698e2d037cebb9bd7bcb85c5418e9a68ac170696878f0b222a4df4cf51f199a7",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 41437,
+          "byte_start_inclusive": 8418,
+          "bytes": 33019,
+          "id": "UNARY_CYCLE_CLOCK",
+          "line_end_inclusive": 381,
+          "line_start_inclusive": 58,
+          "sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock/DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 5985,
+      "diff_sha256": "745f8a638c99b5099fb5611afe4b69553058d612c374ee8bfc576ed3b210d9b2",
+      "diff_stored_sha256": "d045094c6b7ac70fde087d24d695a6376f7ef41cc27130dcd217449d96496d38",
+      "fromfile": "CANDIDATE_NOTE.md",
+      "note": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_unary_cycle_clock/DERIVATION.md",
+          "source_sha256": "c7a19c3acb7d731a95b97bfadc8a32e2624196d60555ac08e8e77b3ad71d1135"
+        }
+      ],
+      "published_bytes": 41996,
+      "published_lines": 385,
+      "published_sha256": "8e3a2c9684e92e0e58e55d789a0c9e9977a46a7c3467ab01f380fda04440c79c",
+      "stored_bytes": 2629,
+      "tofile": "docs/POSITIVE_UNARY_CYCLE_CLOCK_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "e8edba3cd869bec3cb12bdb8529a0356e852414c11dff00d6f275267dd159945",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 4060,
+    "diff_sha256": "ce100ac3c75ff7f50b2bbf045d524c63d311d846ec94879deedb938bb4558dd6",
+    "diff_stored_sha256": "99a2271559d39db8c71e764f9f29f6df4f59d194eb3b65baa82bd39a32b13d3e",
+    "fromfile": "wrappers/note_prefix.md",
+    "stored_bytes": 1954,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "This new source assembly still requires root review. It is not a retained audit, a physical realization or authorization for canonical integration.",
+      "rendered": "Root accepted source assembly e8edba3c under UNARY_CYCLE_CLOCK_ASSEMBLY_ROOT_ACCEPTANCE.json SHA7d5c9129de3453b6c478e3f974bb6846d7328bac55578ed2483c86fccf103670 and review2e628762619b4838857b574ca9197fa95e1434479aeb5c3dff4ea0550b96ac6a. This publication rendering and driver require separate exact root acceptance; no retained audit or native physical realization is supplied.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Branch ancestry is not a mathematical import; this source assembly selects no future stack parent and runs no graph tool.",
+      "rendered": "The actual procedural stack parent is regular PR9556 at fc21d9cd5717a6f65795a1cc12a574e87e7a8ba0 on physics-loop/toe-clock-resource-sharpening-20261014. Its theorem is not imported. Seven mathematical citations above retain their actual published source bindings, including PR9555/autonomous and PR9552/fixed background. Current PARENT_BINDINGS.json governs publication; historical assembly status/footer sentences remain unchanged in the archive and complete body. No graph program was run during source preparation.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

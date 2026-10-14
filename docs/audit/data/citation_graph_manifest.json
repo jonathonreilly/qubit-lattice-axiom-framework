@@ -1,6 +1,6 @@
 {
- "edge_count": 15976,
- "node_count": 7071,
+ "edge_count": 15983,
+ "node_count": 7072,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17289,6 +17289,10 @@
   "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14": {
    "deps_hash": "f0a2bcb0bbbf",
    "out_degree": 4
+  },
+  "positive_unary_cycle_clock_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "5def4db2d325",
+   "out_degree": 7
   },
   "positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16": {
    "deps_hash": "2fcf27dbac88",

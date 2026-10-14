@@ -1,0 +1,72 @@
+{
+  "acceptance_writer": {
+    "bytes": 2493,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_publication_root_review/accept.py",
+    "sha256": "e6e0a3a9269dbcd238efefc83cfa6f0b33a5fd34e37dd40e2da215e9c084df66"
+  },
+  "actual_citations_and_complete_graph_object_preservation_reviewed": true,
+  "actual_streams": {
+    "bytes": 7295,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_publication_root_review/ACTUAL_STREAMS.txt",
+    "sha256": "a9ffb70f60e59a184385643e936be0bb24f98a4b09d0c9283a25ccc77ac541f0"
+  },
+  "base": "fc21d9cd5717a6f65795a1cc12a574e87e7a8ba0",
+  "block_handoff_and_review_history_read": true,
+  "branch": "physics-loop/toe-unary-cycle-clock-20261014",
+  "canonical_integration_executed": false,
+  "complete264_file_assembly_and_unique_unchanged_proof_reviewed": true,
+  "complete_driver_read": true,
+  "disposition": "accepted_for_source_integration",
+  "editable_prompt_files_changed": [],
+  "exact_source_diff_producer_conventions_reviewed": true,
+  "final_assembly_review_disposition": "accepted_for_source_integration",
+  "final_assembly_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/UNARY_CYCLE_CLOCK_PUBLICATION_ROOT_REVIEW.md",
+  "final_assembly_review_read": true,
+  "final_assembly_review_sha256": "4801349397d46beb95e95cbd357e9cf8c3b465d461237b32c19bc28de3fe1ad5",
+  "full_runtime_scalar_background_cycle_geometry_and_special_covariance_scope_reviewed": true,
+  "historical_missing_child_source_pins_invented": false,
+  "identity_tools_and_archive_map_read": true,
+  "later_obligations": [
+    "actual guarded prepare and exact root staging",
+    "actual guarded verify and root evidence read",
+    "regular PR only after successful integration",
+    "cumulative/current-main validation",
+    "independent retained audit"
+  ],
+  "mathematical_predicates": 0,
+  "new_mathematical_review": false,
+  "new_publication_wrappers_read": true,
+  "no_go_packet_pass": false,
+  "packet_and_dependency_delta_read": true,
+  "placeholder_only": false,
+  "pre_and_post_checker_index_equality_and_existing_ledger_scope_reviewed": true,
+  "prepared_clock_full_reference_dirty_transit_and_binary_outcome_scope_reviewed": true,
+  "prior_acceptance_sha256s": [
+    "4dd58d6860a2a2a0e73930ea2298210059a4f99e52d569846735ba3bc4cf1d07",
+    "7d5c9129de3453b6c478e3f974bb6846d7328bac55578ed2483c86fccf103670"
+  ],
+  "publication_byte_maps_and_diffs_verified": true,
+  "publication_program_sha256": "2d29d3263de47d17e8826d6a80aec18679398222d7f431104d60dbb782e1ce68",
+  "publication_source_freeze_sha256": "0c0fa3f62182f5c3f8254fba7830a3dc3bdc0c50c804d2f5acc45d16dd430035",
+  "root_authorizes_execution": true,
+  "root_checker_execution": {
+    "bytes": 1839,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_publication_root_review/CHECKER_EXECUTION.json",
+    "sha256": "3bd057583bae62bb1ceb581ce38f32d9902d80e37bbd68a160ae986633bd9c46"
+  },
+  "root_execution_acceptance": true,
+  "seven_actual_mathematical_roles_and_generic_clock_credit_reviewed": true,
+  "source_assembly_freeze_sha256": "e8edba3cd869bec3cb12bdb8529a0356e852414c11dff00d6f275267dd159945",
+  "source_binding": {
+    "bytes": 25410,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/unary_cycle_publication_root_review/SOURCE_BINDING.json",
+    "sha256": "27838fd35623bf70b2ecb86687c1be5aad526045eb07aeb328b8bb44b3cd8863"
+  },
+  "source_checker_and_recording_wrapper_read": true,
+  "strict_alias_guard_actual_free_clock_and_two_Dyson_bounds_reviewed": true,
+  "twelve_section_conformance_reviewed": true,
+  "unchanged_source_coverage_reused": true,
+  "utc": "2026-10-14T16:24:39.758927+00:00",
+  "whitespace_and_link_policy_reviewed": true,
+  "whole_root_assembly_and_actual_outer_streams_missing_child_pin_limits_reviewed": true
+}

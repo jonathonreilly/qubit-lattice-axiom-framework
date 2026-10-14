@@ -1,0 +1,7 @@
+{
+  "base": "fc21d9cd5717a6f65795a1cc12a574e87e7a8ba0",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-unary-cycle-clock-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9556"
+}

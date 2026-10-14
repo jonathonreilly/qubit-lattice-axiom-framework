@@ -121,3 +121,11 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Fix:** a positive-type profile with the same support restores pure-gauge RP. That is law data, not an axiom change, but it does not rescue the overlap.
 - **Correction owed:** K2c and its referee's "3D/4D suggested" → "3D not RP".
 - **Memory incidents:** a 5.2 GB run was killed by the supervisor; later watchdog kills were recorded.
+
+**UV-1 amendment (2026-10-14 ~21:22Z, written before any UV-1 run).**
+- **Why.** NT-2 showed the hard plaquette support is itself non-RP (3D; odd Lx in 2D). With a hard weight, a negative eigenvalue would mix gauge-weight and fermion effects.
+- **Change.**
+  - UV-1 runs **two arms**:
+    - **(primary)** the positive-type triangle (Fejér) profile with the same support, which isolates the overlap determinant;
+    - **(secondary)** the hard support, as originally registered.
+  - The readings UV-ONLY / PERSISTS / OPEN are unchanged and are applied to each arm separately. The primary arm decides the headline.

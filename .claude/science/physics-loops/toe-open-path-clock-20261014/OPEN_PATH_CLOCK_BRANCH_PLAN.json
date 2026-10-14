@@ -1,0 +1,7 @@
+{
+  "base": "d83ac7eabd6fffa7bf2a941c3dffd070796a53db",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-open-path-clock-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9559"
+}

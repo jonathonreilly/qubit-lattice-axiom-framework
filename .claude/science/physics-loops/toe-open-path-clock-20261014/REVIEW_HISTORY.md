@@ -1,0 +1,9 @@
+# Source and review history
+
+Underlying current proof a59c38c7 was separately reviewed and accepted under b2e9ff77 after complete review ca8d031b. The selected reviewer control was planned, executed and sealed before candidate exposure, within shared-route and prior same-family context. This is not blind or model-diverse validation. The original body, one-sentence coordinate clarification, exact differences, invalid endpoint diagnostic, normalization and fixed-width limitations, actual streams and exposure chronology remain intact.
+
+Accepted assembly dc606d7d contains 241 files,480 aliases and194 objects, including full133-file author and171-file reviewer packets, original root evidence and four outer execution folders. Its root acceptance3bc01c37 followed full review d96c9b7c and binding cd86ad9e. Publication additionally preserves the complete seven-file assembly-root folder, both actual binding/acceptance outer folders and common recorder da261bb5.
+
+The outer recorder records its own hash, argv, timing and raw streams; it has no historical child-source-at-launch hash. The original author binder has no self-source field. Later self-pins and acceptance writer pins stay distinct. Shortened reads and unused diagnostics are not retold as completed verification. No prior scientific program is replayed.
+
+The formal procedural baseline is accepted sharpening publication104c15a0/driver58079769 under a48d898f. The immediate unary0c0fa3f6 source provenance is separately retained and was not accepted authority when this preparation began. Neither supplies a mathematical premise. Complete new function/global/module and framing deltas are supplied. Every actual new source-only attempt retains source, stdout/stderr and receipt, including failures if any. Root alone owns execution and publication.

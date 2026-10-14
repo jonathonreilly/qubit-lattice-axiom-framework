@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-14T15:57:35.620129+00:00",
+  "disposition": "accepted_conditional_analytic_source",
+  "scope": "Positive compact-packet open-path prepared clock with arbitrary fixed finite H and full inherited data/reference input; supplied couplings/packet/calibration and explicit resource costs.",
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency/DERIVATION_CURRENT.md",
+    "bytes": 27554,
+    "sha256": "a59c38c7352931da0a5df51c2bca63ddbbe37fd302a18d5a36347235083c967b"
+  },
+  "candidate_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency/FINAL_FREEZE.json",
+    "bytes": 25127,
+    "sha256": "53629b00a76d315a5f6985cee6d38e5b8874a972d9264c55e175ebfb1ce51c83"
+  },
+  "independent_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency_review/REPORT.md",
+    "bytes": 26189,
+    "sha256": "ca8d031b982414cd796c524252e5488e9dae03b6d3cc1145bd29c199ee6ac32b"
+  },
+  "review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_open_path_clock_consistency_review/FINAL_REVIEW_FREEZE.json",
+    "bytes": 34282,
+    "sha256": "6fc4c18d12be77694f3cf930dd9e00cffea6ab0539ca627a926bce31cf5b4ac3"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/OPEN_PATH_CLOCK_ROOT_REVIEW.md",
+    "bytes": 13392,
+    "sha256": "cfcd97532f3a995db99a998782cdada2f7b59346bc32f498ca95eeee300cf2a6"
+  },
+  "root_analytic_read": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_clock_root_review/ANALYTIC_READ.md",
+    "bytes": 7369,
+    "sha256": "a92afad1d03c29538216436913bd930d8c6e6f2894d95bf623a2c1e4d1e24b49"
+  },
+  "author_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_clock_root_review/AUTHOR_BINDING.json",
+    "bytes": 11408,
+    "sha256": "3e0a1fa84f71322127d70315ba73f1f6c813f08b7c200a8e15e935ec6f166e97"
+  },
+  "review_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_clock_root_review/REVIEW_BINDING.json",
+    "bytes": 10807,
+    "sha256": "3059a6444a90ac2c7ebd19cacb0390c28e9c04bf03ef6d754885d00796c6a16a"
+  },
+  "actual_review_streams": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_clock_root_review/REVIEW_ACTUAL_STREAMS.txt",
+    "bytes": 13911,
+    "sha256": "70148e13945fb010eade51594fc1a436631a6066ef61719cf0d32575a361d08e"
+  },
+  "complete_current_argument_read": true,
+  "all_new_science_and_bookkeeping_programs_read_or_exact_delta_reconstructed": true,
+  "actual_author_and_reviewer_streams_read": true,
+  "required_parent_coverage_reused_only_at_exact_unchanged_scope": true,
+  "control_preselected_executed_and_sealed_before_candidate_body": true,
+  "shared_route_and_prior_same_family_exposure": true,
+  "blind_or_model_diverse_validation": false,
+  "scientific_body_repairs_requested": [],
+  "author_scientific_runs": 1,
+  "reviewer_scientific_runs": 1,
+  "root_scientific_reruns": 0,
+  "identity_tools_prove_math": false,
+  "source_assembly_authorized": true,
+  "canonical_integration_authorized": false,
+  "retained_audit": false,
+  "merge_main_push_audit_axiom_prompt_authority": false,
+  "editable_prompt_files_changed": [],
+  "writer": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/open_path_clock_root_review/accept.py",
+    "bytes": 2493,
+    "sha256": "060f0fbb9199fb7d489e9c88eaba81047a0b64edfc1ecd9c6e391ddf31230d66"
+  }
+}

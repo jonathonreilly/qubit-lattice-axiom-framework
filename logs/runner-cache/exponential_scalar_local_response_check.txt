@@ -1,0 +1,1318 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_local_response_check.py
+runner_sha256: 11548263e792cdbb1720f4fb6049205cc7bbb21c557c767de6719e949285681f
+input_fingerprint_sha256: 74e15763b5e1f6bd4ed679160e5c7e5e63fa097b37c10fb72ed63527e978d828
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.67
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional exact coupling/energy/local-operator identities and action derivatives. No finite-distance astronomical matching or empirical test.",
+  "exact": {
+    "g": "k*(1 - chi)/(-3*chi*k + 1)",
+    "beta": "(-chi*k*(1 - 3*k) - k - 1)/(-3*chi*k + 1)**2",
+    "eta": "(-chi*k + 1)*(3*chi*k + 1)/(-3*chi*k + 1)**2",
+    "Newton_ratio": "-4*chi**2*k**2*(1 - 3*k)/((k + 1)**2*(-3*chi*k + 1)) + 1",
+    "chi_u": "(1 - chi)*sqrt(1 - k)*(chi + (k + 1)/(k*(1 - 3*k)))*sqrt(3*k + 1)/(1 + (k + 1)/(k*(1 - 3*k)))"
+  },
+  "high_precision": [
+    {
+      "k": "0.000001",
+      "u": "-2",
+      "chi": "-6.3890236682681857191729034681284925",
+      "g": "0.0000073888820450413822854945836861132508",
+      "eta": "0.9999488892801227441810790612377972",
+      "delta_R": "-0.00000000016327454784891318917545714234623978"
+    },
+    {
+      "k": "0.000001",
+      "u": "-0.5",
+      "chi": "-0.6487210255029108289441710827056314",
+      "g": "0.0000016487178168291721339216493556877764",
+      "eta": "0.99999481024694614028190722213965716",
+      "delta_R": "-1.6833441828916709190012764690219022e-12"
+    },
+    {
+      "k": "0.000001",
+      "u": "0",
+      "chi": "0.0",
+      "g": "0.000001",
+      "eta": "1.0",
+      "delta_R": "0.0"
+    },
+    {
+      "k": "0.000001",
+      "u": "0.5",
+      "chi": "0.39346940490183028375817024701104434",
+      "g": "0.00000060653131105271175895406795598150396",
+      "eta": "1.0000031477608126776275946755521151",
+      "delta_R": "-6.1927032500910219556595735620876887e-13"
+    },
+    {
+      "k": "0.000001",
+      "u": "2",
+      "chi": "0.86466487041417874506904569944550943",
+      "g": "0.00000013533548064532875883231500056466095",
+      "eta": "1.0000069173458786386935066206325001",
+      "delta_R": "-2.9905741571668749247691528240363433e-12"
+    },
+    {
+      "k": "0.000001",
+      "u": "10",
+      "chi": "0.99995460047883640173335679040487972",
+      "g": "4.5399657356386967689198463095369254e-11",
+      "eta": "1.0000079996728007059808184837004152",
+      "delta_R": "-3.9996288122687867125625759496332126e-12"
+    },
+    {
+      "k": "0.00001",
+      "u": "-2",
+      "chi": "-6.3887318210381539745539973074072598",
+      "g": "0.000073873159536230047513692685901060758",
+      "eta": "0.99948904835399565422410471986404249",
+      "delta_R": "-0.000000016322413023681665937541047678115809"
+    },
+    {
+      "k": "0.00001",
+      "u": "-0.5",
+      "chi": "-0.64871881897140755590585153069002614",
+      "g": "0.000016486867329480999983107728061792237",
+      "eta": "0.99994810400945295764798187586161049",
+      "delta_R": "-0.00000000016832275004037182958002408165038443"
+    },
+    {
+      "k": "0.00001",
+      "u": "0",
+      "chi": "0.0",
+      "g": "0.00001",
+      "eta": "1.0",
+      "delta_R": "0.0"
+    },
+    {
+      "k": "0.00001",
+      "u": "0.5",
+      "chi": "0.39346998646371821750528162956231504",
+      "g": "0.0000060653717316148119019221137025209502",
+      "eta": "1.0000314781562729384525108709871328",
+      "delta_R": "-6.1925086752123769278183852419156824e-11"
+    },
+    {
+      "k": "0.00001",
+      "u": "2",
+      "chi": "0.8646662532595395797137924385471559",
+      "g": "0.0000013533725738723856365162011094103809",
+      "eta": "1.0000691759918856835477432107929003",
+      "delta_R": "-0.00000000029905189652740188869434305710178242"
+    },
+    {
+      "k": "0.00001",
+      "u": "10",
+      "chi": "0.99995460415599757334013012688063898",
+      "g": "0.00000000045397205856777028924131845551974552",
+      "eta": "1.0000799999681496229369668029574684",
+      "delta_R": "-0.00000000039995568445070952597701187537098094"
+    },
+    {
+      "k": "0.01",
+      "u": "-2",
+      "chi": "-6.0943006740196789317848741068480768",
+      "g": "0.059977397854988672036572585884624254",
+      "eta": "0.61967082176804954915214620546646553",
+      "delta_R": "-0.011943036542825492404980809661539184"
+    },
+    {
+      "k": "0.01",
+      "u": "-0.5",
+      "chi": "-0.64653377825025550114144462852439168",
+      "g": "0.016152052359350941478035346695537281",
+      "eta": "0.9497441244236614304999116025012761",
+      "delta_R": "-0.00015596548008566073004171643453167146"
+    },
+    {
+      "k": "0.01",
+      "u": "0",
+      "chi": "0.0",
+      "g": "0.01",
+      "eta": "1.0",
+      "delta_R": "0.0"
+    },
+    {
+      "k": "0.01",
+      "u": "0.5",
+      "chi": "0.39414992632996567670533626399348221",
+      "g": "0.0061309966935531402341432865640942861",
+      "eta": "1.0321002188298981747099123442569582",
+      "delta_R": "-0.000059796779461089045930074404690960215"
+    },
+    {
+      "k": "0.01",
+      "u": "2",
+      "chi": "0.86618800640270532216882148258710499",
+      "g": "0.0013738195155940325397641820245499457",
+      "eta": "1.0720927754660270633951396869187163",
+      "delta_R": "-0.00029298672979737389824298218391025169"
+    },
+    {
+      "k": "0.01",
+      "u": "10",
+      "chi": "0.99995844371845056672082753819437271",
+      "g": "0.00000042841472308726517074027299427993302",
+      "eta": "1.0837459588526068359848329630980369",
+      "delta_R": "-0.00039208532654699504968432193774506391"
+    },
+    {
+      "k": "0.32",
+      "u": "-2",
+      "chi": "-8.2578749437197655249593214489607079",
+      "g": "0.33183983080699625816276075896167607",
+      "eta": "-0.31660420986201913898195087544781449",
+      "delta_R": "-0.071825044744885782489071438311157787"
+    },
+    {
+      "k": "0.32",
+      "u": "-0.5",
+      "chi": "-0.76784477249680540308372562298933751",
+      "g": "0.32565784226525274051557270175469438",
+      "eta": "0.1085153901880538631397155723419565",
+      "delta_R": "-0.0031914377278132603641712474897223291"
+    },
+    {
+      "k": "0.32",
+      "u": "0",
+      "chi": "0.0",
+      "g": "0.32",
+      "eta": "1.0",
+      "delta_R": "0.0"
+    },
+    {
+      "k": "0.32",
+      "u": "0.5",
+      "chi": "0.43617655447051338120784973191181882",
+      "g": "0.31039507454242928952898385621119363",
+      "eta": "3.6128945393553165085477628881004106",
+      "delta_R": "-0.00307764429166524272387179921972382"
+    },
+    {
+      "k": "0.32",
+      "u": "2",
+      "chi": "0.89976641687789991012598984866456229",
+      "g": "0.23545550077444819449058469315016027",
+      "eta": "71.517192464855334913519542142410787",
+      "delta_R": "-0.055882682192772181404807649821650851"
+    },
+    {
+      "k": "0.32",
+      "u": "10",
+      "chi": "0.99999021877268866684205594125179598",
+      "g": "0.000078231453699508521276489295781941532",
+      "eta": "832.60888863270506693120880347996055",
+      "delta_R": "-0.2350182841643786934061411039609696"
+    }
+  ],
+  "checks": [
+    {
+      "name": "exact.coupling_from_A_and_K",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.inverse_field_map",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.coupling_chi",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.coupling_monotonic_derivative",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.vacuum_beta",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.beta_chi",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.density_feedback",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.density_sign_change",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.density_sign_change_field",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.eta_monotonic",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.Newton_strength_cancellation",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.Newton_strength_derivative",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.Newton_vacuum_derivative",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.chi_u",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.vacuum_energy_floor",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.observational_inversion",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.trapped_minimum",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.trapped_maximum",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.weak_limit_Newton_second_order",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "exact.weak_limit_coupling_first_order",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "ball.ODE",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "ball.field_match",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "ball.derivative_match",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "ball.center_regular",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "ball.charge_series",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "algebraic_negative_control.wrong_Newton_linear_term",
+      "passed": true,
+      "residue": "2990897/908909100"
+    },
+    {
+      "name": "algebraic_negative_control.wrong_density_sign",
+      "passed": true,
+      "residue": "60398/29403"
+    },
+    {
+      "name": "algebraic_negative_control.wrong_coupling_denominator",
+      "passed": true,
+      "residue": "1/44253"
+    },
+    {
+      "name": "algebraic_negative_control.wrong_inversion",
+      "passed": true,
+      "residue": "239697/620808479797"
+    },
+    {
+      "name": "high_precision.k0.000001.u-2.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-2.beta",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-2.density_feedback",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-2.Newton",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "9.8181869306e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.alpha",
+      "passed": true,
+      "scaled_error": "2.05902303579e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.beta",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.Newton",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "3.06818341581e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u-0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u0.alpha",
+      "passed": true,
+      "scaled_error": "2.05902303579e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.beta",
+      "passed": true,
+      "scaled_error": "2.10843748021e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.density_feedback",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.Newton_derivative",
+      "passed": true,
+      "scaled_error": "9.8181869306e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u0.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.alpha",
+      "passed": true,
+      "scaled_error": "2.05902303579e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.beta",
+      "passed": true,
+      "scaled_error": "2.10843167298e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "2.1084329518e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.Newton",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "1.6107962933e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u2.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u2.beta",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u2.density_feedback",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u2.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "9.95241995504e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u2.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u10.alpha",
+      "passed": true,
+      "scaled_error": "2.41291762006e-85",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u10.beta",
+      "passed": true,
+      "scaled_error": "4.21684544372e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u10.density_feedback",
+      "passed": true,
+      "scaled_error": "2.10842272195e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u10.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u10.Newton_derivative",
+      "passed": true,
+      "scaled_error": "4.65517338485e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.000001.u10.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.000001.u10.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u-2.alpha",
+      "passed": true,
+      "scaled_error": "3.29443685726e-83",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-2.beta",
+      "passed": true,
+      "scaled_error": "5.27109897162e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-2.density_feedback",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-2.Newton",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "4.39854774491e-88",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.beta",
+      "passed": true,
+      "scaled_error": "4.21687917729e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.Newton",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "3.92727477224e-90",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u-0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u0.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.beta",
+      "passed": true,
+      "scaled_error": "4.21683700892e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.density_feedback",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.Newton_derivative",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u0.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.alpha",
+      "passed": true,
+      "scaled_error": "4.11804607157e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.beta",
+      "passed": true,
+      "scaled_error": "4.21672086671e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "6.32511966283e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.Newton",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "4.9090934653e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u2.alpha",
+      "passed": true,
+      "scaled_error": "4.11804607157e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u2.beta",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u2.density_feedback",
+      "passed": true,
+      "scaled_error": "4.21658749067e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u2.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "1.22727336632e-90",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u2.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u10.alpha",
+      "passed": true,
+      "scaled_error": "2.57377879473e-85",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u10.beta",
+      "passed": true,
+      "scaled_error": "2.10827092608e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u10.density_feedback",
+      "passed": true,
+      "scaled_error": "4.21654185408e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u10.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u10.Newton_derivative",
+      "passed": true,
+      "scaled_error": "3.83163374232e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.00001.u10.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.00001.u10.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u-2.alpha",
+      "passed": true,
+      "scaled_error": "5.27109897162e-82",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-2.beta",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-2.density_feedback",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-2.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "6.58887371452e-83",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.beta",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.Newton",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u-0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u0.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.beta",
+      "passed": true,
+      "scaled_error": "2.08756394915e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.density_feedback",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.Newton_derivative",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u0.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.alpha",
+      "passed": true,
+      "scaled_error": "1.3177747429e-82",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.beta",
+      "passed": true,
+      "scaled_error": "2.03079964956e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "2.04286323186e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "1.02951151789e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u2.alpha",
+      "passed": true,
+      "scaled_error": "6.58887371452e-83",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u2.beta",
+      "passed": true,
+      "scaled_error": "1.96414084845e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u2.density_feedback",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u2.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "1.28688939737e-85",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u2.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u10.alpha",
+      "passed": true,
+      "scaled_error": "2.05902303579e-84",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u10.beta",
+      "passed": true,
+      "scaled_error": "1.9455101428e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u10.density_feedback",
+      "passed": true,
+      "scaled_error": "5.83653273562e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u10.Newton",
+      "passed": true,
+      "scaled_error": "2.10843958865e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u10.Newton_derivative",
+      "passed": true,
+      "scaled_error": "7.41469476999e-87",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.01.u10.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.01.u10.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u-2.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-2.beta",
+      "passed": true,
+      "scaled_error": "2.88757390539e-80",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-2.density_feedback",
+      "passed": true,
+      "scaled_error": "4.21687917729e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-2.Newton",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "1.3177747429e-82",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.alpha",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.beta",
+      "passed": true,
+      "scaled_error": "7.99625713994e-79",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "4.87576654874e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.Newton",
+      "passed": true,
+      "scaled_error": "1.15964177376e-80",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "1.64721842863e-83",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u-0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u0.alpha",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.beta",
+      "passed": true,
+      "scaled_error": "1.79377095307e-78",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.density_feedback",
+      "passed": true,
+      "scaled_error": "2.74097146524e-80",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.Newton",
+      "passed": true,
+      "scaled_error": "1.89759562978e-80",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.Newton_derivative",
+      "passed": true,
+      "scaled_error": "9.8181869306e-91",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u0.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.alpha",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.beta",
+      "passed": true,
+      "scaled_error": "1.7132830023e-78",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.density_feedback",
+      "passed": true,
+      "scaled_error": "6.18602602323e-80",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.Newton",
+      "passed": true,
+      "scaled_error": "3.37350334183e-80",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.Newton_derivative",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u0.5.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u2.alpha",
+      "passed": true,
+      "scaled_error": "5.27109897162e-82",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u2.beta",
+      "passed": true,
+      "scaled_error": "1.0663168254e-78",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u2.density_feedback",
+      "passed": true,
+      "scaled_error": "2.73589030949e-79",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u2.Newton",
+      "passed": true,
+      "scaled_error": "1.02259320049e-79",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u2.Newton_derivative",
+      "passed": true,
+      "scaled_error": "0.0",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u2.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u2.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u10.alpha",
+      "passed": true,
+      "scaled_error": "4.94165528589e-83",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u10.beta",
+      "passed": true,
+      "scaled_error": "9.5685559598e-79",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u10.density_feedback",
+      "passed": true,
+      "scaled_error": "9.41297056847e-79",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u10.Newton",
+      "passed": true,
+      "scaled_error": "1.05421979432e-81",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u10.Newton_derivative",
+      "passed": true,
+      "scaled_error": "7.91179601501e-82",
+      "tolerance": "1e-60"
+    },
+    {
+      "name": "high_precision.k0.32.u10.positive_G",
+      "passed": true
+    },
+    {
+      "name": "high_precision.k0.32.u10.trapped_negative_feedback",
+      "passed": true
+    },
+    {
+      "name": "vacuum.gradient.0",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.mass.0",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.gradient.1",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.mass.1",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.off_diagonal.1.0",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.gradient.2",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.mass.2",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.off_diagonal.2.0",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "vacuum.off_diagonal.2.1",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "potential.monotonic_sign_factor",
+      "passed": true,
+      "residue": "0"
+    },
+    {
+      "name": "potential.monotonic_positive_remainder",
+      "passed": true,
+      "residue": "0"
+    }
+  ],
+  "counts": {
+    "passed": 204,
+    "failed": 0
+  }
+}
+
+----- stderr -----
+

@@ -1,0 +1,21 @@
+{
+  "programs": [
+    {
+      "bytes": 15137,
+      "path": "programs/prepare_verify_finite_apparatus.py.gz",
+      "raw_bytes": 50933,
+      "raw_sha256": "dbafa823837f86e3e6b3ec31e33727d4429003d54f52d219f945752c92704ad0",
+      "role": "Proposed source only; not executed by preparer",
+      "sha256": "a6267ac0e9acab7ce2c14c06771cbac11d15ff1ca4e8e7672c19dc5cedc39a40"
+    },
+    {
+      "bytes": 4723,
+      "path": "programs/IDENTITY_TOOL.template.py.gz",
+      "raw_bytes": 13886,
+      "raw_sha256": "b287ca3daed9f423b036c4deacebe8bb28006f0ae35e4ab0beaf7c7bf09ca381",
+      "role": "Proposed source only; not executed by preparer",
+      "sha256": "dd81ff57c5932ce9745df3238da81515a1a938d885904d760ebe3555da96d628"
+    }
+  ],
+  "scope": "Recover exact proposed integration and identity-template source; no execution evidence."
+}

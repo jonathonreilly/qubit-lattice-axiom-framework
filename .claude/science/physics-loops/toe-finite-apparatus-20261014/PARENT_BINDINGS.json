@@ -1,0 +1,277 @@
+{
+  "actual_parent_head": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+  "actual_parent_pr": {
+    "number": 9527,
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9527"
+  },
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "byte_end_exclusive": 51903,
+      "byte_start_inclusive": 0,
+      "bytes": 51903,
+      "canonical_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "core_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "line_end_inclusive": 962,
+      "line_start_inclusive": 1,
+      "scope": "Complete unchanged canonical body"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "byte_end_exclusive": 36376,
+      "byte_start_inclusive": 0,
+      "bytes": 36376,
+      "canonical_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "core_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "line_end_inclusive": 731,
+      "line_start_inclusive": 1,
+      "scope": "Complete unchanged canonical body"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "byte_end_exclusive": 35591,
+      "byte_start_inclusive": 0,
+      "bytes": 35591,
+      "canonical_path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "core_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "line_end_inclusive": 568,
+      "line_start_inclusive": 1,
+      "scope": "Complete unchanged canonical body"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "byte_end_exclusive": 72986,
+      "byte_start_inclusive": 0,
+      "bytes": 72986,
+      "canonical_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "core_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "line_end_inclusive": 1421,
+      "line_start_inclusive": 1,
+      "scope": "Complete unchanged canonical body"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "byte_end_exclusive": 62132,
+      "byte_start_inclusive": 0,
+      "bytes": 62132,
+      "canonical_path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "core_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "line_end_inclusive": 1214,
+      "line_start_inclusive": 1,
+      "scope": "Complete unchanged canonical body"
+    }
+  ],
+  "direct_edges_verified": true,
+  "markdown_citations": [
+    {
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "label": "Supplied gapped spin chain and full-spin Fock representation",
+      "markdown": "[Supplied gapped spin chain and full-spin Fock representation](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md)",
+      "parent_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "target": "CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "label": "Field normalization and positive polarization",
+      "markdown": "[Field normalization and positive polarization](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md)",
+      "parent_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "target": "LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "label": "Exact energy-adapted infinite-chain embedding",
+      "markdown": "[Exact energy-adapted infinite-chain embedding](ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md)",
+      "parent_path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "target": "ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "label": "Actual Fock-domain and spectral-measure interface",
+      "markdown": "[Actual Fock-domain and spectral-measure interface](CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md)",
+      "parent_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "target": "CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    },
+    {
+      "claim_id": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "label": "Specified finite coarse energy-measurement protocol",
+      "markdown": "[Specified finite coarse energy-measurement protocol](MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md)",
+      "parent_path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "target": "MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 51903,
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "lines": 962,
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "present_at_base": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "role": "Supplied gapped chain, compatible even JW, full-spin positive-energy representation",
+      "scientific_source_identity": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 36376,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "lines": 731,
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "present_at_base": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "role": "Field normalization and signs, positive polarization, finite even words",
+      "scientific_source_identity": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 35591,
+      "claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "lines": 568,
+      "path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "present_at_base": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+      "published_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "role": "Existing exact infinite-chain common-energy/Fock embedding",
+      "scientific_source_identity": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 72986,
+      "claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "lines": 1421,
+      "path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "present_at_base": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+      "published_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "role": "Actual Fock-domain/PVM and supplied-input comparison interface",
+      "scientific_source_identity": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree/docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "bytes": 62132,
+      "claim_id": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "lines": 1214,
+      "path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "present_at_base": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+      "published_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "role": "Specified coarse-instrument/common-energy protocol conventions only; no imported kinetic limit",
+      "scientific_source_identity": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af"
+    }
+  ],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "actual_claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "canonical_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          248,
+          321
+        ],
+        [
+          367,
+          453
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Supplied gapped chain, compatible even JW, full-spin positive-energy representation"
+    },
+    {
+      "actual_claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "canonical_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          102,
+          183
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Field normalization and signs, positive polarization, finite even words"
+    },
+    {
+      "actual_claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "canonical_path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "canonical_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          199
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Existing exact infinite-chain common-energy/Fock embedding"
+    },
+    {
+      "actual_claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          1262,
+          1300
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Actual Fock-domain/PVM and supplied-input comparison interface"
+    },
+    {
+      "actual_claim_id": "multitime_kinetic_energy_bounded_theorem_note_2026-10-13",
+      "canonical_path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "canonical_sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "complete_body_identity_verified": true,
+      "coverage": "Exact complete body identity; named premise spans refreshed; prior accepted component proof coverage reused at unchanged identities.",
+      "new_complete_ancestor_review": false,
+      "refreshed_read_spans": [
+        [
+          1,
+          85
+        ],
+        [
+          393,
+          421
+        ],
+        [
+          448,
+          473
+        ],
+        [
+          1018,
+          1045
+        ]
+      ],
+      "relied_role_checked": true,
+      "role": "Specified coarse-instrument/common-energy protocol conventions only; no imported kinetic limit"
+    }
+  ]
+}

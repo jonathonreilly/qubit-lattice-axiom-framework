@@ -1,0 +1,45 @@
+{
+  "accepted_utc": "2026-10-14T03:26:31.475324+00:00",
+  "disposition": "accepted_for_publication_source_preparation",
+  "assembly": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/finite_apparatus_source_assembly",
+  "assembly_freeze_sha256": "69ed5806185823738779cb64666cf68de8c75d16e63527469fc984679af3f1e1",
+  "candidate_sha256": "986fb55dbccab4450313675a68ee7d5646bad658e7981026d30f92d3b986bf90",
+  "wrapper_sha256": "59653a1f32c80171f2960341edb934543d3bb3e8a2a94eaeedb096169c2f0d16",
+  "review": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/assembly_root_review/REPORT.md",
+  "review_sha256": "75cf49c890c058a9bdf9b39dcb534d28368f22c3af476ad181e06f2ca7b3fe23",
+  "root_identity_execution": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/assembly_root_review/EXECUTION_RECEIPT.json",
+  "scientific_scope": "Conditional fixed finite-chain energy history with complete weighted output and readout compilation under explicit model/input/control/spectral/gate premises.",
+  "canonical_execution_authorized": false,
+  "requires_separate_driver_bound_integration_acceptance": true,
+  "source_check_mathematical_predicates": 0,
+  "direct_canonical_dependencies": [
+    {
+      "canonical_path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "relied_scope": "Supplied gapped chain, compatible even JW, full-spin positive-energy representation"
+    },
+    {
+      "canonical_path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "relied_scope": "Field normalization and signs, positive polarization, finite even words"
+    },
+    {
+      "canonical_path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+      "relied_scope": "Existing exact infinite-chain common-energy/Fock embedding"
+    },
+    {
+      "canonical_path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e",
+      "relied_scope": "Actual Fock-domain/PVM and supplied-input comparison interface"
+    },
+    {
+      "canonical_path": "docs/MULTITIME_KINETIC_ENERGY_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "sha256": "b782e4814730e330c1a3d0452382dc488caa2e920b7e544e43cba84ef12279af",
+      "relied_scope": "Specified coarse-instrument/common-energy protocol conventions only; no imported kinetic limit"
+    }
+  ],
+  "current_parent_head": "ce0919d81e1660ee8c93e53af5cba8c1e4b293e4",
+  "freshness_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/publication_ref_refresh/RECEIPT.json",
+  "editable_prompt_files_changed": []
+}

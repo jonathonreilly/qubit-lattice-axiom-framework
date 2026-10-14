@@ -1,6 +1,6 @@
 {
- "edge_count": 15941,
- "node_count": 7063,
+ "edge_count": 15944,
+ "node_count": 7064,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6645,6 +6645,10 @@
   "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": {
    "deps_hash": "469a8cc015b6",
    "out_degree": 2
+  },
+  "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "bf48862e7dcb",
+   "out_degree": 3
   },
   "fixed_set_and_configuration_bridge_restrictions_cycle894_bounded_theorem_note_2026-07-28": {
    "deps_hash": "100cedca9ec7",

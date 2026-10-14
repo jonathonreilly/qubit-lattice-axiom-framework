@@ -1,0 +1,65 @@
+{
+  "schema": "conditional-science-root-acceptance-v1",
+  "accepted_at": "2026-10-14T09:52:23.409500+00:00",
+  "status": "accepted conditional fixed-neutral-ray L4 preparation with explicit supplied-control and drift-cost qualifications",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation/DERIVATION.md",
+    "sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124",
+    "bytes": 32080
+  },
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation/FINAL_FREEZE.json",
+    "sha256": "21c3e2569249635e1223f53ef29adcedc6684e562ce4dbbadf3213b7a5a3764f",
+    "bytes": 11065
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_review/REPORT.md",
+    "sha256": "44c9768da5256b1e5f0fb2d16d76eca731d51fe88aacdf707924a26d94847a3f",
+    "bytes": 24931
+  },
+  "review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_review/REVIEW_SEAL.json",
+    "sha256": "ee4a1e992f9c80b18a71f3d05bb1142c8a15fac446eae2d0e64452d7712ff907",
+    "bytes": 4090
+  },
+  "root_source_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_root_review/ROOT_SOURCE_REVIEW.json",
+    "sha256": "0bdfc2683796ab86edf92f6093f51483edafa963b2b6cc30b4719200bb8d70a4",
+    "bytes": 4022
+  },
+  "root_review_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_root_review/REVIEW_BINDING.json",
+    "sha256": "30dd18a65fafcf0a0da6f59ed14e866e606959709032704ef248e804518b6ce2",
+    "bytes": 301
+  },
+  "root_disposition": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_root_review/ROOT_DISPOSITION.md",
+    "sha256": "cf772a99d047f341fa8d82ab334e65afbd53fad7cabe48e234a8c76830214100",
+    "bytes": 4217
+  },
+  "actual_independent_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_review/run01_review_controls/RECEIPT.json",
+    "sha256": "d3f8b368b1ecd44aa70664fd3175ba46a9dbaf0ae2bc37425caff4aad2d443c1",
+    "bytes": 2201
+  },
+  "review_exposure": "Source-exposed same selected model/effort; distinct direct-loop, raw-word certificate and exact-route checks, not model-diverse or blind.",
+  "scientific_executions": {
+    "author": 2,
+    "separate_reviewer": 1,
+    "root_reruns": 0
+  },
+  "accepted_counts": {
+    "signed_rows": 1475,
+    "rank": 1344,
+    "logical_gates": 14017,
+    "physical_primitives": 871249,
+    "idle_transit_factors": 21747,
+    "all_active_inputs": 1344
+  },
+  "required_export_qualification": "Jc prices scheduled gate generators after drift removal. It does not bound or price a separate arbitrary drift compensator or its apparatus.",
+  "error_scope": "Unitary primitive operator errors and joint initialization trace error, including arbitrary idle/passive-reference correlations.",
+  "retained_or_audit_verdict": false,
+  "native_or_autonomous_claim": false,
+  "canonical_or_git_changes_by_acceptance": false,
+  "editable_prompt_files_changed": []
+}

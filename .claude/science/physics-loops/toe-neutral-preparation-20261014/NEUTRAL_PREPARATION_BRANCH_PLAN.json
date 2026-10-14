@@ -1,0 +1,7 @@
+{
+  "base": "84fdb15d24c567cefd6c843cc5ddfc6e990f2205",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-neutral-preparation-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9540"
+}

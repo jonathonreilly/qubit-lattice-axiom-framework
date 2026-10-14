@@ -1,0 +1,76 @@
+{
+  "frontmatter": "---\ntitle: Fixed neutral-ray preparation by a returned nearest-neighbor circuit\nclaim_id: fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 neutral ray, supplied active product input, addressed gates after drift removal, arbitrary transit and passive reference\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: one accepted finite signed preparation word and full returned-route certificate with explicit supplied controls; identity runner evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\", \"openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02\", \"recurrent_encode_update_decode_sandwich_cycle883_bounded_theorem_note_2026-08-03\"]\nrunner: scripts/fixed_neutral_ray_preparation_identity_2026_10_14.py\nnext_trace_action: separate root review and guarded integration of this publication package, then regular PR and independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "984cd3a61e6f8ccd0c4baf5dedbdd73d6cb3f589550038f0796b86d6e23d43b3",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 44499,
+          "byte_start_inclusive": 12419,
+          "bytes": 32080,
+          "id": "NEUTRAL_PREPARATION",
+          "line_end_inclusive": 370,
+          "line_start_inclusive": 92,
+          "sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/cores/NEUTRAL_PREPARATION_DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 8382,
+      "diff_sha256": "cfab98253ed5a5324a11425c421955692d4d097d5f5c3ac6034977df5e4b89a3",
+      "diff_stored_sha256": "6ff0b8a988b3784370e88316a7233a40b41b0cb1ef4bb39c34212ca9287dc741",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/cores/NEUTRAL_PREPARATION_DERIVATION.md",
+          "source_sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+        }
+      ],
+      "pieces_scope": "Whitespace source-identity projection only; complete reconstruction uses frontmatter, rendered wrapper and unchanged accepted remainder.",
+      "published_bytes": 44499,
+      "published_lines": 370,
+      "published_sha256": "e0ea48d319165e3d310a928c437fb546f2c5ffb7de744f59609daf734ac74ec5",
+      "stored_bytes": 3161,
+      "tofile": "docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "b3bdb1d92ed7bc57c35a6a6f55a1fc589767b66bcf270f00afb87576eed1d3ab",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 6784,
+    "diff_sha256": "96dca7f908e2ac15f681812a02c8dd29bf7447f3a37e0b9d9adb248820f65f10",
+    "diff_stored_sha256": "c47a75f398c407bb5ca5bbfb52461ca3c69bff868ee87781ab4f2f7d18743791",
+    "fromfile": "WRAPPER.md",
+    "stored_bytes": 2546,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "**Current source status: accepted conditional finite preparation; separate source-assembly review and later publication gates remain open.**",
+      "rendered": "**Current source status: accepted conditional finite preparation and source assembly; this publication rendering and driver require separate root review.**",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The full-byte archive map, exact core extraction, current wrapper and source-only identity receipt await root substantive assembly review. Canonical execution, publication, actual-current-main integration gates and retained audit remain separate later steps.",
+      "rendered": "The exact source assembly was accepted under `b901fd0b1c26861a39458f8693e30c0d8b3956d92f0da4d6e20f2de7130c9d00`, after root review `fe51280207166f58b57cbc8141517b9330fe551e5e3f7c2dc5c833cf87cec6c5`. This publication rendering, driver and actual-current-parent integration gates require separate root acceptance; retained audit remains a later step.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "The **one direct mathematical parent** is `docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md`",
+      "rendered": "The **one direct mathematical parent** is [joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Generic stabilizer preparation, Clifford elimination, measured/feedforward corrections, returned SWAP routing and inverse circuits are existing machinery.",
+      "rendered": "Generic stabilizer preparation, Clifford elimination, measured/feedforward corrections, returned SWAP routing and inverse circuits are existing machinery. The canonical [Cycle 870 returned routing](OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md) and [Cycle 883 inverse and return](RECURRENT_ENCODE_UPDATE_DECODE_SANDWICH_CYCLE883_BOUNDED_THEOREM_NOTE_2026-08-03.md) citations provide mechanism attribution only, with their original recorded read limits; their other results and fixture counts are not imported.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

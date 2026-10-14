@@ -1,0 +1,54 @@
+{
+  "accepted_utc": "2026-10-14T10:39:05.912458+00:00",
+  "disposition": "conditional_source_assembly_accepted",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/FINAL_FREEZE.json",
+    "bytes": 40564,
+    "sha256": "b3bdb1d92ed7bc57c35a6a6f55a1fc589767b66bcf270f00afb87576eed1d3ab"
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/CANDIDATE.md",
+    "bytes": 42462,
+    "sha256": "984cd3a61e6f8ccd0c4baf5dedbdd73d6cb3f589550038f0796b86d6e23d43b3"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/THEOREM_WRAPPER.md",
+    "bytes": 10069,
+    "sha256": "31de08e6db1805823d0b342142f0f9e295971f81fd3d8cb852361ada963d172c"
+  },
+  "accepted_original_proof": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_neutral_preparation_source_assembly/cores/NEUTRAL_PREPARATION_DERIVATION.md",
+    "bytes": 32080,
+    "sha256": "0e002497bfa624ceb116059e092b3d853c36a969f37e96794675de3e3f587124"
+  },
+  "prior_scientific_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NEUTRAL_PREPARATION_ROOT_ACCEPTANCE.json",
+    "bytes": 3550,
+    "sha256": "6e1e1bf011dfd5cb765c8ae1430efb2aebe809443b01992edb2aac8703509fbe"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/NEUTRAL_PREPARATION_ASSEMBLY_ROOT_REVIEW.md",
+    "bytes": 4565,
+    "sha256": "fe51280207166f58b57cbc8141517b9330fe551e5e3f7c2dc5c833cf87cec6c5"
+  },
+  "root_source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_assembly_root_review/SOURCE_BINDING.json",
+    "bytes": 3769,
+    "sha256": "3adf15634b121659611dd2a454715883ac9c1bc9edb05ba7efbbfd333312a270"
+  },
+  "actual_root_source_check_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/neutral_preparation_assembly_root_review/source_check/EXECUTION.json",
+    "bytes": 767,
+    "sha256": "268e7639f4b3bb27e964993ccd173925ef9de09130f5be174e12b6bc8c5188a0"
+  },
+  "scope": "One fixed L4 neutral ray via supplied addressed returned NN circuit, scheduled gate cap after drift removal; arbitrary compensator cost excluded.",
+  "new_prose_and_complete_changed_programs_read": true,
+  "exact_unchanged_prior_proof_coverage_reused": true,
+  "all200_assembly_files_bound": true,
+  "mathematical_body_edits": 0,
+  "new_mathematical_predicates": 0,
+  "scientific_reruns": 0,
+  "future_publication_driver_accepted": false,
+  "retained_audit_status": false,
+  "editable_prompt_files_changed": []
+}

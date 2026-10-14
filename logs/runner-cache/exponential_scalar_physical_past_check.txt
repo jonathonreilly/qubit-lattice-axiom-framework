@@ -1,0 +1,824 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_physical_past_check.py
+runner_sha256: 8695e05f06a05db0e7ac3cb6006e33015b40f4361278db142013beb5c742fc5c
+input_fingerprint_sha256: 65763b4a7634a545eb3ad6f846849b08e12b1135f928fe419f05bf6acebac1bb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional supplied-action theorems and exposed synthetic controls, not an observational likelihood.",
+  "passed": 158,
+  "failed": 0,
+  "units": {
+    "turnaround": {
+      "passed": 40,
+      "failed": 0
+    },
+    "calibration": {
+      "passed": 66,
+      "failed": 0
+    },
+    "slow_past": {
+      "passed": 52,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "turnaround::action_coupling_norm",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::action_strict_norm_domain",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::action_J_gap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::stationary_curvature_gap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::stationary_strict_gap",
+      "passed": true,
+      "detail": "(3*Q*c*sigma + Q*c*v2 + 3*Q*sigma + V*c + V + c*rm + rm)/(c + 1)"
+    },
+    {
+      "name": "turnaround::endpoint_positive_polynomial",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::endpoint_incompatible_near_flat",
+      "passed": true,
+      "detail": "c*x**2 + 2*c*x + c + 2*x"
+    },
+    {
+      "name": "turnaround::physical_product",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::radiation_curvature_transport",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::no_zero_case_product_strict",
+      "passed": true,
+      "detail": "ell**2*eta + ell**2 + 2*ell*eta + 2*ell + eta"
+    },
+    {
+      "name": "turnaround::last_zero_case_product_stronger",
+      "passed": true,
+      "detail": "ell**2*eta0 + 2*ell**2 + 2*ell*eta0 + 4*ell + eta0"
+    },
+    {
+      "name": "turnaround::last_zero_nonnegative_raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::last_zero_nonstrict_gap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::excluded_large_q_flat_witness",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::large_curvature_counterwitness_E_contraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::large_curvature_counterwitness_d",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::large_curvature_counterwitness_outside_endpoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::cross_last_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::cross_right_derivative_nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::cross_positive_final_H",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::cross_positive_final_log_radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::degenerate_cross_last_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::degenerate_cross_right_derivative_nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::degenerate_cross_positive_final_H",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::degenerate_cross_positive_final_log_radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::touch_last_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::touch_right_derivative_nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::touch_positive_final_H",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::touch_positive_final_log_radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::zero_free_chronology",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::zero_free_positive_radius",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::closed_example_product_1/2",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::closed_example_obstruction_1/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::closed_example_product_1",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::closed_example_obstruction_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::closed_example_product_2",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "turnaround::closed_example_obstruction_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::illustrative_threshold_(1/100, 1/10)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::illustrative_threshold_(1/2, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "turnaround::illustrative_threshold_(1/4, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::global_calibration_ceiling_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::chi_coupling_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::maximum_at_origin",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::positive_denominator_split",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::finite_field_coupling_norm_gap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::coupling_monotone",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::gradient_Euler_coefficient_0",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::gradient_Euler_coefficient_1",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::gradient_Euler_coefficient_2",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::scalar_Poisson_normalization",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::eigenbasis_orthogonality",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::spectral_weight_sum",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::weights_nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::force_from_Green_potential",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::force_kernel_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::force_massless_limit",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::force_infinite_range_limit",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::spectral_force_ceiling_1/10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::spectral_force_ceiling_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::spectral_force_ceiling_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::calibration_divides_radiation_diagnostic",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::necessary_coupling_threshold",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::negative_calibration_does_not_define_positive_diagnostic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::potential_coupling_inverse",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::potential_energy_floor_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::total_potential_derivative_sign_factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::negative_u_derivative_term_0",
+      "passed": true,
+      "detail": "12*aa*(-1 + exp(-z))"
+    },
+    {
+      "name": "calibration::negative_u_derivative_term_1",
+      "passed": true,
+      "detail": "-nu*z*(z + 1)"
+    },
+    {
+      "name": "calibration::negative_u_derivative_term_2",
+      "passed": true,
+      "detail": "-nu*z*exp(z)/ss"
+    },
+    {
+      "name": "calibration::zero_coupling_log_squared_floor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1/10, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1/10, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1/10, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1/10, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 1, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 10, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 10, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 10, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/20, 10, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1/10, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1/10, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1/10, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1/10, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 1, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 10, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 10, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 10, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/10, 10, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1/10, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1/10, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1/10, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1/10, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 1, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 10, 1/100, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 10, 1/100, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 10, 1/10, 1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::synthetic_floor_(1/4, 10, 1/10, 2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::kinetic_square_completion",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::slow_event_curvature_gap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::stationary_velocity_minimum",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::velocity_minimum_value",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::positive_completed_square_coefficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::strict_slow_gap_exact_certificate",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::strict_slow_gap_positive_remainder",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::action_norm_as_coupling",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::norm_to_physical_clock_ratio",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::quadratic_completion_for_denominator",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::ratio_minimum_point_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::ratio_at_minimum",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::positive_margin_k",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::minimizer_inside_Cmax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::positive_uniform_margin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::ratio_minus_uniform_floor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::threshold_is_exact_coupling_minimum",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::strict_trigger_margin",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::proper_time_radius_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::physical_radiation_charge",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::radius_duration_boundary",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::density_duration_boundary",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::excess_rate_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::excess_zero_at_origin",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::excess_gap_derivative_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::critical_constraint",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::critical_raychaudhuri",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::critical_radiation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::critical_physical_rate_past_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::critical_past_radius_positive",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::critical_target_failure_product",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/100, 1/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/100, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/100, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/100, 3/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/100, 99/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/10, 1/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/10, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/10, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/10, 3/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/10, 99/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/4, 1/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/4, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/4, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/4, 3/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(1/4, 99/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(3/10, 1/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(3/10, 1/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(3/10, 1/2)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(3/10, 3/4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::uniform_bound_(3/10, 99/100)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow_past::outside_slow_condition_curvature_can_be_negative",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checker_sha256": "8695e05f06a05db0e7ac3cb6006e33015b40f4361278db142013beb5c742fc5c"
+}
+
+----- stderr -----
+

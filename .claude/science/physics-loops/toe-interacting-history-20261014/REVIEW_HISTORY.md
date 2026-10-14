@@ -1,0 +1,9 @@
+# Review and exposure history
+
+The complete original application d385cb20 was reviewed against pinned IC/FH premises in source-exposed report b7a47333 before exposure to corrected V2. The original review found two wording defects: the sufficient joint preparation budget was overstated as a necessary per-fuel rate, and scalar clock-number padding was conflated with idle path extension. Both original statements, findings, full V2 and exact e71c00f4 repair remain archived. Separate delta d8ca599c confirms the two repairs, with no formula/control change. Root accepted V2 at7001245f; final root review0c9ffe74 is preserved.
+
+The source assembly at10e82578 was accepted for source-only publication preparation atd1fd07a7, with root reviewaf2dc4c7. Its prior source/exposure coverage is reused at exact hashes. This preparation adds no independent mathematical review. Full unchanged direct-body IC/FH coverage is reused only for the actual conditional roles stated in PARENT_BINDINGS.json; no new transitive-parent review is claimed.
+
+The author four-qubit counterexample and actual stdout, empty stderr and receipt are preserved unchanged. It is a selected-state full-Hamiltonian energy witness, not an asserted IC trajectory, a diamond-norm certificate or a general no-go. No author control was rerun.
+
+The publication driver is adapted from IC driverce7c6dba; complete source differences, whole-function maps and changed-function extracts are supplied outside the payload. External-parent binding follows the finite-apparatus source convention with exactly two direct roles. Root still must read the complete new identity logic, wrapper delta and changed driver functions before authorizing execution. Existing parent CI/check lists and identity-only results confer no new scientific or retained status.

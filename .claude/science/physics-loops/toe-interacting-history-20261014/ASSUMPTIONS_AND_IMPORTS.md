@@ -1,0 +1,7 @@
+# Exact imports and extra application premise
+
+PARENT_BINDINGS.json binds the complete IC direct body3c02940e inside canonical f19a05dd and the complete FH application7fe0df39 inside canonical839547b9. Both canonical files are verified at actual parent bf476b0c. Full prior source-exposed proof coverage is reused under the exact direct roles; no irrelevant parent proofs are copied into the canonical child body.
+
+IC imports original-source/reference channel, full-clock positivity, engineered geometry, effective free-phase fuel selection, broad error class and actual ledger. The narrow exact-copy/unitary-error fresh-fuel result is not silently used for broad nonunitary blocks or copy mismatch. FH imports one common physical chain volume and full weighted CQ compilation for its fixed finite protocol/preparation data. The child additionally supplies a computable finite U/circuit or coherent dilations/completions and complete circuit-to-history certificate. Old records are preserved and discarded environments are not reused.
+
+Original chain endpoints/scalar shift stay fixed. Record/work extensions have declared nonnegative diagonal energies and zero joining bonds; all copies reproduce the full enlarged ordered Hamiltonian. Number weight uses the actual positive-Fock pullback. Every varying volume needs its own circuit/fuel/controller and independent tail/preparation certificate when required. No joint kinetic uniformity follows.

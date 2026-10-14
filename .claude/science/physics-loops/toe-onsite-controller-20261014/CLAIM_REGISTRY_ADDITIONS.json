@@ -1,0 +1,20 @@
+{
+  "binding_complete": true,
+  "direct_edges": [],
+  "expected_delta": {
+    "edges": 0,
+    "nodes": 1,
+    "roots": 1
+  },
+  "new_roots": [
+    "onsite_energy_autonomous_controller_bounded_theorem_note_2026-10-14"
+  ],
+  "nodes": [
+    {
+      "claim_id": "onsite_energy_autonomous_controller_bounded_theorem_note_2026-10-14",
+      "deps": [],
+      "path": "docs/ONSITE_ENERGY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/onsite_energy_autonomous_controller_identity_2026_10_14.py"
+    }
+  ]
+}

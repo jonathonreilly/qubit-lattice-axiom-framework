@@ -1,0 +1,49 @@
+{
+  "actual_energy_covariance_retained": true,
+  "autonomous_stopping_proved": false,
+  "empty_external_mathematical_dependencies": true,
+  "interacting_controller_proved": false,
+  "kinetic_joint_limit_proved": false,
+  "mathematical_core_edits": 0,
+  "native_realization_proved": false,
+  "new_independent_mathematical_review": false,
+  "no_go_packet_pass": false,
+  "nonmathematical_wrapper_sentence_clarifications": 1,
+  "one_declared_read_time": true,
+  "original_physical_source_and_arbitrary_reference": true,
+  "positive_full_clock_hamiltonian": true,
+  "publication_runtime_executed_by_source_preparer": false,
+  "retained_audit_status": false,
+  "source_assembly_root_acceptance_sha256": "9e5a065a63d0bc6b73c9f5a990b792f05226f7f636e841963bbc82a1703d9021",
+  "source_assembly_root_review_sha256": "630250342b4b815cd8e9949e5a338a3af6010dd843844ca06a5793a1966f391d",
+  "source_review_coverage_verbatim": {
+    "assembly": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/bounded_controller_source_assembly",
+    "candidate_sha256": "583fdff66f44d190a76419dc47b8c313493b4fdb54fc1c5ede7e112efa5eb987",
+    "canonical_execution_authorized": false,
+    "editable_prompt_files_changed": [],
+    "expected_graph_change": {
+      "all_old_complete_objects_preserved": true,
+      "edges": 0,
+      "nodes": 1,
+      "roots": 1
+    },
+    "external_canonical_mathematical_dependencies": [],
+    "freeze_sha256": "4064eb90748b1584b18d62c08de27d71283ed62daab1cd4493692292797d4fee",
+    "identity_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/onsite_assembly_root_review/IDENTITY_CHECK.json",
+    "identity_receipt_sha256": "b4932e7a93ae96ff12e884b328534dee4365cd9953301ba1c63c742fc0854d91",
+    "mathematical_source_changes": 0,
+    "required_exact_replacement": {
+      "new": "This sufficient joint-preparation guarantee does not follow from a fixed nonzero per-qubit error bound as the apparatus grows.",
+      "old": "Fixed per-qubit preparation error is not an accuracy-independent resource as the apparatus grows."
+    },
+    "root_report": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/onsite_assembly_root_review/REPORT.md",
+    "root_report_sha256": "630250342b4b815cd8e9949e5a338a3af6010dd843844ca06a5793a1966f391d",
+    "scope": "accepted_for_source_publication_preparation_with_exact_wrapper_clarification",
+    "utc": "2026-10-14T04:46:39.185890+00:00",
+    "wrapper_sha256": "46e53f829b1730dafd381154ad03c3b123f0be2ba8623a03048a69c7f94af79a"
+  },
+  "structured_error_and_extensive_preparation_scope": true,
+  "supplied_onsite_model": true,
+  "unchanged_complete_core_coverage_reused": true,
+  "uniform_many_body_gap_proved": false
+}

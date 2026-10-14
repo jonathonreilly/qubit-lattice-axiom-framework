@@ -1,0 +1,41 @@
+{
+  "geometry_case_count_from_accepted_review": 31,
+  "mathematical_predicates_executed_during_assembly": 0,
+  "runs": [
+    {
+      "directory": "worker_derivation/run01",
+      "new_script_or_output_content_review": "Identity-only reuse of complete root/source-review coverage; receipts read in full.",
+      "receipt_sha256": "61984b9bcc39801f0b50f7e596bc9bfea068b8793d55ba31e3cdc0475933436e",
+      "recorded_exit_code": 0,
+      "rerun_during_assembly": false,
+      "script": "worker_derivation/selective_controls.py",
+      "script_sha256": "602c93ac2396c512e8eab7fc7f69823f76bb4279c1a6856f6575c2affb200469",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "31a5dc734a9fc4c2b22d97bcef4086e92768ebad4b6b5a365c79fc2974e8314c"
+    },
+    {
+      "directory": "selective_check/run01",
+      "new_script_or_output_content_review": "Identity-only reuse of complete root/source-review coverage; receipts read in full.",
+      "receipt_sha256": "c36abdadc4dae8f346fdce67bc8f31f42fe306de2166b04b271b20838c5b8852",
+      "recorded_exit_code": 0,
+      "rerun_during_assembly": false,
+      "script": "selective_check/check_operator_algebra.py",
+      "script_sha256": "ab1defcac6f55b24e8c966f62bc04a8ad3cecb046171647898aada32d21b693f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3abef6a73c94983862cf9679caa8241d32b2b8bedd28d53e5d4a4216f9e01bc2"
+    },
+    {
+      "directory": "full_source_review/geometry_run01",
+      "new_script_or_output_content_review": "Identity-only reuse of complete root/source-review coverage; receipts read in full.",
+      "receipt_sha256": "133b00b84cd309690aafd3b760857b426d9aa6e6672266c59a659ddaa57d7ff7",
+      "recorded_exit_code": 0,
+      "rerun_during_assembly": false,
+      "script": "full_source_review/check_geometry.py",
+      "script_sha256": "19e18ac0664cfbc5b088bfb64499a00dbcb135da0a06770e79eb0720c0b374d7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f6f4149779f06809b3ede8466128b15584a432fa7c1e923e95ba3bf0beb287e8"
+    }
+  ],
+  "scope": "Historical actual runs, not fresh execution or canonical cache",
+  "source_exposure": "Entire full/proposal/fuel/structured review reports read; no new blind check or model-diverse review."
+}

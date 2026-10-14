@@ -1,0 +1,7 @@
+# Preserved corrections and failed controls
+
+The original proposal's bundled transport count is distinct from the final physical gate count L=M(8n+1). The historical full-review line count298 is corrected to329 in a preserved addendum; the original review is retained. All worker/separate/full reviews and their source exposure are archived, including the author's prior proposal and onsite context.
+
+The nominal fuel-moment width counterexample is preserved with the original statement, exact repair and full/delta reviews. Source width one alone does not bound a width-two fuel's mean or variance, even for zero collision interaction. The corrected lemma charges each actual fuel width. Its channel estimate is unchanged. Part III's same-actual-fuel ledger still charges M xi; it does not make nominal initial moment errors disappear or extend to arbitrary nonunitary blocks.
+
+Actual controls retain the wrong half-transport control movement, omitted compensation and omitted source free phase. The large-M channel calculation is a16-by-16 superoperator, not a simulation of65,536 fuel copies or a diamond-norm certificate. The31-case geometry enumeration is finite support evidence; the all-size incidence proof remains analytic. No historical control was rerun. The accepted wrapper's three small source-construction corrections and their original/diff/receipt remain in the archive; no new wrapper correction is made for publication.

@@ -1,6 +1,6 @@
 {
- "edge_count": 15947,
- "node_count": 7076,
+ "edge_count": 15949,
+ "node_count": 7079,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12386,6 +12386,14 @@
    "deps_hash": "165b6a5a21bb",
    "out_degree": 2
   },
+  "interacting_controller_history_application_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "ce3a39eb139f",
+   "out_degree": 2
+  },
+  "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "interacting_rp_fixed_a_u_integrated_bridge_bounded_note_2026-06-05": {
    "deps_hash": "1700fe450277",
    "out_degree": 5
@@ -16027,6 +16035,10 @@
    "out_degree": 4
   },
   "only_cubic_invariant_bloch_vector_is_zero_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "onsite_energy_autonomous_controller_bounded_theorem_note_2026-10-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1,0 +1,21 @@
+{
+  "actual_parent_head": "84db416c9f96dafeb6d54dc8d8edd39110dfebc8",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-finite-apparatus-20261014",
+    "headRefName": "physics-loop/toe-onsite-controller-20261014",
+    "headRefOid": "84db416c9f96dafeb6d54dc8d8edd39110dfebc8",
+    "isDraft": false,
+    "number": 9531,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9531"
+  },
+  "binding_complete": true,
+  "canonical_core_maps": [],
+  "direct_edges_verified": true,
+  "markdown_citations": [],
+  "markdown_citations_verified": true,
+  "parents": [],
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "reason": "All three complete proof bodies are reproduced in the new note; no external canonical scientific premise is used.",
+  "required_roles": []
+}

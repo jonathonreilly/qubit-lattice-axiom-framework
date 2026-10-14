@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-14T05:36:41.606774+00:00",
+  "disposition": "accepted_for_source_only_publication_preparation",
+  "assembly": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_copy_source_assembly",
+  "assembly_freeze_sha256": "320c527de07e72c1399c0a0706e8b9f2be5ffe1a70682146dfd45035b4446a97",
+  "candidate_sha256": "27556e0ad8e083051badf1d0b546c5045976997bdab137a3da07ab778a88c4cd",
+  "wrapper_sha256": "399b028b794a71cb1903eb89430d1192b3f11d29492544b2088c7e0cb7affea9",
+  "root_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/interacting_assembly_root_review/REPORT.md",
+  "root_review_sha256": "f6f1d77b212f8e3b41015f9c7e6518a7c0dfc9ceaf995798792eba401afd84ef",
+  "identity_receipt_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/interacting_assembly_root_review/IDENTITY_CHECK.json",
+  "identity_receipt_sha256": "7ac31c849d2ad0100e4233335e31d8101e73f95572c9714d8c7011ad7bdcb893",
+  "complete_wrapper_and_new_sidecars_read": true,
+  "complete_accepted_cores_reused_at_exact_pins": true,
+  "exact_three_wrapper_corrections_read": true,
+  "all_frozen_members_and_live_originals_checked": true,
+  "external_canonical_mathematical_dependencies": [],
+  "history_application_included": false,
+  "canonical_execution_authorized": false,
+  "scientific_reruns": 0,
+  "retained_audit": false,
+  "editable_prompt_files_changed": []
+}

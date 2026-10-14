@@ -1,0 +1,20 @@
+# Conditional proof obligations and scope
+
+Target: under the supplied interacting-copy model and a computable coherent-circuit/history certificate, implement the complete finite history instrument on the original enlarged source with the displayed error, physical resources and actual energy ledger; optionally compose with the fixed-history parent's selected common-volume comparison.
+
+| Obligation | Source and present disposition | Hypotheses that remain attached |
+|---|---|---|
+| Static local controller on the returned original source | Accepted conditional raw IC parent `3c02940e…`; application sections 2 and 5 match its hypotheses | Positive supplied nearest-neighbor source, identical ordered copies or certified positive mismatch, engineered interactions, stationary router and independent prepared resources, declared observation time |
+| Enlarged physical source | Application section 2; checked in the complete source review | Original endpoint terms and scalar shift unchanged; diagonal nonnegative appended energies, zero new bonds, whole enlarged copies; no homogeneous-model identification |
+| Effective coherent history | Supplied premise, with the conditional construction in section 3 | Computable finite `U` or stage dilations/unitary completions and complete history certificate; fresh environments and record-preserving feedback; no arbitrary-waveform computability inference |
+| Full CQ/reference contraction | Application sections 3–4; checked analytically | CPTP stages, independent blanks or a complete insertion bound, all outcomes retained without renormalization; mathematical terminal pinching |
+| Weighted common-volume comparison | Accepted FH body `7fe0df39…`, imported through section 4 | Fixed input carrier/moment, actual finite preparation, effective model/gap/boundary/control data, common final volume; pulled-back Fock weight and separate finite compiler premises |
+| Resource and finite-precision substitution | Application section 5 using broad IC class; checked | `q` includes all record/work qubits, full free phase in fuel, exact original source, positive copied energies, endpoint-zero cut approximants, actual block error certificates |
+| Initial moments and pre-read ledger | Section 6 and exact IC ledger; checked | Actual pointer/work energies and coupled first-hop variance; covariance retained for imperfect or correlated preparations; no physical reset by tracing |
+| Mathematical read-energy defect | Sections 7–8; checked, with preserved two-component witness | Original record energies diagonal; sharp terminal head and zero cut for exact zero; full-state and full-space preparation bounds for imperfect completion |
+
+There is no additional unproved algebraic lemma claimed discharged by this packaging. The strongest further physical interface is an actual terminal readout apparatus with its Hamiltonian, preparation, record stability and complete cost ledger. It lies outside the conditional result, rather than being inferred from zero mean-energy change. Native supply of the engineered copies/interactions/preparations is also outside scope.
+
+Boundary cases already covered include no readout (`r=0`), zero appended gaps, arbitrary passive references, invalid approximate record strings with their full mass, non-number-preserving finite circuits, and the IC single-site endpoint. A finite-history FH instance retains its parent's admissible original-chain size, positive gap and fixed finite bins; the generic IC single-site statement does not enlarge that parent's model. No normalized rare-history, shrinking-gap, efficient-resource, fault-tolerance or long-time kinetic conclusion is asserted.
+
+The original preparation-necessity wording and ambiguous padding wording are preserved as findings and corrected by the exact V2 delta. No general negative theorem or N-gate verdict is created. Canonical citation binding of the IC parent and subsequent publication checks are pending procedural obligations, not a mathematical replacement for any premise above.

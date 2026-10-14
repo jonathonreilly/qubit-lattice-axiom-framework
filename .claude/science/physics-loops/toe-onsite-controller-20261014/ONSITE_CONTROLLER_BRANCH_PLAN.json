@@ -1,0 +1,8 @@
+{
+  "base": "6d2c1c96976d44c4082863d05132c37b92eef4c8",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-onsite-controller-20261014",
+  "branch_created_by_source_preparer": false,
+  "git_ancestry_only": true,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9529"
+}

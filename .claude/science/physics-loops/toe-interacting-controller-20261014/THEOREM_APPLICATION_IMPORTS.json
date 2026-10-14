@@ -1,0 +1,77 @@
+{
+  "actual_current_surface_status": "conditional-support",
+  "context_only": [
+    "Earlier onsite controller and its failed uncompensated interacting substitution: route history only; no missing interface assumed supplied by that theorem.",
+    "Possible Git stack on finite-history or onsite publications: ancestry only.",
+    "Bounded prior-scope search and archived partial canonical note: exposure/context, not exhaustive novelty review."
+  ],
+  "excluded": [
+    "interacting_copy_controller/history_application and its derivation, controls, results or proposed composition",
+    "kinetic joint limits, native apparatus or physical axioms inferred from supplied models"
+  ],
+  "external_canonical_mathematical_dependencies": [],
+  "intended_canonical_graph_policy": "No external canonical mathematical edge is inferred. A future inlined note still needs root-reviewed topology integration; none is performed here.",
+  "internal_composition": [
+    {
+      "does_not_import": "The narrower ledger is not added to Part I section6 general nonunitary/copy-mismatch class.",
+      "from": "Part I sections1-5 and exact section7",
+      "scope": "Exact copies, unitary ideal gates, local prefix corrections, endpoint return and complete collision channel supply these premises.",
+      "to": "Part III ideal-controller premises"
+    },
+    {
+      "from": "Part II fresh-product lemma",
+      "scope": "Initially mutually independent actual fuels independent of source/nonfuel resources; fixed Theta when discussing M-independent common-copy precision.",
+      "to": "Part III epsilon_0"
+    }
+  ],
+  "literature_roles": [
+    {
+      "role": "Prior-art supplied-copy partial-swap attribution; needed finite formula/bound is proved in Part I.",
+      "url": "https://arxiv.org/abs/1307.0401"
+    },
+    {
+      "role": "Prior-art Hamiltonian computation/pulse clock; no universal-computation theorem imported.",
+      "url": "https://arxiv.org/abs/0908.4219"
+    },
+    {
+      "role": "Prior-art engineered perfect transfer; exact normalization/identity is proved in Part I.",
+      "url": "https://arxiv.org/abs/quant-ph/0309131"
+    }
+  ],
+  "mathematical_tools_proved_in_bodies": [
+    "full physical-space partial-swap cut/permutation identity and dual-rail half transports",
+    "full-clock positive-link decomposition and explicit spin transfer",
+    "actual support geometry, n=1 case and all-size incidence bounds",
+    "complete partial-swap collision telescope and same physical source return",
+    "effective separated-cut Cayley/arctangent fuel selection without eigenvector or branch-cut oracle",
+    "distinct broad and narrow perturbation/state-comparison estimates",
+    "actual conserved ledgers, first-hop moments and nominal-width comparisons"
+  ],
+  "new_framework_axioms_or_primitives": [],
+  "self_contained_proof_bodies": [
+    {
+      "path": "cores/CONTROLLER_DERIVATION.md",
+      "role": "Complete ideal controller, exact geometry/effectiveness and broader copy-mismatch/nonunitary-block precision and ledger.",
+      "sha256": "3c02940e2d4f3eb519f459dd658950df77662c7bd431500e52f2509658ed94fe"
+    },
+    {
+      "path": "cores/FRESH_FUEL_BOUND_V2.md",
+      "role": "Fresh-product small-collision lemma and width-qualified nominal-moment bounds.",
+      "sha256": "cffe4574c838fc54e1cf6b0ff9d190f06061798e2dc7eb906c12b7bbd7e2c39b"
+    },
+    {
+      "path": "cores/STRUCTURED_PRECISION_AND_FRESH_LEDGER.md",
+      "role": "Narrower exact-H_0/unitary-block precision with same-actual-fuel comparison.",
+      "sha256": "1c50b1fcce4b79e3a88d74504486295a1dc4d0759c2bf944a3d0bf2e8979773d"
+    }
+  ],
+  "supplied_model_inputs": [
+    "finite tensor-product qubits with stated positive local chain decomposition and ordered identical copies",
+    "exact original source Hamiltonian; positivity and actual local norm certificates for any permitted other-copy mismatch",
+    "effective description and physical preparation of a stationary pure router state",
+    "target unitary and certified computable matrix/scalar data",
+    "engineered finite-range grouped interactions of arity up to six, with actual declared precision",
+    "fresh product fuels for the narrower supplement; generic joint-error promise only where separately stated",
+    "initialized work/clock resources independent of source/reference and access at the declared terminal time"
+  ]
+}

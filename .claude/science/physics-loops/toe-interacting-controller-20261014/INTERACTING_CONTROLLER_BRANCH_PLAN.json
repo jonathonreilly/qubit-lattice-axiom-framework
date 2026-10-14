@@ -1,0 +1,8 @@
+{
+  "base": "84db416c9f96dafeb6d54dc8d8edd39110dfebc8",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-interacting-controller-20261014",
+  "branch_created_by_source_preparer": false,
+  "git_ancestry_only": true,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9531"
+}

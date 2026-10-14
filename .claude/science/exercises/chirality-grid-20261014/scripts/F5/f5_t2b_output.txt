@@ -1,0 +1,30 @@
+=== m = -1.5, Ly = 8 ===
+  Gamma=   0.1: #light/kx<= 1; near-edge max decay=2.50e-04; min decay other in-gap=6.665e-02; no far-localised light
+  Gamma=   1.0: #light/kx<= 1; near-edge max decay=1.75e-04; min decay other in-gap=7.158e-01; no far-localised light
+  Gamma=  10.0: #light/kx<= 1; near-edge max decay=4.41e-04; min decay other in-gap=2.707e-01; no far-localised light
+  Gamma= 100.0: #light/kx<= 1; near-edge max decay=6.84e-04; min decay other in-gap=2.669e-02; no far-localised light
+=== m = -1.5, Ly = 12 ===
+  Gamma=   0.1: #light/kx<= 1; near-edge max decay=9.83e-07; min decay other in-gap=6.657e-02; no far-localised light
+  Gamma=   1.0: #light/kx<= 1; near-edge max decay=2.19e-06; min decay other in-gap=7.159e-01; no far-localised light
+  Gamma=  10.0: #light/kx<= 1; near-edge max decay=1.72e-06; min decay other in-gap=2.703e-01; no far-localised light
+  Gamma= 100.0: #light/kx<= 1; near-edge max decay=2.83e-06; min decay other in-gap=2.661e-02; no far-localised light
+=== m = -1.5, Ly = 16 ===
+  Gamma=   0.1: #light/kx<= 1; near-edge max decay=3.85e-09; min decay other in-gap=6.657e-02; no far-localised light
+  Gamma=   1.0: #light/kx<= 1; near-edge max decay=2.76e-08; min decay other in-gap=7.159e-01; no far-localised light
+  Gamma=  10.0: #light/kx<= 1; near-edge max decay=1.39e-08; min decay other in-gap=2.703e-01; no far-localised light
+  Gamma= 100.0: #light/kx<= 1; near-edge max decay=1.11e-08; min decay other in-gap=2.660e-02; no far-localised light
+=== m = -0.5, Ly = 8 ===
+  Gamma=   0.1: #light/kx<= 1; near-edge max decay=2.48e-04; min decay other in-gap=7.478e-02; no far-localised light
+  Gamma=   1.0: #light/kx<= 1; near-edge max decay=9.05e-05; min decay other in-gap=7.478e-01; no far-localised light
+  Gamma=  10.0: #light/kx<= 1; near-edge max decay=4.37e-04; min decay other in-gap=3.092e-01; no far-localised light
+  Gamma= 100.0: #light/kx<= 1; near-edge max decay=6.79e-04; min decay other in-gap=2.935e-02; no far-localised light
+=== m = -0.5, Ly = 12 ===
+  Gamma=   0.1: #light/kx<= 1; near-edge max decay=9.70e-07; min decay other in-gap=7.501e-02; no far-localised light
+  Gamma=   1.0: #light/kx<= 1; near-edge max decay=3.53e-07; min decay other in-gap=7.478e-01; no far-localised light
+  Gamma=  10.0: #light/kx<= 1; near-edge max decay=1.70e-06; min decay other in-gap=3.095e-01; no far-localised light
+  Gamma= 100.0: #light/kx<= 1; near-edge max decay=2.80e-06; min decay other in-gap=3.001e-02; no far-localised light
+=== m = -0.5, Ly = 16 ===
+  Gamma=   0.1: #light/kx<= 1; near-edge max decay=3.78e-09; min decay other in-gap=7.502e-02; no far-localised light
+  Gamma=   1.0: #light/kx<= 1; near-edge max decay=1.37e-09; min decay other in-gap=7.478e-01; no far-localised light
+  Gamma=  10.0: #light/kx<= 1; near-edge max decay=6.63e-09; min decay other in-gap=3.095e-01; no far-localised light
+  Gamma= 100.0: #light/kx<= 1; near-edge max decay=1.09e-08; min decay other in-gap=3.002e-02; no far-localised light

@@ -1,0 +1,9 @@
+Ly=12 Gamma=0.3: valence states=1436, min decay=1.32e-06, median=2.41e-02, frac<1e-6=0.000, frac<1e-4=0.005
+Ly=12 Gamma=1.0: valence states=1437, min decay=3.54e-06, median=5.40e-02, frac<1e-6=0.000, frac<1e-4=0.004
+Ly=12 Gamma=3.0: valence states=1442, min decay=3.92e-06, median=2.58e-02, frac<1e-6=0.000, frac<1e-4=0.004
+Ly=20 Gamma=0.3: valence states=2404, min decay=3.33e-10, median=1.40e-02, frac<1e-6=0.002, frac<1e-4=0.005
+Ly=20 Gamma=1.0: valence states=2405, min decay=8.94e-10, median=2.87e-02, frac<1e-6=0.002, frac<1e-4=0.004
+Ly=20 Gamma=3.0: valence states=2410, min decay=9.90e-10, median=1.38e-02, frac<1e-6=0.002, frac<1e-4=0.004
+Ly=30 Gamma=0.3: valence states=3614, min decay=1.06e-14, median=9.20e-03, frac<1e-6=0.002, frac<1e-4=0.012
+Ly=30 Gamma=1.0: valence states=3615, min decay=2.82e-14, median=1.80e-02, frac<1e-6=0.002, frac<1e-4=0.003
+Ly=30 Gamma=3.0: valence states=3620, min decay=3.13e-14, median=8.67e-03, frac<1e-6=0.002, frac<1e-4=0.018

@@ -1,0 +1,91 @@
+=== 0. W3 normalisation check: A = sin k . sigma + i (m - sum cos k) ===
+  m=2.0: W3 = +1.000000   (expect +-1 for 1<m<3, 0 for m>3)
+  m=4.0: W3 = -0.000000   (expect +-1 for 1<m<3, 0 for m>3)
+=== 1. Scalar dissipative Wilson walker: Gamma = kappa f^p ===
+  p=1 E_ref=-i*0.125: W3 = -1.024014  (min sing. value 1.250e-01)
+  p=1 E_ref=-i*0.500: W3 = -1.000000  (min sing. value 5.000e-01)
+   damping rate at the 8 corners: [np.float64(0.0), np.float64(2.0), np.float64(2.0), np.float64(2.0), np.float64(4.0), np.float64(4.0), np.float64(4.0), np.float64(6.0)]
+  p=2 E_ref=-i*0.125: W3 = -1.026677  (min sing. value 1.250e-01)
+  p=2 E_ref=-i*0.500: W3 = -1.000000  (min sing. value 5.000e-01)
+   damping rate at the 8 corners: [np.float64(0.0), np.float64(4.0), np.float64(4.0), np.float64(4.0), np.float64(16.0), np.float64(16.0), np.float64(16.0), np.float64(36.0)]
+  p=4 E_ref=-i*0.125: W3 = -1.026672  (min sing. value 1.250e-01)
+  p=4 E_ref=-i*0.500: W3 = -1.000002  (min sing. value 5.000e-01)
+   damping rate at the 8 corners: [np.float64(0.0), np.float64(16.0), np.float64(16.0), np.float64(16.0), np.float64(256.0), np.float64(256.0), np.float64(256.0), np.float64(1296.0)]
+  Hermitian control (Gamma = 0, E_ref = -0.5i): W3 = -0.000000
+=== 2. Scalar families: steady state, mixedness, jump rate, sea error ===
+  p=1 gain fraction=0.0: <mixedness>=0.0000, r=0.0000 jumps/site/time, e_sea(q=.3,.1,.03)=[np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+  p=1 gain fraction=0.5: <mixedness>=0.5000, r=3.0000 jumps/site/time, e_sea(q=.3,.1,.03)=[np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+  p=1 gain fraction=0.9: <mixedness>=0.1800, r=1.0800 jumps/site/time, e_sea(q=.3,.1,.03)=[np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+  p=2 gain fraction=0.0: <mixedness>=0.0000, r=0.0000 jumps/site/time, e_sea(q=.3,.1,.03)=[np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+  p=2 gain fraction=0.5: <mixedness>=0.5000, r=10.5000 jumps/site/time, e_sea(q=.3,.1,.03)=[np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+  p=2 gain fraction=0.9: <mixedness>=0.1800, r=3.7800 jumps/site/time, e_sea(q=.3,.1,.03)=[np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+=== 3. Random local jump families (3 loss + 2 gain, range-1 symbols x f^m) ===
+  m=1 seed=0: W3=-0.9647/+2.6064 (minsv 1.61e-02); min corner decay=9.171; min decay on shifted grid=2.00e-03; <mix>=0.3305 (min 5.73e-02); r=2.9734e+01
+      q=0.30: e_sea=0.9652, max|n+(q)-n-(-q)|=0.2283, n+ in [0.325,0.739], n- in [0.389,0.675]
+      q=0.10: e_sea=0.9880, max|n+(q)-n-(-q)|=0.0778, n+ in [0.376,0.697], n- in [0.397,0.663]
+      q=0.03: e_sea=0.9964, max|n+(q)-n-(-q)|=0.0234, n+ in [0.387,0.683], n- in [0.391,0.672]
+  m=1 seed=1: W3=-1.0001/-0.9848 (minsv 1.99e-02); min corner decay=3.316; min decay on shifted grid=1.26e-03; <mix>=0.3277 (min 4.58e-02); r=3.6165e+01
+      q=0.30: e_sea=0.9366, max|n+(q)-n-(-q)|=0.2553, n+ in [0.236,0.777], n- in [0.117,0.882]
+      q=0.10: e_sea=0.9775, max|n+(q)-n-(-q)|=0.0930, n+ in [0.212,0.788], n- in [0.161,0.841]
+      q=0.03: e_sea=0.9932, max|n+(q)-n-(-q)|=0.0282, n+ in [0.192,0.802], n- in [0.181,0.819]
+  m=1 seed=2: W3=-0.8059/-1.0338 (minsv 1.48e-02); min corner decay=7.175; min decay on shifted grid=1.37e-03; <mix>=0.3485 (min 3.27e-02); r=3.4871e+01
+      q=0.30: e_sea=0.9981, max|n+(q)-n-(-q)|=0.2574, n+ in [0.128,0.557], n- in [0.111,0.624]
+      q=0.10: e_sea=0.9990, max|n+(q)-n-(-q)|=0.0887, n+ in [0.124,0.534], n- in [0.123,0.548]
+      q=0.03: e_sea=0.9996, max|n+(q)-n-(-q)|=0.0267, n+ in [0.120,0.526], n- in [0.124,0.529]
+  m=1 seed=3: W3=+0.5690/+14.7453 (minsv 1.29e-02); min corner decay=10.296; min decay on shifted grid=1.27e-03; <mix>=0.3401 (min 7.29e-02); r=3.4648e+01
+      q=0.30: e_sea=0.9878, max|n+(q)-n-(-q)|=0.1987, n+ in [0.020,0.600], n- in [0.023,0.658]
+      q=0.10: e_sea=0.9965, max|n+(q)-n-(-q)|=0.0679, n+ in [0.027,0.604], n- in [0.019,0.623]
+      q=0.03: e_sea=0.9990, max|n+(q)-n-(-q)|=0.0204, n+ in [0.024,0.608], n- in [0.017,0.614]
+  m=1 seed=4: W3=-3.3649/-1.9149 (minsv 8.11e-03); min corner decay=10.175; min decay on shifted grid=2.12e-03; <mix>=0.3253 (min 4.90e-02); r=3.3987e+01
+      q=0.30: e_sea=1.0153, max|n+(q)-n-(-q)|=0.1277, n+ in [0.038,0.514], n- in [0.026,0.599]
+      q=0.10: e_sea=1.0049, max|n+(q)-n-(-q)|=0.0444, n+ in [0.033,0.530], n- in [0.027,0.563]
+      q=0.03: e_sea=1.0015, max|n+(q)-n-(-q)|=0.0134, n+ in [0.031,0.540], n- in [0.029,0.550]
+  m=1 seed=5: W3=-1.0358/-1.4052 (minsv 9.88e-03); min corner decay=8.240; min decay on shifted grid=6.62e-04; <mix>=0.3265 (min 9.69e-03); r=3.3339e+01
+      q=0.30: e_sea=0.9823, max|n+(q)-n-(-q)|=0.4474, n+ in [0.296,0.690], n- in [0.091,0.800]
+      q=0.10: e_sea=0.9912, max|n+(q)-n-(-q)|=0.2179, n+ in [0.122,0.640], n- in [0.129,0.695]
+      q=0.03: e_sea=0.9970, max|n+(q)-n-(-q)|=0.0704, n+ in [0.075,0.645], n- in [0.114,0.661]
+  m=2 seed=0: W3=-8.0758/+1.2022 (minsv 5.34e-03); min corner decay=19.977; min decay on shifted grid=1.11e-06; <mix>=0.3374 (min 6.57e-02); r=5.3006e+02
+      q=0.50: e_sea=0.9461, max|n+(q)-n-(-q)|=0.3482, n+ in [0.076,0.603], n- in [0.108,0.712]
+      q=0.30: e_sea=0.9652, max|n+(q)-n-(-q)|=0.2127, n+ in [0.082,0.623], n- in [0.110,0.671]
+      q=0.10: e_sea=0.9879, max|n+(q)-n-(-q)|=0.0715, n+ in [0.075,0.641], n- in [0.091,0.654]
+  m=2 seed=1: W3=+5.4486/+3.1343 (minsv 2.31e-02); min corner decay=34.349; min decay on shifted grid=1.65e-06; <mix>=0.3290 (min 4.11e-02); r=5.2344e+02
+      q=0.50: e_sea=0.9200, max|n+(q)-n-(-q)|=0.3706, n+ in [0.052,0.537], n- in [0.077,0.491]
+      q=0.30: e_sea=0.9478, max|n+(q)-n-(-q)|=0.2295, n+ in [0.073,0.507], n- in [0.107,0.474]
+      q=0.10: e_sea=0.9818, max|n+(q)-n-(-q)|=0.0782, n+ in [0.102,0.493], n- in [0.128,0.486]
+  m=2 seed=2: W3=-2.6236/+3.4778 (minsv 2.87e-02); min corner decay=31.602; min decay on shifted grid=7.81e-07; <mix>=0.3173 (min 4.06e-02); r=4.7975e+02
+      q=0.50: e_sea=1.1173, max|n+(q)-n-(-q)|=0.6890, n+ in [0.189,0.818], n- in [0.047,0.703]
+      q=0.30: e_sea=1.0807, max|n+(q)-n-(-q)|=0.4681, n+ in [0.213,0.751], n- in [0.070,0.703]
+      q=0.10: e_sea=1.0288, max|n+(q)-n-(-q)|=0.1656, n+ in [0.167,0.739], n- in [0.110,0.728]
+  m=2 seed=3: W3=+239.7500/-0.1409 (minsv 3.28e-03); min corner decay=26.702; min decay on shifted grid=1.56e-06; <mix>=0.3285 (min 4.74e-02); r=6.1431e+02
+      q=0.50: e_sea=1.1110, max|n+(q)-n-(-q)|=0.6371, n+ in [0.298,0.861], n- in [0.190,0.755]
+      q=0.30: e_sea=1.0743, max|n+(q)-n-(-q)|=0.4398, n+ in [0.397,0.820], n- in [0.271,0.708]
+      q=0.10: e_sea=1.0261, max|n+(q)-n-(-q)|=0.1574, n+ in [0.462,0.776], n- in [0.388,0.735]
+  m=2 seed=4: W3=-0.7284/-6.5694 (minsv 2.83e-02); min corner decay=33.841; min decay on shifted grid=5.64e-07; <mix>=0.3220 (min 9.56e-03); r=5.3570e+02
+      q=0.50: e_sea=1.1334, max|n+(q)-n-(-q)|=0.3918, n+ in [0.145,0.820], n- in [0.007,0.640]
+      q=0.30: e_sea=1.0772, max|n+(q)-n-(-q)|=0.2678, n+ in [0.054,0.768], n- in [0.004,0.650]
+      q=0.10: e_sea=1.0241, max|n+(q)-n-(-q)|=0.1056, n+ in [0.008,0.710], n- in [0.007,0.669]
+  m=2 seed=5: W3=+19.7572/+1.6631 (minsv 1.17e-02); min corner decay=25.729; min decay on shifted grid=1.69e-06; <mix>=0.3413 (min 4.36e-02); r=5.6243e+02
+      q=0.50: e_sea=1.0287, max|n+(q)-n-(-q)|=0.2122, n+ in [0.066,0.790], n- in [0.016,0.759]
+      q=0.30: e_sea=1.0157, max|n+(q)-n-(-q)|=0.1324, n+ in [0.030,0.774], n- in [0.012,0.771]
+      q=0.10: e_sea=1.0051, max|n+(q)-n-(-q)|=0.0456, n+ in [0.010,0.782], n- in [0.005,0.770]
+=== 4. Control: gapped trivial insulator with an on-site dark state ===
+  <mixedness>=0.00e+00, r=0.00e+00  (expect 0, 0)
+=== 5. Loss-only transient from the filled Dirac sea: records written per site ===
+  p=1 t=1e+01 (lattice units): records written per site = 0.997911
+  p=1 t=1e+03 (lattice units): records written per site = 0.999999
+  p=1 t=1e+06 (lattice units): records written per site = 1.000000
+  p=1 t=8e+60 (lattice units): records written per site = 1.000000
+  p=2 t=1e+01 (lattice units): records written per site = 0.991691
+  p=2 t=1e+03 (lattice units): records written per site = 0.999752
+  p=2 t=1e+06 (lattice units): records written per site = 1.000000
+  p=2 t=8e+60 (lattice units): records written per site = 1.000000
+  p=4 t=1e+01 (lattice units): records written per site = 0.980361
+  p=4 t=1e+03 (lattice units): records written per site = 0.996727
+  p=4 t=1e+06 (lattice units): records written per site = 0.999762
+  p=4 t=8e+60 (lattice units): records written per site = 1.000000
+  p=1: q* a = 5.000e-31  ->  q* = 6.100e-12 GeV  (modes above q* have relaxed)
+  p=2: q* a = 8.409e-16  ->  q* = 1.026e+04 GeV  (modes above q* have relaxed)
+  p=4: q* a = 3.448e-08  ->  q* = 4.207e+11 GeV  (modes above q* have relaxed)
+  p=8: q* a = 2.208e-04  ->  q* = 2.694e+15 GeV  (modes above q* have relaxed)
+  p=16: q* a = 1.767e-02  ->  q* = 2.156e+17 GeV  (modes above q* have relaxed)
+  p=31: q* a = 1.473e-01  ->  q* = 1.797e+18 GeV  (modes above q* have relaxed)

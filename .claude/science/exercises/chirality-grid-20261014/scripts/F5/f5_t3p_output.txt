@@ -1,0 +1,12 @@
+p=1 N=32: sigma_xx = 5.49444e-02 e^2/(hbar a); light-node region (|k|<0.5) share = 6.635e-05
+p=1 N=48: sigma_xx = 5.49444e-02 e^2/(hbar a); light-node region (|k|<0.5) share = 7.330e-05
+p=1 N=64: sigma_xx = 5.49444e-02 e^2/(hbar a); light-node region (|k|<0.5) share = 8.187e-05
+p=2 N=32: sigma_xx = 1.98318e-02 e^2/(hbar a); light-node region (|k|<0.5) share = 3.192e-07
+p=2 N=48: sigma_xx = 1.98318e-02 e^2/(hbar a); light-node region (|k|<0.5) share = 4.247e-07
+p=2 N=64: sigma_xx = 1.98318e-02 e^2/(hbar a); light-node region (|k|<0.5) share = 5.447e-07
+p=4 N=32: sigma_xx = 4.80194e-03 e^2/(hbar a); light-node region (|k|<0.5) share = 1.678e-11
+p=4 N=48: sigma_xx = 4.80193e-03 e^2/(hbar a); light-node region (|k|<0.5) share = 3.564e-11
+p=4 N=64: sigma_xx = 4.80193e-03 e^2/(hbar a); light-node region (|k|<0.5) share = 5.823e-11
+control Hermitian walker + eta=0.1: sigma_xx = 7.20559e-03
+control Hermitian walker + eta=0.01: sigma_xx = 9.03544e-05
+control Hermitian walker + eta=0.001: sigma_xx = 9.05881e-07

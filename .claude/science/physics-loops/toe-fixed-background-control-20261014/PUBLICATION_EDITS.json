@@ -1,0 +1,96 @@
+{
+  "frontmatter": "---\ntitle: Supplied bounded controls with the fixed literal L4 background\nclaim_id: literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\ntrace_class: upstream_support\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: supports\nconditional_surface_status: fixed L4 finite gate-word approximation at unchanged background coefficients, with supplied supported controls, effective coefficient data, positive norm margin, clock, clean resources and readout\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: conditional full-operator recurrence and product-formula construction with literal scalar, all-input reference scope and explicit massive resource costs; identity helper evaluates no mathematics\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\ncanonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14\", \"finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14\", \"fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14\", \"coherent_binary_k_admission_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/literal_l4_fixed_background_control_identity_2026_10_14.py\nnext_trace_action: separate exact publication source and driver review, guarded root integration, regular PR and later independent retained audit\n---\n\nClaim type: bounded_theorem\n\n",
+  "mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "c936e260ebdadf2bc511f233a89b95b988e0d7f85206f29ce56b341a9e73afea",
+      "complete_bodies": [
+        {
+          "body_edits": [],
+          "byte_end_exclusive": 42304,
+          "byte_start_inclusive": 11554,
+          "bytes": 30750,
+          "id": "FIXED_BACKGROUND_CONTROL",
+          "line_end_inclusive": 341,
+          "line_start_inclusive": 65,
+          "sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/cores/FIXED_BACKGROUND_DERIVATION.md"
+        }
+      ],
+      "context_lines": 3,
+      "diff": "diffs/candidate_to_publication.diff.gz",
+      "diff_bytes": 11020,
+      "diff_sha256": "6b45c9b20f1fae81af9f1f0fbd852f094cd4da94d12031d65ceedcaf689c82cd",
+      "diff_stored_sha256": "613f23f7f549e3657a3d7b44c9079c820fa900f9f329f219dfd9ba2f95965f1f",
+      "fromfile": "CANDIDATE.md",
+      "note": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "kind": "accepted_core_slice",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/cores/FIXED_BACKGROUND_DERIVATION.md",
+          "source_sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+        }
+      ],
+      "pieces_scope": "Whitespace identity projection; full reconstruction uses accepted candidate and explicit publication-only replacements.",
+      "published_bytes": 42304,
+      "published_lines": 341,
+      "published_sha256": "8f11d1271c903212c1c85a783c6b3babe3e0036ad04c652a8756e062fc8c4ba3",
+      "stored_bytes": 4046,
+      "tofile": "docs/LITERAL_L4_FIXED_BACKGROUND_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "c549b31a4cab81efd2f26cd037666a1f357d746280f11ac6850c4ede67173b34",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper_to_publication.diff.gz",
+    "diff_bytes": 9264,
+    "diff_sha256": "4600c0911bede84050c71b6e5c4ddeb8df5869a900175c840ef16d60b81d5c59",
+    "diff_stored_sha256": "247f89fed05f51bdf6190dbdb7e8012bf6baa861810c2810a03b5a000abf2a88",
+    "fromfile": "THEOREM_WRAPPER.md",
+    "stored_bytes": 3417,
+    "tofile": "WRAPPER.rendered.md"
+  },
+  "wrapper_replacements": [
+    {
+      "original": "`docs/JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md`",
+      "rendered": "[joint interface](JOINT_EVEN_MATTER_FINITE_LINK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "`docs/FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md`",
+      "rendered": "[finite penalty](FINITE_GAUSS_PENALTY_RECOVERY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "`docs/FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md`",
+      "rendered": "[neutral preparation](FIXED_NEUTRAL_RAY_PREPARATION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "`docs/COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md`",
+      "rendered": "[binary admission](COHERENT_BINARY_K_ADMISSION_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "**Current status: conditional scientific source accepted; this new source-only assembly awaits root review.**",
+      "rendered": "**Current status: conditional scientific source and source-only assembly accepted; this publication rendering and driver await separate exact root review.** Root accepted assembly c549b31a4cab81efd2f26cd037666a1f357d746280f11ac6850c4ede67173b34 under FIXED_BACKGROUND_CONTROL_ASSEMBLY_ROOT_ACCEPTANCE.json SHA 75343193a4362c96d2d712084581eefc1b2ea550b03816e6fc29760cb5ba0473, with complete composition review 01e09f4fbc01b1b8981fab3b9404c3ddb10c0259f48264ce81fb8bf9ac12d247.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Genoni et al.'s compact-recurrence/inverse-time discussion",
+      "rendered": "[Genoni et al.'s compact-recurrence/inverse-time discussion](https://arxiv.org/abs/1110.5584v2)",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Four edges are expected if a future source graph is built; no graph or canonical surface is changed here.",
+      "rendered": "The proposed publication graph has exactly four direct mathematical edges. No graph or canonical surface has been changed by this source preparer.",
+      "scope": "publication metadata or current source-status pointer only"
+    },
+    {
+      "original": "Its new wrapper and byte/procedure closure require root review before any publication preparation.",
+      "rendered": "Its source-only wrapper and byte/procedure closure were accepted at the pins above; the new publication rendering, driver and canonical execution still require separate exact root acceptance.",
+      "scope": "publication metadata or current source-status pointer only"
+    }
+  ]
+}

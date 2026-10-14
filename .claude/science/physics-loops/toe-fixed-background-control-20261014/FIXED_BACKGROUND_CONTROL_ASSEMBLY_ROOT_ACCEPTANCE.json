@@ -1,0 +1,75 @@
+{
+  "accepted_utc": "2026-10-14T13:46:14.959154+00:00",
+  "disposition": "Accepted source-only composition for separate publication preparation; conditional science acceptance unchanged.",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/FINAL_FREEZE.json",
+    "bytes": 53636,
+    "sha256": "c549b31a4cab81efd2f26cd037666a1f357d746280f11ac6850c4ede67173b34"
+  },
+  "candidate": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/CANDIDATE.md",
+    "bytes": 40080,
+    "sha256": "c936e260ebdadf2bc511f233a89b95b988e0d7f85206f29ce56b341a9e73afea"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/THEOREM_WRAPPER.md",
+    "bytes": 9025,
+    "sha256": "3382e7ebe4b4f83733fe03d1283469cfcdaf8ca76f4dfdbe3bcbab86a4eadf2e"
+  },
+  "unchanged_proof": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_source_assembly/cores/FIXED_BACKGROUND_DERIVATION.md",
+    "bytes": 30750,
+    "sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f"
+  },
+  "prior_science_acceptance": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/FIXED_BACKGROUND_CONTROL_ROOT_ACCEPTANCE.json",
+    "bytes": 4352,
+    "sha256": "d14edde4e53c0ae04e2dabd868fec51ed566db415cb3841cdbf97fb0412ad093"
+  },
+  "prior_science_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/FIXED_BACKGROUND_CONTROL_ROOT_REVIEW.md",
+    "bytes": 9159,
+    "sha256": "a073cb3f6b6bdca90b32cc24c43b04e001d2e81fe83940e989e82ea9b5427ced"
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/FIXED_BACKGROUND_CONTROL_ASSEMBLY_ROOT_REVIEW.md",
+    "bytes": 5644,
+    "sha256": "01e09f4fbc01b1b8981fab3b9404c3ddb10c0259f48264ce81fb8bf9ac12d247"
+  },
+  "source_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/fixed_background_assembly_root_review/SOURCE_BINDING.json",
+    "bytes": 117029,
+    "sha256": "11f681b940a60199e3dfcd88a0d0ac41c215305a0d0e79f25bd6fef7415fd186"
+  },
+  "source_binder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/fixed_background_assembly_root_review/bind_source.py",
+    "bytes": 3336,
+    "sha256": "47ef4676c82074442cea015c82f97d9ac570b409bb5c220da92fe265247e73f2"
+  },
+  "actual_binding_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/fixed_background_assembly_source_binding/EXECUTION.json",
+    "bytes": 634,
+    "sha256": "63b69d1ff2d09b07f6ee2b9bd6d9b678604a158ba68365a265885dec4dd16b01"
+  },
+  "actual_binding_stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/fixed_background_assembly_source_binding/stdout",
+    "bytes": 415,
+    "sha256": "b11f3d9b18281fca7dcb52160532dff0df0917f6b12e480fb1ead28f81c07469"
+  },
+  "actual_binding_stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/fixed_background_assembly_source_binding/stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "files": 267,
+  "original_sources": 191,
+  "mathematical_parents": 4,
+  "scientific_reruns": 0,
+  "math_predicates": 0,
+  "new_publication_driver_accepted": false,
+  "publication_preparation_authorized": true,
+  "canonical_execution_performed": false,
+  "retained": false,
+  "merged": false,
+  "editable_prompt_files_changed": []
+}

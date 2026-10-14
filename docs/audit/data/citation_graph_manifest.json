@@ -1,6 +1,6 @@
 {
- "edge_count": 16009,
- "node_count": 7098,
+ "edge_count": 16021,
+ "node_count": 7102,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6382,6 +6382,14 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "exponential_scalar_calibration_branch_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "b6ef647eb231",
+   "out_degree": 3
+  },
+  "exponential_scalar_canonical_envelope_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "6c50507ded78",
+   "out_degree": 3
+  },
   "exponential_scalar_curvature_loophole_bounded_theorem_note_2026-10-14": {
    "deps_hash": "ddd091f59a72",
    "out_degree": 2
@@ -6394,8 +6402,16 @@
    "deps_hash": "b6ef647eb231",
    "out_degree": 3
   },
+  "exponential_scalar_dynamical_inverse_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "11264fdb6ee4",
+   "out_degree": 3
+  },
   "exponential_scalar_environment_bridge_bounded_theorem_note_2026-10-14": {
    "deps_hash": "3d935c5f10ab",
+   "out_degree": 3
+  },
+  "exponential_scalar_finite_body_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "b6ef647eb231",
    "out_degree": 3
   },
   "exponential_scalar_finite_history_bounded_theorem_note_2026-10-14": {

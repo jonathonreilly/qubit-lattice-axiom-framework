@@ -1,0 +1,4293 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_thermal_bounce_check.py
+runner_sha256: dc239acc7df08678984d60e21b7cafa1f7f6b7cfa8d328539a5b7fd9a81a91ad
+input_fingerprint_sha256: db4b0fd157996eb7fd707095d5c94dd376e0ff229e8d324fcd1f0621df3c2b3e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional ideal matter and supplied action, synthetic quadrature and calibration controls; no observational likelihood.",
+  "passed": 554,
+  "failed": 0,
+  "units": {
+    "trace_bridge": {
+      "passed": 27,
+      "failed": 0
+    },
+    "general_trace": {
+      "passed": 8,
+      "failed": 0
+    },
+    "finite_mass": {
+      "passed": 229,
+      "failed": 0
+    },
+    "calibration": {
+      "passed": 14,
+      "failed": 0
+    },
+    "joint_entropy": {
+      "passed": 276,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "trace_bridge::conformal_component_balance",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::tracefree_scalar_exchange_vanishes",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::radiation_charge_frame_invariant",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::radiation_charge_Einstein_source",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::radiation_charge_physical_source",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::isolated_radiation_charge",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::internal_sources_cancel",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::dust_transfer",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::radiation_transfer",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::total_continuity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::resonant_transfer_limit",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::no_transfer_control",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::same_initial_radiation_for_distinct_rates",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::same_initial_dust_for_distinct_rates",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::endpoint_charge_budget",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::necessary_growth_threshold_saturates",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::thermal_charge_entropy_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::thermal_endpoint_ratio",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::common_temperature_endpoint_reduction",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::necessary_entropy_threshold",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::electron_pair_spin_weight",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::total_bath_charge_factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::photon_charge_factor",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::same_component_budget_cancellation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "trace_bridge::larger_photon_factor_is_not_total_factor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "trace_bridge::illustrative_adiabatic_pair_budget_insufficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "trace_bridge::mixed_component_budget_overstates_repair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "general_trace::general_physical_charge_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::charge_derivatives_proper_time_conversion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::general_Einstein_charge_trace_and_source",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::traceless_source_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::isolated_traceful_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::isolated_dust_charge_growth",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::complete_bath_sources_cancel_but_trace_survives",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "general_trace::isolated_logarithmic_charge_rate",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "finite_mass::equilibrium_entropy_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::isolation_implies_comoving_entropy",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::charge_monotonicity_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::physical_charge_trace_rate",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::massive_trace_integrand",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::strict_bounce_margin",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::strict_bounce_margin_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::pressure_weakening_bound",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::same_bath_endpoint_budget",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::pair_bath_ratio_cube",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::coarse_bounce_coefficient_cube",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::coefficient_strictly_above_one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::photon_bath_initial_fraction_consistency",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::entropy_escape_threshold",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_0",
+      "passed": true,
+      "detail": -1.2078331427030516e-15
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_1",
+      "passed": true,
+      "detail": 9.773214217367209e-15
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_2",
+      "passed": true,
+      "detail": 4.131604471142985e-14
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_3",
+      "passed": true,
+      "detail": 1.1002686468422119e-13
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_4",
+      "passed": true,
+      "detail": 2.4144716513131194e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_5",
+      "passed": true,
+      "detail": -8.920294549948169e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_6",
+      "passed": true,
+      "detail": 8.182147666887585e-14
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_7",
+      "passed": true,
+      "detail": 1.7391962334547834e-13
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_8",
+      "passed": true,
+      "detail": 2.402090257320913e-13
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_9",
+      "passed": true,
+      "detail": 2.0896906997364866e-13
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_10",
+      "passed": true,
+      "detail": 3.18339071195186e-14
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_11",
+      "passed": true,
+      "detail": 1.1102604973627431e-13
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_12",
+      "passed": true,
+      "detail": 4.866520394671871e-14
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_13",
+      "passed": true,
+      "detail": 7.41384221809166e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_14",
+      "passed": true,
+      "detail": 7.249141743695744e-14
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_15",
+      "passed": true,
+      "detail": -1.8905639857444423e-15
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_16",
+      "passed": true,
+      "detail": -3.117623346982068e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_17",
+      "passed": true,
+      "detail": 2.1934765202097362e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_18",
+      "passed": true,
+      "detail": -1.0018786473185715e-12
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_19",
+      "passed": true,
+      "detail": -2.865939365166714e-13
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_20",
+      "passed": true,
+      "detail": 2.42861286636753e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_21",
+      "passed": true,
+      "detail": 4.99708781298569e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_22",
+      "passed": true,
+      "detail": -1.973247953923618e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_23",
+      "passed": true,
+      "detail": -2.651958513899544e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_24",
+      "passed": true,
+      "detail": -2.196593601455632e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_25",
+      "passed": true,
+      "detail": 1.734723475976807e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_26",
+      "passed": true,
+      "detail": 3.872770160118222e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_27",
+      "passed": true,
+      "detail": 3.757411048965764e-15
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_28",
+      "passed": true,
+      "detail": -6.418476861114186e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_29",
+      "passed": true,
+      "detail": 2.0990154059319366e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_30",
+      "passed": true,
+      "detail": -5.117434254131581e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_31",
+      "passed": true,
+      "detail": -1.0061396160665481e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_32",
+      "passed": true,
+      "detail": -2.3592239273284576e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_33",
+      "passed": true,
+      "detail": -1.1796119636642288e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_34",
+      "passed": true,
+      "detail": 2.706168622523819e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_35",
+      "passed": true,
+      "detail": 4.163336342344337e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_36",
+      "passed": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_37",
+      "passed": true,
+      "detail": 8.326672684688674e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_38",
+      "passed": true,
+      "detail": -1.1102230246251565e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_39",
+      "passed": true,
+      "detail": -1.3877787807814457e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_40",
+      "passed": true,
+      "detail": 1.3877787807814457e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_41",
+      "passed": true,
+      "detail": -3.3306690738754696e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_42",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_43",
+      "passed": true,
+      "detail": 1.942890293094024e-16
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_44",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_45",
+      "passed": true,
+      "detail": -2.7755575615628914e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_46",
+      "passed": true,
+      "detail": -1.3877787807814457e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_47",
+      "passed": true,
+      "detail": -3.469446951953614e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_48",
+      "passed": true,
+      "detail": 3.469446951953614e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_49",
+      "passed": true,
+      "detail": 2.992397996059992e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_50",
+      "passed": true,
+      "detail": 3.7947076036992655e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_51",
+      "passed": true,
+      "detail": 2.2047420584082184e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_52",
+      "passed": true,
+      "detail": -4.824720843384176e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_53",
+      "passed": true,
+      "detail": 1.1510507736889774e-18
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_54",
+      "passed": true,
+      "detail": -8.0093415436176e-15
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_55",
+      "passed": true,
+      "detail": 3.904509074049329e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_56",
+      "passed": true,
+      "detail": -2.6197324130721514e-17
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_57",
+      "passed": true,
+      "detail": -2.2646427305564e-21
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_58",
+      "passed": true,
+      "detail": -2.4543022870276112e-26
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_59",
+      "passed": true,
+      "detail": -2.1760015552373592e-32
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_trace_60",
+      "passed": true,
+      "detail": -9.339602625672323e-40
+    },
+    {
+      "name": "finite_mass::finite_mass_stress_domain_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::finite_mass_charge_range_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::charge_monotone_in_m_over_T",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::hot_endpoint_convergence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::cold_endpoint_convergence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::endpoint_ratio_numerical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_0.001",
+      "passed": true,
+      "detail": 9.99963245540414e-09
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_0.001",
+      "passed": true,
+      "detail": 9.999622241352313e-09
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_0.03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_0.03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_0.03",
+      "passed": true,
+      "detail": 9.999276073813235e-09
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_0.03",
+      "passed": true,
+      "detail": 1.000077087809359e-08
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_0.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_0.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_0.3",
+      "passed": true,
+      "detail": 1.0021003360449754e-08
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_0.3",
+      "passed": true,
+      "detail": 1.006202188236216e-08
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_1.0",
+      "passed": true,
+      "detail": 1.0249971316156348e-08
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_1.0",
+      "passed": true,
+      "detail": 1.0697063457243416e-08
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_3.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_3.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_3.0",
+      "passed": true,
+      "detail": 1.3307214219437924e-08
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_3.0",
+      "passed": true,
+      "detail": 1.5198684533146434e-08
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_10.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_10.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_10.0",
+      "passed": true,
+      "detail": 1.2778876179453391e-08
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_10.0",
+      "passed": true,
+      "detail": 1.096013546586505e-08
+    },
+    {
+      "name": "finite_mass::energy_coordinate_rho_100.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::energy_coordinate_pressure_100.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_mass::fixed_mass_heat_derivative_100.0",
+      "passed": true,
+      "detail": 9.999728156628862e-09
+    },
+    {
+      "name": "finite_mass::fixed_mass_pressure_entropy_100.0",
+      "passed": true,
+      "detail": 9.999833627816201e-09
+    },
+    {
+      "name": "calibration::measured_normalization_conversion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::same_background_principal_ceiling",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::radius_budget_boundary",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::arbitrary_background_C_budget",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::Ccrit_boundary",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::Ccrit_positive_slack",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::calibrated_coefficient_cube",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::measured_coefficient_below_one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::bare_coefficient_above_one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration::corner_Ccrit_saturation_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::corner_Ccrit_saturation_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::corner_Ccrit_saturation_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::potential_origin_floor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "calibration::domain_floor_not_claimed_above_one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::entropy_occupation_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::fermi_occupation_energy_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::entropy_energy_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::entropy_pressure_integration_by_parts",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::joint_pressure_entropy_identity",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::joint_fraction_charge_cap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::endpoint_ratio_cube",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::joint_cap_at_hot_and_cold",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::improved_bare_coefficient_cube",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::measured_coefficient_cube",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::measured_unit_obstruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::calibration_divides_product",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::same_background_cap",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::same_background_strict_remainder",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::radius_threshold_boundary",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::entropy_threshold_boundary",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::different_background_threshold",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "joint_entropy::joint_stronger_than_coarse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_0",
+      "passed": true,
+      "detail": 2.4125697980440775
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_0",
+      "passed": true,
+      "detail": 1.427531743879762
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_0",
+      "passed": true,
+      "detail": 0.7005098165328281
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_1",
+      "passed": true,
+      "detail": 2.412569720077546
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_1",
+      "passed": true,
+      "detail": 1.4275317592575134
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_1",
+      "passed": true,
+      "detail": 0.70050980898675
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_2",
+      "passed": true,
+      "detail": 2.4125696056383372
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_2",
+      "passed": true,
+      "detail": 1.4275317818289666
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_2",
+      "passed": true,
+      "detail": 0.7005097979106224
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_3",
+      "passed": true,
+      "detail": 2.4125694376645694
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_3",
+      "passed": true,
+      "detail": 1.4275318149593272
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_3",
+      "passed": true,
+      "detail": 0.7005097816530917
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_4",
+      "passed": true,
+      "detail": 2.4125691911128415
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_4",
+      "passed": true,
+      "detail": 1.4275318635880427
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_4",
+      "passed": true,
+      "detail": 0.7005097577903032
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_5",
+      "passed": true,
+      "detail": 2.4125688292244987
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_5",
+      "passed": true,
+      "detail": 1.4275319349652276
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_5",
+      "passed": true,
+      "detail": 0.7005097227645267
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_6",
+      "passed": true,
+      "detail": 2.4125682980452803
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_6",
+      "passed": true,
+      "detail": 1.4275320397325886
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_6",
+      "passed": true,
+      "detail": 0.7005096713537332
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_7",
+      "passed": true,
+      "detail": 2.412567518381297
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_7",
+      "passed": true,
+      "detail": 1.4275321935100052
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_7",
+      "passed": true,
+      "detail": 0.700509595893041
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_8",
+      "passed": true,
+      "detail": 2.4125663739921093
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_8",
+      "passed": true,
+      "detail": 1.4275324192242989
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_8",
+      "passed": true,
+      "detail": 0.7005094851319635
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_9",
+      "passed": true,
+      "detail": 2.412564694260683
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_9",
+      "passed": true,
+      "detail": 1.4275327505274025
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_9",
+      "passed": true,
+      "detail": 0.7005093225570829
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_10",
+      "passed": true,
+      "detail": 2.4125622287567747
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_10",
+      "passed": true,
+      "detail": 1.4275332368134943
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_10",
+      "passed": true,
+      "detail": 0.700509083930106
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_11",
+      "passed": true,
+      "detail": 2.412558609901795
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_11",
+      "passed": true,
+      "detail": 1.427533950583122
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_11",
+      "passed": true,
+      "detail": 0.7005087336742626
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_12",
+      "passed": true,
+      "detail": 2.4125532981707463
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_12",
+      "passed": true,
+      "detail": 1.4275349982519752
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_12",
+      "passed": true,
+      "detail": 0.7005082195704524
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_13",
+      "passed": true,
+      "detail": 2.4125455016624655
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_13",
+      "passed": true,
+      "detail": 1.4275365360159178
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_13",
+      "passed": true,
+      "detail": 0.7005074649724057
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_14",
+      "passed": true,
+      "detail": 2.4125340580537302
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_14",
+      "passed": true,
+      "detail": 1.427538793136902
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_14",
+      "passed": true,
+      "detail": 0.7005063573807196
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_15",
+      "passed": true,
+      "detail": 2.4125172613495502
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_15",
+      "passed": true,
+      "detail": 1.427542106120613
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_15",
+      "passed": true,
+      "detail": 0.7005047316730496
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_16",
+      "passed": true,
+      "detail": 2.4124926076253717
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_16",
+      "passed": true,
+      "detail": 1.4275469688794793
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_16",
+      "passed": true,
+      "detail": 0.7005023454919507
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_17",
+      "passed": true,
+      "detail": 2.412456421910912
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_17",
+      "passed": true,
+      "detail": 1.4275541063553803
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_17",
+      "passed": true,
+      "detail": 0.7004988431247989
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_18",
+      "passed": true,
+      "detail": 2.4124033107073117
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_18",
+      "passed": true,
+      "detail": 1.4275645825694327
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_18",
+      "passed": true,
+      "detail": 0.7004937024986487
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_19",
+      "passed": true,
+      "detail": 2.412325358782564
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_19",
+      "passed": true,
+      "detail": 1.4275799591862834
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_19",
+      "passed": true,
+      "detail": 0.7004861574058502
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_20",
+      "passed": true,
+      "detail": 2.412210951039806
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_20",
+      "passed": true,
+      "detail": 1.4276025281934461
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_20",
+      "passed": true,
+      "detail": 0.7004750834011524
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_21",
+      "passed": true,
+      "detail": 2.4120430450570693
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_21",
+      "passed": true,
+      "detail": 1.427635653285489
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_21",
+      "passed": true,
+      "detail": 0.700458830443643
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_22",
+      "passed": true,
+      "detail": 2.411796639344187
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_22",
+      "passed": true,
+      "detail": 1.4276842706517323
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_22",
+      "passed": true,
+      "detail": 0.7004349775062688
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_23",
+      "passed": true,
+      "detail": 2.4114350655086567
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_23",
+      "passed": true,
+      "detail": 1.4277556233891717
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_23",
+      "passed": true,
+      "detail": 0.7003999729493092
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_24",
+      "passed": true,
+      "detail": 2.4109045636597006
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_24",
+      "passed": true,
+      "detail": 1.4278603380898771
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_24",
+      "passed": true,
+      "detail": 0.7003486078601721
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_25",
+      "passed": true,
+      "detail": 2.4101263583790082
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_25",
+      "passed": true,
+      "detail": 1.4280140020776295
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_25",
+      "passed": true,
+      "detail": 0.700273245601998
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_26",
+      "passed": true,
+      "detail": 2.4089851098841932
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_26",
+      "passed": true,
+      "detail": 1.4282394720668457
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_26",
+      "passed": true,
+      "detail": 0.700162696492957
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_27",
+      "passed": true,
+      "detail": 2.407312138702296
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_27",
+      "passed": true,
+      "detail": 1.4285702490281873
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_27",
+      "passed": true,
+      "detail": 0.7000005779766655
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_28",
+      "passed": true,
+      "detail": 2.4048611798762245
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_28",
+      "passed": true,
+      "detail": 1.4290554021933048
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_28",
+      "passed": true,
+      "detail": 0.6997629332391218
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_29",
+      "passed": true,
+      "detail": 2.401273600156238
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_29",
+      "passed": true,
+      "detail": 1.4297667329180042
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_29",
+      "passed": true,
+      "detail": 0.6994147905225805
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_30",
+      "passed": true,
+      "detail": 2.3960290561918325
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_30",
+      "passed": true,
+      "detail": 1.43080915351608
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_30",
+      "passed": true,
+      "detail": 0.6989052296335911
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_31",
+      "passed": true,
+      "detail": 2.3883766904443546
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_31",
+      "passed": true,
+      "detail": 1.4323356299368109
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_31",
+      "passed": true,
+      "detail": 0.6981603885983875
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_32",
+      "passed": true,
+      "detail": 2.3772417242762196
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_32",
+      "passed": true,
+      "detail": 1.4345684938441772
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_32",
+      "passed": true,
+      "detail": 0.6970737223709168
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_33",
+      "passed": true,
+      "detail": 2.3611040350379016
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_33",
+      "passed": true,
+      "detail": 1.4378294085446888
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_33",
+      "passed": true,
+      "detail": 0.6954927991159664
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_34",
+      "passed": true,
+      "detail": 2.3378517213318903
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_34",
+      "passed": true,
+      "detail": 1.4425805834970982
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_34",
+      "passed": true,
+      "detail": 0.693202176321966
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_35",
+      "passed": true,
+      "detail": 2.304628762348987
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_35",
+      "passed": true,
+      "detail": 1.4494794997028124
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_35",
+      "passed": true,
+      "detail": 0.6899028238792136
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_36",
+      "passed": true,
+      "detail": 2.2577293545885073
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_36",
+      "passed": true,
+      "detail": 1.4594473873971894
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_36",
+      "passed": true,
+      "detail": 0.6851908528086251
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_37",
+      "passed": true,
+      "detail": 2.1926504495582604
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_37",
+      "passed": true,
+      "detail": 1.4737458750359864
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_37",
+      "passed": true,
+      "detail": 0.678543035769706
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_38",
+      "passed": true,
+      "detail": 2.104496462694231
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_38",
+      "passed": true,
+      "detail": 1.4940426773165445
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_38",
+      "passed": true,
+      "detail": 0.6693249230310501
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_39",
+      "passed": true,
+      "detail": 1.9889980140515933
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_39",
+      "passed": true,
+      "detail": 1.5224193205575567
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_39",
+      "passed": true,
+      "detail": 0.6568492572951381
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_40",
+      "passed": true,
+      "detail": 1.8443475418982187
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_40",
+      "passed": true,
+      "detail": 1.561222552547312
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_40",
+      "passed": true,
+      "detail": 0.6405236706121022
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_41",
+      "passed": true,
+      "detail": 1.673681768790657
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_41",
+      "passed": true,
+      "detail": 1.6125806398866718
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_41",
+      "passed": true,
+      "detail": 0.6201240268333356
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_42",
+      "passed": true,
+      "detail": 1.487250207212564
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_42",
+      "passed": true,
+      "detail": 1.6773269461307598
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_42",
+      "passed": true,
+      "detail": 0.5961866899633309
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_43",
+      "passed": true,
+      "detail": 1.3024513406143348
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_43",
+      "passed": true,
+      "detail": 1.7531748596116883
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_43",
+      "passed": true,
+      "detail": 0.5703937599364679
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_44",
+      "passed": true,
+      "detail": 1.1400266811621185
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_44",
+      "passed": true,
+      "detail": 1.8327675973575208
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_44",
+      "passed": true,
+      "detail": 0.5456229155523032
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_45",
+      "passed": true,
+      "detail": 1.0167838363156387
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_45",
+      "passed": true,
+      "detail": 1.9040113170764699
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_45",
+      "passed": true,
+      "detail": 0.5252069622860531
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_46",
+      "passed": true,
+      "detail": 0.9385598995712907
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_46",
+      "passed": true,
+      "detail": 1.955502632941688
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_46",
+      "passed": true,
+      "detail": 0.5113774756189855
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_47",
+      "passed": true,
+      "detail": 0.8985641522340811
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_47",
+      "passed": true,
+      "detail": 1.9840961166715734
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_47",
+      "passed": true,
+      "detail": 0.5040078409495369
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_48",
+      "passed": true,
+      "detail": 0.8828206482481101
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_48",
+      "passed": true,
+      "detail": 1.9958209445007098
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_48",
+      "passed": true,
+      "detail": 0.5010469515090532
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_49",
+      "passed": true,
+      "detail": 0.8783021978872387
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_49",
+      "passed": true,
+      "detail": 1.9992376111309258
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_49",
+      "passed": true,
+      "detail": 0.5001906698995732
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_50",
+      "passed": true,
+      "detail": 0.8774161570615957
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_50",
+      "passed": true,
+      "detail": 1.9999103478518332
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_50",
+      "passed": true,
+      "detail": 0.5000224140417753
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_51",
+      "passed": true,
+      "detail": 0.8773063087296944
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_51",
+      "passed": true,
+      "detail": 1.9999938145745548
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_51",
+      "passed": true,
+      "detail": 0.5000015463611437
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_52",
+      "passed": true,
+      "detail": 0.8772984625112161
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_52",
+      "passed": true,
+      "detail": 1.99999977694742
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_52",
+      "passed": true,
+      "detail": 0.5000000557631512
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_53",
+      "passed": true,
+      "detail": 0.8772981737948745
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_53",
+      "passed": true,
+      "detail": 1.9999999963454813
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_53",
+      "passed": true,
+      "detail": 0.5000000009136296
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_54",
+      "passed": true,
+      "detail": 0.8772981690159448
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_54",
+      "passed": true,
+      "detail": 1.9999999999770326
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_54",
+      "passed": true,
+      "detail": 0.5000000000057419
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_55",
+      "passed": true,
+      "detail": 0.8772981689857806
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_55",
+      "passed": true,
+      "detail": 1.9999999999999543
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_55",
+      "passed": true,
+      "detail": 0.5000000000000114
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_56",
+      "passed": true,
+      "detail": 0.8772981689857207
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_56",
+      "passed": true,
+      "detail": 2.0
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_56",
+      "passed": true,
+      "detail": 0.5
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_57",
+      "passed": true,
+      "detail": 0.8772981689857207
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_57",
+      "passed": true,
+      "detail": 2.0
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_57",
+      "passed": true,
+      "detail": 0.5
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_58",
+      "passed": true,
+      "detail": 0.8772981689857207
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_58",
+      "passed": true,
+      "detail": 2.0
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_58",
+      "passed": true,
+      "detail": 0.5
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_59",
+      "passed": true,
+      "detail": 0.8772981689857207
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_59",
+      "passed": true,
+      "detail": 2.0
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_59",
+      "passed": true,
+      "detail": 0.5
+    },
+    {
+      "name": "joint_entropy::entropy_hot_cap_60",
+      "passed": true,
+      "detail": 0.8772981689857207
+    },
+    {
+      "name": "joint_entropy::joint_lower_coefficient_60",
+      "passed": true,
+      "detail": 2.0
+    },
+    {
+      "name": "joint_entropy::gibbs_cube_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_entropy::all_final_temperature_caps_60",
+      "passed": true,
+      "detail": 0.5
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_0",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_10",
+      "passed": true,
+      "detail": -1.454392162258955e-13
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_20",
+      "passed": true,
+      "detail": -2.220446049250313e-16
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_30",
+      "passed": true,
+      "detail": -4.440892098500626e-16
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_40",
+      "passed": true,
+      "detail": -1.1102230246251565e-16
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_50",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "joint_entropy::fresh_entropy_matches_stress_60",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative_numeric_0.01",
+      "passed": true,
+      "detail": {
+        "exact_integral": -0.003333282673281395,
+        "centered": -0.0033332826721021998,
+        "error_estimate": 2.2071621106037556e-12
+      }
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative_numeric_0.1",
+      "passed": true,
+      "detail": {
+        "exact_integral": -0.03328272667810812,
+        "centered": -0.033282726707994925,
+        "error_estimate": 2.207108753841121e-12
+      }
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative_numeric_0.5",
+      "passed": true,
+      "detail": {
+        "exact_integral": -0.1604988204510473,
+        "centered": -0.1604988203984803,
+        "error_estimate": 2.198903909223639e-12
+      }
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative_numeric_1.0",
+      "passed": true,
+      "detail": {
+        "exact_integral": -0.28759434518457555,
+        "centered": -0.28759434482328317,
+        "error_estimate": 2.1846896985837524e-12
+      }
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative_numeric_3.0",
+      "passed": true,
+      "detail": {
+        "exact_integral": -0.3276175950646716,
+        "centered": -0.32761759445480243,
+        "error_estimate": 1.088481733221181e-12
+      }
+    },
+    {
+      "name": "joint_entropy::entropy_mass_derivative_numeric_10.0",
+      "passed": true,
+      "detail": {
+        "exact_integral": -0.004358671979388862,
+        "centered": -0.004358672390847307,
+        "error_estimate": 6.406734693993854e-13
+      }
+    }
+  ],
+  "substantive_outputs": {
+    "trace_bridge": {
+      "ideal_pair_total_factor": "1.4010196653276935603",
+      "ideal_pair_photon_factor": "3.8528040796511572909",
+      "illustrative_required_growth": "4000/11"
+    },
+    "general_trace": {},
+    "finite_mass": {
+      "grid": [
+        {
+          "x": 0.001,
+          "r": 1.8094273901996205,
+          "p": 0.6031424078444572,
+          "trace": 1.6666625023189427e-07,
+          "heat": 7.237709727465516,
+          "G": 0.5592010494834051,
+          "w": 0.33333330263001987,
+          "error_estimates": [
+            9.380035543722271e-11,
+            9.380374141691276e-11,
+            8.152346404081002e-12,
+            3.637413965904052e-10
+          ]
+        },
+        {
+          "x": 0.001211527658628589,
+          "r": 1.8094273512162444,
+          "p": 0.6031423688613017,
+          "trace": 2.446323295014166e-07,
+          "heat": 7.237709649498958,
+          "G": 0.5592010615310966,
+          "w": 0.33333328826707903,
+          "error_estimates": [
+            9.380136304008819e-11,
+            9.380622676341066e-11,
+            1.338707279299857e-11,
+            3.6374222530643476e-10
+          ]
+        },
+        {
+          "x": 0.0014677992676220691,
+          "r": 1.8094272939964107,
+          "p": 0.6031423116419263,
+          "trace": 3.5907059035646425e-07,
+          "heat": 7.23770953505969,
+          "G": 0.5592010792146687,
+          "w": 0.3333332671852151,
+          "error_estimates": [
+            9.380514569695415e-11,
+            9.380733860935042e-11,
+            8.648915096354518e-12,
+            3.6374671954721186e-10
+          ]
+        },
+        {
+          "x": 0.0017782794100389228,
+          "r": 1.80942721000905,
+          "p": 0.6031422276555195,
+          "trace": 5.270423814003451e-07,
+          "heat": 7.2377093670857935,
+          "G": 0.5592011051705595,
+          "w": 0.33333323624137545,
+          "error_estimates": [
+            9.380910053719532e-11,
+            9.3803405036836e-11,
+            1.703692616544417e-11,
+            3.63739726655366e-10
+          ]
+        },
+        {
+          "x": 0.0021544346900318843,
+          "r": 1.8094270867321924,
+          "p": 0.6031421043806489,
+          "trace": 7.735902456202079e-07,
+          "heat": 7.2377091205337845,
+          "G": 0.559201143268506,
+          "w": 0.3333331908222495,
+          "error_estimates": [
+            9.381144212293207e-11,
+            9.381743768280712e-11,
+            1.6965702361286598e-13,
+            3.6373997464661626e-10
+          ]
+        },
+        {
+          "x": 0.0026101572156825357,
+          "r": 1.8094269057859478,
+          "p": 0.603141923438551,
+          "trace": 1.1354702947667349e-06,
+          "heat": 7.2377087586448265,
+          "G": 0.5592011991884519,
+          "w": 0.33333312415655086,
+          "error_estimates": [
+            9.380352028180947e-11,
+            9.399546153717116e-11,
+            1.988926435598626e-11,
+            3.637395106371087e-10
+          ]
+        },
+        {
+          "x": 0.0031622776601683794,
+          "r": 1.8094266401920045,
+          "p": 0.6031416578532756,
+          "trace": 1.6666320959998933e-06,
+          "heat": 7.237708227464262,
+          "G": 0.5592012812673042,
+          "w": 0.33333302630565564,
+          "error_estimates": [
+            9.382557622290972e-11,
+            9.476697766964761e-11,
+            2.7215655953798315e-12,
+            3.637404254337749e-10
+          ]
+        },
+        {
+          "x": 0.003831186849557285,
+          "r": 1.8094262503509482,
+          "p": 0.6031412680303492,
+          "trace": 2.4462597267262185e-06,
+          "heat": 7.237707447797353,
+          "G": 0.5592014017417386,
+          "w": 0.333332882682213,
+          "error_estimates": [
+            9.408606320914051e-11,
+            9.731012739162812e-11,
+            3.303102422576814e-12,
+            3.6373649825639524e-10
+          ]
+        },
+        {
+          "x": 0.004641588833612777,
+          "r": 1.8094256781374032,
+          "p": 0.6031406958547059,
+          "trace": 3.590573045374406e-06,
+          "heat": 7.2377063034018345,
+          "G": 0.5592015785722613,
+          "w": 0.33333267187606747,
+          "error_estimates": [
+            9.518772727224783e-11,
+            1.0428986781829035e-10,
+            1.629677560946651e-14,
+            3.6372759877718594e-10
+          ]
+        },
+        {
+          "x": 0.005623413251903491,
+          "r": 1.80942483823212,
+          "p": 0.6031398560285628,
+          "trace": 5.270146222732691e-06,
+          "heat": 7.237704623656764,
+          "G": 0.5592018381203067,
+          "w": 0.333332362463784,
+          "error_estimates": [
+            9.876478701576336e-11,
+            3.9355380324513917e-11,
+            1.895175382284145e-13,
+            3.637152030867454e-10
+          ]
+        },
+        {
+          "x": 0.006812920690579608,
+          "r": 1.8094236053976784,
+          "p": 0.6031386233590961,
+          "trace": 7.735320358389159e-06,
+          "heat": 7.23770215812352,
+          "G": 0.5592022190771306,
+          "w": 0.33333190832698195,
+          "error_estimates": [
+            1.0842371951993493e-10,
+            6.940479467528356e-11,
+            3.6596745831268497e-13,
+            3.637120961013206e-10
+          ]
+        },
+        {
+          "x": 0.008254041852680182,
+          "r": 1.8094217957985714,
+          "p": 0.6031368141032236,
+          "trace": 1.1353488789552363e-05,
+          "heat": 7.237698539205594,
+          "G": 0.559202778229546,
+          "w": 0.3333312417832542,
+          "error_estimates": [
+            4.949648771434059e-11,
+            9.954286322219832e-11,
+            4.448661301411578e-13,
+            3.6369045088045285e-10
+          ]
+        },
+        {
+          "x": 0.01,
+          "r": 1.809419139576284,
+          "p": 0.6031341585944623,
+          "trace": 1.666379284844397e-05,
+          "heat": 7.23769322733888,
+          "G": 0.5592035989203374,
+          "w": 0.3333302635097027,
+          "error_estimates": [
+            9.171523446454248e-11,
+            5.321665818159446e-11,
+            1.581554140799661e-11,
+            3.6366305624373846e-10
+          ]
+        },
+        {
+          "x": 0.012115276586285882,
+          "r": 1.8094152405816244,
+          "p": 0.6031302610808411,
+          "trace": 2.445733910031691e-05,
+          "heat": 7.237685430538216,
+          "G": 0.5592048034619924,
+          "w": 0.33332882776369727,
+          "error_estimates": [
+            1.0865517518733493e-10,
+            9.452477505024243e-11,
+            7.77314811219707e-13,
+            3.63632218299684e-10
+          ]
+        },
+        {
+          "x": 0.01467799267622069,
+          "r": 1.8094095172423512,
+          "p": 0.603124540811379,
+          "trace": 3.589480814170713e-05,
+          "heat": 7.2376739862995265,
+          "G": 0.5592065713474865,
+          "w": 0.3333267207141571,
+          "error_estimates": [
+            9.817124763330171e-11,
+            9.761669511191235e-11,
+            7.847734684121304e-12,
+            3.635788361328745e-10
+          ]
+        },
+        {
+          "x": 0.01778279410038923,
+          "r": 1.8094011157135839,
+          "p": 0.6031161456359662,
+          "trace": 5.2678805687270534e-05,
+          "heat": 7.237657188238098,
+          "G": 0.5592091659599715,
+          "w": 0.33332362868479376,
+          "error_estimates": [
+            9.480810374948587e-11,
+            7.560859385058016e-11,
+            4.7745582026819275e-12,
+            3.6349645179785653e-10
+          ]
+        },
+        {
+          "x": 0.021544346900318832,
+          "r": 1.809388782288111,
+          "p": 0.6031038253372607,
+          "trace": 7.730627632915966e-05,
+          "heat": 7.23763253158995,
+          "G": 0.5592129737362821,
+          "w": 0.33331909164076373,
+          "error_estimates": [
+            9.948792645451459e-11,
+            9.660520803454825e-11,
+            6.584462446794004e-13,
+            3.6338386608996203e-10
+          ]
+        },
+        {
+          "x": 0.026101572156825358,
+          "r": 1.8093706758948698,
+          "p": 0.6030857460160425,
+          "trace": 0.00011343784674200655,
+          "heat": 7.237596339576234,
+          "G": 0.5592185615672879,
+          "w": 0.3333124351193385,
+          "error_estimates": [
+            9.891927264864845e-11,
+            4.2444043252055916e-11,
+            6.518613595879627e-13,
+            3.6321428061110146e-10
+          ]
+        },
+        {
+          "x": 0.03162277660168379,
+          "r": 1.8093440924321285,
+          "p": 0.6030592182751835,
+          "trace": 0.00016643760757985244,
+          "heat": 7.237543214803081,
+          "G": 0.5592267608806232,
+          "w": 0.3333026707288986,
+          "error_estimates": [
+            3.9807925243744536e-11,
+            4.9791693150870886e-11,
+            7.182525230783079e-13,
+            3.629666800832416e-10
+          ]
+        },
+        {
+          "x": 0.03831186849557287,
+          "r": 1.809305059251518,
+          "p": 0.6030202995310462,
+          "trace": 0.00024416065866599376,
+          "heat": 7.237465233643228,
+          "G": 0.5592387907144322,
+          "w": 0.33328835093210124,
+          "error_estimates": [
+            1.0839795429175084e-10,
+            1.0356418323039756e-10,
+            8.586900516363917e-13,
+            3.626004308632666e-10
+          ]
+        },
+        {
+          "x": 0.046415888336127774,
+          "r": 1.8092477381489172,
+          "p": 0.602963212890889,
+          "trace": 0.00035809947624974164,
+          "heat": 7.237350762924436,
+          "G": 0.5592564376752284,
+          "w": 0.33326735757469816,
+          "error_estimates": [
+            9.417527811051857e-11,
+            9.528650714684929e-11,
+            3.1046917463128198e-12,
+            3.6206969191680623e-10
+          ]
+        },
+        {
+          "x": 0.05623413251903491,
+          "r": 1.8091635456061215,
+          "p": 0.6028794994509478,
+          "trace": 0.0005250472532777882,
+          "heat": 7.2371827212893525,
+          "G": 0.5592823186987141,
+          "w": 0.3332365948424889,
+          "error_estimates": [
+            5.4607598683505585e-11,
+            9.681195244384846e-11,
+            7.67002060796402e-12,
+            3.612970914005101e-10
+          ]
+        },
+        {
+          "x": 0.06812920690579612,
+          "r": 1.8090398546874216,
+          "p": 0.6027567846567654,
+          "trace": 0.0007695007171253574,
+          "heat": 7.2369360234007125,
+          "G": 0.5593202639790378,
+          "w": 0.33319154528019723,
+          "error_estimates": [
+            9.436858103740302e-11,
+            9.421643023428209e-11,
+            3.4969714515615448e-12,
+            3.601596961781249e-10
+          ]
+        },
+        {
+          "x": 0.08254041852680181,
+          "r": 1.8088580766526254,
+          "p": 0.6025769888560314,
+          "trace": 0.0011271100845314118,
+          "heat": 7.236573820339274,
+          "G": 0.5593758735873343,
+          "w": 0.3331256313768561,
+          "error_estimates": [
+            1.0288937548314632e-10,
+            9.382006463076743e-11,
+            4.0519338520485046e-12,
+            3.585036779421465e-10
+          ]
+        },
+        {
+          "x": 0.1,
+          "r": 1.8085908204562648,
+          "p": 0.6023137432034356,
+          "trace": 0.0016495908459583906,
+          "heat": 7.236041963646912,
+          "G": 0.5594573237765441,
+          "w": 0.3330293045784043,
+          "error_estimates": [
+            9.785578847285664e-11,
+            9.386221116455286e-11,
+            5.8590214606367626e-12,
+            3.5609464680515715e-10
+          ]
+        },
+        {
+          "x": 0.12115276586285877,
+          "r": 1.8081976775219326,
+          "p": 0.6019286808570756,
+          "trace": 0.002411634950705715,
+          "heat": 7.235260841917327,
+          "G": 0.5595765296234921,
+          "w": 0.3328887589779434,
+          "error_estimates": [
+            9.385952198073718e-11,
+            3.697788103008268e-11,
+            8.537301528547076e-12,
+            3.5260468848218666e-10
+          ]
+        },
+        {
+          "x": 0.1467799267622069,
+          "r": 1.8076189512004741,
+          "p": 0.6013661586837191,
+          "trace": 0.0035204751493163613,
+          "heat": 7.234113317932087,
+          "G": 0.5597508113085911,
+          "w": 0.33268414135863117,
+          "error_estimates": [
+            9.422260906328781e-11,
+            9.823051482508263e-11,
+            1.86154770791593e-11,
+            3.47585961215514e-10
+          ]
+        },
+        {
+          "x": 0.1778279410038923,
+          "r": 1.8067663062488895,
+          "p": 0.6005458324534066,
+          "trace": 0.005128808888665643,
+          "heat": 7.232426851255635,
+          "G": 0.5600052630750328,
+          "w": 0.33238711081580186,
+          "error_estimates": [
+            9.385317645268283e-11,
+            7.973980782663527e-11,
+            5.00163785845426e-12,
+            3.4043183734351376e-10
+          ]
+        },
+        {
+          "x": 0.21544346900318823,
+          "r": 1.8055087985594178,
+          "p": 0.5993523813168066,
+          "trace": 0.007451654608998279,
+          "heat": 7.229946894944526,
+          "G": 0.56037608574227,
+          "w": 0.3319576076256282,
+          "error_estimates": [
+            9.386559320394783e-11,
+            9.403045113901579e-11,
+            5.301619407445939e-13,
+            3.303915587348904e-10
+          ]
+        },
+        {
+          "x": 0.2610157215682536,
+          "r": 1.8036519886206226,
+          "p": 0.5976216115356152,
+          "trace": 0.010787154013776735,
+          "heat": 7.226297086558715,
+          "G": 0.5609152099960988,
+          "w": 0.33133975695203693,
+          "error_estimates": [
+            9.387815546149713e-11,
+            9.40995302757544e-11,
+            7.801398260059892e-13,
+            3.165919266708391e-10
+          ]
+        },
+        {
+          "x": 0.31622776601683794,
+          "r": 1.8009067720354883,
+          "p": 0.5951222841563442,
+          "trace": 0.015539919566456352,
+          "heat": 7.220919243115887,
+          "G": 0.5616965943624032,
+          "w": 0.3304570194289973,
+          "error_estimates": [
+            9.391371375850969e-11,
+            9.4053286080224e-11,
+            9.477481441451522e-13,
+            2.98285983667918e-10
+          ]
+        },
+        {
+          "x": 0.3831186849557285,
+          "r": 1.7968431576252093,
+          "p": 0.5915335328191453,
+          "trace": 0.02224255916777339,
+          "heat": 7.212982097806265,
+          "G": 0.5628246001906649,
+          "w": 0.32920710430895,
+          "error_estimates": [
+            9.396775375602486e-11,
+            9.41679359505727e-11,
+            1.3936234745905325e-12,
+            2.7534160684179453e-10
+          ]
+        },
+        {
+          "x": 0.46415888336127775,
+          "r": 1.7908226695767002,
+          "p": 0.5864190546995194,
+          "trace": 0.03156550547814231,
+          "heat": 7.201241091847763,
+          "G": 0.5644447757783143,
+          "w": 0.32745791342820796,
+          "error_estimates": [
+            9.404627413269301e-11,
+            9.433737868101359e-11,
+            8.787127105047342e-12,
+            2.496901691311092e-10
+          ]
+        },
+        {
+          "x": 0.5623413251903491,
+          "r": 1.7819020753266037,
+          "p": 0.5792019597112976,
+          "trace": 0.044296196192710975,
+          "heat": 7.183820956240119,
+          "G": 0.5667571431029517,
+          "w": 0.32504702010919206,
+          "error_estimates": [
+            9.415932768940799e-11,
+            9.45880441207447e-11,
+            3.0651254416576227e-12,
+            2.3008845888804695e-10
+          ]
+        },
+        {
+          "x": 0.6812920690579608,
+          "r": 1.7687027388766317,
+          "p": 0.5691489824552587,
+          "trace": 0.06125579151085531,
+          "heat": 7.157876956907806,
+          "G": 0.5700315562420365,
+          "w": 0.32178894166056765,
+          "error_estimates": [
+            9.432678101537677e-11,
+            9.495225644908455e-11,
+            9.89747246562082e-12,
+            2.5769514266248606e-10
+          ]
+        },
+        {
+          "x": 0.8254041852680182,
+          "r": 1.7492485394529091,
+          "p": 0.555380222896078,
+          "trace": 0.08310787076467503,
+          "heat": 7.1190706160269475,
+          "G": 0.5746237204870872,
+          "w": 0.3174964622636057,
+          "error_estimates": [
+            9.456384890095089e-11,
+            9.548934348123263e-11,
+            1.784211597239907e-11,
+            3.2155909606925013e-10
+          ]
+        },
+        {
+          "x": 1.0,
+          "r": 1.7207993256175027,
+          "p": 0.5369300289710048,
+          "trace": 0.11000923870448812,
+          "heat": 7.060782408950097,
+          "G": 0.5809887473283709,
+          "w": 0.31202361657035715,
+          "error_estimates": [
+            9.490560940828433e-11,
+            1.199572037591521e-11,
+            1.0957482445155997e-11,
+            4.175814508310133e-10
+          ]
+        },
+        {
+          "x": 1.2115276586285877,
+          "r": 1.6797581837436346,
+          "p": 0.5128922658146258,
+          "trace": 0.14108138629975722,
+          "heat": 6.973016389948148,
+          "G": 0.5896861068963246,
+          "w": 0.3053369650335953,
+          "error_estimates": [
+            9.538728794408864e-11,
+            1.1633350238729337e-11,
+            1.991587675111964e-11,
+            2.3662638884637213e-10
+          ]
+        },
+        {
+          "x": 1.467799267622069,
+          "r": 1.6218170890856451,
+          "p": 0.48267937360858587,
+          "trace": 0.1737789682598877,
+          "heat": 6.8411281585652155,
+          "G": 0.6013642485228288,
+          "w": 0.29761640622538565,
+          "error_estimates": [
+            1.1280718681204366e-11,
+            1.111357265549476e-11,
+            1.5165751898908023e-11,
+            2.4039799097722906e-10
+          ]
+        },
+        {
+          "x": 1.7782794100389228,
+          "r": 1.5426052428319368,
+          "p": 0.44639277121965637,
+          "trace": 0.20342692917296792,
+          "heat": 6.645000510079253,
+          "G": 0.6167024452126438,
+          "w": 0.28937589399097474,
+          "error_estimates": [
+            1.0617649434191632e-11,
+            1.0381981733187078e-11,
+            6.578951947268639e-12,
+            2.458081436504564e-10
+          ]
+        },
+        {
+          "x": 2.154434690031882,
+          "r": 1.4391213338347362,
+          "p": 0.40522620806348264,
+          "trace": 0.22344270964428822,
+          "heat": 6.360226094309821,
+          "G": 0.636268460935399,
+          "w": 0.2815789041106783,
+          "error_estimates": [
+            9.69693374209168e-12,
+            9.37131925485416e-12,
+            1.8110158840952811e-12,
+            2.534566125118254e-10
+          ]
+        },
+        {
+          "x": 2.610157215682536,
+          "r": 1.3119698497331638,
+          "p": 0.36171191905749345,
+          "trace": 0.22683409256068365,
+          "heat": 5.963849242114783,
+          "G": 0.660227091075839,
+          "w": 0.2757013959818212,
+          "error_estimates": [
+            8.456929460319878e-12,
+            8.020347927783393e-12,
+            3.81310490972925e-12,
+            2.640447714615355e-10
+          ]
+        },
+        {
+          "x": 3.1622776601683795,
+          "r": 1.1677103579523278,
+          "p": 0.31953984926023615,
+          "trace": 0.20909081017161935,
+          "heat": 5.446691966236756,
+          "G": 0.6878436754600106,
+          "w": 0.273646497253458,
+          "error_estimates": [
+            6.860903184777635e-12,
+            6.309370583438352e-12,
+            1.4391096957728894e-11,
+            2.8343868504112002e-11
+          ]
+        },
+        {
+          "x": 3.831186849557285,
+          "r": 1.0196893916046235,
+          "p": 0.28276194900971124,
+          "trace": 0.1714035445754896,
+          "heat": 4.829886017163226,
+          "G": 0.7168900593072449,
+          "w": 0.27730204054074337,
+          "error_estimates": [
+            4.947044684131247e-12,
+            4.32576605801992e-12,
+            3.442595592582079e-12,
+            2.4410541214599904e-11
+          ]
+        },
+        {
+          "x": 4.6415888336127775,
+          "r": 0.8855010594304683,
+          "p": 0.2545256217316503,
+          "trace": 0.12192419423551747,
+          "heat": 4.175225093755677,
+          "G": 0.743536679391711,
+          "w": 0.2874368347965102,
+          "error_estimates": [
+            1.1426730849655076e-11,
+            1.998843898256175e-11,
+            2.8251832690551214e-12,
+            3.4310947553215104e-11
+          ]
+        },
+        {
+          "x": 5.623413251903491,
+          "r": 0.7808558761801135,
+          "p": 0.23592796013552514,
+          "trace": 0.0730719957735381,
+          "heat": 3.574531200176036,
+          "G": 0.7637174338259156,
+          "w": 0.3021402122113321,
+          "error_estimates": [
+            4.419929406905666e-12,
+            1.7134637940522249e-12,
+            2.77971540252091e-12,
+            1.2366293074466706e-11
+          ]
+        },
+        {
+          "x": 6.812920690579608,
+          "r": 0.7128206721372253,
+          "p": 0.2257392274340654,
+          "trace": 0.03560298983502909,
+          "heat": 3.1132697019051006,
+          "G": 0.7757068493180955,
+          "w": 0.31668445691570557,
+          "error_estimates": [
+            1.1055272005409602e-11,
+            3.1855697205343733e-12,
+            1.188265007932019e-11,
+            4.3339773506027605e-11
+          ]
+        },
+        {
+          "x": 8.254041852680182,
+          "r": 0.6772984653771005,
+          "p": 0.22126568685698067,
+          "trace": 0.013501404806158503,
+          "heat": 2.8279246533815843,
+          "G": 0.7811143925810224,
+          "w": 0.326688599144819,
+          "error_estimates": [
+            1.2528749388172612e-11,
+            1.0726588232086659e-11,
+            1.5685779524852324e-11,
+            2.660303603724899e-13
+          ]
+        },
+        {
+          "x": 10.0,
+          "r": 0.6630602291843984,
+          "p": 0.2197604190637117,
+          "trace": 0.0037789719932633456,
+          "heat": 2.692048664538219,
+          "G": 0.7829301234889,
+          "w": 0.3314335702716319,
+          "error_estimates": [
+            1.8966453577511578e-11,
+            1.386038643375711e-11,
+            9.486100129008467e-12,
+            2.302101599547047e-12
+          ]
+        },
+        {
+          "x": 12.115276586285876,
+          "r": 0.6589096222807315,
+          "p": 0.21939257560650724,
+          "trace": 0.0007318954612097451,
+          "heat": 2.6448924983106257,
+          "G": 0.7833705193630958,
+          "w": 0.33296307746593207,
+          "error_estimates": [
+            1.4498222013943909e-11,
+            8.396263867991143e-12,
+            7.040782309410276e-12,
+            1.0452972315464672e-11
+          ]
+        },
+        {
+          "x": 14.677992676220676,
+          "r": 0.6580847936644648,
+          "p": 0.21933136339713094,
+          "trace": 9.070347307201334e-05,
+          "heat": 2.6337180432447576,
+          "G": 0.7834435074546798,
+          "w": 0.33328739017932785,
+          "error_estimates": [
+            3.464080170499589e-12,
+            2.70313648219186e-12,
+            1.4774133355968393e-12,
+            1.7688587152700537e-11
+          ]
+        },
+        {
+          "x": 17.78279410038923,
+          "r": 0.6579813671336644,
+          "p": 0.21932494159603005,
+          "trace": 6.542345574267629e-06,
+          "heat": 2.6320452116197117,
+          "G": 0.7834511556000984,
+          "w": 0.33333001898133646,
+          "error_estimates": [
+            5.728010620235912e-13,
+            5.838692811813765e-13,
+            2.2399864896513877e-13,
+            1.7475156510931676e-11
+          ]
+        },
+        {
+          "x": 21.54434690031882,
+          "r": 0.6579739080991603,
+          "p": 0.21932455441205576,
+          "trace": 2.448629931522475e-07,
+          "heat": 2.6319010343168316,
+          "G": 0.7834516166305804,
+          "w": 0.33333320928434496,
+          "error_estimates": [
+            6.09855013265016e-14,
+            3.298506239380364e-14,
+            3.0604204909037734e-14,
+            1.5295182115536516e-12
+          ]
+        },
+        {
+          "x": 26.10157215682533,
+          "r": 0.6579736313807069,
+          "p": 0.21932454241416766,
+          "trace": 4.138203889517939e-09,
+          "heat": 2.63189463566284,
+          "G": 0.7834516309165231,
+          "w": 0.3333333312368948,
+          "error_estimates": [
+            8.864622902517019e-14,
+            8.415583996126099e-12,
+            5.9473673094846645e-12,
+            8.022278043480101e-15
+          ]
+        },
+        {
+          "x": 31.622776601683793,
+          "r": 0.6579736267686278,
+          "p": 0.219324542247317,
+          "trace": 2.6684781244144267e-11,
+          "heat": 2.6318945079320075,
+          "G": 0.7834516311151929,
+          "w": 0.33333333331981874,
+          "error_estimates": [
+            3.4068892769436477e-13,
+            1.528856157768769e-11,
+            1.1186866808231484e-13,
+            1.6066065080019048e-11
+          ]
+        },
+        {
+          "x": 38.31186849557285,
+          "r": 0.657973626739349,
+          "p": 0.2193245422464316,
+          "trace": 5.4139838510967146e-14,
+          "heat": 2.6318945069594926,
+          "G": 0.783451631116247,
+          "w": 0.3333333333333059,
+          "error_estimates": [
+            3.776878153193055e-13,
+            3.277894672122317e-14,
+            3.4717330953059706e-13,
+            1.5102603820044372e-11
+          ]
+        },
+        {
+          "x": 46.41588833612773,
+          "r": 0.6579736267392905,
+          "p": 0.21932454224643017,
+          "trace": 2.6197324130721514e-17,
+          "heat": 2.6318945069571633,
+          "G": 0.7834516311162488,
+          "w": 0.3333333333333333,
+          "error_estimates": [
+            1.8231906637564088e-16,
+            1.2378841151983936e-17,
+            1.713378486535077e-16,
+            8.731490752456228e-15
+          ]
+        },
+        {
+          "x": 56.23413251903491,
+          "r": 0.6579736267392905,
+          "p": 0.21932454224643017,
+          "trace": 2.2646427305564e-21,
+          "heat": 2.631894506957162,
+          "G": 0.7834516311162488,
+          "w": 0.3333333333333333,
+          "error_estimates": [
+            1.5356884150095173e-20,
+            8.7945094732148e-22,
+            1.4697286733627673e-20,
+            8.836687244608323e-19
+          ]
+        },
+        {
+          "x": 68.12920690579608,
+          "r": 0.6579736267392905,
+          "p": 0.21932454224643017,
+          "trace": 2.4543022870276112e-26,
+          "heat": 2.631894506957162,
+          "G": 0.7834516311162488,
+          "w": 0.3333333333333333,
+          "error_estimates": [
+            1.6956965551526717e-25,
+            8.161053609741791e-27,
+            1.6140860190558438e-25,
+            1.1848136710069555e-23
+          ]
+        },
+        {
+          "x": 82.54041852680173,
+          "r": 0.6579736267392905,
+          "p": 0.21932454224643017,
+          "trace": 2.1760015552373592e-32,
+          "heat": 2.631894506957162,
+          "G": 0.7834516311162488,
+          "w": 0.3333333333333333,
+          "error_estimates": [
+            1.5552052823978167e-31,
+            6.616259142910062e-33,
+            1.491115037508478e-31,
+            1.311576091497952e-29
+          ]
+        },
+        {
+          "x": 100.0,
+          "r": 0.6579736267392905,
+          "p": 0.21932454224643017,
+          "trace": 9.339602625672323e-40,
+          "heat": 2.631894506957162,
+          "G": 0.7834516311162488,
+          "w": 0.3333333333333333,
+          "error_estimates": [
+            6.861746717692585e-39,
+            2.5748824063402873e-40,
+            6.618992080517626e-39,
+            6.988527720002187e-37
+          ]
+        }
+      ],
+      "alternate_quadrature": [
+        {
+          "x": 0.001,
+          "r": 1.8094273901996276,
+          "p": 0.6031424078444527,
+          "quadrature_errors": [
+            9.369393433483198e-11,
+            9.369635317547924e-11
+          ],
+          "rho_T_numeric": 7.237709799839953,
+          "p_T_numeric": 2.412569822168864
+        },
+        {
+          "x": 0.03,
+          "r": 1.8093524343017857,
+          "p": 0.603067540667055,
+          "quadrature_errors": [
+            1.02793329403994e-10,
+            4.417192154200931e-11
+          ],
+          "rho_T_numeric": 7.237559956245754,
+          "p_T_numeric": 2.4124199990938067
+        },
+        {
+          "x": 0.3,
+          "r": 1.801770409057168,
+          "p": 0.595901491643831,
+          "quadrature_errors": [
+            2.9665159217984183e-13,
+            1.0636512528498883e-10
+          ],
+          "rho_T_numeric": 7.222609325482354,
+          "p_T_numeric": 2.3976719248264278
+        },
+        {
+          "x": 1.0,
+          "r": 1.7207993256175023,
+          "p": 0.5369300289710048,
+          "quadrature_errors": [
+            2.3208102106764272e-12,
+            5.189626506307832e-12
+          ],
+          "rho_T_numeric": 7.060782481322914,
+          "p_T_numeric": 2.2577293787395813
+        },
+        {
+          "x": 3.0,
+          "r": 1.2083694016220814,
+          "p": 0.3307471613940779,
+          "quadrature_errors": [
+            3.2573943542502093e-12,
+            1.2433831741986978e-11
+          ],
+          "rho_T_numeric": 5.600202548765587,
+          "p_T_numeric": 1.5391165864087064
+        },
+        {
+          "x": 10.0,
+          "r": 0.6630602291843984,
+          "p": 0.21976041906371155,
+          "quadrature_errors": [
+            1.4109824419961114e-12,
+            4.638452934679487e-12
+          ],
+          "rho_T_numeric": 2.6920486989395753,
+          "p_T_numeric": 0.8828206579239439
+        },
+        {
+          "x": 100.0,
+          "r": 0.6579736267392905,
+          "p": 0.21932454224643017,
+          "quadrature_errors": [
+            4.1993232120110136e-41,
+            6.511611412477155e-41
+          ],
+          "rho_T_numeric": 2.631894533275392,
+          "p_T_numeric": 0.8772981777585565
+        }
+      ],
+      "R": "1.401019665327693560332839",
+      "bounce_coefficient": "1.070648783255412256007850",
+      "analytic_endpoint_G": [
+        0.5592010237293866,
+        0.7834516311162488
+      ]
+    },
+    "calibration": {
+      "same_background_pair_coefficient": "0.8029865874415591920058875",
+      "synthetic_examples": [
+        {
+          "k": "1/5",
+          "eta": "0",
+          "sigma": "1",
+          "target": "1/100",
+          "radius_ratio": "1",
+          "Ccrit": "0.011208157322621548483",
+          "negative_u_floor_applies": true
+        },
+        {
+          "k": "1/10",
+          "eta": "1/20",
+          "sigma": "3/2",
+          "target": "1/10",
+          "radius_ratio": "2",
+          "Ccrit": "0.046308776889314744914",
+          "negative_u_floor_applies": true
+        },
+        {
+          "k": "3/10",
+          "eta": "1/5",
+          "sigma": "2",
+          "target": "1",
+          "radius_ratio": "1",
+          "Ccrit": "3.6715622687391055223",
+          "negative_u_floor_applies": false
+        }
+      ]
+    },
+    "joint_entropy": {
+      "postprocessing": [
+        {
+          "x": 0.001,
+          "h": 2.4125697980440775,
+          "minimum_bare_coefficient": 1.427531743879762,
+          "max_fraction_charge_cap": 0.7005098165328281
+        },
+        {
+          "x": 0.001211527658628589,
+          "h": 2.412569720077546,
+          "minimum_bare_coefficient": 1.4275317592575134,
+          "max_fraction_charge_cap": 0.70050980898675
+        },
+        {
+          "x": 0.0014677992676220691,
+          "h": 2.4125696056383372,
+          "minimum_bare_coefficient": 1.4275317818289666,
+          "max_fraction_charge_cap": 0.7005097979106224
+        },
+        {
+          "x": 0.0017782794100389228,
+          "h": 2.4125694376645694,
+          "minimum_bare_coefficient": 1.4275318149593272,
+          "max_fraction_charge_cap": 0.7005097816530917
+        },
+        {
+          "x": 0.0021544346900318843,
+          "h": 2.4125691911128415,
+          "minimum_bare_coefficient": 1.4275318635880427,
+          "max_fraction_charge_cap": 0.7005097577903032
+        },
+        {
+          "x": 0.0026101572156825357,
+          "h": 2.4125688292244987,
+          "minimum_bare_coefficient": 1.4275319349652276,
+          "max_fraction_charge_cap": 0.7005097227645267
+        },
+        {
+          "x": 0.0031622776601683794,
+          "h": 2.4125682980452803,
+          "minimum_bare_coefficient": 1.4275320397325886,
+          "max_fraction_charge_cap": 0.7005096713537332
+        },
+        {
+          "x": 0.003831186849557285,
+          "h": 2.412567518381297,
+          "minimum_bare_coefficient": 1.4275321935100052,
+          "max_fraction_charge_cap": 0.700509595893041
+        },
+        {
+          "x": 0.004641588833612777,
+          "h": 2.4125663739921093,
+          "minimum_bare_coefficient": 1.4275324192242989,
+          "max_fraction_charge_cap": 0.7005094851319635
+        },
+        {
+          "x": 0.005623413251903491,
+          "h": 2.412564694260683,
+          "minimum_bare_coefficient": 1.4275327505274025,
+          "max_fraction_charge_cap": 0.7005093225570829
+        },
+        {
+          "x": 0.006812920690579608,
+          "h": 2.4125622287567747,
+          "minimum_bare_coefficient": 1.4275332368134943,
+          "max_fraction_charge_cap": 0.700509083930106
+        },
+        {
+          "x": 0.008254041852680182,
+          "h": 2.412558609901795,
+          "minimum_bare_coefficient": 1.427533950583122,
+          "max_fraction_charge_cap": 0.7005087336742626
+        },
+        {
+          "x": 0.01,
+          "h": 2.4125532981707463,
+          "minimum_bare_coefficient": 1.4275349982519752,
+          "max_fraction_charge_cap": 0.7005082195704524
+        },
+        {
+          "x": 0.012115276586285882,
+          "h": 2.4125455016624655,
+          "minimum_bare_coefficient": 1.4275365360159178,
+          "max_fraction_charge_cap": 0.7005074649724057
+        },
+        {
+          "x": 0.01467799267622069,
+          "h": 2.4125340580537302,
+          "minimum_bare_coefficient": 1.427538793136902,
+          "max_fraction_charge_cap": 0.7005063573807196
+        },
+        {
+          "x": 0.01778279410038923,
+          "h": 2.4125172613495502,
+          "minimum_bare_coefficient": 1.427542106120613,
+          "max_fraction_charge_cap": 0.7005047316730496
+        },
+        {
+          "x": 0.021544346900318832,
+          "h": 2.4124926076253717,
+          "minimum_bare_coefficient": 1.4275469688794793,
+          "max_fraction_charge_cap": 0.7005023454919507
+        },
+        {
+          "x": 0.026101572156825358,
+          "h": 2.412456421910912,
+          "minimum_bare_coefficient": 1.4275541063553803,
+          "max_fraction_charge_cap": 0.7004988431247989
+        },
+        {
+          "x": 0.03162277660168379,
+          "h": 2.4124033107073117,
+          "minimum_bare_coefficient": 1.4275645825694327,
+          "max_fraction_charge_cap": 0.7004937024986487
+        },
+        {
+          "x": 0.03831186849557287,
+          "h": 2.412325358782564,
+          "minimum_bare_coefficient": 1.4275799591862834,
+          "max_fraction_charge_cap": 0.7004861574058502
+        },
+        {
+          "x": 0.046415888336127774,
+          "h": 2.412210951039806,
+          "minimum_bare_coefficient": 1.4276025281934461,
+          "max_fraction_charge_cap": 0.7004750834011524
+        },
+        {
+          "x": 0.05623413251903491,
+          "h": 2.4120430450570693,
+          "minimum_bare_coefficient": 1.427635653285489,
+          "max_fraction_charge_cap": 0.700458830443643
+        },
+        {
+          "x": 0.06812920690579612,
+          "h": 2.411796639344187,
+          "minimum_bare_coefficient": 1.4276842706517323,
+          "max_fraction_charge_cap": 0.7004349775062688
+        },
+        {
+          "x": 0.08254041852680181,
+          "h": 2.4114350655086567,
+          "minimum_bare_coefficient": 1.4277556233891717,
+          "max_fraction_charge_cap": 0.7003999729493092
+        },
+        {
+          "x": 0.1,
+          "h": 2.4109045636597006,
+          "minimum_bare_coefficient": 1.4278603380898771,
+          "max_fraction_charge_cap": 0.7003486078601721
+        },
+        {
+          "x": 0.12115276586285877,
+          "h": 2.4101263583790082,
+          "minimum_bare_coefficient": 1.4280140020776295,
+          "max_fraction_charge_cap": 0.700273245601998
+        },
+        {
+          "x": 0.1467799267622069,
+          "h": 2.4089851098841932,
+          "minimum_bare_coefficient": 1.4282394720668457,
+          "max_fraction_charge_cap": 0.700162696492957
+        },
+        {
+          "x": 0.1778279410038923,
+          "h": 2.407312138702296,
+          "minimum_bare_coefficient": 1.4285702490281873,
+          "max_fraction_charge_cap": 0.7000005779766655
+        },
+        {
+          "x": 0.21544346900318823,
+          "h": 2.4048611798762245,
+          "minimum_bare_coefficient": 1.4290554021933048,
+          "max_fraction_charge_cap": 0.6997629332391218
+        },
+        {
+          "x": 0.2610157215682536,
+          "h": 2.401273600156238,
+          "minimum_bare_coefficient": 1.4297667329180042,
+          "max_fraction_charge_cap": 0.6994147905225805
+        },
+        {
+          "x": 0.31622776601683794,
+          "h": 2.3960290561918325,
+          "minimum_bare_coefficient": 1.43080915351608,
+          "max_fraction_charge_cap": 0.6989052296335911
+        },
+        {
+          "x": 0.3831186849557285,
+          "h": 2.3883766904443546,
+          "minimum_bare_coefficient": 1.4323356299368109,
+          "max_fraction_charge_cap": 0.6981603885983875
+        },
+        {
+          "x": 0.46415888336127775,
+          "h": 2.3772417242762196,
+          "minimum_bare_coefficient": 1.4345684938441772,
+          "max_fraction_charge_cap": 0.6970737223709168
+        },
+        {
+          "x": 0.5623413251903491,
+          "h": 2.3611040350379016,
+          "minimum_bare_coefficient": 1.4378294085446888,
+          "max_fraction_charge_cap": 0.6954927991159664
+        },
+        {
+          "x": 0.6812920690579608,
+          "h": 2.3378517213318903,
+          "minimum_bare_coefficient": 1.4425805834970982,
+          "max_fraction_charge_cap": 0.693202176321966
+        },
+        {
+          "x": 0.8254041852680182,
+          "h": 2.304628762348987,
+          "minimum_bare_coefficient": 1.4494794997028124,
+          "max_fraction_charge_cap": 0.6899028238792136
+        },
+        {
+          "x": 1.0,
+          "h": 2.2577293545885073,
+          "minimum_bare_coefficient": 1.4594473873971894,
+          "max_fraction_charge_cap": 0.6851908528086251
+        },
+        {
+          "x": 1.2115276586285877,
+          "h": 2.1926504495582604,
+          "minimum_bare_coefficient": 1.4737458750359864,
+          "max_fraction_charge_cap": 0.678543035769706
+        },
+        {
+          "x": 1.467799267622069,
+          "h": 2.104496462694231,
+          "minimum_bare_coefficient": 1.4940426773165445,
+          "max_fraction_charge_cap": 0.6693249230310501
+        },
+        {
+          "x": 1.7782794100389228,
+          "h": 1.9889980140515933,
+          "minimum_bare_coefficient": 1.5224193205575567,
+          "max_fraction_charge_cap": 0.6568492572951381
+        },
+        {
+          "x": 2.154434690031882,
+          "h": 1.8443475418982187,
+          "minimum_bare_coefficient": 1.561222552547312,
+          "max_fraction_charge_cap": 0.6405236706121022
+        },
+        {
+          "x": 2.610157215682536,
+          "h": 1.673681768790657,
+          "minimum_bare_coefficient": 1.6125806398866718,
+          "max_fraction_charge_cap": 0.6201240268333356
+        },
+        {
+          "x": 3.1622776601683795,
+          "h": 1.487250207212564,
+          "minimum_bare_coefficient": 1.6773269461307598,
+          "max_fraction_charge_cap": 0.5961866899633309
+        },
+        {
+          "x": 3.831186849557285,
+          "h": 1.3024513406143348,
+          "minimum_bare_coefficient": 1.7531748596116883,
+          "max_fraction_charge_cap": 0.5703937599364679
+        },
+        {
+          "x": 4.6415888336127775,
+          "h": 1.1400266811621185,
+          "minimum_bare_coefficient": 1.8327675973575208,
+          "max_fraction_charge_cap": 0.5456229155523032
+        },
+        {
+          "x": 5.623413251903491,
+          "h": 1.0167838363156387,
+          "minimum_bare_coefficient": 1.9040113170764699,
+          "max_fraction_charge_cap": 0.5252069622860531
+        },
+        {
+          "x": 6.812920690579608,
+          "h": 0.9385598995712907,
+          "minimum_bare_coefficient": 1.955502632941688,
+          "max_fraction_charge_cap": 0.5113774756189855
+        },
+        {
+          "x": 8.254041852680182,
+          "h": 0.8985641522340811,
+          "minimum_bare_coefficient": 1.9840961166715734,
+          "max_fraction_charge_cap": 0.5040078409495369
+        },
+        {
+          "x": 10.0,
+          "h": 0.8828206482481101,
+          "minimum_bare_coefficient": 1.9958209445007098,
+          "max_fraction_charge_cap": 0.5010469515090532
+        },
+        {
+          "x": 12.115276586285876,
+          "h": 0.8783021978872387,
+          "minimum_bare_coefficient": 1.9992376111309258,
+          "max_fraction_charge_cap": 0.5001906698995732
+        },
+        {
+          "x": 14.677992676220676,
+          "h": 0.8774161570615957,
+          "minimum_bare_coefficient": 1.9999103478518332,
+          "max_fraction_charge_cap": 0.5000224140417753
+        },
+        {
+          "x": 17.78279410038923,
+          "h": 0.8773063087296944,
+          "minimum_bare_coefficient": 1.9999938145745548,
+          "max_fraction_charge_cap": 0.5000015463611437
+        },
+        {
+          "x": 21.54434690031882,
+          "h": 0.8772984625112161,
+          "minimum_bare_coefficient": 1.99999977694742,
+          "max_fraction_charge_cap": 0.5000000557631512
+        },
+        {
+          "x": 26.10157215682533,
+          "h": 0.8772981737948745,
+          "minimum_bare_coefficient": 1.9999999963454813,
+          "max_fraction_charge_cap": 0.5000000009136296
+        },
+        {
+          "x": 31.622776601683793,
+          "h": 0.8772981690159448,
+          "minimum_bare_coefficient": 1.9999999999770326,
+          "max_fraction_charge_cap": 0.5000000000057419
+        },
+        {
+          "x": 38.31186849557285,
+          "h": 0.8772981689857806,
+          "minimum_bare_coefficient": 1.9999999999999543,
+          "max_fraction_charge_cap": 0.5000000000000114
+        },
+        {
+          "x": 46.41588833612773,
+          "h": 0.8772981689857207,
+          "minimum_bare_coefficient": 2.0,
+          "max_fraction_charge_cap": 0.5
+        },
+        {
+          "x": 56.23413251903491,
+          "h": 0.8772981689857207,
+          "minimum_bare_coefficient": 2.0,
+          "max_fraction_charge_cap": 0.5
+        },
+        {
+          "x": 68.12920690579608,
+          "h": 0.8772981689857207,
+          "minimum_bare_coefficient": 2.0,
+          "max_fraction_charge_cap": 0.5
+        },
+        {
+          "x": 82.54041852680173,
+          "h": 0.8772981689857207,
+          "minimum_bare_coefficient": 2.0,
+          "max_fraction_charge_cap": 0.5
+        },
+        {
+          "x": 100.0,
+          "h": 0.8772981689857207,
+          "minimum_bare_coefficient": 2.0,
+          "max_fraction_charge_cap": 0.5
+        }
+      ],
+      "fresh_entropy_integrals": [
+        {
+          "x": 0.001,
+          "h": 2.4125697980440783,
+          "error_estimate": 1.4404274696377452e-11
+        },
+        {
+          "x": 0.006812920690579608,
+          "h": 2.412562228756629,
+          "error_estimate": 1.4404893658268054e-11
+        },
+        {
+          "x": 0.046415888336127774,
+          "h": 2.412210951039806,
+          "error_estimate": 1.4402556582173126e-11
+        },
+        {
+          "x": 0.31622776601683794,
+          "h": 2.396029056191832,
+          "error_estimate": 1.4322772332854253e-11
+        },
+        {
+          "x": 2.154434690031882,
+          "h": 1.8443475418982187,
+          "error_estimate": 1.7849229845683198e-12
+        },
+        {
+          "x": 14.677992676220676,
+          "h": 0.8774161570615958,
+          "error_estimate": 1.5897183546340367e-12
+        },
+        {
+          "x": 100.0,
+          "h": 0.8772981689857207,
+          "error_estimate": 6.929132828361301e-39
+        }
+      ],
+      "constants": {
+        "R": "1.401019665327693560332839",
+        "bare": "1.427531711007216341343800",
+        "same_background": "1.070648783255412256007850",
+        "unit_target_eta_ceiling": "0.07064878325541225600784999"
+      }
+    }
+  },
+  "checker_sha256": "dc239acc7df08678984d60e21b7cafa1f7f6b7cfa8d328539a5b7fd9a81a91ad"
+}
+
+----- stderr -----
+

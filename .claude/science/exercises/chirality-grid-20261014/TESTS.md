@@ -74,3 +74,22 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **LEAK-SMALL:** below 1e-15.
   - **LEAK-PLANCK:** |δc| ≥ 1e-6.
   - **OPEN:** otherwise.
+
+**COL-1. Can colour be carried by combinations of sites?** (Pre-registered 2026-10-14 ~21:20Z. Jon asked: "why does the site need to carry the color — can't it be combinations of sites that carry it?")
+- **Plain question.** The qinfo panelist's "≥ 16 modes per site" assumes the colour gauge transformations act on each single site's state space (on-site). Can the components of a colour triplet live on different qubits, with:
+  - (i) exact local SU(3) gauge invariance (a Gauss law), and
+  - (ii) covariance under one-step translations, possibly twisted by an internal relabelling as in staggered fermions (shift ⊗ a cyclic colour permutation, which lies in SU(3)), and
+  - (iii) nearest-neighbour or finite range?
+
+  If not, what exactly forces the gauge "cell" to be a block, and what does a twisted, non-on-site realization cost? Relate this to non-on-site symmetry gauging (Seifnashri–Shirley; Thorngren–Preskill–Fidkowski disentanglers) and to emergent gauge fields.
+- **Setting.**
+  - One complex fermion mode or qubit per site on Z³ (and a Z¹ toy first).
+  - SU(3) acting on clusters.
+  - Classify the possible assignments of colour components to sites compatible with (ii).
+  - Test whether a local Gauss law exists (gauge generators as local operators on clusters that commute with each other and generate SU(3) at every point). Check it algebraically and on small clusters.
+- **Readings.**
+  - **COLOUR-SPREAD-OK:** an explicit assignment with (i)+(ii)+(iii) and a commuting set of local SU(3) Gauss-law generators, checked.
+  - **COLOUR-BLOCK-FORCED:** proof that (i)+(ii) force the gauge cell to be a translation-breaking block, or force non-commuting overlapping generators. Name the obstruction.
+  - **COLOUR-EMERGENT-ONLY:** exact local SU(3) is impossible with spread components, but an emergent or approximate version is not excluded (state what would be needed).
+  - **OPEN:** otherwise.
+- **Expectation.** COLOUR-BLOCK-FORCED for exact local SU(3). Overlapping cluster generators fail to commute, and a translation-twisted assignment only relabels the block lattice. Emergent colour remains open.

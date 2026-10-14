@@ -153,7 +153,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - Explicit constructions on Z¹ and Z³ with exact local SU(3) Gauss laws, one-step translation covariance of the law, finite range, and the colours on different qubits.
   - Checks: su(3) relations to ~1e-16, commuting generators, [H, G] = 0.
   - Forced costs:
-    - OWN: each colour point needs a private register of at least 2 qubits, since shared qubits are read-only;
+    - OWN: each colour point needs a private register of at least 2 qubits, since shared qubits are read-only [referee: not proved; OWN gives private algebraic tensor factors, not private physical qubits; 4-qubit counterexample];
     - CAP: simultaneous colour density ≤ 0.63 per site, so colour is hard-core;
     - cells are marker patterns of 19 (Z¹) or 35 (Z³) qubits;
     - the linked example's vacuum breaks translations to one in 19 or 35;
@@ -211,3 +211,22 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Not tested:** anomaly cancellation (at Lx = 2 even an anomalous single Weyl fermion is gauge invariant), the torus, Lx ≥ 4, 4D, non-abelian groups, 3-4-5-0.
 - **Consequence:** the chiral measure is no escape from K2c's failure, so the X3 contingency stays triggered.
 - **Deviations:** registered gate G4 failed and was replaced by Richardson extrapolation before any kernel was computed; a sign bug was fixed (either sign gives FAIL).
+
+**COL-1 referee (codex gpt-5.6-sol, xhigh; returned 22:12Z; recorded 22:18Z): CONFIRMED WITH CORRECTIONS.** COLOUR-SPREAD-OK is met as fixed.
+- **Confirmed:**
+  - Lemma C and the parse lemma. Incompatible markers give P_xP_y = 0; compatible ones have disjoint registers and colour-blind projectors. So the generators commute, and [PQ^aP, PQ^bP] = if^{abc}G^c holds on the full Hilbert space.
+  - Full-space gauge invariance of H. The referee added an independent predicate-pullback check, because pair creation changes occupancy; it found no projector toggles.
+  - The Z¹ matter-only checks, reproduced at L = 14–18 (224 MB).
+  - Class Q, within its domain (finite range, elementary quadratic or BdG charges, a gauge point in every translation orbit).
+- **Corrections:**
+  - **OWN does not force private physical qubits.** The commuting-algebra decomposition gives private *algebraic tensor factors*. An entangling basis change can put two commuting SU(3)s across the same shared qubits; the referee gives an explicit 4-qubit counterexample with zero cross-commutator, both acting quantumly on both shared qubits. So "≥ 2 private qubits per colour point" is not proved.
+  - **CAP** (≤ 0.63 per site) holds only for colour charges carried *in one joint sector*. It does not bound gauge factors that live in mutually exclusive sectors.
+  - The gauge representation is highly reducible and state-controlled: SU(3)_x acts trivially outside valid marker sectors. Lemma C should have been written out, not invoked.
+  - The low-memory linked rerun covered offset 0 only, with the covariance fields set to nan, so REPORT:146 overstates it. Covariance follows exactly from the definitions anyway.
+  - "The vacuum breaks translations to 1 in 19" is not proved: the fixed-offset marker sector is crystalline, but no ground state was computed.
+  - The Seifnashri–Shirley and Thorngren–Preskill–Fidkowski citations are context, not coverage.
+- **Strongest correct statement (referee):**
+  - One 2-dimensional site cannot carry SU(3).
+  - One-mode-per-site elementary quadratic colour charges cannot give a Gauss generator at every translation-related point.
+  - But one-qubit sites can collectively carry exact, finite-range, one-step-translation-covariant SU(3) through gated many-body representations, with a commuting Gauss law and gauge-invariant local dynamics.
+  - The construction is kinematic, state-controlled, anisotropic in Z³ and sector-crystalline.

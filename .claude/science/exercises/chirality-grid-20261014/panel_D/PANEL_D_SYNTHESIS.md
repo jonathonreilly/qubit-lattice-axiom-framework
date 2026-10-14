@@ -32,6 +32,8 @@ Statements are in `panel_D/*_statement.md`. The dossier is `panel_D/DOSSIER.md`.
 
 **COL-1** (pre-registered and running) tests (ii).
 
+**COL-1 outcome (added 22:18Z; referee CONFIRMED WITH CORRECTIONS):** COLOUR-SPREAD-OK in class M. Exact local SU(3) can be carried by combinations of one-qubit sites, with a translation-covariant law and a commuting Gauss law. The representation is state-controlled (marker cells of 19 qubits on Z¹ and 35 on Z³). Class Q still forces blocks. The panel's "private qubits" claim (OWN) is not proved: the referee found only private tensor factors.
+
 ## Work items launched from the panel
 
 - **OBS-1** (strategy): the X2 observational sheet. Flavour–strain size, Z₄^F exactness (Dirac ν), proton-decay floor.

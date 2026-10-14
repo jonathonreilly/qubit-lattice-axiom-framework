@@ -41,3 +41,15 @@ The live question is broader and is shared by every lane: **how much state lives
 - If colour can live on single qubits under a twisted translation (COLOUR-SPREAD-OK), the cell count stays but the translation price of "blocks" disappears.
 - If blocks are forced (COLOUR-BLOCK-FORCED), D1(a) carries the AX:37/57 price (P183).
 - If only emergent colour survives, D1 hinges on an emergent non-abelian gauge construction that nobody has built in 3+1D.
+
+## COL-1 outcome (added 2026-10-14 22:18Z; referee CONFIRMED WITH CORRECTIONS)
+
+**Reading:** COLOUR-SPREAD-OK, in class M (many-body colour charges on qubits).
+- **Not forced:** colour on a single site. One-qubit sites can carry exact, finite-range SU(3) collectively. The law keeps one-step translation covariance, and there is a commuting Gauss law (constructions on Z¹ and Z³).
+- **What stays:** the per-cell count. Each colour cell needs a 3-state register, and the Standard Model content reappears per cell. Colour charges present in one joint sector are capped at 0.63 per site.
+- **New costs:**
+  - the gauge representation is state-controlled: a marker pattern in the qubits decides which cells are "on";
+  - the Z³ example has no cubic rotations;
+  - QCD universality is open.
+- **Correction to the panel claim:** "each colour point needs private qubits" is not proved. Only private *algebraic tensor factors* are forced (referee counterexample).
+- **For D1:** blocks are not forced for the law. The site-content question becomes "per-cell content, carried by a marker pattern", not "per-site register". Class Q (elementary quadratic charges) still needs blocks.

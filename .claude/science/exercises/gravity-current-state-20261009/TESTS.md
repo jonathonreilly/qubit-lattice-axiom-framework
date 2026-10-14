@@ -9715,3 +9715,21 @@ Shared setting for all three:
     - the hw = 1 levels already differ at one loop, and strain splits them linearly at Planck strength (coarse, suggested).
 
   Referee running.
+
+- **Referee records, 2026-10-14 ~17:35Z.** Codex gpt-5.6-sol at xhigh. The first launches, at 13:22–13:35Z, never ran: the runner script had been swept from /tmp. They were relaunched at 16:15Z.
+  - **TW-1: CONFIRMED WITH CORRECTIONS. HALVE-PARTIAL is met.**
+    - In continuous time, a site-local irreducible multiplet halves iff it is real type. Pseudo-real multiplets need even multiplicity, and a halved pair equals one ordinary field.
+    - A reduced real field is 2 Majorana tastes, i.e. one Dirac's worth, so 3 ν_R need a fourth.
+    - Σ(0,0) max is 6.88e-18. The controls are for an SO(N) stand-in.
+    - Correction: under SU(3)-only or SU(2)-only, content without ν_R also matches for even generation number.
+    - Only ν_R is individually real under G_SM.
+  - **TW-2: CONFIRMED WITH CORRECTIONS. SPLIT-SAFE is met** (the pre-registered Hessian).
+    - B′ = −0.0454159 is confirmed independently.
+    - The first-order clock hazard (×4.7–17.8 minimal; ×0.27–1.03 longer symbol) is real but branch-dependent, not a family-wide theorem. The electron and proton pieces partially cancel, so the result is sensitive to the estimates.
+    - "One vector-like family" is supplied, not forced.
+    - **Correction:** the Hamming reading does NOT force grid-scale splitting. λ is uncalibrated, and an e–μ calibration gives λ = 4.3e-21.
+  - **TW-3: CONFIRMED WITH CORRECTIONS. OPEN is correct.**
+    - The onsite criterion is a multiple of four staggered fields, minimum 16 Weyl.
+    - Θ alone does not forbid twisted taste masses (that needs P_stag or the shift).
+    - The strong-coupling values are asymptotic only.
+    - Spontaneous shift breaking remains an escape from "onsite cannot select the twins".

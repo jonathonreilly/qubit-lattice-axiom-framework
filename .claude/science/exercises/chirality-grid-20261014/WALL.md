@@ -8,9 +8,31 @@ Exercise packet started 2026-10-14 at 13:10Z on Jon's request: "run the exercise
 
 **Status:** revised after step 0 (`step0/PRIOR_ART.md`, 13:16Z). The blind check is pending.
 
-## Step 1: plain version
+## Step 1: plain version (revised after the blind check, 13:25Z)
 
-> We want the grid to produce the matter particles we actually see. In nature those particles are *handed*: the weak force acts only on the "left-handed" versions of electrons and quarks, and left- and right-handed versions carry different charges. Every known way of putting such particles on a grid produces each handed particle together with an unwanted mirror partner of the opposite hand and the same charges. The grid naturally makes a mirror-symmetric world, and ours is not one. The usual fixes either make the mirrors heavy by breaking a protecting symmetry (that broken symmetry caused our recent strain problem), or work only for simpler forces than ours. Getting past the wall means a grid construction whose light particles are exactly the observed handed ones, with no light mirrors, and with the forces acting on them correctly. *Analogy: a mirror that always shows your reflection; we need the room without it.*
+> We want the grid to produce the matter particles we actually see. In nature those particles are *handed*. The weak force acts only on the left-handed versions of electrons and quarks. The right-handed versions also exist, but they carry different charges.
+>
+> A theorem (Nielsen–Ninomiya) says that if the grid's rules are local, the same everywhere, and conserve charge in the usual way, every handed particle comes with an extra partner of the opposite hand and the *same* charges. This partner is not the real right-handed electron; it is an unwanted mirror copy. So the grid naturally makes a mirror-symmetric set of particles, and ours is not one.
+>
+> Known ways out each pay something:
+> - break a protecting symmetry so the mirrors become very heavy;
+> - use rules that reach far across the grid;
+> - add an extra dimension;
+> - give the mirrors mass through interactions without breaking any symmetry. This works in simpler settings; whether it works for our forces is open.
+>
+> Getting past the wall means a grid construction whose particles, below the grid's own energy, are exactly the observed handed ones, with any mirror partners heavier than current experiments rule out. The forces must act on them as observed, including the charge balancing (anomaly cancellation) that keeps the real set consistent. That symmetry may be exact on the grid, or emerge with violations too small to see.
+>
+> *Analogy, with its limit: the grid is like a room that always shows your reflection. The reflection is real and cannot simply be removed; it has to be pushed out of reach or made never to have been there.*
+
+**Blind-check record (13:25Z).** A fresh Opus agent, given only the first plain version, restated it correctly and flagged six issues:
+- the theorem's premises were unnamed;
+- the real right-handed electron could be confused with the mirror;
+- the interaction route was missing, a nudge towards one diagnosis;
+- "strain problem" was jargon;
+- "light" and "correctly" were undefined;
+- the analogy understated the difficulty.
+
+All six are fixed above.
 
 ## Step 1: precise version (exact target contract)
 

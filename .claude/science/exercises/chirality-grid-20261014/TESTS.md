@@ -147,3 +147,17 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **R2: Z4-EXACT** (conditions: no ν^cν^c term; symmetric mirror phase). In fact X2 has an exact U(1)_{B−L}: Dirac neutrinos, zero 0νββ, no n–n̄ oscillation. The named breaking operator is ν^cν^c.
 - **R3: PDK-SAFE-AT-PLANCK.** The floor is 1/a ≳ 2e16 GeV in the worst case. The skeptic's rate formula overstates by about 4800×.
 - **Biggest open hazard:** the flavour-pattern Lorentz-violation anisotropy from corner-selective Yukawas (suggested, not computed), which needs a lattice Yukawa loop.
+
+**COL-1 result (21:57Z; same family; referee launched).**
+- **Class M (qubits, many-body colour charges): COLOUR-SPREAD-OK.**
+  - Explicit constructions on Z¹ and Z³ with exact local SU(3) Gauss laws, one-step translation covariance of the law, finite range, and the colours on different qubits.
+  - Checks: su(3) relations to ~1e-16, commuting generators, [H, G] = 0.
+  - Forced costs:
+    - OWN: each colour point needs a private register of at least 2 qubits, since shared qubits are read-only;
+    - CAP: simultaneous colour density ≤ 0.63 per site, so colour is hard-core;
+    - cells are marker patterns of 19 (Z¹) or 35 (Z³) qubits;
+    - the linked example's vacuum breaks translations to one in 19 or 35;
+    - Z³ ignores cubic rotations;
+    - QCD universality is open.
+- **Class Q (elementary quadratic charges): COLOUR-BLOCK-FORCED.** Proved: N ≥ 3|I| and translations force |I| ≥ N.
+- **Memory:** the cap was breached three times (up to 1.61 GB), and reruns within the cap reproduced every result.

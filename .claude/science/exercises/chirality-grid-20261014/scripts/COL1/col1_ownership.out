@@ -1,0 +1,14 @@
+=== ownership illustrations (class M)
+(1) trial 0: S_x={x,x+1}; commutant inside ops on {x+1,x+2}: dim 4, simple blocks [2], hosts su(3): False
+(1) trial 1: S_x={x,x+1}; commutant inside ops on {x+1,x+2}: dim 4, simple blocks [2], hosts su(3): False
+(1) trial 2: S_x={x,x+1}; commutant inside ops on {x+1,x+2}: dim 4, simple blocks [2], hosts su(3): False
+(1') singlet |11>, triplet {|00>,|01>,|10>}: commutant dim 4, blocks [2], hosts su(3): False
+(2) trial 0: S_x={x..x+2} (3+5x1 random); commutant inside ops on {x+1..x+3}: dim 4, blocks [2], hosts su(3): False
+(2) trial 1: S_x={x..x+2} (3+5x1 random); commutant inside ops on {x+1..x+3}: dim 4, blocks [2], hosts su(3): False
+(2) trial 2: S_x={x..x+2} (3+5x1 random); commutant inside ops on {x+1..x+3}: dim 4, blocks [2], hosts su(3): False
+(2') trial 0: 3+3bar+1+1 random on {x..x+2}: commutant dim 4, blocks [2], hosts su(3): False
+(2') trial 1: 3+3bar+1+1 random on {x..x+2}: commutant dim 4, blocks [2], hosts su(3): False
+Reading: generic overlapping placements leave no room; any successful overlap must split the shared
+qubits into sectors owned by one side at a time (Bravyi-Vyalyi form), which the token construction does.
+        2.09 real         1.89 user         0.09 sys
+           172589056  maximum resident set size

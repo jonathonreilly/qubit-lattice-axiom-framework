@@ -13,6 +13,8 @@ Jon's request: "run the exercise on chirality and the grid … what new approach
 
 ---
 
+**Review-loop corrections (2026-10-14 ~21:10Z).** PR #9562 was closed at 19:24Z as a research transfer into J tasks; the branch is retained. The review found that this summary exceeded its referee qualifications. Sections 2 and 5 were rewritten to the referees' scopes: Lemma R's class, F3/F5 scope, K2c's measure and error-estimate scope, and the ν_R condition. The axiom paraphrase in WALL.md that supplied probabilities was corrected. K2c's saved pools were added.
+
 ## 1. The wall, in plain words
 
 Matter in nature is handed: the weak force acts only on left-handed electrons and quarks, and the right-handed versions carry different charges. A theorem (Nielsen–Ninomiya) says that if a grid's rules are local, the same everywhere, free (no interactions), and conserve charge in the usual way, then every handed particle comes with a mirror partner of the opposite hand and the same charges. So the grid makes a mirror-symmetric set of particles, and ours is not one.
@@ -27,11 +29,11 @@ Getting past the wall means a grid construction whose particles, below the grid'
    - **(I) Symmetric mass generation.** Can interactions give an anomaly-free set of mirror particles a mass without breaking the protecting symmetry, and without leaving a massless bound state behind? This is Golterman–Shamir's open "propagator zeros" dispute; X1 shows the same question as "lattice completeness". Symmetric gapping, discrete time, extra coordinates, dissipation and the framework's own three-generation package all lead here.
    - **(II) Lüscher's non-abelian measure locality, plus reflection positivity with forces present.** The Euclidean-time "overlap" route reduces to this.
 3. **Hard prices on the dead ends, several checked:**
-   - **Exact modified chirality from any finite rule is impossible.** Any rule built from finitely many neighbours and finitely many hidden helper fields has zero net chirality, regardless of site size (Lemma R, proved; **confirmed by the codex referee**). The three-way price list that came with it is not exhaustive (referee).
-   - **A one-handed ticking rule hides its mirror at half a tick.** The mirror is upside-down with the same charges, so the vacuum radiates (F3-A, proved and checked; strengthened in the kill round).
-   - **Dissipation and record sinks move the mirror's topological twist into the vacuum.** Every place it can sit fails observation (F5, proved and checked).
-   - **No-interaction extra-coordinate slabs fail on the force fields.** They need a slab at least 10⁴⁶ layers deep, or couplings that span the world (F4-B).
-   - **Mirrors that get mass from electroweak breaking are excluded by data:** S at 4–6σ, and Higgs production at least 9× too large (F6, checked).
+   - **Within a stated class, exact modified chirality cannot be net-chiral** (Lemma R, codex-confirmed core). The class: free, translation-invariant, γ5-Hermitian, scalar-plus-vector Ginsparg–Wilson symbols with canonical R, rational in e^{ik} with a common denominator nonzero on the torus (algebraically, finitely many neighbours and finitely many auxiliaries with an invertible auxiliary block). For these, the local chiral indices of isolated massless zeros sum to zero, whatever the fibre size. **Not established:** the general-R / gauge-background index formula, and that the three listed escape forms (non-rational kernel, infinite auxiliaries, auxiliary vacuum) are exhaustive.
+   - **A one-handed free ticking rule hides its mirror at half a tick, inverted, with the same charges.** Once gauge-coupled, no conserved local energy exists, so the vacuum is not stationary (F3-A, two-band free proofs and checks; strengthened in the kill round). Interacting ticks are not covered.
+   - **For quasi-free (Gaussian) states, dissipation and record sinks move the mirror's Berry flux into the state.** Every sink tested fails observation (F5, proved for Gaussian states and checked). Non-Gaussian vacua are not covered.
+   - **No-interaction extra-coordinate slabs fail on the gauge side.** They need a slab of at least about 10⁴⁶ layers, or world-range couplings (F4-B; proof skeleton plus checked arithmetic).
+   - **Mirrors whose mass comes from electroweak breaking are excluded in the scanned models:** S at 4–6σ, gg→h at least 9× (F6, checked; model-scoped).
 4. **Constructive gains:**
    - **A framework-native three-generation package** (X2, checked).
      - The three generations are the walker's three left-handed cube corners; the other corners are mirrors made heavy by a cubic-invariant interaction.
@@ -41,10 +43,10 @@ Getting past the wall means a grid construction whose particles, below the grid'
    - **A Euclidean-time package (set B)** that ties chirality to the gravity campaign's best gravity bill.
      - Its free real-time spectrum is clean: one light handed particle per hand, mirrors heavy and harmless. This was independently rebuilt by K2 and confirmed by the referee.
      - Its strain-protection fixes two gravity-campaign problems (no twins, no strain mass).
-     - Its open issue is reflection positivity once forces are included. A counterexample was first found for one gauge measure (Fejér-weighted, open-time lattices; referee-confirmed). **K2c then found the same failure for the hard-cutoff measure the package actually uses**, on open-time lattices *and the torus*, once a masking effect is removed (**codex-confirmed** for the finite 2D U(1) proxy; not shown for 4D, non-abelian or chiral measures). If that holds, reflection positivity with forces fails for the overlap in this 2D proxy, and set B's real-time version needs a price (Π-W, or 5D fermions without Pauli–Villars fields).
+     - Its open issue is reflection positivity once forces are included. A counterexample was first found for one gauge measure (Fejér-weighted, open-time lattices; referee-confirmed). **K2c then found quadrature-converged negative eigenvalues for the hard-cutoff measure the package actually uses**, on open-time lattices and on tori Lt = 12, 16, once a masking effect is removed. Codex confirmed this for the finite 2D U(1) vector-like proxy, with Lx = 2, M = 1, m = 0.05, β_g = 0. The error is an a-posteriori quadrature estimate, not a rigorous bound; the saved pools are archived under `scripts/K2c/`. It is **not** shown for infinite volume, 4D, non-abelian groups or the chiral measure. If that holds, reflection positivity with forces fails for the overlap in this 2D proxy, and set B's real-time version needs a price (Π-W, or 5D fermions without Pauli–Villars fields).
 5. **Framework facts settled along the way:**
    - one qubit per site is not the obstacle for slab or Euclidean constructions (X1, X3);
-   - the right-handed neutrino is forced in every count;
+   - ν_R is needed for the Z₁₆ gate when Z₄^X is kept exact (F6-tC, X1), and on the staggered carrier for gappings that keep the corner nodes (K1 scope correction). It is **not** forced unconditionally.
    - **cross-lane theorem:** non-trivial quark mixing (CKM) forces a preferred strain direction in the flavour sector (X2-L8, proved; checked over 1120 subgroups). Its size goes back to the gravity/strain lane.
 
 **Did the exercise crack the 40-year wall? No.** It converted the repo's diffuse wall into the field's two sharpest open questions, attached checked prices to every dead end, and produced two concrete framework-native candidates, each with a known decisive test.
@@ -60,7 +62,7 @@ Getting past the wall means a grid construction whose particles, below the grid'
 ## 4. What not to do next
 
 - **No more one-body or mass-term blocks aimed at net handedness.** The index lemma kills them.
-- **Do not enlarge the site algebra to M₄(C) "for γ5".** Lemma R holds for any fibre size.
+- **Do not enlarge the site algebra to M₄(C) "for γ5".** Within Lemma R's class, fibre size does not change the conclusion.
 - **Do not pursue one-handed ticks, record or dissipative sinks, or heavy mirrors from electroweak breaking.** Each is priced out.
 - **Do not treat 0+1D or 1+1D symmetric-gapping toys as 4D evidence.**
 - **Do not use plain staggered twins as generations with the minimal splitting term.** The first-order clock hazard is ×4.7–17.8 on that branch (TW-2, refereed: branch-dependent).
@@ -68,7 +70,7 @@ Getting past the wall means a grid construction whose particles, below the grid'
 ## 5. The exact price
 
 There is no single price for the whole wall. The family-level prices:
-- **(a) Lemma R (referee-confirmed).** Exact Ginsparg–Wilson chirality needs a kernel outside the rational, finitely-generated class. That touches Admissibility's "one fixed nearest-neighbor rule" (AX:57), or the site's finiteness (AX:47).
+- **(a) Lemma R (codex-confirmed core).** Within its stated class (rational, pole-free, canonical-R, scalar-plus-vector GW symbols), net chirality is impossible. Exact GW chirality with nonzero index therefore needs to leave that class. The usual forms are a non-rational quasi-local kernel (touching AX:57's "one fixed nearest-neighbor rule") or infinitely many auxiliaries per site (touching AX:47). The referee notes that this list is not proved exhaustive.
 - **(b) Interacting routes** need **16 to about 1000 fermion modes per site**. That is the parked site-size decision #4, whose wake condition has literally fired (K3).
 - **(c) The set-B route** needs Euclidean hypercubic time (Z⁴): the gravity campaign's B1–B4 prices.
 

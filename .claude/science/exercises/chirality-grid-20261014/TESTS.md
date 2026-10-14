@@ -163,7 +163,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Memory:** the cap was breached three times (up to 1.61 GB), and reruns within the cap reproduced every result.
 
 **SIGN-1 result (22:06Z; same family; referee pending).**
-- **SIGN-FREE** for the ungauged X2 with global Spin(10) wherever λ1 ≤ 0 and |λ2|/|λ1| ≳ 0.15–0.18. This includes the pure BB + h.c. symmetric-gapping term.
+- **SIGN-FREE** for the ungauged X2 with global Spin(10) wherever λ1 ≤ 0 and |λ2|/|λ1| ≳ 0.15–0.18. This includes the pure BB + h.c. symmetric-gapping term. [Referee: rigorous at λ1 = 0; certified for λ1 ≤ 0 with |λ2/λ1| ≥ tan 10° ≈ 0.176, once the remainder is corrected. See below.]
 - **Mechanism:** particle–hole swap one 8 of the Spin(8)×Spin(2) split. This gives a Kramers pair T1, T2 (both squaring to −1, anticommuting) with U(1)_c, i.e. Wu–Zhang / Li–Jiang–Yao Kramers class.
 - **Evidence:** an explicit decomposition (an exact Fierz identity at λ1 = 0) and positive cluster weights (phase ≤ 4e-13; ≤ 4e-7 at W = 8). The natural 10-channel decomposition has a phase problem.
 - **OPEN:** λ1 > 0.
@@ -209,7 +209,7 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
 - **Power reference:** the vector-like K2c values are reproduced to every printed digit. The chiral violation is 4.4–4.7× larger.
 - **Mechanism:** the phase plays no role on these witnesses. The kernel equals the modulus kernel, and |ρ_χ| = |det D(1)|²|det D(2)|^{1/2}. So the failure is the overlap's own non-positivity, carried over to the chiral theory.
 - **Not tested:** anomaly cancellation (at Lx = 2 even an anomalous single Weyl fermion is gauge invariant), the torus, Lx ≥ 4, 4D, non-abelian groups, 3-4-5-0.
-- **Consequence:** the chiral measure is no escape from K2c's failure, so the X3 contingency stays triggered.
+- **Consequence:** the chiral measure is no escape from K2c's failure, so the X3 contingency stays triggered. [Referee: NOT CONFIRMED. The measure's legitimacy (locality, global integrability) is not established, so the strict reading is OPEN; what is shown is the RP failure of the fractional-power modulus. See the referee entry below.]
 - **Deviations:** registered gate G4 failed and was replaced by Richardson extrapolation before any kernel was computed; a sign bug was fixed (either sign gives FAIL).
 
 **COL-1 referee (codex gpt-5.6-sol, xhigh; returned 22:12Z; recorded 22:18Z): CONFIRMED WITH CORRECTIONS.** COLOUR-SPREAD-OK is met as fixed.
@@ -244,3 +244,35 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - a continuity lemma (worker's; unrefereed) gives non-PSD at finite depth for all β above some β₀, but β₀ is not computed.
 - **For set B:** exact OS reconstruction fails at every depth in this proxy. An approximate transfer matrix with e^{−κt₀} errors is plausible but not shown.
 - **Additions after registration:** the β = ∞ comparator and the continuity lemma.
+
+**SIGN-1 referee (codex gpt-5.6-sol, xhigh; returned 22:22Z; recorded 22:50Z): CONFIRMED WITH CORRECTIONS.** SIGN-FREE is met, narrowly.
+- **Confirmed:**
+  - T1² = T2² = −1 and {T1, T2} = 0 exactly.
+  - All 1,024 HS channels have the required parities and commute with U(1)_c. The walker and any real flavour-blind filter keep the symmetries, so every HS slice is Kramers-class (Wu–Zhang; Li–Jiang–Yao).
+  - The quartic identity, checked exhaustively over all 635,376 components: residual 4e-16 at 230° and 3e-16 for the 270° Fierz identity.
+  - Cluster weights, reproduced with the corrected Hamiltonian: maximum phase 1e-14 at W = 0.5 and 2e-12 at W = 8, stabilised.
+- **Corrections:**
+  - **The cluster code's filtered remainder is wrong for λ1 ≠ 0.** With F Fᵀ = ρI, the remainder must be ρFᵀK_RF, and the scalar part takes a factor ρ² (ρ = 3/8 for the 4-site filter). The fix keeps Kramers symmetry, and R = 0 at λ1 = 0.
+  - The full trace is det(1 + M_d)/√det M_d. The denominator is positive.
+  - The four-form image has rank 12, not 11, so the worker's minimal-norm correction did not by itself establish an exact identity. A rank-12 correction stays strictly inside the cone at 230° (margin 0.318).
+  - At 270°, the worker's minimal correction has a negative margin (−4.3e-7). The exact Fierz solution (−34, +2, −2, +2) repairs it, with margin 2.
+  - REPORT:90-97 is incomplete: it omits four density blocks and does not specify R.
+  - **Certified region:** an exhaustive 190° check (margin 0.0156) plus convexity gives λ1 ≤ 0 and |λ2/λ1| ≥ tan 10° = 0.1763. The "0.15–0.18" is a bracket, not a sharp threshold.
+  - The P1 classification of admissible MTRs is underproved: representatives were built, not classified.
+  - The gauged obstruction (no G_SM-invariant real 2-plane in the 10 = 6 + 4) kills this fixed-U(1)_c construction only, not every sign-free construction.
+- **Strongest correct statement:** the ungauged X2 matter Hamiltonian with a real flavour-blind filter is rigorously Kramers-class sign-free at λ1 = 0, λ2 ≠ 0. With the remainder corrected, it is numerically certified with strict margin throughout λ1 ≤ 0, |λ2/λ1| ≥ 0.1763. λ1 > 0 and the dynamically gauged theory remain open.
+
+**NT-1 referee (codex gpt-5.6-sol, xhigh; returned 22:26Z; recorded 22:50Z): NOT CONFIRMED. The strict reading is OPEN.**
+- **Confirmed:**
+  - The Weyl projectors, chirality conventions and determinant factorisation.
+  - **The negative eigenvalues on all four pools:** independent full-kernel polar-overlap rebuilds agree with the saved kernels to 1.6–3.3e-14, stable from n = 16 to 32. The witnesses are exactly W-matched and admit gauge-invariant bump realisations.
+  - The reflection lemma (for a separating class of witnesses) and the F3 sign fix. No global sign or phase can make the kernels PSD.
+  - |ρ_11112| = C|det D(1)|²|det D(2)|^{1/2}.
+- **Verdict-controlling defect: the measure is not shown to be a legitimate Lüscher measure.**
+  - Gauge invariance holds numerically at the transport resolution, not exactly.
+  - The cumulative current is not shown to meet the locality, symmetry and global-integrability conditions of Lüscher's reconstruction theorem. That theorem is for periodic finite volume and does not directly cover Lx = 2 with open time.
+  - The anomalous L1 model is gauge-restored just as well, which exposes the gap.
+  - So the phase is "a numerically gauge-restored chart prescription", and the CHI-RP-FAIL setup gate (a gauge-invariant chiral measure) is not met.
+- **Phase constancy** also holds for the anomalous L1 and for isolated L2/R2. It is a property of the restricted Lx = 2, open-time, W-matched sector, not of chiral measures.
+- **What is new beyond K2c:** RP failure of the fractional-power overlap modulus |det D(1)|²|det D(2)|^{1/2}. No chirality- or anomaly-specific mechanism is shown.
+- **Consequence:** route 1's "chiral measure escapes K2c" question is **not closed**. It needs Lx ≥ 4 and a measure that meets Lüscher's conditions (or Kadoh–Kikukawa's).

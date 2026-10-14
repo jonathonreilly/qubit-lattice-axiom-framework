@@ -2,6 +2,8 @@
 
 **Reading: CHI-RP-FAIL.**
 
+> **Referee (codex gpt-5.6-sol, 22:26Z): NOT CONFIRMED; the strict reading is OPEN.** The negative eigenvalues are independently reproduced. But the measure is not shown to be a legitimate local Lüscher measure: gauge invariance is numerical, the current's locality and global integrability are unproved, and the anomalous L1 model is restored just as well. What is established is the RP failure of |det D(1)|²|det D(2)|^{1/2}. See `REFEREE_VERDICT.md` and `referee/REFEREE.md`.
+
 **Provenance.**
 - One Opus 5.5 agent (xhigh), working 20:44–22:15Z. It is the same model family as K2, K2c, X3 and the supervisor, so nothing here is independent. Not refereed.
 - The harness blocked the worker from writing this file, so the supervisor saved it from the worker's final message, lightly condensed. Every number and file reference is the worker's.

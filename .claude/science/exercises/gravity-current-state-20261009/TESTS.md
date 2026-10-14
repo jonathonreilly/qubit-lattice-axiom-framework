@@ -9681,3 +9681,21 @@ Shared setting for all three:
     - the generation lane's λ > 0 hw=1 branch breaks Θ and P_stag.
 
   Referee running.
+
+- **TW-1 (twin = antiparticle halving): worker reading HALVE-PARTIAL.**
+  - **The twin is not the antiparticle for charged fields.** The twin has identical charges, and each Dirac twin already contains its antiparticle.
+  - **In continuous time, gauge-invariant halving requires a REAL representation** (Schur, site-local gauge transformations; proved and checked).
+    - Pseudo-real SU(2) doublets halve only in pairs, which equals one ordinary field.
+    - So the pre-registration's "real or pseudo-real" is wrong for continuous time. 4D reduced staggered relies on the discrete-time even/odd split.
+  - **Singlets (ν_R) halve to exactly 1 Dirac with the strain zero kept.**
+    - Θ_M and P_stag survive: Σ(0,0) ≤ 6e-18.
+    - Controls breaking either symmetry restore a mass, so each symmetry is needed separately.
+    - No cubic-invariant lattice mass exists for a halved field.
+  - **SM grouping:** none without leftover twins.
+    - The count needs mirrors and an even family count (4+4), with no count reduction.
+    - U(1)_Y is the blocking factor. SU(3)-alone and SU(2)-alone fit one generation with ν_R.
+  - **Prices:**
+    - P-TW1a: mirror families (count once with P-NF1a);
+    - P-TW1b: halved fields for real-representation content only.
+
+  Referee running.

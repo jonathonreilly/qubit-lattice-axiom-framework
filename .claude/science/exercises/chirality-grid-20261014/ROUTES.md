@@ -32,3 +32,28 @@ Six Opus 5.5 agents ran at xhigh, all from the same family. Each had a neutral, 
    - T22 kill :19 understated the π copy (F3-A).
    - R2-4 :204 is out of date on free overlap RP (F2-H).
 4. **Framework-native fact.** The walker's hw1 triplet is single-handed under T_d. With iεF the zero modes are exactly 3L at hw1 and 3R at hw2 (F6 tD, checked). The mod-16 gate passes only at 16 per generation (F1 C1).
+
+## Round 2: combinations (14:07–14:58Z)
+
+Three Opus 5.5 agents at xhigh, same family. Each crossed cores from different families. Reports are in `combos/X*/COMBO_REPORT.md`; nothing is refereed.
+
+| Combination | Cores | Key result | Label | Strength vs target | Status |
+|---|---|---|---|---|---|
+| **X1 disentangled inflow** | F1-R3 + F4 slab + TPF disentangler + F3-B κ | The terminal is S\*: the slab bulk ground state can be symmetrically disentangled to a product. S\* = cobordism triviality (known: 16 ≡ 0) + **lattice completeness (open conjecture)**. In the slab, every obstruction on how the symmetry acts on the lattice is automatically zero (Fidkowski–Xu, the Shirley–Zhang–Ji–Levin index, κ, Tu–Long–Else), so qubit-sized sites are not the obstacle. S\* and the GS conjecture cannot both hold. **Corrects F1-R3's grading from "stronger" to target-equivalent** (modulo the lattice bulk–boundary correspondence E3). | proved skeletons; checked (DI-Z8 1D instrument; SM-16 arithmetic) | target-equivalent | blocked-equivalent. **Reopen:** an explicit disentangler for ψ₀; lattice completeness in ≥ 3+1D; an invariant beyond cobordism |
+| **X2 native three-generation package** | F6 (T_d, walker) + F1 (mod-16, filter) + generation lane + TW-2/TW-3 + F4-L2 | Explicit cubic-invariant filtered Spin(10) quartic on the walker: 3 generations at hw1, mirrors at hw0/hw2/hw3. **Light corners exactly decoupled:** [H, ψ(hw1)] = 0 at every coupling (checked). **Corrections:** F1's selection rule is false for 3-light splits; F6's 3L+3R shortcut is tuned. Eichten–Preskill leakage is present, cannot be forbidden, and is irrelevant (dim-6). **Flavour theorem (proved, checked over 1120 subgroups):** nontrivial CKM forces a residual that leaves a strain direction invariant, so a first-order flavour-strain channel is unavoidable (size open; goes to C5). | proved; checked (T1–T5) | stronger, so blocked-equivalent (= GS cond. 3 fails + no SSB) | blocked-equivalent; **it is the Eichten–Preskill design; the Golterman–Petcher–Rivas intermediate SSB is the open kill**; the mixed Z₂³ anomaly classes are the cheapest open kill |
+| **X3 Euclidean set-B package** | F2-H/F2-R overlap + F3-A + gravity set B (R19-28/33) + strain | **Free test PASS:** the OS-reconstructed overlap transfer matrix has one light Weyl per chirality; its doublers are a positive-norm continuum at E ≥ ln 2 (Planckian), with nothing inverted, so **F3-A does not apply to the Euclidean route** (its scope is restricted to finite-band unitary ticks). **F2-R prices (a) non-rational kernel ≡ (b) infinite-dimensional site, as one price** after reconstruction. Overlap's exact GW symmetry removes NF-1's taste price and R19-34's strain-mass hazard. **Gauged RP:** gauge-fixed positivity (Osterwalder–Seiler route) fails for the overlap; gauge-averaged tests are inconclusive. New leaf L3grav (the overlap stress is non-local in time). | proved (free); checked (T-X3 PASS; T-X3b–f) | stronger | active through finite tests of L2α and L3g; the terminal L2α (non-abelian measure locality) is not advanced |
+
+### Round-2 synthesis (supervisor)
+
+1. **No combination supplies a new mechanism toward the target.**
+   - Every chirality route in the round ends at one of two frontier statements, and both are open across the field:
+     - **(I) the symmetric-gapping / lattice-completeness question:** GS condition (3), equivalently S\* (F1, F3, F4, F5, X1, X2);
+     - **(II) the locality of Lüscher's non-abelian measure plus gauged RP** (F2-H, X3).
+   - Neither is specific to this framework.
+2. **Genuine gains of the round:**
+   - **F3-A** is now scoped to real-time finite-band ticks. The Euclidean route escapes it (X3, checked).
+   - **F2-R's two prices are one price.**
+   - **Qubit-site obstructions do not bind slab or Euclidean constructions** (X1, X3).
+   - **The framework's own walker gives a clean, cubic-invariant three-generation chiral package** (X2), whose failure mode is precisely known: GPR intermediate SSB, or a GS composite.
+   - **New cross-lane theorem:** nontrivial CKM forces a first-order flavour-strain channel (X2-L8).
+3. **Gravity × chirality.** Set B (Euclidean Z⁴) now carries the best gravity bill (R19-28, refereed) **and** the only chirality route whose free real-time spectrum is clean (X3). Its shared obligations are gauged RP plus the RP of matter + spatial-TT gravity with a time-non-local overlap stress (L3grav).

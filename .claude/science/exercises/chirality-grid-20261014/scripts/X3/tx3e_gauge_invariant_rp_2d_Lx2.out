@@ -1,0 +1,2 @@
+s=0.3 set 0: Wilson min/max(n=128) -2.432e-16 (dZ 5.6e-16) | overlap min/max n=64 -2.604e-04, n=128 -1.522e-04 (dZ 6.2e-03, herm 1.0e-15, frac min|H_W|<0.05: 0.655)
+[killed by agent at 14:45Z after 1 set: resident memory reached 280 MB (> 0.25 GB limit); 65% of grid points non-admissible (min|H_W|<0.05)]

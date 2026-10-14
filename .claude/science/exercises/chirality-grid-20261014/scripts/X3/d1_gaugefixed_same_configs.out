@@ -1,0 +1,4 @@
+s=0.15 set 0: gauge-FIXED (U_c=1) Z min/max: Wilson +4.724e-05 (herm 3.5e-14) | overlap -1.028e-04 (herm 1.4e-14)
+s=0.15 set 1: gauge-FIXED (U_c=1) Z min/max: Wilson +6.140e-05 (herm 4.2e-14) | overlap -1.418e-03 (herm 1.2e-14)
+s=0.15 set 2: gauge-FIXED (U_c=1) Z min/max: Wilson +6.059e-05 (herm 2.1e-14) | overlap -1.170e-03 (herm 2.8e-14)
+done

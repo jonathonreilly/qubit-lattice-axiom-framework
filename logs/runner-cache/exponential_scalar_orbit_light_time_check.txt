@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_orbit_light_time_check.py
+runner_sha256: e7f61487097e3dea302c7f3a382d0b6399120195040f1966fa65942a4e8bbde3
+input_fingerprint_sha256: bb8d9ac6ddd5cc6f8e7f91503a81b8b8ef001b81bdec476104cfe3f8e0d48174
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+benchmark_forward_normalization PASS=1 FAIL=0
+extended_source PASS=135 FAIL=0
+finite_endpoint_light_integral PASS=3 FAIL=0
+finite_error_enclosure PASS=24 FAIL=0
+finite_error_positive_mass_witness PASS=1 FAIL=0
+finite_proper_count PASS=18 FAIL=0
+green_refinement PASS=1 FAIL=0
+missing_force_derivative_mutant_rejected PASS=1 FAIL=0
+moving_scalar_clock_witness PASS=1 FAIL=0
+multimode_fourth_radius_discriminator PASS=1 FAIL=0
+negative_mass_rejected PASS=1 FAIL=0
+optical_linear_coefficient PASS=9 FAIL=0
+ratio_derivative_identity PASS=4 FAIL=0
+retarded_phase_jacobian PASS=9 FAIL=0
+static_endpoint_clock PASS=1 FAIL=0
+three_radius_inverse PASS=20 FAIL=0
+two_radius_light_inverse PASS=20 FAIL=0
+unresolved_zero_mode PASS=1 FAIL=0
+benchmark [{"range_over_calibration_radius": 0.05, "effective_amplitude_upper": 288.79241669675054}, {"range_over_calibration_radius": 0.1, "effective_amplitude_upper": 0.025030387646671395}, {"range_over_calibration_radius": 0.2, "effective_amplitude_upper": 0.0003091979464380318}, {"range_over_calibration_radius": 1, "effective_amplitude_upper": 1.6989473796291486e-05}, {"range_over_calibration_radius": 10, "effective_amplitude_upper": 1.2558917419145552e-05}, {"range_over_calibration_radius": 100, "effective_amplitude_upper": 1.2500777139468797e-05}]
+TOTAL: PASS=251 FAIL=0
+per_element: checked synthetic radial and finite-count numerical evaluations under the declared operator domain.
+per_site: checked and not executed — no microscopic lattice site or site dynamics is modeled by this runner.
+per_mode: checked one stable scalar mode and a supplied two-mode numerical control; no complete spectrum claim.
+per_block: checked finite spherical sources, exterior optical segments, and ideal coherent links in synthetic examples.
+lattice_wide: checked and not executed — no lattice-wide action selection, state derivation, or empirical acceptance.
+
+----- stderr -----
+

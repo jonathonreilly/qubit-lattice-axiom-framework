@@ -1,0 +1,9 @@
+# Observations backward: 24-hour campaign
+
+Personally reconstruct constraints on the revised scalar candidate and broader unification work from measured physics. Derive or eliminate remaining assumptions; new explicit candidates are allowed, never silently adopted. The deadline is 2026-10-15T21:48:44Z, with no new discovery after 21:33:44Z. Earlier campaigns remain stopped.
+
+First exact target: under the inherited weak-field action and a stated finite source/environment, derive the relation between an orbit-calibrated gravitational mass and a radio light-time coefficient without assuming that a local metric ratio is an experimentally fitted PPN gamma. Quantify finite range and source-profile effects. Success is a proved forward map and independently checked controls, with precise unclosed observational nuisance terms. A published gamma summary is exposed development data, not raw Doppler data or a new empirical holdout.
+
+The mathematical implication, physical domain and data availability are distinct obligations. A chosen vacuum, potential, coupling or likelihood is not a derived selector.
+
+Target contract: for every isolated stationary complete spherical weak source of radius R, frozen ambient beta,Q,stable inverse length mu>=0 and pointlike unscreened weak test bodies, derive the exterior orbit/light map. At three distinct exterior radii, prove the exact identifiability domain of mu from radial force coefficients when the effective Yukawa amplitude is positive. Do not weaken force measurement into potential measurement, assume source density shape, or call a synthetic curve empirical. Required edges: zero amplitude, zero range parameter, large mu, signed stress charge, coincident radii, finite readout errors and nonphysical recovered mass. Completion witness: analytic proof plus direct quadrature and numerical inverse checks; neither observed theory selection nor a complete Cassini likelihood is promised.

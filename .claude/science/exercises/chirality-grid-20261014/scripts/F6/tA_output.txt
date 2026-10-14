@@ -1,0 +1,57 @@
+A1  hermiticity |H-H^+| = 0.0
+A1  |[H, T_d]| = 0.0
+A1  |T_d eps T_d^-1 + eps| = 0.0
+A1  |{H, eps}| = 0.0 (so (H+m eps)^2 = H^2 + m^2)
+A1  min |E(H + m eps)| = 0.3699999999999981  m = 0.37
+A1  corner (0, 0, 0) hw=0  T_d eigenvalue=+1  monopole charge=-1.000000  product=-1
+A1  corner (0, 0, 1) hw=1  T_d eigenvalue=-1  monopole charge=+1.000000  product=-1
+A1  corner (0, 1, 0) hw=1  T_d eigenvalue=-1  monopole charge=+1.000000  product=-1
+A1  corner (0, 1, 1) hw=2  T_d eigenvalue=+1  monopole charge=-1.000000  product=-1
+A1  corner (1, 0, 0) hw=1  T_d eigenvalue=-1  monopole charge=+1.000000  product=-1
+A1  corner (1, 0, 1) hw=2  T_d eigenvalue=+1  monopole charge=-1.000000  product=-1
+A1  corner (1, 1, 0) hw=2  T_d eigenvalue=+1  monopole charge=-1.000000  product=-1
+A1  corner (1, 1, 1) hw=3  T_d eigenvalue=-1  monopole charge=+1.000000  product=-1
+A1  sign relation holds at all corners: True {np.float64(-1.0)}
+A1  net monopole charge over corners: 0.0
+A2  N=2 sample  0: +nodes=  6 -nodes=  6 net=+0  (integrality resid 2.2e-16, min gap 2.91e-01)
+A2  N=2 sample  1: +nodes=  9 -nodes=  9 net=+0  (integrality resid 7.1e-17, min gap 4.45e-01)
+A2  N=2 sample  2: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 1.63e-01)
+A2  N=2 sample  3: +nodes=  8 -nodes=  8 net=+0  (integrality resid 2.2e-16, min gap 4.11e-01)
+A2  N=2 sample  4: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 2.75e-01)
+A2  N=2 sample  5: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 5.93e-01)
+A2  N=2 sample  6: +nodes=  5 -nodes=  5 net=+0  (integrality resid 8.0e-17, min gap 2.70e-01)
+A2  N=2 sample  7: +nodes=  8 -nodes=  8 net=+0  (integrality resid 2.2e-16, min gap 3.69e-01)
+A2  N=2 sample  8: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 5.30e-01)
+A2  N=2 sample  9: +nodes=  8 -nodes=  8 net=+0  (integrality resid 2.2e-16, min gap 1.97e-01)
+A2  N=2 sample 10: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 2.92e-01)
+A2  N=2 sample 11: +nodes=  8 -nodes=  8 net=+0  (integrality resid 2.2e-16, min gap 2.53e-01)
+A2  N=2 sample 12: +nodes=  6 -nodes=  6 net=+0  (integrality resid 2.2e-16, min gap 6.09e-01)
+A2  N=2 sample 13: +nodes=  6 -nodes=  6 net=+0  (integrality resid 7.1e-17, min gap 5.08e-01)
+A2  N=2 sample 14: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 5.28e-01)
+A2  N=2 sample 15: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 3.81e-01)
+A2  N=2 sample 16: +nodes=  7 -nodes=  7 net=+0  (integrality resid 2.2e-16, min gap 3.89e-01)
+A2  N=2 sample 17: +nodes=  8 -nodes=  8 net=+0  (integrality resid 2.2e-16, min gap 3.24e-01)
+A2  N=2 sample 18: +nodes=  6 -nodes=  6 net=+0  (integrality resid 2.2e-16, min gap 4.22e-01)
+A2  N=2 sample 19: +nodes=  6 -nodes=  6 net=+0  (integrality resid 2.2e-16, min gap 3.14e-01)
+A2  N=2: all nets zero = True; samples with both hands = 20/20
+A2  N=4 sample  0: +nodes= 21 -nodes= 21 net=+0  (integrality resid 2.2e-16, min gap 2.18e-02)
+A2  N=4 sample  1: +nodes= 20 -nodes= 20 net=+0  (integrality resid 2.2e-16, min gap 2.86e-01)
+A2  N=4 sample  2: +nodes= 19 -nodes= 19 net=+0  (integrality resid 2.2e-16, min gap 2.16e-01)
+A2  N=4 sample  3: +nodes= 14 -nodes= 14 net=+0  (integrality resid 2.2e-16, min gap 3.19e-01)
+A2  N=4 sample  4: +nodes= 20 -nodes= 20 net=+0  (integrality resid 2.2e-16, min gap 4.01e-01)
+A2  N=4 sample  5: +nodes= 21 -nodes= 21 net=+0  (integrality resid 2.2e-16, min gap 1.92e-01)
+A2  N=4 sample  6: +nodes= 17 -nodes= 17 net=+0  (integrality resid 2.2e-16, min gap 2.50e-01)
+A2  N=4 sample  7: +nodes= 24 -nodes= 24 net=+0  (integrality resid 2.2e-16, min gap 1.63e-01)
+A2  N=4 sample  8: +nodes= 20 -nodes= 20 net=+0  (integrality resid 2.2e-16, min gap 3.53e-01)
+A2  N=4 sample  9: +nodes= 23 -nodes= 23 net=+0  (integrality resid 2.2e-16, min gap 8.26e-02)
+A2  N=4 sample 10: +nodes= 23 -nodes= 23 net=+0  (integrality resid 2.2e-16, min gap 2.21e-01)
+A2  N=4 sample 11: +nodes= 23 -nodes= 23 net=+0  (integrality resid 2.2e-16, min gap 2.01e-01)
+A2  N=4 sample 12: +nodes= 22 -nodes= 22 net=+0  (integrality resid 2.2e-16, min gap 2.11e-01)
+A2  N=4 sample 13: +nodes= 22 -nodes= 22 net=+0  (integrality resid 2.2e-16, min gap 4.54e-01)
+A2  N=4 sample 14: +nodes= 17 -nodes= 17 net=+0  (integrality resid 2.2e-16, min gap 3.10e-01)
+A2  N=4 sample 15: +nodes= 16 -nodes= 16 net=+0  (integrality resid 2.2e-16, min gap 2.58e-01)
+A2  N=4 sample 16: +nodes= 21 -nodes= 21 net=+0  (integrality resid 2.2e-16, min gap 4.03e-01)
+A2  N=4 sample 17: +nodes= 18 -nodes= 18 net=+0  (integrality resid 2.2e-16, min gap 1.31e-01)
+A2  N=4 sample 18: +nodes= 10 -nodes= 10 net=+0  (integrality resid 2.2e-16, min gap 2.76e-01)
+A2  N=4 sample 19: +nodes= 23 -nodes= 23 net=+0  (integrality resid 2.2e-16, min gap 1.69e-01)
+A2  N=4: all nets zero = True; samples with both hands = 20/20

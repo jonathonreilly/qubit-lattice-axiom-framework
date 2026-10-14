@@ -1,0 +1,18 @@
+L=4: |M-M^+|=0.0e+00  |{H,M}|=0.0e+00  max range of F (sites)=3
+L=4: zero modes of H+M = 12 (bare walker: 16)
+   corner (0, 0, 1) hw=1: zero-mode weight 2.000, T_d on corner = -1
+   corner (0, 1, 0) hw=1: zero-mode weight 2.000, T_d on corner = -1
+   corner (0, 1, 1) hw=2: zero-mode weight 2.000, T_d on corner = +1
+   corner (1, 0, 0) hw=1: zero-mode weight 2.000, T_d on corner = -1
+   corner (1, 0, 1) hw=2: zero-mode weight 2.000, T_d on corner = +1
+   corner (1, 1, 0) hw=2: zero-mode weight 2.000, T_d on corner = +1
+L=4: min |E| over non-zero modes = 1.0000
+L=8: |M-M^+|=0.0e+00  |{H,M}|=0.0e+00  max range of F (sites)=3
+L=8: zero modes of H+M = 12 (bare walker: 16)
+   corner (0, 0, 1) hw=1: zero-mode weight 2.000, T_d on corner = -1
+   corner (0, 1, 0) hw=1: zero-mode weight 2.000, T_d on corner = -1
+   corner (0, 1, 1) hw=2: zero-mode weight 2.000, T_d on corner = +1
+   corner (1, 0, 0) hw=1: zero-mode weight 2.000, T_d on corner = -1
+   corner (1, 0, 1) hw=2: zero-mode weight 2.000, T_d on corner = +1
+   corner (1, 1, 0) hw=2: zero-mode weight 2.000, T_d on corner = +1
+L=8: min |E| over non-zero modes = 0.7906

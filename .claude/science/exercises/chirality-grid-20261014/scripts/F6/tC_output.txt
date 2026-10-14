@@ -1,0 +1,31 @@
+===== content per field set: 16 (with nu^c) =====
+  walker split: light Weyl count = 48 (all left-handed), corners hw=1: 3
+  W light (hw=1)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '0'}
+    nonzero: none;  Ibanez-Ross mod-2 mixed nonzero: none
+  W mirror (hw=0,2,3)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '0'}
+    nonzero: none;  Ibanez-Ross mod-2 mixed nonzero: none
+  W total (all 8 corners)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '0'}
+    nonzero: none;  Ibanez-Ross mod-2 mixed nonzero: none
+  K mirror (T_d odd, 2 x conj)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '0'}
+    nonzero: none;  Ibanez-Ross mod-2 mixed nonzero: none
+===== content per field set: 15 (no nu^c) =====
+  walker split: light Weyl count = 45 (all left-handed), corners hw=1: 3
+  W light (hw=1)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '13'}
+    nonzero: {'Z16': 13};  Ibanez-Ross mod-2 mixed nonzero: {'v=(0, 0, 1)': {'Z2_grav': 1}, 'v=(0, 1, 0)': {'Z2_grav': 1}, 'v=(1, 0, 0)': {'Z2_grav': 1}, 'v=(1, 1, 1)': {'Z2_grav': 1}}
+  W mirror (hw=0,2,3)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '3'}
+    nonzero: {'Z16': 3};  Ibanez-Ross mod-2 mixed nonzero: {'v=(0, 0, 1)': {'Z2_grav': 1}, 'v=(0, 1, 0)': {'Z2_grav': 1}, 'v=(1, 0, 0)': {'Z2_grav': 1}, 'v=(1, 1, 1)': {'Z2_grav': 1}}
+  W total (all 8 corners)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '0'}
+    nonzero: none;  Ibanez-Ross mod-2 mixed nonzero: none
+  K mirror (T_d odd, 2 x conj)
+    exact/global: {'SU3cubed': '0', 'Ycubed': '0', 'Ygrav': '0', 'SU3sqY': '0', 'SU2sqY': '0', 'Witten': '0', 'Z16': '2'}
+    nonzero: {'Z16': 2};  Ibanez-Ross mod-2 mixed nonzero: none
+===== verdict =====
+16 (with nu^c): walker mirror passes = True; KS mirror passes = True
+15 (no nu^c): walker mirror passes = False; KS mirror passes = False

@@ -1,0 +1,43 @@
+filter norms (sqrt<f^2>): {'F_lo': np.float64(0.39211), 'F_star': np.float64(0.612372), 'F_hi': np.float64(0.522913)}
+== V1 C0 L=3: dimGS=56 asym=0.0e+00 time=0.0s
+   E0 = -3.0000000000  E0/site = -1.000000  D = 1  any sector below GS-sector: False
+   gap = 1.000000  gap_nonlight = 1.000000  gap_lightattrib = 1.000000  gap6(1,1,0,0;K0) = 1.000000
+   max ||E_raise GS|| = 5.89e-17  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (1.00000,(1, 0, 0),K0,l0,w1.00,n37); (1.00000,(1, 1, 1),K0,l0,w1.00,n37); (1.00000,(1, 1, 1),K2,l0,w0.50,n37); (1.00000,(1, 0, 0),K1,l0,w0.50,n37); (1.00000,(1, 0, 0),K2,l0,w0.50,n37); (1.00000,(1, 1, 1),K1,l0,w0.50,n37)
+   S6_psiS(q=0) = 3.000000  S6_psiS(qmax=2) = 3.000000  S6_psiM(q=0) = 3.000000  S6_psiM(qmax) = 3.000000
+   S6dag_psiS(q=0) = 3.000000  S6dag_psiM(q=0) = 3.000000
+   chi6/site psiS = 12.000000  chi6/site psiM = 12.000000
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0]
+V1 L=3: E0=-L, D=1, gap=1 -> PASS;  expected chi6/site=12, S6(q=0)=3
+== V1 C0 L=4: dimGS=458 asym=0.0e+00 time=0.6s
+   E0 = -4.0000000000  E0/site = -1.000000  D = 1  any sector below GS-sector: False
+   gap = 1.000000  gap_nonlight = 1.000000  gap_lightattrib = 1.000000  gap6(1,1,0,0;K0) = 1.000000
+   max ||E_raise GS|| = 1.06e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (1.00000,(1, 0, 0),K0,l0,w0.60,n329); (1.00000,(1, 1, 0),K1,l0,w0.00,n296); (1.00000,(1, 1, 0),K2,l0,w0.00,n296); (1.00000,(1, 1, 0),K3,l0,w0.00,n296); (1.00000,(1, 1, 1),K1,l0,w0.40,n329); (1.00000,(1, 1, 1),K3,l0,w0.40,n329)
+   S6_psiS(q=0) = 3.000000  S6_psiS(qmax=2) = 3.000000  S6_psiM(q=0) = 3.000000  S6_psiM(qmax) = 3.000000
+   S6dag_psiS(q=0) = 3.000000  S6dag_psiM(q=0) = 3.000000
+   chi6/site psiS = 12.000000  chi6/site psiM = 12.000000
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0, 2.0]
+V1 L=4: E0=-L, D=1, gap=1 -> PASS;  expected chi6/site=12, S6(q=0)=3
+== V1 C0 L=5: dimGS=4252 asym=0.0e+00 time=5.1s
+   E0 = -5.0000000000  E0/site = -1.000000  D = 1  any sector below GS-sector: False
+   gap = 1.000000  gap_nonlight = 1.000000  gap_lightattrib = 2.000000  gap6(1,1,0,0;K0) = 1.000000
+   max ||E_raise GS|| = 4.55e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (1.00000,(1, 0, 0),K3,l0,w0.43,n3276); (1.00000,(1, 0, 0),K0,l0,w0.43,n3276); (1.00000,(1, 0, 0),K1,l0,w0.36,n3276); (1.00000,(1, 1, 0),K3,l0,w0.00,n3010); (1.00000,(1, 1, 1),K3,l0,w0.43,n3276); (1.00000,(1, 1, 0),K0,l0,w0.00,n3010)
+   S6_psiS(q=0) = 3.000000  S6_psiS(qmax=2) = 3.000000  S6_psiM(q=0) = 3.000000  S6_psiM(qmax) = 3.000000
+   S6dag_psiS(q=0) = 3.000000  S6dag_psiM(q=0) = 3.000000
+   chi6/site psiS = 12.000000  chi6/site psiM = 12.000000
+   <n(k)> GS (summed over flavours, per included momentum) = [2.0, 2.0, 2.0, 2.0, 2.0]
+V1 L=5: E0=-L, D=1, gap=1 -> PASS;  expected chi6/site=12, S6(q=0)=3
+V2 L=4: E0 mirror-only = -3.189955911383, E0 with light = -3.189955911383
+V2 zero-gap rows with light (expect (0,0,0,0) lvl1, (1,0,0,0), (1,1,0,0), (1,1,1,0) at K0 = 0): [((1, 1, 0, 0), 0), ((0, 0, 0, 0), 0), ((1, 1, 1, 0), 0), ((1, 0, 0, 0), 0)]
+V2 first nonzero gap: mirror-only 0.4509525605, with light 0.4509525605
+V2: PASS
+V3 F_star L=3: full spectra (dim 4096) max |diff| = 4.46e-14; E0 = -2.5980762114 vs -2.5980762114
+V3: PASS
+V3 F_hi L=3: full spectra (dim 4096) max |diff| = 2.22e-14; E0 = -1.5461204556 vs -1.5461204556
+V3: PASS
+V3 F_lo L=3: full spectra (dim 4096) max |diff| = 4.09e-14; E0 = -3.7108750645 vs -3.7108750645
+V3: PASS
+V3 F_star L=4: lowest 8 (dim 65536) max |diff| = 4.44e-15; real [-3.18995591, -3.18995591, -3.18995591, -2.73900335, -2.73900335, -2.67703027, -2.67703027, -2.44444444] mom [-3.18995591, -3.18995591, -3.18995591, -2.73900335, -2.73900335, -2.67703027, -2.67703027, -2.44444444]
+V3: PASS

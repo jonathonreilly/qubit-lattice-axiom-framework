@@ -1,0 +1,16 @@
+star (1-c)/2                       A = 0.9718  max|K(r)|/K0 = 0.6667  support = 5
+flat b=0.0: (1-c)(1+b c)/2         A = 0.9718  max|K(r)|/K0 = 0.6667  support = 5
+flat b=0.2: (1-c)(1+b c)/2         A = 0.8532  max|K(r)|/K0 = 0.5991  support = 9
+flat b=0.3: (1-c)(1+b c)/2         A = 0.7876  max|K(r)|/K0 = 0.5543  support = 9
+flat b=0.4: (1-c)(1+b c)/2         A = 0.7241  max|K(r)|/K0 = 0.5000  support = 9
+flat b=0.5: (1-c)(1+b c)/2         A = 0.6743  max|K(r)|/K0 = 0.4348  support = 9
+flat b=0.6: (1-c)(1+b c)/2         A = 0.6561  max|K(r)|/K0 = 0.3577  support = 9
+peak n=1.5: ((1-c)/2)^n            A = 1.1446  max|K(r)|/K0 = 0.7500  support = 7
+peak n=2: ((1-c)/2)^n              A = 1.2754  max|K(r)|/K0 = 0.8000  support = 9
+peak n=2.5: ((1-c)/2)^n            A = 1.3818  max|K(r)|/K0 = 0.8333  support = 11
+peak n=3: ((1-c)/2)^n              A = 1.4722  max|K(r)|/K0 = 0.8571  support = 13
+peak b=-0.2: (1-c)(1+b c)/2        A = 1.0664  max|K(r)|/K0 = 0.7132  support = 9
+peak b=-0.4: (1-c)(1+b c)/2        A = 1.1395  max|K(r)|/K0 = 0.7459  support = 9
+peak b=-0.6: (1-c)(1+b c)/2        A = 1.1960  max|K(r)|/K0 = 0.7695  support = 9
+3D f_NN A = 1.2247 max = 0.4
+3D f_F1 A = 0.6338 max = 0.185

@@ -101,3 +101,14 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **SIGN-PROBLEM:** proof that the known criteria fail for every decomposition considered, or explicit negative or complex weights on a small cluster in a natural decomposition, with the decompositions tried listed.
   - **OPEN:** otherwise.
 - **Memory:** ≤ 0.2 GB.
+
+**NT-3 result (21:20Z, same family; referee launched).**
+- **Literal pre-registered reading: TG1-BROKEN.** The infinite-coupling gap falls with size for all three 1D filters, and the 6-channel susceptibility grows.
+- **Worker's interpretation: OPEN.** The triggers are light-adjacent softening forced by the filter's zero (proof skeleton). The pre-registered light-attribution metric misfires for the self-conjugate sector.
+- **Holds either way (checked):**
+  - a unique SU(4)-singlet ground state everywhere;
+  - no static order growth beyond the control;
+  - the mirror corner stays gapped;
+  - the cube gap is 1.31/1.65 against 1.0 on-site.
+- **Next:** T-G1′ (2+1D at finite W), gated on SIGN-1.
+- Memory overrun of ~1.1 GB for ~10 s, recorded.

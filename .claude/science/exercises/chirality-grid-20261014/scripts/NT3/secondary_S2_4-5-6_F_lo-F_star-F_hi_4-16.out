@@ -1,0 +1,189 @@
+# S2 F_lo L=4 W=4.0: weight-0 lowest per K = [-15.602588, -7.086079, -8.174996, -8.935911] -> Kgs = 0
+== S2 F_lo L=4 W=4.0: dimGS=44 asym=0.0e+00 time=0.1s
+   E0 = -15.6025875103  E0/site = -3.900647  D = 1  any sector below GS-sector: False
+   gap = 3.446670  gap_nonlight = 3.522833  gap_lightattrib = 3.446670  gap6(1,1,0,0;K0) = 3.446670
+   max ||E_raise GS|| = 1.20e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (3.44667,(1, 1, 0),K0,l0,w1.00,n27); (3.52283,(1, 1, 1),K2,l0,w0.36,n29); (3.52283,(1, 0, 0),K2,l0,w0.36,n29); (4.91480,(1, 0, 0),K3,l0,w0.63,n28); (4.91480,(1, 1, 1),K3,l0,w0.63,n28); (5.56655,(1, 1, 0),K1,l0,w1.00,n24)
+   S6_psiS(q=0) = 5.799341  S6_psiS(qmax=2) = 3.174756  S6_psiM(q=0) = 2.806255  S6_psiM(qmax) = 1.200772
+   S6dag_psiS(q=0) = 5.799341  S6dag_psiM(q=0) = 2.806255
+   chi6/site psiS = 5.852154  chi6/site psiM = 2.993069
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9422, 2.0, 2.0578]
+# S2 F_lo L=4 W=16.0: weight-0 lowest per K = [-62.207989, -25.904079, -29.573622, -28.746135] -> Kgs = 0
+== S2 F_lo L=4 W=16.0: dimGS=44 asym=0.0e+00 time=0.1s
+   E0 = -62.2079890373  E0/site = -15.551997  D = 1  any sector below GS-sector: False
+   gap = 13.948247  gap_nonlight = 14.330156  gap_lightattrib = 13.948247  gap6(1,1,0,0;K0) = 13.948247
+   max ||E_raise GS|| = 9.71e-17  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (13.94825,(1, 1, 0),K0,l0,w1.00,n27); (14.33016,(1, 1, 1),K2,l0,w0.38,n29); (14.33016,(1, 0, 0),K2,l0,w0.38,n29); (22.22327,(1, 0, 0),K3,l0,w0.63,n28); (22.22327,(1, 1, 1),K3,l0,w0.63,n28); (23.98208,(1, 0, 0),K1,l0,w0.62,n28)
+   S6_psiS(q=0) = 5.855169  S6_psiS(qmax=2) = 3.117506  S6_psiM(q=0) = 2.828887  S6_psiM(qmax) = 1.179119
+   S6dag_psiS(q=0) = 5.855169  S6dag_psiM(q=0) = 2.828887
+   chi6/site psiS = 1.478155  chi6/site psiM = 0.752650
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9874, 2.0, 2.0126]
+   D2: f_near = 1.275153, f_near^2 = 1.626016, f_near^4 = 2.643929, gap/f_near^2 = 8.5782, gap/f_near^4 = 5.2756
+# S2 F_lo L=5 W=4.0: weight-0 lowest per K = [-16.965305, -10.78262, -10.540693, -12.140876, -13.165792] -> Kgs = 0
+== S2 F_lo L=5 W=4.0: dimGS=366 asym=0.0e+00 time=0.7s
+   E0 = -16.9653049014  E0/site = -3.393061  D = 1  any sector below GS-sector: False
+   gap = 2.775121  gap_nonlight = 3.969535  gap_lightattrib = 2.775121  gap6(1,1,0,0;K0) = 2.962415
+   max ||E_raise GS|| = 1.57e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (2.77512,(1, 1, 1),K4,l0,w0.65,n264); (2.77512,(1, 0, 0),K4,l0,w0.65,n264); (2.96241,(1, 1, 0),K0,l0,w0.95,n240); (3.69738,(1, 1, 0),K3,l0,w0.97,n236); (3.79951,(0, 0, 0),K4,l0,w0.91,n361); (3.96954,(1, 1, 1),K3,l0,w0.43,n264)
+   S6_psiS(q=0) = 4.850626  S6_psiS(qmax=2) = 2.024536  S6_psiM(q=0) = 3.084197  S6_psiM(qmax) = 1.419833
+   S6dag_psiS(q=0) = 4.850626  S6dag_psiM(q=0) = 3.084197
+   chi6/site psiS = 6.247315  chi6/site psiM = 4.032835
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9252, 1.954, 2.046, 2.0748]
+# S2 F_lo L=5 W=16.0: weight-0 lowest per K = [-67.525727, -41.738904, -40.89089, -42.668832, -45.711422] -> Kgs = 0
+== S2 F_lo L=5 W=16.0: dimGS=366 asym=0.0e+00 time=0.9s
+   E0 = -67.5257266319  E0/site = -13.505145  D = 1  any sector below GS-sector: False
+   gap = 11.766058  gap_nonlight = 17.679900  gap_lightattrib = 11.766058  gap6(1,1,0,0;K0) = 11.766058
+   max ||E_raise GS|| = 3.11e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (11.76606,(1, 1, 0),K0,l0,w0.91,n240); (13.58187,(1, 0, 0),K4,l0,w0.66,n264); (13.58187,(1, 1, 1),K4,l0,w0.66,n264); (15.30550,(1, 0, 0),K1,l0,w0.66,n264); (15.30550,(1, 1, 1),K1,l0,w0.66,n264); (17.67990,(1, 0, 0),K3,l0,w0.46,n264)
+   S6_psiS(q=0) = 4.914937  S6_psiS(qmax=2) = 1.964121  S6_psiM(q=0) = 3.130193  S6_psiM(qmax) = 1.381725
+   S6dag_psiS(q=0) = 4.914937  S6dag_psiM(q=0) = 3.130193
+   chi6/site psiS = 1.593129  chi6/site psiM = 1.031328
+   <n(k)> GS (summed over flavours, per included momentum) = [1.985, 1.9895, 2.0105, 2.015]
+   D2: f_near = 1.044476, f_near^2 = 1.090930, f_near^4 = 1.190129, gap/f_near^2 = 10.7853, gap/f_near^4 = 9.8864
+# S2 F_lo L=6 W=4.0: weight-0 lowest per K = [-19.633638, -14.623783, -16.311623, -14.940272, -17.087945, -16.778839] -> Kgs = 0
+== S2 F_lo L=6 W=4.0: dimGS=3552 asym=0.0e+00 time=4.9s
+   E0 = -19.6336381647  E0/site = -3.272273  D = 1  any sector below GS-sector: False
+   gap = 1.540905  gap_nonlight = 4.256294  gap_lightattrib = 1.540905  gap6(1,1,0,0;K0) = 2.057931
+   max ||E_raise GS|| = 8.60e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (1.54090,(1, 1, 1),K5,l0,w0.66,n2731); (1.54090,(1, 0, 0),K5,l0,w0.66,n2731); (2.05793,(1, 1, 0),K0,l0,w0.90,n2516); (2.06332,(1, 1, 0),K4,l0,w0.99,n2511); (2.54569,(0, 0, 0),K4,l0,w0.98,n3546); (2.85480,(0, 0, 0),K5,l0,w0.96,n3536)
+   S6_psiS(q=0) = 5.242237  S6_psiS(qmax=3) = 1.901427  S6_psiM(q=0) = 3.418048  S6_psiM(qmax) = 1.543919
+   S6dag_psiS(q=0) = 5.242237  S6dag_psiM(q=0) = 3.418048
+   chi6/site psiS = 7.842574  chi6/site psiM = 5.947091
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9104, 1.9306, 2.0, 2.0694, 2.0896]
+# S2 F_lo L=6 W=16.0: weight-0 lowest per K = [-78.070834, -57.477636, -59.753607, -56.52721, -63.116533, -60.986462] -> Kgs = 0
+== S2 F_lo L=6 W=16.0: dimGS=3552 asym=0.0e+00 time=5.2s
+   E0 = -78.0708344831  E0/site = -13.011806  D = 1  any sector below GS-sector: False
+   gap = 8.066339  gap_nonlight = 19.500832  gap_lightattrib = 8.066339  gap6(1,1,0,0;K0) = 8.066339
+   max ||E_raise GS|| = 7.11e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (8.06634,(1, 1, 0),K0,l0,w0.88,n2516); (8.39525,(1, 0, 0),K5,l0,w0.69,n2731); (8.39525,(1, 1, 1),K5,l0,w0.69,n2731); (9.98658,(1, 0, 0),K1,l0,w0.69,n2731); (9.98658,(1, 1, 1),K1,l0,w0.69,n2731); (12.54269,(1, 1, 0),K4,l0,w0.97,n2511)
+   S6_psiS(q=0) = 5.327413  S6_psiS(qmax=3) = 1.856234  S6_psiM(q=0) = 3.493785  S6_psiM(qmax) = 1.507223
+   S6dag_psiS(q=0) = 5.327413  S6dag_psiM(q=0) = 3.493785
+   chi6/site psiS = 2.026230  chi6/site psiM = 1.549060
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9833, 1.9847, 2.0, 2.0153, 2.0167]
+   D2: f_near = 0.828850, f_near^2 = 0.686992, f_near^4 = 0.471958, gap/f_near^2 = 11.7415, gap/f_near^4 = 17.0912
+# S2 F_star L=4 W=4.0: weight-0 lowest per K = [-12.805623, -5.593034, -11.10156, -8.35457] -> Kgs = 0
+== S2 F_star L=4 W=4.0: dimGS=44 asym=0.0e+00 time=0.1s
+   E0 = -12.8056233028  E0/site = -3.201406  D = 1  any sector below GS-sector: False
+   gap = 1.108908  gap_nonlight = 11.805623  gap_lightattrib = 1.108908  gap6(1,1,0,0;K0) = 1.849348
+   max ||E_raise GS|| = 2.10e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (1.10891,(1, 0, 0),K3,l0,w0.91,n28); (1.10891,(1, 1, 1),K3,l0,w0.91,n28); (1.35385,(1, 1, 0),K2,l0,w1.00,n24); (1.70406,(0, 0, 0),K2,l0,w1.00,n40); (1.73021,(0, 0, 0),K0,l1,w1.00,n44); (1.84935,(1, 1, 0),K0,l0,w1.00,n27)
+   S6_psiS(q=0) = 6.387184  S6_psiS(qmax=2) = 0.504467  S6_psiM(q=0) = 2.881552  S6_psiM(qmax) = 1.135050
+   S6dag_psiS(q=0) = 6.387184  S6dag_psiM(q=0) = 2.881552
+   chi6/site psiS = 7.620318  chi6/site psiM = 5.429829
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9121, 2.0, 2.0879]
+# S2 F_star L=4 W=16.0: weight-0 lowest per K = [-51.045357, -19.372923, -38.425485, -24.45891] -> Kgs = 0
+== S2 F_star L=4 W=16.0: dimGS=44 asym=0.0e+00 time=0.1s
+   E0 = -51.0453570474  E0/site = -12.761339  D = 1  any sector below GS-sector: False
+   gap = 7.221246  gap_nonlight = 50.045357  gap_lightattrib = 7.221246  gap6(1,1,0,0;K0) = 7.221246
+   max ||E_raise GS|| = 4.58e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (7.22125,(1, 1, 0),K0,l0,w1.00,n27); (7.23266,(1, 0, 0),K3,l0,w0.92,n28); (7.23266,(1, 1, 1),K3,l0,w0.92,n28); (9.17359,(1, 0, 0),K1,l0,w0.92,n28); (9.17359,(1, 1, 1),K1,l0,w0.92,n28); (10.90495,(1, 1, 0),K2,l0,w1.00,n24)
+   S6_psiS(q=0) = 6.425940  S6_psiS(qmax=2) = 0.454734  S6_psiM(q=0) = 2.968463  S6_psiM(qmax) = 1.023152
+   S6dag_psiS(q=0) = 6.425940  S6dag_psiM(q=0) = 2.968463
+   chi6/site psiS = 1.986141  chi6/site psiM = 1.439067
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9937, 2.0, 2.0063]
+   D2: f_near = 0.816497, f_near^2 = 0.666667, f_near^4 = 0.444444, gap/f_near^2 = 10.8319, gap/f_near^4 = 16.2478
+# S2 F_star L=5 W=4.0: weight-0 lowest per K = [-15.742364, -17.349473, -12.485281, -16.301994, -13.033233] -> Kgs = 1
+== S2 F_star L=5 W=4.0: dimGS=361 asym=0.0e+00 time=0.8s
+   E0 = -17.3494728001  E0/site = -3.469895  D = 1  any sector below GS-sector: False
+   gap = 0.709996  gap_nonlight = 15.447360  gap_lightattrib = 0.709996  gap6(1,1,0,0;K0) = 5.534823
+   max ||E_raise GS|| = 2.95e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.71000,(1, 0, 0),K2,l0,w0.89,n264); (0.71000,(1, 1, 1),K2,l0,w0.89,n264); (1.03547,(1, 1, 0),K3,l0,w0.99,n236); (1.04748,(0, 0, 0),K3,l0,w0.99,n361); (1.46983,(1, 0, 0),K4,l0,w0.97,n264); (1.46983,(1, 1, 1),K4,l0,w0.97,n264)
+   S6_psiS(q=0) = 6.490748  S6_psiS(qmax=2) = 0.843470  S6_psiM(q=0) = 1.359558  S6_psiM(qmax) = 1.214614
+   S6dag_psiS(q=0) = 6.490748  S6dag_psiM(q=0) = 1.359558
+   chi6/site psiS = 4.565635  chi6/site psiM = 0.947293
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0156, 1.9617, 2.0383, 3.9844]
+# S2 F_star L=5 W=16.0: weight-0 lowest per K = [-62.929815, -57.948468, -55.649949, -59.468658, -50.330509] -> Kgs = 0
+== S2 F_star L=5 W=16.0: dimGS=366 asym=0.0e+00 time=0.9s
+   E0 = -62.9298152114  E0/site = -12.585963  D = 1  any sector below GS-sector: False
+   gap = 2.284005  gap_nonlight = 6.438249  gap_lightattrib = 2.284005  gap6(1,1,0,0;K0) = 2.899937
+   max ||E_raise GS|| = 1.65e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (2.28400,(1, 1, 1),K4,l0,w0.92,n264); (2.28400,(1, 0, 0),K4,l0,w0.92,n264); (2.89994,(1, 1, 0),K0,l0,w0.63,n240); (3.40018,(1, 1, 0),K3,l0,w0.99,n236); (3.46116,(0, 0, 0),K3,l0,w0.98,n361); (4.18761,(1, 0, 0),K1,l0,w0.92,n264)
+   S6_psiS(q=0) = 6.676704  S6_psiS(qmax=2) = 0.527829  S6_psiM(q=0) = 3.428719  S6_psiM(qmax) = 1.103129
+   S6dag_psiS(q=0) = 6.676704  S6dag_psiM(q=0) = 3.428719
+   chi6/site psiS = 2.986393  chi6/site psiM = 3.448080
+   <n(k)> GS (summed over flavours, per included momentum) = [1.9995, 1.9971, 2.0029, 2.0005]
+   D2: f_near = 0.564185, f_near^2 = 0.318305, f_near^4 = 0.101318, gap/f_near^2 = 7.1755, gap/f_near^4 = 22.5429
+# S2 F_star L=6 W=4.0: weight-0 lowest per K = [-18.864262, -17.514332, -21.479275, -16.259074, -20.078351, -17.210263] -> Kgs = 2
+== S2 F_star L=6 W=4.0: dimGS=3546 asym=0.0e+00 time=5.8s
+   E0 = -21.4792747609  E0/site = -3.579879  D = 1  any sector below GS-sector: False
+   gap = 0.780592  gap_nonlight = 3.800113  gap_lightattrib = 0.780592  gap6(1,1,0,0;K0) = 3.823226
+   max ||E_raise GS|| = 6.07e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.78059,(1, 0, 0),K3,l0,w0.90,n2732); (0.78059,(1, 1, 1),K3,l0,w0.90,n2732); (1.40092,(0, 0, 0),K4,l0,w0.99,n3546); (1.41303,(1, 1, 0),K4,l0,w0.99,n2511); (1.62942,(0, 0, 0),K4,l1,wnan,n3546); (1.62942,(0, 0, 0),K4,l2,wnan,n3546)
+   S6_psiS(q=0) = 6.867665  S6_psiS(qmax=3) = 0.252217  S6_psiM(q=0) = 1.867934  S6_psiM(qmax) = 1.008867
+   S6dag_psiS(q=0) = 6.867665  S6dag_psiM(q=0) = 1.867934
+   chi6/site psiS = 6.093228  chi6/site psiM = 1.788434
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0173, 1.9687, 2.0, 2.0313, 3.9827]
+# S2 F_star L=6 W=16.0: weight-0 lowest per K = [-75.419795, -60.180131, -75.461013, -59.890661, -75.074609, -63.453959] -> Kgs = 2
+== S2 F_star L=6 W=16.0: dimGS=3546 asym=0.0e+00 time=5.8s
+   E0 = -75.4610128450  E0/site = -12.576835  D = 1  any sector below GS-sector: False
+   gap = 0.041218  gap_nonlight = 40.777206  gap_lightattrib = 0.041218  gap6(1,1,0,0;K0) = 3.912543
+   max ||E_raise GS|| = 3.00e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.04122,(0, 0, 0),K0,l0,w0.99,n3552); (0.38640,(0, 0, 0),K4,l0,w0.99,n3546); (0.43434,(1, 1, 0),K4,l0,w0.99,n2511); (0.47696,(1, 1, 1),K5,l0,w0.97,n2731); (0.47696,(1, 0, 0),K5,l0,w0.97,n2731); (0.51130,(1, 0, 0),K3,l0,w0.90,n2732)
+   S6_psiS(q=0) = 6.883919  S6_psiS(qmax=3) = 0.251876  S6_psiM(q=0) = 1.873799  S6_psiM(qmax) = 1.007504
+   S6dag_psiS(q=0) = 6.883919  S6dag_psiM(q=0) = 1.873799
+   chi6/site psiS = 1.527479  chi6/site psiM = 0.449075
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0162, 1.9733, 2.0, 2.0267, 3.9838]
+   D2: f_near = 0.408248, f_near^2 = 0.166667, f_near^4 = 0.027778, gap/f_near^2 = 0.2473, gap/f_near^4 = 1.4838
+# S2 F_hi L=4 W=4.0: weight-0 lowest per K = [-17.37617, -3.142389, -15.680005, -5.508175] -> Kgs = 0
+== S2 F_hi L=4 W=4.0: dimGS=44 asym=0.0e+00 time=0.1s
+   E0 = -17.3761702303  E0/site = -4.344043  D = 1  any sector below GS-sector: False
+   gap = 0.922638  gap_nonlight = 13.374558  gap_lightattrib = 0.922638  gap6(1,1,0,0;K0) = 3.439643
+   max ||E_raise GS|| = 5.46e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.92264,(1, 0, 0),K1,l0,w0.99,n28); (0.92264,(1, 1, 1),K1,l0,w0.99,n28); (1.69084,(1, 1, 0),K2,l0,w1.00,n24); (1.69617,(0, 0, 0),K2,l0,w1.00,n40); (1.89739,(0, 0, 0),K2,l1,wnan,n40); (1.89739,(0, 0, 0),K2,l2,wnan,n40)
+   S6_psiS(q=0) = 10.031066  S6_psiS(qmax=2) = 0.078528  S6_psiM(q=0) = 0.750693  S6_psiM(qmax) = 1.503074
+   S6dag_psiS(q=0) = 10.031066  S6dag_psiM(q=0) = 0.750693
+   chi6/site psiS = 3.000151  chi6/site psiM = 0.225096
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0008, 2.0, 3.9992]
+# S2 F_hi L=4 W=16.0: weight-0 lowest per K = [-57.576427, -9.569557, -56.720026, -13.034134] -> Kgs = 0
+== S2 F_hi L=4 W=16.0: dimGS=44 asym=0.0e+00 time=0.1s
+   E0 = -57.5764273993  E0/site = -14.394107  D = 1  any sector below GS-sector: False
+   gap = 0.625487  gap_nonlight = nan  gap_lightattrib = 0.625487  gap6(1,1,0,0;K0) = 1.830321
+   max ||E_raise GS|| = 1.62e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.62549,(0, 0, 0),K0,l1,w1.00,n44); (0.75120,(1, 1, 1),K1,l0,w0.99,n28); (0.75120,(1, 0, 0),K1,l0,w0.99,n28); (0.82724,(1, 1, 0),K2,l0,w1.00,n24); (0.85640,(0, 0, 0),K2,l0,w1.00,n40); (0.98564,(1, 0, 0),K3,l0,w1.00,n28)
+   S6_psiS(q=0) = 10.042213  S6_psiS(qmax=2) = 0.088586  S6_psiM(q=0) = 0.974215  S6_psiM(qmax) = 1.695596
+   S6dag_psiS(q=0) = 10.042213  S6dag_psiM(q=0) = 0.974215
+   chi6/site psiS = 0.913450  chi6/site psiM = 0.557491
+   <n(k)> GS (summed over flavours, per included momentum) = [0.2197, 2.0, 3.7803]
+   D2: f_near = 0.478091, f_near^2 = 0.228571, f_near^4 = 0.052245, gap/f_near^2 = 2.7365, gap/f_near^4 = 11.9722
+# S2 F_hi L=5 W=4.0: weight-0 lowest per K = [-16.736457, -20.472142, -14.788357, -18.595433, -12.85806] -> Kgs = 1
+== S2 F_hi L=5 W=4.0: dimGS=361 asym=0.0e+00 time=0.9s
+   E0 = -20.4721420416  E0/site = -4.094428  D = 1  any sector below GS-sector: False
+   gap = 0.944926  gap_nonlight = 7.023588  gap_lightattrib = 0.944926  gap6(1,1,0,0;K0) = 7.023588
+   max ||E_raise GS|| = 1.48e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.94493,(1, 0, 0),K2,l0,w0.99,n264); (0.94493,(1, 1, 1),K2,l0,w0.99,n264); (1.87671,(0, 0, 0),K3,l0,w1.00,n361); (1.87834,(1, 1, 0),K3,l0,w1.00,n236); (1.89449,(0, 0, 0),K3,l1,wnan,n361); (1.89449,(2, 1, 1),K3,l0,w1.00,n153)
+   S6_psiS(q=0) = 8.358665  S6_psiS(qmax=2) = 0.153358  S6_psiM(q=0) = 1.393816  S6_psiM(qmax) = 1.202321
+   S6dag_psiS(q=0) = 8.358665  S6dag_psiM(q=0) = 1.393816
+   chi6/site psiS = 4.732456  chi6/site psiM = 0.788104
+   <n(k)> GS (summed over flavours, per included momentum) = [0.002, 1.9942, 2.0058, 3.998]
+# S2 F_hi L=5 W=16.0: weight-0 lowest per K = [-66.945072, -70.466842, -64.863436, -68.67051, -62.852755] -> Kgs = 1
+== S2 F_hi L=5 W=16.0: dimGS=361 asym=0.0e+00 time=0.9s
+   E0 = -70.4668420484  E0/site = -14.093368  D = 1  any sector below GS-sector: False
+   gap = 0.924427  gap_nonlight = 28.099546  gap_lightattrib = 0.924427  gap6(1,1,0,0;K0) = 28.099546
+   max ||E_raise GS|| = 2.38e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.92443,(1, 0, 0),K2,l0,w0.99,n264); (0.92443,(1, 1, 1),K2,l0,w0.99,n264); (1.79633,(0, 0, 0),K3,l0,w1.00,n361); (1.80280,(1, 1, 0),K3,l0,w1.00,n236); (1.86742,(2, 1, 1),K3,l0,w1.00,n153); (1.86742,(0, 0, 0),K3,l1,wnan,n361)
+   S6_psiS(q=0) = 8.360692  S6_psiS(qmax=2) = 0.153336  S6_psiM(q=0) = 1.394239  S6_psiM(qmax) = 1.202145
+   S6dag_psiS(q=0) = 8.360692  S6dag_psiM(q=0) = 1.394239
+   chi6/site psiS = 1.183455  chi6/site psiM = 0.197116
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0018, 1.9946, 2.0054, 3.9982]
+   D2: f_near = 0.228268, f_near^2 = 0.052106, f_near^4 = 0.002715, gap/f_near^2 = 17.7411, gap/f_near^4 = 340.4787
+# S2 F_hi L=6 W=4.0: weight-0 lowest per K = [-19.143946, -19.032882, -22.602226, -17.316609, -20.872292, -17.377217] -> Kgs = 2
+== S2 F_hi L=6 W=4.0: dimGS=3546 asym=0.0e+00 time=6.4s
+   E0 = -22.6022263550  E0/site = -3.767038  D = 1  any sector below GS-sector: False
+   gap = 0.865650  gap_nonlight = 2.760860  gap_lightattrib = 0.865650  gap6(1,1,0,0;K0) = 3.122936
+   max ||E_raise GS|| = 7.08e-16  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.86565,(1, 1, 1),K3,l0,w0.99,n2732); (0.86565,(1, 0, 0),K3,l0,w0.99,n2732); (1.72993,(0, 0, 0),K4,l0,w1.00,n3546); (1.73019,(1, 1, 0),K4,l0,w1.00,n2511); (1.73178,(0, 0, 0),K4,l1,wnan,n3546); (1.73178,(0, 0, 0),K4,l2,wnan,n3546)
+   S6_psiS(q=0) = 8.879245  S6_psiS(qmax=3) = 0.016539  S6_psiM(q=0) = 1.969863  S6_psiM(qmax) = 1.000500
+   S6dag_psiS(q=0) = 8.879245  S6dag_psiM(q=0) = 1.969863
+   chi6/site psiS = 7.448192  chi6/site psiM = 2.253681
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0009, 1.9983, 2.0, 2.0017, 3.9991]
+# S2 F_hi L=6 W=16.0: weight-0 lowest per K = [-76.575196, -65.738884, -80.012493, -64.068547, -78.29076, -64.306987] -> Kgs = 2
+== S2 F_hi L=6 W=16.0: dimGS=3546 asym=0.0e+00 time=6.4s
+   E0 = -80.0124933703  E0/site = -13.335416  D = 1  any sector below GS-sector: False
+   gap = 0.863594  gap_nonlight = 13.639685  gap_lightattrib = 0.863594  gap6(1,1,0,0;K0) = 5.188105
+   max ||E_raise GS|| = 5.61e-15  (singlet iff ~0)
+   lowest rows (gap, weight d, K, level, w_light, sector dim): (0.86359,(1, 1, 1),K3,l0,w0.99,n2732); (0.86359,(1, 0, 0),K3,l0,w0.99,n2732); (1.72173,(0, 0, 0),K4,l0,w1.00,n3546); (1.72279,(1, 1, 0),K4,l0,w1.00,n2511); (1.72909,(0, 0, 0),K4,l1,wnan,n3546); (1.72909,(2, 1, 1),K4,l0,w1.00,n1746)
+   S6_psiS(q=0) = 8.880290  S6_psiS(qmax=3) = 0.016538  S6_psiM(q=0) = 1.970175  S6_psiM(qmax) = 1.000442
+   S6dag_psiS(q=0) = 8.880290  S6dag_psiM(q=0) = 1.970175
+   chi6/site psiS = 1.862360  chi6/site psiM = 0.563563
+   <n(k)> GS (summed over flavours, per included momentum) = [0.0008, 1.9985, 2.0, 2.0015, 3.9992]
+   D2: f_near = 0.119523, f_near^2 = 0.014286, f_near^4 = 0.000204, gap/f_near^2 = 60.4516, gap/f_near^4 = 4231.6086

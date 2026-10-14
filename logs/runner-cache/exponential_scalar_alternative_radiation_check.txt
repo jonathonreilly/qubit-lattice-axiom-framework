@@ -1,0 +1,598 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_alternative_radiation_check.py
+runner_sha256: f0cf10d3f4554bf038a11070704ea1ded8eefb15813dddff7c5939a6715ba2a9
+input_fingerprint_sha256: df51ef2e8b3533d035fd050416420dab97e99c81c750662d7675073e5f4722d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.95
+status: ok
+----- stdout -----
+{
+  "scope": "Supplied action; fixed-k ideal large-field radiation, local stability and conditional vacuum-calibrated expansion. No observational fit.",
+  "checks": [
+    {
+      "name": "action.lambda_x_theta",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.lambda_y_balance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.lambda_gap",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.invariant_y_potential",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.invariant_y_metric",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.kinetic_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.finite_radial_metric",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.large_x_metric",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.implemented_B_binding",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.implemented_C_binding",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.normal_potential_curvature",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.plane_potential_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.plane_radial_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.plane_u_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.implemented_W_binding",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.implemented_W_radial_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.implemented_W_theta_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.theta_metric",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.normal_metric_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.clock_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.vacuum_coupling",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "branch.B",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "branch.C",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "branch.u_balance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "branch.domain_factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "branch.critical_polynomial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "branch.critical_interval",
+      "passed": true
+    },
+    {
+      "name": "mixed.required_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "mixed.strict_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "mixed.weighted_gap",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "mixed.rhs_gap",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.lowered_theta",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.lowered_radial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.physical_clock",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.fixed_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.fixed_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.fixed_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.fixed_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.fixed_Hbar",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.fixed_h",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.exact_quartic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.n_lower",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.denominator_upper",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.delta_upper",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.square_upper",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.Hurwitz_margin",
+      "passed": true
+    },
+    {
+      "name": "spectrum.weak_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.simple_zero_root",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.slow_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.pullback_00",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.pullback_01",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.pullback_10",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.pullback_11",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.characteristic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.friction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "normal.bound",
+      "passed": true
+    },
+    {
+      "name": "bridge.density_translation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.physical_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.Hv_cancels",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.Q0_cancels",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.strict_excess",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.derivative_positive_split",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.derivative_bounds",
+      "passed": true
+    },
+    {
+      "name": "bridge.weak_series",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.weak_endpoint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.upper_endpoint_numerator",
+      "passed": true
+    },
+    {
+      "name": "bridge.scalar_fraction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "bridge.branch_coupling_norm",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "scope.scalar_fraction_not_excess",
+      "passed": true
+    },
+    {
+      "name": "scope.omitted_clock_wrong",
+      "passed": true
+    },
+    {
+      "name": "scope.unknown_calibration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "scope.lensing_normalization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "numeric.0.000001.spectrum",
+      "passed": true,
+      "max_error": "8.248252335e-70"
+    },
+    {
+      "name": "numeric.0.000001.stability",
+      "passed": true
+    },
+    {
+      "name": "numeric.0.00001.spectrum",
+      "passed": true,
+      "max_error": "4.744519082e-70"
+    },
+    {
+      "name": "numeric.0.00001.stability",
+      "passed": true
+    },
+    {
+      "name": "numeric.0.001.spectrum",
+      "passed": true,
+      "max_error": "4.224258327e-70"
+    },
+    {
+      "name": "numeric.0.001.stability",
+      "passed": true
+    },
+    {
+      "name": "numeric.0.01.spectrum",
+      "passed": true,
+      "max_error": "2.203341815e-70"
+    },
+    {
+      "name": "numeric.0.01.stability",
+      "passed": true
+    },
+    {
+      "name": "numeric.0.1.spectrum",
+      "passed": true,
+      "max_error": "4.893869766e-70"
+    },
+    {
+      "name": "numeric.0.1.stability",
+      "passed": true
+    },
+    {
+      "name": "numeric.0.16.spectrum",
+      "passed": true,
+      "max_error": "1.878348264e-70"
+    },
+    {
+      "name": "numeric.0.16.stability",
+      "passed": true
+    },
+    {
+      "name": "numeric.0.1715.spectrum",
+      "passed": true,
+      "max_error": "8.333193146e-70"
+    },
+    {
+      "name": "numeric.0.1715.stability",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "passed": 88,
+    "failed": 0
+  },
+  "matrix": "Matrix([[0, 0, 1, 0], [0, 0, 3*k/(3*k + 1), 1], [-16*(k - 1)**2*(5*k**3 - 45*k**2 - k + 1)/((k + 1)*(3*k - 1)*(3*k + 1)*(k**2 + 14*k - 3)), 32*(k - 1)**2*(k**2 - 6*k + 1)/((k + 1)*(3*k - 1)*(k**2 + 14*k - 3)), -1, -16*(k - 1)**2/(k**2 + 14*k - 3)], [-2*(6*k**3 - 31*k**2 - 4*k + 1)/((k + 1)*(3*k - 1)*(3*k + 1)), 4*(k**2 - 6*k + 1)/((k + 1)*(3*k - 1)), -2/(3*k + 1), -1]])",
+  "normal_matrix": "Matrix([[0, 1], [2/3 - 16*R/9, -1]])",
+  "spectra": [
+    {
+      "k": "0.000001",
+      "eigenvalues": [
+        [
+          "-0.0000031999960319801188235752003629905138",
+          "-2.757010007236266917545170098957289e-73"
+        ],
+        [
+          "-0.5",
+          "-4.4440914482218080957048184144256733"
+        ],
+        [
+          "-0.99999680000396801988117642479963701",
+          "1.3556361942399575877067452196684445e-71"
+        ],
+        [
+          "-0.5",
+          "4.4440914482218080957048184144256733"
+        ]
+      ]
+    },
+    {
+      "k": "0.00001",
+      "eigenvalues": [
+        [
+          "-0.000031999603180116875628189452132388722",
+          "1.3744585154858414504209155648790664e-71"
+        ],
+        [
+          "-0.5",
+          "-4.4440396055638867921172616065259217"
+        ],
+        [
+          "-0.99996800039681988312437181054786761",
+          "-4.5786303790251928838081807214278485e-71"
+        ],
+        [
+          "-0.5",
+          "4.4440396055638867921172616065259217"
+        ]
+      ]
+    },
+    {
+      "k": "0.001",
+      "eigenvalues": [
+        [
+          "-0.5",
+          "-4.4383508013472304296237863063210045"
+        ],
+        [
+          "-0.0031960119012333078488332983616087806",
+          "1.4393195980368693898560279386055208e-71"
+        ],
+        [
+          "-0.99680398809876669215116670163839122",
+          "2.8941178889796117686348763837818306e-71"
+        ],
+        [
+          "-0.5",
+          "4.4383508013472304296237863063210045"
+        ]
+      ]
+    },
+    {
+      "k": "0.01",
+      "eigenvalues": [
+        [
+          "-0.5",
+          "-4.3878765202285973342672512678293501"
+        ],
+        [
+          "-0.031581009318107700916792483376016442",
+          "-3.5347015978926691639319925021354917e-71"
+        ],
+        [
+          "-0.96841899068189229908320751662398356",
+          "3.0092629224660091065855661155278093e-71"
+        ],
+        [
+          "-0.5",
+          "4.3878765202285973342672512678293501"
+        ]
+      ]
+    },
+    {
+      "k": "0.1",
+      "eigenvalues": [
+        [
+          "-0.5",
+          "-3.9939233769805168064169487138117698"
+        ],
+        [
+          "-0.21751890406067216617366093471005383",
+          "4.5828640627949235163555662861089425e-72"
+        ],
+        [
+          "-0.78248109593932783382633906528994617",
+          "-1.9289615787903588801469438675535369e-71"
+        ],
+        [
+          "-0.5",
+          "3.9939233769805168064169487138117698"
+        ]
+      ]
+    },
+    {
+      "k": "0.16",
+      "eigenvalues": [
+        [
+          "-0.5",
+          "-3.8465506106910374532394570799677902"
+        ],
+        [
+          "-0.062393248944381297529456181580766759",
+          "-3.2672765302520658389649041474091033e-71"
+        ],
+        [
+          "-0.93760675105561870247054381841923324",
+          "-7.5352506263753025443379069799285149e-71"
+        ],
+        [
+          "-0.5",
+          "3.8465506106910374532394570799677902"
+        ]
+      ]
+    },
+    {
+      "k": "0.1715",
+      "eigenvalues": [
+        [
+          "-0.5",
+          "-3.8326093188566173869747899102074006"
+        ],
+        [
+          "-0.000424544697988053484767483046788924",
+          "9.0738498818938138975108393104350909e-72"
+        ],
+        [
+          "-0.99957545530201194651523251695321108",
+          "-7.3723462437035684633530145513783631e-72"
+        ],
+        [
+          "-0.5",
+          "3.8326093188566173869747899102074006"
+        ]
+      ]
+    }
+  ]
+}
+
+----- stderr -----
+

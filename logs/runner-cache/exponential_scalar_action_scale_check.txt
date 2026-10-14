@@ -1,0 +1,700 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_action_scale_check.py
+runner_sha256: e1946b6c429f633520b7e39895e8652e5a1cddefcbd8ad81b11fdcad8758ae2a
+input_fingerprint_sha256: 1dedfbe8ac9bd3fd091a0f949ad0e537b0a29712a4202b63a59f39938e123a06
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+{
+  "passed": 111,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "inverse::first_jet_compatibility",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::wrong_fluid_exchange_sign",
+      "deliberate_defect": "-av*(3*pressure - rho)/(Hv**2*Q)",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_raychaudhuri",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_scalar_U0_0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_scalar_U1_0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_scalar_U0_1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_scalar_U1_1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_scalar_U0_2",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_scalar_U1_2",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_Friedmann_U0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::rolling_Friedmann_U1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::deformation_value",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::deformation_gradient_0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::deformation_gradient_1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::deformation_gradient_2",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_00",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_01",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_02",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_10",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_12",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_20",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_21",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_Hessian_22",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::Hessian_tangent_kernel_0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::Hessian_tangent_kernel_1",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::Hessian_tangent_kernel_2",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::positive_definite_B",
+      "detail": {
+        "principal_minors": [
+          "2",
+          "5"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "name": "inverse::normal_rank",
+      "detail": "Matrix([[-2*t, 1, 0], [-3*t**2, 0, 1]])",
+      "passed": true
+    },
+    {
+      "name": "inverse::missing_square_changes_scalar_equation",
+      "deliberate_defect": "1",
+      "passed": true
+    },
+    {
+      "name": "inverse::Hessian_changes",
+      "deliberate_defect": "2",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_00",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_01",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_02",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_10",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_12",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_20",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_21",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::connection_correction_22",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::nu_deformation_vacuum_value",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::nu_deformation_vacuum_gradient",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::nu_mass_shift",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::vacuum_coupling",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::transfer_intercept",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::transfer_slope",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::k_inversion",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::mass_inversion",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::third_scale_prediction",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::identifiability_determinant",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::wrong_mass_intercept",
+      "deliberate_defect": "-M*(k - 1)*(k + 1)/k**2",
+      "passed": true
+    },
+    {
+      "name": "inverse::swapped_potential_force",
+      "deliberate_defect": "k*x*exp(-x)",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_k_1/100000",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_mass_1/100000",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_prediction_1/100000",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_k_1/100",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_mass_1/100",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_prediction_1/100",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_k_8/25",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_mass_8/25",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::synthetic_prediction_8/25",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::one_scale_family_first",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::one_scale_family_second",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "name": "inverse::distinct_mass_same_readout",
+      "detail": {
+        "mass1": "27/2",
+        "mass2": "57/2"
+      },
+      "passed": true
+    },
+    {
+      "name": "readout::Weyl_potential",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::radial_acceleration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::deflection_integrand",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::deflection_total",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::mass_normalization_cancellation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::ratio_log_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::radius_monotonicity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::zero_mass_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::force_series",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::ratio_series",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::external_spherical_Yukawa_kernel",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::uniform_ball_radial_integral",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::uniform_ball_small_mass",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::finite_body_ratio_cancellation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::trace_free_source",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "readout::wrong_force_without_derivative_factor",
+      "passed": true,
+      "detail": "k*m*mu*exp(-mu*r)/r"
+    },
+    {
+      "name": "readout::wrong_pressure_omission",
+      "passed": true,
+      "detail": "rho source remains nonzero for trace-free pressure=rho/3"
+    },
+    {
+      "name": "readout::synthetic_inverse_0.00001",
+      "passed": true,
+      "detail": [
+        "7.90664845742e-82",
+        "0.0",
+        "0.0"
+      ]
+    },
+    {
+      "name": "readout::light_integral_0.00001",
+      "passed": true,
+      "detail": "4.0"
+    },
+    {
+      "name": "readout::synthetic_inverse_0.01",
+      "passed": true,
+      "detail": [
+        "2.10843958865e-81",
+        "0.0",
+        "4.1356583211e-81"
+      ]
+    },
+    {
+      "name": "readout::light_integral_0.01",
+      "passed": true,
+      "detail": "4.0"
+    },
+    {
+      "name": "readout::synthetic_inverse_0.2",
+      "passed": true,
+      "detail": [
+        "0.0",
+        "0.0",
+        "0.0"
+      ]
+    },
+    {
+      "name": "readout::light_integral_0.2",
+      "passed": true,
+      "detail": "4.0"
+    },
+    {
+      "name": "scale::four_dimensional_action_scaling",
+      "passed": true
+    },
+    {
+      "name": "scale::variation_prefactor",
+      "passed": true
+    },
+    {
+      "name": "scale::vacuum_newton_cancellation",
+      "passed": true
+    },
+    {
+      "name": "scale::physical_hierarchy",
+      "passed": true
+    },
+    {
+      "name": "scale::units_invariance",
+      "passed": true
+    },
+    {
+      "name": "scale::prefactor_relation",
+      "passed": true
+    },
+    {
+      "name": "scale::worldline_coefficient",
+      "passed": true
+    },
+    {
+      "name": "scale::unknown_mass_coefficient_1/7",
+      "passed": true
+    },
+    {
+      "name": "scale::unknown_mass_m_1/7",
+      "passed": true
+    },
+    {
+      "name": "scale::known_mass_force_changes_1/7",
+      "passed": true
+    },
+    {
+      "name": "scale::physical_hierarchy_changes_1/7",
+      "passed": true
+    },
+    {
+      "name": "scale::dimensionless_vacuum_equation_1/7",
+      "passed": true
+    },
+    {
+      "name": "scale::unknown_mass_coefficient_2",
+      "passed": true
+    },
+    {
+      "name": "scale::unknown_mass_m_2",
+      "passed": true
+    },
+    {
+      "name": "scale::known_mass_force_changes_2",
+      "passed": true
+    },
+    {
+      "name": "scale::physical_hierarchy_changes_2",
+      "passed": true
+    },
+    {
+      "name": "scale::dimensionless_vacuum_equation_2",
+      "passed": true
+    },
+    {
+      "name": "scale::unknown_mass_coefficient_11",
+      "passed": true
+    },
+    {
+      "name": "scale::unknown_mass_m_11",
+      "passed": true
+    },
+    {
+      "name": "scale::known_mass_force_changes_11",
+      "passed": true
+    },
+    {
+      "name": "scale::physical_hierarchy_changes_11",
+      "passed": true
+    },
+    {
+      "name": "scale::dimensionless_vacuum_equation_11",
+      "passed": true
+    },
+    {
+      "name": "scale::positive_domain_required",
+      "passed": true
+    },
+    {
+      "name": "scale::nonselection_is_not_equal_known_mass_force",
+      "passed": true
+    }
+  ],
+  "units": {
+    "inverse": {
+      "passed": 64,
+      "failed": 0
+    },
+    "readout": {
+      "passed": 23,
+      "failed": 0
+    },
+    "scale": {
+      "passed": 24,
+      "failed": 0
+    }
+  },
+  "substantive_outputs": {
+    "inverse": {
+      "synthetic_examples": [
+        {
+          "k": "1/100000",
+          "mu_squared": "1/7",
+          "q_squared": [
+            "1/4",
+            "2",
+            "13/3"
+          ],
+          "h": [
+            "7/1100000",
+            "7/750000",
+            "91/9400000"
+          ]
+        },
+        {
+          "k": "1/100",
+          "mu_squared": "5/2",
+          "q_squared": [
+            "1/4",
+            "2",
+            "13/3"
+          ],
+          "h": [
+            "1/1100",
+            "1/225",
+            "13/2050"
+          ]
+        },
+        {
+          "k": "8/25",
+          "mu_squared": "1/1000",
+          "q_squared": [
+            "1/4",
+            "2",
+            "13/3"
+          ],
+          "h": [
+            "80/251",
+            "640/2001",
+            "4160/13003"
+          ]
+        }
+      ],
+      "rolling_example": {
+        "curve": [
+          "t",
+          "t**2",
+          "t**3"
+        ],
+        "H": "-9*t**5/5 - 4*t**3/3 - t + 10",
+        "base_potential": "-(1701*x**10 + 2340*x**8 - 2430*x**7*z - 1620*x**6*y + 1340*x**6 - 1800*x**5*z - 5400*x**5 - 1200*x**4*y + 75*x**4 - 1350*x**3*z - 3000*x**3 - 900*x**2*y + 13500*x**2*z - 225*x**2 + 9000*x*y + 900*x*z + 4500*x + 300*y - 22425)/150",
+        "deformation": "(-x**2 + y)*(-x**3 - 2*x**2 + 2*y + z)/2 + (-x**3 + z)*(-3*x**3 - x**2 + y + 3*z)/2",
+        "Hessian_on_curve": "Matrix([[-3*t**2*(-9*t**2 - 2*t) - 2*t*(-3*t**2 - 4*t), -3*t**2 - 4*t, -9*t**2 - 2*t], [-3*t**2 - 4*t, 2, 1], [-9*t**2 - 2*t, 1, 3]])"
+      }
+    },
+    "readout": {
+      "synthetic": [
+        {
+          "k": "0.00001",
+          "mu": "0.1",
+          "radii": [
+            "1",
+            "2",
+            "3"
+          ],
+          "excess": [
+            "0.00000995321159839555530480673965391080283314175897078441047261883048761358",
+            "0.000009824769036935782304039226103428473092303095075228188069736345139398105",
+            "0.000009630636868862332258869359131131619338369266015987082527839030868505277"
+          ],
+          "recovered_mu": "0.1",
+          "recovered_k": "0.00001",
+          "third_radius_prediction": "0.000009630636868862332258869359131131619338369266015987082527839030868505277"
+        },
+        {
+          "k": "0.01",
+          "mu": "1",
+          "radii": [
+            "1",
+            "2",
+            "3"
+          ],
+          "excess": [
+            "0.00735758882342884643191047540322921734891622262063535669015673603394923",
+            "0.004060058497098380756819984849174532102228946377287276444044766179622201",
+            "0.001991482734714557719173696626002471065267983687536928622705109104242427"
+          ],
+          "recovered_mu": "1.0",
+          "recovered_k": "0.01",
+          "third_radius_prediction": "0.001991482734714557719173696626002471065267983687536928622705109104242427"
+        },
+        {
+          "k": "0.2",
+          "mu": "10",
+          "radii": [
+            "1",
+            "2",
+            "3"
+          ],
+          "excess": [
+            "0.00009987984547746667337830133423321134252341979550644293236995687243219873",
+            "0.000000008656845214241942877456949596654448100778390557516235510483427578842489",
+            "0.0000000000005801726240680908255047815978494798181874160067140245858176257544375723"
+          ],
+          "recovered_mu": "10.0",
+          "recovered_k": "0.2",
+          "third_radius_prediction": "0.0000000000005801726240680908255047815978494798181874160067140245858176257544375723"
+        }
+      ]
+    },
+    "scale": {}
+  },
+  "checker_sha256": "e1946b6c429f633520b7e39895e8652e5a1cddefcbd8ad81b11fdcad8758ae2a",
+  "scope": "Conditional inverse and nonselection results; no observed fit or selected action/state/scale."
+}
+
+----- stderr -----
+

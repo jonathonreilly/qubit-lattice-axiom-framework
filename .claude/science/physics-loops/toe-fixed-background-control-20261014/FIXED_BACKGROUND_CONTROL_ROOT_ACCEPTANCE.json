@@ -1,0 +1,75 @@
+{
+  "accepted_utc": "2026-10-14T13:07:10.890684+00:00",
+  "disposition": "conditional_finite_fixed_background_supplied_control_theorem_accepted_without_mathematical_repair",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control/DERIVATION.md",
+    "sha256": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f",
+    "bytes": 30750
+  },
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control/FINAL_FREEZE.json",
+    "sha256": "bb4a0f9dd5ed9a87bd5bd4d943a1e5be50898a3d4a292a366ddec3f8766d3b59",
+    "bytes": 9971
+  },
+  "root_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/FIXED_BACKGROUND_CONTROL_ROOT_REVIEW.md",
+    "sha256": "a073cb3f6b6bdca90b32cc24c43b04e001d2e81fe83940e989e82ea9b5427ced",
+    "bytes": 9159
+  },
+  "root_preassessment": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/fixed_background_root_review/PRE_EXPOSURE_ASSESSMENT.md",
+    "sha256": "cc92a24ce338b0fe1aaaf11168609cb09dbcf56598d1624580f5f04f44e78d50",
+    "bytes": 7491
+  },
+  "root_first_body_exposure": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/fixed_background_root_review/FIRST_BODY_EXPOSURE.json",
+    "sha256": "87e53f0c9d06c1819c4ec2e3cd77d33d235f0d605c95ee9aa7b1e254727646b8",
+    "bytes": 629
+  },
+  "separate_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_review/REPORT.md",
+    "sha256": "fe3caa8302e272cbce29b0ee8965de25427fa06e508db16757b54fb517b0420a",
+    "bytes": 22375
+  },
+  "separate_review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_fixed_background_control_review/REVIEW_SEAL.json",
+    "sha256": "1ca67c5adc266e70244f8903d940ed6f122499fdf5985283449c19af539f7b46",
+    "bytes": 20965
+  },
+  "source_review_binding": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/fixed_background_root_review/SOURCE_REVIEW_BINDING.json",
+    "sha256": "0a88c30b07ba90667476dee328ea66f97f5e21fd30db69bcdaf57bac790ee790",
+    "bytes": 24757
+  },
+  "binding_attempts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/fixed_source_review_binding/EXECUTION.json",
+      "sha256": "864f2c8b5435e3075f6c3a40fde682f04704a94a4989a6aecdbd5cce135c8caa",
+      "bytes": 633
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/fixed_source_review_binding_repaired/EXECUTION.json",
+      "sha256": "b9175fcd1ed1c1dd18ba50f5706ad7ffdcc9cdb9c65d9e6ab7e621fb2900fed4",
+      "bytes": 633
+    }
+  ],
+  "scope": "Known fixed literal L4 H; bounded additive supported NN controls and nonnegative recurrence waits; finite effective full-phase certificate and arbitrary-reference/dirty-transit word approximation, with huge elapsed-time/precision costs explicit.",
+  "mathematical_parents": [
+    "joint literal interface34cbe355",
+    "full finite penalty/raw Hamiltonianbb2817d3",
+    "ideal neutral preparation0e002497",
+    "ideal coherent binary admission8abf93c7"
+  ],
+  "attribution_only": [
+    "finite compact-group recurrence/inverse-time mechanism; Genoni et al arXiv1110.5584v2"
+  ],
+  "independence_limit": "Same model family and prior source exposure; one separate exact-arithmetic fixture plus a guard of its saved artifacts, not two independent constructions.",
+  "source_mathematical_edits": 0,
+  "root_scientific_reruns": 0,
+  "identity_binding_mathematical_predicates": 0,
+  "source_only_assembly_may_proceed": true,
+  "future_publication_driver_accepted": false,
+  "retained_or_audit_status": false,
+  "no_native_autonomous_or_physical_identification": true,
+  "editable_prompt_files_changed": []
+}

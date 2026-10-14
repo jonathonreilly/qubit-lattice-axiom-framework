@@ -1,0 +1,46 @@
+{
+  "always_on_NN_geometric_and_clock_theorems_imported": false,
+  "ancestry_is_not_import": true,
+  "attribution_only": [
+    {
+      "graph_edge": false,
+      "role": "Genoni compact recurrence attribution only; oscillator theorem not imported",
+      "url": "https://arxiv.org/abs/1110.5584v2"
+    }
+  ],
+  "canonical_citation_count": 4,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "7c1c3bfd1787a1041c9c58d5f7c2a7a576892ce6a554b7c9cecbc61daa74453f",
+  "historical_role_strings_are_quotations": true,
+  "imported_complete_body_count": 4,
+  "mathematical_parent_count": 4,
+  "mathematical_parents": [
+    "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+    "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+    "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+    "coherent_binary_k_admission_bounded_theorem_note_2026-10-14"
+  ],
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    }
+  ],
+  "scope": "Current authoritative imports; original role/status/exposure records remain historical"
+}

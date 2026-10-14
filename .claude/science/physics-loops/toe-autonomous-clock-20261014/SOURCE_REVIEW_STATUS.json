@@ -1,0 +1,178 @@
+{
+  "all_input_operator_reference_and_dirty_transit_scope": true,
+  "fixed_L4_autonomous_clock_bridge_only": true,
+  "fixed_background_kept_through_full_waveform": true,
+  "full_elapsed_time_calibration_and_scalar_charged": true,
+  "historical_failures_and_source_exposure_preserved": true,
+  "historical_imported_roles_separated_from_current_status": true,
+  "mathematical_bodies_accepted": true,
+  "mathematical_core_edits": 0,
+  "native_measurement_photon_exports": false,
+  "new_independent_mathematical_review": false,
+  "new_publication_rendering_and_driver_review_required": true,
+  "no_go_packet_pass": false,
+  "positive_clock_total_generator_reserve_and_signed_program_distinguished": true,
+  "prior_acceptances": [
+    {
+      "file": "AUTONOMOUS_CLOCK_BRIDGE_ROOT_ACCEPTANCE.json",
+      "sha256": "2392d12e1f58b03985d6b7f8ab7007dedde836de9bd816f590db5470af76e61f",
+      "verbatim": {
+        "accepted_utc": "2026-10-14T13:30:29.144074+00:00",
+        "disposition": "conditional_analytic_source_accepted_without_mathematical_repair",
+        "editable_prompt_files_changed": [],
+        "future_publication_driver_accepted": false,
+        "future_source_assembly_accepted": false,
+        "independence": "Separate source-exposed same-family analytic review and one distinct exact rational fixture; root own assessment; not blind or model-diverse",
+        "mathematical_repairs_required": [],
+        "native_or_ordinary_NN_clock_claim": false,
+        "new_root_scientific_executions": 0,
+        "open_obligations": [
+          "same-cap ordinary-NN autonomous clock architecture",
+          "native clock fabrication and initial resource preparation",
+          "physical readout, autonomous stopping/reset and long-term records",
+          "full-duration calibration and practical compilation resources",
+          "physical energy and kinetic/continuum/photon identifications"
+        ],
+        "parent_source_acceptance": {
+          "bytes": 4352,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/FIXED_BACKGROUND_CONTROL_ROOT_ACCEPTANCE.json",
+          "sha256": "d14edde4e53c0ae04e2dabd868fec51ed566db415cb3841cdbf97fb0412ad093"
+        },
+        "retained_or_audit_status": false,
+        "root_binding": {
+          "bytes": 39760,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_root_review/SOURCE_REVIEW_BINDING.json",
+          "sha256": "9ca80a52018a2f9704bacf5839e4fd516272fc07fb404411b4ceccbaa47443a5"
+        },
+        "root_first_body_exposure": {
+          "bytes": 738,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_root_review/FIRST_BODY_EXPOSURE.json",
+          "sha256": "b8d869e645379403db286274b993e20e9eb7c431f59f2ac8a82c7d4d75a8374e"
+        },
+        "root_preassessment": {
+          "bytes": 8368,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_root_review/PRE_EXPOSURE_ASSESSMENT.md",
+          "sha256": "4fc9ebb6e7d8f2586cc6c521bfc345ebe88e48af268e3bc8f1ebbbb8c2a5df64"
+        },
+        "root_preassessment_seal": {
+          "bytes": 672,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_root_review/PRE_EXPOSURE_SEAL.json",
+          "sha256": "d134b657e0d272bb4ed389fecd779bdf50ee868ff7e69646e538d908e23dd1a1"
+        },
+        "root_review": {
+          "bytes": 11083,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/AUTONOMOUS_CLOCK_BRIDGE_ROOT_REVIEW.md",
+          "sha256": "f2a54cfaf67f0133e32facfd665a2e249c6bcb3ef863ec9084ef5a48d840ee1b"
+        },
+        "separate_review": {
+          "bytes": 31879,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge_review/REPORT.md",
+          "sha256": "197f21b909272fee3734397565ab89d771cfe427a3bbd12e17c4bb122473a112"
+        },
+        "separate_review_seal": {
+          "bytes": 22937,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge_review/REVIEW_SEAL.json",
+          "sha256": "b5379c2842966d2d9023dd86d762ad68686c2b4f5c660d13fb085bc0207b812b"
+        },
+        "source": {
+          "bytes": 35383,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge/DERIVATION.md",
+          "sha256": "5d9d8c3de4cf3c4ce229370370feaa0095699430a6dc5ec8604ca19db70819dc"
+        },
+        "source_assembly_authorized": true,
+        "source_freeze": {
+          "bytes": 5502,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge/FINAL_FREEZE.json",
+          "sha256": "c09e13b6b384ae8a66de6c42e0524af2608e9d7c58b6ef81ea2fd6157f3ce494"
+        }
+      }
+    },
+    {
+      "file": "AUTONOMOUS_CLOCK_BRIDGE_ASSEMBLY_ROOT_ACCEPTANCE.json",
+      "sha256": "4d40967284c6f647fe7aba600d1ba2783423d49624eedf274589cee402e882d5",
+      "verbatim": {
+        "accepted_utc": "2026-10-14T14:01:24.407113+00:00",
+        "actual_failed_outer": {
+          "bytes": 635,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/autonomous_clock_assembly_binding/EXECUTION.json",
+          "sha256": "3cb113ac46376bfc3963ae464cc24f33bab43aae99125aa2f0e1b563933dc49f"
+        },
+        "actual_repaired_outer": {
+          "bytes": 635,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/autonomous_clock_assembly_binding_repaired/EXECUTION.json",
+          "sha256": "d1a9973f9f3659f7c49793b3e5851aa1249fd9550b23193d28903a9be60d3463"
+        },
+        "candidate": {
+          "bytes": 42355,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge_source_assembly/CANDIDATE_NOTE.md",
+          "sha256": "fcc8fdc98019e9d5c2967b7fe8388279e73a6ad520d2b52486e70c201e0f9fd9"
+        },
+        "canonical_binding_complete": false,
+        "canonical_parents_now": 5,
+        "disposition": "Accepted source-only composition plus exact root recorder supplement; canonical fixed-background parent still pending.",
+        "editable_prompt_files_changed": [],
+        "files": 150,
+        "include_actual_failed_and_repaired_outer_streams": true,
+        "include_complete_root_composition_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_assembly_root_review",
+        "logical_aliases": 220,
+        "mathematical_predicates": 0,
+        "merged": false,
+        "new_publication_driver_accepted": false,
+        "objects": 107,
+        "outer_recorder_supplement": {
+          "bytes": 980,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_assembly_root_review/repaired_attempt/outer_recorder_preserved.py",
+          "sha256": "da261bb5dec8b8df4ccff258bc4cedf206f30b84b24e78c43e77d1606ab6f1ee"
+        },
+        "prior_source_acceptance": {
+          "bytes": 3945,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/AUTONOMOUS_CLOCK_BRIDGE_ROOT_ACCEPTANCE.json",
+          "sha256": "2392d12e1f58b03985d6b7f8ab7007dedde836de9bd816f590db5470af76e61f"
+        },
+        "publication_preparation_authorized_after_actual_fixed_parent": true,
+        "raw_accepted_parent_pending_canonical": 1,
+        "retained": false,
+        "root_binder": {
+          "bytes": 4265,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_assembly_root_review/bind_source.py",
+          "sha256": "3c36dae95ecfee3be0382dc22926443b233e838455d1604cd1ac92737d751b8e"
+        },
+        "root_binding": {
+          "bytes": 68753,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_assembly_root_review/repaired_attempt/SOURCE_BINDING.json",
+          "sha256": "79ee38cc548737f596fff853936b4916ceefd8bcd47ae14369d7c87048389043"
+        },
+        "root_failed_binder": {
+          "bytes": 4226,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_assembly_root_review/bind_source.failed_path_type.py",
+          "sha256": "26f24d919c38514d168f7b2bb53c11153730ce2e6e6a9949b9d64f8db8bf2dde"
+        },
+        "root_repair_diff": {
+          "bytes": 1253,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/autonomous_clock_assembly_root_review/repair.diff",
+          "sha256": "28affc5c9bc23a186392b65344ddfa8b8cf9d7692289287920d15e37a35c0b22"
+        },
+        "root_review": {
+          "bytes": 5991,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/AUTONOMOUS_CLOCK_BRIDGE_ASSEMBLY_ROOT_REVIEW.md",
+          "sha256": "8ebc2fda20e2023faf140a8d31c597b9ed4e7f8af6963b545fe7e4e04883c54e"
+        },
+        "scientific_reruns": 0,
+        "source_freeze": {
+          "bytes": 34412,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge_source_assembly/FINAL_FREEZE.json",
+          "sha256": "e79c1291bf85437561cdb4e2e9aaf3db7cee3b8c2481b55f1b479107ad5a775c"
+        },
+        "wrapper": {
+          "bytes": 6494,
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_autonomous_clock_bridge_source_assembly/wrappers/note_prefix.md",
+          "sha256": "f6e2281baf06e181b37d6a4005d1ef04e12defda284e69b08ea108a66b6a4870"
+        }
+      }
+    }
+  ],
+  "retained_audit_status": false,
+  "supplied_controls_clock_clean_resources_and_readout_contract_required": true,
+  "unchanged_complete_core_coverage_reused": true,
+  "whole_clock_register_couplings_and_separate_clock_budget_explicit": true
+}

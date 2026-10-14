@@ -1,6 +1,6 @@
 {
- "edge_count": 15992,
- "node_count": 7095,
+ "edge_count": 16009,
+ "node_count": 7098,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6677,6 +6677,10 @@
   "finite_time_star_energy_and_supply_bound_bounded_theorem_note_2026-09-24": {
    "deps_hash": "6ed39f12dd81",
    "out_degree": 2
+  },
+  "finite_waveform_clock_resource_sharpening_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "5def4db2d325",
+   "out_degree": 7
   },
   "finite_window_microscopic_energy_laws_bounded_theorem_note_2026-09-25": {
    "deps_hash": "c39d6945922c",
@@ -14217,6 +14221,14 @@
   "literal_l4_always_on_control_bounded_theorem_note_2026-10-14": {
    "deps_hash": "ea431c5a27de",
    "out_degree": 5
+  },
+  "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "397d01c4f37f",
+   "out_degree": 6
+  },
+  "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "0b4809b9c3bf",
+   "out_degree": 4
   },
   "literal_l4_nearest_neighbor_dynamics_bounded_theorem_note_2026-10-14": {
    "deps_hash": "6c59c27e295a",

@@ -1,0 +1,7 @@
+# Source and review history
+
+The original sharpening packet fa75eca3 recorded the apparatus parent as provisional at first exposure. Autonomous source acceptance 2392d12e arrived later and is preserved with that chronology. Sharpening proof ee00535b was separately reviewed with route/parent exposure, then conditionally accepted under 0ff32787. The selected pre-candidate fixture and post-exposure covariance check retain their actual timing and finite scopes; this was not a blind or model-diverse review.
+
+Source assembly 0c02cb2a preserves 157 files, 227 original aliases, 111 objects, the entire 61-file author and 119-file separate-review packages, the original root science record and both outer runs. Assembly acceptance 7727b52c followed the complete source/framing review b2c30845 and byte-binding 7347d65b. This publication archive additionally preserves the entire seven-file assembly-root directory, both actual binding/acceptance outer folders and recorder da261bb5.
+
+Original unavailable source endpoints, display limits, review tool-start and metadata-key failures, report precision repair, failed route controls and partial outputs remain. Missing historical outer child-source fields remain missing; actual binder self-pins and disposition-writer pins are distinct. Source identity is not mathematics. The new publication requires a separate exact driver-bound root decision. All subsequent publication attempts must preserve complete available INNER and separate OUTER streams, including pre-child launch failure.

@@ -1,0 +1,76 @@
+{
+  "accepted_utc": "2026-10-14T14:18:43.841379+00:00",
+  "authorized_next": "Source assembly only; no publication-driver or canonical execution authority",
+  "candidate": {
+    "bytes": 30068,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening/DERIVATION.md",
+    "sha256": "ee00535bee190c979743e274f8037fa239489959556bb03983fe0c76a11ea10c"
+  },
+  "candidate_freeze": {
+    "bytes": 12146,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening/FINAL_FREEZE.json",
+    "sha256": "fa75eca3a489d7004889f209ee7c9d554e165c616b04de5372950c6050466d7a"
+  },
+  "canonical_execution_authorized": false,
+  "disposition_writer": {
+    "bytes": 10638,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/clock_resource_root_review/write_disposition.py",
+    "sha256": "1a43400cee1f58e81be2c7e3e97c4a9954f36c31fb4a19c5e01ea95cfc6b654d"
+  },
+  "editable_prompt_files_changed": [],
+  "git_or_pr_actions_authorized_by_this_record": false,
+  "mathematical_repairs_required": [],
+  "parent_acceptance": {
+    "bytes": 3945,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/AUTONOMOUS_CLOCK_BRIDGE_ROOT_ACCEPTANCE.json",
+    "sha256": "2392d12e1f58b03985d6b7f8ab7007dedde836de9bd816f590db5470af76e61f"
+  },
+  "root_analytic_read": {
+    "bytes": 5352,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/clock_resource_root_review/ANALYTIC_READ.md",
+    "sha256": "80c08ea79da5a18c2edbaa20be0dd7eb7261c2e2796ba41ae8d2fbae2f607123"
+  },
+  "root_first_body_exposure": {
+    "bytes": 541,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/clock_resource_root_review/FIRST_BODY_EXPOSURE.json",
+    "sha256": "0295ead90f3bf21d7f42d17d4a38287f63a789fbd74f539126039a16ba0ed230"
+  },
+  "root_preassessment_seal": {
+    "bytes": 684,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/clock_resource_root_review/PRE_EXPOSURE_SEAL.json",
+    "sha256": "a35389ed164ae5e655b7b9a2542a2acd77cfd6b25cd2ca69ad372126465f8717"
+  },
+  "root_review": {
+    "bytes": 7747,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/CLOCK_RESOURCE_SHARPENING_ROOT_REVIEW.md",
+    "sha256": "778610e8e6a385168813f7a257f4308d17ba46ee806415d20bbc9a3723097e86"
+  },
+  "root_source_binding": {
+    "bytes": 33790,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/clock_resource_root_review/SOURCE_BINDING.json",
+    "sha256": "8a27025837f6c78b8fdfe2a28bdcf7ad4ea592fb6abe0a6f55ff3d3dcd38c4ed"
+  },
+  "separate_report": {
+    "bytes": 21718,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/REPORT.md",
+    "sha256": "91bba6f6e0dd76f81607bda601337a89951b08c47568225573340d6e3c572643"
+  },
+  "separate_review_seal": {
+    "bytes": 27138,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/joint_clock_resource_sharpening_review/REVIEW_SEAL.json",
+    "sha256": "480f4fa8d51eb68444022a506e2225381ece73fda838b94924fa6cddb08cdd0c"
+  },
+  "source_only_binding_receipt": {
+    "bytes": 625,
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/binary_admission_publication_root_review/clock_resource_binding/EXECUTION.json",
+    "sha256": "2c24b4a973bca3279508fd0c17e6bdcbdd301bc56e6f945e1ca960be335437f0"
+  },
+  "status": "conditional analytic source accepted without mathematical repair",
+  "verification_limits": [
+    "Full313-line analytic review and one separate exact pre-candidate finite fixture; not a retained audit.",
+    "Same-family/shared-parent/root-suggested-route exposure disclosed.",
+    "Literal full-H recurrence certificate/schedule not executed.",
+    "Native preparation, static physical calibration, all-site cap/local clock-data coupling, readout/stopping and physical-energy identification remain supplied/open.",
+    "Source hashes and receipt closure are zero-math bookkeeping."
+  ]
+}

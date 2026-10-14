@@ -1,0 +1,57 @@
+{
+  "ancestry_is_not_import": true,
+  "canonical_citation_count": 7,
+  "canonical_parent_binding_complete": true,
+  "complete_body": "ee00535bee190c979743e274f8037fa239489959556bb03983fe0c76a11ea10c",
+  "generic_clock_or_positive_kernel_novelty_claim": false,
+  "imported_complete_body_count": 7,
+  "mathematical_parent_count": 7,
+  "mathematical_parents": [
+    "literal_l4_autonomous_clock_bridge_bounded_theorem_note_2026-10-14",
+    "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+    "joint_even_matter_finite_link_interface_bounded_theorem_note_2026-10-14",
+    "finite_gauss_penalty_recovery_bounded_theorem_note_2026-10-14",
+    "fixed_neutral_ray_preparation_bounded_theorem_note_2026-10-14",
+    "coherent_binary_k_admission_bounded_theorem_note_2026-10-14",
+    "literal_l4_fixed_background_control_bounded_theorem_note_2026-10-14"
+  ],
+  "optimality_or_uniform_total_hardware_improvement": false,
+  "other_controller_or_history_theorem_imported": false,
+  "roles": [
+    {
+      "imported_theorem_result": true,
+      "key": "AUTONOMOUS_BRIDGE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FOURIER_CLOCK_SUPPLIER",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "JOINT_INTERFACE",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FINITE_PENALTY",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "NEUTRAL_PREPARATION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "BINARY_ADMISSION",
+      "role_class": "direct_scientific_premise"
+    },
+    {
+      "imported_theorem_result": true,
+      "key": "FIXED_BACKGROUND_CONTROL",
+      "role_class": "direct_scientific_premise"
+    }
+  ]
+}

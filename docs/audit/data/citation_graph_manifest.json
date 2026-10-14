@@ -1,6 +1,6 @@
 {
- "edge_count": 16035,
- "node_count": 7104,
+ "edge_count": 16042,
+ "node_count": 7107,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6382,6 +6382,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "exponential_scalar_calibrated_gravity_turning_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "fea88a0884af",
+   "out_degree": 2
+  },
   "exponential_scalar_calibration_branch_bounded_theorem_note_2026-10-14": {
    "deps_hash": "b6ef647eb231",
    "out_degree": 3
@@ -6389,6 +6393,10 @@
   "exponential_scalar_canonical_envelope_bounded_theorem_note_2026-10-14": {
    "deps_hash": "6c50507ded78",
    "out_degree": 3
+  },
+  "exponential_scalar_composite_charge_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "fea88a0884af",
+   "out_degree": 2
   },
   "exponential_scalar_curvature_loophole_bounded_theorem_note_2026-10-14": {
    "deps_hash": "ddd091f59a72",
@@ -6429,6 +6437,10 @@
   "exponential_scalar_local_response_bounded_theorem_note_2026-10-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "exponential_scalar_paired_gravity_certificate_bounded_theorem_note_2026-10-14": {
+   "deps_hash": "cc4e83a7b2d8",
+   "out_degree": 3
   },
   "exponential_scalar_physical_clock_bounded_theorem_note_2026-10-14": {
    "deps_hash": "9ac700bc4526",

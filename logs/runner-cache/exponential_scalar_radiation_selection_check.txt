@@ -1,0 +1,879 @@
+===== runner cache v1 =====
+runner: scripts/exponential_scalar_radiation_selection_check.py
+runner_sha256: 99c7919099d267f5bae1f66d1663d74b644305a870d82d3ab295d1eafbc84cb4
+input_fingerprint_sha256: b18f504aeed1284f82b26f206261790927264c78f7c572956f65723dd54bdf89
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.64
+status: ok
+----- stdout -----
+{
+  "transverse": {
+    "checks": [
+      {
+        "name": "transverse.pullback_00",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.pullback_01",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.pullback_10",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.pullback_11",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.Gamma_v_ell_ell_linear",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.Gamma_v_v_ell_at_zero",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.Gamma_ell_v_ell_at_zero",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.Gamma_ell_ell_ell_linear",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.mixed_inverse_metric_potential_force",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.ell_force_even",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_mass_force",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_block_00",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_block_01",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_block_10",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_block_11",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_characteristic_polynomial",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.growing_eigenvector",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.normal_hyperbolic_saddle",
+        "passed": true
+      },
+      {
+        "name": "transverse.original_mixed_connection_limit",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.original_normal_connection_limit",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.original_potential_coefficient",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.x_roots",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.x_to_ratio_clock_shift",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.energy_ratio",
+        "passed": true,
+        "residual": "0"
+      },
+      {
+        "name": "transverse.damage.omitted_inverse_mixed_force",
+        "passed": true
+      },
+      {
+        "name": "transverse.damage.omitted_original_mixed_connection",
+        "passed": true
+      },
+      {
+        "name": "transverse.damage.x_decay_does_not_imply_ratio_decay",
+        "passed": true
+      },
+      {
+        "name": "transverse.scope.fast_transverse_mode_also_exists",
+        "passed": true
+      }
+    ],
+    "metric": "Matrix([[4*b/(3*(v**2 + 1)), 4*b*v/(3*(v**2 + 1))], [4*b*v/(3*(v**2 + 1)), b*(4*v**2 + 3)/(3*(v**2 + 1))]])",
+    "inverse_metric": "Matrix([[(4*v**4 + 7*v**2 + 3)/(4*b), (-v**3 - v)/b], [(-v**3 - v)/b, (v**2 + 1)/b]])",
+    "normal_jacobian": "Matrix([[0, 1], [1 - (2*k + 2)/(12*(2*k/3 + 2/3)), -1]])"
+  },
+  "scope": "Supplied action, fixed-k ideal radiation and local linear slow mode; no observed initial-state derivation or likelihood.",
+  "matrix": "Matrix([[0, 0, 1, 0], [0, 0, -k*(3*k - 1)/(sqrt(1 - k)*sqrt(3*k + 1)), 1], [4*(3*k**3 + 29*k**2 - 9*k - 3)/((k + 3)*(3*k - 1)**2), 24*sqrt(1 - k)*sqrt(3*k + 1)/((k + 3)*(3*k - 1)**2), -1, 12*sqrt(1 - k)*(k + 1)*sqrt(3*k + 1)/((k + 3)*(3*k - 1)**2)], [2*sqrt(1 - k)*(7*k**2 - 2*k - 1)/((k - 1)*(k + 1)*sqrt(3*k + 1)), -4/(k + 1), -2*(k + 1)/(sqrt(1 - k)*sqrt(3*k + 1)), -1]])",
+  "characteristic_polynomial": "(9*k**3*lambda**4 + 18*k**3*lambda**3 - 3*k**3*lambda**2 - 12*k**3*lambda + 3*k**2*lambda**4 + 6*k**2*lambda**3 + 43*k**2*lambda**2 + 40*k**2*lambda - 48*k**2 - 5*k*lambda**4 - 10*k*lambda**3 - k*lambda**2 + 4*k*lambda + 16*k + lambda**4 + 2*lambda**3 + 17*lambda**2 + 16*lambda)/((k + 1)*(3*k - 1)**2)",
+  "checks": [
+    {
+      "name": "action.lambda_y_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.physical_clock_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.vacuum_coupling",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.vacuum_J",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.invariant_plane_potential",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.invariant_plane_Ku",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.invariant_plane_Ky",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.transverse_metric_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.transverse_potential_curvature",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.full_ell_metric",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.large_y_metric_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.large_y_potential_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.fixed_physical_y_u_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "action.ell_gradient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.Friedmann_constraint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.Raychaudhuri",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.lowered_u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.lowered_ell",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.actual_u_matches_lowered_solution",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.actual_ell_matches_lowered_solution",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "flow.Jordan_clock_conservation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.Hbar",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.h",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_point.T",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.characteristic_polynomial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.n_above_four",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.S_above_sixteen",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.ratio_P_over_S",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.k_quadratic_bound",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.discriminant_bound",
+      "passed": true
+    },
+    {
+      "name": "spectrum.slow_root_series",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.weak_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spectrum.simple_zero_root",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "rate.sign_factorization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "rate.L_positive_decomposition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "rate.L_lower_bound_positive",
+      "passed": true
+    },
+    {
+      "name": "rate.large_factor_positive",
+      "passed": true
+    },
+    {
+      "name": "rate.monotonicity_domain",
+      "passed": true
+    },
+    {
+      "name": "damage.omitted_clock_term",
+      "passed": true,
+      "residual": "-24*k*lambda*(lambda - 1)/((k + 3)*(3*k - 1))"
+    },
+    {
+      "name": "damage.wrong_series_coefficient",
+      "passed": true
+    },
+    {
+      "name": "damage.exact_rate_equals_k",
+      "passed": true
+    },
+    {
+      "name": "scope.nonvacuum_example",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "scope.nonvacuum_g_is_not_k",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.000001.matrix_spectrum",
+      "passed": true,
+      "max_error": "4.46770338881e-80"
+    },
+    {
+      "name": "numeric.k0.000001.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.000001.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.000001.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.000001.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.000001.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.00001.matrix_spectrum",
+      "passed": true,
+      "max_error": "8.43375835458e-81"
+    },
+    {
+      "name": "numeric.k0.00001.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.00001.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.00001.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.00001.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.00001.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.001.matrix_spectrum",
+      "passed": true,
+      "max_error": "4.22872251863e-80"
+    },
+    {
+      "name": "numeric.k0.001.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.001.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.001.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.001.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.001.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.01.matrix_spectrum",
+      "passed": true,
+      "max_error": "2.6669885636e-80"
+    },
+    {
+      "name": "numeric.k0.01.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.01.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.01.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.01.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.01.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.1.matrix_spectrum",
+      "passed": true,
+      "max_error": "6.53666910593e-80"
+    },
+    {
+      "name": "numeric.k0.1.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.1.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.1.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.1.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.1.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.3.matrix_spectrum",
+      "passed": true,
+      "max_error": "2.25576048561e-77"
+    },
+    {
+      "name": "numeric.k0.3.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.3.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.3.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.3.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.3.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.32.matrix_spectrum",
+      "passed": true,
+      "max_error": "7.48554274408e-77"
+    },
+    {
+      "name": "numeric.k0.32.Hurwitz",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.32.bounds",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.32.rate_bound",
+      "passed": true
+    },
+    {
+      "name": "numeric.k0.32.slow_retention",
+      "passed": true
+    },
+    {
+      "name": "scope.k0.32.fast_mode_not_subject_to_slow_bound",
+      "passed": true
+    },
+    {
+      "name": "transverse.pullback_00",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.pullback_01",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.pullback_10",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.pullback_11",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.Gamma_v_ell_ell_linear",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.Gamma_v_v_ell_at_zero",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.Gamma_ell_v_ell_at_zero",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.Gamma_ell_ell_ell_linear",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.mixed_inverse_metric_potential_force",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.ell_force_even",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_mass_force",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_block_00",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_block_01",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_block_10",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_block_11",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_characteristic_polynomial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.growing_eigenvector",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.normal_hyperbolic_saddle",
+      "passed": true
+    },
+    {
+      "name": "transverse.original_mixed_connection_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.original_normal_connection_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.original_potential_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.x_roots",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.x_to_ratio_clock_shift",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.energy_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transverse.damage.omitted_inverse_mixed_force",
+      "passed": true
+    },
+    {
+      "name": "transverse.damage.omitted_original_mixed_connection",
+      "passed": true
+    },
+    {
+      "name": "transverse.damage.x_decay_does_not_imply_ratio_decay",
+      "passed": true
+    },
+    {
+      "name": "transverse.scope.fast_transverse_mode_also_exists",
+      "passed": true
+    }
+  ],
+  "rates": [
+    {
+      "k": "0.000001",
+      "slow_eigenvalue": "-0.0000009999978124932109405422729427128354469335",
+      "linear_relaxation_e_folds": "1000002.187511574255877557931534409287916",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.999976000340496598963838447292562755272",
+      "spectrum": [
+        [
+          "-0.000000999997812493210940542272942713",
+          "0.0"
+        ],
+        [
+          "-0.999999000002187506789059457727",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "3.96863742365250458444242670928"
+        ],
+        [
+          "-0.5",
+          "-3.96863742365250458444242670928"
+        ]
+      ]
+    },
+    {
+      "k": "0.00001",
+      "slow_eigenvalue": "-0.00000999978124321096792602478986136434447681",
+      "linear_relaxation_e_folds": "100002.1876157459003606689360945234745243",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.9997600340465992008697104806872493879749",
+      "spectrum": [
+        [
+          "-0.00000999978124321096792602478986136",
+          "0.0"
+        ],
+        [
+          "-0.99999000021875678903207397521",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "3.96873154062105899914821415028"
+        ],
+        [
+          "-0.5",
+          "-3.96873154062105899914821415028"
+        ]
+      ]
+    },
+    {
+      "k": "0.001",
+      "slow_eigenvalue": "-0.0009978057140164061748003167856473435755385",
+      "linear_relaxation_e_folds": "1002.199111463053564145669922662490532647",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.9763371251129110580376427028037264792876",
+      "spectrum": [
+        [
+          "-0.000997805714016406174800316785647",
+          "0.0"
+        ],
+        [
+          "-0.999002194285983593825199683214",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "3.97912262291487851813790396412"
+        ],
+        [
+          "-0.5",
+          "-3.97912262291487851813790396412"
+        ]
+      ]
+    },
+    {
+      "k": "0.01",
+      "slow_eigenvalue": "-0.009774495076117807940634525197773629553085",
+      "linear_relaxation_e_folds": "102.307074914111646762266619307611125187",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.7908967253880971107206557732087991170724",
+      "spectrum": [
+        [
+          "-0.00977449507611780794063452519777",
+          "0.0"
+        ],
+        [
+          "-0.990225504923882192059365474802",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "4.07716054084491588955299326022"
+        ],
+        [
+          "-0.5",
+          "-4.07716054084491588955299326022"
+        ]
+      ]
+    },
+    {
+      "k": "0.1",
+      "slow_eigenvalue": "-0.07204887404963625981446897366572952156903",
+      "linear_relaxation_e_folds": "13.87946741972782460233774651577676509015",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.1774310888655909586659042105152053082759",
+      "spectrum": [
+        [
+          "-0.0720488740496362598144689736657",
+          "0.0"
+        ],
+        [
+          "-0.927951125950363740185531026334",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "5.55245079979989318539006355145"
+        ],
+        [
+          "-0.5",
+          "-5.55245079979989318539006355145"
+        ]
+      ]
+    },
+    {
+      "k": "0.3",
+      "slow_eigenvalue": "-0.02401935694075680593396132915589595134304",
+      "linear_relaxation_e_folds": "41.63308794929344315705234770390602983586",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.561881353256607385618449805979791678184",
+      "spectrum": [
+        [
+          "-0.0240193569407568059339613291559",
+          "0.0"
+        ],
+        [
+          "-0.975980643059243194066038670844",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "39.6837936776398706192663593634"
+        ],
+        [
+          "-0.5",
+          "-39.6837936776398706192663593634"
+        ]
+      ]
+    },
+    {
+      "k": "0.32",
+      "slow_eigenvalue": "-0.009857563759086530298268410817562197289346",
+      "linear_relaxation_e_folds": "101.4449436432219315832202957926756949828",
+      "slow_mode_retained_after_24_Einstein_e_folds": "0.7893215261223604456476299988322785110711",
+      "spectrum": [
+        [
+          "-0.00985756375908653029826841081756",
+          "0.0"
+        ],
+        [
+          "-0.990142436240913469701731589182",
+          "0.0"
+        ],
+        [
+          "-0.5",
+          "99.6733191111749183142433308455"
+        ],
+        [
+          "-0.5",
+          "-99.6733191111749183142433308455"
+        ]
+      ]
+    }
+  ],
+  "exposed_proxy": {
+    "b": "1/79999",
+    "DeltaN": "24",
+    "role": "Previously exposed conditional development illustration only",
+    "strict_retention_lower_bound": "0.999700041246578314250563180007686960149979054"
+  },
+  "counts": {
+    "passed": 117,
+    "failed": 0
+  }
+}
+
+----- stderr -----
+

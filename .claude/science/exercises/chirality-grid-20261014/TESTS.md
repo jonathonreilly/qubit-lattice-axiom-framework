@@ -18,3 +18,5 @@ Every test was pre-registered in its folder's `PREREG.md` before it ran. Results
 | K2b T1, T2, V1–V5 | kills/K2b | torus PASS-at-power (Fejér); PV-DWF and Shamir negative (Fejér) | — (scope as K2) |
 | K3 T1, T1F | kills/K3 | KILL-(b)-READING; NET-GAIN | — |
 | K2c (hard-support RP) | kills/K2c | **running** | — |
+
+**Update (18:36Z).** K2c finished. Under X3's hard measure, the as-registered searches are PASS-at-power, which turned out to be masking. The V2 W-matched follow-up gives a **FAIL on open time and the torus** (same-family; codex referee running).

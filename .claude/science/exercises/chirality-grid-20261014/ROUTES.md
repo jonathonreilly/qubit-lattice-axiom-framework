@@ -166,3 +166,23 @@ Report: `kills/K2/KILL_REPORT.md`. Same-family agent; **codex referee running si
 
 ### Consequence for K2b (same family; not refereed)
 K2b's searches used K2's Fejér-weighted measure. Its open-lattice negatives and the Pauli–Villars domain-wall negatives therefore carry the same scope limit until rerun with the hard-support measure. The bare-5D reflection-positivity control is a proved Osterwalder–Seiler case.
+
+## K2c (17:31–18:35Z): the hard admissibility measure, i.e. X3's exact measure
+
+Report: `kills/K2c/K2c_REPORT.md`. Same-family agent; **codex referee running since 18:33Z**.
+
+- **Pure gauge, hard measure:**
+  - RP with 2 crossing plaquettes (proved: the coefficients are squares);
+  - not RP with an odd number, checked at 3 (−8.9e-3);
+  - 3D/4D slices suggested not RP.
+- **K2b's searches rerun under the hard measure:** all PSD, because of masking by a cusp in the boundary-Wilson-line factor (2δ − |W_b − W_a|)₊.
+- **"W-matched" pools** (gauge-invariant test functions with a common boundary Wilson line) show the hard-measure overlap kernel **certified negative**:
+  - open time: 4/4, −5e-5 to −1.3e-4 relative;
+  - **antiperiodic torus**: Lt = 12 gives −6.3e-6, Lt = 16 gives −5.1e-6 relative;
+  - controls: Wilson + hard and pure gauge are PSD on the same pools;
+  - independent builders reproduce to all digits.
+- **PV-subtracted DWF (L_s = 4, 8) and the Shamir overlap** are also negative. The bare 5D determinant is PSD.
+- **Reading (pending referee):**
+  - this overturns the K2 referee's hard-measure correction;
+  - L3g fails for X3's exact measure and on the torus, in the 2D U(1) vector-like proxy;
+  - the X3 contingency is triggered: the real-time branch needs Π-W, or 5D fermions without PV fields (F2-R's finite-n price).

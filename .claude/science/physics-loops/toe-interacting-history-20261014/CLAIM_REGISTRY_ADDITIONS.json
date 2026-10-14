@@ -1,0 +1,30 @@
+{
+  "binding_complete": true,
+  "direct_edges": [
+    {
+      "from": "interacting_controller_history_application_bounded_theorem_note_2026-10-14",
+      "to": "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14"
+    },
+    {
+      "from": "interacting_controller_history_application_bounded_theorem_note_2026-10-14",
+      "to": "finite_chain_energy_history_bounded_theorem_note_2026-10-14"
+    }
+  ],
+  "expected_delta": {
+    "edges": 2,
+    "nodes": 1,
+    "roots": 0
+  },
+  "new_roots": [],
+  "nodes": [
+    {
+      "claim_id": "interacting_controller_history_application_bounded_theorem_note_2026-10-14",
+      "deps": [
+        "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14",
+        "finite_chain_energy_history_bounded_theorem_note_2026-10-14"
+      ],
+      "path": "docs/INTERACTING_CONTROLLER_HISTORY_APPLICATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "runner": "scripts/interacting_controller_history_application_identity_2026_10_14.py"
+    }
+  ]
+}

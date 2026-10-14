@@ -1,0 +1,114 @@
+{
+  "accepted_wrapper_edit_scope": "parent links and publication/source status only; full original/current diff",
+  "additional_mathematical_body_edits": [],
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_history_source_assembly/CANDIDATE.md",
+      "accepted_candidate_sha256": "99465a26b44fe9bc3df192fc587e79cd2326d923033b664c60e4405ecd84de99",
+      "context_lines": 3,
+      "diff": "diffs/complete_publication.diff.gz",
+      "diff_bytes": 7816,
+      "diff_sha256": "80b0bf4694259470f9a4ae856938900e0d9d908544095e17cc7a64f99bf32e56",
+      "diff_stored_sha256": "c43cbb0490c3b25dadb5ce0db293406ff8ed27251419ea8866fee16dd29e7dda",
+      "fromfile": "accepted/CANDIDATE.md",
+      "note": "docs/INTERACTING_CONTROLLER_HISTORY_APPLICATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 10529,
+          "first_line": 1,
+          "kind": "rendered_wrapper",
+          "last_line": 81,
+          "replacements": [
+            {
+              "original": "canonical_parent_binding_complete: false",
+              "rendered": "canonical_parent_binding_complete: true\nstatus: proposed_retained\nupstream_dependencies: [\"interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14\", \"finite_chain_energy_history_bounded_theorem_note_2026-10-14\"]\nrunner: scripts/interacting_controller_history_application_identity_2026_10_14.py",
+              "scope": "parent link or source/publication status only"
+            },
+            {
+              "original": "next_trace_action: root binds the interacting-controller canonical parent and reviews publication integration",
+              "rendered": "next_trace_action: root reviews the frozen publication driver and supplies separate source-integration acceptance before canonical execution",
+              "scope": "parent link or source/publication status only"
+            },
+            {
+              "original": "[Interacting-copy controller](archive/parents/IC_DERIVATION.md)",
+              "rendered": "[Interacting-copy controller](INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+              "scope": "parent link or source/publication status only"
+            },
+            {
+              "original": "[Fixed-history application](archive/parents/FH_APPLICATION.md)",
+              "rendered": "[Fixed-history application](FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+              "scope": "parent link or source/publication status only"
+            },
+            {
+              "original": "Its future canonical citation is pending; no canonical filename or identity is invented.",
+              "rendered": "The canonical note has SHA `f19a05ddea11fd3bd0cf3d463491707fb1ca106fab32611e2fd27361e468aa28`, actually committed in regular OPEN PR9533 at `bf476b0c6c1dfa4938a5db99a617177272eb4ca4`. Complete direct-body extraction is recorded in `PARENT_BINDINGS.json`.",
+              "scope": "parent link or source/publication status only"
+            },
+            {
+              "original": "**Current status: accepted conditional analytic source, prepared here for publication review.**",
+              "rendered": "**Current status: accepted conditional analytic source; proposed_retained is a target, not an audit outcome.**",
+              "scope": "parent link or source/publication status only"
+            },
+            {
+              "original": "Before canonical integration, root must bind the accepted interacting-controller source to its actual canonical file and verified extraction, recheck the fixed-history parent on the chosen base, and replace the two packet-local parent links with reviewed canonical links. Evidence relocation, any canonical identity/helper runner declaration and its restricted packet closure must be resolved on that same tree. Canonical driver/cache, citation graph and combined integration validation remain unrun.",
+              "rendered": "The two canonical parent links and complete direct-body extractions are verified on actual parent `bf476b0c6c1dfa4938a5db99a617177272eb4ca4`, regular OPEN PR9533. Its source-only publication packet records both exact canonical hashes and all conditional import roles. Root then reviews the separate driver-bound source-integration acceptance before canonical execution. The primary runner `scripts/interacting_controller_history_application_identity_2026_10_14.py` performs source identity/reconstruction only, with zero mathematical predicates. Canonical driver/cache, citation graph and combined integration validation remain unrun by this preparer.",
+              "scope": "parent link or source/publication status only"
+            }
+          ],
+          "sha256": "c573868918153514fb7b579813700d6c28f7b2ac7af9b48ef02c2b84ad45654f",
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_history_source_assembly/WRAPPER.md",
+          "source_sha256": "a052b722af70f68c9e19711dc678da6d3f0ed7dfb5f30203cc4aa3e2a4775393"
+        },
+        {
+          "byte_offset": 10529,
+          "bytes": 1,
+          "first_line": 82,
+          "kind": "literal_framing",
+          "last_line": 82,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        },
+        {
+          "additional_mathematical_body_edits": [],
+          "byte_offset": 10530,
+          "bytes": 35897,
+          "expected_slice_sha256": "603d0db2940710d291aa6025a6ae2ed1d5d5f9a1a0212e12e8834f3f300714e0",
+          "first_line": 83,
+          "kind": "accepted_core_slice",
+          "last_line": 330,
+          "sha256": "603d0db2940710d291aa6025a6ae2ed1d5d5f9a1a0212e12e8834f3f300714e0",
+          "source_line_end": 248,
+          "source_line_start": 1,
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_history_source_assembly/archive/history_application/DERIVATION_V2.md",
+          "source_sha256": "603d0db2940710d291aa6025a6ae2ed1d5d5f9a1a0212e12e8834f3f300714e0"
+        },
+        {
+          "byte_offset": 46427,
+          "bytes": 56,
+          "first_line": 331,
+          "kind": "literal_framing",
+          "last_line": 332,
+          "sha256": "e949fb1ca2cda97f365b11f8473c3827a24797bc107c1cad2f3b7f8b7e0f2c92",
+          "text": "\n<!-- END UNCHANGED ACCEPTED HISTORY APPLICATION V2 -->\n"
+        }
+      ],
+      "published_bytes": 46483,
+      "published_lines": 332,
+      "published_sha256": "869a9e7faa93268b726d45d3361e6c0b461ec4b48d40a681d724d3e016f5f5eb",
+      "stored_bytes": 2882,
+      "tofile": "docs/INTERACTING_CONTROLLER_HISTORY_APPLICATION_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "source_freeze_sha256": "10e8257821ccafa1f0c919e5915f8b20f4928fb36f1824377454105526402eca",
+  "wrapper_diff": {
+    "context_lines": 3,
+    "diff": "diffs/wrapper.diff.gz",
+    "diff_bytes": 7754,
+    "diff_sha256": "16cedb52f06fb600ffb52be073433034f274a6161ebb366531e13a65b41206b4",
+    "diff_stored_sha256": "080190aae77c7fc4e9a32657be8d0a41522ebd989055beb6489eddb26d9ddd9a",
+    "fromfile": "accepted/WRAPPER.md",
+    "stored_bytes": 2877,
+    "tofile": "publication/WRAPPER.md"
+  }
+}

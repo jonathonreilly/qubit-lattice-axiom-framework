@@ -1,0 +1,48 @@
+{
+  "accepted_wrapper_edit_scope": "parent links and publication/source status only; full original/current diff",
+  "actual_pointer_work_and_imperfect_completion_energy_retained": true,
+  "broad_precision_class_not_replaced_by_narrow_supplement": true,
+  "fixed_finite_protocol_only": true,
+  "full_unnormalized_CQ_reference_output": true,
+  "kinetic_joint_limit_proved": false,
+  "mathematical_core_edits": 0,
+  "mathematical_record_pinching_distinct_from_physical_apparatus": true,
+  "native_realization_proved": false,
+  "new_independent_mathematical_review": false,
+  "no_go_packet_pass": false,
+  "normalized_rare_branch_control": false,
+  "original_physical_chain_identification": true,
+  "physical_measurement_apparatus_supplied": false,
+  "preparation_sufficiency_not_necessity": true,
+  "publication_runtime_executed_by_source_preparer": false,
+  "pulled_back_positive_Fock_weight": true,
+  "retained_audit_status": false,
+  "scalar_clock_padding_distinct_from_idle_steps": true,
+  "source_assembly_root_acceptance_sha256": "d1fd07a79e63bbf27c045e36774e3870009f0c0c87c88ed89a53e9f224ceda5d",
+  "source_assembly_root_review_sha256": "af2dc4c7126057e4219624a71c3697ff6628b46b668170efd8212aa271947ee8",
+  "source_review_coverage_verbatim": {
+    "accepted_core_sha256": "603d0db2940710d291aa6025a6ae2ed1d5d5f9a1a0212e12e8834f3f300714e0",
+    "assembly_freeze_sha256": "10e8257821ccafa1f0c919e5915f8b20f4928fb36f1824377454105526402eca",
+    "assembly_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_history_source_assembly",
+    "candidate_sha256": "99465a26b44fe9bc3df192fc587e79cd2326d923033b664c60e4405ecd84de99",
+    "canonical_execution_authorized": false,
+    "disposition": "accepted_for_source_only_publication_preparation_with_pending_actual_IC_parent_binding",
+    "editable_prompt_files_changed": [],
+    "expected_external_scientific_roles": [
+      "interacting_controller",
+      "fixed_history"
+    ],
+    "pending": [
+      "Actual published IC canonical source/extraction and head binding",
+      "Complete wrapper relocation/status diff",
+      "New publication code and exact input closure review"
+    ],
+    "root_review_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/history_assembly_root_review/REPORT.md",
+    "root_review_sha256": "af2dc4c7126057e4219624a71c3697ff6628b46b668170efd8212aa271947ee8",
+    "scientific_runs": 0,
+    "utc": "2026-10-14T06:02:43.532266+00:00",
+    "wrapper_sha256": "a052b722af70f68c9e19711dc678da6d3f0ed7dfb5f30203cc4aa3e2a4775393"
+  },
+  "supplied_computable_U_and_circuit_to_history_certificate": true,
+  "unchanged_complete_core_coverage_reused": true
+}

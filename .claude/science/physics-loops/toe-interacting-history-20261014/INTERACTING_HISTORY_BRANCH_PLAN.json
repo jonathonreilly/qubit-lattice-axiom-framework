@@ -1,0 +1,8 @@
+{
+  "base": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+  "binding_complete": true,
+  "branch": "physics-loop/toe-interacting-history-20261014",
+  "branch_created_by_source_preparer": false,
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9533",
+  "publication_ancestry_is_not_mathematical_dependency": true
+}

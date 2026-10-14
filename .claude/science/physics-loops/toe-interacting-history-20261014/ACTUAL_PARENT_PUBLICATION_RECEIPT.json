@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-14T06:16:52.394366+00:00",
+  "actual_pr": {
+    "baseRefName": "physics-loop/toe-onsite-controller-20261014",
+    "body": "A static finite controller now approximates a supplied computable unitary on the original interacting source chain, including passive references. The construction uses supplied identical chains, clock-conditioned crossed bonds and finite-range interactions of arity at most six. It gives a positive full-space Hamiltonian, explicit exponential resource bounds, precision estimates and actual-energy accounting. Native preparation, stopping and terminal readout/reset remain open.\n\nThe note preserves all three complete reviewed proof bodies, the fuel-width counterexample and its correction. Broad copy-mismatch/nonunitary-block estimates and the narrower exact-copy/unitary-block fuel ledger have separate hypotheses. Supplied-copy partial swaps, Hamiltonian computation and perfect transfer are attributed prior machinery. The history application is separate.\n\nRoot review and a separate source-exposed mathematical review cover the conditional argument. Historical finite controls retain their actual scope; the large-M calculation is a channel superoperator, not a full apparatus simulation or diamond-norm certificate. Source integration verified all 118 staged paths, syntax, metadata, links, vocabulary, four integrity controls, the identity-only cache and preservation of existing graph objects. The graph adds one root and no scientific dependency edges; PR #9531 supplies Git ancestry only.\n\nThose integration checks execute zero mathematical predicates. The focused existing-ledger checker returned an empty checked list and proves no scientific claim. Complete available raw streams and receipts are preserved. Combined current-main validation, strict audit lint and independent retained audit remain later obligations; this PR does not confer retained status.\n",
+    "headRefName": "physics-loop/toe-interacting-controller-20261014",
+    "headRefOid": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+    "isDraft": false,
+    "number": 9533,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "Prove conditional autonomous control of an interacting source",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9533"
+  },
+  "commit": {
+    "utc": "2026-10-14T06:15:09.434109+00:00",
+    "branch": "physics-loop/toe-interacting-controller-20261014",
+    "parent": "84db416c9f96dafeb6d54dc8d8edd39110dfebc8",
+    "head": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+    "tree": "95442bbfb2411b3d846a8b055cb38debf1aeed58",
+    "exact_paths": 118,
+    "clean": true,
+    "verify_run": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_copy_publication_execution/20261014T060745_verify_09c5c99d505e",
+    "verify_manifest_sha256": "cde40b44e784a06f5d71e403d5e725c5456254061647841d80e79221963a9b3a",
+    "mathematical_predicates_executed": 0,
+    "retained_audit": false
+  },
+  "note_path": "docs/INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+  "note_sha256": "f19a05ddea11fd3bd0cf3d463491707fb1ca106fab32611e2fd27361e468aa28",
+  "nonforce_push": true,
+  "attached_to_chat": true,
+  "formal_retained_audit": false,
+  "ci_status_is_only_actual_return": [],
+  "attachment_confirmed_utc": "2026-10-14T06:17:39.364637+00:00"
+}

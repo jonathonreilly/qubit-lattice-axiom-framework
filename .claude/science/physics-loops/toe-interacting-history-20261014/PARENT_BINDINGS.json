@@ -1,0 +1,121 @@
+{
+  "actual_parent_head": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+  "actual_parent_pr": {
+    "baseRefName": "physics-loop/toe-onsite-controller-20261014",
+    "headRefName": "physics-loop/toe-interacting-controller-20261014",
+    "headRefOid": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+    "isDraft": false,
+    "number": 9533,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9533"
+  },
+  "binding_complete": true,
+  "canonical_core_maps": [
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 62806,
+      "byte_start_inclusive": 22050,
+      "canonical_bytes": 75695,
+      "canonical_path": "docs/INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "f19a05ddea11fd3bd0cf3d463491707fb1ca106fab32611e2fd27361e468aa28",
+      "complete_direct_body": true,
+      "first_line": 195,
+      "key": "interacting_controller",
+      "last_line": 523,
+      "occurrences": 1,
+      "source_bytes": 40756,
+      "source_lines": 329,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_history_source_assembly/archive/parents/IC_DERIVATION.md",
+      "source_sha256": "3c02940e2d4f3eb519f459dd658950df77662c7bd431500e52f2509658ed94fe"
+    },
+    {
+      "body_edits": [],
+      "byte_end_exclusive": 227225,
+      "byte_start_inclusive": 215172,
+      "canonical_bytes": 227248,
+      "canonical_path": "docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "839547b9ba88ecb37d72ab43094f02a34f6ac04bd14700bab034fbd99b0e0c2d",
+      "complete_direct_body": true,
+      "first_line": 3328,
+      "key": "fixed_history",
+      "last_line": 3406,
+      "occurrences": 1,
+      "source_bytes": 12053,
+      "source_lines": 79,
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/interacting_history_source_assembly/archive/parents/FH_APPLICATION.md",
+      "source_sha256": "7fe0df39ecad4aafbbbbfeeae83d2e2372f6527afbaf04223d9ab43dd5ac99b1"
+    }
+  ],
+  "direct_edges_verified": true,
+  "markdown_citations": [
+    {
+      "claim_id": "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14",
+      "label": "Interacting-copy controller",
+      "markdown": "[Interacting-copy controller](INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "parent_path": "docs/INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "target": "INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    },
+    {
+      "claim_id": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "label": "Fixed-history application",
+      "markdown": "[Fixed-history application](FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md)",
+      "parent_path": "docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "target": "FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md"
+    }
+  ],
+  "markdown_citations_verified": true,
+  "parents": [
+    {
+      "archive_alias": "canonical-parent/docs/INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 75695,
+      "claim_id": "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14",
+      "key": "interacting_controller",
+      "lines": 642,
+      "path": "docs/INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "present_at_base": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+      "published_sha256": "f19a05ddea11fd3bd0cf3d463491707fb1ca106fab32611e2fd27361e468aa28",
+      "role": "Supplied interacting-copy controller on the original source: full reference channel, engineered geometry, full-clock positivity, broad precision class and actual energy ledger.",
+      "status": "actual canonical bytes verified at successful IC parent commit"
+    },
+    {
+      "archive_alias": "canonical-parent/docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "bytes": 227248,
+      "claim_id": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "key": "fixed_history",
+      "lines": 3408,
+      "path": "docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "present_at_base": "bf476b0c6c1dfa4938a5db99a617177272eb4ca4",
+      "published_sha256": "839547b9ba88ecb37d72ab43094f02a34f6ac04bd14700bab034fbd99b0e0c2d",
+      "role": "One common physical finite-chain volume and full unnormalized weighted CQ/reference compilation for a fixed finite protocol and preparation range.",
+      "status": "actual canonical bytes verified at successful IC parent commit"
+    }
+  ],
+  "pending": null,
+  "publication_ancestry_is_not_mathematical_dependency": true,
+  "required_roles": [
+    {
+      "actual_claim_id": "interacting_copy_autonomous_controller_bounded_theorem_note_2026-10-14",
+      "canonical_path": "docs/INTERACTING_COPY_AUTONOMOUS_CONTROLLER_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "f19a05ddea11fd3bd0cf3d463491707fb1ca106fab32611e2fd27361e468aa28",
+      "complete_body_identity_verified": true,
+      "conditional_premises": "Identical supplied enlarged source/copies, stationary routers, effectively selected fresh fuels, engineered supports and a single declared read time. The narrower unitary-error supplement is not substituted into the broad class.",
+      "coverage": "Complete prior source-exposed direct-body review reused at exact identity; new extraction checked byte-for-byte. No new whole-parent/transitive mathematical review.",
+      "key": "interacting_controller",
+      "new_complete_ancestor_review": false,
+      "relied_role_checked": true,
+      "role": "Supplied interacting-copy controller on the original source: full reference channel, engineered geometry, full-clock positivity, broad precision class and actual energy ledger."
+    },
+    {
+      "actual_claim_id": "finite_chain_energy_history_bounded_theorem_note_2026-10-14",
+      "canonical_path": "docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "839547b9ba88ecb37d72ab43094f02a34f6ac04bd14700bab034fbd99b0e0c2d",
+      "complete_body_identity_verified": true,
+      "conditional_premises": "Effective model/bin data, same bins and physical embedding, supplied drive/controls and fixed preparation range. A computable coherent dilation/circuit and complete circuit-to-history certificate are additional application premises. No many-body rate is inferred from the earlier one-particle calculation.",
+      "coverage": "Complete prior source-exposed direct-body review reused at exact identity; new extraction checked byte-for-byte. No new whole-parent/transitive mathematical review.",
+      "key": "fixed_history",
+      "new_complete_ancestor_review": false,
+      "relied_role_checked": true,
+      "role": "One common physical finite-chain volume and full unnormalized weighted CQ/reference compilation for a fixed finite protocol and preparation range."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "additional_supplied_interfaces": [
+    "Computable finite U or finite stage dilations/unitary completions plus full circuit-to-history certificate",
+    "Actual initial finite preparation and reference-compatible blank insertion",
+    "Declared enlarged inhomogeneous source and whole ordered copies with diagonal pointer/work energies",
+    "Independent prepared coherent resources and engineered controller interactions with physical precision certificates"
+  ],
+  "anticipated_note": "docs/INTERACTING_CONTROLLER_HISTORY_APPLICATION_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+  "application_source": {
+    "archive_path": "archive/history_application/DERIVATION_V2.md",
+    "bytes": 35897,
+    "expected_pin_checked": true,
+    "lines": 248,
+    "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261013_213733/continuation_20261014_023239/interacting_copy_controller/history_application/DERIVATION_V2.md",
+    "role": "application_source_or_evidence",
+    "sha256": "603d0db2940710d291aa6025a6ae2ed1d5d5f9a1a0212e12e8834f3f300714e0"
+  },
+  "canonical_parent_binding_complete": false,
+  "controlling_acceptance_sha256": "7001245f160065b2240036815ab7c52fe4a9ac2da83fd37ec2b0d0cff11c630e",
+  "not_imported_as_application_proof": [
+    "Optional fresh-fuel refinement",
+    "Narrow unitary-only structured precision supplement",
+    "Any new physical terminal measurement apparatus"
+  ],
+  "packet_id": "toe-interacting-history-20261014",
+  "parents": [
+    {
+      "canonical_extraction": {
+        "exclusive_end": 227225,
+        "occurrences": 1,
+        "start": 215172
+      },
+      "canonical_path": "docs/FINITE_CHAIN_ENERGY_HISTORY_BOUNDED_THEOREM_NOTE_2026-10-14.md",
+      "canonical_sha256": "839547b9ba88ecb37d72ab43094f02a34f6ac04bd14700bab034fbd99b0e0c2d",
+      "direct_body_archive": "archive/parents/FH_APPLICATION.md",
+      "direct_body_sha256": "7fe0df39ecad4aafbbbbfeeae83d2e2372f6527afbaf04223d9ab43dd5ac99b1",
+      "id": "fixed_history",
+      "local_commit_blob_equals_live": true,
+      "remote_PR_or_ref_queried": false,
+      "role": "conditional complete common-volume weighted history and readout compilation",
+      "status": "Existing canonical source on supplied local publication parent; recheck on root integration base",
+      "supplied_head_abbreviation": "6d2c1c9",
+      "supplied_pr_number": 9529,
+      "verified_local_head": "6d2c1c96976d44c4082863d05132c37b92eef4c8"
+    },
+    {
+      "acceptance_sha256": "676a5f6e420a0cce54e20a08fd82b8cba953298c41688daaa247c4ac0e1aec93",
+      "canonical_claim_id": null,
+      "canonical_path": null,
+      "canonical_sha256": null,
+      "id": "interacting_controller",
+      "raw_source_archive": "archive/parents/IC_DERIVATION.md",
+      "raw_source_sha256": "3c02940e2d4f3eb519f459dd658950df77662c7bd431500e52f2509658ed94fe",
+      "role": "conditional static local controller and broad complete precision/ledger theorem",
+      "status": "Accepted conditional analytic raw source; canonical citation binding pending root"
+    }
+  ],
+  "publication_obligations": [
+    "Bind IC canonical file and verify unchanged raw-source extraction without inventing identity",
+    "Relocate wrapper parent links to actual reviewed canonical files",
+    "Recheck FH source/parent and complete source/helper evidence closure on final integrated tree",
+    "Root review new wrapper, actual canonical driver/cache and citation graph/integration validation"
+  ]
+}

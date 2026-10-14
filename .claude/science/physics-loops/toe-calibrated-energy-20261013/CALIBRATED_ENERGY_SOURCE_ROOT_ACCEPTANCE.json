@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-13T09:03:38.174692+00:00",
+  "disposition": "source assembly accepted for publication preparation; no mathematical or retained-audit verdict",
+  "assembly_freeze_sha256": "5a6050c11a4c50e449f5996279eb4249f91b28b2a0c1018c221deaf8897d79cc",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CALIBRATED_ENERGY_SOURCE_ROOT_REVIEW.md",
+      "sha256": "eefb81f695a4cbd156eec9868be7f2ef5744c81582865b390f296691e3b9bcbe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/CALIBRATED_ENERGY_SOURCE_ROOT_VERIFICATION.json",
+      "sha256": "6775949e2b46545997dc2e283c830d4fd4364802eed5eb8e2700adb7f8d356e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/check_calibrated_source_root.py",
+      "sha256": "d2c215fc51760b6252d5b1c0f66c03f5a18c3c9c3e86b0fe3feb2758757df05a"
+    }
+  ],
+  "required_repairs": [],
+  "publication_obligations_open": true
+}

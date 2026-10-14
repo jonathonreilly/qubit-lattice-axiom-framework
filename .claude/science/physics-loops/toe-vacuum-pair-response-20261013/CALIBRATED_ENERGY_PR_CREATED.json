@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-13T10:06:35.126363+00:00",
+  "pr": {
+    "baseRefName": "physics-loop/toe-prepared-energy-20261013",
+    "headRefName": "physics-loop/toe-calibrated-energy-20261013",
+    "headRefOid": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+    "isDraft": false,
+    "mergeable": "UNKNOWN",
+    "number": 9513,
+    "state": "OPEN",
+    "title": "Derive finite-order input calibration and weighted energy transfer",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9513"
+  },
+  "head": "a968559552de327386e3a5b74c7c72a3c17f87bc",
+  "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+  "committed_path_count": 299,
+  "prepared_receipt_sha256": "50a37288d18908191550971aaae4794131d601613a6dfce7801bc80814f4813d",
+  "verification_receipt_sha256": "a2fce6b604cafc8d0fc0317479ec663bb9df0949cecd24bd789a33bad7344619",
+  "pr_body_sha256": "fbcb8046f28e029dc0ea1c5b2f0eb7c31426365e79fa41f538bdf5365936b886",
+  "logs": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_publication_git",
+  "attachment_pending": true,
+  "editable_prompt_files_changed": []
+}

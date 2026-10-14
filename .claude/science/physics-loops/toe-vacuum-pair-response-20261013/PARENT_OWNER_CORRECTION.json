@@ -1,0 +1,23 @@
+{
+  "actual_canonical_binding": {
+    "byte_range": [
+      41184,
+      66743
+    ],
+    "line_range": [
+      897,
+      1462
+    ],
+    "path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+    "sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+    "weighted_sha256": "974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c"
+  },
+  "disposition": "Three direct canonical parents: energy-adapted refinement, energy-adapted calibration, smooth preparation moments. Transfer is branch/context ancestry only, with no new direct edge.",
+  "mathematical_predicates": 0,
+  "observed_discrepancy": "Whole weighted566 bytes and its title are absent in that transfer note; it cites the weighted source. The initial literal-substring assertion failed; no runner was executed, no source was modified, and no byte range was invented.",
+  "original_dispatch": "Parent canonical docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md SHA1f71af03465e71a57bcbe0f7713759ab51ff36df02736bf8be5d9e798d9f725e now supplies the weighted566/974e43e2 core. Bind exact byte range/core identity and required canonical graph edge.",
+  "read_limits": "Canonical calibration prefix1-97, adjacent provenance/bridge887-896, suffix1463-1481 read. The exact566-line source coverage is reused. Other calibration cores and transfer proof bodies are not imported or claimed newly reviewed.",
+  "root_correction_verbatim": "Confirmed your correction. The weighted566 exact canonical owner is CW/docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md, 1481 lines, SHA37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294; weighted core974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c occurs once at bytes[41184,66743), lines897\u20131462. Use that canonical parent. CALIBRATED_ENERGY_TRANSFER note only cites it; my prior owner instruction was wrong. Root inspected pair sections8\u201310; the pair proof derives its own graph Dyson/comparison (50\u201351) from W566 and E568, and does not directly import the later weighted-transfer composition. Preserve E568/smooth534 and any other actual direct parents; do not add a transfer edge merely for branch ancestry or transitive resemblance. Read relevant calibration wrapper/core as required. Preserve the dispatch/correction in provenance, without adding unrelated bodies. Continue the source-only publication preparation; no runtime.",
+  "source": "Trusted parent-agent dispatch and subsequent correction in this task",
+  "utc": "2026-10-13T10:18:44.902495+00:00"
+}

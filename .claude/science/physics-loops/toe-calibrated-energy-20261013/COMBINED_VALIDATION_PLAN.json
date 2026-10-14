@@ -1,0 +1,34 @@
+{
+  "status": "NOT_EXECUTED; separate shared current-main landing gate",
+  "per_note_driver": "prepare_verify_calibrated_energy.py executes only focused source integration and staged compatibility, never the full pipeline",
+  "prerequisites": [
+    "Root reviews the cumulative constituent deltas and maps all claims/content to the final integrated candidate.",
+    "Root freezes actual current-main, exact combined candidate commit/tree, source/runner/cache/procedure identities and explicit generated-output recovery list.",
+    "Root confirms intended topology and stages only the actual regenerated citation manifest with reviewed source; source drift fails closed.",
+    "Separate root authorization covers the actual integrated worktree and full pipeline; this package cannot guess a future landing base."
+  ],
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "origin/main",
+      "--include-worktree",
+      "--json"
+    ]
+  ],
+  "recovery": "Preserve full outputs first; restore regenerated audit authority files to the candidate branch OWN committed state, never origin/main. Regenerate the citation graph/manifest on the exact surviving source tree, inspect complete topology delta, stage explicit paths only. Any unexpected source change or unclassified output stops recovery for root inspection.",
+  "execution_claims": null,
+  "strict_lint_pass": null,
+  "pipeline_pass": null,
+  "retained_audit_verdict": false
+}

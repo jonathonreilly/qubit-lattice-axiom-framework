@@ -1,0 +1,231 @@
+{
+  "archived_proof_import_relations": [
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md",
+      "exposure_and_review_scope": "Named immediate dependency newly fully read; its own earlier sources are supplied, not newly audited.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Finite-protocol comparison and literal long physical-hold density counterexample; density versus free-energy distinction.",
+      "sha256": "e542889eea6a1cc708874e49e92c87b066ce4a6e539b0b3d7607c86228abb82b",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+      "exposure_and_review_scope": "Exact earlier complete read reused unchanged.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+        "calibrated_energy_transfer_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Norm-flow commutators, triangular graph and fractional moment preparation resources.",
+      "sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/HIGHER_MOMENT_ENERGY_ENDPOINTS_INDEPENDENT.md",
+      "exposure_and_review_scope": "Named immediate dependency newly fully read; no new review of its kinetic parent.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Normal-state weighted trace interpolation and explicit energy-law, coherence, endpoint and all-moment countercontrols.",
+      "sha256": "d5a218cd25aa3a4479681cac8e18e12ba4ae9f6a92f7819d970195fa83eeebb0",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/HIGHER_MOMENT_ENERGY_ENDPOINTS_CROSSCHECK.md",
+      "exposure_and_review_scope": "Named immediate dependency newly fully read; itself a source-exposed comparison.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Weighted columns, cutoff/domain precision and preserved endpoint/control distinctions; no imported kinetic publication claim.",
+      "sha256": "04711a120c4854f9420f7b2a8f80672d5950d53c65481010452aaeceb53173dc",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ALL_TIME_FREE_CORRELATIONS_ROOT_PROBE.md",
+      "exposure_and_review_scope": "Named root newly fully read; reviewed through exposed809, not an independent second worker proof.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Root fixed-probe free-correlation route and quantitative hypotheses, including the explicit FA14 precision.",
+      "sha256": "04f9c834bd73657390d3df523cb7a068a3a3df53255c3b832f9dd9d2c91fc343",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ENERGY_COORDINATE_TRANSPORT_ROOT_PROBE.md",
+      "exposure_and_review_scope": "Named root newly fully read; auxiliary map distinct from physical placement.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Whole-coordinate transport, frame/gauge conventions, fixed-state identification and free-energy laws.",
+      "sha256": "2b267b8cc4efa4bbca5a781478c39ba8a55a360ae3c1be5a212ba46565bfc931",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ENERGY_ADAPTED_DRIVEN_COMPARISON_ROOT_PROBE.md",
+      "exposure_and_review_scope": "Exact earlier complete read reused unchanged; original compact-Fourier limitation preserved.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+        "calibrated_energy_transfer_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Common-free-generator bounded Dyson/Duhamel estimates and finite-word initial-state costs.",
+      "sha256": "1ba2b386fb9b38c7383881d61e3f46b46afd6876049e2777f3421b7120fbd01a",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ALL_TIME_ENERGY_TRANSPORT_SOURCE_RECONCILIATION.md",
+      "exposure_and_review_scope": "Named source reconciliation newly fully read.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Records reuse of existing exact-energy mechanism and the scope of coordinate/frame identification.",
+      "sha256": "c4277a65a98b30b7475761d8bee150d99b120c36a51acf35fbf5c71ffcc288bd",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ENERGY_ADAPTED_LOCAL_INVERSE_ROOT_PROBE.md",
+      "exposure_and_review_scope": "Exact earlier complete read reused unchanged; root207 and its seal retain original exposure.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+        "calibrated_energy_transfer_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Alternative ordered local inverse and its actual-input driven application with finite uniform norms.",
+      "sha256": "13f6980cf1315fbfcbdc51f397e02342c9a6e70f9e3d18cd0702cb1cdae0f737",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ENERGY_ADAPTED_SCHWARTZ_CORRECTORS_ROOT_ADDENDUM.md",
+      "exposure_and_review_scope": "Exact earlier complete read reused; authored after exposure to independent768, expressly source-exposed.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+        "calibrated_energy_transfer_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Global Schwartz remainder extending the compact-Fourier root route; fixed final cutoff and finite seminorms.",
+      "sha256": "673064db42be7994c509e74efa390b57b7415fc51ded49c62ce3708bd435fabe",
+      "status": "archived_provisional_proof_input; no retained status"
+    },
+    {
+      "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/calibrated_energy_source_assembly/dependencies/ENERGY_ADAPTED_LOCAL_INVERSE_CROSSCHECK.md",
+      "exposure_and_review_scope": "Newly fully read source-exposed520; its own fresh/compact-worker exclusions remain intact.",
+      "exposure_record_origin": "Verbatim historical exposure field from accepted calibrated_energy_source_assembly/DEPENDENCY_IMPORT_REGISTRY.json (8fc7488e1426bf575e93bee6bc7f691a3e5351d86ee42d873c91615e1ae60fc6); not a new publication-task full-read claim.",
+      "graph_binding": "owner node runner declares the content-addressed archive and this import registry; not an invented canonical node",
+      "owner_claim_ids": [
+        "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+      ],
+      "proof_use": "Ordered inverse check and explicit common calibrated norm/normal-state precision addendum.",
+      "sha256": "b2f1096672dba138d33b4183002e5dc63bf9cced41730cb2343e028877f8620a",
+      "status": "archived_provisional_proof_input; no retained status"
+    }
+  ],
+  "direct_edges": [
+    {
+      "from": "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+      "to": "energy_adapted_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "to": "current_preserving_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "to": "local_even_continuum_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "to": "energy_adapted_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "to": "prepared_driven_state_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "to": "smooth_preparation_moments_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "to": "higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "to": "energy_adapted_calibration_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "to": "all_time_energy_comparison_bounded_theorem_note_2026-10-13"
+    },
+    {
+      "from": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "to": "energy_adapted_refinement_bounded_theorem_note_2026-10-12"
+    },
+    {
+      "from": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "to": "smooth_preparation_moments_bounded_theorem_note_2026-10-13"
+    }
+  ],
+  "expected_delta": {
+    "edges": 11,
+    "nodes": 3
+  },
+  "nodes": [
+    {
+      "claim_id": "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "energy_adapted_refinement_bounded_theorem_note_2026-10-12"
+      ],
+      "key": "calibration",
+      "path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/energy_adapted_calibration_identity_2026_10_13.py"
+    },
+    {
+      "claim_id": "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "current_preserving_refinement_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+        "prepared_driven_state_bounded_theorem_note_2026-10-13",
+        "smooth_preparation_moments_bounded_theorem_note_2026-10-13",
+        "higher_moment_energy_endpoints_bounded_theorem_note_2026-10-13"
+      ],
+      "key": "all_time_driven",
+      "path": "docs/ALL_TIME_ENERGY_COMPARISON_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/all_time_energy_comparison_identity_2026_10_13.py"
+    },
+    {
+      "claim_id": "calibrated_energy_transfer_bounded_theorem_note_2026-10-13",
+      "deps": [
+        "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+        "all_time_energy_comparison_bounded_theorem_note_2026-10-13",
+        "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+        "smooth_preparation_moments_bounded_theorem_note_2026-10-13"
+      ],
+      "key": "weighted_transfer",
+      "path": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "runner": "scripts/calibrated_energy_transfer_identity_2026_10_13.py"
+    }
+  ],
+  "status": "proposal_only_no_graph_execution"
+}

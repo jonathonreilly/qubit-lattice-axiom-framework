@@ -1,0 +1,14 @@
+goal: publish three conditional calibrated-energy support notes
+delivery_mode: milestone
+state: prepared_not_executed
+source_assembly_freeze: 5a6050c11a4c50e449f5996279eb4249f91b28b2a0c1018c221deaf8897d79cc
+base: f6a820fd66011a50752670a454fb375b420ddbd6
+branch: physics-loop/toe-calibrated-energy-20261013
+parent_branch: physics-loop/toe-prepared-energy-20261013
+parent_regular_pr: 9512
+new_pr: null
+next_action: root review exact frozen publication package; execute only after separate acceptance
+no_go_packet_pass: false
+N1: pending
+N5: pending
+stop_condition: source/procedure drift, unclassified failure or campaign deadline

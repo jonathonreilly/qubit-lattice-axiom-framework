@@ -1,0 +1,14 @@
+{
+  "broad_formula_exclusion": false,
+  "exclusions": [
+    {
+      "canonical_line": 668,
+      "classification": "literal mathematical factor in immutable core; source-bound scan exception only",
+      "context": "\nis the trace pairing of the trace-class difference sandwich with\n`1_[0,R](H) phi(H)`, a contraction. Its absolute value is at most\n`W_theta,a(t)`. Supremizing over real sign tests gives the full\nweighted variation on `[0,R]`; monotone convergence gives G11.\n",
+      "exact_line": "`1_[0,R](H) phi(H)`, a contraction. Its absolute value is at most\n",
+      "note": "docs/CALIBRATED_ENERGY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "raw_match": "](H)",
+      "source_sha256": "93c2604ddfd1a305d64fac039f62aa90dc73ecef7ea43de45022c13c1b61102a"
+    }
+  ]
+}

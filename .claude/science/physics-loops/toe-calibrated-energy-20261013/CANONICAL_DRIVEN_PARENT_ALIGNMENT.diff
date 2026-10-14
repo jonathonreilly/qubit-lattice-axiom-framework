@@ -1,0 +1,11 @@
+--- archived/DRIVEN_STATE_ENERGY_LIMIT_INDEPENDENT.md
++++ canonical/PREPARED_DRIVEN_STATE_BOUNDED_THEOREM_NOTE_2026-10-13.md:726
+@@ -25,7 +25,7 @@
+ The potentials are selfadjoint and even; their unital extensions reduce the
+ actual range, as in the supplied preparation premises.
+ Both \(\|V_c\|,\|V_0\|\le K<m/2\); the full gap is
+-\(g=m-2K>0\). An even initial state and even pulse may instead use the inherited
++\(g=m-2K>0\). An initial density supported in the even sector and an even pulse may instead use the inherited
+ even excited gap \(g_e=2m-2K\). Every gap is an actual-space gap. An auxiliary
+ Hamiltonian extension outside \(\Pi_c=\iota_c\iota_c^*\) may have zero modes;
+ it supplies observable automorphisms and is never used for a ground or gap.

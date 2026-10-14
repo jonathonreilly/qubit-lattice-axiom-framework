@@ -1,0 +1,105 @@
+{
+  "archived_provisional_relations": [],
+  "boundary": "Only the three original consumed cores are scientific premises; unrelated cores in composite canonical parents are not adopted. Transfer note is branch/context ancestry, not a direct pair-proof input.",
+  "canonical_bindings_are_conditional": true,
+  "dispatch_correction": "PARENT_OWNER_CORRECTION.json",
+  "parents": [
+    {
+      "bytes": 35591,
+      "claim_id": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "consumed_cores": [
+        {
+          "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/fresh/frozen_sources/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+          "byte_range": [
+            0,
+            35591
+          ],
+          "line_range": [
+            1,
+            568
+          ],
+          "sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88",
+          "original_byte_range": [
+            0,
+            35591
+          ],
+          "original_line_range": [
+            1,
+            568
+          ]
+        }
+      ],
+      "lines": 568,
+      "path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "e8b34ef49f7e3d5c289584b8f662da40a05912794bcf1b4cb8e05e6c903bbc88"
+    },
+    {
+      "bytes": 69098,
+      "claim_id": "energy_adapted_calibration_bounded_theorem_note_2026-10-13",
+      "consumed_cores": [
+        {
+          "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/fresh/frozen_sources/ENERGY_ADAPTED_WEIGHTED_CALIBRATION_INDEPENDENT.md",
+          "byte_range": [
+            41211,
+            66770
+          ],
+          "line_range": [
+            899,
+            1464
+          ],
+          "sha256": "974e43e24526d8abb19b37ece3e7889464dd7b24f930167f90a68cf4c356eb6c",
+          "original_byte_range": [
+            41184,
+            66743
+          ],
+          "original_line_range": [
+            897,
+            1462
+          ]
+        }
+      ],
+      "lines": 1486,
+      "path": "docs/ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "53b62dc79f4889b61b983b9e243c33176d561ec3614473380649a82c676a27d9",
+      "original_published_sha256": "37b3c8a07e76eb57f7b1cc6514352a1b627f987e3618ee4b7e7d7cbba664f294",
+      "original_bytes": 68680,
+      "original_lines": 1481,
+      "integration_scope": "Original proof content preserved; wrapper Type/link/provenance repairs only."
+    },
+    {
+      "bytes": 35017,
+      "claim_id": "smooth_preparation_moments_bounded_theorem_note_2026-10-13",
+      "consumed_cores": [
+        {
+          "archive_alias": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/fresh/frozen_sources/SMOOTH_PREPARATION_MOMENTS_INDEPENDENT.md",
+          "byte_range": [
+            4197,
+            31213
+          ],
+          "line_range": [
+            74,
+            607
+          ],
+          "sha256": "390a9efec32c6ca740404cf607bd6c095e2816a66f913c16d97a1d5321bb41f1",
+          "original_byte_range": [
+            4170,
+            31186
+          ],
+          "original_line_range": [
+            72,
+            605
+          ]
+        }
+      ],
+      "lines": 658,
+      "path": "docs/SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "published_sha256": "5b59bbe7cd1a29c5555bd3fe1b17346ffd8c55acb2f591f3b1b03d5470d6b719",
+      "original_published_sha256": "629bc1ae4ad258f17780fe476b695a2db04dfbef184440771d7d264c91ec68e2",
+      "original_bytes": 34185,
+      "original_lines": 653,
+      "integration_scope": "Original proof content preserved; wrapper Type/link/provenance repairs only."
+    }
+  ],
+  "same_packet_parents": [],
+  "integration_main": "6179d3d94c8cbb3539a1fb4d7a0c5a09dbd734b4"
+}

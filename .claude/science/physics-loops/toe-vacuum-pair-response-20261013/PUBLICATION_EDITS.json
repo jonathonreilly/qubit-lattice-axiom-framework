@@ -1,0 +1,157 @@
+{
+  "additional_mathematical_body_edits": [],
+  "diff_convention": "UTF-8 LF raw bytes; difflib.unified_diff with keepends=True and n=3; complete output, deterministic declared labels; gzip mtime=0",
+  "historical_diffs": "Unchanged archived original conventions; no normalization or relabelling.",
+  "notes": [
+    {
+      "accepted_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "accepted_candidate_sha256": "4bddc339764651433457045c22ae65ce8b19ca263c489b233da42b25d140c492",
+      "context_lines": 3,
+      "diff": "diffs/pair_note.diff.gz",
+      "diff_bytes": 7401,
+      "diff_sha256": "0c1889d0a28adf78a981fe4fe8a63166b3863502414520f2b6054274b6ba7d1d",
+      "diff_stored_sha256": "cb0d92586cae1a0fac64a942853a9cae63a126ecf91e9e24347777b4efe8a22b",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "note": "docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md",
+      "pieces": [
+        {
+          "byte_offset": 0,
+          "bytes": 6270,
+          "first_line": 1,
+          "kind": "publication_wrapper",
+          "last_line": 105,
+          "sha256": "54bf4bfb1f9544f6ec831d42a1f6e015bb36e1004e46bd249ac6488a78740534",
+          "text": "---\ntitle: \"Vacuum pair response with threshold and calibrated-cell control\"\nclaim_id: vacuum_pair_response_bounded_theorem_note_2026-10-13\nstatus: conditional-support\nclaim_type: bounded_theorem\ntarget_claim_type: bounded_theorem\nactual_current_surface_status: conditional-support\nartifact_role: theorem\nrunner: scripts/vacuum_pair_response_identity_2026_10_13.py\nassembly_status: publication_prepared_root_review_and_runtime_pending\nscientific_execution: none_in_publication_preparation\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nconditional_surface_status: \"Supplied massive one-dimensional free carrier and vacuum, fixed compact smooth real CAR inputs, and the explicit finite-order calibration, graph and joint-limit hypotheses of the unchanged proof.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nclaim_type_reason: \"Ordinarily accepted conditional proof; exact source assembly adds no mathematical or retained verdict.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nnext_trace_action: \"Root reviews the exact publication source and executes the separately gated integration driver; cumulative landing review and independent audit remain later obligations.\"\nsource_assembly: pair_response_source_assembly\nupstream_dependencies:\n  - energy_adapted_refinement_bounded_theorem_note_2026-10-12\n  - energy_adapted_calibration_bounded_theorem_note_2026-10-13\n  - smooth_preparation_moments_bounded_theorem_note_2026-10-13\n---\n\n# Vacuum pair response with threshold and calibrated-cell control\n\n**Type:** bounded_theorem\n\nClaim type: bounded_theorem\n\nClaim status: conditional-support; ordinary analytic acceptance of the exact\nproof is recorded, while publication integration and independent retained audit\nremain separate obligations. This is a source-only publication proposal.\n\n## Scope and dependencies\n\nThe complete proof below derives the connected vacuum pair measure, its zero\nand nonzero threshold cases, the controlled correlation and weak cosine-drive\nenergy statements, and sufficient joint limits for actual calibrated cells.\nIts fixed inputs, normalization, graph domains, centering, finite resource\nconstants and exposed parent premises remain in force. The threshold hierarchy\nincludes the nonzero higher-order example; no universal positive leading term\nor preservation of a degenerate threshold at every fixed spacing is asserted.\n\nThe supplied vacuum and massive carrier are premises. No physical selection,\nfixed-amplitude infinite-time statement, Markov approximation, finite-heating\nkinetic limit, axiom promotion or retained verdict follows from this assembly.\n\nAll three original scientific inputs now have exact canonical bindings:\n\n- [energy_adapted_refinement_bounded_theorem_note_2026-10-12](ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md): the unchanged 568-line carrier and placement source.\n- [energy_adapted_calibration_bounded_theorem_note_2026-10-13](ENERGY_ADAPTED_CALIBRATION_BOUNDED_THEOREM_NOTE_2026-10-13.md): the original weighted 566-line core at lines 899-1464, bytes [41211,66770).\n- [smooth_preparation_moments_bounded_theorem_note_2026-10-13](SMOOTH_PREPARATION_MOMENTS_BOUNDED_THEOREM_NOTE_2026-10-13.md): the original 534-line core at lines 74-607, bytes [4197,31213).\n\nThe [imports record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/301b06c3c2b8ce3c1b33c9333eee89a2248e4a99/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/ASSUMPTIONS_AND_IMPORTS.md)\nkeeps the original hypotheses and exact body identities. Canonical publication\nchanges their location, not their conditional status. Other cores in composite\nparent notes are not additional pair-proof premises. The initially dispatched\nweighted owner was corrected to the calibration note; transfer is branch/context\nancestry and supplies no direct edge here. The dispatch correction is preserved.\n\nThe actual child is `physics-loop/toe-pair-response-20261013`, with clean base\n`a968559552de327386e3a5b74c7c72a3c17f87bc` on the regular PR 9513 parent\n`physics-loop/toe-calibrated-energy-20261013`. Those facts are source-bound;\nthis preparation performs no installation, staging, commit or PR action.\nThe original smooth-parent publication on regular PR 9512 remains history.\n\n## Review chronology and correlation ordering\n\nThe root's separate 286-line probe was sealed at 07:26:04 UTC on 2026-10-13.\nThe fresh proof's plan was frozen at 07:31:50 UTC and its complete final proof\nat 07:57:53 UTC. The fresh author had not read the root probe or the excluded\nolder partial at that proof freeze. Root then completely read the 792-line\nproof and recorded ordinary conditional analytic acceptance at 08:10:23 UTC.\nThe root probe, seal and review were first exposed to this author afterwards,\nsolely for this later packaging task. Earlier source exclusions remain literal\nhistorical records. The exact seals, corrections and read limits are archived.\n\nThe conventions must be distinguished. Here\n`C(t)=omega(alpha_t(B)B)` has the negative spectral phase, while the root probe\nuses `K(t)=omega(B alpha_t(B))=C(-t)` with the positive phase. The corresponding\ntail phases are conjugate. The first-jet determinants have opposite signs and\nthe same squared modulus. This is a convention correspondence, not a core edit.\n\nShared root/fresh results have a separate source-excluded same-family\nderivation. The fresh proof's added hierarchy, exact-threshold logarithm and\nlocal-density arguments received root's later source-exposed analytic check.\nNo model-diverse, formal or retained independence is claimed. The more\nrestrictive root weak-amplitude window and the fresh sufficient window remain\ndistinguished in the preserved review; neither produces finite unscaled heating.\n\n## Exact accepted scientific body begins\n\nEvery byte from the following original title through its marked end is copied\nfrom the accepted 792-line source SHA-256\n`4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c`.\nThe original title, status wording, source exclusions and absolute paths retain\ntheir historical meaning. They do not describe this later packaging exposure.\n\n",
+          "wrapper_path": "wrappers/pair_head.md"
+        },
+        {
+          "byte_offset": 6270,
+          "bytes": 37863,
+          "first_line": 106,
+          "kind": "accepted_complete_core",
+          "last_line": 897,
+          "sha256": "4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c",
+          "source_byte_range": [
+            0,
+            37863
+          ],
+          "source_line_range": [
+            1,
+            792
+          ],
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/sources/accepted/LOW_ENERGY_PAIR_RESPONSE_FRESH_INDEPENDENT.md",
+          "source_sha256": "4e0de0b1cb2362a28fba37a1ca1582d437ec33c118ab4fdf1dbe4e126ae36f7c"
+        },
+        {
+          "byte_offset": 44133,
+          "bytes": 2569,
+          "first_line": 898,
+          "kind": "publication_wrapper",
+          "last_line": 924,
+          "sha256": "57629bb79ac48f5f1b7e0be0b976a39feadb7c28a2b6560bb36f5fd917a784af",
+          "text": "\n## Exact accepted scientific body ends\n\n## Publication source recovery and review\n\nThe [handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/301b06c3c2b8ce3c1b33c9333eee89a2248e4a99/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/HANDOFF.md),\n[review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/301b06c3c2b8ce3c1b33c9333eee89a2248e4a99/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/REVIEW_HISTORY.md),\n[trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/301b06c3c2b8ce3c1b33c9333eee89a2248e4a99/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/TRACE_GATE.md),\n[source recovery](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/301b06c3c2b8ce3c1b33c9333eee89a2248e4a99/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/SOURCE_RECOVERY.md)\nand [negative-scope record](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/301b06c3c2b8ce3c1b33c9333eee89a2248e4a99/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/NO_GO_DISCIPLINE_CHECKLIST.md)\nbound this proposal. All 77 files of the accepted source assembly, including\nevery immediate original 24-file freeze member, remain recoverable byte-for-byte.\nThe publication review record says author read coverage; immutable historical\nrecords retain their literal wording and the later correction has an exact diff.\n\nThe [identity tool](../scripts/vacuum_pair_response_identity_2026_10_13.py)\nchecks source bytes, exact piece maps, all new complete n=3 diffs, the historical\nfull-context diff convention and declared immediate provenance. It executes\nzero mathematical predicates. Preparation has not run it, the canonical cache\nAPI, graph generator, publication driver, compiler, vocabulary or pipeline.\nRoot must review and execute the exact frozen package and preserve actual results.\nNo source identity result supplies analytic, formal, model-diverse or retained\nverification. No recursive upstream audit is claimed. Cumulative inherited-stack\nreview, combined current-main gates and independent retained audit remain separate.\n\n\nReview-loop integration note: current main 6179d3d94c8cbb3539a1fb4d7a0c5a09dbd734b4 plus this calibrated-energy/pair batch supplies the reviewed live dependencies. Original proof bodies and archives are unchanged. Live parent hashes and consumed-core coordinates are refreshed, with original bindings preserved. Historical pending and review labels remain provenance, not audit authority.\n",
+          "wrapper_path": "wrappers/pair_tail.md"
+        }
+      ],
+      "published_bytes": 46702,
+      "published_lines": 924,
+      "published_sha256": "0aecf7ae7d693b1396c1df528cc13f27e403742350e16938e2e10f9a144e9bdb",
+      "tofile": "docs/VACUUM_PAIR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-13.md"
+    }
+  ],
+  "source_freeze_sha256": "c7cdceb95c45c5a05b6248dbf3492c7b5d1e350445fb72714b3d4d46512cef03",
+  "support_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/handoff.diff.gz",
+      "diff_bytes": 4827,
+      "diff_sha256": "76a2aa6e0b0cc8d136b2a25f0e20b13c36e167fb80dbada1cd99442cb7811d6b",
+      "diff_stored_sha256": "fa83d9849505ff9c7f0959fe6604afd426b02ee0beb62a0a66453d8908b6434e",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/HANDOFF.md",
+      "publication": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/HANDOFF.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/HANDOFF.md",
+      "tofile": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/HANDOFF.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/review_history.diff.gz",
+      "diff_bytes": 7521,
+      "diff_sha256": "ba72f6b0a6f34d0b92221dbbe7944adad7d06a486b0c258f96414ed0dd877bf1",
+      "diff_stored_sha256": "dc25fd331190ad395b47e22db4e2b168e82b2cdf117d4d02349d971319342d05",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/REVIEW_HISTORY.md",
+      "publication": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/REVIEW_HISTORY.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/REVIEW_HISTORY.md",
+      "tofile": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/REVIEW_HISTORY.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/trace_gate.diff.gz",
+      "diff_bytes": 1892,
+      "diff_sha256": "bccb879efe40044a89da6091015744170520626582e4ae3f0bdd192b45a17b63",
+      "diff_stored_sha256": "fc7d712816caa5a3657c1363208351bd2dde0c20f91e13051f1f1af2398c85bf",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/TRACE_GATE.md",
+      "publication": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/TRACE_GATE.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/TRACE_GATE.md",
+      "tofile": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/TRACE_GATE.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/source_recovery.diff.gz",
+      "diff_bytes": 6969,
+      "diff_sha256": "5693d9216650692b3ddf566a0ddb0bf5d39a41cc08e7ce9611dead68dc198941",
+      "diff_stored_sha256": "c911692834bcae8c50f679c1fd440cc4cd60db8e68469f0b9e7b8699d42c091e",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/SOURCE_RECOVERY.md",
+      "publication": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/SOURCE_RECOVERY.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/SOURCE_RECOVERY.md",
+      "tofile": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/SOURCE_RECOVERY.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/assumptions_and_imports.diff.gz",
+      "diff_bytes": 5693,
+      "diff_sha256": "5c288334c728d402aa871ee27372906cdf1cb795e1806ea2928e15bf4a4c26ae",
+      "diff_stored_sha256": "e8fcbe1ceb5cffd59c38d9cd4fecafa2392d2e44064162fd429666bb511d1f06",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/ASSUMPTIONS_AND_IMPORTS.md",
+      "publication": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/ASSUMPTIONS_AND_IMPORTS.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/ASSUMPTIONS_AND_IMPORTS.md",
+      "tofile": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/claim_status_certificate.diff.gz",
+      "diff_bytes": 2955,
+      "diff_sha256": "2c066f793b488a97fba20bec7a78466a4039e70ce12f178b1e08185bc9c87bdb",
+      "diff_stored_sha256": "b840dd3be20231fd178d4bbb2bf738b0e04bfe6926215f7986d8d808cd91e621",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "publication": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/CLAIM_STATUS_CERTIFICATE.md",
+      "tofile": ".claude/science/physics-loops/toe-vacuum-pair-response-20261013/CLAIM_STATUS_CERTIFICATE.md"
+    }
+  ],
+  "wrapper_changes": [
+    {
+      "context_lines": 3,
+      "diff": "diffs/pair_head.diff.gz",
+      "diff_bytes": 4319,
+      "diff_sha256": "00aca382ac4b016e68419348b36c9ecd422d1bfe462e32b3b4ac6d3c5e3e6a9f",
+      "diff_stored_sha256": "31c729dccb988ae25641badb8aa5251945b7bc32183d0c44a5eea7330996ea88",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/pieces/note_prefix.md",
+      "publication": "wrappers/pair_head.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/pieces/note_prefix.md",
+      "tofile": "wrappers/pair_head.md",
+      "publication_sha256": "54bf4bfb1f9544f6ec831d42a1f6e015bb36e1004e46bd249ac6488a78740534"
+    },
+    {
+      "context_lines": 3,
+      "diff": "diffs/pair_tail.diff.gz",
+      "diff_bytes": 3295,
+      "diff_sha256": "1a2a50384b61af49e33305e3812b170433f91d81250ac9869f1632b2ba3c4c47",
+      "diff_stored_sha256": "9f42704254a2a5ae67ef7023bd2fb11e6402cb3b5b4801c83005f76aa221a4f1",
+      "fromfile": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/pieces/note_suffix.md",
+      "publication": "wrappers/pair_tail.md",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/pair_response_source_assembly/payload/.claude/science/physics-loops/toe-vacuum-pair-response-20261013/pieces/note_suffix.md",
+      "tofile": "wrappers/pair_tail.md",
+      "publication_sha256": "57629bb79ac48f5f1b7e0be0b976a39feadb7c28a2b6560bb36f5fd917a784af"
+    }
+  ]
+}

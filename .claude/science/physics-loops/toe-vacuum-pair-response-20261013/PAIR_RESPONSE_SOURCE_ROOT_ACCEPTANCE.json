@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-13T08:52:45.194494+00:00",
+  "review": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/PAIR_RESPONSE_SOURCE_ROOT_REVIEW.md",
+  "review_sha256": "bf13995ffe8f9a69c612b0c237a3f7efb7d6ff1587721f16213cf89a1ea4532f",
+  "assembly_freeze_sha256": "c7cdceb95c45c5a05b6248dbf3492c7b5d1e350445fb72714b3d4d46512cef03",
+  "scope": "Source-only assembly accepted for publication preparation, with one recorded author-read wording correction in the later publication copy. No mathematical core repair or audit verdict.",
+  "remaining_parent_binding": "Actual calibrated weighted canonical parent and publication base not selected yet."
+}

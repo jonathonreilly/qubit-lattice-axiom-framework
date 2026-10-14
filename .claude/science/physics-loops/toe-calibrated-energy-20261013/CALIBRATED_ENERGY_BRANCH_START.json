@@ -1,0 +1,7 @@
+{
+  "base": "f6a820fd66011a50752670a454fb375b420ddbd6",
+  "branch": "physics-loop/toe-calibrated-energy-20261013",
+  "identity_source": "Read-only rev-parse and branch queries at task intake; clean status ce6dff. No branch creation asserted by this worker.",
+  "parent_branch": "physics-loop/toe-prepared-energy-20261013",
+  "parent_pr": 9512
+}

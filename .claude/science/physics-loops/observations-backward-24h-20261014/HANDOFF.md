@@ -384,3 +384,11 @@ Root read the complete final scientific reports and both mechanical delivery rep
 Necessary full-three-field metric envelope and conditional squared amplitudes personally derived.31canonical controls0fail;8actual altered formulas detected by failed controls;34preexposure independent exact checks. No observed data/test. C,k,Hv,nu,action,metric/vacuum and full-solution completion remain supplied; final canonical source confirmation pending.
 
 Complete final source review and coherent PR9620 full-field extension; final synthesis starts21:33:44Z, fixed stop21:48:44Z. No new discovery in packaging window. All previous science preserved; previous campaigns stopped. Matching lock refreshed21:05:59Z.
+
+## Final packaging — 2026-10-15T21:34:28.918794+00:00
+
+M20 is published and attached in PR9620 at `414856e9c2195680af563678a0844af71de3ddfb`, frozen tree `341763b53a1939ed5db0f35784e634b5a3b7e8d7`. All18live campaign heads match and are open. Root has read the complete independent source/evidence and delivery reports. No further scientific discovery, solver runs or raw-data exposure is permitted. FINAL_REPORT.md preserves observations, conditional derivations, real failures and remaining imports; actual shutdown is still pending at the original21:48:44Z deadline. Previous campaigns remain stopped. Complete final report review and process/lock/heartbeat closure.
+
+## Campaign closed at its fixed deadline — 2026-10-15T21:49:07.166007+00:00
+
+No new discovery after21:33:44Z. The original21:48:44Z research window has ended. Fresh process inventory found no campaign-marked research worker; the matching owner/holder lock was released and the completed heartbeat deleted through the app. All three prior campaigns remain stopped. FINAL_REPORT.md and closing receipts preserve the observation comparisons, strongest conditional mathematics, real failures and surviving assumptions. The timed campaign is complete; action selection, actual initial state/history, absolute scales and physical measurement/environment suppliers remain unresolved. No TOE or independent empirical validation is claimed. Closing-document verification/delivery only remains.

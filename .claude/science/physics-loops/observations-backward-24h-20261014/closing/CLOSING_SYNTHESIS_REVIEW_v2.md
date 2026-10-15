@@ -1,0 +1,27 @@
+# Focused closing-synthesis packaging review v2
+
+The complete current campaign FINAL_REPORT.md was read and compared with the previously reviewed working v5 and subsequent v6. Current report SHA256: `8fd9779e54c4da699e106eff9e533dfc40635c629f4d432367cae25dc9842f23`. The complete changed portions of STATE.yaml, HANDOFF.md, REVIEW_HISTORY.md and PR_BACKLOG.md were read against the published science head. Original review v1 and its identities remain unchanged.
+
+No consequential scientific overclaim, publication-identity mismatch or premature shutdown certification was found in this bounded comparison. This is a packaging/source-correspondence check, not a fresh scientific proof, empirical test, formal audit, live network verification or final shutdown certificate. Root remains the scientific author. No raw data, scientific solver or aggregate was run; Git was read only to obtain the metadata baseline/delta.
+
+## Scientific and source additions
+
+The v5 observation/development separation and previously repaired premises remain intact: no-reset/bounded count increments, selected pre-NSP Block-5 branch, ideal ADC-cell model, floating M11 joint-model diagnostics and six retained numerical failures. M17/M18 still retain complete boundary certificates; M19's stronger reconstruction remains limited to its nondegenerate single-sector vacuum chart. M20 remains a necessary full-field test with supplied parameters and trial C, nonnegative shares, unresolved smooth-root/kinetic/transverse equations and no observed-metric test. No new theoretical result is introduced by this final delta.
+
+The added M20 evidence account correctly separates 31 author controls, 34 pre-exposure independent exact checks and 50 post-exposure formula comparisons. Its complete saved-evidence supplement (`32518c3850ae5b22f95859e8158ce533e0d14f13ff4b9c6b85ae0726791f4581`) was read. It confirms recorded source/cache/product/mutation correspondence without rerunning historical execution. The current primary, helper, note and cache hashes match that supplement. The final-report cache identity `02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995` is correct. The source report remains `68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919`.
+
+The archive's stated 83 members, 24 plain views and bytecode exclusion are supported by the complete delivery-v1 report; delivery v2 preserves all archive/science bytes and closes only the display-state discrepancy. Those exact reports and JSON report bindings were inspected, rather than expanding the archive again. Their 451 passes/one preserved stale-state finding and 90 passes/zero mismatches are reported accurately, with no empirical significance attached. The claim that M19 source/cache/archive stayed unchanged is inherited from that precise mechanical check, not a new full tree audit here.
+
+## Publication and metadata
+
+The copied M20_PUBLICATION_v1.json records PR9620 at `414856e9c2195680af563678a0844af71de3ddfb`, tree `341763b53a1939ed5db0f35784e634b5a3b7e8d7`, against M18 base `b789855264cad2db6dabe73f28ff3618dc58f66f`, with all 91 declared PR paths matching. It records verification at 21:32:59.385252Z and attachment confirmation at 21:33:33.333500Z. The report accurately presents M19's earlier head as the prior scientific milestone and M20's head as the later extension; the table gives the latter. This is correspondence with saved root receipts, not an independent fresh GitHub request.
+
+All 18 current report table heads independently match the 18 entries in CLOSING_PR_SNAPSHOT_v3.json, and all saved entries are OPEN. The earlier absent-baseRefOid comparator failure is retained and accurately characterized; its corrected check is head-only and is not silently promoted to all-PR base verification. Copies of the publication receipt, snapshot, both delivery reports and original closing review are byte-identical to their runtime originals.
+
+STATE's changed last-publication object exactly equals the copied publication receipt. Current science pointers now name M20, the published head is updated, phase/status are final_packaging and next work is explicitly deadline closure, not research. HANDOFF, REVIEW_HISTORY and PR_BACKLOG append consistent publication/packaging records while preserving prior pending checkpoints as history. The independent check's narrow scientific/source scope is retained. Complete changed-field identities are in the companion JSON.
+
+## Closure remains pending
+
+The title “final scientific report” is immediately qualified: the report is not yet a completion notice. It accurately distinguishes the no-new-discovery boundary 21:33:44Z from recorded packaging checkpoint 21:34:28.918794Z and keeps the original deadline 21:48:44Z. No assertion here proves all activity between those times; the present task performed packaging checks only.
+
+Actual owned-process shutdown, previous-campaign stopped-state confirmation, matching-lock release and heartbeat retirement still require an at-or-after-deadline receipt. Empty process lists in metadata are not that receipt. The report explicitly allows later closing-document commits to advance PR9620 while freezing the scientific heads. Any final closing version must bind those later document/artifact identities and actual stop evidence. No shutdown, completed campaign, full integrated-main landing, formal audit or physical validation is certified by this review.

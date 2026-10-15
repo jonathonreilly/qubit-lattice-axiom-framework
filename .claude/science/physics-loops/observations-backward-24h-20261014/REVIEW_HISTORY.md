@@ -245,3 +245,11 @@ Root read the complete final scientific reports and both mechanical delivery rep
 Root read the complete independent proof, canonical source report and both exact/post-exposure control implementations. Scoped disposition: pass for this conditional necessary-test extension; not full-solution sufficiency, empirical validation, integrated landing or formal audit. Canonical report SHA256 68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919. Original34exact and separate50post-exposure checks are distinguished. Final guarded execution31/0 and8failed-control mutations are preserved; narrow independent evidence confirmation follows.
 
 M20 evidence supplement32518c38 read completely: unchanged source and31/0cache/products bind; all8mutants fail actual controls. Source-readiness issue is null. Scoped scientific disposition pass; final delivery pending.
+
+## M20 delivery and closing review
+
+Complete focused source report and evidence supplement read by root. Frozen delivery v1 preserved451passes/1stale display finding; narrow corrected STATE v2 passed90comparisons with0failures. Scientific tree341763b5 committed unchanged as414856e9c2 and pushed to existing PR9620. Closing synthesis v5 received a complete scoped summary/evidence review; final packaging delta is pending. No formal audit. Exact reports and receipts are in closing/.
+
+## Closing scientific synthesis
+
+Complete synthesis reviews v1/v2, packaging delivery check174/0 and final equation-display report read by root. The final equation display is a presentation of already checked M20 equations, not new discovery. The930path content inventory pins the scientific delta. Final operational shutdown delta receives a separate narrow check; no scientific rerun or formal audit.

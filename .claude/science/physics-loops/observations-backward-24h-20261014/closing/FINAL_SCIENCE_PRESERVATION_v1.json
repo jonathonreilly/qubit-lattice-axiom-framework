@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-15T21:51:02.342017+00:00",
+  "science_commit": "414856e9c2195680af563678a0844af71de3ddfb",
+  "scope": "Rehash930committed campaign-delta paths after actual closure. Content identity only, no scientific rerun.",
+  "paths_checked": 930,
+  "unchanged_paths": 926,
+  "changed_paths": [
+    ".claude/science/physics-loops/observations-backward-24h-20261014/HANDOFF.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/PR_BACKLOG.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/STATE.yaml"
+  ],
+  "changed_scope": "Four expected final operational documentation files; all science sources, caches and archives are unchanged."
+}

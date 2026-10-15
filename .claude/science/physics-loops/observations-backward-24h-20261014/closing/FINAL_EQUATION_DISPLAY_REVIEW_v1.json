@@ -1,0 +1,51 @@
+{
+  "at_utc": "2026-10-15T21:41:28.360952+00:00",
+  "scope": "Final presentation and recorded-inventory scope only; no science reruns or archive rehash",
+  "report_sha256": "afa1d0fac71f0fbd1a38c18a742bc24a278390412f0e715eb34c7f3b3b9ca579",
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/FINAL_REPORT.md",
+      "sha256": "cb07cd621a5ce7276cc14de398a66440c97c6e7a82cafe6fbdbbf9ac35eca5ad",
+      "bytes": 20775
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "bytes": 10793
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/closing/CAMPAIGN_SCIENCE_INVENTORY_v1.json",
+      "sha256": "9fa630c5a87ae3f6e43ee71ce1c76a71dfb7183d1048a3d78c5b2d8bffbe3ea3",
+      "bytes": 484782
+    }
+  ],
+  "reviewed_final_section": "### The last necessary test in equations\n\nFor each supplied trial k,Hv,nu,C in the [M20 canonical domain](../../../../docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md), the exact static radial vacuum metric gives X and z, the reconstructed potential P_rec and transverse kinetic remainder T. Define Delta=P_rec-P0, E=2Lz/lambda+zR-2T/z-P0,z, and lx=d(ln Ax)/dz, ly=d(ln Ay)/dz, where ly>lx. The checked necessary conditions are\n\n```text\nT >= 0,  Delta >= 0,  lx*Delta <= E <= ly*Delta.\nUx=(ly*Delta-E)/(ly-lx),  Uy=(E-lx*Delta)/(ly-lx),\nx^2=Ux/Ax,  y^2=Uy/Ay.\n```\n\nHere Ax and Ay are the supplied positive transverse potential coefficients, Lz is the radial physical-metric wave operator on z, and R is the physical metric's Ricci scalar. Full definitions, parameter and regularity domains are in the linked note. A failed inequality excludes that trial in that class. Passing does not select the parameters or C, establish both transverse equations, or validate the action against observations. The derivative inputs are still N''' and B''; no measured derivative error envelope was manufactured.\n",
+  "reviewed_final_section_sha256": "ea2ee2a2f4daf851d860c62ff1c98ad09cf542dc24e3ad57abd315bc9d57b32c",
+  "equation_display": "Corresponds to canonical (7)-(10), domains and necessary-only boundary",
+  "inventory_checks": {
+    "baseline": "92574ffe95192cc0724a27e1acad28e42d325115",
+    "head": "414856e9c2195680af563678a0844af71de3ddfb",
+    "unique_surviving_paths": 930,
+    "list_matches_diff_paths": true,
+    "sum_stored_bytes": 53139509,
+    "deleted_paths": 0,
+    "recorded_working_mismatch_paths": [
+      ".claude/science/physics-loops/observations-backward-24h-20261014/HANDOFF.md",
+      ".claude/science/physics-loops/observations-backward-24h-20261014/PR_BACKLOG.md",
+      ".claude/science/physics-loops/observations-backward-24h-20261014/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/observations-backward-24h-20261014/STATE.yaml"
+    ],
+    "recorded_checked_at": "2026-10-15T21:37:27.662641+00:00",
+    "individual_content_rehash_performed": false
+  },
+  "writer_setup_failure": {
+    "error": "SyntaxError: invalid decimal literal",
+    "cause": "Triple-single-quoted report string was prematurely closed by third-derivative notation",
+    "prior_writes": false,
+    "repair": "Use triple-double-quoted report string; no source or evidence changes"
+  },
+  "shutdown_verified": false,
+  "new_science": false,
+  "formal_audit": false,
+  "scope_findings": []
+}

@@ -1,0 +1,278 @@
+{
+  "verified_at": "2026-10-15T20:48:07.557250+00:00",
+  "scope": "Read-only campaign PR status; excludes pending M19; no merge, edits or independent scientific acceptance",
+  "rows": [
+    {
+      "live": {
+        "baseRefName": "main",
+        "baseRefOid": "92574ffe95192cc0724a27e1acad28e42d325115",
+        "headRefName": "codex/observations-backward-24h-20261014",
+        "headRefOid": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+        "isDraft": false,
+        "number": 9576,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support orbit and radio inverse",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9576"
+      },
+      "recorded_head": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-24h-20261014",
+        "baseRefOid": "32d613c0f1361523f1d5dd85275fa945bc87cab0",
+        "headRefName": "codex/observations-backward-doppler-20261014",
+        "headRefOid": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+        "isDraft": false,
+        "number": 9578,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count and clock bridge",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9578"
+      },
+      "recorded_head": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-doppler-20261014",
+        "baseRefOid": "05ee32a6016c18dcab8ffd188495adc35e937bf6",
+        "headRefName": "codex/observations-backward-plasma-20261014",
+        "headRefOid": "b8f83e344b3ba756cc31fe24f83b4dec71b199d0",
+        "isDraft": false,
+        "number": 9581,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support initial-phase elimination",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9581"
+      },
+      "recorded_head": "b8f83e344b3ba756cc31fe24f83b4dec71b199d0",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-plasma-20261014",
+        "baseRefOid": "b8f83e344b3ba756cc31fe24f83b4dec71b199d0",
+        "headRefName": "codex/observations-backward-history-20261015",
+        "headRefOid": "444fddc785280eb01898986edfc301bda9e8d9df",
+        "isDraft": false,
+        "number": 9583,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support scalar history",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9583"
+      },
+      "recorded_head": "444fddc785280eb01898986edfc301bda9e8d9df",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-history-20261015",
+        "baseRefOid": "444fddc785280eb01898986edfc301bda9e8d9df",
+        "headRefName": "codex/observations-backward-energy-20261015",
+        "headRefOid": "ff4a63b6f0407d40ab925ac4bc83011546886217",
+        "isDraft": false,
+        "number": 9586,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support count-derived energy",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9586"
+      },
+      "recorded_head": "ff4a63b6f0407d40ab925ac4bc83011546886217",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-energy-20261015",
+        "baseRefOid": "ff4a63b6f0407d40ab925ac4bc83011546886217",
+        "headRefName": "codex/observations-backward-accelerated-20261015",
+        "headRefOid": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+        "isDraft": false,
+        "number": 9589,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: bounded_theorem / conditional-support accelerated coherent counts",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9589"
+      },
+      "recorded_head": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-accelerated-20261015",
+        "baseRefOid": "c6b3c14760d0d2efb5f7eacf3b9ff7ae25cbf0ee",
+        "headRefName": "codex/observations-backward-physical-20261015",
+        "headRefOid": "917e147109e58c5bf8b5d4a9d546077d20cfe41c",
+        "isDraft": false,
+        "number": 9591,
+        "state": "OPEN",
+        "title": "[physics-loop] observations-backward: conditional mass and curvature bounds for coherent counts",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9591"
+      },
+      "recorded_head": "917e147109e58c5bf8b5d4a9d546077d20cfe41c",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-physical-20261015",
+        "baseRefOid": "917e147109e58c5bf8b5d4a9d546077d20cfe41c",
+        "headRefName": "codex/observations-backward-calibration-20261015",
+        "headRefOid": "f2fdc425b4a18341c95a076e58fec2d56ebc3cfa",
+        "isDraft": false,
+        "number": 9592,
+        "state": "OPEN",
+        "title": "[physics-loop] phase-history quotient: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9592"
+      },
+      "recorded_head": "f2fdc425b4a18341c95a076e58fec2d56ebc3cfa",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-calibration-20261015",
+        "baseRefOid": "f2fdc425b4a18341c95a076e58fec2d56ebc3cfa",
+        "headRefName": "codex/observations-backward-channels-20261015",
+        "headRefOid": "e143a32663ad58483efa73050d9344a700d91508",
+        "isDraft": false,
+        "number": 9594,
+        "state": "OPEN",
+        "title": "[physics-loop] integer channel calibration: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9594"
+      },
+      "recorded_head": "e143a32663ad58483efa73050d9344a700d91508",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-channels-20261015",
+        "baseRefOid": "e143a32663ad58483efa73050d9344a700d91508",
+        "headRefName": "codex/observations-backward-receiver-20261015",
+        "headRefOid": "18c1fe25210d3a19a8f77530937ae7af124084f0",
+        "isDraft": false,
+        "number": 9597,
+        "state": "OPEN",
+        "title": "[physics-loop] receiver-reference: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9597"
+      },
+      "recorded_head": "18c1fe25210d3a19a8f77530937ae7af124084f0",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-receiver-20261015",
+        "baseRefOid": "18c1fe25210d3a19a8f77530937ae7af124084f0",
+        "headRefName": "codex/observations-backward-discrepancy-20261015",
+        "headRefOid": "5a73333518a13640c6a99cbcb01c31342c519fd3",
+        "isDraft": false,
+        "number": 9600,
+        "state": "OPEN",
+        "title": "[physics-loop] error-direction inference: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9600"
+      },
+      "recorded_head": "5a73333518a13640c6a99cbcb01c31342c519fd3",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-discrepancy-20261015",
+        "baseRefOid": "5a73333518a13640c6a99cbcb01c31342c519fd3",
+        "headRefName": "codex/observations-backward-selection-20261015",
+        "headRefOid": "e2873beca6af9954be49c4a9bbe8d98f05c9e69b",
+        "isDraft": false,
+        "number": 9603,
+        "state": "OPEN",
+        "title": "[physics-loop] cosmological inverse: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9603"
+      },
+      "recorded_head": "e2873beca6af9954be49c4a9bbe8d98f05c9e69b",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-selection-20261015",
+        "baseRefOid": "e2873beca6af9954be49c4a9bbe8d98f05c9e69b",
+        "headRefName": "codex/observations-backward-growth-20261015",
+        "headRefOid": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+        "isDraft": false,
+        "number": 9605,
+        "state": "OPEN",
+        "title": "[physics-loop] growth/lensing inverse: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9605"
+      },
+      "recorded_head": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-growth-20261015",
+        "baseRefOid": "4fa5b1497753b8a78a8dbdcbae4f025ce6a0b137",
+        "headRefName": "codex/observations-backward-dynamics-20261015",
+        "headRefOid": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+        "isDraft": false,
+        "number": 9608,
+        "state": "OPEN",
+        "title": "[physics-loop] full-wave scalar inverse: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9608"
+      },
+      "recorded_head": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-dynamics-20261015",
+        "baseRefOid": "f3637a4eba3fb18690fe6a2b03d9455c60cc6363",
+        "headRefName": "codex/observations-backward-covariance-20261015",
+        "headRefOid": "44c7d3309c17380474ec253a924af6891d438b02",
+        "isDraft": false,
+        "number": 9610,
+        "state": "OPEN",
+        "title": "[physics-loop] projected scalar constraints: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9610"
+      },
+      "recorded_head": "44c7d3309c17380474ec253a924af6891d438b02",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-covariance-20261015",
+        "baseRefOid": "44c7d3309c17380474ec253a924af6891d438b02",
+        "headRefName": "codex/observations-backward-windows-20261015",
+        "headRefOid": "cdf67b716d61b49d03313e8c21132babddaeca51",
+        "isDraft": false,
+        "number": 9612,
+        "state": "OPEN",
+        "title": "[physics-loop] finite shear\u2013velocity tests: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9612"
+      },
+      "recorded_head": "cdf67b716d61b49d03313e8c21132babddaeca51",
+      "head_matches_record": true,
+      "recorded_attached": true
+    },
+    {
+      "live": {
+        "baseRefName": "codex/observations-backward-windows-20261015",
+        "baseRefOid": "cdf67b716d61b49d03313e8c21132babddaeca51",
+        "headRefName": "codex/observations-backward-environment-20261015",
+        "headRefOid": "b789855264cad2db6dabe73f28ff3618dc58f66f",
+        "isDraft": false,
+        "number": 9614,
+        "state": "OPEN",
+        "title": "[physics-loop] physical-metric scalar bounds: bounded_theorem / conditional-support",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9614"
+      },
+      "recorded_head": "b789855264cad2db6dabe73f28ff3618dc58f66f",
+      "head_matches_record": true,
+      "recorded_attached": true
+    }
+  ]
+}

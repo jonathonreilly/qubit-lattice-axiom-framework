@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-15T21:27:52.885158+00:00",
+  "previous_sha256": "40f96cc748ff468f0b6cd5b3b46e703a768be648e1ed40ff10b666e99e2a7a01",
+  "current_sha256": "cc772596d07a7dee148d15108d65fe20c713dda6a8106a61fb3948422627524f",
+  "before": {
+    "current_block_delivery": "Published exact checked source. Operational post-publication checkpoints may be dirty; do not alter frozen science without a concrete finding.",
+    "current_canonical_note": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "current_working_note": "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "working_source_manifest": ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v6.json",
+    "checkpoint_scope": "M19 published/attached as regular PR9620 at95609a8f3545258e5494d95f2d012a9e15ab1c14,tree5aaa06a0,59paths. Conditional pointwise/weak vacuum metric inverse removes chosen scalar boundary and highest direct derivatives in stated class.89canonical controls0fail,21formula variants detected; independent math/alternate-frame/source checks and862-comparison final delivery delta complete.206archive members/40plainviews/7explicit omissions. No observed metric or empirical test; action/vacuum/sector/calibration/Q remain supplied.",
+    "independent_check": "Complete focused scientific/source reports and v1/v2 final delivery reports read. Final delta862pass0fail; no unresolved scoped finding. Full integrated-main validation/formal audit remain pending.",
+    "conditional_surface_status": "Local nonlinear radial-vacuum inverse and interval solution membership under supplied candidate action, material vacuum, sector and calibrated metric.",
+    "admitted_observation_status": "Zero newly opened observational arrays and zero empirical tests; synthetic coupled equations and independent alternate-frame numerical check.",
+    "claim_type_reason": "Conditional metric/scalar inverse and candidate discriminators; physical inputs, action and absolute scales remain open",
+    "closing_draft": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_WORKING_v1.md",
+    "next_milestone": "Derive a physical input supplier or distinct action/scale discriminator; final synthesis begins at fixed packaging time"
+  },
+  "after": {
+    "current_block_delivery": "M20 canonical science checked; extension is not yet published. Final frozen delivery and PR9620 update are pending. M19 remains published at the last_published_head.",
+    "current_canonical_note": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "current_working_note": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "working_source_manifest": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+    "checkpoint_scope": "M20 full-three-field necessary metric envelope and conditional squares.31author controls0fail;8altered formulas detected;34independent exact and50post-exposure formula checks. Complete source/evidence reports read. Unknown trial k,Hv,nu,C,action,metric/vacuum and solution completion remain supplied. Final delivery/push pending; M19 source unchanged.",
+    "independent_check": "Complete M20 canonical report68322e2e and evidence supplement32518c38 read by root. No material scoped discrepancy; delivery still pending. No formal audit or empirical test.",
+    "conditional_surface_status": "Necessary full-three-field radial vacuum metric envelope and algebraic squared amplitudes for supplied k,Hv,nu,C; not sufficient solution membership.",
+    "admitted_observation_status": "No newly opened observational arrays or independent empirical test; two synthetic local full-field ODE jets and separate exact/formula checks.",
+    "claim_type_reason": "Exact necessary consequence of supplied full action and calibrated radial vacuum metric; trial parameters/normalization and remaining dynamics are explicit.",
+    "closing_draft": "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/FINAL_REPORT_WORKING_v5.md",
+    "next_milestone": "Finish coherent M20 extension delivery and final campaign synthesis at the fixed packaging time."
+  },
+  "scope": "Current operational display correction only; historical completed/published/scientific progress and all M20 canonical/archive evidence unchanged"
+}

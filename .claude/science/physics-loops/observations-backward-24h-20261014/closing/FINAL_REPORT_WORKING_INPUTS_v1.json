@@ -1,0 +1,17 @@
+{
+  "prepared_at": "2026-10-15T20:47:13.166097+00:00",
+  "status_sha256": "8aac0ad6a261b6372478eae10f024945c90f7b8380a1a32dc71071da6731345d",
+  "prs_sha256": "5b6398e42d387cb2c1ec8d7e01e62ab5a2491197315d3acd372802b18004586d",
+  "scope": "Provisional synthesis of recorded completed work, no new discovery, no final completion or process-stop claim",
+  "draft_sha256": "322d4cbd2f52f433b46c4506403727b132536d11bcfe72e2ce42835f41e22ad2",
+  "last_prose_edit_at": "2026-10-15T21:00:35.922621+00:00",
+  "live_pr_snapshot": "CLOSING_PR_SNAPSHOT_v1.json",
+  "live_pr_snapshot_sha256": "e1353b5ed00be3d1e983df7772d73e211488f04bf53f8d92970129f7486ce068",
+  "current_campaign_pr_attachments_confirmed": 18,
+  "source_manifest_reads": {
+    "SOURCE_MANIFEST_v2.json": "d7787b6026948a4427146e394ec84ecfad886e042e76153eab7a4245b1804d2b",
+    "DOPPLER_SOURCE_MANIFEST_v1.json": "ce15369829a2de9b2d99d1501869bfd7f3e3a98a6eb03d607c46bb5fb0481b06",
+    "channel_quotient/RSR_RAW_SOURCE_MANIFEST_v1.json": "c16ecb85276f5ce203925acd459f1ca9fbb41ca5c283da49b2a7aeec4856947a"
+  },
+  "latest_publication_sha256": "6829680767c03426590c2ab6d88d9648aebdf9bf24bfd6b88297a93d1ceb31b8"
+}

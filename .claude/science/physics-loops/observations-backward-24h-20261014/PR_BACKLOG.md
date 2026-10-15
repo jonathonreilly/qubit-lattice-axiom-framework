@@ -140,3 +140,7 @@ Root read the complete final scientific reports and both mechanical delivery rep
 ## M20 extension of existing PR9620
 
 Necessary full-three-field envelope and conditional squares; no unique trial parameters/C or sufficient solution.31canonical controls0fail,8formula mutations detected,34independent exact and50post-exposure checks. Complete scientific source/evidence reviews read; final stage verification and push pending. Existing M19 source/cache/archive remain byte-identical.
+
+M20 full-field necessary compatibility published in existing PR9620 at414856e9c2195680af563678a0844af71de3ddfb; no new PR. All18campaign PRs attached/open at closing snapshot. Closing documentation only remains; no merges/main push.
+
+Campaign research window ended2026-10-15T21:48:44Z. No additional scientific PR is queued by this campaign. Closing report/receipts will be added to existing PR9620; all earlier scientific units remain preserved. No merge or main push.

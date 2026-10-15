@@ -1,0 +1,2731 @@
+{
+  "at_utc": "2026-10-15T21:27:16.156269+00:00",
+  "scope": "M20 frozen mechanical delivery only; no science execution, Git mutation, network or formal audit",
+  "freeze": {
+    "created_at": "2026-10-15T21:22:57.099572+00:00",
+    "branch": "codex/observations-backward-material-20261015",
+    "parent_head": "95609a8f3545258e5494d95f2d012a9e15ab1c14",
+    "pr": 9620,
+    "frozen_tree": "3bca92bbce1755822a09fd4951ae4e64a1b1a7a0",
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/ARTIFACT_PLAN.md",
+        "sha256": "5339b39481d763a85422c414b230416618c7bd7107cafa7c8fd8ed8d5ab54099",
+        "bytes": 4730
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "b09fc67065a00b68165e4dd685c07784e99abf0698f5b116b1471429afbe7713",
+        "bytes": 25161
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "bc0bad966d0fbbe38d762f9579f1bdaea384fabe14e306bba49839b678e8e4db",
+        "bytes": 15997
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/HANDOFF.md",
+        "sha256": "030f01648759b1599247b840e5c308513ba8c38fe9f11c04a61451507599ac36",
+        "bytes": 93699
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/OPPORTUNITY_QUEUE.md",
+        "sha256": "f1569f05aa79a08ebbe755f32258daa2531aaf078bc3954de9a851dc9788c10e",
+        "bytes": 15163
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/PR_BACKLOG.md",
+        "sha256": "d5292e9de2960d390e8dfdcc3b690bd2b2497171229086b2357ac266323d59d0",
+        "bytes": 21507
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/REVIEW_HISTORY.md",
+        "sha256": "f84e8332bdb9bfa4c27ac13955f2da237edda1685d0f732a3796dbedad9dd7fc",
+        "bytes": 44537
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/STATE.yaml",
+        "sha256": "40f96cc748ff468f0b6cd5b3b46e703a768be648e1ed40ff10b666e99e2a7a01",
+        "bytes": 47563
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/TRACE_GATE.md",
+        "sha256": "2eda448747ca24e6fca04115ccd196ebcf95552a0113390d0891cc8ed2f565fb",
+        "bytes": 15233
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "f67a59abe2b3bc02335956f778be70a32404f4457f71781fcabe1f722eed36a9",
+        "bytes": 1005
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json",
+        "sha256": "1003017af1c3a0c27db70d9f7b259a7b5a93e67f2915c80bc8802fccfa1924ac",
+        "bytes": 1405
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+        "sha256": "5f52024796397530913b85d0112961d8684ec84c02d0281aa4c730dc751a0305",
+        "bytes": 593
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "98e10247c2af9482725dcbd0e51a1046e3fe036244c8cff6a03c4d9a4ad18727",
+        "bytes": 916
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md",
+        "sha256": "f15f63173b3bb2b3ab558b19b8eabeb8c1341b40b8fc48f02c4940da5f70568a",
+        "bytes": 2809
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EVIDENCE_INDEX_v1.json",
+        "sha256": "8aaad5604a1954b78c5eec828d5fee8c6e39cf6c944725dc5c71414fee4e6905",
+        "bytes": 24469
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+        "sha256": "e3e960bc096fffd9688a2ffd42b0ea7d974c23b0b81540e79430ea69e2354b59",
+        "bytes": 799
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+        "sha256": "69355c5e6c1d2ca1e7646b9e8315beae9a10c36b22fe95093088fa90df8f0514",
+        "bytes": 9701
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+        "sha256": "1a34505ce34044d42d79cbf175cfbe5d7d4965e2fc792ae34ce7229084dda617",
+        "bytes": 5598
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+        "sha256": "ee67693b15ba17cec3adfae59525b48df78283fb57f9cdd4c08a0602816e0e03",
+        "bytes": 3451
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+        "sha256": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+        "bytes": 1198
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json",
+        "sha256": "c3ab8902684bc06281bcf3a734bc5248e32fcde8c756134880376d70c0dd57b1",
+        "bytes": 1833
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json",
+        "sha256": "ddf7c351b90d81daf1b7d10b97ea22774db139e10cf48ffdfa6443252d294491",
+        "bytes": 1413
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json",
+        "sha256": "fd6b38b7efcb1d81aeb8656bf9e1decebe07adcd87c711c36da52a7c4206e118",
+        "bytes": 215
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md",
+        "sha256": "48bce1e1a76d872d4100f21cc104573fb6aee52f614b2a1049d03a8503fa8e33",
+        "bytes": 895
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json",
+        "sha256": "1dfffb5dd7c8b88a929d6b635c86bff1e16941d49606a7c49ccbca8aa4f38905",
+        "bytes": 7872
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+        "sha256": "1935403c4ad5e484bc43212e2c9285de2d63aa8078f385b10a49460bd2735595",
+        "bytes": 6794
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+        "sha256": "383d8a457d185264d95a2fd9926e1485498d4b1d4b1c65cbfc955813a118daea",
+        "bytes": 3685
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+        "sha256": "68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919",
+        "bytes": 9007
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json",
+        "sha256": "d72aaf1b81c56ea3e12defee49b7baee769445ef7b03f9da5e6a164ea7da4bb2",
+        "bytes": 17978
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json",
+        "sha256": "4b43d89dc889163422c598f3bd95d19076eb437e19f177b9b13fb60b6eac87af",
+        "bytes": 3469
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md",
+        "sha256": "32518c3850ae5b22f95859e8158ce533e0d14f13ff4b9c6b85ae0726791f4581",
+        "bytes": 5373
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md",
+        "sha256": "e6df6185554db5ddcf1a4dc6328906f61ca02bf29924c266198407ebc50c0e21",
+        "bytes": 10896
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json",
+        "sha256": "793e607460d94fa2e60d3a9c6993ad598c79c1818b4bc14c09ef812486f1d2f9",
+        "bytes": 1257
+      },
+      {
+        "path": ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json",
+        "sha256": "098f66faa0c262f15ed85053a2f7d5354d588f560ffcf0eebfedfcd8e93f5a04",
+        "bytes": 3961
+      },
+      {
+        "path": "docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+        "bytes": 10793
+      },
+      {
+        "path": "logs/runner-cache/scalar_full_field_metric_check.txt",
+        "sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+        "bytes": 2540
+      },
+      {
+        "path": "outputs/scalar_full_field_metric/RESULTS_v1.json",
+        "sha256": "2e2de12cbaaebc759f95fa16f5701e44dc7bb5ec6b5faa67096557c8e21d3de0",
+        "bytes": 9938
+      },
+      {
+        "path": "outputs/scalar_full_field_metric/SUMMARY_v1.json",
+        "sha256": "e63c3c720e4e79a52209e21a896dd4aac6e61823941c3d6c20cfa2e88d92c7a8",
+        "bytes": 1746
+      },
+      {
+        "path": "outputs/scalar_full_field_metric_evidence_v1.tar.gz",
+        "sha256": "c570b9c44285afa41469ede60ec29d882a0224550bac8419d6d4a511b7951011",
+        "bytes": 90723
+      },
+      {
+        "path": "scripts/scalar_full_field_metric.py",
+        "sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+        "bytes": 8501
+      },
+      {
+        "path": "scripts/scalar_full_field_metric_check.py",
+        "sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+        "bytes": 3308
+      }
+    ],
+    "archive_sha256": "c570b9c44285afa41469ede60ec29d882a0224550bac8419d6d4a511b7951011",
+    "archive_members": 83,
+    "plain_views": 24,
+    "scope": "M20 coherent extension only; preserved M19 science. Current-main integration not performed."
+  },
+  "checks": [
+    {
+      "check": "entire_index_equals_frozen_tree",
+      "passed": true
+    },
+    {
+      "check": "HEAD_equals_declared_parent",
+      "passed": true
+    },
+    {
+      "check": "branch",
+      "passed": true
+    },
+    {
+      "check": "exact_41_delta_paths",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/ARTIFACT_PLAN.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/OPPORTUNITY_QUEUE.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/PR_BACKLOG.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/REVIEW_HISTORY.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/STATE.yaml",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EVIDENCE_INDEX_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:logs/runner-cache/scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:outputs/scalar_full_field_metric_evidence_v1.tar.gz",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "freeze_index_live:scripts/scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "only_owned_extension_and_campaign_metadata",
+      "passed": true
+    },
+    {
+      "check": "no_generated_authority_policy_or_graph_changes",
+      "passed": true
+    },
+    {
+      "check": "archive_container_identity",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stderr",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stdout",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/canonical_correspondence_checks_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/evidence_binding_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/independent_controls_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/working_controls_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:logs/runner-cache/scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "archive_regular_safe_unique:scripts/scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "archive_exact_83_members",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stderr",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stderr",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stdout",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stdout",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/canonical_correspondence_checks_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/canonical_correspondence_checks_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/evidence_binding_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/evidence_binding_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/independent_controls_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/independent_controls_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/candidate.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/run.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stderr.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stdout.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/working_controls_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/working_controls_v1.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "archive_member:logs/runner-cache/scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:logs/runner-cache/scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "archive_member:outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "archive_member:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "archive_member:scripts/scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "archive_matches_current_original:scripts/scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "24_plainviews",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "plainview_archive_stage_live:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "only_unindexed_bytecode",
+      "passed": true,
+      "detail": [
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/__pycache__/candidate.cpython-312.pyc",
+        ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/__pycache__/candidate.cpython-312.pyc"
+      ]
+    },
+    {
+      "check": "no_declared_external_omissions",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/ASSUMPTIONS_AND_IMPORTS.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v3.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v4.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v4.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v5.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v6.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CLAIM_STATUS_CERTIFICATE.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CONFORMANCE_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/DISPLAY_REPAIR_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/EVIDENCE_INDEX_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/EXTERNAL_PRIOR_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/FORMAT_DELTA_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/MUTATIONS_v2.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/RESERVED_ROW_FINDING_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/REVIEW_RECORD_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/SOURCE_PREFLIGHT_v2.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/SOURCE_PREFLIGHT_v3.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/TOOLCHAIN_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/TRACE_GATE.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/WEAK_MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/WEAK_SETUP_FAILURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/AUTHOR_CORRESPONDENCE_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/INDEPENDENT_DERIVATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/EINSTEIN_INVERSE_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/EINSTEIN_INVERSE_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_CANONICAL_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_INVERSE_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_INVERSE_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/CANONICAL_SCOPE_REPORT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/CLUSTER_CAP_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/REPORT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_BINDING_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_CONFIRMATION_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_SCOPE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:outputs/scalar_vacuum_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:outputs/scalar_vacuum_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:outputs/scalar_vacuum_metric_evidence_v1.tar.gz",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:scripts/scalar_vacuum_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:scripts/scalar_vacuum_metric_inverse.py",
+      "passed": true
+    },
+    {
+      "check": "M19_parent_index_live:scripts/scalar_vacuum_metric_weak.py",
+      "passed": true
+    },
+    {
+      "check": "preservation_record:docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "preservation_record:scripts/scalar_vacuum_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "preservation_record:scripts/scalar_vacuum_metric_inverse.py",
+      "passed": true
+    },
+    {
+      "check": "preservation_record:scripts/scalar_vacuum_metric_weak.py",
+      "passed": true
+    },
+    {
+      "check": "preservation_record:logs/runner-cache/scalar_vacuum_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "preservation_record:outputs/scalar_vacuum_metric_evidence_v1.tar.gz",
+      "passed": true
+    },
+    {
+      "check": "primary_identity",
+      "passed": true
+    },
+    {
+      "check": "five_declared_inputs_and_timeout",
+      "passed": true
+    },
+    {
+      "check": "current_declared_input:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "current_declared_input:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "current_declared_input:docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "current_declared_input:docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "current_declared_input:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "guard_before_after_identical",
+      "passed": true
+    },
+    {
+      "check": "guard_success_time",
+      "passed": true
+    },
+    {
+      "check": "cache_sha",
+      "passed": true
+    },
+    {
+      "check": "cache_guard_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "cache_summary_product_mirror",
+      "passed": true
+    },
+    {
+      "check": "summary_detailed_shared_values",
+      "passed": true
+    },
+    {
+      "check": "31_unique_passing_controls",
+      "passed": true
+    },
+    {
+      "check": "conditional_zero_empirical",
+      "passed": true
+    },
+    {
+      "check": "protocol_cases",
+      "passed": true
+    },
+    {
+      "check": "review_file:CANONICAL_REVIEW_IDENTITY_v1.json:CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "review_file:CANONICAL_REVIEW_IDENTITY_v1.json:CANONICAL_EXPOSURE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_file:CANONICAL_REVIEW_IDENTITY_v1.json:canonical_correspondence_checks_v1.py",
+      "passed": true
+    },
+    {
+      "check": "review_file:CANONICAL_REVIEW_IDENTITY_v1.json:CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_file:CANONICAL_REVIEW_IDENTITY_v1.json:INDEPENDENT_FREEZE_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:CANONICAL_REVIEW_IDENTITY_v1.json:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "review_current:CANONICAL_REVIEW_IDENTITY_v1.json:docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:CANONICAL_REVIEW_IDENTITY_v1.json:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "review_current:CANONICAL_REVIEW_IDENTITY_v1.json:scripts/scalar_full_field_metric.py",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:CANONICAL_REVIEW_IDENTITY_v1.json:scripts/scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "review_current:CANONICAL_REVIEW_IDENTITY_v1.json:scripts/scalar_full_field_metric_check.py",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:CANONICAL_REVIEW_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_current:CANONICAL_REVIEW_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_file:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "review_file:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:EVIDENCE_BINDING_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_file:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:evidence_binding_v1.py",
+      "passed": true
+    },
+    {
+      "check": "review_file:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "review_file:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:CANONICAL_REVIEW_IDENTITY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_current:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_current:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_current:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_current:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:outputs/scalar_full_field_metric/RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_current:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:outputs/scalar_full_field_metric/SUMMARY_v1.json",
+      "passed": true
+    },
+    {
+      "check": "review_snapshot:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:logs/runner-cache/scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "review_current:EVIDENCE_SUPPLEMENT_IDENTITY_v1.json:logs/runner-cache/scalar_full_field_metric_check.txt",
+      "passed": true
+    },
+    {
+      "check": "exact_review_report:CANONICAL_REVIEW_v1.md",
+      "passed": true
+    },
+    {
+      "check": "exact_review_report:EVIDENCE_SUPPLEMENT_v1.md",
+      "passed": true
+    },
+    {
+      "check": "separate_review_counts:INDEPENDENT_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "separate_review_counts:CANONICAL_CORRESPONDENCE_RESULTS_v1.json",
+      "passed": true
+    },
+    {
+      "check": "eight_actual_mutants",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:missing_B_in_transverse_kinetic",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:missing_B_in_transverse_kinetic",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:wrong_transverse_source_sign",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:wrong_transverse_source_sign",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:half_radial_scalar_operator",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:half_radial_scalar_operator",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:reversed_y_share",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:reversed_y_share",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:wrong_y_potential_power",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:wrong_y_potential_power",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:wrong_angular_null_chart",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:wrong_angular_null_chart",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:omit_base_potential_derivative",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:omit_base_potential_derivative",
+      "passed": true
+    },
+    {
+      "check": "mutant_source:wrong_Einstein_conformal_kinetic",
+      "passed": true
+    },
+    {
+      "check": "mutant_actual_failed_controls:wrong_Einstein_conformal_kinetic",
+      "passed": true
+    },
+    {
+      "check": "source_graph_scope",
+      "passed": true
+    },
+    {
+      "check": "staged_diff_whitespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "index_unchanged_during_check",
+      "passed": true
+    },
+    {
+      "check": "current_M20_delivery_label_honest",
+      "passed": false,
+      "detail": {
+        "current_block": "full_field_metric",
+        "current_block_status": "science_checked_delivery_pending",
+        "current_block_delivery": "Published exact checked source. Operational post-publication checkpoints may be dirty; do not alter frozen science without a concrete finding."
+      }
+    }
+  ],
+  "counts": {
+    "passed": 451,
+    "failed": 1
+  },
+  "findings": [
+    {
+      "check": "current_M20_delivery_label_honest",
+      "passed": false,
+      "detail": {
+        "current_block": "full_field_metric",
+        "current_block_status": "science_checked_delivery_pending",
+        "current_block_delivery": "Published exact checked source. Operational post-publication checkpoints may be dirty; do not alter frozen science without a concrete finding."
+      }
+    }
+  ],
+  "read_identities": {
+    "/Users/jonBridger/.codex/campaigns/observations-backward-24h-20261014/M20_STAGE_FREEZE_v1.json": {
+      "sha256": "5a2c9d80629481c71e2a752f2e778483b1c63f09389779e7e85bd57cee26ba2c",
+      "bytes": 9923
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/ARTIFACT_PLAN.md": {
+      "sha256": "5339b39481d763a85422c414b230416618c7bd7107cafa7c8fd8ed8d5ab54099",
+      "bytes": 4730
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "b09fc67065a00b68165e4dd685c07784e99abf0698f5b116b1471429afbe7713",
+      "bytes": 25161
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "bc0bad966d0fbbe38d762f9579f1bdaea384fabe14e306bba49839b678e8e4db",
+      "bytes": 15997
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/HANDOFF.md": {
+      "sha256": "030f01648759b1599247b840e5c308513ba8c38fe9f11c04a61451507599ac36",
+      "bytes": 93699
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/OPPORTUNITY_QUEUE.md": {
+      "sha256": "f1569f05aa79a08ebbe755f32258daa2531aaf078bc3954de9a851dc9788c10e",
+      "bytes": 15163
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/PR_BACKLOG.md": {
+      "sha256": "d5292e9de2960d390e8dfdcc3b690bd2b2497171229086b2357ac266323d59d0",
+      "bytes": 21507
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/REVIEW_HISTORY.md": {
+      "sha256": "f84e8332bdb9bfa4c27ac13955f2da237edda1685d0f732a3796dbedad9dd7fc",
+      "bytes": 44537
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/STATE.yaml": {
+      "sha256": "40f96cc748ff468f0b6cd5b3b46e703a768be648e1ed40ff10b666e99e2a7a01",
+      "bytes": 47563
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/TRACE_GATE.md": {
+      "sha256": "2eda448747ca24e6fca04115ccd196ebcf95552a0113390d0891cc8ed2f565fb",
+      "bytes": 15233
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "f67a59abe2b3bc02335956f778be70a32404f4457f71781fcabe1f722eed36a9",
+      "bytes": 1005
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v1.json": {
+      "sha256": "1003017af1c3a0c27db70d9f7b259a7b5a93e67f2915c80bc8802fccfa1924ac",
+      "bytes": 1405
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CHECKPOINT_v2.json": {
+      "sha256": "5f52024796397530913b85d0112961d8684ec84c02d0281aa4c730dc751a0305",
+      "bytes": 593
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "98e10247c2af9482725dcbd0e51a1046e3fe036244c8cff6a03c4d9a4ad18727",
+      "bytes": 916
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/DERIVATION_v1.md": {
+      "sha256": "f15f63173b3bb2b3ab558b19b8eabeb8c1341b40b8fc48f02c4940da5f70568a",
+      "bytes": 2809
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EVIDENCE_INDEX_v1.json": {
+      "sha256": "8aaad5604a1954b78c5eec828d5fee8c6e39cf6c944725dc5c71414fee4e6905",
+      "bytes": 24469
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/EXECUTION_v1.json": {
+      "sha256": "e3e960bc096fffd9688a2ffd42b0ea7d974c23b0b81540e79430ea69e2354b59",
+      "bytes": 799
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/GUARDED_EXECUTION_v1.json": {
+      "sha256": "69355c5e6c1d2ca1e7646b9e8315beae9a10c36b22fe95093088fa90df8f0514",
+      "bytes": 9701
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/HANDOFF.md": {
+      "sha256": "1a34505ce34044d42d79cbf175cfbe5d7d4965e2fc792ae34ce7229084dda617",
+      "bytes": 5598
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/MUTATIONS_v1.json": {
+      "sha256": "ee67693b15ba17cec3adfae59525b48df78283fb57f9cdd4c08a0602816e0e03",
+      "bytes": 3451
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/PROTOCOL_v1.json": {
+      "sha256": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+      "bytes": 1198
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PREFLIGHT_v1.json": {
+      "sha256": "c3ab8902684bc06281bcf3a734bc5248e32fcde8c756134880376d70c0dd57b1",
+      "bytes": 1833
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/SOURCE_PRESERVATION_v1.json": {
+      "sha256": "ddf7c351b90d81daf1b7d10b97ea22774db139e10cf48ffdfa6443252d294491",
+      "bytes": 1413
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TOOLCHAIN_v1.json": {
+      "sha256": "fd6b38b7efcb1d81aeb8656bf9e1decebe07adcd87c711c36da52a7c4206e118",
+      "bytes": 215
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/TRACE_GATE.md": {
+      "sha256": "48bce1e1a76d872d4100f21cc104573fb6aee52f614b2a1049d03a8503fa8e33",
+      "bytes": 895
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/WORKING_RESULTS_v1.json": {
+      "sha256": "1dfffb5dd7c8b88a929d6b635c86bff1e16941d49606a7c49ccbca8aa4f38905",
+      "bytes": 7872
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_CORRESPONDENCE_RESULTS_v1.json": {
+      "sha256": "1935403c4ad5e484bc43212e2c9285de2d63aa8078f385b10a49460bd2735595",
+      "bytes": 6794
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_IDENTITY_v1.json": {
+      "sha256": "383d8a457d185264d95a2fd9926e1485498d4b1d4b1c65cbfc955813a118daea",
+      "bytes": 3685
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_REVIEW_v1.md": {
+      "sha256": "68322e2efce87db2d3904eb7acbac57f4380f52f028052a89dbd4ec02fd9c919",
+      "bytes": 9007
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_BINDING_RESULTS_v1.json": {
+      "sha256": "d72aaf1b81c56ea3e12defee49b7baee769445ef7b03f9da5e6a164ea7da4bb2",
+      "bytes": 17978
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_IDENTITY_v1.json": {
+      "sha256": "4b43d89dc889163422c598f3bd95d19076eb437e19f177b9b13fb60b6eac87af",
+      "bytes": 3469
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_SUPPLEMENT_v1.md": {
+      "sha256": "32518c3850ae5b22f95859e8158ce533e0d14f13ff4b9c6b85ae0726791f4581",
+      "bytes": 5373
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_DERIVATION_v1.md": {
+      "sha256": "e6df6185554db5ddcf1a4dc6328906f61ca02bf29924c266198407ebc50c0e21",
+      "bytes": 10896
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_FREEZE_v1.json": {
+      "sha256": "793e607460d94fa2e60d3a9c6993ad598c79c1818b4bc14c09ef812486f1d2f9",
+      "bytes": 1257
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/INDEPENDENT_RESULTS_v1.json": {
+      "sha256": "098f66faa0c262f15ed85053a2f7d5354d588f560ffcf0eebfedfcd8e93f5a04",
+      "bytes": 3961
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "bytes": 10793
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_full_field_metric_check.txt": {
+      "sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+      "bytes": 2540
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_full_field_metric/RESULTS_v1.json": {
+      "sha256": "2e2de12cbaaebc759f95fa16f5701e44dc7bb5ec6b5faa67096557c8e21d3de0",
+      "bytes": 9938
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_full_field_metric/SUMMARY_v1.json": {
+      "sha256": "e63c3c720e4e79a52209e21a896dd4aac6e61823941c3d6c20cfa2e88d92c7a8",
+      "bytes": 1746
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_full_field_metric_evidence_v1.tar.gz": {
+      "sha256": "c570b9c44285afa41469ede60ec29d882a0224550bac8419d6d4a511b7951011",
+      "bytes": 90723
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_full_field_metric.py": {
+      "sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_full_field_metric_check.py": {
+      "sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+      "bytes": 3308
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/CANONICAL_v1.stdout": {
+      "sha256": "3a4027d83cf09d3026982e9fbafb0752560e2a37d9388b338aa0f3fc126759ff",
+      "bytes": 2192
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1.json": {
+      "sha256": "2e2b14fe608eab5bc7e4033a48022785b504a5cf760c39dd58137136258802be",
+      "bytes": 1280
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__PROTOCOL_v1.json": {
+      "sha256": "5254a684a8cba9a3ec0787723a9be4663f2e6b04dccfdf70d9e296c4a055d3d4",
+      "bytes": 1198
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__SCALAR_FULL_FIELD_METRIC_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "493130222fb63c5fef6d21f14ab254288b0fe81b1d0e5e767cf28d98e77d516a",
+      "bytes": 10793
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric.py": {
+      "sha256": "63ac20cfe19f3e0e681ace4714434f58fef50c82fe5ad95a282d0a9e79268a21",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/CANONICAL_EXPOSURE_v1__scalar_full_field_metric_check.py": {
+      "sha256": "f859afe954b42f75a7a97ef3e51af4ef1761992fbaba0bf5310d518b70078180",
+      "bytes": 3308
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__EXECUTION_v1.json": {
+      "sha256": "e3e960bc096fffd9688a2ffd42b0ea7d974c23b0b81540e79430ea69e2354b59",
+      "bytes": 799
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__GUARDED_EXECUTION_v1.json": {
+      "sha256": "69355c5e6c1d2ca1e7646b9e8315beae9a10c36b22fe95093088fa90df8f0514",
+      "bytes": 9701
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__HANDOFF.md": {
+      "sha256": "a0474e42999ce125eaa2994d654f91261dad84246ed06be5584c5e4a8d4ce5d6",
+      "bytes": 4998
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__MUTATIONS_v1.json": {
+      "sha256": "ee67693b15ba17cec3adfae59525b48df78283fb57f9cdd4c08a0602816e0e03",
+      "bytes": 3451
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__RESULTS_v1.json": {
+      "sha256": "2e2de12cbaaebc759f95fa16f5701e44dc7bb5ec6b5faa67096557c8e21d3de0",
+      "bytes": 9938
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__SUMMARY_v1.json": {
+      "sha256": "e63c3c720e4e79a52209e21a896dd4aac6e61823941c3d6c20cfa2e88d92c7a8",
+      "bytes": 1746
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/EVIDENCE_EXPOSURE_v1__scalar_full_field_metric_check.txt": {
+      "sha256": "02138252abadb3a66d10f532ed829231aeb51a061e6cc4f384701a8f27642995",
+      "bytes": 2540
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "bytes": 22772
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE__SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "bytes": 21992
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/SOURCE_PREEXPOSURE_v1.json": {
+      "sha256": "efd9bcd9b81810729fbe9ad6a609750ca375e7d7806f876b8d2b4c6e3108a10b",
+      "bytes": 1551
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/canonical_correspondence_checks_v1.py": {
+      "sha256": "efeac035840de1a66197a06b359de4ba209a63a2cf80416034897a1de52b598c",
+      "bytes": 5237
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/evidence_binding_v1.py": {
+      "sha256": "f9c662b495587d0f0df576e936928ead8a60d29163a6427c4b2883ac6cadbcfb",
+      "bytes": 7497
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/independent_v1/independent_controls_v1.py": {
+      "sha256": "bdecee250afeb1e1fabb113d4127a870688ecc67834bc4872bc739cdba6df4c1",
+      "bytes": 5708
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/candidate.py": {
+      "sha256": "1e987da17fbe73adb355632a177e3fcf2c71aa31a822512b875f78673826d302",
+      "bytes": 8499
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/stdout.txt": {
+      "sha256": "ccd6b29f6649b2a6cf6c80627e3f1436d743c2368f63950b079c3cb6ba33a3de",
+      "bytes": 621
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/candidate.py": {
+      "sha256": "56e2b8c67dd06f8918ff78ab9ab7cd0daee34517d9bf8853da4334dcdc90f981",
+      "bytes": 8499
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/stdout.txt": {
+      "sha256": "891ab7f41703d6a2ea5ba641d177f059260dec0a714c354b60d245873ac99761",
+      "bytes": 822
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/candidate.py": {
+      "sha256": "5fc2d02c0bd0a4d175f774cc9f72a0802e571e550367fd7f3347bc0b88dc5b46",
+      "bytes": 8486
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/stdout.txt": {
+      "sha256": "e90a12dede14b17d58dfbe5bdf62de26c1bafb05a45b8a813ddc219995b96e0b",
+      "bytes": 619
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/candidate.py": {
+      "sha256": "5e75ff0db9b03cb2fa7b3953626e2d91c3c8bee6d378f8466097724d0bdbc8ed",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/stdout.txt": {
+      "sha256": "b2c44d88be2b1e1003aeb2d250d99979b6b73a271b1badf6c772582b83938751",
+      "bytes": 263
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/candidate.py": {
+      "sha256": "0c37cfbe95b78f2196f494db5cf795dbccb548e3117dc139742eea1d442b4947",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/stdout.txt": {
+      "sha256": "d415a12a18adc0bd337bc07a241f361f8900de80fc501ee1430f87e76f375d19",
+      "bytes": 1917
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/candidate.py": {
+      "sha256": "e37229927cfd234a1634ff99b424e9d70f93676523b46397d08c84c8a77be587",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/stdout.txt": {
+      "sha256": "08ca5a02058b9f2889f52ad7bd42e34c5b1fdf992acc1e33c3aba4089859e51a",
+      "bytes": 1392
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/candidate.py": {
+      "sha256": "5707c22460dde0e27a9b6e52ee7cbb431fd65fc1ddd58bf08c2d7ccff36f1a62",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/stdout.txt": {
+      "sha256": "bbff3e31cc7e2cf56d924fa7818b7a13f98e8f55ea91222870bc886248c720bd",
+      "bytes": 618
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/candidate.py": {
+      "sha256": "fe36d3da27614d704f375b99faebe77d55325b7fd6aadc9f16bb085d5fdd673d",
+      "bytes": 8501
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/run.py": {
+      "sha256": "f622e3f3fe53053e2b5cd921a66c9c6f03c2d52b93e62cf5772d68f31bf3bdd3",
+      "bytes": 394
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/stdout.txt": {
+      "sha256": "afb0853c91ec0d0d7ef42941d4f8bf261f261bdd698ab6e8a081e8257c81c132",
+      "bytes": 265
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/working_controls_v1.py": {
+      "sha256": "6b136b578c12329c4ae58b827f106793d3cba8f2069785c509dbda8be83481f2",
+      "bytes": 7357
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "1f9d9859149370b6d649d240359c45f251b9acb202f3663d5a71c4aa49888347",
+      "bytes": 2000
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v3.json": {
+      "sha256": "759d7998a8a176b562e2ed405a5198591c72062450ea8a79ec3db93bc9299543",
+      "bytes": 8463
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v4.json": {
+      "sha256": "e7feaa797b6c6a50378074e30e28643a118b2594f9d4ae52bf844510dc964de8",
+      "bytes": 8831
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v4.json": {
+      "sha256": "7f0bd57a53fac5d07985e29c1446868d9b666683233b02f74e9ce6ca07112341",
+      "bytes": 2566
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v5.json": {
+      "sha256": "960f568b6deeb15d43b7e2ba20c5fa3ec3dfa69321bd849d83b312da7d588b89",
+      "bytes": 2710
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v6.json": {
+      "sha256": "dbe4d66fc2bd3ffeea6a380789dc58b85a3c0fc9285314354a1bb8baf0ed1e11",
+      "bytes": 2585
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "c045c8f03ff58bdce8cb9106e20fe9460f902e5954bbbb6f084c48ec73062da7",
+      "bytes": 1076
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CONFORMANCE_v1.md": {
+      "sha256": "afaebbee2984e7799d856a5eb677add2a66467557307ccdabeba0541c96174ff",
+      "bytes": 4121
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/DISPLAY_REPAIR_v1.json": {
+      "sha256": "c0fcb1e0a7f93be27a2374ca10fff3d92c658f7938c97e9f33811064be812a13",
+      "bytes": 2612
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/EVIDENCE_INDEX_v1.json": {
+      "sha256": "506cd2d2cfb3f37867b90c426f8d1bebe80c76c651051f2064c344e5f8d4d1e0",
+      "bytes": 53166
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/EXTERNAL_PRIOR_v1.md": {
+      "sha256": "491ffd85405267e5087bcdc9d3085be6136f3eedc0869e124e13f481860635f0",
+      "bytes": 2119
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/FORMAT_DELTA_v1.json": {
+      "sha256": "b302727a71a341730615ab0a918480571c28f20708f4045f480255794ce52f43",
+      "bytes": 7131
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/HANDOFF.md": {
+      "sha256": "89f00c133ff034c840cec898f161ec680372bc84a37438929c133bcec37b71f3",
+      "bytes": 6795
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/MUTATIONS_v2.json": {
+      "sha256": "415b32044c8fd9724e981ca84dbb16d22b4993e87faa9170117dbcb8476a7609",
+      "bytes": 14048
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "9b6d717bcd9c5ba514b671d9b8ddfdfb7b208f798b518aaf6e1c9e6b7b730c04",
+      "bytes": 5015
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/PROTOCOL_v1.json": {
+      "sha256": "d0bdaad4d4ccb03146db5e537d250b178a062a9cd22e2966fe26d108e274bdf5",
+      "bytes": 2563
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/RESERVED_ROW_FINDING_v1.json": {
+      "sha256": "93284ae4e20ca93d68517de3addef8796f57edc80685fe5d22dc412ebd290d7c",
+      "bytes": 376
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/REVIEW_RECORD_v1.md": {
+      "sha256": "25e7dcd22a0ce67101b677baaa2ccadf368e21af9f8f32175f89477f0920e76d",
+      "bytes": 8168
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/SOURCE_PREFLIGHT_v2.json": {
+      "sha256": "b53f343e6674469a5ef935d1a9132e276b25e4c895506cba2986b112d49aca19",
+      "bytes": 1861
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/SOURCE_PREFLIGHT_v3.json": {
+      "sha256": "b08a605f9485bdd135cb31bc48d034d194ff11f651f4d0db8739830482c3038a",
+      "bytes": 1876
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/TOOLCHAIN_v1.json": {
+      "sha256": "01bed88fceb02919de49cfe9f2958147f1cd2a28947626fdf1ebe15825231cc4",
+      "bytes": 277
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/TRACE_GATE.md": {
+      "sha256": "fc58c48a344b42e2c5de913ba8f94d74e5d3bf7b3bfad5f795d80adfebe41d5e",
+      "bytes": 1129
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/WEAK_MUTATIONS_v1.json": {
+      "sha256": "58fdcf1e1452d80b941c7898ae530f95eb814719ee1a9ef739ab024b6c9399ce",
+      "bytes": 8999
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/WEAK_SETUP_FAILURE_v1.json": {
+      "sha256": "54655261e9e79fc39be3f4b1740ff5517e83aabc11f5373785e4b2d8ed5afaae",
+      "bytes": 461
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/AUTHOR_CORRESPONDENCE_v1.md": {
+      "sha256": "aeb0932fcef122dbaeac8bafa3fef4b3f7583af3434d25154c881395b632e929",
+      "bytes": 8504
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/CANONICAL_REVIEW_v1.md": {
+      "sha256": "83405bcf3704be2afa5bc7add4336f5812fe803ab90a1491bd379d2580fc21c6",
+      "bytes": 8203
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/INDEPENDENT_DERIVATION_v1.md": {
+      "sha256": "c12283ad707e79cc5bf9b09ba34379d88eba7b78f516b19159436b644a556e72",
+      "bytes": 10142
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_IDENTITY_v1.json": {
+      "sha256": "87c2d1a64788c4bdb2b4b4206b7367dfdcfae55aa51c389d065d01f2bb61cc3e",
+      "bytes": 8629
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_v1.md": {
+      "sha256": "1ee31c1b92d0cc32c6d6fbede888515657df90107aa6c6d7fcb5f890854650ba",
+      "bytes": 6134
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/EINSTEIN_INVERSE_IDENTITY_v1.json": {
+      "sha256": "627b9a388ffd2347f59346a816a077f131183f0c990e706eef7e77a13f565896",
+      "bytes": 4162
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/EINSTEIN_INVERSE_REVIEW_v1.md": {
+      "sha256": "3165093a7b6869dd4b7a484e33ae030772fe814a7fccea791ff174535634b32d",
+      "bytes": 10439
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_CANONICAL_IDENTITY_v1.json": {
+      "sha256": "e79c27c2246260b1bd04cb04e42d66183d63253f4324ad6e3b436b66d6eeada1",
+      "bytes": 3922
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_CANONICAL_REVIEW_v1.md": {
+      "sha256": "a084586d4792b9b9532c9285e322c9a6429617bc1384e2832bffc1ca166fa095",
+      "bytes": 8518
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_INVERSE_IDENTITY_v1.json": {
+      "sha256": "e499381e2fb08c4c643163fd1d6eb7d375b02abb922c009a602928bcc98679e5",
+      "bytes": 2947
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_INVERSE_REVIEW_v1.md": {
+      "sha256": "f17626987016760f3bf496bd4ea170bb400684c106c50f9fd2ab51e0b494ddbe",
+      "bytes": 8023
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/CANONICAL_SCOPE_REPORT_v1.md": {
+      "sha256": "15f95cdb09e35517d5ba5fb69278542b2714a0304d0c75a92a6904b2e4ca036e",
+      "bytes": 10537
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/CLUSTER_CAP_v1.md": {
+      "sha256": "46cc48f39dd0e64c51a8dde9b694986d88fe633778e2719aa888344e846677ed",
+      "bytes": 2362
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/REPORT_v1.md": {
+      "sha256": "c75589a0c7ae4e8f522086868a962af8c9785e3b1d1478e20ba020b3969554ae",
+      "bytes": 10849
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_BINDING_v1.json": {
+      "sha256": "0ccbe13592f65c9278afda73b17849e40a1db7a71eade5bb5a317cc0f7be57e9",
+      "bytes": 25763
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_CONFIRMATION_v1.md": {
+      "sha256": "9f2851ead2a35ecd4f9b342d57dd66e29d276eccc23812cbcd400b34863d0f08",
+      "bytes": 1625
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_SCOPE_SUPPLEMENT_v1.md": {
+      "sha256": "d4e957d612aa6dd6e843a8efd374ae63754f33a4f40b4a035dab8afdfd888edf",
+      "bytes": 5733
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "b5b712b90bc4ed62cfbbb11ffded922ce83958b269afc14fcb2ec6322d0d5a00",
+      "bytes": 21992
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/logs/runner-cache/scalar_vacuum_metric_check.txt": {
+      "sha256": "90b5d88607084221580f7189507b187583c77f5c788ae920423c08abd7b8224b",
+      "bytes": 3089
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_vacuum_metric/RESULTS_v1.json": {
+      "sha256": "2e5017d355e94d36b9b7be8898f6f54bd32bcd222411f3c863db30434992fb9e",
+      "bytes": 20904
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_vacuum_metric/SUMMARY_v1.json": {
+      "sha256": "da3a0d93f97a468bb27b3ae886bcd6e6aa5d44752ea0bf8b5cfe979d44da5768",
+      "bytes": 2191
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/outputs/scalar_vacuum_metric_evidence_v1.tar.gz": {
+      "sha256": "87bf4be7a945984ed444f2ddab6229ad559f391ce86efc4f2bc387539fbe5f3a",
+      "bytes": 600114
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_vacuum_metric_check.py": {
+      "sha256": "1ffaca3958a97d4937563d59c2742f2a2b5f92266bb695ab75494e568f045b25",
+      "bytes": 4005
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_vacuum_metric_inverse.py": {
+      "sha256": "696e8e3dbf2481446563a1f313b24a35ea1b72c6d869953c64beca99cb8d07c4",
+      "bytes": 16090
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_vacuum_metric_weak.py": {
+      "sha256": "67e03c861ea312bfa5bc1d5bff19534de864a9ac443a06f87e5d7e24dba91583",
+      "bytes": 5502
+    },
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_PHYSICAL_CURVATURE_ENVIRONMENT_BOUNDED_THEOREM_NOTE_2026-10-15.md": {
+      "sha256": "669bae27fc3d80ef82852a4e21068c8667ecf8c68a30e61b8a05cc9da5288bc6",
+      "bytes": 22772
+    }
+  },
+  "M19_preserved_paths": [
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/ASSUMPTIONS_AND_IMPORTS.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v3.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CANONICAL_BINDING_v4.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v4.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v5.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CHECKPOINT_v6.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CLAIM_STATUS_CERTIFICATE.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/CONFORMANCE_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/DISPLAY_REPAIR_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/EVIDENCE_INDEX_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/EXTERNAL_PRIOR_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/FORMAT_DELTA_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/HANDOFF.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/MUTATIONS_v2.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/NO_GO_DISCIPLINE_CHECKLIST.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/PROTOCOL_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/RESERVED_ROW_FINDING_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/REVIEW_RECORD_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/SOURCE_PREFLIGHT_v2.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/SOURCE_PREFLIGHT_v3.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/TOOLCHAIN_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/TRACE_GATE.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/WEAK_MUTATIONS_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/WEAK_SETUP_FAILURE_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/AUTHOR_CORRESPONDENCE_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/CANONICAL_REVIEW_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/INDEPENDENT_DERIVATION_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_IDENTITY_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_inverse_v1/LATER_ROW_SUPPLEMENT_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/EINSTEIN_INVERSE_IDENTITY_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/EINSTEIN_INVERSE_REVIEW_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_CANONICAL_IDENTITY_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_CANONICAL_REVIEW_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_INVERSE_IDENTITY_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_numerical_v1/WEAK_INVERSE_REVIEW_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/CANONICAL_SCOPE_REPORT_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/CLUSTER_CAP_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/REPORT_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_BINDING_v1.json",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_FINAL_CONFIRMATION_v1.md",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/material_metric_consistency/independent_scope_v1/WEAK_SCOPE_SUPPLEMENT_v1.md",
+    "docs/SCALAR_VACUUM_METRIC_INVERSE_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "logs/runner-cache/scalar_vacuum_metric_check.txt",
+    "outputs/scalar_vacuum_metric/RESULTS_v1.json",
+    "outputs/scalar_vacuum_metric/SUMMARY_v1.json",
+    "outputs/scalar_vacuum_metric_evidence_v1.tar.gz",
+    "scripts/scalar_vacuum_metric_check.py",
+    "scripts/scalar_vacuum_metric_inverse.py",
+    "scripts/scalar_vacuum_metric_weak.py"
+  ],
+  "unindexed_bytecode": [
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_y_potential_power/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_angular_null_chart/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/half_radial_scalar_operator/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/reversed_y_share/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/omit_base_potential_derivative/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_transverse_source_sign/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/wrong_Einstein_conformal_kinetic/__pycache__/candidate.cpython-312.pyc",
+    ".claude/science/physics-loops/observations-backward-24h-20261014/full_field_metric/mutations_v1/missing_B_in_transverse_kinetic/__pycache__/candidate.cpython-312.pyc"
+  ],
+  "historical_notes": [
+    "Evidence supplement froze prior HANDOFF a0474e42999ce125eaa2994d654f91261dad84246ed06be5584c5e4a8d4ce5d6; current final HANDOFF is separately read and bound, not falsely treated as identical."
+  ],
+  "operation_scope": [
+    "Read JSON/Markdown packaging and review receipts",
+    "Read all changed root metadata diff and complete new HANDOFF",
+    "Read bytes of all freeze/archive/member/plainview/source/cache/report paths",
+    "Git rev-parse, branch, ls-files, ls-tree, diff, cat-file, show only",
+    "Tar regular-member enumeration and in-memory hash comparisons",
+    "AST literal runner declarations only; no science imports or execution",
+    "Write only these two runtime delivery artifacts"
+  ],
+  "operational_errors": [
+    {
+      "command": "python",
+      "result": "zsh command not found; retried identical read via python3; no files affected"
+    }
+  ],
+  "limits": [
+    "Scientific correspondence reused only at exact reviewed source hashes; no fresh science truth or audit verdict",
+    "Historical guarded run checked from saved evidence, not independently observed",
+    "No live PR, current-main integration or landing verification",
+    "84 reviewer checks are not pooled: 34 pre-exposure exact and 50 post-exposure formula checks remain distinct from 31 author controls and eight deliberate mutants"
+  ],
+  "report_sha256": "5c619f5cb1c6d690b80a86cbfbb1629dbbc8d857a1b00d2152db583bc03adc50"
+}

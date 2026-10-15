@@ -569,3 +569,18 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - The argument that any Ward current inherits this edge behaviour is correct. But the universal asymptotic "no local measure on this strip" claim is strongly supported, not proved from finite sizes.
 - **Torus topology is confirmed independently:** C_L(1) = −1 and C_R(2) = +4, so C(11112) = 0 and C(L1) = −1.
 - **For route 1:** periodic-time link-reflection positivity is well defined on an even torus with two reflection cuts (Osterwalder–Seiler). A global torus measure and new kernels at Lx ≥ 4 are the natural next work (TOR-1, running). Periodic time is not the only conceivable change of geometry.
+
+**CLS-1 result (15:20Z; same family; referee launched): CLS-PRICE. Untuned, it is KILL-level at every f in the range.**
+- **(i) Labels (proved; brute-force checked).** Under BCC, the sectors are {hw0, hw2}, all R (index +4), and {hw1, hw3}, all L (index −4). The (1,1,1) sign equals the handedness. So no bilinear can pair anything perturbatively. Non-perturbatively this needs a lattice CPT-type Θ (extra structure; AX:169-171).
+- **The real problem is light–light mixing.** The corner-changing Yukawa ψ_cψ_c′H₀S_K and the hopping ψ_c†ψ_c′S_K carry the same translation charge. So the condensate that supplies CKM also mixes the light generations directly, at the lattice scale.
+  - Dimension 3: an energy split of about 3ε ≈ 1e19 GeV, ×4e42 over IceCube (zero with Θ).
+  - Dimension 4: a flavour speed spread 2η, ×1.7e27 over; a κ² term, ×2.8e26; regenerated at one loop at ×6e22.
+  - Three new c-type structures are not removable by OBS-3's two counterterms.
+- **(ii) Coupling to the mirror interaction.** The literal hw1↔hw3 admixture is zero; the admixture goes into the composite partner, θ_χ² = 3ε²/(3ε²+4Δ²). With filter modulation κ, the light modes enter the quartic at first order in κ (weights 2κ, κ).
+  - Generalised X2-L2: there are 4 − rank Φ(P) exact zero modes, which is 3 only at κ = 0.
+  - The proxies disagree. Model A gaps the light modes for every κ ≠ 0 (unpaired partner zero modes, as in X2's T5). Model B keeps them gapless for κ ≲ 0.55.
+- **Not affected:** gauge couplings. Proton decay is safe by 5e7 at M_Pl (suggested).
+- **The price.** Θ, plus about 18 counterterm structures tuned to about 6e-28 (tree) or 1e-23–1e-26 (one loop), plus κ ≲ 0.55 and no gapless composite.
+- **OBS-3's zero does not survive class S.** Its premise of corner-diagonal kinetic terms needs exact translations.
+- **Supervisor's own thread:** I predicted SAFE or a mild PRICE through Lemma S. That was wrong: cubic-allowed corner-mixing structures split the speeds.
+- **Reading (supervisor; pending referee).** Combined with OBS-4, every CKM realisation in X2 tested so far either has electroweak-scale carriers that fail FCNC (the D3 benchmark), or lattice-scale translation breaking that mixes the light generations at the lattice scale (about 1e-27 tuning). This is a CKM-versus-corner-protection tension.

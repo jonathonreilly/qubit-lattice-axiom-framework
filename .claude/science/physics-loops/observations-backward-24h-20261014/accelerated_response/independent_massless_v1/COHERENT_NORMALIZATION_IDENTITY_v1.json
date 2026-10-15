@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-15T04:00:06.636185+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Affected normalization wording only. No suite rerun or global review.",
+  "old_note_sha256": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711",
+  "new_note_sha256": "4a2bd6a11b68dc115a80cf716564baf195502dd3efc1b249eeea644e36b8269e",
+  "author_repair_record_sha256": "2ff593401652d95952e5f184d063b29b0fe176525f4cca952c41f81cb7bf7d51",
+  "files": {
+    "COHERENT_AUTHOR_COMPARISON_v1.md": "a49e0a4cda283314cf355aa9a2f2fcbefb40329db4ca3cacc5e2de96752b29e5",
+    "COHERENT_AUTHOR_COMPARISON_IDENTITY_v1.json": "cbda660ac1dcbfa016984d7888bb95f80dcbc1867e9f2e5fc8e51ab40ce5fb32",
+    "COHERENT_NORMALIZATION_CONFIRMATION_v1.md": "7f5aab4665e9432c80da0e6b2247ee56b58d6877e35372baa757a65191149908",
+    "COHERENT_NORMALIZATION_AFFECTED_v1.patch": "743dda2fcf686ac191ecd2cec2e102c55a8e884c8405c37f9773f870e9325cf1"
+  },
+  "result": "Original normalization handoff finding resolved; no unresolved scoped discrepancy.",
+  "tests_rerun": false
+}

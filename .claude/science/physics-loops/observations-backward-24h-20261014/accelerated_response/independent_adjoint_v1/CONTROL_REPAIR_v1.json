@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-15T03:29:06.898577+00:00",
+  "failed_version_preserved": true,
+  "v1_script_sha256": "02e84ba086d9520f2ea0e0166f8905580f65fcf16d7948f87eae500a1e5f0076",
+  "v1_results_sha256": "866af9c0b8cf5600277d7a5f59d1112609e2630de9e84be54610cb7d06ed16fb",
+  "failures": [
+    "dropping_initial_atom_is_detectable: exact omission norm 0.0080622577483 was below arbitrary 0.01 threshold",
+    "lambda_left_need_not_vanish_with_position_initial_atom: projected initial atom norm 0.00539946276046 was below arbitrary 0.01 threshold"
+  ],
+  "repair": "v2 adds exact equality controls against the omitted initial atom and checks its nonzero norm above 1e-6; no ODE, adjoint, readout, fixture or scientific formula altered",
+  "author_source_exposure": false,
+  "v2_script_sha256": "cfbe379800eebcbff681a0c114d20e46723727f435b9ad7eb44fec95a5a771c6"
+}

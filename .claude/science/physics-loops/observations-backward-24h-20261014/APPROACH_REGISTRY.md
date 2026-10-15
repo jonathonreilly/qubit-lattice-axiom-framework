@@ -43,3 +43,7 @@ The temporal-functional route now gives a positive alternative to localization: 
 ## Count-to-energy inverse
 
 Attacked the initial-history assumption through observation-space duality rather than a preferred state: count kernels -> vector moment cancellation -> Riesz Gram -> minimum-energy range test -> nuisance/error quotient. An independent on-shell boost derivation extends the mass enclosure to constant-velocity full conformal responses. The revealed technical failures (singular whitening, zero denominators, clock regularity and a surviving normalization mutant) are preserved and repaired at their precise scopes. Next hard residual is the accelerated retarded physical observation map, not more instances of the same stationary norm.
+
+## Accelerated coherent counts and their energy operator
+
+The root author derived fixed-proper-time endpoint variations, augmented orbital/clock adjoints, ideal multileg phase composition and the joint massless energy Gram on prescribed accelerated paths. The field and force responses are summed at common arrival phase before squaring. Exact response columns allow cancellation of full initial body/clock perturbations and constant scalar offsets within the supplied model. An exact two-body count fixture gives the same rational Gram by time overlap and original harmonic endpoint responses. This removes the previously arbitrary measurement kernel in that regime. Actual reference dynamics, calibration, physical field energy and action/potential remain open suppliers.

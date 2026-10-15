@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-15T03:59:19.693016+00:00",
+  "finding_report": "independent_massless_v1/COHERENT_AUTHOR_COMPARISON_v1.md",
+  "finding_report_sha256": "a49e0a4cda283314cf355aa9a2f2fcbefb40329db4ca3cacc5e2de96752b29e5",
+  "old_note_sha256": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711",
+  "new_note_sha256": "4a2bd6a11b68dc115a80cf716564baf195502dd3efc1b249eeea644e36b8269e",
+  "repair": "Explicitly normalize the exact fixture count as kappa times the phase contrast, absorbing alpha*kappa=1. No equation, matrix, helper, fixture, threshold or conclusion changed."
+}

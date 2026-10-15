@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-15T03:43:01.653104+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Only v2-to-v3 mathematical note delta and interaction with unchanged reviewed operator; no new adjoint code or numerical experiment verification.",
+  "sources": {
+    "JOINT_CLOCK_FORCE_WORKING_v2.md": "7ac81b681804460dfb277b4e2fa369b69ed138b68f833d103a9e547f81de7f7c",
+    "JOINT_CLOCK_FORCE_WORKING_v3.md": "c90af86ca2008d4d31e857bf4f7b6a7fe5b73b7ad0c307f65ac08eb3bff62605"
+  },
+  "historical_v2_binding": {
+    "AUTHOR_SOURCE_COMPARISON_v1.md": "a72bba3e9364fafdb7f09f6a237c52b6013e2502595e2c19ace2e115c773d0a4",
+    "AUTHOR_SOURCE_COMPARISON_IDENTITY_v1.json": "fd9fb89d9da92218e8111d49b9ca9d908c91faa9976c8032c7ae56f3a58c4770",
+    "INDEPENDENT_IDENTITY_v1.json": "2302220706faa680308abd1fb48ddb46e2993ef8f5370a89327ecf084853adc8"
+  },
+  "findings": [
+    {
+      "topic": "L2 distributed readout premise",
+      "disposition": "Sufficient for claimed piecewise-H1 adjoint and continuous H1 force component under existing coefficient and endpoint hypotheses."
+    },
+    {
+      "topic": "Constant field response column",
+      "disposition": "Correct: b0_i = sum_A integral c_i,A, and contrast invariance iff b0^T t = 0."
+    },
+    {
+      "topic": "Quotient energy domain",
+      "disposition": "Correct within supplied linearized model when all required contrasts and zero force traces hold; no absolute background selection."
+    },
+    {
+      "topic": "Rank and calibration caveats",
+      "disposition": "Explicit and necessary; no existence or certainty silently supplied."
+    },
+    {
+      "topic": "Added synthetic numerical example",
+      "disposition": "Read as attributed evidence, not independently verified here; new adjoint code belongs to other checker."
+    }
+  ],
+  "unresolved_mathematical_discrepancies": [],
+  "numerical_example_independently_verified": false,
+  "new_adjoint_code_read": false,
+  "broad_tests_rerun": false,
+  "raw_observations_read": false
+}

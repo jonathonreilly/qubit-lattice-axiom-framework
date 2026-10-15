@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15T03:41:52.015977+00:00",
+  "reviewer": "/root/localized_history_check",
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/PROPER_COUNT_REVIEW_v1.md",
+    "sha256": "cce35cc81dd6b8e9625f8d585598c5a2d526696c0a439f561df20865477a3fab",
+    "bytes": 11021
+  },
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/JOINT_CLOCK_FORCE_WORKING_v3.md",
+      "sha256": "c90af86ca2008d4d31e857bf4f7b6a7fe5b73b7ad0c307f65ac08eb3bff62605",
+      "bytes": 11812
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/proper_count_endpoint_controls_v2.py",
+      "sha256": "00c0b049351cbc366da89fe78831a9c48677fee08026b455562385c87022b5e6",
+      "bytes": 6338
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/proper_count_adjoint_controls_v2.py",
+      "sha256": "89521be38bf9859653b7e3bdd8fc8af9d99b805a4672f1ddde82144bf5510d13",
+      "bytes": 11894
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/PROPER_COUNT_ENDPOINT_RESULTS_v2.json",
+      "sha256": "540927a3e285db53e01cfc6f2e66620a095a54afdceedfcf6f4ebdb5f3ebc500",
+      "bytes": 2388
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/PROPER_COUNT_ADJOINT_RESULTS_v2.json",
+      "sha256": "7c5ff21c236a809de240b3e5fdcae084ae6ff4e267979a180c75a3f514e6b2f1",
+      "bytes": 9789
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/AUTHOR_FREEZE_v1.json",
+      "sha256": "1fbf8ce5a789e45c5c31de4d487e6d76eb0ff1562b15bf1995ab5b57aad78caf",
+      "bytes": 1570
+    }
+  ],
+  "reviewer_evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/PROPER_COUNT_PRECHECK_v1.md",
+      "sha256": "632e23a86381fcf8f5befca662456f25b687e94b9372014691c4f3ae00d1209f",
+      "bytes": 10515
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/PROPER_COUNT_NUMERICAL_PROTOCOL_v1.md",
+      "sha256": "1312e1092790c9e8803b78d67937fd912f2a76e8d636599a7d25710a39469e1e",
+      "bytes": 6173
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/PROPER_COUNT_PRECHECK_IDENTITY_v1.json",
+      "sha256": "5d26fbd7235a5334f55b69078971937aa317d0af86e9b2a04e5d29cf3869a638",
+      "bytes": 1360
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/independent_proper_count_check_v1.py",
+      "sha256": "d45b7e863363f5507c4a19ee1beac87d595b949e034707ce4fa80e719352cb05",
+      "bytes": 13804
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/INDEPENDENT_PROPER_COUNT_RUN_v1.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/INDEPENDENT_PROPER_COUNT_RUN_v1.stderr",
+      "sha256": "baad047b8eb6b353fca4da10624e1501b82348daa1d32f362cd9973440bdf528",
+      "bytes": 1397
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/INDEPENDENT_PROPER_COUNT_FAILURE_REPAIR_v1.json",
+      "sha256": "0c7b3d7df388bbd741cc70b2d6cbeb7f5f66154d16024fb00f91b63f5a8215e8",
+      "bytes": 3604
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/independent_proper_count_check_v2.py",
+      "sha256": "f403b7a190006448e843589523f7f339919eb9b325a6522798dd4bb241e26c40",
+      "bytes": 13824
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/INDEPENDENT_PROPER_COUNT_RESULTS_v2.json",
+      "sha256": "6e44ceb3c34af4b21230317fe73ae9481ec0886eb8c701ced22f7b98666b2314",
+      "bytes": 32307
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/INDEPENDENT_PROPER_COUNT_RUN_v2.stdout",
+      "sha256": "e69649fdc9638917ad8e8e0de1c0616ff18c084b0ac4bdf5fcec724450d7c3aa",
+      "bytes": 8573
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_proper_count_v1/INDEPENDENT_PROPER_COUNT_RUN_v2.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "independent_controls_passed": 179,
+  "author_sources_read_before_independent_run": false,
+  "author_scripts_executed_by_reviewer": false,
+  "author_control_records_read": {
+    "endpoint": 9,
+    "augmented_adjoint": 22
+  },
+  "scope": "One-way fixed-proper-endpoint count, augmented trajectory/clock sensitivity and source correspondence; joint KG energy Gram not independently established by this check",
+  "empirical_tests": 0,
+  "formal_audit_verdict_applied": false
+}

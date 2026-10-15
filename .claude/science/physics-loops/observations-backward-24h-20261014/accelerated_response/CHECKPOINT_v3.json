@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-15T04:02:52.689641+00:00",
+  "ownership": "direct root author; no detached/older worker",
+  "state_sha256": "43bf054be1a1bb0bfdd0c7036d9e02a9385a473081551836d586d64e491c96c9",
+  "freeze_sha256": "fc5d657c1ac5956801dde9fc64dc55b034ab384be60da0ada84a937bdb71a4bb",
+  "next_action": "Finish M6 source/delivery and publication; then prioritize an observation-supported budget or background/source correction."
+}

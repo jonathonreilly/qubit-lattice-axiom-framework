@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-15T03:41:56.617743+00:00",
+  "reviewer": "/root/force_energy_bridge_check",
+  "post_author_source_exposure": true,
+  "independent_prior_identity_sha256": "d293b3adb505105ecdb36014b97bdf3322796887c2b914fa1e560a3624ea12cf",
+  "no_author_main_or_broad_rerun": true,
+  "raw_observations_accessed": false,
+  "files": {
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/SOURCE_JOINT_CLOCK_FORCE_WORKING_v3.md": "c90af86ca2008d4d31e857bf4f7b6a7fe5b73b7ad0c307f65ac08eb3bff62605",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/SOURCE_proper_count_adjoint_controls_v2.py": "89521be38bf9859653b7e3bdd8fc8af9d99b805a4672f1ddde82144bf5510d13",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/SOURCE_proper_count_endpoint_controls_v2.py": "00c0b049351cbc366da89fe78831a9c48677fee08026b455562385c87022b5e6",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/SOURCE_PROPER_COUNT_ADJOINT_RESULTS_v2.json": "7c5ff21c236a809de240b3e5fdcae084ae6ff4e267979a180c75a3f514e6b2f1",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/SOURCE_PROPER_COUNT_ENDPOINT_RESULTS_v2.json": "540927a3e285db53e01cfc6f2e66620a095a54afdceedfcf6f4ebdb5f3ebc500",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/SOURCE_AUTHOR_FREEZE_v1.json": "1fbf8ce5a789e45c5c31de4d487e6d76eb0ff1562b15bf1995ab5b57aad78caf",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/postsource_count_composition_check_v1.py": "1bf369f67053b913e970f0a3032b69ae769e93747a0a4c1f30c375821e89cb4c",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/POSTSOURCE_COUNT_COMPOSITION_RESULTS_v1.json": "213bfa1a448233dea79d8e468a10a4107d491ec62a9597406521003a3a518099",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/postsource_count_composition_check_v1.stdout": "c0c522bc82e189937d27a8d02e11d1d9e09818905aede99e68e51dda20f65c1c",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/postsource_count_composition_check_v1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/independent_adjoint_v1/AUTHOR_COUNT_COMPOSITION_REVIEW_v1.md": "4f6851e6f3c7b45adaed5fd7c69b31ecf144c481491f115735b910c6519f5b9e"
+  }
+}

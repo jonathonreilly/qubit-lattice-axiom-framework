@@ -19,3 +19,10 @@ Fourth unit published: [PR#9583](https://github.com/jonathonreilly/qubit-lattice
 ## Count-derived energy milestone preparation
 
 Proposed branch codex/observations-backward-energy-20261015, base codex/observations-backward-history-20261015 at444fddc785280eb01898986edfc301bda9e8d9df. Local cluster/value decision OPEN for one coherent count-to-energy inverse with general inertial mass enclosure; see residual_energy/VALUE_AND_CLUSTER_GATE_v1.md. Final source and staged delivery confirmation plus mechanical unit binding precede publication. Earlier four PRs remain frozen. No main merge or push.
+
+
+Fifth unit published: [PR#9586](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9586), regular/open,64paths, frozen head`ff4a63b6f0407d40ab925ac4bc83011546886217`, stacked on#9583 and attached. Independent full science/delivery and mechanical source/cache checks complete; integrated landing/formal audit remain pending. New accelerated-response working draft is unreviewed on the descendant branch and is not part of this PR.
+
+## Accelerated coherent-count milestone preparation
+
+One coherent sixth unit is prepared on codex/observations-backward-accelerated-20261015, based on frozen ff4a63b6f0407d40ab925ac4bc83011546886217 / codex/observations-backward-energy-20261015. Its value/cluster decision is OPEN for the derived proper-count/adjoint/coherent observation operator and accelerated massless energy Gram, including an exact composition fixture. Final delivery checking and mechanical source binding precede its regular stacked PR. Earlier five PRs remain frozen; no main merge or push.

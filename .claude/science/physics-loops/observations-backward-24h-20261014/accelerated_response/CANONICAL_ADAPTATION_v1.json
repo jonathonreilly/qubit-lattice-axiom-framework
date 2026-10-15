@@ -1,0 +1,40 @@
+{
+  "helpers": [
+    {
+      "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/joint_gram_controls_v2.py",
+      "working_sha256": "4bd9f3ba99369437ceefedb803bc6aae5d4d552c06b5d7e7a00b2501ab62a975",
+      "canonical_source": "scripts/scalar_accelerated_gram_controls.py",
+      "canonical_sha256": "e4e5f49470ace2b92195a5317bf7807e9ccdc3446c2ae803aabb209dba0249d4",
+      "changes": "Versioned helper names, main\u2192run_checks returning result, remove current timestamp and local result write, add explicit timeout. Mathematics, fixtures, predicates and tolerances unchanged."
+    },
+    {
+      "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/proper_count_endpoint_controls_v2.py",
+      "working_sha256": "00c0b049351cbc366da89fe78831a9c48677fee08026b455562385c87022b5e6",
+      "canonical_source": "scripts/scalar_proper_count_controls.py",
+      "canonical_sha256": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+      "changes": "Versioned helper names, main\u2192run_checks returning result, remove current timestamp and local result write, add explicit timeout. Mathematics, fixtures, predicates and tolerances unchanged."
+    },
+    {
+      "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/proper_count_adjoint_controls_v2.py",
+      "working_sha256": "89521be38bf9859653b7e3bdd8fc8af9d99b805a4672f1ddde82144bf5510d13",
+      "canonical_source": "scripts/scalar_count_adjoint_controls.py",
+      "canonical_sha256": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+      "changes": "Versioned helper names, main\u2192run_checks returning result, remove current timestamp and local result write, add explicit timeout. Mathematics, fixtures, predicates and tolerances unchanged."
+    },
+    {
+      "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/coherent_count_controls_v1.py",
+      "working_sha256": "9446547baea019679960bc4d718f84f4aab340e17dde5323a1c9ce783107b92b",
+      "canonical_source": "scripts/scalar_coherent_count_controls.py",
+      "canonical_sha256": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+      "changes": "Versioned helper names, main\u2192run_checks returning result, remove current timestamp and local result write, add explicit timeout. Mathematics, fixtures, predicates and tolerances unchanged."
+    },
+    {
+      "working_source": ".claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/coherent_exact_energy_v1.py",
+      "working_sha256": "81dbec52ef73deb04aef25dee498a839f1e1f7664615cb8355e01a09d1aeb92f",
+      "canonical_source": "scripts/scalar_coherent_exact_energy_controls.py",
+      "canonical_sha256": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f",
+      "changes": "Versioned helper names, main\u2192run_checks returning result, remove current timestamp and local result write, add explicit timeout. Mathematics, fixtures, predicates and tolerances unchanged."
+    }
+  ],
+  "canonical_science_status": "prepared, awaiting canonical review"
+}

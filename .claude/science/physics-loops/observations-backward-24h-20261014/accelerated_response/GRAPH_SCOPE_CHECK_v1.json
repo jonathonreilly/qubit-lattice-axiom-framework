@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-15T04:05:28.120957+00:00",
+  "node": {
+    "claim_id": "scalar_accelerated_coherent_count_bounded_theorem_note_2026-10-15",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [],
+    "helper_runner_paths": [
+      "scripts/scalar_accelerated_gram_controls.py",
+      "scripts/scalar_coherent_count_controls.py",
+      "scripts/scalar_coherent_exact_energy_controls.py",
+      "scripts/scalar_count_adjoint_controls.py",
+      "scripts/scalar_proper_count_controls.py"
+    ],
+    "note_hash": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+    "path": "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "runner_path": "scripts/scalar_accelerated_coherent_count_check.py",
+    "title": "Observation-derived scalar response for accelerated coherent counts"
+  },
+  "manifest_sha256": "bcdef94dbfe63dc293561151ff1edb0f07169e45dc57ca69887146f4e66635bb",
+  "delta": "one new node with no scientific dependency edges; only permitted manifest staged; generated graph remains local"
+}

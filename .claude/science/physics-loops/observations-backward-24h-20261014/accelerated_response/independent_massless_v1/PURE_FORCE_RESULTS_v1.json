@@ -1,0 +1,226 @@
+{
+  "at": "2026-10-15T03:24:57.418762+00:00",
+  "role": "independent pure massless accelerated-force check before author access",
+  "source_sha256": "0984c9e09eb64ce318d049444d4af64a1fdfee56e3f725a289933e5a98e63c8d",
+  "derivation_sha256": "133bd9cb829e57fdf266eec26781ea1b7dd0d5592200d748152fe97d834b6577",
+  "author_accelerated_material_read": false,
+  "observations_read": false,
+  "checks": [
+    {
+      "name": "constant_velocity_tensor_0.0",
+      "actual": [
+        0.05305164769729891,
+        0.053051647697298206
+      ],
+      "expected": [
+        0.05305164769729845,
+        0.05305164769729845
+      ],
+      "error": 4.649058915617843e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "constant_velocity_tensor_0.2",
+      "actual": [
+        0.050100420668887646,
+        0.051344162349665934
+      ],
+      "expected": [
+        0.050100420668886994,
+        0.05134416234966633
+      ],
+      "error": 6.522560269672795e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "constant_velocity_tensor_0.6",
+      "actual": [
+        0.0281122782268469,
+        0.03687344267598305
+      ],
+      "expected": [
+        0.02811227822684653,
+        0.03687344267598325
+      ],
+      "error": 3.712308238590367e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "constant_velocity_tensor_0.85",
+      "actual": [
+        0.008105481032238071,
+        0.018030007837881407
+      ],
+      "expected": [
+        0.008105481032237866,
+        0.018030007837881553
+      ],
+      "error": 2.0469737016526324e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_rest_acceleration_polynomial_0",
+      "actual": 0.08488263631567713,
+      "expected": 0.08488263631567752,
+      "error": 3.885780586188048e-16,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_rest_acceleration_polynomial_1",
+      "actual": 0.010610329539459654,
+      "expected": 0.01061032953945969,
+      "error": 3.642919299551295e-17,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_rest_acceleration_polynomial_2",
+      "actual": 0.07629251352053128,
+      "expected": 0.07629251352053094,
+      "error": 3.3306690738754696e-16,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_rest_acceleration_polynomial_3",
+      "actual": 0.27852115041081843,
+      "expected": 0.2785211504108169,
+      "error": 1.5543122344752192e-15,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "plateau_quadrature_convergence_0.2",
+      "actual": 0.16868039640979546,
+      "expected": 0.16868039640979562,
+      "error": 1.6653345369377348e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_substitution_strictly_fails_0.2",
+      "passed": true,
+      "positive_missing_term": 0.017104260131799904
+    },
+    {
+      "name": "plateau_quadrature_convergence_0.4",
+      "actual": 0.22444414408749655,
+      "expected": 0.22444414408749738,
+      "error": 8.326672684688674e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_substitution_strictly_fails_0.4",
+      "passed": true,
+      "positive_missing_term": 0.072868007809501
+    },
+    {
+      "name": "plateau_quadrature_convergence_0.7",
+      "actual": 0.4205678014305667,
+      "expected": 0.42056780143056816,
+      "error": 1.4432899320127035e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "instantaneous_substitution_strictly_fails_0.7",
+      "passed": true,
+      "positive_missing_term": 0.26899166515257117
+    },
+    {
+      "name": "original_lab_fourier_(0.0, 80.0)",
+      "actual": 0.1515761219396385,
+      "expected": 0.15157613627799554,
+      "error": 1.4338357057219753e-08,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "original_lab_fourier_(0.0, 160.0)",
+      "actual": 0.15157613581835488,
+      "expected": 0.15157613627799554,
+      "error": 4.596406588674995e-10,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "original_lab_fourier_(0.4, 80.0)",
+      "actual": 0.22444192053571285,
+      "expected": 0.22444414408749655,
+      "error": 2.223551783697708e-06,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "original_lab_fourier_(0.4, 160.0)",
+      "actual": 0.22444386895688576,
+      "expected": 0.22444414408749655,
+      "error": 2.7513061079398327e-07,
+      "tolerance": 2e-05,
+      "passed": true
+    }
+  ],
+  "checks_passed": 18,
+  "checks_failed": 0,
+  "counterexamples": [
+    {
+      "beta": 0.2,
+      "exact_derivative_norm": 0.16868039640979546,
+      "instantaneous_tensor_substitution": 0.15157613627799554,
+      "missing_positive_acceleration_term": 0.017104260131799904
+    },
+    {
+      "beta": 0.4,
+      "exact_derivative_norm": 0.22444414408749655,
+      "instantaneous_tensor_substitution": 0.15157613627799554,
+      "missing_positive_acceleration_term": 0.072868007809501
+    },
+    {
+      "beta": 0.7,
+      "exact_derivative_norm": 0.4205678014305667,
+      "instantaneous_tensor_substitution": 0.15157613627799554,
+      "missing_positive_acceleration_term": 0.26899166515257117
+    }
+  ],
+  "direct_original_lab_fourier": [
+    {
+      "beta": 0.0,
+      "cutoff": 80.0,
+      "laboratory_fourier_norm": 0.1515761219396385,
+      "derivative_formula": 0.15157613627799554,
+      "signed_difference": -1.4338357057219753e-08
+    },
+    {
+      "beta": 0.0,
+      "cutoff": 160.0,
+      "laboratory_fourier_norm": 0.15157613581835488,
+      "derivative_formula": 0.15157613627799554,
+      "signed_difference": -4.596406588674995e-10
+    },
+    {
+      "beta": 0.4,
+      "cutoff": 80.0,
+      "laboratory_fourier_norm": 0.22444192053571285,
+      "derivative_formula": 0.22444414408749655,
+      "signed_difference": -2.223551783697708e-06
+    },
+    {
+      "beta": 0.4,
+      "cutoff": 160.0,
+      "laboratory_fourier_norm": 0.22444386895688576,
+      "derivative_formula": 0.22444414408749655,
+      "signed_difference": -2.7513061079398327e-07
+    }
+  ],
+  "limitations": [
+    "Finite quadrature corroborates the proof and does not prove its universal scope.",
+    "Massless only; no accelerated positive-mass enclosure is asserted.",
+    "The path is prescribed and the force is linear; no physical count model is supplied."
+  ]
+}

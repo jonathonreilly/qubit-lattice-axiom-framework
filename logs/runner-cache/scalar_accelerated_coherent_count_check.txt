@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/scalar_accelerated_coherent_count_check.py
+runner_sha256: b03883fbaafd9adc1bf7a849051ffa35c9dbd233c925e798f555f60eabfef7b9
+input_fingerprint_sha256: 81d58374bfcc28e04e5eea588c67a1af31ade7ac9780489381d00ccc4a551cd5
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 23.62
+status: ok
+----- stdout -----
+{
+  "actual_current_surface_status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "checks": {
+    "joint_gram": 15,
+    "proper_endpoint": 9,
+    "one_way_adjoint": 22,
+    "coherent_adjoint": 14,
+    "exact_coherent_energy": 15
+  },
+  "checks_passed": 75,
+  "source_sha256": {
+    "scripts/scalar_accelerated_coherent_count_check.py": "b03883fbaafd9adc1bf7a849051ffa35c9dbd233c925e798f555f60eabfef7b9",
+    "docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "4d4bb8843d43e24c4184f4f99347766a26805df9a9021e647cb89a6a7fa5fb76",
+    "scripts/scalar_accelerated_gram_controls.py": "b8c452d26e9d2debfff8d1a9068452621ffc9f9d9fb3c0fdb203bbc64b8ac83e",
+    "scripts/scalar_proper_count_controls.py": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+    "scripts/scalar_count_adjoint_controls.py": "0c4576f8dee284d8dfa6bd01fc72d50f30a2a0f5a570b390323ab954fb52876f",
+    "scripts/scalar_coherent_count_controls.py": "e72e5c4a71068beddbd6933a7cba0d41f60e909cb45a11b742aa25f7a57c4c1a",
+    "scripts/scalar_coherent_exact_energy_controls.py": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f"
+  },
+  "product_sha256": {
+    "joint_gram": "7804112b52283c47014b898de9981784d5f44aed4905a1478d20453759b7e6e8",
+    "proper_endpoint": "451a3411ac5fe5d6695a58f54b8d434eeb1fa6a554dbc26c87624091461bde8b",
+    "one_way_adjoint": "9934e795c58723670cf1dc1cec0ae7633bf494bc9a529a021fe3e8e9280bae75",
+    "coherent_adjoint": "b7be9d248eb795ccfaf2f4eaa6965b7fe308c89421561d619114fcb71f4249dd",
+    "exact_coherent_energy": "e7bf47f154ad7ad86c823449bb6acfd0c4ce2314b9f296dca7e38be65e312e9d"
+  },
+  "external_scientific_inputs_read": [],
+  "observational_tests": 0,
+  "fitted_parameters": 0,
+  "physical_energy_estimates": 0,
+  "scope": [
+    "A supplied conformal free massless field and proper-clock/link model remain conditional.",
+    "Actual endpoint counts derive joint clock and force weights through the trajectory adjoint.",
+    "Exact contrast conditions remove initial orbit/clock, declared nuisance and constant-offset response.",
+    "The accelerated norm retains acceleration and common-arrival cross-path terms.",
+    "Ideal coherent transfer removes the spacecraft direct clock channel, retaining its force response.",
+    "The stationary exact composition fixture has rational moments and exact Gram entries.",
+    "Other quadrature, perturbation and rank experiments are finite numerical diagnostics.",
+    "No actual orbit calibration, scalar residual, field energy upper budget, nonlinear error bound or positive-mass accelerated extension is supplied."
+  ]
+}
+
+----- stderr -----
+

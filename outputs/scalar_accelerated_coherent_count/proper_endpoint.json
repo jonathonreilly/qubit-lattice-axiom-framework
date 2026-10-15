@@ -1,0 +1,90 @@
+{
+  "source_sha256": "9f141f9048fcc75b00d83164fbf3c2d58f70db3d3db12d187ebe57cbbf5c528d",
+  "checks_passed": 9,
+  "checks": [
+    {
+      "name": "full_fixed_proper_endpoint_phase",
+      "max_error": 1.9339155832298616e-09,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "finite_count_from_actual_null_intersections",
+      "max_error": 1.2852910402649798e-09,
+      "tolerance": 3e-08
+    },
+    {
+      "name": "receiver_coordinate_shift_at_fixed_proper_time",
+      "max_error": 4.928006891447012e-10
+    },
+    {
+      "name": "central_difference_second_order_0",
+      "error_ratio": 3.9993160997191133
+    },
+    {
+      "name": "central_difference_second_order_1",
+      "error_ratio": 3.9998289745563755
+    },
+    {
+      "name": "reject_omit_receiver_clock",
+      "count_error": 0.26227849224298583
+    },
+    {
+      "name": "reject_reverse_retarded_position_term",
+      "count_error": 0.058416127757695835
+    },
+    {
+      "name": "proper_lapse_variation_body_0",
+      "max_error": 2.6492936178179605e-09
+    },
+    {
+      "name": "proper_lapse_variation_body_1",
+      "max_error": 3.25133497902641e-09
+    }
+  ],
+  "convergence": [
+    {
+      "eps": 0.05,
+      "phase_error": 7.761515764792559e-05,
+      "count_error": 5.1415928251974385e-05
+    },
+    {
+      "eps": 0.025,
+      "phase_error": 1.9407107543556457e-05,
+      "count_error": 1.28550845089892e-05
+    },
+    {
+      "eps": 0.0125,
+      "phase_error": 4.851984339082627e-06,
+      "count_error": 3.2138400748449314e-06
+    },
+    {
+      "eps": 0.00025,
+      "phase_error": 1.9339155832298616e-09,
+      "count_error": 1.2852910402649798e-09
+    }
+  ],
+  "reference_receiver_coordinate_times": [
+    0.5,
+    1.4,
+    2.9,
+    4.2
+  ],
+  "fixed_receiver_proper_times": [
+    5.286540981352221,
+    6.363866040998802,
+    8.16127852878696,
+    9.71904791450652
+  ],
+  "phase_variation": [
+    0.4594762089655454,
+    0.1906730211847181,
+    0.2958752101999213,
+    0.7415931241142774
+  ],
+  "normalized_count_variation": [
+    -0.24950982563146618,
+    0.058529797545059825,
+    0.2861257372242371
+  ],
+  "scope": "Synthetic one-way conformal-flat patch; no empirical data, no transponder/media/electronics, no finite-energy statement for the plane-wave probes. First-order numerical convergence is not a nonlinear uniform remainder bound."
+}

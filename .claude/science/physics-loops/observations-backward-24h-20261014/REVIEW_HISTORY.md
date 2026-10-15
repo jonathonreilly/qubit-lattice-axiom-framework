@@ -87,3 +87,9 @@ Root read full independent Gram110, mass/error59, count-kernel109, nominal timin
 
 
 Final canonical source review completed: residual_energy/independent_canonical_v1/CANONICAL_REVIEW_v1.md, SHA256 dc25cbb52fbd093c161b602486be24d7b047444d64e6714e54074a58fc8f000f; identity69f9dc6817a072f36a62fc4d7ec8e06087e6d34f134a7743d378994dc024081b. Root read the complete report. Final source/cache/product closure passed. Full staged delivery review remains pending. No formal audit.
+
+## Accelerated coherent-count source block
+
+Original independent pre-exposure checks comprise separate massless pure-force/joint constructions (18 and 27 controls), generic adjoints (163), proper endpoint counts (179), ideal coherent transfer (150), and an exact stationary coherent energy fixture (61). These are distinct mathematical scopes, not independent observations or a pooled statistical sample. Subsequent author-source comparisons contain 38 massless, 53 adjoint composition and 18 exact-composition checks. Full reports were read by root. The complete seven-file canonical source was read by a separate focused reviewer; scientific helper ASTs and all numerical products agree with their frozen working calculations.
+
+The author preserves coarse-angular and finite-step truncation failures with unchanged tolerances; reviewers preserve a serialization repair, two arbitrary diagnostic-threshold repairs and a coherent finite-step refinement. Domain findings added the fixed-background/constant-response distinction and L2 distributed readout premise. A source comparison clarified kappa times the phase contrast in the exact fixture; no matrix or code change resulted. Original reports and hash-bound findings remain immutable. The canonical run passes 75 controls; all 14 current-source deliberate variants fail actual assertions. Complete delivery, source-bound cache and topology checks are separate from scientific checks; no formal audit was launched.

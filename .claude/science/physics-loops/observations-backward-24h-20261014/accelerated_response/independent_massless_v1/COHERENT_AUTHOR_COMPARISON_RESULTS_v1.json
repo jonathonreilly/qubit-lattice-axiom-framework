@@ -1,0 +1,112 @@
+{
+  "at": "2026-10-15T03:56:04.446841+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Source-bound coherent exact comparison; no full author suite rerun.",
+  "sources": {
+    "working_note": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/COHERENT_EXACT_ENERGY_WORKING_v1.md",
+      "sha256": "c4457b88521f426dde272db43cdee77712f5a8779764aef39823c5320e55cc99"
+    },
+    "working_code": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/coherent_exact_energy_v1.py",
+      "sha256": "81dbec52ef73deb04aef25dee498a839f1e1f7664615cb8355e01a09d1aeb92f"
+    },
+    "working_result": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/.claude/science/physics-loops/observations-backward-24h-20261014/accelerated_response/COHERENT_EXACT_ENERGY_RESULTS_v1.json",
+      "sha256": "58885fa5ad2c05d9ad438e5461e4bc857a01a038da1eef43ff374f542803ea62"
+    },
+    "packaged_code": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/scripts/scalar_coherent_exact_energy_controls.py",
+      "sha256": "6925adf6599f7df586810b4b6e7bae61368399953edb2a517cd492b3d422dc2f"
+    },
+    "canonical_note": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-backward-24h-20261014/New Axioms Lets Go/docs/SCALAR_ACCELERATED_COHERENT_COUNT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "sha256": "72113d39011cd2a29beb3355edae2d122549f0369769fdb59b51594f48a9e711"
+    }
+  },
+  "pre_exposure_identity_sha256": "9745c76dc778c59169ebcec5d4078d9789d5d1bb8a04630c84672c2be129137f",
+  "checks": [
+    {
+      "name": "packaged_exact_ast_integrate_poly",
+      "passed": true
+    },
+    {
+      "name": "packaged_exact_ast_partitions",
+      "passed": true
+    },
+    {
+      "name": "packaged_exact_ast_rectangles",
+      "passed": true
+    },
+    {
+      "name": "packaged_exact_ast_spectral_matrix",
+      "passed": true
+    },
+    {
+      "name": "packaged_exact_ast_time_matrix",
+      "passed": true
+    },
+    {
+      "name": "packaged_exact_ast_times",
+      "passed": true
+    },
+    {
+      "name": "packaged_exact_ast_wave_events",
+      "passed": true
+    },
+    {
+      "name": "packaged_driver_ast_after_output_only_adapter",
+      "passed": true
+    },
+    {
+      "name": "packaged_timeout_180",
+      "passed": true
+    },
+    {
+      "name": "working_result_bound_to_source",
+      "passed": true
+    },
+    {
+      "name": "recorded_check_count",
+      "passed": true
+    },
+    {
+      "name": "recorded_exact_residuals",
+      "passed": true
+    },
+    {
+      "name": "author_full_gram_matches_independent_exact",
+      "passed": true
+    },
+    {
+      "name": "author_recorded_determinant",
+      "passed": true
+    },
+    {
+      "name": "decimal_matrix_matches",
+      "passed": true
+    },
+    {
+      "name": "independent_wrong_variant_omit_clock",
+      "passed": true,
+      "difference_four_pi_gram": "Matrix([[-344/135, 166/135], [166/135, -344/135]])"
+    },
+    {
+      "name": "independent_wrong_variant_equal_coordinate",
+      "passed": true,
+      "difference_four_pi_gram": "Matrix([[3848/405, -2557/405], [-2557/405, 3848/405]])"
+    },
+    {
+      "name": "canonical_section7_matches_working_science",
+      "passed": true
+    }
+  ],
+  "checks_passed": 18,
+  "checks_failed": 0,
+  "author_suites_executed": false,
+  "new_independent_variant_evaluations": 2,
+  "recorded_author_checks": 15,
+  "author_code_read_completely": true,
+  "canonical_read_scope": "Section 7 plus conventions and Section 6 normalization context only.",
+  "normalization_wording_finding": "Clarify that chi excludes kappa, while the actual unit-duration contrast is kappa sum beta chi and alpha*kappa=1 is absorbed into W,c,T. Formula/matrix result is correct for that stated product."
+}

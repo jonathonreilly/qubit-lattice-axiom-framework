@@ -1,0 +1,258 @@
+{
+  "at": "2026-10-15T03:36:42.730461+00:00",
+  "reviewer": "/root/inertial_response_check",
+  "scope": "Post-independent-freeze focused author source comparison and additional derivative/inverse fixture checks; not formal audit or physical count validation.",
+  "author_sources": {
+    "JOINT_CLOCK_FORCE_WORKING_v2.md": "7ac81b681804460dfb277b4e2fa369b69ed138b68f833d103a9e547f81de7f7c",
+    "ACCELERATED_RESPONSE_WORKING_v1.md": "80d40337d01210ff51847fd56b32fb4b6332e286ac1461a1c10f9e16d0e3ed04",
+    "joint_gram_controls_v2.py": "4bd9f3ba99369437ceefedb803bc6aae5d4d552c06b5d7e7a00b2501ab62a975",
+    "JOINT_GRAM_RESULTS_v2.json": "48ecd654fe086c5307bc7f6c967c9915dd309596d2c231274db2c255d01a60bd"
+  },
+  "pre_author_identity_sha256": "2302220706faa680308abd1fb48ddb46e2993ef8f5370a89327ecf084853adc8",
+  "checks": [
+    {
+      "name": "author_velocity_vs_position_five_point_rest",
+      "max_absolute_error": 0.0,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "author_acceleration_vs_velocity_five_point_rest",
+      "max_absolute_error": 0.0,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "window_derivative_five_point_rest_0",
+      "max_absolute_error": 8.912870441690757e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_0_0",
+      "max_absolute_error": 8.912870441690757e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_0_1",
+      "max_absolute_error": 7.843725668976731e-14,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_0_2",
+      "max_absolute_error": 1.7225110227059304e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_0_3",
+      "max_absolute_error": 7.701617121824711e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "window_derivative_five_point_rest_1",
+      "max_absolute_error": 7.549516567451064e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_1_0",
+      "max_absolute_error": 1.7391643680753077e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_1_1",
+      "max_absolute_error": 7.549516567451064e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_1_2",
+      "max_absolute_error": 1.2051470932306074e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_rest_1_3",
+      "max_absolute_error": 4.846123502488808e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "author_velocity_vs_position_five_point_inertial",
+      "max_absolute_error": 1.300626273348371e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "author_acceleration_vs_velocity_five_point_inertial",
+      "max_absolute_error": 0.0,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "window_derivative_five_point_inertial_0",
+      "max_absolute_error": 8.912870441690757e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_0_0",
+      "max_absolute_error": 9.940936962493652e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_0_1",
+      "max_absolute_error": 1.4566126083082054e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_0_2",
+      "max_absolute_error": 2.609024107869118e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_0_3",
+      "max_absolute_error": 5.503375533066901e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "window_derivative_five_point_inertial_1",
+      "max_absolute_error": 7.549516567451064e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_1_0",
+      "max_absolute_error": 2.5135449277513544e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_1_1",
+      "max_absolute_error": 4.548583731889266e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_1_2",
+      "max_absolute_error": 3.7925218521195347e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_inertial_1_3",
+      "max_absolute_error": 6.118439088709238e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "author_velocity_vs_position_five_point_curved",
+      "max_absolute_error": 5.2138848793958914e-14,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "author_acceleration_vs_velocity_five_point_curved",
+      "max_absolute_error": 3.306799278846029e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "window_derivative_five_point_curved_0",
+      "max_absolute_error": 8.912870441690757e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_0_0",
+      "max_absolute_error": 2.880806704297356e-12,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_0_1",
+      "max_absolute_error": 1.6542323066914832e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_0_2",
+      "max_absolute_error": 3.255173908200959e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_0_3",
+      "max_absolute_error": 5.706546346573305e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "window_derivative_five_point_curved_1",
+      "max_absolute_error": 7.549516567451064e-13,
+      "tolerance": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_1_0",
+      "max_absolute_error": 3.809175197488912e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_1_1",
+      "max_absolute_error": 3.093081346605686e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_1_2",
+      "max_absolute_error": 2.1088686352754848e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "signed_density_five_point_curved_1_3",
+      "max_absolute_error": 4.926614671774132e-13,
+      "tolerance": 3e-09,
+      "passed": true
+    },
+    {
+      "name": "author_newton_inverse_phase_residual",
+      "max_absolute_error": 2.220446049250313e-16,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "author_fixture_subluminal",
+      "passed": true,
+      "maximum_sampled_speed": 0.29587349228542603,
+      "analytic_global_speed_upper_bound": 0.33120990323358385
+    }
+  ],
+  "checks_passed": 38,
+  "checks_failed": 0,
+  "author_recorded_checks": 15,
+  "author_full_suite_rerun": false,
+  "raw_observations_read": false,
+  "v1_failure_preserved": true,
+  "v2_change": "Only angular quadrature resolutions and output version changed; tolerance unchanged.",
+  "source_sha256": "b6aac8d3b1ae6cada183dff3a9d750cdf801f462d0f6235d40043f223549d6c1",
+  "historical_author_evidence": {
+    "joint_gram_controls_v1.py": "5a9af7989630cc9d01d5bb9f52474327eb91f9cd44b25f1e8fc15cc64aba333b",
+    "JOINT_GRAM_v1.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JOINT_GRAM_v1.stderr": "f69d6dcb883de712ec388eee9c73a52a05f017bf69f5ba82feeff471602bacaf",
+    "JOINT_GRAM_v2.stdout": "48ecd654fe086c5307bc7f6c967c9915dd309596d2c231274db2c255d01a60bd",
+    "JOINT_GRAM_v2.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JOINT_GRAM_ANGULAR_DIAGNOSTIC_v1.json": "32bd0eceee1388d24d26dd0946beda1d5fac08e97a3dd5c5e924cd19504acb80"
+  }
+}

@@ -31,3 +31,7 @@ Next after M4: reconstruct minimum field-energy requirements from calibrated fin
 1. Derive the finite-count sensitivity for an accelerated/retarded reference trajectory, retaining the conformal time derivative, source response and clock terms. Decisive check: direct phase/trajectory evaluation against a controlled perturbation, with explicit remainder bounds.
 2. Establish an independently supported physical error or energy resource budget. The current lower energy requirement is informative only when compared with such evidence; raw frequency variance does not supply it.
 3. Revisit action/potential and scale reconstruction across domains once the measurement map is controlled. Keep candidate choices explicit and challenge them; do not adopt a minimum-energy state as a selector.
+
+## Next after the accelerated observation operator
+
+The accelerated massless operator and ideal coherent link are now derived conditionally; more stationary examples are lower priority. First establish an observation-supported error or energy budget, or a controlled background/source correction that makes the response usable on actual tracking data. Reconstruct or bound those quantities from independent observables instead of assigning a preferred field state or energy. Action/potential and cross-domain scale discrimination remain live alternatives. Refresh relevant main/open PR science before a new route. Day169 remains exposed development; later raw products remain unopened without a pre-access protocol.

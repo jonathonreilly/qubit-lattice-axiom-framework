@@ -37,3 +37,17 @@ next_trace_action: "Derive the accelerated/retarded radio-to-force response and 
 ```
 
 The consumer is the campaign's scalar-history reconstruction from finite tracking counts. This unit supplies the observation-derived operator and least compatible energy in a declared regime; it does not close the actual calibration/energy-supplier obligation or derive the scalar action.
+
+## Accelerated coherent-count milestone trace
+
+```yaml
+target_claim_id: scalar_accelerated_coherent_count
+target_blocker_text: "Derive or eliminate the scalar theory's remaining initial-state and measurement assumptions"
+source_of_blocker_text: user_goal
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Establish actual trajectory, clock and link calibration with an independently supported error or energy budget"
+```
+
+The downstream consumer is scalar-history reconstruction from finite tracking counts. The new construction derives response weights and a joint massless energy Gram from the declared observation, including acceleration and shared-clock effects. It does not identify archived residuals with a scalar field, derive the physical action or provide the external energy/error comparison needed for exclusion.

@@ -1,0 +1,98 @@
+{
+  "frozen_utc": "2026-10-15T14:40:27.900110+00:00",
+  "status": "Bounded source-side resource check; one equality correction required. Not publication or audit acceptance.",
+  "scientific_executions": 0,
+  "files": [
+    {
+      "path": "FINAL_SOURCE_CLOSURE.json",
+      "bytes": 5582,
+      "sha256": "518163fca6072886e7c03b6d32a23e8f5003f8ffc38fa405db37e7ed4f22af5f"
+    },
+    {
+      "path": "METADATA_EXECUTION_RECEIPT.json",
+      "bytes": 499,
+      "sha256": "e997298db7a6c485dbdf5b08eae65a423ab9bba410824d9c14101bada1ec0ed6"
+    },
+    {
+      "path": "METADATA_LAUNCH.json",
+      "bytes": 832,
+      "sha256": "1ba2c6040a15e79611cd775d298335109caa22f5fe0fc8ddf996abff14f521aa"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 25745,
+      "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4790,
+      "sha256": "918924baf9a69adbb18df7bdee69dd939d0df047f133bbdd3ad76f9393ce8fb0"
+    },
+    {
+      "path": "STATUS_CAPTURE_RECEIPT.json",
+      "bytes": 267,
+      "sha256": "5b619320da6eb3cc011166b3b546d49adf2bab6057f8af9f1ffb842bf77e7928"
+    },
+    {
+      "path": "finalize_metadata.py",
+      "bytes": 3937,
+      "sha256": "be6ddff8fe2d92f86053226b52d68daf72ca84fdac60aa22e23f61a3f7f352e9"
+    },
+    {
+      "path": "sources/joint_CORRECTION.diff",
+      "bytes": 9586,
+      "sha256": "7292d920cefd2b66ef2816ebb5be9184a159293c615aeda4c9d84bddaa3d6403"
+    },
+    {
+      "path": "sources/joint_FINAL_FREEZE.json",
+      "bytes": 5006,
+      "sha256": "7ba2fceab45352d0032731a56124463ee14b70f12dcd4ba1dd0245e2db57fd40"
+    },
+    {
+      "path": "sources/joint_ROOT_ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478"
+    },
+    {
+      "path": "sources/joint_ROOT_FINAL_FREEZE.json",
+      "bytes": 2597,
+      "sha256": "a30f5e4d99cf1305956d95ed194a4623b3cd714c466d3abe599ff0edf353cbc3"
+    },
+    {
+      "path": "sources/joint_SCOPE_EXPOSURE.md",
+      "bytes": 3005,
+      "sha256": "82a66d4c746142f0de775ef8cd10142fd055076071537cdcd18adfc6482bfb7b"
+    },
+    {
+      "path": "sources/joint_corrected_DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "path": "sources/mass_DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+    },
+    {
+      "path": "sources/mass_REPORT.md",
+      "bytes": 25011,
+      "sha256": "cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e"
+    },
+    {
+      "path": "sources/mass_ROOT_ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf"
+    },
+    {
+      "path": "sources/root_resource_DERIVATION.md",
+      "bytes": 9213,
+      "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783"
+    },
+    {
+      "path": "sources/root_resource_PROPOSAL_FREEZE.json",
+      "bytes": 785,
+      "sha256": "a11a3e726ad4c97465c345be1b735a3934dd022e7afe4f1a211698693d58f43e"
+    }
+  ],
+  "self_hash_excluded": true
+}

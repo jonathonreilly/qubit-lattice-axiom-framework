@@ -1,0 +1,91 @@
+"""Close exact reviewed sources and write a conditional root disposition; metadata only."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+
+Q = Path(__file__).resolve().parent
+N = Q.parent
+A = N / 'fast_joint_readiness_root_candidate'
+V = N / 'fast_joint_readiness_decisive_check'
+
+def pin(p):
+    b = p.read_bytes()
+    return {'path': str(p), 'bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()}
+
+def check(p, row):
+    actual = pin(p)
+    assert actual['bytes'] == row['bytes'] and actual['sha256'] == row['sha256'], p
+
+def write(p, value):
+    p.write_text(json.dumps(value, indent=2) + '\n')
+
+expected = {
+    A / 'DERIVATION.md': 'a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794',
+    A / 'PROPOSAL_FREEZE.json': '7e492ac7ea2538725418f1c7435c95ef567b101e1537dcb2fefc40f18f65809a',
+    V / 'REPORT.md': 'f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569',
+    V / 'FINAL_FREEZE.json': '203a0d9b789282e8b5c27c9dd439fe81e54de47d567a638894122cd3ca6020a5',
+}
+for p, h in expected.items():
+    assert pin(p)['sha256'] == h, p
+counts = {}
+for root, name in [(A, 'PROPOSAL_FREEZE.json'), (V, 'FINAL_FREEZE.json')]:
+    rows = json.loads((root / name).read_text())['files']
+    members = set()
+    for row in rows:
+        p = Path(row['path'])
+        if not p.is_absolute():
+            p = root / p
+        check(p, row)
+        members.add(p)
+    assert members == {p for p in root.rglob('*') if p.is_file() and p != root / name}
+    counts[str(root)] = len(rows)
+sources = []
+for root in [A, V]:
+    for row in json.loads((root / 'SOURCE_MANIFEST.json').read_text())['sources']:
+        check(Path(row['path']), row)
+        if row.get('recovery_copy'):
+            check(root / row['recovery_copy'], row)
+        sources.append({'manifest': str(root / 'SOURCE_MANIFEST.json'), **row})
+receipts = []
+for run in sorted((V / 'metadata_runs').iterdir()):
+    launch = json.loads((run / 'LAUNCH.json').read_text())
+    receipt = json.loads((run / 'EXECUTION.json').read_text())
+    assert receipt['returncode'] == 0
+    assert datetime.fromisoformat(launch['started_utc']) <= datetime.fromisoformat(receipt['finished_utc'])
+    check(run / 'child_source.py', launch['source_at_launch'])
+    check(run / 'recorder_source.py', launch['recorder_at_launch'])
+    check(run / 'LAUNCH.json', receipt['launch'])
+    for row in receipt['outputs']:
+        check(Path(row['path']), row)
+    assert (run / 'stderr').read_bytes() == b''
+    receipts.append(pin(run / 'EXECUTION.json'))
+closed = datetime.now(timezone.utc).isoformat()
+write(Q / 'SOURCE_CLOSURE.json', {
+    'checked_utc': closed, 'scope': 'Exact identities, source copies and actual metadata receipts only',
+    'sources': [pin(p) for p in expected], 'freeze_members': counts,
+    'manifest_rows_checked': len(sources), 'metadata_receipts': receipts,
+    'scientific_executions': 0, 'historical_replays': 0,
+})
+(Q / 'ACCEPTANCE.md').write_text('''# Conditional root disposition: fast joint readiness
+
+Root accepts unchanged source a0457a19 for source-side conditional composition after reading the entire 30,546-byte separate report f8e85619, all capture/recorder/final-freshness logic and reading-coverage qualifications. Earlier complete author proof and corrected joint/mass premise reads are reused at their exact identities. This closes this analytic review obligation; it is not retained audit status or evidence of native hardware.
+
+The independent check uses a toggling-frame derivation to retain the full actual baseline K, every intermediate clock sector, arbitrary D/S/R correlations and all displaced E records. The bound is 2 B T_p in unhalved trace norm with B at least the full operator norm, including actual scalars, reserves and any static E terms. For T_p=eta tau_ref/[4(eta+B tau_ref)], this is at most eta/2. Complete input error eta/4 and full-space fault integral eta/8 give total trace allowance eta. The comparator leaves D unaged; it does not assert that physical H0 stopped or was cancelled.
+
+The full positive SWAP, excitation, complex rotation and occupation-phase logarithms implement the accepted word with its retained exp(-i Theta) phase. Their C-infinity envelopes vanish at both actual endpoints. G<=3s^2, each logarithm norm<=3pi, and the block action, peak, slew and variation bounds are respectively 3pi G, 3pi m0 G/T_p, 3pi m1 G^2/T_p^2 and 6pi m0 G^2/T_p. The safe physical-channel factor is (1+sqrt(5))/2. Positive whole blocks still have signed individual channels. No generic fast-control novelty is claimed.
+
+The mass-family powers are conditional on its chosen sufficient Delta recipe, complete bounded h0 and F_max/horizon family, n>=M, and every optional identity-field/extra-E contribution being charged. With B=O(n^25 eta_sim^-2), the sufficient added action is O(n^2), peak O(n^27 eta_sim^-2 eta^-1), slew O(n^54 eta_sim^-4 eta^-2) and variation O(n^29 eta_sim^-2 eta^-1). These are selected upper bounds, not optimality, common-cap feasibility or efficient synthesis of arbitrary computable descriptions.
+
+Exact endpoint return is stronger than small integrated error: translated pulses need actual support guards or a repriced time interval. The initial endpoint has the same requirement. Simultaneously faulty coefficients and envelopes require their product term in the complete residual. L1 calibration does not certify fault slew, positivity or a work-variation bound. All global phases and physical scalar actions stay in the operator/resource ledger; they may cancel only in a state-channel comparison.
+
+Centered ordered retained moments use general trace-norm duality, including when K acts on E. Raw moments retain the marginal and cross terms in the corrected joint source. Explicit ideal-moment formulas must use the fast comparator's unaged D input. Growing generator norms require tighter trace tolerances for moment objectives. The positive SWAP-overrotation counterexample and distinct scalar-phase witness are preserved.
+
+Subsequent simulation adds eta+eta_sim only when the checked full-output simulator applies to the same actual K and this complete ready comparator. Extra E interactions need their own later theorem or full-space error allowance. The actual faulty state need not lie exactly in the ideal number sector. Every reference and E record remains; the actual elapsed time is T_p plus the later simulator duration. Subsequent waits are not free resets.
+
+This reviewer was source-exposed and previously reviewed the mass theorem, using the same model family. Root authored the proposal. This is a separate analytic check, not blind/model-diverse replication. No new scientific execution, historical replay or formal proof occurred; the inherited selected joint fixture is not independent evidence here. All complete source/freeze and actual metadata identities are in SOURCE_CLOSURE.json. No W, Git, PR, axiom, editable prompt, audit or lock mutation is part of this disposition.
+
+Supplied pure memory, independently addressable full NN gates, external timing, full-space calibration/isolation, native clock/control/energy/detector identifications, permanent records/reuse and a full scheduled autonomous program remain open. The checked fixed-duration compensation recipe is a distinct alternative with a different D-aging contract, not a proof premise of this fast theorem.
+''')
+files = [pin(p) for p in sorted(Q.iterdir()) if p.is_file() and p.name != 'FINAL_FREEZE.json']
+write(Q / 'FINAL_FREEZE.json', {'closed_utc': closed, 'status': 'conditional source-side acceptance; no retained audit', 'files': files})
+print(json.dumps({'acceptance': pin(Q / 'ACCEPTANCE.md'), 'source_closure': pin(Q / 'SOURCE_CLOSURE.json'), 'freeze': pin(Q / 'FINAL_FREEZE.json')}))

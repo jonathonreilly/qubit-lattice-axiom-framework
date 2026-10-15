@@ -1,0 +1,37 @@
+{
+  "kind": "actual_resource_source_binding",
+  "canonical_parent_binding_complete": true,
+  "root_read_complete": true,
+  "actual_checkout_head": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+  "actual_git_base": "b3a884425aa86e642172aef67c90fc1fe93ff942",
+  "actual_branch_at_binding": "physics-loop/toe-joint-readiness-20261015",
+  "bound_note_sha256": "9158d794b13732e1c121d50ca3aa0960e2befcf7ebc4132564b3fb9fe0668122",
+  "receipt_paths": [
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/REFS.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/ROOT_SOURCE_REVIEW.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/historical_recorder.py",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/live_recorder.py",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/fetch_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/fetch_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/fetch_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/inventory_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/inventory_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/inventory_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/root_review_executed_source.py",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_LAUNCH.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/stack_stderr",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_LAUNCH.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_EXECUTION.json",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_stdout",
+    ".claude/science/physics-loops/toe-readiness-resources-20261015/binding_sources/mass_stderr"
+  ],
+  "canonical_parent_sha256": {
+    "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc",
+    "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e"
+  }
+}

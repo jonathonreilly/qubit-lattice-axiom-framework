@@ -1,0 +1,93 @@
+{
+  "kind": "actual metadata-only comparison result",
+  "started_utc": "2026-10-15T14:47:21.683306+00:00",
+  "comparison_completed_utc": "2026-10-15T14:47:21.744845+00:00",
+  "pid": 70083,
+  "exact_five_replacements": true,
+  "replacement_identities": [
+    {
+      "old_text_sha256": "44e6227a4f39bc0cba10e4245ad8d85e0398bade062493bbaa470f938375af5c",
+      "new_text_sha256": "e1614378647d5fe86342d4e238f444a13d8f30d6e3b9ec29cd8503bfd9686a31",
+      "old_occurrences": 1
+    },
+    {
+      "old_text_sha256": "d3d0fe90b36f96e782fc5dbae66e8502217e807c4024011394d1601ac776ad28",
+      "new_text_sha256": "fcf92c45b7960b30a255887157960219a49d5134f6164919ff3b82fc13c6ab47",
+      "old_occurrences": 1
+    },
+    {
+      "old_text_sha256": "e0d75043f0e13ca3c3f420548ba3de476e01825d782935c48ccd10a93183f88f",
+      "new_text_sha256": "df3465bfbe8104bd16eba1838a20f1da8d30a6c34ebdf1d61f212419fb022a2c",
+      "old_occurrences": 1
+    },
+    {
+      "old_text_sha256": "d9d3467e8f0e605f2504c1682440845171308a48f1c648cfbf886500a90fc7ce",
+      "new_text_sha256": "c7ff15097159bc3c988280ff57a851193f6c298362295213a817db8a4223f050",
+      "old_occurrences": 1
+    },
+    {
+      "old_text_sha256": "38979671bc16df94d404ab16c4bff0126374ecbc85d318d5b3a8cb3407bb87ea",
+      "new_text_sha256": "a9b5c8fa3ffd0d874eb8544752b5bcd6ae986e88383158d4b0dfe3edc5dfac75",
+      "old_occurrences": 1
+    }
+  ],
+  "unified_diff_byte_exact": true,
+  "unchanged_displayed_blocks": 4,
+  "unchanged_big_O_texts": [
+    "O(n^24 eta_sim^-2)",
+    "O(n^2)",
+    "O(n^5)",
+    "O(n)",
+    "O(n^25 eta_sim^-2)",
+    "O(n^25 eta_sim^-2)",
+    "O(n^50 eta_sim^-4 eta_prep^-1)",
+    "O(n)",
+    "O(n)",
+    "O(n)",
+    "O(n^2)",
+    "O(n)"
+  ],
+  "source_identities_checked": 13,
+  "original_freeze_members_verified": [
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/FINAL_FREEZE.json",
+      "bytes": 1235,
+      "sha256": "ff8cf33e30c43fed1b976a22b985189110fb9ac3524cd0e8359b50e56e1497ea",
+      "verified_member_count": 4,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/CORRECTION.diff",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/SCOPE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/SOURCE_MANIFEST.json"
+      ]
+    },
+    {
+      "freeze": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/FINAL_FREEZE.json",
+      "bytes": 3188,
+      "sha256": "99f418f191eb26bb1cc9bd2b63a32457f0a6b5b07964b30997b812b91016374e",
+      "verified_member_count": 18,
+      "members": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/FINAL_SOURCE_CLOSURE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/METADATA_EXECUTION_RECEIPT.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/METADATA_LAUNCH.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/REPORT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/SOURCE_MANIFEST.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/STATUS_CAPTURE_RECEIPT.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/finalize_metadata.py",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/joint_CORRECTION.diff",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/joint_FINAL_FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/joint_ROOT_ACCEPTANCE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/joint_ROOT_FINAL_FREEZE.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/joint_SCOPE_EXPOSURE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/joint_corrected_DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/mass_DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/mass_REPORT.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/mass_ROOT_ACCEPTANCE.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/root_resource_DERIVATION.md",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/sources/root_resource_PROPOSAL_FREEZE.json"
+      ]
+    }
+  ],
+  "scientific_executions": 0,
+  "process_exit_status": "Reported by the tool after process exit; not fabricated inside the running process."
+}

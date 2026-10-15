@@ -1,0 +1,15 @@
+{
+  "kind": "dated_source_proposal_not_actual_binding",
+  "created_utc": "2026-10-15T15:31:23.998846+00:00",
+  "canonical_binding": null,
+  "git_base": null,
+  "primary_execution": null,
+  "cache_execution": null,
+  "mutation_execution": null,
+  "graph_execution": null,
+  "publication_action": null,
+  "retained_audit": null,
+  "scientific_programs_run": 0,
+  "historical_programs_replayed": 0,
+  "publication_context": "Mass PR9606; joint PR9607/head b3a884425aa86e642172aef67c90fc1fe93ff942 from preserved root publication/attachment records. Resource integration unperformed; no Git/remote query by packager."
+}

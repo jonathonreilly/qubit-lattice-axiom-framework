@@ -1,0 +1,42 @@
+--- frozen_b34df6b7/DERIVATION.md
++++ corrected/DERIVATION.md
+@@ -1,6 +1,6 @@
+ # Proposed fixed-duration polynomial price for joint readiness
+ 
+-Root-origin analytic proposal, not separately checked or accepted. This composes the mass-scaled transport source785e56e3/root acceptance070ecbfd with the joint preparation source818699a3, whose complete-output construction is still under separate review and whose retained-moment wording and saved-row label are being corrected. No new scientific execution is declared. The proposal uses only its reset/synthesis/control-norm argument, not its disputed raw retained-moment bound. Every dependency remains explicit.
++Root-origin corrected conditional source. The separate analytic reportaab0856d supports originalb34df6b7 after correcting the counterterm equality to an upper bound. This revision makes that repair, pins accepted corrected joint preparationdcee9d6f/root acceptance73a10a94, and makes the checked clock-family and physical-channel qualifications explicit. It composes the accepted mass-scaled source785e56e3/root070ecbfd. Exact original text and the complete correction diff are preserved. No scientific execution or retained audit is declared; root source acceptance is recorded separately. It uses the reset/synthesis/control-norm result and no unqualified raw retained-moment bound.
+ 
+ ## 1. Scope and resource parameters
+ 
+@@ -14,14 +14,14 @@
+ 
+ Write F=K_X+Delta L+sqrt(Delta)V+C0+R0I as the exact finite local dictionary. Choose each c_lambda from the joint source's literal full one-/two-site norm bounds, including zero compensator scalar entries, and let kappa=sum c_lambda. Then B=kappa>=||F||, B_C=2kappa>=||sum(c_lambda I-h_lambda)|| and Gamma=||F J_ready||<=kappa are safe full-space bounds.
+ 
+-The clock dictionary sum is exactly M/a_c. The all-one clock vector is an eigenvector of every b_j with eigenvalue1/a_c, and positivity plus the triangle bound gives ||K_X||=M/a_c. Since K_X has vacuum eigenvalue0 and H0 acts on a separate tensor factor, any eigenvalue lambda of H0 gives eigenvalues lambda and lambda+||K_X|| of H. Hence ||K_X||<=2h0. Also ||H0||<=h0 by the vacuum restriction. This checks that the clock compensation price is controlled by the same supplied full-space h0 rather than a one-excitation norm.
++The clock dictionary sum is exactly M/a_c. The all-one clock vector is an eigenvector of every b_j with eigenvalue1/a_c, and positivity plus the triangle bound gives ||K_X||=M/a_c. Since K_X has vacuum eigenvalue0 and H0 acts on a separate tensor factor, any eigenvalue lambda of H0 gives eigenvalues lambda and lambda+||K_X|| of H. Hence ||K_X||<=2h0. Also ||H0||<=h0 by the vacuum restriction. This checks that the clock compensation price is controlled by the same supplied full-space h0 rather than a one-excitation norm. In the source convention a_c=S_c/M, so ||K_X||=M^2/S_c. Bounded full h0 as M grows therefore constrains S_c; a fixed-S_c family with growing clock norm must retain its growing h0 in the explicit formulas and cannot quote the fixed-h0 exponents unchanged.
+ 
+ Separate real/imaginary source channels satisfy |Re z|+|Im z|<=sqrt(2)|z|. A sufficient termwise allowance is therefore
+ 
+     kappa <= M/a_c + Delta ell_L + sqrt(2Delta)v
+                     + (a-h0) + R0,                       (1)
+ 
+-where a-h0=S0+sum_j S_j+Dsum is the mass-source counterterm norm sum. ell_L must include all literal penalty blocks, including Pe detunings and root/arc diagonal compensation. All components have a fixed-size Pauli decomposition. Thus in the fixed family kappa=O(n^25 eta_sim^-2). If larger reserves, redundant decompositions or additional static blocks are supplied, they must be added to (1); the recipe does not price arbitrary extra hardware for free.
++where the actual counterterm norm sum satisfies S0+sum_j S_j+Dsum<=a-h0. The mass source defines a-h0 with a uniform upper bound on each S_j; equality with the actual sum is not assumed. ell_L must include all literal penalty blocks, including Pe detunings and root/arc diagonal compensation. All components have a fixed-size Pauli decomposition. Thus in the fixed family kappa=O(n^25 eta_sim^-2). If larger reserves, redundant decompositions or additional static blocks are supplied, they must be added to (1); the recipe does not price arbitrary extra hardware for free.
+ 
+ ## 3. A complete schedule at exactly tau0
+ 
+@@ -53,7 +53,7 @@
+ 
+ The derivative allowance uses a sum although ramps and pulses are serial; it is conservative. For fixed tau0 these become action/peak/variation O(n^25 eta_sim^-2) and slew O(n^50 eta_sim^-4 eta_prep^-1). The complete nominal control-work magnitude is bounded by the variation, with the same installed baseline at both endpoints. This is not a microscopic controller-energy model or a minimum work cost. Fault variation needs its own derivative allowance; a small integrated operator error does not control work variation.
+ 
+-Physical per-site/channel loads are bounded by the full termwise sums used here, with each rotation's separate channel sum at most(1+sqrt(5))theta. That fixed factor leaves the polynomial powers unchanged. A common cap independent of n, eta_sim or eta_prep is not obtained; the price explicitly grows. Positivity of the nominal drive follows from installed K>=0 and the supplied positive control blocks. Arbitrary signed faults require a separate actual positivity margin/reserve; an error bound does not install it.
++Equations(4) are whole-block allowances. Physical per-site/channel loads instead use full termwise channel sums. Each rotation's separate channel sum is at most(1+sqrt(5))theta, compared with block norm2theta. For the literal dictionary the compensator Pauli-channel sum remains bounded by2kappa; SWAP, excitation and final phase need no larger factor than their block allowance. Thus one safe channel version keeps the compensation additions in(4) unchanged and multiplies each gate addition by f=(1+sqrt(5))/2. For example the channel action bound is2kappa tau0+3pi fG and peak bound is2kappa+4pi m0 fG/tau0; gate slew and variation receive the same f. These explicit constant factors leave the polynomial powers unchanged. Other decompositions need their own checked channel sums. A common cap independent of n, eta_sim or eta_prep is not obtained; the price explicitly grows. Positivity of the nominal drive follows from installed K>=0 and the supplied positive control blocks. Arbitrary signed faults require a separate actual positivity margin/reserve; an error bound does not install it.
+ 
+ ## 5. Precision and composition
+ 
+@@ -65,4 +65,4 @@
+ 
+ ## 6. Open check obligations
+ 
+-Separately verify the complete-clock norm argument, termwise kappa including source quadratures/scalars, exact total time, all constants in(2)-(4), physical precision decomposition and composition domain. Recheck the fixed-core polynomial assumptions rather than importing a one-excitation coefficient price. Joint preparation remains an open source dependency until its separate review and correction close. No scientific diagnostic or new literature claim accompanies this proposal.
++The complete separate reportaab0856d checks the full-clock norm, literal penalty coefficient sum, termwise kappa, exact time and constants in(2)-(4), channel factors, physical precision and complete-output composition. Its required counterterm inequality repair is made here; all unchanged formulas retain their original bytes. Accepted jointdcee9d6f closes the named source-side dependency, not audit status or physical control supply. Root must verify the exact delta and source identities before current acceptance/publication. No scientific diagnostic, new literature claim, native resource or common fixed-cap conclusion accompanies this revision.

@@ -1,0 +1,59 @@
+"""Source capture and exact identity checks only; no scientific program import."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+
+OUT = Path(__file__).resolve().parent
+N = OUT.parent
+W = N.parent / 'correlation_worktree'
+def pin(path):
+    raw = Path(path).read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+def same(path, expected):
+    current = pin(path)
+    assert current['sha256'] == expected['sha256'] and current['bytes'] == expected['bytes'], str(path)
+def write(path, value): path.write_text(json.dumps(value, indent=2) + '\n')
+candidate = N / 'fast_joint_readiness_root_candidate'
+assert pin(candidate / 'DERIVATION.md')['sha256'] == 'a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794'
+assert pin(candidate / 'PROPOSAL_FREEZE.json')['sha256'] == '7e492ac7ea2538725418f1c7435c95ef567b101e1537dcb2fefc40f18f65809a'
+for row in json.loads((candidate / 'PROPOSAL_FREEZE.json').read_text())['files']: same(row['path'], row)
+declared = json.loads((candidate / 'SOURCE_MANIFEST.json').read_text())
+for row in declared['sources']: same(row['path'], row)
+inputs = [
+    (candidate / 'DERIVATION.md', 'complete changed root candidate; fully read', 'fast_DERIVATION.md'),
+    (candidate / 'PROPOSAL_FREEZE.json', 'candidate proposal freeze; fully read', 'fast_PROPOSAL_FREEZE.json'),
+    (candidate / 'SOURCE_MANIFEST.json', 'candidate dependency/provenance roles; fully read', 'fast_SOURCE_MANIFEST.json'),
+    (N / 'local_clock_joint_readiness_correction/DERIVATION.md', 'complete corrected joint word, geometry, logarithm, bump, output and moment premises; fully read', 'joint_DERIVATION.md'),
+    (N / 'joint_readiness_root_review/ACCEPTANCE.md', 'source-exposed root acceptance; fully read, not independent evidence', 'joint_ROOT_ACCEPTANCE.md'),
+    (N / 'joint_readiness_root_review/FINAL_FREEZE.json', 'joint root acceptance freeze; fully read', 'joint_ROOT_FREEZE.json'),
+    (N / 'local_clock_joint_readiness_candidate/ROOT_EXPOSURE.md', 'original joint author exposure; fully read', 'joint_ROOT_EXPOSURE.md'),
+    (N / 'local_clock_joint_readiness_correction/SOURCE_MANIFEST.json', 'corrected joint source provenance manifest; fully read, old fixture not replayed', None),
+    (N / 'mass_scaled_transport_root_candidate/DERIVATION.md', 'accepted mass theorem; complete prior reading reused at exact identity', 'mass_DERIVATION.md'),
+    (N / 'mass_scaled_transport_root_review/ACCEPTANCE.md', 'mass scope qualifications; complete prior reading reused', 'mass_ROOT_ACCEPTANCE.md'),
+    (N / 'mass_scaled_transport_root_review/FINAL_FREEZE.json', 'mass acceptance freeze; exact prior reading reused', 'mass_ROOT_FREEZE.json'),
+    (N / 'mass_scaled_transport_decisive_check/REPORT.md', 'this worker earlier separate mass review, continuity not new independence', None),
+    (N / 'local_clock_single_port_mediator_candidate/DERIVATION.md', 'unchanged literal geometry and simulator premise; complete prior reading reused', None),
+    (N / 'local_clock_routed_auxiliary_preparation_candidate/sources/geometry_reservoir.md', 'unchanged original geometry; complete prior reading reused', None),
+    (N / 'local_clock_routed_auxiliary_preparation_candidate/sources/geometry_memory.md', 'unchanged original memory geometry; prior relevant section reading reused', None),
+    (N / 'persistent_drift_candidate/DERIVATION.md', 'unaccepted provenance only; identity verified, proof not imported or read for this check', None),
+    (N / 'polynomial_joint_readiness_root_candidate/DERIVATION.md', 'comparison provenance only with reported <= correction outstanding; proof not imported or read for this check', None),
+    (W / 'AGENTS.md', 'instructions: complete prior reading reused at unchanged identity', None),
+    (W / 'docs/ai_methodology/SCIENCE_WORKFLOW.md', 'workflow: complete prior reading reused at unchanged identity', None),
+    (Path('/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md'), 'review skill: complete prior reading reused at unchanged identity', None)]
+expected = {
+    'AGENTS.md': 'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f',
+    'SCIENCE_WORKFLOW.md': '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce',
+    'SKILL.md': '9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455'}
+rows = []; copies = OUT / 'sources'; copies.mkdir(exist_ok=False)
+for path, role, name in inputs:
+    row = pin(path)
+    if path.name in expected: assert row['sha256'] == expected[path.name]
+    row.update(role=role, recovery_copy='sources/' + name if name else None)
+    if name:
+        (copies / name).write_bytes(path.read_bytes()); same(copies / name, row)
+    rows.append(row)
+write(OUT / 'SOURCE_MANIFEST.json', {'captured_utc': datetime.now(timezone.utc).isoformat(),
+    'scope': 'Source capture/identity verification only; no scientific execution or inherited run replay.',
+    'sources': rows, 'candidate_declared_sources_verified': len(declared['sources'])})
+print(json.dumps({'source_manifest': pin(OUT / 'SOURCE_MANIFEST.json'), 'source_count': len(rows),
+                  'recovery_copy_count': sum(bool(row['recovery_copy']) for row in rows), 'scientific_programs_run': 0}, indent=2))

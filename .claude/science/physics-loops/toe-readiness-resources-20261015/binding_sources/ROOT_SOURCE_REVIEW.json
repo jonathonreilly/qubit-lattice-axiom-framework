@@ -1,0 +1,168 @@
+{
+  "kind": "root_source_publication_review",
+  "reviewed_utc": "2026-10-15T15:42:46.854021+00:00",
+  "root_read_complete": true,
+  "source_draft_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/FINAL_FREEZE.json",
+    "bytes": 29819,
+    "sha256": "2ef4152f629f9985ee5872fcad1fa45811561b8e82b6bb0076a7366600995ce9"
+  },
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/proposal/docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+    "bytes": 103731,
+    "sha256": "53deb6e9f8736f8887123bc063070cadb6ece735c05b07baf82bc747d28511c9"
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/proposal/scripts/readiness_resource_alternatives_2026_10_15.py",
+    "bytes": 20536,
+    "sha256": "449c04fc0cd286de89421068e768e0cdaacb376dff618b052b8f0d2d9057ef9e"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/wrapper.md",
+    "bytes": 20569,
+    "sha256": "d316fb54dac0da59c919840f12f9a6587f9204e23e23c661af062a8cc9941a5e"
+  },
+  "current_reading": "Complete wrapper; entire primary logic with literal tuple structurally checked; complete build/verify/seal/record programs; all packet Markdown and outer handoff/review map/coverage/delivery. Unchanged exact five mathematical bodies and accepted parents reused from prior complete readings.",
+  "sealed_members_verified": 122,
+  "five_body_pins": [
+    {
+      "name": "fixed_duration_corrected_proof",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 20628,
+      "end_byte_exclusive": 31128,
+      "bytes": 10500,
+      "sha256": "b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2"
+    },
+    {
+      "name": "fixed_duration_original_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 31243,
+      "end_byte_exclusive": 56988,
+      "bytes": 25745,
+      "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+    },
+    {
+      "name": "fixed_duration_correction_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 57105,
+      "end_byte_exclusive": 63379,
+      "bytes": 6274,
+      "sha256": "0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a"
+    },
+    {
+      "name": "fast_proof",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 63476,
+      "end_byte_exclusive": 73062,
+      "bytes": 9586,
+      "sha256": "a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794"
+    },
+    {
+      "name": "fast_full_review",
+      "container": "docs/READINESS_RESOURCE_ALTERNATIVES_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "start_byte_inclusive": 73143,
+      "end_byte_exclusive": 103689,
+      "bytes": 30546,
+      "sha256": "f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569"
+    }
+  ],
+  "source_rows_verified": 82,
+  "parents": [
+    {
+      "claim_id": "mass_scaled_mediator_transport_bounded_theorem_note_2026-10-15",
+      "path": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 45751,
+      "sha256": "48a53fe28aa64d0f6bc13560e17f2e41ad97b5ff87a135c7f63ea44c175db7dc",
+      "status": "exact_current_canonical_note_read_source_only",
+      "accepted_raw_source_sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7",
+      "accepted_body_interval": {
+        "container": "docs/MASS_SCALED_MEDIATOR_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 10141,
+        "end_byte_exclusive": 20394,
+        "bytes": 10253,
+        "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+      },
+      "role": "Chosen sufficient Delta, full-space resources and conditional same-K simulator"
+    },
+    {
+      "claim_id": "routed_auxiliary_and_joint_readiness_bounded_theorem_note_2026-10-15",
+      "path": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+      "bytes": 152470,
+      "sha256": "00c2097abfb8ef1bc9fe1eb5e8f126c0fcbf897e132b74a25a879c14a6e60b4e",
+      "status": "exact_current_canonical_note_read_source_only",
+      "accepted_raw_source_sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179",
+      "accepted_body_interval": {
+        "container": "docs/ROUTED_AUXILIARY_AND_JOINT_READINESS_BOUNDED_THEOREM_NOTE_2026-10-15.md",
+        "start_byte_inclusive": 70024,
+        "end_byte_exclusive": 110857,
+        "bytes": 40833,
+        "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+      },
+      "role": "Exact joint geometry, complete arbitrary-input word, positive logarithms, compensation and moment definitions"
+    }
+  ],
+  "metadata_receipts": [
+    {
+      "label": "build",
+      "actual_exit_code": 1,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/metadata_runs/build/EXECUTION.json",
+        "bytes": 964,
+        "sha256": "a8c2f4c07bf1934d83f9fa356c1a78fd680a61028574ef04ee404b1a3cd1e9b7"
+      }
+    },
+    {
+      "label": "build_corrected",
+      "actual_exit_code": 0,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/metadata_runs/build_corrected/EXECUTION.json",
+        "bytes": 994,
+        "sha256": "be07c0542fb8d49d3ac9223c18b4cf8ddfd8e64d1294b49719be124a45e096c1"
+      }
+    },
+    {
+      "label": "verify",
+      "actual_exit_code": 0,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/metadata_runs/verify/EXECUTION.json",
+        "bytes": 968,
+        "sha256": "273c7bfdef9588a811f498a7c3efdafcbf9240f6f19bd0dc57c20ab7e7abbed0"
+      }
+    },
+    {
+      "label": "seal",
+      "actual_exit_code": 0,
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_publication_draft/metadata_runs/seal/EXECUTION.json",
+        "bytes": 961,
+        "sha256": "764b5866e05fe8e23986ceb4c90f36c6e914f3809dc4c3894d1ec4a37a7e7f4d"
+      }
+    }
+  ],
+  "existing_source_acceptances": {
+    "fixed_duration": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 4375,
+      "sha256": "013e3e5115fcd223b9efda51b9f062b6371ee1578c5155604ccd0777702fc6f3"
+    },
+    "fast": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 4408,
+      "sha256": "494b678af6ca0c046fd93e087225b8413b16de928396be8038d1ec0b41bc19e3"
+    }
+  },
+  "decision": "Publication interpretation accepted at existing conditional source scope; actual checkout binding/integration still pending.",
+  "required_current_status_clarification": "Distinguish already pinned canonical joint note from the resource note actual checkout binding in current status certificate; preserve historical source draft.",
+  "integration_requirement": "Bind actual captured receipt schemas/source/streams/exit with semantic checks; inspect complete changed integration logic before execution.",
+  "scope": "Source integrity and publication reading only; no new independent mathematical replication or retained verdict.",
+  "scientific_programs_run": 0,
+  "primary_runs": 0,
+  "historical_programs_replayed": 0,
+  "editable_prompt_files_changed": [],
+  "actual_binding": null,
+  "verification_limits": [
+    "Full current-main/cumulative-stack landing pipeline open",
+    "Independent retained audit open",
+    "Native controls, memory, isolation, energy/detector and full-program realization remain open"
+  ]
+}

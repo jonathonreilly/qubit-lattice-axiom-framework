@@ -1,0 +1,95 @@
+"""Metadata-only source closure and sealing. Does not execute scientific code."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+
+D = Path(__file__).resolve().parent
+W = Path('/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree')
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+def identity(path):
+    payload = path.read_bytes()
+    return {'bytes': len(payload), 'sha256': hashlib.sha256(payload).hexdigest()}
+
+def save(name, value):
+    (D / name).write_text(json.dumps(value, indent=2) + '\n')
+
+if (D / 'FINAL_FREEZE.json').exists():
+    raise SystemExit('Already frozen; do not rerun or replace the sealed packet.')
+
+started = now()
+pid = os.getpid()
+launch = {
+    'kind': 'contemporaneous metadata-only launch',
+    'started_utc': started,
+    'pid': pid,
+    'program': str(Path(__file__).resolve()),
+    'program_identity': identity(Path(__file__)),
+    'report_before': identity(D / 'REPORT.md'),
+    'manifest_before': identity(D / 'SOURCE_MANIFEST.json'),
+    'scope': 'Read source bytes, compare hashes, emit metadata and a final file inventory. No scientific calculation, historical replay or external mutation.'
+}
+save('METADATA_LAUNCH.json', launch)
+
+manifest = json.loads((D / 'SOURCE_MANIFEST.json').read_text())
+checked = []
+for item in manifest['sources']:
+    expected = {'bytes': item['bytes'], 'sha256': item['sha256']}
+    original = identity(Path(item['path']))
+    snapshot = identity(D / item['copy'])
+    if not (original == snapshot == expected):
+        raise RuntimeError('Source identity changed: ' + item['path'])
+    checked.append({'original': item['path'], 'snapshot': item['copy'], **expected,
+                    'original_matches': True, 'snapshot_matches': True})
+
+instruction_expected = {
+    'AGENTS.md': 'f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f',
+    'docs/ai_methodology/SCIENCE_WORKFLOW.md': '05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce',
+}
+instructions = []
+for rel, expected in instruction_expected.items():
+    actual = identity(W / rel)
+    if actual['sha256'] != expected:
+        raise RuntimeError('Instruction revision changed: ' + rel)
+    instructions.append({'path': str(W / rel), **actual, 'unchanged': True})
+
+save('FINAL_SOURCE_CLOSURE.json', {
+    'checked_utc': now(),
+    'kind': 'metadata source identity closure, not scientific evidence',
+    'report': identity(D / 'REPORT.md'),
+    'sources': checked,
+    'instructions': instructions,
+    'scientific_executions': 0,
+    'changes_outside_output_directory': False,
+    'dependency_status': manifest['dependency_status'],
+})
+save('METADATA_EXECUTION_RECEIPT.json', {
+    'started_utc': started,
+    'comparison_stage_completed_utc': now(),
+    'pid': pid,
+    'kind': 'actual metadata-only comparison-stage receipt',
+    'process_exit_status': 'Not asserted from inside the running process; authoritative exit status is the tool return after final sealing.',
+    'source_identities_checked': len(checked),
+    'instruction_identities_checked': len(instructions),
+    'scientific_executions': 0,
+    'report_unchanged_during_metadata_process': identity(D / 'REPORT.md') == launch['report_before'],
+})
+files = []
+for path in sorted(D.rglob('*')):
+    if path.is_file() and path.name != 'FINAL_FREEZE.json':
+        files.append({'path': str(path.relative_to(D)), **identity(path)})
+save('FINAL_FREEZE.json', {
+    'frozen_utc': now(),
+    'status': 'Bounded source-side resource check; one equality correction required. Not publication or audit acceptance.',
+    'scientific_executions': 0,
+    'files': files,
+    'self_hash_excluded': True,
+})
+print(json.dumps({'report': identity(D / 'REPORT.md'),
+                  'freeze': identity(D / 'FINAL_FREEZE.json'),
+                  'sources_verified': len(checked),
+                  'scientific_executions': 0}, indent=2))

@@ -1,0 +1,15 @@
+{
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/REPORT.md",
+    "bytes": 30546,
+    "sha256": "f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569"
+  },
+  "source_recheck": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/FINAL_SOURCE_RECHECK.json",
+    "bytes": 8939,
+    "sha256": "f7c259a629623b5b1f54985f2a697b25308ad072f2c000ba88cb02d905af0aaa"
+  },
+  "source_count": 20,
+  "recovery_copy_count": 10,
+  "scientific_programs_run": 0
+}

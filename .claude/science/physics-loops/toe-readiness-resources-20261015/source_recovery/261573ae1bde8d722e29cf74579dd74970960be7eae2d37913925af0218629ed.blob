@@ -1,0 +1,39 @@
+"""Exact final source/report freshness only; no scientific execution."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json
+
+OUT = Path(__file__).resolve().parent
+def pin(path):
+    raw = Path(path).read_bytes()
+    return {'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
+def same(path, row):
+    actual = pin(path)
+    assert actual['bytes'] == row['bytes'] and actual['sha256'] == row['sha256'], str(path)
+manifest = json.loads((OUT / 'SOURCE_MANIFEST.json').read_text())
+copies = 0
+for row in manifest['sources']:
+    same(row['path'], row)
+    if row['recovery_copy']:
+        same(OUT / row['recovery_copy'], row); copies += 1
+expected = {
+    'mass_scaled_transport_decisive_check/REPORT.md': 'cc5670ba9d6da565d75efb7bf70f7fc5d39f677a129cd2d1b744cc529b7b106e',
+    'local_clock_single_port_mediator_candidate/DERIVATION.md': 'd4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25',
+    'local_clock_routed_auxiliary_preparation_candidate/sources/geometry_reservoir.md': '26220ec995a93bd6af725a6b3463d0b676b9d8a864b4867459bef7dd9560e9b4',
+    'local_clock_routed_auxiliary_preparation_candidate/sources/geometry_memory.md': 'f38d4590d700db0ce12c491c4e2c21a7843207d226b74089b537519acbd5a86a'}
+for path, sha in expected.items(): assert pin(OUT.parent / path)['sha256'] == sha
+report = (OUT / 'REPORT.md').read_text()
+for heading in ('## 2. Independent toggling-frame error derivation', '## 5. Separately calibrated channels and c_ch',
+                '## 9. Subsequent simulator composition', '## 10. Preserved narrow failure routes', '## 11. Evidence, limitations and disposition'):
+    assert report.count(heading) == 1
+result = {'checked_utc': datetime.now(timezone.utc).isoformat(),
+    'scope': 'Identity/freshness and report section bookkeeping only; not a mathematical diagnostic or independent proof.',
+    'sources': manifest['sources'], 'source_count': len(manifest['sources']), 'recovery_copy_count': copies,
+    'report': pin(OUT / 'REPORT.md'), 'reading_coverage': pin(OUT / 'READ_COVERAGE.md'),
+    'scientific_programs_run': 0, 'historical_scientific_replays': 0,
+    'computational_diagnostic_predeclared': False, 'computational_diagnostic_run': False,
+    'editable_prompt_files_changed': []}
+(OUT / 'FINAL_SOURCE_RECHECK.json').write_text(json.dumps(result, indent=2) + '\n')
+print(json.dumps({'report': result['report'], 'source_recheck': pin(OUT / 'FINAL_SOURCE_RECHECK.json'),
+                  'source_count': len(manifest['sources']), 'recovery_copy_count': copies,
+                  'scientific_programs_run': 0}, indent=2))

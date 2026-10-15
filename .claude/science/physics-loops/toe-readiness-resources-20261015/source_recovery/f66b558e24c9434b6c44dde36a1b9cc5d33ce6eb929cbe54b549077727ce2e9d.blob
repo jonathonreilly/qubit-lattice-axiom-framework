@@ -1,0 +1,10 @@
+{
+  "kind": "contemporaneous metadata-only launch",
+  "utc": "2026-10-15T14:47:21.683306+00:00",
+  "pid": 70083,
+  "program": {
+    "bytes": 4964,
+    "sha256": "034007227658952584c7069e60a0db6b8290802876128b0e6c6328bd251795da"
+  },
+  "scope": "Exact text replacement/diff, identity, displayed-text and freeze-member comparisons. No physical calculation or historical scientific replay."
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-15T14:34:30.880042+00:00",
+  "status": "Root proposal pending separate check",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/DERIVATION.md",
+      "bytes": 9586,
+      "sha256": "a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/SOURCE_MANIFEST.json",
+      "bytes": 2430,
+      "sha256": "fb52a955202d14002c723ac727b2cf94f3534cdd18231da8708c9110583cfeca"
+    }
+  ],
+  "scientific_executions": 0,
+  "editable_prompt_files_changed": []
+}

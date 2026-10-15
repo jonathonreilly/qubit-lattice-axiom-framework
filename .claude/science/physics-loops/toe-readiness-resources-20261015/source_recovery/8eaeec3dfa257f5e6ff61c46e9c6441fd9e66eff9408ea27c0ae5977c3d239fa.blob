@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-15T14:54:34.596476+00:00",
+  "status": "Root conditional source acceptance; no retained audit",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 4375,
+      "sha256": "013e3e5115fcd223b9efda51b9f062b6371ee1578c5155604ccd0777702fc6f3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_review/SOURCE_CLOSURE.json",
+      "bytes": 2074,
+      "sha256": "423f442cbae80345b4a70ee24166b361668b1d6ef280d67d31620be41792941b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_review/close_sources.py",
+      "bytes": 3510,
+      "sha256": "1a0349e7a976252bcf866a01571962690676ab9f828c953785b340241c37cf71"
+    }
+  ]
+}

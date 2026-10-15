@@ -1,0 +1,19 @@
+{
+  "kind": "contemporaneous metadata-only launch",
+  "started_utc": "2026-10-15T14:40:27.893485+00:00",
+  "pid": 69701,
+  "program": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/finalize_metadata.py",
+  "program_identity": {
+    "bytes": 3937,
+    "sha256": "be6ddff8fe2d92f86053226b52d68daf72ca84fdac60aa22e23f61a3f7f352e9"
+  },
+  "report_before": {
+    "bytes": 25745,
+    "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+  },
+  "manifest_before": {
+    "bytes": 4790,
+    "sha256": "918924baf9a69adbb18df7bdee69dd939d0df047f133bbdd3ad76f9393ce8fb0"
+  },
+  "scope": "Read source bytes, compare hashes, emit metadata and a final file inventory. No scientific calculation, historical replay or external mutation."
+}

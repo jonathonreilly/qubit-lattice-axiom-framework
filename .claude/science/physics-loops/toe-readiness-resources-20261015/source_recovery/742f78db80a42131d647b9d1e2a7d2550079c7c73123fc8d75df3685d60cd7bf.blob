@@ -1,0 +1,32 @@
+{
+  "status": "bounded separate analytic check complete; no audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/REPORT.md",
+    "bytes": 30546,
+    "sha256": "f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569"
+  },
+  "coverage": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/READ_COVERAGE.md",
+    "bytes": 3262,
+    "sha256": "cf51b4d69ae0bf2a6219b24b4dbc91c787c6be87be1865d40b6fe0244937b890"
+  },
+  "source_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/SOURCE_MANIFEST.json",
+    "bytes": 8162,
+    "sha256": "75c34a4b9c7ba3127bdada73ed88ccd0baf87ffd7a194878541d7e455013496e"
+  },
+  "freshness": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/FINAL_SOURCE_RECHECK.json",
+    "bytes": 8939,
+    "sha256": "f7c259a629623b5b1f54985f2a697b25308ad072f2c000ba88cb02d905af0aaa"
+  },
+  "disposition": "No blocking mathematical defect found under the complete stated supplied-resource and actual-baseline hypotheses; see report for exact limits and preserved failure witnesses.",
+  "candidate_unchanged": true,
+  "scientific_programs_run": 0,
+  "historical_scientific_replays": 0,
+  "computational_diagnostic_predeclared": false,
+  "model_or_effort_override": false,
+  "delegation": false,
+  "editable_prompt_files_changed": [],
+  "independence_limits": "Root-authored source exposed; same-model/family, prior mass/geometry reviewer involvement; separate analytic derivations, no blind/model-diverse/experimental or audit independence."
+}

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-15T14:44:57.697162+00:00",
+  "status": "Corrected source pending final source-side binding",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/CORRECTION.diff",
+      "bytes": 7782,
+      "sha256": "465e95c3312a2e993888ed66b7a5b8f16abb391885d52687e4456df127d3955c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/DERIVATION.md",
+      "bytes": 10500,
+      "sha256": "b083c9d942d589ef927c868fc89720bd16e91051f0e29b20ef6404d85eb8d5a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/SCOPE.md",
+      "bytes": 589,
+      "sha256": "3adf7494c03a9d6a889d36d6e2fa9482cfba801b79f14af6c9fe66402480f312"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_correction/SOURCE_MANIFEST.json",
+      "bytes": 6527,
+      "sha256": "6d1f573d67167203275eeab83980a4c9c911a32d989f6d152e9dfa2757fe7561"
+    }
+  ]
+}

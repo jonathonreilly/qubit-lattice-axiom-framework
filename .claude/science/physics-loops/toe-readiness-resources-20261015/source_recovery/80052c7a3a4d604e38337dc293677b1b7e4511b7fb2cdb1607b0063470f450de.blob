@@ -1,0 +1,45 @@
+{
+  "checked_utc": "2026-10-15T15:09:45.183768+00:00",
+  "scope": "Exact identities, source copies and actual metadata receipts only",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/DERIVATION.md",
+      "bytes": 9586,
+      "sha256": "a0457a19542db757d4789c7b8ba1a7320deb9c07a10e337e82b93e23e3620794"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 739,
+      "sha256": "7e492ac7ea2538725418f1c7435c95ef567b101e1537dcb2fefc40f18f65809a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/REPORT.md",
+      "bytes": 30546,
+      "sha256": "f8e85619d0f6825090d85a462c45be2bdf3b140d7b788e0ce0091a09963d8569"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/FINAL_FREEZE.json",
+      "bytes": 5395,
+      "sha256": "203a0d9b789282e8b5c27c9dd439fe81e54de47d567a638894122cd3ca6020a5"
+    }
+  ],
+  "freeze_members": {
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_candidate": 2,
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check": 32
+  },
+  "manifest_rows_checked": 28,
+  "metadata_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/metadata_runs/capture/EXECUTION.json",
+      "bytes": 960,
+      "sha256": "42ff097cd1c0d6d3800947ee6775f0ca77321a144029fd6d1a540c8b9cb0f55e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_decisive_check/metadata_runs/final/EXECUTION.json",
+      "bytes": 954,
+      "sha256": "f557cd388260dc5c8979ac62197329cd365ec2f5cf568fdadb83a0cb867542b9"
+    }
+  ],
+  "scientific_executions": 0,
+  "historical_replays": 0
+}

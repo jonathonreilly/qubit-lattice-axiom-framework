@@ -1,0 +1,14 @@
+{
+  "kind": "contemporaneous metadata-only seal launch",
+  "utc": "2026-10-15T14:49:38.300123+00:00",
+  "pid": 70152,
+  "program": {
+    "bytes": 1989,
+    "sha256": "4609012fafc12081d117c1418e394ece87da51d19b093f510e61c8993d0fe1f3"
+  },
+  "report_before": {
+    "bytes": 6274,
+    "sha256": "0cb131b154a9386e39e890f087eba404ecc01807e272c2433c0502598e2aef3a"
+  },
+  "scientific_executions": 0
+}

@@ -1,0 +1,21 @@
+{
+  "closed_utc": "2026-10-15T15:09:45.183768+00:00",
+  "status": "conditional source-side acceptance; no retained audit",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 4408,
+      "sha256": "494b678af6ca0c046fd93e087225b8413b16de928396be8038d1ec0b41bc19e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_review/SOURCE_CLOSURE.json",
+      "bytes": 2256,
+      "sha256": "80052c7a3a4d604e38337dc293677b1b7e4511b7fb2cdb1607b0063470f450de"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/fast_joint_readiness_root_review/close_sources.py",
+      "bytes": 7772,
+      "sha256": "4a131447cca1228aee107d55b628a8d8950f27cd1ec8c29cb9d9a06328d7f953"
+    }
+  ]
+}

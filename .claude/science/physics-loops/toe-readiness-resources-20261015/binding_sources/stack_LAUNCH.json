@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-15T16:12:19.690841+00:00",
+  "argv": [
+    "gh",
+    "pr",
+    "view",
+    "9607",
+    "--repo",
+    "jonathonreilly/qubit-lattice-axiom-framework",
+    "--json",
+    "number,state,isDraft,headRefOid,headRefName,baseRefName,url"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree",
+  "source_at_launch": null,
+  "recorder": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/readiness_resources_integration_proposal/resources_common.py",
+    "bytes": 37471,
+    "sha256": "12927c9b242ace99876b7fdbce7f4760cd538524c5ce59beea7ba4ae5fc7a516"
+  },
+  "inputs_at_launch": null,
+  "timeout_seconds": 60,
+  "scientific_execution": false
+}

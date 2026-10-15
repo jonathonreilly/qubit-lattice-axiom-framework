@@ -1,6 +1,6 @@
 {
- "edge_count": 16093,
- "node_count": 7134,
+ "edge_count": 16095,
+ "node_count": 7135,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18293,6 +18293,10 @@
   "read_twice_packet_derive_first_unification_bounded_note_2026-07-13": {
    "deps_hash": "3b19a6a3b936",
    "out_degree": 4
+  },
+  "readiness_resource_alternatives_bounded_theorem_note_2026-10-15": {
+   "deps_hash": "d69d70ccee6b",
+   "out_degree": 2
   },
   "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06": {
    "deps_hash": "9c7f3a5777fd",

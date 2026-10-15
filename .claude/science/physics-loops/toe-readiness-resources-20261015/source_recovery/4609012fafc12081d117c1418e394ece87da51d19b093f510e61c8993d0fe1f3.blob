@@ -1,0 +1,34 @@
+"""Metadata-only final source closure; exclude only this seal's exact path."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib,json,os
+D=Path(__file__).resolve().parent
+seal=D/'FINAL_FREEZE.json'
+assert not seal.exists(), 'Already frozen; do not rerun.'
+def utc(): return datetime.now(timezone.utc).isoformat()
+def ident(p):
+    b=p.read_bytes()
+    return {'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+def save(name,obj): (D/name).write_text(json.dumps(obj,indent=2)+'\n')
+save('SEAL_LAUNCH.json',{'kind':'contemporaneous metadata-only seal launch',
+ 'utc':utc(),'pid':os.getpid(),'program':ident(Path(__file__)),
+ 'report_before':ident(D/'REPORT.md'),'scientific_executions':0})
+rows=json.loads((D/'SOURCE_MANIFEST.json').read_text())['sources']
+for row in rows:
+    expected={'bytes':row['bytes'],'sha256':row['sha256']}
+    assert ident(Path(row['original']))==expected,row['original']
+    assert ident(D/row['copy'])==expected,row['copy']
+save('FINAL_SOURCE_CLOSURE.json',{'kind':'metadata source comparison stage',
+ 'utc':utc(),'pid':os.getpid(),'verified_source_pairs':len(rows),
+ 'report':ident(D/'REPORT.md'),'source_rows':rows,'scientific_executions':0,
+ 'process_exit_status':'Authoritative status comes from the tool return, after process exit.'})
+files=[{'path':str(p.relative_to(D)),**ident(p)} for p in sorted(D.rglob('*'))
+       if p.is_file() and p!=seal]
+nested=[row['path'] for row in files if Path(row['path']).name=='FINAL_FREEZE.json']
+assert len(nested)==2,nested
+save('FINAL_FREEZE.json',{'utc':utc(),'status':'Exact correction binding supported; root acceptance remains separate.',
+ 'files':files,'nested_FINAL_FREEZE_members':nested,
+ 'exclusion':'Only the exact top-level seal path is excluded; nested freeze files are included.',
+ 'scientific_executions':0})
+print(json.dumps({'report':ident(D/'REPORT.md'),'freeze':ident(seal),
+ 'sealed_files':len(files),'nested_freezes':nested,'scientific_executions':0},indent=2))

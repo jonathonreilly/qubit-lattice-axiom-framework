@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-15T14:44:57.694998+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/DERIVATION.md",
+      "bytes": 9213,
+      "sha256": "b34df6b7479df5b3960b02bf383ff7954621a10b1efb6831a25c65466d8da783"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_root_candidate/PROPOSAL_FREEZE.json",
+      "bytes": 785,
+      "sha256": "a11a3e726ad4c97465c345be1b735a3934dd022e7afe4f1a211698693d58f43e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/REPORT.md",
+      "bytes": 25745,
+      "sha256": "aab0856d58f58dca9ec51afd1b792c2eb792d37f8666491d4ac2bc2fb065d512"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/polynomial_joint_readiness_decisive_check/FINAL_FREEZE.json",
+      "bytes": 3188,
+      "sha256": "99f418f191eb26bb1cc9bd2b63a32457f0a6b5b07964b30997b812b91016374e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/local_clock_joint_readiness_correction/DERIVATION.md",
+      "bytes": 40833,
+      "sha256": "dcee9d6fbbe2e5a29a45a0ad6066c7038426398ececce8cefda7f08a7aa73179"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/joint_readiness_root_review/ACCEPTANCE.md",
+      "bytes": 5501,
+      "sha256": "73a10a94f237f18a9a7c5ec6c1eac2285975ade03fc831beeb53a3fc036ba478"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_candidate/DERIVATION.md",
+      "bytes": 10253,
+      "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/renewal_20261014_214309/mass_scaled_transport_root_review/ACCEPTANCE.md",
+      "bytes": 3965,
+      "sha256": "070ecbfde3e9ba0c1c7a90b1f872ba3dcd6fd621cf4b4be86e8c49f852cddcaf"
+    }
+  ],
+  "exact_replacements": {
+    "Root-origin analytic proposal, not separately checked or accepted. This composes the mass-scaled transport source785e56e3/root acceptance070ecbfd with the joint preparation source818699a3, whose complete-output construction is still under separate review and whose retained-moment wording and saved-row label are being corrected. No new scientific execution is declared. The proposal uses only its reset/synthesis/control-norm argument, not its disputed raw retained-moment bound. Every dependency remains explicit.": "Root-origin corrected conditional source. The separate analytic reportaab0856d supports originalb34df6b7 after correcting the counterterm equality to an upper bound. This revision makes that repair, pins accepted corrected joint preparationdcee9d6f/root acceptance73a10a94, and makes the checked clock-family and physical-channel qualifications explicit. It composes the accepted mass-scaled source785e56e3/root070ecbfd. Exact original text and the complete correction diff are preserved. No scientific execution or retained audit is declared; root source acceptance is recorded separately. It uses the reset/synthesis/control-norm result and no unqualified raw retained-moment bound.",
+    "where a-h0=S0+sum_j S_j+Dsum is the mass-source counterterm norm sum. ell_L must include": "where the actual counterterm norm sum satisfies S0+sum_j S_j+Dsum<=a-h0. The mass source defines a-h0 with a uniform upper bound on each S_j; equality with the actual sum is not assumed. ell_L must include",
+    "This checks that the clock compensation price is controlled by the same supplied full-space h0 rather than a one-excitation norm.": "This checks that the clock compensation price is controlled by the same supplied full-space h0 rather than a one-excitation norm. In the source convention a_c=S_c/M, so ||K_X||=M^2/S_c. Bounded full h0 as M grows therefore constrains S_c; a fixed-S_c family with growing clock norm must retain its growing h0 in the explicit formulas and cannot quote the fixed-h0 exponents unchanged.",
+    "Physical per-site/channel loads are bounded by the full termwise sums used here, with each rotation's separate channel sum at most(1+sqrt(5))theta. That fixed factor leaves the polynomial powers unchanged.": "Equations(4) are whole-block allowances. Physical per-site/channel loads instead use full termwise channel sums. Each rotation's separate channel sum is at most(1+sqrt(5))theta, compared with block norm2theta. For the literal dictionary the compensator Pauli-channel sum remains bounded by2kappa; SWAP, excitation and final phase need no larger factor than their block allowance. Thus one safe channel version keeps the compensation additions in(4) unchanged and multiplies each gate addition by f=(1+sqrt(5))/2. For example the channel action bound is2kappa tau0+3pi fG and peak bound is2kappa+4pi m0 fG/tau0; gate slew and variation receive the same f. These explicit constant factors leave the polynomial powers unchanged. Other decompositions need their own checked channel sums.",
+    "Separately verify the complete-clock norm argument, termwise kappa including source quadratures/scalars, exact total time, all constants in(2)-(4), physical precision decomposition and composition domain. Recheck the fixed-core polynomial assumptions rather than importing a one-excitation coefficient price. Joint preparation remains an open source dependency until its separate review and correction close. No scientific diagnostic or new literature claim accompanies this proposal.": "The complete separate reportaab0856d checks the full-clock norm, literal penalty coefficient sum, termwise kappa, exact time and constants in(2)-(4), channel factors, physical precision and complete-output composition. Its required counterterm inequality repair is made here; all unchanged formulas retain their original bytes. Accepted jointdcee9d6f closes the named source-side dependency, not audit status or physical control supply. Root must verify the exact delta and source identities before current acceptance/publication. No scientific diagnostic, new literature claim, native resource or common fixed-cap conclusion accompanies this revision."
+  },
+  "scientific_executions": 0
+}

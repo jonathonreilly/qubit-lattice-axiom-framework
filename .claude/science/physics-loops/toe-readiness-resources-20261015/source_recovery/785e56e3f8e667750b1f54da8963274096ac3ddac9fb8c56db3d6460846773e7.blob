@@ -1,0 +1,112 @@
+# Proposed mass-scaled transport for a polynomial mediator resource bound
+
+Root-origin analytic candidate, not independently checked or accepted. No new scientific code execution accompanies this draft. Exact input is the frozen single-port derivation d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25, with its separate report081d9eb9 and root acceptance374139d5. The purpose is to replace its potentially exponentially small transport response with an explicit polynomial lower bound by paying a decreasing penalty gap. This is a proposed resource improvement for the same conditional fixed-v0 pair, three axes, N_X=1 theorem. It does not supply a native control family, common strength cap, saturated-site solution or full-program implementation.
+
+## 1. Literal modification and unchanged geometry
+
+For each component, retain exactly the prior original/fresh coordinate inventory, all core arcs, the 3x3 designed D, the Pe detuning h=1/4, the source ports and the fixed subdivision of the core cycle. Retain all original H=H0+K_X and its scalar. Change only the connected transport graph block, its single coupling to core r, the resulting root diagonal compensation, and the dependent source/counterterm coefficients. The connected transport graph consists of its tail and cycle and has n>=2 vertices, maximum degree3, and one cycle. It contains all M distinct clock-source ports, so M<=n. Its internal edges remain ordinary NN. No new factor or edge is added.
+
+Let L_G be its ordinary combinatorial graph Laplacian, with off-diagonal -1 on edges and diagonal degree(v). Define
+
+    mu=1/[2 n^2(n-1)],  T_G=L_G+mu I,  w=mu.
+
+The transport-to-core coupling is -w at its selected root. The core subdivision-internal blocks T_arc=I-A_arc/12 and their fixed terminal couplings Q_arc remain exactly as in the original construction. They have fixed sizes independent of M, old-chain length and memory length; their rational coefficients may be large but are fixed constants. The full eliminated block is the block direct sum T=T_G direct-sum T_arc. Let Q have the transport entry -mu and the unchanged arc entries. Install the full lower block D+Q* T^-1 Q, including every diagonal compensation. The Pe detuning is then added exactly as before. There is no direct transport/core chord other than the declared root edge; the disconnected internal blocks ensure transport elimination adds only its root diagonal. All core-arc off-diagonal cancellations remain unchanged.
+
+## 2. A uniform inverse-entry estimate for every connected graph
+
+For any complex vector x perpendicular to the constant vector, the variance identity gives
+
+    ||x||^2=(1/(2n)) sum_(u,v) |x_u-x_v|^2.
+
+A simple path has at most n-1 edges, so Cauchy-Schwarz bounds each difference squared by (n-1) x*L_G x. Summing over n^2 ordered pairs gives ||x||^2 <= n(n-1) x*L_G x/2. In particular the conservative bound lambda_2(L_G)>=1/[n(n-1)] holds. No geometric regularity, random-walk mixing assumption or numerical eigenvalue is used.
+
+Write P=11*/n and Q_perp=I-P. Spectral decomposition yields
+
+    T_G^-1 = (1/mu)P + R_perp,
+    ||R_perp|| <= 1/lambda_2 <= n(n-1).
+
+Every matrix entry of R_perp has absolute value at most that norm. Since 1/(n mu)=2n(n-1), every transport inverse entry obeys
+
+    n(n-1) <= (T_G^-1)_(u,v) <= 3n(n-1).          (A)
+
+These are real entries. The lower bound proves strict positivity directly. With transport root r_*, define beta_j=mu (T_G^-1)_(u_j,r_*) and gamma_j=(T_G^-1)_(u_j,u_j). Then
+
+    1/(2n) <= beta_j <= 3/(2n),
+    n(n-1) <= gamma_j <= 3n(n-1),
+    gamma_j/beta_j^2 <= 12 n^3(n-1).             (B)
+
+The coefficient mu is an installed onsite gap and root hopping, not a free spectral rescaling. For n>=2 it is at most1/8. The transport diagonal grows to degree(v)+mu, so its changed onsite load is charged.
+
+## 3. Full-qubit gap and noncommuting axes
+
+For a component and Pe eigenvalue s, the Schur matrix factors exactly as
+
+    B_s = F* diag(T,D_s) F,
+    F=[[I,T^-1 Q],[0,I]],  D_s=D+s|b><b|/4.
+
+The old proof gives T_arc>=3I/4 and D_s>=11I/20. The transport block satisfies T_G>=mu I. Its coupling satisfies ||T_G^-1(-mu e_r)||<=1 because ||T_G^-1||=1/mu. Define the fixed finite constant A_arc as any certified upper bound on ||T_arc^-1 Q_arc||; for example (4/3) times the sum of absolute fixed arc couplings is sufficient. Direct-sum structure, rather than the much looser global ||T^-1||||Q|| product, gives
+
+    ||T^-1Q|| <= 1+A_arc,
+    ||F^-1|| <= 2+A_arc,
+    B_s >= mu/(2+A_arc)^2 I.                     (C)
+
+For all three components let n_max=max n_i and C_*=max_i(2+A_arc,i)^2. Since mu decreases with n, a common bound is g=1/[2 C_* n_max^2(n_max-1)]. Applying the same lowering-operator quadratic form to B_s-gI gives the whole-qubit penalty L_i>=g N_i; summing gives L>=g sum N_i even though Pe axes do not commute. The joint kernel is the full original space times auxiliary vacuum. Every mixed excitation sector uses the actual global inverse R=(L|nonvacuum)^-1, with ||R||<=1/g. No one-particle independence claim is added.
+
+## 4. Exact response and new coefficients
+
+Fix q_i=1. Supply F_max>=max_(i,j)|f_ij| and set Lambda=1+120 F_max>120|f_ij|. Use the same source formula with the new beta:
+
+    z_ij=[120 f_ij+i sqrt(Lambda^2-(120 f_ij)^2)]/beta_ij.
+
+Both quadratures remain on the same physical edge. The same Schur contraction, with its newly installed compensations, gives D_s^-1 core cross entry -s/240 and diagonal c0-s/240, c0=961/960. Consequently the exact second-order response remains C0-W on N_X=1, with
+
+    S0=3c0,
+    S_j=sum_i Lambda^2(gamma_ij/beta_ij^2+c0),
+    d_i=(1+Lambda^2)/240,
+    C0=S0 I+sum_j S_j n_j-sum_i d_i Pe_i.
+
+Every unchanged response argument is algebraic in T^-1,Q and the core Schur complement, whose hypotheses have just been re-established. No invocation of the old transport's fixed w or diagonal is needed. Arbitrary clock vacuum/multiple-excitation inputs still fail the simulation identity; N_X=1 remains essential.
+
+The explicit finite source bounds are
+
+    |z_ij| <= 2 n_i Lambda,
+    S_j <= 3 Lambda^2[12 n_max^3(n_max-1)+c0],
+    v=sum_i[1+sum_j |z_ij|] <= 3+6 n_max M Lambda.
+
+Set Dsum=3(1+Lambda^2)/240 and define safe full-space bounds
+
+    a=h0+3c0+3M Lambda^2[12 n_max^3(n_max-1)+c0]+Dsum,
+    b=h0+3M F_max,
+    x=v/g,  y=v^2/g^2,
+    F1=2x+T_fin[(a+b)x+v y],
+    F2=2y+T_fin(a+b)y.
+
+The original full residual proof, with the actual global second corrector, now yields all-output isometry error F1/sqrt(Delta)+F2/Delta. It retains all H/C0/noncommuting-axis terms and both endpoint corrector errors. For an allocated unhalved channel tolerance0<eta<=1, a sufficient explicit choice is
+
+    Delta >= max(1,(4F1/eta)^2,4F2/eta).            (D)
+
+Each part contributes at most eta/4 in isometry norm, hence trace error at most eta after the factor two. Preparation, isolation, implementation and timing errors require separate allocations; they do not decrease merely by choosing Delta.
+
+## 5. Polynomial resource claim and its limits
+
+For a fixed family with F_max,h0,T_fin bounded, three fixed core geometries and n=n_max growing, M<=n implies
+
+    g^-1=O(n^3), v=O(n^2), a=O(n^5), b=O(n),
+    x=O(n^5), y=O(n^10), F1=O(n^12), F2=O(n^15).
+
+Thus (D) is bounded by O(n^24 eta^-2) for0<eta<=1. More generally the displayed formulas are polynomials in n,h0,T_fin,F_max and eta^-1 with fixed core constants; bounded h0 is not silently assumed when those parameters change. No optimal exponent is claimed.
+
+Transport entries degree+mu and unit hopping are bounded by constants, and its root compensation mu^2 gamma is at most3/[4n^3(n-1)]. Fixed arc/core entries are finite constants. The sum of all absolute penalty coefficients is O(n), so the complete-qubit norm allowance ell_L is O(n). The source norm is O(n^2), and full C0 norm is O(n^5). With the sufficient Delta above, a whole-generator bound is
+
+    B_full <= a+Delta ell_L+sqrt(Delta)v
+            =O(n^25 eta^-2)
+
+in that fixed family. The whole-space positive reserve h0+Dsum+sqrt(Delta)v is O(n^14 eta^-1); it remains installed with its scalar phase, mean and norm. A single source edge is at most O(n^13 eta^-1); penalty coefficient loads can be O(n^24 eta^-2). Constant-size geometry yields bounded graph degree, but this does not impose a common physical coefficient cap.
+
+The normalized Pauli scalar, bare-state mean/variance and covariance formulas from the modified explicit Hamiltonian are unchanged in form and must use its new B,z,C0. On N_X=1, the flip contribution to variance is at most Delta[3+12n^2 Lambda^2], hence O(n^26 eta^-2); outside that sector the sum over M ports costs another factor n. Energy-moment continuity and timing still scale with the actual full norm. No energy refund, negligible energy price or reservoir reusability follows.
+
+There are O(n) declared scalar/qubit blocks and O(n) possible undesired NN edges. A complete implementation error inventory with coefficient error delta per normalized block is bounded by O(n delta) only if all actual decomposed controls are counted and physical Delta/sqrt(Delta) scales are already included in delta. Error tolerances and timing sufficient for a fixed total output allowance can therefore be chosen inverse-polynomial from the displayed full norm and component count. This is a sufficient finite error budget, not evidence that calibration equipment, coefficients or isolated qubits exist. Fixed caps and native interactions remain open.
+
+## 6. Required checks before acceptance
+
+Check the graph variance/spectral bound, inverse-entry signs and n=2 endpoint; the exact Schur compiler after changing diagonal/root coupling; fixed-size status of every core subdivision block; whole-qubit and noncommuting mixed-sector hypotheses; source/counterterm/scalar dictionary; the explicit Delta factors in trace error; polynomial exponents and the complete physical scaling of calibration/isolation. An independent argument should test a path-plus-cycle graph and a small connected graph analytically rather than count inherited PASS lines. No scientific diagnostic is predeclared or executed in this root draft. A counterexample or missing hypothesis should be retained, not repaired by declaring an unproved supplier.

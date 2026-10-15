@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-10-15T14:40:27.893485+00:00",
+  "comparison_stage_completed_utc": "2026-10-15T14:40:27.898969+00:00",
+  "pid": 69701,
+  "kind": "actual metadata-only comparison-stage receipt",
+  "process_exit_status": "Not asserted from inside the running process; authoritative exit status is the tool return after final sealing.",
+  "source_identities_checked": 11,
+  "instruction_identities_checked": 2,
+  "scientific_executions": 0,
+  "report_unchanged_during_metadata_process": true
+}

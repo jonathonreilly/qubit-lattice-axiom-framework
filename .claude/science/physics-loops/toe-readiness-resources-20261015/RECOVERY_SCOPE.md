@@ -1,0 +1,6 @@
+# Bounded source recovery
+The five current proof/review bodies are unique exact byte intervals of the note. Original failed polynomial source, complete correction diff and replacement manifest, correction/root records, current resource review metadata programs and actual receipts are stored once per SHA256. Identical source-at-launch programs and empty streams share one object with multiple original-path aliases.
+
+Necessary accepted raw parent proofs/root acceptances are stored without recursively copying parent publication packets, graphs, caches or all transitive source snapshots. Both current canonical parent notes and unchanged instruction sources are external exact pins. The joint canonical source interval and root publication/attachment records are verified, while this resource note's actual checkout binding remains unperformed. Nested historical manifests/freezes retain their original paths and limits; their presence does not assert recursive local completeness.
+
+The outer package metadata_runs/build and metadata_runs/verify record only this draft's real metadata work. Root must archive any later canonical binding/execution separately, leaving dated PUBLICATION_STATE nulls untouched. The final top-level freeze includes every existing member except itself, including nested freeze blobs.

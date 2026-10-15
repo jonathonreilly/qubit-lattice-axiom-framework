@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-15T13:21:58.713497+00:00",
+  "status": "Root provisional derivation; separate check pending; zero scientific executions",
+  "source": {
+    "path": "DERIVATION.md",
+    "bytes": 10253,
+    "sha256": "785e56e3f8e667750b1f54da8963274096ac3ddac9fb8c56db3d6460846773e7"
+  },
+  "source_dependency_sha256": "d4ed04f737c418cd951d9c736a81785863e09b0031a3ffaecf2c02233f1f3d25"
+}

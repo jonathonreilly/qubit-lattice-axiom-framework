@@ -389,3 +389,22 @@ Memory: OBS-1 ≤ 0.3 GB per run, UV-1 ≤ 0.4 GB, BLEAK-1 ≤ 0.4 GB; one proce
   - **Circulant cancellation** holds for the own Y_u and Y_e contributions only. Physical up quarks get a residual through the shared Q_L, from Y_d Y_d†.
   - **CKM alone does not fix the magnitude.** The textures, the U_d = F·V_CKM choice, the corner symbols, the vertex placement and the regulator all enter.
 - **Strongest correct statement (referee).** Within the chosen one-loop, symmetric-phase lattice Yukawa model, branch B's CKM-broken down source gives c_TT^d ≈ −(0.9–3.5)e-8 at low-scale Yukawas, with d_TT^d of order +1e-9. This violates the clean D44 c̊^d and d̊^d astrophysical rows by about 1e14. Removing it needs counterterms tuned to about 1e-14; the minimal count is not established. FLAV2-NEAR is confirmed for spin-averaged masses.
+
+## Campaign wave 2a (pre-registered 2026-10-15T11:53Z)
+
+**OBS-3. Is X2's flavour-pattern Lorentz violation forced by CKM?** (route 2; follows OBS-2 and its referee). Cap 0.4 GB.
+- **Why.** OBS-2 found c_TT^d ≈ −2e-8 against a 1e-22 astrophysical row. Its referee found that CKM alone does not fix the size: the textures, the corner embeddings U_u and U_d, the corner symbols, the vertex placement and the left/right assignment all enter.
+- **Question.** Over a stated family of X2-admissible realisations of the observed quark masses and CKM, what is the minimum flavour-pattern residual? The family must include at least:
+  - generation-to-corner embeddings W_u and W_d with W_u†W_d = V_CKM (left-handed);
+  - free right-handed rotations;
+  - corner symbols of range ≤ 2;
+  - on-site and corner-selective vertices;
+  - off-diagonal entries carried by covariant τ_xσ_c condensates or flavons;
+  - a nearest-neighbour Higgs.
+
+  The residual is what remains after the per-field speed counterterm and the per-field tetragonal A₁ counterterm, both allowed. It is measured against the clean D44 rows (c̊^d, d̊^d, c̊^u, d̊^u > or < 1e-22 as printed) and the electron rows.
+- **Readings.**
+  - **TEXTURE-ESCAPE:** some realisation in the family keeps every direct-row residual within its bound with no further counterterms.
+  - **TEXTURE-FORCED:** every realisation in the family exceeds some direct row by more than 10×. Give the minimum over the family, and a lower-bound argument if one exists, for example that the up and down embeddings cannot both be unbiased to the corner basis unless V_CKM is equivalent to a circulant.
+  - **OPEN:** otherwise.
+- **Scope to state:** one loop, symmetric-phase Higgs, the family as built, no running from 1/a.
